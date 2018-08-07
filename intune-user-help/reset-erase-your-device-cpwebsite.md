@@ -1,11 +1,11 @@
 ---
 title: Az eszköz alaphelyzetbe állítása a Vállalati portál webhelyről | Microsoft Docs
-description: ''
+description: Megtudhatja, hogyan állíthatja alaphelyzetbe az eszköz jelszavát a Céges portál webhelyén.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/02/2017
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,36 +17,32 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: edb5f8306d728abb62b806f287a31b6a75d25cbd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3f9c59b1bfccabd8489cd466c645dc4a0051e97c
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016985"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321577"
 ---
 # <a name="reset-your-device-from-the-company-portal-website"></a>Az eszköz alaphelyzetbe állítása a Vállalati portál webhelyről
 
-Ha elveszti vagy ellopják az eszközét, célszerű lehet visszaállítani a gyári alapbeállításait, nehogy illetéktelenek férhessenek hozzá az adatokhoz. A [Vállalati portál webhely segítségével](https://portal.manage.microsoft.com#HelpDeskDialog) távolról alaphelyzetbe állíthatja az eszközt. A Vállalati portál webhelye egy weblap, amelyen az Intune-ban regisztrált számítógépeket és eszközöket kezelheti. Ezen a webhelyen elvégezheti ugyanazoknak a műveleteknek a többségét, mint amelyeket a Munkahelyi portálon szokott elvégezni.
+Megtudhatja, hogyan állíthatja alaphelyzetbe egy használt, elveszett vagy ellopott eszköz jelszavát a Céges portál webhelyén.  
 
-Ha alaphelyzetbe állítja az eszközt, többé nem fog megjelenni a Vállalati portálon, és visszaállnak rajta a gyári alapbeállítások.
+Ha alaphelyzetbe állít egy eszközt, az utána már nem fog megjelenni a Céges portálon. A korábbi alkalmazások és fájlok törlésre kerülnek, és az eszköz visszaáll a gyári alapbeállításokra.
 
 > [!Note]
-> Az alaphelyzetbe állítást másik regisztrált eszközről is kezdeményezheti, ha a Céges portál alkalmazást azon az eszközön nyitja meg, és követi a következő lépéseket. 
+> A következő lépéseket egy másik regisztrált eszközről is végrehajthatja. Ehhez nyissa meg a Céges portál alkalmazást a másik eszközön, majd a következőkhöz hasonló lépésekkel végezze el az alaphelyzetbe állítást.  
 
-Az eszköz alaphelyzetbe állítása:
+1. Nyissa meg a [Céges portál webhelyét](https://portal.manage.microsoft.com/#helpdeskDeskDialog), és válassza a __Menü__ gomb >__Saját eszközök__ lehetőséget.
 
-1. A [Céges portál webhelyen](https://portal.manage.microsoft.com#HelpDeskDialog) koppintson a __menü__ gombra, majd válassza a __Saját eszközök__ lehetőséget.
+2. Válassza ki az alaphelyzetbe állítani kívánt eszközt.
 
-2. A __Saját eszközök__ oldalon válassza ki annak az eszköznek a nevét, amelyiket át szeretné nevezni.
+    ![Képernyőkép a Saját eszközök oldalról, amelyen két csempén azonosítatlan, általános nevű eszközök láthatóak. Közvetlenül az eszközök alatt egy szürke szalagcím helyezkedik el, amely arra kéri a felhasználót, hogy azonosítsa a használt eszközt, vagy adjon hozzá egy újat.](./media/macOS_enroll_002_tap_here_banner.png)
 
-   ![Képernyőkép a Saját eszköz lapról, amelyen különböző azonosítatlan eszközök láthatók a listán nem szereplő eszközök regisztrálását vagy az azonosítatlan eszközök azonosítását felajánló szalagcím felett.](./media/macOS_enroll_002_tap_here_banner.png)
+3. Az adott eszköz lehetőségei egy előreugró ablakban nyílnak meg. Válassza az **Alaphelyzetbe állítás** lehetőséget.  
 
-3. Az adott eszköz lehetőségei egy előreugró ablakban nyílnak meg. Koppintson az **Alaphelyzetbe állítás** gombra.
+ ![Képernyőkép a Saját eszköz lapról, amelyen különböző azonosítatlan eszközök láthatók a listán nem szereplő eszközök regisztrálását vagy az azonosítatlan eszközök azonosítását felajánló szalagcím felett.](./media/macOS_enroll_002_tap_here_banner.png)
 
-   ![A kiválasztott eszközzel kapcsolatos összes lehetőség a Céges portál webhelyén, többek között az Átnevezés, az Eltávolítás, az Eszköz alaphelyzetbe állítása, a Jelszó alaphelyzetbe állítása és a Távoli zárolás lehetőségei. ](./media/iwp-screen-with-all-options.png)
+4. Egy figyelmeztetés jelenik meg, amely tájékoztatja, hogy az eszköz összes tartalmának törlésére készül. A megerősítéshez koppintson az **Alaphelyzet** elemre.  
 
-4. Egy figyelmeztető üzenet jelenik meg, amely tájékoztatja, hogy a gyári beállítások visszaállításával minden adat törlődni fog az eszközről. Koppintson az **Alaphelyzetbe állítás** lehetőségre, és erősítse meg, hogy ezt kívánja tenni.
-
-Az eszköz alaphelyzetbe állítása megtörtént.
-
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com/#helpdeskDeskDialog).

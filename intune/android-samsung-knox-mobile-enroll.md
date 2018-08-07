@@ -15,12 +15,12 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5ac976e07c98fae0941168cc94b5afc5ca09616
-ms.sourcegitcommit: 8be5f29107d882c3ecf3dc0ce718a2423f91ce9a
+ms.openlocfilehash: 0ada3be91c3b2c15e33e51449678212286362dbf
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36964708"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321186"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Eszközök automatikus regisztrációja a Samsung Knox Mobile Enrollmenttel
 
@@ -32,9 +32,8 @@ Ha engedélyezni szeretné a Samsung KME-vel történő Intune-regisztrációt, 
     1. [Hozzon létre egy MDM-profilt](#create-mdm-profile)
     2. [Adjon hozzá eszközöket](#add-devices)
     3. [Rendeljen hozzá MDM-profilokat az eszközökhöz](#assign-an-mdm-profile-to-devices)
-2. Az Azure Portalon [azonosítsa vállalati tulajdonúként az eszközöket](#identify-devices-as-corporate-owned).
-3. A Knox portálon [konfigurálja a végfelhasználói bejelentkezést](#configure-how-end-users-sign-in).
-4. [Terjessze az eszközöket](#distribute-devices).
+2. A Knox portálon [konfigurálja a végfelhasználói bejelentkezést](#configure-how-end-users-sign-in).
+3. [Terjessze az eszközöket](#distribute-devices).
 
 
 A rendszer automatikusan hozzáadja az eszközazonosítókat (a sorozatszámokat és az IMEI-ket) a Knox portálhoz, amikor a Knox Deployment Programban részt vevő hivatalos viszonteladóktól vásárol eszközöket.
@@ -79,22 +78,6 @@ Ha MDM-profilokat szeretne hozzárendelni az eszközökhöz, a támogatott Samsu
 ## <a name="assign-an-mdm-profile-to-devices"></a>MDM-profil hozzárendelése az eszközökhöz
 A regisztráció előtt a Knox portálon hozzá kell rendelnie egy MDM-profilt a hozzáadott eszközökhöz. [Az eszközkonfigurációról tájékoztatást a Samsung Knox regisztrációs útmutatójában találhat](https://docs.samsungknox.com/KME-Getting-Started/Content/configure-devices.htm).
 
-## <a name="identify-devices-as-corporate-owned"></a>Eszközök azonosítása vállalati tulajdonúként
-A KME-vel regisztrált eszközöket vállalati tulajdonúként azonosíthatja. Ezt az eszközök regisztrálása előtt kell megtennie. Így további felügyeleti feladatokat végezhet, valamint további adatokat gyűjthet, például az eszközök teljes telefonszámát és az rajtuk található alkalmazások leltárát.
-
-Ha vállalati tulajdonúként szeretné azonosítani az eszközöket, kövesse az alábbi lépéseket:
-
-1. Exportálja CSV-fájlként az eszközlistát a Knox portálról.
-
-2. Formázza a CSV-fájlt IMEI-vel vagy egy sorozatszámmal az [itt](https://docs.microsoft.com/en-us/intune/corporate-identifiers-add#identify-corporate-owned-devices-with-imei-or-serial-number) ismertetett módon.
-
-3. Az Azure Portalon töltse fel a CSV-fájlt az **Eszközregisztráció** > **Céges készülékazonosítók** > **Hozzáadás** területen.
-
-A mostantól regisztráló azonosított eszközök vállalati tulajdonúként lesznek megjelölve.
-
-> [!NOTE]
->Az Intune automatikusan vállalati tulajdonú státuszt rendel a [Készülékregisztráció-kezelő](https://docs.microsoft.com/en-us/intune/device-enrollment-manager-enroll) fiókjával regisztrált eszközökhöz.
-
 ## <a name="configure-how-end-users-sign-in"></a>A végfelhasználói bejelentkezés konfigurálása
 
 Az Intune-ba a KME-vel regisztrált eszközök esetében a következőképp konfigurálhatja a végfelhasználói bejelentkezést:
@@ -121,7 +104,7 @@ További segítségre van szüksége? Tekintse meg a teljes [Knox mobileszköz-r
 
 - **Az alkalmazás nem veszi figyelembe a „Jelszó” mezőt:** Ha a **Jelszó** ki van töltve a Knox portál **Eszközadatok** területén, az Intune Céges portál alkalmazás nem veszi figyelembe azt. A végfelhasználónak meg kell adnia egy jelszót az eszközön az eszközregisztráció befejezéséhez.
 
-- **Vállalati Android-regisztráció** A KME nem támogatja a vállalati Android-regisztrációt.
+- **Vállalati Android-regisztráció:** A KME nem támogatja a vállalati Android-regisztrációt.
 
 ## <a name="getting-support"></a>Támogatás igénybevétele
 További információ [a Samsung KME támogatásáról](https://docs.samsungknox.com/KME-Getting-Started/Content/to-get-kme-support.htm).

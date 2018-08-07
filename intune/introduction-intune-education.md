@@ -14,12 +14,12 @@ ms.assetid: ca36589b-804d-40b8-b112-9195d8897800
 ms.reviewer: travisj
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6d8335f1bac26b1a70c4e9aeaf7c8c6d1b34fc12
-ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
+ms.openlocfilehash: 776cb1e03730bbac1d6e7ed36f411eba0ab94cff
+ms.sourcegitcommit: 47b55d211534f2e52e50d6b936c9a349e99fd222
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34718012"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39236038"
 ---
 # <a name="how-is-intune-for-education-different-from-the-full-device-management-experience-in-intune"></a>Miben tér el az Intune for Education az Intune teljes eszközfelügyeleti felületétől?
 
@@ -27,9 +27,9 @@ Az Intune for Education úgy segíti elő a tanárok és diákok hatékony munk�
 
 ![Az Intune for Education-konzol és az Intune-konzol összehasonlítása.](./media/intune-azure-vs-intuneEDU.png)
 
-Az Intune for Educationben a Windows 10-es eszközök felügyeletéhez az Intune-ban elérhető összes mobileszköz-kezelési lehetőséget használhatja. Az Intune-nal további platformokat, például iOS- és Android- eszközöket is kezelhet, és az összes szabályzatot ugyanarról a konzolról érheti el.
+Az Intune for Educationben a Windows 10-es és iOS-es eszközök felügyeletéhez az Intune-ban elérhető összes mobileszköz-kezelési lehetőséget használhatja. A teljes körű eszközfelügyelet felületén Windows, iOS és Android rendszerű eszközök is kezelhetők.  
 
-Az Intune for Educationt önmagában, és az [Intune-ban elérhető összes eszközfelügyeleti lehetőséggel](introduction-intune.md) összhangban is használhatja. Az Intune for Educationt a [Microsoft Education](https://microsoft.com/education) keretében elérhető többi eszköz mellett is használhatja, így könnyebben kihasználhatja a Microsoft oktatási célú eszközeiben rejlő lehetőségeket.
+Az Intune for Educationt önmagában, és az [Intune-ban elérhető összes eszközfelügyeleti lehetőséggel](introduction-intune.md) összhangban is használhatja. Az Intune for Educationt a [Microsoft Education](https://microsoft.com/education) keretében elérhető többi eszköz mellett is használhatja, így könnyebben kihasználhatja a Microsoft oktatási célú eszközeiben rejlő lehetőségeket.  
 
 > [!VIDEO https://www.youtube.com/embed/ukrnCwcLvV8]
 

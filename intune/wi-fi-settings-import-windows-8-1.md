@@ -1,41 +1,46 @@
 ---
-title: Wi-Fi-beállítások importálása Windows 8.1 és későbbi verziók esetén
-titleSuffix: Microsoft Intune
-description: Útmutató Wi-Fi-beállítások importálásához Windows rendszerből Intune-os Wi-Fi-profilba.
+title: Wi-Fi-beállítások importálása Windows 10-es eszközökhöz a Microsoft Intune-ban – Azure | Microsoft Docs
+description: Windows-eszközök Wi-Fi-beállításainak exportálása XML-fájlba a netsh wlan használatával. Ezután a fájl Intune-ba történő importálásával létrehozhat egy Wi-Fi-profilt a Windows 8.1, Windows 10 és Windows Holographic for Business rendszerű eszközökhöz.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 07/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 157416738e4607d5022f1c3c7ed8251a8e32fe3e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 6ce5cdd9509ed3407491714ccfa853613eb43973
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834016"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321135"
 ---
-# <a name="import-wi-fi-settings-for-windows-81-and-later-devices-in-microsoft-intune"></a>Wi-Fi-beállítások importálása Windows 8.1 és újabb rendszerű eszközökhöz a Microsoft Intune-ban
+# <a name="import-wi-fi-settings-for-windows-devices-in-intune"></a>Windows-eszközök Wi-Fi-beállításainak importálása az Intune-ba
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-A Windows 8.1, a Windows 10 operációs rendszer asztali vagy mobil verzióját vagy a Windows Holographic for Business verziót futtató eszközökre importálhatja az előzőleg fájlba exportált Wi-Fi konfigurációs profilt.
+A Windows rendszert futtató eszközökre importálhatja az előzőleg fájlba exportált Wi-Fi konfigurációs profilt. **A Windows 10 és újabb rendszerű eszközök esetében [létrehozhat egy Wi-Fi-profil](wi-fi-settings-windows.md) közvetlenül az Intune-ban**.
+
+Érintett kiadások:  
+- Windows 8.1 és újabb
+- Windows 10 és újabb
+- A Windows 10 asztali vagy mobilverziója
+- Windows Holographic for Business
 
 ## <a name="export-wi-fi-settings-from-a-windows-device"></a>Wi-Fi beállítások exportálása windowsos eszközről
 
-A Windows rendszerben a **netsh wlan** segédprogrammal az Intune által is olvasható XML-fájlba exportálhat egy meglévő Wi-Fi profilt. A kulcsot egyszerű szöveges formátumban kell exportálnia a profil sikeres használatához.
+A Windows rendszerben a **netsh wlan** használatával az Intune által is olvasható XML-fájlba exportálhat egy meglévő Wi-Fi-profilt. A kulcsot egyszerű szöveges formátumban kell exportálnia a profil sikeres használatához.
 
 A szükséges Wi-Fi-profillal már rendelkező Windows-számítógépen kövesse az alábbi lépéseket:
 
 1. Hozzon létre egy helyi mappát az exportált W-Fi-profilokhoz, például a **c:\WiFi** mappát.
 2. Nyisson meg egy parancssort rendszergazdaként.
 3. Futtassa a `netsh wlan show profiles` parancsot, és jegyezze fel az exportálni kívánt profil nevét. Ebben a példában a profil neve: **WiFiName**.
-4. Futtassa a `netsh wlan export profile name="ProfileName" folder=c:\Wifi` parancsot. Ezzel létrehozza a **Wi-Fi-WiFiName.xml** nevű Wi-Fi-profilfájlt a célmappában.
+4. Futtassa a következő parancsot: `netsh wlan export profile name="ProfileName" folder=c:\Wifi`. Ezzel létrehozza a **Wi-Fi-WiFiName.xml** nevű Wi-Fi-profilfájlt a célmappában.
 
 ## <a name="import-the-wi-fi-settings-into-intune"></a>Wi-Fi-beállítások importálása az Intune-ba
 

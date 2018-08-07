@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/17/2018
+ms.date: 07/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 00f422b5619115b44b8d39c2d735f2163c22167f
-ms.sourcegitcommit: dc8b6f802cca7895a19ec38bec283d4b3150d213
+ms.openlocfilehash: cdd3484f002a3719410d4f801073914e7f58fc4c
+ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39138696"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39254484"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Szelektív adattörlés alkalmazásvédelmi szabályzatok hozzáférési műveleteivel az Intune-ban
 
@@ -44,7 +44,7 @@ Ezekkel a beállításokkal egyértelműen megadható az összes vállalati adat
 8. Válassza ki a **Műveletet**, amelyet akkor kell végrehajtani, ha a felhasználó nem felel meg a követelményeknek. Bizonyos esetekben egy beállításhoz több művelet is megadható. További információt az [Alkalmazásvédelmi szabályzatok létrehozása és hozzárendelése](app-protection-policies.md) című cikkben talál.
 
 >[!NOTE]
-> Az **Eszközmodell(ek)** beállítás használatához gépelje be a modellazonosítók pontosvesszővel tagolt felsorolását. 
+> Az **Eszközmodell(ek) vagy Eszközgyártó(k)** beállítás használatához gépelje be a modellazonosítók pontosvesszővel tagolt felsorolását. Több értéket tartalmazó felsorolásban kerülje a szóközöket. Ezekben az értékekben nincsenek megkülönböztetve a kis- és a nagybetűk. 
 
 ## <a name="policy-settings"></a>Szabályzatbeállítások 
 
@@ -83,7 +83,10 @@ Android rendszeren a következő beállításokhoz konfigurálhat műveleteket a
 -  Eszközgyártó(k)
 
 Az **Eszközgyártó(k)** beállítás használatához gépelje be az Android-gyártók pontosvesszővel tagolt felsorolását. Az eszköz Android-gyártóját az eszközbeállításokban találja meg.<br>
-Példabemenet: *A gyártó; B gyártó; Google* 
+Példabemenet: *A gyártó; B gyártó* 
+
+>[!NOTE]
+> A következők az Intune-t használó eszközökhöz gyakran megadott gyártók, és bemenetként használhatók: Asus; Blackberry; Bq; Gionee; Google; Hmd global; Htc; Huawei; Infinix; Kyocera; Lemobile; Lenovo; Lge; Motorola; Oneplus; Oppo; Samsung; Sharp; Sony; Tecno; Vivo; Vodafone; Xiaomi; Zte; Zuk
 
 A végfelhasználói eszközökön az Intune-ügyfél az Intune-ban az Application Protection-szabályzatokhoz megadott eszközmodellsztringek egyszerű egyeztetése alapján végez műveleteket. Az egyeztetés teljes mértékben az eszköz által jelentett értéktől függ. Az informatikai rendszergazda számára ajánlatos ellenőrizni, hogy a szándéknak megfelelő viselkedés történik-e, ennek a beállításnak kölönféle eszközgyártókon és modelleken alapuló, kisméretű felhasználói csoportot célzó tesztelésével. Az alapértelmezett érték a **Nincs konfigurálva**.<br>
 Állítsa be a következő műveletek egyikét: 

@@ -1,59 +1,68 @@
 ---
-title: Az iOS-szoftverfrissítési szabályzatok konfigurálása a Microsoft Intune-ban
-titlesuffix: ''
-description: Az iOS-frissítési szabályzatok konfigurálásával kikényszeríti a felügyelt iOS-eszközökön a legújabb elérhető szoftverfrissítések automatikus telepítését.
+title: Az iOS-szoftverfrissítési szabályzatok konfigurálása az Azure-beli Microsoft Intune-ban | Microsoft Docs
+description: Konfigurációs szabályzat létrehozása vagy felvétele a Microsoft Intune-ban, amellyel korlátozhatja, mikor kerüljenek automatikusan telepítésre az Intune által felügyelt, vagy ellenőrzött iOS-eszközök szoftverfrissítései. Megadhatja azokat a dátumokat és időpontokat, amelyeknél nem szeretné, hogy települjenek a frissítések. Ezt a szabályzatot csoportokhoz, felhasználókhoz és eszközökhöz is hozzárendelheti, és ellenőrizheti az esetleges telepítési hibákat is vele.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/19/2018
+ms.date: 07/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: 1d4223ae4feb417f77909b320cd0295347b44461
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: b9cc34b2fa45ae447a015f1b3105081041bd0afe
+ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31836588"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39268838"
 ---
-# <a name="configure-ios-update-policies-in-microsoft-intune"></a>Az iOS-frissítési szabályzatok konfigurálása a Microsoft Intune-ban
+# <a name="configure-ios-update-policies-in-intune"></a>Az iOS-es frissítési szabályzatok konfigurálása az Intune-ban
 
-Szoftverfrissítési szabályzatokkal kikényszerítheti az iOS 10.3 vagy újabb verziójú rendszer futtató felügyelt iOS-eszközökön a legújabb elérhető szoftverfrissítések automatikus telepítését. Ez a funkció csak felügyelt eszközök esetén használható. Konfigurálhatja, hogy mely napokon vagy időszakokban ne települjenek frissítések az eszközökön. 
+A-frissítési szabályzatokkal kikényszerítheti a legújabb elérhető rendszerfrissítések automatikus telepítését a felügyelt iOS-eszközökön. Ez a funkció csak felügyelt eszközök esetén használható. A szabályzat beállításakor megadhatja azokat a napokat és időpontokat, amikor nem szeretné, hogy az eszközök frissítéseket telepítsenek. 
 
-Ha van rendelkezésre álló frissítés, amikor az eszköz kb. 8 óránként bejelentkezik, és ez nem korlátozás alá eső időpontban következik be, akkor az eszköz meg fogja próbálni letölteni és telepíteni a legújabb OS-frissítést. Az eszköz frissítéséhez nincs szükség felhasználói beavatkozásra. A szabályzat nem akadályozza meg, hogy a felhasználó frissítse az operációs rendszert.
+Az eszköz körülbelül 8 óránként jelentkezik be az Intune-ba. Ha az eszköz elérhető frissítést talál a megadott korlátozott időszakokon kívül, akkor letölti és telepíti a legújabb rendszerfrissítéseket. Az eszköz frissítéséhez nincs szükség felhasználói beavatkozásra. A szabályzat nem akadályozza meg, hogy a felhasználó manuálisan frissítse az operációs rendszert.
 
-## <a name="configure-the-ios-update-policy"></a>Az iOS-frissítési szabályzatok konfigurálása
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
-2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. Az **Intune** panelen válassza a **Szoftverfrissítések** > **iOS-frissítési szabályzatok** lehetőséget.
-4. A szabályzatok panelen válassza a **Létrehozás** lehetőséget, majd adja meg a szabályzat nevét és leírását.
-5. Válassza a **Beállítások** > **Konfigurálás** lehetőséget, majd adja meg, hogy mikor ne kerüljön sor az iOS-eszközökön a legújabb elérhető frissítés kényszerített telepítésére. Beállíthatja a hét napjait, az időzónát, a kezdési időt és a befejezési időt.
-6. A konfiguráció mentéséhez válassza az **OK** gombot. Ekkor visszakerül a **Frissítési szabályzat létrehozása** panelre. Válassza a **Létrehozás** lehetőséget a szabályzat létrehozásához és a beállítások mentéséhez.
+Ez a funkció iOS 10.3-as vagy újabb rendszerű eszközök esetében érhető el.
 
-Ekkor létrejön a profil, és megjelenik az iOS-frissítési szabályzatok listáját tartalmazó panelen. Az Apple MDM nem teszi lehetővé annak kényszerítését, hogy az eszköz egy bizonyos időpontig vagy dátumig telepítse a frissítést. 
+## <a name="configure-the-policy"></a>A szabályzat konfigurálása
+1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
+3. Válassza a **Szoftverfrissítések** > **iOS-frissítési szabályzatok** > **Létrehozás** lehetőséget.
+4. Adja meg a szabályzat nevét és leírását.
+5. Válassza a **Beállítások** lehetőséget. 
+
+    Adja meg, hogy mikor ne kerüljön sor az iOS-eszközökön a legújabb elérhető frissítés kényszerített telepítésére. Ezekkel a beállításokkal megadhatja azt az időkeretet, amikor a korlátozás érvényben lesz. Beállíthatja a hét napjait, az időzónát, a kezdési időt és a befejezési időt.
+
+6. A módosítások mentéséhez válassza az **OK** gombot. Válassza a **Létrehozás** lehetőséget a szabályzat létrehozásához.
+
+A szabályzat létrejön, és megjelenik a szabályzatok listájában. Az Apple mobileszköz-kezelése nem teszi lehetővé, hogy a készülékek számára kikényszerítse a frissítések adott időpontban történő telepítését. 
 
 ## <a name="change-the-restricted-times-for-the-policy"></a>A korlátozott időtartamok módosítása a szabályzatban
 
-1.  A **Szoftverfrissítések** panelen válassza az **iOS-frissítési szabályzatok** lehetőséget.
-2.  Válassza ki a frissíteni kívánt iOS-frissítési szabályzatot.
-3.  Válassza a **Tulajdonságok** lehetőséget, majd frissítse a korlátozott időpontokra vonatkozó információt.
-4.  Válassza ki a hét napjait
-5.  Időzóna, amelyben ez a szabályzatot alkalmazza
-6.  Kezdési és befejezési idő a feketelistára tett órákhoz
+1. A **Szoftverfrissítések** területen válassza **iOS-frissítési szabályzatok** lehetőséget.
+2. Válasszon ki egy meglévő szabályzatot > **Tulajdonságok**.
+3. Frissítse a korlátozás időpontjait:
 
-## <a name="assign-an-ios-update-policy-to-users"></a>iOS-frissítési szabályzat hozzárendelése felhasználókhoz
+    1. Válassza ki a hét napjait
+    2. Válassza ki, hogy melyik időzóna szerint kívánja alkalmazni a szabályzatot
+    3. Adja meg a feketelistás órák kezdő és záró idejét
 
-Egy iOS-frissítési szabályzat felhasználókhoz történő hozzárendeléséhez válasszon ki egy konfigurált szabályzatot. A meglévő szabályzatok a **Szoftverfrissítések** > **iOS-frissítési szabályzatok** panelen találhatók.
+    > [!NOTE]
+    > Ha a **Kezdési idő** és a **Befejezési idő** egyaránt déli 12 óra, akkor a karbantartási időszak ellenőrzése kikapcsolt állapotban lesz.
 
-1. Válassza ki azt a szabályzatot, amelyet szeretne hozzárendelni felhasználókhoz, majd válassza a **Hozzárendelések** lehetőséget. Ekkor megnyílik a panel, amelyen kiválaszthatja a kívánt Azure Active Directory-biztonsági csoportokat, és hozzárendelheti azokat a szabályzathoz.
-2. A **Kiválasztott csoportok** elemre kattintva nyissa meg az Azure AD-biztonsági csoportokat megjelenítő panelt. Határozza meg, ki férhet hozzá a szabályzathoz, a belefoglalni és a kizárni kívánt csoportok hozzárendelésével.
-3. Válassza a **Mentés** elemet, hogy telepítse a szabályzatot a felhasználók számára.
+## <a name="assign-the-policy-to-users"></a>A szabályzat hozzárendelése a felhasználókhoz
 
-Ezzel érvénybe léptette a szabályzatot a felhasználók vagy az eszközök számára. A rendszer ekkor kiértékeli a szabályzat hatókörébe tartozó felhasználók által használt eszközök frissítési megfelelőségét. Ez a szabályzat a felhasználó nélküli eszközöket is támogatja.
+A meglévő szabályzatokat csoportokhoz, felhasználókhoz vagy eszközökhöz rendelheti. Hozzárendelés után a szabályzatok alkalmazásra fognak kerülni.
 
-## <a name="monitor-ios-device-installation-failures"></a>IOS-eszközök telepítési hibáinak figyelése
-<!-- 1352223 -->
-Az **iOS-eszközök telepítési hibái** jelentést a **Szoftverfrissítések** ablaktáblán lehet elérni. A jelentésben megtekintheti azoknak a felügyelt iOS-eszközöknek a listáját, amelyekre iOS-frissítési szabályzat vonatkozik, frissítéssel próbálkoztak, és nem lehetett frissíteni őket. Minden eszköz mellett látható lesz egy állapotleírás is, amelyből kiderül, hogy az adott eszköz miért nem frissült automatikusan. A kifogástalan, naprakész eszközök nem jelennek meg a listában. Naprakésznek számít az a legújabb frissítés, amelyet maga az eszköz támogatni képes.
+1. A **Szoftverfrissítések** területen válassza **iOS-frissítési szabályzatok** lehetőséget.
+2. Válasszon ki egy meglévő szabályzatot > **Hozzárendelések**. 
+3. Válassza ki azokat az Azure Active Directory csoportokat, felhasználókat vagy eszközöket, amelyeknél alkalmazni vagy kizárni szeretné a szabályzatot.
+4. Válassza a **Mentés** lehetőséget a szabályzat csoportok felé történő telepítéséhez.
+
+A rendszer ekkor kiértékeli a szabályzat hatókörébe tartozó felhasználók által használt eszközök frissítési megfelelőségét. Ez a szabályzat a felhasználó nélküli eszközöket is támogatja.
+
+## <a name="monitor-device-installation-failures"></a>Eszközök telepítési hibáinak figyelése
+A <!-- 1352223 -->
+**Szoftverfrissítések** > **iOS-eszközök telepítési hibái** területen láthatja azoknak a felügyelt iOS-eszközöknek a listáját, amelyekre érvényben van egy frissítési szabályzat, de a frissítésük nem járt sikerrel. Minden eszköz mellett látható egy állapotleírás, amelyből kiderül, hogy az adott eszköz miért nem frissült automatikusan. A kifogástalan, naprakész eszközök nem jelennek meg a listában. A naprakész eszközökön telepítve van az a legújabb frissítés, amelyet az eszköz támogatni képes.
 

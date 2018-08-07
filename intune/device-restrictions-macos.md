@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 69ea07e8d0a5d4a54abe7d1e592b3930d4e82354
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 26d5af15086e422685c7c58c5b8a7d351f9eb854
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31830216"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321390"
 ---
 # <a name="microsoft-intune-macos-device-restriction-settings"></a>A Microsoft Intune macOS-eszközkorlátozásokra vonatkozó beállításai
 
@@ -50,5 +50,5 @@ A lista konfigurálásához kattintson a **Hozzáadás** gombra, adja meg a kív
 
 ### <a name="unmarked-email-domains"></a>Jelöletlen e-mail-tartományok
 
-Az **E-mail-tartomány URL-címe** mezőben adjon a listához egy vagy több URL-címet. Ha a felhasználó nem a konfigurált tartományok egyikéből kap e-mailt, az iOS-es Mail alkalmazásban ez az e-mail nem megbízhatóként jelenik meg.
+Az **E-mail-tartomány URL-címe** mezőben adjon a listához egy vagy több URL-címet. Ha a felhasználó nem a konfigurált tartományok egyikéből kap e-mailt, a MacOS-es Mail alkalmazásban ez az e-mail nem megbízhatóként jelenik meg.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,18 +14,16 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9329a57ee7d47cb99a7c87326bb043c0a04c6313
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 4a047ceb6baa15ad59a5792430b60f2adf18c98a
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905206"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321271"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Eszközök tanúsítványprofiljainak konfigurálása a Microsoft Intune-ban
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-Amikor a felhasználóknak engedélyezi a vállalati erőforrások VPN-, Wi-Fi- vagy e-mail-profilokon keresztüli elérését, ezeket a kapcsolatokat tanúsítványokkal hitelesítheti. Tanúsítványok használatakor nem kell megadnia a felhasználóneveket és a jelszavakat a kapcsolatok hitelesítéséhez
+A céges erőforrásokhoz VPN-, Wi-Fi- vagy e-mail-profilok segítségével adhat hozzáférést a felhasználóknak. Tanúsítványok használatával a kapcsolatok hitelesítésére is van lehetőség. Tanúsítványok használatakor a végfelhasználóknak nem kell megadniuk a felhasználóneveket és a jelszavakat a hitelesítéshez.
 
 Az Intune-nal hozzárendelheti ezeket a tanúsítványokat a felügyelt eszközökhöz. Az Intune a következő tanúsítványtípusok eszközökhöz rendelését és felügyeletét támogatja:
 
@@ -36,7 +34,7 @@ Ezen tanúsítványtípusok mindegyikének megvannak a maga előfeltételei és 
 
 ## <a name="overview"></a>Áttekintés
 
-1. Ha még nem működik a megfelelő tanúsítványinfrastruktúra, helyezze üzembe. [SCEP-tanúsítványokat](certificates-scep-configure.md) és [PKCS-tanúsítványokat](certficates-pfx-configure.md) használhat.
+1. Ellenőrizze, hogy be van-e állítva a megfelelő tanúsítványinfrastruktúra. [SCEP-tanúsítványokat](certificates-scep-configure.md) és [PKCS-tanúsítványokat](certficates-pfx-configure.md) használhat.
 
 2. Telepítsen egy főtanúsítványt vagy köztes hitelesítésszolgáltatói tanúsítványt minden eszközön, hogy az eszköz felismerje a hitelesítésszolgáltató (CA) érvényességét. Ehhez hozzon létre és rendeljen hozzá egy **megbízható tanúsítványprofilt**. A profil hozzárendelésekor az Intune-nal felügyelt eszközök lekérik és megkapják a főtanúsítványt. Mindegyik platformhoz különálló profilt kell létrehoznia. A megbízható tanúsítványprofilok a következő platformokhoz érhetők el:
 
@@ -86,13 +84,11 @@ Ezt a tanúsítványt a megbízható tanúsítványprofil konfigurálásakor kel
 ## <a name="step-3-create-trusted-certificate-profiles"></a>3. lépés: megbízható tanúsítványprofilok létrehozása
 Ahhoz, hogy SCEP- vagy PKCS-tanúsítványprofilt hozhasson létre, először létre kell hoznia egy megbízható tanúsítványprofilt. Minden mobileszközplatformhoz külön megbízható tanúsítványprofil, illetve és SCEP- vagy PKCS-profil szükséges. A megbízható tanúsítványok létrehozása az összes eszközplatformon hasonlóan zajlik.
 
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
-2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
-2. Az **Eszközkonfiguráció** panelen válassza a **Kezelés** > **Profilok** lehetőséget.
-3. A profilok paneljén válassza a **Profil létrehozása** lehetőséget.
-4. A **Profil létrehozása** panelen adja meg a megbízható tanúsítványprofil nevét és leírását a **Név** és a **Leírás** mezőben.
-5. Válassza ki a megbízható tanúsítvány eszközplatformját a **Platform** legördülő listából. Jelenleg az alábbi platformokra vonatkozóan lehet tanúsítványbeállításokat megadni:
+1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
+3. Válassza az **Eszközkonfiguráció** > **Kezelés** > **Profilok** > **Profil létrehozása** lehetőséget.
+4. Adja meg a megbízható tanúsítványprofil **nevét** és **leírását**.
+5. Válassza ki a megbízható tanúsítvány eszközplatformját a **Platform** legördülő listából. A választható lehetőségek:
 
     - **Android**
     - **Vállalati Android**
@@ -103,12 +99,14 @@ Ahhoz, hogy SCEP- vagy PKCS-tanúsítványprofilt hozhasson létre, először l�
     - **Windows 10 és újabb**
 
 6. A **Profil típusa** legördülő listában válassza a **Megbízható tanúsítvány** lehetőséget.
-7. Tallózással keresse meg az 1. feladatban mentett tanúsítványt, majd kattintson az **OK** gombra.
+7. Tallózással keresse meg az 1. feladatban mentett tanúsítványt, majd válassza az **OK** gombot.
 8. Válassza ki – csak a Windows 8.1- és Windows 10-eszközök esetében – a megbízható tanúsítvány céltárolóját a **Céltároló** mezőben, a következő lehetőségek közül:
+
     - **Számítógép tanúsítványtárolója – fő**
     - **Számítógép tanúsítványtárolója – köztes**
     - **Felhasználói tanúsítványtároló – köztes**
-8. Ha elkészült, válassza az **OK** gombot, lépjen vissza a **Profil létrehozása** panelre, és válassza a **Létrehozás** gombot.
+
+9. Ha elkészült, válassza az **OK** gombot, lépjen vissza a **Profil létrehozása** panelre, és válassza a **Létrehozás** gombot.
 
 Ekkor létrejön a profil, és megjelenik a listán. Ha csoportokhoz szeretné hozzárendelni a profilt, tekintse meg az [eszközprofilok hozzárendelését](device-profile-assign.md) ismertető cikket.
 
@@ -124,4 +122,6 @@ Az alábbi témakörök nyújtanak segítséget az egyes tanúsítványprofil-t�
 Miután létrehozott egy megbízható hitelesítésszolgáltatói tanúsítványprofilt, létre kell hoznia a használni kívánt platformok SCEP- vagy PKCS-tanúsítványprofilját is. SCEP-tanúsítványprofil létrehozásakor adjon meg egy ugyanarra a platformra vonatkozó megbízható tanúsítványprofilt. Ez a művelet összeköti a két tanúsítványprofilt, de az egyes profilok hozzárendelését külön-külön kell elvégeznie.
 
 ## <a name="next-steps"></a>További lépések
-Az eszközprofilok hozzárendeléséről az [eszközprofilok hozzárendelését](device-profile-assign.md) ismertető cikk nyújt általános tájékoztatást.
+[Eszközprofilok hozzárendelése](device-profile-assign.md)  
+[S/MIME használata e-mailek aláírásához és titkosításához](certificates-s-mime-encryption-sign.md)  
+[Külső hitelesítésszolgáltató használata](certificate-authority-add-scep-overview.md)

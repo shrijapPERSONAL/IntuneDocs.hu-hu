@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 30f2bea4589e31f3012df1bd06e6327b923ec5d1
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 3da8a3f13e592483513daf81bc5ff1ad8af0f7e6
+ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225442"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39268906"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Az Intune eszközmegfelelőségi szabályzatai – első lépések
 
@@ -167,7 +167,7 @@ A **Megfelelőségi szabályzat beállításai** lap (Azure Portal > Eszközmegf
   Ennek a beállításnak az engedélyezésekor az eszközöknek meg kell felelnie a következőknek:
   - Engedélyezett helyalapú szolgáltatások az operációs rendszer szintjén
   - Helyalapú szolgáltatások használatának engedélyezése a Céges portál számára
-  - Jailbreakelés állapotának kiértékelése és jelentése az Intune-nak legalább 72 óránként. Máskülönben az eszköz „nem megfelelő” állapotúként lesz megjelölve.
+  - Jailbreakelés állapotának kiértékelése és jelentése az Intune-nak legalább 72 óránként. Máskülönben az eszköz „nem megfelelő” állapotúként lesz megjelölve. Az értékelés akkor indul el, ha megnyitja a Céges portál alkalmazást, vagy legalább 500 méterrel fizikailag áthelyezi az eszközt.
 
 - **Megfelelőségi állapot érvényességi időtartama (nap)**: Adja meg azt az időszakot, amelyben az eszközöknek jelenteniük kell az állapotukat minden fogadott megfelelőségi szabályzat vonatkozásában. A rendszer nem megfelelőként kezeli azokat az eszközöket, melyek ebben az időszakban nem adják vissza állapotukat. Az alapértelmezett érték 30 nap.
 

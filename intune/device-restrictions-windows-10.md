@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/23/2018
+ms.date: 6/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a4bbc89f66b49fe6a5c4ff8595c5913583288e0f
-ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
+ms.openlocfilehash: 42e0798b0c2941d9ea45e75b367b69bc7dab548f
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34803839"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321220"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Eszközkorlátozási beállítások Windows 10-hez (és újabb rendszerekhez) az Intune-ban
 A cikk bemutatja a Microsoft Intune összes olyan eszközkorlátozásokra vonatkozó beállítását, melyek konfigurálhatók Windows 10 rendszerű eszközökhöz.
@@ -253,7 +253,7 @@ Az egyes alkalmazásokhoz beállíthat az alapértelmezett adatvédelmi beállí
 
 ## <a name="kiosk-preview---obsolete"></a>Kioszk (Előzetes) – Elavult
 
-Ezek a beállítások át lesznek helyezve, és egy későbbi kiadásban el lesznek távolítva. Az új beállítások használatához olvassa el a [Kioszk-beállítások a Windows 10 vagy újabb verziókban](kiosk-settings.md) című témakört.
+Ezek a beállítások csak olvashatók, és nem módosíthatók. A kioszkmód a [Kioszkbeállítások Windows 10 vagy újabb rendszerekhez](kiosk-settings.md) lehetőség használatával konfigurálható.
 
 A kioszkeszközök jellemzően egyetlen alkalmazást futtatnak, vagy az alkalmazások egy előre meghatározott készletét. A rendszer a felhasználóknak csak ezekhez a kioszkalkalmazásokhoz ad hozzáférést, és meggátolja az eszköz más funkcióinak és szolgáltatásainak elérését.
 

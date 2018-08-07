@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2a8c14e523d33c9e0994134ff1ef468b290b3992
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f973bd36faef14232d6449c8ce9d1dc92bf32170
+ms.sourcegitcommit: 0bddd8a76201746e8835c4b792f34377b45fad60
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31022509"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39356573"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Aktiválási zár megkerülése felügyelt iOS-eszközökön az Intune-nal
 
@@ -66,15 +66,23 @@ Az eszközök aktiválási zárának megkerüléséhez azt előbb az alábbi lé
 ## <a name="how-to-use-activation-lock-bypass"></a>Az aktiválási zár megkerülésének használata
 
 >[!IMPORTANT]
->Az eszköz aktiválási zárának megkerülése után a Find My iPhone alkalmazás megnyitásakor automatikusan életbe lép egy újabb aktiválási zár. Ezért **csak akkor kövesse ezt az eljárást, ha az eszköz a birtokában van**.
+>Az eszköz aktiválási zárának megkerülése után a Find My iPhone alkalmazás indításakor automatikusan életbe lép egy újabb aktiválási zár. Ezért **csak akkor kövesse ezt az eljárást, ha az eszköz a birtokában van**.
 
-Az Intune-ban az **Aktiválási zár megkerülése** távoli eszközművelet a felhasználó Apple-azonosítója és jelszava nélkül távolítja el az aktiválási zárat az iOS-eszközről. Az aktiválási zár megkerülése után az eszköz ismét bekapcsolja az aktiválási zárat a Find My iPhone alkalmazás elindulásakor. Csak akkor kerülje meg az aktiválási zárat, ha fizikailag is hozzáfér az eszközhöz.
+Az Intune **Aktiválási zár megkerülése** távoli eszközművelet a felhasználó Apple-azonosítójának és jelszavának lekérése nélkül távolítja el az aktiválási zárat az iOS-eszközről. Az aktiválási zár megkerülése után az eszköz a Find my iPhone alkalmazás indításakor újra bekapcsolja az aktiválási zárat. Csak akkor kerülje meg az aktiválási zárat, ha fizikailag is hozzáfér az eszközhöz.
 
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
-2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
+1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget.
 3. Az **Intune** panelen válassza az **Eszközök** lehetőséget.
 4. Az **Eszközök** panelen válassza a **Minden eszköz** lehetőséget.
-5. A kezelt eszközök listáján válasszon egy felügyelt iOS-eszközt, és válassza a **...Továbbiak** lehetőséget, majd az **Aktiválási zár megkerülése** távoli eszközműveletet.
+5. Az Ön által kezelt eszközök listáján válassza az **Aktiválási zár megkerülése** távoli eszközműveletet.
+6. Nyissa meg az eszköz „Hardver” szakaszát, majd **feltételes hozzáféréssel** másolja ki az **Aktiválási zár megkerülési kódjának** értékét.
+
+    >[!NOTE]
+    >Mielőtt az eszközön visszaállítja a gyári beállításokat, másolja ki a megkerülési kódot. Ha az eszközbeállításokat a kód kimásolása előtt állítja vissza, a kód el lesz távolítva az Azure-ból.
+
+7.  Nyissa meg az eszköz **Áttekintés** paneljét, majd válassza ki a **Gyári visszaállítás** lehetőséget.
+8.  Az eszköz alaphelyzetbe állítása után meg kell adnia az *Apple-azonosítót* és a *jelszót*. Hagyja üresen az *Azonosító* mezőt, majd adja meg az **aktiválásizár-megkerülő kódot** a *jelszóhoz*. Ezzel eltávolítja a fiókot az eszközről. 
+
 
 ## <a name="next-steps"></a>További lépések
 

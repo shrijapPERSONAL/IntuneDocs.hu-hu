@@ -1,67 +1,76 @@
 ---
-title: A Microsoft Intune Android rendszerű eszközökre vonatkozó VPN-beállításai
-titlesuffix: ''
-description: Útmutató a VPN-kapcsolatok Android rendszerű eszközökön való konfigurálásához használható Intune-beállításokhoz
+title: VPN-beállítások konfigurálása Android-eszközökön a Microsoft Intune-ban – Azure | Microsoft Docs
+description: Ha Android- vagy Android for Work-eszközön hoz létre VPN konfigurációs profilt, adja meg a kapcsolat nevét, a VPN-kiszolgáló IP-címét vagy teljes tartománynevét (FQDN), válassza ki a felhasználók hitelesítésének módját a VPN-kiszolgálón, majd válassza ki a Citrix, SonicWall, Check Point Capsule, Pulse Secure vagy Edge kapcsolat típusát.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 7/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7f52c43f8918589c1b66034ad68908f4d5ddba6d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: f02a76def463c4ef1c3ee24b021df3185d263ecf
+ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905121"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39279321"
 ---
-# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-android"></a>Az Android rendszerű eszközökre vonatkozó VPN-beállítások konfigurálása a Microsoft Intune-ban 
+# <a name="configure-vpn-settings-for-devices-running-android-in-intune"></a>VPN-beállítások konfigurálása Android rendszerű eszközökön az Intune-ban
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 A cikk a VPN-kapcsolatoknak az Android rendszerű eszközökön való konfigurálására használható Intune-beállításokat ismerteti.
 
-
 A következő platformokhoz konfigurálhat VPN-beállításokat:
 
 - [Android](#android-vpn-settings)
-- [Androidos munkahelyi profilos eszközök](#android-for-work-vpn-settings)
+- [Android for work](#android-for-work-vpn-settings)
 
 A megadott beállításoktól függően az alábbi értékek közül nem mind konfigurálható.
 
 ## <a name="android-vpn-settings"></a>Android VPN-beállítások
-**Kapcsolat neve** – Adja meg a kapcsolat nevét. A végfelhasználók akkor látják ezt a nevet, amikor megkeresik a rendelkezésre álló VPN-kapcsolatok listáját az eszközükön.
-- **IP-cím vagy teljes tartománynév** – Adja meg annak a VPN-kiszolgálónak az IP-címét vagy teljes tartománynevét, amelyhez az eszközök csatlakoznak. Példák: **192.168.1.1**, **vpn.contoso.com**.
-- **Hitelesítési módszer** – Válassza ki a következő lehetőségek közül, hogy miképpen hitelesítik magukat az eszközök a VPN-kiszolgálón:
-    - **Tanúsítványok** – Adjon meg egy, a kapcsolat hitelesítéséhez korábban létrehozott SCEP- vagy PKCS-tanúsítványprofilt. A tanúsítványprofilokról további információt a [How to configure certificates](certificates-configure.md) (Tanúsítványok konfigurálása) című cikkben találhat.
-    - **Felhasználónév és jelszó** – A végfelhasználóknak felhasználónevet és jelszót kell megadniuk, ha szeretnének bejelentkezni a VPN-kiszolgálóra.
-- **Kapcsolat típusa** – Az alábbi listából válassza ki a VPN-kapcsolat típusát:
-    - **Check Point Capsule VPN**
-    - **Cisco AnyConnect**
-    - **SonicWall Mobile Connect**
-    - **F5 Edge Client**
-    - **Pulse Secure**
-    - **Citrix**
 
-- **Ujjlenyomat** (Kizárólag Check Point Capsule VPN esetén) – Adjon meg egy sztringet (például „Contoso-ujjlenyomatkód”), amelyet a rendszer a VPN-kiszolgáló megbízhatóságának ellenőrzésére használ. Az ujjlenyomatok elküldhetők az ügyfélprogramnak, így az tudni fogja, hogy megbízhat-e az azonos ujjlenyomattal rendelkező kiszolgálókban a csatlakozáskor. Ha az eszköz még nem rendelkezik ujjlenyomattal, akkor arra kéri a felhasználót, hogy bízzon meg a VPN-kiszolgálóban, amelyhez csatlakozik, miközben megjeleníti az ujjlenyomatot (a felhasználó manuálisan ellenőrizheti az ujjlenyomatot, majd a Megbízom benne elemet választva csatlakozhat).
-- **Adja meg a kulcs-érték párokat a Citrix VPN attribútumainak konfigurálásához** (Kizárólag Citrix esetén) – A Citrix által biztosított kulcs-érték párok megadásával konfigurálhatja a VPN-kapcsolat tulajdonságait.
+- **Kapcsolat neve**: Adja meg a kapcsolat nevét. A végfelhasználók akkor látják ezt a nevet, amikor megkeresik a rendelkezésre álló VPN-kapcsolatokat az eszközükön.
+- **IP-cím vagy teljes tartománynév**: Adja meg annak a VPN-kiszolgálónak az IP-címét vagy teljes tartománynevét (FQDN), amelyhez az eszközök csatlakoznak. Írja be például a **192.168.1.1** vagy a **vpn.contoso.com** címet.
 
-## <a name="android-work-profile-device-vpn-settings"></a>Androidos munkahelyi profilos eszközök VPN-beállításai
+  - **Hitelesítési mód**: Válassza ki, hogy miképpen hitelesítik magukat az eszközök a VPN-kiszolgálón. A választható lehetőségek:
 
-**Kapcsolat neve** – Adja meg a kapcsolat nevét. A végfelhasználók akkor látják ezt a nevet, amikor megkeresik a rendelkezésre álló VPN-kapcsolatok listáját az eszközükön.
-- **IP-cím vagy teljes tartománynév** – Adja meg annak a VPN-kiszolgálónak az IP-címét vagy teljes tartománynevét, amelyhez az eszközök csatlakoznak. Példák: **192.168.1.1**, **vpn.contoso.com**.
-- **Hitelesítési módszer** – Válassza ki a következő lehetőségek közül, hogy miképpen hitelesítik magukat az eszközök a VPN-kiszolgálón:
-    - **Tanúsítványok** – Adjon meg egy, a kapcsolat hitelesítéséhez korábban létrehozott SCEP- vagy PKCS-tanúsítványprofilt. A tanúsítványprofilokról további információt a [How to configure certificates](certificates-configure.md) (Tanúsítványok konfigurálása) című cikkben találhat.
-    - **Felhasználónév és jelszó** – A végfelhasználóknak felhasználónevet és jelszót kell megadniuk, ha szeretnének bejelentkezni a VPN-kiszolgálóra.
-- **Kapcsolat típusa** – Az alábbi listából válassza ki a VPN-kapcsolat típusát:
-    - **Check Point Capsule VPN**
-    - **Cisco AnyConnect**
-    - **SonicWall Mobile Connect**
-    - **F5 Edge Client**
-    - **Pulse Secure**
+    - **Tanúsítványok**: Válasszon egy meglévő SCEP- vagy PKCS-tanúsítványprofilt a kapcsolat hitelesítéséhez. [Tanúsítványok konfigurálása](certificates-configure.md): felsorolja a tanúsítványprofil létrehozásának lépéseit.
+    - **Felhasználónév és jelszó**: Amikor a végfelhasználó bejelentkezik a VPN-kiszolgálóra, felszólítást kap, hogy adjon meg egy felhasználónevet és egy jelszót.
 
+- **Kapcsolat típusa**: Válassza ki a VPN-kapcsolat típusát. A választható lehetőségek:
+
+  - **Check Point Capsule VPN**
+  - **Cisco AnyConnect**
+  - **SonicWall Mobile Connect**
+  - **F5 Edge Client**
+  - **Pulse Secure**
+  - **Citrix**
+
+- **Ujjlenyomat** (Csak Check Point Capsule VPN esetén): Adjon meg egy karakterláncot, mint például a **Contoso-ujjlenyomatkód**, a VPN-kiszolgáló megbízhatóságának ellenőrzéséhez. Az ujjlenyomatok elküldhetők az ügyfélprogramnak, így az tudni fogja, hogy csatlakozáskor megbízhat-e az azonos ujjlenyomattal rendelkező kiszolgálókban. Ha az eszköz még nem rendelkezik ujjlenyomattal, akkor arra kéri a felhasználót, hogy bízzon meg a VPN-kiszolgálóban, miközben megjeleníti az ujjlenyomatot. A felhasználó manuálisan ellenőrizheti az ujjlenyomatot, és a kapcsolódáshoz választhatja, hogy megbízik benne.
+- **Adja meg a kulcs-érték párokat a Citrix VPN attribútumaihoz** (Csak Citrix esetén): Adja meg a Citrix által megadott kulcs-érték párokat. Ezek az értékek konfigurálják a VPN-kapcsolat tulajdonságait.
+
+## <a name="android-for-work-vpn-settings"></a>Az Android for Work VPN-beállításai
+
+- **Kapcsolat neve**: Adja meg a kapcsolat nevét. A végfelhasználók akkor látják ezt a nevet, amikor megkeresik a rendelkezésre álló VPN-kapcsolatokat az eszközükön.
+- **IP-cím vagy teljes tartománynév**: Adja meg annak a VPN-kiszolgálónak az IP-címét vagy teljes tartománynevét (FQDN), amelyhez az eszközök csatlakoznak. Írja be például a **192.168.1.1** vagy a **vpn.contoso.com** címet.
+
+  - **Hitelesítési mód**: Válassza ki, hogy miképpen hitelesítik magukat az eszközök a VPN-kiszolgálón. A választható lehetőségek:
+  
+    - **Tanúsítványok**: Válasszon egy meglévő SCEP- vagy PKCS-tanúsítványprofilt a kapcsolat hitelesítéséhez. [Tanúsítványok konfigurálása](certificates-configure.md): felsorolja a tanúsítványprofil létrehozásának lépéseit.
+    - **Felhasználónév és jelszó**: Amikor a végfelhasználó bejelentkezik a VPN-kiszolgálóra, felszólítást kap, hogy adjon meg egy felhasználónevet és egy jelszót.
+
+- **Kapcsolat típusa**: Válassza ki a VPN-kapcsolat típusát. A választható lehetőségek:
+
+  - **Check Point Capsule VPN**
+  - **Cisco AnyConnect**
+  - **SonicWall Mobile Connect**
+  - **F5 Edge Client**
+  - **Pulse Secure**
+
+## <a name="next-steps"></a>További lépések
+[VPN-profilok az Intune-ban](vpn-settings-configure.md)

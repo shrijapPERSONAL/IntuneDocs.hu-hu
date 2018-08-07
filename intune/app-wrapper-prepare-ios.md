@@ -14,12 +14,12 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: edbd802b5f0482fc5dbaa801308447e2f8061189
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 050660b4da609d8e6c0dbf969eb71aa79945262a
+ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38224935"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39254535"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>iOS-alkalmazások előkészítése alkalmazásvédelmi szabályzatokkal való felügyeletre az Intune alkalmazásburkoló eszközével
 
@@ -320,7 +320,7 @@ Az alkalmazást a burkolása előtt *jogosultságok* megadásával további enge
 
 ### <a name="supported-capabilities-for-the-app-wrapping-tool-for-ios"></a>Az iOS rendszerhez készült alkalmazásburkoló eszköz támogatott képességei
 
-|Képesség|Leírás|Ajánlott útmutatás|
+|Képesség|Description|Ajánlott útmutatás|
 |--------------|---------------|------------------------|
 |Alkalmazáscsoportok|Alkalmazáscsoportok használatával biztosíthatja több alkalmazás hozzáférését a megosztott tárolókhoz, és engedélyezheti a folyamatközi kommunikációt az alkalmazások között.<br /><br />Az alkalmazáscsoportok engedélyezéséhez nyissa meg a **Capabilities** (Képességek) panelt, és kattintson az **On** (Bekapcsolás) lehetőségre az **App Groups** (Alkalmazáscsoportok) beállításnál. Felvehet alkalmazáscsoportokat, illetve kijelölhet meglévőket.|Alkalmazáscsoportok használatakor használjon címfeloldási DNS-t:<br /><br />*csoport.com.cégnév.Alkalmazáscsoport*|
 |Háttérbeli üzemmódok|A háttérbeli üzemmódok engedélyezése esetén az iOS-alkalmazás tovább futhat a háttérben is.||
@@ -339,7 +339,7 @@ Az alkalmazást a burkolása előtt *jogosultságok* megadásával további enge
 
     b.  Kapcsolja be a megfelelő képességeket. Az egyes képességekről és a megfelelő értékek meghatározásáról az iOS Developer Library [Adding Capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) (Képességek hozzáadása) című témakörében olvashat bővebben.
 
-    c.  Jegyezze fel a folyamat során létrehozott azonosítókat.
+    c.  Jegyezze fel a folyamat során létrehozott azonosítókat. Ezekre `AppIdentifierPrefix` értékekként lehet hivatkozni.
 
     d.  Készítse el és írja alá a burkolandó alkalmazást.
 
@@ -349,7 +349,7 @@ Az alkalmazást a burkolása előtt *jogosultságok* megadásával további enge
 
     b.  Hozzon létre egy létesítési profilt az alkalmazásához. Utasításokért lásd: [How to Obtain the Prerequisites for the Intune App Wrapping Tool for iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/) (Az Intune App Wrapping Tool for iOS előfeltételeinek megteremtése).
 
-    c.  A létesítési profiljában engedélyezze ugyanazokat a jogosultságokat, amelyekkel az alkalmazásában rendelkezik. Adja meg ugyanazokat az azonosítókat, amelyeket az alkalmazása fejlesztése során adott meg.
+    c.  A létesítési profiljában engedélyezze ugyanazokat a jogosultságokat, amelyekkel az alkalmazásában rendelkezik. Adja meg ugyanazokat az azonosítókat (`AppIdentifierPrefix` értékek), amelyeket az alkalmazása fejlesztése során adott meg. 
 
     d.  Fejezze be a létesítési profil varázslót, és töltse le a fájlt.
 
@@ -418,7 +418,7 @@ Hibaelhárítás során az alábbi lépésekkel szerezhet be naplófájlokat a b
 > [!NOTE]
 > A naplózási funkció engedélyezve van az Intune alkalmazásburkoló eszköz 7.1.13-as vagy újabb verziójával burkolt alkalmazásokban.
 
-### <a name="see-also"></a>További információ
+### <a name="see-also"></a>Lásd még:
 - [Annak eldöntése, hogyan készíti elő az alkalmazásokat a mobilalkalmazás-kezeléshez a Microsoft Intune-nal](apps-prepare-mobile-application-management.md)</br>
 - [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)</br>
 - [Alkalmazások előkészítése a mobilalkalmazás-felügyeletre az SDK segítségével](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)

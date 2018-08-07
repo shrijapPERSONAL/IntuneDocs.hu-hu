@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d42500b9476e0b6c7bc9aaaba1ea4333fd136c6
-ms.sourcegitcommit: 29914cc467e69711483b9e2ccef887196e1314ef
+ms.openlocfilehash: ce017f323ebbe4095f5aa31990878afce0116573
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36297905"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321237"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>SCEP-tanúsítványok konfigurálása és használata az Intune-nal
 
@@ -463,4 +463,6 @@ A 6.1806.x.x verziótól kezdődően az Intune Connector Service naplózza az es
 | 0x0FFFFFFFF | Unknown_Error  | Nem tudtuk teljesíteni a kérelmét egy kiszolgálóoldali hiba miatt. Próbálkozzon újra. |
 
 ## <a name="next-steps"></a>További lépések
-[PKCS-tanúsítványok használata](certficates-pfx-configure.md), vagy [PKCS-tanúsítványok kibocsátása egy Symantec PKI-kezelő webszolgáltatásból](certificates-symantec-configure.md).
+
+- [PKCS-tanúsítványok használata](certficates-pfx-configure.md) vagy [PKCS-tanúsítványok kiállítása egy Symantec PKI-kezelő webszolgáltatásból](certificates-symantec-configure.md)
+- [Külső hitelesítésszolgáltató felvétele a SCEP Intune-nal való használatához](certificate-authority-add-scep-overview.md)

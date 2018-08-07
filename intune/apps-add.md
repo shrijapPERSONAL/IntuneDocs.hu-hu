@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/19/2018
+ms.date: 07/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2db9d991c476d89399058137adb972c06029befc
-ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
+ms.openlocfilehash: 69887fb0a9b2e447d6c6101b26ce50f733053337
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028728"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321288"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Alkalmazások hozzáadása a Microsoft Intune-hoz
 
@@ -57,7 +57,7 @@ A következő táblázatban megtekintheti a konkrét alkalmazástípusokat és a
 | Androidos üzletági (LOB) alkalmazások | Üzletági (LOB) alkalmazás | Válassza az **Üzletági alkalmazás** lehetőséget az **alkalmazás típusa** területen, válassza az **Alkalmazáscsomag-fájl** elemet, majd adjon meg egy **.apk** kiterjesztésű Androidos telepítőfájlt.  |
 | iOS-es üzletági alkalmazások | Üzletági (LOB) alkalmazás | Válassza az **Üzletági alkalmazás** lehetőséget az **alkalmazás típusa** területen, válassza az **Alkalmazáscsomag-fájl** elemet, majd adjon meg egy **.ipa** kiterjesztésű iOS-es telepítőfájlt.  |
 | Windows Phone LOB-alkalmazások | Üzletági (LOB) alkalmazás | Válassza az **Üzletági alkalmazás** lehetőséget az **alkalmazás típusa** területen, válassza az **Alkalmazáscsomag-fájl** elemet, majd adjon meg egy **.xap** kiterjesztésű Windows Phone-telepítőfájlt.  |
-| Windows LOB apps | Üzletági (LOB) alkalmazás | Válassza az **Üzletági alkalmazás** lehetőséget az alkalmazás típusa területen, válassza az **Alkalmazáscsomag-fájl** elemet, majd adjon meg egy **.msi**, **.appx** vagy **.appxbundle** kiterjesztésű Windows-telepítőfájlt. |
+| Windows LOB apps | Üzletági (LOB) alkalmazás | Válassza az **Üzletági alkalmazás** lehetőséget az alkalmazás típusa területen, válassza az **Alkalmazáscsomag-fájl** elemet, majd adjon meg egy **.msi**, **.appx**, **.appxbundle**, **.msix** vagy **.msixbundle** kiterjesztésű Windows-telepítőfájlt. |
 | Beépített iOS-alkalmazás  | Beépített alkalmazás | Válassza a **Beépített alkalmazás** lehetőséget az **alkalmazás típusa** területen, majd jelöljön ki egy beépített alkalmazást az elérhető alkalmazások listáján.  |
 | Beépített Android-alkalmazás  | Beépített alkalmazás | Válassza a **Beépített alkalmazás** lehetőséget az **alkalmazás típusa** területen, majd jelöljön ki egy beépített alkalmazást az elérhető alkalmazások listáján.  |
 | Webalkalmazások  | Web app  | Válassza a **Webes hivatkozás** lehetőséget az **alkalmazás típusa** területen, majd adjon meg egy érvényes, a webalkalmazásra mutató URL-címet.  |
@@ -119,6 +119,9 @@ A webes, az áruházbeli és az üzletági alkalmazásokon kívül érdemes tisz
 - **Vállalati Apple Volume Purchasing Program (iOS és MacOS)**: Az iOS App Store áruháza lehetővé teszi, hogy több licencet is vásároljon a vállalatnál használni kívánt alkalmazásokhoz. Több licenc vásárlásával hatékonyabban kezelhetők a vállalaton belüli alkalmazások. További információ: [Mennyiségi programban vásárolt iOS-alkalmazások felügyelete](vpp-apps-ios.md).
 - **Androidos munkahelyi profil**: Az alkalmazások androidos munkahelyi profilt használó eszközökhöz való hozzárendelése eltér a hagyományos androidos eszközökhöz való hozzárendeléstől. Minden olyan alkalmazás, amelyet az androidos munkahelyi profil részeként telepít a felügyelt Google Play áruházból szerezhető be. Jelentkezzen be az áruházba, keresse meg a kívánt alkalmazásokat, majd hagyja jóvá a választást. Az alkalmazás megjelenik az Azure Portal **Licencelt alkalmazások** lapján, és a hozzárendelése ugyanúgy kezelhető, mint bármely más alkalmazásé.
 - **Microsoft Store Vállalatoknak (Windows 10)**: A Microsoft Store Vállalatoknak az a hely, ahol alkalmazásokat vásárolhat a szervezete számára egyenként vagy mennyiségi program keretében. Az áruházat a Microsoft Intune-nal összekapcsolva a mennyiségi programban vásárolt alkalmazásokat az Azure Portalon kezelheti. További információ: [A Microsoft Store Vállalatoknak áruházban vásárolt alkalmazások felügyelete](windows-store-for-business.md).
+
+    > [!NOTE]
+    > A Windows-alkalmazások fájlnévkiterjesztései közé tartozik az **.msi**, **.appx**, **.appxbundle**, **.msix** és **.msixbundle**.  
 
 ## <a name="before-you-add-apps"></a>Mielőtt hozzáadna alkalmazásokat
 Mielőtt elkezdené az alkalmazások hozzáadását és hozzárendelését, vegye figyelembe a következőket:

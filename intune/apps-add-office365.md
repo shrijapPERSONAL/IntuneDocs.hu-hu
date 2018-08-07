@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 09c4fdc6de0368e7ba7d4bebbc3ebfbf2c5ec378
-ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
+ms.openlocfilehash: 4455a3c26296faba8bf01cf43d8555aebc13afc6
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37869372"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321475"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365-alkalmazások hozzárendelése Windows 10-es eszközökhöz a Microsoft Intune-nal
 
@@ -60,9 +60,6 @@ Válassza ki azokat az Office-alkalmazásokat, melyeket szeretne eszközökhöz 
     Emellett telepíthet alkalmazásokat a Microsoft Project Online asztali ügyfeléhez és a Microsoft Visio Pro for Office 365 szolgáltatáshoz, amennyiben rendelkezik hozzájuk licenccel.
 3. Válassza az **OK** gombot.
 
->[!IMPORTANT]
-> Az alkalmazáscsomag létrehozása után annak tulajdonságai már nem szerkeszthetők. Ha eltérő tulajdonságokat szeretne beállítani, törölje az alkalmazáscsomagot, és hozzon létre egy újat.
-
 ## <a name="configure-app-information"></a>Az alkalmazásadatok konfigurálása
 
 Ebben a lépésben adhatja meg az alkalmazáscsomag adatait. Ezek alapján azonosíthatja az alkalmazáscsomagot az Intune-ban, és a felhasználók is ezek alapján találhatják meg azt a céges portálon.
@@ -95,11 +92,8 @@ Ebben a lépésben az alkalmazáscsomag telepítési beállításait konfigurál
         - **Semi-Annual**
         - **Féléves (megcélzott)**
     - **Alkalmazás végfelhasználói licencszerződésének automatikus elfogadása**: Ezt a beállítást akkor jelölje be, ha nem követeli meg a végfelhasználóktól, hogy elfogadják a licencszerződést. Ebben az esetben az Intune automatikusan elfogadja a szerződést.
-    - **Megosztott aktiválás használata**: A megosztott aktiválás akkor használatos, amikor több felhasználó használja ugyanazt a számítógépet. További információt az Overview of shared computer activation for Office 365 (Az Office 365 megosztott aktiválásának áttekintése) című témakörben találhat.
+    - **Megosztott aktiválás használata**: A megosztott aktiválás akkor használatos, amikor több felhasználó használja ugyanazt a számítógépet. További információ: [Az Office 365 megosztott aktiválásának áttekintése](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
     - **Nyelvek**: Az Office automatikusan telepít minden támogatott nyelvet, mely telepítve van a Windowsban a végfelhasználói eszközön. Ezt a beállítást akkor jelölje be, ha az alkalmazáscsomaghoz további nyelveket szeretne telepíteni.
-
->[!IMPORTANT]
-> Az alkalmazáscsomag létrehozása után annak tulajdonságai már nem szerkeszthetők. Ha eltérő tulajdonságokat szeretne beállítani, törölje az alkalmazáscsomagot, és hozzon létre egy újat.
 
 ## <a name="finish-up"></a>Befejezés
 
@@ -120,7 +114,7 @@ Az alábbi táblázatban az esetlegesen megjelenő gyakori hibakódok és azok j
 |997|WIP|Telepítés|
 |0|Telepítés után|A telepítés sikeres volt|    
 |1603 (ERROR_INSTALL_FAILURE)|-|Valamilyen előfeltétel ellenőrzése sikertelen volt, például:<ul><li>SxS (Kísérlet a telepítésre, miközben a 2016-os MSI telepítve van)</li><li>Verzióeltérés</li><li>Egyebek</li></ul>|  
-|0x8000ffff (E_UNEXPECTED)|-|Kísérlet történt az eltávolításra, miközben a számítógépen nem található meg az Office Kattintásra|     
+|0x8000ffff (E_UNEXPECTED)|-|Kísérlet történt az eltávolításra, miközben a számítógépen nem található meg az Office Kattintásra szolgáltatás|     
 |17002|-|Nem sikerült befejezni a forgatókönyv végrehajtását (telepítés). Lehetséges okok:<ul><li>A felhasználó megszakította a telepítést</li><li>Egy másik telepítés megszakította a telepítést</li><li>A telepítés során elfogyott a lemezterület</li><li>Ismeretlen nyelvi azonosító</li></ul>|
 |17004|-|Ismeretlen termékváltozatok|   
 

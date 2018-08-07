@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 05/16/2018
+ms.date: 07/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ac85478abed049487c028c58637e7937876d2198
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 87333610380ef34e1d832694a30bfe97388bcb62
+ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34449870"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39254399"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>A Microsoft Intune App SDK Androidon – útmutató fejlesztőknek
 
@@ -463,7 +463,20 @@ Nem szükséges további jegyzékfájlértékeket konfigurálnia.
 
 Az Authority és a NonBrokerRedirectURI megadható szükséges esetén.
 
-Az Intune SDK csapata kérni fogja az alkalmazás azonosítóját (Client ID). Ezt az [Azure Portalon](https://portal.azure.com/), a **Minden alkalmazás** terület **Alkalmazásazonosító** oszlopában találhatja meg. Az alkalmazások Azure AD-ban való regisztrálásáról [itt](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications) találhat információt. Az Intune SDK csapatát a következő címen érheti el: msintuneappsdk@microsoft.com.
+Alkalmazását a következő lépésekkel regisztrálhatja az Azure AD-ben.
+
+Az Azure Portalon:
+1.  Nyissa meg az **Azure Active Directory** panelt.
+2.  Válassza az alkalmazás **Alkalmazásregisztráció** beállítását.
+3.  Az **API-hozzáférés** fejléc alatti **Beállítások** között válassza a **Szükséges engedély** lehetőséget. 
+4.  Kattintson a **+ Hozzáadás** lehetőségre.
+5.  Kattintson az **API kiválasztása** lehetőségre. 
+6.  A keresőmezőbe írja be a **Microsoft Mobile Application Management** (Microsoft mobilalkalmazás-kezelés) kifejezést.
+7.  Jelölje aki az API-k listájának **Microsoft Mobile Application Management** elemét, és kattintson a kiválasztás lehetőségre.
+8.  Válassza a **Felhasználó alkalmazásfelügyeleti adatainak olvasása és írása** lehetőséget.
+9.  Kattintson a **Kész** gombra.
+
+Az alkalmazások Azure AD-ban való regisztrálásáról [itt](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications) találhat információt. 
 
 Lásd emellett alább a [Feltételes hozzáférés](#conditional-access) követelményeit.
 
@@ -1418,7 +1431,7 @@ Az alábbiakban útmutatást találhat egy APP-WE szolgáltatás automatikus reg
 > Az **alapértelmezett regisztráció** előnyei közé tartozik egy egyszerűsített módszer az eszközön található alkalmazás az APP-WE szolgáltatástól lekért szabályzatához.
 
 ### <a name="general-requirements"></a>Általános követelmények
-* Az Intune SDK csapata kérni fogja az alkalmazás azonosítóját. Ezt az [Azure Portalon](https://portal.azure.com/), a **Minden alkalmazás** terület **Alkalmazásazonosító** oszlopában találhatja meg. Az Intune SDK csapatát e-mailen keresztül érdemes felkeresni (msintuneappsdk@microsoft.com).
+* Az [Általános ADAL-konfigurációk #2](https://docs.microsoft.com/en-us/intune/app-sdk-android#common-adal-configurations) című cikkben leírt lépések végrehajtásával győződjön meg arról, hogy alkalmazása regisztrálva van az Intune mobilalkalmazás-kezelési szolgáltatásban.
 
 ### <a name="working-with-the-intune-sdk"></a>Az Intune SDK használata
 Ezek az utasítások minden olyan Android- és Xamarin-alkalmazásfejlesztőnek szólnak, akik az alkalmazás által a végfelhasználói eszközökön használandó Intune-alkalmazásvédelmi szabályzatokat szeretnének kérni.

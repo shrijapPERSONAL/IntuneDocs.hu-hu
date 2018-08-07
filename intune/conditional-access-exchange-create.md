@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fbe55be15df9755c109ec7e8e8e23db3c27931b0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 4fd82cf211360e77b17f8ea915c13719b8ab3408
+ms.sourcegitcommit: cd97505d6f5dc54db7f35a691376bcbf6f36ac9d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905529"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39323242"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Feltételes hozzáférési szabályzat létrehozása a helyszíni Exchange-hez és régi Dedikált Exchange Online-hoz
 
@@ -63,7 +63,7 @@ Mielőtt konfigurálja a feltételes hozzáférést, ellenőrizze a következők
 - Windows Phone 8.1 és újabb verziók
 - Natív e-mail alkalmazás iOS rendszerű eszközökön.
 - EAS levelezési ügyfélprogramok, mint például a Gmail az Android 4-es vagy újabb verzióiban.
-- EAS levelezési ügyfélprogramok **Androidos munkahelyi profilos** eszközökön: a **munka profilban** csak a **Gmail** és a **Nine Work** alkalmazások támogatottak androidos munkahelyi profilos eszközökön. Ahhoz, hogy a feltételes hozzáférés működjön androidos munkahelyi profilos eszközökön, telepíteni kell egy email-profilt a Gmail vagy a Nine Work alkalmazáshoz, és ezeket az alkalmazásokat kötelező telepítésként kell központilag telepíteni.
+- EAS levelezési ügyfélprogramok **Androidos munkahelyi profilos eszközökön:** A **munkahelyi profilban** csak a **Gmail** és **Nine Work for Android Enterprise** alkalmazások támogatottak az androidos munkahelyi profilos eszközökön. Ahhoz, hogy a feltételes hozzáférés működjön az androidos munkahelyi profilos eszközökön, telepíteni kell egy e-mail-profilt a Gmail vagy a Nine Work for Android Enterprise alkalmazáshoz, és ezeket az alkalmazásokat kötelező telepítésként kell központilag telepíteni.
 
 > [!NOTE]
 > A Microsoft Outlook alkalmazás Android- és iOS-verziója nem támogatott. 

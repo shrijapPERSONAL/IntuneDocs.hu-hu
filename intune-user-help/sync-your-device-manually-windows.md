@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/08/2018
+ms.date: 07/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: aa556b2939986759aa92e63750fd161c05afbc38
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: a7c61ae0d60b2baf8bf9760297a5e35cbb5188de
+ms.sourcegitcommit: 47b55d211534f2e52e50d6b936c9a349e99fd222
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34048019"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39236055"
 ---
 # <a name="sync-your-windows-device-manually"></a>Windows-eszköz manuális szinkronizálása
 
@@ -40,7 +40,7 @@ Minden Windows-eszköz szinkronizálható az eszköz Beállítások alkalmazás�
 * [Windows 10 Mobile](#windows-10-mobile)  
 * [Windows Phone 8.1](#windows-phone-81)    
 
-## <a name="sync-from-company-portal-app-for-windows"></a>Szinkronizálás a Windows Céges portál alkalmazásból
+## <a name="sync-directly-from-company-portal-app-for-windows"></a>Szinkronizálás közvetlenül a windowsos Céges portál alkalmazásból
 Az alkotói frissítést (1703) vagy újabb verziót futtató Windows 10-es eszközök manuális szinkronizálásához kövesse az alábbi lépéseket.
 
 1.  Nyissa meg az eszközén a Céges portál alkalmazást.
@@ -49,7 +49,7 @@ Az alkotói frissítést (1703) vagy újabb verziót futtató Windows 10-es eszk
 
     ![Képernyőkép a Céges portál alkalmazásról, kiemelt Beállítások elemmel](./media/RS1_homePage_settings_04.png)  
     
-    ![Képernyőkép a Céges portál beállítások lapjáról, kiemelt Szinkronizálás gombbal](./media/RS1_settingspage_sync05.png)    
+    ![Képernyőkép a Céges portál beállítások lapjáról, kiemelt Szinkronizálás gombbal](./media/RS1_settingspage_sync05.png)  
 
 ## <a name="sync-from-settings-app"></a>Szinkronizálás a Beállítások alkalmazásból 
 A Microsoft HoloLenses, Windows 10 asztali verziós, Windows 10 Mobile-os vagy Windows Phone 8.1-es eszközének a Beállítások alkalmazásból történő szinkronizálásához kövesse az alábbi lépéseket.

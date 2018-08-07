@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0152d0cb7af418b500c1ac5991f2356bd2e19965
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 1b1f54486ab2c3d98e663cfddded346eb61662ae
+ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909082"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39279423"
 ---
 # <a name="connect-your-intune-account-to-your-android-enterprise-account"></a>Az Intune-fiók csatlakoztatása a Vállalati Android-fiókjához
 
@@ -51,7 +51,7 @@ Az androidos munkahelyi profilos eszközök és az androidos kioszkeszközök t�
 
 ## <a name="disconnect-your-android-enterprise-administrative-account"></a>Vállalati Andoid rendszergazdai fiók leválasztása
 
-A Vállalati Android-regisztrációt és -felügyeletet ki is kapcsolhatja. Az Intune felügyeleti konzolján a **Leválasztás** lehetőséget választva minden regisztrált androidos munkahelyi profilos eszköz és kioszkeszköz regisztrációja megszűnik. Ezzel megszűnik a vállalati Android-fiók és az Intune közötti kapcsolat is.
+A Vállalati Android-regisztrációt és -felügyeletet ki is kapcsolhatja. Ehhez először szüntesse meg minden munkahelyi profilos, regisztrált Android-eszköz regisztrációját. Ezután az Intune felügyeleti konzolján a **Leválasztás** lehetőséget választva minden munkahelyi profilos, regisztrált Android-eszköz és kioszkeszköz regisztrációja megszűnik. Ezzel megszűnik a vállalati Android-fiók és az Intune közötti kapcsolat is.
 
 1. Az Intune rendszergazdájaként az [Azure Portalon](https://portal.azure.com) válassza a **Minden szolgáltatás** > **Figyelés + felügyelet** > **Intune** elemet.
 2. Válassza az **Eszközregisztráció** > **Android-regisztráció** > **Felügyelt Google Play** > **Leválasztás** lehetőséget.
