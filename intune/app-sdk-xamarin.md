@@ -14,12 +14,12 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 421dede4b0da71fe04649e21bfcf7c15d2270507
-ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
+ms.openlocfilehash: 1cfbaa0cbdcc2263f6e8d1d3fc8562678e410537
+ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37869355"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39400317"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin Bindings
 
@@ -50,20 +50,6 @@ A Microsoft Intune App SDK Xamarin Bindings lehetővé teszi, hogy Intune alkalm
 Az Intune App SDK Xamarin Bindingsszal létrehozott Xamarin-alkalmazásokra mostantól alkalmazhatók az Intune alkalmazásvédelmi szabályzatai az Intune mobileszköz-felügyeletében (MDM) regisztrált eszközökön és a nem regisztrált eszközökön is.
 
 ## <a name="prerequisites"></a>Előfeltételek
-
-* **[Csak az Android esetében]** Az eszközön a legújabb Microsoft Intune Céges portál alkalmazást kell telepíteni.
-
-## <a name="get-started"></a>Első lépések
-
-1. Olvassa el Microsoft Intune MAM Xamarin összetevő [licencfeltételeit](https://components.xamarin.com/license/microsoft.intune.mam).
-
-2.  Töltse le az Intune App SDK Xamarin Component mappát a [GitHubról](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) vagy a [Nuget.orgról](https://www.nuget.org/profiles/msintuneappsdk), és csomagolja ki. Az 1. és a 3. lépésben letöltött fájlnak ugyanazon a könyvtárszinten kell lennie.
-
-3.  Futtassa rendszergazdaként a következő parancsot a parancssorban: `Xamarin.Component.exe install <.xam> file`.
-
-4.  A Visual Studióban kattintson a jobb gombbal a korábban létrehozott Xamarin-projektben a **components** (összetevők) elemre.
-
-5.  Válassza az **Edit Components** (Összetevők szerkesztése) lehetőséget, és vegye fel az Intune App SDK összetevőt, amelyet helyileg töltött le a számítógépére.
 
 A [licencfeltételek](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf) áttekintése. Nyomtassa ki és őrizze meg a licencfeltételeket. Az Intune App SDK Xamarin Bindings letöltésével és használatával elfogadja licencfeltételeket. Amennyiben a feltételeket nem fogadja el, ne használja a szoftvert.
 
@@ -122,7 +108,7 @@ Olyan Xamarin-alapú androidos alkalmazások esetén, amelyek nem használnak fe
 > Mivel ez a művelet felülír egy olyan függőséget, amit a Visual Studio az Intellisense automatikus kiegészítéshez használ, lehet, hogy újra kell indítania a Visual Studiot a remapper eszköz első futtatását követően ahhoz, hogy az Intellisense felismerje a változtatásokat. 
 
 
-## <a name="support"></a>Támogatás
+## <a name="support"></a>Support
 
 Elvégezte az összetevő alkalmazásba történő beépítésének alapvető lépéseit. Következőnek kövesse a Xamarin-alapú Android-mintaalkalmazásban lévő lépéseket. Két mintát biztosítottunk, egyet a Xamarin.Forms-hoz és egyet az Androidhoz.
 
