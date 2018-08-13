@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/25/2018
+ms.date: 7/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ac3bbb4a32e86d756835d136cd3923676f022a7b
-ms.sourcegitcommit: 0d08daa162212e6cdd8a6ee3ad7ed42c6e6824e4
+ms.openlocfilehash: 45d41f02fdfff7179dbd43f4d2afdac3337f8b7f
+ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39336050"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39400283"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>eSIM mobilhálózati profilok konfigurálása az Intune-ban – Nyilvános előzetes verzió
 
@@ -26,7 +26,7 @@ ms.locfileid: "39336050"
 
 ## <a name="introduction"></a>Bevezetés
 
-Az eSIM egy beágyazott SIM-kártya, amely mobilhálózati adatkapcsolaton keresztül teszi lehetővé az eSIM-kompatibilis eszközök, például a [Surface LTE Pro](https://www.microsoft.com/surface/business/surface-pro), kapcsolódását az internethez. Ha rendelkezik eSIM-kártyával, nincs szüksége mobilszolgáltató által kibocsátott SIM-kártyára, és gyorsan válthat a mobilszolgáltatók és az adatcsomagok között.
+Az eSIM egy beágyazott SIM-kártya, amely mobilhálózati adatkapcsolaton keresztül teszi lehetővé az eSIM-kompatibilis eszközök, például a [Surface LTE Pro](https://www.microsoft.com/surface/business/surface-pro), kapcsolódását az internethez. eSIM-kártya birtokában nincs szüksége mobilszolgáltató által kibocsátott SIM-kártyára. A világot járva váltogathatja is a mobilszolgáltatókat és díjcsomagokat, és mindig kapcsolatban maradhat.
 
 Megteheti például, hogy két külön mobil díjcsomagot használ munkához és személyes célra. Utazás közben a díjcsomagokat kínáló helyi mobilszolgáltatók keresésével kapcsolódhat az internethez.
 

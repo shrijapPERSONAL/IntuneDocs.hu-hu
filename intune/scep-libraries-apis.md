@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/26/2018
+ms.date: 07/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5278b631d581c892f68e8ba08c2bc7893cd3782a
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 423bfc02edb9260adadf0a6dc67e6299639c7fbb
+ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321668"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575049"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>API-k használata az SCEP külső tanúsítványszolgáltatóinak Intune-ba való felvételére
 
@@ -41,11 +41,18 @@ Az Intune-ben a rendszergazdák SCEP-profilokat hoznak létre, majd hozzárendel
 - A hitelesítésszolgáltató megbízható főtanúsítványa
 - Tanúsítványattribútumok és egyebek
 
-Az Intune-ba bejelentkező eszközökhöz a rendszer hozzárendeli az SCEP-profilt, és ezekkel a paraméterekkel konfigurálja. Az Intune létrehoz egy dinamikusan generált SCEP-jelszót, majd hozzárendeli az eszközhöz.
+Az Intune-ba bejelentkező eszközökhöz a rendszer hozzárendeli az SCEP-profilt, és ezekkel a paraméterekkel konfigurálja. Az Intune létrehoz egy dinamikusan generált SCEP-ellenőrző jelszót, majd hozzárendeli azt az eszközhöz.
 
-Ez a jelszó tartalmazza az eszköz által az SCEP-kiszolgáló számára kibocsátott tanúsítvány-aláírási kérelemhez (CSR) várt paraméterek részleteit. A jelszó az ellenőrző kérdés lejárati időpontját is tartalmazza. Az Intune titkosítja az információt, aláírja a titkosított blobot, majd becsomagolja ezeket az adatokat az SCEP-jelszóba.
+Az ellenőrzés a következőket tartalmazza:
 
-Az SCEP-kiszolgálóhoz kapcsolódó, tanúsítványt kérő eszközök ekkor ezt az SCEP-jelszót adják meg. A jelszónak át kell mennie az SCEP-kiszolgálón az érvényesítésen, hogy az tanúsítványt bocsásson ki az eszköz részére. Az SCEP-jelszó érvényesítésekor a következő ellenőrzések történnek:
+- A dinamikusan generált ellenőrző jelszót
+- Az eszköz által az SCEP-kiszolgáló számára kibocsátott tanúsítvány-aláírási kérelemhez (CSR) várt paraméterek részleteit
+- Az ellenőrzés lejárati ideje
+
+Az Intune titkosítja ezt az információt, aláírja a titkosított blobot, majd becsomagolja ezeket az adatokat az SCEP-ellenőrző jelszóba.
+
+Az SCEP-kiszolgálóhoz kapcsolódó, tanúsítványt kérő eszközök ekkor ezt az SCEP-ellenőrző jelszót adják meg. Az SCEP-kiszolgáló ellenőrzés céljából kiküldi a CSR-t és a titkosított SCEP-ellenőrző jelszót az Intune-hoz.  Az ellenőrző jelszónak és a CSR-nek át kell mennie az érvényesítésen, hogy az SCEP-kiszolgáló tanúsítványt bocsáthasson ki az eszköz részére. Az SCEP-ellenőrző jelszó érvényesítésekor a következő ellenőrzések történnek:
+
 
 - Ellenőrzi a titkosított blob aláírását
 - Ellenőrzi, hogy az ellenőrző kérdés nem járt-e le

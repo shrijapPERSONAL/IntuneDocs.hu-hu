@@ -17,18 +17,18 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a7c61ae0d60b2baf8bf9760297a5e35cbb5188de
-ms.sourcegitcommit: 47b55d211534f2e52e50d6b936c9a349e99fd222
+ms.openlocfilehash: 04737d1e800094f21a8bdaf42047f8bce7f48e6a
+ms.sourcegitcommit: d3375505a5869c0392d2bc0f48b975c10366f586
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39236055"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39362024"
 ---
 # <a name="sync-your-windows-device-manually"></a>Windows-eszköz manuális szinkronizálása
 
 Ha nem elég gyors az alkalmazástelepítés, kezdeményezzen manuális eszközszinkronizálást. A manuális szinkronizálással kényszerítheti az eszközt az Intune-hoz való csatlakozásra és a legújabb frissítések és kommunikáció letöltésére. Az eszközszinkronizálás után felgyorsulhat a telepítés.
 
-Az Intune a Céges portál alkalmazásból és az eszköz Beállítások alkalmazásából támogatja a manuális szinkronizálást. 
+Az Intune a Céges portál alkalmazásból, az asztali tálcáról vagy a Start menüből, valamint az eszköz Beállítások alkalmazásából támogatja a manuális szinkronizálást. 
 
 A Céges portál alkalmazás csak a Windows 10 alkotói frissítését (1703) vagy újabb verziót futtató eszközökön érhető el. 
 * [Szinkronizálás a Céges portál alkalmazásból](#Sync-from-Company-Portal-app-for-Windows)  
@@ -51,8 +51,19 @@ Az alkotói frissítést (1703) vagy újabb verziót futtató Windows 10-es eszk
     
     ![Képernyőkép a Céges portál beállítások lapjáról, kiemelt Szinkronizálás gombbal](./media/RS1_settingspage_sync05.png)  
 
+## <a name="sync-from-device-taskbar-or-start-menu"></a>Szinkronizálás az eszköz tálcájáról vagy Start menüjéből   
+
+A szinkronizálás vezérlőjét az alkalmazáson kívülről is elérheti az eszköz asztalán. Ez a módszer akkor hasznos, ha az alkalmazás rögzítve van közvetlenül a tálcán vagy a Start menüben, és gyorsan szeretné szinkronizálni azt.  
+
+1. Keresse meg a Céges portál alkalmazás ikonját a tálcán vagy a Start menüben.  
+2. Kattintson a jobb gombbal az alkalmazás ikonjára a menü (más néven gyorslista) megjelenítéséhez.  
+
+    ![A Windows tálcájának képernyője egy eszköz asztalán. A Céges portál alkalmazás ikonjára kattintva megjelenik egy menü a Rögzítés a tálcán, az Ablak bezárása és az Eszköz szinkronizálása lehetőségekkel.](./media/sync-device-from-start-menu-1807.png)  
+
+3. Válassza ki az **Eszköz szinkronizálása** lehetőséget. Megnyílik a Céges portál alkalmazás **Beállítások** lapja, és megkezdődik a szinkronizálás.  
+
 ## <a name="sync-from-settings-app"></a>Szinkronizálás a Beállítások alkalmazásból 
-A Microsoft HoloLenses, Windows 10 asztali verziós, Windows 10 Mobile-os vagy Windows Phone 8.1-es eszközének a Beállítások alkalmazásból történő szinkronizálásához kövesse az alábbi lépéseket.
+A Microsoft HoloLenses, Windows 10 asztali verziós, Windows 10 Mobile-os vagy Windows Phone 8.1-es eszközének a Beállítások alkalmazásból történő szinkronizálásához kövesse az alábbi lépéseket.  
 
 ### <a name="windows-10-desktop"></a>Windows 10 asztali verzió
 1. Az eszközön válassza a **Start** > **Beállítások** lehetőséget.

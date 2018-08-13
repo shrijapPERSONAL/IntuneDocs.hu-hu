@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 07/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 53be8456b09c7775a4de827eb09680f47e8d62d7
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 2a3c4484eb80fd753d00c851d3e5dc6b5f48347a
+ms.sourcegitcommit: d3375505a5869c0392d2bc0f48b975c10366f586
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321560"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39362058"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -127,11 +127,11 @@ Az Eszközök panelen mostantól egyszerre több eszközt is törölhet. Válass
 ## <a name="week-of-july-16-2018"></a>2018. július 16-ai hét  
 
 ### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>További szinkronizálási lehetőségek a windowsos Céges portál alkalmazásban  
-A Windowsos Céges portál alkalmazás mostantól lehetővé teszi, hogy a szinkronizálási folyamatot közvetlenül a Windows tálcájáról vagy a Start menüből is elindíthassa. Ez a funkció abban az esetben igazán hasznos, ha csak szinkronizálni szeretné eszközeit, hogy utána hozzáférhessen a vállalati erőforrásokhoz. Az új funkció eléréséhez jobb gombbal kattintson a Céges portál alkalmazás ikonjára a tálcán vagy a Start menüben. A megjelenő menüpontok közül (azaz a gyorslistában) válassza a **Az eszköz szinkronizálása** lehetőséget. Megnyílik a Céges portál alkalmazás **Beállítások** lapja és megkezdődik a szinkronizálás. Az új funkciók megtekintéséhez lásd: [Az alkalmazásfelhasználói felület újdonságai](whats-new-app-ui.md)   
+A Windowsos Céges portál alkalmazás mostantól lehetővé teszi, hogy a szinkronizálási folyamatot közvetlenül a Windows tálcájáról vagy a Start menüből is elindíthassa. Ez a funkció abban az esetben igazán hasznos, ha csak szinkronizálni szeretné eszközeit, hogy utána hozzáférhessen a vállalati erőforrásokhoz. Az új funkció eléréséhez jobb gombbal kattintson a Céges portál alkalmazás ikonjára a tálcán vagy a Start menüben. A megjelenő menüpontok közül (azaz a gyorslistában) válassza **Az eszköz szinkronizálása** lehetőséget. Megnyílik a Céges portál alkalmazás **Beállítások** lapja és megkezdődik a szinkronizálás. Az új funkciók megtekintéséhez lásd: [Az alkalmazásfelhasználói felület újdonságai](whats-new-app-ui.md)   
 
 ### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>Új böngészési élmény a windowsos céges portál alkalmazásban  
 
-Ha a windowsos céges portál alkalmazásban alkalmazásokat böngész vagy keres, mostantól válthat a meglévő **Csempék** nézet és az újonnan hozzáadott **Részletek** nézet között. Az új nézet az alkalmazások adatait jeleníti meg, például a nevet, a kiadót, a kiadás dátumát és a telepítés állapotát.  
+Ha a windowsos Céges portál alkalmazásban alkalmazásokat böngész vagy keres, mostantól válthat a meglévő **Csempék** nézet és az újonnan hozzáadott **Részletek** nézet között. Az új nézet az alkalmazások adatait jeleníti meg, például a nevet, a kiadót, a kiadás dátumát és a telepítés állapotát.  
 
 Az **Alkalmazások** lapon található egy **Telepítve** nézet is, amely a befejezett és a folyamatban lévő telepítések adatait jeleníti meg. Az új nézet megtekintéséhez lásd: [Az alkalmazásfelhasználói felület újdonságai](whats-new-app-ui.md)  
 ### <a name="improved-company-portal-app-experience-for-device-enrollment-managers"></a>A céges portál alkalmazás továbbfejlesztett felhasználói élménye készülékregisztráció-kezelők használatakor  
@@ -1123,6 +1123,16 @@ A tiltott alkalmazásokat az Intune-ban lehet meghatározni. Tiltás esetén az 
 
 
 ## <a name="notices"></a>Értesítések
+
+### <a name="plan-for-change-change-password-at-next-auth-added-to-intune---1873216---"></a>Tervezett változtatás: Jelszóváltoztatás az Intune-hoz hozzáadott Next Authban <!-- 1873216 -->
+Az Intune a szolgáltatás szeptemberi kiadásában az Apple újonnan kiadott **Jelszóváltoztatás a Next Authban** beállításának integrációját tervezi a macOS 10.13-as vagy újabb verzióját futtató eszközökhöz. Amíg ez a beállítás nincs jelen, az MDM-szolgáltatók nem tudják ellenőrizni, hogy az eszköz jelszavát megváltoztatták-e a megfelelőséghez. Az Intune konfigurációs és megfelelőségi szabályzatai csak azt ellenőrzik, hogy a jelszó a legközelebbi változtatáskor megfelelőként van-e jelölve. Az új Apple-funkció hozzáadása után a macOS-felhasználók akkor is felszólítást kapnak a jelszó megváltoztatására, ha a jelszó megfelelő.
+
+#### <a name="how-does-this-affect-me"></a>Hogyan érint ez engem?
+Ez olyan környezetekre vonatkozik, amelyek az Intune-t vagy hibrid MDM-et használó macOS rendszerű eszközök szabályzatait tartalmazzák. Most, hogy az Apple elérhetővé tette a **Jelszóváltoztatás a New Authban** beállítást, az Intune kikényszerítheti, hogy a felhasználók frissítsék a jelszót a jelszószabályzat leküldésekor. Ha Ön letiltja a céges erőforrásokat az eszköz megfelelőként jelöléséig, a végfelhasználók csak akkor férhetnek hozzá az olyan céges erőforrásokhoz, mint az e-mail vagy a SharePoint-webhelyek, ha már alaphelyzetbe állították a jelszót. A jövőben a konfigurációs és megfelelőségi jelszószabályzatok minden frissítése ki fogja kényszeríteni, hogy a megcélzott felhasználók jelszót változtassanak.
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Hogyan készüljek fel a változásra?
+Értesítse a segélyszolgálatot. Ha nem szeretné kikényszeríteni ezt a macOS-es eszközszabályzatot, akkor a meglévő macOS-szabályzat hozzárendelése vagy törlése javasolt. Az ügyfelek körében végzett kutatás szerint a legtöbb ügyfelet nem érinti ez a változtatás. A végfelhasználók többsége a jelszavas bejelentkezésre való felszólítás után frissíti a jelszavát, vagy alaphelyzetbe állítja azt a megfelelőség megőrzéséhez.
+
 
 ### <a name="plan-for-change-intune-moving-to-support-ios-10-and-later-in-september----2454656---"></a>Tervezett módosítás: az Intune szeptembertől támogatni fogja az iOS 10-es vagy újabb verziót <!-- 2454656 -->
 Szeptemberben az Apple várhatóan kiadja az iOS 12-es verzióját. Röviddel a kibocsátása után az Intune-beli regisztráció, a Céges portál és a felügyelt böngésző funkció támogatni fogja az iOS 10-es és újabb verzióját.  

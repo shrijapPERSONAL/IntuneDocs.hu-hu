@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/23/2018
+ms.date: 8/2/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f10e7bb7a2e7c5e1d0e8b27517a62454e8bd630
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 6db58b1b1f19f789a2163f497c1f0da4c7c034a5
+ms.sourcegitcommit: 5f6117b83f96f7d93dde3685c2ff2b67ae53740b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321808"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39481121"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Kioszkbeállítások Windows 10 (és újabb) rendszerekhez az Intune-ban
 
@@ -25,9 +25,18 @@ A Windows 10-eszközök kioszkprofilokkal vannak konfigurálva egy vagy több al
 
 ## <a name="kiosk-settings"></a>Kioszkbeállítások
 
-1. Kioszkkörnyezet létrehozásához válassza a **Hozzáadás** lehetőséget.
-2. Adjon meg egy **Kioszkkonfigurációs nevet** a kioszkmódhoz. Ez a név azonosítja az alkalmazások csoportját, ezeknek az alkalmazásoknak az elrendezését a Start menüben, és a kioszkkonfigurációhoz hozzárendelt felhasználókat.
-3. Válassza a **Kioszkmód** lehetőséget. **Kioszkmód** Azonosítja a szabályzat által támogatott teljes képernyős mód típusát. A lehetőségek a következők:
+1. Az [Azure Portalon](https://portal.azure.com) kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza a **Microsoft Intune** elemet.
+2. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
+3. Adja meg a következő tulajdonságokat:
+
+   - **Név**: Adja meg az új profil leíró nevét.
+   - **Leírás:** Itt adhatja meg a profil leírását. Nem kötelező, de ajánlott a használata.
+   - **Platform**: Válassza a **Windows 10 és újabb** lehetőséget.
+   - **Profil típusa**: Válassza a **Kioszk (Előnézet)** lehetőséget.
+   
+4. Válassza ki a **Kioszk** > **Hozzáadás** lehetőséget.
+5. Adjon meg egy **Kioszkkonfigurációs nevet** a kioszkmódhoz. Ez a név azonosítja az alkalmazások csoportját, ezeknek az alkalmazásoknak az elrendezését a Start menüben, és a kioszkkonfigurációhoz hozzárendelt felhasználókat.
+6. Válassza a **Kioszkmód** lehetőséget. A **Kioszkmód** azonosítja a szabályzat által támogatott teljes képernyős mód típusát. A lehetőségek a következők:
 
     - **Nincs konfigurálva** (alapértelmezés): A szabályzat nem engedélyezi a kioszkmódot.
     - **Egyetlen teljes képernyős alkalmazásos kioszk**: A profil lehetővé teszi, hogy az eszköz egyetlen felhasználói fiókként fusson, és egyetlen Univerzális Windows-platformbeli (UWP) alkalmazáshoz zárolja azt. Ezért, amikor a felhasználó bejelentkezik, elindul az adott alkalmazás. Ez a mód emellett meggátolja a felhasználót abban, hogy új alkalmazásokat nyisson meg vagy másik futó alkalmazásra váltson.
