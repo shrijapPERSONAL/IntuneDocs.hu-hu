@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab6c808fc860491ddece5751983071d40864c8dd
-ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
+ms.openlocfilehash: 2f9849b2c327397c0b8945ee42d9fca7f9f46250
+ms.sourcegitcommit: 58cddb08b64bd60f041eff46ff215e83e13db4e6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39575083"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40001910"
 ---
 # <a name="the-early-edition-for-microsoft-intune---august-2018"></a>A Microsoft Intune előzetes kiadása – 2018. augusztus
 
@@ -75,7 +75,7 @@ Hatókörcímke hozzáadásához válassza az **Intune-szerepkörök** > **Ható
 Hatókörcímke szerepkör-hozzárendeléshez való hozzáadásához válassza az **Intune-szerepkörök** > **Összes szerepkör** > **Szabályzat- és profilkezelő** > **Hozzárendelések** > **Hatókör (Címkék)** lehetőséget.
 Hatókörcímke konfigurációs profilhoz való hozzáadásához válassza az **Eszközkonfiguráció** > **Profilok** > válasszon egy profilt > **Tulajdonságok** > **Hatókör (Címkék)** lehetőséget.
 
-### <a name="assign-a-user-and-friendly-name-to-an-autopilot-device---1346521---"></a>Felhasználóbarát rövid név hozzáadása AutoPilot-eszközökhöz <!--1346521 -->
+### <a name="assign-a-user-and-friendly-name-to-an-autopilot-device---1346521---"></a>Felhasználóbarát rövid név hozzáadása Autopilot-eszközökhöz <!--1346521 -->
 Egy jövőbeli nyilvános előzetes verzió lehetővé teszi a rendszergazdáknak, hogy felhasználót rendeljenek hozzá egyetlen AutoPilot-eszközhöz.  A rendszergazdák rövid nevet is létrehozhatnak a felhasználó üdvözléséhez az eszköz AutoPilottal történő beállításakor.
 
 A következőkre vonatkozik: Windows Insider 1809 vagy újabb build (előzetes verzió használata során).
@@ -99,30 +99,29 @@ A funkció megtekintéséhez kattintson az **Eszközregisztráció** > **Eszköz
 A korlátozás bekapcsolása nincs hatással a már regisztrált eszközökre.
 A korlátozás bekapcsolását követően az Intune minden új Windows-regisztrációs kérelem esetében ellenőrzi, hogy céges regisztrációként engedélyezték-e. Céges regisztrációnak minősülnek az alábbi módszerek:
 - A felhasználó [készülékregisztráció-kezelői fiókot]( device-enrollment-manager-enroll.md) használ a regisztráláshoz.
-
-- Az eszközregisztráció a [Windows AutoPilot](enrollment-autopilot.md) használatával történik.
+- Az eszközregisztráció a [Windows Autopilot](enrollment-autopilot.md) használatával történik.
 - Az eszköz IMEI-száma szerepel az **Eszközregisztráció** > **[Céges eszközazonosítók]( corporate-identifiers-add.md)** listán.
 - Az eszközregisztráció [tömeges kiépítési csomagban](windows-bulk-enroll.md) történik.
 - Az eszközregisztráció az [SCMM megosztott kezeléshez való automatikus regisztrációja](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management) révén történik.
-A jogosulatlan regisztrációk le lesznek tiltva.
-Az alábbi regisztrációkat cégesként jelzi az Intune, de le lesznek tiltva, mert nem kínálják fel az Intune-rendszergazdának az eszközönkénti szabályozást:
+
+A jogosulatlan regisztrációk le lesznek tiltva. Az alábbi regisztrációkat cégesként jelzi az Intune, de le lesznek tiltva, mert nem kínálják fel az Intune-rendszergazdának az eszközönkénti szabályozást:
 - [Automatikus MDM-regisztráció](windows-enroll.md#enable-windows-10-automatic-enrollment) és [Azure Active Directory-kapcsolat a Windows beállítása során](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md).
 - [Automatikus MDM-regisztráció](windows-enroll.md#enable-windows-10-automatic-enrollment) és [Azure Active Directory-kapcsolat a Windows beállításból](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md).
+
 Az alábbi személyes regisztrációs módszerek is le lesznek tiltva:
 - [Automatikus MDM-regisztráció](windows-enroll.md#enable-windows-10-automatic-enrollment) és [Munkahelyi fiók hozzáadása a Windows-beállításokból](https://docs.microsoft.com/azure/active-directory/user-help/device-management-azuread-registered-devices-windows10-setup).
-
 - [Csak MDM-regisztráció]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) lehetősége a Windows-beállításokból.
 
-### <a name="specify-machine-name-patterns-in-an-autopilot-profile---1849855--"></a>Gépnév-minták megadása egy AutoPilot-profilban <!--1849855-->
-Gépnév-sablont adhat meg a [gép nevének](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) AutoPilot-regisztráció során történő létrehozásához és beállításához. Ezt az AutoPilot profilban kell megadnia a következő helyen: **Eszközregisztráció** > **Windows-regisztráció** > **Windows Autopilot Deployment-szolgáltatás** > **Profilok**. Csak alfanumerikus karakterek és kötőjel használható.
+### <a name="specify-machine-name-patterns-in-an-autopilot-profile---1849855--"></a>Gépnév-minták megadása egy Autopilot-profilban <!--1849855-->
+Gépnév-sablont adhat meg a [gép nevének](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) Autopilot-regisztráció során történő létrehozásához és beállításához. Ezt az Autopilot profilban kell megadnia a következő helyen: **Eszközregisztráció** > **Windows-regisztráció** > **Windows Autopilot Deployment-szolgáltatás** > **Profilok**. Csak alfanumerikus karakterek és kötőjel használható.
 A következőkre vonatkozik: Windows Insider 1809 vagy újabb build (előzetes verzió használata során).
 
 ### <a name="ios-version-number-and-build-number-are-shown----1892471---"></a>iOS-es verziószám és buildszám megjelenítése <!-- 1892471 -->
 Az iOS operációs rendszer verziószáma az **Eszközmegfelelőség** > **Eszközmegfelelőség** területen látható. Egy jövőbeli frissítéssel a buildszám is megjelenik.
 A biztonsági frissítések megjelenésekor az Apple általában megtartja a verziószámot, de a buildszám változik. A megjelenített buildszám segítségével könnyen ellenőrizheti, hogy telepítve van-e a biztonsági frissítés.
 
-### <a name="for-windows-autopilot-profiles-hide-the-change-account-options-on-the-company-sign-in-page-and-domain-error-page---1901669---"></a>A Windows AutoPilot-profiloknál a céges bejelentkezési oldalon és a tartományi hibalapon elrejthető lesz a fiókváltoztatás lehetősége <!--1901669 -->
-Egy nyilvános előzetes verzió új profilbeállításokat tartalmaz majd a Windows AutoPilot profil rendszergazdái részére, amellyel elrejthetik a fiókváltoztatás lehetőségét a céges bejelentkezési oldalon és a tartományi hibalapon. A beállítás elrejtése akkor lehetséges, ha az Azure Active Directoryban konfigurálva van a Vállalati védjegyezés. A következőkre vonatkozik: Windows Insider 1809 vagy újabb build (előzetes verzió használata során).
+### <a name="for-windows-autopilot-profiles-hide-the-change-account-options-on-the-company-sign-in-page-and-domain-error-page---1901669---"></a>A Windows Autopilot-profiloknál a céges bejelentkezési oldalon és a tartományi hibalapon elrejthető lesz a fiókváltoztatás lehetősége <!--1901669 -->
+Egy nyilvános előzetes verzió új profilbeállításokat tartalmaz majd a Windows Autopilot profil rendszergazdái részére, amellyel elrejthetik a fiókváltoztatás lehetőségét a céges bejelentkezési oldalon és a tartományi hibalapon. A beállítás elrejtése akkor lehetséges, ha az Azure Active Directoryban konfigurálva van a Vállalati védjegyezés. A következőkre vonatkozik: Windows Insider 1809 vagy újabb build (előzetes verzió használata során).
 
 ### <a name="delay-when-ios-software-updates-are-shown-on-the-device----1949583---"></a>iOS-es szoftverfrissítések megjelenítésének késleltetése az eszközön <!-- 1949583 -->
 Az Intune > **Szoftverfrissítések** > **iOS-es szabályzatok frissítése** területen konfigurálhatja, hogy mely napon, mely időpontban ne telepítsenek frissítéseket az eszközök. Egy jövőbeli frissítéssel 1-90 napig késleltetheti a szoftverfrissítések láthatóvá válását az eszközön. 
@@ -167,6 +166,13 @@ Az **Eszközmegfelelőség** > **Szabályzatok** > **Szabályzat létrehozása**
 A klasszikus Azure-portálon létrehozott megfelelőségi szabályzatok hamarosan elavulnak.  Amikor ez bekövetkezik, áttekintheti és törölheti a meglévő szabályzatokat, de már nem frissítheti őket. A szabályzatokat vesszővel tagolt (.csv-) fájlként exportálhatja. Ezt követően a fájlban lévő adatok felhasználásával újra létrehozhatja a szabályzatokat az Intune Azure Portalon.
 > [!IMPORTANT]
 > Miután a klasszikus Azure-portál elavult, már nem férhet hozzá a szabályzatokhoz, és nem is tekintheti meg azokat. Ezért ne feledje exportálni és újra létrehozni őket a klasszikus Azure-portálon még a klasszikus Azure-portál elavulása előtt.
+
+### <a name="change-terminology-to-retire-and-wipe----2175759---"></a>A terminológia módosítása „kivonás” és „törlés” kifejezésekre <!-- 2175759 -->
+A Graph API-val való konzisztencia érdekében az Intune felhasználói felületén és a dokumentációban az alábbi terminológiai változásokat vezetjük be:
+- A **Céges adatok eltávolítása** kifejezést a **Kivonás** kifejezés váltja fel
+- A **Gyári beállítások visszaállítása** kifejezést a **törlés** váltja fel
+
+
 
 <!-- 1807 start -->
 

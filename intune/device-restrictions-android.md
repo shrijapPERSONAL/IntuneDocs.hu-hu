@@ -1,12 +1,11 @@
 ---
-title: Eszközkorlátozásokra vonatkozó beállítások a Microsoft Intune-ban Android esetén
-titlesuffix: ''
-description: A cikk tájékoztatást nyújt az Intune azon beállításairól, amelyekkel szabályozhatók az eszközbeállítások, illetve a funkciók köre az Android rendszerű eszközökön.
+title: Eszközkorlátozási beállítások Android rendszerhez az Azure-beli Microsoft Intune-ban | Microsoft Docs
+description: Megtekintheti az összes olyan androidos eszközbeállítást, amelyet vezérelhet és korlátozhat a Microsoft Intune-ban. Ezekkel a beállításokkal vezérelheti a jelszavakat, a Google Playhez való hozzáférést, az alkalmazások engedélyezését vagy letiltását, a böngészőbeállításokat, az alkalmazások blokkolását, a Google-felhőbe való biztonsági mentéseket, valamint az üzenetkezelés, a hang, az adatroaming, a Wi-Fi és a Bluetooth beállításait.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,14 +13,14 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 100742b378b30eab84b28c01728b2b382dd5155c
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: 952845ba19c52aa44a9e82ee92909b8c4f32aed6
+ms.sourcegitcommit: 0132b59e484c220338b1efcd35d03c83c285361e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34190656"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39587023"
 ---
-# <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Android- és Samsung Knox Standard-eszközök korlátozásaira vonatkozó beállítások a Microsoft Intune-ban 
+# <a name="android-and-samsung-knox-standard-device-restriction-settings---intune"></a>Android- és Samsung Knox Standard-eszközök korlátozásaira vonatkozó beállítások – Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -53,7 +52,7 @@ A cikk bemutatja a Microsoft Intune összes olyan eszközkorlátozásokra vonatk
     > A Samsung Knox-eszközök automatikusan megkövetelnek egy 4 számjegyű PIN-kódot az MDM-regisztráció során. A natív Androidos eszközök automatikusan megkövetelhetnek egy PIN-kódot a feltételes hozzáférésnek való megfeleléshez.
 
 - **Jelszó minimális hossza** – Megadja a felhasználó által beállítandó jelszó minimális hosszát (4 és 16 karakter között).
-- **Képernyőzárolás legfeljebb ennyi perc inaktivitás után** – Az eszköz az itt megadott számú perc elteltével automatikusan zárolja magát.
+- **Képernyőzárolás legfeljebb ennyi perc inaktivitás után** – Az eszköz legfeljebb az itt megadott számú percnyi inaktivitás után zárolja magát. Az eszközön a végfelhasználó nem adhat meg a profilban konfigurált időnél nagyobb értéket. A végfelhasználó kisebb értéket azonban megadhat. Ha például a profilban 15 perc van megadva, a végfelhasználó beállíthat 5 percet. 30 perces értéket azonban már nem adhat meg. 
 - **Sikertelen bejelentkezések száma, mielőtt törlődne az eszközön lévő összes adat** – Megadja, hogy hány sikertelen bejelentkezés legyen megengedett, mielőtt az eszközön tárolt adatok törölődnének.
 - **Jelszó érvényessége (napokban)** – Meghatározza, hogy hány nap elteltével kell megváltoztatni az eszköz jelszavát.
 -  **Kötelező jelszótípus** – Megadja a jelszó erősségének szintjét, valamint azt, hogy használható-e biometrikus eszköz. A következő lehetőségek közül választhat:
