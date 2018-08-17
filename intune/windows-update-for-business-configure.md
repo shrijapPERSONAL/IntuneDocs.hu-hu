@@ -148,8 +148,7 @@ Az **OMA-URI beállítások hozzáadása vagy módosítása** alatt például a 
 - **Beállítás neve**: Windows Analytics kereskedelmi azonosító
 - **Beállítás leírása**: Kereskedelmi azonosító konfigurálása Windows Analytics megoldásokhoz
 - **OMA-URI** (megkülönbözteti a kis- és nagybetűket): ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
-- 
-  **Adattípus:** Sztring
+- **Adattípus:** Sztring
 - **Érték**: <*Használja az OMS munkaterület Windows-telemetria lapján látható GUID értéket*>
 
 ![OMA-URI beállítás – Sor szerkesztése](./media/commID-edit.png)
