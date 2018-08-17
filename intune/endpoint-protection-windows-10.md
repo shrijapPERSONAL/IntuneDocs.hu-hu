@@ -98,7 +98,7 @@ Ezek a beállítások meghatározott hálózattípusokra vonatkoznak. Ilyen töb
 
 ## <a name="windows-defender-smartscreen-settings"></a>A Windows Defender SmartScreen beállításai
 
-A következő, Edge böngészővel rendelkező Windows 10- kiadásokon támogatott:
+A következő, Microsoft Edge böngészővel rendelkező Windows 10- kiadásokon támogatott:
 - Otthoni
 - Professional
 - Munkahelyi
