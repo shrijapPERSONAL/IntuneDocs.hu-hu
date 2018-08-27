@@ -4,8 +4,6 @@
 
 ## [Milyen információkat tekinthet meg a cégem az Intune-nal? ](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
-## [Saját eszköz alaphelyzetbe állítása](what-happens-if-you-reset-your-device-cpwebsite.md)
-
 ## [Jelszó frissítése](password-does-not-meet-it-administrator-requirements.md)
 
 ## [Bejelentkezés a céges portálra](sign-in-to-the-company-portal.md)
@@ -105,8 +103,8 @@
 ## [macOS-eszköz használata](using-your-macos-device-with-intune.md)
 ### [Mi történik, ha macOS-eszközt regisztrál?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [macOS-eszköz regisztrálása](enroll-your-device-in-intune-macos-cp.md)
-### [macOS rendszerű eszköz regisztrációjának törlése](unenroll-your-device-from-intune-macos.md)
-
+### [Cég által biztosított macOS-eszköz regisztrálása](enroll-company-device-macos.md)  
+### [macOS rendszerű eszköz regisztrációjának törlése](unenroll-your-device-from-intune-macos.md)  
 ### [A macOS gyakori problémáinak elhárítása](troubleshoot-your-device-macos.md)
 #### [Az általam használt macOS-verzió még nem támogatott](your-macos-version-isnt-yet-supported.md)
 #### [macOS-eszköz frissítése](you-need-to-update-your-macos-device.md)
