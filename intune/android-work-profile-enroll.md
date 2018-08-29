@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 095985bad8f7e35a953383fcce8296716723b8bc
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: fc1943781dcf95209b575cdb6e36d5065275626f
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909065"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255061"
 ---
 # <a name="set-up-enrollment-of-android-work-profile-devices"></a>Androidos munkahelyi profilos eszközök regisztrálásának beállítása
 
@@ -34,7 +34,7 @@ Az androidos munkahelyi profil felügyelete a következő lépésekben állítha
 2. Androidos munkahelyi profil regisztrációs beállításainak megadása. Az androidos munkahelyi profilok [csak bizonyos Android-eszközökön támogatottak](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22). Az androidos munkahelyi profilokat támogató eszközök mindegyike támogatja a hagyományos Android-alapú felügyeletet is. Az Intune-ban megadhatja, hogy hogyan történjen az androidos munkahelyi profilokat támogató eszközök felügyelete a [regisztrációs korlátozásokból](enrollment-restrictions-set.md).
     - **Blokkolás (alapértelmezett)**: Minden Android-eszköz, az androidos munkahelyi profilokat támogatókat is beleértve, hagyományos Android-eszközként lesz regisztrálva.
     - **Engedélyezés**: Az androidos munkahelyi profilokat támogató eszközök mindegyike androidos munkahelyi profilos eszközként lesz regisztrálva. Az androidos munkahelyi profilokat nem támogató eszközök hagyományos Android-eszközként lesznek regisztrálva.
-3. [A felhasználók tájékoztatása arról, hogy miképpen regisztrálhatják az eszközeiket](/intune-user-help/enroll-your-device-in-intune-android.md).
+3. [A felhasználók tájékoztatása arról, hogy miképpen regisztrálhatják az eszközeiket](/intune-user-help/enroll-your-device-in-intune-android).
 
 
 Az androidos munkahelyi profilokat támogató, de korábban normál Android-eszközként regisztrált eszközök regisztrációját törölni kell, majd újra kell regisztrálni őket.

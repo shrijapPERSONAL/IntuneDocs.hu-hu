@@ -15,21 +15,18 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9d0956f56da4fd0e93bdcd26e06c7d48aa252f9b
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 0f8e5c6319e01404500f5a31fabd1baeb3520067
+ms.sourcegitcommit: 0f8d46d644f78609fae8bf91197ae77c7af45d23
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831209"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40253139"
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Felkészülés az alkalmazásvédelmi szabályzatok Windows 10 rendszereken történő konfigurálására 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Windows 10-es rendszerhez mobilalkalmazás-kezelést (MAM) úgy engedélyezhet, hogy beállítja a MAM-szolgáltatót az Azure AD-ban. A MAM-szolgáltató Azure AD-n belüli beállításával meghatározhatja a regisztráció állapotát, amikor az Intune-ban új Windows Information Protection- (WIP-) szabályzatot hoz létre. A regisztráció állapota lehet MAM vagy mobileszköz-kezelés (MDM).
-
-> [!NOTE]
-> A MAM által regisztrált állapotú eszközöknek csatlakoztatva kell lenniük az Azure AD-hez.
 
 ## <a name="to-configure-the-mam-provider"></a>MAM-szolgáltató konfigurálása
 

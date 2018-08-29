@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2900f7c211a675a20300a2e212b0d57bad3a597a
-ms.sourcegitcommit: 32a4b1eb6bf20da7262f27276f8e94e435803386
+ms.openlocfilehash: aa91e0c0adcd1182f82c4a09746f154302fae326
+ms.sourcegitcommit: 77ed48ab52b55e92ceaa89e9edf53b892fc62adb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39501149"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "40251498"
 ---
 # <a name="set-enrollment-restrictions"></a>Regisztrációs korlátozások beállítása
 
@@ -30,9 +30,6 @@ Intune-rendszergazdaként létrehozhat és felügyelhet olyan regisztrációs ko
 
 >[!NOTE]
 >A regisztrációs korlátozások nem biztonsági funkciók. A feltört eszközök más tulajdonságokat állíthatnak magukról. Ezek a korlátozások a nem rosszindulatú felhasználók esetén jelentenek észszerű erőfeszítést igénylő akadályt.
-
->[!NOTE]
->A cikkben említett csoporthoz rendelhető regisztrációs korlátozás és a prioritási funkció jelenleg bevezetés alatt áll az Intune ügyfélbázisa számára. A bevezetés befejezéséig elképzelhető, hogy nem lehet hozzáférni a csoportra és a prioritásra vonatkozó funkciókhoz.
 
 Többek között az alábbi regisztrációs korlátozásokat hozhatja létre:
 
