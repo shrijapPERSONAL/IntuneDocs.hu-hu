@@ -209,8 +209,7 @@ Az egyes alkalmazásokhoz beállíthat az alapértelmezett adatvédelmi beállí
 -   **Automatikus csatlakozás Wi-Fi-elérési pontokhoz** – Engedélyezi az eszközön az ingyenes Wi-Fi-elérési pontokhoz történő automatikus csatlakozást és a kapcsolódáshoz szükséges használati feltételek automatikus elfogadását.
 -   **Wi-Fi manuális konfigurálása** – Azt szabályozza, hogy a felhasználó konfigurálhat-e saját Wi-Fi-kapcsolatokat, vagy csak a Wi-Fi-profillal konfigurált kapcsolatokat használhatja (csak Windows 10 Mobile esetén).
 -   **Wi-Fi-ellenőrzési időköz** – Meghatározza, hogy az eszközök milyen gyakorisággal keressenek Wi-Fi-hálózatokat. Adjon meg egy 1 (leggyakoribb) és 500 (legritkább) közötti értéket.
--   
-  **Bluetooth-engedélyezett szolgáltatások** – Az engedélyezett Bluetooth-szolgáltatások és -profilok meghatározása hexadecimális sztringekként.
+-   **Bluetooth-engedélyezett szolgáltatások** – Az engedélyezett Bluetooth-szolgáltatások és -profilok meghatározása hexadecimális sztringekként.
 
 ## <a name="control-panel-and-settings"></a>Vezérlőpult és Gépház
 
