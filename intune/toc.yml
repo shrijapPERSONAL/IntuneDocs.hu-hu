@@ -675,30 +675,6 @@ items:
       href: data-apple-sends-to-intune.md
     - name: A Google által az Intune-nak küldött adatok
       href: data-google-sends-to-intune.md
-  - name: Monitorozás és hibaelhárítás
-    items:
-    - name: Segítség a felhasználóknak a problémák elhárításában
-      href: help-desk-operators.md
-    - name: Vállalati erőforrás-hozzáférési problémák elhárítása
-      href: troubleshoot-company-resource-access-problems.md
-    - name: Alkalmazások telepítésével kapcsolatos problémák elhárítása
-      href: troubleshoot-app-install.md
-    - name: Auditnaplók Intune-tevékenységekhez
-      href: monitor-audit-logs.md
-    - name: Alkalmazásvédelmi naplók áttekintése
-      href: app-protection-policy-settings-log.md
-    - name: Az e-mail-profilok hibaelhárítása
-      href: troubleshoot-email-profiles-in-microsoft-intune.md
-    - name: Szoftverfrissítésekkel kapcsolatos hibák elhárítása
-      href: troubleshoot-software-updates-in-microsoft-intune.md
-    - name: Az Endpoint Protection hibáinak elhárítása
-      href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-    - name: Szabályzatokkal kapcsolatos problémák elhárítása
-      href: troubleshoot-policies-in-microsoft-intune.md
-    - name: A feltételes hozzáférés hibaelhárítása
-      href: troubleshoot-conditional-access.md
-    - name: Az Exchange-összekötő hibaelhárítása
-      href: troubleshoot-exchange-connector.md
   - name: Automatizálás és testreszabás
     items:
     - name: Egyéni eszközbeállítások konfigurálása
@@ -796,11 +772,35 @@ items:
       href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
 - name: Erőforrások
   items:
+  - name: Hibaelhárítás
+    items:
+    - name: Segítség a felhasználóknak a problémák elhárításában
+      href: help-desk-operators.md
+    - name: Vállalati erőforrás-hozzáférési problémák elhárítása
+      href: troubleshoot-company-resource-access-problems.md
+    - name: Alkalmazások telepítésével kapcsolatos problémák elhárítása
+      href: troubleshoot-app-install.md
+    - name: Auditnaplók Intune-tevékenységekhez
+      href: monitor-audit-logs.md
+    - name: Alkalmazásvédelmi naplók áttekintése
+      href: app-protection-policy-settings-log.md
+    - name: Az e-mail-profilok hibaelhárítása
+      href: troubleshoot-email-profiles-in-microsoft-intune.md
+    - name: Szoftverfrissítésekkel kapcsolatos hibák elhárítása
+      href: troubleshoot-software-updates-in-microsoft-intune.md
+    - name: Az Endpoint Protection hibáinak elhárítása
+      href: troubleshoot-endpoint-protection-in-microsoft-intune.md
+    - name: Szabályzatokkal kapcsolatos problémák elhárítása
+      href: troubleshoot-policies-in-microsoft-intune.md
+    - name: A feltételes hozzáférés hibaelhárítása
+      href: troubleshoot-conditional-access.md
+    - name: Az Exchange-összekötő hibaelhárítása
+      href: troubleshoot-exchange-connector.md
   - name: Szószedet
     href: intune-glossary.md
-ms.openlocfilehash: ab5b79b56ff430575cf3c9021ce33b573b4d0f22
-ms.sourcegitcommit: 973a06f4a35b74314fece2bae17dd6885b4211c3
+ms.openlocfilehash: 696173c0e1ecc8121637139ce4ada0b497ab7506
+ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42822950"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241762"
