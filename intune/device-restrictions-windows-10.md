@@ -152,28 +152,28 @@ Az egyes alkalmazásokhoz beállíthat az alapértelmezett adatvédelmi beállí
 ## <a name="edge-browser"></a>Microsoft Edge böngésző
 
 -   **Microsoft Edge böngésző (csak mobil)** – Engedélyezi az Edge böngésző használatát az eszközön.
--   **Címsor legördülő funkciója (csak asztali gép)** – Ezzel akadályozhatja meg, hogy az Edge megjelenítse a javaslatok listáját egy legördülő menüben gépelés közben. Ezzel minimalizálhatja a hálózati sávszélességnek a Microsoft Edge és a Microsoft szolgáltatásai közötti használatát.
+-   **Címsor legördülő funkciója (csak asztali gép)** – Ezzel akadályozhatja meg, hogy a Microsoft Edge megjelenítse a javaslatok listáját egy legördülő menüben gépelés közben. Ezzel minimalizálhatja a hálózati sávszélességnek a Microsoft Edge és a Microsoft szolgáltatásai közötti használatát.
 -   **Kedvencek szinkronizálása a Microsoft-böngészők között (csak asztali gépek)** – Lehetővé teszi, hogy a Windows szinkronizálja a kedvenceket az Internet Explorer és a Microsoft Edge között.
--   **„Do Not Track” fejlécek küldése** – Arra konfigurálja az Edge böngészőt, hogy Do Not Track (Követés letiltása) fejléceket küldhessen a felhasználók által meglátogatott webhelyeknek.
+-   **„Do Not Track” fejlécek küldése** – Arra konfigurálja a Microsoft Edge böngészőt, hogy Do Not Track (Követés letiltása) fejléceket küldhessen a felhasználók által meglátogatott webhelyeknek.
 -   **Cookie-k** – Engedélyezi a böngészőnek, hogy mentse az internetről érkező cookie-kat az eszközre.
--   **JavaScript** – Engedélyezi a szkriptek (például a JavaScript) futtatását az Edge böngészőben.
+-   **JavaScript** – Engedélyezi a szkriptek (például a JavaScript) futtatását a Microsoft Edge böngészőben.
 -   **Előugró ablakok** – Blokkolja az előugró ablakokat a böngészőben (csak a Windows 10 asztali verzióra vonatkozik).
 -   **Keresési javaslatok** – Lehetővé teszi, hogy a keresőmotor webhelyeket javasoljon a keresőkifejezések beírása közben.
 -   **Intranetes forgalom átirányítása az Internet Explorerbe** – Engedélyezi a felhasználók számára az intranetes webhelyek megnyitását az Internet Explorerben (csak a Windows 10 asztali verzióra vonatkozik).
 -   **Automatikus kitöltés** – Engedélyezi a felhasználók számára, hogy módosítsák a böngésző automatikus kiegészítési funkciójának beállításait (csak a Windows 10 asztali verzióra vonatkozik).
 -   **Jelszókezelő** – Engedélyezi vagy letiltja a Microsoft Edge böngésző Jelszókezelő szolgáltatását.
 -   **Vállalati üzemmód webhelylistájának helye** – Megadja, hogy hol található a Vállalati üzemmódban megnyíló webhelyek listája. Ezt a listát a felhasználók nem szerkeszthetik.<br>(Csak a Windows 10 asztali verzió.)
--   **Fejlesztői eszközök** – Megakadályozza, hogy a végfelhasználók megnyithassák az Edge fejlesztői eszközeit.
--   **Bővítmények** – Engedélyezi, hogy a végfelhasználók Edge-bővítményeket telepítsenek az eszközön.
+-   **Fejlesztői eszközök** – Megakadályozza, hogy a végfelhasználók megnyithassák a Microsoft Edge fejlesztői eszközeit.
+-   **Bővítmények** – Engedélyezi, hogy a végfelhasználók Microsoft Edge-bővítményeket telepítsenek az eszközön.
 -   **InPrivate-böngészés** – Megakadályozza, hogy a végfelhasználók InPrivate-böngészési munkamenetet nyissanak meg.
--   **Első futtatáskori oldal megjelenítése** – Megakadályozza a bemutató lap megjelenítését az Edge első futtatásakor.
+-   **Első futtatáskori oldal megjelenítése** – Megakadályozza a bemutató lap megjelenítését a Microsoft Edge első futtatásakor.
     -   **Első futtatás URL-címe** – Megadhatja annak a lapnak az URL-címét, amely akkor jelenik meg, amikor a felhasználó első alkalommal futtatja a Microsoft Edge böngészőt (csak Windows 10 mobil verziónál).
 -   **Kezdőlapok** – Azoknak a webhelyeknek a listája, amelyek kezdőlapokként szeretne megjeleníteni a Microsoft Edge böngészőben (csak asztali verzióban).
 -   **Kezdőlap módosítása** – Engedélyezheti a felhasználóknak, hogy megváltoztassák a Microsoft Edge megnyitásakor megjelenő kezdőlapokat. A Kezdőlapok beállítással hozhatja létre a Microsoft Edge indításakor megjelenő lapot vagy lapok listáját.
 -   **Az about:flags laphoz való hozzáférés letiltása** – Megakadályozza, hogy a végfelhasználó hozzáférhessen a Microsoft Edge about:flags lapjához, amely a fejlesztői és kísérleti beállításokat tartalmazza.
 -   **WebRTC LocalHost IP-címe** – Letiltja a felhasználó localhost IP-címének megjelenítését a WebRTC protokollal történő telefonhívások esetén.
 -   **Alapértelmezett keresőmotor** – Meghatározza az alapértelmezetten használandó keresőmotort. A végfelhasználók ezt az értéket bármikor módosíthatják.
--   **Böngészési adatok törlése kilépéskor** – Előzmények és böngészési adatok törlése, amikor a felhasználó bezárja az Edge böngészőt.
+-   **Böngészési adatok törlése kilépéskor** – Előzmények és böngészési adatok törlése, amikor a felhasználó bezárja a Microsoft Edge böngészőt.
 -   **Adatgyűjtés élő csempéhez** – Leállítja a Windows élő csempéből történő adatgyűjtését, amikor a felhasználók kitűznek az Microsoft Edge böngészőből egy webhelyet a Start menübe.
 -  **Kedvencek lista** – A kedvencek fájl elérési útját adja meg. Például: http://contoso.com/favorites.html.
 -  **A kedvencek módosításának korlátozása** – Ha ezt **Letiltva** értékre állítja, a felhasználók nem használhatják a Kedvencek listában a hozzáadás, importálás, rendezés és szerkesztés funkciókat. 
