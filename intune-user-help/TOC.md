@@ -64,7 +64,7 @@
 ### [Mi történik, ha iOS-eszközt regisztrál?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 ### [A Céges portál telepítése, majd bejelentkezés a portálra](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [iOS-eszköz regisztrálása](enroll-your-device-in-intune-ios.md)
-### [Készülékregisztrációs programmal rendelkező iOS-eszköz regisztrálása](enroll-your-device-dep-ios.md)
+### [A cég által biztosított iOS-eszköz regisztrálása](enroll-your-device-dep-ios.md)
 
 ### [Felügyelt alkalmazások használata az eszközön](use-managed-apps-on-your-device-ios.md)
 ### [PIN-kód beállítása vagy módosítása](set-or-change-your-passcode-ios.md)
@@ -103,7 +103,7 @@
 ## [macOS-eszköz használata](using-your-macos-device-with-intune.md)
 ### [Mi történik, ha macOS-eszközt regisztrál?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [macOS-eszköz regisztrálása](enroll-your-device-in-intune-macos-cp.md)
-### [Cég által biztosított macOS-eszköz regisztrálása](enroll-company-device-macos.md)  
+### [A cég által biztosított macOS-eszköz regisztrálása](enroll-company-device-macos.md)  
 ### [macOS rendszerű eszköz regisztrációjának törlése](unenroll-your-device-from-intune-macos.md)  
 ### [A macOS gyakori problémáinak elhárítása](troubleshoot-your-device-macos.md)
 #### [Az általam használt macOS-verzió még nem támogatott](your-macos-version-isnt-yet-supported.md)
