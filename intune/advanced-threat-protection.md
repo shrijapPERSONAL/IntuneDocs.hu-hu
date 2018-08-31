@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99d848fb1efea2ea2d557ab8d4f19881705ec991
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: d43e95b2f236dc4c03bb3f63670b2b1400243531
+ms.sourcegitcommit: 0303e3b8c510f56e191e6079e3dcdccfc841f530
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744669"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40251670"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>A Windows Defender ATP engedélyezése feltételes hozzáféréssel az Intune-ban
 
@@ -44,7 +44,7 @@ Ez a cikk a következőkhöz nyújt útmutatást:
 
 Az ATP Intune-nal való használatához a következőknek konfigurálva és használatra készen kell állniuk:
 
-- Licenccel rendelkező bérlő az Enterprise Mobility + Security E5 és Windows E5 (vagy Microsoft 365 Enterprise E5) csomaghoz
+- Licenccel rendelkező bérlő az Enterprise Mobility + Security E3 és Windows E5 (vagy Microsoft 365 Enterprise E5) csomaghoz
 - Microsoft Intune környezet az [Intune-nal felügyelt](windows-enroll.md) Windows 10-es eszközökhöz, amelyek az Azure AD-ba is be vannak léptetve
 - [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) és hozzáférés a Windows Defender biztonsági központhoz (ATP portál)
 

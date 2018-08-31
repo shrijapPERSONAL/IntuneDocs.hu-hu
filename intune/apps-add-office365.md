@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 08/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4455a3c26296faba8bf01cf43d8555aebc13afc6
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 9db79e9d0dc82cd823663274aa02dbe097db74d4
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321475"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40251579"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365-alkalmazások hozzárendelése Windows 10-es eszközökhöz a Microsoft Intune-nal
 
@@ -29,8 +29,8 @@ Ezzel az alkalmazástípussal könnyedén hozzárendelhet Office 365-alkalmazás
 
 ## <a name="before-you-start"></a>Előkészületek
 
->[!IMPORTANT]
->Az Office telepítésének ezen módja csak akkor támogatott, ha a Microsoft Office más verziói nincsenek telepítve az eszközön.
+> [!IMPORTANT]
+> Ha a végfelhasználói eszközön .msi Office-alkalmazások találhatók, azokat az **MSI eltávolítása** szolgáltatással biztonságosan el kell távolítani. Ellenkező esetben az Intune által biztosított Office 365-alkalmazások telepítése sikertelen lesz.
 
 - Azokon az eszközökön, melyekre telepíti az alkalmazásokat, a Windows 10 alkotói frissítésének vagy újabb verziójának kell futnia.
 - Az Intune csak az Office 365 csomagból származó Office-alkalmazások hozzáadását támogatja.
@@ -91,6 +91,7 @@ Ebben a lépésben az alkalmazáscsomag telepítési beállításait konfigurál
         - **Havonta (megcélzott)**
         - **Semi-Annual**
         - **Féléves (megcélzott)**
+    - **Az Office (MSI) egyéb verzióinak eltávolítása a végfelhasználói eszközökről**: Ez a funkció lehetővé teszi az összes meglévő Office (MSI) alkalmazás eltávolítását a végfelhasználói számítógépekről. Ez nem korlátozódik az **Alkalmazáscsomag konfigurálásánál** telepítésre kiválasztott alkalmazásokra, hanem minden Office (MSI) alkalmazást eltávolít a végfelhasználói eszközről.
     - **Alkalmazás végfelhasználói licencszerződésének automatikus elfogadása**: Ezt a beállítást akkor jelölje be, ha nem követeli meg a végfelhasználóktól, hogy elfogadják a licencszerződést. Ebben az esetben az Intune automatikusan elfogadja a szerződést.
     - **Megosztott aktiválás használata**: A megosztott aktiválás akkor használatos, amikor több felhasználó használja ugyanazt a számítógépet. További információ: [Az Office 365 megosztott aktiválásának áttekintése](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
     - **Nyelvek**: Az Office automatikusan telepít minden támogatott nyelvet, mely telepítve van a Windowsban a végfelhasználói eszközön. Ezt a beállítást akkor jelölje be, ha az alkalmazáscsomaghoz további nyelveket szeretne telepíteni.

@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/7/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bb94c5a0941dc4f4d626c6316f79d5e4b1f4b551
-ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
+ms.openlocfilehash: 3be9be3c290a6cbb2e68358a6810aa2dc1636065
+ms.sourcegitcommit: 9f99b4a7f20ab4175d6fa5735d9f4fd6a03e0d3a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "35679444"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "40252578"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Android-alkalmazások előkészítése alkalmazásvédelmi szabályzatokkal való felügyeletre az Intune alkalmazásburkoló eszközével
 
@@ -50,6 +50,9 @@ Az eszköz futtatása előtt olvassa el a következő cikket: [Az alkalmazásbur
     > Egyes esetekben a Java 32 bites verziója memóriaproblémákat okozhat. Tanácsos a 64 bites verziót telepíteni.
 
 - Az Android megköveteli, hogy minden alkalmazáscsomag (.apk) alá legyen írva. Létező tanúsítványok **újbóli használatához** és az aláíró tanúsítványok teljes útmutatójához lásd: [Aláíró tanúsítványok és burkolóalkalmazások újbóli használata](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). A keytool.exe végrehajtható Java-eszközzel létrehozhatja a kimeneti burkolt alkalmazás aláírásához szükséges **új** hitelesítő adatokat. Minden beállított jelszónak biztonságosnak kell lennie, de jegyezze fel őket, mert szükség van rájuk az alkalmazásburkoló eszköz futtatásához.
+
+> [!NOTE]
+> Az Intune alkalmazásburkoló eszköz nem támogatja a Google v2 és hamarosan megjelenő v3 alkalmazás-aláíró sémáit. Miután becsomagolta az .apk fájlt az Intune alkalmazásburkoló eszközzel, javasoljuk, hogy használja a [Google által biztosított Apksigner eszközt]( https://developer.android.com/studio/command-line/apksigner). Ezzel biztosíthatja, hogy miután az alkalmazás eljut a végfelhasználói eszközökre, elindítható legyen az Android szabványoknak megfelelően. 
 
 - (Nem kötelező) Engedélyezze a Multidexet a bemeneti alkalmazásban. Az alkalmazások a burkolás során hozzáadott Intune MAM SDK osztályok miatt néha meghaladják a Dalvik Executable (DEX) méretkorlátját. A DEX-fájlok az Android-alkalmazások fordításának részei. Ebben az esetben az ajánlott eljárás a Multidex engedélyezése az alkalmazáson belül. Egyes cégeknél elképzelhető, hogy ehhez az alkalmazás fordítójával (azaz az alkalmazás-összeállító csapattal) való együttműködés szükséges. 
 

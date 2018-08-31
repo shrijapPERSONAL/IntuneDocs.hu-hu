@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2d147bc5ee22718ecce102cc549b29faa17a617e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 49fd06d4f0f75f1aeff434ce3b271284ec1a0340
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31025912"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40252598"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Mik a feltételes hozzáférés használatának szokásos módjai az Intune-ban?
 
@@ -28,6 +28,9 @@ ms.locfileid: "31025912"
 Az Intune-ban kétféle feltételes hozzáférés létezik: eszközalapú és alkalmazásalapú feltételes hozzáférés. A feltételes hozzáférés megfelelőségének a szervezetben való engedélyezéséhez konfigurálnia kell a kapcsolódó megfelelőségi szabályzatokat. A feltételes hozzáférés gyakori használati formái a helyszíni Exchange-hozzáférés engedélyezése vagy letiltása, a hálózati hozzáférés vezérlése vagy egy Mobile Threat Defense-megoldással való integráció.
 
 Az alábbi információ segítségével megismerheti az Intune *mobileszköz*-megfelelőségi és a *mobilalkalmazás*-kezelési funkcióit. 
+
+> [!NOTE]
+> A feltételes hozzáférés az Azure Active Directory egyik lehetősége, amelyet a prémium szintű Azure Active Directory-licencek biztosítanak. Az Intune ezt a lehetőséget mobileszköz-megfelelőségi és mobilalkalmazás-felügyeleti megoldások hozzáadásával bővíti tovább.
 
 ## <a name="device-based-conditional-access"></a>Eszközalapú feltételes hozzáférés
 
@@ -87,7 +90,7 @@ Ha az EAS-rekord olyan friss, hogy az Intune még nem ismeri fel, az Intune kiad
 
 #### <a name="whats-the-intune-role"></a>Mi az Intune szerepe?
 
-Az Intune értékeli és felügyeli az eszközök állapotát.
+Az Intune kiértékeli és felügyeli az eszköz állapotát.
 
 #### <a name="whats-the-exchange-server-role"></a>Mi az Exchange-kiszolgáló szerepe?
 
@@ -106,7 +109,7 @@ A rendszer attól függően engedélyezheti vagy tilthatja a felhasználók hozz
 
 ### <a name="conditional-access-based-on-device-risk"></a>Eszközkockázaton alapuló feltételes hozzáférés
 
-Az Intune partnerkapcsolatot kötött a Mobile Threat Defense forgalmazóival. Ez a szolgáltatás biztonsági megoldást nyújt a mobileszközökön megjelenő kártevők, trójai vírusok és egyéb fenyegetések észleléséhez.
+Az Intune partneri megállapodást kötött a Mobile Threat Defense forgalmazóival. Ez a szolgáltatás biztonsági megoldást nyújt a mobileszközöket veszélyeztető kártevők, trójai vírusok és egyéb fenyegetések észleléséhez.
 
 #### <a name="how-the-intune-and-mobile-threat-defense-integration-works"></a>Hogyan működik az Intune és a Mobile Threat Defense integrációja?
 
@@ -118,13 +121,13 @@ Az Intune és a Mobile Threat Defense integrációja fontos szerepet játszik az
 
 ### <a name="conditional-access-for-windows-pcs"></a>Feltételes hozzáférés Windows rendszerű számítógépeken
 
-A Windows rendszerű számítógépek feltételes hozzáférése hasonló képességeket biztosít, mint a mobileszközöké. Ez a szakasz a feltételes hozzáférés Intune által felügyelt Windows rendszerű gépeken alkalmazható módjait tekinti át.
+Az asztali számítógépeken ken beállítható feltételes hozzáférés a mobileszközökhöz hasonló lehetőségeket biztosít. Ez a szakasz a feltételes hozzáférés Intune által felügyelt Windows rendszerű gépeken alkalmazható módjait tekinti át.
 
 #### <a name="corporate-owned"></a>Céges tulajdonú eszközök
 
--   **Helyszíni AD-tartományhoz csatlakoztatott eszköz:** Ez a feltételes hozzáférés leggyakoribb rendszerbe állítási megoldása azon szervezeteknél, amelyek megfelelőnek tartják, hogy Windows rendszerű számítógépeiket eleve AD-csoportházirendekkel és/vagy a System Center Configuration Managerrel felügyelik.
+-   **Helyszíni AD-tartományhoz csatlakoztatott eszköz:** Ezt a beállítást általában olyan cégek használják, amelyek nagyjából elégedettek azzal, ahogyan a számítógépeiket AD-csoportszabályzatokkal és/vagy a System Center Configuration Managerrel felügyelik.
 
--   **Azure AD-tartományhoz csatlakoztatott és Intune által felügyelt eszköz:** Ez a megoldás általában a saját eszközök választásán (CYOD) alapuló és laptophordozásos forgatókönyvekhez kapcsolódik, ahol az eszközök csak ritkán csatlakoznak a céges hálózatra. Az eszköz az Azure AD-hoz csatlakozik, és az Intune-ban regisztrálják, ami eltávolít minden, a helyszíni AD-tól és tartományvezérlőktől való függőséget. A céges erőforrások kezelésekor ez lehet a feltételes hozzáférés feltétele.
+-   **Azure AD-tartományhoz csatlakoztatott és Intune által felügyelt eszköz:** Ez a megoldás általában a saját eszközök választásán (CYOD) alapuló és laptophordozásos forgatókönyvek megfelelő kísérője, ahol az eszközök csak ritkán csatlakoznak a vállalati hálózatra. Az eszköz az Azure AD-hoz csatlakozik, és az Intune-ban regisztrálják, ami eltávolít minden, a helyszíni AD-tól és tartományvezérlőktől való függőséget. A céges erőforrások kezelésekor ez lehet a feltételes hozzáférés feltétele.
 
 -   **AD-tartományhoz csatlakoztatott eszköz és System Center Configuration Manager:** A System Center Configuration Manager aktuális ága feltételes hozzáférési képességeket nyújt bizonyos – a gép tartományhoz való csatlakoztatásán kívüli – megfelelőségi feltételek ellenőrzésére:
 

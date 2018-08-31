@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a62166792570c5bb81391d05d1cbc3f8486543a4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7faba9a0bfb6f07a80c4c0af947efbca9b33ae03
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31022339"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40253143"
 ---
 # <a name="whats-conditional-access"></a>Mi a feltételes hozzáférés?
 
@@ -38,7 +38,7 @@ Olyan feltételeket adhat meg, amelyek a vállalati adatokhoz való hozzáféré
 
 ## <a name="conditional-access-with-intune"></a>Feltételes hozzáférés az Intune-nal
 
-Az Intune a mobileszköz-megfelelőség és az alkalmazás-felügyeleti szabályzatok hozzáadásával támogatja az EMS feltételes hozzáférési megoldását.
+A feltételes hozzáférés az Azure Active Directory egyik lehetősége, amelyet a prémium szintű Azure Active Directory-licencek biztosítanak. Az Intune ezt a lehetőséget mobileszköz-megfelelőségi és mobilalkalmazás-felügyeleti megoldások hozzáadásával bővíti tovább. 
 
 ![Az Intune és a feltételes hozzáférés az EMS használata esetén](./media/intune-with-ca-1.png)
 

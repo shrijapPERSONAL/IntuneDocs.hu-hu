@@ -15,12 +15,12 @@ ms.assetid: ef8008ac-8b85-4bfc-86ac-1f9fcbd3db76
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c871d32fbcdfa089de88ae649c2926d2c839cce2
-ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
+ms.openlocfilehash: d527b36876adf29c12d3577f7dcd09416b4d5a37
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993717"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255466"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>MacOS-es üzletági (LOB) alkalmazások hozzáadása a Microsoft Intune-hoz
 
@@ -28,14 +28,15 @@ ms.locfileid: "38993717"
 
 A cikkben található információ segítségével macOS rendszerű üzletági alkalmazásokat adhat hozzá a Microsoft Intune-hoz. Le kell töltenie egy külső eszközt a *.pkg*-fájlok előzetes feldolgozásához, mielőtt feltölthetné üzletági fájlját a Microsoft Intune-ba. A *.pkg*-fájlok előzetes feldolgozását macOS-eszközön kell elvégezni.
 
->[!NOTE]
->Bár az macOS-eszközök felhasználói eltávolíthatnak néhányat a beépített macOS-alkalmazások közül – például a Részvények vagy a Térképek alkalmazást –, az Intune nem használható ezek újratelepítésére. Amennyiben a végfelhasználó törölte ezeket az alkalmazásokat, manuálisan telepítheti újra őket az App Store áruházból.
->
->MacOS LOB-alkalmazások Microsoft Intune-ba való feltöltésére csak *.pkg*-fájlok használhatók. A más formátumokra (például *.dmg* vagy *.pkg*) való konvertálás nincs támogatva.
+> [!NOTE]
+> Bár az macOS-eszközök felhasználói eltávolíthatnak néhányat a beépített macOS-alkalmazások közül – például a Részvények vagy a Térképek alkalmazást –, az Intune nem használható ezek újratelepítésére. Amennyiben a végfelhasználó törölte ezeket az alkalmazásokat, manuálisan telepítheti újra őket az App Store áruházból.
 
-## <a name="step-1---pre-process-your-software-setup-file"></a>1. lépés – A szoftvertelepítő fájl előzetes feldolgozása
+## <a name="before-your-start"></a>Előkészületek
 
-Az Intune App Wrapping Tool for Mac eszközzel engedélyezheti a Mac-alkalmazások Microsoft Intune általi felügyeletét.
+Le kell töltenie egy külső eszközt a *.pkg*-fájlok előzetes feldolgozásához, mielőtt feltölthetné üzletági fájlját a Microsoft Intune-ba. A *.pkg*-fájlok előzetes feldolgozását macOS-eszközön kell elvégezni. Az Intune App Wrapping Tool for Mac eszközzel engedélyezheti a Mac-alkalmazások Microsoft Intune általi felügyeletét.
+
+> [!IMPORTANT]
+> MacOS LOB-alkalmazások Microsoft Intune-ba való feltöltésére csak *.pkg*-fájlok használhatók. A más formátumokra (például *.dmg* vagy *.pkg*) való konvertálás nincs támogatva.
 
 1. Töltse le és futtassa az [Intune App Wrapping Tool for Mac](https://github.com/msintuneappsdk/intune-app-wrapping-tool-mac) eszközt.
 
@@ -55,7 +56,7 @@ Az Intune App Wrapping Tool for Mac eszközzel engedélyezheti a Mac-alkalmazás
     - `IntuneAppUtil -r <filename.intunemac> [-v]`<br>
     Ez a parancs kibontja a felderített paramétereket és verziót a létrehozott *.intunemac*-fájlhoz.
 
-## <a name="step-2---specify-the-software-setup-file"></a>2. lépés: A szoftvertelepítő fájl megadása
+## <a name="step-1---specify-the-software-setup-file"></a>1. lépés – A szoftvertelepítő fájl megadása
 
 1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
@@ -64,14 +65,14 @@ Az Intune App Wrapping Tool for Mac eszközzel engedélyezheti a Mac-alkalmazás
 5. Az alkalmazások listája fölött válassza a **Hozzáadás** lehetőséget.
 6. Az **Alkalmazás hozzáadása** panelen válassza az **Üzletági alkalmazás** lehetőséget.
 
-## <a name="step-3---configure-the-app-package-file"></a>3. lépés: Az alkalmazáscsomag-fájl konfigurálása
+## <a name="step-2---configure-the-app-package-file"></a>2. lépés – az alkalmazáscsomag-fájl konfigurálása
 
 1. Az **Alkalmazás hozzáadása** panelen válassza az **Alkalmazáscsomag** fájlt.
 2. Az **Alkalmazáscsomag**-fájl ablaktáblán válassza a tallózás gombot, majd válasszon egy *.intunemac* kiterjesztésű macOS-es telepítési fájlt.
 3. Ha elkészült, válassza az **OK** elemet.
 
 
-## <a name="step-4---configure-app-information"></a>4. lépés: Az alkalmazás adatainak konfigurálása
+## <a name="step-3---configure-app-information"></a>3. lépés – Az alkalmazás adatainak konfigurálása
 
 1. Az **Alkalmazás hozzáadása** panelen válassza az **Alkalmazásadatok** lehetőséget.
 2. Az **Alkalmazás adatai** panelen adja meg az alkalmazásadatokat. A választott alkalmazástól függően előfordulhat, hogy egyes értékek automatikusan ki vannak töltve a panelen:
@@ -89,7 +90,7 @@ Az Intune App Wrapping Tool for Mac eszközzel engedélyezheti a Mac-alkalmazás
     - **Ikon** – Itt töltheti fel az alkalmazáshoz hozzárendelni kívánt ikont. Ez az alkalmazásikon jelenik meg a vállalati portálon böngésző felhasználók számára.
 3. Ha elkészült, válassza az **OK** elemet.
 
-## <a name="step-5---finish-up"></a>5. lépés: Befejezés
+## <a name="step-4---finish-up"></a>4. lépés – befejezés
 
 1. Az **Alkalmazás hozzáadása** panelen ellenőrizze, hogy helyesek-e a megadott információk.
 2. Az alkalmazást a **Hozzáadás** elem kiválasztásával töltheti fel az Intune-ba.
@@ -99,7 +100,7 @@ A létrehozott alkalmazás megjelenik az alkalmazáslistában, ahol hozzárendel
 > [!NOTE]
 > Ha a *.pkg*-fájl több alkalmazást vagy alkalmazástelepítőt is tartalmaz, a Microsoft Intune csak akkor jelenti, hogy az *alkalmazás* telepítése sikerült, ha felderítette az összes telepített alkalmazást az eszközön.
 
-## <a name="step-6---update-a-line-of-business-app"></a>6. lépés: Üzletági alkalmazás frissítése
+## <a name="step-5---update-a-line-of-business-app"></a>5. lépés – üzletági alkalmazás frissítése
 
 [!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 

@@ -15,12 +15,12 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff55b013d863d1676b9b83ec93e38defe222e2d7
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 26117a07e0769033dda573882c3853eb0e3921ff
+ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905240"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40253140"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Webalkalmazások hozzáadása az Intune-hoz
 
@@ -45,7 +45,11 @@ A következő módon adhat hozzá egy alkalmazást az Intune-hoz egy alkalmazás
 6. Az **Alkalmazás felvétele** panelen az **Alkalmazás típusa** legördülő listában válassza a **Webes hivatkozás** típust.
 7. Válassza ki a **Konfigurálás** lehetőséget.
 8. Az **Alkalmazásadatok** panelen adja meg az alábbi információkat:
-    - **Név**: Itt adhatja meg az alkalmazás céges portálon megjelenítendő nevét.
+    - **Név**: Itt adhatja meg az alkalmazás vállalati portálon megjelenítendő nevét. 
+    
+        > [!NOTE]
+        > Ha az alkalmazás telepítését követően módosítja annak nevét az Intune Azure Portalon, az alkalmazást nem fogják megtalálni a parancsok.
+    
     - **Leírás**: Itt adhatja meg az alkalmazás leírását. A leírás a céges portálon jelenik meg a felhasználók számára.
     - **Kiadó**: Adja meg az alkalmazás kiadójának nevét.
     - **Alkalmazás URL-címe**: Adja meg annak a webhelynek az URL-címét, amelyen a hozzárendelni kívánt alkalmazás található.

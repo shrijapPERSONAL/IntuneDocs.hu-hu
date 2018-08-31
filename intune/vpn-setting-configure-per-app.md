@@ -14,12 +14,12 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ed58a6af9b2b4742582c92729e7324841014f31c
-ms.sourcegitcommit: 2bc3b9655517ae874c524c3a270f4fc40c448faa
+ms.openlocfilehash: f4746e2f20926c102717214304711cc9883597b8
+ms.sourcegitcommit: 1e349bcfd562f34866108e566e5b5062717e0112
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34753892"
+ms.lasthandoff: 08/15/2018
+ms.locfileid: "40251689"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Alkalmazásonkénti virtuális magánhálózat (VPN) beállítása az Intune-ban iOS-eszközökhöz
 
@@ -111,7 +111,7 @@ A megbízható főtanúsítvány-profil lehetővé teszi, hogy az iOS automatiku
 
 ## <a name="create-a-per-app-vpn-profile"></a>Alkalmazásonkénti VPN-profil létrehozása
 
-A VPN-profil tartalmazza az ügyfél-hitelesítő adatokat tartalmazó SCEP-tanúsítványt, a VPN-hez tartozó kapcsolati adatokat és az Alkalmazásonkénti VPN jelzőt az Alkalmazásonkénti VPN funkció használatának engedélyezéséhez az iOS alkalmazásban.
+A VPN-profil tartalmazza az ügyfél-hitelesítő adatokat tartalmazó SCEP-tanúsítványt, a VPN-hez tartozó kapcsolati adatokat és az alkalmazásonkénti VPN jelzőt az alkalmazásonkénti VPN funkció használatának engedélyezéséhez az iOS alkalmazásban.
 
 1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
 2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
@@ -145,21 +145,32 @@ Miután hozzáadta a VPN-profilt, társítsa az alkalmazást és a Microsoft Azu
 
 1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
 2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
-2. Válassza a **Mobilalkalmazások** lehetőséget.
-3. Kattintson az **Alkalmazások** elemre.
-4. Válassza ki az alkalmazást az alkalmazások listájából.
-5. Kattintson a **Hozzárendelések** lehetőségre
-6. Kattintson a **Csoport hozzáadása** parancsra.
-7. Válassza a **Szükséges** elemet a **Hozzárendelés típusa** beállításnál a **Csoport hozzáadása** panelen.
-6. Válassza ki a korábban definiált csoportot, és válassza az **Alkalmazás szükségessé tétele** lehetőséget.
-8. Válassza ki a VPN-definíciót a **VPN-hez**.
+3. Válassza a **Mobilalkalmazások** lehetőséget.
+4. Kattintson az **Alkalmazások** elemre.
+5. Válassza ki az alkalmazást az alkalmazások listájából.
+6. Kattintson a **Hozzárendelések** lehetőségre
+7. Kattintson a **Csoport hozzáadása** parancsra.
+8. Válassza a **Szükséges** elemet a **Hozzárendelés típusa** beállításnál a **Csoport hozzáadása** panelen.
+9. Válassza ki a korábban definiált csoportot, és válassza az **Alkalmazás szükségessé tétele** lehetőséget.
+10. Válassza ki a VPN-definíciót a **VPN-hez**.
  
     > [!NOTE]  
     > Egyes esetekben akár egy percig is eltarthat, amíg a VPN-definíció kikeresi az értéket. Várjon 3–5 percet, mielőtt a **Mentésre** kattintana.
 
-9. Kattintson az **OK** gombra, majd a **Mentés** lehetőségre.
+11. Kattintson az **OK** gombra, majd a **Mentés** lehetőségre.
 
     ![Alkalmazás társítása a VPN-nel](./media/vpn-per-app-app-to-vpn.png)
+
+Az alkalmazás és profil közötti társítás el lesz távolítva az eszköz legközelebbi bejelentkezésekor, ha az alábbi feltételek teljesülnek:
+- Az alkalmazás meg lett jelölve kötelező telepítéshez.
+- A profil és az alkalmazás ugyanazt a csoportot célozza.
+- Az alkalmazásonkénti VPN-konfigurációt eltávolítja az alkalmazás-hozzárendelésből.
+
+Az alkalmazás és profil közötti társítás egészen addig megmarad, amíg a végfelhasználó nem kérelmez újratelepítést a vállalati portálról, ha az alábbi feltételek teljesülnek:
+- Az alkalmazás meg lett jelölve választható telepítéshez.
+- A profil és az alkalmazás ugyanazt a csoportot célozza.
+- A végfelhasználó a vállalati portálon kérvényezte az alkalmazástelepítést, aminek eredményeképp az alkalmazás és a profil telepítve lett az eszközön.
+- Az alkalmazásonkénti VPN-konfigurációt eltávolítja az alkalmazás-hozzárendelésből.
 
 ## <a name="verify-the-connection-on-the-ios-device"></a>A kapcsolat ellenőrzése az iOS-eszközön
 
@@ -191,7 +202,7 @@ Ellenőrizze a kapcsolatot egy iOS-eszközön.
 2. Koppintson a **Csatlakozás** gombra.  
 A VPN további kérdések megjelenítése nélkül sikeresen kapcsolódik.
 
-<!-- ## Troubleshooting the Per-App VPN
+<!-- ## Troubleshooting the per-app VPN
 
 The user experiences the feature by silently connecting to the VPN. This experience, however, can provide little information for troubleshooting. You can review the event logs crated by the iOS device.
 

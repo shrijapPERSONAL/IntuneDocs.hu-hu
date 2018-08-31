@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/27/2018
+ms.date: 07/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6c7f3229c2cb4c5f3f57d84d348053f25eeeb9c9
-ms.sourcegitcommit: f70d6aaea59b52cd0d7bd3008afd243868967fd6
+ms.openlocfilehash: c64c267623db93128177d56ced29586d3a877b19
+ms.sourcegitcommit: 973a06f4a35b74314fece2bae17dd6885b4211c3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37066215"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42823052"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Mobile Threat Defense- (MTD) alkalmazások felvétele és hozzárendelése az Intune-nal
 
@@ -56,6 +56,7 @@ Válassza ki az MTD-szolgáltatójának megfelelő szakaszt:
   - [Check Point SandBlast Mobile](#configure-check-point-sandblast-mobile-apps)
   - [Zimperium](#configure-zimperium-apps)
   - [Pradeo](#configure-pradeo-apps)
+  - [Better Mobile](#configure-better-mobile-apps)
 
 ### <a name="configure-lookout-for-work-apps"></a>Lookout for Work-alkalmazások konfigurálása
 
@@ -129,6 +130,16 @@ Válassza ki az MTD-szolgáltatójának megfelelő szakaszt:
 
     - Lásd a következő útmutatót: [iOS Store-alkalmazás felvétele a Microsoft Intune-ba](store-apps-ios.md). Az **Alkalmazásadatok konfigurálása** szakasz **12. lépésében** használja ezt a [Pradeo alkalmazás-áruházbeli URL-címet](https://itunes.apple.com/us/app/pradeo-agent/id547979360?mt=8).
 
+### <a name="configure-better-mobile-apps"></a>Better Mobile-alkalmazások konfigurálása
+
+ - **Android**
+
+    - Lásd a következő útmutatót: [Android Áruházbeli alkalmazás felvétele a Microsoft Intune-ba](store-apps-android.md). Használja az [Active Shield ezen alkalmazás-áruházbeli URL-címét](https://play.google.com/store/apps/details?id=com.better.active.shield.enterprise) a **7. lépésben**.
+
+ - **iOS**
+
+    - Lásd a következő útmutatót: [iOS Store-alkalmazás felvétele a Microsoft Intune-ba](store-apps-ios.md). Használja az [Active Shield ezen alkalmazás-áruházbeli URL-címét](https://itunes.apple.com/us/app/activeshield/id980234260?mt=8&uo=4) a **12. lépésében**, **Az alkalmazás adatainak konfigurálása** szakaszban.
+
 ## <a name="configure-your-mtd-apps-with-an-ios-app-configuration-policy"></a>MTD-alkalmazások konfigurálása egy iOS-es alkalmazáskonfigurációs szabályzattal
 
 ### <a name="lookout-for-work-app-configuration-policy"></a>Konfigurációs szabályzat az Lookout for Workhöz
@@ -177,6 +188,22 @@ Válassza ki az MTD-szolgáltatójának megfelelő szakaszt:
 <string>{{serialnumber}}</string>
 <key>udidlast4digits</key>
 <string>{{udidlast4digits}}</string>
+</dict>
+```
+
+### <a name="better-mobile-app-configuration-policy"></a>Better Mobile-alkalmazások konfigurációs szabályzata
+
+- A Better Mobile iOS-es alkalmazáskonfigurációs szabályzat megadásához lásd [a Microsoft Intune alkalmazáskonfigurációs szabályzatainak iOS-hez történő használatával](app-configuration-policies-use-ios.md) foglalkozó útmutatót.
+    - A**8. lépésnél** válassza az **XML adatok megadása** lehetőséget, majd másolja be az alábbi tartalmat a konfigurációs szabályzat törzsébe. Cserélje le a `https://client.bmobi.net` URL-címet a konzol URL-címére.
+
+```
+<dict>
+<key>better_server_url</key>
+<string>https://client.bmobi.net</string>
+<key>better_udid</key>
+<string>{{aaddeviceid}}</string>
+<key>better_user</key>
+<string>{{userprincipalname}}</string>
 </dict>
 ```
 

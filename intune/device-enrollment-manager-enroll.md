@@ -15,27 +15,27 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76166fda33414c8ae3096ca12604a5edf07ad974
-ms.sourcegitcommit: a5bd08f2b6a0693fa62683aa2d3699041030269e
+ms.openlocfilehash: ce785ad7898f9e792feeadcd1623bd0989f0d6d0
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203220"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255566"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Eszközök regisztrálása készülékregisztráció-kezelői fiók használatával
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-A cégek az Intune használatával nagyszámú mobileszközt felügyelhetnek egyetlen felhasználói fiókkal. Az *eszközregisztráció-kezelői* (DEM-) fiók egy speciális felhasználói fiók, mely akár ezer eszköz regisztrálására képes. A meglévő felhasználók a DEM-fiókba való felvételével különleges DEM-képességeket biztosíthat számukra. Minden regisztrált eszköz felhasznál egyetlen licencet. Az ezzel a fiókkal regisztrált eszközöket célszerű nem személyes („BYOD”), hanem megosztott eszközökként használni.  
+A cégek az Intune használatával nagyszámú mobileszközt felügyelhetnek egyetlen felhasználói fiókkal. Az *eszközregisztráció-kezelői* (DEM-) fiók egy speciális felhasználói fiók, mely akár ezer eszköz regisztrálására képes. Ha felveszi a meglévő felhasználókat egy DEM-fiókba, különleges DEM-képességeket biztosíthat nekik. Minden regisztrált eszköz felhasznál egyetlen licencet. Az ezzel a fiókkal regisztrált eszközöket célszerű nem személyes („BYOD”), hanem megosztott eszközökként használni.  
 
-A felhasználóknak szerepelniük kell az [Azure Portalon](https://portal.azure.com) ahhoz, hogy fel lehessen venni őket eszközregisztráció-kezelőként. Az optimális biztonság biztosítása érdekében a DEM-felhasználó nem lehet egyben Intune-rendszergazda is.
+A felhasználóknak szerepelniük kell az [Azure Portalon](https://portal.azure.com) ahhoz, hogy fel lehessen venni őket eszközregisztráció-kezelőként. Az optimális biztonság érdekében a DEM-felhasználók nem lehetnek egyben Intune-rendszergazdák is.
 
 >[!NOTE]
 >A készülékregisztráció-kezelős módszer nem használható a következő egyéb regisztrációs módszerekkel: [Apple Configurator beállítási asszisztenssel](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator közvetlen beléptetéssel](apple-configurator-direct-enroll-ios.md), [Apple School Manager (ASM)](apple-school-manager-set-up-ios.md) vagy [Készülékregisztrációs program (DEP)](device-enrollment-program-enroll-ios.md).
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Eszközregisztráció-kezelői példaforgatókönyv
 
-Egy étterem 50 pénztári táblagépet szeretne biztosítani a felszolgálóknak és rendelési monitorokat a konyhai személyzetnek. Az alkalmazottaknak nem szükséges hozzáférni a céges adatokhoz, vagy felhasználóként bejelentkezni. Az Intune-rendszergazda létrehoz egy eszközregisztráció-kezelői fiókot az étterem vezetője számára.  Ez a fiók nem azonos a vezető elsődleges fiókjával, és csak az Intune-nal használt megosztott eszközök regisztrálására használatos. A vezető ekkor már regisztrálhatja az 50 táblagépet a DEM-hitelesítőadatok használatával.
+Egy étterem 50 pénztári táblagépet szeretne biztosítani a felszolgálóknak és rendelési monitorokat a konyhai személyzetnek. Az alkalmazottaknak nem szükséges hozzáférni a céges adatokhoz, vagy felhasználóként bejelentkezni. Az Intune-rendszergazda létrehoz egy eszközregisztráció-kezelői fiókot az étterem vezetője számára.  Ez a fiók nem azonos a vezető elsődleges fiókjával, és csak a megosztott eszközök Intune-ban való regisztrálására lehet használni. A vezető ekkor már regisztrálhatja az 50 táblagépet a DEM-hitelesítőadatok használatával.
 
 Csak az [Azure Portalon](https://portal.azure.com) szereplő felhasználók lehetnek eszközregisztráció-kezelők. Az eszközregisztráció-kezelő felhasználó nem lehet Intune-rendszergazda.
 
@@ -54,7 +54,7 @@ Az eszközregisztráció-kezelői fiókokkal regisztrált eszközökre a követk
   - A Vállalati portál alkalmazásban vagy a webhelyén csak a helyi eszköz jelenik meg.
   - A felhasználók nem használhatnak az Apple Volume Purchase Program (VPP) keretében vásárolt alkalmazásokat a felhasználói licencekkel, mivel az alkalmazások kezeléséhez felhasználói Apple ID azonosítóra van szükség.
   - (Csak iOS esetén) Ha eszközregisztráció-kezelővel regisztrálja az iOS-eszközöket, akkor nem használhatja az Apple Configuratort, a Készülékregisztrációs programot (DEP) és az Apple School Manager (ASM) programot az eszközök regisztrálására.
-  - (Csak Android esetén) Az adott DEM-fiókkal regisztrálható androidos munkahelyi profilos eszközök száma korlátozott. DEM-fiókonként legfeljebb tíz androidos munkahelyi profillal rendelkező eszközt lehet regisztrálni. Ez a korlátozás a hagyományos Android-eszközök regisztrációjára nem vonatkozik.
+  - (Csak Android esetén) Az egy DEM-fiókkal regisztrálható, androidos munkahelyi profilos eszközök száma korlátozott. DEM-fiókonként legfeljebb 10 androidos munkahelyi profillal rendelkező eszközt lehet regisztrálni. Ez a korlátozás a hagyományos Android-eszközök regisztrációjára nem vonatkozik.
   - Az eszközök telepíthetnek VPP-alkalmazásokat, ha rendelkeznek eszközlicenccel.
   - A DEM használatához nem szükséges Intune-eszközlicenc. További információ a [felhasználói és eszközlicencekről](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
 
@@ -74,25 +74,24 @@ Az eszközregisztráció-kezelői fiókokkal regisztrált eszközökre a követk
 
 ## <a name="permissions-for-dem"></a>DEM-engedélyek
 
-A DEM-regisztrációs feladatok felügyeleti portálon való végrehajtásához globális vagy Intune-szolgáltatásrendszergazdai Azure AD-szerepkörök szükségesek. Ezek a szerepkörök az összes DEM-felhasználó megtekintéséhez is szükségesek, annak ellenére, hogy az RBAC-jogosultságok fel vannak sorolva és elérhetők az egyéni felhasználói szerepkör alatt. Azok a hozzárendelt globális rendszergazdai vagy Intune-szolgáltatásrendszergazdai szerepkörrel nem rendelkező felhasználók, akiknek van olvasási jogosultságuk a készülékregisztráció-kezelői szerepkörhöz, csak az általuk létrehozott DEM-felhasználókat láthatják. Az RBAC-szerepkörök támogatása ezekhez a funkciókhoz később lesz bejelentve.
+Globális vagy Intune-szolgáltatási rendszergazdai Azure AD-szerepkörök szükségesek
+- a DEM-regisztrációs feladatok végrehajtásához az adminisztrátori portálon;
+- az összes DEM-felhasználó megtekintéséhez, függetlenül az egyéni felhasználói szerepkör alatt felsorolt és elérhető RBAC-jogosultságoktól.
 
-Ha egy felhasználó nem rendelkezik hozzárendelt globális rendszergazdai vagy Intune-szolgáltatásrendszergazdai szerepkörrel, de van olvasási jogosultsága a hozzá rendelt készülékregisztráció-kezelői szerepkörhöz, akkor csak az általa létrehozott DEM-felhasználókat láthatja.
+Azok a hozzárendelt globális rendszergazdai vagy Intune-szolgáltatásrendszergazdai szerepkörrel nem rendelkező felhasználók, akiknek van olvasási jogosultságuk a készülékregisztráció-kezelői szerepkörhöz, csak az általuk létrehozott DEM-felhasználókat láthatják. Az RBAC-szerepkörök támogatása ezekhez a funkciókhoz később lesz bejelentve.
+
 
 ## <a name="remove-a-device-enrollment-manager"></a>Készülékregisztráció-kezelő eltávolítása
 
-A készülékregisztráció-kezelő eltávolítása nincs hatással a regisztrált eszközökre. A készülékregisztráció-kezelő eltávolításakor:
+A készülékregisztráció-kezelő eltávolításakor:
 
 -   A regisztrált eszközöket ez nem érinti, és továbbra is teljes felügyelet alatt állnak.
--   Az eltávolított készülékregisztráció-kezelői fiók hitelesítő adatai érvényesek maradnak.
--   Az eltávolított készülékregisztráció-kezelő azonban nem törölheti az eszközök tartalmát, és nem vonhatja vissza őket.
--   Az eltávolított készülékregisztráció-kezelő csak néhány eszközt regisztrálhat, az Intune-rendszergazda által konfigurált felhasználónkénti korlátozásnak megfelelően.
+-   Az eltávolított DEM-fiók hitelesítő adatai továbbra is érvényesek maradnak.
+-   Az eltávolított DEM továbbra sem törölheti eszközök tartalmát, és nem vonhatja ki őket a használatból.
+-   Az eltávolított DEM csak annyi eszközt regisztrálhat, amennyit az Intune-rendszergazda felhasználónként engedélyezett.
 
 **Készülékregisztráció-kezelő eltávolítása**
 
 1. Az [Azure Portalbeli Intune-on](https://aka.ms/intuneportal) válassza az **Eszközök regisztrálása**, majd a **Készülékregisztráció-kezelők** lehetőséget.
 2. A **Készülékregisztráció-kezelő** panelen válassza ki a készülékregisztráció-kezelő felhasználót, majd válassza az **Eltávolítás** lehetőséget.
 
-## <a name="view-the-properties-of-a-device-enrollment-manager"></a>A készülékregisztráció-kezelő tulajdonságainak megtekintése
-
-1. Az [Azure Portalon](https://portal.azure.com) válassza az **Eszközök regisztrálása**, majd a **Készülékregisztráció-kezelők** lehetőséget.
-2. Kattintson a jobb gombbal a készülékregisztráció-kezelő felhasználóra az **Készülékregisztráció-kezelők** panelen, és válassza a **Tulajdonságok** lehetőséget.

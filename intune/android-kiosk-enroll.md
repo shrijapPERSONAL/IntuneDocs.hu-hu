@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5a223834eed1b0174c56b5e33ad2140203073d0
-ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
+ms.openlocfilehash: 90cd71383e8f2f82bf9fd6a3dc579c1c0a954227
+ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39212035"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42903143"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Vállalati androidos kioszkeszközök regisztrálásának beállítása
 
@@ -56,7 +56,7 @@ Kioszkeszközei regisztrálásához létre kell hoznia egy regisztrációs profi
 1. Nyissa meg az [Intune portált](https://portal.azure.com), majd válassza az **Eszközregisztráció** > **Android-regisztráció** > **Kioszk- és feladatalapú eszközök regisztrációja** lehetőséget.
 2. Válassza a **Létrehozás** lehetőséget, és töltse ki a kötelező mezőket.
     - **Név**: Adjon meg egy nevet, amelyet akkor fog használni, amikor a profilt a dinamikus eszközcsoporthoz rendeli.
-    - **Jogkivonat lejárati dátuma**: Az a dátum, amikor a jogkivonat lejár. A Google legfeljebb 30 napot enged meg.
+    - **Jogkivonat lejárati dátuma**: Az a dátum, amikor a jogkivonat lejár. A Google legfeljebb 90 napos érvényességi időszakot engedélyez.
 3. Válassza a **Létrehozás** elemet a profil mentéséhez.
 
 ### <a name="create-a-device-group"></a>Eszközcsoport létrehozása
@@ -110,7 +110,7 @@ Az NFC-t támogató Android 5.1 vagy újabb rendszerű eszközöket egy speciál
 
 ### <a name="enroll-by-using-a-token"></a>Regisztráció jogkivonat használatával
 
-Android 6 vagy újabb rendszerű eszközök esetén használhatja a jogkivonatot az eszköz regisztrálásához.
+Android 6 vagy újabb rendszerű eszközök esetén használhatja a jogkivonatot az eszköz regisztrálásához. Az Android 6.1-es és újabb verzióinál a QR-kódok olvasására is lehetőség van az **aft#setup** regisztrációs metódus használatakor.
 
 1. Kapcsolja be a gyári alaphelyzetbe állított eszközt.
 2. Az **Üdvözlőképernyőn** válasszon nyelvet.
@@ -125,6 +125,9 @@ Android 6 vagy újabb rendszerű eszközök esetén használhatja a jogkivonatot
 ### <a name="enroll-by-using-a-qr-code"></a>Regisztráció QR-kód használatával
 
 Android 7 vagy újabb rendszerű eszközökön az eszköz regisztrálásához beolvashatja a regisztrációs profilhoz tartozó QR-kódot.
+
+> [!Note]
+> A böngésző kicsinyítése miatt előfordulhat, hogy az eszközökkel nem lehet beolvasni a QR-kódot. A nagyítás növelése megoldja ezt a problémát.
 
 1. A QR-kód olvasása az Android-eszközön úgy indítható el, hogy többször a gyári alaphelyzetbe állítás utáni első képernyőre koppint.
 2. Android 7-es és 8-as eszközökön a rendszer kérni fogja egy QR-kódolvasó telepítését. Az Android 9 és újabb rendszerű eszközökön már van telepítve QR-kódolvasó.

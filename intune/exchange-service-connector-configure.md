@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 640d1a5cbd785248cb309bc250c95631295955b3
-ms.sourcegitcommit: 71497f0215fc8bed454ac318b0548b1281a8fe0f
+ms.openlocfilehash: 141fcc4550b69d01d67e8d4aa9f0e6e05717353a
+ms.sourcegitcommit: 8b4f5685dc7f41f5e967a8f9d0627707a36dbe93
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33914155"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251870"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>Az Exchange-összekötő konfigurálása az Intune-ban és az Exchange Online-ban
 
@@ -50,7 +50,7 @@ Létre kell hoznia egy Exchange Online-felhasználói fiókot is, amelyet az Int
 
 ## <a name="set-up-the-service-to-service-connector"></a>A szolgáltatások közötti összekötő beállítása
 
-1. Jelentkezzen be az [Azure Portalra](http://portal.azure.com) a [korábban ismertetett parancsmagokhoz](#exchange-cmdlet-requirements) Exchange-rendszergazdai jogosultságokkal és engedélyekkel rendelkező felhasználói fiókkal. A Microsoft Intune az aktuálisan bejelentkezett felhasználó e-mail címét használja a kapcsolat beállításához.
+1. Jelentkezzen be az [Azure Portalra](http://portal.azure.com) egy olyan felhasználói fiókkal, amely rendelkezik Exchange rendszergazdai jogosultságokkal, engedélyekkel a [korábban ismertetett](#exchange-cmdlet-requirements) parancsmagok futtatására, egy érvényes Intune-licenccel, valamint a globális rendszergazdai szerepkörrel. A Microsoft Intune az aktuálisan bejelentkezett felhasználó e-mail címét használja a kapcsolat beállításához.
 
 2. Válassza a bal oldali menü **Minden szolgáltatás** pontját, majd írja be a szűrő szövegmezőbe az **Intune** nevet.
 

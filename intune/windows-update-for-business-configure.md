@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 216c83d4158fe65b7aeb52f5477362eb57ec4242
-ms.sourcegitcommit: a52e81ab4fe24ae6410d1a1e63b4b073abc416a4
+ms.openlocfilehash: df7e14b485fae0a70b8f0f487229b9e31ace4077
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34822721"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255245"
 ---
 # <a name="manage-software-updates-in-intune"></a>Szoftverfrissítések kezelése az Intune-ban
 
@@ -115,11 +115,10 @@ Az új frissítési kör megjelenik a frissítési körök listájában.
 3. Ha kész, válassza a **Kijelölés** lehetőséget a hozzárendelés befejezéséhez.
 
 ## <a name="update-compliance-reporting"></a>Frissítés-megfelelőségi jelentés
-A frissítés-megfelelőség nyomon követhető az Intune-ban vagy az Operations Management Suite (OMS) ingyenes megoldása, az Update Compliance segítségével.
+A frissítések megfelelőségét áttekintheti az Intune-ban vagy az ingyenesen használható Update Compliance megoldásban.
 
 ### <a name="review-update-compliance-in-intune"></a>Frissítés-megfelelőség ellenőrzése az Intune-ban 
-<!-- 1352223 -->
-A szabályzatjelentésben ellenőrizheti a konfigurált Windows 10-es frissítési körök telepítési állapotát.
+<!-- 1352223 --> A szabályzatjelentésekben ellenőrizheti a konfigurált Windows 10-es frissítési körök üzembehelyezési állapotát.
 
 1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
 2. Kattintson a **Minden szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza a **Microsoft Intune** elemet.
@@ -137,7 +136,7 @@ A szabályzatjelentésben ellenőrizheti a konfigurált Windows 10-es frissíté
       - **Felhasználó állapota**
 
 ### <a name="review-update-compliance-using-oms"></a>Frissítés-megfelelőség ellenőrzése az OMS használatával
-A Windows 10 frissítések alkalmazása nyomon követhető az Operations Management Suite (OMS) ingyenes megoldása, az Update Compliance segítségével. További információ: [Windows frissítések figyelése az Update Compliance használatával](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor). Ennek a megoldásnak a használatával kereskedelmi azonosító telepíthető azokra az Intune-nal felügyelt Windows 10 eszközökre, amelyekről frissítés-megfelelőségi jelentést kíván készíteni.
+A Windows 10-frissítések telepítését egy ingyenes megoldás, az Update Compliance segítségével ellenőrizheti. További információ: [Windows frissítések figyelése az Update Compliance használatával](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor). Ennek a megoldásnak a használatával kereskedelmi azonosító telepíthető azokra az Intune-nal felügyelt Windows 10 eszközökre, amelyekről frissítés-megfelelőségi jelentést kíván készíteni.
 
 A kereskedelmi azonosítót az Intune-konzolon egy egyéni szabályzat OMA-URI beállításaival konfigurálhatja. További információ: [A Microsoft Intune-ban regisztrált Windows 10-eszközökre vonatkozó Intune-szabályzatbeállítások](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).   
 

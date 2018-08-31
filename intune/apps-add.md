@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2018
+ms.date: 08/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 69887fb0a9b2e447d6c6101b26ce50f733053337
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 5964ebdbac251468e3bc35c2c35f0bd2e7fddbff
+ms.sourcegitcommit: 1a8b34c7854a575bf6ce59f475c7b718fa038d66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321288"
+ms.lasthandoff: 08/18/2018
+ms.locfileid: "40251792"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Alkalmazások hozzáadása a Microsoft Intune-hoz
 
@@ -121,13 +121,16 @@ A webes, az áruházbeli és az üzletági alkalmazásokon kívül érdemes tisz
 - **Microsoft Store Vállalatoknak (Windows 10)**: A Microsoft Store Vállalatoknak az a hely, ahol alkalmazásokat vásárolhat a szervezete számára egyenként vagy mennyiségi program keretében. Az áruházat a Microsoft Intune-nal összekapcsolva a mennyiségi programban vásárolt alkalmazásokat az Azure Portalon kezelheti. További információ: [A Microsoft Store Vállalatoknak áruházban vásárolt alkalmazások felügyelete](windows-store-for-business.md).
 
     > [!NOTE]
-    > A Windows-alkalmazások fájlnévkiterjesztései közé tartozik az **.msi**, **.appx**, **.appxbundle**, **.msix** és **.msixbundle**.  
+    > A windowsos alkalmazások fájlnévkiterjesztései közé tartozik az **.msi**, **.appx**, **.appxbundle**, **.msix** és **.msixbundle** is.  
 
 ## <a name="before-you-add-apps"></a>Mielőtt hozzáadna alkalmazásokat
 Mielőtt elkezdené az alkalmazások hozzáadását és hozzárendelését, vegye figyelembe a következőket:
 
 - Ha áruházból végzi az alkalmazások felvételét és hozzárendelését, a felhasználók csak akkor tudják telepíteni az alkalmazásokat, ha rendelkeznek fiókkal az adott áruházban.
 - Előfordulhat, hogy egyes hozzárendelendő alkalmazások beépített iOS-alkalmazásoktól függenek. Ha például egy könyv iOS-es áruházból való hozzárendelését végzi, az eszközön elérhetőnek kell lennie az iBooks alkalmazásnak. Ha eltávolította a beépített iBooks alkalmazást, azt az Intune használatával nem tudja újratelepíteni.
+
+> [!IMPORTANT]
+> Ha az alkalmazás telepítését követően módosítja annak nevét az Intune Azure Portalon, az alkalmazást nem fogják megtalálni a parancsok.
 
 ## <a name="cloud-storage-space"></a>Felhőtárhely
 A szoftvertelepítő típusú telepítéssel létrehozott összes alkalmazást (például az üzletági alkalmazásokat) a rendszer becsomagolja és feltölti az Intune felhőtárhelyére. Az Intune próba-előfizetése 2 gigabájtnyi (GB) felhőtárhelyet biztosít a felügyelt alkalmazások és frissítések tárolásához. A teljes előfizetések nem korlátozzák a tárhely maximális mennyiségét.
@@ -170,6 +173,10 @@ Az Intune a kötelező alkalmazásokat a következő feltételek alapján telep�
 - Ha a kötelező alkalmazás telepítése sikertelen, vagy valamiért az alkalmazás nincs jelen az eszközön, az Intune ellenőrzi a megfelelőséget, és az ütemezett időpontban újratelepíti az alkalmazást.  
 - Az egyik rendszergazda elérhetővé tesz egy alkalmazást egy felhasználói csoport számára, és a felhasználó telepíti ezt az alkalmazást az eszközre a céges portál használatával. Később a rendszergazda frissíti az alkalmazást v1-es verzióról v2-re. Amennyiben az alkalmazás korábbi verziója jelen van az eszközön, az Intune az ütemezett időpontban frissíteni fogja az alkalmazást.
 - Ha a rendszergazda az alkalmazást törlésre jelöli ki, és az alkalmazás továbbra is jelen van a készüléken és eltávolítása sikertelen volt, az Intune ellenőrzi a megfelelőséget, és eltávolítja az alkalmazást az ütemezett időpontban.   
+
+## <a name="app-installation-errors"></a>Alkalmazástelepítési hibák
+
+Az Intune alkalmazástelepítési hibáival kapcsolatos további információkért lásd: [Alkalmazástelepítési hibák](troubleshoot-app-install.md#app-installation-errors).
 
 ## <a name="next-steps"></a>További lépések
 

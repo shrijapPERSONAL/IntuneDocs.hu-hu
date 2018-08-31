@@ -15,12 +15,12 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: a22aafdca8c049367d4c88d27a07a7c1825a01e3
-ms.sourcegitcommit: e6e93419f46e8647d4661eeca09eb1e2e460ad2b
+ms.openlocfilehash: 5a248345a40cd7cfcff3883643562923f9535d3b
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38966918"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "41910651"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Windows rendszerű számítógépek kezelése az Intune-szoftverügyfélen keresztül számítógépként
 
@@ -53,10 +53,10 @@ Az Intune támogatja a Windows rendszerű számítógépek számítógépként v
 
 |Követelmény|További információ|
 |---------------|--------------------|
-|Operációs rendszer | Windows 7 SP1 vagy újabb rendszert futtató eszköz. </br></br>**A Home Edition verziók nem támogatottak.**|
+|Operációs rendszer | Windows 7 SP1, Windows 8.1 vagy újabb rendszert futtató eszköz. </br></br>**A Home Edition verziók nem támogatottak.**|
 |Rendszergazdai engedélyek|Az ügyfélszoftvert telepítő fióknak helyi rendszergazdai engedélyekkel kell rendelkeznie az eszközön.|
 |Windows Installer 3.1|A számítógépnek legalább a Windows Installer 3.1-es verziójával kell rendelkeznie.<br /><br />A Windows Installer verziójának megtekintése egy számítógépen:<br /><br />  A számítógépen kattintson a jobb gombbal a **%windir%\System32\msiexec.exe** fájlra, majd a **Tulajdonságok** menüpontra.<br /><br />A Windows Installer legújabb verzióját letöltheti a Microsoft Developer Network webhelyen található [Windows Installer újraterjeszthető csomagok](http://go.microsoft.com/fwlink/?LinkID=234258) oldalról.|
-|Nem kompatibilis ügyfélszoftver eltávolítása|Az Intune-ügyfélszoftver telepítése előtt el kell távolítania a számítógépen esetleg megtalálható Configuration Manager-, Operations Manager-, Operations Management Suite- és Service Manager-ügyfélszoftvert.|
+|Nem kompatibilis ügyfélszoftver eltávolítása|Az Intune-ügyfélszoftver telepítése előtt távolítson el a számítógépről minden Configuration Manager-, Operations Manager- és Service Manager-ügyfélszoftvert.|
 
 ## <a name="deploying-the-intune-software-client"></a>Az Intune-szoftverügyfél üzembe helyezése
 Intune-rendszergazdaként több módon is elérhetővé teheti az Intune-szoftverügyfelet a felhasználók számára. Útmutatásért lásd: [Az Intune-szoftverügyfél telepítése Windows rendszerű számítógépekre](install-the-windows-pc-client-with-microsoft-intune.md).

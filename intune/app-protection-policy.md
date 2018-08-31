@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 01/19/2018
+ms.date: 08/16/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f59bd4e0f795b73d830e41d47262c10c24d9398b
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 4e9dbda4c768bf9963a4ec168d6a613dca197995
+ms.sourcegitcommit: c5cba0f4bf01eb9a9492e4e3fb6cd756f0737057
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834278"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "40251640"
 ---
 # <a name="what-are-app-protection-policies"></a>Mik azok az alkalmazásvédelmi szabályzatok?
 
@@ -46,7 +46,7 @@ Az alkalmazásvédelmi szabályzatok olyan eszközökön futó alkalmazáshoz ko
 - **Nincsenek regisztrálva mobileszköz-felügyeleti (MDM) megoldásban:** A kategóriába tartozó eszközök általában olyan, alkalmazottak által tulajdonolt eszközök, amelyek nincsenek az Intune-ban vagy más MDM-megoldásban kezelve vagy regisztrálva.
 
 > [!IMPORTANT]
-> Mobilalkalmazás-kezelési házirendeket hozhat létre az Office 365-szolgáltatásokhoz kapcsolódó Office-mobilalkalmazások számára. Az alkalmazásvédelmi szabályzatok a helyszíni Exchange-hez vagy a SharePoint-szolgáltatásokhoz kapcsolódó alkalmazások esetében nincsenek támogatva.
+> Mobilalkalmazás-kezelési házirendeket hozhat létre az Office 365-szolgáltatásokhoz kapcsolódó Office-mobilalkalmazások számára. Emellett a helyszíni Exchange-postafiókok hozzáférését is védheti, az iOS és Android rendszerű Outlookhoz készült Intune alkalmazásvédelmi szabályzatok létrehozásával és a hibrid modern hitelesítés engedélyezésével. A funkció használata előtt győződjön meg arról, hogy megfelel az [iOS-es és Androidos Outlook követelményeinek](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx). Az alkalmazásvédelmi szabályzatok a helyszíni Exchange-hez vagy a SharePoint-szolgáltatásokhoz kapcsolódó egyéb alkalmazások esetében nem támogatottak.
 
 **Az alkalmazásvédelmi szabályzatok fontos előnyei a következők:**
 

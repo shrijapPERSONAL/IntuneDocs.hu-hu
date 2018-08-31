@@ -14,12 +14,12 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a6a5bbdd5c8cd155dad99b3a8fcceabb2ff1f6f8
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 8b132c0853bf9d591f16610f1e7a714b6288491b
+ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225408"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42751650"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Intune-licencek hozzárendelése a felhasználókhoz, hogy regisztrálhassák az eszközöket
 
@@ -61,7 +61,7 @@ További tudnivalók az SDS-ről: [A School Data Sync áttekintése](https://sup
 
 ## <a name="how-user-and-device-licenses-affect-access-to-services"></a>A felhasználói és eszközlicencek hatása a szolgáltatásokhoz való hozzáférésre
 * Azok a **felhasználók**, akiknek felhasználói licencet oszt ki, elérhetik és használhatják az online szolgáltatásokat és a kapcsolódó szoftvereket (köztük a System Centert) az alkalmazások és legfeljebb 15 eszköz felügyelete céljából.
-* Azok az **eszközök**, amelyeknek eszközlicencet oszt ki, tetszőleges számú felhasználó számára lehetővé teszik, hogy elérhessék és használhassák az online szolgáltatásokat és a kapcsolódó szoftvereket (köztük a System Centert).
+* Bármely eszközhöz vásárolhat a felhasználói licencektől különálló licenceket. Az eszközlicenceket nem szükséges hozzárendelni az eszközökhöz. Minden, az online szolgáltatásokhoz és a kapcsolódó szoftverekhez (köztük a System Centerhez) hozzáférő és azokat használó eszköznek rendelkeznie kell egy eszközlicenccel.
 * Ha egy eszköz több felhasználó is használ, akkor mindegyiknek eszközlicencre, vagy minden felhasználónak felhasználói licencre van szüksége.
 
 ## <a name="understanding-the-type-of-licenses-you-have-purchased"></a>A megvásárolt licencek típusainak ismertetése

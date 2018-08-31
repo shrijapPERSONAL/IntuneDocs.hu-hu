@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 4150a513e909ccfd44db23eee9b5990d97d8d670
-ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
+ms.openlocfilehash: 108382a04095330745ca82dc1d70ab48e70362e5
+ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/23/2018
-ms.locfileid: "36329875"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40252451"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Segítségnyújtás a céges felhasználóknak a hibaelhárítási portál használatával
 
@@ -65,7 +65,7 @@ A **Hibaelhárítás** panel használatával felhasználói információkat teki
 | 2.   | Felhasználó kiválasztása  | Az aktuálisan kiválasztott felhasználó neve. Új felhasználó kiválasztásához kattintson a **Felhasználó váltása** lehetőségre.       |
 | 3.   | Felhasználó állapota  | Megjeleníti a felhasználó Intune-licencének állapotát, az eszközök számát, az egyes eszközök megfelelőségét, az alkalmazások számát és az alkalmazások megfelelőségét.       |
 | 4.   | Felhasználói adatok  | A listából kiválaszthatja a panelen megtekintendő információkat. <br>Az alábbiak közül választhat: <ul><li>Mobilalkalmazásokban<li>Alkalmazásvédelmi szabályzatok<li>Megfelelőségi szabályzatok<li> Konfigurációs szabályzatok</ul>      |
-| 5.   | Csoporttagság  | Yadda       |
+| 5.   | Csoporttagság  | Megjeleníti azokat csoportokat, amelyeknek a kiválasztott felhasználó jelenleg a tagja.       |
 
 ## <a name="mobile-apps-reference"></a>Mobilalkalmazások információi
 

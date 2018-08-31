@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 050660b4da609d8e6c0dbf969eb71aa79945262a
-ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
+ms.openlocfilehash: daaed6ded0c20551567a63890d324abcbaaf41d7
+ms.sourcegitcommit: 9f99b4a7f20ab4175d6fa5735d9f4fd6a03e0d3a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39254535"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "40251807"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>iOS-alkalmazások előkészítése alkalmazásvédelmi szabályzatokkal való felügyeletre az Intune alkalmazásburkoló eszközével
 
@@ -172,19 +172,14 @@ Az Intune által burkolt alkalmazások terjesztéséhez az alábbiakra van szük
 
 3. A licencszerződés elfogadásához válassza az **Elfogadom** lehetőséget, amivel a csomagot az adott számítógéphez rendeli.
 
-4.  Nyissa meg a **IntuneMAMPackager** csomagot, és mentse a tartalmát a macOS-számítógépre. Most már készen áll az alkalmazásburkoló eszköz futtatására.
-
-> [!NOTE]
-> Előfordulhat, hogy az Intune MAM Packager külön csatlakozik a macOS-számítógépéhez, ami „A fájl nem található” típusú hibát eredményez a burkolóparancsok futtatásakor. Így az IntuneMAMPackager mappa tartalmának áthelyezésével a csomagoló útvonala elérhető lesz a burkolás során.
-
 ## <a name="run-the-app-wrapping-tool"></a>Az alkalmazásburkoló eszköz futtatása
 
 ### <a name="use-terminal"></a>Terminál használata
 
-Indítsa el a macOS Terminal programját, és keresse meg azt a mappát, ahová az alkalmazásburkoló eszköz fájljait mentette. A végrehajtható eszköz neve IntuneMAMPackager, és az IntuneMAMPackager/Contents/MacOS könyvtárban található. A következőképpen futtassa a parancsot:
+Nyissa meg a macOS terminált, és futtassa az alábbi parancsot:
 
 ```
-./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
+/Volumes/IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
 ```
 
 > [!NOTE]
@@ -405,6 +400,29 @@ Az alkalmazásburkoló eszköz használata során kövesse az alábbi biztonság
 -   A fájlfeltöltési párbeszédpanelt tartalmazó iOS-alkalmazások lehetővé tehetik a felhasználóknak, hogy megkerüljék az alkalmazáshoz megadott kivágási, másolási és beillesztési korlátozásokat. A felhasználók a fájlfeltöltési párbeszédpanelt használhatják például az alkalmazásadatok képernyőfelvételének feltöltéséhez.
 
 -   Amikor egy burkolt alkalmazásból figyeli az eszközükön lévő dokumentummappát, láthatja az .msftintuneapplauncher nevű mappát. Ha módosítja vagy törli ezt a mappát, az hatással lehet a korlátozott alkalmazások megfelelő működésére.
+
+## <a name="intune-app-wrapping-tool-for-ios-with-citrix-mdx-mvpn"></a>Intune alkalmazásburkoló eszköz iOS rendszerhez Citrix MDX mVPN-nel
+Ez a funkció az iOS rendszerre készült Citrix MDX alkalmazásburkolóval való integrációt jelenti. Az integráció egyszerűen egy további, opcionális parancssori jelzőt (`-citrix`) az általános Intune alkalmazásburkoló eszközökhöz.
+
+### <a name="requirements"></a>Követelmények
+
+A `-citrix` jelző használatához telepíteni kell az adott macOS-eszközre az [iOS rendszerre készült Citrix MDX alkalmazásburkolót](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html) is. A letöltések a [Citrix XenMobile letöltései](https://www.citrix.com/downloads/xenmobile/) között találhatók, és a Citrix ügyfelei számára csak bejelentkezés után érhetők el. Győződjön meg arról, hogy az alapértelmezett helyre van telepítve: `/Applications/Citrix/MDXToolkit`. 
+
+> [!NOTE] 
+> Az Intune és a Citrix integrációját csak az iOS 10 és újabb rendszerű eszközök támogatják.
+
+### <a name="use-the--citrix-flag"></a>A `-citrix` jelző használata
+Egyszerűen futtassa az általános alkalmazásburkoló parancsot, és fűzze hozzá a `-citrix` jelzőt. A `-citrix` jelző jelenleg nem használ argumentumokat.
+
+**Használat formátuma**:
+```
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioing profile paths>] [-citrix]
+```
+
+**Példaparancs**:
+```
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
+```
 
 ## <a name="getting-logs-for-your-wrapped-applications"></a>Naplófájlok beszerzése burkolt alkalmazásokhoz
 Hibaelhárítás során az alábbi lépésekkel szerezhet be naplófájlokat a burkolt alkalmazásaihoz.

@@ -14,12 +14,12 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 351282634d6c6e087456e61e9fd967b70f9cf515
-ms.sourcegitcommit: c109ea6e9b7104630cd767aa27c5f7789286a906
+ms.openlocfilehash: 9d4dbdb3aa07020aa027dc1a4a1b2edcefefb4ca
+ms.sourcegitcommit: 77ed48ab52b55e92ceaa89e9edf53b892fc62adb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39450790"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "40252595"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Üzletági alkalmazások felkészítése az alkalmazásvédelmi szabályzatok használatára
 
@@ -28,7 +28,7 @@ ms.locfileid: "39450790"
 Az Intune alkalmazásburkoló eszközével vagy az Intune App SDK-val engedélyezheti, hogy az alkalmazások alkalmazásvédelmi szabályzatokat használjanak. Az alábbi információkkal többet megtudhat erről a két módszerről és arról, mikor érdemes használni azokat.
 
 ## <a name="intune-app-wrapping-tool"></a>Intune alkalmazásburkoló eszköz
-Az alkalmazásburkoló eszköz főleg belső üzletági (LOB) alkalmazásokhoz készült. Az eszköz egy parancssori alkalmazás, amely egy burkolót hoz létre az alkalmazás körül, amely lehetővé teszi az alkalmazás Intune alkalmazásvédelmi szabályzatokkal való kezelését.
+Az alkalmazásburkoló eszköz főleg **belső** üzletági (LOB) alkalmazásokhoz készült. Az eszköz egy parancssori alkalmazás, amely egy burkolót hoz létre az alkalmazás körül, amely lehetővé teszi az alkalmazás Intune alkalmazásvédelmi szabályzatokkal való kezelését. Egy független szoftverszállító (ISV) által biztosított alkalmazás védelme esetén fontos tisztázni, hogy az ISV támogatja-e a becsomagolt alkalmazást.
 
 Nincs szüksége a forráskódra az eszköz használatához, de aláíró hitelesítő adatokra igen. További információ az aláíró hitelesítő adatokról: [Intune blog](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Az alkalmazásburkoló eszköz dokumentációja az [Android alkalmazásburkoló eszköz](app-wrapper-prepare-android.md) és az [iOS alkalmazásburkoló eszköz](app-wrapper-prepare-ios.md) című cikkekben található.
 
@@ -48,7 +48,7 @@ Az alkalmazásvédelmi szabályzatok támogatásához készült alkalmazásburko
 
 |**Alkalmazásburkoló eszköz** | **Xamarin** |**Cordova** |
 |------|----|----|
-|**iOS** |Nem – használja az [Intune App SDK Xamarin-kötéseket](app-sdk-xamarin.md).|Igen|
+|**iOS** |Igen|Igen|
 |**Android**|Nem – használja az [Intune App SDK Xamarin-kötéseket](app-sdk-xamarin.md).|Igen|
 
 ## <a name="intune-app-sdk"></a>Intune App SDK

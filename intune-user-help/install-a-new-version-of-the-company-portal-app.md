@@ -15,30 +15,32 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 3176f09a7565a17230aeb7a9f44b14490264b2bd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: b939cd175f7a548b37ebec985a189d7e3119aac7
+ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016441"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42903123"
 ---
 # <a name="how-to-update-the-company-portal-app"></a>A Céges portál alkalmazás frissítése
 
-Ha a Vállalati portál alkalmazás verziója már nem támogatott, vagy elérhető egy újabb Vállalati portál-verzió, akkor az alkalmazást frissítenie kell az újabb verzióra. Kövesse az eszköze típusának megfelelő lépéseket.
+Ez a cikk azt ismerteti, hogyan frissítheti a Céges portál alkalmazást, ha:  
+* Elérhetővé válik a Céges portál alkalmazás újabb verziója.
+* A Céges portál alkalmazás telepített verziója már nem támogatott.
+
+Az alábbi lépések ismertetik az alkalmazás frissítésének menetét Android, iOS és Windows rendszerű eszközökön.    
 
 ## <a name="update-the-intune-company-portal-app-on-your-android-device"></a>Az Intune Vállalati portál alkalmazás frissítése Android-eszközön
 
-A Play Áruház riasztást küld, ha elérhető a Vállalati portál új verziója. A Vállalati portál alkalmazás maga nem jelenít meg figyelmeztetést. Az eszköz frissítéséhez kövesse a riasztásban megjelenő utasításokat.
+A Play Áruház riasztást küld, ha elérhető a Vállalati portál új verziója. A Vállalati portál alkalmazás maga nem jelenít meg figyelmeztetést. Válassza ki a riasztást, és kövesse a benne foglalt utasításokat az eszköz frissítéséhez.  
 
 ## <a name="update-the-intune-company-portal-app-on-your-ios-device"></a>Az Intune Vállalati portál alkalmazás frissítése IOS-eszközön
 
 Ha új verzió érhető el, az alkalmazás frissítési lehetősége megjelenik a telepített alkalmazások listájában.  
 
-A Vállalati portál alkalmazás frissítése:
-
 1. Nyissa meg az App Store-t, és keressen rá az **intune** szóra.
 
-2. Ha megtalálja az alkalmazást, koppintson a **Frissítés** gombra az alkalmazás nevétől jobbra.
+2. Ha megtalálja az alkalmazást, koppintson a **Frissítés** gombra.
 
 ## <a name="update-the-intune-company-portal-app-on-your-windows-device"></a>Az Intune Vállalati portál alkalmazás frissítése Windows-eszközön
 
