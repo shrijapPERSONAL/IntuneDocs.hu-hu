@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 345b62c115525fb3be2a2bcfdffc5388df7417af
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 9e6935dd5f25e14a5cef44d899c647d2927ebbbb
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30751747"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147077"
 ---
 # <a name="performing-actions-on-a-macos-device-managed-by-jamf"></a>Műveletek elvégzése a JAMF által felügyelt macOS-eszközökön
 
@@ -34,4 +34,4 @@ __Teendők az „AccountNotOnboarded” vagy „Az eszköz már regisztrálva va
 
 Ha a Céges portál alkalmazást megnyitva az „AccountNotOnboarded” üzenet jelenik meg, akkor zárja be a Céges portál alkalmazást, és válassza az **Alkalmazások** > **Önkiszolgáló** lehetőséget. Itt telepítenie kell a cége egy eszközregisztrációs szabályzatát. Kattintson a szabályzatra a telepítéséhez, majd nyissa meg ismét a Céges portál alkalmazást.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatási szolgálatához. A kapcsolatfelvételi adatait megtalálja a [Munkahelyi portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatási szolgálatához. A kapcsolatfelvételi adatait megtalálja a [Munkahelyi portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

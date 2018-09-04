@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/18/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,20 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f22509d780ec4d877e7e780109b34776b269c8b3
-ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
+ms.openlocfilehash: 0ea421c63cbb6c2228ea94bf82d795ece01f46ac
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34308857"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150324"
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>Eltávolíthatja az eszközét a vállalati portálról
 
-Ha úgy dönt, hogy az eszköz a vállalat vagy szervezet által végzett felügyeletére nincs már szükség a továbbiakban, akkor az eszközt a [Céges portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog) el is távolíthatja a Céges portálról. Ha eltávolítja az eszközét, az nem jelenik meg többé a Céges portál eszközlistájában. Emellett megszűnhet a hozzáférése a szervezeti adatokhoz, alkalmazások és levelezéshez.
+Ha úgy dönt, hogy az eszköz a vállalat vagy szervezet által végzett felügyeletére nincs már szükség a továbbiakban, akkor az eszközt a [Céges portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980) el is távolíthatja a Céges portálról. Ha eltávolítja az eszközét, az nem jelenik meg többé a Céges portál eszközlistájában. Emellett megszűnhet a hozzáférése a szervezeti adatokhoz, alkalmazások és levelezéshez.
 
 Az eszköz eltávolítása:
 
-1. A [Céges portál webhelyen](https://portal.manage.microsoft.com#HelpDeskDialog) koppintson a __menü__ gombra ![A menügomb képe, három vízszintes vonal párhuzamosan elhelyezve egymás alá.](/Intune/whats-new/media/CP_hamburger_menu.png), majd válassza az __Saját eszközök__ menüpontot.
+1. A [Céges portál webhelyen](https://go.microsoft.com/fwlink/?linkid=2010980) koppintson a __menü__ gombra ![A menügomb képe, három vízszintes vonal párhuzamosan elhelyezve egymás alá.](/Intune/whats-new/media/CP_hamburger_menu.png), majd válassza az __Saját eszközök__ menüpontot.
 
    ![Képernyőkép a Céges portál webhelyéről, amelyen bal oldalt egy kibontott menü látható Kezdőlap, Minden alkalmazás, Saját eszközök, Segélyszolgálat és Kijelentkezés gombokkal.](/media/iwp-expanded-sidebar.png)
 
@@ -44,4 +44,4 @@ Az eszköz eltávolítása:
 
 4. Olvassa el a figyelmeztető üzenetet, és koppintson az **Eltávolítás** lehetőségre az eszköz Vállalati portálról való eltávolításához.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

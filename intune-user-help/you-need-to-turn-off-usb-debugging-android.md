@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 2f1b71513ad5e22f62c783ac8d305acb9eac4cca
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c377c2a4e9640443eb38a85b2e1806c9d9e64a82
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021780"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147193"
 ---
 # <a name="you-need-to-turn-off-usb-debugging"></a>Ki kell kapcsolnia az USB-hibakeresést
 
@@ -30,4 +30,4 @@ Ehhez a **Beállítások** > **Fejlesztői beállítások** menüben ki kell kap
 
 Az **USB-hibakeresés** kikapcsolása után néhány percet várni kell, majd az Android-eszköz a szokásos módon használható a vállalati vagy iskolai adatok elérésére.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b12dcafa4ff7d45dd1d41c0311a2658b08acf12e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 19128e9de06239fb82266654fe038b4be9ce7d41
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31019857"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149781"
 ---
 # <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>Az androidos eszközhöz hiányzik egy, a cég informatikai támogató szolgálata által kért tanúsítvány
 
@@ -37,9 +37,9 @@ A probléma megoldásához és a szükséges tanúsítvány beszerzéséhez hajt
 
 ## <a name="identify-the-missing-certificate-by-looking-on-a-company-or-school-pc"></a>Azonosítsa a hiányzó tanúsítványt azáltal, hogy megtekinti egy vállalati vagy iskolai számítógépen
 
-1. Nyissa meg egy számítógépen az Internet Explorert. Ha nincs erre a célra használható számítógépe, forduljon a cég informatikai támogató szolgálatához. A cég informatikai támogató szolgálatának elérhetőségét a [Céges portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog) találja.
+1. Nyissa meg egy számítógépen az Internet Explorert. Ha nincs erre a célra használható számítógépe, forduljon a cég informatikai támogató szolgálatához. A cég informatikai támogató szolgálatának elérhetőségét a [Céges portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980) találja.
 
-2. Lépjen a [Céges portál webhelyére](https://portal.manage.microsoft.com#HelpDeskDialog), és jelentkezzen be a munkahelyi vagy iskolai fiókjával.
+2. Lépjen a [Céges portál webhelyére](https://go.microsoft.com/fwlink/?linkid=2010980), és jelentkezzen be a munkahelyi vagy iskolai fiókjával.
 
 3. A böngésző címsorának jobb szélén válassza az alábbi képernyőképen látható, lakat alakú szimbólumot.
 
@@ -71,4 +71,4 @@ A probléma megoldásához és a szükséges tanúsítvány beszerzéséhez hajt
 
 7. Nyissa ismét meg a Céges portál alkalmazást. Ekkor már be kell, hogy tudjon jelentkezni a Céges portál alkalmazásba. Ha segítségre van szüksége, lépjen kapcsolatba a cég informatikai támogató szolgálatával.
 
-Ha ugyanazt a „Hiányzó tanúsítvány” üzenetet látja, mint amelyik fentebb is látható, és már követte a fenti lépéseket, akkor valószínűleg egy másik tanúsítvány is van, amelyet a cég informatikai támogató szolgálatának segítségével telepíteni kell. Kérje a cég informatikai támogató szolgálatának segítségét a [Céges portál webhelyen](https://portal.manage.microsoft.com#HelpDeskDialog) található elérhetőségeken.
+Ha ugyanazt a „Hiányzó tanúsítvány” üzenetet látja, mint amelyik fentebb is látható, és már követte a fenti lépéseket, akkor valószínűleg egy másik tanúsítvány is van, amelyet a cég informatikai támogató szolgálatának segítségével telepíteni kell. Kérje a cég informatikai támogató szolgálatának segítségét a [Céges portál webhelyen](https://go.microsoft.com/fwlink/?linkid=2010980) található elérhetőségeken.

@@ -18,12 +18,12 @@ ROBOTS: ''
 ms.reviewer: vadona
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ff8a2650b0264662084a4bf3a8186808f5980faf
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 40cc6ec2daab92a226051e2d9bc11d7ac0fb105b
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31013976"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150463"
 ---
 # <a name="you-need-to-update-your-android-device-to-install-the-outlook-app"></a>Az Outlook alkalmazás telepítéséhez frissítenie kell Android-eszközét
 
@@ -36,4 +36,4 @@ Előfordulhat, hogy az alkalmazás telepítése sikertelen, különösen ha az e
 
 Koppintson a **Beállítások** menüre, majd a **Frissítés** vagy a **Rendszerfrissítés** lehetőségre.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 64a3a4710b8841dcc80c159d0622735fdd862e7a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 604c08e771548b9cd071ae87ba9cdcb3f9bb2d3a
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31031668"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147468"
 ---
 # <a name="how-to-turn-off-microsoft-data-collection"></a>Az adatok Microsoft általi gyűjtésének kikapcsolása
 
@@ -30,4 +30,4 @@ A Microsoft automatikusan gyűjt bizonyos adatokat a termékeiről és szolgált
 
 Ha szeretné kikapcsolni ezeknek a használati adatoknak a gyűjtését a macOS-eszközén, nyissa meg a Céges portál alkalmazást, majd válassza a **Céges portál** menüt. Válassza a **Beállítások** lehetőséget, majd a **Használati adatok küldése a Microsoftnak** beállításnál törölje a jelet az **Adatok gyűjtésének engedélyezése a Microsoftnak** jelölőnégyzetből.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 522a300760fe4446fc6e1ff211763279ba4fc7bf
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c4cce70abac079ab1761994ba91040c16375e013
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021183"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149755"
 ---
 # <a name="your-android-device-is-rooted-so-you-cant-connect"></a>Az androidos eszközt rootolták, ezért a felhasználó nem tud csatlakozni
 
@@ -34,6 +34,6 @@ Számos gyakori módszer létezik, amely eszköze rootolásához vezet:
 
 - Előfordulhat, hogy telepített egy alkalmazást az eszközön, amelyet a rootolást észlelő szoftver biztonsági kockázatnak tekint. Ha közvetlenül az alkalmazás telepítését követően jelent meg az üzenet, próbálja meg eltávolítani az alkalmazást.
 
-- Az eszköz gyártója telepített egy olyan szoftvert az eszközön, amelyet a rootolást észlelő szoftver biztonsági kockázatnak tekint. Ebben az esetben további segítségért forduljon a cég informatikai támogatási szolgálatához. Az elérhetőségét keresse meg a [Munkahelyi portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+- Az eszköz gyártója telepített egy olyan szoftvert az eszközön, amelyet a rootolást észlelő szoftver biztonsági kockázatnak tekint. Ebben az esetben további segítségért forduljon a cég informatikai támogatási szolgálatához. Az elérhetőségét keresse meg a [Munkahelyi portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).
 
 Ha Ön rootolta az eszközt, fordítsa vissza a folyamatot, és állítsa vissza az eszköz eredeti állapotát.

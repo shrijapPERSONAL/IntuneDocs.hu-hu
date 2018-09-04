@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ea17263ebd6e836cad154ff2b67229c1c3ae0ed6
-ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
+ms.openlocfilehash: e1bf702dcc8f4f1163c26d25e42edf0a00825c81
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/09/2018
-ms.locfileid: "33915494"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146519"
 ---
 # <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>Naplók küldése a cég informatikai támogató szolgálatának a Windows 10 céges portál alkalmazásából
 
@@ -39,4 +39,4 @@ Ha Windows 10-es eszközén hibaüzenet jelenik meg a Céges portál alkalmazás
 
 Szükség lehet [naplók küldésére a Gépház alkalmazásból](send-logs-to-your-it-admin-settings-windows.md), amellyel segítséget nyújthat a cég informatikai támogatási szolgálatának az esetleges problémák megoldásához.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

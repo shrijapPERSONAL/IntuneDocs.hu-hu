@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8b433a20aaa2ca25f54d051e3bed58989ef9dec7
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9c9532cc58b392aecb821ae38e8e4d284d971b7d
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017036"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146299"
 ---
 # <a name="how-to-enable-user-access-control"></a>A felhasználói fiókok felügyeletének engedélyezése
 
@@ -34,4 +34,4 @@ A felhasználói fiókok felügyeletének beállításai a következőképpen v�
 2. Kattintson a **Biztonság és karbantartás** > **Felhasználói fiókok felügyelete beállításainak módosítása** elemre.
 3. Az **Itt adható meg, hogy mikor jelenjen meg értesítés a számítógépen végrehajtott változtatásokról** oldalon húzza a csúszkát a két legfelső, a **Mindig kérek értesítést** feliratúhoz legközelebbi beosztás egyikéhez.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Munkahelyi portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Munkahelyi portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

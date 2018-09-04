@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 71d90baeb34f7bb0a60bb4ce4f08d2bddf5edcd2
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d08dba92060fdf1dd72e34201dd88674d26f42ef
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015761"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147284"
 ---
 # <a name="turn-off-microsoft-usage-data-collection"></a>A használatra vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása
 
@@ -30,4 +30,4 @@ A Microsoft automatikusan gyűjt bizonyos adatokat a termékeiről és szolgált
 
 Ha szeretné kikapcsolni ezeknek az adatoknak a gyűjtését az Android-eszközén, nyissa meg a Céges portál alkalmazás **Használati adatok** beállítását.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

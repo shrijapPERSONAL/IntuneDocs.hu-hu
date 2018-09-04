@@ -17,19 +17,19 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2a2c5c60f22aca6a9c989281ef2c5cc9e0c66911
-ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
+ms.openlocfilehash: 89be04405f76c290c252c382fbee207176e7180d
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39117854"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150307"
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>Naplók elküldése a cég informatikai támogatási szolgálatának USB-kábelen keresztül
 
 Ha androidos eszközén hibaüzenet jelenik meg a Céges portál alkalmazás használata során, a probléma megoldásához a hibával kapcsolatos információkat e-mailben elküldheti a cég informatikai támogatási szolgálatának. Ezek az információk az eszközön tárolt, _diagnostic log_ (diagnosztikai napló) nevű speciális dokumentumban találhatók.
 
 > [!Note]
-> A kezdés előtt ellenőrizze, hogy kéznél van-e a cég informatikai támogatási szolgálatának e-mail-címe. Ez a [Céges portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog) vagy a Céges portál alkalmazásban található meg.
+> A kezdés előtt ellenőrizze, hogy kéznél van-e a cég informatikai támogatási szolgálatának e-mail-címe. Ez a [Céges portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980) vagy a Céges portál alkalmazásban található meg.
 
 1. A hibaképernyőn koppintson az **Adatok küldése** lehetőségre. A naplóküldési módszer kiválasztására szolgáló üzenet megjelenésekor azt a módszert válassza ki, amely menti a fájlokat az eszközre.
 
@@ -39,4 +39,4 @@ Ha androidos eszközén hibaüzenet jelenik meg a Céges portál alkalmazás has
 
 4. Válassza ki a fájlokat és csatolja őket egy e-mailhez. Küldje ezt az e-mailt a cég informatikai támogatási szolgálatának.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

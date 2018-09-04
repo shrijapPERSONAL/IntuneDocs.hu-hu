@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 86a41284b05d73e9cbf3833fa85757ca3cbf7f27
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: b1f303edec625be2b321e95952a5c8d00aa3254c
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31014010"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149967"
 ---
 # <a name="how-to-install-your-companys-virtual-private-network-vpn"></a>A vállalat virtuális magánhálózatának (VPN-jének) telepítése
 
@@ -35,4 +35,4 @@ Ha a cég informatikai támogatási szolgálata VPN-alkalmazást konfigurált, h
 3.  Koppintson **A vállalati VPN-profil telepítéséhez koppintson ide** elemre, és kövesse az utasításokat. Előfordulhat, hogy a telepítési lépések némileg eltérnek – attól függően, hogy melyik VPN-szolgáltatót használja a vállalata.
 
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

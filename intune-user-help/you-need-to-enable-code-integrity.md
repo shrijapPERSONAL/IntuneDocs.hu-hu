@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6a106220a2a51eeed7850ac967594818981afca4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7e63a8578779d6930c2691066cd784a18126b4a2
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31014945"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150184"
 ---
 # <a name="you-need-to-enable-code-integrity"></a>Engedélyeznie kell a Kódintegritást
 
@@ -35,4 +35,4 @@ Ha a rendszere aktívan használja a Biztonságos rendszerindítást, a Kódinte
 
 Folytatás esetén tekintse meg a [Biztonságos rendszerindítás letiltása](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) oldalon a „Biztonságos rendszerindítás ismételt engedélyezése” című szakaszt, és kísérelje meg saját kezűleg engedélyezni a Biztonságos rendszerindítást.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

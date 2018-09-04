@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: dd529c793ca1c97a77eef973c146eeea9c2e8594
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: fdafb646f7b6c3d8910bf018071a72af49a70249
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015829"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147140"
 ---
 # <a name="how-to-protect-your-windows-device-using-encryption"></a>A Windows-eszközök védelme titkosítással
 
@@ -40,4 +40,4 @@ Asztali eszközt az alábbi utasításokat követve titkosíthat.
 
 2.  Kattintson a **BitLocker szolgáltatás bekapcsolása** hivatkozásra, és kövesse az utasításokat az összes meghajtó titkosításához.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Munkahelyi portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Munkahelyi portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).
