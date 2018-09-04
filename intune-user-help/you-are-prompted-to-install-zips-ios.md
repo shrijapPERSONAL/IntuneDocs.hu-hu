@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 47cb816f0a032d8e01fcdd7ff025d36ba1354f3d
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: cab09c0a127c8d3bab2a135e1bf46f6beb478d22
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30754977"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150769"
 ---
 # <a name="install-zimperium-zips-on-your-ios-device"></a>A Zimperium zIPS alkalmazás telepítése iOS-eszközön
 
@@ -46,4 +46,4 @@ Ha a Zimperium zIPS biztonsági fenyegetést talál az eszközén, megjeleníti 
 
 Egyes esetekben előfordulhat, hogy a telepítés Öntől független technikai okokból meghiúsul. Ha ez történik, próbálja meg telepíteni a Zimperium zIPS alkalmazást [az App Store-ból, manuálisan](https://itunes.apple.com/app/zimperium-zips/id1030924459).
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

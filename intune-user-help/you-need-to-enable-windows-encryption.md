@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3f257064aec862c1a7fd7f085769c95c13499cdb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: ab2642127b635e4830b6cf7f5e8cd820c61904ba
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016883"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149013"
 ---
 # <a name="you-need-to-enable-encryption"></a>Engedélyezze a titkosítást
 
@@ -30,4 +30,4 @@ Egy eszköz titkosításakor a rajta lévő információt egy védelmi kódréte
 
 A BitLocker egy olyan szoftver, amely titkosítja a meghajtót és segít megvédeni az adatokat. Az [itteni utasítások](https://gallery.technet.microsoft.com/How-to-turn-on-BitLocker-34294d3d) végrehajtásával engedélyezheti a BitLockert Windows 10-es eszközökön.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

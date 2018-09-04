@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 30aefc190aed3b8ef280fd0f652e02e401e68fae
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: c6be5c12bc5dbb711bd8d980ec16d06d7dd2482b
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30754025"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148396"
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-ios-device"></a>A Symantec Endpoint Protection Mobile alkalmazás telepítése iOS-eszközön
 
@@ -46,5 +46,5 @@ Ha a SEP Mobile biztonsági fenyegetést talál eszközén, megjeleníti a probl
 
 Egyes esetekben előfordulhat, hogy a telepítés Öntől független technikai okokból meghiúsul. Ilyenkor próbálja a SEP Mobile alkalmazást [manuálisan telepíteni az App Store-ból](https://itunes.apple.com/app/sep-mobile/id695620821).
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).
 

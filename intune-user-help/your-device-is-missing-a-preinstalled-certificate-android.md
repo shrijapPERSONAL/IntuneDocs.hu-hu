@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 50864d3af4383a95c037868a9f9b9a61e1eb8172
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d51b141b09090119f7c9711ffd56d6b382f6e3dc
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31019313"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147951"
 ---
 # <a name="your-android-device-is-missing-a-certificate-that-usually-comes-installed-on-your-phone"></a>Az androidos eszközhöz hiányzik egy, rendszerint a telefonon előre telepített tanúsítvány
 
@@ -44,9 +44,9 @@ A probléma megoldásához a megfelelő tanúsítványra lesz szüksége a [Digi
 
 5. Zárja be a böngészőt és a Céges portál alkalmazást.
 
-6. Nyissa ismét meg a Céges portál alkalmazást. Ekkor már be kell, hogy tudjon jelentkezni a Céges portál alkalmazásba. Ha még mindig nem tudja használni a Céges portál alkalmazást, további utasításokért lépjen kapcsolatba a cég informatikai támogató szolgálatával a [Céges portál webhelyen](https://portal.manage.microsoft.com#HelpDeskDialog) megadott elérhetőségeken.
+6. Nyissa ismét meg a Céges portál alkalmazást. Ekkor már be kell, hogy tudjon jelentkezni a Céges portál alkalmazásba. Ha még mindig nem tudja használni a Céges portál alkalmazást, további utasításokért lépjen kapcsolatba a cég informatikai támogató szolgálatával a [Céges portál webhelyen](https://go.microsoft.com/fwlink/?linkid=2010980) megadott elérhetőségeken.
 
 >[!NOTE]
 > Ha a tanúsítvány telepítése nem oldja meg a problémát és egy újabb „hiányzó tanúsítvány” hibaüzenetet kap, további lépések szükségesek a [hiányzó tanúsítvány telepítéséhez](your-device-is-missing-an-IT-required-certificate-android.md).
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

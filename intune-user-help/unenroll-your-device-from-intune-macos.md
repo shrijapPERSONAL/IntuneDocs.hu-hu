@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c61b0d62ea2b12712e47e0e83b21cc40b7d1e9ef
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 9cc2cc35a29949e78e723026865c057fec548bc3
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30752954"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150732"
 ---
 # <a name="unenroll-your-macos-device-from-intune"></a>macOS-eszköz regisztrációjának törlése az Intune-ból
 
@@ -50,4 +50,4 @@ Az eszköz regisztrációjának Intune-ból való törlésekor a következők t�
 
 -   Előfordulhat, hogy a rendszer eltávolítja a céges levelezéshez való hozzáférést az eszközről.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

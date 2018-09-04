@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 085d6c9e21cff3ef79097ac0cc2e3a2151c5b391
-ms.sourcegitcommit: d40bfb6af66f2ce7026c0151ace98ec23f1cf76e
+ms.openlocfilehash: 5d77a4c2b5d55a3cd6086af61de0804afc3e5245
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33927321"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149618"
 ---
 # <a name="install-apps-on-your-device"></a>Alkalmazások telepítése az eszközön
 Alkalmazások telepítése az eszközön Windows Céges portál alkalmazásból.
@@ -41,4 +41,4 @@ Alkalmazások telepítése az eszközön Windows Céges portál alkalmazásból.
 
  A cég méretétől függően a Céges portálról az Office többféle verziója is letölthető. További információ a Windows-eszközök számára elérhető Office-csomagról: [Az Office 365 telepítése Windows-eszközön](./install-office-windows.md).
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

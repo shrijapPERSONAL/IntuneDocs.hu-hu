@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ecb0729a2c6911fa15dd99ad4abe990859c912ad
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 2a5f383eef6f380711578cb79dfd8006ca6f96e1
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755232"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150666"
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Felügyelt eszközök használata a munkavégzéshez
 A Microsoft Intune olyan szoftveres megoldás, amely lehetővé teszi a cégek számára a különböző eszközök (például okostelefonok, táblagépek és személyi számítógépek), az alkalmazások, valamint az e-mailhez hasonló más vállalati erőforrások felügyeletét. Ezáltal a rendszer módot ad rá, hogy az alkalmazottak bárhonnan, bármilyen eszközről elérhessék a munkahelyi adatokat, ugyanakkor segít megőrizni a vállalati adatok biztonságát.
@@ -36,7 +36,7 @@ Munkahelye ügyfélszolgálata láthatja a munkával kapcsolatos adatokat, de a 
 A Vállalati portált kétféleképpen szerezheti be:
 
 - Telepítheti az eszközére a Vállalati portál alkalmazást. A Céges portál alkalmazást általában az eszköz alkalmazásáruházából lehet telepíteni, de a cég informatikai támogató szolgálata is telepítheti Önnek azt.
-- Megnyithatja a cég informatikai támogató szolgálata által beállított [Céges portál webhelyet](https://portal.manage.microsoft.com#HelpDeskDialog).
+- Megnyithatja a cég informatikai támogató szolgálata által beállított [Céges portál webhelyet](https://go.microsoft.com/fwlink/?linkid=2010980).
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Az alkalmazás és a webhely közötti különbség
 A Vállalati portál alkalmazás és webhely között van néhány kisebb eltérés, de a legtöbb feladatot bármelyiken elvégezheti. Néhány olyan feladat, amelyet elvégezhet:
@@ -102,4 +102,4 @@ A Microsoft azt javasolja, hogy először próbálja meg saját maga megoldani a
 - [A macOS-eszközök gyakori problémáinak elhárítása](troubleshoot-your-device-macos.md)
 - [A Windows-eszközök gyakori problémáinak elhárítása](troubleshoot-your-device-windows.md)
 
-Alább hozzászólva segítséget kérhet, de mivel minden munkahely különböző követelményeket támaszt, előfordulhat, hogy nem mindig tudjuk megválaszolni a felmerülő kérdéseket. A leggyorsabb és leginkább megfelelő választ valószínűleg a cég informatikai támogató szolgálatához fordulva fogja kapni. A rendszergazdák elérhetőségét fel kell tüntetni a [Céges portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+Alább hozzászólva segítséget kérhet, de mivel minden munkahely különböző követelményeket támaszt, előfordulhat, hogy nem mindig tudjuk megválaszolni a felmerülő kérdéseket. A leggyorsabb és leginkább megfelelő választ valószínűleg a cég informatikai támogató szolgálatához fordulva fogja kapni. A rendszergazdák elérhetőségét fel kell tüntetni a [Céges portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

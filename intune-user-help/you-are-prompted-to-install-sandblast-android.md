@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: e453cf1af0d065a367d636c3e6cc8e8ddd79cfda
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: f667564443115ba350cf244009d3509fe8d760d0
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32327806"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148358"
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-android-device"></a>Telepítenie kell a SandBlast Mobile Protect alkalmazást Android-eszközén
 
@@ -58,4 +58,4 @@ Ha problémája akad a telepítéssel, próbálja ki a témakör végén olvasha
 
 Egyes esetekben előfordulhat, hogy a telepítés Öntől független technikai okokból meghiúsul. Ha ez történik, próbálja meg telepíteni a SandBlast Mobile Protect alkalmazást [a Play Áruházból, manuálisan](https://play.google.com/store/apps/details?id=com.lacoon.security.fox).
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

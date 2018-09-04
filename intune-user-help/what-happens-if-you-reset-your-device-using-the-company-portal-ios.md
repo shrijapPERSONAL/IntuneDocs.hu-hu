@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fc3396dee18968e9e91ca1a648d18ccc75d01b52
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 11c82861a7367b1552e9f505fc622e439bb86ad0
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015370"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149542"
 ---
 # <a name="what-happens-if-you-reset-your-ios-device-using-the-company-portal"></a>Mi történik, ha alaphelyzetbe állít egy iOS-eszközt a Vállalati portálon?
 
@@ -40,4 +40,4 @@ Ha a vállalati portál segítségével alaphelyzetbe állítja saját eszközé
 
 -   Vállalati e-mail fiókja és a nem mentett e-mailek törlődnek.
 
-Ha kérdése van, lépjen kapcsolatba a cég informatikai támogatási szolgálatával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ha kérdése van, lépjen kapcsolatba a cég informatikai támogatási szolgálatával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

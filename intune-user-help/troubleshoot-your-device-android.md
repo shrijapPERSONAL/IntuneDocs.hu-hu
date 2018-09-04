@@ -16,16 +16,16 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: eb20e5c4099d51fd5afb0fbb6700fc33da53557a
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: de0afc8babe692663af9528da313cb31a9d3ff57
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30752155"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148449"
 ---
 # <a name="fix-common-issues-with-your-android-device"></a>Androidos eszközök gyakori problémáinak elhárítása
 
-Időnként előfordulhatnak problémák az androidos eszközökkel kapcsolatban, melyek hibaelhárítással oldhatók meg. Az alábbiakban látható azon korábban tapasztalt gyakori problémák listája, amelyeket először megpróbálhat önállóan megoldani. Összetettebb problémák esetén javasoljuk, hogy forduljon a cég informatikai támogatási szolgálatához a [Céges portál webhelyen](https://portal.manage.microsoft.com#HelpDeskDialog) található elérhetőségen.
+Időnként előfordulhatnak problémák az androidos eszközökkel kapcsolatban, melyek hibaelhárítással oldhatók meg. Az alábbiakban látható azon korábban tapasztalt gyakori problémák listája, amelyeket először megpróbálhat önállóan megoldani. Összetettebb problémák esetén javasoljuk, hogy forduljon a cég informatikai támogatási szolgálatához a [Céges portál webhelyen](https://go.microsoft.com/fwlink/?linkid=2010980) található elérhetőségen.
 
 - [Megfelelőség ellenőrzése androidos eszközökön](check-compliance-on-your-device-android.md)
 - [Az eszközproblémák a cég informatikai támogatási szolgálata általi megoldásának támogatása részletes naplózással](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)

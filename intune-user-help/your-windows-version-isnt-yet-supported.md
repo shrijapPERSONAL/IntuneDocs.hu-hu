@@ -17,15 +17,15 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d3772ab6a35513125d48c36255e0aa37117b7785
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 404954359541ddaebf69b97bbc91b8083776f3bd
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018073"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148504"
 ---
 # <a name="your-windows-devices-operating-system-version-isnt-yet-supported"></a>Windows-eszköze operációs rendszerének verziója még nem élvez támogatást
 
 Mivel a technológia rendkívül gyors ütemben fejlődik, előfordulhat, hogy az Ön által használt eszköz olyan modern, hogy a cég informatikai támogatási szolgálatának még nem volt lehetősége tesztelni. Lehetséges, hogy a Windows legújabb verziója esetleg nem fog tudni együttműködni a vállalati eszközökkel. 
 
-Ebben az esetben forduljon a cég informatikai támogatási szolgálatához, és kérjen segítséget a probléma megoldásában. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ebben az esetben forduljon a cég informatikai támogatási szolgálatához, és kérjen segítséget a probléma megoldásában. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

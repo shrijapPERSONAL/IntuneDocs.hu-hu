@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6004be5fd38efcc3ec6d325a562fc2a23267ee30
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1c0600dd17b28506e118cdaef0421c8db3b9c86e
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31031719"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147521"
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Windows Phone 8.1-eszköz regisztrálása az Intune-ban
 
@@ -86,4 +86,4 @@ Regisztrálja az eszközt:
 
 Ha a cég informatikai támogatási szolgálata úgy állította be a Céges portál alkalmazást, hogy az a regisztráció során települjön, a Céges portál megjelenik az alkalmazáslistában.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

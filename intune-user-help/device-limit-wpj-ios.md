@@ -18,12 +18,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4c8d6ba4f6f8a9885b0000e0d7c60ba0594504b5
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: ffdf1d524dafa280a698ff25b5118394116cd72a
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30750863"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148831"
 ---
 # <a name="the-limit-of-devices-you-can-register-has-been-reached"></a>Elérte a regisztrálható eszközök felső határát
 
@@ -33,4 +33,4 @@ Minden cég alkalmaz korlátozást arra vonatkozóan, hogy egy személy legfelje
 2. Távolítsa el valamely eszközét a [MyApps portálról](https://myapps.microsoft.com), és válassza az oldal jobb felső sarkában található **Profil** lehetőséget. 
 3. Érdeklődjön cég támogatási szolgálatánál, hogy lehetséges-e növelni az Ön által regisztrálható eszközök számát. 
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

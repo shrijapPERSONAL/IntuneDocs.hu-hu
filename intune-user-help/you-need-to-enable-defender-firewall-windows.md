@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 57342767b83c965c2d22ec68cd74132362b5b40e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c918b192d49c12735701382418e594b3ee4386f6
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016611"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150599"
 ---
 # <a name="turn-on-your-windows-defender-firewall"></a>A Windows Defender tűzfal bekapcsolása
 
@@ -32,4 +32,4 @@ A munkahely vagy az iskola biztosítani szeretné, hogy az erőforrásaihoz hozz
 2. Nyissa meg a **Rendszer és biztonság** > **Windows Defender tűzfal** panelt.
 3. Válassza a **Beállítások testreszabása** > **A Windows tűzfal be- és kikapcsolása** lehetőséget a tartomány, illetve a magán- és nyilvános hálózatok esetében.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

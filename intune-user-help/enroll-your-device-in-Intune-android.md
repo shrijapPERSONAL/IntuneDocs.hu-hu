@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a48e43a024358b35c88014d2b4a05f2245f13a3f
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 5eb00734c8095202b5b633f1db105a42d40e4567
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34449836"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149035"
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Android-eszköz regisztrálása az Intune-ban
 
@@ -94,7 +94,7 @@ A regisztráció előtt vagy után a rendszer megkérheti, hogy válasszon ki eg
 
     Fontos szem előtt tartani, hogy ezek a műveletek a nagyobb biztonságot szolgálják. A cég informatikai támogatási szolgálata nem az Ön bizalmas adataihoz akar hozzáférni és nem törli őket ok nélkül, csak gondoskodni szeretne a céges adatok biztonságáról.
 
-    A Microsoftnak nincs befolyása erre az üzenetre, és értjük, hogy a megfogalmazása drasztikusnak tűnhet, de a Céges portál nem tudja csak azokat a korlátozásokat és hozzáféréseket megjeleníteni, amelyek az adott szervezetre érvényesek: csak ezek mindegyikét lehet egyszerre engedélyezni ezen a képernyőn. Ha az eszköz szervezeti használatával kapcsolatos kérdése van, a [Céges portál webhelyen](https://portal.manage.microsoft.com#HelpDeskDialog) látható elérhetőségek valamelyikén kérjen tájékoztatást a cég informatikai támogatási szolgálatától.
+    A Microsoftnak nincs befolyása erre az üzenetre, és értjük, hogy a megfogalmazása drasztikusnak tűnhet, de a Céges portál nem tudja csak azokat a korlátozásokat és hozzáféréseket megjeleníteni, amelyek az adott szervezetre érvényesek: csak ezek mindegyikét lehet egyszerre engedélyezni ezen a képernyőn. Ha az eszköz szervezeti használatával kapcsolatos kérdése van, a [Céges portál webhelyen](https://go.microsoft.com/fwlink/?linkid=2010980) látható elérhetőségek valamelyikén kérjen tájékoztatást a cég informatikai támogatási szolgálatától.
 
 11. Az útmutatást követve írja be a PIN-kódját vagy a jelszavát. Ha korábban már beállított egy PIN-kódot vagy egy jelszót a szóban forgó eszközön, ez a képernyő nem jelenik meg, és új PIN-kódot vagy jelszót sem kell megadnia.
 
@@ -131,4 +131,4 @@ Mielőtt vállalati alkalmazások telepítésével próbálkozna, a **Beállít�
 
 Ha hibaüzenet jelenik meg az eszköz Intune-regisztrálása közben, akkor a [regisztrálási hibák elküldhetők a cég informatikai támogatási szolgálatának](send-enrollment-errors-to-your-it-admin-android.md).
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatási szolgálatához (a kapcsolattartási adatokat a [céges portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog) találja), vagy írjon a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-csapatának</a>.
+További segítségre van szüksége? Forduljon a cég informatikai támogatási szolgálatához (a kapcsolattartási adatokat a [céges portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980) találja), vagy írjon a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-csapatának</a>.

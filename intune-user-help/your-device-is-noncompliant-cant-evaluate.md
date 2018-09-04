@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: eb62b7fb16b14fd723d71d2e7044fc9603f86ed1
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8f4cec690431ded00e7645e7ca76bd156453fb62
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31020180"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148201"
 ---
 # <a name="your-device-is-noncompliant"></a>Az eszköze nem megfelelő
 
@@ -30,4 +30,4 @@ Az eszköze nem felel meg a munkahelye biztonsági szabályzatai közül legalá
 
 A Vállalati portál alkalmazásban koppintson a **Megfelelőség ellenőrzése** elemre. A Vállalati portál alkalmazás ezután megmutatja, mi okozza az eszköz meg nem felelését.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

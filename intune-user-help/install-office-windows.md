@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 738cc313eca4c98e7cdee3dfe40f705630244a9f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 443234bea9623ccbf5ac916d179a8fe202a392dd
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015744"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147778"
 ---
 # <a name="installing-office-365-on-your-windows-10-device"></a>Az Office 365 telepítése Windows 10-es eszközön
 
@@ -32,4 +32,4 @@ Az Office 365 többféle módon is telepíthető Windows 10-es eszközökre. A c
 
 Ha a cég elérhetővé teszi az Office-t, akkor csak egyetlen verziót szükséges telepíteni. Ha több verziót próbál meg telepíteni, a korábban már telepített verzió el lesz távolítva.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f924ece24fe38346c1abab8964270e4abe5abf76
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: efe251a9a347a179e56d496d761b0ea7f28ab66f
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32327687"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149600"
 ---
 # <a name="email-logs-to-your-company-support"></a>Naplók elküldése a cég támogatási szolgálatának e-mailben
 
@@ -45,4 +45,4 @@ Naplók elküldése a cég támogatási szolgálatának e-mailben:
 3.  Koppintson az **E-mail küldése és naplók feltöltése** lehetőségre.
 4.  Miután a feltöltés befejeződött, koppintson a levelező alkalmazásra. Megjelenik egy e-mail-üzenet, amelynek tárgya már ki van töltve az incidensazonosítóval. Írja le a tapasztalt hibát az e-mail törzsében.  
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9805dfdba67299a5a1cd9433bbc061f8bd96bc9e
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: 8bc441dd07191ec3eb1280330be380ca425f53cc
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34190519"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150846"
 ---
 # <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>Küldje el a felügyelt macOS-eszközével kapcsolatban felmerülő hibákat a megfelelő személyeknek.
 
@@ -48,4 +48,4 @@ Naplók küldése a Microsoftnak:
 2.  Kattintson a **Súgó** menü > **Diagnosztikai jelentés küldése** lehetőségére.  A naplók feltöltése után kapni fog egy incidensazonosítót. Másolja ki és mentse az azonosítót.
 3.  Küldjön egy e-mailt a Microsoftnak <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Paste your incident ID and describe the incident here.">ezzel a sablonnal</a>.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

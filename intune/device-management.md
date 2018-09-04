@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9e24f9aca0c06f69c61af6a7fab4f69afe381b6d
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e2e81bdb3431ac8a2e0fdae6a7f3099512319aee
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31836927"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313258"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>A Microsoft Intune-eszközfelügyelet ismertetése
 
@@ -37,7 +37,7 @@ Az **Eszközök** munkafolyamat áttekintést nyújt a felügyelt eszközökről
    - Az **Áttekintés** a regisztrált eszközök pillanatképét jeleníti meg, valamint azt, hogy hány eszköz használja a különböző platformokat (Android, iOS és egyebek).
    - A **Minden eszköz** az Ön által kezelt regisztrált eszközöket jeleníti meg.
 
-     Az **Exportálás** funkcióval létrehozhat egy .csv formátumú listát minden eszközről, egyenként 10000 (Internet Explorer), iletve 30000 (Microsoft Edge, Chrome) eszközzel.
+     Az **Exportálás** funkcióval létrehozhat egy .csv formátumú listát minden eszközről, egyenként 10000 (Internet Explorer), iletve 30000 (Edge, Chrome) eszközzel.
 
      Egy eszköz kijelölésével [további részleteket tekinthet meg róla](device-inventory.md), így a hardveradatokat, a telepített alkalmazásokat, a megfelelőségi állapotot és egyéb adatokat.
 
@@ -55,8 +55,8 @@ Az egyes műveletek az eszköz platformjának és konfigurációjának függvén
 
 - [Az eszközleltár megtekintése](device-inventory.md)
 - A távoli eszközműveletek futtatása:
-    - [Céges adatok eltávolítása](devices-wipe.md#remove-company-data)
-    - [Gyári beállítások visszaállítása](devices-wipe.md#factory-reset)
+    - [Kivonás](devices-wipe.md#retire)
+    - [Törlés](devices-wipe.md#wipe)
     - [Távoli zárolás](device-remote-lock.md)
     - [Új PIN-kód](device-passcode-reset.md)
     - [Az aktiválási zár megkerülése](device-activation-lock-bypass.md) (kizárólag iOS esetében)

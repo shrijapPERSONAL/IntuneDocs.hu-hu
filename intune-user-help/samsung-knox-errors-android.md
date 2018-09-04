@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: 1ce260b010658ade6c78361b980ca928a992d113
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 235356e88dc2ba25b789ebe262c1ae9b32840793
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30751441"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150885"
 ---
 # <a name="fix-common-issues-with-your-samsung-knox-device"></a>A Samsung Knox-eszközök gyakori problémáinak elhárítása
 
@@ -51,4 +51,4 @@ A megjelenő üzenet a következőhöz hasonló lehet:
 |---|---|
 |**Samsung Knox-aktiválási hiba** – Nem sikerült aktiválni a Samsung KNOX-licencet. Ennek az lehet az oka, hogy be van kapcsolva az energiatakarékos üzemmód. Kapcsolja ki az energiatakarékos üzemmódot az eszközbeállításoknál, majd próbálkozzon újra. |Előfordulhat, hogy az eszköz energiagazdálkodási beállításai nem megfelelőek a céges erőforrások használatához. További információ az [energiatakarékos üzemmód beállításáról](power-saving-mode-android.md).|
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

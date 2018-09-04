@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a7f10e178e88f871c297ed8bbac7ccbe9a802d0b
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: e569b69f319cb3cf2868d86db2032b93d9bd8ab8
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755487"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149123"
 ---
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>Mi történik, ha alaphelyzetbe állít egy saját Windows-eszközt a Vállalati portálon?
 
@@ -34,4 +34,4 @@ Ha a Vállalati portál alkalmazást vagy a [Vállalati portál webhelyet](reset
 |Az eszköz csak a vállalati e-mailekhez férhet hozzá.|**Windows Phone 8.1**<br />Az eszköz nem jelenik meg többé a Vállalati portálon, és a rendszer törli a vállalati e-mail-fiókját és a nem mentett e-maileket.<br /><br />**Windows 7 vagy Windows Vista**<br />Kizárólag e-mailek elérésére használt, Windows 7 vagy korábbi operációs rendszert futtató számítógép nem állítható alaphelyzetbe.<br /><br />**Windows 8.1 és Windows 8**<br />Az eszköz nem jelenik meg többé a Vállalati portálon, és a rendszer törli a vállalati e-mail-fiókját és a nem mentett e-maileket.|
 |Számítógépek és laptopok|**Windows 8.1 és Windows 8**<br />Windows 8 vagy Windows 8.1 rendszert futtató számítógép nem állítható alaphelyzetbe, kivéve, ha kizárólag e-mailek elérésére használják.<br /><br />**Windows 7 vagy Windows Vista**<br />Windows 7 vagy korábbi operációs rendszert futtató számítógép nem állítható alaphelyzetbe.|
 
-Ha kérdése van, lépjen kapcsolatba a cég informatikai támogatási szolgálatával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ha kérdése van, lépjen kapcsolatba a cég informatikai támogatási szolgálatával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

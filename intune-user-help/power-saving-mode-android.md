@@ -17,17 +17,17 @@ ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 663da92e11befeae1f65467e887870a52640cbeb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 33b6199c25e9e36b65dfe2ca819640fa614e68b6
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31020571"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148223"
 ---
 # <a name="outlook-wont-sync-managed-email-when-battery-optimization-for-android-is-turned-on"></a>Az Outlook nem szinkronizálja a felügyelt e-maileket, ha az androidos akkumulátor-optimalizálás be van kapcsolva
 
 > [!IMPORTANT]
-> A problémát azért itt dokumentáljuk, mert az elmúlt időben nagy mennyiségű felhasználói visszajelzést kaptunk vele kapcsolatban. Ha a probléma az alábbi lépések elvégzése után is fennáll, további segítségért lépjen kapcsolatba a [cég informatikai támogatási szolgálatával](https://portal.manage.microsoft.com#HelpDeskDialog).
+> A problémát azért itt dokumentáljuk, mert az elmúlt időben nagy mennyiségű felhasználói visszajelzést kaptunk vele kapcsolatban. Ha a probléma az alábbi lépések elvégzése után is fennáll, további segítségért lépjen kapcsolatba a [cég informatikai támogatási szolgálatával](https://go.microsoft.com/fwlink/?linkid=2010980).
 
 Az eszköz Intune-regisztrációjával hozzáférhet a céges erőforrásokhoz. A leggyakrabban használt erőforrások egyike az e-mail-hozzáférés. Az Android-eszközök esetében az Outlook-levelezés hozzáférésével kapcsolatos hibák egyike az akkumulátor-optimalizálás bekapcsolása során jelentkezett. Az akkumulátor-optimalizálás automatikusan bekapcsolhat az eszköz üzemidejének meghosszabbítása érdekében. Az akkumulátor-optimalizálás az automatikus e-mail-letöltés leállításával részben segít megőrizni az eszköz töltöttségét.
 
@@ -75,4 +75,4 @@ A szükséges beállításokat emellett a rendszerbeállítások között is meg
 2. Tap **Battery** > **Battery optimization**.
 3. Select the Company Portal and Outlook apps, then select **Don’t optimize**. Tap **Done**.-->
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

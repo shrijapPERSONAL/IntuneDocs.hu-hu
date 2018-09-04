@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 980b7d9f221fd1a1ae12f27743757d5b3bd53492
-ms.sourcegitcommit: 5f6117b83f96f7d93dde3685c2ff2b67ae53740b
+ms.openlocfilehash: 6090ea3509c1f355c21e02ae155bdb9035f6c508
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39481189"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148778"
 ---
 # <a name="remove-your-windows-device-from-intune-management"></a>Windows-eszköz eltávolítása az Intune-ból
 
@@ -82,4 +82,4 @@ A tárolt naplók és gyorsítótár törléséhez kövesse az alábbi lépések
 
 * Állítsa alaphelyzetbe a Céges portál alkalmazást. Nyissa meg a **Beállítások** alkalmazást, és válassza az **Alkalmazások** > **Céges portál** > **Speciális beállítások** > **Alaphelyzetbe állítás** lehetőséget. 
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

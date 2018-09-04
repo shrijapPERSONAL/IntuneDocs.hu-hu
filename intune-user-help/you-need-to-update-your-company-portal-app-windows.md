@@ -17,15 +17,15 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7190049dbc204d3cdcc4b9dcfbe23e866980ce37
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 31d5a0879f3e3c3933e6b0a8f4e9ebf7e6056419
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016577"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147856"
 ---
 # <a name="your-company-portal-app-for-windows-is-out-of-date"></a>A Windows rendszerhez készült Céges portál alkalmazás nem naprakész
 
 Ha továbbra is hozzá szeretne férni a vállalati e-mailekhez, névjegyekhez és dokumentumokhoz, frissítenie kell a Munkahelyi portál alkalmazást. Ehhez nyissa meg a **Microsoft Áruházat**, és telepítse a **Céges portál** alkalmazás új verzióját.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: cf2413ee879cf4a6cb2742d34f452105057ccf59
-ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
+ms.openlocfilehash: c98980cca305bef01dd91e69d00a471b10e741a8
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/12/2018
-ms.locfileid: "34073818"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147485"
 ---
 # <a name="enable-security-threat-scans-on-your-device"></a>A biztonsági fenyegetések keresésének engedélyezése az eszközön 
 Ha tudtán kívül egy nem biztonságos alkalmazást telepít, azzal kockázatnak teheti ki az eszközadatokat. Az eszközadatok védelme érdekében azt javasoljuk, ügyeljen a következőkre: 
@@ -32,4 +32,4 @@ A vizsgálatok engedélyezéséhez lépjen az eszköz **Beállítások** > **Goo
 
 Egyes Samsung-eszközökön ez a beállítás a **Beállítások** > **Google** > **Biztonság** >  **Google Play Protect** menüben található.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog). 
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980). 

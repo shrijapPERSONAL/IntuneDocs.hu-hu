@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0a90cace32edb33293ba0b0b89d272465ea32418
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: ba0f2675bfd65f60f6f16d6be738cdc1baa3e7e5
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34547488"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148797"
 ---
 # <a name="remove-your-ios-device-from-intune"></a>IOS-eszköz eltávolítása az Intune-ból
 
@@ -74,4 +74,4 @@ A Céges portál az eszközön három helyen tárolja a helyi adatokat.
 -   **Kulcskarika**: az eszköz a kulcskarikán tárolja a jelszavakat és egyéb bejelentkezéshez szükséges adatokat. A Microsoft-alkalmazások megosztják az eszközön található más Microsoft-alkalmazásokkal a bejelentkezési adatait, így például a Microsoft Outlookkal és a Microsoft Authenticatorrel. Az Apple-elemzésekhez hasonlóan ezeket az adatokat csak az eszköz gyári alaphelyzetbe való visszaállításával távolíthatja el. Ez a művelet minden személyes adatot töröl az eszközről. Ehhez válassza a **Beállítások** > **Általános** > **Alaphelyzetbe állítás** > **Összes tartalom, beállítás törlése** lehetőséget.
 
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).
