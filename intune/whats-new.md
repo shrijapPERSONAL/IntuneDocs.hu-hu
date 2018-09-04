@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/30/2018
+ms.date: 08/14/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: ff2774b76bceeeeaecec7a4dc74876b11706d574
-ms.sourcegitcommit: 56a8a3c8974f54f0f9ecc1e5b43581502ecc348e
+ms.openlocfilehash: 41c5af504bb65a661e55d09d735a78df780deb84
+ms.sourcegitcommit: 698af815f6de2c4f003f6da428bbfb0680daafa0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39614513"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43092175"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,12 +42,21 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Emellett tá
 
 -->   
 
+
+## <a name="week-of-august-27-2018"></a>2018. augusztus 27-i hét
+
+### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>VPP eszközlicencek használata a Céges portál előzetes kiépítésére a DEP-regisztráció során <!-- 1608345 -->
+Mostantól mennyiségi vásárlási program (Volume Purchase Program, VPP-) eszközlicencekkel előre is kiépítheti a Céges portált, amikor regisztrál a készülékregisztrációs programban (DEP-ben). Ehhez a [regisztrációs profil létrehozása vagy szerkesztése](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) során kell megadni a Céges portál telepítéséhez használni kívánt VPP-jogkivonatot. Fontos, hogy a jogkivonat ne járjon le, és hogy elég licenccel rendelkezzen a Céges portál alkalmazáshoz. Amennyiben a jogkivonat lejár vagy a licencei elfogynak, az Intune az App Store-beli Céges portált fogja leküldeni (ilyenkor a rendszer kéri az Apple-azonosítót).
+
+
+## <a name="week-of-august-14-2018"></a>2018. augusztus 14-i hét
+
+### <a name="macos-support-for-apple-device-enrollment-program----747651---"></a>macOS-támogatás az Apple Készülékregisztrációs programjában <!-- 747651 -->
+Az Intune mostantól támogatja a macOS rendszerű eszközök regisztrálását az Apple készülékregisztrációs programjába (DEP). További információkért lásd: [macOS-eszközök automatikus regisztrálása az Apple készülékregisztrációs programjával (DEP)](device-enrollment-program-enroll-macos.md).
+
 ## <a name="week-of-july-23-2018"></a>2018. július 23-ai hét
 
 ### <a name="app-management"></a>Alkalmazáskezelés
-
-####  <a name="windows-apps-file-extensions----1884873---"></a>Windows-alkalmazások fájlkiterjesztései <!-- 1884873 -->
-Mostantól a Windowsos-alkalmazások fájlnévkiterjesztései közé tartozik az *.msi*, *.appx*, *.appxbundle*, *.msix* és *.msixbundle* is. A **Mobilalkalmazások** > **Alkalmazások** > **Hozzáadás** lehetőséggel hozzáadhat egy alkalmazást a Microsoft Intune-hoz. Megjelenik az **Alkalmazás hozzáadása** panel, ahol kiválaszthatja az **Alkalmazás típusát**. Válasszon ki egy olyan alkalmazástípust, amelynél lehetőség van alkalmazás-csomagfájl feltöltésére, válassza ki az **Alkalmazás csomagfájlját**, majd adja meg a megfelelő kiterjesztésű telepítőfájlt.
 
 #### <a name="line-of-business-lob-app-support-for-macos----1895847---"></a>macOS – üzletági (LOB) alkalmazások támogatása <!-- 1895847 -->
 A Microsoft Intune lehetővé teszi macOS üzletági alkalmazások **Kötelező** vagy **Regisztrációval elérhető** beállítással való üzembe helyezését. A végfelhasználók elvégezhetik az alkalmazások **Rendelkezésre álló** állapotban való üzembe helyezését a macOS-es céges portálon vagy a [Céges portál webhelyén](https://portal.manage.microsoft.com).
@@ -757,10 +766,10 @@ Szeretnénk nagyobb irányítást adni a felhasználóknak az adataik védelmév
 
 ## <a name="week-of-march-19-2018"></a>2018. március 19-i hét
 
-### <a name="export-all-devices-into-csv-files-in-ie-edge-or-chrome----2258071---"></a>Minden eszköz exportálása CSV-fájlokba IE, Microsoft Edge vagy Chrome böngészőben <!-- 2258071 -->
+### <a name="export-all-devices-into-csv-files-in-ie-edge-or-chrome----2258071---"></a>Minden eszköz exportálása CSV-fájlokba IE, Edge vagy Chrome böngészőben <!-- 2258071 -->
 Az **Eszközök** > **Minden eszköz** területen **exportálhatja** az eszközöket egy CSV formátumú listába. Az Internet Explorer (IE) 10000 eszköznél kevesebbel rendelkező felhasználói sikeresen exportálhatják a fájljaikat több fájlba. Minden fájl legfeljebb 10000 eszközt tartalmaz.
 
-A Microsoft Edge és a Chrome 30000 eszköznél kevesebbel rendelkező felhasználói sikeresen exportálhatják a fájljaikat több fájlba. Minden fájl legfeljebb 30000 eszközt tartalmaz.
+Az Edge és a Chrome 30000 eszköznél kevesebbel rendelkező felhasználói sikeresen exportálhatják a fájljaikat több fájlba. Minden fájl legfeljebb 30000 eszközt tartalmaz.
 
 Az [Eszközkezelés](device-management.md) területen további részletek jelennek meg a kezelt eszközökkel végezhető műveletekről.
 
@@ -1129,6 +1138,16 @@ A tiltott alkalmazásokat az Intune-ban lehet meghatározni. Tiltás esetén az 
 
 ## <a name="notices"></a>Értesítések
 
+### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>Szükséges intézkedés: Kérjük, frissítse az Android eszközkorlátozási vagy megfelelőségi szabályzatának jelszóbeállításait az Intune-ban
+Az Intune-ból eltávolítjuk az eszköz alapértelmezett jelszavaként szolgáló jelszótípust az Android 4.4-es és újabb eszközök esetében. Az Android-platformok és az eszközök alapértelmezett beállításainak eltérései miatt az eszközök ezt a szabályzatot gyakran opcionálisként kezelik. Annak érdekében, hogy ne okozzon zavart, ha egy Android készüléken ez a beállítás van kötelezőként megadva, egy következő kiadásban eltávolítjuk a beállítást a kezelőfelületről. 
+#### <a name="how-does-this-affect-me"></a>Hogyan érint ez engem?
+- Ha az a célja, hogy az eszközökön kötelező legyen megadni valamilyen jelszót, javasoljuk, hogy az „eszköz alapértelmezett jelszavának” használata helyett úgy szerkessze az Android-platformprofilokat, hogy azok egyértelműen leírják a kívánt jelszótípust.
+- Ha azt szeretné, hogy a végfelhasználók szabadon eldönthessék, létre szeretnének-e hozni egy jelszót, válassza a „Nincs konfigurálva” lehetőséget. Ha még mindig az „eszköz alapértelmezett jelszava” beállítás van érvényben, amikor eltávolítjuk ezt a beállítást a felhasználói felületről, akkor a profil következő szerkesztésekor választania kell egy másik értéket.
+Hogyan készüljek fel a változásra?
+Tekintse át a jelszóbeállításokat az Android vállalati eszközkorlátozási és megfelelőségi szabályzataiban. A megfelelőségi szabályzatok a Rendszerbiztonság alatt, az eszközkorlátozási szabályzatok pedig az Eszközjelszó vagy a Munkaprofil alatt találhatók meg. A további információk között talál egy hivatkozást, amelyen keresztül további részleteket és képernyőképeket talál ezekkel a beállításokkal kapcsolatban.
+####<a name="additional-information"></a>További információ
+https://aka.ms/PasswordSettings 
+
 ### <a name="plan-for-change-change-password-at-next-auth-added-to-intune---1873216---"></a>Tervezett változtatás: Jelszóváltoztatás az Intune-hoz hozzáadott Next Authban <!-- 1873216 -->
 Az Intune a szolgáltatás szeptemberi kiadásában az Apple újonnan kiadott **Jelszóváltoztatás a Next Authban** beállításának integrációját tervezi a macOS 10.13-as vagy újabb verzióját futtató eszközökhöz. Amíg ez a beállítás nincs jelen, az MDM-szolgáltatók nem tudják ellenőrizni, hogy az eszköz jelszavát megváltoztatták-e a megfelelőséghez. Az Intune konfigurációs és megfelelőségi szabályzatai csak azt ellenőrzik, hogy a jelszó a legközelebbi változtatáskor megfelelőként van-e jelölve. Az új Apple-funkció hozzáadása után a macOS-felhasználók akkor is felszólítást kapnak a jelszó megváltoztatására, ha a jelszó megfelelő.
 
@@ -1171,22 +1190,6 @@ Ajánlott megelőző lépésként eltávolítani a TLS 1.0 és 1.1 verzióit és
 
 **További információ**: [Az Intune áttér a TLS 1.2 használatára a titkosításhoz](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)
 
-### <a name="plan-for-change-new-windows-10-setting-for-kiosk-configuration-in-intune----1560072---"></a>Tervezett módosítás: Új Windows 10-beállítás az Intune kioszkkonfigurációjához <!-- 1560072 -->
-Megváltozott az asztali Windows 10 1709-es és későbbi (RS3 és későbbi) verzióinak konfigurálási helye és módja az Intune Azure Portalon.
-
-#### <a name="how-does-this-affect-me"></a>Hogyan érint ez engem? 
-A nyilvántartásunk szerint a Ön Windows 10 > Eszközkorlátozások > Kioszk (előzetes verzió) beállítást használja. Ez májusban új nevet kap a felhasználói felületen, így láthatóvá válik, hogy a továbbiakban nem javasolt a használata: Windows 10 > Eszközkorlátozások > Kioszk (elavult) . A funkció azonban továbbra is működik az Intune júliusi frissítéséig. Ezt követően kivezetjük a háttérhálózaton is, így nem fog többé működni. Alternatív megoldásként egy új eszközkonfigurációs profilt adunk ki májusban, amely a Windows 10 RS4-es és újabb kioszkok konfigurálásához szükséges beállításokat tartalmazzák: Windows 10 > Kiosk.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Hogyan készüljek fel a változásra?  
-Amikor az Intune május végén kiadja a májusi szolgáltatásfrissítést, ismertetjük önnel a kioszkkonfiguráció a Windows 10 RS3-ról RS4-re való sikeres migrálásához szükséges tesztelési és ellenőrzési lépéseket. Az útmutatás segítségével az új eszközkonfigurációs profilokkal kioszkként konfigurálhatja az eszközeit.
-
-#### <a name="how-does-this-affect-me"></a>Hogyan érint ez engem?
-Ez a változás a különálló Intune-t használó ügyfeleket és a hibrid (az Intune-t a Configuration Managerrel használó) ügyfeleket egyaránt érinti. Az integráció leegyszerűsíti a felhőfelügyelet adminisztrációját. Mostantól csak egyetlen panelt – az Intune panelt – kell megnyitnia az Azure-ban a csoportok, a szabályzatok, az alkalmazások és a mobileszköz-felügyelet kezeléséhez.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Hogyan készüljek fel a változásra?
-Az Intune App Protection szolgáltatás panelje helyett az Intune-t jelölje meg kedvencként, és mindenképpen ismerkedjen meg az alkalmazásvédelmi szabályzatok munkafolyamatával az Intune Mobilalkalmazás paneljén. Egy rövid ideig átirányítás lesz érvényben, majd az App Protection panel el lesz távolítva. Ne feledje, hogy már minden alkalmazásvédelmi szabályzat elérhető az Intune-ban, és bármely feltételes hozzáférési szabályzatot módosíthatja az itt található dokumentáció alapján: [https://aka.ms/azuread_ca](https://aka.ms/azuread_ca).
-
-**További információ**: [https://aka.ms/intuneapppolicy](https://aka.ms/intuneapppolicy)
 
 ### <a name="plan-for-change-change-in-support-for-the-microsoft-intune-app-sdk-for-cordova-plugin"></a>Tervezett módosítás: A Microsoft Intune App SDK for Cordova beépülő modul támogatásának változása
 Az Intune 2018. május 1-ével befejezi a [Microsoft Intune App SDK Cordova beépülő modul](app-sdk-cordova.md) támogatását. Helyette az Intune App Wrapping Tool eszköz használatát javasoljuk a Cordova-alapú alkalmazások előkészítésére a kezelhetőség és a rendelkezésre állás érdekében az Intune-ban. A módosítás életbe lépését követően a Microsoft Intune APP SDK for Cordova beépülő modul támogatása megszűnik, és frissítést sem fog kapni. Az alkalmazásfejlesztők a továbbiakban nem használhatják ezt a beépülő modult. Az Intune azt tervezi, hogy továbbra is támogatja a Cordovával készített alkalmazásokat. A Microsoft Intune APP SDK for Cordova beépülő modullal készült alkalmazások azonban csökkentett funkcionalitással fognak működni az Intune-ban. Az Intune App Wrapping Tool eszközével elvégzett alkalmazásburkolást követően az alkalmazások ugyanúgy üzembe helyezhetők a végfelhasználók számára, mint a normál esetben. A Google Play Áruházban megjelent Cordova-alapú Android-alkalmazások esetén:
