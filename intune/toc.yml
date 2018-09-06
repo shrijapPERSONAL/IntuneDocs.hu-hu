@@ -747,26 +747,30 @@ items:
     - name: Az adattárház adatmodellje
       href: reports-ref-data-model.md
       items:
-      - name: A felhasználói élettartam reprezentációja az Intune-adattárházban
-        href: reports-ref-user-timeline.md
-      - name: Alkalmazás-entitások referencia
-        href: reports-ref-application.md
-      - name: Aktuális felhasználó típusú entitás referenciája
-        href: reports-ref-current-user.md
-      - name: Dátum típusú entitás referenciája
-        href: reports-ref-date.md
-      - name: Eszközök típusú entitások referenciája
-        href: reports-ref-devices.md
-      - name: Intune felügyeleti bővítmény típusú entitás referenciája
-        href: reports-ref-intunemanagementextension.md
-      - name: Mobilalkalmazás-felügyelet (MAM) típusú entitások referenciája
-        href: reports-ref-mobile-app-management.md
-      - name: Szabályzat típusú entitások referenciája
-        href: reports-ref-policy.md
-      - name: Felhasználói eszköztársítás típusú entitás referenciája
-        href: reports-ref-user-device.md
-      - name: Felhasználó típusú entitás referenciája
-        href: reports-ref-user.md
+      - name: Adattárház-gyűjtemények
+        href: intune-data-warehouse-collections.md
+      - name: Adattárház-gyűjtemények (bétaverzió)
+        items:
+        - name: A felhasználói élettartam reprezentációja az Intune-adattárházban
+          href: reports-ref-user-timeline.md
+        - name: Alkalmazás-entitások referencia
+          href: reports-ref-application.md
+        - name: Aktuális felhasználó típusú entitás referenciája
+          href: reports-ref-current-user.md
+        - name: Dátum típusú entitás referenciája
+          href: reports-ref-date.md
+        - name: Eszközök típusú entitások referenciája
+          href: reports-ref-devices.md
+        - name: Intune felügyeleti bővítmény típusú entitás referenciája
+          href: reports-ref-intunemanagementextension.md
+        - name: Mobilalkalmazás-felügyelet (MAM) típusú entitások referenciája
+          href: reports-ref-mobile-app-management.md
+        - name: Szabályzat típusú entitások referenciája
+          href: reports-ref-policy.md
+        - name: Felhasználói eszköztársítás típusú entitás referenciája
+          href: reports-ref-user-device.md
+        - name: Felhasználó típusú entitás referenciája
+          href: reports-ref-user.md
     - name: Az Intune-adattárház fiókadatainak áthelyezése
       href: data-warehouse-account-move.md
   - name: Az Azure AD használata az Intune API-k elérésére a Microsoft Graphban
@@ -802,9 +806,9 @@ items:
       href: troubleshoot-exchange-connector.md
   - name: Szószedet
     href: intune-glossary.md
-ms.openlocfilehash: a3e314760dbbfec82ce27b3bec12b21ab7ca5952
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 8926b2cb409f59bab9b4af8398dac146abeec3d2
+ms.sourcegitcommit: 443b4cb3390da47bf1e497b1f0c0137a5ddda7bd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313581"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43821116"
