@@ -3,9 +3,9 @@ title: Bevezetés a Microsoft Intune App SDK használatába
 description: A mobilalkalmazások gyors engedélyezése a Microsoft Intune-beli mobilalkalmazás-felügyelet (MAM) használatához.
 keywords: ''
 author: Erikre
-manager: dougeby
 ms.author: erikre
-ms.date: 05/15/2018
+manager: dougeby
+ms.date: 09/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0df56da9fff72124bb44a2c73e63d88cb6542938
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 8e22c0caf7b99bcb7a81259829369b7671056abe
+ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223526"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44058948"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Bevezetés a Microsoft Intune App SDK használatába
 
@@ -146,7 +146,7 @@ Buildszám|CFBundleVersion|PackageVersionCode |Ez a szám az alkalmazáskód egy
 #### <a name="android"></a>Android
 
  - **PackageVersionName**  
-    A felhasználók számára megjelenő verziószám. Ez az attribútum megadható nyers karakterláncként vagy egy karakterlánc-erőforrás hivatkozásaként is. A karakterláncnak a felhasználók számára való megjelenésen kívül nincs célja.
+    A felhasználók számára megjelenő verziószám. Ez az attribútum megadható nyers sztringként vagy egy sztringerőforrás hivatkozásaként is. A sztringnek a felhasználók számára való megjelenésen kívül nincs célja.
  - **PackageVersionCode**  
     Belső verziószám. Ezzel a számmal határozható meg, hogy egy verzió újabb-e egy másiknál. A magasabb számok újabb verziókat jelentenek. Ez nem az a verzió 
 
