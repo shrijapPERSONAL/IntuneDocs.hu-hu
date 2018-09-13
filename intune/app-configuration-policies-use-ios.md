@@ -15,12 +15,12 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 65f249f05f389d8f05395cb46677d5f5fa53835e
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 8abaef622fcf633eecde3a2bb2ee261cb7c8fc9e
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905835"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330262"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Alkalmazáskonfigurációs szabályzatok hozzáadása felügyelt iOS-eszközökhöz
 
@@ -47,7 +47,7 @@ Miután kiválasztotta a belefoglalt csoportokat az alkalmazáskonfigurálási s
 
 1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. Válassza a **Mobilalkalmazások** panelt.
+3. Válassza az **Ügyfélalkalmazások** tevékenységprofilt.
 4. Válassza az **Alkalmazáskonfigurációs szabályzatok** lehetőséget a **Felügyelet** csoportban, majd a **Hozzáadás** lehetőséget.
 5. Adja meg a következő adatokat:
     - **Név** – Az Azure Portalon megjelenítendő profilnév.
@@ -75,7 +75,7 @@ Miután kiválasztotta a belefoglalt csoportokat az alkalmazáskonfigurálási s
 
     >[!NOTE]
     >Csoportok hozzáadásakor, ha bármely más csoport már bele lett foglalva egy adott hozzárendelés-típus esetében, az előre ki van jelölve, és nem módosítható más belefoglalási hozzárendelés-típusok esetében. Ezért az adott csoport használatba lett véve, és így nem használható kizárt csoportként.
-16. Kattintson a **Save** (Mentés) gombra.
+16. Kattintson a **Mentés**gombra.
 
 ## <a name="use-configuration-designer"></a>A configuration designer használata
 
@@ -133,6 +133,8 @@ Alkalmazáskonfigurációs fájl létrehozásakor a következő értékeket adha
   <string>{{serialnumberlast4digits}}</string>
   <key>udidlast4digits</key>
   <string>{{udidlast4digits}}</string>
+  <key>aaddeviceid</key>
+  <string>{{aaddeviceid}}</string>
 </dict>
 ```
 ### <a name="supported-xml-plist-data-types"></a>Támogatott XML PList-adattípusok
@@ -141,8 +143,7 @@ Az Intune a következő adattípusokat támogatja a tulajdonságlistákban:
 
 - &lt;integer&gt; (egész szám)
 - &lt;real&gt; (valós szám)
-- 
-  &lt;string&gt;
+- &lt;string&gt;
 - &lt;array&gt; (tömb)
 - &lt;dict&gt; (szótár)
 - &lt;true /&gt; (igaz) vagy &lt;false /&gt; (hamis)
@@ -159,6 +160,7 @@ Ezenkívül az Intune a következő tokentípusokat támogatja a tulajdonságlis
 - \{\{username\}\} — például **Szabó János**
 - \{\{serialnumber\}\} — például **F4KN99ZUG5V2** (iOS-eszközök esetén)
 - \{\{serialnumberlast4digits\}\} — például **G5V2** (iOS-eszközök esetén)
+- \{\{aaddeviceid\}\}– például **ab0dc123-45d6-7e89-aabb-cde0a1234b56**
 
 ## <a name="monitor-ios--app-configuration-status-per-device"></a>Az iOS-alkalmazáskonfigurációk figyelése minden egyes eszközön 
 Konfigurációs szabályzat hozzárendelése után figyelheti az iOS-alkalmazások konfigurációs állapotát az egyes felügyelt eszközökön. Az Azure Portal **Microsoft Intune** oldalán kattintson az **Eszközök** > **Minden eszköz** lehetőségre. A felügyelt eszközök listáján az egyik eszközre kattintva nyissa meg a hozzá tartozó panelt. Az eszköz paneljén kattintson az **Alkalmazáskonfiguráció** elemre.  

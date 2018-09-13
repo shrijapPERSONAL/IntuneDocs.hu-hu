@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f1aa88264ef277863f58d21baaa136c140c5c287
-ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
+ms.openlocfilehash: cef98527ee2c281547f8046f3c6f08275d8f0807
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37949543"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329383"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Android-eszközök kioszkbeállításai az Intune-ban
 
@@ -55,7 +55,7 @@ Androidos kioszkeszköz több alkalmazásra való beállításához kövesse az 
 
 1. Nyissa meg a [Google Play Managed Home Screen oldalát](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) és jelentkezzen be a többi felügyelt Google Play-alkalmazáshoz használt fiókkal.
 2. Válassza a **Jóváhagyás** lehetőséget.
-3. Nyissa meg az [Intune portált](https://portal.azure.com) és válassza a **Mobilalkalmazások** > **Felügyelt Google Play** > **Szinkronizálás** lehetőséget.
+3. Nyissa meg az [Intune-portált](https://portal.azure.com), és válassza az **Ügyfélalkalmazások** > **Felügyelt Google Play** > **Szinkronizálás** lehetőséget.
 4. Válassza az **Alkalmazások** > **Managed Home Screen** > **Hozzárendelések** > **Csoport hozzáadása** lehetőséget.
 5. A **Hozzárendelés típusa** alatt válassza a **Kötelező** lehetőséget.
 6. Válassza a **Belefoglalt csoportok** > **Belefoglalandó csoportok kijelölése** lehetőséget, jelölje ki a kioszkeszközeihez létrehozott eszközcsoportot, majd válassza a **Kiválasztás** > **OK** > **OK** > **Mentés** lehetőséget.
@@ -65,13 +65,13 @@ Androidos kioszkeszköz több alkalmazásra való beállításához kövesse az 
 A kioszkmódban elérhetővé tenni kívánt alkalmazások mindegyikénél hajtsa végre a következő lépéseket:
 
 1. [Adja hozzá az alkalmazást az Intune-hoz](store-apps-android.md).
-2. Válassza a **Mobilalkalmazások** > **Alkalmazások** lehetőséget, jelölje ki az alkalmazást, majd válassza a **Hozzárendelések** > **Csoport hozzáadása** lehetőséget.
+2. Válassza az **Ügyfélalkalmazások** > **Alkalmazások** > jelölje ki az alkalmazást > **Hozzárendelések** > **Csoport hozzáadása** lehetőséget.
 3. A **Hozzárendelés típusa** alatt válassza a **Kötelező** lehetőséget.
 4. Válassza a **Belefoglalt csoportok** > **Belefoglalandó csoportok kijelölése** lehetőséget, jelölje ki a kioszkeszközeihez létrehozott eszközcsoportot, majd válassza a **Kiválasztás** > **OK** > **OK** > **Mentés** lehetőséget.
 
 ### <a name="add-web-links-that-can-be-used-in-kiosk-mode"></a>A kioszkmódban használható webes hivatkozások hozzáadása
 
-1. Nyissa meg az [Intune portált](https://portal.azure.com) és válassza a **Mobilalkalmazások** > **Alkalmazások** > **Hozzáadás** lehetőséget.
+1. Nyissa meg az [Intune-portált](https://portal.azure.com), és válassza az **Ügyfélalkalmazások** > **Alkalmazások** > **Hozzáadás** lehetőséget.
 2. Az **Alkalmazástípus** alatt válassza a **Webes hivatkozás** lehetőséget.
 3. Válassza a **Konfigurálás** lehetőséget, és adja meg a szükséges információkat. Logót nem kell hozzáadnia, mert az automatikusan ki lesz nyerve a webhely favicon.ico fájljából.
 4. Válassza az **OK** > **Hozzáadás** lehetőséget.

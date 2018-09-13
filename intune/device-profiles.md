@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 08/28/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8bb03becae1f28a3f5490a53576d5183c0b3ffaa
-ms.sourcegitcommit: 0d08daa162212e6cdd8a6ee3ad7ed42c6e6824e4
+ms.openlocfilehash: da220e1f82c59f3181d64dc01d071867d62df397
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39335826"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313972"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Mik azok a Microsoft Intune-eszközprofilok?
 
@@ -54,6 +54,7 @@ Ez a funkció a következőket támogatja:
 - iOS 
 - macOS
 
+
 ## <a name="device-restrictions"></a>Eszközkorlátozások
 Az [eszközkorlátozásokkal](device-restrictions-configure.md) kezelhető a biztonság, a hardver, az adatmegosztás és az eszközök több beállítása. Létrehozható például egy olyan eszközkorlátozási profil, amely megakadályozza, hogy az iOS-eszközök felhasználói használják az eszköz kameráját. 
 
@@ -72,6 +73,13 @@ A Windows Defender Komplex veszélyforrások elleni védelem (WDATP) Microsoft I
 
 Ez a funkció a következőket támogatja:
 - Windows 10 és újabb
+
+## <a name="identity-protection"></a>Identity protection
+Az [Identity protection](identity-protection-configure.md) vezérli a vállalati Windows Hello felületet Windows 10 vagy Windows 10 Mobile rendszerű eszközökön. Ezeknek a beállításoknak a konfigurálásával teheti elérhetővé a vállalati Windows Hellót a felhasználók és eszközök számára, és így adhatja meg az eszközök PIN-kódjaira és a kézmozdulatokra vonatkozó követelményeket.  
+
+Ez a funkció a következőket támogatja:  
+- Windows 10 és újabb
+- Windows Holographic for Business  
 
 ## <a name="kiosk"></a>Kioszkmód
 

@@ -1,11 +1,11 @@
 ---
-title: Vállalati macOS-eszköz regisztrálása az Intune-ban | Microsoft Docs
+title: A vállalat által biztosított macOS-eszköz felügyeleti regisztrálása | Microsoft Docs
 description: Azt mutatja be, hogyan regisztrálhat az Intune-ban egy, a cég által vásárolt és rendelkezésre bocsátott macOS-eszközt.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/24/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,26 +17,26 @@ ROBOTS: ''
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 272a82f7d3d62d117fa5506ccf446b3169ff514f
-ms.sourcegitcommit: bb56ada81e6d4950f130415918c4acc455bb52dd
+ms.openlocfilehash: a5808a0ac80390b76058827d2ca0870249b043b9
+ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43016227"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241830"
 ---
-# <a name="get-your-company-owned-macos-device-managed"></a>Vállalati tulajdonú macOS-eszköz felügyelete
+# <a name="enroll-your-organization-provided-macos-device-in-management"></a>A vállalat által biztosított macOS-eszköz felügyeleti regisztrálása
 
-Megtudhatja, hogyan helyezhet egy új macOS-eszközt automatikus felügyelet alá az Intune-ban.
+Útmutató új macOS-eszköz Intune-felügyelet alá helyezéséhez.  
 
-A munkahelyi és iskolai tulajdonú eszközöket gyakran előre konfigurálják, mielőtt a felhasználó megkapná őket. A cég előre konfigurált beállításokat küld az eszközre, amikor Ön először bekapcsolja azt, és bejelentkezik. Miután az eszköz elvégezte a beállításokat, Ön hozzáférhet a munkahelyi vagy iskolai erőforrásokhoz. 
+A munkahelye vagy iskolája által biztosított eszközöket gyakran előre konfigurálják, mielőtt Ön megkapja azokat. A vállalat akkor küldi az eszközre ezeket az előre konfigurált beállításokat, miután Ön először bekapcsolta azt, és bejelentkezett. Miután az eszköz elvégezte a beállításokat, Ön hozzáférhet munkahelyi vagy iskolai erőforrásaihoz. 
 
 A felügyelet beállításának megkezdéséhez kapcsolja be az eszközt, majd jelentkezzen be a munkahelyi vagy iskolai fiókjával. A cikk a továbbiakban azokat a lépéseket és képernyőket ismerteti, amelyekkel a Beállítási asszisztensben találkozni fog.   
 
 ## <a name="what-is-apple-dep"></a>Mi az Apple DEP?
-Ha egy vállalati tulajdonú eszközt használ, előfordulhat, hogy azt az Apple készülékregisztrációs program (Device Enrollment Program, DEP) keretén belül szerezték be. Egyes cégek nagy mennyiségben vásárolnak iOS- vagy macOS-eszközöket az Apple DEP-n keresztül. Ezt követően az eszközöket egy általuk preferált mobileszköz-felügyeleti szolgáltatóval, például az Intune-nal konfigurálják és felügyelik. Ha Ön rendszergazda, és több információt szeretne az Apple DEP-vel kapcsolatban, tekintse át a [macOS-eszközök automatikus regisztrálása az Apple készülékregisztrációs programjával (DEP)](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos) című cikket.  
+Lehetséges, hogy vállalata az úgynevezett *Apple Készülékregisztrációs programon* (DEP) keresztül vásárolta meg eszközeit. Az Apple DEP nagy mennyiségű iOS- vagy macOS-eszköz vásárlását teszi lehetővé a vállalatok számára. Ezt követően ezeket az eszközöket egy általuk preferált mobileszköz-felügyeleti szolgáltatóval, például az Intune-nal konfigurálják és felügyelik. Ha Ön rendszergazda, és információt szeretne az Apple DEP-vel kapcsolatban, tekintse át a [macOS-eszközök automatikus regisztrálása az Apple készülékregisztrációs programjával (DEP)](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos) című cikket.  
 
 ## <a name="set-up-your-macos-device"></a>A macOS-eszköz beállítása  
-Az alábbi lépésekkel regisztrálhatja macOS-eszközét a felügyeleti szolgáltatásban. Ha nem vállalati tulajdonú, hanem saját eszközt használ, kövesse a [személyes és saját eszközökre](enroll-your-device-in-intune-macos-cp.md) vonatkozó lépéseket.  
+Az alábbi lépésekkel regisztrálhatja macOS-eszközét a felügyeleti szolgáltatásban. Ha nem a vállalat által biztosított, hanem saját eszközt használ, kövesse a [személyes és saját eszközökre](enroll-your-device-in-intune-macos-cp.md) vonatkozó lépéseket.  
 
 1. Kapcsolja be a macOS-eszközt. 
 2. Válasszon egy **nyelvet**, és kattintson a **Folytatás** gombra.  
@@ -64,4 +64,4 @@ Az alábbi lépésekkel regisztrálhatja macOS-eszközét a felügyeleti szolgá
 ## <a name="get-the-company-portal-app"></a>A Céges portál alkalmazás beszerzése      
 Nyissa meg az App Store áruházat, és telepítse az eszközre a Céges portál alkalmazást. Ezzel az alkalmazással monitorozhatja, szinkronizálhatja, hozzáadhatja és eltávolíthatja az eszközt a felügyeletből, és további alkalmazásokat is telepíthet.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

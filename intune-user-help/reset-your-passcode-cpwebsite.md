@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 06/23/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,57 +17,68 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 45b087b9617b783517f8296f1726891392764d5f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8ce71a14f9bb7e877fb31e78afdf64d5e492f4a8
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31019330"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146689"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Az eszköz jelszavának alaphelyzetbe állítása a Vállalati portál webhelyén
 
-Ha elveszíti egy Intune-ban regisztrált eszköz PIN-kódját vagy jelszavát, a [Céges portál webhelyen](https://portal.manage.microsoft.com#HelpDeskDialog) kérhet újat. A Vállalati portál webhelyét az Intune-ban regisztrált számítógépek és eszközök felügyeletére, illetve a Vállalati portál alkalmazásban elvégezhető legtöbb feladat végrehajtására használhatja.
+Ha elveszíti egy eszköz PIN-kódját vagy jelszavát, a [Céges portál webhelyen](https://portal.manage.microsoft.com) kérhet újat.  
 
-> [!NOTE]
-> Regisztrált céges eszköz használata esetén előfordulhat, hogy a Jelszó alaphelyzetbe állítása gomb nem jelenik meg a Céges portál webhelyén. Ha ezt tapasztalja, kérje meg a cég informatikai támogatási szolgálatát, hogy állítsa alaphelyzetbe a jelszót.
+Vállalat által birtokolt eszköz használata esetén lehet, hogy nem jelenik meg a jelszó alaphelyzetbe állításának lehetősége. Kérje meg a vállalat informatikai támogatási szolgálatát, hogy állítsa alaphelyzetbe a jelszót.
 
-A jelszó alaphelyzetbe állítása:
-
-1. A [Céges portál webhelyen](https://portal.manage.microsoft.com#HelpDeskDialog) koppintson a __menü__ gombra ![A menügomb képe, három vízszintes vonal párhuzamosan elhelyezve egymás alá.](/intune/media/CP_hamburger_menu.png), majd válassza az __Saját eszközök__ menüpontot.
-
-2. A __Saját eszközök__ oldalon válassza ki annak az eszköznek a nevét, amelyiknek a jelszavát alaphelyzetbe kívánja állítani.
-
-   ![Képernyőkép a Saját eszköz lapról, amelyen különböző azonosítatlan eszközök láthatók a listán nem szereplő eszközök regisztrálását vagy az azonosítatlan eszközök azonosítását felajánló szalagcím felett.](./media/macOS_enroll_002_tap_here_banner.png)
-
-3. Az adott eszköz lehetőségei egy előreugró ablakban nyílnak meg. Válassza a **Jelszó alaphelyzetbe állítása** lehetőséget.
-
-   ![A kiválasztott eszközzel kapcsolatos összes lehetőség a Céges portál webhelyén, többek között az Átnevezés, az Eltávolítás, az Eszköz alaphelyzetbe állítása, a Jelszó alaphelyzetbe állítása és a Távoli zárolás lehetőségei. ](./media/iwp-screen-with-all-options.png)
-
-4. Egy értesítésszalag jelenik meg, ahol megerősítheti, hogy jelszavát alaphelyzetbe kívánja állítani, és tájékoztatja, hogy az eszköz ezt követően kijelentkezik a szolgáltatásból. Mielőtt ismét bejelentkezne, 5 percet kell várnia.
-
-   ![A jelszó alaphelyzetbe állításának megerősítésére felszólító értesítésszalag az eszköz jelszavának alaphelyzetbe állítására figyelmeztető és a felhasználó kijelentkeztetésével kapcsolatos értesítéssel. A felhasználó a Kijelentkezés és a Mégse gombokat használhatja.](./media/iwp-reset-passcode-popup.png)
-
-5. Válassza a **Kijelentkezés** lehetőséget. Még egy utolsó értesítést fog látni az eszköz PIN-kódjának eltávolításáról. Ha nincs önnél az eszköz, ne távolítsa el a PIN-kódot, mert akinél az eszköz van, az ezután hozzáférhet a rajta található személyes és céges adatokhoz egyaránt. 
-
-   ![A jelszó alaphelyzetbe állításának megerősítésére felszólító második értesítésszalag az eszköz jelszavának alaphelyzetbe állítására figyelmeztető és a jelszó eszközről történő eltávolításával kapcsolatos értesítéssel. Ezen kívül arról is tájékoztat, hogy miként lehet új jelszót beállítani az eszköz beállításainak segítségével.](./media/iwp-reset-passcode-2nd-popup.png)
-
-   A különböző eszközök eltérő hozzáférési kódokat használnak.
-
-   **Android:** Eltávolítja a meglévő jelszót, és egy betűkből és számokból álló ideiglenes jelszót hoz létre. 
-  
    > [!NOTE]
-   > Android 7.0-s és újabb verziók esetén az eszköz jelszava nem állítható alaphelyzetbe. Ha elfelejti a jelszót, ezeket az eszközöket a gyári beállításokra kell visszaállítani.
+   > Android 7.0-s és újabb verziók esetén az eszköz jelszava nem állítható alaphelyzetbe. Ha elfelejti a jelszót, az eszközt a gyári beállításokra kell visszaállítani. 
 
-   **iOS:** Eltávolítja a meglévő jelszót, és nem hoz létre ideiglenes jelszót. Ha a Touch ID ujjlenyomat-olvasót használja az eszköz zárolásának feloldásához vagy vásárláshoz, azt újra be kell állítania.
+## <a name="reset-your-passcode"></a>A jelszó alaphelyzetbe állítása
 
-   **Windows 10 Mobile:** Eltávolítja a meglévő jelszót, és egy betűkből és számokból álló ideiglenes jelszót hoz létre. Ha a Windows Hello arcfelismerési funkcióját használja a bejelentkezéshez, az továbbra is támogatott lesz.
+1.  Nyissa meg a [Céges portál webhelyét](https://portal.manage.microsoft.com), és válassza a __Menü__ gomb >__Eszközök__ lehetőséget.  
+
+2. Válassza ki azt az eszközt, amelynek a jelszavát alaphelyzetbe kell állítani.  
+
+    ![Képernyőkép az Eszközök oldalról, amelyen két csempén azonosítatlan, általános nevű eszközök láthatók. Közvetlenül az eszközök alatt egy szürke szalagcím helyezkedik el, amely arra kéri a felhasználót, hogy azonosítsa a használt eszközt, vagy adjon hozzá egy újat.](./media/rename-reset-device-step2-1808.png) 
+
+3. Válassza a **Jelszó alaphelyzetbe állítása** lehetőséget. Ha a jelszó lehetőség nem jelenik meg az oldal tetején, válassza az **Egyéb (…)** > **Jelszó alaphelyzetbe állítása** lehetőséget.   
+
+   ![A kiválasztott eszköz adatai a Céges portál webhelyén, felül az Átnevezés, az Eltávolítás, az Eszköz alaphelyzetbe állítása, a Jelszó alaphelyzetbe állítása és a Távoli zárolás lehetőségekre mutató hivatkozásokkal. ](./media/rename-reset-device-1808.png)   
+
+    ![Az Egyéb ikon kinagyított képe egy piros nyíllal kiemelve.](./media/rename-reset-device-step3-more-1808.png)  
+
+4. Ha a program arra kéri, kattintson a **Kijelentkezés** gombra. Újabb kérés esetén jelentkezzen be ismét. Ha öt percen belül nem jelentkezik be újra a Céges portálra, a Céges portál nem állítja alaphelyzetbe a jelszót.  
+
+   > [!NOTE]
+   > A személyazonossága megerősítéséhez újra be kell jelentkeznie. Ennek a beállításnak az a célja, hogy megakadályozza a jelszó alaphelyzetbe állítására vonatkozó rosszindulatú kísérleteket.
+
+   ![A képernyőképeken a Céges portál kijelentkezésre való felszólítása látható. A felhasználó a Kijelentkezés és a Mégse gombokat használhatja.](./media/iwp-reset-passcode-popup-1808.png)
+
+5. Ekkor egy üzenet jelenik meg, hogy az eszköz meglévő jelszava el lesz távolítva. A jóváhagyáshoz kattintson a **Jelszó alaphelyzetbe állítása** lehetőségre.  
+    > [!WARNING]
+    > A jelszó alaphelyzetbe állítása után bárki, akinek fizikai hozzáférése van az eszközhöz, hozzáférhet az eszközön tárolt legtöbb személyes és céges adathoz. Ha az eszköz jelenleg nincs az ön birtokában, ne állítsa alaphelyzetbe a jelszót.  
+
+   ![A képernyőképen a jelszó alaphelyzetbe állítására vonatkozó második üzenet látható. Tartalmaz egy hivatkozást, amely a dokumentációban az új jelszó beállítására vonatkozó részre mutat, és egyéni gombokat, amelyekkel alaphelyzetbe állíthatja a jelszót, és megszakíthatja a műveletet.](./media/iwp-reset-passcode-popup2-1808.png) 
+
+6. Ha iOS-eszközön állítja alaphelyzetbe a jelszót, a meglévő jelszó el lesz távolítva. Windows vagy Android rendszerű eszközök esetén ideiglenes jelszót kap az eszköz zárolásának feloldásához és az új jelszó beállításához. 
+
+   > [!NOTE]
+   > A Windows és Android rendszerű eszközökhöz tartozó ideiglenes jelszó a Céges portálon, az eszközadatokat tartalmazó lapon található. Az egyes operációs rendszerek jelszóbeállításaihoz tekintse meg az [Új jelszó beállítása](reset-your-passcode-cpwebsite.md#set-up-a-new-passcode) szakaszt.  
+   
+7. Nyissa meg a **Beállítások** oldalt az eszközén, és módosítsa az ideiglenes jelszót. 
+
+8. Ekkor egy zászló jelenik meg a Céges portál webhelyének jobb felső részén. Kattintson az üzenetre, és erősítse meg, hogy a jelszó alaphelyzetbe állítása sikerült.  
+
+## <a name="set-up-a-new-passcode"></a>Új jelszó beállítása  
+
+Ez a szakasz a jelszó alaphelyzetbe állítását és az ideiglenes jelszó viselkedését ismerteti az egyes eszközplatformokon.  
+
+**Android**: Eltávolítja a meglévő jelszót, és egy betűkből és számokból álló ideiglenes jelszót hoz létre.
+
+**iOS:** Eltávolítja a meglévő jelszót, és nem hoz létre ideiglenes jelszót. Ha a Touch ID ujjlenyomat-leolvasóval megnyitja az eszközt vagy vásárol, a jelszót ismét be kell állítania.  
+
+**Windows 10 Mobile**: Eltávolítja a meglévő jelszót, és egy betűkből és számokból álló ideiglenes jelszót hoz létre. A beállítás után a Windows Hello arcfelismerő rendszer továbbra is működni fog az eszközön.
     
-   **Windows Phone 8.1:** Eltávolítja a meglévő jelszót, és egy számokból álló ideiglenes jelszót hoz létre.
+**Windows Phone 8.1**: Eltávolítja a meglévő jelszót, és egy számokból álló ideiglenes jelszót hoz létre.  
 
-   Androidos és windowsos eszközöknél az ideiglenes jelszó az **Eszköz adatai** területen fog megjelenni. 
-
-6. Oldja fel az eszköz zárolását, és adjon meg egy új jelszót vagy módosítsa az ideiglenes jelszót az eszköz **Beállítások** menüjében.
-
-Ha szeretne egy megerősítő értesítést megjeleníteni arról, hogy a jelszó átállítása sikeresen megtörtént, kattintson a Vállalati portál webhelyének felső sarkában található értesítésjelzőre.
-
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).  

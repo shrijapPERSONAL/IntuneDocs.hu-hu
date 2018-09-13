@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5964ebdbac251468e3bc35c2c35f0bd2e7fddbff
-ms.sourcegitcommit: 1a8b34c7854a575bf6ce59f475c7b718fa038d66
+ms.openlocfilehash: cf6e7098462931000ce4cd5546390d27d68677f1
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/18/2018
-ms.locfileid: "40251792"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330160"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Alkalmazások hozzáadása a Microsoft Intune-hoz
 
@@ -62,7 +62,7 @@ A következő táblázatban megtekintheti a konkrét alkalmazástípusokat és a
 | Beépített Android-alkalmazás  | Beépített alkalmazás | Válassza a **Beépített alkalmazás** lehetőséget az **alkalmazás típusa** területen, majd jelöljön ki egy beépített alkalmazást az elérhető alkalmazások listáján.  |
 | Webalkalmazások  | Web app  | Válassza a **Webes hivatkozás** lehetőséget az **alkalmazás típusa** területen, majd adjon meg egy érvényes, a webalkalmazásra mutató URL-címet.  |
 
-A **Mobilalkalmazások** > **Alkalmazások** > **Hozzáadás** lehetőséggel hozzáadhat egy alkalmazást a Microsoft Intune-hoz. Megjelenik az **Alkalmazás hozzáadása** panel, ahol kiválaszthatja az **alkalmazás típusát**. 
+Az alkalmazásokat az **Ügyfélalkalmazások** > **Alkalmazások** > **Hozzáadás** lehetőséggel adhatja hozzá a Microsoft Intune-hoz. Megjelenik az **Alkalmazás hozzáadása** panel, ahol kiválaszthatja az **alkalmazás típusát**. 
 
 >[!TIP]
 > Az üzletági (LOB) alkalmazásokat egy alkalmazástelepítő fájlból adja hozzá. Egy iOS LOB-alkalmazás telepítéséhez például az **Alkalmazás hozzáadása** panel **Alkalmazás típusa** részén az **Üzletági alkalmazás** beállítás megadásával adhatja hozzá az alkalmazást. Ezután válassza ki az alkalmazáscsomag (.ipa kiterjesztésű) fájlját. Az ilyen típusú alkalmazások általában belső fejlesztésűek.
@@ -148,8 +148,8 @@ Amikor hozzáad egy alkalmazást az Intune-hoz, kiválaszthatja a kívánt kateg
 
 1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. Az **Intune** panelen válassza a **Mobilalkalmazások** lehetőséget.
-4. A **Mobilalkalmazások** munkaterületen a **Beállítások** alatt válassza az **Alkalmazáskategóriák** lehetőséget.  
+3. Az **Intune** ablaktáblán válassza az **Ügyfélalkalmazások** lehetőséget.
+4. Az **Ügyfélalkalmazások** területen a **Beállítások** alatt válassza az **Alkalmazáskategóriák** lehetőséget.  
     Az **Alkalmazáskategóriák** panel megjeleníti az aktuális kategóriák listáját. 
 5. A következő lehetőségek közül választhat:
     - Új kategória megadásához válassza a **Kategória létrehozása** panel **Hozzáadás** elemét, majd adja meg a kategória nevét.  

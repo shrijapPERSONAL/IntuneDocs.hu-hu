@@ -15,20 +15,20 @@ ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b7cff6c777de4a35aa6825d1d37fdd0c2f2d0b72
-ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
+ms.openlocfilehash: 5653e5fda04295041ebc549977007e7060b5508b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42751717"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312680"
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>iOS-eszközök regisztrálása az Apple Configurator használatával
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Az Intune támogatja az iOS-eszközöknek a Mac számítógépen futó [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344) segítségével történő regisztrálását. A céges regisztrálás Apple Configuratorral való beállításához az adott iOS-eszközt USB-csatlakozóval kell csatlakoztatni egy Mac számítógéphez. Az Apple Configurator használatával kétféle módon lehet regisztrálni az eszközt az Intune-ban:
-- **Regisztráció a Beállítási asszisztenssel** – Visszaállítja a gyári beállításokat az eszközön, és felkészíti azt a Beállítási asszisztenssel történő regisztrálásra.
-- **Közvetlen regisztrálás** – Ez a folyamat nem állítja vissza az eszközön a gyári beállításokat, és az iOS-beállításokon keresztül regisztrálja azt. Ez a módszer csak a **felhasználói affinitás nélküli** eszközöket támogatja.
+- **Regisztráció a Beállítási asszisztenssel** – Törli az eszköz összes adatát, és felkészíti azt a Beállítási asszisztenssel történő regisztrálásra.
+- **Közvetlen regisztrálás** – Ez a folyamat nem törli az eszköz összes adatát, és az iOS-beállításokon keresztül regisztrálja azt. Ez a módszer csak a **felhasználói affinitás nélküli** eszközöket támogatja.
 
 Az Apple Configurator regisztrációs módszerei nem használhatók az [eszközregisztráció-kezelővel](device-enrollment-manager-enroll.md).
 
@@ -134,7 +134,7 @@ Az eszközök most már készen állnak a vállalati regisztrációra. Kapcsolja
 Miután a felhasználók megkapják az eszközeiket, el kell végezniük a Beállítási asszisztens lépéseit. A felhasználói affinitással konfigurált eszközökön telepítheti és futtathatja a Vállalati portál alkalmazást az alkalmazások letöltéséhez és az eszközök kezeléséhez.
 
 ## <a name="direct-enrollment"></a>Közvetlen regisztráció
-Amikor közvetlenül regisztrál iOS-eszközöket az Apple Configurator használatával, anélkül regisztrálhat egy eszközt, hogy lekérné annak sorozatszámát. Az eszközt el is nevezheti azonosítási célból, mielőtt az Intune rögzítené az eszköz nevét a regisztráció alatt. A Céges portál alkalmazás nem támogatott a közvetlen módon regisztrált eszközökön. A művelethez nincs szükség a gyári beállítások visszaállítására.
+Amikor közvetlenül regisztrál iOS-eszközöket az Apple Configurator használatával, anélkül regisztrálhat egy eszközt, hogy lekérné annak sorozatszámát. Az eszközt el is nevezheti azonosítási célból, mielőtt az Intune rögzítené az eszköz nevét a regisztráció alatt. A Céges portál alkalmazás nem támogatott a közvetlen módon regisztrált eszközökön. Ez a módszer nem törli az eszköz összes adatát.
 
 Nem telepíthetők a felhasználói kapcsolatot igénylő alkalmazások, többek között az üzletági alkalmazások telepítéséhez használt Céges portál alkalmazás sem.
 

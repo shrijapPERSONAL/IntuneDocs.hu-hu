@@ -15,12 +15,12 @@ ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c00904097986d1cf70031f1b17171221da64abc0
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 1b43e7df72e709cfdd929085b1d6718f1afcdf9f
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224800"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347352"
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Mennyiségi vásárlási program keretében vásárolt iOS-es e-könyvek kezelése a Microsoft Intune-nal
 
@@ -55,8 +55,8 @@ Mielőtt hozzálát, szerezzen be VPP-tokent az Apple-től, és töltse fel az I
 
 1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. Az **Intune** panelen válassza az **Mobilalkalmazások** lehetőséget.
-1.  A **Mobilalkalmazások** munkafolyamatban válassza a **Telepítés** > **iOS VPP-jogkivonatok** elemet.
+3. Az **Intune** ablaktáblán válassza az **Ügyfélalkalmazások** lehetőséget.
+1.  Az **Ügyfélalkalmazások** területen válassza a **Telepítés** > **iOS VPP-jogkivonatok** elemet.
 2.  A VPP-tokenek panel listájában kattintson a **Létrehozás** elemre.
 3.  Az **Új VPP-token** panelen adja meg az alábbi adatokat:
     - **VPP-jogkivonatfájl** – Ha még nem tette meg, iratkozzon fel a Volume Purchase Program for Business vagy a Volume Purchase Program for Education programra. Ezután töltse le a fiókjához tartozó Apple VPP-tokent, és itt jelölje ki.

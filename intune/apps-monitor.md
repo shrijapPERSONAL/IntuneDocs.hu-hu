@@ -15,12 +15,12 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bedd1108ce0c9e173e6e9519a29d3948f1320c3a
-ms.sourcegitcommit: 1a8b34c7854a575bf6ce59f475c7b718fa038d66
+ms.openlocfilehash: a1cf7fbdee6e6dc0cb280c8f9473c48608485737
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/18/2018
-ms.locfileid: "40251911"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329904"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Alkalmazásadatok és -hozzárendelések figyelése a Microsoft Intune-ban
 
@@ -30,7 +30,7 @@ Az Intune több módot is kínál a felügyelt alkalmazások jellemzőinek figye
 
 1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. Az **Intune** menüben válassza a **Mobilalkalmazások** lehetőséget.
+3. Az **Intune** menüben válassza az **Ügyfélalkalmazások** lehetőséget.
 4. A menü **Kezelés** szakaszában válassza az **Alkalmazások**. elemet.
 5. Az alkalmazáslistában válasszon egy figyelni kívánt alkalmazást. Ekkor megjelenik az alkalmazás panelje, melyen áttekintheti az eszköz és a felhasználó állapotát.
 

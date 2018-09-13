@@ -14,12 +14,12 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f711a6bec9be0ac1fd94183931070f9988d49e3
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 1ee08c77fe085ad0f238d63481dd682ea15aa5ce
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31442644"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313085"
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>iOS-es eszközök megfelelőségi szabályzatainak felvétele az Intune-ban
 
@@ -105,7 +105,12 @@ Az e-mail-profilról a [Vállalati levelezéshez való hozzáférés konfigurál
 
 - **Jelszó kérése legfeljebb ennyi perc inaktivitás után**: Arra a tétlenségi időre vonatkozik, amelynek elteltével a felhasználónak újra meg kell adnia a jelszavát.
 - **Jelszó érvényessége (napokban)**: Válassza ki, hány nap elteltével járjon le a jelszó, ami után újat kell létrehoznia.
-- **Újból nem használható jelszavak száma**: Megadhatja, hogy hány legutóbbi jelszó ne legyen újra felhasználható.
+- **Újból nem használható jelszavak száma**: Megadhatja, hogy hány korábbi jelszó ne legyen újra felhasználható.
+
+### <a name="restricted-applications"></a>Korlátozott alkalmazások 
+Alkalmazásokat úgy korlátozhat, hogy kötegazonosítójukat hozzáadja a szabályzathoz. Így ha az alkalmazás telepítve van az eszközön, az eszköz nem megfelelőként lesz megjelölve. 
+- **Alkalmazásnév**: Adjon meg egy felhasználóbarát nevet, mely alapján a kötegazonosító könnyebben azonosítható. 
+- **Alkalmazás kötegazonosítója**: Adja meg az alkalmazás szolgáltatója által hozzárendelt egyedi kötegazonosítót. A kötegazonosítót az [iOS-alkalmazás kötegazonosítójának megállapítása](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app) című témakörben leírtak alapján találhatja meg.  
 
 ## <a name="assign-user-groups"></a>Felhasználói csoportok hozzárendelése
 

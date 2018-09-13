@@ -15,12 +15,12 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5d3cc718c0bfd0bba68480b4cd4003cd52489a50
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 5ed39a13c8866786ac044d77ca61d91becd5b89f
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34225038"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329564"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Az iOS-alkalmazáskiépítési profilok segítségével megakadályozhatja, hogy az alkalmazásai lejárjanak
 
@@ -43,8 +43,8 @@ Rendszergazdaként belefoglaló vagy kizáró biztonsági csoportokat hozhat lé
 
 1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. Az **Intune** panelen válassza az **Mobilalkalmazások** lehetőséget.
-1.  A **Mobilalkalmazások** munkafolyamatban válassza a **Felügyelet** > **iOS-alkalmazáskiépítési profilok** elemet.
+3. Az **Intune** ablaktáblán válassza az **Ügyfélalkalmazások** lehetőséget.
+1.  Az **Ügyfélalkalmazások** tevékenységprofilban válassza a **Felügyelet** > **iOS-alkalmazáskiépítési profilok** elemet.
 2.  A profilok listáját mutató panelen válassza a **Profil létrehozása** lehetőséget.
 3. A **Profil létrehozása** panelen konfigurálja a következő értékeket:
     - **Név** – Adjon egy nevet a mobil kiépítési profilnak.

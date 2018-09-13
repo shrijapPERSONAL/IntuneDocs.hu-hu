@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f973bd36faef14232d6449c8ce9d1dc92bf32170
-ms.sourcegitcommit: 0bddd8a76201746e8835c4b792f34377b45fad60
+ms.openlocfilehash: b37c210425fd5abf8fd0b0501966fef8196b451b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39356573"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312621"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Aktiválási zár megkerülése felügyelt iOS-eszközökön az Intune-nal
 
@@ -78,9 +78,9 @@ Az Intune **Aktiválási zár megkerülése** távoli eszközművelet a felhaszn
 6. Nyissa meg az eszköz „Hardver” szakaszát, majd **feltételes hozzáféréssel** másolja ki az **Aktiválási zár megkerülési kódjának** értékét.
 
     >[!NOTE]
-    >Mielőtt az eszközön visszaállítja a gyári beállításokat, másolja ki a megkerülési kódot. Ha az eszközbeállításokat a kód kimásolása előtt állítja vissza, a kód el lesz távolítva az Azure-ból.
+    >Az eszköz összes adatának törlése előtt másolja ki a megkerülési kódot. Ha az eszközbeállításokat a kód kimásolása előtt állítja vissza, a kód el lesz távolítva az Azure-ból.
 
-7.  Nyissa meg az eszköz **Áttekintés** paneljét, majd válassza ki a **Gyári visszaállítás** lehetőséget.
+7.  Nyissa meg az eszköz **Áttekintés** paneljét, majd válassza az **Összes adat törlése** lehetőséget.
 8.  Az eszköz alaphelyzetbe állítása után meg kell adnia az *Apple-azonosítót* és a *jelszót*. Hagyja üresen az *Azonosító* mezőt, majd adja meg az **aktiválásizár-megkerülő kódot** a *jelszóhoz*. Ezzel eltávolítja a fiókot az eszközről. 
 
 

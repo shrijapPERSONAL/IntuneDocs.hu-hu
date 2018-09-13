@@ -5,21 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 08/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.reviewer: tycast
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f6532c63612b806f9824f5b9ca98f1ebbbc943f
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: e15a7b034c9277fcd960e8c704f4318f0f5c1da2
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321661"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329647"
 ---
-## <a name="wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Wi-Fi-beállítások Windows 10 és újabb rendszerű eszközökhöz az Intune-ban
+# <a name="wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Wi-Fi-beállítások Windows 10 és újabb rendszerű eszközökhöz az Intune-ban
 
 A Wi-Fi-beállítások Windows 10 és újabb rendszerű eszközökre érvényes konfigurációs profilokban vannak használva. A lehetőségek a következők:
 
@@ -77,25 +78,36 @@ A Wi-Fi-beállítások Windows 10 és újabb rendszerű eszközökre érvényes 
   - **EAP-TTLS**
   - **Védett EAP** (PEAP)
 
-### <a name="more-options-when-you-choose-the-eap-type"></a>További lehetőségek az EAP típusának kiválasztásakor
+    **EAP-TLS, EAP-TTLS és PEAP további beállításai**:
+    
+    > [!NOTE]
+    > EAP-típusok használata esetén jelenleg csak az SCEP-tanúsítványprofilok támogatottak. A PKCS-tanúsítványprofilok nem támogatottak. Amikor egy felhasználótól tanúsítvány megadását kérik, mindenképpen SCEP-tanúsítványt kell választani.
 
-> [!NOTE]
-> EAP-típusok használata esetén jelenleg csak az SCEP-tanúsítványprofilok támogatottak. A PKCS-tanúsítványprofilok nem támogatottak. Amikor egy felhasználótól tanúsítvány megadását kérik, mindenképpen SCEP-tanúsítványt kell választani.
+      - **Kiszolgáló megbízhatósága**  
 
-#### <a name="server-trust"></a>Kiszolgáló megbízhatósága
+        **Tanúsítvány-kiszolgálók nevei**: **EAP-TLS**, **EAP-TTLS** vagy **PEAP** EAP-típusokkal használható. Adjon meg egy vagy több, a megbízható hitelesítésszolgáltató (CA) által kiállított tanúsítványban használt köznapi nevet. Ha megadja ezt az információt, elkerülheti a dinamikus megbízhatósági párbeszédpanelt, amely megjelenik a felhasználók eszközein, amikor ehhez a Wi-Fi-hálózathoz csatlakoznak.  
 
-|Beállítás neve|További információ|A következő esetekben használja|
-|--------------|-------------|----------|
-|**Tanúsítványkiszolgálók neve**|Adjon meg egy vagy több, a megbízható hitelesítésszolgáltató (CA) által kiállított tanúsítványban használt köznapi nevet. Ha megadja ezt az információt, elkerülheti a dinamikus megbízhatósági párbeszédpanelt, amely megjelenik a felhasználók eszközein, amikor ehhez a Wi-Fi-hálózathoz csatlakoznak.|Ha az EAP-típus **EAP-TLS**, **EAP-TTLS**, vagy **PEAP**|
-|**Kiszolgálói érvényesítéshez használandó főtanúsítvány**|Válassza ki a kapcsolat hitelesítéséhez használni kívánt megbízható főtanúsítvány-profilt. |Ha az EAP-típus **EAP-TLS**, **EAP-TTLS**, vagy **PEAP**|
-|**Identitásadatok védelme (külső identitás)**|Adja meg az EAP-identitásra irányuló kérelemre adott válasz szövegét. Ez a szöveg tetszőleges érték lehet. A hitelesítés során a rendszer először a névtelen identitást küldi el, majd később egy biztonságos csatornán küldi el a valódi azonosítót.|Ha az EAP-típus **PEAP**|
+        **Gyökértanúsítvány kiszolgálóhitelesítéshez**: **EAP-TLS**, **EAP-TTLS** vagy **PEAP** EAP-típusokkal használható. Válassza ki a kapcsolat hitelesítéséhez használni kívánt megbízható főtanúsítvány-profilt.  
 
-#### <a name="client-authentication"></a>Ügyfél-hitelesítés
+        **Identitásadatok védelme (külső identitás)**: **PEAP** EAP-típussal használható. Adja meg az EAP-identitásra irányuló kérelemre adott válasz szövegét. Ez a szöveg tetszőleges érték lehet. A hitelesítés során a rendszer először a névtelen identitást küldi el, majd később egy biztonságos csatornán küldi el a valódi azonosítót.  
 
-| Beállítás neve | További információ | A következő esetekben használja |
-|---|---|---|
-| **Ügyfél-hitelesítéshez használandó ügyféltanúsítvány (identitástanúsítvány)** |  Válassza ki a kapcsolat hitelesítéséhez használni kívánt SCEP-tanúsítványprofilt. | Ha az EAP-típus **EAP-TLS** |
-| **Hitelesítési módszer** | Válassza ki a kapcsolat hitelesítési módszerét:<br><br>- **Tanúsítványok**: Válassza ki a kiszolgálónak az identitás tanúsítványaként benyújtott SCEP-ügyféltanúsítványt.<br><br>- **Felhasználónév és jelszó**: Adjon meg egy **nem-EAP módszert (belső identitás)** a hitelesítéshez. A választható lehetőségek:<br><br>- **Titkosítatlan jelszó (PAP)**<br>- **Kérdés-kézfogás (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP 2-es verzió (MS-CHAP v2)**<br><br>- **Identitásadatok védelme (külső identitás)**: Adja meg az EAP-identitásra irányuló kérelemre adott válasz szövegét. Ez a szöveg tetszőleges érték lehet. A hitelesítés során a rendszer először a névtelen identitást küldi el, majd később egy biztonságos csatornán küldi el a valódi azonosítót. | Ha az EAP-típus **EAP-TTLS** |
+      - **Ügyfél-hitelesítés**
+
+        **Ügyfél-hitelesítéshez használandó ügyféltanúsítvány (identitástanúsítvány)**: **EAP-TLS** EAP-típussal használható. Válassza ki a kapcsolat hitelesítéséhez használni kívánt tanúsítványprofilt.
+
+        **Hitelesítési módszer**: **EAP-TTLS** EAP-típussal használható. Válassza ki a kapcsolat hitelesítési módszerét:  
+
+          - **Tanúsítványok**: Válassza ki a kiszolgálónak az identitás tanúsítványaként benyújtott ügyféltanúsítványt.
+          - **Felhasználónév és jelszó**: Adjon meg egy **nem-EAP módszert (belső identitás)** a hitelesítéshez. A választható lehetőségek:
+
+            - **Titkosítatlan jelszó (PAP)**
+            - **Kérdés-kézfogás (CHAP)**
+            - **Microsoft CHAP (MS-CHAP)**
+            - **Microsoft CHAP 2-es verzió (MS-CHAP v2)**
+
+        **Identitásadatok védelme (külső identitás)**: **EAP-TTLS** EAP-típussal használható. Adja meg az EAP-identitásra irányuló kérelemre adott válasz szövegét. Ez a szöveg tetszőleges érték lehet. A hitelesítés során a rendszer először a névtelen identitást küldi el, majd később egy biztonságos csatornán küldi el a valódi azonosítót.
+
+- **A Wi-Fi-profil Federal Information Processing Standard (FIPS) szabványnak való megfelelésének a kényszerítése**: Válassza az **Igen** lehetőséget, ha a FIPS 140-2 szabvány szerinti érvényességet ellenőrzi. Ennek a szabványnak a betartása kötelező az összes Egyesült Államokbeli Szövetségi kormányzati szerv részére, ahol titkosításon alapuló biztonsági rendszereket használnak a digitálisan tárolt bizalmas, de nem titkos minősítésű információk tárolására. Válassza a **Nem** lehetőséget, ha nem szeretne FIPS-megfelelőséget.
 
 ## <a name="use-an-imported-settings-file"></a>Importált beállításfájl használata
 

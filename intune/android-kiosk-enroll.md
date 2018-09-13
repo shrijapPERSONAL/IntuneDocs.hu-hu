@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 90cd71383e8f2f82bf9fd6a3dc579c1c0a954227
-ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
+ms.openlocfilehash: 515853864236638bc2732f6539d087bd125e3c56
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42903143"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313461"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Vállalati androidos kioszkeszközök regisztrálásának beállítása
 
@@ -112,7 +112,7 @@ Az NFC-t támogató Android 5.1 vagy újabb rendszerű eszközöket egy speciál
 
 Android 6 vagy újabb rendszerű eszközök esetén használhatja a jogkivonatot az eszköz regisztrálásához. Az Android 6.1-es és újabb verzióinál a QR-kódok olvasására is lehetőség van az **aft#setup** regisztrációs metódus használatakor.
 
-1. Kapcsolja be a gyári alaphelyzetbe állított eszközt.
+1. Kapcsolja be a törölt tartalmú eszközt.
 2. Az **Üdvözlőképernyőn** válasszon nyelvet.
 3. Kapcsolódjon a **WiFi** hálózathoz, majd válassza a **TOVÁBB** lehetőséget.
 4. Fogadja el a Google feltételeit és kikötéseit, majd válassza a **TOVÁBB** lehetőséget.
@@ -129,7 +129,7 @@ Android 7 vagy újabb rendszerű eszközökön az eszköz regisztrálásához be
 > [!Note]
 > A böngésző kicsinyítése miatt előfordulhat, hogy az eszközökkel nem lehet beolvasni a QR-kódot. A nagyítás növelése megoldja ezt a problémát.
 
-1. A QR-kód olvasása az Android-eszközön úgy indítható el, hogy többször a gyári alaphelyzetbe állítás utáni első képernyőre koppint.
+1. A QR-kód olvasása az Android-eszközön úgy indítható el, hogy többször az összes adat törlése után először megjelenő képernyőre koppint.
 2. Android 7-es és 8-as eszközökön a rendszer kérni fogja egy QR-kódolvasó telepítését. Az Android 9 és újabb rendszerű eszközökön már van telepítve QR-kódolvasó.
 3. Olvassa be a regisztrációs profil QR-kódját a QR-kódolvasóval, majd a regisztráláshoz kövesse a képernyőn megjelenő utasításokat.
 

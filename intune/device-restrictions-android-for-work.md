@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 34c66aabe8c094b67805bcf0eeae38dbbbbff627
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 51e52e26357143d214c4bcf7856dfdb75a68653c
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905937"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329769"
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>A Work eszközkorlátozásainak beállításai az Intune-ban
 
@@ -42,7 +42,7 @@ A cikk felsorolja a Microsoft Intune összes olyan eszközkorlátozásokra vonat
   - **Automatikus engedélyezés**
   - **Automatikus elutasítás**
 
-    Az engedélyezési állapotot részletesebben is lehet definiálni konkrét alkalmazások esetén, ha az adott alkalmazáshoz alkalmazáskonfigurációs szabályzatot használ (**Mobilalkalmazások** > **Alkalmazáskonfigurációs szabályzatok**).
+    Az engedélyezési állapotot részletesebben is lehet definiálni konkrét alkalmazások esetén, ha az adott alkalmazáshoz alkalmazáskonfigurációs szabályzatot használ (**Ügyfélalkalmazások** > **Alkalmazáskonfigurációs szabályzatok**).
 
 - **Fiókok hozzáadása és eltávolítása**
 

@@ -15,12 +15,12 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c7a47063631ef3d5195dec2e91523772adb4e34c
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 990226cba088585021db691753c6a3a8063927d3
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224262"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347253"
 ---
 # <a name="add-microsoft-store-apps-to-microsoft-intune"></a>Microsoft Store-alkalmazások hozzáadása a Microsoft Intune-hoz
 
@@ -34,8 +34,8 @@ A következő módon adhat hozzá Microsoft Store-beli alkalmazást az Intune-ho
 1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget.  
     Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. Az **Intune** panelen válassza a **Mobilalkalmazások** lehetőséget.
-4. A **Mobilalkalmazások** munkaterületen a **Kezelés** szakaszban válassza az **Alkalmazások** lehetőséget.
+3. Az **Intune** ablaktáblán válassza az **Ügyfélalkalmazások** lehetőséget.
+4. Az **Ügyfélalkalmazások** tevékenységprofil panelén a **Kezelés** szakaszban válassza az **Alkalmazások** lehetőséget.
 5. Az **Alkalmazások** panelen válassza a **Hozzáadás** lehetőséget.
 6. Az **Alkalmazás hozzáadása** panelen válassza a **Windows** lehetőséget az **Alkalmazás típusa** területen, majd válassza az **Alkalmazásadatok** lehetőséget.
 7. Az **Alkalmazásadatok** panelen adja meg az alkalmazás adatait. A választott alkalmazástól függően előfordulhat, hogy egyes értékek automatikusan ki vannak töltve a panelen:

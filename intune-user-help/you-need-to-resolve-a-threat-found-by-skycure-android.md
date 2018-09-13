@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,36 +15,41 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: caac4b62c141145ac976d1515e6fdc92da90e962
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: ae001eb4d85a35b587eee4fa04df5f1987b247f7
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30753090"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149807"
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Symantec Endpoint Protection Mobile által észlelt fenyegetés elhárítása
 
-A Symantec Endpoint Protection Mobile potenciális fenyegetést észlelt az Ön eszközén. Ahhoz, hogy ismét hozzáférjen céges vagy iskolai levelezéséhez, alkalmazásaihoz és fájljaihoz, meg kell szüntetnie ezt a problémát. A következőhöz hasonló üzenetet fog látni:
+A Symantec Endpoint Protection (SEP) Mobile egy mobilfenyegetés elleni védelmi szolgáltatás, amely lehetséges fenyegetéseket azonosít Android-eszközein. A fenyegetéseket a rendszer jelenti a Céges portál alkalmazásnak, ahol megoldatlan nem megfelelőségi problémákként jelennek meg. Amíg az eszköze nem megfelelőként van azonosítva, előfordulhat hogy nem lesz lehetősége a következőkre:
 
-![A Skycure fenyegetést talált az eszközön](./media/lookout-threat-found-android.png)
+* Hozzáférés a vállalati e-mailekhez
+* Hozzáférés a vállalati Wi-Fi-hez
+* Hozzáférés a SharePoint Online-hoz
+* Vállalati fájlok szinkronizálása a OneDrive-val
+* Hozzáférés a vállalati alkalmazásokhoz
 
-A probléma megoldásához nyissa meg a Symantec Endpoint Protection Mobile alkalmazást, és kövesse az ott megjelenő utasításokat.
+Ez a cikk az SEP Mobile fenyegetési riasztásainak felismerését és a fenyegetések elhárításának módját ismerteti. 
 
-## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>Mi látható, ha a regisztrált eszköz e-mailekhez és fájlokhoz való hozzáférése le van tiltva?
+## <a name="resolve-virus-or-security-threat"></a>Vírus vagy biztonsági fenyegetés elhárítása  
 
-Ha a regisztrált eszközön vírus vagy másféle biztonsági fenyegetés található, és megpróbálja elérni az iskolai e-maileket vagy fájlokat, ehhez hasonló üzenet jelenik meg:
+1. Ha megkísérel hozzáférni a vállalati e-mailhez vagy webhelyekhez, az alábbi képernyőképen láthatóhoz hasonló üzenetet kap. Koppintson az **eszközfelügyeleti portál** hivatkozásra a [Céges portál webhely](https://portal.manage.microsoft.com/devices) megnyitásához.
 
-![A Skycure hibaüzenete és hivatkozás a Céges portál webhelyére](./media/skycure-list-of-potential-issues-android.png)
+    ![Példa-képernyőkép egy Lookout for Work-hibaüzenetről, a Céges portál webhelyre mutató hivatkozással és a kék OK gombbal.](./media/mtd-go-to-device-management-portal-android.png)  
 
-Koppintson az **eszközkezelési portál** hivatkozásra a [Vállalati portál webhelyének](https://portal.manage.microsoft.com#HelpDeskDialog) eléréséhez, ahol útmutatót talál a probléma elhárításához.
+2. Jelölje ki az eszközét.  
+3. Olvassa el az eszköz alatt megjelenő figyelmeztetést. Ez felszólítja, hogy nyissa meg az SEP Mobile-t a vírus vagy biztonsági fenyegetés elhárításához.     
 
-## <a name="example-of-an-app-that-symantec-endpoint-protection-mobile-sees-as-a-threat"></a>Symantec Endpoint Protection Mobile által fenyegetésként észlelt alkalmazás – példa
+    ![Példa-képernyőkép a Céges portál Eszközök oldaláról, az SEP Mobile figyelmeztetésével.](./media/CP-lookout-virus-banner-1808.png)
 
-Ha olyan alkalmazást telepített, amely a Symantec Endpoint Protection szerint fenyegetést jelent, akkor egy ehhez hasonló képernyő jelenik meg:
+## <a name="resolve-an-app-threat"></a>Alkalmazásfenyegetés elhárítása  
 
-![példa a Skycure vírusriasztási üzenetére](./media/skycure-virus-alert-android.png)
+Az eszközére nézve fenyegetőnek ítélt alkalmazás telepítésekor értesítést kap az SEP Mobile alkalmazásban. Amíg az érintett alkalmazás az eszközén marad, Ön nem fog hozzáférni a vállalati erőforrásokhoz.  
 
-Az alkalmazás eltávolítása után azonnal hozzáférhet a vállalati e-mailjeihez és adataihoz. Az e-mailekhez és más adatokhoz egészen addig nem férhet hozzá, amíg el nem távolítja az alkalmazást.
+A megoldáshoz jelölje ki az alkalmazást az SEP Mobile-ban megjelenő fenyegetések listájában. Ezután kövesse a képernyőn megjelenő utasításokat az alkalmazás eltávolításához.  
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).  
 

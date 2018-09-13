@@ -14,12 +14,12 @@ ms.assetid: 96990be0-eb1e-43a4-a0e4-09c7dbdc2bf4
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bea51227798e239bb74154e4d97e3efd6d55f807
-ms.sourcegitcommit: cefa84efd3003fa5a0ef0c2dce6206a6a411a1ec
+ms.openlocfilehash: 8c61040223d964f6ed0eeb85cf08c29bd2880396
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35232267"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313598"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>Személyes adatok naplózása, exportálása vagy törlése az Intune-ban
 
@@ -64,8 +64,8 @@ A gyári beállítások visszaállítása minden vállalati és személyes adato
 ### <a name="user-self-removal-from-intune-management"></a>A felhasználó eltávolítja önmagát az Intune-felügyelet alól
 A felhasználók rendszergazdai közreműködés nélkül is eltávolíthatják saját [Android, Apple vagy Windows](https://docs.microsoft.com/en-us/intune-user-help/unenroll-your-device-from-intune-android.md) rendszerű eszközeiket az Intune-felügyelet alól.   
 
-### <a name="remove-company-data"></a>Céges adatok eltávolítása
-A vállalati adatok eltávolítása eltávolítja az olyan, Intune által szolgáltatott adatokat, mint a vállalati alkalmazások, az Intune által felügyelt alkalmazásokkal kapcsolatos adatok, a szabályzat-beállítások és az Intune-on keresztül kapott e-mail-profilok. Ez a művelet meghagyja az eszközön a felhasználó személyes adatait.
+### <a name="retire"></a>Kivonás
+A **Kivonás** művelete eltávolítja az olyan, Intune által szolgáltatott adatokat, mint a vállalati alkalmazások, az Intune által felügyelt alkalmazásokkal kapcsolatos adatok, a szabályzat-beállítások és az Intune-on keresztül kapott e-mail-profilok. Ez a művelet meghagyja az eszközön a felhasználó személyes adatait.
 
 ### <a name="delete-a-tenant-from-microsoft-intune"></a>Bérlő törlése a Microsoft Intune-ból
 

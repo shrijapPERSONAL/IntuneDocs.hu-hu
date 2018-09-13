@@ -14,20 +14,20 @@ ms.technology: ''
 ms.assetid: f29d2894-e98b-4f2c-b444-a8ccc1b7efdd
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: bd59cf3a4764cc66d0e7d1f47e69c2ff93352387
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 23619048faca4cdf9d64b15b0db7c09cb958a082
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/16/2018
-ms.locfileid: "29925981"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43314040"
 ---
 # <a name="special-migration-considerations"></a>Speciális migrációs megfontolások
 
 A meglévő MDM-szolgáltatói környezettől függően speciális migrációs megfontolások alkalmazandók.
 
-## <a name="factory-reset-for-apples-device-enrollment-program-dep"></a>A gyári beállítások visszaállítása az Apple Készülékregisztrációs programjához (DEP)
+## <a name="wipe-for-apples-device-enrollment-program-dep"></a>Adattörlés az Apple készülékregisztrációs programjához (DEP)
 
-Az Apple Készülékregisztrációs programja (DEP) által elvégzett beállításokat a végfelhasználó nem távolíthatja el az eszközről. A DEP speciális felügyeleti funkcióinak megőrzéséhez az eszközt a gyári beállítások visszaállításával újszerű állapotba kell visszaállítani az Intune-beli regisztráláshoz.
+Az Apple Készülékregisztrációs programja (DEP) által elvégzett beállításokat a végfelhasználó nem távolíthatja el az eszközről. A DEP speciális felügyeleti funkcióinak megőrzéséhez az eszközön adattörlést kell végrehajtani az újszerű állapotba történő visszaállításához az Intune-beli regisztráláshoz.
 
 A DEP használatának folytatásához az eszközök Intune-beli felügyeletére lásd: [iOS-eszközök regisztrálása a Készülékregisztrációs program segítségével](device-enrollment-program-enroll-ios.md).
 

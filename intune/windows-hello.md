@@ -6,19 +6,19 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5220d9c2e1ba98873658631798240af9e7587758
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: ff3b482f974641dd7255dc98d3af62542d802de9
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834770"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313734"
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>A Vállalati Windows Hello integrálása a Microsoft Intune-nal
 
@@ -31,7 +31,10 @@ A Vállalati Windows Hello (korábbi nevén Microsoft Passport for Work) integr�
 
 Az Intune kétféleképpen integrálható a Vállalati Hello szolgáltatással:
 
--   Intune-szabályzatokkal szabályozható, hogy a felhasználók mely hitelesítési módokkal jelentkezhetnek be, és melyekkel nem.
+-   Létrehozható egy Intune-szabályzat az **Eszközregisztráció** alatt. Ez a szabályzat a teljes vállalatra vonatkozik (bérlői szinten). Támogatja a Windows AutoPilot kezdőélményt (OOBE), és az eszköz regisztrációjakor jut érvényre. 
+-  Létrehozható egy Identity Protection-szabályzat az **Eszközregisztráció** alatt. Ez a profil a hozzárendelt felhasználókra és eszközökre vonatkozik, és a bejelentkezéskor jut érvényre. 
+
+E cikk segítségével az egész vállalatára vonatkozó alapértelmezett vállalati Windows Hello-szabályzatot hozhat létre. A kiválasztott felhasználó- és eszközcsoportokra vonatkozó Identity Protection-profilt az [Identity Protection-profil konfigurálása](identity-protection-configure.md) című cikk alapján hozhat létre.  
 
 <!--- -   You can store authentication certificates in the Windows Hello for Business key storage provider (KSP). For more information, see [Secure resource access with certificate profiles in Microsoft Intune](secure-resource-access-with-certificate-profiles.md). --->
 
@@ -57,7 +60,7 @@ Az Intune kétféleképpen integrálható a Vállalati Hello szolgáltatással:
 
 4. A **Minden felhasználó** panelen kattintson a **Tulajdonságok** lehetőségre, majd adjon meg egy **Nevet** és **Leírást** a Vállalati Windows Hello beállításai számára.
 
-5. A **Minden felhasználó** panelen kattintson a **Beállítások** lehetőségre, majd a **Vállalati Windows Hello konfigurálása** területen válasszon az alábbiak közül:
+5. A **Minden felhasználó** panelen kattintson a **Beállítások** lehetőségre, majd a **Vállalati Windows Hello konfigurálása** területen válasszon az alábbi lehetőségek közül:
 
     - **Letiltva**. Ha nem szeretné használni a Vállalati Windows Hello szolgáltatást, válassza ezt a beállítást. Ezt követően a képernyőn a többi beállítás nem lesz elérhető.
     - **Engedélyezve**. Vállalati Windows Hello beállításainak konfigurálásához válassza ezt a beállítást.

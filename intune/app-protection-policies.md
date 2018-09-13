@@ -15,12 +15,12 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a66ed41442e89ed40850f5b9cd56cbc004a43d0
-ms.sourcegitcommit: 8b4f5685dc7f41f5e967a8f9d0627707a36dbe93
+ms.openlocfilehash: 83320c78d461981f1bfff52d2fddf4f121a88b8c
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40252739"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329665"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Alkalmazásvédelmi szabályzatok létrehozása és hozzárendelése
 
@@ -37,7 +37,7 @@ Amennyiben az MAM által támogatott alkalmazások listáját keresi, lásd az [
 További információk a cég üzletági (LOB) alkalmazásainak a Microsoft Intune-hoz való hozzáadásáról az alkalmazásvédelmi szabályzatok előkészítése céljából: [Alkalmazások hozzáadása a Microsoft Intune-hoz](apps-add.md).
 
 ##  <a name="create-an-app-protection-policy"></a>Alkalmazásvédelmi szabályzat létrehozása
-1. A **Mobilalkalmazások** munkafolyamatban a **Kezelés** szakaszban válassza az **Alkalmazásvédelmi szabályzatok** lehetőséget. Ekkor megnyílik az **Alkalmazásvédelmi szabályzatok** panel, amelyen új szabályzatokat hozhat létre, és szerkesztheti a meglévőket.
+1. Az **Ügyfélalkalmazások** munkafolyamatban a **Kezelés** szakaszban válassza az **Alkalmazásvédelmi szabályzatok** lehetőséget. Ekkor megnyílik az **Alkalmazásvédelmi szabályzatok** panel, amelyen új szabályzatokat hozhat létre, és szerkesztheti a meglévőket.
 2. Válassza a **Szabályzat hozzáadása** elemet.
 
    ![Képernyőfelvétel a Szabályzat hozzáadása panelről](./media/app-protection-add-policy.png)
@@ -125,7 +125,7 @@ Gyakori a szervezetekben, hogy a felhasználóknak engedélyezett mind a mobiles
 
 Mivel az Intune alkalmazásvédelmi szabályzatok a felhasználói identitáshoz vannak társítva, a felhasználók védelmi beállításait a rendszer hagyományosan alkalmazza mind a regisztrált (MDM által felügyelt), mind pedig a regisztrálatlan (MDM nélküli) eszközökre. Emiatt lehetővé tettük annak megadását, hogy az Intune alkalmazásvédelmi szabályzatot az Intune-ban regisztrált vagy regisztrálatlan iOS- és Android-eszközökre kívánja-e alkalmazni. Használhat egy külön védelmi szabályzatot a nem felügyelt eszközökre szigorú adatveszteség-megelőzési (DLP) beállításokkal, illetve egy külön védelmi szabályzatot az MDM által felügyelt eszközökre kevésbé szigorú DLP-beállításokkal. 
 
-Ezeknek a szabályzatoknak a létrehozásához lépjen a **Mobilalkalmazások** > **Alkalmazásvédelmi szabályzatok** területre az Intune-konzolon, és válassza a **Szabályzat hozzáadása** lehetőséget. Másik lehetőségként egy meglévő alkalmazásvédelmi szabályzatot is szerkeszthet. Ha az alkalmazásvédelmi szabályzatot a felügyelt és a felügyeletlen eszközökre egyaránt alkalmazni szeretné, akkor győződjön meg róla, hogy a **Target to all app types** (Alkalmazás minden alkalmazástípusra) beállításnál az **Igen** lehetőség van kiválasztva (mely az alapértelmezett érték). Ha a szabályzatot az eszközkezelési állapottól függően szeretné alkalmazni, állítsa a **Target to all app types** beállítást a **Nem** értékre. 
+Ezeknek a szabályzatoknak a létrehozásához lépjen az **Ügyfélalkalmazások** > **Alkalmazásvédelmi szabályzatok** területre az Intune-konzolon, és válassza a **Szabályzat hozzáadása** lehetőséget. Másik lehetőségként egy meglévő alkalmazásvédelmi szabályzatot is szerkeszthet. Ha az alkalmazásvédelmi szabályzatot a felügyelt és a felügyeletlen eszközökre egyaránt alkalmazni szeretné, akkor győződjön meg róla, hogy a **Target to all app types** (Alkalmazás minden alkalmazástípusra) beállításnál az **Igen** lehetőség van kiválasztva (mely az alapértelmezett érték). Ha a szabályzatot az eszközkezelési állapottól függően szeretné alkalmazni, állítsa a **Target to all app types** beállítást a **Nem** értékre. 
 
 Ahhoz, hogy egy iOS-alkalmazást „felügyeltnek” lehessen tekinteni telepítve kell lennie minden egyes alkalmazáshoz az **IntuneMAMUPN** konfigurációs szabályzat beállításainak. További információért lásd: [iOS-alkalmazások közti adatátvitel felügyelete a Microsoft Intune-ban](https://docs.microsoft.com/en-us/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
 

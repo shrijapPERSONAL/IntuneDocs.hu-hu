@@ -15,12 +15,12 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 859194b364a64854922993d2d798f318b260fc80
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 4e070e80bb9575154aded12f0992d04bd7a4718f
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31836336"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329954"
 ---
 # <a name="getting-started-with-microsoft-intune-in-the-azure-portal"></a>Bevezetés a Microsoft Intune használatába az Azure Portálon
 
@@ -53,7 +53,7 @@ Ez a funkció relevánsabb lesz, miután további tartalmakat is hozzáadott az 
 
 ## <a name="using-services"></a>Szolgáltatások használata
 
-Ha megnyitja az Intune-t vagy bármely más szolgáltatást az Azure-ban, az egy **panelen** fog megjelenni. Az Intune-ban először használt tevékenységprofilok egy része, mint a **Felhasználók**, **Csoportok** és **Mobilalkalmazások**, mind teljes képernyős panelen jelennek meg. Amikor kiválasztja a tevékenységprofilt, az ennek megfelelő panel a teljes lapon jelenik meg. Más panelek megnyitáskor a panel jobb oldalából fognak előcsúszni, és az alá a fő panel alá fognak összecsukódni, ahonnan előjöttek.
+Ha megnyitja az Intune-t vagy bármely más szolgáltatást az Azure-ban, az egy **panelen** fog megjelenni. Az Intune-ban először használt tevékenységprofilok egy része, mint a **Felhasználók**, **Csoportok** és **Ügyfélalkalmazások**, mind teljes képernyős panelen jelennek meg. Amikor kiválasztja a tevékenységprofilt, az ennek megfelelő panel a teljes lapon jelenik meg. Más panelek megnyitáskor a panel jobb oldalából fognak előcsúszni, és az alá a fő panel alá fognak összecsukódni, ahonnan előjöttek.
 
 ## <a name="next-steps"></a>További lépések
 

@@ -15,12 +15,12 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: baf7ee4f1178b555a0fe311f0e3977941e1491fe
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: a49811200cd84882fe9f80708edefde7614e5cee
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905036"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347865"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>Androidos üzletági alkalmazások hozzáadása a Microsoft Intune-hoz
 
@@ -35,8 +35,8 @@ Az üzletági (LOB) alkalmazásokat egy alkalmazástelepítő fájlból adja hoz
 
 1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. Az **Intune** panelen válassza a **Mobilalkalmazások** lehetőséget.
-4. A **Mobilalkalmazások** területen válassza a **Kezelés** > **Alkalmazások** elemet.
+3. Az **Intune** ablaktáblán válassza az **Ügyfélalkalmazások** lehetőséget.
+4. Az **Ügyfélalkalmazások** területen válassza a **Kezelés** > **Alkalmazások** elemet.
 5. Az alkalmazások listája fölött válassza a **Hozzáadás** lehetőséget.
 6. Az **Alkalmazás hozzáadása** panelen válassza az **Üzletági alkalmazás** lehetőséget.
 

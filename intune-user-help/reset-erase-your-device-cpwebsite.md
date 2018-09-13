@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3f9c59b1bfccabd8489cd466c645dc4a0051e97c
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 00b5c1ededa0b5dbc3df5786e583738fb2c2008e
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321577"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147734"
 ---
 # <a name="reset-your-device-from-the-company-portal-website"></a>Az eszköz alaphelyzetbe állítása a Vállalati portál webhelyről
 
@@ -33,16 +33,18 @@ Ha alaphelyzetbe állít egy eszközt, az utána már nem fog megjelenni a Cége
 > [!Note]
 > A következő lépéseket egy másik regisztrált eszközről is végrehajthatja. Ehhez nyissa meg a Céges portál alkalmazást a másik eszközön, majd a következőkhöz hasonló lépésekkel végezze el az alaphelyzetbe állítást.  
 
-1. Nyissa meg a [Céges portál webhelyét](https://portal.manage.microsoft.com/#helpdeskDeskDialog), és válassza a __Menü__ gomb >__Saját eszközök__ lehetőséget.
+1. Nyissa meg a Céges portál webhelyét, és válassza a __Menü__ gomb > __Eszközök__ lehetőséget.  
 
 2. Válassza ki az alaphelyzetbe állítani kívánt eszközt.
 
-    ![Képernyőkép a Saját eszközök oldalról, amelyen két csempén azonosítatlan, általános nevű eszközök láthatóak. Közvetlenül az eszközök alatt egy szürke szalagcím helyezkedik el, amely arra kéri a felhasználót, hogy azonosítsa a használt eszközt, vagy adjon hozzá egy újat.](./media/macOS_enroll_002_tap_here_banner.png)
+    ![Képernyőkép az Eszközök oldalról, amelyen két csempén azonosítatlan, általános nevű eszközök láthatók. Közvetlenül az eszközök alatt egy szürke szalagcím helyezkedik el, amely arra kéri a felhasználót, hogy azonosítsa a használt eszközt, vagy adjon hozzá egy újat.](./media/rename-reset-device-step2-1808.png)  
 
-3. Az adott eszköz lehetőségei egy előreugró ablakban nyílnak meg. Válassza az **Alaphelyzetbe állítás** lehetőséget.  
+3. Válassza az **Alaphelyzetbe állítás** lehetőséget. Ha a visszaállítási lehetőség nem jelenik meg az oldal tetején, válassza az **Egyéb (…)** > **Alaphelyzet** lehetőséget.  
 
- ![Képernyőkép a Saját eszköz lapról, amelyen különböző azonosítatlan eszközök láthatók a listán nem szereplő eszközök regisztrálását vagy az azonosítatlan eszközök azonosítását felajánló szalagcím felett.](./media/macOS_enroll_002_tap_here_banner.png)
+     ![A kiválasztott eszközzel kapcsolatos lehetőségek a Céges portál webhelyén, felül az Átnevezés, az Eltávolítás, az Eszköz alaphelyzetbe állítása, a Jelszó alaphelyzetbe állítása és a Távoli zárolás lehetőségekre mutató hivatkozásokkal. ](./media/rename-reset-device-1808.png)  
+
+    ![Az Egyéb ikon kinagyított képe egy piros nyíllal kiemelve.](./media/rename-reset-device-step3-more-1808.png)  
 
 4. Egy figyelmeztetés jelenik meg, amely tájékoztatja, hogy az eszköz összes tartalmának törlésére készül. A megerősítéshez koppintson az **Alaphelyzet** elemre.  
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com/#helpdeskDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

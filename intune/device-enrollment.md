@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7aabb010baa4a5e53ad5e4264edc43e3ca111c70
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 1bd9cff2148857ab6b0ea6d6e3c940e1e731c44b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909201"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313161"
 ---
 # <a name="what-is-device-enrollment"></a>Mi az eszközregisztrálás?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -34,7 +34,7 @@ Alapértelmezés szerint platformtól függetlenül minden eszköz regisztráci�
 
 | **Módszer** |  **Alaphelyzetbe állítás szükséges** |    [**Felhasználói affinitás**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) |   **Zárolás** | **Részletek** |
 |:---:|:---:|:---:|:---:|:---:|
-| | A rendszer a regisztráció során visszaállítja az eszközök gyári beállításait. |  Minden eszközt egy felhasználóhoz társítja.| A felhasználók nem törölhetik az eszközök regisztrációját.  | |
+| | A regisztráció során az eszközök összes adata törölve lesz. |  Minden eszközt egy felhasználóhoz társítja.| A felhasználók nem törölhetik az eszközök regisztrációját.  | |
 |**[BYOD](#bring-your-own-device)** | Nem|   Igen |   Nem | [További információ](./apple-mdm-push-certificate-get.md)|
 |**[DEM](#device-enrollment-manager)**| Nem |Nem |Nem  | [További információ](./device-enrollment-program-enroll-ios.md)|
 |**[DEP](#apple-device-enrollment-program)**|   Igen |   Nem kötelező megadni |  Nem kötelező megadni|[További információ](./device-enrollment-program-enroll-ios.md)|
@@ -95,7 +95,7 @@ További információk az eszközöknek az Apple Configurator és Beállítási 
 - [iOS-eszközök regisztrálása az Apple Configurator és a Beállítási asszisztens használatával](apple-configurator-setup-assistant-enroll-ios.md)
 
 ### <a name="usb-direct"></a>USB-Direct
-A közvetlen regisztrációhoz a rendszergazdának a regisztrációs házirend létrehozásához és az Apple Configuratorba való exportálásához manuálisan kell regisztrálnia minden eszközt. Az USB-csatlakozású, vállalati tulajdonú eszközök regisztrálása közvetlenül történik, a gyári beállítások visszaállítása nem szükséges. Az eszközök kezelése felhasználó nélküli eszközökként történik. Nincsenek zárolva, sem felügyelve, és nem támogathatják a feltételes hozzáférést, a függetlenítés észlelését, illetve a mobilalkalmazás-felügyeletet.
+A közvetlen regisztrációhoz a rendszergazdának a regisztrációs házirend létrehozásához és az Apple Configuratorba való exportálásához manuálisan kell regisztrálnia minden eszközt. Az USB-csatlakozású, vállalati tulajdonú eszközök regisztrálása közvetlenül történik, az összes adat törlésére nincs szükség. Az eszközök kezelése felhasználó nélküli eszközökként történik. Nincsenek zárolva, sem felügyelve, és nem támogathatják a feltételes hozzáférést, a függetlenítés észlelését, illetve a mobilalkalmazás-felügyeletet.
 
 További információ az iOS-eszközök regisztrációjáról:
 

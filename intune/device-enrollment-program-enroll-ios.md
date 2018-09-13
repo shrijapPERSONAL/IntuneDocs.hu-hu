@@ -15,12 +15,12 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cf1b47b578c5abe0051b94c9f4c2127cd48f0e76
-ms.sourcegitcommit: 698af815f6de2c4f003f6da428bbfb0680daafa0
+ms.openlocfilehash: 27995fb643e4373e2fa6a34c7147c69905f9ccc0
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43092277"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312644"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS-eszközök automatikus regisztrálása az Apple készülékregisztrációs programjával (DEP)
 
@@ -133,13 +133,13 @@ Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt
     >
     > Ezek az Apple Beállítási asszisztenssel végzett hitelesítéskor nem támogatottak.
 
-
 6. Ha az **Igen** választ adta a **Hitelesítés a Céges portállal az Apple Beállítási asszisztens helyett** lehetőségre, akkor lehetősége van egy mennyiségi vásárlási program (Volume Purchase Program, VPP-) jogkivonat használatával automatikusan telepíteni a Céges portált az eszközön, anélkül, hogy a felhasználó megadna egy Apple ID-t. A Céges portál VPP-jogkivonattal való telepítéséhez válasszon egy jogkivonatot a **Céges portál telepítése a VPP-vel** résznél. Fontos, hogy a jogkivonat ne járjon le, és hogy elég eszközlicenccel rendelkezzen a Céges portál alkalmazáshoz. Amennyiben a jogkivonat lejár vagy a licencei elfogynak, az Intune telepíti az App Store-beli Céges portált, és elkér egy Apple ID-t.
 
     ![Képernyőkép a Céges portál VPP-n keresztüli telepítéséről.](./media/device-enrollment-program-enroll-ios/install-cp-with-vpp.png)
 
+7. Ha a **Céges portál telepítése a VPP-vel** lehetőséghez választ jogkivonatot, lehetősége lesz a Beállítási asszisztens befejeződése után azonnal egyalkalmazásos módban (nevezetesen a Céges portál alkalmazással) zárolni az alkalmazást. Ennek a lehetőségnek a beállításához válassza az **Igen** értéket a **Céges portál futtatása egyalkalmazásos módban a hitelesítésig** beállításhoz. Az eszköz használatához a felhasználónak először hitelesítenie kell magát a Céges portál használatával.
 
-7. Válassza az **Eszközkezelési beállítások** lehetőséget, és adja meg, hogy felügyelve legyenek-e az adott profilt használó eszközök.
+8. Válassza az **Eszközkezelési beállítások** lehetőséget, és adja meg, hogy felügyelve legyenek-e az adott profilt használó eszközök.
 
     ![Az Eszközkezelési beállítások képernyőképe.](./media/device-enrollment-program-enroll-ios/devicemanagementsettingsblade.png)
 
@@ -153,26 +153,28 @@ Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt
      > [!NOTE]
      > A felügyelet nélkül regisztrált eszközöket csak az Apple Configurator segítségével tudja átállítani felügyelt eszközzé. Az eszköz ily módon való átállításához csatlakoztatnia kell az iOS-eszközt egy Mac számítógéphez USB-kábellel. Ezzel kapcsolatban az [Apple Configurator dokumentációjában](http://help.apple.com/configurator/mac/2.3) talál további információkat.
 
-8. Adja meg, hogy zárolt regisztrációt kíván-e beállítani a jelen profilt használó eszközökhöz. A **Zárolt regisztráció** letiltja azokat az iOS-beállításokat a **Beállítások** menüből, amelyek segítségével eltávolítható a felügyeleti profil. Az eszköz regisztrálása után ez a beállítás nem módosítható az eszköz gyári beállításainak visszaállítása állítása nélkül. A zárolt regisztrációjú eszközökön a **Felügyelt** felügyeleti módot az *Igen* értékre kell beállítani. 
+9. Adja meg, hogy zárolt regisztrációt kíván-e beállítani a jelen profilt használó eszközökhöz. A **Zárolt regisztráció** letiltja azokat az iOS-beállításokat a **Beállítások** menüből, amelyek segítségével eltávolítható a felügyeleti profil. Az eszköz regisztrálása után ez a beállítás nem módosítható az eszköz összes adatának törléséig. A zárolt regisztrációjú eszközökön a **Felügyelt** felügyeleti módot az *Igen* értékre kell beállítani. 
 
-9. Adja meg, hogy a jelen profilt használó eszközök végezhetnek-e **Szinkronizálást számítógépekkel**. Ha az **Apple Configurator engedélyezése tanúsítvány szerint** lehetőséget választja, tanúsítványt kell választania az **Apple Configurator-tanúsítványok** területen.
+10. Adja meg, hogy a jelen profilt használó eszközök végezhetnek-e **Szinkronizálást számítógépekkel**. Ha az **Apple Configurator engedélyezése tanúsítvány szerint** lehetőséget választja, tanúsítványt kell választania az **Apple Configurator-tanúsítványok** területen.
 
-10. Ha az **Apple Configurator engedélyezése tanúsítvány szerint** lehetőséget választotta az előző lépésben, válasszon egy importálandó Apple Configurator-tanúsítványt.
+11. Ha az **Apple Configurator engedélyezése tanúsítvány szerint** lehetőséget választotta az előző lépésben, válasszon egy importálandó Apple Configurator-tanúsítványt.
 
-11. Válassza az **OK** gombot.
+12. Válassza az **OK** gombot.
 
-12. Válassza **A beállítási asszisztens beállításai** elemet, és konfigurálja az alábbi profilbeállításokat: ![A beállítási asszisztens testreszabása.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
+13. Válassza a **Beállítási asszisztens testreszabása** elemet, és konfigurálja az alábbi profilbeállításokat: ![A beállítási asszisztens testreszabása.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
-    | Részlegbeállítások | Leírás |
-    |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+    | Részlegbeállítások | Description |
+    |---|---|
     | <strong>Részleg neve</strong> | Akkor jelenik meg, ha a felhasználó az aktiválás során a <strong>Konfiguráció névjegye</strong> elemre koppint. |
-    |    <strong>Részleg telefonszáma</strong>     |                                                          Akkor jelenik meg, ha a felhasználó az aktiválás során a <strong>Segítségre van szüksége?</strong> gombra kattint. |
+    |    <strong>Részleg telefonszáma</strong>     | Akkor jelenik meg, ha a felhasználó az aktiválás során a <strong>Segítségre van szüksége?</strong> gombra kattint. |
 
   Választhat, hogy megjelenjenek-e a Beállítási asszisztens különböző képernyői, amikor a felhasználó beállítja az eszközt.
   - Ha az **Elrejtés** lehetőséget választja, az adott képernyő nem fog megjelenni a beállítás során. Az eszköz beállítását követően a felhasználó a **Beállítások** menüben továbbra is beállíthatja az érintett funkciót.
   - Ha a **Megjelenítés** lehetőséget választja, az adott képernyő megjelenik a beállítás során. A felhasználó egyes esetekben átugorhat egy-egy képernyőt anélkül, hogy bármit is tenne. A kihagyott funkciókat később az eszköz **Beállítások** menüjében állíthatja be. 
 
-| Beállítási asszisztens képernyőinek beállításai | Ha a **Megjelenítés** lehetőséget választja, a telepítés során az eszköz... |
+
+    | Beállítási asszisztens képernyőinek beállításai | Ha a **Megjelenítés** lehetőséget választja, a telepítés során az eszköz... |
     |------------------------------------------|------------------------------------------|
     | <strong>PIN-kód</strong> | Elkéri a felhasználótól a PIN-kódot. PIN-kód megadására mindig szükség van, kivéve, ha az eszköz biztonságát, illetve elérésének szabályozását valamilyen más módszer biztosítja (például teljes képernyős mód, amely egyetlen alkalmazás futtatására korlátozza az eszközt). |
     | <strong>Helyalapú szolgáltatások</strong> | Elkéri a felhasználó tartózkodási helyét. |
@@ -186,9 +188,9 @@ Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt
     | <strong>Diagnosztikai adatok</strong> | Megjeleníti a **Diagnosztika** képernyőt. Ezen a képernyőn a felhasználó diagnosztikai adatokat küldhet az Apple-nek. |
 
 
-13. Válassza az **OK** gombot.
+14. Válassza az **OK** gombot.
 
-14. Válassz a **Létrehozás** elemet a profil mentéséhez.
+15. Válassz a **Létrehozás** elemet a profil mentéséhez.
 
 ## <a name="sync-managed-devices"></a>Felügyelt eszközök szinkronizálása
 Miután az Intune engedélyt kapott az eszközei felügyeletére, szinkronizálhatja az Intune-t az Apple-lel, hogy megtekinthesse a felügyelt eszközöket az Azure-beli Intune-portálon.
@@ -218,7 +220,7 @@ Választhat egy alapértelmezett profilt, amelyet a rendszer az adott tokennel r
 2. Válassza az **Alapértelmezett profil beállítása** lehetőséget, válasszon egy profilt a legördülő listából, majd válassza a **Mentés** lehetőséget. A választott profil alkalmazva lesz az adott tokennel regisztráló összes eszközre.
 
 ## <a name="distribute-devices"></a>Eszközök terjesztése
-Az eddigiekben engedélyezte az eszközfelügyeletet és a szinkronizálást az Apple és az Intune között, valamint a DEP-eszközök regisztrálása céljából hozzárendelt egy profilt. Az eszközök ekkor már kioszthatók a felhasználóknak. Felhasználói affinitással rendelkező eszközök esetén minden felhasználóhoz hozzá kell rendelni egy Intune-licencet. A felhasználói affinitás nélküli eszközökhöz licenc szükséges. Regisztrációs profil csak akkor léptethető érvénybe egy aktivált eszközön, ha előtte visszaállítják az eszköz gyári beállításait.
+Az eddigiekben engedélyezte az eszközfelügyeletet és a szinkronizálást az Apple és az Intune között, valamint a DEP-eszközök regisztrálása céljából hozzárendelt egy profilt. Az eszközök ekkor már kioszthatók a felhasználóknak. Felhasználói affinitással rendelkező eszközök esetén minden felhasználóhoz hozzá kell rendelni egy Intune-licencet. A felhasználói affinitás nélküli eszközökhöz licenc szükséges. Regisztrációs profil csak akkor léptethető érvénybe egy aktivált eszközön, ha előtte törli az eszköz összes adatát.
 
 Lásd: [iOS-eszköz regisztrálása az Intune-ban a Készülékregisztrációs programmal](/intune-user-help/enroll-your-device-dep-ios).
 

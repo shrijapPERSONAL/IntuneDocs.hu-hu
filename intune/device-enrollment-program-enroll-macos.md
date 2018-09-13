@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7b913cc2f667cb2bb16d6f810d7449ce8ee752e8
-ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
+ms.openlocfilehash: 18b4ab35627e1ccb694104f3f5800e5fb07dd1c7
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42751734"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313426"
 ---
 # <a name="automatically-enroll-macos-devices-with-apples-device-enrollment-program"></a>macOS-eszközök automatikus regisztrálása az Apple készülékregisztrációs programjával (DEP)
 
@@ -106,7 +106,7 @@ Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt
 1. Az Azure-beli Intune-portálon válassza az **Eszközök beléptetése** > **Apple-regisztráció** > **Készülékregisztrációs programbeli token** elemet.
 2. Válasszon egy tokent, és válassza a **Profilok**, majd a **Profil létrehozása** lehetőséget.
 
-    ![Képernyőkép a profil létrehozásáról.](./media/device-enrollment-program-enroll-ios/image04.png)
+    ![Készítsen egy képernyőképet a profilról.](./media/device-enrollment-program-enroll-ios/image04.png)
 
 3. A **Profil létrehozása** panelen adminisztrációs célból adja meg a profil **Nevét** és **Leírását**. Ezeket a felhasználók nem fogják látni. A **Név** mező felhasználásával dinamikus csoportot hozhat létre az Azure Active Directoryban. Használja a profilnevet az enrollmentProfileName paraméter meghatározásához, hogy ezzel a regisztrációs profillal rendelhesse hozzá az eszközöket. További információk az [Azure Active Directory-alapú dinamikus csoportokról](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
 
@@ -119,7 +119,7 @@ Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt
 
     - **Regisztráció felhasználói affinitás nélkül** – Ezt a lehetőséget olyan eszközökhöz válassza, amelyek nincsenek egy adott felhasználóhoz társítva. Olyan eszközökhöz használja, amelyek a helyi felhasználói adatokhoz való hozzáférés nélkül végeznek feladatokat. Egyes alkalmazások, mint például a Céges portál alkalmazás, nem működnek.
 
-6. Válassza az **Eszközkezelési beállításokat**, és válassza ki, hogy zárolt regisztrációt szeretne-e alkalmazni az ezt a profilt használó eszközökhöz. A **Zárolt regisztráció** letiltja azokat a macOS-beállításokat, amelyek segítségével eltávolítható a felügyeleti profil a **Rendszerbeállítások** menü vagy a **Terminál** használatával. Az eszköz regisztrálása után ez a beállítás nem módosítható az eszköz gyári beállításainak visszaállítása állítása nélkül.
+6. Válassza az **Eszközkezelési beállításokat**, és válassza ki, hogy zárolt regisztrációt szeretne-e alkalmazni az ezt a profilt használó eszközökhöz. A **Zárolt regisztráció** letiltja azokat a macOS-beállításokat, amelyek segítségével eltávolítható a felügyeleti profil a **Rendszerbeállítások** menü vagy a **Terminál** használatával. Az eszköz regisztrálása után ez a beállítás nem módosítható az eszköz összes adatának törlése nélkül.
 
     ![Az Eszközkezelési beállítások képernyőképe.](./media/device-enrollment-program-enroll-macos/devicemanagementsettingsblade-macos.png)
  
@@ -128,13 +128,14 @@ Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt
 8. Válassza a **Beállítási asszisztens beállításai** elemet, és konfigurálja az alábbi profilbeállításokat:  ![A beállítási asszisztens testreszabása.](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)
 
     | Részlegbeállítások | Description |
-    |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    |---|---|
     | <strong>Részleg neve</strong> | Akkor jelenik meg, ha a felhasználó az aktiválás során a <strong>Konfiguráció névjegye</strong> elemre koppint. |
-    |    <strong>Részleg telefonszáma</strong>     |                                                          Akkor jelenik meg, ha a felhasználó az aktiválás során a <strong>Segítségre van szüksége?</strong> gombra kattint. |
+    | <strong>Részleg telefonszáma</strong> | Akkor jelenik meg, ha a felhasználó az aktiválás során a <strong>Segítségre van szüksége?</strong> gombra kattint. |
 
-    Választhat, hogy megjelenjenek-e a Beállítási asszisztens különböző képernyői, amikor a felhasználó beállítja az eszközt.
-    - Ha az **Elrejtés** lehetőséget választja, az adott képernyő nem fog megjelenni a beállítás során. Az eszköz beállítását követően a felhasználó a **Beállítások** menüben továbbra is beállíthatja az érintett funkciót.
-    - Ha a **Megjelenítés** lehetőséget választja, az adott képernyő megjelenik a beállítás során. A felhasználó egyes esetekben átugorhat egy-egy képernyőt anélkül, hogy bármit is tenne. A kihagyott funkciókat később az eszköz **Beállítások** menüjében állíthatja be. 
+  Választhat, hogy megjelenjenek-e a Beállítási asszisztens különböző képernyői, amikor a felhasználó beállítja az eszközt.
+  - Ha az **Elrejtés** lehetőséget választja, az adott képernyő nem fog megjelenni a beállítás során. Az eszköz beállítását követően a felhasználó a **Beállítások** menüben továbbra is beállíthatja az érintett funkciót.
+  - Ha a **Megjelenítés** lehetőséget választja, az adott képernyő megjelenik a beállítás során. A felhasználó egyes esetekben átugorhat egy-egy képernyőt anélkül, hogy bármit is tenne. A kihagyott funkciókat később az eszköz **Beállítások** menüjében állíthatja be. 
+
 
     | Beállítási asszisztens képernyőinek beállításai | Ha a **Megjelenítés** lehetőséget választja, a telepítés során az eszköz... |
     |------------------------------------------|------------------------------------------|
@@ -152,6 +153,7 @@ Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt
     | <strong>iCloud-diagnosztika</strong> | Lehetőséget nyújt a felhasználónak arra, hogy iCloud diagnosztikai adatokat küldhessen az Apple-nek. |
     | <strong>Regisztráció</strong>| Kötelezi a felhasználót az eszköz regisztrálására. |
 
+   
 
 10. Válassza az **OK** gombot.
 
@@ -182,7 +184,7 @@ Választhat egy alapértelmezett macOS- vagy iOS-profilt, amelyet a rendszer az 
 2. Válassza az **Alapértelmezett profil beállítása** lehetőséget, válasszon egy profilt a legördülő listából, majd válassza a **Mentés** lehetőséget. A választott profil alkalmazva lesz az adott tokennel regisztráló összes eszközre.
 
 ## <a name="distribute-devices"></a>Eszközök terjesztése
-Az eddigiekben engedélyezte az eszközfelügyeletet és a szinkronizálást az Apple és az Intune között, valamint a DEP-eszközök regisztrálása céljából hozzárendelt egy profilt. Az eszközök ekkor már kioszthatók a felhasználóknak. Felhasználói affinitással rendelkező eszközök esetén minden felhasználóhoz hozzá kell rendelni egy Intune-licencet. A felhasználói affinitás nélküli eszközökhöz licenc szükséges. Regisztrációs profil csak akkor léptethető érvénybe egy aktivált eszközön, ha előtte visszaállítják az eszköz gyári beállításait.
+Az eddigiekben engedélyezte az eszközfelügyeletet és a szinkronizálást az Apple és az Intune között, valamint a DEP-eszközök regisztrálása céljából hozzárendelt egy profilt. Az eszközök ekkor már kioszthatók a felhasználóknak. Felhasználói affinitással rendelkező eszközök esetén minden felhasználóhoz hozzá kell rendelni egy Intune-licencet. A felhasználói affinitás nélküli eszközökhöz licenc szükséges. Regisztrációs profil csak akkor léptethető érvénybe egy aktivált eszközön, ha előtte törli az eszköz összes adatát.
 
 ## <a name="renew-a-dep-token"></a>DEP-token megújítása  
 1. Ugrás a deploy.apple.com címre.  
@@ -204,4 +206,4 @@ Az eddigiekben engedélyezte az eszközfelügyeletet és a szinkronizálást az 
 
 ## <a name="next-steps"></a>További lépések
 
-A macOS-eszközöket a regisztrálás után azonnal [kezelheti is](device-management.md).
+A macOS-eszközök regisztrálása után megkezdheti azok [felügyeletét](device-management.md).

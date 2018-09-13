@@ -5,7 +5,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 04/18/2018
+ms.date: 08/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f49b5050f4ce182699f0955bed6224309a4d7c7c
-ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
+ms.openlocfilehash: 421eea460ee7c00b79a63a014291a8abb88ddaea
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/12/2018
-ms.locfileid: "34073835"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347797"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>A Microsoft Intune ismert problémái
 
@@ -33,6 +33,13 @@ Ha olyan hibát szeretne jelenteni, amely nem szerepel itt, [nyisson meg egy tá
 Ha új szolgáltatást szeretne igényelni az Intune-hoz, jelentést küldhet el a [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) webhelyen.
 
 ## <a name="migration"></a>Áttelepítés
+
+### <a name="export-azure-classic-portal-compliance-policies-to-recreate-these-policies-in-the-intune-azure-portal"></a>Megfelelőségi szabályzatok exportálása a klasszikus Azure-portálról, és azok újbóli létrehozása az Azure-beli Intune-portálon
+
+A klasszikus Azure-portálon létrehozott megfelelőségi szabályzatok hamarosan elavulnak. Áttekintheti és törölheti a meglévő megfelelőségi szabályzatokat, de már nem frissítheti őket. Ha megfelelőségi szabályzatokat kell az Azure-beli Intune-portálra migrálnia, akkor veszővel tagolt (.csv) fájlként exportálhatja azokat. Ezt követően a fájlban lévő adatok felhasználásával újra létrehozhatja a szabályzatokat az Azure-beli Intune-portálon.
+
+> [!IMPORTANT]
+> A klasszikus Azure-portál kivonása után többé nem fér majd hozzá megfelelőségi szabályzataihoz, és meg sem tekintheti azokat. Ezért ne feledje exportálni és az Azure Portalon újra létrehozni szabályzatait még a klasszikus Azure-portál elavulása előtt.
 
 ### <a name="intune-legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>Az Intune régebbi számítógépügyfelének funkciói csak a Silverlight-konzolon érhetők el
 
@@ -52,7 +59,7 @@ A klasszikus Azure Portalról az Azure Portalra migrált szabályzatok állapoti
 ### <a name="multiple-app-install-prompts-for-certain-vpp-apps"></a>Több alkalmazástelepítési kérelem egyes VPP-alkalmazások esetében
 Előfordulhat, hogy egyes VPP-alkalmazások esetében annak ellenére több alkalmazástelepítési kérelem is megjelenik, hogy az alkalmazások már telepítve vannak a végfelhasználói eszközökön. A problémát az okozza, hogy az **Automatikus alkalmazásfrissítések** beállítás **Be** van kapcsolva a VPP-tokenben, amelyet az Intune Azure Portalra feltöltött.    
 
-A probléma elhárításához kapcsolja ki az **Automatikus alkalmazásfrissítések** beállítást a VPP-tokenben. Ehhez nyissa meg a Microsoft Intune-t az Azure Portalon. Az Intune-ban válassza a **Mobilalkalmazások** > **iOS VPP-tokenek** lehetőséget. Ezután válassza ki azt a VPP-tokent, amely az érintett alkalmazást telepítette, majd válassza ki a **Szerkesztés** > **Automatikus alkalmazásfrissítések** > **Ki** > **Mentés** lehetőségeket. A másik lehetőség, hogy letiltja az érintett alkalmazás VPP-alkalmazásként történő telepítését, így a továbbiakban nem jelennek meg a telepítési kérelmek sem.    
+A probléma elhárításához kapcsolja ki az **Automatikus alkalmazásfrissítések** beállítást a VPP-tokenben. Ehhez nyissa meg a Microsoft Intune-t az Azure Portalon. Az Intune-ban válassza az **Ügyfélalkalmazások** > **iOS VPP-tokenek** lehetőséget. Ezután válassza ki azt a VPP-tokent, amely az érintett alkalmazást telepítette, majd válassza ki a **Szerkesztés** > **Automatikus alkalmazásfrissítések** > **Ki** > **Mentés** lehetőségeket. A másik lehetőség, hogy letiltja az érintett alkalmazás VPP-alkalmazásként történő telepítését, így a továbbiakban nem jelennek meg a telepítési kérelmek sem.    
 
 Ez az egy ismert probléma a jelenlegi kiadásban. Hamarosan kiadunk egy javítást, amely megoldja a problémát. Ha a javítás telepítve lesz, a felhasználók nem fogják többé ezeket az alkalmazástelepítési kérelmeket megkapni.
 

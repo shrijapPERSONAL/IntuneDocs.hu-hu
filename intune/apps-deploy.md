@@ -15,12 +15,12 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46ef614af39a1dd1b44f4f5ff32f53687ccb060a
-ms.sourcegitcommit: a8b544975156dd45c2bf215b57ac994415b568bc
+ms.openlocfilehash: 96b95fcbfdc970976e24553972c5890f35cfddb2
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39164569"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329478"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Alkalmazások hozzárendelése csoportokhoz a Microsoft Intune-nal
 
@@ -52,7 +52,7 @@ Az alábbi táblázat az alkalmazások felhasználókhoz és eszközökhöz val�
 
 1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. Az **Intune** menüben válassza a **Mobilalkalmazások** lehetőséget.
+3. Az **Intune** menüben válassza az **Ügyfélalkalmazások** lehetőséget.
 4. A menü **Kezelés** szakaszában válassza az **Alkalmazások**. elemet.
 5. Az **Alkalmazások** ablaktáblán jelölje ki a hozzárendelni kívánt alkalmazást.
 6. A menü **Kezelés** szakaszában válassza a **Hozzárendelések** elemet.

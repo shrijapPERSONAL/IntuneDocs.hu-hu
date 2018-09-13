@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 15ac6adbcf262fd14edf11107b032aeda106a15b
-ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
+ms.openlocfilehash: 4e43ab0d088edc87e814ad2c4317d7b7336d34d5
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/14/2018
-ms.locfileid: "39039335"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312896"
 ---
 # <a name="android-enterprise-kiosk-settings-in-intune"></a>Vállalati androidos kioszkbeállítások az Intune-ban
 
@@ -33,14 +33,14 @@ Az androidos kioszkprofilok az alábbi konfigurációs beállításokat támogat
     - **Automatikus engedélyezés**: Az engedélyek automatikusan meg lesznek adva.
     - **Automatikus elutasítás**: Az engedélyek automatikusan meg lesznek tagadva.
 - **Hangerő-módosítás**: A **Tiltás** lehetőség választásával megakadályozza a felhasználókat az eszköz hangerejének módosításában.
-- **Gyári beállítások visszaállítása**: A **Tiltás** lehetőség választásával megakadályozza a felhasználókat az eszköz gyári beállításainak visszaállításában.
+- **Összes adat törlése**: A **Tiltás** lehetőség választásával megakadályozhatja, hogy a felhasználók minden adatot töröljenek az eszközről.
 - **Csökkentett üzemmódú indítás**: A **Tiltás** lehetőség választásával megakadályozza a felhasználókat az eszköz csökkentett módban való újraindításában.
 - **Állapotsor**: A **Tiltás** lehetőség választásával megakadályozza a felhasználókat az állapotsor, ezzel együtt az értesítések és a gyors beállítások elérésében.
 - **Wi-Fi-beállítások módosítása**: A **Tiltás** lehetőség választásával megakadályozza a felhasználókat az eszköz tulajdonosa által létrehozott Wi-Fi-konfigurációk módosításában. A felhasználók létrehozhatnak saját Wi-Fi-konfigurációkat.
 - **Wi-Fi-hozzáférési pont konfigurálása**: Válassza a **Tiltás** lehetőséget, hogy megakadályozza a felhasználókat a Wi-Fi-konfigurációk létrehozásában és szerkesztésében.
 - **Hibakeresési funkciók**: Az **Engedélyezés** lehetőség választásával engedélyezi, hogy a felhasználók használhassák a hibakeresési funkciókat.
 - **Mikrofon-beállítások**: A **Tiltás** lehetőséggel megakadályozza a felhasználókat a mikrofon elnémításában vagy hangerejének módosításában.
-- **Gyári beállítások visszaállítása elleni védelem e-mail-címei**: Válassza a **Google-fiók e-mail-címek** lehetőséget, majd adja meg az e-mail-címeket (pontosvesszővel elválasztva), amelyek feloldhatják az eszköz zárolását a gyári beállítások visszaállítása után. Ha nem ad meg e-mail-címet, akkor a gyári beállítások visszaállítása után bárki feloldhatja az eszközt.
+- **Összes adat törlése elleni védelem e-mail-címei**: Válassza a **Google-fiók e-mail-címek** lehetőséget, majd adja meg az e-mail-címeket (pontosvesszővel elválasztva), amelyek feloldhatják az eszköz zárolását az összes adat törlése után. Ha nem ad meg e-mail-címet, akkor az összes adat törlése után bárki feloldhatja az eszközt.
 - **Hálózati vészkijárat**: Válassza az **Engedélyezés** lehetőséget a hálózati vészkijárat funkció bekapcsolásához. Ha a rendszerindítás ideje alatt nem létesíthető hálózati kapcsolat, ez a vészkijárat felszólítja a felhasználót, hogy ideiglenesen csatlakozzon egy hálózathoz az eszköz szabályzatának frissítése érdekében. A szabályzat alkalmazása után a rendszer elfelejti az átmeneti hálózatot, és az eszköz folytatja a rendszerindítást. Ez megakadályozza, hogy ne lehessen hálózathoz csatlakozni, ha a legutóbbi szabályzatban nincs megfelelő hálózat, és az eszköz rendszerindításkor egy alkalmazást nyit meg feladatzárolási módban, vagy a felhasználó más okból nem tud hozzáférni az eszköz beállításaihoz.
 - **Ismeretlen forrásból való telepítés engedélyezése**: Válassza az **Engedélyezés** lehetőséget, hogy a felhasználók ismeretlen forrásból is telepíthessenek.
 - **Rendszerfrissítés**: A következő lehetőségek közül választva adja meg, hogyan kezeli az eszköz a vezeték nélküli frissítéseket:

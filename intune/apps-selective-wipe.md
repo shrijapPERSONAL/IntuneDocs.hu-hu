@@ -15,12 +15,12 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76c394be6130a874e7ce2fb1b6e3c244cad98f80
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 66f26811f5021b71c62a2e994c73e2144409d199
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905274"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329545"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Csak vállalati adatok törlése az Intune által felügyelt alkalmazásokból
 
@@ -40,7 +40,7 @@ A vállalati alkalmazásadatok szelektív törléséhez hozzon létre törlési 
 
 1.  Jelentkezzen be az [Azure portálra](https://portal.azure.com).
 
-2.  Válassza a **Minden szolgáltatás** lehetőséget, a szűrési szövegmezőbe írja be az **Intune** szót, majd válassza az **Intune** elemet. Amikor megjelenik az Intune panel, válassza a **Mobilalkalmazások** panelt.
+2.  Válassza a **Minden szolgáltatás** lehetőséget, a szűrési szövegmezőbe írja be az **Intune** szót, majd válassza az **Intune** elemet. Amikor megjelenik az Intune panel, válassza az **Ügyfélalkalmazások** panelt.
 
     ![A Microsoft Intune panel képernyőképe](./media/apps-selective-wipe01.png)
 

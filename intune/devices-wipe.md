@@ -1,11 +1,11 @@
 ---
-title: Vállalati adatok eltávolítása az eszközökről a Microsoft Intene használatával – Azure | Microsoft Docs
-description: Eltávolíthatja a vállalati adatokat az eszközről, vagy visszaállíthatja a gyári beállításokat Android, androidos munkahelyi profilt használó, iOS, macOS vagy Windows rendszerű eszközön a Windows Intune-nal. Törölheti is az eszközt az Azure Active Directoryból.
+title: Eszközök kivonása vagy összes adatuk törlése a Microsoft Intune használatával – Azure | Microsoft Docs
+description: A Windows Intune-nal kivonhat Android rendszerű, androidos munkahelyi profilt használó, iOS, macOS vagy Windows rendszerű eszközöket, vagy törölheti azok összes adatát. Törölheti is az eszközt az Azure Active Directoryból.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/10/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,47 +13,47 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41d8f70dd72e845663f39e151c393f5edc0ad394
-ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
+ms.openlocfilehash: dfefb17a2d8b9b4041846b879297f388156fee54
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028745"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312817"
 ---
-# <a name="remove-devices-by-using-factory-reset-removing-company-data-or-manually-unenrolling-the-device"></a>Eszközök eltávolítása gyári beállítások visszaállításával, a céges adatok eltávolításával vagy az eszköz regisztrációjának manuális megszüntetésével
+# <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Eszközök eltávolítása összes adatuk törlésével, az eszköz kivonásával vagy regisztrációja manuális törlésével
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-A **Céges adatok eltávolítása** vagy a **Gyári beállítások visszaállítása** műveletekkel eltávolíthatja az eszközt az Intune-ból, ha az eszközre már nincs szükség, azt egy megváltozott célra használják, vagy ha elveszett. A saját tulajdonban lévő, Intune-ban regisztrált eszközeikre a felhasználók is kiadhatnak egy távoli parancsot az Intune céges portálon keresztül.
+A **Kivonás** vagy az **Összes adat törlése** művelettel eltávolíthatja az eszközt az Intune-ból, ha az eszközre már nincs szükség, azt egy megváltozott célra használják, vagy ha elveszett. A saját tulajdonban lévő, Intune-ban regisztrált eszközeikre a felhasználók is kiadhatnak egy távoli parancsot az Intune céges portálon keresztül.
 
 > [!NOTE]
-> Mielőtt eltávolítana egy felhasználót az Azure Active Directoryból (Azure AD), adjon ki egy **Gyári beállítások visszaállítása** vagy egy **Céges adatok eltávolítása** parancsot az adott felhasználóhoz rendelt összes eszközre. Ha felügyelt eszközzel rendelkező felhasználókat távolít el az Azure AD-ból, akkor az Intune már nem fogja tudni visszaállítani ezeken az eszközökön a gyári beállításokat vagy eltávolítani a céges adatokat.
+> Mielőtt eltávolítana egy felhasználót az Azure Active Directoryból (Azure AD), adjon ki egy **Kivonás** vagy egy **Összes adat törlése** parancsot az adott felhasználóhoz rendelt összes eszközre. Ha felügyelt eszközzel rendelkező felhasználókat távolít el az Azure AD-ból, akkor az Intune már nem fogja tudni törölni ezeknek az eszközöknek az összes adatát, vagy kivonni az eszközöket.
 
-## <a name="factory-reset"></a>Gyári beállítások visszaállítása
+## <a name="wipe"></a>Törlés
 
-A **Gyári beállítások visszaállítása** művelet visszaállítja az eszközön az alapértelmezett gyári beállításokat. A felhasználói adatok attól függően maradnak meg, hogy bejelölte-e a **Regisztrációs állapot és felhasználói fiók megtartása** jelölőnégyzetet. Ellenkező esetben megtörténik a meghajtó biztonságos törölése.
+Az **Összes adat törlése** művelet visszaállítja az eszközön az alapértelmezett gyári beállításokat. A felhasználói adatok attól függően maradnak meg, hogy bejelölte-e a **Regisztrációs állapot és felhasználói fiók megtartása** jelölőnégyzetet. Ellenkező esetben megtörténik a meghajtó biztonságos törölése.
 
-|Gyári beállítások visszaállítása művelet|**Regisztrációs állapot és felhasználói fiók megtartása**|Eltávolítva az Intune kezelése alól|Leírás|
+|Az Összes adat törlése művelet|**Regisztrációs állapot és felhasználói fiók megtartása**|Eltávolítva az Intune kezelése alól|Description|
 |:-------------:|:------------:|:------------:|------------|
-|**Gyári beállítások visszaállítása**| Nincs bejelölve | Igen | Törli az összes felhasználói fiókot, adatot, MDM-szabályzatot és beállítást. Visszaállítja az operációs rendszert az alapértelmezett állapotra és beállításokra.|
-|**Gyári beállítások visszaállítása**| Bejelölve | Nem | Törli az összes MDM-szabályzatot. Megtartja a felhasználói fiókokat és az adatokat. Visszaállítja a felhasználói beállításokat az alapértelmezett értékre. Visszaállítja az operációs rendszert az alapértelmezett állapotra és beállításokra.|
+|**Törlés**| Nincs bejelölve | Igen | Törli az összes felhasználói fiókot, adatot, MDM-szabályzatot és beállítást. Visszaállítja az operációs rendszert az alapértelmezett állapotra és beállításokra.|
+|**Törlés**| Bejelölve | Nem | Törli az összes MDM-szabályzatot. Megtartja a felhasználói fiókokat és az adatokat. Visszaállítja a felhasználói beállításokat az alapértelmezett értékre. Visszaállítja az operációs rendszert az alapértelmezett állapotra és beállításokra.|
 
 A **Regisztrációs állapot és felhasználói fiók megtartása** lehetőség csak a Windows 10 1709-es vagy újabb verziók esetében érhető el.
 
 A rendszer újra alkalmazza az MDM-szabályzatokat az eszköz következő Intune-csatlakozásakor.
 
-A gyári beállítások visszaállítását akkor érdemes használni, ha szeretne alaphelyzetbe állítani egy adott eszközt, mielőtt új felhasználónak adná, illetve abban az esetben, ha az eszközt elveszítették vagy ellopták. A **Gyári beállítások visszaállítása** funkciót óvatosan használja. Az eszközön tárolt adatok a művelet után nem állíthatók vissza.
+Az összes adat törlését akkor érdemes használni, ha szeretne alaphelyzetbe állítani egy adott eszközt, mielőtt új felhasználónak adná, illetve abban az esetben, ha az eszközt elveszítették vagy ellopták. Az **Összes adat törlése** műveletet körültekintően használja. Az eszközön tárolt adatok a művelet után nem állíthatók vissza.
 
-### <a name="factory-reset-a-device"></a>Az eszköz gyári beállításainak visszaállítása
+### <a name="wiping-a-device"></a>Eszköz összes adatának törlése
 
 1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
 2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
 3. Válassza az **Eszközök** > **Minden eszköz** lehetőséget.
-4. Válassza ki az eszköz nevét, amelyen vissza szeretné állítani a gyári beállításokat.
-5. Az eszköz nevét megjelenítő ablaktáblán válassza a **Gyári beállítások visszaállítása** lehetőséget.
+4. Válassza ki az eszköz nevét, amelyen az összes adatot törölni szeretné.
+5. Az eszköz nevét megjelenítő panelen válassza az **Összes adat törlése** lehetőséget.
 6. A Windows 10 1709-es vagy újabb verziója esetén rendelkezésre áll a **Regisztrációs állapot és felhasználói fiók megtartása** lehetőség is. 
     
-    |Megőrződik a gyári beállítások visszaállításakor|Nem őrződik meg|
+    |Meg lesz őrizve az összes adat törlése során |Nem őrződik meg|
     | -------------|------------|
     |Az eszközhöz társított felhasználói fiókok|Felhasználói fájlok|
     |A gép állapota \(tartományhoz való csatlakozás, Azure AD-csatlakoztatás)| A felhasználók által telepített alkalmazások \(áruházbeli és Win32-alkalmazások)|
@@ -64,17 +64,17 @@ A gyári beállítások visszaállítását akkor érdemes használni, ha szeret
     |Felhasználói automatikus bejelentkezés|| 
     
          
-7. A gyári beállítások visszaállításának megerősítéséhez válassza az **Igen** lehetőséget.
+7. Az összes adat törlésének megerősítéséhez válassza az **Igen** lehetőséget.
 
-Ha az eszköz be van kapcsolva és csatlakoztatva van, a **Gyári beállítások visszaállítása** műveletnek az összes eszköztípusra való propagálása kevesebb, mint 15 percet vesz igénybe.
+Ha az eszköz be van kapcsolva és csatlakoztatva van, az **Összes adat törlése** műveletnek az összes eszköztípusra való propagálása kevesebb mint 15 percet vesz igénybe.
 
-## <a name="remove-company-data"></a>Céges adatok eltávolítása
+## <a name="retire"></a>Kivonás
 
-A **Céges adatok eltávolítása** művelet eltávolítja a felügyelt alkalmazásadatokat (ha vannak ilyenek), a beállításokat és az eszközhöz az Intune használatával hozzárendelt e-mail-profilokat. Az eszközt a rendszer eltávolítja az Intune-ból. Ez akkor történik meg, amikor az eszköz legközelebb bejelentkezik és megkapja a távoli **Céges adatok eltávolítása** műveletet.
+A **Kivonás** művelet eltávolítja a felügyelt alkalmazásadatokat (ha vannak ilyenek), a beállításokat és az eszközhöz az Intune használatával hozzárendelt e-mail-profilokat. Az eszközt a rendszer eltávolítja az Intune-ból. Ez akkor történik meg, amikor az eszköz legközelebb bejelentkezik és megkapja a távoli **Kivonás** műveletet.
 
-A **Céges adatok eltávolítása** a felhasználó személyes adatai az eszközön hagyja.  
+A **Kivonás** meghagyja az eszközön a felhasználó személyes adatait.  
 
-Az alábbi táblázatok ismertetik, hogy milyen adatokat távolít el a rendszer, és hogy az eszközön maradó adatokra milyen hatással van a **Céges adatok eltávolítsa** művelet a céges adatok eltávolítása után.
+Az alábbi táblázatok ismertetik, hogy milyen adatokat távolít el a rendszer, és hogy az eszközön maradó adatokra milyen hatással van a **Kivonás** művelet a céges adatok eltávolítása után.
 
 ### <a name="ios"></a>iOS
 
@@ -110,11 +110,11 @@ Az alábbi táblázatok ismertetik, hogy milyen adatokat távolít el a rendszer
 
 ### <a name="android-work-profile"></a>Androidos munkahelyi profil
 
-Az androidos munkahelyi profillal rendelkező eszközökről a céges adatok eltávolítása a munkahelyi profilban lévő összes adatot, alkalmazást és beállítást eltávolítja. Az eszköz kikerült az Intune felügyeletéből. Az androidos munkahely profilok esetében a gyári beállítások visszaállítása nem támogatott.
+Az androidos munkahelyi profillal rendelkező eszközökről a céges adatok eltávolítása a munkahelyi profilban lévő összes adatot, alkalmazást és beállítást eltávolítja. Az eszköz kikerült az Intune felügyeletéből. Az androidos munkahelyi profilok esetében a kivonás nem támogatott.
 
 ### <a name="android-enterprise-kiosk-devices"></a>Vállalati androidos kioszkeszközök
 
-A gyári alapbeállításokat csak androidos kioszkeszközökön állíthatja vissza. Az androidos kioszkeszközökről a céges adatok nem távolíthatók el.
+Az összes adat törlése csak kioszkeszközökön lehetséges. Androidos kioszkeszközöket nem lehet kivonni.
 
 
 ### <a name="macos"></a>macOS
@@ -130,23 +130,23 @@ A gyári alapbeállításokat csak androidos kioszkeszközökön állíthatja vi
 
 ### <a name="windows"></a>Windows
 
-|Adattípus|Windows 8.1 (MDM) és Windows RT 8.1|Windows RT|Windows Phone 8.1 és Windows Phone 8|Windows 10|
+|Adattípus|Windows 8.1 (MDM) és Windows RT 8.1|Windows RT|Windows Phone 8.1 és Windows Phone 8|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
 |Vállalati alkalmazások és az Intune által telepített egyéb vonatkozó adatok|Az EFS által védett fájloknál a kulcsok visszavonódnak. A felhasználó nem tudja megnyitni a fájlokat.|A vállalati alkalmazásokat a rendszer nem távolítja el.|Törlődnek az eredetileg a Céges portálon keresztül telepített alkalmazások. Törlődnek a vállalati alkalmazásadatok.|Törlődnek az alkalmazások. A közvetlen telepítési kulcsokat a rendszer eltávolítja.<br>A Windows 10 1703-as (alkotói frissítés) és újabb verzióinál a rendszer az Office 365 ProPlus alkalmazásokat nem távolítja el.|
 |Beállítások|Az Intune-szabályzat által konfigurált beállítások érvényüket vesztik. A felhasználók megváltoztathatják a beállításokat.|Az Intune-szabályzat által konfigurált beállítások érvényüket vesztik. A felhasználók megváltoztathatják a beállításokat.|Az Intune-szabályzat által konfigurált beállítások érvényüket vesztik. A felhasználók megváltoztathatják a beállításokat.|Az Intune-szabályzat által konfigurált beállítások érvényüket vesztik. A felhasználók megváltoztathatják a beállításokat.|
 |Wi-Fi és VPN profilbeállításai|Eltávolítva.|Eltávolítva.|Nem támogatott.|Eltávolítva.|
 |Tanúsítvány profilbeállításai|A tanúsítványok törlődnek és visszavonásra kerülnek.|A tanúsítványok törlődnek és visszavonásra kerülnek.|Nem támogatott.|A tanúsítványok törlődnek és visszavonásra kerülnek.|
 |E-mail|Eltávolítja az EFS-kompatibilis e-maileket. Ez magában foglalja a Windows Posta alkalmazásában található e-maileket és mellékleteket.|Nem támogatott.|Törlődnek az Intune-on keresztül telepített e-mail-profilok. Törlődnek az eszközön gyorsítótárazott e-mailek.|Eltávolítja az EFS-kompatibilis e-maileket. Ez magában foglalja a Windows Posta alkalmazásában található e-maileket és mellékleteket. A rendszer eltávolítja az Intune által telepített e-mail-fiókokat.|
-|Az Azure AD elhagyása|Nem.|Nem.|Törlődik az Azure AD rekord.|Nem alkalmazható. A Windows 10-ben nem lehet eltávolítani a vállalati adatokat az Azure AD-hez csatlakoztatott eszközökről.|
+|Az Azure AD elhagyása|Nem.|Nem.|Törlődik az Azure AD rekord.|Nem alkalmazható. A Windows 10-ben nem lehet kivonni az Azure AD-hez csatlakoztatott eszközöket.|
 
-### <a name="remove-company-data"></a>Céges adatok eltávolítása
+### <a name="retire"></a>Kivonás
 
 1. Jelentkezzen be az [Intune-ba az Azure Portalon](https://aka.ms/intuneportal).
 2. Az **Eszközök** panelen válassza a **Minden eszköz** lehetőséget.
-3. Válassza ki az eszköz nevét, amelyről szeretné eltávolítani a céges adatokat.
-4. Az eszköz nevét megjelenítő ablaktáblán válassza a **Céges adatok eltávolítása** lehetőséget. Válassza az **Igen** lehetőséget a megerősítéshez.
+3. Válassza ki a kivonni kívánt eszköz nevét.
+4. Az eszköz nevét megjelenítő panelen válassza a **Kivonás** lehetőséget. Válassza az **Igen** lehetőséget a megerősítéshez.
 
-Ha az eszköz be van kapcsolva és csatlakoztatva van, a **Céges adatok eltávolítása** műveletnek az összes eszköztípusra való propagálása kevesebb, mint 15 percet vesz igénybe.
+Ha az eszköz be van kapcsolva és csatlakoztatva van, a **Kivonás** műveletnek az összes eszköztípusra való propagálása kevesebb mint 15 percet vesz igénybe.
 
 ## <a name="delete-devices-from-the-intune-portal"></a>Eszközök törlése az Intune-portálról
 
@@ -160,7 +160,7 @@ Az Intune konfigurálható úgy, hogy automatikusan törölje az inaktívnak, el
 1. Jelentkezzen be az [Intune-ba az Azure Portalon](https://aka.ms/intuneportal).
 2. Válassza az **Eszközök** > **Eszköztörlési szabályok** > **Igen** lehetőséget.
 3. Az **Azon eszközök törlése, amelyek a megadott számú napig nem jelentkeztek be** mezőben adjon meg egy 90 és 270 közötti értéket.
-4. Válassza a **Mentés** lehetőséget.
+4. Válassza a **Mentés** elemet.
 
 
 
@@ -181,8 +181,8 @@ Előfordulhat, hogy eszközöket kell törölnie az Azure AD-ből kommunikáció
 Ha szeretne teljesen kivonni egy Apple DEP-eszközt az Intune általi felügyeletből, kövesse az alábbi lépéseket:
 
 1. Jelentkezzen be az [Intune-ba az Azure Portalon](https://aka.ms/intuneportal).
-2. Válassza az **Eszközök** > **Minden eszköz** > a törölni kívánt eszköz > **Céges adatok eltávolítása** lehetőséget.
-![Képernyőkép a céges adatok eltávolításáról](./media/devices-wipe/remove-company-data.png)
+2. Válassza az **Eszközök** > **Minden eszköz** > a törölni kívánt eszköz > **Kivonás** lehetőséget.
+![Kivonás képernyőképe](./media/devices-wipe/retire.png)
 3. Válassza az **Eszközök regisztrálása** > **Apple-regisztráció** > **Készülékregisztrációs programbeli token** > token kiválasztása > **Eszközök** > jelölőnégyzet bejelölése az eszközhöz > **Törlés** > **Igen** lehetőséget.
 ![Képernyőkép az eszköz törléséről](./media/devices-wipe/delete-device.png)
 4. Látogasson el a [deploy.apple.com](http://deploy.apple.com) webhelyre, és keressen rá az eszközre a sorozatszáma alapján.

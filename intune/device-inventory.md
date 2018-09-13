@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16b8067610e21652a40cb87302d8f1f3d05de342
-ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
+ms.openlocfilehash: a658182800f480f27097e078f28adc95c35aa3ea
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39117922"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313178"
 ---
 # <a name="see-device-details-in-intune"></a>Eszközadatok megtekintése az Intune-ban
 
@@ -34,11 +34,14 @@ Ez a cikk bemutatja, hogyan tekintheti meg az összes eszközét és azok tulajd
 2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
 3. Válassza az **Eszközök** > **Minden eszköz** lehetőséget, majd jelölje ki a listában szereplő eszközök egyikét, hogy megnyissa annak részletes adatait:
 
-   - Az **Áttekintés** az eszköz nevét és néhány lényeges tulajdonságát tartalmazza, köztük sok más mellett azt is, hogy saját eszköz-e (BYOD), és mikor jelentkezett be. Válassza a **További részletek** lehetőséget az alábbiakhoz:
-     - Céges adatok eltávolítása
-     - Eszköz törlése
-     - Az eszköz távoli zárolása
-     - Törlés
+   - Az **Áttekintés** az eszköz nevét és néhány lényeges tulajdonságát tartalmazza, köztük sok más mellett azt is, hogy saját eszköz-e (BYOD), és mikor jelentkezett be. Az eszközön a következő műveleteket hajthatja végre:
+      - [Kivonás](devices-wipe.md#retire)
+        - [Törlés](devices-wipe.md#wipe)
+        - [Távoli zárolás](device-remote-lock.md)
+        - [Eszköz szinkronizálása](device-sync.md)
+        - [Új PIN-kód](device-passcode-reset.md)
+        - [Újraindítás](device-restart.md) (kizárólag Windowson)
+        - [Újrakezdés](device-fresh-start.md) (kizárólag Windowson)
      - Távsegítség-munkamenet indítása
    - [Saját létrehozású eszközkategória](device-group-mapping.md) hozzárendelésére és az eszköz tulajdonosának (saját eszköz vagy vállalati eszköz) átállítására használja a **Tulajdonságok** lehetőséget.
    - A **Hardver** sok részletet tartalmaz az eszközről, köztük sok más mellett az eszköz azonosítóját, operációs rendszerét és annak verzióját, a tárhelyet, a modellt és a gyártót és a feltételes hozzáférés beállításait.

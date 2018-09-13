@@ -15,12 +15,12 @@ ms.assetid: a1542fc3-672e-47c1-a21f-82826a2f8ac4
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 767402326c2b87043eea776a83d58a08072cd301
-ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
+ms.openlocfilehash: 6b69934edc70e10ee01394cf5b6a4fed75334660
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37869338"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330058"
 ---
 # <a name="get-started-with-adding-apps-in-microsoft-intune"></a>Bevezetés a Microsoft Intune alkalmazásainak hozzáadásába
 
@@ -39,7 +39,7 @@ Az Intune a következő típusú alkalmazások a vállalati eszközökhöz való
 
 1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. Válassza a **Mobilalkalmazások**, majd az **Alkalmazások** elemet.
+3. Válassza az **Ügyfélalkalmazások**, majd az **Alkalmazások** elemet.
 4. Válassza a **Hozzáadás** lehetőséget, majd válassza az **iOS** lehetőséget az **Alkalmazástípus** megadásakor.
 5. Válassza az **Alkalmazás kiválasztása** lehetőséget a **Keresés az App Store-ban** panel megjelenítéséhez.
 6. A szövegdobozban keressen rá egy alkalmazásra, amelyet hozzárendel az eszközhöz. Válassza ki az alkalmazást, majd kattintson a **Kiválasztás** gombra.

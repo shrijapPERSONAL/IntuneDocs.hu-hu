@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 952845ba19c52aa44a9e82ee92909b8c4f32aed6
-ms.sourcegitcommit: 0132b59e484c220338b1efcd35d03c83c285361e
+ms.openlocfilehash: 731f6f5baaa150210765313ffc60133623e52923
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39587023"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313699"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings---intune"></a>Android- és Samsung Knox Standard-eszközök korlátozásaira vonatkozó beállítások – Intune
 
@@ -35,7 +35,7 @@ A cikk bemutatja a Microsoft Intune összes olyan eszközkorlátozásokra vonatk
 - **Másolás és beillesztés (csak Samsung Knox esetén)** – Az eszköz másolási és beillesztési funkcióinak engedélyezése.
 - **Vágólap megosztása az alkalmazások között (csak Samsung Knox esetén)** – Engedélyezi a vágólap használatát az alkalmazások közötti másolásra és beillesztésre.
 - **Diagnosztikai adatok küldése (csak Samsung Knox esetén)** – Megakadályozza, hogy a felhasználó diagnosztikai adatokat küldjön az eszközről.
-- **Gyári beállítások visszaállítása (csak Samsung Knox esetén)** – Lehetővé teszi, hogy a felhasználó visszaállítsa a gyári beállításokat az eszközön.
+- **Összes adat törlése (csak Samsung Knox esetén)** – Lehetővé teszi, hogy a felhasználó az [összes adatot törölje](devices-wipe.md) az eszközön.
 - **Földrajzi hely meghatározása (csak Samsung Knox esetén)** – Lehetővé teszi, hogy az eszköz felhasználja a földrajzi helyre vonatkozó adatokat.
 - **Kikapcsolás (csak Samsung Knox esetén)** – Engedélyezi az eszköz felhasználó általi kikapcsolását.<br>Ha le van tiltva, a **Sikertelen bejelentkezések száma, mielőtt törlődne az eszközön lévő összes adat** beállítás nem adható meg.
 - **Képernyőfelvétel (csak Samsung Knox esetén)** – Lehetővé teszi, hogy a felhasználó képként rögzítse a képernyőn látható tartalmat.

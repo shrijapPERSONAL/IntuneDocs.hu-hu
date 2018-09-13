@@ -14,12 +14,12 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c3d0e31520aa2f73eabfce5ebc1d55d4df73946
-ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
+ms.openlocfilehash: d7207b84dacc47b567c0fc86c3215605965fda6d
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/23/2018
-ms.locfileid: "36329926"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312798"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Gyakori kérdések az MAM-ről és az alkalmazásvédelemről
 
@@ -112,10 +112,12 @@ A személyes azonosítószám (PIN-kód) egy olyan kód, amellyel ellenőrizni l
 
     - **A használhatóság fokozása érdekében az ugyanattól a gyártótól származó alkalmazások megosztott PIN-kódot használnak:** Az iOS-ben minden **ugyanattól a gyártótól származó** alkalmazás egyetlen közös alkalmazásszintű PIN-kódot használ. Androidon minden alkalmazás egyetlen közös alkalmazásszintű PIN-kódot használ.
     - **„A hozzáférési követelmények ismételt ellenőrzése ennyi idő után (perc)” viselkedés eszköz-újraindítás után:** Egy PIN-kód-számláló rögzíti az inaktív állapotban eltöltött perceket, és meghatározza, hogy mikor jelenítse meg legközelebb az Intune alkalmazás PIN-kódját. iOS rendszeren a PIN-kód-számlálót nem érinti az eszköz-újraindítás. Az eszközök újraindítása így nincs hatással arra, hogy a felhasználó hány percig inaktív egy Intune-os PIN-kód-szabályzattal ellátott iOS-alkalmazásban. Android rendszeren a PIN-kód-számláló újraindul az eszköz újraindításakor. Ennek köszönhetően az Intune-os PIN-kód-szabályzattal ellátott Android-alkalmazások **az eszköz újra indítása után** valószínűleg kérni fogják az alkalmazás PIN-kódját „A hozzáférési követelmények ismételt ellenőrzése ennyi idő után (perc)” beállítás értékének függetlenül.  
-    - **A PIN-kódhoz társított számláló gördülő jellege:** amikor megadják a PIN-kódot egy alkalmazás (az A alkalmazás) eléréséhez, és az alkalmazás kikerül az előtérből (a bemenet fő fókuszából) az eszközön, ezen PIN-kód számlálója alaphelyzetbe áll. Egy olyan alkalmazás (B alkalmazás) sem fogja bekérni a PIN-kódot a felhasználótól, amely szintén ezt a PIN-kódot használja, mivel a számláló alaphelyzetbe állt. Az adatkérés akkor jelenik meg újra, amikor a rendszer ismét eléri a „Hozzáférési követelmények újbóli ellenőrzése ennyi idő után (perc)” beállítás értékét. 
+    - **A PIN-kódhoz társított számláló gördülő jellege:** amikor megadják a PIN-kódot egy alkalmazás (az A alkalmazás) eléréséhez, és az alkalmazás kikerül az előtérből (a bemenet fő fókuszából) az eszközön, ezen PIN-kód számlálója alaphelyzetbe áll. Egy olyan alkalmazás (B alkalmazás) sem fogja bekérni a PIN-kódot a felhasználótól, amely szintén ezt a PIN-kódot használja, mivel a számláló alaphelyzetbe állt. Az adatkérés akkor jelenik meg újra, amikor a rendszer ismét eléri a „Hozzáférési követelmények újbóli ellenőrzése ennyi idő után (perc)” beállítás értékét.
+
+iOS-eszközökön, ha a bemenet fő fókuszán kívüli alkalmazás ismét eléri **A hozzáférési követelmények ismételt ellenőrzése ennyi idő után (perc)** értéket, az adatkérés akkor is újra megjelenik, ha a PIN-kód különböző közzétevőktől származó alkalmazások között van megosztva. Így ha a felhasználó rendelkezik például egy _A_ alkalmazással az _X_ közzétevőtől, és egy _B_ alkalmazással az _Y_ közzétevőtől, akkor ez a két alkalmazás ugyanazon a PIN-kódon osztozik. A felhasználó fókuszában (előtér) az _A_ alkalmazás áll, a _B_ alkalmazás pedig kis méretűre van állítva. **A hozzáférési követelmények ismételt ellenőrzése ennyi idő után (perc)** érték elérése után a felhasználónak szüksége van PIN-kódra, hogy átváltson a _B_ alkalmazásra.
 
       >[!NOTE] 
-      > A felhasználó hozzáférési követelményeinek gyakoribb ellenőrzése (azaz a PIN-kód kérése) érdekében, különösen a gyakran használt alkalmazások esetében javasolt csökkenteni a „Hozzáférési követelmények újbóli ellenőrzése ennyi idő után (perc)” beállítás értéket. 
+      > In order to verify the user's access requirements more often (i.e. PIN prompt), especially for a frequently used app, it is recommended to reduce the value of the 'Recheck the access requirements after (minutes)' setting. 
       
 - **Hogyan működik az Intune PIN-kód az Outlook és a OneDrive beépített PIN-kódjaival?**<br></br>
 Az Intune PIN-kód egy inaktivitásalapú számláló alapján (azaz „A hozzáférési követelmények ismételt ellenőrzése ennyi idő után (perc)” értéke alapján) működik. Az Intune PIN-kód kérései így az alkalmazások beépített PIN-kódjaitól (amelyek gyakran alapértelmezés szerint az alkalmazásindításhoz vannak kötve) függetlenül jelennek meg az Outlookban és a OneDrive-ban. Ha a felhasználó egyszerre mindkét PIN-kód-kérelmet megkapja, várhatóan az Intune PIN-kódnak kell elsőbbséget élveznie. 
@@ -137,13 +139,13 @@ A rendszergazdák olyan alkalmazásvédelmi szabályzatokat léptethetnek életb
 - **Mi kerül titkosításra?**<br></br> Csak a rendszergazda alkalmazásvédelmi szabályzatának értelmében „cégesként” megjelölt adatok. „Cégesnek” azok az adatok számítanak, amelyek vállalati forrásból származnak. Az Office-alkalmazásokat illetően az Intune a következőket tekinti vállalati forrásnak: e-mailek (Exchange) vagy felhőbeli tárhely (OneDrive alkalmazás Vállalati OneDrive-fiókkal). Az Intune alkalmazásburkoló eszközével kezelt üzletági alkalmazások esetében minden alkalmazásadat „cégesnek” minősül.
 
 **Hogyan törli távolról az adatokat az Intune?**<br></br>
-Az Intune három különböző módon törölhet adatokat: teljes törlés az eszközről, MDM szelektív törlés és MAM szelektív törlés. Az MDM-beli távoli törlésről további információt az [Eszközök eltávolítása a gyári beállítások visszaállításával vagy a céges adatok eltávolításával](devices-wipe.md#factory-reset) című témakörben találhat. A MAM segítségével végrehajtott szelektív törlésről a [Céges adatok eltávolítása](devices-wipe.md#remove-company-data) és a [Csak a céges adatok törlése az alkalmazásokból](apps-selective-wipe.md) című témakörben tudhat meg többet.
+Az Intune három különböző módon törölhet adatokat: teljes törlés az eszközről, MDM szelektív törlés és MAM szelektív törlés. Az MDM-beli távoli törlésről az [Eszközök eltávolítása az összes adat törlésével vagy kivonással](devices-wipe.md) című témakörben találhat további információt. A MAM segítségével végrehajtott szelektív törlésről [A kivonás művelete](devices-wipe.md#retire) és a [Csak a céges adatok törlése az alkalmazásokból](apps-selective-wipe.md) című témakörben tudhat meg többet.
 
-- **Mit jelent a gyári beállítások visszaállítása?**<br></br> A [gyári beállítások visszaállítása](devices-wipe.md) törli **az eszközről** az összes adatot és beállítást, visszaállítva az alapértelmezett gyári beállításokat. Az eszközt a rendszer eltávolítja az Intune-ból.
+- **Mit jelent az összes adat törlése?**<br></br> Az [összes adat törlése](devices-wipe.md) törli **az eszközről** az összes adatot és beállítást, visszaállítva az alapértelmezett gyári beállításokat. Az eszközt a rendszer eltávolítja az Intune-ból.
   >[!NOTE]
-  > A gyári beállítások visszaállítása csak az Intune mobileszköz-kezelésben regisztrált eszközökön hajtható végre.
+  > Az összes adat törlése csak az Intune mobileszköz-kezelésben regisztrált eszközökön hajtható végre.
 
-- **Mi az MDM szelektív törlés?**<br></br> A céges adatok eltávolításáról az [Eszközök eltávolítása – Céges adatok eltávolítása](devices-wipe.md#remove-company-data) című témakörben olvashat.
+- **Mi az MDM szelektív törlés?**<br></br> A céges adatok eltávolításáról az [Eszközök eltávolítása – Kivonás](devices-wipe.md#retire) című témakörben olvashat.
 
 - **Mi az MAM szelektív törlés?**<br></br> A MAM szelektív törlés egyszerűen eltávolítja a vállalati alkalmazásadatokat egy alkalmazásból. A kérelem az Intune Azure-portál használatával küldhető be. A törlési kérelmek kezdeményezéséről a [Csak a céges adatok törlése az alkalmazásokból](apps-selective-wipe.md) című témakörben tájékozódhat.
 

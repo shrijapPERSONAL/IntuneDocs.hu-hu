@@ -15,12 +15,12 @@ ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 545c5b26b6c908f4a9e7066d3f76cbf774c8fbea
-ms.sourcegitcommit: 08e1b0d45c84eb9525a0a59f5540d41434da2814
+ms.openlocfilehash: 6c92b1b660856fb52f6259514ad9075ab96fb2fc
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39146696"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313292"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>iOS-eszközök regisztrálása az Intune-ban
 
@@ -55,8 +55,8 @@ Az Apple School Manager egy eszközvásárlási és -regisztrációs program isk
 
 ## <a name="apple-configurator"></a>Apple Configurator
 iOS-eszközök regisztrálhatók a Mac számítógépen futó Apple Configuratorral is. Az eszközök előkészítéséhez csatlakoztassa őket USB-kapcsolaton keresztül, és telepítsen regisztrációs profilt. Az Apple Configurator használatával kétféle módon lehet regisztrálni az eszközöket:
-- Regisztrálás a Beállítási asszisztenssel – ez a folyamat visszaállítja az eszközt gyári alaphelyzetbe, felkészíti az eszközt a Beállítási asszisztens futtatására, és telepíti a cég szabályzatait az eszköz új felhasználójának.
-- Közvetlen regisztrálás – ez a folyamat nem állítja vissza az eszközt gyári alaphelyzetbe, és előre definiált szabályzattal regisztrálja azt. A módszer felhasználói affinitás nélküli eszközökkel használható.
+- Regisztrálás a Beállítási asszisztenssel – ez a folyamat törli az eszköz összes adatát, felkészíti az eszközt a Beállítási asszisztens futtatására, és telepíti a cég szabályzatait az eszköz új felhasználójának.
+- Közvetlen regisztrálás – ez a folyamat nem törli az eszköz összes adatát, és előre definiált szabályzattal regisztrálja azt. A módszer felhasználói affinitás nélküli eszközökkel használható.
 
 További információ az [Apple Configurator-regisztrációról](apple-configurator-setup-assistant-enroll-ios.md).
 

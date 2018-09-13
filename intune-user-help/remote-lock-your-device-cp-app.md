@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/02/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,16 +16,16 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4774cdc54a526f25b006c0c3d1a745ab96005c3a
-ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
+ms.openlocfilehash: 5b3fbd677eea9143bf5cb297253303330129ef25
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33676630"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148578"
 ---
-# <a name="lock-your-device-from-company-portal-app-for-windows-10"></a>Eszköz zárolása a Windows 10-es Céges portál alkalmazásból
+# <a name="lock-your-device-from-the-company-portal-app-for-windows-10"></a>Eszköz zárolása a Windows 10-es Céges portál alkalmazásból
 
-Elveszett vagy ellopott eszköz távoli zárolása a Windows 10-es Céges portál alkalmazásból. Ha az eszköz támogatja a funkciót, a Céges portál alkalmazás lezárhatja az eszköz képernyőjét, függetlenül attól, hogy az hol tartózkodik. A zárolás feloldásához egy PIN-kódot kell megadni.
+Elveszett vagy ellopott eszköz távoli zárolása a Windows 10-es Céges portál alkalmazásból. Ha az eszköz támogatja a funkciót, ez a beállítás lezárhatja az eszköz képernyőjét, függetlenül attól, hogy az eszköz hol tartózkodik. Amíg valaki be nem írja a helyes jelszót, addig az eszköz zárolása nem oldható fel, és az eszköz nem használható.
 
 A távoli zárolás a következő operációs rendszert futtató eszközökön támogatott:
 
@@ -43,4 +43,4 @@ A távoli zárolás a következő operációs rendszert futtató eszközökön t
    ![Képernyőfelvétel a céges portál alkalmazás eszköz részleteit megjelenítő oldaláról, a Távoli zárolás megerősítésére felszólító üzenettel.](./media/1804_remote_lock_Windows_CPapp_06.png)  
 4. Ha az eszköz előkerül, adja meg PIN-kódját a zárolás feloldásához.  
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

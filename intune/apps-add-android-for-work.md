@@ -15,12 +15,12 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b65daa6e098954d88c502114fc7a33ad4cf5efcd
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: faa8918441bd705875fcdc72d3717af001ab2b85
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909286"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329870"
 ---
 # <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Alkalmazások hozzárendelése androidos munkahelyi profilos eszközökhöz az Intune-ban
 
@@ -59,18 +59,18 @@ Fontos, hogy az Intune-t és az androidos munkahelyi profilokat beállítsa a k�
 
 ## <a name="sync-a-managed-google-play-app-with-intune"></a>Felügyelt Google Play áruházbeli alkalmazás szinkronizálása az Intune-nal
 
-Ha jóváhagyott egy áruházból beszerzett alkalmazást, de nem látja a **Mobilalkalmazások** munkaterület **Licencelt alkalmazások** csomópontjában, az alábbi lépésekkel kényszerítheti az azonnali szinkronizálást:
+Ha jóváhagyott egy áruházból beszerzett alkalmazást, de nem látja az **Ügyfélalkalmazások** munkaterület **Licencelt alkalmazások** csomópontjában, az alábbi lépésekkel kényszerítheti az azonnali szinkronizálást:
 
 1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. Az **Intune** panelen válassza a **Mobilalkalmazások** lehetőséget.
-4. A **Mobilalkalmazások** munkaterületen a **Beállítások** alatt válassza az **Felügyelt Google Play** lehetőséget.
+3. Az **Intune** ablaktáblán válassza az **Ügyfélalkalmazások** lehetőséget.
+4. Az **Ügyfélalkalmazások** munkaterületen a **Beállítások** alatt válassza a **Felügyelt Google Play** lehetőséget.
 5. A **Felügyelt Google Play** panelen válassza a **Frissítés** lehetőséget.  
     A lapon frissül az utolsó szinkronizálás időpontja és állapota.
-6. A **Mobilalkalmazások** munkaterületen válassza az **Alkalmazások** lehetőséget.  
+6. Az **Ügyfélalkalmazások** munkaterületen válassza az **Alkalmazások** lehetőséget.  
     Megjelenik az elérhetővé vált Felügyelt Google Play-alkalmazás.
 
-Ha az alkalmazás megjelenik a **Mobilalkalmazások** munkaterület paneljének **Alkalmazáslicencek** csomópontjában, [ugyanúgy hozzárendelheti, mint bármelyik alkalmazást](/intune-azure/manage-apps/deploy-apps). Az alkalmazásokat úgy is hozzá lehet rendelni, hogy csak bizonyos felhasználói csoportokat érjenek el.
+Ha az alkalmazás megjelenik az **Ügyfélalkalmazások** munkaterület paneljének **Alkalmazáslicencek** csomópontjában, [ugyanúgy hozzárendelheti, mint bármelyik alkalmazást](/intune-azure/manage-apps/deploy-apps). Az alkalmazásokat úgy is hozzá lehet rendelni, hogy csak bizonyos felhasználói csoportokat érjenek el.
 
 A hozzárendelés után az alkalmazás rendelkezésre áll a célzott eszközökön. A rendszer nem kér telepítési jóváhagyást az eszköz felhasználójától.
 

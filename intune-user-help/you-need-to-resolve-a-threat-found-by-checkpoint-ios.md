@@ -1,11 +1,11 @@
 ---
 title: SandBlast Mobile Protect által észlelt fenyegetések elhárítása iOS-en | Microsoft Docs
-description: Ismerje meg, hogyan háríthatja el a Mobile Protect által talált fenyegetéseket iOS-en.
+description: Útmutató az iOS-hez készült SandBlast Mobile Protect által talált fenyegetések elhárításához.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/03/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,29 +15,34 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: a34e73d3209453f07523d1c841e8ba578c85aa3d
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: f4725b76517bc9d3a27f07d7289f178c54a31bce
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755967"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148031"
 ---
-# <a name="you-need-to-resolve-a-threat-found-by-sandblast-mobile-protect"></a>El kell hárítania egy fenyegetést, amelyet a SandBlast Mobile Protect észlelt
+# <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>A SandBlast Mobile Protect által észlelt fenyegetés elhárítása
 
-Mivel a SandBlast Mobile Protect potenciális fenyegetést talált az eszközén, el kell hárítania a problémát, hogy ismét hozzáférhessen a céges vagy iskolai e-mailjeihez, alkalmazásaihoz és fájljaihoz. A megjelenő üzenet tartalma attól a problémától függ, amelyet a SandBlast Mobile Protect talált az eszközön.
+A SandBlast Mobile Protect egy mobilfenyegetés elleni védelmi szolgáltatás, amely lehetséges fenyegetéseket azonosít és értékel ki iOS-eszközein. Ez után a Céges portál alkalmazásban megtekinthető jelentést küld a fenyegetésekről. A fenyegetések megoldatlan nem megfelelőségi problémákként jelennek meg az alkalmazásban. Előfordulhat, hogy amíg ezek a fenyegetések jelen vannak, a következők nem lehetségesek:   
 
-A probléma elhárításához nyissa meg a SandBlast Mobile Protect alkalmazást, és kövesse az ott lévő útmutatást.
+* Hozzáférés a vállalati e-mailekhez
+* Hozzáférés a vállalati Wi-Fi-hez
+* Hozzáférés a SharePoint Online-hoz
+* Vállalati fájlok szinkronizálása a OneDrive-val
+* Hozzáférés a vállalati alkalmazásokhoz
 
-## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>Mi látható, ha a regisztrált eszköz e-mailekhez és fájlokhoz való hozzáférése le van tiltva?
+Ez a cikk a SandBlast Mobile Protect fenyegetési riasztásainak felismerését, és a fenyegetések elhárításának módját ismerteti.  
 
-Ha a regisztrált eszközön vírus vagy egyéb biztonsági fenyegetés található, akkor a céges e-mailek vagy fájlok elérésének megkísérlésekor a SandBlast Mobile Protect alkalmazás figyelmezteti a szükséges lépésekre.
+## <a name="troubleshoot-virus-or-security-threat"></a>Vírus vagy biztonsági fenyegetés elhárítása  
+Vírus vagy biztonsági fenyegetés észlelésekor a SandBlast Mobile Protect alkalmazás vállalata hozzáférési szabályzatainak megfelelően jár el. A hozzáférési szabályzatok megakadályozhatják, hogy hozzáférjen a munkájához szükséges hálózathoz, alkalmazásokhoz és e-mailekhez.  
 
-Az **eszközkezelési portálon** található hivatkozásra koppintva nyissa meg a [Céges portál webhelyet](http://portal.manage.microsoft.com), ahol megtalálja a hiba elhárításához követendő útmutatást.
+A SandBlast Mobile Protect párbeszédablakban hívja fel a figyelmét a hozzáférés visszaszerzéséhez szükséges teendőkre. Jelölje ki a fenyegetést, és hárítsa el azt az alkalmazáson belüli utasításokat követve.  
 
-## <a name="example-of-an-app-that-sandblast-mobile-protect-sees-as-a-threat"></a>Példa a SandBlast Mobile Protect által fenyegetésként észlelt alkalmazásra
+## <a name="troubleshoot-an-app-threat"></a>Alkalmazásfenyegetés elhárítása  
 
-Ha olyan alkalmazást telepített, amelyet a SandBlast Mobile Protect fenyegetésként észlel, akkor az alkalmazás figyelmezteti, hogy nem megbízható alkalmazás van telepítve az eszközön.
+Az eszközére nézve fenyegetőnek ítélt alkalmazás telepítésekor értesítést kap a SandBlast Mobile Protectben. Amíg az érintett alkalmazás az eszközén marad, Ön nem fog hozzáférni a vállalati erőforrásokhoz.  
 
-Ebben az esetben távolítsa el az alkalmazást, hogy azonnal hozzáférhessen a céges e-mailjeihez és adataihoz. Ha ezt nem teszi meg, az alkalmazás eltávolításáig nem férhet hozzá az e-mailekhez és az adatokhoz.
+A megoldáshoz jelölje ki az alkalmazást a fenyegetéseknek a SandBlast Mobile Protectben megjelenő listájában. Ez után kövesse az utasításokat az alkalmazás eltávolításához.  
 
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Céges portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980)

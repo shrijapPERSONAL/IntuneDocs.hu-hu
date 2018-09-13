@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: a1d0c445c2e6e5f2e4227d1b04ead416bf73d737
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 937fdd2130a0ae85421a4310fe6a0dc70986d2de
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34444880"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313238"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windowsos eszközök csoportos regisztrálása
 
@@ -85,10 +85,10 @@ Az Azure AD-felhasználók általános jogú felhasználók ezeken az eszközök
 ## <a name="troubleshooting-windows-bulk-enrollment"></a>Windowsos eszközök csoportos regisztrálásával kapcsolatos hibaelhárítás
 
 ### <a name="provisioning-issues"></a>Kiépítéssel kapcsolatos problémák
-A kiépítés alapvetően új windowsos eszközök esetében használható. Kiépítési hibák esetén szükség lehet a gyári beállítások visszaállítására, vagy az eszköz rendszerindító lemezképből való helyreállítására. Az alábbi példák egyes kiépítési hibákhoz adnak magyarázatot:
+A kiépítés alapvetően új windowsos eszközök esetében használható. Kiépítési hibák esetén szükség lehet az összes adat törlésére, vagy az eszköz rendszerindító lemezképből való helyreállítására. Az alábbi példák egyes kiépítési hibákhoz adnak magyarázatot:
 
 - Ha egy kiépítési csomaggal olyan Active Directory-tartományhoz vagy Azure Active Directory-bérlőhöz próbál csatlakozni, amely nem hoz létre helyi fiókot, akkor az eszköz elérhetetlenné válhat, ha a tartományhoz való csatlakozás hálózati hiba miatt meghiúsul.
-- A kiépítési csomag által futtatott parancsfájlok rendszerkörnyezetben futnak. A parancsfájlok tetszőleges módosításokat képesek végrehajtani az eszköz fájlrendszerében és konfigurációiban. Egy rosszindulatú vagy hibás szkript azt eredményezheti, hogy az eszközt csak a rendszerkép alaphelyzetbe állításával vagy a gyári beállítások visszaállításával lehet helyreállítani.
+- A kiépítési csomag által futtatott parancsfájlok rendszerkörnyezetben futnak. A parancsfájlok tetszőleges módosításokat képesek végrehajtani az eszköz fájlrendszerében és konfigurációiban. Egy rosszindulatú vagy hibás szkript azt eredményezheti, hogy az eszközt csak a rendszerkép alaphelyzetbe állításával vagy az összes adat törlésével lehet helyreállítani.
 
 ### <a name="problems-with-bulk-enrollment-and-company-portal"></a>A csoportos regisztrációval és a Céges portállal kapcsolatos problémák
 Ha egy felhasználó egy korábban már csoportosan regisztrált eszközt próbál a Céges portál segítségével regisztrálni, a rendszer figyelmezteti, hogy az eszközzel további műveleteket (beállítást vagy regisztrációt) kell végrehajtania. Az eszköz regisztrálva van, de a regisztrációt a Céges portál alkalmazás vagy webhely nem ismeri fel.

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,26 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: fee3f31b4a475ed3def1ee96fcdad2f2a414ab3c
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: f209fa315d5d5c36e661a931c32c70ba5ba93d81
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30752393"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150050"
 ---
 # <a name="resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>A Mobile Threat Defense alkalmazás által talált fenyegetések elhárítása
 
-A Mobile Threat Defense potenciális fenyegetést talált az Ön iOS-es eszközén. Csak akkor férhet ismét hozzá vállalati vagy iskolai e-mailjeihez, alkalmazásaihoz és fájljaihoz, ha elhárította a problémát. Attól függően, hogy a cég informatikai támogatási szolgálata hogyan állította be a Mobile Threat Defense szolgáltatást, Ön a következő alkalmazások valamelyikével fogja megoldani az ilyen problémákat.
+A Mobile Threat Defense alkalmazás észleli az eszközeit fenyegető veszélyeket, és értesítést küld róluk. Egyes cégek a Mobile Threat Defense szolgáltatást egy MDM-szolgáltatóval, például az Intune-nal integrálják. Integrálás esetén a Mobile Threat Defense szolgáltatás jelentést készít a fenyegetésekről (gyanús alkalmazások, hálózatok és az operációs rendszer sebezhetősége), és a Céges portál alkalmazáson keresztül értesíti ezekről. Ezután a Mobile Threat Defense alkalmazásban megtekintheti a fenyegetés részleteit és az elhárítás lépéseit.  
+
+A fenyegetések megoldatlan nem megfelelőségi problémákként jelennek meg a Céges portálon. Ha a fenyegetések elérnek egy adott kockázati szintet, a cég visszavonja az Ön hozzáférését a céges erőforrásokhoz. Amíg a fenyegetések jelen vannak, előfordulhat, hogy nem lehet végrehajtani a következőket:  
+
+* Hozzáférés a vállalati e-mailekhez
+* Hozzáférés a vállalati Wi-Fi-hez
+* Hozzáférés a SharePoint Online-hoz
+* Vállalati fájlok szinkronizálása a OneDrive-val
+* Hozzáférés a vállalati alkalmazásokhoz
+
+Az alábbiakban a cég által beállítható, iOS-eszközökhöz készült Mobile Threat Defense-szolgáltatások láthatók. Az alkalmazás nevére kattintva megtekintheti az alkalmazás viselkedésére vonatkozó adatokat. 
 
 
 * [Lookout for Work](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios.md)
@@ -32,13 +42,5 @@ A Mobile Threat Defense potenciális fenyegetést talált az Ön iOS-es eszköz�
 * [SandBlast Mobile Protect](you-need-to-resolve-a-threat-found-by-checkpoint-ios.md)
 * [Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-ios.md)
 
-A probléma elhárításához nyissa meg a Mobile Threat Defense-alkalmazást, és kövesse az alkalmazásban megjelenő utasításokat.
-
-**Példa a Mobile Threat Defense által fenyegetésként észlelt alkalmazásra**
-
-Ha olyan alkalmazást telepített, amely a Mobile Threat Defense szerint fenyegetést jelent, akkor egy, az alkalmazást megnevező képernyő jelenik meg. Ha ehhez hasonló üzenet jelenik meg, koppintson az alkalmazás nevére a képernyő tetején, és kövesse az utasításokat a fenyegetés eltávolításához.
-
-Az alkalmazás eltávolítása után azonnal hozzáférhet az e-mailekhez és más vállalati vagy iskolai adatokhoz. A vállalati e-mailekhez és más adatokhoz egészen addig nem férhet hozzá, amíg el nem távolítja az alkalmazást.
-
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).
 

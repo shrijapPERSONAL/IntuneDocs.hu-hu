@@ -5,17 +5,17 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/26/2018
+ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: b9cc34b2fa45ae447a015f1b3105081041bd0afe
-ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
+ms.openlocfilehash: 1fe0258d3b6d9092c032184fca5fc0f8dc3f12df
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39268838"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313496"
 ---
 # <a name="configure-ios-update-policies-in-intune"></a>Az iOS-es frissítési szabályzatok konfigurálása az Intune-ban
 
@@ -32,7 +32,7 @@ Ez a funkció iOS 10.3-as vagy újabb rendszerű eszközök esetében érhető e
 4. Adja meg a szabályzat nevét és leírását.
 5. Válassza a **Beállítások** lehetőséget. 
 
-    Adja meg, hogy mikor ne kerüljön sor az iOS-eszközökön a legújabb elérhető frissítés kényszerített telepítésére. Ezekkel a beállításokkal megadhatja azt az időkeretet, amikor a korlátozás érvényben lesz. Beállíthatja a hét napjait, az időzónát, a kezdési időt és a befejezési időt.
+    Adja meg, hogy mikor ne kerüljön sor az iOS-eszközökön a legújabb elérhető frissítés kényszerített telepítésére. Ezekkel a beállításokkal megadhatja azt az időkeretet, amikor a korlátozás érvényben lesz. Konfigurálhatja a hét **napjait**, az **időzónát**, a **kezdési időt**, a **befejezési időt** és **a szoftverfrissítések láthatóságának késleltetését (napokban)** a megadott felhasználókhoz. A szoftverfrissítések késleltetéséhez 1 és 90 nap közötti értéket adhat meg. A szoftverfrissítések késleltetésének megszüntetéséhez írja be a 0 értéket. Ezek a frissítési beállítások csak felügyelt iOS-eszközökre érvényesek.
 
 6. A módosítások mentéséhez válassza az **OK** gombot. Válassza a **Létrehozás** lehetőséget a szabályzat létrehozásához.
 

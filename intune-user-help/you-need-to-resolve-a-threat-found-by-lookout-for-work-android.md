@@ -1,11 +1,11 @@
 ---
 title: A Lookout for Work által talált fenyegetések elhárítása Android rendszeren | Microsoft Docs
-description: Ismerje meg, hogyan háríthatja el a Lookout for Work által talált fenyegetéseket Androidon.
+description: Útmutató a Lookout for Work alkalmazás által egy Android-eszközön talált fenyegetések elhárításához.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/17/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,35 +15,43 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: df7055f031fb7661cc0fa3bf2d00b16fc0a082dc
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0e8f10bac2c7ffc75f81572da60249842c8f4cc1
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015472"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148521"
 ---
-# <a name="resolve-a-threat-found-by-lookout-for-work"></a>A Lookout for Work által azonosított fenyegetés elhárítása
+# <a name="resolve-a-threat-found-by-lookout-for-work"></a>A Lookout for Work által azonosított fenyegetés elhárítása  
 
-A Lookout for Work potenciális fenyegetést talált az eszközön. Ahhoz, hogy ismét hozzáférhessen vállalati vagy iskolai e-mailjeihez, alkalmazásaihoz és fájljaihoz, el kell hárítania a problémát. A következőhöz hasonló üzenetet fog látni:
+A Lookout for Work alkalmazás egy mobilfenyegetés elleni védelmi szolgáltatás, amely lehetséges fenyegetéseket azonosít Android-eszközein. Ezek a fenyegetések a Céges portál alkalmazásnak lesznek jelentve, ahol megoldatlan nem megfelelőségi problémákként jelennek meg. Előfordulhat, hogy amíg ezek a fenyegetések jelen vannak, a következők nem lehetségesek:
 
-![A Lookout for Work fenyegetést talált az eszközön](./media/lookout-threat-found-android.png)
+* Hozzáférés a vállalati e-mailekhez
+* Hozzáférés a vállalati Wi-Fi-hez
+* Hozzáférés a SharePoint Online-hoz
+* Vállalati fájlok szinkronizálása a OneDrive-val
+* Hozzáférés a vállalati alkalmazásokhoz
 
-A probléma megoldásához nyissa meg a Lookout for Work alkalmazást, és kövesse az alkalmazásban megjelenő utasításokat.
+Ez a cikk a Lookout for Work fenyegetési riasztásainak felismerését, és a fenyegetések elhárításának módját ismerteti. 
 
-## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>Mi látható, ha a regisztrált eszköz e-mailekhez és fájlokhoz való hozzáférése le van tiltva?
+## <a name="troubleshoot-virus-or-security-threat"></a>Vírus vagy biztonsági fenyegetés elhárítása  
+Ha a Lookout for Work alkalmazás biztonsági vagy vírusfenyegetést észlel, vissza kell nyernie a vállalati erőforrásokhoz való hozzáférését.  
 
-Ha a regisztrált eszközön vírus vagy másféle biztonsági fenyegetés található, és megpróbálja elérni az iskolai e-maileket vagy fájlokat, ehhez hasonló üzenet jelenik meg:
+1. Vírus vagy biztonsági fenyegetés észlelésekor az alábbi képernyőképen láthatóhoz hasonló üzenetet kap. Koppintson az **eszközfelügyeleti portál** hivatkozásra a [Céges portál webhely](https://portal.manage.microsoft.com/devices) megnyitásához.  
 
-![A Lookout for Work hibaüzenete és hivatkozás a Vállalati portál webhelyére](./media/mtd-go-to-device-management-portal-android.png)
+    ![Példa képernyőkép egy Lookout for Work-hibaüzenetről a Céges portál webhelyre mutató hivatkozással és a kék OK gombbal.](./media/mtd-go-to-device-management-portal-android.png)
 
-Koppintson az **eszközkezelési portál** hivatkozásra a [Vállalati portál webhelyének](https://portal.manage.microsoft.com#HelpDeskDialog) eléréséhez, ahol útmutatót talál a probléma elhárításához.
+2. Jelölje ki az eszközét.  
+3. Olvassa el az eszköz alatt megjelenő figyelmeztetést. Ez felszólítja, hogy nyissa meg a Lookout for Worköt a vírus vagy biztonsági fenyegetés elhárításához. 
 
-## <a name="example-of-an-app-that-lookout-for-work-sees-as-a-threat"></a>Példa olyan alkalmazásra, amelyet a Lookout for Work fenyegetésként észlel
+    ![Példa képernyőkép a Céges portál Eszközök oldaláról, a Lookout for Work figyelmeztetésével.](./media/CP-lookout-virus-banner-1808.png)  
 
-Ha olyan alkalmazást telepített, amelyet a Lookout for Work fenyegetésként észlel, akkor ehhez hasonló képernyő jelenik meg:
+## <a name="troubleshoot-an-app-threat"></a>Alkalmazásfenyegetés elhárítása  
 
-![példa a Lookout for Work vírusriasztási üzenetére](./media/lookout-virus-alert-android.png)
+A Lookout for Work által fenyegetőnek ítélt alkalmazás telepítésekor az alábbi képernyőképen láthatóhoz hasonló üzenetet kap.  
 
-Az alkalmazás eltávolítása után azonnal hozzáférhet a vállalati e-mailjeihez és adataihoz. Az e-mailekhez és más adatokhoz egészen addig nem férhet hozzá, amíg el nem távolítja az alkalmazást.
+![Példa képernyőkép a Lookout for Work alkalmazás felületén megjelenő vírusriasztási Lookout-üzenettel. Ezen három gomb látható: „Bezárás”, „További információ” és „Eltávolítás”.](./media/lookout-virus-alert-android.png)  
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+A vállalati e-mailhez és adatokhoz való hozzáférést a kérdéses alkalmazás eltávolításával szerezheti vissza. Amíg az alkalmazás az eszközén van, Ön nem fog hozzáférni a vállalati erőforrásokhoz.    
+
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).  

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/22/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,53 +17,51 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: feba62cac464af75a0f0d249022edb6bd5d031f3
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 2f8a65d05ecffcf87d7a84ab23ad215256286dd0
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225374"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150075"
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Az eszköz távoli zárolása a Vállalati portál webhelyéről
 
-Történhetnek balesetek, és néha előfordulhat, hogy eltűnnek eszközök. Ha az eszköz elveszett vagy ellopták, leginkább amiatt aggódhat, hogy bárki hozzáférhet a rajta lévő adatokhoz, akárhol is legyen az eszköz.
+Elveszett vagy ellopott eszköz távoli zárolása a Céges portál webhelyről. Ha az eszköz támogatja a funkciót, ez a beállítás az eszköz tartózkodási helyétől függetlenül lezárhatja annak képernyőjét. Amíg valaki be nem írja a helyes jelszót, addig az eszköz zárolása nem oldható fel, és az eszköz nem használható.   
 
-[!INCLUDE [wit_nextref](includes/end-user-password-guidance.md)]
-
-A biztonság kedvéért zárolhatja azt a Távoli zárolás lehetőséggel a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog). A Távoli zárolás a következő rendszereken használható:
+A távoli zárolás a következőknél működik:
 
 * Android
 * iOS
 * macOS
 * Windows 10
 * Windows 10 Mobile (ha az eszközön már volt beállítva jelszó)
-* Windows Phone 8.1 (ha az eszközön már volt beállítva jelszó)
+* Windows Phone 8.1 (ha az eszközön már volt beállítva jelszó)  
 
-## <a name="to-use-remote-lock-to-lock-your-device"></a>A Távoli zárolás funkció használata az eszköz zárolásához
+1. A [Céges portál webhelyen](https://portal.manage.microsoft.com) válassza a __Menü__ gomb > __Eszközök__ lehetőséget.  
 
-1. A [Céges portál webhelyen](https://portal.manage.microsoft.com#HelpDeskDialog) koppintson a __menü__ gombra, majd válassza a __Saját eszközök__ lehetőséget.
+2. Válassza ki a zárolni kívánt eszközt.  
 
-2. A __Saját eszközök__ oldalon válassza ki a zárolni kívánt eszköz nevét.
+    ![Képernyőkép az Eszközök oldalról, amelyen két csempén azonosítatlan, általános nevű eszközök láthatók. Közvetlenül az eszközök alatt egy szürke szalagcím helyezkedik el, amely arra kéri a felhasználót, hogy azonosítsa a használt eszközt, vagy adjon hozzá egy újat.](./media/rename-reset-device-step2-1808.png) 
 
-   ![Képernyőkép a Saját eszközök oldalról, amelyen néhány azonosítatlan eszköz látható a nem felsorolt eszközök regisztrálására, illetve az azonosítatlan eszközök azonosítására felszólító szalagcím felett.](./media/macOS_enroll_002_tap_here_banner.png)
+3. Válassza a **Távoli zárolás** lehetőséget. Ha a zárolás lehetőség nem jelenik meg az oldal tetején, válassza az **Egyéb (…)** > **Távoli zárolás** lehetőséget.  
 
-3. Az adott eszköz lehetőségei egy előreugró ablakban nyílnak meg. Koppintson a **Távoli zárolás** gombra.
+   ![A kiválasztott eszköz adatai a Céges portál webhelyén, felül az Átnevezés, az Eltávolítás, az Eszköz alaphelyzetbe állítása, a Jelszó alaphelyzetbe állítása és a Távoli zárolás lehetőségekre mutató hivatkozásokkal. ](./media/rename-reset-device-1808.png) 
 
-   ![A kiválasztott eszközzel kapcsolatos összes lehetőség a Céges portál webhelyén, többek között az Átnevezés, az Eltávolítás, az Eszköz alaphelyzetbe állítása, a Jelszó alaphelyzetbe állítása és a Távoli zárolás lehetőségei. ](./media/iwp-screen-with-all-options.png)
+    ![Az Egyéb ikon kinagyított képe egy piros nyíllal kiemelve.](./media/rename-reset-device-step3-more-1808.png)    
 
-4. Ekkor megjelenik egy értesítés, mely arról tájékoztatja, hogy az eszköz zárolására készül. Koppintson a **Távoli zárolás** lehetőségre, és a Vállalati portál webhelye megpróbálja zárolni az eszközt.
+4. Egy figyelmeztetés jelenik meg, amely tájékoztatja, hogy az eszköz zárolására készül. A jóváhagyáshoz koppintson a **Távoli zárolás** lehetőségre.
 
-   Miután kiválasztotta a **Távoli zárolás** lehetőséget, a „Távoli zárolás függőben” üzenet fog megjelenni.  Ha a távoli zárolás sikeres, az állapot a „Sikeres volt a távoli zárolás” állapotra változik.
+A jóváhagyás után a Céges portál kísérletet tesz az eszköz zárolására. Ennek során a „Távoli zárolás függőben” üzenet látható. Ha az eszköz zárolása megtörtént, megjelenik a „Távoli zárolás sikeres” üzenet.  
 
-   A Távoli zárolás állapota három helyen jelenik meg:
+A Távoli zárolás állapota három helyen jelenik meg:
 
    * A webhely értesítési területén.
    * Az eszköz **Részletek** lapján.
-   * Az oldal **Eszközeim** területén, az eszköz nevét megjelenítő csempén.
+   * Az oldal **Eszközök** területén, az eszköz nevét megjelenítő csempén.  
 
 > [!Note]
-> Ha „A távoli zárolás nem sikerült” értesítés jelenik meg, néhány perc várakozás után próbálkozzon újra az eszköz zárolásával. Amikor újra próbálkozik, az állapot ismét „Távoli zárolás függőben” lesz. Ha az újrapróbálkozás sem sikerül, forduljon a cég informatikai támogatási szolgálatához.
+> Ha a távoli zárolás sikertelenségét jelző üzenet jelenik meg, várjon néhány percig. Próbálja meg ismét zárolni az eszközt. Ekkor az állapot ismét „Távoli zárolás függőben” lesz. Ha az újrapróbálkozás sikertelen, forduljon a cég informatikai támogatási szolgálatához.
 
-Ha eszközét megtalálja, és a Távoli zárolás funkció használata után szeretné feloldani a zárolását, egyszerűen adja meg a jelszavát.
+Ha eszközét megtalálja, és a Távoli zárolás funkció használata után szeretné feloldani a zárolását, egyszerűen adja meg a jelszavát.  
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

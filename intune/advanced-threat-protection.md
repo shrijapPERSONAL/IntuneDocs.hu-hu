@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/23/2018
+ms.date: 8/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d43e95b2f236dc4c03bb3f63670b2b1400243531
-ms.sourcegitcommit: 0303e3b8c510f56e191e6079e3dcdccfc841f530
+ms.openlocfilehash: b89ca2c4320db733f39ce9b67d275169f4cba5c6
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "40251670"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313791"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>A Windows Defender ATP engedélyezése feltételes hozzáféréssel az Intune-ban
 
@@ -71,27 +71,15 @@ Ezt a feladatot általában egyszer kell elvégezni. Ha tehát az ATP már enged
 
 ## <a name="onboard-devices-using-a-configuration-profile"></a>Eszközök bevonása konfigurációs profil használatával
 
-A Windows Defender része egy, az eszközökre telepítendő konfigurációs csomag. A telepített csomag a [Windows Defender ATP szolgáltatásokkal](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) kommunikál a fájlok vizsgálatáról, a fenyegetések észleléséről, és jelenti a kockázatokat a Windows Defender ATP-nek. Az Intune használatával létrehozható egy ezt a konfigurációs csomagot használó konfigurációs profil. Ez után ezt a profilt kell az első alkalommal bevonni kívánt eszközökhöz rendelni.
+Amikor egy végfelhasználó regisztrál az Intune-ba, különböző beállításokat küldhet az eszközre egy konfigurációs profil használatával. Ez a Windows Defender ATP-re is érvényes.
 
-Miután egyszer védelem alá vont egy eszközt egy konfigurációs csomaggal, nem kell ismét megtennie. Ez általában egyszeri feladat.
+A Windows Defender tartalmaz egy bevezető konfigurációs csomagot, amely a [Windows Defender ATP szolgáltatásokkal](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) kommunikál a fájlok vizsgálatáról, a fenyegetések észleléséről, és jelenti a kockázatokat a Windows Defender ATP-nek.
 
-Eszközöket [csoportszabályzat vagy a System Center Configuration Manager (SCCM)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-windows-defender-advanced-threat-protection) használatával is bevonhat.
+A bevezetés során az Intune automatikusan generált konfigurációs csomagot kap a Windows Defender ATP-től. Amikor a profil az eszközre van küldve vagy telepítve, a konfigurációs csomag is le lesz küldve az eszközre. A Windows Defender ATP így figyelni tudja az eszközön a fenyegetéseket.
 
-A következő lépések az Intune használatával végzett védelembe vételt ismertetik.
+Miután egyszer védelem alá vont egy eszközt egy konfigurációs csomaggal, nem kell ismét megtennie. Eszközöket [csoportszabályzat vagy a System Center Configuration Manager (SCCM)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-windows-defender-advanced-threat-protection) használatával is bevonhat.
 
-#### <a name="download-configuration-package"></a>Konfigurációs csomag letöltése
-
-1. A [Windows Defender biztonsági központban](https://securitycenter.windows.com) válassza a **Beállítások** > **Bevonás** lehetőséget.
-2. Adja meg a következő beállításokat:
-  - **Operációs rendszer**: Windows 10
-  - **Gép bevonása** > **üzembe helyezés módja**: Mobileszköz-felügyelet / Microsoft Intune
-3. Válassza a **Csomag letöltése** lehetőséget és mentse a **WindowsDefenderATPOnboardingPackage.zip** fájlt. Bontsa ki a fájlt.
-
-Ez a tömörített fájl tartalmazza a **WindowsDefenderATP.onboarding** fájlt, amelyre a következő lépéseknél lesz szükség.
-
-#### <a name="create-the-atp-configuration-profile"></a>Az ATP konfigurációs profil létrehozása
-
-Ez a profil a korábbi lépésekben letöltött bevonási csomagot használja.
+### <a name="create-the-configuration-profile"></a>A konfigurációs profil létrehozása
 
 1. Az [Azure Portalon](https://portal.azure.com) kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
 2. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
@@ -100,10 +88,9 @@ Ez a profil a korábbi lépésekben letöltött bevonási csomagot használja.
 5. A **Profiltípus** beállításnál válassza a **Windows Defender Komplex veszélyforrások elleni védelem (Windows 10 asztali verzió)** lehetőséget.
 6. A beállítások konfigurálása:
 
-  - **Regisztrációs konfigurációs csomag feltöltése**: Tallózással keresse meg és jelölje ki a letöltött **WindowsDefenderATP.onboarding** fájlt. Ez a fájl teszi lehetővé azt a beállítást, hogy az eszközök jelenthessenek a Windows Defender ATP szolgáltatásnak.
-  - **Minták megosztása minden fájlhoz**: Engedélyezi minták gyűjtését és megosztását a Windows Defender ATP-vel. Ha például gyanús fájlt talál, elküldheti a Windows Defender ATP-nek alapos elemzésre.
-  - **Telemetriai jelentések gyakoriságának növelése**: Magas kockázatnak kitett eszközök ennek a beállításnak az engedélyezésével gyakrabban jelentik a telemetriai adatokat a Windows Defender ATP szolgáltatásnak.
-  - **Regisztráció megszüntetésére szolgáló konfigurációs csomag feltöltése**: Ha meg kívánja szüntetni a Windows Defender ATP általi figyelést, akkor letölthet és hozzáadhat egy kizáró csomagot a [Windows Defender biztonsági központból](https://securitycenter.windows.com). Egyébként ez a tulajdonság figyelmen kívül hagyható.
+  - **A Windows Defender ATP ügyfélkonfigurációs csomagjának típusa**: Válassza a **Bevezetés** lehetőséget a konfigurációs csomag profilhoz adásához. A **Regisztráció megszüntetése** lehetőséget választva eltávolíthatja profilból a konfigurációs csomagot.
+  - **Minták megosztása minden fájlhoz**: **Engedélyezve** lehetővé teszi minták gyűjtését és megosztását a Windows Defender ATP-vel. Ha például gyanús fájlt talál, elküldheti a Windows Defender ATP-nek alapos elemzésre. **Nem konfigurálva** nem oszt meg mintákat a Windows Defender ATP számára.
+  - **Telemetriai jelentések gyakoriságának növelése**: Magas kockázatnak kitett eszközök ennek a beállításnak az **Engedélyezésével** gyakrabban jelentik a telemetriai adatokat a Windows Defender ATP szolgáltatásnak.
 
     A [Windows 10 rendszerű gépek bevonása a System Center Configuration Manager használatával](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-sccm-windows-defender-advanced-threat-protection) részletesebben ismerteti ezeket a Windows Defender ATP-beállításokat.
 

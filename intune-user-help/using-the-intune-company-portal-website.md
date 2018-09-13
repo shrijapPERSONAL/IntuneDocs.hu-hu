@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 06/27/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,23 +17,23 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 83dd6265d4d34ea46a7299e3a6bdf8a06baa30c1
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 8275a1f542badaadc5248826c5d1d3a8f24d56c3
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34762229"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149495"
 ---
 # <a name="using-the-intune-company-portal-website"></a>Az Intune vállalati portál webhelyének használata
-A [Munkahelyi portál webhelye](https://portal.manage.microsoft.com#HelpDeskDialog) egy olyan weblap, amellyel az Intune-ban regisztrált számítógépeket és eszközöket lehet kezelni.
+A [Céges portál webhely](https://portal.manage.microsoft.com) használatával megtekinthet, szerkeszthet, hozzáadhat és eltávolíthat felügyelt eszközöket.
 
-A következőket teheti a felhasználó a Munkahelyi portál webhelyen:
+A Céges portál webhelyéről a következő műveletek bármelyikét végrehajthatja:
 
 -   [Átnevezheti az eszközét](rename-your-device-cpwebsite.md)
 
 -   [Eltávolíthatja az eszközét](remove-your-device-cpwebsite.md)
 
--   [Eszköz alaphelyzetbe állítása (törlése)](reset-erase-your-device-cpwebsite.md)
+-   [Alaphelyzetbe állíthatja az eszközét](reset-erase-your-device-cpwebsite.md)
 
 -   [Kezdeményezheti az eszköz PIN-kódjának alaphelyzetbe állítását](reset-your-passcode-cpwebsite.md)
 
@@ -41,8 +41,8 @@ A következőket teheti a felhasználó a Munkahelyi portál webhelyen:
 
 -   Megkeresheti a cég informatikai támogatási szolgálatának elérhetőségét, ha be vannak állítva ezek az adatok
 
--   Megtekintheti az eszköz adatait, beleértve azt is, hogy az eszköz megfelel-e a munkahelye vagy iskolája házirendjeinek
+-   Megfelelőségi állapot ellenőrzése
 
--   Távoli kapcsolat segítségével kezelheti a számítógépét (a lehetőség csak személyi számítógépek esetében működik)
+-   Számítógép távfelügyelete
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

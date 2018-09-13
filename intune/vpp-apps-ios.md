@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2018
+ms.date: 08/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 115486f02a86616fdf2c340fa7e0e2ff6e505afa
-ms.sourcegitcommit: 973a06f4a35b74314fece2bae17dd6885b4211c3
+ms.openlocfilehash: cbe9f28b66031f6eddef4804c157f01ca79ad81d
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42823069"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347518"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Mennyiségi vásárlási program keretében vásárolt iOS-alkalmazások kezelése a Microsoft Intune-nal
 
@@ -83,9 +83,9 @@ Amikor beállít egy eszközt egy új Intune-felhasználó számára, konfigurá
 
 1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-1.  Az **Intune** panelen válassza a **Mobilalkalmazások** > **iOS-es VPP-tokenek** elemet a **Beállítás** lehetőség alatt.
-2.  A VPP-tokenek panel listájában válassza a **Létrehozás** elemet.
-4. Az **VPP-token Létrehozása** panelen adja meg az alábbi adatokat:
+3.  Az **Intune** ablaktáblán válassza az **Ügyfélalkalmazások** > **iOS-es VPP-tokenek** elemet a **Beállítás** lehetőség alatt.
+4.  A VPP-tokenek panel listájában válassza a **Létrehozás** elemet.
+5. Az **VPP-token Létrehozása** panelen adja meg az alábbi adatokat:
     - **VPP-jogkivonatfájl** – Ha még nem tette meg, iratkozzon fel a vállalati Volume Purchase Programra vagy az oktatási programra. A regisztrációt követően töltse le a fiókjához tartozó Apple VPP-tokent, és itt jelölje ki.
     - **Apple ID** – Adja meg a mennyiségi vásárlási programhoz kapcsolódó fiók Apple ID-ját.
     - **Ország/régió** – Válassza ki a VPP országkódját.  Az Intune a megadott VPP-ország áruházából az összes területi beállításhoz tartozó VPP-alkalmazást szinkronizálja.
@@ -93,9 +93,10 @@ Amikor beállít egy eszközt egy új Intune-felhasználó számára, konfigurá
         > Az ország módosításakor az ezzel a tokennel létrehozott alkalmazásoknál az Apple-szolgáltatással való legközelebbi szinkronizálás alkalmával frissülni fognak az alkalmazás metaadatai és az áruházi URL-cím. Az alkalmazás nem fog frissülni, ha az nem található meg az új országhoz tartozó áruházában.
 
     - **VPP-fiók típusa** –A következő lehetőségek közül választhat: **Üzlet** és **Oktatás**.
-    - **Alkalmazások automatikus frissítése** – Az automatikus frissítés engedélyezéséhez válasszon a **Be** és **Ki** érték közül. Ha ez a funkció engedélyezve van, a készülék bejelentkezésekor az Intune frissíti az adott tokennel vásárolt összes alkalmazást az Intune szolgáltatáson keresztül.
-Az App Store áruházban észleli a VPP-alkalmazások frissítéseit, és automatikusan leküldi azokat az eszközre, amikor az eszköz bejelentkezik.
-4. Amikor elkészült, válassza a **Létrehozás** gombot.
+    - **Alkalmazások automatikus frissítése** – Az automatikus frissítés engedélyezéséhez válasszon a **Be** és **Ki** érték közül. Engedélyezés esetén az Intune észleli, ha az alkalmazás-áruházban az adott VPP-alkalmazáshoz frissítés érhető el, és az eszköz legközelebbi bejelentkezésekor automatikusan leküldi a frissítéseket az eszközre.
+        > [!NOTE]
+        > Az automatikus alkalmazásfrissítések eszköz- és felhasználói licencelésű alkalmazások esetén is működnek az iOS 11.0 és újabb verzióin.
+6. Amikor elkészült, válassza a **Létrehozás** gombot.
 
 A token a jogkivonatok panel listájában jelenik meg.
 
@@ -103,7 +104,7 @@ Az Apple által tárolt adatok bármikor szinkronizálhatók az Intune-nal a **S
 
 ## <a name="to-assign-a-volume-purchased-app"></a>Mennyiségi programban vásárolt alkalmazás hozzárendelése
 
-1.  Az **Intune** panelen válassza az **Mobilalkalmazások** > **Alkalmazások** elemet a **Kezelés** lehetőség alatt.
+1.  Az **Intune** ablaktáblán válassza az **Eszközalkalmazások** > **Alkalmazások** elemet a **Kezelés** lehetőség alatt.
 2.  Az alkalmazáslista paneljén válassza ki a hozzárendelni kívánt alkalmazást, és válassza a **Hozzárendelés** lehetőséget.
 3.  Az ***Alkalmazás neve*** - **Hozzárendelések** panelen kattintson a **Csoport hozzáadása** elemre, majd a **Csoport hozzáadása** panelen válasszon egy **hozzárendelés-típust** és azokat az Azure AD-beli felhasználói vagy eszközcsoportokat, amelyekhez hozzá kívánja rendelni az alkalmazást.
 5.  Minden kijelölt csoporthoz válassza ki az alábbi beállításokat:
@@ -153,9 +154,17 @@ Ha egy VPP-token összes VPP-alkalmazásának licenceit törölni szeretné, el�
 
 Az Apple VPP-jogkivonat megújításához töltsön le egy új jogkivonatot az Apple mennyiségi vásárlási programjának portáljáról, és frissítse az Intune-ban a meglévő jogkivonatot.
 
-## <a name="further-information"></a>További információ
+## <a name="deleting-an-ios-vpp-app"></a>iOS VPP-alkalmazás törlése
+
+Jelenleg az iOS VPP-alkalmazások nem törölhetők a Microsoft Intune-ból.
+
+## <a name="additional-information"></a>További információ
 
 Amikor egy jogosult eszközzel rendelkező felhasználó először próbál VPP-alkalmazást telepíteni egy eszközön, a rendszer megkéri, hogy csatlakozzon az Apple Volume Purchase Programhoz. Még az alkalmazás telepítésének folytatása előtt csatlakozniuk kell. Az Apple Volume Purchase programhoz való csatlakozás meghívójához az szükséges, hogy a felhasználó tudja használni az iTunes alkalmazást az iOS-eszközön. Ha szabályzatot állított be az iTunes Store alkalmazás letiltásához, a VPP-alkalmazások felhasználói alapú licencelése nem fog működni. A megoldás az, hogy vagy engedélyezi az iTunes alkalmazást a szabályzat eltávolításával, vagy eszközalapú licencelést használ.
+
+Az Apple közvetlen segítséget biztosít a VPP-tokenek létrehozásához és megújításához. További információkért lásd a [Tartalomterjesztés a felhasználók felé a Mennyiségi vásárlási program (VPP) segítségével](https://go.microsoft.com/fwlink/?linkid=2014661) című részt az Apple dokumentációjában. 
+
+Ha az Intune portálján a **Külső MDM-hez rendelve** beállítás látható, a VPP-token Intune-beli használata előtt a rendszergazdának el kell távolítania a VPP-tokent a harmadik félhez tartozó MDM-ről.
 
 ## <a name="frequently-asked-questions"></a>Gyakori kérdések
 

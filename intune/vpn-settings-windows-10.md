@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/16/2018
+ms.date: 8/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: 61310f5baa64c43d2e818df6c61a36d232922c1c
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 0b064c6f0eaa67157c5c50ddad3a8fd863295b8b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744737"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312850"
 ---
 # <a name="windows-10-vpn-settings-in-intune"></a>A Windows 10 VPN-beállításai az Intune-ban
 
@@ -42,6 +42,8 @@ A kiválasztott beállításoktól függően előfordulhat, hogy nem minden ért
   - **Alapértelmezett kiszolgáló**: Ezt a kiszolgálót engedélyezi alapértelmezett kiszolgálóként, melyet az eszközök kapcsolat létesítéséhez fognak használni. Csak egy kiszolgálót állítson be alapértelmezett kiszolgálóként.
   - **Importálás**: Tallózással keressen meg egy, a kiszolgálók vesszővel tagolt listáját tartalmazó fájlt, melynek formátuma a következő: leírás, IP-cím vagy teljes tartománynév, alapértelmezett kiszolgáló. A kiszolgálók a **Kiszolgálók** listába történő importálásához kattintson az **OK** gombra.
   - **Exportálás**: Exportálja a kiszolgálók listáját egy vesszővel tagolt (CSV-) fájlba
+
+- **IP-címek regisztrálása belső DNS-sel**: Az **Engedélyezés** lehetőség választásával úgy konfigurálja a Windows 10-es VPN-profilt, hogy dinamikusan regisztrálja a VPN-interfészhez a belső DNS-sel hozzárendelt IP-címeket. Ha a **Tiltás** lehetőséget választja, akkor az IP-címek nem lesznek dinamikusan regisztrálva.
 
 - **Kapcsolat típusa**: Az alábbi listából válassza ki a VPN-kapcsolat típusát:
 

@@ -15,12 +15,12 @@ ms.assetid: c59f6df5-3317-4dff-8f19-fdeec33faedf
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1ec9a45ca09ddff5aa10cc7283444cf96c8153f6
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 47922a30d8106c4d60b6caa43c8855195e3a0220
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905410"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330245"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Alkalmazás-hozzárendelések belefoglalása vagy kizárása a Microsoft Intune-ban
 
@@ -44,8 +44,8 @@ Az Intune nem veszi számításba a felhasználók és eszközök közötti tár
 Ha csoportokhoz szeretne alkalmazást hozzárendelni a belefoglalás és kizárás használatával, tegye a következőket:
 1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. Az **Intune** menüben válassza a **Mobilalkalmazások** lehetőséget.
-4. A **Mobilalkalmazások** panelen válassza az **Alkalmazások** lehetőséget. Megjelenik a hozzáadott alkalmazások listája.
+3. Az **Intune** menüben válassza az **Ügyfélalkalmazások** lehetőséget.
+4. Az **Ügyfélalkalmazások** panelen válassza az **Alkalmazások** lehetőséget. Megjelenik a hozzáadott alkalmazások listája.
 5. Válassza ki a hozzárendelni kívánt alkalmazást. Megjelennek az alkalmazás adatai egy irányítópulton. 
 6. A menü **Kezelés** szakaszában válassza a **Hozzárendelések** elemet. 
 

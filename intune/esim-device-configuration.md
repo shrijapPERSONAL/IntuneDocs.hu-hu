@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 45d41f02fdfff7179dbd43f4d2afdac3337f8b7f
-ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
+ms.openlocfilehash: 7b03c46a9095c0f300869ebd14d1a81698e294f7
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39400283"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43314023"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>eSIM mobilhálózati profilok konfigurálása az Intune-ban – Nyilvános előzetes verzió
 
@@ -179,7 +179,7 @@ Ha az Azure AD-csoportból eltávolítja az eszközt, az eSIM-profil is el lesz 
 2. Nyissa meg az Azure AD-csoportot, és távolítsa el belőle az eszközt.
 3. Amikor az eltávolított eszköz kapcsolatba lép az Intune-nal, a frissített szabályzat értékelése után az eSIM-profil el lesz távolítva.
 
-Az eSIM-profil akkor is el lesz távolítva, ha a felhasználó törölte az eszköz regisztrációját, vagy ha az eszközön a [céges adatok eltávolítása ](devices-wipe.md#remove-company-data) vagy a [távoli eszközműveletek alaphelyzetbe állítása](devices-wipe.md#factory-reset) parancs fut az eszközön.
+Az eSIM-profil akkor is el lesz távolítva, ha az eszközt [kivonják](devices-wipe.md#retire), ha a felhasználó törölte az eszköz regisztrációját, vagy ha az eszközön a [távoli eszközműveletek alaphelyzetbe állítása](devices-wipe.md#wipe) parancs fut.
 
 > [!NOTE]
 > Előfordulhat, hogy a profil eltávolítása nem állítja le a számlázást. Lépjen kapcsolatba a mobilszolgáltatóval, és ellenőrizze az eszköz számlázási állapotát.

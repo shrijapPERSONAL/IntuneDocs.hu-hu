@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/1/2018
+ms.date: 6/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 18f86580fc4c80fade7aeaa9678e9d8edac9a53e
-ms.sourcegitcommit: b57be56524ddb5026fab94f7638dc516ed118325
+ms.openlocfilehash: 825ceb1eee8f6fdd38f8a203324ce3cad7291918
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43318003"
 ---
 # <a name="customize-devices-running-windows-holographic-with-intune"></a>Windows Holographic rendszerű eszközök testre szabása az Intune-nal
 
@@ -30,7 +31,7 @@ A Windows Holographic for Business rendszerű eszközök felügyeletében és te
 
 Az Azure Active Directory (AD) segítségével könnyedén kezelheti és vezérelheti a Windows Holographic for Business rendszerű eszközeit. Az Intune és az Azure AD használatával: 
 
-- **[Az Azure Active Directoryhoz kapcsolt eszközök beállítása](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup)**: Windows 10 rendszerű munkahelyi eszközeit, beleértve a Windows Holographic for Business rendszerű eszközöket is, hozzáadhatja az Azure Active Directoryhoz. Ez a funkció lehetővé teszi, hogy az Azure AD vezérelje az eszközt. Segít biztosítani, hogy a felhasználói olyan eszközökről csatlakozzanak a vállalati erőforrásokhoz, amelyek megfelelnek a vállalat biztonsági és megfelelőségi szabványainak.
+- **[Az Azure Active Directoryhoz kapcsolt eszközök beállítása](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup)**: Windows 10 rendszerű munkahelyi eszközeit, beleértve a Windows Holographic for Business rendszerű eszközöket is, hozzáadhatja az Azure Active Directoryhoz. Ez a funkció lehetővé teszi, hogy az Azure AD vezérelje az eszközt. Ez segít biztosítani, hogy a felhasználói olyan eszközökről érjék el a vállalati erőforrásokat, amelyek megfelelnek a vállalat biztonsági és megfelelőségi szabványainak.
 
   További részletekért tekintse meg [Az Azure AD-val történő eszközkezelés bemutatása](https://docs.microsoft.com/azure/active-directory/device-management-introduction) cikket.
 
@@ -39,7 +40,15 @@ Az Azure Active Directory (AD) segítségével könnyedén kezelheti és vezére
 ## <a name="company-portal"></a>Céges portál
 **[A Céges portál alkalmazás konfigurálása](company-portal-app.md)**
 
-Az Intune része a Céges portál, ahol a felhasználók egyebek között hozzáférnek a vállalat adataihoz, eszközöket regisztrálnak, alkalmazásokat telepítenek és kapcsolatba lépnek az IT-részleggel. A Céges portál alkalmazás testre szabható a Windows Holographic for Bussines rendszerű eszközökhöz.
+Az Intune a Céges port alkalmazást biztosítja a felhasználók részére, ahol egyebek között hozzáférhetnek a vállalat adataihoz, eszközöket regisztrálhatnak, alkalmazásokat telepíthetnek és kapcsolatba léphetnek az IT-részleggel. A Céges portál alkalmazás testre szabható a Windows Holographic for Bussines rendszerű eszközökhöz.
+
+A Céges portál alkalmazással a következő műveleteket is futtathatja:
+
+- [Eszköz eltávolítása az Intune-ból](/intune-user-help/unenroll-your-device-from-intune-windows) a Gépház alkalmazás vagy a Céges portál alkalmazás használatával
+- [Eszköz átnevezése](/intune-user-help/rename-your-device-cpapp)
+- [Alkalmazások telepítése](/intune-user-help/install-apps-cpapp-windows) az eszközön
+- [Eszközök manuális szinkronizálása](/intune-user-help/sync-your-device-manually-windows) a Gépház alkalmazásból vagy a Céges portál alkalmazásból
+
 
 ## <a name="compliance-policy"></a>Megfelelőségi szabályzat
 **[Eszközmegfelelőségi szabályzat létrehozása](compliance-policy-create-windows.md)**
@@ -71,9 +80,9 @@ Az Intune rendelkezik néhány olyan beépített funkcióval, amelyek használat
 
 Windows Holographic for Business rendszert futtató eszközök használata esetén a következő műveletek végezhetők: 
 
-- **[Gyári beállítások visszaállítása](devices-wipe.md#factory-reset)**: A **Gyári beállítások visszaállítása** művelet eltávolítja az eszközt az Intune-ból, és visszaállítja az eszköz gyári alapértelmezett beállításait. Ezt a műveletet akkor érdemes használni, mielőtt az eszközt egy új felhasználónak adják, vagy ha az eszköz elveszett, vagy ellopták.
+- **[Összes adat törlése:](devices-wipe.md#wipe)** Az **Összes adat törlése** művelet eltávolítja az eszközt az Intune-ból, és visszaállítja az eszköz gyári alapértelmezett beállításait. Ezt a műveletet akkor érdemes használni, mielőtt az eszközt egy új felhasználónak adják, vagy ha az eszköz elveszett, vagy ellopták.
 
-- **[Céges adatok eltávolítása](devices-wipe.md#remove-company-data)**: A **Céges adatok eltávolítása** művelet eltávolítja az eszközt az Intune-ból, eltávolítja a felügyelt alkalmazásadatokat, beállításokat és az Intune által hozzárendelt e-mail-profilokat. A felhasználó személyes adatai az eszközön maradnak.
+- **[Kivonás:](devices-wipe.md#retire)** A **Kivonás** művelet eltávolítja az eszközt az Intune-ból. Az Intune által hozzárendelt felügyelt alkalmazások adait, beállításokat és e-mail-profilokat is eltávolítja. A felhasználó személyes adatai az eszközön maradnak.
 
 - **[Eszköz szinkronizálása a legfrissebb szabályzatok és műveletek hozzáadásához](device-sync.md)**: A **Szinkronizálás** művelettel kényszeríteni lehet az eszközt, hogy azonnal csatlakozzon az Intune-hoz. Bejelentkezéskor az eszköz azonnal fogadja az hozzárendelt összes függőben lévő műveletet vagy szabályzatot. Ez a funkció segíthet ellenőrizni a vonatkozó szabályzatokat és elhárítani a hibákat anélkül, hogy ki kellene várni a következő ütemezett bejelentkezést.
 
@@ -94,6 +103,10 @@ Profiljaiban OMA-URI használatával testre szabhat néhány beállítást, lét
 #### <a name="custom-device-settingscustom-settings-windows-holographicmd"></a>[Egyéni eszközbeállítások](custom-settings-windows-holographic.md)
 
 Az OMA-URI (Open Mobile Alliance Uniform Resource Identifier) konfigurálásához egyéni profilt hozhat létre az Intune-ban. Az OMA-URI beállítások használatával a Windows Holographic for Business rendszerű eszközök olyan funkcióit szabályozhatja, mint a VPN engedélyezése vagy a frissítések keresése a Microsoft Update szolgáltatásban.
+
+#### <a name="configure-kiosk-modekiosk-settingsmdwindows-holographic-for-business"></a>[Teljes képernyős mód konfigurálása](kiosk-settings.md#windows-holographic-for-business)
+
+Az Intune-ban elérhető megosztott vagy vendégszámítógép funkciókkal konfigurálhatja a Windows Holographic for Business eszközöket teljes képernyős módban való futtatásra. Ezek az eszközök futtathatnak egyetlen alkalmazást (egyalkalmazásos kioszkmód) vagy több alkalmazást (többalkalmazásos kioszkmód).
 
 #### <a name="device-restrictionsdevice-restrictions-windows-holographicmd"></a>[Eszközkorlátozások](device-restrictions-windows-holographic.md)
 

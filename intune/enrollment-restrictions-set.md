@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 08/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aa91e0c0adcd1182f82c4a09746f154302fae326
-ms.sourcegitcommit: 77ed48ab52b55e92ceaa89e9edf53b892fc62adb
+ms.openlocfilehash: 76c0b96a1759caad4a1052a7233c7dcc8cecfa3b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/17/2018
-ms.locfileid: "40251498"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313717"
 ---
 # <a name="set-enrollment-restrictions"></a>Regisztrációs korlátozások beállítása
 
@@ -35,15 +35,15 @@ Többek között az alábbi regisztrációs korlátozásokat hozhatja létre:
 
 - Regisztrált eszközök maximális száma.
 - Regisztrációra alkalmas eszközplatformok:
-  - Android.
-  - Androidos munkahelyi profil.
-  - iOS.
-  - macOS.
-  - Windows.
+  - Android
+  - Androidos munkahelyi profil
+  - iOS
+  - macOS
+  - Windows
 - Platform operációsrendszer-verziók iOS, Android, androidos munkahelyi profilos és Windows rendszerű eszközökhöz. (Csak a Windows 10-es verziók használhatók. Hagyja üresen, ha a Windows 8.1 engedélyezett.)
   - Minimális verzió.
   - Maximális verzió.
-- Személyes tulajdonú eszközök korlátozása (csak iOS, Android, androidos munkahelyi profil vagy macOS esetén).
+- Személyes tulajdonú eszközök korlátozása (csak iOS, Android, androidos munkahelyi profil, macOS vagy Windows esetén).
 
 ## <a name="default-restrictions"></a>Alapértelmezett korlátozások
 
@@ -66,28 +66,46 @@ A rendszer tartalmaz alapértelmezett korlátozásokat mind az eszköztípusra, 
 
 ## <a name="set-device-type-restrictions"></a>Típus szerinti korlátozás beállítása
 
-Az eszköztípuskorlátok beállításait az alábbi lépésekkel módosíthatja:
+Az eszköztípuskorlátok beállításait az alábbi lépésekkel módosíthatja. Ezek a korlátozások a már regisztrált eszközöket nem érintik. Ez a funkció nem alkalmas az [Intune PC-ügynök](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune.md) használatával regisztrált eszközök letiltásához.
 
 1. Jelentkezzen be az Azure Portalra.
 2. Válassza a **További szolgáltatások** lehetőséget, írja be az **Intune** keresési kifejezést, majd válassza az **Intune** lehetőséget.
 3. Válassza az **Eszközök regisztrálása** > **Regisztrációs korlátozások** lehetőséget.
-4. Az **Eszköztípus-korlátozások** területen válassza ki a beállítani kívánt korlátot.
-5. A korlát neve alatt (mely az alapértelmezett korlát esetében **Minden felhasználó**) válassza a **Platformok** lehetőséget. Adja meg az **Engedélyezés** vagy a **Blokkolás** beállítást az összes felsorolt platformhoz.
-6. Válassza a **Mentés** lehetőséget.
-7. A korlát neve alatt (mely az alapértelmezett korlát esetében **Minden felhasználó**) válassza a **Platformkonfigurációk** lehetőséget. Ezután válassza ki a felsorolt platformokhoz a minimális és maximális **Verziók** értékét. Támogatott verzióformátumok többek között az alábbiak:
+4. Az **Eszköztípus-korlátozások** területen válassza ki a beállítani kívánt korlátot, majd válassza a **Tulajdonságok** > **Platformok kijelölése** lehetőséget. Adja meg az **Engedélyezés** vagy a **Blokkolás** beállítást az összes felsorolt platformhoz.
+    ![Képernyőkép platform tiltásához vagy blokkolásához](media/enrollment-restrictions-set/platform-allow-block.png)
+5. Válassza az **OK** gombot.
+6. Válassza a **Platformok konfigurálása** lehetőséget.
+    ![Képernyőkép platformok konfigurálásához](media/enrollment-restrictions-set/configure-platforms.png)
+7. Válassza ki a felsorolt platformokhoz a minimális és maximális **Verziók** értékét. Támogatott verzióformátumok többek között az alábbiak:
     - Az androidos munkahelyi profil támogatja a főverzió.alverzió.változat.build formátumot.
-    - Az iOS a főverzió.alverzió.változat formátumot támogatja.
+    - Az iOS a főverzió.alverzió.változat formátumot támogatja. Az operációs rendszer verziójának korlátozásai nem vonatkoznak a Készülékregisztrációs programban, az Apple School Manager programban vagy az Apple Configurator alkalmazással regisztrált Apple-eszközökre.
     - A Windows a főverzió.alverzió.változat.build formátumot támogatja, csak Windows 10 esetén.
-  Az operációs rendszer verziójának korlátozásai nem vonatkoznak a Készülékregisztrációs programban, az Apple School Manager programban vagy az Apple Configurator alkalmazással regisztrált Apple-eszközökre.
-8. Válassza a **személyes tulajdonú** eszközök **Engedélyezés** vagy **Blokkolás** lehetőségét az összes felsorolt platform esetében.
-    ![Eszközkorlátozási munkaterület az alapértelmezett eszközplatform-konfigurációkkal, ahol a személyes tulajdonú eszközök beállításai meg vannak adva](media/device-restrictions-platform-configurations.png)
-9. Válassza a **Mentés** lehetőséget.
+8. Válassza a **személyes tulajdonú** eszközök **Engedélyezés** vagy **Tiltás** lehetőségét az összes felsorolt platform esetében.
+9. Válassza az **OK** gombot.
 
+### <a name="android-device-type-restrictions"></a>Androidos eszköztípus-korlátozások
+- Ha letiltja a személyes tulajdonú Android-eszközök regisztrációját, a személyes tulajdonú androidos munkahelyi profilos eszközök továbbra is regisztrálhatók.
+- Alapértelmezés szerint az androidos munkahelyi profilos eszközök beállításai ugyanazok, mint az Android-eszközöké. Az androidos munkahelyi profil beállításainak módosítása után ez már nem lesz így.
+- Ha letiltja a személyes androidos munkahelyi profilos regisztrációt, csak a vállalati Android-eszközök regisztrálhatók androidos munkahelyi profilos eszközként.
 
->[!NOTE]
->- Ha letiltja a személyes tulajdonú Android-eszközök regisztrációját, a személyes tulajdonú androidos munkahelyi profilos eszközök továbbra is regisztrálhatók.
->- Alapértelmezés szerint az androidos munkahelyi profilos eszközök beállításai ugyanazok, mint az Android-eszközöké. Az androidos munkahelyi profil beállításainak módosítása után ez már nem lesz így.
->- Ha letiltja a személyes androidos munkahelyi profilos regisztrációt, csak a vállalati Android-eszközök regisztrálhatók androidos munkahelyi profilos eszközként.
+### <a name="windows-device-type-restrictions"></a>Windowsos eszköztípus-korlátozások
+Ha a Windows platformhoz az eszköztípus-korlátozás **Tiltás** értékre van beállítva, az Intune minden új Windows-regisztrációs kérelem esetében ellenőrzi, hogy vállalati regisztrációként engedélyezték-e. A jogosulatlan regisztrációk le lesznek tiltva.
+
+Windows vállalati regisztrációnak minősülnek az alábbi módszerek:
+ - A felhasználó [készülékregisztráció-kezelői fiókot]( device-enrollment-manager-enroll.md) használ a regisztráláshoz.
+- Az eszközregisztráció a [Windows AutoPilot](enrollment-autopilot.md) használatával történik.
+- Az eszköz IMEI-száma szerepel az **Eszközregisztráció** > **[Vállalati eszközazonosítók](corporate-identifiers-add.md)** listán. (Windows Phone 8.1-hez nem támogatott)
+- Az eszközregisztráció [tömeges kiépítési csomagban](windows-bulk-enroll.md) történik.
+- Az eszközregisztráció az [SCMM megosztott kezeléshez való automatikus regisztrációja](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md) révén történik.
+ 
+Az alábbi regisztrációkat cégesként jelzi az Intune, de le lesznek tiltva, mert nem kínálják fel az Intune-rendszergazdának az eszközönkénti szabályozást:
+ - [Automatikus MDM-regisztráció](windows-enroll.md#enable-windows-10-automatic-enrollment) és [Azure Active Directory-kapcsolat a Windows beállítása során](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md).
+- [Automatikus MDM-regisztráció](windows-enroll.md#enable-windows-10-automatic-enrollment) és [Azure Active Directory-kapcsolat a Windows beállításaiból](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup.md).
+ 
+Az alábbi személyes regisztrációs módszerek is le lesznek tiltva:
+- [Automatikus MDM-regisztráció](windows-enroll.md#enable-windows-10-automatic-enrollment) és [Munkahelyi fiók hozzáadása a Windows-beállításokból](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md).
+- [Csak MDM-regisztráció]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) lehetősége a Windows-beállításokból.
+
 
 ## <a name="set-device-limit-restrictions"></a>Regisztrált eszközök maximális számának beállítása
 

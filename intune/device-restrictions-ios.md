@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cee92ff36e2a199cd6cb8cf3cd5e0e839bc81584
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 71ed2458e35934de9da297140d49d6d4128b0784
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321492"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329818"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>A Microsoft Intune iOS-eszközkorlátozásokra vonatkozó beállításai
 
@@ -81,7 +81,7 @@ Az iOS Supervised (Felügyelt) módja csak a kezdeti eszközbeállítás során,
 - Párosítás Apple Watch órával 
 
 > [!NOTE]
-> Az Apple megerősítette, hogy bizonyos beállítások 2018-ban át fognak kerülni a kizárólag felügyelt módban használhatók közé. Mérlegelje ezt, ha az alábbi beállításokat azelőtt használja, mielőtt a kapcsolódó funkciókat az Apple áthelyezi a kizárólag felügyelt módban használhatók közé:
+> Az Apple megerősítette, hogy bizonyos beállítások 2019-ben át fognak kerülni a kizárólag felügyelt módban használhatók közé. Mérlegelje ezt, ha az alábbi beállításokat azelőtt használja, mielőtt a kapcsolódó funkciókat az Apple áthelyezi a kizárólag felügyelt módban használhatók közé:
 > - Végfelhasználók által végzett alkalmazástelepítés
 > - Alkalmazás eltávolítása
 > - FaceTime
@@ -91,6 +91,7 @@ Az iOS Supervised (Felügyelt) módja csak a kezdeti eszközbeállítás során,
 > - iCloud dokumentumok és adatok
 > - Több résztvevős játék
 > - Barátok hozzáadása a Game Centerben
+> - Siri
 
 ## <a name="password"></a>Jelszó
 -   **Jelszó** – Megköveteli a végfelhasználótól, hogy jelszót adjon meg az eszköz eléréséhez.

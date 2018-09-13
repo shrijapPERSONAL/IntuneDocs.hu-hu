@@ -1,11 +1,11 @@
 ---
-title: A Zimperium zIPS által talált fenyegetések elhárítása Android rendszeren | Microsoft Docs
-description: Megtudhatja, hogyan hárítsa el az Android-eszközén észlelt fenyegetéseket.
+title: A Zimperium zIPS által talált fenyegetések elhárítása Android rendszeren
+description: Útmutató az Android-eszközén észlelt biztonsági és alkalmazásfenyegetések elhárításához.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,29 +15,40 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 081554df0deca0935c32ddef0b26004c4fd2d82f
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 6c6e31ce5c3f5f988a6c4b4ff4be71bfd5e0dd80
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755317"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148058"
 ---
-# <a name="you-need-to-resolve-a-threat-found-by-zimperium-zips"></a>El kell hárítania a Zimperium zIPS által azonosított fenyegetést
+# <a name="resolve-a-threat-found-by-zimperium-zips"></a>A Zimperium zIPS által azonosított fenyegetések elhárítása
 
-A Zimperium zIPS potenciális fenyegetést talált az Ön eszközén. Csak akkor férhet ismét hozzá vállalati vagy iskolai e-mailjeihez, alkalmazásaihoz és fájljaihoz, ha elhárította a problémát. A megjelenő üzenet tartalma attól a problémától függ, amelyet a Zimperium zIPS talált az eszközön.
+A Zimperium zIPS egy mobilfenyegetés elleni védelmi szolgáltatás, amely lehetséges fenyegetéseket azonosít Android-eszközein. Ezek a fenyegetések a Céges portál alkalmazásnak lesznek jelentve, és megoldatlan nem megfelelőségi problémákként jelennek meg. Előfordulhat, hogy amíg eszköze nem megfelelőként van azonosítva, a következők nem lehetségesek:
 
-A probléma elhárításához nyissa meg a Zimperium zIPS alkalmazást, és kövesse az ott megjelenő utasításokat.
+* Hozzáférés a vállalati e-mailekhez
+* Hozzáférés a vállalati Wi-Fi-hez
+* Hozzáférés a SharePoint Online-hoz
+* Vállalati fájlok szinkronizálása a OneDrive-val
+* Hozzáférés a vállalati alkalmazásokhoz
 
-## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>Mi látható, ha a regisztrált eszköz e-mailekhez és fájlokhoz való hozzáférése le van tiltva?
+Ez a cikk a Zimperium zIPS fenyegetési riasztásainak felismerését és a fenyegetések elhárításának módját ismerteti. 
 
-Ha a regisztrált eszközön vírus vagy egyéb biztonsági fenyegetés található, akkor a céges e-mailek vagy fájlok elérésének megkísérlésekor a Zimperium zIPS alkalmazás figyelmezteti a szükséges lépésekre.
+## <a name="troubleshoot-virus-or-security-threat"></a>Vírus vagy biztonsági fenyegetés elhárítása  
+Vírus vagy biztonsági fenyegetés észlelésekor a Zimperium zIPS vállalata hozzáférési szabályzatainak megfelelő korlátozásokat érvényesít. Vállalati hozzáférési szabályzatai megakadályozhatják, hogy hozzáférjen a munkájához szükséges hálózathoz, alkalmazásokhoz és e-mailekhez az eszközéről.  
 
-Az **eszközkezelési portálon** található hivatkozásra koppintva nyissa meg a [Céges portál webhelyet](https://portal.manage.microsoft.com#HelpDeskDialog), ahol megtalálja a hiba elhárításához követendő útmutatást.
+A Zimperium zIPS párbeszédablakban hívja fel a figyelmét a hozzáférés visszaszerzéséhez szükséges teendőkre. Jelölje ki a fenyegetést, és hárítsa el azt az alkalmazáson belüli utasításokat követve.
 
-## <a name="example-of-an-app-that-zimperium-zips-sees-as-a-threat"></a>Példa a Zimperium zIPS által fenyegetésként észlelt alkalmazásra
+Mivel az alkalmazás integrálva van vállalata MDM-szolgáltatójával, a hozzáférés korlátozásáról is figyelmeztetést kap a Céges portál alkalmazásban. A figyelmeztetés felszólítja, hogy a vírus vagy biztonsági fenyegetés elhárításához nyissa meg a Zimperium zIPS-t.  
 
-Ha olyan alkalmazást telepített, amelyet a Zimperium zIPS fenyegetésként észlel, akkor az alkalmazás figyelmezteti, hogy nem megbízható alkalmazás van telepítve az eszközön.
+  ![Példa képernyőkép a Céges portál Eszközök oldaláról, a Zimperium zIPS figyelmeztetésével.](./media/CP-lookout-virus-banner-1808.png)  
 
-Ebben az esetben távolítsa el az alkalmazást, hogy azonnal hozzáférhessen a céges e-mailjeihez és adataihoz. Ha ezt nem teszi meg, az alkalmazás eltávolításáig nem férhet hozzá az e-mailekhez és az adatokhoz.
+Válassza az érintett eszköz alatt megjelenő figyelmeztető szalagcímet. Megnyílik a Zimperium zIPS, és tájékoztatja Önt a fenyegetés elhárításának módjáról.  
 
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+## <a name="resolve-an-app-threat"></a>Alkalmazásfenyegetés elhárítása
+
+Az eszközére nézve fenyegetőnek ítélt alkalmazás telepítésekor értesítést kap a Zimperium zIPS-ben. Amíg az érintett alkalmazás az eszközén marad, Ön nem fog hozzáférni a vállalati erőforrásokhoz.  
+
+A megoldáshoz jelölje ki az alkalmazást a fenyegetéseknek a Zimperium zIPS-ben megjelenő listájában. Ez után kövesse a képernyőn megjelenő utasításokat az alkalmazás eltávolításához.    
+
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980). 

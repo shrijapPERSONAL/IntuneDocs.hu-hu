@@ -14,12 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: f0c35caf841729aae8ce6ccdbf1c9709258a8f5b
-ms.sourcegitcommit: 2e08887c07d29979300e80e6a40372aec6287103
+ms.openlocfilehash: ab88c99694df95eeaf4b5529faec73dacd1a208c
+ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39249726"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241881"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>A Microsoft Intune App SDK iOS rendszeren – fejlesztői útmutató
 
@@ -465,7 +465,7 @@ A 8.0.2 kiadásától kezdődően az Intune App SDK képes szűrni az `UIActivit
 
 ### <a name="copy-to-actions"></a>„Másolás ide” műveletek
 
-Dokumentumoknak az `UIActivityViewController` és az `UIDocumentInteractionController` általi megosztásakor az iOS másolási műveletet jelenít meg a megosztott dokumentum megnyitását támogató alkalmazások mindegyike mellett. Az alkalmazások az Info.plist fájljukban lévő `CFBundleDocumentTypes` beállításban közlik a támogatott dokumentumok típusát. Ez a megosztástípus többé nem lesz elérhető, ha a szabályzat tiltja a nem felügyelt alkalmazásokkal való megosztást. Helyette egy felhasználói felület nélküli műveleti bővítményt kell hozzáadni az alkalmazásokhoz, amely az Intune APP SDK-ra hivatkozik. A műveleti bővítmény mindössze egy kódcsonk. A fájlmegosztó viselkedést az SDK implementálja. Kövesse az alábbi lépéseket:
+Dokumentumoknak az `UIActivityViewController` és az `UIDocumentInteractionController` általi megosztásakor az iOS másolási műveletet jelenít meg a megosztott dokumentum megnyitását támogató alkalmazások mindegyike mellett. Az alkalmazások az Info.plist fájljukban lévő `CFBundleDocumentTypes` beállításban közlik a támogatott dokumentumok típusát. Ez a megosztástípus többé nem lesz elérhető, ha a szabályzat tiltja a nem felügyelt alkalmazásokkal való megosztást. Helyette a felhasználónak egy felhasználói felület nélküli műveleti bővítményt kell hozzáadnia az alkalmazásokhoz, amely az Intune APP SDK-ra hivatkozik. A műveleti bővítmény mindössze egy kódcsonk. A fájlmegosztó viselkedést az SDK implementálja. Kövesse az alábbi lépéseket:
 
 1. Az alkalmazás Info.plist fájljában a `CFBundleURLTypes` alatt szerepelnie kell legalább egy schemeURL-definíciónak.
 

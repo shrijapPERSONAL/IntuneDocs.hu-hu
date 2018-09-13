@@ -14,12 +14,12 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 287e644e50b1f6b41f404cfd2102a8efc0fbaad9
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 2a0c230e89944b4330582fe4c6933ca1fe717aec
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34474564"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329990"
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Szerepköralapú hozzáférés-vezérlés (RBAC) a Microsoft Intune-nal
 
@@ -79,7 +79,7 @@ A következő szerepköröket beépített szerepkörként tartalmazza az Intune,
 
 1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. Az **Intune** panelen válassza az **Intune-szerepkörök**, majd a **Minden szerepkör** lehetőséget.
+3. Az **Intune** panelen válassza a **Szerepkörök** > **Minden szerepkör** lehetőséget.
 1. Válassza ki a hozzárendelni kívánt szerepkört az **Intune-szerepkörök – Minden szerepkör** panelen.
 
 2. A <*szerepkör neve*> – **Áttekintés** panelen kattintson a **Kezelés**, majd a **Hozzárendelések** elemre.
@@ -114,17 +114,15 @@ Egyéni szerepkört is létrehozhat, amely az adott munkakörhöz szükséges ö
 
 2. Válassza a bal oldali menü **Minden szolgáltatás** pontját, majd írja be a szűrő szövegmezőbe az **Intune** nevet.
 
-3. Az **Intune** lehetőség választásával nyissa meg az Intune irányítópultot, és kattintson az **Intune-szerepkörök** elemre.
+3. Válassza az **Intune** > **Szerepkörök** > **Minden szerepkör** > **Egyéni szerepkör hozzáadása** lehetőséget.
 
-4. Az **Intune-szerepkörök** panelen kattintson a **Minden szerepkör** elemre, majd válassza az **Egyéni hozzáadása** lehetőséget.
+4. Az **Egyéni szerepkör hozzáadása** panelen adja meg az új szerepkör nevét és leírását, majd kattintson az **Engedélyek** elemre.
 
-5. Az **Egyéni szerepkör hozzáadása** panelen adja meg az új szerepkör nevét és leírását, majd kattintson az **Engedélyek** elemre.
+5. Az **Engedélyek** panelen válassza ki az ehhez a szerepkörhöz használni kívánt engedélyeket. Az [Intune-os RBAC-táblázat](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) segít eldönteni, hogy milyen engedélyeket alkalmazzon.
 
-3. Az **Engedélyek** panelen válassza ki az ehhez a szerepkörhöz használni kívánt engedélyeket. Az [Intune-os RBAC-táblázat](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) segít eldönteni, hogy milyen engedélyeket alkalmazzon.
+6. Ha elkészült, válassza az **OK** elemet.
 
-4. Ha elkészült, válassza az **OK** elemet.
-
-5. Az **Egyéni szerepkör hozzáadása** panelen kattintson a **Létrehozás** elemre. Az új szerepkör megjelenik az **Intune-szerepkörök – Minden szerepkör** panel listájában.
+7. Az **Egyéni szerepkör hozzáadása** panelen kattintson a **Létrehozás** elemre. Az új szerepkör megjelenik az **Intune-szerepkörök – Minden szerepkör** panel listájában.
 
 ### <a name="to-assign-a-custom-role"></a>Egyéni szerepkör hozzárendelése
 

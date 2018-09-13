@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/16/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4746e2f20926c102717214304711cc9883597b8
-ms.sourcegitcommit: 1e349bcfd562f34866108e566e5b5062717e0112
+ms.openlocfilehash: 7cf005b225dd11ca6b95dbed0a82330544575f92
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/15/2018
-ms.locfileid: "40251689"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347474"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Alkalmazásonkénti virtuális magánhálózat (VPN) beállítása az Intune-ban iOS-eszközökhöz
 
@@ -34,6 +34,7 @@ Alkalmazásonkénti VPN jelenleg a következő szolgáltatókhoz érhető el:
  - Pulse Connect Secure
  - SonicWall
  - Palo Alto Hálózatok GlobalProtect
+ - Zscaler
 
 ## <a name="prerequisites-for-per-app-vpn"></a>Az alkalmazásonkénti VPN-re vonatkozó előfeltételek
 
@@ -145,7 +146,7 @@ Miután hozzáadta a VPN-profilt, társítsa az alkalmazást és a Microsoft Azu
 
 1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
 2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
-3. Válassza a **Mobilalkalmazások** lehetőséget.
+3. Válassza az **Ügyfélalkalmazások** lehetőséget.
 4. Kattintson az **Alkalmazások** elemre.
 5. Válassza ki az alkalmazást az alkalmazások listájából.
 6. Kattintson a **Hozzárendelések** lehetőségre
@@ -187,6 +188,10 @@ Az alkalmazásonkénti VPN beállítását és az alkalmazáshoz való társít�
     - F5 Access
     - Pulse Secure
     - SonicWall Mobile Connect
+    - Zscaler alkalmazás
+
+    > [!NOTE]
+    > Ha a Pulse Secure VPN-alkalmazást használja, választhat az alkalmazási rétegbeli és a csomagrétegbeli alagútkezelés között. A **Szolgáltatótípus** értékét az alkalmazásrétegbeli alagútkezeléshez állítsa az **alkalmazásproxy** lehetőségre, a csomagrétegbeli alagútkezeléshez állítsa a **csomagalagút** lehetőségre.
 
 ### <a name="connect-using-the-per-app-vpn"></a>Alkalmazásonkénti VPN-en keresztüli csatlakozás
 

@@ -1,11 +1,11 @@
 ---
-title: iOS-eszköz regisztrálása a Készülékregisztrációs programmal | Microsoft Docs
-description: Útmutató az iOS-eszközök a Készülékregisztrációs programmal való regisztrálásához az Intune-ban
+title: A vállalat által biztosított iOS-eszköz felügyeleti regisztrálása. | Microsoft Docs
+description: A cég által vásárolt és rendelkezésére bocsátott iOS-eszköz Intune-beli regisztrálásának leírása
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/12/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,16 +17,26 @@ ROBOTS: ''
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9d1154d942069ad69294d4235c894f88513dd848
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: b93f02011b0900b1a64ae6cb10a84a52cd40187a
+ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016407"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241796"
 ---
-# <a name="enroll-your-ios-device-in-intune-with-the-device-enrollment-program"></a>iOS-eszköz regisztrálása az Intune-ban a Készülékregisztrációs programmal
+# <a name="enroll-your-organization-provided-ios-device-in-management"></a>A vállalat által biztosított iOS-eszköz felügyeleti regisztrálása
 
-Az Apple készülékregisztrációs programjával a cégek könnyebben kezelhetnek nagy mennyiségű iOS-eszközt. Ha a cége engedélyezte Önnek, hogy saját eszközt használjon, kövesse a [hagyományos iOS-regisztrációs lépéseket](enroll-your-device-in-intune-ios.md) a jelen oldal lépései helyett. Ha egy céges iOS-eszközt használ, amely a Készülékregisztrációs program része, olvassa tovább a cikket.
+Útmutató új iOS-eszköz Intune-felügyelet alá helyezéséhez.  
+
+A munkahely vagy iskola által biztosított iOS-eszközöket gyakran előre konfigurálják, mielőtt Ön megkapja azokat. A vállalat akkor küldi az eszközre ezeket az előre konfigurált beállításokat, miután Ön először bekapcsolta azt, és bejelentkezett. Miután az eszköz elvégezte a beállításokat, Ön hozzáférhet munkahelyi vagy iskolai erőforrásaihoz.  
+
+A beállítások megkezdéséhez kapcsolja be az eszközt, majd jelentkezzen be a munkahelyi vagy iskolai hitelesítő adataival. A cikk a továbbiakban azokat a lépéseket és képernyőket ismerteti, amelyekkel a Beállítási asszisztensben találkozni fog. 
+
+## <a name="what-is-apple-dep"></a>Mi az Apple DEP?
+Lehetséges, hogy vállalata az úgynevezett *Apple Készülékregisztrációs programon* (DEP) keresztül vásárolta meg eszközeit. Az Apple DEP nagy mennyiségű iOS- vagy macOS-eszköz vásárlását teszi lehetővé a vállalatok számára. Ezt követően ezeket az eszközöket egy általuk preferált mobileszköz-felügyeleti szolgáltatóval, például az Intune-nal konfigurálják és felügyelik. Ha Ön rendszergazda, és információt szeretne az Apple DEP-vel kapcsolatban, tekintse át az [iOS-eszközök automatikus regisztrálása az Apple készülékregisztrációs programjával (DEP)](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios) című cikket.  
+
+## <a name="set-up-your-ios-device"></a>Az iOS-eszköz beállítása  
+Ha nem a vállalat által biztosított, hanem saját iOS-eszközt használ, kövesse a [személyes és saját eszközökre](enroll-your-device-in-intune-ios.md) vonatkozó lépéseket.  
 
 1. Kapcsolja be az iOS-eszközt. 
 2. A **nyelv** kiválasztása után csatlakozzon egy Wi-Fi-hálózathoz.
@@ -46,4 +56,4 @@ Az Apple készülékregisztrációs programjával a cégek könnyebben kezelhetn
 6. Fogadja el a **feltételeket és kikötéseket**, majd döntse el, hogy szeretne-e diagnosztikai adatokat küldeni az Apple-nek.
 7. A regisztráció befejeztével az eszköz további műveletek elvégzését kérheti. Ezek között szerepelhet az e-mail-hozzáféréshez szükséges jelszó megadása vagy egy PIN-kód beállítása.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

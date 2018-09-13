@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2c5203256a17065331f9d75c9315471e41508454
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: aebfea2f52540b4193811121334e3cebf916175b
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255370"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330143"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>A Microsoft Intune-alkalmazásfelügyelet ismertetése
 
@@ -61,16 +61,16 @@ Az Intune számos szolgáltatással segít a szükséges alkalmazások üzembe h
 
 ## <a name="get-started"></a>Első lépések
 
-Az alkalmazáshoz kapcsolódó legtöbb információ a **Mobile Apps** munkafolyamatban található, amely a következőképpen érhető el:
+Az alkalmazáshoz kapcsolódó legtöbb információ az **Ügyfélalkalmazások** területen található, amely a következőképpen érhető el:
 
 1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget.  
     Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. A **Microsoft Intune** panelen válassza a **Mobilalkalmazások** lehetőséget.
+3. A **Microsoft Intune** ablaktáblán válassza az **Ügyfélalkalmazások** lehetőséget.
 
     ![A „Mobilalkalmazások” munkafolyamat-panel](./media/apps-workload.png)
 
-A következő négy szakasz a **Mobilalkalmazások** panelen elérhető lehetőségeket ismerteti.
+A következő négy szakasz az **Ügyfélalkalmazások** ablaktáblán elérhető lehetőségeket ismerteti.
 
 ### <a name="manage"></a>A számítógépeken futó
 - **Alkalmazások**: Ezzel a beállítással a munkaerő által használt alkalmazásokat adhatja hozzá, tekintheti meg, rendelheti hozzá és figyelheti. További információkért lásd:

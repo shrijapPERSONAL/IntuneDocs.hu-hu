@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,28 +17,29 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e31451abd79c17618377598d29c455c4c0637348
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 4afa12cffbf199d271df912bfcfc1aedb4d8b23c
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321373"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150488"
 ---
 # <a name="rename-your-device-from-the-company-portal-website"></a>Az eszköz átnevezése a Vállalati portál webhelyről
 
-Útmutató a regisztrált és felügyelt eszközök Céges portál webhelyről történő átnevezéséhez. Átnevezhet egy általános vagy alapértelmezett modellnévvel rendelkező eszközt, és olyan nevet adhat meg, amellyel az gyorsan azonosíthatóvá válik.  
+Regisztrált és felügyelt eszközök átnevezése a Céges portál webhelyről. Módosítsa egy eszköz általános vagy alapértelmezett modellnevét egy gyorsan azonosítható névre.
 
-1. A [Céges portál webhelyen](https://portal.manage.microsoft.com/HelpDeskDialog) válassza a __Menü__ gomb > __Saját eszközök__ lehetőséget.
+1. Nyissa meg a [Céges portál webhelyét](https://portal.manage.microsoft.com), és válassza a __Menü__ gomb >__Eszközök__ lehetőséget.  
 
 2. Válassza ki az átnevezni kívánt eszközt.
 
-![Képernyőkép a Saját eszköz lapról, amelyen különböző azonosítatlan eszközök láthatók a listán nem szereplő eszközök regisztrálását vagy az azonosítatlan eszközök azonosítását felajánló szalagcím felett.](./media/macOS_enroll_002_tap_here_banner.png)  
+    ![Képernyőkép az Eszközök oldalról, amelyen két csempén azonosítatlan, általános nevű eszközök láthatók. Közvetlenül az eszközök alatt egy szürke szalagcím helyezkedik el, amely arra kéri a felhasználót, hogy azonosítsa a használt eszközt, vagy adjon hozzá egy újat.](./media/rename-reset-device-step2-1808.png)   
 
-3. Válassza az **Átnevezés** elemet.  
+3. Válassza az **Átnevezés** elemet. Ha az átnevezési lehetőség nem jelenik meg az oldal tetején, válassza az **Egyéb (…)** > **Átnevezés** lehetőséget.   
 
-   ![A kiválasztott eszközzel kapcsolatos összes lehetőség a Céges portál webhelyén, többek között az Átnevezés, az Eltávolítás, az Eszköz alaphelyzetbe állítása, a Jelszó alaphelyzetbe állítása és a Távoli zárolás lehetőségei. ](./media/iwp-screen-with-all-options.png)  
-    
+   ![A kiválasztott eszközzel kapcsolatos lehetőségek a Céges portál webhelyén, felül az Átnevezés, az Eltávolítás, az Eszköz alaphelyzetbe állítása, a Jelszó alaphelyzetbe állítása és a Távoli zárolás lehetőségekre mutató hivatkozásokkal. ](./media/rename-reset-device-1808.png)   
 
-4. Írja be az új nevet az eszköz nevének helyére. Ezután koppintson az **Átnevezés** gombra. Mostantól az új nevén látható az eszköz.
+    ![Az Egyéb ikon kinagyított képe egy piros nyíllal kiemelve.](./media/rename-reset-device-step3-more-1808.png)  
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com/HelpDeskDialog).
+4. Írja be az új nevet az eszköz nevének helyére. Ezután koppintson az **Átnevezés** gombra. Mostantól az új nevén látható az eszköz.  
+
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).  

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 08/14/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: b613f364-0150-401f-b9b8-2b09470b34f4
 ms.reviewer: mghadial
 ms.custom: intune-azure
-ms.openlocfilehash: 396766d33126cebf4a583ec4324badc96e627602
-ms.sourcegitcommit: 1a8b34c7854a575bf6ce59f475c7b718fa038d66
+ms.openlocfilehash: 80b6828f4768ff79f86532ef0d39ff2100b0ef25
+ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/18/2018
-ms.locfileid: "40251813"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241711"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Alkalmazások telepítésével kapcsolatos problémák elhárítása
 
@@ -43,7 +43,7 @@ Az Intune az adott felhasználók eszközein telepített alkalmazások alapján 
 
     > [!Note]  
     > Ugyanazt az alkalmazást eltérő alkalmazásműveleti szándékkal rendelhetik hozzá különböző csoportokhoz. Egy alkalmazás feloldott szándéka például **Kizárva** értéket jelez, ha az alkalmazás ki van zárva egy felhasználó számára az alkalmazás-hozzárendelés során. További információ: [Alkalmazások hozzárendelési ütközéseinek feloldása](apps-deploy.md#how-conflicts-between-app-intents-are-resolved).<br><br>
-    > Az Intune jelenleg nem szűri operációsrendszer-platform alapján az alkalmazásokat.
+    > Ha egy szükséges alkalmazás telepítése sikertelen, akkor Ön vagy a segélyszolgálat szinkronizálhatja az eszközt, és újra megkísérelheti az alkalmazás telepítését.
 
 Az alkalmazástelepítési hiba információi ismertetik a problémát. Ezen adatok segítségével meghatározhatja a probléma feloldásához szükséges műveletet. További információ az alkalmazástelepítési problémák elhárításáról: [Alkalmazástelepítési problémák hibakódjai](https://blogs.technet.microsoft.com/intunesupport/2018/05/15/error-codes-for-troubleshooting-app-installation-issues).
 
@@ -51,6 +51,8 @@ Az alkalmazástelepítési hiba információi ismertetik a problémát. Ezen ada
 > A **Hibaelhárítás** panel a böngészőben a [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) címen is elérhető.
 
 ## <a name="app-installation-errors"></a>Alkalmazástelepítési hibák
+
+Az alábbi hibaüzenetek és leírások az Androidos és iOS-es telepítési hibák részleteit mutatják be. 
 
 ### <a name="android-errors"></a>Android hibák
 

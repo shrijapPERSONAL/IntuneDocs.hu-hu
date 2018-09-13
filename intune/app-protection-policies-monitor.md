@@ -15,12 +15,12 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 282666de444e9da0dd5e406cb45cdf1b9e66c1b2
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: b7dea97ef74489e3caae7433e8ebbe2b9ed39aa3
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31833154"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330041"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Az alkalmazásvédelmi szabályzatok figyelése
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,8 +42,8 @@ Három különböző helyen figyelheti a megfelelőségi állapotot:
 
 1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. Az **Intune** panelen válassza az **Mobilalkalmazások** lehetőséget.
-4. A **Mobilalkalmazások** területen válassza a **Figyelés** > **Alkalmazásvédelem állapota** lehetőséget az összefoglaló nézet megjelenítéséhez:
+3. Az **Intune** ablaktáblán válassza az **Ügyfélalkalmazások** lehetőséget.
+4. Az **Ügyfélalkalmazások** területen válassza a **Figyelés** > **Alkalmazásvédelem állapota** lehetőséget az összefoglaló nézet megjelenítéséhez:
 
 ![Az Intune mobilalkalmazás-kezelés panel Összefoglalás csempéje](./media/app-protection-user-status-summary.png)
 

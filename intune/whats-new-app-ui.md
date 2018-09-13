@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/29/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,24 +15,44 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9180bf70c114a9bb1f034b51ee3a3d96bef253fa
-ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
+ms.openlocfilehash: 9f0140d532356a1ddb3f8acf19ea1dfaf6e85eb8
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39279491"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347694"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Felhasználói felületi frissítések az Intune végfelhasználói alkalmazásaiban
 A cikkből megismerheti, mit módosítottunk a végfelhasználók számára látható alkalmazások felhasználói felületén ebben a Microsoft Intune-kiadásban. Ez segítségére lehet a felhasználói kommunikációban és az Ön üzemeltetési környezetének támogatására létrehozott egyéni dokumentáció frissítésében. Annak megértését is megkönnyíti, hogy miképpen háríthatja el jobban a végfelhasználók által tapasztalt hibákat, ha telefonos segítséget igényelnek a Céges portál használatához.
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
+## <a name="week-of-august-27-2018"></a>2018. augusztus 27-i hét  
+
+### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>Új frissítés a felhasználói felülethez a Céges portál webhelyen <!--2000968 -->  
+A felhasználók visszajelzései alapján új funkciókkal egészült ki a Céges portál webhely. Jelentős javulást fog tapasztalni eszközei már meglévő funkciói és használhatósága terén. Új, modern és rugalmas külsőt kaptak a webhely különböző területei, &ndash;köztük az eszközadatok, a visszajelzés, a támogatás és az eszközök áttekintése&ndash;. Az [Intune Céges portál webhelyének dokumentációja](https://docs.microsoft.com/en-us/intune-user-help/using-the-intune-company-portal-website) frissítve lett, hogy tükrözze a változásokat.   
+
+Többek között a következő frissítéseket fogja látni:  
+
+- Zökkenőmentes munkafolyamatok minden eszközplatformon
+- Hatékonyabb eszközazonosítási és beléptetési folyamatok
+- Praktikusabb hibaüzenetek
+- Barátságosabb nyelvezet, kevesebb műszaki zsargon
+- Alkalmazások közvetlen hivatkozásainak megoszthatósága
+- Nagy méretű alkalmazáskatalógusok javított teljesítménye
+- Nagyobb hozzáférhetőség minden felhasználó számára  
+
+|Frissített|Előző|
+|---|---|
+|![A frissített eszköz oldalán az eszköz pontosan az eszközadatok fölé van igazítva, és nem a teljes lista fölött ugrik fel.](./media/iwp-device-after-1803.png)|![Az eszközoldal előző verziója.](./media/iwp-device-before-1803.png)|
+|![A frissített alkalmazástelepítési oldalon az alkalmazás pontosan a leírás és a különböző telepítési adatok, így a közzététel dátuma, a verzió és az alkalmazástípus fölött jelenik meg.](./media/iwp-app-install-after-1803.png)|![A telepítésoldal előző verziója.](./media/iwp-app-install-before-1803.png)|  
+
 ## <a name="week-of-july-16-2018"></a>2018. július 16-ai hét  
 
 ### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>További szinkronizálási lehetőségek a windowsos Céges portál alkalmazásban   
-A windowsos Céges portál alkalmazás mostantól lehetővé teszi, hogy a szinkronizálási folyamatot közvetlenül a Windows tálcájáról vagy a Start menüből is elindíthassa. Ez a funkció abban az esetben igazán hasznos, ha csak szinkronizálni szeretné eszközeit, hogy utána hozzáférhessen a vállalati erőforrásokhoz. Az új funkció eléréséhez jobb gombbal kattintson a Céges portál alkalmazás ikonjára a tálcán vagy a Start menüben. A megjelenő menüpontok közül (azaz a gyorslistában) válassza **Az eszköz szinkronizálása** lehetőséget. Megnyílik a Céges portál alkalmazás **Beállítások** lapja, és megkezdődik a szinkronizálás.  
+A Windowsos Céges portál alkalmazás mostantól lehetővé teszi, hogy a szinkronizálási folyamatot közvetlenül a Windows tálcájáról vagy a Start menüből is elindíthassa. Ez a funkció abban az esetben igazán hasznos, ha csak szinkronizálni szeretné eszközeit, hogy utána hozzáférhessen a vállalati erőforrásokhoz. Az új funkció eléréséhez jobb gombbal kattintson a Céges portál alkalmazás ikonjára a tálcán vagy a Start menüben. A megjelenő menüpontok közül (azaz a gyorslistában) válassza **Az eszköz szinkronizálása** lehetőséget. Megnyílik a Céges portál alkalmazás **Beállítások** lapja, és megkezdődik a szinkronizálás.  
 
-![A Windows tálcájának képernyőképe egy eszköz asztalán. A Céges portál alkalmazás ikonjára kattintva megjelenik egy menü a Rögzítés a tálcán, az Ablak bezárása és az Eszköz szinkronizálása lehetőségekkel.](./media/sync-device-from-start-menu-1807.png)  
+![A Windows tálcájának képernyője egy eszköz asztalán. A Céges portál alkalmazás ikonjára kattintva megjelenik egy menü a Rögzítés a tálcán, az Ablak bezárása és az Eszköz szinkronizálása lehetőségekkel.](./media/sync-device-from-start-menu-1807.png)  
 
 ### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>Új böngészési élmény a windowsos Céges portál alkalmazásban  
 
@@ -109,10 +129,10 @@ Ha engedélyezte az [eszközcsoport-leképezést](device-group-mapping.md), a Wi
 
 ### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>Újdonságok az iOS rendszerre készült Céges portál 2.9.0-s verziójának eszközbeállítási munkafolyamatával kapcsolatban <!-- 1417174 -->
 
-Továbbfejlesztettük az iOS rendszerre készült Céges portál alkalmazás eszközbeállítási munkafolyamatát. Nyelvezete felhasználóbarátabb lett, képernyőit – ahol lehetett – összevontuk. A nyelvezetet ezenkívül az Ön cégére alkalmaztuk, ezért a beállítás szövegében végig a konkrét cégnév jelenik meg.
+Továbbfejlesztettük az iOS rendszerre készült Céges portál alkalmazás eszközbeállítási munkafolyamatát. Nyelvezete felhasználóbarátabb lett, képernyőit – ahol lehetett – összevontuk. Ezenkívül a nyelvezetet cégéhez igazítottuk, ezért az Ön cégének neve jelenik meg a telepítés során látható szövegekben.
 
 > [!NOTE]
-> Azt a cégnevet használjuk, amelyet az Azure Portal **Microsoft Intune** > **Mobilalkalmazások**  > **Céges portál védjegyezése** > **Cég neve** alatt adott meg. Ha nem állította be ezt az értéket, az **Azure Active Directory** > **Tulajdonságok** > **Név** alatt megadott bérlő nevét használjuk. Ha a Céges portál védjegyezése alatt nem állított be cégnevet, és nem kívánja a bérlő nevét megjeleníteni, azt javasoljuk, hogy állítsa be cége nevét a Céges portál védjegyezése alatt. Ha nem szeretné, hogy ez a sztring megjelenjen a Céges portál fejlécén, törölheti a jelölőnégyzetet a “Cég nevének megjelenítése az embléma mellett” feliratnál.
+> Azt a cégnevet használjuk, amelyet az Azure Portal **Microsoft Intune** > **Ügyfélalkalmazások**  > **Céges portál védjegyezése** > **Cég neve** alatt adott meg. Ha nem állította be ezt az értéket, az **Azure Active Directory** > **Tulajdonságok** > **Név** alatt megadott bérlő nevét használjuk. Ha a Céges portál védjegyezése alatt nem állított be cégnevet, és nem kívánja a bérlő nevét megjeleníteni, azt javasoljuk, hogy állítsa be cége nevét a Céges portál védjegyezése alatt. Ha nem szeretné, hogy ez a sztring megjelenjen a Céges portál fejlécén, törölheti a jelölőnégyzetet a “Cég nevének megjelenítése az embléma mellett” feliratnál.
 
 |Előtte|Utána|
 |---|---|
@@ -458,12 +478,7 @@ Augusztustól új felhasználói élményt vezetünk be a Céges portál webhely
 -   Alkalmazások közvetlen hivatkozásainak megoszthatósága
 - Nagy méretű alkalmazáskatalógusok javított teljesítménye
 
-A változás érvénybe lépéséhez Önnek semmit nem kell tennie. Értesíteni fogjuk Önt, ha elérhetővé válik a megújult Céges portál webhely. Arra azonban szükség lehet, hogy a végfelhasználói dokumentumokat az új képernyőképekkel frissítse. Emellett frissítést igényelhet az iOS-es Céges portál alkalmazás dokumentációja is, mivel az iOS-alkalmazás **Alkalmazások** szakasza a webhelyre támaszkodik.
-
-|Frissített|Előző|
-|---|---|
-|![A frissített eszköz oldalán az eszköz pontosan az eszközadatok fölé van igazítva, és nem a teljes lista fölött ugrik fel.](./media/iwp-device-after-1803.png)|![Az eszközoldal előző verziója.](./media/iwp-device-before-1803.png)|
-|![A frissített alkalmazástelepítési oldalon az alkalmazás pontosan a leírás és a különböző telepítési adatok, így a közzététel dátuma, a verzió és az alkalmazástípus fölött jelenik meg.](./media/iwp-app-install-after-1803.png)|![A telepítésoldal előző verziója.](./media/iwp-app-install-before-1803.png)|
+A változás érvénybe lépéséhez Önnek semmit nem kell tennie. Értesíteni fogjuk Önt, ha elérhetővé válik a megújult Céges portál webhely. Arra azonban szükség lehet, hogy a végfelhasználói dokumentumokat az új képernyőképekkel frissítse. Emellett frissítést igényelhet az iOS-es Céges portál alkalmazás dokumentációja is, mivel az iOS-alkalmazás **Alkalmazások** szakasza a webhelyre támaszkodik.  
 
 ### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>A Céges portál felhasználói felületének frissítései <!--1313244 part 2-->
 

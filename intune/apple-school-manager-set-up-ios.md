@@ -15,12 +15,12 @@ ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 59449efd592f3c47bdf2350b495f81c23f442999
-ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
+ms.openlocfilehash: 2d099d049892d71c36e4b01fb1a8af6f7ad25df1
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42751802"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313409"
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>iOS-eszközök regisztrálásának engedélyezése az Apple School Manager programban
 
@@ -113,7 +113,7 @@ Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt
      > [!NOTE]
      > A felügyelet nélkül regisztrált eszközöket csak az Apple Configurator segítségével tudja átállítani felügyelt eszközzé. Az eszköz ily módon való átállításához csatlakoztatnia kell az iOS-eszközt egy Mac számítógéphez USB-kábellel. Ezzel kapcsolatban az [Apple Configurator dokumentációjában](http://help.apple.com/configurator/mac/2.3) talál további információkat.
 
-7. Adja meg, hogy zárolt regisztrációt kíván-e beállítani a jelen profilt használó eszközökhöz. A **Zárolt regisztráció** letiltja azokat az iOS-beállításokat a **Beállítások** menüből, amelyek segítségével eltávolítható a felügyeleti profil. Az eszköz regisztrálása után ez a beállítás nem módosítható az eszköz gyári beállításainak visszaállítása állítása nélkül. A zárolt regisztrációjú eszközökön a **Felügyelt** felügyeleti módot az *Igen* értékre kell beállítani. 
+7. Adja meg, hogy zárolt regisztrációt kíván-e beállítani a jelen profilt használó eszközökhöz. A **Zárolt regisztráció** letiltja azokat az iOS-beállításokat a **Beállítások** menüből, amelyek segítségével eltávolítható a felügyeleti profil. Az eszköz regisztrálása után ez a beállítás nem módosítható az eszköz összes adatának törlése nélkül. A zárolt regisztrációjú eszközökön a **Felügyelt** felügyeleti módot az *Igen* értékre kell beállítani. 
 
 8. Ha szeretné engedélyezni, hogy egy felügyelt Apple ID azonosítóval több felhasználó is bejelentkezzen a regisztrált iPadekre, válassza az **Igen** lehetőséget a **Megosztott iPad** beállításnál (ez beállítás **Felhasználói affinitás nélküli regisztrálást** és **Igen** értékre állított **Felügyelt** üzemmódot igényel). A felügyelt Apple ID-k létrehozása az Apple School Manager portálján történik. További információ a [megosztott iPadekről](education-settings-configure-ios-shared.md) és az [Apple megosztott iPadekre vonatkozó követelményeiről](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
 
@@ -179,4 +179,4 @@ Az Intune által felügyelt Apple School Manager-eszközökhöz még a regisztr�
 
 ## <a name="distribute-devices-to-users"></a>Eszközök terjesztése a felhasználóknak
 
-Az eddigiekben engedélyezte az eszközfelügyeletet és a szinkronizálást az Apple és az Intune között, valamint az Apple School-eszközök regisztrálása céljából hozzárendelt egy profilt. Az eszközök ekkor már kioszthatók a felhasználóknak. Az iOS rendszerű Apple School Manager-eszközök bekapcsolásakor a rendszer regisztrálja az eszközöket az Intune-nal való felügyeletre. Ha az eszközt már aktiválták és használatban van, a profil csak akkor alkalmazható, ha az eszközön visszaállították a gyári beállításokat.
+Az eddigiekben engedélyezte az eszközfelügyeletet és a szinkronizálást az Apple és az Intune között, valamint az Apple School-eszközök regisztrálása céljából hozzárendelt egy profilt. Az eszközök ekkor már kioszthatók a felhasználóknak. Az iOS rendszerű Apple School Manager-eszközök bekapcsolásakor a rendszer regisztrálja az eszközöket az Intune-nal való felügyeletre. Ha az eszközt már aktiválták és használatban van, a profil csak akkor alkalmazható, ha az eszközről az összes adat törölve lett.

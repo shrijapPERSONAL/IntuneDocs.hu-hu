@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 42e0798b0c2941d9ea45e75b367b69bc7dab548f
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 6aa2ade550a01a9e4758024213a67e6a7ddd8f03
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321220"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313853"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Eszközkorlátozási beállítások Windows 10-hez (és újabb rendszerekhez) az Intune-ban
 A cikk bemutatja a Microsoft Intune összes olyan eszközkorlátozásokra vonatkozó beállítását, melyek konfigurálhatók Windows 10 rendszerű eszközökhöz.
@@ -37,7 +37,7 @@ A cikk bemutatja a Microsoft Intune összes olyan eszközkorlátozásokra vonatk
 - **Cserélhető tároló** – Meghatározza, hogy az eszközzel használható-e külső tárolóeszköz, például SD-kártya.
 - **Földrajzi hely** – Meghatározza, hogy az eszköz használhatja-e a helyalapú szolgáltatások adatait.
 - **Internetkapcsolat megosztása** – Engedélyezi az internetkapcsolat megosztását az eszközön.
-- **Telefon alaphelyzetbe állítása** – Azt szabályozza, hogy a felhasználó visszaállíthatja-e az eszköz gyári beállításait.
+- **Telefon alaphelyzetbe állítása** – Azt szabályozza, hogy a felhasználó törölheti-e az összes adatot eszközéről.
 - **USB-kapcsolat (csak mobileszköz)** – Azt szabályozza, hogy az eszközök elérhetnek-e külső tárolóeszközöket USB-kapcsolaton keresztül.
 - **Lopásgátló üzemmód (csak mobileszköz)** – Itt az állítható be, hogy engedélyezve van-e a Windows lopásgátló üzemmódja.
 - **Cortana** – Engedélyezi vagy letiltja a Cortana beszédfelismerési asszisztenst.
@@ -50,6 +50,7 @@ A cikk bemutatja a Microsoft Intune összes olyan eszközkorlátozásokra vonatk
 - **SIM-kártyahibát jelző párbeszédpanel (csak mobileszköz)** – Letiltja a hibaüzenetet, amely akkor jelenne meg, amikor a rendszer nem észlel SIM-kártyát az eszközön.
 - **Szabadkézi munkaterület** – Megakadályozza, hogy a felhasználók hozzáférjenek a szabadkézi munkaterülethez. Ha ez a beállítás nincs konfigurálva, a szabadkézi munkaterület engedélyezve lesz (a funkció elérhető), így a felhasználók a zárolási képernyőn is elérhetik azt.
 - **Automatikus újbóli üzembe helyezés** – Lehetővé teszi a rendszergazdai jogosultságokkal rendelkező felhasználóknak, hogy az eszköz zárolási képernyőjén a **CTRL + Win + R** billentyűkombinációval törölhessék az összes felhasználói adatot és beállítást. Ennek hatására automatikusan megtörténik az eszköz újbóli konfigurálása és regisztrálása felügyeletre.
+- **Felhasználók hálózati csatlakozásának megkövetelése az eszköz telepítése során (csak Windows Insider)** – A **Kötelező** beállítással megkövetelheti az eszköz hálózathoz csatlakozását, mielőtt továbblépne a Hálózat oldalon a Windows 10 telepítése során. Amíg ez a funkció előzetes verziójú, a beállítás használatához a Windows Insider 1809-es buildje, vagy annál újabb verzió szükséges.
 
 ## <a name="password"></a>Jelszó
 -   **Jelszó** – Megköveteli a végfelhasználótól, hogy jelszót adjon meg az eszköz eléréséhez.
@@ -152,28 +153,28 @@ Az egyes alkalmazásokhoz beállíthat az alapértelmezett adatvédelmi beállí
 ## <a name="edge-browser"></a>Microsoft Edge böngésző
 
 -   **Microsoft Edge böngésző (csak mobil)** – Engedélyezi az Edge böngésző használatát az eszközön.
--   **Címsor legördülő funkciója (csak asztali gép)** – Ezzel akadályozhatja meg, hogy a Microsoft Edge megjelenítse a javaslatok listáját egy legördülő menüben gépelés közben. Ezzel minimalizálhatja a hálózati sávszélességnek a Microsoft Edge és a Microsoft szolgáltatásai közötti használatát.
+-   **Címsor legördülő funkciója (csak asztali gép)** – Ezzel akadályozhatja meg, hogy az Edge megjelenítse a javaslatok listáját egy legördülő menüben gépelés közben. Ezzel minimalizálhatja a hálózati sávszélességnek a Microsoft Edge és a Microsoft szolgáltatásai közötti használatát.
 -   **Kedvencek szinkronizálása a Microsoft-böngészők között (csak asztali gépek)** – Lehetővé teszi, hogy a Windows szinkronizálja a kedvenceket az Internet Explorer és a Microsoft Edge között.
--   **„Do Not Track” fejlécek küldése** – Arra konfigurálja a Microsoft Edge böngészőt, hogy Do Not Track (Követés letiltása) fejléceket küldhessen a felhasználók által meglátogatott webhelyeknek.
+-   **„Do Not Track” fejlécek küldése** – Arra konfigurálja az Edge böngészőt, hogy Do Not Track (Követés letiltása) fejléceket küldhessen a felhasználók által meglátogatott webhelyeknek.
 -   **Cookie-k** – Engedélyezi a böngészőnek, hogy mentse az internetről érkező cookie-kat az eszközre.
--   **JavaScript** – Engedélyezi a szkriptek (például a JavaScript) futtatását a Microsoft Edge böngészőben.
+-   **JavaScript** – Engedélyezi a szkriptek (például a JavaScript) futtatását az Edge böngészőben.
 -   **Előugró ablakok** – Blokkolja az előugró ablakokat a böngészőben (csak a Windows 10 asztali verzióra vonatkozik).
 -   **Keresési javaslatok** – Lehetővé teszi, hogy a keresőmotor webhelyeket javasoljon a keresőkifejezések beírása közben.
 -   **Intranetes forgalom átirányítása az Internet Explorerbe** – Engedélyezi a felhasználók számára az intranetes webhelyek megnyitását az Internet Explorerben (csak a Windows 10 asztali verzióra vonatkozik).
 -   **Automatikus kitöltés** – Engedélyezi a felhasználók számára, hogy módosítsák a böngésző automatikus kiegészítési funkciójának beállításait (csak a Windows 10 asztali verzióra vonatkozik).
 -   **Jelszókezelő** – Engedélyezi vagy letiltja a Microsoft Edge böngésző Jelszókezelő szolgáltatását.
 -   **Vállalati üzemmód webhelylistájának helye** – Megadja, hogy hol található a Vállalati üzemmódban megnyíló webhelyek listája. Ezt a listát a felhasználók nem szerkeszthetik.<br>(Csak a Windows 10 asztali verzió.)
--   **Fejlesztői eszközök** – Megakadályozza, hogy a végfelhasználók megnyithassák a Microsoft Edge fejlesztői eszközeit.
--   **Bővítmények** – Engedélyezi, hogy a végfelhasználók Microsoft Edge-bővítményeket telepítsenek az eszközön.
+-   **Fejlesztői eszközök** – Megakadályozza, hogy a végfelhasználók megnyithassák az Edge fejlesztői eszközeit.
+-   **Bővítmények** – Engedélyezi, hogy a végfelhasználók Edge-bővítményeket telepítsenek az eszközön.
 -   **InPrivate-böngészés** – Megakadályozza, hogy a végfelhasználók InPrivate-böngészési munkamenetet nyissanak meg.
--   **Első futtatáskori oldal megjelenítése** – Megakadályozza a bemutató lap megjelenítését a Microsoft Edge első futtatásakor.
+-   **Első futtatáskori oldal megjelenítése** – Megakadályozza a bemutató lap megjelenítését az Edge első futtatásakor.
     -   **Első futtatás URL-címe** – Megadhatja annak a lapnak az URL-címét, amely akkor jelenik meg, amikor a felhasználó első alkalommal futtatja a Microsoft Edge böngészőt (csak Windows 10 mobil verziónál).
 -   **Kezdőlapok** – Azoknak a webhelyeknek a listája, amelyek kezdőlapokként szeretne megjeleníteni a Microsoft Edge böngészőben (csak asztali verzióban).
 -   **Kezdőlap módosítása** – Engedélyezheti a felhasználóknak, hogy megváltoztassák a Microsoft Edge megnyitásakor megjelenő kezdőlapokat. A Kezdőlapok beállítással hozhatja létre a Microsoft Edge indításakor megjelenő lapot vagy lapok listáját.
 -   **Az about:flags laphoz való hozzáférés letiltása** – Megakadályozza, hogy a végfelhasználó hozzáférhessen a Microsoft Edge about:flags lapjához, amely a fejlesztői és kísérleti beállításokat tartalmazza.
 -   **WebRTC LocalHost IP-címe** – Letiltja a felhasználó localhost IP-címének megjelenítését a WebRTC protokollal történő telefonhívások esetén.
 -   **Alapértelmezett keresőmotor** – Meghatározza az alapértelmezetten használandó keresőmotort. A végfelhasználók ezt az értéket bármikor módosíthatják.
--   **Böngészési adatok törlése kilépéskor** – Előzmények és böngészési adatok törlése, amikor a felhasználó bezárja a Microsoft Edge böngészőt.
+-   **Böngészési adatok törlése kilépéskor** – Előzmények és böngészési adatok törlése, amikor a felhasználó bezárja az Edge böngészőt.
 -   **Adatgyűjtés élő csempéhez** – Leállítja a Windows élő csempéből történő adatgyűjtését, amikor a felhasználók kitűznek az Microsoft Edge böngészőből egy webhelyet a Start menübe.
 -  **Kedvencek lista** – A kedvencek fájl elérési útját adja meg. Például: http://contoso.com/favorites.html.
 -  **A kedvencek módosításának korlátozása** – Ha ezt **Letiltva** értékre állítja, a felhasználók nem használhatják a Kedvencek listában a hozzáadás, importálás, rendezés és szerkesztés funkciókat. 

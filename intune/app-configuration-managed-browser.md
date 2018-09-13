@@ -15,12 +15,12 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d39dca2a464886ae6752450636fe25a5f5701858
-ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
+ms.openlocfilehash: 25d4bdc51f2dc12cddbfb30c82baa22aa8c4540b
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "40251794"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329752"
 ---
 # <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>Az internet-hozzáférés védett böngészőszabályzatokkal való kezelése a Microsoft Intune-ban
 
@@ -108,7 +108,7 @@ Az Intune Managed Browser SSO-ja megköveteli az eszközöktől, hogy regisztrá
 
 1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3.  A felügyeleti lista **Mobilalkalmazások** paneljén válassza az **Alkalmazáskonfigurációs szabályzatok** lehetőséget.
+3.  A felügyeleti lista **Ügyfélalkalmazások** paneljén válassza az **Alkalmazáskonfigurációs szabályzatok** lehetőséget.
 4.  Az **Alkalmazáskonfiguráció** panelen válassza a **Hozzáadás** lehetőséget.
 5.  A **Konfigurációs szabályzat hozzáadása** panelen az alkalmazáskonfigurációs beállításokhoz írja be a **Nevet** és a **Leírást** (ez utóbbi nem kötelező).
 6.  Az **Eszközregisztráció** típusaként válassza a **Felügyelt alkalmazások** lehetőséget.
@@ -126,7 +126,7 @@ Az Intune Managed Browser SSO-ja megköveteli az eszközöktől, hogy regisztrá
 
 A beállításokat Azure AD-beli felhasználói csoportokhoz lehet hozzárendelni. Ha az illető felhasználó rendelkezik a célzott védett böngésző telepített példányával, akkor az alkalmazás felügyelete a megadott beállításokkal történik.
 
-1. Az Intune mobilalkalmazás-kezelési irányítópult **Mobilalkalmazások** paneljén válassza az **Alkalmazáskonfigurációs szabályzatok** lehetőséget.
+1. Az Intune mobilalkalmazás-kezelési irányítópult **Ügyfélalkalmazások** paneljén válassza az **Alkalmazáskonfigurációs szabályzatok** lehetőséget.
 2. A listából válassza ki a hozzárendelni kívánt alkalmazáskonfigurációt.
 3. Válassza ki a következő panelen a **Hozzárendelések** elemet.
 4. A **Hozzárendelések** panelen válassza ki azt az Azure AD-csoportot, amelyhez az alkalmazáskonfigurációt hozzá szeretné rendelni, majd válassza az **OK** elemet.
