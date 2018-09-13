@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: ee3ccbf9-82fc-4fbf-9d3d-8f05e431d090
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: 7b13cfdcaa29edfc780126f3d1d76f5a9e46360f
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: b34bb7c3f3db9ebb3cdd89b429aaeb530d7ad796
+ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330296"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44141628"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>Az Intune-adattárház fiókadatainak áthelyezése 
 
@@ -63,8 +63,6 @@ Az Azure Portal saját nézetében egyes trenddiagramok alaphelyzetbe állnak. E
 ## <a name="device-enrollment-charts"></a>Eszközregisztrációs diagramok
 1. Az Azure Portalon nyissa meg a **Microsoft Intune** -> **Eszközregisztráció** lehetőséget.
 2. A diagramok háttéradatai letölthetők a Microsoft [Diagramkezelő](https://developer.microsoft.com/graph/graph-explorer) használatával.
-    - Regisztrációs állapot megtekintése: 
-    - Az ezen a héten meghiúsult regisztrációk: 
     - A regisztráció állapota ezt a [regisztrációsállapot-lekérdezést](https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentFailureTrends()/content) lemásolva és a [Diagramkezelőbe](https://developer.microsoft.com/graph/graph-explorer) beillesztve kapható meg.
     - A héten meghiúsult regisztrációk toplistája ezt a [regisztrációshiba-lekérdezést](https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentTopFailures(period=null)/content) lemásolva és a [Diagramkezelőbe](https://developer.microsoft.com/graph/graph-explorer) beillesztve kapható meg.
 

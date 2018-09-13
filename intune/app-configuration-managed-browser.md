@@ -15,12 +15,12 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 25d4bdc51f2dc12cddbfb30c82baa22aa8c4540b
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: d11356c16965e3ba7631275368c9723a2db0ecc9
+ms.sourcegitcommit: 443b4cb3390da47bf1e497b1f0c0137a5ddda7bd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329752"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43675015"
 ---
 # <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>Az internet-hozzáférés védett böngészőszabályzatokkal való kezelése a Microsoft Intune-ban
 
@@ -185,7 +185,7 @@ Az Edge vagy a Managed Browser alkalmazás konfigurációjának létrehozására
 
 |                                Kulcs                                 |                                                                                                                                                                                                                                                         Érték                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | Ennek a konfigurációnak egy könyvjelzőlista az értéke. Minden könyvjelző egy címből és egy URL-címből áll. A címet és az URL-címet a <strong>&#124;</strong> karakter választja el.<br><br>Például:<br> `Microsoft Bing|https://www.bing.com`<br><br>To configure multiple bookmarks, separate each pair with the double character, <strong>&#124;&#124;</strong><br><br>Example:<br> `Bing|https://www.bing.com||Contoso|https://www.contoso.com` |
+| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | Ennek a konfigurációnak egy könyvjelzőlista az értéke. Minden könyvjelző egy címből és egy URL-címből áll. A címet és az URL-címet a <strong>&#124;</strong> karakter választja el.<br><br>Például:<br> <code>Microsoft Bing&#124;https://www.bing.com</code><br><br>Több könyvjelző megadásakor az egyes párokat a <strong>&#124;&#124;</strong> karakter választja el.<br><br>Például:<br> <code>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com</code> |
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-a-protected-browser"></a>Engedélyezett és letiltott URL-címek meghatározása egy védett böngésző számára
 
@@ -193,7 +193,7 @@ Az Edge vagy a Managed Browser alkalmazás konfigurációjának létrehozására
 
 |Kulcs|Érték|
 |-|-|
-|A következő lehetőségek közül választhat:<br><ul><li>Engedélyezett URL-címek megadása (csak ezek az URL-címek engedélyezettek, más webhelyek nem érhetők el):<br> **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br></li><li>Tiltott URL-címek megadása (minden más webhely elérhető lesz):<br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**</li></ul>|A kulcs megfelelő értéke egy URL-címlista. Az engedélyezni vagy letiltani kívánt URL-címeket egyetlen értékként kell megadni, az egyes tételeket függőleges vonal **&#124;** karakterrel elválasztva egymástól.<br><br>Példák:<br><br>`URL1|URL2|URL3`<br>`http://*.contoso.com/*|https://*.bing.com/*|https://expenses.contoso.com`|
+|A következő lehetőségek közül választhat:<br><ul><li>Engedélyezett URL-címek megadása (csak ezek az URL-címek engedélyezettek, más webhelyek nem érhetők el):<br> **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br></li><li>Tiltott URL-címek megadása (minden más webhely elérhető lesz):<br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**</li></ul>|A kulcs megfelelő értéke egy URL-címlista. Az engedélyezni vagy letiltani kívánt URL-címeket egyetlen értékként kell megadni, az egyes tételeket függőleges vonal **&#124;** karakterrel elválasztva egymástól.<br><br>Példák:<br><br><code>URL1&#124;URL2&#124;URL3</code><br><code>http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com</code>|
 
 >[!IMPORTANT]
 >Mindkét kulcsot ne adja meg. Ha ugyanahhoz a felhasználóhoz mindkét kulcs meg van adva, akkor az engedélyezett kulcs érvényesül, mert az jelent nagyobb korlátozást.
