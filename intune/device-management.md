@@ -37,7 +37,7 @@ Az **Eszközök** munkafolyamat áttekintést nyújt a felügyelt eszközökről
    - Az **Áttekintés** a regisztrált eszközök pillanatképét jeleníti meg, valamint azt, hogy hány eszköz használja a különböző platformokat (Android, iOS és egyebek).
    - A **Minden eszköz** az Ön által kezelt regisztrált eszközöket jeleníti meg.
 
-     Az **Exportálás** funkcióval létrehozhat egy .csv formátumú listát minden eszközről, egyenként 10000 (Internet Explorer), iletve 30000 (Edge, Chrome) eszközzel.
+     Az **Exportálás** funkcióval létrehozhat egy .csv formátumú listát minden eszközről, egyenként 10000 (Internet Explorer), iletve 30000 (Microsoft Edge, Chrome) eszközzel.
 
      Egy eszköz kijelölésével [további részleteket tekinthet meg róla](device-inventory.md), így a hardveradatokat, a telepített alkalmazásokat, a megfelelőségi állapotot és egyéb adatokat.
 
