@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 4a95e575-2c63-4bfc-b9c4-f0a132eef618
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1ae7723e29d23575314fc632c75af01eb9e59f72
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 2785d81b1c061dd46d24c6806b72101e18e4a5ee
+ms.sourcegitcommit: 63b74a60aafa8d2d6af0594448ae0471fbd79194
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347660"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46493996"
 ---
 # <a name="add-windows-phone-81-store-apps-to-microsoft-intune"></a>Windows Phone 8.1-es áruházbeli alkalmazások hozzáadása a Microsoft Intune-hoz
 
@@ -35,7 +35,7 @@ A következő módon adhat hozzá Windows Phone 8.1-áruházbeli alkalmazást az
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget.  
     Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** ablaktáblán válassza az **Ügyfélalkalmazások** lehetőséget.
-4. Az **Ügyfélalkalmazások** területen a **Kezelés** szakaszban válassza az **Alkalmazások** lehetőséget.
+4. Az **Ügyfélalkalmazások** tevékenységprofil panelén a **Kezelés** szakaszban válassza az **Alkalmazások** lehetőséget.
 5. Az **Alkalmazások** panelen válassza a **Hozzáadás** lehetőséget.
 6. Az **Alkalmazás hozzáadása** panelen válassza a **Windows Phone 8.1** lehetőséget az **Alkalmazás típusa** területen, majd válassza az **Alkalmazásadatok** lehetőséget.
 7. Az **Alkalmazásadatok** panelen adja meg az alkalmazás adatait. A választott alkalmazástól függően előfordulhat, hogy egyes értékek automatikusan ki vannak töltve a panelen:

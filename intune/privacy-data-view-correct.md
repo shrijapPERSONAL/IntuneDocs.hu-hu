@@ -14,12 +14,12 @@ ms.assetid: 1ba77bc7-505e-4eca-a49e-dcdaa75d0043
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9bead87f80cf8d1f102f396bdd6c9573786c1b9e
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: b9efb60d169ba6f88b4765d3fc651f3a0596b230
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34474632"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028579"
 ---
 # <a name="view-and-correct-personal-data"></a>Személyes adatok megtekintése és javítása
 
@@ -33,7 +33,7 @@ Az Intune-rendszergazdák hozzáférési engedélyeiktől függően megtekinthet
 Az Intune kezelőfelületének különböző paneljein a rendszergazdák számára láthatók a végfelhasználók személyes adatai. A következő cikkek a rendszergazdák számára hozzáférhető és nem hozzáférhető információk körét ismertetik:
 - Az [eszköz adatainak megtekintése](device-inventory.md) az Intune-ban leírja, hogyan tekinthetők át egy végfelhasználó eszközének adatai.
 - Az [Alkalmazásadatok és -hozzárendelések figyelése](apps-monitor.md) azt ismerteti, hogy hogyan tekinthetők meg az egy végfelhasználó eszközére telepített alkalmazások adatai.
-- A [Milyen adatok láthatók a cég számára, ha regisztrálom az eszközömet?](https://docs.microsoft.com/en-us/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune) című cikk felsorolja a végfelhasználók számára a vállalatuk által látható és nem látható adatokat. Célszerű egyértelműen tudatni a felhasználókkal, hogy milyen adatokat gyűjt, és miért. Ez a cikk lehet az első lépés az átláthatóság felé.
+- A [Milyen adatok láthatók a cég számára, ha regisztrálom az eszközömet?](https://docs.microsoft.com/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune) című cikk felsorolja a végfelhasználók számára a vállalatuk által látható és nem látható adatokat. Célszerű egyértelműen tudatni a felhasználókkal, hogy milyen adatokat gyűjt, és miért. Ez a cikk lehet az első lépés az átláthatóság felé.
 
 ### <a name="who-can-view-the-data"></a>Ki tekintheti meg az adatokat?
 

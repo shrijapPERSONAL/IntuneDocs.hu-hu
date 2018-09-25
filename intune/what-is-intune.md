@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: get-started
-ms.openlocfilehash: 3f8f0dce416c943dbc244d0e2a4366b12b305708
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 09c4f2b067d27da9761d33559a3d3fbdc6ac2d90
+ms.sourcegitcommit: cd73ef164e0df79429b97c3090adbba49592c150
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253782"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46448671"
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Az Azure Portalbeli Microsoft Intune bemutatása
 
@@ -61,33 +61,6 @@ A támogatott böngészőkről az [Azure Portalon](https://docs.microsoft.com/az
 ## <a name="microsoft-intune-in-the-azure-portal"></a>A Microsoft Intune az Azure Portalon
 
 A Microsoft Intune szolgáltatást az [Azure Portalon](https://portal.azure.com) találhatja meg. Az Azure számos szolgáltatást tartalmaz, amelyek közül sokat valószínűleg nem használ napi szinten. A [Bevezetés az Intune használatába az Azure Portalon](get-started-azure.md) című cikkben segítséget kaphat a portál használatának beállításához.
-
-## <a name="the-microsoft-intune-documentation"></a>A Microsoft Intune dokumentációja
-
-Ezt a témát a Microsoft Intune teljes dokumentációjához hasonlóan folyamatosan frissítjük. Ha javaslatai vannak, küldjön visszajelzést a témakör megjegyzéseiben. Szívesen meghallgatnánk a véleményét.
-
-A dokumentáció a szükséges információk könnyebb megtalálhatósága érdekében a Microsoft Intune (alább látható) Azure Portalbeli elrendezését tükrözi.
-
-![Az Azure Portal munkafolyamatai](./media/azure-portal-workloads.png)
-
-### <a name="documentation-guide"></a>Útmutató a dokumentációhoz
-
-Az alábbi táblázatban gyorsan megtalálhatja a Microsoft Intune használatához szükséges főbb információkat.
-
-| Szakasz                                                      | Description                                                                                                                                                                                                                                                                                      |
-|--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Bevezetés és az első lépések](introduction-intune.md)       | Az Intune alapjai, többek között:<br /> – Gyakran használt megoldások<br /> – Hogyan működik a Microsoft Intune<br /> – Eszközkezelés az Intune-ban<br /> – Alkalmazáskezelés az Intune-ban<br /> – Nagyvállalati mobilitási felügyelet (EMM) eszközregisztrálással és anélkül                                                         |
-| [Tervezés és kialakítás](planning-guide.md)                         | Útmutató a Microsoft Intune-környezet megtervezéséhez és kialakításához.                                                                                                                                                                                                             |
-| [Eszközök regisztrálása](device-enrollment.md)                    | Azt ismerteti, hogyan segít a Microsoft Intune a munkahelyi eszközök felügyeletében az eszközök Intune-ban való regisztrálásával. A dolgozók eszközeit többféleképpen is lehet regisztrálni.                                                                                                         |
-| [Eszközmegfelelőség](device-compliance.md)                    | Az eszközöknek az Intune eszközmegfelelőségi szabályzatai által meghatározott szabályok és beállítások szerint kell működnie, hogy a Microsoft Intune megfelelőnek tekintse azokat. Megfelelőségre példa lehet többek között az, ha az eszközhöz való hozzáféréshez jelszót követel meg, ha titkosítja az eszközt, vagy ha az operációs rendszer egy adott minimális verziószámát írja elő. |
-| [Eszközök konfigurálása](device-profiles.md)                   | A Microsoft Intune-nal eszközprofilok létrehozásával konfigurálhatja az összes felügyelt eszközre vonatkozó beállításokat és funkciókat. Beállíthatja például az értesítéseket, az adatmegosztást, az e-mailes támogatást, a Wi-Fi-kapcsolatot, a tanúsítványokat vagy a végpontok védelmét.              |
-| [Eszközök](device-management.md)                              | Biztosítani szükséges, hogy a felügyelt eszközök rendelkezzenek minden olyan erőforrással, amelyekre a felhasználóknak a munkavégzéshez szükségük lehet, miközben a céges adatokat is védeni kell a kockázatoktól. Az eszközöket a munkahelyi eszközleltár ellenőrzésével felügyelheti, és távoli eszközműveleteket is végrehajthat.                                                      |
-| [Mobilalkalmazások](app-management.md)                             | Információ az alkalmazások hozzáadásáról, üzembe helyezéséről, figyeléséről, konfigurálásáról és védelméről.                                                                                                                                                                                                                             |
-| [Feltételes hozzáférés](conditional-access.md)                  | A céges adatok védelmét szolgáló eszközalapú és alkalmazásalapú feltételeket határozhat meg.                                                                                                                                                                                                            |
-| [Felhasználók](users-add.md)                                        | Információ arról, hogyan adhat hozzá felhasználókat a felügyelt eszközökhöz és alkalmazásokhoz.                                                                                                                                                                                                                                           |
-| [Csoportok](groups-get-started.md)                              | Információ arról, hogyan hozhatók létre és hogyan kezelhetők csoportok az Intune-ban. A csoportok használatával gyorsan hozzárendelhet eszköz- és alkalmazáskonfigurációs védelmi szabályzatokat.                                                                                                                                             |
-| [Intune-szerepkörök](role-based-access-control.md)                 | Szabályozhatja, hogy kik hajthatnak végre különböző műveleteket az Intune-ban, és hogyan lesznek alkalmazva ezek a műveletek. A beépített szerepköröket bizonyos gyakori Intune-os helyzetekben használhatja, de saját szerepköröket is létrehozhat.                                                                                 |
-| [Szoftverfrissítések](windows-update-for-business-configure.md) | Információ arról, hogyan konfigurálhatja a szoftverfrissítéseket Windows 10-es eszközök esetén.                                                                                                                                                                                                                                  |
 
 ## <a name="whats-new"></a>Újdonságok
 

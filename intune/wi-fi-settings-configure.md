@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e2dba6e0d1c50790c8c2c2bf287695ab67fdb972
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: df2e2f81008c6dedf5660a8a9eff4bf2cfe2ec6b
+ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905331"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46505733"
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>A Wi-Fi-beállítások konfigurálása a Microsoft Intune-ban
 
@@ -62,8 +62,6 @@ A témakörben található információk alapján megismerheti a Wi-Fi-profilok 
     - **Windows 8.1 és újabb**
     - **Windows 10 és újabb**
 
-   > [!IMPORTANT]
-   > Ha Windows 10 (beleértve a Windows Holographic for Businesst is) rendszerű eszközökhöz készít profilt, a platformok közül válassza a **Windows 8.1 vagy újabb** lehetőséget. A **Windows 10 vagy újabb** platform nem tartalmaz Wi-Fi-s profiltípust. 
 
 6. Apple vagy Android rendszerű eszközök esetén a **Wi-Fi típusa** legördülő listában válassza az **Alapszintű** vagy **Vállalati** lehetőséget. Ha alapvető jellemzőket, például a hálózat nevét és SSID azonosítóját szeretné megadni, használhatja az **Alapszintű** lehetőséget. A **Vállalati** lehetőséggel több speciális adatot adhat meg, mint például az EAP protokoll használatát, ha a Wi-Fi-hálózata ezt a protokollt használja. 
 
