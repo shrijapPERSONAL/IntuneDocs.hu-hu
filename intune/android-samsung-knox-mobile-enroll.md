@@ -15,12 +15,12 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f1fbe688705940d3e8038affb84268fbaf113e3
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: f7565972d37c5df5acb83012bb7cebbdc1fa1cec
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313064"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028647"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Eszközök automatikus regisztrációja a Samsung Knox Mobile Enrollmenttel
 
@@ -84,7 +84,7 @@ Az Intune-ba a KME-vel regisztrált eszközök esetében a következőképp konf
 
 - **Felhasználónév-hozzárendelés nélkül:** A Knox portál **Eszközadatok** területén hagyja üresen a hozzáadott eszközök **Felhasználóazonosító** és a **Jelszó** mezőit. Így a végfelhasználónak az Intune-regisztráció során nevet és jelszót is meg kell adnia.
 
-- **Felhasználónév-hozzárendeléssel:** A Knox portál **Eszközadatok** területén adjon meg egy **Felhasználóazonosítót** (például a hozzárendelt felhasználó vagy a [Készülékregisztráció-kezelő](https://docs.microsoft.com/en-us/intune/device-enrollment-manager-enroll) fiókjának felhasználónevét) a hozzáadott eszközöknek. Így a végfelhasználó felhasználó neve előre ki lesz töltve, az Intune-regisztráció során pedig neki egy jelszót kell megadnia.
+- **Felhasználónév-hozzárendeléssel:** A Knox portál **Eszközadatok** területén adjon meg egy **Felhasználóazonosítót** (például a hozzárendelt felhasználó vagy a [Készülékregisztráció-kezelő](https://docs.microsoft.com/intune/device-enrollment-manager-enroll) fiókjának felhasználónevét) a hozzáadott eszközöknek. Így a végfelhasználó felhasználó neve előre ki lesz töltve, az Intune-regisztráció során pedig neki egy jelszót kell megadnia.
 
 > [!NOTE]
 >
