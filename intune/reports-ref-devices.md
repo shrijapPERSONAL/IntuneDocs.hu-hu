@@ -6,7 +6,7 @@ keywords: Intune-adattárház
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 05c99d2431e89f96e293bbd9edbee0753c6a26ad
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 00d7f8da28a762b5acbca379d62e0e7880f025a8
+ms.sourcegitcommit: 445a54dc6826a549d770a9953549ae2191d391c2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906124"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45727628"
 ---
 # <a name="reference-for-devices-entities"></a>Eszközök típusú entitások referenciája
 
@@ -39,7 +39,7 @@ Az **Eszközök** kategória az információkat nyomon követő mobileszközökh
 
 A **DeviceTypes** entitás az adattárház más entitásai által hivatkozott eszköztípust jelöli. Az eszköztípus általában leírja az eszköz típusát, gyártóját vagy mindkettőt.
 
-| Tulajdonság  | Description |
+| Tulajdonság  | Leírás |
 |---------|------------|
 | DeviceTypeID |Az eszköztípus egyedi azonosítója |
 | DeviceTypeKey |Az eszköztípus egyedi azonosítója az adattárházban – helyettes kulcs |
@@ -47,7 +47,7 @@ A **DeviceTypes** entitás az adattárház más entitásai által hivatkozott es
 
 ## <a name="example"></a>Példa
 
-| DeviceTypeID  | Név | Description |
+| DeviceTypeID  | Név | Leírás |
 |---------|------------|--------|
 | 0 |Asztali |Windows asztali eszköz |
 | 1 |WindowsRT |Windows RT rendszerű eszköz |
@@ -74,7 +74,7 @@ A **DeviceTypes** entitás az adattárház más entitásai által hivatkozott es
 
 A **ClientRegistrationStateTypes** entitás az adattárház más táblái által hivatkozott regisztrációtípust jelöli.
 
-| Tulajdonság  | Description |
+| Tulajdonság  | Leírás |
 |---------|------------|
 | clientRegisterationStateID |Regisztrációs állapot egyedi azonosítója |
 | clientRegisterationStateKey |A regisztrációs állapot egyedi azonosítója az adattárházban – helyettes kulcs |
@@ -82,7 +82,7 @@ A **ClientRegistrationStateTypes** entitás az adattárház más táblái által
 
 ## <a name="example"></a>Példa
 
-| ClientRegisterationStateID  | Név | Description |
+| ClientRegisterationStateID  | Név | Leírás |
 |---------|------------|--------|
 | 0 |NotRegistered |Nincs regisztrálva |
 | 1 |SMSIDConflict |SMS ID-ütközés |
@@ -98,7 +98,7 @@ A **ClientRegistrationStateTypes** entitás az adattárház más táblái által
 
 Az **EnrollmentTypes** entitás egy eszköz regisztrálásának módját jelöli. A regisztrációtípus a regisztrálás módszerét rögzíti. A felsorolt példák a különböző regisztrációtípusokat és azok jelentését mutatják be.
 
-| Tulajdonság  | Description |
+| Tulajdonság  | Leírás |
 |---------|------------|
 | managementStateID |A kezelés állapotának egyedi azonosítója. |
 | managementStateKey |A kezelés állapotának egyedi azonosítója az adattárházban – helyettes kulcs. |
@@ -106,7 +106,7 @@ Az **EnrollmentTypes** entitás egy eszköz regisztrálásának módját jelöli
 
 ## <a name="example"></a>Példa
 
-| enrollmentTypeID  | Név | Description |
+| enrollmentTypeID  | Név | Leírás |
 |---------|------------|--------|
 | 0 |Ismeretlen |Regisztrálás típusa nem volt gyűjtve |
 | 1 |UserEnrollment |Felhasználó által kezdeményezett regisztráció |
@@ -122,7 +122,7 @@ Az **EnrollmentTypes** entitás egy eszköz regisztrálásának módját jelöli
 
 Az **EnrollmentTypes** entitás jelzi, hogy az eszköz tulajdonosa a vállalat, magánszemély vagy ismeretlen.
 
-| Tulajdonság  | Description | Példa |
+| Tulajdonság  | Leírás | Példa |
 |---------|------------|--------|
 | ownerTypeID |A tulajdonostípus egyedi azonosítója. | |
 | ownerTypeKey |A tulajdonostípus egyedi azonosítója az adattárházban – helyettes kulcs. | |
@@ -132,7 +132,7 @@ Az **EnrollmentTypes** entitás jelzi, hogy az eszköz tulajdonosa a vállalat, 
 
 Az **MdmStatuses** entitás az eszköz megfelelőségi állapotát jelzi.
 
-| Tulajdonság  | Description |
+| Tulajdonság  | Leírás |
 |---------|------------|
 | MdmStatusID |A megfelelőségi állapot egyedi azonosítója |
 | MdmStatusKey |A megfelelőségi állapot egyedi azonosítója az adattárházban – helyettes kulcs | 
@@ -141,7 +141,7 @@ Az **MdmStatuses** entitás az eszköz megfelelőségi állapotát jelzi.
 
 ## <a name="example"></a>Példa
 
-| MdmStatusID  | ComplianceStatus | Description |
+| MdmStatusID  | ComplianceStatus | Leírás |
 |---------|------------|--------|
 | 0 |Ismeretlen |Az eszköz megfelelőségi állapota ismeretlen. |
 | 1 |Compliant (Megfelelő) |Az eszköz megfelelő. |
@@ -154,7 +154,7 @@ Az **MdmStatuses** entitás az eszköz megfelelőségi állapotát jelzi.
 
 A **ManagementStates** entitás az eszköz állapotáról ad információt. Ezek a részletek hasznosak lehetnek távoli műveletek végrehajtásakor és jailbreakelt vagy rootolt eszköz esetén.
 
-| Tulajdonság  | Description |
+| Tulajdonság  | Leírás |
 |---------|------------|
 | managementStateID | A kezelés állapotának egyedi azonosítója. |
 | managementStateKey | A kezelés állapotának egyedi azonosítója az adattárházban – helyettes kulcs. |
@@ -162,7 +162,7 @@ A **ManagementStates** entitás az eszköz állapotáról ad információt. Ezek
 
 ## <a name="example"></a>Példa
 
-| managementStateID  | Név | Description |
+| managementStateID  | Név | Leírás |
 |---------|------------|--------|
 | 0 |Kezelt | Kezelt, függőben lévő távoli műveletek nélkül. |
 | 1 |RetirePending | Az eszköz kivonására vonatkozó parancs van függőben. |
@@ -181,7 +181,7 @@ A **ManagementStates** entitás az eszköz állapotáról ad információt. Ezek
 
 A **WorkPlaceJoinStateTypes** entitás az eszköz Azure Active Directory munkahelyi csatlakozási állapotát jelöli.  A regisztrációs folyamat egy vagy több tanúsítványt is felhasználhat ellenőrzés vagy hitelesítés céljára. Amikor egy eszköz munkahelyi csatlakozást hajt végre, ezek a tanúsítványok szolgálnak az eszköz és a felhasználó érvényesítésére. A tanúsítványok kiadása egy SCEP (Egyszerű tanúsítvány-beiktatási protokoll) kiszolgálón keresztül történik. Az entitásban lévő értékek a folyamaton átmenő eszköz lehetséges állapotait jelölik. Néhány ilyen állapot azt jelzi, hogy a munkahelyi csatlakozás a kívánt tanúsítvány SCEP-kiszolgáló általi kiadásának hibája miatt meghiúsult. Ha az eszköz még nem ment át ezen a folyamaton, akkor a beállított érték Unknown (Ismeretlen) lesz.
 
-| Tulajdonság  | Description |
+| Tulajdonság  | Leírás |
 |---------|------------|
 | WorkPlaceJoinStateID | A munkahelyi csatlakozás állapotának egyedi azonosítója |
 | WorkPlaceJoinStateKey | A munkahelyi csatlakozás állapotának egyedi azonosítója az adattárházban – helyettes kulcs |
@@ -189,7 +189,7 @@ A **WorkPlaceJoinStateTypes** entitás az eszköz Azure Active Directory munkahe
 
 ## <a name="example"></a>Példa
 
-| workPlaceJoinStateID  | Név | Description |
+| workPlaceJoinStateID  | Név | Leírás |
 |---------|------------|--------|
 | 0 |Ismeretlen |Ha az eszköz nem végzett munkahelyi csatlakozást, akkor Unknown (Ismeretlen) állapotban van |
 | 1 |Sikerült |A munkahelyi csatlakozás sikerült |
@@ -205,7 +205,7 @@ A **WorkPlaceJoinStateTypes** entitás az eszköz Azure Active Directory munkahe
 
 A **ManagementAgentTypes** az eszköz kezelésére szolgáló ügynököket jelöli.
 
-| Tulajdonság  | Description |
+| Tulajdonság  | Leírás |
 |---------|------------|
 | ManagementAgentTypeID | A kezelőügynök típusának egyedi azonosítója. |
 | ManagementAgentTypeKey | A kezelőügynök típusának egyedi azonosítója az adattárházban – helyettes kulcs. |
@@ -213,7 +213,7 @@ A **ManagementAgentTypes** az eszköz kezelésére szolgáló ügynököket jel�
 
 ## <a name="example"></a>Példa
 
-| ManagementAgentTypeID  | Név | Description |
+| ManagementAgentTypeID  | Név | Leírás |
 |---------|------------|--------|
 | 1 |EAS | Az Exchange Active Sync szolgáltatással kezelt eszköz |
 | 2 |MDM | MDM-ügynökkel kezelt eszköz |
@@ -227,7 +227,7 @@ A **ManagementAgentTypes** az eszköz kezelésére szolgáló ügynököket jel�
 
 A **Devices** entitás felsorolja az összes kezelt regisztrált eszközt és azok lényeges tulajdonságait.
 
-| Tulajdonság  | Description |
+| Tulajdonság  | Leírás |
 |---------|------------|
 | DeviceKey | Az eszköz egyedi azonosítója az adattárházban – helyettes kulcs. |
 | DeviceId | Az eszköz egyedi azonosítója. |
@@ -273,7 +273,7 @@ A **Devices** entitás felsorolja az összes kezelt regisztrált eszközt és az
 
 A **DevicePropertyHistory** entitásban ugyanazon tulajdonságok szerepelnek, mint a Devices (Eszközök) táblában, amely minden eszközről napi pillanatképet tárol 90 napra visszamenőleg. A DateKey mező az egyes sorok napját jelzi.
 
-| Tulajdonság  | Description |
+| Tulajdonság  | Leírás |
 |---------|------------|
 | DateKey |A napot megadó dátumtáblázat-hivatkozás. |
 | DeviceKey |Az eszköz egyedi azonosítója az adattárházban – helyettes kulcs. Az Intune-eszközazonosítót tartalmazó eszköztáblára mutató hivatkozás. |
@@ -317,7 +317,7 @@ A **DevicePropertyHistory** entitásban ugyanazon tulajdonságok szerepelnek, mi
 
 Az **MdmDeviceInventoryHistories** entitás 90 napra visszamenőleg napi pillanatképeket tartalmaz az MDM-kezelésű eszközök leltáradatairól. A DateKey mező a sor napját jelzi. Egyes tulajdonságok esetleg nem vonatkoztathatók vagy tölthetők ki minden eszközre, ezért olvassa át alaposan a ezt az oldalt. További információ: [A regisztrált eszközök áttekintése a Microsoft Intune leltárfunkciójával](https://docs.microsoft.com/Intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-Intune).
 
-| Tulajdonság  | Description |
+| Tulajdonság  | Leírás |
 |---------|------------|
 | DateKey | A napot megadó dátumtáblázat-hivatkozás. |
 | DeviceKey |Az eszköz egyedi azonosítója az adattárházban – helyettes kulcs. Az Intune-eszközazonosítót tartalmazó eszköztáblára mutató hivatkozás. |
@@ -416,7 +416,7 @@ Az **MdmDeviceInventoryHistories** entitás 90 napra visszamenőleg napi pillana
 Az **ApplicationInventory** entitás a leltárkészítés pillanatában az eszközön talált alkalmazásokat sorolja fel.
 
 
-|      Tulajdonság      |                       Description                        |
+|      Tulajdonság      |                       Leírás                        |
 |--------------------|----------------------------------------------------------|
 |     DeviceKey      |              Hivatkozás az Eszközök táblára.               |
 |   ApplicationKey   | ? (ExchangeDeviceService\DeviceApplication helyről másolva). |

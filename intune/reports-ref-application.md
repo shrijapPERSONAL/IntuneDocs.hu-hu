@@ -6,7 +6,7 @@ keywords: Intune-adattárház
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e27b07b18991ebd930bac6ed70fa489d27aa22ba
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: b71e022ea99255d95aa4f06c32a98b560f903836
+ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224868"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45602248"
 ---
 # <a name="reference-for-application-entities"></a>Alkalmazás-entitások referencia
 
@@ -36,7 +36,7 @@ Az **Alkalmazás** kategória mobileszközökhöz készült entitásokat tartalm
 
 Az **AppRevision** entitás listázza az alkalmazások összes verzióját.
 
-| Tulajdonság  | Description | Példa |
+| Tulajdonság  | Leírás | Példa |
 |---------|------------|--------|
 | AppKey |Az alkalmazás egyedi azonosítója. |123 |
 | ApplicationId |Az alkalmazás egyedi azonosítója – Az AppKey-hez hasonlít, de természetes kulcs. |b66bc706-ffff-7437-0340-032819502773 |
@@ -58,7 +58,7 @@ Az **AppRevision** entitás listázza az alkalmazások összes verzióját.
 
 Az **AppTypes** entitás az alkalmazás telepítési forrásait listázza.
 
-| Tulajdonság  | Description |
+| Tulajdonság  | Leírás |
 |---------|------------|
 | AppTypeID |A típus azonosítója |
 | AppTypeKey |A kulcs helyettes kulcsa |
@@ -66,7 +66,7 @@ Az **AppTypes** entitás az alkalmazás telepítési forrásait listázza.
 
 ### <a name="example"></a>Példa
 
-| AppTypeID  | Név | Description |
+| AppTypeID  | Név | Leírás |
 |---------|------------|--------|
 | 0 |Android store app | Android Áruházbeli alkalmazás. |
 | 1 |Android LOB app | Üzletági Android-alkalmazás. |
@@ -87,7 +87,7 @@ Az **AppTypes** entitás az alkalmazás telepítési forrásait listázza.
 
 A **VppProgramTypes** entitás az alkalmazás lehetséges VPP-programtípusait listázza.
 
-| Tulajdonság  | Description |
+| Tulajdonság  | Leírás |
 |---------|------------|
 | VppProgramTypeID | A típus azonosítója. |
 | VppProgramTypeKey | A kulcs helyettes kulcsa. |
@@ -95,7 +95,7 @@ A **VppProgramTypes** entitás az alkalmazás lehetséges VPP-programtípusait l
 
 ### <a name="example"></a>Példa
 
-| VppProgramID  | Név | Description |
+| VppProgramID  | Név | Leírás |
 |---------|------------|--------|
 | 3DDA2474-470B-4503-9830-2665C21C1945 | Microsoft | A Microsoft VPP-programja. |
 | 00000000-0000-0000-0000-000000000000 | Not Yet Available (Még nem érhető el) | Alapértelmezett érték, nincs VPP. |
@@ -107,7 +107,7 @@ A **VppProgramTypes** entitás az alkalmazás lehetséges VPP-programtípusait l
 
 Az **ApplicationInventory** entitás a leltárkészítés pillanatában az eszközön talált alkalmazásokat sorolja fel.
 
-| Tulajdonság  | Description |
+| Tulajdonság  | Leírás |
 |---------|------------|
 | DeviceKey | Az Intune-eszközazonosítót tartalmazó eszköztáblára mutató hivatkozás. |
 | DateKey | A leltári napot megadó dátumtáblázat-hivatkozás. |
@@ -119,7 +119,7 @@ Az **ApplicationInventory** entitás a leltárkészítés pillanatában az eszk�
 
 A **MobileAppInstallState** entitás egy mobilalkalmazás telepítési állapotát jelöli, miután az hozzá lett rendelve egy eszközöket, felhasználókat vagy mindkettőt tartalmazó csoporthoz.
 
-| Tulajdonság | Description |
+| Tulajdonság | Leírás |
 |---|---|
 | AppInstallStateKey | A fiókhoz tartozó alkalmazástelepítési állapot egyedi azonosítója. |
 | AppInstallState | Az alkalmazástelepítési állapot felsorolásértéke. |
@@ -130,7 +130,7 @@ A **MobileAppInstallState** entitás egy mobilalkalmazás telepítési állapot�
 A **MobileAppDeviceUserInstallStatus** a mobilalkalmazás telepítési állapotát jelöli egy adott eszközre és felhasználóra vonatkozóan.
 
 
-|      Tulajdonság      |                                                         Description                                                         |
+|      Tulajdonság      |                                                         Leírás                                                         |
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------|
 |      DateKey       |                                  Az alkalmazástelepítési állapot rögzítési dátumának kulcsa.                                  |
 |       AppKey       |                             A mobilalkalmazás kulcsa, mely az AppRevision osztály egy példányát azonosítja.                              |
