@@ -9,15 +9,16 @@ ms.date: 4/26/2018
 ms.article: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.topic: article
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7272e8e088ae2c2ecad1756233281c42a80a279b
-ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
+ms.openlocfilehash: b8ba5078d304c0e9d6b10e4efb868642323c901c
+ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32328078"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403578"
 ---
 # <a name="custom-device-settings-for-devices-running-windows-holographic-for-business-in-intune"></a>A Windows Holographic for Business rendszert futtató eszközökre vonatkozó egyéni eszközbeállítások az Intune-ban
 
@@ -36,8 +37,8 @@ Ha egy adott beállítást keres, ne feledje, a [Windows Holographic for Busines
   - **Beállítás neve**: Adjon meg egy egyedi nevet az OMA-URI beállítás számára, amellyel az egyszerűen azonosítható a beállítások listájában.
   - **Beállítás leírása**: Itt adhatja meg a beállítás leírását (nem kötelező).
   - **Adattípus**: Válasszon egyet a következő lehetőségek közül:
-    - **Karakterlánc**
-    - **Karakterlánc (XML)**
+    - **Sztring**
+    - **Sztring (XML)**
     - **Dátum és időpont**
     - **Egész**
     - **Lebegőpontos szám**
@@ -90,7 +91,7 @@ Az alábbi beállítások a Windows Holographic for Business rendszert futtató 
 > [!div class="mx-tableFixed"]
 > |OMA-URI|Adattípus|
 > |---|---|
-> |./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl|Karakterlánc<br/>URL – Az eszköz frissítéseket keres a WSUS-kiszolgálótól a megadott URL-címen.<br/>Nincs beállítva – Az eszköz a Microsoft Update szolgáltatásból keres frissítéseket.|
+> |./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl|Sztring<br/>URL – Az eszköz frissítéseket keres a WSUS-kiszolgálótól a megadott URL-címen.<br/>Nincs beállítva – Az eszköz a Microsoft Update szolgáltatásból keres frissítéseket.|
 
 ### <a name="approvedupdateshttpsdocsmicrosoftcomwindowsclient-managementmdmupdate-csp"></a>[ApprovedUpdates](https://docs.microsoft.com/windows/client-management/mdm/update-csp)
 
@@ -104,7 +105,7 @@ Az alábbi beállítások a Windows Holographic for Business rendszert futtató 
 > [!div class="mx-tableFixed"]
 > |OMA-URI|Adattípus|
 > |----|---|
-> |./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br/><br/>**Fontos**<br/>Az AppLocker CSP-cikk escape-karakterrel jelölt XML-példákat használ. A beállítások egyéni Intune-profilokkal való konfigurálásához hagyományos XML-t kell használnia.|Karakterlánc<br/>További információ: [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp).|
+> |./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br/><br/>**Fontos**<br/>Az AppLocker CSP-cikk escape-karakterrel jelölt XML-példákat használ. A beállítások egyéni Intune-profilokkal való konfigurálásához hagyományos XML-t kell használnia.|Sztring<br/>További információ: [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp).|
 
 ### <a name="deletionpolicyhttpsdocsmicrosoftcomwindowsclient-managementmdmaccountmanagement-csp"></a>[DeletionPolicy](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
 
