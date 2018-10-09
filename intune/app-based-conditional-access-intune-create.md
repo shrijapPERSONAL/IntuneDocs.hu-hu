@@ -2,8 +2,8 @@
 title: Alkalmazásalapú feltételes hozzáférési szabályzat beállítása az Intune-ban
 description: Útmutató az alkalmazásalapú feltételes hozzáférési szabályzatok Intune-ban való létrehozásához.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 05/17/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c505e881fe06d6f4da217533d0507731ac22a29f
-ms.sourcegitcommit: 698bd1488be3a269bb88c077eb8d99df6e552a9a
+ms.openlocfilehash: 2d6d67454409cf8a8749d28cba6ac76f591da9e3
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34285024"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231287"
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>Alkalmazásalapú feltételes hozzáférési szabályzatok beállítása az Intune-ban
 
