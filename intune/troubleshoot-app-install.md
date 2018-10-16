@@ -3,10 +3,10 @@ title: Alkalmazások telepítésével kapcsolatos problémák elhárítása
 titlesuffix: Microsoft Intune
 description: A Microsoft Intune hibaelhárítási paneljével elháríthatja az alkalmazások telepítésével kapcsolatos problémákat.
 keywords: ''
-author: ErikRe
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/29/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: b613f364-0150-401f-b9b8-2b09470b34f4
 ms.reviewer: mghadial
 ms.custom: intune-azure
-ms.openlocfilehash: 80b6828f4768ff79f86532ef0d39ff2100b0ef25
-ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
+ms.openlocfilehash: 6e25149199c9362f628fa108d20247bb6b86d895
+ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43241711"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49075829"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Alkalmazások telepítésével kapcsolatos problémák elhárítása
 
@@ -56,7 +56,7 @@ Az alábbi hibaüzenetek és leírások az Androidos és iOS-es telepítési hib
 
 ### <a name="android-errors"></a>Android hibák
 
-|    Hibaüzenet/hibakód    |    Description    |
+|    Hibaüzenet/hibakód    |    Leírás    |
 |----------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Nem sikerült telepíteni az alkalmazást. (0xC7D14FB5)    |    Ez a hibaüzenet akkor jelenik meg, ha az Intune nem tudja megállapítani az Android-alkalmazás telepítési hibájának kiváltó okát. A hiba során az Android nem adott semmilyen információt.       Ez a hiba akkor lép fel, ha az APK letöltése sikeres volt, az alkalmazás telepítése azonban sikertelen. A hibát gyakran egy hibás APK-fájl okozza, amelyet nem lehet telepíteni az eszközre. Egy lehetséges ok, ha a Google Play Protect biztonsági okokból letiltja az alkalmazás telepítését. Egy másik lehetséges ok, ha az eszköz nem támogatja az alkalmazást. Például ha az alkalmazás az API 21-es vagy újabb verzióját igényli, az eszközön pedig az API 19-es verziója van telepítve.         Az Intune ezt a hibát adja vissza a DA és a KNOX eszközökhöz is, és bár előfordulhat, hogy megjelenik egy értesítés, amelyre kattintva a felhasználó újrapróbálkozhat, ha a problémát az APK okozza, akkor a telepítés mindig sikertelen lesz. Ha az alkalmazás egy opcionálisan elérhető alkalmazás, az értesítés elvethető. Azonban ha az alkalmazás szükséges, az értesítés nem vethető el.        |
 |    Az alkalmazás telepítése megszakadt, mert a telepítő (APK) fájl törölve lett a letöltést követően, de még a telepítés előtt. (0xC7D14FBA)    |    Az APK letöltése sikeres volt, de a fájl el lett távolítva az eszközről, még mielőtt a felhasználó telepítette volna az alkalmazást. Ez akkor fordulhat elő, ha sok idő telt el a letöltés és a telepítés között. Például ha a felhasználó megszakította az eredeti telepítést, várt egy ideig, majd ezután kattintott rá az újrapróbálkozásról szóló értesítésre.         Ez a hibaüzenet csak a DA-forgatókönyveknél jelenik meg. A KNOX-forgatókönyvek csendben elvégezhetők. Megjelenítünk egy újrapróbálkozási értesítést, amelyet a felhasználó elfogadhat a megszakítás helyett. Ha az alkalmazás egy opcionálisan elérhető alkalmazás, az értesítés elvethető. Azonban ha az alkalmazás szükséges, az értesítés nem vethető el.    |
@@ -70,7 +70,7 @@ Az alábbi hibaüzenetek és leírások az Androidos és iOS-es telepítési hib
 
 ### <a name="ios-errors"></a>iOS hibák
 
-|    Hibaüzenet/hibakód    |    Description    |
+|    Hibaüzenet/hibakód    |    Leírás    |
 |:----------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |    (0x87D12906)    |    Az Apple MDM-ügynök azt adta vissza, hogy a telepítési parancs sikertelen volt.        |
 |    (0x87D1313C)    |    A hálózati kapcsolat megszakadt a frissített letöltési szolgáltatás URL-címének az eszközre való küldése közben. Pontosabban a megadott gazdanévvel rendelkező kiszolgáló nem található.    |
