@@ -15,19 +15,16 @@ ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 516e2f935225b7142c75b01967977fe97297c8e2
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 0b4af0a638d86d32b244c3a34f8039e466394736
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48232177"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49424934"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>A Jamf Pro integrálása az Intune-nal a megfelelőség érdekében
 
-|A következőkre vonatkozik: Intune az Azure Portalon |
-|--|
-|A klasszikus portálbeli Intune-ról keres dokumentációt? [Lépjen tovább ide](/intune/introduction-intune?toc=/intune-classic/toc.json).|
-| |
+A következőkre vonatkozik: Intune az Azure Portalon
 
 Ha a szervezet a [Jamf Pro](https://www.jamf.com) segítségével felügyeli a végfelhasználók Mac-alapú számítógépeit, lehetősége van a Microsoft Intune megfelelőségi szabályzataival és az Azure Active Directory-alapú feltételes hozzáféréssel biztosítani az eszközmegfelelőséget a szervezetben.
 

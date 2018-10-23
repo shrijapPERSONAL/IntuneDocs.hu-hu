@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: df7e14b485fae0a70b8f0f487229b9e31ace4077
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: d709681519f2e68d38958d6ec2082b762e22cf60
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255245"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425155"
 ---
 # <a name="manage-software-updates-in-intune"></a>Szoftverfrissítések kezelése az Intune-ban
 
@@ -34,7 +34,7 @@ A Windows Update Vállalatoknak használatával leegyszerűsítheti a frissíté
   - Windows Insider &#8208; lassú
   - A Windows Insider kiadása 
       
-  További információ az elérhető karbantartási csatornákról: [A Windows mint szoftverszolgáltatás – áttekintés](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#servicing-channels).
+  További információ az elérhető karbantartási csatornákról: [A Windows mint szoftverszolgáltatás – áttekintés](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels).
 - **Halasztó beállítások**: A frissítéseket halasztó beállítások megadásával késleltethető a frissítések telepítése az eszközcsoportokon. Ezzel a beállítással a lépésenkénti frissítési terv alapján a folyamat végig nyomon követhető.
 - **Felfüggesztés**: A frissítések telepítésének felfüggesztése, ha a frissítési terv bármely pontján probléma merülne fel.
 - **Karbantartási időszak**: Megadható egy időszak, amelyben a frissítések telepíthetők.
