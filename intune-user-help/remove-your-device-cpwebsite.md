@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0ea421c63cbb6c2228ea94bf82d795ece01f46ac
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: fd58fae2f48791e8c63b9391a825838040b1202f
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150324"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863110"
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>Eltávolíthatja az eszközét a vállalati portálról
 
@@ -30,18 +30,19 @@ Ha úgy dönt, hogy az eszköz a vállalat vagy szervezet által végzett felüg
 
 Az eszköz eltávolítása:
 
-1. A [Céges portál webhelyen](https://go.microsoft.com/fwlink/?linkid=2010980) koppintson a __menü__ gombra ![A menügomb képe, három vízszintes vonal párhuzamosan elhelyezve egymás alá.](/Intune/whats-new/media/CP_hamburger_menu.png), majd válassza az __Saját eszközök__ menüpontot.
+1. A [Céges portál webhelyen](https://portal.manage.microsoft.com) válassza a __Menü__ gomb > __Eszközök__ lehetőséget.  
 
-   ![Képernyőkép a Céges portál webhelyéről, amelyen bal oldalt egy kibontott menü látható Kezdőlap, Minden alkalmazás, Saját eszközök, Segélyszolgálat és Kijelentkezés gombokkal.](/media/iwp-expanded-sidebar.png)
+2. Válassza ki az eltávolítani kívánt eszközt.  
 
-2. A __Saját eszközök__ oldalon válassza ki az eltávolítani kívánt eszköz nevét.
+    ![Képernyőkép az Eszközök oldalról, amelyen két csempén azonosítatlan, általános nevű eszközök láthatók. Közvetlenül az eszközök alatt egy szürke szalagcím helyezkedik el, amely arra kéri a felhasználót, hogy azonosítsa a használt eszközt, vagy adjon hozzá egy újat.](./media/rename-reset-device-step2-1808.png) 
 
-    ![Képernyőkép a Saját eszköz lapról, amelyen különböző azonosítatlan eszközök láthatók a listán nem szereplő eszközök regisztrálását vagy az azonosítatlan eszközök azonosítását felajánló szalagcím felett.](./media/macOS_enroll_002_tap_here_banner.png)
+3. Válassza az **Eltávolítás** lehetőséget. Ha az Eltávolítás lehetőség nem jelenik meg az oldal tetején, válassza az **Egyéb (…)** > **Átnevezés** lehetőséget.  
 
-3. Az adott eszköz lehetőségei egy előreugró ablakban nyílnak meg. Koppintson az **Eltávolítás** gombra.
+   ![A kiválasztott eszköz adatai a Céges portál webhelyén, felül az Átnevezés, az Eltávolítás, az Eszköz alaphelyzetbe állítása, a Jelszó alaphelyzetbe állítása és a Távoli zárolás lehetőségekre mutató hivatkozásokkal. ](./media/rename-reset-device-1808.png)  
+  
 
-   ![A kiválasztott eszközzel kapcsolatos összes lehetőség a Céges portál webhelyén, többek között az Átnevezés, az Eltávolítás, az Eszköz alaphelyzetbe állítása, a Jelszó alaphelyzetbe állítása és a Távoli zárolás lehetőségei. ](./media/iwp-screen-with-all-options.png)
+    ![Az Egyéb ikon kinagyított képe egy piros nyíllal kiemelve.](./media/rename-reset-device-step3-more-1808.png)   
 
-4. Olvassa el a figyelmeztető üzenetet, és koppintson az **Eltávolítás** lehetőségre az eszköz Vállalati portálról való eltávolításához.
+4. Egy figyelmeztetés jelenik meg, amely tájékoztatja, hogy az eszköz eltávolítására készül. Válassza az **Eltávolítás** lehetőséget a megerősítéshez.  
 
 További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

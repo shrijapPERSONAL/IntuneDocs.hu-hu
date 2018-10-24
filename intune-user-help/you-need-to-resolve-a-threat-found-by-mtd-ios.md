@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: f209fa315d5d5c36e661a931c32c70ba5ba93d81
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 40d4b2d316320f23b29f1a7a67c529a158a0f7d6
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150050"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48827836"
 ---
 # <a name="resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>A Mobile Threat Defense alkalmazás által talált fenyegetések elhárítása
 
@@ -34,7 +34,7 @@ A fenyegetések megoldatlan nem megfelelőségi problémákként jelennek meg a 
 * Vállalati fájlok szinkronizálása a OneDrive-val
 * Hozzáférés a vállalati alkalmazásokhoz
 
-Az alábbiakban a cég által beállítható, iOS-eszközökhöz készült Mobile Threat Defense-szolgáltatások láthatók. Az alkalmazás nevére kattintva megtekintheti az alkalmazás viselkedésére vonatkozó adatokat. 
+Az alábbiakban a cég vagy intézmény által beállítható, iOS-hez készült Mobile Threat Defense-szolgáltatások láthatók. Az alkalmazás nevére kattintva megtekintheti az alkalmazás viselkedésére vonatkozó adatokat. 
 
 
 * [Lookout for Work](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios.md)
@@ -42,5 +42,5 @@ Az alábbiakban a cég által beállítható, iOS-eszközökhöz készült Mobil
 * [SandBlast Mobile Protect](you-need-to-resolve-a-threat-found-by-checkpoint-ios.md)
 * [Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-ios.md)
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).
+További segítségre van szüksége? Forduljon a cég informatikai támogatási szolgálatához. A kapcsolatfelvételi adatait megtalálja a [Munkahelyi portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).  
 

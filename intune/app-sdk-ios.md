@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/22/2018
+ms.date: 10/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: daf4063f7713dafa938398cdc95344ffe25ae8f0
-ms.sourcegitcommit: a474a6496209ff3b60e014a91526f3d163a45438
+ms.openlocfilehash: b707fcae4af332b13d10e343a84ace801c88c2fd
+ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44031320"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48866422"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>A Microsoft Intune App SDK iOS rendszeren – fejlesztői útmutató
 
@@ -32,7 +32,7 @@ Az iOS-hez készült Microsoft Intune App SDK lehetővé teszi, hogy Intune alka
 
 * Szüksége lesz egy OS X 10.8.5 vagy újabb verziót futtató Mac OS-számítógépre, amelyen telepítve van az Xcode 9-es vagy újabb verziója.
 
-* Az alkalmazásnak az iOS 9.3.5-ös vagy újabb verzióival kell működnie.
+* Az alkalmazásnak az iOS 10-es vagy újabb verzióival kell működnie.
 
 * Olvassa el [az iOS-hez készült Intune App SDK licencfeltételeit](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf). Nyomtassa ki és őrizze meg a szerződés egy példányát. Az iOS-hez készült Intune App SDK letöltésével és használatával elfogadja licencfeltételeket.  Ha nem fogadja el, ne használja a szoftvert.
 
@@ -40,13 +40,13 @@ Az iOS-hez készült Microsoft Intune App SDK lehetővé teszi, hogy Intune alka
 
 ## <a name="whats-in-the-sdk"></a>Az SDK tartalma
 
-Az iOS-hoz készült Intune App SDK magában foglalja a statikus könyvtárat, az erőforrásfájlokat, az API-fejléceket, a hibakeresési beállításokat tartalmazó plist-fájlt és a konfiguráló eszközt. A mobilalkalmazások tartalmazhatják az erőforrásfájlokat, és általában statikus módon csatolhatók a könyvtárakhoz a szabályzatok érvénybe léptetéséhez. A speciális Intune APP-funkciók használata API-k segítségével kényszeríthető ki.
+Az iOS-hoz készült Intune App SDK magában foglalja a statikus könyvtárat, az erőforrásfájlokat, az API-fejléceket, a hibakeresési beállításokat tartalmazó plist-fájlt és a konfiguráló eszközt. Az ügyfélalkalmazások tartalmazhatják az erőforrásfájlokat, és általában statikus módon csatolhatók a könyvtárakhoz a szabályzatok érvénybe léptetéséhez. A speciális Intune APP-funkciók használata API-k segítségével kényszeríthető ki.
 
 Ez az útmutató az iOS-hez készült Intune App SDK következő összetevőit ismerteti:
 
-* **libIntuneMAM.a**: az Intune App SDK statikus erőforrástára. Ha az alkalmazás nem használ bővítményeket, Önnek ezt az erőforrástárat kell csatolnia a projekthez, hogy az alkalmazás felügyelhető legyen az Intune mobilalkalmazás-kezeléssel.
+* **libIntuneMAM.a**: az Intune App SDK statikus erőforrástára. Ha az alkalmazás nem használ bővítményeket, akkor csatolja ezt a kódtárat a projekthez, hogy az alkalmazás felügyelhető legyen az Intune ügyfélalkalmazás-kezeléssel.
 
-* **IntuneMAM.framework**: Az Intune App SDK keretrendszere. Ezt a keretrendszert kell csatolnia a projekthez, hogy az alkalmazás felügyelhető legyen az Intune mobilalkalmazás-kezelés segítségével. Akkor célszerű a keretrendszert használni a statikus kódtár helyett, ha az alkalmazás bővítményeket használ, mert így a projekt nem készít több másolatot a statikus kódtárból.
+* **IntuneMAM.framework**: Az Intune App SDK keretrendszere. Csatolja ezt a keretrendszert a projekthez, hogy az alkalmazás felügyelhető legyen az Intune ügyfélalkalmazás-kezelés segítségével. Akkor használja ezt a keretrendszert a statikus erőforrástár helyett, ha az alkalmazás bővítményeket használ. Ez esetben a projekt nem hoz létre több példányt a statikus erőforrástárból.
 
 * **IntuneMAMResources.bundle**: az SDK erőforrásait tartalmazó csomag.
 
@@ -207,7 +207,7 @@ Az alkalmazások felülbírálhatják ezeket az Azure AD-beállításokat futtat
 
 ### <a name="if-your-app-does-not-use-adal"></a>Ha az alkalmazás nem használ ADAL-t
 
-Ha az alkalmazás nem az ADAL-t használja, az Intune App SDK szolgáltatja az ADAL-paraméterek alapértelmezett értékeit, és kezeli az Azure AD-val való hitelesítést. A fent ismertetett ADAL-beállítások egyikéhez sem szükséges értéket megadnia.
+Ahogy korábban említettük, az Intune App SDK az [Azure Active Directory Authentication Libraryt](https://github.com/AzureAD/azure-activedirectory-library-for-objc) hitelesítésre és a feltételes indítási forgatókönyvek készítésére használja. Az ADAL-t használja ezenkívül arra, hogy regisztrálja a felhasználó identitását a MAM-szolgáltatásnál az eszközök regisztrációja nélkül történő felügyelet esetére. Ha **az alkalmazás nem ADAL-t használ a saját hitelesítési mechanizmusához**, akkor az Intune App SDK alapértelmezett értékeket ad meg az ADAL-paraméterekhez, és kezeli az Azure AD-vel való hitelesítést. A fent ismertetett ADAL-beállítások egyikéhez sem szükséges értéket megadnia. Az alkalmazás által használt összes hitelesítési mechanizmus (ha van ilyen) az ADAL-utasítások felett jelenik meg. 
 
 ## <a name="configure-settings-for-the-intune-app-sdk"></a>Az Intune App SDK-beállítások konfigurálása
 

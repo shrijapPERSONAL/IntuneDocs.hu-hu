@@ -1,11 +1,11 @@
 ---
-title: iOS vagy macOS rendszerű eszköz használata az Intune-nal | Microsoft Docs
-description: Hivatkozáslista az Intune-ban regisztrált iOS- és macOS-eszközökön elvégezhető feladatokhoz
+title: macOS-eszköz használata az Intune-nal | Microsoft Docs
+description: A macOS-mobileszköz hibaelhárításával vagy felügyeletével kapcsolatos hivatkozások keresése a Céges portál alkalmazásból
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 4/20/2018
+ms.date: 09/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,20 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 02ccde8299e4ad5d6aacb2abd120c094f752c5e6
-ms.sourcegitcommit: 9536300a6211bac4bdc733593a40c1ae47611de3
+ms.openlocfilehash: 887b9355bc68edca314a49743b8d11728ca2361a
+ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2018
-ms.locfileid: "31771856"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168913"
 ---
-# <a name="using-your-macos-device-with-intune"></a>macOS-eszköz használata az Intune-nal
+# <a name="using-your-macos-device-with-intune-company-portal"></a>macOS-eszköz használata az Intune Céges portállal
 
-Számos módon könnyítheti meg munkáját az Intune segítségével. Az alábbi lista azon leggyakoribb teendőket tartalmazza, amelyek elvégzésére munkahelye megkérheti.
+A cikk a macOS-hez készült Céges portálra vonatkozó feladatokat és információkat sorolja fel. Ezek ismerete segítheti a macOS-eszköz hibaelhárítását és felügyeletét. Kattintson a hivatkozások bármelyikére, ha további részleteket, lépéseket és képernyőképeket kíván megtekinteni. 
 
 ## <a name="supported-versions"></a>Támogatott verziók
 
-Az Intune jelenleg az OS X El Capitan 10.11 és újabb verzióit támogatja macOS-eszközökön.
+A macOS-hez készült Céges portál jelenleg az OS X El Capitan 10.11-es vagy újabb verzióit támogatja a macOS-eszközök esetében.
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Regisztrálás az Intune-ban és a Céges portál telepítése
 

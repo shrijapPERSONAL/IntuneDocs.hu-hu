@@ -3,10 +3,10 @@ title: Feltételes hozzáférés áttelepítése az Azure Portalra
 titlesuffix: Microsoft Intune
 description: Az Intune klasszikus portálján korábban létrehozott feltételes hozzáférési szabályzatokat újra hozzárendelheti az Azure Portalhoz.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 09/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d295ade29522a5593993b5541311eadd9e4c9528
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 00c657700cd8c27e4758b9cc94292ba83b2db3cd
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31027468"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231712"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Feltételes hozzáférési szabályzatok ismételt társítása az Intune klasszikus portáljáról az Azure Portalra való áttéréskor
 
@@ -179,6 +179,9 @@ Ha az Exchange Online szabályzat részeként az Exchange Active Sync szolgálta
 12. Az **Új** feltételes hozzáférési szabályzat panelen kapcsolja be a **Szabályzat engedélyezése** kapcsolót, majd kattintson a **Létrehozás** gombra.
 
     ![A kép a feltételes hozzáférési szabályzatok engedélyezésének kezelőfelületét hasonlítja össze az Intune portálján és az Azure Portalon](./media/reassign-ca-17.png)
+
+> [!NOTE]
+> Ha konfigurálja az **Eszközplatformokat**, a szabályzat mentése sikertelen lesz, és a „Szabályzat konfigurálása nem támogatott” üzenetet kapja. Az Exchange ActiveSync nem tudja azonosítani a csatlakozó eszköz által használt platformot. Az egyes eszközplatformok konfigurálása ezért nem támogatott az Exchange ActiveSync-eszközök szabályzatainak létrehozásakor.
 
 ## <a name="disable-conditional-access-policies-in-the-intune-classic-portal"></a>Feltételes hozzáférési szabályzatok letiltása az Intune klasszikus portálján
 

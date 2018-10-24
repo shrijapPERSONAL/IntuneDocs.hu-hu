@@ -2,10 +2,10 @@
 title: Androidos munkahelyi profil megfelelőségi szabályzatának létrehozása a Microsoft Intune-ban – Azure | Microsoft Docs
 description: Androidos munkahelyi profilos eszközök Microsoft Intune eszközmegfelelőségi szabályzatának létrehozása vagy konfigurálása. Feltört eszközök választható engedélyezése, az elfogadható fenyegetettségi szint megadása, a Google Play Áruház ellenőrzése, minimális és maximális operációsrendszer-verzió megadása, jelszókövetelmények megválasztása és alkalmazások közvetlen telepítésének engedélyezése.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dcd5dcc05470d8052e49354fe5d6516386ea4214
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 0c7f1c7c47f2fa4c950cbffeaf8fe274fe239a63
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905087"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828159"
 ---
 # <a name="add-a-device-compliance-policy-for-android-work-profile-devices-in-intune"></a>Androidos munkahelyi profilos eszközök eszközmegfelelőségi szabályzatának hozzáadása az Intune-ban
 
@@ -113,7 +113,11 @@ Ha cég használ androidos munkahelyi profilokat, a regisztrált eszközökre vo
 - **Az ismeretlen forrásból származó alkalmazások tiltása**: Ezt a beállítást nem szükséges konfigurálni, mivel az androidos munkahelyi profilokkal rendelkező eszközök mindig korlátozzák az ismeretlen forrásokból való telepítést.
 - **Céges portál alkalmazás futtatókörnyezetének integritása**: Ellenőrzi, hogy a Céges portál alkalmazás alapértelmezett futtatókörnyezete van-e telepítve, megfelelően alá van-e írva, nincs-e hibakereső módban, és ismert forrásból telepítették-e.
 - **Az USB-hibakeresés letiltása az eszközön**: Ezt a beállítást nem szükséges konfigurálni, mivel az androidos munkahelyi profilokkal rendelkező eszközökön már le van tiltva az USB-hibakeresés.
-- **Minimális biztonsági javítási szint**: Megadható a legrégebbi biztonsági javítás, amellyel az eszköz rendelkezhet. Az ennél régebbi javítási szintű eszközök nem megfelelőek. A dátumot `YYYY-MM-DD` formátumban kell megadni.
+- **Minimális biztonsági javítási szint**: Megadható a legrégebbi biztonsági javítás, amellyel az eszköz rendelkezhet. Az ennél régebbi javítási szintű eszközök nem megfelelőek. Az adatokat a következő formátumban kell megadni: *ÉÉÉÉ-HH-NN*.
+- **Korlátozott alkalmazások**: Az alkalmazásokat úgy korlátozhatja, hogy a kötegazonosítójukat hozzáadja a szabályzathoz. Így ha az alkalmazás telepítve van az eszközön, az eszköz nem megfelelőként lesz megjelölve. 
+   - **Alkalmazásnév**: Adjon meg egy felhasználóbarát nevet, mely alapján a kötegazonosító könnyebben azonosítható. 
+   - **Alkalmazás kötegazonosítója**: Adja meg az alkalmazás szolgáltatójának egyedi kötegazonosítóját. Android esetén az alkalmazás kötegazonosítója az alkalmazás áruházi URL-címéből származik. Ha például az áruházban levő alkalmazás URL-címe *https://play.google.com/store/apps/details?id=com.Slack*, az alkalmazás kötegazonosítója = *com.Slack*.
+
 
 ## <a name="assign-user-groups"></a>Felhasználói csoportok hozzárendelése
 

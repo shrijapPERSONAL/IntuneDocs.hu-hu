@@ -6,13 +6,6 @@ items:
     href: what-is-intune.md
   - name: Mi az az Intune for Education?
     href: introduction-intune-education.md
-  - name: Intune-funkciók az Azure-ban
-    href: ui-changes.md
-    items:
-    - name: Csoportok módosításai
-      href: groups-get-started.md
-    - name: Örökölt Intune PC-ügyfél
-      href: intune-legacy-pc-client.md
   - name: Regisztráljon az ingyenes próbaverzióhoz
     href: free-trial-sign-up.md
   - name: Újdonságok
@@ -20,10 +13,6 @@ items:
     items:
     - name: Az alkalmazásfelhasználói felület újdonságai
       href: whats-new-app-ui.md
-    - name: Újdonságok – Archívum (Azure Portal)
-      href: whats-new-archive.md
-    - name: Újdonságok – Archívum (klasszikus portál)
-      href: whats-new-archive-classic.md
   - name: A szolgáltatás leírása
     href: microsoft-intune-service-description.md
   - name: Ismert problémák
@@ -34,18 +23,20 @@ items:
 - name: Gyorsútmutatók
   href: get-started-evaluation.md
   items:
-  - name: Navigálás az Azure Portalon
-    href: get-started-azure.md
+  - name: Az Intune ingyenes kipróbálása
+    href: free-trial-sign-up.md
   - name: Felhasználó létrehozása
-    href: get-started-users.md
+    href: quickstart-create-user.md
   - name: Csoport létrehozása
-    href: get-started-groups.md
-  - name: Szabályzatok hozzárendelése
-    href: get-started-policies.md
-  - name: Eszközök regisztrálása
-    href: get-started-enroll.md
-  - name: Alkalmazások hozzárendelése
-    href: get-started-apps.md
+    href: quickstart-create-group.md
+  - name: Házirend létrehozása
+    href: quickstart-create-policy.md
+  - name: Automatikus regisztráció beállítása
+    href: quickstart-setup-auto-enrollment.md
+  - name: Egyéni szerepkör létrehozása és hozzárendelése
+    href: quickstart-create-custom-role.md
+  - name: E-mail-eszközprofil létrehozása
+    href: quickstart-email-profile.md
 - name: Forgatókönyvek végrehajtási útmutatói
   items:
   - name: Az Exchange Online védelme
@@ -60,6 +51,10 @@ items:
     href: byod-technology-decisions.md
 - name: Fogalmak
   items:
+  - name: Mi az eszközkezelés?
+    href: what-is-device-management.md
+  - name: Navigálás az Azure Portalon
+    href: get-started-azure.md
   - name: Magas szintű architektúra
     href: high-level-architecture.md
   - name: Eszközök és alkalmazások életciklusa
@@ -169,6 +164,8 @@ items:
         href: device-group-mapping.md
     - name: Windows-regisztráció beállítása
       items:
+      - name: Regisztrációs metódus képességei
+        href: enrollment-method-capab.md
       - name: Windows-regisztráció
         href: windows-enroll.md
       - name: Csoportos regisztráció
@@ -273,6 +270,8 @@ items:
           href: apps-add-office365-macos.md
       - name: Alkalmazás létrehozása (üzletági)
         items:
+        - name: Win32-alkalmazások kezelése
+          href: apps-win32-app-management.md
         - name: Androidos üzletági alkalmazások
           href: lob-apps-android.md
         - name: iOS-es üzletági alkalmazások
@@ -322,6 +321,8 @@ items:
         href: company-portal-app.md
       - name: A Managed Browser konfigurálása
         href: app-configuration-managed-browser.md
+      - name: Az Outlook konfigurálása
+        href: app-configuration-policies-outlook.md
     - name: Alkalmazások védelme
       items:
       - name: Alkalmazások szelektív törlése
@@ -377,6 +378,8 @@ items:
       items:
       - name: Android
         href: device-restrictions-android.md
+      - name: Vállalati Android
+        href: device-restrictions-android-for-work.md
       - name: iOS
         href: device-restrictions-ios.md
       - name: macOS
@@ -391,8 +394,6 @@ items:
         href: device-restrictions-windows-10-teams.md
       - name: Windows Holographic for Business
         href: device-restrictions-windows-holographic.md
-      - name: Androidos munkahelyi profil
-        href: device-restrictions-android-for-work.md
     - name: Az Endpoint Protection konfigurálása
       href: endpoint-protection-configure.md
       items:
@@ -491,7 +492,7 @@ items:
     items:
     - name: Android-szabályzat létrehozása
       href: compliance-policy-create-android.md
-    - name: Szabályzatok létrehozása Androidos munkahelyi profilhoz
+    - name: Android Enterprise-profilszabályzat létrehozása
       href: compliance-policy-create-android-for-work.md
     - name: Szabályzat létrehozása a Google Play Protect-támogatáshoz
       href: compliance-policy-create-google-play-protect.md
@@ -703,7 +704,7 @@ items:
         href: custom-settings-windows-10.md
       - name: Windows Holographic for Business
         href: custom-settings-windows-holographic.md
-      - name: Androidos munkahelyi profil
+      - name: Vállalati Android
         href: custom-settings-android-for-work.md
 - name: Fejlesztői útmutatás
   items:
@@ -780,6 +781,8 @@ items:
       href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
 - name: Erőforrások
   items:
+  - name: A Microsoft Intune-dokumentáció útmutatója
+    href: intune-documentation.md
   - name: Hibaelhárítás
     items:
     - name: Segítség a felhasználóknak a problémák elhárításában
@@ -804,11 +807,25 @@ items:
       href: troubleshoot-conditional-access.md
     - name: Az Exchange-összekötő hibaelhárítása
       href: troubleshoot-exchange-connector.md
+  - name: Archívum
+    items:
+    - name: Újdonságok archívuma
+      items:
+      - name: Újdonságok – Archívum (Azure Portal)
+        href: whats-new-archive.md
+      - name: Újdonságok – Archívum (klasszikus portál)
+        href: whats-new-archive-classic.md
+    - name: Klasszikus Intune-funkciók az Azure-ban
+      href: ui-changes.md
+    - name: Klasszikus Intune-csoportok
+      href: groups-get-started.md
+    - name: Örökölt Intune PC-ügyfél
+      href: intune-legacy-pc-client.md
   - name: Szószedet
     href: intune-glossary.md
-ms.openlocfilehash: 8926b2cb409f59bab9b4af8398dac146abeec3d2
-ms.sourcegitcommit: 443b4cb3390da47bf1e497b1f0c0137a5ddda7bd
+ms.openlocfilehash: a2820903d6a3609df50290af18843200ef076158
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43821116"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828057"

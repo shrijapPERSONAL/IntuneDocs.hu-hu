@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a658182800f480f27097e078f28adc95c35aa3ea
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: a01bbf8e65c72b303d1474a92b93796051bfc02e
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313178"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187801"
 ---
 # <a name="see-device-details-in-intune"></a>Eszközadatok megtekintése az Intune-ban
 
@@ -63,44 +63,38 @@ Az Intune csak a vállalat tulajdonában lévő eszközökön található alkalm
 
 ## <a name="hardware-device-details"></a>Hardvereszköz részletes adatai
 
-### <a name="windows-and-ios-device-details"></a>Windows és iOS rendszerű eszköz részletes adatai:
-|Részletek|Description|  
-|--------------|----------------------|  
-|Név|Az eszköz neve.|
-|Felügyeleti név|A csak a konzolon használt eszköznév. Ennek a névnek a módosítása nem változtatja meg a nevet az eszközön.|
-|UDID|Az eszköz egyedi eszközazonosítója.|
-|Intune-eszközazonosító|Az eszközt egyedileg azonosító GUID.|
-|Sorozatszám|Az eszköz gyártótól származó sorozatszáma.|
-|Megosztott eszköz|Ha **Igen**, akkor az eszköz több felhasználó között van megosztva.|
-|Felhasználó által jóváhagyott regisztráció|Ha **Igen**, akkor az eszközön felhasználó által jóváhagyott regisztráció van érvényben. Ezáltal a rendszergazdák felügyelni tudják az eszköz bizonyos biztonsági beállításait.|
-|Operációs rendszer|Az eszközön futó operációs rendszer.|
-|Operációs rendszer verziója|Az eszközön futó operációs rendszer verziója.|
-|Operációs rendszer nyelve|Az eszközön futó operációs rendszerhez beállított nyelv.|
-|Teljes tárterület|Az eszközön lévő teljes tárterület (gigabájtban).|
-|Szabad tárterület|Az eszközön lévő felhasználatlan tárterület (gigabájtban).|
-
-
-### <a name="windows-ios-and-macos-device-details"></a>Windows, iOS és macOS rendszerű eszköz részletei
-|Részletek|Description|  
-|--------------|----------------------|  
-|IMEI|Az eszköz Nemzetközi mobilkészülék-azonosító (IMEI) száma.|
-|MEID|Az eszköz mobilkészülék-azonosító száma.|
-|Gyártó|Az eszköz gyártója.|
-|Modell|Az eszköz típusa.|
-|Telefonszám|Az eszközhöz rendelt telefonszám.|
-|Előfizetés-szolgáltató|Az eszköz vezeték nélküli szolgáltatója.|
-|Mobiltechnológia|Az eszköz által használt rádiórendszer.|
-|Wi-Fi MAC|Az eszköz MAC-címe.|
-|ICCID|Az integrált áramköri kártya (ICC) azonosítója, amely a SIM-kártya egyedi azonosítószáma.|
-|Regisztrálás dátuma|Az eszköz Intune-ban történt regisztrálásának dátuma és időpontja.|
-|Utolsó kapcsolat|Az eszköz Intune-hoz való utolsó kapcsolódásának dátuma és időpontja.|
-|Kód az aktiválási zár megkerüléséhez|Az aktiválási zár megkerüléséhez használható kód.|
-|Az Azure AD-ban regisztrálva|Ha **Igen**, akkor az eszköz regisztrálva van az Azure Active Directoryban.|
-|Megfelelőség|Az eszköz megfelelőségi állapota.|
-|EAS aktiválva|Ha **Igen**, akkor az eszköz szinkronizálva van egy Exchange-postafiókkal.|
-|EAS-aktiválási azonosító|Az eszköz Exchange ActiveSync-azonosítója.|
-|Felügyelt|Ha **Igen**, akkor a rendszergazdák fokozott felügyelettel rendelkeznek az eszköz felett.|
-|Titkosítva|Ha **Igen**, akkor az eszközön tárolt adatok titkosítva vannak.|
+|Részletek|Leírás|Platform| 
+|--------------|----------------------|----|  
+|Név|Az eszköz neve.|Windows, iOS|
+|Felügyeleti név|A csak a konzolon használt eszköznév. Ennek a névnek a módosítása nem változtatja meg a nevet az eszközön.|Windows, iOS|
+|UDID|Az eszköz egyedi eszközazonosítója.|Windows, iOS|
+|Intune-eszközazonosító|Az eszközt egyedileg azonosító GUID.|Windows, iOS|
+|Sorozatszám|Az eszköz gyártótól származó sorozatszáma.|Windows, iOS|
+|Megosztott eszköz|Ha **Igen**, akkor az eszköz több felhasználó között van megosztva.|Windows, iOS|
+|Felhasználó által jóváhagyott regisztráció|Ha **Igen**, akkor az eszközön felhasználó által jóváhagyott regisztráció van érvényben. Ezáltal a rendszergazdák felügyelni tudják az eszköz bizonyos biztonsági beállításait.|Windows, iOS|
+|Operációs rendszer|Az eszközön futó operációs rendszer.|Windows, iOS|
+|Operációs rendszer verziója|Az eszközön futó operációs rendszer verziója.|Windows, iOS|
+|Operációs rendszer nyelve|Az eszközön futó operációs rendszerhez beállított nyelv.|Windows, iOS|
+|Teljes tárterület|Az eszközön lévő teljes tárterület (gigabájtban).|Windows, iOS|
+|Szabad tárterület|Az eszközön lévő felhasználatlan tárterület (gigabájtban).|Windows, iOS|
+|IMEI|Az eszköz Nemzetközi mobilkészülék-azonosító (IMEI) száma.|Windows, iOS, Android|
+|MEID|Az eszköz mobilkészülék-azonosító száma.|Windows, iOS, Android|
+|Gyártó|Az eszköz gyártója.|Windows, iOS, Android|
+|Modell|Az eszköz típusa.|Windows, iOS, Android|
+|Telefonszám|Az eszközhöz rendelt telefonszám.|Windows, iOS, Android|
+|Előfizetés-szolgáltató|Az eszköz vezeték nélküli szolgáltatója.|Windows, iOS, Android|
+|Mobiltechnológia|Az eszköz által használt rádiórendszer.|Windows, iOS, Android|
+|Wi-Fi MAC|Az eszköz MAC-címe.|Windows, iOS, Android|
+|ICCID|Az integrált áramköri kártya (ICC) azonosítója, amely a SIM-kártya egyedi azonosítószáma.|Windows, iOS, Android|
+|Regisztrálás dátuma|Az eszköz Intune-ban történt regisztrálásának dátuma és időpontja.|Windows, iOS, Android|
+|Utolsó kapcsolat|Az eszköz Intune-hoz való utolsó kapcsolódásának dátuma és időpontja.|Windows, iOS, Android|
+|Kód az aktiválási zár megkerüléséhez|Az aktiválási zár megkerüléséhez használható kód.|Windows, iOS, Android|
+|Az Azure AD-ban regisztrálva|Ha **Igen**, akkor az eszköz regisztrálva van az Azure Active Directoryban.|Windows, iOS, Android|
+|Megfelelőség|Az eszköz megfelelőségi állapota.|Windows, iOS, Android|
+|EAS aktiválva|Ha **Igen**, akkor az eszköz szinkronizálva van egy Exchange-postafiókkal.|Windows, iOS, Android|
+|EAS-aktiválási azonosító|Az eszköz Exchange ActiveSync-azonosítója.|Windows, iOS, Android|
+|Felügyelt|Ha **Igen**, akkor a rendszergazdák fokozott felügyelettel rendelkeznek az eszköz felett.|Windows, iOS, Android|
+|Titkosítva|Ha **Igen**, akkor az eszközön tárolt adatok titkosítva vannak.|Windows, iOS, Android|
 
 
 

@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/5/2018
+ms.date: 9/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cef98527ee2c281547f8046f3c6f08275d8f0807
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 0b2a31a90dc0d88386a829756116edebd28990f9
+ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329383"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45602180"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Android-eszközök kioszkbeállításai az Intune-ban
 
@@ -27,7 +27,7 @@ Az eszközöket egy- vagy többalkalmazásos kioszkmódra is konfigurálhatja az
 
 Ha egy kioszkeszköz korlátozó profiljának beállítása **Kioszkmód** = **Egyalkalmazásos kioszk**, akkor a felhasználók csak egy alkalmazáshoz férnek hozzá. Egy így konfigurált eszköz indulásakor elindul a megadott alkalmazás. A felhasználók nem nyithatnak meg új alkalmazásokat, és nem módosíthatják a futó alkalmazást.
 
-1. Gondoskodjon arról, hogy a kioszkeszközön használni kívánt alkalmazás [telepítve legyen az eszközön](apps-deploy.md), és hogy az alkalmazás hozzá legyen rendelve a kioszkeszközökhöz létrehozott eszközcsoporthoz.
+1. Gondoskodjon arról, hogy a kioszkeszközön használni kívánt alkalmazás [telepítve legyen az eszközön](apps-deploy.md), és hogy az alkalmazás hozzá legyen rendelve a kioszkeszközei Ön által létrehozott eszközcsoportjához.
 2. Nyissa meg az [Intune portált](https://portal.azure.com), és válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
 3. A **Profil létrehozása** panelen töltse ki a következő mezőket:
      - **Név**
@@ -51,7 +51,7 @@ Androidos kioszkeszköz több alkalmazásra való beállításához kövesse az 
 2. [A kioszkmódban használható alkalmazások hozzáadása és hozzárendelése](#add-and-assign-apps-that-can-be-used-in-kiosk-mode)
 3. (Nem kötelező) [A kioszkmódban használható webes hivatkozások hozzáadása](#add-web-links-that-can-be-used-in-kiosk-mode)
 
-### <a name="import-and-deply-the-managed-home-screen-app"></a>A Managed Home Screen alkalmazás importálása és telepítése
+### <a name="import-and-deploy-the-managed-home-screen-app"></a>A Managed Home Screen alkalmazás importálása és üzembe helyezése
 
 1. Nyissa meg a [Google Play Managed Home Screen oldalát](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) és jelentkezzen be a többi felügyelt Google Play-alkalmazáshoz használt fiókkal.
 2. Válassza a **Jóváhagyás** lehetőséget.
@@ -59,6 +59,9 @@ Androidos kioszkeszköz több alkalmazásra való beállításához kövesse az 
 4. Válassza az **Alkalmazások** > **Managed Home Screen** > **Hozzárendelések** > **Csoport hozzáadása** lehetőséget.
 5. A **Hozzárendelés típusa** alatt válassza a **Kötelező** lehetőséget.
 6. Válassza a **Belefoglalt csoportok** > **Belefoglalandó csoportok kijelölése** lehetőséget, jelölje ki a kioszkeszközeihez létrehozott eszközcsoportot, majd válassza a **Kiválasztás** > **OK** > **OK** > **Mentés** lehetőséget.
+
+> [!NOTE]
+> Amikor hozzáadja a Managed Home Screen alkalmazást a többalkalmazásos kioszkprofilhoz, a rendszer hozzáad egy ikont. Az ikon kiválasztásakor azonban semmi sem történik. Ezért nem kell hozzáadnia a Managed Home Screen alkalmazást a többalkalmazásos kioszkprofilhoz.
 
 ### <a name="add-and-assign-apps-that-can-be-used-in-kiosk-mode"></a>A kioszkmódban használható alkalmazások hozzáadása és hozzárendelése
 
@@ -76,7 +79,7 @@ A kioszkmódban elérhetővé tenni kívánt alkalmazások mindegyikénél hajts
 3. Válassza a **Konfigurálás** lehetőséget, és adja meg a szükséges információkat. Logót nem kell hozzáadnia, mert az automatikusan ki lesz nyerve a webhely favicon.ico fájljából.
 4. Válassza az **OK** > **Hozzáadás** lehetőséget.
 
-Győződjön meg róla, hogy üzembe helyezett egy böngészőalkalmazást a kioszkmódban lévő eszközökön a [Mobile Apps](apps-add.md) használatával.
+Győződjön meg arról, hogy üzembe helyezett egy webalkalmazást a kioszkeszközökön. További információkért tekintse meg a [Webalkalmazások hozzáadása a Microsoft Intune-hoz](web-app.md) című szakaszt.
 
 ### <a name="create-a-multi-app-kiosk-profile"></a>Többalkalmazásos kioszkprofil létrehozása
 

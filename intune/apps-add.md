@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/14/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cf6e7098462931000ce4cd5546390d27d68677f1
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 5bcaabd66a2a9a24c3ee3f7c49cf7689d1f60eed
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330160"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863144"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Alkalmazások hozzáadása a Microsoft Intune-hoz
 
@@ -61,6 +61,7 @@ A következő táblázatban megtekintheti a konkrét alkalmazástípusokat és a
 | Beépített iOS-alkalmazás  | Beépített alkalmazás | Válassza a **Beépített alkalmazás** lehetőséget az **alkalmazás típusa** területen, majd jelöljön ki egy beépített alkalmazást az elérhető alkalmazások listáján.  |
 | Beépített Android-alkalmazás  | Beépített alkalmazás | Válassza a **Beépített alkalmazás** lehetőséget az **alkalmazás típusa** területen, majd jelöljön ki egy beépített alkalmazást az elérhető alkalmazások listáján.  |
 | Webalkalmazások  | Web app  | Válassza a **Webes hivatkozás** lehetőséget az **alkalmazás típusa** területen, majd adjon meg egy érvényes, a webalkalmazásra mutató URL-címet.  |
+| Windows-alkalmazás (Win32)  | Üzletági (LOB) alkalmazás  | Válassza a **Windows-alkalmazás (Win32)** lehetőséget az **alkalmazás típusa** területen, válassza az **Alkalmazáscsomag-fájl** elemet, majd válasszon egy **.intunewin** kiterjesztésű telepítőfájlt.  |
 
 Az alkalmazásokat az **Ügyfélalkalmazások** > **Alkalmazások** > **Hozzáadás** lehetőséggel adhatja hozzá a Microsoft Intune-hoz. Megjelenik az **Alkalmazás hozzáadása** panel, ahol kiválaszthatja az **alkalmazás típusát**. 
 
@@ -90,7 +91,7 @@ A munkaerő számára szükséges alkalmazások meghatározása során vegye fig
 
 Elsőként az alkalmazás adatainak bizalmassági szintje alapján meg kell határoznia, hogy ki tartozzon az alkalmazáshoz hozzáférők csoportjába. Előfordulhat, hogy bizonyos szerepköröket ki kell zárnia a hozzáférésből. Például előfordulhat, hogy az értékesítési csoportnak csak bizonyos LOB-alkalmazásokra van szüksége, míg a mérnöki, a pénzügyi, a HR vagy a jogi osztálynak nincs szüksége ezekre. Emellett előfordulhat, hogy az értékesítési csoportnak további adatvédelemre, valamint a belső vállalati szolgáltatások elérésére van szüksége a mobileszközein. Önnek kell meghatároznia, hogy hogyan csatlakozhat az adott csoport az erőforrásokhoz az alkalmazás használatával. Az alkalmazással elért adatok a felhőben vagy a helyszínen legyenek tárolva? Hogyan csatlakozhatnak a felhasználók az erőforrásokhoz az alkalmazással? 
 
-Az Intune támogatja az olyan mobilalkalmazások hozzáférésének biztosítását is, amelyek biztonságos hozzáférést igényelnek a helyszíni adatokhoz, mint például az üzleti alkalmazások kiszolgálói. Ez a hozzáféréstípus általában a hozzáférés [Intune által kezelt tanúsítványokkal](certificates-configure.md) történő szabályozásával, valamint a szegélyhálózatban található szabványos VPN-átjáróval vagy proxyval, például a Azure Active Directory-alkalmazásproxyval oldható meg. Az Intune [alkalmazásburkoló eszközével és az App SDK-val](apps-prepare-mobile-application-management.md) az elért adatok az üzleti alkalmazáson belül tarthatók, hogy az alkalmazás ne tudja átadni a vállalati adatokat a fogyasztói alkalmazásoknak vagy szolgáltatásoknak.
+Az Intune támogatja az olyan ügyfélalkalmazások hozzáférésének biztosítását is, amelyek biztonságos hozzáférést igényelnek a helyszíni adatokhoz, mint például az üzleti alkalmazások kiszolgálói. Ez a hozzáféréstípus általában a hozzáférés [Intune által kezelt tanúsítványokkal](certificates-configure.md) történő szabályozásával, valamint a szegélyhálózatban található szabványos VPN-átjáróval vagy proxyval, például a Azure Active Directory-alkalmazásproxyval oldható meg. Az Intune [alkalmazásburkoló eszközével és az App SDK-val](apps-prepare-mobile-application-management.md) az elért adatok az üzleti alkalmazáson belül tarthatók, hogy az alkalmazás ne tudja átadni a vállalati adatokat a fogyasztói alkalmazásoknak vagy szolgáltatásoknak.
 
 Az [Intune az üzembe helyezésének tervezésével, kialakításával és kivitelezésével](planning-guide.md) meghatározhatja, hogy hogyan azonosíthatja az egyes alkalmazáshasználati esetekhez és alesetekhez tartozó szervezeti csoportokat. További információ az alkalmazások csoportokhoz rendeléséről: [Alkalmazások hozzárendelése csoportokhoz a Microsoft Intune-nal](apps-deploy.md).
 
@@ -116,7 +117,7 @@ Az Intune által kezelt alkalmazások regisztráció nélkül nyújtanak alkalma
 
 ### <a name="understanding-licensed-apps"></a>A licencelt alkalmazások megértése
 A webes, az áruházbeli és az üzletági alkalmazásokon kívül érdemes tisztában lennie a Volume Purchase Program alkalmazásainak és a licencelt alkalmazások sajátosságaival, például: 
-- **Vállalati Apple Volume Purchasing Program (iOS és MacOS)**: Az iOS App Store áruháza lehetővé teszi, hogy több licencet is vásároljon a vállalatnál használni kívánt alkalmazásokhoz. Több licenc vásárlásával hatékonyabban kezelhetők a vállalaton belüli alkalmazások. További információ: [Mennyiségi programban vásárolt iOS-alkalmazások felügyelete](vpp-apps-ios.md).
+- **Vállalati Apple Volume Purchasing Program (iOS)**: Az iOS App Store áruháza lehetővé teszi, hogy több licencet is vásároljon a vállalatnál használni kívánt alkalmazásokhoz. Több licenc vásárlásával hatékonyabban kezelhetők a vállalaton belüli alkalmazások. További információ: [Mennyiségi programban vásárolt iOS-alkalmazások felügyelete](vpp-apps-ios.md).
 - **Androidos munkahelyi profil**: Az alkalmazások androidos munkahelyi profilt használó eszközökhöz való hozzárendelése eltér a hagyományos androidos eszközökhöz való hozzárendeléstől. Minden olyan alkalmazás, amelyet az androidos munkahelyi profil részeként telepít a felügyelt Google Play áruházból szerezhető be. Jelentkezzen be az áruházba, keresse meg a kívánt alkalmazásokat, majd hagyja jóvá a választást. Az alkalmazás megjelenik az Azure Portal **Licencelt alkalmazások** lapján, és a hozzárendelése ugyanúgy kezelhető, mint bármely más alkalmazásé.
 - **Microsoft Store Vállalatoknak (Windows 10)**: A Microsoft Store Vállalatoknak az a hely, ahol alkalmazásokat vásárolhat a szervezete számára egyenként vagy mennyiségi program keretében. Az áruházat a Microsoft Intune-nal összekapcsolva a mennyiségi programban vásárolt alkalmazásokat az Azure Portalon kezelheti. További információ: [A Microsoft Store Vállalatoknak áruházban vásárolt alkalmazások felügyelete](windows-store-for-business.md).
 
@@ -194,3 +195,4 @@ Az alkalmazások Intune-hoz adásáról a különböző platformokon az alábbi 
 - [Windows 10-es Office 365-alkalmazások](apps-add-office365.md)
 - [macOS-es Office 365-alkalmazások](apps-add-office365-macos.md)
 - [Beépített alkalmazások](apps-add-built-in.md)
+- [Win32-alkalmazások](apps-win32-app-management.md) 

@@ -1,42 +1,40 @@
 ---
-title: Webes hozzáférés felügyelete a Managed Browser alkalmazással
+title: Webes hozzáférés felügyelete szabályzat által védett böngészővel
 titlesuffix: Microsoft Intune
-description: Telepítheti a Managed Browser alkalmazást, amellyel korlátozhatja a webböngészést és a webes adatok egyéb alkalmazásokba történő átvitelét.
+description: Szabályzat által védett böngésző használatával korlátozhatja a webböngészést és a webes adatok átvitelét.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/10/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
-ms.reviewer: maxles
+ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d11356c16965e3ba7631275368c9723a2db0ecc9
-ms.sourcegitcommit: 443b4cb3390da47bf1e497b1f0c0137a5ddda7bd
+ms.openlocfilehash: cb7eb4b3845b8b5f0eafed95fa081955b99f1af7
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43675015"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863161"
 ---
-# <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>Az internet-hozzáférés védett böngészőszabályzatokkal való kezelése a Microsoft Intune-ban
+# <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>Az internet-hozzáférés védett böngészőszabályzatokkal való kezelése a Microsoft Intune-ban  
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-A védett böngészők közé tartozik a Microsoft Edge és az Intune Managed Browser. Az Edge és a Managed Browser olyan webböngésző-alkalmazások, amely nyilvános alkalmazás-áruházakból tölthetők le a szervezeten belül használatra. Egy Intune-nal konfigurált védett böngésző:
-- Egyszeri bejelentkezéshez használható a MyApps szolgáltatással, és használatával a webes adatok védelme mellett érhetők el vállalati helyek és SaaS-alkalmazások.
-- URL-címek és tartománynevek listájával is konfigurálható, és ezzel meghatározható, hogy a felhasználó milyen helyeket kereshet fel vállalati környezetben.
-- Előre beállítható a kezdőlapja és a választott könyvjelzők.
+Az Intune-szabályzattal védett (Microsoft Edge vagy Intune Managed Browser) böngésző használatával gondoskodhat róla, hogy a vállalati webhelyek hozzáférésére mindig megfelelő biztonsági előírások vonatkozzanak.  Az Intune-nal konfigurált védett böngészők kihasználják az alábbi megoldások előnyeit:
 
-Mivel az Edge és a Managed Browser rendelkeznek Intune SDK-integrációval, így alkalmazásvédelmi szabályzatok is alkalmazhatók rajtuk, például a következők:
-- Kivágás, másolás és beillesztés műveletek korlátozása
-- Képernyőmentés megakadályozása
-- Annak biztosítása, hogy a felhasználók által kiválasztott tartalomra mutató hivatkozások csak más felügyelt alkalmazásokban nyíljanak meg.
+- Alkalmazásvédelmi szabályzatok.
+- Feltételes hozzáférés.
+- Egyszeri bejelentkezés.
+- Alkalmazáskonfigurációs beállítások.
+- Azure-alkalmazásproxy integrációja.
 
-További információt a [Mik azok az alkalmazásvédelmi szabályzatok?](app-protection-policy.md) című témakörben talál.
+## <a name="getting-started"></a>Első lépések
 
 Ezek a beállítások az alábbiakra alkalmazhatók:
 
@@ -53,14 +51,11 @@ Védettböngésző-szabályzatokat a következő eszköztípusok esetében hozha
 
 -   Android 4 vagy újabb rendszerű eszközök
 
--   iOS 8.0 vagy újabb rendszerű eszközök
+-   iOS 10.0-s vagy újabb rendszerű eszközök
 
 >[!IMPORTANT]
->2017 októberétől az Intune Managed Browser alkalmazás Androidon kizárólag az Android 4.4-es vagy újabb rendszerű eszközöket támogatja. Az Intune Managed Browser alkalmazás iOS-en kizárólag az iOS 9.0-s vagy újabb rendszerű eszközöket fogja támogatni.
 >Az Managed Browser továbbra is használható lesz korábbi verziójú Android vagy iOS rendszerű eszközökön, de az alkalmazás újabb verziói nem lesznek telepíthetők, és előfordulhat, hogy az alkalmazás bizonyos képességei nem lesznek hozzáférhetők. Javasoljuk, hogy frissítse az ilyen eszközök operációs rendszerét egy támogatott verzióra.
-
-
-A Microsoft Edge és az Intune Managed Browser támogatja a [Microsoft Intune alkalmazási partnerektől származó](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) webes tartalom megnyitását.
+    
 
 ## <a name="conditional-access-for-protected-browsers"></a>Feltételes hozzáférés védett böngészőkhöz
 
@@ -95,11 +90,11 @@ Miután konfigurálta a fenti szabályzatot, a felhasználók csak az Intune Man
 
 A Managed Browser nem támogatja a klasszikus feltételes hozzáférési szabályzatokat. További információért lásd: [Klasszikus szabályzatok áttelepítése az Azure Portalon](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration).
 
-##  <a name="single-sign-on-to-azure-ad-connected-web-apps-in-the-intune-managed-browser"></a>Egyszeri bejelentkezés az Azure AD-hez kapcsolódó webalkalmazások esetén az Intune Managed Browserben
+##  <a name="single-sign-on-to-azure-ad-connected-web-apps-in-policy-protected-browsers"></a>Egyszeri bejelentkezés az Azure AD-hez kapcsolódó webalkalmazásokba a szabályzat által védett böngészőkben
 
-Az Intune Managed Browser iOS- és Android-alkalmazás mostantól SSO-t is használhat minden webalkalmazáshoz (SaaS és helyszíni alkalmazásokhoz), amely az Azure AD-hez csatlakozik. Ha a Microsoft Authenticator alkalmazás telepítve van iOS-en, vagy az Intune Céges portál alkalmazás Androidon, az Intune Managed Browser felhasználói hozzáférhetnek az Azure AD-hez csatlakozó webalkalmazásokhoz anélkül, hogy újra meg kellene adniuk a hitelesítő adataikat.
+A Microsoft Edge és az Intune Managed Browser mostantól SSO-t is használhat iOS-en és Androidon minden olyan webalkalmazáshoz (SaaS-hez és helyszíni alkalmazásokhoz), amely az Azure AD-hez csatlakozik. Ha a Microsoft Authenticator telepítve van iOS-en vagy az Intune Céges portál Androidon, a szabályzat által védett böngészők felhasználói hozzáférhetnek az Azure AD-hez kapcsolódó webalkalmazásokhoz anélkül, hogy újra meg kellene adniuk a hitelesítő adataikat.
 
-Az Intune Managed Browser SSO-ja megköveteli az eszközöktől, hogy regisztrálva legyenek a Microsoft Authenticator alkalmazásban iOS rendszeren, vagy az Intune Céges portál alkalmazásban Androidon. Az Authenticator vagy az Intune Céges portál alkalmazással rendelkező felhasználóknak regisztrálniuk kell az eszközüket, ha egy Azure AD-hez csatlakozó webalkalmazást nyitnak meg az Intune Managed Browserben, ha az eszközüket még nem regisztrálta egy másik alkalmazás. Miután az eszközt regisztrálták az Intune által kezelt fiókkal, a fiók az Azure AD-hez csatlakozó webalkalmazások esetében SSO-val fog rendelkezni. 
+Az SSO megköveteli az eszközöktől, hogy regisztrálva legyenek a Microsoft Authenticator (iOS-en) vagy az Intune Céges portál alkalmazásban (Androidon). Az Authenticator vagy az Intune Céges portál alkalmazással rendelkező felhasználóknak regisztrálniuk kell az eszközüket, amikor megnyitnak egy Azure AD-hez csatlakozó webalkalmazást egy szabályzat által védett böngészőben, amennyiben az eszközüket még nem regisztrálta egy másik alkalmazás. Miután az eszközt regisztrálták az Intune által kezelt fiókkal, a fiók az Azure AD-hez csatlakozó webalkalmazások esetében SSO-val fog rendelkezni. 
 
 > [!NOTE]
 > Az eszközregisztráció egy egyszerű bejelentkezés az Azure AD szolgáltatással. Nem igényel teljes eszközregisztrációt, és nem ad az eszközre vonatkozó további jogosultságokat az informatikai részlegnek.

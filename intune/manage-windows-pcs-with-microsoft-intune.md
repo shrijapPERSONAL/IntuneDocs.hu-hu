@@ -1,12 +1,11 @@
 ---
-title: Számítógépek felügyelete az ügyfélszoftverrel
-titlesuffix: Microsoft Intune
+title: Számítógépek kezelése ügyfélszoftverrel a Microsoft Intune-ban – Azure | Microsoft Docs
 description: Windows rendszerű számítógépek felügyelete az Intune ügyfélszoftverrel.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +14,12 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 5a248345a40cd7cfcff3883643562923f9535d3b
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: ef21f22a4808518ce8557b761e4181f8f6a655c3
+ms.sourcegitcommit: ed97b68f08c1a8469f0b45bc1c839a0b5f5c71e0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "41910651"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45978246"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Windows rendszerű számítógépek kezelése az Intune-szoftverügyfélen keresztül számítógépként
 
@@ -57,6 +56,9 @@ Az Intune támogatja a Windows rendszerű számítógépek számítógépként v
 |Rendszergazdai engedélyek|Az ügyfélszoftvert telepítő fióknak helyi rendszergazdai engedélyekkel kell rendelkeznie az eszközön.|
 |Windows Installer 3.1|A számítógépnek legalább a Windows Installer 3.1-es verziójával kell rendelkeznie.<br /><br />A Windows Installer verziójának megtekintése egy számítógépen:<br /><br />  A számítógépen kattintson a jobb gombbal a **%windir%\System32\msiexec.exe** fájlra, majd a **Tulajdonságok** menüpontra.<br /><br />A Windows Installer legújabb verzióját letöltheti a Microsoft Developer Network webhelyen található [Windows Installer újraterjeszthető csomagok](http://go.microsoft.com/fwlink/?LinkID=234258) oldalról.|
 |Nem kompatibilis ügyfélszoftver eltávolítása|Az Intune-ügyfélszoftver telepítése előtt távolítson el a számítógépről minden Configuration Manager-, Operations Manager- és Service Manager-ügyfélszoftvert.|
+
+> [!WARNING]
+> A Microsoft bejelentette, hogy a [Windows 7 támogatása 2020. január 14-én véget ér](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020). Ezen a napon az Intune visszavonja a Windows 7 operációs rendszerű eszközök támogatását. A Microsoft a szolgáltatási és támogatási kimaradások megelőzése érdekében kifejezetten ajánlja a Windows 10-re való átállást. 
 
 ## <a name="deploying-the-intune-software-client"></a>Az Intune-szoftverügyfél üzembe helyezése
 Intune-rendszergazdaként több módon is elérhetővé teheti az Intune-szoftverügyfelet a felhasználók számára. Útmutatásért lásd: [Az Intune-szoftverügyfél telepítése Windows rendszerű számítógépekre](install-the-windows-pc-client-with-microsoft-intune.md).

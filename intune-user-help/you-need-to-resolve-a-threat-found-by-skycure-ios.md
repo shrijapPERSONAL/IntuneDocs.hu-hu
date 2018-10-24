@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: a4bdb394407155be8716cf8039f997f3905f3998
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 86cd3f37215ec42cc89c865136e6ecd5dc3b9c11
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148432"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863008"
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Symantec Endpoint Protection Mobile által észlelt fenyegetés elhárítása
 
-A Symantec Endpoint Protection (SEP) Mobile egy mobilfenyegetés elleni védelmi szolgáltatás, amely lehetséges fenyegetéseket azonosít Android-eszközein. Ezek a fenyegetések a Céges portál alkalmazásnak lesznek jelentve, és megoldatlan nem megfelelőségi problémákként jelennek meg. Előfordulhat, hogy amíg eszköze nem megfelelőként van azonosítva, a következők nem lehetségesek:
+A Symantec Endpoint Protection (SEP) Mobile egy mobilfenyegetés elleni védelmi szolgáltatás, amely lehetséges fenyegetéseket azonosít Android-eszközein. A fenyegetéseket a rendszer jelenti a Céges portál alkalmazásnak, ahol megoldatlan nem megfelelőségi problémákként jelennek meg. Amíg az eszköze nem megfelelőként van azonosítva, előfordulhat hogy nem lesz lehetősége a következőkre:
 
 * Hozzáférés a vállalati e-mailekhez
 * Hozzáférés a vállalati Wi-Fi-hez
@@ -32,9 +32,9 @@ A Symantec Endpoint Protection (SEP) Mobile egy mobilfenyegetés elleni védelmi
 * Vállalati fájlok szinkronizálása a OneDrive-val
 * Hozzáférés a vállalati alkalmazásokhoz
 
-Ez a cikk az SEP Mobile fenyegetési riasztásainak felismerését és a fenyegetések elhárításának módját ismerteti. 
+A cikk leírja, hogyan szerezhet ismét hozzáférést a vállalati erőforrásokhoz, miután a SEP Mobile biztonsági vagy alkalmazásfenyegetést érzékel.  
 
-## <a name="resolve-virus-or-security-threat"></a>Vírus vagy biztonsági fenyegetés elhárítása  
+## <a name="troubleshoot-a-virus-or-security-threat"></a>Vírus vagy biztonsági fenyegetés elhárítása
 
 1. Ha megkísérel hozzáférni a vállalati e-mailhez vagy webhelyekhez, az alábbi képernyőképen láthatóhoz hasonló üzenetet kap. Koppintson az **eszközfelügyeleti portál** hivatkozásra a [Céges portál webhely](https://portal.manage.microsoft.com/devices) megnyitásához.
 
@@ -43,11 +43,13 @@ Ez a cikk az SEP Mobile fenyegetési riasztásainak felismerését és a fenyege
 2. Jelölje ki az eszközét.  
 3. Olvassa el az eszköz alatt megjelenő figyelmeztetést. Ez felszólítja, hogy nyissa meg az SEP Mobile-t a vírus vagy biztonsági fenyegetés elhárításához.    
 
-## <a name="resolve-an-app-threat"></a>Alkalmazásfenyegetés elhárítása  
+    ![Példa-képernyőkép a Céges portál Eszközök oldaláról, az SEP Mobile figyelmeztetésével.](./media/CP-lookout-virus-banner-1808.png)
+
+## <a name="troubleshoot-an-app-threat"></a>Alkalmazásfenyegetés hibaelhárítása
 
 Az eszközére nézve fenyegetőnek ítélt alkalmazás telepítésekor értesítést kap az SEP Mobile alkalmazásban. Amíg az érintett alkalmazás az eszközén marad, Ön nem fog hozzáférni a vállalati erőforrásokhoz.  
 
-A megoldáshoz jelölje ki az alkalmazást a fenyegetéseknek az SEP Mobile-ban megjelenő listájában. Ez után kövesse a képernyőn megjelenő utasításokat az alkalmazás eltávolításához.  
+A megoldáshoz jelölje ki az alkalmazást az SEP Mobile-ban megjelenő fenyegetések listájában. Ezután kövesse a képernyőn megjelenő utasításokat az alkalmazás eltávolításához.  
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980). 
+További segítségre van szüksége? Forduljon a cég informatikai támogatási szolgálatához. A kapcsolatfelvételi adatait megtalálja a [Munkahelyi portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).   
 

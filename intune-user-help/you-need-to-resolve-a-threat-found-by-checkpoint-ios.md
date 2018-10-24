@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: f4725b76517bc9d3a27f07d7289f178c54a31bce
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 5eba9f6f920b4bf868e26b47e4043babe62a8945
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148031"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828040"
 ---
 # <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>A SandBlast Mobile Protect által észlelt fenyegetés elhárítása
 
@@ -37,12 +37,17 @@ Ez a cikk a SandBlast Mobile Protect fenyegetési riasztásainak felismerését,
 ## <a name="troubleshoot-virus-or-security-threat"></a>Vírus vagy biztonsági fenyegetés elhárítása  
 Vírus vagy biztonsági fenyegetés észlelésekor a SandBlast Mobile Protect alkalmazás vállalata hozzáférési szabályzatainak megfelelően jár el. A hozzáférési szabályzatok megakadályozhatják, hogy hozzáférjen a munkájához szükséges hálózathoz, alkalmazásokhoz és e-mailekhez.  
 
-A SandBlast Mobile Protect párbeszédablakban hívja fel a figyelmét a hozzáférés visszaszerzéséhez szükséges teendőkre. Jelölje ki a fenyegetést, és hárítsa el azt az alkalmazáson belüli utasításokat követve.  
+![Egy SEP Mobile alkalmazás riasztási üzenetének példaképernyőképe.](./media/skycure-list-of-potential-issues-android.png)  
+A SandBlast Mobile Protect párbeszédablakban hívja fel a figyelmét a hozzáférés visszaszerzéséhez szükséges teendőkre. Válassza ki a fenyegetést, és kövesse az utasításokat az alkalmazáson belüli a feloldásához.
 
-## <a name="troubleshoot-an-app-threat"></a>Alkalmazásfenyegetés elhárítása  
+Mivel az alkalmazás integrálva van a vállalat MDM szolgáltatójával, korlátozott hozzáférésre vonatkozó figyelmeztetés fog megjelenni a Céges portál alkalmazásban. A figyelmeztetésben utasítások találhatók a Sandblast Mobile Protect megnyitására és a vírus vagy a biztonsági fenyegetés elhárítására vonatkozóan.  
 
-Az eszközére nézve fenyegetőnek ítélt alkalmazás telepítésekor értesítést kap a SandBlast Mobile Protectben. Amíg az érintett alkalmazás az eszközén marad, Ön nem fog hozzáférni a vállalati erőforrásokhoz.  
+  ![A Céges portál eszközoldalának például szolgáló képernyőképe a SandBlast Mobile Protect figyelmeztetésével.](./media/CP-lookout-virus-banner-1808.png)  
 
-A megoldáshoz jelölje ki az alkalmazást a fenyegetéseknek a SandBlast Mobile Protectben megjelenő listájában. Ez után kövesse az utasításokat az alkalmazás eltávolításához.  
+## <a name="troubleshoot-an-app-threat"></a>Alkalmazásfenyegetés hibaelhárítása  
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Céges portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980)
+Ha egy fenyegetésként észlelt alkalmazást telepít az eszközére, akkor értesítést fog kapni a SandBlast Mobile Protectben. Ha a érintett alkalmazás az eszközén marad, nem fogja tudni elérni a vállalati erőforrásokat.  
+
+A feloldáshoz válassza ki az alkalmazást a fenyegetések listájából a SandBlast Mobile Protectben. Ez után kövesse az utasításokat az alkalmazás eltávolításához.  
+
+További segítségre van szüksége? Forduljon a cég informatikai támogatási szolgálatához. A kapcsolatfelvételi adatait megtalálja a [Munkahelyi portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).  

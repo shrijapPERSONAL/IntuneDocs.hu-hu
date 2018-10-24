@@ -1,11 +1,11 @@
 ---
-title: A Windows-eszközök gyakori problémáinak elhárítása
-description: Módszerek az iOS-eszközökkel gyakran előforduló problémák megoldására.
+title: A macOS-eszközök gyakori problémáinak elhárítása | Microsoft Docs
+description: Gyakori hibák elhárítása macOS-eszközök esetén az Intune-ban
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/06/2017
+ms.date: 09/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,19 +17,19 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: eeb9b04a3e8d7a5d1f96e58e3df7310d53817090
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 003bf4046a997e3633105e4dc41c93a82e16ee40
+ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146778"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46505716"
 ---
 # <a name="fix-common-issues-with-your-macos-device"></a>A macOS-eszközök gyakori problémáinak elhárítása
 
-Időnként előfordulhatnak olyan problémák a macOS-eszközökkel kapcsolatban, amelyeket megoldhat hibaelhárítási lépések végrehajtásával. Az alábbiakban látható azon korábban tapasztalt gyakori problémák listája, amelyeket először megpróbálhat önállóan megoldani. Összetettebb problémák esetén javasoljuk, hogy forduljon a cég informatikai támogatási szolgálatához a [Céges portál webhelyen](https://go.microsoft.com/fwlink/?linkid=2010980) található elérhetőségen.
+Elháríthatja a regisztráció során és azután előforduló gyakori macOS-problémákat. Ha nem látja az alábbi listában a problémát, vegye fel a kapcsolatot a vállalati támogatással. A kapcsolatfelvételi adatait megtalálja a [Munkahelyi portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).
 
 - [Az általam használt macOS-verzió még nem támogatott](your-macos-version-isnt-yet-supported.md)
-- [macOS-eszköz frissítése](you-need-to-update-your-macos-device.md)
-- [A Jamf Self Service szolgáltatás használatakor esetlegesen előforduló hibák](device-little-different-jamf.md)
-- [Sorozatszám megkeresése](how-do-i-find-the-serial-number-on-my-device-macos.md)
-- [Az eszköz azonosítása](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
+- [Frissítenem kell a macOS-eszközömet](you-need-to-update-your-macos-device.md)
+- [A Jamf által felügyelt eszköz nem megfelelő](device-little-different-jamf.md)
+- [Nem találom a sorozatszámot](how-do-i-find-the-serial-number-on-my-device-macos.md)
+- [A rendszer megkért az eszköz azonosítására](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)

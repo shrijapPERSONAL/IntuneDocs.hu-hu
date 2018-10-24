@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/13/2017
+ms.date: 08/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,19 +14,19 @@ ms.technology: ''
 ms.assetid: 702bc46c-1a6f-4689-bd53-3b778a447baa
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 223906d37159ba4081f5a5c055392321ac02e0ab
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d80d7a05dc01298dc7bc347098cf85fbdfc3689f
+ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31020622"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403493"
 ---
 # <a name="logout-the-current-user-on-intune-managed-ios-devices"></a>Intune által felügyelt iOS-eszköz aktuális felhasználójának kijelentkeztetése
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Az **Aktuális felhasználó kijelentkeztetése** művelet kijelentkezteti az aktuális felhasználót egy olyan megosztott használatú iPad-eszközről, amelyen [iOS-es oktatási profil](education-settings-configure-ios.md) felügyeli az iOS-es Osztályterem alkalmazást. 
+Az **Aktuális felhasználó kijelentkeztetése** művelet kijelentkezteti egy megosztott iPad aktuális felhasználóját. 
 
 ## <a name="supported-platforms"></a>Támogatott platformok
 
@@ -36,7 +36,7 @@ Az **Aktuális felhasználó kijelentkeztetése** művelet kijelentkezteti az ak
 - macOS – nem támogatott
 - Android – nem támogatott
 
-## <a name="how-to-logout-the-current-user"></a>Aktuális felhasználó kijelentkeztetése
+## <a name="how-to-log-out-the-current-user"></a>Aktuális felhasználó kijelentkeztetése
 
 1.  Jelentkezzen be az Azure Portalra.
 2.  Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.

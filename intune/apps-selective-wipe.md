@@ -15,12 +15,12 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 66f26811f5021b71c62a2e994c73e2144409d199
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 3f72747b1a30494304521b23054533b9f360b2fc
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329545"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562748"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Csak vállalati adatok törlése az Intune által felügyelt alkalmazásokból
 
@@ -44,7 +44,7 @@ A vállalati alkalmazásadatok szelektív törléséhez hozzon létre törlési 
 
     ![A Microsoft Intune panel képernyőképe](./media/apps-selective-wipe01.png)
 
-3.  A **Mobilalkalmazások panelen** válassza az **Alkalmazások szelektív törlése** lehetőséget.
+3.  Az **Ügyfélalkalmazások panelen** válassza az **Alkalmazás szelektív törlése** lehetőséget.
 
 4.  Kattintson az **Új törlési kérés** lehetőségre. Ennek hatására megnyílik az **Új törlési kérés** panel.
 
@@ -62,7 +62,7 @@ A szolgáltatás külön törlési kéréseket hoz létre az egyes védett alkal
 
 Elérhető egy összesítő jelentés is, amely a törlési kérelem összesített állapotát jeleníti meg, és tartalmazza a függőben lévő kérések és a hibák számát. Ha további részleteket szeretne megismerni, kövesse az alábbi lépéseket:
 
-1.  A **Mobilalkalmazások – Alkalmazások szelektív törlése** panel a kérések listáját felhasználói csoportosításban jeleníti meg. A rendszer minden, az eszközön futó védett alkalmazáshoz külön törlési kérést hoz létre, ezért több kérés jelenhet meg ugyanannál a felhasználónál. Az állapot mutatja, hogy a törlési kérés **függőben van**, **sikertelen**, vagy **sikeres**.
+1.  Az **Ügyfélalkalmazások – Alkalmazás szelektív törlése** panelen felhasználók szerint csoportosítva látható a kérések listája. A rendszer minden, az eszközön futó védett alkalmazáshoz külön törlési kérést hoz létre, ezért több kérés jelenhet meg ugyanannál a felhasználónál. Az állapot mutatja, hogy a törlési kérés **függőben van**, **sikertelen**, vagy **sikeres**.
 
     ![Képernyőkép a törlési kérés állapotáról az Alkalmazások szelektív törlése panelen](./media/wipe-request-status-1.png)
 
@@ -75,7 +75,7 @@ Ezen kívül látható az eszköz neve és típusa is, ami megkönnyíti a jelen
 
 A felfüggesztett állapotú törlés addig lesz megjelenítve, míg manuálisan nem törli. Törlési kérés manuális törléséhez:
 
-1.  Nyissa meg a **Mobilalkalmazások – Alkalmazások szelektív törlése** panelt.
+1.  Nyissa meg az **Ügyfélalkalmazások – Alkalmazás szelektív törlése** panelt.
 
 2.  Kattintson a listában a jobb gombbal a törölni kívánt törlési kérésre, és válassza a **Törlési kérés törlése** lehetőséget.
 

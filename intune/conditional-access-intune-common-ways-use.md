@@ -3,10 +3,10 @@ title: Feltételes hozzáférés a Microsoft Intune-nal
 titlesuffix: ''
 description: A cikk azt ismerteti, hogyan használható az Intune feltételes hozzáférése az eszköz- és alkalmazásalapú feltételes hozzáféréshez.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 09/25/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 59cba4ead614fe0b5deac535efb9bcb303d5810d
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: db63d79a81de03a459a910a23fb9f999f33f0251
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253608"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231660"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Mik a feltételes hozzáférés használatának szokásos módjai az Intune-ban?
 
@@ -45,6 +45,13 @@ Az Exchange Online és más Office 365-termékek eszközalapú feltételes hozz�
 -   További információ az [Intune eszközmegfelelőségéről](device-compliance.md).
 
 -   További tudnivalók: [A levelezés, az Office 365 és más szolgáltatások védelme az Intune feltételes hozzáférési funkciójának használatával](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
+
+> [!NOTE]
+> Ha egy Android-eszközön engedélyezi az eszközalapú hozzáférést a Sharepoint Online-hoz, a felhasználónak a következőképpen engedélyeznie kell a **Böngészőalapú hozzáférés engedélyezése** beállítást a regisztrált eszközön:
+> 1. Nyissa meg a **Vállalati portál alkalmazást**.
+> 2. Nyissa meg a **Beállítások** lapot a három ponttal (...) vagy a hardveres menügombbal.
+> 3. Kattintson a **Böngészőalapú hozzáférés engedélyezése** gombra. 
+> 4. A Chrome böngészőben jelentkezzen ki az Office 365-ből, majd indítsa újra a Chrome-ot.
 
 ### <a name="conditional-access-for-exchange-on-premises"></a>Feltételes hozzáférés a helyszíni Exchange-hez
 

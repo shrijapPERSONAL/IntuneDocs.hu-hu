@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6db58b1b1f19f789a2163f497c1f0da4c7c034a5
-ms.sourcegitcommit: 5f6117b83f96f7d93dde3685c2ff2b67ae53740b
+ms.openlocfilehash: 9dd7608981da1454c1f3be29eb6ff40a5d7f3394
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39481121"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562867"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Kioszkbeállítások Windows 10 (és újabb) rendszerekhez az Intune-ban
 
@@ -45,7 +45,7 @@ A Windows 10-eszközök kioszkprofilokkal vannak konfigurálva egy vagy több al
 #### <a name="single-full-screen-app-kiosks"></a>Egyetlen teljes képernyős alkalmazásos kioszkok
 Adja meg a következő beállításokat:
 
-- **Univerzális Windows Platform (UWP) alkalmazásazonosító**: Adja meg a kioszkalkalmazás számára **Az alkalmazás alkalmazásfelhasználói modellben használt azonosítója (AUMID)** értékét. Vagy válasszon ki egy, a [Mobile Apps](apps-add.md) használatával már hozzáadott, felügyelt alkalmazást.
+- **Univerzális Windows Platform (UWP) alkalmazásazonosító**: Adja meg a kioszkalkalmazás számára **Az alkalmazás alkalmazásfelhasználói modellben használt azonosítója (AUMID)** értékét. Vagy válasszon ki egy, az [ügyfélalkalmazások](apps-add.md) használatával már hozzáadott, felügyelt alkalmazást.
 
     Lásd: [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Telepített alkalmazás alkalmazásfelhasználói modellben használt azonosítójának megkeresése).
 
@@ -62,7 +62,7 @@ A [többalkalmazásos kioszkeszközök](https://docs.microsoft.com/windows/confi
 Adja meg a következő beállításokat:
 
 - **Win32-alkalmazás hozzáadása**: A Win32-alkalmazás hagyományos asztali alkalmazás. Adja meg az **Alkalmazásnév** és az **Azonosító** értékét. Az **Azonosító** a végrehajtható fájl teljes elérési útja az eszközön.
-- **Felügyelt alkalmazások hozzáadása**: Válasszon ki egy, az [Intune-beli Mobile Apps](apps-add.md) használatával már hozzáadott, felügyelt alkalmazást.
+- **Felügyelt alkalmazások hozzáadása**: Válasszon ki egy, az [Intune-beli ügyfélalkalmazások](apps-add.md) használatával már hozzáadott, felügyelt alkalmazást.
 - **Alkalmazás hozzáadása AUMID alapján**: Adja meg az [alkalmazás AUMID azonosítóját](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP-alkalmazások).
 - **Tálca** – Válassza az **Engedélyezés** beállítást a tálca megjelenítéséhez, vagy hagyja meg az alapértelmezett **Nincs konfigurálva** beállítást a tálca kioszkeszközön való elrejtéséhez.
 - **Start menü elrendezése**: Adjon meg egy XML-fájlt, amely meghatározza, hogyan jelenjenek meg az alkalmazások a Start menüben, beleértve azok sorrendjét. A [Start menü elrendezésének testreszabása és exportálása](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) című cikkben találhat útmutatást és XML-mintát.
@@ -75,7 +75,7 @@ Adja meg a következő beállításokat:
 
 ## <a name="kiosk-web-browser-settings"></a>Teljes képernyős böngészőbeállítások megadása
 
-Ezek a beállítások vezérlik a böngészőalkalmazást kioszkmódban. Győződjön meg róla, hogy üzembe helyezett egy böngészőalkalmazást a kioszkmódban lévő eszközökön a [Mobile Apps](apps-add.md) használatával.
+Ezek a beállítások vezérlik a böngészőalkalmazást kioszkmódban. Győződjön meg róla, hogy üzembe helyezett egy böngészőalkalmazást a kioszkmódban lévő eszközökön az [ügyfélalkalmazások](apps-add.md) használatával.
 
 1. Adja meg a következő beállításokat:
 
@@ -115,7 +115,7 @@ Az ebben az üzemmódban lévő alkalmazások elérhetők a Start menüben. A fe
 
 Adja meg a következő beállításokat:
 
-- **Felügyelt alkalmazások hozzáadása**: Válasszon ki egy, az [Intune-beli Mobile Apps](apps-add.md) használatával már hozzáadott, felügyelt alkalmazást.
+- **Felügyelt alkalmazások hozzáadása**: Válasszon ki egy, az [Intune-beli ügyfélalkalmazások](apps-add.md) használatával már hozzáadott, felügyelt alkalmazást.
 - **Alkalmazás hozzáadása AUMID alapján**: Adja meg az [alkalmazás AUMID azonosítóját](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP-alkalmazások).
 - **Start menü elrendezése**: Adjon meg egy XML-fájlt, amely meghatározza, hogyan jelenjenek meg az alkalmazások a Start menüben, beleértve azok sorrendjét. A [Start menü elrendezésének testreszabása és exportálása](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens) című cikk nyújt némi útmutatást, és tartalmaz egy kimondottan Windows Holographic for Business rendszerű eszközökhöz készült XML-fájlt.
 - **Felhasználói fiók típusa**: Adjon meg egy vagy több olyan felhasználói fiókot, amely jogosult a társított alkalmazások használatára. A támogatott lehetőségek a következők: 

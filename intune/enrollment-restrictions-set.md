@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76c0b96a1759caad4a1052a7233c7dcc8cecfa3b
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: de77ad92eac4aa869aec504f1762ad6f216c74d2
+ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313717"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45602146"
 ---
 # <a name="set-enrollment-restrictions"></a>Regisztrációs korlátozások beállítása
 
@@ -83,29 +83,31 @@ Az eszköztípuskorlátok beállításait az alábbi lépésekkel módosíthatja
 8. Válassza a **személyes tulajdonú** eszközök **Engedélyezés** vagy **Tiltás** lehetőségét az összes felsorolt platform esetében.
 9. Válassza az **OK** gombot.
 
-### <a name="android-device-type-restrictions"></a>Androidos eszköztípus-korlátozások
+### <a name="blocking-personal-android-devices"></a>Személyes Android-eszközök letiltása
 - Ha letiltja a személyes tulajdonú Android-eszközök regisztrációját, a személyes tulajdonú androidos munkahelyi profilos eszközök továbbra is regisztrálhatók.
 - Alapértelmezés szerint az androidos munkahelyi profilos eszközök beállításai ugyanazok, mint az Android-eszközöké. Az androidos munkahelyi profil beállításainak módosítása után ez már nem lesz így.
 - Ha letiltja a személyes androidos munkahelyi profilos regisztrációt, csak a vállalati Android-eszközök regisztrálhatók androidos munkahelyi profilos eszközként.
 
-### <a name="windows-device-type-restrictions"></a>Windowsos eszköztípus-korlátozások
-Ha a Windows platformhoz az eszköztípus-korlátozás **Tiltás** értékre van beállítva, az Intune minden új Windows-regisztrációs kérelem esetében ellenőrzi, hogy vállalati regisztrációként engedélyezték-e. A jogosulatlan regisztrációk le lesznek tiltva.
+### <a name="blocking-personal-windows-devices"></a>Személyes Windows-eszközök letiltása
+Ha letiltja a személyes tulajdonban lévő windowsos eszközök regisztrációját, az Intune ellenőrzi, hogy minden új Windows-regisztrációs kérelem vállalati regisztrációként lett-e engedélyezve. A jogosulatlan regisztrációk le lesznek tiltva.
 
 Windows vállalati regisztrációnak minősülnek az alábbi módszerek:
  - A felhasználó [készülékregisztráció-kezelői fiókot]( device-enrollment-manager-enroll.md) használ a regisztráláshoz.
 - Az eszközregisztráció a [Windows AutoPilot](enrollment-autopilot.md) használatával történik.
+- Az eszköz a Windows Autopilottal van regisztrálva, de az nem egy csak MDM-regisztrációs lehetőség a Windows-beállításokban.
 - Az eszköz IMEI-száma szerepel az **Eszközregisztráció** > **[Vállalati eszközazonosítók](corporate-identifiers-add.md)** listán. (Windows Phone 8.1-hez nem támogatott)
 - Az eszközregisztráció [tömeges kiépítési csomagban](windows-bulk-enroll.md) történik.
 - Az eszközregisztráció az [SCMM megosztott kezeléshez való automatikus regisztrációja](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md) révén történik.
  
 Az alábbi regisztrációkat cégesként jelzi az Intune, de le lesznek tiltva, mert nem kínálják fel az Intune-rendszergazdának az eszközönkénti szabályozást:
- - [Automatikus MDM-regisztráció](windows-enroll.md#enable-windows-10-automatic-enrollment) és [Azure Active Directory-kapcsolat a Windows beállítása során](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md).
-- [Automatikus MDM-regisztráció](windows-enroll.md#enable-windows-10-automatic-enrollment) és [Azure Active Directory-kapcsolat a Windows beállításaiból](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup.md).
+ - [Automatikus MDM-regisztráció](windows-enroll.md#enable-windows-10-automatic-enrollment) és [Azure Active Directory-csatlakozás a Windows beállítása során](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)\*.
+- [Automatikus MDM-regisztráció](windows-enroll.md#enable-windows-10-automatic-enrollment) és [Azure Active Directory-csatlakozás a Windows beállításaiból](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup.md)*.
  
 Az alábbi személyes regisztrációs módszerek is le lesznek tiltva:
-- [Automatikus MDM-regisztráció](windows-enroll.md#enable-windows-10-automatic-enrollment) és [Munkahelyi fiók hozzáadása a Windows-beállításokból](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md).
+- [Automatikus MDM-regisztráció](windows-enroll.md#enable-windows-10-automatic-enrollment) és [munkahelyi fiók hozzáadása a Windows-beállításokból](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md)\*.
 - [Csak MDM-regisztráció]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) lehetősége a Windows-beállításokból.
 
+\* Ha az AutoPilottal regisztrált, ezek nincsenek letiltva.
 
 ## <a name="set-device-limit-restrictions"></a>Regisztrált eszközök maximális számának beállítása
 

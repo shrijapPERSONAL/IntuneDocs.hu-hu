@@ -1,11 +1,11 @@
 ---
-title: A Céges portál alkalmazás telepítése, majd bejelentkezés a portálra | Microsoft Docs
+title: A Céges portál alkalmazás telepítése iOS-en, majd bejelentkezés a portálra | Microsoft Docs
 description: ''
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/02/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,16 +17,16 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 984c9212a4aa3221a4de5e02d96f912d800e9490
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: f8ca89168e46e038b57fba9cc2e159416795e112
+ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146375"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48260198"
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>A Céges portál alkalmazás telepítése, majd bejelentkezés a portálra
 
-Az iOS-eszközökre telepíthető Vállalati portál alkalmazás hozzáférést biztosít a munkahelyi és az iskolai alkalmazásokhoz, levelezéshez és hálózathoz. Ahhoz, hogy hozzáférést kapjon, előbb telepíteni kell a Vállalati portál alkalmazást, majd azt használva regisztrálni kell az adott eszközt a Microsoft Intune-ban. További információkat a [Mi történik a Vállalati portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) című részben talál.
+A Céges portál alkalmazás iOS rendszerű eszközére történő telepítésével hozzáférhet munkahelyi és iskolai alkalmazásaihoz, e-mailjeihez és hálózatához. Az alkalmazással regisztrálhatja az eszközét a Microsoft Intune-ba, és biztonságossá teheti a munkahelyi és iskolai erőforrásokhoz való hozzáférését. További információkat a [Mi történik a Vállalati portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) című részben talál.
 
 1.  Nyissa meg az **App Store-t**, és keressen rá az **intune céges portál** kifejezésre.
 

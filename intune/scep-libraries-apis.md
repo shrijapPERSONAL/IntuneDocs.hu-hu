@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/31/2018
+ms.date: 09/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 423bfc02edb9260adadf0a6dc67e6299639c7fbb
-ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
+ms.openlocfilehash: 31c083dcd2087de99830317d892750a42cc5ae6d
+ms.sourcegitcommit: ae62a269778cdbf1d207cd017de522f934b030e9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39575049"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44700982"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>API-k használata az SCEP külső tanúsítványszolgáltatóinak Intune-ba való felvételére
 
@@ -125,6 +125,13 @@ A konfigurációnak a következő tulajdonságokat kell tartalmaznia:
     - AAD_APP_KEY=„Az előkészítési folyamat során beszerzett Azure-alkalmazáskulcs”
     - TENANT=„Az előkészítési folyamat során beszerzett bérlőazonosító”
     - PROVIDER_NAME_AND_VERSION =„A termék- és a verzió azonosításához használt információk”
+    
+Amennyiben a megoldásához hitelesítéssel ellátott vagy hitelesítés nélküli proxyra van szüksége, hozzáadhatja a következő tulajdonságokat:
+
+    - PROXY_HOST="A gazdagép, amelyen a proxy fut."
+    - PROXY_PORT="A port, amelyen a proxy figyel."
+    - PROXY_USER="A felhasználónév, amelyet abban az esetben kell használni, ha a proxy alapszintű hitelesítést használ."
+    - PROXY_PASS="A jelszó, amelyet abban az esetben kell használni, ha a proxy alapszintű hitelesítést használ."
 
 Jelzések:
 

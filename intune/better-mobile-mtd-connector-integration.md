@@ -3,8 +3,8 @@ title: A Better Mobile és az Intune integrációjának beállítása
 titleSuffix: Intune on Azure
 description: A Better Mobile-összekötő és az Intune integrálása
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 7/25/2018
 ms.topic: article
@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
-ms.openlocfilehash: 5aad0e4aa0f3377c0d46f241d92712d81e4cfbd6
-ms.sourcegitcommit: 973a06f4a35b74314fece2bae17dd6885b4211c3
+ms.openlocfilehash: a677bab1f18fc0d0e0d159f2b40fae314b292e0f
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42823186"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231121"
 ---
 # <a name="integrate-better-mobile-with-intune"></a>A Better Mobile és az Intune integrálása
 
@@ -68,9 +68,9 @@ A Better Mobile alkalmazás hitelesítésének folyamata a következő:
 5. A **Microsoft bejelentkezési** ablakában adja meg az Intune-ban használt hitelesítő adatokat.
 6. A **Permissions requested** (Kért engedélyek) ablakban válassza az **Accept** (Elfogadás) lehetőséget.
 7. Keresse meg azokat az Azure AD biztonsági csoportokat, amelyekből a Better Mobile-nak szinkronizálnia kell az eszközöket, és válassza ki a csoportokat a listából. Ezután válassza a **Continue** (Folytatás) gombot.
-8. Válassza a **Done** (Kész) lehetőséget.
+8. Válassza a **Kész** lehetőséget.
 9. Újra megjelenik a **fiókhozzáadási** oldal. Zárja be az oldalt. 
 
 ## <a name="next-steps"></a>További lépések
 
--   [Better Mobile-alkalmazások beállítása](mtd-apps-ios-app-configuration-policy-add-assign.md)
+-   [Jobb ügyfélalkalmazások összeállítása](mtd-apps-ios-app-configuration-policy-add-assign.md)

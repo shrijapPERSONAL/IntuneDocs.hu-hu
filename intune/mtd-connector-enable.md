@@ -3,8 +3,8 @@ title: A Mobile Threat Defense-összekötő engedélyezése a Microsoft Intune-b
 titleSuffix: ''
 description: A Mobile Threat Defense (MTD) partner és a Microsoft Intune közötti összekötő engedélyezése.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6fccfcbceecc9aa0667aa9fd6656c2fcc524d363
-ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
+ms.openlocfilehash: e2172c1cd066e99f3634dd856538671207cf1ed0
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34569357"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48232239"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>A Mobile Threat Defense-összekötő engedélyezése az Intune-ban
 
@@ -45,7 +45,7 @@ A Mobile Threat Defense (MTD) beállítása során konfigurált egy, az MTD-part
 
     ![Az MTD beállítása az Azure-beli Intune-portálon](./media/enable-mtd-connector-1.png)
 
-7. A szervezet igényeinek megfelelően adja meg a kapcsolós beállításokat.
+7. A szervezet igényeinek megfelelően adja meg a kapcsolós beállításokat. Az elérhető kapcsolós megoldások az MTD-partnertől függenek.
 
 ## <a name="mtd-toggle-options"></a>Az MTD kapcsolós megoldásai
 

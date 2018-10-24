@@ -2,8 +2,8 @@
 title: Alkalmazásalapú feltételes hozzáférés az Intune-nal
 description: Megtudhatja, hogyan működik az Intune alkalmazásalapú feltételes hozzáférése.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 05/31/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5c467d20a3bf4f2cfb94db5cecfae78b1717993d
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 95458642f60dfb8c7ba18078ef4bd238c53502aa
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34561973"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231304"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Alkalmazásalapú feltételes hozzáférés az Intune-nal
 
@@ -27,7 +27,7 @@ ms.locfileid: "34561973"
 
 Az [Intune alkalmazásvédelmi szabályzataival](app-protection-policy.md) védheti vállalati adatait az Intune-ban regisztrált eszközökön. Az alkalmazásvédelmi szabályzatokat emellett a munkatársak tulajdonában álló, az Intune-ban felügyeletre nem regisztrált eszközökön is alkalmazhatja. Bár ebben az esetben nem a cég felügyeli az eszközt, mégis fontos, hogy a vállalati adatok és erőforrások védve legyenek.
 
-Az alkalmazásalapú feltételes hozzáférés és a mobileszköz-felügyelet egy biztonsági réteget ad hozzá annak biztosításával, hogy csak az Intune alkalmazásvédelmi szabályzatait támogató mobilalkalmazások férhessenek hozzá az Exchange Online-hoz és más Office 365-szolgáltatásokhoz.
+Az alkalmazásalapú feltételes hozzáférés és az ügyfélalkalmazás-felügyelet egy további biztonsági réteget jelent, mivel gondoskodik róla, hogy csak az Intune alkalmazásvédelmi szabályzatait támogató mobilalkalmazások férhessenek hozzá az Exchange Online-hoz és más Office 365-szolgáltatásokhoz.
 
 > [!NOTE]
 > A felügyelt alkalmazásra alkalmazásvédelmi szabályzatok vonatkoznak, és az Intune-nal felügyelhető.

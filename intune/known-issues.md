@@ -14,12 +14,12 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 421eea460ee7c00b79a63a014291a8abb88ddaea
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 4e523e4fb6505b2faaa0aa776b89454524130ba8
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347797"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187852"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>A Microsoft Intune ismert problémái
 
@@ -106,6 +106,15 @@ További információt a [Mi az eszközmegfelelőség](device-compliance.md) cí
 
 <!-- ## Enrollment -->
 
+## <a name="conditional-access"></a>Feltételes hozzáférés
+
+### <a name="conditional-access-settings-from-intune-do-not-show-up-in-new-console"></a>Az Intune-beli feltételes hozzáférési beállítások nem jelennek meg az új konzolon
+
+A bérlő az Azure Portalra történő áttelepítését követően továbbra is érvényesek maradnak a feltételes hozzáféréssel kapcsolatos beállításai, azonban nem fognak megjelenni az Azure Intune protálon. 
+
+Ha szeretné megtekinteni és kezelni ezeket a beállításokat az Azure Portalon, akkor el kell távolítania a régi beállításokat a klasszikus portálról, és újra létre kell hoznia őket az Azure Portalon. 
+
+További információért tekintse meg a [Feltételes hozzáféréssel kapcsolatos ajánlott eljárások az Azure Active Directoryban](https://docs.microsoft.com/azure/active-directory/conditional-access/best-practices) című részt.
 
 ## <a name="data-protection"></a>Adatvédelem
 
