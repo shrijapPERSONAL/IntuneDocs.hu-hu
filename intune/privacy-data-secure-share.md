@@ -14,12 +14,12 @@ ms.assetid: 68921fd6-5f50-456c-a3af-83d7bc4b134b
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5613c1284110e85a910db8f156ff4f62a54af4ad
-ms.sourcegitcommit: dc6979f2b14d522530577cc7f212cc822356acc9
+ms.openlocfilehash: 6dc722a3d10d68c4aec30fc6d10a2867f5f0b2d7
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47453544"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425325"
 ---
 # <a name="data-security-and-sharing-in-intune"></a>Adatbiztonság és -megosztás az Intune-ban
 
@@ -68,7 +68,7 @@ Az egyes külső felekkel megosztott adatokról a következő cikkekből tájék
 
 A Microsoft Intune semmilyen adatot sem oszt meg a System Center Configuration Managerrel. A System Center Configuration Manager az ügyfél által üzembe helyezett, felügyelt és működtetett helyszíni termék. A Configuration Manager által gyűjtött diagnosztikai és használati adatokat kizárólag a telepítési élmény, a minőség és a jövőbeli kiadások biztonságának javításához használja fel.
 
-További információ: [Diagnosztikai és használati adatok az SCCM számára](https://docs.microsoft.com/en-us/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data.md). 
+További információ: [Diagnosztikai és használati adatok az SCCM számára](https://docs.microsoft.com/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data.md). 
 
 
 ## <a name="next-steps"></a>További lépések

@@ -15,12 +15,12 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f0680f601d59695828355496ef7b817335dc0d4
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: ac8b70cd370d0c22a615d0d0bdc215cb3a332520
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48827972"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425172"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS-es alkalmazásvédelmi szabályzat-beállításai
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -78,7 +78,7 @@ Egyes alkalmazások és platformszolgáltatások kivételt képeznek, és az Int
 | **Az Intune alkalmazásvédelmi szabályzat minimális SDK-verziójának megkövetelése** | Válassza az **Igen** lehetőséget, hogy az alkalmazás által használt Intune alkalmazásvédelmi szabályzatnak legyen minimális verziója. A felhasználó hozzáférése le lesz tiltva, ha az alkalmazásra vonatkozó Intune alkalmazásvédelmi szabályzatának SDK-verziója nem felel meg a követelménynek. <br> <br> Az Intune alkalmazásvédelmi szabályzatához készült SDK-val kapcsolatos további tudnivalókért lásd: [Az Intune App SDK áttekintése](app-sdk.md). <br><br> Ez a szabályzatbeállítás a következő értékformátumokat támogatja: főverzió.alverzió, főverzió.alverzió.build és főverzió.alverzió.build.változat. <br><br> ***Megjegyzés:** Az alkalmazásnak az Intune SDK 7.0.1-es vagy újabb verzióját kell használnia.* <br><br>  Alapértelmezett érték = **Nem** |
 
 > [!NOTE]
-> Ha meg szeretné tudni, hogy hogyan működnek az egyazon alkalmazás- és felhasználói csoportokra konfigurált többes Intune-alkalmazásvédelmi hozzáférési beállítások iOS rendszerben, olvassa el az [Intune MAM-ról szóló gyakori kérdéseket és válaszokat](https://docs.microsoft.com/en-us/intune/mam-faq#app-experience-on-ios) és a [Szelektív adattörlés alkalmazásvédelmi szabályzatok hozzáférési műveleteivel az Intune-ban](app-protection-policies-access-actions.md) szakaszt.
+> Ha meg szeretné tudni, hogy hogyan működnek az egyazon alkalmazás- és felhasználói csoportokra konfigurált többes Intune-alkalmazásvédelmi hozzáférési beállítások iOS rendszerben, olvassa el az [Intune MAM-ról szóló gyakori kérdéseket és válaszokat](https://docs.microsoft.com/intune/mam-faq#app-experience-on-ios) és a [Szelektív adattörlés alkalmazásvédelmi szabályzatok hozzáférési műveleteivel az Intune-ban](app-protection-policies-access-actions.md) szakaszt.
 
 ##  <a name="add-ins-for-outlook-app"></a>Bővítmények az Outlook alkalmazáshoz
 
@@ -117,9 +117,9 @@ Ha egy felhasználó hozzájárul az adatok fiókok közötti megosztásához, a
 
 |Microsoft Graph-engedélyek  |Leírás  |
 |---------|---------|
-|[Személyek](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference#people-permissions) olvasásának engedélyezése     |Engedélyezi az alkalmazásnak a bejelentkezett felhasználó számára releváns személyek pontozott listájának olvasását. A lista tartalmazhat helyi kapcsolatokat, közösségi hálózati kapcsolatokat, szervezeti címjegyzékbeli kapcsolatokat, illetve olyan személyeket, akikkel a felhasználó nemrég kommunikált (például e-mailben vagy Skype-on).         |
-|[Naptárak](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdeveloper.microsoft.com%2Fen-us%2Fgraph%2Fdocs%2Fconcepts%2Fpermissions_reference%23calendars-permissions&data=04%7C01%7CCem.Aykan%40microsoft.com%7C59705402acc347cdf0d908d5b1d82d53%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636610464378331622%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwifQ%3D%3D%7C-1&sdata=fABkrlIxqggnB%2Bc%2BR%2BbFpuenhSg7OHfBhWcbv3ahmAU%3D&reserved=0) olvasásának engedélyezése     |Engedélyezi az alkalmazásnak a felhasználó naptáraiban lévő események olvasását. Ideértve például a bejelentkezett felhasználó naptárában lévő értekezleteket, azok időpontjával, helyével és résztvevőivel együtt.         |
-|[Felhasználói profilok](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdeveloper.microsoft.com%2Fen-us%2Fgraph%2Fdocs%2Fconcepts%2Fpermissions_reference%23user-permissions&data=04%7C01%7CCem.Aykan%40microsoft.com%7C59705402acc347cdf0d908d5b1d82d53%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636610464378341626%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwifQ%3D%3D%7C-1&sdata=RcnVIpntjyR4TXafOYTV0SffZuZWpshQQWY0e2VkkXg%3D&reserved=0) olvasásának engedélyezése     |Engedélyezi a felhasználóknak az alkalmazásba való bejelentkezést, és engedélyezi az alkalmazásnak a bejelentkezett felhasználók profiljának olvasását. Emellett engedélyezi az alkalmazásnak a bejelentkezett felhasználók alapvető vállalati adatainak olvasását is.         |
+|[Személyek](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#people-permissions) olvasásának engedélyezése     |Engedélyezi az alkalmazásnak a bejelentkezett felhasználó számára releváns személyek pontozott listájának olvasását. A lista tartalmazhat helyi kapcsolatokat, közösségi hálózati kapcsolatokat, szervezeti címjegyzékbeli kapcsolatokat, illetve olyan személyeket, akikkel a felhasználó nemrég kommunikált (például e-mailben vagy Skype-on).         |
+|[Naptárak](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#calendars-permissions) olvasásának engedélyezése     |Engedélyezi az alkalmazásnak a felhasználó naptáraiban lévő események olvasását. Ideértve például a bejelentkezett felhasználó naptárában lévő értekezleteket, azok időpontjával, helyével és résztvevőivel együtt.         |
+|[Felhasználói profilok](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#user-permissions) olvasásának engedélyezése     |Engedélyezi a felhasználóknak az alkalmazásba való bejelentkezést, és engedélyezi az alkalmazásnak a bejelentkezett felhasználók profiljának olvasását. Emellett engedélyezi az alkalmazásnak a bejelentkezett felhasználók alapvető vállalati adatainak olvasását is.         |
 |Subscriptions     |Ez a hatókör jelenleg nem érhető el, és nincs használatban. Ide tartoznak a felhasználó szervezete által nyújtott előfizetések a különféle Microsoft-alkalmazásokra és -szolgáltatásokra, ideértve például az Office 365-öt is.         |
 |Insights     |Ez a hatókör jelenleg nem érhető el, és nincs használatban. Ide tartoznak a bejelentkezett felhasználói fiókhoz kapcsolódó érdeklődési körök, melyek a Microsoft-szolgáltatások használati adatain alapulnak.         |
 
@@ -127,6 +127,6 @@ Ha egy felhasználó hozzájárul az adatok fiókok közötti megosztásához, a
 
 - Tudjon meg többet a [Microsoft-alkalmazásokban használható LinkedIn-adatokról és -funkciókról](https://go.microsoft.com/fwlink/?linkid=850740).
 - Ismerje meg a LinkedIn-fiókkapcsolatok megjelenésének részleteit az [Office 365 fejlesztési ütemtervének lapján](https://products.office.com/en-US/business/office-365-roadmap?filters=%26freeformsearch=linkedin#abc). 
-- Tudja meg, hogyan [konfigurálhatja a LinkedIn-fiókkapcsolatokat](https://docs.microsoft.com/en-us/azure/active-directory/linkedin-integration).
+- Tudja meg, hogyan [konfigurálhatja a LinkedIn-fiókkapcsolatokat](https://docs.microsoft.com/azure/active-directory/linkedin-integration).
 - A felhasználók LinkedIn-fiókja és munkahelyi vagy iskolai Microsoft-fiókja közötti adatmegosztásról bővebben a következő témakörben olvashat: [LinkedIn használata munkahelyi vagy iskolai Microsoft-alkalmazásokban ](https://www.linkedin.com/help/linkedin/answer/84077).
 

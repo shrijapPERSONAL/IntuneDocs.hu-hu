@@ -15,19 +15,16 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d4c41d3a4cdfada81b91a3dffeffdfe15e8a470f
-ms.sourcegitcommit: 17094728cfd9eb3f77ca39745fdcde9be0a8dda1
+ms.openlocfilehash: 3b0da7cf77fd7c1b977fcd2ddb86b95eff8804f8
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48812821"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425002"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Jamf Pro által felügyelt Mac számítógépek megfelelőségének kikényszerítése
 
-|A következőkre vonatkozik: Intune az Azure Portalon |
-|--|
-|A klasszikus portálbeli Intune-ról keres dokumentációt? [Lépjen tovább ide](/intune/introduction-intune?toc=/intune-classic/toc.json).|
-| |
+A következőkre vonatkozik: Intune az Azure Portalon
 
 Az Azure Active Directory és a Microsoft Intune feltételes hozzáférési szabályzatai biztosítják, hogy a végfelhasználók megfeleljenek a szervezeti követelményeknek. Ezeket a szabályzatokat a [Jamf Pro által felügyelt](conditional-access-integrate-jamf.md) Mac számítógépekre is alkalmazhatja. Ennek megvalósításához az Intune és a Jamf Pro konzolhoz egyaránt hozzáférésre van szüksége.
 
