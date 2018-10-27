@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bdf927eff77b6a97e4c763ec0d75c7e44e4c6840
-ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
+ms.openlocfilehash: e7e740d03453a437572f8f960ed21927f4fcbace
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799580"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102038"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Alkalmazáskonfigurációs szabályzatok hozzáadása felügyelt Android-eszközökhöz
 
@@ -29,7 +29,9 @@ ms.locfileid: "48799580"
 Alkalmazáskonfigurációs szabályzatok használata a Microsoft Intune-ban az androidos munkahelyi profilt használó alkalmazások beállításainak megadásához. Az alkalmazásfejlesztőnek közzé kell tennie az Androidos kezelt alkalmazás konfigurációs beállításait az alkalmazás konfigurációs beállításainak megadásához. Rendelje hozzá az alkalmazáskonfigurációs szabályzatot ahhoz a felhasználói csoporthoz, amelyre alkalmazni szeretné a beállításokat.  A szabályzatbeállítások akkor használatosak, amikor egy alkalmazás keresi azokat (általában az első futtatáskor).
 
 > [!Note]  
-> Az alkalmazáskonfigurációt nem minden alkalmazás támogatja. Érdeklődjön az alkalmazás fejlesztőjénél, hogy az alkalmazás az alkalmazáskonfigurációs szabályzatok támogatásához készült-e.
+> Az alkalmazáskonfigurációt nem minden alkalmazás támogatja. Érdeklődjön az alkalmazás fejlesztőjénél, hogy az alkalmazás az alkalmazáskonfigurációs szabályzatok támogatásához készült-e.<p></p>
+> A Microsoft Intune rendszergazdájaként felügyelheti, hogy mely felhasználói fiókok legyenek hozzáadva a Microsoft Office-alkalmazásokhoz a felügyelt eszközökön. Korlátozhatja a hozzáférést a regisztrált eszközökön csak az engedélyezett szervezeti felhasználói fiókokra, és letilthatja a személyes fiókokat. A támogató alkalmazások feldolgozzák az alkalmazás konfigurációját, majd eltávolítják és letiltják a jóvá nem hagyott fiókokat.<p></p>
+> A Microsoft Word, a Microsoft Excel és a Microsoft PowerPoint alkalmazáshoz az Android 16.0.9327.1000 vagy újabb verzióját kell használnia.
 
 1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
@@ -69,6 +71,16 @@ Ha változót szeretne megadni értéktípusnak, az alábbi lehetőségek közü
 - Felhasználóazonosító, például **3ec2c00f-b125-4519-acf0-302ac3761822**
 - Felhasználónév, például **Szabó János**
 
+### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Csak a konfigurált szervezeti fiókok engedélyezése a többszörös identitást használó alkalmazásokban 
+
+Android-eszközök esetében használja az alábbi kulcs-érték párokat:
+
+| **Kulcs** | com.microsoft.intune.mam.AllowedAccountUPNs |
+|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Értékek** | <ul><li>Egy vagy több <code>;</code> karakterrel elválasztott egyszerű felhasználónév (UPN).</li><li>Csak az ezzel a kulccsal meghatározott, felügyelt felhasználói fiók(ok) engedélyezett(ek).</li><li> Az Intune-ban regisztrált eszközökhöz a <code>{{userprincipalname}}</code> token használható a regisztrált felhasználói fiók helyettesítésére.</li></ul> |
+
+   > [!NOTE]
+   > Ha csak a konfigurált, többszörös identitással rendelkező szervezeti fiókokat engedélyezi, az Outlook for Android 2.2.222 vagy újabb verzióját kell használnia. 
 
 ## <a name="enter-the-json-editor"></a>A JSON-szerkesztő megnyitása
 
