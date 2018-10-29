@@ -15,12 +15,12 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e7e740d03453a437572f8f960ed21927f4fcbace
-ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
+ms.openlocfilehash: f41c228e7b5dd4084e7ebb2fab1148913b76880f
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49102038"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642948"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Alkalmazáskonfigurációs szabályzatok hozzáadása felügyelt Android-eszközökhöz
 
@@ -31,7 +31,7 @@ Alkalmazáskonfigurációs szabályzatok használata a Microsoft Intune-ban az a
 > [!Note]  
 > Az alkalmazáskonfigurációt nem minden alkalmazás támogatja. Érdeklődjön az alkalmazás fejlesztőjénél, hogy az alkalmazás az alkalmazáskonfigurációs szabályzatok támogatásához készült-e.<p></p>
 > A Microsoft Intune rendszergazdájaként felügyelheti, hogy mely felhasználói fiókok legyenek hozzáadva a Microsoft Office-alkalmazásokhoz a felügyelt eszközökön. Korlátozhatja a hozzáférést a regisztrált eszközökön csak az engedélyezett szervezeti felhasználói fiókokra, és letilthatja a személyes fiókokat. A támogató alkalmazások feldolgozzák az alkalmazás konfigurációját, majd eltávolítják és letiltják a jóvá nem hagyott fiókokat.<p></p>
-> A Microsoft Word, a Microsoft Excel és a Microsoft PowerPoint alkalmazáshoz az Android 16.0.9327.1000 vagy újabb verzióját kell használnia.
+> A Microsoft Wordhöz, a Microsoft Excelhez és a Microsoft PowerPointhoz az alkalmazás 16.0.9327.1000-es vagy újabb verzióját kell használnia.
 
 1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
