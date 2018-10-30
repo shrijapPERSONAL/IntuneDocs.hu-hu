@@ -2,7 +2,7 @@
 
 ### <a name="apple"></a>Apple
 - Apple iOS 10.0 és újabb verziók
-- Mac OS X 10.11 és újabb verziók
+- Mac OS X 10.11 és újabb verziók (2018 decemberétől a támogatott verzió 10.12-es vagy újabbra fog változni)
 
 ### <a name="google"></a>Google
 - Android 4.4 és újabb (beleértve a Samsung Knox Standard 4.4-es és újabb verzióit is)

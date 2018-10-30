@@ -15,12 +15,12 @@ ms.assetid: C29A6EEA-72B7-427E-9601-E05B408F3BB0
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b6161540b4b05ebab35942a1657adc30bce6afdb
-ms.sourcegitcommit: 445a54dc6826a549d770a9953549ae2191d391c2
+ms.openlocfilehash: 1ce1d429b830ac6f494346697bd7e44ac250d9b6
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45727475"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642956"
 ---
 # <a name="reference-for-user-entity"></a>Felhasználó típusú entitás referenciája
 
@@ -48,4 +48,4 @@ A **Felhasználó** entitásgyűjtemény felhasználói adatokat tartalmaz. A re
 
 ## <a name="next-steps"></a>További lépések
  - A **Jelenlegi felhasználó** entitásgyűjtemény segítségével a jelenleg aktív felhasználókra korlátozhatja a felhasználói adatokat. További információkért lásd: [Jelenlegi felhasználó típusú entitás referenciája](reports-ref-current-user.md).
- - A [Felhasználói élettartam ábrázolása az Intune adattárházban](reports-ref-user-timeline.md) című témakörben további információt talál arról, hogy az adattárház miképpen követi nyomon egy felhasználó élettartamát az Intune-ban.
+ - Annak részletesebb megismeréséhez, hogy az adattárház hogyan követi nyomon egy felhasználó Intune-beli élettartamát, lásd: [A felhasználói élettartam reprezentációja az Intune-adattárházban](reports-ref-user-timeline.md).

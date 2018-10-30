@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2defc433ef39562750c4579f302a9c5367c6464a
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 01de402a48362f04680c569c40a812b6a4b83cc6
+ms.sourcegitcommit: 38afcff149f9c86e92e5f1eccaa927859c395926
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828244"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307406"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>A Microsoft Intune Céges portál alkalmazásának konfigurálása
 
@@ -61,7 +61,7 @@ Ahhoz, hogy munkatársainak megadhassa az Intune-nal kapcsolatos kérdések eset
 
 
 ## <a name="company-branding-customization"></a>Vállalati arculat szerinti testreszabás       
-A Vállalati portál testre szabható a vállalat emblémájának és nevének, valamint a téma színének és a háttérnek a megadásával.     
+A Vállalati portál testre szabható a vállalat emblémájának és nevének, valamint a téma színének és a háttérnek a megadásával. A védjegyzési konfiguráció előzetes verziójának teszteszköz nélküli gyors megtekintéséhez nyissa meg a [portal.manage.microsoft.com](https://portal.manage.microsoft.com) webhelyet. Vegye figyelembe, hogy a feltöltött emblémát e-mail-sablonokhoz használja majd a rendszer.      
 
 ### <a name="theme-color"></a>Téma színe
 Témaszínt alkalmazhat a Céges portálon. Jelöljön ki egy szabványos színt, vagy adjon meg egy hexadecimális hatjegyű kódot az egyéni színhez.
@@ -82,3 +82,30 @@ Feltöltheti cége emblémáját, és láthatóvá teheti végig az Intune haszn
 |**Cégnév feltüntetése az embléma mellett**| Válassza ezt a lehetőséget, ha a megadott cégnevet meg szeretné jeleníteni a feltöltött embléma mellett. |
 
 A módosítások mentése után a panel tetején látható **Preview your settings in the Intune Web Portal** (A beállítások előnézetének megtekintése az Intune webportálon) lehetőségre kattintva tekintheti meg előre a konfigurációk megjelenítését.
+
+## <a name="windows-company-portal-keyboard-shortcuts"></a>A Windows Céges portálon használható billentyűparancsok
+
+A végfelhasználók a Windows Céges portál billentyűparancsokkal (billentyűkombinációkkal) navigálási, alkalmazás- és eszközműveletek is kiválthatnak.
+
+A következő billentyűparancsok érhetők el a Windows Céges portál alkalmazásban.
+
+| Terület | Leírás | Billentyűparancs |
+|:------------------:|:--------------:|:-----------------:|
+| Navigációs menü | Navigáció | Alt+M |
+|  | Otthoni | Alt+H |
+|  | Minden alkalmazás | Alt+A |
+|  | Telepített alkalmazások | Alt+I |
+|  | Visszajelzés küldése | Alt+F |
+|  | Saját profil | Alt+U |
+|  | Beállítások | Alt+T |
+| Kezdőlap – Eszköz csempe | Átnevezés | F2 |
+|  | Eltávolítás | Ctrl+D vagy Delete |
+|  | Hozzáférés ellenőrzése | Ctrl+M vagy F9 |
+| Eszközadatok | Átnevezés | F2 |
+|  | Eltávolítás | Ctrl+D vagy Delete |
+|  | Hozzáférés ellenőrzése | Ctrl+M vagy F9 |
+| Alkalmazás részletei | Telepítés | Ctrl+I |
+
+## <a name="next-steps"></a>További lépések
+
+- [A Windows 10-es céges portál alkalmazás manuális hozzáadása a Microsoft Intune-nal](store-apps-company-portal-app.md)

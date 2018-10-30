@@ -5,19 +5,19 @@ keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 1c0c197536cb6d6b452ff5e3607ad1af2d5a4ca8
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.openlocfilehash: 0c1daa93ff38d1f76ab8c203bf2d989318ecdf62
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058897"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425223"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Üzleti alkalmazások aláírása, hogy telepíteni lehessen őket Windows-eszközökre az Intune segítségével
 
@@ -77,7 +77,7 @@ A Windows-eszközökre (a Windows Phone-telefonokat és a Windows 10 Mobile rend
 
     -   WinPhoneCompanyPortal.ps1 – egy PowerShell-parancsprogram, amellyel aláírhatja a Vállalati portál alkalmazás fájlját, hogy az telepíthető legyen Windows Phone 8.1-es telefonokra
 
-    Azt is megteheti, hogy letölti a Windows Phone 8.1-es vagy a Windows 10-es Céges portált (az offline licenccel rendelkező csomagot) a [Vállalati Microsoft Áruházból](http://businessstore.microsoft.com/). A Munkahelyi portál alkalmazást offline licenccel kell beszerezni, és az offline használatra megfelelő csomagot kell letölteni. A kínálatban a Windows 8 és a Windows Phone 8 platformra készültként megjelölt termékek valójában a 8.1-beli megfelelőjükre utalnak. Ennek az Intune-nal való végrehajtásáról bővebben [A Vállalati Microsoft Áruházban vásárolt alkalmazások kezelése](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune) című témakörben olvashat.
+    Azt is megteheti, hogy letölti a Windows Phone 8.1-es vagy a Windows 10-es Céges portált (az offline licenccel rendelkező csomagot) a [Vállalati Microsoft Áruházból](http://businessstore.microsoft.com/). A Munkahelyi portál alkalmazást offline licenccel kell beszerezni, és az offline használatra megfelelő csomagot kell letölteni. A kínálatban a Windows 8 és a Windows Phone 8 platformra készültként megjelölt termékek valójában a 8.1-beli megfelelőjükre utalnak. Ennek az Intune-nal való végrehajtásáról bővebben [A Vállalati Microsoft Áruházban vásárolt alkalmazások kezelése](windows-store-for-business.md) című témakörben olvashat.
 
 2.  **A Windows Phone SDK letöltése** Töltse le a Windows Phone SDK 8.0-s verzióját] (http://go.microsoft.com/fwlink/?LinkId=615570)), és telepítse a számítógépre. Az SDK az alkalmazásregisztrációs adatblokkok létrehozásához szükséges.
 
@@ -119,7 +119,7 @@ A Windows-eszközökre (a Windows Phone-telefonokat és a Windows 10 Mobile rend
 
     -   `-EnterpriseId` – a vállalat azonosítója. Ezt az argumentumot vagy az AetxPath argumentumot kötelező megadni. Ha nincs megadva ez az argumentum, a program az AETX-fájlból olvassa be a vállalat azonosítóját. Például: 1000000001.
 
-6.  Telepítse a Windows Phone 8.1-es Vállalati portál alkalmazást (SSP.appx). További útmutatást a [Windows Phone rendszerű üzletági (LOB) alkalmazások hozzáadása](lob-apps-windows-phone.md) ([klasszikus portál](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune)) című témakörben talál.
+6.  Telepítse a Windows Phone 8.1-es Vállalati portál alkalmazást (SSP.appx). További útmutatást a [Windows Phone rendszerű üzletági (LOB) alkalmazások hozzáadásával](lob-apps-windows-phone.md) foglalkozó témakörben talál.
 
 ## <a name="how-to-renew-the-symantec-enterprise-code-signing-certificate"></a>A Symantec vállalati kódaláíró tanúsítvány megújítása
 
@@ -191,7 +191,7 @@ Itt ismertetjük az alkalmazás aláírásának és telepítésének ezt a módj
 2. Töltse le a Windows 10-es Céges portál alkalmazást a Vállalati Microsoft Áruházból a fenti útmutató szerint.  
 3. Futtassa a parancsfájlt azokkal a bemeneti paraméterekkel, amelyek a Windows 10-es Céges portál alkalmazás aláírásához használt parancsfájl fejlécén találhatók (alább kivonatolva). A függőségeket nem kell hozzáadni a parancsprogramhoz. Csak akkor van rájuk szükség, amikor éppen folyamatban van az alkalmazás feltöltése az Intune felügyeleti konzolra.
 
-|       Paraméter       |                                                                    Description                                                                    |
+|       Paraméter       |                                                                    Leírás                                                                    |
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | InputWin10AppxBundle  |                                             Az appxbundle forrásfájl elérési útja.                                              |
 | OutputWin10AppxBundle |                                                  Az aláírt appxbundle fájl kimeneti útja.                                                  |

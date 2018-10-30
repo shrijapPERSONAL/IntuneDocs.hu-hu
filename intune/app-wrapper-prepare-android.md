@@ -14,12 +14,12 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3025c673f695282611fdd0ded6f466036847c4a7
-ms.sourcegitcommit: a474a6496209ff3b60e014a91526f3d163a45438
+ms.openlocfilehash: b4b10d3dfa83e3fcfda6ba34bebc1257b19d83ac
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44031150"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642982"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Android-alkalmazások előkészítése alkalmazásvédelmi szabályzatokkal való felügyeletre az Intune alkalmazásburkoló eszközével
 
@@ -139,7 +139,7 @@ A lehetséges hamisítási, információfelfedési és a jogok kiterjesztéséb�
 
 -   Győződjön meg róla, hogy a bemeneti üzletági (LOB) alkalmazás, a kimeneti alkalmazás és a Java KeyStore ugyanazon a Windows-számítógépen található, ahol az alkalmazásburkoló eszköz fut.
 
--   Importálja a kimeneti alkalmazást az Intune-ba ugyanazon a számítógépen, ahol az eszköz fut. A Java keytool eszközről a [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html) ismertetőjéből tájékozódhat részletesebben.
+-   Importálja a kimeneti alkalmazást az Intune-ba ugyanazon a számítógépen, ahol az eszköz fut. További információ a Java kulcseszközről: [kulcseszköz](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html).
 
 -   Ha a kimeneti alkalmazás és az eszköz UNC elérési úton található, és az eszközt és a bemeneti fájlokat nem ugyanazon a számítógépen futtatja, a környezetet az [IPsec](http://wikipedia.org/wiki/IPsec) vagy [SMB-aláírás](https://support.microsoft.com/kb/887429) segítségével teheti biztonságossá.
 

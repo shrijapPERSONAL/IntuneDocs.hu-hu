@@ -1,81 +1,133 @@
 ---
-title: A Microsoft Intune Wi-Fi-beállításai macOS rendszerű eszközökhöz
+title: VPN-beállítások konfigurálása macOS-eszközökhöz a Microsoft Intune-ban – Azure | Microsoft Docs
 titleSuffix: ''
-description: Útmutató a Wi-Fi-kapcsolatok macOS-eszközökön való konfiguráláshoz használható Intune-beállításokhoz.
+description: Létrehozhat vagy hozzáadhat egy eszközkonfigurációs Wi-Fi-profilt a macOS-eszközökhöz. Megtekintheti a Microsoft Intune különböző beállításait, beleértve a tanúsítványok hozzáadását, az EAP-típusok kiválasztását és a hitelesítési módszer kiválasztását.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 10/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 81bd3cb54a1490732083b52a1fe242146183eebc
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e094ec72f7db6c25bcb306518df47dd5938681bf
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834982"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425342"
 ---
-# <a name="wi-fi-settings-for-macos-devices-in-microsoft-intune"></a>macOS-eszközökre vonatkozó Wi-Fi-beállítások a Microsoft Intune-ban
+# <a name="add-wi-fi-settings-for-macos-devices-in-microsoft-intune"></a>macOS-eszközökre vonatkozó Wi-Fi-beállítások hozzáadása a Microsoft Intune-ban
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+Adott Wi-Fi-beállításokkal rendelkező profilt hozhat létre, majd ezt a profilt üzembe helyezheti a macOS-eszközökön. A Microsoft Intune számos szolgáltatást nyújt, beleértve a hálózaton való hitelesítést, a PKS- vagy SCEP-tanúsítványok hozzáadását és egyéb lehetőségeket.
 
-Ez a cikk bemutatja a Microsoft Intune-ban a macOS rendszerű eszközökhöz konfigurálható Wi-Fi-beállításokat.
+Ezek a Wi-Fi-beállítások két kategóriára vannak osztva, alapszintű és vállalati szintű beállításokra.
 
-## <a name="wi-fi-settings-for-basic-and-enterprise-profiles"></a>Alapszintű és vállalati profilokban használható Wi-Fi-beállítások
+Ez a cikk ezeket a beállításokat ismerteti.
 
-- **Hálózatnév** – Adja meg a Wi-Fi-kapcsolat nevét. Ez a név jelenik meg a felhasználók számára, amikor a rendelkezésre álló kapcsolatok listáját böngészik az eszközeiken.
-- **SSID** – A szolgáltatáskészlet-azonosító rövidítése. Ez a valódi neve a vezeték nélküli hálózatnak, amelyhez az eszközök csatlakoznak. A felhasználók azonban csak a konfigurált hálózatnevet látják, amikor kiválasztják a kapcsolatot.
-- **Automatikus csatlakozás** – Az eszköz automatikusan csatlakozik, ha a hálózat hatókörében van.
-- **Rejtett hálózat** – A hálózat nem jelenik meg a rendelkezésre álló hálózatok listájában az eszközön.
-- **Proxybeállítások** – A következő lehetőségek közül választhat:
-    - **Nincs** – Semmilyen proxybeállítás nincs konfigurálva.
-    - **Manuális** – Adja meg a **Proxykiszolgáló címét** (IP-címként), és a hozzá társított **Portszámot**.
-    - **Automatikus** – A proxykiszolgálót egy konfigurációs fájl segítségével konfigurálja. Adja meg a konfigurációs fájlt tartalmazó **Proxykiszolgáló URL-címét** (például **http://proxy.contoso.com**).
+## <a name="before-you-begin"></a>Előkészületek
 
-## <a name="wi-fi-settings-for-basic-profiles-only"></a>Csak alapszintű profilokban használható Wi-Fi-beállítások
+[Eszközprofil létrehozása](device-profile-create.md).
 
-- **Biztonság típusa** – Válassza ki a Wi-Fi-hálózat hitelesítéséhez használt biztonsági protokollt a következő lehetőségek közül:
-    - **Nyitott (nincs hitelesítés)** – Csak akkor válassza ezt a lehetőséget, ha a hálózat nem védett.
-    - **WPA/WPA2 – személyes**
-    - **Adattitkosítás**
+## <a name="basic-profiles"></a>Alapszintű profilok
 
-## <a name="wi-fi-settings-for-enterprise-profiles-only"></a>Csak vállalati profilokban használható Wi-Fi-beállítások
+- **Wi-Fi típusa**: válassza az **Alapszintű** lehetőséget.
+- **Hálózat neve**: Adja meg a Wi-Fi-kapcsolat nevét. Ez a név jelenik meg a felhasználók számára, amikor az eszközön rendelkezésre álló kapcsolatok listáját böngészik.
+- **SSID**: A **szolgáltatáskészlet-azonosító** rövidítése. Ez a tulajdonság azon vezeték nélküli hálózat valódi neve, amelyhez az eszközök csatlakoznak. A felhasználók azonban csak a konfigurált hálózatnevet látják, amikor kiválasztják a kapcsolatot.
+- **Automatikus csatlakozás**: Válassza az **Engedélyezés** lehetőséget, hogy automatikusan csatlakozzon ehhez a hálózathoz, amikor az eszköz hatótávolságon belül van. Válassza a **Letiltás** lehetőséget, ha meg szeretné akadályozni az eszközök automatikus csatlakozását.
+- **Rejtett hálózat**: Válassza az **Engedélyezés** lehetőséget, hogy a hálózat ne jelenjen meg az eszközön elérhető hálózatok listájában. A rendszer ilyenkor nem továbbítja az SSID-t. Válassza a **Letiltás** lehetőséget, ha meg szeretné jeleníteni a hálózatot az eszközön elérhető hálózatok listájában.
+- **Biztonság típusa**: Válassza ki a Wi-Fi-hálózat hitelesítéséhez használt biztonsági protokollt. A választható lehetőségek:
 
-- **EAP típusa** – Válassza ki az EAP protokoll biztonságos vezeték nélküli kapcsolatok hitelesítéséhez használni kívánt típusát a következő lehetőségek közül:
-    - **EAP-FAST**
-    - **EAP-SIM**
-    - **EAP-TLS**
-    - **EAP-TTLS**
-    - **LEAP**
-    - **PEAP**
+  - **Nyitott (nincs hitelesítés)**: Csak akkor válassza ezt a lehetőséget, ha a hálózat nem védett.
+  - **WPA/WPA2 – Személyes**: Írja be a jelszót az **Előmegosztott kulcs** mezőbe. A cég hálózatának beállítása vagy konfigurálása során a rendszer egy jelszót vagy egy hálózati kulcsot is konfigurál. Adja meg ezt a jelszót vagy hálózati kulcsot a PSK értékeként.
+  - **Adattitkosítás**
 
-### <a name="further-options-when-you-choose-an-eap-type"></a>További lehetőségek az EAP típusának kiválasztásakor
+- **Proxybeállítások**: A választható lehetőségek:
+  - **Nincs**: Semmilyen proxybeállítás nincs konfigurálva.
+  - **Manuális**: Adja meg IP-címként a **proxykiszolgáló címét**, és adja meg a **portszámát**.
+  - **Automatikus**: A proxykiszolgálót egy fájl segítségével konfigurálja. Adja meg a konfigurációs fájlt tartalmazó **proxykiszolgáló URL-címét** (például: `http://proxy.contoso.com`).
 
+## <a name="enterprise-profiles"></a>Vállalati profilok
 
-|Beállítás neve|További információ|A következő esetekben használja|
-|--------------|-------------|----------|
-|**Védett hozzáférési hitelesítő adatok (PAC) beállításai**|Akkor válassza ezt a lehetőséget, ha az ügyfél és a hitelesítési kiszolgáló között a védett hozzáférési hitelesítő adatok használatával hitelesített csatornát szeretne létrehozni. Válassza ki az alábbi lehetőségek egyikét:<br>- **PAC használata** – Ha van, akkor a rendszer egy már létező PAC-fájlt használ.<br>- **PAC használata és kiépítése** – A PAC-fájl kiépítése az eszközökön.<br>- **PAC használata és kiépítése névtelenül** – A PAC-fájl kiépítése az eszközökön és a PAC-fájl kiépítésének ellenőrzése a kiszolgáló hitelesítése nélkül.|Ha az EAP-típus **EAP-FAST**|
+- **Wi-Fi típusa**: Válassza a **Vállalati** elemet.
+- **SSID**: A **szolgáltatáskészlet-azonosító** rövidítése. Ez a tulajdonság azon vezeték nélküli hálózat valódi neve, amelyhez az eszközök csatlakoznak. A felhasználók azonban csak a konfigurált hálózatnevet látják, amikor kiválasztják a kapcsolatot.
+- **Automatikus csatlakozás**: Válassza az **Engedélyezés** lehetőséget, hogy automatikusan csatlakozzon ehhez a hálózathoz, amikor az eszköz hatótávolságon belül van. Válassza a **Letiltás** lehetőséget, ha meg szeretné akadályozni az eszközök automatikus csatlakozását.
+- **Rejtett hálózat**: Válassza az **Engedélyezés** lehetőséget, hogy a hálózat ne jelenjen meg az eszközön elérhető hálózatok listájában. A rendszer ilyenkor nem továbbítja az SSID-t. Válassza a **Letiltás** lehetőséget, ha meg szeretné jeleníteni a hálózatot az eszközön elérhető hálózatok listájában.
 
-#### <a name="server-trust"></a>Kiszolgáló megbízhatósága
+- **EAP típusa**: Válassza ki azt az EAP-protokollt, amelyet használni szeretne a biztonságos vezeték nélküli kapcsolatok hitelesítéséhez. A választható lehetőségek:
 
+  - **EAP-FAST**: Adja meg a **Védett hitelesítő adatok (PAC) beállításait**. Ez a lehetőség védett hozzáférési hitelesítő adatok használatával hoz létre egy hitelesített csatornát az ügyfél és a hitelesítési kiszolgáló között. A választható lehetőségek:
+    - **Ne használja (PAC)**
+    - **Használja (PAC)**: Ha rendelkezik meglévő PAC-fájllal, használja azt.
+    - **PAC használata és kiépítése**: A PAC-fájl létrehozása és hozzáadása az eszközökhöz.
+    - **PAC névtelen használata és kiépítése**: A PAC-fájl létrehozása és hozzáadása az eszközökhöz a kiszolgálón való hitelesítés nélkül.
 
-|Beállítás neve|További információ|A következő esetekben használja|
-|--------------|-------------|----------|
-|**Tanúsítványkiszolgálók neve**|Adjon meg egy vagy több, a megbízható hitelesítésszolgáltató (CA) által kiállított tanúsítványban használt köznapi nevet. Ha megadja ezt az információt, elkerülheti a dinamikus megbízhatósági párbeszédpanelt, amely megjelenik a felhasználók eszközein, amikor ehhez a Wi-Fi-hálózathoz csatlakoznak.|Ha az EAP-típus **EAP-TLS**, **EAP-TTLS**, vagy **PEAP**.|
-|**Kiszolgálói érvényesítéshez használandó főtanúsítvány**|Válassza ki a kapcsolat hitelesítéséhez használni kívánt megbízható főtanúsítvány-profilt. |Ha az EAP-típus **EAP-TLS**, **EAP-TTLS**, vagy **PEAP**|
-|**Identitásadatok védelme (külső identitás)**|Adja meg az EAP-identitásra irányuló kérelemre adott válasz szövegét. Ez a szöveg tetszőleges érték lehet. A hitelesítés során a rendszer először a névtelen identitást küldi el, majd később egy biztonságos csatornán küldi el a valódi azonosítót.|Ha az EAP-típus **PEAP**|
+  - **EAP-SIM**
 
+  - **EAP-TLS**: Ezt is adja meg:
 
-#### <a name="client-authentication"></a>Ügyfél-hitelesítés
+    - **Kiszolgáló megbízhatósága** - **Tanúsítványkiszolgálók nevei**: **Adjon meg** egy vagy több, a megbízható hitelesítésszolgáltató (CA) által kiállított tanúsítványokban használt köznapi nevet. Ha megadja ezt az információt, elkerülheti azt a dinamikus megbízhatósági ablakot, amely akkor jelenik meg a felhasználók eszközein, amikor ehhez a Wi-Fi-hálózathoz csatlakoznak.
+    - **Főtanúsítvány a kiszolgálóérvényesítéshez**: Válasszon egy meglévő megbízható főtanúsítvány-profilt. A rendszer ezt a tanúsítványt adja meg a kiszolgálónak, amikor az ügyfél a hálózathoz csatlakozik, és ezzel hitelesíti a kapcsolatot.
 
+      A módosítások mentéséhez válassza az **OK** gombot.
 
-|                                     Beállítás neve                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       További információ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |                            A következő esetekben használja                            |
-|--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| <strong>Ügyfél-hitelesítéshez használandó ügyféltanúsítvány (identitástanúsítvány)</strong> |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Válassza ki a kapcsolat hitelesítéséhez használni kívánt SCEP- vagy PKCS-tanúsítványprofilt.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |              Ha az EAP-típus <strong>EAP-TLS</strong>              |
-|                        <strong>Hitelesítési módszer</strong>                        | Válassza ki a kapcsolat hitelesítési módszerét:<br>- <strong>Tanúsítványok</strong>, ha a kiszolgálónak az identitás tanúsítványaként benyújtott SCEP- vagy PKCS-ügyféltanúsítványt szeretné kiválasztani.<br><br>- <strong>Felhasználónév és jelszó</strong> – ha más hitelesítési módszert szeretne megadni. <br><br>Ha a <strong>Felhasználónév és jelszó</strong> lehetőséget választotta, konfigurálja a következőket:<br><br>-  <strong>Nem EAP-módszer (belső identitás)</strong>, majd válassza ki, hogyan hitelesíti a kapcsolatot:<br>- <strong>Nincs</strong><br>- <strong>Titkosítatlan jelszó (PAP)</strong><br>- <strong>Challenge Handshake Authentication Protocol (CHAP)</strong><br>- <strong>Microsoft CHAP (MS-CHAP)</strong><br>- <strong>Microsoft CHAP 2-es verzió (MS-CHAP v2)</strong><br>Az elérhető lehetőségek a választott EAP-típustól függnek.<br><br><strong>és</strong><br><br>- <strong>Identitásadatok védelme (külső identitás)</strong> – Adja meg az EAP-identitásra irányuló kérelemre adott válasz szövegét. Ez a szöveg tetszőleges érték lehet. A hitelesítés során a rendszer először a névtelen identitást küldi el, majd később egy biztonságos csatornán küldi el a valódi azonosítót. | Ha az EAP-típus <strong>EAP-TTLS</strong> vagy <strong>PEAP</strong> |
+    - **Ügyfél-hitelesítés** - **Ügyféltanúsítvány az ügyfél hitelesítéséhez (identitástanúsítvány)**: Válassza ki azt az SCEP vagy PKCS ügyféltanúsítvány-profilt, amely szintén üzembe lesz helyezve az eszközön. Az eszköz ezt a tanúsítványt adja meg identitásként a kiszolgálónak a kapcsolat hitelesítéséhez.
 
+      A módosítások mentéséhez válassza az **OK** gombot.
+
+  - **EAP-TTLS**: Ezt is adja meg:
+
+    - **Kiszolgáló megbízhatósága** - **Tanúsítványkiszolgálók nevei**: **Adjon meg** egy vagy több, a megbízható hitelesítésszolgáltató (CA) által kiállított tanúsítványokban használt köznapi nevet. Ha megadja ezt az információt, elkerülheti azt a dinamikus megbízhatósági ablakot, amely akkor jelenik meg a felhasználók eszközein, amikor ehhez a Wi-Fi-hálózathoz csatlakoznak.
+    - **Főtanúsítvány a kiszolgálóérvényesítéshez**: Válasszon egy meglévő megbízható főtanúsítvány-profilt. A rendszer ezt a tanúsítványt adja meg a kiszolgálónak, amikor az ügyfél a hálózathoz csatlakozik, és ezzel hitelesíti a kapcsolatot.
+
+      A módosítások mentéséhez válassza az **OK** gombot.
+
+    - **Ügyfél-hitelesítés** – Válasszon egy **hitelesítési módszert**. A választható lehetőségek:
+
+      - **Felhasználónév és jelszó**: Felhasználónév és jelszó kérése a felhasználótól a kapcsolat hitelesítéséhez. Ezt is adja meg:
+        - **Nem EAP-módszer (belső identitás)**: Válassza ki a kapcsolat hitelesítési módját. Mindenképpen ugyanazt a protokollt válassza, amely a Wi-Fi-hálózathoz van konfigurálva.
+
+          A választható lehetőségek: **Titkosítatlan jelszó (PAP)**, **Challenge Handshake Authentication Protocol (CHAP)**, **Microsoft CHAP (MS-CHAP)** vagy **Microsoft CHAP 2-es verzió (MS-CHAP v2)**
+
+      - **Tanúsítványok**: Válassza ki azt az SCEP vagy PKCS ügyféltanúsítvány-profilt, amely szintén üzembe lesz helyezve az eszközön. Az eszköz ezt a tanúsítványt adja meg identitásként a kiszolgálónak a kapcsolat hitelesítéséhez.
+
+        A módosítások mentéséhez válassza az **OK** gombot.
+
+      - **Identitásvédelem (külső identitás)**: Adja meg az EAP-identitáskérésre adott válasz szövegét. Ez a szöveg bármilyen érték lehet, például `anonymous`. A hitelesítés során a rendszer először a névtelen identitást küldi el, majd később egy biztonságos csatornán küldi el a valódi azonosítót.
+
+  - **LEAP**
+
+  - **PEAP**: Ezt is adja meg:
+
+    - **Kiszolgáló megbízhatósága** - **Tanúsítványkiszolgálók nevei**: **Adjon meg** egy vagy több, a megbízható hitelesítésszolgáltató (CA) által kiállított tanúsítványokban használt köznapi nevet. Ha megadja ezt az információt, elkerülheti azt a dinamikus megbízhatósági ablakot, amely akkor jelenik meg a felhasználók eszközein, amikor ehhez a Wi-Fi-hálózathoz csatlakoznak.
+    - **Főtanúsítvány a kiszolgálóérvényesítéshez**: Válasszon egy meglévő megbízható főtanúsítvány-profilt. A rendszer ezt a tanúsítványt adja meg a kiszolgálónak, amikor az ügyfél a hálózathoz csatlakozik, és ezzel hitelesíti a kapcsolatot.
+
+      A módosítások mentéséhez válassza az **OK** gombot.
+
+    - **Ügyfél-hitelesítés** – Válasszon egy **hitelesítési módszert**. A választható lehetőségek:
+
+      - **Felhasználónév és jelszó**: Felhasználónév és jelszó kérése a felhasználótól a kapcsolat hitelesítéséhez. 
+
+      - **Tanúsítványok**: Válassza ki azt az SCEP vagy PKCS ügyféltanúsítvány-profilt, amely szintén üzembe lesz helyezve az eszközön. Az eszköz ezt a tanúsítványt adja meg identitásként a kiszolgálónak a kapcsolat hitelesítéséhez.
+
+        A módosítások mentéséhez válassza az **OK** gombot.
+
+      - **Identitásvédelem (külső identitás)**: Adja meg az EAP-identitáskérésre adott válasz szövegét. Ez a szöveg bármilyen érték lehet, például `anonymous`. A hitelesítés során a rendszer először a névtelen identitást küldi el, majd később egy biztonságos csatornán küldi el a valódi azonosítót.
+
+- **Proxybeállítások**: A választható lehetőségek:
+  - **Nincs**: Semmilyen proxybeállítás nincs konfigurálva.
+  - **Manuális**: Adja meg IP-címként a **proxykiszolgáló címét**, és adja meg a **portszámát**.
+  - **Automatikus**: A proxykiszolgálót egy fájl segítségével konfigurálja. Adja meg a konfigurációs fájlt tartalmazó **proxykiszolgáló URL-címét** (például: `http://proxy.contoso.com`).
+
+A módosítások mentéséhez válassza az **OK** > **Létrehozás** lehetőséget. Ekkor létrejön a profil, és megjelenik a profilok listájában.
+
+## <a name="next-steps"></a>További lépések
+
+A profil létrejön, de egyelőre nem csinál semmit. A következő lépés a [profil hozzárendelése](device-profile-assign.md).
+
+## <a name="more-resources"></a>További források
+
+[Wi-Fi-beállítások áttekintése](wi-fi-settings-configure.md), beleértve a többi rendelkezésre álló platformot is.

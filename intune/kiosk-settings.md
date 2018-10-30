@@ -5,23 +5,27 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/2/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9dd7608981da1454c1f3be29eb6ff40a5d7f3394
-ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
+ms.openlocfilehash: 59e2ab4635c8488b99781ac123aacd0854967dc8
+ms.sourcegitcommit: c3ac9e5f6240223cb5dfed8b44c7425066d6ea86
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45562867"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49380031"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Kioszkbeállítások Windows 10 (és újabb) rendszerekhez az Intune-ban
 
-A Windows 10-eszközök kioszkprofilokkal vannak konfigurálva egy vagy több alkalmazás futtatására. Kioszkprofil létrehozásakor kiválaszthatja, hogy megjelenjen-e a Start menü, legyen-e telepítve webböngésző, és további beállításokat adhat meg.
+A Windows 10-eszközökön az Intune segítségével ezeket az eszközöket kioszk módban futtathatja. A kioszk futtathat egyetlen alkalmazást, vagy többet. Emellett megjelenítheti és testre szabhatja a Start menüt, hozzáadhat különböző alkalmazásokat, beleértve a Win32-alkalmazásokat, egy adott kezdőlapot adhat egy webböngészőhöz és így tovább. 
+
+A cikk ezen lépéseit követve egyalkalmazásos kioszkot vagy többalkalmazásos kioszkot hozhat létre az Intune-ban.
+
+Az Intune eszközönként egy kioszkprofilt támogat. Ha egy adott eszközön több kioszkprofilra van szüksége, használhat egy [egyéni OMA-URI](custom-settings-windows-10.md)-t.
 
 ## <a name="kiosk-settings"></a>Kioszkbeállítások
 
@@ -30,100 +34,161 @@ A Windows 10-eszközök kioszkprofilokkal vannak konfigurálva egy vagy több al
 3. Adja meg a következő tulajdonságokat:
 
    - **Név**: Adja meg az új profil leíró nevét.
-   - **Leírás:** Itt adhatja meg a profil leírását. Nem kötelező, de ajánlott a használata.
+   - **Leírás:** Itt adhatja meg a profil leírását. A beállítás használata nem kötelező, de ajánlott.
    - **Platform**: Válassza a **Windows 10 és újabb** lehetőséget.
    - **Profil típusa**: Válassza a **Kioszk (Előnézet)** lehetőséget.
-   
-4. Válassza ki a **Kioszk** > **Hozzáadás** lehetőséget.
-5. Adjon meg egy **Kioszkkonfigurációs nevet** a kioszkmódhoz. Ez a név azonosítja az alkalmazások csoportját, ezeknek az alkalmazásoknak az elrendezését a Start menüben, és a kioszkkonfigurációhoz hozzárendelt felhasználókat.
-6. Válassza a **Kioszkmód** lehetőséget. A **Kioszkmód** azonosítja a szabályzat által támogatott teljes képernyős mód típusát. A lehetőségek a következők:
+
+4. Válasszon egy **kioszkmódot**. A **Kioszkmód** azonosítja a szabályzat által támogatott teljes képernyős mód típusát. A lehetőségek a következők:
 
     - **Nincs konfigurálva** (alapértelmezés): A szabályzat nem engedélyezi a kioszkmódot.
-    - **Egyetlen teljes képernyős alkalmazásos kioszk**: A profil lehetővé teszi, hogy az eszköz egyetlen felhasználói fiókként fusson, és egyetlen Univerzális Windows-platformbeli (UWP) alkalmazáshoz zárolja azt. Ezért, amikor a felhasználó bejelentkezik, elindul az adott alkalmazás. Ez a mód emellett meggátolja a felhasználót abban, hogy új alkalmazásokat nyisson meg vagy másik futó alkalmazásra váltson.
-    - **Többalkalmazásos kioszk**: A profil lehetővé teszik több Univerzális Windows-platformbeli (UWP) alkalmazás vagy Win32-es alkalmazások futtatását. Különböző alkalmazásokat különböző felhasználói fiókokhoz is hozzárendelhet. Csak a hozzáadott alkalmazások lesznek elérhetők a felhasználóknak. A többalkalmazásos kioszk (vagy fix célú eszköz) előnye az, hogy egy olyan, könnyen érthető környezetet nyújt a felhasználóknak, amelyben csak a szükséges alkalmazások érhetőek el. A szükségtelen alkalmazásokat pedig elrejti.
+    - **Egyalkalmazásos, teljes képernyős kioszk**: az eszköz egyetlen felhasználói fiókkal fut, és egyetlen Áruházbeli alkalmazásra van korlátozva. Ezért, amikor a felhasználó bejelentkezik, elindul az adott alkalmazás. Ez a mód emellett meggátolja a felhasználót abban, hogy új alkalmazásokat nyisson meg vagy másik futó alkalmazásra váltson.
+    - **Többalkalmazásos kioszk**: az eszköz több Áruházbeli alkalmazást, Win32-alkalmazást vagy postaláda Windows-alkalmazást futtat az alkalmazásfelhasználói modellben használt azonosító (AUMID) használatával. Az eszközön csak a hozzáadott alkalmazások lesznek elérhetők.
 
-#### <a name="single-full-screen-app-kiosks"></a>Egyetlen teljes képernyős alkalmazásos kioszkok
-Adja meg a következő beállításokat:
+        A többalkalmazásos kioszk (vagy fix célú eszköz) előnye az, hogy egy olyan, könnyen érthető környezetet nyújt a felhasználóknak, amelyben csak a szükséges alkalmazások érhetőek el. A szükségtelen alkalmazásokat pedig elrejti.
 
-- **Univerzális Windows Platform (UWP) alkalmazásazonosító**: Adja meg a kioszkalkalmazás számára **Az alkalmazás alkalmazásfelhasználói modellben használt azonosítója (AUMID)** értékét. Vagy válasszon ki egy, az [ügyfélalkalmazások](apps-add.md) használatával már hozzáadott, felügyelt alkalmazást.
+## <a name="single-full-screen-app-kiosks"></a>Egyetlen teljes képernyős alkalmazásos kioszkok
+Egyalkalmazásos kioszk mód választásakor adja meg a következő beállításokat:
 
-    Lásd: [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Telepített alkalmazás alkalmazásfelhasználói modellben használt azonosítójának megkeresése).
+- **Felhasználói bejelentkezés típusa**: a hozzáadott alkalmazások a megadott felhasználói fiókkal futnak. A választható lehetőségek:
 
-- **Felhasználói fiók típusa**: A választható lehetőségek:
+  - **Automatikus bejelentkezés (Windows 10, 1803-as vagy újabb verzió)**: olyan, nyilvános környezetben működő kioszkokhoz, amelyek nem igényelnek felhasználói bejelentkezést, a vendégfiókokhoz hasonlóan. Ez a beállítás az [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp)-t használja.
+  - **Helyi felhasználói fiók**: Adja meg a helyi (az eszközön létező) felhasználói fiókot. A megadott fiókkal történik a bejelentkezés a kioszkba.
 
-  - **Automatikus bejelentkezés**: Nyilvános környezetben működő, automatikus bejelentkezésű kioszkeszköz esetében ajánlott a legalacsonyabb szintű hozzáféréssel rendelkező felhasználót (például egyszerű helyi felhasználói fiókot) választania. Ha Azure Active Directory- (AD-) fiókot kíván konfigurálni a kioszkmódhoz, használja az `AzureAD\user@contoso.com` formátumot.
-  - **Helyi felhasználói fiók**: Adja meg a kioszkalkalmazáshoz társított helyi (eszközön létező) felhasználói fiókot, vagy a Microsoft Azure Active Directory-fiókot. Azure AD-tartományhoz csatlakozó fiókot a következő formában tud megadni: `domain\username@tenant.org`.
+- **Alkalmazástípus**: Válassza az **Áruházbeli alkalmazás** lehetőséget.
 
-#### <a name="multi-app-kiosks"></a>Többalkalmazásos kioszk
-Az ebben az üzemmódban lévő alkalmazások elérhetők a Start menüben. A felhasználó kizárólag ezeket az alkalmazásokat tudja megnyitni. 
+- **Kioszkmódban futtatni kívánt alkalmazás**: Válassza az **Áruházbeli alkalmazás hozzáadása** lehetőséget, és válasszon alkalmazást a listából.
 
-A [többalkalmazásos kioszkeszközök](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) olyan kioszkkonfigurációt használnak, amely más beállítások mellett tartalmazza az engedélyezett alkalmazások listáját.
+    Nincsenek alkalmazások a listában? Adjon hozzá néhányat az [Ügyfélalkalmazások](apps-add.md) rész lépéseinek használatával.
 
-Adja meg a következő beállításokat:
+    A módosítások mentéséhez válassza az **OK** gombot.
 
-- **Win32-alkalmazás hozzáadása**: A Win32-alkalmazás hagyományos asztali alkalmazás. Adja meg az **Alkalmazásnév** és az **Azonosító** értékét. Az **Azonosító** a végrehajtható fájl teljes elérési útja az eszközön.
-- **Felügyelt alkalmazások hozzáadása**: Válasszon ki egy, az [Intune-beli ügyfélalkalmazások](apps-add.md) használatával már hozzáadott, felügyelt alkalmazást.
-- **Alkalmazás hozzáadása AUMID alapján**: Adja meg az [alkalmazás AUMID azonosítóját](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP-alkalmazások).
-- **Tálca** – Válassza az **Engedélyezés** beállítást a tálca megjelenítéséhez, vagy hagyja meg az alapértelmezett **Nincs konfigurálva** beállítást a tálca kioszkeszközön való elrejtéséhez.
-- **Start menü elrendezése**: Adjon meg egy XML-fájlt, amely meghatározza, hogyan jelenjenek meg az alkalmazások a Start menüben, beleértve azok sorrendjét. A [Start menü elrendezésének testreszabása és exportálása](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) című cikkben találhat útmutatást és XML-mintát.
+- **Teljes képernyős böngésző beállításai**: ezek a beállítások vezérlik a böngészőalkalmazást kioszkmódban. Feltétlenül szerezze be a [teljes képernyős böngészőalkalmazást](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP) az Áruházból, adja hozzá az Intune-hoz [ügyfélalkalmazásként](apps-add.md), majd rendelje hozzá a kioszkeszközökhöz.
 
-  Az XML-fájlok használatáról és létrehozásáról bővebb információt a [Több alkalmazást futtató Windows 10 rendszerű kioszk létrehozása](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file) című cikkben találhat.
+  Adja meg a következő beállításokat:
 
-- **Felhasználói fiók típusa**: Adjon meg egy vagy több olyan felhasználói fiókot, amely jogosult a társított alkalmazások használatára. A fiókkal való bejelentkezéskor csak a konfigurációban meghatározott alkalmazások érhetők el. Ez lehet egy helyi fiók az eszközön, vagy egy Microsoft Azure Active Directory-fiók, amely a teljes képernyős alkalmazáshoz van társítva.
+  - **Alapértelmezett kezdőlap URL-címe**: Adja meg az alapértelmezett URL-címet, amelyet a teljes képernyős böngésző indításakor vagy újraindításkor meg szeretne jeleníteni. Például írja be a következőt: `http://bing.com` vagy `http://www.contoso.com`.
 
-    Nyilvános környezetben működő, automatikus bejelentkezésű kioszkeszköz esetében ajánlott a legalacsonyabb szintű hozzáféréssel rendelkező felhasználótípust (például egyszerű helyi felhasználó fiókot) választania. Ha Azure Active Directory- (AD-) fiókot kíván konfigurálni a kioszkmódhoz, használja az `domain\user@tenant.com` formátumot.
+  - **Kezdőlap gomb**: **Megjeleníti** vagy **elrejti** a teljes képernyős böngésző kezdőlap gombját. Alapértelmezés szerint a gomb nem jelenik meg.
 
-## <a name="kiosk-web-browser-settings"></a>Teljes képernyős böngészőbeállítások megadása
+  - **Navigációs gombok**: **Megjelenítik** vagy **elrejtik** az előre és vissza gombokat. A navigációs gombok alapértelmezés szerint nem jelennek meg.
 
-Ezek a beállítások vezérlik a böngészőalkalmazást kioszkmódban. Győződjön meg róla, hogy üzembe helyezett egy böngészőalkalmazást a kioszkmódban lévő eszközökön az [ügyfélalkalmazások](apps-add.md) használatával.
+  - **Munkamenet befejezése gomb**: **Megjeleníti** vagy **elrejti** a munkamenet befejezése gombot. Ha a gomb látható, és a felhasználó kiválasztja, akkor az alkalmazás megerősítést kér a munkamenet befejezéséhez. Megerősítés után a böngésző minden böngészési adatot (cookie-k, gyorsítótár stb.) töröl, majd megnyitja az alapértelmezett URL-címet. Alapértelmezés szerint a gomb nem jelenik meg.
 
-1. Adja meg a következő beállításokat:
+  - **A böngésző frissítése üresjárati idő után**: Adja meg az üresjárati időt (1-1440 perc), amelynek elteltével a teljes képernyős böngésző friss állapotban újraindul. Az üresjárati idő az utolsó felhasználói beavatkozás óta eltelt percek száma. Alapértelmezés szerint az érték üres, ami azt jelenti, hogy a nincs üresjárati időkorlát.
 
-    - **Alapértelmezett kezdőlap URL-címe**: Adja meg az alapértelmezett URL-címet, amelyet a teljes képernyős böngésző megnyit indításkor vagy újraindításkor.
+  - **Engedélyezett webhelyek**: használja ezt a beállítást adott webhelyek megnyitásának engedélyezéséhez. Más szóval, ezzel a beállítással korlátozhatja vagy megakadályozhatja a webhelyek megjelenítését az eszközön. Például engedélyezheti a `http://contoso.com*` összes webhelyének megnyitását. Alapértelmezés szerint az összes webhely engedélyezett.
 
-    - **Kezdőlap gomb**: A teljes képernyős böngésző Kezdőlap gombjának megjelenítése (**Engedélyezés**) vagy elrejtése (**Nincs konfigurálva**). Alapértelmezés szerint a gomb nincs konfigurálva.
+    Adott webhelyek engedélyezéséhez töltse fel az engedélyezett webhelyek listáját tartalmazó .csv-fájlt. Ha nem ad hozzá .csv-fájlt, az összes webhely használata engedélyezve lesz. Az Intune támogatja a * (csillag) használatát helyettesítő karakterként.
 
-    - **Navigációs gomb**: Az előre és vissza gombok megjelenítése (**Engedélyezés**) vagy elrejtése (**Nincs konfigurálva**). A navigációs gombok alapértelmezés szerint nincsenek konfigurálva.
+  A módosítások mentéséhez válassza az **OK** gombot.
 
-    - **Munkamenet befejezése gomb**: A munkamenet befejezése gomb megjelenítése (**Engedélyezés**) vagy elrejtése (**Nincs konfigurálva**). Ha a gomb látható, és a felhasználó kiválasztja, akkor az alkalmazás megerősítést kér a munkamenet befejezéséhez. Megerősítés után a böngésző minden böngészési adatot (cookie-k, gyorsítótár stb.) töröl, és visszatér az alapértelmezett URL-címre. Alapértelmezés szerint a gomb nincs konfigurálva. 
+## <a name="multi-app-kiosks"></a>Többalkalmazásos kioszk
 
-    - **Böngésző frissítése, ha a felhasználó túllépi az inaktivitási időkorlátot**: Adja meg a munkamenet üresjárati idejét percben, amelynek elteltével a teljes képernyős böngésző friss állapotban újraindul. Az érték 1 és 1440 közötti egész szám. Alapértelmezés szerint az érték üres, ami azt jelenti, hogy a nincs üresjárati időkorlát.
+Az ebben az üzemmódban lévő alkalmazások elérhetők a Start menüben. A felhasználó kizárólag ezeket az alkalmazásokat tudja megnyitni.
 
-    - **Letiltott webhelyek**: A letiltott webhelyek URL-címeinek listája (a helyettesítő karakterek használata megengedett). Ezzel a beállítással megakadályozhatja, hogy a böngésző adott webhelyeket nyisson meg. **Importálhat** is egy listát tartalmazó .csv-fájlt. Vagy hozzon létre egy .csv-fájlt (**Exportálás**), amely tartalmazza a felvett webhelyeket.
+Többalkalmazásos kioszk mód választásakor adja meg a következő beállításokat:
 
-    - **Engedélyezett webhelyek**: Kivétellista a blokkolt webhelyek URL-címeihez (helyettesítő karakterek használata megengedett). Ezzel a beállítással engedélyezheti a böngészőnek meghatározott webhelyek megnyitását. Ezek a kivételek a blokkolt URL-címek részhalmazába tartoznak. Ha egy URL-cím megtalálható a blokkolt webhelyek listájában és a webhelyek kivétellistájában, akkor a kivételszabály lesz rá érvényes.
+- **S módú Windows 10-es eszközök megcélzása**: Válassza az **Igen** lehetőséget az Áruházbeli és az AUMID-alkalmazások engedélyezéséhez (a Win32-alkalmazások kizárásával) a kioszkprofilban. Válassza a **Nem** lehetőséget az áruházbeli alkalmazások, a Win32-alkalmazások és az AUMID-alkalmazások engedélyezéséhez a kioszkprofilban. Ha a **Nem** lehetőséget választja, a kioszkprofil S-módú eszközökön nem lesz üzembe helyezve.
 
-    **Importálhat** is egy listát tartalmazó .csv-fájlt. Vagy hozzon létre egy .csv-fájlt (**Exportálás**), amely tartalmazza a felvett webhelyeket.
+- **Felhasználói bejelentkezés típusa**: a hozzáadott alkalmazások a megadott felhasználói fiókkal futnak. A választható lehetőségek:
 
-2. A módosítások mentéséhez válassza az **OK** gombot.
+  - **Automatikus bejelentkezés (Windows 10, 1803-as vagy újabb verzió)**: olyan, nyilvános környezetben működő kioszkokhoz, amelyek nem igényelnek felhasználói bejelentkezést, a vendégfiókokhoz hasonlóan. Ez a beállítás az [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp)-t használja.
+  - **Helyi felhasználói fiók**: **Adja hozzá** a helyi (az eszközön létező) felhasználói fiókot. A megadott fiókkal történik a bejelentkezés a kioszkba.
+  - **Azure AD-felhasználó vagy csoport (Windows 10, 1803-as vagy újabb verzió)**: Válassza a **Hozzáadás** lehetőséget Azure AD-felhasználók vagy -csoportok kiválasztásához a listából. Több felhasználót és csoportot is kiválaszthat. A módosítások mentéséhez válassza az **Választ** gombot.
+  - **HoloLens vendég**: Ehhez a vendégfiókhoz [A megosztott számítógép üzemmód alapelvei](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts) című szakaszban ismertetettek alapján nem szükségesek hitelesítő adatok.
+
+- **Alkalmazások**: Adja hozzá a kioszkmódú eszközön futtatandó alkalmazásokat. Ne feledje, hogy több alkalmazást is hozzáadhat.
+
+  - **Áruházbeli alkalmazás hozzáadása**: Alkalmazás hozzáadása a Vállalati Microsoft Áruházból. Ha nem találhatók alkalmazások a listában, akkor beszerezheti az alkalmazásokat, és [hozzáadhatja őket az Intune-hoz](store-apps-windows.md). Például a teljes képernyős böngészőt, az Excelt, a OneNote-ot és egyéb alkalmazásokat is hozzáadhat.
+
+  - **Win32-alkalmazás hozzáadása**: a Win32-alkalmazások hagyományos asztali alkalmazások, mint például a Visual Studio Code vagy a Google Chrome. Adja meg a következő tulajdonságokat:
+
+    - **Alkalmazás neve**: Kötelező. Adjon nevet az alkalmazásnak.
+    - **Helyi elérési út**: Kötelező. Adja meg a végrehajtható fájl elérési útját, például `C:\Program Files (x86)\Microsoft VS Code\Code.exe` vagy `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`.
+    - **Alkalmazás alkalmazásfelhasználói modellben használt azonosítója (AUMID)**: Választható lehetőség. Adja meg a Win32-alkalmazás alkalmazásfelhasználói modellben használt azonosítóját. Ez a beállítás meghatározza a csempe kezdő elrendezését az asztalon. Az azonosító a [Telepített alkalmazás alkalmazásfelhasználói modellben használt azonosítójának megkeresése](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) című témakörben leírtak alapján kereshető meg.
+    - **Csempeméret**: Kötelező. Válassza a Kicsi, Közepes, Széles és Nagy alkalmazáscsempe-méretek egyikét.
+  
+  - **Hozzáadása AUMID alapján**: használja ezt a beállítást a postaláda Windows-alkalmazások, például a Jegyzettömb vagy a Számológép hozzáadásához. Adja meg a következő tulajdonságokat: 
+
+    - **Alkalmazás neve**: Kötelező. Adjon nevet az alkalmazásnak.
+    - **Alkalmazás alkalmazásfelhasználói modellben használt azonosítója (AUMID)**: Kötelező. Adja meg a Windows-alkalmazás alkalmazásfelhasználói modellben használt azonosítóját. Az azonosító a [Telepített alkalmazás alkalmazásfelhasználói modellben használt azonosítójának megkeresése](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) című témakörben leírtak alapján kereshető meg.
+    - **Csempeméret**: Kötelező. Válassza a Kicsi, Közepes, Széles és Nagy alkalmazáscsempe-méretek egyikét.
+
+  > [!TIP]
+  > Miután hozzáadta az összes alkalmazást, kattintással és húzással módosíthatja a megjelenítés sorrendjét az alkalmazások listájában.  
+
+  A módosítások mentéséhez válassza az **OK** gombot.
+
+- **Teljes képernyős böngésző beállításai**: ezek a beállítások vezérlik a böngészőalkalmazást kioszkmódban. Böngészőalkalmazást a kioszkmódban lévő eszközökön az [ügyfélalkalmazások](apps-add.md) használatával kell üzembe helyeznie.
+
+  Adja meg a következő beállításokat:
+
+  - **Alapértelmezett kezdőlap URL-címe**: Adja meg az alapértelmezett URL-címet, amelyet a teljes képernyős böngésző indításakor vagy újraindításkor meg szeretne jeleníteni. Például írja be a következőt: `http://bing.com` vagy `http://www.contoso.com`.
+
+  - **Kezdőlap gomb**: **Megjeleníti** vagy **elrejti** a teljes képernyős böngésző kezdőlap gombját. Alapértelmezés szerint a gomb nem jelenik meg.
+
+  - **Navigációs gombok**: **Megjelenítik** vagy **elrejtik** az előre és vissza gombokat. A navigációs gombok alapértelmezés szerint nem jelennek meg.
+
+  - **Munkamenet befejezése gomb**: **Megjeleníti** vagy **elrejti** a munkamenet befejezése gombot. Ha a gomb látható, és a felhasználó kiválasztja, akkor az alkalmazás megerősítést kér a munkamenet befejezéséhez. Megerősítés után a böngésző minden böngészési adatot (cookie-k, gyorsítótár stb.) töröl, majd megnyitja az alapértelmezett URL-címet. Alapértelmezés szerint a gomb nem jelenik meg.
+
+  - **A böngésző frissítése üresjárati idő után**: Adja meg az üresjárati időt (1-1440 perc), amelynek elteltével a teljes képernyős böngésző friss állapotban újraindul. Az üresjárati idő az utolsó felhasználói beavatkozás óta eltelt percek száma. Alapértelmezés szerint az érték üres, ami azt jelenti, hogy a nincs üresjárati időkorlát.
+
+  - **Engedélyezett webhelyek**: használja ezt a beállítást adott webhelyek megnyitásának engedélyezéséhez. Más szóval, ezzel a beállítással korlátozhatja vagy megakadályozhatja a webhelyek megjelenítését az eszközön. Például engedélyezheti a `contoso.com*` összes webhelyének megnyitását. Alapértelmezés szerint az összes webhely engedélyezett.
+
+    Adott webhelyek engedélyezéséhez töltse fel az engedélyezett webhelyek listáját tartalmazó .csv-fájlt. Ha nem ad hozzá .csv-fájlt, az összes webhely használata engedélyezve lesz.
+
+  A módosítások mentéséhez válassza az **OK** gombot.
+
+- **Start menü alternatív elrendezésének használata**: Válassza az **Igen** lehetőséget egy XML-fájl megadásához, amely meghatározza, hogyan jelenjenek meg az alkalmazások a Start menüben, beleértve azok sorrendjét. Használja ezt a beállítást, ha több testreszabási lehetőségre van szüksége a Start menüben. A [Start menü elrendezésének testreszabása és exportálása](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) című cikkben találhat útmutatást és XML-mintát.
+
+- **Windows Tálca**: Válasszon a tálca **megjelenítése** és **elrejtése** közül. Alapértelmezés szerint a tálca nem jelenik meg.
 
 ## <a name="windows-holographic-for-business"></a>Windows Holographic for Business
 
-Windows Holographic for Business rendszerű eszközök egyalkalmazásos vagy többalkalmazásos kioszkmódban való használatra is konfigurálhatók. 
+Windows Holographic for Business rendszerű eszközök egyalkalmazásos vagy többalkalmazásos kioszkmódban való használatra is konfigurálhatók. Bizonyos funkciókat a Windows Holographic for Business nem támogat.
 
 #### <a name="single-full-screen-app-kiosks"></a>Egyetlen teljes képernyős alkalmazásos kioszkok
-Adja meg a következő beállításokat:
+Egyalkalmazásos kioszk mód választásakor adja meg a következő beállításokat:
 
-- **Univerzális Windows Platform (UWP) alkalmazásazonosító**: Adja meg a kioszkalkalmazás számára **Az alkalmazás alkalmazásfelhasználói modellben használt azonosítója (AUMID)** értékét. Vagy válasszon ki egy, a [Mobile Apps](apps-add.md) használatával már hozzáadott, felügyelt alkalmazást.
+- **Felhasználói bejelentkezés típusa**: Válassza a **Helyi felhasználói fiók** lehetőséget, és adja meg a kioszkalkalmazáshoz társított helyi (eszközön létező) felhasználói fiókot vagy Microsoft Account (MSA) fiókot. Az **Automatikus bejelentkezésű** felhasználói fiókokat a Windows Holographic for Business nem támogatja.
 
-    Az azonosító a [Telepített alkalmazás alkalmazásfelhasználói modellben használt azonosítójának megkeresése](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) című témakörben leírtak alapján kereshető meg.
+- **Alkalmazástípus**: Válassza az **Áruházbeli alkalmazás** lehetőséget.
 
-- **Felhasználói fiók típusa**: Válassza a **Helyi felhasználói fiók** lehetőséget, és adja meg a kioszkalkalmazáshoz társított helyi (eszközön létező) felhasználói fiókot vagy Microsoft Account (MSA) fiókot. Az **Automatikus bejelentkezésű** felhasználói fiókokat a Windows Holographic for Business nem támogatja.
+- **Kioszkmódban futtatni kívánt alkalmazás**: Válassza az **Áruházbeli alkalmazás hozzáadása** lehetőséget, és válasszon alkalmazást a listából.
+
+    Nincsenek alkalmazások a listában? Adjon hozzá néhányat az [Ügyfélalkalmazások](apps-add.md) rész lépéseinek használatával.
+
+    A módosítások mentéséhez válassza az **OK** gombot.
 
 #### <a name="multi-app-kiosks"></a>Többalkalmazásos kioszk
-Az ebben az üzemmódban lévő alkalmazások elérhetők a Start menüben. A felhasználó kizárólag ezeket az alkalmazásokat tudja megnyitni.
+Az ebben az üzemmódban lévő alkalmazások elérhetők a Start menüben. A felhasználó kizárólag ezeket az alkalmazásokat tudja megnyitni. Többalkalmazásos kioszk mód választásakor adja meg a következő beállításokat:
 
-Adja meg a következő beállításokat:
+- **S módú Windows 10-es eszközök megcélzása**: válassza a **Nem** lehetőséget. Az S módot a Windows Holographic for Business nem támogatja.
 
-- **Felügyelt alkalmazások hozzáadása**: Válasszon ki egy, az [Intune-beli ügyfélalkalmazások](apps-add.md) használatával már hozzáadott, felügyelt alkalmazást.
-- **Alkalmazás hozzáadása AUMID alapján**: Adja meg az [alkalmazás AUMID azonosítóját](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP-alkalmazások).
-- **Start menü elrendezése**: Adjon meg egy XML-fájlt, amely meghatározza, hogyan jelenjenek meg az alkalmazások a Start menüben, beleértve azok sorrendjét. A [Start menü elrendezésének testreszabása és exportálása](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens) című cikk nyújt némi útmutatást, és tartalmaz egy kimondottan Windows Holographic for Business rendszerű eszközökhöz készült XML-fájlt.
-- **Felhasználói fiók típusa**: Adjon meg egy vagy több olyan felhasználói fiókot, amely jogosult a társított alkalmazások használatára. A támogatott lehetőségek a következők: 
+- **Felhasználói bejelentkezés típusa**: Adjon meg egy vagy több olyan felhasználói fiókot, amely jogosult a társított alkalmazások használatára. A választható lehetőségek: 
+
+  - **Automatikus bejelentkezés**: A Windows Holographic for Business nem támogatja.
+  - **Helyi felhasználói fiókok**: **Adja hozzá** a helyi (az eszközön létező) felhasználói fiókot. A megadott fiókkal történik a bejelentkezés a kioszkba.
+  - **Azure AD-felhasználó vagy csoport (Windows 10, 1803-as vagy újabb verzió)**: Felhasználói hitelesítő adatok szükségesek az eszközre való bejelentkezéshez. Válassza a **Hozzáadás** lehetőséget Azure AD-felhasználók vagy -csoportok kiválasztására a listából. Több felhasználót és csoportot is kiválaszthat. A módosítások mentéséhez válassza az **Választ** gombot.
   - **HoloLens vendég**: Ehhez a vendégfiókhoz [A megosztott számítógép üzemmód alapelvei](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts) című szakaszban ismertetettek alapján nem szükségesek hitelesítő adatok.
-  - **Azure AD-felhasználók**: Az eszközre való bejelentkezéshez hitelesítő adatokra van szükség. Használja a következő formátumot: `domain\user@tenant.com`.
-  - **Helyi felhasználói fiókok**: Az eszközre való bejelentkezéshez hitelesítő adatokra van szükség. 
 
-A fiókkal való bejelentkezéskor csak a konfigurációban meghatározott alkalmazások érhetők el.
+- **Alkalmazások**: Adja hozzá a kioszkmódú eszközön futtatandó alkalmazásokat. Ne feledje, hogy több alkalmazást is hozzáadhat.
+
+  - **Áruházbeli alkalmazások hozzáadása**: Válasszon az [ügyfélalkalmazások](apps-add.md) használatával már hozzáadott, felügyelt alkalmazást. Ha nem találhatók alkalmazások a listában, akkor beszerezheti az alkalmazásokat, és [hozzáadhatja őket az Intune-hoz](store-apps-windows.md).
+  - **Win32-alkalmazás hozzáadása**: a Windows Holographic for Business nem támogatja.
+  - **Hozzáadás AUMID alapján**: használja ezt a beállítást a postaláda Windows-alkalmazások hozzáadásához. Adja meg a következő tulajdonságokat: 
+
+    - **Alkalmazás neve**: Kötelező. Adjon nevet az alkalmazásnak.
+    - **Alkalmazás alkalmazásfelhasználói modellben használt azonosítója (AUMID)**: Kötelező. Adja meg a Windows-alkalmazás alkalmazásfelhasználói modellben használt azonosítóját. Az azonosító a [Telepített alkalmazás alkalmazásfelhasználói modellben használt azonosítójának megkeresése](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) című témakörben leírtak alapján kereshető meg.
+    - **Csempeméret**: Kötelező. Válassza a Kicsi, Közepes, Széles és Nagy alkalmazáscsempe-méretek egyikét.
+
+- **Teljes képernyős böngésző beállításai**: a Windows Holographic for Business nem támogatja.
+
+- **Start menü alternatív elrendezésének használata**: Válassza az **Igen** lehetőséget egy XML-fájl megadásához, amely meghatározza, hogyan jelenjenek meg az alkalmazások a Start menüben, beleértve azok sorrendjét. Használja ezt a beállítást, ha több testreszabási lehetőségre van szüksége a Start menüben. A [Start menü elrendezésének testreszabása és exportálása](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens) című cikk nyújt némi útmutatást, és tartalmaz egy kimondottan Windows Holographic for Business rendszerű eszközökhöz készült XML-fájlt.
+
+- **Windows Tálca**: a Windows Holographic for Business nem támogatja.
+
+
 
 ## <a name="next-steps"></a>További lépések
 [Rendelje hozzá a profilt](device-profile-assign.md), és [kövesse nyomon az állapotát](device-profile-monitor.md).

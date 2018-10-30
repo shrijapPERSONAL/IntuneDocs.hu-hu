@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f2a244337b152af7bcf8bf17cf7e643bdb3faa59
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 183518caed7276719204830a38b1b9d552a79428
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231457"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642879"
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>A Vállalati Windows Hello integrálása a Microsoft Intune-nal
 
@@ -52,7 +52,7 @@ E cikk segítségével az egész vállalatára vonatkozó alapértelmezett váll
 
 ## <a name="create-a-windows-hello-for-business-policy"></a>Vállalati Windows Hello-házirend létrehozása
 
-1. Az [Azure Portalon](https://portal.azure.com) válassza a **Minden szolgáltatás** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+1. Az [Azure Portalon](https://portal.azure.com) válassza a **Minden szolgáltatás** > **Monitoring és felügyelet** > **Intune** lehetőséget.
 
 2. Az Intune panelen válassza az **Eszközök beléptetése**, majd a **Windows-alapú regisztráció** > **Vállalati Windows Hello** lehetőséget.
 

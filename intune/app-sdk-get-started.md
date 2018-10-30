@@ -13,13 +13,13 @@ ms.technology: ''
 ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 8e22c0caf7b99bcb7a81259829369b7671056abe
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.custom: intune
+ms.openlocfilehash: 5cb90b7f1dc72a67f48ba40db8a6ab4ffe598243
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058948"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425036"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Bevezetés a Microsoft Intune App SDK használatába
 
@@ -131,7 +131,7 @@ Az Android és az iOS is verzió- és buildszámokkal hivatkozik az alkalmazáso
 
 Az Intune-ban használandó üzletági alkalmazások fejlesztésekor ne feledje a verzió- és a buildszámot is használni. Az Intune alkalmazásfelügyeleti funkciói egy kifejező **CFBundleVersion**- (iOS) és egy **PackageVersionCode**-számot (Android) használnak. Ezek a számok megtalálhatók az alkalmazásjegyzékben. 
 
-Intune|iOS|Android|Description|
+Intune|iOS|Android|Leírás|
 |---|---|---|---|
 Verziószám|CFBundleShortVersionString|PackageVersionName |Ez a szám az alkalmazás egy adott kiadását jelzi a végfelhasználóknak.|
 Buildszám|CFBundleVersion|PackageVersionCode |Ez a szám az alkalmazáskód egy iterációját jelzi.|
@@ -161,9 +161,9 @@ Miután elvégezte az iOS vagy Android alkalmazásnak az Intune App SDK-való in
 
     * Az áruházban nem közzéteendő üzleti alkalmazások fejlesztői az adott szervezeten keresztül kaphatnak hozzáférést a Microsoft Intune-hoz. Emellett feliratkozhat a [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) egyhónapos ingyenes próbaidőszakára is.
 
-* **Az Intune alkalmazásvédelmi szabályzatai**: Ha az alkalmazását az összes Intune-beli alkalmazásvédelmi szabályzattal tesztelni szeretné, akkor minden szabályzatbeállításnál tudnia kell, mi a várt viselkedés. Lásd az [iOS alkalmazásvédelmi szabályzatainak](/intune-classic/deploy-use/ios-mam-policy-settings) és az [Android alkalmazásvédelmi szabályzatainak](/intune-classic/deploy-use/android-mam-policy-settings) ismertetését.
+* **Az Intune alkalmazásvédelmi szabályzatai**: Ha az alkalmazását az összes Intune-beli alkalmazásvédelmi szabályzattal tesztelni szeretné, akkor minden szabályzatbeállításnál tudnia kell, mi a várt viselkedés. Lásd az [iOS alkalmazásvédelmi szabályzatainak](app-protection-policy-settings-ios.md) és az [Android alkalmazásvédelmi szabályzatainak](app-protection-policy-settings-android.md) ismertetését.
 
-* **Hibaelhárítás**: Ha problémákat tapasztal az alkalmazás használata során tapasztalható felhasználói élmény manuális tesztelésekor, nézze át [A MAM hibaelhárítása](/intune-classic/troubleshoot/troubleshoot-mam) című szakaszt. Ez a cikk az Intune-ban kezelt alkalmazásokban esetleg előforduló gyakoribb problémákhoz, párbeszédpanelekhez és hibaüzenetekhez nyújt segítséget. 
+* **Hibaelhárítás**: Ha az alkalmazás telepítése közbeni felhasználói élmény manuális tesztelése során bármilyen problémába ütközik, tekintse meg az [alkalmazástelepítési hibák elhárításával](troubleshoot-app-install.md) foglalkozó szakaszt. 
 
 ### <a name="badge-your-app-optional"></a>Az alkalmazás megjelölése jelvénnyel (nem kötelező)
 

@@ -1,7 +1,7 @@
 ---
-title: VPN-beállítások konfigurálása Android-eszközökhöz a Microsoft Intune-ban – Azure | Microsoft Docs
+title: Wi-Fi-beállítások konfigurálása Android Enterprise- és kioszkeszközökhöz – Microsoft Intune – Azure | Microsoft Docs
 titleSuffix: ''
-description: Létrehozhat vagy hozzáadhat egy eszközkonfigurációs Wi-Fi-profilt az Android-eszközökhöz. Megtekintheti a Microsoft Intune különböző beállításait, beleértve a tanúsítványok hozzáadását, az EAP-típusok kiválasztását és a hitelesítési módszer kiválasztását.
+description: Wi-Fi eszközkonfigurációs profilokat hozhat létre vagy adhat hozzá az Android Enterprise és Android kioszk rendszerhez. Megtekintheti a Microsoft Intune különböző beállításait, beleértve a tanúsítványok hozzáadását, az EAP-típusok kiválasztását és a hitelesítési módszer kiválasztását. Kioszkeszközök esetén adja meg a hálózat előre megosztott kulcsát is.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -13,18 +13,16 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b7c0d11e7670134c6a2cd9ce2eb72714ba64aa03
+ms.openlocfilehash: c2983f2f7b7079f73c857bf7caafe4236373c5dc
 ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/18/2018
-ms.locfileid: "49424985"
+ms.locfileid: "49431923"
 ---
-# <a name="add-wi-fi-settings-for-devices-running-android-in-microsoft-intune"></a>Android rendszerű eszközökre vonatkozó Wi-Fi-beállítások hozzáadása a Microsoft Intune-ban
+# <a name="add-wi-fi-settings-for-devices-running-android-enterprise-and-android-kiosk-in-microsoft-intune"></a>Android Enterprise és Android kioszk rendszerű eszközökre vonatkozó Wi-Fi-beállítások hozzáadása a Microsoft Intune-ban
 
-Adott Wi-Fi-beállításokkal rendelkező profilt hozhat létre, majd ezt a profilt üzembe helyezheti az Android-eszközökön. A Microsoft Intune számos szolgáltatást nyújt, beleértve a hálózaton való hitelesítést, a PKS- vagy SCEP-tanúsítványok hozzáadását és egyéb lehetőségeket.
-
-Ezek a Wi-Fi-beállítások két kategóriára vannak osztva, alapszintű és vállalati szintű beállításokra.
+Adott Wi-Fi-beállításokkal rendelkező profilt hozhat létre, majd ezt a profilt üzembe helyezheti az Android Enterprise- és androidos kioszkeszközökön. A Microsoft Intune számos szolgáltatást nyújt, beleértve a hálózaton való hitelesítést, az előmegosztott kulcsok használatát és egyebeket.
 
 Ez a cikk ezeket a beállításokat ismerteti.
 
@@ -32,7 +30,25 @@ Ez a cikk ezeket a beállításokat ismerteti.
 
 [Eszközprofil létrehozása](device-profile-create.md).
 
-## <a name="basic-profile"></a>Alapszintű profil
+## <a name="device-owner-only---kiosk"></a>Csak az eszköz tulajdonosa – kioszk
+
+Válassza ezt a lehetőséget, ha Android Enterprise-eszközt használ kioszk üzemmódban.
+
+- **Hálózat neve**: Adja meg a Wi-Fi-kapcsolat nevét. Ez a név jelenik meg a felhasználók számára, amikor az eszközön rendelkezésre álló kapcsolatok listáját böngészik.
+- **SSID**: A **szolgáltatáskészlet-azonosító** rövidítése. Ez a beállítás annak a vezeték nélküli hálózatnak a valódi neve, amelyhez az eszközök csatlakoznak. A felhasználók azonban csak a konfigurált **hálózatnevet** látják, amikor kiválasztják a kapcsolatot.
+- **Automatikus csatlakozás**: Válassza az **Engedélyezés** lehetőséget, hogy automatikusan csatlakozzon ehhez a hálózathoz, amikor az eszköz hatótávolságon belül van. Válassza a **Letiltás** lehetőséget, ha meg szeretné akadályozni az eszközök automatikus csatlakozását.
+- **Rejtett hálózat**: Válassza az **Engedélyezés** lehetőséget, hogy a hálózat ne jelenjen meg az eszközön elérhető hálózatok listájában. A rendszer ilyenkor nem továbbítja az SSID-t. Válassza a **Letiltás** lehetőséget, ha meg szeretné jeleníteni a hálózatot az eszközön elérhető hálózatok listájában.
+- **Wi-Fi típusa**: Válassza ki a Wi-Fi-hálózat hitelesítéséhez használt biztonsági protokollt. A választható lehetőségek:
+
+  - **Nyitott (nincs hitelesítés)**: Csak akkor válassza ezt a lehetőséget, ha a hálózat nem védett.
+  - **WEP előmegosztott kulcs**: Írja be a jelszót az **Előmegosztott kulcs** mezőbe. A cég hálózatának beállítása vagy konfigurálása során a rendszer egy jelszót vagy egy hálózati kulcsot is konfigurál. Adja meg ezt a jelszót vagy hálózati kulcsot a PSK értékeként.
+  - **WPA előre megosztott kulcs**: Írja be a jelszót az **Előmegosztott kulcs** mezőbe. A cég hálózatának beállítása vagy konfigurálása során a rendszer egy jelszót vagy egy hálózati kulcsot is konfigurál. Adja meg ezt a jelszót vagy hálózati kulcsot a PSK értékeként.
+
+A módosítások mentéséhez válassza az **OK** gombot.
+
+## <a name="work-profile-only"></a>Csak munkahelyi profil
+
+### <a name="basic-settings"></a>Alapbeállítások
 
 - **Wi-Fi típusa**: válassza az **Alapszintű** lehetőséget.
 - **SSID**: A **szolgáltatáskészlet-azonosító** rövidítése. Ez a beállítás annak a vezeték nélküli hálózatnak a valódi neve, amelyhez az eszközök csatlakoznak.
@@ -103,6 +119,5 @@ A profil létrejön, de egyelőre nem csinál semmit. A következő lépés a [p
 
 ## <a name="more-resources"></a>További források
 
+- Az Android-eszközökhöz elérhető beállításokat az [Android rendszerű eszközök Wi-Fi-beállításait ismertető szakaszban](wi-fi-settings-android.md) találja.
 - [Wi-Fi-beállítások áttekintése](wi-fi-settings-configure.md), beleértve a többi platformot is.
-
-- Android Enterprise vagy Android Kiosk rendszerű eszközöket használ? Ha igen, olvassa el az [Android Enterprise és Android Kiosk rendszerű eszközökre vonatkozó Wi-Fi-beállításokat](wi-fi-settings-android-enterprise.md) ismertető cikket.

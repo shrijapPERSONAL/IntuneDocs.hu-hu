@@ -12,17 +12,20 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6aa2ade550a01a9e4758024213a67e6a7ddd8f03
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 3a3fd4c57edba6f4d9abfdd4188c94627543cb43
+ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313853"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49652155"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Eszközkorlátozási beállítások Windows 10-hez (és újabb rendszerekhez) az Intune-ban
 A cikk bemutatja a Microsoft Intune összes olyan eszközkorlátozásokra vonatkozó beállítását, melyek konfigurálhatók Windows 10 rendszerű eszközökhöz.
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
+
+> [!Note]
+> Nem minden lehetőség érhető el a Windows összes kiadásában.
 
 ## <a name="general"></a>Általános
 - **Képernyőfelvétel (csak mobileszköz)** – A felhasználó képként rögzítheti a képernyőn látható tartalmat.
@@ -400,3 +403,6 @@ Ha a meghajtón található fájlok írásvédettek, a Defender nem tudja eltáv
 - **Üzenetszinkronizálás (csak mobilon)** – Az Üzenetek mindenhol és a szöveges üzenetek funkció biztonsági mentésének és visszaállításának letiltása.
 - **MMS (csak mobilon)** – Az MMS küldése/fogadása funkció letiltása az eszközön.
 - **RCS (csak mobilon)** – A gazdag kommunikációs szolgáltatások (RCS) küldése/fogadása funkció letiltása az eszközön.
+
+## <a name="more-information"></a>További információ
+További technikai részleteket az egyes beállításokról és a Windows támogatott kiadásairól a [Windows 10 szabályzatkonfigurációs szolgáltatói referenciájában](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider) talál.

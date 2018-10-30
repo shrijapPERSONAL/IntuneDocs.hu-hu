@@ -15,12 +15,12 @@ ms.assetid: 1326e65e-56cc-4987-9006-3a788597ca19
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: efecd454c2e6ba8454cfd68291a96c6d4c8a2703
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: a7af46f0f9db0d849e3c75da36c5fe9354554107
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31030259"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49643110"
 ---
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>Kapcsolatfelvétel a Microsoft Intune telefonos tanácsadással
 
@@ -59,7 +59,7 @@ A cikk a Microsoft Intune telefonos tanácsadásának kapcsolatfelvételi adatai
 |       Németország       |                        24 x 7                         |  Hétfőtől péntekig<br /><br />09:00 – 17:00 Közép-európai idő szerint (UTC +1)   |              Német&#42; és angol               |                                                                      0800 5892332                                                                      |                                                                         069380789508                                                                          |
 |       Görögország        |                        24 x 7                         |  Hétfőtől péntekig<br /><br />09:00 – 17:00 Keleti-európai idő szerint (UTC +2)   |               Görög&#42; és angol               |                                                                     0080044142831                                                                      |                                                                                                                                                               |
 |      Guatemala      |                        24 x 7                         |  Hétfőtől péntekig<br /><br />09:00 – 17:00 Kínai téli idő szerint (UTC +6)   |              Spanyol&#42; és angol              |                       1-800-300-0069<br /><br />1. lépés Válassza a 4. lehetőséget (a speciális hozzáféréshez)<br /><br />2. lépés Adja meg a 7007 kódot                       |                                                                                                                                                               |
-|    Hongkong KKT    |                        24 x 7                         |  Hétfőtől péntekig<br /><br />09:00 – 18:00 Hongkongi idő szerint (UTC +8)   |     Kantoni&#42;, mandarin&#42; és angol      |                                                                                                                                                        |                                                                           30713055                                                                            |
+|    Hongkong (KKT)    |                        24 x 7                         |  Hétfőtől péntekig<br /><br />09:00 – 18:00 Hongkongi idő szerint (UTC +8)   |     Kantoni&#42;, mandarin&#42; és angol      |                                                                                                                                                        |                                                                           30713055                                                                            |
 |       Magyarország       |                        24 x 7                         |  Hétfőtől péntekig<br /><br />09:00 – 17:00 Közép-európai idő szerint (UTC +1)   |             Magyar&#42; és angol             |                                                                     36 80 983 899                                                                      |                                                                         36 1 778 9292                                                                         |
 |       Izland       |                        24 x 7                         |    Hétfőtől péntekig<br /><br />09:00 – 17:00 Greenwich-i középidő szerint (UTC)    |                     Angol                     |                                                                        8009609                                                                         |                                                                                                                                                               |
 |        India        |                        24 x 7                         | Hétfőtől péntekig<br /><br />09:00 – 17:00 Indiai téli idő szerint (UTC +5:30) |                     Angol                     |                                                                     000800 4402038                                                                     |                                                                          18002002052                                                                          |

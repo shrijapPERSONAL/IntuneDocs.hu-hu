@@ -1,6 +1,6 @@
 ---
 title: eSIM-adatkapcsolatok engedélyezése az Azure-beli Microsoft Intune-ban | Microsoft Docs
-description: Az eSIM-kártya felvétele vagy használata révén különböző díjcsomagokkal férhet hozzá az internethez és az adatokhoz. Az Intune-ban aktiváló kódokat vehet fel vagy importálhat, és egy konfigurációs profil használatával hozzárendelheti azokat az eszközökhöz. Figyelheti az eSIM-profilokat és ellenőrizheti az eSIM-kompatibilis eszközök állapotát.
+description: Az eSIM-kártya felvétele vagy használata révén különböző díjcsomagokkal férhet hozzá az internethez és az adatokhoz. Az Intune-ban aktiváló kódokat vehet fel vagy importálhat, és egy konfigurációs profil használatával hozzárendelheti azokat az eszközökhöz. Monitorozhatja az eSIM-profilokat és ellenőrizheti az eSIM-kompatibilis eszközök állapotát is.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7b03c46a9095c0f300869ebd14d1a81698e294f7
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 654c9af4d72ca5d07a9852ba4a653d9404ea16d2
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43314023"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642923"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>eSIM mobilhálózati profilok konfigurálása az Intune-ban – Nyilvános előzetes verzió
 

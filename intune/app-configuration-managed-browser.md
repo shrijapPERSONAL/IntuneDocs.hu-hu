@@ -15,14 +15,14 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cb7eb4b3845b8b5f0eafed95fa081955b99f1af7
-ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
+ms.openlocfilehash: c3edbf3663d3226f806bf36af97b97cdf4d169c1
+ms.sourcegitcommit: ca33179b8bef98092eedcc22b0e709a862e31dce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863161"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49357087"
 ---
-# <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>Az internet-hozzáférés védett böngészőszabályzatokkal való kezelése a Microsoft Intune-ban  
+# <a name="manage-internet-access-using-an-microsoft-intune-policy-protected-browser"></a>Az internet-hozzáférés kezelése Microsoft Intune-szabályzattal védett böngésző használatával
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -36,26 +36,37 @@ Az Intune-szabályzattal védett (Microsoft Edge vagy Intune Managed Browser) b�
 
 ## <a name="getting-started"></a>Első lépések
 
+A Microsoft Edge és az Intune Managed Browser olyan webböngésző-alkalmazások, amelyeket Ön és végfelhasználói nyilvános alkalmazás-áruházakból tölthetnek le a szervezeten belül használatra. 
+
+Az operációs rendszerre vonatkozó követelmények a böngésző szabályzataival kapcsolatban:
+- Android 4 és újabb verziók, vagy
+- iOS 8.0 és újabb verziók.
+
+Az Managed Browser továbbra is használható lesz korábbi verziójú Android vagy iOS rendszerű eszközökön, de az alkalmazás újabb verziói nem lesznek telepíthetők, és előfordulhat, hogy az alkalmazás bizonyos képességei nem lesznek hozzáférhetők. Javasoljuk, hogy frissítse az ilyen eszközök operációs rendszerét egy támogatott verzióra.
+
+>[!NOTE]
+>A Managed Browser nem támogatja a Secure Sockets Layer 3-as verziójú (SSLv3) titkosítási protokollját.
+
+
+## <a name="application-protection-policies-for-protected-browsers"></a>Alkalmazásvédelmi szabályzatok a védelemmel ellátott böngészőkhöz
+
+Mivel az Edge és a Managed Browser rendelkeznek Intune SDK-integrációval, így alkalmazásvédelmi szabályzatok is alkalmazhatók rajtuk, például a következők:
+- Kivágás, másolás és beillesztés műveletek korlátozása.
+- Képernyőmentés megakadályozása.
+- Annak biztosítása, hogy a vállalati hivatkozásokat csak a felügyelt alkalmazásokon és böngészőkön belül lehessen megnyitni.
+
+További információt a [Mik azok az alkalmazásvédelmi szabályzatok?](app-protection-policy.md) című témakörben talál.
+
 Ezek a beállítások az alábbiakra alkalmazhatók:
 
 - Az Intune-ban regisztrált eszközök
 - Más MDM-termékben regisztrált eszközök
 - Nem felügyelt eszközök
 
-Ha a felhasználók telepítik a Managed Browser alkalmazást az alkalmazásáruházból, és azt nem az Intune felügyeli, akkor az egyszerű webböngészőként használható, amely a Microsoft MyApps webhelyen keresztül támogatja az egyszeri bejelentkezést. A felhasználók közvetlenül a MyApps webhelyére vannak irányítva, ahol megjelenik az összes számukra kiosztott SaaS-alkalmazás.
+>[!NOTE]
+>Ha a felhasználók telepítik a Managed Browser alkalmazást az alkalmazásáruházból, és azt nem az Intune felügyeli, akkor az egyszerű webböngészőként használható, amely a Microsoft MyApps webhelyen keresztül támogatja az egyszeri bejelentkezést. A felhasználók közvetlenül a MyApps webhelyére vannak irányítva, ahol megjelenik az összes számukra kiosztott SaaS-alkalmazás.
 Ha az Edge vagy a Managed Browser böngészőt nem az Intune felügyeli, nem tudják elérni az Intune által kezelt más alkalmazások adatait. 
 
-A Managed Browser nem támogatja a Secure Sockets Layer 3-as verziójú (SSLv3) titkosítási protokollját.
-
-Védettböngésző-szabályzatokat a következő eszköztípusok esetében hozhat létre:
-
--   Android 4 vagy újabb rendszerű eszközök
-
--   iOS 10.0-s vagy újabb rendszerű eszközök
-
->[!IMPORTANT]
->Az Managed Browser továbbra is használható lesz korábbi verziójú Android vagy iOS rendszerű eszközökön, de az alkalmazás újabb verziói nem lesznek telepíthetők, és előfordulhat, hogy az alkalmazás bizonyos képességei nem lesznek hozzáférhetők. Javasoljuk, hogy frissítse az ilyen eszközök operációs rendszerét egy támogatott verzióra.
-    
 
 ## <a name="conditional-access-for-protected-browsers"></a>Feltételes hozzáférés védett böngészőkhöz
 
@@ -82,7 +93,7 @@ Ha az Azure AD-hez csatlakozó webalkalmazásokat az Intune Managed Browser hasz
 8. A **Hozzárendelések** szakaszban válassza a **Felhasználók és csoportok** lehetőséget, majd válassza ki azokat a felhasználókat és csoportokat, akikhez hozzá szeretné rendelni ezt a szabályzatot. 
 
     > [!NOTE]
-    > A felhasználóknak az Intune alkalmazásvédelmi szabályzatának hatásköre alatt is kell lenniük. További információ az Intune App Protection szabályzatainak létrehozásáról: [Mik azok az alkalmazásvédelmi szabályzatok?](app-protection-policy.md)
+    > Az alkalmazáskonfigurációs szabályzatok fogadása érdekében a felhasználókat Intune App Protection-szabályzattal kell megcélozni. További információ az Intune App Protection szabályzatainak létrehozásáról: [Mik azok az alkalmazásvédelmi szabályzatok?](app-protection-policy.md)
 
 9. A szabályzat védelme alá tartozó alkalmazások megadásához a **Hozzárendelések** szakaszban válassza a **Felhőalkalmazások** lehetőséget.
 
@@ -101,6 +112,9 @@ Az SSO megköveteli az eszközöktől, hogy regisztrálva legyenek a Microsoft A
 
 ## <a name="create-a-protected-browser-app-configuration"></a>Egy védett böngésző alkalmazáskonfigurációjának létrehozása
 
+>[!IMPORTANT]
+>Az alkalmazáskonfigurációk érvényre jutásához az szükséges, hogy a felhasználó védelemmel ellátott böngészőjét vagy az eszközön lévő alkalmazások egyikét már az [Intune alkalmazásvédelmi szabályzata]( app-protection-policy.md) felügyelje.
+
 1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3.  A felügyeleti lista **Ügyfélalkalmazások** paneljén válassza az **Alkalmazáskonfigurációs szabályzatok** lehetőséget.
@@ -114,8 +128,6 @@ Az SSO megköveteli az eszközöktől, hogy regisztrálva legyenek a Microsoft A
 11. A **Konfigurációs szabályzat hozzáadása** panelen válassza a **Hozzáadás** lehetőséget.
 12. Ezzel létrejön az új konfiguráció, és megjelenik az **Alkalmazáskonfiguráció** panelen.
 
->[!IMPORTANT]
->A Managed Browser jelenleg automatikus regisztrációra hagyatkozik. Az alkalmazáskonfigurációk érvényre jutásához az szükséges, hogy az eszközön lévő alkalmazások egyikét már az Intune alkalmazásvédelmi szabályzatai felügyeljék.
 
 ## <a name="assign-the-configuration-settings-you-created"></a>A létrehozott konfigurációs beállítások hozzárendelése
 
@@ -275,18 +287,7 @@ Az alkalmazásnaplókban tárolt beállítások listáját az [Alkalmazásvédel
 ### <a name="turn-off-usage-data"></a>A használatra vonatkozó adatok kikapcsolása
 A Microsoft termék- és szolgáltatásfejlesztési célból automatikus módszerekkel név nélküli adatokat gyűjt a Managed Browser teljesítményéről és használatáról. A felhasználók kikapcsolhatják az adatgyűjtést az eszköz **Használati adatok** beállításával. Nem tudja befolyásolni ezen adatok gyűjtését.
 
-
 -   Az iOS-eszközökön nem nyithatók meg azok a felhasználók által felkeresett webhelyek, amelyek lejárt vagy nem megbízható tanúsítvánnyal rendelkeznek.
--   A Managed Browser nem használja a felhasználók eszközein futó beépített böngésző egyedi beállításait. Ezekhez a beállításokhoz a Managed Browser nem fér hozzá.
-
--   Ha engedélyezi az **Egyszerű PIN-kód megkövetelése a hozzáféréshez** vagy a **Vállalati hitelesítő adatok megkövetelése a hozzáféréshez** beállítást a Managed Browser böngészőhöz hozzárendelt alkalmazásvédelmi szabályzatban, és a felhasználó a hitelesítési lapon a súgóhivatkozásra kattint, bármely internetes webhelyet elérhet, függetlenül attól, hogy azok hozzá lettek-e adva a felügyeltböngésző-szabályzat blokklistájához.
-
--   A Managed Browser csak akkor képes blokkolni a hozzáférést a webhelyekhez, ha azokat közvetlenül érik el. Nem blokkolja a hozzáférést, ha a felhasználó köztes szolgáltatások (például egy fordítási szolgáltatás) használatával éri el a webhelyet.
-
--   A hitelesítés lehetővé tétele és az Intune-dokumentáció elérése érdekében a **&#42;.microsoft.com** mentesül az engedélyezési és blokkolási beállítások alól, és mindig engedélyezve van.
-
-### <a name="turn-off-usage-data"></a>A használatra vonatkozó adatok kikapcsolása
-A Microsoft termék- és szolgáltatásfejlesztési célból automatikus módszerekkel név nélküli adatokat gyűjt a Managed Browser teljesítményéről és használatáról. A felhasználók kikapcsolhatják az adatgyűjtést az eszköz **Használati adatok** beállításával. Nem tudja befolyásolni ezen adatok gyűjtését.
 
 ## <a name="next-steps"></a>További lépések
 

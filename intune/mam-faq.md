@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d42133d8a2e52300a2414de9105db2ef26bae445
-ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
+ms.openlocfilehash: f27baf7d40a6eb4d89769eeab7a6e035e3468825
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799676"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49643025"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Gyakori kérdések az MAM-ről és az alkalmazásvédelemről
 
@@ -88,9 +88,7 @@ Az [Intune App SDK](/intune/app-sdk) által integrált vagy az [Intune alkalmaz�
 Az Intune az alkalmazásban található összes adatot „cégesként” vagy „személyesként” jelöli meg. „Cégesnek” azok az adatok számítanak, amelyek vállalati forrásból származnak. Az Office-alkalmazásokat illetően az Intune a következőket tekinti vállalati forrásnak: e-mailek (Exchange) vagy felhőbeli tárhely (OneDrive alkalmazás Vállalati OneDrive-fiókkal).
 
 **Mik a Skype Vállalati verzió használatának további feltételei?**<br></br>
-A licenckövetelményekért lásd: [Skype Vállalati verzió](https://products.office.com/skype-for-business/it-pros).
-  >[!NOTE]
-  > A Skype Vállalati verzió mobilalkalmazás jelenleg csupán a Skype Vállalati online verziót támogatja.
+A licenckövetelményekért lásd: [Skype Vállalati verzió](https://products.office.com/skype-for-business/it-pros). A Skype Vállalati verzió (SfB) helyszíni és hibrid konfigurációival kapcsolatban lásd: [Az SfB és Exchange hibrid modern hitelesítése általánosan elérhető](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Hybrid-Modern-Auth-for-SfB-and-Exchange-goes-GA/ba-p/134756), illetve [Modern hitelesítés az AAD-vel az SfB-hez](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Modern-Auth-for-SfB-OnPrem-with-AAD/ba-p/180910).
 
 ## <a name="app-protection-features"></a>Alkalmazásvédelmi funkciók
 
@@ -171,7 +169,11 @@ Az Intune alkalmazásvédelmi hozzáférési szabályzatai adott sorrendben lép
 Különböző beállítások esetén először a az alkalmazás verziókövetelménye, majd az androidos operációs rendszer verziókövetelménye és végül az androidos biztonsági javítási verzió követelménye kerül sorra. Ezt követi a beállításokra vonatkozó figyelmeztetések végrehajtása ugyanebben a sorrendben.
 
 ## <a name="app-experience-on-ios"></a>Az alkalmazás felhasználói felülete iOS-en
-
+**Mi történik, ha hozzáadok vagy eltávolítok egy ujjlenyomatot vagy arcot a saját eszközről?**
+Az Intune alkalmazásvédelmi szabályzatai csak az Intune licencelt felhasználójának teszik lehetővé az alkalmazás elérésének szabályozását. Az alkalmazáshoz való hozzáférés szabályozásának egyik módja az Apple Touch ID vagy a Face ID megkövetelése a támogatott eszközökön. Az Intune olyan viselkedést vezet be, ahol az eszköz biometrikus adatbázisának bármilyen változása esetén az Intune PIN-kódot kér a felhasználótól a következő inaktivitási időkorlát elérése esetén. A biometrikus adatok módosításai tartalmazzák az arc vagy ujjlenyomat hozzáadását és eltávolítását. Ha az Intune-felhasználóhoz nincs beállítva PIN-kód, a rendszer felszólítja az Intune PIN-kód beállítására.
+ 
+Ennek célja az alkalmazáson belüli céges adatok védelmének biztosítása az alkalmazás szintjén. Ez a funkció csak az iOS-ben érhető el, és a működéséhez szükséges az alkalmazások integrálása az Intune APP SDK for iOS 9.0.1-es vagy újabb verziójával. Az SDK-integráció szükséges a viselkedés kényszeríthetőségéhez a megcélzott alkalmazásoknál. Ez az integráció fokozatosan történik, és az egyes alkalmazáscsapatoktól függ. Néhány alkalmazás, amely ezek között szerepelhet: WXP, Outlook, Managed Browser és Yammer. 
+  
 **Az iOS megosztási bővítménnyel megnyithatom a munkahelyi vagy az iskolai adatokat a nem felügyelt alkalmazásokban, még akkor is, ha az adatátviteli szabályzat beállítása „csak felügyelt alkalmazások” vagy „nincs alkalmazás”. Nem jár ez adatszivárgással?**<br></br>
 Az Intune alkalmazásvédelmi szabályzata nem tudja kezelni az iOS megosztási bővítményt az eszköz felügyelete nélkül. Ezért az _**Intune titkosítja a „céges” adatokat, mielőtt az alkalmazáson kívül megosztaná**_. Ezt úgy ellenőrizheti, hogy megpróbálja megnyitni a „céges” fájlt a felügyelt alkalmazáson kívül. A fájlnak titkosítottnak kell lennie, így a felügyelt alkalmazáson kívül mással nem nyitható meg.
 

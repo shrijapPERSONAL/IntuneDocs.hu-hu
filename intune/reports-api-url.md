@@ -15,12 +15,12 @@ ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c6709d68ce4bf847be3eb5cd5ae427db6d11aba8
-ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
+ms.openlocfilehash: d552ec61d148d0489dc263405eac52448c10f9ef
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48903590"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642896"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune-adattárház API-végpontja
 
@@ -71,7 +71,7 @@ A `DateKey` tartományszűrők az adatletöltés korlátozására használhatók
 ## <a name="filter-examples"></a>Példák a szűrőkre
 
 > [!NOTE]
-> A példákban használt szűrők esetében feltételezzük, hogy a mai dátum 2018. február 21.
+> A példaszűrők feltételezik, hogy a mai dátum 2018. február 21.
 
 |                             Szűrő                             |           A teljesítmény optimalizálása           |                                          Leírás                                          |
 |:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|

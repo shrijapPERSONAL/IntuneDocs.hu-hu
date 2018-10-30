@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/12/2018
+ms.date: 10/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 368c804fa044dc303b22e2ae9cf8d273d6cd051a
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 3478308e8e2c219631d0df864ca2add6cc57cda2
+ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231814"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49075863"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Alkalmazásvédelmi szabályzatok létrehozása és hozzárendelése
 
@@ -127,7 +127,10 @@ A szabályzatok létrehozásához navigáljon az Intune-konzolon az **Ügyfélal
 
 ![Képernyőfelvétel az Add Policy (Szabályzat hozzáadása) panelről a kijelölt Target to all app types (Alkalmazás minden alkalmazástípusra) beállítással](./media/app-protection-policies-target-all.png)
 
-Ahhoz, hogy egy iOS-alkalmazást „felügyeltnek” lehessen tekinteni telepítve kell lennie minden egyes alkalmazáshoz az **IntuneMAMUPN** konfigurációs szabályzat beállításainak. További információért lásd: [iOS-alkalmazások közti adatátvitel felügyelete a Microsoft Intune-ban](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
+iOS rendszeren további alkalmazáskonfigurációs beállítások szükségesek az APP-beállítások megcélzásához az Intune-ban regisztrált eszközökön futó alkalmazásokon:
+- Az **IntuneMAMUPN** beállítást az MDM által felügyelt összes alkalmazáshoz be kell állítani.  További információért lásd: [iOS-alkalmazások közti adatátvitel felügyelete a Microsoft Intune-ban](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
+- Az **IntuneMAMDeviceID** beállítást az összes külső féltől származó és az MDM által felügyelt üzleti alkalmazáshoz be kell állítani. Az **IntuneMAMDeviceID** beállítást az eszközazonosító jogkivonatra kell konfigurálni. Például: `key=IntuneMAMDeviceID, value={{deviceID}}`. További információt az [Alkalmazáskonfigurációs szabályzatok hozzáadása felügyelt iOS-eszközökhöz](https://docs.microsoft.com/intune/app-configuration-policies-use-ios) című témakörben talál.
+- Amennyiben csak az **IntuneMAMDeviceID** van konfigurálva, az Intune APP nem felügyeltnek tekinti az eszközt.  
 
 > [!NOTE]
 > Ha kifejezetten iOS-eszközökre vonatkozó támogatási információkat keres az alkalmazásvédelmi szabályzatok eszközkezelési állapottól függő alkalmazásáról, lásd: [MAM-alapú védelmi szabályzatok alkalmazása eszközkezelési állapot alapján](whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state-).

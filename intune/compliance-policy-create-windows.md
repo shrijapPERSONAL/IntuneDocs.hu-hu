@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11ccace4ca8e43e09b8aebeb92530629cf50a472
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: e38e6f615220135e9c4c9c786ab260f5921890ea
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602316"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642901"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Windowsos eszközök megfelelőségi szabályzatainak hozzáadása az Intune-ban
 
@@ -119,8 +119,6 @@ Windows 8.1-es számítógépek esetén például a visszaadott verzió a **3**-
 
 A HAS szolgáltatás működésével kapcsolatban lásd: [Állapotigazolási CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp).
 
-A Windows Defender ATP (Advanced Threat Protection) fenyegetések elleni védelmi szolgáltatásként való beállításáról a [Windows Defender ATP engedélyezése feltételes hozzáféréssel](advanced-threat-protection.md) című témakörben talál információt.
-
 ### <a name="device-properties"></a>Eszköztulajdonságok
 
 - **Operációs rendszer minimális verziója**: Adja meg a minimálisan megkövetelt verziót a **főverzió.alverzió.build.CU szám** formátumban. A helyes érték megtekintéséhez nyisson meg egy parancssort, és írja be a következőt: `ver`. A `ver` parancs visszaadja a verziószámot a következő formátumban:
@@ -183,6 +181,8 @@ A Windows Defender ATP (Advanced Threat Protection) fenyegetések elleni védelm
   - **Alacsony**: Az eszköz csak abban az esetben minősül megfelelőnek, ha kizárólag alacsony szintű fenyegetések állnak fenn. Bármilyen magasabb szintű fenyegetés esetén az eszköz nem megfelelő státuszúnak minősül.
   - **Közepes**: Az eszköz abban az esetben minősül megfelelőnek, ha az eszközön észlelt fenyegetések alacsony vagy közepes szintűek. Magas szintű fenyegetés észlelésekor a rendszer nem megfelelőként értékeli az eszközt.
   - **Magas**: Ez a legkevésbé biztonságos, minden fenyegetettségi szintet megengedő beállítás. Akkor lehet hasznos, ha ezt a megoldást kizárólag jelentéskészítési célokra használja.
+  
+  A Windows Defender ATP (Advanced Threat Protection) fenyegetések elleni védelmi szolgáltatásként való beállításáról a [Windows Defender ATP engedélyezése feltételes hozzáféréssel](advanced-threat-protection.md) című témakörben talál információt.
 
 ## <a name="windows-holographic-for-business"></a>Windows Holographic for Business
 
