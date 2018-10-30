@@ -1,5 +1,5 @@
 ---
-title: VPN-beállítások konfigurálása macOS-eszközökhöz a Microsoft Intune-ban – Azure | Microsoft Docs
+title: Wi-Fi-beállítások konfigurálása macOS-eszközökhöz a Microsoft Intune-ban – Azure | Microsoft Docs
 titleSuffix: ''
 description: Létrehozhat vagy hozzáadhat egy eszközkonfigurációs Wi-Fi-profilt a macOS-eszközökhöz. Megtekintheti a Microsoft Intune különböző beállításait, beleértve a tanúsítványok hozzáadását, az EAP-típusok kiválasztását és a hitelesítési módszer kiválasztását.
 keywords: ''
