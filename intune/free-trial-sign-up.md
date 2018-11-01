@@ -1,61 +1,123 @@
 ---
-title: Regisztráció a Microsoft Intune 30 napos próbaverziójára
-titleSuffix: Microsoft Intune
-description: A Microsoft Intune 30 napos próbaverziójára történő regisztráció ismertetése.
+title: Rövid útmutató – A Microsoft Intune ingyenes kipróbálása
+titlesuffix: ''
+description: Ezt a rövid útmutatót követve létrehoz majd egy ingyenes próbaelőfizetést, megismerheti a támogatott konfigurációkat és hálózati követelményeket, és ha kívánja, saját tartománynevét is konfigurálhatja.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 03/04/2018
-ms.topic: conceptual
+ms.date: 09/13/2018
+ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
+ms.reviewer: ''
 ms.suite: ems
-ms.custom: get-started
-ms.openlocfilehash: 6492b757376c95c366d45a63b05f2ec60bdd791b
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.custom: intune-azure
+ms.openlocfilehash: 37445cb2536e02937cf3002dc1cb56ab4b78f12f
+ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44254122"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46581393"
 ---
-# <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Regisztráció a Microsoft Intune ingyenes próbaverziójára
+# <a name="quickstart-try-microsoft-intune-for-free"></a>Rövid útmutató: A Microsoft Intune ingyenes kipróbálása 
 
+A Microsoft Intune lehetővé teszi, hogy az eszközök és alkalmazások kezelésével védje a munkatársak vállalati adatait. Ezt a rövid útmutatót követve létrehoz majd egy ingyenes előfizetést az Intune tesztkörnyezetben történő kipróbálásához.
 
-Ez a cikk végigvezeti Önt az Azure Portalhoz tartozó önálló Intune-próbaverzióra történő regisztráció lépésein.
+Az Intune a Microsoft Azure Portal használatával felügyelt, felhőalapú szolgáltatásból kínál mobileszköz-kezelést (MDM) és mobilalkalmazás-kezelést (MAM). Az Intune használatával vállalata megfelelőségi szabályzatainak és követelményeinek eleget téve biztosíthatja munkatársai vállalati erőforrásainak (adatok, eszközök és alkalmazások) megfelelő konfigurálását, elérését és frissítését. 
 
-1. Látogasson el az [Intune regisztrációs](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) oldalára, és töltse ki az űrlapot a próbaverzióra való regisztrációhoz.
-2. Ha rendelkezik munkahelyi vagy iskolai fiókkal és azt szeretné használni az Intune próbaverziójához, akkor kövesse [ezeket a regisztrációs utasításokat](/intune/account-sign-up).
+## <a name="prerequisites"></a>Előfeltételek
+A Microsoft Intune beállítása előtt tekintse át az alábbi követelményeket:
 
-* Ha az informatikai operatív tevékenység és a felhasználók túlnyomó része nem az Ön földrajzi helyén van, érdemes lehet azt az adott földrajzi helyet kiválasztania a **Hol működik a cége?** legördülő listában.
+   - [Támogatott operációs rendszerek és böngészők](supported-devices-browsers.md) 
+   - [A hálózati konfiguráció követelményei és a sávszélesség](network-bandwidth-use.md)
 
-2. A regisztrációs folyamat végén egy üzenet jelenik meg, amely az új fiók adatait tartalmazza. <br/> 
+## <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Regisztráció a Microsoft Intune ingyenes próbaverziójára
 
-![Fiókadatok képe](./media/2-end-of-sign-up-process.png) <br/>
+Az Intune kipróbálása 30 napig ingyenes. Ha már rendelkezik munkahelyi vagy iskolai fiókkal, **jelentkezzen be** vele, és adja hozzá az Intune-t az előfizetéshez. Ha még nem, **regisztrálhat** egy új fiókot, amellyel használatba veheti az Intune-t a cégében.
 
-Ha ekkor a **Minden készen áll** gombra kattint, megnyílik az Office 365 felügyeleti központja, ahol felhasználókat adhat a tesztkörnyezethez. <br/><br/>Ha viszont közvetlenül az Intune Azure Portalra szeretne belépni, nyisson meg egy új böngészőablakot, és írja be a **https://portal.azure.com** címet a böngésző címsorába. Megnyílik az Azure bejelentkezési oldala, ahol a bejelentkezéshez megadhatja a kapott hitelesítő adatokat. Ezt a címet bármikor használhatja, amikor az Intune próbaverziójába szeretne belépni. <br/> ![Az Azure Portal bejelentkezési oldalának képe](./media/azure-portal-signin.png)
+> [!IMPORTANT]
+> Meglévő munkahelyi vagy iskolai fiókok nem vonhatók össze újonnan regisztrált fiókokkal.
 
-Amikor először jelentkezik be az Intune [Azure Portalba](https://portal.azure.com), akkor előfordulhat, hogy az Intune nem jelenik meg az Azure-irányítópulton. Az Intune szolgáltatás felvétele az Azure-irányítópultra:
-1. Az irányítópult bal oldalán, az Azure-szolgáltatások listájában kattintson a **Minden szolgáltatás >** elemre, és a keresőmezőbe írja be az **Intune** kifejezést.
-2. Válassza a listából az **Intune** elemet, és a csillagra kattintva vegye fel a szolgáltatáslistára.<br/> ![Kép a Microsoft Intune az Azure Portalon való kiválasztásáról](./media/azure-add-intune1.png)
-3. Ezután a szolgáltatáslistában az **Intune** elemet kiválasztva megnyithatja az Intune-irányítópultot.
+1. Nyissa meg a [Microsoft Intune próbaverziójának](https://go.microsoft.com/fwlink/?linkid=2019088) oldalát, és töltse ki az űrlapot.
 
-Amikor próbaverziót regisztrál, e-mailben elküldjük a fiókadatait is a regisztráció során megadott e-mail címre. Az e-mail megerősíti, hogy a próbaverzió aktív.
+    ![Képernyőkép a Microsoft Intune próbaverziójának fiókregisztrációs weboldaláról](./media/account-sign-up-site-full-browser.png)
 
-## <a name="keeping-the-admin-experiences-straight"></a>Átlátható felügyelet
+    Ha az informatikai operatív tevékenység és a felhasználók túlnyomó része nem az Ön földrajzi helyén van, érdemes lehet azt az adott földrajzi helyet kiválasztania az **Ország vagy régió** legördülő listában. Az Azure a regionális információt használja fel, hogy a megfelelő szolgáltatásokat nyújtsa. Ez a beállítás később már nem módosítható.
+
+2. Hozzon létre fiókot a **.onmicrosoft.com** utótaggal kiegészített vállalati nevével. 
+
+    ![Képernyőkép a Microsoft Intune próbaverziójának fiókregisztrációs weboldaláról](./media/account-sign-up-site-user-id.png)
+
+    Ha vállalata saját egyéni tartománnyal rendelkezik, amelyet a **.onmicrosoft.com** utótag nélkül szeretne használni, ezt a cikk későbbi részében ismertetett módon megváltoztathatja az Office 365 felügyeleti portálján.
+
+3. A regisztrációs folyamat végén megtekintheti az új fiók adatait.
+
+    ![Fiókadatok képe](./media/intune-end-of-sign-up-process.png) 
+
+## <a name="sign-in-to-the-azure-portal"></a>Bejelentkezés az Azure Portalon
+
+1. Nyisson meg egy böngészőablakot, és írja be a címsorba a következőt: **https://portal.azure.com**. 
+2. A bejelentkezéshez használja a fenti lépésekben megadott hitelesítő adatokat.
+
+    ![Az Azure Portal bejelentkezési oldalának képe](./media/azure-portal-signin.png)
+
+3. A lap bal oldalán lévő oldalsávon lévő **Minden szolgáltatás** lehetőséggel megtekintheti a Microsoft Intune-t az Azure Portalon.
+4. A szűrőmezőben keressen rá a **Microsoft Intune-ra**, majd jelölje ki azt.
+5. Kattintson a **csillagra**, amivel felveszi az Intune-t a kedvenc szolgáltatásai listájának aljára. Nyissa meg az Intune irányítópultot.
+
+Amikor próbaverziót regisztrál, e-mailben elküldjük a fiókadatait és a regisztráció során megadott e-mail címet. Az e-mail megerősíti, hogy a próbaverzió aktív.
+
+## <a name="set-the-mdm-authority-to-intune"></a>Az Intune beállítása MDM-szolgáltatóként
+
+A mobileszköz-felügyeleti (MDM-) szolgáltató beállítása szabja meg, hogy miként kezelheti mobileszközeit. Ahhoz, hogy a felhasználók felügyeletre tudják regisztrálni eszközeiket, a rendszergazdának be kell állítania egy MDM-szolgáltatót.
+
+Az Intune az alábbi lépésekkel állítható be MDM-szolgáltatóként.
+
+1. Nyisson meg egy böngészőablakot, és írja be a címsorba a következőt: **https://portal.azure.com**. 
+2. Válassza a **Minden szolgáltatás** > **Microsoft Intune** lehetőséget.
+3. A **Mobileszköz-kezelő szolgáltató** beállítás megnyitásához válassza a narancssárga szalagcímet. 
+
+    > [!NOTE]
+    > A narancssárga szalagcím csak akkor jelenik meg, ha még nem állított be az MDM-szolgáltatót.
+
+4. A **Mobileszköz-kezelő szolgáltató** szakaszban állítsa be MDM-szolgáltatóként az **Intune MDM-szolgáltatót**.
+
+## <a name="configure-your-custom-domain-name-optional"></a>Egyéni tartománynév konfigurálása (nem kötelező)
+
+A fentiekben már volt szó arról, hogy ha vállalata saját egyéni tartománnyal rendelkezik, amelyet a **.onmicrosoft.com** utótag nélkül szeretne használni, ezt az Office 365 felügyeleti portálján megváltoztathatja. Megadhatja, ellenőrizheti és konfigurálhatja saját egyéni tartománynevét.  
+
+> [!IMPORTANT]
+> A kezdeti **onmicrosoft.com** tartománynév nem nevezhető át és nem távolítható el. Hozzáadhat, ellenőrizhet vagy eltávolíthat az Intune-nal használt egyéni tartományneveket vállalata egyértelmű identitásának megőrzése érdekében.
+
+1. Nyissa meg az [Office 365 felügyeleti portálját](https://portal.office.com/Admin/Default.aspx), és jelentkezzen be rendszergazdai fiókjával.
+
+2. A navigációs panelen kattintson a **Beállítás** > **Tartományok** > **Tartomány hozzáadása** elemre.
+
+3. Gépelje be egyéni tartománynevét. Végül válassza a **Tovább** lehetőséget.
+
+   ![Képernyőkép az Office 365 felügyeleti központjáról a Beállítások > Tartományok lehetőség kiválasztásával, és új tartománynév hozzáadásáról](./media/domain-custom-add.png)
+
+4. Ellenőrizze, hogy az imént megadott tartománynak Ön-e a tulajdonosa. 
+    
+    A **Kód küldése e-mailben** lehetőséget választva e-mailt küld a tartománya regisztrált kapcsolattartójának. Az e-mail beérkezése után másolja ki a kódot, és illessze be az **Írja be az ellenőrzőkódot** címkéjű mezőbe. Ha az ellenőrző kód egyezik, a tartomány hozzá lesz adva a bérlőjéhez. Előfordulhat, hogy a megjelenő e-mail nem ismerős. Egyes regisztráló szervezetek elrejtik a tartomány regisztrálásakor megadott valódi e-mail-címet.
+
+   ![Képernyőkép az Office 365 felügyeleti központjáról – A hozzáadott tartománynév ellenőrzése](./media/domain-custom-verify.png)
+
+   > [!NOTE]
+   > TXT típusú rekordok ellenőrzésének részletes leírását a [DNS-rekordok létrehozása bármely DNS-szolgáltatón az Office 365-höz](https://support.office.com/article/Create-DNS-records-at-any-DNS-hosting-provider-for-Office-365-7B7B075D-79F9-4E37-8A9E-FB60C1D95166).
+
+## <a name="admin-experiences"></a>Rendszergazdai felületek
 
 Két portált használhat:
-- Az Intune-irányítópultot az Azure-on ([portal.azure.com](https://portal.azure.com)), ahol megismerheti [mire képes az Intune](what-is-intune.md). Többnyire az Intune-irányítópulton fog dolgozni.
-- Az Office 365 Felügyeleti központot ([portal.office.com](https://portal.office.com)), ahol a felhasználókat adhatja hozzá és kezelheti, ha nem az Azure Active Directoryt használja ezekre a feladatokra. Továbbá fiókjának számlázási- támogatási- és egyéb aspektusait is kezelheti itt.
+- Az Intune-irányítópultot az Azure-on ([portal.azure.com](https://portal.azure.com)), ahol megismerheti [az Intune képességeit](what-is-intune.md). Többnyire az Intune-irányítópulton fog dolgozni.
+- Az Office 365 felügyeleti központját ([portal.office.com](https://portal.office.com)), ahol a felhasználókat adhatja hozzá és kezelheti, ha nem az Azure Active Directoryt használja ezekre a feladatokra. Továbbá fiókjának számlázási- támogatási- és egyéb aspektusait is kezelheti itt.
 
 ## <a name="next-steps"></a>További lépések
 
-### <a name="integration-with-other-products"></a>Integráció más termékekkel
-Az Azure Active Directory felhasználói fiókok Intune-nal való használatával kapcsolatos további információk:
-- [Identitáskövetelmények](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
-- [A címtár-szinkronizálás követelményei](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
-- [Többtényezős hitelesítés követelményei](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
+Ebben a rövid útmutatóban ingyenes előfizetést hozott létre az Intune tesztkörnyezetben történő kipróbálásához, és egyedi tartománynév konfigurálására is lehetősége volt. Tovább ismerkedhet a Microsoft Intune-nal, ha továbblép a következő, felhasználók hozzáadásával és licencek hozzárendelésével foglalkozó gyors útmutatóra.
 
-További információk [Az Intune és a System Center Configuration Manager együttes használatáról](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management)
+> [!div class="nextstepaction"]
+> [Felhasználó létrehozása](get-started-users.md)
