@@ -8,14 +8,13 @@ ms.topic: include
 ms.date: 04/16/2018
 ms.author: mandia
 ms.custom: include file
-ms.openlocfilehash: 9bc4da7e379782045e02a0dfb19670f946a1177a
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 26dba56aad238ff20f7d9e90c4eaf62793ef6b59
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38942059"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236730"
 ---
-1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
-2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
-3. Válassza az **Eszközmegfelelőség** > **Szabályzatok** > **Szabályzat létrehozása** lehetőséget.
-4. Adjon meg **Nevet** és **Leírást**.
+1. Az [Azure Portalon](https://portal.azure.com) kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
+2. Válassza az **Eszközmegfelelőség** > **Szabályzatok** > **Szabályzat létrehozása** lehetőséget.
+3. Adjon meg **Nevet** és **Leírást**.
