@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 677b3853d1923a52572d8088c885f794175c4d52
-ms.sourcegitcommit: a13d1eafc979a9cfeb4adbdea861e2784c2b1068
+ms.openlocfilehash: 67a1eba8208140306c697b7fe7dddb987e4b75c9
+ms.sourcegitcommit: 7c80833b74a7203edc23c550d0d0b63229cda452
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46329997"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50001609"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>A Microsoft Intune iOS-eszközkorlátozásokra vonatkozó beállításai
 
@@ -215,8 +215,8 @@ Az **Importálás** gombra kattintva egy CSV formátumú fájlt is beolvashat. E
 -   **Wi-Fi-hálózatokhoz való csatlakozás csak konfigurációs profilokkal (csak felügyelt)** – Az eszköz csak olyan Wi-Fi-hálózatokhoz csatlakozhat, amelyeket Intune-beli Wi-Fi-profillal konfiguráltak.
 
 - **Mobilhálózati használati szabályok (csak felügyelt)** – A beállítással a felügyelt alkalmazások által mobilhálózatokon használható adattípusokat határozhatja meg. A következő lehetőségek közül választhat:
-    - **Mobiladatok használatának letiltása** – A mobiladatok használatát letilthatja **Minden kezelt alkalmazás** vagy **adott alkalmazások** számára.
-    - **Mobiladatok használatának letiltása barangolás esetén** – A mobiladatok barangolás esetén való használatát letilthatja **Minden kezelt alkalmazás** vagy **adott alkalmazások** számára.
+    - **Mobiladatok használatának letiltása** – A mobiladatok használatát letilthatja **minden kezelt alkalmazás** vagy **adott alkalmazások számára**.
+    - **Mobiladatok használatának letiltása barangolás közben** – A mobiladatok barangolás közben való használatát letilthatja **minden kezelt alkalmazás** vagy **adott alkalmazások** számára.
 
 ## <a name="connected-devices"></a>Csatlakoztatott eszközök
 
@@ -337,7 +337,7 @@ Az alábbi listában néhány gyakori beépített iOS-alkalmazás csomagazonosí
 -   **Előugró ablakok** – Engedélyezi vagy letiltja a böngésző előugróablak-blokkolóját.
 
 
-## <a name="domains"></a>Domains
+## <a name="domains"></a>Tartományok
 
 ### <a name="unmarked-email-domains"></a>Jelöletlen e-mail-tartományok
 

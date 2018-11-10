@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/24/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 35c76db52db0f037427357eb5f3059a65908ae12
-ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
+ms.openlocfilehash: 6df3f16940a9478756cc1f268ad98b7c9d3f044e
+ms.sourcegitcommit: 7c80833b74a7203edc23c550d0d0b63229cda452
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168947"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50001558"
 ---
 # <a name="using-your-android-device-with-intune-company-portal"></a>Android-eszköz használata az Intune-beli Céges portállal
 
@@ -30,9 +30,9 @@ A cikk az Androidhoz készült Céges portálra vonatkozó feladatokat és infor
 
 ## <a name="supported-versions"></a>Támogatott verziók
 
-A Céges portál jelenleg az Android 4.4-es és újabb verzióit támogatja. A portál a Samsung Knox 4.4-es és annál újabb verzióját használó eszközöket is támogatja.
+A Céges portál jelenleg az Android 4.4-es és újabb verzióit támogatja. Ez az Android 4.4-es vagy újabb verzióját futtató Samsung Knox-eszközökre is vonatkozik.
 
-## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Regisztrálás az Intune-ban és a Céges portál telepítése
+## <a name="enrolling-in-intune-and-installing-the-company-portal"></a>Regisztrálás az Intune-ban és a Céges portál telepítése
 
 - [Eszköz regisztrálása az Intune-ban](enroll-your-device-in-Intune-android.md)
 - [Munkahelyi profil létrehozása és eszköz regisztrálása az Intune-ban](create-a-work-profile-and-enroll-your-device-in-intune-android.md)

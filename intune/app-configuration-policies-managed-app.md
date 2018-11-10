@@ -15,12 +15,12 @@ ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c94357d90f89e77be03df0db9ba9e2d89836623b
-ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
+ms.openlocfilehash: 57de118c2e13182a0d26aa36d1dc5b1f7ea9c4e9
+ms.sourcegitcommit: 46f6f3d4e1c7c0a5a716503f759ea5cf03c1a02b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799523"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50136964"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>Alkalmazáskonfigurációs szabályzatok hozzáadása felügyelt alkalmazásokhoz eszközbeléptetés nélkül
 
@@ -39,7 +39,7 @@ Az alkalmazáskonfigurációs szabályzatokat nem regisztrált eszközökön is 
       Az Azure Portalon megjelenő profilleírás.
     - **Eszközbeléptetés típusa**  
       Válassza az **Alkalmazások kezelése** lehetőséget.
-6. A konfigurálni kívánt alkalmazás kiválasztásához válassza a **Társított alkalmazás** lehetőséget. Válassza ki a listából azon alkalmazásokat, amelyeket jóváhagyott az Intune-nal való szinkronizáláshoz.
+6. A konfigurálni kívánt alkalmazás kiválasztásához válassza a **Társított alkalmazás** lehetőséget. Válassza ki a listából azon alkalmazásokat, amelyeket jóváhagyott az Intune-nal való szinkronizáláshoz.
 7. Az alkalmazás által támogatott konfigurációs beállítások mindegyikéhez írja be a **Nevet** és az **Értéket**, majd válassza a három pontot (**…**).  
     Egy konfiguráció törléséhez válassza a három pontot (**...** ), majd a **Törlés** lehetőséget.  
     
@@ -51,13 +51,13 @@ Az Intune képes bizonyos jogkivonatokat generálni és elküldeni a felügyelt 
 
 Az Intune a következő tokentípusokat támogatja a konfigurációs beállítások között. Más egyéni kulcs-érték párok nincsenek támogatva.
 
-- \{\{userprincipalname\}\} — például **John@contoso.com**
-- \{\{mail\}\} — például **John@contoso.com**
-- \{\{partialupn\}\} — például **János**
-- \{\{accountid\}\} — például **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
-- \{\{userid\}\} — például **3ec2c00f-b125-4519-acf0-302ac3761822**
-- \{\{username\}\} — például **Szabó János**
-- \{\{PrimarySMTPAddress\}\}– például**testuser@ad.domain.com** 
+- \{\{userprincipalname\}\} – például: John@contoso.com
+- \{\{mail\}\} – például: John@contoso.com
+- \{\{partialupn\}\} – például: John
+- \{\{accountid\}\} – például: fc0dc142-71d8-4b12-bbea-bae2a8514c81
+- \{\{userid\}\} – például: 3ec2c00f-b125-4519-acf0-302ac3761822
+- \{\{username\}\} — például: John Doe
+- \{\{PrimarySMTPAddress\}\}– például: testuser@ad.domain.com
 
 
 > [!Note]  

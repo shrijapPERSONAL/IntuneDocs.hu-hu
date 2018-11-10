@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/27/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b89ca2c4320db733f39ce9b67d275169f4cba5c6
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 58b157cfe639651aa65e8dfb510b857d0128589a
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313791"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102123"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>A Windows Defender ATP engedélyezése feltételes hozzáféréssel az Intune-ban
 
@@ -89,6 +89,10 @@ Miután egyszer védelem alá vont egy eszközt egy konfigurációs csomaggal, n
 6. A beállítások konfigurálása:
 
   - **A Windows Defender ATP ügyfélkonfigurációs csomagjának típusa**: Válassza a **Bevezetés** lehetőséget a konfigurációs csomag profilhoz adásához. A **Regisztráció megszüntetése** lehetőséget választva eltávolíthatja profilból a konfigurációs csomagot.
+  
+    > [!NOTE] 
+    > Ha sikerült kapcsolatot létrehoznia a Windows Defender ATP-vel, az Intune automatikusan **Regisztrálja** a konfigurációs profilt.
+  
   - **Minták megosztása minden fájlhoz**: **Engedélyezve** lehetővé teszi minták gyűjtését és megosztását a Windows Defender ATP-vel. Ha például gyanús fájlt talál, elküldheti a Windows Defender ATP-nek alapos elemzésre. **Nem konfigurálva** nem oszt meg mintákat a Windows Defender ATP számára.
   - **Telemetriai jelentések gyakoriságának növelése**: Magas kockázatnak kitett eszközök ennek a beállításnak az **Engedélyezésével** gyakrabban jelentik a telemetriai adatokat a Windows Defender ATP szolgáltatásnak.
 

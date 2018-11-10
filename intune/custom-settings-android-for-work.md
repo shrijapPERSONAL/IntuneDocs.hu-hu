@@ -1,12 +1,11 @@
 ---
-title: Egyéni Intune-profilbeállítások androidos munkahelyi profilokhoz
-titlesuffix: Microsoft Intune
-description: Információk az androidos munkahelyi profilos eszközök egyéni Microsoft Intune-profilbeállításainak létrehozásáról.
+title: Egyéni beállítások hozzáadása Android Enterprise-eszközökhöz a Microsoft Intune-ban – Azure | Microsoft Docs
+description: Egyéni profilok hozzáadása vagy létrehozása Android Enterprise-eszközökhöz a Microsoft Intune-ban
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/12/2017
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,42 +14,85 @@ ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 109c50acf194598017aa507a0979ad3b9298de9e
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: a622264ed7cc091849bacbd02f8ae7bdb33603fe
+ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905291"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49983142"
 ---
-# <a name="create-intune-custom-profile-settings-for-android-work-profile-devices"></a>Egyéni Intune-profilbeállítások Androidos munkahelyi profilos eszközökhöz
+# <a name="use-custom-settings-for-android-enterprise-devices-in-microsoft-intune"></a>Egyéni beállítások használata Android Enterprise-eszközökhöz a Microsoft Intune-ban
 
-Az Intune androidos munkahelyi profilok egyéni konfigurációs szabályzatával olyan OMA-URI-beállításokat rendelhet hozzá, amelyekkel vezérelhetők az androidos munkahelyi profilos eszközökön elérhető szolgáltatások. Ezek szabványos beállítások, amelyeket számos mobileszköz-gyártó alkalmaz az eszközök szolgáltatásainak vezérlésére.
+A Microsoft Intune-nal egyéni beállításokat adhat hozzá vagy hozhat létre az Android Enterprise-eszközökhöz „egyéni profilok” használatával. Az egyéni profilok az Intune részét képezik. Akkor hasznosak, ha olyan eszközbeállításokat és funkciókat szeretne használni, amelyek nem érhetők el beépítetten az Intune-ban.
 
-Ezzel a képességgel olyan Android-beállításokat is érvénybe léptethet, amelyek nem konfigurálhatók Intune-szabályzatokkal. Az Intune jelenleg csak korlátozott számú egyéni Android-szabályzatot támogat. E cikk példái alapján megtudhatja, mely szabályzatokat lehet konfigurálni.
+Az Android Enterprise rendszer egyéni profiljai az Open Mobile Alliance Uniform Resource Identifier (OMA-URI) beállításokat használják a különböző funkciók vezérléséhez Android Enterprise-eszközökön. Ezekkel a beállításokkal általában a mobileszközgyártók vezérlik ezeket a funkciókat.
 
-## <a name="create-a-custom-profile"></a>Egyéni profil létrehozása
+Az Intune korlátozott számú androidos egyéni profilt támogat.
 
-1. Az első lépésekhez kövesse az [Egyéni eszközbeállítások konfigurálása](custom-settings-configure.md) című témakör utasításait. A **Platform** területen válassza a **Vállalati Android** lehetőséget, a **Profil típusa** beállításnál pedig az **Egyéni** lehetőséget.
-2. Az **Egyéni OMA-URI beállítások** panelen a **Hozzáadás** elemet választva adhat meg új beállítást.
-3. A **Sor hozzáadása** panelen adja meg a következőket:
-    - **Név** – Adjon egyedi nevet az androidos munkahelyi profil egyéni beállításainak, hogy azok azonosíthatók legyenek az Azure Portal webhelyen.
-    - **Leírás** – Adjon meg egy leírást, amely áttekintést nyújt az Android egyéni szabályzatáról, és olyan releváns információkat tartalmaz, amelyek megkönnyítik a keresését.
-    - **OMA-URI** – Adja meg az OMA-URI azonosítót, amelyhez beállítást kíván megadni.
-    - **Adattípus** – Válassza ki az adattípust az OMA-URI-beállítás megadásához. A **Sztring**, **Sztring (XML)**, **Dátum és idő**, **Egész szám**, **Lebegőpontos szám**, **Logikai** vagy **Base64 (fájl)** lehetőségek közül választhat.
-    - **Érték** – Adja meg a korábban megadott OMA-URI-azonosítóhoz társítandó értéket. Az érték megadásának módszere a választott adattípusnak megfelelően változhat. **Dátum és idő** típus esetén például a naptárból választhat értéket.
-4. Ha végzett, az OK választásával térhet vissza az **Egyéni OMA-URI beállítások** panelre, hogy további beállításokat adjon meg vagy a **Létrehozás** választásával létrehozza az egyéni profilt.
+Ebből a cikkből megtudhatja, hogyan hozhat létre egyéni profilt az Android Enterprise-eszközök számára. Emellett egy olyan egyéni profilra is mutat példát, amely nem engedélyezi a másolást és a beillesztést.
 
+## <a name="create-the-profile"></a>A profil létrehozása
+
+1. Az [Azure Portalon](https://portal.azure.com) kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
+2. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
+3. Adja meg a következő beállításokat:
+
+    - **Név**: Adja meg a profil nevét, például: `android enterprise custom profile`.
+    - **Leírás**: Itt adhatja meg a profil leírását.
+    - **Platform**: Válassza az **Android Enterprise** lehetőséget.
+    - **Profil típusa**: Válassza az **Egyéni** lehetőséget.
+
+4. Az **Egyéni OMA-URI-beállítások** menüben válassza a **Hozzáadás** lehetőséget. Adja meg a következő beállításokat:
+
+    - **Név**: Adjon meg egyedi nevet az OMA-URI-beállítás számára, hogy könnyen megtalálja.
+    - **Leírás**: Adjon meg egy olyan leírást, amely áttekintést ad a beállításról és egyéb fontos részleteket tartalmaz.
+    - **OMA-URI**: Adja meg azt az OMA-URI azonosítót, amelyet beállításként kíván használni.
+    - **Adattípus**: Adja meg azt az adattípust, amelyet az OMA-URI beállításhoz szeretne használni. A választható lehetőségek:
+
+      - Sztring
+      - Sztring (XML-fájl)
+      - Dátum és időpont
+      - Egész szám
+      - Lebegőpontos szám
+      - Logikai
+      - Base64 (fájl)
+
+    - **Érték**: Adja meg a megadott OMA-URI azonosítóhoz társítandó adatértéket. Az érték a választott adattípustól függ. A **Dátum és idő** típus esetén például a dátumválasztóból választhat értéket.
+
+    Néhány beállítás megadása után válassza az **Exportálás** lehetőséget. Az **Exportálás** a hozzáadott értékek listáját hozza létre egy vesszővel tagolt (.csv) fájlban.
+
+5. A módosítások mentéséhez válassza az **OK** gombot. Szükség szerint adjon hozzá további beállításokat.
+6. Ha elkészült, az Intune-profil létrehozásához kattintson az **OK** > **Létrehozás** lehetőségre. Ha a profil elkészült, megjelenik az **Eszközkonfiguráció – Profilok** listában.
 
 ## <a name="example"></a>Példa
 
-Ebben a példában egyéni profilt fogunk létrehozni, amellyel megszabható, hogy engedélyezi-e a munkahelyi és személyes alkalmazások közötti másolást és beillesztést a felügyelt androidos munkahelyi profilt használó eszközökön.
+Ebben a példában egy olyan egyéni profil jön létre, amely nem engedélyezi a másolási és a beillesztési műveleteket a munkahelyi és a személyes alkalmazások között Android Enterprise-eszközökön.
 
-1. Az ebben a cikkben leírt eljárással hozzon létre egyedi profilt androidos munkahelyi profilos eszközökhöz az alábbi értékek használatával:
-    - **Név** – Írja be a „Másolás és beillesztés tiltása” szöveget, vagy más tetszőleges megnevezést.
-    - **Leírás** – Írja be a „Letiltja a másolást és beillesztést munkahelyi és személyes alkalmazások között” szöveget, vagy más tetszőleges leírást.
-    - **OMA-URI** – Írja be a **./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste** értéket.
-    - **Adattípus** – Válassza a **Logikai** értéket jelezve, hogy ez az OMA-URI vagy **Igaz** vagy **Hamis**.
-    - **Érték** – Válassza az **Igaz** értéket.
-2. A kész beállításnak az ábrán láthatóhoz hasonlónak kell lennie.
-![Másolás és beillesztés tiltása androidos munkahelyi profilhoz.](./media/custom-policy-afw-copy-paste.png)
-3. Ezután ha ezt az egyéni profilt egy Ön által kezelt androidos munkahelyi profilt használó eszközhöz társítja, tiltva lesz a másolás és beillesztés a munkahelyi és személyes profilokban futó alkalmazások között.
+1. Az [Azure Portalon](https://portal.azure.com) kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
+2. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
+3. Adja meg a következő beállításokat:
+
+    - **Név**: Adja meg a profil nevét, például: `android ent block copy paste custom profile`.
+    - **Leírás:** Itt adhatja meg a profil leírását.
+    - **Platform**: Válassza az **Android Enterprise** lehetőséget.
+    - **Profil típusa**: Válassza az **Egyéni** lehetőséget.
+
+4. Az **Egyéni OMA-URI-beállítások** menüben válassza a **Hozzáadás** lehetőséget. Adja meg a következő beállításokat:
+
+    - **Név**: Adjon meg a következőhöz hasonló nevet: `Block copy and paste`.
+    - **Leírás**: Adjon meg a következőhöz hasonló leírást: `Blocks copy/paste between work and personal apps`.
+    - **OMA-URI**: Írja be a következőt: `./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste`.
+    - **Adattípus**: Válassza a **Logikai** lehetőséget, hogy az OMA-URI azonosító értéke **Igaz** vagy **Hamis** lehessen.
+    - **Érték**: Válassza az **Igaz** lehetőséget.
+
+5. Miután megadta a beállításokat, a környezetének a képhez hasonlónak kell kinéznie:
+
+    ![Tiltsa le a másolást és a beillesztést az androidos munkahelyi profilban.](./media/custom-policy-afw-copy-paste.png)
+
+Amikor hozzárendeli ezt a profilt az Ön által felügyelt Android Enterprise-eszközökhöz, a másolás és a beillesztés nem lesz engedélyezett a munkahelyi és a személyes profilok alkalmazásai között.
+
+## <a name="next-steps"></a>További lépések
+
+A profil létrejött, de egyelőre nem csinál semmit. Következő lépésként [végezze el a profil hozzárendelését](device-profile-assign.md).
+
+Tekintse meg, hogyan [hozhat létre profilokat Android-eszközökön](custom-settings-android.md).

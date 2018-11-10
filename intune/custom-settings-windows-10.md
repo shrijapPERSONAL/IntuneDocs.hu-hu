@@ -1,64 +1,87 @@
 ---
-title: Egyéni beállítások Windows 10-es eszközökhöz a Microsoft Intune-ban – Azure | Microsoft Docs
-description: A Microsoft Intune-ban egyéni profil használatával konfigurálhatja a Windows 10 rendszerű eszközök egyéni OMA-URI beállításait.
+title: Egyéni beállítások hozzáadása Windows 10-eszközökhöz a Microsoft Intune-ban – Azure | Microsoft Docs
+description: Hozzáadhat vagy létrehozhat egy egyéni profilt, amelyet a Windows 10 rendszerű eszközök OMA-URI-beállításaihoz használhat a Microsoft Intune-ban. Egyéni beállítások hozzáadásához használjon egyéni profilt.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/18/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bdbb6643a4ee8aace0db22cd7f9189f7ac6445f0
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 78ed923c7502744ccd7f23e341049ce8ee8a8d86
+ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232826"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49983210"
 ---
-# <a name="custom-oma-uri-settings-for-windows-10-devices---intune"></a>Egyéni OMA-URI beállítások Windows 10-es eszközökhöz – Intune
+# <a name="use-custom-settings-for-windows-10-devices-in-intune"></a>Egyéni beállítások használata Windows 10 rendszerű eszközökhöz az Intune-ban
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+A Microsoft Intune-nal egyéni beállításokat adhat hozzá vagy hozhat létre a Windows 10-eszközökhöz „egyéni profilok” használatával. Az egyéni profilok az Intune részét képezik. Akkor hasznosak, ha olyan eszközbeállításokat és funkciókat szeretne használni, amelyek nem érhetők el beépítetten az Intune-ban.
 
-A Microsoft Intune Windows 10-hez és Windows 10 Mobile-hoz készült **egyéni** profiljával OMA-URI (Open Mobile Alliance egységes erőforrás-azonosító) beállításokat lehet telepíteni. Ezek a beállítások az eszközfunkciók szabályozására szolgálnak. A Windows 10 számos konfigurációszolgáltatói beállítást tesz elérhetővé, ilyen például a [Szabályzat-konfigurációszolgáltató (Policy Configuration Service Provider, Policy CSP)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
+A Windows 10 egyéni profiljai az Open Mobile Alliance Uniform Resource Identifier (OMA-URI) beállításokat használják a különböző funkciók konfigurálásához. Ezekkel a beállításokkal általában a mobileszközgyártók vezérlik az eszközök funkcióit. 
 
-Ha egy adott beállítást keres, ne feledje, a [Windows 10-es eszközkorlátozási profil](device-restrictions-windows-10.md) számos olyan beállítást tartalmaz, amely be van építve az Intune-ba, és nem követel meg egyéni értékeket.
+A Windows 10 számos konfigurációszolgáltatói beállítást tesz elérhetővé, ilyen például a [Szabályzat-konfigurációszolgáltató (Policy Configuration Service Provider, Policy CSP)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
 
-## <a name="configure-custom-settings"></a>Egyéni beállítások konfigurálása
+Ha egy adott beállítást keres, ne feledje, hogy a [Windows 10 eszközkorlátozási profil](device-restrictions-windows-10.md) számos beépített beállítást tartalmaz. Így nem feltétlenül kell egyéni értékeket megadnia.
 
-1. Hozzon létre új konfigurációs profilt az **Egyéni** profiltípus használatával. Ennek módját [Az egyéni eszközbeállítások konfigurálása](custom-settings-configure.md) című cikk lépésenként ismerteti.
-2. Új beállítás létrehozásához az **Egyéni OMA-URI beállítások** területen válassza a **Hozzáadás** lehetőséget. Az **Exportálás** elemre kattintva az összes Ön által konfigurált értéket exportálhatja egy csv-fájlba.
-3. Minden egyes hozzáadni kívánt OMA-URI-beállításhoz adja meg a következő információkat:
+Ez a cikk:
 
-- **Név** – Adjon meg egy egyedi nevet az OMA-URI-beállítás számára, amellyel az egyszerűen azonosítható a beállítások listájában.
-- **Leírás** – Itt adhatja meg a beállítás leírását (nem kötelező).
-- **OMA-URI (megkülönbözteti a kis- és nagybetűket)**: Adja meg az OMA-URI azonosítót, amelyhez beállítást kíván megadni.
-- **Adattípus**: Válasszon egyet a következő lehetőségek közül:
-  - 
-  **Sztring**
-  - 
-  **Sztring (XML)**
-  - **Dátum és időpont**
-  - **Egész**
-  - **Lebegőpontos szám**
-  - **Logikai**
-  - **Base64**
-- **Érték**: Adja meg a megadott OMA-URI-azonosítóhoz társítandó értéket vagy fájlt.
+- bemutatja, hogyan hozhat létre egyéni profilokat Windows 10-eszközökhöz;
+- tartalmazza a javasolt OMA-URI-beállítások listáját;
+- példaként bemutat egy egyéni profilt, amely megnyit egy VPN-kapcsolatot.
 
-4. Ha elkészült, kattintson az **OK** elemre. A **Profil létrehozása** alatt kattintson a **Létrehozás** lehetőségre. Ekkor létrejön a profil, és megjelenik a profilok listájában.
+## <a name="create-the-profile"></a>A profil létrehozása
+
+1. Az [Azure Portalon](https://portal.azure.com) kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
+2. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
+3. Adja meg a következő beállításokat:
+
+    - **Név**: Adja meg a profil nevét, például: `windows 10 custom profile`.
+    - **Leírás:** Itt adhatja meg a profil leírását.
+    - **Platform**: Válassza a **Windows 10-es vagy újabb verzióját**.
+    - **Profil típusa**: Válassza az **Egyéni** lehetőséget.
+
+4. Az **Egyéni OMA-URI-beállítások** menüben válassza a **Hozzáadás** lehetőséget. Adja meg a következő beállításokat:
+
+    - **Név** – Adjon meg egy egyedi nevet az OMA-URI-beállítás számára, amellyel az egyszerűen azonosítható a beállítások listájában.
+    - **Leírás** – Adjon meg egy olyan leírást, amely ismerteti a beállítást, és minden fontos részletet tartalmaz.
+    - **OMA-URI** (megkülönbözteti a kis- és nagybetűket) – Adja meg azt az OMA-URI azonosítót, amelyet beállításként kíván használni.
+    - **Adattípus** – Adja meg azt az adattípust, amelyet az OMA-URI beállításhoz szeretne használni. A választható lehetőségek:
+
+        - Sztring
+        - Sztring (XML-fájl)
+        - Dátum és időpont
+        - Egész szám
+        - Lebegőpontos szám
+        - Logikai
+        - Base64 (fájl)
+
+    - **Érték** – Adja meg a megadott OMA-URI azonosítóhoz társítandó értéket. Az érték a választott adattípustól függ. A **Dátum és idő** típus esetén például a dátumválasztóból választhat értéket.
+
+    Néhány beállítás megadása után válassza az **Exportálás** lehetőséget. Az **Exportálás** a hozzáadott értékek listáját hozza létre egy vesszővel tagolt (.csv) fájlban.
+
+5. A módosítások mentéséhez válassza az **OK** gombot. Szükség szerint adjon hozzá további beállításokat.
+6. Ha elkészült, az Intune-profil létrehozásához kattintson az **OK** > **Létrehozás** lehetőségre. Ha a profil elkészült, megjelenik az **Eszközkonfiguráció – Profilok** listában.
 
 ## <a name="example"></a>Példa
+
 A következő példa a **Connectivity/AllowVPNOverCellular** beállítás engedélyezését mutatja be. Ez a beállítás lehetővé teszi, hogy a Windows 10-es eszköz VPN-kapcsolatot nyisson meg mobilhálózaton keresztül.
 
 ![VPN-beállításokat tartalmazó egyéni szabályzat – példa](./media/custom-policy-example.png)
 
 ## <a name="find-the-policies-you-can-configure"></a>A konfigurálható szabályzatok megkeresése
 
-A Windows 10 által támogatott konfigurációszolgáltatók (CSP-k) teljes listája a [Konfigurációszolgáltatók referenciája](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference) című témakörében található meg.
+A Windows 10 által támogatott konfigurációszolgáltatók (CSP-k) teljes listájáért lásd a [konfigurációszolgáltatók referenciáját](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference).
 
 Nem minden beállítás kompatibilis a Windows 10 összes verziójával. A [Konfigurációszolgáltatók referenciája](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference) című témakörből megtudhatja, hogy az egyes CSP-k mely verziókat támogatják.
 
-Ezen felül az Intune sem támogatja a felsorolt beállítások mindegyikét. Ha tudni szeretné, hogy az Intune támogatja-e a kívánt beállítást, nyissa meg a beállításhoz tartozó cikket. Minden beállítás oldalán szerepelnek a támogatott műveletek. Az Intune használatához a beállításnak támogatnia kell a **Hozzáadás** vagy a **Csere** műveletet.
+Az Intune nem támogatja a [konfigurációszolgáltatók referenciájában](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference) felsorolt összes beállítást. Ha tudni szeretné, hogy az Intune támogatja-e a kívánt beállítást, nyissa meg a beállításhoz tartozó cikket. Minden beállítás oldalán szerepelnek az általa támogatott műveletek. Az Intune használatához a beállításnak támogatnia kell a **Hozzáadás** vagy a **Csere** műveletet.
+
+## <a name="next-steps"></a>További lépések
+
+A profil létrejött, de egyelőre nem csinál semmit. Következő lépésként [végezze el a profil hozzárendelését](device-profile-assign.md).

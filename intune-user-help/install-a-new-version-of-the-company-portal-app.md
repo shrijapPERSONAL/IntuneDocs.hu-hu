@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/13/2017
+ms.date: 09/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,41 +15,39 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 8a83602d992ff7ea08be84272eee086ea364be0a
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 452ee2b386130a4c7ca6dc5026d3e2489c5ea33a
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147043"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863045"
 ---
 # <a name="how-to-update-the-company-portal-app"></a>A Céges portál alkalmazás frissítése
 
 Ez a cikk azt ismerteti, hogyan frissítheti a Céges portál alkalmazást, ha:  
-* Elérhetővé válik a Céges portál alkalmazás újabb verziója.
-* A Céges portál alkalmazás telepített verziója már nem támogatott.
+* Elérhető a Céges portál alkalmazás újabb verziója.
+* A Céges portál telepített verziója már nem támogatott.
 
-Az alábbi lépések ismertetik az alkalmazás frissítésének menetét Android, iOS és Windows rendszerű eszközökön.    
+Az alábbi lépések ismertetik az alkalmazás frissítésének vagy a legújabb verzió letöltésének menetét Android, iOS és Windows rendszerű eszközökön.    
 
-## <a name="update-the-intune-company-portal-app-on-your-android-device"></a>Az Intune Vállalati portál alkalmazás frissítése Android-eszközön
+## <a name="update-the-company-portal-app-on-your-android-device"></a>A Céges portál alkalmazás frissítése Android-eszközön  
 
-A Play Áruház riasztást küld, ha elérhető a Vállalati portál új verziója. A Vállalati portál alkalmazás maga nem jelenít meg figyelmeztetést. Válassza ki a riasztást, és kövesse a benne foglalt utasításokat az eszköz frissítéséhez.  
+A Google Play Áruház riasztást küld, ha elérhető a Vállalati portál új verziója. A Vállalati portál alkalmazás maga nem jelenít meg figyelmeztetést. Válassza ki az áruház riasztását, és kövesse a benne foglalt utasításokat az alkalmazás frissítéséhez. 
 
-## <a name="update-the-intune-company-portal-app-on-your-ios-device"></a>Az Intune Vállalati portál alkalmazás frissítése IOS-eszközön
+## <a name="update-the-company-portal-app-on-your-ios-device"></a>A Céges portál alkalmazás frissítése iOS-eszközön  
 
-Ha új verzió érhető el, az alkalmazás frissítési lehetősége megjelenik a telepített alkalmazások listájában.  
+Ha új verzió érhető el, megjelenik a **Frissítés** lehetőség a telepített alkalmazások között, a Céges portál alkalmazás mellett.  
 
-1. Nyissa meg az App Store-t, és keressen rá az **intune** szóra.
+1. Nyissa meg az App Store-t, és keressen rá az **Intune** szóra.  
+2. Ha megtalálja az alkalmazást, koppintson a **Frissítés** gombra.  
 
-2. Ha megtalálja az alkalmazást, koppintson a **Frissítés** gombra.
+## <a name="update-the-company-portal-app-on-your-windows-device"></a>A Céges portál alkalmazás frissítése Windows-eszközön
+A frissítések automatikus letöltéséhez azok megjelenése után nyissa meg a Microsoft Store áruházat, és lépjen a **Beállítások** területre. Ezután kapcsolja be az **alkalmazásfrissítéseket**. A legutóbbi frissítések és a letöltési sorban várakozó alkalmazások megtekintéséhez lépjen a **Letöltések és frissítések** területre.  
 
-## <a name="update-the-intune-company-portal-app-on-your-windows-device"></a>Az Intune Vállalati portál alkalmazás frissítése Windows-eszközön
-
-1.  Nyissa meg a Microsoft Áruházat, és keressen rá az **intune céges portál** kifejezésre.
-
-2.  Hajtsa végre a telepítési lépéseket.
-
-    > [!NOTE]
-    > Ha nem fér hozzá a Microsoft Áruházhoz, lépjen kapcsolatba a cég informatikai támogatási szolgálatával.
+Ha manuálisan szeretné frissíteni az alkalmazást, vagy a cége letiltotta az **alkalmazásfrissítéseket**, kövesse a következő lépéseket.  
+1. Nyissa meg a Microsoft Store-t.
+2. A keresősávba írja be a **Céges portál** kifejezést.
+3. A legújabb verzió telepítéséhez kattintson az alkalmazásra. 
 
 
 További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

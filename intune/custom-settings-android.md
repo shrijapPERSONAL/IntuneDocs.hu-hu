@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/07/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,44 +14,65 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0195e138b59fae019fa2bc02aadf211257a65cac
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f9e98575c92d403d51708f7403109bea2184176e
+ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31022050"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49983125"
 ---
-# <a name="custom-settings-for-android-devices---intune"></a>Android-eszközök egyéni beállításai – Intune
+# <a name="use-custom-settings-for-android-devices-in-microsoft-intune"></a>Egyéni beállítások használata Android-eszközökhöz a Microsoft Intune-ban
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+A Microsoft Intune-nal egyéni beállításokat adhat hozzá vagy hozhat létre az Android-eszközökhöz „egyéni profilok” használatával. Az egyéni profilok az Intune részét képezik. Akkor hasznosak, ha olyan eszközbeállításokat és funkciókat szeretne használni, amelyek nem érhetők el beépítetten az Intune-ban.
 
-Az egyéni profilok Open Mobile Alliance Uniform Resource Identifier (OMA-URI) beállítások segítségével konfigurálják az Android-eszközök különböző beállításait és a szolgáltatásait. Ezekkel a beállításokkal általában a mobileszközgyártók vezérlik az eszközök funkcióit.
+Az Android rendszer egyéni profiljai az Open Mobile Alliance Uniform Resource Identifier (OMA-URI) beállításokat használják a különböző funkciók konfigurálásához Android-eszközökön. Ezekkel a beállításokkal általában a mobileszközgyártók vezérlik ezeket a funkciókat.
 
-Egyéni profillal a következő Android-beállításokat konfigurálhatja és rendelheti hozzá. Ezek a beállítások nem beépített részei az Intune-szabályzatoknak:
+Egyéni profillal a következő Android-beállításokat konfigurálhatja és rendelheti hozzá. A következő beállítások nem érhetők el beépítetten az Intune-ban:
 
 - [Wi-Fi-profil létrehozása előmegosztott kulccsal](/intune/wi-fi-profile-shared-key)
 - [Alkalmazásonkénti VPN-profil létrehozása](/intune/android-pulse-secure-per-app-vpn)
 - [Alkalmazások engedélyezése és letiltása Samsung Knox Standard-eszközökön](/intune/samsung-knox-apps-allow-block)
 
 >[!IMPORTANT]
-> Ezzel a profiltípussal csak a felsorolt beállítások konfigurálhatók. Az Android-eszközök nem teszik elérhetővé a konfigurálható OMA-URI-beállítások teljes listáját. Ha több beállítást szeretne látni, szavazzon rájuk az [Intune Uservoice webhelyén](https://microsoftintune.uservoice.com/forums/291681-ideas).
+> Az egyéni profilokban csak a felsorolt beállítások konfigurálhatók. Az Android-eszközök nem teszik elérhetővé a konfigurálható OMA-URI-beállítások teljes listáját. Ha több beállítást szeretne látni, szavazzon rájuk az [Intune Uservoice webhelyén](https://microsoftintune.uservoice.com/forums/291681-ideas).
 
-## <a name="custom-profile-settings-for-android-devices"></a>Egyéni profilbeállítások Android rendszerű eszközökhöz
+Ebből a cikkből megtudhatja, hogyan hozhat létre egyéni profilt az Android-eszközök számára.
 
-1. Jelentkezzen be az [Azure portálra](https://portal.azure.com). 
-2. Kattintson a **Minden szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a  **Microsoft Intune** elemet.
-3. Hozzon létre egy egyéni profilt az Android-platformmal. A folyamat lépéseit az [Egyéni eszközbeállítások konfigurálása a Microsoft Intune-ban](custom-settings-configure.md) című cikk ismerteti.
-4. Az **Egyéni OMA-URI beállítások** területen válassza a **Hozzáadás**, majd a **Sor hozzáadása** lehetőséget.
-5. Adja meg a következő tulajdonságokat:
+## <a name="create-the-profile"></a>A profil létrehozása
 
-   - **Név** – Adjon meg egy egyéni nevet az OMA-URI beállításnak, hogy később könnyebben megtalálja.
-   - **Leírás** – Adjon meg egy olyan leírást, amely ismerteti a beállítást, valamint írjon be egyéb fontos részleteket.
-   - **Adattípus** – Adja meg az OMA-URI beállításhoz használt adattípust. A **Karakterlánc**, **Karakterlánc (XML)**, **Dátum és idő**, **Egész szám**, **Lebegőpontos szám** vagy **Logikai** lehetőségek közül választhat.
-   - **OMA-URI** – Adja meg a kívánt OMA-URI-t.
-   - **Érték** – Adja meg a megadott OMA-URI azonosítóhoz társítandó értéket.
+1. Az [Azure Portalon](https://portal.azure.com) kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
+2. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
+3. Adja meg a következő beállításokat:
 
-6. A módosítások mentéséhez válassza az **OK** gombot. Szükség szerint adjon hozzá további beállításokat.
+    - **Név**: Adja meg a profil nevét, például: `android custom profile`.
+    - **Leírás:** Itt adhatja meg a profil leírását.
+    - **Platform**: Válassza az **Android** lehetőséget.
+    - **Profil típusa**: Válassza az **Egyéni** lehetőséget.
+
+4. Az **Egyéni OMA-URI-beállítások** menüben válassza a **Hozzáadás** lehetőséget. Adja meg a következő beállításokat:
+
+    - **Név**: Adjon meg egyedi nevet az OMA-URI-beállítás számára, hogy könnyen megtalálja.
+    - **Leírás**: Adjon meg egy olyan leírást, amely áttekintést ad a beállításról és egyéb fontos részleteket tartalmaz.
+    - **OMA-URI**: Adja meg azt az OMA-URI azonosítót, amelyet beállításként kíván használni.
+    - **Adattípus**: Adja meg azt az adattípust, amelyet az OMA-URI beállításhoz szeretne használni. A választható lehetőségek:
+
+      - Sztring
+      - Sztring (XML-fájl)
+      - Dátum és időpont
+      - Egész szám
+      - Lebegőpontos szám
+      - Logikai
+      - Base64 (fájl)
+
+    - **Érték**: Adja meg a megadott OMA-URI azonosítóhoz társítandó adatértéket. Az érték a választott adattípustól függ. A **Dátum és idő** típus esetén például a dátumválasztóból választhat értéket.
+
+    Néhány beállítás megadása után válassza az **Exportálás** lehetőséget. Az **Exportálás** a hozzáadott értékek listáját hozza létre egy vesszővel tagolt (.csv) fájlban.
+
+5. A módosítások mentéséhez válassza az **OK** gombot. Szükség szerint adjon hozzá további beállításokat. 
+6. Ha elkészült, az Intune-profil létrehozásához kattintson az **OK** > **Létrehozás** lehetőségre. Ha a profil elkészült, megjelenik az **Eszközkonfiguráció – Profilok** listában.
 
 ## <a name="next-steps"></a>További lépések
 
-A beállítások befejezését követően létrejön a profil, és megjelenik a listában. Ha a profilt csoportokhoz szeretné rendelni, erről az [eszközprofilok hozzárendelését](device-profile-assign.md) ismertető cikk nyújt tájékoztatást.
+A profil létrejött, de egyelőre nem csinál semmit. Következő lépésként [végezze el a profil hozzárendelését](device-profile-assign.md).
+
+Tekintse meg, hogyan [hozhat létre profilokat Android Enterprise-eszközökön](custom-settings-android-for-work.md).

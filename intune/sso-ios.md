@@ -1,104 +1,93 @@
 ---
-title: Az Intune konfigurálása iOS-eszközökön való egyszeri bejelentkezéshez
-titlesuffix: ''
-description: Az Intune konfigurálása iOS-eszközökön való egyszeri bejelentkezéshez.
+title: Egyszeri bejelentkezési lehetőség hozzáadása iOS-eszközökhöz a Microsoft Intune-ban – Azure | Microsoft Docs
+description: A Microsoft Intune-ban létrehozhatja, konfigurálhatja vagy engedélyezheti az iOS-eszközök számára az egyszeri bejelentkezést (single sign-on, SSO) a jelszavas hitelesítés helyett, amikor a vállalat erőforrásaihoz és adataihoz szeretnének hozzáférni. Az egyszeri bejelentkezés használatához hozzon létre egy eszközkonfigurációs profilt, adja meg az egyszerű felhasználónevet, az eszköz azonosítóját, az alkalmazásokat, valamint a felhasználó és az eszköz hitelesítéséhez használt tanúsítványt.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bdc7f4f8f796d04f5c709298cd654bc2cdc32d0e
-ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
+ms.openlocfilehash: d1add113222c2aa7eaea10679c329e877b1a136f
+ms.sourcegitcommit: 437eaf364c3b8a38d294397310c770ea4d8a8015
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47864608"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49992009"
 ---
-# <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Az Intune konfigurálása iOS-eszközökön való egyszeri bejelentkezéshez
+# <a name="use-single-sign-on-ios-device-in-microsoft-intune"></a>Egyszeri bejelentkezést alkalmazó iOS eszközök használata a Microsoft Intune-ban
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+A legtöbb üzletviteli alkalmazás biztonsági célokból megkövetel bizonyos szintű felhasználóhitelesítést. A hitelesítéshez a felhasználónak sok esetben többször is meg kell adnia ugyanazokat a hitelesítő adatokat, ez pedig zavaró lehet. A felhasználói élmény javítása érdekében a fejlesztők létrehozhatnak egyszeri bejelentkezést (SSO) támogató alkalmazásokat, amelyek kevesebbszer kérik meg a felhasználót a hitelesítő adatok megadására.
 
-A legtöbb üzletviteli alkalmazás biztonsági célokból megkövetel bizonyos szintű felhasználóhitelesítést. Sok esetben ez azt jelenti, hogy a felhasználóknak be kell írnia ugyanazokat a hitelesítő adatokat sorozatosan, mely frusztrációt okozhat. A felhasználói élmény javítása érdekében a fejlesztők létrehozhatnak egyszeri bejelentkezést támogató alkalmazásokat, melyek kevesebbszer kérik meg a felhasználót a hitelesítő adataik megadására.
+Ebből a cikkből megtudhatja, hogyan engedélyezheti az egyszeri bejelentkezést iOS-eszközök számára egy eszközkonfigurációs profillal a Microsoft Intune-ban.
 
-Az iOS-eszköz egyszeri bejelentkezési képességeinek kihasználásához az alábbiak szükségesek:
+## <a name="before-you-begin"></a>Előkészületek
 
-- Egy alkalmazás, amely úgy lett megírva, hogy a felhasználói hitelesítő adatok tárát az iOS-eszköz egyszeri bejelentkezéses adatcsomagjában keresse.
-- Az iOS-eszközön való egyszeri bejelentkezéshez konfigurált Intune.
+Szüksége lesz egy alkalmazásra, amely úgy lett megírva, hogy a felhasználói hitelesítő adatok tárát az iOS-eszköz egyszeri bejelentkezéses adatcsomagjában keresse.
 
-## <a name="to-configure-intune-for-ios-device-single-sign-on"></a>Az Intune konfigurálása iOS-eszközökön való egyszeri bejelentkezéshez
+## <a name="create-the-sso-profile"></a>Az SSO-profil létrehozása
 
+1. Az [Azure Portalon](https://portal.azure.com) kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
+2. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
+3. Adja meg az alábbi beállításokat:
 
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
-2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
-4. Az **Eszközkonfiguráció** panel **Kezelés** területén válassza a **Profilok** lehetőséget.
-5. A profilok paneljén válassza a **Profil létrehozása** lehetőséget.
-6. Adjon meg egy nevet és egy leírást, majd adja meg a következő beállításokat:
-   - **Platform**: Válassza az **iOS** lehetőséget.
-   - **Profil típusa**: Válassza az **Eszközfunkciók** lehetőséget.
-7. Az **Eszközfunkciók** panelen válassza az **Egyszeri bejelentkezés** lehetőséget.
+    - **Név**: Adja meg a profil nevét, például: `ios sso profile`.
+    - **Leírás**: Adjon meg egy olyan kulcsszavakat tartalmazó leírást, amelyekkel könnyebben megtalálhatja a profilt a listában.
+    - **Platform**: Válassza az **iOS** lehetőséget.
+    - **Profil típusa**: Válassza az **Eszközfunkciók** lehetőséget.
 
-   ![Egyszeri bejelentkezés panel](./media/sso-blade.png)
+4. Válassza az **Egyszeri bejelentkezés** lehetőséget.
 
-8. Az **Egyszeri bejelentkezés** panelen lévő mezők kitöltéséhez használja az alábbi összefoglaló táblázatot. A táblázatot követő szakaszokban további információt kaphat az egyes mezőkről.
+    ![Egyszeri bejelentkezés panel](./media/sso-blade.png)
 
-   |Mező  |Megjegyzések|
-   |---------|---------|
-   |**Felhasználónév attribútum az AAD-ből**|Ezt a tulajdonságot az Intune minden egyes felhasználó esetén kikeresi az AAD-ból, és feltölti vele a vonatkozó mezőt (például egyszerű felhasználónév), mielőtt létrehozná az eszközön telepített XML-adatcsomagot.|
-   |**Tartomány**|Az URL-cím tartományt jelölő része.|
-   |**Az egyszeri bejelentkezést használó URL-előtagok**|A cég bármilyen olyan URL-címe, amely egyszeri bejelentkezéses felhasználóhitelesítést igényel.|
-   |**Az egyszeri bejelentkezést használó alkalmazások**|A végfelhasználó eszközének azon alkalmazásai, amelyek az egyszeri bejelentkezéses adatcsomagot használják.|
-   |**Hitelesítőadat-megújítási tanúsítvány**|Ha a hitelesítéshez tanúsítványokat használ, adja meg azt az SCEP- vagy PFX-tanúsítványt, amely el lesz juttatva a felhasználóhoz hitelesítési tanúsítványként.|
+5. Adja meg a következő beállításokat: 
 
-Az alábbi szakaszok további részleteket nyújtanak a fenti egyszeri bejelentkezéses mezőkről.
+    - **Felhasználónév attribútum az AAD-ből**: Az Intune minden felhasználónál ezt az attribútumot keresi az Azure AD-ben. Az Intune ezt követően kitölti a megfelelő mezőt (például az egyszerű felhasználónevet), mielőtt létrehozná az eszközre telepítendő XML-adatcsomagot. A választható lehetőségek:
+    
+        - **Egyszerű felhasználónév**: Az egyszerű felhasználónevet (UPN-t) a rendszer a következőképpen elemzi:
 
-### <a name="username-attribute-from-aad-and-realm"></a>Felhasználónév attribútum az AAD-ből és Tartomány
+            ![Felhasználónév attribútum](media/User-name-attribute.png)
 
-- Ha az **egyszerű felhasználónév** lehetőséget választja ebben a mezőben, az a következőképp lesz elemezve:
+            Szükség esetén felülírhatja a tartományt is, ha beírja a kívánt tartománynevet a **Tartomány** szövegmezőbe.
 
-   ![Felhasználónév attribútum](media/User-name-attribute.png)
+            Előfordulhat például, hogy a Contoso cégnek több régióban is van irodája, például Európában, Ázsiában és Észak-Amerikában. Tegyük fel, hogy az ázsiai felhasználóknak az egyszeri bejelentkezéses adatcsomagot kell használniuk, és az alkalmazás a következő formátumú egyszerű felhasználónevet (UPN-t) igényli: `username@asia.contoso.com`. Ilyen esetben, ha az **Egyszerű felhasználónév** lehetőséget választja, akkor az egyes felhasználók tartományát a rendszer alapértelmezés szerint az Azure AD-ból keresi ki, és a tartomány lehet egyszerűen *contoso.com*. Ezért az ázsiai felhasználóknak létrehozhatja külön ezt az adatcsomagot, és felülírhatja a tartományt az *asia.contoso.com* értékkel. Így a végfelhasználó egyszerű felhasználóneve username@contoso.com helyett username@asia.contoso.com lesz.
 
-   Szükség esetén felülírhatja a tartományt is, ha beírja a kívánt tartománynevet a **Tartomány** szövegmezőbe.
+        - **Intune-eszközazonosító**: Az Intune automatikusan kiválasztja az Intune-eszközazonosítót. 
 
-   Előfordulhat például, hogy a Contoso cégnek több régióban is van irodája, például Európában, Ázsiában és Észak-Amerikában. Tegyük fel, hogy az ázsiai felhasználóknak az egyszeri bejelentkezéses adatcsomagot kell használniuk, és az alkalmazás a következő formátumú egyszerű felhasználónevet (UPN-t) igényli: *username@asia.contoso.com*. Ilyen esetben, ha az **egyszerű felhasználónév** lehetőséget választja, akkor az egyes felhasználók tartományát a rendszer alapértelmezés szerint az AAD-ból keresi ki, mely így lehet mindössze *contoso.com*. Ezért az ázsiai felhasználóknak létrehozhatja külön ezt az adatcsomagot, és felülírhatja a tartományt az *asia.contoso.com* értékkel. Ezután a végfelhasználó UPN-je *username@asia.contoso.com* lesz, nem pedig *username@contoso.com*.
+            Az alkalmazásoknak alapértelmezés szerint csak az eszközazonosítóra van szükségük. De ha az alkalmazás a tartományt *is* használja az eszközazonosító mellett, akkor megadhatja a tartományt a **Tartomány** szövegmezőben.
 
-- Az **Eszközazonosító** lehetőség választása esetén az Intune automatikusan kiválasztja az Intune-eszközazonosítót.
+            > [!NOTE]
+            > Alapértelmezett esetben hagyja a tartományt üresen, ha eszközazonosítót használ.
 
-   Az alkalmazásoknak alapértelmezés szerint csak az eszközazonosítóra van szükségük. De ha az alkalmazása a tartományt is használja az eszközazonosító mellett, akkor megadhatja a tartományt a **Tartomány** szövegmezőben.
+    - **Tartomány**: Az URL-cím tartományt jelölő része.
+    
+    - **Az egyszeri bejelentkezést használó URL-előtagok**: **Adja hozzá** a cég bármelyik olyan URL-címét, amely egyszeri bejelentkezéses felhasználó-hitelesítést igényel. 
 
-   > [!NOTE]
-   > Alapértelmezett megoldásként hagyja a tartományt üresen, ha eszközazonosítót használ.
+        Ha egy felhasználó csatlakozik ezen webhelyekhez, az iOS-eszköz az egyszeri bejelentkezés hitelesítő adatait használja, és a felhasználónak nem kell hitelesítő adatokat megadnia. Ha azonban engedélyezte a többtényezős hitelesítést, a felhasználónak meg kell adnia a hitelesítés második tényezőjét.
 
-### <a name="url-prefixes-that-will-use-single-sign-on"></a>Az egyszeri bejelentkezést használó URL-előtagok
+        > [!NOTE]
+        > Ezeknek az URL-címeknek érvényes formátumú teljes tartományneveknek kell lenniük. Az Apple a következő formátumot írja elő az URL-címekhez: `http://<yourURL.domain>`.
 
-Ide beírhatja a cége bármely olyan URL-címét, amely felhasználóhitelesítést igényel.
+        Az URL-egyeztetési mintáknak `http://` vagy `https://` előtaggal kell kezdődniük. A rendszer egyszerű, sztringalapú egyeztetést végez, ezért a `http://www.contoso.com/` URL-előtag nem felel meg a `http://www.contoso.com:80/` címnek. iOS 10.0-s vagy újabb rendszereken megteheti, hogy egyetlen helyettesítő \* karaktert használ az összes egyező érték megadásához. Például a `http://*.contoso.com/` minta illeszkedik mind a `http://store.contoso.com/`, mind pedig a `http://www.contoso.com` címre.
 
-Ha egy felhasználó csatlakozik ezen webhelyek bármelyikéhez, az iOS-eszköz az egyszeri bejelentkezéses hitelesítő adatokat használja, így a felhasználónak nem kell további hitelesítő adatokat megadnia. Ha azonban engedélyezte a többtényezős hitelesítést, a felhasználónak meg kell adnia a hitelesítés második tényezőjét.
+        A `http://.com` és a `https://.com` minta pedig illeszkedik az összes HTTP, illetve HTTPS előtagú URL-címre.
+    
+    - **Az egyszeri bejelentkezést használó alkalmazások**: **Adjon hozzá** olyan alkalmazásokat a végfelhasználók eszközeihez, amelyek használhatnak egyszeri bejelentkezést. 
 
-> [!NOTE]
-> Ezeknek az URL-címeknek érvényes formátumú teljes tartományneveknek kell lenniük. Az Apple a következő formátumot írja elő: `http://<yourURL.domain>`
+        Az `AppIdentifierMatches` tömbnek olyan sztringeket kell tartalmaznia, amelyek illeszkednek az alkalmazásköteg azonosítóira. Ezek a sztringek lehetnek pontos egyezések (például: `com.contoso.myapp`), illetve meghatározhatnak előtag-egyeztetést is a kötegazonosítóhoz a \* helyettesítő karakter segítségével. A helyettesítő karakternek egy pont karakter (.) után kell állnia, és csak egyszer szerepelhet az értékben, a sztring végén (például: `com.contoso.*`). A helyettesítő karakter használatakor az összes olyan alkalmazás hozzáférést kap a fiókhoz, amelynek a kötegazonosítója a megadott előtaggal kezdődik.
 
-Az URL-egyeztetési mintáknak `http://` vagy `https://` előtaggal kell kezdődniük. Az eszköz egyszerű, sztringalapú egyeztetést végez, ezért a `http://www.contoso.com/` URL-előtag nem felel meg a `http://www.contoso.com:80/` címnek. iOS 10.0-s vagy újabb rendszer esetén azonban használhat egyetlen helyettesítő \* karaktert az összes egyező érték megadásához. Például a `http://*.contoso.com/` minta illeszkedik mind a `http://store.contoso.com/`, mind pedig a `http://www.contoso.com` címre.
-A `http://.com` és a `https://.com` minta pedig illeszkedik az összes HTTP, illetve HTTPS előtagú URL-címre.
+        Az **Alkalmazásnév** elemnél megadhat egy felhasználóbarát nevet, amely alapján könnyebben felismeri a kötegazonosítót.
+    
+    - **Hitelesítőadat-megújítási tanúsítvány**: Ha a hitelesítéshez (jelszó helyett) tanúsítványokat használ, válassza ki azt az SCEP- vagy PFX-tanúsítványt, amely hitelesítési tanúsítványként van telepítve a felhasználó számára. Ez jellemzően ugyanaz a tanúsítvány, amelyet más profilokhoz is kioszt a végfelhasználónak, ideértve például a VPN-t, a vezeték nélküli hálózatokat és a levelezést.
 
-### <a name="apps-that-will-use-single-sign-on"></a>Az egyszeri bejelentkezést használó alkalmazások
-
-Adja meg, hogy a végfelhasználó eszközének mely alkalmazásai használják az egyszeri bejelentkezéses adatcsomagot.
-
-Az `AppIdentifierMatches` tömbnek olyan sztringeket kell tartalmaznia, amelyek illeszkednek az alkalmazásköteg azonosítóira. Ezek a sztringek lehetnek pontos egyezések (például: `com.contoso.myapp`), illetve meghatározhatnak előtag-egyeztetést is a kötegazonosítóhoz a \* helyettesítő karakter segítségével. A helyettesítő karakternek egy pont karakter (.) után kell állnia, és csak egyszer szerepelhet az értékben, a sztring végén (például: `com.contoso.*`). A helyettesítő karakter használatakor az összes olyan alkalmazás hozzáférést kap a fiókhoz, amelynek a kötegazonosítója a megadott előtaggal kezdődik.
-
-Az **Alkalmazás neve** mezőben megadhat egy felhasználóbarát nevet, mely alapján könnyebben azonosíthatja a kötegazonosítót.
-
-### <a name="credential-renewal-certificate"></a>Hitelesítőadat-megújítási tanúsítvány
-
-Ha a végfelhasználóit tanúsítványokkal hitelesíti (nem pedig jelszavakkal), akkor ebben a mezőben megadhatja azt az SCEP- vagy PFX-tanúsítványt, amelyet a felhasználó megkap hitelesítési tanúsítványként. Ez jellemzően ugyanaz a tanúsítvány, amelyet más profilokhoz is kioszt a végfelhasználónak, ideértve például a VPN-t, a vezeték nélküli hálózatokat és a levelezést.
+6. A módosítások mentéséhez és a profil létrehozásához válassza az **OK** > **OK** > **Létrehozás** lehetőséget. A létrehozott profil megjelenik az **Eszközkonfiguráció – Profilok** listában. 
 
 ## <a name="next-steps"></a>További lépések
 
 Az eszközfunkciók konfigurálásáról bővebben [Az eszközfunkció-beállítások konfigurálása a Microsoft Intune-ban](device-features-configure.md) című témakörben olvashat.
+
+[Rendelje hozzá ezt a profilt](device-profile-assign.md) iOS-eszközeihez.

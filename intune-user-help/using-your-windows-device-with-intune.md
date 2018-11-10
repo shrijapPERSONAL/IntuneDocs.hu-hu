@@ -1,11 +1,11 @@
 ---
-title: Windows-eszköz használata az Intune-nal | Microsoft Docs
-description: Az Intune-ban regisztrált Windows-eszközökön a felhasználók által elvégezhető műveletek felsorolása
+title: Windows-eszköz használata az Intune Céges portállal | Microsoft Docs
+description: Hivatkozások keresése a Windows-eszközök Céges portálról történő hibaelhárításához vagy felügyeletéhez
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 10/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,41 +17,61 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 645e87ef731cf911824ab16673c01e962c91fb70
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: a28f12bc57fdf134554a65518f24a79287058eeb
+ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017257"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48866337"
 ---
-# <a name="using-your-windows-device-with-intune"></a>Windows-eszköz használata az Intune-nal
+# <a name="using-your-windows-device-with-intune-company-portal"></a>Windows-eszköz használata az Intune Céges portállal
 
-Számos módon könnyítheti meg munkáját az Intune segítségével. Az alábbi lista azon leggyakoribb teendőket tartalmazza, amelyek elvégzésére munkahelye megkérheti.
+Ez a szakasz a Windowshoz készült Céges portálra vonatkozó feladatokat és információkat sorolja fel. Ezek ismerete segít a Windows-eszközök Céges portálról történő hibaelhárításában és felügyeletében. Kattintson az alábbi hivatkozások bármelyikére, ha további részleteket, lépéseket és képernyőképeket kíván megtekinteni.  
+
+## <a name="how-to-get-company-portal"></a>A Céges portál beszerzése
+A Céges portál webhelyként és letölthető alkalmazásként áll rendelkezésre. A [Céges portál webhelyének](https://go.microsoft.com/fwlink/?linkid=2010980) eléréséhez jelentkezzen be a munkahelyi vagy iskolai fiókjával.  
+
+A részletes lépéseket és képernyőképeket lásd: [Bejelentkezés a Céges portálra](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal).
 
 ## <a name="supported-versions"></a>Támogatott verziók
 
-Az Intune jelenleg a Windows alábbi verzióit támogatja.
+A Céges portál jelenleg a Windows alábbi verzióit futtató eszközöket támogatja:
 
-* Windows 10 (Home, Pro, Education, S és Enterprise verziók)
+* Windows 10 (Home, Pro, Education, S mód és Enterprise verziók)
 * Windows Phone 8.1 és újabb verziók
 * Windows 8.1 RT
 * Windows 8.1
 
-Az Intune néhány további Windows-verziót is támogat; ilyen például a [Windows 10 Holographic](https://www.microsoft.com/hololens). Ezek azért nem szerepelnek ebben a listában, mert nagyon speciális célokra szolgálnak.
+A Céges portál néhány további Windows-verziót is támogat; ilyen például a [Windows 10 Holographic](https://www.microsoft.com/hololens). Ezekre a verziókra azonban ebben a cikkben nem térek ki, mert nagyon speciális célokat szolgálnak.
 
-## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Regisztrálás az Intune-ban és a Céges portál telepítése
+## <a name="set-up-your-device-in-the-company-portal"></a>Az eszköz beállítása a Céges portálon
+- [A Windows rendszerű eszközöm felügyelete a Céges portálon](enroll-your-device-in-intune-windows.md)
+- [Mit jelent az eszközöm *felügyelet* alá vonása?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+- [Milyen adatokhoz férhet hozzá a munkahelyem az eszközömön?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+- [Az eszközöm titkosítása](encrypt-your-device-windows.md)
+- [Az eszköz jelszavának beállítása vagy módosítása](set-or-change-your-password-windows.md)
 
-- [Windows-eszköz regisztrálása az Intune-ban](enroll-your-device-in-intune-windows.md)
-- [Mi történik a Munkahelyi portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
-- [Milyen adatokhoz férhet hozzá a munkahelye, ha regisztrálja eszközét az Intune-ban?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
-- [Elveszett vagy ellopott eszköz alaphelyzetbe állítása (tartalmának végleges törlése)](reset-erase-your-device-cpwebsite.md)
-
-## <a name="things-you-can-do-when-your-device-is-enrolled-in-intune"></a>Az Intune-ban regisztrált eszközökön végezhető műveletek
-
-- [Az eszköz titkosítása](encrypt-your-device-windows.md)
-- [Jelszó beállítása vagy módosítása](set-or-change-your-password-windows.md)
-- [Az eszköz regisztrációjának törlése az Intune-ból](unenroll-your-device-from-intune-windows.md)
-- [Mi történik, ha törli az eszköz regisztrációját az Intune-ból?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
-- [Mi történik, ha alaphelyzetbe állít egy saját eszközt a Vállalati portálon?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
-- [A használatra vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása](turn-off-microsoft-usage-data-collection-windows.md)
+## <a name="things-you-can-do-after-your-device-is-enrolled-in-management"></a>A felügyelet alá vont eszközökön végezhető műveletek
 - [Az eszköz manuális szinkronizálása](sync-your-device-manually-windows.md)
+- [A használatra vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása](turn-off-microsoft-usage-data-collection-windows.md)
+- [Elveszett vagy ellopott eszköz adatainak törlése](reset-erase-your-device-cpwebsite.md)
+- [Mi történik, ha alaphelyzetbe állítom az eszközöm a Céges portálon?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
+- [Az eszköz kivonása a felügyelet alól](unenroll-your-device-from-intune-windows.md)
+- [Mi történik, ha eltávolítom az eszközöm a Céges portálról?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
+
+## <a name="troubleshoot-and-maintain-your-device"></a>Az eszköz karbantartása és hibáinak elhárítása
+* [Hozzáférésipont-korlátozások feloldása](resolve-access-point-restrictions.md)
+* [Nem tudom regisztrálni a Windows 10-es eszközömet](troubleshoot-your-windows-10-device-windows.md)
+* [A saját Windows-verzióm nem támogatott](your-windows-version-isnt-yet-supported.md)
+* [A Windows-eszköz frissítése](you-need-to-update-your-windows-device.md)
+* [Naplók elküldése a Céges portál alkalmazásból](send-logs-to-your-it-admin-cp-windows.md)
+* [Naplók elküldése az eszköz Beállítások alkalmazásából](send-logs-to-your-it-admin-settings-windows.md)
+* [Az Office 365 telepítése a Windows 10-eszközön](install-office-windows.md)
+* [Az eszközömet titkosítani kell](you-need-to-enable-windows-encryption.md)
+* [Kártevőirtó szoftver beszerzése](your-device-needs-antimalware-software.md)
+* [Biztonságos rendszerindítás engedélyezése](you-need-to-enable-secure-boot-windows.md)
+* [Kódintegritás engedélyezése](you-need-to-enable-code-integrity.md)
+* [A Windows tűzfal bekapcsolása](you-need-to-enable-defender-firewall-windows.md)
+* [Felhasználói hozzáférés felügyeletének engedélyezése](you-need-to-enable-uac-windows.md)
+* [Operációs rendszer buildverzióinak frissítése](you-need-to-update-os-build-version-windows.md)
+* [A Windows Defender bekapcsolása](turn-on-defender-windows.md)

@@ -107,11 +107,13 @@
 #### [Az általam használt macOS-verzió még nem támogatott](your-macos-version-isnt-yet-supported.md)
 #### [macOS-eszköz frissítése](you-need-to-update-your-macos-device.md)
 #### [A Céges portállal kapcsolatos hibák jelentése](send-errors-macos.md)
+#### [Máshoz hozzárendelt eszköz](unable-to-get-macOS-device-managed.md)
 #### [A használatra vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása](turn-off-microsoft-usage-data-collection-macos.md)
 #### [Ez az eszköz kissé másféle](device-little-different-jamf.md)
 #### [Sorozatszám megkeresése](how-do-i-find-the-serial-number-on-my-device-macos.md)
 #### [Az eszköz azonosítása](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
 #### [Elérte az eszközkorlátozási felső határt](device-limit-wpj-macos.md)
+#### [Nehézségek egy macOS rendszerű virtuális gép felügyelet alá vonásakor](unable-to-get-macOS-device-managed.md) 
 
 ## [Windows-eszköz használata](using-your-windows-device-with-intune.md)
 ### [Mi történik, ha Windows 10-eszközt regisztrál?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)

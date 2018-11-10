@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/13/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: daaed6ded0c20551567a63890d324abcbaaf41d7
-ms.sourcegitcommit: 9f99b4a7f20ab4175d6fa5735d9f4fd6a03e0d3a
+ms.openlocfilehash: 652157f41f0fbefa14e9f22fea01c918cb7704a1
+ms.sourcegitcommit: ae27c04a68ee893a5a6be4c56fe143263749a0d7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "40251807"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49169498"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>iOS-alkalmazások előkészítése alkalmazásvédelmi szabályzatokkal való felügyeletre az Intune alkalmazásburkoló eszközével
 
@@ -39,13 +39,13 @@ Az alkalmazásburkoló eszköz futtatása előtt bizonyos általános előfelté
 
 * Töltse le a [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) eszközt a GitHubról.
 
-* Egy OS X 10.8.5 vagy újabb verziót futtató Mac OS-számítógép, amelyen telepítve van az Xcode eszközkészlet 5-ös vagy újabb verziója.
+* Az OS X 10.8.5-ös vagy újabb verzióját futtató macOS-számítógép, amelyen telepítve van az Xcode eszközkészlet 9-es vagy újabb verziója.
 
 * A bemeneti iOS-alkalmazást vállalatának vagy egy független szoftverszállítónak kell létrehoznia és aláírnia.
 
   * A bemeneti alkalmazásfájlnak **.ipa** vagy **.app** kiterjesztésűnek kell lennie.
 
-  * A bemeneti alkalmazást iOS 8.0-s vagy későbbi verzióra kell fordítani.
+  * A bemeneti alkalmazást az iOS 10-es vagy újabb verziójára kell fordítani.
 
   * A bemeneti alkalmazás nem lehet titkosított.
 
@@ -315,7 +315,7 @@ Az alkalmazást a burkolása előtt *jogosultságok* megadásával további enge
 
 ### <a name="supported-capabilities-for-the-app-wrapping-tool-for-ios"></a>Az iOS rendszerhez készült alkalmazásburkoló eszköz támogatott képességei
 
-|Képesség|Description|Ajánlott útmutatás|
+|Képesség|Leírás|Ajánlott útmutatás|
 |--------------|---------------|------------------------|
 |Alkalmazáscsoportok|Alkalmazáscsoportok használatával biztosíthatja több alkalmazás hozzáférését a megosztott tárolókhoz, és engedélyezheti a folyamatközi kommunikációt az alkalmazások között.<br /><br />Az alkalmazáscsoportok engedélyezéséhez nyissa meg a **Capabilities** (Képességek) panelt, és kattintson az **On** (Bekapcsolás) lehetőségre az **App Groups** (Alkalmazáscsoportok) beállításnál. Felvehet alkalmazáscsoportokat, illetve kijelölhet meglévőket.|Alkalmazáscsoportok használatakor használjon címfeloldási DNS-t:<br /><br />*csoport.com.cégnév.Alkalmazáscsoport*|
 |Háttérbeli üzemmódok|A háttérbeli üzemmódok engedélyezése esetén az iOS-alkalmazás tovább futhat a háttérben is.||

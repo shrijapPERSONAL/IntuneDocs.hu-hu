@@ -15,17 +15,17 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16d57ee6a722e8d840b8e8a09ba583698fcb67be
-ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
+ms.openlocfilehash: e4c44552a0df369767bb91749351674af9eab4b3
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45562901"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959553"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Távközlésiköltség-kezelő szolgáltatás beállítása az Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Az Intune segítségével kezelheti a vállalati tulajdonú mobileszközök adatforgalmából eredő távközlési költségeket. Ennek lehetővé tétele érdekében az Intune egy külső szoftverfejlesztő, a Saaswedo Datalert távközlésiköltség-kezelő megoldásával van integrálva. A Datalert egy valós idejű távközlésiköltség-kezelő szoftver, amellyel a távközlési adathasználatot kezelheti. A szoftverrel elkerülheti az Intune által kezelt eszközök költséges és váratlan kerettúllépéseit adatfogyasztásnál és roaming esetén.
+Az Intune segítségével kezelheti a vállalati tulajdonú mobileszközök adatforgalmából eredő távközlési költségeket. Ennek érdekében az Intune egy külső szoftverfejlesztő, a Saaswedo [Datalert távközlésiköltség-kezelő](http://datalert.biz/get-started) megoldásával van integrálva. A Datalert egy valós idejű távközlésiköltség-kezelő szoftver, amellyel a távközlési adathasználatot kezelheti. A szoftverrel elkerülheti az Intune által kezelt eszközök költséges és váratlan kerettúllépéseit adatfogyasztásnál és roaming esetén.
 
 Az Intune és a Datalert integrációja lehetővé teszi, hogy központilag állítson be, figyeljen és alkalmazzon roaming- és belföldi adathasználati korlátokat. Automatikus riasztások jelzik, ha a fogyasztások túllépnek meghatározott küszöbértékeket. A szolgáltatás konfigurálásával különféle műveleteket alkalmazhat személyekre vagy végfelhasználói csoportokra, például letilthatja a roamingot vagy a küszöbérték átlépését. Az adathasználati és figyelési információkat biztosító jelentések a Datalert kezelőkonzolján érhetők el.
 
@@ -61,19 +61,31 @@ Mielőtt hozzálát, győződjön meg róla, hogy van előfizetése az Intune-ra
 
 2. A Datalert felügyeleti konzolon váltson a **Settings** (Beállítások) lapra, majd az **MDM configuration** (MDM-konfiguráció) területre.
 
-3. Válassza a **Unblock** (Tiltás feloldása) lehetőséget, hogy megadhassa a beállításokat a lapon.
+3. A lap alján válassza az **Unblock** (Feloldás) lehetőséget, amely lehetővé teszi a lapon szereplő beállítások módosítását.
 
-4. **Server MDM** (Kiszolgálói MDM) esetén válassza a **Microsoft Intune** elemet.
+4. Az **Intune / Datalert Connection** (Intune/Datalert kapcsolat) szakaszban a **Server MDM** (Kiszolgálói MDM) értékeként válassza a **Microsoft Intune** lehetőséget.    
 
-5. **Azure AD domain** (Azure AD-tartomány) esetén adja meg Azure-bérlőjének azonosítóját, majd válassza a **Connection** (Csatlakozás) gombot.
+5. **Azure AD domain** (Azure AD-tartomány) mezőben adja meg Azure-bérlőjének azonosítóját, majd válassza a **Connection** (Csatlakozás) gombot.
 
-    Amikor a **Connection** (Csatlakozás) elemet választja, a Datalert szolgáltatás bejelentkezik az Intune-ba, hogy ellenőrizze, nincsenek-e már meglévő kapcsolatok a Datalert és az Intune között. Néhány másodperc elteltével megjelenik a Microsoft bejelentkezési oldala, amelyet a Datalert Azure-beli hitelesítése követ.
+    Amikor a **Connection** (Csatlakozás) elemet választja, a Datalert szolgáltatás bejelentkezik az Intune-ba, hogy ellenőrizze, nincsenek-e meglévő kapcsolatok a Datalert és az Intune között. Néhány másodperc elteltével megjelenik a Microsoft bejelentkezési oldala, amelyet a Datalert Azure-beli hitelesítése követ.
 
-6. A Microsoft hitelesítési oldalán válassza az **Elfogadás** lehetőséget. Ekkor megnyílik a Datalert „thank you” („köszönjük”) lapja, amely néhány másodperc múlva bezárul. A Datalert ellenőrzi a kapcsolatot, majd az ellenőrzött elemek listája mellett zöld színű pipákat jelenít meg. Ha az ellenőrzés nem sikerül, egy vörös üzenet jelenik meg. Vegye fel a kapcsolatot a Datalert ügyfélszolgálatával.
+6. A Microsoft hitelesítési oldalán válassza az **Elfogadás** lehetőséget. Ekkor megnyílik a Datalert **thank you** (köszönjük) lapja, amely néhány másodperc múlva bezárul. A Datalert ellenőrzi a kapcsolatot, majd az ellenőrzött elemek listája mellett zöld színű pipákat jelenít meg. Ha az ellenőrzés nem sikerül, egy vörös üzenet jelenik meg. Vegye fel a kapcsolatot a Datalert ügyfélszolgálatával.
 
     A következő képernyőfelvételen a zöld pipák láthatók, amelyek a csatlakozás sikere esetén jelennek meg.
 
-   ![A Datalert sikeres csatlakozást jelző lapja](./media/tem-mdm-configuration-mdm-server-page.png)
+   ![A Datalert sikeres csatlakozást jelző lapja](./media/tem-datalert-connection.png)
+
+7. A **Datalert App / ADAL Consent** (Datalert alkalmazás / ADAL hozzájárulás) szakaszban a kapcsolót állítsa **On** (Be) állapotba. A Microsoft hitelesítési oldalán válassza az **Elfogadás** lehetőséget. Ekkor megnyílik a Datalert **thank you** (köszönjük) lapja, amely néhány másodperc múlva bezárul. A Datalert ellenőrzi a kapcsolatot, majd az ellenőrzött elemek listája mellett zöld színű pipákat jelenít meg. Ha az ellenőrzés nem sikerül, egy vörös üzenet jelenik meg. Vegye fel a kapcsolatot a Datalert ügyfélszolgálatával.    
+
+    A következő képernyőfelvételen a zöld pipák láthatók, amelyek a csatlakozás sikere esetén jelennek meg.
+
+   ![A Datalert sikeres csatlakozást jelző lapja](./media/tem-datalert-adal-consent.png)
+
+8. Az **MDM Profiles management (optional)** (MDM profilok felügyelete (nem kötelező)) szakaszban állítsa a kapcsolót **On** (Be) állapotba, hogy engedélyezze a Datalertnek az Intune-ban rendelkezésre álló profilok olvasását a szabályzatok létrehozásához. A Microsoft hitelesítési oldalán válassza az **Elfogadás** lehetőséget. Ekkor megnyílik a Datalert **thank you** (köszönjük) lapja, amely néhány másodperc múlva bezárul. A Datalert ellenőrzi a kapcsolatot, majd az ellenőrzött elemek listája mellett zöld színű pipákat jelenít meg. Ha az ellenőrzés nem sikerül, egy vörös üzenet jelenik meg. Vegye fel a kapcsolatot a Datalert ügyfélszolgálatával.    
+
+    A következő képernyőfelvételen a zöld pipák láthatók, amelyek a csatlakozás sikere esetén jelennek meg.
+
+   ![A Datalert sikeres csatlakozást jelző lapja](./media/tem-datalert-mdm-profiles.png)
 
 ### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>2. lépés: Annak ellenőrzése, hogy aktív-e az Intune távközlésiköltség-kezelési funkciója
 

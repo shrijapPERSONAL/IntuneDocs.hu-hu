@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/08/2018
+ms.date: 10/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: af5c7492563c8df0168eff3250ae1bbad2cc323e
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 7d45ea6d2a33db2de1d640a554b6a07ad8825109
+ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147717"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48260249"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>A macOS-eszköz Céges portál alkalmazással való regisztrálása az Intune-ban
 
@@ -80,8 +80,17 @@ OS X El Capitan 10.11 és újabb verziójú macOS-eszközöket a következő lé
 
 9. A Céges portál alkalmazás első megjelenő képernyője felszólítja, hogy **jelentkezzen be**. Használja ugyanazt a munkahelyi vagy iskolai fiókot, amellyel a Céges portál webhelyre jelentkezett be.
 
-10. A Céges portál megerősíti a fiókadatokat, majd megjeleníti az **Eszközregisztráció** és az **Eszközmegfelelőség** állapotát. Sárga háromszögek hívják fel a figyelmet a macOS-eszköz iskolai vagy munkahelyi használatának biztonságossá tételéhez szükséges lépéseket. A regisztráció megkezdéséhez kattintson az **Indítás** lehetőségre. Legyen tisztában azzal, hogy [mit láthat a vállalata](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md), ha regisztrálja egy eszközét.
+10. A Céges portál megerősíti a fiókadatokat, majd megjeleníti az **Eszközregisztráció** és az **Eszközmegfelelőség** állapotát. Sárga háromszögek hívják fel a figyelmet a macOS-eszköz iskolai vagy munkahelyi használatának biztonságossá tételéhez szükséges lépéseket. A regisztráció megkezdéséhez kattintson az **Indítás** lehetőségre. 
 
-11. Előfordulhat, hogy a rendszer a számítógépre vonatkozó bejelentkezési adatok megadására kéri. Az eszköz felügyeleti regisztrálása eltarthat néhány percig. Ezalatt végezhet egyéb műveleteket az eszközén. A vállalati hozzáférés beállításának befejezése után megjelenő üzenet a folyamat lezárásáról tájékoztatja.  
+11. Ha a rendszer kéri, írja be a számítógép bejelentkezési adatait.  
+
+Az eszköz felügyeleti regisztrálása eltarthat néhány percig. Ezalatt végezhet egyéb műveleteket az eszközén. A vállalati hozzáférés beállításának befejezése után megjelenő üzenet a folyamat lezárásáról tájékoztatja.  
+
+## <a name="unverified-profiles"></a>Ellenőrizetlen profilok
+A macOS-eszköz telepített mobileszköz-kezelési (MDM-) profiljainak megtekintésekor előfordulhat, hogy egyes profilok **Ellenőrizetlen** állapotot jeleznek. Amíg a **Felügyeleti profil** **Ellenőrzött** állapotot jelez, nincs ok az aggodalomra.  
+
+A felügyeleti profil határozza meg az MDM-csatorna kapcsolatát. Amíg a felügyeleti profil ellenőrizve van, a többi, ezen a csatornán keresztül a gépre érkező profil a felügyeleti profil biztonság tulajdonságait örökli.
+
+Mivel ezeket a profilokat nem kell egyenként ellenőrizni, gyorsabban létrejönnek és eljutnak az eszközökre. 
 
 További segítségre van szüksége? Forduljon a cég informatikai támogatási szolgálatához. A kapcsolatfelvételi adatait megtalálja a [Munkahelyi portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).  

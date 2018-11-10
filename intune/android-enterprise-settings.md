@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/5/2018
+ms.date: 9/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e43ab0d088edc87e814ad2c4317d7b7336d34d5
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: f49e0bc496f176434577d42d3a372fc4e8bc22d3
+ms.sourcegitcommit: 7063072c94e43aefc6be0072780622a1da8485d5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312896"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46119103"
 ---
 # <a name="android-enterprise-kiosk-settings-in-intune"></a>Vállalati androidos kioszkbeállítások az Intune-ban
 
@@ -45,9 +45,9 @@ Az androidos kioszkprofilok az alábbi konfigurációs beállításokat támogat
 - **Ismeretlen forrásból való telepítés engedélyezése**: Válassza az **Engedélyezés** lehetőséget, hogy a felhasználók ismeretlen forrásból is telepíthessenek.
 - **Rendszerfrissítés**: A következő lehetőségek közül választva adja meg, hogyan kezeli az eszköz a vezeték nélküli frissítéseket:
     - **Eszköz alapértelmezése**: Az eszköz alapértelmezett beállításának használata.
-    - **Nincs**: A rendszer automatikusan telepíti a frissítéseket.
-    - **Elhalasztva**: A frissítések későbbi időpontra lesznek halasztva.
-    - **Karbantartási ablak**: A felhasználókat egy karbantartási ablakban kéri a rendszer a frissítés jóváhagyására.
+    - **Automatikus**: A rendszer automatikusan, felhasználói beavatkozás nélkül telepíti a frissítéseket. Ennek a szabályzatnak a beállításakor minden függőben lévő frissítés azonnal települ.
+    - **Elhalasztva**: A frissítések 30 nappal el lesznek halasztva. A 30 nap letelte után az Android felszólítja a felhasználót a frissítés telepítésére. Az eszközgyártók vagy a szolgáltatók megakadályozhatják (kivételként) a fontos biztonsági frissítések elhalasztását. A kivételként kezelt frissítések rendszerértesítést jelenítenek meg a felhasználó számára az eszközön. 
+    - **Karbantartási időszak**: Automatikusan telepíti a frissítéseket az Ön által az Intune-ban beállított napi karbantartási időszakban. A telepítést 30 napon át naponta megkísérli. A telepítés sikertelen lehet, ha nincs elegendő lemezterület vagy akkumulátortöltés. 30 nap elteltével az Android felszólítja a felhasználót a telepítésre. Ez az időszak szolgál a Play-alkalmazások frissítéseinek telepítésére is. Ez a beállítás olyan dedikált eszközökhöz ajánlott, mint a kioszkeszközök, az egyalkalmazásos kioszk előtér-alkalmazása ugyanis frissíthető. 
 
 ## <a name="kiosk-settings"></a>Kioszkbeállítások
 

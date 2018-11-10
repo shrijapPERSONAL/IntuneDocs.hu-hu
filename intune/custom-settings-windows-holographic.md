@@ -1,11 +1,11 @@
 ---
 title: A Windows Holographic for Business rendszert futtató eszközökre vonatkozó egyéni beállítások a Microsoft Intune-ban – Azure | Microsoft Docs
-description: 'Létrehozhat egy egyéni profilt, amelyet a Microsoft Intune-ban Windows Holographic for Business rendszert futtató eszközök OMA-URI-beállításaihoz használhat. Az alábbi beállításokat adhatja meg: AllowFastReconnect, AllowVPN, AllowUpdateService, UpdateServiceURL, RequireUpdatesApproval, ApprovedUpdates, valamint az ApplicationLaunchRestrictions szabályzatkonfigurációs szolgáltató (CSP) beállításait.'
+description: 'Hozzáadhat vagy létrehozhat egy egyéni profilt, amelyet a Microsoft Intune-ban Windows Holographic for Businesst futtató eszközök (például a Microsoft Hololens) OMA-URI-beállításaihoz használhat. Az alábbi beállításokat adhatja meg: AllowFastReconnect, AllowVPN, AllowUpdateService, UpdateServiceURL, RequireUpdatesApproval, ApprovedUpdates, valamint az ApplicationLaunchRestrictions szabályzatkonfigurációs szolgáltató (CSP) beállításait.'
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/26/2018
+ms.date: 10/24/2018
 ms.article: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,39 +13,57 @@ ms.topic: article
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b8ba5078d304c0e9d6b10e4efb868642323c901c
-ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
+ms.openlocfilehash: 863ef32d05fed601eaf38f749aa30e1c4b657cc9
+ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403578"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49983159"
 ---
-# <a name="custom-device-settings-for-devices-running-windows-holographic-for-business-in-intune"></a>A Windows Holographic for Business rendszert futtató eszközökre vonatkozó egyéni eszközbeállítások az Intune-ban
+# <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>Egyéni beállítások használata az Intune-ban a Windows Holographic for Business-eszközökhöz
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+A Microsoft Intune-ban „egyéni profilokkal” adhat meg vagy hozhat létre egyéni beállításokat a Windows Holographic for Business-eszközökhöz. Az egyéni profilok az Intune részét képezik. Akkor hasznosak, ha olyan eszközbeállításokat és funkciókat szeretne használni, amelyek nem érhetők el beépítetten az Intune-ban.
 
- A Microsoft Intune Windows Holographic for Businesshez készült **egyéni** profiljával az eszközfunkciók szabályozására szolgáló OMA-URI (Open Mobile Alliance egységes erőforrás-azonosító) beállításokat lehet telepíteni. A Windows Holographic for Business számos konfigurációs szolgáltatásból származó beállítást támogat. A konfigurációszolgáltatásokról a [Bevezetés a konfigurációszolgáltatásokba (CSP) informatikai szakértők számára](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers) című témakörben olvashat. A Windows Holographic által támogatott konkrét konfigurációszolgáltatók listáját a [Windows Holographic által támogatott CSP-k](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens) című cikkben találja.
+A Windows Holographic for Business egyéni profiljai az Open Mobile Alliance Uniform Resource Identifier (OMA-URI) beállításokat használják a különböző funkciók konfigurálásához. Ezekkel a beállításokkal általában a mobileszközgyártók vezérlik az eszközök funkcióit.
 
-Ha egy adott beállítást keres, ne feledje, a [Windows Holographic for Business eszközkorlátozási profil](device-restrictions-windows-holographic.md) számos olyan beállítást tartalmaz, amely be van építve az Intune-ba, és nem követeli meg egyéni értékek megadását.
+A Windows Holographic for Business számos konfigurációs szolgáltatásból származó beállítást támogat. A konfigurációszolgáltatásokról a [Bevezetés a konfigurációszolgáltatásokba (CSP) informatikai szakértők számára](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers) című témakörben olvashat. A Windows Holographic által támogatott konkrét konfigurációszolgáltatók listáját a [Windows Holographic által támogatott CSP-k](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens) című cikkben találja.
 
-## <a name="create-the-custom-oma-uri-profile"></a>Az egyéni OMA-URI-profil létrehozása
+Ha egy adott beállítást keres, ne feledje, hogy a [Windows Holographic for Business eszközkorlátozási profil](device-restrictions-windows-holographic.md) számos beépített beállítást tartalmaz. Így nem feltétlenül kell egyéni értékeket megadnia.
 
-1. Az első lépésekhez kövesse az [Egyéni eszközbeállítások konfigurálása a Microsoft Intune-ban](custom-settings-configure.md) című témakör utasításait.
-2. OMA-URI beállítások hozzáadásához a **Profil létrehozása** panelen válassza a **Beállítások** lehetőséget.
-3. Az **Egyéni OMA-URI beállítások** panelen a **Hozzáadás** elemre kattintva adhat meg új értéket. Az **Exportálás** elemre kattintva az összes Ön által konfigurált értéket exportálhatja egy csv-fájlba.
-4. Minden egyes hozzáadni kívánt OMA-URI-beállításhoz adja meg a következő információkat:
-  - **Beállítás neve**: Adjon meg egy egyedi nevet az OMA-URI beállítás számára, amellyel az egyszerűen azonosítható a beállítások listájában.
-  - **Beállítás leírása**: Itt adhatja meg a beállítás leírását (nem kötelező).
-  - **Adattípus**: Válasszon egyet a következő lehetőségek közül:
-    - **Sztring**
-    - **Sztring (XML)**
-    - **Dátum és időpont**
-    - **Egész**
-    - **Lebegőpontos szám**
-    - **Logikai**
-  - **OMA-URI (megkülönbözteti a kis- és nagybetűket)**: Adja meg az OMA-URI azonosítót, amelyhez beállítást kíván megadni.
-  - **Érték**: Adja meg a megadott OMA-URI azonosítóhoz társítandó értéket.
-5. Miután elkészült, lépjen vissza a **Profil létrehozása** panelre, és kattintson a **Létrehozás** elemre. Ekkor létrejön a profil, és megjelenik a profilok listájában.
+Ebből a cikkből megtudhatja, hogyan hozhat létre egyéni profilt a Windows Holographic for Business-eszközökhöz, és a javasolt OMA-URI-beállítások listáját is tartalmazza.
+
+## <a name="create-the-profile"></a>A profil létrehozása
+
+1. Az [Azure Portalon](https://portal.azure.com) kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
+2. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
+3. Adja meg a következő beállításokat:
+
+    - **Név**: Adja meg a profil nevét, például: `hololens custom profile`.
+    - **Leírás:** Itt adhatja meg a profil leírását.
+    - **Platform**: Válassza a **Windows 10-es vagy újabb verzióját**.
+    - **Profil típusa**: Válassza az **Egyéni** lehetőséget.
+
+4. Az **Egyéni OMA-URI-beállítások** menüben válassza a **Hozzáadás** lehetőséget. Adja meg a következő beállításokat:
+
+    - **Név** – Adjon meg egy egyedi nevet az OMA-URI-beállítás számára, amellyel az egyszerűen azonosítható a beállítások listájában.
+    - **Leírás** – Adjon meg egy olyan leírást, amely ismerteti a beállítást, és minden fontos részletet tartalmaz.
+    - **OMA-URI** (megkülönbözteti a kis- és nagybetűket) – Adja meg azt az OMA-URI azonosítót, amelyet beállításként kíván használni.
+    - **Adattípus** – Adja meg azt az adattípust, amelyet az OMA-URI beállításhoz szeretne használni. A választható lehetőségek:
+
+        - Sztring
+        - Sztring (XML-fájl)
+        - Dátum és időpont
+        - Egész szám
+        - Lebegőpontos szám
+        - Logikai
+        - Base64 (fájl)
+
+    - **Érték** – Adja meg a megadott OMA-URI azonosítóhoz társítandó értéket. Az érték a választott adattípustól függ. A **Dátum és idő** típus esetén például a dátumválasztóból választhat értéket.
+
+    Néhány beállítás megadása után válassza az **Exportálás** lehetőséget. Az **Exportálás** a hozzáadott értékek listáját hozza létre egy vesszővel tagolt (.csv) fájlban.
+
+5. A módosítások mentéséhez válassza az **OK** gombot. Szükség szerint adjon hozzá további beállításokat.
+6. Ha elkészült, az Intune-profil létrehozásához kattintson az **OK** > **Létrehozás** lehetőségre. Ha a profil elkészült, megjelenik az **Eszközkonfiguráció – Profilok** listában.
 
 ## <a name="recommended-custom-settings"></a>Ajánlott egyéni beállítások
 
@@ -145,6 +163,12 @@ Az alábbi beállítások a Windows Holographic for Business rendszert futtató 
 
 ## <a name="find-the-policies-you-can-configure"></a>A konfigurálható szabályzatok megkeresése
 
-A [Windows Holographic for Business által támogatott CSP-k](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens) című cikkben megtalálja Windows Holographic által támogatott konfigurációszolgáltatók teljes listáját. Nem minden beállítás kompatibilis a Windows Holographic összes verziójával. A Windows-cikkben szereplő táblázatból kiolvasható, hogy az egyes konfigurációszolgáltatók mely verziókat támogatják.
+A [Windows Holographic for Business által támogatott CSP-k](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens) című cikkben megtalálja Windows Holographic által támogatott konfigurációszolgáltatók teljes listáját. Nem minden beállítás kompatibilis a Windows Holographic összes verziójával. A [Windows Holographic által támogatott CSP-ket](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens) felsoroló cikkben szereplő táblázat tartalmazza az egyes CSP-hez tartozó támogatott verziók listáját.
 
-Ezen felül az Intune sem támogatja a cikkben felsorolt beállítások mindegyikét. Ha tudni szeretné, hogy az Intune támogatja-e a kívánt beállítást, nyissa meg a beállításhoz tartozó cikket. Minden beállítás oldalán szerepelnek a támogatott műveletek. Az Intune használatához a beállításnak támogatnia kell a **Hozzáadás** vagy a **Csere** műveletet.
+Az Intune nem támogatja a [Windows Holographic által támogatott CSP-ket](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens) ismertető cikkben felsorolt összes beállítást. Ha tudni szeretné, hogy az Intune támogatja-e a kívánt beállítást, nyissa meg a beállításhoz tartozó cikket. Minden beállítás oldalán szerepelnek az általa támogatott műveletek. Az Intune használatához a beállításnak támogatnia kell a **Hozzáadás** vagy a **Csere** műveletet.
+
+## <a name="next-steps"></a>További lépések
+
+A profil létrejött, de egyelőre nem csinál semmit. Következő lépésként [végezze el a profil hozzárendelését](device-profile-assign.md).
+
+Tekintse meg, hogyan hozhat létre egyéni profilt [Windows 10 rendszerű eszközökön](custom-settings-windows-10.md).

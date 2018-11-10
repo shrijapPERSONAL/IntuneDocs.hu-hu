@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/26/2018
+ms.date: 9/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: 0b064c6f0eaa67157c5c50ddad3a8fd863295b8b
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: faf07b58c4480689d5f6f44bf09d6100a2eae9db
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312850"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48827853"
 ---
 # <a name="windows-10-vpn-settings-in-intune"></a>A Windows 10 VPN-beállításai az Intune-ban
 
@@ -59,7 +59,7 @@ A kiválasztott beállításoktól függően előfordulhat, hogy nem minden ért
   - **PPTP**
 
   Amikor kiválasztja a VPN-kapcsolat típusát, előfordulhat, hogy az alábbi beállításokat is meg kell adnia:  
-    - **Mindig bekapcsolva**: Ezzel a beállítással automatikusan csatlakozik a VPN-kapcsolathoz a következő esetekben: 
+    - **Mindig bekapcsolva**: Ennek **engedélyezésével** automatikusan csatlakozik a VPN-kapcsolathoz a következő esetekben: 
       - Felhasználói bejelentkezés az eszközre
       - Hálózatváltozás az eszközön
       - Az eszköz képernyője ismét bekapcsol, miután ki volt kapcsolva 
@@ -114,7 +114,7 @@ További információ az egyéni EAP XML-ek létrehozásáról: [EAP-konfigurác
 
 ## <a name="conditional-access"></a>Feltételes hozzáférés
 
-- **Feltételes hozzáférés használata e VPN-kapcsolat esetében**: Lehetővé teszi az ügyféltől származó eszközmegfelelőségi adatok továbbítását. Ha a beállítás engedélyezve van, a VPN-ügyfél megpróbál kommunikálni az Azure Active Directoryval (AD), hogy megszerezze a hitelesítéshez használandó tanúsítványt. A VPN-t tanúsítványalapú hitelesítés használatára kell beállítani, és a VPN-kiszolgálónak megbízhatóként kell felismernie az Azure AD által visszaadott kiszolgálót.
+- **Feltételes hozzáférés használata e VPN-kapcsolat esetében**: Lehetővé teszi az ügyféltől származó eszközmegfelelőségi adatok továbbítását. Ha a beállítás engedélyezve van, a VPN-ügyfél kommunikál az Azure Active Directoryval (AD), hogy megszerezze a hitelesítéshez használandó tanúsítványt. A VPN-t tanúsítványalapú hitelesítés használatára kell beállítani, és a VPN-kiszolgálónak megbízhatóként kell felismernie az Azure AD által visszaadott kiszolgálót.
 
 - **Egyszeri bejelentkezés (SSO) helyettesítő tanúsítvánnyal**: A Kerberos-hitelesítéshez használttól eltérő tanúsítvány használata az eszközmegfelelőség igazolásához. A következő beállításokkal rendelkező tanúsítványt adja meg:
 
@@ -124,7 +124,17 @@ További információ az egyéni EAP XML-ek létrehozásáról: [EAP-konfigurác
 
 ## <a name="dns-settings"></a>DNS-beállítások
 
-**A VPN-kapcsolat tartománya és kiszolgálói**: Megadhat egy tartományt és DNS-kiszolgálót a VPN-nek. Megadhatja, hogy a kapcsolat létrejötte után a VPN-kapcsolat mely DNS-kiszolgálókat használja. Minden egyes kiszolgálóhoz adja meg az alábbi adatokat:
+- **DNS-utótagok keresési listája**: A **DNS-utótagok** területen adjon meg egy DNS-utótagot, majd válassza a **Hozzáadás** lehetőséget. Egyszerre több utótagot is hozzáadhat.
+
+  A DNS-utótagok használatakor a rendszer a hálózati erőforrások rövid nevére keres rá a teljes tartománynév (FQDN) helyett. A rövid névvel történő kereséskor az utótagot automatikusan meghatározza a DNS-kiszolgáló. A `utah.contoso.com` például szerepel a DNS-utótagok listájában. Ön pingeli a következőt: `DEV-comp`. Ebben a forgatókönyvben ez a következőt eredményezi: `DEV-comp.utah.contoso.com`.
+
+  A DNS-utótagok a megadott sorrendben oldódnak fel, amely módosítható. Például a `colorado.contoso.com` és a `utah.contoso.com` is szerepel a DNS-utótagok listájában, és mindkettő rendelkezik `DEV-comp` erőforrással. Mivel a `colorado.contoso.com` az első a listában, ez a következőképp oldódik fel: `DEV-comp.colorado.contoso.com`.
+  
+  A sorrend módosításához kattintson a DNS-utótag bal oldalán található pontokra, majd húzza az utótagot felülre:
+
+  ![Válassza ki a három pontot, majd húzással helyezze át a DNS-utótagot](./media/vpn-settings-windows10-move-dns-suffix.png)
+
+- **A VPN-kapcsolat tartománya és kiszolgálói**: Megadhat egy tartományt és DNS-kiszolgálót a VPN-nek. Megadhatja, hogy a kapcsolat létrejötte után a VPN-kapcsolat mely DNS-kiszolgálókat használja. Minden egyes kiszolgálóhoz adja meg az alábbi adatokat:
 - **Tartomány**
 - **DNS-kiszolgáló**
 - **Proxy**

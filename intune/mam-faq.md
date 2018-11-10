@@ -14,12 +14,12 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f27baf7d40a6eb4d89769eeab7a6e035e3468825
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: 57c69c1610168aa25d33c8124c38f585eb715251
+ms.sourcegitcommit: 3d44c06045fa986fc9b9eb43b667caf8928dbaf0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49643025"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50225454"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Gyakori kérdések az MAM-ről és az alkalmazásvédelemről
 
@@ -181,6 +181,15 @@ Az Intune alkalmazásvédelmi szabályzata nem tudja kezelni az iOS megosztási 
 Az Intune alkalmazásvédelmi hozzáférési szabályzatai adott sorrendben lépnek érvénybe a végfelhasználói eszközökön, amikor azok a vállalati környezetből megkísérelnek hozzáférni az alkalmazásokhoz. A törlésnek általában elsőbbsége van, ezt követi a letiltás és a bezárható figyelmeztetés. Például az iOS-verzió frissítésére figyelmeztető minimálisan előírt iOS operációsrendszer-beállítás, ha érvényesíthető az adott felhasználóra/alkalmazásra, csak akkor kerül alkalmazásra, ha már életbe lépett a felhasználó hozzáférését letiltó minimálisan előírt iOS operációsrendszer-beállítás. Így tehát ha az informatikai rendszergazda a minimális iOS operációs rendszert 11.0.0.0-ra, a (csak figyelmeztetési) minimális iOS operációs rendszert 11.1.0.0-ra állította be, az alkalmazás elérését megkísérlő eszköz pedig az iOS 10-et használja, a végfelhasználó a minimális iOS operációsrendszer-verzióra vonatkozó szigorúbb beállítás alapján le lesz tiltva, és nem férhet hozzá az alkalmazáshoz.
 
 Különböző beállítások esetén először a az Intune App SDK verziókövetelménye, majd az alkalmazásverzió követelménye és végül az iOS operációs rendszer verziókövetelménye kerül sorra. Ezt követi a beállításokra vonatkozó figyelmeztetések végrehajtása ugyanebben a sorrendben. Azt javasoljuk, hogy az Intune App SDK verziókövetelményét csak az Intune termékért felelős csoport alapvető letiltási esetekre vonatkozó útmutatása alapján állítsa be.
+
+## <a name="app-protection-policies---policy-refresh"></a>Alkalmazásvédelmi szabályzatok – Szabályzat frissítése
+- Az alkalmazások 30 percenként bejelentkeznek az App Service-be.
+- A 30 perces küszöbérték egy időzítőn alapul.
+    - Ha az alkalmazás a 30. percben aktív, akkor bejelentkezik.
+    - Ha az alkalmazás a 30. percben nem aktív, akkor a következő körben jelentkezik be.
+- Ha egy felhasználóhoz egyetlen szabályzat sincs hozzárendelve, akkor a bejelentkezésre nyolc óránként kerül sor.
+- Ha egyetlen Intune-licenc sincs hozzárendelve, akkor a bejelentkezésre 24 óránként kerül sor.
+
 
 ## <a name="see-also"></a>Lásd még:
 - [Az Intune-terv megvalósítása](planning-guide-onboarding.md)
