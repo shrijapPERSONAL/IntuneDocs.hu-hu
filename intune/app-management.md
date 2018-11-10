@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/20/2018
+ms.date: 10/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 20e9d4799b9ea4329c8286f0b75ea2a7d555e07b
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 25236453f0440978eda34e3a1a8b1b93daf4c6e1
+ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253765"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51025168"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>A Microsoft Intune-alkalmazásfelügyelet ismertetése
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-A rendszergazdák a Microsoft Intune használatával kezelhetik a cég által használt mobilalkalmazásokat. Ez a funkció az eszközkezelési és adatvédelmi funkciókat egészíti ki. A rendszergazdák egyik elsődleges feladata annak biztosítása, hogy a végfelhasználók hozzáférjenek a munkájukhoz szükséges alkalmazásokhoz. Ez a célkitűzés kihívást jelenthet, mivel:
+A rendszergazdák a Microsoft Intune használatával kezelhetik a cég által használt ügyfélalkalmazásokat. Ez a funkció az eszközkezelési és adatvédelmi funkciókat egészíti ki. A rendszergazdák egyik elsődleges feladata annak biztosítása, hogy a végfelhasználók hozzáférjenek a munkájukhoz szükséges alkalmazásokhoz. Ez a célkitűzés kihívást jelenthet, mivel:
 - Sokféle eszközplatformot és alkalmazástípust kell kezelnie.
 - Előfordulhat, hogy a vállalati eszközökön és a felhasználók saját eszközein található alkalmazásokat egyaránt felügyelnie kell.
 - Folyamatosan gondoskodnia kell a hálózat és az adatok biztonságáról.
@@ -68,7 +68,7 @@ Az alkalmazáshoz kapcsolódó legtöbb információ az **Ügyfélalkalmazások*
     Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. A **Microsoft Intune** ablaktáblán válassza az **Ügyfélalkalmazások** lehetőséget.
 
-    ![A „Mobilalkalmazások” munkafolyamat-panel](./media/apps-workload.png)
+    ![Az Ügyfélalkalmazások tevékenységprofil](./media/apps-workload.png)
 
 A következő négy szakasz az **Ügyfélalkalmazások** ablaktáblán elérhető lehetőségeket ismerteti.
 
@@ -94,7 +94,7 @@ Az e szakasz tartalmával kapcsolatos további információ: [Alkalmazáskezelé
 - **Alkalmazáslicencek**: Az alkalmazás-áruházakból vásárolt mennyiségi licencszerződéses alkalmazások megtekintése, hozzárendelése és figyelése. További információkért lásd:
     - [iOS Volume Purchase Program-alkalmazások](vpp-apps-ios.md).
     - [A Microsoft Store Vállalatoknak áruházból mennyiségi programban vásárolt alkalmazások](windows-store-for-business.md).
-- **Felderített alkalmazások**: Az Intune által hozzárendelt, és az eszközön telepített összes alkalmazás megtekintése. További információk: [Alkalmazásadatok és -hozzárendelések figyelése a Microsoft Intune-ban](apps-monitor.md#device-and-user-status-graphs).
+- **Felderített alkalmazások**: Az Intune által az eszközhöz hozzárendelt vagy rá telepített alkalmazások megtekintése. Erről az [Eszközadatok megtekintése a Microsoft Intune-ban](device-inventory.md) című cikk nyújt további tájékoztatást.
 - **Alkalmazástelepítési állapot**: Egy Ön által létrehozott alkalmazás-hozzárendelés állapotának megtekintése. További információk: [Alkalmazásadatok és -hozzárendelések figyelése a Microsoft Intune-ban](apps-monitor.md#device-and-user-status-graphs).
 - **Alkalmazásvédelem állapota**: A kiválasztott felhasználó egy alkalmazásvédelmi szabályzatának állapotát jeleníti meg.
 - **Naplók**: Az összes rendszergazda Intune-alkalmazáshoz kapcsolódó tevékenységeinek megtekintése.

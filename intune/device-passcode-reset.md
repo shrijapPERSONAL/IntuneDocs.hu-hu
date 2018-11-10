@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/29/2018
+ms.date: 09/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,32 +13,44 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a233c62b76901d9bad00aa6d8b2a8a4dd45dea96
-ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
+ms.openlocfilehash: 83a231f41f5cf9d4488e86040c2d7e141f71d0a7
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/14/2018
-ms.locfileid: "39039301"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49424917"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Eszközök PIN-kódjának visszaállítása vagy eltávolítása az Intune-ban
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Ha új PIN-kódot szeretne létrehozni egy eszközhöz, használja a  **PIN-kód eltávolítása** műveletet. Ez a művelet csak a munkahelyi profilnál kéri a PIN-kód alaphelyzetbe állítását. Az androidos munkahelyi profilok esetében az eszköz PIN-kódjának alaphelyzetbe állítása nem támogatott.
+Ez a dokumentum a PIN-kód eszközszintű alaphelyzetbe állítását és a munkahelyi profil PIN-kódjának alaphelyzetbe állítását ismerteti vállalati Android (korábbi nevén Android for Work, vagy AfW) rendszerű eszközökön. Ezt a megkülönböztetést fontos szem előtt tartani, hiszen a követelmények eltérőek lehetnek. Az eszközszintű PIN-kód alaphelyzetbe állítása az egész eszközön átállítja a PIN-kódot. A munkahelyi profil PIN-kódjának alaphelyzetbe állítása csak a felhasználó munkahelyi profiljára vonatkozó PIN-kódot állítja át a vállalati Android rendszerű eszközökön.
 
-## <a name="work-profile-pin-reset-supported-platforms"></a>A munkahelyi profil PIN-kódjának alaphelyzetbe állítása szempontjából támogatott platformok
+## <a name="supported-platforms-for-device-level-passcode-reset"></a>Az eszközszintű PIN-kód alaphelyzetbe állításának támogatott platformjai
 
-- Munkahelyi profillal regisztrált, 8.0-ás vagy újabb verziójú Android-eszközök 
-- 6.0-ás vagy régebbi verziójú Android-eszközök
-- Vállalati androidos kioszkeszközök
-- iOS 
-     
-## <a name="unsupported-platforms"></a>Nem támogatott platformok
+| Platform | Támogatott? |
+| ---- | ---- |
+| 6.x vagy régebbi verziójú Android-eszközök | Igen |
+| Vállalati Android rendszerű eszközök kioszkmódban | Igen |
+| iOS-eszközök | Igen |
+| Munkahelyi profillal regisztrált, 7.0-s vagy régebbi verziójú Android-eszközök | Nem |
+| 7.0-ás vagy újabb verziójú Android-eszközök | Nem |
+| macOS | Nem |
+| Windows | Nem |
 
-- Munkahelyi profillal regisztrált, 7.0-ás vagy régebbi verziójú Android-eszközök
-- 7.0-ás vagy újabb verziójú Android-eszközök
-- macOS
-- Windows
+Az Android-eszközök esetében ez tulajdonképpen annyit jelent, hogy az eszközszintű PIN-kód alaphelyzetbe állítása csak 6.x vagy korábbi verziójú, illetve kioszkmódban futó vállalati Android rendszerű eszközökön támogatott. Ennek az az oka, hogy a Google többé nem támogatja az Android 7 rendszerű eszközökön a PIN-kód/jelszó alaphelyzetbe állítását eszközrendszergazda által jóváhagyott alkalmazásokból, minden MDM-szállítóra vonatkozóan.
+
+## <a name="supported-platforms-for-android-enterprise-work-profile-passcode-reset"></a>Azok a platformok, amelyeken alaphelyzetbe állítható a vállalati Android munkahelyi profil PIN-kódja
+
+| Platform | Támogatott? |
+| ---- | ---- |
+| Munkahelyi profillal regisztrált, 8.0-s vagy újabb verziójú vállalati Android-eszközök | Igen |
+| Munkahelyi profillal regisztrált, 7.x vagy korábbi verziójú vállalati Android-eszközök | Nem |
+| 7.x vagy korábbi verziójú Android-eszközök | Nem |
+| iOS | Nem |
+| macOS | Nem |
+
+A munkahelyi profilokhoz a PIN-kód alaphelyzetbe állítása művelettel hozhat létre új PIN-kódot. Ez a művelet elindítja a PIN-kód alaphelyzetbe állítását, és új, ideiglenes PIN-kódot hoz létre, kizárólag a munkahelyi profilhoz. 
 
 ## <a name="reset-a-passcode"></a>Új PIN-kód kérése
 
@@ -47,15 +59,16 @@ Ha új PIN-kódot szeretne létrehozni egy eszközhöz, használja a  **PIN-kód
 3. Válassza az **Eszközök**, majd a **Minden eszköz** lehetőséget.
 4. Az Ön által kezel eszközök listájáról válasszon ki egy eszközt, majd válassza a **...További** lehetőséget. Majd válassza a **PIN-kód eltávolítása** távoli eszközműveletet.
 
-## <a name="resetting-android-work-profile-passcodes"></a>Androidos munkahelyi profilok PIN-kódjainak alaphelyzetbe állítása
+## <a name="reset-android-work-profile-passcodes"></a>Androidos munkahelyi profilok PIN-kódjának alaphelyzetbe állítása
 
-A támogatott, androidos munkahelyi profilt használó eszközök végfelhasználói új feloldó jelszót vagy biztonsági kérdést kapnak a felügyelt profilhoz. 
+A támogatott, androidos munkahelyi profillal regisztrált vállalati eszközök végfelhasználói új feloldó jelszót vagy biztonsági kérdést kapnak a felügyelt profilhoz.
 
-Az Android 8.0-s munkahelyi profilos eszközökön a végfelhasználók a regisztráció befejeződése után azonnal értesítést kapnak, hogy aktiválják alaphelyzetbe állítási PIN-kódjukat. Az értesítés akkor jelenik meg, ha egy munkahelyi profil jelszavát kell beállítani. A PIN-kód megadása után az értesítés eltűnik.
+A 8.x vagy újabb verziójú, munkahelyi profillal regisztrált vállalati Android-eszközök végfelhasználói a regisztráció befejezése után azonnal értesítést kapnak arról, hogy aktiválniuk kell az új PIN-kódot. Az értesítés akkor jelenik meg, ha a munkahelyi profilban kötelező jelszót megadni, és be is van állítva jelszó. A PIN-kód megadása után az értesítés eltűnik.
 
-## <a name="resetting-ios-passcodes"></a>iOS PIN-kódok alaphelyzetbe állítása
 
-A PIN-kódok törlődnek az iOS-eszközökről. Ha PIN-kódokra vonatkozó megfelelőségi szabályzat van érvényben, az eszköz megkéri a felhasználót, hogy állítson be egy új jelszót a Beállítások területen. 
+## <a name="remove-ios-passcodes"></a>iOS-beli PIN-kódok eltávolítása
+
+A PIN-kódok alaphelyzetbe állítás helyett törlődnek az iOS-eszközökről. Ha PIN-kódokra vonatkozó megfelelőségi szabályzat van érvényben, az eszköz megkéri a felhasználót, hogy állítson be egy új jelszót a Beállítások területen.
 
 ## <a name="next-steps"></a>További lépések
 
