@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 731f6f5baaa150210765313ffc60133623e52923
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 2e3b356cc7c09b00916c24340dbbe1923540889b
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313699"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915733"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings---intune"></a>Android- és Samsung Knox Standard-eszközök korlátozásaira vonatkozó beállítások – Intune
 
@@ -39,9 +39,9 @@ A cikk bemutatja a Microsoft Intune összes olyan eszközkorlátozásokra vonatk
 - **Földrajzi hely meghatározása (csak Samsung Knox esetén)** – Lehetővé teszi, hogy az eszköz felhasználja a földrajzi helyre vonatkozó adatokat.
 - **Kikapcsolás (csak Samsung Knox esetén)** – Engedélyezi az eszköz felhasználó általi kikapcsolását.<br>Ha le van tiltva, a **Sikertelen bejelentkezések száma, mielőtt törlődne az eszközön lévő összes adat** beállítás nem adható meg.
 - **Képernyőfelvétel (csak Samsung Knox esetén)** – Lehetővé teszi, hogy a felhasználó képként rögzítse a képernyőn látható tartalmat.
-- **Beszédfelismerési asszisztens (csak Samsung Knox esetén)** – Engedélyezi a Beszédfelismerési asszisztens szoftver használatát az eszközön.
+- **Beszédfelismerési asszisztens (csak Samsung Knox esetén)** – Engedélyezi az S Voice szolgáltatás és alkalmazás használatát az eszközön. Ez nem vonatkozik Bixbyre vagy az akadálymentes felületet biztosító hangvezérelt asszisztensre, amely hangosan felolvassa a képernyő tartalmát.
 - **YouTube (csak Samsung Knox esetén)** – Engedélyezi a YouTube alkalmazás használatát az eszközön.
-- **Megosztott eszközök (csak Samsung Knox esetében)** – Felügyelt Samsung Knox Standard-eszközök konfigurálása megosztáshoz. Ebben a módban a végfelhasználók Azure AD-beli hitelesítő adataikkal jelentkezhetnek be az eszközön. Az eszköz felügyelt marad, függetlenül attól, hogy használatban van-e vagy sem.<br>Az SCEP-tanúsítványprofillal együtt használva ez a szolgáltatás lehetővé teszi a végfelhasználóknak, hogy megosszanak egy eszközt úgy, hogy az összes felhasználónak ugyanazok az alkalmazások legyenek elérhetők, de a saját SCEP-felhasználói tanúsítványukkal.  A felhasználói kijelentkezéskor az összes alkalmazásadat törlődik.  Ez a szolgáltatás csak az üzletági alkalmazásokra érvényes.
+- **Megosztott eszközök (csak Samsung Knox esetén)** – Felügyelt Samsung Knox Standard-eszközök konfigurálása megosztáshoz. Ebben a módban a végfelhasználók Azure AD-beli hitelesítő adataikkal jelentkezhetnek be az eszközön. Az eszköz felügyelt marad, függetlenül attól, hogy használatban van-e vagy sem.<br>Az SCEP-tanúsítványprofillal együtt használva ez a szolgáltatás lehetővé teszi a végfelhasználóknak, hogy megosszanak egy eszközt úgy, hogy az összes felhasználónak ugyanazok az alkalmazások legyenek elérhetők, de a saját SCEP-felhasználói tanúsítványukkal.  A felhasználói kijelentkezéskor az összes alkalmazásadat törlődik.  Ez a szolgáltatás csak az üzletági alkalmazásokra érvényes.
 - **Dátum- és időmódosítás letiltása (Samsung Knox)** – Megakadályozza, hogy a felhasználók módosítsák az eszköz dátum- és időbeállításait. 
 
 ## <a name="password"></a>Jelszó

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/30/2018
+ms.date: 10/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,28 +13,66 @@ ms.reviewer: tycast
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e15a7b034c9277fcd960e8c704f4318f0f5c1da2
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 58a6681c22672b5aa2c8337708456b30361f741f
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329647"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236475"
 ---
-# <a name="wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Wi-Fi-beállítások Windows 10 és újabb rendszerű eszközökhöz az Intune-ban
+# <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Wi-Fi-beállítások hozzáadása Windows 10 és újabb rendszerű eszközökhöz az Intune-ban
 
-A Wi-Fi-beállítások Windows 10 és újabb rendszerű eszközökre érvényes konfigurációs profilokban vannak használva. A lehetőségek a következők:
+Adott Wi-Fi-beállításokkal rendelkező profilt hozhat létre, majd ezt a profilt üzembe helyezheti a Windows 10-es vagy újabb eszközökön. A Microsoft Intune számos szolgáltatást nyújt, beleértve a hálózaton való hitelesítést, az előmegosztott kulcsok használatát és egyebeket.
 
-- Egyszerű
-- Vállalati
+Ez a cikk ezeket a beállításokat ismerteti.
 
 ## <a name="before-you-begin"></a>Előkészületek
 
 [Eszközprofil létrehozása](device-profile-create.md).
 
-## <a name="settings-for-basic-and-enterprise-profiles"></a>Alapszintű és vállalati profilokban használható beállítások
+## <a name="basic-profile"></a>Alapszintű profil
+
+- **Wi-Fi típusa**: válassza az **Alapszintű** lehetőséget. 
 
 - **Wi-Fi neve (SSID)**: A szolgáltatáskészlet-azonosító rövidítése. Ez az érték a valódi neve a vezeték nélküli hálózatnak, amelyhez az eszközök csatlakoznak. A felhasználók azonban csak a konfigurált **kapcsolatnevet** látják, amikor kiválasztják a kapcsolatot.
+
 - **Kapcsolat neve**: Adja meg a Wi-Fi-kapcsolat felhasználóbarát nevét. Az ide beírt szöveg a felhasználók számára megjelenő név, amikor a rendelkezésre álló kapcsolatokat böngészik az eszközeiken.
+
+- **Hatótávolságon belül automatikus csatlakozás**: Ha **Igen** értékre van állítva, akkor az eszközök automatikusan csatlakoznak, amikor ennek a hálózatnak a hatótávolságán belül vannak. Ha a beállítás **Nem**, akkor az eszközök nem csatlakoznak automatikusan.
+
+  - **Lehetőség szerint csatlakozás egy előnyben részesített hálózathoz**: Ha az eszközök egy előnyben részesített hálózat hatókörében vannak, akkor **Igen** beállítás mellett azt fogják használni. Válassza a **Nem** beállítást, hogy az ebben a konfigurációs profilban lévő Wi-Fi-hálózatot használják.
+
+    Tegyük fel, hogy létrehozott egy **ContosoCorp** nevű Wi-Fi-hálózatot, és a **ContosoCorp** hálózatot használja ebben a konfigurációs profilban. Elérhető távolságban van egy **ContosoGuest** nevű Wi-Fi-hálózat is. Azt szeretné, hogy ha céges eszközei hatókörön belül vannak, automatikusan a **ContosoCorphoz** csatlakozzanak. Ebben az esetben állítsa a **Lehetőség szerint csatlakozás egy előnyben részesített hálózathoz** tulajdonságot **Nem** értékre.
+
+  - **Csatlakozás ehhez a hálózathoz akkor is, ha nem küld SSID-t**: Válassza az **Igen** beállítást a konfigurációs profilhoz, hogy akkor is automatikusan csatlakozzon a hálózatához, amikor a hálózat rejtett (tehát nem küldi szét nyilvánosan az SSID-ját). Válassza a **Nem** beállítást, ha nem szeretné, hogy ez a konfigurációs profil a rejtett hálózathoz csatlakozzon.
+
+- **Mért kapcsolathoz megadott korlát**: A rendszergazdák kiválaszthatják, hogy történjen a hálózati forgalom mérése. Alkalmazások ezt követően ennek a beállításnak az alapján módosíthatják a hálózati forgalommal kapcsolatos viselkedésüket. A választható lehetőségek:
+
+  - **Nem korlátozott**: alapértelmezett. A rendszer nem méri a kapcsolatot, és nincs korlátozva a forgalom.
+  - **Rögzített**: Ezt a lehetőséget használja, ha a hálózathoz rögzített hálózati forgalomkorlát van beállítva. A korlát elérése után a hálózati hozzáférés le van tiltva.
+  - **Változó**: Ezt a lehetőséget használja, ha a hálózati forgalom számlázása bájtonként (bájtonkénti költség) történik.
+
+- **Vezeték nélküli biztonság típusa**: Adja meg a hálózatán az eszközök hitelesítésére használt biztonsági protokollt. Az alábbi lehetőségek állnak rendelkezésére:
+  - **Nyitott (nincs hitelesítés)**: Csak akkor válassza ezt a lehetőséget, ha a hálózat nem védett.
+  - **WPA/WPA2 (személyes)**: Egy biztonságosabb beállítás, amelyet gyakran hasznának Wi-Fi-csatlakozáshoz. A további biztonság érdekében előre megosztott kulcsot vagy hálózati kulcsot is megadhat. 
+
+    - **Előre megosztott kulcs** (PSK): nem kötelező. Akkor jelenik meg, ha a **WPA/WPA2 (személyes)** biztonsági típust választja. A cég hálózatának beállítása vagy konfigurálása során a rendszer egy jelszót vagy egy hálózati kulcsot is konfigurál. Adja meg ezt a jelszót vagy hálózati kulcsot a PSK értékeként. 8–64 karakter közötti hosszúságú karakterláncot adjon meg. Ha a jelszó vagy a hálózati kulcs 64 karakterből áll, akkor hexadecimális karakteret adjon meg.
+
+- **Vállalati proxybeállítások**: Válassza ki a vállalatán belül használni kívánt proxybeállításokat. A választható lehetőségek:
+  - **Nincs**: Semmilyen proxybeállítás nincs konfigurálva.
+  - **Manuálisan konfigurált**: Adja meg a **proxykiszolgáló IP-címét** és **portszámát**.
+  - **Automatikusan konfigurált**: Adja meg egy proxy automatikus konfigurációs (PAC) szkriptjének URL-címét. Például írja be a következőt: `http://proxy.contoso.com/proxy.pac`.
+
+A módosítások mentéséhez válassza az **OK** > **Létrehozás** lehetőséget. Ekkor létrejön a profil, és megjelenik a profilok listájában.
+
+## <a name="enterprise-profile"></a>Vállalati profil
+
+- **Wi-Fi típusa**: Válassza a **Vállalati** elemet. 
+
+- **Wi-Fi neve (SSID)**: A szolgáltatáskészlet-azonosító rövidítése. Ez az érték a valódi neve a vezeték nélküli hálózatnak, amelyhez az eszközök csatlakoznak. A felhasználók azonban csak a konfigurált **kapcsolatnevet** látják, amikor kiválasztják a kapcsolatot.
+
+- **Kapcsolat neve**: Adja meg a Wi-Fi-kapcsolat felhasználóbarát nevét. Az ide beírt szöveg a felhasználók számára megjelenő név, amikor a rendelkezésre álló kapcsolatokat böngészik az eszközeiken.
+
 - **Hatótávolságon belül automatikus csatlakozás**: Ha **Igen** értékre van állítva, akkor az eszközök automatikusan csatlakoznak, amikor ennek a hálózatnak a hatótávolságán belül vannak. Ha a beállítás **Nem**, akkor az eszközök nem csatlakoznak automatikusan.
   - **Lehetőség szerint csatlakozás egy előnyben részesített hálózathoz**: Ha az eszközök egy előnyben részesített hálózat hatókörében vannak, akkor **Igen** beállítás mellett azt fogják használni. Válassza a **Nem** beállítást, hogy az ebben a konfigurációs profilban lévő Wi-Fi-hálózatot használják.
 
@@ -42,18 +80,11 @@ A Wi-Fi-beállítások Windows 10 és újabb rendszerű eszközökre érvényes 
 
   - **Csatlakozás ehhez a hálózathoz akkor is, ha nem küld SSID-t**: Válassza az **Igen** beállítást a konfigurációs profilhoz, hogy akkor is automatikusan csatlakozzon a hálózatához, amikor a hálózat rejtett (tehát nem küldi szét nyilvánosan az SSID-ját). Válassza a **Nem** beállítást, ha nem szeretné, hogy ez a konfigurációs profil a rejtett hálózathoz csatlakozzon.
 
-- **Vállalati proxybeállítások**: Válassza ki a vállalatán belül használni kívánt proxybeállításokat. A választható lehetőségek:
-  - **Nincs**: Semmilyen proxybeállítás nincs konfigurálva.
-  - **Manuálisan konfigurált**: Adja meg a **proxykiszolgáló IP-címét** és **portszámát**.
-  - **Automatikusan konfigurált**: Adja meg egy proxy automatikus konfigurációs (PAC) parancsprogramjának URL-címét. Például írja be a következőt: `http://proxy.contoso.com/proxy.pac`.
+- **Mért kapcsolathoz megadott korlát**: A rendszergazdák kiválaszthatják, hogy történjen a hálózati forgalom mérése. Alkalmazások ezt követően ennek a beállításnak az alapján módosíthatják a hálózati forgalommal kapcsolatos viselkedésüket. A választható lehetőségek:
 
-## <a name="settings-for-basic-profiles-only"></a>Csak alapszintű profilokban használható beállítások
-
-- **Vezeték nélküli biztonság típusa**: Adja meg a hálózatán az eszközök hitelesítésére használt biztonsági protokollt. Az alábbi lehetőségek állnak rendelkezésére:
-  - **Nyitott (nincs hitelesítés)**: Csak akkor válassza ezt a lehetőséget, ha a hálózat nem védett.
-  - **WPA/WPA2-Personal**
-
-## <a name="settings-for-enterprise-profiles-only"></a>Csak vállalati profilokban használható beállítások
+  - **Nem korlátozott**: alapértelmezett. A rendszer nem méri a kapcsolatot, és nincs korlátozva a forgalom.
+  - **Rögzített**: Ezt a lehetőséget használja, ha a hálózathoz rögzített hálózati forgalomkorlát van beállítva. A korlát elérése után a hálózati hozzáférés le van tiltva.
+  - **Változó**: Ezt a lehetőséget használja, ha a hálózati forgalom számlázása bájtonként történik.
 
 - **Egyszeri bejelentkezés (SSO)**: Lehetővé teszi az egyszeri bejelentkezés (SSO) konfigurálását. Ekkor ugyanazok a hitelesítő adatok szolgálnak a számítógépre és a Wi-Fi-hálózatba való bejelentkezésre. Az alábbi lehetőségek állnak rendelkezésére:
   - **Letiltás** Letiltja az SSO viselkedést. A felhasználónak külön kell hitelesítenie magát a hálózaton.
@@ -107,11 +138,24 @@ A Wi-Fi-beállítások Windows 10 és újabb rendszerű eszközökre érvényes 
 
         **Identitásadatok védelme (külső identitás)**: **EAP-TTLS** EAP-típussal használható. Adja meg az EAP-identitásra irányuló kérelemre adott válasz szövegét. Ez a szöveg tetszőleges érték lehet. A hitelesítés során a rendszer először a névtelen identitást küldi el, majd később egy biztonságos csatornán küldi el a valódi azonosítót.
 
+- **Vállalati proxybeállítások**: Válassza ki a vállalatán belül használni kívánt proxybeállításokat. A választható lehetőségek:
+  - **Nincs**: Semmilyen proxybeállítás nincs konfigurálva.
+  - **Manuálisan konfigurált**: Adja meg a **proxykiszolgáló IP-címét** és **portszámát**.
+  - **Automatikusan konfigurált**: Adja meg egy proxy automatikus konfigurációs (PAC) parancsprogramjának URL-címét. Például írja be a következőt: `http://proxy.contoso.com/proxy.pac`.
+
 - **A Wi-Fi-profil Federal Information Processing Standard (FIPS) szabványnak való megfelelésének a kényszerítése**: Válassza az **Igen** lehetőséget, ha a FIPS 140-2 szabvány szerinti érvényességet ellenőrzi. Ennek a szabványnak a betartása kötelező az összes Egyesült Államokbeli Szövetségi kormányzati szerv részére, ahol titkosításon alapuló biztonsági rendszereket használnak a digitálisan tárolt bizalmas, de nem titkos minősítésű információk tárolására. Válassza a **Nem** lehetőséget, ha nem szeretne FIPS-megfelelőséget.
+
+A módosítások mentéséhez válassza az **OK** > **Létrehozás** lehetőséget. Ekkor létrejön a profil, és megjelenik a profilok listájában.
 
 ## <a name="use-an-imported-settings-file"></a>Importált beállításfájl használata
 
 Az Intune-ban nem elérhető összes beállításhoz exportálhatja a Wi-Fi-beállításokat egy másik windowsos eszközből. Az exportálás az összes beállítást tartalmazó XML-fájlt hoz létre. Ez után importálja ezt a fájlt az Intune-ba, és használja Wi-Fi-profilként. Lásd: [Wi-Fi-beállítások exportálása és importálása Windows rendszerű eszközökhöz](wi-fi-settings-import-windows-8-1.md).
 
 ## <a name="next-steps"></a>További lépések
-[Wi-Fi-beállítások konfigurálása az Intune-ban](wi-fi-settings-configure.md)
+
+A profil létrejön, de egyelőre nem csinál semmit. A következő lépés a [profil hozzárendelése](device-profile-assign.md).
+
+## <a name="more-resources"></a>További források
+
+- A [Windows 8.1](wi-fi-settings-import-windows-8-1.md) rendszerhez rendelkezésre álló beállítások megtekintése.
+- [Wi-Fi-beállítások áttekintése](wi-fi-settings-configure.md), beleértve más platformokat is

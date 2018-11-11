@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1a70b6369bab130918bad472172995e6296ee4a6
-ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
+ms.openlocfilehash: 226713d893e05c2c2aeea49cde2ce92591d06391
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49391569"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915699"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Az Intune eszközmegfelelőségi szabályzatai – első lépések
 
@@ -153,7 +153,7 @@ Eszközmegfelelőségi szabályzatokat a feltételes hozzáférés nélkül is h
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Az eszközmegfelelőségi szabályzatok üzembe helyezésének módjai
 Az eszközmegfelelőségi szabályzatokat felhasználói csoportokban lévő felhasználók, illetve eszközcsoportokban lévő eszközök számára helyezheti üzembe. Amikor felhasználók számára telepít megfelelőségi szabályzatot, a rendszer az összes felhasználói eszköz megfelelőségét ellenőrzi. A Windows 10 1803-as vagy újabb verziójával rendelkező eszközökön javasolt az eszközcsoportokba történő üzembe helyezés, *ha* az elsődleges felhasználó nem regisztrálta az eszközt. Ebben a forgatókönyvben az eszközcsoportok használata segít a megfelelőségi jelentések elkészítésében.
 
-Az alapértelmezett **Megfelelőségi szabályzat beállításai** lap (Azure Portal > Eszközmegfelelőség) az alábbi beállításokat tartalmazza:
+Minden Intune-ban regisztrált eszközhöz megtörténik a beépített **Megfelelőségi szabályzatok beállításainak** (Azure Portal > Eszközmegfelelőség) értékelése. Ezek a következők:
 
 - **Hozzárendelt megfelelőségi szabályzattal nem rendelkező eszköz megjelölése mint**: Ehhez a tulajdonsághoz két érték tartozik:
 
@@ -171,7 +171,7 @@ Az alapértelmezett **Megfelelőségi szabályzat beállításai** lap (Azure Po
 
 - **Megfelelőségi állapot érvényességi időtartama (nap)**: Adja meg azt az időszakot, amelyben az eszközöknek jelenteniük kell az állapotukat minden fogadott megfelelőségi szabályzat vonatkozásában. A rendszer nem megfelelőként kezeli azokat az eszközöket, melyek ebben az időszakban nem adják vissza állapotukat. Az alapértelmezett érték 30 nap.
 
-Minden eszköz rendelkezik egy **Alapértelmezett eszközmegfelelőségi szabályzattal** (Azure Portal > Eszközmegfelelőség). Használja ezt az alapértelmezett szabályzatot ezeknek a beállításoknak a figyeléséhez.
+Minden eszköz rendelkezik egy **Beépített eszközmegfelelőségi szabályzattal** (Azure Portal > Eszközmegfelelőség). Használja ezt a beépített szabályzatot ezeknek a beállításoknak a figyeléséhez.
 
 Arról, hogy mennyi idővel a szabályzat életbe léptetése után kapják meg a mobileszközök a szabályzatot, az [Eszközprofilok hibaelhárítása](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned) című cikk nyújt tájékoztatást.
 

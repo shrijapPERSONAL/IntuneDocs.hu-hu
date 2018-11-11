@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 23e18ef2d7870a22699d898ad937febf9e61b804
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 491d2884f73d9178f54b6b2861bfe6f248c41c63
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231657"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236560"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>iOS-alkalmazások közti adatátvitel felügyelete a Microsoft Intune-ban
 ## <a name="manage-ios-apps"></a>IOS-alkalmazások felügyelete
@@ -37,7 +37,7 @@ Az alkalmazásvédelmi szabályzatok az iOS **Megnyitási engedélyek felügyele
 
 -   **Alkalmazottak tulajdonában lévő, mobileszköz-kezelési megoldás által nem kezelt eszközök:** az alkalmazásvédelmi szabályzat beállításait beállíthatja a következőre: **Az alkalmazás csak szabályzat által felügyelt alkalmazásoknak adhat át adatokat**. A szabályzat által felügyelt alkalmazásoknál a Megnyitás a következőben viselkedés megosztási lehetőségként csak más szabályzat által felügyelt alkalmazásokat jelenít meg. Ha egy felhasználó szabályzat által védett fájlt próbál mellékletként küldeni a OneDrive-ról a natív levelező alkalmazásban, az a fájl olvashatatlan lesz.
 
--   **Az Intune által felügyelt eszközök:** az Intune-ban regisztrált eszközök esetén az alkalmazásvédelmi szabályzatokkal rendelkező és az Intune használatával telepített egyéb felügyelt iOS-alkalmazások közötti adatátvitel automatikusan engedélyezett. Az alkalmazásvédelmi szabályzatokkal rendelkező alkalmazások közötti adatátvitel engedélyezéséhez aktiválja **Az alkalmazás átadhat adatokat szabályzat által felügyelt alkalmazásoknak** beállítást. Az Intune-nal telepített alkalmazások között a **Megnyitási engedélyek felügyelete** funkcióval vezérelhető az adatátvitel.   
+-   **Az Intune által felügyelt eszközök:** az Intune-ban regisztrált eszközök esetén az alkalmazásvédelmi szabályzatokkal rendelkező és az Intune használatával telepített egyéb felügyelt iOS-alkalmazások közötti adatátvitel automatikusan engedélyezett. Hogy meghatározza, milyen módon engedélyezi a más alkalmazásokba történő adatátvitelt, engedélyezze **Az alkalmazás átadhat adatokat más alkalmazásoknak** beállítást, és válassza ki, a megosztási szintet. Hogy meghatározza, milyen módon engedélyezi az alkalmazásnak más alkalmazásokból érkező adatok fogadását, engedélyezze **Az alkalmazás fogadhat adatokat más alkalmazásokból** beállítást, és válassza ki, az adatfogadási szintet. Az Intune-nal telepített alkalmazások között a **Megnyitási engedélyek felügyelete** funkcióval vezérelhető az adatátvitel. Az alkalmazásadatok fogadására és megosztására vonatkozó további információért lásd az [Adatáthelyezési beállítások](app-protection-policy-settings-ios.md#data-relocation-settings) szakaszt.   
 
 -   **Külső MDM-megoldás által felügyelt eszközök:** Az adatátvitel a felügyelt alkalmazásokra korlátozható az IOS **Megnyitási engedélyek felügyelete** funkciójával.
 Annak biztosításához, hogy a harmadik féltől származó MDM megoldás segítségével központilag telepített alkalmazások is társítva legyenek az Intune-ban beállított alkalmazásvédelmi szabályzatokhoz, konfigurálnia kell a felhasználói UPN-beállítást, [A felhasználói UPN-beállítás konfigurálása](#configure-user-upn-setting-for-third-party-emm) című cikkben ismertetett lépések szerint.  Ha az alkalmazásokat a felhasználói UPN-beállítással telepítik, akkor az alkalmazásvédelmi szabályzatok érvénybe lépnek az alkalmazásra vonatkozóan, amikor a végfelhasználó a munkahelyi fiókjával jelentkezik be.

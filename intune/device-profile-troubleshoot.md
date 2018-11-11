@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d013ad2aefbfee5eea8f240277b0f84c2c6bf05a
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 05dfd1e756a7c05d29116cd9077182225f3b9fa5
+ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312949"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679304"
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Eszközprofilokkal kapcsolatos gyakori problémák a Microsoft Intune-ban és azok megoldása
 
@@ -130,9 +130,9 @@ Amikor töröl egy profilt, vagy eltávolít egy olyan eszközt a csoportból, a
 ## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>Módosítottam egy eszközkorlátozási profilt, de a módosítások még nem léptek érvénybe
 A Windows Phone-telefonok nem teszik lehetővé, hogy a beállításukat követően a felhasználó alacsonyabb biztonsági értékeket konfiguráljon az MDM vagy az EAS használatával megadott biztonsági szabályzatokhoz. Ilyen eset például, ha beállítja a **jelszó minimális karakterszámát** 8-ra, majd megpróbálja 4-re csökkenteni. Az eszközhöz már a szigorúbb profil van hozzárendelve.
 
-Az eszköz platformjától függően, ha egy kevésbé biztonságos értékre szeretné módosítani a profilt, alaphelyzetbe kell állítania a biztonsági szabályzatokat. Windows rendszerben például pöccintsen jobbról, majd válassza a **Beállítások** > **Vezérlőpult** elemet. Válassza a **Felhasználói fiókok** kisalkalmazást.
+Ha egy kevésbé biztonságos értékre szeretné módosítani a profilt, alaphelyzetbe kell állítania a biztonsági szabályzatokat. Windows 8.1 rendszerben például pöccintsen jobbról, majd válassza a **Beállítások** > **Vezérlőpult** elemet. Válassza a **Felhasználói fiókok** kisalkalmazást. A bal oldali navigációs menü alján található egy **Biztonsági szabályzatok mellőzése** hivatkozás. Válassza ki ezt, majd a **Szabályzatok alaphelyzetbe állítása** lehetőséget.
 
-A bal oldali navigációs menü alján található egy **Biztonsági szabályzatok mellőzése** hivatkozás. Válassza ki ezt, majd a **Szabályzatok alaphelyzetbe állítása** lehetőséget. Előfordulhat, hogy az egyéb, például Android, Windows Phone 8.1 vagy újabb, és iOS rendszerű MDM-eszközöket ki kell vonni, majd újból regisztrálni kell a szolgáltatásba egy kevésbé korlátozó profil hozzárendeléséhez.
+Előfordulhat, hogy az egyéb, például Android, Windows Phone 8.1 vagy újabb, iOS és Windows 10 rendszerű MDM-eszközöket ki kell vonni, majd újból regisztrálni kell a szolgáltatásba egy kevésbé korlátozó profil hozzárendeléséhez.
 
 ## <a name="next-steps"></a>További lépések
 További segítségre van szüksége? Ismerje meg, [hogyan kérhet támogatást az Intune-hoz](get-support.md).

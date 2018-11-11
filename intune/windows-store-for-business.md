@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 11/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d1fe40b1cb5a496b3111b2630718a3dd17486ab
-ms.sourcegitcommit: 63b74a60aafa8d2d6af0594448ae0471fbd79194
+ms.openlocfilehash: c30d20592a95f7894bb040f9e8fe5a2e3ddd0166
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494013"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915750"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>A Vállalati Microsoft Áruházban vásárolt alkalmazások kezelése a Microsoft Intune-nal
 
@@ -89,4 +89,15 @@ A Vállalati Microsoft Áruházból származó alkalmazások hozzárendelésekor
 * Szűkítse le az aktuális hozzárendelés hatókörét annyi felhasználóra, ahány elérhető licenccel rendelkezik.
 * Vásároljon további példányokat az alkalmazásból a Vállalati Microsoft Áruházban.
 
+## <a name="remove-apps"></a>Alkalmazások eltávolítása
 
+A Microsoft Store Vállalatoknak szolgáltatásból szinkronizált alkalmazás eltávolításához be kell jelentkeznie a Microsoft Store Vállalatoknak szolgáltatásba, és vissza kell térítenie az alkalmazás árát.
+
+![Képernyőkép az alkalmazás eltávolításának részleteiről](./media/microsoft-store-for-business-01.png)
+
+> [!NOTE]
+> Ha eltávolítja az alkalmazás láthatóságát a privát áruházban, az Intune attól még továbbra is szinkronizálni fogja. Vissza kell térítenie az alkalmazás árát.
+
+## <a name="next-steps"></a>További lépések
+
+- [Mennyiségi programban vásárolt alkalmazások és könyvek kezelése a Microsoft Intune-nal](vpp-apps.md)

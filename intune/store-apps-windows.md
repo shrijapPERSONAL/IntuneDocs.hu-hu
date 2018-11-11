@@ -15,12 +15,12 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d8784d560d37068fd4559a2e67ecf35044ee498e
-ms.sourcegitcommit: 63b74a60aafa8d2d6af0594448ae0471fbd79194
+ms.openlocfilehash: da10455cd6dc3cfbda23726832c539c206aea18c
+ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494047"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51025151"
 ---
 # <a name="add-microsoft-store-apps-to-microsoft-intune"></a>Microsoft Store-alkalmazások hozzáadása a Microsoft Intune-hoz
 
@@ -54,7 +54,7 @@ A következő módon adhat hozzá Microsoft Store-beli alkalmazást az Intune-ho
 8. Válassza az **OK** gombot.
 9. Válassza a **Hozzáadás** elemet.
 
-A létrehozott alkalmazás megjelenik az alkalmazáslistában, ahol hozzárendelheti a kiválasztott csoportokhoz. 
+A létrehozott alkalmazás megjelenik az alkalmazáslistában, ahol hozzárendelheti a kiválasztott csoportokhoz. A Microsoft Store-beli alkalmazásokat csak a **Regisztrált eszközök esetében elérhető** hozzárendelési típusú csoportokhoz lehet hozzárendelni (a felhasználók a Céges portál alkalmazásból vagy a webhelyről telepítik az alkalmazást).
 
 ## <a name="next-steps"></a>További lépések
 - [Alkalmazások hozzárendelése csoportokhoz](apps-deploy.md)

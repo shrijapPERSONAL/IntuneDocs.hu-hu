@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 01de402a48362f04680c569c40a812b6a4b83cc6
-ms.sourcegitcommit: 38afcff149f9c86e92e5f1eccaa927859c395926
+ms.openlocfilehash: ce31832421ece9008e1526e54ba3e9aa2780c666
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307406"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236288"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>A Microsoft Intune Céges portál alkalmazásának konfigurálása
 
@@ -60,28 +60,48 @@ Ahhoz, hogy munkatársainak megadhassa az Intune-nal kapcsolatos kérdések eset
 | **További információ**| 120 | Az **IT-csoport elérhetősége** lapon jelenik meg. |
 
 
-## <a name="company-branding-customization"></a>Vállalati arculat szerinti testreszabás       
-A Vállalati portál testre szabható a vállalat emblémájának és nevének, valamint a téma színének és a háttérnek a megadásával. A védjegyzési konfiguráció előzetes verziójának teszteszköz nélküli gyors megtekintéséhez nyissa meg a [portal.manage.microsoft.com](https://portal.manage.microsoft.com) webhelyet. Vegye figyelembe, hogy a feltöltött emblémát e-mail-sablonokhoz használja majd a rendszer.      
+## <a name="company-identity-branding-customization"></a>Vállalati identitási arculat testreszabása      
+A Vállalati portál testre szabható a vállalat emblémájának és nevének, valamint a téma színének és a háttérnek a megadásával.     
 
-### <a name="theme-color"></a>Téma színe
+### <a name="theme-color-and-logo-in-the-company-portal"></a>Témaszín és embléma a Céges portálon
 Témaszínt alkalmazhat a Céges portálon. Jelöljön ki egy szabványos színt, vagy adjon meg egy hexadecimális hatjegyű kódot az egyéni színhez.
 
 |Mező neve|További információ|
 |---|---|
-|**Színtípus**| A Vállalati portálra alkalmazni kívánt témaszín kiválasztása. Választhat a színválasztóból, vagy megadhat egy hexadecimális kódot. |
-|**Szín választása** vagy **Hexadecimális színkód**| A Vállalati portálra alkalmazni kívánt témaszín kiválasztása. Választhat a színválasztóból, vagy megadhat egy hexadecimális kódot. Ezek a lehetőségek az Ön által megadott **Színtípus** alapján érhetők el.  |
+|**Jelöljön ki egy szabványos színt, vagy adjon meg egy hexadecimális hatjegyű kódot**| Válassza a **Standard** lehetőséget a szín vizuális kiválasztásához. Válassza az **Egyéni** lehetőséget egy hexadecimális kódon alapuló meghatározott szín kiválasztásához.|
+|**Téma színének kiválasztása**| A Vállalati portálra alkalmazni kívánt témaszín kiválasztása. Választhat a színválasztóból, vagy megadhat egy hexadecimális kódot. |
+|**Megjelenítés**| Válassza ki, hogy mit szeretne megjeleníteni: **Cégembléma és -név**, **Csak cégembléma** vagy **Csak cégnév**. |
+|**A céges embléma feltöltése**|Feltöltheti a Céges portálon megjeleníteni kívánt vállalati emblémát. Vegye figyelembe, hogy a szöveg színének kiválasztása automatikusan történik a legnagyobb kontraszt eléréséhez. Az optimális megjelenés érdekében töltsön fel egy áttetsző hátterű emblémát.<p><ul><li>Maximális képméret: 400px x 400px</li><li>Maximális fájlméret: 750KB</li><li>Fájltípus: PNG, JPG vagy JPEG</li></ul>|
 
-### <a name="company-logo"></a>Céges embléma
-Feltöltheti cége emblémáját, és láthatóvá teheti végig az Intune használata során.
+Miután feltöltötte az emblémát, az előnézeti területen meg fog jelenni az embléma a téma színével. Ha úgy dönt, hogy megjeleníti a cég nevét, az feketén vagy fehéren fog megjelenni a Céges portálon, és a téma színe alapján automatikusan a lehető legnagyobb kontraszttal fog megjelenni. A képernyő előnézeti területén nem fog megjelenni a cég neve. 
+
+### <a name="logo-to-use-on-white-or-light-backgrounds"></a>Fehér vagy világos háttérrel használható embléma
+Válasszon olyan emblémát, amely fehér vagy világos háttéren mutat a legjobban.
 
 |Mező neve|További információ|
 |---|---|
-|**Cég emblémájának megjelenítése**|Ha engedélyezi ezt a beállítást, feltöltheti a Vállalati portálon megjeleníteni kívánt vállalati emblémát. Két emblémát tölthet fel: az egyik akkor jelenik meg, ha a Vállalati portál háttérszíne fehér, a másik pedig akkor, ha a Vállalati portál a témának megfelelő háttérszínnel jelenik meg. |
-|**Embléma feltöltése témaszínnel ellátott háttér elé**| Ez a lehetőség akkor érhető el, ha a céges embléma megjelenítése mellett döntött. Az emblémának legfeljebb 400 x 400 képpont felbontású, legfeljebb 750 KB méretű .png vagy .jpg formátumú fájlnak kell lennie. |
-|**Embléma feltöltése világos háttér elé**| Ez a lehetőség akkor érhető el, ha a céges embléma megjelenítése mellett döntött. Az emblémának legfeljebb 400 x 400 képpont felbontású, legfeljebb 750 KB méretű .png vagy .jpg formátumú fájlnak kell lennie. |
-|**Cégnév feltüntetése az embléma mellett**| Válassza ezt a lehetőséget, ha a megadott cégnevet meg szeretné jeleníteni a feltöltött embléma mellett. |
+|**Embléma feltöltése**| Ez a lehetőség akkor érhető el, ha a céges embléma megjelenítése mellett döntött. Az optimális megjelenés érdekében töltsön fel egy áttetsző hátterű emblémát.<p><ul><li>Maximális képméret: 400px x 400px</li><li>Maximális fájlméret: 750KB</li><li>Fájltípus: PNG, JPG vagy JPEG</li></ul>|
 
-A módosítások mentése után a panel tetején látható **Preview your settings in the Intune Web Portal** (A beállítások előnézetének megtekintése az Intune webportálon) lehetőségre kattintva tekintheti meg előre a konfigurációk megjelenítését.
+### <a name="brand-image-for-company-portal"></a>Márkakép a Céges portálhoz
+
+Márkakép feltöltése, amely tükrözi a vállalati márkát. A márkakép támogatását elérhetővé tesszük a Céges portál alkalmazásokban, de lehet, hogy a kép nem minden platformon látható.
+
+|Mező neve|További információ|
+|---|---|
+|**Márkakép feltöltése**| Ezt a beállítás rendelkezésre áll háttérkép megjelenítéséhez a Céges portál alkalmazás felhasználói profil oldalán.<p><ul><li>A kép ajánlott szélessége: több mint 1125 képpont, de legalább 640 képpont</li><li>Maximális képméret: 1,3 MB</li><li>Fájltípus: PNG, JPG vagy JPEG</li></ul>|
+
+A megfelelő márkakép javíthatja a felhasználó Céges portálba vetett bizalmát a cég márkájának hangsúlyozásával. Íme néhány tipp, amelyet érdemes figyelembe venni a kép Céges portálhoz történő beszerzésekor, kiválasztásakor és optimalizálásakor. 
+
+- Vegye fel a kapcsolatot az értékesítési vagy művészeti osztállyal. Lehet, hogy már rendelkeznek jóváhagyott márkaképekkel. Előfordulhat, hogy a képek igény szerinti optimalizálásában is tudnak segíteni. 
+
+- Fontolja meg a fekvő és az álló tájolású kompozíciókat is. A képnek megfelelő háttérrel kell rendelkeznie, amely körülveszi a fókuszpontot. A kép levágása az eszköz méretétől és tájolásától függően eltérő lehet. 
+
+- Kerülje az általános, készletben elérhető képek használatát. A képnek tükröznie kell a vállalati márkát, és ismerősnek kell tűnnie a felhasználóknak. Ha még nem rendelkezik ilyen képpel, jobb ha nem használ semmilyet, mint sem hogy olyan általános képet adjon meg, ami semmit nem jelent a felhasználóknak. 
+
+- Szükségtelen metaadatok eltávolítása. A képfájl tartalmazhat metaadatokat, például kameraprofilt, földrajzi helyet, címet, feliratot stb. Használjon képoptimalizáló eszközt ezeknek az adatoknak az eltávolításához a minőség fájlméretkorlátok betartásával történő megőrzéséhez. 
+
+A módosítások mentése után az Intune-webportálon a panel tetején található **Beállítások előnézetének megtekintése** lehetőséget választva megtekintheti, hogyan fog kinézni a konfigurációja. Vegye figyelembe, hogy a márkakép előnézetét csak egy iOS-eszközön lehet megtekinteni, az Intune webes portálján nem. 
+
 
 ## <a name="windows-company-portal-keyboard-shortcuts"></a>A Windows Céges portálon használható billentyűparancsok
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 11/01/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 37445cb2536e02937cf3002dc1cb56ab4b78f12f
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: 2f150db2e1d5fbc8e08bb7f7fcee50f0eda23ca7
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581393"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915682"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Rövid útmutató: A Microsoft Intune ingyenes kipróbálása 
 
@@ -70,20 +70,27 @@ Az Intune kipróbálása 30 napig ingyenes. Ha már rendelkezik munkahelyi vagy 
 
 Amikor próbaverziót regisztrál, e-mailben elküldjük a fiókadatait és a regisztráció során megadott e-mail címet. Az e-mail megerősíti, hogy a próbaverzió aktív.
 
+> [!TIP]
+> Az Azure Portalon történő munkavégzés közben jobb eredményeket érhet el, ha a böngésző normál módban van és nem privát módban.
+
 ## <a name="set-the-mdm-authority-to-intune"></a>Az Intune beállítása MDM-szolgáltatóként
 
-A mobileszköz-felügyeleti (MDM-) szolgáltató beállítása szabja meg, hogy miként kezelheti mobileszközeit. Ahhoz, hogy a felhasználók felügyeletre tudják regisztrálni eszközeiket, a rendszergazdának be kell állítania egy MDM-szolgáltatót.
+Miután bejelentkezett az Azure Portalra, és kiválasztotta az Intune-t, megjelenhet egy narancs színű sáv, amely azt jelzi, hogy még nem állította be az MDM-szolgáltatót. A mobileszköz-felügyeleti (MDM-) szolgáltató beállítása szabja meg, hogy miként kezelheti mobileszközeit. Az MDM-szolgáltatót még azelőtt kell beállítani, hogy a felhasználók eszközöket regisztrálhatnának a kezeléshez.
 
 Az Intune az alábbi lépésekkel állítható be MDM-szolgáltatóként.
 
 1. Nyisson meg egy böngészőablakot, és írja be a címsorba a következőt: **https://portal.azure.com**. 
 2. Válassza a **Minden szolgáltatás** > **Microsoft Intune** lehetőséget.
-3. A **Mobileszköz-kezelő szolgáltató** beállítás megnyitásához válassza a narancssárga szalagcímet. 
+3. Válassza azt a sávot, amely jelzi, hogy nem engedélyezte az eszközkezelést, vagy ha még nem látható a sáv, válassza az **Eszközök beléptetése** lehetőséget. Ha még nem engedélyezte az eszközkezelést meg fog jelenni az **MDM-szolgáltató kiválasztása** panel.
 
     > [!NOTE]
     > A narancssárga szalagcím csak akkor jelenik meg, ha még nem állított be az MDM-szolgáltatót.
 
-4. A **Mobileszköz-kezelő szolgáltató** szakaszban állítsa be MDM-szolgáltatóként az **Intune MDM-szolgáltatót**.
+    ![Az MDM-szolgáltató kiválasztása panel képe](./media/choose-mdm-authority.png) 
+
+4. Az **MDM-szolgáltató kiválasztása** szakaszban állítsa be MDM-szolgáltatóként az **Intune MDM-szolgáltatót**.
+
+Az MDM-szolgáltatóról további információért lásd [A mobileszköz-felügyeleti szolgáltató beállítása](mdm-authority-set.md) szakaszt.
 
 ## <a name="configure-your-custom-domain-name-optional"></a>Egyéni tartománynév konfigurálása (nem kötelező)
 
@@ -120,4 +127,4 @@ Két portált használhat:
 Ebben a rövid útmutatóban ingyenes előfizetést hozott létre az Intune tesztkörnyezetben történő kipróbálásához, és egyedi tartománynév konfigurálására is lehetősége volt. Tovább ismerkedhet a Microsoft Intune-nal, ha továbblép a következő, felhasználók hozzáadásával és licencek hozzárendelésével foglalkozó gyors útmutatóra.
 
 > [!div class="nextstepaction"]
-> [Felhasználó létrehozása](get-started-users.md)
+> [Felhasználó létrehozása](quickstart-create-user.md)

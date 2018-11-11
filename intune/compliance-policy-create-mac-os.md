@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/27/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,16 +13,14 @@ ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6bbb09944db602b4b5a70c89e8089b1692c45223
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: a0d9d0ac3c0cd8804ffc401cd3041d5b9a17e64f
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321441"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236407"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>macOS-es eszközök megfelelőségi szabályzatainak hozzáadása az Intune-nal
-
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Az Intune macOS-eszközmegfelelőségi szabályzataival megszabhatja a macOS-eszközök megfelelőségéhez kötelezően szükséges szabályokat és beállításokat. Az eszközmegfelelőségi szabályzatokat a feltételes hozzáféréssel használva engedélyezheti vagy letilthatja a hozzáférést a vállalati erőforrásokhoz. Emellett lekérhet eszközjelentéseket, és különböző műveleteket hajthat végre meg nem felelés esetén. Az Intune Azure Portalon minden platformhoz létrehozhat megfelelőségi szabályzatokat. A megfelelőségi szabályzatokról és azok előfeltételeiről az [Eszközmegfelelőség – első lépések](device-compliance-get-started.md) című cikk nyújt bővebb tájékoztatást.
 
@@ -90,6 +88,17 @@ A tűzfal a jogosulatlan hálózati hozzáférés ellen védi az eszközöket. A
 - **Tűzfal**: **Engedélyezve** hozzájárul az eszköz jogosulatlan hozzáférés elleni védelméhez. A funkció engedélyezése után kezelni tudja a bejövő internetes kapcsolatokat, és használhatja a rejtett üzemmódot. Ha **Nincs konfigurálva** (alapértelmezés), akkor a tűzfal kikapcsolva marad, a hálózati forgalom pedig engedélyezve lesz (nem lesz letiltva).
 - **Bejövő kapcsolatok**: **Letilthatja** az összes bejövő hálózati kapcsolatot az olyan alapvető internetes szolgáltatások kivételével, mint a DHCP, a Bonjour vagy az IPSec. Ez a beállítás letilt minden megosztási szolgáltatást, többek között a képernyőmegosztást, a távelérést, az iTunes-zenemegosztást is. Ha **Nincs konfigurálva** (alapértelmezés), akkor minden bejövő kapcsolat és megosztási szolgáltatás engedélyezve van. 
 - **Rejtett üzemmód**: a rejtett üzemmód **engedélyezésével** megakadályozhatja, hogy a számítógép válaszoljon a bejövő kérelmekre, amelyeket rosszindulatú felhasználók is kezdeményezhetnek. Engedélyezése esetén az eszköz továbbra is válaszol az engedélyezett alkalmazásoktól érkező kérelmekre. Ha **Nincs konfigurálva** (alapértelmezés), akkor a rejtett üzemmód ki van kapcsolva.
+
+### <a name="gatekeeper"></a>Forgalomirányító
+
+**Alkalmazások ezen helyekről való letöltésének engedélyezése**: Engedélyezi a különböző helyekről származó támogatott alkalmazások telepítését az eszközre. Az Ön helybeállításai:
+
+- **Nincs konfigurálva**: alapértelmezett. A forgalomirányító beállítása nem befolyásolja a megfelelőséget vagy a meg nem felelést. 
+- **Mac App Store**: Alkalmazások telepítése csak a Mac App Store-ból. Nem lehet harmadik felektől és azonosított fejlesztőktől származó alkalmazásokat telepíteni. Ha egy felhasználó azt választja, hogy a forgalomirányító a Mac App Store-on kívüli alkalmazásokat telepítsen, akkor az eszköz nem megfelelőnek fog számítani.
+- **Mac App Store- és azonosított fejlesztők**: A Mac App Store és az azonosított fejlesztők alkalmazásainak telepítése. A macOS ellenőrzi a fejlesztők identitását, és néhány egyéb ellenőrzést is végez az alkalmazás integritásának igazolásához. Ha egy felhasználó azt választja, hogy a forgalomirányító a megadott beállításokon kívüli alkalmazásokat telepítsen, akkor az eszköz nem megfelelőnek fog számítani.
+- **Bárhol**: Bárhonnan és bármely fejlesztő által telepíthetőek alkalmazások. Ez a beállítás a legkevésbé biztonságos.
+
+Az Apple dokumentációjában elérhető további részletekért olvassa el a [forgalomirányítóról szóló cikket a macOS weblapján](https://support.apple.com/HT202491).
 
 ## <a name="assign-user-groups"></a>Felhasználói csoportok hozzárendelése
 
