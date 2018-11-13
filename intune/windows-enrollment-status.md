@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 5/17/2017
+ms.date: 10/5/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,26 +15,52 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c6604c35cebdad4341f27a51db1a4c735f9a9818
-ms.sourcegitcommit: 6bd5867c41fb5288fde114dbfcc127dd206f7148
+ms.openlocfilehash: 08d76d6b76ee7838633435ae095c171e0a3cdf8e
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34235620"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236492"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Beléptetési állapotlap beállítása
  
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
  
-A beléptetési állapotlap telepítési információkat jelenít meg a végfelhasználók eszközén az eszköz beállítása során. Előfordulhat, hogy egyes alkalmazások, profilok és tanúsítványok nincsenek még teljesen telepítve a felhasználó regisztrálásakor. Az állapotlap segít a felhasználóknak megérteni az eszközük állapotát a beléptetés alatt és után. Bekapcsolhatja az állapotlapot az összes felhasználónak, illetve meggátolhatja a felhasználókat az eszköz használatában, amíg be nem fejeződik az összes vonatkozó alkalmazás és profil telepítése.
+A regisztrációs állapotlap telepítési információkat jelenít meg az eszközön annak beállítása során. Előfordulhat, hogy egyes alkalmazások, profilok és tanúsítványok még nincsenek telepítve, mire a felhasználó végez az alapértelmezett regisztrációval, és bejelentkezik az eszközre. A regisztrációs állapotlap segít a felhasználóknak megérteni az eszközük állapotát az eszköz telepítése folyamán. Létrehozhat több regisztrációs állapotlapot is, és különböző csoportokhoz rendelheti őket. A profilok a következőkre állíthatók be:
+- A telepítési folyamat kijelzése.
+- A használat tiltása a telepítés befejezéséig.
+- Megadható, hogy mit tehet meg a felhasználó, ha az eszköz telepítése sikertelen.
+
+Az egyes profilok prioritását is megadhatja, egyazon felhasználó vagy eszköz ütköző profil-hozzárendeléseinek feloldására.
+
  
-A beléptetési állapotlap összes felhasználónak való bekapcsolásához kövesse az alábbi lépéseket.
+## <a name="turn-on-default-enrollment-status-page-for-all-users"></a>Az alapértelmezett regisztrációs állapotlap bekapcsolása minden felhasználónak
+
+A regisztrációs állapotlap bekapcsolásához kövesse az alábbi lépéseket.
  
-1.  Az [Intune](https://aka.ms/intuneportal) portálon válassza az **Eszközök beléptetése** > **Windows-alapú regisztráció** > **Beléptetés állapota oldal (előzetes verzió)** lehetőséget.
-2.  A **Beléptetés állapota oldal** panelen válassza az **Alapértelmezett** > **Beállítások** lehetőséget.
-3.  A **Show app and profile installation progress** (Alkalmazások és profilok telepítési állapotának megjelenítése) beállításnál válassza a **Yes** (Igen) lehetőséget.
-4.  Adja meg a többi kívánt beállítást, majd válassza a **Mentés** gombot.
- 
+1. Az [Intune](https://aka.ms/intuneportal) portálon válassza az **Eszközök beléptetése** > **Windows-alapú regisztráció** > **Beléptetés állapota oldal (előzetes verzió)** lehetőséget.
+2. A **Beléptetés állapota oldal** panelen válassza az **Alapértelmezett** > **Beállítások** lehetőséget.
+3. A **Show app and profile installation progress** (Alkalmazások és profilok telepítési állapotának megjelenítése) beállításnál válassza a **Yes** (Igen) lehetőséget.
+4. Adja meg a többi kívánt beállítást, majd válassza a **Mentés** gombot.
+
+## <a name="create-enrollment-status-page-profile-and-assign-to-a-group"></a>Regisztrációs állapotlapi profil létrehozása és csoporthoz rendelése
+
+1. Az [Intune-ban](https://aka.ms/intuneportal) válassza az **Eszközök regisztrációja** > **Windows-alapú regisztráció** > **Regisztráció állapota oldal (előzetes verzió)** > **Profil létrehozása** lehetőséget.
+2. Adjon meg egy **nevet** és egy **leírást**.
+3. Válassza a **Létrehozás** lehetőséget.
+4. A **Regisztráció állapota oldal** listájában válassza ki az új profilt.
+5. Válassza a **Hozzárendelések** > **Csoportok kiválasztása** területet, majd válassza ki a profillal ellátni kívánt csoportokat, végül válassza a **Kiválasztás** > **Mentés** lehetőséget.
+6. Válassza a **Beállítások** területet, adja meg az a profilra alkalmazni kívánt beállításokat, majd válassza a **Mentés** lehetőséget.
+
+## <a name="set-the-enrollment-status-page-priority"></a>Regisztrációs állapotlap prioritásának beállítása
+
+Egy eszköz vagy felhasználó több csoportnak is tagja lehet, így több regisztrációs állapotlapi profillal is rendelkezhet. Az ilyen ütközések az egyes profilok prioritásának megadásával kezelhetők. Ha valaki több regisztrációs állapotlapi profillal is rendelkezik, csak a legmagasabb prioritású profil lesz alkalmazva.
+
+1. Az [Intune](https://aka.ms/intuneportal) portálon válassza az **Eszközök beléptetése** > **Windows-alapú regisztráció** > **Beléptetés állapota oldal (előzetes verzió)** lehetőséget.
+2. Vigye a kurzort a listában a profilra.
+3. A függőleges három ponttal húzza a profilt a kívánt helyre a listában.
+
+
 ## <a name="enrollment-status-page-tracking-information"></a>A beléptetési állapotlapon megjelenített állapotadatok
 
 Az állapotlap megjeleníti az eszköz-előkészítés, az eszközbeállítás és a fiókbeállítás folyamatának adatait.
@@ -53,8 +79,9 @@ Az eszköz beállítása során a beléptetési állapotlap az alábbi „Minden
     - Gépenkénti üzletági (LoB) MSI-alkalmazások.
     - LoB-áruházbeli alkalmazások, melyek telepítési kontextusa „Device”.
     - Offline áruházbeli és LoB-áruházbeli alkalmazások, melyek telepítési kontextusa „Device”.
-- A csatlakozási profilok (VPN és Wi-Fi) jelenleg nem jelennek meg, ezért ezeknél „0 / 0” állapot látható.
-- A tanúsítványok jelenleg nem jelennek meg, ezért ezeknél „0 / 0” állapot látható.
+- Csatlakozási profilok
+    - A **Minden eszközhöz** vagy olyan eszközcsoporthoz hozzárendelt VPN- vagy Wi-Fi-profilok, amelyeknek az éppen regisztrált eszköz a tagja, de csak Autopilot-eszközök esetén
+- A **Minden eszközhöz**, vagy olyan eszközcsoporthoz hozzárendelt tanúsítványprofilok, amelyeknek az éppen regisztrált eszköz a tagja, de csak Autopilot-eszközök esetén
 
 ### <a name="account-setup"></a>Fiók beállítása
 A fiók beállítása során a beléptetési állapotlap az alábbi elemeket jeleníti meg:
@@ -64,9 +91,10 @@ A fiók beállítása során a beléptetési állapotlap az alábbi elemeket jel
 - Alkalmazások
     - Felhasználónkénti LoB MSI-alkalmazások, melyek társítása „Minden eszköz”, „Minden felhasználó” vagy egy olyan felhasználói csoport, amelynek az eszközt beléptető felhasználó a tagja.
     - Gépenkénti LoB MSI-alkalmazások, melyek társítása „Minden felhasználó” vagy egy olyan felhasználói csoport, amelynek az eszközt beléptető felhasználó a tagja.
-    - LoB-áruházbeli alkalmazások, melyek társítása „Minden eszköz”, „Minden felhasználó” vagy egy olyan felhasználói csoport, amelynek az eszközt beléptető felhasználó a tagja, a telepítési kontextus pedig „User”.
-    - Online áruházbeli alkalmazások, melyek társítása „Minden eszköz”, „Minden felhasználó” vagy egy olyan felhasználói csoport, amelynek az eszközt beléptető felhasználó a tagja, a telepítési kontextus pedig „User”.
-    - Offline áruházbeli alkalmazások, melyek társítása „Minden eszköz”, „Minden felhasználó” vagy egy olyan felhasználói csoport, amelynek az eszközt beléptető felhasználó a tagja, a telepítési kontextus pedig „User”.
+    - Üzletági áruházbeli alkalmazások, online áruházbeli alkalmazások és offline áruházbeli alkalmazások, amelyek a következők egyikéhez vannak hozzárendelve:
+        - Minden eszköz
+        - Minden felhasználó
+        - egy olyan felhasználói csoport, amelynek az eszközt regisztráló felhasználó a tagja, a telepítési kontextus pedig „User”.
 - Csatlakozási profilok
     - VPN- vagy Wi-Fi-profilok, melyek társítása „Minden felhasználó” vagy egy olyan felhasználói csoport, amelynek az eszközt beléptető felhasználó a tagja.
 - Tanúsítványok

@@ -1,31 +1,31 @@
 ---
-title: Windows Holographic rendszerű eszközök felügyelete az Azure-beli Microsoft Intune-nal | Microsoft Docs
-description: Windows Holographic for Business rendszerű eszközökön sokféle feladatot végrehajthat a Microsoft Intune használatával, egyebek között konfigurálhatja a Céges portált, létrehozhat megfelelőségi szabályzatokat, testre szabhat OMA-URI-beállításokat, telepíthet alkalmazásokat, csoportokba sorolhat eszközöket, profilokat hozhat létre, eszközöket korlátozhat, szoftverfrissítéseket engedélyezhet, konfigurálhatja a VPN- és Wi-Fi-beállításokat és használhatja a Hello for Businesst.
+title: Windows Holographic rendszerű eszközök használata a Microsoft Intune-nal – Azure | Microsoft Docs
+description: Windows Holographic for Business és HoloLens rendszerű eszközökön sokféle feladatot felügyelhet és végrehajthat a Microsoft Intune használatával, egyebek között konfigurálhatja a Céges portált, létrehozhat megfelelőségi szabályzatokat, testre szabhat OMA-URI-beállításokat, üzembe helyezhet alkalmazásokat, csoportokba sorolhat eszközöket, profilokat hozhat létre, eszközöket korlátozhat, szoftverfrissítéseket engedélyezhet, beállíthat használati feltételeket, konfigurálhatja a VPN- és Wi-Fi-beállításokat és használhatja a Vállalati Windows Hellót.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/11/2018
+ms.date: 10/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 825ceb1eee8f6fdd38f8a203324ce3cad7291918
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 03d52c53b6e3152a5a262ca8bd6d158d5980b2c8
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43318003"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236390"
 ---
-# <a name="customize-devices-running-windows-holographic-with-intune"></a>Windows Holographic rendszerű eszközök testre szabása az Intune-nal
+# <a name="manage-and-use-windows-holographic-and-hololens-devices-with-intune"></a>Windows Holographic és HoloLens rendszerű eszközök felügyelete és használata Intune-nal
 
-A Microsoft Intune-nal felügyelhetőek a Windows Holographic for Business rendszert futtató eszközök is, például a [Microsoft HoloLens](https://docs.microsoft.com/en-us/hololens/).
+A Microsoft Intune számos olyan szolgáltatást biztosít, amelyek segítenek a Windows Holographic for Business rendszert futtató eszközök, például a [Microsoft HoloLens](https://docs.microsoft.com/hololens/) felügyeletében. Az Intune használatával ellenőrizhető, hogy az eszközök megfelelnek-e a szervezeti szabályoknak, és az eszközök testreszabása is elvégezhető VPN- vagy Wi-Fi-profilok hozzáadásával. Egy másik fontos funkció az eszközök kioszkként való használata és egy bizonyos alkalmazás vagy alkalmazáskészlet futtatása.
 
-Windows Holographic rendszerű eszközök Microsoft Intune-nal való felügyeletéhez létre kell hoznia egy kiadásfrissítési profilt. Ez a frissítési profil frissíti az eszközöket a Windows Holographic rendszerről a Windows Holographic for Business rendszerre. A Microsoft HoloLens esetében a frissítéshez szükséges licenc beszerzéséhez megvásárolhatja a Commercial Suite-ot is. További információt [A Windows Holographic operációs rendszert futtató eszközök frissítése a Windows Holographic for Business verzióra](holographic-upgrade.md) című témakörben talál.
+A cikkben ismertetett feladatok segítséget nyújtanak a Windows Holographic for Business rendszert futtató eszközök felügyeletében, testreszabásában és védelmében, beleértve a szoftverfrissítések telepítését és a Vállalati Windows Hello használatát.
 
-A Windows Holographic for Business rendszerű eszközök felügyeletében és testre szabásában segítenek az e cikkben leírt műveletek. Kezelheti többek között például a szoftverfrissítéseket és konfigurálhatja a VPN-beállításokat.
+A Windows Holographic rendszerű eszközök Intune-nal való használatához hozzon létre egy kiadásfrissítési profilt. Ez a frissítési profil frissíti az eszközöket a Windows Holographic rendszerről a Windows Holographic for Business rendszerre. A Microsoft HoloLens esetében a frissítéshez szükséges licenc beszerzéséhez megvásárolhatja a Commercial Suite-ot is. További információt [A Windows Holographic operációs rendszert futtató eszközök frissítése a Windows Holographic for Business verzióra](holographic-upgrade.md) című témakörben talál.
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
 
@@ -68,12 +68,16 @@ Az Intune használatával alkalmazásokat adhat hozzá a Windows Holographic for
 
 A Microsoft Intune-nal univerzális Windows-alkalmazások telepíthetők a Windows Holographic for Business rendszert futtató Microsoft HoloLens-eszközökre. Az alkalmazáscsomagok közvetlenül feltölthetők az Intune Azure Portalon, vagy üzembe helyezhetők a Microsoft Store Vállalatoknak áruházból. A kapcsolódó témakörökről az alábbi cikkek nyújtanak bővebb információt:
 - Üzletági alkalmazások telepítéséről az Intune Azure Portalon: [Windowsos üzletági alkalmazások hozzáadása a Microsoft Intune-hoz](lob-apps-windows.md).
+
+    > [!NOTE]
+    > Az Intune legfeljebb 8 GB csomagméretet engedélyez. Ez a csomagméret csak az Intune-ba feltöltött üzletági alkalmazásokhoz érhető el.
+
 - Alkalmazások telepítéséről a Microsoft Store Vállalatoknak áruházból: [A Microsoft Store Vállalatoknak áruházban vásárolt alkalmazások kezelése a Microsoft Intune-nal](windows-store-for-business.md). 
 - Alkalmazások kezeléséről a Microsoft Intune-nal: [Alkalmazáskezelés a Microsoft Intune-ban](app-management.md).
 - A Microsoft HoloLensre készülő alkalmazások fejlesztéséről: [Vegyes valóság alkalmazások a Microsoft HoloLenshez](https://www.microsoft.com/hololens/apps). 
 
 > [!NOTE]
-> A Windows 10 Holographic for Business 1607 rendszerű HoloLens-eszközök nem támogatják a Microsoft Store Vállalatoknak áruházból származó, online licencelt alkalmazásokat. További információ: [Alkalmazások telepítése a HoloLens-re](https://docs.microsoft.com/en-us/hololens/hololens-install-apps).
+> A Windows 10 Holographic for Business 1607 rendszerű HoloLens-eszközök nem támogatják a Microsoft Store Vállalatoknak áruházból származó, online licencelt alkalmazásokat. További információ: [Alkalmazások telepítése a HoloLens-re](https://docs.microsoft.com/hololens/hololens-install-apps).
 
 ## <a name="device-actions"></a>Eszközműveletek
 Az Intune rendelkezik néhány olyan beépített funkcióval, amelyek használatával a rendszergazdák különböző műveleteket végezhetnek lokálisan az eszközön, vagy távoli eléréssel az Intune-ban az Azure Portalról. A saját tulajdonban lévő, Intune-ban regisztrált eszközeikre a felhasználók is kiadhatnak egy távoli parancsot az Intune céges portálon keresztül.

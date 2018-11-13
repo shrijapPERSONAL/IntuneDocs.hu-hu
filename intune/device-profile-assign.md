@@ -14,12 +14,12 @@ ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fa1a1b1085d196411a03a6228eefa808399397ea
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 439c89f7b0158111f63d2d8327291c2b5a5c1e38
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31024804"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298071"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Felhasználói és eszközprofilok hozzárendelése a Microsoft Intune-ban
 
@@ -48,9 +48,6 @@ Tegyük fel például, hogy egy eszközprofilt a szervezet valamennyi eszközéh
 A kizárás csak a csoportok közvetlen tagjaira vonatkozik és nem érinti a felhasználóval társított eszközöket. A felhasználóval nem rendelkező eszközök azonban nem kapják meg a szabályzatot. Ez amiatt van, hogy az ilyen eszközöknek nincs kapcsolata a **Minden felhasználó** csoporttal.
 
 A **Minden eszköz** csoport belefoglalása és a **Minden felhasználó** csoport kizárása esetén minden eszköz megkapja a szabályzatot. A cél ezúttal azoknak az eszközöknek a kizárása, amelyekhez a szabályzat szerint felhasználó van társítva. Ez azonban zárja ki az eszközöket, hiszen a kizárás funkció csak a közvetlen csoporttagokat hasonlítja össze.
-
->[!TIP]
->A kizárás nem használható megfelelőségi szabályzatok és alkalmazás-hozzárendelés esetén. Egy hozzárendelésből az **Elérhető** és a **Nem alkalmazható** hozzárendelési szándék használatával zárhat ki tagokat. Ha például egy alkalmazást a **Minden vállalati felhasználó** csoporthoz rendel az **Elérhető** szándékkal, a **Felsővezetők** csoporthoz pedig a **Nem alkalmazható** szándékkal, akkor az alkalmazás minden felhasználóhoz hozzá lesz rendelve, *kivéve* a **Felsővezetők** csoport tagjait. Ha az alkalmazást a **Kötelező** szándékkal rendel **Minden vállalati felhasználó** csoporthoz, akkor a **Felsővezetők** csoport tagjai nem lesznek kizárva.
 
 ## <a name="next-steps"></a>További lépések
 Az eszközprofil-hozzárendelések figyeléséhez az [Eszközprofilok figyelése](device-profile-monitor.md) témakör nyújt segítséget.

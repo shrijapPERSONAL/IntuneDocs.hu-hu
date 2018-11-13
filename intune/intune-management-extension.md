@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/30/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eb7d8b35cb88223a3fbfa45e0ad8e2f8d2852a96
-ms.sourcegitcommit: ab801d715aa26f6d97f1a0c42a07e55146a14e6f
+ms.openlocfilehash: ad8e874dda47b7c6deeb614b0f893f7c922241ce
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35289023"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236339"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>PowerShell-parancsfájlok kezelése az Intune-ban Windows 10-es eszközök esetén
 Az Intune felügyeleti bővítményével Windows 10-es eszközökön futtatandó PowerShell-parancsfájlokat tölthet fel az Intune-ba. A felügyeleti bővítmény kiegészíti a Windows 10 mobileszköz-kezelési funkcióit, és könnyebbé teszi a modern felügyeletre váltást.
@@ -33,7 +33,7 @@ Az Intune felügyeleti bővítmény kiegészíti a Windows 10 MDM beépített fu
 
 ## <a name="prerequisites"></a>Előfeltételek
 Az Intune felügyeleti bővítmény előfeltételei a következők:
-- Az eszközöknek csatlakozniuk kell az Azure AD-hoz. Ez a Hybrid AD-hoz csatlakoztatott eszközökre nem vonatkozik.
+- Az eszközöknek csatlakozniuk kell az Azure AD-hoz. Az Intune felügyeleti bővítménye támogatja az Azure Active Directoryhoz és a hibrid tartományhoz csatlakoztatott, valamint a közösen felügyelt regisztrált Windows-eszközöket.
 - Az eszközöknek a Windows 10 1607-es vagy újabb verziójával kell rendelkezniük.
 - Az automatikus MDM-regisztrációt [engedélyeznie kell az Azure AD-ban](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment), és az eszközöket automatikusan regisztrálnia kell az Intune-ban.
 
@@ -56,7 +56,8 @@ Az Intune felügyeleti bővítmény előfeltételei a következők:
 
 > [!NOTE]
 > - A PowerShell-szkriptek nem alkalmazhatók számítógép-csoportokra.
-> - A PowerShell-szkriptek eszközökön csak akkor lesznek végrehajtva, ha egy Azure Active Directory-felhasználó bejelentkezett az adott eszközön.
+> - A végfelhasználóknak nem kell bejelentkezniük az eszközön a PowerShell-parancsfájlok végrehajtásához. 
+> - Az Intune-beli PowerShell-parancsfájlok beállíthatók úgy, hogy AAD-eszközbiztonsági csoportokat célozzanak meg.
 
 Az Intune felügyeleti bővítmény óránként szinkronizál az Intune-nal. Miután hozzárendelte a szabályzatot az Azure AD-csoportokhoz, elindul a PowerShell-parancsfájl, és elkészül a futtatási eredmények jelentése. 
  

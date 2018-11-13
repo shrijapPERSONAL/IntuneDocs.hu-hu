@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/29/2018
+ms.date: 10/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6cc33bc6e03d2e0370c9e2c2dd9d3462296710e6
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: bacaf8ff4119d4cd40483b65ea45e283d98a51f1
+ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329684"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51025202"
 ---
-# <a name="the-early-edition-for-microsoft-intune---august-2018"></a>A Microsoft Intune előzetes kiadása – 2018. augusztus
+# <a name="the-early-edition-for-microsoft-intune---november-2018"></a>A Microsoft Intune előzetes kiadása – 2018. november
 
 > [!Note]
 > Titoktartási szerződés hatálya alá tartozó tájékoztatás: A következő változtatások vannak fejlesztés alatt az Intune-hoz. Az itt, nagyon szűk körben megosztott információkra titoktartási szerződés vonatkozik. Az információk egy részletét se tegye közzé közösségi médiában vagy nyilvános webhelyeken, például Twitteren, UserVoice-on, Redditen vagy hasonlón. 
@@ -39,121 +39,105 @@ A lap tartalmát rendszeresen frissítjük. További hírekért látogasson viss
  
 ## <a name="intune-in-the-azure-portal"></a>Intune az Azure Portalon
 
+<!-- 1811 start -->
+
+### <a name="uninstalling-apps-on-corporate-owned-supervised-ios-devices----1281677---"></a>Alkalmazások eltávolítása a céges, felügyelt iOS-eszközökről <!-- 1281677 -->
+Ön bármilyen alkalmazást el tud majd távolítani céges, felügyelt iOS-eszközökről. Ha az **Eltávolítás** hozzárendelési típussal megcélozza a felhasználó- vagy eszközcsoportokat, akkor bármilyen alkalmazást el tud távolítani. Személyes és nem felügyelt iOS-eszközök esetében a továbbiakban csak az Intune használatával telepített alkalmazásokat tudja majd eltávolítani.
+
+### <a name="support-for-ios-12-oauth-in-ios-email-profiles---2155106---"></a>Az iOS 12 OAuth támogatása az iOS-es e-mail-profilokban <!--2155106 -->
+Az Intune iOS-es e-mail-profiljai támogatják az iOS 12 OAuth használatát. A funkció megtekintéséhez válassza az **Intune** > **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget. A profil létrehozása panelen be- és kikapcsolhatja az **OAuth** használatát. Ha be van kapcsolva ez a beállítás, két dolog történik:
+1. A már célzott eszközök új profilt kapnak.
+2. A rendszer újra kéri a végfelhasználók hitelesítő adatainak megadását.
+
+### <a name="track-installation-of-office-proplus---2620217--"></a>Az Office ProPlus telepítésének nyomon követése <!--2620217-->
+A [Beléptetési állapotlapon](windows-enrollment-status.md) nyomon tudja követni az [Office ProPlus](apps-add-office365.md) telepítési folyamatát.
+
+### <a name="macos-device-enrollment-program-support-for-apple-school-manager-accounts---3006133--"></a>A macOS-készülékregisztrációs program által biztosított támogatás az Apple School Manager-fiókokhoz <!--3006133-->
+Az Intune az Apple School Manager-fiókok esetében támogatást biztosít az készülékregisztrációs program macOS rendszerű eszközökön való használatához.
+
+### <a name="temporarily-pause-kiosk-mode-on-android-devices-to-make-changes----3041935---"></a>Kioszkmód ideiglenesen szüneteltetése Android-eszközökön a módosítások végrehajtásához <!-- 3041935 -->
+Ha többalkalmazásos kioszkmódban használ Android-eszközöket, előfordulhat, hogy a rendszergazdáknak módosításokat kell végrehajtaniuk az eszközön. Új többalkalmazásos kioszkbeállítás, amely segítségével az informatikai rendszergazdák PIN-kód használatával ideiglenesen szüneteltethetik a kioszkmódot, és hozzáférést kaphatnak a teljes eszközhöz.
+A jelenlegi kioszkbeállításokat az [Androidos kioszkbeállítások](android-kiosk-settings.md) között ellenőrizheti.
+
+### <a name="set-custom-background-in-managed-home-screen-app-----3041945---"></a>Egyéni háttér beállítása a Managed Home Screen alkalmazásban  <!-- 3041945 -->
+Új beállítás hozzáadásával lehetővé tesszük a Managed Home Screen alkalmazás háttérmegjelenítésének személyre szabását az Android Enterprise rendszerű, többalkalmazásos, kioszkmódú eszközökön.  **Egyéni URL-háttér** konfigurálásához nyissa meg az Azure portalon az Intune > Eszközkonfiguráció elemet. Jelöljön ki egy jelenlegi eszközkonfigurációs profilt, vagy hozzon létre újat a kioszkbeállításainak szerkesztéséhez.
+
+### <a name="enable-virtual-home-button-on-android-enterprise-kiosk-devices-----3042021---"></a>Virtuális kezdőképernyő gomb bekapcsolása az Android Enterprise rendszerű kioszkeszközökön  <!-- 3042021 -->
+Az új beállítás segítségével a felhasználók az eszközön lévő többfunkciós gombra való koppintással válthatnak a többalkalmazásos kioszkeszközökön található Managed Home Screen alkalmazás és az egyéb hozzárendelt alkalmazások között. Ez a beállítás igen hasznosnak bizonyul olyan esetekben, amikor a felhasználó kioszkalkalmazása nem reagál megfelelően a „vissza” gomb megnyomására. Ezt a beállítást Ön konfigurálni tudja majd az egyetlen célra használható céges Android-eszközökön. A **Virtuális kezdőképernyő gomb** be- és kikapcsolásához válassza az Azure portalon az Intune > Eszközök konfigurálása elemet. Jelöljön ki egy jelenlegi eszközkonfigurációs profilt, vagy hozzon létre újat kioszkbeállításainak szerkesztéséhez.
+
+### <a name="app-protection-policy-assignment-save-and-apply----3104570---"></a>Alkalmazásvédelmi szabályzat-hozzárendelés mentése és alkalmazása <!-- 3104570 -->
+Hatékonyabban felügyelheti majd az alkalmazásvédelmi szabályzat-hozzárendeléseket. Ha menti és alkalmazza az alkalmazásvédelmi szabályzat-hozzárendeléseket, kizárólag a kijelölt felhasználókra vonatkozik közvetlenül az adott alkalmazásvédelmi hozzárendelés-szabályzat.
+
+### <a name="new-microsoft-edge-browser-settings-for-windows-10-and-later----3174639---"></a>A Microsoft Edge böngészőhöz tartozó új beállítások Windows 10 és újabb rendszerek esetében <!-- 3174639 -->
+Új beállítási lehetőséget vezetünk be, amellyel hatékonyan szabályozhatja és kezelheti a Microsoft Edge böngészőt az eszközein. A jelenlegi beállítások felsorolását az [Eszközkorlátozási beállítások Windows 10-hez (és újabb rendszerekhez)](device-restrictions-windows-10.md#edge-browser) cikkben találja.
+
+### <a name="select-apps-tracked-on-the-enrollment-status-page---2531007---"></a>A Regisztrációs állapotlapon nyomon követett alkalmazások kiválasztása<!-- 2531007 -->
+Eldöntheti majd, hogy mely alkalmazások legyenek nyomon követve a Regisztrációs állapotlapon.
+
+### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Az Intune alkalmazásvédelmi szabályzataihoz tartozó kezelőfelületre vonatkozó frissítés <!-- 3251427 -->
+
+Az Intune alkalmazásvédelmi szabályzatainak segítségével különböző adatvédelmi beállításokat konfigurálhat az Intune védett alkalmazásain (például a Microsoft Outlookban és Wordben). Az egyértelműség érdekében módosítjuk a beállítás- és gombcímkéket. Az **igen**/**nem** vezérlőket elsődlegesen **tilt**/**engedélyez** és **letilt**/**engedélyez** vezérlőkre módosítjuk majd, és az egyértelműség érdekében a címkéket is frissítjük. A beállításokat is újraformázzuk, így a beállítás és a hozzá tartozó címke egymás mellett szerepel a vezérlőben, hatékonyabbá téve a navigációt. Az alapértelmezett beállítások és a beállítások száma nem változik, azonban e módosításnak köszönhetően a felhasználók könnyebben érthetik meg és használhatják a beállításokat, valamint navigálhatnak közöttük, így segítve a kiválasztott alkalmazásvédelmi szabályzatok alkalmazását.
+
+
+
+<!-- 1810 start -->
+
+### <a name="use-microsoft-recommended-settings-with-security-baselines----2055484---"></a>A Microsoft által ajánlott beállítások használata a biztonsági előírásokhoz <!-- 2055484 -->
+Az Intune integrálható más, biztonsági célú szolgáltatásokkal, például a Windows Defender ATP-vel és az Office 365 ATP-vel. Az ügyfelek a Microsoft 365-szolgáltatásokon átívelő közös stratégiát és összefüggő, teljes körű biztonsági munkafolyamatokat kérnek. Célunk a stratégiák összehangolása és ezáltal olyan megoldások létrehozása, amelyek hidat képeznek a biztonsági műveletek és a gyakori felügyeleti feladatok között. Az Intune-ban ezen cél elérésére a Microsoft által ajánlott „biztonsági előírások” közzétételével törekszünk (**Intune** > **Biztonsági előírások**).  A rendszergazdák így képesek arra, hogy közvetlenül ezekből az előírásokból hozzanak létre biztonsági szabályzatokat, és üzembe helyezzék őket a felhasználók számára. Emellett testreszabhatják az ajánlott eljárásokat a szervezet igényeihez igazítva. Az Intune biztosítja, hogy az eszközök megfeleljenek ezeknek az előírásoknak, és értesíti a rendszergazdákat, ha egy felhasználó vagy eszköz nem felel meg.
+
+### <a name="scope-tags-for-apps---1081941---"></a>Hatókörcímkék alkalmazásokhoz <!--1081941 -->
+Hatókörcímkék létrehozásával korlátozhatja a hozzáférést az Intune erőforrásaihoz. Adjon hozzá hatókörcímkét egy szerepkör-hozzárendeléshez, majd adja hozzá a hatókörcímkét egy konfigurációs profilhoz. A szerepkör csak a megfelelő hatókörcímkével rendelkező (vagy hatókörcímke nélküli) erőforrásokhoz férhet hozzá.
+Hatókörcímke hozzáadásához válassza az **Intune-szerepkörök** > **Hatókör (Címkék)** > **Létrehozás** lehetőséget.
+Hatókörcímke szerepkör-hozzárendeléshez való hozzáadásához válassza az **Intune-szerepkörök** > **Összes szerepkör** > **Szabályzat- és profilkezelő** > **Hozzárendelések** > **Hatókör (Címkék)** lehetőséget.
+Hatókörcímke konfigurációs profilhoz való hozzáadásához válassza az **Eszközkonfiguráció** > **Profilok** > válasszon egy profilt > **Tulajdonságok** > **Hatókör (Címkék)** lehetőséget.
+
+### <a name="tenant-health-dashboard----1124854---"></a>Bérlőállapot-figyelő irányítópult <!-- 1124854 -->
+Az Intune Bérlő állapota oldala egyetlen helyen nyújt információkat a bérlő állapotát illetően. Az oldal 4 szakaszból áll:  
+- **Bérlő adatai**: Olyan információkat tartalmaz, mint az MDM-szolgáltató, a bérlőn regisztrált eszközök teljes száma és a licencek száma. Ebben a szakaszban található a bérlő jelenlegi szolgáltatáskiadása is.
+- **Összekötő állapota**: Információkat tartalmaz a konfigurált összekötőkről, például az Apple VPP-ről, a Vállalati Windows Store-ról és a tanúsítvány-összekötőkről. Az összekötők az aktuális állapotuk alapján *Kifogástalan*, *Figyelmeztetés* vagy *Nem kifogástalan* jelölést kapnak.
+- **Intune-szolgáltatás állapota**: A bérlő aktív incidenseit vagy leállásait tartalmazza. Az ebben a szakaszban szereplő információk közvetlenül az Office Üzenetközpontból ([https://portal.office.com](https://portal.office.com)) származnak.
+- **Intune-hírek**: A bérlő aktív üzeneteit tartalmazza, például az arról szóló értesítéseket, ha a bérlő megkapta a legújabb Intune-funkciókat. Az ebben a szakaszban szereplő információk közvetlenül az Office Üzenetközpontból ([https://portal.office.com](https://portal.office.com)) származnak.
+
+
+### <a name="deployed-wip-policies-without-user-enrollment----1434452---"></a>Felhasználói regisztráció nélkül telepített WIP-szabályzatok <!-- 1434452 -->
+Windows Information Protection- (WIP-) szabályzatok telepíthetők anélkül is, hogy a felhasználóknak regisztrálniuk kellene Windows 10 rendszerű eszközüket. Ez a konfiguráció lehetővé teszi, hogy a vállalatok biztosítsák a vállalati dokumentumok védelmét a WIP-konfiguráció alapján, miközben a felhasználó saját maga felügyelheti Windows-eszközeit. Ha a dokumentumok védve vannak WIP-szabályzattal, a védett adatokat az Intune-rendszergazdák szelektív módon törölhetik. Ehhez ki kell választaniuk a felhasználót és az eszközt, majd el kell küldeniük egy adattörlési kérést, amelynek hatására WIP-szabályzat által védett összes adat használhatatlanná válik. Ehhez az Azure Portal Intune részén válassza a **Mobilalkalmazás** > **Alkalmazás szelektív törlése** lehetőséget.
+
+
+<!-- 1809 start -->  
+
+### <a name="app-protection-policy-app-settings-for-web-data----2662995---"></a>Az Alkalmazásvédelmi szabályzat (APP) beállításai webes adatokhoz <!-- 2662995 -->
+A webes tartalmakra vonatkozó APP szabályzatok beállításait az Android- és iOS-eszközökön is frissítjük, hogy hatékonyabban kezelhetők legyenek a webes http- és https-hivatkozások, valamint az univerzális iOS-hivatkozásokon és Android-alkalmazáshivatkozásokon keresztüli adatátvitel.  
+
 <!-- 1808 start -->
-
-
 
 ### <a name="apple-vpp-token-used-by-another-mdm----1488946---"></a>Más MDM által használt Apple VPP-token <!-- 1488946 -->
 Az Intune felismeri, ha egy Apple mennyiségi licencszerződés (VPP) keretében vásárolt tokent az Intune és egy másik MDM egyidejűleg használ, és megjeleníti az adatokat.
 
-### <a name="ios-version-number-and-build-number-are-shown----1892471---"></a>iOS-es verziószám és buildszám megjelenítése <!-- 1892471 -->
-Az iOS operációs rendszer verziószáma az **Eszközmegfelelőség** > **Eszközmegfelelőség** területen látható. Egy jövőbeli frissítéssel a buildszám is megjelenik.
+### <a name="ios-and-macos-version-numbers-and-build-numbers-are-shown----1892471---"></a>Megjelenítjük az iOS- és macOS-verziószámokat és -buildszámokat <!-- 1892471 -->
+Az **Eszközmegfelelőség** > **Eszközmegfelelőség** megjeleníti az iOS és macOS operációs rendszerek verzióit. Egy jövőbeli frissítésben a buildszám is megjelenik majd mindkét platformon.
+
 A biztonsági frissítések megjelenésekor az Apple általában megtartja a verziószámot, de a buildszám változik. A megjelenített buildszám segítségével könnyen ellenőrizheti, hogy telepítve van-e a biztonsági frissítés.
 
 ### <a name="retired-devices-in-the-device-compliance-dashboard----1981119---"></a>Elavult eszközök az eszközmegfelelőségi irányítópulton <!-- 1981119 -->
 Egy jövőbeli frissítés eltávolítja az elavult eszközöket az eszközmegfelelőségi irányítópultról. Ez módosítani fogja a megfelelőségi számokat.
 
-### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>Új frissítés a felhasználói felülethez a Céges portál webhelyen <!--2000968 -->
-A Céges portál webhelyen új funkciók jelennek meg a felhasználók visszajelzései alapján. Jelentős javulást fog tapasztalni az Android, az iOS, és a Windows rendszerű eszközök már meglévő funkciói és használhatósága terén. Új, modern és rugalmas külsőt kapnak a webhely különböző területei, köztük az eszközadatok, a visszajelzés, a támogatás és az eszközök áttekintése. Amit még tapasztalni fog:
-- Zökkenőmentes munkafolyamatok minden eszközplatformon
-- Hatékonyabb eszközazonosítási és beléptetési folyamatok
-- Praktikusabb hibaüzenetek
-- Barátságosabb nyelvezet, kevesebb műszaki zsargon
-- Alkalmazások közvetlen hivatkozásainak megoszthatósága
-- Nagy méretű alkalmazáskatalógusok javított teljesítménye
-- Nagyobb hozzáférhetőség minden felhasználó számára
-
-### <a name="configure-profile-to-skip-some-screens-during-setup-assistant----2276470---"></a>Profil konfigurálása egyes képernyők kihagyásához a beállítási asszisztens működése során <!-- 2276470 -->
-macOS-es regisztrációs profil létrehozásakor konfigurálhatja a profilt a következő képernyők bármelyikének kihagyására, amikor egy felhasználó a beállítási asszisztenst használja:
-- Android-áttelepítés
-- Hang megjelenítése
-- Személyes adatok védelme
-- iCloudStorage
 
 ### <a name="change-in-the-update-process-for-on-premises-connectors----2277554---"></a>Változás a helyszíni összekötők frissítési folyamatában <!-- 2277554 -->
 Felhasználói visszajelzések alapján megváltozik a helyszíni összekötők frissítésének folyamata. Miután elvégezte a helyszíni összekötő kezdeti telepítését, a frissítések automatikusan lezajlanak. Ez a változás először a Microsoft Intune-hoz készült új PFX-tanúsítvány-összekötőnél jelenik meg, majd a soron következő további helyszíni összekötőknél is. 
 
-
-
 <!-- 1807 start -->
 
-### <a name="more-sync-opportunities-in-the-company-portal-app-for-windows----2683177---"></a>További szinkronizálási lehetőségek a windowsos céges portál alkalmazásban <!-- 2683177 -->
-A windowsos Céges portál alkalmazás hozzáad egy eszközszinkronizálási műveletet a Windows tálcájához és a Start menü gyorslistáihoz. Az eszközök gyors szinkronizáláshoz és a vállalati erőforrások eléréséhez kattintson ezek közöl valamelyik helyre.  
+### <a name="check-for-configuration-manager-compliance----2192052---"></a>A Configuration Manager megfelelőségének ellenőrzése <!-- 2192052 -->
+Egy későbbi frissítés része lesz a System Center Configuration Manager új megfelelőségi beállítása (**Eszközmegfelelőség** > **Szabályzatok** > **Szabályzat létrehozása** > **Windows 10**). A Configuration Manager megfelelőségi jeleket küldi az Intune-nak. Az Intune beállításával megkövetelhető, hogy minden Configuration Manager-jelre „megfelelő” legyen a válasz.
 
-### <a name="reset-device-passcodes-from-company-portal-app-for-windows-10----2101282---"></a>Eszközök PIN-kódjának alaphelyzetbe állítása a Windows 10-es Céges portál alkalmazásból <!-- 2101282 --> 
-Alkalmazottaik rövidesen közvetlenül a Windows 10-es Céges portál alkalmazásból tudják alaphelyzetbe állítani eszközeik PIN-kódját vagy jelszavát. Ez a funkció a PIN-kód alaphelyzetbe állítását támogató, Intune által felügyelt távoli és helyszíni eszközökön is elérhető lesz. A távoli eszközre vonatkozó kérelmek az eszköz típusától függően vagy eltávolítják az eszköz PIN-kódját, vagy létrehoznak egy ideiglenes PIN-kódot. A helyszíni eszközre alaphelyzetbe állítást kérő felhasználók az eszköz Beállítások alkalmazásához lesznek irányítva.  
-
-### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows----2317227---"></a>Új böngészési élmény a windowsos céges portál alkalmazásban <!-- 2317227 -->  
-Ha a windowsos céges portál alkalmazásban alkalmazásokat böngész vagy keres, lehetőség lesz váltani a meglévő **Csempék** nézet és az újonnan hozzáadott **Részletek** nézet között. Az új nézet megjeleníti az alkalmazások adatait, például a nevet, a kiadót, a kiadás dátumát és a telepítés állapotát.  
-
-Az **Alkalmazások** lapon használható lesz egy **Telepítve** nézet is, amely a befejezett és a folyamatban lévő telepítések adatait jeleníti meg. Visszajelzést vagy javaslatot szeretne küldeni a változásokkal kapcsolatban? Küldje el visszajelzését a céges portál alkalmazásban.
-
-### <a name="improved-company-portal-app-experience-for-device-enrollment-manager-users----675800---"></a>A céges portál alkalmazás javított használati élménye az eszközregisztráció-kezelők számára <!-- 675800 -->
-Ha egy eszközregisztráció-kezelő (DEM) bejelentkezik a windowsos céges portál alkalmazásba, az alkalmazás csak az eszközregisztráció-kezelő jelenlegi, futó eszközét jeleníti meg. Ennek a fejlesztésnek köszönhetően kevesebb olyan időtúllépés fog történni, amely korábban akkor jelentkezett, ha az alkalmazás megpróbálta betölteni a kezelő által regisztrált összes eszközt.  
-
-### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>VPP eszközlicencek használata a Céges portál előzetes kiépítésére a DEP-regisztráció során <!-- 1608345 -->
-Volume Purchase Program (VPP) eszközlicencekkel előre kiépítheti a Céges portált az Készülékregisztrációs program (DEP) keretében végzett regisztrációk során. Ehhez a regisztrációs profil létrehozása vagy szerkesztése során kell megadni a Céges portál telepítéséhez használni kívánt VPP-jogkivonatot. Fontos, hogy a jogkivonat ne járjon le, és hogy elég licenccel rendelkezzen a Céges portál alkalmazáshoz. Amennyiben a jogkivonat lejár vagy a licencei elfogynak, az Intune az App Store-beli Céges portált fogja leküldeni (ilyenkor a rendszer kéri az Apple-azonosítót).
-
-### <a name="check-for-sccm-compliance----2192052---"></a>SCCM-megfelelőség ellenőrzése <!-- 2192052 -->
-Egy későbbi frissítésnek része lesz a System Center Configuration Manager (SCCM) egy új megfelelőségi beállítása (**Eszközmegfelelőség** > **Szabályzatok** > **Szabályzat létrehozása** > **Windows 10**). Az SCCM az Intune-nak küld megfelelőségi jeleket. Az Intune beállításával megkövetelhető, hogy minden SCCM-jelre „megfelelő” legyen a válasz.
-
-Megkövetelhető például, hogy minden szoftverfrissítés telepítve legyen az eszközökön. Az SCCM-ben ehhez a követelményhez a „Telepítve” állapot tartozik. Ha az eszközön bármelyik program ismeretlen állapotban van, akkor az eszköz nem megfelelőnek fog minősülni az Intune-ban.
+Megkövetelhető például, hogy minden szoftverfrissítés telepítve legyen az eszközökön. A Configuration Managerben az ehhez a követelményhez tartozó állapot a „Telepítve”. Ha az eszközön bármelyik program ismeretlen állapotban van, akkor az eszköz nem megfelelőnek fog minősülni az Intune-ban.
 
 A Windows 10 és újabb verziókra vonatkozik
 
 ### <a name="alerts-for-expiring-vpp-token-or-company-portal-license-running-low----2237572---"></a>VPP-jogkivonatok lejáratára vagy a Céges portál licenceinek alacsony számára vonatkozó riasztások <!-- 2237572 -->
 Ha a Volume Purchase Program (VPP) igénybe vételével építi ki a Céges portált a DEP-regisztráció során, az Intune riasztást fog küldeni a VPP-jogkivonat közeli lejáratáról, és ha a Céges portál licencei hamarosan elfogynak.
 
-### <a name="confirmation-required-to-delete-vpp-token-that-is-being-used-for-company-portal-pre-provisioning----2237634---"></a>Megerősítés szükséges a Céges portál kiépítéséhez éppen használt VPP-jogkivonat törléséhez <!-- 2237634 -->
-A jövőben meg kell erősíteni az olyan Volume Purchase Program (VPP) jogkivonat törlését, amelyet éppen a Céges portál kiépítéséhez használnak a DEP-regisztráció során.
 
-#### <a name="additional-security-settings-for-windows-installer----2282430---"></a>A Windows Installer további biztonsági beállításai <!-- 2282430 -->
-Engedélyezheti a felhasználóknak az alkalmazástelepítések szabályozását. Ha engedélyezve van, azok a telepítések, amelyek a biztonság megsértése miatt le lettek volna állítva engedélyt kapnak a folytatásra. Megadhatja, hogy a Windows Installer emelt szintű engedélyeket használjon, amikor programokat telepít a rendszerben. Emellett engedélyezheti a Windows Information Protection (WIP) elemeinek indexelését és az ezekre vonatkozó metaadatok titkosítatlan helyen való tárolását. A szabályzat tiltásakor a WIP által védett elemek nem lesznek indexelve, és nem jelennek meg a Cortana vagy a fájlkezelő eredményei között. Ezeknek a beállításoknak a funkciói alapértelmezés szerint le lesznek tiltva. 
-
-<!-- 1806 start -->
-
-### <a name="3rd-party-keyboards-can-be-blocked-by-app-settings-on-ios----1248481---"></a>Az iOS-es eszközökön az alkalmazásvédelmi beállítások használatával letilthatja a harmadik féltől származó billentyűzeteket <!-- 1248481 -->
-Az Intune-rendszergazdák az iOS-es eszközökön letilthatják a harmadik féltől származó billentyűzeteket, ha azok a szabályzat által védett alkalmazásokon hozzáférnek a céges adatokhoz. Ha az alkalmazásvédelmi szabályzat (APP) a harmadik félhez tartozó billentyűzetek letiltására van beállítva, az eszköz használója üzenetet kap, amikor először fér hozzá ilyen billentyűzettel a céges adatokhoz. A natív billentyűzeten kívül minden más lehetőség le lesz tiltva, és a felhasználók nem láthatják ezeket. A felhasználók csak egyszer látják az üzenetet. 
-
-### <a name="require-non-biometric-passcode-on-app-launch-and-timeout----1506985---"></a>Nem-biometrikus PIN-kód kérése alkalmazások indítása vagy időtúllépés esetén <!-- 1506985 -->
-
-Amikor az alkalmazások indításakor vagy rendszergazda által megállapított időtúllépés esetén az Intune nem-biometrikus PIN-kódot kér, ezzel korlátozza a biometrikus azonosítás használatát a céges adatokhoz való hozzáféréshez, és növeli a mobilalkalmazás-felügyeletet (MAM) engedélyező alkalmazások biztonságát. A beállítások azokat a felhasználókat érintik, akik a Touch ID (iOS), a Face ID (iOS), az Android Biometric, vagy más jövőbeli biometrikus hitelesítési módszerekkel férnek hozzá az APP/MAM-engedélyezésű alkalmazásokhoz. A beállítások segítségével az Intune rendszergazdái a felhasználói hozzáférés kiterjedtebb ellenőrzése révén kizárhatják annak lehetőségét, hogy a több ujjlenyomatos vagy egyéb biometrikus hozzáférési módszert alkalmazó eszközök céges adatokat adjanak ki jogosulatlan személyek számára. Az Azure Portalon nyissa meg a **Microsoft Intune** oldalt. Válassza az **Ügyfélalkalmazások** > **Alkalmazásvédelmi szabályzatok** > **Szabályzat hozzáadása** > **Beállítások** lehetőséget. Az adott beállításokhoz keresse meg a **Hozzáférés** lehetőséget.
-
-### <a name="office-365-pro-plus-language-packs----1833450---"></a>Az Office 365 Pro Plus nyelvi csomagjai <!-- 1833450 -->
-Az Intune rendszergazdájaként további nyelveket helyezhet üzembe az Intune által felügyelt Office 365 Pro Plus alkalmazások számára. Az elérhető nyelvek listája tartalmazza a nyelvi csomag **Típusát** (alap, részleges vagy nyelvi ellenőrzési) is. Az Azure Portalon válassza a **Microsoft Intune** > **Ügyfélalkalmazások** > **Alkalmazások** > **Hozzáadás** lehetőséget. Az **Alkalmazás hozzáadása** panelen, az **Alkalmazástípusok** listáján, válassza az **Office 365 csomag** alatti **Windows 10** lehetőséget. Az **Alkalmazáscsomag beállításai** panelen válassza a **Nyelvek** lehetőséget.
-
-### <a name="preview-a-new-user-experience-update-for-the-company-portal-website---2000968---"></a>A Céges portál webhely felhasználói felületéhez kiadott új frissítés előnézete <!--2000968 -->
-A felhasználók visszajelzései alapján új funkciókkal egészül ki a Céges portál webhely/iOS alkalmazáskatalógus. Jelentős javulást fog tapasztalni az Android, az iOS, és a Windows rendszerű eszközök már meglévő funkciói és használhatósága terén. Új, modern és rugalmas külsőt kapnak a webhely különböző területei, köztük az eszközadatok, a visszajelzés, a támogatás és az eszközök áttekintése. Amit még tapasztalni fog:
-
-- Zökkenőmentes munkafolyamatok minden eszközplatformon
-- Hatékonyabb eszközazonosítási és beléptetési folyamatok
-- Praktikusabb hibaüzenetek
-- Barátságosabb nyelvezet, kevesebb műszaki zsargon
-- Alkalmazások közvetlen hivatkozásainak megoszthatósága
-- Nagy méretű alkalmazáskatalógusok javított teljesítménye
-- Nagyobb hozzáférhetőség minden felhasználó számára
-
-A frissítés jelenleg előzetes verzióban érhető el. Az előzetes verzió kipróbálásához regisztráljon a következő címen: http://aka.ms/webcpflighting
-
-<!-- 1805 start -->
-
-### <a name="require-non-biometric-passcode-on-cold-app-launch-and-timeout----1506985---"></a>Nem-biometrikus PIN-kód kérése alkalmazások első indítása vagy időtúllépés esetén <!-- 1506985 --> 
-
-Amikor az alkalmazások első indításakor vagy rendszergazda által megállapított időtúllépés esetén az Intune nem-biometrikus PIN-kódot kér, ezzel korlátozza a biometrikus azonosítás használatát a céges adatokhoz való hozzáféréshez, és növeli a mobilalkalmazás-felügyeletet (MAM) engedélyező alkalmazások biztonságát. A beállítások azokat a felhasználókat érintik, akik a Touch ID (iOS), a Face ID (iOS), az Android Biometric, vagy más jövőbeli biometrikus hitelesítési módszerekkel férnek hozzá az APP/MAM-engedélyezésű alkalmazásokhoz. A beállítások segítségével az Intune rendszergazdái a felhasználói hozzáférés kiterjedtebb ellenőrzése révén kizárhatják annak lehetőségét, hogy a több ujjlenyomatos vagy egyéb biometrikus hozzáférési módszert alkalmazó eszközök céges adatokat adjanak ki jogosulatlan személyek számára. Az Azure Portalon nyissa meg a **Microsoft Intune** oldalt. Válassza az **Ügyfélalkalmazások** > **Alkalmazásvédelmi szabályzatok** > **Szabályzat hozzáadása** > **Beállítások** lehetőséget. Az adott beállításokhoz keresse meg a **Hozzáférés** lehetőséget.
-
-<!-- 1803 start -->
-
-### <a name="ability-to-deploy-required-line-of-business-lob-apps-to-all-users-on-windows-10-desktop-devices----1627835-rs4---"></a>Kötelező üzletági (LOB) alkalmazások üzembe helyezésének lehetősége az összes felhasználó számára Windows 10 rendszerű asztali eszközökön <!-- 1627835 RS4 -->
-Az ügyfelek eszközkörnyezetben helyezhetik üzembe a kötelező üzletági Windows 10 rendszerű alkalmazásokat. Így az alkalmazások az eszköz összes felhasználója számára elérhetővé válnak. Ez csak Windows 10 rendszerű asztali eszközökre vonatkozik.
-
-### <a name="updating-the-help-and-feedback-experience-on-company-portal-app-for-android---1631531---"></a>Az Androidhoz készült Céges portál alkalmazás Súgó és Visszajelzés funkciójának frissítése <!--1631531 -->
-
-Az androidos alkalmazások ajánlott eljárásaihoz igazodva hamarosan frissülni fog az Androidhoz készült Céges portál alkalmazás Súgó és Visszajelzés funkciója. Az elkövetkező néhány hónapban az Androidhoz készült Céges portál alkalmazás frissülni fog a **Súgó és visszajelzés** menüpont két különálló, **Súgó** és **Visszajelzés küldése** menüpontra osztásával. A **Súgó** oldalon egy **Gyakran ismételt kérdések** szakasz és egy **E-mail küldése az ügyfélszolgálatnak** gomb jelenik meg, amellyel a végfelhasználó naplókat tölthet fel a Microsoft részére, és e-mailben írhatja meg a problémát az ügyfélszolgálatnak. A **Visszajelzés küldése** oldal a Microsoft szabványos visszajelzési folyamatán vezeti végig a felhasználót, melynek során a rendszer a „Tetszik”, a „Nem tetszik”, és a „Javaslatom van” választ kínálja fel.
-
-<!-- the following are present prior to 1801 -->
-
-### <a name="app-protection-policies-----679615---"></a>Alkalmazásvédelmi szabályzatok  <!-- 679615 -->
-Az Intune alkalmazásvédelmi szabályzatai lehetőséget nyújtanak globális szintű alapértelmezett szabályzatok létrehozására, amelyekkel gyorsan beállítható a megfelelő védelem a teljes bérlő összes felhasználója számára.
 
 <!-- the following are present prior to 1711 -->
 

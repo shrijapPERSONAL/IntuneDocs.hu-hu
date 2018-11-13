@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 108382a04095330745ca82dc1d70ab48e70362e5
-ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
+ms.openlocfilehash: 90756da72ecdcbd049b14b45014433bb5843a5ed
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "40252451"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236662"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Segítségnyújtás a céges felhasználóknak a hibaelhárítási portál használatával
 
@@ -36,7 +36,7 @@ Ha egy felhasználó Intune-nal kapcsolatos műszaki problémával fordul az üg
 - Felhasználó állapota
 - Hozzárendelések
 - Megfelelőségi problémák
-- Az eszköz nem található
+- Az eszköz nem válaszol
 - Az eszközön nem működnek a VPN- vagy Wi-Fi-beállítások
 - Alkalmazástelepítési hiba
 
@@ -59,23 +59,25 @@ A **Hibaelhárítás** panel használatával felhasználói információkat teki
 
 ![](/intune/media/troubleshooting-dash.png)
 
-| Terület | Név | Description |
+| Terület | Név | Leírás |
 | ---  | ---  | ---         |
 | 1.   | Fiók állapota  | Az aktuális Intune-bérlő állapotát jeleníti meg, amely lehet **Aktív** vagy **Inaktív**.       |
 | 2.   | Felhasználó kiválasztása  | Az aktuálisan kiválasztott felhasználó neve. Új felhasználó kiválasztásához kattintson a **Felhasználó váltása** lehetőségre.       |
 | 3.   | Felhasználó állapota  | Megjeleníti a felhasználó Intune-licencének állapotát, az eszközök számát, az egyes eszközök megfelelőségét, az alkalmazások számát és az alkalmazások megfelelőségét.       |
-| 4.   | Felhasználói adatok  | A listából kiválaszthatja a panelen megtekintendő információkat. <br>Az alábbiak közül választhat: <ul><li>Mobilalkalmazásokban<li>Alkalmazásvédelmi szabályzatok<li>Megfelelőségi szabályzatok<li> Konfigurációs szabályzatok</ul>      |
+| 4.   | Felhasználói adatok  | A listából kiválaszthatja a panelen megtekintendő információkat. <br>Az alábbiak közül választhat: <ul><li>Ügyfélalkalmazások<li>Megfelelőségi szabályzatok<li> Konfigurációs szabályzatok<li>Alkalmazásvédelmi szabályzatok <li>Regisztrációs korlátozások</ul>      |
 | 5.   | Csoporttagság  | Megjeleníti azokat csoportokat, amelyeknek a kiválasztott felhasználó jelenleg a tagja.       |
 
-## <a name="mobile-apps-reference"></a>Mobilalkalmazások információi
+## <a name="client-apps-reference"></a>Ügyfélalkalmazások hivatkozása
 
-Az eszközökön, vagy az Intune és az Azure Active Directory (AD) által kezelt felhasználói tulajdonú eszközökön futó alkalmazások.
+Azokat az eszközöket futtató alkalmazások,
+- amelyeket az Intune és az Azure Active Directory (AD) felügyel 
+- amelyek az Intune és az Azure Active Directory (AD) által felügyelt felhasználók tulajdonai.
 
 ### <a name="properties"></a>Tulajdonságok
 
-A mobilalkalmazások tulajdonságai.
+Az ügyfélalkalmazások tulajdonságai.
 
-| Tulajdonság      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Tulajdonság      | Leírás                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Név          | Az alkalmazás neve.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | Operációs rendszer            | Az eszközön telepített operációs rendszer.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
@@ -86,44 +88,45 @@ A mobilalkalmazások tulajdonságai.
 
 Az Intune által, vagy az Intune vagy az Azure AD által kezelt felhasználók által kezelt eszközök.
 
-| Tulajdonság           | Description                                                                                                                         |
+| Tulajdonság           | Leírás                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Eszköz neve        | Az eszköztípus neve.                                                                                                     |
 | Felügyeli         | A szabályzat módosítási idejének időbélyege.                                                                                              |
 | Azure AD-összekapcsolási típus | Az egyes felhasználók alkalmazásvédelmi alkalmazásainak állapota. Az alkalmazások lehetséges állapotai: **Bejelentkezett** és **Nem bejelentkezett**. |
-| Tulajdonos          | Az eszköz tulajdonlástípusa. A típus lehet **Vállalati**, **Személyes** vagy **Ismeretlen**.                                               |
+| Tulajdonos          | Az eszköz tulajdonlástípusa (**céges**, **személyes** vagy **ismeretlen**).                                               |
 | Intune-kompatibilis   | Az eszköztípus neve.                                                                                                     |
 | Azure AD-kompatibilis | Az egyes felhasználók alkalmazásvédelmi alkalmazásainak állapota. Az alkalmazások lehetséges állapotai: **Bejelentkezett** és **Nem bejelentkezett**. |
+| Alkalmazástelepítés | Azt jelzi, hogy történt-e sikeres vagy sikertelen alkalmazástelepítés az adott eszközön. |
 | Operációs rendszer                 | Az eszközön telepített operációs rendszer.                                                                                       |
 | Operációs rendszer verziója         | Az eszköz operációs rendszerének verziószáma.                                                                                  |
 | Legutóbbi bejelentkezés      | Az eszköztípus neve.                                                                                                     |
 
 ### <a name="app-protection-status"></a>Alkalmazásvédelem állapota
 
-Az alkalmazásvédelmi szabályzat az Enterprise Mobility Solution- (EMS-) technológiával integrált mobilalkalmazásoknál érhető el. Ez biztosítja a vállalati adatok alapvető védelmét, amikor azokat különféle, például Office-os mobilalkalmazások töltik le. 
+Az alkalmazásvédelmi szabályzat az Enterprise Mobility Solution- (EMS-) technológiával integrált mobilalkalmazásoknál érhető el. Ezek a szabályzatok biztosítják a vállalati adatok alapvető védelmét, amikor azokat különféle, például Office-os mobilalkalmazások töltik le. 
 
-| Tulajdonság    | Description                                                                           |
+| Tulajdonság    | Leírás                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Állapot      | Az eszköz tulajdonlástípusa. A típus lehet **Vállalati**, **Személyes** vagy **Ismeretlen**. |
+| Állapot      | Az eszköz tulajdonlástípusa (**céges**, **személyes** vagy **ismeretlen**). |
 | Alkalmazás neve    | Az alkalmazás neve                                                           |
 | Eszköz neve | Az eszköztípus neve.                                                       |
 | Eszköz típusa | Az eszköztípus neve.                                                       |
-| Házirendek    | Az eszköz tulajdonlástípusa. A típus lehet **Vállalati**, **Személyes** vagy **Ismeretlen**. |
+| Házirendek    | Az eszköz tulajdonlástípusa (**céges**, **személyes** vagy **ismeretlen**). |
 | Legutóbbi szinkronizálás   | Időbélyeg, amely az eszköz Intune-nal való szinkronizálásának utolsó idejét mutatja.                   |
 
 ## <a name="app-protection-policies-reference"></a>Alkalmazásvédelmi szabályzatok információi
 
-Az alkalmazásvédelmi szabályzat az EMS-technológiával integrált mobilalkalmazásoknál érhető el. Ez biztosítja a vállalati adatok alapvető védelmét, amikor azokat különféle, például Office-os mobilalkalmazások töltik le. 
+Az EMS-technológiákkal integrált mobilalkalmazások számára alkalmazásvédelmi szabályzat érhető el. Ezek a szabályzatok biztosítják a vállalati adatok alapvető védelmét, amikor azokat különféle, például Office-os mobilalkalmazások töltik le. 
 
 ### <a name="properties"></a>Tulajdonságok
 
 A táblázat az Intune által kezelt eszközök alkalmazásvédelmi szabályzatainak állapotát mutatja be.
 
-| Tulajdonság    | Description                                                                                                                                |
+| Tulajdonság    | Leírás                                                                                                                                |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Név        | Az alkalmazás neve.                                                                                                        |
 | Telepítve    | Az egyes felhasználók alkalmazásvédelmi alkalmazásainak állapota. Az alkalmazások lehetséges állapotai: **Bejelentkezett** és **Nem bejelentkezett**. |
-| Platform    | Az eszköz tulajdonlástípusa. A típus lehet **Vállalati**, **Személyes** vagy **Ismeretlen**.                                               |
+| Platform    | Az eszköz tulajdonlástípusa (**céges**, **személyes** vagy **ismeretlen**).                                               |
 | Beléptetés  | Az eszköztípus neve.                                                                                                     |
 | Legutóbbi frissítés | A szabályzat módosítási idejének időbélyege.                                                                                              |
 
@@ -136,7 +139,7 @@ Az Intune által, vagy az Intune vagy az Azure AD által kezelt felhasználók �
 | Eszköz neve        | Az eszköztípus neve.                                                                                                     |
 | Felügyeli         | A szabályzat módosítási idejének időbélyege.                                                                                              |
 | Azure AD-összekapcsolási típus | Az egyes felhasználók alkalmazásvédelmi alkalmazásainak állapota. Az alkalmazások lehetséges állapotai: **Bejelentkezett** és **Nem bejelentkezett**. |
-| Tulajdonos          | Az eszköz tulajdonlástípusa. A típus lehet **Vállalati**, **Személyes** vagy **Ismeretlen**.                                               |
+| Tulajdonos          | Az eszköz tulajdonlástípusa (**céges**, **személyes** vagy **ismeretlen**).                                               |
 | Intune-kompatibilis   | Az eszköztípus neve.                                                                                                     |
 | Azure AD-kompatibilis | Az egyes felhasználók alkalmazásvédelmi alkalmazásainak állapota. Az alkalmazások lehetséges állapotai: **Bejelentkezett** és **Nem bejelentkezett**. |
 | Azure AD-kompatibilis | Az egyes felhasználók alkalmazásvédelmi alkalmazásainak állapota. Az alkalmazások lehetséges állapotai: **Bejelentkezett** és **Nem bejelentkezett**. |
@@ -152,24 +155,24 @@ Gondoskodik róla, hogy a vállalati alkalmazások és adatok elérésére haszn
 
 A megfelelőségi szabályzatok tulajdonságai.
 
-| Tulajdonság      | Description                                                                                                                         |
+| Tulajdonság      | Leírás                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Hozzárendelés    | Az egyes felhasználók alkalmazásvédelmi alkalmazásainak állapota. Az alkalmazások lehetséges állapotai: **Bejelentkezett** és **Nem bejelentkezett**. |
 | Név          | Az alkalmazás neve.                                                                                                        |
 | Operációs rendszer            | Az eszközön telepített operációs rendszer.                                                                                       |
-| Szabályzattípus   | Az eszköz tulajdonlástípusa. A típus lehet **Vállalati**, **Személyes** vagy **Ismeretlen**.                                               |
+| Szabályzattípus   | Az eszköz tulajdonlástípusa (**céges**, **személyes** és **ismeretlen**).                                               |
 | Utolsó módosítás | Az eszköztípus neve.                                                                                                     |
 
 ### <a name="devices"></a>Eszközök
 
 Az Intune által, vagy az Intune vagy az Azure AD által kezelt felhasználók által kezelt eszközök.
 
-| Tulajdonság           | Description                                                                                                                         |
+| Tulajdonság           | Leírás                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Eszköz neve        | Az eszköztípus neve.                                                                                                     |
 | Felügyeli         | A szabályzat módosítási idejének időbélyege.                                                                                              |
 | Azure AD-összekapcsolási típus | Az egyes felhasználók alkalmazásvédelmi alkalmazásainak állapota. Az alkalmazások lehetséges állapotai: **Bejelentkezett** és **Nem bejelentkezett**. |
-| Tulajdonos          | Az eszköz tulajdonlástípusa. A típus lehet **Vállalati**, **Személyes** vagy **Ismeretlen**.                                               |
+| Tulajdonos          | Az eszköz tulajdonlástípusa (**céges**, **személyes** és **ismeretlen**).                                               |
 | Intune-kompatibilis   | Az eszköztípus neve.                                                                                                     |
 | Azure AD-kompatibilis | Az egyes felhasználók alkalmazásvédelmi alkalmazásainak állapota. Az alkalmazások lehetséges állapotai: **Bejelentkezett** és **Nem bejelentkezett**. |
 | Operációs rendszer                 | Az eszközön telepített operációs rendszer.                                                                                       |
@@ -178,43 +181,43 @@ Az Intune által, vagy az Intune vagy az Azure AD által kezelt felhasználók �
 
 ### <a name="app-protection-policies"></a>Alkalmazásvédelmi szabályzatok
 
-Az alkalmazásvédelmi szabályzat az EMS-technológiával integrált mobilalkalmazásoknál érhető el. Ez biztosítja a vállalati adatok alapvető védelmét, amikor azokat különféle, például Office-os mobilalkalmazások töltik le. 
+Az alkalmazásvédelmi szabályzat az EMS-technológiával integrált mobilalkalmazásoknál érhető el. Ezek a szabályzatok biztosítják a vállalati adatok alapvető védelmét, amikor azokat különféle, például Office-os mobilalkalmazások töltik le. 
 
-| Tulajdonság    | Description                                                                           |
+| Tulajdonság    | Leírás                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Állapot      | Az eszköz tulajdonlástípusa. A típus lehet **Vállalati**, **Személyes** vagy **Ismeretlen**. |
+| Állapot      | Az eszköz tulajdonlástípusa (**céges**, **személyes** vagy **ismeretlen**). |
 | Alkalmazás neve    | Az alkalmazás neve                                                           |
 | Eszköz neve | Az eszköztípus neve.                                                       |
 | Eszköz típusa | Az eszköztípus neve.                                                       |
-| Házirendek    | Az eszköz tulajdonlástípusa. A típus lehet **Vállalati**, **Személyes** vagy **Ismeretlen**. |
+| Házirendek    | Az eszköz tulajdonlástípusa (**céges**, **személyes** vagy **ismeretlen**). |
 | Legutóbbi szinkronizálás   | Időbélyeg, amely az eszköz Intune-nal való szinkronizálásának utolsó idejét mutatja.                   |
 
 ## <a name="configuration-policies-reference"></a>Konfigurációs szabályzatok információi
 
-Alkalmazásvédelmi szabályzat szállítóspecifikus konfigurációval rendelkező mobilalkalmazásoknál érhető el. 
+Alkalmazásvédelmi szabályzat szállítóspecifikus konfigurációval rendelkező mobilalkalmazásoknál érhető el. 
 
 ### <a name="properties"></a>Tulajdonságok
 
 A konfigurációs szabályzatok tulajdonságai.
 
-| Tulajdonság      | Description                                                                                                                         |
+| Tulajdonság      | Leírás                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Hozzárendelés    | Az egyes felhasználók alkalmazásvédelmi alkalmazásainak állapota. Az alkalmazások lehetséges állapotai: **Bejelentkezett** és **Nem bejelentkezett**. |
 | Név          | Az alkalmazás neve.                                                                                                        |
 | Operációs rendszer            | Az eszközön telepített operációs rendszer.                                                                                       |
-| Szabályzattípus   | Az eszköz tulajdonlástípusa. A típus lehet **Vállalati**, **Személyes** vagy **Ismeretlen**.                                               |
+| Szabályzattípus   | Az eszköz tulajdonlástípusa (**céges**, **személyes** vagy **ismeretlen**).                                               |
 | Utolsó módosítás | Az eszköztípus neve.                                                                                                     |
 
 ### <a name="devices"></a>Eszközök
 
 Az Intune által, vagy az Intune vagy az Azure AD által kezelt felhasználók által kezelt eszközök.
 
-| Tulajdonság           | Description                                                                                                                         |
+| Tulajdonság           | Leírás                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Eszköz neve        | Az eszköztípus neve.                                                                                                     |
 | Felügyeli         | A szabályzat módosítási idejének időbélyege.                                                                                              |
 | Azure AD-összekapcsolási típus | Az egyes felhasználók alkalmazásvédelmi alkalmazásainak állapota. Az alkalmazások lehetséges állapotai: **Bejelentkezett** és **Nem bejelentkezett**. |
-| Tulajdonos          | Az eszköz tulajdonlástípusa. A típus lehet **Vállalati**, **Személyes** vagy **Ismeretlen**.                                               |
+| Tulajdonos          | Az eszköz tulajdonlástípusa (**céges**, **személyes** vagy **ismeretlen**).                                               |
 | Intune-kompatibilis   | Az eszköztípus neve.                                                                                                     |
 | Azure AD-kompatibilis | Az egyes felhasználók alkalmazásvédelmi alkalmazásainak állapota. Az alkalmazások lehetséges állapotai: **Bejelentkezett** és **Nem bejelentkezett**. |
 | Operációs rendszer                 | Az eszközön telepített operációs rendszer.                                                                                       |
@@ -224,16 +227,53 @@ Az Intune által, vagy az Intune vagy az Azure AD által kezelt felhasználók �
 
 ### <a name="app-protection-policies"></a>Alkalmazásvédelmi szabályzatok
 
-Az alkalmazásvédelmi szabályzat az EMS-technológiával integrált mobilalkalmazásoknál érhető el. Ez biztosítja a vállalati adatok alapvető védelmét, amikor azokat különféle, például Office-os mobilalkalmazások töltik le. 
+Az alkalmazásvédelmi szabályzat az EMS-technológiával integrált mobilalkalmazásoknál érhető el. Ezek a szabályzatok biztosítják a vállalati adatok alapvető védelmét, amikor azokat különféle, például Office-os mobilalkalmazások töltik le. 
 
-| Tulajdonság    | Description                                                                           |
+| Tulajdonság    | Leírás                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Állapot      | Az eszköz tulajdonlástípusa. A típus lehet **Vállalati**, **Személyes** vagy **Ismeretlen**. |
+| Állapot      | Az eszköz tulajdonlástípusa (**céges**, **személyes** vagy **ismeretlen**). |
 | Alkalmazás neve    | Az alkalmazás neve                                                           |
 | Eszköz neve | Az eszköztípus neve.                                                       |
 | Eszköz típusa | Az eszköztípus neve.                                                       |
-| Házirendek    | Az eszköz tulajdonlástípusa. A típus lehet **Vállalati**, **Személyes** vagy **Ismeretlen**. |
+| Házirendek    | Az eszköz tulajdonlástípusa (**céges**, **személyes** vagy **ismeretlen**). |
 | Legutóbbi szinkronizálás   | Időbélyeg, amely az eszköz Intune-nal való szinkronizálásának utolsó idejét mutatja.                   |
+
+## <a name="enrollment-failure-reference"></a>Regisztrációs hiba hivatkozása
+
+A Regisztrációs hibák táblázat a sikertelen regisztrációs kísérleteket jeleníti meg. A lenti táblázatban szereplő eszközök esetében előfordulhat, hogy egy újabb próbálkozás során sikerült regisztrálnia. Nem minden sikertelen kísérlet jelenik meg. A kockázatcsökkentési adatok nem érhetők el minden funkcióhoz.
+
+| Táblázatoszlop | Leírás |
+|-------------|----------|
+| Regisztráció kezdete | A felhasználó első regisztrációjának kezdési időpontja. |
+| Operációs rendszer | Az eszköz operációs rendszere. |
+| Operációs rendszer verziója | Az eszköz operációs rendszerének verziója. |
+| Hiba | A hiba oka. |
+
+### <a name="failure-details"></a>Hiba részletei
+
+Egy hibasort kijelölve további adatokat jeleníthet meg.
+
+| Szakasz | Leírás |
+|-------------|----------|
+| Hiba részletei | A hiba részletes leírása. |
+| Lehetséges megoldások | Javasolt lépések a hiba megoldásához. Bizonyos hibákat nem lehet javítani. |
+| Erőforrások (nem kötelező) | További hivatkozások a portál témaköreihez és területeihez. |
+
+### <a name="enrollment-errors"></a>Regisztrációs hibák
+
+| Hiba | Részletek |
+|-------------|----------|
+| iOS időtúllépés vagy hiba | Időtúllépés az eszköz és az Intune között a felhasználó regisztrációs folyamatának elhúzódása miatt. |
+| Felhasználó nem található vagy nincs licence | A felhasználó nem rendelkezik licenccel, vagy eltávolították a szolgáltatásból. |
+| Már regisztrált eszköz | Valaki regisztrálni próbált egy eszközt a Céges portállal egy olyan eszközön, amelyet egy másik felhasználó már regisztrált. |
+| Nincs előkészítve az Intune-ban | Valaki úgy próbált regisztrálni, hogy előtte nem konfigurálta az Intune mobileszköz-kezelési (MDM-) szolgáltatót. |
+| Sikertelen regisztrációs hitelesítés | Valaki a Céges portál régi verziójával próbált regisztrálni. |
+| Nem támogatott eszköz | Az eszköz nem felel meg az Intune-regisztráció minimális követelményeinek. |
+| Regisztrációs korlátozások miatt letiltva | A regisztráció le lett tiltva egy rendszergazda által konfigurált regisztrációs korlátozás miatt. |
+| Eszközök maximális száma elérve | A regisztráció le lett tiltva egy rendszergazda által konfigurált eszközkorlátozás miatt. |
+| Apple-bevezetés | Az iOS-eszközök regisztrációja jelenleg le van tiltva egy Intune-beli hiányzó vagy lejárt Apple MDM Push-tanúsítvány miatt. |
+| Az eszköz nincs előzetesen regisztrálva | Az eszközt nem regisztrálták előre, mert annak céges és személyes regisztrációját egy rendszergazda letiltotta. |
+| Nem támogatott funkció | A felhasználó valószínűleg egy, az Intune-konfigurációval nem kompatibilis módon próbált regisztrálni. |
 
 ## <a name="collect-available-data-from-mobile-device"></a>Rendelkezésre álló adatok gyűjtése mobileszközön
 

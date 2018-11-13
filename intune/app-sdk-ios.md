@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/08/2018
+ms.date: 11/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: 4b7a759b574b44a07499597e89627f70b99e5496
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: c9920e914a80ec3bb02f5066e6d6e34b2236c860
+ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49643093"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51212495"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>A Microsoft Intune App SDK iOS rendszeren – fejlesztői útmutató
 
@@ -34,7 +34,7 @@ Az iOS-hez készült Microsoft Intune App SDK lehetővé teszi, hogy Intune alka
 
 * Az alkalmazásnak az iOS 10-es vagy újabb verzióival kell működnie.
 
-* Olvassa el [az iOS-hez készült Intune App SDK licencfeltételeit](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf). Nyomtassa ki és őrizze meg a szerződés egy példányát. Az iOS-hez készült Intune App SDK letöltésével és használatával elfogadja licencfeltételeket.  Ha nem fogadja el, ne használja a szoftvert.
+* Olvassa el [az iOS-hez készült Intune App SDK licencfeltételeit](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS.pdf). Nyomtassa ki és őrizze meg a szerződés egy példányát. Az iOS-hez készült Intune App SDK letöltésével és használatával elfogadja licencfeltételeket.  Ha nem fogadja el, ne használja a szoftvert.
 
 * Töltse le az iOS-re készült Intune App SDK fájljait a [GitHubról](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios).
 
