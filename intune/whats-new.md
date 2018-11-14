@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 11/09/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: d7fd8c7f6f2c3dd5e6e8af323ccbb41a1ab779df
-ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
+ms.openlocfilehash: 1180e085c0584f3da535947cad60c41d06a8026a
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51025236"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576970"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Heti összesítésben olvashat a Microsoft Intune újdonságairól. Emellett tájékozódhat a [jövőbeni változtatásokról](#whats-coming), a szolgáltatással kapcsolatos [fontos bejelentésekről](#notices) és a [korábbi verziókról](whats-new-archive.md) is. Egyes funkciók bevezetése több hetet igénybe vehet, így előfordulhat, hogy nem elérhetők a felhasználók számára az első héten.
+Heti összesítésben olvashat a Microsoft Intune újdonságairól. Emellett tájékozódhat a jövőbeni változtatásokról, a szolgáltatással kapcsolatos [fontos bejelentésekről](#notices) és a [korábbi kiadásokról](whats-new-archive.md) is. Egyes funkciók bevezetése több hetet igénybe vehet, így előfordulhat, hogy nem elérhetők a felhasználók számára az első héten.
 
 > [!Note]
 > A mobileszköz-kezelés (MDM) új hibrid funkciójával kapcsolatos további információért tekintse meg a [hibrid újdonságok oldalát](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
@@ -41,6 +41,21 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Emellett tá
 ### Role-based access control
 
 -->     
+## <a name="week-of-november-5-2018"></a>2018. november 5-i hét
+
+### <a name="support-for-ios-12-oauth-in-ios-email-profiles---2155106---"></a>Az iOS 12 OAuth támogatása az iOS-es e-mail-profilokban <!--2155106 -->
+
+Az Intune iOS e-mail-profiljai támogatják az iOS 12-es nyílt engedélyezést (OAuth). Ennek a funkciónak a megtekintéséhez hozzon létre egy új profilt (**Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** > **iOS** a platformhoz > **E-mail** a profiltípushoz), vagy frissítsen egy létező iOS-es e-mail-profilt. Ha engedélyezi az OAuth-hitelesítést egy olyan profilban, amely már üzembe van helyezve a felhasználóknál, akkor a felhasználóknak újra el kell végezniük a hitelesítést, és le kell ismét tölteniük az e-mailjeiket.
+
+Az [iOS-es e-mail-profilok](email-settings-ios.md) szakaszban további információt talál az OAuth e-mail-profilban való használatáról.
+
+### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices-preview----1048100--"></a>Autopilot-támogatás a hibrid, Azure Active Directory-hoz csatlakoztatott eszközökhöz (előzetes verzió) <!-- 1048100-->
+Az Autopilot segítségével mostantól hibrid, Azure Active Directory-hoz csatlakoztatott eszközöket állíthat be. A hibrid Autopilot funkció használatához az eszközöket csatlakoztatni kell a szervezet hálózatához. További információt a [Deploy hybrid Azure AD joined devices using Intune and Windows Autopilot](windows-autopilot-hybrid.md) (Hibrid, Azure AD-hez csatlakoztatott eszközök üzembe helyezése az Intune és a Windows Autopilot használatával) című cikkben talál.
+Ez a funkció néhány napon belül kerül bevezetésre a felhasználók között. Előfordulhat tehát, hogy Ön nem tudja követni ezeket a lépéseket addig, amíg a fiókjában is meg nem jelenik ez az újítás.
+
+### <a name="app-protection-policy-app-settings-for-web-data----2662995----"></a>Az Alkalmazásvédelmi szabályzat (APP) beállításai webes adatokhoz <!-- 2662995  -->
+A webes tartalmakra vonatkozó APP szabályzatok beállításait az Android- és iOS-eszközökön is frissítettük, hogy hatékonyabban kezelhetők legyenek a webes http- és https-hivatkozások, valamint az univerzális iOS-hivatkozásokon és Android-alkalmazáshivatkozásokon keresztüli adatátvitel.  
+
 ## <a name="week-of-october-29-2018"></a>2018. október 29-i hét
 
 
@@ -112,10 +127,6 @@ Autopilot-profilokat rendelhet hozzá a Minden eszköz virtuális csoporthoz. Eh
 #### <a name="new-azure-active-directory-terms-of-use-feature----2870393---"></a>Az Azure Active Directory új Használati feltételek funkciója <!-- 2870393 -->
 Az Intune-ra vonatkozó Általános Szerződési Feltételek helyett mostantól használhatja az Azure Active Directory-ra vonatkozó Általános Szerződési Feltételek funkciót. Az Azure AD Használati feltételek funkciója nagyobb rugalmasságot biztosít abban, hogy mely feltételek jelenjenek meg és mikor, továbbá jobb honosítástámogatást, jobb feltételmegjelenítés-vezérlést és jobb jelentéskészítési funkciókat nyújt. Az Azure AD Használati feltételek funkciójához Prémium P1 szintű Azure Active Directory szükséges, amely az Enterprise Mobility + Security E3 csomagnak is része. További információt [A céges felhasználói hozzáférési használati feltételek kezelése](terms-and-conditions-create.md) című cikkben talál.
 
-### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices-preview----1048100--"></a>Autopilot-támogatás a hibrid, Azure Active Directory-hoz csatlakoztatott eszközökhöz (előzetes verzió) <!-- 1048100-->
-Az Autopilot segítségével mostantól hibrid, Azure Active Directory-hoz csatlakoztatott eszközöket állíthat be. A hibrid Autopilot funkció használatához az eszközöket csatlakoztatni kell a szervezet hálózatához. További információt a [Deploy hybrid Azure AD joined devices using Intune and Windows Autopilot](windows-autopilot-hybrid.md) (Hibrid, Azure AD-hez csatlakoztatott eszközök üzembe helyezése az Intune és a Windows Autopilot használatával) című cikkben talál.
-Ez a funkció néhány napon belül kerül bevezetésre a felhasználók között. Előfordulhat tehát, hogy Ön nem tudja követni ezeket a lépéseket addig, amíg a fiókjában is meg nem jelenik ez az újítás.
-
 ### <a name="android-device-owner-mode-support---3188762--"></a>Támogatás az Android Device Owner módhoz <!--3188762-->
 A Samsung Knox Mobile Enrollment esetében az Intune mostantól támogatja az eszközöknek az Android Device Owner kezelési módra való regisztrációját. A Wi-Fi- és mobilhálózatok felhasználói az eszköz első bekapcsolása után csupán néhány érintéssel regisztrálhatnak. További információ: [Eszközök automatikus regisztrációja a Samsung Knox Mobile Enrollmenttel](android-samsung-knox-mobile-enroll.md).
 
@@ -126,11 +137,14 @@ Az Intune mostantól támogatja a Windows rendszerű eszközök korrelátorazono
 
 ### <a name="intune-app-protection-policies----2984657---"></a>Az Intune alkalmazásvédelemre vonatkozó szabályzata <!-- 2984657 -->
 Az Intune alkalmazásvédelemre vonatkozó szabályzatának segítségével többféle adatvédelmi beállítást konfigurálhat az Intune védelemben részesített alkalmazásaira, például a Microsoft Outlookra és a Microsoft Wordre vonatkozóan. E beállítások megjelenését és működését az [iOS](app-protection-policy-settings-ios.md) és az [Android](app-protection-policy-settings-android.md) esetében is módosítottuk, így könnyebben találhatja meg az egyes beállításokat. A szabályzatra vonatkozó beállítások három kategóriába tartoznak:
-- **Adatáthelyezés** – Ebbe a csoportba tartoznak az adatszivárgás elleni védelem (DLP) vezérlői, például a kivágás, a másolás, a beillesztés és a mentés másként művelet korlátozásai. Ezek a beállítások azt határozzák meg, hogy a felhasználók miként használhatják az alkalmazásokban található adatokat.
-- **Hozzáférésre vonatkozó követelmények** – Ez a csoport tartalmazza az alkalmazásonként megadott PIN-kód lehetőségeket, amelyek azt határozzák meg, hogy a végfelhasználó miként férhet hozzá az alkalmazásokhoz munkahelyi környezetben.  
+- **Adatáthelyezés** – Ebbe a csoportba tartoznak az adatszivárgás elleni védelem (DLP) vezérlői, például a kivágás, a másolás, a beillesztés és a mentés másként művelet korlátozásai. Ezek a beállítások szabják meg, hogy hogyan kezelhetik a felhasználók az adatokat az alkalmazásokban.
+- **Hozzáférési követelmények** – Ez a csoport tartalmazza a PIN-kód alkalmazásonkénti beállítási lehetőségeit, amelyek meghatározzák, hogyan férnek hozzá a végfelhasználók az alkalmazásokhoz egy munkahelyi környezetben.  
 - **Feltételes bevezetés** – Ebbe a csoportba olyan beállítások tartoznak, mint az operációs rendszerre vonatkozó minimális beállítások, a függetlenítésészlelés és a rootolt eszközök felderítése, valamint az offline türelmi időszakok.  
   
-A beállítások funkciói nem módosulnak, de könnyebben találhatók majd meg, ha Ön a szabályzatlétrehozási folyamatban dolgozik. 
+A beállítások funkciói nem módosulnak, de könnyebben találhatók majd meg, ha Ön a szabályzatlétrehozási folyamatban dolgozik.
+
+### <a name="new-intune-device-subscription-sku---3312071--"></a>Új Intune-beli eszköz-előfizetési termékváltozat!--3312071-->
+A vállalatok számára az eszközkezelés költségeinek csökkentéséhez már elérhető egy új, eszközalapú előfizetési termékváltozat. Ennek az Intune-beli eszköz-termékváltozatnak a licencelése eszközönként történik, havi elszámolással. Az ár a licencprogramtól függően változik. A következő programokban érhető el: közvetlen csatorna, Nagyvállalati Szerződés (EA), Microsoft-termékek és -szolgáltatások program (MPSA), valamint nyitott és felhőbeli megoldásszolgáltató (CSP).
 
 ### <a name="intune-apps"></a>Intune-alkalmazások
 
@@ -138,7 +152,7 @@ A beállítások funkciói nem módosulnak, de könnyebben találhatók majd meg
 Az Intune 8 GB-ra növelte a Line-of-business- (LOB) alkalmazások maximális csomagméretét. További információt az [Alkalmazások hozzáadása a Microsoft Intune-hoz](apps-add.md) című cikkben talál.
 
 #### <a name="add-custom-brand-image-for-company-portal-app----1916266---"></a>Egyéni márkaembléma hozzáadása a Céges portál alkalmazáshoz <!-- 1916266 -->
-A Microsoft Intune rendszergazdájaként Ön olyan egyéni márkaemblémát tölthet fel, amely háttérképként jelenik majd meg a felhasználónak az iOS Céges portál alkalmazásban található profiloldalán. További információkat a Céges portál alkalmazás konfigurálásáról [a Microsoft Intune Céges portál alkalmazás konfigurálását](company-portal-app.md) ismertető cikkből tudhat meg.
+A Microsoft Intune-rendszergazdák feltölthetnek egy egyéni márkaemblémát, amely háttérképként jelenik meg a felhasználó profiloldalán az iOS-en, a Céges portál alkalmazásban. További információkat a Céges portál alkalmazás konfigurálásáról [a Microsoft Intune Céges portál alkalmazás konfigurálását](company-portal-app.md) ismertető cikkből tudhat meg.
 
 #### <a name="intune-will-maintain-the-office-localized-language-when-updating-office-on-end-users-machines----2971030---"></a>Az Intune megőrzi a honosított Office nyelvét a végfelhasználói gépekre telepített Office frissítésekor <!-- 2971030 -->
 Amikor az Intune telepíti az Office-t a végfelhasználó számítógépén, a végfelhasználók automatikusan ugyanazt a nyelvcsomagokat kapják meg, amelyekkel már eddig is rendelkeztek a korábbi .MSI Office-telepítések esetében. További információt az [Office 365-alkalmazások hozzárendelése Windows 10-es eszközökhöz a Microsoft Intune-nal](apps-add-office365.md) című cikkben talál.
@@ -146,7 +160,7 @@ Amikor az Intune telepíti az Office-t a végfelhasználó számítógépén, a 
 ### <a name="monitor-and-troubleshoot"></a>Monitorozás és hibaelhárítás
 
 #### <a name="new-intune-support-experience-in-the-microsoft-365-device-management-portal----3076965---"></a>Új Intune támogatási felület a Microsoft 365 Eszközkezelési portálon <!-- 3076965 -->
-Hamarosan új Súgó és támogatás felületet vezetünk be az Intune esetében a [Microsoft 365 Eszközkezelési portálon]( http://devicemanagement.microsoft.com). Az új felületen saját szavaival fejtheti ki problémáját, valamint hibaelhárítási ötleteket kaphat, és webalapú szervizelési tartalmakat találhat. Ezeket a megoldásokat szabályokon alapuló gépi tanulási algoritmus biztosítja, amelyet a felhasználók kérései generálnak.  
+Hamarosan új Súgó és támogatás felületet vezetünk be az Intune esetében a [Microsoft 365 Eszközkezelési portálon]( http://devicemanagement.microsoft.com). Az új felületen saját szavaival fejtheti ki problémáját, valamint hibaelhárítási ötleteket kaphat, és webalapú szervizelési tartalmakat találhat. Ezeket a megoldásokat szabályokon alapuló gépi tanulási algoritmus biztosítja a felhasználók kérései alapján.  
 
 A problémákra összpontosító útmutatáson túl használhatja az új esetkészítő munkafolyamatot is, amellyel e-mailen vagy telefonon keresztül nyithat támogatási eseteket.  
 
@@ -675,7 +689,7 @@ A Microsoft Intune-nal integrálható, Pradeo nevű, veszélyforrások elleni mo
 
 ## <a name="week-of-june-18-2018"></a>2018. június 18-i hét
 
-### <a name="edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Edge-mobiltámogatás az Intune alkalmazásvédelmi szabályzataihoz <!-- 1817882 -->
+### <a name="microsoft-edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Microsoft Edge-mobiltámogatás az Intune alkalmazásvédelmi szabályzataihoz <!-- 1817882 -->
 
 A Microsoft Edge mobilböngésző mostantól támogatja az Intune-ban meghatározott alkalmazásvédelmi szabályzatokat.
 
@@ -784,7 +798,7 @@ Az iOS- és macOS-eszközök UDID (Unique Device Identifier) azonosítójának m
 A Microsoft Intune MDM által felügyelt eszközökön néha sikertelenek lehetnek az alkalmazástelepítések. Ilyen esetekben nem könnyű megérteni a hiba okát, illetve elhárítani azt. Bevezetjük az alkalmazás-hibaelhárítási funkcióink nyilvános előzetes verzióját. Ennek keretében megjelenik egy új, **Kezelt alkalmazások** nevű csomópont minden egyedülálló eszköz alatt. Ez a Intune MDM-en keresztül szolgáltatott alkalmazások listáját tartalmazza. A csomóponton belül az alkalmazástelepítési állapotokat tekintheti meg. Ha kijelöl egy önálló alkalmazást, megnyithatja annak hibaelhárítási nézetét. A hibaelhárítási nézetben megtekintheti az alkalmazás végpontok közötti életciklusát, például a létrehozási, a módosítási, a célzási dátumot, valamint az alkalmazás egy eszközre való továbbításának dátumát. Továbbá ha az alkalmazás telepítése sikertelen volt, megjelenik egy hibakód, és egy hasznos üzenet a hiba okáról. 
 
 #### <a name="intune-app-protection-policies-and-microsoft-edge----1818968---"></a>Intune-beli alkalmazásvédelmi szabályzatok és Microsoft Edge <!-- 1818968 -->
-A Microsoft Edge mobilböngésző (iOS és Android) mostantól támogatja a Microsoft Intune alkalmazásvédelmi szabályzatait. Az Intune azokat a felhasználókat is védeni fogja, akik iOS- és Android-eszközön jelentkeznek be Azure AD-fiókjukkal az Edge alkalmazásba. iOS-eszközökön a **Require managed browser for web content** (Felügyelt böngésző megkövetelése a webes tartalmakhoz) szabályzat engedélyezi a felhasználóknak a hivatkozások felügyelt Edge-ben való megnyitását.
+A Microsoft Edge mobilböngésző (iOS és Android) mostantól támogatja a Microsoft Intune alkalmazásvédelmi szabályzatait. Az Intune azokat a felhasználókat is védeni fogja, akik iOS- és Android-eszközön jelentkeznek be Azure AD-fiókjukkal az Edge alkalmazásba. iOS-eszközökön a **Require managed browser for web content** (Felügyelt böngésző megkövetelése a webes tartalmakhoz) szabályzat engedélyezi a felhasználóknak a hivatkozások felügyelt Microsoft Edge-ben való megnyitását.
 
 ## <a name="week-of-may-14-2018"></a>2018. május 14-i hét
 
@@ -1010,6 +1024,21 @@ A frissített megjelenés megtekintésez lépjen [Az alkalmazásfelhasználói f
 Mostantól a helyszíni Exchange-adatokhoz való Outlook Mobile-hozzáférést az Intune App Policy Protection (APP) és a feltételes hozzáférés segítségével védheti. Alkalmazásvédelmi szabályzat hozzáadásához vagy módosításához az Azure Portalon válassza a **Microsoft Intune** > **Ügyfélalkalmazások** > **Alkalmazásvédelmi szabályzatok** lehetőséget. A funkció használata előtt győződjön meg arról, hogy megfelel az [iOS-es és Androidos Outlook követelményeinek](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx).
 
 ## <a name="notices"></a>Értesítések
+
+### <a name="plan-for-change-performance-updates-to-intune-for-education---1750215--"></a>Tervezett módosítás: teljesítményfrissítések az Intune for Education szolgáltatáshoz <!--1750215-->
+Hozzáadunk néhány frissítést az Intune for Education szolgáltatáshoz a sebesség és a megbízhatóság növeléséhez, amikor beállításokat rendel hozzá a felhasználókhoz vagy az eszközökhöz. A változás részeként november vége felé új csoportokba fogjuk áthelyezni a szabályzatait és beállítás-hozzárendeléseit.
+
+#### <a name="how-does-this-affect-me"></a>Hogyan érint ez engem?
+
+Az Intune for Education ügyfeleként két dinamikus Azure Active Directory (Azure AD) csoporttal fog rendelkezni: „Minden felhasználó” és „Minden eszköz”. Ezeknek a frissítéseknek az alkalmazása után a „Minden felhasználó” és „Minden eszköz” Azure AD-csoportok nem lesznek láthatók az Intune for Education-konzolon. Azonban továbbra is meg fognak jelenni az Intune-ban az Azure AD-konzolon, és át lesznek nevezve „Minden felhasználó (elavult, ne használja)” és „Minden eszköz (elavult, ne használja)” névre.
+
+A frissítések bevezetése után már nem kell az Azure AD-csoportokat használnia az alkalmazások és a beállítások hozzárendelésére az Intune-ban. Ehelyett új csoportokba foguk áthelyezni a hozzárendelt beállításokat az Intune for Education-konzolon, amelyeket létre fogunk hozni az Ön számára, és amelyek továbbra is „Minden felhasználó” és „Minden eszköz” néven fognak megjelenni. Ezek a módosítások a háttérben fognak történni, ezért a Intune for Education-konzolon nem fog észlelni semmilyen változást. Nem várható, hogy ez negatív hatású lesz a végfelhasználókra vagy a regisztrált eszközökre. 
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Hogyan készüljek fel a változásra?
+Miközben mi áthelyezzük a hozzárendelt szabályzatokat, nem kell tennie semmit. Ha jelenleg a szabályzatok hozzárendelését az Intune for Education-konzolon végzi, tegye ezt továbbra is.
+
+Ha jelenleg a fent említett Azure AD-csoportokhoz az Azure-beli Intune-ban rendeli hozzá a szabályzatokat, ehelyett inkább az Intune for Education-konzolon rendelje hozzá ezeket a Minden felhasználó és a Minden eszköz csoporthoz. Ha azt látja, hogy elavultként lettek átnevezve az Azure AD-csoportok a konzolon, a továbbiakban ne végezzen hozzárendelést az Azure AD-ben. Ha nem jelenleg használja az átnevezett csoportokat más célra, akkor törölje azokat.
+
 
 ### <a name="plan-for-change-intune-will-move-to-support-macos-1012-and-higher-in-december---2970975--"></a>Tervezett változtatás: Az Intune decemberben áttér a macOS 10.12-es és későbbi verzióinak támogatására <!--2970975--> 
 

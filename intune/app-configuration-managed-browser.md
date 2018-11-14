@@ -15,14 +15,14 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c3edbf3663d3226f806bf36af97b97cdf4d169c1
-ms.sourcegitcommit: ca33179b8bef98092eedcc22b0e709a862e31dce
+ms.openlocfilehash: 0c2a4ff4654b937449f8e7a36778a67a978bd6db
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49357087"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576868"
 ---
-# <a name="manage-internet-access-using-an-microsoft-intune-policy-protected-browser"></a>Az internet-hozzáférés kezelése Microsoft Intune-szabályzattal védett böngésző használatával
+# <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Az internet-hozzáférés kezelése Microsoft Intune-szabályzattal védett böngésző használatával
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -50,7 +50,7 @@ Az Managed Browser továbbra is használható lesz korábbi verziójú Android v
 
 ## <a name="application-protection-policies-for-protected-browsers"></a>Alkalmazásvédelmi szabályzatok a védelemmel ellátott böngészőkhöz
 
-Mivel az Edge és a Managed Browser rendelkeznek Intune SDK-integrációval, így alkalmazásvédelmi szabályzatok is alkalmazhatók rajtuk, például a következők:
+Mivel a Microsoft Edge és a Managed Browser rendelkeznek Intune SDK-integrációval, így alkalmazásvédelmi szabályzatok is alkalmazhatók rájuk, például a következők:
 - Kivágás, másolás és beillesztés műveletek korlátozása.
 - Képernyőmentés megakadályozása.
 - Annak biztosítása, hogy a vállalati hivatkozásokat csak a felügyelt alkalmazásokon és böngészőkön belül lehessen megnyitni.
@@ -65,7 +65,7 @@ Ezek a beállítások az alábbiakra alkalmazhatók:
 
 >[!NOTE]
 >Ha a felhasználók telepítik a Managed Browser alkalmazást az alkalmazásáruházból, és azt nem az Intune felügyeli, akkor az egyszerű webböngészőként használható, amely a Microsoft MyApps webhelyen keresztül támogatja az egyszeri bejelentkezést. A felhasználók közvetlenül a MyApps webhelyére vannak irányítva, ahol megjelenik az összes számukra kiosztott SaaS-alkalmazás.
-Ha az Edge vagy a Managed Browser böngészőt nem az Intune felügyeli, nem tudják elérni az Intune által kezelt más alkalmazások adatait. 
+Ha a Microsoft Edge vagy a Managed Browser böngészőt nem az Intune felügyeli, nem tudják elérni az Intune által kezelt más alkalmazások adatait. 
 
 
 ## <a name="conditional-access-for-protected-browsers"></a>Feltételes hozzáférés védett böngészőkhöz
@@ -151,30 +151,30 @@ A Microsoft Edge vagy az Intune Managed Browser [Azure AD Alkalmazásproxyval]( 
 - Állítsa be a belső alkalmazásokat az Azure AD alkalmazásproxyban.
     - Az Alkalmazásproxy konfigurálásáról és az alkalmazások közzétételéről a [telepítési dokumentációban](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started) olvashat. 
 - A Managed Browser alkalmazás 1.2.0-s vagy annál újabb verzióját kell használnia.
-- A Managed Browser és az Edge alkalmazások felhasználói rendelkezzenek az alkalmazáshoz rendelt [Intune alkalmazásvédelmi szabályzattal]( app-protection-policy.md).
+- A Managed Browser és a Microsoft Edge alkalmazások felhasználói rendelkezzenek az alkalmazáshoz rendelt [Intune alkalmazásvédelmi szabályzattal]( app-protection-policy.md).
 
     > [!NOTE]
-    > Az Alkalmazásproxy frissített átirányítási adatainak érvénybe lépése a Managed Browserben és az Edge-ben akár 24 órát is igénybe vehet.
+    > Az Alkalmazásproxy frissített átirányítási adatainak érvénybe lépése a Managed Browserben és a Microsoft Edge-ben akár 24 órát is igénybe vehet.
 
 
 #### <a name="step-1-enable-automatic-redirection-to-a-protected-browser-from-outlook"></a>1. lépés: Automatikus átirányítás engedélyezése az Outlookból egy védett böngészőhöz
 Az Outlookot olyan alkalmazásvédelmi szabályzattal kell konfigurálni, amelyben engedélyezett a **Webes tartalom megjelenítésének korlátozása a Managed Browser alkalmazásra** beállítás.
 
 #### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>2. lépés: Alkalmazáskonfigurációs szabályzat hozzárendelése a védett böngészőhöz.
-Ez az eljárás az Alkalmazásproxy átirányítás használatára konfigurálja a Managed Browser vagy az Edge alkalmazást. Az Edge vagy a Managed Browser alkalmazás konfigurációjának létrehozására vonatkozó eljárással adja meg az alábbi kulcs–érték párt:
+Ez az eljárás az Alkalmazásproxy átirányítás használatára konfigurálja a Managed Browser vagy a Microsoft Edge alkalmazást. A Microsoft Edge vagy a Managed Browser alkalmazás konfigurációjának létrehozására vonatkozó eljárással adja meg az alábbi kulcs-érték párt:
 
 | Kulcs                                                             | Érték    |
 |-----------------------------------------------------------------|----------|
 | **com.microsoft.intune.mam.managedbrowser.AppProxyRedirection** | **true** |
 
-További információt a Managed Browser, az Edge és az Azure AD Alkalmazásproxy a helyszíni webalkalmazásokhoz való zökkenőmentes (és védett) hozzáféréséhez szükséges együttes használatáról az Enterprise Mobility + Security blog [Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access) (Együtt jobb: Az Intune és az Azure Active Directory együtt teszi jobbá a felhasználói hozzáférést) című blogbejegyzésében találhat.
+További információt a Managed Browser, a Microsoft Edge és az Azure AD Alkalmazásproxy a helyszíni webalkalmazásokhoz való zökkenőmentes (és védett) hozzáféréséhez szükséges együttes használatáról az Enterprise Mobility + Security blog [Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access) (Együtt jobb: Az Intune és az Azure Active Directory együtt teszi jobbá a felhasználói hozzáférést) című blogbejegyzésében találhat.
 
 > [!NOTE]
-> Az Edge ugyanazokat a kulcs–érték párokat használja, mint a Managed Browser. 
+> A Microsoft Edge ugyanazokat a kulcs-érték párokat használja, mint a Managed Browser. 
 
 ## <a name="how-to-configure-the-homepage-for-a-protected-browser"></a>Védett böngésző kezdőlapjának beállítása
 
-Ezzel a beállítással adható meg a kezdőlap, amelyet a felhasználók egy védett böngésző elindításakor vagy egy új lap létrehozásakor látnak. Az Edge vagy a Managed Browser alkalmazás konfigurációjának létrehozására vonatkozó eljárással adja meg az alábbi kulcs–érték párt:
+Ezzel a beállítással adható meg a kezdőlap, amelyet a felhasználók egy védett böngésző elindításakor vagy egy új lap létrehozásakor látnak. A Microsoft Edge vagy a Managed Browser alkalmazás konfigurációjának létrehozására vonatkozó eljárással adja meg az alábbi kulcs-érték párt:
 
 |                                Kulcs                                |                                                           Érték                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
@@ -182,13 +182,13 @@ Ezzel a beállítással adható meg a kezdőlap, amelyet a felhasználók egy v�
 
 ## <a name="how-to-configure-bookmarks-for-a-protected-browser"></a>Védett böngésző könyvjelzőinek konfigurálása
 
-Ezzel a beállítással konfigurálhatók az Edge vagy a Managed Browser felhasználói számára elérhető könyvjelzők.
+Ezzel a beállítással konfigurálhatók a Microsoft Edge vagy a Managed Browser felhasználói számára elérhető könyvjelzők.
 
 - Ezeket a könyvjelzőket a felhasználók nem törölhetik és nem módosíthatják
 - Ezek a könyvjelzők a lista tetején jelennek meg. A felhasználók által készített könyvjelzők ezek alá kerülnek.
 - Ha engedélyezte az alkalmazásproxy-átirányítást, akkor alkalmazásproxyval rendelkező webalkalmazásokat akár belső, akár külső URL-cím használatával is hozzáadhat.
 
-Az Edge vagy a Managed Browser alkalmazás konfigurációjának létrehozására vonatkozó eljárással adja meg az alábbi kulcs–érték párt:
+A Microsoft Edge vagy a Managed Browser alkalmazás konfigurációjának létrehozására vonatkozó eljárással adja meg az alábbi kulcs-érték párt:
 
 |                                Kulcs                                 |                                                                                                                                                                                                                                                         Érték                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -196,7 +196,7 @@ Az Edge vagy a Managed Browser alkalmazás konfigurációjának létrehozására
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-a-protected-browser"></a>Engedélyezett és letiltott URL-címek meghatározása egy védett böngésző számára
 
-Az Edge vagy a Managed Browser alkalmazás konfigurációjának létrehozására vonatkozó eljárással adja meg az alábbi kulcs–érték párt:
+A Microsoft Edge vagy a Managed Browser alkalmazás konfigurációjának létrehozására vonatkozó eljárással adja meg az alábbi kulcs-érték párt:
 
 |Kulcs|Érték|
 |-|-|

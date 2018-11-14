@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/14/2018
+ms.date: 11/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b540cd2b2751712604c0ae7172015cb109c9c1d8
-ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
+ms.openlocfilehash: 87f49c9aafa8b6f9f281a00e4d7bd297c354f90b
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/14/2018
-ms.locfileid: "39039437"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51511034"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Eszközök regisztrálásával kapcsolatos problémák elhárítása az Intune-ban
 
@@ -52,7 +52,7 @@ A felügyelt eszközök felhasználói össze tudják gyűjteni a regisztráció
 Ezek a problémák az összes eszközplatformon előfordulhatnak.
 
 ### <a name="device-cap-reached"></a>Eszközök maximális száma elérve
-**Probléma:** A regisztráció során hibaüzenet (például **A Vállalati portál átmenetileg nem érhető el**) jelenik meg egy iOS-eszközön, és a Configuration Managerben a DMPdownloader.log a **DeviceCapReached** hibát tartalmazza.
+**Probléma:** A regisztráció során hibaüzenet (például **A Céges portál átmenetileg nem érhető el**) jelenik meg, és a Configuration Managerben a DMPdownloader.log a **DeviceCapReached** hibát tartalmazza.
 
 **Megoldás:**
 
@@ -98,7 +98,7 @@ Az eszközszámkorlát elérésének elkerüléséhez mindig távolítsa el a m�
 
 1.  Győződjön meg arról, hogy a Mobileszköz-felügyeleti szolgáltató [megfelelően be van állítva](mdm-authority-set.md).
     
-2.  Győződjön meg arról, hogy a rendszer megfelelően szinkronizálta a felhasználói hitelesítő adatokat az Azure Active Directoryval. Ehhez ellenőrizze, hogy az egyszerű felhasználónév megegyezik-e az Active Directory adataival az Office 365 portálon.
+2.  Ellenőrizze, hogy a felhasználói hitelesítő adatokat megfelelően szinkronizálta-e a rendszer az Azure Active Directoryval. Ellenőrizheti, hogy a felhasználó egyszerű felhasználóneve megegyezik-e az Office 365 portálján található Active Directory-adatokkal.
     Ha a felhasználónév nem egyezik meg az Active Directory adataival:
 
     1.  Kapcsolja ki a DirSync eszközt a helyi kiszolgálón.
@@ -121,7 +121,7 @@ Az eszközszámkorlát elérésének elkerüléséhez mindig távolítsa el a m�
 
         -   Az összes felhasználó megjelenítése: `select * from [CM_ DBName].[dbo].[User_DISC]`.
 
-        -   Adott felhasználók megjelenítéséhez használja a következő lekérdezést, ahol a %testuser1% képviseli a megkeresni kívánt felhasználóhoz tartozó username@domain.com-t: `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
+        -   Adott felhasználók megjelenítéséhez használja a következő lekérdezést, ahol a %testuser1% a megkeresni kívánt felhasználóhoz tartozó username@domain.com helyőrzője: `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
 
         A lekérdezés megírása után válassza az **!Execute** lehetőséget.
         Az eredmények visszaadása után keresse meg a felhő felhasználójának azonosítóját.  Ha nem található azonosító, a felhasználó nem rendelkezik Intune-licenccel.
@@ -132,10 +132,15 @@ Az eszközszámkorlát elérésének elkerüléséhez mindig távolítsa el a m�
 **Megoldás:** Az [Office 365 felügyeleti központban](https://portal.office.com/) törölje a speciális karaktereket a vállalat nevéből, és mentse a vállalati adatokat.
 
 ### <a name="unable-to-sign-in-or-enroll-devices-when-you-have-multiple-verified-domains"></a>Nem lehet bejelentkezni vagy eszközöket regisztrálni több ellenőrzött tartomány esetén
-**Hiba:** Amikor a második ellenőrzött tartományt adja hozzá az AD FS-hez, a második tartomány egyszerű felhasználóneves (UPN) utótagjával rendelkező felhasználók nem tudnak bejelentkezni a portálokra vagy nem tudnak eszközöket regisztrálni.
+**Probléma:** Ez a probléma akkor merülhet fel, amikor egy második ellenőrzött tartományt ad hozzá az ADFS-hez. A második tartomány egyszerű felhasználóneves (UPN) utótagjával rendelkező felhasználók nem tudnak bejelentkezni a portálokra vagy nem tudnak eszközöket regisztrálni.
 
 
-<strong>Megoldás:</strong> Az olyan Microsoft Office 365-ügyfeleknek, akik egyszeri bejelentkezést (SSO) használnak az AD FS 2.0-n keresztül, és a munkahelyükön több felső szintű tartomány szerepel az UPN-utótagban (például @contoso.com vagy @fabrikam.com), az AD FS 2.0 összevonási szolgáltatás külön példányát kell telepíteni minden utótag esetében. Már létezik egy [összegzés az AD FS 2.0-hoz](http://support.microsoft.com/kb/2607496), amelyhez használható a <strong>SupportMultipleDomain</strong> kapcsolóval, hogy az AD FS-kiszolgáló támogassa az ilyen helyzetet anélkül, hogy további AD FS 2.0 kiszolgálókra lenne szükség. További információkat [ebben a blogban](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) talál.
+<strong>Megoldás:</strong> A Microsoft Office 365-ügyfeleknek az AD FS 2.0 Összevonási szolgáltatás egy külön példányát kell üzembe helyezniük minden utótaghoz az alábbi esetekben:
+- ha az AD FS 2.0-n keresztül egyszeri bejelentkezést (SSO-t) használnak
+- ha több felső szintű tartomány tartozik a szervezet egyszerű felhasználóneveinek utótagjaihoz (például @contoso.com vagy @fabrikam.com).
+
+
+Az [AD FS 2.0 összegzése](http://support.microsoft.com/kb/2607496) a <strong>SupportMultipleDomain</strong> kapcsolóval együtt használható, hogy az AD FS-kiszolgáló támogassa az ilyen helyzetet anélkül, hogy további AD FS 2.0 kiszolgálókra lenne szükség. További információt [ebben a blogban](https://blogs.technet.microsoft.uucom/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) talál.
 
 
 ## <a name="android-issues"></a>Android-problémák
@@ -146,8 +151,8 @@ A következő táblázat azon hibákat tartalmazza, melyeket Android-eszközök 
 
 |Hibaüzenet|Probléma|Megoldás|
 |---|---|---|
-|**A rendszergazdának hozzáférési licencet kell hozzárendelnie**<br>A rendszergazda nem adott hozzáférést az alkalmazás használatához. Kérjen segítséget a rendszergazdától, vagy próbálkozzon újra később.|Az eszközt nem lehet regisztrálni, mert a felhasználó fiókja nem rendelkezik a szükséges licenccel.|Ahhoz, hogy a felhasználók regisztrálhassák az eszközeiket, hozzájuk kell rendelni a szükséges licencet. Ez az üzenet azt jelenti, hogy nem rendelkeznek a megfelelő licenctípussal a meghatározott mobileszköz-kezelő szolgáltatóhoz. Ha például az Intune lett mobileszköz-kezelő szolgáltatóként meghatározva, és System Center 2012 R2 Configuration Manager-licencet használnak, ezt a hibaüzenetet látják.<br><br>További információ: [Intune-licencek felhasználói fiókokhoz való hozzárendelése](/intune/licenses-assign).
-|**A rendszergazdának be kell állítania a mobileszköz-felügyeleti szolgáltatót**<br>Úgy tűnik, hogy a rendszergazda még nem állította be a mobileszköz-felügyeleti szolgáltatót. Kérjen segítséget a rendszergazdától, vagy próbálkozzon újra később.|A mobileszköz-kezelő szolgáltató még nincs megadva.|A mobileszköz-kezelő szolgáltató nincs megadva az Intune-ban. További információ [a mobileszköz-felügyeleti szolgáltató beállításáról](/intune/mdm-authority-set).|
+|**A rendszergazdának hozzáférési licencet kell hozzárendelnie**<br>A rendszergazda nem adott hozzáférést az alkalmazás használatához. Kérjen segítséget a rendszergazdától, vagy próbálkozzon újra később.|Az eszközt nem lehet regisztrálni, mert a felhasználó fiókja nem rendelkezik a szükséges licenccel.|Ahhoz, hogy a felhasználók regisztrálhassák az eszközeiket, hozzájuk kell rendelni a szükséges licencet. Ez az üzenet azt jelenti, hogy nem rendelkeznek a megfelelő licenctípussal a mobileszköz-kezelő szolgáltatóhoz. Például ez a hiba jelenik meg, ha az alábbi állítások közül mindkettő igaz:<ol><li>Az Intune van beállítva mobileszköz-kezelési szolgáltatóként</li><li>Egy System Center 2012 R2 Configuration Manager-licencet használnak.</li></ol>További információ: [Intune-licencek felhasználói fiókokhoz való hozzárendelése](/intune/licenses-assign).|
+|**A rendszergazdának be kell állítania a mobileszköz-felügyeleti szolgáltatót**<br>Úgy tűnik, hogy a rendszergazda még nem állította be a mobileszköz-kezelő szolgáltatót. Kérjen segítséget a rendszergazdától, vagy próbálkozzon újra később.|A mobileszköz-kezelő szolgáltató még nincs megadva.|A mobileszköz-kezelő szolgáltató még nincs megadva az Intune-ban. További információ [a mobileszköz-felügyeleti szolgáltató beállításáról](/intune/mdm-authority-set).|
 
 
 ### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>Az eszközök nem tudnak lejelentkezni az Intune szolgáltatásnál, és az Intune felügyeleti konzolján „Nem megfelelő” állapotúként jelennek meg
@@ -157,7 +162,7 @@ A következő táblázat azon hibákat tartalmazza, melyeket Android-eszközök 
 - A felügyeleti konzolon **Nem megfelelő** felügyeleti állapotúnak látszanak.
 - A feltételes hozzáférési szabályzattal védett felhasználók elveszíthetik a vállalati erőforrásokhoz való hozzáférésüket.
 
-A Samsung megerősítette, hogy az egyes Samsung-eszközökre előtelepített Samsung Smart Manager szoftver inaktiválhatja az Intune Munkahelyi portált és összetevőit. Ha a Munkahelyi portál inaktív állapotú, nem futhat a háttérben, ezért nem tud kapcsolatot létesíteni az Intune szolgáltatással.
+Az egyes Samsung-eszközökre előtelepített Samsung Smart Manager szoftver inaktiválhatja az Intune Céges portált és összetevőit. Ha a Céges portál inaktív állapotú, nem futhat a háttérben, ezért nem tud kapcsolatot létesíteni az Intune szolgáltatással.
 
 **1. megoldás:**
 
@@ -168,7 +173,7 @@ Kérje meg a felhasználókat, hogy manuálisan indítsák el a Munkahelyi port�
 
 **2. megoldás:**
 
-Kérje meg a felhasználókat, hogy próbáljanak meg frissíteni az Android 6.0-s verziójára. Az Android 6.0 rendszerű eszközökön nem jelentkezik az inaktiválás problémája. A felhasználók a **Beállítások** > **Eszköz névjegye** > **Download updates manually** (Frissítések manuális letöltése) területen ellenőrizhetik, hogy elérhető-e frissítés. A frissítést az eszközön megjelenő útmutatás szerint végezhetik el.
+Kérje meg a felhasználókat, hogy próbáljanak meg frissíteni az Android 6.0-s verziójára. Az Android 6.0 rendszerű eszközökön nem jelentkezik az inaktiválás problémája. A **Beállítások** > **Eszköz névjegye** > **Frissítések manuális letöltése** területen ellenőrizheti, hogy elérhető-e frissítés. A frissítést a megjelenő útmutatás szerint végezheti el.
 
 **3. megoldás:**
 
@@ -206,13 +211,15 @@ Ha a 2. megoldás nem működik, kérje a felhasználókat a következő lépés
 
 1.  Ellenőrizze, hogy az Ön által használt Intune szolgáltatás verziójának megfelelő licenc van-e hozzárendelve a felhasználóhoz.
 
-2.  Győződjön meg arról, hogy az eszköz még nincs egy másik MDM szolgáltatóhoz regisztrálva, vagy még nincs hozzá felügyeleti profil telepítve.
+2.  Ellenőrizze, hogy az eszköz nincs-e egy másik mobileszköz-kezelő szolgáltatónál regisztrálva.
 
-3.  Ellenőrizze, hogy az Androidhoz készült Chrome az alapértelmezett böngésző-e, és a cookie-k engedélyezettek-e.
+3. Ellenőrizze, hogy az eszköz nem rendelkezik-e már egy kezelési profillal.
+
+4.  Ellenőrizze, hogy az Androidhoz készült Chrome az alapértelmezett böngésző-e, és a cookie-k engedélyezettek-e.
 
 ### <a name="android-certificate-issues"></a>Android-tanúsítványokkal kapcsolatos problémák
 
-**Probléma:** A felhasználó eszköze a következő üzenetet mutatja: *Nem tud bejelentkezni, mert az eszközön hiányzik egy szükséges tanúsítvány.*
+**Probléma:** A felhasználók eszközén a következő üzenet jelenik meg: *Nem tud bejelentkezni, mert az eszközön hiányzik egy szükséges tanúsítvány.*
 
 **1. megoldás**:
 
@@ -220,7 +227,7 @@ Előfordulhat, hogy a felhasználó [Az eszközhöz hiányzik egy szükséges ta
 
 **2. megoldás**:
 
-Ha a felhasználók a vállalati hitelesítő adatok megadását, illetve az összevont bejelentkezési oldalra való átirányítást követően is a hiányzó tanúsítványra utaló hibát látják, elképzelhető, hogy az Active Directory összevonási szolgáltatások (AD FS) kiszolgálójáról hiányzik egy közbenső tanúsítvány.
+A felhasználók a vállalati hitelesítő adatok megadását és az összevont bejelentkezési oldalra való átirányítást követően is a hiányzó tanúsítványra utaló hibát láthatják. Ebben az esetben a hiba azt jelentheti, hogy hiányzik egy közbenső tanúsítvány az Active Directory Összevonási szolgáltatások (AD FS) kiszolgálójáról
 
 A tanúsítványhiba azért fordul elő, mert az androidos eszközöknek közbenső tanúsítványokra van szükségük ahhoz, hogy szerepelhessenek az [SSL-kiszolgáló hello üzeneteiben](https://technet.microsoft.com/library/cc783349.aspx). Jelenleg az AD FS-kiszolgáló vagy a WAP és az AD FS közötti proxykiszolgáló alapértelmezett példányai csak az AD FS szolgáltatás SSL-tanúsítványát küldik el az SSL-kiszolgáló SSL-ügyfelek hello kérelmére adott hello válaszában.
 
@@ -256,16 +263,16 @@ Ha a kiszolgálótanúsítványt megfelelően telepítette, az eredményeknél c
 A következő táblázat azon hibákat tartalmazza, melyeket iOS-eszközök az Intune-ban való regisztrálásakor tapasztalhatnak a végfelhasználók.
 
 |Hibaüzenet|Probléma|Megoldás|
-|-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-------------|-----|----------|
 |NoEnrollmentPolicy|Nem található eszközregisztrációs szabályzat|Ellenőrizze, hogy az összes regisztrációs előfeltétel, mint például az Apple Push Notification szolgáltatás (APNs) tanúsítványa konfigurálva van-e, illetve azt, hogy az „iOS mint platform” engedélyezve van-e. Útmutatásért tekintse meg a [Set up iOS and Mac device management](ios-enroll.md) (iOS- és Mac-eszközök kezelésének beállítása) című cikket.|
 |DeviceCapReached|A már regisztrált mobileszközök száma túl magas.|A felhasználónak el kell távolítania az aktuálisan regisztrált mobileszközeit a Céges portálról, mielőtt másikat regisztrálhatna. Kövesse a megfelelő eszköz típusára vonatkozó utasításokat: [Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android), [iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios), [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows).|
-|APNSCertificateNotValid|Probléma merült fel azzal a tanúsítvánnyal kapcsolatban, amely lehetővé teszi a mobileszköz és a céges hálózat közötti kommunikációt.<br /><br />|Az Apple Push Notification Service (APNs) révén elérhetők a beléptetett iOS-eszközök. Ha nem lettek végrehajtva az APN-tanúsítvány beszerzésének lépései, vagy ha az APN-tanúsítvány lejárt, a beléptetési kísérletek ezzel az üzenettel hiúsulnak meg.<br /><br />A felhasználók konfigurálásához olvassa el [Az Active Directory szinkronizálása és felhasználók hozzáadása az Intune szolgáltatáshoz](users-add.md) című szakaszt, valamint a [felhasználók és eszközök rendszerezésével](groups-add.md) kapcsolatos tudnivalókat.|
-|AccountNotOnboarded|Probléma merült fel azzal a tanúsítvánnyal kapcsolatban, amely lehetővé teszi a mobileszköz és a céges hálózat közötti kommunikációt.<br /><br />|Az Apple Push Notification Service (APNs) révén elérhetők a beléptetett iOS-eszközök. Ha nem lettek végrehajtva az APN-tanúsítvány beszerzésének lépései, vagy ha az APN-tanúsítvány lejárt, a beléptetési kísérletek ezzel az üzenettel hiúsulnak meg.<br /><br />További információ: [Az iOS kezelésének beállítása a Microsoft Intune-nal](ios-enroll.md).|
-|DeviceTypeNotSupported|Lehet, hogy a felhasználó nem iOS-eszközzel próbált meg regisztrálni. A regisztrálni próbált mobileszköz nem támogatott.<br /><br />Győződjön meg róla, hogy az eszközön az iOS 8.0-ás vagy újabb verziója fut.<br /><br />|Győződjön meg róla, hogy a felhasználó eszközén 8.0-ás vagy újabb iOS-verziót fut.|
-|UserLicenseTypeInvalid|A mobileszköz nem regisztrálható, mert a felhasználói fiók még nem tagja egy szükséges felhasználói csoportnak.<br /><br />|Ahhoz, hogy a felhasználók regisztrálhassák eszközeiket, a megfelelő felhasználói csoport tagjának kell lenniük. Ez az üzenet azt jelenti, hogy nem rendelkeznek a megfelelő licenctípussal a meghatározott mobileszköz-kezelő szolgáltatóhoz. Ha például az Intune lett mobileszköz-kezelő szolgáltatóként meghatározva, és System Center 2012 R2 Configuration Manager-licencet használnak, ezt a hibaüzenetet látják.<br /><br />További információért tekintse át az alábbi cikkeket:<br /><br />Olvassa el [Az iOS és Mac kezelésének beállítása a Microsoft Intune-nal](ios-enroll.md) című szakaszt, illetve a felhasználók konfigurálásával kapcsolatban [Az Active Directory szinkronizálása és felhasználók hozzáadása az Intune szolgáltatáshoz](users-add.md) című szakaszt, valamint a [felhasználók és eszközök rendszerezésével](groups-add.md) kapcsolatos tudnivalókat.|
-|MdmAuthorityNotDefined|A mobileszköz-kezelő szolgáltató még nincs megadva.<br /><br />|A mobileszköz-kezelő szolgáltató nincs megadva az Intune-ban.<br /><br />Tekintse meg az 1. elemet [Az első lépések a Microsoft Intune 30 napos próbaverziójában](free-trial-sign-up.md) „6. lépés: Mobileszközök regisztrálása és alkalmazások telepítése” szakaszában.|
+|APNSCertificateNotValid|Probléma merült fel azzal a tanúsítvánnyal kapcsolatban, amely lehetővé teszi a mobileszköz és a céges hálózat közötti kommunikációt.<br /><br />|Az Apple Push Notification Service (APNs) révén elérhetők a regisztrált iOS-eszközök. A következő esetekben a regisztráció meghiúsul és ez az üzenet jelenik meg:<ul><li>Az APNs-tanúsítvány beszerzésének lépéseit nem végezték el, vagy</li><li>Az APNs-tanúsítvány lejárt.</li></ul>A felhasználók konfigurálásához olvassa el [Az Active Directory szinkronizálása és felhasználók hozzáadása az Intune szolgáltatáshoz](users-add.md) című szakaszt, valamint a [felhasználók és eszközök rendszerezésével](groups-add.md) kapcsolatos tudnivalókat.|
+|AccountNotOnboarded|Probléma merült fel azzal a tanúsítvánnyal kapcsolatban, amely lehetővé teszi a mobileszköz és a céges hálózat közötti kommunikációt.<br /><br />|Az Apple Push Notification Service (APNs) révén elérhetők a regisztrált iOS-eszközök. A következő esetekben a regisztráció meghiúsul és ez az üzenet jelenik meg:<ul><li>Az APNs-tanúsítvány beszerzésének lépéseit nem végezték el, vagy</li><li>Az APNs-tanúsítvány lejárt.</li></ul>További információ: [Az iOS kezelésének beállítása a Microsoft Intune-nal](ios-enroll.md).|
+|DeviceTypeNotSupported|Lehet, hogy a felhasználó nem iOS-eszközzel próbált meg regisztrálni. A regisztrálni próbált mobileszköz típusa nem támogatott.<br /><br />Győződjön meg róla, hogy az eszközön az iOS 8.0-ás vagy újabb verziója fut.<br /><br />|Győződjön meg róla, hogy a felhasználó eszközén 8.0-ás vagy újabb iOS-verziót fut.|
+|UserLicenseTypeInvalid|A mobileszköz nem regisztrálható, mert a felhasználói fiók még nem tagja egy szükséges felhasználói csoportnak.<br /><br />|Ahhoz, hogy a felhasználók regisztrálhassák eszközeiket, a megfelelő felhasználói csoport tagjának kell lenniük. Ez az üzenet azt jelenti, hogy nem rendelkeznek a megfelelő licenctípussal a mobileszköz-kezelő szolgáltatóhoz. Például ez a hiba jelenik meg, ha az alábbi állítások közül mindkettő igaz:<ol><li>Az Intune van beállítva mobileszköz-kezelési szolgáltatóként</li><li>Egy System Center 2012 R2 Configuration Manager-licencet használnak.</li></ol>További információért tekintse át az alábbi cikkeket:<br /><br />Olvassa el [Az iOS és Mac kezelésének beállítása a Microsoft Intune-nal](ios-enroll.md) című szakaszt, illetve a felhasználók konfigurálásával kapcsolatban [Az Active Directory szinkronizálása és felhasználók hozzáadása az Intune szolgáltatáshoz](users-add.md) című szakaszt, valamint a [felhasználók és eszközök rendszerezésével](groups-add.md) kapcsolatos tudnivalókat.|
+|MdmAuthorityNotDefined|A mobileszköz-kezelő szolgáltató még nincs megadva.<br /><br />|A mobileszköz-kezelő szolgáltató még nincs megadva az Intune-ban.<br /><br />Tekintse meg az 1. elemet [Az első lépések a Microsoft Intune 30 napos próbaverziójában](free-trial-sign-up.md) „6. lépés: Mobileszközök regisztrálása és alkalmazások telepítése” szakaszában.|
 
-### <a name="devices-are-inactive-or-the-admin-console-cannot-communicate-with-them"></a>Az eszközök inaktívak, vagy a felügyeleti konzol nem tud kommunikálni velük
+### <a name="devices-are-inactive-or-the-admin-console-cant-communicate-with-them"></a>Az eszközök inaktívak, vagy a felügyeleti konzol nem tud kommunikálni velük
 **Probléma:** Az iOS-eszközök nem jelentkeznek be az Intune szolgáltatásba. Az eszközök csak a szolgáltatásba való rendszeres bejelentkezéssel őrizhetik meg a vállalati erőforrásokhoz való hozzáférési jogosultságukat. Ha az eszközök rendszeres bejelentkezése nem történik meg:
 
 - Nem kaphatják meg a szabályzatot, az alkalmazásokat és a távoli parancsokat az Intune szolgáltatástól.
@@ -274,7 +281,7 @@ A következő táblázat azon hibákat tartalmazza, melyeket iOS-eszközök az I
 
 **Megoldás:** Az alábbi megoldások megosztásával segíthet a végfelhasználóknak visszaszerezni a vállalati erőforrásokhoz való hozzáférési jogosultságukat.
 
-Amikor a felhasználók elindítják a Vállalati portál iOS-alkalmazást, megállapítható, hogy az eszköz kapcsolata megszakadt-e az Intune-nal. Ha az alkalmazás azt észleli, hogy nincs kapcsolat, automatikusan megpróbál szinkronizálni az Intune-nal az újrakapcsolódáshoz, és a felhasználók a következő értesítést fogják látni: **A szinkronizálási kísérlet folyamatban van...** beágyazott értesítés.
+Amikor a felhasználók elindítják a Vállalati portál iOS-alkalmazást, megállapítható, hogy az eszköz kapcsolata megszakadt-e az Intune-nal. Ha az alkalmazás azt észleli, hogy nincs kapcsolat, automatikusan megpróbál szinkronizálni az Intune-nal az újrakapcsolódáshoz, és a felhasználók a következő értesítést fogják látni: **A szinkronizálási kísérlet folyamatban van...** .
 
   ![A szinkronizálási kísérlet folyamatban van – értesítés](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_trying_to_sync_notification.png)
 
@@ -295,13 +302,15 @@ Regisztráció után az eszközök ismét kifogástalan állapotba kerülnek, é
 ### <a name="verify-ws-trust-13-is-enabled"></a>Ellenőrizze, hogy a WS-Trust 1.3 engedélyezve van-e
 **Probléma:** Az eszközregisztrációs programhoz (DEP) tartozó iOS-eszközöket nem lehet regisztrálni
 
-A felhasználói affinitással rendelkező DEP-eszközök regisztrációjához engedélyezni kell a WS-Trust 1.3 Username/Mixed végpontot a felhasználói jogkivonat kérelmezése céljából. Az Active Directory alapértelmezés szerint engedélyezi ezt a végpontot. A Get-AdfsEndpoint PowerShell-parancsmagot futtatva, majd a trust/13/UsernameMixed végpontot megkeresve láthatja az engedélyezett végpontok listáját. Példa:
+A felhasználói affinitással rendelkező DEP-eszközök regisztrálása esetében a felhasználói jogkivonat kérelmezéséhez engedélyezni kell a WS-Trust 1.3 Username/Mixed végpontot. Az Active Directory alapértelmezés szerint engedélyezi ezt a végpontot. A Get-AdfsEndpoint PowerShell-parancsmagot futtatva, majd a trust/13/UsernameMixed végpontot megkeresve láthatja az engedélyezett végpontok listáját. Például:
 
       Get-AdfsEndpoint -AddressPath “/adfs/services/trust/13/UsernameMixed”
 
 További információt a [Get-AdfsEndpoint dokumentációjában](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint) talál.
 
-További információt az [Ajánlott eljárások az Active Directory összevonási szolgáltatások biztonságossá tételéhez](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/best-practices-securing-ad-fs) című cikkben talál. Ha további segítségre van szüksége annak megállapításához, hogy a WS-Trust 1.3 Username/Mixed végpont engedélyezve van-e az ön identitás-összevonási szolgáltatójában, akkor az ADFS használata esetén forduljon a Microsoft ügyfélszolgálatához, külső identitásszolgáltató esetében pedig a szolgáltatóhoz.
+További információt az [Ajánlott eljárások az Active Directory összevonási szolgáltatások biztonságossá tételéhez](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/best-practices-securing-ad-fs) című cikkben talál. Ha segítséget szeretne kérni a WS-Trust 1.3 Username/Mixed identitás-összevonási szolgáltatóbeli engedélyezési állapotának megállapításához, tegye a következőket:
+- forduljon a Microsoft ügyfélszolgálatához, ha az ADFS-t használja
+- forduljon a külső szállítóhoz.
 
 
 ### <a name="profile-installation-failed"></a>Profiltelepítési hiba
@@ -311,11 +320,13 @@ További információt az [Ajánlott eljárások az Active Directory összevoná
 
 1.  Ellenőrizze, hogy az Ön által használt Intune szolgáltatás verziójának megfelelő licenc van-e hozzárendelve a felhasználóhoz.
 
-2.  Győződjön meg arról, hogy az eszköz még nincs egy másik MDM szolgáltatóhoz regisztrálva, vagy még nincs hozzá felügyeleti profil telepítve.
+2.  Ellenőrizze, hogy az eszköz nincs-e egy másik mobileszköz-kezelő szolgáltatónál regisztrálva.
 
-3.  Navigáljon a [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) oldalra, és telepítse a profilt a rendszer kérésekor.
+3. Ellenőrizze, hogy az eszköz nem rendelkezik-e már egy kezelési profillal.
 
-4.  Ellenőrizze, hogy az iOS-hez készült Safari az alapértelmezett böngésző-e, és a cookie-k engedélyezettek-e.
+4.  Navigáljon a [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) oldalra, és telepítse a profilt a rendszer kérésekor.
+
+5.  Ellenőrizze, hogy az iOS-hez készült Safari az alapértelmezett böngésző-e, és a cookie-k engedélyezettek-e.
 
 ### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>A regisztrált iOS-eszköz nem jelenik meg a konzolon a System Center Configuration Managerbe integrált Intune használata esetén
 **Hiba:** A felhasználó regisztrálja az iOS-eszközt, de az nem jelenik meg a Configuration Manager felügyeleti konzolon. Az eszköz nem jelzi, hogy már regisztrálva van. Lehetséges okok:
@@ -334,11 +345,83 @@ További információt az [Ajánlott eljárások az Active Directory összevoná
 Hamarosan közzétesszük az arra vonatkozó példákat, hogy mit kell keresni ezekben a naplófájlokban.
 
 
+### <a name="users-ios-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>A felhasználó iOS-eszköze több mint 10 percig a regisztrációs képernyőn marad
+
+**Probléma**: Egy regisztrálandó eszköz elakadhat az alábbi két képernyő egyikén:
+- A végső Microsoft-konfigurációra való várakozás során
+- Nem érhető el a Guided Access alkalmazás. Forduljon a rendszergazdához.
+
+A probléma a következő esetekben jelentkezhet:
+- átmeneti szolgáltatáskimaradás tapasztalható az Apple szolgáltatásaiban, vagy
+- az iOS-regisztráció a táblán látható módon VPP-tokenek használatára van beállítva, de a VPP-token problémába ütközik.
+
+| Regisztrációs beállítások | Érték |
+| ---- | ---- |
+| Platform | iOS |
+| Felhasználói affinitás | Felhasználói affinitással rendelkező eszközök regisztrálása |
+|Hitelesítés a Céges portállal az Apple Beállítási asszisztense helyett | Igen |
+| A Céges portál telepítése a VPP-vel | Token használata: token címe |
+| A Céges portál futtatása egyalkalmazásos módban a hitelesítésig | Igen |
+
+**Megoldás**: A probléma megoldásához a következőket kell tennie:
+1. Határozza meg, hogy hibás-e a VPP-token, és ha igen, javítsa ki.
+2. Azonosítsa, mely eszközök vannak letiltva.
+3. Törölje az érintett eszközök összes adatát.
+4. Kérje meg a felhasználót, hogy kezdje újra a regisztrációs folyamatot.
+
+#### <a name="determine-if-theres-something-wrong-with-the-vpp-token"></a>Annak meghatározása, hogy hibás-e a VPP-token
+1. Válassza az **Intune** > **Eszközök regisztrálása** > **Apple-regisztráció** > **Regisztrációs programbeli token** > token neve > **Profilok** > profil neve > **Kezelés** > **Tulajdonságok** lehetőséget.
+2. Tekintse át a tulajdonságokat, és ellenőrizze, hogy találhatók-e a következőhöz hasonló hibák:
+    - A token lejárt.
+    - A token a Céges portál licenceinek hatókörén kívülre esik.
+    - A tokent egy másik szolgáltatás használja.
+    - A tokent egy másik bérlő használja.
+    - A tokent törölték.
+3. Hárítsa el a token problémáit.
+
+#### <a name="identify-which-devices-are-blocked-by-the-vpp-token"></a>A VPP-token által letiltott eszközök azonosítása
+1. Lépjen az **Intune** > **Eszközök regisztrálása** > **Apple-regisztráció** > **Regisztrációs programbeli tokenek** > token neve > **Eszközök** területre.
+2. Szűrje a **Profil állapota** oszlopot **Letiltva** állapot szerint.
+3. Jegyezze fel a **letiltott** eszközök sorozatszámait.
+
+#### <a name="remotely-wipe-the-blocked-devices"></a>A letiltott eszközök adatainak távoli törlése
+Miután kijavította a VPP-token problémáit, törölnie kell a letiltott eszközök adatait.
+1. Lépjen az **Intune** > **Eszközök** > **Minden eszköz** > **Oszlopok** > **Sorozatszám** > **Alkalmaz** területre. 
+2. A letiltott eszközök esetén válassza ki őket a **Minden eszköz** listában, majd válassza a **Törlés** > **Igen** lehetőséget.
+
+#### <a name="tell-the-users-to-restart-the-enrollment-process"></a>A felhasználók megkérése a regisztrációs folyamat újrakezdésére
+A letiltott eszközök törlését követően megkérheti a felhasználókat, hogy kezdjék újra a regisztrációs folyamatot.
+
+## <a name="macos-issues"></a>macOS-problémák
+
+### <a name="macos-enrollment-errors"></a>macOS-regisztrálási hibák
+**1. hibaüzenet:** *Úgy tűnik, hogy egy virtuális gépet használ. Győződjön meg arról, hogy teljesen konfigurálta a virtuális gépet, beleértve a sorozatszámot és a hardvermodellt. Ha ez nem egy virtuális gép, forduljon az ügyfélszolgálathoz.*  
+
+**2. hibaüzenet:** *Problémák adódtak az eszköz felügyelet alá vonásakor. Ezt a problémát okozhatja egy virtuális gép használata, ha korlátozott sorozatszámmal rendelkezik, vagy ha az eszköz már hozzá van rendelve valaki máshoz. Sajátítsa el, hogyan oldhatók meg az ilyen problémák, vagy forduljon a cég ügyfélszolgálatához.*
+
+**Probléma:** Ez az üzenet lehet az alábbi okok bármelyikének a következménye:  
+* Egy macOS rendszerű virtuális gép (VM) nincs megfelelően konfigurálva  
+* Olyan eszközkorlátozásokat engedélyezett, amelyek megkövetelik, hogy az eszköz vállalati tulajdonú legyen, vagy regisztrált eszközsorozatszámmal rendelkezzen az Intune-ban  
+* Az eszköz már regisztrálva van, és még hozzá van rendelve valaki máshoz az Intune-ban  
+
+**Megoldás:** Először ellenőrizze a felhasználónál, hogy melyik probléma áll fenn az eszközén. Ez után alkalmazza a következő megoldások közül a legrelevánsabbat:
+* Ha a felhasználó tesztelési célból regisztrál virtuális gépet, győződjön meg róla, hogy az teljesen konfigurálva van, hogy az Intune felismerhesse a sorozatszámát és a hardvermodellt. További információ a [virtuális gépek beállításáról](macos-enroll.md#enroll-virtual-macos-machines-for-testing) az Intune-ban.  
+* Ha a szervezet olyan regisztrációs korlátozásokat vezetett be, amelyek letiltják a személyes macOS-eszközöket, akkor manuálisan kell [hozzáadnia a személyes eszköz sorozatszámát](corporate-identifiers-add.md#manually-enter-corporate-identifiers) az Intune-hoz.  
+* Ha az eszköz még hozzá van rendelve egy másik felhasználóhoz az Intune-ban, akkor a korábbi tulajdonosa nem használta a Céges portál alkalmazást az eltávolításához vagy alaphelyzetbe állításához. A elavult eszközrekord törlése az Intune-ból:  
+
+    1. Lépjen az [Intune-ba az Azure Portalon](https://portal.manage.microsoft.com), és jelentkezzen be a rendszergazdai hitelesítő adataival.
+    2. Lépjen az **Intune** > Eszközök**Minden eszköz** lapra.  
+    3. Keresse meg a regisztrációs problémával rendelkező eszközt. Az eredmények szűkítéséhez keressen az eszköz neve vagy a MAC-/hardvercím alapján.
+    4. Válassza ki az eszközt > **Törlés**. Törölje az eszközhöz társított összes többi bejegyzést.  
+
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>Problémák a System Center Configuration Managerbe integrált Intune használatakor
 ### <a name="mobile-devices-disappear"></a>Mobileszközök tűnnek el
-**Hiba:** Miután sikeresen regisztrált egy mobileszközt a Configuration Managerbe, eltűnik a mobileszköz-gyűjteményből, de továbbra is rendelkezik felügyeleti profillal, és szerepel a CSS-átjáróban.
+**Hiba:** Miután sikeresen regisztrált egy mobileszközt a Configuration Managerbe, az eltűnik a mobileszköz-gyűjteményből. Az eszköz azonban továbbra is rendelkezik felügyeleti profillal, és szerepel a CSS-átjáróban.
 
-**Megoldás:** Ez azért fordulhat elő, mert egyedi eljárással rendelkezik a tartományhoz nem csatlakozó eszközök eltávolításához, vagy a felhasználó kivonta az eszközt az előfizetésből. Ha meg szeretné állapítani, hogy melyik eljárás vagy felhasználói fiók távolította el az eszközt a Configuration Manager konzolból, hajtsa végre az alábbi lépéseket.
+**Megoldás:** Ez a következők miatt fordulhat elő:
+- Egy egyéni folyamat eltávolítja a tartományhoz nem csatlakozó eszközöket, vagy 
+- a felhasználó kivonta az eszközt az előfizetésből.
+Ha meg szeretné állapítani, hogy melyik eljárás vagy felhasználói fiók távolította el az eszközt a Configuration Manager konzolból, hajtsa végre az alábbi lépéseket.
 
 #### <a name="check-how-device-was-removed"></a>Az eszköz eltávolításának ellenőrzése
 
@@ -354,27 +437,24 @@ Hamarosan közzétesszük az arra vonatkozó példákat, hogy mit kell keresni e
 
 5.  Ellenőrizze, hogy a Configuration Manager nem rendelkezik-e ütemezett feladattal, parancsfájllal vagy egyéb folyamattal, amely automatikusan kiürítheti a tartományhoz nem csatlakozó, a mobil- vagy a kapcsolódó eszközöket.
 
-
-
-
 ### <a name="other-ios-enrollment-errors"></a>Egyéb iOS-beléptetési hibák
 Az iOS-regisztrálási hibák listáját a dokumentációban, az [iOS-eszközregisztrációs problémák hibaelhárítása a Microsoft Intune-ban](https://support.microsoft.com/help/4039809/troubleshooting-ios-device-enrollment-in-intune) című cikkben találhatja.
 
 ## <a name="pc-issues"></a>PC-kkel kapcsolatos problémák
 
-
 |Hibaüzenet|Probléma|Megoldás|
 |---|---|---|
-|**A rendszergazdának hozzáférési licencet kell hozzárendelnie**<br>A rendszergazda nem adott hozzáférést az alkalmazás használatához. Kérjen segítséget a rendszergazdától, vagy próbálkozzon újra később.|Az eszközt nem lehet regisztrálni, mert a felhasználó fiókja nem rendelkezik a szükséges licenccel.|Ahhoz, hogy a felhasználók regisztrálhassák az eszközeiket, hozzájuk kell rendelni a szükséges licencet. Ez az üzenet azt jelenti, hogy nem rendelkeznek a megfelelő licenctípussal a meghatározott mobileszköz-kezelő szolgáltatóhoz. Ha például az Intune lett mobileszköz-kezelő szolgáltatóként meghatározva, és System Center 2012 R2 Configuration Manager-licencet használnak, ezt a hibaüzenetet látják.<br>További információ [az Intune-licencek felhasználói fiókokhoz való hozzárendelésével](https://docs.microsoft.com/intune/licenses-assign) kapcsolatban.|
+|**A rendszergazdának hozzáférési licencet kell hozzárendelnie**<br>A rendszergazda nem adott hozzáférést az alkalmazás használatához. Kérjen segítséget a rendszergazdától, vagy próbálkozzon újra később.|Az eszközt nem lehet regisztrálni, mert a felhasználó fiókja nem rendelkezik a szükséges licenccel.|Ahhoz, hogy a felhasználók regisztrálhassák az eszközeiket, hozzájuk kell rendelni a szükséges licencet. Ez az üzenet azt jelenti, hogy nem rendelkeznek a megfelelő licenctípussal a mobileszköz-kezelő szolgáltatóhoz. Például ez a hiba jelenik meg, ha az alábbi állítások közül mindkettő igaz: <ol><li>Az Intune van beállítva mobileszköz-kezelési szolgáltatóként</li><li>Egy System Center 2012 R2 Configuration Manager-licencet használnak.</li></ol>További információ [az Intune-licencek felhasználói fiókokhoz való hozzárendelésével](https://docs.microsoft.com/intune/licenses-assign) kapcsolatban.|
 
 
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>A gép már regisztrálva van – hibakód: hr 0x8007064c
 **Hiba:** A regisztrálás sikertelen **A gép már regisztrálva van** hibaüzenettel. A regisztrálási napló a **hr 0x8007064c** hibakódot tartalmazza.
 
-Ennek az lehet az oka, hogy a számítógép korábban regisztrálva volt, vagy olyan számítógép klónozott lemezképét tartalmazza, amely már regisztrálva volt. Az előző fiók fióktanúsítványa továbbra is megtalálható a számítógépen.
-
-
+Ez a hiba akkor fordulhat elő, ha a számítógépet:
+- korábban már regisztrálták, vagy
+- egy már regisztrált számítógép klónozott lemezképével rendelkezik.
+Az előző fiók fióktanúsítványa továbbra is megtalálható a számítógépen.
 
 **Megoldás:**
 
@@ -397,10 +477,10 @@ Ennek az lehet az oka, hogy a számítógép korábban regisztrálva volt, vagy 
 |Hibakód|Lehetséges probléma|Javasolt megoldás|
 |--------------|--------------------|----------------------------------------|
 |0x80CF0437 |Az ügyfélszámítógép órája nem a helyes időre van beállítva.|Győződjön meg róla, hogy az ügyfélszámítógép órája és időzónája a helyes értékre van beállítva.|
-|0x80240438, 0x80CF0438, 0x80CF402C|Nem lehet kapcsolódni az Intune szolgáltatáshoz. Ellenőrizze az ügyfél proxybeállításait.|Ellenőrizze, hogy az Intune támogatja-e az ügyfélszámítógép proxybeállításait, és hogy az ügyfélszámítógépnek van-e internetkapcsolata.|
-|0x80240438, 0x80CF0438|Az Internet Explorer és a helyi rendszer proxybeállításai nincsenek konfigurálva.|Nem lehet kapcsolódni az Intune szolgáltatáshoz. Ellenőrizze az ügyfél proxybeállításait, és győződjön meg arról, hogy az Intune támogatja őket, illetve hogy az ügyfélszámítógépnek van internetkapcsolata.|
+|0x80240438, 0x80CF0438, 0x80CF402C|Nem lehet kapcsolódni az Intune szolgáltatáshoz. Ellenőrizze az ügyfél proxybeállításait.|Győződjön meg arról, hogy az Intune támogatja az ügyfélszámítógép proxykonfigurációját. Ellenőrizze, hogy az ügyfélszámítógép rendelkezik-e internetkapcsolattal.|
+|0x80240438, 0x80CF0438|Az Internet Explorer és a helyi rendszer proxybeállításai nincsenek konfigurálva.|Nem lehet kapcsolódni az Intune szolgáltatáshoz. Ellenőrizze az ügyfél proxybeállításait. Győződjön meg arról, hogy az Intune támogatja az ügyfélszámítógép proxykonfigurációját. Ellenőrizze, hogy az ügyfélszámítógép rendelkezik-e internetkapcsolattal.|
 |0x80043001, 0x80CF3001, 0x80043004, 0x80CF3004|A beléptetési csomag elavult.|Töltse le és telepítse az aktuális ügyfélszoftvercsomagot a Felügyelet munkaterületen.|
-|0x80043002, 0x80CF3002|A fiók karbantartási módban van.|Nem tud új ügyfélszámítógépeket beléptetni, ha a fiók karbantartási módban van. A fiókbeállítások megtekintéséhez jelentkezzen be a fiókba.|
+|0x80043002, 0x80CF3002|A fiók karbantartási módban van.|Nem tud új ügyfélszámítógépeket regisztrálni, ha a fiók karbantartási módban van. A fiókbeállítások megtekintéséhez jelentkezzen be a fiókba.|
 |0x80043003, 0x80CF3003|A fiókot törölték.|Ellenőrizze, hogy az Intune-fiókja és -előfizetése aktív-e. A fiókbeállítások megtekintéséhez jelentkezzen be a fiókba.|
 |0x80043005, 0x80CF3005|Az ügyfélszámítógépet eltávolították.|Várjon néhány órát, távolítsa el az ügyfélszoftver minden régebbi verzióját a számítógépről, majd próbálja meg újból telepíteni az ügyfélszoftvert.|
 |0x80043006, 0x80CF3006|Elérte a fiók számára engedélyezett maximális munkaállomásszámot.|A szervezetnek további munkaállomásokat kell vásárolnia, mielőtt további ügyfélszámítógépeket léptethet be a szolgáltatásba.|

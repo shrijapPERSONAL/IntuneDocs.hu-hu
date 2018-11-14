@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 723f4b4e-3090-4811-84ff-6af652abea5a
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2b52265bb9b3df800c0e13450a2154e46098a933
-ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
+ms.openlocfilehash: e85a88b984aaa05423a35f222de9c56d7366d15a
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50410820"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51511009"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>Rövid útmutató: Csoport létrehozása felhasználók kezeléséhez
 
@@ -37,7 +37,7 @@ Ha nem rendelkezik Intune-előfizetéssel, [regisztráljon egy ingyenes próbafi
 
 ## <a name="sign-in-to-intune"></a>Bejelentkezés az Intune-ba
 
-Jelentkezzen be az [Intune-ba](https://aka.ms/intuneportal) [globális rendszergazdaként vagy Intune-szolgáltatásadminisztrátorként](users-add.md#types-of-administrators). Ha létrehozott egy Intune próba-előfizetést, az a fiók lesz a globális rendszergazda, amelyikkel létrehozta azt.
+Jelentkezzen be az [Intune-ba](https://aka.ms/intuneportal) [globális rendszergazdaként vagy Intune-szolgáltatásadminisztrátorként](users-add.md#types-of-administrators). Ha létrehozott egy Intune próba-előfizetést, az a fiók lesz a globális rendszergazda, amelyikkel azt létrehozta.
 
 ## <a name="create-a-group"></a>Csoport létrehozása
 
@@ -57,7 +57,9 @@ Miután sikeresen létrehozta a csoportot, az megjelenik az **Összes csoport** 
 
 ## <a name="next-steps"></a>További lépések
 
-Ebben a rövid útmutatóban az Intune használatával hozott létre csoportot egy meglévő felhasználó alapján.
+Ebben a rövid útmutatóban az Intune használatával hozott létre csoportot egy meglévő felhasználó alapján. Csoportok Intune-hoz való hozzáadásáról további információ a [Csoportok hozzáadása a felhasználók és eszközök rendszerezéséhez](groups-add.md) szakaszban olvasható.
+
+Kövesse az Intune rövid útmutatóinak sorozatát a következő rövid útmutatóval.
 
 > [!div class="nextstepaction"]
-> [Eszközmegfelelőségi szabályzat létrehozása](quickstart-create-policy.md)
+> [Rövid útmutató: Windows 10-es eszközök automatikus regisztrációjának beállítása](quickstart-setup-auto-enrollment.md)

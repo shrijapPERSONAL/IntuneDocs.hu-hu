@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/26/2018
+ms.date: 11/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a95f68f0a9794047b8adb7f9ab729bb4905f2379
-ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
+ms.openlocfilehash: ac0348736e5975633776c86dee88555dfceb6919
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50679389"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576885"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Eszközkorlátozási beállítások Windows 10-hez (és újabb rendszerekhez) az Intune-ban
 A cikk bemutatja a Microsoft Intune összes olyan eszközkorlátozásokra vonatkozó beállítását, melyek konfigurálhatók Windows 10 rendszerű eszközökhöz.
@@ -25,13 +25,13 @@ A cikk bemutatja a Microsoft Intune összes olyan eszközkorlátozásokra vonatk
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 > [!Note]
-> Nem minden lehetőség érhető el a Windows összes kiadásában.
+> Nem minden lehetőség áll rendelkezésre a Windows összes kiadásában
 
 ## <a name="general"></a>Általános
 - **Képernyőfelvétel (csak mobileszköz)** – A felhasználó képként rögzítheti a képernyőn látható tartalmat.
 - **Másolás és beillesztés (csak mobileszköz)** – Engedélyezi az alkalmazások közötti másolási és beillesztési műveletet az eszközön.
 - **Regisztráció manuális törlése** – Lehetővé teszi a felhasználó számára a munkahelyi fiók manuális törlését az eszközről.
-   - A rendszer nem alkalmazza ezt a szabályzatbeállítást, ha a számítógép az Azure Active Directoryhoz van csatlakoztatva, és engedélyezve van az automatikus regisztráció. 
+   - A rendszer nem alkalmazza ezt a szabályzatbeállítást, ha a számítógép az Azure AD-hoz van csatlakoztatva, és engedélyezve van az automatikus regisztráció. 
    - A szabályzatbeállítás a Windows 10 Home rendszerű számítógépekre nem vonatkozik.
 - **Főtanúsítvány manuális telepítése (csak mobileszköz)** – Letiltja a felhasználó számára a főtanúsítványok és a köztes szolgáltatói tanúsítványok manuális telepítését.
 
@@ -51,7 +51,7 @@ A cikk bemutatja a Microsoft Intune összes olyan eszközkorlátozásokra vonatk
 - **Eszközfelderítés** – Letiltja az eszköz más eszközök általi felderíthetőségét.
 - **Feladatváltó (csak mobileszköz)** – Letiltja a feladatváltót az eszközön.
 - **SIM-kártyahibát jelző párbeszédpanel (csak mobileszköz)** – Letiltja a hibaüzenetet, amely akkor jelenne meg, amikor a rendszer nem észlel SIM-kártyát az eszközön.
-- **Szabadkézi munkaterület** – Megakadályozza, hogy a felhasználók hozzáférjenek a szabadkézi munkaterülethez. Ha ez a beállítás nincs konfigurálva, a szabadkézi munkaterület engedélyezve lesz (a funkció elérhető), így a felhasználók a zárolási képernyőn is elérhetik azt.
+- **Szabadkézi munkaterület** – Megakadályozza, hogy a felhasználók hozzáférjenek a szabadkézi munkaterülethez. Ha a beállítása **Nincs konfigurálva**, a szabadkézi munkaterület engedélyezve lesz (a funkció elérhető), így a felhasználók a zárolási képernyőn is elérhetik azt.
 - **Automatikus újbóli üzembe helyezés** – Lehetővé teszi a rendszergazdai jogosultságokkal rendelkező felhasználóknak, hogy az eszköz zárolási képernyőjén a **CTRL + Win + R** billentyűkombinációval törölhessék az összes felhasználói adatot és beállítást. Ennek hatására automatikusan megtörténik az eszköz újbóli konfigurálása és regisztrálása felügyeletre.
 - **Felhasználók hálózati csatlakozásának megkövetelése az eszköz telepítése során (csak Windows Insider)** – A **Kötelező** beállítással megkövetelheti az eszköz hálózathoz csatlakozását, mielőtt továbblépne a Hálózat oldalon a Windows 10 telepítése során. Amíg ez a funkció előzetes verziójú, a beállítás használatához a Windows Insider 1809-es buildje, vagy annál újabb verzió szükséges.
 
@@ -70,14 +70,14 @@ Windows 10 Mobile-eszközök esetében: a megadott számú sikertelen bejelentke
 
 ## <a name="personalization"></a>Személyre szabás
 
-- **Az asztal háttérképének URL-címe (csak asztali verzió)** – A Windows asztali háttérképeként használandó JPEG formátumú kép URL-címének megadása. A felhasználók ezt nem tudják módosítani.
+- **Az asztal háttérképének URL-címe (csak asztali verzió)** – A Windows asztali háttérképeként használandó JPEG formátumú kép URL-címének megadása. A felhasználók nem módosíthatják a képet.
 
 ## <a name="privacy"></a>Személyes adatok védelme
 
 -   **Bemenet személyre szabása** – Letiltja a felhőalapú beszédszolgáltatások használatát a Cortanához, a diktáláshoz vagy a Microsoft Áruház alkalmazásaihoz. Ha engedélyezi ezeket a szolgáltatásokat, a Microsoft hangadatokat gyűjthet a szolgáltatás fejlesztéséhez.
 -   **A társításra és adatvédelemre vonatkozó felhasználói beleegyezést kérő üzenetek automatikusa elfogadása** – Lehetővé teszi a Windowsnak, hogy automatikusan elfogadja a társítási és adatvédelmi beleegyezést kérő üzeneteket az alkalmazások futtatása közben.
-- **Felhasználói tevékenységek közzététele**: A megosztott élmények és a feladatváltóban nemrég használt erőforrások megelőzéséhez ezt a beállítást **tiltsa le**.
-- **Csak a helyi tevékenységek**: A csak a helyi tevékenységek alapján megosztott használat és a feladatváltóban nemrég használt erőforrások felderítésének megelőzéséhez ezt a beállítást **tiltsa le**.
+- **Felhasználói tevékenységek közzététele**: **Letiltás** a megosztott élmények és a feladatváltóban nemrég használt erőforrások felderítésének megelőzéséhez.
+- **Csak a helyi tevékenységek**: **Letiltás** a csak a helyi tevékenységek alapján megosztott használat és a feladatváltóban nemrég használt erőforrások felderítésének megelőzéséhez.
 
 Meghatározhatja azon adatok körét, amelyeket az eszközön futó összes alkalmazás elérhet. Definiálhat kivételeket alkalmazásonként az **Alkalmazásonkénti adatvédelmi kivételek** segítségével.
 
@@ -99,7 +99,7 @@ Meghatározhatja azon adatok körét, amelyeket az eszközön futó összes alka
 - **Antennák** – Egyes alkalmazások adatokat küldenek és fogadnak az eszközben lévő antennákkal (például Bluetooth-antennával). Az ilyen alkalmazásoknak szüksége lehet az antennák be- és kikapcsolására. Megadhatja, hogy az alkalmazás kezelheti-e ezeket az antennákat.
 - **Feladatok** – Megadhatja, hogy az alkalmazás hozzáférhet-e a feladatokhoz.
 - **Megbízható eszközök** – Megadhatja, hogy az alkalmazás használhat-e megbízható eszközöket (már csatlakoztatott, illetve a PC-hez, táblagéphez vagy telefonhoz gyárilag tartozó hardvereket). Például: televíziók és kivetítők.
-- **Visszajelzés és diagnosztika** – Megadhatja, hogy az alkalmazás hozzáférhet-e a diagnosztikai adatokhoz.
+- **Visszajelzés és diagnosztika** – Megadhatja, hogy az alkalmazás hozzáférjen-e a diagnosztikai adatokhoz.
 - **Szinkronizálás eszközökkel** – Megadhatja, hogy az alkalmazás oszthat-e meg és szinkronizálhat-e adatokat automatikusan olyan vezeték nélküli eszközökkel, amelyek nincsenek kifejezetten párosítva az adott PC-vel, táblagéppel vagy telefonnal.
 
 ## <a name="per-app-privacy-exceptions"></a>Alkalmazásonkénti adatvédelmi kivételek
@@ -153,38 +153,38 @@ Az egyes alkalmazásokhoz beállíthat az alapértelmezett adatvédelmi beállí
 -   **Játékvideó-rögzítő (csak asztali verzióban)** – Meghatározza, hogy engedélyezett-e játékok rögzítése és közvetítése.
 -   **Csak áruházból származó alkalmazások** – Meghatározza, hogy a felhasználók telepíthetnek-e alkalmazásokat az alkalmazás-áruháztól eltérő forrásokból.
 
-## <a name="edge-browser"></a>Microsoft Edge böngésző
+## <a name="microsoft-edge-browser"></a>Microsoft Edge böngésző
 
--   **Microsoft Edge böngésző (csak mobil)** – Engedélyezi az Edge böngésző használatát az eszközön.
--   **Címsor legördülő funkciója (csak asztali gép)** – Ezzel akadályozhatja meg, hogy az Edge megjelenítse a javaslatok listáját egy legördülő menüben gépelés közben. Ezzel minimalizálhatja a hálózati sávszélességnek a Microsoft Edge és a Microsoft szolgáltatásai közötti használatát.
+-   **Microsoft Edge böngésző (csak mobil)** – Engedélyezi a Microsoft Edge böngésző használatát az eszközön.
+-   **Címsor legördülő funkciója (csak asztali gép)** – Ezzel akadályozhatja meg, hogy a Microsoft Edge megjelenítse a javaslatok listáját egy legördülő menüben gépelés közben. Ezzel a beállítással minimalizálhatja a hálózati sávszélességnek a Microsoft Edge és a Microsoft szolgáltatásai közötti használatát.
 -   **Kedvencek szinkronizálása a Microsoft-böngészők között (csak asztali gépek)** – Lehetővé teszi, hogy a Windows szinkronizálja a kedvenceket az Internet Explorer és a Microsoft Edge között.
--   **„Do Not Track” fejlécek küldése** – Arra konfigurálja az Edge böngészőt, hogy Do Not Track (Követés letiltása) fejléceket küldhessen a felhasználók által meglátogatott webhelyeknek.
+-   **„Do Not Track” fejlécek küldése** – Arra konfigurálja a Microsoft Edge böngészőt, hogy Do Not Track (Követés letiltása) fejléceket küldhessen a felhasználók által meglátogatott webhelyeknek.
 -   **Cookie-k** – Engedélyezi a böngészőnek, hogy mentse az internetről érkező cookie-kat az eszközre.
--   **JavaScript** – Engedélyezi a szkriptek (például a JavaScript) futtatását az Edge böngészőben.
+-   **JavaScript** – Engedélyezi a szkriptek (például a JavaScript) futtatását a Microsoft Edge böngészőben.
 -   **Előugró ablakok** – Blokkolja az előugró ablakokat a böngészőben (csak a Windows 10 asztali verzióra vonatkozik).
 -   **Keresési javaslatok** – Lehetővé teszi, hogy a keresőmotor webhelyeket javasoljon a keresőkifejezések beírása közben.
 -   **Intranetes forgalom átirányítása az Internet Explorerbe** – Engedélyezi a felhasználók számára az intranetes webhelyek megnyitását az Internet Explorerben (csak a Windows 10 asztali verzióra vonatkozik).
 -   **Automatikus kitöltés** – Engedélyezi a felhasználók számára, hogy módosítsák a böngésző automatikus kiegészítési funkciójának beállításait (csak a Windows 10 asztali verzióra vonatkozik).
 -   **Jelszókezelő** – Engedélyezi vagy letiltja a Microsoft Edge böngésző Jelszókezelő szolgáltatását.
 -   **Vállalati üzemmód webhelylistájának helye** – Megadja, hogy hol található a Vállalati üzemmódban megnyíló webhelyek listája. Ezt a listát a felhasználók nem szerkeszthetik.<br>(Csak a Windows 10 asztali verzió.)
--   **Fejlesztői eszközök** – Megakadályozza, hogy a végfelhasználók megnyithassák az Edge fejlesztői eszközeit.
--   **Bővítmények** – Engedélyezi, hogy a végfelhasználók Edge-bővítményeket telepítsenek az eszközön.
+-   **Fejlesztői eszközök** – Megakadályozza, hogy a végfelhasználók megnyithassák a Microsoft Edge fejlesztői eszközeit.
+-   **Bővítmények** – Engedélyezi, hogy a végfelhasználók Microsoft Edge-bővítményeket telepítsenek az eszközön.
 -   **InPrivate-böngészés** – Megakadályozza, hogy a végfelhasználók InPrivate-böngészési munkamenetet nyissanak meg.
--   **Első futtatáskori oldal megjelenítése** – Megakadályozza a bemutató lap megjelenítését az Edge első futtatásakor.
-    -   **Első futtatás URL-címe** – Megadhatja annak a lapnak az URL-címét, amely akkor jelenik meg, amikor a felhasználó első alkalommal futtatja a Microsoft Edge böngészőt (csak Windows 10 mobil verziónál).
+-   **Első futtatáskori oldal megjelenítése** – Megakadályozza a bemutató lap megjelenítését a Microsoft Edge első futtatásakor.
+    -   **Első futtatás URL-címe** – Megadhatja annak a lapnak az URL-címét, amely akkor jelenik meg, amikor a felhasználó első alkalommal futtatja a Microsoft Edge böngészőt (csak Windows 10 Mobile verziónál).
 -   **Kezdőlapok** – Azoknak a webhelyeknek a listája, amelyek kezdőlapokként szeretne megjeleníteni a Microsoft Edge böngészőben (csak asztali verzióban).
 -   **Kezdőlap módosítása** – Engedélyezheti a felhasználóknak, hogy megváltoztassák a Microsoft Edge megnyitásakor megjelenő kezdőlapokat. A Kezdőlapok beállítással hozhatja létre a Microsoft Edge indításakor megjelenő lapot vagy lapok listáját.
 -   **Az about:flags laphoz való hozzáférés letiltása** – Megakadályozza, hogy a végfelhasználó hozzáférhessen a Microsoft Edge about:flags lapjához, amely a fejlesztői és kísérleti beállításokat tartalmazza.
 -   **WebRTC LocalHost IP-címe** – Letiltja a felhasználó localhost IP-címének megjelenítését a WebRTC protokollal történő telefonhívások esetén.
 -   **Alapértelmezett keresőmotor** – Meghatározza az alapértelmezetten használandó keresőmotort. A végfelhasználók ezt az értéket bármikor módosíthatják.
--   **Böngészési adatok törlése kilépéskor** – Előzmények és böngészési adatok törlése, amikor a felhasználó bezárja az Edge böngészőt.
+-   **Böngészési adatok törlése kilépéskor** – Előzmények és böngészési adatok törlése, amikor a felhasználó bezárja a Microsoft Edge böngészőt.
 -   **Adatgyűjtés élő csempéhez** – Leállítja a Windows élő csempéből történő adatgyűjtését, amikor a felhasználók kitűznek az Microsoft Edge böngészőből egy webhelyet a Start menübe.
 -  **Kedvencek lista** – A kedvencek fájl elérési útját adja meg. Például: http://contoso.com/favorites.html.
--  **A kedvencek módosításának korlátozása** – Ha ezt **Letiltva** értékre állítja, a felhasználók nem használhatják a Kedvencek listában a hozzáadás, importálás, rendezés és szerkesztés funkciókat. 
+-  **A kedvencek módosításának korlátozása** - **Letiltás** beállítás esetén a felhasználók nem használhatják a Kedvencek listában a hozzáadás, importálás, rendezés és szerkesztés funkciókat. 
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
 
-- **SmartScreen a Microsoft Edge böngészőhöz** – Az Edge SmartScreen webhely- és fájlletöltésekhez való hozzáférésének engedélyezése.
+- **SmartScreen a Microsoft Edge böngészőhöz** – A Microsoft Edge SmartScreen webhely- és fájlletöltésekhez való hozzáférésének engedélyezése.
 - **Rosszindulatú webhelyelérés** - Meggátolja a felhasználókat abban, hogy figyelmen kívül hagyják a Windows Defender SmartScreen szűrő figyelmeztetéseit, és letiltja a webhely elérését.
 - **Ellenőrizetlen fájlletöltés** - Meggátolja a felhasználókat abban, hogy figyelmen kívül hagyják a Windows Defender SmartScreen szűrő figyelmeztetéseit, és letiltja az ellenőrizetlen fájlok letöltését.
 
@@ -235,7 +235,27 @@ Az egyes alkalmazásokhoz beállíthat az alapértelmezett adatvédelmi beállí
 
 ## <a name="start"></a>Indítás
 
-- **Alkalmazások levétele a tálcáról** – Megakadályozza, hogy a felhasználó alkalmazásokat távolítson el a Start menüből.
+- **Start menü elrendezése** – A Start menü asztali eszközökön való testreszabásához feltölthet egy XML-fájlt, amely tartalmazza a testreszabásokat, többek között az alkalmazások listázási sorrendjét és egyebeket. A felhasználók nem módosíthatják a Start menü Ön által megadott elrendezését.
+- **Webhelyek rögzítése csempékre a Start menüben** Képek importálását a Microsoft Edge-ből, amelyek hivatkozásokként jelennek meg a Windows Start menüben az asztali eszközökön.
+- **Alkalmazások levétele a tálcáról** – A **Letiltás** választásával megakadályozza, hogy a felhasználó alkalmazásokat távolítson el a Start menüből.
+- **Gyors felhasználóváltás** – A **Letiltás** választásával megakadályozhatja az egyidejűleg bejelentkezett felhasználók közötti váltást, ha nem jelentkeznek ki.
+- **Legtöbbet használt alkalmazások** – A **Letiltás** választásával elrejtheti a Start menüben a leggyakrabban használt alkalmazásokat. A Gépház alkalmazásban is letiltja a megfelelő váltógombot.
+- **Legutóbb telepített alkalmazások** – A **Letiltás** választásával elrejtheti a nemrégiben telepített alkalmazások megjelenítését a Start menüben. A Gépház alkalmazásban is letiltja a megfelelő váltógombot.
+- **Kezdőképernyő módja** – Kiválaszthatja a kezdőképernyő megjelenítési módját. Választhat a **Teljes képernyős** vagy a **Nem teljes képernyős** üzemmód között.
+- **Legutóbb megnyitott elemek a gyorslistákban** – A **Letiltás** választásával elrejtheti az elemek gyorslistáit a Start menüben és a tálcán. A Gépház alkalmazásban is letiltja a megfelelő váltógombot.
+- **Alkalmazáslista** – Kiválaszthatja, hogyan jelenjen meg a Gépház alkalmazás. A választható lehetőségek: 
+  - Összecsukás
+  - A Gépház alkalmazás összecsukása és letiltása 
+  - A Gépház alkalmazás eltávolítása és letiltása
+- **Főkapcsoló** – A **Letiltás** választásával elrejtheti a főkapcsolót a Start menüben.
+- **Felhasználó csempe** – A **Letiltás** választásával elrejtheti a felhasználó csempéjét a Start menüben.
+  - **Zárolás** – A **Letiltás** választásával elrejtheti a `Lock` lehetőséget a felhasználó csempéjén a Start menüben.
+  - **Kijelentkezés** – A **Letiltás** választásával elrejtheti a `Sign out` lehetőséget a felhasználó csempéjén a Start menüben.
+- **Leállítás** – A **Letiltás** választásával elrejtheti a `Update and shut down` és a `Shut down` lehetőséget a főkapcsolón a Start menüben.
+- **Alvó állapot** – A **Letiltás** választásával elrejtheti a(z) `Sleep` lehetőséget a főkapcsolón a Start menüben.
+- **Hibernálás** – A **Letiltás** választásával elrejtheti a `Hibernate` lehetőséget a főkapcsolón a Start menüben.
+- **Fiókváltás** – A **Letiltás** választásával elrejtheti a `Switch account` lehetőséget a felhasználó csempéjén a Start menüben.
+- **Újraindítási beállítások** – A **Letiltás** választásával elrejtheti a `Update and restart` és az `Restart` lehetőséget a főkapcsolón a Start menüben.
 - **Dokumentumok a Start menüben** – A Windows Start menü Dokumentumok mappájának megjelenítése vagy elrejtése.
 - **Letöltések a Start menüben** – A Windows Start menü Letöltések mappájának megjelenítése vagy elrejtése.
 - **Fájlkezelő a Start menüben** – A Fájlkezelő alkalmazás megjelenítése vagy elrejtése a Windows Start menüjében.
@@ -374,12 +394,15 @@ Ha a meghajtón található fájlok írásvédettek, a Defender nem tudja eltáv
 
 ## <a name="cloud-printer"></a>Felhőbeli nyomtató
 
-- **Nyomtatófelderítési URL-cím** – A felhőbeli nyomtatók felderítéséhez használt végpont.
-- **Nyomtatóelérési szolgáltató URL-címe** – Az OAuth-jogkivonatok beszerzésének hitelesítési végpontja.
-- **Azure-beli natív ügyfélalkalmazás GUID-azonosítója** – Az OAuth-szolgáltatótól OAuth-jogkivonatok letöltésére jogosult ügyfélalkalmazás GUID-azonosítója.
-- **Nyomtatási szolgáltatás erőforrás-URI-ja** – A nyomtatási szolgáltatás Azure Portal webhelyen konfigurált OAuth-erőforrás-URI-ja.
-- **Lekérdezendő nyomtatók maximális száma (csak mobil)** – Az egyes felderítési végpontokból lekérdezendő nyomtatók maximális száma.
-- **Nyomtatófelderítési szolgáltatás erőforrás-URI-ja** – A nyomtatófelderítési szolgáltatás Azure Portal webhelyen konfigurált OAuth-erőforrás-URI-ja.
+- **Nyomtatófelderítési URL-cím** – Megadhatja a felhőbeli nyomtatók felderítéséhez használt URL-címet.
+- **Nyomtatóelérési szolgáltató URL-címe** – Megadhatja az OAuth-jogkivonatok beszerzésének hitelesítési végpontját. Adjon meg például egy ehhez hasonlót: `https://login.microsoftonline.com/your Azure AD Tenant ID`.
+- **Azure-beli natív ügyfélalkalmazás GUID-azonosítója** – Az OAuth-szolgáltatótól OAuth-jogkivonatok letöltésére jogosult ügyfélalkalmazás GUID-azonosítójának megadása.
+- **Nyomtatási szolgáltatás erőforrás-URI-ja** – A nyomtatási szolgáltatás Azure Portal webhelyen konfigurált OAuth-erőforrás-URI-jának megadása. Adjon meg például egy ehhez hasonlót: `http://MicrosoftEnterpriseCloudPrint/CloudPrint`.
+- **Lekérdezendő nyomtatók maximális száma (csak mobil)** – A lekérdezhető nyomtatók maximális számának megadása. Például írja be a következőt: `10`.
+- **Nyomtatófelderítési szolgáltatás erőforrás-URI-ja** – A nyomtatófelderítési szolgáltatás Azure Portal webhelyen konfigurált OAuth-erőforrás-URI-jának megadása. Például: `http://MopriaDiscoveryService/CloudPrint`.
+
+> [!TIP]
+> Miután beállította a [Windows Serverhez a hibrid felhőnyomtatást](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-overview), konfigurálhatja ezeket a beállításokat, majd telepítheti Windows rendszerű eszközökre.
 
 ## <a name="local-printer"></a>Helyi nyomtató
 - **Nyomtatók** – A hozzáadott helyi nyomtatók listája.
