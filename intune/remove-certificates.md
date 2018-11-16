@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d4287322fd494c97cf24feb8cc16435a4405f2af
-ms.sourcegitcommit: 7a649a5995600fb91817643e20a5565caedbb8f2
-ms.translationtype: HT
+ms.openlocfilehash: a823ea2f04d8e3a8f1ca5a2f1364060840686501
+ms.sourcegitcommit: 2e6851a5c1f934dcdb3f854d8462a4d23cc0453b
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50150107"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561941"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>SCEP- vagy PKCS-tanúsítványok eltávolítása a Microsoft Intune-ban
 
@@ -131,7 +131,7 @@ Ez a cikk néhány gyakori forgatókönyvet és azok PKCS- és SCEP-tanúsítvá
   - Egy rendszergazda eltávolítja a felhasználót vagy csoportot az Azure AD-ból
   - A rendszergazda módosítja vagy frissíti a PKCS-profilt
 
-## <a name="android--android-enterprise-devices"></a>Android- és Android Enterprise-eszközök
+## <a name="android-knox-devices"></a>Android Knox-eszközök
 
 #### <a name="scep-certificates"></a>SCEP-tanúsítványok
 
@@ -177,6 +177,10 @@ Ez a cikk néhány gyakori forgatókönyvet és azok PKCS- és SCEP-tanúsítvá
   - A rendszergazda módosítja vagy frissíti a PKCS-profilt
   - A konfigurációs profilt eltávolítják a csoport-hozzárendelésből
   - A megfelelőségi szabályzatot eltávolítják a csoport-hozzárendelésből 
+  
+  
+> [!NOTE]
+> Az Android for Work-eszközök nincsenek ellenőrizve a fenti forgatókönyvekhez. Az örökölt Android-eszközök (nem Samsung márkájú, nem munkahelyi profillal rendelkező eszközök) esetén nem távolítható el a tanúsítvány. 
 
 ## <a name="macos-certificates"></a>macOS-tanúsítványok
 

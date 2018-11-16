@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2018
+ms.date: 11/5/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bacaf8ff4119d4cd40483b65ea45e283d98a51f1
-ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
-ms.translationtype: HT
+ms.openlocfilehash: 2f21df636ab429969429c6dbdf540daaa67a8f88
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51025202"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576766"
 ---
 # <a name="the-early-edition-for-microsoft-intune---november-2018"></a>A Microsoft Intune előzetes kiadása – 2018. november
 
@@ -44,11 +44,6 @@ A lap tartalmát rendszeresen frissítjük. További hírekért látogasson viss
 ### <a name="uninstalling-apps-on-corporate-owned-supervised-ios-devices----1281677---"></a>Alkalmazások eltávolítása a céges, felügyelt iOS-eszközökről <!-- 1281677 -->
 Ön bármilyen alkalmazást el tud majd távolítani céges, felügyelt iOS-eszközökről. Ha az **Eltávolítás** hozzárendelési típussal megcélozza a felhasználó- vagy eszközcsoportokat, akkor bármilyen alkalmazást el tud távolítani. Személyes és nem felügyelt iOS-eszközök esetében a továbbiakban csak az Intune használatával telepített alkalmazásokat tudja majd eltávolítani.
 
-### <a name="support-for-ios-12-oauth-in-ios-email-profiles---2155106---"></a>Az iOS 12 OAuth támogatása az iOS-es e-mail-profilokban <!--2155106 -->
-Az Intune iOS-es e-mail-profiljai támogatják az iOS 12 OAuth használatát. A funkció megtekintéséhez válassza az **Intune** > **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget. A profil létrehozása panelen be- és kikapcsolhatja az **OAuth** használatát. Ha be van kapcsolva ez a beállítás, két dolog történik:
-1. A már célzott eszközök új profilt kapnak.
-2. A rendszer újra kéri a végfelhasználók hitelesítő adatainak megadását.
-
 ### <a name="track-installation-of-office-proplus---2620217--"></a>Az Office ProPlus telepítésének nyomon követése <!--2620217-->
 A [Beléptetési állapotlapon](windows-enrollment-status.md) nyomon tudja követni az [Office ProPlus](apps-add-office365.md) telepítési folyamatát.
 
@@ -69,7 +64,7 @@ Az új beállítás segítségével a felhasználók az eszközön lévő többf
 Hatékonyabban felügyelheti majd az alkalmazásvédelmi szabályzat-hozzárendeléseket. Ha menti és alkalmazza az alkalmazásvédelmi szabályzat-hozzárendeléseket, kizárólag a kijelölt felhasználókra vonatkozik közvetlenül az adott alkalmazásvédelmi hozzárendelés-szabályzat.
 
 ### <a name="new-microsoft-edge-browser-settings-for-windows-10-and-later----3174639---"></a>A Microsoft Edge böngészőhöz tartozó új beállítások Windows 10 és újabb rendszerek esetében <!-- 3174639 -->
-Új beállítási lehetőséget vezetünk be, amellyel hatékonyan szabályozhatja és kezelheti a Microsoft Edge böngészőt az eszközein. A jelenlegi beállítások felsorolását az [Eszközkorlátozási beállítások Windows 10-hez (és újabb rendszerekhez)](device-restrictions-windows-10.md#edge-browser) cikkben találja.
+Új beállítási lehetőséget vezetünk be, amellyel hatékonyan szabályozhatja és kezelheti a Microsoft Edge böngészőt az eszközein. A jelenlegi beállítások felsorolását az [Eszközkorlátozási beállítások Windows 10-hez (és újabb rendszerekhez)](device-restrictions-windows-10.md#microsoft-edge-browser) cikkben találja.
 
 ### <a name="select-apps-tracked-on-the-enrollment-status-page---2531007---"></a>A Regisztrációs állapotlapon nyomon követett alkalmazások kiválasztása<!-- 2531007 -->
 Eldöntheti majd, hogy mely alkalmazások legyenek nyomon követve a Regisztrációs állapotlapon.
@@ -113,10 +108,10 @@ A webes tartalmakra vonatkozó APP szabályzatok beállításait az Android- és
 ### <a name="apple-vpp-token-used-by-another-mdm----1488946---"></a>Más MDM által használt Apple VPP-token <!-- 1488946 -->
 Az Intune felismeri, ha egy Apple mennyiségi licencszerződés (VPP) keretében vásárolt tokent az Intune és egy másik MDM egyidejűleg használ, és megjeleníti az adatokat.
 
-### <a name="ios-and-macos-version-numbers-and-build-numbers-are-shown----1892471---"></a>Megjelenítjük az iOS- és macOS-verziószámokat és -buildszámokat <!-- 1892471 -->
-Az **Eszközmegfelelőség** > **Eszközmegfelelőség** megjeleníti az iOS és macOS operációs rendszerek verzióit. Egy jövőbeli frissítésben a buildszám is megjelenik majd mindkét platformon.
+### <a name="ios-and-macos-version-numbers-and-build-numbers-are-available-in-compliance-policies----1892471---"></a>Az iOS- és macOS-verziószámok és -buildszámok megfelelőségi szabályzatokban érhetők el <!-- 1892471 -->
+Az **Eszközmegfelelőség** > **Eszközmegfelelőség** megjeleníti az iOS és macOS operációs rendszerek verzióit, amelyek elérhetők a megfelelőségi szabályzatokkal. Egy jövőbeli frissítésben a buildszám is konfigurálható majd mindkét platformon.
 
-A biztonsági frissítések megjelenésekor az Apple általában megtartja a verziószámot, de a buildszám változik. A megjelenített buildszám segítségével könnyen ellenőrizheti, hogy telepítve van-e a biztonsági frissítés.
+A biztonsági frissítések megjelenésekor az Apple általában megtartja a verziószámot, de a buildszám változik. A megfelelőségi szabályzat buildszámának segítségével könnyen ellenőrizheti, hogy telepítve van-e a biztonsági frissítés.
 
 ### <a name="retired-devices-in-the-device-compliance-dashboard----1981119---"></a>Elavult eszközök az eszközmegfelelőségi irányítópulton <!-- 1981119 -->
 Egy jövőbeli frissítés eltávolítja az elavult eszközöket az eszközmegfelelőségi irányítópultról. Ez módosítani fogja a megfelelőségi számokat.

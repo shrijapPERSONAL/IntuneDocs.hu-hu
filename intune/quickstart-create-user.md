@@ -7,12 +7,12 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 10/30/2018
 ms.author: erikje
-ms.openlocfilehash: fb88f703048eaa122bb406d8adb1fc9face764c4
-ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
-ms.translationtype: HT
+ms.openlocfilehash: ffc1f0140f98b17e060df3308af779ddcb77549e
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50410752"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51510924"
 ---
 # <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>Rövid útmutató – Felhasználó létrehozása és licenc hozzárendelése az Intune-ban
 
@@ -61,7 +61,9 @@ Ha többé nincs szüksége erre a felhasználóra, törölje az [Office 365 por
 
 ## <a name="next-steps"></a>További lépések
 
-Ezt a rövid útmutatót követve létrehozott egy felhasználót, és hozzárendelt egy licencet. Most már hozzárendelheti ezt a felhasználót egy csoporthoz.
+Ezt a rövid útmutatót követve létrehozott egy felhasználót, és hozzárendelt egy licencet. Felhasználók Intune-hoz való hozzáadásáról további információt a [Felhasználók hozzáadása és rendszergazdai engedély biztosítása az Intune-hoz](users-add.md) szakaszban találhat.
+
+Kövesse az Intune rövid útmutatóinak sorozatát a következő rövid útmutatóval.
 
 > [!div class="nextstepaction"]
-> [Csoport létrehozása](quickstart-create-group.md)
+> [Rövid útmutató: Csoport létrehozása felhasználók kezeléséhez](quickstart-create-group.md)

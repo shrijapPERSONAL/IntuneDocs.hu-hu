@@ -7,12 +7,12 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 09/21/2018
 ms.author: erikje
-ms.openlocfilehash: 33c0d4f3ee3b29be47540c92425f76a3f1dcc044
-ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
-ms.translationtype: HT
+ms.openlocfilehash: 5c83af252b1c728b9e3d4015cdc8bb4fd3668ad1
+ms.sourcegitcommit: 2e6851a5c1f934dcdb3f854d8462a4d23cc0453b
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50410769"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561924"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>Rövid útmutató: Egyéni szerepkör létrehozása és hozzárendelése
 
@@ -64,7 +64,9 @@ Ha nem kívánja többé használni az új egyéni szerepkört, törölheti. Vá
 
 ## <a name="next-steps"></a>További lépések
 
-Ebben a rövid útmutatóban létrehozta az egyéni Biztonsági üzemeltetés szerepkört, és hozzárendelte egy csoporthoz. Biztonsági kérdésekről a következő cikkből tájékozódhat bővebben.
+Ebben a rövid útmutatóban létrehozta az egyéni Biztonsági üzemeltetés szerepkört, és hozzárendelte egy csoporthoz. További információ az Intune szerepköreiről: [Szerepköralapú hozzáférés-vezérlés (RBAC) a Microsoft Intune-nal](role-based-access-control.md)
+
+Kövesse az Intune rövid útmutatóinak sorozatát a következő rövid útmutatóval.
 
 > [!div class="nextstepaction"]
-> [Eszközmegfelelőségi szabályzatok – első lépések](device-compliance-get-started.md)
+> [Rövid útmutató: E-mail-eszközprofil létrehozása iOS-hez](quickstart-email-profile.md)

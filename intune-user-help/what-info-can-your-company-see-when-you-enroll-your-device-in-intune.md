@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/18/2018
+ms.date: 11/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: bdf08ccac21407bc2572f1133b2fe8d45548342f
-ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
-ms.translationtype: HT
+ms.openlocfilehash: 63295d7e05889f5a8beb44e399f36a4fbe27544d
+ms.sourcegitcommit: 76c7b315b83eb6cb5b996facf1d250fb3e22f1bc
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50679253"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51276115"
 ---
-# <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>Milyen adatok láthatók a cég számára, ha regisztrálom az eszközömet?
+# <a name="what-information-can-my-organization-see-when-i-enroll-my-device"></a>Milyen adatok láthatók a szervezet számára, ha regisztrálom az eszközömet?
 
-A vállalata számára nem láthatók az Ön személyes adatai, amikor eszközt regisztrál a Microsoft Intune-ban. Amikor regisztrálja eszközét, Ön engedélyezi a vállalatának bizonyos eszközadatoknak, például az eszköz típusának és sorozatszámának megtekintését. A vállalat ezt az információt az eszközön lévő vállalati adatok védelmére használja fel.
+A szervezete számára nem láthatók az Ön személyes adatai, amikor eszközt regisztrál a Microsoft Intune-ban. Amikor regisztrálja eszközét, Ön engedélyezi a szervezetének bizonyos eszközadatoknak, például az eszköz típusának és sorozatszámának megtekintését. A szervezet ezt az információt az eszközön lévő vállalati adatok védelmére használja fel.
 
-**A vállalat számára soha nem látható adatok:**
+**A szervezet számára soha nem látható adatok:**
 
 - Hívási és böngészési előzmények
 - E-mailek és SMS-ek
@@ -35,20 +35,23 @@ A vállalata számára nem láthatók az Ön személyes adatai, amikor eszközt 
 - Naptár
 -   Jelszavak
 - Képek, beleértve a Fényképezőgép alkalmazás vagy a Filmtekercs mappa tartalmát
+- Fájlok
 
-**A vállalat számára minden esetben látható adatok:**
+**A szervezet számára mindig látható adatok:**
 
 - Eszközmodell, például Google Pixel
-- Gyártó, például a Microsoft
-- Operációs rendszer, például iOS
-- Alkalmazásnevek, például Microsoft Word
+- Eszköz gyártója, például a Microsoft
+- Operációs rendszer és annak verziója, például iOS 12.0.1
+- Alkalmazásnevek, például Microsoft Word: A személyes eszközökön a szervezet csak a felügyelt alkalmazásjegyzéket tekintheti meg. A vállalati tulajdonú eszközökön a szervezet a teljes alkalmazásleltárat láthatja.
 - Az eszköz tulajdonosa
 - Eszköz neve
-- Sorozatszám
+- Eszköz sorozatszáma
+- IMEI
 
-**A vállalat számára esetlegesen látható adatok:**
+**A szervezet számára esetlegesen látható adatok:**
 
--  Telefonszám: a **céges** eszközök esetében a teljes telefonszám látható. A **személyes** tulajdonú eszközök esetében csak a telefonszám utolsó négy számjegye látható a cég számára. Minden egyes eszköz **Tulajdonjogtípusát** megtekintheti az adott eszköz **Eszköz részletei** lapjának megnyitásával.
--  Tartózkodási hely: a cég számára soha nem látható az eszköz helye, kivéve, ha olyan felügyelt iOS-eszközzel rendelkezik, amely elveszett. [Ezt hogyan lehet megállapítani?](https://go.microsoft.com/fwlink/?linkid=853816)
-- Alkalmazásleltár: ha a cége a Mobile Threat Defense-t használja, akkor az iOS-eszközön elérhető alkalmazásokról további információhoz is hozzáférhet. További információk: [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).
-- Hálózati adatok: az androidos eszközök hálózati kapcsolatairól bizonyos adatok elérhetőek lehetnek a cég informatikai részlege számára. Például, ha a cég egyes eszközeinek egy bizonyos épületen belül kell maradniuk, az eszköz azonosítja a hálózatot, amelyhez csatlakozik. 
+-  Telefonszám: a **céges** eszközök esetében a teljes telefonszám látható. A **személyes** tulajdonú eszközök esetében csak a telefonszám utolsó négy számjegye látható a szervezet számára. Minden egyes eszköz **Tulajdonjogtípusát** megtekintheti az adott eszköz **Eszköz részletei** lapjának megnyitásával.
+- Eszköz tárhelye: Ha nem tud telepíteni egy szükséges alkalmazást, a szervezet ellenőrizheti az eszköz tárhelyét, valamint hogy az elegendő-e.  
+-  Tartózkodási hely: a szervezet számára soha nem látható az eszköz helye, kivéve, ha olyan felügyelt iOS-eszközzel rendelkezik, amely elveszett. [Ezt hogyan lehet megállapítani?](https://go.microsoft.com/fwlink/?linkid=853816)
+- Alkalmazásleltár: ha a szervezete a Mobile Threat Defense-t használja, akkor az iOS-eszközön elérhető alkalmazásokról további információhoz is hozzáférhet. További információk: [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).
+- Hálózati adatok: az androidos eszközök hálózati kapcsolatairól bizonyos adatok elérhetőek lehetnek a szervezet informatikai részlege számára. Például ha a szervezet egyes eszközeinek egy bizonyos épületen belül kell maradniuk, az eszköz azonosítja a hálózatot, amelyhez csatlakozik. 

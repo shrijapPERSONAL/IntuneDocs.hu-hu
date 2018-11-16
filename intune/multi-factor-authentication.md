@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 94280c73-c05c-4e72-b0dd-a7cb997782f9
 ROBOTS: ''
 ms.custom: intune-azure
-ms.openlocfilehash: 5b2c2bb6e76bd6b2da7ee7c12282c0ff22d7d3e3
-ms.sourcegitcommit: 2162ed46d939b4a9b85fa4e7e9943f2fb5948f1e
-ms.translationtype: HT
+ms.openlocfilehash: 270f19b6f0babb347b04731ca270a3c5bea18217
+ms.sourcegitcommit: 5e5004a31207e75e54504d74548735c048676a03
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31617209"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51225669"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Többtényezős hitelesítés megkövetelése az Intune-os eszközregisztrációhoz
 
@@ -48,24 +48,18 @@ Ha meg szeretné követelni a többtényezős hitelesítést a regisztráció so
 >Ne konfiguráljon **eszközalapú hozzáférési szabályokat** a Microsoft Intune-regisztrációhoz.
 
 1. Jelentkezzen be a [Microsoft Azure Portálra](https://portal.azure.com) a hitelesítő adataival.
-2. A portálon válassza az **Azure Active Directory** lehetőséget.
-2. Az **Azure Active Directoryban** válassza a **Kezelés** > **Vállalati alkalmazások** pontot.
-3. A **Vállalati alkalmazások** lapon válassza a **Kezelés**  > **Minden alkalmazás** pontot. Megjelenik az Ön által kezel összes Azure-alkalmazást tartalmazó lista.
-3. A listáról válassza a **Microsoft Intune-regisztráció** elemet.
-4. A **Microsoft Intune-ban** válassza a **Biztonság** > **Feltételes hozzáférés** elemet.
-5. Válassza az **Új szabályzat** lehetőséget.
-6. Az **Új** szabályzat mezőbe írjon be egy beszédes nevet a szabályzathoz.
-7. A **Hozzárendelések** szakaszban válassza a **Felhasználók és csoportok** lehetőséget.
-8. A **Felhasználók és csoportok** lapon válassza ki azokat a felhasználókat és csoportokat, amelyek meg fogják kapni ezt a szabályzatot, majd válassza a **Kész** elemet.
-9. A **Hozzárendelések** szakaszban válassza a **Felhőalkalmazások** lehetőséget.
-10. A **Felhőalkalmazások** **Intune** lapján válassza az **Alkalmazások kiválasztása** elemet, majd a **Kijelölés** > **Microsoft Intune-regisztráció** lehetőséget, végül a **Kész** gombot.
-11. A **Hozzárendelések** szakaszban válassza a **Feltételek** lehetőséget.
-12. A **Feltételek** szakaszban nem kell semmilyen beállítást sem megadnia az MFA-hoz.
-13. A **Hozzáférés-vezérlés** területen válassza az **Engedélyezés** elemet.
-14. Az **Engedélyezés** szakaszban válassza a **Hozzáférés engedélyezése** lehetőséget, majd válassza a **Többtényezős hitelesítés megkövetelése** elemet.
-    Ne válassza ki az **Eszköz megfelelőként való megjelölésének megkövetelése** lehetőséget, mert az eszközök megfelelőségét nem lehet ellenőrizni, amíg nincsenek regisztrálva.
-15. Válassza a **Kijelölés** elemet.
-16. Az **Új szabályzat** szakaszban válassza a **Szabályzat engedélyezése** > **Be** beállítást, majd a **Létrehozás** gombot.
+2. A portálon lépjen az **[Azure Active Directoryra](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)**.
+3. Az **Azure Active Directory** Biztonság területén válassza a **[Feltételes hozzáférés](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)** lehetőséget.
+4. Válassza az **Új szabályzat** lehetőséget.
+5. Az **Új** szabályzat mezőbe írjon be egy beszédes nevet a szabályzathoz.
+6. A **Hozzárendelések** szakaszban válassza a **Felhasználók és csoportok** lehetőséget.
+7. A **Felhasználók és csoportok** területen válassza a **Felhasználók vagy csoportok kiválasztása** lehetőséget, majd jelölje be a **Felhasználók és csoportok** jelölőnégyzetet. Válassza ki azokat a felhasználókat és csoportokat, amelyek meg fogják kapni ezt a szabályzatot, majd válassza a **Kész** elemet.
+8. A **Hozzárendelések** szakaszban válassza a **Felhőalkalmazások** lehetőséget.
+9. A **Felhőalkalmazások** **Intune** lapján válassza az **Alkalmazások kiválasztása** elemet, majd a **Kijelölés** > **Microsoft Intune-regisztráció** lehetőséget, végül a **Kész** gombot.
+10. A **Hozzárendelések** szakasz **Feltételek** területén nem kell semmilyen beállítást sem megadnia az MFA-hoz.
+11. A **Hozzáférés-vezérlés** területen válassza az **Engedélyezés** elemet.
+12. Az **Engedélyezés** szakaszban válassza a **Hozzáférés engedélyezése** lehetőséget, majd válassza a **Többtényezős hitelesítés megkövetelése** elemet. Ne válassza ki az **Eszköz megfelelőként való megjelölésének megkövetelése** lehetőséget, mert az eszközök megfelelőségét nem lehet ellenőrizni, amíg nincsenek regisztrálva. Válassza a **Kiválasztás** elemet.
+13. Az **Új szabályzat** szakaszban válassza a **Szabályzat engedélyezése** > **Be** beállítást, majd a **Létrehozás** gombot.
 
 
 

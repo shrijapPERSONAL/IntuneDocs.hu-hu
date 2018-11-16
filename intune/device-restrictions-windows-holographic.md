@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9d7f54ce0e288025a4a7f0f45bf5b10de5323021
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
-ms.translationtype: HT
+ms.openlocfilehash: f79985c9854af462fa9a456304a3184128283b9c
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321676"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576800"
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Eszközkorlátozásokra vonatkozó beállítások az Intune-ban Windows Holographic for Business esetén
 
@@ -41,7 +41,7 @@ Az alábbi eszközkorlátozási beállítások a Windows Holographic for Busines
 -   **Megbízható alkalmazás telepítése** – Engedélyezi a megbízható tanúsítvánnyal aláírt alkalmazások közvetlen telepítését.
 -   **Fejlesztői zárolás feloldása** – Engedélyezi, hogy a Windows fejlesztői beállításait (például alkalmazások közvetlen telepítését) a végfelhasználók megváltoztassák.
 
-## <a name="edge-browser"></a>Microsoft Edge böngésző
+## <a name="microsoft-edge-browser"></a>Microsoft Edge böngésző
 
 -   **Cookie-k** – Engedélyezi a böngészőnek, hogy mentse az internetről érkező cookie-kat az eszközre.
 -   **Előugró ablakok** – Blokkolja az előugró ablakokat a böngészőben (csak a Windows 10 asztali verzióra vonatkozik).
@@ -51,7 +51,7 @@ Az alábbi eszközkorlátozási beállítások a Windows Holographic for Busines
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
 
-- **SmartScreen a Microsoft Edge böngészőhöz** – Az Edge SmartScreen webhely- és fájlletöltésekhez való hozzáférésének engedélyezése.
+- **SmartScreen a Microsoft Edge böngészőhöz** – A Microsoft Edge SmartScreen webhely- és fájlletöltésekhez való hozzáférésének engedélyezése.
 
 ## <a name="search"></a>Keresés
 - **Helyadatok kereséshez** – Annak megadása, hogy a keresési funkció használhatja-e a helyadatokat. információ

@@ -14,12 +14,12 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cc378a4f484852d84943b4d1094b71df5b7a530d
-ms.sourcegitcommit: 006fa8dd4d605e2873fba6e3a965ef794d6f3764
-ms.translationtype: HT
+ms.openlocfilehash: 1a7c7ebca1c6472b58021a57b1b4a59fc42966b0
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36945484"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576953"
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-intune"></a>Intune Endpoint Protection-beállítások Windows 10 és újabb rendszerekhez
 
@@ -31,7 +31,7 @@ A cikk segítségével Endpoint Protection-profilokat hozhat létre. A Windows D
 
 ## <a name="windows-defender-application-guard"></a>Windows Defender alkalmazásőr
 
-A következő Windows 10- kiadásokon támogatott:
+A következő Windows 10-kiadásokon támogatott:
 
 - Vállalati 
 - Professional
@@ -51,7 +51,7 @@ Az Alkalmazásőr csak a 64 bites Windows 10-eszközöknél érhető el. Ennek a
 
 ## <a name="windows-defender-firewall"></a>Windows Defender-tűzfal
 
-A következő Windows 10- kiadásokon támogatott:
+A következő Windows 10-kiadásokon támogatott:
 - Otthoni
 - Professional
 - Munkahelyi
@@ -116,7 +116,7 @@ A következő, Microsoft Edge böngészővel rendelkező Windows 10- kiadásokon
 
 ### <a name="windows-settings"></a>Windowsos beállítások
 
-A következő Windows 10- kiadásokon támogatott:
+A következő Windows 10-kiadásokon támogatott:
 
 - Professional
 - Munkahelyi
@@ -136,7 +136,7 @@ A következő Windows 10- kiadásokon támogatott:
 
 ### <a name="bitlocker-base-settings"></a>BitLocker-alapbeállítások
 
-A következő Windows 10- kiadásokon támogatott:
+A következő Windows 10-kiadásokon támogatott:
 
 - Vállalati
 - Oktatás
@@ -152,7 +152,7 @@ Az alapbeállítások minden típusú adatmeghajtóra vonatkozó univerzális Bi
   - **Cserélhető adatmeghajtók titkosítása**: A cserélhető adatmeghajtókhoz használandó titkosítási módszer kiválasztására szolgál. Ha a cserélhető meghajtót olyan eszközökkel is használja, amelyeken nem Windows 10 operációs rendszer fut, az AES-CBC algoritmus használatát javasoljuk.
 
 ### <a name="bitlocker-os-drive-settings"></a>Operációsrendszer-meghajtók BitLocker-beállításai
-A következő Windows 10- kiadásokon támogatott:
+A következő Windows 10-kiadásokon támogatott:
 
 - Vállalati
 - Oktatás
@@ -188,7 +188,7 @@ Ezek a beállítások kifejezetten az operációsrendszer-adatmeghajtókra érv�
 
 ### <a name="bitlocker-fixed-data-drive-settings"></a>Rögzített adatmeghajtók BitLocker-beállításai
 
-A következő Windows 10- kiadásokon támogatott:
+A következő Windows 10-kiadásokon támogatott:
 
 - Vállalati
 - Oktatás
@@ -211,7 +211,7 @@ A következő Windows 10- kiadásokon támogatott:
 
 ### <a name="bitlocker-removable-data-drive-settings"></a>Cserélhető adatmeghajtók BitLocker-beállításai
 
-A következő Windows 10- kiadásokon támogatott:
+A következő Windows 10-kiadásokon támogatott:
 
 - Vállalati
 - Oktatás
@@ -225,7 +225,7 @@ A következő Windows 10- kiadásokon támogatott:
 
 ## <a name="windows-defender-exploit-guard"></a>Windows Defender – biztonsági rés kiaknázása elleni védelem
 
-A következő Windows 10- kiadásokon támogatott:
+A következő Windows 10-kiadásokon támogatott:
 
 - Otthoni
 - Professional
@@ -300,7 +300,7 @@ Letilthatja, hogy a **felhasználók a Biztonsági rés kiaknázása elleni véd
 
 ## <a name="windows-defender-application-control"></a>Windows Defender Alkalmazásvezérlés
 
-A következő Windows 10- kiadásokon támogatott:
+A következő Windows 10-kiadásokon támogatott:
 
 **Mobileszköz-felügyelet (MDM)**: 
 - Professional
@@ -321,7 +321,7 @@ Ha az Alkalmazásvezérlést bekapcsolták, utána csak úgy lehet letiltani, ha
 
 ## <a name="windows-defender-credential-guard"></a>Windows Defender Credential Guard
 
-A következő Windows 10- kiadásokon támogatott:
+A következő Windows 10-kiadásokon támogatott:
 
 - Vállalati
 

@@ -1,6 +1,6 @@
 ---
 title: VPN-beállítások konfigurálása Android-eszközökön a Microsoft Intune-ban – Azure | Microsoft Docs
-description: Ha Android- vagy Android for Work-eszközön hoz létre VPN konfigurációs profilt, adja meg a kapcsolat nevét, a VPN-kiszolgáló IP-címét vagy teljes tartománynevét (FQDN), válassza ki a felhasználók hitelesítésének módját a VPN-kiszolgálón, majd válassza ki a Citrix, SonicWall, Check Point Capsule, Pulse Secure vagy Edge kapcsolat típusát.
+description: Ha Android- vagy Android for Work-eszközön hoz létre VPN konfigurációs profilt, adja meg a kapcsolat nevét, a VPN-kiszolgáló IP-címét vagy teljes tartománynevét (FQDN), válassza ki a felhasználók hitelesítésének módját a VPN-kiszolgálón, majd válassza ki a Citrix, SonicWall, Check Point Capsule, Pulse Secure vagy Microsoft Edge kapcsolat típusát.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f02a76def463c4ef1c3ee24b021df3185d263ecf
-ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
-ms.translationtype: HT
+ms.openlocfilehash: 113d2e52783f3c7e9f013d2cc239efad45408c87
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39279321"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576817"
 ---
 # <a name="configure-vpn-settings-for-devices-running-android-in-intune"></a>VPN-beállítások konfigurálása Android rendszerű eszközökön az Intune-ban
 

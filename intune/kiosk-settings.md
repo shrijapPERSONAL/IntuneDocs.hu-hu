@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b3de4d79e6121505718a75ffe64102bb1bc18347
-ms.sourcegitcommit: 244456907e3ab4a4389d32d06060606a9591cfba
-ms.translationtype: HT
+ms.openlocfilehash: 0d749d51f0ae146b68be8abb3a59a0504aea1180
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50751643"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298139"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Kioszkbeállítások Windows 10 (és újabb) rendszerekhez az Intune-ban
 
@@ -77,8 +77,15 @@ Egyalkalmazásos kioszk mód választásakor adja meg a következő beállítás
   - **A böngésző frissítése üresjárati idő után**: Adja meg az üresjárati időt (1-1440 perc), amelynek elteltével a teljes képernyős böngésző friss állapotban újraindul. Az üresjárati idő az utolsó felhasználói beavatkozás óta eltelt percek száma. Alapértelmezés szerint az érték üres, ami azt jelenti, hogy a nincs üresjárati időkorlát.
 
   - **Engedélyezett webhelyek**: használja ezt a beállítást adott webhelyek megnyitásának engedélyezéséhez. Más szóval, ezzel a beállítással korlátozhatja vagy megakadályozhatja a webhelyek megjelenítését az eszközön. Például engedélyezheti a `http://contoso.com*` összes webhelyének megnyitását. Alapértelmezés szerint az összes webhely engedélyezett.
+ 
+      Adott webhelyek engedélyezéséhez töltse fel az engedélyezett webhelyek listáját különböző sorokban tartalmazó fájlt. Ha nem ad hozzá fájlt, az összes webhely használata engedélyezve lesz. Az Intune támogatja a * (csillag) használatát helyettesítő karakterként.
 
-    Adott webhelyek engedélyezéséhez töltse fel az engedélyezett webhelyek listáját tartalmazó .csv-fájlt. Ha nem ad hozzá .csv-fájlt, az összes webhely használata engedélyezve lesz. Az Intune támogatja a * (csillag) használatát helyettesítő karakterként.
+      Az mintafájlnak a következő listához hasonlóan kell kinéznie:
+
+      `http://bing.com`  
+      `https://bing.com`  
+      `http://contoso.com/*`  
+      `https://contoso.com/*`  
 
   A módosítások mentéséhez válassza az **OK** gombot.
 
