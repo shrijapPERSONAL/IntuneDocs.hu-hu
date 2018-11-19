@@ -14,12 +14,12 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: a8cbe80154e5eac6a48c86101c76faed4602288a
-ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
-ms.translationtype: HT
+ms.openlocfilehash: 2c05912e62f9887ff7af0532dc759c2e852c1b29
+ms.sourcegitcommit: 4d5e811d451aeb6307e0f64818e182e471ae1ed4
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50915716"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51619024"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Bevezetés a Microsoft Intune App SDK használatába
 
@@ -106,9 +106,6 @@ A Microsoft Intune statisztikát gyűjt az alkalmazás használatáról.
 
     * Ha a végfelhasználók nem szeretnének ilyen adatokat küldeni, ki kell kapcsolniuk a telemetriát a Céges portál alkalmazás Beállítások menüpontjában. További információt [A használatra vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android) című témakörben találhat. 
 
-
- Az üzletági iOS- és Android-alkalmazás verziószáma látható <!-- 1380712 -->
-
 ## <a name="line-of-business-app-version-numbers"></a>Üzletági alkalmazások verziószámai
 
 Az Intune üzletági alkalmazásai mostantól megjelenítik az iOS- és Android-alkalmazások verziószámait. A számok az Azure Portal alkalmazáslistáján, valamint az Alkalmazás áttekintése panelen jelennek meg. A végfelhasználók az alkalmazásszámot a céges portál alkalmazásban és a webportálon tekinthetik meg.
@@ -164,6 +161,23 @@ Miután elvégezte az iOS vagy Android alkalmazásnak az Intune App SDK-való in
 * **Az Intune alkalmazásvédelmi szabályzatai**: Ha az alkalmazását az összes Intune-beli alkalmazásvédelmi szabályzattal tesztelni szeretné, akkor minden szabályzatbeállításnál tudnia kell, mi a várt viselkedés. Lásd az [iOS alkalmazásvédelmi szabályzatainak](app-protection-policy-settings-ios.md) és az [Android alkalmazásvédelmi szabályzatainak](app-protection-policy-settings-android.md) ismertetését.
 
 * **Hibaelhárítás**: Ha az alkalmazás telepítése közbeni felhasználói élmény manuális tesztelése során bármilyen problémába ütközik, tekintse meg az [alkalmazástelepítési hibák elhárításával](troubleshoot-app-install.md) foglalkozó szakaszt. 
+
+### <a name="give-your-app-access-to-the-intune-app-protection-service-optional"></a>Az alkalmazás-hozzáférést biztosít az Intune app protection szolgáltatás (nem kötelező)
+
+Ha az alkalmazás a saját egyéni Azure Active Directory (AAD) beállításokat használja a hitelesítéshez, majd az alábbi lépéseket kell tenni mind nyilvános áruházbeli alkalmazások, valamint belső ÜZLETÁGI alkalmazásokat. A lépések **nem kell tenni, ha az alkalmazás az Intune SDK alapértelmezett ügyfél-Azonosítót használja**. 
+
+Miután regisztrálta az alkalmazást egy Azure-bérlő belül, és alatt látható **minden alkalmazás**, meg kell adni az alkalmazás hozzáférjen az Intune app protection szolgáltatáshoz (korábbi nevén MAM-szolgáltatásban). Az Azure Portalon:
+
+1.  Nyissa meg az **Azure Active Directory** panelt.
+2.  Válassza az alkalmazás **Alkalmazásregisztráció** beállítását.
+3.  Az **API-hozzáférés** fejléc alatti **Beállítások** között válassza a **Szükséges engedély** lehetőséget. 
+4.  Kattintson a **+ Hozzáadás** lehetőségre.
+5.  Kattintson az **API kiválasztása** lehetőségre. 
+6.  A keresőmezőbe írja be a **Microsoft Mobile Application Management** (Microsoft mobilalkalmazás-kezelés) kifejezést.
+7.  Jelölje aki az API-k listájának **Microsoft Mobile Application Management** elemét, és kattintson a kiválasztás lehetőségre.
+8.  Válassza a **Felhasználó alkalmazásfelügyeleti adatainak olvasása és írása** lehetőséget.
+9.  Kattintson a **Kész** gombra.
+10. Kattintson az **Engedélyek megadása**, majd az **Igen** elemre. 
 
 ### <a name="badge-your-app-optional"></a>Az alkalmazás megjelölése jelvénnyel (nem kötelező)
 

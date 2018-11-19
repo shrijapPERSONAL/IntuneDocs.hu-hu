@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 822be56db10f4659ba9cd027c2612d7960e40e5b
-ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
-ms.translationtype: HT
+ms.openlocfilehash: 147431f6143d1ff81e170c656c636d0bd4f3837f
+ms.sourcegitcommit: dec09e9c91322ca347276785aca3c50036956f32
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50679202"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "51859528"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>A Windows Phone 8.1 rendszerű eszközökre vonatkozó VPN-beállítások konfigurálása a Microsoft Intune-ban
 
@@ -93,7 +93,7 @@ Az egyéni XML-parancsok írásával kapcsolatban további információt az egye
 ## <a name="proxy-settings"></a>Proxybeállítások
 
 - **Proxybeállítások automatikus észlelése** – Ha a VPN-kiszolgáló proxykiszolgálót igényel a kapcsolathoz, adja meg, hogy szeretné-e, ha az eszközök automatikusan észlelnék a kapcsolatbeállításokat. További információt a Windows Server dokumentációjában talál.
-- **Automatikus konfigurációs szkript** – A proxykiszolgálót egy konfigurációs fájl segítségével konfigurálja. Adja meg a konfigurációs fájlt tartalmazó **Proxykiszolgáló URL-címét** (például `** http://proxy.contoso.com**`).
+- **Automatikus konfigurációs szkript** – A proxykiszolgálót egy konfigurációs fájl segítségével konfigurálja. Adja meg a konfigurációs fájlt tartalmazó **Proxykiszolgáló URL-címét** (például `http://proxy.contoso.com`).
 - **Proxykiszolgáló használata** – Ha manuálisan szeretné megadni a proxykiszolgáló beállításait, akkor engedélyezze ezt a beállítást.
     - **Cím** – Adja meg a proxykiszolgáló címét (IP-címként).
     - **Portszám** – Adja meg a proxykiszolgálóhoz társított portszámot.

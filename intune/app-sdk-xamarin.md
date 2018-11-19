@@ -5,7 +5,7 @@ keywords: sdk, Xamarin, intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 11/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: d2531cc203c5c2b255378e836099feb0a9216d45
-ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
-ms.translationtype: HT
+ms.openlocfilehash: 07fe31d8b668d14a51a5c31fa321e4789a0302c0
+ms.sourcegitcommit: dec09e9c91322ca347276785aca3c50036956f32
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51298122"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "51859511"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin Bindings
 
@@ -53,7 +53,7 @@ Az Intune App SDK Xamarin Bindingsszal létrehozott Xamarin-alkalmazásokra most
 
 A [licencfeltételek](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf) áttekintése. Nyomtassa ki és őrizze meg a licencfeltételeket. Az Intune App SDK Xamarin Bindings letöltésével és használatával elfogadja licencfeltételeket. Amennyiben a feltételeket nem fogadja el, ne használja a szoftvert.
 
-Az SDK a hitelesítési és feltételes indítási forgatókönyvekhez az [ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)-ra támaszkodik, amely a [hitelesítéshez](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/) megköveteli, hogy az alkalmazásokat az [Azure Active Directoryval](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) konfigurálják. A konfigurációs értékeket az SDK az AndroidManifest metaadatain keresztül közli. Olvassa el dokumentációnkat, amelyből megtudhatja, hogyan [konfigurálhatja az ADAL-t az alkalmazásához](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
+Az SDK támaszkodik [Active Directory Authentication Library (ADAL)](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) számára annak [hitelesítési](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/) és feltételes indítási forgatókönyvek, melyek konfigurálhatók, az alkalmazásokat szükség [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). 
 
 ## <a name="enabling-intune-app-protection-polices-in-your-ios-mobile-app"></a>Az Intune alkalmazásvédelmi szabályzatainak engedélyezése az iOS-mobilalkalmazásban
 1. Adja hozzá Xamarin.iOS-projektjéhez a [Microsoft.Intune.MAM.Xamarin.iOS NuGet-csomagot](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.iOS).
@@ -85,16 +85,17 @@ Az SDK a hitelesítési és feltételes indítási forgatókönyvekhez az [ADAL]
 
 ## <a name="enabling-intune-app-protection-policies-in-your-android-mobile-app"></a>Az Intune alkalmazásvédelmi szabályzatainak engedélyezése Androidos mobilalkalmazásban
 
-Olyan Xamarin-alapú androidos alkalmazások esetén, amelyek nem használnak felhasználóifelület-keretrendszert, olvassa el és kövesse az [Androidhoz készült Intune App SDK fejlesztői útmutatójában](app-sdk-android.md) leírtakat. Xamarin-alapú Android-alkalmazások esetén le kell cserélnie az osztályt, a metódusokat és a tevékenységeket a MAM-beli megfelelőikre az útmutatóban található [táblázat](app-sdk-android.md#class-and-method-replacements) alapján. Ha az alkalmazás nem rendelkezik meghatározott `android.app.Application` osztállyal, akkor hozzon létre egyet, és győződjön meg arról, hogy az a `MAMApplication` osztálytól örököl.
+Olyan Xamarin-alapú androidos alkalmazások esetén, amelyek nem használnak felhasználóifelület-keretrendszert, olvassa el és kövesse az [Androidhoz készült Intune App SDK fejlesztői útmutatójában](app-sdk-android.md) leírtakat. Xamarin-alapú Android-alkalmazások, osztály, a metódusok és a tevékenységek lecserélése a MAM-megfelelőikre alapján kell a [osztályt és metódust cseréjére tábla](app-sdk-android.md#class-and-method-replacements) az útmutatóban. Ha az alkalmazás nem rendelkezik meghatározott `android.app.Application` osztállyal, akkor hozzon létre egyet, és győződjön meg arról, hogy az a `MAMApplication` osztálytól örököl. Az ADAL konfigurációs értékek közlik az SDK az AndroidManifest metaadatain keresztül közli. Olvassa el dokumentációnkat, amelyből megtudhatja, hogyan [konfigurálhatja az ADAL-t az alkalmazásához](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal).
 
 ### <a name="xamarinandroid-integration"></a>Xamarin.Android-integráció
 
 1. Adja hozzá Xamarin.Android-projektjéhez a [Microsoft.Intune.MAM.Xamarin.Android NuGet-csomag](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android) legfrissebb verzióját. Ezzel elérhetővé válnak az Intune alkalmazáshoz való engedélyezéséhez szükséges hivatkozások.
 
 2. Olvassa el és kövesse [A Microsoft Intune App SDK Androidon – útmutató fejlesztőknek](app-sdk-android.md) című cikk lépéseit, és fordítson kiemelt figyelmet a következő szakaszokra:
+
     1. A [teljes osztályok és metódusok lecserélése szakasz](app-sdk-android.md#class-and-method-replacements). 
     2. A [MAMApplication szakasz](app-sdk-android.md#mamapplication). Ügyeljen rá, hogy az alosztály megfelelően jelölve legyen a `[Application]` attribútummal, és felülbírálja a `(IntPtr, JniHandleOwnership)` konstruktort.
-    3. Az [ADAL-integráció szakaszt](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal) amennyiben az alkalmazás AAD-ben történő hitelesítést is végrehajt.
+    3. Az [ADAL-integráció szakaszt](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal) amennyiben az alkalmazás AAD-ben történő hitelesítést is végrehajt. 
     4. A [MAM-WE regisztrációs szakaszt](app-sdk-android.md#app-protection-policy-without-device-enrollment) ha az alkalmazás a MAM-szolgáltatásból fog lekérni szabályzatot.
 
 > [!NOTE]
@@ -114,9 +115,6 @@ Olyan Xamarin-alapú androidos alkalmazások esetén, amelyek nem használnak fe
 > [!NOTE]
 > Mivel ez a művelet felülír egy olyan függőséget, amit a Visual Studio az Intellisense automatikus kiegészítéshez használ, lehet, hogy újra kell indítania a Visual Studiot a remapper eszköz első futtatását követően ahhoz, hogy az Intellisense felismerje a változtatásokat. 
 
-
-## <a name="support"></a>Support
-
 Elvégezte az összetevő alkalmazásba történő beépítésének alapvető lépéseit. Következőnek kövesse a Xamarin-alapú Android-mintaalkalmazásban lévő lépéseket. Két mintát biztosítottunk, egyet a Xamarin.Forms-hoz és egyet az Androidhoz.
 
 ## <a name="requiring-intune-app-protection-policies-in-order-to-use-your-xamarin-based-android-lob-app-optional"></a>Intune alkalmazásvédelmi szabályzatok megkövetelése a Xamarin-alapú Android LOB-alkalmazások (nem kötelező) használatához 
@@ -124,22 +122,12 @@ Elvégezte az összetevő alkalmazásba történő beépítésének alapvető l�
 A következő útmutatóból megtudhatja, hogyan biztosíthatja, hogy a Xamarin-alapú androidos üzletági alkalmazásokat csak az Intune által védett felhasználók használhassák eszközeiken. 
 
 ### <a name="general-requirements"></a>Általános követelmények
-* Regisztrálja alkalmazása alkalmazásazonosítóját. Ezt az [Azure Portalon](https://portal.azure.com/), a **Minden alkalmazás** terület **Alkalmazásazonosító** oszlopában találhatja meg. Az Azure Portalon:
-1.  Nyissa meg az **Azure Active Directory** panelt.
-2.  Válassza az alkalmazás **Alkalmazásregisztráció** beállítását.
-3.  Az **API-hozzáférés** fejléc alatti **Beállítások** között válassza a **Szükséges engedély** lehetőséget. 
-4.  Kattintson a **+ Hozzáadás** lehetőségre.
-5.  Kattintson az **API kiválasztása** lehetőségre. 
-6.  A keresőmezőbe írja be a **Microsoft Mobile Application Management** (Microsoft mobilalkalmazás-kezelés) kifejezést.
-7.  Jelölje aki az API-k listájának **Microsoft Mobile Application Management** elemét, és kattintson a kiválasztás lehetőségre.
-8.  Válassza a **Felhasználó alkalmazásfelügyeleti adatainak olvasása és írása** lehetőséget.
-9.  Kattintson a **Kész** gombra.
-10. Kattintson az **Engedélyek megadása**, majd az **Igen** elemre. 
+* Győződjön meg arról, a Xamarin-alkalmazás engedélyt az alkalmazásvédelmi szabályzat (alkalmazás) app Service lépéseit követi. Útmutatásait a [első lépések az Intune SDK útmutatóját](app-sdk-get-started.md#next-steps-after-integration) alatt "az alkalmazás hozzáférést biztosít az Intune app protection szolgáltatás (nem kötelező)". 
     
 ### <a name="working-with-the-intune-sdk"></a>Az Intune SDK használata
 Ezek az utasítások minden olyan Android- és Xamarin-alkalmazásra vonatkoznak, amelyek Intune-alkalmazásvédelmi szabályzatokat szeretnének kérni a végfelhasználói eszközöktől.
 
-1. Konfigurálja az ADAL-t az [Androidos Intune SDK útmutatójában](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal) megadott lépések alapján.
+1. Konfigurálja az ADAL-t az [Androidos Intune SDK útmutatójában](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal) megadott lépések alapján.
 > [!NOTE] 
 > Az alkalmazáshoz tartozó „ügyfél-azonosító” kifejezés megfelel az Azure Portalon az „alkalmazásazonosító” kifejezésnek. 
 * Az SSO engedélyezéséhez a 2. „Common ADAL configurationre” van szükség.
@@ -159,5 +147,5 @@ Ezek az utasítások minden olyan .NET- és Xamarin-alkalmazásra vonatkoznak, a
 > [!NOTE] 
 > A .NET ADAL által kibocsátott következő verzió (3.17.4) várhatóan tartalmazni fogja az ennek a működéséhez szükséges javítást.
 
+## <a name="support"></a>Support
 Ha vállalata már Intune-ügyfél, akkor a Microsoft támogató szolgálat képviselőjével együttműködve nyisson meg egy támogatási jegyet, és hozzon létre bejelentést [a GitHub hibabejelentő oldalán](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues), mi pedig segítünk, amint tudunk. 
-

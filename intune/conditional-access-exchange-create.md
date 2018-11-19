@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d44b7483d65eeb7b2a39783fb113c444184db4f3
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
-ms.translationtype: HT
+ms.openlocfilehash: b1e07bd67d4bf8b776500be01571deddb1e5e58f
+ms.sourcegitcommit: 630dfe1413c1819f35aa941ffc888a7084771a55
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48232222"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51709138"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Feltételes hozzáférési szabályzat létrehozása a helyszíni Exchange-hez és régi Dedikált Exchange Online-hoz
 
@@ -66,7 +66,7 @@ Mielőtt konfigurálja a feltételes hozzáférést, ellenőrizze a következők
 - EAS levelezési ügyfélprogramok **Androidos munkahelyi profilos eszközökön:** A **munkahelyi profilban** csak a **Gmail** és **Nine Work for Android Enterprise** alkalmazások támogatottak az androidos munkahelyi profilos eszközökön. Ahhoz, hogy a feltételes hozzáférés működjön az androidos munkahelyi profilos eszközökön, telepíteni kell egy e-mail-profilt a Gmail vagy a Nine Work for Android Enterprise alkalmazáshoz, és ezeket az alkalmazásokat kötelező telepítésként kell központilag telepíteni.
 
 > [!NOTE]
-> A Microsoft Outlook alkalmazás Android- és iOS-verziója nem támogatott. 
+> A Microsoft Outlook Androidra és IOS-es nem támogatott az Exchange helyszíni összekötő keresztül. Ha szeretné kihasználni az Azure Active Directory feltételes hozzáférési szabályzatok és az Intune alkalmazásvédelmi szabályzatok IOS rendszerhez készült Outlook és a helyileg üzemeltetett postaládák esetében az Android, tekintse meg [használata hibrid IOS rendszerhez készült Outlook Modern hitelesítést és Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth). 
 
 ### <a name="support-for-pcs"></a>Számítógépek támogatása
 
@@ -77,11 +77,11 @@ A natív **Posta** alkalmazás a Windows 8.1-es és újabb verzióiban (az Intun
 
 1. Az [Azure Portalon](https://portal.azure.com/) jelentkezzen be az Intune-os hitelesítő adataival.
 
-1. Miután sikeresen bejelentkezett, megjelenik az **Azure irányítópultja**.
+1. Miután sikeresen bejelentkezett, megjelenik a **Azure irányítópultján**.
 
-1. Válassza a bal oldali menü **Minden szolgáltatás** pontját, majd írja be a szűrő szövegmezőbe az **Intune** nevet.
+1. Válasszon **minden szolgáltatás** a bal oldali menüben, majd írja be **Intune** box szűrő szövegmezőbe.
 
-1. Az **Intune** kiválasztásával megjelenik az **Intune irányítópultja**.
+1. Válasszon **Intune**, megjelenik a **Intune irányítópultján**.
 
 1. Válassza a **Helyszíni hozzáférés** lehetőséget. A **Helyszíni hozzáférés** panelen látható a feltételes hozzáférési szabályzat állapota, és az, hogy mely eszközökre van hatással.
 

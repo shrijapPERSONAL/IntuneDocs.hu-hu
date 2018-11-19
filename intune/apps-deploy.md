@@ -15,12 +15,12 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e5442b45ed180d10943dfd5d1a1ef1546d693b2b
-ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
-ms.translationtype: HT
+ms.openlocfilehash: f7b875d370880f28fa6a611bd5f66fb54b02955d
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48903420"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610107"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Alkalmazások hozzárendelése csoportokhoz a Microsoft Intune-nal
 
@@ -58,7 +58,7 @@ Az alábbi táblázat az alkalmazások felhasználókhoz és eszközökhöz val�
 6. A menü **Kezelés** szakaszában válassza a **Hozzárendelések** elemet.
 7. Válassza a **Csoport hozzáadása** lehetőséget az alkalmazáshoz kapcsolódó **Csoport hozzáadása** ablaktábla megnyitásához.
 8. Az adott alkalmazáshoz válasszon egy **hozzárendelés-típust**:
-   - **Regisztrált eszközökhöz elérhető**: A felhasználók a Céges portál alkalmazásban vagy webhelyen telepítik az alkalmazást.
+   - **Regisztrált eszközök esetében elérhető**: az alkalmazás hozzárendelése csoportokhoz a felhasználók, akik az alkalmazást is telepítheti a céges portál alkalmazásból vagy webhelyről.
    - **Regisztrációval vagy anélkül is elérhető**: Az alkalmazás hozzárendelése olyan felhasználók csoportjaihoz, akik eszközei nincsenek regisztrálva az Intune-ban. A felügyelt Google Play Áruházból származó alkalmazások nem támogatják ezt a lehetőséget. 
    - **Szükséges**: A rendszer telepíti az alkalmazást a kiválasztott csoportok eszközeire.
    - **Eltávolítás**: A rendszer eltávolítja az alkalmazást a kiválasztott csoportok eszközeiről.

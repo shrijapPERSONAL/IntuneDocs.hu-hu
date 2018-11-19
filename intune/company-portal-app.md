@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 11/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce31832421ece9008e1526e54ba3e9aa2780c666
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
-ms.translationtype: HT
+ms.openlocfilehash: 6a249962c4ac75e51be082112b884a5825d4ef2a
+ms.sourcegitcommit: 490f68479af814fbea1d9bd222011736fcbb1dd6
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236288"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51811512"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>A Microsoft Intune Céges portál alkalmazásának konfigurálása
 
@@ -29,7 +29,7 @@ ms.locfileid: "50236288"
 A felhasználók a Microsoft Intune Céges portálon férhetnek hozzá a vállalati adatokhoz, és olyan gyakori feladatokat hajthatnak végre, mint például az eszközök regisztrálása, az alkalmazások telepítése és az informatikai támogatási információk megtekintése.        
 
 > [!Tip]        
-> A vállalati portál testreszabása a vállalati portál webhelyére és a vállalati portál alkalmazásaira egyaránt hatással van.       
+> A vállalati portál testreszabása a vállalati portál webhelyére és a vállalati portál alkalmazásaira egyaránt hatással van. Vegye figyelembe, hogy felhasználóknak rendelkezniük kell Intune-licencet a céges portál webhely eléréséhez.
 
 A vállalati portál testreszabásával ismerős és könnyen használható környezetet teremthet felhasználóinak. Ennek végrehajtásához válassza az **Ügyfélalkalmazások** területen a **Beállítás** > **Company Portal Branding** (Céges portál védjegyezése) lehetőséget, majd konfigurálja a szükséges beállításokat.  
 
@@ -48,7 +48,7 @@ A csillaggal (*) jelölt mezők kitöltése kötelező.
 | **Az adatvédelmi nyilatkozat URL-címe** |     79     | Itt adhatja meg vállalatának adatvédelmi nyilatkozatát, amely akkor jelenik meg, ha a felhasználó a Vállalati portál adatvédelmi hivatkozásaira kattint. Érvényes URL-címet kell megadnia, a következő formátumban: `<https://www.contoso.com>`. |
 
 ## <a name="support-information"></a>Támogatási információk      
-Ahhoz, hogy munkatársainak megadhassa az Intune-nal kapcsolatos kérdések esetén használható kapcsolattartási adatokat, írja be a céges támogatási információkat.       
+Adja meg a vállalat adatait egy ügyfél a munkatársak rendelkezésére az Intune-nal kapcsolatos kérdésekre.          
 
 |Mező neve|Maximális hossz|További információ|
 |---|---|---|
@@ -68,7 +68,7 @@ Témaszínt alkalmazhat a Céges portálon. Jelöljön ki egy szabványos színt
 
 |Mező neve|További információ|
 |---|---|
-|**Jelöljön ki egy szabványos színt, vagy adjon meg egy hexadecimális hatjegyű kódot**| Válassza a **Standard** lehetőséget a szín vizuális kiválasztásához. Válassza az **Egyéni** lehetőséget egy hexadecimális kódon alapuló meghatározott szín kiválasztásához.|
+|**Jelöljön ki egy szabványos színt, vagy adjon meg egy hexadecimális hatjegyű kódot**| Válasszon **Standard** vizuálisan válassza ki a színt. Válassza az **Egyéni** lehetőséget egy hexadecimális kódon alapuló meghatározott szín kiválasztásához.|
 |**Téma színének kiválasztása**| A Vállalati portálra alkalmazni kívánt témaszín kiválasztása. Választhat a színválasztóból, vagy megadhat egy hexadecimális kódot. |
 |**Megjelenítés**| Válassza ki, hogy mit szeretne megjeleníteni: **Cégembléma és -név**, **Csak cégembléma** vagy **Csak cégnév**. |
 |**A céges embléma feltöltése**|Feltöltheti a Céges portálon megjeleníteni kívánt vállalati emblémát. Vegye figyelembe, hogy a szöveg színének kiválasztása automatikusan történik a legnagyobb kontraszt eléréséhez. Az optimális megjelenés érdekében töltsön fel egy áttetsző hátterű emblémát.<p><ul><li>Maximális képméret: 400px x 400px</li><li>Maximális fájlméret: 750KB</li><li>Fájltípus: PNG, JPG vagy JPEG</li></ul>|
@@ -84,28 +84,37 @@ Válasszon olyan emblémát, amely fehér vagy világos háttéren mutat a legjo
 
 ### <a name="brand-image-for-company-portal"></a>Márkakép a Céges portálhoz
 
-Márkakép feltöltése, amely tükrözi a vállalati márkát. A márkakép támogatását elérhetővé tesszük a Céges portál alkalmazásokban, de lehet, hogy a kép nem minden platformon látható.
+Márkakép feltöltése, amely tükrözi a vállalati márkát. A módosítások mentése után az Intune-webportálon a panel tetején található **Beállítások előnézetének megtekintése** lehetőséget választva megtekintheti, hogyan fog kinézni a konfigurációja. Vegye figyelembe, hogy a márkakép előnézetét csak egy iOS-eszközön lehet megtekinteni, az Intune webes portálján nem. 
 
 |Mező neve|További információ|
 |---|---|
-|**Márkakép feltöltése**| Ezt a beállítás rendelkezésre áll háttérkép megjelenítéséhez a Céges portál alkalmazás felhasználói profil oldalán.<p><ul><li>A kép ajánlott szélessége: több mint 1125 képpont, de legalább 640 képpont</li><li>Maximális képméret: 1,3 MB</li><li>Fájltípus: PNG, JPG vagy JPEG</li></ul>|
+|**Márkakép feltöltése**| Ezt a beállítás rendelkezésre áll háttérkép megjelenítéséhez a Céges portál alkalmazás felhasználói profil oldalán.<p>*Megjegyzés:*: A kép módon jelenhetnek meg a különböző platformokon.<p><ul><li>A kép ajánlott szélessége: több mint 1125 képpont, de legalább 640 képpont</li><li>Maximális képméret: 1,3 MB</li><li>Fájltípus: PNG, JPG vagy JPEG</li></ul>|
 
 A megfelelő márkakép javíthatja a felhasználó Céges portálba vetett bizalmát a cég márkájának hangsúlyozásával. Íme néhány tipp, amelyet érdemes figyelembe venni a kép Céges portálhoz történő beszerzésekor, kiválasztásakor és optimalizálásakor. 
 
-- Vegye fel a kapcsolatot az értékesítési vagy művészeti osztállyal. Lehet, hogy már rendelkeznek jóváhagyott márkaképekkel. Előfordulhat, hogy a képek igény szerinti optimalizálásában is tudnak segíteni. 
+- Vegye fel a kapcsolatot az értékesítési vagy művészeti osztállyal. Előfordulhat, hogy már van jóváhagyott márka lemezképek. Előfordulhat, hogy a képek igény szerinti optimalizálásában is tudnak segíteni. 
 
-- Fontolja meg a fekvő és az álló tájolású kompozíciókat is. A képnek megfelelő háttérrel kell rendelkeznie, amely körülveszi a fókuszpontot. A kép levágása az eszköz méretétől és tájolásától függően eltérő lehet. 
+- Fontolja meg a fekvő és az álló tájolású kompozíciókat is. A képnek megfelelő háttérrel kell rendelkeznie, amely körülveszi a fókuszpontot. A kép eszköz mérete, a tájolást és a platform menübeállításoktól függően előfordulhat, hogy levágja. 
 
 - Kerülje az általános, készletben elérhető képek használatát. A képnek tükröznie kell a vállalati márkát, és ismerősnek kell tűnnie a felhasználóknak. Ha még nem rendelkezik ilyen képpel, jobb ha nem használ semmilyet, mint sem hogy olyan általános képet adjon meg, ami semmit nem jelent a felhasználóknak. 
 
 - Szükségtelen metaadatok eltávolítása. A képfájl tartalmazhat metaadatokat, például kameraprofilt, földrajzi helyet, címet, feliratot stb. Használjon képoptimalizáló eszközt ezeknek az adatoknak az eltávolításához a minőség fájlméretkorlátok betartásával történő megőrzéséhez. 
 
-A módosítások mentése után az Intune-webportálon a panel tetején található **Beállítások előnézetének megtekintése** lehetőséget választva megtekintheti, hogyan fog kinézni a konfigurációja. Vegye figyelembe, hogy a márkakép előnézetét csak egy iOS-eszközön lehet megtekinteni, az Intune webes portálján nem. 
+A márka lemezkép van hozzáadva, vagy módosítása után az Intune-ban a végfelhasználó előfordulhat, hogy nem jelenik meg az iOS-eszközökön a vállalati portál a Start menüben a módosítás mentése elismert, és ezután újra lett indítva a márka kép megjelenítéséhez. 
 
+### <a name="brand-image-examples"></a>Márka kép példák
+
+Az alábbi képen látható példában iPad védjegyzési kép:
+
+![Védjegyzési kép például iPhone képernyőképe](media/company-portal-app/company-portal-app-03.png)
+
+Az alábbi képen látható védjegyzési kép például iPhone-on:
+
+![Védjegyzési kép például iPad képernyőképe](media/company-portal-app/company-portal-app-02.png)
 
 ## <a name="windows-company-portal-keyboard-shortcuts"></a>A Windows Céges portálon használható billentyűparancsok
 
-A végfelhasználók a Windows Céges portál billentyűparancsokkal (billentyűkombinációkkal) navigálási, alkalmazás- és eszközműveletek is kiválthatnak.
+A végfelhasználók a Windows céges portál (megoldásgyorsítók) billentyűparancsok használata a navigációs, alkalmazás és eszköz műveletek is indíthat.
 
 A következő billentyűparancsok érhetők el a Windows Céges portál alkalmazásban.
 
@@ -125,6 +134,10 @@ A következő billentyűparancsok érhetők el a Windows Céges portál alkalmaz
 |  | Eltávolítás | Ctrl+D vagy Delete |
 |  | Hozzáférés ellenőrzése | Ctrl+M vagy F9 |
 | Alkalmazás részletei | Telepítés | Ctrl+I |
+
+A végfelhasználók is elérhetik a Windows céges portál alkalmazásban elérhető parancsikonjait megtekintéséhez.
+
+![Képernyőfelvétel a Windows céges portál alkalmazásban elérhető hivatkozása](media/company-portal-app/company-portal-app-01.png)
 
 ## <a name="next-steps"></a>További lépések
 

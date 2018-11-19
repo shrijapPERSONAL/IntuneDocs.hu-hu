@@ -15,12 +15,12 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ce54f3bc51735c763359b3e59832454d0a89fad
-ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
-ms.translationtype: HT
+ms.openlocfilehash: 1a10d434fbdb5d827c7ecb89d1ae2f7e43c0f951
+ms.sourcegitcommit: 1e6fee4032c50ab41a5166db39fbea80a731c541
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51298088"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51654908"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Hibrid Azure AD-hez csatlakoztatott eszközök üzembe helyezése az Intune és a Windows Autopilot használatával (előzetes verzió)
 Az Intune és a Windows Autopilot használatával elvégezheti a hibrid Azure Active Directoryhoz csatlakoztatott eszközök beállítását. Ehhez kövesse az alábbi lépéseket:
@@ -110,12 +110,13 @@ Annak a szervezeti egységnek, amelyre a jogosultságok átruházva lesznek, meg
 
 Az Active Directoryhoz készült Intune-összekötőt egy olyan Windows Server 2016 rendszert futtató számítógépen kell telepíteni, amely rendelkezik interneteléréssel, és hozzáférhet az Active Directory-tartományához is. A méret és a rendelkezésre állás növelése érdekében, valamint egyszerre több Active Directory-tartomány támogatásához egyszerre több összekötőt is telepíthet környezetében. Javasoljuk, hogy az összekötőt egy olyan kiszolgálón telepítse, amelyet nem használ más Intune-összekötő futtatására.
 
-1. Az [Intune-ban](https://aka.ms/intuneportal) válassza az **Eszközök regisztrálása** > **Windows-regisztráció** > **Active Directoryhoz készült Intune-összekötő (előzetes verzió)** > **Összekötő hozzáadása** lehetőségeket. 
-2. Kövesse az utasításokat az összekötő letöltéséhez.
-3. Az összekötő telepítéséhez nyissa meg az összekötő letöltött telepítőfájlját (ODJConnectorBootstrapper.exe).
-4. A telepítés végén válassza a **Konfigurálás** lehetőséget.
-5. Válassza a **Bejelentkezés** lehetőséget.
-6. Adja meg a globális rendszergazda szerepkör, vagy az Intune-rendszergazda szerepkör felhasználói hitelesítő adatait.
+1. Győződjön meg arról, hogy rendelkezik-e telepítve és konfigurálva, a nyelvi csomag [az Intune-összekötő (előzetes verzió) nyelvi követelmények](https://docs.microsoft.com/windows/deployment/windows-autopilot/intune-connector).
+2. Az [Intune-ban](https://aka.ms/intuneportal) válassza az **Eszközök regisztrálása** > **Windows-regisztráció** > **Active Directoryhoz készült Intune-összekötő (előzetes verzió)** > **Összekötő hozzáadása** lehetőségeket. 
+3. Kövesse az utasításokat az összekötő letöltéséhez.
+4. Az összekötő telepítéséhez nyissa meg az összekötő letöltött telepítőfájlját (ODJConnectorBootstrapper.exe).
+5. A telepítés végén válassza a **Konfigurálás** lehetőséget.
+6. Válassza a **Bejelentkezés** lehetőséget.
+7. Adja meg a globális rendszergazda szerepkör, vagy az Intune-rendszergazda szerepkör felhasználói hitelesítő adatait.
 8. Navigáljon az **Eszközregisztráció** > **Windows regisztráció** > **Active Directoryhoz készült Intune-összekötő (előzetes verzió)** területre, és győződjön meg róla, hogy a kapcsolat állapota **Aktív**.
 
 ### <a name="configure-web-proxy-settings"></a>Webproxy-beállítások konfigurálása

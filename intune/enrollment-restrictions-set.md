@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: de77ad92eac4aa869aec504f1762ad6f216c74d2
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
-ms.translationtype: HT
+ms.openlocfilehash: 97543ec74225ef86208000bccb2a8ad7852dd9c1
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602146"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610056"
 ---
 # <a name="set-enrollment-restrictions"></a>Regisztrációs korlátozások beállítása
 
@@ -66,7 +66,7 @@ A rendszer tartalmaz alapértelmezett korlátozásokat mind az eszköztípusra, 
 
 ## <a name="set-device-type-restrictions"></a>Típus szerinti korlátozás beállítása
 
-Az eszköztípuskorlátok beállításait az alábbi lépésekkel módosíthatja. Ezek a korlátozások a már regisztrált eszközöket nem érintik. Ez a funkció nem alkalmas az [Intune PC-ügynök](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune.md) használatával regisztrált eszközök letiltásához.
+Az eszköztípuskorlátok beállításait az alábbi lépésekkel módosíthatja. Ezek a korlátozások a már regisztrált eszközöket nem érintik. Ez a funkció nem alkalmas az [Intune PC-ügynök](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) használatával regisztrált eszközök letiltásához.
 
 1. Jelentkezzen be az Azure Portalra.
 2. Válassza a **További szolgáltatások** lehetőséget, írja be az **Intune** keresési kifejezést, majd válassza az **Intune** lehetőséget.
@@ -100,11 +100,11 @@ Windows vállalati regisztrációnak minősülnek az alábbi módszerek:
 - Az eszközregisztráció az [SCMM megosztott kezeléshez való automatikus regisztrációja](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md) révén történik.
  
 Az alábbi regisztrációkat cégesként jelzi az Intune, de le lesznek tiltva, mert nem kínálják fel az Intune-rendszergazdának az eszközönkénti szabályozást:
- - [Automatikus MDM-regisztráció](windows-enroll.md#enable-windows-10-automatic-enrollment) és [Azure Active Directory-csatlakozás a Windows beállítása során](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)\*.
-- [Automatikus MDM-regisztráció](windows-enroll.md#enable-windows-10-automatic-enrollment) és [Azure Active Directory-csatlakozás a Windows beállításaiból](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup.md)*.
+ - [Automatikus MDM-regisztráció](windows-enroll.md#enable-windows-10-automatic-enrollment) és [Azure Active Directory-csatlakozás a Windows beállítása során](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*.
+- [Automatikus MDM-regisztráció](windows-enroll.md#enable-windows-10-automatic-enrollment) és [Azure Active Directory-csatlakozás a Windows beállításaiból](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)*.
  
 Az alábbi személyes regisztrációs módszerek is le lesznek tiltva:
-- [Automatikus MDM-regisztráció](windows-enroll.md#enable-windows-10-automatic-enrollment) és [munkahelyi fiók hozzáadása a Windows-beállításokból](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md)\*.
+- [Automatikus MDM-regisztráció](windows-enroll.md#enable-windows-10-automatic-enrollment) és [munkahelyi fiók hozzáadása a Windows-beállításokból](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network)\*.
 - [Csak MDM-regisztráció]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) lehetősége a Windows-beállításokból.
 
 \* Ha az AutoPilottal regisztrált, ezek nincsenek letiltva.

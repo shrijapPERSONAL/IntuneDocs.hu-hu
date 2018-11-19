@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 1180e085c0584f3da535947cad60c41d06a8026a
-ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
-ms.translationtype: HT
+ms.openlocfilehash: c929fd8c01eda062d54b818996bebe02807e2f55
+ms.sourcegitcommit: dec09e9c91322ca347276785aca3c50036956f32
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51576970"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "51859562"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -120,9 +120,6 @@ E frissítés tartalmazza a macOS rendszerre készült Gatekeeper technológiát
 
 #### <a name="enrollment-abandonment-report----1382924---"></a>Regisztrációmegszakítási jelentés <!-- 1382924 -->
 A regisztrációmegszakítással kapcsolatos további részleteket tartalmazó új jelentés a **Eszközregisztráció** > **Figyelés** szakaszban áll rendelkezésre. További információt a [Céges portállal történő regisztráció megszakítása – jelentés](enrollment-report-company-portal-abandon.md) című cikkben talál.
-
-#### <a name="assign-autopilot-profiles-to-the-all-devices-virtual-group---2715522---"></a>Autopilot-profilok hozzárendelése a Minden eszköz virtuális csoporthoz <!--2715522 -->
-Autopilot-profilokat rendelhet hozzá a Minden eszköz virtuális csoporthoz. Ehhez válassza az **Eszközök beléptetése** > **Windows-regisztráció** > **Telepítési profilok** elemet > válasszon egy profilt > **Hozzárendelések** > a **Hozzárendelés a következőhöz** elemnél válassza a **Minden eszköz** lehetőséget. Az Autopilot-profilokról a [Windows-eszközök regisztrálása a Windows AutoPilot használatával](enrollment-autopilot.md) című cikkben tájékozódhat.
 
 #### <a name="new-azure-active-directory-terms-of-use-feature----2870393---"></a>Az Azure Active Directory új Használati feltételek funkciója <!-- 2870393 -->
 Az Intune-ra vonatkozó Általános Szerződési Feltételek helyett mostantól használhatja az Azure Active Directory-ra vonatkozó Általános Szerződési Feltételek funkciót. Az Azure AD Használati feltételek funkciója nagyobb rugalmasságot biztosít abban, hogy mely feltételek jelenjenek meg és mikor, továbbá jobb honosítástámogatást, jobb feltételmegjelenítés-vezérlést és jobb jelentéskészítési funkciókat nyújt. Az Azure AD Használati feltételek funkciójához Prémium P1 szintű Azure Active Directory szükséges, amely az Enterprise Mobility + Security E3 csomagnak is része. További információt [A céges felhasználói hozzáférési használati feltételek kezelése](terms-and-conditions-create.md) című cikkben talál.
@@ -298,7 +295,7 @@ A riasztások és a beléptetési hibák mostantól külön lapfüleken jelennek
 
 #### <a name="restricts-apps-and-block-access-to-company-resources-on-android-devices----2451462----"></a>Alkalmazások korlátozása és a céges erőforrásokhoz való hozzáférés letiltása androidos eszközökön <!-- 2451462  -->  
 Az **Eszközmegfelelőség** > **Szabályzatok** > **Szabályzat létrehozása** > **Android** > **Rendszerbiztonság** területen, az *Eszközbiztonság* szakaszban megjelent egy új, **Korlátozott alkalmazások** nevű beállítás. A **Korlátozott alkalmazások** beállítás egy megfelelőségi szabályzattal tiltja le a céges erőforrásokhoz való hozzáférést, ha bizonyos alkalmazások telepítve vannak az eszközön. Az eszköz addig nem megfelelőnek minősül, amíg a korlátozott alkalmazásokat el nem távolítják róla.
-Érintett kiadások: 
+A következőkre vonatkozik: 
 - Android
 
 
@@ -645,7 +642,7 @@ A következő új állapotok lettek hozzáadva az **Eszközmegfelelőség** > **
 - Sikerült
 - Hiba
 - Ütközés
-- Függőben
+- Függőben lévő
 - Nem alkalmazható Egy olyan kép is megjelenik, amely mutatja a más platformon lévő eszközszámot. Például egy iOS-profil megtekintése esetén a profilhoz rendelt, nem iOS rendszerű eszközök száma is látható lesz az új csempén. Lásd: [Eszközmegfelelési szabályzatok](compliance-policy-monitor.md#view-status-of-device-policies).
 
 #### <a name="device-compliance-supports-3rd-party-anti-virus-solutions----2325484---"></a>Az eszközmegfelelőség támogatja a harmadik féltől származó vírusvédelmi megoldásokat <!-- 2325484 -->

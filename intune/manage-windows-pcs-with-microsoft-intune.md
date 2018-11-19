@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/17/2018
+ms.date: 11/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,19 +14,19 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: ef21f22a4808518ce8557b761e4181f8f6a655c3
-ms.sourcegitcommit: ed97b68f08c1a8469f0b45bc1c839a0b5f5c71e0
-ms.translationtype: HT
+ms.openlocfilehash: f311d8a389d551ed834d955c5d1c59dbc9c3c4a2
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45978246"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610022"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Windows rendszerű számítógépek kezelése az Intune-szoftverügyfélen keresztül számítógépként
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> A Microsoft Intune-ban kezelheti a Windows-számítógépeket [mobileszközként a mobileszköz-kezelés (MDM),](windows-enroll.md) vagy számítógépként az Intune szoftverügyfél használatával, a lent ismertetett módon. A Microsoft azonban azt javasolja, hogy az ügyfelek [lehetőség szerint az MDM-megoldást válasszák](windows-enroll.md) a felügyelethez.
+> A Microsoft Intune-ban kezelheti a Windows-számítógépeket [mobileszközként a mobileszköz-kezelés (MDM),](windows-enroll.md) vagy számítógépként az Intune szoftverügyfél használatával, a lent ismertetett módon. A Microsoft azonban azt javasolja, hogy az ügyfelek [lehetőség szerint az MDM-megoldást válasszák](windows-enroll.md) a felügyelethez. További információkért lásd: [Windows rendszerű számítógépek felügyeletét, számítógépek vagy mobileszközök összehasonlítása](pc-management-comparison.md) 
 
 Az Intune átfogó megoldást nyújt a mobileszközök kezelésére a szervezetek számára. Az Intune a Windows 10 operációs rendszer beépített modern eszközfelügyeleti lehetőségeinek használatával képes mobileszközként kezelni a Windows rendszerű számítógépeket. A szervezet felügyeleti igényeinek teljesítése érdekében az Intune számítógépként is képes kezelni a Windows rendszerű számítógépeket az Intune-szoftverügyfélen keresztül. Ez a felügyeleti módszer a korábbi Windows operációs rendszer hagyományos számítógép-felügyeleti képességeit használja.
 
@@ -40,7 +40,8 @@ Az Intune támogatja a Windows rendszerű számítógépek számítógépként v
 
 ## <a name="requirements-for-intune-pc-client-management"></a>Az Intune-számítógépügyfél általi felügyelet követelményei
 
-**Hardver**: Az Intune-ügyfélszoftver a következő minimális hardverkövetelményekkel telepíthető:
+**Hardver**:  
+Az Intune-ügyfélszoftver telepítéséhez szükséges minimális hardverkövetelmények a következők:
 
 |Követelmény|További információ|
 |---------------|--------------------|
@@ -48,7 +49,8 @@ Az Intune támogatja a Windows rendszerű számítógépek számítógépként v
 |Processzor és memória|A processzorra és a RAM-ra vonatkozó követelményeket a számítógép operációs rendszere határozza meg.|
 |Lemezterület|200 MB szabad lemezterület az ügyfélszoftver telepítése előtt.|
 
-**Szoftver**: Az ügyfélszoftver az alábbi szoftverkövetelményekkel telepíthető:
+**Szoftver**:  
+Az ügyfélszoftver telepítésének szoftverkövetelményei a következők:
 
 |Követelmény|További információ|
 |---------------|--------------------|

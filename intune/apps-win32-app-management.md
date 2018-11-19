@@ -1,10 +1,27 @@
 ---
-cím: Win32-alkalmazások hozzáadása a Microsoft Intune címutótagjához: leírás: További információ a Win32 alkalmazások Microsoft Intune-nal való hozzáadásáról, telepítéséről és kezeléséről. E témakör áttekintést nyújt a Win32-alkalmazások telepítési és kezelési lehetőségeiről az Intune-ban, valamint a Win32-alkalmazásokkal kapcsolatos hibák elhárításával kapcsolatban. kulcsszavak: szerző: Erikre ms.author: erikre manager: dougeby <<<<<<< HEAD ms.date: 10/23/2018 ======= ms.date: 10/19/2018
->>>>>>> 14fdd9aac5e66324acfe83ae31b126d8216d7da4 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
-
-ms.reviewer: mghadial ms.suite: ems ms.custom: intune-azure
+title: Win32-alkalmazások hozzáadása a Microsoft Intune-hoz
+titlesuffix: ''
+description: Ismerje meg, hogyan adhat hozzá, továbbítására és Win32-alkalmazások Microsoft Intune-nal kezelheti. E témakör áttekintést nyújt a Win32-alkalmazások telepítési és kezelési lehetőségeiről az Intune-ban, valamint a Win32-alkalmazásokkal kapcsolatos hibák elhárításával kapcsolatban.
+keywords: ''
+author: Erikre
+ms.author: erikre
+manager: dougeby
+ms.date: 11/15/2018
+ms.topic: article
+ms.prod: ''
+ms.service: microsoft-intune
+ms.technology: ''
+ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
+ms.reviewer: mghadial
+ms.suite: ems
+ms.custom: intune-azure
+ms.openlocfilehash: 8e152e3dc5bc42545bf8bee8595b7bbca2fab0eb
+ms.sourcegitcommit: 618c3076a7973b3b54ce3038ee007a33aa82efeb
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51830117"
 ---
-
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Különálló Intune – Win32-alkalmazáskezelés (nyilvános előzetes verzió)
 
 Az Intune különálló verziója több lehetőséget biztosít a Win32-alkalmazások kezelése terén. Bár a felhőhöz csatlakozó ügyfelek használhatják a Konfigurációkezelőt a Win32-alkalmazások kezeléséhez, a kizárólag Intune-nal rendelkező ügyfelek számára több lehetőség érhető el az üzletági (LOB) Win32-alkalmazások kezeléséhez. E témakör áttekintést nyújt a Win32-alkalmazások Intune-ban elérhető kezelési funkcióiról, valamint a hibaelhárítással kapcsolatos lehetőségekről.
@@ -43,6 +60,13 @@ A [Microsoft Intune Win32-alkalmazások feltöltéséhez készült előkészít�
 |:-----------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |    `IntuneWinAppUtil -h`    |    Ez a parancs megjeleníti az eszköz használatára vonatkozó információkat.    |
 |    `IntuneWinAppUtil -c <setup_folder> -s <source_setup_file> -o <output_folder> <-q>`    |    Ez a parancs létrehozza az `.intunewin` fájlt a megadott forrásmappa és telepítőfájl alapján. Az MSI-telepítőfájlhoz az eszköz lekéri az Intune-hoz szükséges adatokat. Ha a `-q` van megadva, a parancs csendes módban fog futni, és ha a kimeneti fájl már létezik, felül fogja írni. Ha a kimeneti mappa még nem létezik, akkor automatikusan létrejön.    |
+
+Létrehozásakor egy *.intunewin* fájlt minden olyan fájlok, a telepítés mappa almappa hivatkoznia kell. Ezután használja a relatív elérési út egy konkrét fájlt kell hivatkoznia. Például:
+
+**Telepítő forrásmappája:** *c:\testapp\v1.0*<br>
+**Licencfájl:** *c:\testapp\v1.0\licenses\license.txt*
+
+Tekintse meg a *license.txt* fájl relatív elérési út használatával *licenses\license.txt*.
 
 ## <a name="create-assign-and-monitor-a-win32-app"></a>Win32-alkalmazás létrehozása, hozzárendelése és monitorozása
 

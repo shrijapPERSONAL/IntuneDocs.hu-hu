@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a01bbf8e65c72b303d1474a92b93796051bfc02e
-ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
-ms.translationtype: HT
+ms.openlocfilehash: 2c47cd8ea136bcead14e70769f63df7b9b8f0e20
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187801"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610090"
 ---
 # <a name="see-device-details-in-intune"></a>Eszközadatok megtekintése az Intune-ban
 
@@ -45,23 +45,25 @@ Ez a cikk bemutatja, hogyan tekintheti meg az összes eszközét és azok tulajd
      - Távsegítség-munkamenet indítása
    - [Saját létrehozású eszközkategória](device-group-mapping.md) hozzárendelésére és az eszköz tulajdonosának (saját eszköz vagy vállalati eszköz) átállítására használja a **Tulajdonságok** lehetőséget.
    - A **Hardver** sok részletet tartalmaz az eszközről, köztük sok más mellett az eszköz azonosítóját, operációs rendszerét és annak verzióját, a tárhelyet, a modellt és a gyártót és a feltételes hozzáférés beállításait.
-   - Az **Észlelt alkalmazások** verziójukkal együtt sorolja fel azon telepített alkalmazásokat, amelyet az Intune talált az eszközön. Az alkalmazások listáját **Exportálni** is tudja egy .csv-fájlba.
+   - Az **Észlelt alkalmazások** verziójukkal együtt sorolja fel azon telepített alkalmazásokat, amelyet az Intune talált az eszközön. Az alkalmazások listáját **Exportálni** is tudja egy .csv-fájlba. Ez a lista 7 naponta frissül.
    - Az **Eszközmegfelelőség** a hozzárendelt megfelelőségi szabályzatok listája mellett azt is tartalmazza, hogy az eszköz megfelelő vagy nem.
    - Az **Eszközkonfiguráció** az eszközhöz rendelt összes eszközkonfigurációs szabályzat listáját mutatja meg, és hogy a szabályzat alkalmazása sikeres vagy sikertelen.
 
 Az Intune csak a vállalat tulajdonában lévő eszközökön található alkalmazásokról készít listát. A személyes eszközökön található alkalmazásokat nem ellenőrzi. A vállalat tulajdonában lévő Windows 10 rendszerű számítógépekről csak a modern alkalmazásokat veszi figyelembe a lista készítésekor. A Win32-es alkalmazásokról az Intune nem gyűjt információkat. Az eszközök szolgáltatójától függően előfordulhat, hogy nem minden alkalmazásról talál információt.
 
-|Platform|Személyes tulajdonú eszközök esetében|Vállalati tulajdonú eszközök esetében|  
+|Platform|Személyes tulajdonú eszközök esetében|A vállalat által birtokolt eszközök|  
 |--------------|---------------------------------|--------------------------------|  
-|Windows 10 (a Configuration Manager-ügyfél nélkül)|Csak felügyelt alkalmazások|Csak felügyelt alkalmazások|
-|Windows 8.1 (a Configuration Manager-ügyfél nélkül)|Csak felügyelt alkalmazások|Csak felügyelt alkalmazások|  
-|Windows Phone 8|Csak felügyelt alkalmazások|Csak felügyelt alkalmazások|  
-|Windows RT|Csak felügyelt alkalmazások|Csak felügyelt alkalmazások|  
-|iOS|Csak felügyelt alkalmazások|Az összes, az eszközön telepített alkalmazás|
-|macOS|Az összes, az eszközön telepített alkalmazás|Az összes, az eszközön telepített alkalmazás|  
-|Android|Csak felügyelt alkalmazások|Az összes, az eszközön telepített alkalmazás|  
+|Windows 10 (a Configuration Manager-ügyfél nélkül)|Csak a felügyelt alkalmazások|Csak a felügyelt alkalmazások|
+|Windows 8.1 (a Configuration Manager-ügyfél nélkül)|Csak a felügyelt alkalmazások|Csak a felügyelt alkalmazások|  
+|Windows Phone 8|Csak a felügyelt alkalmazások|Csak a felügyelt alkalmazások|  
+|Windows RT|Csak a felügyelt alkalmazások|Csak a felügyelt alkalmazások|  
+|iOS|Csak a felügyelt alkalmazások|Az eszközön telepített összes alkalmazás|
+|macOS|Az eszközön telepített összes alkalmazás|Az eszközön telepített összes alkalmazás|  
+|Android|Csak a felügyelt alkalmazások|Az eszközön telepített összes alkalmazás|  
+|Vállalati Android|Csak a felügyelt alkalmazások|Csak a munkahelyi profilban található telepített alkalmazások|  
 
 ## <a name="hardware-device-details"></a>Hardvereszköz részletes adatai
+Az eszközök által használt szolgáltatótól, függően nem minden adata gyűjthető
 
 |Részletek|Leírás|Platform| 
 |--------------|----------------------|----|  

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c9e440aef7f434cbe675506fd6f22a9bd26b2c31
-ms.sourcegitcommit: 528d2bc70bfd25803a2d9f0fe9372c8a5f5e7dad
-ms.translationtype: HT
+ms.openlocfilehash: 457acdc212855767687f97f7d03b731f35afad46
+ms.sourcegitcommit: 490f68479af814fbea1d9bd222011736fcbb1dd6
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47446820"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51811529"
 ---
 # <a name="capabilities-by-enrollment-method-for-windows-devices"></a>Funkciók regisztrációs módszer szerint Windows-eszközökhöz
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "47446820"
 Az Intune lehetővé teszi a dolgozók eszközeinek és alkalmazásainak, illetve a céges adatokhoz való hozzáférésük kezelését. Az eszközöket először regisztrálni kell az Intune szolgáltatásban. A dolgozók eszközeit többféleképpen is lehet regisztrálni. Minden módszer eltérő ajánlott eljárásokkal és funkciókkal bír, ahogyan a lenti tábla mutatja.
 
 ## <a name="best-practices-by-enrollment-method"></a>Ajánlott eljárások regisztrációs módszer szerint
-| **Gyakorlati tanácsok** | **[Azure AD-hez csatlakoztatva](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Azure AD-hez csatlakoztatva, Autopilot-eszközzel](enrollment-autopilot.md)** |**[Tömeges](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **GPO** |
+| **Gyakorlati tanácsok** | **[Azure AD-hez csatlakoztatva](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Azure AD-hez csatlakoztatva, Autopilot-eszközzel](enrollment-autopilot.md)** |**[Tömeges](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[CSOPORTHÁZIREND-OBJEKTUM](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |Az EDU-ban gyakran használt|![X](media/xmark.png)|![Pipa](media/checkmark.png)|![Pipa](media/checkmark.png)|![Pipa](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
 |Az eszközök megosztott eszközként használhatók|![X](media/xmark.png)|![X](media/xmark.png)|![Pipa](media/checkmark.png)|![Pipa](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
@@ -36,7 +36,7 @@ Az Intune lehetővé teszi a dolgozók eszközeinek és alkalmazásainak, illetv
 
 ## <a name="capabilities-by-enrollment-method"></a>Funkciók regisztrációs módszer szerint
 
-| **Funkciók** | **[Azure AD-hez csatlakoztatva](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Azure AD-hez csatlakoztatva, Autopilot-eszközzel](enrollment-autopilot.md)** |**[Tömeges](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **GPO** |
+| **Funkciók** | **[Azure AD-hez csatlakoztatva](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Azure AD-hez csatlakoztatva, Autopilot-eszközzel](enrollment-autopilot.md)** |**[Tömeges](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[CSOPORTHÁZIREND-OBJEKTUM](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |Feltételes hozzáférés                                      |![Pipa](media/checkmark.png)|![Pipa](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Pipa](media/checkmark.png)|![Pipa](media/checkmark.png)|
 |A felhasználó az eszközhöz van rendelve                    |![Pipa](media/checkmark.png)|![Pipa](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Pipa](media/checkmark.png)|![Pipa](media/checkmark.png)|
@@ -52,5 +52,5 @@ Az Intune lehetővé teszi a dolgozók eszközeinek és alkalmazásainak, illetv
 
 ## <a name="next-steps"></a>További lépések
 
-[Regisztrációs beállítások](enrollment-options.md)
+[A Windows-regisztráció beállítása ](windows-enroll.md)
 

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: a9761c57b15700e147bc092b7577fe1b32c78c18
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
-ms.translationtype: HT
+ms.openlocfilehash: c46a90d36ba8b50703e62fc663b1d090ac1bcfc7
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44254156"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610124"
 ---
 # <a name="what-is-device-enrollment"></a>Mi az eszközregisztrálás?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,7 +42,6 @@ Alapértelmezés szerint platformtól függetlenül minden eszköz regisztráci�
 |**[USB-Direct](#usb-direct)**| Nem |    Nem  | Nem|[További információ](./apple-configurator-direct-enroll-ios.md)|
 
 ## <a name="macos-enrollment-methods"></a>macOS-eszközök regisztrálási módszerei
-
 | **Módszer** |  **Alaphelyzetbe állítás szükséges** |  **Felhasználói affinitás** | **Zárolás** | **Részletek**|
 |:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#bring-your-own-device)** | Nem| Igen | Nem | [További információ](./macos-enroll.md)|
@@ -56,7 +55,11 @@ Alapértelmezés szerint platformtól függetlenül minden eszköz regisztráci�
 |**[BYOD](#bring-your-own-device)** | Nem |  Igen |   Nem | [További információ](windows-enroll.md)|
 |**[DEM](#device-enrollment-manager)**| Nem |Nem |Nem  |[További információ](device-enrollment-manager-enroll.md)|
 |**Automatikus regisztráció** | Nem |Igen |Nem | [További információ](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
+|**Az autopilot** |Igen |Igen |Nem | [További információ](enrollment-autopilot.md)]
 |**Csoportos regisztráció** |Nem |Nem |Nem | [További információ](./windows-bulk-enroll.md) |
+|**Közös felügyelet** |Nem |Igen |Nem | [További információ](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)]
+|**GPO** |Nem |Igen |Nem | [További információ](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)]
+
 
 ## <a name="android-enrollment-methods"></a>Android-eszközök regisztrálási módszerei
 

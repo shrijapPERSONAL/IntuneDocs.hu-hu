@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc1943781dcf95209b575cdb6e36d5065275626f
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
-ms.translationtype: HT
+ms.openlocfilehash: a38c5db1e608cb5d9a047dc72ee9109e840096e0
+ms.sourcegitcommit: 4d5e811d451aeb6307e0f64818e182e471ae1ed4
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255061"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51618990"
 ---
 # <a name="set-up-enrollment-of-android-work-profile-devices"></a>Androidos munkahelyi profilos eszközök regisztrálásának beállítása
 
@@ -56,5 +56,5 @@ Kövesse az alábbi lépéseket az Intune Céges portál alkalmazás jóváhagy�
 5.  Válassza a **Jóváhagyás fenntartása, amikor az alkalmazás új engedélyeket kér** lehetőséget, majd kattintson a **Mentés** gombra.
 
 ## <a name="next-steps-for-android-work-profiles"></a>További lépések az androidos munkahelyi profilokkal
-- [Androidos munkahelyi profilos alkalmazások telepítése](store-apps-android.md)
+- [Androidos munkahelyi profilos alkalmazások telepítése](apps-add-android-for-work.md)
 - [Androidos munkahelyi profil-konfigurációs szabályzatok hozzáadása](device-profiles.md)
