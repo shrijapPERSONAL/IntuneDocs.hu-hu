@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 11/19/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,28 +14,28 @@ ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: apps; get-started
-ms.openlocfilehash: ad9eea41d0d40eed9aee07bcf5a77118c0efdab8
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
-ms.translationtype: HT
+ms.openlocfilehash: 77a8adb418759386fdd02409a51b16a734d79ba8
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253750"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167385"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Az alkalmazások Microsoft Intune-beli életciklusának áttekintése
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
-Az alkalmazások Microsoft Intune-beli életciklusa az alkalmazás hozzáadásával kezdődik, majd végighalad a további fázisokon egészen az alkalmazás eltávolításáig. A fázisok megismerése kellő mennyiségű információt nyújt az Intune-beli alkalmazásfelügyelet elkezdéséhez.
+Az alkalmazások Microsoft Intune-beli életciklusa az alkalmazás hozzáadásával kezdődik, majd végighalad a további fázisokon egészen az alkalmazás eltávolításáig. Az Alkalmazáskezelés az Intune-ban – első lépések szükséges akkor fázisok megismerése.
 
 ![Az alkalmazások életciklusa](./media/app-lifecycle.png "Az alkalmazások életciklusa az Intune-ban")
 
 ## <a name="add"></a>Hozzáadás
 
-Az alkalmazások központi telepítésének első lépéseként fel kell vennie az Intune-ba a felügyelni és hozzárendelni kívánt alkalmazásokat. Jóllehet számos különböző típusú alkalmazással dolgozhat, az alapvető eljárás mindegyiknél ugyanaz. Az Intune-ba több különböző alkalmazástípust is felvehet, köztük a saját (üzletági) fejlesztésű, az áruházbeli, a beépített és a webes alkalmazásokat. Az egyes alkalmazástípusokról az [Alkalmazás felvétele a Microsoft Intune-ba](apps-add.md) című témakörben talál további információt. 
+Az alkalmazások központi telepítésének első lépéseként fel kell vennie az Intune-ba a felügyelni és hozzárendelni kívánt alkalmazásokat. Jóllehet számos különböző típusú alkalmazással dolgozhat, az alapvető eljárás mindegyiknél ugyanaz. Az Intune-nal hozzáadhat különböző alkalmazástípust, többek között a fejlesztésű (az üzleti), a tárolót, a beépített alkalmazások és az alkalmazások származó alkalmazások a weben. Az egyes alkalmazástípusokról az [Alkalmazás felvétele a Microsoft Intune-ba](apps-add.md) című témakörben talál további információt. 
 
 ## <a name="deploy"></a>telepítése Telepítse a
 
-Miután felvette az alkalmazást az Intune-ba, [azt felhasználókhoz és felügyelt eszközökhöz rendelheti hozzá](apps-deploy.md). Az Intune megkönnyíti ezt a folyamatot, és az alkalmazás üzembe helyezését követően [ellenőrizheti az üzembe helyezés sikerességét](apps-monitor.md) az Azure-beli Intune-ból. Egyes alkalmazás-áruházakban, mint az [Apple](vpp-apps-ios.md) vagy a [Windows](windows-store-for-business.md), nagy tételben is vásárolhat alkalmazáslicenceket cége számára. Az Intune képes szinkronizálni az adatokat ezekkel az áruházakkal, így Ön közvetlenül az Intune felügyeleti konzoljából hajthatja végre a központi telepítést és követheti nyomon a licenchasználatot.
+Miután felvette az alkalmazást az Intune-ba, [azt felhasználókhoz és felügyelt eszközökhöz rendelheti hozzá](apps-deploy.md). Az Intune megkönnyíti ezt a folyamatot, és az alkalmazás telepítése után is [sikeres figyelése](apps-monitor.md) az üzembe helyezés az Azure Portalon az Intune-ból. Egyes alkalmazás-áruházakban, mint az [Apple](vpp-apps-ios.md) vagy a [Windows](windows-store-for-business.md), nagy tételben is vásárolhat alkalmazáslicenceket cége számára. Az Intune képes szinkronizálni az adatokat ezekkel az áruházakkal, így Ön közvetlenül az Intune felügyeleti konzoljából hajthatja végre a központi telepítést és követheti nyomon a licenchasználatot.
 
 ## <a name="configure"></a>Konfigurálás
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 0ec8de66-5a0f-4c8d-afbf-c2becc7d6eec
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 908135e93fd3980af9d9e80d9c5cf3b4a8abddc3
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
-ms.translationtype: HT
+ms.openlocfilehash: b12a1233daf2aeb673765342edc81fe32a28146a
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058749"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167416"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Beépített alkalmazások hozzáadása a Microsoft Intune-hoz
 
@@ -48,7 +48,7 @@ Beépített alkalmazást a következő módon adhat hozzá az elérhető alkalma
 ## <a name="configure-app-information"></a>Az alkalmazásadatok konfigurálása
 
 Módosíthatja a beépített alkalmazással kapcsolatos információkat. Ezek révén azonosíthatja az alkalmazást az Intune-ban, és segítségükkel a felhasználók is könnyebben megtalálhatják azt a Céges portál alkalmazásban.
-1. A **Mobilalkalmazások – Alkalmazások** panelen válassza ki a módosítani kívánt beépített alkalmazást.  
+1. Az a **ügyfélalkalmazások - alkalmazások** ablaktáblán válassza ki a beépített alkalmazást, amelyet módosítani szeretne.  
     Megjelenik a beépített alkalmazás panelje.
 2. A **Kezelés** alatt válassza a **Tulajdonságok** lehetőséget.
 3. A beépített alkalmazás adatainak módosításához válassza a **Konfigurálás** lehetőséget.

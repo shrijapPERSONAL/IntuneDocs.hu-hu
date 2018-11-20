@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dfe8d8d7c7a534dd4a21104b0c7076c039d9f504
-ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
+ms.openlocfilehash: b0ee2b2ad8d25d1040577a7f8abff4377704d2d5
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51212529"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167535"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>SCEP-tanúsítványok konfigurálása és használata az Intune-nal
 
@@ -44,7 +44,7 @@ Az NDES-kiszolgálónak egy olyan tartományhoz kell csatlakoznia, amely a váll
   
 - **Azure AD Application Proxy** (nem kötelező): Az Azure AD Application Proxy egy dedikált webalkalmazás-proxykiszolgáló (WAP) helyett használható az NDES-kiszolgáló interneten való közzétételéhez. További információért lásd [a helyszíni alkalmazások biztonságos távoli elérésével](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy) kapcsolatos témakört.
 
-#### <a name="additional"></a>Továbbiak
+#### <a name="additional"></a>További
 
 - A WAP-ot futtató kiszolgálón [telepíteni kell egy frissítést](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) ahhoz, hogy az támogassa az NDES által használt hosszú URL-eket. Ez a frissítés megtalálható a [2014. decemberi kumulatív frissítésben](http://support.microsoft.com/kb/3013769), illetve önállóan a [KB3011135-as jelű frissítésként](http://support.microsoft.com/kb/3011135).
 - A WAP-kiszolgálónak rendelkeznie kell egy SSL-tanúsítvánnyal, amely a külső ügyfeleknek közzétett nevet egyezteti, valamint meg kell bíznia az NDES-kiszolgálón használt SSL-tanúsítványban. E tanúsítványok segítségével a WAP-kiszolgáló képes megszakítani az ügyfelek SSL-kapcsolatát, illetve új SSL-kapcsolatot létrehozni az NDES-kiszolgálóval.
@@ -321,7 +321,7 @@ Ebben a lépésben a következőket fogja elvégezni:
     > [!TIP]
     > Ha bezárná a varázslót a tanúsítvány-összekötő felhasználói felületének megnyitása előtt, akkor az alábbi parancs futtatásával nyithatja meg:
     >
-    > <telepítési_útvonal>\NDESConnectorUI\NDESConnectorUI.exe
+    > < install_Path > \NDESConnectorUI\NDESConnectorUI.exe
 
 7. A **Certificate Connector** (Tanúsítvány-összekötő) felhasználói felületén:
 
@@ -365,6 +365,7 @@ A szolgáltatás futásának ellenőrzéséhez nyisson meg egy böngészőt, és
      - iOS
      - Windows 8.1 és újabb
      - Windows 10 és újabb
+     - Vállalati Android
 
    - **Tulajdonos nevének formátuma**: Válassza ki a listáról, hogy az Intune hogyan hozza létre automatikusan a tulajdonos nevét a tanúsítványkérelemben. A beállítások eltérőek a **Felhasználói** és az **Eszköz** tanúsítványtípus kiválasztásakor. 
 

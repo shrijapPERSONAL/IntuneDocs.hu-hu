@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/04/2018
+ms.date: 11/19/2018
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 29f09230-dc56-43db-b599-d961967bda49
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: 5fb0de1af9c8336cb277572faf526f1471108591
-ms.sourcegitcommit: 5e5004a31207e75e54504d74548735c048676a03
-ms.translationtype: HT
+ms.openlocfilehash: 89be4d6940910df4166ec9a485b78e066f94b755
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51225951"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167569"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune adattárház-gyűjtemények
 
@@ -115,7 +115,7 @@ Az alábbi táblázatban foglaltuk össze az eszközökhöz rendelt megfelelős�
 |:------------------:|:------------------------------------------------------:|
 |    Ismeretlen         |    Ismeretlen.                                                                        |
 |    Compliant (Megfelelő)       |    Compliant (Megfelelő).                                                                      |
-|    Noncompliant (Nem megfelelő)    |       Az eszköz nem megfelelő, és le van tiltva a vállalati erőforrásoknál.             |
+|    Nem megfelelő    |       Az eszköz nem megfelelő, és le van tiltva a vállalati erőforrásoknál.             |
 |    Ütközés        |    Ütközés más szabályokkal.                                                      |
 |    Hiba           |       HIba.                                                                       |
 |    ConfigManager   |    A Config Manager kezeli.                                                      |
@@ -281,7 +281,7 @@ A **deviceType** entitás az adattárház más entitásai által hivatkozott esz
 | 15           | HoloLens          | Holo Lens-eszköz                                    |
 | 16           | SurfaceHub        | Surface Hub-eszköz                                  |
 | 17           | AndroidForWork    | Android Profile Owner használatával felügyelt Android-eszköz  |
-| 18           | AndroidEnterprise | Vállalati Android-eszköz.                          |
+| 18-ra           | AndroidEnterprise | Vállalati Android-eszköz.                          |
 | 100          | Blackberry        | Blackberry-eszköz                                   |
 | 101          | Palm              | Palm-eszköz                                         |
 | 255          | Ismeretlen           | Ismeretlen eszköztípus                                 |
@@ -408,8 +408,8 @@ Mobilalkalmazás telepítési állapotot jelöli egy adott céleszköztípushoz,
 | AppKey             | A mobilalkalmazás kulcsa, mely az AppRevision osztály egy példányát azonosítja.                                                          |
 | DeviceTypeKey      | A mobilalkalmazáshoz társított eszköztípus kulcsa.                                                              |
 | AppInstallStateKey | Az alkalmazástelepítési állapot kulcsa, mely a MobileAppInstallState osztály egy példányát azonosítja.                                         |
-| ErrorCode          | Az alkalmazástelepítő, a mobilplatform vagy a szolgáltatás által az alkalmazás telepítésével kapcsolatban visszaadott hibakód. |
-| Mennyiség              | Összesített szám.                                                                                                                  |
+| Hibakód          | Az alkalmazástelepítő, a mobilplatform vagy a szolgáltatás által az alkalmazás telepítésével kapcsolatban visszaadott hibakód. |
+| Száma              | Összesített szám.                                                                                                                  |
 
 ## <a name="ownertypes"></a>ownerTypes
 Az **ownerType** entitás jelzi, hogy az eszköz tulajdonosa a vállalat, magánszemély vagy ismeretlen.

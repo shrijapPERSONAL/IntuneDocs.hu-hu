@@ -5,23 +5,45 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 11/6/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b794ec40d05358ddd1aa3179c2f4060b2cd6fe1d
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
-ms.translationtype: HT
+ms.openlocfilehash: 23e993f883b149e86ce83e0e028572f55468b84b
+ms.sourcegitcommit: be6f6b750635ebc7956dd2d60a0e131d124b2fc3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236509"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51947309"
 ---
 # <a name="configure-vpn-settings-on-ios-devices-in-microsoft-intune"></a>VPN-beállítások konfigurálása iOS-eszközökön a Microsoft Intune-ban
 
 A Microsoft Intune számos VPN-beállítást tartalmaz, amelyek telepíthetők az iOS-eszközére. Ezek a beállítások VPN-kapcsolatok létrehozására és konfigurálására használhatók a szervezet hálózatához. Ez a cikk ezeket a beállításokat ismerteti. Egyes beállítások csak egyes VPN-ügyfelekhez állnak rendelkezésre, például a Citrix, Zscaler és másokhoz.
+
+## <a name="connection-type"></a>Kapcsolat típusa
+
+A szállítók az alábbi listából válassza ki a VPN-kapcsolat típusa:
+
+- **Check Point Capsule VPN**
+- **Cisco Legacy AnyConnect**: A [Cisco Legacy AnyConnect](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924) alkalmazás 4.0.5x és annál korábbi verzióihoz használható.
+- **Cisco AnyConnect**: A [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690) alkalmazás 4.0.7x és annál újabb verzióihoz használható.
+- **SonicWall Mobile Connect**
+- **F5 Access Legacy**: Az F5 Access alkalmazás 2.1 és annál korábbi verzióihoz használható.
+- **F5 Access**: Az F5 Access alkalmazás 3.0 és annál újabb verzióihoz használható.
+- **Palo Alto Networks GlobalProtect (Legacy)**: A Palo Alto Networks GlobalProtect alkalmazás 4.1 és annál korábbi verzióihoz használható.
+- **Palo Alto Networks GlobalProtect**: A Palo Alto Networks GlobalProtect alkalmazás 5.0 és annál újabb verzióihoz használható.
+- **Pulse Secure**
+- **Cisco (IPsec)**
+- **Citrix VPN**
+- **Citrix SSO**
+- **Zscaler**: Kötelező a Zscaler Private Access (ZPA) integrálása az Azure AD-fiókjával. A lépések részletezését a [Zscaler dokumentációja](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO) tartalmazza. 
+- **Egyéni VPN**
+
+> [!NOTE]
+> A Cisco, a Citrix, az F5 és a Palo Alto bejelentette, hogy régebbi ügyfeleik nem fognak működni az iOS 12-es verziójával. Ajánlott a lehető leghamarabb áttérni az új alkalmazásokra. További információkat a [Microsoft Intune blogjában](https://go.microsoft.com/fwlink/?linkid=2013806&clcid=0x409) talál.
 
 ## <a name="base-vpn-settings"></a>Alapvető VPN-beállítások
 
@@ -37,44 +59,28 @@ Az alábbi listában látható beállításokat a kiválasztott VPN-kapcsolat t�
 
     > [!NOTE]
     > Ha a Cisco IPsec VPN-hez felhasználónevet és jelszót használ hitelesítési módszerként, a titkos kulcsot egy egyéni Apple Configurator-profilon keresztül kell továbbítani.
-  
-- **Kapcsolat típusa**: Az alábbi listából válassza ki a VPN-kapcsolat típusát:
-  - **Check Point Capsule VPN**
-  - **Cisco Legacy AnyConnect**: A [Cisco Legacy AnyConnect](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924) alkalmazás 4.0.5x és annál korábbi verzióihoz használható.
-  - **Cisco AnyConnect**: A [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690) alkalmazás 4.0.7x és annál újabb verzióihoz használható.
-  - **SonicWall Mobile Connect**
-  - **F5 Access Legacy**: Az F5 Access alkalmazás 2.1 és annál korábbi verzióihoz használható.
-  - **F5 Access**: Az F5 Access alkalmazás 3.0 és annál újabb verzióihoz használható.
-  - **Palo Alto Networks GlobalProtect (Legacy)**: A Palo Alto Networks GlobalProtect alkalmazás 4.1 és annál korábbi verzióihoz használható.
-  - **Palo Alto Networks GlobalProtect**: A Palo Alto Networks GlobalProtect alkalmazás 5.0 és annál újabb verzióihoz használható.
-  - **Pulse Secure**
-  - **Cisco (IPsec)**
-  - **Citrix VPN**
-  - **Citrix SSO**
-  - **Zscaler**: Kötelező a Zscaler Private Access (ZPA) integrálása az Azure AD-fiókjával. A lépések részletezését a [Zscaler dokumentációja](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO) tartalmazza. 
-  - **Egyéni VPN**    
 
-    > [!NOTE]
-    > A Cisco, a Citrix, az F5 és a Palo Alto bejelentette, hogy régebbi ügyfeleik nem fognak működni az iOS 12-es verziójával. Ajánlott a lehető leghamarabb áttérni az új alkalmazásokra. További információkat a [Microsoft Intune blogjában](https://go.microsoft.com/fwlink/?linkid=2013806&clcid=0x409) talál.
-
-* **Kizárt URL-címek** (csak Zscaler): A Zscaler VPN-hez csatlakozva a felsorolt URL-címek érhetők el a Zscaler-felhőn kívülről. 
+- **Kizárt URL-címek** (csak Zscaler): A Zscaler VPN-hez csatlakozva a felsorolt URL-címek érhetők el a Zscaler-felhőn kívülről. 
 
 - **Bújtatás megosztása**: Az **Engedélyezés** vagy a **Letiltás** beállítással szabályozhatja, hogy az eszközök választhatnak-e a forgalomtól függően a kapcsolatok közül. Egy szállodai vendég például a munkahelyi fájlok elérésére a VPN-kapcsolatot, de egyszerű böngészésre a szálloda normál hálózatát használja.
 
-- **Hálózati hozzáférés-vezérlés (NAC) engedélyezése**: Ez a beállítás egy helyőrző VPN-ügyfelekhez, például a Citrixhez, hogy lehetővé tegye az eszközazonosító megadását a VPN-profilban a hálózati hozzáférés-vezérléssel (NAC) való használathoz. Ha az **Elfogadom** lehetőséget választja, az eszköz azonosítója bekerül a VPN-profilba. Jelenleg nincs olyan VPN-ügyfél, vagy NAC-partnermegoldás, amely támogatná ezt az új azonosítót, ezért az eszközök számára engedélyezett lesz a VPN-hez való csatlakozás, a megfelelőségi állapottól függetlenül. Frissítjük ezt a dokumentumot, amint a partnereink támogatni fogják az azonosítót.
+- **VPN-azonosító** (egyéni VPN, Zscaler és a Citrix): a VPN-alkalmazást egy azonosítót használja, és a VPN-szolgáltató által biztosított.
+  - **Kulcs-érték párok megadása vállalata egyéni VPN attribútumainak konfigurálásához**: **Kulcsok** és **Értékek** hozzáadásával vagy importálásával szabhatja testre a VPN-kapcsolatot. Ne feledje, rendszerint ezeket az értékeket is a VPN-szolgáltató biztosítja.
+
+- **Hálózati hozzáférés-vezérlés (NAC) engedélyezése** (kizárólag Citrix SSO): Ha **elfogadom**, az eszköz azonosítója a VPN-profil tartalmazza. Ez az azonosító segítségével a VPN-hitelesítés engedélyezése vagy letiltása a hálózati hozzáférést.
+
+  **A Citrix egyszeri bejelentkezés az átjáró használatakor**, ügyeljen arra, hogy:
+
+  - Győződjön meg arról, Citrix átjáró 12.0.59 használ vagy újabb verziója.
+  - Erősítse meg a felhasználók a Citrix SSO 1.1.6 vagy újabb verziója szükséges az eszközeiken.
+  - A Citrix Gateway integrálása az Intune-nal a NAC, leírtak szerint a [integrálása a Microsoft Intune/nagyvállalati mobilitási csomag-(LDAP + egyszeri Jelszavas forgatókönyv) NetScaler](https://www.citrix.com/content/dam/citrix/en_us/documents/guide/integrating-microsoft-intune-enterprise-mobility-suite-with-netscaler.pdf) Citrix telepítési útmutatóban.
+  - A VPN-profil NAC engedélyezése.
 
   Fontos részletek:  
 
-  - Ha ez a beállítás engedélyezve van, a VPN 24 óránként le lesz csatlakoztatva.
-  - Az eszköz azonosítója a profil része, de az nem látható az Intune-ban vagy a profilban. Ezt az azonosítót a Microsoft sehol sem tárolja és nem osztja meg. Amint ezt a VPN-partnerek támogatni fogják, a VPN-ügyfél, például a Citrix SSO lekérheti az azonosítót, és lekérdezheti az Intune-tól, hogy az eszköz regisztrálva van-e, és hogy a VPN-profil megfelelő-e vagy sem.
+  - Ha engedélyezve van a NAC, a VPN 24 óránként le van választva.
+  - Az eszköz azonosítója a profil része, de az nem látható, az Intune-ban. Ezt az azonosítót a Microsoft sehol sem tárolja és nem osztja meg. Amint ezt a VPN-partnerek támogatni fogják, a VPN-ügyfél, például a Citrix SSO lekérheti az azonosítót, és lekérdezheti az Intune-tól, hogy az eszköz regisztrálva van-e, és hogy a VPN-profil megfelelő-e vagy sem.
   - A beállítás eltávolításához hozza létre újra a profilt, és ne válassza ki az **Elfogadom** lehetőséget. Ezt követően végezze el a profil újbóli hozzárendelését.
-
-## <a name="custom-vpn-settings"></a>Egyéni VPN-beállítások
-
-Ha a kapcsolat típusaként az **Egyéni VPN** lehetőséget választotta, konfigurálnia kell a következő beállításokat. Ezek a beállítások a Zscaler- és Citrix-kapcsolatokhoz is megjelennek.
-
-- **VPN-azonosító**: Ez az Ön által használt VPN-alkalmazás azonosítója, amelyet a VPN-szolgáltatója biztosított.
-- **Kulcs-érték párok megadása vállalata egyéni VPN attribútumainak konfigurálásához**: **Kulcsok** és **Értékek** hozzáadásával vagy importálásával szabhatja testre a VPN-kapcsolatot. Ne feledje, rendszerint ezeket az értékeket is a VPN-szolgáltató biztosítja.
 
 ## <a name="automatic-vpn-settings"></a>Automatikus VPN-beállítások
 

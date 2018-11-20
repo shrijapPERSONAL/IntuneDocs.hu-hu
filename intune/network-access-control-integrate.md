@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1adfdba49ab8ac5ae55f792e71a99f4aef4c8a6
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
-ms.translationtype: HT
+ms.openlocfilehash: 00f660d2ac228fbebe218c53482d00e59f09ce56
+ms.sourcegitcommit: be6f6b750635ebc7956dd2d60a0e131d124b2fc3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236152"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51947326"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Hálózati hozzáférés-vezérlés (NAC) integrálása az Intune-nal
 
@@ -59,14 +59,23 @@ A követező listában megtalálhatja annak áttekintését, hogyan működik az
 8. Ha az eszköz már regisztrálva van és megfelel, a NAC-partnermegoldás megkapja az állapotát az Intune-tól.
 9. Sikeresen létrejön a kapcsolat, amelyen keresztül az eszköz hozzáfér a vállalati erőforrásokhoz.
 
-## <a name="use-nac-on-your-ios-devices"></a>NAC használata iOS-eszközökön
+## <a name="use-nac-for-vpn-on-your-ios-devices"></a>NAC. használja az IOS-es eszközök VPN-hez  
+A Cisco Legacy AnyConnect, F5 hozzáférés örökölt és a Citrix VPN NAC anélkül, hogy a NAC engedélyezéséhez a VPN-profil használata támogatott.
 
-A hálózati hozzáférés-vezérlés jelenleg nem támogatott a következő, iOS rendszerű VPN-ügyfelek esetében:
+NAC Citrix egyszeri bejelentkezéshez is támogatott. NAC engedélyezése a Citrix egyszeri bejelentkezéshez iOS-hez:
+- A Citrix átjáróval 12.0.59 vagy újabb verziója.  
+- Felhasználók kell Citrix SSO 1.1.6 vagy újabb verziója szükséges.
+- [A NetScaler integrálása az Intune-nal a NAC](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) a Citrix termékdokumentációját leírtak szerint.
+- Alapszintű VPN-beállítások konfigurációjában a **engedélyezése hálózati hozzáférést vezérlő (NAC)**, jelölje be a jelölőnégyzetet a **elfogadom**.
+
+Citrix SSO iOS-hez való használatakor a VPN-kapcsolat le van választva biztonsági okokból 24 óránként. Azonnal is újra létrehozza a VPN-t.
+
+
+**Hálózati hozzáférés-vezérlés jelenleg nem támogatott a következő VPN-ügyfelek iOS rendszeren**:
 -   Cisco AnyConnect
 -   F5 Access
--   Citrix SSO  
 
-Partnereinkkel együtt azon dolgozunk, hogy NAC-megoldást adjunk ki ezen új ügyfelek számára. Ha kész megoldásokkal tudunk szolgálni, további részletekkel frissítjük majd ezt a cikket. 
+Ezen újabb ügyfelek számára a NAC-megoldás felszabadítása partnereinkkel együttműködve dolgozunk. Ha kész megoldásokkal tudunk szolgálni, további részletekkel frissítjük majd ezt a cikket. 
 
 
 ## <a name="next-steps"></a>További lépések
