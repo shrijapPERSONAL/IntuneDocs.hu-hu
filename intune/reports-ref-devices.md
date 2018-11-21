@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 00d7f8da28a762b5acbca379d62e0e7880f025a8
-ms.sourcegitcommit: 445a54dc6826a549d770a9953549ae2191d391c2
-ms.translationtype: HT
+ms.openlocfilehash: 2782190f043a6d0c2d1af52d5a77fd3ce53b739f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45727628"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181448"
 ---
 # <a name="reference-for-devices-entities"></a>Eszközök típusú entitások referenciája
 
@@ -145,7 +146,7 @@ Az **MdmStatuses** entitás az eszköz megfelelőségi állapotát jelzi.
 |---------|------------|--------|
 | 0 |Ismeretlen |Az eszköz megfelelőségi állapota ismeretlen. |
 | 1 |Compliant (Megfelelő) |Az eszköz megfelelő. |
-| 2 |Noncompliant (Nem megfelelő) |Az eszköz nem megfelelő. |
+| 2 |Nem megfelelő |Az eszköz nem megfelelő. |
 | 3 |Ütközés |Az eszköz megfelelősége ütközéshez vezetett. |
 | 4 |Hiba |Hiba történt az eszköz megfelelőségi állapotának kiolvasása közben. |
 

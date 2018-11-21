@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fc7aac337c01db3098be5f699db22c3a81c6eb75
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
-ms.translationtype: HT
+ms.openlocfilehash: 175491e53ba9b1fbd41ac8bec8841c600b6916fb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236611"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184556"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Mennyiségi vásárlási program keretében vásárolt iOS-alkalmazások kezelése a Microsoft Intune-nal
 
@@ -122,11 +123,11 @@ A végfelhasználó különféle helyzetekben figyelmeztetést fog kapni VPP-alk
 
 | # | Forgatókönyv                                | Meghívás az Apple VPP-programba                              | Figyelmeztetés alkalmazástelepítésre | Apple ID bekérése |
 |---|--------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------|-----------------------------------|
-| 1 | BYOD – licenccel rendelkező felhasználó                             | I                                                                                               | I                                           | I                                 |
-| 2 | Corp (Vállalat) – licenccel rendelkező felhasználó (nem felügyelt eszköz)     | I                                                                                               | I                                           | I                                 |
-| 3 | Corp (Vállalat) – licenccel rendelkező felhasználó (felügyelt eszköz)         | I                                                                                               | N                                           | I                                 |
-| 4 | BYOD – licenccel rendelkező eszköz                           | N                                                                                               | I                                           | N                                 |
-| 5 | CORP (Vállalat) – licenccel rendelkező eszköz (nem felügyelt eszköz)                           | N                                                                                               | I                                           | N                                 |
+| 1 | BYOD – licenccel rendelkező felhasználó                             | Y                                                                                               | Y                                           | Y                                 |
+| 2 | Corp (Vállalat) – licenccel rendelkező felhasználó (nem felügyelt eszköz)     | Y                                                                                               | Y                                           | Y                                 |
+| 3 | Corp (Vállalat) – licenccel rendelkező felhasználó (felügyelt eszköz)         | Y                                                                                               | N                                           | Y                                 |
+| 4 | BYOD – licenccel rendelkező eszköz                           | N                                                                                               | Y                                           | N                                 |
+| 5 | CORP (Vállalat) – licenccel rendelkező eszköz (nem felügyelt eszköz)                           | N                                                                                               | Y                                           | N                                 |
 | 6 | CORP (Vállalat) – licenccel rendelkező eszköz (felügyelt eszköz)                           | N                                                                                               | N                                           | N                                 |
 | 7 | Teljes képernyős mód (felügyelt eszköz) – licenccel rendelkező eszköz | N                                                                                               | N                                           | N                                 |
 | 8 | Teljes képernyős mód (felügyelt eszköz) – licenccel rendelkező felhasználó   | --- | ---                                          | ---                                |

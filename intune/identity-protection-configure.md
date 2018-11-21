@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7012479023ece83ef475431c5cefe150ab2ef342
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
-ms.translationtype: HT
+ms.openlocfilehash: f9d0db8e15e6de1241984f98bf651fcff1578033
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43317942"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52188631"
 ---
 # <a name="configure-identity-protection-settings-in-microsoft-intune"></a>Identitásvédelmi beállítások konfigurálása a Microsoft Intune-ban
 
@@ -45,8 +46,8 @@ Ez a funkció a következő rendszerű eszközökre vonatkozik:
 5. A **Platform** legördülő listából válassza a **Windows 10 és újabb** lehetőséget. A Vállalati Windows Hello csak a Windows 10 vagy újabb rendszerű eszközökön támogatott.
 6. A **Profil típusa** legördülő listából válassza az **Identitásvédelem** lehetőséget.
 7. A Vállalati Windows Hello konfigurálásához a Vállalati Windows Hello ablaktáblán válasszon az alábbi lehetőségek közül:
-    * Letiltva. Ha nem szeretné használni a Vállalati Windows Hello szolgáltatást, válassza ezt a beállítást. Ezt követően a képernyőn a többi beállítás nem lesz elérhető.
-    * Engedélyezve. Vállalati Windows Hello beállításainak konfigurálásához válassza ezt a beállítást.  
+    * Letiltott. Ha nem szeretné használni a Vállalati Windows Hello szolgáltatást, válassza ezt a beállítást. Ezt követően a képernyőn a többi beállítás nem lesz elérhető.
+    * Engedélyezve van. Vállalati Windows Hello beállításainak konfigurálásához válassza ezt a beállítást.  
 
 8. Ha az előző lépésben az **Engedélyezve** lehetőséget választotta, akkor konfigurálja a szükséges beállításokat, amelyeket a rendszer a megcélzott és regisztrált Windows 10 és Windows 10 Mobile rendszerű eszközre és felhasználóra fog alkalmazni.
 

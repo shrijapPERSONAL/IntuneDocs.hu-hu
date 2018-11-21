@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ayesham
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 988407d6d736b669854ef8420b71a092765162b7
-ms.sourcegitcommit: 445fcf9e2a185e5c987334cad398bce71383be03
-ms.translationtype: HT
+ms.openlocfilehash: 619976887a7c523933a9e74233779d188baa2cc1
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843123"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183672"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Helyek (hálózati kerítés) használata az Intune-ban
 
@@ -27,7 +28,7 @@ Letilthatja a vállalati hálózathoz való hozzáférést, ha az eszköz elhagy
 
 Létrehozhat egy hálózati helyen alapuló megfelelőségi szabályzatot, amelyet másként hálózati kerítésnek is hívnak. A szabályzat biztosítja, hogy az eszköznek munkahelyi hálózathoz kelljen csatlakoznia a megfelelőséghez. Ez a szabályzat használható feltételes hozzáférési szabályzatokkal, hogy az eszközök *csak* munkahelyi erőforrásokat érjenek el, amikor az eszköz a munkahelyi hálózathoz csatlakozik. Ha az eszköz nem csatlakozik a munkahelyi hálózathoz, akkor nem megfelelő lesz, és nem fog tudni hozzáférni a munkahelyi erőforrásokhoz.
 
-Gondolkodjon el az alábbi megoldáson:
+Vegye figyelembe az alábbi forgatókönyvet:
 
 A gyártási létesítményben néhány alkalmazott Android-eszközöket használ. Az alkalmazott kiviszi az Android-eszközt a létesítményből vagy üzemből. Az illetéktelen hozzáférés megakadályozásáért a következőket teheti:
 
@@ -51,7 +52,7 @@ Helyalapú megfelelőségi szabályzat létrehozásához tegye a következőket:
 
 2. Adja meg a következő tulajdonságokat:  
 
-   - Kötelező megadni. Adja meg a hely **Név** mezejének értékét, például azt, hogy **Gyártási szint** vagy **44-es épület – biztonságos**.
+   - Szükséges. Adja meg a hely **Név** mezejének értékét, például azt, hogy **Gyártási szint** vagy **44-es épület – biztonságos**.
    - Nem kötelező. Adjon meg egy **IPv4-tartományt** CIDR (Classless Interdomain Routing) jelöléssel, például: `aaa.bbb.ccc.ddd/n`.
    - Nem kötelező. Adja meg az **IPv4-átjáró** címét, például: `aaa.bbb.ccc.ddd`.
    - Nem kötelező. Adja meg az **IPv4 DHCP-kiszolgáló** címét, például: `aaa.bbb.ccc.ddd`.

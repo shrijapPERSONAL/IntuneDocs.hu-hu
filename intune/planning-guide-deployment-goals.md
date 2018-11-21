@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 24cf9d97-db39-4b95-a664-4aa2e33edb87
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: f76e227037efd6ea8ee7ea95d61f3358698af1d9
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
-ms.translationtype: HT
+ms.openlocfilehash: 10598f4868a42b9736b6b33a6d9b5c4b4b308967
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/17/2018
-ms.locfileid: "29961468"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189350"
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>Üzembe helyezési célok, célkitűzések és kihívások meghatározása
 
@@ -78,7 +79,7 @@ Az üzembe helyezés feladatai olyan műveletek, amelyekkel az adott munkahely e
 
 Az üzembe helyezés kihívásai kiemelt fontossággal bírnak a cégek életében, és előfordulhat, hogy negatív hatást gyakorolhatnak magára a telepítésre. Olykor ezek régi projekteknél fellépő múltbéli problémákkal kapcsolatosak, amelyeket szeretne elkerülni, vagy pedig a jelenlegi üzembe helyezéskor felmerülő újakkal. Az alábbi listában néhány példa található az Intune üzembe helyezési kihívásaira és lehetséges kezelésükre.
 
--   A kezdeti projekt nem terjed ki a támogatásra és a végfelhasználói élményre. Ez gyenge végfelhasználói adaptációhoz és a támogatás szervezésében jelentkező kihívásokhoz vezet.
+-   A kezdeti projekt nem terjed ki a támogatásra és a végfelhasználói élményre. Ez gyenge végfelhasználói adaptációhoz és a támogatás szervezésében jelentkező kihívásokhoz vezet.
 
     -   **Megoldás:** Támogatási képzések beiktatása. A végfelhasználói tapasztalat érvényesítése az üzembe helyezési terv sikerességi metrikáival.
 

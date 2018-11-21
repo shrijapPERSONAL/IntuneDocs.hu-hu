@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 5aa5cfa3-c483-4099-b40f-578ff8dca425
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6b66cd00f734cab3ca85f6d87f056f8c482a377d
-ms.sourcegitcommit: 2811df0f851ca6b08f6ae8c926fb2e6971c41690
-ms.translationtype: HT
+ms.openlocfilehash: cd2320e4c3935c4865d785bbb2461bba20afffdb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "40251894"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52188738"
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>Intune-t futtató Windows 10 rendszerű eszközök alaphelyzetbe állítása az Újrakezdéssel
 
@@ -37,5 +38,5 @@ Az **Újratelepítés** eszközművelet eltávolít minden alkalmazást, amely t
   > [!IMPORTANT]
  > Ha nem tartja meg a felhasználói adatokat, az eszköz a gyári állapotára fog visszaállni. A regisztrációja el lesz távolítva az Azure AD-ből és a mobileszköz-felügyeletből is. 
  
-5. Kattintson az **OK**gombra.   
+5. Kattintson az **OK** gombra.   
 6. A művelet állapotának megtekintéséhez lépjen vissza az **Eszközök** szintjére, majd kattintson az **Eszközműveletek** elemre.  

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5e88108d6c438bf2c192516be44908c4d76dfa9f
-ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
-ms.translationtype: HT
+ms.openlocfilehash: 2c23ad2c63fad8c74666e3c1ae9acc543e48f8e8
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49652121"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181870"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Oktatóanyag: Az Exchange Online e-mailjeinek védelme felügyelt eszközökön
 Ismerje meg az eszközmegfelelőségi szabályzatok feltételes hozzáféréssel való használatát annak érdekében, hogy csak az olyan iOS-eszközök férhessenek hozzá az Exchange Online e-mailjeihez, amelyeket az Intune felügyel, és amelyek jóváhagyott e-mail alkalmazást használnak. 
@@ -133,7 +134,7 @@ Ha már nincs szükség a tesztszabályzatokra, eltávolíthatja őket.
 2. Válassza az **Eszközmegfelelőség** > **Szabályzatok** elemet.
 3. A **Szabályzat neve** listában válassza a tesztszabályzat helyi menüjét (**...**), majd válassza a **Törlés** elemet. Válassza az **OK** lehetőséget a megerősítéshez.
 4. Válassza a **Feltételes hozzáférés** > **Szabályzatok** elemet.
-5. A **Szabályzat neve** listában válassza a tesztszabályzat helyi menüjét (**...**), majd válassza a **Törlés** elemet. Válassza az **Igen** lehetőséget a megerősítéshez.
+5. A **Szabályzat neve** listában válassza a tesztszabályzat helyi menüjét (**...**), majd válassza a **Törlés** elemet. Válassza ki **Igen** megerősítéséhez.
 
  ## <a name="next-steps"></a>További lépések 
 Az oktatóanyag során olyan szabályzatokat hozott létre, amelyek megkövetelik, hogy az Exchange Online e-mail-alkalmazásába belépni kívánó iOS-eszközök regisztráljanak az Intune-ban és az Outlook alkalmazást használják. További információt az Intune feltételes hozzáféréssel történő használatáról más alkalmazások és szolgáltatások védelme érdekében, beleértve az Office 365 Exchange Online Exchange ActiveSync-ügyfeleit is, a [Feltételes hozzáférés beállításáról](conditional-access.md) szóló szakaszban talál.

@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2a521eadea2bcf118b4b0c643802fd8478f7ace2
-ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
-ms.translationtype: HT
+ms.openlocfilehash: f0270818a03c68afd24e32d86a9c1f847e2f2ee2
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49652104"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181989"
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>A Work eszközkorlátozásainak beállításai az Intune-ban
 
@@ -104,7 +105,7 @@ A cikk felsorolja a Microsoft Intune összes olyan eszközkorlátozásokra vonat
    > [!Note]
    > Ez a beállítás csak Android O vagy újabb rendszerű eszközök esetén érvényesül.
 
-## <a name="connectivity"></a>Kapcsolatok
+## <a name="connectivity"></a>Kapcsolat
 
 - **Mindig bekapcsolt VPN**: Az **Engedélyezés** beállítással a VPN-ügyfél automatikusan csatlakozik és újracsatlakozik a VPN-hez. A mindig bekapcsolt VPN-kapcsolatokkal a kapcsolat folyamatosan fenntartható vagy azonnal elindítható, ha a felhasználó zárolja az eszközét, ha az eszköz újraindul, vagy ha a vezeték nélküli hálózat megváltozik. 
 

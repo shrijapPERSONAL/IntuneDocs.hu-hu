@@ -13,12 +13,16 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up Windows Autopilot so that users can enroll in Intune.
-ms.openlocfilehash: a90f53bfc5841cc0f773751e7df917d8fc8b6cf8
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
-ms.translationtype: HT
+ms.reviewer: angerobe
+ms.suite: ems
+search.appverid: MET150
+ms.custom: intune
+ms.openlocfilehash: 087f890f84c9bc0ff0c46f129ef84b8a268c738e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49431922"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187735"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Oktatóanyag – Windows-eszközök regisztrálása az Intune-ban az AutoPilot használatával
 A Windows Autopilot leegyszerűsíti az eszközök regisztrálását. A Microsoft Intune és az AutoPilot használatával új eszközöket adhat a végfelhasználóknak anélkül, hogy egyéni operációsrendszer-lemezképek létrehozására, fenntartására és alkalmazására lenne szükség. 
@@ -71,7 +75,7 @@ A Windows Autopilot beállításának első lépéseként hozzá kell adnia az I
 
 Ezután létrehoz egy eszközcsoportot, és belehelyezi az előbb betöltött AutoPilot-eszközöket.
 
-1. Az [Azure Portalbeli Intune-on](https://aka.ms/intuneportal) válassza a **Csoportok** > **Új csoport** elemet.
+1. Az [Azure Portalbeli Intune-ban](https://aka.ms/intuneportal) válassza a **Csoportok** > **Új csoport** elemet.
 2. A **Csoport** panelen:
     1. A **Csoport típusa** beállításnál válassza a **Biztonsági** lehetőséget.
     2. A **Csoport neve** mezőbe írja be az *AutoPilot-csoport* nevet. A **Csoport leírása** mezőbe írja be az *AutoPilot-eszközök tesztcsoportja* leírást.

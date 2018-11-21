@@ -13,17 +13,18 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2ff5686e2d83831259bd21bee164b3c187e1c0ee
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
-ms.translationtype: HT
+ms.openlocfilehash: 20a99290d2a84c22bc2bee823d7a3bb42e43aced
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231355"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180578"
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Feltételes hozzáférési megfelelőség figyelése helyszíni Exchange-hez és Exchange Online-hoz az Intune-ban
 
-Az Intune 1704-es kiadásától kezdve a rendszergazdák jelentési információkat kapnak az Exchange ActiveSync eszközrekordjaival kapcsolatban, amelyek vagy a helyszíni Exchange-összekötő, vagy az Intune szolgáltatások közötti összekötő (Exchange Online-összekötő) révén az Intune-nal vannak szinkronizálva. A feltételes hozzáférési megfelelőség jelentései összefoglaló információt nyújtanak a különböző szinkronizálási állapotban lévő eszközökről:
+Az Intune 1704-es kiadásától kezdve is látnak a rendszergazdák jelentési információkat az Intune-t a helyszíni Exchange-összekötő vagy az Intune szolgáltatások közötti összekötő (Exchange szinkronizált Exchange ActiveSync eszközrekordjaival Online-összekötő). A feltételes hozzáférési megfelelőség jelentései a különböző szinkronizálási állapotban eszközök összegzését tartalmazza:
 
 -   **Engedélyezés**
 
@@ -35,11 +36,11 @@ Az Intune 1704-es kiadásától kezdve a rendszergazdák jelentési információ
 
 1.  Az [Azure Portalon](https://portal.azure.com/) jelentkezzen be az Intune-os hitelesítő adataival.
 
-2.  Miután sikeresen bejelentkezett, megjelenik az **Azure irányítópultja**.
+2.  Miután sikeresen bejelentkezett, megjelenik a **Azure irányítópultján**.
 
-3.  Válassza a bal oldali menü **Minden szolgáltatás** pontját, majd írja be a szűrő szövegmezőbe az **Intune** nevet.
+3.  Válasszon **minden szolgáltatás** a bal oldali menüben, majd írja be **Intune** box szűrő szövegmezőbe.
 
-4.  Az **Intune** kiválasztásával megjelenik az **Intune irányítópultja**.
+4.  Válasszon **Intune**, megjelenik a **Intune irányítópultján**.
 
 5.  Válassza a **Feltételes hozzáférés**, majd az **Áttekintés** lehetőséget.
 
@@ -49,7 +50,7 @@ Az Intune 1704-es kiadásától kezdve a rendszergazdák jelentési információ
 
 A három terület egyikének kiválasztása után bővebb információt kap az engedélyezett, a tiltott vagy a karanténba helyezett eszközökről.
 
-Az egyes eszközökről további részletes információkat is megjeleníthet. A következő képen szereplő eszköz például le van tiltva. Az Intune arra is lehetőséget ad, hogy a feltételes hozzáférési megfelelőség jelentésének paneljéről eltávolítsa a vállalati adatokat.
+Emellett részletezhet az adott eszközök további részletek megtekintéséhez. A következő képen szereplő eszköz például le van tiltva. Az Intune arra is lehetőséget ad, hogy a feltételes hozzáférési megfelelőség jelentésének paneljéről eltávolítsa a vállalati adatokat.
 
 ![Feltételes hozzáférési jelentés – részletes eszközinformációk képe](./media/CA-reporting-intune-3.png)
 

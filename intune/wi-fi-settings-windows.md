@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.reviewer: tycast
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2252c81757b7745ed15ca86a4e7db310f03df19d
-ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
+ms.openlocfilehash: 76d9efc969f68188d9752996267ff7a88363f76f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51298156"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180816"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Wi-Fi-beállítások hozzáadása Windows 10 és újabb rendszerű eszközökhöz az Intune-ban
 
@@ -52,7 +53,7 @@ Ez a cikk ezeket a beállításokat ismerteti.
   - **Rögzített**: Ezt a lehetőséget használja, ha a hálózathoz rögzített hálózati forgalomkorlát van beállítva. A korlát elérése után a hálózati hozzáférés le van tiltva.
   - **Változó**: Ezt a lehetőséget használja, ha a hálózati forgalom számlázása bájtonként (bájtonkénti költség) történik.
 
-- **Vezeték nélküli biztonság típusa**: Adja meg a hálózatán az eszközök hitelesítésére használt biztonsági protokollt. Az alábbi lehetőségek állnak rendelkezésére:
+- **Vezeték nélküli biztonság típusa**: Adja meg a hálózatán az eszközök hitelesítésére használt biztonsági protokollt. A következő lehetőségek közül:
   - **Nyitott (nincs hitelesítés)**: Csak akkor válassza ezt a lehetőséget, ha a hálózat nem védett.
   - **WPA/WPA2 (személyes)**: Egy biztonságosabb beállítás, amelyet gyakran hasznának Wi-Fi-csatlakozáshoz. A további biztonság érdekében előre megosztott kulcsot vagy hálózati kulcsot is megadhat. 
 
@@ -89,7 +90,7 @@ A módosítások mentéséhez válassza az **OK** > **Létrehozás** lehetőség
   - **Rögzített**: Ezt a lehetőséget használja, ha a hálózathoz rögzített hálózati forgalomkorlát van beállítva. A korlát elérése után a hálózati hozzáférés le van tiltva.
   - **Változó**: Ezt a lehetőséget használja, ha a hálózati forgalom számlázása bájtonként történik.
 
-- **Egyszeri bejelentkezés (SSO)**: Lehetővé teszi az egyszeri bejelentkezés (SSO) konfigurálását. Ekkor ugyanazok a hitelesítő adatok szolgálnak a számítógépre és a Wi-Fi-hálózatba való bejelentkezésre. Az alábbi lehetőségek állnak rendelkezésére:
+- **Egyszeri bejelentkezés (SSO)**: Lehetővé teszi az egyszeri bejelentkezés (SSO) konfigurálását. Ekkor ugyanazok a hitelesítő adatok szolgálnak a számítógépre és a Wi-Fi-hálózatba való bejelentkezésre. A következő lehetőségek közül:
   - **Letiltás** Letiltja az SSO viselkedést. A felhasználónak külön kell hitelesítenie magát a hálózaton.
   - **Engedélyezés mielőtt a felhasználó bejelentkezik az eszközre**: Az SSO használata a hálózaton való hitelesítésre közvetlenül a felhasználói bejelentkezés előtt.
   - **Engedélyezés miután a felhasználó bejelentkezik az eszközre**: Az SSO használata a hálózaton való hitelesítésre közvetlenül azután, hogy a felhasználói bejelentkezés befejeződik.

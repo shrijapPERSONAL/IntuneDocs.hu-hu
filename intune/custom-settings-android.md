@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f9e98575c92d403d51708f7403109bea2184176e
-ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
-ms.translationtype: HT
+ms.openlocfilehash: 74d23c8433c741927f28bb1d6b9f55393e38f7db
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49983125"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182975"
 ---
 # <a name="use-custom-settings-for-android-devices-in-microsoft-intune"></a>Egyéni beállítások használata Android-eszközökhöz a Microsoft Intune-ban
 
@@ -54,7 +55,7 @@ Ebből a cikkből megtudhatja, hogyan hozhat létre egyéni profilt az Android-e
     - **Név**: Adjon meg egyedi nevet az OMA-URI-beállítás számára, hogy könnyen megtalálja.
     - **Leírás**: Adjon meg egy olyan leírást, amely áttekintést ad a beállításról és egyéb fontos részleteket tartalmaz.
     - **OMA-URI**: Adja meg azt az OMA-URI azonosítót, amelyet beállításként kíván használni.
-    - **Adattípus**: Adja meg azt az adattípust, amelyet az OMA-URI beállításhoz szeretne használni. A választható lehetőségek:
+    - **Adattípus** – Adja meg azt az adattípust, amelyet az OMA-URI beállításhoz szeretne használni. A választható lehetőségek:
 
       - Sztring
       - Sztring (XML-fájl)
@@ -64,7 +65,7 @@ Ebből a cikkből megtudhatja, hogyan hozhat létre egyéni profilt az Android-e
       - Logikai
       - Base64 (fájl)
 
-    - **Érték**: Adja meg a megadott OMA-URI azonosítóhoz társítandó adatértéket. Az érték a választott adattípustól függ. A **Dátum és idő** típus esetén például a dátumválasztóból választhat értéket.
+    - **Érték** – Adja meg a megadott OMA-URI azonosítóhoz társítandó értéket. Az érték a választott adattípustól függ. A **Dátum és idő** típus esetén például a dátumválasztóból választhat értéket.
 
     Néhány beállítás megadása után válassza az **Exportálás** lehetőséget. Az **Exportálás** a hozzáadott értékek listáját hozza létre egy vesszővel tagolt (.csv) fájlban.
 

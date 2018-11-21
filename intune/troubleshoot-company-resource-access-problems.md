@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
+search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: ca4b289f059cc4fc8bc77518e06e9cee0f8e7864
-ms.sourcegitcommit: b47fad133ef8ef1eb65484463431c6c53f6a638a
-ms.translationtype: HT
+ms.openlocfilehash: f4ead71e626316b515646d474cc006be7cf2f774
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35291621"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190370"
 ---
 # <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Munkahelyi erőforrás-hozzáférési problémák megoldása a Microsoft Intune-nal
 

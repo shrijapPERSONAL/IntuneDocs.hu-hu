@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d9c9027964648ad83c552f7dd7067598cacf560e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
-ms.translationtype: HT
+ms.openlocfilehash: cf5146946fef464d2d74271e0ad801dabbdce13e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31836525"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186868"
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>Az Intune Tanúsítvány-összekötő beállítása a Symantec PKI Manager webszolgáltatáshoz
 
@@ -194,7 +195,7 @@ A rendszer az Intune Tanúsítvány-összekötőt alapértelmezés szerint a kö
    value="EA7A4E0CD1A4F81CF0740527C31A57F6020C17C5"/>
    ```
 
-    b. Mentse, majd zárja be a fájlt.
+    b. Mentse és zárja be a fájlt.
 
 2. Nyissa meg a services.msc programot.
 
@@ -281,10 +282,10 @@ A tanúsítványprofil objektumazonosítója egy a Symantec hitelesítésszolgá
    > [!IMPORTANT]
    > Ahhoz, hogy az Intune Tanúsítvány-összekötő használatával a Symantec hitelesítésszolgáltatótól származó PKCS-tanúsítványokat adhasson ki, a PKCS-tanúsítványprofil következő paramétereinél az alábbi táblázatban megadott, illetve a képernyőfelvételen látható értékeket kell beállítani. 
 
-    |PKCS-tanúsítvány paraméterei | Érték | Description |
+    |PKCS-tanúsítvány paraméterei | Érték | Leírás |
     | --- | --- | --- |
     | Hitelesítésszolgáltató | pki-ws.symauth.com | Ez az érték a Symantec CA alapszolgáltatásának FQDN neve, záró perjelek nélkül.  Ha nem biztos abban, hogy ez a Symantec CA-előfizetéséhez tartozó alapszolgáltatás FQDN neve, érdeklődjön a Symantec ügyfélszolgálatánál. <br><br> Ha az FQDN helytelen, az Intune Tanúsítvány-összekötő nem tudja kiállítani a Symantec hitelesítésszolgáltatótól származó PKCS-tanúsítványokat.| 
-    | Hitelesítésszolgáltató neve | Symantec | Ennek az értéknek a **Symantec** karakterláncnak kell lennie. <br><br> Ha itt bármilyen más érték szerepel, az Intune Tanúsítvány-összekötő nem fogja tudni kiállítani a Symantec hitelesítésszolgáltatótól származó PKCS-tanúsítványokat.|
+    | Hitelesítésszolgáltató neve | Symantec | Ennek az értéknek a **Symantec** sztringnek kell lennie. <br><br> Ha itt bármilyen más érték szerepel, az Intune Tanúsítvány-összekötő nem fogja tudni kiállítani a Symantec hitelesítésszolgáltatótól származó PKCS-tanúsítványokat.|
     | Tanúsítványsablon neve | A tanúsítványprofil Symantec hitelesítésszolgáltatótól beszerzett objektumazonosítója <br><br> Pl.:`2.16.840.1.113733.1.16.1.2.3.1.1.61904612`| Ez az érték a Symantec hitelesítésszolgáltatón található tanúsítványprofil-sablonból az előző részben ismertetett módon beszerzett objektumazonosító. <br><br> Ha az Intune Tanúsítvány-összekötő nem találja a Symantec hitelesítésszolgáltatón a tanúsítványprofil objektumazonosítójához társított tanúsítványsablont, nem fogja tudni kiállítani a Symantec hitelesítésszolgáltatótól származó PKCS-tanúsítványokat.|
 
    > [!NOTE]
@@ -305,9 +306,9 @@ Az előző lépések végrehajtását követően az Intune Tanúsítvány-össze
 
 Az Intune Tanúsítvány-összekötő szolgáltatásnaplói az NDES-összekötőt futtató számítógép `%ProgramFiles%\Microsoft Intune\NDESConnectorSvc\Logs\Logs` könyvtárában érhetők el. Nyissa meg a naplókat az [SvcTraceViewer](https://docs.microsoft.com/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe) alkalmazással, és keresse meg a kivételeket vagy hibaüzeneteket.
 
-| Probléma/hibaüzenet | Megoldási lépések |
+| Probléma/hibaüzenet | A megoldás lépései |
 | --- | --- |
-| Nem sikerül bejelentkezni az Intune-bérlői rendszergazdai fiókkal az NDES-összekötő felhasználói felületére | Ez akkor fordulhat elő, ha a helyi tanúsítvány-összekötő nincs engedélyezve az Intune felügyeleti portálon. A probléma megoldásához kövesse az alábbi lépéseket: <br><br> A Silver Light felhasználói felületén: <br> 1. Jelentkezzen be az [Intune felügyeleti portálra](https://admin.manage.microsoft.com). <br> 2. Kattintson a FELÜGYELET lehetőségre. <br> 3. Válassza a Mobileszköz-kezelés > Tanúsítvány-összekötő lehetőséget. <br> 4. Kattintson a **Helyszíni tanúsítvány-összekötő konfigurálása** elemre. <br> 5. Jelölje be a **Tanúsítvány-összekötő engedélyezése** jelölőnégyzetet. <br> 6. Kattintson az **OK**gombra. <br><br>Vagy <br><br> Az Azure Portal felhasználói felületén: <br> 1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com). <br> 2. Lépjen a Microsoft Intune-hoz. <br> 3. Válassza az **Eszközkonfiguráció** > **Hitelesítésszolgáltató** lehetőséget. <br> 4. Kattintson az **Engedélyezés** lehetőségre. <br><br> Miután a Silver Light felhasználói felületen vagy az Azure Portalon elvégezte az előző lépéseket, próbáljon meg ismét bejelentkezni az Intune-bérlői rendszergazdai fiókjával az NDES-összekötő felhasználói felületén. |
+| Nem sikerül bejelentkezni az Intune-bérlői rendszergazdai fiókkal az NDES-összekötő felhasználói felületére | Ez akkor fordulhat elő, ha a helyi tanúsítvány-összekötő nincs engedélyezve az Intune felügyeleti portálon. A probléma megoldásához kövesse az alábbi lépéseket: <br><br> A Silver Light felhasználói felületén: <br> 1. Jelentkezzen be az [Intune felügyeleti portálra](https://admin.manage.microsoft.com). <br> 2. Kattintson a FELÜGYELET lehetőségre. <br> 3. Válassza a Mobileszköz-kezelés > Tanúsítvány-összekötő lehetőséget. <br> 4. Kattintson a **Helyszíni tanúsítvány-összekötő konfigurálása** elemre. <br> 5. Jelölje be a **Tanúsítvány-összekötő engedélyezése** jelölőnégyzetet. <br> 6. Kattintson az **OK** gombra. <br><br>Vagy <br><br> Az Azure Portal felhasználói felületén: <br> 1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com). <br> 2. Lépjen a Microsoft Intune-hoz. <br> 3. Válassza az **Eszközkonfiguráció** > **Hitelesítésszolgáltató** lehetőséget. <br> 4. Kattintson az **Engedélyezés** lehetőségre. <br><br> Miután a Silver Light felhasználói felületen vagy az Azure Portalon elvégezte az előző lépéseket, próbáljon meg ismét bejelentkezni az Intune-bérlői rendszergazdai fiókjával az NDES-összekötő felhasználói felületén. |
 | Az NDES-összekötő tanúsítványa nem található. <br><br> System.ArgumentNullException: Value cannot be null. (System.ArgumentNullException: Az érték nem lehet null.) | Az Intune Tanúsítvány-összekötő akkor jeleníti meg ezt a hibát, ha az Intune-bérlői rendszergazdai fiókkal még sosem jelentkeztek be az NDES-összekötő felhasználói felületére. <br><br> Ha a hiba nem szűnik meg, indítsa újra az Intune Connector Service szolgáltatást. <br><br> 1. Nyissa meg a services.msc programot. <br> 2. Válassza ki az **Intune Connector Service** lehetőséget. <br> 3. Kattintson rá a jobb egérgombbal, majd válassza az **Újraindítás** lehetőséget.|
 | NDES Connector - IssuePfx -Generic Exception: (NDES-összekötő - IssuePfx - Általános kivétel:) <br> System.NullReferenceException: Object reference not set to an instance of an object. (Az objektumhivatkozás nincs beállítva az objektum egyik példányára.) | Ez a hiba átmeneti. Indítsa újra az Intune Connector Service szolgáltatást. <br><br> 1. Nyissa meg a services.msc programot. <br> 2. Válassza ki az **Intune Connector Service** lehetőséget. <br> 3. Kattintson rá a jobb egérgombbal, majd válassza az **Újraindítás** lehetőséget. |
 | Symantec Provider - Failed to get Symantec policy “The operation has timed out” (Symantec-szolgáltató – Nem sikerült beolvasni a Symantec házirendet. „A művelet túllépte az időkorlátot.”) | Az Intune Tanúsítvány-összekötő időtúllépési hibát észlelt a Symantec hitelesítésszolgáltatóval folytatott kommunikáció közben. Ha ez a hiba többször előfordul, növelje a kapcsolódási időtúllépés értékét, és próbálkozzon újra. <br><br> A kapcsolódási időtúllépés értékének növeléséhez: <br> 1. Lépjen az NDES-összekötő számítógépére. <br>2. Nyissa meg a `%ProgramFiles%\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config` fájlt a Jegyzettömbben. <br> 3. Növelje az időkorlát értékét a következő paraméternél: <br><br> `CloudCAConnTimeoutInMilliseconds` <br><br> 4. Indítsa újra az Intune Connector Service szolgáltatást. <br><br> Ha a probléma továbbra is fennáll, forduljon a Symantec ügyfélszolgálathoz. |

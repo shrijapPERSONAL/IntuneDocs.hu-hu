@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 834B4557-80A9-48C0-A72C-C98F6AF79708
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f0d9a4ab46aa8f4086c30fc7d93d7d1335b3d9ba
-ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
-ms.translationtype: HT
+ms.openlocfilehash: bfde1e935c782643e06030659082907365b1903e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49102072"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179985"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Alkalmazáskonfigurációs szabályzatok a Microsoft Intune-hoz
 

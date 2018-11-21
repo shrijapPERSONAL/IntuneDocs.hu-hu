@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 878e4d0854722d82eab0545cf3a1ba743f2c52db
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
-ms.translationtype: HT
+ms.openlocfilehash: 5f8263f06fe33537a74a6d1889b02b89ee6a825f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38224720"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183400"
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Android-felhasználói alkalmazások letöltése
 
@@ -47,7 +48,7 @@ Ebben az esetben a Céges portál értesíti a felhasználót, és közvetlenül
 | Alkalmazás típusa | Üzletági (LOB) alkalmazások | Play Áruház-alkalmazások  |
 | ------------- |-------------| -----|
 | Nem kötelező alkalmazások      | A felhasználók a **telepítés** elemre koppintanak a Vállalati portálon. Az alkalmazás további felhasználói beavatkozás nélkül telepítve lesz. | A felhasználók az alkalmazásra koppintanak a Vállalati portálon, és egy megnyíló Play Áruház-oldalra kerülnek, ahonnan elindíthatják a telepítést.|
-| Kötelező alkalmazások      | Az alkalmazás felhasználói beavatkozás nélkül telepítve lesz.    | A felhasználóknak megjelenik egy értesítés, amelyet nem tudnak bezárni. Az értesítés azt jelzi, hogy szükség van egy alkalmazás telepítésére. A felhasználók az értesítésre koppintanak, és egy megnyíló Play Áruház-oldalra kerülnek, ahonnan elindíthatják a telepítést. A telepítés befejezését követően megjelenik az értesítés. |
+| Required apps      | Az alkalmazás felhasználói beavatkozás nélkül telepítve lesz.    | A felhasználóknak megjelenik egy értesítés, amelyet nem tudnak bezárni. Az értesítés azt jelzi, hogy szükség van egy alkalmazás telepítésére. A felhasználók az értesítésre koppintanak, és egy megnyíló Play Áruház-oldalra kerülnek, ahonnan elindíthatják a telepítést. A telepítés befejezését követően megjelenik az értesítés. |
 
 Az alkalmazások az alább leírtak szerint kezelhetők vagy nem kezelhetők. Az alkalmazások kezeltként való beállítása minden típusú androidos eszközön azonos.
 
@@ -55,7 +56,7 @@ Az alkalmazások az alább leírtak szerint kezelhetők vagy nem kezelhetők. Az
 
 **Nem felügyelt alkalmazások** – Ezek az alkalmazások szabályzatokkal nem felügyelhetők. Ezeket az alkalmazásokat nem az Intune csomagolta be, vagy nem tartalmazzák az Intune App SDK-t. Ezekre az alkalmazásokra nem alkalmazhatók alkalmazás-házirendek.
 
-### <a name="see-also"></a>További információ
+### <a name="see-also"></a>Lásd még:
 [Alkalmazások hozzáadása a Microsoft Intune-nal](apps-add.md)
 
 [iOS-felhasználói alkalmazások letöltése](end-user-apps-ios.md)

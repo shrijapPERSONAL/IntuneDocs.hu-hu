@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 706a4228-9bdf-41e0-b8d1-64c923dd2d2b
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5766c4ebe7b261356248b00d0ca2d8937d3db79a
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
-ms.translationtype: HT
+ms.openlocfilehash: 3600cae373dceb88122852e3d260e91e2618d516
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231522"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180425"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Check Point SandBlast Mobile Threat Defense-összekötő az Intune-nal
 
@@ -59,7 +60,7 @@ Ha az eszközön kártékony alkalmazásokat, például kártevőket észlel a r
 
 ### <a name="control-access-based-on-threat-to-network"></a>Hozzáférés vezérlése hálózati fenyegetés alapján
 
-Észleli a hálózaton a fenyegetéseket, például a **közbeékelődéses (man-in-the-middle)** támadást, és az eszköz jelentette kockázat alapján biztosítja a Wi-Fi-hálózatok elérésének védelmét.
+Észlelheti a fenyegetéseket, például **Man-in-the-middle** hálózatban, és az eszközkockázat alapján Wi-Fi-hálózatok elérésének védelmét.
 
 **Wi-Fi-s hálózati elérés letiltása:**
 
@@ -71,7 +72,7 @@ Ha az eszközön kártékony alkalmazásokat, például kártevőket észlel a r
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Hozzáférés vezérlése a SharePoint Online-hoz hálózati fenyegetés alapján
 
-Észleli a hálózaton a fenyegetéseket, például a **közbeékelődéses (man-in-the-middle)** támadást, és az eszköz jelentette kockázat alapján megakadályozza a vállalati fájlok szinkronizálását.
+Észlelheti a fenyegetéseket, például **Man-in-the-middle** hálózatban, és megakadályozza a az eszközkockázat alapján a vállalati fájlok szinkronizálását.
 
 **A SharePoint Online letiltása hálózati fenyegetések észlelése esetén:**
 

@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1a7c7ebca1c6472b58021a57b1b4a59fc42966b0
-ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.openlocfilehash: fdfe822c9633e22e611acfe7f915068a4a183ae2
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51576953"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189996"
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-intune"></a>Intune Endpoint Protection-beállítások Windows 10 és újabb rendszerekhez
 
@@ -54,7 +55,7 @@ Az Alkalmazásőr csak a 64 bites Windows 10-eszközöknél érhető el. Ennek a
 A következő Windows 10-kiadásokon támogatott:
 - Otthoni
 - Professional
-- Munkahelyi
+- Üzleti
 - Vállalati
 - Oktatás
 - Mobil
@@ -101,7 +102,7 @@ Ezek a beállítások meghatározott hálózattípusokra vonatkoznak. Ilyen töb
 A következő, Microsoft Edge böngészővel rendelkező Windows 10- kiadásokon támogatott:
 - Otthoni
 - Professional
-- Munkahelyi
+- Üzleti
 - Vállalati
 - Oktatás
 - Mobil
@@ -112,14 +113,14 @@ A következő, Microsoft Edge böngészővel rendelkező Windows 10- kiadásokon
 - **SmartScreen használata alkalmazások és fájlok esetén**: A Windows SmartScreen **használata** fájlok és alkalmazások futtatásához. A SmartScreen egy felhőalapú, adathalászat elleni és kártevőirtó összetevő. A **Nincs konfigurálva** (alapértelmezett) érték letiltja a SmartScreent.
 - **Nem ellenőrzött fájlok futtatása**: **Letilthatja** a végfelhasználóknál a Windows SmartScreen által nem ellenőrzött fájlok futtatását. A **Nincs konfigurálva** (alapértelmezett) érték letiltja a funkciót, és engedélyezi a végfelhasználók számára, hogy nem ellenőrzött fájlokat futtassanak.
 
-## <a name="windows-encryption"></a>Windows-titkosítás
+## <a name="windows-encryption"></a>Windows Encryption
 
 ### <a name="windows-settings"></a>Windowsos beállítások
 
 A következő Windows 10-kiadásokon támogatott:
 
 - Professional
-- Munkahelyi
+- Üzleti
 - Vállalati
 - Oktatás
 - Mobil
@@ -229,7 +230,7 @@ A következő Windows 10-kiadásokon támogatott:
 
 - Otthoni
 - Professional
-- Munkahelyi
+- Üzleti
 - Vállalati
 - Oktatás
 - Mobil
@@ -304,7 +305,7 @@ A következő Windows 10-kiadásokon támogatott:
 
 **Mobileszköz-felügyelet (MDM)**: 
 - Professional
-- Munkahelyi
+- Üzleti
 - Vállalati
 - Oktatás
 - Mobil
@@ -349,7 +350,7 @@ A következő Windows 10-kiadásokon támogatott:
 
 - Otthoni
 - Professional
-- Munkahelyi
+- Üzleti
 - Vállalati
 - Oktatás
 - Mobil
@@ -382,7 +383,7 @@ A következő Windows 10-kiadásokon támogatott:
  
 - Otthoni
 - Professional
-- Munkahelyi
+- Üzleti
 - Vállalati
 - Oktatás
 

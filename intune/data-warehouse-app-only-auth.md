@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: d7166563-6bb5-4624-b8c8-6b300a997c3a
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a8e386e2d9b161debf65d3e639a90cb8de313ad2
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
-ms.translationtype: HT
+ms.openlocfilehash: b72a0bf1a5f5c996ad299bd84ff6f927ef780059
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602282"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185202"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Alkalmazásalapú hitelesítés az Intune-adattárházban
 
@@ -74,7 +75,7 @@ Ebben a szakaszban létre fog hozni egy kulcsértéket az alkalmazáshoz az Azur
 Ebben a szakaszban az alkalmazás engedélyeit fogja megadni.
 
 1.  Válassza a **Szükséges engedélyek** lehetőséget a **Beállítások** panelen.
-2.  Kattintson a **Hozzáadás**lehetőségre.
+2.  Kattintson a **hozzáadása**.
 3.  Válassza az **API hozzáadása** lehetőséget az **API kiválasztása** panel megjelenítéséhez.
 4.  Válassza a **Microsoft Intune API (MicrosoftIntuneAPI)** lehetőséget, majd a **Kiválasztás** lehetőséget az **API kiválasztása** panelen. Ekkor az **Engedélyek kiválasztása** lépés lesz kijelölve, és megjelenik a **Hozzáférés engedélyezése** panel.
 5.  Válassza a **Get data warehouse information from Microsoft Intune** (Adattárház-információk beolvasása a Microsoft Intune-ból) lehetőséget az **Alkalmazásengedélyek** szakaszban.

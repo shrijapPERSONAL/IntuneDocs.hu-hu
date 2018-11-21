@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 356997859942443ace0749ece8954bf609f9d91e
-ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
-ms.translationtype: HT
+ms.openlocfilehash: 36ed7a4dda91cfcc3cc4b97cc9ab8872b0a2c80e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34703298"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189146"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>Jelszó alaphelyzetbe állítása Windows rendszerű eszközökön az Intune-nal
 
@@ -65,7 +66,7 @@ Cserélje le a *bérlői azonosítót* az [Azure Portalon](https://portal.azure.
 2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
 3. Kattintson az **Eszközök**, majd a **Minden eszköz** elemre.
 4. Válassza ki azt az eszközt, amelyen át szeretné állítani a jelszót. Az eszköztulajdonságok területen válassza az **Új jelszó** lehetőséget.
-5. Válassza az **Igen** lehetőséget a megerősítéshez. A PIN-kód létrejön, és a következő hét nap folyamán megtekinthető a portálon.
+5. Válassza ki **Igen** megerősítéséhez. A PIN-kód létrejön, és a következő hét nap folyamán megtekinthető a portálon.
 
 ## <a name="next-step"></a>Következő lépés
 

@@ -14,12 +14,13 @@ ms.technology: ''
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: aanavath
 ms.suite: ems
-ms.openlocfilehash: 3ed729e437fcdbc4352bf5fa8ceada4ddf336708
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
-ms.translationtype: HT
+search.appverid: MET150
+ms.openlocfilehash: 44e7307997df67ad1c1ae6170da3bcc13e99070d
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38224918"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185049"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>A Vállalati portál alkalmazás üzeneteinek ismertetése a végfelhasználókkal
 
@@ -109,5 +110,5 @@ Ha nem adta hozzá a Céges portált az **Engedélyezett alkalmazások** vagy a 
 
 Adja hozzá a Céges portált az **Engedélyezett alkalmazások** vagy a **Mentesített alkalmazások** listájához a Windows Információvédelem (WIP) alkalmazásvédelmi szabályzatában. További információ: [A Windows Információvédelem (WIP) alkalmazásvédelmi szabályzatainak létrehozása és bevezetése az Intune használatával](/intune-classic/deploy-use/create-windows-information-protection-policy-with-intune).
 
-### <a name="see-also"></a>További információ
+### <a name="see-also"></a>Lásd még:
 [Mit kell tudniuk a végfelhasználóknak az Intune használatáról?](end-user-educate.md)

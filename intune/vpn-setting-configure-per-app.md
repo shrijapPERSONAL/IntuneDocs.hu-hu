@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 87c3313fd7b5fc0705460e539164ac70779bebeb
-ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
-ms.translationtype: HT
+ms.openlocfilehash: f4cdd3c215fbd9eab4204eca0639d5d38fe4c97a
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46505767"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180731"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Alkalmazásonkénti virtuális magánhálózat (VPN) beállítása az Intune-ban iOS-eszközökhöz
 
@@ -78,7 +79,7 @@ Importálja az Intune-ban létrehozott profilba a VPN-kiszolgáló a CA által k
     2. Adja meg a **leírást**.
     3. A **Platform** beállításban válassza az **iOS** lehetőséget.
     4. A **Profil típusa** beállításban válassza a **Megbízható tanúsítvány** a lehetőséget.
-4. Kattintson a mappa ikonra, és keresse meg a VPN-felügyeleti konzolból exportált VPN-tanúsítványát (.cer-fájl). Kattintson az **OK**gombra.
+4. Kattintson a mappa ikonra, és keresse meg a VPN-felügyeleti konzolból exportált VPN-tanúsítványát (.cer-fájl). Kattintson az **OK** gombra.
 5. Kattintson a **Létrehozás** gombra.
 
     ![Megbízható tanúsítványprofil létrehozása](./media/vpn-per-app-create-trusted-cert.png)
@@ -100,12 +101,12 @@ A megbízható főtanúsítvány-profil lehetővé teszi, hogy az iOS automatiku
 6. A **Tulajdonos alternatív neve** beállításban válassza a **Felhasználói egyszerű név (UPN)** lehetőséget.
 7. A **Kulcshasználat** beállításban válassza a **Digitális aláírás** és **Kulcstitkosítás** lehetőséget.
 8. A **Kulcsméret (bit)** beállításban válassza a **2048** lehetőséget.
-9. Kattintson a Főtanúsítvány elemre, és válasszon egy SCEP-tanúsítványt. Kattintson az **OK**gombra.
+9. Kattintson a Főtanúsítvány elemre, és válasszon egy SCEP-tanúsítványt. Kattintson az **OK** gombra.
 10. A **Kibővített kulcshasználat** **Név** beállításában adja meg a `Client Authentication` értéket.
 11. Az **objektum azonosítójaként** adja meg az `1.3.6.1.5.5.7.3.2` értéket.
-12. Kattintson a **Hozzáadás**lehetőségre.
+12. Kattintson a **hozzáadása**.
 13. Adja meg a ***kiszolgáló URL-címét***, majd kattintson a **Hozzáadás** gombra.
-14. Kattintson az **OK**gombra.
+14. Kattintson az **OK** gombra.
 15. Kattintson a **Létrehozás** gombra.
 
     ![SCEP-tanúsítványprofil létrehozása](./media/vpn-per-app-create-scep-cert.png)
@@ -133,8 +134,8 @@ A VPN-profil tartalmazza az ügyfél-hitelesítő adatokat tartalmazó SCEP-tan�
 5. Kattintson az **Automatikus VPN** elemre. Az **Automatikus VPN** párbeszédpanelen:
     1. Az **Automatikus VPN típusa** beállításban válassza az **Alkalmazásonkénti VPN** lehetőséget.
     2. Írja be a VPN URL-címét, majd kattintson a **Hozzáadás** gombra.
-    3. Kattintson az **OK**gombra.
-6. Kattintson az **OK**gombra.
+    3. Kattintson az **OK** gombra.
+6. Kattintson az **OK** gombra.
 7. Kattintson a **Létrehozás** gombra.
 
     ![Alkalmazásonkénti VPN-profil létrehozása](./media/vpn-per-app-create-vpn-profile.png)

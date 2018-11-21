@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 78ed923c7502744ccd7f23e341049ce8ee8a8d86
-ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
-ms.translationtype: HT
+ms.openlocfilehash: d87d8c8da5511f641b785f28bad7d7ef6739d888
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49983210"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184454"
 ---
 # <a name="use-custom-settings-for-windows-10-devices-in-intune"></a>Egyéni beállítások használata Windows 10 rendszerű eszközökhöz az Intune-ban
 
@@ -43,7 +44,7 @@ Ez a cikk:
 
     - **Név**: Adja meg a profil nevét, például: `windows 10 custom profile`.
     - **Leírás:** Itt adhatja meg a profil leírását.
-    - **Platform**: Válassza a **Windows 10-es vagy újabb verzióját**.
+    - **Platform**: Válassza a **Windows 10-es vagy újabb verzió** lehetőséget.
     - **Profil típusa**: Válassza az **Egyéni** lehetőséget.
 
 4. Az **Egyéni OMA-URI-beállítások** menüben válassza a **Hozzáadás** lehetőséget. Adja meg a következő beállításokat:

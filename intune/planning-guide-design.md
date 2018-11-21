@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: 8e73a9cf189ba44a9f093559b9175dfa947a38e1
-ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
-ms.translationtype: HT
+ms.openlocfilehash: 1d8ccd4e432623cf7d0ce4ce66651a95e13b8473
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47864591"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186494"
 ---
 # <a name="create-a-design"></a>Terv létrehozása
 
@@ -34,11 +35,11 @@ Az Intune-terv [az útmutató más szakaszainak](planning-guide.md) követése k
 
 -   Eszközplatformmal kapcsolatos szempontok
 
--   Teljesítendő követelmények  
+-   Teljesítendő követelmények  
 
 Bár a helyszíni infrastruktúrával kapcsolatban csak minimális mennyiségű követelményt támasztunk, egy terv készítése mégis segíthet abban, hogy biztosan a saját céljainak és követelményeinek megfelelő mobileszköz-felügyeleti megoldás legyen a végeredmény.
 
-Vizsgáljuk meg ezeket a területeket részletesebben. 
+Vizsgáljuk meg ezeket a területeket részletesebben. 
 
 ## <a name="record-your-current-environment"></a>A jelenlegi környezet dokumentálása
 Ezenfelül gyakorta előfordul, hogy az implementálási vagy a tesztelési fázisban módosítani kell a terven. A terv használatával azonnal dokumentálhatja ezeket a változásokat az indokaikkal együtt.

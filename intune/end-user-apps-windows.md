@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: e471fed8-19f0-4b37-aaa2-65f28a6b4794
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5b322b9d2b6a7f0689df521ef1809c3616c02f3f
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
-ms.translationtype: HT
+ms.openlocfilehash: 1fa409619d5c0fc0c0fc32573f9a7346350191e8
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225323"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52188721"
 ---
 # <a name="how-your-windows-users-get-their-apps"></a>Windows-felhasználói alkalmazások letöltése
 
@@ -35,6 +36,6 @@ Ez a témakör ismerteti, hogy felhasználói hol és hogyan juthatnak hozzá a 
 
 **Nem felügyelt alkalmazások** – Azok a szabályzatokkal felügyelhető alkalmazások, amelyeket nem az Intune burkolt be, illetve amelyek nem foglalják magukban az Intune App SDK-t. Ezekre az alkalmazásokra nem alkalmazhatók alkalmazásvédelmi szabályzatok.
 
-### <a name="see-also"></a>További információ
+### <a name="see-also"></a>Lásd még:
 [Android-felhasználói alkalmazások letöltése](end-user-apps-android.md)
 [iOS-felhasználói alkalmazások letöltése](end-user-apps-android.md)

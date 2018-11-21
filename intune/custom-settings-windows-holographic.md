@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.topic: article
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 863ef32d05fed601eaf38f749aa30e1c4b657cc9
-ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
-ms.translationtype: HT
+ms.openlocfilehash: b66adc535d51fdaf2e3fc7a4bb1b11d34433db98
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49983159"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185576"
 ---
 # <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>Egyéni beállítások használata az Intune-ban a Windows Holographic for Business-eszközökhöz
 
@@ -40,7 +41,7 @@ Ebből a cikkből megtudhatja, hogyan hozhat létre egyéni profilt a Windows Ho
 
     - **Név**: Adja meg a profil nevét, például: `hololens custom profile`.
     - **Leírás:** Itt adhatja meg a profil leírását.
-    - **Platform**: Válassza a **Windows 10-es vagy újabb verzióját**.
+    - **Platform**: Válassza a **Windows 10-es vagy újabb verzió** lehetőséget.
     - **Profil típusa**: Válassza az **Egyéni** lehetőséget.
 
 4. Az **Egyéni OMA-URI-beállítások** menüben válassza a **Hozzáadás** lehetőséget. Adja meg a következő beállításokat:

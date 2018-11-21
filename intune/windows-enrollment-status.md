@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 08d76d6b76ee7838633435ae095c171e0a3cdf8e
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
-ms.translationtype: HT
+ms.openlocfilehash: ada9fee575824d27a6bfdd8f14d4845d228467db
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236492"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186078"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Beléptetési állapotlap beállítása
  
@@ -72,7 +73,7 @@ Az eszköz előkészítése során a beléptetési állapotlap megjeleníti a TP
 ### <a name="device-setup"></a>Eszköz beállítása
 
 Az eszköz beállítása során a beléptetési állapotlap az alábbi „Minden eszköz” társítású elemeket jeleníti meg:
-- Biztonsági házirendek
+- Biztonsági szabályzatok
     - Egy konfigurációs szolgáltató (CSP) az összes beléptetéshez.
     - Az Intune által konfigurált tényleges konfigurációs szolgáltatók nem jelennek meg itt.
 - Alkalmazások
@@ -85,7 +86,7 @@ Az eszköz beállítása során a beléptetési állapotlap az alábbi „Minden
 
 ### <a name="account-setup"></a>Fiók beállítása
 A fiók beállítása során a beléptetési állapotlap az alábbi elemeket jeleníti meg:
-- Biztonsági házirendek
+- Biztonsági szabályzatok
     - Egy konfigurációs szolgáltató minden beléptetéshez.
     - Az Intune által konfigurált tényleges konfigurációs szolgáltatók nem jelennek meg itt.
 - Alkalmazások

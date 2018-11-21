@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ad8e874dda47b7c6deeb614b0f893f7c922241ce
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
-ms.translationtype: HT
+ms.openlocfilehash: 29a3f6c6e320f970ef7b2b086b8d25ab82453199
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236339"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179405"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>PowerShell-parancsfájlok kezelése az Intune-ban Windows 10-es eszközök esetén
 Az Intune felügyeleti bővítményével Windows 10-es eszközökön futtatandó PowerShell-parancsfájlokat tölthet fel az Intune-ba. A felügyeleti bővítmény kiegészíti a Windows 10 mobileszköz-kezelési funkcióit, és könnyebbé teszi a modern felügyeletre váltást.
@@ -27,9 +28,9 @@ Az Intune felügyeleti bővítményével Windows 10-es eszközökön futtatandó
 ## <a name="moving-to-modern-management"></a>Váltás modern felügyeletre
 A végfelhasználói számítástechnika a digitális átalakulás korszakát éli. A klasszikus, hagyományos informatika egyetlen eszközplatformra, vállalati tulajdonú eszközökre, az irodából dolgozó felhasználókra és számos kézi, reaktív informatikai folyamatra hagyatkozik. A modern munkahely azonban több eszközplatformot képes befogadni, amelyek felhasználói és vállalati tulajdonban is lehetnek, a felhasználók bárhonnan dolgozhatnak, és automatizált, proaktív informatikai folyamatok használatosak. 
 
-Az MDM-szolgáltatások, mint például a Microsoft Intune, az MDM-protokollal felügyelhetik a Windows 10-es eszközöket. A beépített Windows 10 felügyeleti ügyfél kommunikálhat az Intune-nal, így vállalati felügyeleti feladatokat láthat el. Ez segít a Windows 10-es eszközök modern felügyeletre váltásában. Vannak azonban bizonyos funkciók, amelyekre szüksége lehet, jelenleg mégsem elérhetők a Windows 10 MDM-ben. Ilyen a fejlett eszközkonfiguráció, a hibaelhárítás, valamint az elavult Win32-alkalmazáskezelés. Előfordulhat, hogy ezekhez a funkciókhoz futtatnia kell az Intune-szoftverügyfelet a Windows 10-es eszközein. Ennek eredményeképpen nem fogja tudni használni a Windows 10 MDM új funkcióit. [Hasonlítsa össze az Intune-szoftverügyfél és a Windows 10 MDM különbségeit](https://docs.microsoft.com/intune-classic/deploy-use/pc-management-comparison).
+Az MDM-szolgáltatások, mint például a Microsoft Intune, az MDM-protokollal felügyelhetik a Windows 10-es eszközöket. A beépített Windows 10 felügyeleti ügyfél kommunikálhat az Intune-nal, így vállalati felügyeleti feladatokat láthat el. Ez segít a Windows 10-es eszközök modern felügyeletre váltásában. Vannak azonban bizonyos funkciók, szüksége lehet, például a fejlett eszközkonfiguráció, amely a Windows 10-es beépített mobileszköz-kezelési funkciók nem használható.
 
-Az Intune felügyeleti bővítmény kiegészíti a Windows 10 MDM beépített funkcióit. Létrehozhat olyan PowerShell-parancsfájlokat, amelyek azokon a Windows 10-es eszközökön futnak, amelyek a szükséges funkciókat nyújtják. Létrehozhat például egy olyan PowerShell-parancsfájlt, amely egy elavult Win32-alkalmazást telepít a Windows 10-es eszközeire, feltöltheti a parancsfájlt az Intune-ba, hozzárendelheti egy Azure Active Directory-csoporthoz, majd futtathatja a Windows 10-es eszközökön. Ezt követően megfigyelheti a parancsfájl futtatási állapotát a Windows 10-es eszközökön a folyamat teljes időtartama alatt.
+Az Intune felügyeleti bővítmény kiegészíti a Windows 10 MDM beépített funkcióit. Létrehozhat olyan PowerShell-parancsfájlokat, amelyek azokon a Windows 10-es eszközökön futnak, amelyek a szükséges funkciókat nyújtják. Hozzon létre egy PowerShell-parancsprogram, amely az egyéni beállításokat konfigurálja, a szkript feltöltése az Intune-ba, hozzárendelheti egy Azure Active Directory (AD) csoportnak és futtassa a szkriptet a Windows 10-es eszközökön. A parancsfájl figyelhető a parancsfájl futtatási állapotát megtekintheti a Windows 10 rendszerű eszközökön elejétől a végéig.
 
 ## <a name="prerequisites"></a>Előfeltételek
 Az Intune felügyeleti bővítmény előfeltételei a következők:
@@ -55,7 +56,6 @@ Az Intune felügyeleti bővítmény előfeltételei a következők:
 3. Jelöljön ki egy vagy több olyan csoportot, amelyek azokat a felhasználókat tartalmazzák, akiknek az eszközeire telepíteni szeretné a parancsfájlt. Válassza a **Kiválasztás** lehetőséget a szabályzat kijelölt csoportokhoz rendeléséhez.
 
 > [!NOTE]
-> - A PowerShell-szkriptek nem alkalmazhatók számítógép-csoportokra.
 > - A végfelhasználóknak nem kell bejelentkezniük az eszközön a PowerShell-parancsfájlok végrehajtásához. 
 > - Az Intune-beli PowerShell-parancsfájlok beállíthatók úgy, hogy AAD-eszközbiztonsági csoportokat célozzanak meg.
 

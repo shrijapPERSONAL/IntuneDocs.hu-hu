@@ -5,20 +5,21 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 06/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 60d9398b80a30adee194470ac4e5c6c1efc0bd4c
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
-ms.translationtype: HT
+ms.openlocfilehash: 7cb7c23e673c9e0c074f45991333fde9bfc8e930
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744635"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186180"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>A TeamViewer használata Intune-eszközök távoli felügyeletéhez
 
@@ -58,7 +59,10 @@ Az összekötő konfigurálása után megkezdheti egy eszköz távoli felügyele
 
 ![Androidos eszköz távoli felügyelet a TeamViewer használatával – példa](./media/android-teamviewer.png)
 
-Távoli munkamenet indításakor a végfelhasználó egy értesítésjelzőt lát az eszközén található céges portál alkalmazás ikonján. Egy értesítés is megjelenik az alkalmazás megnyitásakor. A felhasználó ekkor elfogadhatja a kezdeményezett távsegítséget.
+A távoli munkamenet indításakor megjelenik a felhasználók számára egy értesítésjelzőt a céges portál alkalmazás ikonján az eszközén. Egy értesítés is megjelenik az alkalmazás megnyitásakor. Felhasználó ekkor elfogadhatja a távsegítségkérést.
+
+> [!NOTE]
+> "Felhasználó nélküliek" módszer, például a készülékregisztráció-kezelő és WCD, használatával beléptetett Windows-eszközök ne jelenjen meg a TeamViewer-értesítés a céges portál alkalmazásban. Ezekben az esetekben javasoljuk a TeamViewer-portál használata a munkamenet létrehozásához.
 
 A TeamViewerben sokféle művelet, például az eszköz felügyeletének átvétele is végrehajtható az eszközön. Az elvégezhető tevékenységek teljes körű ismertetését a [TeamViewer útmutató](https://www.teamviewer.com/support/documents/) tartalmazza.
 

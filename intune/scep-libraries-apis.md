@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 31c083dcd2087de99830317d892750a42cc5ae6d
-ms.sourcegitcommit: ae62a269778cdbf1d207cd017de522f934b030e9
-ms.translationtype: HT
+ms.openlocfilehash: 054342994a75965b3e1bcb13884af07131ab0122
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44700982"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181921"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>API-k használata az SCEP külső tanúsítványszolgáltatóinak Intune-ba való felvételére
 

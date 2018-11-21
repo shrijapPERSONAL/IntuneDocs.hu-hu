@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 932feb064552e05536821d0e75e27059387bcf56
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
-ms.translationtype: HT
+ms.openlocfilehash: 9a15c84ded066a26254737f75293b0d743fe5eab
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31029808"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181224"
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>Az Intune megosztott iPad eszközökkel kapcsolatos oktatási beállításainak konfigurálása
 
@@ -183,7 +184,7 @@ Az eszköz mostantól hozzá van rendelve az eszközkategóriához. Ismételje m
 5. A profilok paneljén válassza a **Profil létrehozása** lehetőséget.
 6. A **Hozzárendelés létrehozása** panelen adjon meg egy **Nevet** és egy **Leírást**.
 7. A csoportok kocsiprofillal való társításához válassza az **Osztályok kiválasztása** > **Konfigurálás** lehetőséget.
-8. Válassza ki a kocsiprofilhoz hozzáadni kívánt osztályokat, majd kattintson a **Kijelölés** lehetőségre. 
+8. Válassza ki a kocsiprofilhoz hozzáadni kívánt osztályokat, majd kattintson a **Kijelölés** lehetőségre. 
 9. A csoportok kocsiprofillal való társításához válassza az **Kocsik kiválasztása** > **Konfigurálás** lehetőséget.
 10. Válassza ki a kocsiprofilban alkalmazni kívánt csoportokat, majd kattintson a **Kijelölés** lehetőségre.
 11. A kocsiprofil mentéséhez a **Hozzárendelés létrehozása** panelen válassza a **Mentés** lehetőséget.
@@ -198,7 +199,7 @@ Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó pane
 4. Az **Eszközkonfiguráció** panelen válassza a **Figyelés** > **Hozzárendelés állapota** lehetőséget.
 5. A **Hozzárendelés állapota** panelen jelölje ki a létrehozott **kocsiprofilt**.
 6. A **Kocsiprofil** panelen válassza a **Hozzárendelések** lehetőséget, majd a **Belefoglalás** területen a **Válassza ki a befoglalandó csoportokat** lehetőséget.
-7. Válassza ki a kocsiprofil célosztályait (ne válasszon ki csoportokat), majd kattintson a **Kijelölés** lehetőségre. 
+7. Válassza ki a kocsiprofil célosztályait (ne válasszon ki csoportokat), majd kattintson a **Kijelölés** lehetőségre. 
 8. Ha elkészült, válassza a **Mentés** elemet.
 
 A hozzárendelés ekkor befejeződik, az Intune pedig üzembe helyezi az Osztályterem profilját a céleszközökön az osztályterem-hozzárendelés alapján.

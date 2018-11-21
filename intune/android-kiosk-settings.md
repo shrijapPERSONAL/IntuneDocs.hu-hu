@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0b2a31a90dc0d88386a829756116edebd28990f9
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
-ms.translationtype: HT
+ms.openlocfilehash: 5cd16a351beefd851d51175717abd4400382c216
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602180"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185236"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Android-eszközök kioszkbeállításai az Intune-ban
 
@@ -47,7 +48,7 @@ Ha egy kioszkeszköz korlátozó profiljának beállítása **Kioszkmód** = **T
 
 Androidos kioszkeszköz több alkalmazásra való beállításához kövesse az alábbi fő lépéseket:
 
-1. [A Managed Home Screen alkalmazás importálása és telepítése a Google Play Áruházból](#import-and -deploy-the-managed-home-screen-app)
+1. [A Managed Home Screen alkalmazás importálása és telepítése a Google Play Áruházból](#import-and-deploy-the-managed-home-screen-app)
 2. [A kioszkmódban használható alkalmazások hozzáadása és hozzárendelése](#add-and-assign-apps-that-can-be-used-in-kiosk-mode)
 3. (Nem kötelező) [A kioszkmódban használható webes hivatkozások hozzáadása](#add-web-links-that-can-be-used-in-kiosk-mode)
 

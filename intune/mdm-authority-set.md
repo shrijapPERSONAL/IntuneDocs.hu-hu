@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 41296e2c5fd1bddfc65bb343d86f4891fff9452d
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
-ms.translationtype: HT
+ms.openlocfilehash: 0eb3ccf85c8851f16dcfe303603f65517fcf7312
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425189"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183757"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Mobileszköz-felügyeleti szolgáltató megadása
 
@@ -103,7 +104,7 @@ Ha fel szeretne készülni az új MDM-szolgáltatóra való váltásra, tekintse
 2. Jelentkezzen be az MDM-szolgáltató eredeti beállításakor használt Intune-bérlőbe, majd kattintson a **Tovább** gombra.
 3. Válassza **A Configuration Manager beállítása mobileszköz-felügyeleti szolgáltatóként** lehetőséget, majd kattintson a **Tovább** gombra.
 4. Állítsa be, hogy a felhasználógyűjtemény az összes olyan felhasználót tartalmazza, akik továbbra is az új hibrid MDM-szolgáltató által lesznek kezelve.
-5. Kattintson a **Tovább** gombra, és fejezze be a varázslót. Az MDM-szolgáltató mostantól a **Configuration Manager**.
+5. Kattintson a **tovább** fejezze be a varázslót. Az MDM-szolgáltató mostantól a **Configuration Manager**.
 6. Jelentkezzen be a [Microsoft Intune felügyeleti konzolba](http://manage.microsoft.com) ugyanazzal az Intune-bérlővel, majd erősítse meg, hogy az MDM-szolgáltatót módosította **a Configuration Manager szolgáltatáshoz beállított** értékre.
 7. Miután beállította a Configuration Managert mobileszköz-felügyeleti szolgáltatóként, beállíthatja az [iOS-regisztrációt](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-ios-mac) és az [Android-regisztrációt](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-android).
 8. A Configuration Manager konzolban konfigurálja és alkalmazza az új MDM-szolgáltató (hibrid) beállításait és alkalmazásait.

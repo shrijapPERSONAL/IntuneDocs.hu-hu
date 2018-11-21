@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 359448d9-2384-42ac-a21c-a25148c20a7b
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 00ae29b831bebb770b70c38b5e76d7f19bab10ee
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
-ms.translationtype: HT
+ms.openlocfilehash: accd8dea2b997a6eb1cfec22a6e822e984ef710d
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231397"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180151"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>A Symantec Endpoint Protection Mobile és az Intune közötti integráció beállítása
 
@@ -83,7 +84,7 @@ A SEP Mobile kétféleképpen integrálható az Intune-nal:
 
 Hozzá kell adnia egy olyan biztonsági csoportot, amelynek tagja az összes SEP Mobile-t futtató eszköz.
 
--  Adja meg és jelölje ki az összes SEP Mobile-t futtató eszközöket tartalmazó biztonsági csoportot, majd mentse a módosításokat.
+-  Adja meg, és az eszközök, amely a SEP Mobile alkalmazás fut, majd mentse a módosításokat az összes biztonsági csoportok kiválasztásához.
 
     ![Kép a SEP Mobile felhasználói csoportjairól](./media/symantec-portal-basic-groups.png)   
 

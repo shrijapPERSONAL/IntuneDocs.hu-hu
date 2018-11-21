@@ -13,13 +13,14 @@ ms.technology: ''
 ms.reviewer: ''
 ROBOTS: NOINDEX,NOFOLLOW
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 600c6a00910647983cc2329f9256b613560aaf14
-ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
-ms.translationtype: HT
+ms.openlocfilehash: ec5127adcb12bc1196604d27ae2ac6501de03d08
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866320"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187106"
 ---
 # <a name="microsoft-intune-documentation-40ignite-special-edition41"></a>Microsoft Intune-dokumentáció &#40;Különleges Ignite-kiadás&#41;
 Üdvözli a Microsoft Ignite 2018! Nagy öröm számunkra, hogy ellátogatott hozzánk. Amíg a Microsoft Ignite 2018 webhelyén tartózkodik tekintsen át néhány Intune-erőforrást, amelyeket az Ön számára állítottunk össze.

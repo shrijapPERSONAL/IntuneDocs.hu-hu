@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f08e6275bb8f3dfb689dcc7e14d92ab65d588471
-ms.sourcegitcommit: 7a649a5995600fb91817643e20a5565caedbb8f2
-ms.translationtype: HT
+ms.openlocfilehash: 4b76625276a34c027ae8c74f1c6a3977c4a7e8bd
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50149104"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179949"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Alkalmazáskonfigurációs szabályzatok hozzáadása felügyelt Android-eszközökhöz
 
@@ -69,9 +70,9 @@ Ha változót szeretne megadni értéktípusnak, az alábbi lehetőségek közü
 - Felhasználóazonosító, például **3ec2c00f-b125-4519-acf0-302ac3761822**
 - Felhasználónév, például **Szabó János**
 
-### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Csak a konfigurált szervezeti fiókok engedélyezése a többszörös identitást használó alkalmazásokban 
+### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Csak a konfigurált szervezeti fiókok engedélyezése a többidentitásos alkalmazásokban 
 
-Android-eszközök esetében használja az alábbi kulcs-érték párokat:
+Android-eszközök esetén használja az alábbi kulcs/érték párokat:
 
 | **Kulcs** | com.microsoft.intune.mam.AllowedAccountUPNs |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -79,7 +80,7 @@ Android-eszközök esetében használja az alábbi kulcs-érték párokat:
 
    > [!NOTE]
    > Ha csak a konfigurált, többszörös identitással rendelkező szervezeti fiókokat engedélyezi, az Outlook for Android 2.2.222 vagy újabb verzióját kell használnia.<p></p>
-   > A Microsoft Intune rendszergazdájaként felügyelheti, hogy mely felhasználói fiókok legyenek hozzáadva a Microsoft Office-alkalmazásokhoz a felügyelt eszközökön. Korlátozhatja a hozzáférést a regisztrált eszközökön csak az engedélyezett szervezeti felhasználói fiókokra, és letilthatja a személyes fiókokat. A támogató alkalmazások feldolgozzák az alkalmazás konfigurációját, majd eltávolítják és letiltják a jóvá nem hagyott fiókokat.<p></p>
+   > A Microsoft Intune rendszergazdájaként szabályozhatja, hogy melyik felhasználói fiókok legyenek hozzáadva a Microsoft Office-alkalmazásokhoz a felügyelt eszközökön. A hozzáférést korlátozhatja csak a szervezeti felhasználói fiókokra, és blokkolhatja a személyes fiókok használatát a regisztrált eszközökön. A támogató alkalmazások feldolgozzák az alkalmazáskonfigurációt, majd eltávolítják és letiltják a nem jóváhagyott fiókokat.<p></p>
    > A Microsoft Wordhöz, a Microsoft Excelhez és a Microsoft PowerPointhoz az alkalmazás 16.0.9327.1000-es vagy újabb verzióját kell használnia. 
 
 ## <a name="enter-the-json-editor"></a>A JSON-szerkesztő megnyitása

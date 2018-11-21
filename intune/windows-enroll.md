@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 31c3e7b6d255cd99efee134f0276fd4d15dab6b9
-ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
-ms.translationtype: HT
+ms.openlocfilehash: efb850e0f08c94cfee7948f50411220216eb8418
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403561"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52188067"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windowsos eszközök regisztrációjának beállítása
 
@@ -59,7 +60,7 @@ Hozza létre a megfelelő CNAME DNS-erőforrásrekordokat a céges tartományhoz
 
 A CNAME DNS-bejegyzések létrehozása nem kötelező, viszont a CNAME rekordok létrehozása egyszerűbbé teszi a regisztrációt a felhasználók számára. Ha nem található CNAME rekord, akkor a rendszer kéri a felhasználókat, hogy írják be az MDM-kiszolgáló nevét: enrollment.manage.microsoft.com.
 
-|Típus|Gazdagép neve|A következő helyre mutat|Élettartam|
+|Típus|Gazdagép neve|A következő helyre mutat|TTL|
 |----------|---------------|---------------|---|
 |CNAME|EnterpriseEnrollment.munkahelyi_tartomány.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 óra|
 |CNAME|EnterpriseRegistration.munkahelyi_tartomány.com|EnterpriseRegistration.windows.net|1 óra|
@@ -72,11 +73,11 @@ Ha a cégnek több UPN-utótagja is van, akkor mindegyik tartománynévhez kül�
 
 A Contoso DNS-rendszergazdájának a következő CNAME-elemeket kell létrehoznia:
 
-|Típus|Gazdagép neve|A következő helyre mutat|Élettartam|  
+|Típus|Gazdagép neve|A következő helyre mutat|TTL|  
 |----------|---------------|---------------|---|
 |CNAME|EnterpriseEnrollment.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1 óra|
 |CNAME|EnterpriseEnrollment.us.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1 óra|
-|CNAME|EnterpriseEnrollment.eu.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 óra|
+|CNAME|EnterpriseEnrollment.eu.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 óra|
 
 `EnterpriseEnrollment-s.manage.microsoft.com` – A levelezési tartomány nevéből felismert tartománynévvel irányítja át a felhasználókat az Intune-ba.
 

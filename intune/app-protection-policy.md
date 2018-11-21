@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: fea87d72e8d8485c1cde3038d357b8d6bc7f1c71
-ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
-ms.translationtype: HT
+ms.openlocfilehash: d974e6db3543ef3ba0b11cf67989260e429dde4c
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49102001"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179167"
 ---
 # <a name="what-are-app-protection-policies"></a>Mik azok az alkalmazásvédelmi szabályzatok?
 
@@ -58,7 +59,7 @@ Az MDM-megoldások és alkalmazásvédelmi szabályzatok együttes használata t
 
 - **Az MDM biztosítja az eszköz védettségét**. Segítségével például PIN-kódot kérhet az eszköz eléréséhez, vagy felügyelt alkalmazásokat telepíthet az eszközre. Az MDM-megoldáson keresztül is telepíthet alkalmazásokat, így jobban szabályozhatja az alkalmazáskezelést.
 
-- **Az alkalmazásvédelmi szabályzatok biztosítják az alkalmazásrétegek védelmét**. Lehetőség van például a következőkre:
+- **Az alkalmazásvédelmi szabályzatok biztosítják az alkalmazásrétegek védelmét**. Ha például a következőket teheti:
   - PIN-kódot kérhet egy alkalmazás vállalati környezetben való megnyitásához 
   - Szabályozhatja az adatok megosztását az alkalmazások között 
   - Megakadályozhatja az alkalmazásadatok személyes tárhelyre való mentését

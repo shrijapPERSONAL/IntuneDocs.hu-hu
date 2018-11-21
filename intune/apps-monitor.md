@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 09e4cfc314ea21294cd3de62611a089ec724a683
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
-ms.translationtype: HT
+ms.openlocfilehash: 457b5b97bd13caddb5c60836940dd491eac752f8
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075627"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181887"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Alkalmazásadatok és -hozzárendelések figyelése a Microsoft Intune-ban
 
@@ -46,7 +47,7 @@ Az **Alapadatok** szakasz az alábbi információkat nyújtja az alkalmazásról
 
  | **Alkalmazás részletei**            | **Leírás**                                                      |
 |------------------------|------------------------------------------------------------------|
-| **Kiadó**          | Az alkalmazás kiadója.                                            |
+| **Publisher**          | Az alkalmazás kiadója.                                            |
 | **Operációs rendszer**   | Az alkalmazás operációs rendszere (Windows, iOS, Android és hasonlók). |
 | **Létrehozás dátuma**             | A jelen változat létrehozásának dátuma és ideje.                         |
 | **Kiosztott**           | **Igen** vagy **Nem** attól függően, hogy az alkalmazás ki lett-e osztva.                  |
@@ -56,9 +57,9 @@ Az ábrán az alábbi állapothoz tartozó alkalmazások száma jelenik meg:
 
 | **Eszközállapot**       | **Leírás**                                       |
 |-----------------------|-------------------------------------------------------|
-| **Telepítve**         | A telepített alkalmazások száma.                         |
+| **Telepítve van**         | A telepített alkalmazások száma.                         |
 | **Nincs telepítve**     | A nem telepített alkalmazások száma.                     |
-| **Sikertelen**            | A sikertelen telepítések száma.                   |
+| **Nem sikerült**            | A sikertelen telepítések száma.                   |
 | **Telepítés függőben**   | Azon alkalmazások száma, amelyek telepítése jelenleg zajlik. |
 | **Nem alkalmazható**           | A nem alkalmazható állapotértékkel rendelkező alkalmazások száma.            |
 
@@ -67,7 +68,9 @@ Az ábrán az alábbi állapothoz tartozó alkalmazások száma jelenik meg:
 >    - Egy telepített felügyelt alkalmazás céljának módosítása miatt csökkenhet a telepítések száma az állapotpanelen, de az alkalmazás továbbra is szerepel az észlelt alkalmazások paneljén.
 >    - Egy bérlőn belül egyazon alkalmazás több példányának megjelölése esetén a felhasználók és eszközök esetleges átfedései miatt eltérés léphet fel a számok között. Az alkalmazás minden példánya számolja az átfedésben lévő felhasználókat, a felderített alkalmazások esetében azonban a felhasználók többszörösen lesznek számolva.
 >    - A felderített alkalmazásokat és az alkalmazások állapotát a rendszer különböző időközönként gyűjti be, így emiatt is eltérések alakulhatnak ki az alkalmazások számát illetően.
- 
+> 
+> Továbbá vegye figyelembe, hogy az Android-alkalmazások telepített **elérhető regisztrációval és anélkül** csak jelentés az alkalmazás telepítési állapota a regisztrált eszközök számára. Alkalmazás telepítési állapotát az Intune-ban nem regisztrált eszközök esetén nem érhető el.
+
 ### <a name="device-install-status"></a>Eszköztelepítés állapota
 
 Az eszközállapot-lista akkor jelenik meg, ha a menü **Figyelés** szakasz **Eszköztelepítés állapota** lehetőségét választja. A részleteket tartalmazó táblázatban az alábbi oszlopok szerepelnek:
