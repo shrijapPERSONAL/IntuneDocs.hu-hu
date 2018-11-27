@@ -14,12 +14,12 @@ ms.reviewer: kmyrup
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ca22bdb03bc726e17fef8a854bc9478c395f5234
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 73a3b26eb9a18475530e3b52ba9b91c4af5e685d
+ms.sourcegitcommit: 349ab913932547b4a7491181f0aff092f109b87b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188687"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52303872"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>SCEP-tanúsítványok konfigurálása és használata az Intune-nal
 
@@ -67,7 +67,7 @@ Az NDES-kiszolgálót egy fordított proxyn keresztül, például az [Azure AD-a
 |**Tanúsítványsablon**|Ez a sablon a vállalati hitelesítésszolgáltatón konfigurálható.|
 |**Ügyfél-hitelesítési tanúsítvány**|A vállalati vagy nyilvános hitelesítésszolgáltatótól lekért tanúsítvány, melyet az NDES-kiszolgálóra kell telepítenie.|
 |**Kiszolgálói hitelesítési tanúsítvány**|A vállalati vagy nyilvános hitelesítésszolgáltatótól lekért tanúsítvány. Ezt az SSL-tanúsítványt az NDES-kiszolgálón futó IIS-be kell telepítenie, majd kötést kell létrehoznia. Ha a tanúsítványban be van állítva az ügyfél- és kiszolgálóhitelesítési kulcshasználat (**Kibővített kulcshasználat**), akkor használhatja ugyanazon tanúsítványt.|
-|**Megbízható legfelső szintű hitelesítésszolgáltató tanúsítványa**|Exportálja ezeket a tanúsítványokat **.cer** kiterjesztésű fájlként a legfelső szintű hitelesítésszolgáltatóról vagy azokról az eszközökről, amelyek megbízhatónak tartják a legfelső szintű hitelesítésszolgáltatót. Ezután rendelje hozzá a fájlt a legfelső szintű hitelesítésszolgáltatói profilt használó eszközökhöz.<br /><br />Operációsrendszer-platformonként egy darab megbízható legfelső szintű hitelesítésszolgáltatói tanúsítványt használjon, és társítsa azt az egyes létrehozott megbízható főtanúsítvány-profilokkal.<br /><br />Szükség esetén további megbízható legfelső szintű hitelesítésszolgáltatói tanúsítványokat is használhat. Ezzel például bizalmi kapcsolatot alakíthat ki egy hitelesítésszolgáltatónak, mely aláírja a kiszolgálói hitelesítési tanúsítványokat a szervezet Wi-Fi hozzáférési pontjai számára.|
+|**Megbízható legfelső szintű hitelesítésszolgáltató tanúsítványa**|Exportálja ezeket a tanúsítványokat **.cer** kiterjesztésű fájlként a legfelső szintű hitelesítésszolgáltatóról vagy azokról az eszközökről, amelyek megbízhatónak tartják a legfelső szintű hitelesítésszolgáltatót. Ezután rendelje hozzá a felhasználók, eszközök, vagy mindkét használatával a megbízható Hitelesítésszolgáltatói tanúsítványprofillal.<br /><b>Megjegyzés:<b />ha SCEP-tanúsítványprofil hozzá van rendelve, ügyeljen arra, hogy a hivatkozott az SCEP-tanúsítványprofil ugyanazon felhasználó vagy eszköz csoporthoz megbízható főtanúsítvány-profil hozzárendelése.<br /><br />Operációsrendszer-platformonként egy darab megbízható legfelső szintű hitelesítésszolgáltatói tanúsítványt használjon, és társítsa azt az egyes létrehozott megbízható főtanúsítvány-profilokkal.<br /><br />Szükség esetén további megbízható legfelső szintű hitelesítésszolgáltatói tanúsítványokat is használhat. Ezzel például bizalmi kapcsolatot alakíthat ki egy hitelesítésszolgáltatónak, mely aláírja a kiszolgálói hitelesítési tanúsítványokat a szervezet Wi-Fi hozzáférési pontjai számára.|
 
 ### <a name="accounts"></a>Fiókok
 
@@ -482,7 +482,7 @@ A szolgáltatás futásának ellenőrzéséhez nyisson meg egy böngészőt, és
      - **Digitális aláírás**: Csak akkor engedélyezi a kulcscserét, ha a kulcs védelmét digitális aláírás segíti.
    - **Kulcsméret (bit)**: Adja meg, hogy hány bitet tartalmazzon a kulcs.
    - **Kivonatoló algoritmus** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): Válassza ki a tanúsítvánnyal használni kívánt kivonatoló algoritmust a rendelkezésre álló típusok közül. Válassza a kapcsolódó eszközöknél használható legerősebb biztonsági szintet.
-   - **Főtanúsítvány**: Válasszon ki egy olyan legfelső szintű hitelesítésszolgáltatói tanúsítványprofilt, amelyet korábban konfigurált és hozzárendelt a felhasználóhoz vagy az eszközhöz. Ennek a hitelesítésszolgáltatói tanúsítványnak a legfelső szintű tanúsítványnak kell lennie az adott tanúsítványprofilban konfigurált tanúsítványt kiállító hitelesítésszolgáltatónál.
+   - **Főtanúsítvány**: elemre olyan legfelső szintű Hitelesítésszolgáltatói tanúsítványprofil választásához korábban konfigurált és hozzárendelt a felhasználói és/vagy eszköz. Ennek a hitelesítésszolgáltatói tanúsítványnak a legfelső szintű tanúsítványnak kell lennie az adott tanúsítványprofilban konfigurált tanúsítványt kiállító hitelesítésszolgáltatónál. Győződjön meg arról, ugyanabba a csoportba hozzárendelve az SCEP-tanúsítványprofilt a megbízható főtanúsítvány-profil hozzárendelése.
    - **Kibővített kulcshasználat**: Válassza a **Hozzáadás** gombot, és vegye fel a kívánt értékeket a tanúsítvány felhasználási céljai közé. A legtöbb esetben a tanúsítványnál szükséges az **Ügyfél-hitelesítés**, hogy a felhasználó vagy az eszköz hitelesíthető legyen egy kiszolgálóval. Szükség szerint azonban tetszőleges más kulcshasználatot is felvehet.
    - **Regisztrációs beállítások**
      - **Megújítási küszöb (%)**: Adja meg, hogy az eszköz a tanúsítvány élettartamának hány százalékos hátralévő idejénél igényelje a tanúsítvány megújítását.
