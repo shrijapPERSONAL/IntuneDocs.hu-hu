@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: d974e6db3543ef3ba0b11cf67989260e429dde4c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 785f4d1d81858fe5d4ebe4feab72880b408d8cd3
+ms.sourcegitcommit: 0499d16db961aaed4bd134ee924e40c5861121c7
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179167"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389869"
 ---
 # <a name="what-are-app-protection-policies"></a>Mik azok az alkalmazásvédelmi szabályzatok?
 
@@ -66,9 +66,9 @@ Az MDM-megoldások és alkalmazásvédelmi szabályzatok együttes használata t
 
 
 ### <a name="supported-platforms-for-app-protection-policies"></a>Az alkalmazásvédelmi szabályzatok által támogatott platformok
-Az Intune alkalmazásvédelmi szabályzatok platformtámogatása az Office-mobilalkalmazások platformtámogatásához igazodik. További információt az [Office rendszerkövetelményeit](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg) ismertető témakör **mobilalkalmazásokkal** foglalkozó szakaszában talál.
+Az Intune app protection házirendek eszközplatform-támogatás igazodik a mobilalkalmazás-platform támogatás az Android és IOS rendszerű eszközökön. További információt az [Office rendszerkövetelményeit](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg) ismertető témakör **mobilalkalmazásokkal** foglalkozó szakaszában talál.
 
-A Windows-eszközök jelenleg nem támogatottak. A Windows 10-eszközöket azonban regisztrálhatja az Intune-ba, amelyben lehetőség van a hasonló funkciókat biztosító Windows Információvédelem használatára. További információk: [Vállalati adatok védelme a Windows információvédelemmel (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+A Windows-eszközök jelenleg nem támogatottak. Windows Information Protection, amely hasonló funkciókat biztosító is használhatja. További információk: [Vállalati adatok védelme a Windows információvédelemmel (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>Az alkalmazásvédelmi szabályzatok és az alkalmazásadatok védelme
@@ -146,7 +146,9 @@ A **Globális** szabályzat a bérlőn belül az összes felhasználóra vonatko
 
 A több identitást támogató alkalmazások különböző (munkahelyi és személyes) fiókokkal is elérhetők. Ilyenkor az alkalmazásvédelmi szabályzatok csak az alkalmazások munkahelyi környezetben való használatára vonatkoznak.
 
-Tekintsünk például egy felhasználót, aki a munkahelyi fiókjával nyitja meg a OneDrive alkalmazást. A felhasználó ebben a vállalati környezetben nem tudja áthelyezni a fájlokat a személyes tárolóhelyére. Ha később a személyes fiókjával használja a OneDrive-ot, akkor korlátozás nélkül másolhat és helyezhet át adatokat a személyes OneDrive-jából.
+Például személyes környezet, fontolja meg egy felhasználót, aki elindul egy új dokumentumot a Word, az tekintendő személyes környezet, az Intune alkalmazásvédelmi szabályzatok sem lépnek érvénybe. A dokumentum mentésekor a vállalati OneDrive-fiók akkor consieered corporatte környezet lesz, és az Intune alkalmazásvédelmi szabályzatokat a rendszer alkalmazza.
+
+Például egy munkahelyi környezetben fontolja meg egy felhasználót, aki a OneDrive alkalmazást indítja el a munkahelyi fiókjával. A felhasználó ebben a vállalati környezetben nem tudja áthelyezni a fájlokat a személyes tárolóhelyére. Ha később a személyes fiókjával használja a OneDrive-ot, akkor korlátozás nélkül másolhat és helyezhet át adatokat a személyes OneDrive-jából.
 
 - További információ azon alkalmazásokról, amelyek támogatják az [MAM-et és a többszörös identitást](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) az Intune-nal.
 
