@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 29a3f6c6e320f970ef7b2b086b8d25ab82453199
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2c4fb7000d808d860494d2af572c821b42fa6d5c
+ms.sourcegitcommit: 77a1047f5d93c1924e5c9ea243454532881be031
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179405"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52579183"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>PowerShell-parancsfájlok kezelése az Intune-ban Windows 10-es eszközök esetén
 Az Intune felügyeleti bővítményével Windows 10-es eszközökön futtatandó PowerShell-parancsfájlokat tölthet fel az Intune-ba. A felügyeleti bővítmény kiegészíti a Windows 10 mobileszköz-kezelési funkcióit, és könnyebbé teszi a modern felügyeletre váltást.
@@ -67,6 +67,12 @@ Megfigyelheti a felhasználók és eszközök PowerShell-parancsfájljainak futt
 A **PowerShell-parancsfájlok** panelen válassza ki a megfigyelendő parancsfájlt, válassza a **Figyelés** lehetőséget, majd válassza az alábbi jelentések egyikét:
    - **Eszközállapot**
    - **Felhasználó állapota**
+
+## <a name="troubleshoot-powershell-scripts"></a>PowerShell-parancsfájlok hibáinak elhárítása
+
+Az ügyfélszámítógépen Agent-naplók általában a rendszer `\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Használhat [CMTrace.exe](https://docs.microsoft.com/sccm/core/support/tools) , ezek a naplófájlok megtekintése. 
+
+![Képernyőkép – Az ügynöknaplók](./media/apps-win32-app-10.png)  
 
 ## <a name="delete-a-powershell-script"></a>PowerShell-parancsfájl törlése
 A **PowerShell-parancsfájlok** panelen kattintson a jobb gombbal a parancsfájlra, és válassza a **Törlés** lehetőséget.

@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 650a358281f89c511bbd56f3807f2ef4a6ba582c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 94e7bc3e3b936489ea34170616d1ab0ad49bafd3
+ms.sourcegitcommit: 8ddd3b0d4636a4516b2a05fa83c60ec111903c6c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190353"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52546040"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS-eszközök automatikus regisztrálása az Apple készülékregisztrációs programjával (DEP)
 
@@ -139,7 +139,7 @@ Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt
     ![Képernyőkép a Céges portál VPP-n keresztüli telepítéséről.](./media/device-enrollment-program-enroll-ios/install-cp-with-vpp.png)
 
 7. Ha a **Céges portál telepítése a VPP-vel** lehetőséghez választ jogkivonatot, lehetősége lesz a Beállítási asszisztens befejeződése után azonnal egyalkalmazásos módban (nevezetesen a Céges portál alkalmazással) zárolni az alkalmazást. Ennek a lehetőségnek a beállításához válassza az **Igen** értéket a **Céges portál futtatása egyalkalmazásos módban a hitelesítésig** beállításhoz. Az eszköz használatához a felhasználónak először hitelesítenie kell magát a Céges portál használatával.
-    Ez a funkció az iOS 11.3.1-es vagy újabb verzióin fut a legjobban. A régebbi verziók használatakor hosszabb időt vehet igénybe a telepítés.
+    Ez a funkció csak akkor támogatott iOS 11.3.1-es és újabb verziók.
 
 8. Válassza az **Eszközkezelési beállítások** lehetőséget, és adja meg, hogy felügyelve legyenek-e az adott profilt használó eszközök.
 

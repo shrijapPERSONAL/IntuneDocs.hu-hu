@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8f9e9533793a8792e9ad354392b9d8e911cd07f4
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 209179f6ae5492e26d0d11b0b45711a096c65936
+ms.sourcegitcommit: 77a1047f5d93c1924e5c9ea243454532881be031
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188704"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52579200"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>A Microsoft Intune iOS-eszközkorlátozásokra vonatkozó beállításai
 
@@ -102,7 +102,7 @@ Az iOS Supervised (Felügyelt) módja csak a kezdeti eszközbeállítás során,
     -   **Jelszó minimális hossza** – Meghatározza, hogy legalább hány karakterből álljon a jelszó.
     -   **Sikertelen bejelentkezések száma, mielőtt törlődne az eszközön lévő összes adat** – Meghatározza, hogy hány egyedi rossz jelszó megadása után törlődnek az eszközön lévő adatok.
     -   **Jelszó kérése ennyi perccel a képernyőzárolás után**<sup>1</sup> – Azt határozza meg, hogy az eszköz mennyi időt tölthet üresjáratban, mielőtt a felhasználónak újra meg kellene adnia a jelszavát.
-    -   **Képernyőzárolás legfeljebb ennyi perc inaktivitás után**<sup>1</sup> – Ennyi perc elteltével kapcsol ki a kijelző.
+    -   **Ennyi perc inaktivitás képernyőzárolás**<sup>1</sup> – adja meg a legfeljebb ennyi perc inaktivitás után a képernyőzárolás. Ha az idő hossza meghaladja a beállított az eszközön, ezt az értéket figyelmen kívül hagyja az eszköz által. Ha a beállítása **azonnal**, eszközökön lehetséges minimális értékének eszközönként használja.
     -   **Jelszó érvényessége (nap)** – Meghatározza, hogy hány nap elteltével kell megváltoztatni az eszköz jelszavát.
     -   **Korábbi jelszavak újbóli használatának tiltása** – Azt határozza meg, hogy az eszköz hány korábban használt jelszót jegyezzen meg.
     -   **Ujjlenyomattal történő zárolásfeloldás engedélyezése** – Engedélyezi az erre alkalmas eszközök zárolásának ujjlenyomattal történő feloldását.
@@ -308,7 +308,7 @@ Az alábbi listában néhány gyakori beépített iOS-alkalmazás csomagazonosí
 | com.apple.itunesu           | iTunes U     | Apple     |
 | com.apple.Keynote           | Keynote      | Apple     |
 | com.apple.mobilemail        | Mail         | Apple     |
-| com.apple.MapsMaps          |              | Apple     |
+| com.apple.Maps              | Térképek         | Apple     |
 | com.apple.MobileSMS         | Üzenetek     | Apple     |
 | com.apple.Music             | Zene        | Apple     |
 | com.apple.news              | Hírek         | Apple     |
