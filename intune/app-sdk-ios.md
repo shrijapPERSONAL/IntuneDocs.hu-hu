@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: db9f0ca860186222491906aa35baf1e92d14e548
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 0fc0e5bdb261b3cfbc2e5507e1206354d8cc4051
+ms.sourcegitcommit: a0e965b3a568d1435270012ab89e5857e72cd434
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181342"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52630051"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>A Microsoft Intune App SDK iOS rendszeren – fejlesztői útmutató
 
@@ -199,8 +199,9 @@ Ha az alkalmazás már ADAL-t használ, az alábbi konfigurációs beállításo
 
 3. A szintén az **IntuneMAMSettings** szótár alatt található `ADALRedirectUri` nevű kulcsban adja meg az ADAL-hívásokhoz használandó átirányítási URI-t. Másik lehetőségként megadhatja az `ADALRedirectScheme` kulcsot is, ha az alkalmazás átirányítási URI-ja `scheme://bundle_id` formátumú.
 
-
 Az alkalmazások felülbírálhatják ezeket az Azure AD-beállításokat futtatáskor. Ehhez egyszerűen állítsa be az `aadAuthorityUriOverride`, `aadClientIdOverride` és az `aadRedirectUriOverride` tulajdonságot az `IntuneMAMPolicyManager` példányon.
+
+4. Győződjön meg arról, az engedélyt az iOS-alkalmazások alkalmazásvédelmi szabályzat (alkalmazás) alkalmazásszolgáltatáshoz lépéseket követi. Útmutatásait a [első lépések az Intune SDK útmutatóját](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration) alatt "az alkalmazás hozzáférést biztosít az Intune app protection szolgáltatás (nem kötelező)".  
 
 > [!NOTE]
 > Az Info.plist fájl használatát javasoljuk az összes olyan beállításhoz, amely statikus, és nem igényel futtatáskori meghatározást. Az `IntuneMAMPolicyManager`-tulajdonságokhoz rendelt értékek elsőbbséget élveznek az Info.plist fájlban megadott hasonló értékekkel szemben, és még az alkalmazás újraindítása után is megmaradnak. Az SDK továbbra is használni fogja ezeket szabályzat-ellenőrzéshez egészen a felhasználó regisztrációjának törléséig, vagy addig, amíg nem módosítja vagy törli az értékeket.

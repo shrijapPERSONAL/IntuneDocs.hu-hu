@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 1cb30c1125add982a40fa2319e1f9b8b9edae1e2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: b6b833794b6ed903ca2915bc95d1faa67648104f
+ms.sourcegitcommit: a0e965b3a568d1435270012ab89e5857e72cd434
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190421"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52630085"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -1016,6 +1016,27 @@ A frissített megjelenés megtekintésez lépjen [Az alkalmazásfelhasználói f
 Mostantól a helyszíni Exchange-adatokhoz való Outlook Mobile-hozzáférést az Intune App Policy Protection (APP) és a feltételes hozzáférés segítségével védheti. Alkalmazásvédelmi szabályzat hozzáadásához vagy módosításához az Azure Portalon válassza a **Microsoft Intune** > **Ügyfélalkalmazások** > **Alkalmazásvédelmi szabályzatok** lehetőséget. A funkció használata előtt győződjön meg arról, hogy megfelel az [iOS-es és Androidos Outlook követelményeinek](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx).
 
 ## <a name="notices"></a>Értesítések
+
+### <a name="plan-for-change-exchange-online-to-intune-connector-will-not-be-available-in-intune----3105122---"></a>Tervezett módosítás: Exchange online-hoz az Intune-összekötő nem lesz elérhető az Intune-ban <!-- 3105122 -->
+Örömet talál az Exchange online-hoz és a feltételes hozzáférés leegyszerűsítése azt fogja kell letiltását az Exchange online-hoz az Intune-összekötő "Service to Service". Ez a változás a December szolgáltatásfrissítés kezdődik, és a 2019. február szolgáltatásfrissítés elvégezni.
+
+#### <a name="how-does-this-affect-me"></a>Hogyan érint ez engem?
+Ezt az üzenetet azért küldtük Önnek, mert adataik szerint, hogy lehet használni a "Service to Service" összekötő funkció a környezetben. A "Service to Service" összekötő az Exchange Active Sync csak az eszközök az Intune felügyeleti támogatja az Exchange online-hoz, és nem támogatja a helyszíni infrastruktúrát. Ezt az összekötőt, akkor jelenik meg a konzolon lehet, hogy szükségesek a feltételes hozzáféréssel (CA), megjelenik a valóságban ez nem szükségesek a hitelesítésszolgáltató. A December frissítéssel az Intune szolgáltatásba a konzol ezen egyértelművé teszi fog letiltjuk a gombra kattintva új összekötők beállítása. Ezt követően a 2019. február, az összes meglévő Exchange Online-t az Intune-összekötő le lesz tiltva.
+
+Ha használja ezeket az összekötőket a környezetben, akkor képes figyelésre vagy törölhetik az Exchange Active Sync csak az Intune-ban után összekötők februárban le vannak tiltva. Ez a módosítás során várható fennakadást a végfelhasználók számára van.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Hogyan készüljek fel a változásra?
+
+Ha a Service to Service connector beállításához és az Exchange Active Sync csak olyan eszközöket, váltson a más módszerek az eszközök felügyeletét. A következő lehetőségek állnak rendelkezésére:
+
+- A mobileszköz-felügyeleti (MDM) eszközök regisztrálása
+- Az Intune alkalmazásvédelmi szabályzatok használata az eszközök kezeléséhez
+- Használja az Exchange vezérlőket, itt található dokumentáció foglaltak szerint. 
+
+#### <a name="additional-information"></a>További információ
+[Az Exchange-service connector konfigurálása az Intune és az Exchange online-hoz](https://docs.microsoft.com/intune/exchange-service-connector-configure)
+
+
 
 ### <a name="plan-for-change-performance-updates-to-intune-for-education---1750215--"></a>Tervezett módosítás: teljesítményfrissítések az Intune for Education szolgáltatáshoz <!--1750215-->
 Hozzáadunk néhány frissítést az Intune for Education szolgáltatáshoz a sebesség és a megbízhatóság növeléséhez, amikor beállításokat rendel hozzá a felhasználókhoz vagy az eszközökhöz. A változás részeként november vége felé új csoportokba fogjuk áthelyezni a szabályzatait és beállítás-hozzárendeléseit.

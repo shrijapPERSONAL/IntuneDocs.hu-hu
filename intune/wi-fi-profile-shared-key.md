@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: karanda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 59736ad188cf88c994ff93b4a505731afad8f550
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: a7250471e698d32a305755147943311d2150f0b2
+ms.sourcegitcommit: a27a9c4cae47be50807aa3c890f0d5c0c023f04a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186324"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52618186"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Előmegosztott kulccsal ellátott WiFi-profil létrehozása egyéni eszközprofil segítségével – Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -34,9 +34,8 @@ Az előmegosztott kulcsok (PSK-k) segítségével hitelesítheti a felhasználó
 ## <a name="before-you-begin"></a>Előkészületek
 
 - Egyszerűbb lehet, ha a kódot egy, az adott hálózathoz már csatlakozó számítógépről másolja. Ennek leírását a cikk későbbi részében megtalálhatja.
-- Android-eszközökhöz használhatja az [Android PSK Generator](http://intunepskgenerator.johnathonb.com/) programot is.
 - További OMA-URI-beállítások megadásával több hálózatot és kulcsot is hozzáadhat.
-- iOS-rendszereken a profil létrehozásához használja az Apple Configurator programot egy Mac munkaállomáson. Másik lehetőségként használhatja az [iOS PSK Mobile Config Generator](http://intunepskgenerator.johnathonb.com/) programot.
+- iOS-rendszereken a profil létrehozásához használja az Apple Configurator programot egy Mac munkaállomáson.
 - Az előmegosztott kulcsokhoz egy 64 hexadecimális számból álló sztringet vagy egy 8–63 nyomtatható ASCII-karakterből álló jelszót kell megadnia. Bizonyos karakterek, például a csillag ( * ), nem támogatottak.
 
 ## <a name="create-a-custom-profile"></a>Egyéni profil létrehozása
