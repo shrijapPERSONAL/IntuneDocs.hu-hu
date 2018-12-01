@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/30/2018
+ms.date: 11//28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2e0331210a10727ff5753e6c227777cd1ebb16d9
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2a5b16e828b1a2e680f41f50aa603b1bfe2ad9fa
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185959"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728820"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Alkalmazásvédelmi szabályzatok létrehozása és hozzárendelése
 
@@ -74,10 +74,14 @@ A létrehozott új szabályzatok egy felhasználóhoz sem lesznek hozzárendelve
 
    ![Képernyőkép a Hozzárendelések panelről a Belefoglalandó csoportok kijelölése menüpont kiemelésével](./media/app-protection-policy-add-users.png)
 
-3.  Megjelenik egy lista, amelyen az **Azure Active Directory** összes biztonsági csoportja szerepel. Válassza ki azokat a felhasználói csoportokat, amelyekhez hozzá szeretné rendelni a szabályzatot, és válassza a **Kiválasztás** elemet. A **Kiválasztás** elem választásával telepítheti a szabályzatot a felhasználók számára.
+3.  Megjelenik egy lista, amelyen az **Azure Active Directory** összes biztonsági csoportja szerepel. Válassza ki azokat a felhasználói csoportokat, amelyekhez hozzá szeretné rendelni a szabályzatot, és válassza a **Kiválasztás** elemet. 
 
     ![Képernyőkép: Az Azure Active Directory-felhasználók listája a Felhasználói csoportok hozzáadása panelen](./media/azure-ad-user-group-list.png)
 
+4.  Miután Ön csoportok belefoglalása vagy kizárása, válassza ki **mentése** a konfiguráció mentéséhez, és telepítse a szabályzatot a felhasználók. Ha **elveti** előtt mentse a konfigurációt, el fogja vetni végrehajtott összes módosítást a *Belefoglalás* és *kizárása* lapokat.   
+ 
+     ![Képernyőfelvétel: a Mentés és a beállítások elvetéséhez](./media/save-assignment.png)
+  
 A szabályzat ezzel létrejött, és telepítve lett a felhasználók számára.
 
 A szabályzat csak a Microsoft Intune-licenccel rendelkező felhasználókra érvényes. A kijelölt biztonsági csoporthoz tartozó, Intune-licenccel nem rendelkező felhasználókra a szabályzat nem vonatkozik.
@@ -109,9 +113,13 @@ A változtatások hatásának érzékeléséhez a felhasználónak ki kell jelen
 
 2.  Az *Intune App Protection* panelen a **Hozzárendelések** választásával nyissa meg az **Intune App Protection - Hozzárendelések** panelt, amelyen megjelenik azoknak a felhasználói csoportoknak a listája, amelyekre a szabályzat jelenleg érvényes.
 
-3.  Új felhasználói csoportot úgy adhat hozzá a szabályzathoz, hogy a **Belefoglalás** lapon a **befoglalandó csoportok kijelölése** lehetőséget választja, majd kiválasztja a felhasználói csoportot. Válassza a **Kiválasztás** elemet, ha telepíteni szeretné a szabályzatot a kiválasztott csoport számára.
+3.  Új felhasználói csoportot úgy adhat hozzá a szabályzathoz, hogy a *Belefoglalás* lapon a **befoglalandó csoportok kijelölése** lehetőséget választja, majd kiválasztja a felhasználói csoportot. Válasszon **kiválasztása** hozzáadása a csoporthoz. 
 
-4.  Felhasználói csoportot úgy törölhet, hogy a **Kizárás** lapon a **Kizárandó csoportok kijelölése** lehetőséget választja, majd kiválasztja a felhasználói csoportot. A felhasználói csoport eltávolításához válassza a **Kiválasztás** lehetőséget.
+4.  Egy felhasználói csoport kizárása a a *kizárása* lapon válassza a **válassza ki a kizárandó csoportokat**, és válasszon felhasználói csoportot. A felhasználói csoport eltávolításához válassza a **Kiválasztás** lehetőséget.  
+
+5.  Törli a csoportokat, vagy a korábban felvett a *Belefoglalás* vagy *kizárása* lap, kattintson a három pontra (...), és válassza ki **törlése**. 
+
+5.  Után készen áll a módosítások a hozzárendelések, jelölje be az **mentése** a konfiguráció mentéséhez, és telepítse a szabályzatot a felhasználók új készletét. Ha **elveti** előtt mentse a konfigurációt, el fogja vetni végrehajtott összes módosítást a *Belefoglalás* és *kizárása* lapokat.
 
 ### <a name="to-change-policy-settings"></a>A szabályzatbeállítások módosítása
 

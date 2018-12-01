@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ada9fee575824d27a6bfdd8f14d4845d228467db
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: b953ea281ad785d8a0ce7bee4b0f6d420b785dd9
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186078"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52729041"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Beléptetési állapotlap beállítása
  
@@ -61,6 +61,16 @@ Egy eszköz vagy felhasználó több csoportnak is tagja lehet, így több regis
 2. Vigye a kurzort a listában a profilra.
 3. A függőleges három ponttal húzza a profilt a kívánt helyre a listában.
 
+## <a name="block-access-to-a-device-until-a-specific-application-is-installed"></a>Hozzáférés letiltása egy eszközhöz csak egy adott alkalmazás telepítve van
+
+Megadhatja, hogy mely alkalmazásokat kell telepíteni, mielőtt a felhasználó számára elérhető az asztalon.
+
+1. Válassza ki az Intune-ban **eszközregisztráció** > **Windows regisztrációs** > **regisztrálási állapot oldal (előzetes verzió)**.
+2. Válasszon egy profilt > **beállítások**.
+3. Válasszon **Igen** a **alkalmazás és a profil telepítés állapotának megjelenítése**.
+4. Válasszon **Igen** a **letiltja az eszköz használatát, alkalmazások és a profilok telepítéséig**.
+5. Válasszon **kijelölt** a **letiltja az eszköz használatát, amíg ezekre szükség az alkalmazások vannak telepítve, ha vannak rendelve a felhasználó/eszköz**.
+ 6. Válasszon **alkalmazások kiválasztása** > Válassza ki az alkalmazások > **kiválasztása** > **mentése**.
 
 ## <a name="enrollment-status-page-tracking-information"></a>A beléptetési állapotlapon megjelenített állapotadatok
 

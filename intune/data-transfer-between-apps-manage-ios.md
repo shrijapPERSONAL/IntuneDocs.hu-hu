@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/21/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d5a2bc0939da5ee4cb35585a930f145b832a58ad
-ms.sourcegitcommit: 0dbce0415e53fe963dc7f927ac4b0c06411f199c
+ms.openlocfilehash: e252822569723be6cfe18e488f79a7605f21193c
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281105"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728667"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>iOS-alkalmazások közti adatátvitel felügyelete a Microsoft Intune-ban
 
@@ -38,7 +38,7 @@ Az alkalmazásvédelmi szabályzatok használata az IOS-es **megnyitási engedé
 
 -   **Alkalmazottak tulajdonában lévő, mobileszköz-kezelési megoldás által nem kezelt eszközök:** az alkalmazásvédelmi szabályzat beállításait beállíthatja a következőre: **Az alkalmazás csak szabályzat által felügyelt alkalmazásoknak adhat át adatokat**. A *Megnyitás a következőben* viselkedését egy házirend által kezelt alkalmazás megosztási lehetőségek, csak más szabályzattal felügyelt alkalmazások mutat be. Ha egy felhasználó próbál küldeni egy szabályzat által védett fájlt mellékletként a onedrive-ról a natív levelezőalkalmazást, a fájl nem olvasható.
 
--   **Az Intune által felügyelt eszközök:** az Intune-ban regisztrált eszközök esetén az alkalmazásvédelmi szabályzatokkal rendelkező és az Intune használatával telepített egyéb felügyelt iOS-alkalmazások közötti adatátvitel automatikusan engedélyezett. Adja meg, hogyan más alkalmazásokból való adatátvitel, engedélyezze az **///az alkalmazás átadhat adatokat más alkalmazásoknak** majd válassza az Ön által választott értékét a megosztási. Adja meg, hogyan, az alkalmazás fogadhat adatokat más alkalmazásokból, engedélyezze az **alkalmazás fogadhat adatokat más alkalmazásokból** majd kapja az adatokat az Ön által választott értékét. Az Intune-nal telepített alkalmazások között a **Megnyitási engedélyek felügyelete** funkcióval vezérelhető az adatátvitel. Az alkalmazásadatok fogadására és megosztására vonatkozó további információért lásd az [Adatáthelyezési beállítások](app-protection-policy-settings-ios.md#data-relocation-settings) szakaszt.   
+-   **Az Intune által felügyelt eszközök:** az Intune-ban regisztrált eszközök esetén az alkalmazásvédelmi szabályzatokkal rendelkező és az Intune használatával telepített egyéb felügyelt iOS-alkalmazások közötti adatátvitel automatikusan engedélyezett. Adja meg, hogyan más alkalmazásokból való adatátvitel, engedélyezze az **///az alkalmazás átadhat adatokat más alkalmazásoknak** majd válassza az Ön által választott értékét a megosztási. Adja meg, hogyan, az alkalmazás fogadhat adatokat más alkalmazásokból, engedélyezze az **alkalmazás fogadhat adatokat más alkalmazásokból** majd kapja az adatokat az Ön által választott értékét. Az Intune-nal telepített alkalmazások között a **Megnyitási engedélyek felügyelete** funkcióval vezérelhető az adatátvitel. Az alkalmazásadatok fogadására és megosztására vonatkozó további információért lásd az [Adatáthelyezési beállítások](app-protection-policy-settings-ios.md#data-protection-settings) szakaszt.   
 
 -   **A külső MDM-megoldás által kezelt eszközök:** korlátozhatja az adatátvitelt csak felügyelt alkalmazások által az iOS-es **megnyitási engedélyek felügyelete** funkció.
 Győződjön meg arról, hogy egy harmadik fél mobileszköz-kezelési megoldás segítségével központilag alkalmazásokat az Intune alkalmazásvédelmi szabályzatokat is tartoznak, konfigurálja a felhasználói UPN-beállítás a következő szakaszban leírtak szerint [konfigurálása felhasználói UPN-beállítás](#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm). Alkalmazások telepítésekor a felhasználói UPN-beállítással az alkalmazásvédelmi szabályzatok vonatkoznak az alkalmazást, amikor a felhasználó bejelentkezik a munkahelyi fiókjával.
@@ -50,7 +50,7 @@ Az egyszerű felhasználónév beállítását **kötelező** megadni olyan eszk
 
 2.  Az alkalmazások és az Intune vagy a külső MDM-megoldás az alábbi, általánosságban ismertetett lépések segítségével felügyelni kívánt e-mail-profil központi telepítése. Ez a tapasztalat is foglalkozik *1. példa*.
 
-3.  Telepítse az alkalmazást a következő alkalmazáskonfigurációs beállításokkal:
+3.  Az alkalmazást a következő alkalmazáskonfigurációs beállításokkal telepítse:
 
       **kulcs** = IntuneMAMUPN, **érték** = <username@company.com>
 

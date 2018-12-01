@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 11/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 56427f5b6d72d952ce9c388b4d5289d3075b7df0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 35091139e3afaabac4fad0b22fc6096cf7ada7c3
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182269"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728871"
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>iOS-es eszközök megfelelőségi szabályzatainak felvétele az Intune-ban
 
@@ -54,7 +54,8 @@ Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítás
 ## <a name="create-a-device-compliance-policy"></a>Eszközmegfelelőségi szabályzat létrehozása
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. A **Platform** beállításnál adja meg az **iOS** értéket. Válassza a **Beállítások konfigurálása** lehetőséget az **E-mail**, **Eszközállapot**, **Eszköztulajdonságok** és **Rendszerbiztonság** beállításainak megadásához. Ha elkészült, válassza az **OK** majd a **Létrehozás** lehetőséget.
+4. A **Platform** beállításnál adja meg az **iOS** értéket. 
+5. Válassza **beállítások konfigurálása**, és adja meg a **E-mail**, **Eszközállapot**, **eszköztulajdonságok**, és **rendszer Biztonsági** ebben a témakörben leírt beállításokat. Ha elkészült, válassza az **OK** majd a **Létrehozás** lehetőséget.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -88,6 +89,8 @@ Az e-mail-profilról a [Vállalati levelezéshez való hozzáférés konfigurál
 
 - **Az operációs rendszer szükséges minimális verziója**: Ha egy eszköz nem teljesíti az operációs rendszer szükséges minimális verziójára vonatkozó követelményt, nem megfelelőként fog szerepelni. Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A felhasználó választhatja az eszköz frissítését. Azt követően hozzáférhet a vállalati erőforrásokhoz.
 - **Maximálisan engedélyezett operációsrendszer-verzió**: Ha egy eszközön a szabályban megadott operációsrendszer-verziónál újabb fut, a vállalati erőforrásokhoz való hozzáférés le lesz tiltva. A felhasználónak ezután kapcsolatba kell lépnie az informatikai rendszergazdával. Az eszköz csak akkor használható a vállalati erőforrások eléréséhez, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
+- **Minimális operációsrendszer-verziót hozzon létre**: Ha az Apple közzéteszi a biztonsági frissítéseket, a buildszám általában frissül, nem az operációs rendszer verzióját. Ez a funkció használatával adja meg a minimális megengedett buildszám az eszközön. A megfelelőségi ellenőrzés iOS 8.0 és újabb rendszert futtató eszközöket támogatja. 
+- **Maximális operációsrendszer-verziót hozzon létre**: Ha az Apple közzéteszi a biztonsági frissítéseket, a buildszám általában frissül, nem az operációs rendszer verzióját. Ez a funkció használatával adja meg a maximális megengedett buildszám az eszközön. A megfelelőségi ellenőrzés iOS 8.0 és újabb rendszert futtató eszközöket támogatja.
 
 ## <a name="system-security"></a>Rendszerbiztonság
 

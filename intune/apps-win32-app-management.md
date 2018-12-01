@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/15/2018
+ms.date: 11/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0dc1974a57e5a5aa6808936c37e02fd31a7cac7b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: ef26e42b2e500d841aa32fa6239e6970e0cfb577
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187293"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728990"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Különálló Intune – Win32-alkalmazáskezelés (nyilvános előzetes verzió)
 
@@ -186,7 +186,7 @@ Az üzletági (LOB) alkalmazásokhoz hasonlóan Win32-alkalmazást is hozzáadha
     - **Egyéni észlelési szkript alkalmazása** – Adja meg az alkalmazás észleléséhez használandó PowerShell-szkriptet. 
     
         1.  **Szkriptfájl** – Válasszon egy PowerShell-szkriptet, amely észleli majd az alkalmazás jelenlétét az ügyfélen. Az alkalmazást a rendszer akkor észleli, ha a szkript egy 0 értékű kilépési kódot ad vissza, és sztringértéket ír az STDOUT elembe.
-        2.  **A szkript futtatása 32 bites folyamatként 64 bites ügyfeleken** – Ha az **Igen** lehetőséget választja, a szkriptet a rendszer a bejelentkezett végfelhasználó hitelesítő adataival futtatja. A **Nem** (ez az alapértelmezett beállítás) kiválasztásakor a szkript a rendszerkörnyezetben fut.
+        2.  **32 bites folyamatként futtassa parancsprogramot 64 bites ügyfeleken** – ki **Igen** futtatásához a parancsfájl a bejelentkezett felhasználó hitelesítő adataival. A **Nem** (ez az alapértelmezett beállítás) kiválasztásakor a szkript a rendszerkörnyezetben fut.
         3.  **Szkriptaláírás ellenőrzésének kényszerítése** – Az **Igen** lehetőség kiválasztásával ellenőrizheti, hogy a szkriptet egy megbízható gyártó írta-e alá, így a szkript figyelmeztetések és felszólítások megjelenítése nélkül fog futni. A szkript letiltás nélkül fog futni. A **Nem** (ez az alapértelmezett beállítás) kiválasztásakor a szkript végfelhasználói megerősítéssel, az aláírás ellenőrzése nélkül fut.
     
         Az Intune Sidecar ellenőrzi a szkript eredményeit. Beolvassa a szkript által a standard kimeneti (STDOUT) streambe írt értékeket, a standard hibastreamet (STDERR) és a kilépési kódot. Ha a szkript egyik értéke nem nulla, akkor a szkript futtatása meghiúsul, és az alkalmazásészlelési állapot nem települ. Ha a kilépési kód nulla, és az STDOUT elemben vannak adatok, akkor az alkalmazásészlelési állapot Telepítve lesz. 
@@ -200,7 +200,7 @@ Az üzletági (LOB) alkalmazásokhoz hasonlóan Win32-alkalmazást is hozzáadha
 
 1.  Az **Alkalmazás felvétele** panelen válassza a **Visszatérési kódok** lehetőséget az alkalmazástelepítés újrapróbálkozási viselkedését vagy a telepítés utáni viselkedést meghatározó visszatérési kódok hozzáadásához. A visszatérési kód bejegyzéseit a rendszer alapértelmezés szerint hozzáadja az alkalmazás létrehozása során. További visszatérési kódokat is megadhat, és a meglévőket is módosíthatja. 
 2.  A **Visszatérési kódok** panelen adjon hozzá további visszatérési kódokat, vagy módosítsa a meglévőket.
-    - **Sikertelen** – Ez a visszaadott érték azt jelzi, hogy hiba történt az alkalmazás telepítése közben.
+    - **Nem sikerült** – a visszaadott érték, amely azt jelzi, hogy az alkalmazás telepítése nem sikerült.
     - **Hardveres újraindítás** – A hardveres újraindítás visszatérési kódja nem engedi meg, hogy a további Win32-alkalmazások újraindítás nélkül legyenek telepíthetők az ügyfélen. 
     - **Szoftveres újraindítás** – A szoftveres újraindítás visszatérési kódja lehetővé teszi, hogy a következő Win32-alkalmazás az ügyfél újraindítása nélkül telepíthető legyen. Az aktuális alkalmazás telepítésének befejezéséhez újraindításra van szükség.
     - **Újrapróbálkozás** – Az újrapróbálkozás visszatérési kód háromszor kísérli meg az alkalmazás telepítését. Az egyes kísérletek közötti 5 percet vár. 
@@ -228,15 +228,19 @@ Az üzletági (LOB) alkalmazásokhoz hasonlóan Win32-alkalmazást is hozzáadha
 
 Ezzel teljesítette a Win32-alkalmazás Intune-hoz történő hozzáadásának lépéseit. Az alkalmazás-hozzárendeléssel és monitorozással kapcsolatos további információ: [Alkalmazások hozzárendelése csoportokhoz a Microsoft Intune-nal](https://docs.microsoft.com/intune/apps-deploy) és [Alkalmazásadatok és -hozzárendelések figyelése a Microsoft Intune-ban](https://docs.microsoft.com/intune/apps-monitor).
 
+## <a name="delivery-optimization"></a>Kézbesítésoptimalizálás
+
+A Windows 10 RS3 és fent az ügyfelek letöltik Intune Win32 alkalmazás tartalma egy kézbesítési optimalizálás összetevő a Windows 10-es ügyfél használatával. Kézbesítésoptimalizálás társ-társ funkciókat biztosít, amelyek alapértelmezés szerint van kapcsolva. Kézbesítésoptimalizálás konfigurálható a csoportházirend és a jövőben az Intune MDM-n keresztül További információkért lásd: [kézbesítés optimalizálása Windows 10-es](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
+
 ## <a name="install-required-and-available-apps-on-devices"></a>Kötelező és elérhető alkalmazások telepítése az eszközökön
 
-A végfelhasználó megkapja a Windows bejelentési értesítéseit a kötelező és az elérhető alkalmazástelepítésekkel kapcsolatban. Az alábbi képen a bejelentési értesítések egy példája látható, amely szerint az alkalmazás telepítésének befejezéséhez újra kell indítani az eszközt. 
+A felhasználó kötelező és elérhető alkalmazástelepítésekhez Windows bejelentési értesítések jelennek meg. Az alábbi képen a bejelentési értesítések egy példája látható, amely szerint az alkalmazás telepítésének befejezéséhez újra kell indítani az eszközt. 
 
 ![Képernyőkép – Példa: Windows bejelentési értesítések alkalmazás telepítéséhez](./media/apps-win32-app-08.png)    
 
-A következő kép arról értesíti a végfelhasználót, hogy alkalmazásmódosításokra kerül sor az eszközön.
+Az alábbi képen tájékoztatja a végfelhasználót, hogy az eszköz alkalmazás változások történnek.
 
-![Képernyőkép – Példa: a végfelhasználó értesítése arról, hogy alkalmazásmódosításokra kerül sor az eszközön](./media/apps-win32-app-09.png)    
+![Képernyőkép – példa, amely az alkalmazások változásairól történnek az eszközön a végfelhasználó értesítése](./media/apps-win32-app-09.png)    
 
 ## <a name="troubleshoot-win32-app-issues"></a>A Win32-alkalmazások hibáinak elhárítása
 Az ügynöknaplók általában a következő helyen érhetők el az ügyfélgépen: `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. A `CMTrace.exe` segítségével megtekintheti ezeket a naplófájlokat. A *CMTrace.exe* az [SCCM-ügyféleszközök](https://docs.microsoft.com/sccm/core/support/tools) közül tölthető le. 

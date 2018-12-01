@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 11/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: muhosabe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 14588563dd261063071c09c1bbd3b428fb375830
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 469c0b7c3e67135c53de7c58583d820e1750ad7f
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184182"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728803"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>macOS-es eszközök megfelelőségi szabályzatainak hozzáadása az Intune-nal
 
@@ -49,7 +49,8 @@ Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítás
 ## <a name="create-a-device-compliance-policy"></a>Eszközmegfelelőségi szabályzat létrehozása
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. A **Platform** beállításnál adja meg a **macOS** értéket. Válassza a **Beállítások konfigurálása** lehetőséget az **Eszközállapot**, **Eszköztulajdonságok** és **Rendszerbiztonság** beállításainak megadásához. Ha elkészült, válassza az **OK** majd a **Létrehozás** lehetőséget.
+4. A **Platform** beállításnál adja meg a **macOS** értéket. 
+5. Válassza a **beállítások konfigurálása**, és adja meg a **Eszközállapot**, **eszköztulajdonságok**, és **rendszerbiztonság** ismertetett beállítások Ez a cikk. Ha elkészült, válassza az **OK** majd a **Létrehozás** lehetőséget.
 
 ## <a name="device-health"></a>Eszközállapot
 
@@ -59,6 +60,8 @@ Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítás
 
 - **Minimális operációsrendszer-verzió**: Ha egy eszköz nem teljesíti az operációs rendszer szükséges minimális verziójára vonatkozó követelményt, nem megfelelőként fog szerepelni. Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A végfelhasználó frissítheti az eszközt, ez után pedig hozzáférést kap a vállalati erőforrásokhoz.
 - **Maximális operációsrendszer-verzió**: Ha egy eszközön a szabályban megadott operációsrendszer-verziónál újabb fut, a vállalati erőforrásokhoz való hozzáférés le lesz tiltva. A felhasználónak ekkor az informatikai rendszergazdához kell fordulnia. Az eszköz csak akkor használható a vállalati erőforrások elérésére, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
+- **Minimális operációsrendszer-verziót hozzon létre**: Ha az Apple közzéteszi a biztonsági frissítéseket, a buildszám általában frissül, nem az operációs rendszer verzióját. Ez a funkció használatával adja meg a minimális megengedett buildszám az eszközön.
+- **Maximális operációsrendszer-verziót hozzon létre**: Ha az Apple közzéteszi a biztonsági frissítéseket, a buildszám általában frissül, nem az operációs rendszer verzióját. Ez a funkció használatával adja meg a maximális megengedett buildszám az eszközön.
 
 ## <a name="system-security-settings"></a>A rendszer biztonsági beállításai
 

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 11/30/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: b6b833794b6ed903ca2915bc95d1faa67648104f
-ms.sourcegitcommit: a0e965b3a568d1435270012ab89e5857e72cd434
+ms.openlocfilehash: 656c08fbc59b5656d4fc69c5e8e45d9d4903eab8
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52630085"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52729075"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,6 +42,75 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Emellett tá
 ### Role-based access control
 
 -->     
+
+## <a name="week-of-november-26-2018"></a>2018. November 26 hete
+
+### <a name="app-management"></a>Alkalmazáskezelés
+
+#### <a name="downloading-intune-win32-app-content----2617320---"></a>Az Intune Win32 alkalmazás tartalmának letöltése <!-- 2617320 -->
+A Windows 10 RS3 és fent az ügyfelek letöltik Intune Win32 alkalmazás tartalmának kézbesítésoptimalizálás összetevőt a Windows 10-es ügyfél használ. Kézbesítésoptimalizálás társ-társ funkciókat biztosít, amelyek alapértelmezés szerint van kapcsolva. Kézbesítésoptimalizálás konfigurálható a csoportházirend és a jövőben az Intune MDM-n keresztül További információkért lásd: [kézbesítés optimalizálása Windows 10-es](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
+
+#### <a name="end-user-device-and-app-content-menu----2771453---"></a>Eszközök és alkalmazások végfelhasználói helyi menüje <!-- 2771453 -->
+A végfelhasználók most már használhatja helyi menü eszközön, és az alkalmazások indításához a gyakori műveletekhez, például egy eszköz átnevezése vagy a megfelelőség ellenőrzése.
+
+#### <a name="set-custom-background-in-managed-home-screen-app-----3041945---"></a>Egyéni háttér beállítása a Managed Home Screen alkalmazásban  <!-- 3041945 -->
+Egy beállítás, amely lehetővé teszi, hogy Ön szabja testre a kezdőlap képernyő felügyelt alkalmazást az Android Enterprise, a több alkalmazás, a teljes képernyős mód eszközökön háttér adunk hozzá.  **Egyéni URL-háttér** konfigurálásához nyissa meg az Azure portalon az Intune > Eszközkonfiguráció elemet. Jelöljön ki egy jelenlegi eszközkonfigurációs profilt, vagy hozzon létre újat kioszkbeállításainak szerkesztéséhez.
+A teljes képernyős beállítások megtekintéséhez lásd: [eszközkorlátozások Android Enterprise](device-restrictions-android-for-work.md).
+
+#### <a name="app-protection-policy-assignment-save-and-apply----3104570---"></a>Alkalmazásvédelmi szabályzat-hozzárendelés mentése és alkalmazása <!-- 3104570 -->
+Keresztül most már hatékonyabban szabályozhatja a [alkalmazásvédelmi szabályzat-hozzárendelések](app-protection-policies.md#deploy-a-policy-to-users). Amikor kiválaszt *hozzárendelések* állítsa be, vagy szerkessze a szabályzat hozzárendeléseinek, meg kell **mentése** a konfigurációt a módosítás alkalmazása előtt. Használat **elveti** törölje az összes módosítást, anélkül, hogy bármely módosításainak mentése a belefoglalási vagy kizárási sorolja fel.  Mentés igénylő vagy elvetésének csak a kívánt felhasználók alkalmazásvédelmi szabályzat vannak rendelve.
+
+#### <a name="new-microsoft-edge-browser-settings-for-windows-10-and-later----3174639---"></a>A Microsoft Edge böngészőhöz tartozó új beállítások Windows 10 és újabb rendszerek esetében <!-- 3174639 -->
+A frissítés segítségével szabályozhatja, és kezelheti az eszközökön a Microsoft Edge böngésző új beállításokat tartalmazza. Ezek a beállítások listáját lásd: [eszközkorlátozási Windows 10-es (és újabb)](device-restrictions-windows-10.md#microsoft-edge-browser).
+
+#### <a name="new-apps-support-with-app-protection-policies----3330037---"></a>Új alkalmazások támogatják az alkalmazásvédelmi szabályzatokkal <!-- 3330037 -->
+A következő alkalmazások kezelheti [az Intune alkalmazásvédelmi szabályzatai](app-protection-policies.md):
+- Stream (iOS)
+- Teendők (Android, iOS)
+- A PowerApps (Android, iOS)
+- A folyamat (Android, iOS)
+
+Használja alkalmazásvédelmi szabályzatok vállalati adat- és adatátviteli ezeket az alkalmazásokat, például a többi Intune-szabályzat által felügyelt alkalmazások védelmére. Megjegyzés: Ha a Flow még nem láthatók a konzolon, hozzáadhat folyamatot, ha hoz létre vagy szerkeszt, és az alkalmazásvédelmi szabályzatok. Ehhez használja a **+ további alkalmazások** lehetőséget, majd adja meg a *Alkalmazásazonosító* a Flow a beviteli mezőben. Android használatra *com.microsoft.flow*, és az iOS használja *com.microsoft.procsimo*.
+
+
+### <a name="device-configuration"></a>Eszközök konfigurálása
+
+#### <a name="ios-and-macos-version-numbers-and-build-numbers-are-shown----1892471---"></a>Megjelenítjük az iOS- és macOS-verziószámokat és -buildszámokat <!-- 1892471 -->
+Az **Eszközmegfelelőség** > **Eszközmegfelelőség** megjeleníti az iOS és macOS operációs rendszerek verzióit, amelyek elérhetők a megfelelőségi szabályzatokkal. A frissítés magában foglalja a buildszám, a mindkét platform konfigurálható.
+A biztonsági frissítések megjelenésekor az Apple általában megtartja a verziószámot, de a buildszám változik. A megfelelőségi szabályzat buildszámának segítségével könnyen ellenőrizheti, hogy telepítve van-e a biztonsági frissítés.
+Ez a funkció használatához lásd: [iOS](compliance-policy-create-ios.md#device-health) és [macOS](compliance-policy-create-mac-os.md#device-properties) megfelelőségi szabályzatokat.
+
+#### <a name="update-rings-are-being-replaced-with-delivery-optimization-settings-for-windows-10-and-later----2753807---"></a>Frissítési körök váltotta fel kézbesítésoptimalizálás beállítások Windows 10-es és újabb <!-- 2753807 -->
+Kézbesítésoptimalizálás egy új profilt a Windows 10-es és újabb verziók. Ez a funkció a szoftverfrissítések továbbítására a szervezetnél található eszközökön hatékonyabbá élményt nyújt. Ez a frissítés is segítséget nyújthat a beállításokat a konfigurációs profil használatával az új és meglévő frissítési körök.
+Kézbesítési optimalizálás konfigurációs profil beállítása: [Windows 10 (és újabb) kézbesítésoptimalizálási beállításait](delivery-optimization-windows.md).
+
+
+### <a name="device-enrollment"></a>Eszközök beléptetése
+
+#### <a name="select-apps-tracked-on-the-enrollment-status-page---2531007---"></a>A Regisztrációs állapotlapon nyomon követett alkalmazások kiválasztása<!-- 2531007 -->
+Kiválaszthatja, melyik alkalmazások nyomon a regisztrálási állapot oldal. Ezek az alkalmazások telepítve vannak, amíg a felhasználó az eszköz nem használható. További információkért lásd: [beállítása egy regisztrálási állapot oldal](windows-enrollment-status.md).
+
+#### <a name="search-for-autopilot-device-by-serial-number---2595788---"></a>Keresse meg az Autopilot-eszközök sorozatszám alapján <!--2595788 -->
+Most már kereshet az Autopilot-eszközök sorozatszám alapján. Ehhez válassza ki a **eszközregisztráció** > **Windows regisztrációs** > **eszközök** > írja be a sorozatszám a **keresés alapján sorozatszám** box > nyomja le az Enter billentyűt.
+
+#### <a name="track-installation-of-office-proplus---2620217---"></a>Az Office ProPlus telepítésének nyomon követése <!--2620217 -->
+Felhasználók nyomon követheti a telepítés előrehaladását [Office ProPlus](apps-add-office365.md) használatával a [regisztrálási állapot oldal](windows-enrollment-status.md). További információkért lásd: [beállítása egy regisztrálási állapot oldal](windows-enrollment-status.md).
+
+#### <a name="alerts-for-expiring-vpp-token-or-company-portal-license-running-low----2237572---"></a>VPP-jogkivonatok lejáratára vagy a Céges portál licenceinek alacsony számára vonatkozó riasztások <!-- 2237572 -->
+Ha előre ellátja a DEP-regisztráció során a céges portál Volume Purchase Program (VPP) használ, Intune riasztást küld, amikor a VPP-token érvényessége hamarosan lejár, és a licencek a céges portál kevés. További információkért lásd: [automatikusan regisztrálni a macOS-eszközök az Apple School Manager vagy a Készülékregisztrációs Program](device-enrollment-program-enroll-macos.md).
+
+### <a name="new-intune-device-subscription-sku---3312071--"></a>Új Intune eszköz-előfizetés Termékváltozat <!--3312071-->
+A vállalatok számára az eszközkezelés költségeinek csökkentéséhez már elérhető egy új, eszközalapú előfizetési termékváltozat. Ennek az Intune-beli eszköz-termékváltozatnak a licencelése eszközönként történik, havi elszámolással. Az ár a licencprogramtól függően változik. A következő programokban érhető el: közvetlen csatorna, Nagyvállalati Szerződés (EA), Microsoft-termékek és -szolgáltatások program (MPSA), valamint nyitott és felhőbeli megoldásszolgáltató (CSP).
+
+### <a name="device-management"></a>Eszközkezelés
+
+#### <a name="temporarily-pause-kiosk-mode-on-android-devices-to-make-changes----3041935---"></a>Kioszkmód ideiglenesen szüneteltetése Android-eszközökön a módosítások végrehajtásához <!-- 3041935 -->
+Ha többalkalmazásos kioszkmódban használ Android-eszközöket, előfordulhat, hogy a rendszergazdáknak módosításokat kell végrehajtaniuk az eszközön. Ez a frissítés új lehetővé teszi, hogy a rendszergazda ideiglenesen felfüggesztése teljes képernyős mód használata a PIN-kódot, és hozzáférhet a teljes eszköz a többalkalmazásos kioszk beállításokat tartalmaz.
+A teljes képernyős beállítások megtekintéséhez lásd: [eszközkorlátozások Android Enterprise](device-restrictions-android-for-work.md).
+
+#### <a name="enable-virtual-home-button-on-android-enterprise-kiosk-devices-----3042021---"></a>Virtuális kezdőképernyő gomb bekapcsolása az Android Enterprise rendszerű kioszkeszközökön  <!-- 3042021 -->
+Az új beállítás segítségével a felhasználók az eszközön lévő többfunkciós gombra való koppintással válthatnak a többalkalmazásos kioszkeszközökön található Managed Home Screen alkalmazás és az egyéb hozzárendelt alkalmazások között. Ez a beállítás igen hasznosnak bizonyul olyan esetekben, amikor a felhasználó kioszkalkalmazása nem reagál megfelelően a „vissza” gomb megnyomására. Ezt a beállítást Ön konfigurálni tudja majd az egyetlen célra használható céges Android-eszközökön. A **Virtuális kezdőképernyő gomb** be- és kikapcsolásához válassza az Azure portalon az Intune > Eszközök konfigurálása elemet. Jelöljön ki egy jelenlegi eszközkonfigurációs profilt, vagy hozzon létre újat kioszkbeállításainak szerkesztéséhez.
+A teljes képernyős beállítások megtekintéséhez lásd: [eszközkorlátozások Android Enterprise](device-restrictions-android-for-work.md).
 
 ## <a name="week-of-november-12-2018"></a>2018. November 12 hete
 
@@ -84,7 +153,7 @@ Az ügyfélalkalmazások telepítésével kapcsolatban felmerülő hibák elhár
 
 ### <a name="device-configuration"></a>Eszközök konfigurálása
 
-#### <a name="network-access-control-support-on-ios-vpn-clients----1333693-wnready---"></a>Hálózati hozzáférés-vezérléssel kapcsolatos támogatás iOS rendszert használó VPN-ügyfeleken <!-- 1333693 wnready -->
+#### <a name="network-access-control-support-on-ios-vpn-clients----1333693---"></a>Hálózati hozzáférés-vezérléssel kapcsolatos támogatás iOS rendszert használó VPN-ügyfeleken <!-- 1333693 -->
 Az ebben a frissítésben biztosított új beállítás lehetővé teszi a Hálózati hozzáférés-vezérlést (NAC), amikor VPN-konfigurációprofilt hoz létre a Cisco AnyConnect, az F5 Access és a Citrix SSO for iOS esetében. E beállítással az eszköz NAC-azonosítója feltüntethető a VPN-profilban. Jelenleg nincsenek olyan VPN-ügyfelek vagy NAC-partnermegoldások, amelyek támogatnák ezt az új NAC-azonosítót, de [támogatási blogbejegyzésünkből](ttps://aka.ms/iOS12_and_vpn) értesülhet az esetleges változásokról.
 
 A NAC használatához a következőt kell tennie:
@@ -173,7 +242,7 @@ A bevezetésben részt vevő ügyfelek esetében ez az új felület lép a jelen
 
 További információt a Hogyan kérhet támogatást az Intune-hoz című cikk [New Help and Support experience](get-support.md#new-help-and-support-experience) (Új Súgó és támogatás felület) szakaszában talál.  
 
-### <a name="powershell-module-for-intune--preview-available----wnready-951068---"></a>PowerShell-modul az Intune-hoz – Előzetes verzió érhető el <!-- wnready 951068 -->
+### <a name="powershell-module-for-intune--preview-available----951068---"></a>PowerShell-modul az Intune-hoz – Előzetes verzió érhető el <!-- 951068 -->
 A [GitHub]( https://aka.ms/intunepowershell) felületén mostantól új PowerShell-modul áll rendelkezésre, amely a Microsoft Graph-on keresztül nyújt támogatást az Intune API-hez. A modul használatáról az ugyanezen a helyen található README részen tájékozódhat. 
 
 
@@ -355,7 +424,7 @@ A [Windows 10 VPN-beállítások](vpn-settings-windows-10.md) című témakörbe
 
 #### <a name="the-macos-company-portal-installer-now-includes-the-version-number-in-the-installer-file-name---2652728--"></a>A macOS-es Céges portál telepítő mostantól a verziószámot is tartalmazza a telepítőfájl nevében <!--2652728-->
 
-#### <a name="ios-automatic-app-updates----2729759-wnready---"></a>iOS – automatikus alkalmazásfrissítések <!-- 2729759 wnready -->
+#### <a name="ios-automatic-app-updates----2729759---"></a>iOS – automatikus alkalmazásfrissítések <!-- 2729759 -->
 Az automatikus alkalmazásfrissítések eszköz- és felhasználói licencelésű alkalmazások esetén is működnek az iOS 11.0 és újabb verzióin.
 
 
@@ -733,7 +802,7 @@ Ezzel a frissítéssel visszatér a grafikus felhasználói diagram, amely az Az
 
 ### <a name="device-enrollment"></a>Eszközök beléptetése
 
-#### <a name="support-for-windows-autopilot-enrollment-without-user-authentication----1165118-wnready---"></a>Windows Autopilot-alapú beléptetés támogatása felhasználóhitelesítés nélkül <!-- 1165118 wnready -->
+#### <a name="support-for-windows-autopilot-enrollment-without-user-authentication----1165118---"></a>Windows Autopilot-alapú beléptetés támogatása felhasználóhitelesítés nélkül <!-- 1165118 -->
 Az Intune mostantól támogatja a Windows Autopilot-alapú beléptetést felhasználóhitelesítés nélkül. Ez egy új funkcionalitás, melyet a Windows Autopilot beléptetési profilban érhet el úgy, hogy az „Autopilot Deployment mode” (Autopilot telepítési módja) beállítást „Self-Deploying” (Öntelepítés) értékre állítja.  Az ilyen típusú regisztráció sikeres elvégzéséhez az eszközön a Windows 10 Insider Preview Build 17672 vagy újabb verziónak kell futnia, és rendelkeznie kell egy TPM 2.0 lapkával. Mivel nem igényel felhasználóhitelesítést, ennek a lehetőségnek a használata csak olyan eszközökhöz javasolt, amelyekhez fizikailag is hozzáfér.
 
 #### <a name="new-languageregion-setting-when-configuring-oobe-for-autopilot----1821766---"></a>Új nyelv/terület beállítás automata OOBE konfigurálásakor <!-- 1821766 -->
@@ -781,7 +850,7 @@ A Chip Card Interface Device (CCID) azonosító mostantól elérhető minden esz
 #### <a name="assign-all-users-and-all-devices-as-scope-groups----2196803---"></a>Minden felhasználó és eszköz hozzárendelése hatókörcsoportokként <!-- 2196803 -->
 Minden felhasználót, eszközt és a hatókörcsoportok felhasználóit és eszközeit hozzárendelheti. Ehhez válassza az **Intune-szerepkörök** > **Összes szerepkör** > **Szabályzat- és profilkezelő** > **Hozzárendelések** > kívánt hozzárendelés > **Hatókör (csoportok)** lehetőséget.
 
-#### <a name="udid-information-now-included-for-ios-and-macos-devices----2219806-wnready--"></a>Mostantól elérhető az UDID azonosító iOS- és macOS-eszközökhöz <!-- 2219806 wnready-->
+#### <a name="udid-information-now-included-for-ios-and-macos-devices----2219806---"></a>Mostantól elérhető az UDID azonosító iOS- és macOS-eszközökhöz <!-- 2219806 -->
 Az iOS- és macOS-eszközök UDID (Unique Device Identifier) azonosítójának megtekintéséhez válassza az **Eszközök** > **Minden eszköz** > kívánt eszköz > **Hardver** lehetőséget. Az UDID csak vállalati eszközökhöz érhető el (ezt az **Eszközök** > **Minden eszköz** > kívánt eszköz > **Tulajdonságok** > **Eszköz tulajdonjoga** lehetőséget választva állíthatja be).
 
 ### <a name="intune-apps"></a>Intune-alkalmazások
@@ -955,7 +1024,7 @@ Frissült a macOS-eszközökhöz készült Céges portál alkalmazás, így jobb
 
 További információt a [Néhány hiba macOS esetén](/intune-user-help/send-errors-macos) című témakörben talál.
 
-#### <a name="intune-adapts-to-fluent-design-system-in-the-company-portal-app-for-windows-10----1195010-wnready---"></a>Az Intune támogatja a Fluent Design System használatát a Windows 10-hez készült Céges portál alkalmazásban <!-- 1195010 WNready -->
+#### <a name="intune-adapts-to-fluent-design-system-in-the-company-portal-app-for-windows-10----1195010---"></a>Az Intune támogatja a Fluent Design System használatát a Windows 10-hez készült Céges portál alkalmazásban <!-- 1195010 -->
 A Windows 10-es Intune Céges portál alkalmazást frissítettük a [Fluent Design System navigációs nézetével](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics). Az alkalmazás oldalán egy statikus, függőleges lista jelenik meg a legfelső szintű oldalakkal. A gyors megtekintéshez és az oldalak közötti váltáshoz kattintson bármelyik hivatkozásra. Egy frissítéssorozattal adaptív, kényelmesebb és ismerősebb Intune-élményt szeretnénk létrehozni. Ez a sorozat első frissítése. A frissített megjelenés megtekintésez lépjen [Az alkalmazásfelhasználói felület újdonságai](whats-new-app-ui.md) területre.
 
 ## <a name="week-of-april-16-2018"></a>2018. április 16-i hét
@@ -1111,14 +1180,8 @@ Tekintse át a jelszóbeállításokat az Android vállalati eszközkorlátozás
 #### <a name="additional-information"></a>További információ
 https://aka.ms/PasswordSettings 
 
-### <a name="plan-for-change-change-password-at-next-auth-added-to-intune---1873216---"></a>Tervezett változtatás: Jelszóváltoztatás az Intune-hoz hozzáadott Next Authban <!-- 1873216 -->
-Az Intune a szolgáltatás szeptemberi kiadásában az Apple újonnan kiadott **Jelszóváltoztatás a Next Authban** beállításának integrációját tervezi a macOS 10.13-as vagy újabb verzióját futtató eszközökhöz. Amíg ez a beállítás nincs jelen, az MDM-szolgáltatók nem tudják ellenőrizni, hogy az eszköz jelszavát megváltoztatták-e a megfelelőséghez. Az Intune konfigurációs és megfelelőségi szabályzatai csak azt ellenőrzik, hogy a jelszó a legközelebbi változtatáskor megfelelőként van-e jelölve. Az új Apple-funkció hozzáadása után a macOS-felhasználók akkor is felszólítást kapnak a jelszó megváltoztatására, ha a jelszó megfelelő.
-
-#### <a name="how-does-this-affect-me"></a>Hogyan érint ez engem?
-Ez olyan környezetekre vonatkozik, amelyek az Intune-t vagy hibrid MDM-et használó macOS rendszerű eszközök szabályzatait tartalmazzák. Most, hogy az Apple elérhetővé tette a **Jelszóváltoztatás a New Authban** beállítást, az Intune kikényszerítheti, hogy a felhasználók frissítsék a jelszót a jelszószabályzat leküldésekor. Ha Ön letiltja a céges erőforrásokat az eszköz megfelelőként jelöléséig, a végfelhasználók csak akkor férhetnek hozzá az olyan céges erőforrásokhoz, mint az e-mail vagy a SharePoint-webhelyek, ha már alaphelyzetbe állították a jelszót. A jövőben a konfigurációs és megfelelőségi jelszószabályzatok minden frissítése ki fogja kényszeríteni, hogy a megcélzott felhasználók jelszót változtassanak.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Hogyan készüljek fel a változásra?
-Értesítse a segélyszolgálatot. Ha nem szeretné kikényszeríteni ezt a macOS-es eszközszabályzatot, akkor a meglévő macOS-szabályzat hozzárendelése vagy törlése javasolt. Az ügyfelek körében végzett kutatás szerint a legtöbb ügyfelet nem érinti ez a változtatás. A végfelhasználók többsége a jelszavas bejelentkezésre való felszólítás után frissíti a jelszavát, vagy alaphelyzetbe állítja azt a megfelelőség megőrzéséhez.
+### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Az Apple frissítést tesz kötelezővé a Application Transport Security szolgáltatáshoz <!--748318-->
+Az Apple bejelentette, hogy konkrét követelményeket ír elő az Application Transport Security (ATS) használatakor. Az ATS szigorúbb biztonsági előírásokat érvényesít az alkalmazások közötti minden olyan kommunikációra, amely HTTPS-protokollon keresztül történik. Ez a változás minden olyan ügyfelet érint, aki az iOS rendszerű Céges portál alkalmazást használja. Az [Intune-támogatási blogon](https://aka.ms/compportalats) naprakész információkat közlünk.
 
 ### <a name="plan-for-change-intune-moving-to-tls-12"></a>Tervezett változtatás: az Intune áttér a TLS 1.2 verzióra
 2018. október 31-étől az Intune támogatni fogja a Transport Layer Security (TLS) protokoll 1.2 verzióját, hogy kategóriájában a legjobb titkosítást nyújtsa, biztosítsa a szolgáltatás jobb alapértelmezés szerinti biztonságát, és hogy illeszkedjen olyan más Microsoft-szolgáltatásokhoz, mint a Microsoft Office 365. Az Office ezt a változtatást az MC128929 közleményben jelentette be.
@@ -1134,13 +1197,6 @@ Ha 2018. október 31-e után egy régi TLS-verzió használatával kapcsolatos p
 Ajánlott megelőző lépésként eltávolítani a TLS 1.0 és 1.1 verzióit és azok függőségeit a környezeteiből, és ahol ez lehetséges, az operációs rendszer szintjén letiltani a TLS 1.0 és 1.1 verziókat. Kezdje meg máris a TLS 1.2-re való áttérés megtervezését. Az alábbi támogatási blogbejegyzésben megtalálja azoknak az eszközöknek a listáját, amelyeket az Intune már nem támogat, de még mindig kaphatnak szabályzatokat, és amelyek nem képesek a TLS 1.2 verziójának használatával kommunikálni. Ezeket a végfelhasználókat szükséges lehet értesíteni arról, hogy a jövőben nem fogják tudni elérni a vállalati erőforrásokat.
 
 **További információ**: [Az Intune áttér a TLS 1.2 használatára a titkosításhoz](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)
-
-
-### <a name="plan-for-change-use-intune-on-azure-now-for-your-mdm-management----1227338---"></a>Tervezett változtatás: Az Intune használata az Azure-on MDM-kezelésre <!-- 1227338 -->
-Több mint egy évvel ezelőtt bejelentettük az [Azure Intune nyilvános előzetes verzióját](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/), hat hónapja pedig az [Intune új rendszergazdai felületének általános elérhetővé válását](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/). 2018. augusztus 31-étől kikapcsoljuk a hagyományos Silverlight-konzol mobileszköz-kezelését (MDM) azon ügyfelek számára, akik az Intune önálló verzióját használják. Ők ehelyett az [Azure Intune-t](https://aka.ms/Intune_on_Azure) használhatják a mobileszközök kezelésére. Ha még a hagyományos konzolt használja a mobileszköz-kezeléshez, ismerkedjen meg az Azure Intune-nal, és térjen át a használatára. Ez a módosítás várhatóan nem lesz hatással a végfelhasználókra. A hagyományos PC-kezelés továbbra is a Silverlightban marad. Erről a változásról, valamint annak hatásairól [itt](https://aka.ms/Intune_on_Azure_mdm) találhat további információt.
-
-### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Az Apple frissítést tesz kötelezővé a Application Transport Security szolgáltatáshoz <!--748318-->
-Az Apple bejelentette, hogy konkrét követelményeket ír elő az Application Transport Security (ATS) használatakor. Az ATS szigorúbb biztonsági előírásokat érvényesít az alkalmazások közötti minden olyan kommunikációra, amely HTTPS-protokollon keresztül történik. Ez a változás minden olyan ügyfelet érint, aki az iOS rendszerű Céges portál alkalmazást használja. Az [Intune-támogatási blogon](https://aka.ms/compportalats) naprakész információkat közlünk.
 
 
 

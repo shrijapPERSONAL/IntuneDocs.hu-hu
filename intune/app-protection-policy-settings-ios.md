@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 79df4e20a1dcd4a5cbc30ab0c887d53bf205ebbf
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5ff7876ef5c04eb59d1e89ac03b640d4f443cca6
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184743"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728956"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS-es alkalmazásvédelmi szabályzat-beállításai
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -30,7 +30,7 @@ A jelen cikkben ismertetett szabályzatbeállításokat az Azure Portal **Szabá
 
 A szabályzatbeállítások három kategóriába sorolhatók: *Adatáthelyezés*, *Hozzáférési követelmények* és *Feltételes indítás*. Ebben a cikkben a ***szabályzattal felügyelt alkalmazások*** kifejezés olyan alkalmazásokra utal, amelyekhez alkalmazásvédelmi szabályzatot állítottak be.
 
-##  <a name="data-relocation-settings"></a>Adatáthelyezési beállítások
+##  <a name="data-protection-settings"></a>Adatvédelmi beállítások
 
 | Beállítás | Használat |  
 |------|------| 
@@ -47,7 +47,7 @@ A szabályzatbeállítások három kategóriába sorolhatók: *Adatáthelyezés*
 
 
 > [!NOTE]
-> Az iOS-eszközökön egyik adatáthelyezési beállítás sem szabályozza az Apple által kezelt Megnyitás a következőben funkciót. Az Apple-eszközök Megnyitás a következőben funkciójának felügyeletéről az [iOS-alkalmazások közti adatátvitel felügyelete a Microsoft Intune-nal](data-transfer-between-apps-manage-ios.md) című cikkben olvashat.
+> Az Apple felügyelt Megnyitás a következőben funkció az iOS-eszközökön vezérelheti az adatvédelmi beállítások egyike. Az Apple-eszközök Megnyitás a következőben funkciójának felügyeletéről az [iOS-alkalmazások közti adatátvitel felügyelete a Microsoft Intune-nal](data-transfer-between-apps-manage-ios.md) című cikkben olvashat.
 
 ## <a name="data-transfer-exemptions"></a>Adatátviteli kivételek
 

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7552c9c1fa8e94560505a8971143886160cff6ce
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 574bc38fb9ce47d2b051a74f3f931139c0de7224
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185953"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728837"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Kioszkbeállítások Windows 10 (és újabb) rendszerekhez az Intune-ban
 
@@ -200,3 +200,5 @@ Az ebben az üzemmódban lévő alkalmazások elérhetők a Start menüben. A fe
 
 ## <a name="next-steps"></a>További lépések
 [Rendelje hozzá a profilt](device-profile-assign.md), és [kövesse nyomon az állapotát](device-profile-monitor.md).
+
+Teljes képernyős profilok is létrehozhat [Android](device-restrictions-android.md#kiosk) és [Android Enterprise](device-restrictions-android-for-work.md#kiosk-settings) eszközök.
