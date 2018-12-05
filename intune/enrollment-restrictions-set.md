@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d9a7ad5d77f0c085fc1e91b6991657e6b848b3f3
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e813d64d3019748eed3c985dcefda744188ad850
+ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187837"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52861030"
 ---
 # <a name="set-enrollment-restrictions"></a>Regisztrációs korlátozások beállítása
 
@@ -123,7 +123,7 @@ Az eszközszámkorlátok beállításait az alábbi lépésekkel módosíthatja:
 6. Válassza a **Mentés** lehetőséget.
 
 
-A felhasználók üzenetet kapnak majd, ha elérték a regisztrálható eszközök maximális számát. iOS rendszer esetében ez az alábbi módon jelenik meg:
+BYOD regisztrációk során a felhasználóknak megjelenik egy értesítés, értesíti, ha a regisztrált eszközök maximális számát. iOS rendszer esetében ez az alábbi módon jelenik meg:
 
 ![Az iOS-eszközön megjelenő limitértesítés](./media/enrollment-restrictions-ios-set-limit-notification.png)
 

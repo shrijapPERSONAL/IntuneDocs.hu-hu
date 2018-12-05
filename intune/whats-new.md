@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 656c08fbc59b5656d4fc69c5e8e45d9d4903eab8
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 939ef9d164038f795ef9c591993751425ed6e89f
+ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52729075"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52861098"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -46,6 +46,10 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Emellett tá
 ## <a name="week-of-november-26-2018"></a>2018. November 26 hete
 
 ### <a name="app-management"></a>Alkalmazáskezelés
+
+#### <a name="uninstalling-apps-on-corporate-owned-supervised-ios-devices----1281677---"></a>Alkalmazások eltávolítása a céges, felügyelt iOS-eszközökről <!-- 1281677 -->
+
+Bármilyen alkalmazást a vállalat által birtokolt felügyelt iOS-eszközök távolíthatja el. Ha az **Eltávolítás** hozzárendelési típussal megcélozza a felhasználó- vagy eszközcsoportokat, akkor bármilyen alkalmazást el tud távolítani. Személyes és nem felügyelt iOS-eszközök esetében a továbbiakban csak az Intune használatával telepített alkalmazásokat tudja majd eltávolítani.
 
 #### <a name="downloading-intune-win32-app-content----2617320---"></a>Az Intune Win32 alkalmazás tartalmának letöltése <!-- 2617320 -->
 A Windows 10 RS3 és fent az ügyfelek letöltik Intune Win32 alkalmazás tartalmának kézbesítésoptimalizálás összetevőt a Windows 10-es ügyfél használ. Kézbesítésoptimalizálás társ-társ funkciókat biztosít, amelyek alapértelmezés szerint van kapcsolva. Kézbesítésoptimalizálás konfigurálható a csoportházirend és a jövőben az Intune MDM-n keresztül További információkért lásd: [kézbesítés optimalizálása Windows 10-es](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
@@ -72,6 +76,13 @@ A következő alkalmazások kezelheti [az Intune alkalmazásvédelmi szabályzat
 
 Használja alkalmazásvédelmi szabályzatok vállalati adat- és adatátviteli ezeket az alkalmazásokat, például a többi Intune-szabályzat által felügyelt alkalmazások védelmére. Megjegyzés: Ha a Flow még nem láthatók a konzolon, hozzáadhat folyamatot, ha hoz létre vagy szerkeszt, és az alkalmazásvédelmi szabályzatok. Ehhez használja a **+ további alkalmazások** lehetőséget, majd adja meg a *Alkalmazásazonosító* a Flow a beviteli mezőben. Android használatra *com.microsoft.flow*, és az iOS használja *com.microsoft.procsimo*.
 
+#### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Az Intune alkalmazásvédelmi szabályzataihoz tartozó kezelőfelületre vonatkozó frissítés <!-- 3251427 -->
+Módosítottuk a címkék beállításainak és az Intune app Protection, hogy könnyebben érthetőek gombok. A változások a következők:  
+
+- Vezérlők meg nem változtatják **Igen** / **nincs** elsősorban szabályozza **letiltása** / ** engedélyezése ** és **letiltása**  /  **engedélyezése** szabályozza. A címkék is frissülnek.  
+- Beállítások újraformázása, így a beállítás, és a felirat egymás mellett a vezérlőelemet, adja meg a jobb navigációs.   
+
+Az alapértelmezett beállításokat és a beállítások száma nem változik, de ez a változás lehetővé teszi, hogy a felhasználó megértése, keresse meg, és a alkalmazni a beállításokat több egyszerűen kiválasztott alkalmazásvédelmi szabályzatok.
 
 ### <a name="device-configuration"></a>Eszközök konfigurálása
 
@@ -97,7 +108,10 @@ Most már kereshet az Autopilot-eszközök sorozatszám alapján. Ehhez válassz
 Felhasználók nyomon követheti a telepítés előrehaladását [Office ProPlus](apps-add-office365.md) használatával a [regisztrálási állapot oldal](windows-enrollment-status.md). További információkért lásd: [beállítása egy regisztrálási állapot oldal](windows-enrollment-status.md).
 
 #### <a name="alerts-for-expiring-vpp-token-or-company-portal-license-running-low----2237572---"></a>VPP-jogkivonatok lejáratára vagy a Céges portál licenceinek alacsony számára vonatkozó riasztások <!-- 2237572 -->
-Ha előre ellátja a DEP-regisztráció során a céges portál Volume Purchase Program (VPP) használ, Intune riasztást küld, amikor a VPP-token érvényessége hamarosan lejár, és a licencek a céges portál kevés. További információkért lásd: [automatikusan regisztrálni a macOS-eszközök az Apple School Manager vagy a Készülékregisztrációs Program](device-enrollment-program-enroll-macos.md).
+Ha előre ellátja a DEP-regisztráció során a céges portál Volume Purchase Program (VPP) használ, Intune riasztást küld, amikor a VPP-token érvényessége hamarosan lejár, és a licencek a céges portál kevés.
+
+### <a name="macos-device-enrollment-program-support-for-apple-school-manager-accounts---3006133---"></a>A macOS-készülékregisztrációs program által biztosított támogatás az Apple School Manager-fiókokhoz <!--3006133 -->
+Az Intune már támogatja a macOS-eszközök az Apple School Manager-fiókok a Készülékregisztrációs programmal.  További információkért lásd: [automatikusan regisztrálni a macOS-eszközök az Apple School Manager vagy a Készülékregisztrációs Program](device-enrollment-program-enroll-macos.md).
 
 ### <a name="new-intune-device-subscription-sku---3312071--"></a>Új Intune eszköz-előfizetés Termékváltozat <!--3312071-->
 A vállalatok számára az eszközkezelés költségeinek csökkentéséhez már elérhető egy új, eszközalapú előfizetési termékváltozat. Ennek az Intune-beli eszköz-termékváltozatnak a licencelése eszközönként történik, havi elszámolással. Az ár a licencprogramtól függően változik. A következő programokban érhető el: közvetlen csatorna, Nagyvállalati Szerződés (EA), Microsoft-termékek és -szolgáltatások program (MPSA), valamint nyitott és felhőbeli megoldásszolgáltató (CSP).
@@ -214,9 +228,6 @@ Az Intune alkalmazásvédelemre vonatkozó szabályzatának segítségével töb
 - **Feltételes bevezetés** – Ebbe a csoportba olyan beállítások tartoznak, mint az operációs rendszerre vonatkozó minimális beállítások, a függetlenítésészlelés és a rootolt eszközök felderítése, valamint az offline türelmi időszakok.  
   
 A beállítások funkciói nem módosulnak, de könnyebben találhatók majd meg, ha Ön a szabályzatlétrehozási folyamatban dolgozik.
-
-### <a name="new-intune-device-subscription-sku---3312071--"></a>Új Intune-beli eszköz-előfizetési termékváltozat!--3312071-->
-A vállalatok számára az eszközkezelés költségeinek csökkentéséhez már elérhető egy új, eszközalapú előfizetési termékváltozat. Ennek az Intune-beli eszköz-termékváltozatnak a licencelése eszközönként történik, havi elszámolással. Az ár a licencprogramtól függően változik. A következő programokban érhető el: közvetlen csatorna, Nagyvállalati Szerződés (EA), Microsoft-termékek és -szolgáltatások program (MPSA), valamint nyitott és felhőbeli megoldásszolgáltató (CSP).
 
 ### <a name="intune-apps"></a>Intune-alkalmazások
 
@@ -1151,6 +1162,8 @@ További információkat itt talál: [A macOS-eszköz Céges portál alkalmazás
  
 
 ### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>Tervezett változtatás: Új Intune-támogatási élmény a Premier ügyfelek számára 
+12/4/18 frissítési: szeretne jobbá ezt a folyamatot, így a támogatási kérelem létrehozása a MPO nem lesz letiltva. December 3-án, de egy későbbi dátumon helyette. Értesíteni fogjuk az üzenetközpont keresztül ismert, és hamarosan a bejegyzés ütemterveket, a módosítás megosztás frissítése.
+
 A Microsoft Premier-ügyfelek jelenleg a Microsoft Premier Online (MPO) portál (premier.microsoft.com) vagy az Azure-beli Intune (portal.azure.com) segítségével hozhatnak létre támogatási kéréseket az Intune-hoz. 2018. december 3-tól kezdve a Premier szintű támogatás további fejlesztésének elősegítése érdekében a támogatási kéréseket csak az Azure-beli Intune-ban lehet létrehozni.
 
 #### <a name="how-does-this-affect-me"></a>Hogyan érint ez engem?

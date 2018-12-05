@@ -16,12 +16,12 @@ ms.reviewer: arnab
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fdd99d7c3987eee852399c37108c890a827e1111
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: f9665c407e80fcfd7cc5d0af4c66d626d2e996e6
+ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189741"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52861064"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Eszközök automatikus regisztrációja a Samsung Knox Mobile Enrollmenttel
 
@@ -120,6 +120,8 @@ További segítségre van szüksége? Tekintse meg a teljes [Knox mobileszköz-r
 ## <a name="frequently-asked-questions"></a>Gyakori kérdések
 
 - **Eszköztulajdonos támogatása:** Az Intune támogatja, hogy az Android Enterprise-t használó eszközöket kioszk stílusú eszközként regisztrálja. Egyéb Android Enterprise eszköztulajdonosi módok támogatására is sor kerül, amint elérhetővé válnak az Intune-ban.
+
+- **Nincsenek munkahelyi profilt támogató:** KME a vállalati tulajdonú eszközök regisztrációs módszer és az Androidos munkahelyi profillal regisztrált eszközök biztosítása a munkahelyi és személyes adatok elkülönülnek a személyes eszközökhöz. Tehát eszközök regisztrálása a munkahelyi profilba KME használatával nem támogatjuk az Intune-ban.
 
 - **Gyári beállítások visszaállítása az Android Enterprise-regisztrációhoz:** A már beállított eszközök újrahasznosításakor az eszközön vissza kell állítani a gyári beállításokat az eszköz Android Enterprise-regisztrációja előtt.
 

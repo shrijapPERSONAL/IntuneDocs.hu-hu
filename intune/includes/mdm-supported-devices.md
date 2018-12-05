@@ -26,7 +26,7 @@
 - Windows Phone 8.1, Windows 8.1 RT és Windows 8.1-et futtató PC-k (fenntartási módban)
 
 > [!NOTE]
-> Az Intune nem használható a Windows Server operációs rendszer felügyeletére.
+> Az Intune nem használható a Windows Server operációs rendszer felügyeletére. Otthoni Termékváltozat nem támogatja az összes Intune-funkciók
 
 Az Enterprise Mobility + Security (EMS) csomaggal rendelkező ügyfelek az [Azure Active Directory (Azure AD) használatával is regisztrálhatják Windows 10 rendszerű eszközeiket](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment).
 

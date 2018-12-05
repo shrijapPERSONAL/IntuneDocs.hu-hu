@@ -14,12 +14,12 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 28c8863e8739563a6b6c9152a46abb6bf50f2db5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 44923d89647118268c7a55746599354ac88fbfd2
+ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189197"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52861013"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Eszközök eltávolítása összes adatuk törlésével, az eszköz kivonásával vagy regisztrációja manuális törlésével
 
@@ -81,7 +81,7 @@ Az alábbi táblázatok ismertetik, hogy milyen adatokat távolít el a rendszer
 
 |Adattípus|iOS|
 |-------------|-------|
-|Vállalati alkalmazások és az Intune által telepített egyéb vonatkozó adatok|Törlődnek az alkalmazások. Törlődnek a vállalati alkalmazásadatok.<br /><br />Törlődnek a mobilalkalmazás-felügyeletet használó Microsoft-alkalmazások adatai. Az alkalmazások nem törlődnek.|
+|Vállalati alkalmazások és az Intune által telepített egyéb vonatkozó adatok|**Vállalati portálon keresztül telepített alkalmazások:** összes és az alkalmazások el lesznek távolítva. Az alkalmazások tartalmazzák az App Store telepített és később felügyelt vállalati alkalmazások alkalmazások. <br /><br /> **Microsoft-alkalmazások mobilalkalmazás-felügyeletet használó, és megtörtént-e az App Store:** törlődnek a személyes adatai. Vállalati alkalmazások adatainak és az alkalmazások nem lesznek eltávolítva.|
 |Beállítások|Az Intune-szabályzat által konfigurált beállítások érvényüket vesztik. A felhasználók megváltoztathatják a beállításokat.|
 |Wi-Fi és VPN profilbeállításai|Eltávolítva.|
 |Tanúsítvány profilbeállításai|A tanúsítványok törlődnek és visszavonásra kerülnek.|
