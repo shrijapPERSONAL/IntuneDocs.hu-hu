@@ -5,22 +5,22 @@ services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 12/05/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 658a7655-a6df-4dbe-b56c-22c7fc60e706
-ms.reviewer: angerobe
+ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 13ffb9e7091b484c59f44802de675b1ab45b1c77
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5876b0df6787640e465952cb1cca17f4f3105762
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183468"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977337"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>Rövid útmutató: Windows 10 rendszerű eszköz regisztrálása
 
@@ -29,7 +29,7 @@ Ebben a rövid útmutatóban először Intune-felhasználói szerepkörben fog t
 A vállalati eszközök Microsoft Intune-beli regisztrálása lehetővé teszi, hogy a Windows 10 rendszerű eszközök hozzáférjenek a szervezet védett adataihoz, beleértve az e-maileket, a fájlokat és az egyéb erőforrásokat. Ez a Windows 10 rendszerű asztali számítógépekre és a Windows 10 Mobile rendszerű eszközökre egyaránt vonatkozik. Az eszközök regisztrálásával biztonságossá tehető ez a hozzáférés Ön és a szervezet számára, és elkülöníthetők a munkahelyi adatok a személyes adatoktól.
 
 > [!TIP]
-> Tekintse át, hogy mi történik, amikor [regisztrálja az eszközét az Intune-ban](/intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md), és mit jelent ez az [eszközön található adatok szempontjából](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+> Tekintse át, hogy mi történik, amikor [regisztrálja az eszközét az Intune-ban](/intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows), és mit jelent ez az [eszközön található adatok szempontjából](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune).
 
 Ha nem rendelkezik Intune-előfizetéssel, [regisztráljon egy ingyenes próbafiókkal](free-trial-sign-up.md).
 
@@ -58,7 +58,7 @@ A Windows 10 asztali verzió regisztrációja előtt erősítse meg a Windows te
 4. Ellenőrizze, hogy a Windows 10-es **verzió** **1607-es vagy újabb-e**.
 
     > [!IMPORTANT]
-    > Az ebben a rövid útmutatóban bemutatott lépések a **1607-es vagy újabb** Windows 10-verzióra vonatkoznak, ha a verzió **1511-es vagy régebbi**, folytassa [ezekkel a lépésekkel](/intune-user-help/enroll-your-w10-device-your-account.md).
+    > Az ebben a rövid útmutatóban bemutatott lépések a **1607-es vagy újabb** Windows 10-verzióra vonatkoznak, ha a verzió **1511-es vagy régebbi**, folytassa [ezekkel a lépésekkel](/intune-user-help/enroll-your-w10-device-your-account).
 
 ## <a name="enroll-windows-10-desktop"></a>A Windows 10 asztali verzió regisztrálása
 
@@ -85,7 +85,7 @@ A Windows 10 asztali verzió regisztrációja előtt erősítse meg a Windows te
 
    ![Képernyőkép az újonnan hozzáadott fiókról](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-06.png)
 
-    Ha követte a fenti lépéseket, de továbbra sem tud hozzáférni munkahelyi vagy iskolai e-mail fiókjához és fájljaihoz, kövesse a [Hibaelhárítási teendők, ha ezt látja: Hozzáférés munkahelyi vagy iskolai rendszerhez](/intune-user-help/troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school) című részben leírt lépéseket.
+    Ha követte a fenti lépéseket, de továbbra sem tud hozzáférni munkahelyi vagy iskolai e-mail fiókjához és fájljaihoz, kövesse a [Hibaelhárítási teendők, ha ezt látja: Hozzáférés munkahelyi vagy iskolai rendszerhez](/intune-user-help/troubleshoot-your-windows-10-device-windows#troubleshooting-steps-to-follow-if-you-see-access-work-or-school) című részben leírt lépéseket.
 
 ## <a name="confirm-your-device-enrollment-in-intune"></a>Eszközök regisztrációjának megerősítése az Intune-ban
 
@@ -97,11 +97,11 @@ A Windows 10 asztali verzió regisztrációja előtt erősítse meg a Windows te
 
 ## <a name="clean-up-resources"></a>Erőforrások eltávolítása
 
-A Windows-eszköz regisztrációjának törléséhez tekintse meg a [Windows-eszköz eltávolítása a felügyelet alól](/intune-user-help/unenroll-your-device-from-intune-windows.md) szakaszt.
+A Windows-eszköz regisztrációjának törléséhez tekintse meg a [Windows-eszköz eltávolítása a felügyelet alól](/intune-user-help/unenroll-your-device-from-intune-windows) szakaszt.
 
 ## <a name="next-steps"></a>További lépések
 
-Ebből a rövid útmutatóból elsajátíthatta, hogyan regisztrálhat Windows 10-es eszközt az Intune-ban. Megismerkedhet az eszközregisztráció más módjaival is, bármely platformon. Az eszközök Intune-nal való használatáról további információért olvassa el a [Felügyelt eszközök használata a munkavégzéshez](/intune-user-help/use-managed-devices-to-get-work-done.md) szakaszt.
+Ebből a rövid útmutatóból elsajátíthatta, hogyan regisztrálhat Windows 10-es eszközt az Intune-ban. Megismerkedhet az eszközregisztráció más módjaival is, bármely platformon. Az eszközök Intune-nal való használatáról további információért olvassa el a [Felügyelt eszközök használata a munkavégzéshez](/intune-user-help/use-managed-devices-to-get-work-done) szakaszt.
 
 Kövesse az Intune rövid útmutatóinak sorozatát a következő rövid útmutatóval.
 

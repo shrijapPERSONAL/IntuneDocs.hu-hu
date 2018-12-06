@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 77a0c3f3a2e1ed0ee2dbc652049bb7057c736010
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2a656a53062e8529541cd067fa32bfc83aee2ea0
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189962"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977320"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Hibrid Azure AD-hez csatlakoztatott eszközök üzembe helyezése az Intune és a Windows Autopilot használatával (előzetes verzió)
 Az Intune és a Windows Autopilot használatával elvégezheti a hibrid Azure Active Directoryhoz csatlakoztatott eszközök beállítását. Ehhez kövesse az alábbi lépéseket:
@@ -68,7 +68,7 @@ A regisztrálni kívánt eszközöknek a következő feltételeknek kell megfele
 
 Az Active Directoryhoz készült Intune-összekötő Autopilot-regisztrációt végző számítógépeket hoz létre a Helyszíni Active Directory-tartományban. Ehhez az Intune-összekötőt üzemeltető számítógépnek jogosultsággal kell rendelkeznie a számítógép-objektumok létrehozásához a tartományban. 
 
-Bizonyos tartományoknál előfordulhat, hogy a számítógépek nem jogosultak arra, hogy más számítógépeket hozzanak létre. De az is előfordulhat, hogy a rendszergazdák nem akarják növelni a számítógépfiókok maximális számát a tartományban. Ilyen esetekben a jogosultságok átruházhatók arra a szervezeti egységre, amelyben létrehozzák a hibrid Azure AD-hez csatlakoztatott eszközöket.
+Bizonyos tartományoknál előfordulhat, hogy a számítógépek nem jogosultak arra, hogy más számítógépeket hozzanak létre. Tartományok továbbá rendelkezik egy beépített korlátja (alapértelmezés szerint 10), amely érvényes az összes felhasználók és számítógépek, amelyek nem a számítógép-objektumok létrehozása delegált jogosultságokkal. Ezért a szervezeti egységre, ahol hibrid Azure AD-csatlakoztatott eszközök az Intune-összekötő üzemeltető számítógépeken delegálható rights kell jönnek létre.
 
 Annak a szervezeti egységnek, amelyre a jogosultságok átruházva lesznek, meg kell egyeznie:
 - a tartományhoz való csatlakozási profilban megadott szervezeti egységgel

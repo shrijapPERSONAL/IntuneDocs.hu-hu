@@ -16,12 +16,12 @@ ms.reviewer: priyar
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 034919a7ae7d223a30b11b4c3aa1f495e028e89c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 00e8b0e35514fe583027d15fdcc810295aa9fa9e
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184624"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977286"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Windows 10-es alkalmazások telepítése a Microsoft Intune-nal 
 
@@ -49,7 +49,7 @@ Az alkalmazás típusától függően az alkalmazás két módszer egyikével te
     - A modern üzletági és Microsoft Áruházbeli alkalmazások (online vagy offline) telepíthetők felhasználói környezetben, és az Elérhető és Szükséges hozzárendelés-típust is támogatják.
     - A **felhasználói módban** vagy **kettős módban** készült Win32-alkalmazások felhasználói környezetben helyezhetők üzembe, és egyaránt támogatják a **Kötelező** és az **Elérhető** szándékmegjelölésű telepítést. 
 - **Eszközkörnyezet**: Ha az alkalmazás eszközkörnyezetben van üzembe helyezve, akkor a felügyelt alkalmazást az Intune telepíti közvetlenül az eszközre.
-    - Eszközkörnyezetben csak modern üzleti alkalmazások és online licencelésű Vállalati Microsoft Áruházbeli alkalmazások helyezhetők üzembe, és csak a Szükséges hozzárendelés-típust támogatják.
+    - Csak a modern üzleti alkalmazások és az üzleti alkalmazások offline licenccel rendelkező Microsoft Store eszköz környezetben is telepíthető, és csak a kötelező szándékot támogatni fogja.
     - A **Számítógép módban** vagy **kettős módban** készült Win32-alkalmazások felhasználói környezetben helyezhetők üzembe, és csak a **Kötelező** szándékmegjelölésű telepítést támogatják.
 
 > [!NOTE]

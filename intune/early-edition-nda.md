@@ -16,12 +16,12 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 24cc45f8f769d08c083bdddc27a12900613b98b0
-ms.sourcegitcommit: 580eb4920d18ce09c9431d9d0dfee9d195459c0e
+ms.openlocfilehash: 4110f1298ffa3e8497463d4751bc711a6c19baf1
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52887151"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977371"
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2018"></a>A előzetes kiadása – 2018. December a Microsoft Intune
 
@@ -70,9 +70,6 @@ Egy új lapot a rendszer felveszi a Windows céges portál alkalmazásba. A Súg
 ### <a name="use-trusted-network-detection-for-vpn-profiles-on-windows-10-devices----1500165---"></a>Használja a megbízható hálózatok észlelése a Windows 10-es eszközök VPN-profilokhoz <!-- 1500165 -->
 Megbízható hálózatok észlelése használatakor lesz képes megakadályozni, hogy a VPN-profilok automatikusan hozzon létre egy VPN-kapcsolatot, amikor a felhasználó már szerepel a megbízható hálózat. Fogja tudni hozzáadni a DNS-utótagok engedélyezése a Windows 10 rendszerű eszközökre a megbízható hálózatok észlelése és újabb verziók (**eszközkonfiguráció** > **profilok**  >   **Profil létrehozása** > **Windows 10 és újabb** tartozó platform > **VPN** profiltípus).
 [A Windows 10-es VPN-beállítások](vpn-settings-windows-10.md) sorolja fel az aktuális VPN-beállításokat.
-
-### <a name="support-for-android-corporate-owned-fully-managed-devices----574342---"></a>A vállalat által birtokolt, teljes körűen felügyelt Android-eszközök támogatása <!-- 574342 -->
-Az Intune támogatni fogja a teljes körűen felügyelt Android-eszközök a vállalat által birtokolt "eszköz tulajdonosa" forgatókönyv, ahol eszközök szorosan által felügyelt IT és a rendszer az egyes felhasználókkal kapcsolódó. Ez lehetővé teszi a rendszergazdák számára a teljes eszköz kezelése, egy kiterjesztett tartomány nem érhető el a munkahelyi profilok házirend-vezérlők kényszerítésére, és korlátozza a felhasználók, alkalmazások telepítése csak a felügyelt Google Play áruházból. Beállítása az Android teljes körűen felügyelt eszközök, ugorjon a **eszközregisztráció** > **Android-eszközök regisztrálási** > **vállalat által birtokolt, teljes körűen felügyelt felhasználói eszközök**.
 
 ### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>Az Intune App SDK támogatni fogja a 256 bites titkosítási kulcsok <!-- 1832174 -->
 Az Intune App SDK IOS rendszerhez készült 256 bites titkosítási kulcsok fogja használni, ha az alkalmazásvédelmi szabályzatok engedélyezve van a titkosítási. Az SDK továbbra is támogatja a 128 bites kulcsok tartalmat és a régebbi SDK-t használó alkalmazások kompatibilitását.

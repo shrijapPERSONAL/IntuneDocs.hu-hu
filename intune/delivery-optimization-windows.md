@@ -5,23 +5,25 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36cfb5ac05b2d69b5c7349f4ebc6054848a08fc8
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 1b83a380620704e9e3f616cee77b33d577c86c0d
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52730107"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977269"
 ---
 # <a name="windows-10-and-newer-delivery-optimization-settings-in-microsoft-intune"></a>A Windows 10 (és újabb) kézbesítésoptimalizálási beállításait a Microsoft Intune-ban
 
-Ez a cikk és az összes a kézbesítésoptimalizálási beállításait konfigurálhatja a Windows 10-es eszközök ismerteti. Ezek a beállítások hozzá eszközkonfigurációs profil, és ezután hozzárendelt vagy az eszközöket a Microsoft Intune segítségével telepítve.
+Ez a cikk és az összes a kézbesítésoptimalizálási beállításait konfigurálhatja a Windows 10-es eszközök ismerteti. Ezek a beállítások hozzá eszközkonfigurációs profil, és ezután hozzárendelt vagy az eszközöket a Microsoft Intune segítségével telepítve. 
+
+[Kézbesítésoptimalizálás frissíti](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) egy nagyszerű forrás, amely további tudnivalók a kézbesítésoptimalizálás a Windows 10-es.
 
 ## <a name="settings"></a>Beállítások
 
