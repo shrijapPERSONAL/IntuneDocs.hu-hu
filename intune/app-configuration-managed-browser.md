@@ -122,7 +122,7 @@ Az SSO megköveteli az eszközöktől, hogy regisztrálva legyenek a Microsoft A
 4.  Az **Alkalmazáskonfiguráció** panelen válassza a **Hozzáadás** lehetőséget.
 5.  A **Konfigurációs szabályzat hozzáadása** panelen az alkalmazáskonfigurációs beállításokhoz írja be a **Nevet** és a **Leírást** (ez utóbbi nem kötelező).
 6.  Az **Eszközregisztráció** típusaként válassza a **Felügyelt alkalmazások** lehetőséget.
-7.  Válassza a **Kötelező alkalmazás kiválasztása** elemet, majd a **Célalkalmazások** panelen válassza a **Managed Browser** vagy az **Edge** lehetőséget iOS-hez, Androidhoz vagy igény szerint mindkettőhöz.
+7.  Válassza a **Kötelező alkalmazás kiválasztása** elemet, majd a **Célalkalmazások** panelen válassza a **Managed Browser** vagy a **Microsoft Edge** lehetőséget iOS-hez, Androidhoz vagy igény szerint mindkettőhöz.
 8.  Az **OK** kiválasztásával visszatérhet a **Konfigurációs szabályzat hozzáadása** panelre.
 9.  Kattintson a **Konfigurációs beállítások** elemre. A **Konfigurálás** panelen kulcs-érték párok definiálásával adhatja meg a Managed Browserhez szükséges konfigurációkat. A jelen cikk későbbi részeiben további információt talál a definiálható kulcs-érték párokról.
 10. Ha elkészült, válassza az **OK** elemet.
