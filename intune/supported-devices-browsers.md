@@ -15,15 +15,15 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic; get-started
-ms.openlocfilehash: 5983a31aeb2bf6c10d3f6fe828157c88a5a9364f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: c5a0f49079f18b333172698449193fa02db1c704
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179269"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031857"
 ---
-# <a name="supported-operating-systems-and-browsers"></a>Támogatott operációs rendszerek és böngészők
+# <a name="supported-operating-systems-and-browsers-in-intune"></a>Támogatott operációs rendszereket és böngészőket az Intune-ban
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 

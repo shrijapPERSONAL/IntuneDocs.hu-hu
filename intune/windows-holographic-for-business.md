@@ -5,22 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/19/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: fd99a168747bd4a0f5852404e767d658b8400ba2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-azure, seodec18
+ms.openlocfilehash: 062adf12f743fdbbe42c1f29e91f2a16414ca457
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180833"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032265"
 ---
-# <a name="manage-and-use-windows-holographic-and-hololens-devices-with-intune"></a>Windows Holographic és HoloLens rendszerű eszközök felügyelete és használata Intune-nal
+# <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Kezelheti, és használható különböző eszközfelügyeleti funkcióival a Windows holographic operációs rendszert és a HoloLens-eszközök Intune-nal
 
 A Microsoft Intune számos olyan szolgáltatást biztosít, amelyek segítenek a Windows Holographic for Business rendszert futtató eszközök, például a [Microsoft HoloLens](https://docs.microsoft.com/hololens/) felügyeletében. Az Intune használatával ellenőrizhető, hogy az eszközök megfelelnek-e a szervezeti szabályoknak, és az eszközök testreszabása is elvégezhető VPN- vagy Wi-Fi-profilok hozzáadásával. Egy másik fontos funkció az eszközök kioszkként való használata és egy bizonyos alkalmazás vagy alkalmazáskészlet futtatása.
 
@@ -32,9 +32,9 @@ A Windows Holographic rendszerű eszközök Intune-nal való használatához hoz
 
 Az Azure Active Directory (AD) segítségével könnyedén kezelheti és vezérelheti a Windows Holographic for Business rendszerű eszközeit. Az Intune és az Azure AD használatával: 
 
-- **[Az Azure Active Directoryhoz kapcsolt eszközök beállítása](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup)**: Windows 10 rendszerű munkahelyi eszközeit, beleértve a Windows Holographic for Business rendszerű eszközöket is, hozzáadhatja az Azure Active Directoryhoz. Ez a funkció lehetővé teszi, hogy az Azure AD vezérelje az eszközt. Ez segít biztosítani, hogy a felhasználói olyan eszközökről érjék el a vállalati erőforrásokat, amelyek megfelelnek a vállalat biztonsági és megfelelőségi szabványainak.
+- **[Eszközök csatlakoztatása az Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)**: az Azure Active Directory (AD), adhat hozzá a munkahelyi Windows 10-es eszközök kiosztását, beleértve a Windows Holographic for Business rendszerű eszközök. Ez a funkció lehetővé teszi, hogy az Azure AD vezérelje az eszközt. Ez segít biztosítani, hogy a felhasználói olyan eszközökről érjék el a vállalati erőforrásokat, amelyek megfelelnek a vállalat biztonsági és megfelelőségi szabványainak.
 
-  További részletekért tekintse meg [Az Azure AD-val történő eszközkezelés bemutatása](https://docs.microsoft.com/azure/active-directory/device-management-introduction) cikket.
+  [Az Eszközfelügyelet az Azure ad-ben](https://docs.microsoft.com/azure/active-directory/devices/overview) további részleteket.
 
 - **[Csoportos regisztráció Windows-eszközök esetében](windows-bulk-enroll.md)**: Egyszerre nagy számú új windowsos eszközt is csatlakoztathat az Azure Active Directoryhoz és az Intune-hoz. Ezt a szolgáltatást csoportos regisztrációnak hívják, és kiépítési csomagokat használ. Ezek a csomagok összekötik a Windows Holographic for Business rendszerű eszközöket az Azure AD-bérlővel, és regisztrálják őket az Intune-ban.
 
@@ -49,7 +49,6 @@ A Céges portál alkalmazással a következő műveleteket is futtathatja:
 - [Eszköz átnevezése](/intune-user-help/rename-your-device-cpapp)
 - [Alkalmazások telepítése](/intune-user-help/install-apps-cpapp-windows) az eszközön
 - [Eszközök manuális szinkronizálása](/intune-user-help/sync-your-device-manually-windows) a Gépház alkalmazásból vagy a Céges portál alkalmazásból
-
 
 ## <a name="compliance-policy"></a>Megfelelőségi szabályzat
 **[Eszközmegfelelőségi szabályzat létrehozása](compliance-policy-create-windows.md)**

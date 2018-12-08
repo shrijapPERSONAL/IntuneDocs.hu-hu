@@ -1,7 +1,7 @@
 ---
 title: Beléptetési állapotlap beállítása
 titleSuffix: Microsoft Intune
-description: Köszöntheti a Windows 10 rendszerű eszközeiket regisztráló felhasználókat.
+description: Állítsa be a felhasználók számára a Windows 10 rendszerű üdvözlő oldal.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,19 +15,19 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: b953ea281ad785d8a0ce7bee4b0f6d420b785dd9
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.custom: seodec18
+ms.openlocfilehash: b87e0d24c000e3083eaebeac1a4cf6026d495ccf
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52729041"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032095"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Beléptetési állapotlap beállítása
  
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
  
-A regisztrációs állapotlap telepítési információkat jelenít meg az eszközön annak beállítása során. Előfordulhat, hogy egyes alkalmazások, profilok és tanúsítványok még nincsenek telepítve, mire a felhasználó végez az alapértelmezett regisztrációval, és bejelentkezik az eszközre. A regisztrációs állapotlap segít a felhasználóknak megérteni az eszközük állapotát az eszköz telepítése folyamán. Létrehozhat több regisztrációs állapotlapot is, és különböző csoportokhoz rendelheti őket. A profilok a következőkre állíthatók be:
+Az Intune-nal eszköz beállítása során a regisztrálási állapot oldal az eszközön telepítési információit jeleníti meg. Előfordulhat, hogy egyes alkalmazások, profilok és tanúsítványok még nincsenek telepítve, mire a felhasználó végez az alapértelmezett regisztrációval, és bejelentkezik az eszközre. A regisztrációs állapotlap segít a felhasználóknak megérteni az eszközük állapotát az eszköz telepítése folyamán. Létrehozhat több regisztrációs állapotlapot is, és különböző csoportokhoz rendelheti őket. A profilok a következőkre állíthatók be:
 - A telepítési folyamat kijelzése.
 - A használat tiltása a telepítés befejezéséig.
 - Megadható, hogy mit tehet meg a felhasználó, ha az eszköz telepítése sikertelen.

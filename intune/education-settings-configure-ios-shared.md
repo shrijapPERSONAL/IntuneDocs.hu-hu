@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/23/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,16 +16,19 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 9a15c84ded066a26254737f75293b0d743fe5eab
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 24fb627d0fcf0fe3b24a8242d8ac22ccf6f3ff91
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181224"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032374"
 ---
-# <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>Az Intune megosztott iPad eszközökkel kapcsolatos oktatási beállításainak konfigurálása
+# <a name="configure-intune-education-settings-for-shared-ipad-devices"></a>Megosztott iPad-eszközökhöz az Intune oktatási beállításainak konfigurálása
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
+
+> [!NOTE]
+> Az osztályterem alkalmazás Intune-beállítások nem használatosak az Intune-ban. Ez a cikk csak azokra a felhasználókra vonatkozik, akiknek már van meglévő oktatási profiljuk az Intune-ban.
 
 Az Intune támogatja az iOS-es Osztályterem alkalmazást, amely lehetővé teszi az oktatóknak a tanulási folyamat és a diákok eszközeinek irányítását az osztályteremben. Az Osztályterem alkalmazás mellett az Apple támogatja a diákok iPad eszközeinek olyan konfigurációját, amely egyetlen eszköz több diák általi használatát teszi lehetővé. Ebből a dokumentumból megtudhatja, hogy ezt hogyan valósíthatja meg az Intune-nal.
 

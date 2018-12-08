@@ -1,28 +1,32 @@
 ---
-title: Eszközkorlátozások az androidos munkahelyi profilokhoz a Microsoft Intune-ban – Azure | Microsoft Docs
-description: A Vállalati Androidos profilt használó eszközökön korlátozhatja az eszköz bizonyos beállításait, többek között a másolást és beillesztést, az értesítések megjelenítését, az alkalmazásengedélyeket, az adatmegosztást, a jelszóhosszt, a sikertelen bejelentkezéseket, a zárolás feloldását ujjlenyomattal, a jelszavak újbóli használatát és a munkahelyi kapcsolatok Bluetoothon keresztüli megosztásának engedélyezését.
+title: Android Enterprise eszközbeállítások a Microsoft Intune – Azure |} A Microsoft Docs
+description: Android Enterprise vagy az Android for Work-eszközök korlátozása az eszköz beállításai, többek között másolás és beillesztés, show, értesítések, az Alkalmazásengedélyek, az adatok megosztásához, a jelszó hosszát, a bejelentkezési hibák használata ujjlenyomat a zárolás feloldásához újbóli jelszavak, és a bluetooth engedélyezése a munkahelyi névjegyek megosztása. Eszközök konfigurálása, a teljes képernyős alkalmazás egy vagy több alkalmazás futtatásához.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 5f153e738aff28cae6481c0502f0682d10b8f104
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.custom: intune-azure, seodec18
+ms.openlocfilehash: c9e2e0df79625329310171c509327395989f3a7c
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52729092"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032537"
 ---
-# <a name="work-device-restriction-settings-in-intune"></a>A Work eszközkorlátozásainak beállításai az Intune-ban
+# <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Android Enterprise eszközbeállítások engedélyezett vagy korlátozott funkciók az Intune-nal
 
-A cikk felsorolja a Microsoft Intune összes olyan eszközkorlátozásokra vonatkozó beállítását, melyek konfigurálhatók Vállalati Android-profilos eszközökhöz.
+Ez a cikk és az Android Enterprise eszközökön szabályozhatja a különböző beállításokat ismerteti. A mobileszköz-felügyelet (MDM) megoldás részeként használja ezeket a beállításokat engedélyezi vagy letiltja a szolgáltatások, a teljes képernyős módú, a biztonság szabályozásához és a további futtatási alkalmazások.
+
+## <a name="before-you-begin"></a>Előkészületek
+
+[Eszközkonfigurációs profil létrehozása](device-restrictions-configure.md).
 
 ## <a name="device-owner-only"></a>Csak az eszköz tulajdonosa
 
@@ -243,7 +247,7 @@ A jelszó-beállításokat alkalmazni a munkahelyi profilt használó eszközök
   > [!IMPORTANT]
   >  - A kiválasztott VPN-ügyfelet az eszközön kell telepíteni, és támogatnia kell az alkalmazásonkénti VPN-t a munkahelyi profilokban. Ellenkező esetben hiba történik. 
   >  - A VPN-ügyfélalkalmazást jóvá kell hagynia a **felügyelt Google Play Áruházban**, szinkronizálnia kell az alkalmazást az Intune-nal, majd üzembe helyeznie az eszközön. Ezt követően az alkalmazás telepítve lesz a felhasználó munkahelyi profiljában.
-  >  - Az alkalmazásonkénti VPN és az F5 Access for Android 3.0.3 együttes használatával kapcsolatban több probléma is ismert. További információt az [F5 Access for Android 3.0.3 kibocsátási megjegyzéseiben](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-3.html#relnotes_known_issues_f5_access_android) talál.
+  >  - Van Előfordulhat, hogy ismert problémák alkalmazásonkénti VPN az Android 3.0.4 F5 hozzáféréssel rendelkező használatakor. Lásd: [F5 kibocsátási megjegyzések az F5 Access for Android 3.0.4](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android) további információt.
 
 - **Zárolt mód**: Ennek **engedélyezésével** minden hálózati forgalma a VPN-alagútra irányíthat. Ha a VPN-kapcsolat nincs kiépítve, az eszköznek nem lesz hálózati hozzáférése.
 

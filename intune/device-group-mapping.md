@@ -1,5 +1,5 @@
 ---
-title: Eszközök csoportokba sorolása az Intune-ban
+title: Eszközök az Intune-ban csoportokba sorolása
 titleSuffix: Microsoft Intune
 description: Információ arról, hogyan lehet az eszközöket csoportokba rendezni a könnyebb kezelhetőség érdekében.
 keywords: ''
@@ -14,26 +14,26 @@ ms.technology: ''
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 159079686507815ad4cf1738ca4157467352f681
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 0abc42de95f90b3690e91908f92bb53d11a802d8
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189520"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031762"
 ---
-# <a name="categorize-devices-into-groups-for-easier-management"></a>Eszközöket csoportokba rendezése a könnyebb kezelhetőség érdekében
+# <a name="categorize-devices-into-groups"></a>Eszközök csoportokba sorolása
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-A Microsoft Intune eszközkategóriák segítségével automatikusan csoportokba veheti fel az eszközöket az Ön által meghatározott kategóriák alapján. Ez megkönnyíti az eszközök kezelését.
+Eszközök kezelésének megkönnyítése érdekében a Microsoft Intune eszközkategóriák segítségével automatikusan adja hozzá az eszközök az Ön által meghatározott kategóriák alapján.
 
 Az eszközkategóriák a következő munkafolyamatot használják:
 1. Kategóriák létrehozása, amelyek közül a felhasználók választhatnak az eszközük regisztrálásakor.
 2. Az iOS-es és androidos eszközök felhasználóinak egy eszköz regisztrációjakor a konfigurált kategórialistából kell kategóriát választaniuk. Kategória Windows-eszközhöz rendelésekor a felhasználóknak a Céges portál webhelyét kell használniuk.
 3. Ezután szabályzatokat és alkalmazásokat telepíthet ezekre a csoportokra.
 
-Bármilyen tetszés szerinti eszközkategóriát létrehozhat. Például:
+Bármilyen tetszés szerinti eszközkategóriát létrehozhat. Példa:
 - Pénztári eszközök
 - Bemutatóeszközök
 - Értékesítés

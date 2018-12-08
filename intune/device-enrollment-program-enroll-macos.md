@@ -1,12 +1,12 @@
 ---
 title: MacOS-eszközök regisztrálása – Készülékregisztrációs Program vagy az Apple School Manager
-titleSuffix: Microsoft Intune
+titleSuffix: ''
 description: Céges tulajdonú macOS-es eszközök regisztrálása az Apple készülékregisztrációs programjával (DEP).
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 12a59165cd9ebe43826f8ec63ed5b045e5f3e991
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.custom: seodec18
+ms.openlocfilehash: 2bd9b244947f5f0b8fcb832682951c7a241f96a4
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728752"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032350"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>A Készülékregisztrációs Program vagy az Apple School Manager macOS-eszközök automatikus regisztrálása
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Ez a cikk segítséget nyújt az Apple keretében vásárolt eszközök macOS-eszközök regisztrálásának beállítása [Készülékregisztrációs Program (DEP)](https://deploy.apple.com) vagy [Apple School Manager](https://school.apple.com/). Is használhatja ezeket a regisztrációk esetében nagy számú eszközt anélkül, hogy kézbe venné őket. A macOS-eszközöket közvetlenül a felhasználóknak küldheti el. Amikor a felhasználó bekapcsolja az eszközt, a Beállítási asszisztens az előre konfigurált beállítások szerint fut, és regisztrálja az eszközt az Intune felügyeleti szolgáltatásban.
+Beállíthatja az Apple keretében vásárolt macOS-eszközökhöz az Intune-regisztrációt [Készülékregisztrációs Program (DEP)](https://deploy.apple.com) vagy [Apple School Manager](https://school.apple.com/). Is használhatja ezeket a regisztrációk esetében nagy számú eszközt anélkül, hogy kézbe venné őket. A macOS-eszközöket közvetlenül a felhasználóknak küldheti el. Amikor a felhasználó bekapcsolja az eszközt, a Beállítási asszisztens az előre konfigurált beállítások szerint fut, és regisztrálja az eszközt az Intune felügyeleti szolgáltatásban.
 
 Regisztráció beállítása az Intune és az Apple DEP-portált használja. Regisztrációs profilok, Regisztrálás során az eszközre vonatkozó beállításokat tartalmazó hoz létre.
 

@@ -15,15 +15,15 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 5ea4d41477f2f0c6dc1314e47072d2c4cf862e23
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 637fe2d2c764cf78e67e728bfa77567cf12e88ce
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184828"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031993"
 ---
-# <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Vállalati androidos kioszkeszközök regisztrálásának beállítása
+# <a name="set-up-intune-enrollment-of-android-enterprise-kiosk-devices"></a>Az Android enterprise teljes képernyős eszközök Intune-regisztráció beállítása
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 

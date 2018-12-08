@@ -1,12 +1,12 @@
 ---
-title: Intune-regisztráció beállítása hibrid Active Directoryhoz csatlakoztatott eszközöknél a Windows Autopilot használatával
+title: Az Active Directory hibrid regisztrációs-hez csatlakoztatott eszközök Windows Autopilot használata
 titleSuffix: Microsoft Intune
 description: Hibrid Active Directoryhoz csatlakoztatott eszközök regisztrálása az Intune-ba a Windows Autopilot használatával.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/2/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 2a656a53062e8529541cd067fa32bfc83aee2ea0
-ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
+ms.custom: seodec18
+ms.openlocfilehash: ed404d97b2fe0ccf38a5d3946819fd8225127581
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977320"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032316"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Hibrid Azure AD-hez csatlakoztatott eszközök üzembe helyezése az Intune és a Windows Autopilot használatával (előzetes verzió)
 Az Intune és a Windows Autopilot használatával elvégezheti a hibrid Azure Active Directoryhoz csatlakoztatott eszközök beállítását. Ehhez kövesse az alábbi lépéseket:

@@ -1,12 +1,12 @@
 ---
-title: Eszközök automatikus regisztrációja a Samsung Knox Mobile Enrollmenttel
+title: Samsung Knox mobileszköz beléptetési használata Android-eszközök automatikus regisztrálása
 titlesuffix: Microsoft Intune
 description: Útmutató az Android-eszközök a Samsung KME-vel történő regisztrálásához
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: ''
-ms.date: 05/08/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: f9665c407e80fcfd7cc5d0af4c66d626d2e996e6
-ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
+ms.custom: seodec18
+ms.openlocfilehash: 47627bc9f223c301fd04b88c0080b3a6fea26fe8
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52861064"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032462"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Eszközök automatikus regisztrációja a Samsung Knox Mobile Enrollmenttel
 
@@ -59,7 +59,7 @@ Miután sikeresen regisztrálta a cégét, az alábbi adatokkal létrehozhat egy
 
 ### <a name="for-android-enterprise"></a>Android Enterprise számára
 
-| MDM-profil – mezők| Kötelező? | Értékek | 
+| MDM-profil – mezők| Kötelező? | értékek | 
 |-------------------|-----------|-------| 
 |MDM-kiszolgáló URI-azonosítója     | Nem        |Hagyja üresen a mezőt. 
 |Profilnév       | Igen       |Adjon meg egy profilnevet. 
@@ -75,7 +75,7 @@ Miután sikeresen regisztrálta a cégét, az alábbi adatokkal létrehozhat egy
 
 Lépésenkénti útmutatásért tekintse meg a [ Samsung Knox-profil telepítővarázslójának](https://docs.samsungknox.com/KME-Getting-Started/Content/getting-started-wizard.htm) utasításait.
 
-| MDM-profil – mezők| Kötelező? | Értékek |
+| MDM-profil – mezők| Kötelező? | értékek |
 |-------------------|-----------|-------|
 |MDM-kiszolgáló URI-azonosítója     | Nem        |Hagyja üresen a mezőt.
 |Profilnév       | Igen       |Adjon meg egy profilnevet.

@@ -1,12 +1,12 @@
 ---
-title: Alkalmazás
+title: Alkalmazás típusú entitások referenciája
 titlesuffix: Microsoft Intune
 description: Referencia-témakör az Intune-adattárház API entitásgyűjteményeiben található Alkalmazás kategóriához.
 keywords: Intune-adattárház
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: 32f41e4f299af4802dd270ec4a46c0cf4d467bc9
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 1a6019365b03a54e5897bc8788c171ef969e0d1e
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179133"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032375"
 ---
 # <a name="reference-for-application-entities"></a>Alkalmazás-entitások referencia
 
@@ -40,7 +40,7 @@ Az **AppRevision** entitás listázza az alkalmazások összes verzióját.
 | Tulajdonság  | Leírás | Példa |
 |---------|------------|--------|
 | AppKey |Az alkalmazás egyedi azonosítója. |123 |
-| ApplicationId |Az alkalmazás egyedi azonosítója – Az AppKey-hez hasonlít, de természetes kulcs. |b66bc706-ffff-7437-0340-032819502773 |
+| Alkalmazásazonosító |Az alkalmazás egyedi azonosítója – Az AppKey-hez hasonlít, de természetes kulcs. |b66bc706-ffff-7437-0340-032819502773 |
 | Változat |A bináris feltöltése során a rendszergazda által említett verzió. |2 |
 | Cím |Az alkalmazás címe. |Excel |
 | Kiadó |Az alkalmazás kiadója. |Microsoft |
@@ -67,7 +67,7 @@ Az **AppTypes** entitás az alkalmazás telepítési forrásait listázza.
 
 ### <a name="example"></a>Példa
 
-| AppTypeID  | Név | Leírás |
+| AppTypeID  | Name (Név) | Leírás |
 |---------|------------|--------|
 | 0 |Android store app | Android Áruházbeli alkalmazás. |
 | 1 |Android LOB app | Üzletági Android-alkalmazás. |
@@ -96,7 +96,7 @@ A **VppProgramTypes** entitás az alkalmazás lehetséges VPP-programtípusait l
 
 ### <a name="example"></a>Példa
 
-| VppProgramID  | Név | Leírás |
+| VppProgramID  | Name (Név) | Leírás |
 |---------|------------|--------|
 | 3DDA2474-470B-4503-9830-2665C21C1945 | Microsoft | A Microsoft VPP-programja. |
 | 00000000-0000-0000-0000-000000000000 | Not Yet Available (Még nem érhető el) | Alapértelmezett érték, nincs VPP. |
@@ -112,7 +112,7 @@ Az **ApplicationInventory** entitás a leltárkészítés pillanatában az eszk�
 |---------|------------|
 | DeviceKey | Az Intune-eszközazonosítót tartalmazó eszköztáblára mutató hivatkozás. |
 | DateKey | A leltári napot megadó dátumtáblázat-hivatkozás. |
-| ApplicationName | Az alkalmazás neve. |
+| Alkalmazásnév | Az alkalmazás neve. |
 | ApplicationVersion | Az alkalmazás verziója. |
 | BundleSize | Az alkalmazás mérete bájtban. |
 

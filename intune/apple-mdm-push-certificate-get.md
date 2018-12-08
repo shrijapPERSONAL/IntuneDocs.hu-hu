@@ -1,7 +1,7 @@
 ---
-title: Apple MDM push-tanúsítvány beszerzése
-titlesuffix: Microsoft Intune
-description: Az Apple MDM Push-tanúsítvány beszerzéséhez szükséges lépések ismertetése az iOS-eszközök Intune-nal való felügyeletéhez.
+title: Apple MDM Push-tanúsítvány beszerzése az Intune-hoz
+titlesuffix: ''
+description: Apple MDM Push-tanúsítvány kezelése az Intune-nal iOS-eszközök beszerzése.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,19 +15,19 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 927da6f2e7584cb3b43bede77cfbc19ec91b568a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 053e3f42553268aaeff0502e2cfe05b33b18618b
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189469"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032163"
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Apple MDM push-tanúsítvány beszerzése
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Az Intune lehetőséget nyújt az iPadek, iPhone-ok és Mac számítógépek mobileszköz-felügyeletére (MDM), és hozzáférést biztosít a felhasználóknak a vállalati e-mailjeikhez és alkalmazásaikhoz. Az Intune-nak Apple MDM Push-tanúsítványra van szüksége ahhoz, hogy felügyelni tudja az iOS- és macOS-eszközöket. Miután hozzáadta a tanúsítványt az Intune-hoz, felhasználói a következő segítségével regisztrálhatják az eszközeiket:
+Az Intune-nak Apple MDM Push-tanúsítványra van szüksége ahhoz, hogy felügyelni tudja az iOS- és macOS-eszközöket. Miután hozzáadta a tanúsítványt az Intune-hoz, felhasználói a következő segítségével regisztrálhatják az eszközeiket:
 
 - A Céges portál alkalmazás.
 

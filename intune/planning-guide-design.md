@@ -1,5 +1,5 @@
 ---
-title: Terv létrehozása
+title: A Microsoft Intune-terv létrehozása
 titlesuffix: Microsoft Intune
 description: Ez a cikk segít tervet kidolgozni a kizárólag felhőalapú Microsoft Intune-környezet megtervezéséhez és implementációjához.
 keywords: ''
@@ -15,13 +15,13 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
-ms.custom: ''
-ms.openlocfilehash: 1d8ccd4e432623cf7d0ce4ce66651a95e13b8473
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 1693c61b43b7470bc70dad3bc08ca040fce1d102
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186494"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032554"
 ---
 # <a name="create-a-design"></a>Terv létrehozása
 
@@ -196,7 +196,7 @@ A terv kidolgozásakor tudnia kell, hogy milyen eszközök lesznek a környezetb
 
 ### <a name="devices"></a>Eszközök
 
-Az Intune a mobileszközök felügyelete révén védi a vállalati adatokat és teszi lehetővé, hogy a végfelhasználók több helyszínen is dolgozhassanak. Az Intune több eszközplatformot is támogat, ezért javasolt a szervezet tervében dokumentálnia a támogatni tervezett eszközöket, OS-platformokat és verziókat. Például:
+Az Intune a mobileszközök felügyelete révén védi a vállalati adatokat és teszi lehetővé, hogy a végfelhasználók több helyszínen is dolgozhassanak. Az Intune több eszközplatformot is támogat, ezért javasolt a szervezet tervében dokumentálnia a támogatni tervezett eszközöket, OS-platformokat és verziókat. Példa:
 
 | **Eszközplatform** | **Operációsrendszer-verziók** |
 |:---:|:---:|
@@ -346,7 +346,7 @@ Az alábbi példában az e-mail-profilok dokumentálását szemléltetjük:
 A saját e-mail-profiljainak meghatározásához [letöltheti a fenti táblázat sablonját](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 ### <a name="apps"></a>Alkalmazások
 
-Az Intune-nal többféleképpen is eljuttathat alkalmazásokat a felhasználókhoz vagy az eszközökre. Az alkalmazás többek között szoftvertelepítő, nyilvános alkalmazás-áruházból származó vagy külső hivatkozással elérhető alkalmazás, illetve felügyelt iOS-alkalmazás lehet. Az egyesével történő alkalmazástelepítésen felül a mennyiségi licencelésű alkalmazásokat az iOS és a Windows mennyiségi licencelési programjai keretében is felügyelheti és telepítheti. További információk az alábbiakról:
+Az Intune-nal többféleképpen is eljuttathat alkalmazásokat a felhasználókhoz vagy az eszközökre. Az alkalmazás többek között szoftvertelepítő, nyilvános alkalmazás-áruházból származó vagy külső hivatkozással elérhető alkalmazás, illetve felügyelt iOS-alkalmazás lehet. Az egyesével történő alkalmazástelepítésen felül a mennyiségi licencelésű alkalmazásokat az iOS és a Windows mennyiségi licencelési programjai keretében is felügyelheti és telepítheti. További információk:
 
 -   [Az eljuttatható alkalmazások típusai](app-management.md)
 

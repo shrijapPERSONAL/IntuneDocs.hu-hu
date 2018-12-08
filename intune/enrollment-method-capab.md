@@ -1,7 +1,7 @@
 ---
-title: Intune-funkciók regisztrációs módszer szerint Windows-eszközökhöz
+title: Az Intune regisztrációs módszer lehetőségek Windows-eszközök esetében
 titlesuffix: Microsoft Intune
-description: Megtekintheti, mely funkciókat támogatják az egyes regisztrációs módszerek Windows-eszközökön.
+description: Képességek az egyes Windows-eszközökhöz regisztrációs módszer.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -14,18 +14,18 @@ ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 38bb88015261aa50d6c27aec026614f1205aebe8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: f32a0967c094c16b76ad4c4572ebd8e80c6115b2
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189809"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032129"
 ---
-# <a name="capabilities-by-enrollment-method-for-windows-devices"></a>Funkciók regisztrációs módszer szerint Windows-eszközökhöz
+# <a name="intune-enrollment-method-capabilities-for-windows-devices"></a>Az Intune regisztrációs módszer lehetőségek Windows-eszközök esetében
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Az Intune lehetővé teszi a dolgozók eszközeinek és alkalmazásainak, illetve a céges adatokhoz való hozzáférésük kezelését. Az eszközöket először regisztrálni kell az Intune szolgáltatásban. A dolgozók eszközeit többféleképpen is lehet regisztrálni. Minden módszer eltérő ajánlott eljárásokkal és funkciókkal bír, ahogyan a lenti tábla mutatja.
+Többféleképpen is lehet regisztrálni a dolgozók eszközeit az Intune-ban. Minden módszer eltérő ajánlott eljárásokkal és funkciókkal bír, ahogyan a lenti tábla mutatja.
 
 ## <a name="best-practices-by-enrollment-method"></a>Ajánlott eljárások regisztrációs módszer szerint
 | **Gyakorlati tanácsok** | **[Azure AD-hez csatlakoztatva](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Azure AD-hez csatlakoztatva, Autopilot-eszközzel](enrollment-autopilot.md)** |**[Tömeges](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[CSOPORTHÁZIREND-OBJEKTUM](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** |
