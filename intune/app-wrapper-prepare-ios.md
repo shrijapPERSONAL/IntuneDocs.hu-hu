@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5482d84d22aa7be29a8030dc75a27ba793792e40
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 26bf759722b5cb92bda28b0e60c9365a7edc7710
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182108"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112867"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>iOS-alkalmazások előkészítése alkalmazásvédelmi szabályzatokkal való felügyeletre az Intune alkalmazásburkoló eszközével
 
@@ -28,7 +28,7 @@ ms.locfileid: "52182108"
 
 A Microsoft Intune App Wrapping Tool for iOS nevű alkalmazásburkoló eszközzel engedélyezheti az Intune alkalmazásvédelmi szabályzatait a saját fejlesztésű IOS-alkalmazásokra az alkalmazás kódjának módosítása nélkül.
 
-Az eszköz egy macOS parancssori alkalmazás, amely „burkolót” hoz létre az alkalmazások körül. Az alkalmazások feldolgozását követően az [alkalmazásvédelmi szabályzatok](/intune-classic/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console) érvénybe léptetésével módosíthatja az alkalmazások működését.
+Az eszköz egy macOS parancssori alkalmazás, amely „burkolót” hoz létre az alkalmazások körül. Az alkalmazások feldolgozását követően az [alkalmazásvédelmi szabályzatok](app-protection-policies.md) érvénybe léptetésével módosíthatja az alkalmazások működését.
 
 Az eszköz letöltéséhez keresse fel a [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) weblapot a GitHubon.
 
@@ -127,7 +127,7 @@ Az Intune által burkolt alkalmazások terjesztéséhez az alábbiakra van szük
 
     ![Tanúsítvány kérése hitelesítésszolgáltatótól a Keychain Access alkalmazásban](./media/iOS-signing-cert-6.png)
 
-12. Térjen vissza az Apple fejlesztői webhelyre. Kattintson a **Folytatás**gombra. Töltse fel a CSR-fájlt.
+12. Térjen vissza az Apple fejlesztői webhelyre. Kattintson a **Folytatás** gombra. Töltse fel a CSR-fájlt.
 
 13. Az Apple létrehozza az aláíró tanúsítványt. Töltse le, majd mentse el egy könnyen megtalálható helyre a macOS-számítógépen.
 
@@ -157,7 +157,7 @@ Az Intune által burkolt alkalmazások terjesztéséhez az alábbiakra van szük
 
    ![Belső létesítési profil kiválasztása](./media/iOS-provisioning-profile-1.png)
 
-5. Kattintson a **Folytatás**gombra. Fontos, hogy az előzőekben létrehozott aláíró-tanúsítványt összekapcsolja a létesítési profillal.
+5. Kattintson a **Folytatás** gombra. Fontos, hogy az előzőekben létrehozott aláíró-tanúsítványt összekapcsolja a létesítési profillal.
 
 6. Az útmutató alapján töltse le a profilt (.mobileprovision kiterjesztéssel) a macOS-számítógépre.
 
@@ -220,9 +220,9 @@ Az IntuneMAMPackager/Contents/MacOS mappában nyissa meg a `Parameters.plist` ne
 | Kimeneti alkalmazáscsomag elérési útja |üres| Ugyanaz, mint az -o|
 | Létesítési profil elérési útja |üres| Ugyanaz, mint a -p|
 | SHA-1 tanúsítvány kivonata |üres| Ugyanaz, mint a -c|
-| Részletes üzenetek engedélyezve |hamis| Ugyanaz, mint a -v|
-| Hiányzó jogosultságok eltávolítása | hamis| Ugyanaz, mint a -c|
-| Alapértelmezett build tiltása |hamis | Ugyanaz, mint a -b argumentumok nélkül|
+| Részletes üzenetek engedélyezve |false| Ugyanaz, mint a -v|
+| Hiányzó jogosultságok eltávolítása | false| Ugyanaz, mint a -c|
+| Alapértelmezett build tiltása |false | Ugyanaz, mint a -b argumentumok nélkül|
 |Build sztringjének felülbírálása | üres| A burkolt kimeneti alkalmazás egyéni CFBundleVersion-száma |
 |Bővítménylétesítési profilok elérési útjai | üres| Az alkalmazás bővítménylétesítési profiljainak tömbje.
 
@@ -354,7 +354,7 @@ Az alkalmazást a burkolása előtt *jogosultságok* megadásával további enge
 ### <a name="troubleshoot-common-errors-with-entitlements"></a>A jogosultságokkal kapcsolatos gyakori hibák elhárítása
 Ha az iOS-hez készült alkalmazásburkoló eszköz jogosultsággal kapcsolatos hibát jelenít meg, próbálkozzon az alábbi hibaelhárítási lépésekkel.
 
-|Probléma|Ok|Megoldás|
+|Probléma|Ok|Megoldás:|
 |---------|---------|--------------|
 |Nem sikerült a bemeneti alkalmazás által létrehozott jogosultságok elemzése.|Az alkalmazásburkoló eszköz nem tudja olvasni az alkalmazásból kinyert jogosultságfájlt. Előfordulhat, hogy a jogosultságfájl helytelenül formázott.|Vizsgálja meg az alkalmazásához tartozó jogosultságfájlt. A következő útmutatás elmagyarázza ennek módját. A jogosultságfájl vizsgálatakor ellenőrizze, hogy nem tartalmaz-e hibás szintaxist. A fájlnak XML formátumúnak kell lennie.|
 |A létesítési profilban jogosultságok hiányoznak (a hiányzó jogosultságok listában láthatók). Csomagolja újra az alkalmazást egy olyan létesítési profillal, amely tartalmazza ezeket a jogosultságokat.|A létesítési profilban engedélyezett jogosultságok és az alkalmazásban engedélyezett képességek között eltérés tapasztalható. Ez az eltérés érvényes az adott képességekhez (vagyis az alkalmazáscsoportokhoz, kulcslánc-hozzáféréshez stb.) társított azonosítókra is.|Általában létrehozhat egy új létesítési profilt, amely ugyanazokat a képességeket engedélyezi, mint az alkalmazás. Ha nem egyeznek meg a profil és az alkalmazás között az azonosítók, az alkalmazásburkoló eszköz lecseréli őket (ha tudja). Ha az új létesítési profil létrehozását követően továbbra is megjelenik a hibaüzenet, próbálja meg eltávolítani a jogosultságokat az alkalmazásból az –e paraméter használatával (lásd a „Jogosultságok eltávolítása az alkalmazásból az –e paraméter használatával” című részt).|
@@ -439,5 +439,5 @@ Hibaelhárítás során az alábbi lépésekkel szerezhet be naplófájlokat a b
 
 ### <a name="see-also"></a>Lásd még:
 - [Annak eldöntése, hogyan készíti elő az alkalmazásokat a mobilalkalmazás-kezeléshez a Microsoft Intune-nal](apps-prepare-mobile-application-management.md)</br>
-- [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)</br>
-- [Alkalmazások előkészítése a mobilalkalmazás-felügyeletre az SDK segítségével](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+- [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)</br>
+- [Alkalmazások előkészítése a mobilalkalmazás-felügyeletre az SDK segítségével](app-sdk.md)

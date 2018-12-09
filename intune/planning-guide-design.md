@@ -16,12 +16,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 1693c61b43b7470bc70dad3bc08ca040fce1d102
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: f0159b4d33112e507556ceb53505eedc57ec05f7
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032554"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112986"
 ---
 # <a name="create-a-design"></a>Terv létrehozása
 
@@ -402,7 +402,7 @@ A feltételes hozzáférés csak a megfelelő eszközök számára engedélyezi 
 
 Online elérés esetén döntse el, hogy mely platformokra és felhasználói csoportokra fog vonatkozni feltételes hozzáférési szabályzat. Ezenkívül azt is el kell döntenie, hogy kell-e telepítenie/konfigurálnia az Intune szolgáltatás-összekötőt az Exchange Online-hoz vagy a helyszíni Exchange-hez. További tudnivalók az Intune szolgáltatás-összekötők telepítéséről és konfigurálásáról: <!---these links are correct--->
 
--   [Exchange Online](/intune-classic/deploy-use/intune-service-to-service-exchange-connector)
+-   [Exchange Online](exchange-service-connector-configure.md)
 
 -   [Helyszíni Exchange](exchange-connector-install.md)
 

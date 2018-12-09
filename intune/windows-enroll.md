@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: efb850e0f08c94cfee7948f50411220216eb8418
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9562eb2c8fae49628ac042f28f172fb9f8fd5106
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188067"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112544"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windowsos eszközök regisztrációjának beállítása
 
@@ -102,4 +102,4 @@ A végfelhasználói feladatokkal kapcsolatban lásd: [Információk végfelhasz
 
 ## <a name="next-steps"></a>További lépések
 
-- [Szempontok a Windows-eszközök Azure-beli Intune-nal történő felügyeletéhez](/intune-classic/deploy-use/intune-on-azure).
+- [Szempontok a Windows-eszközök Azure-beli Intune-nal történő felügyeletéhez](intune-legacy-pc-client.md).

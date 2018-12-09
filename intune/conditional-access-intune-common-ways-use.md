@@ -1,6 +1,6 @@
 ---
-title: Feltételes hozzáférés a Microsoft Intune-nal
-titlesuffix: ''
+title: Feltételes hozzáférési forgatókönyvek
+titlesuffix: Microsoft Intune
 description: A cikk azt ismerteti, hogyan használható az Intune feltételes hozzáférése az eszköz- és alkalmazásalapú feltételes hozzáféréshez.
 keywords: ''
 author: brenduns
@@ -14,13 +14,13 @@ ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure; get-started
-ms.openlocfilehash: d7c47e7e82928ea40d0b39dfbb17472441eac4f5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-azure; get-started; seodec18
+ms.openlocfilehash: 7073c5c617806bcf35934aba73bf15a9a195a506
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187667"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112476"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Mik a feltételes hozzáférés használatának szokásos módjai az Intune-ban?
 
@@ -45,7 +45,7 @@ Az Exchange Online és más Office 365-termékek eszközalapú feltételes hozz�
 
 -   További információ az [Intune eszközmegfelelőségéről](device-compliance.md).
 
--   További tudnivalók: [A levelezés, az Office 365 és más szolgáltatások védelme az Intune feltételes hozzáférési funkciójának használatával](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
+-   További tudnivalók: [A levelezés, az Office 365 és más szolgáltatások védelme az Intune feltételes hozzáférési funkciójának használatával](app-based-conditional-access-intune.md).
 
 > [!NOTE]
 > Ha egy Android-eszközön engedélyezi az eszközalapú hozzáférést a Sharepoint Online-hoz, a felhasználónak a következőképpen engedélyeznie kell a **Böngészőalapú hozzáférés engedélyezése** beállítást a regisztrált eszközön:
@@ -125,7 +125,7 @@ Ha a mobileszközökön telepítve van a Mobile Threat Defense ügynöke, az üg
 
 Az Intune és a Mobile Threat Defense integrációja fontos szerepet játszik az eszközkockázat alapján hozott feltételes hozzáférési döntésekben.
 
--   További tudnivalók: [Intune Mobile Threat Defense](https://docs.microsoft.com/intune-classic/deploy-use/mobile-threat-defense).
+-   További tudnivalók: [Intune Mobile Threat Defense](mobile-threat-defense.md).
 
 ### <a name="conditional-access-for-windows-pcs"></a>Feltételes hozzáférés Windows rendszerű számítógépeken
 

@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: db655c49277051267036d76e518cc870757f67c2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fafc9381f59ceb4e78e3e76d24694cd0acdcf8d0
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183043"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112374"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>A Microsoft Intune ismert problémái
 
@@ -29,9 +29,9 @@ ms.locfileid: "52183043"
 
 Ebből a cikkből megismerheti a Microsoft Intune esetleges ismert problémáit.
 
-Ha olyan hibát szeretne jelenteni, amely nem szerepel itt, [nyisson meg egy támogatási kérelmet](get-support.md).
+Ha azt szeretné, hogy jelentése, amely nem szerepel a listán, [nyisson egy támogatási kérést](get-support.md).
 
-Ha új szolgáltatást szeretne igényelni az Intune-hoz, jelentést küldhet el a [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) webhelyen.
+Ha szeretné az Intune új funkciót javasolna, fontolja meg a bejelentés egy [a Microsoft Intune-Feedback](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) jelentést.
 
 ## <a name="migration"></a>Áttelepítés
 
@@ -44,13 +44,13 @@ A klasszikus Azure-portálon létrehozott megfelelőségi szabályzatok hamarosa
 
 ### <a name="intune-legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>Az Intune régebbi számítógépügyfelének funkciói csak a Silverlight-konzolon érhetők el
 
-A Windows 10 rendszert Windows MDM-regisztráción keresztül tudja felügyelni az Azure-beli Intune-portálon. További információt [Az Azure-beli Intune-konzol és az örökölt Intune-számítógépügyfél](https://docs.microsoft.com/intune-classic/deploy-use/intune-on-azure) című témakörben találhat.
+A Windows 10 rendszert Windows MDM-regisztráción keresztül tudja felügyelni az Azure-beli Intune-portálon. További információt [Az Azure-beli Intune-konzol és az örökölt Intune-számítógépügyfél](intune-legacy-pc-client.md) című témakörben találhat.
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>Az Intune által migrálás közben létrehozott csoportok hatással lehetnek más Microsoft-termékek működésére
 
 Ha az Intune-portálról az Azure Portalra migrált, megjelenhet egy **All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421** nevű új csoport. Ez a csoport az Azure Active Directory minden felhasználóját tartalmazza, nem csak az Intune-nal felügyelt felhasználókat. Ez a használat akkor okozhat problémát más Microsoft-termékeknél, ha azt szeretné, hogy valamely meglévő vagy új felhasználók egyetlen csoportnak se legyenek tagjai.
 
-### <a name="status-blades-for-migrated-policies-do-not-work"></a>A migrált szabályzatok állapotpaneljei nem működnek
+### <a name="status-blades-for-migrated-policies-dont-work"></a>A migrált szabályzatok állapotpaneljei nem működnek.
 
 A klasszikus Azure Portalról az Azure Portalra migrált szabályzatok állapotinformációi nem jelennek meg. A klasszikus portálon azonban megnézhetők ezeknek a szabályzatoknak az állapotinformációi. A migrált konfigurációs szabályzatok állapotinformációit akkor jelenítheti meg, ha újra létrehozza őket az Azure Portalon.
 
@@ -58,11 +58,11 @@ A klasszikus Azure Portalról az Azure Portalra migrált szabályzatok állapoti
 
 
 ### <a name="multiple-app-install-prompts-for-certain-vpp-apps"></a>Több alkalmazástelepítési kérelem egyes VPP-alkalmazások esetében
-Előfordulhat, hogy egyes VPP-alkalmazások esetében annak ellenére több alkalmazástelepítési kérelem is megjelenik, hogy az alkalmazások már telepítve vannak a végfelhasználói eszközökön. A problémát az okozza, hogy az **Automatikus alkalmazásfrissítések** beállítás **Be** van kapcsolva a VPP-tokenben, amelyet az Intune Azure Portalra feltöltött.    
+Több alkalmazás telepítése kéri bizonyos VPP-alkalmazásokat, amelyre már telepítve vannak a végfelhasználói eszközökön jelenhet meg. A problémát az okozza, hogy az **Automatikus alkalmazásfrissítések** beállítás **Be** van kapcsolva a VPP-tokenben, amelyet az Intune Azure Portalra feltöltött.    
 
-A probléma elhárításához kapcsolja ki az **Automatikus alkalmazásfrissítések** beállítást a VPP-tokenben. Ehhez nyissa meg a Microsoft Intune-t az Azure Portalon. Az Intune-ban válassza az **Ügyfélalkalmazások** > **iOS VPP-tokenek** lehetőséget. Ezután válassza ki azt a VPP-tokent, amely az érintett alkalmazást telepítette, majd válassza ki a **Szerkesztés** > **Automatikus alkalmazásfrissítések** > **Ki** > **Mentés** lehetőségeket. A másik lehetőség, hogy letiltja az érintett alkalmazás VPP-alkalmazásként történő telepítését, így a továbbiakban nem jelennek meg a telepítési kérelmek sem.    
+A probléma elkerüléséhez letilthatja a **automatikus alkalmazásfrissítések** VPP-token lehetőséget. Ehhez nyissa meg a Microsoft Intune-t az Azure Portalon. Az Intune-ban válassza az **Ügyfélalkalmazások** > **iOS VPP-tokenek** lehetőséget. Ezután válassza ki azt a VPP-tokent, amely az érintett alkalmazást telepítette, majd válassza ki a **Szerkesztés** > **Automatikus alkalmazásfrissítések** > **Ki** > **Mentés** lehetőségeket. A másik lehetőség, hogy letiltja az érintett alkalmazás VPP-alkalmazásként történő telepítését, így a továbbiakban nem jelennek meg a telepítési kérelmek sem.    
 
-Ez az egy ismert probléma a jelenlegi kiadásban. Hamarosan kiadunk egy javítást, amely megoldja a problémát. Ha a javítás telepítve lesz, a felhasználók nem fogják többé ezeket az alkalmazástelepítési kérelmeket megkapni.
+Ez az egy ismert probléma a jelenlegi kiadásban. Megoldja a problémát egy közelgő javítást kell, hogy. Ha a javítás telepítve lesz, a felhasználók nem fogják többé ezeket az alkalmazástelepítési kérelmeket megkapni.
 
 ### <a name="ios-volume-purchased-apps-only-available-in-default-intune-tenant-language"></a>Az iOS mennyiségi programban vásárolt alkalmazások csak az Intune-bérlő alapértelmezés szerinti nyelvén érhetők el
 Az iOS mennyiségi programban vásárolt alkalmazások csak az Intune-fiókéval megegyező országkódnak megfelelő nyelven jelennek meg, és ahhoz rendelhetők. Az Intune csak az Intune-bérlő országkódjával megegyező iTunes területi beállításról származó alkalmazásokat szinkronizálja. Például ha német Intune-fiókkal rendelkezik, és olyan alkalmazást vásárol, amely csak az Egyesült Államok-beli áruházban érhető el, akkor az Intune nem jeleníti meg az alkalmazást.

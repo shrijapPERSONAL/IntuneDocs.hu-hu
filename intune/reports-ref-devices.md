@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 2782190f043a6d0c2d1af52d5a77fd3ce53b739f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 69c8b4a5b786768d315bfe6ec707b8c4b915c93a
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181448"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112935"
 ---
 # <a name="reference-for-devices-entities"></a>Eszközök típusú entitások referenciája
 
@@ -170,7 +170,7 @@ A **ManagementStates** entitás az eszköz állapotáról ad információt. Ezek
 | 2 |RetireFailed | A kivonás parancs sikertelen volt az eszközön. |
 | 3 |WipePending | Az eszközön lévő összes adat törlésére vonatkozó parancs van függőben. |
 | 4 |WipeFailed | Az eszközön lévő összes adat törlésére vonatkozó parancs sikertelen volt az eszközön. |
-| 5 |Sérült | Nem kifogástalan állapot. |
+| 5 |Nem kifogástalan | Nem kifogástalan állapot. |
 | 6 |DeletePending | Törlés parancs van függőben. |
 | 7 |RetireIssued | Kivonás parancs van kiadva az eszközre. |
 | 8 |WipeIssued | Parancs van kiadva az összes adat törlésére. |
@@ -232,7 +232,7 @@ A **Devices** entitás felsorolja az összes kezelt regisztrált eszközt és az
 |---------|------------|
 | DeviceKey | Az eszköz egyedi azonosítója az adattárházban – helyettes kulcs. |
 | DeviceId | Az eszköz egyedi azonosítója. |
-| DeviceName | Az eszköz neve az eszközök elnevezését megengedő platformokon. Más platformokon az Intune hoz létre nevet más tulajdonságok alapján. Ez az attribútum nem minden eszköz esetén elérhető. |
+| Eszköznév | Az eszköz neve az eszközök elnevezését megengedő platformokon. Más platformokon az Intune hoz létre nevet más tulajdonságok alapján. Ez az attribútum nem minden eszköz esetén elérhető. |
 | DeviceTypeKey | Az eszközhöz tartozó eszköztípus attribútum kulcsa. |
 | ClientRegisterationStateKey | Az eszközhöz tartozó ügyfél-regisztrációs állapot attribútum kulcsa. |
 | OwnerTypeKey | Az eszközhöz tartozó tulajdonostípus attribútum (corporate, personal, vagy unknown) kulcsa. |
@@ -258,7 +258,7 @@ A **Devices** entitás felsorolja az összes kezelt regisztrált eszközt és az
 | EasID | Az eszköz EAS-azonosítója, amennyiben az eszközt az Exchange Active Sync szolgáltatás kezeli. |
 | GraphDeviceIsManaged | Az Intune által az Azure AD-ban utoljára beállított kezelési állapot. |
 | GraphDeviceIsCompliant | Az Intune által az Azure AD-ban utoljára beállított megfelelőségi állapot. |
-| Sorozatszám | Az eszköz sorozatszáma, ha elérhető. |
+| a sorozatszám | Az eszköz sorozatszáma, ha elérhető. |
 | EnrolledByUser | Az eszközt regisztráló felhasználónak a Felhasználó tábla userId oszlopára hivatkozó azonosítója. |
 | RowLastModifiedDateTimeUTC | A rekord utolsó módosításának időpontja. |
 | ProcessorArchitecture | Processzor architektúrája. |
@@ -278,7 +278,7 @@ A **DevicePropertyHistory** entitásban ugyanazon tulajdonságok szerepelnek, mi
 |---------|------------|
 | DateKey |A napot megadó dátumtáblázat-hivatkozás. |
 | DeviceKey |Az eszköz egyedi azonosítója az adattárházban – helyettes kulcs. Az Intune-eszközazonosítót tartalmazó eszköztáblára mutató hivatkozás. |
-| DeviceName |Az eszköz neve az eszközök elnevezését megengedő platformokon. Más platformokon az Intune hoz létre nevet más tulajdonságok alapján. Ez az attribútum nem minden eszköz esetén elérhető. |
+| Eszköznév |Az eszköz neve az eszközök elnevezését megengedő platformokon. Más platformokon az Intune hoz létre nevet más tulajdonságok alapján. Ez az attribútum nem minden eszköz esetén elérhető. |
 | DeviceTypeKey |Az eszközhöz tartozó eszköztípus attribútum kulcsa. |
 | ClientRegisterationStateKey |Az eszközhöz tartozó ügyfél-regisztrációs állapot attribútum kulcsa. |
 | OwnerTypeKey |Az eszközhöz tartozó tulajdonostípus attribútum (corporate, personal, vagy unknown) kulcsa. |
@@ -304,7 +304,7 @@ A **DevicePropertyHistory** entitásban ugyanazon tulajdonságok szerepelnek, mi
 | EasID |Az eszköz EAS-azonosítója, amennyiben az eszközt az Exchange Active Sync szolgáltatás kezeli. |
 | GraphDeviceIsManaged |Az Intune által az Azure AD-ban utoljára beállított kezelési állapot. |
 | GraphDeviceIsCompliant |Az Intune által az Azure AD-ban utoljára beállított megfelelőségi állapot. |
-| Sorozatszám |Az eszköz sorozatszáma, ha elérhető. |
+| a sorozatszám |Az eszköz sorozatszáma, ha elérhető. |
 | EnrolledByUser |Az eszközt regisztráló felhasználónak a Felhasználó tábla userId oszlopára hivatkozó azonosítója. |
 | RowLastModifiedDateTimeUTC |A rekord utolsó módosításának időpontja. |
 | ProcessorArchitecture |Processzor architektúrája. |
@@ -316,7 +316,7 @@ A **DevicePropertyHistory** entitásban ugyanazon tulajdonságok szerepelnek, mi
 
 ## <a name="mdmdeviceinventoryhistories"></a>MdmDeviceInventoryHistories
 
-Az **MdmDeviceInventoryHistories** entitás 90 napra visszamenőleg napi pillanatképeket tartalmaz az MDM-kezelésű eszközök leltáradatairól. A DateKey mező a sor napját jelzi. Egyes tulajdonságok esetleg nem vonatkoztathatók vagy tölthetők ki minden eszközre, ezért olvassa át alaposan a ezt az oldalt. További információ: [A regisztrált eszközök áttekintése a Microsoft Intune leltárfunkciójával](https://docs.microsoft.com/Intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-Intune).
+Az **MdmDeviceInventoryHistories** entitás 90 napra visszamenőleg napi pillanatképeket tartalmaz az MDM-kezelésű eszközök leltáradatairól. A DateKey mező a sor napját jelzi. Egyes tulajdonságok esetleg nem vonatkoztathatók vagy tölthetők ki minden eszközre, ezért olvassa át alaposan a ezt az oldalt. További információ: [A regisztrált eszközök áttekintése a Microsoft Intune leltárfunkciójával](device-inventory.md).
 
 | Tulajdonság  | Leírás |
 |---------|------------|
@@ -324,7 +324,7 @@ Az **MdmDeviceInventoryHistories** entitás 90 napra visszamenőleg napi pillana
 | DeviceKey |Az eszköz egyedi azonosítója az adattárházban – helyettes kulcs. Az Intune-eszközazonosítót tartalmazó eszköztáblára mutató hivatkozás. |
 | DeviceModel |Az eszköz típusa. |
 | Operációs rendszer |Az eszköz operációs rendszere. |
-| DeviceName |Az eszköz neve az eszközök elnevezését megengedő platformokon. Más platformokon az Intune hoz létre nevet más tulajdonságok alapján. Ez az attribútum nem minden eszköz esetén elérhető. |
+| Eszköznév |Az eszköz neve az eszközök elnevezését megengedő platformokon. Más platformokon az Intune hoz létre nevet más tulajdonságok alapján. Ez az attribútum nem minden eszköz esetén elérhető. |
 | SoftwareVersion |Az esetek többségében ez az operációs rendszer verziója, kivéve az Apple-platformoknál, ahol ez eltér az operációs rendszer verziójától. |
 | Imei |IMEI-szám |
 | HardwareInventoryTimeUtc |Az eszköz első leltári jelentésének időpontja. |
@@ -354,7 +354,7 @@ Az **MdmDeviceInventoryHistories** entitás 90 napra visszamenőleg napi pillana
 | CertExpiry |Az MDM-felügyeleti tanúsítvány lejárati dátuma. |
 | DeviceClientAgentVersion |Ügyfélügynök verziója. |
 | DeviceClientID |Eszköz ügyfélazonosító. |
-| Sorozatszám |Sorozatszám. |
+| a sorozatszám |Sorozatszám. |
 | DeviceManufacturer |Eszköz gyártója. |
 | DMVersion |DM-verzió. |
 | FirmwareVersion |Belső vezérlőprogram verziója. |
@@ -362,7 +362,7 @@ Az **MdmDeviceInventoryHistories** entitás 90 napra visszamenőleg napi pillana
 | PlatformType |Platform típusa. |
 | ProcessorLevel |Processzor szint. |
 | ProcessorRevision |Processzor-változat. |
-| Termék |Termék. |
+| Product |Termék. |
 | ProductVersion |Termékváltozat. |
 | OEM |Eredeti gyártó. |
 | DeviceBuildVersion |Eszköz build-verziószáma. |
@@ -421,7 +421,7 @@ Az **ApplicationInventory** entitás a leltárkészítés pillanatában az eszk�
 |--------------------|----------------------------------------------------------|
 |     DeviceKey      |              Hivatkozás az Eszközök táblára.               |
 |   ApplicationKey   | ? (ExchangeDeviceService\DeviceApplication helyről másolva). |
-|  ApplicationName   | ? (ExchangeDeviceService\DeviceApplication helyről másolva). |
+|  Alkalmazásnév   | ? (ExchangeDeviceService\DeviceApplication helyről másolva). |
 | ApplicationVersion | ? (ExchangeDeviceService\DeviceApplication helyről másolva). |
 |     BundleSize     | ? (ExchangeDeviceService\DeviceApplication helyről másolva). |
 

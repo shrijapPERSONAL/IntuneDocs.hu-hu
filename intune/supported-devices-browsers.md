@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: c5a0f49079f18b333172698449193fa02db1c704
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 0cea1b958849d6c2422461e85eba57577a65e884
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031857"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112595"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Támogatott operációs rendszereket és böngészőket az Intune-ban
 
@@ -29,7 +29,7 @@ ms.locfileid: "53031857"
 
 A Microsoft Intune beállítása előtt tekintse át a támogatott operációs rendszereket és böngészőket.
 
-A következő témakörökben találhat segítséget az Intune eszközre való telepítéséhez: [Feladatok elvégzése kezelt eszközökön](/intune-user-help/company-portal-frequently-asked-questions) és [Az Intune hálózati sávszélesség-használata](network-bandwidth-use.md) ([klasszikus portál](/intune-classic/get-started/network-bandwidth-use)).
+Az eszközön az Intune telepítésével kapcsolatos útmutatásért lásd: [munkavégzés felügyelt eszközökkel](/intune-user-help/company-portal-frequently-asked-questions) és [az Intune hálózatisávszélesség-felhasználás](network-bandwidth-use.md).
 
 ## <a name="intune-supported-operating-systems"></a>Az Intune által támogatott operációs rendszerek
 
@@ -86,11 +86,11 @@ Az alábbi Samsung-modellek nem támogatják a Knoxot. Ezeket az Androidhoz kés
 
 ### <a name="windows-pc-software-client"></a>Windowsos számítógépeken futó szoftveres ügyfél
 
-A windowsos számítógépekre a regisztráció alternatívájaként telepítheti az [Intune szoftveres ügyfelet](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) is. Ez a funkció csak a klasszikus Intune-portálon érhető el. Az Intune szoftveres ügyfele segítségével a Windows 7 és újabb rendszerű számítógépeket felügyelheti (kivéve a Windows 10 Home verziót).
+A windowsos számítógépekre a regisztráció alternatívájaként telepítheti az [Intune szoftveres ügyfelet](manage-windows-pcs-with-microsoft-intune.md) is. Ez a funkció csak a klasszikus Intune-portálon érhető el. Az Intune szoftveres ügyfele segítségével a Windows 7 és újabb rendszerű számítógépeket felügyelheti (kivéve a Windows 10 Home verziót).
 
 <!--  ### Exchange ActiveSync management
 
-You can manage [Exchange ActiveSync devices](/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune) from the Intune console. This option provides a limited set of management capabilities when compared to the other methods. See [Capabilities of built-in Mobile Device Management in Office 365](https://support.office.com/article/Capabilities-of-built-in-Mobile-Device-Management-for-Office-365-a1da44e5-7475-4992-be91-9ccec25905b0) for a list of supported devices.  -->
+You can manage [Exchange ActiveSync devices](device-enrollment.md#mobile-device-management-with-exchange-activesync-and-intune) from the Intune console. This option provides a limited set of management capabilities when compared to the other methods. See [Capabilities of built-in Mobile Device Management in Office 365](https://support.office.com/article/Capabilities-of-built-in-Mobile-Device-Management-for-Office-365-a1da44e5-7475-4992-be91-9ccec25905b0) for a list of supported devices.  -->
 
 ## <a name="intune-supported-web-browsers"></a>Az Intune által támogatott webböngészők
 

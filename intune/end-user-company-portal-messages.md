@@ -15,12 +15,12 @@ ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 44e7307997df67ad1c1ae6170da3bcc13e99070d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 8c4e5e18c0b995ad84340cdbc07a8a11b09e4f3a
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185049"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112782"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>A Vállalati portál alkalmazás üzeneteinek ismertetése a végfelhasználókkal
 
@@ -108,7 +108,7 @@ Ha nem adta hozzá a Céges portált az **Engedélyezett alkalmazások** vagy a 
 
 ### <a name="what-it-means"></a>Jelentés
 
-Adja hozzá a Céges portált az **Engedélyezett alkalmazások** vagy a **Mentesített alkalmazások** listájához a Windows Információvédelem (WIP) alkalmazásvédelmi szabályzatában. További információ: [A Windows Információvédelem (WIP) alkalmazásvédelmi szabályzatainak létrehozása és bevezetése az Intune használatával](/intune-classic/deploy-use/create-windows-information-protection-policy-with-intune).
+Adja hozzá a Céges portált az **Engedélyezett alkalmazások** vagy a **Mentesített alkalmazások** listájához a Windows Információvédelem (WIP) alkalmazásvédelmi szabályzatában. További információ: [A Windows Információvédelem (WIP) alkalmazásvédelmi szabályzatainak létrehozása és bevezetése az Intune használatával](windows-information-protection-policy-create.md).
 
 ### <a name="see-also"></a>Lásd még:
 [Mit kell tudniuk a végfelhasználóknak az Intune használatáról?](end-user-educate.md)

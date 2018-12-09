@@ -1,5 +1,5 @@
 ---
-title: A Windows Holographic frissítése a Windows Holographic for Business verzióra
+title: Frissítés a Windows Holographic for Business
 titleSuffix: Microsoft Intune
 description: Tudja meg, hogyan frissítheti a Windows Holographic operációs rendszert futtató eszközöket a Windows Holographic for Business verzióra
 keywords: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: da506156a7345b447ecc8e34a8d3ccdcc8e1a732
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 4839206db5e34a039c9e99dd74f5ab1bad328418
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031602"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112340"
 ---
 # <a name="upgrade-devices-running-windows-holographic-to-windows-holographic-for-business"></a>A Windows Holographic operációs rendszert futtató eszközök frissítése a Windows Holographic for Business verzióra
 
