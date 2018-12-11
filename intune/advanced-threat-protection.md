@@ -14,18 +14,18 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: de80092647462f83fb92303080239fd30198bd3c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 1b8d08e60b9cd656eb9467fd5289b9dfc428d183
+ms.sourcegitcommit: 67666682935c44ff6ad003c0da220a79cc42c9c3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180234"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53167994"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>A Windows Defender ATP engedélyezése feltételes hozzáféréssel az Intune-ban
 
 A Windows Defender Komplex veszélyforrások elleni védelem (ATP) és a Microsoft Intune együttesen segít megelőzni a biztonsági incidenseket és mérsékelni a vállalaton belüli incidensek következményeit.
 
-Az a funkció a Windows 10 rendszerű eszközökre vonatkozik
+Ez a funkció az alábbiakra vonatkozik: Windows 10-es eszközök
 
 Tegyük fel, hogy valaki beágyazott rosszindulatú kódot tartalmazó Word-mellékletet küld az egyik vállalaton belüli felhasználónak. A felhasználó megnyitja a mellékletet, és engedélyezi annak tartalmát. Megemelt jogosultsági szintű támadás kezdődik, és a támadó egy távoli számítógépről rendszergazdai jogosultságot szerez az áldozat eszközén. A támadó ezután távolról hozzáfér a felhasználó többi eszközéhez is.
 
@@ -51,7 +51,7 @@ Az ATP Intune-nal való használatához a következőknek konfigurálva és hasz
 
 ## <a name="enable-windows-defender-atp-in-intune"></a>A Windows Defender ATP engedélyezése az Intune-ban
 
-1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
 3. Válassza az **Eszközmegfelelőség** > **Windows Defender ATP** > **A Windows Defender biztonsági központ megnyitása** lehetőséget.
 
@@ -66,7 +66,7 @@ Az ATP Intune-nal való használatához a következőknek konfigurálva és hasz
     3. Válassza a **Beállítások mentése** lehetőséget.
 
 5. Az Intune-ba visszatérve válassza az **Eszközmegfelelőség** > **Windows Defender ATP** lehetőséget. Adja meg a **10.0.15063 vagy újabb verziójú windowsos eszközök csatlakoztatása a következőhöz: Windows Defender ATP** beállításnál a **Be** értéket.
-6. Válassza a **Mentés** lehetőséget.
+6. Kattintson a **Mentés** gombra.
 
 Ezt a feladatot általában egyszer kell elvégezni. Ha tehát az ATP már engedélyezve van az Intune-erőforrásában, akkor nem szükséges megismételnie.
 
@@ -89,13 +89,13 @@ Miután egyszer védelem alá vont egy eszközt egy konfigurációs csomaggal, n
 5. A **Profiltípus** beállításnál válassza a **Windows Defender Komplex veszélyforrások elleni védelem (Windows 10 asztali verzió)** lehetőséget.
 6. A beállítások konfigurálása:
 
-  - **A Windows Defender ATP ügyfélkonfigurációs csomagjának típusa**: Válassza a **Bevezetés** lehetőséget a konfigurációs csomag profilhoz adásához. A **Regisztráció megszüntetése** lehetőséget választva eltávolíthatja profilból a konfigurációs csomagot.
+  - **A Windows Defender ATP ügyféltípus konfigurációs csomag**: Válassza ki **verziójába való felvételével** a konfigurációs csomag hozzáadása a profilhoz. A **Regisztráció megszüntetése** lehetőséget választva eltávolíthatja profilból a konfigurációs csomagot.
   
     > [!NOTE] 
-    > Ha sikerült kapcsolatot létrehoznia a Windows Defender ATP-vel, az Intune automatikusan **Regisztrálja** a konfigurációs profilt.
+    > Létrehozta a kapcsolatot a Windows Defender ATP megfelelően, ha az Intune automatikusan **verziójába való felvételével** a konfigurációs profil, és a **Windows Defender ATP konfigurációs csomag ügyféltípus** beállítás nem érhető el.
   
-  - **Minták megosztása minden fájlhoz**: **Engedélyezve** lehetővé teszi minták gyűjtését és megosztását a Windows Defender ATP-vel. Ha például gyanús fájlt talál, elküldheti a Windows Defender ATP-nek alapos elemzésre. **Nem konfigurálva** nem oszt meg mintákat a Windows Defender ATP számára.
-  - **Telemetriai jelentések gyakoriságának növelése**: Magas kockázatnak kitett eszközök ennek a beállításnak az **Engedélyezésével** gyakrabban jelentik a telemetriai adatokat a Windows Defender ATP szolgáltatásnak.
+  - **Minták megosztása minden fájlhoz**: **Engedélyezése** engedélyezi minták gyűjtését és megosztását a Windows Defender ATP. Ha például gyanús fájlt talál, elküldheti a Windows Defender ATP-nek alapos elemzésre. **Nem konfigurálva** nem oszt meg mintákat a Windows Defender ATP számára.
+  - **Telemetriai jelentések gyakoriságának növelése**: Magas kockázatú eszközök **engedélyezése** ezt a beállítást, így gyakran a Windows Defender ATP szolgáltatásnak jelentések, telemetriai adatokat.
 
     A [Windows 10 rendszerű gépek bevonása a System Center Configuration Manager használatával](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-sccm-windows-defender-advanced-threat-protection) részletesebben ismerteti ezeket a Windows Defender ATP-beállításokat.
 
@@ -110,10 +110,10 @@ A megfelelőségi szabályzat határozza meg egy eszközön a kockázat elfogadh
 4. A **Platform** beállításnál válassza a **Windows 10 és újabb** lehetőséget.
 5. A **Windows Defender ATP** beállításainál adja meg **A következő vagy ez alatti számítógép-kockázati pontszám megkövetelése** Ön által választott értékét:
 
-  - **Tiszta**: Ez a szint a legbiztonságosabb. Az eszköz csak akkor fér hozzá a céges erőforrásokhoz, ha semmilyen veszélyforrás nincs rajta. Ha bármilyen veszélyforrás észlelhető, az eszköz nem megfelelőnek minősül.
-  - **Alacsony**: Az eszköz csak abban az esetben minősül megfelelőnek, ha kizárólag alacsony szintű veszélyforrások állnak fenn. A közepes vagy magas fenyegetettségi szintű eszközök nem megfelelők.
-  - **Közepes**: Az eszköz abban az esetben minősül megfelelőnek, ha az eszközön észlelt veszélyforrások alacsony vagy közepes szintűek. Magas szintű fenyegetések észlelése esetén az eszköz nem megfelelőnek minősül.
-  - **Magas**: Ez a legkevésbé biztonságos, minden fenyegetettségi szintet megengedő beállítás. Az ilyen eszközök magas, közepes és alacsony szintű fenyegetettség esetén is megfelelőnek minősülnek.
+  - **Egyértelmű**: Ez a szint a legbiztonságosabb lehetőség. Az eszköz csak akkor fér hozzá a céges erőforrásokhoz, ha semmilyen veszélyforrás nincs rajta. Ha bármilyen veszélyforrás észlelhető, az eszköz nem megfelelőnek minősül.
+  - **Alacsony**: Az eszköz akkor minősül megfelelőnek, ha vonatkozásában kizárólag alacsony szintű veszélyforrások. A közepes vagy magas fenyegetettségi szintű eszközök nem megfelelők.
+  - **Közepes**: Az eszköz nem megfelelőnek, ha az eszközön észlelt fenyegetések alacsony vagy közepes. Magas szintű fenyegetések észlelése esetén az eszköz nem megfelelőnek minősül.
+  - **Magas**: Ez a szint a legkevésbé biztonságos, és minden kockázati szintet. Az ilyen eszközök magas, közepes és alacsony szintű fenyegetettség esetén is megfelelőnek minősülnek.
 
 6. Válassza az **OK**, majd a **Létrehozás** lehetőséget a változások mentéséhez (ezzel létrejön a szabályzat).
 
