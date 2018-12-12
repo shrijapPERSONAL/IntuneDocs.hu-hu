@@ -1,12 +1,12 @@
 ---
 title: Felhasználók és eszközök társítása – Intune-adattárház
 titlesuffix: Microsoft Intune
-description: Az Intune-adattárház API módosításai.
+description: A UserDeviceAssociation entitás tartalmazza felhasználói a szervezetben.
 keywords: Intune-adattárház
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,20 +15,20 @@ ms.assetid: 777484A7-09CE-4409-987F-76B3F87DFE93
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: a207c0f9e7f1890d88ca233df6f4c53a32aed51b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-classic; seodec18
+ms.openlocfilehash: 8655122b1aa0ce809d1b63e8b40e61aea6bbd285
+ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189792"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266885"
 ---
 # <a name="user-device-association"></a>Felhasználók és eszközök társítása
 
 A **UserDeviceAssociation** entitás tartalmazza a szervezet felhasználói hozzárendeléseit.
 
 
-|        Név        |                                           Leírás                                            |        Példa         |
+|        Name (Név)        |                                           Leírás                                            |        Példa         |
 |--------------------|--------------------------------------------------------------------------------------------------|------------------------|
 |      UserKey       |              A felhasználó egyedi azonosítója az adattárházban. (Helyettes kulcs).               |          123           |
 |     DeviceKey      |                      Az eszköz egyedi azonosítója az adattárházban.                      |          123           |

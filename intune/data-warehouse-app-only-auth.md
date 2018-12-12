@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b72a0bf1a5f5c996ad299bd84ff6f927ef780059
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 8da448ece30c1ae90c447f27056f19f74b16dd90
+ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185202"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247135"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Alkalmazásalapú hitelesítés az Intune-adattárházban
 
@@ -40,7 +40,7 @@ Az alábbi eljárás egy privát metódus segítségével dolgoz fel és konvert
 
 Ebben a szakaszban az Intune-ra irányítani kívánt webalkalmazás adatait fogja megadni. A webalkalmazások ügyfél-kiszolgáló alkalmazások. A kiszolgáló szolgáltatja a webalkalmazást, amely tartalmazza a felhasználói felületet, a tartalmat és a funkciókat. Az ilyen típusú alkalmazásokat külön, a weben kezelik. Az Intune segítségével tud hozzáférést adni a webalkalmazásnak az Intune-hoz. Az adatforgalmat a webalkalmazás kezdeményezi. 
 
-1.  Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+1.  Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2.  Az Azure Portal tetején lévő **Erőforrások, szolgáltatások és dokumentumok** mezőben keressen az **Azure Active Directory** kifejezésre.
 3.  A legördülő listában válassza a **Szolgáltatások** csoportban látható **Azure Active Directory** lehetőséget.
 4.  Válassza az **Alkalmazásregisztrációk** lehetőséget.
@@ -75,7 +75,7 @@ Ebben a szakaszban létre fog hozni egy kulcsértéket az alkalmazáshoz az Azur
 Ebben a szakaszban az alkalmazás engedélyeit fogja megadni.
 
 1.  Válassza a **Szükséges engedélyek** lehetőséget a **Beállítások** panelen.
-2.  Kattintson a **hozzáadása**.
+2.  Kattintson a **Hozzáadás**lehetőségre.
 3.  Válassza az **API hozzáadása** lehetőséget az **API kiválasztása** panel megjelenítéséhez.
 4.  Válassza a **Microsoft Intune API (MicrosoftIntuneAPI)** lehetőséget, majd a **Kiválasztás** lehetőséget az **API kiválasztása** panelen. Ekkor az **Engedélyek kiválasztása** lépés lesz kijelölve, és megjelenik a **Hozzáférés engedélyezése** panel.
 5.  Válassza a **Get data warehouse information from Microsoft Intune** (Adattárház-információk beolvasása a Microsoft Intune-ból) lehetőséget az **Alkalmazásengedélyek** szakaszban.

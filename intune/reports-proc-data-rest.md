@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: bcd4d9177bcefc1e026bc55831e589a5bcb57105
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e5040626a27f50fae4df2ec2472d167269a282e4
+ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185987"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247271"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Adatok beolvasása az Intune-adattárház API-ból REST-ügyféllel
 
@@ -45,7 +45,7 @@ Hozzon létre egy natív alkalmazást az Azure-ben. Ez a natív alkalmazás az �
     1.  A **Név** mezőben adjon meg egy felhasználóbarát nevet, például azt, hogy „Intune-adattárházügyfél”.
     2.  Az **Alkalmazástípus** mezőben válassza a **Natív** lehetőséget.
     3.  Írjon be egy URL-címet a **Bejelentkezési URL-cím** mezőbe. A bejelentkezési URL-cím az adott forgatókönyvtől is függ, azonban ha a Postman alkalmazást tervezi használni, a következő címet írja be: `https://www.getpostman.com/oauth2/callback`. A visszahívásra az ügyfél-hitelesítési lépésben lesz szükség a Microsoft Azure AD-beli hitelesítéshez.
-4.  Válassza a **Létrehozás** lehetőséget.
+4.  Kattintson a **Létrehozás** gombra.
 
      ![Intune-adattárház API](./media/reports-get_rest_data_client_overview.png)
 
@@ -67,7 +67,7 @@ Most már rendelkezik egy Azure-ban definiált alkalmazással. Gondoskodjon arr�
     ![Hozzáférés engedélyezése – Microsoft Intune API](./media/reports-get_rest_data_client_access.png)
 
 9.  Válassza a **Kiválasztás** lehetőséget.
-10.  Válassza a **Kész** lehetőséget.
+10.  Válassza a **Done** (Kész) lehetőséget.
 11.  A Szükséges engedélyek panelen választhatja az **Engedélyek megadása** lehetőséget. Így az aktuális címtár minden fiókjának adható hozzáférés. Ezáltal elkerülhető, hogy a hozzájárulási párbeszédpanel a bérlő összes felhasználójánál megjelenjen. További információt az [Integrating applications with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) (Alkalmazások integrációja az Azure Active Directory-val) című témakörben találhat.
 12.  Válassza az **Igen** lehetőséget.
 
@@ -93,7 +93,7 @@ A következők szükségesek REST-hívások a Postman alkalmazásból való vég
 
 A végpont is szükséges. Az adattárház-végpont beszerzéséhez szükséges az egyedi hírcsatorna URL-címe. Az OData-végpont az Adattárház panelen érhető el.
 
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Egyéb feladatok** szakaszban válassza az **Intune-adattárház beállítása** lehetőséget.
 4. Másolja be az egyedi hírcsatorna URL-címét a **Külső gyártótól származó jelentéskészítési szolgáltatások használata** szakaszba. Az eredménynek a következőhöz hasonlónak kell lennie: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
@@ -141,7 +141,7 @@ Ahhoz, hogy beszerezzen egy új hozzáférési jogkivonatot a Postman számára,
 
 #### <a name="send-the-call-to-the-endpoint-using-postman"></a>Küldje el a hívást a végpontra a Postman alkalmazással.
 
-1.  Válassza a **Küldés** lehetőséget.
+1.  Kattintson a **Küldés** gombra.
 2.  A visszaadott adatok a Postman-válasz törzsében jelennek meg.
 
     ![Postman 200OK](./media/reports-postman_200OK.png)

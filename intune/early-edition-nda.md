@@ -17,17 +17,17 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 35298713738c666ca19d57e647412729a85bbc4a
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 77aa0d1544351adaa8d338bc7c4c7182d35941e8
+ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112833"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53267021"
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2018"></a>A előzetes kiadása – 2018. December a Microsoft Intune
 
 > [!Note]
-> Titoktartási szerződés hatálya alá tartozó tájékoztatás: A következő változtatások vannak fejlesztés alatt az Intune-hoz. Az itt, nagyon szűk körben megosztott információkra titoktartási szerződés vonatkozik. Az információk egy részletét se tegye közzé közösségi médiában vagy nyilvános webhelyeken, például Twitteren, UserVoice-on, Redditen vagy hasonlón. 
+> NDA-értesítés: A következő változtatások vannak fejlesztés alatt az Intune-hoz. Az itt, nagyon szűk körben megosztott információkra titoktartási szerződés vonatkozik. Az információk egy részletét se tegye közzé közösségi médiában vagy nyilvános webhelyeken, például Twitteren, UserVoice-on, Redditen vagy hasonlón. 
 
 Ez az **előzetes kiadás** a Microsoft Intune következő verzióiban található funkciók listáját tartalmazza, titoktartási szerződés hatálya alatt. Az információkat szűk körben bocsátjuk rendelkezésre, és a későbbiekben változhatnak. Az információkat ne tweetelje, ne tegye közzé a UserVoice-on, és más módon se ossza meg a vállalatán kívül. Fennáll a kockázata, hogy az itt felsorolt funkciók nem készülnek el a kitűzött határidőig, és csak egy későbbi kiadásban lesznek elérhetők. Más funkciók próbaüzemben működnek (fokozatos bevezetéssel), hogy meggyőződjünk arról, hogy készen állnak a használatra. Esetleges kérdéseivel és észrevételeivel forduljon a Microsoft-termékcsoport kapcsolattartójához.
 
@@ -49,12 +49,12 @@ Android-eszközökhöz a egy nem regisztrált alkalmazás alkalmazásvédelmi sz
 ### <a name="new-options-to-automatically-connect-and-persist-rules-when-using-dns-settings-on-windows-10-and-later-devices----1333665-2999078---"></a>Automatikus csatlakozás és szabályok továbbra is fennáll, DNS-beállítások használata a Windows 10-es és újabb rendszerű eszközök esetén új beállítások <!-- 1333665, 2999078 -->
 Windows 10 és újabb rendszerű eszközök lesz képes feloldani a tartományok, mint a contoso.com DNS-kiszolgálók listáját tartalmazó VPN konfigurációs profil létrehozásához. Ez magában foglalja a névfeloldáshoz új beállítások (**eszközkonfiguráció** > **profilok** > **profil létrehozása** > kiválasztása **Windows 10-es és újabb verziók** tartozó platform > Válasszon **VPN** profiltípus > **DNS-beállítások** >**Hozzáadás**): 
 
-- **Automatikus csatlakozás**: amikor **engedélyezve**, az eszköz automatikusan csatlakozik a VPN-t, amikor egy eszköz kapcsolatba lép az ad meg, például a contoso.com tartományhoz.
-- **Állandó**: alapértelmezés szerint minden névfeloldási házirend táblája (NRPT) szabályok aktívak, amíg az eszköz csatlakoztatva van, a VPN-profil használatával. Ha a beállítás értéke **engedélyezve** az NRPT-szabály, a szabály aktív marad az eszközön, akkor is, ha a VPN bontja a kapcsolatot, vagy a VPN-profil eltávolítása. A szabály marad, amíg azt manuálisan nem törlik, amely végezhető PowerShell használatával.
+- **Automatikus csatlakozás**: Amikor **engedélyezve**, az eszköz automatikusan csatlakozik a VPN-t, amikor egy eszköz kapcsolatba lép az ad meg, például a contoso.com tartományhoz.
+- **Állandó**: Alapértelmezés szerint minden névfeloldási házirend táblája (NRPT) szabályok aktívak, amíg az eszköz csatlakoztatva van, a VPN-profil használatával. Ha a beállítás értéke **engedélyezve** az NRPT-szabály, a szabály aktív marad az eszközön, akkor is, ha a VPN bontja a kapcsolatot, vagy a VPN-profil eltávolítása. A szabály marad, amíg azt manuálisan nem törlik, amely végezhető PowerShell használatával.
 
 [A Windows 10-es VPN-beállítások](vpn-settings-windows-10.md) ismerteti a jelenlegi beállítások listájában. 
 
-### <a name="use-smime-to-encrypt-and-sign-a-users-multiple-devices-----1333642-eeready---"></a>S/MIME használata titkosításhoz és aláíráshoz egy felhasználó több eszközén <!-- 1333642 eeready -->
+### <a name="use-smime-to-encrypt-and-sign-multiple-devices-for-a-user----1333642-eeready---"></a>Titkosítása és aláírás egy felhasználó több eszközt, az S/MIME használata <!-- 1333642 eeready -->
 S/MIME e-mail titkosításának importált tanúsítványprofillal is támogatott lesz (**eszközkonfiguráció** > **profilok** > **profillétrehozása** > Válassza ki a platformot > **importált PKCS-tanúsítvány** profil típusa). Az Intune-ban a tanúsítványok PFX formátumban importálhatók. Az Intune képes ugyanazokat a tanúsítványokat az egy felhasználó által regisztrált több eszközre is telepíteni. Ez a következőket is magában foglalja:
 
 - A natív iOS-es e-mail-profil támogatja az S/MIME titkosítás PFX formátumú importált tanúsítványok használatával történő engedélyezését.
@@ -63,7 +63,7 @@ S/MIME e-mail titkosításának importált tanúsítványprofillal is támogatot
 - Más platformokon az S/MIME engedélyezéséhez szükség lehet a levelező alkalmazás manuális konfigurálására.  
 - Az S/MIME titkosítást támogató e-mail-alkalmazások esetleg az MDM által nem támogatható módon kezelik az S/MIME e-mail-titkosításhoz szükséges tanúsítványok fogadását, például a közzétevőjük tanúsítványtárából olvassák ki azokat.
 
-Támogatott a következőkön: Windows, Windows Phone 10, macOS, iOS, Android
+Támogatott a következő rendszereken: Windows, Windows Phone 10-es, macOS, iOS, Android
 
 ### <a name="help-and-support-page-in-the-windows-company-portal-app----1488939---"></a>Súgó és támogatás lapjáról a Windows céges portál alkalmazásban <!-- 1488939 -->
 Egy új lapot a rendszer felveszi a Windows céges portál alkalmazásba. A Súgó és támogatási oldallal biztosítja a segélyszolgálat kapcsolattartási adatait. A végfelhasználók is tud küldeni a céges portál naplózza, abban az esetben, ha problémái vannak lesz. Az oldal is tartalmaz, amelyek segítik a végfelhasználók számára egy gyakori kérdésekkel foglalkozó szakaszban.
@@ -77,10 +77,10 @@ Az Intune App SDK IOS rendszerhez készült 256 bites titkosítási kulcsok fogj
 
 ### <a name="enabled-shared-pc-settings-in-intune-profile----1907917---"></a>Engedélyezve van a megosztott számítógép-beállítások az Intune-profil <!-- 1907917 -->
 Jelenleg konfigurálhatja a megosztott PC-beállítások Windows 10 rendszerű asztali eszközökön egy egyéni OMA-URI beállítás használatával. Új profil megjelenik a megosztott PC-beállítások konfigurálása (**eszközkonfiguráció** > **profilok** > **profil létrehozása**  >  **Windows 10 és újabb** > **megosztott több felhasználó-eszköz**).
-A következőkre vonatkozik: Windows 10 és újabb, a Windows Holographic for Business
+A következőkre vonatkozik: A Windows 10 és újabb verziók, Windows Holographic for Business
 
 ### <a name="intune-policies-update-authentication-method-and-company-portal-app-installation-----1927359---"></a>Intune-házirendek frissítése a hitelesítési módszert, és a vállalati portál alkalmazás telepítése  <!-- 1927359 -->
-Az Intune többé nem támogatja a vállalati portál alkalmazást, ha telepítve van az App Store áruházból, az egyes eszközökön. Ez a változás csak akkor jelentősége, amikor Ön az Apple beállítási asszisztens regisztráció során hitelesítsék magukat. Ez a változás csak is hatással van a regisztrált iOS-eszközöket:  
+A beállítási asszisztenssel keresztül egy Apple vállalati tulajdonú eszközök regisztrálási módszerei már regisztrált eszközök, az Intune már nem támogatja a vállalati portál manuális telepítés a végfelhasználók az app store áruházból. Ez a változás csak akkor jelentősége, amikor Ön az Apple beállítási asszisztens regisztráció során hitelesítsék magukat. Ez a változás csak is hatással van a regisztrált iOS-eszközöket:  
 * Az Apple configuratorral
 * Apple üzleti vezető
 * Apple School Manager
@@ -108,7 +108,7 @@ Létrehozhat egy e-mail-profilt, amely tartalmazza a különböző beállításo
 [iOS e-mail-konfigurációs beállítások](email-settings-ios.md) aktuális beállításokat sorolja fel.
 
 ### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509---"></a>Hagyja ki a további beállítási asszisztens képernyők az iOS DEP-eszközökön <!-- 2687509 -->
-A képernyők jelenleg kihagyhatja, mellett állíthatja be az iOS DEP-eszközök a beállítási asszisztens képernyőinek kihagyásához amikor egy felhasználó regisztrálja az eszközt lesz: megjelenítési képviselő hangvételét, adatvédelmi, Android-áttelepítés, kezdőlap gombot, iMessage & FaceTime, előkészítés, Tekintse meg az áttelepítést, a Megjelenés képernyő, szoftverfrissítés SIM konfigurálás.
+A képernyők jelenleg kihagyhatja, mellett is elérheti beállítása az iOS DEP-eszközök a beállítási asszisztens képernyőinek kihagyásához amikor egy felhasználó regisztrálja az eszközt: Képviselő hangvételét, adatvédelmi, Android áttelepítési, kezdőlap gombot, iMessage & FaceTime, bevezetési, tekintse meg a Migrálási, megjelenését, képernyő idő, szoftverfrissítés, SIM telepítő megjelenítéséhez.
 Válassza ki, amely a képernyők kihagyásához, lépjen a **eszközregisztráció** > **Apple-regisztráció** > **Készülékregisztrációs programbeli token** > Válasszon egy tokent > **Profilok** > Válasszon egy profilt > **tulajdonságok** > **beállítási asszisztens testreszabása** > Válasszon **elrejtése**  bármely képernyők kihagyásához a > **OK**.
 
 ### <a name="some-bitlocker-settings-support-windows-10-pro-edition---2727036---"></a>Néhány BitLocker-beállítások támogatja a Windows 10 Pro kiadás<!-- 2727036 -->
@@ -145,12 +145,12 @@ Engedélyezheti a mindig bekapcsolt VPN **eszközkonfiguráció** > **profilok**
 ### <a name="new-setting-to-end-processes-in-task-manager-on-windows-10-devices----3285177---"></a>Új beállítás az end folyamatok a Feladatkezelő Windows 10 rendszerű eszközökön <!-- 3285177 --> 
 A frissítés tartalmaz egy új beállítás a Feladatkezelő használatát a Windows 10 rendszerű eszközökön folyamatait. Eszközkonfigurációs profil használatával (**eszközkonfiguráció** > **profilok** > **profil létrehozása** > a **Platform** , válassza a **Windows 10-es** > a **profiltípus**, válassza a **eszközkorlátozások** > **általános** beállítások), engedélyezése vagy tiltása, ezt a beállítást választja.
 A jelenlegi beállítások megtekintéséhez lépjen a [Windows 10-es eszközkorlátozási beállítások](device-restrictions-windows-10.md).
-A Windows 10 és újabb verziókra vonatkozik
+A következőkre vonatkozik: Windows 10 és újabb
 
 ### <a name="administrative-templates-are-in-public-preview-and-moved-to-their-own-configuration-profile----3322847---"></a>Felügyeleti sablonok nyilvános előzetes verzióban érhetők el, és átkerülnek a saját konfigurációs profil <!-- 3322847 -->
-Az Intune-ban a felügyeleti sablonok (**eszközkonfiguráció** > **felügyeleti sablonok**) jelenleg privát előzetes verzióban érhető el. Ezzel a frissítéssel: felügyeleti sablonok kezelheti körülbelül 300 beállításokat tartalmaz az Intune-ban. Korábban ezek a beállítások csak megtalálható a Helyicsoportházirend-szerkesztő.
+Az Intune-ban a felügyeleti sablonok (**eszközkonfiguráció** > **felügyeleti sablonok**) jelenleg privát előzetes verzióban érhető el. Ez a frissítés: Felügyeleti sablonok az Intune-ban kezelheti körülbelül 300 beállításokat tartalmaz. Korábban ezek a beállítások csak megtalálható a Helyicsoportházirend-szerkesztő.
 Felügyeleti sablonok érhetők el a nyilvános előzetes verzióban felügyeleti sablonok helyez át a **eszközkonfiguráció** > **felügyeleti sablonok** való **eszköz konfigurációs** > **profilok** >**profil létrehozása** > a **Platform**, válassza a  **Windows 10 és újabb**, a **profiltípus**, válassza a **felügyeleti sablonok**.
-Engedélyezve van a jelentéskészítő vonatkozik: Windows 10 és újabb verziók
+Jelentéskészítés engedélyezve van a következőkre vonatkozik: Windows 10 és újabb
 
 
 <!-- 1810 start -->
@@ -166,10 +166,10 @@ Hatókörcímke konfigurációs profilhoz való hozzáadásához válassza az **
 
 ### <a name="tenant-health-dashboard----1124854---"></a>Bérlőállapot-figyelő irányítópult <!-- 1124854 -->
 Az Intune Bérlő állapota oldala egyetlen helyen nyújt információkat a bérlő állapotát illetően. Az oldal 4 szakaszból áll:  
-- **Bérlő adatai**: Olyan információkat tartalmaz, mint az MDM-szolgáltató, a bérlőn regisztrált eszközök teljes száma és a licencek száma. Ebben a szakaszban található a bérlő jelenlegi szolgáltatáskiadása is.
-- **Összekötő állapota**: Információkat tartalmaz a konfigurált összekötőkről, például az Apple VPP-ről, a Vállalati Windows Store-ról és a tanúsítvány-összekötőkről. Az összekötők az aktuális állapotuk alapján *Kifogástalan*, *Figyelmeztetés* vagy *Nem kifogástalan* jelölést kapnak.
-- **Intune-szolgáltatás állapota**: A bérlő aktív incidenseit vagy leállásait tartalmazza. Az ebben a szakaszban szereplő információk közvetlenül az Office Üzenetközpontból ([https://portal.office.com](https://portal.office.com)) származnak.
-- **Intune-hírek**: A bérlő aktív üzeneteit tartalmazza, például az arról szóló értesítéseket, ha a bérlő megkapta a legújabb Intune-funkciókat. Az ebben a szakaszban szereplő információk közvetlenül az Office Üzenetközpontból ([https://portal.office.com](https://portal.office.com)) származnak.
+- **Bérlő részletei**: Olyan információkat tartalmaz az MDM-szolgáltató, például az összes beléptetett eszközök esetén a bérlőben, és a licencek számát. Ebben a szakaszban található a bérlő jelenlegi szolgáltatáskiadása is.
+- **Összekötő állapota**: A konfigurált összekötők, például az Apple VPP for Business, a Windows Store információkat tartalmaz, és a tanúsítvány-összekötőt. Az összekötők az aktuális állapotuk alapján *Kifogástalan*, *Figyelmeztetés* vagy *Nem kifogástalan* jelölést kapnak.
+- **Az Intune szolgáltatás állapotát**: Aktív incidens által érintett vagy valamilyen okból kimaradás lép tartalmazza a bérlő számára. Az ebben a szakaszban szereplő információk közvetlenül az Office Üzenetközpontból ([https://portal.office.com](https://portal.office.com)) származnak.
+- **Az Intune hírek**: Aktív üzenetek tartalmazza a bérlő, amelyek közé tartozik többek között az értesítéseket, hogy a bérlő megkapta-e a legújabb Intune-funkciók. Az ebben a szakaszban szereplő információk közvetlenül az Office Üzenetközpontból ([https://portal.office.com](https://portal.office.com)) származnak.
 
 
 ### <a name="deployed-wip-policies-without-user-enrollment----1434452---"></a>Felhasználói regisztráció nélkül telepített WIP-szabályzatok <!-- 1434452 -->

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: b613f364-0150-401f-b9b8-2b09470b34f4
 ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 86f0892fe855201b9bdb28d61301353f6588954a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: cd43bfda69b42fb81a72d520d169fe1785161f65
+ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188126"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53267011"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Alkalmazások telepítésével kapcsolatos problémák elhárítása
 
@@ -30,7 +30,7 @@ A Microsoft Intune MDM által felügyelt eszközökön néha sikertelenek lehetn
 
 Az Intune az adott felhasználók eszközein telepített alkalmazások alapján szolgáltat hibaelhárítási információkat.
 
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza a **Hibaelhárítás** lehetőséget.
 4. A felhasználó kiválasztásához kattintson a **Felhasználó kijelölése** lehetőségre. Ekkor megjelenik a **Felhasználók kijelölése** panel.
@@ -84,6 +84,19 @@ Az alábbi hibaüzenetek és leírások az Androidos és iOS-es telepítési hib
 |    A felhasználó visszautasította az alkalmazás frissítésére vonatkozó ajánlatot. (0x87D13B63)    |    A frissítési folyamat során a végfelhasználó a megszakítás lehetőségre kattintott.     |
 |    Ismeretlen hiba (0x87D103E8)    |    Ismeretlen alkalmazástelepítési hiba történt. Ez a hiba akkor jelenik meg, ha a másik hiba nem következett be.    |
 
+### <a name="other-installation-errors"></a>Egyéb telepítési hibák
+
+|    Üzenet/hibakód    |    Leírás    |
+|-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0x80073CFF, 0x80CF201C (ügyfélhiba)    |    Az alkalmazás telepítéséhez közvetlen telepítést lehetővé tevő rendszerrel kell rendelkeznie. Győződjön meg arról, hogy az alkalmazáscsomag megbízható aláírással és telepítve van egy tartományhoz csatlakoztatott eszköz, amely rendelkezik a **AllowAllTrustedApps** házirend engedélyezve van, vagy a Windows közvetlen telepítési licenccel rendelkező eszközök esetén a  **AllowAllTrustedApps** házirend engedélyezve van. További információkért lásd: [csomagolási, telepítési és lekérdezési Windows Store Apps hibaelhárítási](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).     |
+|    0x80073CF0    |    A csomag nem nyitható meg. Lehetséges okok:<ul><li> A csomag nincs aláírva.</li><li> A közzétevő neve nem egyezik meg az aláíró tanúsítvány tulajdonosával.</li></ul> Ellenőrizze a **AppxPackagingOM** eseménynaplóban talál. További információkért lásd: [csomagolási, telepítési és lekérdezési Windows Store Apps hibaelhárítási](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).    |
+|    0x80073CF3    |    A csomag nem sikerült a frissítés, függőségeinek vagy ütközéseinek érvényességét. Lehetséges okok:<ul><li> A bejövő csomag ütközik egy telepített csomaggal.</li><li> Nem található a megadott csomagfüggőség.</li><li> A csomag nem támogatja a megfelelő processzorarchitektúrát.</li></ul> Ellenőrizze a **AppXDeployment-Server** eseménynaplóban talál. További információkért lásd: [csomagolási, telepítési és lekérdezési Windows Store Apps hibaelhárítási](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).    |
+|    0x80073CFB    |    A megadott csomag már telepítve van, és a csomag újratelepítése le van tiltva. Ezt a hibaüzenetet kapja, amely nem azonos a csomagot, amely már telepítve van a csomag telepítésekor sikerült. Ellenőrizze, hogy a csomag tartalmaz-e digitális aláírást. Ha újraépít vagy újra aláír egy csomagot, a csomag nem lesz bitenként azonos az előzőleg telepített csomaggal. Ez a hiba kétféleképpen javítható ki:<ul><li> Növelje a verziószámot, az alkalmazás, majd építse és írja alá újra a csomagot.</li><li> Távolítsa el a régi csomagot a rendszer minden felhasználója esetében, az új csomag telepítése előtt.</li></ul> További információkért lásd: [csomagolási, telepítési és lekérdezési Windows Store Apps hibaelhárítási](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).    |
+|    0x87D1041C    |    Az alkalmazás telepítése sikeres volt, de a rendszer nem ismeri fel az alkalmazást. Az alkalmazás volt Intune sikeresen telepítette, majd később eltávolítja. Az alkalmazás okai a következők:<ul><li> A végfelhasználó eltávolítja az alkalmazást.</li><li> Az azonosító adatokat a csomagban nem egyezik, milyen hibás alkalmazások jelentett.</li><li>Az önfrissítési MSIs a verzió-kezelő nem egyezik az adatokat az alkalmazás, az Intune-on kívül frissítést követően.</li></ul> Kérje meg a felhasználót, hogy telepítse újra az alkalmazást a vállalati portálról. Vegye figyelembe, hogy kötelező alkalmazások újratelepítése automatikusan, amikor az eszköz következő bejelentkezésekor.    |
+
+## <a name="troubleshooting-apps-from-the-microsoft-store"></a>A Microsoft Áruházból származó alkalmazások hibáinak elhárítása
+
+A [Troubleshooting packaging, deployment, and query of Microsoft Store apps](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx) (A Microsoft Áruházbeli alkalmazások csomagolási, telepítési és lekérdezési hibáinak elhárítása) című cikkben foglaltak segítenek elhárítani az alkalmazásoknak a Microsoft Áruházból akár Intune-nal, akár más módon történő telepítésekor tapasztalt gyakori problémákat.
 
 ## <a name="next-steps"></a>További lépések
 

@@ -6,7 +6,7 @@ keywords: Intune-adattárház
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 931aa360b82efcf4ef643fb40bc4982c05e589ee
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fc6b5aac1d75fc67c469f6ecd24e331d1cc35d30
+ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182992"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247237"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Jelentés készítése az OData-adatcsatornából a Power BI használatával
 
@@ -45,30 +45,30 @@ Az _entitás_ és a _tábla_ kifejezések eleinte zavart okozhatnak. Az adatmode
 
 ## <a name="install-power-bi-desktop"></a>A Power BI Desktop telepítése
 
-Telepítse a Power BI Desktop legújabb verzióját. Ezt a [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop) webhelyről töltheti le.
+Telepítse a Power BI Desktop legújabb verzióját. A Power BI Desktop tölthető le: [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop)
 
 ## <a name="connect-to-the-odata-feed-for-the-intune-data-warehouse-for-your-tenant"></a>Csatlakozás a bérlőhöz tartozó Intune-adattárház OData-adatcsatornájához
 
 > [!Note]  
 > Az Intune-beli **Jelentések** eléréséhez hozzáférési engedélyre van szükség. További információt az [Engedélyezés](reports-api-url.md) témakörben talál.
 
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Nyissa meg az **Intune-adattárház** panelt.
-4. Másolja az egyéni URL-címet. Például így: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
-5. Nyissa meg a Power BI Desktopot.
+4. Másolja az egyéni URL-címet. Például:`https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
+5. Nyissa meg a Power BI Desktop alkalmazást.
 6. Válassza az **Adatok betöltése** > **OData-adatcsatorna** lehetőséget.
 7. Illessze be az egyéni URL-címet az **OData-adatcsatorna** ablak URL mezőjébe.
 8. Válassza az **Egyszerű** lehetőséget.
 
     ![OData-adatcsatorna](media/reports-create-01-odatafeed.png)
 
-9. Válassza az **OK** gombot.
+9. Kattintson az **OK** gombra.
 10. Válassza a **Szervezeti fiók** lehetőséget, és jelentkezzen be az Intune-hoz tartozó hitelesítő adataival.
 
     ![Szervezeti fiók hitelesítő adatai](media/reports-create-02-org-account.png)
 
-11. Válassza ki **csatlakozás**. Ekkor megnyílik a Navigátor, és megjelenik rajta az Intune-adattárházban található táblák listája.
+11. Kattintson a **Csatlakozás** gombra. Ekkor megnyílik a Navigátor, és megjelenik rajta az Intune-adattárházban található táblák listája.
 
     ![A Navigátor](media/reports-create-02-loadentities.png)
 

@@ -1,12 +1,12 @@
 ---
 title: Aktuális felhasználó – Intune-adattárház
 titlesuffix: Microsoft Intune
-description: Az Intune-adattárház API-ban található entitásgyűjtemények felhasználó kategóriájára vonatkozó referencia-témakör.
+description: Az Intune-adattárház API entitásgyűjteményeiben aktuális felhasználó kategóriájára vonatkozó referencia-témakör.
 keywords: Intune-adattárház
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: C10E6752-E925-40AD-ABBF-6B621FB7AFC4
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: b58f6f360cf034be11153a57227da42ed1e29388
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-classic; seodec18
+ms.openlocfilehash: a6329a44f1ccfa55025ad558fe2f277a41293538
+ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189775"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266902"
 ---
 # <a name="reference-for-current-user-entity"></a>Aktuális felhasználó típusú entitás referenciája
 
@@ -37,8 +37,8 @@ Az **Aktuális felhasználó** entitás a vállalatnál hozzárendelt licenccel 
 | UserKey |A felhasználó egyedi azonosítója az adattárházban – helyettes kulcs. |123 |
 | UserId |A felhasználó egyedi azonosítója – a UserKey-hez hasonló, de természetes kulcs. |b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail |A felhasználó e-mail címe. |John@constoso.com |
-| UPN | A felhasználó egyszerű felhasználóneve. | John@constoso.com |
-| DisplayName |A felhasználó megjelenítendő neve. |István |
+| EGYSZERŰ FELHASZNÁLÓNÉV | A felhasználó egyszerű felhasználóneve. | John@constoso.com |
+| displayName |A felhasználó megjelenítendő neve. |István |
 | IntuneLicensed |Megadja, hogy a felhasználó rendelkezik-e Intune-licenccel. |Igaz/hamis |
 | StartDateInclusiveUTC |A felhasználó adattárházban történt létrehozásának dátuma és időpontja (UTC). |2016.11.23. 12:00:00 |
 | RowLastModifiedDateTimeUTC |A felhasználó adattárházban történt utolsó módosításának dátuma és időpontja (UTC). |2016.11.23. 12:00:00 |

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/30/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 06031b8085e50caa2092287c97b3eab0ead366ee
-ms.sourcegitcommit: 5e4c7da8ce62d5a5720316ef4068c1920f8f5b67
+ms.openlocfilehash: d95bc665d271eac55682fa8f0aeee2bf267c48ef
+ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 12/11/2018
-ms.locfileid: "53200606"
+ms.locfileid: "53267089"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -45,11 +45,20 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Emellett tá
 
 ## <a name="week-of-december-10-2018"></a>2018. December 10. hét
 
+### <a name="app-management"></a>Alkalmazáskezelés
+
+#### <a name="updates-for-application-transport-security----748318---"></a>A Application Transport Security frissítések <!-- 748318 -->
+
+A Microsoft Intune támogatja a Transport Layer Security (TLS) 1.2-es + kategóriaelső a titkosítás, annak biztosítása érdekében, az Intune alapértelmezés szerint a biztonságosabb és igazodva más Microsoft-szolgáltatások, például a Microsoft Office 365 biztosít. Ez a követelmény teljesítéséhez az iOS és MacOS rendszerű céges portálok kényszeríti az Apple frissített Application Transport Security (ATS) követelményeket, amelyek megkövetelik a TLS 1.2-es +. Az ATS szigorúbb biztonsági előírásokat érvényesít az alkalmazások közötti minden olyan kommunikációra, amely HTTPS-protokollon keresztül történik. Ez a változás érint az iOS és MacOS-es céges portál alkalmazások használata. További információkért lásd: a [Intune támogatási blogján](https://aka.ms/compportalats).
+
+#### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>Az Intune App SDK támogatni fogja a 256 bites titkosítási kulcsok <!-- 1832174 -->
+Az Androidhoz készült Intune App SDK mostantól 256 bites titkosítást kulcsokat használ, ha az alkalmazásvédelmi szabályzatok engedélyezve van a titkosítási. Az SDK továbbra is támogatja a 128 bites kulcsok tartalmat és a régebbi SDK-t használó alkalmazások kompatibilitását.
+
 ### <a name="microsoft-auto-update-version-450-required-for-macos-devices----3503442---"></a>A Microsoft automatikus frissítési verzió macOS-eszközökhöz szükséges 4,50 <!-- 3503442 -->
 A folytatáshoz frissítéseknek a fogadása a vállalati portál és más Office-alkalmazások az Intune által felügyelt macOS-eszközökhöz a Microsoft automatikus frissítési 4.5.0 kell frissítenie. Előfordulhat, hogy a felhasználóknak már van ez a verzió az Office-alkalmazásokban.
 
 ### <a name="intune-requires-macos-1012-or-later----2827778---"></a>Az Intune macOS 10.12 vagy újabb verziója szükséges <!-- 2827778 -->
-Az Intune most már a macOS 10.12 vagy újabb verziója szükséges. MacOS előzetes verziókat használó eszközök regisztrálása az Intune-ban a vállalati portál nem használható. Szeretne kapni a támogatást és új funkciók, a felhasználók kell frissítheti az eszközt a macOS 10.12 vagy újabb verzió és a vállalati portál frissítése a legújabb verzióra.
+Az Intune most már a macOS 10.12 vagy újabb verziója szükséges. MacOS előzetes verziókat használó eszközök regisztrálása az Intune-ban a vállalati portál nem használható. Szeretne kapni a Távsegítség és az új funkciók, a felhasználók kell frissítheti az eszközt a macOS 10.12 vagy újabb verzió és a vállalati portál frissítése a legújabb verzióra.
 
 ## <a name="week-of-november-26-2018"></a>2018. November 26 hete
 
@@ -103,6 +112,23 @@ Ez a funkció használatához lásd: [iOS](compliance-policy-create-ios.md#devic
 Kézbesítésoptimalizálás egy új profilt a Windows 10-es és újabb verziók. Ez a funkció a szoftverfrissítések továbbítására a szervezetnél található eszközökön hatékonyabbá élményt nyújt. Ez a frissítés is segítséget nyújthat a beállításokat a konfigurációs profil használatával az új és meglévő frissítési körök.
 Kézbesítési optimalizálás konfigurációs profil beállítása: [Windows 10 (és újabb) kézbesítésoptimalizálási beállításait](delivery-optimization-windows.md).
 
+#### <a name="new-device-restriction-settings-added-to-ios-and-macos-devices----2827760---"></a>Új eszköz eszközkorlátozásokra vonatkozó beállítások az iOS és macOS-eszközök <!-- 2827760 -->
+A frissítés az iOS és macOS-eszközökhöz IOS 12 megjelent új beállításokat tartalmazza:
+
+**iOS-beállítások**: 
+- Általános: Alkalmazás eltávolításának zárolása (csak felügyelt)
+- Általános: Blokk USB korlátozott módban (csak felügyelt)
+- Általános: A kényszerített automatikus dátum és idő (csak felügyelt)
+- Jelszó: Letilthatja a jelszó automatikus kitöltés (csak felügyelt)
+- Jelszó: Letiltja a jelszó közelségi kérelmeket (csak felügyelt)
+- Jelszó: Letilthatja a jelszó megosztása (csak felügyelt)
+
+**macOS-beállításokat**: 
+- Jelszó: Jelszó automatikus kitöltés letiltása
+- Jelszó: Jelszó közelségi-kérések blokkolása
+- Jelszó: Letilthatja a jelszó megosztása
+
+Ezekkel a beállításokkal kapcsolatos további tudnivalókért lásd: [iOS](device-restrictions-ios.md) és [macOS](device-restrictions-macos.md) eszközkorlátozásokra vonatkozó beállításai.
 
 ### <a name="device-enrollment"></a>Eszközök beléptetése
 
@@ -1143,35 +1169,6 @@ Miközben mi áthelyezzük a hozzárendelt szabályzatokat, nem kell tennie semm
 
 Ha jelenleg a fent említett Azure AD-csoportokhoz az Azure-beli Intune-ban rendeli hozzá a szabályzatokat, ehelyett inkább az Intune for Education-konzolon rendelje hozzá ezeket a Minden felhasználó és a Minden eszköz csoporthoz. Ha azt látja, hogy elavultként lettek átnevezve az Azure AD-csoportok a konzolon, a továbbiakban ne végezzen hozzárendelést az Azure AD-ben. Ha nem jelenleg használja az átnevezett csoportokat más célra, akkor törölje azokat.
 
-
-### <a name="plan-for-change-intune-will-move-to-support-macos-1012-and-higher-in-december---2970975--"></a>Tervezett módosítás: Az Intune támogatja a macOS 10.12 és magasabb December áthelyezése <!--2970975--> 
-
-Az Apple nemrég adta ki a macOS 10.14-es verzióját. Ennek következtében az Intune 2018 decemberében áttér a macOS 10.12-es és későbbi verzióinak támogatására. 
-
-#### <a name="how-does-this-affect-me"></a>Hogyan érint ez engem?
-
-Decembertől kezdődően azok a végfelhasználók, akik macOS 10.11 és korábbi rendszerű eszközöket használnak, nem fognak tudni a Céges portál használatával belépni az Intune-ba. Frissíteniük kell az eszközeiket a macOS 10.12 vagy újabb rendszerre, a Céges portál alkalmazást pedig a legfrissebb verzióra, hogy továbbra is részesüljenek támogatásban, és megkapják az új funkciókat. 
-
-A macOS 10.12-es és újabb verziói jelenleg a következő eszközökön támogatottak: 
-- MacBook (2009 végi vagy újabb). 
-- iMac (2009 végi vagy újabb)
-- MacBook Air (2010 végi vagy újabb).  
-- MacBook Pro (2010 végi vagy újabb). 
-- Mac Mini (2010 végi vagy újabb). 
-- Mac Pro (2010 végi vagy újabb). 
-
-Decembertől kezdve a fenti listában nem szereplő eszközökkel rendelkező végfelhasználók nem fognak tudni hozzáférni a Céges portál legújabb macOS-es verziójához. A macOS 10.12-es verziójánál régebbi, nem támogatott verziót futtató meglévő regisztrált eszközök továbbra is láthatóak és felügyelhetőek lesznek az Intune felügyeleti konzolján.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Hogyan készüljek fel a változásra?
-
-- Kérje meg az érintett felhasználókat, hogy frissítsék az eszközeiket egy támogatott operációsrendszer-verzióra 2018 decembere előtt. 
-- Az Intune-jelentéskészítés segítségével ellenőrizze az Intune-ban az Azure-konzolon, hogy a változás mely eszközöket vagy felhasználókat érintheti. Lépjen az Eszközök > Minden eszköz menüpontra, és szűrje a találatokat operációs rendszer alapján. Hozzáadhat további oszlopokat, amelyek segítségével azonosíthatja a szervezet azon felhasználóit, akiknek macOS 10.11-es rendszerű eszközöket használnak. 
-- Ha hibrid mobileszköz-kezelést használ, lépjen a Configuration Manager konzolon az Eszközök és megfelelőség > Eszközök lehetőségre, kattintson a jobb gombbal az oszlopokra, adja hozzá az Operációs rendszer és Ügyfél verziója oszlopokat, és rendezze a sorokat az operációs rendszer alapján. Vegye figyelembe, hogy a hibrid mobileszköz-kezelés elavult, és minél hamarabb váltson az Azure-beli Intune használatára. 
- 
-#### <a name="additional-information"></a>További információ
-További információkat itt talál: [A macOS-eszköz Céges portál alkalmazással való regisztrálása az Intune-ban](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp).
- 
-
 ### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>Tervezett módosítás: Új Intune támogatási élmény a Premier szintű ügyfelek 
 12/4/18 frissítési: Szeretne jobbá ezt a folyamatot, így a támogatási kérelem létrehozása a MPO nem lesz letiltva. December 3-án, de egy későbbi dátumon helyette. Értesíteni fogjuk az üzenetközpont keresztül ismert, és hamarosan a bejegyzés ütemterveket, a módosítás megosztás frissítése.
 
@@ -1204,28 +1201,3 @@ Tekintse át a jelszóbeállításokat az Android vállalati eszközkorlátozás
 #### <a name="additional-information"></a>További információ
 https://aka.ms/PasswordSettings 
 
-### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Az Apple frissítést tesz kötelezővé a Application Transport Security szolgáltatáshoz <!--748318-->
-Az Apple bejelentette, hogy konkrét követelményeket ír elő az Application Transport Security (ATS) használatakor. Az ATS szigorúbb biztonsági előírásokat érvényesít az alkalmazások közötti minden olyan kommunikációra, amely HTTPS-protokollon keresztül történik. Ez a változás minden olyan ügyfelet érint, aki az iOS rendszerű Céges portál alkalmazást használja. Az [Intune-támogatási blogon](https://aka.ms/compportalats) naprakész információkat közlünk.
-
-### <a name="plan-for-change-intune-moving-to-tls-12"></a>Tervezett módosítás: Az Intune a TLS 1.2 áthelyezése
-2018. október 31-étől az Intune támogatni fogja a Transport Layer Security (TLS) protokoll 1.2 verzióját, hogy kategóriájában a legjobb titkosítást nyújtsa, biztosítsa a szolgáltatás jobb alapértelmezés szerinti biztonságát, és hogy illeszkedjen olyan más Microsoft-szolgáltatásokhoz, mint a Microsoft Office 365. Az Office ezt a változtatást az MC128929 közleményben jelentette be.
-
-A Céges portál 2018. október 31-én szintén áttér a TLS 1.2 támogatására.
-
-#### <a name="how-does-this-affect-me"></a>Hogyan érint ez engem?
-2018. október 31-étől az Intune nem támogatja a TLS protokoll 1.0 és 1.1 verzióját. Az Intune-nal való problémamentes kapcsolat érdekében minden ügyfél-kiszolgáló és böngésző-kiszolgáló kombinációnak a TLS 1.2-es verzióját kell használnia. Lényeges, hogy ez a változás azokat a végfelhasználói eszközöket is érinti, amelyeket az Intune nem támogat többé, de továbbra is kapnak szabályzatokat az Intune-on keresztül, és nem alkalmasak a TLS 1.2 használatára. Ilyenek többek között az Android 4.3-as és régebbi verzióit futtató eszközök. Az érintett eszközök és böngészők listája alább, a További információk között található.
-
-Ha 2018. október 31-e után egy régi TLS-verzió használatával kapcsolatos problémát tapasztal, akkor a megoldáshoz át kell térnie a TLS 1.2-re, vagy olyan eszköz használatára, amely támogatja a TLS 1.2-t.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Hogyan készüljek fel a változásra?
-Ajánlott megelőző lépésként eltávolítani a TLS 1.0 és 1.1 verzióit és azok függőségeit a környezeteiből, és ahol ez lehetséges, az operációs rendszer szintjén letiltani a TLS 1.0 és 1.1 verziókat. Kezdje meg máris a TLS 1.2-re való áttérés megtervezését. Az alábbi támogatási blogbejegyzésben megtalálja azoknak az eszközöknek a listáját, amelyeket az Intune már nem támogat, de még mindig kaphatnak szabályzatokat, és amelyek nem képesek a TLS 1.2 verziójának használatával kommunikálni. Ezeket a végfelhasználókat szükséges lehet értesíteni arról, hogy a jövőben nem fogják tudni elérni a vállalati erőforrásokat.
-
-**További információk**: [Az Intune a TLS 1.2-es titkosítási áthelyezése](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)
-
-
-
-## <a name="see-also"></a>Lásd még:
-* [A Microsoft Intune blogja](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [A felhőplatform ütemterve](https://www.microsoft.com/cloud-platform/roadmap)
-* [A Céges portál felhasználói felületének újdonságai](whats-new-app-ui.md)
-* [Korábbi hónapok újdonságai](whats-new-archive.md)
