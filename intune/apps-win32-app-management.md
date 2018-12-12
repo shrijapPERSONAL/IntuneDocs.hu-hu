@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/21/2018
+ms.date: 12/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ef26e42b2e500d841aa32fa6239e6970e0cfb577
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 6e8a74763f29707aa3e774be52f7b383b040ec1e
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728990"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829147"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Különálló Intune – Win32-alkalmazáskezelés (nyilvános előzetes verzió)
 
@@ -29,15 +29,11 @@ Az Intune különálló verziója több lehetőséget biztosít a Win32-alkalmaz
 
 ## <a name="prerequisites-for-public-preview"></a>A nyilvános előzetes verzió használatának előfeltételei
 
-- Windows 10, 1607-es vagy újabb verzió (Enterprise)
+- A Windows 10 1607-es verzió vagy újabb (vállalati, Pro és Education verziók)
 - A Windows 10-ügyfélnek: 
     - Azure Active Directory- (ADD) vagy hibrid Azure Active Directory-csatlakozással kell rendelkeznie, valamint
     - regisztrálva kell lennie az Intune-ban (MDM által felügyelt)
 - A Windows-alkalmazások egyenkénti mérete a nyilvános előzetes verzióban nem haladhatja meg a 8 GB-ot. 
-
-> [!NOTE]
-> A Windows 10 1607-es verziójának Pro és Education kiadásai jelenleg tesztelés alatt állnak, ezért minden visszajelzést örömmel fogadunk.
-
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>A Win32-alkalmazás tartalmának előkészítése a feltöltéshez
 

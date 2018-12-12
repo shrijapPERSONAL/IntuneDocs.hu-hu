@@ -14,12 +14,12 @@ ms.reviewer: muhosabe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 469c0b7c3e67135c53de7c58583d820e1750ad7f
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 583a64b5dd91df2ef9e5acbaf129b447aca7f2d9
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728803"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52828994"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>macOS-es eszközök megfelelőségi szabályzatainak hozzáadása az Intune-nal
 
@@ -97,7 +97,7 @@ A tűzfal a jogosulatlan hálózati hozzáférés ellen védi az eszközöket. A
 
 **Alkalmazások ezen helyekről való letöltésének engedélyezése**: Engedélyezi a különböző helyekről származó támogatott alkalmazások telepítését az eszközre. Az Ön helybeállításai:
 
-- **Nincs konfigurálva**: alapértelmezett. A forgalomirányító beállítása nem befolyásolja a megfelelőséget vagy a meg nem felelést. 
+- **Nincs konfigurálva**: alapértelmezett. A forgalomirányító beállítást nem befolyásolja a megfelelőség vagy a meg nem felelés. 
 - **Mac App Store**: Alkalmazások telepítése csak a Mac App Store-ból. Nem lehet harmadik felektől és azonosított fejlesztőktől származó alkalmazásokat telepíteni. Ha egy felhasználó azt választja, hogy a forgalomirányító a Mac App Store-on kívüli alkalmazásokat telepítsen, akkor az eszköz nem megfelelőnek fog számítani.
 - **Mac App Store- és azonosított fejlesztők**: A Mac App Store és az azonosított fejlesztők alkalmazásainak telepítése. A macOS ellenőrzi a fejlesztők identitását, és néhány egyéb ellenőrzést is végez az alkalmazás integritásának igazolásához. Ha egy felhasználó azt választja, hogy a forgalomirányító a megadott beállításokon kívüli alkalmazásokat telepítsen, akkor az eszköz nem megfelelőnek fog számítani.
 - **Bárhol**: Bárhonnan és bármely fejlesztő által telepíthetőek alkalmazások. Ez a beállítás a legkevésbé biztonságos.
