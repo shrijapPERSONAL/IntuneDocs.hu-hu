@@ -16,12 +16,12 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 40e189a3bb9e45851011ae1961ef89576dbcb5d0
-ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
+ms.openlocfilehash: 65f3598282bd46d422f8748d2653dbf8e18cf9b7
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53267038"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53324973"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Az internet-hozzáférés kezelése Microsoft Intune-szabályzattal védett böngésző használatával
 
@@ -261,6 +261,19 @@ Az alábbi táblázat azokat az engedélyezett formátumokat és helyettesítő 
   - `http://www.contoso.com:*`
 
   - `http://www.contoso.com: /*`
+## <a name="opening-links-within-the-intune-managed-browser-vs-microsoft-edge"></a>A hivatkozások Intune Managed Browser böngészőben való megnyitása, összevetve a következőben való megnyitással: Microsoft Edge 
+
+Mind az Intune Managed Browser, mind a Microsoft Edge szabályzattal felügyelt/védett böngészőnek számít. Jelenleg a meglévő alkalmazásvédelmi szabályzatok szerint a forgatókönyvtől és platformtól függően az Intune felügyelt alkalmazásainak webes hivatkozásai egy meghatározott böngészőben nyílnak meg. 
+
+Androidon: 
+* A Managed Browserben, ha az MB és az Edge is megtalálható az eszközön, kivéve, ha a „com.microsoft.intune.useEdge” alkalmazáskonfigurációs beállítás értéke „true” az összes Intune által felügyelt alkalmazásra, amelyre a felügyelt böngésző használata kötelező szabályzat vonatkozik.  
+* A Microsoft Edge-ben, ha csak a Microsoft Edge van az eszközön, és a szabályzat erre vonatkozik.
+* A Managed Browserben, ha csak a Managed Browser van az eszközön, és a szabályzat erre vonatkozik. 
+
+Az iOS rendszeren, ha az alkalmazásokban integrálva van az Intune SDK for iOS 9.0.9+ verziója: 
+* A Managed Browserben, ha az MB és az Edge is megtalálható az eszközön, kivéve, ha a „com.microsoft.intune.useEdge” alkalmazáskonfigurációs beállítás értéke „true” az összes Intune által felügyelt alkalmazásra, amelyre a felügyelt böngésző használata kötelező szabályzat vonatkozik **vagy** a Microsoft Edge-ben, ha az telepítve van, és megkapta a szabályzatot. 
+* A Microsoft Edge-ben, ha csak a Microsoft Edge van az eszközön, a szabályzat erre vonatkozik, és megkapta a szabályzatot. 
+* A Managed Browserben, ha csak a Managed Browser van az eszközön, a szabályzat erre vonatkozik, és megkapta a szabályzatot.
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>A felügyelt alkalmazások naplóinak elérése a Managed Browser használatával iOS rendszeren
 
