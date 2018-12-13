@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dd18b882af8c685bb640468ef7076ed6317126a5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 685803f6ef30994a943969e3642bd8349dcf9f6e
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184607"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53324939"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Alkalmazáskonfigurációs szabályzatok hozzáadása felügyelt iOS-eszközökhöz
 
@@ -47,7 +47,7 @@ Miután kiválasztotta a belefoglalt csoportokat az alkalmazáskonfigurálási s
 
 ## <a name="create-an-app-configuration-policy"></a>Alkalmazáskonfigurációs szabályzat konfigurálása
 
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Válassza az **Ügyfélalkalmazások** tevékenységprofilt.
 4. Válassza az **Alkalmazáskonfigurációs szabályzatok** lehetőséget a **Felügyelet** csoportban, majd a **Hozzáadás** lehetőséget.
@@ -77,7 +77,7 @@ Miután kiválasztotta a belefoglalt csoportokat az alkalmazáskonfigurálási s
 
     >[!NOTE]
     >Csoportok hozzáadásakor, ha bármely más csoport már bele lett foglalva egy adott hozzárendelés-típus esetében, az előre ki van jelölve, és nem módosítható más belefoglalási hozzárendelés-típusok esetében. Ezért az adott csoport használatba lett véve, és így nem használható kizárt csoportként.
-16. Kattintson a **Mentés**gombra.
+16. Kattintson a **Save** (Mentés) gombra.
 
 ## <a name="use-configuration-designer"></a>A configuration designer használata
 
@@ -100,14 +100,14 @@ A \{\{ és \}\} karaktereket csak a tokentípusok használják, ezek más célok
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Csak a konfigurált szervezeti fiókok engedélyezése a többidentitásos alkalmazásokban 
 
-Android-eszközök esetén használja az alábbi kulcs/érték párokat:
+IOS-eszközök esetén használja az alábbi kulcs-érték párok:
 
 | **Kulcs** | IntuneMAMAllowedAccountsOnly |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Értékek** | <ul><li>**Enabled** (Engedélyezve): Csak az [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) kulcs által meghatározott felügyelt felhasználói fiók használata engedélyezett.</li><li>**Disabled** (Letiltva) (vagy az **Enabled** értéktől eltérő bármilyen érték, a kis- és nagybetűket nem megkülönböztetve): Bármely fiók használata engedélyezett.</li></ul> |
+| **Értékek** | <ul><li>**Engedélyezett**: Az egyetlen fiók által meghatározott felügyelt felhasználói fióknak a [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) kulcsot.</li><li>**Letiltott** (vagy bármilyen érték, amely nem különbözteti meg a megfelelő **engedélyezve**): Minden olyan fiók használata engedélyezett.</li></ul> |.
 
    > [!NOTE]
-   > Ha csak a konfigurált szervezeti fiókok használatát engedélyezi a többidentitásos szolgáltatásokban, az iOS OneDrive 10.34-es vagy újabb, illetve az iOS Outlook 2.99.0-s vagy újabb verzióit kell használnia.
+   > Kell használnia a OneDrive vállalati verzió iOS 10.34 vagy újabb verzió és az Outlook iOS 2.99.0-es vagy újabb és az alkalmazás verziókkal kell működnie [az Intune alkalmazásvédelmi szabályzatai](app-protection-policy.md) amikor így csak konfigurált szervezeti fiókok a többszörös identitást.
 
 ## <a name="enter-xml-data"></a>XML-adatok megadása
 
@@ -123,7 +123,7 @@ További információ az XML-tulajdonságlistákról:
 
 Alkalmazáskonfigurációs fájl létrehozásakor a következő értékeket adhatja meg ebben a formátumban:
 
-```
+```xml
 <dict>
   <key>userprincipalname</key>
   <string>{{userprincipalname}}</string>

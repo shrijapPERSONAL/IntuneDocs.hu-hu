@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a9afde942f2784cb2fb42b13d11a127e3c9811a1
-ms.sourcegitcommit: 3903f20cb5686532ccd8c36aa43c5150cee7cca2
+ms.openlocfilehash: b6e9901bfea3ec129246494d6d8077a440c8a675
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52267254"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53324922"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Alkalmazások hozzárendelése csoportokhoz a Microsoft Intune-nal
 
@@ -51,7 +51,7 @@ Az alábbi táblázat az alkalmazások felhasználókhoz és eszközökhöz val�
 
 ## <a name="to-assign-an-app"></a>Alkalmazás hozzárendelése
 
-1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** menüben válassza az **Ügyfélalkalmazások** lehetőséget.
 4. A menü **Kezelés** szakaszában válassza az **Alkalmazások**. elemet.
@@ -59,13 +59,13 @@ Az alábbi táblázat az alkalmazások felhasználókhoz és eszközökhöz val�
 6. A menü **Kezelés** szakaszában válassza a **Hozzárendelések** elemet.
 7. Válassza a **Csoport hozzáadása** lehetőséget az alkalmazáshoz kapcsolódó **Csoport hozzáadása** ablaktábla megnyitásához.
 8. Az adott alkalmazáshoz válasszon egy **hozzárendelés-típust**:
-   - **Regisztrált eszközök esetében elérhető**: az alkalmazás hozzárendelése csoportokhoz a felhasználók, akik az alkalmazást is telepítheti a céges portál alkalmazásból vagy webhelyről.
-   - **Regisztrációval vagy anélkül is elérhető**: Az alkalmazás hozzárendelése olyan felhasználók csoportjaihoz, akik eszközei nincsenek regisztrálva az Intune-ban. A felügyelt Google Play Áruházból származó alkalmazások nem támogatják ezt a lehetőséget. 
-   - **Szükséges**: A rendszer telepíti az alkalmazást a kiválasztott csoportok eszközeire.
-   - **Eltávolítás**: A rendszer eltávolítja az alkalmazást a kiválasztott csoportok eszközeiről.
+   - **Regisztrált eszközök esetében elérhető**: Az alkalmazás hozzárendelése csoportokhoz a felhasználók számára is telepítheti az alkalmazást a céges portál alkalmazásból vagy webhelyről.
+   - **Elérhető regisztrációval és anélkül**: Ez az alkalmazás hozzárendelése csoportokhoz a felhasználók, akiknek az eszközei nincsenek regisztrálva az Intune-ban. A felügyelt Google Play Áruházból származó alkalmazások nem támogatják ezt a lehetőséget. Felhasználóknak hozzá kell rendelni egy Intune-licencet, lásd: [Intune-licencek](licenses.md).
+   - **Szükséges**: Az alkalmazás telepítve van a kiválasztott csoportok eszközeire. Előfordulhat, hogy az egyes platformok esetében a felhasználó elfogadja az alkalmazások telepítésének megkezdése előtt a további utasításokat.
+   - **Távolítsa el**: Az alkalmazás el lesz távolítva a kijelölt csoportokba eszközök Intune-ban korábban már telepítve van az alkalmazást az eszközön keresztül egy "regisztrált eszközökhöz elérhető" vagy "Kötelező" hozzárendelés a azonos üzemelő példány használatával. A webes hivatkozások telepítése után nem lehet eltávolítani.
 
      > [!NOTE]
-     > **Csak iOS-alkalmazásokhoz**: Ha alkalmazásonkénti VPN-beállításokat tartalmazó iOS VPN-profilt hozott létre, a VPN-profilt a **VPN** alatt jelölheti ki. Az alkalmazás futtatásakor megnyílik a VPN-kapcsolat. További tudnivalókért lásd: [VPN-beállítások iOS-eszközökön](vpn-settings-ios.md).
+     > **Csak az iOS-alkalmazások**: Ha IOS rendszerű alkalmazásonkénti VPN-beállításokat tartalmazó VPN-profilt hozott létre, válassza a VPN-profil alatt **VPN**. Az alkalmazás futtatásakor megnyílik a VPN-kapcsolat. További tudnivalókért lásd: [VPN-beállítások iOS-eszközökön](vpn-settings-ios.md).
      >
      > **Android-alkalmazások csak**: Ha telepít egy Android-alkalmazás, **elérhető regisztrációval és anélkül**, reporting állapota csak a regisztrált eszközökön elérhető lesz.
 

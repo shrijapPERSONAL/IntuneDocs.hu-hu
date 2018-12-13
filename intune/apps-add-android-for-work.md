@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 67855a7c52a1fad16f64106230658a730d55afd6
-ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
+ms.openlocfilehash: 5495addba30e8a958d2a49f2c04ee5af70d62712
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53266936"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305930"
 ---
 # <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Alkalmazások hozzárendelése androidos munkahelyi profilos eszközökhöz az Intune-ban
 
@@ -84,7 +84,7 @@ Ha az alkalmazás fejlesztője megváltozott engedélyekkel rendelkező új alka
 
 Ellenőrizze rendszeresen a felügyelt Google Play-konzolon az új alkalmazásengedélyeket. Beállíthatja, hogy a Google Play e-mailt küldjön Önnek vagy másoknak, ha új engedélyekre van szükség egy jóváhagyott alkalmazáshoz. Ha egy alkalmazás a hozzárendelése után sincs telepítve az eszközökön, az alábbiak alapján ellenőrizheti, hogy vannak-e új alkalmazásengedélyek:
 
-1. Nyissa meg a [Google Play Áruházat](http://play.google.com/work).
+1. Nyissa meg a [Google Play Áruházat](https://play.google.com/work).
 2. Jelentkezzen be azzal a Google-fiókkal, amelyet az alkalmazások közzétételénél és jóváhagyásánál használt.
 3. Válassza a **Frissítések** lapot és ellenőrizze, hogy van-e frissítést igénylő alkalmazás.  
     A listában szereplő összes alkalmazás új engedélyeket kér, és a hozzárendelés addig nem lehetséges, amíg az engedélyeket meg nem adják.

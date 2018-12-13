@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 02f276c5ddcd77b2800eb7b83a269b47a0ba5233
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 890c0eeb104838640ddd1f4daa312c1cab1288c8
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180680"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305947"
 ---
 # <a name="intune-app-sdk-overview"></a>Az Intune App SDK áttekintése
 Az iOS és az Android platformhoz is elérhető Intune App SDK lehetővé teszi az alkalmazások számára az Intune alkalmazásvédelmi szabályzatainak használatát. Arra törekszik, hogy minimálisra csökkentse az alkalmazásfejlesztő által végzendő kódmódosítás mennyiségét. Az SDK legtöbb funkcióját alkalmazása működésének módosítása nélkül is engedélyezheti. Ha hatékonyabbá szeretné tenni a végfelhasználók és a rendszergazdák munkáját, az API-jainkkal személyre szabhatja alkalmazása működését olyan funkciók tekintetében, amelyek használatához az alkalmazás közreműködése szükséges.
@@ -75,4 +75,4 @@ A regisztráció nélküli alkalmazásvédelemmel a Microsoft Intune szolgáltat
 ### <a name="on-demand-application-vpn-connections-with-citrix-mvpn"></a>Igény szerinti VPN-alkalmazáskapcsolatok Citrix mVPN segítségével 
 Az eszközöket és az alkalmazásokat a Citrix XenMobile MDX és a Microsoft Intune kombinációjával is kezelheti. Ez a kombináció lehetővé teszi, hogy az eszközök kezelésénél egyaránt igénybe vehesse az Intune alkalmazásvédelmi szabályzatát és a Citrix mVPN-technológiáját. A Citrix-integráció elérhető az iOS-es és androidos Intune App SDK-hoz és az iOS-es és androidos Intune alkalmazásburkoló eszközhöz is (a -citrix jelölővel használva).
  
-A Citrix MDX-ről további információt [Az MDX Toolkit bemutatása](http://docs.citrix.com/en-us/mdx-toolkit/10/about-mdx-toolkit.html), a [Citrix MDX alkalmazásburkoló iOS-hez](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html) és a [Citrix MDX alkalmazásburkoló Androidhoz](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-android.html) című cikkekben talál.
+A Citrix MDX-ről további információt [Az MDX Toolkit bemutatása](https://docs.citrix.com/en-us/mdx-toolkit/10/about-mdx-toolkit.html), a [Citrix MDX alkalmazásburkoló iOS-hez](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html) és a [Citrix MDX alkalmazásburkoló Androidhoz](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-android.html) című cikkekben talál.

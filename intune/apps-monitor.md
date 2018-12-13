@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 457b5b97bd13caddb5c60836940dd491eac752f8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: bff4e2b3afe684fe12243fa0f410728eb16eeaba
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181887"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53325177"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Alkalmazásadatok és -hozzárendelések figyelése a Microsoft Intune-ban
 
@@ -29,14 +29,14 @@ ms.locfileid: "52181887"
 
 Az Intune több módot is kínál a felügyelt alkalmazások jellemzőinek figyelésére és az alkalmazások hozzárendelési állapotának kezelésére.
 
-1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** menüben válassza az **Ügyfélalkalmazások** lehetőséget.
 4. A menü **Kezelés** szakaszában válassza az **Alkalmazások**. elemet.
 5. Az alkalmazáslistában válasszon egy figyelni kívánt alkalmazást. Ekkor megjelenik az alkalmazás panelje, melyen áttekintheti az eszköz és a felhasználó állapotát.
 
 > [!NOTE]
-> Az **Elérhető** beállítással telepített Androidos áruházbeli alkalmazások nem jelentik a telepítési állapotukat.
+> Android-Store mint üzembe helyezett alkalmazások **elérhető** és telepített Android LOB-alkalmazások **elérhető regisztrációval és anélkül** nem jelenti a telepítési állapotukat.
 
 ## <a name="app-overview-pane"></a>Alkalmazás áttekintése panel
 
@@ -92,7 +92,7 @@ A felhasználóállapot-lista akkor jelenik meg, ha a menü **Figyelés** szakas
 
 | **Felhasználóoszlop**     | **Leírás**                           |
 |---------------------|-------------------------------------------|
-| **Név**            | A felhasználó Azure Active Directoryban használt neve.         |
+| **Name (Név)**            | A felhasználó Azure Active Directoryban használt neve.         |
 | **Felhasználónév**       | A felhasználó egyedi neve.              |
 | **Telepítések**   | A felhasználó által nem telepített alkalmazások száma. |
 | **Hibák**        | A felhasználó sikertelen alkalmazástelepítéseinek száma.     |
