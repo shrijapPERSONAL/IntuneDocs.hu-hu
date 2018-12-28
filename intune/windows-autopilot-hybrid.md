@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: ced67b2dcdd5720a9708868808ec885938b8ddcd
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 9de47f996706255c072926524860cfcc833e8b8b
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112442"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642557"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Hibrid Azure AD-hez csatlakoztatott eszközök üzembe helyezése az Intune és a Windows Autopilot használatával (előzetes verzió)
 Az Intune és a Windows Autopilot használatával elvégezheti a hibrid Azure Active Directoryhoz csatlakoztatott eszközök beállítását. Ehhez kövesse az alábbi lépéseket:
@@ -122,7 +122,7 @@ Az Active Directoryhoz készült Intune-összekötőt egy olyan Windows Server 2
 
 ### <a name="configure-web-proxy-settings"></a>Webproxy-beállítások konfigurálása
 
-Ha hálózati környezetében webproxyt használ, az Active Directoryhoz készült Intune-összekötő megfelelő működése érdekében kérjük, kövesse a következő utasításokat: [Meglévő helyszíni proxykiszolgálók használata](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers).
+Ha olyan webproxyt hálózati környezetében, kövesse az itt, hogy az Intune-összekötő az Active Directory megfelelően működik: [Munka a meglévő helyszíni proxykiszolgálók](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers).
 
 
 ## <a name="create-a-device-group"></a>Eszközcsoport létrehozása
@@ -201,10 +201,10 @@ Körülbelül 15 percbe telik, amíg az eszközprofil állapota **Nincs hozzáre
 1. Az [Intune-ban](https://aka.ms/intuneportal) válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
 2. Adja meg a következő tulajdonságokat:
    - **Név**: Adja meg az új profil leíró nevét.
-   - **Leírás:** Itt adhatja meg a profil leírását.
-   - **Platform**: Válassza a **Windows 10-es vagy újabb verzió** lehetőséget.
-   - **Profil típusa**: Válassza a **Tartományhoz való csatlakozás (előzetes verzió)** lehetőséget.
-3. Válassza a **Beállítások** lehetőséget, majd adja meg a **Számítógépnév előtagja**, a **Tartománynév**, valamint a **Szervezeti egység** adatait (utóbbi nem kötelező). 
+   - **Description** (Leírás): Adja meg a profil leírását.
+   - **Platform**: Válasszon **Windows 10 és újabb**.
+   - **Profil típusa**: Válasszon **tartományhoz való csatlakozás (előzetes verzió)**.
+3. Válasszon **beállítások** , és adja meg egy **számítógépnév előtagja**, **tartománynév**, és **szervezeti egység** DN formátumban (nem kötelező). 
 4. Válassza az **OK** > **Létrehozás** lehetőségeket. Ekkor létrejön a profil, és megjelenik a listában.
 5. A profil hozzárendeléséhez kövesse az [Eszközprofil hozzárendelése](device-profile-assign.md#assign-a-device-profile) cikk lépéseit. 
 

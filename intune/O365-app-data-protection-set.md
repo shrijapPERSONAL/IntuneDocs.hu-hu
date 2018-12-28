@@ -1,7 +1,7 @@
 ---
 title: Office 365-alkalmazások adatkezelése a Microsoft Intune-ban
 titlesuffix: ''
-description: Az Office 365-alkalmazások a Microsoft Intune-beli adatkezelésének ismertetése.
+description: Tudnivalók az adatok kezelése és védelme Office 365-alkalmazások Microsoft Intune-ban.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -17,12 +17,12 @@ ms.reviewer: ayesham
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a3eed03deb3f619f75502e8a9d1d66fefc38a081
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 05af4625c06975e4eb7b2566ce676c4610500bdf
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180071"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642473"
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>Hogyan fogják megtapasztalni a felhasználók az alapszintű védelmet a Microsoft Intune-beli felügyelt Office 365-alkalmazásokban
 
@@ -91,7 +91,7 @@ Ebben a cikkben a OneDrive Vállalati verzióval mutatjuk be a felhasználói é
 
 |     |       | |
 |----|--------|-|
-|**Név**|Office 365-alkalmazások kezelése| |
+|**Name (Név)**|Office 365-alkalmazások kezelése| |
 | **Leírás**|Az Office 365-alkalmazások kezelése varázsló által létrehozott| |
 | |  | |
 | **A beállítás neve** |**iOS-szabályzat értéke** | **Android-szabályzat értéke** |

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 2c15c8915c1fefabf301525b3ef03f74038d31dc
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: 4e37675186ef21d219627ec3ec1973e6e9944d1d
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53325048"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737967"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Üzleti alkalmazások aláírása, hogy telepíteni lehessen őket Windows-eszközökre az Intune segítségével
 
@@ -45,7 +45,7 @@ Az alábbi lépésekkel beszerezheti a szükséges tanúsítványokat, és alá�
 4.  **Az importált tanúsítványok ellenőrzése**<br>
     A tanúsítványimportálás helyes voltának ellenőrzéséhez nyissa meg a **Tanúsítványkezelő** beépülő modult, kattintson a jobb gombbal a **Tanúsítványok** elemre, és válassza a **Tanúsítványok keresése** parancsot. A **Tartalmazza** mezőben adja meg a „Symantec” kifejezést, majd kattintson a **Keresés most**lehetőségre. Az eredmények között meg kell jelennie az importált tanúsítványoknak.
 
-    ![A Symantec-tanúsítvány megkeresése](./media/wit.gif)
+    ![A tanúsítvány eredményei láthatók a tanúsítványok keresése párbeszédpanel](./media/wit.gif)
 
 5. **Aláíró tanúsítvány exportálása**<br>
     Miután ellenőrizte, hogy telepítve vannak-e a tanúsítványok, exportálhatja a vállalati portál aláírásához szükséges PFX-fájlt. Válassza ki a Symantec-tanúsítványt, amelynek **Felhasználási célja** a „kód aláírása”. Kattintson jobb gombbal a kódaláíró tanúsítványra, majd válassza az **Exportálás** lehetőséget.
@@ -155,7 +155,7 @@ A Windows 10-es Céges portál alkalmazást akkor is telepítheti manuálisan, k
 1. Jelentkezzen be [Vállalati Microsoft Áruház](https://www.microsoft.com/business-store) fiókjába, és szerezze be a Céges portál alkalmazás **offline licencű** verzióját.  
 2. Miután beszerezte az alkalmazást, válassza ki a **Készlet** lapon.  
 3. A **Platform** listából válassza ki a **Windows 10 minden eszközre** lehetőséget, majd válassza ki a megfelelő **architektúrát**, és töltse le az alkalmazást. Ehhez az alkalmazáshoz nincs szükség alkalmazás-licencfájlra.
-![Kép a Windows 10 minden eszközre, X86 architektúrával csomag letöltési részleteiről](./media/Win10CP-all-devices.png)
+![Kép a Windows 10-es X86 csomag részleteinek letöltése](./media/Win10CP-all-devices.png)
 4. Töltse le a „Szükséges keretrendszer” cím alatt található összes csomagot. Ezt az x86, az x64 és az ARM architektúrákkal kell elvégezni, összesen 9 csomaggal, ahogy az alábbi ábrán látható.
 
 ![Kép a letöltendő függőségi fájlokról ](./media/Win10CP-dependent-files.png)
@@ -164,7 +164,7 @@ A Windows 10-es Céges portál alkalmazást akkor is telepítheti manuálisan, k
    ![APPXBUN fájllal mentett Függőségek mappa képe](./media/Win10CP-Dependencies-save.png)
    2. Helyezze el a kilenc függőségcsomagot a Függőségek mappában.  
    Ha a függőségeket nem ebben a formátumban helyezi el, az Intune nem tudja majd felismerni és feltölteni őket a csomag feltöltésekor, így a folyamat sikertelen lesz a következő hiba miatt.  
-   ![A szoftver telepítőjéhez tartozó Windows-alkalmazás nem található az alkalmazás mappájában. Továbbra is létrehozhatja és telepítheti az alkalmazást, de az nem fog futni addig, amíg hozzá nem adja a hiányzó Windows alkalmazás-függőséget.](./media/Win10CP-error-message.png)
+   ![A Windows-alkalmazás függősége hibaüzenet - kötelező megadni.](./media/Win10CP-error-message.png)
 6. Lépjen vissza az Intune-ba, és töltse fel a Céges portál alkalmazást új alkalmazásként. Telepítse szükséges alkalmazásként a kívánt felhasználói célcsoport számára.  
 
 Itt talál további információkat arról, hogy az Intune miképpen kezeli az univerzális alkalmazások függőségeit: [appxbundle telepítése függőségekkel a Microsoft Intune MDM-en keresztül](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/).  

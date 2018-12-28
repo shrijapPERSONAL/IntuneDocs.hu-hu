@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 12/20/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 827766d76a66ea7d69ebbd3ba77efe785689e7e2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2257253d023c97d14418b3566c0c493a3cd8f615
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189180"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737916"
 ---
-# <a name="quickstart-try-microsoft-intune-for-free"></a>Rövid útmutató: A Microsoft Intune ingyenes kipróbálása 
+# <a name="quickstart-try-microsoft-intune-for-free"></a>Gyors útmutató: A Microsoft Intune ingyenes kipróbálása 
 
 A Microsoft Intune lehetővé teszi, hogy az eszközök és alkalmazások kezelésével védje a munkatársak vállalati adatait. Ezt a rövid útmutatót követve létrehoz majd egy ingyenes előfizetést az Intune tesztkörnyezetben történő kipróbálásához.
 
@@ -50,7 +50,7 @@ Az Intune kipróbálása 30 napig ingyenes. Ha már rendelkezik munkahelyi vagy 
 
 2. Hozzon létre fiókot a **.onmicrosoft.com** utótaggal kiegészített vállalati nevével. 
 
-    ![Képernyőkép a Microsoft Intune próbaverziójának fiókregisztrációs weboldaláról](./media/account-sign-up-site-user-id.png)
+    ![A Microsoft Intune próbaverziójának fiók új hitelesítő adat folyamat képernyőképe](./media/account-sign-up-site-user-id.png)
 
     Ha vállalata saját egyéni tartománnyal rendelkezik, amelyet a **.onmicrosoft.com** utótag nélkül szeretne használni, ezt a cikk későbbi részében ismertetett módon megváltoztathatja az Office 365 felügyeleti portálján.
 
@@ -58,7 +58,7 @@ Az Intune kipróbálása 30 napig ingyenes. Ha már rendelkezik munkahelyi vagy 
 
     ![Fiókadatok képe](./media/intune-end-of-sign-up-process.png) 
 
-## <a name="sign-in-to-the-azure-portal"></a>Bejelentkezés az Azure Portalon
+## <a name="sign-in-to-the-azure-portal"></a>Jelentkezzen be az Azure Portalra
 
 1. Nyisson meg egy böngészőablakot, és írja be a címsorba a következőt: **https://portal.azure.com**. 
 2. A bejelentkezéshez használja a fenti lépésekben megadott hitelesítő adatokat.
@@ -106,13 +106,13 @@ A fentiekben már volt szó arról, hogy ha vállalata saját egyéni tartománn
 
 3. Gépelje be egyéni tartománynevét. Végül válassza a **Tovább** lehetőséget.
 
-   ![Képernyőkép az Office 365 felügyeleti központjáról a Beállítások > Tartományok lehetőség kiválasztásával, és új tartománynév hozzáadásáról](./media/domain-custom-add.png)
+   ![Képernyőkép az Office 365 felügyeleti központ - tartomány hozzáadása](./media/domain-custom-add.png)
 
 4. Ellenőrizze, hogy az imént megadott tartománynak Ön-e a tulajdonosa. 
     
     A **Kód küldése e-mailben** lehetőséget választva e-mailt küld a tartománya regisztrált kapcsolattartójának. Az e-mail beérkezése után másolja ki a kódot, és illessze be az **Írja be az ellenőrzőkódot** címkéjű mezőbe. Ha az ellenőrző kód egyezik, a tartomány hozzá lesz adva a bérlőjéhez. Előfordulhat, hogy a megjelenő e-mail nem ismerős. Egyes regisztráló szervezetek elrejtik a tartomány regisztrálásakor megadott valódi e-mail-címet.
 
-   ![Képernyőkép az Office 365 felügyeleti központjáról – A hozzáadott tartománynév ellenőrzése](./media/domain-custom-verify.png)
+   ![Képernyőkép az Office 365 felügyeleti központ – a tartomány ellenőrzése](./media/domain-custom-verify.png)
 
    > [!NOTE]
    > TXT típusú rekordok ellenőrzésének részletes leírását a [DNS-rekordok létrehozása bármely DNS-szolgáltatón az Office 365-höz](https://support.office.com/article/Create-DNS-records-at-any-DNS-hosting-provider-for-Office-365-7B7B075D-79F9-4E37-8A9E-FB60C1D95166).
@@ -130,4 +130,4 @@ Ezt a rövid útmutatót követve létrehozott egy ingyenes előfizetést az Int
 Kövesse az Intune rövid útmutatóinak sorozatát a következő rövid útmutatóval.
 
 > [!div class="nextstepaction"]
-> [Rövid útmutató – Felhasználó létrehozása és licenc hozzárendelése az Intune-ban](quickstart-create-user.md)
+> [Gyors útmutató: Hozzon létre egy felhasználót, és a licenc hozzárendelése](quickstart-create-user.md)

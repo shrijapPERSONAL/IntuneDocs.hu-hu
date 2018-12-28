@@ -14,19 +14,19 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 9059ddb164dfa57ed76b57141aad89dbb716a09f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 66402d9e2bc66ec96de88f64dd61c41e1ddb34e5
+ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179075"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53553639"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Az Intune-szoftverügyfél telepítése Windows rendszerű számítógépekre
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> A Microsoft Intune-ban kezelheti a Windows-számítógépeket [mobileszközként a mobileszköz-kezelés (MDM),](windows-enroll.md) vagy számítógépként az Intune szoftverügyfél használatával, a lent ismertetett módon. A Microsoft azonban azt javasolja, hogy az ügyfelek [lehetőség szerint az MDM-megoldást válasszák](windows-enroll.md) a felügyelethez.
+> A Microsoft Intune-ban kezelheti a Windows-számítógépeket [mobileszközként a mobileszköz-kezelés (MDM),](windows-enroll.md) vagy számítógépként az Intune szoftverügyfél használatával, a lent ismertetett módon. A Microsoft azonban azt javasolja, hogy az ügyfelek [lehetőség szerint az MDM-megoldást válasszák](windows-enroll.md) a felügyelethez. További információ: [Windows rendszerű számítógépek felügyeletét, számítógépek vagy mobileszközök összehasonlítása](pc-management-comparison.md) 
 
 
 A Windows rendszerű számítógépek az Intune-ügyfélszoftver telepítésével regisztrálhatók. Az Intune-ügyfélszoftver a következő módszerekkel telepíthető:
@@ -124,8 +124,8 @@ Ha a felhasználókhoz hozzárendeltek Intune-licencet, és a szervezet MDM-szol
 
 - A Windows 10 és Windows 8.1 rendszereken két regisztrálási lehetőség jelenik meg:
 
-  -  **A számítógép regisztrálása mobileszközként**: A felhasználó a **Regisztráció menetének ismertetése** gombra kattintás után útmutatót olvashat a számítógép mobileszközként való regisztrálásáról. Ez a gomb kiemelt módon jelenik meg, mert az MDM-regisztráció az alapbeállítás és a javasolt regisztrációs módszer. Az MDM-regisztráció azonban nem része ennek a témakörnek, mert itt csak az ügyfélszoftver telepítését ismertetjük.
-  - **Számítógép regisztrálása az Intune-ügyfélszoftver használatával**: Javasolt a felhasználókat tájékoztatni, hogy kattintsanak a **Letöltés ide kattintva** hivatkozásra, amely végigvezeti őket az ügyfélszoftver telepítésén.
+  -  **A számítógép mobileszközként regisztrálni**: A felhasználók megadhatják a **található menetének ismertetése** gombra, és regisztrálják Számítógépeiket mobileszközként való kerül. Ez a gomb kiemelt módon jelenik meg, mert az MDM-regisztráció az alapbeállítás és a javasolt regisztrációs módszer. Az MDM-regisztráció azonban nem része ennek a témakörnek, mert itt csak az ügyfélszoftver telepítését ismertetjük.
+  - **Az Intune ügyfélszoftverrel Számítógépet regisztrálja**: Kell tudniuk a felhasználóknak, hogy a **. Ide kattintva letöltheti** hivatkozás, amely végigvezeti őket az ügyfélszoftver telepítését.
 
 Az alábbi táblázat a különböző lehetőségeket foglalja össze.
 
@@ -260,4 +260,4 @@ A regisztrációtörlési folyamat nem távolítja el az OnlineManagement nevű 
     "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
 
 ### <a name="next-steps"></a>További lépések
-[Eszközök kezelése a Microsoft Intune-nal](device-management.md)
+[A Windows rendszerű számítógépek Intune-szoftverügyféllel való felügyeletének általános feladatai](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

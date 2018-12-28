@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fd3a38b331507ddc50a7b5e4ce8794e71d0e5dc5
-ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
+ms.openlocfilehash: b896a1607dfc036fe248c233477239700dc96091
+ms.sourcegitcommit: 3297fe04ad0d10bc32ebdb903406c2152743179e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977354"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53531328"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Az Intune eszközmegfelelőségi szabályzatai – első lépések
 
@@ -80,7 +80,7 @@ Az eszközmegfelelőségi szabályzatok használatához az alábbi követelmény
   - Android
   - iOS
   - macOS (előzetes verzió)
-  - Windows 8.1
+  - Windows 8.1
   - Windows Phone 8.1
   - Windows 10
 
@@ -100,9 +100,9 @@ Ha egy eszköz több konfigurációs profillal rendelkezik, és az eszköz megfe
 
 |Állapot  |Severity  |
 |---------|---------|
-|Függőben     |1|
-|Sikerült     |2|
-|Sikertelen     |3|
+|Függőben lévő     |1|
+|Sikeres     |2|
+|Meghiúsult     |3|
 |Hiba     |4|
 
 Ha egy eszköz több konfigurációs profillal rendelkezik, akkor az eszközhöz hozzárendelt összes profilé közül a legmagasabb súlyossági szintet rendeli hozzá a rendszer az eszközhöz.
@@ -159,21 +159,21 @@ Az eszközmegfelelőségi szabályzatokat felhasználói csoportokban lévő fel
 
 Minden Intune-ban regisztrált eszközhöz megtörténik a beépített **Megfelelőségi szabályzatok beállításainak** (Azure Portal > Eszközmegfelelőség) értékelése. Ezek a következők:
 
-- **Hozzárendelt megfelelőségi szabályzattal nem rendelkező eszköz megjelölése mint**: Ehhez a tulajdonsághoz két érték tartozik:
+- **Eszköz megjelölése mint hozzárendelt megfelelőségi szabályzattal nem rendelkező**: Ez a tulajdonság két értéke van:
 
   - **Megfelelő**: biztonsági szolgáltatás kikapcsolva
   - **Nem megfelelő** (alapértelmezés): biztonsági szolgáltatás bekapcsolva
 
   Ha egy eszköz nem rendelkezik hozzárendelt megfelelőségi szabályzattal, akkor az eszközt nem megfelelőként minősíti a rendszer. Az eszközök állapota alapértelmezés szerint **Megfelelő**. Ha feltételes hozzáférést használ, javasoljuk, hogy módosítsa a beállítást **Nem megfelelő** értékre. Ha egy végfelhasználó nem felel meg, mert nincs szabályzat hozzárendelve, akkor a Céges portál a következőt jeleníti meg: `No compliance policies have been assigned`.
 
-- **Függetlenítés (jailbreakelés) bővített észlelése**: E tulajdonság engedélyezése esetén az iOS-eszközök gyakrabban jelentkeznek be. A tulajdonság engedélyezésekor a rendszer igénybe veszi az eszköz helyalapú szolgáltatásait, mely hatással van az akkumulátorhasználatra. A felhasználó tartózkodási helyét az Intune nem tárolja.
+- **Továbbfejlesztett függetlenítésészlelés**: Ha engedélyezve van, a beállítás hatására a bejelentkezés az Intune-nal gyakrabban iOS-eszközök. A tulajdonság engedélyezésekor a rendszer igénybe veszi az eszköz helyalapú szolgáltatásait, mely hatással van az akkumulátorhasználatra. A felhasználó tartózkodási helyét az Intune nem tárolja.
 
   Ennek a beállításnak az engedélyezésekor az eszközöknek meg kell felelnie a következőknek:
   - Engedélyezett helyalapú szolgáltatások az operációs rendszer szintjén
   - Helyalapú szolgáltatások használatának engedélyezése a Céges portál számára
-  - Jailbreakelés állapotának kiértékelése és jelentése az Intune-nak legalább 72 óránként. Máskülönben az eszköz „nem megfelelő” állapotúként lesz megjelölve. Az értékelés akkor indul el, ha megnyitja a Céges portál alkalmazást, vagy legalább 500 méterrel fizikailag áthelyezi az eszközt.
+  - Jailbreakelés állapotának kiértékelése és jelentése az Intune-nak legalább 72 óránként. Máskülönben az eszköz „nem megfelelő” állapotúként lesz megjelölve. Az értékelés akkor indul el, ha megnyitja a Céges portál alkalmazást, vagy legalább 500 méterrel fizikailag áthelyezi az eszközt. Ha az eszköz nem helyezi át 500 mérőszámok 72 órán belüli, a felhasználónak kell nyissa meg a céges portál alkalmazást továbbfejlesztett egyes break értékeléshez.
 
-- **Megfelelőségi állapot érvényességi időtartama (nap)**: Adja meg azt az időszakot, amelyben az eszközöknek jelenteniük kell az állapotukat minden fogadott megfelelőségi szabályzat vonatkozásában. A rendszer nem megfelelőként kezeli azokat az eszközöket, melyek ebben az időszakban nem adják vissza állapotukat. Az alapértelmezett érték 30 nap.
+- **Megfelelőségi állapot érvényességi időtartama (nap)**: Adja meg az időtartamot, hogy eszközök jelenteniük kell az állapotukat minden fogadott megfelelőségi szabályzat. A rendszer nem megfelelőként kezeli azokat az eszközöket, melyek ebben az időszakban nem adják vissza állapotukat. Az alapértelmezett érték 30 nap.
 
 Minden eszköz rendelkezik egy **Beépített eszközmegfelelőségi szabályzattal** (Azure Portal > Eszközmegfelelőség). Használja ezt a beépített szabályzatot ezeknek a beállításoknak a figyeléséhez.
 

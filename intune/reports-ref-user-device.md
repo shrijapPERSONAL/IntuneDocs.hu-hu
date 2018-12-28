@@ -6,7 +6,7 @@ keywords: Intune-adattárház
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,16 +16,18 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; seodec18
-ms.openlocfilehash: 8655122b1aa0ce809d1b63e8b40e61aea6bbd285
-ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
+ms.openlocfilehash: 02c579a7371a59a46cfb0017e6aa1a17af92bd03
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53266885"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429559"
 ---
-# <a name="user-device-association"></a>Felhasználók és eszközök társítása
+# <a name="reference-for-user-device-association-entity"></a>Segédlet a Felhasználók és eszközök társítása entitáshoz
 
 A **UserDeviceAssociation** entitás tartalmazza a szervezet felhasználói hozzárendeléseit.
+
+## <a name="userdeviceassociation"></a>UserDeviceAssociation
 
 
 |        Name (Név)        |                                           Leírás                                            |        Példa         |
@@ -36,3 +38,6 @@ A **UserDeviceAssociation** entitás tartalmazza a szervezet felhasználói hozz
 |     IsDeleted      | Azt jelzi, hogy a felhasználó megszüntette az eszköz regisztrációját, és a társítás már nem aktuális. |       Igaz/hamis       |
 |  EndedDateTimeUTC  |              Az IsDeleted paraméter <strong>True</strong> (Igaz) értékre módosulásának dátuma és időpontja (UTC).               | 2017.06.23. 12:00:00 |
 
+## <a name="next-steps"></a>További lépések
+
+- Tudjon meg többet a [Intune Data Warehouse](reports-nav-create-intune-reports.md).

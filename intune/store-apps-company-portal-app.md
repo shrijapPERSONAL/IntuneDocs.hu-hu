@@ -1,12 +1,12 @@
 ---
 title: A Windows 10-es Céges portál alkalmazás manuális hozzáadása
 titleSuffix: Microsoft Intune
-description: A Windows 10-es Céges portál alkalmazás manuális hozzáadásának ismertetése.
+description: Ismerje meg, hogyan a munkatársak manuálisan is hozzáadhat a Windows 10-es céges portál alkalmazás Számítógépeiket, a Microsoft Store.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7808d9c189f429e15cdf916d18412ba951c7e696
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 755e836c5954b9cbbf3c7729755aaa25062710d8
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190268"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642591"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>A Windows 10-es Céges portál alkalmazás manuális hozzáadása a Microsoft Intune-nal
 
@@ -51,7 +51,7 @@ A felhasználók maguk telepíthetik a Microsoft Store-ból a Céges portál alk
 
 7. Töltse le a „Szükséges keretrendszer” cím alatt található összes csomagot a **Letöltés** elem kiválasztásával.  
     Ezt a műveletet az x86, az x64 és az ARM architektúrákkal kell elvégezni, összesen 12 csomaggal.
-8. Mielőtt feltöltené a Céges portál alkalmazást az Intune-ra, hozzon létre egy mappát (például: C:\Céges portál) a következőképpen felépített csomagokkal:
+8. Mielőtt feltölti a céges portál alkalmazást az Intune-hoz, hozzon létre egy mappát (például: C:\Company portál) a csomagokkal, strukturált, a következő módon:
    - Helyezze el a Céges portál csomagot a C:\Céges portál helyen. Ugyanitt hozzon létre egy *Függőségek* almappát is.  
 
      ![Az APPXBUN fájllal mentett Függőségek mappája](./media/Win10CP-Dependencies-save.png)

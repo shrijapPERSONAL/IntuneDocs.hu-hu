@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/12/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: acf850c8981a68456c8be9bda54c21ad49aba5e9
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: 94e4f955a57f5a505bfbbdc84ae236bbfb85fe8b
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53325075"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738052"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>iOS-alkalmazások előkészítése alkalmazásvédelmi szabályzatokkal való felügyeletre az Intune alkalmazásburkoló eszközével
 
@@ -100,7 +100,7 @@ Az Intune által burkolt alkalmazások terjesztéséhez az alábbiakra van szük
 
 4. Kattintson a **Certificates, IDs & Profiles** (Tanúsítványok, azonosítók és profilok) lehetőségre.
 
-   ![Apple fejlesztői portál](./media/iOS-signing-cert-1.png)
+   ![Apple fejlesztői portálján - tanúsítványok, azonosítók és profilok](./media/iOS-signing-cert-1.png)
 
 5. Kattintson az ![Apple fejlesztői portál plusz jel](./media/iOS-signing-cert-2.png) jelre a jobb felső sarokban iOS-tanúsítvány hozzáadásához.
 
@@ -125,7 +125,7 @@ Az Intune által burkolt alkalmazások terjesztéséhez az alábbiakra van szük
 
 11. CSR-fájl létrehozásához kövesse az Apple fejlesztői webhely fenti útmutatóját. A CSR-fájlt mentse el a macOS-számítógépre.
 
-    ![Tanúsítvány kérése hitelesítésszolgáltatótól a Keychain Access alkalmazásban](./media/iOS-signing-cert-6.png)
+    ![Adja meg a tanúsítvány, amely a kért információkat](./media/iOS-signing-cert-6.png)
 
 12. Térjen vissza az Apple fejlesztői webhelyre. Kattintson a **Folytatás** gombra. Töltse fel a CSR-fájlt.
 
@@ -141,7 +141,7 @@ Az Intune által burkolt alkalmazások terjesztéséhez az alábbiakra van szük
 
 16. Ekkor megjelenik egy információs ablak. Görgessen az ablak aljára, és keresse meg a **Fingerprints** (Ujjlenyomatok) címkét. Másolja ki az (itt homályosan látható) **SHA1** sztringet, és használja ezt az App Wrapping Tool -c paraméterének argumentumaként.
 
-    ![Tanúsítvány hozzáadása a kulcslánchoz](./media/iOS-signing-cert-9.png)
+    ![iPhone-adatok – ujjlenyomatok SHA1 karakterlánc](./media/iOS-signing-cert-9.png)
 
 
 

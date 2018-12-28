@@ -6,7 +6,7 @@ keywords: Intune-adattárház
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 55d624f63c8563cc3dde561b98cd0894d5a9b65d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 521f33b0c4cfa0f1f4ba534acc2f3fec9a53f151
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189163"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429627"
 ---
 # <a name="reference-for-date-entity"></a>Dátum típusú entitás referenciája
 
 A **Dátum** kategória a **Dátum** entitást tartalmazza, amely dátumhivatkozások definiálására szolgál az adatmodellben.
 
-**Dátum**
+## <a name="date"></a>Dátum
 
 A **Dátum** entitás olyan dátumokat jelöl, amelyekre több adattárház-entitás is hivatkozik.
 
@@ -53,3 +53,6 @@ A **Dátum** entitás olyan dátumokat jelöl, amelyekre több adattárház-enti
 | CalendarQuarter |                    Naptári negyedév                    |          3           |
 |  CalendarYear   |                     Naptári év                      |         2016         |
 
+## <a name="next-steps"></a>További lépések
+
+- Tudjon meg többet a [Intune Data Warehouse](reports-nav-create-intune-reports.md).

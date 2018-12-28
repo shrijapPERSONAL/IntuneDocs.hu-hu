@@ -1,12 +1,12 @@
 ---
 title: Alkalmazások hozzárendelése csoportokhoz a Microsoft Intune-ban
 titlesuffix: ''
-description: Útmutató Intune-alkalmazás felhasználói csoportokhoz vagy eszközökhöz való hozzárendeléséhez.
+description: Útmutató az Intune alkalmazás hozzárendelése csoportokhoz a felhasználók vagy eszközök Microsoft Intune-nal.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b6e9901bfea3ec129246494d6d8077a440c8a675
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: bc31c793722f7073281c82da1fe4389fc214457b
+ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53324922"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53734272"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Alkalmazások hozzárendelése csoportokhoz a Microsoft Intune-nal
 
@@ -29,20 +29,22 @@ ms.locfileid: "53324922"
 
 Miután [hozzáadott egy alkalmazást](apps-add.md) a Microsoft Intune-hoz, azt felhasználókhoz és eszközökhöz rendelheti hozzá. Vegye figyelembe, hogy az alkalmazást attól függetlenül hozzárendelheti az eszközhöz, hogy az eszközt az Intune felügyeli-e. 
 
+> [!NOTE]
+> Az elérhető üzembe helyezési szándék a nem támogatott eszközcsoportok, csak a felhasználói csoportok támogatottak.
+
 Az alábbi táblázat az alkalmazások felhasználókhoz és eszközökhöz való hozzárendelésével kapcsolatos különböző lehetőségeket sorolja fel:
 
-||||
-|-|-|-|-|
-|&nbsp;|**Az Intune-ban regisztrált eszközök**|**Az Intune-ban nem regisztrált eszközök**|
-|Hozzárendelés felhasználókhoz|Igen|Igen|
-|Hozzárendelés eszközökhöz|Igen|Nem|
-|Burkolt alkalmazások, vagy azt Intune SDK-t magukba foglaló alkalmazások hozzárendelése (alkalmazásvédelmi szabályzatok esetén)|Igen|Igen|
-|Alkalmazások hozzárendelése elérhetőként|Igen|Igen|
-|Alkalmazások hozzárendelése szükségesként|Igen|Nem|
-|Alkalmazások eltávolítása|Igen|Nem|
-|Alkalmazásfrissítések fogadása az Intune-ból|Igen|Nem|
-|A végfelhasználók a Céges portál alkalmazásban telepítik az elérhető alkalmazásokat|Igen|Nem|
-|A végfelhasználók a webalapú Intune Céges portálon telepítik az elérhető alkalmazásokat|Igen|Igen|
+|   | Az Intune-ban regisztrált eszközök | Az Intune-ban nem regisztrált eszközök |
+|-------------------------------------------------------------------------------------------|------------------------------|----------------------------------|
+| Hozzárendelés felhasználókhoz | Igen | Igen |
+| Hozzárendelés eszközökhöz | Igen | Nem |
+| Burkolt alkalmazások, vagy azt Intune SDK-t magukba foglaló alkalmazások hozzárendelése (alkalmazásvédelmi szabályzatok esetén) | Igen | Igen |
+| Alkalmazások hozzárendelése elérhetőként | Igen | Igen |
+| Alkalmazások hozzárendelése szükségesként | Igen | Nem |
+| Alkalmazások eltávolítása | Igen | Nem |
+| Alkalmazásfrissítések fogadása az Intune-ból | Igen | Nem |
+| A végfelhasználók a Céges portál alkalmazásban telepítik az elérhető alkalmazásokat | Igen | Nem |
+| A végfelhasználók a webalapú Intune Céges portálon telepítik az elérhető alkalmazásokat | Igen | Igen |
 
 > [!NOTE]
 > Jelenleg (mind üzletági, mind pedig áruházbeli) iOS- és Android-alkalmazásokat rendelhet hozzá azokhoz az eszközökhöz, melyek nincsenek regisztrálva az Intune-ban.
@@ -83,9 +85,8 @@ Ezzel az alkalmazást hozzárendelte a kiválasztott csoportokhoz. További info
 
 Néha előfordul, hogy ugyanazt az alkalmazást eltérő szándékkal rendelik hozzá különböző csoportokhoz. A következő táblázatban található információk segítségével megértheti, hogy amikor ez előfordul, milyen szándékot eredményez:
 
-||||
-|-|-|-|
-|**1. csoport hozzárendelési szándéka**|**2. csoport hozzárendelési szándéka**|**Eredmény**|
+| 1. csoport hozzárendelési szándéka | 2. csoport hozzárendelési szándéka | Eredmény |
+|-----------------------------------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |A felhasználó kötelező|A felhasználó elérhető|Kötelező és elérhető|
 |A felhasználó kötelező|A felhasználható nem érhető el|Kötelező|
 |A felhasználó kötelező|Felhasználó eltávolítása|Kötelező|

@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: d95bc665d271eac55682fa8f0aeee2bf267c48ef
-ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
+ms.openlocfilehash: 3f0283b07c4efd03800f21aadba2cc53beffec68
+ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53267089"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53553690"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -54,7 +54,7 @@ A Microsoft Intune támogatja a Transport Layer Security (TLS) 1.2-es + kategór
 #### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>Az Intune App SDK támogatni fogja a 256 bites titkosítási kulcsok <!-- 1832174 -->
 Az Androidhoz készült Intune App SDK mostantól 256 bites titkosítást kulcsokat használ, ha az alkalmazásvédelmi szabályzatok engedélyezve van a titkosítási. Az SDK továbbra is támogatja a 128 bites kulcsok tartalmat és a régebbi SDK-t használó alkalmazások kompatibilitását.
 
-### <a name="microsoft-auto-update-version-450-required-for-macos-devices----3503442---"></a>A Microsoft automatikus frissítési verzió macOS-eszközökhöz szükséges 4,50 <!-- 3503442 -->
+### <a name="microsoft-auto-update-version-450-required-for-macos-devices----3503442---"></a>MacOS-eszközökhöz szükséges a Microsoft automatikus frissítési verzió 4.5.0 <!-- 3503442 -->
 A folytatáshoz frissítéseknek a fogadása a vállalati portál és más Office-alkalmazások az Intune által felügyelt macOS-eszközökhöz a Microsoft automatikus frissítési 4.5.0 kell frissítenie. Előfordulhat, hogy a felhasználóknak már van ez a verzió az Office-alkalmazásokban.
 
 ### <a name="intune-requires-macos-1012-or-later----2827778---"></a>Az Intune macOS 10.12 vagy újabb verziója szükséges <!-- 2827778 -->

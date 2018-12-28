@@ -1,7 +1,7 @@
 ---
 title: Üzletági Windows Phone-alkalmazás hozzáadása a Microsoft Intune-hoz
 titlesuffix: ''
-description: Útmutató üzletági Windows Phone-alkalmazás Intune-ba való felvételéhez.
+description: Ismerje meg, hogyan adhat hozzá egy Windows Phone – üzletági (LOB) alkalmazások Microsoft Intune-nal.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d0a20ad2934163826c017fc0ae8b9ade6e80fcdc
-ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
+ms.openlocfilehash: 9fa39f212c9979a9986bba5537f0c9a2b5e01c8c
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247203"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642642"
 ---
 # <a name="add-a-windows-phone-line-of-business-app-to-microsoft-intune"></a>Üzletági Windows Phone-alkalmazás hozzáadása a Microsoft Intune-hoz
 

@@ -6,7 +6,7 @@ keywords: Intune-adattárház
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 845c0639e885833bc020aed4d55dc31d6a0f03f0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 3e2b1b0d17d4d13ed377e940f24f217a4bdf3bfd
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190132"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738086"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Mobilalkalmazás-felügyelet (MAM) típusú entitások referenciája
 
@@ -42,8 +42,8 @@ A **MamApplication** entitás azokat az üzletági alkalmazásokat sorolja fel, 
 | Tulajdonság | Leírás | Példa |
 |---------|------------|--------|
 | ApplicationKey |A MAM-alkalmazás egyedi azonosítója az adattárházban. |123 |
-| ApplicationName |A MAM-alkalmazás neve. |"Word" |
-| ApplicationId |A MAM-alkalmazás alkalmazásazonosítója. |b66bc706-ffff-7437-0340-032819502773 |
+| Alkalmazásnév |A MAM-alkalmazás neve. |"Word" |
+| Alkalmazásazonosító |A MAM-alkalmazás alkalmazásazonosítója. |b66bc706-ffff-7437-0340-032819502773 |
 | IsDeleted |Jelzi, hogy frissítve lett-e ez a MAM-alkalmazásrekord. <br>Igaz – a MAM-alkalmazáshoz új, frissített mezőkből álló rekord tartozik a táblában. <br>Hamis – a MAM-alkalmazás legfrissebb rekordja. |Igaz/hamis |
 | StartDateInclusiveUTC |A MAM-alkalmazás adattárházban történő létrehozásának dátuma és időpontja (UTC). |2016.11.23. 12:00:00 |
 | DeletedDateUTC |Az IsDeleted paraméter True (Igaz) értékre módosulásának dátuma és időpontja (UTC). |2016.11.23. 12:00:00 |
@@ -59,14 +59,14 @@ A **MamApplicationInstance** entitás a felügyelt Mobilalkalmazás-felügyeleti
 |   ApplicationInstanceKey   |                                                               A MAM-alkalmazáspéldány egyedi azonosítója az adattárházban – helyettes kulcs.                                                                |                 123                  |
 |           UserId           |                                                                              Annak a felhasználónak az azonosítója, aki ezt a MAM-alkalmazást telepítette.                                                                              | b66bc706-ffff-7437-0340-032819502773 |
 |   ApplicationInstanceId    |                                              A MAM-alkalmazáspéldány egyedi azonosítója – hasonló az ApplicationInstanceKey-hez, de az azonosító természetes kulcs.                                              | b66bc706-ffff-7437-0340-032819502773 |
-|       ApplicationId        |                                                                                        A MAM-alkalmazás azonosítója                                                                                         |  com.microsoft.groupies-daily.<IOS>  |
+|       Alkalmazásazonosító        |                                                                                        A MAM-alkalmazás azonosítója                                                                                         |  com.microsoft.groupies-daily.<IOS>  |
 |     ApplicationVersion     |                                                                                     A MAM-alkalmazás verziószáma.                                                                                      |                  2                   |
 |        CreatedDate         |                                                                 A MAM-alkalmazáspéldány rekordjának létrehozási dátuma. Az érték lehet null is.                                                                 |        2016.11.23. 12:00:00        |
 |          Platform          |                                                                          Az eszköz platformja, amelyen ez a MAM-alkalmazás telepítve van.                                                                           |                  2                   |
 |      PlatformVersion       |                                                                      Az eszköz platformjának verziója, amelyen ez a MAM-alkalmazás telepítve van.                                                                       |                 2.2                  |
 |         SdkVersion         |                                                                            A MAM-SDK verziója, amellyel az adott MAM-alkalmazást becsomagolták.                                                                            |                 3.2                  |
 |          DeviceId          |                                                                          Az eszköz azonosítója, amelyen ez a MAM-alkalmazás telepítve van.                                                                          | b66bc706-ffff-7437-0340-032819502773 |
-|         DeviceName         |                                                                         Az eszköz neve, amelyen ez a MAM-alkalmazás telepítve van.                                                                         |              "MyDevice"              |
+|         Eszköznév         |                                                                         Az eszköz neve, amelyen ez a MAM-alkalmazás telepítve van.                                                                         |              "MyDevice"              |
 |         IsDeleted          | Jelzi, hogy frissítve lett-e ez a MAM-alkalmazásrekord. <br>Igaz – a MAM-alkalmazáspéldányhoz új, frissített mezőkből álló rekord tartozik a táblában. <br>Hamis – a MAM-alkalmazás legfrissebb rekordja. |              Igaz/hamis              |
 |   StartDateInclusiveUTC    |                                                              A MAM-alkalmazáspéldány adattárházban történő létrehozásának dátuma és időpontja (UTC).                                                               |        2016.11.23. 12:00:00        |
 |       DeletedDateUTC       |                                                                             Az IsDeleted paraméter True (Igaz) értékre módosulásának dátuma és időpontja (UTC).                                                                              |        2016.11.23. 12:00:00        |
@@ -119,7 +119,7 @@ A **MamGlobalApplication** entitás azokat az áruházbeli alkalmazásokat sorol
 |          Tulajdonság          |                                               Leírás                                               |           Példa            |
 |----------------------------|---------------------------------------------------------------------------------------------------------|------------------------------|
 |       ApplicationKey       |          Az áruházbeli alkalmazás egyedi azonosítója az adattárházban, más néven a helyettes kulcs.          |             123              |
-|       ApplicationId        | Az áruházbeli alkalmazás egyedi azonosítója. Az azonosító hasonló az ApplicationKey-hez, de természetes kulcs.  | com.microsoft.skydrive.<ios> |
+|       Alkalmazásazonosító        | Az áruházbeli alkalmazás egyedi azonosítója. Az azonosító hasonló az ApplicationKey-hez, de természetes kulcs.  | com.microsoft.skydrive.<ios> |
 |      ApplicationName       |                                      A MAM-beli globális alkalmazásnév.                                       |           SkyDrive           |
 | RowLastModifiedDateTimeUTC | Az adott MAM globális alkalmazás adattárházban történt utolsó módosításának dátuma és időpontja (UTC). |    2016.11.23. 12:00:00    |
 
@@ -132,6 +132,6 @@ A **MamPlatform** entitás azoknak a platformoknak a nevét és típusát sorolj
 |----------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
 |        PlatformKey         |     A platform egyedi azonosítója az adattárházban – helyettes kulcs.      |                           123                           |
 |          Platform          | A platform egyedi azonosítója – a PlatformKey-hez hasonló, de természetes kulcs. |                           123                           |
-|        PlatformName        |                                   A platform neve                                   | Nem érhető el <br>Nincsenek <br>Windows <br>iOS <br>Android. |
+|        PlatformName        |                                   A platform neve                                   | Nem érhető el <br>None <br>Windows <br>iOS <br>Android. |
 | RowLastModifiedDateTimeUTC | A platform adattárházban történt utolsó módosításának dátuma és időpontja (UTC).  |                 2016.11.23. 12:00:00                  |
 

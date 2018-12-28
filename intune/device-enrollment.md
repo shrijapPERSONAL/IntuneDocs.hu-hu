@@ -15,12 +15,12 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 897eca8eab6a3b5d2f8f12d69aa5da3ae1988f13
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: 73caf328bd25cb31bacea6b964c1db7601f3aec6
+ms.sourcegitcommit: baacdb2c5ee69d0055acad2d64f2bf1a3fc5e02d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53324888"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53570808"
 ---
 # <a name="what-is-device-enrollment"></a>Mi az eszközregisztrálás?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -57,10 +57,10 @@ Alapértelmezés szerint platformtól függetlenül minden eszköz regisztráci�
 |**[BYOD](#bring-your-own-device)** | Nem |  Igen |   Nem | [További információ](windows-enroll.md)|
 |**[DEM](#device-enrollment-manager)**| Nem |Nem |Nem  |[További információ](device-enrollment-manager-enroll.md)|
 |**Automatikus regisztráció** | Nem |Igen |Nem | [További információ](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
-|**Az autopilot** |Igen |Igen |Nem | [További információ](enrollment-autopilot.md)]
+|**Az autopilot** |Igen |Igen |Nem | [További információ](enrollment-autopilot.md)
 |**Csoportos regisztráció** |Nem |Nem |Nem | [További információ](./windows-bulk-enroll.md) |
-|**Közös felügyelet** |Nem |Igen |Nem | [További információ](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)]
-|**GPO** |Nem |Igen |Nem | [További információ](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)]
+|**Közös felügyelet** |Nem |Igen |Nem | [További információ](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)
+|**GPO** |Nem |Igen |Nem | [További információ](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)
 
 
 ## <a name="android-enrollment-methods"></a>Android-eszközök regisztrálási módszerei

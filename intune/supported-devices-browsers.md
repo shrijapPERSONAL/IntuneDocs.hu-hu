@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 0cea1b958849d6c2422461e85eba57577a65e884
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 2d47a8f61c85b390ae53311154f27d2d85860840
+ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112595"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626044"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Támogatott operációs rendszereket és böngészőket az Intune-ban
 
@@ -30,6 +30,8 @@ ms.locfileid: "53112595"
 A Microsoft Intune beállítása előtt tekintse át a támogatott operációs rendszereket és böngészőket.
 
 Az eszközön az Intune telepítésével kapcsolatos útmutatásért lásd: [munkavégzés felügyelt eszközökkel](/intune-user-help/company-portal-frequently-asked-questions) és [az Intune hálózatisávszélesség-felhasználás](network-bandwidth-use.md).
+
+A konfigurációs szolgáltatás által támogatott szolgáltatók további információért látogasson el a [Configuration service provider referencia](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).
 
 ## <a name="intune-supported-operating-systems"></a>Az Intune által támogatott operációs rendszerek
 

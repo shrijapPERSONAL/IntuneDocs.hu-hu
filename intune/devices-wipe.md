@@ -14,12 +14,12 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 44923d89647118268c7a55746599354ac88fbfd2
-ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
+ms.openlocfilehash: 12d050bb7ef959b940e2b758284863319282f179
+ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52861013"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53553656"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Eszközök eltávolítása összes adatuk törlésével, az eszköz kivonásával vagy regisztrációja manuális törlésével
 
@@ -47,7 +47,7 @@ Az összes adat törlését akkor érdemes használni, ha szeretne alaphelyzetbe
 
 ### <a name="wiping-a-device"></a>Eszköz összes adatának törlése
 
-1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
 3. Válassza az **Eszközök** > **Minden eszköz** lehetőséget.
 4. Válassza ki az eszköz nevét, amelyen az összes adatot törölni szeretné.
@@ -81,7 +81,7 @@ Az alábbi táblázatok ismertetik, hogy milyen adatokat távolít el a rendszer
 
 |Adattípus|iOS|
 |-------------|-------|
-|Vállalati alkalmazások és az Intune által telepített egyéb vonatkozó adatok|**Vállalati portálon keresztül telepített alkalmazások:** összes és az alkalmazások el lesznek távolítva. Az alkalmazások tartalmazzák az App Store telepített és később felügyelt vállalati alkalmazások alkalmazások. <br /><br /> **Microsoft-alkalmazások mobilalkalmazás-felügyeletet használó, és megtörtént-e az App Store:** törlődnek a személyes adatai. Vállalati alkalmazások adatainak és az alkalmazások nem lesznek eltávolítva.|
+|Vállalati alkalmazások és az Intune által telepített egyéb vonatkozó adatok|**Vállalati portálon keresztül telepített alkalmazások:** összes és az alkalmazások el lesznek távolítva. Az alkalmazások tartalmazzák az App Store telepített és később felügyelt vállalati alkalmazások alkalmazások. <br /><br /> **Microsoft-alkalmazások mobilalkalmazás-felügyeletet használó, és megtörtént-e az App Store:** Törlődnek a vállalati alkalmazásadatok. Személyes adatokat, és az alkalmazások nem lesznek eltávolítva.|
 |Beállítások|Az Intune-szabályzat által konfigurált beállítások érvényüket vesztik. A felhasználók megváltoztathatják a beállításokat.|
 |Wi-Fi és VPN profilbeállításai|Eltávolítva.|
 |Tanúsítvány profilbeállításai|A tanúsítványok törlődnek és visszavonásra kerülnek.|

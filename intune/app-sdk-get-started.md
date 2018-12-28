@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 4ccbdff5eac7fef8d28696d8340eb498bae95176
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 03840b0a4a7ce3f4735e22a227f5d2856d532b11
+ms.sourcegitcommit: 02f75d241b3cbb125cb235d16d447f8855b1806d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187854"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53657780"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Bevezetés a Microsoft Intune App SDK használatába
 
@@ -79,11 +79,11 @@ Ha Xamarin-alkalmazásról van szó, használja a következő SDK-változatot:
 
 A következő fejlesztői útmutatók segítséget nyújtanak az Intune App SDK integrálásához az alkalmazásába:
 
-* **[iOS-hez készült Intune App SDK – fejlesztői útmutató](app-sdk-ios.md)**: Ez a dokumentum részletesen ismerteti a natív iOS-alkalmazásnak az Intune App SDK-val való engedélyezésének lépéseit.
+* **[Intune App SDK – Fejlesztői útmutató iOS](app-sdk-ios.md)**: Ez a dokumentum részletesen ismerteti a natív iOS-alkalmazásnak az Intune App SDK-val való engedélyezésének.
 
-* **[Androidhoz készült Intune App SDK – fejlesztői útmutató](app-sdk-android.md)**: Ez a dokumentum részletesen ismerteti a natív androidos alkalmazásnak az Intune App SDK-val való engedélyezésének lépéseit.
+* **[Intune App SDK Androidon – útmutató fejlesztőknek](app-sdk-android.md)**: Ez a dokumentum részletesen ismerteti a natív Androidos alkalmazásnak az Intune App SDK-val való engedélyezésének.
 
-* **[Az Intune App SDK Xamarin-kötések útmutatója](app-sdk-xamarin.md)**: Ez a dokumentum segít iOS- és Android-alkalmazások összeállításában a Xamarin használatával az Intune alkalmazásvédelmi szabályzataihoz.
+* **[Útmutató az Intune App SDK Xamarin Bindings](app-sdk-xamarin.md)**: Ez a dokumentum segít iOS és Android-alkalmazások Xamarin használatával az Intune alkalmazásvédelmi szabályzatokat hozhat létre.
 
 
 
@@ -99,7 +99,7 @@ A következő fejlesztői útmutatók segítséget nyújtanak az Intune App SDK 
 
 A Microsoft Intune statisztikát gyűjt az alkalmazás használatáról.
 
-* **iOS-hez készült Intune App SDK**: Az SDK alapértelmezés szerint naplózza a használati események SDK-telemetriai adatait. Az adatokat az SDK a Microsoft Intune-nak küldi el.
+* **IOS-hez készült Intune App SDK**: Az SDK alapértelmezés szerint naplózza a használati események SDK-telemetriai adatokat. Az adatokat az SDK a Microsoft Intune-nak küldi el.
 
     * Ha úgy dönt, hogy nem kíván SDK-ból származó telemetriai adatokat küldeni a Microsoft Intune-nak az alkalmazásából, le kell tiltania az SDK-ban a telemetria-átvitelt az IntuneMAMSetting könyvtárban található `MAMTelemetryDisabled` tulajdonság „YES” értékre való állításával.
 
@@ -153,15 +153,15 @@ Buildszám|CFBundleVersion|PackageVersionCode |Ez a szám az alkalmazáskód egy
 ### <a name="test-your-app"></a>Az alkalmazás tesztelése
 Miután elvégezte az iOS vagy Android alkalmazásnak az Intune App SDK-való integrálásához szükséges lépéseket, meg kell győződnie arról, hogy a felhasználóknál és a rendszergazdánál engedélyezve vannak és működnek az alkalmazásvédelmi szabályzatok. Az integrált alkalmazás teszteléséhez a következőkre lesz szüksége:
 
-* **Microsoft Intune-tesztfiók**: Az Intune által kezelt alkalmazás az Intune-beli alkalmazásvédelmi funkcióinak teszteléséhez Microsoft Intune-fiók szükséges.
+* **A Microsoft Intune-tesztfiók**: Az Intune által kezelt alkalmazás az Intune alkalmazásvédelmi funkcióinak teszteléséhez szüksége lesz egy Microsoft Intune-fiók.
 
     * Ha független szoftverszállítóként engedélyezi az Intune alkalmazásvédelmi szabályzatának használatához az iOS vagy Android rendszerhez készült áruházbeli alkalmazásait, a regisztráció (az ezt ismertető lépésben leírt módon történő) befejezése után kapni fog egy promóciós kódot. A promóciós kód lehetővé teszi, hogy feliratkozzon a Microsoft Intune próbaverziójának 1 évig meghosszabbított használatára.
 
     * Az áruházban nem közzéteendő üzleti alkalmazások fejlesztői az adott szervezeten keresztül kaphatnak hozzáférést a Microsoft Intune-hoz. Emellett feliratkozhat a [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) egyhónapos ingyenes próbaidőszakára is.
 
-* **Az Intune alkalmazásvédelmi szabályzatai**: Ha az alkalmazását az összes Intune-beli alkalmazásvédelmi szabályzattal tesztelni szeretné, akkor minden szabályzatbeállításnál tudnia kell, mi a várt viselkedés. Lásd az [iOS alkalmazásvédelmi szabályzatainak](app-protection-policy-settings-ios.md) és az [Android alkalmazásvédelmi szabályzatainak](app-protection-policy-settings-android.md) ismertetését.
+* **Az Intune alkalmazásvédelmi szabályzatai**: Tesztelje az alkalmazását az Intune alkalmazásvédelmi szabályzatok, ismernie kell, az elvárt viselkedés mi minden egyes házirend-beállítás. Lásd az [iOS alkalmazásvédelmi szabályzatainak](app-protection-policy-settings-ios.md) és az [Android alkalmazásvédelmi szabályzatainak](app-protection-policy-settings-android.md) ismertetését.
 
-* **Hibaelhárítás**: Ha az alkalmazás telepítése közbeni felhasználói élmény manuális tesztelése során bármilyen problémába ütközik, tekintse meg az [alkalmazástelepítési hibák elhárításával](troubleshoot-app-install.md) foglalkozó szakaszt. 
+* **Hibaelhárítás**: Ha problémákat tapasztal az alkalmazás telepítési felhasználói élmény manuális tesztelésekor közben, lásd: [alkalmazás telepítési problémák elhárítása](troubleshoot-app-install.md). 
 
 ### <a name="give-your-app-access-to-the-intune-app-protection-service-optional"></a>Az alkalmazás-hozzáférést biztosít az Intune app protection szolgáltatás (nem kötelező)
 
@@ -177,7 +177,7 @@ Miután regisztrálta az alkalmazást egy Azure-bérlő belül, és alatt látha
 6.  A keresőmezőbe írja be a **Microsoft Mobile Application Management** (Microsoft mobilalkalmazás-kezelés) kifejezést.
 7.  Jelölje aki az API-k listájának **Microsoft Mobile Application Management** elemét, és kattintson a kiválasztás lehetőségre.
 8.  Válassza a **Felhasználó alkalmazásfelügyeleti adatainak olvasása és írása** lehetőséget.
-9.  Kattintson a **Kész** gombra.
+9.  Kattintson a **Done** (Kész) gombra.
 10. Kattintson az **Engedélyek megadása**, majd az **Igen** elemre. 
 
 ### <a name="badge-your-app-optional"></a>Az alkalmazás megjelölése jelvénnyel (nem kötelező)
@@ -188,7 +188,7 @@ Ez a jelvény jelzi a rendszergazdáknak, végfelhasználóknak és a leendő In
 
 A jelvény egy aktatáska formájú ikon, amely az alábbi mintákon látható:
 
-![Jelvény, 1. példa](./media/badge-example-1.png) ![Jelvény, 2. példa](./media/badge-example-2.png)
+![Az Intune alkalmazásvédelmi szabályzatai - jelvény, 1. példa](./media/badge-example-1.png) ![Az Intune alkalmazásvédelmi szabályzatai - jelvény, 2. példa](./media/badge-example-2.png)
 
 **Az alkalmazás jelvénnyel való megjelöléséhez az alábbiak szükségesek**:
 

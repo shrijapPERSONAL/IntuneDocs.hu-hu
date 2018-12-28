@@ -16,18 +16,18 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 637fe2d2c764cf78e67e728bfa77567cf12e88ce
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 76a16df06c085eb3b40a3a48d4398a46233a09b8
+ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031993"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626084"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-kiosk-devices"></a>Az Android enterprise teljes képernyős eszközök Intune-regisztráció beállítása
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Az Android vállalati tulajdonú, egycélú megoldáskészletével támogatja a kioszk-stílusú eszközök használatát. Az ilyen eszközöknek egyetlen rendeltetése van, például digitális aláírás, jegynyomtatás vagy leltárkezelés, hogy csak néhányat említsünk. A rendszergazdák alkalmazások és webes hivatkozások egy adott körére korlátozzák az eszköz használatát. Ez azt is megakadályozza, hogy a felhasználók más alkalmazásokat adjanak az eszközhöz, vagy más műveleteket hajtsanak végre rajta.
+Android-eszközök kioszk stílusú támogatja a [dedikált eszközök](https://developers.google.com/android/work/overview#company-owned-devices-for-dedicated-use) megoldás beállítása. Az ilyen eszközöknek egyetlen rendeltetése van, például digitális aláírás, jegynyomtatás vagy leltárkezelés, hogy csak néhányat említsünk. A rendszergazdák alkalmazások és webes hivatkozások egy adott körére korlátozzák az eszköz használatát. Ez azt is megakadályozza, hogy a felhasználók más alkalmazásokat adjanak az eszközhöz, vagy más műveleteket hajtsanak végre rajta.
 
 Az Intune segítséget nyújt az alkalmazások és beállítások androidos kioszkeszközökre való telepítéséhez. A Vállalati Androidra vonatkozó részletekről az [A Vállalati Android követelményei](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012) című weboldal nyújt tájékoztatást.
 
@@ -56,8 +56,8 @@ Kioszkeszközei regisztrálásához létre kell hoznia egy regisztrációs profi
 
 1. Nyissa meg az [Intune portált](https://portal.azure.com), majd válassza az **Eszközregisztráció** > **Android-regisztráció** > **Kioszk- és feladatalapú eszközök regisztrációja** lehetőséget.
 2. Válassza a **Létrehozás** lehetőséget, és töltse ki a kötelező mezőket.
-    - **Név**: Adjon meg egy nevet, amelyet akkor fog használni, amikor a profilt a dinamikus eszközcsoporthoz rendeli.
-    - **Jogkivonat lejárati dátuma**: Az a dátum, amikor a jogkivonat lejár. A Google legfeljebb 90 napos érvényességi időszakot engedélyez.
+    - **Név**: Írja be a nevet fogja használni a profil hozzárendelésekor a dinamikus eszközcsoporthoz.
+    - **Jogkivonat-lejárati dátum**: A jogkivonat lejáratának dátuma A Google legfeljebb 90 napos érvényességi időszakot engedélyez.
 3. Válassza a **Létrehozás** elemet a profil mentéséhez.
 
 ### <a name="create-a-device-group"></a>Eszközcsoport létrehozása
@@ -66,12 +66,12 @@ A cél lehet alkalmazás, és hozzárendelt vagy dinamikus eszközcsoportokra vo
 
 1. Nyissa meg az [Intune portált](https://portal.azure.com), majd válassza a **Csoportok** > **Minden csoport** > **Új csoport** lehetőséget.
 2. A **Csoport** panelen töltse ki a kötelező mezőket az alábbiak szerint:
-    - **Csoporttípus**: Biztonsági (Security)
-    - **Csoport neve**: Adjon meg egy beszédes nevet (például 1. üzem eszközei)
-    - **Tagság típusa**: Dinamikus eszköz (Dynamic device)
+    - **Csoport típusa**: Biztonság
+    - **Csoport neve**: Adjon meg egy intuitív nevet (például az eszközök gyári 1)
+    - **Tagság típusa**: Dinamikus eszköz
 3. Válassza a **Dinamikus lekérdezés hozzáadása** lehetőséget.
 4. A **Dinamikus tagsági szabályok** panelen töltse ki a mezőket az alábbiak szerint:
-    - **Dinamikus tagsági szabály hozzáadása**: Egyszerű szabály (Simple rule)
+    - **A dinamikus tagsági szabály hozzáadása**: Egyszerű szabály
     - **Eszközök hozzáadásának helye**: enrollmentProfileName
     - A középső mezőben válassza az **Egyezés** (Match) lehetőséget.
     - Az utolsó mezőben adja meg a korábban létrehozott regisztrációs profilt.
@@ -82,8 +82,8 @@ A cél lehet alkalmazás, és hozzárendelt vagy dinamikus eszközcsoportokra vo
 
 A jogkivonatok és QR-kódok cserélhetők vagy eltávolíthatók.
 
-- **Jogkivonat cseréje**: A Jogkivonat cseréje lehetőséggel új jogkivonatot/QR-kódot generálhat a hamarosan lejáró helyett.
-- **Jogkivonat visszavonása**: Azonnal lejárttá minősítheti a jogkivonatot/QR-kódot. Ettől kezdve a jogkivonat/QR-kód többé nem használható. Ez a lehetőség a következő esetekben lehet hasznos:
+- **Cserélje le jogkivonatot**: Létrehozhat egy új jogkivonattal vagy QR-kódot, amikor lejár egy cserélje le jogkivonatot használatával.
+- **Jogkivonat visszavonása**: A jogkivonattal vagy QR-kódot azonnal lejárhat. Ettől kezdve a jogkivonat/QR-kód többé nem használható. Ez a lehetőség a következő esetekben lehet hasznos:
     - a jogkivonat/QR-kód véletlenül meg lett osztva egy jogosulatlan féllel
     - minden regisztráció befejeződött, és a jogkivonatra/QR-kódra többé nincs szükség
 

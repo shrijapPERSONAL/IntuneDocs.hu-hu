@@ -1,11 +1,11 @@
 ---
 title: Windows 10-eszközök naplóinak küldése a cég informatikai támogatási szolgálatának | Microsoft Docs
-description: 1511-es vagy újabb verziójú Windows 10 rendszerű eszköz regisztrálása az Intune-ban
+description: Diagnosztikai naplók küldése érdekében a cég informatikai támogatási problémák megoldásához
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/13/2017
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,29 +14,35 @@ ms.assetid: bd428c14-7d75-42de-9322-b57323a01f06
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: priyar
+ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e1bf702dcc8f4f1163c26d25e42edf0a00825c81
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.openlocfilehash: fa6018d4a226303c6ea097a9ee36a043a040038c
+ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146519"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626067"
 ---
-# <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>Naplók küldése a cég informatikai támogató szolgálatának a Windows 10 céges portál alkalmazásából
+# <a name="send-diagnostic-logs-to-your-company-support-from-company-portal-for-windows"></a>Diagnosztikai naplók küldése a cég informatikai támogatási szolgálata a vállalati portál Windows
 
-Ha Windows 10-es eszközén hibaüzenet jelenik meg a Céges portál alkalmazás használata során, a probléma megoldásához e-mailben elküldheti a cég informatikai támogatási szolgálatának a hibával kapcsolatos információkat. Ezek az információk az eszközön tárolt, _diagnostic log_ (diagnosztikai napló) nevű speciális dokumentumban találhatók.
+A céges portál alkalmazásban kapcsolatos problémák elhárítása a Windows 10-es. Ha a probléma a Windows 10-es eszközön az alkalmazás használata során, írhat e-mailt a támogatási csapat segítségét. Események és a céges portál alkalmazásban jelentkező hibákról menti az eszközön tárolt nevű speciális dokumentumban találhatók egy _diagnosztikai napló_. Segítség kérése, amikor az alkalmazás megnyílik egy előfeltöltött e-mailt, a diagnosztikai Azonosítóval rendelkező, hogy gyorsan kaphat segítséget.
 
 > [!Note]       
-> A Windows 10 Céges portál alkalmazáshasználati naplókat küld közvetlenül a Microsoftnak, ha egy felhasználó segítséget kér egy problémához. Így könnyebben háríthatók el és oldhatók meg a Microsoftnak továbbított problémák.
+> Miután rákattintott **segítség**, a vállalati portál automatikusan elküldi a naplók a Microsoft támogatási csapatának. Ez a lépés nem a proaktív, amelyik megkönnyíti a Microsoft kapcsolatos problémák elhárítására.  
 
 1. Nyissa meg a **Munkahelyi portál** alkalmazást.
-2. Válassza a **Gépház** fogaskereket, majd a **Naplók küldése** lehetőséget.
-3. Megnyílik a **Megosztás** ablak. Válassza az **E-mail** gombot. Ezzel létrehoz egy e-mailt a céges portál csatolt naplóival, amelyeket el küldhet a cég informatikai támogatási szolgálatának.
+2. Válassza ki **beállítások** > **segítség**.  
 
-   ![A céges portál alkalmazás Beállítások lapjának Naplók küldése párbeszédpanele. A hivatkozás, amelyre rákattinthat a következő szövegű: „Naplók küldése – Diagnosztikai naplók küldése a cég informatikai támogatási szolgálatának a céges portállal kapcsolatos problémák megoldása érdekében”.](./media/w10-share-logs-after-1711.png)
+   ![Képernyőkép a beállítások lap beállításait és a Súgó szakasz és gombra.](./media/1811_Get_Help_Windows_Cpapp.png)    
 
-Szükség lehet [naplók küldésére a Gépház alkalmazásból](send-logs-to-your-it-admin-settings-windows.md), amellyel segítséget nyújthat a cég informatikai támogatási szolgálatának az esetleges problémák megoldásához.
+3. Ha a **megosztás** képernyő, válassza **Mail**. A **Mail** alkalmazás létrehoz egy e-mailt az Ön számára. Írja be a problémát úgy, hogy a támogatási csoporthoz, mit kell keresni a naplókban ötlet leírását.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).
+   ![Képernyőkép a fájlmegosztás képernyő, a Mail alkalmazás ikonját.](./media/1811_Mail_Logs_Windows_CPapp.png)  
+
+
+   ![Képernyőkép: az előfeltöltött e-mailt, amely a Mail alkalmazásban nyílik meg.](./media/1811_Get_Help_Email_Windows_CPapp.png)  
+
+Ha a vállalata igényeinek alkalmazásban vagy eszközön tevékenységről további információk is szüksége lehet küldeni [naplók a gépház alkalmazásból](send-logs-to-your-it-admin-settings-windows.md).  
+
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).  

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2018
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: 63295d7e05889f5a8beb44e399f36a4fbe27544d
-ms.sourcegitcommit: 76c7b315b83eb6cb5b996facf1d250fb3e22f1bc
+ms.openlocfilehash: 7ede43a78e762548608149b428d963150ed65e84
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/08/2018
-ms.locfileid: "51276115"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642438"
 ---
 # <a name="what-information-can-my-organization-see-when-i-enroll-my-device"></a>Milyen adatok láthatók a szervezet számára, ha regisztrálom az eszközömet?
 
@@ -42,7 +42,7 @@ A szervezete számára nem láthatók az Ön személyes adatai, amikor eszközt 
 - Eszközmodell, például Google Pixel
 - Eszköz gyártója, például a Microsoft
 - Operációs rendszer és annak verziója, például iOS 12.0.1
-- Alkalmazásnevek, például Microsoft Word: A személyes eszközökön a szervezet csak a felügyelt alkalmazásjegyzéket tekintheti meg. A vállalati tulajdonú eszközökön a szervezet a teljes alkalmazásleltárat láthatja.
+- Alkalmazásnevek, például Microsoft Word: A személyes eszközökön a szervezet csak a felügyelt alkalmazásleltár látható. A vállalati tulajdonú eszközökön a szervezet a teljes alkalmazásleltárat láthatja.
 - Az eszköz tulajdonosa
 - Eszköz neve
 - Eszköz sorozatszáma
@@ -50,8 +50,8 @@ A szervezete számára nem láthatók az Ön személyes adatai, amikor eszközt 
 
 **A szervezet számára esetlegesen látható adatok:**
 
--  Telefonszám: a **céges** eszközök esetében a teljes telefonszám látható. A **személyes** tulajdonú eszközök esetében csak a telefonszám utolsó négy számjegye látható a szervezet számára. Minden egyes eszköz **Tulajdonjogtípusát** megtekintheti az adott eszköz **Eszköz részletei** lapjának megnyitásával.
-- Eszköz tárhelye: Ha nem tud telepíteni egy szükséges alkalmazást, a szervezet ellenőrizheti az eszköz tárhelyét, valamint hogy az elegendő-e.  
--  Tartózkodási hely: a szervezet számára soha nem látható az eszköz helye, kivéve, ha olyan felügyelt iOS-eszközzel rendelkezik, amely elveszett. [Ezt hogyan lehet megállapítani?](https://go.microsoft.com/fwlink/?linkid=853816)
-- Alkalmazásleltár: ha a szervezete a Mobile Threat Defense-t használja, akkor az iOS-eszközön elérhető alkalmazásokról további információhoz is hozzáférhet. További információk: [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).
-- Hálózati adatok: az androidos eszközök hálózati kapcsolatairól bizonyos adatok elérhetőek lehetnek a szervezet informatikai részlege számára. Például ha a szervezet egyes eszközeinek egy bizonyos épületen belül kell maradniuk, az eszköz azonosítja a hálózatot, amelyhez csatlakozik. 
+-  Telefonszám: A **vállalati**-tulajdonú eszközök esetében a teljes telefonszám látható. A **személyes** tulajdonú eszközök esetében csak a telefonszám utolsó négy számjegye látható a szervezet számára. Minden egyes eszköz **Tulajdonjogtípusát** megtekintheti az adott eszköz **Eszköz részletei** lapjának megnyitásával.
+- Eszköz tárterület: Ha kötelező alkalmazást nem lehet telepíteni, a szervezet előfordulhat, hogy tekintse meg az eszköz tárolóhelyet döntse el, ha a terület értéke túl alacsony.  
+-  Hely: A szervezet számára soha nem látható az eszköz helye, kivéve, ha kell állítani egy elveszett, a felügyelt iOS-eszközt. Látogasson el a [Apple iOS dokumentációjában](https://go.microsoft.com/fwlink/?linkid=853816) tájékozódhat felügyelt eszközökön.  
+- Alkalmazásleltár: Ha a szervezet használja a Mobile Threat Defense, lesz, amely az iOS-eszközön elérhető alkalmazásokról részleteinek megtekintéséhez. További információk: [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).
+- Hálózati információkat: Android-eszközök hálózati kapcsolatairól bizonyos információkat lehet a cég informatikai támogatási szolgálata számára elérhető. Például ha a szervezet egyes eszközeinek egy bizonyos épületen belül kell maradniuk, az eszköz azonosítja a hálózatot, amelyhez csatlakozik. 

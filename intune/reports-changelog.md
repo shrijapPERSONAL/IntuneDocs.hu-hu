@@ -1,7 +1,7 @@
 ---
 title: Intune-adattárház – módosítási napló
 titlesuffix: Microsoft Intune
-description: Az Intune-adattárház API módosításai.
+description: Ez a témakör biztosít a Microsoft Intune-adattárház API módosítások listája olvasható.
 keywords: Intune-adattárház
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: bcafad38be9d971e98405ee4b79655cb5d8e5554
-ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
+ms.openlocfilehash: 0f39b0cb758c8c62da2e76ef8eaff07264ff3f3a
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53306032"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642761"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Az Intune-adattárház API módosítási naplója
 

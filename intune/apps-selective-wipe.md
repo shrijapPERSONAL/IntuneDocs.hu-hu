@@ -1,7 +1,7 @@
 ---
 title: Csak a céges adatok törlése az alkalmazásokból
 titleSuffix: Microsoft Intune
-description: A cikk tájékoztatást nyújt az alkalmazások Microsoft Intune-nal való szelektív törléséről.
+description: Útmutató az Intune által felügyelt alkalmazásoknak a Microsoft Intune csak vállalati adatok szelektív törlése.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 19d173cabda71b4e6a24008eb94f9665c54ba924
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 57e22c7b999f2f672c67dc623a20bf643e739376
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184352"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642574"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Csak vállalati adatok törlése az Intune által felügyelt alkalmazásokból
 
@@ -39,7 +39,7 @@ A vállalati alkalmazásadatok szelektív törléséhez hozzon létre törlési 
 
 ## <a name="create-a-wipe-request"></a>Törlési kérés
 
-1.  Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+1.  Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 
 2.  Válassza a **Minden szolgáltatás** lehetőséget, a szűrési szövegmezőbe írja be az **Intune** szót, majd válassza az **Intune** elemet. Amikor megjelenik az Intune panel, válassza az **Ügyfélalkalmazások** panelt.
 

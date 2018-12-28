@@ -1,7 +1,7 @@
 ---
 title: Alkalmazásalapú hitelesítés az Intune-adattárházban
 titleSuffix: Microsoft Intune
-description: Ez a témakör bemutatja, hogyan végezhet alkalmazásalapú hitelesítést az adattárházban.
+description: Ez a témakör ismerteti a Microsoft Intune alkalmazásalapú hitelesítés Data warehouse-bA.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8da448ece30c1ae90c447f27056f19f74b16dd90
-ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
+ms.openlocfilehash: 096a6ee5d2f80600d800293ae9b5d4be6a07b027
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247135"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642795"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Alkalmazásalapú hitelesítés az Intune-adattárházban
 

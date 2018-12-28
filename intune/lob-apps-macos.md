@@ -1,7 +1,7 @@
 ---
 title: MacOS-es üzletági alkalmazások hozzáadása a Microsoft Intune-hoz
 titlesuffix: ''
-description: Az iOS-es üzletági (LOB) alkalmazások Microsoft Intune-hoz való hozzáadásának ismertetése.
+description: Ismerje meg a macOS – üzletági (LOB) alkalmazások hozzáadása Microsoft Intune-bA.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c6fb5616bc17fadd413bd94af20fafe37e1ea769
-ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
+ms.openlocfilehash: 356f21067f0e0d625882822fd8747661d72005e8
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247084"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642659"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>MacOS-es üzletági (LOB) alkalmazások hozzáadása a Microsoft Intune-hoz
 

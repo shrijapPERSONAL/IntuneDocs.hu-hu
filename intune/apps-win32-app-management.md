@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 456e3922b74bb8c8ebbbca4718b36b3fb0dcdc29
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: 11a698628e3ca1342f10f088045012523c8ac745
+ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53324990"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53734289"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Különálló Intune – Win32-alkalmazáskezelés (nyilvános előzetes verzió)
 
@@ -76,13 +76,13 @@ Az üzletági (LOB) alkalmazásokhoz hasonlóan Win32-alkalmazást is hozzáadha
 3.  Az **Intune** panelen válassza az **Ügyfélalkalmazások** > **Alkalmazások** > **Hozzáadás** elemet.
 4.  Az **Alkalmazás felvétele** panelen válassza a **Windows-alkalmazás (Win32) – előzetes verzió** lehetőséget a legördülő listából.
 
-    ![Képernyőkép: Alkalmazás felvétele – Típus hozzáadása legördülő lista](./media/apps-win32-app-01.png)
+    ![Az hozzáadása panelen – Hozzáadás típusa legördülő menü képernyőképe](./media/apps-win32-app-01.png)
 
 ### <a name="step-2-upload-the-app-package-file"></a>2. lépés: Az alkalmazáscsomag-fájl feltöltése
 
 1.  Az **Alkalmazás felvétele** panelen válassza az **Alkalmazáscsomag-fájl** lehetőséget egy fájl kiválasztásához. Megjelenik az Alkalmazáscsomag-fájl panel.
 
-    ![Képernyőkép: Alkalmazáscsomag-fájl](./media/apps-win32-app-02.png)
+    ![Az alkalmazás csomag fájl panelen – képernyőfelvétel](./media/apps-win32-app-02.png)
 
 2.  Az **Alkalmazáscsomag-fájl** panelen válassza a tallózás gombot. Ezt követően jelölje ki az *.intunewin* kiterjesztésű Windows-telepítőfájlt.
 3.  Amikor végzett, válassza az **OK** gombot.
@@ -234,16 +234,16 @@ A Windows 10 RS3 és fent az ügyfelek letöltik Intune Win32 alkalmazás tartal
 
 A felhasználó kötelező és elérhető alkalmazástelepítésekhez Windows bejelentési értesítések jelennek meg. Az alábbi képen a bejelentési értesítések egy példája látható, amely szerint az alkalmazás telepítésének befejezéséhez újra kell indítani az eszközt. 
 
-![Képernyőkép – Példa: Windows bejelentési értesítések alkalmazás telepítéséhez](./media/apps-win32-app-08.png)    
+![Képernyőfelvétel a Windows bejelentési értesítések egy alkalmazás telepítése](./media/apps-win32-app-08.png)    
 
 Az alábbi képen tájékoztatja a végfelhasználót, hogy az eszköz alkalmazás változások történnek.
 
-![Képernyőkép – példa, amely az alkalmazások változásairól történnek az eszközön a végfelhasználó értesítése](./media/apps-win32-app-09.png)    
+![Képernyőkép, amely az alkalmazás változásokra kerül sor a felhasználó értesítése](./media/apps-win32-app-09.png)    
 
 ## <a name="troubleshoot-win32-app-issues"></a>A Win32-alkalmazások hibáinak elhárítása
 Az ügynöknaplók általában a következő helyen érhetők el az ügyfélgépen: `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. A `CMTrace.exe` segítségével megtekintheti ezeket a naplófájlokat. A *CMTrace.exe* az [SCCM-ügyféleszközök](https://docs.microsoft.com/sccm/core/support/tools) közül tölthető le. 
 
-![Képernyőkép – Az ügynöknaplók](./media/apps-win32-app-10.png)    
+![Képernyőkép az ügynököt a naplók az ügyfélszámítógépen](./media/apps-win32-app-10.png)    
 
 ### <a name="troubleshooting-areas-to-consider"></a>Néhány megfontolandó hibaelhárítási lépés
 - Ellenőrizze a célcsoportkezelést, és győződjön meg arról, hogy az ügynök telepítve van az eszközön – egy olyan Win32-alkalmazás vagy PowerShell-szkript, amelynek csoport a célzottja, ügynöktelepítési szabályzatot hoz létre a biztonsági csoporthoz.

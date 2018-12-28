@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: 084294ca6b715f05957e973635a05abd8c0762a2
-ms.sourcegitcommit: 121e550bf686f38cba1a02fa37f7039358b4a446
+ms.openlocfilehash: d484c227b33cc364d98ec4843894f447ae2ea8ab
+ms.sourcegitcommit: 02f75d241b3cbb125cb235d16d447f8855b1806d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53378266"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53657831"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>A Microsoft Intune App SDK iOS rendszeren – fejlesztői útmutató
 
@@ -543,11 +543,11 @@ SUBQUERY (
 
 Régi felhasználói felület:
 
-![Régi megosztási felhasználói felület](./media/sharing-UI-old.png)
+![Adatok számára, régi felhasználói felület megosztása iOS megosztása](./media/sharing-UI-old.png)
 
 Új felhasználói felület:
 
-![Új megosztási felhasználói felület](./media/sharing-UI-new.png)
+![Adatok – új megosztása a felhasználói felület iOS megosztása](./media/sharing-UI-new.png)
 
 ## <a name="enable-targeted-configuration-appmam-app-config-for-your-ios-applications"></a>Célzott konfiguráció (APP/MAM-alkalmazáskonfiguráció) engedélyezése iOS-alkalmazásokhoz
 
@@ -602,7 +602,7 @@ Az identitás helyes beállítása az alkalmazás feladata, függetlenül attól
 
 Minden szálnak minden pillanatban van egy effektív identitása mind a kezelőfelületi műveletekre, mind a fájlműveletekre vonatkozóan. A rendszer ennek az identitásnak az alapján határozza meg, hogy kell-e alkalmazni szabályzatokat, és ha igen, milyeneket. Ha az identitás „no identity”, vagy ha nem felügyelt felhasználóról van szó, a rendszer nem alkalmaz szabályzatokat. Az alábbi ábrán látható, hogy a rendszer miként határozza meg a tényleges identitásokat.
 
-  ![Intune App SDK (iOS) – csatolt keretrendszerek és könyvtárak](./media/ios-thread-identities.png)
+  ![Az Intune App SDK (iOS): Identitás folyamatot](./media/ios-thread-identities.png)
 
 ### <a name="thread-queues"></a>Szálak várólistái
 

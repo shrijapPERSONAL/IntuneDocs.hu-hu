@@ -6,7 +6,7 @@ keywords: Intune-adattárház
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: e2c4335b17397833fdae9e95fecc2677c8068150
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 145b4ba18325d82942eb4ebf5fbfe17ffc8e653b
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187344"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737899"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Kapcsolódás az adattárházhoz a Power BI használatával
 
@@ -45,7 +45,7 @@ Az alábbiakban bemutatjuk, hogyan töltheti le a Power BI-fájl, és hogyan has
 
 ## <a name="install-power-bi"></a>A Power BI telepítése
 
-Telepítse a Power BI Desktop legújabb verzióját. Ezt a [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop) webhelyről töltheti le.
+Telepítse a Power BI Desktop legújabb verzióját. A Power BI Desktop tölthető le: [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop)
 
 ## <a name="load-the-data-and-reports-using-the-power-bi-file-pbix"></a>Az adatok és jelentések betöltése a Power BI-fájl (pbix) használatával
 
@@ -72,12 +72,12 @@ Ha az ügyfél hitelesítve van az Azure AD-ben, az OData-URL kapcsolódni tud a
 5. Válassza a **Kezdőlap** > **Adatforrás lekérése** elemet. Válassza az **OData-betöltés** lehetőséget.
 6. Válassza a **Basic** (Egyszerű) lehetőséget.
 7. Írja be vagy másolja be az **OData-URL-t** az URL mezőbe.
-8. Válassza az **OK** gombot.
+8. Kattintson az **OK** gombra.
 9. Ha a Power BI Desktop-ügyfélben nem adta meg az Azure AD-s hitelesítő adatait, most adja meg azokat. Ahhoz, hogy hozzáférjen az adatokhoz, az OAuth 2.0 protokollt használva igazolnia kell, hogy jogosult az Azure Active Directory (Azure AD) használatára.  
     1.  Válassza a **Szervezeti fiók** lehetőséget.  
     2.  Adja meg felhasználónevét és jelszavát.  
     3.  Válassza a **Bejelentkezés** lehetőséget.  
-    4.  Válassza ki **csatlakozás**.  
+    4.  Kattintson a **Csatlakozás** gombra.  
 10. Válassza a **Betöltés** lehetőséget.
 
 ## <a name="next-steps"></a>További lépések

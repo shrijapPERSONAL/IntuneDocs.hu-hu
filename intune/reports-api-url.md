@@ -1,7 +1,7 @@
 ---
 title: Intune-adattárház API-végpontja
 titlesuffix: Microsoft Intune
-description: A referencia-témakör az Intune-adattárház API URL-szerkezetét írja le.
+description: A referencia-témakör ismerteti a Microsoft Intune Data Warehouse API URL-Címének szerkezete. Szűrő példák állnak rendelkezésre.
 keywords: Intune-adattárház
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: d819656b59f1f1ceffa1e19645bddc0e8427ad8c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 58a78cee51a411c940d4510cd8498994c14129f0
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180595"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642744"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune-adattárház API-végpontja
 
@@ -74,13 +74,13 @@ A `DateKey` tartományszűrők az adatletöltés korlátozására használhatók
 > [!NOTE]
 > A példaszűrők feltételezik, hogy a mai dátum 2018. február 21.
 
-|                             Szűrő                             |           A teljesítmény optimalizálása           |                                          Leírás                                          |
+|                             Szűrés                             |           A teljesítmény optimalizálása           |                                          Leírás                                          |
 |:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|
 |    `maxhistorydays=7`                                            |    Összes                                      |    Olyan adatokat ad vissza, amelyekben a `DateKey` értéke 20180214 és 20180221 között van.                                     |
 |    `$filter=DateKey eq 20180214`                                 |    Összes                                      |    Olyan adatokat ad vissza, amelyekben a `DateKey` értéke megegyezik a 20180214 értékkel.                                                    |
 |    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    Összes                                      |    Olyan adatokat ad vissza, amelyekben a `DateKey` értéke 20180214 és 20180220 között van.                                     |
 |    `maxhistorydays=7&$filter=Id gt 1`                            |    Részleges, az Id gt 1 nem lesz optimalizálva    |    Olyan adatokat ad vissza, amelyekben a `DateKey` értéke 20180214 és 20180221 között van, és az Id nagyobb, mint egy 1.             |
 |    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    Összes                                      |    Olyan adatokat ad vissza, amelyekben a `DateKey` értéke megegyezik a 20180214 értékkel. A rendszer mellőzi a `maxhistorydays` értékét.                            |
-|    `$filter=DateKey eq 20180214 and Id gt 1`                     |    Nincsenek                                      |    Nem számít `DateKey` tartományszűrőnek, így nincs teljesítményfokozás.                              |
-|    `$filter=DateKey ne 20180214`                                 |    Nincsenek                                      |    Nem számít `DateKey` tartományszűrőnek, így nincs teljesítményfokozás.                              |
-|    `maxhistorydays=7&$filter=DateKey eq 20180214 and Id gt 1`    |    Nincsenek                                      |    Nem számít `DateKey` tartományszűrőnek, így nincs teljesítményfokozás. A rendszer mellőzi a `maxhistorydays` értékét.    |
+|    `$filter=DateKey eq 20180214 and Id gt 1`                     |    None                                      |    Nem számít `DateKey` tartományszűrőnek, így nincs teljesítményfokozás.                              |
+|    `$filter=DateKey ne 20180214`                                 |    None                                      |    Nem számít `DateKey` tartományszűrőnek, így nincs teljesítményfokozás.                              |
+|    `maxhistorydays=7&$filter=DateKey eq 20180214 and Id gt 1`    |    None                                      |    Nem számít `DateKey` tartományszűrőnek, így nincs teljesítményfokozás. A rendszer mellőzi a `maxhistorydays` értékét.    |
