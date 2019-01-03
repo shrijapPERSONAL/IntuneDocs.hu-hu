@@ -1,12 +1,11 @@
 ---
-title: Hogyan kérhet támogatást az Intune-hoz
-titlesuffix: Microsoft Intune
+title: Hogyan kérhet támogatást a Microsoft Intune |} A Microsoft Intune-ban
 description: A Microsoft Intune fizetős és próbaverziós előfizetéseihez online és telefonos segítséget kérhet.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: cacamp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 2feb18f9c21929d803bbb3605842effa8f63d75d
-ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
+ms.openlocfilehash: 6a57a3a26a786e86775ce1509c5f751d2856f95b
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247169"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817296"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Hogyan kérhet támogatást az Intune-hoz
 
@@ -49,11 +48,11 @@ Ha a gyakran előforduló megoldás érdekében ne válassza **támogatási kér
 
 1. Az Intune rendszergazdai hitelesítő adataival jelentkezzen be az Azure Portalra (<https://portal.azure.com>), majd válassza a **?** lehetőséget ikonra a portál jobb felső sarkában, majd a **Súgó + támogatás** lehetőség kiválasztásával lépjen tovább az [Azure Súgó + támogatás](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) oldalra.
 
-   ![Képernyőkép az Azure Portal kérdőjellel jelölt súgó és támogatás hivatkozásáról, a Súgó + támogatás hivatkozás kiemelésével](./media/azure-get-support.png)
+   ![A kérdőjel kapcsolat és a Súgó + támogatás hivatkozás kiemelésével képe](./media/azure-get-support.png)
 
 2. Az Azure-beli **súgó + támogatás** lapon jelölje be **új támogatási kérelem**.
 
-   ![Képernyőkép az Azure Portal Súgó és támogatás oldaláról az Új támogatási kérelem hivatkozás kiemelésével](media/azure-support-ticket-link.png)
+   ![Új kép támogatási kérelem hivatkozás kiemelésével a Súgó és támogatási oldal](media/azure-support-ticket-link.png)
 
 3. Az a **alapjai** lapján, a legtöbb Intune kapcsolatos technikai támogatáskéréshez a következő lehetőségeket választhatja:
    - **Probléma típusa**: **Technikai**
@@ -63,18 +62,18 @@ Ha a gyakran előforduló megoldás érdekében ne válassza **támogatási kér
    - **A probléma altípus**: A legördülő menüből válassza ki a probléma altípusa.
    - **Tulajdonos**: Röviden ismertesse a problémát, amely merülnek fel.
 
-   ![Az alapvető beállítások lapján a Súgó + támogatás – új támogatási kérelem lap képernyőképe](./media/get-support/help-new-support-case-basics.png)
+   ![Az alapvető beállítások lapján a Súgó + támogatás – új támogatási kérelem lap képe](./media/get-support/help-new-support-case-basics.png)
 
    Válasszon **tovább: Megoldások** folytatásához.
 4. Az a **megoldások** lapján, a javasolt lépéseket, amelyek segíthetnek megoldani a problémát egy jegyet a bejelentés nélkül. Ha továbbra is szeretné a támogatási kérelem létrehozása után a lépések között kattintson a **tovább: Részletek**.
 
-   ![A megoldások lapja a Súgó + támogatás – új támogatási kérelem lap képernyőképe](./media/get-support/help-new-support-case-solutions.png)
+   ![A megoldások lapja a Súgó + támogatás – új támogatási kérelem lap képe](./media/get-support/help-new-support-case-solutions.png)
 5. Az a **részletek** fülre, adja meg a részleteket a problémát, a támogatási módszer, a kapcsolattartási adatokat, majd **tovább: Felülvizsgálat + létrehozás**.
 
-   ![A részleteket tartalmazó lapot a a Súgó + támogatás – új támogatási kérelem lap képernyőképe](./media/get-support/help-new-support-case-details.png)
+   ![A részleteket tartalmazó lapot a a Súgó + támogatás – új támogatási kérelem lap képe](./media/get-support/help-new-support-case-details.png)
 6. Tekintse át az adatokat, ellenőrizze, hogy javítsa ki, és válassza a **létrehozás** a támogatási kérést szeretne beküldeni.
 
-   ![Képernyőkép a felülvizsgálat + lap létrehozása a Súgó + támogatás – az új támogatási kérelem lap](./media/get-support/help-new-support-case-create.png)
+   ![A felülvizsgálat képe + lap létrehozása az új támogatási kérelem lap](./media/get-support/help-new-support-case-create.png)
 
 <!--
   - **Support plan**: **Technical support - included** (for Intune technical issues, support is complimentary) or **Premier**
@@ -117,7 +116,7 @@ A támogatási kérelmeket az Azure Portalon tekintheti meg. Ehhez tegye a köve
 ## <a name="new-help-and-support-experience"></a>Új Súgó és támogatás felület
 *A következő információk csak azokra az esetekre vonatkoznak, amikor Ön az eszközkezelési portált használja, és ha részt vesz az új Súgó és támogatás felület bevezetésében. A bevezetésben részt vevő felhasználókat véletlenszerűen választjuk ki az Intune elérhető bérlői közül.*  
 
-Az Intune Súgó és támogatás felületét érintő frissítés olyan új felületet biztosít, amely a [Microsoft 365 Eszközkezelési portálon](http://devicemanagement.microsoft.com) áll rendelkezésre a bérlők bizonyos része (de nem mindegyikük) számára. Ez az új felület a [Microsoft 365 felügyeleti központjának](https://portal.office.com/AdminPortal/Home) felületéhez hasonlít, és a korábbi Súgó és támogatás felület helyébe lép, ha a hozzáféréshez az Eszközkezelési konzol bizonyos helyeit használja.  
+Az Intune Súgó és támogatás felületét érintő frissítés olyan új felületet biztosít, amely a [Microsoft 365 Eszközkezelési portálon](https://devicemanagement.microsoft.com) áll rendelkezésre a bérlők bizonyos része (de nem mindegyikük) számára. Ez az új felület a [Microsoft 365 felügyeleti központjának](https://portal.office.com/AdminPortal/Home) felületéhez hasonlít, és a korábbi Súgó és támogatás felület helyébe lép, ha a hozzáféréshez az Eszközkezelési konzol bizonyos helyeit használja.  
 
 Az Eszközkezelési portálon úgy férhet hozzá az új felülethez, ha a **Minden szolgáltatás** > **Eszközkezelés** részben található bármelyik panelen kiválasztja a **Súgó és támogatás** lehetőséget (kivételt képez ezalól a **Hibaelhárítás** panel). Ha a Súgó és támogatás felületéhez máshonnan, például a **Hibaelhárítás** panelről fér hozzá úgy, hogy a **?** lehetőséget választja a konzolszalag jobb felső sarkában, illetve ha a szolgáltatások bal oldali paneljéről választja a **Súgó és támogatás** lehetőséget, akkor az eredeti felülethez fér hozzá.  
 
@@ -143,7 +142,7 @@ A következőkben példákat láthat a beküldhető kérdésekre:
 
 ### <a name="view-context-sensitive-help"></a>Környezetfüggő súgó megtekintése
 Miután kiválasztotta a felkínált lehetőségek egyikét, vagy elküldte a saját kérését, a **Megoldások megtekintése** részben környezetfüggő találatok jelennek meg. Ezek a találatok tartalmazzák az Intune-hoz kapcsolódó önsegítő útmutatást, és az internetes keresés után megjelenített, a lekérdezési kritériumokon alapuló további találatokat is.  
-![Találatok megtekintése](./media/get-support/view-results.png)
+![Az eredmények megtekintése ablaktábla képe](./media/get-support/view-results.png)
 
 ### <a name="get-support"></a>Támogatás kérése
 Ha az önsegítő vagy a webalapú útmutatás nem segít a probléma megoldásában, a konzol használatával e-mailes vagy telefonos problémamegoldási kérést nyithat.  
@@ -151,16 +150,16 @@ A **Segítségre szorul?** oldalon válassza ki a használni kívánt lehetősé
 
 - E-mailes kérés esetén adja meg e-mail-címét, és tetszőlegesen csatolmányokat is küldhet levelében. A kérés megnyitásához válassza a **Küldés** elemet.  
 
-  ![E-mailes kérés](./media/get-support/email-support.png)
+  ![Az e-mailek kérés panel képe](./media/get-support/email-support.png)
   
 - Telefonos kéréshez adja meg telefonszámát. Esetlegesen megadhatja e-mail-címét is, és csatolmányokat fűzhet a levélhez. A kérés küldéséhez válassza a Visszahívás elemet.  
 
-   ![Telefonos kérés](./media/get-support/phone-support.png)
+   ![A telefonos kérelem panel képe](./media/get-support/phone-support.png)
 
 ### <a name="view-support-cases"></a>Támogatási esetek megtekintése
 Az Előzmények gombra kattintva megtekintheti az Ön által létrehozott támogatási eseteket.  
 
-![Támogatási esetek megtekintése](./media/get-support/view-support-tickets.png)
+![A támogatási esetek panelen képe](./media/get-support/view-support-tickets.png)
 
 - Kizárólag az új munkafolyam használatával megnyitott támogatási esetek jeleníthetők meg e munkafolyamon belül. A megtekintésükhöz válasszon olyan Súgó és támogatás nézetet az Eszközkezelés konzolon, amelyik már az új felület részét képezi. Ezeket az eseteket nyolcjegyű számok jelölik. A Microsoft 365 felügyeleti központjában is megtekinthetők az esetek.  
 
@@ -173,5 +172,5 @@ Az Előzmények gombra kattintva megtekintheti az Ön által létrehozott támog
 ## <a name="additional-resources"></a>További források
 - [Kapcsolatfelvétel a Microsoft Intune telefonos tanácsadással](phone-support-contact.md)
 - [Számlázási és előfizetés-kezelési támogatás](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
-- [Mennyiségi licencelés](http://go.microsoft.com/fwlink/p/?LinkID=282015)
+- [Mennyiségi licencelés](https://go.microsoft.com/fwlink/p/?LinkID=282015)
 - [A Intune hibáinak elhárítása](help-desk-operators.md)

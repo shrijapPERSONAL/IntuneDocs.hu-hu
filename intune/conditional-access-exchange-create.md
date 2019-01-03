@@ -1,5 +1,5 @@
 ---
-title: Feltételes Exchange-hozzáférési szabályzat létrehozása
+title: Az Exchange feltételes hozzáférési szabályzat létrehozása |} A Microsoft Intune-ban
 titlesuffix: Microsoft Intune
 description: Feltételes hozzáférési szabályzat konfigurálása a helyszíni Exchange-hez és régi Dedikált Exchange Online-hoz az Intune-nal.
 keywords: ''
@@ -15,12 +15,12 @@ ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0a539000153ad45b5256e4e63086fa72fee44947
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: ed996ec17ab0c8144286eeed0a87f07b35da2969
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186099"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817058"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Feltételes hozzáférési szabályzat létrehozása a helyszíni Exchange-hez és régi Dedikált Exchange Online-hoz
 
@@ -64,7 +64,7 @@ Mielőtt konfigurálja a feltételes hozzáférést, ellenőrizze a következők
 - Windows Phone 8.1 és újabb verziók
 - Natív e-mail alkalmazás iOS rendszerű eszközökön.
 - EAS levelezési ügyfélprogramok, mint például a Gmail az Android 4-es vagy újabb verzióiban.
-- EAS levelezési ügyfélprogramok **Androidos munkahelyi profilos eszközökön:** A **munkahelyi profilban** csak a **Gmail** és **Nine Work for Android Enterprise** alkalmazások támogatottak az androidos munkahelyi profilos eszközökön. Ahhoz, hogy a feltételes hozzáférés működjön az androidos munkahelyi profilos eszközökön, telepíteni kell egy e-mail-profilt a Gmail vagy a Nine Work for Android Enterprise alkalmazáshoz, és ezeket az alkalmazásokat kötelező telepítésként kell központilag telepíteni.
+- EAS levelezési ügyfélprogramok **Android munkahelyi profilos eszközök:** Csak **Gmail** és **Nine Work Android Enterprise** a a **munkahelyi profil** Android munkahelyi profilos eszközök támogatottak. Ahhoz, hogy a feltételes hozzáférés működjön az androidos munkahelyi profilos eszközökön, telepíteni kell egy e-mail-profilt a Gmail vagy a Nine Work for Android Enterprise alkalmazáshoz, és ezeket az alkalmazásokat kötelező telepítésként kell központilag telepíteni.
 
 > [!NOTE]
 > A Microsoft Outlook Androidra és IOS-es nem támogatott az Exchange helyszíni összekötő keresztül. Ha szeretné kihasználni az Azure Active Directory feltételes hozzáférési szabályzatok és az Intune alkalmazásvédelmi szabályzatok IOS rendszerhez készült Outlook és a helyileg üzemeltetett postaládák esetében az Android, tekintse meg [használata hibrid IOS rendszerhez készült Outlook Modern hitelesítést és Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth). 

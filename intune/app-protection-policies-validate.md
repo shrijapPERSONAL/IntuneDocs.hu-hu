@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3158d0531de4809bf654c030b8c1e0ef90185362
-ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
+ms.openlocfilehash: 0201f9a33fcdf3e7f5780f8e65a3666e6eb5d7d1
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247067"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816956"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>Az alkalmazásvédelmi szabályzatok konfigurációjának ellenőrzése
 
@@ -29,11 +29,11 @@ ms.locfileid: "53247067"
 
 Annak ellenőrzése, hogy az alkalmazásvédelmi szabályzat megfelelően be van-e állítva és működik-e. Az útmutató az Azure Portal webhelyen található alkalmazásvédelmi szabályzatokra vonatkozik.
 
-### <a name="checking-for-symptoms"></a>Hibajelenségek keresése
+## <a name="checking-for-symptoms"></a>Hibajelenségek keresése
 Mivel az alkalmazásvédelem egy adatvédelmi eszköz, nem valószínű, hogy a felhasználók jeleznek problémákat. Alkalmazásvédelmi konfigurációs probléma esetén a felhasználó rendelkezik ugyanolyan korlátlan hozzáféréssel, mint az alkalmazásvédelem nélkül, így nem ismert probléma. Ebből kifolyólag javasoljuk, hogy az alkalmazásvédelmi konfiguráció ellenőrzéséhez kiszolgálóinkat az alkalmazásvédelmi szabályzatokat olyan felhasználók, akik képesek szándékosan tesztelni az alkalmazásvédelmi korlátozásokat kis csoportján.
 
 
-### <a name="what-to-check"></a>Mit kell ellenőrizni?
+## <a name="what-to-check"></a>Mit kell ellenőrizni?
 
 Ha a tesztelés azt mutatja, hogy az alkalmazások alkalmazásvédelmi szabályzat működését nem a várt módon, tekintse meg ezeket az elemeket:
 
@@ -41,7 +41,7 @@ Ha a tesztelés azt mutatja, hogy az alkalmazások alkalmazásvédelmi szabályz
 - A felhasználók rendelkeznek O365-licenccel?
 - Az egyes felhasználók alkalmazásvédelmi alkalmazásainak állapota. Az alkalmazások lehetséges állapotai: **Bejelentkezett** és **Nem bejelentkezett**.
 
-#### <a name="user-app-protection-status"></a>A felhasználók alkalmazásvédelmi állapota
+### <a name="user-app-protection-status"></a>A felhasználók alkalmazásvédelmi állapota
 1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Válassza ki **ügyfélalkalmazás** > **figyelő** >  **alkalmazásvédelem állapota**, majd válassza ki a **hozzárendelt felhasználók**csempére. 
@@ -50,7 +50,7 @@ Ha a tesztelés azt mutatja, hogy az alkalmazások alkalmazásvédelmi szabályz
 
 
 
-### <a name="what-to-do"></a>Mi a teendő
+## <a name="what-to-do"></a>Mi a teendő
 A felhasználói állapotnak megfelelően az alábbi műveleteket hajthatja végre:
 
 - Ha a felhasználó nem rendelkezik alkalmazásvédelmi licenccel, rendeljen hozzá egy Intune licencet a felhasználó.
@@ -58,6 +58,6 @@ A felhasználói állapotnak megfelelően az alábbi műveleteket hajthatja vég
 - Ha a felhasználó alkalmazása **Nincs bejelentkezve** állapottal jelenik meg a listában, ellenőrizze, hogy megfelelően állította-e be az alkalmazásvédelmi szabályzatot az adott alkalmazáshoz.
 - Győződjön meg arról, hogy ezek a feltételek vonatkoznak minden olyan felhasználóra, amelyre alkalmazásvédelmi szabályzatok a alkalmazni szeretné.
 
-### <a name="see-also"></a>Lásd még:
+## <a name="see-also"></a>Lásd még:
 
 [Mi az Intune alkalmazásvédelmi szabályzata?](app-protection-policies.md)

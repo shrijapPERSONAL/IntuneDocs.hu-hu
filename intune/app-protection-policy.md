@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 785f4d1d81858fe5d4ebe4feab72880b408d8cd3
-ms.sourcegitcommit: 0499d16db961aaed4bd134ee924e40c5861121c7
+ms.openlocfilehash: 2a06855ce9f25a5e7ee79d5b0344650fcb42900c
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389869"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817177"
 ---
 # <a name="what-are-app-protection-policies"></a>Mik azok az alkalmazásvédelmi szabályzatok?
 
@@ -37,14 +37,14 @@ Az Intune alkalmazásvédelmi szabályzatai **a mobileszköz-felügyeleti (MDM) 
 
 Az alkalmazásvédelmi szabályzatok olyan eszközökön futó alkalmazásokhoz konfigurálhatók, amelyek:
 
-- **Regisztrálva vannak a Microsoft Intune-ban:** Ezek általában vállalati tulajdonú eszközök.
+- **A Microsoft Intune-ban regisztrált:** Tartozó ezek az eszközök általában vállalati tulajdonú.
 
-- **Regisztrálva vannak egy harmadik fél mobileszköz-felügyeleti (MDM) megoldásában:** Ezek általában vállalati tulajdonú eszközök.
+- **Harmadik fél mobileszköz-felügyelet (MDM) megoldásban regisztrált:** Tartozó ezek az eszközök általában vállalati tulajdonú.
 
   > [!NOTE]
   > A mobilalkalmazás-felügyeleti szabályzatokat nem ajánlott külső mobileszköz-felügyeleti biztonságos tárolómegoldásokkal együtt használni.
 
-- **Nincsenek regisztrálva mobileszköz-felügyeleti (MDM) megoldásban:** Ezek általában alkalmazottak tulajdonában álló eszközök, amelyek nincsenek az Intune-ban vagy más MDM-megoldásban kezelve vagy regisztrálva.
+- **Minden olyan mobileszköz-kezelési megoldásban nem regisztrált:** Az eszközök általában az alkalmazottak tulajdonában lévő nem felügyelt, vagy az Intune-ban vagy más MDM-megoldásban regisztrált eszközök is.
 
 > [!IMPORTANT]
 > Mobilalkalmazás-kezelési házirendeket hozhat létre az Office 365-szolgáltatásokhoz kapcsolódó Office-mobilalkalmazások számára. Emellett a helyszíni Exchange-postafiókok hozzáférését is védheti, az iOS és Android rendszerű Outlookhoz készült Intune alkalmazásvédelmi szabályzatok létrehozásával és a hibrid modern hitelesítés engedélyezésével. A funkció használata előtt győződjön meg arról, hogy megfelel az [iOS-es és Androidos Outlook követelményeinek](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx). Az alkalmazásvédelmi szabályzatok a helyszíni Exchange-hez vagy a SharePoint-szolgáltatásokhoz kapcsolódó egyéb alkalmazások esetében nem támogatottak.
@@ -75,14 +75,14 @@ A Windows-eszközök jelenleg nem támogatottak. Windows Information Protection,
 
 #### <a name="apps-without-app-protection-policies"></a>Alkalmazásvédelmi szabályzat nélküli alkalmazások
 
-![A kép azt ábrázolja, hogy alkalmazásvédelmi szabályzatok nélkül az adatok szabadon mozoghatnak az alkalmazások között](./media/apps-without-protection-policies.png)
+![Nincs házirendekkel rendelkező alkalmazások közötti adatátvitel fogalmi képe](./media/apps-without-protection-policies.png)
 
 A korlátozások nélkül használt alkalmazások miatt összekeveredhetnek a vállalati és személyes adatok. Adatvesztéssel járhat, ha a vállalati adatok személyes tárolókra vagy az Ön hatáskörén kívüli alkalmazásokba kerülnek. Az előző ábrán a nyilak a korlátozások nélküli adatátvitelt jelölik a vállalati és személyes alkalmazások között, valamint a tárolási helyekre.
 
 
 ### <a name="data-protection-with-app-protection-policies"></a>Adatvédelem alkalmazásvédelmi szabályzatokkal
 
-![A vállalati adatok alkalmazásvédelmi szabályzatokkal való védelmét ábrázoló kép ](./media/apps-with-protection-policies.png)
+![Fogalmi-szabályzatok által védett vállalati adatok bemutató kép](./media/apps-with-protection-policies.png)
 
 
 Az alkalmazásvédelmi szabályzatokkal megakadályozható a vállalati adatoknak az eszköz helyi tárolójára való mentése. Emellett korlátozható a más, alkalmazásvédelmi szabályzatokkal nem védett alkalmazásokba irányuló adattovábbítás. Íme néhány az alkalmazásvédelmi szabályzatok beállításai közül:

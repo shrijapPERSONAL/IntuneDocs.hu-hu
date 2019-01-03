@@ -1,5 +1,5 @@
 ---
-title: Ellenőrzés Point SandBlast MTD integrálása
+title: Ellenőrzés Point SandBlast MTD integrálása |} A Microsoft Intune-ban
 titlesuffix: Microsoft Intune
 description: A CheckPoint SandBlast Mobile Threat Defense (MTD) beállítása az Intune-ban a mobileszközök a vállalati erőforrásokhoz való hozzáférésének kezeléséhez.
 keywords: ''
@@ -16,12 +16,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: c0774ed0fbc354750ad53eedc5df03536520bde8
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 494edf17b67e841aa661877c6545adab1ce9a6f2
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112391"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817115"
 ---
 # <a name="integrate-check-point-sandblast-mobile-with-intune"></a>A Check Point SandBlast Mobile integrálása az Intune-nal
 

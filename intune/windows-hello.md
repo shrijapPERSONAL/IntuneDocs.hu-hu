@@ -1,6 +1,5 @@
 ---
-title: A Vállalati Windows Hello integrálása a Microsoft Intune-nal
-titleSuffix: ''
+title: Hogyan integrálható a Windows Hello for Business Microsoft Intune-nal |} A Microsoft Intune-ban
 description: Útmutató szabályzatok létrehozásához a Vállalati Windows Hello felügyelt eszközön való használatához.”
 keywords: ''
 author: brenduns
@@ -14,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4499e0540c81e3c0cf5f02af6691df2455a41e43
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2bd859dce83dddd430e5c46fd9b669901115059a
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187073"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816939"
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>A Vállalati Windows Hello integrálása a Microsoft Intune-nal
 

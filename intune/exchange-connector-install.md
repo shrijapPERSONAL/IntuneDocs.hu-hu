@@ -1,12 +1,11 @@
 ---
-title: A Microsoft Intune helyszíni Exchange-összekötőjének beállítása
-titleSuffix: ''
+title: Állítsa be a Microsoft Intune helyszíni Exchange-összekötő |} A Microsoft Intune-ban
 description: A helyszíni Exchange-összekötővel kezelheti az eszközök az Exchange-postaládákhoz való hozzáférését az Intune-regisztráció és az Exchange Active Sync (EAS) alapján.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/08/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0dc87c20b0da6fcfcc4e3ab304c61c5b264aaf38
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 28886382da00f5c07129f4e69e0bbadf97634420
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112561"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817262"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Az Intune helyszíni Exchange-összekötőjének telepítése az Azure-beli Microsoft Intune-ban
 
@@ -71,7 +70,7 @@ Létre kell hoznia egy Active Directory-felhasználói fiókot, amelyet a helysz
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>A helyszíni Exchange-összekötő szoftver telepítőcsomagjának letöltése
 
-1. Egy, a helyszíni Exchange-összekötőt támogató Windows Server rendszerben nyissa meg az [Azure Portalt](http://portal.azure.com), és jelentkezzen be egy olyan felhasználói fiókkal, amely rendszergazda a helyszíni Exchange Serveren, és rendelkezik licenccel az Exchange Server használatához.
+1. Egy, a helyszíni Exchange-összekötőt támogató Windows Server rendszerben nyissa meg az [Azure Portalt](https://portal.azure.com), és jelentkezzen be egy olyan felhasználói fiókkal, amely rendszergazda a helyszíni Exchange Serveren, és rendelkezik licenccel az Exchange Server használatához.
 
 2. Válassza a bal oldali menü **Minden szolgáltatás** pontját, majd írja be a szűrő szövegmezőbe az **Intune** nevet.
 

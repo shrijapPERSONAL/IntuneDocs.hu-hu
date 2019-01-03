@@ -16,18 +16,18 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: aad6687a110642f3b21dc0cff3a791f4714c7949
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: b94b4228f05abd2e7c815797f2f187efb8b303e4
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187463"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817245"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Zimperium Mobile Threat Defense-összekötő az Intune-nal
 
 A Microsoft Intune-nal integrálható, Zimperium által irányított, veszélyforrások elleni mobileszköz-védelmi (MTD) megoldás kockázatfelmérése alapján feltételes hozzáféréssel korlátozható a vállalati erőforrások mobil elérése. A kockázatfelmérés a Zimperium alkalmazást futtató eszközökről gyűjtött telemetriai adatokon alapul.
 
-Az Intune eszközmegfelelőségi szabályzatai által engedélyezett, a Zimperium által jelentett kockázatértékelés alapján feltételes hozzáférési szabályzatok konfigurálhatók az Intune-ban, amelyekkel az észlelt fenyegetések alapján engedélyezheti vagy letilthatja a nem megfelelő eszközök hozzáférését a vállalati erőforrásokhoz.
+Konfigurálhatja az Intune eszközmegfelelőségi szabályzatai által engedélyezett zimperium által jelentett kockázatértékelés alapján feltételes hozzáférési szabályzatokat. Kockázatok felmérése a szabályzat engedélyezheti vagy letilthatja a nem megfelelő eszközök hozzáférését a vállalati erőforrásokhoz az észlelt fenyegetések alapján.
 
 ## <a name="how-do-intune-and-zimperium-help-protect-your-company-resources"></a>Hogyan segíti az Intune és a Zimperium a vállalati erőforrások védelmét?
 
@@ -51,11 +51,11 @@ Ha az eszközön kártékony alkalmazásokat, például kártevőket észlel a r
 
 **Letiltás kártékony alkalmazás észlelése esetén:**
 
-![A program kártevőt észlelt](./media/Maliciousapps_blocked_Zimperium.png)
+![Észlelt rosszindulatú alkalmazások fogalmi képe](./media/Maliciousapps_blocked_Zimperium.png)
 
 **A fenyegetés kiküszöbölését követően a hozzáférés ismét biztosított:**
 
-![A program kártevőt észlelt, hozzáférés megadva](./media/maliciousapps_unblocked_Zimperium.png)
+![Megadja a hozzáférést a szervizelés után fogalmi képe](./media/maliciousapps_unblocked_Zimperium.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>Hozzáférés vezérlése hálózati fenyegetés alapján
 
@@ -95,7 +95,7 @@ Ha az eszközön kártékony alkalmazásokat, például kártevőket észlel a r
 
 -   Zimperium Mobile Threat Defense-előfizetés
 
-    -   További információkért lásd: [Zimperium webhelyén](https://www.zimperium.com/zips-mobile-ips) további információt.
+    -   További információkért lásd: [Zimperium webhelyén](https://www.zimperium.com/zips-mobile-ips).
 
 ## <a name="next-steps"></a>További lépések
 

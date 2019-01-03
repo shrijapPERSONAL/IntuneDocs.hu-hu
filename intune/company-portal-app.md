@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 72349a609485096b5abd6eaff3c252a510a978a7
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.openlocfilehash: 6d9d6cb1eccd91e7832a9456504c36cb983b4810
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738018"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817381"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>A Microsoft Intune Céges portál alkalmazásának konfigurálása
 
@@ -89,7 +89,7 @@ Márkakép feltöltése, amely tükrözi a vállalati márkát. A módosítások
 
 |Mező neve|További információ|
 |---|---|
-|**Márkakép feltöltése**| Ezt a beállítás rendelkezésre áll háttérkép megjelenítéséhez a Céges portál alkalmazás felhasználói profil oldalán.<p>*Megjegyzés*: A kép a különböző platformok módon jelenhetnek meg.<p><ul><li>Kép szélessége ajánlott: Nagyobb, mint 1125px, de nem kisebb 640 képpont</li><li>Maximális Képméret: 1.3 MB</li><li>Fájltípus: PNG, JPG vagy JPEG</li></ul>|
+|**Márkakép feltöltése**| Ezt a beállítás rendelkezésre áll háttérkép megjelenítéséhez a Céges portál alkalmazás felhasználói profil oldalán.<p>*Megjegyzés*: A kép a különböző platformok módon jelenhetnek meg.<p><ul><li>Kép szélessége ajánlott: Kisebb, mint 1125px, de nem kisebb, mint 640 képpont</li><li>Maximális Képméret: 1.3 MB</li><li>Fájltípus: PNG, JPG vagy JPEG</li></ul>|
 
 A megfelelő márkakép javíthatja a felhasználó Céges portálba vetett bizalmát a cég márkájának hangsúlyozásával. Íme néhány tipp, amelyet érdemes figyelembe venni a kép Céges portálhoz történő beszerzésekor, kiválasztásakor és optimalizálásakor. 
 

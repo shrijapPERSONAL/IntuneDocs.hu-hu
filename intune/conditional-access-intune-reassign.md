@@ -1,12 +1,11 @@
 ---
-title: Feltételes hozzáférés áttelepítése az Azure Portalra
-titlesuffix: Microsoft Intune
+title: Feltételes hozzáférés áttelepítése az Azure Portalon |} A Microsoft Intune-ban
 description: Az Intune klasszikus portálján korábban létrehozott feltételes hozzáférési szabályzatokat újra hozzárendelheti az Azure Portalhoz.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/25/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: chrisgree
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6dbd7d9079bdb826f83cce76650cacebee056b68
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d319ff39574565c3f326bd6b03b346e989bdc488
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184488"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817432"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Feltételes hozzáférési szabályzatok ismételt társítása az Intune klasszikus portáljáról az Azure Portalra való áttéréskor
 
@@ -46,7 +45,7 @@ Ha készen áll az Azure Portalra való áttérésre, akkor a következő lépé
             - Fokozatosan távolítsa el a felhasználókat azokból a biztonsági csoportokból, amelyekre feltételes hozzáférési szabályzatok érvényesek az Intune klasszikus portálján.
             - Miután meggyőződött róla, hogy az új szabályzat ezen felhasználók esetében működik, letilthatja a szabályzatot az Intune klasszikus portálján. 
 <br /><br />
-- Ha a feltételes hozzáférési szabályzat az Exchange Active Sync (EAS) használatára van konfigurálva az Intune klasszikus portálján, akkor az [ebben a témakörben megadott utasítások](#to-reassign-intune-device-based-conditional-access-policies-for-eas-clients) alapján **társítsa újra a feltételes hozzáférési szabályzat EAS-re vonatkozó beállításait az Azure Portalon**.
+- Ha a feltételes hozzáférési szabályzat az Exchange Active Sync (EAS) használatára van konfigurálva az Intune klasszikus portálján, akkor az [ebben a témakörben megadott utasítások](#reassign-intune-device-based-conditional-access-policies-for-eas-clients) alapján **társítsa újra a feltételes hozzáférési szabályzat EAS-re vonatkozó beállításait az Azure Portalon**.
 
 ### <a name="to-verify-your-device-based-conditional-access-policies-in-the-intune-classic-portal"></a>Eszközalapú feltételes hozzáférési szabályzatok ellenőrzése az Intune klasszikus portálján
 
@@ -81,7 +80,7 @@ Az Azure Portal **Intune App Protection** paneljén a rendszergazdák alkalmazá
 
 4. A **Hozzárendelések** alatt válassza a **Felhasználók és csoportok** lehetőséget az új feltételes hozzáférési szabályzat létrehozásához.
     
-    ![A kép egy felhasználói csoport kezelőfelületét hasonlítja össze az Intune portálján és az Azure Portalon](./media/reassign-ca-1.png)
+    ![Kép, hogy összehasonlítja felhasználói csoport felhasználói felület az Intune és az Azure Portalon](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 
     > Az Azure Portalon és a klasszikus portálon végzett kiválasztásnak meg kell egyeznie. Például ha a Minden felhasználó lehetőséget jelölte meg az Intune klasszikus portálján, akkor az Azure Portalon is a **Minden felhasználó** lehetőséget válassza. Ezen kívül, ha használta a **Kivételt képző csoportok** lehetőséget az Intune klasszikus portálon, akkor az ott kijelölt csoportokat ki kell zárnia az Azure Portalon is.
@@ -94,9 +93,9 @@ Az Azure Portal **Intune App Protection** paneljén a rendszergazdák alkalmazá
 
 8. Jelölje ki az alkalmazást, amelyre alkalmazni kívánja az új feltételes hozzáférési szabályzatot, és kattintson a **Kiválaszt** gombra.
 
-9. Kattintson a **Kész** gombra.
+9. Kattintson a **Done** (Kész) gombra.
 
-    ![A kép egy felhőalkalmazás kezelőfelületét hasonlítja össze az Intune portálján és az Azure Portalon](./media/reassign-ca-3.png)
+    ![Egy felhőalapú kezelőfelületének összehasonlítása az Intune és az Azure Portalon képe](./media/reassign-ca-3.png)
 
     > [!TIP] 
     > Ha több alkalmazásra ugyanaz a szabályzat vonatkozik, akkor érdemes lehet egyetlen szabályzatba összevonni őket az Azure Portalon.
@@ -107,7 +106,7 @@ Az Azure Portal **Intune App Protection** paneljén a rendszergazdák alkalmazá
 
 12. Ha végzett az eszközplatformok kijelölésével, kattintson kétszer a **Kész** gombra.
 
-    ![A kép egy eszközplatform kezelőfelületét hasonlítja össze az Intune-portálján és az Azure Portalon](./media/reassign-ca-4.png)
+    ![Kép, amely összehasonlítja az Intune és az Azure portálon a felhasználói felület eszközplatform](./media/reassign-ca-4.png)
 
     > [!TIP] 
     > Ha egyedi platformokat jelölt ki az Intune klasszikus portálon, akkor az Azure Portalon is válassza ki az egyes platformokat.
@@ -121,7 +120,7 @@ Az Azure Portal **Intune App Protection** paneljén a rendszergazdák alkalmazá
 
 15. Ha végzett az ügyfélalkalmazás kijelölésével, kattintson kétszer a **Kész** gombra.
 
-    ![A kép egy ügyfélalkalmazás kezelőfelületét hasonlítja össze az Intune portálján és az Azure Portalon](./media/reassign-ca-6.png)
+    ![Kép, amely összehasonlítja az ügyfélalkalmazások felhasználói felület az Intune és az Azure Portalon](./media/reassign-ca-6.png)
 
 16. Ha kijelölte a böngészőbeállításokat az Intune klasszikus portálon, akkor az Azure Portalon jelölje ki a **Böngésző** és a **Mobilalkalmazások és asztali ügyfelek** lehetőséget is. Ha nem jelölte ki a böngészőbeállításokat az Intune klasszikus portálon, akkor csak a **Mobilalkalmazások és asztali ügyfelek** lehetőséget jelölje meg. 
 
@@ -135,7 +134,7 @@ Az Azure Portal **Intune App Protection** paneljén a rendszergazdák alkalmazá
 
 21. Az **Új** feltételes hozzáférési szabályzat panelen kapcsolja be a **Szabályzat engedélyezése** kapcsolót, majd kattintson a **Létrehozás** gombra.
 
-    ![A kép a feltételes hozzáférési szabályzat engedélyezésének kezelőfelületét hasonlítja össze az Intune klasszikus portálján és az Azure Portalon](./media/reassign-ca-11.png)
+    ![Hasonlítsa össze az engedélyezése a feltételes hozzáférési szabályzat felhasználói Felületére az Intune és az Azure között](./media/reassign-ca-11.png)
 
 ## <a name="reassign-intune-device-based-conditional-access-policies-for-eas-clients"></a>Az Intune eszközalapú feltételes hozzáférési szabályzatok ismételt hozzárendelése EAS-ügyfelek esetén
 
@@ -149,7 +148,7 @@ Ha az Exchange Online szabályzat részeként az Exchange Active Sync szolgálta
 
 4. A **Hozzárendelések** alatt válassza a **Felhasználók és csoportok** lehetőséget az új feltételes hozzáférési szabályzat létrehozásához.
 
-    ![A kép egy felhasználói csoport kezelőfelületét hasonlítja össze az Intune portálján és az Azure Portalon](./media/reassign-ca-12.png)
+    ![A kép egy felhasználói csoportok Kezelőfelületének összehasonlítása az Azure és az Intune-portálokon](./media/reassign-ca-12.png)
 
     > [!IMPORTANT] 
     > Az Azure Portalon és az Intune-portálon végzett kiválasztásnak meg kell egyeznie. Például ha a Minden felhasználó lehetőséget jelölte meg az Intune klasszikus portálján, akkor az Azure Portalon is a **Minden felhasználó** lehetőséget válassza. Ezen kívül, ha használta a **Kivételt képző csoportok** lehetőséget az Intune klasszikus portálon, akkor az ott kijelölt csoportokat ki kell zárnia az Azure Portalon is.
@@ -160,14 +159,14 @@ Ha az Exchange Online szabályzat részeként az Exchange Active Sync szolgálta
 
 7. A **Felhőalkalmazások** panelen kattintson a **Kijelölt alkalmazások**, majd az **Exchange Online** elemre. Kattintson a **Kiválaszt**, majd a **Kész** gombra.
 
-    ![A kép egy felhőalkalmazás kezelőfelületét hasonlítja össze az Intune portálján és az Azure portalon](./media/reassign-ca-14.png)
+    ![A felhőalapú alkalmazások Kezelőfelületének összehasonlítása az Intune és az Azure Portalon képe](./media/reassign-ca-14.png)
 
     > [!IMPORTANT] 
     > Az EAS-ügyfelek feltételes hozzáférési szabályzatai nem vonatkozhatnak másik felhőalkalmazásra.
 
 8. A **Feltételek** panelen az **Ügyfélalkalmazások** alatt válassza ki a megfelelő ügyfélalkalmazást. Ha az Intune által nem támogatott ügyfelek kitiltása mellett döntött, akkor válassza a **Szabályzat alkalmazása csak a támogatott platformokon** lehetőséget.
 
-    ![A kép egy ügyfélalkalmazás kezelőfelületét hasonlítja össze az Intune portálján és az Azure Portalon](./media/reassign-ca-15.png)
+    ![Kép egy ügyfélalkalmazás Kezelőfelületének összehasonlítása az Azure és az Intune-portálokon](./media/reassign-ca-15.png)
 
 9. Ha végzett az ügyfélalkalmazás kijelölésével, kattintson kétszer a **Kész** gombra.
 
@@ -175,11 +174,11 @@ Ha az Exchange Online szabályzat részeként az Exchange Active Sync szolgálta
 
 11. A **Hozzáférési engedély feltételei** alatt jelölje ki a **Eszköz megfelelőként való megjelölésének megkövetelése** lehetőséget, majd kattintson a **Kiválaszt** gombra.
 
-    ![A kép a hozzáférési engedélyek kezelőfelületét hasonlítja össze az Intune portálján és az Azure Portalon](./media/reassign-ca-16.png)
+    ![Kép, amely összehasonlítja a hozzáférés biztosítása a felhasználói felület az Intune és az Azure Portalon](./media/reassign-ca-16.png)
 
 12. Az **Új** feltételes hozzáférési szabályzat panelen kapcsolja be a **Szabályzat engedélyezése** kapcsolót, majd kattintson a **Létrehozás** gombra.
 
-    ![A kép a feltételes hozzáférési szabályzatok engedélyezésének kezelőfelületét hasonlítja össze az Intune portálján és az Azure Portalon](./media/reassign-ca-17.png)
+    ![Enable feltételes hozzáférési szabályzat felhasználói Felületére az Intune és az Azure közötti összehasonlítása](./media/reassign-ca-17.png)
 
 > [!NOTE]
 > Ha konfigurálja az **Eszközplatformokat**, a szabályzat mentése sikertelen lesz, és a „Szabályzat konfigurálása nem támogatott” üzenetet kapja. Az Exchange ActiveSync nem tudja azonosítani a csatlakozó eszköz által használt platformot. Az egyes eszközplatformok konfigurálása ezért nem támogatott az Exchange ActiveSync-eszközök szabályzatainak létrehozásakor.
@@ -201,7 +200,7 @@ Fontos, hogy miután újra hozzárendelte a feltételes hozzáférési szabályz
 
 4.  Szüntesse meg a jelölést a **Feltételes hozzáférési szabályzat engedélyezése** lehetőség mellett, majd kattintson a **Mentés** elemre.
 
-    ![A kép a feltételes hozzáférési szabályzatok letiltását ábrázolja az Intune klasszikus portálján](./media/reassign-ca-18.png)
+    ![Feltételes hozzáférési szabályzatok letiltását az Intune klasszikus portálján képe](./media/reassign-ca-18.png)
 
 ## <a name="see-also"></a>Lásd még:
 

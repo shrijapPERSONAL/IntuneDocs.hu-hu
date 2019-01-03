@@ -1,6 +1,5 @@
 ---
-title: Feltételes hozzáférés a Microsoft Intune-nal
-titlesuffix: ''
+title: Feltételes hozzáférés a Microsoft Intune-nal |} A Microsoft Intune-ban
 description: Útmutató a felhasználókra, eszközökre és alkalmazásokra vonatkozó feltételek meghatározásához a vállalati adatok eléréséhez a Microsoft Intune-ban.
 keywords: ''
 author: brenduns
@@ -15,12 +14,12 @@ ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 1e9e8db76978f9547d10fd4709d74ea809f2c281
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: f25fe74c9506d2179c683156821ef9afb218128a
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184845"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816565"
 ---
 # <a name="whats-conditional-access"></a>Mi a feltételes hozzáférés?
 

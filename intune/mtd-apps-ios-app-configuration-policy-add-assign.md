@@ -1,12 +1,11 @@
 ---
-title: MTD-alkalmazások hozzáadása és hozzárendelése a Microsoft Intune-hoz
-titleSuffix: ''
+title: Hozzáadását és hozzárendelését az MTD-alkalmazások Microsoft Intune-bA |} A Microsoft Intune-ban
 description: Az Intune-nal Mobile Threat Defense-alkalmazásokat, a Microsoft Authenticator alkalmazást és iOS-es konfigurációs szabályzatokat adhat hozzá az Azure Portalon.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,19 +15,19 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: afc5028e4ed57757832844637298caf1656d610c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d08a7332ba96f552b488ad3f5d00004d0445d7ec
+ms.sourcegitcommit: 6058c611d5a54076121af1d327a43ad861a43f8a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181173"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "53995997"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Mobile Threat Defense- (MTD) alkalmazások felvétele és hozzárendelése az Intune-nal
 
 > [!NOTE] 
 > Ez a témakör minden Mobile Threat Defense-partnerre vonatkozik.
 
-Az Intune segítségével MTD-alkalmazásokat vehet fel és helyezhet üzembe annak érdekében, hogy a végfelhasználók értesítést kapjanak a mobileszközeiken észlelt fenyegetésekről, és útmutatást kapjanak azok elhárításához.
+Intune-ban is használhatja, hozzáadása és telepítése a Mobile Threat Defense (MTD) alkalmazások, hogy a végfelhasználók értesítést kapjanak a mobileszközeiken azonosított fenyegetés, és segítséget nyújt a fenyegetések javítása.
 
 
 ## <a name="before-you-begin"></a>Előkészületek
@@ -38,13 +37,12 @@ Az [Azure Portalon](https://portal.azure.com/) végre kell hajtani az alábbi l�
   -   [Alkalmazás felvétele az Intune-ba](apps-add.md)
   -   [iOS-es alkalmazáskonfigurációs szabályzat felvétele az Intune-ba](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)
   -   [Alkalmazás hozzárendelése az Intune-hoz](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune).
-  -   [iOS-es alkalmazáskonfigurációs szabályzat felvétele](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
 
 > [!TIP]
-> Androidos eszközökön a felhasználó a Céges portál közvetítésével hajthatja végre az identitás-ellenőrzést az Azure AD-n.
+> Az Intune céges portál módon működik a közvetítő Android-eszközökön, a felhasználók is rendelkeznek a felhasználók identitását az Azure AD ellenőrizni.
 
 ## <a name="configure-microsoft-authenticator-for-ios"></a>Az iOS-hez készült Microsoft Authenticator alkalmazás konfigurálása
-iOS-eszközök esetén a [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) használatára van szükség, hogy az Azure AD ellenőrizhesse a felhasználók identitását. Szükség van továbbá az iOS-es alkalmazáskonfigurációs szabályzatra is, amely az MTD iOS-alkalmazást az Intune-nal történő használatra utasítja.
+iOS-eszközök esetén a [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) használatára van szükség, hogy az Azure AD ellenőrizhesse a felhasználók identitását. Emellett szükség, amely az MTD iOS-alkalmazás használja az Intune-nal IOS-es alkalmazáskonfigurációs szabályzat.
 
 Lásd a következő útmutatót: [iOS Store-alkalmazás felvétele a Microsoft Intune-ba](store-apps-ios.md). Az **Alkalmazásadatok konfigurálása** szakasz **12. lépésében** használja a [ Microsoft Authenticator alkalmazás-áruházbeli URL-címét](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8).
 
@@ -145,11 +143,11 @@ Válassza ki az MTD-szolgáltatójának megfelelő szakaszt:
 
 ### <a name="lookout-for-work-app-configuration-policy"></a>Konfigurációs szabályzat az Lookout for Workhöz
 
-- Hozza létre az iOS-es alkalmazáskonfigurációs szabályzatot az [iOS-es alkalmazáskonfigurációs szabályzat használata](app-configuration-policies-use-ios.md) témakör leírása alapján.
+- Hozzon létre az IOS-es alkalmazáskonfigurációs szabályzat leírtak szerint a [használata iOS-alkalmazáskonfigurációs szabályzat](app-configuration-policies-use-ios.md) cikk.
 
 ### <a name="sep-mobile-app-configuration-policy"></a>SEP Mobile-alkalmazások konfigurációs szabályzata
 
--   Ehhez a művelethez a korábban a [Symantec Endpoint Protection Management konzolon](https://aad.skycure.com) konfigurált Microsoft Azure Active Directory-fiókot kell használni, amely megegyezik a klasszikus Intune-portálra való bejelentkezéshez használttal.
+-   A korábban konfigurált használja ugyanazt az Azure AD-fiókot a [a Symantec Endpoint Protection felügyeleti konzol](https://aad.skycure.com), kell lennie, amely ugyanazt a fiókot használja, jelentkezzen be az Intune klasszikus portálján.
 
 -   **Töltse le** az iOS-es alkalmazáskonfigurációs szabályzatot tartalmazó fájlt: 
     -   Lépjen a [Symantec Endpoint Protection Management konzolra](https://aad.skycure.com), és jelentkezzen be rendszergazdai azonosító adataival.

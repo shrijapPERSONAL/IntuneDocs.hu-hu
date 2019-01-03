@@ -1,6 +1,5 @@
 ---
-title: A Mobile Threat Defense-összekötő engedélyezése a Microsoft Intune-ban
-titleSuffix: ''
+title: A Microsoft Intune Mobile Threat Defense-összekötő engedélyezése |} A Microsoft Intune-ban
 description: A Mobile Threat Defense (MTD) partner és a Microsoft Intune közötti összekötő engedélyezése.
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2937814ae5ceb6c7d8b3def4e954c8eec9337126
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: cfd6f222533728c754f55a76b78698eac5e4031b
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180476"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816684"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>A Mobile Threat Defense-összekötő engedélyezése az Intune-ban
 
@@ -52,17 +51,17 @@ A Mobile Threat Defense (MTD) beállítása során konfigurált egy, az MTD-part
 
 A cég igényei alapján eldöntheti, hogy az MTD mely kapcsolós beállításait kell engedélyeznie. További részletek:
 
-- **Android 4.1+ rendszerű eszközök csatlakoztatása az [MTD-partner neve] for Work MTD-hez**: ezen beállítás engedélyezésével utasíthatja az Android 4.1+ rendszerű eszközöket a biztonsági kockázatok jelentésére az Intune-nak.
-    - **Nem megfelelőnek minősítés, ha nem érkezik adat**: ha az Intune nem kap adatokat egy ilyen platformos eszközről az MTD-partnertől, az eszközt nem megfelelőnek minősíti.
+- **Csatlakozás Android 4.1 + eszközök az [MTD partner name] for Work MTD-hez**: Ha engedélyezi ezt a beállítást, az akkor Android 4.1 + rendszerű eszközök bejelenthetik a biztonsági kockázatokat az Intune-bA biztonsági másolatot.
+    - **Nem megfelelőnek minősítés, ha nem érkezik adat**: Ha az Intune nem kap adatokat egy ilyen platformos eszközről az MTD-partnertől, fontolja meg az eszköz nem megfelelő.
 <br></br>
-- **iOS 8.0+ rendszerű eszközök csatlakoztatása az [MTD partner neve] for Work MTD-hez**: ezen beállítás engedélyezésével utasíthatja az iOS 8.0+ rendszerű eszközöket a biztonsági kockázatok jelentésére az Intune-nak.
-    - **Nem megfelelőnek minősítés, ha nem érkezik adat**: ha az Intune nem kap adatokat egy ilyen platformos eszközről az MTD-partnertől, az eszközt nem megfelelőnek minősíti.
+- **Csatlakozás iOS 8.0 és újabb eszközökre az [MTD partner name] for Work MTD-hez**: Ha engedélyezi ezt a beállítást, akkor is iOS 8.0 + eszközök bejelenthetik a biztonsági kockázatokat vissza az Intune-hoz.
+    - **Nem megfelelőnek minősítés, ha nem érkezik adat**: Ha az Intune nem kap adatokat egy ilyen platformos eszközről az MTD-partnertől, fontolja meg az eszköz nem megfelelő.
 <br></br>
-- **Alkalmazásszinkronizálás engedélyezése iOS-eszközök számára**: Engedélyezi a Mobile Threat Defense-partner számára, hogy iOS-alkalmazások metaadatait kérje le az Intune-ból fenyegetéselemzés céljából.
+- **IOS eszközök Alkalmazásszinkronizálásának engedélyezése**: Lehetővé teszi, hogy a Mobile Threat Defense-partner threat elemzési célokra használja az Intune az iOS-alkalmazások metaadatait kérhet.
 
-- **Nem támogatott operációsrendszer-verziók blokkolása**: a legalacsonyabb támogatott verziónál régebbi rendszerű eszközök blokkolva lesznek.
+- **Nem támogatott operációsrendszer-verziók letiltása**: Annak letiltása, ha az eszköz operációs rendszer fut, kevesebb, mint a minimális támogatott verziója.
 
-- **Partner ennyi nap után nem válaszol**: az Intune ennyi napnyi tétlenség után feltételezi, hogy a partner a kapcsolat megszakadása miatt nem válaszol. Az Intune nem veszi figyelembe a nem válaszoló MTD-partnerek megfelelőségi állapotát.
+- **Ennyi nap múlva partner nem válaszol**: Ennyi nap inaktivitás után tekinti úgy a partner a kapcsolat megszakadása miatt nem válaszol az Intune. Az Intune nem veszi figyelembe a nem válaszoló MTD-partnerek megfelelőségi állapotát.
 
 > [!IMPORTANT] 
 > Az MTD-alkalmazásokat még az eszközmegfelelési és a feltételes hozzáférési szabályzatok létrehozása előtt fel kell vennie és hozzá kell rendelnie. Ez biztosítja, hogy az MTD-alkalmazás még az e-mailekhez és az egyéb céges erőforrásokhoz való hozzáférés előtt telepítésre kész és elérhető legyen a végfelhasználók számára.

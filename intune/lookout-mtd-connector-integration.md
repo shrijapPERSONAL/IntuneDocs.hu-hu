@@ -1,12 +1,11 @@
 ---
-title: A Lookout-integráció beállítása a Microsoft Intune-ban
-titlesuffix: ''
+title: Állítsa be a Lookout-integráció a Microsoft Intune-nal |} A Microsoft Intune-ban
 description: Megismerheti az Intune a Lookout Mobile Threat Defense-szel való integrálását, amellyel vezérelheti a mobileszközök a vállalati erőforrásokhoz való hozzáférését.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/21/2017
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f0ff43e5a25a2f2d7d97564e638d01b014ab81cb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 84bc12d568fce0f5cd6e460595eedf0af0d6296e
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181047"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816871"
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>A Lookout Mobile Threat Defense integrációjának beállítása az Intune-ban
 
@@ -56,8 +55,8 @@ A következő lépések segítségével gyűjtse össze a Lookout-támogatás sz
 2. Az előfizetés nevének kiválasztása után megjelenő URL-cím tartalmazza az előfizetés azonosítóját.  Ha probléma merül fel az előfizetési azonosító lékérdezésekor, további információt talál ebben a [Microsoft-támogatási cikkben](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b).
 
 3. Kérdezze le az Azure AD-csoportazonosítót. A Lookout konzol két hozzáférési szintet támogat:  
-   * **Teljes hozzáférés:** Az Azure AD-rendszergazda létrehozhat egy csoportot teljes hozzáférésű felhasználók számára, és választhatóan egy korlátozott hozzáférésű felhasználókból álló csoportot is.  Csak ennek a két csoportnak a tagjai jelentkezhetnek be a **Lookout konzolra**.
-   * **Korlátozott hozzáférés:** A csoport felhasználóinak a Lookout konzol több konfigurációs és regisztrációval kapcsolatos moduljához nincs hozzáférésük, illetve csak olvasási hozzáférésük van a Lookout konzol **Security Policy** moduljához.  
+   * **Teljes hozzáférés:** Az Azure AD-rendszergazda is hozzon létre egy csoportot teljes hozzáférésű felhasználók számára, és választhatóan egy korlátozott hozzáférésű felhasználókból felhasználók számára.  Csak ennek a két csoportnak a tagjai jelentkezhetnek be a **Lookout konzolra**.
+   * **Korlátozott hozzáférés:** A csoport felhasználóinak nincs eléréséhez több konfigurációs és regisztrációval kapcsolatos moduljához a Lookout-konzolon, és csak olvasási hozzáféréssel rendelkeznek a **biztonsági házirend** modul a Lookout konzolra.  
 
      > [!TIP] 
      > Az engedélyekről további információt talál a Lookout-webhelyen, [ebben a cikkben](https://personal.support.lookout.com/hc/articles/114094105653).
@@ -77,11 +76,11 @@ A következő lépések segítségével gyűjtse össze a Lookout-támogatás sz
 
 3. Nyissa meg a [Lookout konzolon](https://aad.lookout.com) a **System** (Rendszer) modult, válassza a **Connectors** (Összekötők) lapot, majd az **Intune** lehetőséget.
 
-   ![képernyőkép a Lookout konzolról, amelyen az összekötők lap meg van nyitva, az Intune lehetőség pedig ki van emelve](./media/lookout_mtp_setup-intune-connector.png)
+   ![A Lookout-konzolon az Intune-ban kapcsolóval az összekötők lapon képe](./media/lookout_mtp_setup-intune-connector.png)
 
 4. A **Connectors (Összekötők)** > **Connection Settings (Kapcsolat beállítása)** lapon adja meg a **Heartbeat Frequency (Szívverés gyakorisága)** értékét.
 
-   ![képernyőkép a kapcsolat beállítása lapról, amin a szívverés gyakorisága már konfigurálva van](./media/lookout-mtp-connection-settings.png)
+   ![A kapcsolat beállítása lapról szívverés gyakorisága már konfigurálva van, képe](./media/lookout-mtp-connection-settings.png)
 
 ## <a name="configure-enrollment-groups"></a>Regisztrációs csoportok konfigurálása
 1. Ajánlott eljárásként az [Azure AD felügyeleti portálon](https://manage.windowsazure.com) hozzon létre egy néhány tagból álló Azure AD-alapú biztonsági csoportot a Lookout-integráció teszteléséhez.
@@ -95,10 +94,10 @@ A következő lépések segítségével gyűjtse össze a Lookout-támogatás sz
 
     >[!IMPORTANT]
     > A rendszer a **Megjelenített névben** megkülönbözteti a kis- és nagybetűket, ahogyan az az Azure Portalon a biztonsági csoport **Tulajdonságok** lapján látható. Amint az alábbi képen látható, a biztonsági csoport **Megjelenített nevében** nagybetűs szavak, míg a címben csak kisbetűk szerepelnek. A Lookout-konzolon a biztonsági csoport **Megjelenített nevénél** használja a megfelelő írásmódot.
-    >![képernyőkép az Azure portálról, az Azure Active Directory szolgáltatás tulajdonságok lapjáról](./media/aad-group-display-name.png)
+    >![Az Azure portal, Azure Active Directory szolgáltatással, Tulajdonságok lap képe](./media/aad-group-display-name.png)
 
     >[!NOTE] 
-    >Az új eszközök keresésének gyakorisága értéknél javasolt megtartani az alapértelmezett (5 perces) beállítást. Jelenlegi korlátok: **A Lookout nem tudja ellenőrizni a csoportok megjelenített neveit:** Ügyeljen rá, hogy az Azure Portal **MEGJELENÍTETT NÉV** mezője pontosan megegyezzen az Azure AD biztonsági csoporttal. **A beágyazott csoportok létrehozása nem támogatott:** A Lookoutban használt Azure AD biztonsági csoportok csak felhasználókat tartalmazhatnak. Más csoportok nem lehetnek tagjai.
+    >Az új eszközök keresésének gyakorisága értéknél javasolt megtartani az alapértelmezett (5 perces) beállítást. A jelenlegi korlátozások **Lookout nem tudja ellenőrizni a csoport megjelenítendő nevét:** Ellenőrizze, hogy az Azure AD biztonsági csoportjának neve pontosan ugyanaz-e, mint ami az Azure portálon a **MEGJELENÍTETT NÉV** mezőben található. **Beágyazott csoportok létrehozása nem támogatott:**  A Lookoutban használt Azure AD biztonsági csoportok kizárólag felhasználókat tartalmazhatnak. Más csoportok nem lehetnek tagjai.
 
 3.  Az eszköz akkor aktiválódik a Lookoutban, amikor a csoport hozzáadása után a felhasználó az első alkalommal megnyitja a Lookout for Work alkalmazást a támogatott eszközön.
 
@@ -115,15 +114,15 @@ A **Hibakezelés** lehetőségnél írja be azt az e-mail címet, amelyre a hiba
 ## <a name="configure-enrollment-settings"></a>Regisztrációs beállítások konfigurálása
 A **System** modul **Connectors** lapján adja meg, hogy hány nap múltán tekintse a program leválasztottnak az adott eszközt.  A leválasztott eszközöket nem megfelelőnek tekinti a program, és az Intune-beli feltételes hozzáférésre vonatkozó szabályzatok alapján törli a munkahelyi alkalmazásokhoz való hozzáférésüket. 1 és 90 nap közötti időtartam adható meg.
 
-![A Lookout regisztrációs beállításai](./media/lookout-console-enrollment-settings.png)
+![A rendszer a modul a lookout regisztrációs beállításai](./media/lookout-console-enrollment-settings.png)
 
 ## <a name="configure-email-notifications"></a>E-mailben történő értesítések konfigurálása
-Ha e-mailben szeretne értesítéseket kapni a veszélyforrásokról, jelentkezzen be a [Lookout konzolra](https://aad.lookout.com) azzal a felhasználói fiókkal, amelybe az értesítéseket szeretné kapni. A **Rendszer** modulban, a **Beállítások** lapon válassza ki azt a fenyegetési szintet, amelyhez értesítést kíván beállítani, és a kapcsolójukat állítsa **BE** értékre. Mentse a változtatásokat.
+Ha e-mailben szeretne értesítéseket kapni a veszélyforrásokról, jelentkezzen be a [Lookout konzolra](https://aad.lookout.com) azzal a felhasználói fiókkal, amelybe az értesítéseket szeretné kapni. A **Rendszer** modulban, a **Beállítások** lapon válassza ki azt a fenyegetési szintet, amelyhez értesítést kíván beállítani, és a kapcsolójukat állítsa **BE** értékre. Mentse a módosításokat.
 
 ![képernyőkép a beállítások lapról a felhasználói fiókkal](./media/lookout-mtp-email-notifications.png) Ha már nem szeretne email értesítéseket kapni, állítsa az értesítés típusa melletti kapcsolót **KI** értékre.
 
 ### <a name="configure-threat-classification"></a>A veszélyforrások besorolásának konfigurálása
-A Lookout Mobile Threat Defense osztályokba sorolja a különféle fenyegetési típusokat. A [Lookout veszélyforrás-besorolásaiban](http://personal.support.lookout.com/hc/articles/114094130693) alapértelmezett kockázati szintek tartoznak a fenyegetésekhez. Ezek bármikor módosíthatók a vállalat igényeinek megfelelően.
+A Lookout Mobile Threat Defense osztályokba sorolja a különféle fenyegetési típusokat. A [Lookout veszélyforrás-besorolásaiban](https://personal.support.lookout.com/hc/articles/114094130693) alapértelmezett kockázati szintek tartoznak a fenyegetésekhez. Ezek bármikor módosíthatók a vállalat igényeinek megfelelően.
 
 ![képernyőkép a szabályzat oldaláról a fenyegetések besorolásával](./media/lookout-mtp-threat-classification.png)
 

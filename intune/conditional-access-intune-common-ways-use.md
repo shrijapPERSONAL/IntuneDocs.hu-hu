@@ -1,6 +1,5 @@
 ---
-title: Feltételes hozzáférési forgatókönyvek
-titlesuffix: Microsoft Intune
+title: Feltételes hozzáférési forgatókönyvek |} A Microsoft Intune-ban
 description: A cikk azt ismerteti, hogyan használható az Intune feltételes hozzáférése az eszköz- és alkalmazásalapú feltételes hozzáféréshez.
 keywords: ''
 author: brenduns
@@ -15,12 +14,12 @@ ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
-ms.openlocfilehash: 7073c5c617806bcf35934aba73bf15a9a195a506
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 753ad125e541936586f2939985a23ed3b06ea7ea
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112476"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817160"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Mik a feltételes hozzáférés használatának szokásos módjai az Intune-ban?
 
@@ -133,11 +132,11 @@ Az asztali számítógépeken ken beállítható feltételes hozzáférés a mob
 
 #### <a name="corporate-owned"></a>Céges tulajdonú eszközök
 
--   **Helyszíni AD-tartományhoz csatlakoztatott eszköz:** Ezt a beállítást általában olyan cégek használják, amelyek nagyjából elégedettek azzal, ahogyan a számítógépeiket AD-csoportszabályzatokkal és/vagy a System Center Configuration Managerrel felügyelik.
+-   **A helyszíni AD-tartományhoz csatlakoztatott:** Ezt a beállítást gyakran használják szervezetek számára, akik ésszerűen magabiztosan hogyan azok már kezelése számítógépükön keresztül AD-csoportházirendekkel és/vagy a System Center Configuration Manager használ.
 
--   **Azure AD-tartományhoz csatlakoztatott és Intune által felügyelt eszköz:** Ez a megoldás általában a saját eszközök választásán (CYOD) alapuló és laptophordozásos forgatókönyvek megfelelő kísérője, ahol az eszközök csak ritkán csatlakoznak a vállalati hálózatra. Az eszköz az Azure AD-hoz csatlakozik, és az Intune-ban regisztrálják, ami eltávolít minden, a helyszíni AD-tól és tartományvezérlőktől való függőséget. A céges erőforrások kezelésekor ez lehet a feltételes hozzáférés feltétele.
+-   **Az Azure AD tartományhoz csatlakoztatott és Intune-felügyelet:** Ebben a forgatókönyvben általában szoftverfejlesztőknek válassza ki a saját eszköz (CYOD), és ahol ezek az eszközök csak ritkán csatlakoznak a vállalati hálózathoz laptophordozásos forgatókönyvekhez. Az eszköz az Azure AD-hoz csatlakozik, és az Intune-ban regisztrálják, ami eltávolít minden, a helyszíni AD-tól és tartományvezérlőktől való függőséget. A céges erőforrások kezelésekor ez lehet a feltételes hozzáférés feltétele.
 
--   **AD-tartományhoz csatlakoztatott eszköz és System Center Configuration Manager:** A System Center Configuration Manager aktuális ága feltételes hozzáférési képességeket nyújt bizonyos – a gép tartományhoz való csatlakoztatásán kívüli – megfelelőségi feltételek ellenőrzésére:
+-   **AD tartományhoz csatlakoztatott és a System Center Configuration Managerben:** Kezdődően az aktuális fejlesztési ágban, System Center Configuration Manager feltételes hozzáférési képességeket biztosít, amelyek adott megfelelőségi feltételek egy tartományhoz csatlakoztatott Számítógépről is képes kiértékelni:
 
     -   Titkosították-e a számítógépet?
 
@@ -147,7 +146,7 @@ Az asztali számítógépeken ken beállítható feltételes hozzáférés a mob
 
 #### <a name="bring-your-own-device-byod"></a>Saját eszközök használata (BYOD)
 
--   **Munkahelyi csatlakozás és Intune-felügyelet:** A felhasználók ebben az esetben a saját eszközeiket csatlakoztatva érhetik el a céges erőforrásokat és szolgáltatásokat. A munkahelyi csatlakozás használatával és az eszközök Intune-regisztrációjával eszközszintű szabályzatokat kaphat, ami újabb lehetőséget nyújt a feltételes hozzáférés feltételeinek értékeléséhez.
+-   **Munkahelyi csatlakozás és Intune-felügyelet:** Itt a felhasználó csatlakozhat személyes eszközeik vállalati erőforrások és szolgáltatások eléréséhez. A munkahelyi csatlakozás használatával és az eszközök Intune-regisztrációjával eszközszintű szabályzatokat kaphat, ami újabb lehetőséget nyújt a feltételes hozzáférés feltételeinek értékeléséhez.
 
 ## <a name="app-based-conditional-access"></a>Alkalmazásalapú feltételes hozzáférés
 

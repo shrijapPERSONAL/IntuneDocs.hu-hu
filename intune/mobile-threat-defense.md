@@ -1,6 +1,5 @@
 ---
-title: Mobile Threat Defense a Microsoft Intune-nal
-titleSuffix: ''
+title: A Mobile Threat Defense a Microsoft Intune-nal |} A Microsoft Intune-ban
 description: Az Intune Mobile Threat Defense (MTD) szolgáltatást a mobileszköz-védelmi partnerével együtt használva eszközkockázaton alapuló módon védheti meg a vállalati erőforrásokhoz való hozzáférést.
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 65bbc207f96ae2b1670fa2ddc45cad56466580df
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 18161e8293ae92420f9437dab18e008e8e57b93a
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183638"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816599"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Mit jelent a Mobile Threat Defense integrációja az Intune-nal?
 

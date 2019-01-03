@@ -1,6 +1,5 @@
 ---
-title: A Jamf Pro integrálása a Microsoft Intune-nal a megfelelőség érdekében
-titlesuffix: ''
+title: A Jamf Pro integrálása a Microsoft Intune-nal a megfelelőség |} A Microsoft Intune-ban
 description: A Microsoft Intune megfelelőségi szabályzatait az Azure Active Directory feltételes hozzáférésével használva biztonságossá teheti a Jamf által kezelt eszközöket.
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e936ecd4ce6a9b0fa447ecfe8e45e04a78999a2b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: cc547926d95e3fa1bec54b4ea55f764b5701b3b7
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185015"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816820"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>A Jamf Pro integrálása az Intune-nal a megfelelőség érdekében
 
@@ -50,7 +49,7 @@ Az Intune és a Jamf Pro csatlakoztatásához a következők szükségesek:
 1. Nyissa meg az **Azure Active Directory** > **Alkalmazásregisztrációk** lapot.
 2. Kattintson az **+Új alkalmazás létrehozása** elemre.
 3. Adjon meg egy **megjelenítendő nevet**, például **Jamf feltételes hozzáférés**.
-4. Kattintson a **Webalkalmazás / API** elemre.
+4. Válassza ki **webalkalmazás / API**.
 5. Adja meg a **Bejelentkezési URL-címet** a Jamf Pro-példány URL-címe alapján.
 6. Kattintson az **Alkalmazás létrehozása** lehetőségre.
 7. Mentse az újonnan létrehozott **Alkalmazásazonosítót**, majd válassza a **Beállítások** lehetőséget, és navigáljon az **API-hozzáférés** > **Kulcsok** lapra az új alkalmazáskulcs létrehozásához. Adja meg a kívánt leírást a **Leírás** oszlopban, adja meg a lejárat időtartamát a **Lejárat** oszlopban, majd mentse az alkalmazáskulcsot.
@@ -74,14 +73,14 @@ Az Intune és a Jamf Pro csatlakoztatásához a következők szükségesek:
 
 1. A Microsoft Azure Portalon nyissa meg a **Microsoft Intune** > **Eszköz megfelelősége** > **Partnereszköz kezelése** lapot.
 2. Illessze be az alkalmazásazonosítót a **Jamf Azure Active Directory alkalmazásazonosító** mezőbe, és ezzel engedélyezze a megfelelőségi összekötőt.
-3. Kattintson a **Mentés**gombra.
+3. Kattintson a **Save** (Mentés) gombra.
 
 ## <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>A Microsoft Intune-integráció konfigurálása a Jamf Pro szolgáltatásban
 
 1. A Jamf Pro oldalán nyissa meg a **Globális felügyelet** > **Feltételes hozzáférés** lehetőséget. Kattintson a **Microsoft Intune-integráció** lapon található **Szerkesztés** gombra.
 2. Jelölje be a **Microsoft Intune-integráció engedélyezése** jelölőnégyzetet.
 3. Adja meg az Azure-bérlőre vonatkozó szükséges adatokat, köztük a **Helyet**, a **Tartománynevet**, és az előző lépésekben mentett **Alkalmazásazonosítót** és **Alkalmazáskulcsot**.
-4. Kattintson a **Mentés**gombra. A Jamf Pro ellenőrzi a beállításokat és a sikeres végrehajtást.
+4. Kattintson a **Save** (Mentés) gombra. A Jamf Pro ellenőrzi a beállításokat és a sikeres végrehajtást.
 
 ## <a name="set-up-compliance-policies-and-register-devices"></a>Megfelelőségi szabályzatok beállítása és eszközök regisztrálása
 
@@ -115,7 +114,7 @@ A Jamf Pro rögzíti a felügyelt macOS-alapú eszközök eszközkészletadatait
 * Csatlakozás tartományhoz
 * Jamf-azonosító
 * MAC-cím
-* Győződjön meg arról
+* Fordítás
 * Modell
 * Modellazonosító
 * Hálózati adapter sebessége

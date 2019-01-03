@@ -1,5 +1,5 @@
 ---
-title: Az alkalmazásvédelmi szabályzat naplóinak áttekintése
+title: Az alkalmazásvédelmi szabályzat naplóinak áttekintése |} A Microsoft Intune-ban
 titlesuffix: Microsoft Intune
 description: Ismerje meg az alkalmazásvédelmi naplók áttekinthető beállításait.
 keywords: ''
@@ -16,12 +16,12 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: eedbc17147c6f9e2988d954308f2332de10d00ab
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 3e7b6ec1063b4337f44de0a4502bcbf7c2a45edf
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189843"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817211"
 ---
 # <a name="review-client-app-protection-logs"></a>Ügyfelekre vonatkozó alkalmazásvédelmi naplók áttekintése
 
@@ -37,10 +37,10 @@ Az alábbi táblázat a nevét és magyarázatát tartalmazza a naplóban tárol
 
 ## <a name="app-protection-policy-settings"></a>Alkalmazásvédelmi szabályzatbeállítások
 
-| Név                        | Lehetséges érték(ek)                                                                                                                                                                                                                                                                                           | A beállítás az Azure Intune mobilalkalmazás-kezelésben                                                                                                                            |
+| Name (Név)                        | Lehetséges érték(ek)                                                                                                                                                                                                                                                                                           | A beállítás az Azure Intune mobilalkalmazás-kezelésben                                                                                                                            |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| AccessRecheckOfflineTimeout | x perc                                                                                                                                                                                                                                                                                                   | [Hozzáférés] A hozzáférési követelmények ismételt ellenőrzése – Offline türelmi időszak<br>Megjegyzés: ez az az időtartam, amennyi elteltével az alkalmazás hozzáférési követelményeinek ismételt ellenőrzése megtörténik, ha az eszköz offline állapotban van.             |
-| AccessRecheckOnlineTimeout  | _x_ perc                                                                                                                                                                                                                                                                                                   | [Hozzáférés] A hozzáférési követelmények ismételt ellenőrzése – Időtúllépés.<br>Megjegyzés: ez az az időtartam, amennyivel az alkalmazás elindítása után az alkalmazás hozzáférési követelményeinek ismételt ellenőrzése megtörténik, ha az eszköz online állapotban van. |
+| AccessRecheckOfflineTimeout | x perc                                                                                                                                                                                                                                                                                                   | [Hozzáférés] A hozzáférési követelmények ismételt ellenőrzése – Offline türelmi időszak<br>Megjegyezés: Ez az az adott időszakban, mielőtt az alkalmazás hozzáférési követelményeinek újbóli ellenőrzéséig Ha az eszköz offline állapotban van.             |
+| AccessRecheckOnlineTimeout  | _x_ perc                                                                                                                                                                                                                                                                                                   | [Hozzáférés] A hozzáférési követelmények ismételt ellenőrzése – Időtúllépés.<br>Megjegyezés: Ez az az adott időszakban, mielőtt az alkalmazás hozzáférési követelményeinek újbóli ellenőrzéséig követően az alkalmazást elindítja, ha az eszköz online állapotban. |
 | AppPinDisabled              | 0 = Nem<br>1 = Igen                                                                                                                                                                                                                                                                                           | [Hozzáférés] Alkalmazás PIN-kódjának letiltása, ha az eszköz PIN-kódja felügyelt.                                                                                                                                     |
 | AppSharingFromLevel         | 0 = Egy alkalmazás sem<br>1 = Felügyelt alkalmazások<br>2 = Bármely alkalmazás.                                                                                                                                                                                                                                                              | [Adatáthelyezés] Más alkalmazásokból való adatfogadás engedélyezése az alkalmazásnak.                                                                                                                        |
 | AppSharingToLevel           | 0 = Egy alkalmazás sem<br>1 = Felügyelt alkalmazások<br>2 = Bármely alkalmazás.                                                                                                                                                                                                                                                              | [Adatáthelyezés] Más alkalmazásokba való adatküldés engedélyezése az alkalmazásnak.                                                                                                                         |

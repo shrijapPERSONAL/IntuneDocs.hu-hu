@@ -1,6 +1,5 @@
 ---
-title: Lookout MTD-összekötő a Microsoft Intune-nal
-titlesuffix: ''
+title: A lookout MTD-összekötő a Microsoft Intune-nal |} A Microsoft Intune-ban
 description: Megismerheti az Intune a Lookout Mobile Threat Defense-szel való integrálását, amellyel vezérelheti a mobileszközök a vállalati erőforrásokhoz való hozzáférését.
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d7a545fe08acc9ab88086fa92be934c860ae4716
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: bd61b10ee60e1f9413c22d0d618bc5c270dc76a6
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179541"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817075"
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Lookout Mobile Threat Defense-összekötő az Intune-nal
 
@@ -63,34 +62,34 @@ Ha az eszközön rosszindulatú alkalmazásokat, például kártevőket észlel 
 
 **Letiltás kártékony alkalmazás észlelése esetén:**
 
-![az ábra azt mutatja, hogy a feltételes hozzáférési szabályzat letiltja a hozzáférést, ha az eszköz a rajta észlelt kártékony alkalmazások alapján nem megfelelőnek minősül](./media/malicious-apps-blocked.png)
+![A szabályzat blokkolja a rosszindulatú alkalmazások miatt fogalmi képe](./media/malicious-apps-blocked.png)
 
 **A fenyegetés kiküszöbölését követően a hozzáférés ismét biztosított:**
 
-![ábra, amely azt mutatja, hogy a feltételes hozzáférési szabályzat ismét engedélyezi a hozzáférést, amikor a fenyegetés kiküszöbölését követően az eszköz ismét megfelelőnek minősül](./media/malicious-apps-unblocked.png)
+![Hozzáférés a szervizelés után az eszközök megkapják a fogalmi kép](./media/malicious-apps-unblocked.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>Hozzáférés vezérlése hálózati fenyegetés alapján
 Észleli a hálózat elleni támadásokat, például a közbeékelődéses (man-in-the-middle) támadásokat, és az eszközkockázat alapján biztosítja a Wi-Fi-hálózatok elérésének védelmét.
 
 **Wi-Fi-s hálózati elérés letiltása:**
 
-![az ábra azt mutatja, hogy a feltételes hozzáférési szabályzat a hálózati fenyegetések alapján letiltja a Wi-Fi-hálózat elérését](./media/network-wifi-blocked.png)
+![A hálózati fenyegetések alapján Wi-Fi-hozzáférés letiltása a kép](./media/network-wifi-blocked.png)
 
 **A fenyegetés kiküszöbölését követően a hozzáférés ismét biztosított:**
 
-![ábra, amely azt mutatja, hogy a fenyegetés kiküszöbölését követően a feltételes hozzáférési szabályzat ismét engedélyezi a hozzáférést](./media/network-wifi-unblocked.png)
+![Engedélyezi a hozzáférést a szervizelés után a feltételes hozzáférés fogalmi képe](./media/network-wifi-unblocked.png)
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Hozzáférés vezérlése a SharePoint Online-hoz hálózati fenyegetés alapján
 
 Észleli a hálózat elleni támadásokat, például a közbeékelődéses (man-in-the-middle) támadást és az eszköz jelentette kockázat alapján megakadályozza a vállalati fájlok szinkronizálását.
 
 **A SharePoint Online letiltása hálózati fenyegetések észlelése esetén:**
 
-![Ábra, amely azt mutatja, hogy a feltételes hozzáférési szabályzat letiltotta az eszköz hozzáférését a SharePoint Online-hoz az észlelt fenyegetés alapján](./media/network-spo-blocked.png)
+![A SharePoint online-hoz való hozzáférés blokkolása fogalmi képe](./media/network-spo-blocked.png)
 
 
 **A fenyegetés kiküszöbölését követően a hozzáférés ismét biztosított:**
 
-![Ábra, amely azt mutatja, hogy a hálózati fenyegetés kiküszöbölését követően a feltételes hozzáférési szabályzat ismét engedélyezi a hozzáférést](./media/network-spo-unblocked.png)
+![Engedélyezi a hozzáférést, miután a hálózati fenyegetés kiküszöbölését követően fogalmi képe](./media/network-spo-unblocked.png)
 
 ## <a name="next-steps"></a>További lépések
 A legfontosabb lépések a megoldás megvalósítása érdekében:
