@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 2a06855ce9f25a5e7ee79d5b0344650fcb42900c
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: 49ecdebc2777112ce8c8c97af1f98b3c12b200e1
+ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817177"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54006284"
 ---
 # <a name="what-are-app-protection-policies"></a>Mik azok az alkalmazásvédelmi szabályzatok?
 
@@ -146,7 +146,7 @@ A **Globális** szabályzat a bérlőn belül az összes felhasználóra vonatko
 
 A több identitást támogató alkalmazások különböző (munkahelyi és személyes) fiókokkal is elérhetők. Ilyenkor az alkalmazásvédelmi szabályzatok csak az alkalmazások munkahelyi környezetben való használatára vonatkoznak.
 
-Például személyes környezet, fontolja meg egy felhasználót, aki elindul egy új dokumentumot a Word, az tekintendő személyes környezet, az Intune alkalmazásvédelmi szabályzatok sem lépnek érvénybe. A dokumentum mentésekor a vállalati OneDrive-fiók akkor consieered corporatte környezet lesz, és az Intune alkalmazásvédelmi szabályzatokat a rendszer alkalmazza.
+Például személyes környezet, fontolja meg egy felhasználót, aki elindul egy új dokumentumot a Word, az tekintendő személyes környezet, az Intune alkalmazásvédelmi szabályzatok sem lépnek érvénybe. Ha a dokumentum mentésekor a vállalati OneDrive-fiók majd vállalati környezetben minősülnek, és az Intune alkalmazásvédelmi szabályzatokat a rendszer alkalmazza.
 
 Például egy munkahelyi környezetben fontolja meg egy felhasználót, aki a OneDrive alkalmazást indítja el a munkahelyi fiókjával. A felhasználó ebben a vállalati környezetben nem tudja áthelyezni a fájlokat a személyes tárolóhelyére. Ha később a személyes fiókjával használja a OneDrive-ot, akkor korlátozás nélkül másolhat és helyezhet át adatokat a személyes OneDrive-jából.
 
