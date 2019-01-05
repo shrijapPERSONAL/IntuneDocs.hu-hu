@@ -1,11 +1,11 @@
 ---
 title: Android-eszköz regisztrációjának törlése az Intune-ból | Microsoft Docs
-description: Egy Android-eszköz regisztrációjának törlését mutatja be az Intune-ból
+description: Androidos eszköz regisztrációjának törlése az Intune vállalati portál
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 01/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d932005c955afed7f16e9766b559b77b2cd43182
-ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
-ms.translationtype: HT
+ms.openlocfilehash: 75b26e178badbaa7905199eb91490134d2b72ba9
+ms.sourcegitcommit: 61ed365f7f8826451c41bcab5e19bef97b5a3c72
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49959485"
+ms.lasthandoff: 01/05/2019
+ms.locfileid: "54057338"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>Android-eszköz regisztrációjának törlése  
 
@@ -51,8 +51,23 @@ Az Android-eszközhöz készült Céges portál alkalmazás által az eszközön
 -   Törölje a '\storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal' mappát.
 
 ## <a name="uninstall-the-company-portal-app"></a>A Céges portál alkalmazás eltávolítása  
-A Céges portál egy eszközkezelési alkalmazás, ezért addig nem lehet eltávolítani, amíg [nem szünteti meg az eszköz regisztrációját a kezelt eszközök között](unenroll-your-device-from-intune-android.md#unenroll-your-android-device-from-management). Miután ezt megtette, koppintson a Céges portál alkalmazás ikonjára, és tartsa nyomva addig, amíg az **Eltávolítás** lehetőség meg nem jelenik. Koppintson az **Eltávolítás** lehetőségre az alkalmazás eszközről való eltávolításához.  
+Céges portál egy eszközfelügyeleti alkalmazáshoz. Nem lehet eltávolítani, amíg [annak felügyeleti az eszköz regisztrációjának törlése](unenroll-your-device-from-intune-android.md#unenroll-your-android-device-from-management). Miután ezt megtette, koppintson a Céges portál alkalmazás ikonjára, és tartsa nyomva addig, amíg az **Eltávolítás** lehetőség meg nem jelenik. Koppintson az **Eltávolítás** lehetőségre az alkalmazás eszközről való eltávolításához.  
 
-Vagy koppintson a **Beállítások** > **Alkalmazások** > **Céges portál** > **Eltávolítás** lehetőségre.  
+Azt is megteheti, koppintson **beállítások** > **alkalmazások** > **céges portál** > **Eltávolítás**.  
+
+### <a name="remove-company-portal-app-as-device-administrator"></a>Eltávolítja a céges portál alkalmazás eszköz rendszergazdaként  
+Végső megoldásként a eszközadminisztrátorként törlésével eltávolíthatja az alkalmazást az eszközről.  
+
+Ha a vállalat által birtokolt eszközök, a szervezet előfordulhat, hogy követelmény, hogy vállalati portál az eszközön mindig. Ha eltávolítja, sikerült nem fér hozzá védett vállalati erőforrásokba, például e-mail, alkalmazások, Wi-Fi vagy VPN-, amíg az alkalmazás újratelepítése után. Telepítésével kapcsolatos további információkért frissítése, vagy távolítsa el a kötelező alkalmazásokat, lásd: [alkalmazások hozzáadása Microsoft Intune-bA](https://docs.microsoft.com/intune/apps-add#apps-that-are-added-automatically-by-intune).  
+
+Tiltsa le a céges portál egy eszköz rendszergazdaként az alábbi lépéseket. Tényleges nevét, az egyes beállítások az Android-eszközön eltérő lehet.  
+
+**Android lépéseket, 1. lehetőség**:  
+1. Válassza ki **beállítások** > **biztonsági** > **további biztonsági beállítások** > **Eszközadminisztrátorok** .  
+2. Törölje a **céges portál** kiválasztása.  
+
+**Android lépéseket, 2. lehetőség**:  
+1. Válassza ki **beállítások** > **zárolási képernyő és biztonság** > **további biztonsági beállítások** > **Eszközfelügyelet alkalmazások**.  
+2. Törölje a **céges portál** kiválasztása.    
 
 További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980)
