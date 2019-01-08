@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 01/06/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2257253d023c97d14418b3566c0c493a3cd8f615
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.openlocfilehash: 59e9af2449f384fce22acaef9a696f2944eabaa1
+ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53737916"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54067431"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Gyors útmutató: A Microsoft Intune ingyenes kipróbálása 
 
@@ -50,7 +50,7 @@ Az Intune kipróbálása 30 napig ingyenes. Ha már rendelkezik munkahelyi vagy 
 
 2. Hozzon létre fiókot a **.onmicrosoft.com** utótaggal kiegészített vállalati nevével. 
 
-    ![A Microsoft Intune próbaverziójának fiók új hitelesítő adat folyamat képernyőképe](./media/account-sign-up-site-user-id.png)
+    ![Képernyőkép az Intune-ban próbafiókot új hitelesítő adat folyamat](./media/account-sign-up-site-user-id.png)
 
     Ha vállalata saját egyéni tartománnyal rendelkezik, amelyet a **.onmicrosoft.com** utótag nélkül szeretne használni, ezt a cikk későbbi részében ismertetett módon megváltoztathatja az Office 365 felügyeleti portálján.
 

@@ -6,7 +6,7 @@ keywords: Intune-adattárház
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 01/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 9c93554fd6750459aacc154165e7a58e160534fb
-ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
+ms.openlocfilehash: 3599146aaebc2e3788fa96e8e04657ce4db41c4f
+ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53429712"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54067448"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Jelentés készítése az OData-adatcsatornából a Power BI használatával
 
@@ -59,9 +59,9 @@ Telepítse a Power BI Desktop legújabb verzióját. A Power BI Desktop tölthet
 5. Nyissa meg a Power BI Desktop alkalmazást.
 6. Válassza az **Adatok betöltése** > **OData-adatcsatorna** lehetőséget.
 7. Illessze be az egyéni URL-címet az **OData-adatcsatorna** ablak URL mezőjébe.
-8. Válassza az **Egyszerű** lehetőséget.
+8. Válassza az **Alapszintű** lehetőséget.
 
-    ![OData-adatcsatorna](media/reports-create-01-odatafeed.png)
+    ![OData-csatornáról az Intune Data warehouse-hoz a bérlő számára](media/reports-create-01-odatafeed.png)
 
 9. Kattintson az **OK** gombra.
 10. Válassza a **Szervezeti fiók** lehetőséget, és jelentkezzen be az Intune-hoz tartozó hitelesítő adataival.
@@ -70,7 +70,7 @@ Telepítse a Power BI Desktop legújabb verzióját. A Power BI Desktop tölthet
 
 11. Kattintson a **Csatlakozás** gombra. Ekkor megnyílik a Navigátor, és megjelenik rajta az Intune-adattárházban található táblák listája.
 
-    ![A Navigátor](media/reports-create-02-loadentities.png)
+    ![A kezelő - a Data Warehouse-táblákat képernyőképe](media/reports-create-02-loadentities.png)
 
 12. Válassza ki a **devices** (eszközök) és az **ownerTypes** (tulajdonostípusok) táblákat.  Válassza a **Betöltés** lehetőséget. A Power BI betölti az adatokat a modellbe.
 
@@ -78,7 +78,7 @@ Telepítse a Power BI Desktop legújabb verzióját. A Power BI Desktop tölthet
 
 Nem csak egyetlen tábla adatait, de több táblát is importálhat, és így egyszerre több tábla összekapcsolt adatait is elemezheti.  A Power BI rendelkezik egy **automatikus felismerés** funkcióval, amely megpróbálja megkeresni és létrehozni a kapcsolatokat. Az Adattárház táblái úgy lettek kialakítva, hogy képesek legyenek együttműködni a Power BI automatikus felismerés funkciójával. Ha azonban a Power BI nem tudja automatikusan megtalálni a kapcsolatokat, manuális kezelésre is van lehetőség.
 
-![Kapcsolatok kezelése](media/reports-create-03-managerelationships.png)
+![Kapcsolódó adatok kapcsolatok kezelése a táblák között](media/reports-create-03-managerelationships.png)
 
 1. Válassza a **Kapcsolatok kezelése** lehetőséget.
 2. Ha a Power BI még nem észlelte a kapcsolatokat, válassza az **Automatikus észlelés...** lehetőséget.
@@ -99,7 +99,7 @@ A fatrékép-diagram adatok hierarchikus viszonyát jeleníti meg négyzeteken b
 
 Ezzel elkészített egy olyan vizualizációt, amely megmutatja, hogy milyen a szervezetben az eszközök gyártók szerinti eloszlása.
 
-![Fatérkép-diagram adatokkal](media/reports-create-06-treemapwdata.png)
+![Fatérkép diagram adatokkal - milyen eszközök gyártók szerinti eloszlása](media/reports-create-06-treemapwdata.png)
 
 ## <a name="add-a-filter"></a>Szűrő hozzáadása
 
@@ -111,7 +111,7 @@ A fatérkép-diagramhoz szűrőt is hozzáadhat, hogy az további kérdésekre i
 
    Az eszközök táblában van egy **OwnerTypeKey** nevű adatmező, amely azt a kódot tartalmazza, amely azt jelzi, hogy az eszköz vállalati vagy személyes tulajdonú-e. Mivel ebben a szűrőben egyszerű neveket célszerű használni, keresse meg az **ownerTypes** táblát, és húzza el az **ownerTypeName** mezőt. Ebből a példából láthatja, hogyan támogatja az adatmodell a táblák közötti kapcsolatokat.
 
-![Fatérkép-diagram szűrővel](media/reports-create-08_ownertype.png)
+![Fatérkép-diagram szűrővel – támogatja a táblák közötti kapcsolatok](media/reports-create-08_ownertype.png)
 
 Ezzel létrehozott egy olyan interaktív szűrőt, amelyben egyszerű váltással megtekinthetők a vállalati és a személyes tulajdonú eszközök. Ezzel a szűrővel megtekintheti az eloszlás változásait.
 
