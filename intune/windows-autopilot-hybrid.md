@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 9de47f996706255c072926524860cfcc833e8b8b
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: 2fda0fbc40137c8b5a2acd32cacf12bf7d04b0d0
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642557"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122604"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Hibrid Azure AD-hez csatlakoztatott eszközök üzembe helyezése az Intune és a Windows Autopilot használatával (előzetes verzió)
 Az Intune és a Windows Autopilot használatával elvégezheti a hibrid Azure Active Directoryhoz csatlakoztatott eszközök beállítását. Ehhez kövesse az alábbi lépéseket:
@@ -204,7 +204,7 @@ Körülbelül 15 percbe telik, amíg az eszközprofil állapota **Nincs hozzáre
    - **Description** (Leírás): Adja meg a profil leírását.
    - **Platform**: Válasszon **Windows 10 és újabb**.
    - **Profil típusa**: Válasszon **tartományhoz való csatlakozás (előzetes verzió)**.
-3. Válasszon **beállítások** , és adja meg egy **számítógépnév előtagja**, **tartománynév**, és **szervezeti egység** DN formátumban (nem kötelező). 
+3. Válasszon **beállítások** , és adja meg egy **számítógépnév előtagja**, **tartománynév**, és (nem kötelező) **szervezeti egység** a[DN formátum](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name). 
 4. Válassza az **OK** > **Létrehozás** lehetőségeket. Ekkor létrejön a profil, és megjelenik a listában.
 5. A profil hozzárendeléséhez kövesse az [Eszközprofil hozzárendelése](device-profile-assign.md#assign-a-device-profile) cikk lépéseit. 
 

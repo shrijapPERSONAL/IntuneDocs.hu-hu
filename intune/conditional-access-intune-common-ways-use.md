@@ -14,12 +14,12 @@ ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
-ms.openlocfilehash: 753ad125e541936586f2939985a23ed3b06ea7ea
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: a762f14fd93400d76c63d2108a41229bf2ffc34d
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817160"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122587"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Mik a feltételes hozzáférés használatának szokásos módjai az Intune-ban?
 
@@ -39,15 +39,14 @@ Az Intune és az Azure Active Directory együtt gondoskodik róla, hogy csak fel
 Az Intune biztosítja az eszközök megfelelőségi állapotát értékelő eszközmegfelelőségi szabályzatokat. A rendszer jelenti a megfelelőségi állapotot az Azure Active Directorynak, amely azon szabályzat érvényre juttatásához fogja azt használni, amely akkor jön létre az Azure Active Directoryban, amikor a felhasználó kísérletet tesz a céges erőforrások elérésére.
 
 Az Exchange Online és más Office 365-termékek eszközalapú feltételes hozzáférési szabályzatainak konfigurálása az [Azure Portalon](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune) keresztül történik.
-
--   További tudnivalók: [Feltételes hozzáférés az Azure Active Directoryban](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).
+-   Tudjon meg többet [szükséges felügyelt eszközök feltételes hozzáféréssel az Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-managed-devices).
 
 -   További információ az [Intune eszközmegfelelőségéről](device-compliance.md).
 
--   További tudnivalók: [A levelezés, az Office 365 és más szolgáltatások védelme az Intune feltételes hozzáférési funkciójának használatával](app-based-conditional-access-intune.md).
+-   Tudjon meg többet [támogatott böngészők a feltételes hozzáférés az Azure Active Directoryban](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/technical-reference#supported-browsers).
 
 > [!NOTE]
-> Ha egy Android-eszközön engedélyezi az eszközalapú hozzáférést a Sharepoint Online-hoz, a felhasználónak a következőképpen engedélyeznie kell a **Böngészőalapú hozzáférés engedélyezése** beállítást a regisztrált eszközön:
+> Az Android-eszközökön, amikor az eszköz alapú hozzáférés engedélyezi a Sharepoint online-hoz vagy a böngésző alapú hozzáférés Exchange Online-felhasználók engedélyeznie kell a **böngészőalapú hozzáférés engedélyezése** lehetőség a regisztrált eszköz a következőképpen:
 > 1. Nyissa meg a **Vállalati portál alkalmazást**.
 > 2. Nyissa meg a **Beállítások** lapot a három ponttal (...) vagy a hardveres menügombbal.
 > 3. Kattintson a **Böngészőalapú hozzáférés engedélyezése** gombra. 
@@ -146,7 +145,9 @@ Az asztali számítógépeken ken beállítható feltételes hozzáférés a mob
 
 #### <a name="bring-your-own-device-byod"></a>Saját eszközök használata (BYOD)
 
--   **Munkahelyi csatlakozás és Intune-felügyelet:** Itt a felhasználó csatlakozhat személyes eszközeik vállalati erőforrások és szolgáltatások eléréséhez. A munkahelyi csatlakozás használatával és az eszközök Intune-regisztrációjával eszközszintű szabályzatokat kaphat, ami újabb lehetőséget nyújt a feltételes hozzáférés feltételeinek értékeléséhez.
+-   **Munkahelyi csatlakozás és Intune-felügyelet:** Itt a felhasználó csatlakozhat személyes eszközeik vállalati erőforrások és szolgáltatások eléréséhez. A munkahelyi csatlakozás használatával, és az eszközök regisztrálása az Intune MDM-ben fogadásához eszközszintű szabályzatokat, amelyek egyben egy másik lehetőség a feltételes hozzáférés feltételeinek értékeléséhez.
+
+Tudjon meg többet [az Eszközfelügyelet az Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/devices/overview).
 
 ## <a name="app-based-conditional-access"></a>Alkalmazásalapú feltételes hozzáférés
 

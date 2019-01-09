@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 76a16df06c085eb3b40a3a48d4398a46233a09b8
-ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
+ms.openlocfilehash: 5a84bcd820b7596d1b1df01342604562c7853140
+ms.sourcegitcommit: a44359b426e19b8bf4b99eca6af2755c6d3c6fb8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626084"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54098317"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-kiosk-devices"></a>Az Android enterprise teljes képernyős eszközök Intune-regisztráció beállítása
 
@@ -112,7 +112,7 @@ Az NFC-t támogató Android 5.1 vagy újabb rendszerű eszközöket egy speciál
 
 ### <a name="enroll-by-using-a-token"></a>Regisztráció jogkivonat használatával
 
-Android 6 vagy újabb rendszerű eszközök esetén használhatja a jogkivonatot az eszköz regisztrálásához. Az Android 6.1-es és újabb verzióinál a QR-kódok olvasására is lehetőség van az **aft#setup** regisztrációs metódus használatakor.
+Android 6 vagy újabb rendszerű eszközök esetén használhatja a jogkivonatot az eszköz regisztrálásához. 6.1-es és újabb verziók is használhatják a QR-kód beolvasásához használatakor a **afw #setup** regisztrációs módszer.
 
 1. Kapcsolja be a törölt tartalmú eszközt.
 2. Az **Üdvözlőképernyőn** válasszon nyelvet.

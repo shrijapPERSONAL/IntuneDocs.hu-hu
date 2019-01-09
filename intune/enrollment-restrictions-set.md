@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e6f816ae0eb025addfaa0c5f7ec7d16005f6b040
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: a8ebe8f8cd84ef5eb38bf7e17f413bcc6a0791cd
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112952"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122542"
 ---
 # <a name="set-enrollment-restrictions"></a>Regisztrációs korlátozások beállítása
 
@@ -81,6 +81,8 @@ Az eszköztípuskorlátok beállításait az alábbi lépésekkel módosíthatja
     - Az androidos munkahelyi profil támogatja a főverzió.alverzió.változat.build formátumot.
     - Az iOS a főverzió.alverzió.változat formátumot támogatja. Az operációs rendszer verziójának korlátozásai nem vonatkoznak a Készülékregisztrációs programban, az Apple School Manager programban vagy az Apple Configurator alkalmazással regisztrált Apple-eszközökre.
     - A Windows a főverzió.alverzió.változat.build formátumot támogatja, csak Windows 10 esetén.
+> [!Note]
+> Windows 10-es nem biztosít a buildszám-regisztráció során, ha megadta a 10.0.17134.100 és az eszköz van 10.0.17134.174 példány le lesz tiltva regisztráció során.
 8. Válassza a **személyes tulajdonú** eszközök **Engedélyezés** vagy **Tiltás** lehetőségét az összes felsorolt platform esetében.
 9. Válassza az **OK** gombot.
 
