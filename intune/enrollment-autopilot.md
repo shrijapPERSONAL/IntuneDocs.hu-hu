@@ -16,12 +16,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 9ac60cd3355b27cd6c99e0e0255e08d7335127e8
-ms.sourcegitcommit: a44359b426e19b8bf4b99eca6af2755c6d3c6fb8
+ms.openlocfilehash: 636767a783f3c2f2454423f0f6bbda9da781c8e2
+ms.sourcegitcommit: 2ff19c09a43c63556d082966727674120b516d10
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54098334"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54149730"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows-eszközök regisztrálása az Intune-ban a Windows Autopilot használatával  
 A Windows Autopilot egyszerűbbé teszi az eszközök regisztrálását az Intune-ban. A testre szabott operációsrendszer-lemezképek létrehozása és karbantartása sok időt vesz igénybe. Gyakran ezeknek az egyéni operációsrendszer-lemezképeknek az új eszközökre való alkalmazásával is időt kell töltenie, hogy felkészítse az eszközöket a használatra, mielőtt a végfelhasználóknak adná azokat. A Microsoft Intune és az AutoPilot révén új eszközöket adhat hozzá a végfelhasználók számára anélkül, hogy egyéni operációsrendszer-lemezképek létrehozására, kezelésére és az eszközökre való alkalmazására lenne szükség. Az AutoPilot-eszközök Intune-nal való felügyelete során a regisztráció után szabályzatokat, profilokat, alkalmazásokat és sok mást is kezelni tud. A megoldás előnyeinek, használati eseteinek és előfeltételeinek áttekintéséről lásd [a Windows AutoPilot áttekintését](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -100,6 +100,9 @@ Az Autopilot-üzembehelyezési profilokkal Autopilot-eszközeit konfigurálhatja
 1. Az [Azure Portalbeli Intune-ban](https://aka.ms/intuneportal) válassza az **Eszközök regisztrálása** > **Windows-regisztráció** > **Telepítési profilok** elemet, majd válasszon egy profilt.
 2. A megadott profil paneljén válassza a **Hozzárendelések** elemet. 
 3. Válassza a **Csoportok kijelölése** lehetőséget, majd a **Csoportok kijelölése** panelen jelölje ki a csoport(ok)at, amelyekhez a profilt hozzá kívánja rendelni, végül válassza a **Kijelölés** lehetőséget.
+
+> [!NOTE]
+> Az Intune időközönként ellenőrzi, hogy a hozzárendelt csoportokat az új eszközöket, és majd kezdje meg a profilok hozzárendelése az eszközökhöz. Ez a folyamat befejezése több percet is igénybe vehet. Eszköz üzembe helyezése előtt győződjön meg arról, hogy ez a folyamat befejeződött.  Alatt ellenőrizheti **eszközregisztráció** > ** Windows-regisztráció ** > **eszközök** ahol megjelenik a profil állapota "Hozzárendelése" helyett "Nincs", és végül a "Hozzárendelt."
 
 ## <a name="edit-an-autopilot-deployment-profile"></a>AutoPilot üzembehelyezési profil szerkesztése
 Az AutoPilot üzembehelyezési profil létrehozása után módosíthatja az üzembehelyezési profil egyes részeit.   
