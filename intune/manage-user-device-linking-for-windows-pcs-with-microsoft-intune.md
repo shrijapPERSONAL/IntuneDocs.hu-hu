@@ -16,12 +16,12 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 81f84c2e645a9a6a20ff901239117b562a26b0aa
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9d6c894e30b050ec6e824e1e77d0c476d4dc15bc
+ms.sourcegitcommit: 2ff19c09a43c63556d082966727674120b516d10
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186647"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54149627"
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>Felhasználók és eszközök összekapcsolásának felügyelete Windows rendszerű számítógépekhez
 
@@ -43,7 +43,7 @@ Felhasználók kapcsolása számítógépekhez:
 
    - Ha azt szeretné, hogy a számítógép továbbra is az aktuális felhasználóhoz legyen kapcsolva (ha van ilyen), válassza a **Mégse** lehetőséget.
 
-   - Az aktuális felhasználóval való kapcsolat eltávolításához (ha van ilyen), válassza a Hivatkozás eltávolítása ** <strong>&gt;OK</strong> lehetőséget.
+   - Távolítsa el az aktuális felhasználóhoz való kapcsolatot, ha van ilyen, válassza a <strong>hivatkozás eltávolítása **&gt;** OK</strong>.
 
    - Ha a számítógépet egy új felhasználóhoz szeretné kapcsolni, válasszon ki egy felhasználót a **Minden felhasználó** listában. Erősítse meg, hogy a felhasználói adatok helyesek, majd kattintson az **OK** gombra.
 
