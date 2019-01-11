@@ -130,6 +130,7 @@
 ### [Mi történik az eszköz alaphelyzetbe állításakor?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [A használatra vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása](turn-off-microsoft-usage-data-collection-windows.md)
 ### [Az eszköz manuális szinkronizálása](sync-your-device-manually-windows.md)
+### [Súgó és támogatás](help-support-windows-cpapp.md)
 
 ### [Gyakori hibák elhárítása Windows esetén](troubleshoot-your-device-windows.md)
 #### [Hozzáférésipont-korlátozások feloldása](resolve-access-point-restrictions.md)
