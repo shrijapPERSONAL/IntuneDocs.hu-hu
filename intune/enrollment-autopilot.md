@@ -16,12 +16,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 636767a783f3c2f2454423f0f6bbda9da781c8e2
-ms.sourcegitcommit: 2ff19c09a43c63556d082966727674120b516d10
+ms.openlocfilehash: 17e60e489b024b5f70c0c3c9a1fe564ed227172e
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54149730"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210856"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows-eszközök regisztrálása az Intune-ban a Windows Autopilot használatával  
 A Windows Autopilot egyszerűbbé teszi az eszközök regisztrálását az Intune-ban. A testre szabott operációsrendszer-lemezképek létrehozása és karbantartása sok időt vesz igénybe. Gyakran ezeknek az egyéni operációsrendszer-lemezképeknek az új eszközökre való alkalmazásával is időt kell töltenie, hogy felkészítse az eszközöket a használatra, mielőtt a végfelhasználóknak adná azokat. A Microsoft Intune és az AutoPilot révén új eszközöket adhat hozzá a végfelhasználók számára anélkül, hogy egyéni operációsrendszer-lemezképek létrehozására, kezelésére és az eszközökre való alkalmazására lenne szükség. Az AutoPilot-eszközök Intune-nal való felügyelete során a regisztráció után szabályzatokat, profilokat, alkalmazásokat és sok mást is kezelni tud. A megoldás előnyeinek, használati eseteinek és előfeltételeinek áttekintéséről lásd [a Windows AutoPilot áttekintését](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -79,20 +79,20 @@ Az Autopilot-üzembehelyezési profilokkal Autopilot-eszközeit konfigurálhatja
 3. Ha azt szeretné, hogy a hozzárendelt csoportokban lévő minden eszköz automatikusan átálljon az AutoPilotra, állítsa a **Minden megcélzott eszköz AutoPilot-eszközzé alakítása** beállítást **Igen** értékre. A hozzárendelt csoportokban lévő nem AutoPilot-eszközök az AutoPilot üzembehelyezési szolgáltatással regisztrálnak. A regisztráció feldolgozása 48 órát is igénybe vehet. Az eszköz regisztrációjának törlése és alaphelyzetbe állítása után az Autopilot regisztrálja az eszközt. Miután ilyen módon regisztrál egy eszközt, a beállítás letiltása vagy a profil-hozzárendelés eltávolítása nem távolítja el az eszközt az Autopilot üzembehelyezési szolgáltatásból. Ehhez [közvetlenül kell törölnie az eszközt](enrollment-autopilot.md#delete-autopilot-devices).
 4. A **Telepítési mód** beállításnál két lehetőség közül választhat:
     - **Felhasználó-központú**: Az ilyen profillal rendelkező eszközök az őket regisztráló felhasználóhoz vannak társítva. Az eszköz regisztrálásához felhasználói hitelesítő adatokra van szükség.
-    - **Öntelepítő (előzetes verzió)**: (ehhez a [Windows 10 Insider előzetes buildje](https://docs.microsoft.com/windows-insider/at-work-pro/) szükséges) Az ilyen profillal rendelkező eszközök nincsenek az őket regisztráló felhasználóhoz társítva. Az eszköz telepítéséhez nincs szükség felhasználói hitelesítő adatokra.
+    - **Helyi üzembe helyezése (előzetes verzió)**: (a Windows 10-es, 1809 vagy újabb verzió szükséges) a profilt használó eszközök nem kapcsolódnak a felhasználó regisztrálja az eszközt. Az eszköz telepítéséhez nincs szükség felhasználói hitelesítő adatokra.
 5. A **Csatlakozás az Azure AD-hez mint** mezőben válassza az **Azure AD-hez csatlakoztatott** lehetőséget.
 6. Válassza a **Kezdőélmény (OOBE)** lehetőséget, konfigurálja a következő beállításokat, majd válassza a **Mentés** lehetőséget:
     - **Nyelv (régió)**\*: Válassza ki az eszközhöz használt nyelv. Ez a lehetőség csak akkor érhető el, ha a **Telepítési mód** beállításnál az **Öntelepítő** lehetőséget választotta.
     - **Billentyűzet automatikus konfigurálása**\*: Ha egy **nyelv (régió)** van kiválasztva, válassza a **Igen** kihagyja a billentyűzet-kiválasztási lapot. Ez a lehetőség csak akkor érhető el, ha a **Telepítési mód** beállításnál az **Öntelepítő** lehetőséget választotta.
     - **Végfelhasználói licencszerződés (EULA)**: (Windows 10 1709-es vagy újabb verzió) Válassza ki, hogy szeretné-e a végfelhasználói licencszerződés megjelenjen a felhasználók számára.
     - **Adatvédelmi beállítások**: Válassza ki, hogy szeretné-e az adatvédelmi beállítások megjelenjenek a felhasználók számára.
-    - **Fiók beállításainak módosítása (csak Windows Insider) elrejtése**: Válasszon **elrejtése** fiók beállításainak módosítása nem fognak megjelenni a vállalati bejelentkezési és a tartomány hiba lapokon elkerülése érdekében. Ez a beállítás megköveteli, hogy [az Azure Active Directoryban konfigurálva legyen a Vállalati védjegyezés](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
+    - **Fiókbeállítások módosítása elrejtése (Windows 10-es, 1809 vagy újabb verzió szükséges)**: Válasszon **elrejtése** fiók beállításainak módosítása nem fognak megjelenni a vállalati bejelentkezési és a tartomány hiba lapokon elkerülése érdekében. Ez a beállítás megköveteli, hogy [az Azure Active Directoryban konfigurálva legyen a Vállalati védjegyezés](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
     - **Felhasználói fiók típusa**: Válassza ki a felhasználói fiók típusa (**rendszergazda** vagy **Standard** felhasználó).
-    - **Számítógép neve sablon (csak Windows Insider) alkalmazása**: Válasszon **Igen** hozhat létre egy sablont szeretné használni a regisztráció során egy eszköz elnevezésekor. A nevek legfeljebb 15 karakterből állhatnak, és betűket, számokat és kötőjelet tartalmazhatnak. A nevek nem állhatnak csak számokból. Hardverspecifikus sorozatszám hozzáadásához használja a [%SERIAL% makrót](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp). Egy másik lehetőség a [%RAND:x% makró](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) használata, amellyel véletlenszerű számsort adhat hozzá. Az x a hozzáadni kívánt számjegyek számát jelenti. 
+    - **(A Windows 10-es, 1809 vagy újabb verzió szükséges) a számítógép neve sablon alkalmazása**: Válasszon **Igen** hozhat létre egy sablont szeretné használni a regisztráció során egy eszköz elnevezésekor. A nevek legfeljebb 15 karakterből állhatnak, és betűket, számokat és kötőjelet tartalmazhatnak. A nevek nem állhatnak csak számokból. Hardverspecifikus sorozatszám hozzáadásához használja a [%SERIAL% makrót](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp). Egy másik lehetőség a [%RAND:x% makró](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) használata, amellyel véletlenszerű számsort adhat hozzá. Az x a hozzáadni kívánt számjegyek számát jelenti. 
 
 6. Válassza a **Létrehozás** lehetőséget a profil létrehozásához. Az AutoPilot üzembehelyezési profil most már hozzárendelhető az eszközökhöz.
 
-*A **Nyelv (Régió)** és a **Billentyűzet automatikus konfigurálása** is csak akkor érhető el, ha a **Telepítési mód** beállításnál az **Öntelepítő (előzetes verzió)** lehetőséget választja (ehhez a [Windows 10 Insider Preview buildje](https://docs.microsoft.com/windows-insider/at-work-pro/) szükséges).
+* Mindkettő **nyelv (régió)** és **billentyűzet automatikus konfigurálása** csak akkor használhatók, ha a kiválasztott **helyi üzembe helyezése (előzetes verzió)** a **üzembe helyezési mód**  (Windows 10-es, 1809 vagy újabb verzió szükséges).
 
 
 ## <a name="assign-an-autopilot-deployment-profile-to-a-device-group"></a>AutoPilot üzembehelyezési profil hozzárendelése eszközcsoporthoz
@@ -128,7 +128,7 @@ A nem társított eszközökre vonatkozó riasztások megtekintéséhez az [Azur
 
 Felhasználót rendelhet hozzá egy adott Autopilot-eszközhöz. Ez a hozzárendelés előre kitölti a [vállalati védjeggyel ellátott](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) bejelentkezési oldal felhasználói űrlapját az Azure Active Directoryból származó adatokkal a Windows beállítása során. Egyéni üdvözlési megnevezés beállítását is lehetővé teszi. A windowsos bejelentkezési adatokat nem tölti ki előre és nem is módosítja. Ilyen módon csak licenccel rendelkező Intune-felhasználók rendelhetők hozzá.
 
-Előfeltételek: Az Azure Active Directory vállalati portál lett konfigurálva, és a legutóbbi [Windows 10 Insider Preview-Build](https://docs.microsoft.com/windows-insider/at-work-pro/).
+Előfeltételek: Az Azure Active Directory vállalati portál lett konfigurálva, és a Windows 10-es, 1809 vagy újabb verziója.
 
 1. Az [Azure Portalbeli Intune-ban](https://aka.ms/intuneportal) válassza az **Eszközregisztráció** > **Windows-regisztráció** > **Eszközök** > eszköz kijelölése > **Felhasználó hozzárendelése** lehetőséget.
 
