@@ -1,12 +1,12 @@
 ---
-title: Megosztott eszközök Microsoft Intune-beli konfigurációs beállításai iOS-re
+title: Az iOS-beli Microsoft Intune - eszközök zárolási képernyő testreszabása |} A Microsoft Docs
 titlesuffix: ''
-description: Ismertető az iOS-eszköz zárolási képernyőjén információ megjelenítéséhez használható Microsoft Intune-beállításokról.
+description: A használatával a megosztott eszköz konfigurációs beállításai iOS-hez készült iOS-eszköz zárolási képernyőjén információ megjelenítéséhez használható Microsoft Intune azon beállításainak ismertetése.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/5/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,34 +14,41 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 638b4b3ebc83917faae0d34ec407b8ad47b4a4fb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9f4d75d795421c761398f349c324b498fd21ca01
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183383"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203076"
 ---
-# <a name="shared-device-configuration-settings-to-display-messages-on-the-ios-device-lock-screen"></a>Közös használatú eszköz konfigurációs beállításai üzenetek megjelenítéséhez az iOS-eszköz zárolási képernyőjén
+# <a name="add-custom-messages-to-lock-screen-and-login-window-on-ios-devices-using-microsoft-intune"></a>Adja hozzá az egyéni üzenet a zárolási képernyő és a bejelentkezési ablakban az iOS-eszközökön a Microsoft Intune-nal
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Ez a cikk ismerteti az iOS-eszköz zárolási képernyőjén információ megjelenítéséhez használható Microsoft Intune-beállításokat.
+Ez a cikk bemutatja a Microsoft Intune-beállítások segítségével adatainak megjelenítése az IOS-es eszköz zárolási képernyő és a bejelentkezési ablakban. 
 
-A közös használatú eszköz konfigurációs beállításai lehetővé teszik választható szöveg megjelenítését a bejelentkezési ablakban és a zárolási képernyőn. Megadhat például „Elvesztés esetén küldje vissza” üzenetet és eszközcímkeadatokat. 
+Ezek a beállítások használatával egy egyéni üzenetet vagy szöveg megjelenítése a bejelentkezési ablakban és a zárolási képernyőn. Például megadhat egy "Ha megtalálja, térjen vissza..." üzenetet és eszközcímkeadatokat.
 
->[!IMPORTANT]
-> Ez a funkció az iOS 9.3-as vagy újabb verzióját futtató felügyelt eszközökön támogatott.
+Ezek a beállítások az iOS 9.3-at vagy újabb verziót futtató felügyelt eszközökön vannak támogatva.
 
-## <a name="create-shared-device-settings"></a>Közös használatú eszköz beállításainak létrehozása
+## <a name="create-the-profile"></a>A profil létrehozása
 
-1. Az [Intune az Azure Portalon](https://portal.azure.com) felületről lépjen az eszközkonfigurációs terület [**Eszközfunkciók** részére](device-features-configure.md). 
-1. Az **Eszközfunkciók** panelen válassza a **Megosztott eszköz konfigurációja (csak felügyelt eszközökön)** lehetőséget.
-2. A **Megosztott eszköz konfigurációja (csak felügyelt eszközökön)** panelen konfigurálja a következőket:
-    - **Eszközcímke-információ** – Adjon meg információkat az eszköz eszközcímkéjéről. Például: **A Contoso vállalat tulajdona**. A megadott információ minden eszközön megjelenik, amelyhez ezt a profilt hozzárendeli.
-    - **Lábjegyzet a zárolási képernyőn** – Adjon meg egy szöveget, amely elősegíti, hogy az elvesztett vagy ellopott eszközt visszahozzák. Például: **Ha megtalálta, kérjük, hívja ezt a számot: <telefonszám>**.
-3. Ha végzett, válassza az **OK** lehetőséget annyiszor, amíg vissza nem tér a **Profil létrehozása** panelhez, majd válassza a **Létrehozás** elemet. 
+1. Az a [az Azure Portal](https://portal.azure.com), jelölje be **minden szolgáltatás** > szűréséhez **Intune** > Válassza ki **Intune**.
+2. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
+3. Adjon meg egy **nevet** és egy **leírást** a profil számára.
+4. A **Platform**válassza **iOS**. A **profiltípus**válassza **eszközfunkciók**.
+5. A **beállítások**válassza **(csak felügyelt) üzenet a zárolási képernyőn**. Adja meg a következő beállításokat:
 
+    - **Eszközcímke-információ**: Adja meg az eszköz az eszközcímke adatait. Például írja be a következőt: `123xyz`.
+
+        A beírt szöveg jelenik meg a bejelentkezési ablakban és a zárolási képernyőn az eszközön.
+
+    - **Lábjegyzet a zárolási képernyőn**: Ha az eszköz elveszett vagy ellopták, adjon meg egy, melyek segíthetnek az eszközt. Megadhatja, hogy a mező kívánt szöveget. Például: `If found, call Contoso at ...`.
+
+    Eszközök tokenjeit is használható eszközre vonatkozó információk hozzáadása a mezőkhöz. Írja be például a sorozatszám megjeleníthető `Serial Number: {{serialnumber}}`. A zárolási képernyőn a szöveg látható hasonló `Serial Number 123456789ABC`. Változók megadásakor ügyeljen arra, hogy kapcsos zárójeleket `{{ }}`. [Alkalmazás-konfigurációs jogkivonatokról](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) használható változók listáját tartalmazza. Is `deviceName` vagy bármely más eszközspecifikus érték.
+
+6. Amikor végzett, válassza ki a **OK** > **OK** > **létrehozás**. A profil látható a listában.
 
 ## <a name="next-steps"></a>További lépések
 
-Most hozzárendelheti az eszközprofilt a kiválasztott csoportokhoz. A részletekért lásd: [Eszközprofilok hozzárendelése](device-profile-assign.md).
+A profil létrejött, de egyelőre nem csinál semmit. Ezután [rendelje hozzá a profilt](device-profile-assign.md) és [állapotát nyomon](device-profile-monitor.md).

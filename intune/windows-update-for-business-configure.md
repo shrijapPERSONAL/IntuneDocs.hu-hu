@@ -5,7 +5,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 11/12/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: c39faf6bb6a22cb861eb655edd6358b345b87c7e
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: c0ab63ab8832db69ecf27361dc4fe4c9a1196db3
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112765"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203484"
 ---
 # <a name="manage-software-updates-in-intune"></a>Szoftverfrissítések kezelése az Intune-ban
 
@@ -28,7 +28,7 @@ A Windows 10 rendszerű eszközök frissítésére a Windows szoftverszolgáltat
 
 A Windows Update Vállalatoknak használatával leegyszerűsítheti a frissítéskezelést. Nem kell jóváhagynia az eszközcsoportok egyes frissítéseit. A környezetek kockázatkezelését egy frissítéskibocsátási stratégia konfigurálásával intézheti. A Windows Update gondoskodik arról, hogy a frissítések a megfelelő időben települjenek. A Microsoft Intune lehetővé teszi a frissítési beállítások konfigurálását az eszközökön és a frissítések telepítésének késleltetését. Az Intune nem tárolja a frissítéseket, csak a frissítési szabályzat-hozzárendelést. Az eszközök közvetlenül a Microsoft Update-hez fordulnak a frissítésekért. A **Windows 10 frissítési körök** az Intune használatával konfigurálhatók és kezelhetők. A frissítési körök olyan beállításokat tartalmaznak, amelyek a Windows 10 frissítések telepítésének ütemezését és mikéntjét konfigurálják. Ha például a következő beállításokat lehet megadni:
 
-- **Windows 10 karbantartási csatorna**: Válassza ki azt a karbantartási csatornát, amelytől frissítéseket szeretne kérni az eszközcsoportoknak. Az alábbi csatornák érhetők el: 
+- **Windows 10 karbantartási csatorna**: Válassza ki a karbantartási csatorna, ahonnan csoportok kapjanak frissítéseket. Az alábbi csatornák érhetők el: 
   - Féléves csatorna
   - Féléves csatorna (célzott)
   - Windows Insider &#8208; gyors
@@ -36,12 +36,12 @@ A Windows Update Vállalatoknak használatával leegyszerűsítheti a frissíté
   - A Windows Insider kiadása 
       
   További információ az elérhető karbantartási csatornákról: [A Windows mint szoftverszolgáltatás – áttekintés](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels).
-- **Halasztó beállítások**: A frissítéseket halasztó beállítások megadásával késleltethető a frissítések telepítése az eszközcsoportokon. Ezzel a beállítással a lépésenkénti frissítési terv alapján a folyamat végig nyomon követhető.
-- **Felfüggesztés**: Ha probléma van a frissítés kibocsátásával, elhalaszthatja a frissítés telepítését. 
+- **Halasztási beállítások**: Frissítések telepítése az eszközcsoportokon frissítés halasztó beállítások konfigurálása. Ezzel a beállítással a lépésenkénti frissítési terv alapján a folyamat végig nyomon követhető.
+- **Felfüggesztés**: Ha probléma van a frissítési terv, elhalaszthatja a frissítés telepítését. 
 - **Karbantartási időszak**: Megadható egy időszak, amelyben a frissítések telepíthetők.
-- **Frissítés típusa**: Megadható, hogy milyen típusú frissítések települjenek. Ezek lehetnek például a minőségi frissítések, funkciófrissítések vagy illesztőprogramok.
-- **Műveletek a telepítéskor**: A frissítések telepítési módját konfigurálja. Például meghatározható, hogy automatikusan újrainduljon-e az eszköz a frissítés után.
-- **Megosztott letöltés**: Konfigurálható a letöltések megosztása. Ezzel a beállítással, miután egy eszköz végzett egy frissítés letöltésével, a többi eszköz már erről az eszközről tölti le a frissítést. A letöltés folyamata ezáltal felgyorsul.
+- **Frissítéstípus**: Válassza ki a típusú frissítések települjenek. Ezek lehetnek például a minőségi frissítések, funkciófrissítések vagy illesztőprogramok.
+- **Telepítési viselkedésmód**: Úgy konfigurálja, hogyan telepíti a frissítést. Például meghatározható, hogy automatikusan újrainduljon-e az eszköz a frissítés után.
+- **Megosztott letöltés**: Úgy dönt, hogy konfigurálható a letöltések megosztása. Ezzel a beállítással, miután egy eszköz végzett egy frissítés letöltésével, a többi eszköz már erről az eszközről tölti le a frissítést. A letöltés folyamata ezáltal felgyorsul.
 
 A kialakított frissítési körök hozzárendelhetők az eszközcsoportokhoz. Frissítési körök használatával kialakítható az üzleti igényeknek leginkább megfelelő frissítési stratégia. További információ: [Frissítések kezelése a Vállalati Windows Update használatával](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb).
 
@@ -76,29 +76,37 @@ A kialakított frissítési körök hozzárendelhetők az eszközcsoportokhoz. F
 1. Az [Azure Portalon](https://portal.azure.com) kattintson az **Összes szolgáltatás** elemre, szűrjön az **Intune-ra**, és válassza a **Microsoft Intune** elemet.
 2. Válassza a **Szoftverfrissítések** > **Windows 10-es frissítési körök** > **Létrehozás** lehetőséget.
 3. Adjon meg egy nevet, egy leírást (nem kötelező), majd válassza a **Konfigurálás** lehetőséget.
-4. A **Beállítások** területen adja meg az alábbi adatokat:
+4. A **Beállítások** területen adja meg az alábbi adatokat:  
 
-   - **Karbantartási csatorna**: Adja meg azt a csatornát, amelytől az eszköz a Windows-frissítéseket kapja.
-   - **Microsoft-termékfrissítések**: Válassza az alkalmazás-frissítések keresését a Microsoft Update webhelyen.
-   - **Windows-illesztőprogramok**: Válassza a Windows Update-illesztőprogramok mellőzését a frissítések során.
-   - **Az automatikus frissítés viselkedése**: Adja meg, hogy hogyan települjenek az automatikus frissítések, illetve mikor indítsák újra az eszközt. További információ:  [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate).
-     - **Az automatikus viselkedés gyakorisága**: Ez a beállítás akkor jelenik meg, ha az **Automatikus telepítés és újraindítás az ütemezett időpontban** lehetőséget választja a frissítési viselkedéshez. Ezzel a beállítással ütemezheti a frissítésék telepítését, amelyet hét, nap és időpont szerint adhat meg.
-
-   - **Újraindítási ellenőrzések**: Alapértelmezés szerint be van kapcsolva. Egy eszköz újraindításakor a rendszer bizonyos ellenőrzéseket végez, például ellenőrzi az aktív felhasználókat, az akkumulátor szintjét, a futó játékokat és más szempontokat. Ha át szeretné ugrani ezeket az ellenőrzéseket az eszközök újraindításakor, válassza a **Kihagyás** lehetőséget.
-
-   - **Minőségi frissítések késleltetésének időtartama (nap)** – Adja meg, hány nappal kívánja késleltetni a minőségi frissítéseket. Ezeknek a minőségi frissítéseknek a fogadása a kiadásuktól számítva legfeljebb 30 nappal késleltethető.
+   **Beállítások frissítése**  
+   - **Karbantartási csatorna**: Állítsa be, amelyen az eszköz megkaphatná a Windows-frissítéseket.
+   - **Microsoft-termékfrissítések**: Válassza ki az alkalmazás-frissítéseket keresni a Microsoft Update webhelyről.
+   - **Windows-illesztőprogramok**: Ki szeretne zárni a Windows Update-illesztőprogramokat frissítések során.
+   - **Minőségi frissítések elhalasztása (nap)**: Adja meg a késleltetni a minőségi frissítések funkciófrissítéseket napok számát. Ezeknek a minőségi frissítéseknek a fogadása a kiadásuktól számítva legfeljebb 30 nappal késleltethető.
 
      A minőségi frissítések általában meglévő Windows-funkciók javításai és továbbfejlesztései, és rendszerint minden hónap második keddjén jelennek meg. A Windows Update Vállalatoknak szolgáltatáson keresztül érkező minőségi frissítések csak ezeket a frissítéseket tartalmazzák (a „B” kiadást), de a Microsoft bármikor adhat ki más frissítéseket is. Megadhatja, hogy késleltetni szeretné-e a minőségi frissítéseket a Windows Update-en való megjelenésük után, és ha igen, mennyi időre. További információ: [Frissítések telepítése a Vállalati Windows Update használatával](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb).
 
-   - **Funkciófrissítések késleltetésének időtartama (nap)** – Adja meg, hány nappal kívánja késleltetni a funkciófrissítéseket. Ezeknek a funkciófrissítéseknek a fogadása a kiadásuktól számítva legfeljebb 180 nappal késleltethető.
+   - **Szolgáltatásfrissítések elhalasztása (nap)**: Adja meg a késleltetni a Funkciófrissítések funkciófrissítéseket napok számát. Ezeknek a funkciófrissítéseknek a fogadása a kiadásuktól számítva legfeljebb 180 nappal késleltethető.
 
      A funkciófrissítések általában új Windows-funkciókat tartalmaznak. Miután konfigurálta a **Karbantartási csatorna** beállítást, megadhatja, hogy szeretné-e késleltetni a funkciófrissítéseket a Windows Update-en való megjelenésük után, és ha igen, mennyi időre.
 
-     Például: **Ha a karbantartási csatorna a Féléves csatorna (célzott) értékre van beállítva, a késleltetési idő pedig 30 nap**: Tegyük fel, hogy az X funkciófrissítés januárban jelenik meg először a Windows Update szolgáltatásban a (célzott) féléves csatornán. Az eszköz csak februárban, 30 nappal később fogadja a frissítést.
+     Példa: **Ha a karbantartási csatorna a féléves csatorna (célzott) értékre van beállítva, és a késleltetési idő pedig 30 nap**: Tegyük fel, hogy X funkciófrissítés először a Windows Update, a féléves csatorna (célzott) féléves. Az eszköz csak februárban, 30 nappal később fogadja a frissítést.
 
-     **Ha a karbantartási csatorna a Féléves csatorna értékre van beállítva, a késleltetési idő pedig 30 nap**: Tegyük fel, hogy az X funkciófrissítés januárban jelenik meg először a Windows Update szolgáltatásban a (célzott) féléves csatornán. Négy hónappal később, áprilisban az X funkciófrissítés megjelenik a féléves csatornán. Az eszköz 30 nappal annak a féléves csatornán való megjelenése után fogadja a funkciófrissítést, és májusban frissül.
+     **Ha a karbantartási csatorna a féléves csatorna értékre van beállítva, és a késleltetési idő pedig 30 nap**: Tegyük fel, az X funkciófrissítés először a Windows Update, a féléves csatorna (célzott) féléves. Négy hónappal később, áprilisban az X funkciófrissítés megjelenik a féléves csatornán. Az eszköz 30 nappal annak a féléves csatornán való megjelenése után fogadja a funkciófrissítést, és májusban frissül.  
 
-   - **Kézbesítésoptimalizálásos letöltési mód** – Válassza ki azt a módszert, amellyel az eszközök letöltik a Windows-frissítéseket. További információ: [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
+   **A felhasználói élmény beállításainak**
+   
+   - **Automatikus frissítés viselkedése**: Válassza ki, hogyan automatikus frissítések települnek, ha az újraindítás vagy újraindítás. További információ:  [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate).
+
+     A beállításnak *visszaállítás alapértelmezettre* helyreállítja az eredeti automatikus frissítési beállítások futtató Windows 10-es gépen a *frissítése 2018. október* vagy újabb.  
+
+     - **Automatikus frissítés gyakorisága**: Ha **automatikus telepítés és újraindítás ütemezett időpontban** a frissítési viselkedéshez, majd a beállítás akkor jelenik meg. Ezzel a beállítással ütemezheti a frissítésék telepítését, amelyet hét, nap és időpont szerint adhat meg.
+
+   - **Újraindítási ellenőrzések**: Alapértelmezés szerint engedélyezett. Egy eszköz újraindításakor a rendszer bizonyos ellenőrzéseket végez, például ellenőrzi az aktív felhasználókat, az akkumulátor szintjét, a futó játékokat és más szempontokat. Ha át szeretné ugrani ezeket az ellenőrzéseket az eszközök újraindításakor, válassza a **Kihagyás** lehetőséget.
+
+   - **A felhasználó felfüggesztése Windows-frissítések**: Alapértelmezés szerint engedélyezett. Ezzel a beállítással blokkolhatja vagy engedélyezheti a felhasználók számára történő telepítésének felfüggesztése használja a *beállítások* gépek. 
+      
+   - **Kézbesítésoptimalizálásos letöltési mód**: Válassza ki a módszert, amelyhez az eszközök letöltik a Windows-frissítéseket. További információ: [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
 
 5. Ha elkészült, válassza az **OK** lehetőséget. A **Frissítési kör létrehozása** területen válassza a **Létrehozás** lehetőséget.
 
@@ -138,9 +146,9 @@ A kereskedelmi azonosító konfigurálásához szükséges (kis- és nagybetűke
 Az **OMA-URI beállítások hozzáadása vagy módosítása** alatt például a következő beállítások használhatók:
 
 - **Beállítás neve**: Windows Analytics kereskedelmi azonosító
-- **Beállítás leírása**: Kereskedelmi azonosító konfigurálása Windows Analytics megoldásokhoz
+- **Beállítás leírása**: Kereskedelmi azonosító a Windows Analytics-megoldások konfigurálása
 - **OMA-URI** (megkülönbözteti a kis- és nagybetűket): ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
-- **Adattípus:** Sztring
+- **Adattípus**: Sztring
 - **Érték**: <*Használja az OMS munkaterület Windows-telemetria lapján látható GUID értéket*>
 
 ![OMA-URI beállítás – Sor szerkesztése](./media/commID-edit.png)
@@ -174,4 +182,4 @@ A Windows Holographic for Business az alábbi beállításokat támogatja:
 
 - **Az automatikus frissítés viselkedése**
 - **Microsoft-termékek frissítései**
-- **Karbantartás csatorna**: a **féléves csatorna** és **féléves csatorna (célzott)** beállításokat támogatja
+- **Karbantartási csatorna**: Támogatja a **félévi csatorna** és **féléves csatorna (célzott)** beállításai

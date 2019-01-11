@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 01/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c0603b3cfd2b8fbe1d26e782118fb07526849cfa
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: 5dfce7475e0ee7e39ea6d99c6d12f4ef513c2713
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53816840"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203246"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Az alkalmazásvédelmi szabályzatok figyelése
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -44,20 +44,16 @@ Három különböző helyen figyelheti a megfelelőségi állapotot:
 1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** ablaktáblán válassza az **Ügyfélalkalmazások** lehetőséget.
-4. Az **Ügyfélalkalmazások** területen válassza a **Figyelés** > **Alkalmazásvédelem állapota** lehetőséget az összefoglaló nézet megjelenítéséhez:
+4. Az a **ügyfélalkalmazások** területen válassza a **alkalmazásvédelem állapota** a a **figyelő** szakaszban, az összefoglaló nézet megjelenítéséhez:
 
 ![Az Intune mobilalkalmazás-kezelés panel Összefoglalás csempéje](./media/app-protection-user-status-summary.png)
 
--   **Felhasználók**: A teljes száma a vállalatnál lévő felhasználóknál, akik a munkahelyi környezetben házirenddel társított alkalmazást használnak.
+-   **Hozzárendelt felhasználók**: Egy alkalmazást, amely a munkahelyi környezetben a szabályzathoz társított védett és licencelt, valamint a hozzárendelt felhasználók nem védett és licencelt használó a vállalatnál hozzárendelt felhasználók teljes száma.
+-   **Megjelölt felhasználók**: A problémákat tapasztaló felhasználók száma. Értékelni a feltört eszközöket jelentett alatt **megjelölt felhasználók**.
+-   **Felhasználó állapota (iOS)** és **felhasználói állapot (Android)**: A felhasználók számát, akik már használtak egy alkalmazást, amelyekre érvényes a szabályzat hozzájuk rendelve a munkahelyi környezetben a kapcsolódó platform. Ezt az információt a házirend, valamint a felhasználók száma, akik használ egy alkalmazást, amelyre nem vonatkozik szabályzat nélküli munkahelyi környezetben kezeli a felhasználók számát jeleníti meg. Érdemes megfontolni ezen felhasználók bevonását a szabályzat hatálya alá.
 
--   **HÁZIREND ÁLTAL KEZELT**: A felhasználók számát, akik már használtak egy alkalmazást, amelyekre érvényes a szabályzat hozzájuk rendelve a munkahelyi környezetben.
-
--   **NINCS SZABÁLYZAT**: A felhasználók száma, akik egy alkalmazást, amelyre nem vonatkozik szabályzat nélküli munkahelyi környezetben használja. Érdemes megfontolni ezen felhasználók bevonását a szabályzat hatálya alá.
     > [!NOTE]
     > Platformonként több szabályzat esetén a felhasználó akkor minősül szabályzat által kezeltnek, ha legalább egy szabályzat hozzá van rendelve.
-
-- **Megjelölt felhasználók**: A problémákat tapasztaló felhasználók száma. A rendszer jelenleg a **Megjelölt felhasználók** részben kizárólag a jailbreakelt eszközt használó felhasználókat jelöli meg.
-
 
 ## <a name="detailed-view"></a>Részletes nézet
 Ha meg szeretné tekinteni az összefoglalás részleteit, válassza a **Felhasználói állapot** csempét (az eszköz operációsrendszer-platformjának megfelelően), majd a **Megjelölt felhasználók** csempét.
@@ -79,7 +75,7 @@ Itt megkeresheti az adott felhasználókat, és ellenőrizheti a megfelelési á
 
 A felhasználóhoz tartozó jelentések megtekintéséhez kövesse az alábbi lépéseket:
 
-1.  Egy felhasználó kijelöléséhez válassza az **Összefoglalás** csempét.
+1.  Válasszon ki egy felhasználót, válassza a **felhasználói állapot** összefoglaló csempét.
 
     ![Képernyőkép az összefoglalás csempére az Intune mobilalkalmazás-kezelés](./media/MAM-reporting-6.png)
 
@@ -94,18 +90,24 @@ A részletes nézetben látható a hibaüzenet, annak az alkalmazásnak a neve, 
 
 ## <a name="reporting-view"></a>Jelentéskészítés nézet
 
-Itt megtalálhatja a Részletes nézetben is szereplő jelentéseket, illetve további jelentéseket, melyek segítséget nyújtanak a mobilalkalmazás-kezelési szabályzat megfelelőségi állapotával kapcsolatban:
+A szereplő jelentéseket is megtalálhatja a **alkalmazásvédelmi állapot** panelen.
 
-![Képernyőkép a Beállítások panel két elérhető jelentéséről](./media/MAM-reporting-7.png)
+> [!NOTE]
+> Az Intune további eszköz területén, beleértve az alkalmazás regisztrációs azonosító, Android gyártója, modell, és biztonsági javítást, valamint IOS-es modell reporting biztosít. Az Intune-ban, ezek a mezők érhetők el kiválasztásával **ügyfélalkalmazás** > **alkalmazásvédelmi állapot** választva **alkalmazásvédelmi jelentés: iOS, Android**. Emellett ezek a paraméterek segítségével konfigurálja a **engedélyezése** lista az eszköz gyártója (Android), a **engedélyezése** lista az eszköz modellje (Android és iOS) és a minimális Android biztonsági javítási szintnek verzió beállítását. 
 
--   **Alkalmazásvédelem – felhasználói jelentés:** Ismerteti, ugyanazokat az információkat, annak a **felhasználói állapot** jelentés a részletes nézetben a fenti szakaszban.
+További jelentések érhetők el segíti a MAM-szabályzat megfelelőségi állapotát. Ezek a jelentések megtekintéséhez jelölje ki **ügyfélalkalmazás** > **alkalmazásvédelmi állapot** > **jelentések**. 
 
--   **Alkalmazásvédelmi alkalmazásjelentés:** Két különböző alkalmazásvédelmi állapotot melyeket a rendszergazdák a jelentés létrehozása előtt biztosít. Az állapot védett vagy nem védett lehet.
+A **jelentések** panel nyújt több olyan jelentést, a felhasználó és az alkalmazás többek között az alábbiak alapján:
+
+
+-   **Felhasználói jelentés**: Ez a jelentés említett ugyanazokat az információkat ismerteti a **felhasználói állapot** jelentés a részletes nézetben a fenti szakaszban.
+
+-   **Alkalmazásjelentés**: Ez a jelentés tartalmazza a két különböző alkalmazásvédelmi állapotot melyeket a rendszergazdák a jelentés létrehozása előtt. Az állapot védett vagy nem védett lehet.
 
     -   Felhasználó állapota felügyelt MAM-tevékenységekre (védett): Ez a jelentés minden egyes felügyelt MAM-alkalmazás, felhasználónkénti alapon tevékenységeit ismerteti.
 
         -   Megjelenik benne minden olyan alkalmazás az egyes felhasználókra vonatkozóan, melyekre MAM-szabályzatok lettek érvényesítve, illetve az egyes alkalmazások állapotának felbontása aszerint, hogy az adott alkalmazásra lettek-e érvényesítve MAM-szabályzatok, vagy vonatkozik rá egy MAM-szabályzat, de az nem lett érvényesítve az alkalmazásra.
-<br></br>
+<br><br>
     -   Felhasználó állapota nem felügyelt MAM-tevékenységekre (védett): Ez a jelentés a jelenleg nem felügyelt, felhasználónkénti alapon MAM-kompatibilis alkalmazások tevékenységeit ismerteti. Ez a következő okokból fordulhat elő:
 
         -   Ezeket az alkalmazásokat egy olyan felhasználó vagy alkalmazás használja, akire vagy amelyre jelenleg nem vonatkozik MAM-szabályzat.

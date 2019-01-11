@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 12/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 062adf12f743fdbbe42c1f29e91f2a16414ca457
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 721d3a26e25c14a2e4ccd20b179ae7d4611d3186
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032265"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203382"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Kezelheti, és használható különböző eszközfelügyeleti funkcióival a Windows holographic operációs rendszert és a HoloLens-eszközök Intune-nal
 
@@ -32,11 +32,11 @@ A Windows Holographic rendszerű eszközök Intune-nal való használatához hoz
 
 Az Azure Active Directory (AD) segítségével könnyedén kezelheti és vezérelheti a Windows Holographic for Business rendszerű eszközeit. Az Intune és az Azure AD használatával: 
 
-- **[Eszközök csatlakoztatása az Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)**: az Azure Active Directory (AD), adhat hozzá a munkahelyi Windows 10-es eszközök kiosztását, beleértve a Windows Holographic for Business rendszerű eszközök. Ez a funkció lehetővé teszi, hogy az Azure AD vezérelje az eszközt. Ez segít biztosítani, hogy a felhasználói olyan eszközökről érjék el a vállalati erőforrásokat, amelyek megfelelnek a vállalat biztonsági és megfelelőségi szabványainak.
+- **[Eszközök csatlakoztatása az Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)**: Az Azure Active Directory (AD), a munka a Windows 10-es eszközök kiosztását, beleértve a Windows Holographic for Business rendszerű eszközök is hozzáadhat. Ez a funkció lehetővé teszi, hogy az Azure AD vezérelje az eszközt. Ez segít biztosítani, hogy a felhasználói olyan eszközökről érjék el a vállalati erőforrásokat, amelyek megfelelnek a vállalat biztonsági és megfelelőségi szabványainak.
 
   [Az Eszközfelügyelet az Azure ad-ben](https://docs.microsoft.com/azure/active-directory/devices/overview) további részleteket.
 
-- **[Csoportos regisztráció Windows-eszközök esetében](windows-bulk-enroll.md)**: Egyszerre nagy számú új windowsos eszközt is csatlakoztathat az Azure Active Directoryhoz és az Intune-hoz. Ezt a szolgáltatást csoportos regisztrációnak hívják, és kiépítési csomagokat használ. Ezek a csomagok összekötik a Windows Holographic for Business rendszerű eszközöket az Azure AD-bérlővel, és regisztrálják őket az Intune-ban.
+- **[Windows-eszközök csoportos regisztrálása](windows-bulk-enroll.md)**: Nagyszámú új Windows-eszköz csatlakoztatása az Azure Active Directory (AD) és az Intune-nal. Ezt a szolgáltatást csoportos regisztrációnak hívják, és kiépítési csomagokat használ. Ezek a csomagok összekötik a Windows Holographic for Business rendszerű eszközöket az Azure AD-bérlővel, és regisztrálják őket az Intune-ban.
 
 ## <a name="company-portal"></a>Céges portál
 **[A Céges portál alkalmazás konfigurálása](company-portal-app.md)**
@@ -84,11 +84,11 @@ Az Intune rendelkezik néhány olyan beépített funkcióval, amelyek használat
 
 Windows Holographic for Business rendszert futtató eszközök használata esetén a következő műveletek végezhetők: 
 
-- **[Összes adat törlése:](devices-wipe.md#wipe)** Az **Összes adat törlése** művelet eltávolítja az eszközt az Intune-ból, és visszaállítja az eszköz gyári alapértelmezett beállításait. Ezt a műveletet akkor érdemes használni, mielőtt az eszközt egy új felhasználónak adják, vagy ha az eszköz elveszett, vagy ellopták.
+- **[Törlési](devices-wipe.md#wipe)**: A **törlési** művelet eltávolítja az eszközt az Intune-ban, és visszaállítja az eszközt vissza a gyári alapértelmezett beállításokra. Ezt a műveletet akkor érdemes használni, mielőtt az eszközt egy új felhasználónak adják, vagy ha az eszköz elveszett, vagy ellopták.
 
-- **[Kivonás:](devices-wipe.md#retire)** A **Kivonás** művelet eltávolítja az eszközt az Intune-ból. Az Intune által hozzárendelt felügyelt alkalmazások adait, beállításokat és e-mail-profilokat is eltávolítja. A felhasználó személyes adatai az eszközön maradnak.
+- **[Kivonás](devices-wipe.md#retire)**: A **kivonás** művelet megszünteti az eszköz Intune-ból. Az Intune által hozzárendelt felügyelt alkalmazások adait, beállításokat és e-mail-profilokat is eltávolítja. A felhasználó személyes adatai az eszközön maradnak.
 
-- **[Eszköz szinkronizálása a legfrissebb szabályzatok és műveletek hozzáadásához](device-sync.md)**: A **Szinkronizálás** művelettel kényszeríteni lehet az eszközt, hogy azonnal csatlakozzon az Intune-hoz. Bejelentkezéskor az eszköz azonnal fogadja az hozzárendelt összes függőben lévő műveletet vagy szabályzatot. Ez a funkció segíthet ellenőrizni a vonatkozó szabályzatokat és elhárítani a hibákat anélkül, hogy ki kellene várni a következő ütemezett bejelentkezést.
+- **[Szinkronizálás az eszközök beolvashatják a legfrissebb szabályzatokat és műveleteket](device-sync.md)**: A **szinkronizálási** művelet kényszeríti az eszköz azonnali bejelentkezését az Intune-ban. Bejelentkezéskor az eszköz azonnal fogadja az hozzárendelt összes függőben lévő műveletet vagy szabályzatot. Ez a funkció segíthet ellenőrizni a vonatkozó szabályzatokat és elhárítani a hibákat anélkül, hogy ki kellene várni a következő ütemezett bejelentkezést.
 
 **[A Microsoft Intune-eszközfelügyelet ismertetése](device-management.md)**  című cikkből további részleteket is megtudhat az Azure Portal használatával történő eszközkezelésről. 
 
@@ -123,6 +123,11 @@ A virtuális magánhálózatok (VPN) segítségével biztonságos távoli hozzá
 #### <a name="configure-wi-fiwi-fi-settings-configuremd"></a>[Wi-Fi konfigurálása](wi-fi-settings-configure.md)
 
 Az Intune-ban Wi-Fi-profilt is létrehozhat, amellyel vezeték nélküli hálózati beállításokat rendel a Windows Holographic for Business rendszerű eszközeihez. Wi-Fi-profil hozzárendelésekor a végfelhasználók a hálózat konfigurálása nélkül kapnak vállalati hálózati hozzáférést. Létrehozhat például egy Wi-Fi hálózatot külön a Windows Holographic for Business rendszerű eszközöknek.
+
+## <a name="shared-multi-user-devices"></a>Többfelhasználós megosztott eszközök
+[Megosztott eszközök](shared-user-device-settings-windows-holographic.md)
+
+A Microsoft HoloLens, például a Windows Holographic for Business rendszerű eszközök több felhasználó is rendelkezik. Intune-ban ezek megosztott eszközök, például az energiagazdálkodás, a helyi tároló használata olyan funkcióit szabályozhatja, és a fiók a felügyeleti beállításokat tartalmaz. A konfigurációs profilokat más operációs rendszerekkel rendelkező eszközökre is alkalmazhatók. Például az eszközök csoport lehet RS2 és eszközök RS3 ugyanabba a csoportba.
 
 ## <a name="software-updates"></a>Szoftverfrissítések
 **[Szoftverfrissítések kezelése](windows-update-for-business-configure.md)**

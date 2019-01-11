@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 1/17/2018
+ms.date: 1/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 305799fa21ae7c3464caf8f7019dcf9e8170d3ac
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 32281ae37b7b36dfbf49503275a8a1e6c35d8f6d
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181479"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210788"
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Eszközprofilokkal kapcsolatos gyakori problémák a Microsoft Intune-ban és azok megoldása
 
@@ -48,17 +48,17 @@ Szabályzat vagy alkalmazás hozzárendelésekor az Intune azonnal értesíti az
 
 Ha az eszköz az első értesítés után nem jelentkezik be, hogy beszerezze a szabályzatot, az Intune három további kísérletet tesz. Ha az eszköz kapcsolat nélküli állapotban van (például ki van kapcsolva vagy nem kapcsolódik hálózathoz), előfordulhat, hogy nem kapja meg az értesítéseket. Ebben az esetben az eszköz az Intune szolgáltatásba való következő ütemezett bejelentkezéskor szerzi be a szabályzatot a következő módon:
 
-- iOS és macOS: 6 óránként
-- Android: 8 óránként
+- iOS és MacOS rendszeren: 6 óránként
+- Android:: 8 óránként
 - Windows Phone: 8 óránként
-- Eszközként regisztrált Windows 8.1- és Windows 10-számítógépek: 8 óránként
+- Eszközként regisztrált Windows 8.1 és Windows 10-számítógépek: 8 óránként
 
 Ha az eszköz nemrég lett regisztrálva, a bejelentkezés gyakoribb lesz, a következőképpen:
 
-- iOS és macOS: 6 órán át 15 percenként, majd 6 óránként
-- Android: 15 percen át 3 percenként, majd 2 órán át 15 percenként, majd 8 óránként
-- Windows Phone: 15 percen át 5 percenként, majd 2 órán át 15 percenként, majd 8 óránként
-- Eszközként regisztrált Windows-számítógépek: 30 percen át 3 percenként, majd 8 óránként
+- iOS és MacOS rendszeren: 15 percenként az hat óra, majd 6 óránként
+- Android:: 15 percen át 3 percenként, majd két órán át 15 percenként, majd 8 óránként
+- Windows Phone: 15 percen át 5 percenként, majd két órán át 15 percenként, majd 8 óránként
+- Eszközként regisztrált Windows-számítógépek: A 30 percesnek, majd 8 óránként percen át 3 percenként
 
 A felhasználók a Céges portál alkalmazás megnyitásával bármikor jelentkezhetnek a szabályzat beszerzéséhez.
 
@@ -72,11 +72,11 @@ Az egyéb módosítások – például a kapcsolattartási adatok módosítása 
 ## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-gets-applied"></a>Ha ugyanazon felhasználóhoz vagy eszközhöz több szabályzat is hozzá van rendelve, honnan tudható, hogy mely beállítások lesznek alkalmazva?
 Ha több szabályzatot rendel hozzá ugyanazon felhasználóhoz vagy eszközhöz, akkor az egyes beállítások szintjén dől el, hogy mely beállítások jutnak érvényre:
 
--   A megfelelőségi házirend-beállítások mindig prioritást élveznek a konfigurációs házirend-beállításokkal szemben
+- A megfelelőségi házirend-beállítások mindig prioritást élveznek a konfigurációs házirend-beállításokkal szemben
 
--   Ha egy beállítás több megfelelőségi szabályzatban is szerepel, akkor a legszigorúbb megfelelőségi beállítás lesz érvényes.
+- Ha egy beállítás több megfelelőségi szabályzatban is szerepel, akkor a legszigorúbb megfelelőségi beállítás lesz érvényes.
 
--   Ha egy konfigurációs szabályzatbeállítás ütközik egy másik konfigurációs szabályzatbeállítással, az ütközés az Azure Portalon is megjelenik. Ebben a helyzetben az ütközést manuálisan kell feloldani.
+- Ha egy konfigurációs szabályzatbeállítás ütközik egy másik konfigurációs szabályzatbeállítással, az ütközés az Azure Portalon is megjelenik. Ebben a helyzetben az ütközést manuálisan kell feloldani.
 
 ## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-is-applied-to-the-app"></a>Mi történik, ha ütközés van két alkalmazásvédelmi szabályzat között? Melyik érvényes az alkalmazásra?
 Az ütközési értékek az alkalmazásvédelmi szabályzatok leginkább korlátozó beállításai, a számbeviteli mezők kivételével (ilyen például a PIN-kódmegadási próbálkozások száma az alaphelyzetbe állítás előtt). A számbeviteli mezők értékei megegyeznek a – javasolt beállításokkal a konzolban létrehozható – MAM-szabályzatok értékeivel.
@@ -88,45 +88,48 @@ Ha az alkalmazáshoz hozzárendel egy profilt, és az érvénybe lép, majd egy 
 ## <a name="what-happens-when-ios-custom-policies-conflict"></a>Mi történik, ha az egyéni iOS-házirendek ütköznek?
 Az Intune nem értékeli ki a konfigurációs Apple-fájlok vagy az Open Mobile Alliance egységes erőforrás-azonosítóra (OMA-URI) vonatkozó egyéni profilok tartalmát. Csak kézbesítési mechanizmusként funkcionál.
 
-Egyéni profil hozzárendelésekor ellenőrizze, hogy a konfigurált beállítások nem ütköznek-e megfelelőségi, konfigurációs vagy más egyéni szabályzatokkal. Egyéni profil és beállításai üközése esetén a beállítások véletlenszerűen érvényesülnek.
+Egyéni profil hozzárendelésekor ellenőrizze, hogy a konfigurált beállítások nem ütköznek-e megfelelőségi, konfigurációs vagy más egyéni szabályzatokkal. Ha egy egyéni profilt és annak beállításai ütköznek, majd a beállítások véletlenszerűen érvényesülnek.
 
 ## <a name="what-happens-when-a-profile-is-deleted-or-no-longer-applicable"></a>Mi történik, ha egy profilt törölnek, vagy az már nem érvényes?
 Amikor töröl egy profilt, vagy eltávolít egy olyan eszközt a csoportból, amely a profilhoz tartozik, akkor a profil és a beállítások a következő listákban leírtaknak megfelelően lesznek eltávolítva az adott eszközről:
 
-- Wi-Fi, VPN, tanúsítvány és e-mail profilok: Ezek a profilok az összes támogatott regisztrált eszközről el lesznek távolítva.
+- Wi-Fi, VPN, tanúsítvány és e-mail-profilok: Ezek a profilok az összes támogatott regisztrált eszközről el lesznek távolítva.
 - Minden más profiltípus esetén:  
-    - **Windows és Android rendszerű eszközök**: A beállítások nem törlődnek az eszközről
-    - **Windows Phone 8.1 rendszerű eszközök**: A következő beállítások törlődnek:  
-        - Jelszó szükséges a mobileszközök feloldásához
-        - Egyszerű jelszavak engedélyezése
-        - Jelszó minimális hossza
-        - Kötelező jelszótípus
-        - Jelszó lejárata (nap)
-        - Jelszóelőzmények megjegyzése
-        - Sikertelen bejelentkezések engedélyezett száma az eszköz törlése előtt
-        - Tétlen percek száma, mielőtt az eszköz újból kéri a jelszót
-        - Kötelező jelszótípus – megadandó karakterek minimális száma
-        - Kamera használatának engedélyezése
-        - Mobileszköz titkosításának kötelezővé tétele
-        - Cserélhető tároló használatának engedélyezése
-        - Webböngésző használatának engedélyezése
-        - Alkalmazástároló használatának engedélyezése
-        - Képernyőfelvétel-készítés használatának engedélyezése
-        - Földrajzi hely meghatározásának engedélyezése
-        - Microsoft-fiók használatának engedélyezése
-        - Másolás és beillesztés használatának engedélyezése
-        - Wi-Fi alapú internetmegosztás használatának engedélyezése
-        - Wi-Fi elérési pontokhoz való automatikus csatlakozás engedélyezése
-        - Wi-Fi elérési pontok jelentéskészítésének engedélyezése
-        - Összes adat törlésének engedélyezése
-        - Bluetooth használatának engedélyezése
-        - NFC használatának engedélyezése
-        - Wi-Fi használatának engedélyezése
 
-    - **iOS**: Az összes beállítás törlődik, kivéve a következőket:
-        - Hangroaming engedélyezése
-        - Adatroaming engedélyezése
-        - Automatikus szinkronizálás engedélyezése roaming közben
+  - **Windows és Android-eszközök**: Beállítások nem törlődnek az eszközről
+  - **Windows Phone 8.1 rendszerű eszközök**: A következő beállítások törlődnek:  
+  
+    - Jelszó szükséges a mobileszközök feloldásához
+    - Egyszerű jelszavak engedélyezése
+    - Jelszó minimális hossza
+    - Kötelező jelszótípus
+    - Jelszó lejárata (nap)
+    - Jelszóelőzmények megjegyzése
+    - Sikertelen bejelentkezések engedélyezett száma az eszköz törlése előtt
+    - Tétlen percek száma, mielőtt az eszköz újból kéri a jelszót
+    - Kötelező jelszótípus – megadandó karakterek minimális száma
+    - Kamera használatának engedélyezése
+    - Mobileszköz titkosításának kötelezővé tétele
+    - Cserélhető tároló használatának engedélyezése
+    - Webböngésző használatának engedélyezése
+    - Alkalmazástároló használatának engedélyezése
+    - Képernyőfelvétel-készítés használatának engedélyezése
+    - Földrajzi hely meghatározásának engedélyezése
+    - Microsoft-fiók használatának engedélyezése
+    - Másolás és beillesztés használatának engedélyezése
+    - Wi-Fi alapú internetmegosztás használatának engedélyezése
+    - Wi-Fi elérési pontokhoz való automatikus csatlakozás engedélyezése
+    - Wi-Fi elérési pontok jelentéskészítésének engedélyezése
+    - Összes adat törlésének engedélyezése
+    - Bluetooth használatának engedélyezése
+    - NFC használatának engedélyezése
+    - Wi-Fi használatának engedélyezése
+
+  - **iOS-es**: Az összes beállítás törlődik, kivéve:
+  
+    - Hangroaming engedélyezése
+    - Adatroaming engedélyezése
+    - Automatikus szinkronizálás engedélyezése roaming közben
 
 ## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>Módosítottam egy eszközkorlátozási profilt, de a módosítások még nem léptek érvénybe
 A Windows Phone-telefonok nem teszik lehetővé, hogy a beállításukat követően a felhasználó alacsonyabb biztonsági értékeket konfiguráljon az MDM vagy az EAS használatával megadott biztonsági szabályzatokhoz. Ilyen eset például, ha beállítja a **jelszó minimális karakterszámát** 8-ra, majd megpróbálja 4-re csökkenteni. Az eszközhöz már a szigorúbb profil van hozzárendelve.
@@ -134,6 +137,14 @@ A Windows Phone-telefonok nem teszik lehetővé, hogy a beállításukat követ�
 Ha egy kevésbé biztonságos értékre szeretné módosítani a profilt, alaphelyzetbe kell állítania a biztonsági szabályzatokat. Windows 8.1 rendszerben például pöccintsen jobbról, majd válassza a **Beállítások** > **Vezérlőpult** elemet. Válassza a **Felhasználói fiókok** kisalkalmazást. A bal oldali navigációs menü alján található egy **Biztonsági szabályzatok mellőzése** hivatkozás. Válassza ki ezt, majd a **Szabályzatok alaphelyzetbe állítása** lehetőséget.
 
 Előfordulhat, hogy az egyéb, például Android, Windows Phone 8.1 vagy újabb, iOS és Windows 10 rendszerű MDM-eszközöket ki kell vonni, majd újból regisztrálni kell a szolgáltatásba egy kevésbé korlátozó profil hozzárendeléséhez.
+
+## <a name="some-settings-in-a-windows-10-profile-return-not-applicable"></a>Egyes beállítások Windows 10-profilban adja vissza "Nem alkalmazható"
+Egyes beállítások Windows 10 rendszerű eszközökön is állapotúként "Nem alkalmazható". Ha ez történik, beállítását, hogy a verzió vagy az eszközön futó Windows-kiadás nem támogatott. Ez az üzenet a következő okok miatt fordulhat elő:
+
+- A beállítás csak a Windows újabb verziói, és nem a jelenlegi operációs rendszer (OS) az eszközön lévő verziója érhető el.
+- A beállítás csak az adott Windows-kiadások és az adott esetében, például a kezdőlap, Professional, Enterprise és Education érhető el.
+
+A verzió és a Termékváltozat vonatkozó követelményeket a különböző beállításokkal kapcsolatos további információkért tekintse meg a [konfigurációs szolgáltató (CSP) hivatkozás](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).
 
 ## <a name="next-steps"></a>További lépések
 További segítségre van szüksége? Ismerje meg, [hogyan kérhet támogatást az Intune-hoz](get-support.md).

@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 03840b0a4a7ce3f4735e22a227f5d2856d532b11
-ms.sourcegitcommit: 02f75d241b3cbb125cb235d16d447f8855b1806d
+ms.openlocfilehash: e0bb198b078695b567756c6a7db832d00e7a8c5b
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657780"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210839"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Bevezetés a Microsoft Intune App SDK használatába
 
@@ -158,6 +158,8 @@ Miután elvégezte az iOS vagy Android alkalmazásnak az Intune App SDK-való in
     * Ha független szoftverszállítóként engedélyezi az Intune alkalmazásvédelmi szabályzatának használatához az iOS vagy Android rendszerhez készült áruházbeli alkalmazásait, a regisztráció (az ezt ismertető lépésben leírt módon történő) befejezése után kapni fog egy promóciós kódot. A promóciós kód lehetővé teszi, hogy feliratkozzon a Microsoft Intune próbaverziójának 1 évig meghosszabbított használatára.
 
     * Az áruházban nem közzéteendő üzleti alkalmazások fejlesztői az adott szervezeten keresztül kaphatnak hozzáférést a Microsoft Intune-hoz. Emellett feliratkozhat a [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) egyhónapos ingyenes próbaidőszakára is.
+    
+    * Ha teszteli az alkalmazás egy mobileszközön, egy olyan felhasználói fiókkal, győződjön meg arról, hogy az adott fiók által az Intune-licencet az Office rendszergazdai portál webhelyen Ha egy rendszergazdai fiókkal bejelentkezik, lásd: [hozzárendelése a Microsoft Intune-licencet](https://docs.microsoft.com/en-ca/intune/licenses-assign).
 
 * **Az Intune alkalmazásvédelmi szabályzatai**: Tesztelje az alkalmazását az Intune alkalmazásvédelmi szabályzatok, ismernie kell, az elvárt viselkedés mi minden egyes házirend-beállítás. Lásd az [iOS alkalmazásvédelmi szabályzatainak](app-protection-policy-settings-ios.md) és az [Android alkalmazásvédelmi szabályzatainak](app-protection-policy-settings-android.md) ismertetését.
 

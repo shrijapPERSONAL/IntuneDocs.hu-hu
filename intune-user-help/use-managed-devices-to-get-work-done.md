@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/06/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,26 +17,26 @@ ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2a5f383eef6f380711578cb79dfd8006ca6f96e1
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.openlocfilehash: e067ce76046355a7da6bb785ae3302c0fc3e8bb9
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150666"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203146"
 ---
-# <a name="use-managed-devices-to-get-work-done"></a>Felügyelt eszközök használata a munkavégzéshez
-A Microsoft Intune olyan szoftveres megoldás, amely lehetővé teszi a cégek számára a különböző eszközök (például okostelefonok, táblagépek és személyi számítógépek), az alkalmazások, valamint az e-mailhez hasonló más vállalati erőforrások felügyeletét. Ezáltal a rendszer módot ad rá, hogy az alkalmazottak bárhonnan, bármilyen eszközről elérhessék a munkahelyi adatokat, ugyanakkor segít megőrizni a vállalati adatok biztonságát.
+# <a name="use-managed-devices-to-access-work-or-school-resources"></a>Felügyelt eszközök használata munkahelyi vagy iskolai erőforrások elérésére
+A Microsoft Intune az eszközkezelési rendszer, amely lehetővé teszi a szervezetek az eszközöket, alkalmazásokat és e-mail-hozzáférés kezelése. Kezelés lehetővé teszi, és más alkalmazottai és tanulók, a munkahelyi információkhoz szinte bárhonnan, szinte bármilyen eszközön. Akkor is, ha távolról dolgozik, Ön és a szervezet adatait biztonságban tudhassa.
 
-Az eszköznek az Intune felügyelete alá történő regisztrálása lehetővé teszi az informatikai osztály számára a munkahelyi vagy iskolai erőforrások kezelését és védelmét, miközben Ön mint alkalmazott szabadon választott eszközön végezheti feladatait. Ezt alapvetően úgy érheti el, hogy a Céges portálon regisztrálja az eszközt a felügyeleti rendszerben.
+A Microsoft Intune nem a vállalat használ a biztonsági és a vonatkozó követelmények konfigurálása a szoftvert. Amikor elkészült, az eszköz felügyelt, az Intune vállalati portál alkalmazást fogja használni. Az ehhez az alkalmazáshoz választott eszközön használatával hozzáférés munkahelyi vagy iskolai erőforrások. 
 
-## <a name="what-information-can-my-company-see-when-i-enroll-my-device-in-intune"></a>Milyen adatokat láthat a munkahelyem, ha regisztrálom az eszközömet az Intune-ban?
-Munkahelye ügyfélszolgálata láthatja a munkával kapcsolatos adatokat, de a személyes adatait nem. Ez különösen fontos tudnivaló, ha személyes eszközt regisztrál munkahelyi használatra. [A felhasználói súgó következő cikkében](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) részletezzük, hogy mit láthatnak, és mit nem.
+## <a name="what-information-can-my-company-see-when-i-get-my-device-managed"></a>Milyen információk láthatók a cég láthatja, amikor jelenik meg az eszköz felügyelt?
+Ön telepítése után a vállalati portálon, a cég informatikai támogatási szolgálata csak munkával, információk jelennek meg. Azonban nem tekinthetik meg a személyes adatok. Ez különösen fontos tudnivaló, ha személyes eszközt regisztrál munkahelyi használatra. Ismerje meg, hogy pontosan milyen azok [láthat és mit nem a következő cikkben](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
-## <a name="how-do-i-get-the-company-portal"></a>Hogyan szerezhetem be a Céges portált?
-A Vállalati portált kétféleképpen szerezheti be:
+## <a name="how-do-i-get-company-portal"></a>Hogyan szerezhetem be a vállalati portálon?
+Get céges portál által:
 
-- Telepítheti az eszközére a Vállalati portál alkalmazást. A Céges portál alkalmazást általában az eszköz alkalmazásáruházából lehet telepíteni, de a cég informatikai támogató szolgálata is telepítheti Önnek azt.
-- Megnyithatja a cég informatikai támogató szolgálata által beállított [Céges portál webhelyet](https://go.microsoft.com/fwlink/?linkid=2010980).
+- A céges portál alkalmazás telepítése az eszközön. A Céges portál alkalmazást általában az eszköz alkalmazásáruházából lehet telepíteni, de a cég informatikai támogató szolgálata is telepítheti Önnek azt.
+- Ugrás a [céges portál webhelyen](https://go.microsoft.com/fwlink/?linkid=2010980) , hogy a cég támogatási szolgálata fel.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Az alkalmazás és a webhely közötti különbség
 A Vállalati portál alkalmazás és webhely között van néhány kisebb eltérés, de a legtöbb feladatot bármelyiken elvégezheti. Néhány olyan feladat, amelyet elvégezhet:
@@ -73,7 +73,7 @@ Ha meg szeretné tudni, hogy a cég informatikai támogató szolgálata mit lát
     -   Windows 10 mobil verzió
     -   Windows 10 asztali verzió
     -   Windows Phone 8.1
-    -   Windows 8.1
+    -   Windows 8.1
 
 ## <a name="can-you-remove-a-computer-or-device-from-the-company-portal"></a>Eltávolítható egy számítógép vagy eszköz a Vállalati portálról?
 Igen, a Vállalati portálról eltávolíthat vagy alaphelyzetbe állíthat egy számítógépet vagy eszközt. Az **eltávolítás** és az **alaphelyzetbe állítás** között azonban van különbség.

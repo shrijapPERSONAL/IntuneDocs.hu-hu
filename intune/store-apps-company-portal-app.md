@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 755e836c5954b9cbbf3c7729755aaa25062710d8
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: ec170727b8846caae3e96cc19be8d1e274c17427
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642591"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210737"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>A Windows 10-es Céges portál alkalmazás manuális hozzáadása a Microsoft Intune-nal
 
@@ -47,7 +47,7 @@ A felhasználók maguk telepíthetik a Microsoft Store-ból a Céges portál alk
 5. A **Platform** listából válassza ki a **Windows 10 minden eszközre** lehetőséget, majd válassza ki a megfelelő értékeket a **Minimális verzió**, az **Architektúra** és az **Alkalmazás metaadatainak letöltése** elemekhez. 
 6. Válassza a **Letöltés** lehetőséget a fájl a helyi gépen való mentéséhez.
 
-    ![„Windows 10 minden eszközre” és az X86 architektúrájú csomag letöltésre kijelölt részletei](./media/Win10CP-all-devices.png)
+    ![Ahol architektúra egyenlő X86, Windows 10-eszközökre van kiválasztva](./media/Win10CP-all-devices.png)
 
 7. Töltse le a „Szükséges keretrendszer” cím alatt található összes csomagot a **Letöltés** elem kiválasztásával.  
     Ezt a műveletet az x86, az x64 és az ARM architektúrákkal kell elvégezni, összesen 12 csomaggal.

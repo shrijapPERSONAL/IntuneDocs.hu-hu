@@ -1,41 +1,46 @@
 ---
-title: S/MIME e-mail-aláírás és -titkosítás – Azure | Micrososft Docs
-description: S/MIME használata vagy engedélyezése e-mailek aláírásához és titkosításához a Microsoft Intune-ban
+title: Aláírása és titkosítása e-mailt az S/MIME - a Microsoft Intune – Azure |} Micrososft Docs
+description: Útmutató az e-mail digitális tanúsítványokat a Microsoft Intune-ban és e-mailek eszközökön titkosítására. Ezek a tanúsítványok S/MIME nevezik, és eszközkonfigurációs profilok használatával konfigurálhatók. Aláírás és titkosítás tanúsítványok PKCS, vagy privát tanúsítványok, és a tanúsítványok importálása egy összekötő használatával.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/21/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: eaa85870b289bb3b65ce997d8610324f43d69452
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-azure; seodec18
+ms.openlocfilehash: 0339be98bf045d280912bf88e88b5ba544b0a1f4
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185644"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203127"
 ---
-# <a name="smime-email-signing-and-encryption-in-intune"></a>S/MIME e-mail-aláírás és -titkosítás az Intune-ban
+# <a name="smime-overview-to-sign-and-encrypt-email-in-intune"></a>S/MIME áttekintése és titkosítására e-mailt az Intune-ban
 
-> [!IMPORTANT]
-> A jelen cikkben ismertetett S/MIME funkció jelenleg fejlesztés alatt áll. Emiatt az S/MIME funkciót ideiglenesen eltávolítottuk az Intune-ból. A funkció újbóli kibocsátását követően ez a megjegyzés törlésre kerül.
+E-mail-tanúsítványok, más néven az S/MIME-tanúsítvány, adja meg az extra biztonsági az e-mail-üzeneteket, a titkosítás és visszafejtés. A Microsoft Intune S/MIME-tanúsítványok használatával aláírása és titkosítása e-mailt a következő platformot futtató mobileszközökre:
 
-Az S/MIME egy újabb biztonsági szintet nyújt a titkosítást és visszafejtést használó e-mail-kommunikációhoz. A Microsoft Intune iOS, Windows, Windows Phone, Android és macOS rendszerű mobileszközökön képes S/MIME használatára az e-mailek aláírásához és titkosításához.
+- Android
+- iOS
+- macOS
+- Windows 10 és újabb
+- Windows Phone
 
-iOS-eszközökön létrehozható egy Intune által felügyelt e-mail-profil, amely S/MIME és tanúsítványok használatával írja alá és titkosítja a bejövő és kimenő e-maileket. Más platformokon az S/MIME lehet támogatott vagy nem támogatott. Ha támogatott, akkor telepíthetők S/MIME-aláírást és -titkosítást használó tanúsítványok. Ilyenkor a végfelhasználók saját levelezőalkalmazásukban engedélyezhetik az S/MIME használatát.
+iOS-eszközökön létrehozható egy Intune által felügyelt e-mail-profil, amely S/MIME és tanúsítványok használatával írja alá és titkosítja a bejövő és kimenő e-maileket. Más platformokon az S/MIME lehet támogatott vagy nem támogatott. Támogatott, ha telepíti az S/MIME-aláírásra és titkosításra használt tanúsítványok. Ezután a végfelhasználó lehetővé teszi az e-mail alkalmazás S/MIME.
 
-Az S/MIME e-mail-aláírást és -titkosítást az [S/MIME üzenetek aláírásához és titkosításához](https://docs.microsoft.com/Exchange/policy-and-compliance/smime) című cikk ismerteti bővebben.
+S/MIME e-mail aláírási és titkosítási az Exchange kiszolgálóval kapcsolatos további információkért lásd: [S/MIME-üzenet aláíráshoz és titkosításhoz](https://docs.microsoft.com/Exchange/policy-and-compliance/smime).
+
+Ez a cikk áttekintést és e-mailek, az eszközök titkosítására S/MIME-tanúsítványok használatával.
 
 ## <a name="signing-certificates"></a>Aláíró tanúsítványok
 
 Az aláíráshoz használt tanúsítványok lehetővé teszik, hogy az ügyfél e-mail-alkalmazás biztonságosan kommunikáljon a levelezési kiszolgálóval.
 
-Aláíró tanúsítványok használatához hozzon létre egy aláírásra szolgáló sablont a hitelesítésszolgáltatónál. A Microsoft Active Directory hitelesítésszolgáltatóhoz [A kiszolgálói tanúsítvány-sablon konfigurálása](https://docs.microsoft.com/windows-server/networking/core-network-guide/cncg/server-certs/configure-the-server-certificate-template) című cikk ismerteti a tanúsítványsablonok létrehozásának lépéseit.
+Aláíró tanúsítványok használatához hozzon létre egy sablont a a hitelesítésszolgáltató (CA), amely aláírási összpontosít. A Microsoft Active Directory hitelesítésszolgáltatóhoz [A kiszolgálói tanúsítvány-sablon konfigurálása](https://docs.microsoft.com/windows-server/networking/core-network-guide/cncg/server-certs/configure-the-server-certificate-template) című cikk ismerteti a tanúsítványsablonok létrehozásának lépéseit.
 
 Az Intune-beli aláíró tanúsítványok PKCS-tanúsítványokat használnak. A [PKCS-tanúsítványok konfigurálása és használata](certficates-pfx-configure.md) című cikk leírja, hogyan telepíthet és használhat PKCS-tanúsítványokat Intune-környezetében. Ezek a lépések az alábbiak:
 
@@ -43,7 +48,7 @@ Az Intune-beli aláíró tanúsítványok PKCS-tanúsítványokat használnak. A
 - Hozzon létre egy megbízható főtanúsítvány-profilt eszközeihez. E lépés során megbízható főtanúsítványokat és köztes tanúsítványokat is használni kell a hitelesítésszolgáltatónál, majd üzembe kell helyezni a profilt az eszközökön.
 - Hozzon létre egy PKCS-tanúsítványprofilt az elkészült tanúsítványsablon használatával. Ez a profil adja ki az aláíró tanúsítványokat az eszközöknek, és helyezi üzembe a PKCS-tanúsítványprofilt az eszközökön.
 
-Aláíró tanúsítvány egy adott felhasználó számára is importálható. Az aláíró tanúsítvány a felhasználó által regisztrált összes eszközön telepítve lesz. A tanúsítványok Intune-ba való importálásához használja [a GitHubon elérhető PowerShell-parancsmagokat](https://github.com/Microsoft/Intune-Resource-Access). Az Intune-ba importált PKCS-tanúsítványok e-mail-aláíráshoz való üzembe helyezéséhez kövesse a [PKCS-tanúsítványok konfigurálása és használata az Intune-nal](certficates-pfx-configure.md) című témakörben leírt lépéseket. Ezek a lépések az alábbiak:
+Aláíró tanúsítvány egy adott felhasználó számára is importálható. Az aláíró tanúsítvány van üzembe helyezve, bármilyen eszközön, amely a felhasználó regisztrál. A tanúsítványok Intune-ba való importálásához használja [a GitHubon elérhető PowerShell-parancsmagokat](https://github.com/Microsoft/Intune-Resource-Access). Az Intune-ba importált PKCS-tanúsítványok e-mail-aláíráshoz való üzembe helyezéséhez kövesse a [PKCS-tanúsítványok konfigurálása és használata az Intune-nal](certficates-pfx-configure.md) című témakörben leírt lépéseket. Ezek a lépések az alábbiak:
 
 - Töltse le és telepítse a Microsoft Intune-hoz készült PFX tanúsítvány-összekötőt. Ez az összekötő juttatja el az importált PKCS-tanúsítványokat az eszközökre.
 - Importáljon S/MIME e-mail-aláíró tanúsítványokat az Intune-ba.
@@ -57,7 +62,7 @@ Amikor titkosított e-mailt küld egy másik felhasználónak, beszerzi a címze
 
 Az e-mail-titkosítási tanúsítványokat ajánlott nem az Intune-ban létrehozni. Bár az Intune támogatja titkosítást támogató PKCS-tanúsítványok kiállítását, az Intune eszközönként egyedi tanúsítványokat hoz létre. Az eszközönként egyedi tanúsítvány nem ideális S/MIME-titkosítás esetén, amikor a titkosítási tanúsítványnak a felhasználó minden eszközén meg kellene lennie.
 
-S/MIME-tanúsítványok Intune-nal való üzembe helyezéséhez egy felhasználó összes titkosítási tanúsítványát importálnia kell az Intune-ba. Az Intune ezután az összes tanúsítványt üzembe helyezi a felhasználó által regisztrált összes eszközön. A tanúsítványok Intune-ba való importálásához használja [a GitHubon elérhető PowerShell-parancsmagokat](https://github.com/Microsoft/Intune-Resource-Access).
+S/MIME-tanúsítványok Intune-nal való üzembe helyezéséhez egy felhasználó összes titkosítási tanúsítványát importálnia kell az Intune-ba. Az Intune majd helyezünk üzembe minden tanúsítványok minden olyan felhasználó által regisztrált eszköz. A tanúsítványok Intune-ba való importálásához használja [a GitHubon elérhető PowerShell-parancsmagokat](https://github.com/Microsoft/Intune-Resource-Access).
 
 Az Intune-ba importált PKCS-tanúsítványok e-mail-titkosításhoz való üzembe helyezéséhez kövesse a [PKCS-tanúsítványok konfigurálása és használata az Intune-nal](certficates-pfx-configure.md) című témakörben leírt lépéseket. Ezek a lépések az alábbiak:
 
@@ -71,3 +76,10 @@ Az Intune-ba importált PKCS-tanúsítványok e-mail-titkosításhoz való üzem
 ## <a name="smime-email-profiles"></a>S/MIME e-mail-profilok
 
 S/MIME aláíró és titkosítási tanúsítványprofilok létrehozása után [engedélyezheti az S/MIME használatát az iOS-natív levelezéshez](email-settings-ios.md).
+
+## <a name="next-steps"></a>További lépések
+
+- [SCEP-tanúsítványok használata](certificates-scep-configure.md)
+- [PKCS-tanúsítványok használata](certficates-pfx-configure.md)
+- [A partner hitelesítésszolgáltató használata](certificate-authority-add-scep-overview.md)
+- [Adja ki a PKCS-tanúsítványok Symantec PKI manager webszolgáltatás](certificates-symantec-configure.md)

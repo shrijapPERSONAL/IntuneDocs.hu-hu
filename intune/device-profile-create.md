@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 12/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,26 +15,27 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6bc6f5d2f32ff060eb2eec568b0048628ad0e09c
-ms.sourcegitcommit: 349ab913932547b4a7491181f0aff092f109b87b
+ms.openlocfilehash: cb6e3f0a9f62348d55b5dc2284c1007ea7faf088
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52303855"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203212"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Eszközprofil létrehozása a Microsoft Intune-ban
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="create-the-profile"></a>A profil létrehozása
-1. Az [Azure Portalon](https://portal.azure.com) válassza a **Minden szolgáltatás** lehetőséget, majd keresse meg a **Microsoft Intune** elemet.
 
-2. A **Microsoft Intune** területen válassza az **Eszközkonfiguráció** lehetőséget, majd a **Profilok** elemet. Ezt követően válassza a **Profil létrehozása** lehetőséget.
+1. Az a [az Azure portal](https://portal.azure.com), jelölje be **minden szolgáltatás** > szűréséhez **Intune** > Válassza ki **Intune**.
+
+2. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
 
 3. Adja meg a következő tulajdonságokat:
 
    - **Név**: Adja meg az új profil leíró nevét.
-   - **Leírás:** Itt adhatja meg a profil leírását. (Nem kötelező, de ajánlott a használata.)
+   - **Description** (Leírás): Adja meg a profil leírását. A beállítás használata nem kötelező, de ajánlott.
    - **Platform**: Válassza ki a platform típusát:  
 
        - **Android**
@@ -45,15 +46,15 @@ ms.locfileid: "52303855"
        - **Windows 8.1 és újabb**
        - **Windows 10 és újabb**
 
-   - **Profiltípus**: Válassza ki a létrehozni kívánt profil típusát. A lista a választott platformtól függ.
-   - **Beállítások**: Az alábbi témakörök az egyes profiltípusok beállításait ismertetik:
+   - **Profil típusa**: Válassza ki a létrehozni kívánt. A lista a választott platformtól függ.
+   - **Beállítások**: Az alábbi cikkek ismertetik az egyes profiltípusok beállításait:
 
        -  [Eszközfunkciók](device-features-configure.md)
        -  [Eszközkorlátozások](device-restrictions-configure.md)
        -  [Endpoint Protection](endpoint-protection-configure.md)
        -  [Identity protection](identity-protection-configure.md)  
        -  [Kioszkmód](kiosk-settings.md)
-       -  [e-mailben](email-settings-configure.md)
+       -  [E-mail](email-settings-configure.md)
        -  [VPN](vpn-settings-configure.md)
        -  [Wi-Fi](wi-fi-settings-configure.md)
        -  Education [Windows 10](education-settings-configure.md) és [iOS](wi-fi-settings-ios.md) rendszerhez

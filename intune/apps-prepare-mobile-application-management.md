@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 84b36f6cae9dd16bde6bd380407a78aeb2478010
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 742b4892c4dbe9ee2dfa2bb03eebb2667803c6bf
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112425"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210754"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Üzletági alkalmazások felkészítése az alkalmazásvédelmi szabályzatok használatára
 
@@ -98,7 +98,7 @@ Ez a táblázat az App SDK-hoz és az alkalmazásburkoló eszközhöz használha
 |Képernyőrögzítés letiltása (csak Android esetén)|X|X|
 |Eszközregisztráció nélküli MAM támogatása|X|X|
 |Teljes törlés|X|X|
-|Szelektív törlés <br></br>**Megjegyzés:** iOS esetén a felügyeleti profil törlésekor az alkalmazást is törli.|X||
+|Szelektív törlés <br><br>**Megjegyzés:** IOS-a felügyeleti profil törlésekor az alkalmazás is eltávolítja.|X||
 |A „Mentés másként” művelet letiltása|X||
 |Célzott alkalmazáskonfiguráció|X||
 |Többszörös identitás támogatása|X||
@@ -115,6 +115,6 @@ Ez a táblázat az App SDK-hoz és az alkalmazásburkoló eszközhöz használha
 
 A következő témakörökből tudhat meg többet az alkalmazásvédelmi szabályzatokról és az Intune-ról:
 
-  - [Android alkalmazásburkoló eszköz](app-wrapper-prepare-android.md)</br>
-  - [iOS alkalmazásburkoló eszköz](app-wrapper-prepare-ios.md)</br>
+  - [Android alkalmazásburkoló eszköz](app-wrapper-prepare-android.md)<br>
+  - [iOS alkalmazásburkoló eszköz](app-wrapper-prepare-ios.md)<br>
   - [Alkalmazások előkészítése a mobilalkalmazás-felügyeletre az SDK segítségével](app-sdk.md)

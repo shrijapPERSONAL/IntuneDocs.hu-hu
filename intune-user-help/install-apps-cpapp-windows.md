@@ -1,11 +1,11 @@
 ---
 title: Alkalmazások telepítése a Windowshoz készült Intune Céges portál alkalmazásból
-description: Elsajátíthatja, hogyan telepíthet és oszthat meg alkalmazásokat a Windowshoz készült Céges portál alkalmazásból
+description: Telepítése és megosztása az alkalmazások a vállalati portál alkalmazásból a Windows
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/05/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e2bf5ffd5c913b4e2c51c9efd0aa40ba3d3f0fa7
-ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
-ms.translationtype: HT
+ms.openlocfilehash: 5c57db351aae613d0213e4ef439084ad9577a3fc
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863093"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203229"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Alkalmazások telepítése és megosztása az eszközön
 Alkalmazások telepítése az eszközön Windows Céges portál alkalmazásból.
@@ -34,11 +34,11 @@ Alkalmazások telepítése az eszközön Windows Céges portál alkalmazásból.
     ![A Windows 10-es Céges portál alkalmazás kezdőlapja.](./media/RS1_AppDetailsPage_Installed_03.png)    
 2. A Céges portál alkalmazás következő szakaszain kereshet és telepíthet alkalmazásokat:  
 
-    * **Kezdőlap**: A szervezet kiemelt alkalmazásai közül választhat.  
-    * **Az összes megjelenítése**: A **Kezdőlap** > **Alkalmazások** területen kattintson **Az összes megjelenítése** elemre az összes elérhető alkalmazás megjelenítéséhez.  
-    * **Minden alkalmazás**: Válassza ezt a lapot a navigációs panelen az összes rendelkezésre álló alkalmazás megtekintéséhez, beleértve a telepítetteket és a kiemelteket.  
-    * **Alkalmazások keresése**: Az alkalmazás navigációs paneljén található egy statikus keresősáv.  Az elérhető alkalmazások megtalálásához keressen rá az alkalmazás nevére vagy a közzétevőre.  
-    * **Minden alkalmazás**: Megtekintheti, rendezheti és szűrheti az elérhető alkalmazásokat. Keresési eredményeket a rendszer automatikusan elrendezi a relevancia alapján.  
+    * **Kezdőlap**: Válassza ki a szervezet kiemelt alkalmazások listájából.  
+    * **Az összes megjelenítése**: Az a **kezdőlap** > **alkalmazások** területén kattintson **az összes megjelenítése** az összes elérhető alkalmazások megtekintéséhez.  
+    * **Minden alkalmazás**: Ezen a lapon válassza ki a navigációs panelen megtekintheti az összes rendelkezésre álló alkalmazások, beleértve a telepítve és kiemelt.  
+    * **Alkalmazások keresése**: Egy statikus keresősáv helyezkedik el, az alkalmazás navigációs ablaktáblán.  Az elérhető alkalmazások megtalálásához keressen rá az alkalmazás nevére vagy a közzétevőre.  
+    * **Minden alkalmazás**: Megtekintheti, rendezheti és szűrheti az összes rendelkezésre álló alkalmazások. Keresési eredményeket a rendszer automatikusan elrendezi a relevancia alapján.  
 
 3. Jelöljön ki egy alkalmazást.   
 4. Az alkalmazás részleteit megjelenítő lapon kattintson a **Telepítés** lehetőségre. A telepítés után a **Telepítve** állapot fog megjelenni.  
@@ -63,4 +63,16 @@ Alkalmazások megosztása és ajánlása a munkahelyi vagy iskolai partnerei sz�
 
 Megosztás után a címzett kapni fog egy hivatkozást és egy üzenetet, hogy tekintse meg az alkalmazás részleteit. A hivatkozás megnyitja a Céges portál **Alkalmazás részletei** lapját. 
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).
+## <a name="available-apps"></a>Nem kötelező alkalmazások  
+
+A szervezet választja ki a megfelelő és alkalmazások hasznos az Ön számára a munkahelyi vagy iskolai rendszerhez. Ezeket az alkalmazásokat csak azok a céges portálon megtalálhatja.  
+
+Alkalmazások is elérhető lesz az eszköz típusa alapján. Például ha használja a vállalati portál alkalmazást Windows, hozzáférhet a Windows-alkalmazás, de nem az iOS-alkalmazások.  
+
+## <a name="request-an-app-for-work-or-school"></a>A kérelem egy alkalmazást a munkahelyi vagy iskolai fiók  
+Ha szükséges, de nem látható a vállalati portál alkalmazás, kérelem. Keresse meg a kapcsolattartási adatait a **segélyszolgálat** a céges portál alkalmazásban, a Súgó és támogatás az oldalon. Ugyanazokat az adatokat a látni fogja a [céges portál webhelyen](https://go.microsoft.com/fwlink/?linkid=2010980).    
+
+  ![A vállalati portál alkalmazás Windows 10-es, Súgó és támogatás weblapot, kiemelve a segélyszolgálat adatait. ](./media/1812_UCP_Help_Support_helpdesk.png)  
+
+
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).  

@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: d8e9dd1e38fdc693bd30372f2961244e4e809771
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: a698d7a57c59a27dbd39036b1e2607e80570029f
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180340"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210771"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin Bindings
 
@@ -56,10 +56,12 @@ A [licencfeltételek](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/b
 
 Az SDK támaszkodik [Active Directory Authentication Library (ADAL)](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) számára annak [hitelesítési](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/) és feltételes indítási forgatókönyvek, melyek konfigurálhatók, az alkalmazásokat szükség [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). 
 
+Ha az alkalmazás már adal-t vagy az MSAL használatára van konfigurálva, és rendelkezik a saját egyéni ügyfél-azonosító az Azure Active Directory-hitelesítésre használható, győződjön meg arról, a lépések a Xamarin-alkalmazás engedélyt az Intune Mobile Application Management (MAM) szolgáltatáshoz a alkalmazni. Található utasítások a "[az alkalmazás-hozzáférést biztosít az Intune app protection szolgáltatás](app-sdk-get-started.md#give-your-app-access-to-the-intune-app-protection-service-optional)" szakaszában a [első lépések az Intune SDK útmutatóját](app-sdk-get-started.md).
+
 ## <a name="enabling-intune-app-protection-polices-in-your-ios-mobile-app"></a>Az Intune alkalmazásvédelmi szabályzatainak engedélyezése az iOS-mobilalkalmazásban
 1. Adja hozzá Xamarin.iOS-projektjéhez a [Microsoft.Intune.MAM.Xamarin.iOS NuGet-csomagot](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.iOS).
 2.  Kövesse az Intune App SDK iOS-mobilalkalmazásokba való integrálásához szükséges általános lépéseket. Kezdhet az [iOS-hez készült Intune App SDK – fejlesztői útmutató](app-sdk-ios.md#build-the-sdk-into-your-mobile-app) című témakör integrálási útmutatásának 3. lépésével. Az IntuneMAMConfigurator futtatásáról szóló szakasz utolsó lépését átugorhatja, mivel az eszköz része a Microsoft.Intune.MAM.Xamarin.iOS csomagnak, és a build időpontjában automatikusan futtatva lesz.
-    **Fontos**: A kulcslánc megosztásának alkalmazások számára való engedélyezése kissé eltérő a Visual Studióban és az Xcode-ban. Nyissa meg az alkalmazás jogosultságokat tartalmazó plist-fájlját, és győződjön meg arról, hogy az „Enable Keychain” („Kulcslánc engedélyezése”) lehetőség engedélyezve van, és hogy ebben a szakaszban a megfelelő kulcslánc-megosztási csoportok szerepelnek. Ezután győződjön meg arról, hogy a projekt „iOS Bundle Signing” („iOS-kötegaláírási”) beállításai között a konfigurációk és platformok összes megfelelő kombinációjához meg van adva a jogosultságokat tartalmazó plist-fájl a „Custom Entitlements” („Egyéni jogosultságok”) mezőben.
+    **Fontos**: Az alkalmazás a kulcsláncmegosztás módja kissé eltér a Visual Studióban xcode-ban. Nyissa meg az alkalmazás jogosultságokat tartalmazó plist-fájlját, és győződjön meg arról, hogy az „Enable Keychain” („Kulcslánc engedélyezése”) lehetőség engedélyezve van, és hogy ebben a szakaszban a megfelelő kulcslánc-megosztási csoportok szerepelnek. Ezután győződjön meg arról, hogy a projekt „iOS Bundle Signing” („iOS-kötegaláírási”) beállításai között a konfigurációk és platformok összes megfelelő kombinációjához meg van adva a jogosultságokat tartalmazó plist-fájl a „Custom Entitlements” („Egyéni jogosultságok”) mezőben.
 3.  Miután hozzáadta a kötéseket, és megfelelően konfigurálta az alkalmazást, az alkalmazás megkezdheti az Intune SDK API-jának használatát. Ehhez a következő névteret kell hozzáadnia:
 
       ```csharp
@@ -121,9 +123,6 @@ Elvégezte az összetevő alkalmazásba történő beépítésének alapvető l�
 ## <a name="requiring-intune-app-protection-policies-in-order-to-use-your-xamarin-based-android-lob-app-optional"></a>Intune alkalmazásvédelmi szabályzatok megkövetelése a Xamarin-alapú Android LOB-alkalmazások (nem kötelező) használatához 
 
 A következő útmutatóból megtudhatja, hogyan biztosíthatja, hogy a Xamarin-alapú androidos üzletági alkalmazásokat csak az Intune által védett felhasználók használhassák eszközeiken. 
-
-### <a name="general-requirements"></a>Általános követelmények
-* Győződjön meg arról, a Xamarin-alkalmazás engedélyt az alkalmazásvédelmi szabályzat (alkalmazás) app Service lépéseit követi. Útmutatásait a [első lépések az Intune SDK útmutatóját](app-sdk-get-started.md#next-steps-after-integration) alatt "az alkalmazás hozzáférést biztosít az Intune app protection szolgáltatás (nem kötelező)". 
     
 ### <a name="working-with-the-intune-sdk"></a>Az Intune SDK használata
 Ezek az utasítások minden olyan Android- és Xamarin-alkalmazásra vonatkoznak, amelyek Intune-alkalmazásvédelmi szabályzatokat szeretnének kérni a végfelhasználói eszközöktől.
@@ -148,5 +147,5 @@ Ezek az utasítások minden olyan .NET- és Xamarin-alkalmazásra vonatkoznak, a
 > [!NOTE] 
 > A .NET ADAL által kibocsátott következő verzió (3.17.4) várhatóan tartalmazni fogja az ennek a működéséhez szükséges javítást.
 
-## <a name="support"></a>Support
+## <a name="support"></a>Támogatás
 Ha vállalata már Intune-ügyfél, akkor a Microsoft támogató szolgálat képviselőjével együttműködve nyisson meg egy támogatási jegyet, és hozzon létre bejelentést [a GitHub hibabejelentő oldalán](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues), mi pedig segítünk, amint tudunk. 

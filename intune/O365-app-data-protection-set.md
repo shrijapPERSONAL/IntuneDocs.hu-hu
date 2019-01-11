@@ -17,12 +17,12 @@ ms.reviewer: ayesham
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ef84a77961dafc1a881bdb54208fae602857ae32
-ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
+ms.openlocfilehash: 807bc306848a731e63f7f854a9d4b451264e21a8
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54067465"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210805"
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>Hogyan fogják megtapasztalni a felhasználók az alapszintű védelmet a Microsoft Intune-beli felügyelt Office 365-alkalmazásokban
 
@@ -89,33 +89,32 @@ Ebben a cikkben a OneDrive Vállalati verzióval mutatjuk be a felhasználói é
 
 ## <a name="what-policies-does-this-wizard-set"></a>Milyen szabályzatokat nem állít be a varázsló?
 
-|     |       | |
-|----|--------|-|
-|**Name (Név)**|Office 365-alkalmazások kezelése| |
-| **Leírás**|Az Office 365-alkalmazások kezelése varázsló által létrehozott| |
-| |  | |
-| **A beállítás neve** |**iOS-szabályzat értéke** | **Android-szabályzat értéke** |
-|ITunes- és iCloud-biztonsági mentések tiltása| Nem | – |
-|Az androidos biztonsági mentések tiltása |– | Nem|
-|Más alkalmazásokból való adatátvitel engedélyezése az alkalmazásnak | Minden alkalmazás | Minden alkalmazás|
-|Más alkalmazásokból való adatfogadás engedélyezése az alkalmazásnak| Minden alkalmazás | Minden alkalmazás|
-|A „Mentés másként” művelet letiltása | Nem | Nem|
-|Más alkalmazásokkal végzett kivágás, másolás és beillesztés korlátozása | Bármely alkalmazás | Bármely alkalmazás |
-|A vállalat által kezelt böngészőben megjelenő webtartalom korlátozása | Nem| Nem|
-|Alkalmazásadatok titkosítása | Amikor az eszköz zárolva van | Igen|
-|Névjegy-szinkronizálás letiltása | Nem| Nem|
-|Nyomtatás letiltása | Nem | Nem|
-|PIN-kód megkövetelése a hozzáféréshez | Nem | Igen|
-|Kísérletek száma a PIN-kód alaphelyzetbe állítása előtt | – |5|
-|Egyszerű PIN-kód engedélyezése | – |Igen|
-|PIN-kód hossza | – | 4|
-|Ujjlenyomat használatának engedélyezése PIN-kód helyett | – | Igen |
-|Vállalati hitelesítő adatok szükségesek a hozzáféréshez | Nem | Nem|
-|A felügyelt alkalmazások futtatásának tiltása jailbreakelt vagy rootolt eszközökön | Nem | Nem|
-|A hozzáférési követelmények ismételt ellenőrzése ennyi idő után (perc) – Időkorlát | 30 | 30|
-|A hozzáférési követelmények ismételt ellenőrzése ennyi idő után (perc) – Offline türelmi időszak | 720 |720|
-|Offline időtartam (nap) az alkalmazásadatok törlése előtt | 90 | 90|
-|Képernyőrögzítés letiltása (csak Android-eszközök esetén) | – | Nem |
+**Név**: Office 365-alkalmazások kezelése<br>
+**Description** (Leírás): Az Office 365-alkalmazások kezelése varázsló által létrehozott
+
+| Beállítás neve | iOS-szabályzat értéke | Android-szabályzat értéke |
+|------------------------------------------------------------------------|-----------------------|----------------------|
+| ITunes- és iCloud-biztonsági mentések tiltása | Nem | – |
+| Az androidos biztonsági mentések tiltása | – | Nem |
+| Más alkalmazásokból való adatátvitel engedélyezése az alkalmazásnak | Minden alkalmazás | Minden alkalmazás |
+| Más alkalmazásokból való adatfogadás engedélyezése az alkalmazásnak | Minden alkalmazás | Minden alkalmazás |
+| A „Mentés másként” művelet letiltása | Nem | Nem |
+| Más alkalmazásokkal végzett kivágás, másolás és beillesztés korlátozása | Bármely alkalmazás | Bármely alkalmazás |
+| A vállalat által kezelt böngészőben megjelenő webtartalom korlátozása | Nem | Nem |
+| Alkalmazásadatok titkosítása | Amikor az eszköz zárolva van | Igen |
+| Névjegy-szinkronizálás letiltása | Nem | Nem |
+| Nyomtatás letiltása | Nem | Nem |
+| PIN-kód megkövetelése a hozzáféréshez | Nem | Igen |
+| Kísérletek száma a PIN-kód alaphelyzetbe állítása előtt | – | 5 |
+| Egyszerű PIN-kód engedélyezése | – | Igen |
+| PIN-kód hossza | – | 4 |
+| Ujjlenyomat használatának engedélyezése PIN-kód helyett | – | Igen |
+| Vállalati hitelesítő adatok szükségesek a hozzáféréshez | Nem | Nem |
+| A felügyelt alkalmazások futtatásának tiltása jailbreakelt vagy rootolt eszközökön | Nem | Nem |
+| A hozzáférési követelmények ismételt ellenőrzése ennyi idő után (perc) – Időkorlát | 30 | 30 |
+| A hozzáférési követelmények ismételt ellenőrzése ennyi idő után (perc) – Offline türelmi időszak | 720 | 720 |
+| Offline időtartam (nap) az alkalmazásadatok törlése előtt | 90 | 90 |
+| Képernyőrögzítés letiltása (csak Android-eszközök esetén) | – | Nem |
 
 ### <a name="why-is-an-app-pin-policy-only-configured-for-android-devices"></a>Miért van az alkalmazás PIN-szabályzata csak az Android-eszközökhöz konfigurálva?
 A titkosítás eltérően működik az iOS és az Android rendszeren.

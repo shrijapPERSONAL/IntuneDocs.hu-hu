@@ -1,11 +1,11 @@
 ---
-title: Eszközprofilok az Azure-beli Microsoft Intune-ban | Microsoft Docs
-description: A különféle Microsoft Intune-eszközprofilok áttekintése a funkciók, korlátozások, e-mail, Wi-Fi, VPN, oktatás, tanúsítványok, Windows 10-frissítés, BitLocker és Windows Defender, Windows Információvédelem és az Azure Portal-beli egyéni eszközkonfigurációs beállítások ismertetésével. Ezeket a profilokat vállalati adatai és eszközei kezelésére és védelmére használhatja.
+title: Eszközök funkcióinak és a beállítások a Microsoft Intune – Azure |} A Microsoft Docs
+description: A különböző Microsoft Intune-eszközprofilokat, beleértve a áttekintése funkciók, korlátozások, e-mail, Wi-Fi, VPN, oktatás, tanúsítványok, a Windows 10-es, a BitLocker és a Windows defender, a Windows Information Protection, a felügyeleti sablonok, frissítése és egyéni eszközkonfigurációs beállítások az Azure Portalon. Ezek a profilok segítségével kezelheti és az adatok és a vállalati eszközök védelme.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 01/09/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,42 +15,101 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: c9a3146b1ad5f6f7c439d2e49cf534e14d154f76
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: bc28bca31c43140a7bca528655825bab60c53be1
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728701"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203518"
 ---
-# <a name="what-are-microsoft-intune-device-profiles"></a>Mik azok a Microsoft Intune-eszközprofilok?
+# <a name="apply-features-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Az eszközök Microsoft Intune-ban eszközprofilok segítségével funkciók beállításainak alkalmazása
 
-A Microsoft Intune olyan beállításokat és funkciókat kínál, amelyeket Ön engedélyezhet vagy letilthat a vállalatához tartozó különböző eszközökön. Ezek a beállítások és funkciók profilok használatával kezelhetők. Néhány példa profilok használatára: 
+A Microsoft Intune tartalmazza a beállításokat és funkciókat, engedélyezése vagy letiltása a különböző eszközökön, a szervezeten belül. Ezek a beállítások és funkciók "profilok" kerülnek. Különböző eszközök, profilokat hozhat létre különböző platformokon, beleértve az iOS, Android, és a Windows és majd a alkalmazni a profil a szervezetnél található eszközökön az Intune.
 
-- A vállalati Wi-Fi-hez különböző eszközöknek hozzáférést biztosító Wi-Fi-profil
-- A vállalati hálózaton belüli VPN-kiszolgálóhoz különböző eszközöknek hozzáférést biztosító VPN-profil
+Néhány példa profilok használatára:
 
-Ez a cikk áttekintést nyújt az eszközeihez létrehozható különféle profilokról. Ezeket a profilokat az eszközök egyes funkcióinak engedélyezésére vagy letiltására használhatja.
+- Windows 10 rendszerű eszközökön használja az Internet Explorerben, amely blokkolja az ActiveX-vezérlők profilsablon.
+- Az iOS és MacOS rendszerű eszközökön engedélyezése a felhasználók számára a szervezetében használt AirPrint-nyomtatókra.
+- Engedélyezi, vagy az eszköz bluetooth való hozzáférés letiltása.
+- A vállalati hálózathoz különböző eszközöknek hozzáférést biztosító Wi-Fi vagy VPN-profil létrehozása.
+- Szoftverfrissítések, beleértve a telepítéskor kezelése.
+- Futtassa az Android-eszközökön futtathat egy alkalmazást, vagy számos alkalmazás futtatása egy dedikált teljes képernyős eszköz.
 
-## <a name="before-you-begin"></a>Előkészületek
-
-A rendelkezésre álló funkciók megismeréséhez nyissa meg az [Azure Portalt](https://portal.azure.com), majd saját Intune-forrását. 
-
-Az **Eszközkonfiguráció** a következő lehetőségeket foglalja magában:
-
-- **Áttekintés**: Listázza a profilok állapotát, és további részleteket ad meg a felhasználókhoz és eszközökhöz rendelt profilokról
-- **Kezelés**: Eszközprofilok létrehozása és a profilon belül futtatandó egyéni [PowerShell-parancsfájlok](intune-management-extension.md) feltöltése
-- **Figyelés**: Sikeres végrehajtás vagy hiba feltárása a profil állapotában és a profilhoz tartozó naplók megtekintése
-- **Beállítás**: Hitelesítésszolgáltató (SCEP vagy PFX) megadása, vagy távközlésiköltség-kezelés engedélyezése a profilban
+Ez a cikk egy profil létrehozásának lépéseit sorolja fel, és áttekintést nyújt a különböző típusú profilokat hozhat létre. Ezek a profilok segítségével engedélyezése vagy letiltása az eszköz egyes funkcióinak.
 
 ## <a name="create-the-profile"></a>A profil létrehozása
 
-Az [Eszközprofilok létrehozása](device-profile-create.md) című útmutató lépésenként ismerteti egy profil létrehozásának menetét. 
+1. Az a [az Azure portal](https://portal.azure.com), jelölje be **minden szolgáltatás** > szűréséhez **Intune** > Válassza ki **Intune**.
 
-## <a name="device-features---ios-and-macos"></a>Eszközfunkciók – iOS és macOS
+2. Válassza az **Eszközök konfigurálása** lehetőséget. A következő lehetőségek állnak rendelkezésére:
 
-Az [eszközfunkciókkal](device-features-configure.md) szabályozhatók az iOS- és macOS-eszközök funkciói, például az AirPrint, az értesítések és a megosztott eszközkonfigurációk.
+    - **Áttekintés**: Listázza a profilok állapotát, és ez a témakör további részleteket a felhasználókhoz és eszközökhöz rendelt profilokról.
+    - **Kezelése**: Eszközprofilok létrehozása, és töltse fel az egyéni [PowerShell-parancsfájlok](intune-management-extension.md) a profilon belül futtatandó, és eszközöket vehet fel adatforgalmi [esim-kártya](esim-device-configuration.md).
+    - **A figyelő**: Ellenőrizze a profil sikeres vagy sikertelen állapotát, és naplók megtekintése a profilok.
+    - **A telepítő**: SCEP- vagy PFX hitelesítésszolgáltató, vagy engedélyezze a [Távközlésiköltség-kezelőben](telecom-expenses-monitor.md) a profilban.
+
+3. Válassza ki **profilok** > **profil létrehozása**. Adja meg a következő tulajdonságokat:
+
+   - **Név**: Adjon meg egy leíró nevet a profilhoz.
+   - **Description** (Leírás): Adja meg a profil leírását. A beállítás használata nem kötelező, de ajánlott.
+   - **Platform**: Válassza ki a platform az eszközök. A választható lehetőségek:  
+
+       - **Android**
+       - **Vállalati Android**
+       - **iOS**
+       - **macOS**
+       - **Windows Phone 8.1**
+       - **Windows 8.1 és újabb**
+       - **Windows 10 és újabb**
+
+   - **Profil típusa**: Válassza ki a létrehozni kívánt beállításokat. A megjelenő listában függ a **platform** választja:
+
+       - [Felügyeleti sablonok](administrative-templates-windows.md)
+       - [Egyéni](custom-settings-configure.md)
+       - [Kézbesítésoptimalizálás](delivery-optimization-windows.md)
+       - [Eszközfunkciók](device-features-configure.md)
+       - [Eszközkorlátozások](device-restrictions-configure.md)
+       - [Kiadás frissítési és mód kapcsoló](edition-upgrade-configure-windows-10.md)
+       - [Oktatás](education-settings-configure.md)
+       - [E-mail](email-settings-configure.md)
+       - [Endpoint Protection](endpoint-protection-configure.md)
+       - [Identity protection](identity-protection-configure.md)  
+       - [Kioszkmód](kiosk-settings.md)
+       - [PKCS-tanúsítvány](certficates-pfx-configure.md)
+       - [SCEP-tanúsítvány](certificates-scep-configure.md)
+       - [Megbízható tanúsítvány](certificates-configure.md)
+       - [Frissítési szabályzatok](software-updates-ios.md)
+       - [VPN](vpn-settings-configure.md)
+       - [Wi-Fi](wi-fi-settings-configure.md)
+       - [A Windows Defender ATP](advanced-threat-protection.md)
+       - [Windows Információvédelem](windows-information-protection-configure.md)
+
+     Például, ha kiválasztja **iOS** a platform típusát a profilbeállítások hasonlóan néz ki: a következő:
+
+     ![IOS-profil létrehozása az Intune-ban](./media/create-device-profile.png)
+
+4. Válassza ki **beállítások**. A beállítások kategória szerint vannak rendszerezve. Válassza ki azt a kategóriát, megjelenítheti az összes, a konfigurálható beállítások listáját.
+
+5. Amikor végzett, válassza ki a **OK** > **létrehozás** a módosítások mentéséhez.
+
+A különböző típusaival kapcsolatos további információkért olvassa el a következő szakaszok ebben a cikkben.
+
+## <a name="administrative-templates-preview"></a>Felügyeleti sablonok (előzetes verzió)
+
+[Felügyeleti sablonok](administrative-templates-windows.md) magában foglalja a több száz, az Internet Explorer, OneDrive, a távoli asztal, Word, Excel, és más Office-alkalmazásokhoz, és még sok más konfigurálható beállítások.
+
+Ezek a sablonok segítségével a rendszergazdák egy egyszerű és egyszerűsített nézete hasonló csoportházirend beállítások, de 100 %-os felhőalapú. 
 
 Ez a funkció a következőket támogatja:
+
+- Windows 10 és újabb
+
+## <a name="device-features"></a>Eszközfunkciók
+
+[Eszközfunkciók](device-features-configure.md) az iOS és macOS-eszközök, például AirPrint, értesítések és zárolási képernyőjén üzenetek szolgáltatások szabályozza.
+
+Ez a funkció a következőket támogatja:
+
 - iOS 
 - macOS
 
@@ -67,7 +126,7 @@ Ez a funkció a következőket támogatja:
 - Windows 10
 - A Windows 10 Team
 
-## <a name="delivery-optimization"></a>Kézbesítésoptimalizálás
+## <a name="delivery-optimization"></a>Teljesítésoptimalizálás
 
 [Kézbesítésoptimalizálás](delivery-optimization-windows.md) kézbesítési szoftverfrissítések jobb felhasználói élményt biztosít. Ezek a beállítások cserélni a **szoftverfrissítések** > **Windows 10 frissítési kör** beállításait.
 
@@ -87,7 +146,7 @@ Ez a funkció a következőket támogatja:
 
 - Windows 10 és újabb
 
-## <a name="identity-protection"></a>Identity protection
+## <a name="identity-protection"></a>Identitásvédelem
 
 Az [Identity protection](identity-protection-configure.md) vezérli a vállalati Windows Hello felületet Windows 10 vagy Windows 10 Mobile rendszerű eszközökön. Ezeknek a beállításoknak a konfigurálásával teheti elérhetővé a vállalati Windows Hellót a felhasználók és eszközök számára, és így adhatja meg az eszközök PIN-kódjaira és a kézmozdulatokra vonatkozó követelményeket.  
 
@@ -129,7 +188,7 @@ Ez a funkció a következőket támogatja:
 - iOS
 - macOS
 - Windows Phone 8.1
-- Windows 8.1
+- Windows 8.1
 - Windows 10
 
 ## <a name="wi-fi"></a>Wi-Fi
@@ -167,6 +226,8 @@ Ez a funkció a következőket támogatja:
 
 Az [iOS-es frissítési szabályzatok](software-updates-ios.md) az iOS-eszközökön telepítendő szoftverfrissítésekre vonatkozó iOS-es szabályzatok létrehozását és hozzárendelését mutatják be. A telepítés állapotát is áttekintheti.
 
+Frissítési szabályzatok a Windows-eszközökön, lásd: [kézbesítésoptimalizálás](delivery-optimization-windows.md). 
+
 Ez a funkció a következőket támogatja:
 - iOS
 
@@ -179,15 +240,27 @@ Ez a funkció a következőket támogatja:
 - Android
 - iOS
 - Windows Phone 8.1
-- Windows 8.1
+- Windows 8.1
 - Windows 10
 
 ## <a name="windows-information-protection-profile"></a>Windows információvédelem profil
 
-A [Windows Információvédelem](windows-information-protection-configure.md) úgy segít védekezni az adatszivárgások ellen, hogy mindeközben nem avatkozik bele az alkalmazottak munkavégzésébe. Emellett segít megvédeni a vállalati alkalmazások és adatok a vállalati tulajdonban lévő eszközök és a által használt alkalmazottak személyes eszközökön véletlenül kiszivárogjanak. Windows Information Protection használatával nincs szükség a környezet és más alkalmazások shanges.
+A [Windows Információvédelem](windows-information-protection-configure.md) úgy segít védekezni az adatszivárgások ellen, hogy mindeközben nem avatkozik bele az alkalmazottak munkavégzésébe. Emellett segít megvédeni a vállalati alkalmazások és adatok a vállalati tulajdonban lévő eszközök és a által használt alkalmazottak személyes eszközökön véletlenül kiszivárogjanak. Windows Information Protection használatával nincs szükség a környezet és más alkalmazások módosítását.
 
 Ez a funkció a következőket támogatja:
+
 - Windows 10 és újabb
+
+## <a name="shared-multi-user-device"></a>Megosztott több felhasználó-eszköz
+
+[Windows 10-es](shared-user-device-settings-windows.md) és [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) eszközök kezelése több felhasználóval, más néven megosztott eszközök vagy a megosztott számítógépek beállításokat tartalmaz. Amikor egy felhasználó bejelentkezik az eszközre, az úgy dönt, ha a felhasználó az alvási beállítások módosítása, vagy mentse a fájlt az eszközön. Egy másik példában létrehozhat egy szabályzatot, amely törli az inaktív hitelesítő adatait az ezzel helyet Windows HoloLens-eszközök.
+
+Ezek a beállítások megosztott több felhasználó-eszköz lehetővé teszi a rendszergazda szabályozhatja az eszköz funkcióit, és a megosztott eszközök Intune-nal kezelheti.
+
+Ez a funkció a következőket támogatja:
+
+- Windows 10 és újabb
+- Windows Holographic for Business
 
 ## <a name="custom-profile"></a>Egyéni profil
 
@@ -203,3 +276,7 @@ Ez a funkció a következőket támogatja:
 ## <a name="manage-and-troubleshoot"></a>Felügyelet és hibaelhárítás
 
 [A profilok kezelésével](device-profile-monitor.md) ellenőrizheti az eszközök állapotát és a hozzárendelt profilokat. Az ütközéseket okozó beállítások és az ezeket a beállításokat tartalmazó profilok azonosításával egyszerűbben lehet az ütközéseket elhárítani. [Gyakori problémák és megoldásuk](device-profile-troubleshoot.md) a Q & A segítségével dolgozhat a profilokat, többek között, mi történik, ha egy profilt törölnek, milyen okok értesítéseket küldeni az eszközöket, és egyéb biztosít.
+
+## <a name="next-steps"></a>További lépések
+A kezdéshez válassza ki a platformot:
+

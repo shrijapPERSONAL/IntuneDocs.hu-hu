@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 893e20652af68ec7f33c733376252a937f9584dc
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: f587fdf7c1690dbb0a31388a9c70b780179e541e
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642880"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210873"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Adatok beolvasása az Intune-adattárház API-ból REST-ügyféllel
 
@@ -47,7 +47,7 @@ Hozzon létre egy natív alkalmazást az Azure-ben. Ez a natív alkalmazás az �
     3.  Írjon be egy URL-címet a **Bejelentkezési URL-cím** mezőbe. A bejelentkezési URL-cím az adott forgatókönyvtől is függ, azonban ha a Postman alkalmazást tervezi használni, a következő címet írja be: `https://www.getpostman.com/oauth2/callback`. A visszahívásra az ügyfél-hitelesítési lépésben lesz szükség a Microsoft Azure AD-beli hitelesítéshez.
 4.  Kattintson a **Létrehozás** gombra.
 
-     ![Intune-adattárház API](./media/reports-get_rest_data_client_overview.png)
+     ![Intune-adattárház ügyfélalkalmazás](./media/reports-get_rest_data_client_overview.png)
 
 5. Jegyezze fel az alkalmazás **Alkalmazásazonosítóját**. Az azonosítóra szükség lesz a következő szakaszban.
 
@@ -134,7 +134,7 @@ Ahhoz, hogy beszerezzen egy új hozzáférési jogkivonatot a Postman számára,
 
 12. Válassza a **Request Token** (Jogkivonat kérése) lehetőséget.
 
-    ![A jogkivonat adatai](./media/reports-postman_getnewtoken.png)
+    ![A hozzáférési jogkivonat adatai](./media/reports-postman_getnewtoken.png)
 
 13. Adja meg a hitelesítő adatait az Active AD engedélyezési oldalán. A Postmanben most már szerepelni fog a `Bearer` nevű jogkivonat a jogkivonatok listáján.
 14. Válassza a **Use Token** (Jogkivonat használata) lehetőséget. A fejlécek listája tartalmazza az új engedélyezési kulcsértéket és a `Bearer <your-authorization-token>` értéket.
@@ -144,7 +144,7 @@ Ahhoz, hogy beszerezzen egy új hozzáférési jogkivonatot a Postman számára,
 1.  Kattintson a **Küldés** gombra.
 2.  A visszaadott adatok a Postman-válasz törzsében jelennek meg.
 
-    ![Postman 200OK](./media/reports-postman_200OK.png)
+    ![Postman ügyfélállapot egyenlő 200-as rendben](./media/reports-postman_200OK.png)
 
 ## <a name="create-a-rest-client-c-to-get-data-from-the-intune-data-warehouse"></a>REST-ügyfél (C#) létrehozása az Intune-adattárház adatainak beolvasásához
 
@@ -161,7 +161,7 @@ Az alábbi minta egy egyszerű REST-ügyfelet tartalmaz. A kód a .Net-kódtár 
 6. Az **Elfogadom** elemet választva fogadja el a NuGet-csomag licencfeltételeit.
 7. Nyissa meg a `Program.cs` fájlt a Megoldáskezelőben.
 
-    ![A projekt a Visual Studióban](./media/reports-get_rest_data_in.png)
+    ![Progam.cs és a Visual Studio Megoldáskezelőjében](./media/reports-get_rest_data_in.png)
 
 8. Írja felül a Program.cs fájlban található kódot az alábbi kóddal:  
    ```csharp

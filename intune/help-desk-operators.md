@@ -15,12 +15,12 @@ ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0c09a80f97056f7cb08d69d6a8deedc4e421a556
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 37483f0fa33db109510ee537772a7bdead79e4f3
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190302"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203552"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Segítségnyújtás a céges felhasználóknak a hibaelhárítási portál használatával
 
@@ -45,7 +45,7 @@ Ha egy felhasználó Intune-nal kapcsolatos műszaki problémával fordul az üg
 
 A hibaelhárítási panelen a **Felhasználó kiválasztása** hivatkozással lehet megnézni a felhasználó adatait. A felhasználói adatok segítséget nyújtanak a felhasználók és eszközeik aktuális állapotának áttekintésében.  
 
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza a **Hibaelhárítás** lehetőséget.
 4. A felhasználó kiválasztásához kattintson a **Kijelölés** lehetőségre.
@@ -60,7 +60,7 @@ A **Hibaelhárítás** panel használatával felhasználói információkat teki
 
 ![](/intune/media/troubleshooting-dash.png)
 
-| Terület | Név | Leírás |
+| Terület | Name (Név) | Leírás |
 | ---  | ---  | ---         |
 | 1.   | Fiók állapota  | Az aktuális Intune-bérlő állapotát jeleníti meg, amely lehet **Aktív** vagy **Inaktív**.       |
 | 2.   | Felhasználó kiválasztása  | Az aktuálisan kiválasztott felhasználó neve. Új felhasználó kiválasztásához kattintson a **Felhasználó váltása** lehetőségre.       |
@@ -80,7 +80,7 @@ Az ügyfélalkalmazások tulajdonságai.
 
 | Tulajdonság      | Leírás                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Név          | Az alkalmazás neve.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Name (Név)          | Az alkalmazás neve.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | Operációs rendszer            | Az eszközön telepített operációs rendszer.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | Típus          | Mindegyik alkalmazáshoz kiválaszthat egy hozzárendelési típust.  <br> **Elérhető** – A felhasználók a Céges portál alkalmazásban vagy webhelyen telepítik az alkalmazást.  <br> **Nem alkalmazható** – Az alkalmazás nincs telepítve, vagy nem jelenik meg a Céges portálon. <br> **Eltávolítás** – A rendszer eltávolítja az alkalmazást a kiválasztott csoportok eszközeiről.  <br> **Regisztrációval vagy anélkül is elérhető** – Az alkalmazás hozzárendelése olyan felhasználók csoportjaihoz, akik eszközei nincsenek regisztrálva az Intune-ban. |
 | Utolsó módosítás | Az eszköztípus neve.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
@@ -109,7 +109,7 @@ Az alkalmazásvédelmi szabályzat az Enterprise Mobility Solution- (EMS-) techn
 | Tulajdonság    | Leírás                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
 | Állapot      | Az eszköz tulajdonlástípusa (**céges**, **személyes** vagy **ismeretlen**). |
-| Alkalmazás neve    | Az alkalmazás neve                                                           |
+| App neve    | Az alkalmazás neve                                                           |
 | Eszköz neve | Az eszköztípus neve.                                                       |
 | Eszköz típusa | Az eszköztípus neve.                                                       |
 | Házirendek    | Az eszköz tulajdonlástípusa (**céges**, **személyes** vagy **ismeretlen**). |
@@ -125,7 +125,7 @@ A táblázat az Intune által kezelt eszközök alkalmazásvédelmi szabályzata
 
 | Tulajdonság    | Leírás                                                                                                                                |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Név        | Az alkalmazás neve.                                                                                                        |
+| Name (Név)        | Az alkalmazás neve.                                                                                                        |
 | Telepítve    | Az egyes felhasználók alkalmazásvédelmi alkalmazásainak állapota. Az alkalmazások lehetséges állapotai: **Bejelentkezett** és **Nem bejelentkezett**. |
 | Platform    | Az eszköz tulajdonlástípusa (**céges**, **személyes** vagy **ismeretlen**).                                               |
 | Beléptetés  | Az eszköztípus neve.                                                                                                     |
@@ -159,7 +159,7 @@ A megfelelőségi szabályzatok tulajdonságai.
 | Tulajdonság      | Leírás                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Hozzárendelés    | Az egyes felhasználók alkalmazásvédelmi alkalmazásainak állapota. Az alkalmazások lehetséges állapotai: **Bejelentkezett** és **Nem bejelentkezett**. |
-| Név          | Az alkalmazás neve.                                                                                                        |
+| Name (Név)          | Az alkalmazás neve.                                                                                                        |
 | Operációs rendszer            | Az eszközön telepített operációs rendszer.                                                                                       |
 | Szabályzattípus   | Az eszköz tulajdonlástípusa (**céges**, **személyes** és **ismeretlen**).                                               |
 | Utolsó módosítás | Az eszköztípus neve.                                                                                                     |
@@ -187,7 +187,7 @@ Az alkalmazásvédelmi szabályzat az EMS-technológiával integrált mobilalkal
 | Tulajdonság    | Leírás                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
 | Állapot      | Az eszköz tulajdonlástípusa (**céges**, **személyes** vagy **ismeretlen**). |
-| Alkalmazás neve    | Az alkalmazás neve                                                           |
+| App neve    | Az alkalmazás neve                                                           |
 | Eszköz neve | Az eszköztípus neve.                                                       |
 | Eszköz típusa | Az eszköztípus neve.                                                       |
 | Házirendek    | Az eszköz tulajdonlástípusa (**céges**, **személyes** vagy **ismeretlen**). |
@@ -204,7 +204,7 @@ A konfigurációs szabályzatok tulajdonságai.
 | Tulajdonság      | Leírás                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Hozzárendelés    | Az egyes felhasználók alkalmazásvédelmi alkalmazásainak állapota. Az alkalmazások lehetséges állapotai: **Bejelentkezett** és **Nem bejelentkezett**. |
-| Név          | Az alkalmazás neve.                                                                                                        |
+| Name (Név)          | Az alkalmazás neve.                                                                                                        |
 | Operációs rendszer            | Az eszközön telepített operációs rendszer.                                                                                       |
 | Szabályzattípus   | Az eszköz tulajdonlástípusa (**céges**, **személyes** vagy **ismeretlen**).                                               |
 | Utolsó módosítás | Az eszköztípus neve.                                                                                                     |
@@ -233,7 +233,7 @@ Az alkalmazásvédelmi szabályzat az EMS-technológiával integrált mobilalkal
 | Tulajdonság    | Leírás                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
 | Állapot      | Az eszköz tulajdonlástípusa (**céges**, **személyes** vagy **ismeretlen**). |
-| Alkalmazás neve    | Az alkalmazás neve                                                           |
+| App neve    | Az alkalmazás neve                                                           |
 | Eszköz neve | Az eszköztípus neve.                                                       |
 | Eszköz típusa | Az eszköztípus neve.                                                       |
 | Házirendek    | Az eszköz tulajdonlástípusa (**céges**, **személyes** vagy **ismeretlen**). |
@@ -254,7 +254,7 @@ A Regisztrációs hibák táblázat a sikertelen regisztrációs kísérleteket 
 
 Egy hibasort kijelölve további adatokat jeleníthet meg.
 
-| Szakasz | Leírás |
+| Section | Leírás |
 |-------------|----------|
 | Hiba részletei | A hiba részletes leírása. |
 | Lehetséges megoldások | Javasolt lépések a hiba megoldásához. Bizonyos hibákat nem lehet javítani. |
@@ -271,6 +271,15 @@ Egy hibasort kijelölve további adatokat jeleníthet meg.
 | Sikertelen regisztrációs hitelesítés | Valaki a Céges portál régi verziójával próbált regisztrálni. |
 | Nem támogatott eszköz | Az eszköz nem felel meg az Intune-regisztráció minimális követelményeinek. |
 | Regisztrációs korlátozások miatt letiltva | A regisztráció le lett tiltva egy rendszergazda által konfigurált regisztrációs korlátozás miatt. |
+| Eszköz verziószáma túl alacsony | A rendszergazda hogyan konfigurálta az eszközregisztrációs korlátozás igénylő magasabb eszköz verzióját. |
+| Eszköz-verziója túl magas | A rendszergazda hogyan konfigurálta az eszközregisztrációs korlátozás igénylő alacsonyabb eszköz verzióját. |
+| A személyes eszközök nem regisztrálhatók | A rendszergazda hogyan konfigurálta az eszközregisztrációs korlátozás személyes regisztrációk blokkolására, és a sikertelen eszközt a vállalati előre meghatározott nem volt. |
+| Eszközplatform blokkolva | A rendszergazda hogyan konfigurálta az eszközregisztrációs korlátozás, amely blokkolja az eszköz platformja. |
+| Bulk token lejárt. | A kiépítési csomag a csoportos jogkivonat lejárt. |
+| Az autopilot-eszköz vagy nem található részletei | Az Autopilot-eszköz nem található, amikor regisztrálni próbál. |
+| Nem található vagy nincs hozzárendelve autopilot-profil | Az eszköz nem rendelkezik aktív Autopilot-profil. |
+| Az autopilot-regisztrációs módszer nem várt | Az eszköz regisztrációját a nem engedélyezett metódus használatával. |
+| Az autopilot-eszköz eltávolítva | Az eszközt próbál regisztrálni a fiókhoz tartozó Autopilot eltávolították. |
 | Eszközök maximális száma elérve | A regisztráció le lett tiltva egy rendszergazda által konfigurált eszközkorlátozás miatt. |
 | Apple-bevezetés | Az iOS-eszközök regisztrációja jelenleg le van tiltva egy Intune-beli hiányzó vagy lejárt Apple MDM Push-tanúsítvány miatt. |
 | Az eszköz nincs előzetesen regisztrálva | Az eszközt nem regisztrálták előre, mert annak céges és személyes regisztrációját egy rendszergazda letiltotta. |

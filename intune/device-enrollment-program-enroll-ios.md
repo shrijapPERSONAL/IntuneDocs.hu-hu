@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 1af474063ec7b6ccac2a36afbec421767f79444a
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: afddf57f93ef2308ce8e8fd8aab8d74c3419a3ea
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642846"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203416"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS-eszközök automatikus regisztrálása az Apple készülékregisztrációs programjával (DEP)
 
@@ -192,7 +192,15 @@ Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt
     | <strong>Nagyítás</strong> | Lehetőséget nyújt a felhasználónak a képernyő nagyítására az eszköz beállításakor. |
     | <strong>Siri</strong> | Lehetőséget nyújt a felhasználónak a Siri beállítására. |
     | <strong>Diagnosztikai adatok</strong> | Megjeleníti a **Diagnosztika** képernyőt. Ezen a képernyőn a felhasználó diagnosztikai adatokat küldhet az Apple-nek. |
-
+    | <strong>Megjeleníti a képviselő hangvételét</strong> | Lehetővé teheti a felhasználó, kapcsolja be a megjelenítendő képviselő hangvételét. |
+    | <strong>Adatvédelem</strong> | Az adatvédelmi képernyő megjelenítése a felhasználónak. |
+    | <strong>Android-áttelepítés</strong> | A felhasználónak, elvégezhető a migrálás egy Android-eszközön az a dátum. |
+    | <strong>iMessage és a facetime engedélyezése</strong> | Lehetővé teheti a felhasználó iMessage és FaceTime beállítani. |
+    | <strong>Előkészítés</strong> | Bevezetési tájékoztató képernyők felhasználói képzés, például fedőlap és többfeladatos feldolgozáshoz és a vezérlőközpont megjelenítése. |
+    | <strong>Tekintse meg a Migrálás</strong> | Lehetővé teheti a felhasználó, eszköz tekintse meg az adatok áttelepíthetők. |
+    | <strong>Képernyő idő</strong> | A képernyő idő képernyő megjelenítéséhez. |
+    | <strong>Szoftverfrissítés</strong> | A kötelező frissítés képernyő megjelenítéséhez. |
+    | <strong>SIM-telepítő</strong> | Lehetővé teheti a felhasználó mobil csomag hozzáadásához. |
 
 14. Válassza az **OK** gombot.
 

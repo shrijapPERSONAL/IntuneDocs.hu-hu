@@ -14,12 +14,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 65457a65504b633018bb61851f16c8c65fa1c806
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2282ba4dd3caf8c71c8624884bc124393ea52d2f
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185678"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203093"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>iOS-es vagy macOS-es eszközfunkció-beállítások megadása az Intune-ban
 
@@ -30,7 +30,7 @@ Az eszközfunkciókkal az iOS és macOS rendszerű eszközök számos különbö
 - Az AirPrint és az AirPlay beállításai
 - A kezdőképernyő elrendezése
 - Alkalmazások értesítései
-- Megosztott eszköz konfigurációja
+- Üzenet a zárolási képernyőn
 - Az egyszeri bejelentkezés beállítása
 - Webtartalomszűrés
 
@@ -38,24 +38,24 @@ Ez a cikk bemutatja az iOS-es eszközfunkció-profilok konfigurálásának alapj
 
 ## <a name="create-a-device-profile"></a>Eszközprofil létrehozása
 
-1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** lehetőséget, szűrjön az **Intune**-ra, és válassza a **Microsoft Intune** elemet.
 3. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
 4. Adja meg a következő tulajdonságokat:
 
    - **Név**: Adja meg az új profil leíró nevét.
-   - **Leírás:** Itt adhatja meg a profil leírását. (Nem kötelező, de ajánlott a használata.)
+   - **Description** (Leírás): Adja meg a profil leírását. (Ez a beállítás, nem kötelező, de ajánlott.)
    - **Platform**: Válassza ki a platform típusát:
      - **iOS**
      - **macOS**
-   - **Profil típusa**: Válassza az **Eszközfunkciók** lehetőséget.
-   - **Beállítások**: Az elérhető beállításokat a választott platform határozza meg. Az alábbi cikkek ismertetik az egyes profiltípusok beállításait:
+   - **Profil típusa**: Válassza ki **eszközfunkciók**.
+   - **Beállítások**: A beállítások a választott platformtól függ. Az alábbi cikkek ismertetik az egyes profiltípusok beállításait:
 
      - [AirPrint-beállítások iOS-re és MacOS-re](air-print-settings-ios-macos.md)
      - [AirPlay-beállítások iOS-re](airplay-settings-ios.md)
      - [Kezdőképernyő-elrendezési beállítások iOS-re](home-screen-settings-ios.md)
      - [Alkalmazások értesítési beállításai iOS-re](app-notification-settings-ios.md)
-     - [Közös használatú eszközök konfigurációs beállításai iOS-re](shared-device-settings-ios.md)
+     - [Zárolási képernyő üzenetek beállításai iOS-hez](shared-device-settings-ios.md)
      - [Az Intune konfigurálása egyszeri bejelentkezéshez iOS-eszközökön](sso-ios.md)
      - [Webtartalomszűrő-beállítások iOS-re](web-content-filter-settings-ios.md)
 

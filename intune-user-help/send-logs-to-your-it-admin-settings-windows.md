@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/25/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,20 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1e9b9908fcc48e9137c07f9a5397661d66e5be95
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.openlocfilehash: 88107a580eb72f647bb7c32d52ed5d3c848cd392
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146739"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203314"
 ---
 # <a name="send-logs-to-your-company-support-from-the-settings-app-for-windows-10"></a>Naplók küldése a cég informatikai támogatási szolgálatának a Windows 10 Gépház alkalmazásából
 
-Ha a cég által felügyelt Windows 10-eszközén használat közben hibaüzenet jelenik meg, a probléma megoldásához e-mailben elküldheti a cég informatikai támogatási szolgálatának a hibával kapcsolatos információkat. Ezek az információk az eszközön tárolt, _diagnostic log_ (diagnosztikai napló) nevű speciális dokumentumban találhatók.
+Használja a gépház alkalmazás hibaelhárítása a Windows 10 céges portál. Ha a probléma a Windows 10-es eszközön az alkalmazás használata során, írhat e-mailt a támogatási csapat segítségét. Események és a céges portál alkalmazásban jelentkező hibákról menti az eszközön tárolt nevű speciális dokumentumban találhatók egy _diagnosztikai napló_. Tartalmazhat további elemzések a hibával kapcsolatban, és ha exportált hasznosak lehetnek a támogatási csapatok.
 
-1. Nyissa meg a Windows **Gépház** alkalmazást a **Start menü** **Gépház** gombját kiválasztva. Kereshet a „Gépház” kifejezésre is a keresősávban.
+1. Megnyitásához a **beállítások** alkalmazást, nyissa meg a **Start** menü > **beállítások**. Is kereshet *beállítások* a keresősávba.
 2. Lépjen a **Fiókok** > **Hozzáférés munkahelyi vagy iskolai rendszerhez** pontra.
-3. Válassza „A felügyeleti naplófájlok exportálása” lehetőséget.
+3. Válassza ki **a felügyeleti naplófájlok exportálása**.
 
    ![A „Hozzáférés munkahelyi vagy iskolai rendszerhez” képernyő, amelyen elérhető az Exportálás a „Kapcsolódó beállítások” fejléc alatt.](./media/w10-export-logs.png)
 
