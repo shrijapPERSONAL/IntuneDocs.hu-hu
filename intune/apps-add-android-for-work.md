@@ -1,12 +1,12 @@
 ---
-title: Alkalmazások hozzárendelése androidos munkahelyi profilos eszközökhöz
+title: Felügyelt Google Play-alkalmazások hozzárendelése Android enterprise-eszközök
 titlesuffix: Microsoft Intune
-description: Az alábbi témakörből megtudhatja, hogyan végezheti el a felügyelt Google Play áruházból származó alkalmazások szinkronizálását és androidos munkahelyi profilt használó eszközökhöz való hozzárendelését.
+description: Megtudhatja, hogyan szinkronizálhatja és alkalmazások hozzárendelése Android enterprise-eszközöket a felügyelt Google Play áruházból.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5495addba30e8a958d2a49f2c04ee5af70d62712
-ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
+ms.openlocfilehash: 135aa120d8c0e441c59e9b9b3c5bb8ee6aa17229
+ms.sourcegitcommit: 8c1590db761cc411369cae26677f909d3a8ca297
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305930"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "54239574"
 ---
-# <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Alkalmazások hozzárendelése androidos munkahelyi profilos eszközökhöz az Intune-ban
+# <a name="assign-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Vállalati Android-eszköz Intune-nal felügyelt Google Play-alkalmazások hozzárendelése
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-A vállalati Android az androidos munkahelyi profilt használó és a kioszkos eszközökhöz használható program. Androidos munkahelyi profilos eszközök esetén a vállalati Android olyan funkciókat jelent, amelyekkel elkülöníthetőek a személyes alkalmazások és adatok a munkahelyi alkalmazásoktól és adatoktól. A vállalati Android további felügyeleti lehetőségeket és adatvédelmet biztosít, amikor a felhasználók Android-eszközt használnak munkavégzésre. Az Intune-nal úgy telepítheti az alkalmazásokat és a beállításokat az androidos munkahelyi profilos eszközökre, hogy elkülöníti egymástól a munkához kapcsolódó és a személyes adatokat. Minden olyan alkalmazás, amelyet az androidos munkahelyi profilos eszközökön telepít, a felügyelt Google Play áruházból szerezhető be. Az alkalmazások androidos munkahelyi profilos eszközökhöz való hozzárendelése eltér a hagyományos androidos eszközökhöz való hozzárendeléstől. Jelentkezzen be az áruházba, keresse meg a kívánt alkalmazásokat, majd hagyja jóvá a választást. Az alkalmazás megjelenik az Azure Portal **Licencelt alkalmazások** lapján, és a hozzárendelése ugyanúgy kezelhető, mint bármely más alkalmazásé.
+Android enterprise Android munkahelyi profilos eszközök, dedikált/kioszkok, a programot, és teljes körűen felügyelt eszközökre. Androidos munkahelyi profilos eszközök esetén a vállalati Android olyan funkciókat jelent, amelyekkel elkülöníthetőek a személyes alkalmazások és adatok a munkahelyi alkalmazásoktól és adatoktól. A vállalati Android további felügyeleti lehetőségeket és adatvédelmet biztosít, amikor a felhasználók Android-eszközt használnak munkavégzésre. Az Intune-nal úgy telepítheti az alkalmazásokat és a beállításokat az androidos munkahelyi profilos eszközökre, hogy elkülöníti egymástól a munkához kapcsolódó és a személyes adatokat. Minden olyan alkalmazás, amelyet az androidos munkahelyi profilos eszközökön telepít, a felügyelt Google Play áruházból szerezhető be. Az alkalmazások androidos munkahelyi profilos eszközökhöz való hozzárendelése eltér a hagyományos androidos eszközökhöz való hozzárendeléstől. Jelentkezzen be az áruházba, keresse meg a kívánt alkalmazásokat, majd hagyja jóvá a választást. Az alkalmazás megjelenik az Azure Portal **Licencelt alkalmazások** lapján, és a hozzárendelése ugyanúgy kezelhető, mint bármely más alkalmazásé.
 
 Ha saját üzletági (LOB) alkalmazásokat hozott létre, azok hozzárendelését is elvégezheti az alábbiak szerint:
 - Hozzon létre egy Google Developer-fiókot, amellyel saját területen tehet közzé alkalmazásokat a Google Play Áruházban.
