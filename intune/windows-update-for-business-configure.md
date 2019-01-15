@@ -2,10 +2,10 @@
 title: A Windows Update Vállalatoknak konfigurálása a Microsoft Intune-ban – Azure | Microsoft Docs
 description: A profilok szoftverfrissítési beállításainak frissítésével frissítési kört hozhat létre, áttekintheti a megfelelőséget, és szüneteltetheti a Windows Update Vállalatoknak frissítéseit a Microsoft Intune Windows 10-es eszközökön való használatával.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 01/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: c0ab63ab8832db69ecf27361dc4fe4c9a1196db3
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: ccb91082a3226ec4091a139d31796fd77bdf0616
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203484"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297383"
 ---
 # <a name="manage-software-updates-in-intune"></a>Szoftverfrissítések kezelése az Intune-ban
 
@@ -106,7 +106,7 @@ A kialakított frissítési körök hozzárendelhetők az eszközcsoportokhoz. F
 
    - **A felhasználó felfüggesztése Windows-frissítések**: Alapértelmezés szerint engedélyezett. Ezzel a beállítással blokkolhatja vagy engedélyezheti a felhasználók számára történő telepítésének felfüggesztése használja a *beállítások* gépek. 
       
-   - **Kézbesítésoptimalizálásos letöltési mód**: Válassza ki a módszert, amelyhez az eszközök letöltik a Windows-frissítéseket. További információ: [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
+   - **Kézbesítésoptimalizálásos letöltési mód**: Kézbesítésoptimalizálás a Windows 10 frissítési kör szoftverfrissítések alatt részeként már nincs konfigurálva. Kézbesítésoptimalizálás most keresztül az eszköz konfigurációs van beállítva. Azonban a fenti konfiguráció marad a konzolban. Ezeket a korábbi konfigurációkat eltávolíthatja őket szerkesztésével *nincs konfigurálva*, de ezeket más módon nem módosíthatja. Tekintse meg a régi és új-csoportházirend közötti ütközések elkerülése érdekében [helyezheti át meglévő frissítési körök kézbesítésoptimalizálás az](delivery-optimization-windows.md#move-from-existing-update-rings-to-delivery-optimization) és majd helyezze át a beállításokat egy kézbesítési optimalizálás profilhoz. 
 
 5. Ha elkészült, válassza az **OK** lehetőséget. A **Frissítési kör létrehozása** területen válassza a **Létrehozás** lehetőséget.
 

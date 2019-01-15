@@ -6,7 +6,7 @@ keywords: Intune-adattárház
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 01/11/2010
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,25 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 0f39b0cb758c8c62da2e76ef8eaff07264ff3f3a
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: 3fce49decb7574d32d1923a77bb2cca28384ce11
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642761"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297230"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Az Intune-adattárház API módosítási naplója
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Maradjon naprakész az Intune-adattárház frissítéseivel kapcsolatban.
+
+## <a name="1812"></a>1812 
+_Kiadás dátuma: 2018. December_
+
+### <a name="enrollment-activities-collection-released-to-v10"></a>Regisztráció tevékenységek gyűjtemény nyilvánosan 1.0-s verzió 
+
+A beléptetési aktivitást gyűjtemény már elérhető az 1.0-s verziója. Ez a gyűjtemény segítségével megismerheti a regisztrációs hiba mennyiségi és trendeket a környezetben. További információkért lásd: [enrollmentActivities](intune-data-warehouse-collections.md#enrollmentactivities), [enrollmentEventStatuses](intune-data-warehouse-collections.md#enrollmenteventstatuses), [enrollmentFailureCategories](intune-data-warehouse-collections.md#enrollmentfailurecategories), és [ enrollmentFailureReasons](intune-data-warehouse-collections.md#enrollmentfailurereasons).
 
 ## <a name="1808"></a>1808
 _Kiadás dátuma: 2018. augusztus_
@@ -36,9 +43,9 @@ _Kiadás dátuma: 2018. augusztus_
 
 Most már használható az Intune Adattárház v1.0-ás verziója az `api-version=v1.0` lekérdezésparaméter megadásával. Az Adattárház gyűjteményeinek frissítései hozzáadó jellegűek, és nem okoznak fennakadást a meglévő forgatókönyvekben.
 
-### <a name="enrollment-failure-collection-released-to-beta"></a>Regisztrációs hibagyűjtemények elérhetőek béta verzióban
+### <a name="enrollment-activities-collection-released-to-beta"></a>Regisztráció tevékenységek gyűjtemény béta általánosan elérhető
 
-Az új `Enrollment Failure` gyűjtemény elérhető béta verzióban Ennek a gyűjteménynek a használatával megismerheti a regisztrálás előrehaladását, és megtekintheti a leggyakoribb hibákat. 
+Az új `Enrollment Activities` gyűjtemény elérhető béta verzióban Ennek a gyűjteménynek a használatával megismerheti a regisztrálás előrehaladását, és megtekintheti a leggyakoribb hibákat. 
 
 
 ## <a name="1805"></a>1805
