@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: e9d3b82fb544b1c73671438440b108573343795a
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: e7b60ecbf2a9a110b68807f8d1dce4db21f8f61d
+ms.sourcegitcommit: 912aee714432c4a1e8efeee253ca2be4f972adaa
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53324905"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54316916"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Android-alkalmazások előkészítése alkalmazásvédelmi szabályzatokkal való felügyeletre az Intune alkalmazásburkoló eszközével
 
@@ -63,7 +63,7 @@ Az eszköz futtatása előtt olvassa el a következő cikket: [Az alkalmazásbur
 
 2.  Fogadja el a licencszerződést, majd fejezze be a telepítést.
 
-Jegyezze fel a mappa nevét, ahová az eszközt telepítette. Az alapértelmezett hely a következő: C:\Program Files (x86) \Microsoft Intune Mobile Application Management\Android\App Alkalmazásburkoló eszköz.
+Jegyezze fel a mappa nevét, ahová az eszközt telepítette. Az alapértelmezett hely a következő: C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool.
 
 ## <a name="run-the-app-wrapping-tool"></a>Az alkalmazásburkoló eszköz futtatása
 
@@ -147,39 +147,6 @@ A lehetséges hamisítási, információfelfedési és a jogok kiterjesztéséb�
 -   Ügyeljen rá, hogy az alkalmazás megbízható forrásból származzon.
 
 -   Tegye biztonságossá a beburkolt alkalmazást tartalmazó kimeneti könyvtárat. Fontolja meg a kimeneti oldal számára egy felhasználói szintű könyvtár használatát.
-
-## <a name="requiring-user-login-prompt-for-an-automatic-app-we-service-enrollment-requiring-intune-app-protection-policies-in-order-to-use-your-wrapped-android-lob-app-and-enabling-adal-sso-optional"></a>Felhasználói bejelentkezési kérelem kérése egy APP-WE-szolgáltatás automatikus regisztrálásához, Intune-alkalmazásvédelmi szabályzatok kérése a burkolt Android LOB-alkalmazás használatához, valamint az ADAL SSO engedélyezése (nem kötelező)
-
-Az alábbiakban útmutatást találhat egy APP-WE szolgáltatás automatikus regisztrációjához szükséges, az alkalmazásindításkor megjelenő felhasználói kérés beállításához (ebben a szakaszban erre **alapértelmezett regisztráció** néven hivatkozunk), valamint ahhoz, hogy hogyan kényszerítheti az Intune alkalmazásvédelmi szabályzatait, hogy csak az Intune által védett felhasználók számára engedélyezzék a burkolt Android LOB-alkalmazás használatát. A cikk emellett ismerteti, hogyan engedélyezhető az SSO a burkolt Android LOB-alkalmazáshoz. 
-
-> [!NOTE] 
-> Az **alapértelmezett regisztráció** előnyei közé tartozik egy egyszerűsített módszer az eszközön található alkalmazás az APP-WE szolgáltatástól lekért szabályzatához.
-
-### <a name="general-requirements"></a>Általános követelmények
-* Az Intune SDK csapata kérni fogja az alkalmazás azonosítóját. Ezt az [Azure Portalon](https://portal.azure.com/), a **Minden alkalmazás** terület **Alkalmazásazonosító** oszlopában találhatja meg. Az Intune SDK csapatát e-mailen keresztül érdemes felkeresni (msintuneappsdk@microsoft.com).
-     
-### <a name="working-with-the-intune-sdk"></a>Az Intune SDK használata
-Ezek az utasítások minden olyan Android- és Xamarin-alkalmazásra vonatkoznak, amelyek Intune-alkalmazásvédelmi szabályzatokat szeretnének kérni a végfelhasználói eszközöktől.
-
-1. Konfigurálja az ADAL-t az [Androidos Intune SDK útmutatójában](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal) megadott lépések alapján.
-
-> [!NOTE]
-> Az alkalmazáshoz tartozó „ügyfél-azonosító” kifejezés megfelel az alkalmazáshoz tartozó Azure Portal-alkalmazásazonosítónak. 
-> * Az SSO engedélyezéséhez a 2. „Common ADAL configurationre” van szükség.
-
-2. Az alapértelmezett regisztráció engedélyezéséhez írja az alábbi értéket a jegyzékfájlba:
-   ```xml
-   <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
-   ```
-   > [!NOTE] 
-   > Ez lehet az alkalmazás egyetlen MAM-WE-integrációja. Ha az alkalmazás többször próbál meg MAMEnrollmentManager API-kat hívni, problémák merülhetnek fel.
-
-3. A szükséges MAM-szabályzat engedélyezéséhez írja az alábbi értéket a jegyzékfájlba:
-   ```xml
-   <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
-   ```
-   > [!NOTE] 
-   > Ez kényszeríti a felhasználót, hogy letöltse a Céges portált az eszközre, és a használat előtt elvégezze az alapértelmezett regisztrációt.
 
 ### <a name="see-also"></a>Lásd még:
 - [Annak eldöntése, hogyan készíti elő az alkalmazásokat a mobilalkalmazás-kezeléshez a Microsoft Intune-nal](apps-prepare-mobile-application-management.md)

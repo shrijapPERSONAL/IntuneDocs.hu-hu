@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 0cc94da03e1288de519d08acadbf3374bb76fcd7
-ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
+ms.openlocfilehash: 00367fffa141ed2337c1089710050c9aefc857c5
+ms.sourcegitcommit: 912aee714432c4a1e8efeee253ca2be4f972adaa
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54210907"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54316950"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -164,7 +164,7 @@ Az új felületen saját szavaival fejtheti ki problémáját, valamint hibaelh�
 ### <a name="role-based-access-control"></a>Szerepköralapú hozzáférés-vezérlés
 
 #### <a name="scope-tags-for-apps----1081941---"></a>Hatókörcímkék alkalmazásokhoz <!-- 1081941 -->
-Hatókörcímkék korlátozni a szerepköröket és alkalmazásokat hozhat létre. Hatókörcímke adhat hozzá egy alkalmazáshoz, így csak is az adott hatókörcímke hozzárendelt szerepkörrel rendelkező személyek hozzáférhetnek az alkalmazáshoz. További információkért lásd: [használja a szűrő házirendek hatókörcímkék](scope-tags.md).
+Hatókörcímkék korlátozni a szerepköröket és alkalmazásokat hozhat létre. Hatókörcímke adhat hozzá egy alkalmazáshoz, így csak is az adott hatókörcímke hozzárendelt szerepkörrel rendelkező személyek hozzáférhetnek az alkalmazáshoz. Apple Volume Purchase Program (VPP) használatával vásárolt alkalmazások hatókörcímkék nem lehet hozzárendelni.  További információkért lásd: [használja a szűrő házirendek hatókörcímkék](scope-tags.md).
 
 
 
@@ -341,7 +341,7 @@ Az Intune-beli PowerShell-parancsfájlok beállíthatók úgy, hogy AAD-eszközb
 
 Forrás: Az eszköz alapértelmezett: Legalább számok
 
-A következőkre vonatkozik: Android-, Android Enterprise
+A következőkre vonatkozik: Android, Android Enterprise
 
 Ezekről a beállításokról az [Android](compliance-policy-create-android.md) és az [Android Enterprise](compliance-policy-create-android-for-work.md) oldalakon tájékozódhat.
 

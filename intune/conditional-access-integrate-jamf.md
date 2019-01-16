@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/12/2019
+ms.date: 01/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8e607dc612f71cdf72322b9fa7ecf14abb5fd809
-ms.sourcegitcommit: d54a12a836503f7e8b90346f16b7ad2d83b710dc
+ms.openlocfilehash: 971dc851714045a8a3b60dfe8ff6c6acc4419294
+ms.sourcegitcommit: 7c41f42d6e398ed46aa602ec8aaa4f39aaf92772
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270588"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54325015"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>A Jamf Pro integrálása az Intune-nal a megfelelőség érdekében
 
@@ -83,51 +83,9 @@ Az Intune csatlakoztatása a Jamf Pro meg:
 
 Miután az Intune és a Jamf közötti integráció konfigurálásához kell [megfelelőségi szabályzatok alkalmazása Jamf által felügyelt eszközökön](conditional-access-assign-jamf.md).
 
-## <a name="information-shared-from-jamf-pro-to-intune"></a>A Jamf Pro információmegosztása az Intune-nal
 
-A Jamf Pro rögzíti a felügyelt macOS-alapú eszközök eszközkészletadatait. A Jamf Pro a következő információkat továbbítja az Intune-nak:
-
-* Azure AD-eszközazonosító
-* JAMF eszközkészlet-állapot (a Jamf Pro szolgáltatásba az elmúlt 24 órán belül bejelentkezett számítógép eszközkészlet-állapota)
-* Operációs rendszer verziója
-* Azure AD-felhasználói azonosító
-* Titkosított (FileVault 2)
-* Forgalomirányító állapota
-* Jelszó: Karakterkészletek minimális száma
-* Jelszó lejárata (nap)
-* Jelszó típusa – egyszerű, alfanumerikus, vagy ismeretlen
-* Automatikus bejelentkezés tiltása
-* PIN-kód minimális hossza
-* Jelszó: az újrafelhasználásból kizárt korábbi jelszavak száma
-* Rendszer sértetlenségének védelme
-* Legutóbbi bejelentkezés
-* Architektúra típusa
-* Rendelkezésre álló RAM-tárhelyek
-* Akkumulátor kapacitása
-* Rendszerindító ROM
-* Busz sebessége
-* Gyorsítótár mérete
-* Eszköz neve
-* Csatlakozás tartományhoz
-* Jamf-azonosító
-* MAC-cím
-* Fordítás
-* Modell
-* Modellazonosító
-* Hálózati adapter sebessége
-* Magok száma
-* Processzorok száma
-* Operációs rendszer
-* Platform
-* Processzor sebessége
-* Processzor típusa
-* Másodlagos MAC-cím
-* Sorozatszám
-* SMC verziója
-* Teljes memória
-* UDID
-* Felhasználó e-mail-címe
 
 ## <a name="next-steps"></a>További lépések
 
 - [Megfelelőségi szabályzatok alkalmazása Jamf által felügyelt eszközökön](conditional-access-assign-jamf.md)
+- [Az Intune-nak küld adatokat a Jamf](data-jamf-sends-to-intune.md)

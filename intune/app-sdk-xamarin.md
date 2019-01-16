@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: a698d7a57c59a27dbd39036b1e2607e80570029f
-ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
+ms.openlocfilehash: 65a461928c377dd4a674f8f3f2eeeef148ab56b2
+ms.sourcegitcommit: 912aee714432c4a1e8efeee253ca2be4f972adaa
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54210771"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54316899"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin Bindings
 
@@ -113,12 +113,10 @@ Olyan Xamarin-alapú androidos alkalmazások esetén, amelyek nem használnak fe
 
 1.  Projektjéhez adja hozzá a [Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) NuGet-csomagot. Ezzel automatikusan hozzáadhatja az Intune APP SDK Xamarin-kötéseit, ha esetleg még nem adta volna őket meg.
 
-2.  Adjon hozzá egy `Xamarin.Forms.Forms.Init(Context, Bundle)`-hívást a 2.2-es lépésnél létrehozott `MAMApplication`-osztály `OnMAMCreate`-funkciójához. Erre azért van szükség, mert az Intune-felügyelet használata esetén az alkalmazás a háttérben is elindítható.
+2.  Adjon hozzá egy `Xamarin.Forms.Forms.Init(Context, Bundle)`-hívást a 2.2-es lépésnél létrehozott `MAMApplication`-osztály `OnMAMActivity`-funkciójához. Erre azért van szükség, mert az Intune-felügyelet használata esetén az alkalmazás a háttérben is elindítható.
 
 > [!NOTE]
 > Mivel ez a művelet felülír egy olyan függőséget, amit a Visual Studio az Intellisense automatikus kiegészítéshez használ, lehet, hogy újra kell indítania a Visual Studiot a remapper eszköz első futtatását követően ahhoz, hogy az Intellisense felismerje a változtatásokat. 
-
-Elvégezte az összetevő alkalmazásba történő beépítésének alapvető lépéseit. Következőnek kövesse a Xamarin-alapú Android-mintaalkalmazásban lévő lépéseket. Két mintát biztosítottunk, egyet a Xamarin.Forms-hoz és egyet az Androidhoz.
 
 ## <a name="requiring-intune-app-protection-policies-in-order-to-use-your-xamarin-based-android-lob-app-optional"></a>Intune alkalmazásvédelmi szabályzatok megkövetelése a Xamarin-alapú Android LOB-alkalmazások (nem kötelező) használatához 
 
@@ -144,8 +142,14 @@ Ezek az utasítások minden olyan Android- és Xamarin-alkalmazásra vonatkoznak
 Ezek az utasítások minden olyan .NET- és Xamarin-alkalmazásra vonatkoznak, amelyek Intune-alkalmazásvédelmi szabályzatokat használatát követelik meg a végfelhasználói eszközökön.
 
 1. Kövesse az ADAL dokumentációjában a [Brokered Authentication for Android](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/tree/dev/adal#brokered-authentication-for-android) (Közvetített hitelesítés az Androidhoz) szakaszban meghatározott lépéseket.
-> [!NOTE] 
-> A .NET ADAL által kibocsátott következő verzió (3.17.4) várhatóan tartalmazni fogja az ennek a működéséhez szükséges javítást.
+
+## <a name="potential-compilation-errors"></a>A lehetséges fordítási hibák
+Ezek néhány a leggyakrabban észlelt fordítási hibát jelez, amikor az alkalmazás fejlesztése Xamarin-alapú.
+
+* [Fordítási hiba CS0239](https://docs.microsoft.com/en-us/dotnet/csharp/misc/cs0239): Ez a hiba fordul elő, az űrlap ``'MainActivity.OnCreate(Bundle)': cannot override inherited member 'MAMAppCompatActivityBase.OnCreate(Bundle)' because it is sealed``.
+Bizonyos függvények jönnek létre a remapper Xamarin osztályok az öröklési módosítja, amikor `sealed` és egy új MAM-változatot hozzáadásával felülírása helyett. Egyszerűen átnevezése, felülbírálások leírtak szerint [Itt](https://docs.microsoft.com/en-us/intune/app-sdk-android#renamed-methods). Ha például `MainActivity.OnCreate()` volna neve `MainActivity.OnMAMCreate()`
+
+* [Fordítási hiba CS0507](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/cs0507): Ez a hiba fordul elő, az űrlap ``'MyActivity.OnRequestPermissionsResult()' cannot change access modifiers when overriding 'public' inherited member ...``. A remapper eszköz néhány, a Xamarin-osztályok az öröklési megváltozik, mivel a tag függvények változik `public`. Ha az felülírja ezeket a funkciókat, szükség lehet kell ezeket a felülbírálásokat `public` is.
 
 ## <a name="support"></a>Támogatás
 Ha vállalata már Intune-ügyfél, akkor a Microsoft támogató szolgálat képviselőjével együttműködve nyisson meg egy támogatási jegyet, és hozzon létre bejelentést [a GitHub hibabejelentő oldalán](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues), mi pedig segítünk, amint tudunk. 

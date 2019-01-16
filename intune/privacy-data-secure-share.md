@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8ce7b6020c9212a0379915e00e361853e2eb3259
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c7e9fe1b0b54d020c3b3a4368922d570c64ae8ee
+ms.sourcegitcommit: 7c41f42d6e398ed46aa602ec8aaa4f39aaf92772
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184114"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54325032"
 ---
 # <a name="data-security-and-sharing-in-intune"></a>Adatbiztonság és -megosztás az Intune-ban
 
@@ -63,7 +63,7 @@ Az egyes külső felekkel megosztott adatokról a következő cikkekből tájék
 - [Az Intune által a Google-nek küldött adatok](data-intune-sends-to-google.md)
 - [Az Apple által az Intune-nak küldött adatok](data-apple-sends-to-intune.md)
 - [A Google által az Intune-nak küldött adatok](data-google-sends-to-intune.md)
-- [A Jamf Pro-ból az Intune számára megosztott információk](conditional-access-integrate-jamf.md#information-shared-from-jamf-pro-to-intune)
+- [Az Intune-nak küld adatokat a Jamf Pro](data-jamf-sends-to-intune.md)
 
 ### <a name="system-center-configuration-manager-data-sharing"></a>Adatmegosztás a System Center Configuration Managerben
 
