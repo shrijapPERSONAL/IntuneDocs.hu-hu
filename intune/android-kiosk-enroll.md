@@ -1,12 +1,12 @@
 ---
-title: Vállalati androidos kioszkeszközök regisztrálása az Intune-ban
+title: A dedikált vállalati Android-eszköz Intune-regisztráció beállítása
 titlesuffix: Microsoft Intune
-description: Útmutató vállalati androidos kioszkeszközök Intune-ban való regisztrálásához.
+description: Ismerje meg, hogy miként regisztrálhatják az Android enterprise dedikált eszközök Intune-ban.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 6/21/2018
+ms.date: 1/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,43 +16,43 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 5a84bcd820b7596d1b1df01342604562c7853140
-ms.sourcegitcommit: a44359b426e19b8bf4b99eca6af2755c6d3c6fb8
+ms.openlocfilehash: 4a6818f67ab4e3b04364b412fb8ecf71227328d4
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54098317"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54386915"
 ---
-# <a name="set-up-intune-enrollment-of-android-enterprise-kiosk-devices"></a>Az Android enterprise teljes képernyős eszközök Intune-regisztráció beállítása
+# <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Dedikált vállalati Android-eszköz regisztrálása az Intune beállítása
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android-eszközök kioszk stílusú támogatja a [dedikált eszközök](https://developers.google.com/android/work/overview#company-owned-devices-for-dedicated-use) megoldás beállítása. Az ilyen eszközöknek egyetlen rendeltetése van, például digitális aláírás, jegynyomtatás vagy leltárkezelés, hogy csak néhányat említsünk. A rendszergazdák alkalmazások és webes hivatkozások egy adott körére korlátozzák az eszköz használatát. Ez azt is megakadályozza, hogy a felhasználók más alkalmazásokat adjanak az eszközhöz, vagy más műveleteket hajtsanak végre rajta.
+Android-eszközök a vállalat által birtokolt, egyszer használható, teljes képernyős stílust a dedikált eszközök megoldás beállítása támogatja. Az ilyen eszközöknek egyetlen rendeltetése van, például digitális aláírás, jegynyomtatás vagy leltárkezelés, hogy csak néhányat említsünk. A rendszergazdák alkalmazások és webes hivatkozások egy adott körére korlátozzák az eszköz használatát. Ez azt is megakadályozza, hogy a felhasználók más alkalmazásokat adjanak az eszközhöz, vagy más műveleteket hajtsanak végre rajta.
 
-Az Intune segítséget nyújt az alkalmazások és beállítások androidos kioszkeszközökre való telepítéséhez. A Vállalati Androidra vonatkozó részletekről az [A Vállalati Android követelményei](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012) című weboldal nyújt tájékoztatást.
+Az Intune segít a beállítások és alkalmazások telepítése Android dedikált eszközökre. A Vállalati Androidra vonatkozó részletekről az [A Vállalati Android követelményei](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012) című weboldal nyújt tájékoztatást.
 
 Az ezen a módon felügyelt eszközök felhasználói fiók nélkül vannak regisztrálva az Intune-ban, és egyetlen végfelhasználóhoz sincsenek hozzárendelve. Nem rendeltetésük olyan személyes használatra szánt, vagy sok felhasználóspecifikus adatot igénylő alkalmazások futtatása, mint az Outlook vagy a Gmail.
 
 ## <a name="device-requirements"></a>Eszközkövetelmények
 
-A vállalati androidos kioszkeszközként kezelt eszközöknek a következő feltételeknek kell megfelelniük:
+Eszközök az Android enterprise-dedikált eszközként kezelt követelménynek kell megfelelnie:
 
 - Android 5.1 vagy újabb operációs rendszer.
 - Az eszközökön olyan Android-disztribúciónak kell futnia, amely kapcsolódni tud a Google Mobile Services (GMS) szolgáltatáshoz. Az eszközöknek el kell érniük a GMS-t, és képesnek kell lenniük a GMS-hez való kapcsolódásra.
 
-## <a name="set-up-android-kiosk-management"></a>Az Android beállítása kioszk módú felügyelethez
+## <a name="set-up-android-dedicated-device-management"></a>Dedikált Androidos eszközök kezelésének beállítása
 
-A kioszkmód felügyelete a következő lépésekben állítható be:
+Dedikált Android-eszközök kezelésének beállításához, kövesse az alábbi lépéseket:
 
 1. A mobileszközök kezelésének előkészítését a [**Microsoft Intune** mint mobileszköz-felügyeleti (MDM) szolgáltató megadása](mdm-authority-set.md) című témakör ismerteti. Ezt elég egyszer beállítani, amikor először állítja be az Intune-t a mobileszközök felügyeletére.
 2. [Az Intune-bérlő csatlakoztatása a Vállalati Android-fiókjához](connect-intune-android-enterprise.md).
 3. [Regisztrációs profil létrehozása](#create-an-enrollment-profile).
 4. [Eszközcsoport létrehozása](#create-a-device-group).
-5. [A kioszkeszközök regisztrálása](#enroll-the-kiosk-devices).
+5. [A dedikált eszközök regisztrálása](#enroll-the-dedicated-devices).
 
 ### <a name="create-an-enrollment-profile"></a>Beléptetési profil létrehozása
 
-Kioszkeszközei regisztrálásához létre kell hoznia egy regisztrációs profilt. A profil a létrehozásakor ad egy regisztrációs jogkivonatot (véletlenszerű karakterlánc) és egy QR-kódot. Az Android operációs rendszertől és az eszköz verziójától függően [a kioszkeszköz regisztrálásához](#enroll-the-kiosk-devices) vagy a jogkivonatot, vagy a QR-kódot használhatja.
+Létre kell hoznia egy regisztrációs profilt, úgy, hogy a dedikált eszközöket regisztrálni. A profil a létrehozásakor ad egy regisztrációs jogkivonatot (véletlenszerű karakterlánc) és egy QR-kódot. Az Android operációs rendszer és az eszköz verziója, használhatja a jogkivonattal vagy QR-kód [dedikált regisztrációhoz](#enroll-the-dedicated-devices).
 
 1. Nyissa meg az [Intune portált](https://portal.azure.com), majd válassza az **Eszközregisztráció** > **Android-regisztráció** > **Kioszk- és feladatalapú eszközök regisztrációja** lehetőséget.
 2. Válassza a **Létrehozás** lehetőséget, és töltse ki a kötelező mezőket.
@@ -95,81 +95,20 @@ Egy jogkivonat/QR-kód cseréje vagy visszavonása a már regisztrált eszközö
 4. A jogkivonat cseréjéhez válassza a **Jogkivonat cseréje** lehetőséget.
 5. A jogkivonat visszavonásához válassza a **Jogkivonat visszavonása** lehetőséget.
 
-## <a name="enroll-the-kiosk-devices"></a>A kioszkeszközök regisztrálása
+## <a name="enroll-the-dedicated-devices"></a>A dedikált eszközök regisztrálása
 
-A regisztrációs profil és a dinamikus eszközcsoport létrehozása után már regisztrálhatja kioszkeszközeit. Az Android-eszközök regisztrálásának módja az operációs rendszertől függ.
+Mostantól [dedikált eszköz](android-dedicated-devices-fully-managed-enroll.md).
 
-| Regisztráció módszere | Android operációs rendszer minimális támogatott verziója |
-| ----- | ----- |
-| Kis hatótávolságú kommunikáció | 5.1 |
-| Biztonsági jogkivonat | 6.0 |
-| QR-kód | 7.0 |
-| Zero Touch | 8.0, a programban részt vevő gyártóknál |
+## <a name="managing-apps-on-android-dedicated-devices"></a>Az Android-eszközökön dedikált alkalmazások felügyelete
 
-### <a name="enroll-by-using-near-field-communication-nfc"></a>Regisztráció kis hatótávolságú kommunikáció (NFC) használatával
-
-Az NFC-t támogató Android 5.1 vagy újabb rendszerű eszközöket egy speciálisan megformázott NFC-címke létrehozásával regisztrálhatja. Használhatja saját alkalmazását vagy bármilyen NFC-címke létrehozására alkalmas eszközt. További információ: [Google Android-felügyeleti API dokumentáció](https://developers.google.com/android/management/provision-device#nfc_method).
-
-### <a name="enroll-by-using-a-token"></a>Regisztráció jogkivonat használatával
-
-Android 6 vagy újabb rendszerű eszközök esetén használhatja a jogkivonatot az eszköz regisztrálásához. 6.1-es és újabb verziók is használhatják a QR-kód beolvasásához használatakor a **afw #setup** regisztrációs módszer.
-
-1. Kapcsolja be a törölt tartalmú eszközt.
-2. Az **Üdvözlőképernyőn** válasszon nyelvet.
-3. Kapcsolódjon a **WiFi** hálózathoz, majd válassza a **TOVÁBB** lehetőséget.
-4. Fogadja el a Google feltételeit és kikötéseit, majd válassza a **TOVÁBB** lehetőséget.
-5. A Google bejelentkezési képernyőjén Gmail-fiók helyett adja meg az **afw#setup** értéket, majd válassza a **TOVÁBB** lehetőséget.
-6. Válassza a **TELEPÍTÉS** lehetőséget az **Android eszközszabályzat** alkalmazáshoz.
-7. Folytassa a szabályzat telepítését.  Bizonyos eszközök további feltételek elfogadását is kérhetik. 
-8. Az **Eszköz regisztrálása** képernyőn olvastassa be a QR-kódot az eszközzel, vagy válassza a jogkivonat manuális megadását.
-9. A regisztráció befejezéséhez kövesse a képernyőn megjelenő utasításokat. 
-
-### <a name="enroll-by-using-a-qr-code"></a>Regisztráció QR-kód használatával
-
-Android 7 vagy újabb rendszerű eszközökön az eszköz regisztrálásához beolvashatja a regisztrációs profilhoz tartozó QR-kódot.
-
-> [!Note]
-> A böngésző kicsinyítése miatt előfordulhat, hogy az eszközökkel nem lehet beolvasni a QR-kódot. A nagyítás növelése megoldja ezt a problémát.
-
-1. A QR-kód olvasása az Android-eszközön úgy indítható el, hogy többször az összes adat törlése után először megjelenő képernyőre koppint.
-2. Android 7-es és 8-as eszközökön a rendszer kérni fogja egy QR-kódolvasó telepítését. Az Android 9 és újabb rendszerű eszközökön már van telepítve QR-kódolvasó.
-3. Olvassa be a regisztrációs profil QR-kódját a QR-kódolvasóval, majd a regisztráláshoz kövesse a képernyőn megjelenő utasításokat.
-
-### <a name="enroll-by-using-google-zero-touch"></a>Regisztráció a Google Zero Touch használatával
-
-A Google Zero Touch rendszerének használatához az eszköznek támogatnia kell azt, és a szolgáltatásban részt vevő szállítótól kell származnia.  Erről a [Google Zero Touch programjának webhelyén](https://www.android.com/enterprise/management/zero-touch/) talál további információt. 
-
-
-1. Hozzon létre új konfigurációt a Zero Touch-konzolon.
-2. Az EMM DPC legördülő listából válassza a **Microsoft Intune** lehetőséget.
-3. Másolja és illessze be a következő JSON-kódot a Google Zero Touch-konzoljának Egyéb DPC beállítások mezőjébe. A *YourEnrollmentToken* szöveget írja át a regisztrációs profilja részeként létrehozott regisztrációs jogkivonatra. Ügyeljen rá, hogy a regisztrációs jogkivonat időzőjelek között legyen.
-
-```
-{ 
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME": "com.google.android.apps.work.clouddpc/.receivers.CloudDeviceAdminReceiver", 
-
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM": "I5YvS0O5hXY46mb01BlRjq4oJJGs2kuUcHvVkAPEXlg", 
-
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION": "https://play.google.com/managed/downloadManagingApp?identifier=setup", 
-
-    "android.app.extra.PROVISIONING_ADMIN_EXTRAS_BUNDLE": { 
-        "com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "YourEnrollmentToken" 
-    } 
-} 
-```
-4. Válassza az **Alkalmaz** lehetőséget.
-
-## <a name="managing-apps-on-android-kiosk-devices"></a>Alkalmazások kezelése androidos kioszkeszközökön
-
-Androidos kioszkeszközökre csak [Kötelezőnek beállítva](apps-deploy.md#to-assign-an-app) hozzárendelés-típusú alkalmazások telepíthetők. Az alkalmazások a felügyelt Google Play Áruházból lesznek telepítve ugyanúgy, mint az androidos munkahelyi profilos eszközök esetében.
+Csak olyan alkalmazásokat, hozzárendelés-típus [beállítása szükséges](apps-deploy.md#to-assign-an-app) dedikált Androidos eszközökön telepíthető. Az alkalmazások a felügyelt Google Play Áruházból lesznek telepítve ugyanúgy, mint az androidos munkahelyi profilos eszközök esetében.
 
 Az alkalmazások automatikusan frissítve lesznek a felügyelt eszközökön, amikor az alkalmazás fejlesztője frissítést tesz közzé a Google Playben.
 
-Androidos kioszkeszközökről a következő módokon távolítható el alkalmazás:
+Távolítsa el az alkalmazás Android dedikált eszközökről, a következők bármelyikét teheti:
 -   Törölje az alkalmazástelepítés Kötelező értékét.
 -   Hozzon létre központi eltávolítást az alkalmazáshoz.
 
-
 ## <a name="next-steps"></a>További lépések
-- [Androidos kioszkalkalmazások telepítése](apps-deploy.md)
-- [Androidos kioszkalkalmazás-konfigurációs szabályzatok létrehozása](device-profiles.md)
+- [Android-alkalmazások üzembe helyezése](apps-deploy.md)
+- [Androidos alkalmazáskonfigurációs szabályzatok hozzáadása](device-profiles.md)

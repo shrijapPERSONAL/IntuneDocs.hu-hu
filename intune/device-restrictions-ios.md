@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d6fb1c65199b68f7492b1f397c4f6075e345d3e8
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 80eb088063522ba3acb293776064fd98846b9a3e
+ms.sourcegitcommit: 8e3a20b2ad59d3a6789ee81b9cbe6d2c711da11d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203671"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380507"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>iOS-es beállítások engedélyezéséhez, vagy korlátozhatja a funkciókat az Intune-nal
 
@@ -112,7 +112,7 @@ Az iOS Supervised (Felügyelt) módja csak a kezdeti eszközbeállítás során,
   - **Kötelező jelszótípus**: Válassza ki a jelszó megkövetelése a szervezet. A választható lehetőségek:
     - **Eszköz alapértelmezése**
     - **numerikus**
-    - **Alfanumerikus karakterek**
+    - **Alphanumeric**
   - **Jelszavak nem alfanumerikus karaktereinek száma**: Adja meg, hány szimbólumnak, például `#` vagy `@`, kell szerepelnie a jelszóban.
   - **Jelszó minimális hossza**: Írja be a minimális hosszát, a felhasználónak meg kell adnia, (4 és 14 karakter között).
   - **Bejelentkezési hibák eszköz törlése előtt**: Adja meg, mielőtt a rendszer törölné az eszközt (között 1 – 11.) a sikertelen bejelentkezések száma.
@@ -151,12 +151,12 @@ Az iOS Supervised (Felügyelt) módja csak a kezdeti eszközbeállítás során,
 - **Zene, podcast vagy hírek (csak felügyelt) tartalom explicit iTunes**: Válasszon **blokk** explicit iTunes zene, podcast vagy hírek tartalom elkerülése érdekében. **Nincs konfigurálva** lehetővé teszi, hogy a tároló felnőttnek tartalom elérését az eszköz számára.
 - **Az iBook áruházban "erotika" tartalom letöltése**: Válasszon **blokk** meg, hogy a felhasználók leállítja az Ibooks áruházban erotikus van megjelölve, a media letöltését. **Nincs konfigurálva** lehetővé teszi, hogy a felhasználó számára "az erotikus tartalom" kategóriába könyvek letöltésének.
 - **Céges dokumentumok megtekintése a nem felügyelt alkalmazások**: **Blokk** megakadályozza, hogy a nem céges dokumentumok megtekintése a nem felügyelt alkalmazásokban. **Nincs konfigurálva** lehetővé teszi, hogy a vállalati dokumentumok bármely alkalmazásban megtekintését. Például azt szeretné, hogy a felhasználók fájlokat mentsenek a OneDrive alkalmazásból a dropbox alkalmazásba. Ezt a beállítást a konfigurálása **blokk**. Miután az eszköz megkapja a házirendet (például újraindítás után), már nem így mentése folyamatban van.
-  - **Felügyelt alkalmazások írni az ügyfelek a nem felügyelt ügyfelek engedélyezése (csak felügyelt) fiókok**: Ha a beállítása **engedélyezése**, felhasználókat adhat hozzá, vagy bármely személy Outlook kapcsolattartási adatait, beleértve az üzleti és vállalati ügyfelek a beépített névjegykezelő alkalmazásba az eszközön való szinkronizálásához. Ha a beállítása **nincs konfigurálva**, felhasználók Outlook-névjegyek a beépített névjegykezelő alkalmazásba az eszközön nem lehet hozzáadni.
+  - **Engedélyezése a felügyelt alkalmazások írni az ügyfelek a nem felügyelt ügyfelek fiókok**: Ha a beállítása **engedélyezése**, felhasználókat adhat hozzá, vagy bármely személy Outlook kapcsolattartási adatait, beleértve az üzleti és vállalati ügyfelek a beépített névjegykezelő alkalmazásba az eszközön való szinkronizálásához. Ha a beállítása **nincs konfigurálva**, felhasználók Outlook-névjegyek a beépített névjegykezelő alkalmazásba az eszközön nem lehet hozzáadni.
   
     Ez a beállítás használatához állítsa a **céges dokumentumok megtekintése a nem felügyelt alkalmazások** beállítást **blokk**.
   
 - **Nem céges dokumentumok megtekintése a céges alkalmazásokban**: **Blokk** megakadályozza, hogy a nem céges dokumentumok megtekintése a céges alkalmazásokban. **Nincs konfigurálva** engedélyezi bármilyen dokumentum megtekintését a felügyelt céges alkalmazásokban.
-  - **Nem felügyelt alkalmazások olvasni a felügyelt ügyfelek engedélyezése (csak felügyelt) fiókok**: Ha a beállítása **engedélyezése**, bármely személy iContacts alkalmazás kapcsolattartási adatokat az Outlook, a felhasználók hozzáadhatnak. **Nincs konfigurálva** megakadályozza, hogy a olvasása, többek között eltávolításakor duplikált, a beépített névjegykezelő alkalmazásba az eszközön.
+  - **Engedélyezi, hogy a nem felügyelt alkalmazások olvasni a felügyelt ügyfelek fiókok**: Ha a beállítása **engedélyezése**, bármely személy iContacts alkalmazás kapcsolattartási adatokat az Outlook, a felhasználók hozzáadhatnak. **Nincs konfigurálva** megakadályozza, hogy a olvasása, többek között eltávolításakor duplikált, a beépített névjegykezelő alkalmazásba az eszközön.
   
     Ez a beállítás használatához állítsa a **nem céges dokumentumok megtekintése a céges alkalmazásokban** beállítást **blokk**.
   

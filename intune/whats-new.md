@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 00367fffa141ed2337c1089710050c9aefc857c5
-ms.sourcegitcommit: 912aee714432c4a1e8efeee253ca2be4f972adaa
+ms.openlocfilehash: 699936a1cef35d0435b329d1f8e09a64174fe2bd
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54316950"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54387082"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,7 +42,10 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Emellett tá
 ### Role-based access control
 
 -->     
+## <a name="week-of-january-14-2019"></a>2019. január 14 hete
 
+### <a name="preview-of-support-for-android-corporate-owned-fully-managed-devices----1574342----"></a>A vállalat által birtokolt, teljes körűen felügyelt Android-eszközök támogatása előzetes verzió <!-- 1574342  -->
+Az Intune mostantól támogatja a teljes körűen felügyelt Android-eszközök a vállalat által birtokolt "eszköz tulajdonosa" forgatókönyv, ahol eszközök szorosan által felügyelt IT és a rendszer az egyes felhasználókkal kapcsolódó. Ez lehetővé teszi a rendszergazdák számára a teljes eszköz kezelése, egy kiterjesztett tartomány nem érhető el a munkahelyi profilok házirend-vezérlők kényszerítésére, és korlátozza a felhasználók, alkalmazások telepítése csak a felügyelt Google Play áruházból. További információkért lásd: [beállítása az Intune-ban Android-regisztrációs teljes körűen felügyelt eszközök](android-fully-managed-enroll.md) és [a dedikált eszközök és a teljes körűen felügyelt eszközök regisztrálásához](android-dedicated-devices-fully-managed-enroll.md).  Ne feledje, hogy ez a funkció előzetes verzióban érhető el. Az Intune bizonyos funkciók, például a tanúsítványok, megfelelőségi és feltételes hozzáférés, nem érhetők el jelenleg az Android a teljes körűen felügyelt felhasználói eszközök.
 
 ## <a name="week-of-january-7-2019"></a>2019. január 7 hete
 
@@ -115,7 +118,7 @@ Ha iOS-eszközökhöz készült konfigurációs profilt hoz létre, adhat hozzá
 [Beállításai üzenetek megjelenítéséhez a zárolási képernyőn](shared-device-settings-ios.md) beállításokat sorolja fel.
 
 #### <a name="new-app-store-doc-viewing-gaming-device-restriction-settings-added-to-ios-devices----2827760--"></a>Új App Store, dokumentumok megtekintése, játékok eszközkorlátozásokra vonatkozó beállításai az iOS-eszközök hozzáadása <!-- 2827760-->
-A **eszközkonfiguráció** > **profilok** > **profil létrehozása** > **iOS** számára Platform > **eszközkorlátozások** profiltípus > **App Store, dokumentumok megtekintése, játékok**, a következő beállítások lettek hozzáadva: Felügyelt alkalmazások írni az ügyfelek nem felügyelt ügyfelek fiókok (csak felügyelt) engedélyezése nem felügyelt alkalmazások olvasni a felügyelt ügyfelek fiókok engedélyezése (felügyelt csak) ezek a beállítások megtekintéséhez nyissa meg [eszközkorlátozások iOS](device-restrictions-ios.md#app-store-doc-viewing-gaming).
+A **eszközkonfiguráció** > **profilok** > **profil létrehozása** > **iOS** számára Platform > **eszközkorlátozások** profiltípus > **App Store, dokumentumok megtekintése, játékok**, a következő beállítások lettek hozzáadva: Lehetővé teszi az ügyfelek írni a nem felügyelt ügyfelek fiókok nem felügyelt alkalmazásai olvasni a felügyelt ügyfelek fiókok ezek a beállítások megtekintéséhez nyissa meg a felügyelt alkalmazások [eszközkorlátozások iOS](device-restrictions-ios.md#app-store-doc-viewing-gaming).
 
 #### <a name="new-notification-hints-and-keyguard-settings-to-android-enterprise-device-owner-devices----3201839-3201843---"></a>Vállalati Android-eszköz tulajdonosa eszköz új értesítés, útmutatók és keyguard beállítások <!-- 3201839 3201843 -->
 A frissítés számos új funkciót, a vállalati Android-eszköz tartalmaz az eszköz tulajdonosa futtatásakor. Ezeket a funkciókat használ, lépjen a **eszközkonfiguráció** > **profilok** > **profil létrehozása** > a **Platform**, válassza a **Android Enterprise** > a **profiltípus**, válassza a **csak az eszköz tulajdonosa** > **eszköz Korlátozások**.

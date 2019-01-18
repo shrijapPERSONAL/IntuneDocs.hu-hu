@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4b76625276a34c027ae8c74f1c6a3977c4a7e8bd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: db6aed3d87b8a8df55c5c95e52eb3dd9ccc690a7
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179949"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54386967"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Alkalmazáskonfigurációs szabályzatok hozzáadása felügyelt Android-eszközökhöz
 
@@ -32,7 +32,7 @@ Alkalmazáskonfigurációs szabályzatok használata a Microsoft Intune-ban az a
 > [!Note]  
 > Az alkalmazáskonfigurációt nem minden alkalmazás támogatja. Érdeklődjön az alkalmazás fejlesztőjénél, hogy az alkalmazás az alkalmazáskonfigurációs szabályzatok támogatásához készült-e.
 
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Válassza az **Ügyfélalkalmazások** tevékenységprofilt.
 4. Válassza az **Alkalmazáskonfigurációs szabályzatok** lehetőséget a **Felügyelet** csoportban, majd a **Hozzáadás** lehetőséget.
@@ -62,13 +62,17 @@ A konfiguráció minden kulcsához és értékéhez állítsa be az alábbiakat:
 ### <a name="supported-variables-for-configuration-values"></a>A konfigurációs értékek támogatott változói
 
 Ha változót szeretne megadni értéktípusnak, az alábbi lehetőségek közül választhat:
-- Egyszerű felhasználónév, például **John@contoso.com**
-- E-mail, például **John@contoso.com**
-- Részleges egyszerű felhasználónév, például **János**
-- Fiókazonosító, például **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
-- Eszközazonosító, például **b9841cd9-9843-405f-be28-b2265c59ef97**
-- Felhasználóazonosító, például **3ec2c00f-b125-4519-acf0-302ac3761822**
-- Felhasználónév, például **Szabó János**
+
+| Beállítás | Példa |
+|----|----|
+| Mail | john@contoso.com |
+| Egyszerű felhasználónév | john@contoso.com |
+| Részleges egyszerű felhasználónév | János |
+| Domain | contoso.com |
+| Felhasználónév | John DoE-val |
+| Fiókazonosító | fc0dc142-71d8-4b12-bbea-bae2a8514c81 |
+| Felhasználói azonosító | 3ec2c00f-b125-4519-acf0-302ac3761822 |
+| Eszköz azonosítója | b9841cd9-9843-405f-be28-b2265c59ef97 |
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Csak a konfigurált szervezeti fiókok engedélyezése a többidentitásos alkalmazásokban 
 
@@ -99,7 +103,7 @@ Amikor valamelyik eszközön sor kerül az alkalmazáskonfigurációs szabályza
 
 Az alkalmazások az Android-eszköz funkcióinak eléréséhez szükséges engedélyét is megadhatja előre. Alapértelmezés szerint az eszközengedélyeket (például a tartózkodási hely adataihoz vagy az eszköz kamerájához való hozzáférést) megkövetelő Android-alkalmazások felszólítják a felhasználókat az engedélyek elfogadására vagy elutasítására. Ha például egy alkalmazás az eszköz mikrofonját használja, a rendszer felszólítja a felhasználót, hogy adjon engedélyt az alkalmazásnak a mikrofon használatára.
 
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Válassza az **Ügyfélalkalmazások** lehetőséget.
 3. A **Felügyelet** csoportban válassza az **Alkalmazáskonfigurációs szabályzatok** lehetőséget, majd a **Hozzáadás** lehetőséget.

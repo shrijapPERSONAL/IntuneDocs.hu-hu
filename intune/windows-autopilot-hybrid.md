@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: f6a78c6612f98903fcbaa9d33b8037c5ea4a3960
-ms.sourcegitcommit: 2ff19c09a43c63556d082966727674120b516d10
+ms.openlocfilehash: f81875afffa461e036bc319febc9a6141967c440
+ms.sourcegitcommit: 8e3a20b2ad59d3a6789ee81b9cbe6d2c711da11d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54149661"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380465"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Hibrid Azure AD-hez csatlakoztatott eszközök üzembe helyezése az Intune és a Windows Autopilot használatával (előzetes verzió)
 Az Intune és a Windows Autopilot használatával elvégezheti a hibrid Azure Active Directoryhoz csatlakoztatott eszközök beállítását. Ehhez kövesse az alábbi lépéseket:
@@ -116,6 +116,9 @@ Az Active Directoryhoz készült Intune-összekötőt egy olyan Windows Server 2
 6. Válassza a **Bejelentkezés** lehetőséget.
 7. Adja meg a globális rendszergazda szerepkör, vagy az Intune-rendszergazda szerepkör felhasználói hitelesítő adatait.
 8. Navigáljon az **Eszközregisztráció** > **Windows regisztráció** > **Active Directoryhoz készült Intune-összekötő (előzetes verzió)** területre, és győződjön meg róla, hogy a kapcsolat állapota **Aktív**.
+
+ > [!NOTE]
+ > Miután **bejelentkezés** az összekötőben is igénybe vehet néhány percet, amíg megjelennek [Intune](https://aka.ms/intuneportal). Ügyeljen arra, hogy az összekötő lesz egyetlen show Ha képes sikeresen kommunikálni az Intune szolgáltatással.
 
 ### <a name="configure-web-proxy-settings"></a>Webproxy-beállítások konfigurálása
 

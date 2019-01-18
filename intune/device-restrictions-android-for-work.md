@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 671c713be805038c7c2f2608dbadd9d8afdce344
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 62c44768f17ecc82dc748eb4dfda74da421ee3b5
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203603"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54387018"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Android Enterprise eszközbeállítások engedélyezett vagy korlátozott funkciók az Intune-nal
 
@@ -87,7 +87,7 @@ Ez a cikk és az Android Enterprise eszközökön szabályozhatja a különböz�
 
 ### <a name="kiosk-settings"></a>Kioszkbeállítások
 
-Beállíthatja, hogy egy alkalmazás vagy alkalmazás számos eszközön. Ha egy eszköz kioszk módban van, csak a hozzáadott alkalmazások érhetők el.
+Beállíthatja, hogy egy alkalmazás vagy alkalmazás számos eszközön. Ha egy eszköz kioszk módban van, csak a hozzáadott alkalmazások érhetők el. Ezek a beállítások Android dedikált eszközök a alkalmazni, de nem Android a teljes körűen felügyelt dedikált eszközök.
 
 **Teljes képernyős mód**: Válassza ki, ha az eszköz elindul, egy alkalmazás vagy több alkalmazás.
 
@@ -153,7 +153,7 @@ Beállíthatja, hogy egy alkalmazás vagy alkalmazás számos eszközön. Ha egy
 
 ### <a name="connectivity"></a>Kapcsolat
 
-- **Mindig bekapcsolt VPN**: Válasszon **engedélyezése** egy VPN-ügyfél automatikusan csatlakozhat, és újból csatlakozik a virtuális Magánhálózat beállításához. A mindig bekapcsolt VPN-kapcsolatokkal a kapcsolat folyamatosan fenntartható vagy azonnal elindítható, ha a felhasználó zárolja az eszközét, ha az eszköz újraindul, vagy ha a vezeték nélküli hálózat megváltozik. 
+- **Always-on VPN**: Válasszon **engedélyezése** egy VPN-ügyfél automatikusan csatlakozhat, és újból csatlakozik a virtuális Magánhálózat beállításához. A mindig bekapcsolt VPN-kapcsolatokkal a kapcsolat folyamatosan fenntartható vagy azonnal elindítható, ha a felhasználó zárolja az eszközét, ha az eszköz újraindul, vagy ha a vezeték nélküli hálózat megváltozik. 
 
   A mindig bekapcsolt VPN beállítás az összes VPN-ügyfél számára való letiltásához válassza a **Nincs konfigurálva** lehetőséget.
 
@@ -260,7 +260,7 @@ A jelszó-beállításokat alkalmazni a munkahelyi profilt használó eszközök
 
 ### <a name="connectivity"></a>Kapcsolat
 
-- **Mindig bekapcsolt VPN**: Válasszon **engedélyezése** egy VPN-ügyfél automatikusan csatlakozhat, és újból csatlakozik a virtuális Magánhálózat beállításához. A mindig bekapcsolt VPN-kapcsolatokkal a kapcsolat folyamatosan fenntartható vagy azonnal elindítható, ha a felhasználó zárolja az eszközét, ha az eszköz újraindul, vagy ha a vezeték nélküli hálózat megváltozik. 
+- **Always-on VPN**: Válasszon **engedélyezése** egy VPN-ügyfél automatikusan csatlakozhat, és újból csatlakozik a virtuális Magánhálózat beállításához. A mindig bekapcsolt VPN-kapcsolatokkal a kapcsolat folyamatosan fenntartható vagy azonnal elindítható, ha a felhasználó zárolja az eszközét, ha az eszköz újraindul, vagy ha a vezeték nélküli hálózat megváltozik. 
 
   A mindig bekapcsolt VPN beállítás az összes VPN-ügyfél számára való letiltásához válassza a **Nincs konfigurálva** lehetőséget.
 

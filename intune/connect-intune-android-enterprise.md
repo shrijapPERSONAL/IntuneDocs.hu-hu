@@ -16,18 +16,18 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c32effb645b329c8095ec8757a980b1f3d80a4d7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 698bc4e7e2d2cf8ece1b1c17b091a91c76a7d178
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184286"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54386895"
 ---
 # <a name="connect-your-intune-account-to-your-android-enterprise-account"></a>Az Intune-fiók csatlakoztatása a Vállalati Android-fiókjához
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Az androidos munkahelyi profilos eszközök és az androidos kioszkeszközök támogatásához csatlakoztatnia kell Intune-bérlői fiókját a vállalati Android-fiókhoz. 
+Támogatásához [Androidos munkahelyi profil](android-work-profile-enroll.md), [teljes körűen felügyelt Android](android-fully-managed-enroll.md), és [Android dedikált eszközök](android-kiosk-enroll.md), az Intune-bérlői fiók kapcsolódnia kell az Android enterprise fiók.  
 
 > [!NOTE]
 > A Google- és a Microsoft-tartományok közötti interakció miatt ennél a lépésnél előfordulhat, hogy módosítania kell a böngésző beállításait.  Ügyeljen rá, hogy a „portal.azure.com” és a „play.google.com” tartomány azonos biztonsági zónában legyen található a böngészőben.
