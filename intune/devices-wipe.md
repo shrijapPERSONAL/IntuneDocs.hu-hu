@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/29/2018
+ms.date: ''
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ad2d2842672853587da1396cae6c15ebd7ade44a
-ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
+ms.openlocfilehash: 1866d658503cb2dcdf482a050d7bbd73a914858b
+ms.sourcegitcommit: 398b8a0d98e928b3406f59ab3d061554643ef60b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54122638"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54400024"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Eszközök eltávolítása összes adatuk törlésével, az eszköz kivonásával vagy regisztrációja manuális törlésével
 
@@ -81,22 +81,20 @@ Az alábbi táblázatok ismertetik, hogy milyen adatokat távolít el a rendszer
 
 |Adattípus|iOS|
 |-------------|-------|
-|Vállalati alkalmazások és az Intune által telepített egyéb vonatkozó adatok|**Vállalati portálon keresztül telepített alkalmazások:** összes és az alkalmazások el lesznek távolítva. Az alkalmazások tartalmazzák az App Store telepített és később felügyelt vállalati alkalmazások alkalmazások. <br /><br /> **Microsoft-alkalmazások mobilalkalmazás-felügyeletet használó, és megtörtént-e az App Store:** Törlődnek a vállalati alkalmazásadatok. Személyes adatokat, és az alkalmazások nem lesznek eltávolítva.|
+|Vállalati alkalmazások és az Intune által telepített egyéb vonatkozó adatok|**Vállalati portálon keresztül telepített alkalmazások:** A felügyeleti profil, az összes alkalmazás adatainak és az alkalmazások rögzített vonatkozó alkalmazások törlődnek. Az alkalmazások tartalmazzák az App Store telepített és később felügyelt vállalati alkalmazások alkalmazások. <br /><br /> **Microsoft-alkalmazások mobilalkalmazás-felügyeletet használó, és megtörtént-e az App Store:** A céges portál által nem kezelt alkalmazások esetében az alkalmazás helyi Storage mobilalkalmazás-felügyeleti (MAM)-titkosítás által védett vállalati alkalmazásadatok törlődnek. Az alkalmazáson kívüli MAM titkosítás által védett adatok titkosítva és használhatatlan állapotban maradnak, de nem törlődnek. Személyes adatokat, és az alkalmazások nem lesznek eltávolítva.|
 |Beállítások|Az Intune-szabályzat által konfigurált beállítások érvényüket vesztik. A felhasználók megváltoztathatják a beállításokat.|
 |Wi-Fi és VPN profilbeállításai|Eltávolítva.|
 |Tanúsítvány profilbeállításai|A tanúsítványok törlődnek és visszavonásra kerülnek.|
 |Kezelőügynök|Törlődik a felügyeleti profil.|
 |E-mail|Törlődnek az Intune-on keresztül telepített e-mail-profilok. Törlődnek az eszközön gyorsítótárazott e-mailek.|
-|Outlook|Törlődnek az iOS rendszerhez készült Microsoft Outlook alkalmazás által fogadott e-mailek. Ennek előfeltétele, hogy az Outlook mobilalkalmazás kötelező alkalmazásként telepítve legyen az iOS-felhasználóknál.|
 |Az Azure AD elhagyása|Törlődik az Azure AD rekord.|
-|Névjegyek |Az alkalmazásból a natív címjegyzékbe közvetlenül szinkronizált névjegyeket a rendszer eltávolítja. A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem távolíthatók el. <br /> <br />Jelenleg csak az Outlook alkalmazás használata támogatott.
 
 ### <a name="android"></a>Android
 
 |Adattípus|Android|Android Samsung Knox Standard|
 |-------------|-----------|------------------------|
 |Webhivatkozások|Eltávolítva.|Eltávolítva.|
-|Nem felügyelt Google Play-alkalmazások|A telepített alkalmazások és azok adatai megmaradnak.|A telepített alkalmazások és azok adatai megmaradnak.|
+|Nem felügyelt Google Play-alkalmazások|A telepített alkalmazások és azok adatai megmaradnak. <br /> <br />Az alkalmazás helyi Storage mobilalkalmazás-felügyeleti (MAM)-titkosítás által védett vállalati alkalmazásadatok törlődnek. Az alkalmazáson kívüli MAM titkosítás által védett adatok titkosítva és használhatatlan állapotban maradnak, de nem törlődnek. |A telepített alkalmazások és azok adatai megmaradnak. <br /> <br />Az alkalmazás helyi Storage mobilalkalmazás-felügyeleti (MAM)-titkosítás által védett vállalati alkalmazásadatok törlődnek. Az alkalmazáson kívüli MAM titkosítás által védett adatok titkosítva és használhatatlan állapotban maradnak, de nem törlődnek.|
 |Nem felügyelt üzletági alkalmazások|A telepített alkalmazások és azok adatai megmaradnak.|Az alkalmazások el lesznek távolítva, és az alkalmazás helyi adatai is törlődnek. Az alkalmazáson kívüli adatok (például amelyek az SD-kártyán vannak) nem fognak törlődni.|
 |Felügyelt Google Play-alkalmazások|Az alkalmazásadatok törlődnek. Az alkalmazások nem törlődnek. Az alkalmazáson kívüli (például az SD-kártyán lévő), Mobile Application Management- (MAM)-titkosítás által védett adatok titkosítva és használhatatlan állapotban maradnak, de a rendszer nem távolítja el azokat.|Az alkalmazásadatok törlődnek. Az alkalmazások nem törlődnek. Az alkalmazáson kívül (például az SD-kártyán lévő), MAM-titkosítás által védett adatok titkosítva maradnak, de a rendszer nem távolítja el azokat.|
 |Felügyelt üzletági alkalmazások|Az alkalmazásadatok törlődnek. Az alkalmazások nem törlődnek. Az alkalmazáson kívül (például az SD-kártyán lévő), MAM-titkosítás által védett adatok titkosítva maradnak, és használhatatlanok lesznek, de a rendszer nem távolítja el azokat.|Az alkalmazásadatok törlődnek. Az alkalmazások nem törlődnek. Az alkalmazáson kívül (például az SD-kártyán lévő), MAM-titkosítás által védett adatok titkosítva maradnak, és használhatatlanok lesznek, de a rendszer nem távolítja el azokat.|
@@ -105,9 +103,7 @@ Az alábbi táblázatok ismertetik, hogy milyen adatokat távolít el a rendszer
 |Tanúsítvány profilbeállításai|A tanúsítványok visszavonódnak, de nem törlődnek.|A tanúsítványok törlődnek és visszavonásra kerülnek.|
 |Kezelőügynök|Visszavonódik az eszköz-rendszergazdai jogosultság.|Visszavonódik az eszköz-rendszergazdai jogosultság.|
 |E-mail|Nem alkalmazható (az androidos eszközök nem támogatják az e-mail-profilokat)|Törlődnek az Intune-on keresztül telepített e-mail-profilok. Törlődnek az eszközön gyorsítótárazott e-mailek.|
-|Outlook|Az androidos Outlook alkalmazás által fogadott e-mailek törlődnek, de csak abban az esetben, ha az Outlook MAM-szabályzatokkal védett. Ellenkező esetben az Outlook nem törlődik az eszköz regisztrációjának megszüntetésekor.|Az androidos Outlook alkalmazás által fogadott e-mailek törlődnek, de csak abban az esetben, ha az Outlook MAM-szabályzatokkal védett. Ellenkező esetben az Outlook nem törlődik az eszköz regisztrációjának megszüntetésekor.|
 |Az Azure AD elhagyása|Törlődik az Azure AD rekord.|Törlődik az Azure AD rekord.|
-|Névjegyek |Az alkalmazásból a natív címjegyzékbe közvetlenül szinkronizált névjegyeket a rendszer eltávolítja. A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem távolíthatók el. <br /> <br />Jelenleg csak az Outlook alkalmazás használata támogatott.|Az alkalmazásból a natív címjegyzékbe közvetlenül szinkronizált névjegyeket a rendszer eltávolítja. A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem távolíthatók el. <br /> <br />Jelenleg csak az Outlook alkalmazás használata támogatott.
 
 ### <a name="android-work-profile"></a>Androidos munkahelyi profil
 
@@ -131,7 +127,7 @@ Az összes adat törlése csak kioszkeszközökön lehetséges. Androidos kioszk
 
 ### <a name="windows"></a>Windows
 
-|Adattípus|Windows 8.1 (MDM) és Windows RT 8.1|Windows RT|Windows Phone 8.1 és Windows Phone 8|Windows 10|
+|Adattípus|Windows 8.1 (MDM) és Windows RT 8.1|Windows RT|Windows Phone 8.1 és Windows Phone 8|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
 |Vállalati alkalmazások és az Intune által telepített egyéb vonatkozó adatok|Az EFS által védett fájloknál a kulcsok visszavonódnak. A felhasználó nem tudja megnyitni a fájlokat.|A vállalati alkalmazásokat a rendszer nem távolítja el.|Törlődnek az eredetileg a Céges portálon keresztül telepített alkalmazások. Törlődnek a vállalati alkalmazásadatok.|Törlődnek az alkalmazások. A közvetlen telepítési kulcsokat a rendszer eltávolítja.<br>A Windows 10 1703-as (alkotói frissítés) és újabb verzióinál a rendszer az Office 365 ProPlus alkalmazásokat nem távolítja el.|
 |Beállítások|Az Intune-szabályzat által konfigurált beállítások érvényüket vesztik. A felhasználók megváltoztathatják a beállításokat.|Az Intune-szabályzat által konfigurált beállítások érvényüket vesztik. A felhasználók megváltoztathatják a beállításokat.|Az Intune-szabályzat által konfigurált beállítások érvényüket vesztik. A felhasználók megváltoztathatják a beállításokat.|Az Intune-szabályzat által konfigurált beállítások érvényüket vesztik. A felhasználók megváltoztathatják a beállításokat.|

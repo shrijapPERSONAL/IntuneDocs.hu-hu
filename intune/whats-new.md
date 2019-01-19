@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 699936a1cef35d0435b329d1f8e09a64174fe2bd
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: bc7cd36390d6807bfc6c92de6c5bf071dec27aa4
+ms.sourcegitcommit: 398b8a0d98e928b3406f59ab3d061554643ef60b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387082"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54400058"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -142,9 +142,6 @@ A következőkre vonatkozik: Windows 10 és újabb
 #### <a name="more-detailed-enrollment-restriction-failure-messaging----3111564---"></a>Részletesebb regisztrációs korlátozási hiba üzenetkezelés <!-- 3111564 -->
 Részletes hibaüzenetek a regisztrációs korlátozások nem teljesülnek esetén érhetők el. Tekintse meg ezeket az üzeneteket, lépjen a **Intune** > **hibaelhárítás** >, és ellenőrizze a regisztrációs hibák tábla. További információkért lásd: a [regisztrációs hibák listája](help-desk-operators.md#configuration-policies-reference).
 
-#### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509---"></a>Hagyja ki a további beállítási asszisztens képernyők az iOS DEP-eszközökön <!-- 2687509 -->
-Jelenleg kihagyhatja a képernyők, mellett állíthatja be iOS DEP-eszközök a beállítási asszisztens képernyőinek kihagyásához amikor egy felhasználó regisztrálja az eszközt: Képviselő hangvételét, adatvédelmi, Android áttelepítési, kezdőlap gombot, iMessage & FaceTime, bevezetési, tekintse meg a Migrálási, megjelenését, képernyő idő, szoftverfrissítés, SIM telepítő megjelenítéséhez.
-Válassza ki, amely a képernyők kihagyásához, lépjen a **eszközregisztráció** > **Apple-regisztráció** > **Készülékregisztrációs programbeli token** > Válasszon egy tokent > **Profilok** > Válasszon egy profilt > **tulajdonságok** > **beállítási asszisztens testreszabása** > Válasszon **elrejtése**  bármely képernyők kihagyásához a > **OK**.
 
 
 ### <a name="monitor-and-troubleshoot"></a>Monitorozás és hibaelhárítás
