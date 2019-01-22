@@ -176,7 +176,7 @@ További információt a Managed Browser, a Microsoft Edge és az Azure AD Alkal
 ## <a name="how-to-configure-the-homepage-for-a-protected-browser"></a>Védett böngésző kezdőlapjának beállítása
 
 Ezzel a beállítással adható meg a kezdőlap, amelyet a felhasználók egy védett böngésző elindításakor vagy egy új lap létrehozásakor látnak. 
-- Ezzel a beállítással megjeleníti a weblapot a Managed Browserben.  Az Edge ehelyett a kezdőlapra mutató parancsikont jelenít meg.
+- Ezzel a beállítással megjeleníti a weblapot a Managed Browserben.  A Microsoft Edge ehelyett a kezdőlapra mutató parancsikont jelenít meg.
 - A kezdőlap parancsikonja a keresési vezérlőelem alatt ikonként jelenik meg.  Nem lehet szerkeszteni vagy törölni.
 - A kezdőlap parancsikonja megjeleníti a szervezet nevét a megkülönböztethetőség érdekében.  Mindig az első ikonként fog megjelenni.
 
@@ -266,12 +266,12 @@ Az alábbi táblázat azokat az engedélyezett formátumokat és helyettesítő 
 Mind az Intune Managed Browser, mind a Microsoft Edge szabályzattal felügyelt/védett böngészőnek számít. Jelenleg a meglévő alkalmazásvédelmi szabályzatok szerint a forgatókönyvtől és platformtól függően az Intune felügyelt alkalmazásainak webes hivatkozásai egy meghatározott böngészőben nyílnak meg. 
 
 Androidon: 
-* A Managed Browserben, ha az MB és az Edge is megtalálható az eszközön, kivéve, ha a „com.microsoft.intune.useEdge” alkalmazáskonfigurációs beállítás értéke „true” az összes Intune által felügyelt alkalmazásra, amelyre a felügyelt böngésző használata kötelező szabályzat vonatkozik.  
+* A Managed Browserben, ha az MB és a Microsoft Edge is megtalálható az eszközön, kivéve, ha a „com.microsoft.intune.useEdge” alkalmazáskonfigurációs beállítás értéke „true” az összes Intune által felügyelt alkalmazásra, amelyre a felügyelt böngésző használata kötelező szabályzat vonatkozik.  
 * A Microsoft Edge-ben, ha csak a Microsoft Edge van az eszközön, és a szabályzat erre vonatkozik.
 * A Managed Browserben, ha csak a Managed Browser van az eszközön, és a szabályzat erre vonatkozik. 
 
 Az iOS rendszeren, ha az alkalmazásokban integrálva van az Intune SDK for iOS 9.0.9+ verziója: 
-* A Managed Browserben, ha az MB és az Edge is megtalálható az eszközön, kivéve, ha a „com.microsoft.intune.useEdge” alkalmazáskonfigurációs beállítás értéke „true” az összes Intune által felügyelt alkalmazásra, amelyre a felügyelt böngésző használata kötelező szabályzat vonatkozik **vagy** a Microsoft Edge-ben, ha az telepítve van, és megkapta a szabályzatot. 
+* A Managed Browserben, ha az MB és a Microsoft Edge is megtalálható az eszközön, kivéve, ha a „com.microsoft.intune.useEdge” alkalmazáskonfigurációs beállítás értéke „true” az összes Intune által felügyelt alkalmazásra, amelyre a felügyelt böngésző használata kötelező szabályzat vonatkozik **vagy** a Microsoft Edge-ben, ha az telepítve van, és megkapta a szabályzatot. 
 * A Microsoft Edge-ben, ha csak a Microsoft Edge van az eszközön, a szabályzat erre vonatkozik, és megkapta a szabályzatot. 
 * A Managed Browserben, ha csak a Managed Browser van az eszközön, a szabályzat erre vonatkozik, és megkapta a szabályzatot.
 
