@@ -14,12 +14,12 @@ ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8b5f86a8f0d9beaef9e55d2281e3500e0c298a16
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2992dbfef4c51b8550e748bde453c85070b6910b
+ms.sourcegitcommit: 1f544172299f0990e1e13cebf3830b8c0511d6ed
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182398"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54418176"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Eszközök PIN-kódjának visszaállítása vagy eltávolítása az Intune-ban
 
@@ -55,7 +55,8 @@ A munkahelyi profilokhoz a PIN-kód alaphelyzetbe állítása művelettel hozhat
 
 ## <a name="reset-a-passcode"></a>Új PIN-kód kérése
 
-1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+
+1. Jelentkezzen be a [az Azure portal](https://portal.azure.com) azokkal a következő szerepkörök: Az Azure Active Directory globális rendszergazdája, az Azure Active Directory Intune Szolgáltatásadminisztrátor, ügyfélszolgálati operátor vagy szerepkörű rendszergazda. Szerepkörök és engedélyek teljes listáját lásd: a [Intune RBAC-táblázat](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
 2. Válassza a **Minden szolgáltatás** lehetőséget, szűrjön az **Intune**-ra, és válassza a **Microsoft Intune** elemet.
 3. Válassza az **Eszközök**, majd a **Minden eszköz** lehetőséget.
 4. Az Ön által kezel eszközök listájáról válasszon ki egy eszközt, majd válassza a **...További** lehetőséget. Majd válassza a **PIN-kód eltávolítása** távoli eszközműveletet.

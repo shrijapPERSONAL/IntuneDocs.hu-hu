@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: bc7cd36390d6807bfc6c92de6c5bf071dec27aa4
-ms.sourcegitcommit: 398b8a0d98e928b3406f59ab3d061554643ef60b
+ms.openlocfilehash: 264b7f4b476b18695c6dd0282f34a9af33b6b27f
+ms.sourcegitcommit: 1f544172299f0990e1e13cebf3830b8c0511d6ed
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54400058"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54418210"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -1252,6 +1252,54 @@ Mostantól a helyszíni Exchange-adatokhoz való Outlook Mobile-hozzáférést a
 
 ## <a name="notices"></a>Értesítések
 
+### <a name="upcoming-password-enforcement-change-for-macos-10142-in-intune---1873216--"></a>Közelgő jelszó kényszerítése módosítása az Intune-ban 10.14.2 macOS-hez <!--1873216-->
+A Microsoft megosztott MC145129 július az, hogy az Intune-csomagok újonnan integrálható az Apple megjelent-e a macOS 10.13 verzióit futtató eszközökön és a fenti "Módosítsa jelszavát, tovább Auth" beállítás. Jelenleg tervezzük szeretné visszaállítani ezt a beállítást meg februárban macOS 10.14.2-es és újabb. 
+
+#### <a name="how-does-this-affect-me"></a>Hogyan érint ez engem?
+Ez hatással van, hogy ha van, vagy tervezi, hogy macOS 10.14.2 rendszerű eszközökhöz, és nagyobb. Most, hogy az Apple vezetett be a "Change jelszó: új hitelesítési" beállítást, az Intune kényszerítheti a felhasználókat, hogy akkor megfelelő, ha a jelszóházirend leküldéssel jelszófrissítési. A macOS-felhasználók kap egy kérelmet jelszófrissítési integrálni fogjuk az új Apple-funkció, ha akkor is, ha már megfelel a jelszavát. Vegye figyelembe, hogy ha jelszó már megfelel, és nem kell jelszavak ismételt szemben követelmény, akkor a végfelhasználók lesz képes frissíteni a meglévő jelszavát. A végfelhasználók csak jelenik meg frissíteni a jelszavát, ha megpróbálnak hitelesíteni, vagy jelentkezzen be az eszközt egy kérelmet. Ha letiltja a vállalati erőforrásokhoz, mindaddig, amíg az eszköz megfelelő van megjelölve, majd, hogy, hogy a végfelhasználók számára az eszközökön a macOS 10.14.2 blokkolva van a jelszavuk, például az e-mailben vagy a SharePoint-webhelyek a vállalati erőforrásokhoz való hozzáférését. A jövőben a konfigurációs és megfelelőségi jelszóházirendek minden frissítés kényszeríti a megcélzott felhasználók frissíthetik a jelszavukat. Ez a módosítás előtt az ügyfél kutatási jelzett ügyfelek többsége nem érinti ez a módosítás a végfelhasználók általában frissítése a jelszavát a jelszó regisztrálása vagy a megfelelőség biztosítása jelszavuk kérelem fogadása után óta
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Hogyan készüljek fel a változásra?
+Szüksége lehet ahhoz, hogy a segélyszolgálat ismeri. A Mi az új lap, ha ez a változás bevezetési frissítjük. Ha nem szeretné, hogy a MacOS rendszerű eszköz jelszóházirend kényszerítését, javasoljuk, Ön megszüntetése vagy a meglévő macOS-szabályzat törlése.
+
+
+### <a name="reminder-intune-support-experience-for-premier-customers-now-in-azure-instead-of-mpo---2828727--"></a>Emlékeztető: Intune támogatási élmény a Premier szintű ügyfelek mostantól az Azure-ban MPO helyett <!--2828727-->
+A Microsoft megosztott MC147649 szeptembertől, hogy el kell távolítani a Microsoft Premier Online (MPO) portálra (premier.microsoft.com) az Intune támogatási kérések létrehozása december. Most egy kis idő után January, végén átirányítjuk hozhat létre támogatási kérelmeket csak az Intune-ban az Azure-ban. 
+
+
+#### <a name="how-does-this-affect-me"></a>Hogyan érint ez engem?
+Január folytatja, a Premier szintű támogatás kerülésről vége után támogatja a felhasználói élményt, kell nem lesz MPO a támogatási kérések létrehozásához.  Ha ehhez próbál, látni fogja nem is elérheti, elvetése, vissza kell irányítani az Intune az Azure-ban az üzenetet. Itt hozhat létre egy támogatási kérést, amely a Microsoft ügyfélszolgálatának dedikált Intune-részlegéhez kerül a probléma minél hamarabbi diagnosztizálása és megoldása érdekében. Vegye figyelembe, hogy a MPO portálon létrehozott támogatási kérések nem lehet megtekinteni az Azure Portalon. 
+
+MC171941 nemrég bejelentettük az Azure portal tartalmaz egy új támogatási szolgáltatásokat. További információ található [ https://aka.ms/new_support_experience ](https://aka.ms/new_support_experience) és a további információk hivatkozáson.
+
+Ha hibrid mobileszköz-kezelést (hibrid MDM) vagy megosztott kezelést használ, az MPO portálon továbbra is létrehozhat támogatási kéréseket a ConfigMgrhez, de az Intune-ra vonatkozó támogatási kéréseket az Azure Portalon kell létrehoznia. Ne feledje, a hibrid mobileszköz-kezelés van [elavult](https://docs.microsoft.com/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures), és helyezze át az Intune-bA az Azure-ban minél hamarabb kell terveznie. További információk: [Áttérés a hibrid mobileszköz-kezelésről az Azure-beli Intune-ra](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150).
+
+Vegye figyelembe, hogy csak a globális rendszergazda, az Intune szolgáltatás-rendszergazda és a szolgáltatástámogatási rendszergazda szerepkörrel rendelkező felhasználók az Azure Portalon hozhat létre támogatási jegyeket.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Hogyan készüljek fel a változásra?
+- Szüntesse be az MPO használatát, és az összes Intune-ra vonatkozó támogatási kérés létrehozásához és kezeléséhez használja az Azure-beli Intune-t.  
+- Értesítse saját segélyszolgálatát, és frissítse a dokumentációt, ha szükséges.
+- Ha jelenleg az MPO-n globális rendszergazdai vagy Intune-szolgáltatásadminisztrátori szerepkörökkel nem rendelkező felhasználók szokták létrehozni a támogatási kéréseket, adjon nekik szolgáltatás-rendszergazdai szerepkört az Azure Active Directoryban, hogy az Azure Portalon is folytatni tudják a támogatási jegyek létrehozását.
+
+#### <a name="additional-information"></a>További információ
+[https://aka.ms/IntuneSupport_MPO_to_Azure](https://aka.ms/IntuneSupport_MPO_to_Azure)
+
+### <a name="plan-for-change-user-experience-update-to-intune-company-portal-app-for-ios"></a>Tervezett módosítás: Felhasználóiélmény-frissítést az iOS-hez készült Intune vállalati portál alkalmazás
+Örömmel megosztására, hogy az Intune hamarosan adunk ki az IOS-es céges portál alkalmazás egy nagyszabású felhasználóiélmény-frissítést. A frissítés egy vizuális átalakulás a kezdőlap ügyfélszolgálatnak a speciális szűrők és az alkalmazások és könyvek gyorsabb hozzáférést.
+
+#### <a name="how-does-this-affect-me"></a>Hogyan érint ez engem?
+A felhasználói élmény frissítése, miközben fenntartja az IOS-es céges portál funkciókat, ügyfélszolgálatnak:
+- Egy natív iOS megjelenését és működését érintő kezdőlapján 
+- A tartalom listáitól és szűrés a tartalomtípus (alkalmazások vagy e-könyvek) és a rendelkezésre állás (Eszközkezelés kötelező vagy elérhető legyen, regisztráció nélkül) például keresés szűrési képességek
+- E-könyvek kereshetővé
+- Keresési előzmények alkalmazásokhoz és e-könyvek Apple TestFlight programjában, ha értesítést kap az Intune frissített IOS-es céges portál alkalmazás az előzetes verzióval kapcsolatos mikor válik elérhetővé. Ha Ön nem Apple TestFlight programjában, nincs késő regisztrálni. Regisztrálása lehetővé teszi, hogy a frissített vállalati portál alkalmazást használja, mielőtt a végfelhasználók számára elérhető. A lehetőség közvetlenül az Intune-csapat a visszajelzést is megkapják.  
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Hogyan készüljek fel a változásra?
+Nem kell semmit sem kell; Ezeket a változásokat egy közelgő iOS CP alkalmazás kiadásban elérhető lesz. 
+
+#### <a name="additional-information"></a>További információ
+[https://aka.ms/cp_update_iOS](https://aka.ms/cp_update_iOS)
+
+
 ### <a name="plan-for-change-exchange-online-to-intune-connector-will-not-be-available-in-intune----3105122---"></a>Tervezett módosítás: Exchange Online-t az Intune-összekötő nem lesz elérhető az Intune-ban <!-- 3105122 -->
 Örömet talál az Exchange online-hoz és a feltételes hozzáférés leegyszerűsítése azt fogja kell letiltását az Exchange online-hoz az Intune-összekötő "Service to Service". Ez a változás a December szolgáltatásfrissítés kezdődik, és a 2019. február szolgáltatásfrissítés elvégezni.
 
@@ -1286,27 +1334,6 @@ A frissítések bevezetése után már nem kell az Azure AD-csoportokat használ
 Miközben mi áthelyezzük a hozzárendelt szabályzatokat, nem kell tennie semmit. Ha jelenleg a szabályzatok hozzárendelését az Intune for Education-konzolon végzi, tegye ezt továbbra is.
 
 Ha jelenleg a fent említett Azure AD-csoportokhoz az Azure-beli Intune-ban rendeli hozzá a szabályzatokat, ehelyett inkább az Intune for Education-konzolon rendelje hozzá ezeket a Minden felhasználó és a Minden eszköz csoporthoz. Ha azt látja, hogy elavultként lettek átnevezve az Azure AD-csoportok a konzolon, a továbbiakban ne végezzen hozzárendelést az Azure AD-ben. Ha nem jelenleg használja az átnevezett csoportokat más célra, akkor törölje azokat.
-
-### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>Tervezett módosítás: Új Intune támogatási élmény a Premier szintű ügyfelek 
-12/4/18 frissítési: Szeretne jobbá ezt a folyamatot, így a támogatási kérelem létrehozása a MPO nem lesz letiltva. December 3-án, de egy későbbi dátumon helyette. Értesíteni fogjuk az üzenetközpont keresztül ismert, és hamarosan a bejegyzés ütemterveket, a módosítás megosztás frissítése.
-
-A Microsoft Premier-ügyfelek jelenleg a Microsoft Premier Online (MPO) portál (premier.microsoft.com) vagy az Azure-beli Intune (portal.azure.com) segítségével hozhatnak létre támogatási kéréseket az Intune-hoz. 2018. december 3-tól kezdve a Premier szintű támogatás további fejlesztésének elősegítése érdekében a támogatási kéréseket csak az Azure-beli Intune-ban lehet létrehozni.
-
-#### <a name="how-does-this-affect-me"></a>Hogyan érint ez engem?
-December 3-tól kezdve nem fog tudni támogatási kéréseket létrehozni az MPO portálon.  Ha ezzel próbálkozik, meg fog jelenni egy üzenet, amelyet nem lehet bezárni, és amely átirányítja az Azure-beli Intune-ba. Itt hozhat létre egy támogatási kérést, amely a Microsoft ügyfélszolgálatának dedikált Intune-részlegéhez kerül a probléma minél hamarabbi diagnosztizálása és megoldása érdekében. Az MPO portálon létrehozott támogatási kérések nem tekinthetők meg az Azure Portalon, ezért jobb, ha a továbbiakban nem hoz létre több támogatási kéréseket az MPO-n.  
-
-Ha hibrid mobileszköz-kezelést (hibrid MDM) vagy megosztott kezelést használ, az MPO portálon továbbra is létrehozhat támogatási kéréseket a ConfigMgrhez, de az Intune-ra vonatkozó támogatási kéréseket az Azure Portalon kell létrehoznia. Ne feledje, hogy a hibrid mobileszköz-kezelés elavult, és minél hamarabb érdemes váltania az Azure-beli Intune használatára. További információk: [Áttérés a hibrid mobileszköz-kezelésről az Azure-beli Intune-ra](https://aka.ms/hybrid_notification).
-
-Vegye figyelembe, hogy az Azure Portalon csak a globális rendszergazdai, Intune-szolgáltatásadminisztrátori vagy szolgáltatás-rendszergazdai szerepkörök hozhatnak létre támogatási jegyeket.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Hogyan készüljek fel a változásra?
-- Szüntesse be az MPO használatát, és az összes Intune-ra vonatkozó támogatási kérés létrehozásához és kezeléséhez használja az Azure-beli Intune-t.  
-- Értesítse saját segélyszolgálatát, és frissítse a dokumentációt, ha szükséges.
-- Ha jelenleg az MPO-n globális rendszergazdai vagy Intune-szolgáltatásadminisztrátori szerepkörökkel nem rendelkező felhasználók szokták létrehozni a támogatási kéréseket, adjon nekik szolgáltatás-rendszergazdai szerepkört az Azure Active Directoryban, hogy az Azure Portalon is folytatni tudják a támogatási jegyek létrehozását.
-- Bővebb tájékoztatásért és hasznos hivatkozásokért kattintson a További információ lehetőségre.
-
-#### <a name="additional-information"></a>További információ
-További információkat a [Microsoft Intune támogatási csapatának blogbejegyzésében](https://aka.ms/IntuneSupport_MPO_to_Azure) talál.
 
 
 ### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>Művelet végrehajtása: Frissítse az Android-eszköz korlátozása vagy a megfelelőségi jelszóval szabályzatbeállítások az Intune-ban

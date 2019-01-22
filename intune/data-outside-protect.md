@@ -16,12 +16,12 @@ ms.reviewer: pchacon
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d8ae737ee11f176c036382fbe77122ecebb722d2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: a6048ebd793b1325e3a3320e388135bc63cda2cf
+ms.sourcegitcommit: 1f544172299f0990e1e13cebf3830b8c0511d6ed
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190013"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54418159"
 ---
 # <a name="prevent-unauthorized-access-to-company-data-using-microsoft-intune"></a>A céges adatokhoz való illetéktelen hozzáférés megakadályozása a Microsoft Intune-nal
 
@@ -48,5 +48,5 @@ Tudassa velük, hogy [mikor és hogyan kell védelemmel ellátni a bizalmas info
 
 A következő lépések részeként további információhoz juthat azokról az egyéb módszerekről, melyekkel növelhető a céges adatok védelme, beleértve a következőket: 
 
-* Az [Azure Information Protection használata iOS- és Android-eszközökön](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq.
+* Ismerje meg, hogyan használható [Azure Information Protection iOS és Android rendszerű eszközökön](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq).
 * Windows Phone-telefonok és Mac-gépek esetén ismerkedjen meg a [Microsoft Rights Management Sharing alkalmazással](https://technet.microsoft.com/dn451248).
