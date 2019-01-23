@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 9f9f95c42be252e0b2be515344e01a1d93e2cc6c
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: 0366a4394f5046d72c7cf01d2848974d225597a6
+ms.sourcegitcommit: d757c907af6c3c1b20823ffa4fda3acbaa8ecd9f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387095"
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54444557"
 ---
 # <a name="enroll-your-android-dedicated-devices-or-fully-managed-devices-preview"></a>A dedikált Android-eszközök regisztrálása vagy a teljes körűen felügyelt eszközök (előzetes verzió)
 
@@ -42,7 +42,7 @@ Az NFC támogató eszközök regisztrálja az eszközöket egy speciálisan form
 
 ### <a name="enroll-by-using-a-token"></a>Regisztráció jogkivonat használatával
 
-Android 6 vagy újabb rendszerű eszközök esetén használhatja a jogkivonatot az eszköz regisztrálásához. Az Android 6.1-es és újabb verzióinál a QR-kódok olvasására is lehetőség van az **aft#setup** regisztrációs metódus használatakor.
+Android 6 vagy újabb rendszerű eszközök esetén használhatja a jogkivonatot az eszköz regisztrálásához. 6.1-es és újabb verziók is használhatják a QR-kód beolvasásához használatakor a **afw #setup** regisztrációs módszer.
 
 1. Kapcsolja be a törölt tartalmú eszközt.
 2. Az **Üdvözlőképernyőn** válasszon nyelvet.
