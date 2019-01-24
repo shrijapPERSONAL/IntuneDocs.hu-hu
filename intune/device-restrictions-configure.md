@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 11b241a14ed70a2e999fa505449cd12cdd1e025e
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 7ab60e64927db5537a106c1257a5624670771f86
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728786"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831411"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Ezközkorlátozásokra vonatkozó beállítások konfigurálása a Microsoft Intune-ban
 
@@ -32,7 +32,7 @@ Létrehozhat például egy olyan eszközkorlátozási profilt, amely megakadály
 
 A cikk az eszközkorlátozási profilok alapjait ismerteti, és további cikkeket ajánl a különféle platformokhoz tartozó eszközspecifikus kérdésekhez.
 
-## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Eszközkorlátozási beállításokat tartalmazó eszközprofil létrehozása
+## <a name="create-the-profile"></a>A profil létrehozása
 
 1. A, a [az Azure portal](https://portal.azure.com), jelölje be **minden szolgáltatás** > szűréséhez **Intune** > Válassza ki **Intune**.
 2. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
@@ -60,13 +60,13 @@ A cikk az eszközkorlátozási profilok alapjait ismerteti, és további cikkeke
     - [Windows 10 Team-beállítások](device-restrictions-windows-10-teams.md)
     - [A Windows Holographic for Business beállításai](device-restrictions-windows-holographic.md)
 
-7. Ha elkészült, lépjen vissza a **profil létrehozása** lapon, és válassza ki **létrehozás**.
+7. Ha elkészült, a módosítások mentéséhez válassza az **OK** > **Létrehozás** lehetőséget.
 
-Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó lapon. 
+A profil létrehozásáról és a profilok listájában jelenik meg.
 
-## <a name="next-step"></a>Következő lépés
+## <a name="next-steps"></a>További lépések
 
-A profil létrehozását követően készen áll hozzá kell rendelni. Lásd: [eszközprofilok hozzárendelése](device-profile-assign.md) lépéseit. 
+A profil létrehozását követően készen áll hozzá kell rendelni. Ezután [rendelje hozzá a profilt](device-profile-assign.md) és [állapotát nyomon](device-profile-monitor.md).
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 

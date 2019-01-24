@@ -1,11 +1,11 @@
 ---
-title: Identitásvédelmi beállítások konfigurálása a Microsoft Intune-ban – Azure | Microsoft Docs
-description: Eszközprofil hozzáadása a Vállalati Windows Hello beállításainak megadásához a Windows 10 rendszerű eszközökön a Microsoft Intune-ban
+title: A PIN-kód segítségével jelentkezzen be a-beli Microsoft Intune Windows 10-eszközökön |} A Microsoft Docs
+description: Segítségével Windows Hello for Business engedélyezése a felhasználók számára, hogy jelentkezzen be a PIN-kód, az ujjlenyomattal és egyéb eszközöket. Az identity protection konfigurációs profil létrehozása az Intune-ban Windows 10-es eszközökhöz, ezekkel a beállításokkal, és rendelje hozzá a profilt felhasználói csoportokat és eszközcsoportokat.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/29/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,83 +13,54 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f9d0db8e15e6de1241984f98bf651fcff1578033
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 843806681fcee4ddec175207c2c49d6db95e0f0d
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188631"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831383"
 ---
-# <a name="configure-identity-protection-settings-in-microsoft-intune"></a>Identitásvédelmi beállítások konfigurálása a Microsoft Intune-ban
+# <a name="use-windows-hello-for-business-on-windows-10-devices-with-microsoft-intune"></a>Használjon Windows Hello for Business Windows 10 rendszerű eszközökön a Microsoft Intune-nal
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Az identitásvédelmi profilok vezérlik, hogyan történjen a Vállalati Windows Hello kiépítése és konfigurálása a felügyelt Windows 10 rendszerű eszközökön. Hozza létre ezt a profilt konfiguráláshoz:  
-* A Vállalati Windows Hello rendelkezésre állása eszközökhöz és felhasználók számára.
-* Az eszköz PIN-kóddal kapcsolatos követelményei.
-* Kézmozdulatok, amelyekkel a felhasználók bejelentkezhetnek az eszközükre, és amelyekkel nem.  
+Windows Hello for Business a módszer azáltal, hogy a jelszavak, intelligens kártyák és a virtuális intelligens kártyák a Windows-eszközökön való bejelentkezéshez. Az Intune beépített beállítást tartalmaz, így a rendszergazdák konfigurálhatja és használhatja a Windows Hello for Business. Például használhatja ki ezeket a beállításokat:
 
- Ezt a profilt hozzárendelheti kiválasztott felhasználókhoz vagy eszközcsoportokhoz, vagy minden felhasználóhoz és minden eszközhöz. A csoportok az Intune-ba történő bejelentkezéskor kapják meg az identitásvédelmi profiljukat.    
+- Windows vállalati Hello engedélyezése a vállalati eszközök és felhasználók számára
+- Eszköz PIN-kód követelményeket, ideértve a minimális vagy maximális hosszúságú PIN-kód beállítása
+- Lehetővé teszi a kézmozdulatok, például egy ujjlenyomat, amely a felhasználók (vagy nem használható), jelentkezzen be a eszközök
 
-A cikkben található információk alapján létrehozhat egy identitásvédelmi profilt. Ezután [rendelje hozzá a profilt](device-profile-assign.md) a felhasználói és eszközcsoportokhoz.
+Ez a funkció a következő rendszerű eszközökre vonatkozik:
 
-Ez a funkció a következő rendszerű eszközökre vonatkozik:  
 - Windows 10 és újabb
-- Windows Holographic for Business  
+- Windows 10 mobil verzió
+- Windows Holographic for Business
 
-## <a name="create-a-device-profile-with-identity-protection-settings"></a>Eszközprofil létrehozása identitásvédelmi beállításokkal
+Az Intune használja a "profilok" hozhat létre, és ezeket a beállításokat a szervezet igényeinek megfelelően. Miután hozzáadta ezeket a funkciókat az egy profilt, leküldéses, vagy telepítheti ezeket a beállításokat a felhasználói és eszközcsoportokra a szervezetben.
 
-1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
-2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
-3. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
-4. Adja meg az identitásvédelmi profil **nevét** és **leírását**.
-5. A **Platform** legördülő listából válassza a **Windows 10 és újabb** lehetőséget. A Vállalati Windows Hello csak a Windows 10 vagy újabb rendszerű eszközökön támogatott.
-6. A **Profil típusa** legördülő listából válassza az **Identitásvédelem** lehetőséget.
-7. A Vállalati Windows Hello konfigurálásához a Vállalati Windows Hello ablaktáblán válasszon az alábbi lehetőségek közül:
-    * Letiltott. Ha nem szeretné használni a Vállalati Windows Hello szolgáltatást, válassza ezt a beállítást. Ezt követően a képernyőn a többi beállítás nem lesz elérhető.
-    * Engedélyezve van. Vállalati Windows Hello beállításainak konfigurálásához válassza ezt a beállítást.  
+Ez a cikk bemutatja, hogyan hozhat létre eszközkonfigurációs profil. Az összes beállítás listáját, és mit tesznek, lásd: [eszközbeállítások Windows 10-es Windows Hello for Business engedélyezése](identity-protection-windows-settings.md).
 
-8. Ha az előző lépésben az **Engedélyezve** lehetőséget választotta, akkor konfigurálja a szükséges beállításokat, amelyeket a rendszer a megcélzott és regisztrált Windows 10 és Windows 10 Mobile rendszerű eszközre és felhasználóra fog alkalmazni.
+## <a name="create-the-device-profile"></a>A profil létrehozása
 
-> [!NOTE]
-> Ha csak felhasználókhoz rendel hozzá identitásvédelmi profilokat, az eszközkörnyezet alapértelmezett beállítása a **Nem konfigurált** lesz.  
+1. Az a [az Azure portal](https://portal.azure.com), jelölje be **minden szolgáltatás** > szűréséhez **Intune** > Válassza ki **a Microsoft Intune**.
+2. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
+3. Adja meg a következő tulajdonságokat:
 
-   - **PIN-kód minimális hossza**/**PIN-kód minimális hossza**. Beállítja az eszközöket a megadott minimális és maximális hosszúságú PIN-kód használatára, a biztonságos bejelentkezés érdekében. A PIN-kód alapértelmezett hossza 6 karakter, de előírható, hogy legalább 4 karakterből kell állnia. A PIN-kód legfeljebb 127 karakter hosszú lehet.  
+    - **Név**: Adja meg az új profil leíró nevét.
+    - **Description** (Leírás): Adja meg a profil leírását. A beállítás használata nem kötelező, de ajánlott.
+    - **Platform**: Válassza ki **Windows 10 és újabb**. A Vállalati Windows Hello csak a Windows 10 vagy újabb rendszerű eszközökön támogatott.
+    - **Profil típusa**: Válassza ki **Identity protection**.
+    - **A vállalati Windows Hello konfigurálása**: Válassza ki, hogyan szeretné konfigurálni Windows Hello for Business. A választható lehetőségek:
 
-   - **Kisbetűk használata a PIN-kódban**/**Nagybetűk használata a PIN-kódban**/**Speciális karakterek a PIN-kódban**. Erősebb PIN-kód használata is előírható kis- és nagybetűk, illetve speciális karakterek PIN-kódon belüli használatának együttes megkövetelésével. A következő lehetőségek közül választhat:
+        - **Nincs konfigurálva**: [Windows Hello for Business kiosztja](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning) az eszközön. Ha csak felhasználókhoz rendel hozzá identitásvédelmi profilokat, az eszközkörnyezet alapértelmezett beállítása a **Nem konfigurált** lesz.
+        - **Letiltott**: Ha nem szeretné használni Windows Hello for Business, akkor válassza ezt a lehetőséget. Ez a beállítás letiltja a Windows Hello for Business az összes felhasználó számára.
+        - **Engedélyezett**: Válassza ezt a beállítást, [kiépítése]((https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning)), és a Windows Hello for Business beállításainak konfigurálása az Intune-ban. Adja meg a konfigurálni kívánt beállításokat. Az összes beállítások listáját, és mit tesznek lásd:
 
-     - **Engedélyezett**. A felhasználók használhatják a karaktertípust a PIN-kódban, de ez nem kötelező.
+            - [Windows 10-es eszközbeállítások Windows Hello for Business engedélyezése](identity-protection-windows-settings.md)
 
-     - **Kötelező**. A felhasználóknak a karaktertípusból legalább egyet használniuk kell a PIN-kódjukban. Például általános gyakorlat legalább egy nagybetű és egy speciális karakter megkövetelése.
+4. Ha elkészült, a módosítások mentéséhez válassza az **OK** > **Létrehozás** lehetőséget.
 
-     - **Nem engedélyezett** (alapértelmezés). A felhasználók nem használhatják ezeket a karaktertípusokat a PIN-kódjukban. (Ugyanez történik, ha a beállítás nincs konfigurálva.)<br>A speciális karakterek a következők: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**
-
-   - **PIN lejárata (nap)**. A PIN-kódhoz célszerű lejárati időt megadni, amelynek eltelte után a felhasználóknak módosítaniuk kell a PIN-kódot. Az alapértelmezett érték 41 nap.
-
-   - **PIN-előzmények megjegyzése**. Korlátozza a korábban használt PIN-kódok ismételt használatát. Alapértelmezés szerint az 5 legutóbb használt PIN-kód nem használható újra.  
-   - **PIN-kód helyreállításának engedélyezése:** Lehetővé teszi, hogy a felhasználó megváltoztassa a PIN-kódját a Vállalat Windows Hello PIN-helyreállítási szolgáltatásával. 
-       - **Engedélyezés**. A felhőszolgáltatásban létrejön egy titkos kód a PIN-kód helyreállításához, amelynek a tárolása az eszközön történik. A felhasználó szükség esetén megváltoztathatja a PIN-kódját.  
-       - **Nincs konfigurálva** (alapértelmezett). Nem jött létre vagy nincs tárolva a PIN-kód helyreállításához titkos kód. Ha elfelejti a felhasználó a PIN-kódját, csak úgy lehet új PIN-kódot kérni, ha törli a meglévő PIN-kódot, és létrehoz egy újat. A felhasználó minden szolgáltatásban újból el kell végeznie a regisztrációt, amelyhez a régi PIN-kóddal fért hozzá.  
-   
-   - **Platformmegbízhatósági modul (TPM) használata**. A TPM lapka használata további adatbiztonsági réteget biztosít. Válasszon egyet az alábbi lehetőségek közül:  
-     - **Engedélyezés**. A Vállalati Windows Hello csak az elérhető TPM modullal rendelkező eszközökön építhető ki.
-     - **Nincs konfigurálva**. A Vállalati Windows Hello minden eszközön telepíthető, még akkor is, ha nincs használható TPM. Az eszközök először megpróbálják a TPM-et használni, de ha nem áll rendelkezésre, akkor szoftveres titkosítást alkalmaznak.  
-
-   - **Biometrikus hitelesítés engedélyezése**. Lehetővé teszi a biometrikus hitelesítést, például az arcfelismerést vagy az ujjlenyomat használatát a PIN-kód alternatívájaként a Vállalati Windows Hello szolgáltatásban. A felhasználóknak ekkor is be kell állítaniuk egy PIN-kódot arra az esetre, ha a biometrikus hitelesítés nem sikerül. A következő lehetőségek közül választhat:
-
-     - **Engedélyezés**. A Vállalati Windows Hello lehetővé teszi a biometrikus hitelesítést.
-     - **Nincs konfigurálva** (alapértelmezett). A Vállalati Windows Hello meggátolja a biometrikus hitelesítést (minden fióktípus esetében).
-
-   - **Kibővített hamisításszűrés használata, ha elérhető**. Konfigurálható, hogy a Windows Hello hamisításszűrési funkcióit használják-e az azt támogató eszközök (például egy valós arc helyett egy arcról készült fénykép észlelése).
-       - **Engedélyezés**. A Windows minden felhasználótól megköveteli a kibővített hamisításszűrés alkalmazását arcfelismerés esetén, ha az támogatott.  
-       - **Nincs konfigurálva** (alapértelmezett). A Windows figyelembe veszi a hamisításszűrési konfigurációkat az eszközön.
-
-   - **Tanúsítvány helyi erőforrásokhoz**. 
-       - **Engedélyezés**. Engedélyezi a Vállalati Windows Hello számára, hogy tanúsítványokkal végezzen hitelesítést a helyszíni erőforrásokban.
-       - **Nincs konfigurálva** (alapértelmezett). Megakadályozz, hogy a Vállalati Windows Hello tanúsítványokkal végezzen hitelesítést a helyszíni erőforrásokban.  
-9. Kattintson az **OK** gombra a profil mentéséhez.  
-
-A profil létrejött, és megjelenik az **Eszközkonfiguráció – profilok** listában. Az eszközprofil csoportokhoz való hozzárendeléséhez az [eszközprofilok hozzárendelését](device-profile-assign.md) ismertető cikk nyújt tájékoztatást.  
+A profil jön létre, és megjelenik a profilok listájában. Ezután [hozzárendelése](device-profile-assign.md) ezt a profilt csoportokhoz.
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 
@@ -100,3 +71,8 @@ In this high-level example, you'll create a device restriction policy that block
 ![How to disable the camera on Android devices](./media/disable-android-camera.png)
 
 -->
+
+## <a name="next-steps"></a>További lépések
+
+- Tekintse meg az összes [a beállításokat, és mit tesznek](identity-protection-windows-settings.md).
+- [Rendelje hozzá a profilt](device-profile-assign.md), és [kövesse nyomon az állapotát](device-profile-monitor.md).

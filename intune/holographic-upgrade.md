@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,50 +14,34 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 4839206db5e34a039c9e99dd74f5ab1bad328418
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 80d4cf8db5789e6eeb22a777eeef74dce3009856
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112340"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831292"
 ---
 # <a name="upgrade-devices-running-windows-holographic-to-windows-holographic-for-business"></a>A Windows Holographic operációs rendszert futtató eszközök frissítése a Windows Holographic for Business verzióra
 
+A Microsoft Intune az eszközök kezelésében és védelmében érdekében számos beállításokat tartalmaz. Ez a cikk sorolja fel, és az eszközök a Windows Holographic frissítése a Windows Holographic for Business-beállításokat ismerteti. Ezek a beállítások az Intune-ban, amelyek leküldött vagy eszközökre telepített egy frissítési konfigurációs profilban jönnek létre.
 
-A Windows Holographic operációs rendszert futtató eszközök Microsoft Intune-nal való kezeléséhez frissítenie kell az eszközöket a Windows Holographicról a Windows Holographic for Businessre. A frissítéshez létrehozhat egy kiadásfrissítési profilt. A Microsoft HoloLens esetében a frissítéshez szükséges licenc beszerzéséhez megvásárolhatja a Commercial Suite-ot is. További információkért lásd: [Unlock Windows Holographic for Business features](https://docs.microsoft.com/hololens/hololens-upgrade-enterprise) (A Windows Holographic for Business új funkcióinak elérése).
+A mobileszköz-felügyelet (MDM) megoldás részeként használja ezeket a beállításokat a Windows Holographic eszközök frissítéséhez. A Microsoft HoloLens esetében a frissítés a szükséges licenc beszerzéséhez a Commercial Suite-ot is vásárolhat. További információkért lásd: [Unlock Windows Holographic for Business features](https://docs.microsoft.com/hololens/hololens-upgrade-enterprise) (A Windows Holographic for Business új funkcióinak elérése).
 
-## <a name="to-set-up-an-edition-upgrade-device-configuration-profile"></a>Kiadásfrissítési eszközkonfigurációs profil beállítása
+Ez a szolgáltatás további információkért lásd: [frissítése a Windows 10-es kiadás vagy S engedélyezése módban](edition-upgrade-configure-windows-10.md).
 
-1. Jelentkezzen be rendszergazdai fiókjával az [Azure Portalra](https://portal.azure.com).
+## <a name="before-you-begin"></a>Előkészületek
 
+[Eszközkonfigurációs profil létrehozása](edition-upgrade-configure-windows-10.md#create-the-profile).
 
-2.  Nyissa meg az **Eszközkonfiguráció**, **Profilok** lapot, majd kattintson a **Profil létrehozása** gombra.
+## <a name="edition-upgrade"></a>Kiadásfrissítés
 
-    ![Profil létrehozása](media/Holographic-create-profile.png)
+- **Frissítés erre a kiadásra**: Válassza ki **Windows 10 Holographic for Business**.
+- **Licencfájl**: Keresse meg és válassza ki a kapott XML formátumú licencfájlt.
 
-3.  A **Profil létrehozása** panelen írja be a profil nevét, és válassza a **Windows 10 és újabb rendszerek** platformot, majd a **Kiadásfrissítés** profiltípust. Kattintson a **Beállítások > Konfigurálás** lehetőségre.
-
-5. A **Kiadásfrissítés** panelen a **Frissítés erre a kiadásra** listában válassza a **Windows 10 Holographic for Business** lehetőséget. A **Licencfájl** részen keresse meg és jelölje ki a kapott XML formátumú licencfájlt.
-
-    ![Az XML-fájl nevének megadása](media/Holographic-edition-upgrade.png)
+  ![Adja meg az XML-fájl neve, amely tartalmazza a Holographic for Business licencinformációk](media/Holographic-edition-upgrade.png)
  
-5.  Kattintson az **OK** gombra, majd a **Létrehozás** elemre a profil létrehozásához.
-
-
-## <a name="deploy-the-edition-upgrade-policy"></a>A kiadásfrissítési szabályzat érvénybe léptetése
-
-A következő lépés során rendelje hozzá a kiadásfrissítési profilt a kijelölt csoportokhoz vagy eszközökhöz.
-
-1. Kattintson a **Hozzárendelések** elemre az előző lépésekben létrehozott profilban.
-
-2. A **Hozzárendelések** panelen válassza ki a szabályzattal felvenni vagy kizárni kívánt felhasználói csoportokat és eszközöket.
-
-![Csoportok belefoglalása vagy kizárása](media/Holographic-groups.PNG)
-
-Ha ezek a felhasználók vagy eszközök regisztrálva vannak az Intune-ban, a kiadásfrissítési profil lesz alkalmazva. 
-
 ## <a name="next-steps"></a>További lépések
 
-A csoportokkal kapcsolatos további tudnivalókért lásd: [Csoportok – első lépések](get-started-groups.md).
+A profil létrehozása, de előfordulhat, hogy nem lehet sikeres bármit még. Ügyeljen arra, hogy [rendelje hozzá a profilt](device-profile-assign.md), és [állapotát nyomon](device-profile-monitor.md).
 
-
+Ezenkívül létrehozhat edition frissítési profilok [Windows 10 és újabb](edition-upgrade-windows-settings.md) eszközök.

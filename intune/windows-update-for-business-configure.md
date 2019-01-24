@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: ccb91082a3226ec4091a139d31796fd77bdf0616
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.openlocfilehash: d0fcb021545d96fe8f5bfdf742dd4d181c91fb1a
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297383"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831564"
 ---
 # <a name="manage-software-updates-in-intune"></a>Szoftverfrissítések kezelése az Intune-ban
 
@@ -106,7 +106,7 @@ A kialakított frissítési körök hozzárendelhetők az eszközcsoportokhoz. F
 
    - **A felhasználó felfüggesztése Windows-frissítések**: Alapértelmezés szerint engedélyezett. Ezzel a beállítással blokkolhatja vagy engedélyezheti a felhasználók számára történő telepítésének felfüggesztése használja a *beállítások* gépek. 
       
-   - **Kézbesítésoptimalizálásos letöltési mód**: Kézbesítésoptimalizálás a Windows 10 frissítési kör szoftverfrissítések alatt részeként már nincs konfigurálva. Kézbesítésoptimalizálás most keresztül az eszköz konfigurációs van beállítva. Azonban a fenti konfiguráció marad a konzolban. Ezeket a korábbi konfigurációkat eltávolíthatja őket szerkesztésével *nincs konfigurálva*, de ezeket más módon nem módosíthatja. Tekintse meg a régi és új-csoportházirend közötti ütközések elkerülése érdekében [helyezheti át meglévő frissítési körök kézbesítésoptimalizálás az](delivery-optimization-windows.md#move-from-existing-update-rings-to-delivery-optimization) és majd helyezze át a beállításokat egy kézbesítési optimalizálás profilhoz. 
+   - **Kézbesítésoptimalizálásos letöltési mód**: Kézbesítésoptimalizálás a Windows 10 frissítési kör szoftverfrissítések alatt részeként már nincs konfigurálva. Kézbesítésoptimalizálás most keresztül az eszköz konfigurációs van beállítva. Azonban a fenti konfiguráció marad a konzolban. Ezeket a korábbi konfigurációkat eltávolíthatja őket szerkesztésével *nincs konfigurálva*, de ezeket más módon nem módosíthatja. Tekintse meg a régi és új-csoportházirend közötti ütközések elkerülése érdekében [helyezheti át meglévő frissítési körök kézbesítésoptimalizálás az](delivery-optimization-windows.md#move-existing-update-rings-to-delivery-optimization) és majd helyezze át a beállításokat egy kézbesítési optimalizálás profilhoz. 
 
 5. Ha elkészült, válassza az **OK** lehetőséget. A **Frissítési kör létrehozása** területen válassza a **Létrehozás** lehetőséget.
 

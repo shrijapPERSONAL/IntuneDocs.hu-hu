@@ -1,12 +1,11 @@
 ---
-title: Az Intune oktatási beállításainak konfigurálása Windows 10 esetén
-titleSuffix: Microsoft Intune
-description: A cikk tájékoztatást nyújt arról, hogyan konfigurálhatók a felügyelt eszközökön a Windows 10-es oktatási beállítások az Intune-nal.
+title: Adjon hozzá vagy oktatási beállításainak konfigurálása a Microsoft Intune – Azure |} A Microsoft Docs
+description: Használja a végezze el a vizsga alkalmazás a Windows 10 és újabb rendszerű eszközökhöz a Microsoft Intune eszközkonfigurációs profil. Az oktatási settiings használó konfigurációs profil létrehozása és a egy teszt alkalmazás URL-CÍMÉT adja meg, hogyan felhasználókat jelentkezzen be, figyelheti a képernyő a teszt során, és lehetővé vagy szövegjavaslatokat megakadályozása a teszt során.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/23/2018
+ms.date: 01/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,44 +15,46 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 120aca8dae457748fea322ce164aa663ffa7e748
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 1e49e1673e0bebdcdafb8ad7792051c76b80f696
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187378"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831458"
 ---
-# <a name="how-to-configure-windows-10-education-settings-in-microsoft-intune"></a>Az oktatási beállítások konfigurálása a Microsoft Intune-ban Windows 10 esetén
+# <a name="use-the-take-a-test-app-on-windows-10-devices-in-microsoft-intune"></a>A végezze el a vizsga alkalmazás használata a Windows 10 rendszerű eszközökön a Microsoft Intune-ban
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Az oktatási profilokkal lehet megadni a Windows Vizsga alkalmazást konfiguráló részleteket, például a fiókadatokat és a vizsga URL-címét. Ennek konfigurálásakor megnyílik a Vizsga alkalmazás a megadott vizsgával, és annak befejezéséig az eszközön nem lehet másik alkalmazást futtatni.
+Oktatási profilok az Intune-ban egy teszt vagy a vizsgára érvénybe az eszközökön a tanulók számára tervezték. Ez a funkció tartalmazza a **vizsga** alkalmazás és a egy tesztcélú URL-cím hozzáadása beállítások válassza ki, hogyan végfelhasználók jelentkezzen be a teszt és egyéb. Ez a funkció a következő platformot támogatja:
 
-A Vizsga alkalmazásról részletes információt a [Vizsgák a Windows 10-ben](https://docs.microsoft.com/education/windows/take-tests-in-windows-10) című cikkben találhat.
+- Windows 10 és újabb
 
-## <a name="create-a-device-profile-containing-education-profile-settings"></a>Oktatási profilbeállításokat tartalmazó eszközprofil létrehozása
+Ha a felhasználó bejelentkezik, a végezze el a vizsga alkalmazás automatikusan megnyílik a megadott tesztet. Más alkalmazás nem futtatható az eszközön, amíg a vizsgálat folyamatban van. [Tesztek is a Windows 10](https://docs.microsoft.com/education/windows/take-tests-in-windows-10) további információt talál a hajtsa végre a megfelelő alkalmazás.
 
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
-2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
-2. Az **Eszközkonfiguráció** panel **Kezelés** területén válassza a **Profilok** lehetőséget.
-3. A profilok paneljén válassza a **Profil létrehozása** lehetőséget.
-4. A **Profil létrehozása** panelen adjon meg egy **Nevet** és **Leírást** az eszközkorlátozási profilra vonatkozóan.
-5. A **Platform** legördülő listából válassza a **Windows 10 és újabb** lehetőséget.
-6. A **Profil típusa** legördülő listában válassza az **Oktatási profil** lehetőséget. 
-7. Kattintson a **Beállítások > Konfigurálás** elemre, majd a **Vizsga** panelen konfigurálja a következőket:
-    - **Fiók típusa** – Válassza ki a fiók típusát a legördülő mezőben.
-    - **Fiók felhasználóneve** – Írja be a Vizsga alkalmazáshoz használni kívánt fiók felhasználónevét. Ez lehet tartományi fiók, Azure Active Directory- (AAD-) fiók vagy helyi számítógépfiók is.
-    - **Felmérési URL-cím** – Adja meg annak a vizsgának az URL-jét, amelyet a felhasználóknak el kell végezniük. További információt a Vizsga dokumentációjában talál.
-    - **Képernyőfigyelés** – Itt adhatja meg, hogy szeretné-e figyelni a felhasználók képernyőjét a vizsga során.
-    - **Szövegjavaslat** – Engedélyezheti vagy letilthatja a szövegjavaslatokat a vizsga során.
-8. Ha elkészült, lépjen vissza a **Profil létrehozása** panelre, és válassza a **Létrehozás** elemet.
+Ez a cikk a Microsoft Intune eszközkonfigurációs profil létrehozásának lépéseit sorolja fel. Olvassa el, és a Windows 10 rendszerű eszközökhöz elérhető oktatási beállítások ismertetése információkat is tartalmaz.
 
-Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó panelen.
+## <a name="create-a-device-profile"></a>Eszközprofil létrehozása
+
+1. Az a [az Azure portal](https://portal.azure.com), jelölje be **minden szolgáltatás** > szűréséhez **Intune** > Válassza ki **a Microsoft Intune**.
+2. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
+3. Adja meg a következő tulajdonságokat:
+
+    - **Név**: Adja meg az új profil leíró nevét.
+    - **Description** (Leírás): Adja meg a profil leírását. A beállítás használata nem kötelező, de ajánlott.
+    - **Platform**: Válasszon **Windows 10 és újabb**.
+    - **Profil**: Válasszon **oktatási profil**.
+
+4. Adja meg a konfigurálni kívánt beállításokat:
+
+    - [Windows 10 és újabb](education-settings-windows.md)
+
+5. A módosítások mentéséhez válassza az **OK** > **Létrehozás** lehetőséget.
+
+A beállítások megadása és a profil létrehozása után a profil megjelenik a profilok listájában. A következő lépés a [profil hozzárendelése egyes csoportokhoz](device-profile-assign.md).
 
 ## <a name="next-steps"></a>További lépések
 
-Ha folytatni szeretné az eszközprofil csoportokhoz való hozzárendelésével, erről az [eszközprofilok hozzárendelését](device-profile-assign.md) ismertető cikk nyújt tájékoztatást.
+Listájának megtekintéséhez a [Windows 10-es oktatási beállítások](education-settings-windows.md) és azok leírásait.
 
-
-
+[Rendelje hozzá a profilt](device-profile-assign.md), és [kövesse nyomon az állapotát](device-profile-monitor.md).

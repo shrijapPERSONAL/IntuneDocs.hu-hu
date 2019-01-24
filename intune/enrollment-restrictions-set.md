@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a8ebe8f8cd84ef5eb38bf7e17f413bcc6a0791cd
-ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
+ms.openlocfilehash: bd282a6b23f33b11cbd046cac4f791d6d675e365
+ms.sourcegitcommit: 9739a9aab032ebb2c4b52ccfb454a9e0f78b2ee4
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54122542"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54751212"
 ---
 # <a name="set-enrollment-restrictions"></a>Regisztrációs korlátozások beállítása
 
@@ -100,7 +100,7 @@ Windows vállalati regisztrációnak minősülnek az alábbi módszerek:
 - Az eszköz a Windows Autopilottal van regisztrálva, de az nem egy csak MDM-regisztrációs lehetőség a Windows-beállításokban.
 - Az eszköz IMEI-száma szerepel az **Eszközregisztráció** > **[Vállalati eszközazonosítók](corporate-identifiers-add.md)** listán. (Windows Phone 8.1-hez nem támogatott)
 - Az eszközregisztráció [tömeges kiépítési csomagban](windows-bulk-enroll.md) történik.
-- Az eszközregisztráció az [SCMM megosztott kezeléshez való automatikus regisztrációja](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md) révén történik.
+- Regisztrálja az eszközt a csoportházirend-objektum, keresztül vagy [megosztott kezelésre az SCCM-ből az automatikus regisztráció](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md).
  
 Az alábbi regisztrációkat cégesként jelzi az Intune, de le lesznek tiltva, mert nem kínálják fel az Intune-rendszergazdának az eszközönkénti szabályozást:
  - [Automatikus MDM-regisztráció](windows-enroll.md#enable-windows-10-automatic-enrollment) és [Azure Active Directory-csatlakozás a Windows beállítása során](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*.

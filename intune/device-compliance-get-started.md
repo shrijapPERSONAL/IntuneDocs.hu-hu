@@ -14,12 +14,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b896a1607dfc036fe248c233477239700dc96091
-ms.sourcegitcommit: 3297fe04ad0d10bc32ebdb903406c2152743179e
+ms.openlocfilehash: b6679f0b1d7392bc2db2e39b4c283b702dd21285
+ms.sourcegitcommit: 9739a9aab032ebb2c4b52ccfb454a9e0f78b2ee4
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/17/2018
-ms.locfileid: "53531328"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54751229"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Az Intune eszközmegfelelőségi szabályzatai – első lépések
 
@@ -93,21 +93,6 @@ Az eszközmegfelelőségi szabályzatok használatához az alábbi követelmény
 Az eszközök Intune-beli regisztrálásakor elindul az Azure AD-regisztrációs folyamat, mely frissíti az eszköz attribútumait az Azure AD-ben. Az egyik legfontosabb információ az eszköz megfelelőségi állapota. Ezt a megfelelőségi állapotot használják a feltételes hozzáférési szabályzatok az e-mailekhez és más vállalati erőforrásokhoz való hozzáférés engedélyezéséhez vagy letiltásához.
 
 Többet is megtudhat az [Azure AD-regisztrációs folyamatról](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
-
-### <a name="assign-a-resulting-device-configuration-profile-status"></a>Eszközkonfigurációs profil eredményül kapott állapotának hozzárendelése
-
-Ha egy eszköz több konfigurációs profillal rendelkezik, és az eszköz megfelelőségi állapota két vagy több hozzárendelt konfigurációs profil esetében eltérő, egyetlen eredményül kapott megfelelőségi állapotot rendel hozzá a rendszer. A hozzárendelés az egyes megfelelőségi állapotokhoz hozzárendelt fogalmi szintű súlyossági szinten alapul. Az egyes megfelelőségi állapotok a következő súlyossági szinttel rendelkeznek:
-
-|Állapot  |Severity  |
-|---------|---------|
-|Függőben lévő     |1|
-|Sikeres     |2|
-|Meghiúsult     |3|
-|Hiba     |4|
-
-Ha egy eszköz több konfigurációs profillal rendelkezik, akkor az eszközhöz hozzárendelt összes profilé közül a legmagasabb súlyossági szintet rendeli hozzá a rendszer az eszközhöz.
-
-Tegyük fel például, hogy egy eszközhöz három profil van hozzárendelve: egy Függőben állapotú (súlyosság = 1), egy Sikerült állapotú (súlyosság = 2), és egy Hiba állapotú (súlyosság = 4). A Hiba állapot súlyossági szintje a legmagasabb, így a rendszer mindhárom profilhoz a Hiba megfelelőségi állapotot rendeli hozzá.
 
 ### <a name="assign-an-ingraceperiod-status"></a>Türelmi időszakban állapot hozzárendelése
 

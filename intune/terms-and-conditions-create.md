@@ -16,12 +16,12 @@ ms.reviewer: amyro
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: ecc5228eef9e9d7be5ba567db6b32c84e95df1b6
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 7283b728e519eb2ca5a9a0b7516774c8cfc26f9b
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032299"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831513"
 ---
 # <a name="terms-and-conditions-for-user-access"></a>Felhasználói hozzáférési használati feltételek
 
@@ -29,7 +29,7 @@ ms.locfileid: "53032299"
 
 Az Intune rendszergazdájaként megkövetelheti a felhasználóktól a cég feltételeinek elfogadását, mielőtt a Céges portált az alábbiakra használnák:
 - eszközök regisztrálása,
-- erőforrások, például a vállalati alkalmazások és az e-mailek elérése.
+- erőforrások, például a vállalati alkalmazások és az e-mailek elérése.    
 A használati feltételek konfigurálása nem kötelező.
 
 Több használati feltételt hozhat létre, és azokat különböző csoportokhoz rendelheti hozzá, így például eltérő nyelveket támogathat.
@@ -48,17 +48,17 @@ Az alábbi lépések végrehajtásával hozhat létre használati feltételeket.
 ![Képernyőkép az Azure Portalról, melyen a használati feltételekhez tartozó Létrehozás gomb látható](media/terms-create-terms.png)
 3. A kibontott panelen adja meg az alábbi adatokat:
 
-   - **Megjelenített név**: A feltételek neve az Azure Portalon. A felhasználók nem látják ezt a nevet.
+   - **Megjelenített név**: Az Azure Portalon a feltételek neve. A felhasználók nem látják ezt a nevet.
 
-   - **Leírás**: További részletek, amelyek alapján könnyebben felismerhető az adott feltételkészlet az Azure Portalon.
+   - **Description** (Leírás): További részletek, amelyek segítenek azonosítani az adott feltételkészlet az Azure Portalon.
 
 4. Nyissa meg a Feltételek és kikötések panelt a **Használati feltételek megadása** melletti nyílra kattintva, majd adja meg a következő adatokat:
 
    ![Képernyőkép a végfelhasználói használati feltételek elfogadó képernyőjéről a feltételek összegzésével](./media/terms-summary-create.png)
 
-   - **Cím**: a felhasználóknak ez jelenik meg a Céges portálon az **Összegzés** fölött.
-   - **Feltételek összefoglalása**: Ez a szöveg ismerteti, hogy mi történik, ha a felhasználók elfogadják a feltételeket. Például: „Az eszköz regisztrálásával Ön elfogadja a Contoso által meghatározott használati feltételeket. Folytatás előtt figyelmesen olvassa el a feltételeket.”
-   - **Használati feltételek**: Azok a használati feltételek, amelyeket a felhasználók látnak, és amelyek elfogadása vagy elutasítása kötelező.
+   - **Cím**: A felhasználók számára a vállalati portálon, a fenti feltételek neve az **összefoglalás**.
+   - **Feltételek összefoglalása**: Az szöveg, amely azt ismerteti, hogy mit jelent van, amikor a felhasználók elfogadják a feltételeket. Például: „Az eszköz regisztrálásával Ön elfogadja a Contoso által meghatározott használati feltételeket. Folytatás előtt figyelmesen olvassa el a feltételeket.”
+   - **Feltételek és kikötések**: A használati feltételeket, amelyek a felhasználók megtekintéséhez és kell elfogadhatja vagy elutasíthatja.
 
 5. Válassza az **OK** > **Létrehozás** lehetőséget.
 

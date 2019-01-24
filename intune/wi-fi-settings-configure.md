@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 01/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,24 +13,24 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a338cce6249cc7c5214a9d69a897cad3eaa09e93
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 54af9b1ef7872caddb972515d9c4765f8492bf00
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188398"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831360"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>Wi-Fi-beállítások hozzáadása és használata az eszközökön a Microsoft Intune-ban
 
-A Microsoft Intune Wi-Fi-profiljaival a vezeték nélküli hálózati beállításokat a szervezet felhasználóihoz és eszközeihez rendelheti hozzá. Wi-Fi-profil hozzárendelésekor a felhasználók konfigurálás nélkül férhetnek hozzá a vállalat Wi-Fi-hálózatához.
+Wi-Fi hálózat eléréséhez több mobileszközt által használt vezeték nélküli hálózat legyen. A Microsoft Intune tartalmazza a beépített Wi-Fi-beállítások, a szervezet felhasználóira és eszközeire is telepíthető. Ez a csoport beállításait "profilnak" nevezik, és más felhasználókhoz és csoportokhoz rendelhető. Kiosztás után a a felhasználók anélkül is hozzáférhetnek a vállalati Wi-Fi hálózaton konfigurálása magukat.
 
 Tegyük fel például, hogy egy új, Contoso Wi-Fi nevű vezeték nélküli hálózatot helyez üzembe. Ekkor szeretné beállítani, hogy az összes iOS-eszköz kapcsolódjon ehhez a hálózathoz. Ennek folyamata a következő:
 
-1. Hozza létre a Contoso Wi-Fi vezeték nélküli hálózathoz való csatlakozás beállításait tartalmazó Wi-Fi-profilt.
-2. Rendelje hozzá a profilt az iOS-eszközök összes felhasználóját tartalmazó csoporthoz.
+1. Hozzon létre egy Wi-Fi profilt, amely tartalmazza azokat a beállításokat, amelyek a Contoso Wi-Fi vezeték nélküli hálózathoz csatlakoznak.
+2. Rendelje hozzá a profilt egy csoporthoz, amely tartalmazza az összes felhasználó az iOS-eszközök.
 3. A felhasználók az eszközükön a vezeték nélküli hálózatok listájában találják az új Contoso Wi-Fi-hálózatot. Ezután az Ön által kiválasztott hitelesítési módszerrel csatlakozhatnak a hálózathoz.
 
-A cikkben szereplő lépésekkel hozzon létre egy Wi-Fi-profilt. Ezután tekintse át a platformspecifikus beállításokat és a részleteket tartalmazó témaköröket.
+Ez a cikk felsorolja a Wi-Fi-profil létrehozásához szükséges lépéseket. Is tartalmaz, amelyek ismertetik a különböző beállításokat az egyes platformokra vonatkozó hivatkozásokat.
 
 ## <a name="supported-device-platforms"></a>Támogatott eszközplatformok
 
@@ -45,7 +45,7 @@ A Wi-Fi-profilok a következő eszközplatformokat támogatják:
 > [!NOTE]
 > A Windows 8.1-et futtató eszközökön importálhatja egy másik eszköz korábban exportált Wi-Fi-konfigurációját.
 
-## <a name="create-a-wi-fi-device-profile"></a>Wi-Fi-eszközprofil létrehozása
+## <a name="create-a-device-profile"></a>Eszközprofil létrehozása
 
 1. Az [Azure Portalon](https://portal.azure.com) kattintson az **Összes szolgáltatás** elemre, szűrjön az **Intune-ra**, és válassza a **Microsoft Intune** elemet. 
 2. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
@@ -56,7 +56,6 @@ A Wi-Fi-profilok a következő eszközplatformokat támogatják:
     - **Vállalati Android**
     - **iOS**
     - **macOS**
-    - **Windows Phone 8.1**
     - **Windows 8.1 és újabb**
     - **Windows 10 és újabb**
 
@@ -80,4 +79,4 @@ A Wi-Fi-profilok a következő eszközplatformokat támogatják:
 
 ## <a name="next-steps"></a>További lépések
 
-A profil létrejön, de egyelőre nem csinál semmit. A következő lépés a [profil hozzárendelése](device-profile-assign.md).
+A profil létrejön, de egyelőre nem csinál semmit. Ezután [hozzárendeli ezt a profilt](device-profile-assign.md) és [monitorozhatja az alkalmazás állapotát.](device-profile-monitor.md).

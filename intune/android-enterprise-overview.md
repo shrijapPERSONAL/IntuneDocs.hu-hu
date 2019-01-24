@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/15/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4082b845643aae47464e4df14ac6621fcf8f39cf
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: f3bea9b1678669aa568c44e63f57aebd832cf203
+ms.sourcegitcommit: 9739a9aab032ebb2c4b52ccfb454a9e0f78b2ee4
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180251"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54751178"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Androidos munkahelyi profilos eszközök kezelése az Intune-nal
 
@@ -67,7 +67,7 @@ Az érvényben lévő alkalmazásvédelmi szabályzatokat a munkahelyi és a sze
 
 A VPN-támogatás az Android VPN-profilokhoz hasonlít. Ugyanazon VPN-szolgáltatók és általános beállítási lehetőségek érhetők el az eszközök a vállalati Android segítségével való kezeléséhez, két eltéréssel:
 
--  **Munkahelyi profil hatókörű VPN** – A VPN-kapcsolatok a munkahelyi profilban üzembe helyezett alkalmazásokra vannak korlátozva. Csak a vállalati Android által felügyelt alkalmazások használhatják a VPN-kapcsolatot. Az eszközön lévő saját alkalmazások nem használhatnak felügyelt VPN-kapcsolatot. További információt a [Vállalati Android VPN-beállításai](vpn-settings-android.md#android-for-work-vpn-settings) című témakörben talál.
+-  **Munkahelyi profil hatókörű VPN** – A VPN-kapcsolatok a munkahelyi profilban üzembe helyezett alkalmazásokra vannak korlátozva. Csak a vállalati Android által felügyelt alkalmazások használhatják a VPN-kapcsolatot. Az eszközön lévő saját alkalmazások nem használhatnak felügyelt VPN-kapcsolatot. További információt a [Vállalati Android VPN-beállításai](vpn-settings-android.md#android-enterprise-vpn-settings) című témakörben talál.
 
 -  **Alkalmazásspecifikus VPN** – Az alkalmazásspecifikus VPN akkor konfigurálható az Intune-ban, ha a VPN-szolgáltató támogatja:
     - alkalmazásspecifikus VPN konfigurációja

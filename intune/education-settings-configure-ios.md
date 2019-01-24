@@ -16,18 +16,19 @@ ms.reviewer: derriw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 40549d8fa9bead312f39ca9a782fb555e1022cd6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fd71af5d52f81d05ce424212e029f01c59a33a8d
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180408"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831581"
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>Az iOS-beli Osztályterem alkalmazás Intune-beállításainak konfigurálása
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
->[!NOTE]
->Az Osztályterem alkalmazás Intune-beállításai elavultak az Intune-ban. Ez a cikk csak azokra a felhasználókra vonatkozik, akiknek már van meglévő oktatási profiljuk az Intune-ban.
+
+> [!NOTE]
+> Az osztályterem alkalmazás Intune-beállítások nem használatosak az Intune-ban. Ez a cikk csak azokra a felhasználókra vonatkozik, akiknek már van meglévő oktatási profiljuk az Intune-ban.
 
 ## <a name="introduction"></a>Bevezetés
 Az [Osztályterem](https://itunes.apple.com/app/id1085319084) egy olyan alkalmazás, amely lehetővé teszi az oktatóknak a tanulási folyamat és a diákok eszközeinek irányítását az osztályteremben. Néhány példa a tanároknak az alkalmazás által elérhető lehetőségeire:

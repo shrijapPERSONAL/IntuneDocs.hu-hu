@@ -3,7 +3,7 @@ title: Windows 10-es eszközök csoportos regisztrálása
 titlesuffix: Microsoft Intune
 description: Csoportos regisztrációs csomag létrehozása a Microsoft Intune-hoz
 keywords: ''
-author: Erikje
+author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 5/21/2018
@@ -15,12 +15,12 @@ ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fca6fd73da1277973ee313055eaf4b5ba073afbb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 97f51b4934a2dc2267e255da0ec1d896dd6b8961
+ms.sourcegitcommit: 9739a9aab032ebb2c4b52ccfb454a9e0f78b2ee4
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184811"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54751195"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windowsos eszközök csoportos regisztrálása
 
@@ -48,8 +48,7 @@ Az Azure AD-felhasználók általános jogú felhasználók ezeken az eszközök
    - **Project folder** (Projektmappa) – A projekt mentési helye
    - **Description** (Leírás) – A projekt leírása (nem kötelező) ![Képernyőkép a név, a projektmappa és a leírás megadásáról a Windows Configuration Designerben](media/bulk-enroll-name.png)
 
-4. Adjon meg egyedi neveket az eszközök számára. A névben szerepelhet sorozatszám (%%SERIAL%%) vagy véletlenszerű karaktersorozat. Megadhat továbbá termékkulcsot arra az esetre, ha másik Windows-kiadásra vált, konfigurálhatja az eszközt közös használatra, és eltávolíthatja az előre telepített szoftvereket.
-
+4. Adjon meg egyedi neveket az eszközök számára. Névben szerepelhet sorozatszám (% soros %) vagy egy véletlenszerű karakter. Megadhat továbbá termékkulcsot arra az esetre, ha másik Windows-kiadásra vált, konfigurálhatja az eszközt közös használatra, és eltávolíthatja az előre telepített szoftvereket.
    ![Képernyőkép a név és a termékkulcs megadásáról a Windows Configuration Designerben](media/bulk-enroll-device.png)
 
 5. Lehetőség van arra is, hogy beállítsa, mely Wi-Fi-hálózathoz csatlakozzanak az eszközök az első indításkor.  Ha nincsenek konfigurálva a hálózati eszközök, az eszköz első indításakor vezetékes hálózati kapcsolatra lesz szükség.
@@ -65,7 +64,7 @@ Az Azure AD-felhasználók általános jogú felhasználók ezeken az eszközök
 
 9. Az **Add applications** elemmel alkalmazásokat, az **Add certificates** elemmel tanúsítványokat vehet fel az eszközökre. A megadott alkalmazások és tanúsítványok telepítve lesznek az eszközön.
 
-10. Igény esetén a kiépítési csomagot jelszóval is védheti.  Kattintson a **Létrehozás** gombra.
+10. Igény esetén a kiépítési csomagot jelszóval is védheti.  Kattintson a **Create** (Létrehozás) gombra.
     ![Képernyőkép a csomagvédelemről a Windows Configuration Designerben](media/bulk-enroll-create.png)
 
 ## <a name="provision-devices"></a>Eszközök üzembe helyezése

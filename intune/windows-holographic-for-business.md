@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 721d3a26e25c14a2e4ccd20b179ae7d4611d3186
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: df91908f3d3be7be23e3cecfa83e2d92b656b91e
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203382"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831598"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Kezelheti, és használható különböző eszközfelügyeleti funkcióival a Windows holographic operációs rendszert és a HoloLens-eszközök Intune-nal
 
@@ -108,7 +108,7 @@ Profiljaiban OMA-URI használatával testre szabhat néhány beállítást, lét
 
 Az OMA-URI (Open Mobile Alliance Uniform Resource Identifier) konfigurálásához egyéni profilt hozhat létre az Intune-ban. Az OMA-URI beállítások használatával a Windows Holographic for Business rendszerű eszközök olyan funkcióit szabályozhatja, mint a VPN engedélyezése vagy a frissítések keresése a Microsoft Update szolgáltatásban.
 
-#### <a name="configure-kiosk-modekiosk-settingsmdwindows-holographic-for-business"></a>[Teljes képernyős mód konfigurálása](kiosk-settings.md#windows-holographic-for-business)
+#### <a name="configure-kiosk-modekiosk-settings-holographicmd"></a>[Teljes képernyős mód konfigurálása](kiosk-settings-holographic.md)
 
 Az Intune-ban elérhető megosztott vagy vendégszámítógép funkciókkal konfigurálhatja a Windows Holographic for Business eszközöket teljes képernyős módban való futtatásra. Ezek az eszközök futtathatnak egyetlen alkalmazást (egyalkalmazásos kioszkmód) vagy több alkalmazást (többalkalmazásos kioszkmód).
 

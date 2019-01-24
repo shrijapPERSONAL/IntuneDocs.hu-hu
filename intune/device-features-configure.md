@@ -1,68 +1,64 @@
 ---
 title: iOS- és macOS-eszközprofilok létrehozása az Azure-beli Microsoft Intune-ban | Microsoft Docs
-description: A Microsoft Intune-nal hozzáadhat vagy létrehozhat egy iOS- vagy macOS-eszközprofilt, és konfigurálhatja az AirPrint és AirPlay funkciót, a kezdőképernyő elrendezését, az alkalmazásértesítéseket, a megosztott eszközöket, az egyszeri bejelentkezést és a webtartalomszűrő beállításait.
+description: Adjon hozzá vagy iOS- vagy macOS-profil létrehozása, és konfigurálhatja az AirPrint, elrendezését a kezdőképernyő, értesítések, közös használatú eszköz, egyszeri bejelentkezési és a webtartalomszűrő-beállításai a Microsoft Intune-ban.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/07/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.reviewer: heenamac
+ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2282ba4dd3caf8c71c8624884bc124393ea52d2f
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 4542a65afa87668702620a1b50443c9844692a87
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203093"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831275"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>iOS-es vagy macOS-es eszközfunkció-beállítások megadása az Intune-ban
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+Az Intune számos szolgáltatást tartalmaz, és a beállítások, amelyek segítségével a rendszergazdák szabályozhatja az iOS és macOS-eszközökhöz. A rendszergazdák például a következőket teheti:
 
-Az eszközfunkciókkal az iOS és macOS rendszerű eszközök számos különböző beállítását és szolgáltatását szabályozhatja, ideértve például a következőket:
+- A hálózaton lévő AirPrint-nyomtatókra való hozzáférés engedélyezése a felhasználóknak
+- Alkalmazások és mappák hozzáadása a kezdőképernyőn, beleértve az új oldal hozzáadása
+- Válassza ki, és ha igen, értesítések jelennek meg
+- A zárolási képernyőn megjelenítendő üzenet vagy az eszköz eszközcímkéjéről, különösen a megosztott eszközök konfigurálása
+- Engedélyezheti a felhasználók biztonságos egyszeri bejelentkezés használatát hitelesítő adatok alkalmazások közötti megosztását.
+- Webhelyek, felnőtteknek szóló nyelv és engedélyezése vagy letiltása adott webhelyek szűrése
 
-- Az AirPrint és az AirPlay beállításai
-- A kezdőképernyő elrendezése
-- Alkalmazások értesítései
-- Üzenet a zárolási képernyőn
-- Az egyszeri bejelentkezés beállítása
-- Webtartalomszűrés
+Ezek a funkciók érhetők el az Intune-ban, és a rendszergazda által konfigurálható. Az Intune használja a "profilok" hozhat létre, és ezeket a beállításokat a szervezet igényeinek megfelelően. Miután ezek a funkciók egy profilt ad hozzá, amit leküldéses, vagy a profilt a szervezetében üzembe helyezi az iOS és macOS-eszközök.
 
-Ez a cikk bemutatja az iOS-es eszközfunkció-profilok konfigurálásának alapjait. Ezután további cikkek elolvasásával megtudhatja, hogyan konfigurálhatja az eszközei platformspecifikus beállításait.
+Ez a cikk bemutatja, hogyan hozhat létre eszközkonfigurációs profil. Emellett megtekintheti az összes rendelkezésre álló beállítások [iOS](ios-device-features-settings.md) és [macOS](macos-device-features-settings.md) eszközök.
 
 ## <a name="create-a-device-profile"></a>Eszközprofil létrehozása
 
-1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
-2. Válassza a **Minden szolgáltatás** lehetőséget, szűrjön az **Intune**-ra, és válassza a **Microsoft Intune** elemet.
-3. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
-4. Adja meg a következő tulajdonságokat:
+1. Az a [az Azure portal](https://portal.azure.com), jelölje be **minden szolgáltatás** > szűréséhez **Intune** > Válassza ki **Intune**.
+2. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
+3. Adja meg a következő tulajdonságokat:
 
-   - **Név**: Adja meg az új profil leíró nevét.
-   - **Description** (Leírás): Adja meg a profil leírását. (Ez a beállítás, nem kötelező, de ajánlott.)
-   - **Platform**: Válassza ki a platform típusát:
-     - **iOS**
-     - **macOS**
-   - **Profil típusa**: Válassza ki **eszközfunkciók**.
-   - **Beállítások**: A beállítások a választott platformtól függ. Az alábbi cikkek ismertetik az egyes profiltípusok beállításait:
+    - **Név**: Adja meg az új profil leíró nevét.
+    - **Description** (Leírás): Adja meg a profil leírását. A beállítás használata nem kötelező, de ajánlott.
+    - **Platform**: Válassza ki a platformot:
+        - **iOS**
+        - **macOS**
+    - **Profil típusa**: Válassza ki **eszközfunkciók**.
+    - **Beállítások**: Adja meg a konfigurálni kívánt beállításokat. Az összes beállítások listáját, és mit tesznek lásd:
 
-     - [AirPrint-beállítások iOS-re és MacOS-re](air-print-settings-ios-macos.md)
-     - [AirPlay-beállítások iOS-re](airplay-settings-ios.md)
-     - [Kezdőképernyő-elrendezési beállítások iOS-re](home-screen-settings-ios.md)
-     - [Alkalmazások értesítési beállításai iOS-re](app-notification-settings-ios.md)
-     - [Zárolási képernyő üzenetek beállításai iOS-hez](shared-device-settings-ios.md)
-     - [Az Intune konfigurálása egyszeri bejelentkezéshez iOS-eszközökön](sso-ios.md)
-     - [Webtartalomszűrő-beállítások iOS-re](web-content-filter-settings-ios.md)
+        - [iOS](ios-device-features-settings.md)
+        - [macOS](macos-device-features-settings.md)
 
-5. Ha elkészült, a változások mentéséhez válassza az **OK** gombot, majd a **Létrehozás** elemet.
+4. Ha elkészült, a változások mentéséhez válassza az **OK** gombot, majd a **Létrehozás** elemet.
 
-Ekkor létrejön a profil, és megjelenik a listában.
+A profil létrehozásáról és jelennek meg a listában. Ügyeljen arra, hogy [rendelje hozzá a profilt](device-profile-assign.md) és [állapotát nyomon](device-profile-monitor.md).
 
-## <a name="next-step"></a>Következő lépés
+## <a name="next-steps"></a>További lépések
 
-Ha a profilt csoportokhoz szeretné rendelni, az [Eszközprofilok hozzárendelése](device-profile-assign.md) című cikkben talál további információt.
+A profil létrehozását követően készen áll hozzá kell rendelni. Ezután [rendelje hozzá a profilt](device-profile-assign.md) és [állapotát nyomon](device-profile-monitor.md).
+
+Megtekintheti az összes az eszközfunkció-beállításai [iOS](ios-device-features-settings.md) és [macOS](macos-device-features-settings.md) eszközök.

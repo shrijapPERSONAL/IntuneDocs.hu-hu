@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: cdac4623c6c5c9e7258897e1536856e6b24492ea
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 8479e69d661b163778a4d0b4eb1f68e729436f4e
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032010"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831496"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-allow-or-restrict-features-using-intune"></a>Windows Holographic for Business eszközbeállítások engedélyezett vagy korlátozott funkciók az Intune-nal
 
@@ -28,36 +28,36 @@ Ez a cikk és szabályozhatja a különböző beállításokat ismerteti a Windo
 
 ## <a name="before-you-begin"></a>Előkészületek
 
-[Eszközkonfigurációs profil létrehozása](device-restrictions-configure.md).
+[Eszközkonfigurációs profil létrehozása](device-restrictions-configure.md#create-the-profile).
 
 ## <a name="general"></a>Általános
 
-- **Regisztráció manuális törlésének**: lehetővé teszi, hogy a felhasználó a munkahelyi fiók manuális törlését az eszközről.
-- **Cortana**: engedélyezi vagy letiltja a Cortana beszédfelismerési asszisztens.
-- **Földrajzi hely meghatározásának**: Itt adhatja meg, hogy az eszköz használhatja-e a helyalapú szolgáltatások adatait.
+- **Regisztráció manuális törlésének**: Lehetővé teszi a felhasználó számára a munkahelyi fiók manuális törlését az eszközről.
+- **Cortana**: A Cortana beszédfelismerési asszisztens engedélyezése vagy letiltása.
+- **Földrajzi hely meghatározásának**: Meghatározza, hogy az eszköz használhatja-e a helyalapú szolgáltatások adatait.
 
-## <a name="password"></a>Jelszó
+## <a name="password"></a>Windows 10
 
-- **Jelszó**: megköveteli a végfelhasználótól, adjon meg egy jelszót az eszköz elérésére.
+- **Jelszó**: Megköveteli a végfelhasználótól, hogy jelszót adjon meg az eszköz eléréséhez.
 - **Jelszó kérése, ha az eszköz visszatér inaktív állapotból**: Itt adhatja meg, hogy a felhasználónak meg kell adnia egy jelszót az eszköz zárolásának feloldásához.
 
 ## <a name="app-store"></a>Alkalmazásáruház
 
-- **Áruházból származó alkalmazások automatikus frissítése**: lehetővé teszi, hogy a Microsoft Store automatikusan frissíteni kell a telepített alkalmazások.
-- **Megbízható alkalmazás telepítése**: lehetővé teszi az alkalmazások közvetlen telepítését a megbízható tanúsítvánnyal aláírt.
-- **Fejlesztői zárolás feloldása**: lehetővé teszi a Windows fejlesztői beállításait, például lehetővé teszi a végfelhasználók által módosítható a közvetlenül telepített alkalmazások.
+- **Áruházból származó alkalmazások automatikus frissítése**: Lehetővé teszi, hogy a Microsoft Store automatikusan frissíteni kell a telepített alkalmazások.
+- **Megbízható alkalmazás telepítése**: Lehetővé teszi az alkalmazások közvetlen telepítését a megbízható tanúsítvánnyal aláírt.
+- **Fejlesztői zárolás feloldása**: Lehetővé teszi a Windows fejlesztői beállításait, például lehetővé teszi a végfelhasználók által módosítható a közvetlenül telepített alkalmazások.
 
 ## <a name="microsoft-edge-browser"></a>Microsoft Edge böngésző
 
-- **A cookie-k**: lehetővé teszi, hogy a böngésző cookie-k mentse az eszközön.
-- **Előugró ablakok**: blokkolja az előugró ablakokat a böngészőben (csak Windows 10 asztali verzióra vonatkozik).
-- **Keresési javaslatok**: lehetővé teszi, hogy a keresőmotor webhelyeket javasoljon a keresőkifejezések beírása.
-- **Jelszókezelő**: engedélyezése vagy letiltása a Microsoft Edge böngésző jelszókezelő szolgáltatását.
-- **"Do not track" fejlécek küldése**: konfigurálja a Microsoft Edge böngésző küldése tiltó fejlécek felhasználók által meglátogatott webhelyeknek.
+- **A cookie-k**: Lehetővé teszi, hogy a böngésző cookie-k mentse az eszközön.
+- **Előugró ablakok**: Blokkolja az előugró ablakokat a böngészőben (csak Windows 10 asztali verzióra vonatkozik).
+- **Keresési javaslatok**: Lehetővé teszi, hogy a keresőmotor webhelyeket javasoljon a keresőkifejezések beírása közben.
+- **Jelszókezelő**: Engedélyezi vagy letiltja a Microsoft Edge böngésző jelszókezelő szolgáltatását.
+- **"Do not track" fejlécek küldése**: Konfigurálja a Microsoft Edge böngésző küldése tiltó fejlécek felhasználók által meglátogatott webhelyeknek.
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
 
-- **A Microsoft Edge SmartScreen**: engedélyezze a Microsoft Edge SmartScreen webhely- és fájlletöltésekhez eléréséhez.
+- **A Microsoft Edge SmartScreen**: Engedélyezze a Microsoft Edge SmartScreen webhely- és fájlletöltésekhez eléréséhez.
 
 ## <a name="search"></a>Keresés
 
@@ -65,27 +65,27 @@ Ez a cikk és szabályozhatja a különböző beállításokat ismerteti a Windo
 
 ## <a name="cloud-and-storage"></a>Felhő és tárolás
 
-- **Microsoft-fiók**: lehetővé teszi, hogy a felhasználó Microsoft-fiókot társítson az eszközhöz.
+- **Microsoft-fiók**: Lehetővé teszi, hogy a felhasználó Microsoft-fiókot társítson az eszközhöz.
 
 ## <a name="cellular-and-connectivity"></a>Mobilhálózati és egyéb kapcsolatok
 
-- **Bluetooth**: meghatározza, hogy a felhasználó engedélyezése és az eszköz Bluetooth konfigurálásához.
-- **Bluetooth-észlelhetőség**: észlelhetővé teszi az eszközt más Bluetooth-kompatibilis eszközök által.
-- **Bluetooth-hirdetés**: lehetővé teszi, hogy az eszközök hirdetéseket fogadjanak Bluetooth-on keresztül.
+- **Bluetooth**: Azt szabályozza, hogy a felhasználó engedélyezése és az eszköz Bluetooth konfigurálásához.
+- **Bluetooth-észlelhetőség**: Észlelhetővé teszi az eszközt más Bluetooth-kompatibilis eszközök által.
+- **Bluetooth-hirdetés**: Lehetővé teszi az eszközök hirdetéseket fogadjanak Bluetooth-on keresztül.
 
 ## <a name="control-panel-and-settings"></a>Vezérlőpult és Gépház
 
-- **Rendszeridő módosítása**: megakadályozza, hogy a végfelhasználó megváltoztassa az eszköz dátum és idő.
+- **Rendszeridő módosítása**: Megakadályozza, hogy a végfelhasználó megváltoztassa az eszköz rendszeridejét.
 
 ## <a name="kiosk---obsolete"></a>Kioszkmód – elavult
 
-Ezek a beállítások csak olvashatók, és nem módosíthatók. A kioszkmód konfigurálásáról a [Kioszkbeállítások](kiosk-settings.md#windows-holographic-for-business) című cikkből tájékozódhat.
+Ezek a beállítások csak olvashatók, és nem módosíthatók. A kioszkmód konfigurálásáról a [Kioszkbeállítások](kiosk-settings-holographic.md) című cikkből tájékozódhat.
 
 A kioszkeszközök jellemzően egy adott alkalmazást futtatnak. A rendszer a felhasználóknak csak a kioszkalkalmazáshoz ad hozzáférést, és meggátolja az eszköz más funkcióinak és szolgáltatásainak elérését.
 
-- **Teljes képernyős mód**: azonosítja a szabályzat által támogatott teljes képernyős mód típusát. A lehetőségek a következők:
+- **Teljes képernyős mód**: A szabályzat által támogatott teljes képernyős mód típusát jelöli. A lehetőségek a következők:
 
-  - **Nincs konfigurálva** (alapértelmezés): A szabályzat nem engedélyezi a teljes képernyős módot. 
+  - **Nincs konfigurálva** (alapértelmezett): A házirend nem engedélyezi a teljes képernyős módot. 
   - **Egyalkalmazásos kioszk**: A profil engedélyezi az eszköznek csak egyetlen alkalmazás futtatását. Amikor a felhasználó bejelentkezik, elindul az adott alkalmazás. Ez a mód emellett meggátolja a felhasználót abban, hogy új alkalmazásokat nyisson meg vagy másik futó alkalmazásra váltson.
   - **Többalkalmazásos kioszk**: A profil engedélyezi több alkalmazás futtatását az eszköz. Csak a hozzáadott alkalmazások lesznek elérhetők a felhasználónak. A többalkalmazásos kioszk (vagy fix célú eszköz) előnye az, hogy egy olyan, könnyen érthető környezetet nyújt a felhasználónak, amelyben csak a szükséges alkalmazások érhetőek el. Azokat az alkalmazásokat pedig, amelyekre nincsen szükség, elrejti a rendszer. 
   
@@ -103,4 +103,8 @@ Adja meg a következő beállításokat:
 
 ## <a name="reporting-and-telemetry"></a>Jelentéskészítés és telemetria
 
-- **Használati adatok megosztása**: Itt adhatja meg a diagnosztikai adatok küldésének szintjét.
+- **Használati adatok megosztása**: Válassza ki a diagnosztikai adatok küldésének szintjét.
+
+## <a name="next-steps"></a>További lépések
+
+[Rendelje hozzá a profilt](device-profile-assign.md), és [kövesse nyomon az állapotát](device-profile-monitor.md).
