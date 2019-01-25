@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/03/2018
+ms.date: 01/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c7c5f163eef37333367511650ba86e01250ffe18
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.openlocfilehash: 58ff1bd91a5c95d66d75ad6546137dd2de9feac3
+ms.sourcegitcommit: a30d4b699df4bff17ef39d6c93b2a5c5432db5ae
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831710"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54899093"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Mobilalkalmazás-kezelési hibaelhárítás
 
@@ -30,7 +30,7 @@ Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kér
 
 ## <a name="common-it-administrator-issues"></a>A rendszergazdáknál gyakran előforduló problémák
 
-Ezek olyan gyakori problémák, amelyeket a rendszergazdák tapasztalhatnak az Intune-beli alkalmazásvédelmi szabályzatok használatakor.
+Ezek a gyakori problémák az Intune alkalmazásvédelmi szabályzatai segítségével a rendszergazdák tapasztalhatnak.
 
 | Probléma | Leírás | Megoldás: |
 | -- | -- | -- |
@@ -48,9 +48,9 @@ A végfelhasználóknál előforduló gyakori problémák a következő kategór
 
 * **Normál használati forgatókönyvek**: A végfelhasználó ezen forgatókönyvek szerinti, amely az Intune alkalmazásvédelmi szabályzattal rendelkeznek az alkalmazások tapasztalhat. Ezek nem tényleges problémákat, de problémának vagy hibáknak tűnhetnek.
 
-* **Normál használati párbeszédpanelek**: Ezek a használati párbeszédpanelek az Intune alkalmazásvédelmi szabályzattal rendelkeznek az alkalmazásokat láthatják. Ezeket az üzeneteket és párbeszédpanelek **nem** hibát jeleznek.
+* **Normál használati párbeszédpanelek**: Ezek a használati párbeszédpanelek egy olyan Intune alkalmazásvédelmi szabályzattal rendelkeznek az alkalmazások láthatják. Ezeket az üzeneteket és párbeszédpanelek **nem** hibát jeleznek.
 
-* **Hibaüzenetek és párbeszédpanelek**: Ezek a hibaüzenetek és párbeszédpanelek láthatják az alkalmazásokra vonatkozó Intune alkalmazásvédelmi szabályzattal rendelkeznek. Ezek gyakran a rendszergazda által elkövetett hibát jeleznek, vagy az Intune-alkalmazásvédelem hibáját.
+* **Hibaüzenetek és párbeszédpanelek**: Ezek a hibaüzenetek és párbeszédpanelek láthatják az alkalmazásokkal, az Intune alkalmazásvédelmi szabályzattal rendelkeznek. Ezek gyakran a rendszergazda által elkövetett hibát jeleznek, vagy az Intune-alkalmazásvédelem hibáját.
 
 ### <a name="normal-usage-scenarios"></a>Normál használati forgatókönyvek
 
@@ -63,19 +63,19 @@ Android | Miért kell a végfelhasználónak akkor is **telepítenie a Céges po
 
 Platform | Üzenet vagy párbeszédpanel | Magyarázat |
 --- | --- | --- |
-iOS, Android | **Jelentkezzen be**: Az adatok védelme a munkahelyének felügyelnie kell ezt az alkalmazást. A művelet befejezéséhez jelentkezzen be a munkahelyi vagy az iskolai fiókjába. | A végfelhasználónak be kell jelentkeznie a munkahelyi vagy az iskolai fiókjába ennek az alkalmazásvédelmi szabályzatot igénylő alkalmazásnak a használatához. Ahhoz, hogy a szabályzat érvénybe lépjen a felhasználónak hitelesítést kell végeznie az Azure Active Directoryban.
-iOS, Android |**Újraindítás szükséges**: A szervezet már védi az adatokat az alkalmazásban. A folytatáshoz újra kell indítania az alkalmazást. | Az alkalmazás épp megkapta az Intune alkalmazásvédelmi szabályzatát, és újra kell indulnia a szabályzat érvénybe léptetéséhez.
-iOS, Android |**A művelet nem engedélyezett**: A szervezet csak lehetővé teszi, hogy ezt az alkalmazást munkahelyi vagy iskolai adatok megnyitását. | A rendszergazda a **Más alkalmazásokból való adatfogadás engedélyezése az alkalmazásnak** beállításaként a **Csak felügyelt alkalmazások** lehetőséget adta meg. Ezért a végfelhasználó ebbe az alkalmazásba csak alkalmazásvédelmi szabályzattal rendelkező más alkalmazásokból viheti át az adatokat.
-iOS, Android |**A művelet nem engedélyezett**: A szervezet csak lehetővé teszi az adatok átviteléhez más kezelt alkalmazásokba. | A rendszergazda **Az alkalmazás átadhat adatokat más alkalmazásoknak** beállításaként a **Csak felügyelt alkalmazások** lehetőséget adta meg. Ezért a végfelhasználó ebből az alkalmazásból csak alkalmazásvédelmi szabályzattal rendelkező más alkalmazásokba viheti át az adatokat.
+iOS, Android | **Jelentkezzen be**: Az adatok védelme a munkahelyének felügyelnie kell ezt az alkalmazást. A művelet befejezéséhez jelentkezzen be a munkahelyi vagy az iskolai fiókjába. | A végfelhasználónak egy alkalmazásvédelmi szabályzatot igénylő alkalmazás használatához munkahelyi vagy iskolai fiókjával kell bejelentkeznie. Ahhoz, hogy a szabályzat vonatkozik a felhasználói hitelesítést kell végeznie az Azure Active Directoryban.
+iOS, Android |**Újraindítás szükséges**: A szervezet már védi az adatokat az alkalmazásban. A folytatáshoz újra kell indítania az alkalmazást. | Az alkalmazás épp megkapta az Intune alkalmazásvédelmi szabályzatot, és ahhoz, hogy a szabályzat érvénybe léptetéséhez újra kell indítani.
+iOS, Android |**A művelet nem engedélyezett**: A szervezet csak lehetővé teszi, hogy ezt az alkalmazást munkahelyi vagy iskolai adatok megnyitását. | A rendszergazda a **Más alkalmazásokból való adatfogadás engedélyezése az alkalmazásnak** beállításaként a **Csak felügyelt alkalmazások** lehetőséget adta meg. Ezért a végfelhasználó csak viheti át az adatokat ebbe az alkalmazásba egy alkalmazásvédelmi szabályzattal rendelkező más alkalmazásokból.
+iOS, Android |**A művelet nem engedélyezett**: A szervezet csak lehetővé teszi az adatok átviteléhez más kezelt alkalmazásokba. | A rendszergazda **Az alkalmazás átadhat adatokat más alkalmazásoknak** beállításaként a **Csak felügyelt alkalmazások** lehetőséget adta meg. Ezért a végfelhasználó csak küldhetnek adatokat ebből az alkalmazásból egy alkalmazásvédelmi szabályzattal rendelkező más alkalmazásokba.
 iOS, Android |**Törlési riasztás**: Munkahelye eltávolította az ehhez az alkalmazáshoz hozzárendelt adatokat. A folytatáshoz indítsa újra az alkalmazást. | A rendszergazda az Intune alkalmazásvédelmi funkciójával kezdeményezte az alkalmazástörlés.
-Android | **Céges portál szükséges**: Munkahelyi vagy iskolai fiókját használja az alkalmazással, telepítenie kell az Intune vállalati portál alkalmazást. A folytatáshoz koppintson a „Ugrás az Áruházba” gombra. | Androidon a legtöbb alkalmazásvédelmi funkció be van építve a Céges portál alkalmazásba. **Annak ellenére, hogy a Céges portál alkalmazás mindig szükséges, eszközregisztrációra nincs szükség**. A regisztráció nélküli alkalmazásvédelemhez a végfelhasználónak telepítenie kell a Céges portál alkalmazást az eszközre.
+Android | **Céges portál szükséges**: Munkahelyi vagy iskolai fiókját használja az alkalmazással, telepítenie kell az Intune vállalati portál alkalmazást. Kattintson a "Ugrás az áruházba" gombra a folytatáshoz. | Androidon a legtöbb alkalmazásvédelmi funkció be van építve a Céges portál alkalmazásba. **Annak ellenére, hogy a Céges portál alkalmazás mindig szükséges, eszközregisztrációra nincs szükség**. A regisztráció nélküli alkalmazásvédelemhez a végfelhasználónak telepítenie kell a Céges portál alkalmazást az eszközre.
 
 ### <a name="error-messages-and-dialogs-on-ios"></a>Hibaüzenetek és párbeszédpanelek az iOS-ben
 
 Hibaüzenet vagy párbeszédpanel | Ok | Szervizelés |
 -- | --- | --- |
-**Alkalmazás nem állította be**: Ez az alkalmazás nincs beállítva a használatra. Segítségért forduljon a rendszergazdához. | Nem sikerült észlelni az alkalmazáshoz használandó alkalmazásvédelmi szabályzatot. |Léptessen életbe egy iOS-es alkalmazásvédelmi szabályzatot a felhasználó biztonsági csoportjában, és célozza meg benne ezt az alkalmazást.
-**Üdvözli az Intune Managed Browser**: Ez az alkalmazás akkor működik a legjobban, ha a Microsoft Intune által kezelt. Bármikor böngészheti vele az internetet. Ha az alkalmazást a Microsoft Intune felügyeli, további adatbiztonsági funkciókat is elérhet. | Nem sikerült észlelni az Intune Managed Browser alkalmazáshoz használandó alkalmazásvédelmi szabályzatot. <br><br>A felhasználó ebben az esetben is internetezhet, de az alkalmazást nem az Intune fogja felügyelni. | Léptessen életbe egy iOS-es alkalmazásvédelmi szabályzatot a felhasználó biztonsági csoportjában, és célozza meg benne ezt az Intune Managed Browser alkalmazást.
+**Alkalmazás nem állította be**: Ez az alkalmazás nincs beállítva a használatra. Segítségért forduljon a rendszergazdához. | Hiba történt egy alkalmazásvédelmi szabályzatot az alkalmazás észleléséhez. |Léptessen életbe egy iOS-es alkalmazásvédelmi szabályzatot a felhasználó biztonsági csoportjában, és célozza meg benne ezt az alkalmazást.
+**Üdvözli az Intune Managed Browser**: Ez az alkalmazás akkor működik a legjobban, ha a Microsoft Intune által kezelt. Bármikor böngészheti vele az internetet. Ha az alkalmazást a Microsoft Intune felügyeli, további adatbiztonsági funkciókat is elérhet. | Hiba történt észleléséhez egy alkalmazásvédelmi szabályzatot az Intune Managed Browser alkalmazás. <br><br>A felhasználó ebben az esetben is internetezhet, de az alkalmazást nem az Intune fogja felügyelni. | Léptessen életbe egy iOS-es alkalmazásvédelmi szabályzatot a felhasználó biztonsági csoportjában, és célozza meg benne ezt az Intune Managed Browser alkalmazást.
 **Sikertelen bejelentkezés**: Nem tudjuk beléptetni most. Próbálkozzon újra később. | Nem sikerült regisztrálni a felhasználót a MAM-szolgáltatásban, miután a felhasználó megpróbált munkahelyi vagy iskolai fiókjával bejelentkezni. | Léptessen életbe egy iOS-es alkalmazásvédelmi szabályzatot a felhasználó biztonsági csoportjában, és célozza meg benne ezt az alkalmazást.
 **A fiók nincs beállítva**: A szervezete nem állította be a fiókját a munkahelyi vagy iskolai adatok elérésére. Kérjen segítséget a rendszergazdától. | A felhasználói fiókhoz nem tartozik Intune A Direct-licenc. | Rendeljen Intune-licencet a felhasználó fiókjához az [Office-portálon](http://portal.office.com).
 **Nem felel meg az eszköz**: Ez az alkalmazás nem használható, mert Ön egy feltört eszközt használ. Segítségért forduljon a rendszergazdához. | Az Intune észlelte, hogy a felhasználó feltört eszközt használ. | Állítsa vissza az eszköz gyári alapbeállításait. Kövesse az Apple támogatói webhelyén található [utasításokat](https://support.apple.com/HT201274).
@@ -90,7 +90,7 @@ Hibaüzenet vagy párbeszédpanel | Ok | Szervizelés |
 
 Párbeszédpanel/hibaüzenet | Ok | Szervizelés |
 -- | --- | --- |
-**Alkalmazás nem állította be**: Ez az alkalmazás nincs beállítva a használatra. Segítségért forduljon a rendszergazdához. | Nem sikerült észlelni az alkalmazáshoz használandó alkalmazásvédelmi szabályzatot. |Léptessen életbe egy Andoridos alkalmazásvédelmi szabályzatot a felhasználó biztonsági csoportjában, és célozza meg benne ezt az alkalmazást.
+**Alkalmazás nem állította be**: Ez az alkalmazás nincs beállítva a használatra. Segítségért forduljon a rendszergazdához. | Hiba történt egy alkalmazásvédelmi szabályzatot az alkalmazás észleléséhez. |Léptessen életbe egy Andoridos alkalmazásvédelmi szabályzatot a felhasználó biztonsági csoportjában, és célozza meg benne ezt az alkalmazást.
 **Sikertelen alkalmazások indítása**: Hiba történt az alkalmazás indításakor. Próbálja meg frissíteni az alkalmazást vagy az Intune Munkahelyi portál alkalmazást. Ha segítségre van szüksége, lépjen kapcsolatba a rendszergazdával. | Az Intune észleli az alkalmazásra vonatkozó érvényes alkalmazásvédelmi szabályzatot, de az alkalmazás összeomlik a MAM inicializálása során. | Ellenőrizze, hogy az alkalmazás naprakész verzióját használja-e. <br><br> Ellenőrizze, hogy telepítve van-e az eszközön az Intune Munkahelyi portál alkalmazás, és hogy naprakész-e. <br><br> Ha a hiba továbbra is fennáll, használja a vállalati portál alkalmazás naplók küldése az Intune-ba, vagy hozzon létre egy [támogatási jegyet](get-support.md#create-an-online-support-ticket).
 **Nem találhatók alkalmazások**: Nincsenek alkalmazások az eszköz, amellyel munkahelye engedélyezné a tartalom megnyitását. Segítségért forduljon a rendszergazdához. | A felhasználó munkahelyi vagy iskolai adatokat próbált meg megnyitni egy másik alkalmazásban, de az Intune nem talált olyan más felügyelt alkalmazást, amely jogosult az adatok megnyitására. | Állítson be egy androidos alkalmazásvédelmi szabályzatot a felhasználó biztonsági csoportjában, és célozzon meg vele legalább egy másik MAM-kompatibilis alkalmazást, amely alkalmas a kérdéses adatok megnyitására.
 **Sikertelen bejelentkezés**: Próbálja meg újra bejelentkezni. Ha nem szűnik meg a probléma, kérje a rendszergazda segítségét. | Nem sikerült hitelesíteni a fiókot, amellyel a felhasználó megpróbál bejelentkezni. | A felhasználó azzal a munkahelyi vagy iskolai fiókkal jelentkezzen be, amely már regisztrálva van az Intune MAM-szolgáltatásában (ez az első munkahelyi vagy iskolai fiók, amellyel sikeresen bejelentkezett ebbe az alkalmazásba). <br><br> Törölje az alkalmazásadatokat. <br><br> Ellenőrizze, hogy az alkalmazás naprakész verzióját használja-e. <br><br> Ellenőrizze, hogy a Munkahelyi portál alkalmazás naprakész verzióját használja-e.

@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 145b4ba18325d82942eb4ebf5fbfe17ffc8e653b
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.openlocfilehash: 833e58d8add6b316267e7cb1e177384a0ca4966d
+ms.sourcegitcommit: a30d4b699df4bff17ef39d6c93b2a5c5432db5ae
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53737899"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54899110"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Kapcsolódás az adattárházhoz a Power BI használatával
 
@@ -54,7 +54,7 @@ A Power BI-fájl (pbix) tartalmazza a bérlő eléréséhez használható csatla
 > [!Important]  
 > A bérlő földrajzi helyétől függően a Power BI-fájlok (pbix) eltérőek lehetnek. Ha több Intune-bérlőt felügyel, akkor ügyeljen arra, hogy azt a fájlt használja, amelyet ebbe a bérlőbe bejelentkezve letöltött az Azure Portalról.  
 
-1.  Jelentkezzen be az Azure Portalon, és válassza a **Monitoring + Management** > **Intune**. Kereshet erőforrásokat is **Intune**.  
+1.  Jelentkezzen be az Azure Portalra, és válassza a **Monitoring + Management (Figyelés és kezelés)** > **Intune** elemet. Az **Intune** elemet erőforrások keresésével is megtalálhatja.  
 2.  Nyissa meg a **Microsoft Intune-adattárház API (előnézet)** panelt.
 3.  Válassza a **Download PowerBI file** (Power BI-fájl letöltése) lehetőséget. Adjon meg egy helyet a pbix kiterjesztésű fájl letöltéséhez, és töltse le a fájlt.
 4.  Nyissa meg a fájlt a Power BI-ben. Betöltődik az *Intune-beli adattárház-jelentés*, ami a bérlő adatainak betöltésétől függően hosszabb ideig is eltarthat.
@@ -65,7 +65,7 @@ A Power BI-fájl (pbix) tartalmazza a bérlő eléréséhez használható csatla
 
 Ha az ügyfél hitelesítve van az Azure AD-ben, az OData-URL kapcsolódni tud az adattárház-API RESTful-végpontjához, és így a jelentéskészítő ügyfél hozzáfér az adatmodellhez. Az alábbi lépéseket követve a Power BI Desktop használatával végezheti el a kapcsolódást, és létrehozhatja saját jelentéseit. Az OData-URL alkalmazásánál a Power BI-n kívül más elemzőeszközöket is használhat, amennyiben az ügyfél OAUTH2.0-hitelesítést, valamint az OData-szabvány 4.0-ás verzióját használja.
 
-1.  Jelentkezzen be az Azure Portalon, és válassza a **Monitoring + Management** > **Intune**. Kereshet erőforrásokat is **Intune**.  
+1.  Jelentkezzen be az Azure Portalra, és válassza a **Monitoring + Management (Figyelés és kezelés)** > **Intune** elemet. Az **Intune** elemet erőforrások keresésével is megtalálhatja.  
 2.  Nyissa meg a **Microsoft Intune-adattárház API (előnézet)** panelt.
 3. A jelentések panelről szerezze be az egyéni hírcsatorna URL-címét, például: `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
 4. Nyissa meg a **Power BI Desktopot**.

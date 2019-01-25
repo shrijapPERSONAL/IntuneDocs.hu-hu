@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 2bd9b244947f5f0b8fcb832682951c7a241f96a4
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 064fa53341558ac18a228b56dca6d129cd58a3af
+ms.sourcegitcommit: a30d4b699df4bff17ef39d6c93b2a5c5432db5ae
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032350"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54899076"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>A Készülékregisztrációs Program vagy az Apple School Manager macOS-eszközök automatikus regisztrálása
 
@@ -123,7 +123,7 @@ Most, hogy telepítette a jogkivonatot, létrehozhat egy regisztrációs profilt
  
 7. Válassza az **OK** gombot.
 
-8. Válassza a **Beállítási asszisztens beállításai** elemet, és konfigurálja az alábbi profilbeállításokat:  ![A beállítási asszisztens testreszabása.](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)
+8. Kattintson a **Beállítási asszisztens beállításai** elemre, és konfigurálja az alábbi profilbeállításokat:  ![A beállítási asszisztens testreszabása.](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)
 
     | Részlegbeállítások | Leírás |
     |---|---|
@@ -150,6 +150,10 @@ Most, hogy telepítette a jogkivonatot, létrehozhat egy regisztrációs profilt
     | <strong>FileVault</strong> | Lehetőséget nyújt a felhasználónak a FileVault-titkosítás beállítására. |
     | <strong>iCloud-diagnosztika</strong> | Lehetőséget nyújt a felhasználónak arra, hogy iCloud diagnosztikai adatokat küldhessen az Apple-nek. |
     | <strong>Regisztráció</strong>| Kötelezi a felhasználót az eszköz regisztrálására. |
+    | <strong>Android-áttelepítés</strong> | Lehetővé teheti a felhasználói adatok áttelepítése az Android-eszközön. |
+    | <strong>Megjeleníti a képviselő hangvételét</strong> | Lehetővé teheti a felhasználó, kapcsolja be a megjelenítendő képviselő hangvételét. |
+    | <strong>Adatvédelem</strong> | Az adatvédelmi képernyő megjelenítése a felhasználónak. |
+    | <strong>iCloud Storage</strong> | Lehetővé teheti a felhasználó icloud-alapú tárolók használatához. |
 
    
 

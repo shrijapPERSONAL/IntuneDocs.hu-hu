@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 01/24/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 264b7f4b476b18695c6dd0282f34a9af33b6b27f
-ms.sourcegitcommit: 1f544172299f0990e1e13cebf3830b8c0511d6ed
+ms.openlocfilehash: cd9aedbc8f02cd116eb3135e30348ca104aa1120
+ms.sourcegitcommit: a30d4b699df4bff17ef39d6c93b2a5c5432db5ae
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54418210"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54899161"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,6 +42,14 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Emellett tá
 ### Role-based access control
 
 -->     
+## <a name="week-of-january-21-2019"></a>2019. január 21 hete
+
+### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509----"></a>Hagyja ki a további beállítási asszisztens képernyők az iOS DEP-eszközökön <!-- 2687509  -->
+Jelenleg kihagyhatja a képernyők, mellett állíthatja be iOS DEP-eszközök a beállítási asszisztens képernyőinek kihagyásához amikor egy felhasználó regisztrálja az eszközt: Képviselő hangvételét, adatvédelmi, Android áttelepítési, kezdőlap gombot, iMessage & FaceTime, bevezetési, tekintse meg a Migrálási, megjelenését, képernyő idő, szoftverfrissítés, SIM telepítő megjelenítéséhez.
+Válassza ki, amely a képernyők kihagyásához, lépjen a **eszközregisztráció** > **Apple-regisztráció** > **Készülékregisztrációs programbeli token** > Válasszon egy tokent > **Profilok** > Válasszon egy profilt > **tulajdonságok** > **beállítási asszisztens testreszabása** > Válasszon **elrejtése**  bármely képernyők kihagyásához a > **OK**.
+Hozzon létre egy új profilt, vagy szerkessze a profil, ha a kiválasztott kihagyása képernyők kell szinkronizálni az Apple MDM-kiszolgáló. Így nem lesz késleltetés vesz fel a profil módosítása a felhasználók kiadhatnak az eszköz manuális szinkronizálása.
+A szolgáltatás indítása folyamatban van vezethet be, de eltarthat pár nappal minden ügyfelünk számára elérhető legyen.
+
 ## <a name="week-of-january-14-2019"></a>2019. január 14 hete
 
 ### <a name="preview-of-support-for-android-corporate-owned-fully-managed-devices----1574342----"></a>A vállalat által birtokolt, teljes körűen felügyelt Android-eszközök támogatása előzetes verzió <!-- 1574342  -->
