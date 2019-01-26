@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
-ms.openlocfilehash: 321d5958808d291e6bd6969cfffa66a6bc0194fe
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.openlocfilehash: a5a756cd3fd8b78893cee6a3c4629e49d6ac7c87
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831703"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072541"
 ---
 # <a name="ios-device-feature-settings-in-intune"></a>iOS-es eszközfunkció-beállítások az Intune-ban
 
@@ -29,7 +29,7 @@ Ez a cikk ezeket a beállításokat, és ismerteti az egyes beállítások funkc
 
 ## <a name="before-you-begin"></a>Előkészületek
 
-[Hozzon létre egy IOS-es eszközkonfigurációs profil](device-features-configure.md).
+[Hozzon létre egy IOS-es eszközkonfigurációs profil](device-features-configure.md#create-a-device-profile).
 
 ## <a name="airprint-settings"></a>AirPrint-beállítások
 
@@ -275,6 +275,20 @@ Ezek a beállítások hozzáféréseket a böngésző URL-CÍMÉT az iOS-eszköz
       Ha nem ad meg semmilyen URL, akkor a végfelhasználók az alábbiakat kivéve webhelyekhez férnek hozzá `microsoft.com`, `microsoft.net`, és `apple.com`. Az URL-címek az Intune által automatikusan engedélyezve van.
 
       Válassza ki **OK** a módosítások mentéséhez.
+
+## <a name="wallpaper-settings"></a>Háttérkép beállításai
+
+Adja hozzá a felügyelt iOS-eszközök egyéni .png, .jpg és .jpeg kép. Például használja a vállalati embléma a zárolási képernyőn.
+
+- **Háttérkép megjelenítési helyét**: Válasszon egy helyet, a kép megjelenítéséhez az eszközön. A választható lehetőségek:
+  - **Nincs konfigurálva**: Egyéni rendszerkép nem hozzáad az eszközhöz. Az eszköz az operációs rendszer alapértelmezett használja.
+  - **Zárolási képernyő**: A kép hozzáadása a zárolási képernyőn.
+  - **Kezdőképernyő**: A kép ad hozzá a kezdőképernyőn.
+  - **Zárolási képernyő és a kezdőképernyőn**: Használja ugyanazt a lemezképet a zárolási képernyő és kezdőképernyőjén.
+- **Kép háttérkép**: Töltse fel egy meglévő .png, .jpg vagy .jpeg lemezkép létrehozásához használni szeretne. Győződjön meg arról, hogy a fájl mérete legfeljebb 750 KB. Emellett **eltávolítása** hozzáadott kép.
+
+> [!TIP]
+> A zárolási képernyőn látható kép-profil létrehozása a zárolási képernyő és a kezdőképernyő különböző képek megjelenítéséhez. Hozzon létre egy másik profilt a kezdőképernyő lemezképpel. Az iOS-felhasználói vagy eszközcsoportok mindkét profil hozzárendelésére.
 
 ## <a name="bundle-ids-for-built-in-ios-apps"></a>Alkalmazásköteg-azonosítókat beépített iOS-alkalmazások
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 62c44768f17ecc82dc748eb4dfda74da421ee3b5
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: 91f338a768ef67106a9b65de759dd74da2902138
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387018"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072558"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Android Enterprise eszközbeállítások engedélyezett vagy korlátozott funkciók az Intune-nal
 
@@ -48,7 +48,6 @@ Ez a cikk és az Android Enterprise eszközökön szabályozhatja a különböz�
 - **Wi-Fi-beállítások módosításai**: Válasszon **blokk** , az eszköz tulajdonosa által létrehozott Wi-Fi-beállítások módosításának megakadályozása. Felhasználók saját Wi-Fi-beállításokat hozhat létre. **Nincs konfigurálva** lehetővé teszi a felhasználóknak, hogy a Wi-Fi-beállításokat az eszközön.
 - **Wi-Fi hozzáférési pont konfigurációja**: Válasszon **blokk** , hogy a felhasználók létrehozása vagy módosítása a Wi-Fi-konfigurációkat. **Nincs konfigurálva** lehetővé teszi a felhasználóknak, hogy a Wi-Fi-beállításokat az eszközön.
 - **Bluetooth-konfiguráció**: Válasszon **blokk** meg, hogy a felhasználók a Bluetooth konfigurálását az eszközön. **Nincs konfigurálva** lehetővé teszi, hogy az eszköz Bluetooth használatával.
-- **Bluetooth-névjegyek megosztása**: Válasszon **blokk** kívánja tagadni a hozzáférést a munkahelyi névjegyekhez egy másik eszköz, például egy autó rendszer, ha egy Android-eszközön a Bluetooth segítségével. **Nincs konfigurálva** lehetővé teszi, hogy az egy másik Bluetooth-eszközhöz, amely az Android-eszközre van párosítva a munkahelyi névjegyekhez való hozzáférést.
 - **-Alapú internetmegosztás és hozzáférési pontokhoz**: Válasszon **blokk** hordozható pontokhoz-alapú internetmegosztás és a hozzáférés megelőzése érdekében. **Nincs konfigurálva** -alapú internetmegosztás és hordozható elérési pontokhoz való hozzáférést.
 - **USB-tárolók**: Válasszon **engedélyezése** az eszköz USB-tároló elérése érdekében. **Nincs konfigurálva** megakadályozza a USB-tároló.
 - **USB-fájlátvitel**: Válasszon **blokk** elkerülése érdekében fájlok átvitelével az USB-kapcsolaton keresztül. **Nincs konfigurálva** lehetővé teszi a fájlok átviteléhez.

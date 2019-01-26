@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cd6ac0b1fdb64897a831c0111f7e0a611c85bede
-ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
+ms.openlocfilehash: 51d1c477f490cb23c35ef54a0a5099ee4b4b035b
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54210703"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068254"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Csak vállalati adatok törlése az Intune által felügyelt alkalmazásokból
 
@@ -36,6 +36,9 @@ A vállalati alkalmazásadatok szelektív törléséhez hozzon létre törlési 
 
 >[!IMPORTANT]
 > Az alkalmazásból a natív címjegyzékbe közvetlenül szinkronizált névjegyeket a rendszer eltávolítja. A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem törölhetők. Ez jelenleg csak a Microsoft Outlook alkalmazásra érvényes.
+
+## <a name="deployed-wip-policies-without-user-enrollment"></a>Üzembe helyezett WIP-szabályzatok felhasználói regisztráció nélkül
+Windows Information Protection (WIP) szabályzatok MDM-felhasználók számára a Windows 10 rendszerű eszköz regisztrálása nélkül is telepíthető. Ez a konfiguráció lehetővé teszi, hogy a vállalatok biztosítsák a vállalati dokumentumok védelmét a WIP-konfiguráció alapján, miközben a felhasználó saját maga felügyelheti Windows-eszközeit. Ha a dokumentumok védve vannak WIP-szabályzattal, a védett adatokat az Intune-rendszergazdák szelektív módon törölhetik. Ehhez ki kell választaniuk a felhasználót és az eszközt, majd el kell küldeniük egy adattörlési kérést, amelynek hatására WIP-szabályzat által védett összes adat használhatatlanná válik. Az Intune az Azure Portalon, válassza ki a **ügyfélalkalmazás** > **alkalmazások szelektív törlése**. További információ: [A Windows Információvédelem (WIP) alkalmazásvédelmi szabályzatainak létrehozása és bevezetése az Intune használatával](windows-information-protection-policy-create.md).
 
 ## <a name="create-a-wipe-request"></a>Törlési kérés
 

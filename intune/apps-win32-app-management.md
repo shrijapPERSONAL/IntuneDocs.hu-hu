@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 01/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 11a698628e3ca1342f10f088045012523c8ac745
-ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
+ms.openlocfilehash: cb52a9755dffd20e6d3d66419855cc4ee7fca293
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53734289"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068322"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Különálló Intune – Win32-alkalmazáskezelés (nyilvános előzetes verzió)
 
@@ -239,6 +239,9 @@ A felhasználó kötelező és elérhető alkalmazástelepítésekhez Windows be
 Az alábbi képen tájékoztatja a végfelhasználót, hogy az eszköz alkalmazás változások történnek.
 
 ![Képernyőkép, amely az alkalmazás változásokra kerül sor a felhasználó értesítése](./media/apps-win32-app-09.png)    
+
+## <a name="toast-notifications-for-win32-apps"></a>Bejelentési értesítések Win32-alkalmazások 
+Ha szükséges, bemutató végfelhasználói bejelentési értesítések egy alkalmazás-hozzárendelés tilthatja le. Az Intune-ból, válassza ki a **ügyfélalkalmazás** > **alkalmazások** > Válassza ki az alkalmazást > **Assignemnts** > **csoportokhozközétartozik**. 
 
 ## <a name="troubleshoot-win32-app-issues"></a>A Win32-alkalmazások hibáinak elhárítása
 Az ügynöknaplók általában a következő helyen érhetők el az ügyfélgépen: `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. A `CMTrace.exe` segítségével megtekintheti ezeket a naplófájlokat. A *CMTrace.exe* az [SCCM-ügyféleszközök](https://docs.microsoft.com/sccm/core/support/tools) közül tölthető le. 

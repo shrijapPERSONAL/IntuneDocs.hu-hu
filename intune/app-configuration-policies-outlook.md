@@ -6,7 +6,7 @@ author: Erikre
 ms.author: erikre
 ms.reviewer: smithre4
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 691029cc7b9fd8880c5440a84b95bbf2462920d6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 433d15d91bc32ef409c9a89c4d71cacb7478e74d
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180323"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068305"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>A Microsoft Outlook konfigurációs beállításai 
 
@@ -29,18 +29,9 @@ Alkalmazáskonfigurációs szabályzat felügyelt iOS-eszközökhöz történő 
 
 ## <a name="configuration-settings"></a>Konfigurációs beállítások
 
-Amikor hozzáad egy konfigurációs szabályzatot az Intune-ban, speciális beállításokat is megadhat a Microsoft Outlook konfigurálásához. A **Konfigurációs beállítások** panelen például megadhatja az e-mail-fiók konfigurációját.
+Amikor egy konfigurációs szabályzat felvétele az Intune-ban, beállítások konfigurálása a Microsoft Outlook alkalmazást iOS és Android rendszerhez is megadhat. A konfigurációs beállítások panelen adja meg az e-mail-fiók konfigurációja, és konfigurálja az alkalmazás-specifikus beállítások. Ezenkívül ezeket a beállításokat, illetve név/érték párok használja.
 
-### <a name="basic-authentication-email-account-settings"></a>Alapszintű hitelesítéses e-mail-fiók beállításai
-Az iOS és Android rendszerhez készült Outlook lehetőséget biztosít az Exchange-rendszergazdák számára, hogy a fiókkonfigurációkat leküldéssel továbbítsák olyan helyszíni felhasználóknak, akik az alapszintű hitelesítést használják az ActiveSync protokollal. További információért lásd a cikket, amely azzal foglalkozik, hogyan lehet [alapszintű hitelesítéssel beállítani Outlook-fiókokat iOS és Android rendszeren](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/account-setup). A fiókbeállítás konfigurációjának engedélyezéséhez az alábbi beállítások érhetők el:
-
-- **E-mail-kiszolgáló**: Itt adhatja meg a helyszíni Exchange-kiszolgáló állomásnevét (például mail.contoso.com).
-- **E-mail-fiók neve**: Adja meg az e-mail-fiók megjelenítendő nevét. Ez a név jelenik meg az eszközön a felhasználók számára.
-- **Felhasználói név attribútum az AAD-ből**: Ez a név az Intune által az Azure Active Directoryból (Azure AD) lekért attribútum. A profil által használt felhasználónevet az Intune dinamikusan generálja. A lehetőségek a következők:
-  - **Egyszerű felhasználónév**: A nevet, például `user1` vagy `user1@contoso.com` kéri le.
-  - **Elsődleges SMTP-cím**: E-mail-cím formátumban kéri le a nevet, például `user1@contoso.com`
-- **E-mail-cím attribútuma az AAD-ből**: Válassza ki, hogyan jöjjön létre a felhasználói e-mail-cím. Ha e-mail-címként a teljes egyszerű felhasználónevet szeretné használni, válassza az **Egyszerű felhasználónév** (`user1@contoso.com` vagy `user1`) lehetőséget, vagy az **Elsődleges SMTP-cím** (`user1@contoso.com`) lehetőséget, ha az elsődleges SMTP-címet szeretné használni az Exchange-be való bejelentkezéshez. Javasoljuk, hogy válassza az **Elsődleges SMTP-cím** lehetőséget.
-- **Fióktartomány**: (opcionális) A fiók tartománya.
+Outlook-fiók beállítása adatait és az iOS és Android-eszközök Microsoft Intune-ban eljárási lépések: [Outlook telepítése iOS és Android-alkalmazás-konfigurációs beállítások](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 
 ## <a name="next-steps"></a>További lépések
 [E-mail-beállítások konfigurálása az Intune-ban](email-settings-configure.md)

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2019
+ms.date: 01/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 135aa120d8c0e441c59e9b9b3c5bb8ee6aa17229
-ms.sourcegitcommit: 8c1590db761cc411369cae26677f909d3a8ca297
+ms.openlocfilehash: ee9e72b727f5634721cf3a45c918aeee44e83309
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "54239574"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072473"
 ---
-# <a name="assign-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Vállalati Android-eszköz Intune-nal felügyelt Google Play-alkalmazások hozzárendelése
+# <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Felügyelt Google Play-alkalmazások hozzáadása az Intune-nal vállalati Android-eszköz
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -106,6 +106,9 @@ Alternatív megoldásként beállíthatja, hogy a Google Play alkalmazásalapon 
 4. Az alkalmazás közzététele után ugyanazzal a fiókkal jelentkezzen be a [Felügyelt Google Play áruházba](https://play.google.com/work), amellyel beállította az Intune és a vállalati Android közötti kapcsolatot.
 5. Az áruház **Alkalmazások** csomópontjában ellenőrizze, hogy megjelenik-e a közzétett alkalmazás.  
     Az alkalmazás automatikusan megkapja az engedélyt az Intune-nal való szinkronizálásra.
+
+## <a name="delete-managed-google-play-apps"></a>Felügyelt Google Play-alkalmazások törlése 
+Ha szükséges, törölheti a felügyelt Google Play-alkalmazások Microsoft Intune-ból. Felügyelt Google Play alkalmazás törléséhez nyissa meg a Microsoft Intune az Azure Portalon, és válassza a **ügyfélalkalmazás** > **alkalmazások**. Az alkalmazás listában jelölje ki a három pontra (...) jobb oldalán a felügyelt Google Play-alkalmazást, majd válassza ki **törlése** a megjelenő listából. Ha egy felügyelt Google Play-alkalmazást töröl alkalmazásokat az alkalmazáslistából, a felügyelt Google Play alkalmazás automatikusan jóvá nem hagyott.
 
 ## <a name="next-steps"></a>További lépések
 

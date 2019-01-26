@@ -14,12 +14,12 @@ ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: aa16e180b016ec142ecca5644b7f93fb088d15f5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: f814abc4d47517c17e24a188c7efb5da771bc328
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184303"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068271"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Az eszközök távoli újraindítása az Intune-nal
 
@@ -32,7 +32,7 @@ Az **újraindítási** eszközművelettel a kiválasztott eszköz újraindíthat
 
 - Windows – A Windows 8.1-es és újabb verziói esetén támogatott
 - Windows Phone – A Windows Phone 8.1-es és újabb verziói esetén támogatott
-- Androidos kioszk módú eszközök – támogatottak
+- Androidos teljes képernyős eszközökhöz – az Android 7.0-s és újabb verzióiban támogatott
 - iOS – támogatott
 
     > [!Note]  
@@ -42,7 +42,7 @@ Az **újraindítási** eszközművelettel a kiválasztott eszköz újraindíthat
 
 ## <a name="restart-a-device"></a>Eszköz újraindítása
 
-1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
 3. Válassza az **Eszközök** > **Minden eszköz** lehetőséget.
 4. A kezelt eszközök listájában válasszon ki egy eszközt, válassza a **További** lehetőséget, majd az **Újraindítás** távoli eszközműveletet.

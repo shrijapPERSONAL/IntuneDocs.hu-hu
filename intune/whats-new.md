@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 01/25/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: cd9aedbc8f02cd116eb3135e30348ca104aa1120
-ms.sourcegitcommit: a30d4b699df4bff17ef39d6c93b2a5c5432db5ae
+ms.openlocfilehash: c5bced54973818b78190d81ade2fde5358c58443
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54899161"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072609"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -43,6 +43,91 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Emellett tá
 
 -->     
 ## <a name="week-of-january-21-2019"></a>2019. január 21 hete
+
+### <a name="app-management"></a>Alkalmazáskezelés
+
+#### <a name="toast-notifications-for-win32-apps----3136566-----"></a>Bejelentési értesítések Win32-alkalmazások <!-- 3136566   -->
+Bemutató végfelhasználói bejelentési értesítések egy alkalmazás-hozzárendelés tilthatja le. Az Intune-ból, válassza ki a **ügyfélalkalmazás** > **alkalmazások** > Válassza ki az alkalmazást > **hozzárendelések** > **csoportokhozközétartozik**. 
+
+#### <a name="intune-app-protection-policies-ui-update----3251427----"></a>Az Intune alkalmazásvédelmi szabályzataihoz tartozó kezelőfelületre vonatkozó frissítés <!-- 3251427  -->
+Módosítottuk a címkék beállításainak és az Intune app Protection, hogy könnyebben érthetőek gombok. A változások a következők:  
+- Vezérlők meg nem változtatják **Igen** / **nincs** elsősorban szabályozza **letiltása** / ** engedélyezése ** és **letiltása**  /  **engedélyezése** szabályozza. A címkék is frissülnek.  
+- Beállítások újraformázása, így a beállítás, és a felirat egymás mellett a vezérlőelemet, adja meg a jobb navigációs.   
+
+Az alapértelmezett beállításokat és a beállítások száma nem változik, de ez a változás lehetővé teszi, hogy a felhasználó megértése, keresse meg, és a alkalmazni a beállításokat több egyszerűen kiválasztott alkalmazásvédelmi szabályzatok. További információ: [iOS-beállítások](app-protection-policy-settings-ios.md) és [Android-beállításokat](app-protection-policy-settings-android.md).
+
+#### <a name="additional-settings-for-outlook----3301182----"></a>Az Outlook további beállítások <!-- 3301182  -->
+Mostantól konfigurálhatja az IOS rendszerhez készült Outlook és az Intune-nal Android további beállításokat.  A beállítások a következők: Csak a munkahelyi vagy iskolai fiókkal használható az Outlookban, iOS vagy Android üzembe helyezése a modern hitelesítést az Office 365 és a hibrid, modern hitelesítést helyszíni fiókok használatát engedélyezi `SAMAccountName` az e-mail profilban, az egyszerű hitelesítés esetén a felhasználónév mező a kiválasztott engedélyezése névjegyek konfigurálása külső címzetteknek e-mail tippek konfigurálása menteni **Beérkezett fájlok mappa a fókuszban lévő** biometrika Outlook IOS-blokk külső képek eléréséhez szükséges
+> [!NOTE]
+> Ha az Intune alkalmazásvédelmi szabályzatokat használ a vállalati identitások kezelésére, érdemes lehet nem engedélyezi az **biometrika megkövetelése**. További információkért lásd: **vállalati hitelesítő adatok megkövetelése a hozzáféréshez** a [hozzáférési beállítások iOS](app-protection-policy-settings-ios.md#access-settings) és [Android-beállításokat](app-protection-policy-settings-android.md#access-settings).
+
+#### <a name="delete-android-enterprise-apps----1352553---"></a>Androidos vállalati alkalmazások törlése <!-- 1352553 -->
+Törölheti a felügyelt Google Play-alkalmazások Microsoft Intune-ból. Felügyelt Google Play alkalmazás törléséhez nyissa meg a Microsoft Intune az Azure Portalon, és válassza a **ügyfélalkalmazás** > **alkalmazások**. Az alkalmazás listában jelölje ki a három pontra (...) jobb oldalán a felügyelt Google Play-alkalmazást, majd válassza ki **törlése** a megjelenő listából. Ha egy felügyelt Google Play-alkalmazást töröl alkalmazásokat az alkalmazáslistából, a felügyelt Google Play alkalmazás automatikusan jóvá nem hagyott.
+
+#### <a name="managed-google-play-app-type----1352580---"></a>Felügyelt Google Play alkalmazás típusa <!-- 1352580 -->
+A **felügyelt Google Play** alkalmazástípus lehetővé teszi, hogy kifejezetten [felügyelt Google Play-alkalmazások](https://play.google.com/work/search?q=microsoft&c=apps) az Intune-hoz. Az Intune-rendszergazdaként mostantól Tallózás, keresés, hagyja jóvá, szinkronizálása és jóváhagyott a felügyelt Google Play-alkalmazások Intune-ban hozzárendelése.  Már nem kell külön tallózással keresse meg a felügyelt Google Play konzolon, és többé nem kell újból hitelesítésre.  Válassza ki az Intune-ban **ügyfélalkalmazás** > **alkalmazások** > **Hozzáadás**. Az a **alkalmazástípus** listáról válassza ki **felügyelt Google Play** az alkalmazás típusaként.
+
+### <a name="device-configuration"></a>Eszközök konfigurálása
+
+#### <a name="use-microsoft-recommended-settings-with-security-baselines-public-preview----2055484-----"></a>Microsoft által ajánlott beállítások használata a biztonsági előírások (nyilvános előzetes verzió) <!-- 2055484   -->
+Az Intune integrálható más, biztonsági célú szolgáltatásokkal, például a Windows Defender ATP-vel és az Office 365 ATP-vel. Az ügyfelek a Microsoft 365-szolgáltatásokon átívelő közös stratégiát és összefüggő, teljes körű biztonsági munkafolyamatokat kérnek. Célunk a stratégiák összehangolása és ezáltal olyan megoldások létrehozása, amelyek hidat képeznek a biztonsági műveletek és a gyakori felügyeleti feladatok között. Az Intune-ban ezen cél elérésére a Microsoft által ajánlott „biztonsági előírások” közzétételével törekszünk (**Intune** > **Biztonsági előírások**).  A rendszergazda ezen alaptervek közvetlenül a biztonsági házirendek létrehozása, és telepítheti őket a felhasználóknak. Testre szabhatja a ajánlásokat és tanácsokat a szervezet igényeinek kielégítése érdekében. Az Intune biztosítja, hogy az eszközök megfeleljenek ezeknek az előírásoknak, és értesíti a rendszergazdákat, ha egy felhasználó vagy eszköz nem felel meg.
+
+Biztonsági alapterveket kapcsolatos további információkért lásd: [az Intune-ban Windows 10 biztonsági alapterv létrehozása](security-baselines-monitor.md).
+
+Ez a funkció az alábbiakra vonatkozik: Windows 10 és újabb
+
+#### <a name="non-administrators-can-enable-bitlocker-on-windows-10-devices-joined-to-azure-ad---2147379-----"></a>A nem rendszergazdák engedélyezhetik a BitLocker az Azure AD-csatlakoztatott Windows 10 rendszerű eszközökön<!-- 2147379   -->
+Ha engedélyezi a BitLocker-beállítások Windows 10 rendszerű eszközökön (**eszközkonfiguráció** > **profilok** > **profil létrehozása**  >  **Windows 10 és újabb** tartozó platform > **az Endpoint protection** profiltípus > **Windows titkosítási**), akkor adja hozzá a BitLocker-beállítások. 
+
+A frissítés tartalmaz egy új BitLocker beállítását, hogy általános jogú felhasználók (nem rendszergazda), engedélyezheti a titkosítást. 
+
+A beállítások megtekintéséhez lépjen a [Endpoint protection-beállítások Windows 10-es](endpoint-protection-windows-10.md#windows-encryption).
+
+#### <a name="check-for-configuration-manager-compliance----2192052--eepublished----"></a>A Configuration Manager megfelelőségének ellenőrzése <!-- 2192052  eepublished  -->
+Ez a frissítés magában foglalja a System Center Configuration Manager az új megfelelőségi beállítás (**eszközmegfelelőség** > **házirendek** > **hozzon létre házirendet**  >  **Windows 10 és újabb** > **Configuration Manager megfelelőségi**). A Configuration Manager megfelelőségi jeleket küldi az Intune-nak. Ezzel a beállítással megkövetelheti az összes Configuration Manager-jel való visszatéréshez "megfelelő".
+
+Megkövetelhető például, hogy minden szoftverfrissítés telepítve legyen az eszközökön. A Configuration Managerben az ehhez a követelményhez tartozó állapot a „Telepítve”. Ha az eszközön lévő összes programot ismeretlen állapotban van, az eszköz akkor nem kompatibilis az Intune-ban.
+
+[A Configuration Manager megfelelőségi](compliance-policy-create-windows.md#configuration-manager-compliance) ismerteti ezt a beállítást.
+
+A következőkre vonatkozik: Windows 10 és újabb
+
+#### <a name="customize-wallpaper-on-supervised-ios-devices-using-a-device-configuration-profile----2809324-----"></a>Eszközkonfigurációs profil használatával felügyelt iOS-eszközök tapétáját testreszabása <!-- 2809324   -->
+Amikor egy iOS-eszközök konfigurációs profilt hoz létre, testre szabhatja az egyes funkciók (**eszközkonfiguráció** > **profilok** > **létrehozása profil** > **iOS** tartozó platform > **eszközfunkciók** profiltípus). A frissítés tartalmaz új **háttérkép** beállítások, amelyek lehetővé teszik a rendszergazdáknak .png, .jpg és .jpeg-rendszerkép használata a kezdőképernyő vagy a zárolási képernyőn. Ezek a háttér-beállítások csak a felügyelt eszközökre vonatkoznak. 
+
+Ezek a beállítások listáját lásd: [IOS-es eszközfunkció-beállítások](ios-device-features-settings.md).
+
+#### <a name="windows-10-kiosk-is-generally-available----3594661----"></a>Windows 10-es teljes képernyős szolgáltatás általánosan elérhető <!-- 3594661  -->
+Ez a frissítés a Windows 10-es és újabb rendszerű eszközök teljes képernyős funkció általánosan elérhető (GA). Felveheti és konfigurálhatja az összes beállítások megtekintéséhez lásd: [teljes képernyős beállítások Windows 10-es (és újabb)](kiosk-settings.md).
+
+#### <a name="contact-sharing-via-bluetooth-is-removed-in-device-restrictions--device-owner-for-android-enterprise----3598396-----"></a>Bluetooth-névjegyek megosztása eltávolítják az Eszközkorlátozások > Android Enterprise eszköz tulajdonosa <!-- 3598396   -->
+Az Android Enterprise-eszközöket egy eszközkorlátozási profilt hoz létre, ha van egy **forduljon megosztása Bluetooth használatával** beállítás. Ebben a frissítésben a **forduljon megosztása Bluetooth használatával** beállítás törlődik (**eszközkonfiguráció** > **profilok**  >   **Profil létrehozása** > **Android Enterprise** tartozó platform > **Eszközkorlátozások > eszköz tulajdonosa** profiltípus > **általános** ). 
+
+A **forduljon megosztása Bluetooth használatával** beállítás nem támogatott az Android vállalati eszköz tulajdonosa management. Ezzel a beállítással a rendszer eltávolítja, ha ez nem érinti az bármely eszköz vagy a bérlők, akkor is, ha ez a beállítás engedélyezve van, és konfigurálva a környezetben.
+
+Beállítások aktuális listájának megtekintéséhez, keresse fel a [engedélyezi, vagy korlátozhatja a funkciókat Android Enterprise-eszközbeállítások](device-restrictions-android-for-work.md).
+
+A következőkre vonatkozik: Androidos vállalati eszköz tulajdonosa
+
+#### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Az Intune alkalmazásvédelmi szabályzataihoz tartozó kezelőfelületre vonatkozó frissítés <!-- 3251427 -->
+Módosítottuk a címkék beállításainak és az Intune app Protection, hogy könnyebben érthetőek gombok. A változások a következők:  
+- Vezérlők meg nem változtatják **Igen** / **nincs** elsősorban szabályozza **letiltása** / ** engedélyezése ** és **letiltása**  /  **engedélyezése** szabályozza. A címkék is frissülnek.  
+- Beállítások újraformázása, így a beállítás, és a felirat egymás mellett a vezérlőelemet, adja meg a jobb navigációs.   
+
+Az alapértelmezett beállításokat és a beállítások száma nem változik, de ez a változás lehetővé teszi, hogy a felhasználó megértése, keresse meg, és a alkalmazni a beállításokat több egyszerűen kiválasztott alkalmazásvédelmi szabályzatok. További információ: [iOS-beállítások](app-protection-policy-settings-ios.md) és [Android-beállításokat](app-protection-policy-settings-android.md).
+
+### <a name="device-management"></a>Eszközkezelés
+#### <a name="deployed-wip-policies-without-user-enrollment----1434452---"></a>Felhasználói regisztráció nélkül telepített WIP-szabályzatok <!-- 1434452 -->
+Windows Information Protection (WIP) szabályzatok MDM-felhasználók számára a Windows 10 rendszerű eszköz regisztrálása nélkül is telepíthető. Ez a konfiguráció lehetővé teszi, hogy a vállalatok biztosítsák a vállalati dokumentumok védelmét a WIP-konfiguráció alapján, miközben a felhasználó saját maga felügyelheti Windows-eszközeit. Ha a dokumentumok védve vannak WIP-szabályzattal, a védett adatokat az Intune-rendszergazdák szelektív módon törölhetik. Ehhez ki kell választaniuk a felhasználót és az eszközt, majd el kell küldeniük egy adattörlési kérést, amelynek hatására WIP-szabályzat által védett összes adat használhatatlanná válik. Az Intune-ból az Azure Portalon, válassza ki a **ügyfélalkalmazás** > **alkalmazások szelektív törlése**.
+
+### <a name="monitor-and-troubleshoot"></a>Monitorozás és hibaelhárítás
+
+#### <a name="new-operational-logs-and-ability-to-send-logs-to-azure-monitor-services----3762211----"></a>Új műveleti naplók, és képes titkosítottan küldeni a naplókat az Azure Monitor szolgáltatás <!-- 3762211  -->
+Az Intune beépített naplózásra, amely nyomon követi az eseményeket, a módosítások rendelkezik. A frissítés új naplózási szolgáltatásokat, beleértve a tartalmazza: 
+- Műveleti naplók (előzetes verzió), amely a felhasználók és eszközök regisztrálása, beleértve a sikeres és sikertelen kísérlet részletek megjelenítése.
+- A vizsgálati naplók és a műveleti naplókban az Azure Monitor, beleértve a storage-fiókok, az event hubs, elküldött, és a log analytics. Ezek a szolgáltatások lehetővé teszik tárolni, például Splunk és QRadar elemzések és a naplózási adatok vizualizációkat.
+
+[Napló adatokat küldeni a tárolási, az event hubs, vagy a log analytics az Intune-ban](review-logs-using-azure-monitor.md) Ez a szolgáltatás további információkkal szolgál.
 
 ### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509----"></a>Hagyja ki a további beállítási asszisztens képernyők az iOS DEP-eszközökön <!-- 2687509  -->
 Jelenleg kihagyhatja a képernyők, mellett állíthatja be iOS DEP-eszközök a beállítási asszisztens képernyőinek kihagyásához amikor egy felhasználó regisztrálja az eszközt: Képviselő hangvételét, adatvédelmi, Android áttelepítési, kezdőlap gombot, iMessage & FaceTime, bevezetési, tekintse meg a Migrálási, megjelenését, képernyő idő, szoftverfrissítés, SIM telepítő megjelenítéséhez.

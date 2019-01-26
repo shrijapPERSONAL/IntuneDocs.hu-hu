@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/26/2018
+ms.date: 01/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 5981b3dbb74209fbd4d7f0ab03adb5a35a41954b
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: d9dfa25c2528ea2f929c3db6714bc68fee013a7b
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203535"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072575"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>A Windows 10 (és újabb verziók) beállítások az Intune-eszközök védelméhez
 
@@ -152,6 +152,9 @@ A következő Windows 10-kiadásokon támogatott:
 Az alapbeállítások minden típusú adatmeghajtóra vonatkozó univerzális BitLocker-beállítások. Ezek a beállítások szabályozzák a végfelhasználók által a különböző típusú adatmeghajtókon módosítható meghajtótitkosítási feladatokat vagy konfigurációs beállításokat.
 
 - **Figyelmeztetés egyéb lemeztitkosításra**: Válassza ki **blokk** figyelmeztető üzenet letiltása, ha egy másik lemez titkosítási szolgáltatás az eszközön. A **Nincs konfigurálva** (alapértelmezett) értékre állítva megjelenhetnek a figyelmeztetések.
+    - **Engedélyezze a titkosítást az Azure AD Join során általános jogú felhasználók**: Ha úgy dönt **engedélyezése**, normál felhasználók/nem rendszergazda engedélyezheti a BitLocker-titkosítást, amikor a felhasználó bejelentkezett. Ez a beállítás csak az Azure Active Directoryhoz csatlakoztatott (Azure beállítás) eszközökre vonatkozik. **Nincs konfigurálva** csak lehetővé teszi, hogy rendszergazdái engedélyezhetik a BitLocker-titkosítást az eszközön.
+      
+      Ez a beállítás csak az Azure Active Directoryhoz csatlakoztatott (Azure beállítás) eszközökre vonatkozik. Azt is megköveteli, hogy a **figyelmeztetés egyéb lemeztitkosításra** beállítást megadni **blokk**.
 - **Titkosítási módszerek konfigurálása**: **Engedélyezése** ezt a beállítást, az operációs rendszer, az adat- és cserélhető meghajtók titkosítási algoritmusok konfigurálásához. A **Nincs konfigurálva** (alapértelmezett) értékre állítva a BitLocker az XTS-AES 128 bites funkciót használja alapértelmezett titkosítási módszerként, vagy egy telepítési szkript által meghatározott titkosítási módszert.
   - **Operációsrendszer-meghajtók titkosítása**: Válassza ki az operációsrendszer-meghajtók titkosítási módszer kiválasztására szolgál. Javasoljuk az XTS-AES algoritmus használatát.
   - **Rögzített adatmeghajtók titkosítása**: A rögzített (beépített) adatmeghajtókhoz titkosítási módszert választania. Javasoljuk az XTS-AES algoritmus használatát.
