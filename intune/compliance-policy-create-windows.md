@@ -1,11 +1,11 @@
 ---
-title: Windows-eszközmegfelelőségi szabályzat létrehozása a Microsoft Intune-ban – Azure | Microsoft Docs
+title: Windows-eszközök Microsoft Intune - Azure-ban megfelelőségének ellenőrzése |} A Microsoft Docs
 description: Microsoft Intune-eszközmegfelelőségi szabályzatot hozhat létre vagy konfigurálhat Windows Phone 8.1, Windows 8.1 és újabb és Windows 10 és újabb rendszerű eszközökhöz. A megfelelőség szempontjából ellenőrizheti az operációs rendszer minimális és maximális verzióját, jelszóra és annak hosszára vonatkozó követelményeket állíthat be, megkövetelheti a bitlocker használatát, ellenőrizheti a harmadik féltől származó vírusvédelmi megoldásokat, beállíthatja az elfogadható fenyegetettségi szintet és az adattárolók titkosításának engedélyezését. Ez a Surface Hubra és a Windows Holographic for Businessre is vonatkozik.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,18 +13,20 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e0772f4e577f6660926f6827a7fda8e51bcdd280
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 518bb2ab0f59b5692ff2c2391fe971abba0639c6
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182958"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072524"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Windowsos eszközök megfelelőségi szabályzatainak hozzáadása az Intune-ban
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-A Windows-eszközmegfelelőségi szabályzatokkal megszabhatja a Windows-eszközöktől a megfelelőséghez kötelezően elvárt szabályokat és beállításokat. Ezeket a szabályzatokat feltételes hozzáféréssel használva megakadályozható vagy engedélyezhető a vállalati erőforrásokhoz való hozzáférés. Emellett lekérhet eszközjelentéseket, és különböző műveleteket hajthat végre meg nem felelés esetén. Az Azure-beli Intune portálon minden platformhoz létrehozhat megfelelőségi szabályzatokat. A megfelelőségi szabályzatokról és azok előfeltételeiről az [Eszközmegfelelőség – első lépések](device-compliance-get-started.md) című cikk nyújt bővebb tájékoztatást.
+Egy Intune eszközmegfelelőségi szabályzata tartalmaz szabályokat és beállításokat, az eszközök megfelelőnek minősülnek. A feltételes hozzáférés ezek a házirendek segítségével a szervezet erőforrásaihoz való hozzáférés engedélyezése vagy letiltása. Emellett lekérhet eszközjelentéseket, és különböző műveleteket hajthat végre meg nem felelés esetén.
+
+A megfelelőségi szabályzatokról és azok előfeltételeiről az [Eszközmegfelelőség – első lépések](device-compliance-get-started.md) című cikk nyújt bővebb tájékoztatást.
 
 Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítások kezelése, ha a megfelelőségi szabályzatot feltételes hozzáférési szabályzattal együtt használják.
 
@@ -38,7 +40,7 @@ Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítás
 | **E-mail profil** | Nem alkalmazható | Nem alkalmazható |   
 | **Operációs rendszer minimális verziója** | Karanténba helyezve | Karanténba helyezve |   
 | **Operációs rendszer maximális verziója** | Karanténba helyezve | Karanténba helyezve |   
-| **Windows-állapotigazolás** | Karanténba helyezve: Windows 10 és Windows 10 Mobile|Nem alkalmazható: Windows 8.1 |
+| **Windows-állapotigazolás** | Karanténba helyezve: Windows 10 és Windows 10 Mobile|Not applicable: Windows 8.1 |
 
 -------------------------------
 
@@ -71,88 +73,101 @@ Ezek a szabályzatbeállítások a következő platformokat futtató eszközökr
 
 ### <a name="device-properties"></a>Eszköztulajdonságok
 
-- **Operációs rendszer minimális verziója:** Ha egy eszköz nem teljesíti az operációs rendszer szükséges minimális verziójára vonatkozó követelményt, nem megfelelőként fog szerepelni. Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A végfelhasználó frissítheti az eszközt, ez után pedig hozzáférést kap a vállalati erőforrásokhoz.
-- **Maximálisan engedélyezett operációsrendszer-verzió**: Ha egy eszközön a szabályban megadott operációsrendszer-verziónál újabb fut, a vállalati erőforrásokhoz való hozzáférés le lesz tiltva. A felhasználónak ekkor az informatikai rendszergazdához kell fordulnia. Az eszköz csak akkor használható a vállalati erőforrások elérésére, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
+- **Operációs rendszer szükséges minimális verziója**: Ha egy eszköz nem teljesíti a minimális verziójára vonatkozó követelményt, hogy nem megfelelőként. Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A végfelhasználó frissítheti az eszközt, ez után pedig hozzáférést kap a vállalati erőforrásokhoz.
+- **Maximálisan engedélyezett operációsrendszer-verzió**: Ha egy eszköz operációsrendszer-verziónál újabb verziójú, mint az a szabályban megadott, a vállalati erőforrásokhoz való hozzáférés le van tiltva. A felhasználónak ekkor az informatikai rendszergazdához kell fordulnia. Az eszköz nem fér hozzá a munkahelyi erőforrásokhoz, amíg nem módosítja a szabályt, amely engedélyezi az operációs rendszer verzióját.
 
 Windows 8.1-es számítógépek esetén például a visszaadott verzió a **3**-as. Ha az operációs rendszer verziószabálya Windows 8.1-re van megadva a Windows esetén, az eszköz akkor is nem megfelelőként jelenik meg, ha Windows 8.1 operációs rendszer fut rajta.
 
 ### <a name="system-security"></a>Rendszerbiztonság
 
-#### <a name="password"></a>Jelszó
+#### <a name="password"></a>Windows 10
 
-- **Jelszó megkövetelése a mobileszköz-zárolás feloldásához**: A felhasználók **kötelesek** jelszót megadni az eszköz eléréséhez.
-- **Egyszerű jelszavak**: Ha nem szeretné engedélyezni, hogy a felhasználók olyan egyszerű jelszavakat használhassanak, mint az **1234** vagy az **1111**, válassza a **Tiltás** lehetőséget. A **Nincs konfigurálva** beállítással a felhasználók olyan jelszavakat is létrehozhatnak, mint az **1234** vagy az **1111**.
-- **Jelszó minimális hossza**: Meghatározhatja a jelszóban szereplő számjegyek vagy karakterek minimális számát.
+- **A mobileszközök zárolásának feloldásához jelszó szükséges**: **Szükséges** felhasználók csak jelszó beírása után az eszköz eléréséhez.
+- **Egyszerű jelszavak**: Állítsa be **blokk** így a felhasználók nem egyszerű jelszavakat használhassanak, mint például **1234** vagy **1111**. A **Nincs konfigurálva** beállítással a felhasználók olyan jelszavakat is létrehozhatnak, mint az **1234** vagy az **1111**.
+- **Jelszó minimális hossza**: Adja meg a jelszóban szereplő számjegyek vagy karakterek minimális számát.
 
   Windows rendszerű, Microsoft-fiókon keresztül elért eszközök esetén a megfelelőségi szabályzat nem lesz helyesen kiértékelve:
   - Ha a jelszó minimális hossza nyolc karakternél nagyobb
   - Vagy ha a karakterkészletek minimális száma kettőnél több
 
-- **Jelszó típusa**: Megadható, hogy a jelszó csak **számjegy** karaktereket vagy számjegy és más (**Alfanumerikus**) karaktereket vegyesen tartalmazzon.
+- **Jelszó típusa**: Válassza ki, ha a jelszó csak szükséges **numerikus** karakter, vagy ha számokat és más karaktereket vegyesen kell lennie (**alfanumerikus**).
   
-  - **Jelszavak nem alfanumerikus karaktereinek száma:** Ha a **Megkövetelt jelszótípus** **alfanumerikus**, ez a beállítás határozza meg a jelszóban használandó karakterkészletek minimális számát. A négy karakterkészlet a következő:
+  - **Jelszavak nem alfanumerikus karaktereinek száma**: Ha a **Jelszó kötelező** típusa **Alfanumerikus**, ez a beállítás határozza meg a jelszóban szereplő karakterkészletek minimális számát. A négy karakterkészlet a következő:
     - Kisbetűk
     - Nagybetűk
     - Szimbólumok
     - Számok
 
-    Ha nagyobb értékre állítja, a felhasználóknak összetettebb jelszót kell létrehozniuk. A Windows rendszerű és Microsoft-fiókkal elért eszközök esetén a megfelelőségi szabályzat kiértékelése helytelen, ha a jelszó minimális hossza hosszabb nyolc karakternél, vagy ha a karakterkészletek minimális száma meghaladja a kettőt.
+    Ha nagyobb értékre állítja, a felhasználóknak összetettebb jelszót kell létrehozniuk. A Microsoft-fiókkal elért eszközök esetén a megfelelőségi szabályzat kiértékelése helytelen, sikertelen:
 
-- **Jelszó kérése legfeljebb ennyi perc inaktivitás után**: Arra a tétlenségi időre vonatkozik, amelynek elteltével a felhasználónak újra meg kell adnia a jelszavát.
-- **Jelszó érvényessége (napokban)**: Válassza ki, hány nap elteltével járjon le a jelszó, ami után újat kell létrehoznia.
-- **Újból nem használható jelszavak száma**: Megadhatja, hogy hány korábbi jelszó ne legyen újra felhasználható.
+    - Ha a jelszó minimális hossza nyolc karakternél nagyobb
+    - Vagy ha a karakterkészletek minimális száma kettőnél több
+
+- **Ennyi perc inaktivitás után kell jelszót**: Adja meg az üresjárati idő után a felhasználónak újra meg kell adnia a jelszavát.
+- **Jelszó érvényessége (napokban)**: Válassza ki a hány nap elteltével a jelszó lejár, és létre kell hoznia egy újat.
+- **Hány korábbi jelszót újból**: Adja meg a korábban használt jelszavak számát, amelyeket nem használható.
 
 #### <a name="encryption"></a>Encryption
 
-- **Titkosítás megkövetelése mobileszközön:**: **Megkövetelhető**, hogy az eszközök csak titkosítás használata esetén csatlakozhassanak az adattároló erőforrásokhoz.
+- **Mobileszköz titkosításának kötelezővé tétele**: **Szükséges** az eszközök csak titkosítás csatlakozni az adattároló-erőforrásokat.
 
 ## <a name="windows-10-and-later-policy-settings"></a>Windows 10 és újabb verziók szabályzati beállításai
 
 ### <a name="device-health"></a>Device health
 
-- **BitLocker megkövetelése**: Ha a BitLocker be van kapcsolva, az eszköz meg tudja védeni az eszközön tárolt adatokat a jogosulatlan hozzáféréstől, amikor a rendszer ki van kapcsolva vagy hibernálva van. A Windows BitLocker-meghajtótitkosítás titkosítja a Windows operációs rendszer kötetén tárolt összes adatot. A BitLocker a TPM-mel segíti elő a Windows operációs rendszer és a felhasználói adatok védelmét. Segít abban is, hogy ne lehessen illetéktelenül hozzáférni a számítógéphez akkor sem, ha az felügyelet nélkül van, elveszett vagy ellopták. Ha a számítógépen kompatibilis TPM található, a BitLocker a TPM-mel zárolja az adatokat védő titkosítási kulcsokat. Ezért a kulcsok nem érhetők el addig, amíg a TPM nem ellenőrizte a számítógép állapotát.
-- **Biztonságos rendszerindítás engedélyezésének megkövetelése az eszközön**: Amikor a biztonságos rendszerindítás engedélyezett, az a rendszert gyárilag megbízható állapotban végzett rendszerindításra kényszeríti. Ezenkívül amikor a biztonságos rendszerindítás engedélyezett, a gép rendszerindításához használt fő összetevőknek a megfelelő titkosított aláírásokra van szükségük, amelyekben az eszközt gyártó szervezet megbízik. Az UEFI belső vezérlőprogram ellenőrzi az aláírást, mielőtt engedélyezi a számítógép elindítását. Ha bármelyik megfigyelt fájlt illetéktelen módosítás ért az aláírás feltörésével, a rendszer nem indul el.
+- **BitLocker megkövetelése**: Ha a BitLocker be van kapcsolva, az eszköz meg tudja védeni tárolt adatokat a jogosulatlan hozzáférés a meghajtón, ha a rendszer ki van kapcsolva vagy hibernálva van. A Windows BitLocker-meghajtótitkosítás titkosítja a Windows operációs rendszer kötetén tárolt összes adatot. A BitLocker a TPM-mel segíti elő a Windows operációs rendszer és a felhasználói adatok védelmét. Abban is segít, győződjön meg arról, hogy a számítógép nem illetéktelenül, akkor is, ha a bal oldalán a felügyelet nélküli, az elveszett vagy ellopták. Ha a számítógépen kompatibilis TPM található, a BitLocker a TPM-mel zárolja az adatokat védő titkosítási kulcsokat. Ennek eredményeképpen a kulcsok nem érhetők el addig, amíg a TPM-eszköz ellenőrzi a számítógép állapotát.
+- **Az eszközön engedélyezni kell a biztonságos rendszerindítás szükséges**: Amikor a biztonságos rendszerindítás engedélyezett, az a rendszert gyárilag megbízható állapotban végzett rendszerindításra kényszeríti. Ezenkívül amikor a biztonságos rendszerindítás engedélyezett, a gép rendszerindításához használt fő összetevőknek a megfelelő titkosított aláírásokra van szükségük, amelyekben az eszközt gyártó szervezet megbízik. Az UEFI belső vezérlőprogram ellenőrzi az aláírást, mielőtt engedélyezi a számítógép elindítását. Ha a fájlok vannak illetéktelenül, amely megszakítja az aláírás feltörésével, a rendszer nem indul.
 
   > [!NOTE]
   > A **Biztonságos rendszerindítás engedélyezésének megkövetelése az eszközön** beállítás a TPM 1.2- és 2.0-eszközökön támogatott. Azon eszközök esetében, amelyek nem támogatják a TPM 2.0-s vagy újabb verzióit, az Intune-ban a szabályzat állapotánál a **Nem megfelelő** érték jelenik meg. Ez a Windows 10 [eszközállapot-igazolási](https://docs.microsoft.com/windows/security/information-protection/tpm/trusted-platform-module-overview#device-health-attestation) szolgáltatásának egyik korlátozása miatt van.
 
-- **Kódintegritás megkövetelése**: A kódintegritás olyan szolgáltatás, amely ellenőrzi az illesztők vagy rendszerfájlok integritását, amikor azokat betölti a memóriába. A kódintegritás észleli, ha aláíratlan illesztőprogramot vagy rendszerfájlt töltenek be a kernelbe. Azt is észleli, ha egy rendszerfájlt módosít egy olyan kártevő szoftver, amelyet rendszergazdai jogosultságokkal rendelkező felhasználói fiókkal futtatnak.
+- **Kódintegritás megkövetelése**: Kódintegritási szolgáltatás ellenőrzi a illesztők vagy rendszerfájlok integritását minden alkalommal, amikor azt betölti a memóriába. A kódintegritás észleli, ha az aláíratlan illesztőprogramot vagy rendszerfájlt töltődött be a kernelbe. Azt is észleli, ha egy rendszerfájlt rendszergazdai jogosultságokkal rendelkező felhasználói fiók által futtatott rosszindulatú szoftver módosul.
 
 A HAS szolgáltatás működésével kapcsolatban lásd: [Állapotigazolási CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp).
 
 ### <a name="device-properties"></a>Eszköztulajdonságok
 
-- **Operációs rendszer minimális verziója**: Adja meg a minimálisan megkövetelt verziót a **főverzió.alverzió.build.CU szám** formátumban. A helyes érték megtekintéséhez nyisson meg egy parancssort, és írja be a következőt: `ver`. A `ver` parancs visszaadja a verziószámot a következő formátumban:
+- **Minimális operációsrendszer-verzió**: Adja meg a minimális verzióját az engedélyezett a **major.minor.build.CU számot** formátumban. A helyes érték megtekintéséhez nyisson meg egy parancssort, és írja be a következőt: `ver`. A `ver` parancs visszaadja a verziószámot a következő formátumban:
 
   `Microsoft Windows [Version 10.0.17134.1]`
 
-  Ha egy eszköz a megadott verziónál korábbi operációs rendszerrel rendelkezik, azt a rendszer nem megfelelőként fogja jelenteni. Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A végfelhasználó frissítheti az eszközt, és utána hozzáférhet a vállalati erőforrásokhoz.
+  Ha egy eszközhöz tartozik egy korábbi, mint az operációs rendszer verzióját, adja meg, hogy nem megfelelőként. Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A végfelhasználó frissítheti az eszközt választhat. Azok a frissítés után hozzáférhet a vállalati erőforrásokhoz.
 
-- **Operációs rendszer maximális verziója**: Adja meg a maximálisan megengedhető verziót a **főverzió.alverzió.build.változatszám** formátumban. A helyes érték megtekintéséhez nyisson meg egy parancssort, és írja be a következőt: `ver`. A `ver` parancs visszaadja a verziószámot a következő formátumban:
+- **Maximális operációsrendszer-verzió**: Adja meg a megengedett maximális verziója, az a **főverzió.alverzió.build.változat szám** formátumban. A helyes érték megtekintéséhez nyisson meg egy parancssort, és írja be a következőt: `ver`. A `ver` parancs visszaadja a verziószámot a következő formátumban:
 
   `Microsoft Windows [Version 10.0.17134.1]`
 
-  Ha egy eszközön a szabályban megadott operációsrendszer-verziótól újabb fut, a vállalati erőforrásokhoz való hozzáférés le van tiltva, és a felhasználónak kapcsolatba kell lépnie az informatikai rendszergazdával. Az eszköz csak akkor használható a vállalati erőforrások eléréséhez, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
+  Ha egy eszköz operációsrendszer-verziónál újabb fut, a szabályban megadott, a vállalati erőforrásokhoz való hozzáférés le lesz tiltva, és a felhasználónak, lépjen kapcsolatba a rendszergazdával. Az eszköz nem fér hozzá a vállalati erőforrások, addig, amíg a szabályt, hogy az operációs rendszer verziója megváltozott.
 
-- **Operációs rendszer minimális verziója mobileszközöknél**: Adja meg a minimálisan megkövetelt verziót a főverzió.alverzió.build formátumban.
+- **Mobileszközök minimális verziója**: Adja meg a által támogatott minimális verzió, a számformátumú Főverzió.alverzió.build formában.
 
-  Ha egy eszköz a megadott verziónál korábbi operációs rendszerrel rendelkezik, azt a rendszer nem megfelelőként fogja jelenteni. Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A végfelhasználó frissítheti az eszközt, és utána hozzáférhet a vállalati erőforrásokhoz.
+  Ha egy eszköz rendelkezik a korábbi verziójú, hogy az operációs rendszer verziószámának ad meg, hogy nem megfelelőként. Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A végfelhasználó frissítheti az eszközt választhat. Azok a frissítés után hozzáférhet a vállalati erőforrásokhoz.
 
-- **Operációs rendszer maximális verziója mobileszközöknél**: Adja meg a maximálisan megengedett verziót a főverzió.alverzió.build formátumban.
+- **Mobileszközök maximális verziója**: Adja meg a megengedett maximális verzióját, a főverzió.alverzió.build.
 
-  Ha egy eszközön a szabályban megadott operációsrendszer-verziótól újabb fut, a vállalati erőforrásokhoz való hozzáférés le van tiltva, és a felhasználónak kapcsolatba kell lépnie az informatikai rendszergazdával. Az eszköz csak akkor használható a vállalati erőforrások eléréséhez, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
+  Ha egy eszközön operációsrendszer-verziónál újabb fut, az Ön adja meg, a vállalati erőforrásokhoz való hozzáférés le lesz tiltva, és a felhasználónak, lépjen kapcsolatba a rendszergazdával. Az eszköz nem fér hozzá a vállalati erőforrások, addig, amíg a szabályt, hogy az operációs rendszer verziója megváltozott.
 
-- **Érvényes operációsrendszer-buildek**: Megadható az elfogadható operációsrendszer-verziók minimumot és maximumot is tartalmazó tartománya. Az elfogadható OS-buildszámok listáját vesszővel tagolt (CSV) fájlban **exportálhatja**.
+- **Érvényes operációsrendszer-buildek**: Adjon meg egy tartományt az elfogadható operációsrendszer-verziók, beleértve egy minimális és maximális. Az elfogadható OS-buildszámok listáját vesszővel tagolt (CSV) fájlban **exportálhatja**.
+
+### <a name="configuration-manager-compliance"></a>Configuration Manager Compliance
+
+Csak Windows 10 és újabb operációs rendszert futtató közösen kezelt eszközökre vonatkozik. Csak az Intune-eszközök nem érhető el állapotát adja vissza.
+
+- **A System Center Configuration Manager eszköz megfelelőségének megkövetelése**: Válasszon **megkövetelése** kényszerítése minden beállítás (konfigurációelemek esetén) a System Center Configuration Managerben, meg kell felelnie. 
+
+  Megkövetelhető például, hogy minden szoftverfrissítés telepítve legyen az eszközökön. A Configuration Managerben az ehhez a követelményhez tartozó állapot a „Telepítve”. Ismeretlen állapotban van az eszközön a programokat, ha az eszköz akkor nem kompatibilis az Intune-ban.
+  
+  Amikor **nincs konfigurálva**, az Intune nem jelentkezik be, a Configuration Manager megfelelőségi beállításainak bármelyikéhez.
 
 ### <a name="system-security-settings"></a>A rendszer biztonsági beállításai
 
-#### <a name="password"></a>Jelszó
+#### <a name="password"></a>Windows 10
 
-- **Jelszó megkövetelése a mobileszköz-zárolás feloldásához**: A felhasználók **kötelesek** jelszót megadni az eszköz eléréséhez.
-- **Egyszerű jelszavak**: Ha nem szeretné engedélyezni, hogy a felhasználók olyan egyszerű jelszavakat használhassanak, mint az **1234** vagy az **1111**, válassza a **Tiltás** lehetőséget. A **Nincs konfigurálva** beállítással a felhasználók olyan jelszavakat is létrehozhatnak, mint az **1234** vagy az **1111**.
-- **Jelszó típusa**: Megadható, hogy a jelszó csak **számjegy** karaktereket vagy számjegy és más (**Alfanumerikus**) karaktereket vegyesen tartalmazzon.
+- **A mobileszközök zárolásának feloldásához jelszó szükséges**: **Szükséges** felhasználók csak jelszó beírása után az eszköz eléréséhez.
+- **Egyszerű jelszavak**: Állítsa be **blokk** így a felhasználók nem egyszerű jelszavakat használhassanak, mint például **1234** vagy **1111**. A **Nincs konfigurálva** beállítással a felhasználók olyan jelszavakat is létrehozhatnak, mint az **1234** vagy az **1111**.
+- **Jelszó típusa**: Válassza ki, ha a jelszó csak szükséges **numerikus** karakter, vagy ha számokat és más karaktereket vegyesen kell lennie (**alfanumerikus**).
 
-  - **Jelszavak nem alfanumerikus karaktereinek száma:** Ha a **Megkövetelt jelszótípus** **alfanumerikus**, ez a beállítás határozza meg a jelszóban használandó karakterkészletek minimális számát. A négy karakterkészlet a következő:
+  - **Jelszavak nem alfanumerikus karaktereinek száma**: Ha a **Jelszó kötelező** típusa **Alfanumerikus**, ez a beállítás határozza meg a jelszóban szereplő karakterkészletek minimális számát. A négy karakterkészlet a következő:
     - Kisbetűk
     - Nagybetűk
     - Szimbólumok
@@ -160,31 +175,31 @@ A HAS szolgáltatás működésével kapcsolatban lásd: [Állapotigazolási CSP
 
     Ha nagyobb értékre állítja, a felhasználóknak összetettebb jelszót kell létrehozniuk.
 
-- **Jelszó minimális hossza**: Meghatározhatja a jelszóban szereplő számjegyek vagy karakterek minimális számát.
-- **Jelszó kérése legfeljebb ennyi perc inaktivitás után**: Arra a tétlenségi időre vonatkozik, amelynek elteltével a felhasználónak újra meg kell adnia a jelszavát.
-- **Jelszó érvényessége (napokban)**: Válassza ki, hány nap elteltével járjon le a jelszó, ami után újat kell létrehoznia.
-- **Újból nem használható jelszavak száma**: Megadhatja, hogy hány korábbi jelszó ne legyen újra felhasználható.
-- **Jelszó megkövetelése amikor az eszköz visszatér az inaktív állapotból (mobil és Holographic rendszer esetén)**: A felhasználóknak minden alkalommal meg kell adniuk a jelszót, amikor az eszköz visszatér az inaktív állapotból.
+- **Jelszó minimális hossza**: Adja meg a jelszóban szereplő számjegyek vagy karakterek minimális számát.
+- **Ennyi perc inaktivitás után kell jelszót**: Adja meg az üresjárati idő után a felhasználónak újra meg kell adnia a jelszavát.
+- **Jelszó érvényessége (napokban)**: Válassza ki a hány nap elteltével a jelszó lejár, és létre kell hoznia egy újat.
+- **Hány korábbi jelszót újból**: Adja meg a korábban használt jelszavak számát, amelyeket nem használható.
+- **Jelszó kérése, ha az eszköz visszatér inaktív állapotból (Mobile és Holographic)**: Kényszerítse a felhasználókat a minden alkalommal, amikor az eszköz visszatér inaktív állapotból, adja meg a jelszót.
 
 #### <a name="encryption"></a>Encryption
 
-- **Adattároló titkosítása az eszközön**: A **Kötelező** lehetőséget választva az adattárolók titkosítva lesznek az eszközökön.
+- **Egy eszközön való adattárolás titkosításának**: Válasszon **megkövetelése** az adattárolás, az eszközök titkosításához.
 
   > [!NOTE]
   > Az **Adattárolás titkosítása az eszközön** beállítás általánosságban ellenőrzi, hogy van-e titkosítás az eszközön. Robusztusabb titkosítási beállítás megadásához fontolja meg a **BitLocker megkövetelése** beállítás használatát, amely a windowsos Eszközállapot-igazolást használja a Bitlocker-állapot ellenőrzéséhez a TPM szintjén.
 
 #### <a name="device-security"></a>Eszközbiztonság
 
-- **Vírusvédelem**: Ha a **Szükséges** lehetőség van beállítva, a Windows Security Centerben regisztrált vírusvédelmi megoldások (például Symantec és Windows Defender) használatával ellenőrizheti a megfelelőséget. A **Nincs konfigurálva** beállítás esetén az Intune nem ellenőrzi az eszközön telepített vírusvédelmi megoldásokat.
-- **Kémprogram-elhárító**: Ha a **Szükséges** lehetőség van beállítva, a Windows Security Centerben regisztrált kémprogram-elhárító megoldások (például Symantec és Windows Defender) használatával ellenőrizheti a megfelelőséget. A **Nincs konfigurálva** beállítás esetén az Intune nem ellenőrzi az eszközön telepített kémprogram-elhárító megoldásokat.
+- **A víruskereső**: Ha a beállítása **megkövetelése**, ellenőrizheti a megfelelőségi regisztrált Windows-Security Center, például a Symantec és a Windows Defender víruskereső megoldásokkal. A **Nincs konfigurálva** beállítás esetén az Intune nem ellenőrzi az eszközön telepített vírusvédelmi megoldásokat.
+- **Kémprogram-elhárító**: Ha beállítása **megkövetelése**, ellenőrizheti a megfelelőségi Windows a Security Center, például a Symantec és a Windows Defender regisztrált kémprogram-elhárító megoldásokkal. A **Nincs konfigurálva** beállítás esetén az Intune nem ellenőrzi az eszközön telepített kémprogram-elhárító megoldásokat.
 
 ### <a name="windows-defender-atp"></a>Windows Defender ATP
 
-- **A következő vagy ez alatti számítógép-kockázati pontszám megkövetelése**: Ezzel a beállítással a fenyegetéseket elhárító szolgáltatásoktól származó kockázatbecslés lesz a megfelelőség feltétele. Megadható a legnagyobb megengedett fenyegetettségi szint:
-  - **Tiszta**: Ez a legbiztonságosabb beállítás, mivel az eszköz esetében semmilyen fenyegetés nem engedélyezett. Bármilyen szintű fenyegetés észlelésekor az eszközt a rendszer nem megfelelőként értékeli.
-  - **Alacsony**: Az eszköz csak abban az esetben minősül megfelelőnek, ha kizárólag alacsony szintű fenyegetések állnak fenn. Bármilyen magasabb szintű fenyegetés esetén az eszköz nem megfelelő státuszúnak minősül.
+- **Az eszköz vagy az alatt a gép kockázati pontszám megkövetelése**: Ez a beállítás segítségével a védelmet a kockázatelemzést threat szolgáltatások igénybe a megfelelőség feltétele. Megadható a legnagyobb megengedett fenyegetettségi szint:
+  - **Egyértelmű**: Ez a lehetőség akkor a legtöbb beállítás, mivel az eszköz esetében semmilyen fenyegetés nem. Az eszköz bármilyen szintű fenyegetés észlelése esetén, nem megfelelőként értékeli.
+  - **Alacsony**: Az eszköz abban az esetben minősül megfelelőnek Ha kizárólag alacsony szintű fenyegetések állnak fenn. Bármilyen magasabb szintű fenyegetés esetén az eszköz nem megfelelő státuszúnak minősül.
   - **Közepes**: Az eszköz abban az esetben minősül megfelelőnek, ha az eszközön észlelt fenyegetések alacsony vagy közepes szintűek. Magas szintű fenyegetés észlelésekor a rendszer nem megfelelőként értékeli az eszközt.
-  - **Magas**: Ez a legkevésbé biztonságos, minden fenyegetettségi szintet megengedő beállítás. Akkor lehet hasznos, ha ezt a megoldást kizárólag jelentéskészítési célokra használja.
+  - **Magas**: Ez a beállítás a legkevésbé biztonságos, és minden kockázati szintet. Akkor lehet hasznos, ha ezt a megoldást kizárólag jelentéskészítési célokra használja.
   
   A Windows Defender ATP (Advanced Threat Protection) fenyegetések elleni védelmi szolgáltatásként való beállításáról a [Windows Defender ATP engedélyezése feltételes hozzáféréssel](advanced-threat-protection.md) című témakörben talál információt.
 
@@ -197,7 +212,7 @@ A Windows Holographic for Business **Windows 10 vagy újabb** platformot haszná
 A Microsoft Hololens eszköz titkosításának ellenőrzéséhez tekintse meg az [Eszköztitkosítás ellenőrzése](https://docs.microsoft.com/hololens/hololens-encryption#verify-device-encryption) című témakört.
 
 ## <a name="surface-hub"></a>Surface Hub
-A Surface Hub **Windows 10 vagy újabb** platformot használ. A Surface Hubokon a megfelelőség és a feltételes hozzáférés is támogatott. Ezeknek a funkcióknak a Surface Hubokon való engedélyezéséhez ajánlott a [Windows 10 automatikus regisztrációjának engedélyezése](windows-enroll.md) az Intune-ban (ehhez Azure Active Directory (AAD) is szükséges), és a Surface Hub-eszközök megjelölése eszközcsoportokként. A megfelelőség és a feltételes hozzáférés működéséhez a Surface Hubokat be kell léptetni az Azure Active Directoryba.
+A Surface Hub **Windows 10 vagy újabb** platformot használ. A Surface Hubokon a megfelelőség és a feltételes hozzáférés is támogatott. Ahhoz, hogy ezeknek a funkcióknak a Surface Hubokban, azt javasoljuk, hogy [Windows 10 automatikus regisztrációjának engedélyezése](windows-enroll.md) az Intune-ban (is igényel az Azure Active Directory (Azure AD)), és célozhat meg a Surface Hub-eszközök megjelölése eszközcsoportokként. A Surface hubokon kell az Azure AD-hez a megfelelőségi és feltételes hozzáférés működéséhez szükségesek.
 
 Erről a [Windowsos eszközök regisztrációjának beállítása](windows-enroll.md) című cikk nyújt útmutatást.
 
