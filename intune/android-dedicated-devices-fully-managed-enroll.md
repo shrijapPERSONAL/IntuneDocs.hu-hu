@@ -16,23 +16,23 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 0366a4394f5046d72c7cf01d2848974d225597a6
-ms.sourcegitcommit: d757c907af6c3c1b20823ffa4fda3acbaa8ecd9f
+ms.openlocfilehash: 0eb12470c20efd8d455f8bb165455ae4266da956
+ms.sourcegitcommit: 2a1720184cec577684a64af85d0d731693d11d81
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/22/2019
-ms.locfileid: "54444557"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55146893"
 ---
 # <a name="enroll-your-android-dedicated-devices-or-fully-managed-devices-preview"></a>A dedikált Android-eszközök regisztrálása vagy a teljes körűen felügyelt eszközök (előzetes verzió)
 
 Miután beállította a [Android dedikált eszközök](android-kiosk-enroll.md) vagy [teljes körűen felügyelt eszközök](android-fully-managed-enroll.md) az Intune-ban, az eszközöket regisztrálni. Az Android-eszközök regisztrálásának módja az operációs rendszertől függ.
 
-| Regisztráció módszere | Minimális Android operációs rendszer verziója, a dedikált eszközök | Android operációs rendszer minimális verziójának teljes körűen felügyelt eszközök esetén |
-| ----- | ----- | ----- |
-| Kis hatótávolságú kommunikáció | 5.1 | 6.0 |
-| Biztonsági jogkivonat | 6.0 | 6.0 |
-| QR-kód | 7.0 | 7.0 |
-| Zero Touch  | 8.0\* | 8.0\* |
+| Regisztráció módszere | Android operációs rendszer minimális verziójának dedikált és teljes körűen felügyelt eszközök |
+| ----- | ----- |
+| Kis hatótávolságú kommunikáció | 5.1 |
+| Biztonsági jogkivonat | 6.0 |
+| QR-kód | 7.0 |
+| Zero Touch  | 8.0\* |
 
 \* A programban részt vevő gyártókat.
 

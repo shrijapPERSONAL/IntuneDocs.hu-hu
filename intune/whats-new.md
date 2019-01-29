@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: c5bced54973818b78190d81ade2fde5358c58443
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: 21fde80ec80492957b686a66dcfe4db55894c38e
+ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55072609"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55199489"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -31,6 +31,7 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Emellett tá
 > [!Note]
 > A mobileszköz-kezelés (MDM) új hibrid funkciójával kapcsolatos további információért tekintse meg a [hibrid újdonságok oldalát](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
+**RSS-hírcsatorna**: Értesítés küldése, amikor ezen a lapon frissül, másolása és beillesztése a következő URL-címet a hírcsatorna olvasóba szerint: `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+in+microsoft+intune%3F+-+Azure%22&locale=en-us`
 
 <!-- Common categories:  
 ### App management
@@ -70,6 +71,8 @@ A **felügyelt Google Play** alkalmazástípus lehetővé teszi, hogy kifejezett
 ### <a name="device-configuration"></a>Eszközök konfigurálása
 
 #### <a name="use-microsoft-recommended-settings-with-security-baselines-public-preview----2055484-----"></a>Microsoft által ajánlott beállítások használata a biztonsági előírások (nyilvános előzetes verzió) <!-- 2055484   -->
+Megjegyezés: Ez a funkció továbbra is bevezetéséről, és hamarosan elérhető.
+
 Az Intune integrálható más, biztonsági célú szolgáltatásokkal, például a Windows Defender ATP-vel és az Office 365 ATP-vel. Az ügyfelek a Microsoft 365-szolgáltatásokon átívelő közös stratégiát és összefüggő, teljes körű biztonsági munkafolyamatokat kérnek. Célunk a stratégiák összehangolása és ezáltal olyan megoldások létrehozása, amelyek hidat képeznek a biztonsági műveletek és a gyakori felügyeleti feladatok között. Az Intune-ban ezen cél elérésére a Microsoft által ajánlott „biztonsági előírások” közzétételével törekszünk (**Intune** > **Biztonsági előírások**).  A rendszergazda ezen alaptervek közvetlenül a biztonsági házirendek létrehozása, és telepítheti őket a felhasználóknak. Testre szabhatja a ajánlásokat és tanácsokat a szervezet igényeinek kielégítése érdekében. Az Intune biztosítja, hogy az eszközök megfeleljenek ezeknek az előírásoknak, és értesíti a rendszergazdákat, ha egy felhasználó vagy eszköz nem felel meg.
 
 Biztonsági alapterveket kapcsolatos további információkért lásd: [az Intune-ban Windows 10 biztonsági alapterv létrehozása](security-baselines-monitor.md).
@@ -117,8 +120,9 @@ Módosítottuk a címkék beállításainak és az Intune app Protection, hogy k
 Az alapértelmezett beállításokat és a beállítások száma nem változik, de ez a változás lehetővé teszi, hogy a felhasználó megértése, keresse meg, és a alkalmazni a beállításokat több egyszerűen kiválasztott alkalmazásvédelmi szabályzatok. További információ: [iOS-beállítások](app-protection-policy-settings-ios.md) és [Android-beállításokat](app-protection-policy-settings-android.md).
 
 ### <a name="device-management"></a>Eszközkezelés
-#### <a name="deployed-wip-policies-without-user-enrollment----1434452---"></a>Felhasználói regisztráció nélkül telepített WIP-szabályzatok <!-- 1434452 -->
-Windows Information Protection (WIP) szabályzatok MDM-felhasználók számára a Windows 10 rendszerű eszköz regisztrálása nélkül is telepíthető. Ez a konfiguráció lehetővé teszi, hogy a vállalatok biztosítsák a vállalati dokumentumok védelmét a WIP-konfiguráció alapján, miközben a felhasználó saját maga felügyelheti Windows-eszközeit. Ha a dokumentumok védve vannak WIP-szabályzattal, a védett adatokat az Intune-rendszergazdák szelektív módon törölhetik. Ehhez ki kell választaniuk a felhasználót és az eszközt, majd el kell küldeniük egy adattörlési kérést, amelynek hatására WIP-szabályzat által védett összes adat használhatatlanná válik. Az Intune-ból az Azure Portalon, válassza ki a **ügyfélalkalmazás** > **alkalmazások szelektív törlése**.
+
+#### <a name="selective-wipe-support-for-wip-without-enrollment-devices----1434452---"></a>WIP regisztrációval nem rendelkező eszközök szelektív törlés támogatása <!-- 1434452 -->
+Windows Information Protection regisztráció nélkül (WIP-TUDJUK) lehetővé teszi a felhasználóknak teljes körű MDM-regisztráció nélkül a Windows 10 rendszerű eszközökön a vállalati adatok védelme érdekében. Miután dokumentumok védettek a WIP-TUDJUK házirend, a védett adatok szelektív törlése az Intune-rendszergazda által. A felhasználó és eszköz kiválasztásával, és a törlési kérelmet, a WIP segítségével védett összes adatot küldő – hogy házirend használhatatlan lesz. Ehhez az Azure Portal Intune részén válassza a **Mobilalkalmazás** > **Alkalmazás szelektív törlése** lehetőséget.
 
 ### <a name="monitor-and-troubleshoot"></a>Monitorozás és hibaelhárítás
 

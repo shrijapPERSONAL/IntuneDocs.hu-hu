@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: ee9e72b727f5634721cf3a45c918aeee44e83309
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: a2f339c9ecf79f3c2e4e87eccd9a5f3b80046aa0
+ms.sourcegitcommit: 17f58d35a6bdff3e179662f3731fc74d39144470
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55072473"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55105204"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Felügyelt Google Play-alkalmazások hozzáadása az Intune-nal vállalati Android-eszköz
 
@@ -37,7 +37,36 @@ Ha saját üzletági (LOB) alkalmazásokat hozott létre, azok hozzárendelésé
 
 Fontos, hogy az Intune-t és az androidos munkahelyi profilokat beállítsa a közös munkára az Azure Portal **Eszközök regisztrálása** területén. További információ: [Android-eszközök regisztrálása](android-work-profile-enroll.md).
 
-## <a name="synchronize-an-app-from-the-managed-google-play-store"></a>Felügyelt Google Play áruházbeli alkalmazások szinkronizálása
+>[!NOTE]
+>A Microsoft Intune használatához javasoljuk, hogy a Microsoft Edge vagy a Google Chrome böngészőt használja.
+
+## <a name="managed-google-play-app-type"></a>Felügyelt Google Play alkalmazás típusa 
+A **felügyelt Google Play** alkalmazástípus lehetővé teszi, hogy kifejezetten [felügyelt Google Play alkalmazások](https://play.google.com/work/search?q=microsoft&c=apps) az Intune-hoz. Az Intune-rendszergazdaként mostantól Tallózás, keresés, hagyja jóvá, szinkronizálása és jóváhagyott a felügyelt Google Play-alkalmazások Intune-ban hozzárendelése.  Már nem kell külön tallózással keresse meg a felügyelt Google Play konzolon, és többé nem kell újból hitelesítésre. 
+
+> [!NOTE]
+> Ha egy felügyelt Google Play alkalmazás szinkronizálása az Intune-nal szeretne használni, tekintse meg [a felügyelt Google Play alkalmazás szinkronizálása az Intune-nal](apps-add-android-for-work.md#synchronize-a-managed-google-play-app-with-intune-alternative)
+
+## <a name="add-a-managed-google-play-app-using-intune"></a>Az Intune-nal felügyelt Google Play alkalmazás hozzáadása
+
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget.  
+    Az Intune a **Figyelés + felügyelet** szakaszban található.
+3. Az a **Intune** ablaktáblán válassza **ügyfélalkalmazás** > **alkalmazások**.
+5. Az **Alkalmazások** panelen válassza a **Hozzáadás** lehetőséget.
+6. Az a **alkalmazástípus** legördülő listában jelölje ki **felügyelt Google Play**.
+7. Válassza ki **felügyelt Google Play - alkalmazások jóváhagyása** való keresés jóváhagyott felügyelt Google Play-alkalmazások.
+8. Kattintson a minden alkalmazás, amely fel szeretne venni. Ezt követően c
+9. Kattintson a **jóváhagyás** a felügyelt Google Play alkalmazás, és kattintson a **jóváhagyás** az alkalmazás-engedélyek elfogadását. 
+10. Kattintson a **OK** a alkalmazás(ok) tartalmazza.
+11. Kattintson a **Hozzáadás** a a **alkalmazás** a felügyelt Google Play felhőszolgáltatáshoz való szinkronizálása ablaktábla.
+
+## <a name="synchronize-a-managed-google-play-app-with-intune-alternative"></a>A felügyelt Google Play alkalmazás szinkronizálása az Intune-nal (megoldás)
+Ha közvetlenül az Intune segítségével hozzáadása helyett az Intune a felügyelt Google Play alkalmazás szinkronizálni szeretne használni, kövesse az alábbi lépéseket.
+
+> [!IMPORTANT]
+> Az alábbi információk egy alternatív módszer a fent leírt Intune-nal felügyelt Google Play alkalmazás hozzáadása.
+
+### <a name="synchronize-an-app-from-the-managed-google-play-store"></a>Felügyelt Google Play áruházbeli alkalmazások szinkronizálása
 
 1. Keresse fel a [Felügyelt Google Play áruházat](https://play.google.com/work). Ugyanazzal a fiókkal jelentkezzen be, amellyel beállította az Intune és a vállalati Android közötti kapcsolatot.
 2. Az áruházban keresse meg és válassza ki az Intune-nal hozzárendelendő alkalmazást.
@@ -58,7 +87,7 @@ Fontos, hogy az Intune-t és az androidos munkahelyi profilokat beállítsa a k�
 
     A jóváhagyás megtörténik, és az alkalmazás megjelenik a rendszergazdai konzolon. Ezt követően [szinkronizálhatja az androidos munkahelyi profilos alkalmazást az Intune-nal](apps-add-android-for-work.md#sync-a-managed-google-play-app-with-intune). 
 
-## <a name="sync-a-managed-google-play-app-with-intune"></a>Felügyelt Google Play áruházbeli alkalmazás szinkronizálása az Intune-nal
+### <a name="sync-a-managed-google-play-app-with-intune"></a>Felügyelt Google Play áruházbeli alkalmazás szinkronizálása az Intune-nal
 
 Ha jóváhagyott egy áruházból beszerzett alkalmazást, de nem látja az **Ügyfélalkalmazások** munkaterület **Licencelt alkalmazások** csomópontjában, az alábbi lépésekkel kényszerítheti az azonnali szinkronizálást:
 
@@ -71,7 +100,9 @@ Ha jóváhagyott egy áruházból beszerzett alkalmazást, de nem látja az **Ü
 6. Az **Ügyfélalkalmazások** munkaterületen válassza az **Alkalmazások** lehetőséget.  
     Megjelenik az elérhetővé vált Felügyelt Google Play-alkalmazás.
 
-Ha az alkalmazás megjelenik az **Ügyfélalkalmazások** munkaterület paneljének **Alkalmazáslicencek** csomópontjában, [ugyanúgy hozzárendelheti, mint bármelyik alkalmazást](/intune-azure/manage-apps/deploy-apps). Az alkalmazásokat úgy is hozzá lehet rendelni, hogy csak bizonyos felhasználói csoportokat érjenek el.
+## <a name="assigning-the-managed-google-play-app"></a>A felügyelt Google Play alkalmazás hozzárendelése
+
+Ha az alkalmazás megjelenik a **alkalmazáslicencek** csomópontján a **ügyfélalkalmazás** számítási feladatok paneljének [ugyanúgy hozzárendelheti, mint bármilyen más alkalmazást](/intune-azure/manage-apps/deploy-apps) hozzárendelésével a az alkalmazásnak, hogy felhasználói csoportok.
 
 A hozzárendelés után az alkalmazás rendelkezésre áll a célzott eszközökön. A rendszer nem kér telepítési jóváhagyást az eszköz felhasználójától.
 

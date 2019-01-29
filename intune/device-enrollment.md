@@ -15,12 +15,12 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 73caf328bd25cb31bacea6b964c1db7601f3aec6
-ms.sourcegitcommit: baacdb2c5ee69d0055acad2d64f2bf1a3fc5e02d
+ms.openlocfilehash: a94722c4f4a1d199e32f6ba0c56ca4bdb2b3b09b
+ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53570808"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55199455"
 ---
 # <a name="what-is-device-enrollment"></a>Mi az eszközregisztrálás?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -106,9 +106,6 @@ További információ az iOS-eszközök regisztrációjáról:
 
 - [Az iOS-eszközök regisztrálási módjának kiválasztása](enrollment-method-choose-ios.md)
 - [iOS-eszközök regisztrálása a Configurator és közvetlen regisztráció használatával](apple-configurator-direct-enroll-ios.md)
-
-## <a name="mobile-device-management-with-exchange-activesync-and-intune"></a>Mobileszköz-kezelés az Exchange ActiveSync és az Intune használatával
-Azok a mobileszközök, amelyek nincsenek regisztrálva, de kapcsolódnak az Exchange ActiveSync (EAS) rendszerhez, EAS MDM-szabályzat segítségével kezelhetők az Intune-ban. Az Intune helyszíni vagy felhőalapú Exchange Connector összekötő segítségével kommunikál az EAS-szel. Hamarosan további információ válik elérhetővé.
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>Mobileszköz karbantartása az MDM-tanúsítvány lejárta után
 

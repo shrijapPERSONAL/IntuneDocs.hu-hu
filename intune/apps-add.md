@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/06/2019
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 95f41985f11803e6e1a474b38a2af6a891ddafcb
-ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
+ms.openlocfilehash: c615dd2dda680cd106fd099d180f57ce2a5ebfef
+ms.sourcegitcommit: 17f58d35a6bdff3e179662f3731fc74d39144470
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54067482"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55105221"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Alkalmazások hozzáadása a Microsoft Intune-hoz 
 
@@ -52,7 +52,7 @@ A következő táblázatban megtekintheti a konkrét alkalmazástípusokat és a
 | iOS-es áruházbeli alkalmazások  | Áruházbeli alkalmazás  | Válassza az **iOS** lehetőséget az **alkalmazás típusa** területen, keresse meg az alkalmazást majd jelölje ki az Intune-ban. |
 | Windows Phone 8.1-es áruházbeli alkalmazások  | Áruházbeli alkalmazás  | Válassza a **Windows Phone 8.1** lehetőséget az **alkalmazás típusa** területen, majd adja meg a Microsoft Store alkalmazáshoz tartozó URL-címét. |
 | Microsoft Store-beli alkalmazások  | Áruházbeli alkalmazás  | Válassza a **Windows** lehetőséget az **alkalmazás típusa** területen, majd adja meg a Microsoft Store alkalmazáshoz tartozó URL-címét. |
-| Androidos munkahelyi profilos alkalmazások | Áruházbeli alkalmazás  | Keresse meg és hagyja jóvá az Android munkahelyi profilalkalmazást a felügyelt Google Play áruházban.  |
+| Felügyelt Google Play-alkalmazások | Áruházbeli alkalmazás  | Válassza ki **felügyelt Google Play** , a **alkalmazástípus**, keresse meg az alkalmazást, és válassza ki az alkalmazást az Intune-ban. |
 | Windows 10-es Office 365-alkalmazások  | Áruházbeli alkalmazás (Office 365) | Válassza a **Windows 10** lehetőséget az **Office 365 csomag** területen, az **alkalmazás típusa** részen, majd válassza ki a telepíteni kívánt Office 365-alkalmazást.  |
 | macOS-es Office 365-alkalmazások | Áruházbeli alkalmazás (Office 365) | Válassza a **macOS** lehetőséget az **Office 365 csomag** területen, az **alkalmazás típusa** részen, majd válassza ki az Office 365 csomagot. |
 | Androidos üzletági (LOB) alkalmazások | Üzletági (LOB) alkalmazás | Válassza az **Üzletági alkalmazás** lehetőséget az **alkalmazás típusa** területen, válassza az **Alkalmazáscsomag-fájl** elemet, majd adjon meg egy **.apk** kiterjesztésű Androidos telepítőfájlt.  |
@@ -119,7 +119,7 @@ Az Intune által kezelt alkalmazások regisztráció nélkül nyújtanak alkalma
 ### <a name="understanding-licensed-apps"></a>A licencelt alkalmazások megértése
 A webes, az áruházbeli és az üzletági alkalmazásokon kívül érdemes tisztában lennie a Volume Purchase Program alkalmazásainak és a licencelt alkalmazások sajátosságaival, például: 
 - **Apple Volume Purchasing Program (iOS) a vállalati**: Az iOS App Store lehetővé teszi, hogy a vállalatban futtatni kívánt több licencet is vásároljon. Több licenc vásárlásával hatékonyabban kezelhetők a vállalaton belüli alkalmazások. További információ: [Mennyiségi programban vásárolt iOS-alkalmazások felügyelete](vpp-apps-ios.md).
-- **Androidos munkahelyi profil**: Az alkalmazások androidos munkahelyi profilos eszközökhöz való hozzárendelése eltér a hagyományos androidos eszközökhöz való hozzárendeléstől. Minden olyan alkalmazás, amelyet az androidos munkahelyi profil részeként telepít a felügyelt Google Play áruházból szerezhető be. Jelentkezzen be az áruházba, keresse meg a kívánt alkalmazásokat, majd hagyja jóvá a választást. Az alkalmazás megjelenik az Azure Portal **Licencelt alkalmazások** lapján, és a hozzárendelése ugyanúgy kezelhető, mint bármely más alkalmazásé.
+- **Androidos munkahelyi profil**: Az alkalmazások androidos munkahelyi profilos eszközökhöz való hozzárendelése eltér a hagyományos androidos eszközökhöz való hozzárendeléstől. Minden olyan alkalmazás, amelyet az androidos munkahelyi profil részeként telepít a felügyelt Google Play áruházból szerezhető be. Az Intune használatával keresse meg az alkalmazások szeretne, majd hagyja jóvá a választást. Az alkalmazás megjelenik az Azure Portal **Licencelt alkalmazások** lapján, és a hozzárendelése ugyanúgy kezelhető, mint bármely más alkalmazásé.
 - **Microsoft Store vállalatoknak (Windows 10-es)**: Microsoft Store vállalatoknak hely, ahol a szervezet számára alkalmazásokat vásárolhat, egyenként vagy mennyiségi biztosítja. Az áruházat a Microsoft Intune-nal összekapcsolva a mennyiségi programban vásárolt alkalmazásokat az Azure Portalon kezelheti. További információ: [A Microsoft Store Vállalatoknak áruházban vásárolt alkalmazások felügyelete](windows-store-for-business.md).
 
     > [!NOTE]

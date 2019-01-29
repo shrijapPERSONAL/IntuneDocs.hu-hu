@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: eb369d8e89ff41e75d5bd669819afbe98b6d1ba7
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: be348840df2e1d7864b0c1c57efbb7abcb698392
+ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031840"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55199387"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>Eszközök regisztrálása az Intune-ban egy eszközregisztráció-kezelői fiók használatával
 
@@ -36,6 +36,7 @@ A DEM-fiókokra és a DEM-fiókokkal regisztrált eszközökre a következő kor
   - A DEM felhasználói fiókok nem használhatnak az Apple Volume Purchase Program (VPP) keretében vásárolt alkalmazásokat az Apple VPP felhasználói licencekkel, mivel az alkalmazások kezeléséhez felhasználói Apple ID azonosítóra van szükség.
   - Az eszközök akkor telepíthetnek VPP-alkalmazásokat, ha rendelkeznek Apple VPP-eszközlicenccel.
   - Eszközei le lettek tiltva a feltételes hozzáférés Windows 10 1803 + kivételével
+  - Egyes DEM-fiókkal regisztrált eszközök a saját Intune eszköz-licenccel kell rendelkeznie.
 
 
 ## <a name="add-a-device-enrollment-manager"></a>Eszközregisztráció-kezelő hozzáadása

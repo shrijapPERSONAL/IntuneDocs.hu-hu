@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/17/2018
+ms.date: 01/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,32 +14,28 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b6679f0b1d7392bc2db2e39b4c283b702dd21285
-ms.sourcegitcommit: 9739a9aab032ebb2c4b52ccfb454a9e0f78b2ee4
+ms.openlocfilehash: 806df8077045a4ad81cb7e221bd053059461a2fd
+ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54751229"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55199404"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Az Intune eszközmegfelelőségi szabályzatai – első lépések
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-A megfelelőségi követelmények lényegében szabályok; ilyen lehet például a PIN-kód vagy a titkosítás megkövetelése az eszközön. Az eszközöknek az eszközmegfelelőségi szabályzatok által meghatározott szabályok és beállítások szerint kell működnie ahhoz, hogy a rendszer megfelelőnek minősítse őket. Ezek a szabályok a következők:
+Számos mobileszköz-felügyelet (MDM) megoldás segítségével a szervezeti adatok védelme azzal, hogy a felhasználók és eszközök bizonyos követelmények teljesítéséhez. Az Intune-ban a szolgáltatás neve "megfelelőségi szabályzatok". Megfelelőségi szabályzatok határozzák meg, a szabályokat és beállításokat, amelyeket a felhasználók és eszközök megfelelőségéhez meg kell felelnie. Feltételes hozzáféréssel kombinálva, a rendszergazdák képes blokkolni a felhasználók és eszközök, amelyek nem felelnek meg a szabályokat. Ha például az Intune-rendszergazdák lehet szükség:
 
-- Jelszó megkövetelése az eszköz eléréséhez
+- A végfelhasználók jelszó segítségével elérni a szervezeti adatokat mobileszközökön
 
-- Encryption
+- Az eszköz nincs jailbreakelve vagy rootolással feltört
 
-- Az, hogy az eszköz jailbreakelve vagy rootolva van-e
+- Az eszköz egy minimális és maximális operációsrendszer-verzió
 
-- Az operációs rendszer minimálisan szükséges verziója
+- Az eszköz, vagy az alatt a fenyegetettségi szint
 
-- Az operációs rendszer szükséges maximális verziója
-
-- Az eszköz maximálisan megengedett Mobile Threat Defense-szintjének megkövetelése
-
-A megfelelőségi szabályzatokkal figyelheti eszközei megfelelőségi állapotát is.
+Eszközmegfelelőségi szabályzatok az eszközök megfelelőségi állapotának figyelésére is használható.
 
 > [!IMPORTANT]
 > Intune az eszköz bejelentkezési ütemezés az összes megfelelőségi értékelést követi az eszközön. [További információ az eszköz bejelentkezési ütemezés](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
@@ -68,7 +64,8 @@ compliance issues on the device. You can also use this time to create your actio
 Remember that you need to implement conditional access policies in addition to compliance policies in order for access to company resources to be blocked.--->
 
 ## <a name="prerequisites"></a>Előfeltételek
-Az eszközmegfelelőségi szabályzatok használatához az alábbi követelményeknek kell megfelelnie:
+
+Az eszközmegfelelőségi szabályzatok használatához győződjön meg:
 
 - Használja az alábbi előfizetéseket:
 
@@ -84,15 +81,28 @@ Az eszközmegfelelőségi szabályzatok használatához az alábbi követelmény
   - Windows Phone 8.1
   - Windows 10
 
-- A megfelelőségi állapotuk jelentéséhez az eszközöket regisztrálnia kell az Intune-ban.
+- Eszközök regisztrálása az Intune-t, tekintse meg a megfelelőségi állapot
 
-- Támogatottak az egy felhasználóhoz regisztrált, illetve elsődleges felhasználóval nem rendelkező eszközök is. Több felhasználói környezet egyidejű használata nem támogatott.
+- Eszközök regisztrációja az egy felhasználó, vagy regisztráció nélkül elsődleges felhasználói. Több felhasználó számára regisztrált eszközök nem támogatottak.
 
-## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a>Az Intune-eszközmegfelelőségi szabályzatok és az Azure AD együttműködése
+## <a name="how-device-compliance-policies-work-with-azure-ad"></a>Az eszközmegfelelőségi szabályzatok működését az Azure ad-vel
 
 Az eszközök Intune-beli regisztrálásakor elindul az Azure AD-regisztrációs folyamat, mely frissíti az eszköz attribútumait az Azure AD-ben. Az egyik legfontosabb információ az eszköz megfelelőségi állapota. Ezt a megfelelőségi állapotot használják a feltételes hozzáférési szabályzatok az e-mailekhez és más vállalati erőforrásokhoz való hozzáférés engedélyezéséhez vagy letiltásához.
 
 Többet is megtudhat az [Azure AD-regisztrációs folyamatról](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
+
+## <a name="refresh-cycle-times"></a>Frissítse a ciklusok idejét
+
+A megfelelőség ellenőrzésekor az Intune az azonos frissítési ciklus konfigurációs profilokat használja. Általában a idők a következők:
+
+- iOS: 6 óránként
+- macOS: 6 óránként
+- Android:: 8 óránként
+- Eszközként regisztrált Windows 10-es számítógépek: 8 óránként
+- Windows Phone: 8 óránként
+- Windows 8.1: 8 óránként
+
+A megfelelőségi ellenőrzés eszközök regisztrálás után azonnal gyakran történik.
 
 ### <a name="assign-an-ingraceperiod-status"></a>Türelmi időszakban állapot hozzárendelése
 
@@ -137,21 +147,21 @@ Tegyük fel például, hogy egy eszközhöz három megfelelőségi szabályzat v
 A szabályzat szabályainak megfelelő eszközök hozzáférést kapnak az e-mailekhez és más vállalati erőforrásokhoz. Ha egy eszköz nem felel meg a szabályzat szabályainak, akkor nem kap hozzáférést a vállalati erőforrásokhoz. Ez a feltételes hozzáférés.
 
 #### <a name="without-conditional-access"></a>Feltételes hozzáférés nélkül
-Eszközmegfelelőségi szabályzatokat a feltételes hozzáférés nélkül is használhat. A megfelelőségi szabályzatok önálló használata esetén a megcélzott eszközöket megfelelőségi állapotuk szerint értékeli ki és jelenti a rendszer. Jelentést kérhet például arról, hogy hány eszköz nincs titkosítva, vagy mely eszközök vannak jailbreakelve vagy rootolva. Ha a megfelelőségi szabályzatokat feltételes hozzáférés nélkül használja, akkor nem korlátozza a rendszer a vállalati erőforrások elérését.
+Eszközmegfelelőségi szabályzatokat a feltételes hozzáférés nélkül is használhat. A megfelelőségi szabályzatok önálló használata esetén a megcélzott eszközöket megfelelőségi állapotuk szerint értékeli ki és jelenti a rendszer. Például hogy hány eszköz nincs titkosítva, vagy mely eszközök jailbreakelve vagy rootolással feltört jelentést kérhet. Megfelelőségi szabályzatokat feltételes hozzáférés nélkül használja, ha nincsenek hozzáférési korlátozások a munkahelyi erőforrásokhoz.
 
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Az eszközmegfelelőségi szabályzatok üzembe helyezésének módjai
 Az eszközmegfelelőségi szabályzatokat felhasználói csoportokban lévő felhasználók, illetve eszközcsoportokban lévő eszközök számára helyezheti üzembe. Amikor felhasználók számára telepít megfelelőségi szabályzatot, a rendszer az összes felhasználói eszköz megfelelőségét ellenőrzi. A Windows 10 1803-as vagy újabb verziójával rendelkező eszközökön javasolt az eszközcsoportokba történő üzembe helyezés, *ha* az elsődleges felhasználó nem regisztrálta az eszközt. Ebben a forgatókönyvben az eszközcsoportok használata segít a megfelelőségi jelentések elkészítésében.
 
-Minden Intune-ban regisztrált eszközhöz megtörténik a beépített **Megfelelőségi szabályzatok beállításainak** (Azure Portal > Eszközmegfelelőség) értékelése. Ezek a következők:
+Beépített megfelelőségiszabályzat-beállítások készletét (**Intune** > **eszközmegfelelőség**) lekérdezi értékeli ki az összes Intune-ban regisztrált eszközökön. Ezek a következők:
 
 - **Eszköz megjelölése mint hozzárendelt megfelelőségi szabályzattal nem rendelkező**: Ez a tulajdonság két értéke van:
 
   - **Megfelelő**: biztonsági szolgáltatás kikapcsolva
   - **Nem megfelelő** (alapértelmezés): biztonsági szolgáltatás bekapcsolva
 
-  Ha egy eszköz nem rendelkezik hozzárendelt megfelelőségi szabályzattal, akkor az eszközt nem megfelelőként minősíti a rendszer. Az eszközök állapota alapértelmezés szerint **Megfelelő**. Ha feltételes hozzáférést használ, javasoljuk, hogy módosítsa a beállítást **Nem megfelelő** értékre. Ha egy végfelhasználó nem felel meg, mert nincs szabályzat hozzárendelve, akkor a Céges portál a következőt jeleníti meg: `No compliance policies have been assigned`.
+  Ha egy eszköz nem rendelkezik hozzárendelt megfelelőségi szabályzattal, akkor az eszközt nem megfelelőként minősíti a rendszer. Az eszközök állapota alapértelmezés szerint **Nem megfelelő**. Ha feltételes hozzáférést használ, javasoljuk, állítsa a beállítást **nem megfelelő**. Ha a felhasználó nem megfelelő, mert nincs szabályzat hozzárendelve, vállalati portál megjeleníti a `No compliance policies have been assigned`.
 
-- **Továbbfejlesztett függetlenítésészlelés**: Ha engedélyezve van, a beállítás hatására a bejelentkezés az Intune-nal gyakrabban iOS-eszközök. A tulajdonság engedélyezésekor a rendszer igénybe veszi az eszköz helyalapú szolgáltatásait, mely hatással van az akkumulátorhasználatra. A felhasználó tartózkodási helyét az Intune nem tárolja.
+- **Továbbfejlesztett függetlenítésészlelés**: Ha engedélyezve van, ez a beállítás hatására a iOS-eszközök gyakrabban jelentkeznek be az Intune-ban. A tulajdonság engedélyezésekor a rendszer igénybe veszi az eszköz helyalapú szolgáltatásait, mely hatással van az akkumulátorhasználatra. A felhasználó tartózkodási helyét az Intune nem tárolja.
 
   Ennek a beállításnak az engedélyezésekor az eszközöknek meg kell felelnie a következőknek:
   - Engedélyezett helyalapú szolgáltatások az operációs rendszer szintjén

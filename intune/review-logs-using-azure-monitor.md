@@ -1,11 +1,11 @@
 ---
-title: Naplók Store - beli Microsoft Intune használatával az Azure monitor |} A Microsoft Docs
+title: Naplók route - beli Microsoft Intune használatával az Azure monitor |} A Microsoft Docs
 description: Diagnosztikai beállítások használatával vizsgálati naplók és a műveleti naplók küldése a Microsoft Intune-ban az Azure storage-fiók, az event hubs és a log analytics. Válassza ki, hogy mennyi ideig szeretné megőrizni az adatokat, és tekintse meg a különböző méretű bérlők néhány becsült költségei.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 01/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7c801909bfc6df9f3a7e7ae139531630e3f13c4a
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: 6323eda16ef54df3cb14f9a8dd4f8349e51d1b01
+ms.sourcegitcommit: 17f58d35a6bdff3e179662f3731fc74d39144470
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55071272"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55105153"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Napló adatokat küldeni a tárolási, az event hubs, vagy a log analytics az Intune-ban (előzetes verzió)
 

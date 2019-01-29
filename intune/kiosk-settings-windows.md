@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 37d83b835b5b0f4705fe04985753779a2c79d1be
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.openlocfilehash: 61cb1a3c9de10020381d62a2a7795d5ff728db22
+ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831680"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55199421"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Windows 10-es és újabb beállításai az Intune-ban a teljes képernyős fiókként való futtatásra
 
@@ -137,7 +137,7 @@ Többalkalmazásos kioszk mód választásakor adja meg a következő beállít�
 
 - **Használat alternatív Start elrendezésének**: Válasszon **Igen** , adjon meg egy XML-fájlt, amely azt ismerteti, hogyan jelenjenek meg az alkalmazások a start menüben, beleértve az alkalmazások sorrendjét. Használja ezt a beállítást, ha több testreszabási lehetőségre van szüksége a Start menüben. A [Start menü elrendezésének testreszabása és exportálása](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) című cikkben találhat útmutatást és XML-mintát.
 
-- **Windows-tálcán**: Válassza ki a **megjelenítése** vagy **elrejtése** a tálcán. Alapértelmezés szerint a tálca nem jelenik meg.
+- **Windows-tálcán**: Válassza ki a **megjelenítése** vagy **elrejtése** a tálcán. Alapértelmezés szerint a tálca nem jelenik meg. Ikonok, például a Wi-Fi ikon látható, de a beállítások nem módosíthatók a végfelhasználók számára.
 
 ## <a name="next-steps"></a>További lépések
 

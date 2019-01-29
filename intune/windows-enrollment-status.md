@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: b87e0d24c000e3083eaebeac1a4cf6026d495ccf
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: f01009a0cb35f4270bdb1e768ee781172c8bfa2f
+ms.sourcegitcommit: 17f58d35a6bdff3e179662f3731fc74d39144470
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032095"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55105187"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Beléptetési állapotlap beállítása
  
@@ -32,7 +32,7 @@ Az Intune-nal eszköz beállítása során a regisztrálási állapot oldal az e
 - A használat tiltása a telepítés befejezéséig.
 - Megadható, hogy mit tehet meg a felhasználó, ha az eszköz telepítése sikertelen.
 
-Az egyes profilok prioritását is megadhatja, egyazon felhasználó vagy eszköz ütköző profil-hozzárendeléseinek feloldására.
+Beállíthatja a prioritásuk szerinti sorrendben történik, hogy figyelembe vegye az ugyanazon felhasználóhoz vagy eszközhöz ütköző profil-hozzárendeléseket az egyes profilok is.
 
  
 ## <a name="turn-on-default-enrollment-status-page-for-all-users"></a>Az alapértelmezett regisztrációs állapotlap bekapcsolása minden felhasználónak
