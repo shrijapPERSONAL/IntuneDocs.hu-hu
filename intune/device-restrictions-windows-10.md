@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/13/2018
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: f2b75eb5a87dbfd7a17aee83f173d3d472920428
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: e297169757f1bcc703ce698302ce6f7129104827
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203637"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55230120"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>A Windows 10 (és újabb) eszközbeállítások engedélyezett vagy korlátozott funkciók az Intune-nal
 
@@ -174,7 +174,7 @@ Hozzon létre egy kioszkkonfigurációt a **Hozzáadás** gomb használatával (
 - **Teljes képernyős alkalmazás**: Adja meg a Start menüben elérhető alkalmazásokat. A felhasználó kizárólag a megadott alkalmazásokat fogja tudni elérni.
 
   - **Alkalmazás típusa**: Válassza ki a teljes képernyős alkalmazás típusát:
-    - **Win32-alkalmazás**: Hagyományos asztali alkalmazás. A futtatható fájlnak az eszközön érvényes teljes elérési útja szükséges.
+    - **Win32 App**: Hagyományos asztali alkalmazás. A futtatható fájlnak az eszközön érvényes teljes elérési útja szükséges.
     - **UWP-alkalmazás**: Egy univerzális Windows-alkalmazás. [Az alkalmazás alkalmazásfelhasználói modellben használt azonosítója (AUMID)](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) szükséges.
 
   - **Azonosító**: A végrehajtható fájl (Win32-alkalmazás), adja meg a teljes elérési útjával, vagy a [alkalmazás AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP-alkalmazások).
@@ -420,7 +420,7 @@ Beállíthatja, hogy az eszközön lévő összes alkalmazás által elérhető 
 
 - **Start menü elrendezése**: Testre szabhatja a start menüje olyan asztali eszközökön, tölthet fel, amely tartalmazza a testreszabásokat, többek között a sorrendben, az alkalmazások szerepelnek, és több XML-fájl. Felhasználók nem módosíthatják a Start menü elrendezése, adja meg.
 - **Rögzítheti a csempéket a webhelyek a Start menü**: Olyan képek importálását, amely a Windows Start menü asztali eszközök hivatkozásokként jelennek meg a Microsoft Edge-ből.
-- **Levétele a tálcáról alkalmazások**: Válasszon **blokk** leállítja a felhasználó alkalmazásokat távolítson a Start menüből.
+- **Levétele a tálcáról alkalmazások**: Válasszon **blokk** leállítja a felhasználó alkalmazásokat távolítson a tálcáról.
 - **Gyors felhasználóváltás**: Válasszon **blokk** egyidejűleg bejelentkezett kijelentkezés nélküli felhasználók közötti váltás elkerülése érdekében.
 - **Legtöbbet használt alkalmazások**: Válasszon **letiltása** elrejtése megjelenítése a start menüben a leggyakrabban használt alkalmazásokat. A Gépház alkalmazásban is letiltja a megfelelő váltógombot.
 - **Nemrég hozzáadott alkalmazások**: Válasszon **blokk** megjelenítése a start menüből a nemrégiben hozzáadott alkalmazásokat elrejtéséhez. A Gépház alkalmazásban is letiltja a megfelelő váltógombot.
@@ -502,9 +502,9 @@ Beállíthatja, hogy az eszközön lévő összes alkalmazás által elérhető 
 
 ### <a name="windows-defender-antivirus-exclusions"></a>Windows Defender víruskereső – kizárások
 
-- **Fájlok és mappák kizárása a vizsgálatokból és a valós idejű védelem**: A kívánt fájlok és mappák – például C:\Elérési_út vagy **%ProgramFiles%\Elérési_út\fájlnév.exe** – felvétele a kivételek listájára. A rendszer a valós idejű és ütemezett vizsgálatok során nem vizsgálja ezeket a fájlokat és mappákat.
+- **Fájlok és mappák kizárása a vizsgálatokból és a valós idejű védelem**: A kívánt fájlok és mappák – például **C:\Elérési_út** vagy **%ProgramFiles%\Elérési_út\fájlnév.exe** – felvétele a kivételek listájára. A rendszer a valós idejű és ütemezett vizsgálatok során nem vizsgálja ezeket a fájlokat és mappákat.
 - **A vizsgálatokból és a valós idejű védelemből kizárandó fájlkiterjesztések**: Vegye fel a kívánt fájlkiterjesztéseket – például **jpg** vagy **txt** – a kivételek listájára. A valós idejű és ütemezett vizsgálatok során nem vizsgálja az ilyen kiterjesztésű fájlokat.
-- **A vizsgálatokból és a valós idejű védelemből kizárandó folyamatok**: Vegye fel a kívánt típusú folyamatokat – .exe, **.com** vagy **.scr** – a kivételek listájára. A valós idejű és ütemezett vizsgálatok során nem vizsgálja ezeket a folyamatokat.
+- **A vizsgálatokból és a valós idejű védelemből kizárandó folyamatok**: Vegye fel a kívánt típusú folyamatokat – **.exe**, **.com** vagy **.scr** – a kivételek listájára. A valós idejű és ütemezett vizsgálatok során nem vizsgálja ezeket a folyamatokat.
 
 ## <a name="next-steps"></a>További lépések
 
