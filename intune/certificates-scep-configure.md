@@ -2,24 +2,24 @@
 title: SCEP-tanúsítványok használata az Azure-beli Microsoft Intune-nal | Micrososft Docs
 description: Az SCEP-tanúsítványok Microsoft Intune-ban való használatához konfigurálja a helyszíni AD-tartományát, hozzon létre hitelesítésszolgáltatót, állítsa be az NDES-kiszolgálót, és telepítse az Intune Tanúsítvány-összekötőt. Ezután hozzon létre egy SCEP-tanúsítványprofilt, és rendelje azt csoportokhoz. Megismerheti továbbá a különböző eseményazonosítókat és azok leírását, valamint az Intune Connector Service diagnosztikai kódjait.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 11/6/2018
+ms.date: 1/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.reviewer: kmyrup
+ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ee61063a36a486a0840446f82834bc37cc96bfc0
-ms.sourcegitcommit: a843bd081e9331838ade05a3c05b02d60b6bec4c
+ms.openlocfilehash: f8b4d1aded0198dfc3dcccf6bdeda30bb54ee651
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53597375"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55230154"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>SCEP-tanúsítványok konfigurálása és használata az Intune-nal
 
@@ -67,7 +67,7 @@ Az NDES-kiszolgálót egy fordított proxyn keresztül, például az [Azure AD-a
 |**Tanúsítványsablon**|Ez a sablon a vállalati hitelesítésszolgáltatón konfigurálható.|
 |**Ügyfél-hitelesítési tanúsítvány**|A vállalati vagy nyilvános hitelesítésszolgáltatótól lekért tanúsítvány, melyet az NDES-kiszolgálóra kell telepítenie.|
 |**Kiszolgálói hitelesítési tanúsítvány**|A vállalati vagy nyilvános hitelesítésszolgáltatótól lekért tanúsítvány. Ezt az SSL-tanúsítványt az NDES-kiszolgálón futó IIS-be kell telepítenie, majd kötést kell létrehoznia. Ha a tanúsítványban be van állítva az ügyfél- és kiszolgálóhitelesítési kulcshasználat (**Kibővített kulcshasználat**), akkor használhatja ugyanazon tanúsítványt.|
-|**Megbízható legfelső szintű hitelesítésszolgáltató tanúsítványa**|Exportálja ezeket a tanúsítványokat **.cer** kiterjesztésű fájlként a legfelső szintű hitelesítésszolgáltatóról vagy azokról az eszközökről, amelyek megbízhatónak tartják a legfelső szintű hitelesítésszolgáltatót. Ezután rendelje hozzá a felhasználók, eszközök, vagy mindkét használatával a megbízható Hitelesítésszolgáltatói tanúsítványprofillal.<br /><b>Megjegyzés:<b />ha SCEP-tanúsítványprofil hozzá van rendelve, ügyeljen arra, hogy a hivatkozott az SCEP-tanúsítványprofil ugyanazon felhasználó vagy eszköz csoporthoz megbízható főtanúsítvány-profil hozzárendelése.<br /><br />Operációsrendszer-platformonként egy darab megbízható legfelső szintű hitelesítésszolgáltatói tanúsítványt használjon, és társítsa azt az egyes létrehozott megbízható főtanúsítvány-profilokkal.<br /><br />Szükség esetén további megbízható legfelső szintű hitelesítésszolgáltatói tanúsítványokat is használhat. Ezzel például bizalmi kapcsolatot alakíthat ki egy hitelesítésszolgáltatónak, mely aláírja a kiszolgálói hitelesítési tanúsítványokat a szervezet Wi-Fi hozzáférési pontjai számára.|
+|**Megbízható legfelső szintű hitelesítésszolgáltató tanúsítványa**|Exportálja ezeket a tanúsítványokat **.cer** kiterjesztésű fájlként a legfelső szintű hitelesítésszolgáltatóról vagy azokról az eszközökről, amelyek megbízhatónak tartják a legfelső szintű hitelesítésszolgáltatót. Ezután rendelje hozzá a felhasználók, eszközök vagy mindkét használatával a megbízható Hitelesítésszolgáltatói tanúsítványprofillal.<br /><b>Megjegyzés:<b />ha SCEP-tanúsítványprofil hozzá van rendelve, ügyeljen arra, hogy a hivatkozott az SCEP-tanúsítványprofil ugyanazon felhasználó vagy eszköz csoporthoz megbízható főtanúsítvány-profil hozzárendelése.<br /><br />Operációsrendszer-platformonként egy darab megbízható legfelső szintű hitelesítésszolgáltatói tanúsítványt használjon, és társítsa azt az egyes létrehozott megbízható főtanúsítvány-profilokkal.<br /><br />Szükség esetén további megbízható legfelső szintű hitelesítésszolgáltatói tanúsítványokat is használhat. Ezzel például bizalmi kapcsolatot alakíthat ki egy hitelesítésszolgáltatónak, mely aláírja a kiszolgálói hitelesítési tanúsítványokat a szervezet Wi-Fi hozzáférési pontjai számára.|
 
 ### <a name="accounts"></a>Fiókok
 
@@ -223,7 +223,7 @@ Ebben a lépésben a következőket fogja elvégezni:
 3. Az NDES-kiszolgálóra rendkívül hosszú URL-címek (lekérdezések) érkeznek, melyekhez két beállításjegyzékbeli bejegyzést kell felvennie:
 
 
-   |                        Hely                        |      Érték      | Típus  |      Adatok       |
+   |                        Hely                        |      Érték      | Typo  |      Adatok       |
    |--------------------------------------------------------|-----------------|-------|-----------------|
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (decimális) |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (decimális) |
@@ -383,14 +383,14 @@ A szolgáltatás futásának ellenőrzéséhez nyisson meg egy böngészőt, és
         - **Egyéni**: Ezt a beállítást, ha egy **egyéni** szövegmező is megjelenik. Ezt a mezőt egyéni tulajdonosnév-formátumok megadásához használhatja, beleértve a változókat is. Egyéni formátum két változót támogat: **Köznapi név (CN)** és **E-mail (E)**. Az **Egyszerű név (CN)** az alábbi változók bármelyikére beállítható:
 
             - **CN = {{UserName}}**: Az egyszerű felhasználónév a felhasználó például janedoe@contoso.com
-            - **CN = {{AAD_Device_ID}}**: Amikor regisztrál egy eszközt az Azure Active Directory (AD) hozzárendelt azonosító. Ez az azonosító jellemzően az Azure AD-ben való hitelesítéshez használatos.
-            - **CN = {{SERIALNUMBER}}**: Az egyedi sorozatszám (Sorozatszám) jellemzően a gyártó által használt eszköz azonosításához
-            - **CN = {{IMEINumber}}**: Az International Mobile Equipment azonosító (IMEI) egy mobiltelefonok azonosítására szolgáló egyedi szám
-            - **CN = {{OnPrem_Distinguished_Name}}**: Relatív megkülönböztető nevek vesszővel elválasztva. például egy feladatütemezési `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
+            - **CN={{AAD_Device_ID}}**: Amikor regisztrál egy eszközt az Azure Active Directory (AD) hozzárendelt azonosító. Ez az azonosító jellemzően az Azure AD-ben való hitelesítéshez használatos.
+            - **CN={{SERIALNUMBER}}**: Az egyedi sorozatszám (Sorozatszám) jellemzően a gyártó által használt eszköz azonosításához
+            - **CN={{IMEINumber}}**: Az International Mobile Equipment azonosító (IMEI) egy mobiltelefonok azonosítására szolgáló egyedi szám
+            - **CN={{OnPrem_Distinguished_Name}}**: Relatív megkülönböztető nevek vesszővel elválasztva. például egy feladatütemezési `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
 
                 A(z) `{{OnPrem_Distinguished_Name}}` változó használatához ügyeljen rá, hogy a(z) `onpremisesdistingishedname` felhasználói attribútumot szinkronizálja az Azure AD-vel az [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) segítségével.
 
-            - **CN = {{onPremisesSamAccountName}}**: Rendszergazdák szinkronizálhatók a samAccountName attribútumot használva az Active Directoryból az Azure AD-bA az Azure AD connect nevű attribútum be `onPremisesSamAccountName`. Az Intune helyettesítheti ezt a változót egy SCEP-tanúsítványhoz tartozó tanúsítványkiadási kérelem részeként.  A samAccountName attribútum az a bejelentkezési név, amely a Windows előző verzióját (A Windows 2000-nél korábbi verziókat) használó ügyfelek és kiszolgálók támogatására szolgált. A bejelentkezési név formátuma: `DomainName\testUser`, vagy csak `testUser`.
+            - **CN={{onPremisesSamAccountName}}**: Rendszergazdák szinkronizálhatók a samAccountName attribútumot használva az Active Directoryból az Azure AD-bA az Azure AD connect nevű attribútum be `onPremisesSamAccountName`. Az Intune helyettesítheti ezt a változót egy SCEP-tanúsítványhoz tartozó tanúsítványkiadási kérelem részeként.  A samAccountName attribútum az a bejelentkezési név, amely a Windows előző verzióját (A Windows 2000-nél korábbi verziókat) használó ügyfelek és kiszolgálók támogatására szolgált. A bejelentkezési név formátuma: `DomainName\testUser`, vagy csak `testUser`.
 
                 A(z) `{{onPremisesSamAccountName}}` változó használatához ügyeljen rá, hogy a(z) `onPremisesSamAccountName` felhasználói attribútumot szinkronizálja az Azure AD-vel az [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) segítségével.
 
@@ -560,5 +560,6 @@ A 6.1806.x.x verziótól kezdődően az Intune Connector Service naplózza az es
 
 ## <a name="next-steps"></a>További lépések
 
-- [PKCS-tanúsítványok használata](certficates-pfx-configure.md) vagy [PKCS-tanúsítványok kiállítása egy Symantec PKI-kezelő webszolgáltatásból](certificates-symantec-configure.md)
-- [Külső hitelesítésszolgáltató felvétele a SCEP Intune-nal való használatához](certificate-authority-add-scep-overview.md)
+- [PKCS-tanúsítványok használata](certficates-pfx-configure.md), vagy [kiállítani a Symantec PKI manager webes szolgáltatás PKCS-tanúsítványok](certificates-symantec-configure.md)
+- [Adja hozzá a 3. fél hitelesítésszolgáltató SCEP használata az Intune-nal](certificate-authority-add-scep-overview.md)
+- További segítségért használja a [hibaelhárítási SCEP tanúsítványprofilok azon központi telepítését a Microsoft Intune-ban](https://support.microsoft.com/help/4457481/troubleshooting-scep-certificate-profile-deployment-in-intune) útmutató.

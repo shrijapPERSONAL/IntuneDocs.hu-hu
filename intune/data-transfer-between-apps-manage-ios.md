@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 58d0cbbd503697575cd63e66fff80bd91e742e5e
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.openlocfilehash: 8e223301b15a408c5f5a444a1904fca9826929ac
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831447"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55229899"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>iOS-alkalmazások közti adatátvitel felügyelete a Microsoft Intune-ban
 
@@ -37,7 +37,7 @@ Az alkalmazásvédelmi szabályzatok használata az IOS-es **megnyitási engedé
 
 -   **Alkalmazottak tulajdonában lévő, mobileszköz-kezelési megoldás által nem kezelt eszközök:** Az alkalmazásvédelmi szabályzat beállításait beállíthatja **///az alkalmazás átadhat adatokat csak a szabályzattal felügyelt alkalmazások**. A *Megnyitás a következőben* viselkedését egy házirend által kezelt alkalmazás megosztási lehetőségek, csak más szabályzattal felügyelt alkalmazások mutat be. Ha egy felhasználó próbál küldeni egy szabályzat által védett fájlt mellékletként a onedrive-ról a natív levelezőalkalmazást, a fájl nem olvasható.
 
--   **Az Intune által kezelt eszközök:** Az Intune-ban regisztrált eszközök esetén az alkalmazásvédelmi szabályzatokkal védett alkalmazások közötti adatátvitel, és az Intune használatával telepített egyéb felügyelt iOS-alkalmazások automatikusan engedélyezett. Adja meg, hogyan más alkalmazásokból való adatátvitel, engedélyezze az **///az alkalmazás átadhat adatokat más alkalmazásoknak** majd válassza az Ön által választott értékét a megosztási. Adja meg, hogyan, az alkalmazás fogadhat adatokat más alkalmazásokból, engedélyezze az **alkalmazás fogadhat adatokat más alkalmazásokból** majd kapja az adatokat az Ön által választott értékét. Az Intune-nal telepített alkalmazások között a **Megnyitási engedélyek felügyelete** funkcióval vezérelhető az adatátvitel. Az alkalmazásadatok fogadására és megosztására vonatkozó további információért lásd az [Adatáthelyezési beállítások](app-protection-policy-settings-ios.md#data-protection-settings) szakaszt.   
+-   **Az Intune által kezelt eszközök:** Az Intune-ban regisztrált eszközök esetén az alkalmazásvédelmi szabályzatokkal védett alkalmazások közötti adatátvitel, és az Intune használatával telepített egyéb felügyelt iOS-alkalmazások automatikusan engedélyezett. Adja meg, hogyan más alkalmazásokból való adatátvitel, engedélyezze az **///az alkalmazás átadhat adatokat más alkalmazásoknak** majd válassza az Ön által választott értékét a megosztási. Adja meg, hogyan, az alkalmazás fogadhat adatokat más alkalmazásokból, engedélyezze az **alkalmazás fogadhat adatokat más alkalmazásokból** majd kapja az adatokat az Ön által választott értékét. Az Intune-nal telepített alkalmazások között a **Megnyitási engedélyek felügyelete** funkcióval vezérelhető az adatátvitel. Az alkalmazásadatok fogadására és megosztására vonatkozó további információért lásd az [Adatáthelyezési beállítások](app-protection-policy-settings-ios.md#data-protection) szakaszt.   
 
 -   **A külső MDM-megoldás által kezelt eszközök:** Korlátozhatja az adatátvitelt csak felügyelt alkalmazások által az iOS-es **megnyitási engedélyek felügyelete** funkció.
 Győződjön meg arról, hogy egy harmadik fél mobileszköz-kezelési megoldás segítségével központilag alkalmazásokat az Intune alkalmazásvédelmi szabályzatokat is tartoznak, konfigurálja a felhasználói UPN-beállítás a következő szakaszban leírtak szerint [konfigurálása felhasználói UPN-beállítás](#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm). Alkalmazások telepítésekor a felhasználói UPN-beállítással az alkalmazásvédelmi szabályzatok vonatkoznak az alkalmazást, amikor a felhasználó bejelentkezik a munkahelyi fiókjával.

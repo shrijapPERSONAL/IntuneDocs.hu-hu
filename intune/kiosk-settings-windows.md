@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 61cb1a3c9de10020381d62a2a7795d5ff728db22
-ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
+ms.openlocfilehash: 31cfa617e0ca5d8d0848d1ecb781fda701589ccd
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 01/29/2019
-ms.locfileid: "55199421"
+ms.locfileid: "55229950"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Windows 10-es és újabb beállításai az Intune-ban a teljes képernyős fiókként való futtatásra
 
@@ -101,7 +101,7 @@ Többalkalmazásos kioszk mód választásakor adja meg a következő beállít�
 
     - **Alkalmazásnév**: Kötelező. Adjon nevet az alkalmazásnak.
     - **Helyi elérési út**: Kötelező. Adja meg a végrehajtható fájl elérési útját, például `C:\Program Files (x86)\Microsoft VS Code\Code.exe` vagy `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`.
-    - **Alkalmazás alkalmazásfelhasználói modellben használt azonosítója (AUMID)**: Adja meg a Win32-alkalmazás alkalmazásfelhasználói modellben használt azonosítóját. Ez a beállítás meghatározza a csempe kezdő elrendezését az asztalon. Az azonosító a [Telepített alkalmazás alkalmazásfelhasználói modellben használt azonosítójának megkeresése](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps) című témakörben leírtak alapján kereshető meg.
+    - **Alkalmazás alkalmazásfelhasználói modellben használt azonosítója (AUMID)**: Adja meg a Win32-alkalmazás alkalmazásfelhasználói modellben használt azonosítóját. Ez a beállítás meghatározza a csempe kezdő elrendezését az asztalon. Ez az azonosító lekéréséhez lásd: [Get-StartApps](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps).
     - **Csempe méretének**: Kötelező. Válassza a Kicsi, Közepes, Széles és Nagy alkalmazáscsempe-méretek egyikét.
   
   - **Hozzáadása AUMID alapján**: Ezt a beállítást használja a Beérkezett fájlok Windows-alkalmazások, például a Jegyzettömbbel vagy a Számológép hozzáadása. Adja meg a következő tulajdonságokat: 

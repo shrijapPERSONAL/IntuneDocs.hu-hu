@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 21fde80ec80492957b686a66dcfe4db55894c38e
-ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
+ms.openlocfilehash: 2d27b37fe627b6b697bf102be4bd29427c2223c8
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 01/29/2019
-ms.locfileid: "55199489"
+ms.locfileid: "55230188"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -52,7 +52,7 @@ Bemutató végfelhasználói bejelentési értesítések egy alkalmazás-hozzár
 
 #### <a name="intune-app-protection-policies-ui-update----3251427----"></a>Az Intune alkalmazásvédelmi szabályzataihoz tartozó kezelőfelületre vonatkozó frissítés <!-- 3251427  -->
 Módosítottuk a címkék beállításainak és az Intune app Protection, hogy könnyebben érthetőek gombok. A változások a következők:  
-- Vezérlők meg nem változtatják **Igen** / **nincs** elsősorban szabályozza **letiltása** / ** engedélyezése ** és **letiltása**  /  **engedélyezése** szabályozza. A címkék is frissülnek.  
+- Vezérlők meg nem változtatják **Igen** / **nincs** elsősorban szabályozza **blokk** / **engedélyezése** és **letiltása** / **engedélyezése** szabályozza. A címkék is frissülnek.  
 - Beállítások újraformázása, így a beállítás, és a felirat egymás mellett a vezérlőelemet, adja meg a jobb navigációs.   
 
 Az alapértelmezett beállításokat és a beállítások száma nem változik, de ez a változás lehetővé teszi, hogy a felhasználó megértése, keresse meg, és a alkalmazni a beállításokat több egyszerűen kiválasztott alkalmazásvédelmi szabályzatok. További információ: [iOS-beállítások](app-protection-policy-settings-ios.md) és [Android-beállításokat](app-protection-policy-settings-android.md).
@@ -60,7 +60,7 @@ Az alapértelmezett beállításokat és a beállítások száma nem változik, 
 #### <a name="additional-settings-for-outlook----3301182----"></a>Az Outlook további beállítások <!-- 3301182  -->
 Mostantól konfigurálhatja az IOS rendszerhez készült Outlook és az Intune-nal Android további beállításokat.  A beállítások a következők: Csak a munkahelyi vagy iskolai fiókkal használható az Outlookban, iOS vagy Android üzembe helyezése a modern hitelesítést az Office 365 és a hibrid, modern hitelesítést helyszíni fiókok használatát engedélyezi `SAMAccountName` az e-mail profilban, az egyszerű hitelesítés esetén a felhasználónév mező a kiválasztott engedélyezése névjegyek konfigurálása külső címzetteknek e-mail tippek konfigurálása menteni **Beérkezett fájlok mappa a fókuszban lévő** biometrika Outlook IOS-blokk külső képek eléréséhez szükséges
 > [!NOTE]
-> Ha az Intune alkalmazásvédelmi szabályzatokat használ a vállalati identitások kezelésére, érdemes lehet nem engedélyezi az **biometrika megkövetelése**. További információkért lásd: **vállalati hitelesítő adatok megkövetelése a hozzáféréshez** a [hozzáférési beállítások iOS](app-protection-policy-settings-ios.md#access-settings) és [Android-beállításokat](app-protection-policy-settings-android.md#access-settings).
+> Ha az Intune alkalmazásvédelmi szabályzatokat használ a vállalati identitások kezelésére, érdemes lehet nem engedélyezi az **biometrika megkövetelése**. További információkért lásd: **vállalati hitelesítő adatok megkövetelése a hozzáféréshez** a [hozzáférési beállítások iOS](app-protection-policy-settings-ios.md#access-requirements) és [Android-beállításokat](app-protection-policy-settings-android.md#access-requirements).
 
 #### <a name="delete-android-enterprise-apps----1352553---"></a>Androidos vállalati alkalmazások törlése <!-- 1352553 -->
 Törölheti a felügyelt Google Play-alkalmazások Microsoft Intune-ból. Felügyelt Google Play alkalmazás törléséhez nyissa meg a Microsoft Intune az Azure Portalon, és válassza a **ügyfélalkalmazás** > **alkalmazások**. Az alkalmazás listában jelölje ki a három pontra (...) jobb oldalán a felügyelt Google Play-alkalmazást, majd válassza ki **törlése** a megjelenő listából. Ha egy felügyelt Google Play-alkalmazást töröl alkalmazásokat az alkalmazáslistából, a felügyelt Google Play alkalmazás automatikusan jóvá nem hagyott.
@@ -113,7 +113,7 @@ Beállítások aktuális listájának megtekintéséhez, keresse fel a [engedél
 A következőkre vonatkozik: Androidos vállalati eszköz tulajdonosa
 
 #### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Az Intune alkalmazásvédelmi szabályzataihoz tartozó kezelőfelületre vonatkozó frissítés <!-- 3251427 -->
-Módosítottuk a címkék beállításainak és az Intune app Protection, hogy könnyebben érthetőek gombok. A változások a következők:  
+Módosítottuk a címkéket a beállítások egy Intune app Protection, hogy könnyebben érthetőek nd gombokat. A változások a következők:  
 - Vezérlők meg nem változtatják **Igen** / **nincs** elsősorban szabályozza **letiltása** / ** engedélyezése ** és **letiltása**  /  **engedélyezése** szabályozza. A címkék is frissülnek.  
 - Beállítások újraformázása, így a beállítás, és a felirat egymás mellett a vezérlőelemet, adja meg a jobb navigációs.   
 
@@ -400,7 +400,7 @@ Ez a funkció néhány napon belül kerül bevezetésre a felhasználók közöt
 ### <a name="app-management"></a>Alkalmazáskezelés
 
 #### <a name="require-non-biometric-pin-after-a-specified-timeout----1506985---"></a>Nem biometrikus PIN-kód kérése a megadott időtúllépés után <!-- 1506985 -->
-Mivel az Intune nem biometrikus PIN-kód megadását írja elő a rendszergazda által meghatározott időtúllépés után, ezzel magasabb szintű védelmet biztosít a mobilalkalmazás-kezelést (MAM) engedélyező alkalmazások számára azáltal, hogy korlátozza a biometrikus azonosításnak a céges adatokhoz való hozzáférés érdekében történő használatát. A beállítások APP/MAM szolgáltatást engedélyező alkalmazásokhoz való hozzáférésre használt Touch ID (iOS), Face ID (iOS), Android Biometric és egyéb jövőbeli biometrikus hitelesítési módszereket alkalmazó felhasználókra vonatkoznak. E beállítások segítségével az Intune-rendszergazdák részletesen szabályozhatják a felhasználók hozzáférését, így megelőzhetik azokat az eseteket, amikor a több ujjlenyomatos vagy egyéb biometrikus hozzáférési módszert használó eszközről céges adatok juthatnak illetéktelen felhasználók birtokába. Az Azure Portalon nyissa meg a **Microsoft Intune** oldalt. Válassza az **Ügyfélalkalmazások** > **Alkalmazásvédelmi szabályzatok** > **Szabályzat hozzáadása** > **Beállítások** lehetőséget. Az adott beállításokhoz keresse meg a **Hozzáférés** lehetőséget. A hozzáférésre vonatkozó beállításokról az [iOS-beállítások](app-protection-policy-settings-ios.md#access-settings) és az [Android-beállítások](app-protection-policy-settings-android.md#access-settings) oldalon tájékozódhat.
+Mivel az Intune nem biometrikus PIN-kód megadását írja elő a rendszergazda által meghatározott időtúllépés után, ezzel magasabb szintű védelmet biztosít a mobilalkalmazás-kezelést (MAM) engedélyező alkalmazások számára azáltal, hogy korlátozza a biometrikus azonosításnak a céges adatokhoz való hozzáférés érdekében történő használatát. A beállítások APP/MAM szolgáltatást engedélyező alkalmazásokhoz való hozzáférésre használt Touch ID (iOS), Face ID (iOS), Android Biometric és egyéb jövőbeli biometrikus hitelesítési módszereket alkalmazó felhasználókra vonatkoznak. E beállítások segítségével az Intune-rendszergazdák részletesen szabályozhatják a felhasználók hozzáférését, így megelőzhetik azokat az eseteket, amikor a több ujjlenyomatos vagy egyéb biometrikus hozzáférési módszert használó eszközről céges adatok juthatnak illetéktelen felhasználók birtokába. Az Azure Portalon nyissa meg a **Microsoft Intune** oldalt. Válassza az **Ügyfélalkalmazások** > **Alkalmazásvédelmi szabályzatok** > **Szabályzat hozzáadása** > **Beállítások** lehetőséget. Az adott beállításokhoz keresse meg a **Hozzáférés** lehetőséget. A hozzáférésre vonatkozó beállításokról az [iOS-beállítások](app-protection-policy-settings-ios.md#access-requirements) és az [Android-beállítások](app-protection-policy-settings-android.md#access-requirements) oldalon tájékozódhat.
 
 #### <a name="intune-app-data-transfer-settings-on-ios-mdm-enrolled-devices----2244713---"></a>Az Intune APP adatátviteli beállításai a mobileszköz-felügyelettel (MDM) regisztrált iOS-eszközökön <!-- 2244713 -->
 Elkülönítheti az Intune APP adatátviteli beállítások iOS rendszerű, MDM-et engedélyező eszközökön való szabályozását a regisztrált felhasználók személyazonosságának megadásától, amely Egyszerű felhasználónévként (UPN) is ismert. Az IntuneMAMUPN-t nem használó rendszergazdák nem tapasztalnak majd működésbeli változást. Ha ez a funkció elérhetővé válik, a regisztrált eszközök adatátviteli viselkedésének vezérléséhez IntuneMAMUPN-t használó rendszergazdáknak át kell tekinteniük az új beállításokat, és szükség szerint frissíteniük kell APP-beállításaikat.

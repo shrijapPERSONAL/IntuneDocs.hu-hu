@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3c100ef3e598bf377f0464bfba161d4ad689ba98
-ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
+ms.openlocfilehash: bab1656ec141b26cc3e9cb4195da7c1c24e401a1
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626039"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55230171"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windowsos eszközök regisztrációjának beállítása
 
@@ -82,6 +82,12 @@ A Contoso DNS-rendszergazdájának a következő CNAME-elemeket kell létrehozni
 `EnterpriseEnrollment-s.manage.microsoft.com` – A levelezési tartomány nevéből felismert tartománynévvel irányítja át a felhasználókat az Intune-ba.
 
 A DNS-rekord módosításának terjesztése akár 72 órát is igénybe vehet. Az Intune-ban nem ellenőrizhető a DNS-módosítás, amíg a DNS-rekord propagálása zajlik.
+
+## <a name="additional-endpoints-are-supported-but-not-recommended"></a>További végpontokat támogatottak, de nem ajánlott.
+EnterpriseEnrollment-s.Manage.microsoft.com címre regisztrációs előnyben részesített teljes Tartománynevét, de vannak más végpontokat, amelyek az elmúlt ügyfelek által használt, és támogatja. Enterpriseenrollment.Manage.microsoft.com webhelyre (nélkül az -s) és a Manage.microsoft.com címre irányítja át is működik az automatikus felderítési kiszolgáló, de a felhasználó számára a cél kell touch OK gombra a megerősítést kérő üzenet. EnterpriseEnrollment-s.Manage.microsoft.com webhelyre mutat, ha a felhasználó kell tennie a további megerősítő lépés, ezért ez az ajánlott konfiguráció
+
+## <a name="alternate-methods-of-redirection-are-not-supported"></a>Alternatív módszerek az átirányítás nem támogatottak.
+A CNAME-konfigurációja eltérő módszerrel nem támogatott. Például proxykiszolgálóval enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc átirányítása vagy enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc vagy manage.microsoft.com/EnrollmentServer/Discovery.svc nem támogatott.
 
 **2. lépés: A CNAME ellenőrzése** (nem kötelező)<br>
 1. Az [Azure Portalbeli Intune-ban](https://aka.ms/intuneportal) válassza az **Eszközök regisztrálása** > **Windows-regisztráció** > **CNAME-ellenőrzés** elemet.

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 01/29/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: bc28bca31c43140a7bca528655825bab60c53be1
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: cf2bfbc992d4577e345b73f07ec465990feac317
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203518"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55229984"
 ---
 # <a name="apply-features-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Az eszközök Microsoft Intune-ban eszközprofilok segítségével funkciók beállításainak alkalmazása
 
@@ -123,8 +123,8 @@ Ez a funkció a következőket támogatja:
 - Android enterprise
 - iOS
 - macOS
-- Windows 10
-- A Windows 10 Team
+- Windows 10 és újabb
+- Windows 10 Team
 
 ## <a name="delivery-optimization"></a>Teljesítésoptimalizálás
 
@@ -174,7 +174,7 @@ Ez a funkció a következőket támogatja:
 - Android
 - iOS
 - Windows Phone 8.1
-- Windows 10
+- Windows 10 és újabb
 
 ## <a name="vpn"></a>VPN
 
@@ -189,7 +189,7 @@ Ez a funkció a következőket támogatja:
 - macOS
 - Windows Phone 8.1
 - Windows 8.1
-- Windows 10
+- Windows 10 és újabb
 
 ## <a name="wi-fi"></a>Wi-Fi
 
@@ -201,6 +201,7 @@ Ez a funkció a következőket támogatja:
 - iOS
 - macOS
 - Windows 8.1 (csak importálás)
+- Windows 10 és újabb
 
 ## <a name="esim-cellular---public-preview"></a>eSIM-kártya – Nyilvános előzetes verzió
 
@@ -241,7 +242,7 @@ Ez a funkció a következőket támogatja:
 - iOS
 - Windows Phone 8.1
 - Windows 8.1
-- Windows 10
+- Windows 10 és újabb
 
 ## <a name="windows-information-protection-profile"></a>Windows információvédelem profil
 
@@ -251,7 +252,7 @@ Ez a funkció a következőket támogatja:
 
 - Windows 10 és újabb
 
-## <a name="shared-multi-user-device"></a>Megosztott több felhasználó-eszköz
+## <a name="shared-multi-user-device"></a>Többfelhasználós megosztott eszköz
 
 [Windows 10-es](shared-user-device-settings-windows.md) és [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) eszközök kezelése több felhasználóval, más néven megosztott eszközök vagy a megosztott számítógépek beállításokat tartalmaz. Amikor egy felhasználó bejelentkezik az eszközre, az úgy dönt, ha a felhasználó az alvási beállítások módosítása, vagy mentse a fájlt az eszközön. Egy másik példában létrehozhat egy szabályzatot, amely törli az inaktív hitelesítő adatait az ezzel helyet Windows HoloLens-eszközök.
 

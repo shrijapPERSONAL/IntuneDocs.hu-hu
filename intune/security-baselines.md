@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d78adf8e7d6d2ce05951171e6248dcc8c389945d
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: afc5faff7ea06bca07c06aadb887aa199739c6c0
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55071242"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55229925"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Az Intune-ban Windows 10 biztonsági alapterv létrehozása
 
@@ -30,7 +30,7 @@ Ez a funkció az alábbiakra vonatkozik:
 - A Windows 10-es 1809 és újabb verziók
 
 > [!NOTE]
-> Bár biztonsági előírások előzetes verzióban érhető el, a Microsoft nem változtassa-profilok használatával éles környezetben, mint az alapkonfigurációk előfordulhat, hogy folyamán az előzetes verzióra.
+> Bár biztonsági előírások előzetes verzióban érhető el, a Microsoft nem változtassa-profilok használatával éles környezetben, mint az alapkonfigurációk előfordulhat, hogy folyamán az előzetes verzióra. Biztonsági alapterveket általánosan elérhetők, ha meglévő profilok nem konvertálja a legújabb támogatott profilokat.
 
 A biztonsági alapterv használatával célja, hogy adjon meg egy végpontok közötti biztonságos munkafolyamatot a Microsoft 365 használatakor. Az előnyök közé:
 
