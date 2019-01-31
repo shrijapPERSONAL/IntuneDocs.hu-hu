@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2019
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,30 +16,30 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cb52a9755dffd20e6d3d66419855cc4ee7fca293
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: ba77c14e470ed75a87f44adcaf0ba9b98cd06438
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55068322"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290757"
 ---
-# <a name="intune-standalone---win32-app-management-public-preview"></a>Különálló Intune – Win32-alkalmazáskezelés (nyilvános előzetes verzió)
+# <a name="intune-standalone---win32-app-management"></a>Önálló Intune - Win32-Alkalmazáskezelés
 
 Az Intune különálló verziója több lehetőséget biztosít a Win32-alkalmazások kezelése terén. Bár a felhőhöz csatlakozó ügyfelek használhatják a Konfigurációkezelőt a Win32-alkalmazások kezeléséhez, a kizárólag Intune-nal rendelkező ügyfelek számára több lehetőség érhető el az üzletági (LOB) Win32-alkalmazások kezeléséhez. E témakör áttekintést nyújt a Win32-alkalmazások Intune-ban elérhető kezelési funkcióiról, valamint a hibaelhárítással kapcsolatos lehetőségekről.
 
-## <a name="prerequisites-for-public-preview"></a>A nyilvános előzetes verzió használatának előfeltételei
+## <a name="prerequisites"></a>Előfeltételek
 
 - A Windows 10 1607-es verzió vagy újabb (vállalati, Pro és Education verziók)
 - A Windows 10-ügyfélnek: 
     - Azure Active Directory- (ADD) vagy hibrid Azure Active Directory-csatlakozással kell rendelkeznie, valamint
     - regisztrálva kell lennie az Intune-ban (MDM által felügyelt)
-- A Windows-alkalmazások egyenkénti mérete a nyilvános előzetes verzióban nem haladhatja meg a 8 GB-ot. 
+- Windows-alkalmazás mérete 8 GB a alkalmazásonként maximumon
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>A Win32-alkalmazás tartalmának előkészítése a feltöltéshez
 
-Használja a [Microsoft Intune Win32-alkalmazások feltöltéséhez készült előkészítő eszközét](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool) a Win32-alkalmazások előfeldolgozásához. A csomagolási eszköz *.intunewin* formátumba konvertálja az alkalmazástelepítési fájlokat. A csomagolási eszköz emellett észlel az Intune által megkövetelt bizonyos attribútumokat is, amelyeket az alkalmazástelepítés állapotának meghatározásához használ fel. Miután használta ezt az eszközt az alkalmazástelepítési mappában, létrehozhat egy Win32-alkalmazást az Intune-konzolon.
+Használja a [Microsoft Win32 tartalom előkészítő eszközt](https://go.microsoft.com/fwlink/?linkid=2065730) előre a Win32-alkalmazások feldolgozásához. Az eszköz konvertálja az alkalmazástelepítési fájlok a *.intunewin* formátumban. Az eszköz az Intune által az alkalmazás telepítési állapotának meghatározásához szükséges attribútumok némelyike is észleli. Miután használta ezt az eszközt az alkalmazástelepítési mappában, létrehozhat egy Win32-alkalmazást az Intune-konzolon.
 
-A [Microsoft Intune Win32-alkalmazások feltöltéséhez készült előkészítő eszközét](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool) a GitHubról töltheti le.
+Letöltheti a [Microsoft Win32 tartalom előkészítő eszközt](https://go.microsoft.com/fwlink/?linkid=2065730) a Githubról.
 
 ### <a name="available-command-line-parameters"></a>Elérhető parancssori paraméterek 
 
@@ -58,7 +58,7 @@ A [Microsoft Intune Win32-alkalmazások feltöltéséhez készült előkészít�
 |    `IntuneWinAppUtil -h`    |    Ez a parancs megjeleníti az eszköz használatára vonatkozó információkat.    |
 |    `IntuneWinAppUtil -c <setup_folder> -s <source_setup_file> -o <output_folder> <-q>`    |    Ez a parancs létrehozza az `.intunewin` fájlt a megadott forrásmappa és telepítőfájl alapján. Az MSI-telepítőfájlhoz az eszköz lekéri az Intune-hoz szükséges adatokat. Ha a `-q` van megadva, a parancs csendes módban fog futni, és ha a kimeneti fájl már létezik, felül fogja írni. Ha a kimeneti mappa még nem létezik, akkor automatikusan létrejön.    |
 
-Létrehozásakor egy *.intunewin* fájlt minden olyan fájlok, a telepítés mappa almappa hivatkoznia kell. Ezután használja a relatív elérési út egy konkrét fájlt kell hivatkoznia. Példa:
+Létrehozásakor egy *.intunewin* fájlt minden olyan fájlok, a telepítés mappa almappa hivatkoznia kell. Ezután használja a relatív elérési út egy konkrét fájlt kell hivatkoznia. Például:
 
 **Telepítő forrásmappája:** *c:\testapp\v1.0*<br>
 **Licencfájl:** *c:\testapp\v1.0\licenses\license.txt*
@@ -69,25 +69,29 @@ Tekintse meg a *license.txt* fájl relatív elérési út használatával *licen
 
 Az üzletági (LOB) alkalmazásokhoz hasonlóan Win32-alkalmazást is hozzáadhat a Microsoft Intune-hoz. Az ilyen alkalmazásokat általában házon belül írják, vagy egy külső féltől származnak. Az alábbi lépések útmutatást nyújtanak a Windows-alkalmazások Intune-hoz való hozzáadásához.
 
-### <a name="step-1-specify-the-software-setup-file"></a>1. lépés: A szoftvertelepítő fájl megadása
+### <a name="step-1-specify-the-software-setup-file"></a>Első lépés: A szoftvertelepítő fájl megadása
 
-1.  Jelentkezzen be az [Azure Portalra](https://portal.azure.com/).
+1.  Jelentkezzen be az [Azure portálra](https://portal.azure.com/).
 2.  Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3.  Az **Intune** panelen válassza az **Ügyfélalkalmazások** > **Alkalmazások** > **Hozzáadás** elemet.
-4.  Az **Alkalmazás felvétele** panelen válassza a **Windows-alkalmazás (Win32) – előzetes verzió** lehetőséget a legördülő listából.
+4.  Az a **Hozzáadás** alkalmazás panelen válassza **Windows-alkalmazás (Win32)** a megadott legördülő listából.
 
     ![Az hozzáadása panelen – Hozzáadás típusa legördülő menü képernyőképe](./media/apps-win32-app-01.png)
 
-### <a name="step-2-upload-the-app-package-file"></a>2. lépés: Az alkalmazáscsomag-fájl feltöltése
+### <a name="step-2-upload-the-app-package-file"></a>Második lépés: Az alkalmazáscsomag-fájl feltöltése
 
 1.  Az **Alkalmazás felvétele** panelen válassza az **Alkalmazáscsomag-fájl** lehetőséget egy fájl kiválasztásához. Megjelenik az Alkalmazáscsomag-fájl panel.
 
     ![Az alkalmazás csomag fájl panelen – képernyőfelvétel](./media/apps-win32-app-02.png)
 
 2.  Az **Alkalmazáscsomag-fájl** panelen válassza a tallózás gombot. Ezt követően jelölje ki az *.intunewin* kiterjesztésű Windows-telepítőfájlt.
+
+    > [!IMPORTANT]
+    > Győződjön meg arról, a Microsoft Win32 tartalom előkészítő eszköz legújabb verzióját használja. Ha nem a legújabb verziót használja, megjelenik egy figyelmeztetés, amely jelzi, hogy az alkalmazás csomagolása a Microsoft Win32 tartalom előkészítő eszköz egy régebbi verzióját használja. 
+
 3.  Amikor végzett, válassza az **OK** gombot.
 
-### <a name="step-3-configure-app-information"></a>3. lépés: Az alkalmazásadatok konfigurálása
+### <a name="step-3-configure-app-information"></a>Harmadik lépés: Az alkalmazásadatok konfigurálása
 
 1.  Az alkalmazás konfigurálásához az **Alkalmazás hozzáadása** panelen válassza az **Alkalmazás adatai** elemet.
 2.  Az **Alkalmazás adatai** panelen konfigurálja az alábbi információkat. Lehetséges, hogy ezen a panelen néhány érték automatikusan ki lesz töltve.
@@ -112,7 +116,7 @@ Az üzletági (LOB) alkalmazásokhoz hasonlóan Win32-alkalmazást is hozzáadha
 
 3.  Adja meg az alkalmazás eltávolításához szükséges teljes eltávolítási parancssort az alkalmazás GUID-értékei alapján. 
 
-    Például:`msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
+    Például így: `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
 
     > [!NOTE]
     > Az adott Win32-alkalmazás telepítését a **Felhasználó** vagy a **Rendszer** környezetben konfigurálhatja. A **Felhasználó** környezet csak az adott felhasználóra vonatkozik. A **Rendszer** környezet az adott, Windows 10-es rendszerű eszköz összes felhasználójára vonatkozik.
@@ -171,7 +175,7 @@ Az üzletági (LOB) alkalmazásokhoz hasonlóan Win32-alkalmazást is hozzáadha
             
                 ![Képernyőkép az észlelési szabály paneljéről – van beállításkulcs](./media/apps-win32-app-05.png)    
             
-            2.  A beállításazonosító meglétének ellenőrzése (**az előzetes verzióban nem érhető el**).
+            2.  Ellenőrizze, hogy létezik-e beállításazonosítót.
         
                 ![Képernyőkép az észlelési szabály paneljéről – van beállításazonosító](./media/apps-win32-app-06.png)    
         

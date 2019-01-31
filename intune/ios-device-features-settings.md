@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 01/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
-ms.openlocfilehash: a5a756cd3fd8b78893cee6a3c4629e49d6ac7c87
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: 8656e480c292fc9ed1212f9d2c180b791cb4f94c
+ms.sourcegitcommit: ce76541ceb783eb2e242032ef8579041d2f61532
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55072541"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431490"
 ---
 # <a name="ios-device-feature-settings-in-intune"></a>iOS-es eszközfunkció-beállítások az Intune-ban
 
@@ -42,7 +42,7 @@ Ez a funkció lehetővé teszi, hogy iOS felhasználók számára ismert AirPrin
     - **Port**: Adja meg az AirPrint-célhely figyelőportja. Ha üresen hagyja ezt a tulajdonságot, az AirPrint az alapértelmezett portot használ. Az iOS 11.0-s vagy újabb érhető el.
     - **TLS**: Válasszon **engedélyezése** AirPrint-kapcsolatok a Transport Layer Security (TLS) biztonságos. Az iOS 11.0-s vagy újabb érhető el.
 
-2. Válassza a **Hozzáadás** lehetőséget. Az AirPrint-kiszolgáló hozzáadásakor a listához. Számos AirPrint-kiszolgálókat is hozzáadhat.
+2. Válassza a **Hozzáadás** elemet. Az AirPrint-kiszolgáló hozzáadásakor a listához. Számos AirPrint-kiszolgálókat is hozzáadhat.
 
     Emellett **importálás** ezeket az információkat egy vesszővel tagolt fájlt (.csv). Miután létrehozta a listában, akkor is **exportálása** az AirPrint-kiszolgálók listáját.
 
@@ -77,7 +77,7 @@ Használja a **Dock** beállítások legfeljebb 6 elemet vagy mappát ad hozzá 
       - **Alkalmazásnév**: Adja meg az alkalmazás nevét. Ezt a nevet használja, hogy az Azure Portalon. Ez *nem* jelenik meg az iOS-eszközön.
       - **Alkalmazásköteg-azonosító**: Adja meg az alkalmazás Csomagazonosítóját. Lásd: [Alkalmazásköteg-azonosítókat beépített iOS-alkalmazások](#bundle-ids-for-built-in-ios-apps) (a jelen cikkben) vonatkozó példákat.
 
-      Válassza ki **OK** a módosítások mentéséhez.
+      A módosítások mentéséhez válassza az **OK** gombot.
 
     - **Mappa hozzáadása a**: Válassza ezt a beállítást, a mappa hozzáadása a képernyőn elhelyezkedő dockhoz. 
 
@@ -91,7 +91,7 @@ Használja a **Dock** beállítások legfeljebb 6 elemet vagy mappát ad hozzá 
           - **Alkalmazásköteg-azonosító**: Adja meg az alkalmazás Csomagazonosítóját. Lásd: [Alkalmazásköteg-azonosítókat beépített iOS-alkalmazások](#bundle-ids-for-built-in-ios-apps) (a jelen cikkben) vonatkozó példákat.
 
       3. Válassza a **Hozzáadás** lehetőséget. Akár is hozzáadhat **20** dock oldalak az eszközhöz.
-      4. Válassza ki **OK** a módosítások mentéséhez.
+      4. A módosítások mentéséhez válassza az **OK** gombot.
 
 #### <a name="example"></a>Példa
 
@@ -113,7 +113,7 @@ Adja hozzá a kezdőképernyőn látható kívánt lapokat és az egyes lapokon 
 1. A **beállítások**válassza **kezdőképernyő-elrendezés (csak felügyelt)** > **Oldalak** > **Hozzáadás**. Akár is hozzáadhat **40** oldalak az eszközön.
 2. Adjon meg egy **lap neve**. Ezt a nevet használja, hogy az Azure Portalon, és *nem* jelenik meg az iOS-eszközön. 
 
-    Válassza a **Hozzáadás** lehetőséget. Akár is hozzáadhat **60** elemek (alkalmazások és mappa együttes) az eszközön.
+    Válassza a **Hozzáadás** elemet. Akár is hozzáadhat **60** elemek (alkalmazások és mappa együttes) az eszközön.
 
 3. A **típus**, felvehet egy **alkalmazás** vagy egy **mappa**.
 
@@ -122,7 +122,7 @@ Adja hozzá a kezdőképernyőn látható kívánt lapokat és az egyes lapokon 
       - **Alkalmazásnév**: Adja meg az alkalmazás nevét. Ezt a nevet használja, hogy az Azure Portalon. Ez *nem* jelenik meg az iOS-eszközön.
       - **Alkalmazásköteg-azonosító**: Adja meg az alkalmazás Csomagazonosítóját. Lásd: [Alkalmazásköteg-azonosítókat beépített iOS-alkalmazások](#bundle-ids-for-built-in-ios-apps) (a jelen cikkben) vonatkozó példákat.
 
-      Válassza ki **OK** a módosítások mentéséhez.
+      A módosítások mentéséhez válassza az **OK** gombot.
 
     - **Mappa hozzáadása a**: Válassza ezt a beállítást, a mappa hozzáadása a képernyőn elhelyezkedő dockhoz. 
 
@@ -136,7 +136,7 @@ Adja hozzá a kezdőképernyőn látható kívánt lapokat és az egyes lapokon 
           - **Alkalmazásköteg-azonosító**: Adja meg az alkalmazás Csomagazonosítóját. Lásd: [Alkalmazásköteg-azonosítókat beépített iOS-alkalmazások](#bundle-ids-for-built-in-ios-apps) (a jelen cikkben) vonatkozó példákat.
 
       3. Válassza a **Hozzáadás** lehetőséget.
-      4. Válassza ki **OK** a módosítások mentéséhez.
+      4. A módosítások mentéséhez válassza az **OK** gombot.
 
 #### <a name="example"></a>Példa
 
@@ -171,22 +171,29 @@ Válassza ki az iOS-eszközök értesítések küldése hogyan telepített alkal
        - **Jelvény az alkalmazásikonon**: Válassza ki **engedélyezése** egy jelvény hozzá az alkalmazás ikonjára. A jelvény azt jelenti, hogy az alkalmazás értesítést küld.
        - **A hangok**: Válassza ki **engedélyezése** , ha értesítés érkezik.
 
-3. Válassza ki **OK** a módosítások mentéséhez. Folytassa a kívánt alkalmazásokat. Amikor végzett, válassza ki a **OK**.
+3. A módosítások mentéséhez válassza az **OK** gombot. Folytassa a kívánt alkalmazásokat. Amikor végzett, válassza ki a **OK**.
 
 ## <a name="lock-screen-message-settings"></a>Zárolási képernyőjén üzenetek beállításai
 
 Ezek a beállítások használatával egy egyéni üzenetet vagy szöveg megjelenítése a bejelentkezési ablakban és a zárolási képernyőn. Például megadhat egy "Ha megtalálja, térjen vissza..." üzenetet és eszközcímkeadatokat. 
 
-Ezek a beállítások az iOS 9.3-at vagy újabb verziót futtató felügyelt eszközökön vannak támogatva.
+Ez a funkció támogatja a rendszert futtató felügyelt eszközök:
 
-1. A **beállítások**válassza **megosztott eszköz konfigurációja (csak felügyelt)**.
+- iOS 9.3 és újabb verziók
+
+1. A **beállítások**válassza **(csak felügyelt) üzenet a zárolási képernyőn**.
 2. Adja meg a következő beállításokat:
 
-    - **Eszközcímke-információ**: Adja meg az eszköz az eszközcímke adatait. Például írja be a következőt: `Owned by Contoso Corp`. 
+    - **Eszközcímke-információ**: Adja meg az eszköz az eszközcímke adatait. Például írja be a következőt: `Owned by Contoso Corp` vagy `Serial Number: {{serialnumber}}`. 
 
       A beírt szöveg jelenik meg a bejelentkezési ablakban és a zárolási képernyő, az eszközön.
 
-    - **Lábjegyzet a zárolási képernyőn**: Ha az eszköz elveszett vagy ellopták, adjon meg egy, melyek segíthetnek az eszközt. Például: `If found, call Contoso at ...`.
+    - **Lábjegyzet a zárolási képernyőn**: Ha az eszköz elveszett vagy ellopták, adjon meg egy, melyek segíthetnek az eszközt. Megadhatja a kívánt szöveget. Például: `If found, call Contoso at ...`.
+
+    Eszközök tokenjeit is használható eszközre vonatkozó információk hozzáadása a mezőkhöz. Írja be például a sorozatszám megjeleníthető `Serial Number: {{serialnumber}}`. A zárolási képernyőn a szöveg látható hasonló `Serial Number 123456789ABC`. Változók megadásakor ügyeljen arra, hogy kapcsos zárójeleket `{{ }}`. [Alkalmazás-konfigurációs jogkivonatokról](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) használható változók listáját tartalmazza. Is `deviceName` vagy bármely más eszközspecifikus érték.
+
+    > [!NOTE]
+    > Változók nem érvényesíti a felhasználói felületen. Ennek eredményeképpen jelenhet meg helytelen adatbevitel a mentett profilokat. Ha például meg `{{Devicename}}` helyett `{{devicename}}`, akkor a szövegkonstanst látható az eszköz egyedi neve helyett.
 
 3. Amikor végzett, válassza ki a **OK** a módosítások mentéséhez.
 
@@ -260,11 +267,11 @@ Ezek a beállítások hozzáféréseket a böngésző URL-CÍMÉT az iOS-eszköz
         > [!NOTE]
         > Az URL-címeket, akkor adja meg az Apple átengedni evauluated nem kívánt URL-címek. Az URL-címek nem engedélyezett webhelyek listája. Hozzon létre egy engedélyezett webhelyek listájában, állítsa be a **szűrőtípus** való **csak meghatározott webhelyek**.
 
-        Válassza ki **OK** a módosítások mentéséhez.
+        A módosítások mentéséhez válassza az **OK** gombot.
 
       - **Blokkolt URL-címek**: **Adjon hozzá** az URL-címeket meg szeretné szüntetni történő megnyitását, az Apple webszűrőjének beállításaitól függetlenül.
 
-        Válassza ki **OK** a módosítások mentéséhez.
+        A módosítások mentéséhez válassza az **OK** gombot.
 
     - **Csak meghatározott webhelyek** (az a Safari webböngésző csak): Ezen URL-ek a Safari könyvjelzői közé kerülnek. A felhasználó **csak** ezeket a webhelyeket látogathatják meg más webhelyek nem lehet megnyitni. Akkor célszerű ezt a lehetőséget választani, ha a felhasználók által elérhető URL-ek listája pontosan ismert.
 
@@ -274,11 +281,13 @@ Ezek a beállítások hozzáféréseket a böngésző URL-CÍMÉT az iOS-eszköz
 
       Ha nem ad meg semmilyen URL, akkor a végfelhasználók az alábbiakat kivéve webhelyekhez férnek hozzá `microsoft.com`, `microsoft.net`, és `apple.com`. Az URL-címek az Intune által automatikusan engedélyezve van.
 
-      Válassza ki **OK** a módosítások mentéséhez.
+      A módosítások mentéséhez válassza az **OK** gombot.
 
 ## <a name="wallpaper-settings"></a>Háttérkép beállításai
 
 Adja hozzá a felügyelt iOS-eszközök egyéni .png, .jpg és .jpeg kép. Például használja a vállalati embléma a zárolási képernyőn.
+
+Szokatlan viselkedés tapasztalható, amikor nincs kép profil hozzá van rendelve eszközökhöz egy meglévő képpel. Például hozzon létre egy lemezkép-profilhoz. Ez a profil hozzá van rendelve eszközökhöz, amelyeken már van egy képet. Ebben a forgatókönyvben a lemezképet, az eszköz alapértelmezett változhat, vagy az eredeti rendszerkép felfüggesztheti az eszközön. Ez a viselkedés szabályozza, amely korlátozza az Apple MDM-platformmal.
 
 - **Háttérkép megjelenítési helyét**: Válasszon egy helyet, a kép megjelenítéséhez az eszközön. A választható lehetőségek:
   - **Nincs konfigurálva**: Egyéni rendszerkép nem hozzáad az eszközhöz. Az eszköz az operációs rendszer alapértelmezett használja.

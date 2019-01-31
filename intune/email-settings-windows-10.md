@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/20/2018
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,34 +13,34 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 849e3feed23b46585f9b737cb0ee91ecdf47ecae
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: bf9581fe81aea3d2671da0adb2d37bbc203875c8
+ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186137"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55303531"
 ---
 # <a name="email-profile-settings-for-devices-running-windows-10---intune"></a>E-mail-profilbeállítások Windows 10-et futtató eszközökön – Intune
 
-A Windows 10-et futtató eszközök konfigurálásához használhatja az e-mail-profilbeállításokat.
+Az e-mail-profilbeállítások segítségével a Mail alkalmazás konfigurálása a Windows 10 rendszerű eszközökön.
 
-- **E-mail-kiszolgáló**: Itt adja meg az Exchange-kiszolgáló állomásnevét.
-- **Fiók neve**: Adja meg az e-mail-fiók megjelenítendő nevét. Ez a név jelenik meg az eszközön a felhasználók számára.
-- **Felhasználói név attribútum az AAD-ből**: Ez a név az Intune által az Azure Active Directoryből (AAD) lekért attribútum. A profil által használt felhasználónevet az Intune dinamikusan generálja. A választható lehetőségek:
-  - **Egyszerű felhasználónév**: A nevet, például `user1` vagy `user1@contoso.com` kéri le.
-  - **Elsődleges SMTP-cím**: E-mail-cím formátumban kéri le a nevet, például `user1@contoso.com`
-  - **SAM-fiók neve**: Tartomány szükséges hozzá, például `domain\user1`.
+- **Levelezési kiszolgáló**: Adja meg az Exchange-kiszolgáló állomásneve.
+- **Fiók neve**: Adja meg az e-mail fiók megjelenítendő nevét. Ez a név jelenik meg az eszközön a felhasználók számára.
+- **Felhasználónév attribútum az aad-ből**: Ez a név az Intune-ban lekérdezi az Azure Active Directory (AAD) attribútum. A profil által használt felhasználónevet az Intune dinamikusan generálja. A választható lehetőségek:
+  - **Egyszerű felhasználónév**: A nevet, például lekérdezi `user1` vagy `user1@contoso.com`
+  - **Elsődleges SMTP-cím**: Nevét olvassa be az e-mail cím formátumú, például `user1@contoso.com`
+  - **sAM fióknév**: A tartományhoz, mint például szükséges `domain\user1`.
 
     Ezt is adja meg:  
-    - **Felhasználói tartománynév forrása**: Válassza az **AAD** (Azure Active Directory) vagy az **Egyéni** lehetőséget.
+    - **Fióktartománynév forrása**: Válasszon **AAD** (az Azure Active Directory) vagy **egyéni**.
 
       Ha azt választja, hogy az attribútumokat az **AAD-ből** kéri le, adja meg ezt is:
-      - **Felhasználói tartománynév attribútuma az AAD-ból**: Választhatja a felhasználóhoz tartozó **Teljes tartománynév** vagy a **NetBIOS-név** attribútum lehetőséget
+      - **Attribútum az aad-ből**: Kérhet a **teljes tartománynév** vagy a **NetBIOS-név** a felhasználói attribútum
 
       Ha az **Egyéni** attribútumot választja, adja meg a következőt:
-      - **Használandó egyéni tartománynév**: Adja meg az Intune által a tartománynévhez használt értéket, például `contoso.com` vagy `contoso`
+      - **Egyéni tartománynév használata**: Adjon meg egy értéket, amely a tartománynév például használja az Intune `contoso.com` vagy `contoso`
 
-- **E-mail-cím attribútuma az AAD-ből**: Válassza ki, hogyan jöjjön létre a felhasználói e-mail-cím. Ha e-mail-címként a teljes egyszerű felhasználónevet szeretné használni, válassza az **Egyszerű felhasználónév** (`user1@contoso.com` vagy `user1`) lehetőséget, vagy az **Elsődleges SMTP-cím** (`user1@contoso.com`) lehetőséget, ha az elsődleges SMTP-címet szeretné használni az Exchange-be való bejelentkezéshez.
+- **E-mail-cím attribútuma az aad-ből**: Válassza ki, hogyan generáljon a rendszer az e-mail címet a felhasználókhoz. Ha e-mail-címként a teljes egyszerű felhasználónevet szeretné használni, válassza az **Egyszerű felhasználónév** (`user1@contoso.com` vagy `user1`) lehetőséget, vagy az **Elsődleges SMTP-cím** (`user1@contoso.com`) lehetőséget, ha az elsődleges SMTP-címet szeretné használni az Exchange-be való bejelentkezéshez.
 
 ## <a name="security-settings"></a>Biztonsági beállítások
 
@@ -48,12 +48,12 @@ A Windows 10-et futtató eszközök konfigurálásához használhatja az e-mail-
 
 ## <a name="synchronization-settings"></a>Szinkronizálási beállítások
 
-- **Szinkronizálandó e-mailek mennyisége**: Válassza ki, hogy hány napra visszamenőleg szeretné szinkronizálni az e-maileket. Vagy válassza a **Korlátlan** lehetőséget az összes elérhető e-mail szinkronizálása.
-- **Szinkronizálási ütemezés**: Válassza ki az ütemezést, mely alapján az eszközök az Exchange-kiszolgálóból szinkronizálják az adatokat Választhatja **Az üzenetek érkezésekor** lehetőséget is. Ez esetben a rendszer azonnal szinkronizálja az adatokat, amint megérkeznek, a **Manuális** beállítás esetén pedig a felhasználónak kell kezdeményeznie a szinkronizálást.
+- **Szinkronizálandó e-mailek mennyisége**: Válassza ki a szinkronizálni kívánt e-mailben napok száma. Vagy válassza a **Korlátlan** lehetőséget az összes elérhető e-mail szinkronizálása.
+- **Szinkronizálás ütemezése**: Válassza ki az ütemezést, szinkronizálhatja az Exchange-kiszolgálón is megadhat az adatait eszközök **üzenetek érkezésekor**, szinkronizálja az adatokat, amint megérkeznek, vagy **manuális**, ahol a felhasználó az eszköz kell kezdeményeznie a szinkronizálást.
 
 ## <a name="content-sync-settings"></a>Tartalomszinkronizálási beállítások
 
-- **Szinkronizálandó tartalomtípus**: Válassza ki az eszközökre szinkronizálni kívánt tartalomtípusokat:
+- **Szinkronizálandó tartalomtípus**: Válassza ki az, hogy az eszközökre szinkronizálni kívánt tartalomtípusokat:
   - **Névjegyek**
   - **Naptár**
   - **Feladatok**

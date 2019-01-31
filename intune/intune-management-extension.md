@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 063a5cbbe18efc5c406c9dc7f2fa40d614b2e48a
-ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
+ms.openlocfilehash: 444fd63f8c582d35891dfa5aedb9eadd6626e541
+ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52860962"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55303395"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>PowerShell-parancsfájlok kezelése az Intune-ban Windows 10-es eszközök esetén
 
@@ -38,7 +38,7 @@ Az Intune felügyeleti bővítmény kiegészíti a beépített Windows 10 MDM-fu
 
 Az Intune felügyeleti bővítmény előfeltételei a következők:
 
-- Eszközöknek csatlakozniuk kell az Azure AD- és [automatikus regisztrált](windows-enroll.md#enable-windows-10-automatic-enrollment). Az Intune felügyeleti bővítmény támogatja az Azure AD-hez, a hibrid tartományhoz csatlakoztatott és comanaged regisztrált Windows-eszközökön. GPO-ban regisztrált eszközök nem támogatottak.
+- Eszközök csatlakoztatva kell lennie, vagy az Azure-bA regisztrált AD és az Azure ad-ben van beállítva [automatikus regisztráció az Intune-ban](windows-enroll.md#enable-windows-10-automatic-enrollment). Az Intune felügyeleti bővítmény támogatja az Azure AD-hez, a hibrid tartományhoz csatlakoztatott és comanaged regisztrált Windows-eszközökön.
 - Eszközök a Windows 10-es verzióját kell futtatnia, 1607-es vagy újabb.
 - Az Intune felügyeleti bővítmény-ügynök telepítve van, amikor egy PowerShell-parancsprogram, vagy egy Win32-alkalmazás egy felhasználó vagy eszköz biztonsági csoport üzemel.
 
@@ -62,9 +62,9 @@ Az Intune felügyeleti bővítmény előfeltételei a következők:
 3. Válassza ki egy vagy több olyan csoportot, amely tartalmazza a felhasználókat, akiknek az eszközei kap a parancsfájlt. Válassza a **Kiválasztás** lehetőséget a szabályzat kijelölt csoportokhoz rendeléséhez.
 
 > [!NOTE]
-> - A PowerShell-szkriptek nem alkalmazhatók számítógép-csoportokra.
 > - Jelentkezzen be az eszköz PowerShell-szkriptek végrehajtása a végfelhasználók számára nem szükséges.
 > - Az Intune-ban a PowerShell-parancsfájlok megcélozhatóvá válnak az Azure AD-eszközök biztonsági csoportjainak.
+> - Az Intune-ban a PowerShell-parancsfájlok megcélozhatóvá válnak az Azure AD-felhasználó biztonsági csoportokba.
 
 Az Intune felügyeleti bővítmény-ügyfelet az Intune-nal óránként egyszer ellenőrzi. Miután hozzárendelte a szabályzatot az Azure AD-csoportokhoz, elindul a PowerShell-parancsfájl, és elkészül a futtatási eredmények jelentése.
 
@@ -91,7 +91,7 @@ A **PowerShell-parancsfájlok** panelen kattintson a jobb gombbal a parancsfájl
 
 A PowerShell-parancsfájlok minden bejelentkezéskor nem futnak. Csak után újraindul, futtatása vagy, ha a **a Microsoft Intune felügyeleti bővítmény** szolgáltatás újraindításakor. Az Intune felügyeleti bővítmény ügyfélellenőrzés óránként egyszer bármely módosítása a parancsfájl vagy a szabályzat az Intune-ban.
 
-#### <a name="issue-intune-management-extension-doesnt-download"></a>Probléma: Az Intune felügyeleti bővítmény nem sikerül letölteni
+#### <a name="issue-intune-management-extension-doesnt-download"></a>A probléma leírása: Az Intune felügyeleti bővítmény nem sikerül letölteni.
 
 **A lehetséges megoldások**:
 
@@ -105,7 +105,7 @@ A PowerShell-parancsfájlok minden bejelentkezéskor nem futnak. Csak után újr
 
     [A Windows 10 automatikus regisztrációjának engedélyezése](windows-enroll.md#enable-windows-10-automatic-enrollment) szükséges lépéseket.
 
-#### <a name="issue-the-powershell-scripts-do-not-run"></a>Probléma: A PowerShell parancsfájlok nem működnek.
+#### <a name="issue-the-powershell-scripts-do-not-run"></a>A probléma leírása: A PowerShell-parancsfájlok nem működnek.
 
 **A lehetséges megoldások**:
 
@@ -113,7 +113,7 @@ A PowerShell-parancsfájlok minden bejelentkezéskor nem futnak. Csak után újr
 - Parancsfájlok a Surface hubokon nem futnak.
 - Ellenőrizze a naplókat `\ProgramData\Microsoft\IntuneManagementExtension\Logs` hibaüzeneteket.
 - Lehetséges engedélyekkel kapcsolatos problémák, lehet, hogy a PowerShell-parancsfájl tulajdonságai vannak beállítva `Run this script using the logged on credentials`. Emellett ellenőrizze, hogy a bejelentkezett felhasználó rendelkezik-e a megfelelő engedélyekkel a parancsfájl futtatásához.
-- Parancsfájl-kezelési probléma azonosítása, minta parancsfájl futtatása. Hozzon létre például a `C:\Scripts` könyvtárat, és adjon mindenkinek teljes hozzáférése. Futtassa a következő szkriptet:
+- Parancsfájl-kezelési probléma azonosítása, minta parancsfájl futtatása. Hozzon létre például a `C:\Scripts` könyvtárat, és adjon mindenkinek teljes hozzáférése. Futtassa a következő parancsfájlt:
 
   ```powershell
   write-output "Script worked" | out-file c:\Scripts\output.txt

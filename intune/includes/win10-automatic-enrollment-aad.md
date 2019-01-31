@@ -28,7 +28,9 @@ Az automatikus regisztrálással a felhasználók Windows 10-es eszközeiket reg
    - **Mind** – Minden felhasználó automatikusan regisztrálhatja Windows 10-es eszközeit
 
       > [!IMPORTANT]
-      > Ha egy csoport tekintetében mind a **MAM felhasználói hatókör**, mind pedig az automatikus MDM-regisztráció (**MDM felhasználói hatókör**) engedélyezve van, akkor csak a MAM lép érvénybe. Az adott csoport felhasználói számára eszköz munkahelyi csatlakozásánál csak a MAM lesz hozzáadva. Az eszközök MDM-regisztrálása nem automatikus.
+      > A BYOD-eszközök esetén a MAM-felhasználói hatókör Ha MAM-felhasználói hatókör és az MDM-felhasználói hatókör (automatikus MDM-regisztráció) engedélyezve van az összes felhasználó (vagy a felhasználók ugyanazok a csoportok) élvez elsőbbséget. Az eszköz használandó Windows Information Protection (WIP) házirendek (Ha úgy állította be őket) ahelyett, hogy az MDM-regisztrálása folyamatban van.
+      >
+      > Vállalati eszközök esetén az MDM-felhasználói hatókör két hatókörnek engedélyezésével élvez elsőbbséget. Az eszközök MDM-regisztrálása beolvasása.
 
    ![Az Azure Portal képernyőképe](../media/auto-enroll-scope.png)
 

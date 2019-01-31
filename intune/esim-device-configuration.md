@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ba60df2dcec51e1c45e6a84a8fc9831937f70aef
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 25b6ca031b0c31f3ef517c9d2886853ec41c31da
+ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190063"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55303514"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>eSIM mobilhálózati profilok konfigurálása az Intune-ban – Nyilvános előzetes verzió
 
@@ -35,7 +35,7 @@ A mobilszolgáltató által megadott egyszeri aktiváló kódokat importálhatja
 
 Ahhoz, hogy az eSIM-kártyát az Intune használatával telepítse az eszközön, a következőkre lesz szüksége:
 
-- **eSIM-kompatibilis eszköz**, mint például a Surface LTE: Ellenőrizze, hogy [az eszköz támogatja-e az eSIM-kártyát](https://support.microsoft.com/help/4020763/windows-10-use-esim-for-cellular-data). Vagy tekintse meg [néhány ismert eSIM-kompatibilis eszköz](#esim-capable-devices) listáját (a jelen cikkben).
+- **esim-kártya használatára képes eszközök**, például a Surface LTE: Lásd: [Ha az eszköz támogatja az esim-kártya](https://support.microsoft.com/help/4020763/windows-10-use-esim-for-cellular-data). Vagy tekintse meg [néhány ismert eSIM-kompatibilis eszköz](#esim-capable-devices) listáját (a jelen cikkben).
 - **Windows 10 őszi alkotói frissítéssel rendelkező számítógép** (1709-es vagy újabb), amely regisztrálva van az Intune-on, és MDM-felügyelet alatt áll
 - **Aktiváló kódok** a mobilszolgáltatótól Ezeket az egyszer használható aktiváló kódokat fel kell venni az Intune-ban, majd telepíteni kell az eSIM-kompatibilis eszközön. Az eSIM-kártya aktiváló kódjait a mobilszolgáltatójánál szerezheti be.
 
@@ -65,8 +65,11 @@ A következő eszközök eSIM-kompatibilitását már bejelentették, vagy megta
 - Lenovo T480
 - Samsung Galaxy Book
 - Surface Pro LTE
+- HP Spectre Folio 13
+- Lenovo Yoga C630
+- Samsung Galaxy Book 2
 
-## <a name="step-1-add-cellular-activation-codes"></a>1. lépés: Mobilhálózati aktiváló kód felvétele
+## <a name="step-1-add-cellular-activation-codes"></a>Első lépés: Mobilhálózati aktiváló kód hozzáadása
 
 A mobilhálózati aktiváló kódokat a mobilszolgáltató adja meg egy vesszővel tagolt (csv) fájlban. Miután megkapta a fájlt, vegye fel az Intune-ban a következő lépésekben:
 
@@ -100,7 +103,7 @@ Az aktiváló kódokat tartalmazó CSV-fájl kezelése során Önnek vagy a rend
 
     ![A mobilhálózati előfizetés-készlet neve azonos az aktiváló kód csv-mintafájljának nevével](./media/esim-device-configuration/subscription-pool-name-csv-file.png)
 
-## <a name="step-2-create-an-azure-ad-device-group"></a>2. lépés: Azure AD-eszközcsoport létrehozása
+## <a name="step-2-create-an-azure-ad-device-group"></a>Második lépés: Eszköz Azure AD-csoport létrehozása
 
 Hozzon létre egy eszközcsoportot, amely az eSIM-kompatibilis eszközöket tartalmazza. A [Csoportok hozzáadása](groups-add.md) című cikk felsorolja ezeket a lépéseket.
 
@@ -108,7 +111,7 @@ Hozzon létre egy eszközcsoportot, amely az eSIM-kompatibilis eszközöket tart
 > - Csak eszközöket célozhat meg, személyeket nem.
 > - Javasolt egy eSIM-kompatibilis eszközöket tartalmazó statikus Azure AD eszközcsoport létrehozása. A csoport használata biztosítja, hogy csak eSIM-eszközöket céloz meg.
 
-## <a name="step-3-assign-esim-activation-codes-to-devices"></a>3. lépés: Az eSIM-kártya aktiváló kódjainak hozzárendelése az eszközökhöz
+## <a name="step-3-assign-esim-activation-codes-to-devices"></a>Harmadik lépés: Esim-kártya az aktiváló kód hozzárendelése az eszközökhöz
 
 Rendelje hozzá a profilt az eSIM-eszközöket tartalmazó Azure AD-csoporthoz.
 
@@ -124,7 +127,7 @@ Rendelje hozzá a profilt az eSIM-eszközöket tartalmazó Azure AD-csoporthoz.
 
 Az aktiváló kódok csak egyszer használhatók fel. Miután az Intune telepített egy aktiváló kódot az eszközön, az eSIM-modul kapcsolatba lép a mobilszolgáltatóval a mobilhálózati profil letöltéséhez. A kapcsolódással véglegessé válik az eszköz regisztrálása a mobilszolgáltató hálózatába.
 
-## <a name="step-4-monitor-deployment"></a>4. lépés: A központi telepítés figyelése
+## <a name="step-4-monitor-deployment"></a>4. lépés: A figyelő üzembe helyezés
 
 #### <a name="review-the-deployment-status"></a>A központi telepítés állapotának áttekintése
 
@@ -145,10 +148,10 @@ Az eszközprofil létrehozása után az Intune grafikus diagramokat nyújt. Ezek
 
     Az Intune megjeleníti az eszközökhöz rendelt aktiváló kód kiküldésének és telepítésének állapotát.
 
-    - **Az eszköz nincs szinkronizálva**: A megcélzott eszköz nem kapcsolódott az Intune-hoz az eSIM-kártya telepítésére vonatkozó szabályzat létrehozása óta
-    - **Aktiválás függőben**: Átmeneti állapot, amikor az Intune aktívan telepíti az aktiváló kódot az eszközön
-    - **Aktív**: Az aktiváló kód telepítése sikerült
-    - **Az aktiválás sikertelen**: Az aktiváló kód telepítése nem sikerült – lásd a hibaelhárítási útravalót.
+    - **Az eszköz nincs szinkronizálva**: Az eszköz nem lépett Intune kapcsolatba, a központi telepítésre vonatkozó házirendet esim-kártya létrehozása óta
+    - **Függőben lévő aktiválási**: Egy átmeneti állapot, ha az Intune aktívan telepíti az aktiváló kódot az eszközön
+    - **Aktív**: Aktiváló kódot a telepítés sikerült
+    - **Az aktiválás sikertelen**: Aktiválási kód telepítése nem sikerült – hibaelhárítási útmutató megtekintéséhez.
 
 #### <a name="view-the-detailed-device-status"></a>A részletes eszközállapot megtekintése
 
@@ -157,12 +160,12 @@ Figyelheti és megtekintheti az Eszközállapotban megtekinthető eszközök ré
 1. Válassza ki az **Eszközkonfiguráció** > **eSIM mobilhálózati profilok** > Meglévő előfizetés kiválasztása lehetőséget.
 2. Kattintson az **Eszközállapot** elemre. Az Intune megjeleníti az eszköz további adatait:
 
-  - **Eszköz neve**: A megcélzott eszköz neve
-  - **Felhasználó**: A regisztrált eszköz felhasználója
-  - **ICCID**: A mobilszolgáltató által megadott egyedi kód az eszközön telepített aktiváló kódon belül
-  - **Aktiválási állapot**: Az eszközön található aktiváló kód letöltési és telepítési állapota az Intune-ban
-  - **Mobilhálózat állapota**: A mobilszolgáltató által biztosított állapot. A hibaelhárításhoz vegye fel a kapcsolatot a mobilszolgáltatóval.
-  - **Legutóbbi bejelentkezés**: Az eszköz és az Intune utolsó kapcsolatfelvételének dátuma
+  - **Eszköz neve**: Az eszközre irányuló
+  - **Felhasználói**: A regisztrált eszköz felhasználója
+  - **ICCID**: A mobile által nyújtott egyedi kódot az aktiváló kód telepítve az eszközön belüli működésre
+  - **Aktiválási állapot**: Az aktiváló kód az eszköz Intune-ban letöltésére és telepítésére állapota
+  - **Mobilhálózati állapot**: A mobileszköz operátor által biztosított állapota. A hibaelhárításhoz vegye fel a kapcsolatot a mobilszolgáltatóval.
+  - **Utolsó bejelentkezés**: Az eszköz utolsó Intune-nal közölt dátuma
 
 #### <a name="monitor-esim-profile-details-on-the-actual-device"></a>Az eSIM-profil adatainak figyelése az adott eszközön
 
@@ -190,8 +193,8 @@ Az eSIM-profil akkor is el lesz távolítva, ha az eszközt [kivonják](devices-
 - Figyeljen a csv-fájl megfelelő formázására. Ellenőrizze, hogy a fájl nem tartalmaz duplikált kódokat, több mobilszolgáltatót, vagy többféle díjcsomagot. Ne feledje, hogy minden egyes fájl csak egy mobilszolgáltatóhoz és egy mobilhálózati díjcsomaghoz tartozhat.
 - Hozzon létre egy statikus Azure AD-eszközcsoportot, amely csak a megcélzott eSIM-eszközöket tartalmazza.
 - Ha a központi telepítés állapotában problémát tapasztal, ellenőrizze a következőket:
-  - **Nem megfelelő fájlformátum**: Lásd **1. lépés: Mobilhálózati aktiváló kód hozzáadása** (a jelen cikkben), a megfelelő fájlformátumról.
-  - **A mobilhálózati aktiválás sikertelen, lépjen kapcsolatban a mobilszolgáltatóval**: Lehet, hogy az aktiváló kód nem aktiválható a hálózaton. Vagy sikertelen volt a profil letöltése és a mobilhálózati aktiválás.
+  - **Fájl formátuma nem megfelelő**: Lásd: **1. lépés: Adja hozzá a mobilhálózati aktiválókódot** (a jelen cikkben) való megfelelően formázza a fájlt.
+  - **Mobilhálózati az aktiválás sikertelen, lépjen kapcsolatba mobilszolgáltató**: Az aktiváló kód nem lehet aktiválni a hálózaton belül. Vagy sikertelen volt a profil letöltése és a mobilhálózati aktiválás.
 
 ## <a name="next-steps"></a>További lépések
 [Eszközprofilok konfigurálása](device-profiles.md)

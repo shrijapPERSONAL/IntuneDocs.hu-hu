@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bc31c793722f7073281c82da1fe4389fc214457b
-ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
+ms.openlocfilehash: 9258bf1847e83087404967c0ded50481da3a8dff
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53734272"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290740"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Alkalmazások hozzárendelése csoportokhoz a Microsoft Intune-nal
 
@@ -51,9 +51,9 @@ Az alábbi táblázat az alkalmazások felhasználókhoz és eszközökhöz val�
 >
 > Az alkalmazásfrissítések fogadásához az Intune-ban nem regisztrált eszközök felhasználóinak fel kell keresniük saját céges portáljukat, hogy manuálisan telepítsék az alkalmazásfrissítéseket.
 
-## <a name="to-assign-an-app"></a>Alkalmazás hozzárendelése
+## <a name="assign-an-app"></a>Egy alkalmazás a hozzárendelése
 
-1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
+1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** menüben válassza az **Ügyfélalkalmazások** lehetőséget.
 4. A menü **Kezelés** szakaszában válassza az **Alkalmazások**. elemet.
@@ -62,7 +62,7 @@ Az alábbi táblázat az alkalmazások felhasználókhoz és eszközökhöz val�
 7. Válassza a **Csoport hozzáadása** lehetőséget az alkalmazáshoz kapcsolódó **Csoport hozzáadása** ablaktábla megnyitásához.
 8. Az adott alkalmazáshoz válasszon egy **hozzárendelés-típust**:
    - **Regisztrált eszközök esetében elérhető**: Az alkalmazás hozzárendelése csoportokhoz a felhasználók számára is telepítheti az alkalmazást a céges portál alkalmazásból vagy webhelyről.
-   - **Elérhető regisztrációval és anélkül**: Ez az alkalmazás hozzárendelése csoportokhoz a felhasználók, akiknek az eszközei nincsenek regisztrálva az Intune-ban. A felügyelt Google Play Áruházból származó alkalmazások nem támogatják ezt a lehetőséget. Felhasználóknak hozzá kell rendelni egy Intune-licencet, lásd: [Intune-licencek](licenses.md).
+   - **Elérhető regisztrációval és anélkül**: Ez az alkalmazás hozzárendelése csoportokhoz a felhasználók, akiknek az eszközei nincsenek regisztrálva az Intune-ban. Felhasználóknak hozzá kell rendelni egy Intune-licencet, lásd: [Intune-licencek](licenses.md).
    - **Szükséges**: Az alkalmazás telepítve van a kiválasztott csoportok eszközeire. Előfordulhat, hogy az egyes platformok esetében a felhasználó elfogadja az alkalmazások telepítésének megkezdése előtt a további utasításokat.
    - **Távolítsa el**: Az alkalmazás el lesz távolítva a kijelölt csoportokba eszközök Intune-ban korábban már telepítve van az alkalmazást az eszközön keresztül egy "regisztrált eszközökhöz elérhető" vagy "Kötelező" hozzárendelés a azonos üzemelő példány használatával. A webes hivatkozások telepítése után nem lehet eltávolítani.
 
@@ -122,6 +122,9 @@ Néha előfordul, hogy ugyanazt az alkalmazást eltérő szándékkal rendelik h
 > [!NOTE]
 > Csak áruházból származó felügyelt iOS-alkalmazások esetén, ha ezeket az alkalmazásokat a Microsoft Intune-ban **kötelezőként** rendeli hozzá, akkor a **Kötelező** és az **Elérhető** szándék automatikusan egyaránt fog vonatkozni rájuk.<br><br>
 > A kötelező hozzárendelési szándékkal célzott (nem iOS VPP) iOS Store-alkalmazások az eszköz bejelentkezésekor kikényszerítetten hozzá lesznek rendelve az eszközhöz, és megjelennek a Céges portál alkalmazásban is.
+
+## <a name="android-enterprise-app-we-app-deployment"></a>Android Enterprise-alkalmazás – hogy az alkalmazás üzembe helyezése
+Android-eszközökhöz a egy nem regisztrált alkalmazás alkalmazásvédelmi szabályzat regisztráció nélkül (alkalmazás-TUDJUK) a telepítési forgatókönyvben most segítségével felügyelt Google Play áruházbeli alkalmazások telepítése és az ÜZLETÁGI alkalmazások a felhasználók számára. Pontosabban a végfelhasználók számára biztosíthat már nem igényel a végfelhasználók számára, hogy lazábbá tehető az eszközeik biztonsági irányelvei, tiltják azáltal, hogy telepítések az ismeretlen forrásból származó alkalmazás katalógus és telepítési élményt. Emellett ebben a telepítési forgatókönyvben egy jobb végfelhasználói élményt biztosít. Alkalmazás hozzárendelése lépéseiért lásd: [rendeli az alkalmazást](apps-deploy.md#assign-an-app).
 
 ## <a name="next-steps"></a>További lépések
 

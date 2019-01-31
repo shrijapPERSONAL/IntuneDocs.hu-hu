@@ -2,8 +2,8 @@
 title: Privát és nyilvános kulcsú tanúsítványokat használni a Microsoft Intune – Azure |} Micrososft Docs
 description: Adja hozzá, vagy nyilvános kulcs titkosítási szabványok (PKCS) tanúsítványok létrehozása a Microsoft Intune, beleértve a gyökértanúsítvány exportálása, tanúsítványsablon konfigurálása, letöltése és telepítése a Microsoft Intune tanúsítvány összekötő (NDES), hozzon létre egy eszközkonfigurációs profil, a PKCS-tanúsítványprofil létrehozása az Azure és a hitelesítésszolgáltató.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 12/10/2018
 ms.topic: article
@@ -11,16 +11,16 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 6a617f56e688d8dd6e9bca8e964e075865f05be1
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: f825e66a4668a007dc364e4c42b18ca7c2736016
+ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203620"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55303487"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>PKCS-tanúsítványok konfigurálása és használata az Intune-nal
 
@@ -82,7 +82,7 @@ VPN-, Wi-Fi- vagy egyéb erőforrások hitelesítéséhez, a legfelső szintű v
 3. Keresse meg a **Felhasználó** tanúsítványsablont, kattintson rá a jobb gombbal, majd válassza a **Sablon megkettőzése** lehetőséget. Ekkor megnyílik az **Új sablon tulajdonságai** terület.
 
     > [!NOTE]
-    > S/MIME e-mail-aláírás és titkosítás esetén sok rendszergazda külön tanúsítványt használ az aláíráshoz és a titkosításhoz. Ha a Microsoft Active Directory Tanúsítványszolgáltatást használja, akkor használhatja az **Exchange Signature Only** (csak Exchange-aláírás) sablont S/MIME e-mail-aláírási tanúsítványokhoz, és az **Exchange User** (Exchange felhasználó) sablont S/MIME titkosítási tanúsítványokhoz.  Külső hitelesítésszolgáltató igénybe vétele esetén ajánlott áttekinteni a tőlük kapott útmutatót az aláírási és titkosítási sablonok beállításához.
+    > S/MIME e-mail-aláírás és titkosítás esetén sok rendszergazda külön tanúsítványt használ az aláíráshoz és a titkosításhoz. Ha a Microsoft Active Directory Tanúsítványszolgáltatást használja, akkor használhatja az **Exchange Signature Only** (csak Exchange-aláírás) sablont S/MIME e-mail-aláírási tanúsítványokhoz, és az **Exchange User** (Exchange felhasználó) sablont S/MIME titkosítási tanúsítványokhoz.  Ha 3. fél hitelesítésszolgáltatót használ, tekintse át az aláírás és titkosítás sablonok útmutatást javasolt.
 
 4. A **Kompatibilitás** lapon:
 
@@ -104,7 +104,7 @@ VPN-, Wi-Fi- vagy egyéb erőforrások hitelesítéséhez, a legfelső szintű v
 
 10. A **Biztonság** lapon vegye fel annak a kiszolgálónak a fiókját, amelyen telepíti a Microsoft Intune Tanúsítvány-összekötőt. Adja meg a fiók számára az **Olvasás** és **Beléptetés** engedélyeket.
 11. A tanúsítvány mentéséhez válassza ki az **Alkalmaz** > **OK** elemet. Zárja be a **Tanúsítvány-sablonok konzolt**.
-12. A **Hitelesítésszolgáltató** konzolon kattintson a jobb gombbal a **Tanúsítványsablonok** > **Új** > **Kiállítandó tanúsítványsablon** elemre. Válassza ki az iménti lépésekben létrehozott sablont. Kattintson az **OK** gombra.
+12. A **Hitelesítésszolgáltató** konzolon kattintson a jobb gombbal a **Tanúsítványsablonok** > **Új** > **Kiállítandó tanúsítványsablon** elemre. Válassza ki az iménti lépésekben létrehozott sablont. Válassza az **OK** gombot.
 13. A regisztrált eszközökön és a felhasználói tanúsítványok kezelése a kiszolgálón kövesse az alábbi lépéseket:
 
     1. Kattintson a jobb gombbal a hitelesítésszolgáltatóra, majd kattintson a **Tulajdonságok** elemre.
@@ -136,6 +136,7 @@ VPN-, Wi-Fi- vagy egyéb erőforrások hitelesítéséhez, a legfelső szintű v
 6. Javasoljuk, hogy a **Speciális** lapon hagyja kijelölve az **E számítógép SYSTEM fiókjának a használata (alapértelmezett)** beállítást.
 7. **Alkalmaz** > **Bezárás**
 8. Lépjen vissza az Azure Portalra (**Intune** > **Eszközkonfiguráció** > **Hitelesítésszolgáltató**). Pár pillanat után egy zöld pipa jelenik meg, és a **kapcsolat állapota** van **aktív**. Az összekötő kiszolgáló mostantól kapcsolatba tud lépni az Intune-nal.
+9. Ha olyan webproxyt hálózati környezetében, szükség lehet további állítani, hogy az összekötő működéséhez. További információkért lásd: [együttműködnek a meglévő helyszíni proxykiszolgálók](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers) az Azure Active Directory dokumentációjában.
 
 > [!NOTE]
 > A Microsoft Intune Tanúsítvány-összekötő tartalmazza a TLS 1.2 támogatását. Ha tehát a kiszolgáló, amelyen a Microsoft Intune Tanúsítvány-összekötő telepítve van, támogatja a TLS 1.2-t, akkor a TLS 1.2 lesz használva. Amennyiben a kiszolgáló nem támogatja a TLS 1.2 verziót, a TLS 1.1 lesz használva. Az eszközök és a kiszolgáló közötti hitelesítéshez jelenleg a TLS 1.1 van használatban.

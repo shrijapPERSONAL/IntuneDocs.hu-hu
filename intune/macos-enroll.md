@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7a54a72afb6052ed11566c2d2ada596ebde2159b
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 5ffd2dca10db3df6abdcd5fa9603f1f58a37a078
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112408"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290536"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Regisztráció beállítása macOS-eszközökhöz az Intune-ban
 
@@ -47,7 +47,7 @@ macOS-eszközök regisztrációjának indítása előtt végezze el az alábbiak
 Azt is engedélyezheti, hogy a felhasználók saját személyes eszközeiket regisztrálják az Intune-felügyelethez. Ez a „saját eszköz használata” vagy BYOD (Bring Your Own Device) néven ismert. Miután teljesítette az előfeltételeket, és kiosztotta a felhasználói licenceket, a felhasználók a következőképp regisztrálhatják az eszközeiket:
 - a [Céges portál](https://portal.manage.microsoft.com) webhelyre lépve, vagy
 - a Céges portál alkalmazás letöltésével.
-Hivatkozást is küldhet nekik az online regisztrációhoz: [macOS-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)
+Meg is küldhet nekik egy hivatkozást az online regisztrációhoz: [Az Intune-ban macOS-eszköz regisztrálása](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
 
 Más végfelhasználói feladatokkal kapcsolatos további információkért tanulmányozza a következő cikkeket:
 
@@ -56,8 +56,8 @@ Más végfelhasználói feladatokkal kapcsolatos további információkért tanu
 
 ## <a name="company-owned-macos-devices"></a>Vállalati tulajdonban lévő macOS-eszközök
 A felhasználóknak eszközöket vásárló szervezetek számára az Intune a következő módszereket támogatja a vállalati tulajdonban lévő macOS-eszközök regisztrálásához:
-- [Az Apple Device Enrollment Program (DEP)](device-enrollment-program-enroll-macos.md): A szervezetek macOS-eszközöket vásárolhatnak az Apple Device Enrollment Programján (DEP) keresztül. A DEP vezeték nélkül képes telepíteni egy regisztrációs profilt, amely felügyelet alá helyezi az eszközöket.
-- [Eszközregisztráció-kezelő (DEM)](device-enrollment-manager-enroll.md): Egy DEM-fiókba akár 1000 eszköz is regisztrálható.
+- [Az Apple Készülékregisztrációs Program (DEP)](device-enrollment-program-enroll-macos.md): MacOS-eszközök az Apple eszköz beléptetési Program (DEP) keresztül is vásárolhatók. A DEP vezeték nélkül képes telepíteni egy regisztrációs profilt, amely felügyelet alá helyezi az eszközöket.
+- [Eszközregisztráció-kezelő (DEM-)](device-enrollment-manager-enroll.md): A DEM-fiók használhatja legfeljebb 1000 eszköz regisztrálásához.
 
 ## <a name="block-macos-enrollment"></a>macOS-regisztráció letiltása
 Alapértelmezés szerint az Intune engedélyezi a macOS-eszközök regisztrálását. A macOS-eszközök regisztrálásának letiltásáról a [Típus szerinti korlátozás beállítása](enrollment-restrictions-set.md) című témakörben olvashat.
@@ -69,7 +69,7 @@ Alapértelmezés szerint az Intune engedélyezi a macOS-eszközök regisztrálá
 
 A virtuális macOS-gépeket a Parallels Desktop vagy a VMWare Fusion segítségével regisztrálhatja tesztelésre. 
 
-A Parallels Desktophoz meg kell adnia a virtuális gépek hardvertípusát és sorozatszámát, hogy az Intune felismerje őket. A Parallels útmutatójával [megadhatja a hardvertípust](http://kb.parallels.com/123594) és a [sorozatszámot](http://kb.parallels.com/123455), valamint a teszteléshez szükséges beállításokat. Azt javasoljuk, hogy a virtuális gépeket futtató eszközök hardvertípusa egyezzen meg a létrehozandó virtuális gépek hardvertípusával. A hardvertípust az **Apple menü** > **A Mac névjegye** > **Rendszerjelentés** > **Modellazonosító** területen találhatja meg. 
+A Parallels Desktophoz meg kell adnia a virtuális gépek hardvertípusát és sorozatszámát, hogy az Intune felismerje őket. A hardvertípust Parallels utasítások és [sorozatszám](http://kb.parallels.com/123455) a teszteléshez szükséges beállítások megadásához. Azt javasoljuk, hogy a virtuális gépeket futtató eszközök hardvertípusa egyezzen meg a létrehozandó virtuális gépek hardvertípusával. A hardvertípust az **Apple menü** > **A Mac névjegye** > **Rendszerjelentés** > **Modellazonosító** területen találhatja meg. 
 
 A VMware Fusion esetében [szerkesztenie kell a .vmx-fájlt](https://kb.vmware.com/s/article/1014782) a virtuális gép hardvermodelljének és sorozatszámának megadásához. Azt javasoljuk, hogy a virtuális gépeket futtató eszközök hardvertípusa egyezzen meg a létrehozandó virtuális gépek hardvertípusával. A hardvertípust az **Apple menü** > **A Mac névjegye** > **Rendszerjelentés** > **Modellazonosító** területen találhatja meg. 
 

@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 4a6818f67ab4e3b04364b412fb8ecf71227328d4
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: b3ced7e52de05e98c2f4a7ec9a828972ab60cf71
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54386915"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290723"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Dedikált vállalati Android-eszköz regisztrálása az Intune beállítása
 
@@ -101,7 +101,7 @@ Mostantól [dedikált eszköz](android-dedicated-devices-fully-managed-enroll.md
 
 ## <a name="managing-apps-on-android-dedicated-devices"></a>Az Android-eszközökön dedikált alkalmazások felügyelete
 
-Csak olyan alkalmazásokat, hozzárendelés-típus [beállítása szükséges](apps-deploy.md#to-assign-an-app) dedikált Androidos eszközökön telepíthető. Az alkalmazások a felügyelt Google Play Áruházból lesznek telepítve ugyanúgy, mint az androidos munkahelyi profilos eszközök esetében.
+Csak olyan alkalmazásokat, hozzárendelés-típus [beállítása szükséges](apps-deploy.md#assign-an-app) dedikált Androidos eszközökön telepíthető. Az alkalmazások a felügyelt Google Play Áruházból lesznek telepítve ugyanúgy, mint az androidos munkahelyi profilos eszközök esetében.
 
 Az alkalmazások automatikusan frissítve lesznek a felügyelt eszközökön, amikor az alkalmazás fejlesztője frissítést tesz közzé a Google Playben.
 

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/25/2019
+ms.date: 01/29/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,19 +16,21 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 2d27b37fe627b6b697bf102be4bd29427c2223c8
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.openlocfilehash: 283239a412f8c7b0a43fa5c88b4a3583b89cac8f
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55230188"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290791"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Heti összesítésben olvashat a Microsoft Intune újdonságairól. Emellett tájékozódhat a jövőbeni változtatásokról, a szolgáltatással kapcsolatos [fontos bejelentésekről](#notices) és a [korábbi kiadásokról](whats-new-archive.md) is. Egyes funkciók bevezetése több hetet igénybe vehet, így előfordulhat, hogy nem elérhetők a felhasználók számára az első héten.
+Heti összesítésben olvashat a Microsoft Intune újdonságairól. Emellett tájékozódhat a jövőbeni változtatásokról, a szolgáltatással kapcsolatos [fontos bejelentésekről](#notices) és a [korábbi kiadásokról](whats-new-archive.md) is. 
 
 > [!Note]
+> Egyes funkciók bevezetése több hetet igénybe vehet, így előfordulhat, hogy nem elérhetők a felhasználók számára az első héten.
+>
 > A mobileszköz-kezelés (MDM) új hibrid funkciójával kapcsolatos további információért tekintse meg a [hibrid újdonságok oldalát](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
 **RSS-hírcsatorna**: Értesítés küldése, amikor ezen a lapon frissül, másolása és beillesztése a következő URL-címet a hírcsatorna olvasóba szerint: `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+in+microsoft+intune%3F+-+Azure%22&locale=en-us`
@@ -58,7 +60,16 @@ Módosítottuk a címkék beállításainak és az Intune app Protection, hogy k
 Az alapértelmezett beállításokat és a beállítások száma nem változik, de ez a változás lehetővé teszi, hogy a felhasználó megértése, keresse meg, és a alkalmazni a beállításokat több egyszerűen kiválasztott alkalmazásvédelmi szabályzatok. További információ: [iOS-beállítások](app-protection-policy-settings-ios.md) és [Android-beállításokat](app-protection-policy-settings-android.md).
 
 #### <a name="additional-settings-for-outlook----3301182----"></a>Az Outlook további beállítások <!-- 3301182  -->
-Mostantól konfigurálhatja az IOS rendszerhez készült Outlook és az Intune-nal Android további beállításokat.  A beállítások a következők: Csak a munkahelyi vagy iskolai fiókkal használható az Outlookban, iOS vagy Android üzembe helyezése a modern hitelesítést az Office 365 és a hibrid, modern hitelesítést helyszíni fiókok használatát engedélyezi `SAMAccountName` az e-mail profilban, az egyszerű hitelesítés esetén a felhasználónév mező a kiválasztott engedélyezése névjegyek konfigurálása külső címzetteknek e-mail tippek konfigurálása menteni **Beérkezett fájlok mappa a fókuszban lévő** biometrika Outlook IOS-blokk külső képek eléréséhez szükséges
+Mostantól konfigurálhatja az IOS rendszerhez készült Outlook és az Intune-nal Android további beállításokat.  A beállítások a következők:
+- Csak a munkahelyi vagy iskolai fiókkal az Outlookban az iOS és Android rendszerhez használható engedélyezése
+- Modern hitelesítéssel az Office 365 és a hibrid, modern hitelesítést a helyszíni fiókok telepítése
+- Használat `SAMAccountName` az e-mail profilban, az egyszerű hitelesítés kijelölésekor a felhasználónév mező
+- Lehetővé teszi az ügyfelek menteni (elérhető hamarosan)
+- Konfigurálja a külső címzetteknek e-mail tippek (elérhető hamarosan)
+- Konfigurálása **Beérkezett fájlok mappa a fókuszban lévő** (elérhető hamarosan)
+- Biometrikai IOS rendszerhez készült Outlook eléréséhez szükséges (elérhető hamarosan) 
+- Külső képek letiltása (az Intune-ban látható konzolon, de nem felismert beállítás még – rendelkezésre álló hamarosan)
+
 > [!NOTE]
 > Ha az Intune alkalmazásvédelmi szabályzatokat használ a vállalati identitások kezelésére, érdemes lehet nem engedélyezi az **biometrika megkövetelése**. További információkért lásd: **vállalati hitelesítő adatok megkövetelése a hozzáféréshez** a [hozzáférési beállítások iOS](app-protection-policy-settings-ios.md#access-requirements) és [Android-beállításokat](app-protection-policy-settings-android.md#access-requirements).
 
@@ -112,13 +123,6 @@ Beállítások aktuális listájának megtekintéséhez, keresse fel a [engedél
 
 A következőkre vonatkozik: Androidos vállalati eszköz tulajdonosa
 
-#### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Az Intune alkalmazásvédelmi szabályzataihoz tartozó kezelőfelületre vonatkozó frissítés <!-- 3251427 -->
-Módosítottuk a címkéket a beállítások egy Intune app Protection, hogy könnyebben érthetőek nd gombokat. A változások a következők:  
-- Vezérlők meg nem változtatják **Igen** / **nincs** elsősorban szabályozza **letiltása** / ** engedélyezése ** és **letiltása**  /  **engedélyezése** szabályozza. A címkék is frissülnek.  
-- Beállítások újraformázása, így a beállítás, és a felirat egymás mellett a vezérlőelemet, adja meg a jobb navigációs.   
-
-Az alapértelmezett beállításokat és a beállítások száma nem változik, de ez a változás lehetővé teszi, hogy a felhasználó megértése, keresse meg, és a alkalmazni a beállításokat több egyszerűen kiválasztott alkalmazásvédelmi szabályzatok. További információ: [iOS-beállítások](app-protection-policy-settings-ios.md) és [Android-beállításokat](app-protection-policy-settings-android.md).
-
 ### <a name="device-management"></a>Eszközkezelés
 
 #### <a name="selective-wipe-support-for-wip-without-enrollment-devices----1434452---"></a>WIP regisztrációval nem rendelkező eszközök szelektív törlés támogatása <!-- 1434452 -->
@@ -138,6 +142,9 @@ Jelenleg kihagyhatja a képernyők, mellett állíthatja be iOS DEP-eszközök a
 Válassza ki, amely a képernyők kihagyásához, lépjen a **eszközregisztráció** > **Apple-regisztráció** > **Készülékregisztrációs programbeli token** > Válasszon egy tokent > **Profilok** > Válasszon egy profilt > **tulajdonságok** > **beállítási asszisztens testreszabása** > Válasszon **elrejtése**  bármely képernyők kihagyásához a > **OK**.
 Hozzon létre egy új profilt, vagy szerkessze a profil, ha a kiválasztott kihagyása képernyők kell szinkronizálni az Apple MDM-kiszolgáló. Így nem lesz késleltetés vesz fel a profil módosítása a felhasználók kiadhatnak az eszköz manuális szinkronizálása.
 A szolgáltatás indítása folyamatban van vezethet be, de eltarthat pár nappal minden ügyfelünk számára elérhető legyen.
+
+#### <a name="android-enterprise-app-we-app-deployment----1171203---"></a>Android Enterprise-alkalmazás – hogy az alkalmazás üzembe helyezése <!-- 1171203 -->
+Android-eszközökhöz a egy nem regisztrált alkalmazás alkalmazásvédelmi szabályzat regisztráció nélkül (alkalmazás-TUDJUK) a telepítési forgatókönyvben, így a felügyelt Google Play áruházbeli alkalmazások telepítése és az ÜZLETÁGI alkalmazások a felhasználók számára való használata. Pontosabban a végfelhasználók számára biztosíthat már nem igényel a végfelhasználók számára, hogy lazábbá tehető az eszközeik biztonsági irányelvei, tiltják azáltal, hogy telepítések az ismeretlen forrásból származó alkalmazás katalógus és telepítési élményt. Emellett ebben a telepítési forgatókönyvben egy jobb végfelhasználói élményt biztosít.
 
 ## <a name="week-of-january-14-2019"></a>2019. január 14 hete
 
@@ -564,8 +571,8 @@ A tanúsítványok jelenleg felhasználók részére vannak kiállítva. Ezzel a
 - Az SCEP-profil **Tulajdonos** tulajdonsága mostantól egy egyéni szövegmező, amely új változókat is tartalmazhat. 
 - Az SCEP-profilokban a **Tulajdonos alternatív neve (SAN)** tulajdonság mostantól tábla formátumú, és új változókat is tartalmazhat. A táblában a rendszergazdák megadhatnak attribútumokat, és a hozzájuk tartozó értéket egy egyéni szövegmezőben tölthetik ki. Az SAN a következő attribútumokat támogatja: 
   - DNS
-  - E-mail-cím
-  - EGYSZERŰ FELHASZNÁLÓNÉV
+  - E-mail cím
+  - UPN
 
   Ezek az új változók statikus szöveggel adhatók meg egy egyéni szövegmezőben. Például a DNS-attribútumok a következő formátumban adhatók meg: `DNS = {{AzureADDeviceId}}.domain.com`.
 
