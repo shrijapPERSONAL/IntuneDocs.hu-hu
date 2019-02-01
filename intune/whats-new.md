@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 01/31/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 283239a412f8c7b0a43fa5c88b4a3583b89cac8f
-ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
+ms.openlocfilehash: 9ca959bf28145500df71cb9ce8c7c36d62c9f773
+ms.sourcegitcommit: 36e41b5164a72bf54c80a9f5ad054f77b0e8c07e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55290791"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55504578"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -60,15 +60,19 @@ Módosítottuk a címkék beállításainak és az Intune app Protection, hogy k
 Az alapértelmezett beállításokat és a beállítások száma nem változik, de ez a változás lehetővé teszi, hogy a felhasználó megértése, keresse meg, és a alkalmazni a beállításokat több egyszerűen kiválasztott alkalmazásvédelmi szabályzatok. További információ: [iOS-beállítások](app-protection-policy-settings-ios.md) és [Android-beállításokat](app-protection-policy-settings-android.md).
 
 #### <a name="additional-settings-for-outlook----3301182----"></a>Az Outlook további beállítások <!-- 3301182  -->
-Mostantól konfigurálhatja az IOS rendszerhez készült Outlook és az Intune-nal Android további beállításokat.  A beállítások a következők:
+Mostantól konfigurálhatja az IOS rendszerhez készült Outlook és az Intune-nal Android followiong további beállításait:
 - Csak a munkahelyi vagy iskolai fiókkal az Outlookban az iOS és Android rendszerhez használható engedélyezése
 - Modern hitelesítéssel az Office 365 és a hibrid, modern hitelesítést a helyszíni fiókok telepítése
 - Használat `SAMAccountName` az e-mail profilban, az egyszerű hitelesítés kijelölésekor a felhasználónév mező
-- Lehetővé teszi az ügyfelek menteni (elérhető hamarosan)
-- Konfigurálja a külső címzetteknek e-mail tippek (elérhető hamarosan)
-- Konfigurálása **Beérkezett fájlok mappa a fókuszban lévő** (elérhető hamarosan)
-- Biometrikai IOS rendszerhez készült Outlook eléréséhez szükséges (elérhető hamarosan) 
-- Külső képek letiltása (az Intune-ban látható konzolon, de nem felismert beállítás még – rendelkezésre álló hamarosan)
+
+A következő beállításokat is továbbra is fokozatosan vezetjük be, és hamarosan közzétesszük a konzolon:
+- Lehetővé teszi az ügyfelek menteni
+- Konfigurálja a külső címzetteknek e-mail tippek
+- Konfigurálása **szűrt levelek**
+- Biometrikai IOS rendszerhez készült Outlook eléréséhez szükséges
+
+Az alábbi beállítást az Intune-konzolon megjelenik, de ha konfigurálva, nem a várt módon fog működni. A probléma hamarosan lesz kijavítva:
+- Külső képek letiltása
 
 > [!NOTE]
 > Ha az Intune alkalmazásvédelmi szabályzatokat használ a vállalati identitások kezelésére, érdemes lehet nem engedélyezi az **biometrika megkövetelése**. További információkért lásd: **vállalati hitelesítő adatok megkövetelése a hozzáféréshez** a [hozzáférési beállítások iOS](app-protection-policy-settings-ios.md#access-requirements) és [Android-beállításokat](app-protection-policy-settings-android.md#access-requirements).
@@ -82,9 +86,10 @@ A **felügyelt Google Play** alkalmazástípus lehetővé teszi, hogy kifejezett
 ### <a name="device-configuration"></a>Eszközök konfigurálása
 
 #### <a name="use-microsoft-recommended-settings-with-security-baselines-public-preview----2055484-----"></a>Microsoft által ajánlott beállítások használata a biztonsági előírások (nyilvános előzetes verzió) <!-- 2055484   -->
-Megjegyezés: Ez a funkció továbbra is bevezetéséről, és hamarosan elérhető.
 
 Az Intune integrálható más, biztonsági célú szolgáltatásokkal, például a Windows Defender ATP-vel és az Office 365 ATP-vel. Az ügyfelek a Microsoft 365-szolgáltatásokon átívelő közös stratégiát és összefüggő, teljes körű biztonsági munkafolyamatokat kérnek. Célunk a stratégiák összehangolása és ezáltal olyan megoldások létrehozása, amelyek hidat képeznek a biztonsági műveletek és a gyakori felügyeleti feladatok között. Az Intune-ban ezen cél elérésére a Microsoft által ajánlott „biztonsági előírások” közzétételével törekszünk (**Intune** > **Biztonsági előírások**).  A rendszergazda ezen alaptervek közvetlenül a biztonsági házirendek létrehozása, és telepítheti őket a felhasználóknak. Testre szabhatja a ajánlásokat és tanácsokat a szervezet igényeinek kielégítése érdekében. Az Intune biztosítja, hogy az eszközök megfeleljenek ezeknek az előírásoknak, és értesíti a rendszergazdákat, ha egy felhasználó vagy eszköz nem felel meg.
+
+Ez a funkció jelenleg nyilvános előzetes verzióban, így minden létrehozott profilok mostantól nem helyezi át biztonsági előírások sablonokat, amelyek általánosan elérhető (GA). Nem szeretné használni ezeket a sablonokat előzetes az éles környezetben.
 
 Biztonsági alapterveket kapcsolatos további információkért lásd: [az Intune-ban Windows 10 biztonsági alapterv létrehozása](security-baselines-monitor.md).
 
@@ -141,7 +146,6 @@ Az Intune beépített naplózásra, amely nyomon követi az eseményeket, a mód
 Jelenleg kihagyhatja a képernyők, mellett állíthatja be iOS DEP-eszközök a beállítási asszisztens képernyőinek kihagyásához amikor egy felhasználó regisztrálja az eszközt: Képviselő hangvételét, adatvédelmi, Android áttelepítési, kezdőlap gombot, iMessage & FaceTime, bevezetési, tekintse meg a Migrálási, megjelenését, képernyő idő, szoftverfrissítés, SIM telepítő megjelenítéséhez.
 Válassza ki, amely a képernyők kihagyásához, lépjen a **eszközregisztráció** > **Apple-regisztráció** > **Készülékregisztrációs programbeli token** > Válasszon egy tokent > **Profilok** > Válasszon egy profilt > **tulajdonságok** > **beállítási asszisztens testreszabása** > Válasszon **elrejtése**  bármely képernyők kihagyásához a > **OK**.
 Hozzon létre egy új profilt, vagy szerkessze a profil, ha a kiválasztott kihagyása képernyők kell szinkronizálni az Apple MDM-kiszolgáló. Így nem lesz késleltetés vesz fel a profil módosítása a felhasználók kiadhatnak az eszköz manuális szinkronizálása.
-A szolgáltatás indítása folyamatban van vezethet be, de eltarthat pár nappal minden ügyfelünk számára elérhető legyen.
 
 #### <a name="android-enterprise-app-we-app-deployment----1171203---"></a>Android Enterprise-alkalmazás – hogy az alkalmazás üzembe helyezése <!-- 1171203 -->
 Android-eszközökhöz a egy nem regisztrált alkalmazás alkalmazásvédelmi szabályzat regisztráció nélkül (alkalmazás-TUDJUK) a telepítési forgatókönyvben, így a felügyelt Google Play áruházbeli alkalmazások telepítése és az ÜZLETÁGI alkalmazások a felhasználók számára való használata. Pontosabban a végfelhasználók számára biztosíthat már nem igényel a végfelhasználók számára, hogy lazábbá tehető az eszközeik biztonsági irányelvei, tiltják azáltal, hogy telepítések az ismeretlen forrásból származó alkalmazás katalógus és telepítési élményt. Emellett ebben a telepítési forgatókönyvben egy jobb végfelhasználói élményt biztosít.
@@ -571,8 +575,8 @@ A tanúsítványok jelenleg felhasználók részére vannak kiállítva. Ezzel a
 - Az SCEP-profil **Tulajdonos** tulajdonsága mostantól egy egyéni szövegmező, amely új változókat is tartalmazhat. 
 - Az SCEP-profilokban a **Tulajdonos alternatív neve (SAN)** tulajdonság mostantól tábla formátumú, és új változókat is tartalmazhat. A táblában a rendszergazdák megadhatnak attribútumokat, és a hozzájuk tartozó értéket egy egyéni szövegmezőben tölthetik ki. Az SAN a következő attribútumokat támogatja: 
   - DNS
-  - E-mail cím
-  - UPN
+  - E-mail-cím
+  - EGYSZERŰ FELHASZNÁLÓNÉV
 
   Ezek az új változók statikus szöveggel adhatók meg egy egyéni szövegmezőben. Például a DNS-attribútumok a következő formátumban adhatók meg: `DNS = {{AzureADDeviceId}}.domain.com`.
 
@@ -1365,27 +1369,37 @@ Ez hatással van, hogy ha van, vagy tervezi, hogy macOS 10.14.2 rendszerű eszk�
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>Hogyan készüljek fel a változásra?
 Szüksége lehet ahhoz, hogy a segélyszolgálat ismeri. A Mi az új lap, ha ez a változás bevezetési frissítjük. Ha nem szeretné, hogy a MacOS rendszerű eszköz jelszóházirend kényszerítését, javasoljuk, Ön megszüntetése vagy a meglévő macOS-szabályzat törlése.
 
+###<a name="plan-for-change-update-to-ios-setting-for-supervised-devices-in-the-intune-console"></a>Tervezett módosítás: IOS-beállítást a felügyelt eszközökön az Intune-konzolon való frissítéséhez  
+A február frissítéssel az Intune szolgáltatásba a felügyelt iOS-eszközökön "Az Eszközbeállítások korlátozások engedélyezése" beállítást "(csak felügyelt) képernyő idő" alatt álló új. A módosítás után végfelhasználói élmény iOS-verzió alapján változik.
 
-### <a name="reminder-intune-support-experience-for-premier-customers-now-in-azure-instead-of-mpo---2828727--"></a>Emlékeztető: Intune támogatási élmény a Premier szintű ügyfelek mostantól az Azure-ban MPO helyett <!--2828727-->
-A Microsoft megosztott MC147649 szeptembertől, hogy el kell távolítani a Microsoft Premier Online (MPO) portálra (premier.microsoft.com) az Intune támogatási kérések létrehozása december. Most egy kis idő után January, végén átirányítjuk hozhat létre támogatási kérelmeket csak az Intune-ban az Azure-ban. 
+####<a name="how-does-this-affect-me"></a>Hogyan érint ez engem?
+Miután a "Korlátozások engedélyezése az Eszközbeállítások között (csak felügyelt)" beállítását pedig átnevezi "Képernyő idő (csak felügyelt)", az alábbiakban a élményt a felügyelt eszközök (regisztrálva az Apple regisztrációs programjai): 
+
+Eszközök iOS 11.4-és előtt: Ez a beállítás megakadályozza, hogy a felhasználók módosítása eszközkorlátozások, mielőtt használható. A végfelhasználók nem látják változik a felhasználói élményt.
+ 
+12 vagy újabb IOS-eszközökhöz: Végfelhasználók számára már nem jelennek meg a korlátozásokat lapon, a beállítások > Általános > Eszközfelügyelet > felügyeleti profil > korlátozások.
+Ehelyett a beállítások egy része lesz > Általános > képernyő idő. A "Letiltás" beállítás konfigurálása letiltja a felhasználók nem módosíthatják a képernyő beállításai az eszközeiken, amely tartalmat és adatvédelmi korlátozások is tartalmazza.
+
+####<a name="what-can-i-do-to-prepare-for-this-change"></a>Hogyan készüljek fel a változásra?
+A végfelhasználói útmutató megjegyezni a változik a élmény IOS 12-es vagy újabb rendszerre frissített eszközök frissítéséhez.
 
 
-#### <a name="how-does-this-affect-me"></a>Hogyan érint ez engem?
-Január folytatja, a Premier szintű támogatás kerülésről vége után támogatja a felhasználói élményt, kell nem lesz MPO a támogatási kérések létrehozásához.  Ha ehhez próbál, látni fogja nem is elérheti, elvetése, vissza kell irányítani az Intune az Azure-ban az üzenetet. Itt hozhat létre egy támogatási kérést, amely a Microsoft ügyfélszolgálatának dedikált Intune-részlegéhez kerül a probléma minél hamarabbi diagnosztizálása és megoldása érdekében. Vegye figyelembe, hogy a MPO portálon létrehozott támogatási kérések nem lehet megtekinteni az Azure Portalon. 
+###<a name="plan-for-change-workflow-changes-for-ios-12-enrollment-in-intune"></a>Tervezett módosítás: A munkafolyamat-módosítások az IOS-eszközök 12 regisztrálása az Intune-ban
+Az Apple bejelentette, hogy néhány módosítás az iOS-eszközök regisztrálása a mobileszköz-felügyeleti (MDM) szolgáltatásra. A módosítás a spring 2019 kiadásban az IOS-es, valamint az összes jövőbeli iOS-kiadások valószínűleg lesz látható.
 
-MC171941 nemrég bejelentettük az Azure portal tartalmaz egy új támogatási szolgáltatásokat. További információ található [ https://aka.ms/new_support_experience ](https://aka.ms/new_support_experience) és a további információk hivatkozáson.
+####<a name="how-does-this-affect-me"></a>Hogyan érint ez engem?
+A végfelhasználók számára az új verzió 12 IOS-eszközeiket tavasszal frissíti, ha tudja, hogy a módosított munkafolyamat és kell Intune-ba való regisztrálást végrehajtani, további lépések végrehajtására. Apple ezeket a változásokat vezet be, amikor a végfelhasználók kell: • megkezdése a regisztrációt a céges portál alkalmazásban, töltse le a felügyeleti profil • lépjen a beállítások > Általános > profilok • válassza ki a megfelelő profilt, és kattintson a regisztráció elvégzését • térjen vissza a céges portál telepítése 
 
-Ha hibrid mobileszköz-kezelést (hibrid MDM) vagy megosztott kezelést használ, az MPO portálon továbbra is létrehozhat támogatási kéréseket a ConfigMgrhez, de az Intune-ra vonatkozó támogatási kéréseket az Azure Portalon kell létrehoznia. Ne feledje, a hibrid mobileszköz-kezelés van [elavult](https://docs.microsoft.com/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures), és helyezze át az Intune-bA az Azure-ban minél hamarabb kell terveznie. További információk: [Áttérés a hibrid mobileszköz-kezelésről az Azure-beli Intune-ra](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150).
+Már regisztrált eszközökre és a frissítési az új IOS-es kiadás nem befolyásolja, ha nem regisztrált, és egy friss regisztráció szükséges.
+Az új kiadás az Apple regisztrációs folyamatának 12,1 vagy korábbi iOS rendszerű eszközökön nem változik.
 
-Vegye figyelembe, hogy csak a globális rendszergazda, az Intune szolgáltatás-rendszergazda és a szolgáltatástámogatási rendszergazda szerepkörrel rendelkező felhasználók az Azure Portalon hozhat létre támogatási jegyeket.
+####<a name="what-can-i-do-to-prepare-for-this-change"></a>Hogyan készüljek fel a változásra?
+Meg kell terveznie a dokumentációját, valamint a végfelhasználói útmutató frissítése. Érdemes azt is, ahhoz, hogy a segélyszolgálat ismeri ezeket a módosításokat. Folyamatosan tájékoztatjuk Önt folyamatosan értesíteni az üzenet központon keresztül, és az Újdonságok oldalát, amikor ez a változás élesíti.
 
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Hogyan készüljek fel a változásra?
-- Szüntesse be az MPO használatát, és az összes Intune-ra vonatkozó támogatási kérés létrehozásához és kezeléséhez használja az Azure-beli Intune-t.  
-- Értesítse saját segélyszolgálatát, és frissítse a dokumentációt, ha szükséges.
-- Ha jelenleg az MPO-n globális rendszergazdai vagy Intune-szolgáltatásadminisztrátori szerepkörökkel nem rendelkező felhasználók szokták létrehozni a támogatási kéréseket, adjon nekik szolgáltatás-rendszergazdai szerepkört az Azure Active Directoryban, hogy az Azure Portalon is folytatni tudják a támogatási jegyek létrehozását.
+Kattintson ide további információt a képernyőképek és a egy videót a várt regisztrációs folyamatot a támogatási blogbejegyzést.
 
-#### <a name="additional-information"></a>További információ
-[https://aka.ms/IntuneSupport_MPO_to_Azure](https://aka.ms/IntuneSupport_MPO_to_Azure)
+####<a name="additional-information"></a>További információ
+https://aka.ms/iOS_enrollment_changes
 
 ### <a name="plan-for-change-user-experience-update-to-intune-company-portal-app-for-ios"></a>Tervezett módosítás: Felhasználóiélmény-frissítést az iOS-hez készült Intune vállalati portál alkalmazás
 Örömmel megosztására, hogy az Intune hamarosan adunk ki az IOS-es céges portál alkalmazás egy nagyszabású felhasználóiélmény-frissítést. A frissítés egy vizuális átalakulás a kezdőlap ügyfélszolgálatnak a speciális szűrők és az alkalmazások és könyvek gyorsabb hozzáférést.
