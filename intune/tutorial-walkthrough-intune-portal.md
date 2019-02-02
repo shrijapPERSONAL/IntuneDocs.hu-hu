@@ -16,16 +16,16 @@ Customer intent: As an Intune admin, I want to learn where to find the different
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fd6230fda65a22bb7cae4f5d130d13bb6f2379e7
-ms.sourcegitcommit: 36e41b5164a72bf54c80a9f5ad054f77b0e8c07e
+ms.openlocfilehash: f9d72ec2f35f15e2515160869fc352360b17e812
+ms.sourcegitcommit: 4a1ac07efd66b45c1435649bcd7215adbd84898f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55505241"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55645172"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>Oktatóanyag: Az útmutató a Microsoft Intune-ban az Azure Portalon
 
-[Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure) keresztül egy 100 segítségére lehetnek a felhő-számítástechnikai helyzetekben és a lehetőségek különböző szolgáltatásokat tartalmaz. A Microsoft Intune Azure-ban elérhető számos szolgáltatás egyike. Az Intune segítségével győződjön meg arról, hogy a vállalati eszközök, alkalmazások és adatok megfelelnek-e a vállalat biztonsági követelményeinek. Rendelkezik a vezérlő, amely követelményeknek kell ellenőrizni kell, és mi történik, ha ezek a követelmények nem teljesülnek. A Microsoft Intune szolgáltatást az [Azure Portalon](https://portal.azure.com) találhatja meg. Az Intune-ban elérhető szolgáltatások megismerése segít a különböző mobileszköz-felügyeleti (MDM) és mobilalkalmazás-felügyeleti (MAM) feladatok elvégzését.
+[Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure) több mint 100, segítségére lehetnek a felhő-számítástechnikai helyzetekben és a lehetőségek különböző szolgáltatásokat tartalmaz. A Microsoft Intune Azure-ban elérhető számos szolgáltatás egyike. Az Intune segítségével győződjön meg arról, hogy a vállalati eszközök, alkalmazások és adatok megfelelnek-e a vállalat biztonsági követelményeinek. Rendelkezik a vezérlő, amely követelményeknek kell ellenőrizni kell, és mi történik, ha ezek a követelmények nem teljesülnek. A Microsoft Intune szolgáltatást az [Azure Portalon](https://portal.azure.com) találhatja meg. Az Intune-ban elérhető szolgáltatások megismerése segít a különböző mobileszköz-felügyeleti (MDM) és mobilalkalmazás-felügyeleti (MAM) feladatok elvégzését.
 
 Az oktatóanyag során az alábbi lépéseket fogja végrehajtani:
 > [!div class="checklist"]
@@ -72,7 +72,7 @@ Az Intune segít jobban megérteni az Azure Portalon az alábbi lépésekkel. Mi
     ![Az eszköz megfelelőségi panel képernyőképe](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-03.png)
     
     Megfelelőségi követelmények lényegében szabályok; például az eszköz PIN-KÓDJÁNAK igénylő vagy az eszköztitkosítás megkövetelése. Az eszközmegfelelőségi szabályzatok definiálása a szabályokat és beállításokat, amelyek az eszközök megfelelőségéhez kell követnie. Eszközmegfelelőség használatához meg kell rendelkeznie:
-    - Az Intune-ra és a egy Azure Active Directory (AD) Premium előfizetéssel
+    - Az Intune-ra és az Azure Active Directory (Azure AD) Premium előfizetéssel
     - Eszközök támogatott platformmal működik
     - Eszközöket regisztrálni kell az Intune-ban
     - Egy felhasználó vagy az elsődleges felhasználóval nem regisztrált eszközökön.
@@ -111,7 +111,7 @@ Az Intune segít jobban megérteni az Azure Portalon az alábbi lépésekkel. Mi
 
     Felhasználók hozzáadása az Intune közvetlenül, vagy a felhasználók a helyszíni Active Directoryból szinkronizál. Ha felvették a felhasználókat a szolgáltatásba, regisztrálhatják az eszközeiket, és elérhetik a vállalati erőforrásokat. Meg is adhat a felhasználóknak további engedélyeket az eléréséhez az Intune-ban. További információkért lásd: [felhasználók hozzáadása és rendszergazdai engedély biztosítása az Intune-ban](users-add.md).
 
-9. A [Intune](https://aka.ms/intuneportal)válassza **csoportok** az Azure Active Directory (AD) csoportok az Intune-ban szereplő részleteit jeleníti meg. Intune rendszergazdaként csoport használatával kezelheti az eszközöket és felhasználókat. 
+9. A [Intune](https://aka.ms/intuneportal)válassza **csoportok** az Azure Active Directory (Azure AD) csoportok az Intune-ban szereplő részleteit jeleníti meg. Intune rendszergazdaként csoport használatával kezelheti az eszközöket és felhasználókat. 
 
     ![A csoportok panel képernyőképe](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-09.png)
 

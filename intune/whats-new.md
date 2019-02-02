@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 9ca959bf28145500df71cb9ce8c7c36d62c9f773
-ms.sourcegitcommit: 36e41b5164a72bf54c80a9f5ad054f77b0e8c07e
+ms.openlocfilehash: e471c14bddd80e88931326c0fad7a2a4fd85f73b
+ms.sourcegitcommit: 00fe2b601e3becbe5d644fcbd35a706da3b43af2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55504578"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55652663"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -82,6 +82,9 @@ Törölheti a felügyelt Google Play-alkalmazások Microsoft Intune-ból. Felüg
 
 #### <a name="managed-google-play-app-type----1352580---"></a>Felügyelt Google Play alkalmazás típusa <!-- 1352580 -->
 A **felügyelt Google Play** alkalmazástípus lehetővé teszi, hogy kifejezetten [felügyelt Google Play-alkalmazások](https://play.google.com/work/search?q=microsoft&c=apps) az Intune-hoz. Az Intune-rendszergazdaként mostantól Tallózás, keresés, hagyja jóvá, szinkronizálása és jóváhagyott a felügyelt Google Play-alkalmazások Intune-ban hozzárendelése.  Már nem kell külön tallózással keresse meg a felügyelt Google Play konzolon, és többé nem kell újból hitelesítésre.  Válassza ki az Intune-ban **ügyfélalkalmazás** > **alkalmazások** > **Hozzáadás**. Az a **alkalmazástípus** listáról válassza ki **felügyelt Google Play** az alkalmazás típusaként.
+
+### <a name="default-android-pin-keyboard----3802457---"></a>Alapértelmezett Androidos PIN-kód billentyűzet <!-- 3802457 -->
+A végfelhasználók számára, akik saját Android-eszközökön 'Numerikus' a PIN-kód típusú állított be az Intune App Protection szabályzat (alkalmazás) PIN-kód láthatják az alapértelmezett Android billentyűzet helyett a rögzített Android billentyűzet felhasználói felület, amely a korábban készült. A módosítás alapértelmezett billentyűzetek használata az Android és iOS-, mind a mindkét "Numerikus" és/vagy "PIN-jelszó PIN-kód típusú összhangban kell. Végfelhasználói hozzáférési beállítások az Android, például az alkalmazás PIN-kód, bővebben lásd: [Android hozzáférési követelmények](app-protection-policy-settings-android.md#access-requirements).
 
 ### <a name="device-configuration"></a>Eszközök konfigurálása
 
@@ -1419,12 +1422,12 @@ Nem kell semmit sem kell; Ezeket a változásokat egy közelgő iOS CP alkalmaz�
 
 
 ### <a name="plan-for-change-exchange-online-to-intune-connector-will-not-be-available-in-intune----3105122---"></a>Tervezett módosítás: Exchange Online-t az Intune-összekötő nem lesz elérhető az Intune-ban <!-- 3105122 -->
-Örömet talál az Exchange online-hoz és a feltételes hozzáférés leegyszerűsítése azt fogja kell letiltását az Exchange online-hoz az Intune-összekötő "Service to Service". Ez a változás a December szolgáltatásfrissítés kezdődik, és a 2019. február szolgáltatásfrissítés elvégezni.
+Örömet talál az Exchange online-hoz és a feltételes hozzáférés leegyszerűsítése azt fogja kell letiltását az Exchange online-hoz az Intune-összekötő "Service to Service".
 
 #### <a name="how-does-this-affect-me"></a>Hogyan érint ez engem?
-Ezt az üzenetet azért küldtük Önnek, mert adataik szerint, hogy lehet használni a "Service to Service" összekötő funkció a környezetben. A "Service to Service" összekötő az Exchange Active Sync csak az eszközök az Intune felügyeleti támogatja az Exchange online-hoz, és nem támogatja a helyszíni infrastruktúrát. Ezt az összekötőt, akkor jelenik meg a konzolon lehet, hogy szükségesek a feltételes hozzáféréssel (CA), megjelenik a valóságban ez nem szükségesek a hitelesítésszolgáltató. A December frissítéssel az Intune szolgáltatásba a konzol ezen egyértelművé teszi fog letiltjuk a gombra kattintva új összekötők beállítása. Ezt követően a 2019. február, az összes meglévő Exchange Online-t az Intune-összekötő le lesz tiltva.
+Ezt az üzenetet azért küldtük Önnek, mert adataik szerint, hogy lehet használni a "Service to Service" összekötő funkció a környezetben. A "Service to Service" összekötő az Exchange Active Sync csak az eszközök az Intune felügyeleti támogatja az Exchange online-hoz, és nem támogatja a helyszíni infrastruktúrát. Ezt az összekötőt, akkor jelenik meg a konzolon lehet, hogy szükségesek a feltételes hozzáféréssel (CA), megjelenik a valóságban ez nem szükségesek a hitelesítésszolgáltató. A február frissítéssel az Intune szolgáltatásba a konzol ezen egyértelművé teszi fog letiltjuk a gombra kattintva új összekötők beállítása. Ezt követően a március 2019, az összes meglévő Exchange Online-t az Intune-összekötő le lesz tiltva.
 
-Ha használja ezeket az összekötőket a környezetben, akkor képes figyelésre vagy törölhetik az Exchange Active Sync csak az Intune-ban után összekötők februárban le vannak tiltva. Ez a módosítás során várható fennakadást a végfelhasználók számára van.
+Ha használja ezeket az összekötőket a környezetben, akkor képes figyelésre vagy törölhetik az Exchange Active Sync csak az Intune-ban követően márciusban összekötők le lettek tiltva. Ez a módosítás során várható fennakadást a végfelhasználók számára van.
 
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>Hogyan készüljek fel a változásra?
 

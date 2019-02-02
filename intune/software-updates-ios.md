@@ -11,12 +11,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 search.appverid: MET150
-ms.openlocfilehash: 12b387a5c09e0d009fa5014ff355104f6bff71f3
-ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
+ms.openlocfilehash: d73dc96c966b93f26269cc53527a787824c94d3b
+ms.sourcegitcommit: 00fe2b601e3becbe5d644fcbd35a706da3b43af2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55290638"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55652629"
 ---
 # <a name="configure-ios-update-policies-in-intune"></a>Az iOS-es frissítési szabályzatok konfigurálása az Intune-ban
 
@@ -27,15 +27,18 @@ Az eszköz körülbelül 8 óránként jelentkezik be az Intune-ba. Ha az eszkö
 A szolgáltatás az iOS 10.3-as és újabb rendszerű eszközöket támogatja. A késleltetési beállítás az iOS 11.3-as és újabb verzióiban érhető el.
 
 ## <a name="configure-the-policy"></a>A szabályzat konfigurálása
-1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
 3. Válassza a **Szoftverfrissítések** > **iOS-frissítési szabályzatok** > **Létrehozás** lehetőséget.
 4. Adja meg a szabályzat nevét és leírását.
 5. Válassza a **Beállítások** lehetőséget. 
 
-    Adja meg, hogy mikor ne kerüljön sor az iOS-eszközökön a legújabb elérhető frissítés kényszerített telepítésére. Ezekkel a beállításokkal megadhatja azt az időkeretet, amikor a korlátozás érvényben lesz. Konfigurálhatja a hét **napjait**, az **időzónát**, a **kezdési időt**, a **befejezési időt** és **a szoftverfrissítések láthatóságának késleltetését (napokban)** a megadott felhasználókhoz. A szoftverfrissítések késleltetéséhez 1 és 90 nap közötti értéket adhat meg. A szoftverfrissítések késleltetésének megszüntetéséhez írja be a 0 értéket. Ezek a frissítési beállítások csak felügyelt iOS-eszközökre érvényesek.
+    Adja meg, hogy mikor ne kerüljön sor az iOS-eszközökön a legújabb elérhető frissítés kényszerített telepítésére. Ezekkel a beállításokkal megadhatja azt az időkeretet, amikor a korlátozás érvényben lesz. Konfigurálhatja a hét **napjait**, az **időzónát**, a **kezdési időt**, a **befejezési időt** és **a szoftverfrissítések láthatóságának késleltetését (napokban)** a megadott felhasználókhoz. A szoftverfrissítések késleltetéséhez 1 és 90 nap közötti értéket adhat meg. Amikor a késleltetés lejár, a felhasználók az operációs rendszer, amely volt elérhető, amikor a késleltetés lett elindítva a legkorábbi verziójára való frissítéséhez értesítést kaphat. A szoftverfrissítések késleltetésének megszüntetéséhez írja be a 0 értéket. Ezek a frissítési beállítások csak felügyelt iOS-eszközökre érvényesek.
+  
+    Például ha IOS-es 12.a érhető el az **január 1-től** és rendelkezik **késleltetés operációs rendszer frissítése** beállítása **5 nap**, bármilyen célból a rendelkezésre álló frissítést nem jelennek meg, hogy adott verziót a felhasználói eszközök hozzárendelni. Az a **hatodik nap** következő engedje, hogy a frissítés elérhetőként jelenik meg, és minden végfelhasználók szabadon frissítés kezdeményezése.
 
-6. A módosítások mentéséhez válassza az **OK** gombot. Válassza a **Létrehozás** lehetőséget a szabályzat létrehozásához.
+
+6. Válassza ki **OK** a módosítások mentéséhez. Válassza a **Létrehozás** lehetőséget a szabályzat létrehozásához.
 
 A szabályzat létrejön, és megjelenik a szabályzatok listájában. Az Apple mobileszköz-kezelése nem teszi lehetővé, hogy a készülékek számára kikényszerítse a frissítések adott időpontban történő telepítését. 
 
@@ -44,7 +47,7 @@ A szabályzat létrejön, és megjelenik a szabályzatok listájában. Az Apple 
 1. A **Szoftverfrissítések** területen válassza **iOS-frissítési szabályzatok** lehetőséget.
 2. Válasszon ki egy meglévő szabályzatot > **Tulajdonságok**.
 3. Frissítse a korlátozás időpontjait:
-
+    
     1. Válassza ki a hét napjait
     2. Válassza ki, hogy melyik időzóna szerint kívánja alkalmazni a szabályzatot
     3. Adja meg a feketelistás órák kezdő és záró idejét
