@@ -231,19 +231,19 @@ items:
       href: troubleshoot-device-enrollment-in-intune.md
   - name: Eszközmegfelelőség beállítása
     items:
-    - name: Eszközmegfelelőség – áttekintés
+    - name: Megfelelőség – áttekintés
       href: device-compliance-get-started.md
-    - name: Android-szabályzat létrehozása
+    - name: Android-megfelelőség
       href: compliance-policy-create-android.md
-    - name: Android Enterprise-profilszabályzat létrehozása
+    - name: Android Enterprise-megfelelőség
       href: compliance-policy-create-android-for-work.md
-    - name: Szabályzat létrehozása a Google Play Protect-támogatáshoz
+    - name: A Google Play Protect engedélyezése
       href: compliance-policy-create-google-play-protect.md
-    - name: iOS-szabályzat létrehozása
+    - name: iOS-megfelelőség
       href: compliance-policy-create-ios.md
-    - name: Windows-szabályzat létrehozása
+    - name: Windows-megfelelőség
       href: compliance-policy-create-windows.md
-    - name: Helyalapú házirend
+    - name: Helyalapú megfelelőség
       href: use-network-locations.md
     - name: Házirend kiértékelése
       href: policy-evaluate.md
@@ -251,39 +251,39 @@ items:
       href: actions-for-noncompliance.md
     - name: Az eszközmegfelelőség figyelése
       href: compliance-policy-monitor.md
-  - name: Eszközök konfigurálása
+  - name: Eszközbeállítások megadása
     items:
-    - name: Eszközök konfigurálása profilokkal
+    - name: Eszközök konfigurálása – áttekintés
       href: device-profiles.md
     - name: Eszközprofilok
       href: device-profile-create.md
     - name: Felügyeleti sablonok
       href: administrative-templates-windows.md
-    - name: Eszközfunkciók (iOS és macOS)
+    - name: Eszközfunkciók
       href: device-features-configure.md
-    - name: Eszközkorlátozások
+    - name: Eszközbeállítások és -funkciók korlátozása
       href: device-restrictions-configure.md
-    - name: Teljesítésoptimalizálás
+    - name: Frissítések kiadása
       href: delivery-optimization-windows.md
-    - name: Kiadásfrissítés és módváltás
+    - name: Kiadások frissítése és az S mód
       href: edition-upgrade-configure-windows-10.md
-    - name: E-mail beállítások
+    - name: E-mail konfigurálása
       href: email-settings-configure.md
-    - name: Kioszkbeállítások
+    - name: Teljes képernyős mód engedélyezése
       href: kiosk-settings.md
-    - name: VPN-beállítások
+    - name: VPN hozzáadása
       href: vpn-settings-configure.md
       items:
       - name: Alkalmazásonkénti VPN Androidhoz
         href: android-pulse-secure-per-app-vpn.md
       - name: Alkalmazásonkénti VPN iOS-hez
         href: vpn-setting-configure-per-app.md
-    - name: Wi-Fi-beállítások
+    - name: Vezeték nélküli Wi-Fi-hálózat választása
       href: wi-fi-settings-configure.md
       items:
       - name: Wi-Fi előmegosztott kulccsal
         href: wi-fi-profile-shared-key.md
-    - name: Oktatási beállítások
+    - name: Education – Vizsgaalkalmazás
       href: education-settings-configure.md
     - name: Többfelhasználós megosztott eszközök
       href: shared-user-device-settings.md
@@ -295,7 +295,7 @@ items:
       href: device-profile-assign.md
     - name: Profilok monitorozása
       href: device-profile-monitor.md
-    - name: Profilok hibaelhárítása
+    - name: Gyakori kérdések és válaszok
       href: device-profile-troubleshoot.md
   - name: Eszközadatok védelme
     items:
@@ -854,6 +854,8 @@ items:
       items:
       - name: Intune API – referencia
         href: https://developer.microsoft.com/graph/docs/api-reference/beta/resources/intune_graph_overview
+    - name: Eszközök konfigurálásához használt Graph API-k
+      href: graph-apis-used-by-intune-device-configuration-windows.md
 - name: Erőforrások
   items:
   - name: A Microsoft Intune-dokumentáció útmutatója
@@ -949,9 +951,9 @@ items:
       href: data-outside-protect.md
     - name: Adatszivárgás megakadályozása nem felügyelt eszközökön
       href: data-leak-prevention.md
-ms.openlocfilehash: 9ba87d149285aea0e39e790f7e620bba52bb47bd
-ms.sourcegitcommit: 36e41b5164a72bf54c80a9f5ad054f77b0e8c07e
+ms.openlocfilehash: 456d3f4205ca9e24c4358c97a3a2f6a33d1a421f
+ms.sourcegitcommit: 4a1ac07efd66b45c1435649bcd7215adbd84898f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55504544"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55645189"
