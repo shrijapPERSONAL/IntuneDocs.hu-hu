@@ -5,173 +5,142 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 02/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
-ms.reviewer: karanda
+ms.reviewer: tycast
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 12131fe0b78814850cfadee15533620dd5813f6c
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.openlocfilehash: c0177e136d516ba1d4fe44c7301b1534ab1c5e6a
+ms.sourcegitcommit: 12f8b7f0bca1baa2c1f68dd6af4f16a4814daa11
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297400"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55737468"
 ---
-# <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Alkalmazásonkénti virtuális magánhálózat (VPN) beállítása az Intune-ban iOS-eszközökhöz
+# <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>Állítsa be alkalmazásonkénti virtuális magánhálózati (VPN) iOS-eszközökhöz az Intune-ban
 
-Megadhatja, hogy mely felügyelt alkalmazások használhatják virtuális magánhálózatát (VPN-jét) az Intune által felügyelt iOS-eszközökön. Alkalmazásonkénti VPN Intune-beli megadása esetén a felhasználó a céges dokumentumok elérésekor automatikusan az Ön VPN-jén keresztül csatlakozik.
+A Microsoft Intune hozzon létre, és virtuális magánhálózatok (VPN) az alkalmazáshoz társított használja. Ez a szolgáltatás "alkalmazásonkénti VPN" nevezzük. Úgy dönt, hogy a felügyelt alkalmazások használhatják a VPN-jét az Intune által felügyelt eszközökön. Alkalmazásonkénti VPN-ek használata esetén a végfelhasználók automatikusan a VPN-kapcsolaton keresztül csatlakozzon és hozzáférhet a munkahelyi erőforrásokhoz, például dokumentumok.
 
-Alkalmazásonkénti VPN jelenleg a következő szolgáltatókhoz érhető el:
+Ez a funkció az alábbiakra vonatkozik:
 
- - Check Point Remote Access VPN
- - Cisco AnyConnect
- - Citrix
- - F5
- - Pulse Connect Secure
- - Palo Alto Hálózatok
- - SonicWall
- - Zscaler Private Access
+- iOS 9-es és újabb verziók
+
+A VPN-szolgáltató dokumentációban megtekintheti, ha a VPN-JE támogatja-e az alkalmazásonkénti VPN.
+
+Ez a cikk bemutatja, hogyan hozhat létre alkalmazásonkénti VPN-profil, és hozzárendelni a profilt az alkalmazások. Ezek a lépések használatával hozzon létre egy zökkenőmentes alkalmazásonkénti VPN-élmény a végfelhasználók számára. A legtöbb VPN-EK, amelyek támogatják az alkalmazásonkénti VPN a felhasználó megnyitja az alkalmazást, és automatikusan csatlakozik a VPN-t.
+
+Egyes VPN-eket felhasználónév- és jelszóalapú hitelesítés az alkalmazásonkénti VPN engedélyezése. Ami azt jelenti, felhasználók meg kell adnia egy felhasználónevet és jelszót szeretne csatlakozni a VPN-t.
+
+## <a name="per-app-vpn-with-zscaler"></a>Alkalmazásonkénti VPN Zscaler szolgáltatással
+
+Zscaler privát hozzáférést (ZPA) együttműködik az Azure Active Directory (Azure AD-) hitelesítés. ZPA használatakor nem kell a [megbízható tanúsítvány](#create-a-trusted-certificate-profile) vagy [SCEP- vagy PKCS-tanúsítvány](#create-a-scep-or-pkcs-certificate-profile) (ebben a cikkben ismertetett) profilok. Ha rendelkezik egy alkalmazásonkénti VPN-profil beállítása tartozó Zscaler, nyissa meg a társított alkalmazások automatikusan csatlakozni nem ZPA. Ehelyett a felhasználónak kell először jelentkezzen be a Zscaler alkalmazást. Ezt követően a távelérési korlátozva a társított alkalmazások.
 
 ## <a name="prerequisites-for-per-app-vpn"></a>Az alkalmazásonkénti VPN-re vonatkozó előfeltételek
 
 > [!IMPORTANT]
-> A VPN-szolgáltatója egyéb specifikus követelményeket is előírhat az alkalmazásonkénti VPN-hez, például bizonyos hardver vagy licenc meglétét. Mindenképp ellenőrizze a vonatkozó dokumentációt, és gondoskodjon a követelményeknek való megfelelésről, mielőtt alkalmazásonkénti VPN-t állítana be az Intune-ban.
+> Előfordulhat, hogy a VPN-szállítója egyéb alkalmazásonkénti VPN-hez, például a adott hardverekhez vagy a licencelési követelményeket. Mindenképp ellenőrizze a vonatkozó dokumentációt, és gondoskodjon a követelményeknek való megfelelésről, mielőtt alkalmazásonkénti VPN-t állítana be az Intune-ban.
 
-A VPN-kiszolgáló által identitása igazolásához bemutatott tanúsítványt az eszköznek kérdés nélkül el kell fogadnia. A tanúsítvány automatikus jóváhagyásának biztosításához létre kell hoznia a VPN-kiszolgáló a hitelesítésszolgáltató (CA) által kiadott főtanúsítványát tartalmazó megbízható tanúsítványprofilt. 
+A VPN-kiszolgáló által identitása igazolásához bemutatott tanúsítványt az eszköznek kérdés nélkül el kell fogadnia. Erősítse meg a tanúsítvány automatikus jóváhagyásának, hozzon létre egy megbízható hitelesítésszolgáltatói tanúsítványprofilt, amely tartalmazza a VPN-kiszolgáló legfelső szintű tanúsítványát által a hitelesítésszolgáltató (CA). 
 
-Exportálja a tanúsítványt, és adja hozzá a CA-hoz.
+#### <a name="export-the-certificate-and-add-the-ca"></a>Exportálja a tanúsítványt, és adja hozzá a hitelesítésszolgáltató
 
-1. Nyissa meg a felügyeleti konzolt, a VPN-kiszolgálón.
+1. A VPN-kiszolgálón nyissa meg a felügyeleti konzolon.
 2. Győződjön meg arról, hogy a VPN-kiszolgáló tanúsítványalapú hitelesítést használ. 
 3. Exportálja a megbízható főtanúsítvány fájlját. Ez .cer kiterjesztéssel rendelkezik, és megbízható tanúsítványprofilok létrehozásakor hozzá kell adnia.
 4. Adja hozzá a VPN-kiszolgálón való hitelesítéshez használt tanúsítványt kiállító hitelesítésszolgáltató nevét.
-    Ha az eszköz által bemutatott hitelesítésszolgáltató szerepel a megbízható hitelesítésszolgáltatóknak a VPN-kiszolgálón található listáján, a VPN-kiszolgáló sikeresen hitelesíti az eszközt.
+
+    Ha az eszköz által bemutatott hitelesítésszolgáltató megegyezik a hitelesítésszolgáltató a megbízható Hitelesítésszolgáltatói listában a VPN-kiszolgálón, majd a VPN-kiszolgáló sikeresen hitelesíti az eszközt.
 
 ## <a name="create-a-group-for-your-vpn-users"></a>Csoport létrehozása VPN-felhasználók számára
 
-Válasszon egy meglévő csoportot az Azure Active Directoryban (Azure AD), illetve hozzon létre egy újat, amely az alkalmazásonkénti VPN-hez hozzáféréssel rendelkező tagokat tartalmazza.
-
-1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
-2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
-2. Kattintson a **Csoportok**, majd az **Új csoport** elemre.
-3. Válassza ki a csoport számára a **Csoport típusát**. 
-3. Adja meg a csoport számára a **Csoport nevét**. 
-4. Adja meg a csoport számára a **Csoport leírását**. 
-5. Adja meg a **Hozzárendelt** beállítást a **Tagság típusa** elemhez.
-7. A VPN-felhasználókat név vagy e-mail-cím alapján keresheti a **Tagok** panelen.
-8. Jelöljön ki minden felhasználót, és kattintson a **Kiválasztás** lehetőségre.
-9. Kattintson a **Létrehozás** gombra.
+Hozzon létre, vagy válasszon egy meglévő csoportot az Azure Active Directoryban (Azure AD) a felhasználók vagy eszközök alkalmazásonkénti VPN-használó. Új csoport létrehozásához lásd: [adja hozzá a felhasználók és eszközök rendszerezéséhez csoportok](groups-add.md).
 
 ## <a name="create-a-trusted-certificate-profile"></a>Megbízható tanúsítványprofil létrehozása
 
 Importálja az Intune-ban létrehozott profilba a VPN-kiszolgáló a CA által kiadott legfelső szintű tanúsítványát. A megbízható tanúsítványprofil arra utasítja az iOS-eszközt, hogy tekintse automatikusan megbízhatónak a VPN-kiszolgáló által bemutatott CA-t.
 
-1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
-2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
-2. Válassza az **Eszközkonfiguráció**, majd a **Profilok** lehetőséget.
-3. Kattintson a **Profil létrehozása** gombra. A **Profil létrehozása** párbeszédpanelen:
-    1. Adja meg a **nevet**.
-    2. Adja meg a **leírást**.
-    3. A **Platform** beállításban válassza az **iOS** lehetőséget.
-    4. A **Profil típusa** beállításban válassza a **Megbízható tanúsítvány** a lehetőséget.
-4. Kattintson a mappa ikonra, és keresse meg a VPN-felügyeleti konzolból exportált VPN-tanúsítványát (.cer-fájl). Kattintson az **OK** gombra.
-5. Kattintson a **Create** (Létrehozás) gombra.
+1. Az a [az Azure portal](https://portal.azure.com), jelölje be **minden szolgáltatás** > szűréséhez **Intune** > Válassza ki **Intune**.
+2. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
+3. Adja meg a következő tulajdonságokat:
+    - **Name (Név)**
+    - **Leírás**
+    - **Platform**: Válassza ki **iOS**.
+    - **Profil típusa**: Válassza ki **megbízható tanúsítvány**.
+4. Válassza ki a mappa ikont, és keresse meg a a VPN-felügyeleti konzolból exportált VPN-tanúsítványának (.cer fájl). 
+5. Válassza ki **OK** > **létrehozása**.
 
-    ![Megbízható tanúsítványprofil létrehozása](./media/vpn-per-app-create-trusted-cert.png)
+    ![Hozzon létre egy megbízható hitelesítésszolgáltatói tanúsítványprofilt, az iOS-eszközök Microsoft Intune-ban](./media/vpn-per-app-create-trusted-cert.png)
 
-## <a name="create-a-scep-certificate-profile"></a>SCEP-tanúsítványprofil létrehozása
+## <a name="create-a-scep-or-pkcs-certificate-profile"></a>Egy SCEP- vagy PKCS-tanúsítványprofil létrehozása
 
-A megbízható főtanúsítvány-profil lehetővé teszi, hogy az iOS automatikusan megbízhatónak tekintse a VPN-kiszolgálót. Az SCEP-tanúsítvány biztosítja az iOS VPN-ügyfél hitelesítő adatait a VPN-kiszolgálónak. A tanúsítvány lehetővé teszi az iOS-eszközök számára a felhasználó értesítése nélkül csendes hitelesítést a felhasználónév és a jelszó bekérése nélkül. 
+A megbízható főtanúsítvány-profil lehetővé teszi, hogy az eszköz automatikusan megbízhatónak a VPN-kiszolgáló. Az SCEP- vagy PKCS-tanúsítvány az IOS-es VPN-ügyfél a VPN-kiszolgáló hitelesítő adatokat biztosít. A tanúsítvány lehetővé teszi, hogy az eszköz számára a felhasználónév és jelszó értesítése nélkül csendes hitelesítést. 
 
-1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
-2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
-2. Válassza az **Eszközkonfiguráció**, majd a **Profilok** lehetőséget.
-3. Kattintson a **Profil létrehozása** gombra. A **Profil létrehozása** párbeszédpanelen:
-    1. Adja meg a **nevet**.
-    2. Adja meg a **leírást**.
-    3. A **Platform** beállításban válassza az **iOS** lehetőséget.
-    4. A **Profil típusa** beállításban válassza az **SCEP-tanúsítvány** a lehetőséget.
-4. Válassza az **év** lehetőséget, és a **Tanúsítvány érvényességi időtartama** mezőbe írja be a `2` értéket.
-5. A **Tulajdonos nevének formátuma** beállításban válassza a **Köznapi név** lehetőséget.
-6. A **Tulajdonos alternatív neve** beállításban válassza a **Felhasználói egyszerű név (UPN)** lehetőséget.
-7. A **Kulcshasználat** beállításban válassza a **Digitális aláírás** és **Kulcstitkosítás** lehetőséget.
-8. A **Kulcsméret (bit)** beállításban válassza a **2048** lehetőséget.
-9. Kattintson a Főtanúsítvány elemre, és válasszon egy SCEP-tanúsítványt. Kattintson az **OK** gombra.
-10. A **Kibővített kulcshasználat** **Név** beállításában adja meg a `Client Authentication` értéket.
-11. Az **objektum azonosítójaként** adja meg az `1.3.6.1.5.5.7.3.2` értéket.
-12. Kattintson a **Hozzáadás**lehetőségre.
-13. Adja meg a ***kiszolgáló URL-címét***, majd kattintson a **Hozzáadás** gombra.
-14. Kattintson az **OK** gombra.
-15. Kattintson a **Create** (Létrehozás) gombra.
+Konfigurálásához, és az ügyfél-hitelesítési tanúsítvány hozzárendelése, tekintse meg a következő cikkeket:
 
-    ![SCEP-tanúsítványprofil létrehozása](./media/vpn-per-app-create-scep-cert.png)
+- [SCEP-tanúsítványok konfigurálása és kezelése az Intune-nal](certificates-scep-configure.md)
+- [PKCS-tanúsítványok konfigurálása és kezelése az Intune-nal](certficates-pfx-configure.md)
+
+Mindenképpen konfigurálja a tanúsítványt az ügyfél-hitelesítéshez. Közvetlenül a SCEP-tanúsítványprofilok állíthat (**kibővített kulcshasználat** lista > **ügyfél-hitelesítés**). A PKCS használatára állítsa be a tanúsítványsablon a hitelesítésszolgáltató (CA) az ügyfél-hitelesítéshez.
+
+![A Microsoft Intune, beleértve a tulajdonos nevének formátuma, kulcshasználat, kibővített kulcshasználat és további SCEP-tanúsítványprofil létrehozásához](./media/vpn-per-app-create-scep-cert.png)
 
 ## <a name="create-a-per-app-vpn-profile"></a>Alkalmazásonkénti VPN-profil létrehozása
 
-A VPN-profil tartalmazza az ügyfél-hitelesítő adatokat tartalmazó SCEP-tanúsítványt, a VPN-hez tartozó kapcsolati adatokat és az alkalmazásonkénti VPN jelzőt az alkalmazásonkénti VPN funkció használatának engedélyezéséhez az iOS alkalmazásban.
+A VPN-profil tanúsítványt tartalmaz, az SCEP- vagy PKCS és az ügyfél-hitelesítő adatok, a VPN-hez, a kapcsolatadatokat, és az alkalmazásonkénti VPN jelzőt az alkalmazásonkénti VPN funkció engedélyezéséhez használja az iOS-alkalmazás.
 
-1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
-2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
-2. Válassza az **Eszközkonfiguráció**, majd a **Profilok** lehetőséget.
-3. Kattintson a **Profil létrehozása** gombra. A **Profil létrehozása** párbeszédpanelen:
-    1. Adja meg a **nevet**.
-    2. Adja meg a **leírást**.
-    3. A **Platform** beállításban válassza az **iOS** lehetőséget.
-    4. A **Profil típusa** beállításban válassza a **VPN** lehetőséget.
-4. Válassza az **Alapszintű VPN** lehetőséget. Az **Alapszintű VPN** párbeszédpanelen:
-    1. Adja meg a **kapcsolat nevét**.
-    2. Adja meg a **kiszolgáló IP-címét vagy teljes tartománynevét**.
-    3. A **Hitelesítési módszer** beállításban válassza a **Tanúsítványok** lehetőséget.
-    4. Válassza ki az SCEP-tanúsítványt a **Hitelesítési tanúsítvány** területen, és kattintson az **OK** gombra.
-    5. A **kapcsolat típusaként** válassza a VPN-t.
-    6. Ha szükséges, konfigurálja a VPN jellemzőit.
-    7. Válassza a **Megosztott protokollbújtatás letiltását**.
-5. Kattintson az **Automatikus VPN** elemre. Az **Automatikus VPN** párbeszédpanelen:
-    1. Az **Automatikus VPN típusa** beállításban válassza az **Alkalmazásonkénti VPN** lehetőséget.
-    2. Írja be a VPN URL-címét, majd kattintson a **Hozzáadás** gombra.
-    3. Kattintson az **OK** gombra.
-6. Kattintson az **OK** gombra.
-7. Kattintson a **Create** (Létrehozás) gombra.
+1. A **Intune**válassza **eszközkonfiguráció** > **profilok** > **profil létrehozása**. 
+2. Adja meg a következő tulajdonságokat: 
+    - **Name (Név)**
+    - **Leírás**
+    - **Platform**: Válassza ki **iOS**.
+    - **Profil típusa**: Válassza ki **VPN**.
+3. A **kapcsolattípus**, válassza ki a VPN-ügyfél alkalmazást.
+4. Válassza az **Alapszintű VPN** lehetőséget. [iOS-es VPN-beállítások](vpn-settings-ios.md) felsorol és ismertet minden beállítást. Alkalmazásonkénti VPN használata esetén mindenképp listában állítsa be a következő tulajdonságokat: 
+    
+    - **Hitelesítési módszer**: Válassza ki **tanúsítványok**. 
+    - **Hitelesítési tanúsítvány**: Válassza ki a meglévő SCEP- vagy PKCS-tanúsítvány > **OK**.      
+    - **Vegyes Alagútkezelés**: Válassza ki **letiltása** kényszerítése minden forgalom a VPN-alagút használandó, ha a VPN-kapcsolat aktív. 
 
-    ![Alkalmazásonkénti VPN-profil létrehozása](./media/vpn-per-app-create-vpn-profile.png)
+      ![Egy alkalmazásonkénti VPN-profilt adja meg a kapcsolat, IP-cím vagy teljes Tartományneve, a hitelesítési módszert, és a Microsoft Intune-ban tunning felosztása](./media/vpn-per-app-create-vpn-profile.png)
 
+    Az egyéb beállításokkal további információkért lásd: [VPN-beállítások IOS-es](vpn-settings-ios.md).
+
+5. Válassza ki **automatikus VPN** > **automatikus VPN típusának** > **alkalmazásonkénti VPN**
+
+    ![Az Intune-ban állítsa be az automatikus VPN alkalmazásonkénti VPN iOS-eszközökön](./media/vpn-per-app-automatic.png)
+
+6. Válassza ki **OK** > **OK** > **létrehozása**.
 
 ## <a name="associate-an-app-with-the-vpn-profile"></a>Alkalmazás társítása a VPN-profillal
 
 Miután hozzáadta a VPN-profilt, társítsa az alkalmazást és a Microsoft Azure Active Directory-csoportot a profillal.
 
-1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
-2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
-3. Válassza az **Ügyfélalkalmazások** lehetőséget.
-4. Kattintson az **Alkalmazások** elemre.
-5. Válassza ki az alkalmazást az alkalmazások listájából.
-6. Kattintson a **Hozzárendelések** lehetőségre
-7. Kattintson a **Csoport hozzáadása** parancsra.
-8. Válassza a **Szükséges** elemet a **Hozzárendelés típusa** beállításnál a **Csoport hozzáadása** panelen.
-9. Válassza ki a korábban definiált csoportot, és válassza az **Alkalmazás szükségessé tétele** lehetőséget.
-10. Válassza ki a VPN-definíciót a **VPN-hez**.
- 
-    > [!NOTE]  
-    > Egyes esetekben akár egy percig is eltarthat, amíg a VPN-definíció kikeresi az értéket. Várjon 3–5 percet, mielőtt a **Mentésre** kattintana.
+1. Az **Intune-ban** válassza az **Ügyfélalkalmazások** > **Alkalmazások** elemet.
+2. Válasszon ki egy alkalmazást a listából > **hozzárendelések** > **csoport hozzáadása**.
+3. A **hozzárendelés-típus**válassza **szükséges** vagy **regisztrált eszközökhöz elérhető**.
+4. Válassza ki **tartalmazott csoportok** > **válassza ki a befoglalandó csoportokat** > Válassza ki azt a csoportot [létrehozott](#create-a-group-for-your-vpn-users) (a jelen cikkben) > **kiválasztása**.
+5. A **VPN-eket**, válassza ki az alkalmazásonkénti VPN-profil [létrehozott](#create-a-per-app-vpn-profile) (a jelen cikkben).
 
-11. Kattintson az **OK** gombra, majd a **Mentés** lehetőségre.
+    ![Egy alkalmazás a Microsoft Intune-ban az alkalmazásonkénti VPN-profil hozzárendelése](./media/vpn-per-app-app-to-vpn.png)
 
-    ![Alkalmazás társítása a VPN-nel](./media/vpn-per-app-app-to-vpn.png)
+6. Válassza ki **OK** > **mentése**.
 
-Az alkalmazás és profil közötti társítás el lesz távolítva az eszköz legközelebbi bejelentkezésekor, ha az alábbi feltételek teljesülnek:
+Alkalmazás és a egy profil közötti társítás eltávolítása során a következő eszköz bejelentkezését az alábbi feltételek mindegyikének létezik:
+
 - Az alkalmazás meg lett jelölve kötelező telepítéshez.
 - A profil és az alkalmazás ugyanazt a csoportot célozza.
 - Az alkalmazásonkénti VPN-konfigurációt eltávolítja az alkalmazás-hozzárendelésből.
 
-Az alkalmazás és profil közötti társítás egészen addig megmarad, amíg a végfelhasználó nem kérelmez újratelepítést a vállalati portálról, ha az alábbi feltételek teljesülnek:
+Alkalmazás és a egy profil közötti társítás továbbra is fennáll, addig, amíg a felhasználó kérelmezi egy újratelepítése vállalati portálról, ha az alábbi feltételek mindegyikének létezik:
+
 - Az alkalmazás meg lett jelölve választható telepítéshez.
 - A profil és az alkalmazás ugyanazt a csoportot célozza.
-- A végfelhasználó a vállalati portálon kérvényezte az alkalmazástelepítést, aminek eredményeképp az alkalmazás és a profil telepítve lett az eszközön.
+- A végfelhasználó kért alkalmazás telepítése a vállalati portálról, amely alkalmazás és az eszközre telepítendő profil eredményez.
 - Módosítja az alkalmazásonkénti VPN-konfigurációt, illetve eltávolítja az alkalmazás-hozzárendelésből.
 
 ## <a name="verify-the-connection-on-the-ios-device"></a>A kapcsolat ellenőrzése az iOS-eszközön
@@ -180,35 +149,16 @@ Az alkalmazásonkénti VPN beállítását és az alkalmazáshoz való társít�
 
 ### <a name="before-you-attempt-to-connect"></a>Mielőtt megpróbálna kapcsolódni
 
- - Az iOS 9-es vagy újabb verzióját kell futtatnia.
- - Győződjön meg arról, hogy az *összes* fent említett szabályzatot üzembe helyezte ugyanazon felhasználói csoporthoz. Ennek elmulasztása mindenképpen meggátolja az alkalmazásonkénti VPN működését.  
- - Győződjön meg róla, hogy a támogatott külső VPN-alkalmazás telepítve van. A rendszer a következő VPN-alkalmazásokat támogatja:
-    - Check Point Capsule Connect
-    - Cisco AnyConnect
-    - Citrix VPN
-    - Citrix SSO
-    - F5 Access
-    - Palo Alto Hálózatok GlobalProtect
-    - Pulse Secure
-    - SonicWall Mobile Connect
-    - Zscaler
-
-    > [!NOTE]
-    > Ha a Pulse Secure VPN-alkalmazást használja, választhat az alkalmazási rétegbeli és a csomagrétegbeli alagútkezelés között. A **Szolgáltatótípus** értékét az alkalmazásrétegbeli alagútkezeléshez állítsa az **alkalmazásproxy** lehetőségre, a csomagrétegbeli alagútkezeléshez állítsa a **csomagalagút** lehetőségre.
+ - Ellenőrizze, hogy az összes fent említett házirend ugyanabban a csoportban üzembe. Az alkalmazásonkénti VPN élmény nem fog működni.
+ - Ha a Pulse Secure VPN-alkalmazást, vagy egy egyéni VPN-ügyfél alkalmazást használ, válassza a alkalmazási rétegbeli vagy a csomag-réteg-Alagútkezelés használata. A **Szolgáltatótípus** értékét az alkalmazásrétegbeli alagútkezeléshez állítsa az **alkalmazásproxy** lehetőségre, a csomagrétegbeli alagútkezeléshez pedig állítsa a **csomagalagút** lehetőségre. A VPN-szolgáltató dokumentációban, győződjön meg arról, hogy a megfelelő értéket használja.
 
 ### <a name="connect-using-the-per-app-vpn"></a>Alkalmazásonkénti VPN-en keresztüli csatlakozás
 
 A VPN kiválasztása vagy a hitelesítő adatok megadása nélküli csatlakozással ellenőrizze a beavatkozás nélküli működést. A beavatkozás nélküli működés azt jelenti, hogy:
 
- - Az eszköz nem kéri Önt, hogy minősítse megbízhatónak a VPN-kiszolgálót. Ez azt jelenti, hogy nem jelenik meg a **dinamikus megbízhatósági** párbeszédpanel.
- - Nem kell beírnia a hitelesítő adatokat.
- - Amint a Csatlakozás gombra koppint, csatlakozik a VPN-hez.
-
-Ellenőrizze a kapcsolatot egy iOS-eszközön.
-
-1. Koppintson a VPN-alkalmazásra.
-2. Koppintson a **Csatlakozás** gombra.  
-A VPN további kérdések megjelenítése nélkül sikeresen kapcsolódik.
+ - Az eszköz nem megkérdezi, hogy bízzon meg a VPN-kiszolgáló. Ez azt jelenti, hogy a felhasználó nem jelennek meg a **dinamikus megbízhatósági** párbeszédpanel bezárásához.
+ - A felhasználó nem rendelkezik beírnia a hitelesítő adatokat.
+ - A felhasználó eszköze a VPN-hez csatlakoztatva van, amikor a felhasználó megnyitja a társított alkalmazások közül.
 
 <!-- ## Troubleshooting the per-app VPN
 
@@ -225,4 +175,4 @@ To review event logs:
 ## <a name="next-steps"></a>További lépések
 
 - Az iOS-es beállítások ellenőrzéséhez lásd: [iOS-eszközökre vonatkozó VPN-beállítások a Microsoft Intune-ban](vpn-settings-ios.md).
--  A VPN-beállításokkal és az Intune-nal kapcsolatos további információkért lásd: [A VPN-beállítások konfigurálása a Microsoft Intune-ban](vpn-settings-configure.md).
+- VPN-beállításokkal és az Intune-nal kapcsolatos további információkért lásd: [VPN-beállítások konfigurálása a Microsoft Intune-ban](vpn-settings-configure.md).

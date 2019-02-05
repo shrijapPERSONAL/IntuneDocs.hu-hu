@@ -2,10 +2,10 @@
 title: Biztonsági alapterveket használja a Microsoft Intune – Azure |} A Microsoft Docs
 description: Adja hozzá, vagy a felhasználó és a Microsoft Intune-nal a mobileszköz-felügyelet eszközökön lévő adatok védelme érdekében ajánlott biztonsági beállítások konfigurálása. Engedélyezze a bitlockert, a Windows Defender komplex veszélyforrások elleni védelem konfigurálása, szabályozhatja az Internet Explorer, SmartScreen használata, helyi biztonsági házirendek beállítása, jelszó kérése, internetes tölt le, és további letiltása.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 02/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,16 +14,16 @@ ms.assetid: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: afc5faff7ea06bca07c06aadb887aa199739c6c0
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.openlocfilehash: 8102ab88e878f7976ab7946f67080c4d4f23d6b1
+ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55229925"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690716"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Az Intune-ban Windows 10 biztonsági alapterv létrehozása
 
-Biztonsági alapterveket funkciója, amely vagy újabb Windows 10 rendszerű eszközökhöz érhető el előzetes verzióban érhető el. Ez a funkció számos Intune-ban beállításokat tartalmaz a felhasználók és eszközök védelme és védelmének elősegítésére. Biztonsági csapat által javasolt értékek ezek a beállítások automatikusan is beállítja. Az alapkonfiguráció például automatikusan engedélyezi a Bitlockert, automatikusan az eszköz zárolásának feloldásához jelszó szükséges, automatikusan letiltja, és alapszintű hitelesítést.
+Biztonsági alapterveket funkciója, amely vagy újabb Windows 10 rendszerű eszközökhöz érhető el előzetes verzióban érhető el. Ez a funkció, amellyel védelme érdekében, és a felhasználók és eszközök védelme az Intune által támogatott számos beállításokat tartalmaz. Biztonsági csapat által javasolt értékek ezek a beállítások automatikusan is beállítja. Az alapkonfiguráció például automatikusan engedélyezi a Bitlockert, automatikusan az eszköz zárolásának feloldásához jelszó szükséges, automatikusan letiltja, és alapszintű hitelesítést.
 
 Ez a funkció az alábbiakra vonatkozik:
 
@@ -94,6 +94,12 @@ A profil létrehozását követően készen áll a felhasználók, eszközök é
 
 Amint menti, a profil át lett helyezve eszközök során, hogy jelentkezzen be az Intune-ban. Tehát akkor fordulhat elő, azonnal.
 
+## <a name="available-security-baselines"></a>Biztonsági alapterveket  
+
+A következő biztonsági előírások az Intune-nal való használatra kilistázása.
+- **Előzetes verzió: Mobileszköz-kezelési biztonsági alapterv**
+  - Verzió: [2018. október](security-baseline-settings-windows.md)
+
 ## <a name="q--a"></a>Kérdések és válaszok
 
 #### <a name="why-these-settings"></a>Miért ezek a beállítások?
@@ -117,5 +123,5 @@ Szigorúan véve, nem. A Microsoft biztonsági csapat olvas, szervezetek, péld�
 - Áttérés a helyszíni Active Directory csoportházirendjei-ről az Azure Active Directory (AD) használatával a Microsoft Intune-nal tiszta felhőalapú megoldásokhoz. Annak érdekében, nincsenek hibrid AD és az Azure AD-hez csatlakoztatott eszközök közzétett csoportházirend-objektumok kiegészítő. Ezek az eszközök beszerezheti a mobileszköz-kezelési beállításokat a felhőből (Intune) és a csoportházirend-beállítások helyi tartományvezérlőkön, szükség szerint.
 
 ## <a name="next-steps"></a>További lépések
-
-Ellenőrizze az állapotát és a figyelő a [alapkonfiguráció és a profil](security-baselines-monitor.md).
+- Nézet a [Windows biztonsági Alapterv beállítások](security-baseline-settings-windows.md) az Intune által támogatott.  
+- Ellenőrizze az állapotát és a figyelő a [alapkonfiguráció és a profil](security-baselines-monitor.md).

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/31/2019
+ms.date: 02/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: e471c14bddd80e88931326c0fad7a2a4fd85f73b
-ms.sourcegitcommit: 00fe2b601e3becbe5d644fcbd35a706da3b43af2
+ms.openlocfilehash: 996b4d85da41b480d73d7a79011e2bbd732ea334
+ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55652663"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690835"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -45,6 +45,13 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Emellett tá
 ### Role-based access control
 
 -->     
+## <a name="week-of-february-4-2019"></a>2019. február 4 hét
+
+### <a name="app-management"></a>Alkalmazáskezelés
+
+#### <a name="intune-macos-company-portal-dark-mode----3300524-eeready---"></a>Intune-ban macOS céges portálra sötét üzemmód <!-- 3300524 eeready -->
+Az Intune-ban macOS céges portálra sötét mód mostantól támogatja a macOS-hez. Ha engedélyezi a sötét üzemmód 10.14 + macOS-eszközön, a vállalati portál lehetőség a megjelenését, amely mutatja, hogy a üzemmód színeket.
+
 ## <a name="week-of-january-21-2019"></a>2019. január 21 hete
 
 ### <a name="app-management"></a>Alkalmazáskezelés

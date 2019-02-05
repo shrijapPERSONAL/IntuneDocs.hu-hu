@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/15/2019
+ms.date: 02/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: d0fcb021545d96fe8f5bfdf742dd4d181c91fb1a
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.openlocfilehash: 184f70aefbdc90c301ef2f97c5a3abb5ac49a4a8
+ms.sourcegitcommit: 12f8b7f0bca1baa2c1f68dd6af4f16a4814daa11
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831564"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55737485"
 ---
 # <a name="manage-software-updates-in-intune"></a>Szoftverfrissítések kezelése az Intune-ban
 
@@ -167,7 +167,7 @@ A frissítések felfüggesztésétől számítva legfeljebb 35 napig megakadály
 > A felfüggesztési parancsot a kiadása után az eszközök akkor kapják meg, amikor legközelebb bejelentkeznek a szolgáltatásba. Megtörténhet, hogy mielőtt bejelentkeznek, még telepítenek egy ütemezett frissítést.
 > Ha az adott eszköz ki van kapcsolva a felfüggesztési parancs kiadásakor, akkor a bekapcsolása után esetleg letölthet és telepíthet ütemezett frissítéseket, mielőtt bejelentkezik az Intune-ba.
 
-### <a name="uninstall-the-latest-from-windows-10-software-updates"></a>A Windows 10 legújabb szoftverfrissítéseinek eltávolítása 
+## <a name="uninstall-the-latest-from-windows-10-software-updates"></a>A Windows 10 legújabb szoftverfrissítéseinek eltávolítása 
 Ha kritikus problémát tapasztal a Windows 10 rendszerű gépein, akkor választhatja az utolsó funkciófrissítés vagy az utolsó minőségi frissítés eltávolítását (vagyis a korábbi verzió visszaállítását). A funkciófrissítések és minőségi frissítések eltávolításának lehetősége csak ahhoz a karbantartási csatornához érhető el, amelyhez az eszköz tartozik. Az eltávolítás aktivál egy szabályzatot, mely visszaállítja az előző frissítést a Windows 10 rendszerű gépein. A funkciófrissítések esetében korlátozhatja 2–60 napra a legújabb verzió eltávolításának lehetőségét. A szoftverfrissítés eltávolítási lehetőségeinek beállításához:
 
 1. Az Intune-ban válassza a **Szoftverfrissítések** lehetőséget.

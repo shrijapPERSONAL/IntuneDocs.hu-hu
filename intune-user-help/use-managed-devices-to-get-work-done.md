@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e067ce76046355a7da6bb785ae3302c0fc3e8bb9
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 360715881e3d6b2f61e7bf251045fc3356c44f6b
+ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203146"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690682"
 ---
 # <a name="use-managed-devices-to-access-work-or-school-resources"></a>Felügyelt eszközök használata munkahelyi vagy iskolai erőforrások elérésére
 A Microsoft Intune az eszközkezelési rendszer, amely lehetővé teszi a szervezetek az eszközöket, alkalmazásokat és e-mail-hozzáférés kezelése. Kezelés lehetővé teszi, és más alkalmazottai és tanulók, a munkahelyi információkhoz szinte bárhonnan, szinte bármilyen eszközön. Akkor is, ha távolról dolgozik, Ön és a szervezet adatait biztonságban tudhassa.
@@ -39,16 +39,9 @@ Get céges portál által:
 - Ugrás a [céges portál webhelyen](https://go.microsoft.com/fwlink/?linkid=2010980) , hogy a cég támogatási szolgálata fel.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Az alkalmazás és a webhely közötti különbség
-A Vállalati portál alkalmazás és webhely között van néhány kisebb eltérés, de a legtöbb feladatot bármelyiken elvégezheti. Néhány olyan feladat, amelyet elvégezhet:
+Minden Windows 10-es, iOS, macOS és Android rendszerhez készült céges portál alkalmazás zökkenőmentesen integrálható az adott platform az eszközén. A webhely bármely eszközről elérhető, és a függetlenül attól, hogy melyik eszközt használja a azonos, univerzális élményt biztosít. 
 
-- Az eszközök regisztrálása felügyelet céljából
-- Az eszközök állapotának megtekintése
-- Ajánlott és kötelező vállalati alkalmazások letöltése
-- Átnevezheti az eszközét
-- Az eszköz PIN-kódjának vagy jelszavának alaphelyzetbe állítása
-- Segítség kérése az informatikai részlegtől
-
-A Vállalati portál webhelyen, illetve az alkalmazásban elvégezhető feladatok közti különbséget az alábbi hivatkozások egyikén tekintheti meg:
+Céges portál útmutatást találhat az eszköz-platformhoz, kezdve a regisztrációhoz az alábbi hivatkozások alatt:  
 
 - [Android-eszköz használata](using-your-android-device-with-intune.md)
 - [iOS-eszköz használata](using-your-ios-device-with-intune.md)
