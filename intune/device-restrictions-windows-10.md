@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 02/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: e297169757f1bcc703ce698302ce6f7129104827
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.openlocfilehash: 6613b19102aac752e9717fc376d99a178fe9dd3c
+ms.sourcegitcommit: ef85e28df802c974664305270c4a8571c0bb47b9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55230120"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742962"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>A Windows 10 (és újabb) eszközbeállítások engedélyezett vagy korlátozott funkciók az Intune-nal
 
@@ -70,6 +70,7 @@ Ezek a beállítások hozzá egy eszközkonfigurációs profilt az Intune-ban, �
 - **Microsoft-fiók**: Lehetővé teszi, hogy a felhasználó Microsoft-fiókot társítson az eszközhöz.
 - **Nem Microsoft-fiók**: Lehetővé teszi, hogy a felhasználók e-mail fiókokat vegyen fel az eszközön, amelyek nem Microsoft-fiókhoz társítva.
 - **Microsoft-fiók beállításszinkronizálása**: Eszköz- és Alkalmazásbeállítások szinkronizálását az eszközök között Microsoft-fiókkal társított engedélyezése.
+- **A Microsoft Account – bejelentkezési segéd**: Válasszon **letiltása** megakadályozza, hogy a végfelhasználók szabályozása a Microsoft bejelentkezési segéd szolgáltatást (wlidsvc), például manuálisan leállítása, vagy a szolgáltatás indítása. Ha a beállítása **nincs konfigurálva**, a wlidsvc NT-szolgáltatást használ az operációs rendszer (OS) alapértelmezett, amely lehetővé teheti a végfelhasználók számára, hogy a szolgáltatás elindítása és leállítása. Ezt a szolgáltatást használják az operációs rendszer, hogy a felhasználók a saját Microsoft-fiókjával bejelentkezni.
 
 ## <a name="cloud-printer"></a>Felhőbeli nyomtató
 
@@ -192,7 +193,7 @@ Hozzon létre egy kioszkkonfigurációt a **Hozzáadás** gomb használatával (
 ## <a name="locked-screen-experience"></a>Zárolási képernyő felülete
 
 - **Műveletközpont értesítései (csak mobil)**: Engedélyezi a Műveletközpont értesítéseinek megjelenését az eszköz zárolási képernyőjén (csak Windows 10 Mobile esetén).
-- **Zárolt képernyőn kép URL-címe (csak asztali verzióban)**: Adja meg a Windows zárolási képernyőjének háttérképeként használt JPEG formátumú kép URL. Felhasználók nem módosíthatják ezt a beállítást.
+- **Zárolt képernyőn kép URL-címe (csak asztali verzióban)**: Adja meg a Windows zárolási képernyőjének háttérképeként használt JPEG formátumú kép URL. Ez a beállítás zárolja a lemezképet. A kép ezt követően nem módosítható.
 - **Felhasználó által konfigurálható képernyő-időkorlát (csak mobil)**: Lehetővé teszi a felhasználóknak idő beállítása 
 - **Cortana zárolt képernyőn (csak asztali verzióban)**: Nem engedélyezi a felhasználó interakcióba Cortana, ha az eszköz zárolási képernyőjén (csak Windows 10 asztali verzió).
 - **Bejelentési értesítések zárolt képernyőn**: Az eszköz zárolási képernyőjén ábrázoló értesítési üzeneteit letiltása.
@@ -313,7 +314,6 @@ Hozzon létre egy kioszkkonfigurációt a **Hozzáadás** gomb használatával (
   - **Korábbi jelszavak újbóli használatának tiltása**: Ez a beállítás az eszköz által megjegyzett korábbi jelszavak számát határozza meg.
   - **Jelszó kérése, ha az eszköz visszatér inaktív állapotból (csak mobil)**: Azt adja meg, hogy köteles-e a felhasználó jelszót megadnia az eszköz feloldásához (csak Windows 10 Mobile esetén).
   - **Egyszerű jelszavak**: Lehetővé teszi egyszerű jelszavak, például 1111 vagy 1234 használatának engedélyezése. Ez a beállítás a Windows-képjelszavak használatát is engedélyezi vagy letiltja.
-- **Titkosítási**: Titkosítás engedélyezése a megcélzott eszközökön.
 
 ## <a name="per-app-privacy-exceptions"></a>Alkalmazásonkénti adatvédelmi kivételek
 
