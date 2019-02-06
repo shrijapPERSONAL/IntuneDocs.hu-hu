@@ -98,7 +98,7 @@
 ##### [A SandBlast Mobile Protect használata](you-need-to-resolve-a-threat-found-by-checkpoint-ios.md)
 ##### [A Zimperium zIPS használata](you-need-to-resolve-a-threat-found-by-zips-ios.md)
 
-## [macOS-eszköz használata](using-your-macos-device-with-intune.md)
+## macOS-eszköz használata
 ### [Mi történik, ha macOS-eszközt regisztrál?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [macOS-eszköz regisztrálása](enroll-your-device-in-intune-macos-cp.md)
 ### [A cég által biztosított macOS-eszköz regisztrálása](enroll-company-device-macos.md)  
