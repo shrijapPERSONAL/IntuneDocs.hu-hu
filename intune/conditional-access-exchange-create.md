@@ -15,12 +15,12 @@ ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ed996ec17ab0c8144286eeed0a87f07b35da2969
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: 17d64822453c5aeafe4c618879aaef6176e9bbb7
+ms.sourcegitcommit: 09dcc8ba903b66b3fb8b9a71212ccd3194a046fe
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817058"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55763285"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Feltételes hozzáférési szabályzat létrehozása a helyszíni Exchange-hez és régi Dedikált Exchange Online-hoz
 
@@ -80,9 +80,9 @@ A natív **Posta** alkalmazás a Windows 8.1-es és újabb verzióiban (az Intun
 
 1. Miután sikeresen bejelentkezett, megjelenik a **Azure irányítópultján**.
 
-1. Válasszon **minden szolgáltatás** a bal oldali menüben, majd írja be **Intune** box szűrő szövegmezőbe.
+1. Válassza a bal oldali menü **Minden szolgáltatás** pontját, majd írja be a szűrő szövegmezőbe az **Intune** nevet.
 
-1. Válasszon **Intune**, megjelenik a **Intune irányítópultján**.
+1. Az **Intune** kiválasztásával megjelenik az **Intune irányítópultja**.
 
 1. Válassza a **Helyszíni hozzáférés** lehetőséget. A **Helyszíni hozzáférés** panelen látható a feltételes hozzáférési szabályzat állapota, és az, hogy mely eszközökre van hatással.
 

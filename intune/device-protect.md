@@ -3,8 +3,8 @@ title: Eszközök védelme a Microsoft Intune-nal
 titleSuffix: Microsoft Intune
 description: Megismerhet néhány módot, amelyek segítségével az Intune segít megvédeni az eszközét a jogosulatlan hozzáféréstől és más fenyegetésektől.
 keywords: ''
-author: ErikjeMS
-ms.author: erikje
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 07/19/2018
 ms.topic: article
@@ -16,19 +16,19 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 06f14b0ba1edcde28c7f2c732ab286e80f186bf2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 1b751a1637023db138539415a6c52e12d53f1101
+ms.sourcegitcommit: 5b4a6c17bdba2f87e6ae81a3ac0cb88438a0fa27
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188262"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55807766"
 ---
 # <a name="protect-devices-with-microsoft-intune"></a>Eszközök védelme a Microsoft Intune-nal
 
 A Microsoft Intune segít megvédeni a kezelt eszközöket és az azokon tárolt adatokat.
 
 ## <a name="device-configuration"></a>Eszközök konfigurálása
-Az Intune [konfigurációs szabályzatai](device-profiles.md) egy sor beállítás és funkció ellenőrzésével járulnak hozzá az eszközök védelméhez. Például:
+Az Intune [konfigurációs szabályzatai](device-profiles.md) egy sor beállítás és funkció ellenőrzésével járulnak hozzá az eszközök védelméhez. Példa:
 - Korlátozhatja az eszköz hardveres funkcióit, például a kamera vagy a Bluetooth használatát.
 - Megfelelő és nem megfelelő alkalmazásokat konfigurálhat. Nem megfelelő alkalmazás telepítése esetén riasztást kap (és egyes platformok képesek ténylegesen megakadályozni a telepítést).
 

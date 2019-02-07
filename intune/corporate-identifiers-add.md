@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: ae4691b21b9728a28f9cac0ae0af7fd42a8bdbde
-ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
+ms.openlocfilehash: 54282789f4a9b335e2a83232d6dc1fb1000179a9
+ms.sourcegitcommit: 01d6832978cb7ca23049000950696b300a87abd4
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55199438"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55761058"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Eszközök azonosítása vállalati tulajdonúként
 
@@ -66,7 +66,7 @@ Ez a .csv- fájl egy szövegszerkesztőben megtekintve így jelenik meg:
 ```
 
 > [!IMPORTANT]
-> Bizonyos androidos eszközök több IMEI-számmal rendelkeznek. Az Intune regisztrált eszközönként csak egy IMEI-számot olvas be. Ha olyan IMEI-számot importál, amely nem egyezik meg az Intune által leltározott IMEI-számmal, az eszközt vállalati helyett magán tulajdonúnak sorolja be a rendszer. Ha egy eszközhöz több IMEI-számot importál, a leltárban nem szereplő számok **Ismeretlen** regisztrációs állapottal jelennek meg.<br>
+> Bizonyos androidos eszközök több IMEI-számmal rendelkeznek. Az Intune regisztrált eszközönként csak egy IMEI-számot olvas be. Ha olyan IMEI-számot importál, de nem az Intune által leltározott IMEI, az eszköz akkor minősül helyett a vállalat által birtokolt eszközt. Ha egy eszközhöz több IMEI-számot importál, a leltárban nem szereplő számok **Ismeretlen** regisztrációs állapottal jelennek meg.<br>
 >Azt is vegye figyelembe: Androidos sorozatszámok egyediek vagy elérhetőek lesznek a nem garantált. Egyeztessen az eszköz szállítójával arról, hogy a sorozatszám tekinthető-e megbízható eszközazonosítónak.
 >Elképzelhető, hogy az a sorozatszám, amelyet az eszköz az Intune felé jelez, nem egyezik meg az eszköz Android beállítások/Névjegy (Android Settings/About) menüjében megjelenő azonosítóval. Ellenőrizze, hogy az eszköz gyártója milyen típusú sorozatszámot tüntet fel itt.
 >Ha a feltöltendő sorozatszámokból álló fájl pontokat (.) tartalmaz, a feltöltés sikertelen lesz. A pontokat tartalmazó sorozatszámok nem támogatottak.

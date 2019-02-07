@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 65a461928c377dd4a674f8f3f2eeeef148ab56b2
-ms.sourcegitcommit: 912aee714432c4a1e8efeee253ca2be4f972adaa
+ms.openlocfilehash: b0b2c7fb0f4122f8651b773f4039be43fc5e2c6b
+ms.sourcegitcommit: fddf90a6aa17b09005723653a0c9a520856bb2ea
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54316899"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55781487"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin Bindings
 
@@ -88,68 +88,87 @@ Ha az alkalmazás már adal-t vagy az MSAL használatára van konfigurálva, és
 
 ## <a name="enabling-intune-app-protection-policies-in-your-android-mobile-app"></a>Az Intune alkalmazásvédelmi szabályzatainak engedélyezése Androidos mobilalkalmazásban
 
-Olyan Xamarin-alapú androidos alkalmazások esetén, amelyek nem használnak felhasználóifelület-keretrendszert, olvassa el és kövesse az [Androidhoz készült Intune App SDK fejlesztői útmutatójában](app-sdk-android.md) leírtakat. Xamarin-alapú Android-alkalmazások, osztály, a metódusok és a tevékenységek lecserélése a MAM-megfelelőikre alapján kell a [osztályt és metódust cseréjére tábla](app-sdk-android.md#class-and-method-replacements) az útmutatóban. Ha az alkalmazás nem rendelkezik meghatározott `android.app.Application` osztállyal, akkor hozzon létre egyet, és győződjön meg arról, hogy az a `MAMApplication` osztálytól örököl. Az ADAL konfigurációs értékek közlik az SDK az AndroidManifest metaadatain keresztül közli. Olvassa el dokumentációnkat, amelyből megtudhatja, hogyan [konfigurálhatja az ADAL-t az alkalmazásához](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal).
+1. Adja hozzá Xamarin.Android-projektjéhez a [Microsoft.Intune.MAM.Xamarin.Android NuGet-csomagot](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android).
+    1. Xamarin.Forms-alkalmazás hozzáadása a [Microsoft.Intune.MAM.Remapper.Tasks NuGet-csomag](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) a Xamarin.Android projekthez is. 
+2. Hajtsa végre a szükséges általános lépéseket [integrálása az Intune App SDK](app-sdk-android.md) az Android rendszerhez készült mobilalkalmazás további részleteket a jelen dokumentum hivatkozó közben.
 
 ### <a name="xamarinandroid-integration"></a>Xamarin.Android-integráció
 
-1. Adja hozzá Xamarin.Android-projektjéhez a [Microsoft.Intune.MAM.Xamarin.Android NuGet-csomag](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android) legfrissebb verzióját. Ezzel elérhetővé válnak az Intune alkalmazáshoz való engedélyezéséhez szükséges hivatkozások.
+Az Intune App SDK integrálásához teljes áttekintése található a [Microsoft Intune App SDK Androidon – útmutató fejlesztőknek](app-sdk-android.md). Olvassa végig az útmutató és a Xamarin-alkalmazás az Intune App SDK integrálása a következő szakaszok célja egy natív Android-alkalmazást Java nyelven fejlesztett, és a egy Xamarin-alkalmazás fejlesztett, jelölje ki a megvalósítás közötti különbségek C#. Ezekben a szakaszokban a kiegészítő kell kezelni, és nem jár el ebben az esetben a következő témakör elolvasásával helyett.
 
-2. Olvassa el és kövesse [A Microsoft Intune App SDK Androidon – útmutató fejlesztőknek](app-sdk-android.md) című cikk lépéseit, és fordítson kiemelt figyelmet a következő szakaszokra:
+#### <a name="renamed-methodsapp-sdk-androidmdrenamed-methods"></a>[Átnevezett metódusok](app-sdk-android.md#renamed-methods)
+Sok esetben az androidos osztályban rendelkezésre álló metódus végsőként van megjelölve a helyettesítő MAM-osztályban. Ebben az esetben a helyettesítő MAM-osztály egy hasonlóan elnevezett metódust biztosít (a `MAM` utótaggal), amelyet felül kell írni. Így például a `MAMActivity` származtatásakor az `OnCreate()` felülírása, illetve a `base.OnCreate()` metódus hívása helyett az `Activity` tevékenységnek felül kell írnia az `OnMAMCreate()` metódust, és meg kell hívnia a `base.OnMAMCreate()` metódust.
 
-    1. A [teljes osztályok és metódusok lecserélése szakasz](app-sdk-android.md#class-and-method-replacements). 
-    2. A [MAMApplication szakasz](app-sdk-android.md#mamapplication). Ügyeljen rá, hogy az alosztály megfelelően jelölve legyen a `[Application]` attribútummal, és felülbírálja a `(IntPtr, JniHandleOwnership)` konstruktort.
-    3. Az [ADAL-integráció szakaszt](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal) amennyiben az alkalmazás AAD-ben történő hitelesítést is végrehajt. 
-    4. A [MAM-WE regisztrációs szakaszt](app-sdk-android.md#app-protection-policy-without-device-enrollment) ha az alkalmazás a MAM-szolgáltatásból fog lekérni szabályzatot.
+#### <a name="mam-applicationapp-sdk-androidmdmamapplication"></a>[MAM-alkalmazás](app-sdk-android.md#mamapplication)
+Az alkalmazás meg kell határoznia egy `Android.App.Application` osztályból származó `MAMApplication`. Ügyeljen rá, hogy az alosztály megfelelően jelölve legyen a `[Application]` attribútummal, és felülbírálja a `(IntPtr, JniHandleOwnership)` konstruktort.
+```csharp
+    [Application]
+    class TaskrApp : MAMApplication
+    {
+    public TaskrApp(IntPtr handle, JniHandleOwnership transfer)
+        : base(handle, transfer) { }
+```
 
-> [!NOTE]
-> Ha az [A Microsoft Intune App SDK Androidon – útmutató fejlesztőknek](app-sdk-android.md) alapján keres egyenértékű API-kat a `Microsoft.Intune.MAM.Xamarin.Android` kötések között, vagy amikor az útmutatóból konvertál kódrészleteket, akkor ügyeljen rá, hogy a Xamarin kötésgenerátora a következő jelentős módokon módosítja az Android-API-kat:
-> * Az összes azonosító Pascal case írásmódra módosul (com.foo.bar -> Com.Foo.Bar)
-> * Minden get/set művelet tulajdonság típusú műveletté lesz konvertálva (pl. Foo.getBar() -> Foo.Bar, Foo.setBar("zap") -> Foo.Bar = "zap")
-> * Minden interfész neve elé be lesz illesztve az 'I' karakter (FooInterface -> IFooInterface)
+#### <a name="enable-features-that-require-app-participationapp-sdk-androidmdenable-features-that-require-app-participation"></a>[Alkalmazás részvételét igénylő szolgáltatások engedélyezése](app-sdk-android.md#enable-features-that-require-app-participation)
+Példa: PIN-kód az alkalmazáshoz szükséges, hogy
+```csharp
+MAMPolicyManager.GetPolicy(currentActivity).IsPinRequired;
+```
+Példa: Az elsődleges Intune-felhasználó meghatározása
+```csharp
+IMAMUserInfo info = MAMComponents.Get<IMAMUserInfo>();
+return info?.PrimaryUser;
+```
+Példa: Határozza meg, ha az eszközre való mentése vagy engedélyezve van a felhőalapú tárolás
+```csharp
+MAMPolicyManager.GetPolicy(currentActivity).GetIsSaveToLocationAllowed(SaveLocation service, String username);
+```
+
+#### <a name="register-for-notifications-from-the-sdkapp-sdk-androidmdregister-for-notifications-from-the-sdk"></a>[Az SDK értesítéseire regisztrálás](app-sdk-android.md#register-for-notifications-from-the-sdk)
+Az alkalmazásnak regisztrálnia kell az SDK értesítéseire hozzon létre egy `MAMNotificationReceiver` és annak regisztrálásával a következővel `MAMNotificationReceiverRegistry`. Ez a fogadó és a kívánt értesítés típusának megadásával történik `App.OnMAMCreate`, ahogy az alábbi példában látható:
+```csharp
+public override void OnMAMCreate()
+{
+    // Register the notification receivers
+    IMAMNotificationReceiverRegistry registry = MAMComponents.Get<IMAMNotificationReceiverRegistry>();
+    foreach (MAMNotificationType notification in MAMNotificationType.Values())
+    {
+    registry.RegisterReceiver(new ToastNotificationReceiver(this), notification);
+    }
+    ...
+```
+
+#### <a name="mam-enrollment-managerapp-sdk-androidmdmamenrollmentmanager"></a>[MAM Eszközregisztráció-kezelővel](app-sdk-android.md#mamenrollmentmanager)
+```csharp
+IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
+```
 
 ### <a name="xamarinforms-integration"></a>Xamarin.Forms-integráció
 
-**Az előző lépések végrehajtása mellett** a `Xamarin.Forms`-alkalmazásokhoz egy `Microsoft.Intune.MAM.Remapper`-csomagot is elérhetővé tettünk. Ez a csomag úgy cseréli le az osztályokat, hogy `MAM`-osztályokat injektál az olyan gyakran használt `Xamarin.Forms`-osztályok osztályhierarchiájába mint a `FormsAppCompatActivity` és a `FormsApplicationActivity`, így nyugodtan használhatja osztályait továbbra is, csupán felülbírálást kell biztosítania az olyan MAM-kompatibilis funkcióknak, mint a `OnMAMCreate` és a `OnMAMResume`. A használatához hajtsa végre a következőket:
-
-1.  Projektjéhez adja hozzá a [Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) NuGet-csomagot. Ezzel automatikusan hozzáadhatja az Intune APP SDK Xamarin-kötéseit, ha esetleg még nem adta volna őket meg.
-
-2.  Adjon hozzá egy `Xamarin.Forms.Forms.Init(Context, Bundle)`-hívást a 2.2-es lépésnél létrehozott `MAMApplication`-osztály `OnMAMActivity`-funkciójához. Erre azért van szükség, mert az Intune-felügyelet használata esetén az alkalmazás a háttérben is elindítható.
+A `Xamarin.Forms` alkalmazásokhoz biztosítunk a `Microsoft.Intune.MAM.Remapper` MAM osztály lecserélését automatikus elvégzéséhez úgy, hogy a csomag `MAM` osztályok az osztály hierarchiává, gyakran használt `Xamarin.Forms` osztályokat. 
 
 > [!NOTE]
-> Mivel ez a művelet felülír egy olyan függőséget, amit a Visual Studio az Intellisense automatikus kiegészítéshez használ, lehet, hogy újra kell indítania a Visual Studiot a remapper eszköz első futtatását követően ahhoz, hogy az Intellisense felismerje a változtatásokat. 
+> A Xamarin.Forms-integráció, hogy a Xamarin.Android-integrációval lásd fent emellett elvégezni.
 
-## <a name="requiring-intune-app-protection-policies-in-order-to-use-your-xamarin-based-android-lob-app-optional"></a>Intune alkalmazásvédelmi szabályzatok megkövetelése a Xamarin-alapú Android LOB-alkalmazások (nem kötelező) használatához 
+Miután hozzáadta a projekthez a Remapper szüksége lesz az egyenértékű MAM-cserékhez végrehajtásához. Például `FormsAppCompatActivity` és `FormsApplicationActivity` továbbra is használható az alkalmazás megadott felülbírálások `OnCreate` és `OnResume` a MAM-megfelelője cserélése `OnMAMCreate` és `OnMAMResume` jelölik.
 
-A következő útmutatóból megtudhatja, hogyan biztosíthatja, hogy a Xamarin-alapú androidos üzletági alkalmazásokat csak az Intune által védett felhasználók használhassák eszközeiken. 
-    
-### <a name="working-with-the-intune-sdk"></a>Az Intune SDK használata
-Ezek az utasítások minden olyan Android- és Xamarin-alkalmazásra vonatkoznak, amelyek Intune-alkalmazásvédelmi szabályzatokat szeretnének kérni a végfelhasználói eszközöktől.
+```csharp
+    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
+    {
+        protected override void OnMAMCreate(Bundle savedInstanceState)
+        {
+            base.OnMAMCreate(savedInstanceState);
+            global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            LoadApplication(new App());
+        }
+```
+Ha a cserét nem történik majd felmerülhet a következő fordítási hibákat a lecserélendő létrehozásáig:
+* [Fordítási hiba CS0239](https://docs.microsoft.com/dotnet/csharp/misc/cs0239). Ez a hiba fordul elő, az űrlap ``'MainActivity.OnCreate(Bundle)': cannot override inherited member 'MAMAppCompatActivityBase.OnCreate(Bundle)' because it is sealed``.
+Ez elvárható, hiszen a Remapper Xamarin osztályok az öröklési módosítja, amikor bizonyos funkciókat tesznek `sealed` és egy új MAM-változatot hozzáadásával felülírása helyett.
+* [Fordítási hiba CS0507](https://docs.microsoft.com/dotnet/csharp/language-reference/compiler-messages/cs0507): Ez a hiba fordul elő, az űrlap ``'MyActivity.OnRequestPermissionsResult()' cannot change access modifiers when overriding 'public' inherited member ...``. A Remapper néhány, a Xamarin-osztályok az öröklési megváltozik, amikor bizonyos tag funkciók változnak a `public`. Ha az felülírja ezeket a funkciókat, szüksége lesz módosítani azokat a hozzáférési módosítók azok számára, felülbírálások használatával lehet `public` is.
 
-1. Konfigurálja az ADAL-t az [Androidos Intune SDK útmutatójában](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal) megadott lépések alapján.
-> [!NOTE] 
-> Az alkalmazáshoz tartozó „ügyfél-azonosító” kifejezés megfelel az Azure Portalon az „alkalmazásazonosító” kifejezésnek. 
-* Az SSO engedélyezéséhez a 2. „Common ADAL configurationre” van szükség.
-
-2. Az alapértelmezett regisztráció engedélyezéséhez írja az alábbi értéket a jegyzékfájlba: ```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
-> [!NOTE] 
-> Ez lehet az alkalmazás egyetlen MAM-WE-integrációja. Ha az alkalmazás többször próbál meg MAMEnrollmentManager API-kat hívni, problémák merülhetnek fel.
-
-3. A MAM-szabályzat engedélyezéséhez írja az alábbi értéket a jegyzékfájlba: ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
-> [!NOTE] 
-> Ez kényszeríti az alkalmazást, hogy letöltse a Céges portált az eszközre, és a használat előtt elvégezze az alapértelmezett regisztrációt.
-
-### <a name="working-with-adal"></a>Az ADAL használata
-Ezek az utasítások minden olyan .NET- és Xamarin-alkalmazásra vonatkoznak, amelyek Intune-alkalmazásvédelmi szabályzatokat használatát követelik meg a végfelhasználói eszközökön.
-
-1. Kövesse az ADAL dokumentációjában a [Brokered Authentication for Android](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/tree/dev/adal#brokered-authentication-for-android) (Közvetített hitelesítés az Androidhoz) szakaszban meghatározott lépéseket.
-
-## <a name="potential-compilation-errors"></a>A lehetséges fordítási hibák
-Ezek néhány a leggyakrabban észlelt fordítási hibát jelez, amikor az alkalmazás fejlesztése Xamarin-alapú.
-
-* [Fordítási hiba CS0239](https://docs.microsoft.com/en-us/dotnet/csharp/misc/cs0239): Ez a hiba fordul elő, az űrlap ``'MainActivity.OnCreate(Bundle)': cannot override inherited member 'MAMAppCompatActivityBase.OnCreate(Bundle)' because it is sealed``.
-Bizonyos függvények jönnek létre a remapper Xamarin osztályok az öröklési módosítja, amikor `sealed` és egy új MAM-változatot hozzáadásával felülírása helyett. Egyszerűen átnevezése, felülbírálások leírtak szerint [Itt](https://docs.microsoft.com/en-us/intune/app-sdk-android#renamed-methods). Ha például `MainActivity.OnCreate()` volna neve `MainActivity.OnMAMCreate()`
-
-* [Fordítási hiba CS0507](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/cs0507): Ez a hiba fordul elő, az űrlap ``'MyActivity.OnRequestPermissionsResult()' cannot change access modifiers when overriding 'public' inherited member ...``. A remapper eszköz néhány, a Xamarin-osztályok az öröklési megváltozik, mivel a tag függvények változik `public`. Ha az felülírja ezeket a funkciókat, szükség lehet kell ezeket a felülbírálásokat `public` is.
+> [!NOTE]
+> A Remapper újra ír egy függőség használ a Visual Studio IntelliSense automatikus kiegészítését. Ezért szükségessé töltse be újra, és a projekt újraépítéséhez, az IntelliSense helyesen ismeri fel a módosítások a Remapper hozzáadásakor.
 
 ## <a name="support"></a>Támogatás
 Ha vállalata már Intune-ügyfél, akkor a Microsoft támogató szolgálat képviselőjével együttműködve nyisson meg egy támogatási jegyet, és hozzon létre bejelentést [a GitHub hibabejelentő oldalán](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues), mi pedig segítünk, amint tudunk. 

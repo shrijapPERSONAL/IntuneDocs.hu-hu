@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/12/2018
+ms.date: 02/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7cb7c23e673c9e0c074f45991333fde9bfc8e930
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 50338c64960563eb15b70eacf7d47109fc6fc704
+ms.sourcegitcommit: 01d6832978cb7ca23049000950696b300a87abd4
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186180"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55760956"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>A TeamViewer használata Intune-eszközök távoli felügyeletéhez
 
@@ -31,10 +31,10 @@ Az Intune által kezelt eszközök a [TeamViewer](https://www.teamviewer.com) ha
 
 - Az Azure Portal-beli Intune rendszergazdának a következő [Intune-szerepkörökkel](role-based-access-control.md) kell rendelkeznie:  
 
-    - **Távoli segítségnyújtás frissítése**: Lehetővé teszi, hogy a rendszergazda módosítsa a TeamViewer-összekötő beállításait.
-    - **Távoli segítségnyújtás kérése**: Lehetővé teszi, hogy a rendszergazda új távsegítség munkamenetet indítson bármely felhasználó számára. Az ezzel a szerepkörrel rendelkező felhasználókat nem korlátozzák a hatókörön belüli Intune-szerepkörök. A hatókörön belüli Intune-szerepkörhöz rendelt felhasználói vagy eszközcsoportok szintén kérhetnek távsegítséget. 
+    - **Távoli segítségnyújtás frissítése**: Lehetővé teszi, hogy a rendszergazda módosítsa a TeamViewer-összekötő beállításait
+    - **Távsegítség kérése**: Lehetővé teszi a rendszergazdák bármely felhasználó számára egy új Távsegítség-munkamenet elindításához. Az ezzel a szerepkörrel rendelkező felhasználókat nem korlátozzák a hatókörön belüli Intune-szerepkörök. A hatókörön belüli Intune-szerepkörhöz rendelt felhasználói vagy eszközcsoportok szintén kérhetnek távsegítséget. 
 
-- [TeamViewer](https://www.teamviewer.com)-fiók a bejelentkezéshez szükséges hitelesítő adatokkal
+- A [TeamViewer](https://www.teamviewer.com) a bejelentkezési hitelesítő adatokkal rendelkező fiókot. Csak néhány TeamViewer-licenc támogathatja az Intune szolgáltatással való integráció. A TeamViewer konkrét igényeinek megfelelő, tekintse meg a [TeamViewer-integrációja Partner: A Microsoft Intune-ban](https://www.teamviewer.com/integrations/microsoft-intune/).
 
 A TeamViewer használatával engedélyezi a TeamViewer for Intune összekötőjének TeamViewer-munkamenetek létrehozását, Active Directory-adatok olvasását és a TeamViewer-fiók hozzáférési jogkivonatának mentéset.
 

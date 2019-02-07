@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 2eae4ea2bfabe1b41af88ae34b81fbf12ef5f9d9
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.openlocfilehash: a2a832e773a1a2fb413bfbc761d93988f2230ec7
+ms.sourcegitcommit: 01d6832978cb7ca23049000950696b300a87abd4
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297502"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55761075"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune adattárház-gyűjtemények
 
@@ -357,7 +357,7 @@ A **EnrollmentFailureCategory** entitás azt jelzi, hogy miért-eszközök regis
 | Nem alkalmazható                  | A regisztráció sikertelen kategória nem alkalmazható.                                                            |
 | Nem érhető el                   | A regisztráció sikertelen kategória nem érhető el.                                                             |
 | Ismeretlen                         | Ismeretlen hiba.                                                                                                |
-| Hitelesítés                  | A hitelesítés sikertelen volt.                                                                                        |
+| Authentication                  | A hitelesítés sikertelen volt.                                                                                        |
 | Engedélyezés                   | Hívás történt hitelesítése, de nem jogosult a regisztrációra.                                                         |
 | AccountValidation               | Nem sikerült érvényesíteni a fiókot a regisztrációhoz. (Blokkolva, fiók regisztrációs nincs engedélyezve)                      |
 | UserValidation                  | Felhasználó nem érvényesíthető. (Felhasználó nem létezik, licenc hiányzik)                                           |
@@ -505,7 +505,10 @@ Az **ownerType** entitás jelzi, hogy az eszköz tulajdonosa a vállalat, magán
 |:-------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|
 | ownerTypeID   | A tulajdonostípus egyedi azonosítója.                                                                                                                                               |                            |
 | ownerTypeKey  | A tulajdonostípus egyedi azonosítója az adattárházban – helyettes kulcs.                                                                                                       |                            |
-| ownerTypeName | Az eszközök tulajdonosának típusát jelzi:  Company – az eszköz vállalati tulajdonban.  Personal – az eszköz saját tulajdonban van (BYOD).   Unknown – nincs információ az eszközről. | Company Personal Unknown |
+| ownerTypeName | Az eszközök tulajdonosának típusát jelzi:  Vállalati – eszköz vállalati tulajdonban.  Personal – az eszköz saját tulajdonban van (BYOD).   Unknown – nincs információ az eszközről. | Vállalati személyes ismeretlen |
+
+> [!Note]  
+> Az a `ownerTypeName` szűrő az Azure ad dinamikus csoportok létrehozásakor eszközökhöz, állítsa az értékét módosítania `deviceOwnership` , `Company`. További információkért lásd: [eszközök szabályai](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
 
 ## <a name="policies"></a>policies
 A **Szabályzat** entitás eszköz- és alkalmazáskonfigurációs profilokat, valamint megfelelőségi szabályzatokat tartalmaz. A szabályzatokat a Mobileszköz-kezelési (MDM) megoldás segítségével rendelheti hozzá a vállalat valamely csoportjához.
