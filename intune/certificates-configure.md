@@ -15,12 +15,13 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1a70e8a5e9ad973f5d2c94a146a9f263f461d0ab
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 36793467ce8d26dbb55f38d22687243a65f912d8
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180561"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840148"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Eszközök tanúsítványprofiljainak konfigurálása a Microsoft Intune-ban
 
@@ -68,7 +69,7 @@ Mindegyik eszközplatformhoz külön profilt kell létrehoznia. Létrehozásakor
 - Mind az SCEP-, mind a PKCS-profilok használatához le kell töltenie és konfigurálnia kell a Microsoft Intune Tanúsítvány-összekötőt
 
 
-## <a name="step-1-configure-your-certificate-infrastructure"></a>1. lépés: a tanúsítványinfrastruktúra konfigurálása
+## <a name="step-1-configure-your-certificate-infrastructure"></a>1. lépés: A tanúsítványinfrastruktúra konfigurálása
 
 Az alábbi témakörök nyújtanak segítséget az egyes tanúsítványprofil-típusok infrastruktúrájának konfigurálásához:
 
@@ -76,16 +77,16 @@ Az alábbi témakörök nyújtanak segítséget az egyes tanúsítványprofil-t�
 - [PKCS-tanúsítványok konfigurálása és kezelése az Intune-nal](certficates-pfx-configure.md)
 
 
-## <a name="step-2-export-your-trusted-root-ca-certificate"></a>2. lépés: a megbízható legfelső szintű hitelesítésszolgáltató tanúsítványának exportálása
+## <a name="step-2-export-your-trusted-root-ca-certificate"></a>2. lépés: A megbízható legfelső szintű hitelesítésszolgáltató tanúsítványának exportálása
 
 Exportálja a megbízható legfelső szintű hitelesítésszolgáltató (CA) tanúsítványát nyilvános, (.cer) kiterjesztésű fájlként a kibocsátó hitelesítésszolgáltatóról vagy a vállalati hitelesítésszolgáltatóban megbízó bármelyik eszközről. A titkos kulcsot (.pfx) ne exportálja.
 
 Ezt a tanúsítványt a megbízható tanúsítványprofil konfigurálásakor kell importálnia.
 
-## <a name="step-3-create-trusted-certificate-profiles"></a>3. lépés: megbízható tanúsítványprofilok létrehozása
+## <a name="step-3-create-trusted-certificate-profiles"></a>3. lépés: A megbízható tanúsítványprofilok létrehozása
 Ahhoz, hogy SCEP- vagy PKCS-tanúsítványprofilt hozhasson létre, először létre kell hoznia egy megbízható tanúsítványprofilt. Minden mobileszközplatformhoz külön megbízható tanúsítványprofil, illetve és SCEP- vagy PKCS-profil szükséges. A megbízható tanúsítványok létrehozása az összes eszközplatformon hasonlóan zajlik.
 
-1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
 3. Válassza az **Eszközkonfiguráció** > **Kezelés** > **Profilok** > **Profil létrehozása** lehetőséget.
 4. Adja meg a megbízható tanúsítványprofil **nevét** és **leírását**.

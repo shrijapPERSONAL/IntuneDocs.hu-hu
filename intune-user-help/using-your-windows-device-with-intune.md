@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a28f12bc57fdf134554a65518f24a79287058eeb
-ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9bdb3e5c79b348b323df129c2dec4c02af596215
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866337"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844547"
 ---
 # <a name="using-your-windows-device-with-intune-company-portal"></a>Windows-eszköz használata az Intune Céges portállal
 
@@ -40,7 +41,7 @@ A Céges portál jelenleg a Windows alábbi verzióit futtató eszközöket tám
 * Windows 10 (Home, Pro, Education, S mód és Enterprise verziók)
 * Windows Phone 8.1 és újabb verziók
 * Windows 8.1 RT
-* Windows 8.1
+* Windows 8.1
 
 A Céges portál néhány további Windows-verziót is támogat; ilyen például a [Windows 10 Holographic](https://www.microsoft.com/hololens). Ezekre a verziókra azonban ebben a cikkben nem térek ki, mert nagyon speciális célokat szolgálnak.
 
