@@ -11,14 +11,15 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 5de108835254d6a65546b8f1c9e8d0e9c32dbd26
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e06d40ebcbd16940b7c980f529f7fc44ff5c736e
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189928"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848457"
 ---
-# <a name="quickstart-create-and-assign-a-custom-role"></a>Rövid útmutató: Egyéni szerepkör létrehozása és hozzárendelése
+# <a name="quickstart-create-and-assign-a-custom-role"></a>Gyors útmutató: Egyéni szerepkör létrehozása és hozzárendelése
 
 Ezt a rövid Intune-útmutatót követve létrehozhat egy meghatározott engedélyeket biztosító egyéni szerepkört egy biztonsági üzemeltetési részleg számára. Ez után a szerepkört hozzárendelheti az ezen a területen dolgozók egy csoportjához. Több azonnal használható alapértelmezett szerepkör is létezik. Az ehhez hasonló egyéni szerepkörök létrehozásával azonban mobileszköz-kezelési rendszere minden részletét precízen szabályozhatja.
 
@@ -73,4 +74,4 @@ Ebben a rövid útmutatóban létrehozta az egyéni Biztonsági üzemeltetés sz
 Kövesse az Intune rövid útmutatóinak sorozatát a következő rövid útmutatóval.
 
 > [!div class="nextstepaction"]
-> [Rövid útmutató: E-mail-eszközprofil létrehozása iOS-hez](quickstart-email-profile.md)
+> [Gyors útmutató: Egy IOS e-mail profil létrehozása](quickstart-email-profile.md)

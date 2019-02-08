@@ -14,12 +14,13 @@ ms.assetid: 3b67f285-229d-4a0f-ae34-0402a20b4518
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 68ffaf8788a392fcf592b426fc04da1351685e05
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ced5bf8a982e2dbf65ff0577ca2f17529febcb62
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189301"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851508"
 ---
 # <a name="remotely-lock-devices-with-intune"></a>Eszközök távoli zárolása az Intune-nal
 
@@ -47,7 +48,7 @@ A **távoli zárolás** nem támogatott:
 
 ## <a name="remote-lock-a-device"></a>Egy eszköz távoli zárolása
 
-1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** lehetőséget, szűrjön az **Intune**-ra, és válassza a **Microsoft Intune** elemet.
 3. Válassza az **Eszközök** > **Minden eszköz** lehetőséget.
 4. Válasszon egy eszközt az eszközlistáról, majd válassza a **Távoli zárolás** műveletet.

@@ -16,12 +16,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fc5d2a6f17bdac8711348c136ee390a400fc21bd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 646a72eaa3837b48b4af718904064fddaeb98955
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182499"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840382"
 ---
 # <a name="get-started-managing-users"></a>A felhasználók kezelésének első lépései
 
@@ -29,10 +30,10 @@ Gondolja végig, hányan dolgoznak a munkahelyén. Mindegyiküknek, aki céges a
 
 ## <a name="how-do-i-create-a-user"></a>Felhasználó létrehozása
 
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Miután megnyitotta a **Microsoft Intune** panelt, válassza a **Felhasználók** lehetőséget. Nyissa meg a **Minden felhasználó** lapot, és válassza az **+ Új felhasználó** lehetőséget.
-4. Adja meg az új felhasználó adatait, például **Név** és a **Felhasználónév**. A felhasználónév tartománynév részének a következő tartományok egyikének kell lennie:
+4. Adja meg a felhasználó adatait (például **Név** és **Felhasználónév**). A felhasználónév tartománynév részének a következő tartományok egyikének kell lennie:
     - a kezdeti alapértelmezett tartománynév: „contoso.onmicrosoft.com” vagy
     - egy ellenőrzött, nem összevont tartománynév, például „contoso.com”.
 5. A **Csoportok** szakaszban válassza ki a [csoportot](get-started-groups.md), amelyhez a felhasználót hozzá kívánja adni.
@@ -51,7 +52,7 @@ Felhasználó létrehozása után az [Office 365-portál](http://go.microsoft.co
    > [!NOTE]
    > Ezzel elhasználja a licencei egyikét ehhez a felhasználóhoz. Ha az éles környezetben dolgozik, akkor később kikapcsolhatja a licenc használatát, hogy kiossza egy valódi felhasználónak.
 
-5. Válassza a **Mentés** lehetőséget.
+5. Kattintson a **Mentés** gombra.
 
 ## <a name="next-steps"></a>További lépések
 

@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5bd8bfe0230e4d49ce5ae4372e0f373a014c00ce
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c37a5991adf2efdb5bf38b32d8af4c77af295ea0
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187769"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844683"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>Automatizált e-mailek és műveletek hozzáadása a nem megfelelő eszközökhöz – Intune
 
@@ -29,13 +30,13 @@ Alapértelmezés szerint az Intune a nem megfelelő eszköz észlelése után az
 
 Többféle művelet használható:
 
-- **E-mail küldése a felhasználónak**: Testreszabhatja az értesítő e-mailt, mielőtt elküldené a végfelhasználónak. Testre szabhatja az e-mail címzettjeit és tárgyát, az üzenet szövegét, a céges emblémát és a kapcsolattartási adatokat.
+- **E-mail küldése a végfelhasználónak**: Testre szabhatja az e-mail-értesítést, mielőtt elküldené a végfelhasználónak. Testre szabhatja az e-mail címzettjeit és tárgyát, az üzenet szövegét, a céges emblémát és a kapcsolattartási adatokat.
 
     Az Intune a nem megfelelő eszköz adatait is szerepelteti az értesítésben.
 
-- **A nem megfelelő eszköz távoli zárolása**: A nem megfelelő eszközök esetén távoli zárolást rendelhet el. A felhasználótól az eszköz PIN-kódot vagy jelszót fog kérni az eszköz feloldásához. További információ a [Távoli zárolás](device-remote-lock.md) funkcióról. 
+- **A nem megfelelő eszköz távoli zárolása**: A szabályzatoknak nem megfelelő eszközök esetén a távoli zárolás adhat ki. A felhasználótól az eszköz PIN-kódot vagy jelszót fog kérni az eszköz feloldásához. További információ a [Távoli zárolás](device-remote-lock.md) funkcióról. 
 
-- **Eszköz megjelölése nem megfelelőként**: Megadhatja, hogy hány napon belül legyen nem megfelelőként megjelölve az eszköz. A műveletet konfigurálhatja azonnali kezdettel, de meghatározhat egy türelmi időszakot is a megfelelőséghez.
+- **Eszköz megjelölése nem megfelelőként**: Ütemezés létrehozása (a napok száma) után az eszköz akkor nem megfelelőként megjelölve. A műveletet konfigurálhatja azonnali kezdettel, de meghatározhat egy türelmi időszakot is a megfelelőséghez.
 
 Ez a cikk a következőkhöz nyújt útmutatást:
 
@@ -61,9 +62,9 @@ Ha e-mailt szeretne küldeni a felhasználóknak, hozzon létre egy értesítés
 
 1. Az [Azure Portalon](https://portal.azure.com) kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
 2. Válassza az **Eszközmegfelelőség** > **Értesítések** lehetőséget.
-3. Válassza az **Értesítés létrehozása** lehetőséget. Adja meg az alábbi adatokat:
+3. Válassza az **Értesítés létrehozása** lehetőséget. Adja meg a következő információkat:
 
-   - **Név**
+   - **Name (Név)**
    - **Tárgy**
    - **Üzenet**
    - **E-mail fejléce – a cég emblémájának megjelenítése**
@@ -94,14 +95,14 @@ További műveletet akkor vehet fel, ha megfelelőségi szabályzatot hoz létre
 3. Válassza a **Meg nem felelés esetén végrehajtandó műveletek** > **Hozzáadás** lehetőséget.
 4. Válassza ki a **műveletet**: 
 
-    - **E-mail küldése a felhasználóknak**: Az eszköz meg nem felelése esetén e-mailt küldhet a felhasználónak. Ezenkívül: 
+    - **E-mail küldése a végfelhasználóknak**: Amikor az eszköz nem megfelelő, válassza ki a felhasználó e-mail-címre. Ezenkívül: 
     
          - Válassza ki a korábban létrehozott **üzenetsablont**
          - Csoportok kiválasztásával adjon meg esetleges **további címzetteket**
     
-    - **A nem megfelelő eszköz távoli zárolása**: Az eszköz meg nem felelése esetén zárolhatja az eszközt. Ez kényszeríti a felhasználót, hogy az eszköz feloldásához PIN-kódot vagy jelszót adjon meg. 
+    - **A nem megfelelő eszköz távoli zárolása**: Ha az eszköz nem megfelelő, akkor zárolja az eszközt. Ez kényszeríti a felhasználót, hogy az eszköz feloldásához PIN-kódot vagy jelszót adjon meg. 
     
-    - **Ütemezés**: Adja meg, hány nappal a meg nem felelés után aktiválódjon a művelet a felhasználók eszközein (0–365). A türelmi időszak után kényszerítheti a feltételes hozzáférési szabályzatot. Ha **0** napot adott meg, a feltételes hozzáférés **azonnal** életbe lép. Például azonnal letilthatja a vállalati erőforrásokhoz való hozzáférést egy eszköz meg nem felelése esetén.
+    - **Ütemezés**: Adja meg a nap (0 és 365 között), a felhasználók eszközein a műveletet nem megfelelő állapot kezdete után. A türelmi időszak után kényszerítheti a feltételes hozzáférési szabályzatot. Ha **0** napot adott meg, a feltételes hozzáférés **azonnal** életbe lép. Például azonnal letilthatja a vállalati erőforrásokhoz való hozzáférést egy eszköz meg nem felelése esetén.
 
 5. Ha elkészült, kattintson a **Hozzáadás** > **OK** elemre a módosítások mentéséhez.
 

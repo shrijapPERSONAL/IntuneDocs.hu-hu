@@ -16,14 +16,15 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: af24e1c56e43fe2edfc6a9241c31600b7cfe61a7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 299147a3f3774177cef5d73696a731afc1732f76
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186256"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55847726"
 ---
-# <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Rövid útmutató: Értesítések küldése a nem megfelelő eszközökre
+# <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Gyors útmutató: Értesítések küldése a nem megfelelő eszközökre
 
 Ebben a rövid útmutatóban a e-mailes értesítéseket küldhet az alkalmazottai nem megfelelő eszközeire a Microsoft Intune-nal.
 
@@ -45,14 +46,14 @@ Jelentkezzen be az [Intune](https://aka.ms/intuneportal) portáljára [globális
 Ha e-mailt szeretne küldeni a felhasználóknak, hozzon létre egy értesítési üzenetsablont. Ha egy eszköz nem megfelelő, a sablonban megadott adatok a felhasználóknak küldött e-mail tetején jelennek meg.
 
 1. Az Intune-ban válassza az **Eszközmegfelelőség** > **Értesítéses** > **Értesítés létrehozása** lehetőséget. 
-2. Adja meg az alábbi adatokat:
+2. Adja meg a következő információkat:
 
-   - **Név**: *Contoso rendszergazda*
-   - **Tárgy**: *Eszközmegfelelőség*
-   - **Üzenet**: *Az eszköz jelenleg nem felel meg a szervezet megfelelőségi követelményeinek.*
-   - **E-mail fejléce – a cég emblémájának megjelenítése**: **Engedélyezze** a cég emblémájának megjelenítéséhez.
-   - **E-mail fejléce – a cég nevének megjelenítése**: **Engedélyezze** a cég nevének megjelenítéséhez.
-   - **E-mail lábléce – a kapcsolatfelvételi adatok megjelenítése**: **Engedélyezze** a cég kapcsolatfelvételi adataink megjelenítéséhez.
+   - **Név**: *Contoso-rendszergazda*
+   - **Tulajdonos**: *Eszközmegfelelőség*
+   - **Üzenet**: *Az eszköz jelenleg nem teljesíti a szervezet megfelelőségi követelményeinek.*
+   - **E-mail fejléce – céges embléma megjelenítése**: Állítsa be **engedélyezve** , a cég emblémájának megjelenítése.
+   - **E-mail lábléce – a cég emblémájának**: Állítsa be **engedélyezve** a szervezet nevének megjelenítéséhez.
+   - **E-mail lábléce – kapcsolatfelvételi adatok**: Állítsa be **engedélyezve** a szervezet kapcsolattartási adatok megjelenítéséhez.
 
    ![Megfelelőségről szóló értesítési üzenetminta az Intune-ban](./media/quickstart-send-notification-01.png)
 
@@ -71,10 +72,10 @@ A következő lépésekkel létrehozhat egy megfelelőségi szabályzatot Window
 
 1. Az Intune-ban válassza az **Eszközmegfelelőség** lehetőséget.
 2. Válassza a **Szabályzatok** > **Szabályzat létrehozása** lehetőséget.
-3. Adja meg az alábbi adatokat:
+3. Adja meg a következő információkat:
 
-   - **Név**: *Windows 10-megfelelőség*
-   - **Leírás**: *A Windows 10-re vonatkozó megfelelőségi szabályzat*
+   - **Név**: *Windows 10-es megfelelőségi*
+   - **Description** (Leírás): *Windows 10-es megfelelőségi szabályzat*
    - **Platform**: Windows 10 és újabb
 
 4. Kattintson a **Beállítások** > **Rendszerbiztonság** elemre a biztonsági beállítások megjelenítéséhez.
@@ -84,7 +85,7 @@ A következő lépésekkel létrehozhat egy megfelelőségi szabályzatot Window
     ![Rendszerbiztonsági beállítások új eszközmegfelelőségi szabályzathoz](./media/quickstart-send-notification-02.png) 
 
 7. Kattintson az **OK**, **OK**, majd a **Létrehozás** gombra az eszközmegfelelőségi szabályzat létrehozásához.
-8. Adja meg az új szabályzat nevét: **Windows 10-megfelelőség**.
+8. Válassza ki az új szabályzat nevét: **Windows 10-es megfelelőségi**.
 9. Válassza a **Tulajdonságok** > **Meg nem felelés esetén végrehajtandó műveletek** > **Hozzáadás**. lehetőséget.
 10. A **Művelet** legördülő menüben ellenőrizze, hogy az **E-mail küldése a végfelhasználóknak** lehetőség van kiválasztva.
 11. Válassza az **Üzenetsablon** > **Contoso rendszergazda** > **Kiválasztás** lehetőséget a korábban létrehozott üzenetsablon kiválasztásához.
@@ -101,7 +102,7 @@ Megfelelőségi szabályzatot adott felhasználói csoportokhoz vagy minden felh
     > [!NOTE]
     > Belefoglalhat és kizárhat csoportokat a szabályzatok hozzárendelésénél.
 
-4. Kattintson a **Mentés**gombra.
+4. Kattintson a **Save** (Mentés) gombra.
 
 Ha sikeresen létrehozta és mentette a szabályzatot, az megjelenik az **Eszközmegfelelőség – Szabályzatok** listájában. A lista **Hozzárendelve** eleme **Igen** értékre van állítva.
 
@@ -112,4 +113,4 @@ Ebben a rövid útmutatóban az Intune használatával létrehozott és hozzáre
 Kövesse az Intune rövid útmutatóinak sorozatát a következő rövid útmutatóval.
 
 > [!div class="nextstepaction"]
-> [Rövid útmutató: Ügyfélalkalmazás hozzáadása és hozzárendelése](quickstart-add-assign-app.md)
+> [Gyors útmutató: Egy ügyfél alkalmazások felvételét és hozzárendelését](quickstart-add-assign-app.md)

@@ -16,12 +16,13 @@ ms.reviewer: priyar
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0d6a798f9f16f4eaa0e882fb7d90203be912051f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 44e2d29222cfbab3d22ae9746d3cc42d7c959f04
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190030"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841589"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Felhasználói felületi frissítések az Intune végfelhasználói alkalmazásaiban
 A cikkből megismerheti, mit módosítottunk a végfelhasználók számára látható alkalmazások felhasználói felületén ebben a Microsoft Intune-kiadásban. Ez segítségére lehet a felhasználói kommunikációban és az Ön üzemeltetési környezetének támogatására létrehozott egyéni dokumentáció frissítésében. Annak megértését is megkönnyíti, hogy miképpen háríthatja el jobban a végfelhasználók által tapasztalt hibákat, ha telefonos segítséget igényelnek a Céges portál használatához.
@@ -450,11 +451,11 @@ Márciustól kezdve az Androidhoz készült Céges portál alkalmazásban a [mat
 
 ![A bal oldalon az Androidhoz készült Céges portál alkalmazás képe látható a frissítés előtt. A jobb oldalon az Androidhoz készült Céges portál alkalmazás képe látható a frissítés után. Mindkét képen az Eszközök lap van kijelölve a három elérhető lap közül (Alkalmazások, Eszközök és IT-csoport elérhetősége).](./media/CP_Android_DevicesTab_BeforeAfter.png)
 
-* __Felület__: az __Alkalmazások__ lapon frissítettük a __Kiemelt alkalmazások__ és a __Minden alkalmazás__ gombokat. A __Keresés__ gomb mostantól lebegő műveletgombként jelenik meg.
+* __Felület__: __Kiemelt alkalmazások__ és __minden alkalmazás__ frissítve lett-e gombok a __alkalmazások__ fülre. A __Keresés__ gomb mostantól lebegő műveletgombként jelenik meg.
 
 ![A bal oldalon az Androidhoz készült Céges portál alkalmazás képe látható a frissítés előtt. A jobb oldalon az Androidhoz készült Céges portál alkalmazás képe látható a frissítés után. Mindkét képen az Alkalmazások lap van kijelölve a három elérhető lap közül (Alkalmazások, Eszközök és IT-csoport elérhetősége).](./media/CP_Android_AppsTab_BeforeAfter.png)
 
-* __Navigáció__: a Minden alkalmazás gomb lapnézetben jeleníti meg a __kiemelt alkalmazásokat__, az __összes alkalmazást__ és a __kategóriákat__, így a navigálás egyszerűbb. Az __IT-csoport elérhetősége__ lapot egyszerűsítettük a jobb olvashatóság érdekében.
+* __Navigációs__: Minden alkalmazás gomb lapnézetben nézetét jeleníti __kiemelt__, __összes__ és __kategóriák__ , így a Navigálás egyszerűbb. Az __IT-csoport elérhetősége__ lapot egyszerűsítettük a jobb olvashatóság érdekében.
 
 <html>
 <body>

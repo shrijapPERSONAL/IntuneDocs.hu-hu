@@ -14,12 +14,13 @@ ms.suite: ems
 search.appverid: MET150
 ms.reviewer: tycast
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 9c41fc39b5d2dc644fae91d6b02171681453ab1c
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e38d5e68e79facfd270de64c79708b74aa460189
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203399"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838189"
 ---
 # <a name="windows-10-and-windows-holographic-device-settings-to-add-vpn-connections-using-intune"></a>Eszközbeállítások Windows 10 és Windows Holographic hozzáadása az Intune-nal VPN-kapcsolatok
 
@@ -112,7 +113,7 @@ További információ az egyéni EAP XML-ek létrehozásáról: [EAP-konfigurác
 
 - **WIP vagy alkalmazások társítása a VPN-t**: Engedélyezze ezt a beállítást, ha csak néhány alkalmazás VPN-kapcsolatot használjon. A választható lehetőségek:
 
-  - **WIP társítása ehhez a kapcsolathoz**: Adjon meg egy **a kapcsolat WIP-tartománya**
+  - **WIP társítása ehhez a kapcsolathoz**: Enter a **WIP domain for this connection**
   - **Alkalmazások társítása ehhez a kapcsolathoz**: Is **korlátozása VPN-kapcsolat ezekre az alkalmazásokra**, majd adja hozzá **társított alkalmazások**. A megadott alkalmazások automatikusan a VPN-kapcsolatot használják. Az alkalmazás típusa határozza meg az alkalmazás azonosítóját. Univerzális alkalmazások esetén adja meg a Csomagcsalád nevét. Asztali alkalmazások esetén adja meg az alkalmazás fájlelérési útvonalát.
   >[!IMPORTANT]
   >Azt javasoljuk, hogy tegyen biztonságossá minden, alkalmazásonkénti VPN-ekhez létrehozott alkalmazáslistát. Ha a listát esetleg arra nem jogosult felhasználó módosítja, és Ön így importálja azt az alkalmazásonkénti VPN-alkalmazáslistába, azzal olyan alkalmazásoknak is VPN-elérést nyújthat, amelyeknek eredetileg nem szeretett volna. Az alkalmazáslisták védelmének módja lehet a hozzáférés-vezérlési lista (ACL) létrehozása.
@@ -126,7 +127,7 @@ További információ az egyéni EAP XML-ek létrehozásáról: [EAP-konfigurác
 - **Egyszeri bejelentkezés (SSO) helyettesítő tanúsítvánnyal**: Eszközmegfelelőség használja a VPN-hitelesítési tanúsítvány eltérő Kerberos-hitelesítéshez. A következő beállításokkal rendelkező tanúsítványt adja meg:
 
   - **Név**: A kibővített kulcshasználat (EKU) neve
-  - **Objektumazonosító**: Az EKU Objektumazonosítója
+  - **Object Identifier**: Az EKU Objektumazonosítója
   - **Kibocsátó kivonata**: Az SSO-tanúsítvány ujjlenyomata
 
 ## <a name="dns-settings"></a>DNS-beállítások

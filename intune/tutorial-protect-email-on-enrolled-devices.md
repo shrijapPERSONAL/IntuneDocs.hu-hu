@@ -16,14 +16,15 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2c23ad2c63fad8c74666e3c1ae9acc543e48f8e8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c21619c5c1a84e5d2679709b6153d3a85cdb6497
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181870"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846383"
 ---
-# <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Oktatóanyag: Az Exchange Online e-mailjeinek védelme felügyelt eszközökön
+# <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Oktatóanyag: A felügyelt eszközökön az Exchange Online e-mailek védelme
 Ismerje meg az eszközmegfelelőségi szabályzatok feltételes hozzáféréssel való használatát annak érdekében, hogy csak az olyan iOS-eszközök férhessenek hozzá az Exchange Online e-mailjeihez, amelyeket az Intune felügyel, és amelyek jóváhagyott e-mail alkalmazást használnak. 
 
 Az oktatóanyag segítségével megtanulhatja a következőket: 
@@ -37,7 +38,7 @@ Ha nem rendelkezik Intune-előfizetéssel, [regisztráljon egy ingyenes próbafi
   - Az oktatóanyag végrehajtásához szüksége lesz egy tesztelési bérlőre a következő előfizetésekkel:
     - Prémium szintű Azure Active Directory ([ingyenes próbaverzió](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
     - Office 365 Vállalati előfizetés, ami magában foglalja az Exchange-et ([ingyenes próbaverzió](https://go.microsoft.com/fwlink/p/?LinkID=510938))
-  - Mielőtt elkezdené, hozzon létre az iOS eszközök számára egy teszteszközprofilt a következő oktatóanyag lépéseit követve: [Rövid útmutató: E-mail-profil létrehozása iOS operációs rendszeren](quickstart-email-profile.md).
+  - Mielőtt elkezdené, az iOS-eszközök teszt eszközprofil létrehozása a lépéseket követve [a rövid útmutató: Egy IOS e-mail profil létrehozása](quickstart-email-profile.md).
 
 ## <a name="sign-in-to-intune"></a>Bejelentkezés az Intune-ba
 
@@ -53,7 +54,7 @@ Hozzon létre egy Intune eszközmegfelelőségi szabályzatot, ahol megadja, hog
 5.  Kattintson a **Beállítások** > **E-mail** elemre. 
      
     1.  **A mobileszközöktől felügyelt e-mail-profilt megkövetelő beállítás** mellett válassza a **Kötelező** lehetőséget.
-    2. Válassza az **OK** gombot.
+    2. Kattintson az **OK** gombra.
 
     ![A felügyelt e-mail-profil megkövetelése az e-mail-megfelelőségi szabályzatban](media/tutorial-protect-email-on-enrolled-devices/ios-compliance-policy-email.png)
     
@@ -71,7 +72,7 @@ Hozzon létre egy Intune eszközmegfelelőségi szabályzatot, ahol megadja, hog
     ![Az e-mail-megfelelőségi szabályzat jelszóbeállításainak megadása](media/tutorial-protect-email-on-enrolled-devices/ios-compliance-policy-system-security.png)
 
 8.  Válassza az **OK**, majd újra az **OK** elemet.
-9.  Válassza a **Létrehozás** lehetőséget.
+9.  Kattintson a **Létrehozás** gombra.
 
 ## <a name="create-the-conditional-access-policy"></a>A feltételes hozzáférési szabályzat létrehozása
 Most egy feltételes hozzáférési szabályzatot hozunk létre, amelynek értelmében minden eszközplatformnak regisztrálnia kell az Intune-ban és meg kell felelnie az Intune megfelelőségi szabályzatának, mielőtt hozzáférne az Exchange Online-hoz. Ezenkívül az Outlook alkalmazásra is szükség lesz az e-mailek eléréséhez. A feltételes hozzáférési szabályzatok az Azure AD portálon vagy az Intune portálon konfigurálhatók. Mivel már az Intune portálon vagyunk, itt fogjuk létrehozni a szabályzatot.
@@ -82,9 +83,9 @@ Most egy feltételes hozzáférési szabályzatot hozunk létre, amelynek értel
 4.  A **Hozzárendelések** alatt válassza a **Felhőalkalmazások** lehetőséget. Mivel az Office 365 Exchange Online e-mailjeit szeretnénk megvédeni, a következő lépések segítségével választhatjuk ki:
      
     1. A **Belefoglalás** lapon válassza az **Alkalmazások kiválasztása** elemet.
-    2. Válassza a **Kijelölés** elemet. 
+    2. Válassza a **Kiválasztás** lehetőséget 
     3. A felsorolt alkalmazások közül válassza ki az **Office 365 Exchange Online-t**, majd kattintson a **Kiválasztás** gombra. 
-    4. Válassza a **Kész** lehetőséget.
+    4. Válassza a **Done** (Kész) lehetőséget.
   
     ![Az Office 365 Exchange Online alkalmazás kiválasztása](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-apps.png)
 
@@ -110,7 +111,7 @@ Most egy feltételes hozzáférési szabályzatot hozunk létre, amelynek értel
     2. Válassza ki az **Eszköz megfelelőként való megjelölésének megkövetelése** elemet. 
     3. Válassza ki a **Jóváhagyott ügyfélalkalmazás megkövetelése** elemet.
     4. A **Több vezérlő esetén** elem alatt válassza a **minden kiválasztott vezérlő megkövetelésére** szolgáló lehetőséget. Ez a beállítás biztosítja, hogy mindkét kiválasztott követelmény érvényben legyen, amikor egy eszköz hozzá próbál férni az e-mailekhez.
-    5. Válassza a **Kijelölés** elemet.
+    5. Válassza a **Kiválasztás** lehetőséget
      
     ![Az Office 365 Exchange Online alkalmazás kiválasztása](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
 
@@ -118,7 +119,7 @@ Most egy feltételes hozzáférési szabályzatot hozunk létre, amelynek értel
      
     ![Az Office 365 Exchange Online alkalmazás kiválasztása](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-enable-policy.png)
 
-9.  Válassza a **Létrehozás** lehetőséget.
+9.  Kattintson a **Létrehozás** gombra.
 
 ## <a name="try-it-out"></a>Próbálja ki!
 A létrehozott szabályzat megköveteli, hogy az Office 365 e-mail-alkalmazásába történő belépést megkísérlő iOS-eszközök mindegyikének regisztrálnia kell az Intune-ban, és az iOS rendszerhez készült Office mobilalkalmazást kell használnia. A forgatókönyv teszteléséhez egy iOS-eszközön próbáljon meg a tesztelési bérlő egyik felhasználójának hitelesítő adataival bejelentkezni az Exchange Online-ra. A rendszer kérni fogja, hogy regisztrálja az eszközt és telepítse az Outlook mobilalkalmazást.
@@ -134,7 +135,7 @@ Ha már nincs szükség a tesztszabályzatokra, eltávolíthatja őket.
 2. Válassza az **Eszközmegfelelőség** > **Szabályzatok** elemet.
 3. A **Szabályzat neve** listában válassza a tesztszabályzat helyi menüjét (**...**), majd válassza a **Törlés** elemet. Válassza az **OK** lehetőséget a megerősítéshez.
 4. Válassza a **Feltételes hozzáférés** > **Szabályzatok** elemet.
-5. A **Szabályzat neve** listában válassza a tesztszabályzat helyi menüjét (**...**), majd válassza a **Törlés** elemet. Válassza ki **Igen** megerősítéséhez.
+5. A **Szabályzat neve** listában válassza a tesztszabályzat helyi menüjét (**...**), majd válassza a **Törlés** elemet. Válassza az **Igen** lehetőséget a megerősítéshez.
 
  ## <a name="next-steps"></a>További lépések 
 Az oktatóanyag során olyan szabályzatokat hozott létre, amelyek megkövetelik, hogy az Exchange Online e-mail-alkalmazásába belépni kívánó iOS-eszközök regisztráljanak az Intune-ban és az Outlook alkalmazást használják. További információt az Intune feltételes hozzáféréssel történő használatáról más alkalmazások és szolgáltatások védelme érdekében, beleértve az Office 365 Exchange Online Exchange ActiveSync-ügyfeleit is, a [Feltételes hozzáférés beállításáról](conditional-access.md) szóló szakaszban talál.

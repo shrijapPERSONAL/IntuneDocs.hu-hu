@@ -14,12 +14,13 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 25328bc119b91d7c9c3bb678962b90123a0d1faa
-ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: afa2ef4cf1199597f61af99d631243e2d3b51e64
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55290689"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845176"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>A feltételes hozzáférés az Intune-ban a Windows Defender ATP megfelelőségi kényszerítése
 
@@ -51,7 +52,7 @@ Az ATP Intune-nal való használatához a következőknek konfigurálva és hasz
 
 ## <a name="enable-windows-defender-atp-in-intune"></a>A Windows Defender ATP engedélyezése az Intune-ban
 
-1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
 3. Válassza az **Eszközmegfelelőség** > **Windows Defender ATP** > **A Windows Defender biztonsági központ megnyitása** lehetőséget.
 
@@ -66,7 +67,7 @@ Az ATP Intune-nal való használatához a következőknek konfigurálva és hasz
     3. Válassza a **Beállítások mentése** lehetőséget.
 
 5. Az Intune-ba visszatérve válassza az **Eszközmegfelelőség** > **Windows Defender ATP** lehetőséget. Adja meg a **10.0.15063 vagy újabb verziójú windowsos eszközök csatlakoztatása a következőhöz: Windows Defender ATP** beállításnál a **Be** értéket.
-6. Válassza a **Mentés** lehetőséget.
+6. Kattintson a **Mentés** gombra.
 
 Ezt a feladatot általában egyszer kell elvégezni. Ha tehát az ATP már engedélyezve van az Intune-erőforrásában, akkor nem szükséges megismételnie.
 

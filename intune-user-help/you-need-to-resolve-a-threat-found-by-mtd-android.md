@@ -15,18 +15,19 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 68808e4a9e29ec8d965a733dae79a9b32f3c5ecd
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c0357744619f3e1905b97b27b5dbd2ec3ea5e0dc
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149664"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838376"
 ---
 # <a name="resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>A Mobile Threat Defense alkalmazás által talált fenyegetések elhárítása
 
-A Mobile Threat Defense-alkalmazások észlelik az eszközeit fenyegető veszélyeket, és értesítést küldenek róluk. Egyes cégek a Mobile Threat Defense szolgáltatást egy MDM-szolgáltatóval, például az Intune-nal integrálják. Integrálás esetén a Mobile Threat Defense-szolgáltatás jelentést készít a fenyegetésekről (gyanús alkalmazások, hálózatok és az operációs rendszer sebezhetősége), és a Céges portál alkalmazáson keresztül értesíti ezekről. Ezután a Mobile Threat Defense alkalmazásban megtekintheti a fenyegetés részleteit és az elhárítás lépéseit.
+A Mobile Threat Defense alkalmazás észleli az eszközeit fenyegető veszélyeket, és értesítést küld róluk. Egyes cégek a Mobile Threat Defense szolgáltatást egy MDM-szolgáltatóval, például az Intune-nal integrálják. Integrálás esetén a Mobile Threat Defense szolgáltatás jelentést készít a fenyegetésekről (gyanús alkalmazások, hálózatok és az operációs rendszer sebezhetősége), és a Céges portál alkalmazáson keresztül értesíti ezekről. Ezután a Mobile Threat Defense alkalmazásban megtekintheti a fenyegetés részleteit és az elhárítás lépéseit.
 
-A fenyegetések megoldatlan nem megfelelőségi problémákként jelennek meg a Céges portálon. Ha a fenyegetések elérnek egy adott kockázati szintet, a cég visszavonja az Ön hozzáférését a céges erőforrásokhoz. Amíg a fenyegetések jelen vannak, előfordulhat hogy nem lehet végrehajtani a következőket:  
+A fenyegetések megoldatlan nem megfelelőségi problémákként jelennek meg a Céges portálon. Ha a fenyegetések elérnek egy adott kockázati szintet, a cég visszavonja az Ön hozzáférését a céges erőforrásokhoz. Amíg a fenyegetések jelen vannak, előfordulhat, hogy nem lehet végrehajtani a következőket:  
 
 * Hozzáférés a vállalati e-mailekhez
 * Hozzáférés a vállalati Wi-Fi-hez

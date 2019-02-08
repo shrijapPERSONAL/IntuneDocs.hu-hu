@@ -17,20 +17,21 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9582f5acafdc60663f935ca18d18d6d34887817a
-ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9d39c065dd991fab548cd6050337379746bc28c2
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51510952"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838801"
 ---
 # <a name="unable-to-get-macos-device-managed"></a>A macOS-eszköz nem felügyelhető
 
 Ha a macOS felügyeletének beállításakor a következő üzenetek egyikét kapja, lépjen kapcsolatba céges ügyfélszolgálatával.
 
-**1. üzenet:** *Problémák adódtak az eszköz felügyelet alá vonásakor. Ezt a problémát okozhatja egy virtuális gép használata, ha korlátozott sorozatszámmal rendelkezik, vagy ha az eszköz már hozzá van rendelve valaki máshoz. Ismerje meg az ilyen problémák megoldási módját, vagy forduljon a cég ügyfélszolgálatához.*
+**1 üzenet**: *Kiszolgálóhiba történt az eszköz felügyelt. Ezt a problémát okozhatja egy virtuális gép használata, ha korlátozott sorozatszámmal rendelkezik, vagy ha az eszköz már hozzá van rendelve valaki máshoz. Sajátítsa el, hogyan oldhatók meg az ilyen problémák, vagy forduljon a cég ügyfélszolgálatához.*
 
-**2. üzenet:** *Úgy tűnik, hogy egy virtuális gépet használ. Győződjön meg arról, hogy teljesen konfigurálta a virtuális gépet, beleértve a sorozatszámot és a hardvermodellt. Ha ez nem egy virtuális gép, forduljon az ügyfélszolgálathoz.*  
+**2 üzenet**: *Úgy tűnik, hogy egy virtuális gépet használ. Győződjön meg arról, hogy teljesen konfigurálta a virtuális gépet, beleértve a sorozatszámot és a hardvermodellt. Ha ez nem egy virtuális gép, forduljon az ügyfélszolgálathoz.*  
 
 Előfordulhat, hogy az eszköz nem felügyelhető a következők valamelyike miatt: 
 

@@ -14,12 +14,13 @@ ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 36ed7a4dda91cfcc3cc4b97cc9ab8872b0a2c80e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1cb65fff3009b25575e7899a7b19b584d7c84e67
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189146"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850930"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>Jelszó alaphelyzetbe állítása Windows rendszerű eszközökön az Intune-nal
 
@@ -40,9 +41,9 @@ A következő platformok **nem** támogatottak:
 A jelszó Windows rendszerű eszközökön történő alaphelyzetbe állításához készítse elő a PIN-kód-átállítási szolgáltatást az Intune-bérlőn.
 
 1. Nyissa meg a [Microsoft PIN-kód-átállítási szolgáltatás előállítása](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=b8456c59-1230-44c7-a4a2-99b085333e84&resource=https%3A%2F%2Fgraph.windows.net&redirect_uri=https%3A%2F%2Fcred.microsoft.com&state=e9191523-6c2f-4f1d-a4f9-c36f26f89df0&prompt=admin_consent) lapot, és jelentkezzen be a bérlői rendszergazda fiókjával.
-2. Az **Elfogadás** gombra kattintva járuljon hozzá, hogy a PIN-kód-átállítási szolgáltatás hozzáférjen a fiókjához: ![PIN-kód -átállítási szolgáltatás engedélykérésének elfogadása](./media/pin-reset-service-home-screen.png)
+2. **Fogadja el** járuljon hozzá, hogy a PIN-kód-átállítási szolgáltatás hozzáférjen a fiókjához: ![Fogadja el az engedélyek-átállítási kérelem](./media/pin-reset-service-home-screen.png)
 3. Nyissa meg a [Microsoft PIN-kód-átállítási ügyfél előállítása](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent) lapot, és jelentkezzen be a bérlői rendszergazda fiókjával. Az **Elfogadás** gombra kattintva járuljon hozzá, hogy a PIN-kód-átállítási ügyfél hozzáférjen a fiókjához.
-4. Az [Azure Portalon](https://portal.azure.com) ellenőrizze, hogy a PIN-kód-átállítási szolgáltatás szerepel-e a vállalati alkalmazások listáján (összes alkalmazás): ![PIN-kód-átállítási szolgáltatás engedélyezése lap](./media/pin-reset-service-application.png)
+4. Az a [az Azure portal](https://portal.azure.com), győződjön meg arról, hogy a PIN-kód-átállítási szolgáltatás szerepel a vállalati alkalmazásokban (összes alkalmazás): ![PIN Reset Service – engedélyek lap](./media/pin-reset-service-application.png)
 
 > [!NOTE]
 > Miután elfogadta a PIN-kód-átállítási kérelmet, `Page not found` üzenetet kaphat, de az is előfordulhat, hogy látszólag nem történik semmi. Ez a működésmód nem jelent hibát. Mindenképpen ellenőrizze, hogy a két PIN-kód-átállítási alkalmazás látható-e a bérlő számára.
@@ -62,11 +63,11 @@ Cserélje le a *bérlői azonosítót* az [Azure Portalon](https://portal.azure.
 
 ## <a name="reset-the-passcode"></a>A PIN-kód alaphelyzetbe állítása
 
-1. Jelentkezzen be az [Azure portálra](https://portal.azure.com). 
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com). 
 2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
 3. Kattintson az **Eszközök**, majd a **Minden eszköz** elemre.
 4. Válassza ki azt az eszközt, amelyen át szeretné állítani a jelszót. Az eszköztulajdonságok területen válassza az **Új jelszó** lehetőséget.
-5. Válassza ki **Igen** megerősítéséhez. A PIN-kód létrejön, és a következő hét nap folyamán megtekinthető a portálon.
+5. Válassza az **Igen** lehetőséget a megerősítéshez. A PIN-kód létrejön, és a következő hét nap folyamán megtekinthető a portálon.
 
 ## <a name="next-step"></a>Következő lépés
 

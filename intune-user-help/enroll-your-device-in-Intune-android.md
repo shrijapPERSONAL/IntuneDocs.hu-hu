@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5eb00734c8095202b5b633f1db105a42d40e4567
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 99f595adf9e53a8704db152e5e3725fe067902af
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149035"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55849447"
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Android-eszköz regisztrálása az Intune-ban
 
@@ -124,7 +125,7 @@ A regisztráció előtt vagy után a rendszer megkérheti, hogy válasszon ki eg
 
     ![„A vállalati hozzáférés beállítása befejeződött” képernyő](./media/and-enroll-10-comp-access-setup-complete.png)
 
-Mielőtt vállalati alkalmazások telepítésével próbálkozna, a **Beállítások** &gt; **Biztonság** területen kapcsolja be az **Ismeretlen források** beállítást. Ha az alkalmazások telepítésének megkísérlése előtt nem kapcsolja be ezt a beállítást, a következő üzenet jelenik meg: „A telepítés letiltva. Biztonsági okokból az eszköz blokkolja az ismeretlen forrásból származó alkalmazások telepítését.” A hiba-párbeszédpanelen található **Beállítások** elemre koppintva könnyen az **Ismeretlen források** beállításhoz ugorhat.
+Mielőtt vállalati alkalmazások telepítésével próbálkozna, a **Beállítások** &gt; **Biztonság** területen kapcsolja be az **Ismeretlen források** beállítást. Alkalmazások telepítésének megkísérlése előtt nem kapcsolja ezt a beállítást, ha a következő üzenetet láthatja: "A telepítés letiltva. Biztonsági okokból az eszköz blokkolja az ismeretlen forrásból származó alkalmazások telepítését.” A hiba-párbeszédpanelen található **Beállítások** elemre koppintva könnyen az **Ismeretlen források** beállításhoz ugorhat.
 
 > [!Note]
 > Ha a szervezete távközlésiköltség-kezelő szoftvert használ, az eszköz teljes regisztrálásához még néhány lépést el kell végezni. További információért [kattintson ide](enroll-your-device-with-telecom-expense-management-android.md).

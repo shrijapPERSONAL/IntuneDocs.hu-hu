@@ -11,14 +11,15 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: b5653c67766a3312cf7ce2872e8b0cd4301b0e8b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 982caa46adb29ef1d57ec65ac855adca9cef1883
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189489"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834840"
 ---
-# <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>Rövid útmutató – Felhasználó létrehozása és licenc hozzárendelése az Intune-ban
+# <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>Gyors útmutató: Hozzon létre egy felhasználót, és a licenc hozzárendelése
 
 Ezt a rövid útmutatót követve létrehozhat egy felhasználót, majd hozzárendelhet egy licencet. Az Intune használata során mindenkinek, aki hozzá kíván férni a vállalati adatokhoz, rendelkeznie kell felhasználói fiókkal. Később az Intune-rendszergazdák az ilyen felhasználók konfigurálásával szabályozhatják a hozzáférést.
 
@@ -59,7 +60,7 @@ A felhasználó létrehozása után az [Office 365-portálon](http://go.microsof
 
 Az új aktív Intune-felhasználónál ekkor már látható, hogy **Intune**-licencet használ.
 
-## <a name="clean-up-resources"></a>Erőforrások eltávolítása
+## <a name="clean-up-resources"></a>Az erőforrások eltávolítása
 
 Ha többé nincs szüksége erre a felhasználóra, törölje az [Office 365 portál](http://go.microsoft.com/fwlink/p/?LinkId=698854) megnyitásával, ott pedig a **Felhasználók** > **Aktív felhasználók** > *a felhasználó kiválasztása a listából* > **Felhasználó törlése** > **Felhasználó törlése** > **Módosítások jóváhagyása** > **Bezárás** műveletsorral.
 
@@ -70,4 +71,4 @@ Ezt a rövid útmutatót követve létrehozott egy felhasználót, és hozzáren
 Kövesse az Intune rövid útmutatóinak sorozatát a következő rövid útmutatóval.
 
 > [!div class="nextstepaction"]
-> [Rövid útmutató: Csoport létrehozása felhasználók kezeléséhez](quickstart-create-group.md)
+> [Gyors útmutató: Hozzon létre egy csoportot, hogy a felhasználók kezelése](quickstart-create-group.md)

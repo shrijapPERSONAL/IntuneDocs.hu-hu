@@ -15,12 +15,13 @@ ms.assetid: c2d7ce3f-fe97-4044-ad9e-25ac8fa301c9
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 4fad67bcde44246e7673d6ebe12afcdcf14fc8cd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c6e46b1cb3b98385e3011e93bd90a1e8739f1e2f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183800"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55847114"
 ---
 # <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>A végfelhasználói bevezetés ösztönzése feltételes hozzáféréssel a Microsoft Intune-ban
 
@@ -55,11 +56,11 @@ Ez csak egy megközelítés a sok közül: választhat egyszerűbb megoldást is
 
 ## <a name="task-list-for-conditional-access"></a>Feladatlista a feltételes hozzáféréshez
 
-### <a name="task-1-decide-how-you-are-going-to-implement-conditional-access"></a>1. feladat: A feltételes hozzáférés implementálási módjának meghatározása
+### <a name="task-1-decide-how-you-are-going-to-implement-conditional-access"></a>1. feladat: Annak eldöntése, hogyan kívánja a feltételes hozzáférés alkalmazása
 
 [A feltételes hozzáférés szokásos használati módjai](conditional-access-intune-common-ways-use.md).
 
-### <a name="task-2-set-up-intune-conditional-access"></a>2. feladat: Az Intune feltételes hozzáférési funkciójának beállítása
+### <a name="task-2-set-up-intune-conditional-access"></a>2. feladat: Az Intune feltételes hozzáférés beállítása
 
 Válasszon egyet az alábbi lehetőségek közül:
 

@@ -17,12 +17,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 290d60732130a82fb3daf7779142605ebc0bfeaa
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0cfcc64418c105e92187cb8eb229f955a7d58681
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53113003"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850351"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>A Microsoft Intune újdonságai – korábbi hónapok
 
@@ -108,7 +109,7 @@ Az Intune-rendszergazda konfigurálhatja ezeket a beállításokat a megosztás 
 
 #### <a name="configure-gatekeeper-to-control-macos-app-download-source----1690459---"></a>Gatekeeper konfigurálása a macOS rendszerű alkalmazásletöltés-források szabályozásához <!-- 1690459 -->
 
-Megvédheti eszközeit a kéretlen alkalmazásoktól a Gatekeeper konfigurálásával, amely szabályozza, hogy mely helyekről tölthetők le alkalmazások. A következő letöltésforrásokat konfigurálhatja: **Mac App Store**, **Mac App Store és azonosított fejlesztők**, vagy **Mindenhonnan**. Azt is beállíthatja, hogy a felhasználók telepíthetnek-e alkalmazásokat úgy. hogy a CTRL + kattintás segítségével felülírják a Gatekeeper szabályozásait.
+Megvédheti eszközeit a kéretlen alkalmazásoktól a Gatekeeper konfigurálásával, amely szabályozza, hogy mely helyekről tölthetők le alkalmazások. A következő letöltésforrásokat konfigurálhatja: **Mac App Store**, **Mac App Store és azonosított fejlesztők**, vagy **bárhol**. Azt is beállíthatja, hogy a felhasználók telepíthetnek-e alkalmazásokat úgy. hogy a CTRL + kattintás segítségével felülírják a Gatekeeper szabályozásait.
 
 Ezek a beállítások az **Eszközkonfiguráció** -> **Profil létrehozása** -> **macOS** -> **Endpoint protection** területen találhatók meg.
 
@@ -161,7 +162,7 @@ További információ a telepítési csatornák Intune-beli létrehozásáról: 
 
 ### <a name="new-windows-defender-exploit-guard-settings----1631893---"></a>Új beállítások a Windows Defender – biztonsági rés kiaknázása elleni védelemhez <!-- 1631893 -->
 
-Hat új <strong>Támadási felület csökkentése</strong> beállítás és bővített <strong>Mappahozzáférés felügyelete: Mappavédelem</strong> funkciók érhetők el. Ezeket a beállításokat az alábbi helyen találhatja meg: Eszközkonfiguráció\Profilok\
+Hat új <strong>támadási felület csökkentése</strong> beállítások és bővített <strong>mappahozzáférés: Mappavédelem</strong> képességek érhető el. Ezeket a beállításokat tekinthet meg: Eszközkonfiguráció\profilok\
 Profil létrehozása\Endpoint Protection\Windows Defender - biztonsági rés kiaknázása elleni védelem.
 
 #### <a name="attack-surface-reduction"></a>Támadási felület csökkentése
@@ -180,7 +181,7 @@ Profil létrehozása\Endpoint Protection\Windows Defender - biztonsági rés kia
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | Mappavédelem (már implementálva) | Nincs konfigurálva, Engedélyezés, Csak naplózás (már implementálva)<br><br> <strong>Új</strong><br>Lemezmódosítás letiltása, lemezmódosítás naplózása |             |
 
-Fájlok és mappák védelme a nemkívánatos alkalmazások által végrehajtott, jogosulatlan módosítások ellen.<br><br>**Engedélyezés**: Megakadályozza, hogy a nem megbízható alkalmazások módosítsák vagy töröljék a védett mappák fájljait, valamint hogy lemezszektorokra írjanak.<br><br>
+Fájlok és mappák védelme a nemkívánatos alkalmazások által végrehajtott, jogosulatlan módosítások ellen.<br><br>**Engedélyezése**: Megakadályozza, hogy nem megbízható alkalmazások módosítsák vagy a védett mappák és fájlok törlésével hogy lemezszektorokra írjanak.<br><br>
 **Csak a lemezmódosítások letiltása**:<br>Nem engedélyezi a nem megbízható alkalmazásoknak, hogy lemezszektorokra írjanak. A nem megbízható alkalmazások továbbra is módosíthatják vagy törölhetik a védett mappák fájljait.|
 
 ### <a name="intune-apps"></a>Intune-alkalmazások
@@ -213,9 +214,9 @@ Ha az eszköze a Windows 10 RS1 és későbbi verziót futtatja, töltse le a Wi
 
 #### <a name="new-windows-defender-application-guard-settings----1631890---"></a>Új Windows Defender alkalmazásőr-beállítások <!-- 1631890 -->
 
-- **Grafikus gyorsítás engedélyezése**: A rendszergazdák engedélyezhetik egy virtuális grafikai processzor használatát a Windows Defender alkalmazásőr számára. Ezzel a beállítással a CPU a vGPU-ra terhelheti a grafikai renderelést. Ez javíthatja a teljesítményt a magas grafikai igényű webhelyekkel történő munka, valamint a tárolón belüli videók megtekintése során.
+- **Grafikus gyorsítás engedélyezése**: Rendszergazdák engedélyezhetik egy virtuális grafikai processzor használatát a Windows Defender Alkalmazásőr. Ezzel a beállítással a CPU a vGPU-ra terhelheti a grafikai renderelést. Ez javíthatja a teljesítményt a magas grafikai igényű webhelyekkel történő munka, valamint a tárolón belüli videók megtekintése során.
 
-- **SaveFilestoHost**: A rendszergazdák engedélyezhetik a tárolóban futó Microsoft Edge fájljainak a gazdafájlrendszerbe való áttérését. Ennek a beállításnak a bekapcsolásával a felhasználók letölthetik tárolóban futó Microsoft Edge-fájlokat a gazdafájlrendszerbe.
+- **SaveFilestoHost**: Rendszergazdák engedélyezhetik fájljainak a gazdafájlrendszerbe a tárolóban futó Microsoft Edge-ből. Ennek a beállításnak a bekapcsolásával a felhasználók letölthetik tárolóban futó Microsoft Edge-fájlokat a gazdafájlrendszerbe.
 
 #### <a name="mam-protection-policies-targeted-based-on-management-state----1665993---"></a>Felügyeleti állapoton alapuló, célzott MAM-alapú védelmi szabályzatok <!-- 1665993 -->
 Célzott MAM-szabályzatokat hozhat létre az eszköz felügyeleti állapota alapján:
@@ -233,10 +234,10 @@ Fejlesztettük a Windows 10-hez készült Céges portál nyelvét, hogy közért
 #### <a name="new-additions-to-our-docs-about-user-privacy----1440709---"></a>Új, felhasználói adatvédelemmel kapcsolatos dokumentumok <!-- 1440709 -->
 Szeretnénk nagyobb irányítást adni a felhasználóknak az adataik védelmével kapcsolatban, így frissítettük a Céges portál a helyben tárolt adatok megtekintésére és eltávolítására vonatkozó leírásokat tartalmazó dokumentumokat. A frissítéseket itt tekintheti meg:
 
-- **Android**: [Android-eszköz regisztrációjának törlése az Intune-ból](/intune-user-help/unenroll-your-device-from-intune-android)
-- **Android, ha a felhasználó nem fogadta el a használati feltételeket**: [Az eszközkezelés eltávolítása, ha nem fogadta el a használati feltételeket](/intune-user-help/unenroll-your-device-from-intune-if-you-declined-terms-of-use-android)
-- **iOS**: [iOS-eszköz eltávolítása az Intune-ból](/intune-user-help/unenroll-your-device-from-intune-ios)
-- **Windows**: [Windows-eszköz eltávolítása az Intune-ból](/intune-user-help/unenroll-your-device-from-intune-windows)
+- **Android**: [Az Android-eszköz eltávolítása az Intune-ból](/intune-user-help/unenroll-your-device-from-intune-android)
+- **Android-, ha a felhasználó visszautasította a használati feltételeket tartalmazó fájl**: [Ha Ön nem fogadta el "Használati feltételek", távolítsa el az Eszközfelügyelet](/intune-user-help/unenroll-your-device-from-intune-if-you-declined-terms-of-use-android)
+- **iOS**: [IOS-eszköz eltávolítása az Intune-ból](/intune-user-help/unenroll-your-device-from-intune-ios)
+- **Windows**: [Windows-eszköz regisztrációjának törlése az Intune-ban](/intune-user-help/unenroll-your-device-from-intune-windows)
 
 ## <a name="february-2018"></a>2018. február
 
@@ -294,11 +295,11 @@ Az állapotkategóriákhoz tartozó részletes jelentések ismertetik a figyelme
 
 #### <a name="new-privacy-settings-for-device-restrictions---1308926---"></a>Új adatvédelmi beállítások az eszközkorlátozások számára <!--1308926 -->
 Az eszközök számára [két új adatvédelmi beállítás](device-restrictions-windows-10.md#privacy) érhető el:
-- **Felhasználói tevékenységek közzététele**: A megosztott élmények és a feladatváltóban nemrég használt erőforrások megelőzéséhez ezt a beállítást **tiltsa le**.
-- **Csak a helyi tevékenységek**: A csak a helyi tevékenységek alapján megosztott használat és a feladatváltóban nemrég használt erőforrások felderítésének megelőzéséhez ezt a beállítást **tiltsa le**.
+- **Felhasználói tevékenységek közzététele**: Állítsa a bestattempt értékre **blokk** megosztott élmények és a feladatváltóban nemrég használt erőforrások megelőzéséhez.
+- **Csak a helyi tevékenységek**: Állítsa a bestattempt értékre **blokk** megosztott élmények és a helyi tevékenység alapján feladatváltóban nemrég használt erőforrások megelőzéséhez.
 
 #### <a name="new-settings-for-the-microsoft-edge-browser---1469166---"></a>A Microsoft Edge böngésző új beállításai <!--1469166 -->
-A Microsoft Edge böngészőt használó eszközök számára [két új beállítás](device-restrictions-windows-10.md#microsoft-edge-browser) érhető el: **A kedvencek fájl elérési útja** és **A Kedvencek módosításai**.
+[Két új beállítás](device-restrictions-windows-10.md#microsoft-edge-browser) a Microsoft Edge böngészőt használó eszközök számára érhető el: **A Kedvencek fájl elérési útja** és **Kedvencek módosításai**.
 
 ### <a name="app-management"></a>Alkalmazáskezelés
 
@@ -353,7 +354,7 @@ Az erőforrásfiók megjelenhet például **Konferenciaterem B41/6233** néven.
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | Mappavédelem (már implementálva) | Nincs konfigurálva, Engedélyezés, Csak naplózás (már implementálva)<br><br> <strong>Új</strong><br>Lemezmódosítás letiltása, lemezmódosítás naplózása |             |
 
-Fájlok és mappák védelme a nemkívánatos alkalmazások által végrehajtott, jogosulatlan módosítások ellen.<br><br>**Engedélyezés**: Megakadályozza, hogy a nem megbízható alkalmazások módosítsák vagy töröljék a védett mappák fájljait, valamint hogy lemezszektorokra írjanak.<br><br>
+Fájlok és mappák védelme a nemkívánatos alkalmazások által végrehajtott, jogosulatlan módosítások ellen.<br><br>**Engedélyezése**: Megakadályozza, hogy nem megbízható alkalmazások módosítsák vagy a védett mappák és fájlok törlésével hogy lemezszektorokra írjanak.<br><br>
 **Csak a lemezmódosítások letiltása**:<br>Nem engedélyezi a nem megbízható alkalmazásoknak, hogy lemezszektorokra írjanak. A nem megbízható alkalmazások továbbra is módosíthatják vagy törölhetik a védett mappák fájljait.|
 
 #### <a name="additions-to-system-security-settings-for-windows-10-and-later-compliance-policies---1704133--"></a>A Windows 10 rendszerbiztonsági beállításainak és a későbbi megfelelőségi szabályzatok bővítése <!--1704133-->
@@ -935,11 +936,11 @@ Az Intune-ból a külön megvásárolható [TeamViewer](https://www.teamviewer.c
 ### <a name="scan-devices-with-windows-defender----1280988-1280990---"></a>Eszközök vizsgálata Windows Defenderrel <!-- 1280988  1280990   -->
 Windows 10 rendszerű felügyelt eszközökön a Windows Defender víruskereső használható **gyorsvizsgálat** és **teljes vizsgálat** futtatására, valamint **aláírások frissítésére**. Az eszköz áttekintő paneljén válassza ki az eszközön futtatni kívánt műveletet. A rendszer megerősítést fog kérni, mielőtt a parancsot lefuttatná az eszközön. 
 
-**Gyorsvizsgálat**: A gyorsvizsgálat azokat a helyeket vizsgálja meg, ahol a kártevő általában indításhoz lehet regisztrálva, például a beállításkulcsok és az ismert indítási Windows-mappák. A gyorsvizsgálat átlagosan öt percig tart. Az **Állandó valós idejű védelem** a fájlok megnyitásakor, bezárásakor és a mappa megjelenítésekor megvizsgálja a fájlokat. Ez a beállítás a gyorsvizsgálattal együtt segít kiszűrni azokat a kártevőket, amelyek akár a rendszert, akár a kernelt fertőzték meg. A vizsgálat végén a felhasználók saját eszközeiken nézhetik meg a vizsgálat eredményeit. 
+**Gyorsvizsgálat**: A Gyorsvizsgálat azokat a helyeket, ahol kártevő általában indításhoz lehet regisztrálva, például a beállításkulcsok és az ismert indítási Windows-mappák vizsgálja. A gyorsvizsgálat átlagosan öt percig tart. Az **Állandó valós idejű védelem** a fájlok megnyitásakor, bezárásakor és a mappa megjelenítésekor megvizsgálja a fájlokat. Ez a beállítás a gyorsvizsgálattal együtt segít kiszűrni azokat a kártevőket, amelyek akár a rendszert, akár a kernelt fertőzték meg. A vizsgálat végén a felhasználók saját eszközeiken nézhetik meg a vizsgálat eredményeit. 
 
-**Teljes vizsgálat**: Teljes vizsgálatot olyan eszközökön célszerű futtatni, amelyeken korábban kártevő-fenyegetést találtak, hogy feltárhatóak legyenek a kártevő esetleges inaktív komponensei mélyebb tisztítás érdekében, továbbá igény szerinti vizsgálatra is használható. A teljes vizsgálat körülbelül egy órát vehet igénybe. A vizsgálat végén a felhasználók saját eszközeiken nézhetik meg a vizsgálat eredményeit. 
+**Teljes vizsgálat**: Egy teljes vizsgálatot azokon az eszközökön észlelt kártevő fenyegetés azonosítását, ha nincsenek az inaktív összetevők egy alaposabb karbantartási igénylő, hasznos lehet, és akkor hasznos, ha igény szerinti vizsgálat futtatása. A teljes vizsgálat körülbelül egy órát vehet igénybe. A vizsgálat végén a felhasználók saját eszközeiken nézhetik meg a vizsgálat eredményeit. 
 
-**Aláírások frissítése**: Az aláírások frissítése parancs frissíti a Windows Defender víruskereső kártevő-definícióit és aláírásait. Ezzel biztosítható, hogy a Windows Defender víruskereső hatékonyan észlelhesse a kártevőket. Ez a funkció csak a Windows 10 rendszert futtató eszközökön érhető el, és internetkapcsolat szükséges hozzá. 
+**Aláírások frissítése**: Az aláírások frissítése parancs frissíti a Windows Defender víruskereső kártevő szoftverek definícióit és aláírásait. Ezzel biztosítható, hogy a Windows Defender víruskereső hatékonyan észlelhesse a kártevőket. Ez a funkció csak a Windows 10 rendszert futtató eszközökön érhető el, és internetkapcsolat szükséges hozzá. 
 
 ### <a name="the-enabledisable-button-is-removed-from-the-intune-certificate-authority-page-of-the-intune-azure-portal-----1400455---"></a>Az Azure-beli Intune-portál Intune-os hitelesítésszolgáltató oldaláról eltávolítottuk az Engedélyezés/Letiltás gombot <!-- 1400455 -->
  Az Intune-beli tanúsítvány-összekötő beállításánál egy lépést szükségtelenné teszünk. Jelenleg először le kell tölteni a tanúsítvány-összekötőt, és ezután engedélyezni kell azt az Intune-konzolon. Ha azonban letiltja az összekötőt az Intune-konzolon, az összekötő továbbra is kibocsát tanúsítványokat.
@@ -1177,13 +1178,13 @@ Ettől a kiadástól kezdve a rendszergazdák a Vállalati Microsoft Áruházat 
 ### <a name="ui-updates-to-the-company-portal-website---1313244-part-1--"></a>A Céges portál felhasználói felületének frissítései <!--1313244 part 1-->
 A [Céges portál webhely](https://portal.manage.microsoft.com) felhasználói felületén számos frissítést hajtottunk végre a végfelhasználói élmény javítása érdekében.
 
-- __Továbbfejlesztett alkalmazáscsempék__ Az alkalmazásikonok mostantól automatikusan generált háttérrel jelennek meg az ikon meghatározó színe alapján (amennyiben az érzékelhető). Amennyiben alkalmazható a funkció az ikonra, ez a háttér felváltja a szürke kontúrt, amely eddig keretezte az ikonokat az alkalmazáscsempén.
+- __Továbbfejlesztett alkalmazáscsempék__:  Ikonok (amennyiben az érzékelhető) az ikon meghatározó színe alapján automatikusan generált háttérrel megjeleníti. Amennyiben alkalmazható a funkció az ikonra, ez a háttér felváltja a szürke kontúrt, amely eddig keretezte az ikonokat az alkalmazáscsempén.
 
     Egy hamarosan megjelenő kiadástól kezdve a Céges portál webhely a nagyméretű ikonokat fogja megjeleníteni, amennyiben lehetséges. Javasoljuk, hogy a rendszergazdák minimum 120x120 pixeles, nagy felbontású ikonokkal tegyék közzé az alkalmazásokat. 
 
-- __Navigációs változások__ A navigációs sáv elemei a bal felső sarokban látható hamburger menübe kerültek át. A Kategóriák lap el lett távolítva. A felhasználók mostantól böngészés közben szűrhetik kategória szerint a tartalmat.
+- __Navigációs változások__: Navigációs sáv elemei a bal felső sarokban látható hamburger menübe kerülnek. A Kategóriák lap el lett távolítva. A felhasználók mostantól böngészés közben szűrhetik kategória szerint a tartalmat.
 
-- __Kiemelt alkalmazások frissítései__ A webhelyhez hozzáadtunk egy új oldalt, ahol a felhasználók a megadott kiemelt alkalmazások között böngészhetnek, és finomhangolásokat végeztünk a honlap Kiemelt szakaszának felhasználói felületén.
+- __Kiemelt alkalmazások frissítései__: A webhelyhez hozzáadtunk egy új oldalt, ahol a felhasználók a megadott kiemelt alkalmazások között böngészhetnek, és finomhangolásokat végeztünk a honlap Kiemelt szakaszának felhasználói felületén.
 
 ### <a name="ibooks-support-for-the-company-portal-website---1231841--"></a>iBooks-támogatás a Céges portál webhelyén <!--1231841-->
 Egy dedikált oldalt adtunk hozzá a Céges portál webhelyéhez, ahol a felhasználók böngészhetik és letölthetik az iBooks szolgáltatás e-könyveit. 

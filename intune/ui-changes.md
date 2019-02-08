@@ -16,12 +16,13 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4a1c5f2b400e73566db88fea8e06383e45b363a3
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 218c1959649e5dd8c56c52b414aeeec02c6f4a42
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187752"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841759"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Hová kerültek az Intune-funkciók az Azure-ban?
 Az Intune Azure Portalra való költöztetésekor éltünk a lehetőséggel, és logikusabban rendeztünk el néhány feladatot. Minden ilyen előrelépés azzal jár, hogy meg kell tanulni az új elrendezést. Ez az útmutató azoknak készült, akik jól ismerik a klasszikus Intune-portált, és szeretnék megtudni, hogyan végezhetik el a feladatokat az Azure Portalbeli Intune-ban. Ha a cikk nem tartalmazza az Ön által keresett információt, írja meg a lap alján hozzászólásban, hogy pótolhassuk.
@@ -50,7 +51,7 @@ A klasszikus portálon be lehetett állítani a modern windowsos és macOS-es, v
 
 ![Klasszikus mobileszköz-regisztrációs szabályok képe](./media/01-classic-rules.png)
 
-Ezek a szabályok kivétel nélkül vonatkoztak az Intune-fiók összes felhasználójára. Az Azure Portalon ezek a szabályok két szabályzattípusba (eszköztípus szerinti és eszközök száma szerinti korlátozások) lettek szétválasztva.
+Ezek a szabályok kivétel nélkül vonatkoztak az Intune-fiók összes felhasználójára. Az Azure Portalon ezek a szabályok most két különböző csoportházirend-típusok jelennek meg: Eszköztípus-korlátozásokkal és eszközszám-korlátozást.
 
 ![Azure-os mobileszköz-regisztrációs korlátozások képe](./media/02-azure-enroll-restrictions.png)
 

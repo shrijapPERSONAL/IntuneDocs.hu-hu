@@ -16,12 +16,13 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: b952483fc0cb33b32769a4b83564618b082c4b87
-ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 35492b94e38d482f5ee59385453bac54f434223d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55303446"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845329"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot-preview"></a>Üzembe helyezése hibrid Azure AD-hez csatlakoztatott eszközökhöz az Intune-nal és a Windows Autopilot (előzetes verzió)
 Hibrid Azure Active Directory (Azure AD) beállításához használhatja az Intune és a Windows Autopilot-hez csatlakoztatott eszközök. Ehhez kövesse a cikkben.
@@ -90,7 +91,7 @@ A szervezeti egység, amely az adott jogosultságot számítógépek létrehozá
 
     ![Az Active Directory-objektum típusa panel](media/windows-autopilot-hybrid/only-following-objects.png)
     
-1. Válassza a **Tovább** elemet.
+1. Kattintson a **Tovább** gombra.
 
 1. A **engedélyek**, jelölje be a **teljes hozzáférés** jelölőnégyzetet.  
     Ez a művelet a többi beállítást választja ki.
@@ -137,9 +138,9 @@ Ha a webalkalmazás-proxy a hálózati környezetben, győződjön meg arról, h
     - Adja meg, amely tartalmazza az összes az Autopilot-eszközök egy adott sorrendben Azonosítóval rendelkező csoport létrehozásához, `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`.
     - Adja meg, amely tartalmazza az összes az Autopilot-eszközök egy adott beszerzési rendelés Azonosítóval rendelkező csoport létrehozásához, `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`.
     
-1. Válassza a **Mentés** lehetőséget.
+1. Kattintson a **Mentés** gombra.
 
-1. Válassza a **Létrehozás** lehetőséget.  
+1. Kattintson a **Létrehozás** gombra.  
 
 ## <a name="register-your-autopilot-devices"></a>Az Autopilot-eszközök regisztrálása
 
@@ -195,7 +196,7 @@ Módosítsa az eszköz profilt állapot körülbelül 15 percet vesz igénybe *n
 1. Az a **regisztrálási állapot oldal** ablaktáblán válassza előbb **alapértelmezett** > **beállítások**.
 1. Az a **alkalmazás és a profil telepítés állapotának megjelenítése** jelölje ki **Igen**.
 1. Igény szerint konfigurálja a többi beállítást.
-1. Válassza a **Mentés** lehetőséget.
+1. Kattintson a **Mentés** gombra.
 
 ## <a name="create-and-assign-a-domain-join-profile"></a>Tartomány-csatlakoztatási profil létrehozása és hozzárendelése
 

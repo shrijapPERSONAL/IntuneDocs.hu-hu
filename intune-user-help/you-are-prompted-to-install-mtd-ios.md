@@ -15,12 +15,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 773b78b32e919b120ac8908b0b69c5514cbdadb2
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 582b4615941dae8c2fc696ce5dfc87e2bbe4b98b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148761"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846247"
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>Mobile Threat Defense telepítése iOS-eszközön
 
@@ -37,7 +38,7 @@ A cég informatikai támogatási szolgálata csak a Mobile Threat Defense alkalm
 
 A Mobile Threat Defense használatával a vállalatok gondoskodhatnak eszközeik biztonságáról olyan alkalmazások ellen, amelyek céges adatokat próbálnak megszerezni. Ennek a védelemnek a használatához arra van szükség, hogy az eszközön telepített alkalmazásokról további információt lehessen továbbítani a vállalat által használt Mobile Threat Defense szolgáltatáshoz. A vállalat nem fér hozzá az Ön személyes alkalmazásainak adataihoz. Ha Mobile Threat Defense szolgáltatást használ, az eszközön található összes alkalmazás hozzá lesz adva a [mit láthat a vállalat](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) listához. Az alábbiakban látható, hogy az alkalmazásnak mely részeit láthatja a vállalat:
 
-*   Alkalmazás neve
+*   App neve
 * Alkalmazásazonosító: egyedi név, amely az App Store-ban azonosítja az alkalmazást
 *   Alkalmazásverzió és rövid verziószám: az alkalmazáshoz tartozó kiadási számok
 * Alkalmazásköteg és dinamikus méret: az alkalmazás által az eszközön elfoglalt tárterület

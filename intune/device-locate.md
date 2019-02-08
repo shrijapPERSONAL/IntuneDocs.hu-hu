@@ -14,12 +14,13 @@ ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e3f4d63a2e749e1070bd5969d6f8a3046f6bcc4e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 96d4143b5105a174ba47c8c7a713ae7bee9bcb94
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182176"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835733"
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Elveszett vagy ellopott iOS-eszközök megkeresése az Intune-nal
 
@@ -39,7 +40,7 @@ Ez a funkció nem támogatott a következő rendszereken:
 
 ## <a name="locate-a-lost-or-stolen-device"></a>Elveszett vagy ellopott eszköz megkeresése
 
-1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
 3. Válassza az **Eszközök**, majd a **Minden eszköz** lehetőséget.
 4. A felügyelt eszközök listájából válasszon ki egy iOS-eszközt, és válassza a **...További** lehetőséget. Majd válassza az **Eszköz megkeresése** távoli műveletet.

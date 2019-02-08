@@ -16,12 +16,13 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 48f1227da6260217105120d31301f60b6e06110c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f4e973c9fcc31c4aaacc40d89c0b03c23a50dedd
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186018"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834058"
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Alkalmazásonkénti VPN-profil létrehozása androidos eszközökhöz egyéni Microsoft Intune-profillal
 
@@ -39,7 +40,7 @@ Miután hozzárendeli a szabályzatot az Android rendszerű eszközhöz vagy fel
 ## <a name="step-1-create-a-vpn-profile"></a>1. lépés: VPN-profil létrehozása
 
 
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
 2. Az **Eszközkonfiguráció** panel **Kezelés** területén válassza a **Profilok** lehetőséget.
@@ -53,7 +54,7 @@ Jegyezze le a VPN-profil létrehozásakor megadott **Kapcsolat neve** értéket.
 
 ## <a name="step-2-create-a-custom-configuration-policy"></a>2. lépés: Egyéni konfigurációs szabályzat létrehozása
 
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
 2. Az **Eszközkonfiguráció** panel **Kezelés** területén válassza a **Profilok** lehetőséget.

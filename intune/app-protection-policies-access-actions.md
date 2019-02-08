@@ -16,12 +16,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 3f53ce0b2afd214dec98082c23f7187b4e69317b
-ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 30c2e6ad91990029d5b5445e7b4e0ac2417d5e7c
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53734238"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55847267"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Szelektív adattörlés alkalmazásvédelmi szabályzatok hozzáférési műveleteivel az Intune-ban
 
@@ -87,7 +88,7 @@ Az **Eszközgyártó(k)** beállítás használatához gépelje be az Android-gy
 Példabemenet: *Gyártó A; B gyártója* 
 
 >[!NOTE]
-> Ezek az eszközök Intune-beli jelentett néhány gyakori gyártó, és bemenetként is használható: Asus; BlackBerry; Bq; Gionee; Google; Globális; HMD Htc; Huawei; Infinix; Kyocera; Lemobile; A Lenovo; Lge; Motorola; Oneplus; Oppo; Samsung; Éles; Sony; Tecno; Vivo; Vodafone; Xiaomi; Zte; Zuk
+> Ezek az eszközök Intune-beli jelentett néhány gyakori gyártó, és bemenetként is használható: Asus;Blackberry;Bq;Gionee;Google;Hmd global;Htc;Huawei;Infinix;Kyocera;Lemobile;Lenovo;Lge;Motorola;Oneplus;Oppo;Samsung;Sharp;Sony;Tecno;Vivo;Vodafone;Xiaomi;Zte;Zuk
 
 A végfelhasználói eszközökön az Intune-ügyfél az Intune-ban az Application Protection-szabályzatokhoz megadott eszközmodellsztringek egyszerű egyeztetése alapján végez műveleteket. Az egyeztetés teljes mértékben az eszköz által jelentett értéktől függ. Az informatikai rendszergazda számára ajánlatos ellenőrizni, hogy a szándéknak megfelelő viselkedés történik-e, ennek a beállításnak kölönféle eszközgyártókon és modelleken alapuló, kisméretű felhasználói csoportot célzó tesztelésével. Az alapértelmezett érték a **Nincs konfigurálva**.<br>
 Állítsa be a következő műveletek egyikét: 

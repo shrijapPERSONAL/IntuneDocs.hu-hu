@@ -16,14 +16,15 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6d0a7485aa25dee74bf54192fa931d081be81cd8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3831b86bd619fae130f7173cee8f7e7cc46dfe6a
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184508"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839294"
 ---
-# <a name="quickstart-add-and-assign-a-client-app"></a>Rövid útmutató: Ügyfélalkalmazás hozzáadása és hozzárendelése
+# <a name="quickstart-add-and-assign-a-client-app"></a>Gyors útmutató: Egy ügyfél alkalmazások felvételét és hozzárendelését
 
 Ebben a rövid útmutatóban egy ügyfélalkalmazást ad és rendel hozzá a cége alkalmazottaihoz az Intune használatával. A rendszergazdák egyik elsődleges feladata annak biztosítása, hogy a végfelhasználók hozzáférjenek a munkájukhoz szükséges alkalmazásokhoz. 
 
@@ -90,7 +91,7 @@ Az Intune-on keresztül elérhető **Contoso To-Do** alkalmazás telepítéséhe
 4. Kattintson az Intune-nal hozzáadott alkalmazásra. Ebben a rövid útmutatóban hozzáadta a **Microsoft Office 365 alkalmazáscsomag** alkalmazást.
 
     > [!NOTE]
-    > Ha nem sikerült alkalmazásokat hozzárendelni az Intune-felhasználóhoz, a következő üzenet jelenik meg: *A rendszergazda nem tetten elérhetővé ezeket az alkalmazásokat.*
+    > Ha Ön nem sikerült társít alkalmazások az Intune-felhasználó, a következő üzenet jelenik meg: *A rendszergazda nem hajtott végre bármely alkalmazás érhető el Önnek.*
 
 5. Kattintson az **Install** (Telepítés) gombra.
 
@@ -103,4 +104,4 @@ Ebben a rövid útmutatóban hozzáadott alkalmazásokat az Intune-hoz, ezeket e
 Kövesse az Intune rövid útmutatóinak sorozatát a következő rövid útmutatóval.
 
 > [!div class="nextstepaction"]
-> [Rövid útmutató: Alkalmazásvédelmi szabályzat létrehozása és hozzárendelése](quickstart-create-assign-app-policy.md)
+> [Gyors útmutató: Létrehozása és hozzárendelése az alkalmazásvédelmi szabályzatokhoz](quickstart-create-assign-app-policy.md)

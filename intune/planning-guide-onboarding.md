@@ -16,12 +16,13 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: d5c1fb2b6b20c9687418e14f8e35543c04833a25
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d8bd34f71d3ee72831160b9fe28c12135e7825bf
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186392"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842558"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>A Microsoft Intune-terv megvalósítása
 
@@ -64,7 +65,7 @@ Ez a lépés nem kötelező. Office 365-előfizetésre akkor van szüksége, ha 
 
 -   További információk az [Office 365 megvásárlásával](https://products.office.com/business/compare-office-365-for-business-plans) kapcsolatban.
 
-### <a name="task-3-add-users-groups-in-azure-ad"></a>3. feladat: felhasználói csoportok hozzáadása az Azure AD-ben
+### <a name="task-3-add-users-groups-in-azure-ad"></a>3. feladat: Felhasználói csoportok hozzáadása az Azure ad-ben
 
 Az Intune üzembe helyezésének használatieset-forgatókönyvei és a követelmények függvényében szükség lehet felhasználók vagy biztonsági csoportok hozzáadására az Active Directoryban vagy az Azure Active Directoryban. Tekintse át az Active Directory vagy az Azure Active Directory jelenlegi felhasználóit és biztonsági csoportjait, és ellenőrizze, hogy mindenben megfelelnek-e a szükségleteknek. Új felhasználók és biztonsági csoportok hozzáadásakor javasoljuk, hogy az Active Directoryban adja őket hozzá, majd az Azure Active Directory Azure AD Connect szolgáltatásával szinkronizálja őket.
 
@@ -74,61 +75,61 @@ Az Intune üzembe helyezésének használatieset-forgatókönyvei és a követel
 
 
 
-### <a name="task-4-assign-intune-and-office-365-user-licenses"></a>4. feladat: Intune és Office 365 felhasználói licencek hozzárendelése
+### <a name="task-4-assign-intune-and-office-365-user-licenses"></a>4. feladat: Az Intune és az Office 365 felhasználói licencek hozzárendelése
 
 Az EMS/Intune és az Office 365 bevezetésével érintett minden felhasználónak rendelkeznie kell egy hozzá rendelt licenccel. Az EMS/Intune- és Office 365-licencek hozzárendelését az Office 365 Felügyeleti központ portálján végezheti el.
 
 -   További információ: [Intune-licencek hozzárendelése](licenses-assign.md).
 
-### <a name="task-5-set-mobile-device-management-authority-to-intune"></a>5. feladat: az Intune beállítása mobileszköz-kezelő szolgáltatóként
+### <a name="task-5-set-mobile-device-management-authority-to-intune"></a>5. feladat: Mobileszköz-kezelő szolgáltató beállítása az Intune-hoz
 
 Mielőtt elkezdené az eszközök beállítását, konfigurálását, felügyeletét és regisztrálását az Intune-ban, először be kell állítania az Intune-t mobileszköz-kezelő szolgáltatóként.
 
 -   További információ: [a mobileszköz-kezelő szolgáltató beállítása](mdm-authority-set.md).
 
-### <a name="task-6-enable-device-platforms"></a>6. feladat: eszközplatformok engedélyezése
+### <a name="task-6-enable-device-platforms"></a>6. feladat: Eszközplatformok engedélyezése
 
 Alapértelmezés szerint a legtöbb eszközplatform engedélyezve van, kivéve az Apple-eszközöket (iOS és Mac). Az iOS-eszközök Intune-beli regisztrálása és felügyelete előtt az eszközplatformot engedélyezni kell. Ehhez létre kell hoznia egy MDM leküldéses tanúsítványt, amelyet az Intune-hoz kell adnia.
 
 -   További információ [az Apple-eszközök regisztrációjának engedélyezéséről](apple-mdm-push-certificate-get.md).
 
-### <a name="task-7-add-and-deploy-terms-and-conditions-policies"></a>7. feladat: használati feltételekre vonatkozó szabályzatok hozzáadása és telepítése
+### <a name="task-7-add-and-deploy-terms-and-conditions-policies"></a>7. feladat: Használati feltételekre vonatkozó szabályzatok hozzáadása és telepítése
 
 Az Intune támogatja használati feltételekre vonatkozó szabályzatokat. A használati feltételekre vonatkozó szabályzatokat szükség szerint adja hozzá, és az Intune üzembe helyezésének használatieset-forgatókönyveit és a követelményeket figyelembe véve telepítse őket a célcsoportoknál.
 
 -   További információk: [A használati feltételekre vonatkozó szabályzatok hozzáadása és telepítése](terms-and-conditions-create.md).
 
-### <a name="task-8-add-and-deploy-configuration-policies"></a>8. feladat: konfigurációs szabályzatok hozzáadása és telepítése
+### <a name="task-8-add-and-deploy-configuration-policies"></a>8. feladat: Konfigurációs szabályzatok hozzáadása és telepítése
 
 Az Intune kétféle konfigurációs szabályzatot támogat: általános és egyéni. A konfigurációs szabályzatokat szükség szerint adja hozzá, és az Intune üzembe helyezésének használatieset-forgatókönyveit és a követelményeket figyelembe véve telepítse őket a célcsoportoknál.
 
 -   További információk: [konfigurációs szabályzatok hozzáadása és telepítése](device-profiles.md).
 
-### <a name="task-9-add-and-deploy-resource-profiles"></a>9. feladat: erőforrásprofilok hozzáadása és telepítése
+### <a name="task-9-add-and-deploy-resource-profiles"></a>9. feladat: Adja hozzá, és erőforrás-profilok központi telepítése
 
 Az Intune E-mail-, Wi-Fi- és VPN-profilokat támogat. A profilokat szükség szerint adja hozzá, és az Intune üzembe helyezésének használatieset-forgatókönyveit és a követelményeket figyelembe véve telepítse őket a célcsoportoknál.
 
 -   További információ [a vállalati erőforrások hozzáférésének az Intune-nal való engedélyezéséről](device-profiles.md).
 
-### <a name="task-10-add-and-deploy-apps"></a>10. feladat: alkalmazások hozzáadása és telepítése
+### <a name="task-10-add-and-deploy-apps"></a>10. feladat: Alkalmazások felvétele és telepítése
 
 Az Intune a webes, üzletági és a nyilvános áruházból származó alkalmazások telepítését támogatja. Ezen kívül kezelhet olyan alkalmazásokat is, amelyekkel alkalmazásvédelmi szabályzatok alkalmazásával integrálva van az Intune SDK. Az alkalmazásokat szükség szerint adja hozzá, és az Intune üzembe helyezésének használatieset-forgatókönyveit és a követelményeket figyelembe véve telepítse őket a célcsoportoknál.
 
 -   További információ [az alkalmazások hozzáadásáról és üzembe helyezéséről](app-management.md).
 
-### <a name="task-11-add-and-deploy-compliance-policies"></a>11. feladat: megfelelőségi szabályzatok hozzáadása és telepítése
+### <a name="task-11-add-and-deploy-compliance-policies"></a>11. feladat: Megfelelőségi szabályzatok hozzáadása és telepítése
 
 Az Intune támogatja a megfelelőségi szabályzatok használatát. A megfelelőségi szabályzatokat szükség szerint adja hozzá, és az Intune üzembe helyezésének használatieset-forgatókönyveit és a követelményeket figyelembe véve telepítse őket a célcsoportoknál.
 
 -   További információ: [megfelelőségi szabályzatok](device-compliance.md).
 
-### <a name="task-12-enable-conditional-access-policies"></a>12. feladat: feltételes hozzáférési szabályzatok engedélyezése
+### <a name="task-12-enable-conditional-access-policies"></a>12. feladat: Feltételes hozzáférési szabályzat engedélyezése
 
 Az Intune támogatja a feltételes hozzáférési folyamatot a helyszíni Exchange, az Exchange Online, a SharePoint Online, a Skype Vállalati online verzió és a Dynamics CRM Online esetén. A feltételes hozzáférési szabályzatokat szükség szerint engedélyezze, figyelembe véve az Intune üzembe helyezésének használatieset-forgatókönyveit és a követelményeket.
 
 -   További információk a [feltételes hozzáférésről](conditional-access.md).
 
-### <a name="task-13-enroll-devices"></a>13. feladat: eszközök regisztrálása
+### <a name="task-13-enroll-devices"></a>13. feladat: Eszközök regisztrálása
 
 Az Intune az iOS, Mac OS, Android, Windows asztali és Windows Mobile eszközplatformokat támogatja. A mobileszköz-platformokat szükség szerint regisztrálja, figyelembe véve az Intune üzembe helyezésének használatieset-forgatókönyveit és a követelményeket.
 

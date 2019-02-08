@@ -15,12 +15,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d24b96408ed02413f25957e2558704385c5e1bfd
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 522e2e8b424c3c8865b29a5503c301b80b3c36ba
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817143"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845407"
 ---
 # <a name="troubleshoot-conditional-access"></a>A feltételes hozzáférés hibaelhárítása
 
@@ -73,7 +74,7 @@ Ha olyan eszközzel találkozik, amely nem megfelelő, mégis rendelkezik hozzá
 - Tekintse át a cél- és kizárási csoportokat. Ha a felhasználó nem szerepel a megfelelő cél- vagy kizárási csoportban, akkor nem tiltható le. A rendszer csak a célcsoportban lévő felhasználók eszközeinek megfelelőségét ellenőrzi.
 - Gondoskodjon az eszköz felderítéséről. Az Exchange Connector egy Exchange 2010-es CAS-kiszolgálóra mutat, a felhasználó pedig egy Exchange 2013-kiszolgálón van? Ebben az esetben, ha az alapértelmezett Exchange-szabály az Engedélyezés, az Intune nem észleli az eszköz kapcsolatát az Exchange szolgáltatással, még akkor sem, ha a felhasználó a célcsoportban van.
 - Ellenőrizze az eszköz meglétét/hozzáférési állapotát az Exchange-ben:
-  - A PowerShell-parancsmag használatával postaládához tartozó valamennyi mobileszköz listáját: "Get-ActiveSyncDeviceStatistics-mailbox mbx". Ha az eszköz nem szerepel a listán, akkor nem fér hozzá az Exchange-hez.
+  - A PowerShell-parancsmag használatával postaládához tartozó valamennyi mobileszköz listáját: "Get-ActiveSyncDeviceStatistics -mailbox mbx'. Ha az eszköz nem szerepel a listán, akkor nem fér hozzá az Exchange-hez.
   - Ha az eszköz szerepel a listán, használja a Get-CASmailbox-identity:’upn’ | fl parancsmagot az eszköz hozzáférési állapota részletes információinak lekérdezéséhez, majd az információkat adja meg a Microsoft támogatási szolgálatának.
 
 ## <a name="next-steps"></a>További lépések

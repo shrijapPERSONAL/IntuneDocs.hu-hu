@@ -14,12 +14,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 2c4e6041f00ad55b18f8b20996da8002f5ce0247
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ce08d8c199b6fc680f314141b920ca798137139c
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032197"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843561"
 ---
 # <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>Egyéni beállítások használata az Intune-ban a Windows Holographic for Business-eszközökhöz
 
@@ -39,17 +40,17 @@ Ebből a cikkből megtudhatja, hogyan hozhat létre egyéni profilt a Windows Ho
 2. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
 3. Adja meg a következő beállításokat:
 
-    - **Név**: Adja meg a profil nevét, például: `hololens custom profile`.
-    - **Leírás:** Itt adhatja meg a profil leírását.
-    - **Platform**: Válassza a **Windows 10-es vagy újabb verzió** lehetőséget.
-    - **Profil típusa**: Válassza az **Egyéni** lehetőséget.
+    - **Név**: Adja meg egy nevet a profilnak, például `hololens custom profile`.
+    - **Description** (Leírás): Adja meg a profil leírását.
+    - **Platform**: Válasszon **Windows 10 és újabb**.
+    - **Profil típusa**: Válasszon **egyéni**.
 
 4. Az **Egyéni OMA-URI-beállítások** menüben válassza a **Hozzáadás** lehetőséget. Adja meg a következő beállításokat:
 
-    - **Név** – Adjon meg egy egyedi nevet az OMA-URI-beállítás számára, amellyel az egyszerűen azonosítható a beállítások listájában.
-    - **Leírás** – Adjon meg egy olyan leírást, amely ismerteti a beállítást, és minden fontos részletet tartalmaz.
-    - **OMA-URI** (megkülönbözteti a kis- és nagybetűket) – Adja meg azt az OMA-URI azonosítót, amelyet beállításként kíván használni.
-    - **Adattípus** – Adja meg azt az adattípust, amelyet az OMA-URI beállításhoz szeretne használni. A választható lehetőségek:
+    - **Név**: Adjon meg egy egyedi nevet az OMA-URI beállítás számára, amellyel az egyszerűen azonosítható a beállítások listájában.
+    - **Description** (Leírás): Adjon meg egy leírást, amely áttekintést ad a beállítást, és bármilyen egyéb fontos részleteket.
+    - **OMA-URI** (megkülönbözteti a kis-és nagybetűket): Adja meg az OMA-URI beállításai használni kívánt.
+    - **Adattípus**: Válassza ki az adatokat fogja használni az OMA-URI-beállítás. A választható lehetőségek:
 
         - Sztring
         - Sztring (XML-fájl)
@@ -59,7 +60,7 @@ Ebből a cikkből megtudhatja, hogyan hozhat létre egyéni profilt a Windows Ho
         - Logikai
         - Base64 (fájl)
 
-    - **Érték** – Adja meg a megadott OMA-URI azonosítóhoz társítandó értéket. Az érték a választott adattípustól függ. A **Dátum és idő** típus esetén például a dátumválasztóból választhat értéket.
+    - **Érték**: A megadott OMA-URI társítani kívánt adatok értéket adjon meg. Az érték a választott adattípustól függ. A **Dátum és idő** típus esetén például a dátumválasztóból választhat értéket.
 
     Néhány beállítás megadása után válassza az **Exportálás** lehetőséget. Az **Exportálás** a hozzáadott értékek listáját hozza létre egy vesszővel tagolt (.csv) fájlban.
 

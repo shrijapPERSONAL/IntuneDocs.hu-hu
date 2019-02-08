@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a9828f1b8a24e4f7d871f9e6e6f67e9f6c6fb197
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1151df35abfe5f7806370a5ad466381dd3d10013
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182771"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839889"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>macOS végpontvédelem-beállítások az Intune-ban
 
@@ -26,22 +27,22 @@ A cikk a macOS rendszerű eszközökhöz konfigurálható, végpontvédelemre vo
 
 ## <a name="gatekeeper"></a>Forgalomirányító
 
-- **Alkalmazások letöltésének engedélyezése ezekről a helyekről**: Korlátozza az alkalmazásokat attól függően, hogy honnan töltik le azokat. Rendeltetése az eszközök védelme a rosszindulatú szoftverekkel szemben. Csak olyan forrásokból származó alkalmazásokat engedélyezzen, amelyekben megbízik. Az engedélyezhető lehetőségek: 
+- **Alkalmazások ezen helyekről való letöltésének engedélyezése**: Korlátozza az alkalmazásokat attól függően, ahol a töltik le azokat. Rendeltetése az eszközök védelme a rosszindulatú szoftverekkel szemben. Csak olyan forrásokból származó alkalmazásokat engedélyezzen, amelyekben megbízik. Az engedélyezhető lehetőségek: 
   - **Mac App Store**
   - **Mac App Store és ismert fejlesztők**
   - **Bárhonnan**
 
-- **A felhasználó felülbírálhatja a forgalomirányítót**: Megakadályozza, hogy a felhasználók felülbírálják a forgalomirányító beállításait és hogy a felhasználók Ctrl+kattintással alkalmazást telepítsenek. Ha engedélyezve van, akkor a felhasználók bármilyen alkalmazást telepíteni tudnak, ha a Ctrl billentyűt lenyomva rákattintanak.
+- **Felhasználó felülbírálhatja a forgalomirányítót**: Megakadályozza, hogy a felhasználók felülbírálják a forgalomirányító beállítást, és megakadályozza, hogy a felhasználók kattintással telepíthet egy alkalmazást. Ha engedélyezve van, akkor a felhasználók bármilyen alkalmazást telepíteni tudnak, ha a Ctrl billentyűt lenyomva rákattintanak.
 
-## <a name="firewall"></a>Tűzfal
+## <a name="firewall"></a>Firewall
 
 A tűzfalat inkább a kapcsolatok alkalmazásonkénti, nem pedig portonkénti korlátozására használja. Az alkalmazásonkénti beállítások használatával könnyebben kihasználhatók a tűzfal védelmének előnyei. Segít annak megelőzésében is, hogy nem kívánt alkalmazások átvegyék a megbízható alkalmazások számára nyitott portok irányítását.
 
 - **Használja a tűzfalat az eszközök nem engedélyezett hálózati hozzáférésének megakadályozására a kapcsolatok alkalmazásonkénti szabályozásával.**
-  - **Tűzfal**: A tűzfal engedélyezésével konfigurálható, hogy hogyan legyenek kezelve a bejövő kapcsolatok a környezetében.
-  - **Bejövő kapcsolatok**: Tiltson minden kapcsolatot az olyan alapvető Internet-szolgáltatások kivételével, mint a DHCP, Bonjour és az IPSec. Ez a funkció a megosztási szolgáltatásokat, például a fájlmegosztást és a képernyőmegosztást is letiltja. Ha megosztási szolgáltatásokat használ, hagyja ezt a beállítást a **Nincs konfigurálva** értéken.
+  - **Tűzfal**: Tűzfal engedélyezése annak konfigurálásához, hogy a bejövő kapcsolatok kezelése a környezetben.
+  - **A bejövő kapcsolatok**: Olyan alapvető Internet-szolgáltatások, például a DHCP, Bonjour és az IPSec kivételével minden bejövő kapcsolat blokkolása. Ez a funkció a megosztási szolgáltatásokat, például a fájlmegosztást és a képernyőmegosztást is letiltja. Ha megosztási szolgáltatásokat használ, hagyja ezt a beállítást a **Nincs konfigurálva** értéken.
 
 - **Adott alkalmazás bejövő kapcsolatainak engedélyezése vagy tiltása**
-  - **Engedélyezett alkalmazások**: Jelölje ki azokat az alkalmazásokat, amelyek fogadhatnak bejövő kapcsolatokat.
-  - **Tiltott alkalmazások**: Jelölje ki azokat az alkalmazásokat, amelyeknek el kell utasítaniuk a bejövő kapcsolatokat.
-  - **Rejtett üzemmód**: A rejtett üzemmód engedélyezésével megakadályozhatja, hogy a számítógép válaszoljon a bejövő kérelmekre. Az eszköz továbbra is válaszol az engedélyezett alkalmazásoktól érkező kérelmekre. Az olyan váratlan kérelmeket, mint az ICMP (ping), a rendszer figyelmen kívül hagyja.
+  - **Engedélyezett alkalmazások**: Válassza ki az alkalmazásokat, amelyek számára kifejezetten engedélyezett fogadhatnak bejövő kapcsolatokat.
+  - **Letiltott alkalmazások**: Válassza ki az alkalmazásokat, amelyeknek blokkolniuk kell a bejövő kapcsolatok.
+  - **Rejtett üzemmód**: A rejtett üzemmód engedélyezésével megakadályozhatja a számítógép az ellenőrzési kérelmekre válaszol, a. Az eszköz továbbra is válaszol az engedélyezett alkalmazásoktól érkező kérelmekre. Az olyan váratlan kérelmeket, mint az ICMP (ping), a rendszer figyelmen kívül hagyja.

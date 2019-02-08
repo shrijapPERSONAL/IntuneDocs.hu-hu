@@ -16,12 +16,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a0678e562ab7b63c99f10c455837cf03ee30da21
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 51c2d77fc4f25307b1817fe4c98db2a7f8f66901
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52178779"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848423"
 ---
 # <a name="data-google-sends-to-intune"></a>A Google által az Intune-nak küldött adatok
 

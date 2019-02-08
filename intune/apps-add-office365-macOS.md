@@ -16,12 +16,13 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4aa5cb24bc153839c6aac193f074128dd46a2e5f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 40278904cd3af75451d0323a7665e88f6b526928
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185406"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844258"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Az Office 365 hozzárendelése macOS rendszerű eszközökhöz a Microsoft Intune-nal
 
@@ -39,27 +40,27 @@ Mielőtt elkezdené az Office 365 hozzáadását a macOS-eszközökhöz, érdeme
 ## <a name="create-and-configure-the-app-suite"></a>Az alkalmazáscsomag létrehozása és konfigurálása
 
 Az Office 365 hozzáadása az **Alkalmazások** panelről.
-1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 3. Az **Intune** ablaktáblán válassza az **Ügyfélalkalmazások** lehetőséget.
 4. Az **Ügyfélalkalmazások** tevékenységprofil panelén a **Kezelés** szakaszban válassza az **Alkalmazások** lehetőséget. 
-5. Válassza a **Hozzáadás** elemet.
+5. Válassza a **Hozzáadás** lehetőséget.
 6. Az **Office 365 csomag** csoport **Alkalmazás típusa** listájáról válassza ki a **macOS** lehetőséget.
 7. Az **Alkalmazáscsomag adatai** lehetőségre kattintva megtekintheti az alkalmazáscsomagra vonatkozó információkat.  
     Ezek alapján azonosíthatja az alkalmazáscsomagot az Intune-ban, és a felhasználók is ezek alapján találhatják meg azt a céges portálon.
-8. Adja meg az alábbi adatokat:
-    - **Csomag neve:** Itt adhatja meg az alkalmazáscsomag céges portálon megjelenő nevét. Ügyeljen arra, hogy minden megadott csomagnév egyedi legyen. Ha ugyanazt a csomagnevet kétszer adja meg, csak az egyik alkalmazás fog megjelenni a felhasználók számára a céges portálon.
-    - **Csomag leírása:** Itt adhatja meg az alkalmazáscsomag leírását.
-    - **Közzétevő:** Közzétevőként a Microsoft jelenik meg.
-    - **Kategória:** Választhat egyet vagy többet a beépített kategóriák közül, vagy megadhat egyénileg létrehozott kategóriát is. Ez a beállítás megkönnyíti a Céges portálon kereső felhasználóknak az alkalmazás megtalálását.
-    - **Megjelenítés kiemelt alkalmazásként a Céges portálon:** Ezzel a beállítással hangsúlyosan jelenítheti meg az alkalmazáscsomagot a céges portál főoldalán az alkalmazásokat kereső felhasználók számára.
-    - **Információs URL-cím:** Igény szerint megadhatja az alkalmazással kapcsolatos információkat tartalmazó webhely URL-címét. Ez az URL-cím jelenik meg a felhasználók számára a céges portálon.
-    - **Adatvédelmi nyilatkozat URL-címe:** Igény esetén itt adhatja meg az alkalmazás adatvédelmi nyilatkozatát tartalmazó webhely URL-címét. Ez az URL-cím jelenik meg a felhasználók számára a céges portálon.
-    - **Fejlesztő:** Fejlesztőként a Microsoft jelenik meg.
-    - **Tulajdonos:** Tulajdonosként a Microsoft jelenik meg.
-    - **Megjegyzések:**: Ide írhatja be igény szerint az alkalmazáshoz társítani kívánt megjegyzéseket.
-    - **Embléma:** – Amikor a felhasználók a céges portálon keresnek, az alkalmazás mellett megjelenik az Office 365-embléma.
-9. Válassza az **OK** gombot.
+8. Adja meg a következő információkat:
+    - **Csomag neve**: Adja meg az alkalmazáscsomag nevét, a vállalati portálon megjelenített formában. Ügyeljen arra, hogy minden megadott csomagnév egyedi legyen. Ha ugyanazt a csomagnevet kétszer adja meg, csak az egyik alkalmazás fog megjelenni a felhasználók számára a céges portálon.
+    - **Csomag leírása**: Adja meg az alkalmazáscsomag leírását.
+    - **Közzétevő**: A Microsoft a közzétevő jelenik meg.
+    - **Kategória**: Választhat egyet vagy többet a beépített kategóriák közül, vagy megadhat egyénileg létrehozott kategóriát is. Ez a beállítás megkönnyíti a Céges portálon kereső felhasználóknak az alkalmazás megtalálását.
+    - **Megjelenítés kiemelt alkalmazásként a céges portálon**: Válassza ki ezt a beállítást, az alkalmazáscsomag hangsúlyosan jelenítheti fő lapján, a céges portál főoldalán alkalmazásokat kereső felhasználók számára.
+    - **Információs URL-cím**: Nem kötelező: megadhatja az alkalmazással kapcsolatos információkat tartalmazó webhely URL-címét. Ez az URL-cím jelenik meg a felhasználók számára a céges portálon.
+    - **Adatvédelmi URL-címe**: Nem kötelező: megadhatja az alkalmazás adatvédelmi nyilatkozatát tartalmazó webhely URL-címét. Ez az URL-cím jelenik meg a felhasználók számára a céges portálon.
+    - **Fejlesztői**: Fejlesztőként a Microsoft jelenik meg.
+    - **Tulajdonos**: Tulajdonosként a Microsoft jelenik meg.
+    - **Megjegyzések**: Megadhatja, hogy az alkalmazáshoz társítani kívánt megjegyzéseket.
+    - **Embléma**: Az Office 365-embléma akkor jelenik meg az alkalmazás a céges portálon böngésző felhasználók számára.
+9. Kattintson az **OK** gombra.
 10. Az **Alkalmazás hozzáadása** panelen válassza a **Hozzáadás** lehetőséget.  
     A csomag egyetlen bejegyzés formájában jelenik meg az alkalmazások listájában.
 

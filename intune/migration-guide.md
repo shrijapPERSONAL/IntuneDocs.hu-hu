@@ -15,12 +15,13 @@ ms.assetid: dcfc21f9-1bcd-4371-a46d-f2e18154ec50
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: bde445601b6fe3612a1a3d8bcab4f6996a997228
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bd42aaddee3051d01e9a3d30690735d7acbfb411
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181411"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843731"
 ---
 # <a name="intune-migration-guide"></a>Intune migrációs útmutató
 
@@ -34,7 +35,7 @@ Ez az útmutató végigvezeti a külső MDM-szolgáltatói megoldásról az Intu
 
 Ez az útmutató két fázisra osztja a migrálást, és mindkét fázisban felsorolja azon feladatokat, stratégiákat és taktikai útmutatásokat, amelyek végigvezetik az Intune MDM-re történő migrálás teljes folyamatán.
 
--   [1. fázis: Az Intune előkészítése a mobileszköz-felügyeletre](migration-guide-prepare.md)
+-   [1. fázis: Az Intune előkészítése a mobileszköz-kezelés](migration-guide-prepare.md)
 
     -   [Az MDM-migráció követelményeinek felmérése](migration-guide-prepare.md#assess-mdm-requirements)
 
@@ -46,7 +47,7 @@ Ez az útmutató két fázisra osztja a migrálást, és mindkét fázisban fels
 
     -   [Speciális áttelepítési megfontolások](migration-guide-considerations.md)
 
--   [2. fázis: áttelepítési kampány](migration-guide-campaign.md)
+-   [2. fázis: Áttelepítési kampány](migration-guide-campaign.md)
 
     -   [Kommunikációs terv](migration-guide-communication-plan.md)
 
@@ -70,4 +71,4 @@ Fontos észrevenni, hogy az új Intune-környezet eltérhet a korábban használ
 
 ## <a name="next-steps"></a>További lépések
 
-[1. fázis: Az Intune előkészítése a mobileszköz-felügyeletre](migration-guide-prepare.md)
+[1. fázis: Az Intune előkészítése a mobileszköz-kezelés](migration-guide-prepare.md)

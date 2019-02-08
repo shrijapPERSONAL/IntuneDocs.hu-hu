@@ -14,12 +14,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ddce0103dd73d6489a3727408671f509b84fe50b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e7c40f17ba05c19cd1bc0967f6d343e5871c0388
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187820"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845686"
 ---
 # <a name="use-custom-policies-in-microsoft-intune-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Alkalmazások engedélyezése és letiltása egyéni szabályzattal Samsung Knox Standard-eszközökön a Microsoft Intune-ban 
 
@@ -34,7 +35,7 @@ Ezek a beállítások kizárólag a Samsung Knox Standard rendszerű eszközök�
 
 ## <a name="create-an-allowed-or-blocked-app-list"></a>Az engedélyezett vagy tiltott alkalmazások listájának létrehozása
 
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
 2. Az **Eszközkonfiguráció** lapon válassza a **Kezelés** > **Profilok** lehetőséget.

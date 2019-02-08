@@ -16,33 +16,34 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 5735a2059690655a76425b049eff9e26f5ab8179
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b68ca31b03bb3274d48b185335f956e38e140ae8
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032571"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848559"
 ---
 # <a name="microsoft-intune-documentation-40ignite-2018-special-edition41"></a>A Microsoft Intune-dokumentáció &#40;Ignite 2018 – különleges kiadás&#41;
 Üdvözli a Microsoft Ignite 2018! Nagy öröm számunkra, hogy ellátogatott hozzánk. Amíg a Microsoft Ignite 2018 webhelyén tartózkodik tekintsen át néhány Intune-erőforrást, amelyeket az Ön számára állítottunk össze.
 
 ## <a name="try-our-hands-on-labs-at-ignite-2018"></a>A gyakorlati labormodulok Ignite 2018 próbálja ki!
-- **HOL3004**: Védje vállalati adatait a mobileszközökön a Microsoft 365 és a Microsoft Intune segítségével, többek között feltételes hozzáféréssel és a Windows Defender Advanced Threat Protection (ATP) szolgáltatással.
-- **WRK3007**: Ismerkedés a közös felügyelettel a System Center Configuration Manager és az Intune használatával
+- **HOL3004**: A mobileszközök Microsoft Intune, többek között a feltételes hozzáférés és a Windows Defender komplex veszélyforrások elleni védelem (ATP) és a Microsoft 365 vállalati adatok védelme
+- **WRK3007**: Ismerkedés a közös felügyelet a System Center Configuration Manager és az Intune használatával
 
 ## <a name="quickstarts"></a>Gyorsútmutatók
 Frissítettünk és létrehoztunk néhány új gyorsútmutatót. A következő gyorsútmutatók (sorrendben történő) követésével megismerkedhet az Intune-nal, és rövid idő alatt végrehajthat néhány általános feladatot.
 
-- [Az Intune ingyenes kipróbálása](free-trial-sign-up.md): Az Intune tesztkörnyezetben történő kipróbálásához hozzon létre egy ingyenes előfizetést.    
-- [Felhasználó létrehozása](quickstart-create-user.md): Létrehozhat egy felhasználót, majd hozzárendelhet egy licencet.
-- [Csoport létrehozása](quickstart-create-group.md): Az Intune használatával létrehozhat egy csoportot egy meglévő felhasználó alapján.
-- [Automatikus regisztráció beállítása](quickstart-setup-auto-enrollment.md): Beállíthatja, hogy a Microsoft Intune automatikusan regisztrálja az eszközöket, amikor bizonyos felhasználók bejelentkeznek a Windows 10 rendszerű eszközeikkel.
-- [A Windows 10 rendszerű eszköz regisztrálása](quickstart-enroll-windows-device.md): az Intune felhasználói szerepkörének végrehajtásával meg, a Windows 10 rendszerű eszköz regisztrálása a Microsoft Intune-ba, illetve visszalép az Intune-hoz, a regisztrált eszköz megerősítéséhez.
-- [Eszközmegfelelőségi szabályzat létrehozása](quickstart-set-password-length-android.md): a felhasználóktól az információk az Androidos eszközökön való engedélyezett hozzáférést a rendszer egy meghatározott hosszúságú jelszó beírására az eszközmegfelelőségi szabályzat létrehozása.
-- [Értesítések küldése nem megfelelő eszközök](quickstart-send-notification.md): hozzon létre egy értesítési üzenetet. Ezután adja hozzá, és meg nem felelés szabályzat hozzárendelése.
-- [Egy ügyfél alkalmazások felvételét és hozzárendelését](quickstart-add-assign-app.md): hozzáadása és hozzárendelése egy ügyfélalkalmazás a cég munkatársának kell lennie.
-- [Létrehozása és hozzárendelése egy alkalmazásvédelmi szabályzatot](quickstart-create-assign-app-policy.md): létrehozása és hozzárendelése egy alkalmazásvédelmi szabályzatot egy ügyfélalkalmazás egy végfelhasználói eszközön. 
-- [Egyéni szerepkör létrehozása és hozzárendelése](quickstart-create-custom-role.md): Létrehozhat és hozzárendelhet egy specifikus engedélyeket biztosító egyéni szerepkört a biztonsági műveleti részleg számára. 
+- [Próbálja ki ingyenesen az Intune-ban](free-trial-sign-up.md): Hozzon létre egy ingyenes előfizetés egy tesztkörnyezetben próbálja ki az Intune-ban.    
+- [Hozzon létre egy felhasználót](quickstart-create-user.md): Hozzon létre egy felhasználót, és a licenc hozzárendelése.
+- [Hozzon létre egy csoportot](quickstart-create-group.md): Hozzon létre egy csoportot, egy meglévő felhasználó alapján az Intune használatával.
+- [Automatikus regisztráció beállítása](quickstart-setup-auto-enrollment.md): Eszközök automatikus regisztrálása, amikor adott felhasználói bejelentkeznek a Windows 10-eszközök Microsoft Intune beállítása.
+- [A Windows 10 rendszerű eszköz regisztrálása](quickstart-enroll-windows-device.md): Az Intune felhasználói szerepkörének végrehajtásával, lesz a Windows 10 rendszerű eszköz regisztrálása a Microsoft Intune-ba, illetve visszalép az Intune-hoz, a regisztrált eszköz megerősítéséhez.
+- [Eszközmegfelelőségi szabályzat létrehozása](quickstart-set-password-length-android.md): Információk az Androidos eszközökön való engedélyezett hozzáférést a rendszer egy meghatározott hosszúságú jelszó beírására felhasználóknak kötelező eszközmegfelelőségi szabályzat létrehozása.
+- [Értesítések küldése nem megfelelő eszközök](quickstart-send-notification.md): Hozzon létre egy értesítési üzenetet. Ezután adja hozzá, és meg nem felelés szabályzat hozzárendelése.
+- [Egy ügyfél alkalmazások felvételét és hozzárendelését](quickstart-add-assign-app.md): Adja hozzá, és rendelje hozzá egy ügyfélalkalmazás a cég munkatársának kell lennie.
+- [Létrehozása és hozzárendelése egy alkalmazásvédelmi szabályzatot](quickstart-create-assign-app-policy.md): Hozzon létre, és a egy alkalmazásvédelmi szabályzatot rendel egy ügyfélalkalmazás egy végfelhasználói eszközön. 
+- [Hozzon létre, és a egy egyéni szerepkör hozzárendelése](quickstart-create-custom-role.md): Hozzon létre és rendeljen konkrét engedélyeket a biztonsági műveletek részleg számára az egyéni szerepkör. 
 - [E-mail-profil létrehozása iOS-eszközökhöz](quickstart-email-profile.md) – Létrehozhat egy e-mail-profilt iOS-eszközökhöz.
 
 ## <a name="learn"></a>Tudnivalók

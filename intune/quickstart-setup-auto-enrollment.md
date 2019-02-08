@@ -11,14 +11,15 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 0d6f210d055d8395985b4fe64b5a061b2c8a0304
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0bcee828bdef2e3e1032d88306bbb33da1bd9386
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179654"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839107"
 ---
-# <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>Rövid útmutató: Windows 10-es eszközök automatikus regisztrációjának beállítása
+# <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>Gyors útmutató: A Windows 10-es eszközök automatikus regisztrációjának beállítása
 
 Ezt a rövid útmutatót követve beállíthatja, hogy a Microsoft Intune automatikusan regisztrálja az eszközöket, amikor bizonyos felhasználók bejelentkeznek a Windows 10 rendszerű eszközeikkel.
 
@@ -63,7 +64,7 @@ Ebben a példában MDM-regisztrációt fogunk használni, hogy a vállalati és 
 8. A hátralévő konfigurációs értékekhez használja az alapértelmezett értékeket.
 9. Válassza a **Mentés** elemet.
 
-## <a name="clean-up-resources"></a>Erőforrások eltávolítása
+## <a name="clean-up-resources"></a>Az erőforrások eltávolítása
 
 Az Intune-beli automatikus regisztráció újrakonfigurálásával kapcsolatban olvassa el a [Windows-eszközök regisztrációjának beállítása](windows-enroll.md) című cikket.
 
@@ -74,4 +75,4 @@ Ebből a rövid útmutatóból megtanulhatta a Windows 10-es eszközök automati
 Kövesse az Intune rövid útmutatóinak sorozatát a következő rövid útmutatóval.
 
 > [!div class="nextstepaction"]
-> [Rövid útmutató: Windows 10 rendszerű eszköz regisztrálása](quickstart-enroll-windows-device.md)
+> [Gyors útmutató: A Windows 10 rendszerű eszköz regisztrálása](quickstart-enroll-windows-device.md)

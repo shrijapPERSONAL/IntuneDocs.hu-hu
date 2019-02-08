@@ -16,12 +16,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 12f9b6aa5fb9a7b1f31b43dc7faf3e36cdd49157
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0c2c9ceb290f7935cc6347ca46c164c27c081c02
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186545"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841572"
 ---
 # <a name="data-apple-sends-to-intune"></a>Az Apple által az Intune-nak küldött adatok
 
@@ -45,8 +46,8 @@ A következő táblázat az Apple-eszközök által az Intune-nak küldött adat
 | [APN szolgáltatás](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Hitelesítés | MesUDID | Az eszköz UDID-azonosítója. |
 | [APN szolgáltatás](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Hitelesítés | OSVersion | Az eszköz operációs rendszerének verziója. |
 | [APN szolgáltatás](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Hitelesítés | BuildVersion | Az eszköz alverziószáma. |
-| [APN szolgáltatás](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Hitelesítés | ProductName | Az eszköz termékneve. |
-| [APN szolgáltatás](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Hitelesítés | Sorozatszám | Az eszköz sorozatszáma. |
+| [APN szolgáltatás](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Hitelesítés | Terméknév | Az eszköz termékneve. |
+| [APN szolgáltatás](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Hitelesítés | a sorozatszám | Az eszköz sorozatszáma. |
 | [APN szolgáltatás](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Hitelesítés | IMEI | Az eszköz IMEI-száma. |
 | [APN szolgáltatás](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Hitelesítés | MEID | Az eszköz mobilkészülék-azonosító száma (MEID) |
 | [APN szolgáltatás](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | TokenUpdate | Témakör | A témakör, amelyet az eszköz fogadni fog. |
@@ -91,7 +92,7 @@ A következő táblázat az Apple-eszközök által az Intune-nak küldött adat
 | [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Apple VPP-token | Intune UserId guid | Az Intune által létrehozott GUID. |
 | [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Apple VPP-token | isIrrevocable | Az Apple „igaz” értéket ad vissza, ha a licenc nem vonható vissza. Ha visszavonható, akkor a visszatérési érték „hamis”. |
 | [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Apple VPP-token | Licencazonosító | Az Apple által egy adott licenc azonosítására generált azonosító. |
-| [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Apple VPP-token | Tartózkodási hely | Az Apple VPP-konfigurációs adatai között tárolt hely. |
+| [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Apple VPP-token | Hely | Az Apple VPP-konfigurációs adatai között tárolt hely. |
 | [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Apple VPP-token | A felügyelt AppleId egyszerű felhasználóneve | Felhasználó, rendszergazda vagy egyeztető tag Apple-azonosító e-mail-címe. |
 | [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Apple VPP-token | OrganizationId | A szervezet Apple által kiadott azonosítója. |
 | [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Apple VPP-token | pricingParam | Egy alkalmazás Apple-díjszabástípusa. |

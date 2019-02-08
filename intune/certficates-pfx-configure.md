@@ -15,12 +15,13 @@ ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: f825e66a4668a007dc364e4c42b18ca7c2736016
-ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5c2c649df23a84d8836a68fd0456da6ce8dda2c0
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55303487"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837287"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>PKCS-tanúsítványok konfigurálása és használata az Intune-nal
 
@@ -104,7 +105,7 @@ VPN-, Wi-Fi- vagy egyéb erőforrások hitelesítéséhez, a legfelső szintű v
 
 10. A **Biztonság** lapon vegye fel annak a kiszolgálónak a fiókját, amelyen telepíti a Microsoft Intune Tanúsítvány-összekötőt. Adja meg a fiók számára az **Olvasás** és **Beléptetés** engedélyeket.
 11. A tanúsítvány mentéséhez válassza ki az **Alkalmaz** > **OK** elemet. Zárja be a **Tanúsítvány-sablonok konzolt**.
-12. A **Hitelesítésszolgáltató** konzolon kattintson a jobb gombbal a **Tanúsítványsablonok** > **Új** > **Kiállítandó tanúsítványsablon** elemre. Válassza ki az iménti lépésekben létrehozott sablont. Válassza az **OK** gombot.
+12. A **Hitelesítésszolgáltató** konzolon kattintson a jobb gombbal a **Tanúsítványsablonok** > **Új** > **Kiállítandó tanúsítványsablon** elemre. Válassza ki az iménti lépésekben létrehozott sablont. Kattintson az **OK** gombra.
 13. A regisztrált eszközökön és a felhasználói tanúsítványok kezelése a kiszolgálón kövesse az alábbi lépéseket:
 
     1. Kattintson a jobb gombbal a hitelesítésszolgáltatóra, majd kattintson a **Tulajdonságok** elemre.

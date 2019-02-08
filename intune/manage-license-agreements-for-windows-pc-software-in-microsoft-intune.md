@@ -16,12 +16,13 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: f6559b10bb9e3c293a9719235d01d8c7b55ee62f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a858de59c073152c984b9b912da1b2ef3d7a0ed4
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185389"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837653"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Windows-számítógépes szoftverek licencszerződéseinek kezelése a Microsoft Intune-ban
 
@@ -76,11 +77,11 @@ Az Intune mennyiségi licencelszerződések a Microsoft mennyiségi licencszerz�
 
         A fájl létrehozásához adja meg a szerződéspárokat egy egyszerű szöveges dokumentumban a következő formátumok egyikében, a VLSC webhelyen regisztrált szervezettípustól függően. Soronként egy szerződésszámpár szerepeljen.
 
-        -   **Open Value-ügyfelek:** *szerződésszám*, *szerződésszám ismétlése*, *szerződés neve*
+        -   **Open Value-ügyfelek:** *Szerződésszám*, *Szerződésszám ismétlése*, *szerződésnév*
 
-        -   **Open-ügyfelek:** *engedélyezési szám*, *kapcsolódó licencszám*, *szerződésnév*
+        -   **Nyitott ügyfelek:** *Engedély száma*, *kapcsolódó licencszám*, *szerződésnév*
 
-        -   **Select- és nagyvállalati ügyfelek:** *szerződésszám*, *kapcsolódó regisztrációs szám*, *szerződésnév*
+        -   **Válassza ki, és nagyvállalati ügyfelek:** *Szerződésszám*, *kapcsolódó regisztrációs szám*, *szerződésnév*
 
         A **Szerződések hozzáadása** űrlap új szerződések hozzáadásakor megkéri, hogy keresse meg az adott fájlt.
 
@@ -180,9 +181,9 @@ A szoftverlicenc-szerződéseket licenccsoportokhoz lehet hozzáadni. A licenccs
 
 |                            |                                                                                                                                                                                                                                                                                                                                                                          |
 |----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|            Feladat            |                                                                                                                                                                                 Részletek                                                                                                                                                                                  |
-|   Licenccsoport létrehozása   |                                                            A <strong>Licencek</strong> munkaterület <strong>Áttekintés</strong> lapján válassza a <strong>Feladatok</strong> menü <strong>Licenccsoport létrehozása</strong> parancsát. <strong>Megjegyzés:</strong> legfeljebb 500 licenccsoportot hozhat létre.                                                             |
+|            Tevékenység            |                                                                                                                                                                                 Részletek                                                                                                                                                                                  |
+|   Licenccsoport létrehozása   |                                                            A <strong>Licencek</strong> munkaterület <strong>Áttekintés</strong> lapján válassza a <strong>Feladatok</strong> menü <strong>Licenccsoport létrehozása</strong> parancsát. <strong>Megjegyzés:</strong> Összesen legfeljebb 500 licenccsoportot hozhat létre.                                                             |
 |   Licenccsoport átnevezése   |                                                                                                      Válasszon egy licenccsoportot a <strong>Licencek</strong> munkaterületen, majd válassza a <strong>Feladatok</strong> menü <strong>Licenccsoport szerkesztése</strong> elemét.                                                                                                       |
-|   Licenccsoport törlése   |                                 Válasszon egy licenccsoportot a <strong>Licencek</strong> munkaterületen, majd válassza a <strong>Feladatok</strong> menü <strong>Licenccsoport törlése</strong> parancsát. <strong>Tipp:</strong> a törölt csoportban lévő összes licenc a <strong>Hozzá nem rendelt szerződések</strong> licenccsoportba kerül.                                 |
-| Licencszerződések törlése | A <strong>Licencek</strong> munkaterületen válasszon egy szerződést, majd válassza a <strong>Törlés</strong> elemet. <strong>Tipp:</strong> Mennyiségi licencszerződések törlése után a licencinformációk frissítéséhez válassza a <strong>Licencek áttekintése</strong> lap vagy az adott licenccsoport <strong>Általános</strong> lapjának <strong>Frissítés most</strong> elemét. |
+|   Licenccsoport törlése   |                                 Válasszon egy licenccsoportot a <strong>Licencek</strong> munkaterületen, majd válassza a <strong>Feladatok</strong> menü <strong>Licenccsoport törlése</strong> parancsát. <strong>Tipp:</strong> A törölt csoportban lévő összes licenc helyezik át a <strong>hozzá nem rendelt szerződések</strong> licenccsoporthoz.                                 |
+| Licencszerződések törlése | A <strong>Licencek</strong> munkaterületen válasszon egy szerződést, majd válassza a <strong>Törlés</strong> elemet. <strong>Tipp:</strong> Mennyiségi licencszerződéssel vásárolt, a licencinformációk frissítéséhez törlése után válassza ki a <strong>frissítés most</strong> a a <strong>licencek – áttekintés</strong> lap vagy az a <strong>általános</strong> lapján egy adott licenccsoporthoz. |
 

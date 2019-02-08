@@ -15,12 +15,13 @@ ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 44a6d89b649514a08193d7144dff7d89dc3d9c55
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 85a03718185de939612f5431a993f9f34c3048ba
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183366"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840654"
 ---
 # <a name="company-portal-abandonment-report"></a>Céges portállal történő regisztráció megszakítása – jelentés
 
@@ -52,9 +53,9 @@ Szűrhet a dátumtartomány, az operációs rendszer és a regisztrációs szaka
 
 A jelentés tetején látható a megszakított jelentések száma és százalékos aránya az összes regisztrációhoz viszonyítva.
 
--   Kezdeményezett regisztrációk: A regisztrációs próbálkozások száma.
--   Megszakított regisztrációk: A regisztrációs próbálkozások száma, amelyek nem eredményeztek teljes mértékben regisztrált és megfelelő eszközt.
--   Megszakítási arány: A megszakított regisztrációs próbálkozások (megszakított regisztrációk / kezdeményezett regisztrációk) százalékos aránya.
+-   Kezdeményezett regisztrációk: A megkísérelt regisztrációk száma.
+-   Elhagyott regisztrációk: A megkísérelt regisztrációk, amelyek nem egy teljes körűen regisztrált és megfelelő eszközök száma.
+-   Lemondás sebesség: A beléptetési kísérletek, amely lettek hagyva (regisztrációk elhagyott / kezdeményezett regisztrációk) százaléka.
 
 ### <a name="line-graph"></a>Vonaldiagram
 
@@ -72,17 +73,17 @@ Az alábbi táblázatokban a megszakításnak minősülő felhasználói művele
 
 #### <a name="setup-checklist-section"></a>Beállítási ellenőrzőlista szakasz
 
-| Regisztrációmegszakítás neve | Képernyő vagy folyamat | Platform | Művelet |
+| Regisztrációmegszakítás neve | Képernyő vagy folyamat | Platform | Műveletek |
 | ---- |---- |---- |---- |
 | EnrollmentWrapUp | A rendszer arra kéri, hogy nyisson meg egy oldalt a Céges portálon. | iOS/Android | **Mégse** |
 | EnrollmentWrapUp | Eszközregisztrációs képernyő, ami addig látható, amíg be nem fejeződik a **vállalati erőforrások betöltése** | iOS/Android | Időtartam > 30 perc |
 | DeviceCategory | Eszközkategória kiválasztása (ha a rendszergazda beállította), addig látható, amíg rá nem kattint a **Kész** gombra | iOS/Android | Időtartam > 30 perc |
-| PreEnrollmentWizard | Hozzáférés-beállítási képernyő, ha megkezdte a regisztrációt, de visszatért a hozzáférés-beállításhoz | iOS/Android| **Elhalasztása** |
+| PreEnrollmentWizard | Hozzáférés-beállítási képernyő, ha megkezdte a regisztrációt, de visszatért a hozzáférés-beállításhoz | iOS/Android| **Postpone** |
 | PreEnrollmentWizard | Hozzáférés-beállítási képernyő, amely addig látható, amíg rá nem kattint a **Tovább** gombra a **Következő lépések** képernyőn | iOS/Android | Időtartam > 30 perc |
 
 #### <a name="platform-screens-section"></a>Platformképernyők szakasz
 
-| Regisztrációmegszakítás neve | Képernyő vagy folyamat | Platform | Művelet |
+| Regisztrációmegszakítás neve | Képernyő vagy folyamat | Platform | Műveletek |
 | ---- |---- |---- |---- |
 | iOSProfileLaunch | Rákérdezés a konfigurációs profil megjelenítésére | iOS | **Figyelmen kívül hagyás** |
 | iOSProfileLaunch | Profilképernyő telepítése | iOS | **Mégse** |
@@ -95,18 +96,18 @@ Az alábbi táblázatokban a megszakításnak minősülő felhasználói művele
 
 #### <a name="terms-of-use-section"></a>Használati feltételek szakasz
 
-| Regisztrációmegszakítás neve | Képernyő vagy folyamat | Platform | Művelet |
+| Regisztrációmegszakítás neve | Képernyő vagy folyamat | Platform | Műveletek |
 | ---- |---- |---- |---- |
 | TermsofUse | Használati feltételek (ha a rendszergazda konfigurálta) | iOS/Android | **Összes elutasítása** |
 | TermsofUse | Használati feltételek megjelenítése az **Összes elfogadása** kiválasztásáig | iOS/Android | Időtartam > 30 perc |
 
 #### <a name="complianceactivation-section"></a>Megfelelőség/aktiválás képernyő
 
-| Regisztrációmegszakítás neve | Képernyő vagy folyamat | Platform | Művelet |
+| Regisztrációmegszakítás neve | Képernyő vagy folyamat | Platform | Műveletek |
 | ---- |---- |---- |---- |
-| Megfelelőség | Eszközmegfelelőség (ha a rendszergazda beállította) nem zöldként jelenik meg a regisztráció utáni hozzáférés-beállítás esetén| iOS/Android | **Elhalasztása** |
+| Megfelelőség | Eszközmegfelelőség (ha a rendszergazda beállította) nem zöldként jelenik meg a regisztráció utáni hozzáférés-beállítás esetén| iOS/Android | **Postpone** |
 | Megfelelőség | Az eszközmegfelelőség nem zöldként jelenik meg, amíg nem frissíti zöldként való megjelenítésre | iOS/Android | Időtartam > 30 perc |
-| Aktiválás | Regisztrációaktiválás (ha a rendszergazda beállította) nem zöldként jelenik meg a hozzáférés beállításakor | iOS/Android | **Elhalasztása** |
+| Aktiválás | Regisztrációaktiválás (ha a rendszergazda beállította) nem zöldként jelenik meg a hozzáférés beállításakor | iOS/Android | **Postpone** |
 | Megfelelőség | Az eszközaktiválás nem zöldként jelenik meg, amíg nem frissíti zöldként való megjelenítésre | iOS/Android | Időtartam > 30 perc |
 
 ## <a name="next-steps"></a>További lépések

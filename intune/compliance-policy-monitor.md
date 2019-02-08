@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fd401875e1a98690d9673243b28b48347e4c6183
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ad32e17e1d7e523e3d6d3789b2e74239c915932f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642812"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842322"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune-eszközmegfelelőségi szabályzatok figyelése
 
@@ -164,7 +165,7 @@ Ezt a funkciót tartalmazza az eszköz állapotjelentése:
     - Hiba: Nem sikerült alkalmazni a szabályzatot. Az üzenethez általában egy hibakód is tartozik, amely a hiba ismertetésére hivatkozik. 
     - Ütközés: Két beállítás ugyanazon az eszközön érvénybe lépnek, és az Intune nem rendezhető, az ütközést. Rendszergazdai ellenőrzés szükséges.
     - Függőben: Az eszköz még nem jelentkezett be az Intune-ban még megkapja a szabályzatot. 
-    - Nem alkalmazható: Az eszköz nem megkapja a szabályzatot. A szabályzat például egy, az iOS 11.1-re vonatkozó beállítást frissít, az eszköz azonban az iOS 10-et használja. 
+    - Not applicable: Az eszköz nem megkapja a szabályzatot. A szabályzat például egy, az iOS 11.1-re vonatkozó beállítást frissít, az eszköz azonban az iOS 10-et használja. 
 
 3. A szabályzatot használó eszközökön a részletek megtekintéséhez válassza ki a állapotok egyikét. Válassza például a **Sikeres** elemet. A következő ablakban megjelennek az eszköz adatai, például az eszköz neve és az üzembe helyezési állapot.
 

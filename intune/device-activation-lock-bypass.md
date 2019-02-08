@@ -15,12 +15,13 @@ ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b80dfeece38d5cbedd09ca0f7a05d5d867f6cfaa
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8fc349636dc9bccc64782dec2c8d54d6f179bfc3
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185151"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837611"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Aktiválási zár megkerülése felügyelt iOS-eszközökön az Intune-nal
 
@@ -35,7 +36,7 @@ A Microsoft Intune szolgáltatással kezelhető az iOS aktiválási zára, amely
 
 ## <a name="how-activation-lock-affects-you"></a>Az aktiválási zár hatásai
 
-Az aktiválási zár segít az iOS-eszközök védelmének biztosításában, és növeli a megtalálásuk esélyét azok elvesztésekor vagy ellopásakor, ugyanakkor ez a funkció számos kihívást is jelenthet Ön, mint rendszergazda számára. Például:
+Az aktiválási zár segít az iOS-eszközök védelmének biztosításában, és növeli a megtalálásuk esélyét azok elvesztésekor vagy ellopásakor, ugyanakkor ez a funkció számos kihívást is jelenthet Ön, mint rendszergazda számára. Példa:
 
 - Egy felhasználó beállítja az aktiválási zárat egy eszközön. A felhasználó később elhagyja a céget és visszaszolgáltatja az eszközt. A felhasználó Apple ID azonosítója és jelszava nélkül semmilyen módon nem lehet újraaktiválni az eszközt.
 - Szüksége van egy jelentésre az összes eszközről, amelyen engedélyezve van az aktiválási zár.
@@ -71,7 +72,7 @@ Az eszközök aktiválási zárának megkerüléséhez azt előbb az alábbi lé
 
 Az Intune **Aktiválási zár megkerülése** távoli eszközművelet a felhasználó Apple-azonosítójának és jelszavának lekérése nélkül távolítja el az aktiválási zárat az iOS-eszközről. Az aktiválási zár megkerülése után az eszköz a Find my iPhone alkalmazás indításakor újra bekapcsolja az aktiválási zárat. Csak akkor kerülje meg az aktiválási zárat, ha fizikailag is hozzáfér az eszközhöz.
 
-1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget.
 3. Az **Intune** panelen válassza az **Eszközök** lehetőséget.
 4. Az **Eszközök** panelen válassza a **Minden eszköz** lehetőséget.

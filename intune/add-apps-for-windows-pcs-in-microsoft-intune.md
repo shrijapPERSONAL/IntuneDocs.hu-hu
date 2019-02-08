@@ -16,12 +16,13 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: df6d3eddd2ee8c1c1859539cf0829add9d3ce424
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2f3dda5085a5f054064da1ea24c7c7b09be79519
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180459"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840314"
 ---
 # <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>Az Intune szoftverügyfelet futtató Windows rendszerű számítógépes alkalmazások hozzáadása
 
@@ -51,7 +52,7 @@ Az alábbiakban ismertetett eljárással konfigurálhatja az alkalmazás tulajdo
    - **Adja meg a szoftver telepítőfájljainak helyét**. Adja meg a telepítőfájlok helyét, vagy kattintson a **Tallózás** gombra a kívánt hely listából való kiválasztásához.
    - **Adja meg a mappában található további fájlokat és almappákat is**. A Windows Installert használó szoftverek némelyikéhez támogató fájlokra is szükség van. Ezeknek a telepítőfájllal azonos mappában kell lenniük. Akkor válassza ezt a lehetőséget, ha ezeket a fájlokat is telepíteni kívánja.
 
-   Ha például egy Application.msi nevű alkalmazást szeretne közzétenni az Intune-ban, ilyen lesz a lap: ![a kiadó szoftvertelepítési lapja](media/publisher-for-pc.png)
+   Ha például egy Application.msi nevű alkalmazást szeretne közzétenni az Intune-ban, ilyen lesz a lap: ![A kiadó szoftvertelepítési lapja](media/publisher-for-pc.png)
 
    Ez a telepítési típus némi helykapacitást igényel a felhőbeli tárhelyen.
 
@@ -82,15 +83,15 @@ Az alábbiakban ismertetett eljárással konfigurálhatja az alkalmazás tulajdo
 
    Ha az alkalmazás megfelel a konfigurált szabályok valamelyikének, nem lesz telepítve.
 
-6. Csak a **Windows Installer** fájltípusai (.msi és .exe) esetében: a **Parancssori argumentumok** lapon adja meg, hogy szeretne-e opcionális parancssori argumentumokat megadni a telepítőhöz.
+6. Az a **Windows Installer** fájltípus (.msi és .exe): Az a **parancssori argumentumok** lapon, válassza ki, hogy szeretné-e parancssori argumentumokat használni a telepítőhöz.
    Az Intune automatikusan megadja a következő paramétereket:
    - Az .exe fájlokhoz az **/install** paramétert fűzi.
    - Az .msi fájlokhoz a **/quiet** paramétert fűzi.
    Ne feledje, hogy ezek a paraméterek csak akkor működnek, ha az alkalmazáscsomag készítője engedélyezte a nekik megfelelő funkciókat.
 
-7. Csak a **Windows Installer** fájltípus (.exe) esetében: a **Visszatérési kódok** lapon olyan új hibakódokat vehet fel, amelyeket az Intune az alkalmazás felügyelt Windows-számítógépre való telepítésekor értelmez.
+7. Az a **Windows Installer** fájltípus (csak .exe): Az a **visszatérési kódok** lapon adhat hozzá új hibakódok, amely az Intune-ban az alkalmazás telepítését követően a felügyelt Windows rendszerű számítógépek értelmezi.
 
-   Alapértelmezés szerint az Intune az iparági szabványnak megfelelő visszatérési kódok segítségével jelenti az alkalmazáscsomagok telepítésének sikerességét vagy sikertelenségét: **0** – Sikeres vagy **3010** – Sikeres, újraindítással. Ehhez a listához saját visszatérési kódjait is hozzáadhatja. Ha megad egy visszatérésikód-listát, és az alkalmazás telepítőprogramja olyan kódot ad vissza, amely nem szerepel a listán, a rendszer a kódot hibaként értelmezi.
+   Alapértelmezés szerint az Intune-ban a iparági szabványnak megfelelő visszatérési kódok használja az jelenti az alkalmazáscsomagok telepítésének sikerének vagy: **0** (sikeres) vagy **3010** (sikeres, újraindítással). Ehhez a listához saját visszatérési kódjait is hozzáadhatja. Ha megad egy visszatérésikód-listát, és az alkalmazás telepítőprogramja olyan kódot ad vissza, amely nem szerepel a listán, a rendszer a kódot hibaként értelmezi.
 
 8. Az **Összefoglalás** lapon ellenőrizze a megadott adatokat. Ha elkészült, válassza a **Feltöltés** elemet.
 
@@ -102,4 +103,4 @@ Az alkalmazás megjelenik az **Alkalmazások** munkaterület **Alkalmazások** c
 
 Ha létrehozta az alkalmazást, a következő lépés a telepítés. További tudnivalók: [Alkalmazások hozzárendelése csoportokhoz a Microsoft Intune-nal](apps-deploy.md).
 
-Ha a szoftverek Windows-számítógépekre való telepítésével kapcsolatos tippekről és trükkökről szeretne tájékozódni, [ebből a blogbejegyzésből megismerkedhet a számítógépekre az Intune-nal történő szoftverterjesztés ajánlott eljárásaival](https://blogs.technet.microsoft.com/intunesupport/2016/06/13/support-tip-best-practices-for-intune-software-distribution-to-pcs/).
+Ha szeretne további információt szeretne tippeket és trükköket szoftvereket telepíthet a Windows rendszerű számítógépekre, tekintse meg a következő blogbejegyzésben: [támogatási tipp: Ajánlott eljárások a Windows rendszerű gépek Intune szoftverterjesztés](https://blogs.technet.microsoft.com/intunesupport/2016/06/13/support-tip-best-practices-for-intune-software-distribution-to-pcs/).

@@ -15,12 +15,13 @@ ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 811bf4ba6ed611dab0e42625a8aa3dc2b18e007c
-ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 437740779e0739ec53d9c89e46234cd5b31857e4
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55290706"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835577"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>A Vállalati portál alkalmazás üzeneteinek ismertetése a végfelhasználókkal
 
@@ -106,7 +107,7 @@ Ha nem adta hozzá a Céges portált az **Engedélyezett alkalmazások** vagy a 
 > **A céges ügyfélszolgálatnak hozzáférést kell nyújtania Önnek a céges erőforrásokhoz**  
 > A cége a Windows Információvédelem szabályzataival védi az eszközt. A céges ügyfélszolgálatnak biztosítania kell, hogy engedélyezze a Céges portálnak a hozzáférést ezekhez az erőforrásokhoz.
 
-### <a name="what-it-means"></a>Jelentés
+### <a name="what-it-means"></a>Mit jelent
 
 Adja hozzá a céges portál a **engedélyezett alkalmazások** vagy **mentesített alkalmazások** a Windows Information Protection (WIP) alkalmazásvédelmi szabályzat listájában. További információ: [A Windows Információvédelem (WIP) alkalmazásvédelmi szabályzatainak létrehozása és bevezetése az Intune használatával](windows-information-protection-policy-create.md).
 

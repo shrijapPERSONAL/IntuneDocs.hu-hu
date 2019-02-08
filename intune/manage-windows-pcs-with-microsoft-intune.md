@@ -15,12 +15,13 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: daeb85543138a46df296564d2372b6b441011cdf
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e35b0f52c4062e0124fd8e6b939f451f33fce36b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183418"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835010"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Windows rendszerű számítógépek kezelése az Intune-szoftverügyfélen keresztül számítógépként
 
@@ -46,7 +47,7 @@ Az Intune-ügyfélszoftver telepítéséhez szükséges minimális hardverkövet
 
 |Követelmény|További információ|
 |---------------|--------------------|
-|Hálózat|Az ügyfél használatához a számítógépnek internetkapcsolattal kell rendelkeznie.|
+|Network (Hálózat)|Az ügyfél használatához a számítógépnek internetkapcsolattal kell rendelkeznie.|
 |Processzor és memória|A processzorra és a RAM-ra vonatkozó követelményeket a számítógép operációs rendszere határozza meg.|
 |Lemezterület|200 MB szabad lemezterület az ügyfélszoftver telepítése előtt.|
 

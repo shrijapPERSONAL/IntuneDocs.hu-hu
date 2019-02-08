@@ -16,12 +16,13 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: fdda0edd8c7bf67dbfce9d428f1b3ce0266b3726
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b1498e6bf9a4b2df7da9ef0a7ec6824e2a3e4f94
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032418"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851321"
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>iOS-eszközök regisztrálásának beállítása az Apple School Manager programban
 
@@ -108,8 +109,8 @@ Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt
 
     A rendszer kétféle módon is tudatja a felhasználókkal, hogy az eszközük felügyelet alatt áll:
 
-   - A zárolási képernyőn a következő felirat látható: „Ezt az iPhone-t a Contoso kezeli.”
-   - A **Beállítások** > **Általános** > **Névjegy** képernyőn a következő felirat látható: „Ez egy felügyelt iPhone. A Contoso figyelheti az internetes forgalmat és megállapíthatja a készülék helyét.” figyelmeztetés.
+   - A zárolási képernyő szerint: "Az iPhone-on a Contoso kezeli."
+   - A **beállítások** > **általános** > **kapcsolatos** képernyő szerint: "Ez egy felügyelt iPhone. A Contoso figyelheti az internetes forgalmat és megállapíthatja a készülék helyét.” figyelmeztetés.
 
      > [!NOTE]
      > A felügyelet nélkül regisztrált eszközöket csak az Apple Configurator segítségével tudja átállítani felügyelt eszközzé. Az eszköz ily módon való átállításához csatlakoztatnia kell az iOS-eszközt egy Mac számítógéphez USB-kábellel. Ezzel kapcsolatban az [Apple Configurator dokumentációjában](http://help.apple.com/configurator/mac/2.3) talál további információkat.
@@ -124,7 +125,7 @@ Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt
 
 11. Válassza az **OK** gombot.
 
-12. Válassza **A beállítási asszisztens beállításai** elemet, és konfigurálja az alábbi profilbeállításokat: ![A beállítási asszisztens testreszabása.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
+12. Kattintson a **Beállítási asszisztens beállításai** elemre, és konfigurálja az alábbi profilbeállításokat: ![A beállítási asszisztens testreszabása.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
 
     |                 Beállítás                  |                                                                                               Leírás                                                                                               |

@@ -14,12 +14,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4c65b381afaad4b3ba65fa3d8eb49ba8f52b95d1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 58583569ca32449cddf2af23d65c35b897fac6ed
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183349"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850964"
 ---
 # <a name="use-custom-settings-for-ios-devices-in-microsoft-intune"></a>Egyéni beállítások használata iOS-eszközökhöz a Microsoft Intune-ban
 
@@ -54,15 +55,15 @@ Ebből a cikkből megtudhatja, hogyan hozhat létre egyéni profilt az iOS-eszk�
 2. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
 3. Adja meg a következő beállításokat:
 
-    - **Név**: Adja meg a profil nevét, például: `ios custom profile`.
-    - **Leírás:** Itt adhatja meg a profil leírását.
-    - **Platform**: Válassza az **iOS** lehetőséget.
-    - **Profil típusa**: Válassza az **Egyéni** lehetőséget.
+    - **Név**: Adja meg egy nevet a profilnak, például `ios custom profile`.
+    - **Description** (Leírás): Adja meg a profil leírását.
+    - **Platform**: Válasszon **iOS**.
+    - **Profil típusa**: Válasszon **egyéni**.
 
 4. Az **Egyéni konfiguráció** részben adja meg a következő beállításokat:
 
-    - **Az egyéni konfigurációs profil neve**: Adja meg a szabályzat nevét. Ez a név megjelenik az eszközön, valamint az Intune állapotában.
-    - **Konfigurációs profil fájlja**: Tallózással keresse meg az Apple Configuratorrel vagy az Apple Profile Managerrel létrehozott konfigurációs profilt. Az importált fájl megjelenik a **Fájl tartalma** területen.
+    - **Egyéni konfigurációs profil neve**: Adja meg a szabályzat nevét. Ez a név megjelenik az eszközön, valamint az Intune állapotában.
+    - **Konfigurációs profil fájlja**: Keresse meg az Apple Configuratort vagy az Apple-profil Manager használatával létrehozott konfigurációs profilt. Az importált fájl megjelenik a **Fájl tartalma** területen.
 
 5. Az Intune-profil létrehozásához válassza az **OK** > **Létrehozás** lehetőséget. Ha a profil elkészült, megjelenik az **Eszközkonfiguráció – Profilok** listában.
 

@@ -15,16 +15,17 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 6c6e31ce5c3f5f988a6c4b4ff4be71bfd5e0dd80
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c5aebe07259e2fcee009e97bc3c12d7c02933360
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148058"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846927"
 ---
 # <a name="resolve-a-threat-found-by-zimperium-zips"></a>A Zimperium zIPS által azonosított fenyegetések elhárítása
 
-A Zimperium zIPS egy mobilfenyegetés elleni védelmi szolgáltatás, amely lehetséges fenyegetéseket azonosít Android-eszközein. Ezek a fenyegetések a Céges portál alkalmazásnak lesznek jelentve, és megoldatlan nem megfelelőségi problémákként jelennek meg. Előfordulhat, hogy amíg eszköze nem megfelelőként van azonosítva, a következők nem lehetségesek:
+A Zimperium zIPS egy mobilfenyegetés elleni védelmi szolgáltatás, amely lehetséges fenyegetéseket azonosít Android-eszközein. Ezek a fenyegetések a Céges portál alkalmazásnak lesznek jelentve, és megoldatlan nem megfelelőségi problémákként jelennek meg. Amíg az eszköze nem megfelelőként van azonosítva, előfordulhat hogy nem lesz lehetősége a következőkre:
 
 * Hozzáférés a vállalati e-mailekhez
 * Hozzáférés a vállalati Wi-Fi-hez
@@ -49,6 +50,6 @@ Válassza az érintett eszköz alatt megjelenő figyelmeztető szalagcímet. Meg
 
 Az eszközére nézve fenyegetőnek ítélt alkalmazás telepítésekor értesítést kap a Zimperium zIPS-ben. Amíg az érintett alkalmazás az eszközén marad, Ön nem fog hozzáférni a vállalati erőforrásokhoz.  
 
-A megoldáshoz jelölje ki az alkalmazást a fenyegetéseknek a Zimperium zIPS-ben megjelenő listájában. Ez után kövesse a képernyőn megjelenő utasításokat az alkalmazás eltávolításához.    
+A megoldáshoz jelölje ki az alkalmazást a fenyegetéseknek a Zimperium zIPS-ben megjelenő listájában. Ezután kövesse a képernyőn megjelenő utasításokat az alkalmazás eltávolításához.    
 
 További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980). 

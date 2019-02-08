@@ -14,12 +14,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a876cf430952aa99957af4bc9a66f4bc29d65df9
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 90ead0f7c00b1e451641042d8a3ef3cb8da957f3
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184675"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840297"
 ---
 # <a name="use-custom-settings-for-windows-phone-81-devices-in-intune"></a>Egyéni beállítások használata Windows Phone 8.1 rendszerű eszközökhöz az Intune-ban
 
@@ -35,17 +36,17 @@ Ebből a cikkből megtudhatja, hogyan hozhat létre egyéni profilt Windows Phon
 2. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
 3. Adja meg a következő beállításokat:
 
-    - **Név**: Adja meg a profil nevét, például: `windows phone custom profile`.
-    - **Leírás:** Itt adhatja meg a profil leírását.
-    - **Platform**: Válassza a **Windows Phone 8.1** lehetőséget.
-    - **Profil típusa**: Válassza az **Egyéni** lehetőséget.
+    - **Név**: Adja meg egy nevet a profilnak, például `windows phone custom profile`.
+    - **Description** (Leírás): Adja meg a profil leírását.
+    - **Platform**: Válasszon **Windows Phone 8.1-es**.
+    - **Profil típusa**: Válasszon **egyéni**.
 
 4. Az **Egyéni OMA-URI-beállítások** menüben válassza a **Hozzáadás** lehetőséget. Adja meg a következő beállításokat:
 
-    - **Név** – Adjon meg egy egyedi nevet az OMA-URI-beállítás számára, amellyel az egyszerűen azonosítható a beállítások listájában.
-    - **Leírás**: Adjon meg egy olyan leírást, amely áttekintést nyújt az adott beállításról, valamint más olyan releváns információkat tartalmaz, amelyek segítenek a profil megkeresésében.
-    - **OMA-URI** (megkülönbözteti a kis- és nagybetűket): Adja meg azt az OMA-URI azonosítót, amelyet beállításként kíván használni.
-    - **Adattípus** – Adja meg azt az adattípust, amelyet az OMA-URI beállításhoz szeretne használni. A választható lehetőségek:
+    - **Név**: Adjon meg egy egyedi nevet az OMA-URI beállítás számára, amellyel az egyszerűen azonosítható a beállítások listájában.
+    - **Description** (Leírás): Adjon meg egy leírást, amely áttekintést ad a beállítást, valamint egyéb releváns információkkal segítségével keresse meg a profilt.
+    - **OMA-URI** (megkülönbözteti a kis-és nagybetűket): Adja meg az OMA-URI beállításai használni kívánt.
+    - **Adattípus**: Válassza ki az adatokat fogja használni az OMA-URI-beállítás. A választható lehetőségek:
 
         - Sztring
         - Sztring (XML-fájl)
@@ -55,11 +56,11 @@ Ebből a cikkből megtudhatja, hogyan hozhat létre egyéni profilt Windows Phon
         - Logikai
         - Base64 (fájl)
 
-    - **Érték** – Adja meg a megadott OMA-URI azonosítóhoz társítandó értéket. Az érték a választott adattípustól függ. A **Dátum és idő** típus esetén például a dátumválasztóból választhat értéket.
+    - **Érték**: A megadott OMA-URI társítani kívánt adatok értéket adjon meg. Az érték a választott adattípustól függ. A **Dátum és idő** típus esetén például a dátumválasztóból választhat értéket.
 
     Néhány beállítás megadása után válassza az **Exportálás** lehetőséget. Az **Exportálás** a hozzáadott értékek listáját hozza létre egy vesszővel tagolt (.csv) fájlban.
 
-5. A módosítások mentéséhez válassza az **OK** gombot. Szükség szerint adjon hozzá további beállításokat.
+5. Válassza ki **OK** a módosítások mentéséhez. Szükség szerint adjon hozzá további beállításokat.
 6. Ha elkészült, az Intune-profil létrehozásához kattintson az **OK** > **Létrehozás** lehetőségre. Ha a profil elkészült, megjelenik az **Eszközkonfiguráció – Profilok** listában.
 
 ## <a name="next-steps"></a>További lépések

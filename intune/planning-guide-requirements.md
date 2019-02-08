@@ -16,12 +16,13 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: c01e1d955fd8442e9d1ba24ed27164bb3c6bc694
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bd3fc85b0d5cf55407daca1dee5f4c20ba22f498
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180003"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843238"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>Használatieset-forgatókönyvek követelményeinek meghatározása
 
@@ -36,10 +37,10 @@ Itt található néhány példa a munkahelyi használatieset-forgatókönyvek k�
 | **Használati esetek** | **Használati alesetek** | **Csoportok** | **Eszközplatformok** | **Követelmények** |
 |:---:|:---:|:---:|:---:|:---:|
 | Vállalati | Infomunkás | HR, pénzügy | iOS | Biztonságos e-mail, eszközbeállítások, profilok, alkalmazások |                                                          
-| Vállalati | Vezetők | HR, Pénzügy | iOS | Biztonságos e-mail, eszközbeállítások, profilok, alkalmazások |                                                         
+| Vállalati | A vezetők | HR, Pénzügy | iOS | Biztonságos e-mail, eszközbeállítások, profilok, alkalmazások |                                                         
 | Vállalati | Kioszkmód | Kereskedelem | Android | Eszközbeállítások, profilok, alkalmazások |
 | BYOD | Infomunkás | Marketing, értékesítés | iOS | Biztonságos e-mail, eszközbeállítások, profilok, alkalmazások |                                                         
-| BYOD | Vezetők | Marketing, értékesítés | iOS | Biztonságos e-mail, eszközbeállítások, profilok, alkalmazások |
+| BYOD | A vezetők | Marketing, értékesítés | iOS | Biztonságos e-mail, eszközbeállítások, profilok, alkalmazások |
 
 [Letöltheti a fenti táblázat sablonját](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0), hogy beírja a cég használatieset- és alhasználatieset-követelményeit.
 

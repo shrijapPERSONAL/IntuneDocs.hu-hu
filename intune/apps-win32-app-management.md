@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ba77c14e470ed75a87f44adcaf0ba9b98cd06438
-ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 61a2abee2e926605a4d7d35baa53f6259ef77db3
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55290757"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840246"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Önálló Intune - Win32-Alkalmazáskezelés
 
@@ -58,7 +59,7 @@ Letöltheti a [Microsoft Win32 tartalom előkészítő eszközt](https://go.micr
 |    `IntuneWinAppUtil -h`    |    Ez a parancs megjeleníti az eszköz használatára vonatkozó információkat.    |
 |    `IntuneWinAppUtil -c <setup_folder> -s <source_setup_file> -o <output_folder> <-q>`    |    Ez a parancs létrehozza az `.intunewin` fájlt a megadott forrásmappa és telepítőfájl alapján. Az MSI-telepítőfájlhoz az eszköz lekéri az Intune-hoz szükséges adatokat. Ha a `-q` van megadva, a parancs csendes módban fog futni, és ha a kimeneti fájl már létezik, felül fogja írni. Ha a kimeneti mappa még nem létezik, akkor automatikusan létrejön.    |
 
-Létrehozásakor egy *.intunewin* fájlt minden olyan fájlok, a telepítés mappa almappa hivatkoznia kell. Ezután használja a relatív elérési út egy konkrét fájlt kell hivatkoznia. Például:
+Létrehozásakor egy *.intunewin* fájlt minden olyan fájlok, a telepítés mappa almappa hivatkoznia kell. Ezután használja a relatív elérési út egy konkrét fájlt kell hivatkoznia. Példa:
 
 **Telepítő forrásmappája:** *c:\testapp\v1.0*<br>
 **Licencfájl:** *c:\testapp\v1.0\licenses\license.txt*
@@ -69,16 +70,16 @@ Tekintse meg a *license.txt* fájl relatív elérési út használatával *licen
 
 Az üzletági (LOB) alkalmazásokhoz hasonlóan Win32-alkalmazást is hozzáadhat a Microsoft Intune-hoz. Az ilyen alkalmazásokat általában házon belül írják, vagy egy külső féltől származnak. Az alábbi lépések útmutatást nyújtanak a Windows-alkalmazások Intune-hoz való hozzáadásához.
 
-### <a name="step-1-specify-the-software-setup-file"></a>Első lépés: A szoftvertelepítő fájl megadása
+### <a name="step-1-specify-the-software-setup-file"></a>1. lépés: A szoftvertelepítő fájl megadása
 
-1.  Jelentkezzen be az [Azure portálra](https://portal.azure.com/).
+1.  Jelentkezzen be az [Azure Portalra](https://portal.azure.com/).
 2.  Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3.  Az **Intune** panelen válassza az **Ügyfélalkalmazások** > **Alkalmazások** > **Hozzáadás** elemet.
 4.  Az a **Hozzáadás** alkalmazás panelen válassza **Windows-alkalmazás (Win32)** a megadott legördülő listából.
 
     ![Az hozzáadása panelen – Hozzáadás típusa legördülő menü képernyőképe](./media/apps-win32-app-01.png)
 
-### <a name="step-2-upload-the-app-package-file"></a>Második lépés: Az alkalmazáscsomag-fájl feltöltése
+### <a name="step-2-upload-the-app-package-file"></a>2. lépés: Az alkalmazáscsomag-fájl feltöltése
 
 1.  Az **Alkalmazás felvétele** panelen válassza az **Alkalmazáscsomag-fájl** lehetőséget egy fájl kiválasztásához. Megjelenik az Alkalmazáscsomag-fájl panel.
 
@@ -91,7 +92,7 @@ Az üzletági (LOB) alkalmazásokhoz hasonlóan Win32-alkalmazást is hozzáadha
 
 3.  Amikor végzett, válassza az **OK** gombot.
 
-### <a name="step-3-configure-app-information"></a>Harmadik lépés: Az alkalmazásadatok konfigurálása
+### <a name="step-3-configure-app-information"></a>3. lépés: Az alkalmazásadatok konfigurálása
 
 1.  Az alkalmazás konfigurálásához az **Alkalmazás hozzáadása** panelen válassza az **Alkalmazás adatai** elemet.
 2.  Az **Alkalmazás adatai** panelen konfigurálja az alábbi információkat. Lehetséges, hogy ezen a panelen néhány érték automatikusan ki lesz töltve.
@@ -116,7 +117,7 @@ Az üzletági (LOB) alkalmazásokhoz hasonlóan Win32-alkalmazást is hozzáadha
 
 3.  Adja meg az alkalmazás eltávolításához szükséges teljes eltávolítási parancssort az alkalmazás GUID-értékei alapján. 
 
-    Például így: `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
+    Például:`msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
 
     > [!NOTE]
     > Az adott Win32-alkalmazás telepítését a **Felhasználó** vagy a **Rendszer** környezetben konfigurálhatja. A **Felhasználó** környezet csak az adott felhasználóra vonatkozik. A **Rendszer** környezet az adott, Windows 10-es rendszerű eszköz összes felhasználójára vonatkozik.

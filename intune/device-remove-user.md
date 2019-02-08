@@ -15,12 +15,13 @@ ms.assetid: 2ea5941c-a69b-4e1c-b42c-a1fc0c3a7de7
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 00733600555118533ef2754d0b2b37184f93b309
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c00e026a6877097abd266a7ed800500a0f467123
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189214"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851355"
 ---
 # <a name="remove-a-user-from-a-shared-ios-device"></a>Felhasználó eltávolítása megosztott iOS-eszközről
 
@@ -39,7 +40,7 @@ A **Felhasználó eltávolítása** művelettel törölheti a kiválasztott felh
 
 ## <a name="remove-a-user"></a>Felhasználó eltávolítása
 
-1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza az **Eszközök** lehetőséget.
 4. Az **Eszközök** panelen válassza a **Minden eszköz** lehetőséget.

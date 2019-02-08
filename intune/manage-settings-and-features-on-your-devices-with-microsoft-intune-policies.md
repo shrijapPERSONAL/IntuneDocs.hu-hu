@@ -16,12 +16,13 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 3b1115a91707c639caba6410ace3c2e255e40a39
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e36580a477db29a52249c4ce809239ae3a524462
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184998"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837891"
 ---
 # <a name="manage-settings-and-features-on-your-devices-with-intune-policies"></a>Az eszközök beállításainak és funkcióinak kezelése az Intune-házirendek használatával
 
@@ -31,10 +32,10 @@ A Microsoft Intune *-szabályzatok* a mobileszközök és a számítógépek fun
 
 Az Intune-szabályzatok két kategóriába sorolhatók: A használt kategória befolyásolja a szabályzat létrehozását és telepítését.
 
-- **Konfigurációs szabályzatok:** Ezek általában az eszközök biztonsági beállításainak és szolgáltatásainak, többek között a vállalati erőforrások elérésének a kezelésére használhatók. Első lépések az [Intune-eszközprofilok](device-profiles.md) használatában.
-- **Eszközmegfelelőségi szabályzatok:** Meghatározzák azokat a szabályokat és beállításokat, amelyeknek az eszköznek meg kell felelnie, hogy a feltételes hozzáférési szabályzatok szerint megfelelő legyen. A megfelelőségi szabályzatokkal a feltételes hozzáféréstől függetlenül is megfigyelheti és kijavíthatja az eszközök megfelelőséggel kapcsolatos hibáit. [Eszközmegfelelőségi szabályzatok – első lépések](device-compliance-get-started.md).
-- **Feltételes hozzáférési szabályzatok:** Ezekkel a szabályzatokkal a megadott feltételek alapján biztosíthatja a levelezés és más szolgáltatások védelmét. A [Mi a feltételes hozzáférés](conditional-access.md) és [a feltételes hozzáférés használatának szokásos módjai](conditional-access-intune-common-ways-use.md) jó erőforrások a kezdéshez.
-- **Vállalati eszközregisztrációs szabályzatok:** A vállalati eszközregisztrációs szabályzatokra vonatkozó információért lásd: [iOS-eszközök regisztrálása](ios-enroll.md).
+- **Konfigurációs szabályzatok**: Általában biztonsági beállításainak és szolgáltatásainak az eszközökön, beleértve a vállalati erőforrásokhoz való hozzáférés kezelésére használhatók. Első lépések az [Intune-eszközprofilok](device-profiles.md) használatában.
+- **Az eszközmegfelelőségi szabályzatok**: Adja meg a szabályokat és beállításokat, amelyek az eszköz megfeleljen a feltételes hozzáférési házirendek szerint megfelelőnek minősüljön. A megfelelőségi szabályzatokkal a feltételes hozzáféréstől függetlenül is megfigyelheti és kijavíthatja az eszközök megfelelőséggel kapcsolatos hibáit. [Eszközmegfelelőségi szabályzatok – első lépések](device-compliance-get-started.md).
+- **Feltételes hozzáférési szabályzatok**: Segítségével biztosíthatja a levelezés és más szolgáltatásokat, Ön által megadott feltételek. A [Mi a feltételes hozzáférés](conditional-access.md) és [a feltételes hozzáférés használatának szokásos módjai](conditional-access-intune-common-ways-use.md) jó erőforrások a kezdéshez.
+- **Vállalati eszközregisztrációs szabályzatok**: További információ a vállalati eszközregisztrációs szabályzatok: [iOS-eszközök regisztrálása](ios-enroll.md).
 
 ## <a name="frequently-asked-questions-about-intune-policies"></a>A Microsoft Intune szabályzataival kapcsolatban gyakran felmerülő kérdések
 
@@ -49,7 +50,7 @@ Ha az eszköz az első értesítés után nem jelentkezik be, hogy beszerezze a 
 | Mac OS X | 6 óránként |
 | Android | 8 óránként | 
 | Windows Phone | 8 óránként | 
-| Windows 8.1  | 8 óránként |  
+| Windows 8.1  | 8 óránként |  
 | Eszközként regisztrált Windows 10 számítógépek | 8 óránként | 
 
 Ha az eszköz nemrég lett regisztrálva, a bejelentkezés gyakoribb lesz, a következőképpen:
@@ -95,9 +96,9 @@ Amikor töröl egy szabályzatot, vagy eltávolít egy olyan eszközt a csoportb
 
 #### <a name="enrolled-devices"></a>Regisztrált eszközök
 
-- Wi-Fi, VPN, tanúsítvány és e-mail profilok: Ezek a profilok az összes támogatott regisztrált eszközről el lesznek távolítva.
+- Wi-Fi, VPN, tanúsítvány és e-mail-profilok: Ezek a profilok az összes támogatott regisztrált eszközről el lesznek távolítva.
 - Minden egyéb házirendtípus:
-  - **Windows és Android rendszerű eszközök**: A beállítások nem törlődnek az eszközről.
+  - **Windows és Android-eszközök**: Beállítások nem törlődnek az eszközről.
   - **Windows Phone 8.1 rendszerű eszközök**: A következő beállítások törlődnek:
     - Jelszó szükséges a mobileszközök feloldásához
     - Egyszerű jelszavak engedélyezése
@@ -125,7 +126,7 @@ Amikor töröl egy szabályzatot, vagy eltávolít egy olyan eszközt a csoportb
     - NFC használatának engedélyezése
     - Wi-Fi használatának engedélyezése
 
-  - **iOS**: Az összes beállítás törlődik, kivéve a következőket:
+  - **iOS**: Az összes beállítás törlődik, kivéve:
     - Hangroaming engedélyezése
     - Adatroaming engedélyezése
     - Automatikus szinkronizálás engedélyezése roaming közben

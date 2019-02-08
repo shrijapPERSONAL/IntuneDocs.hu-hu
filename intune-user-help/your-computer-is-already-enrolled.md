@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c23d035b37cec47d187c65b518c5a7ff18d16caa
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c7265eb7b4679d72fa6ab348c17f9f4f7508482e
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146344"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836426"
 ---
 # <a name="your-computer-is-already-enrolled"></a>A számítógép már regisztrálva van
 
@@ -36,6 +37,6 @@ A számítógép összekapcsolása:
 
 3.  A képernyőn megjelenő utasításokat követve kapcsolja össze számítógépét a felhasználói fiókjával.
 
-Ha szeretné törölni az eszköze regisztrációját, kövesse az eszköz típusára vonatkozó utasításokat: [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md) vagy [Windows](unenroll-your-device-from-intune-windows.md).
+Ha szeretné az eszköz regisztrációját, kövesse az utasításokat a használt eszköz típusának: [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md), vagy [Windows](unenroll-your-device-from-intune-windows.md).
 
 További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

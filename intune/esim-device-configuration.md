@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 25b6ca031b0c31f3ef517c9d2886853ec41c31da
-ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0d5abe78389d58043b44ba6e7f31854407019c0d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55303514"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834136"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>eSIM mobilhálózati profilok konfigurálása az Intune-ban – Nyilvános előzetes verzió
 
@@ -69,15 +70,15 @@ A következő eszközök eSIM-kompatibilitását már bejelentették, vagy megta
 - Lenovo Yoga C630
 - Samsung Galaxy Book 2
 
-## <a name="step-1-add-cellular-activation-codes"></a>Első lépés: Mobilhálózati aktiváló kód hozzáadása
+## <a name="step-1-add-cellular-activation-codes"></a>1. lépés: Mobilhálózati aktiváló kód hozzáadása
 
 A mobilhálózati aktiváló kódokat a mobilszolgáltató adja meg egy vesszővel tagolt (csv) fájlban. Miután megkapta a fájlt, vegye fel az Intune-ban a következő lépésekben:
 
-1. Jelentkezzen be az [Azure portálra](https://portal.azure.com/).
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com/).
 2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
 3. Kattintson az **Eszközkonfiguráció** > **eSIM mobilhálózati profilok** > **Hozzáadás** elemre.
 4. Válassza ki az aktiváló kódot tartalmazó CSV-fájlt.
-5. A módosítások mentéséhez válassza az **OK** gombot.
+5. Válassza ki **OK** a módosítások mentéséhez.
 
 #### <a name="csv-file-requirements"></a>A CSV-fájlokhoz kapcsolódó követelmények
 
@@ -103,7 +104,7 @@ Az aktiváló kódokat tartalmazó CSV-fájl kezelése során Önnek vagy a rend
 
     ![A mobilhálózati előfizetés-készlet neve azonos az aktiváló kód csv-mintafájljának nevével](./media/esim-device-configuration/subscription-pool-name-csv-file.png)
 
-## <a name="step-2-create-an-azure-ad-device-group"></a>Második lépés: Eszköz Azure AD-csoport létrehozása
+## <a name="step-2-create-an-azure-ad-device-group"></a>2. lépés: Eszköz Azure AD-csoport létrehozása
 
 Hozzon létre egy eszközcsoportot, amely az eSIM-kompatibilis eszközöket tartalmazza. A [Csoportok hozzáadása](groups-add.md) című cikk felsorolja ezeket a lépéseket.
 
@@ -111,7 +112,7 @@ Hozzon létre egy eszközcsoportot, amely az eSIM-kompatibilis eszközöket tart
 > - Csak eszközöket célozhat meg, személyeket nem.
 > - Javasolt egy eSIM-kompatibilis eszközöket tartalmazó statikus Azure AD eszközcsoport létrehozása. A csoport használata biztosítja, hogy csak eSIM-eszközöket céloz meg.
 
-## <a name="step-3-assign-esim-activation-codes-to-devices"></a>Harmadik lépés: Esim-kártya az aktiváló kód hozzárendelése az eszközökhöz
+## <a name="step-3-assign-esim-activation-codes-to-devices"></a>3. lépés: Esim-kártya az aktiváló kód hozzárendelése az eszközökhöz
 
 Rendelje hozzá a profilt az eSIM-eszközöket tartalmazó Azure AD-csoporthoz.
 
@@ -133,7 +134,7 @@ Az aktiváló kódok csak egyszer használhatók fel. Miután az Intune telepít
 
 A profil hozzárendelése után figyelheti az előfizetési készlet központi telepítésének állapotát.
 
-1. Jelentkezzen be az [Azure portálra](https://portal.azure.com/).
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com/).
 2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
 3. Kattintson az **Eszközkonfiguráció** > **eSIM mobilhálózati profilok** elemre. A megjelenő lista tartalmaz minden meglévő eSIM mobilhálózati előfizetési készletet.
 4. Válasszon ki egy előfizetést, és tekintse át a **központi telepítés állapotát**.

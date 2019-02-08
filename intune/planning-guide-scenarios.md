@@ -16,12 +16,13 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 8058a6f4cda02a044e050f07bb6264e29b83f879
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: de72bc56bf1ec0e7f1555d889ae0684c1162fdb9
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179915"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841402"
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>Mobileszköz-kezelési használati esetek azonosítása
 
@@ -56,13 +57,13 @@ Határozza meg, hogy az egyes használati esetek tartalmaznak-e alárendelt hasz
 | Vállalati | Vezetők |           
 | Vállalati | Kioszkmód |
 | BYOD | Infomunkás |           
-| BYOD | Vezetők |
+| BYOD | A vezetők |
 
 [Letöltheti a fenti táblázat sablonját](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0), hogy beírja a cég használati eseteit és aleseteit.
 
 ## <a name="organizational-groups-for-your-scenarios"></a>Céges csoportok a használati eseteihez
 
-Ezután azonosítania kell az egyes használati esetekhez és alesetekhez kapcsolódó munkahelyi csoportokat. Például:
+Ezután azonosítania kell az egyes használati esetekhez és alesetekhez kapcsolódó munkahelyi csoportokat. Példa:
 
 | **Használati esetek** | **Használati alesetek** | **Munkahelyi csoportok** |
 |:---:|:---:|:---:|
@@ -82,10 +83,10 @@ A vállalati használati esetei támogathatják például az iOS és az Androidr
 | **Használati esetek** | **Használati alesetek** | **Csoportok** | **Eszközplatformok** |   
 |:---:|:---:|:---:|:---:|
 | Vállalati | Infomunkás | HR, pénzügy | iOS |                                                           
-| Vállalati | Vezetők | HR, Pénzügy | iOS |                                                           
+| Vállalati | A vezetők | HR, Pénzügy | iOS |                                                           
 | Vállalati | Kioszkmód | Kereskedelem | Android |
 | BYOD | Infomunkás | Marketing, értékesítés | iOS |                                                           
-| BYOD | Vezetők | Marketing, értékesítés | iOS |
+| BYOD | A vezetők | Marketing, értékesítés | iOS |
 
 ## <a name="next-steps"></a>További lépések
 

@@ -16,12 +16,13 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5f651ea03c727f569b2bf8a82fb3f259ecdc0766
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 4eb30a070fd12538750888b92e940480afb677ea
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184369"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846264"
 ---
 # <a name="develop-a-rollout-plan"></a>Bevezetési terv kidolgozása
 
@@ -103,7 +104,7 @@ Itt következik a fenti Intune-regisztrációs terv regisztrációs módszerekke
 | Önkiszolgáló |  |  |  |  |
 | Éles bevezetés, 3. fázis |  |  | Kereskedelem |  |
 | Önkiszolgáló |  |  |  | HR, Pénzügy |
-| Körültekintő |  |  |  | Vezetők |
+| Körültekintő |  |  |  | A vezetők |
 
 ## <a name="next-steps"></a>További lépések
 

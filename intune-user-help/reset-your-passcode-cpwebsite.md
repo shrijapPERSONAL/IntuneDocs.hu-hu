@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8ce71a14f9bb7e877fb31e78afdf64d5e492f4a8
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5e973e18a79c18af6b201194fc1a6534da5fa38a
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146689"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838036"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Az eszköz jelszavának alaphelyzetbe állítása a Vállalati portál webhelyén
 
@@ -75,7 +76,7 @@ Ez a szakasz a jelszó alaphelyzetbe állítását és az ideiglenes jelszó vis
 
 **Android**: Eltávolítja a meglévő jelszót, és egy betűkből és számokból álló ideiglenes jelszót hoz létre.
 
-**iOS:** Eltávolítja a meglévő jelszót, és nem hoz létre ideiglenes jelszót. Ha a Touch ID ujjlenyomat-leolvasóval megnyitja az eszközt vagy vásárol, a jelszót ismét be kell állítania.  
+**iOS**: Eltávolítja a meglévő jelszót, és nem hoz létre ideiglenes jelszót. Ha a Touch ID ujjlenyomat-leolvasóval megnyitja az eszközt vagy vásárol, a jelszót ismét be kell állítania.  
 
 **Windows 10 Mobile**: Eltávolítja a meglévő jelszót, és egy betűkből és számokból álló ideiglenes jelszót hoz létre. A beállítás után a Windows Hello arcfelismerő rendszer továbbra is működni fog az eszközön.
     

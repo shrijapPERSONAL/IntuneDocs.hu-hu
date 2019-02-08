@@ -15,12 +15,13 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 41ae1ffc17eee93b45f00e4eef5590f6a5d0b7b4
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 28f6cfe3b97381cd60bf485b8110cfa602ea9133
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112510"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838597"
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>iOS-es eszközök megfelelőségi szabályzatainak felvétele az Intune-ban
 
@@ -66,31 +67,31 @@ Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítás
 
 ## <a name="email"></a>E-mail
 
-- **Felügyelt e-mail-profil megkövetelése a mobileszközökön**: Ha ez Kötelezőként van megadva, akkor az Intune által felügyelt e-mail-profillal nem rendelkező eszközök nem megfelelőnek minősülnek. Egy eszköz akkor nem rendelkezhet felügyelt e-mail-profillal, ha nincs megfelelő célcsoportban, vagy ha a felhasználó manuálisan állította be az e-mail-fiókot az eszközön.
+- **Mobileszközök számára a felügyelt e-mail-profil**: Ha ez szükséges, majd e-mailt nem rendelkező eszközök az Intune által felügyelt profil nem megfelelőnek minősülnek. Egy eszköz akkor nem rendelkezhet felügyelt e-mail-profillal, ha nincs megfelelő célcsoportban, vagy ha a felhasználó manuálisan állította be az e-mail-fiókot az eszközön.
 
   Az eszköz a következő esetekben számít nem megfelelőnek:
   - Az e-mail-profil nem a megfelelőségi szabályzat által célzott felhasználócsoporttól különböző felhasználócsoportnál van telepítve.
   - A felhasználó már beállított egy, az eszközre telepített Intune levelezési profillal egyező e-mail-fiókot az eszközön. Az Intune nem írhatja felül a felhasználó által létesített profilt, így nem kezelheti. A megfelelőség biztosítása érdekében a felhasználónak törölnie kell a meglévő e-mail-beállításokat. Ezt követően az Intune képes lesz a felügyelt e-mail-profil telepítésére.
 
-- **Az Intune-ban felügyelni kívánt levelezési profil:** Ha a **Csak az Intune által felügyelt e-mail fiók használható** beállítás be van jelölve, kattintson a **Kiválasztás** elemre az Intune levelezési profil kiválasztásához. A levelezési profilnak megtalálhatónak kell lennie az eszközön.
+- **Válassza ki az Intune-ban felügyelni kívánt levelezési profil**: Ha a **az Intune által felügyelt E-mail fiók** beállítás van kiválasztva, válassza a **kiválasztása** az Intune e-mail profil. A levelezési profilnak megtalálhatónak kell lennie az eszközön.
 
 Az e-mail-profilról a [Vállalati levelezéshez való hozzáférés konfigurálása e-mail-profilokkal a Microsoft Intune-ban](email-settings-configure.md) című témakörben talál további információt.
 
 ## <a name="device-health"></a>Device health
 
-- **Feltört eszközök**: Ha ezt a beállítást engedélyezi, akkor a feltört eszközök nem lesznek kompatibilisek.
-- **Maximálisan elérhető eszközfenyegetettségi szint használata** (iOS 8.0 és újabb verziók): Válassza ki a legmagasabb fenyegetettségi szintet az eszközök nem megfelelőként való megjelöléséhez. Az ezt a szintet meghaladó fenyegetettségű eszközök nem megfelelőként lesznek megjelölve:
-  - **Védett**: Ez a legbiztonságosabb beállítás, mivel az eszköz esetében semmilyen fenyegetés nem engedélyezett. Bármilyen szintű fenyegetés észlelésekor az eszközt a rendszer nem megfelelőként értékeli.
-  - **Alacsony**: Az eszköz csak abban az esetben minősül megfelelőnek, ha kizárólag alacsony szintű fenyegetések állnak fenn. Bármilyen magasabb szintű fenyegetés esetén az eszköz nem megfelelő státuszúnak minősül.
+- **Feltört eszközök**: Ha engedélyezi ezt a beállítást, a függetlenített eszközök nem lesznek kompatibilisek.
+- **Az eszköz vagy az eszköz fenyegetettségi szintje alatt megkövetelése** (iOS 8.0 és újabb): Válassza ki azt a maximális fenyegetettségi szintet az eszközök kompatibilisként való megjelöléséhez. Az ezt a szintet meghaladó fenyegetettségű eszközök nem megfelelőként lesznek megjelölve:
+  - **Védett**: Ez a lehetőség akkor a legtöbb beállítás, mivel az eszköz esetében semmilyen fenyegetés nem. Bármilyen szintű fenyegetés észlelésekor az eszközt a rendszer nem megfelelőként értékeli.
+  - **Alacsony**: Az eszköz abban az esetben minősül megfelelőnek Ha kizárólag alacsony szintű fenyegetések állnak fenn. Bármilyen magasabb szintű fenyegetés esetén az eszköz nem megfelelő státuszúnak minősül.
   - **Közepes**: Az eszköz abban az esetben minősül megfelelőnek, ha az eszközön észlelt fenyegetések alacsony vagy közepes szintűek. Magas szintű fenyegetés észlelésekor a rendszer nem megfelelőként értékeli az eszközt.
-  - **Magas**: Ez a legkevésbé biztonságos, minden fenyegetettségi szintet megengedő beállítás. Akkor lehet hasznos, ha ezt a megoldást kizárólag jelentéskészítési célokra használja.
+  - **Magas**: Ez a beállítás a legkevésbé biztonságos, és minden kockázati szintet. Akkor lehet hasznos, ha ezt a megoldást kizárólag jelentéskészítési célokra használja.
 
 ## <a name="device-properties"></a>Eszköztulajdonságok
 
-- **Az operációs rendszer szükséges minimális verziója**: Ha egy eszköz nem teljesíti az operációs rendszer szükséges minimális verziójára vonatkozó követelményt, nem megfelelőként fog szerepelni. Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A felhasználó választhatja az eszköz frissítését. Azt követően hozzáférhet a vállalati erőforrásokhoz.
-- **Maximálisan engedélyezett operációsrendszer-verzió**: Ha egy eszközön a szabályban megadott operációsrendszer-verziónál újabb fut, a vállalati erőforrásokhoz való hozzáférés le lesz tiltva. A felhasználónak ezután kapcsolatba kell lépnie az informatikai rendszergazdával. Az eszköz csak akkor használható a vállalati erőforrások eléréséhez, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
-- **Minimális operációsrendszer-verziót hozzon létre**: Ha az Apple közzéteszi a biztonsági frissítéseket, a buildszám általában frissül, nem az operációs rendszer verzióját. Ez a funkció használatával adja meg a minimális megengedett buildszám az eszközön. A megfelelőségi ellenőrzés iOS 8.0 és újabb rendszert futtató eszközöket támogatja. 
-- **Maximális operációsrendszer-verziót hozzon létre**: Ha az Apple közzéteszi a biztonsági frissítéseket, a buildszám általában frissül, nem az operációs rendszer verzióját. Ez a funkció használatával adja meg a maximális megengedett buildszám az eszközön. A megfelelőségi ellenőrzés iOS 8.0 és újabb rendszert futtató eszközöket támogatja.
+- **Operációs rendszer szükséges minimális verziója**: Ha egy eszköz nem felel meg a minimális verziójára vonatkozó követelményt, hogy nem megfelelőként. Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A felhasználó választhatja az eszköz frissítését. Azt követően hozzáférhet a vállalati erőforrásokhoz.
+- **Maximálisan engedélyezett operációsrendszer-verzió**: Ha egy eszközön operációsrendszer-verziónál újabb fut, a szabályban megadott verzió, a vállalati erőforrásokhoz való hozzáférés le van tiltva. A felhasználónak ezután kapcsolatba kell lépnie az informatikai rendszergazdával. Az eszköz csak akkor használható a vállalati erőforrások eléréséhez, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
+- **Minimális operációsrendszer-verziót hozzon létre**: Apple közzéteszi a biztonsági frissítéseket, ha a buildszám általában frissül, nem az operációs rendszer verzióját. Ez a funkció használatával adja meg a minimális megengedett buildszám az eszközön. A megfelelőségi ellenőrzés iOS 8.0 és újabb rendszert futtató eszközöket támogatja. 
+- **Maximális operációsrendszer-verziót hozzon létre**: Apple közzéteszi a biztonsági frissítéseket, ha a buildszám általában frissül, nem az operációs rendszer verzióját. Ez a funkció használatával adja meg a maximális megengedett buildszám az eszközön. A megfelelőségi ellenőrzés iOS 8.0 és újabb rendszert futtató eszközöket támogatja.
 
 ## <a name="system-security"></a>Rendszerbiztonság
 
@@ -99,22 +100,22 @@ Az e-mail-profilról a [Vállalati levelezéshez való hozzáférés konfigurál
 > [!NOTE]
 > Miután megfelelőségi vagy konfigurációs szabályzatot alkalmazott egy iOS-eszközre, a felhasználóktól 15 percenként egy PIN-kódot kér a rendszer. A kérések mindaddig megjelennek, amíg a felhasználó meg nem ad egy PIN-kódot.
 
-- **Jelszó megkövetelése a mobileszköz-zárolás feloldásához**: A felhasználók **kötelesek** jelszót megadni az eszköz eléréséhez. A jelszót használó iOS-eszközöket titkosítja a rendszer.
-- **Egyszerű jelszavak**: Ha nem szeretné engedélyezni, hogy a felhasználók olyan egyszerű jelszavakat használhassanak, mint az **1234** vagy az **1111**, válassza a **Tiltás** lehetőséget. A **Nincs konfigurálva** beállítással a felhasználók olyan jelszavakat is létrehozhatnak, mint az **1234** vagy az **1111**.
-- **Jelszó minimális hossza**: Meghatározhatja a jelszóban szereplő számjegyek vagy karakterek minimális számát.
-- **Jelszó megkövetelt típusa**: Megadható, hogy a jelszó csak **számjegy** karaktereket vagy számjegy és más (**alfanumerikus**) karaktereket vegyesen tartalmazzon.
-- **Nem alfanumerikus karakterek száma a jelszóban**: Megadhatja, hogy hány speciális karakternek (például &, #, %, ! stb.) kell szerepelnie a jelszóban.
+- **A mobileszközök zárolásának feloldásához jelszó szükséges**: **Szükséges** felhasználók csak jelszó beírása után az eszköz eléréséhez. A jelszót használó iOS-eszközöket titkosítja a rendszer.
+- **Egyszerű jelszavak**: Állítsa be **blokk** így a felhasználók nem egyszerű jelszavakat használhassanak, mint például **1234** vagy **1111**. A **Nincs konfigurálva** beállítással a felhasználók olyan jelszavakat is létrehozhatnak, mint az **1234** vagy az **1111**.
+- **Jelszó minimális hossza**: Adja meg a jelszóban szereplő számjegyek vagy karakterek minimális számát.
+- **Kötelező jelszótípus**: Válassza ki, ha a jelszó csak szükséges **numerikus** karakter, vagy ha számokat és más karaktereket vegyesen kell lennie (**alfanumerikus**).
+- **Jelszavak nem alfanumerikus karaktereinek száma**: Adja meg a speciális karakterek minimális számát (&, #, %,! stb) kell szerepelnie a jelszóban.
 
     Ha nagyobb értékre állítja, a felhasználóknak összetettebb jelszót kell létrehozniuk.
 
-- **Jelszó kérése legfeljebb ennyi perc inaktivitás után**: Arra a tétlenségi időre vonatkozik, amelynek elteltével a felhasználónak újra meg kell adnia a jelszavát.
-- **Jelszó érvényessége (napokban)**: Válassza ki, hány nap elteltével járjon le a jelszó, ami után újat kell létrehoznia.
-- **Újból nem használható jelszavak száma**: Megadhatja, hogy hány korábbi jelszó ne legyen újra felhasználható.
+- **Ennyi perc inaktivitás után kell jelszót**: Adja meg az üresjárati idő után a felhasználónak újra meg kell adnia a jelszavát.
+- **Jelszó érvényessége (napokban)**: Válassza ki a hány nap elteltével a jelszó lejár, és létre kell hoznia egy újat.
+- **Hány korábbi jelszót újból**: Adja meg a korábban használt jelszavak számát, amelyeket nem használható.
 
 ### <a name="restricted-applications"></a>Korlátozott alkalmazások 
 Alkalmazásokat úgy korlátozhat, hogy kötegazonosítójukat hozzáadja a szabályzathoz. Így ha az alkalmazás telepítve van az eszközön, az eszköz nem megfelelőként lesz megjelölve. 
-- **Alkalmazásnév**: Adjon meg egy felhasználóbarát nevet, mely alapján a kötegazonosító könnyebben azonosítható. 
-- **Alkalmazás kötegazonosítója**: Adja meg az alkalmazás szolgáltatója által hozzárendelt egyedi kötegazonosítót. A kötegazonosítót az [iOS-alkalmazás kötegazonosítójának megállapítása](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app) című témakörben leírtak alapján találhatja meg.  
+- **Alkalmazásnév**: Adjon meg egy felhasználóbarát nevet segítségével azonosíthatja a kötegazonosítót. 
+- **Alkalmazásköteg-azonosító**: Adja meg a az alkalmazás szolgáltatója által hozzárendelt egyedi csomagazonosítót. A kötegazonosítót az [iOS-alkalmazás kötegazonosítójának megállapítása](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app) című témakörben leírtak alapján találhatja meg.  
 
 ## <a name="assign-user-groups"></a>Felhasználói csoportok hozzárendelése
 

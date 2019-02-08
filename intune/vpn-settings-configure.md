@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cd605542a0711e27f87d68af51662fd318f3250e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b2d0bde56c6622648d47fe47458bdac62d7843ca
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184879"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838461"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>VPN-profilok létrehozása az Intune-ban
 
@@ -41,7 +42,7 @@ Egyéni Intune-konfigurációs szabályzatokkal VPN-profilok hozhatók létre a 
 
 A következő kapcsolattípusokkal hozhat létre VPN-profilt:
 
-|Kapcsolat típusa|Android<br>Androidos munkahelyi profilok|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
+|Kapcsolat típusa|Android<br>Androidos munkahelyi profilok|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
 |Automatikus|Nem|Nem|Nem|Nem|Nem|Igen|
 |Check Point Capsule VPN|Igen|Igen|Igen|Igen|Igen|Igen|
@@ -65,7 +66,7 @@ Az [Egyéni beállításokkal rendelkező profil létrehozása](custom-settings-
 
 ## <a name="create-a-device-profile-containing-vpn-settings"></a>A VPN-beállításokat tartalmazó eszközprofil létrehozása
 
-1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
 3. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
 4. Adja meg a VPN-profil nevét és leírását a **Név** és a **Leírás** mezőben.

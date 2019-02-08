@@ -15,12 +15,13 @@ ms.reviewer: ayesham
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 619976887a7c523933a9e74233779d188baa2cc1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: da29f4fcdbd694b2817bf4eca953c37d2d3c6b0e
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183672"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848185"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Helyek (hálózati kerítés) használata az Intune-ban
 
@@ -52,14 +53,14 @@ Helyalapú megfelelőségi szabályzat létrehozásához tegye a következőket:
 
 2. Adja meg a következő tulajdonságokat:  
 
-   - Szükséges. Adja meg a hely **Név** mezejének értékét, például azt, hogy **Gyártási szint** vagy **44-es épület – biztonságos**.
-   - Nem kötelező. Adjon meg egy **IPv4-tartományt** CIDR (Classless Interdomain Routing) jelöléssel, például: `aaa.bbb.ccc.ddd/n`.
-   - Nem kötelező. Adja meg az **IPv4-átjáró** címét, például: `aaa.bbb.ccc.ddd`.
-   - Nem kötelező. Adja meg az **IPv4 DHCP-kiszolgáló** címét, például: `aaa.bbb.ccc.ddd`.
-   - Nem kötelező. Adja meg az **IPv4 DNS-kiszolgálók** címeinek listáját. Ezt a beállítás **részhalmaz-egyeztetést** használ. Ha az eszközön lévő IPv4-alapú DNS-kiszolgálók a megadott értékek részhalmazában találhatók, akkor az eszköz a kerítésen BELÜLINEK minősül. Mindenképp egy címet adjon meg soronként, például:  
+   - Kötelező. Adja meg a hely **Név** mezejének értékét, például azt, hogy **Gyártási szint** vagy **44-es épület – biztonságos**.
+   - Választható. Adjon meg egy **IPv4-tartományt** CIDR (Classless Interdomain Routing) jelöléssel, például: `aaa.bbb.ccc.ddd/n`.
+   - Választható. Adja meg az **IPv4-átjáró** címét, például: `aaa.bbb.ccc.ddd`.
+   - Választható. Adja meg az **IPv4 DHCP-kiszolgáló** címét, például: `aaa.bbb.ccc.ddd`.
+   - Választható. Adja meg az **IPv4 DNS-kiszolgálók** címeinek listáját. Ezt a beállítás **részhalmaz-egyeztetést** használ. Ha az eszközön lévő IPv4-alapú DNS-kiszolgálók a megadott értékek részhalmazában találhatók, akkor az eszköz a kerítésen BELÜLINEK minősül. Mindenképp egy címet adjon meg soronként, például:  
      `aaa.bbb.ccc.ddd`  
      `aaa.bbb.ccc.ddd`
-   - Nem kötelező. Adja meg a **DNS-utótagok** listáját. Ezt a beállítás **részhalmaz-egyeztetést** használ. Ha az eszközön lévő DNS-utótagok a megadott értékek részhalmazában találhatók, akkor az eszköz a kerítésen BELÜLINEK minősül. Soronként egy tartománynevet adjon meg, például:  
+   - Választható. Adja meg a **DNS-utótagok** listáját. Ezt a beállítás **részhalmaz-egyeztetést** használ. Ha az eszközön lévő DNS-utótagok a megadott értékek részhalmazában találhatók, akkor az eszköz a kerítésen BELÜLINEK minősül. Soronként egy tartománynevet adjon meg, például:  
      `contoso.com`  
      `contoso.org`
 

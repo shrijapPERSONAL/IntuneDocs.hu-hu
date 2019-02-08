@@ -16,12 +16,13 @@ ms.reviewer: tscott
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 480b453aa4f08f8d2a2460e26bfdb5f05466df6e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 89a522047d88fd3720ea6dc7066f9387027d376f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190098"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840892"
 ---
 # <a name="troubleshoot-email-profiles-in-microsoft-intune"></a>E-mail profilok hibaelhárítása a Microsoft Intune-ban
 
@@ -56,16 +57,16 @@ Az automatikusan konfigurált e-mail fiókkal rendelkező felhasználók nem tud
 
 Ha a felhasználó egy e-mail-profilt az Intune-profil provisionining előtt telepítette, az Intune e-mail profil telepítésének eredménye az eszköz platformjától függ:
 
-- **iOS**: az Intune az állomásnév és az e-mail cím alapján észleli a meglévő, duplikált e-mail profilt. A felhasználó által létrehozott, duplikált e-mail profil meggátolja az Intune-rendszergazda által létrehozott profil telepítését. Mivel az iOS-felhasználók általában létre egy e-mail-profilt a regisztráció Ez a gyakran okoz problémát. A vállalati portál frissül a felhasználót, hogy nem megfelelő, mert az manuálisan beállított e-mail-profilt, és kéri a felhasználót, távolítsa el a profilt. A felhasználónak ekkor törölnie kell az e-mail-profilt, hogy az Intune-profilt telepíthesse. A probléma elkerülése érdekében kérje meg a felhasználók regisztráljanak, és telepítse a profilt az Intune lehetővé teszi. Ezután telepítse a felhasználó által létrehozott e-mail-profilt.
+- **iOS**: Intune az állomásnév és az e-mail-cím alapján egy meglévő, duplikált e-mail profilt észlel. A felhasználó által létrehozott, duplikált e-mail profil meggátolja az Intune-rendszergazda által létrehozott profil telepítését. Mivel az iOS-felhasználók általában létre egy e-mail-profilt a regisztráció Ez a gyakran okoz problémát. A vállalati portál frissül a felhasználót, hogy nem megfelelő, mert az manuálisan beállított e-mail-profilt, és kéri a felhasználót, távolítsa el a profilt. A felhasználónak ekkor törölnie kell az e-mail-profilt, hogy az Intune-profilt telepíthesse. A probléma elkerülése érdekében kérje meg a felhasználók regisztráljanak, és telepítse a profilt az Intune lehetővé teszi. Ezután telepítse a felhasználó által létrehozott e-mail-profilt.
 
-- **Windows**: az Intune az állomásnév és az e-mail cím alapján észleli a meglévő, duplikált e-mail profilt. Az Intune felülírja a felhasználó által létrehozott meglévő e-mail profilt.
+- **Windows**: Intune az állomásnév és az e-mail-cím alapján egy meglévő, duplikált e-mail profilt észlel. Az Intune felülírja a felhasználó által létrehozott meglévő e-mail profilt.
 
 - **Samsung KNOX Standard**: Intune-ban azonosítja a duplikált e-mail fiókot az e-mail cím alapján, és felülírja azt az Intune-profillal. Ha a felhasználó a fiókot konfigurál, hogy ismételten felülírja az Intune-profillal. Emiatt előfordulhat, hogy egyértelműek a felhasználónak, amelynek a fiók konfigurációját felülíródik.
 
 Samsung KNOX nem használja az állomásnevet a profil azonosításához. Azt javasoljuk, hogy nem hoz létre több e-mail-profilok központi telepítése ugyanazt az e-mail címet a különböző gazdagépeken, mivel ezek felülírják egymást.
 
 ## <a name="error--0x87d1fde8-for-knox-standard-device"></a>KNOX Standard-eszköz 0x87D1FDE8-as hibája
-**A probléma**: létrehozása és telepítése az Exchange Active Sync e-mail-profilt a Samsung KNOX Standard használatával különféle Androidos eszközökhöz, a hiba után **0x87D1FDE8** vagy **sikertelen szervizelés** van jelentés készül az eszköz Tulajdonságok > szabályzat lapján.
+**A probléma**: Miután létrehozta és üzembe helyezése egy Exchange Active Sync e-mail-profilt a Samsung KNOX Standard különféle Androidos eszközökhöz, a hiba **0x87D1FDE8** vagy **sikertelen szervizelés** az eszköz a jelentett Tulajdonságok > szabályzat lapján.
 
 Ellenőrizze a Samsung KNOX EAS-profil és a forrásszabályzat konfigurációját. A Samsung Note eszközök szinkronizálási lehetősége a továbbiakban nem támogatott, és ez a lehetőség nem választható a profilban. Győződjön meg arról, hogy eszközök nincs elég ideje feldolgozni a házirendet, akár 24 óra.
 

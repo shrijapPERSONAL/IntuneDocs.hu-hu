@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 603a501ff8b8b3ebc6b142a823b1c5bea4e48b98
-ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: acbfafcc26aa924a5a9d0a7712bb56119099af43
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46505750"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848219"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>A vállalat által biztosított macOS-eszköz felügyeleti regisztrálása
 
@@ -48,7 +49,7 @@ Az alábbi lépésekkel regisztrálhatja macOS-eszközét a felügyeleti szolgá
 4. Válassza ki a Wi-Fi-hálózatot. A beállítás folytatásához internetkapcsolat szükséges. Ha nem látja a saját hálózatát, vagy vezetékes hálózattal szeretne kapcsolódni, kattintson az **Egyéb hálózati beállítások** lehetőségre. Ha végzett, kattintson a **Folytatás** gombra.  
 
    ![Képernyőkép egy macOS-eszköz Beállítási asszisztensének Wi-Fi-hálózatot kiválasztó képernyőjéről, a választható hálózatok listájával. Az Egyéb hálózati beállítások, illetve a Vissza és a Folytatás gomb is látható.](./media/macos-dep-wifi-1808.png)  
-5. Miután csatlakozott a Wi-Fi-hálózathoz, megjelenik a **Távoli felügyelet** képernyő. A távoli felügyelet lehetővé teszi, hogy a cég rendszergazdája távolról konfigurálja az eszközön a vállalat által előírt fiókokat, beállításokat, alkalmazásokat, hálózatokat. Olvassa el figyelmesen a távfelügyelet ismertetését, ebből jobban megértheti, hogyan történik eszközének felügyelete. Ezután kattintson a **Folytatás** gombra.  
+5. Miután csatlakozott a Wi-Fi-hálózathoz, megjelenik a **Távoli felügyelet** képernyő. A távoli felügyelet lehetővé teszi, hogy a cég rendszergazdája távolról konfigurálja az eszközön a vállalat által előírt fiókokat, beállításokat, alkalmazásokat, hálózatokat. Olvassa el figyelmesen a távfelügyelet ismertetését, ebből jobban megértheti, hogyan történik eszközének felügyelete. Ezután kattintson a **Continue** (Folytatás) gombra.  
 
    ![Képernyőkép egy macOS-eszköz Beállítási asszisztensének távoli felügyeleti képernyőjéről. Látható a távoli felügyeletet ismertető szöveg, valamint egy hivatkozás, amely a további információkat tartalmazó dokumentációra mutat. A Vissza és a Folytatás gomb is látható.](./media/macos-dep-remote-management-1-1808.png)  
 6. Ha az eszköz kéri, jelentkezzen be a munkahelyi vagy iskolai fiókjával. A hitelesítést követően az eszköz telepít egy felügyeleti profilt. Ez a profil konfigurálja és engedélyezi a hozzáférést a céges erőforrásokhoz.  

@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e3bb60d3d6bd7321ea3e378c747e87481b659888
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c4660706a5c9768949d09dfe2b35ead8b8721901
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181547"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848989"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Beépített alkalmazások hozzáadása a Microsoft Intune-hoz
 
@@ -35,11 +36,11 @@ Az Intune-konzol korábbi verzióiban az Intune több alapértelmezett felügyel
 ## <a name="add-a-built-in-app"></a>Beépített alkalmazás hozzáadása
 
 Beépített alkalmazást a következő módon adhat hozzá az elérhető alkalmazásokhoz a Microsoft Intune-ban:
-1. Jelentkezzen be az Azure Portalra.
+1. Jelentkezzen be az Azure portálra.
 2. A Microsoft Intune panel megjelenítéséhez válassza a **További szolgáltatások** > **Figyelés és felügyelet** > **Intune** lehetőséget.
 3. Az **Intune** ablaktáblán válassza az **Ügyfélalkalmazások** lehetőséget.
 4. Az **Ügyfélalkalmazások** panelen a **Kezelés** szakaszban válassza az **Alkalmazások** lehetőséget.
-5. Válassza a **Hozzáadás** elemet.
+5. Válassza a **Hozzáadás** lehetőséget.
 6. Az **Alkalmazás hozzáadása** panelen az **Alkalmazástípus**-listából válassza a **Beépített alkalmazás** lehetőséget.
 7. Válassza az **Alkalmazás kiválasztása** lehetőséget.
 8. A **Beépített alkalmazás** panelen jelölje ki a belefoglalni kívánt alkalmazásokat.
@@ -54,18 +55,18 @@ Módosíthatja a beépített alkalmazással kapcsolatos információkat. Ezek r�
 2. A **Kezelés** alatt válassza a **Tulajdonságok** lehetőséget.
 3. A beépített alkalmazás adatainak módosításához válassza a **Konfigurálás** lehetőséget.
 4. Az **Alkalmazásadatok** panelen adja meg az alábbi információkat:
-    - **Név**: Itt adhatja meg a beépített alkalmazásnak a céges portálon megjelenő nevét. Ügyeljen arra, hogy csak egyedi neveket használjon. Ha ugyanazt az alkalmazásnevet kétszer adja meg, csak az egyik alkalmazás fog megjelenni a felhasználók számára a céges portálon.
-    - **Leírás**: Itt adhatja meg az alkalmazás leírását. 
-    - **Kiadó**: Adja meg az alkalmazás kiadójának nevét.
-    - **Kategória**: Szükség esetén választhat egyet vagy többet a beépített alkalmazáskategóriák közül. A beállítás megadásával megkönnyítheti a felhasználók számára az alkalmazás megkeresését a céges portálon való böngészés során.
-    - **Megjelenítés kiemelt alkalmazásként a Céges portálon**: Ezzel a beállítással hangsúlyosan jelenítheti meg az alkalmazást a Céges portál főoldalán alkalmazásokat kereső felhasználók számára.
-    - **Információs URL-cím:** Igény szerint megadhatja az alkalmazással kapcsolatos információkat tartalmazó webhely URL-címét. Ez az URL-cím jelenik meg a felhasználók számára a céges portálon.
-    - **Adatvédelmi nyilatkozat URL-címe:** Igény esetén itt adhatja meg az alkalmazás adatvédelmi nyilatkozatát tartalmazó webhely URL-címét. Ez az URL-cím jelenik meg a felhasználók számára a céges portálon.
-    - **Fejlesztő**: Igény esetén megadhatja az alkalmazás fejlesztőjének nevét.
-    - **Tulajdonos**: Igény esetén megadhatja az alkalmazás tulajdonosának nevét (például *HR-osztály*).
-    - **Megjegyzések**: Ide írhatja be az alkalmazáshoz társítani kívánt megjegyzéseket.
-    - **Ikon feltöltése**: Feltölthet egy ikont, mely megjelenik az alkalmazással a céges portálon böngésző felhasználók számára.
-4. Válassza az **OK** gombot.
+    - **Név**: Adja meg a beépített alkalmazás nevét, a vállalati portálon megjelenített formában. Ügyeljen arra, hogy csak egyedi neveket használjon. Ha ugyanazt az alkalmazásnevet kétszer adja meg, csak az egyik alkalmazás fog megjelenni a felhasználók számára a céges portálon.
+    - **Description** (Leírás): Adja meg az alkalmazás leírását. 
+    - **Közzétevő**: Itt adhatja meg az alkalmazás kiadójának nevét.
+    - **Kategória**: Kiválaszthat egyet vagy többet a beépített Alkalmazáskategóriák közül. A beállítás megadásával megkönnyítheti a felhasználók számára az alkalmazás megkeresését a céges portálon való böngészés során.
+    - **Megjelenítés kiemelt alkalmazásként a céges portálon**: Az alkalmazás jól észrevehető módon való megjelenítése a vállalati portál fő lapján, amikor a felhasználók tallózással alkalmazásokat keresnek.
+    - **Információs URL-cím**: Nem kötelező: megadhatja az alkalmazással kapcsolatos információkat tartalmazó webhely URL-címét. Ez az URL-cím jelenik meg a felhasználók számára a céges portálon.
+    - **Adatvédelmi URL-címe**: Nem kötelező: megadhatja az alkalmazás adatvédelmi nyilatkozatát tartalmazó webhely URL-címét. Ez az URL-cím jelenik meg a felhasználók számára a céges portálon.
+    - **Fejlesztői**: Megadhatja az alkalmazás fejlesztőjének nevét.
+    - **Tulajdonos**: Szükség esetén adja meg az alkalmazás tulajdonosának nevét (például *HR részleg*).
+    - **Megjegyzések**: Adja meg az alkalmazáshoz társítani kívánt megjegyzéseket.
+    - **Ikon feltöltése**: Töltse fel egy ikont, mely megjelenik az alkalmazással a céges portálon böngésző felhasználók számára.
+4. Kattintson az **OK** gombra.
 5. A **Tulajdonságok** panelen válassza a **Mentés** lehetőséget.
 
 ## <a name="next-steps"></a>További lépések

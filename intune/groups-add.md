@@ -16,12 +16,13 @@ ms.reviewer: amyros
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7a6fffaa0ae35675538d04b91980799d7d8aa80d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1dd61edf02e8d5344494129715325250fbfdd7bc
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181292"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834415"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>Csoportok hozzáadása a felhasználók és eszközök rendszerezéséhez
 Az Intune Azure Active Directory- (AD-) csoportokat használ az eszközök és felhasználók kezelésére. Intune-rendszergazdaként csoportokat állíthat be a vállalat igényeinek megfelelően. Létrehozhat csoportokat a felhasználók és eszközök földrajzi hely, részleg vagy hardverjellemzők szerinti rendezéséhez. Használjon csoportokat a feladatok nagy számban való végrehajtásához. Beállíthat például szabályzatokat számos felhasználóhoz, vagy üzembe helyezhet alkalmazásokat eszközök egy csoportján.
@@ -33,12 +34,12 @@ A következő típusú csoportokat veheti fel:
 ## <a name="add-a-new-group"></a>Új csoport felvétele
 
 Új csoport létrehozásához használja a következő lépéseket.
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza a **Csoportok** lehetőséget, majd válassza az **Összes csoport** panelen az **Új csoport** lehetőséget.
    ![Az Azure Portal képernyőképe a kijelölt Új csoport lehetőséggel](./media/groups-add-new.png)
 4. A **csoporttípust**, a következő lehetőségek közül választhat:
-    - **Biztonsági**: biztonsági csoportok egy jó erőforrást kell használnia a felhasználói csoportok feltöltésekor. Mivel a biztonsági csoportok határozzák meg, hogy mely erőforrásokhoz kinek van hozzáférése, azok egyszerűen leképezhetők Intune felhasználói csoportokra. Azok a biztonsági csoportok, amelyeket az Active Directoryból szinkronizált az Azure Active Directoryba, illetve amelyeket közvetlenül az Azure Active Directoryban hoz létre az Office 365 Felügyeleti központban vagy az Azure felügyeleti portálján, mind elérhetők a felhasználói csoportok létrehozásához az Intune-ban.
+    - **Biztonsági**: A biztonsági csoportok jól használhatók a felhasználói csoportok feltöltésekor. Mivel a biztonsági csoportok határozzák meg, hogy mely erőforrásokhoz kinek van hozzáférése, azok egyszerűen leképezhetők Intune felhasználói csoportokra. Azok a biztonsági csoportok, amelyeket az Active Directoryból szinkronizált az Azure Active Directoryba, illetve amelyeket közvetlenül az Azure Active Directoryban hoz létre az Office 365 Felügyeleti központban vagy az Azure felügyeleti portálján, mind elérhetők a felhasználói csoportok létrehozásához az Intune-ban.
     - **Office 365**
 
 5. Adjon meg egy **neve** és **leírás** az új csoport. Ezek a tulajdonságok csak a felügyeleti portálon jelennek meg, és a felhasználók nem láthatják.

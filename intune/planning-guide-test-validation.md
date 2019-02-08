@@ -15,12 +15,13 @@ ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: ba214e059e9a5ddb17a8b1344d4d30ab1d7b40fa
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b2a733eb92dba91c5e11d6ec463eb538df3845fb
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112459"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834313"
 ---
 # <a name="intune-testing-and-validation"></a>Az Intune tesztelése és ellenőrzése
 
@@ -32,17 +33,17 @@ A tesztelési folyamatba ajánlatos bevonni az informatikai és a támogatási m
 
 Ajánlott dokumentálni a következőket:
 
--   **Tesztkritériumok:** a méréshez használt referenciapontokat adja meg.
+-   **Tesztkritériumok:** Azonosítsa a referenciaalapok elleni mért.
 
--   **Szerkezeti összetevők:** legalább egy tesztkritériumban szerepelniük kell.
+-   **Szerkezeti összetevők:** Léteznie kell legalább egy tesztkritériumban.
 
 Ha egy adott szerkezeti összetevő nem szerepel legalább egy olyan tesztkritériumban, amely követelményhez vagy forgatókönyvhöz társul, érdemes megfontolni, valóban szükség van-e rá. Az alábbiak ugyancsak szükségesek:
 
--   **Fiókok:** ahhoz, hogy az összes használatieset-forgatókönyvet tesztelni lehessen, a tesztfiókoknak EMS- és Office 365-licenccel kell rendelkezniük.
+-   **Fiókok:** Az EMS és az összes használatieset-forgatókönyvek teszteléséhez Office 365-licencek tesztelni.
 
--   **Eszközök:** törölhető vagy a gyári beállításokra visszaállítható teszteszközök.
+-   **Eszközök:** Tesztelési célú eszközöket gyári beállítások visszaállítása vagy tartalmának végleges törléséig.
 
--   **Integrálási összetevők:** szükség szerint telepíteni és konfigurálni kell az integrálási összetevőket (a tanúsítvány-összekötőt, az Intune szolgáltatások közötti összekötőt az üzemeltetett Exchange-hez, valamint az Intune helyszíni Exchange-összekötőt).
+-   **Integrációs összetevők:** Integrálási összetevőket (tanúsítvány-összekötő az Intune szolgáltatások közötti összekötő üzemeltetett Exchange-hez és az Intune helyszíni Exchange-összekötő) kell telepíteni, és szükség esetén konfigurálva.
 
 Az előre nem látható problémák elhárításához szerkezetátalakításokra lehet szükség. Minden szerkezeti változást teljes körűen dokumentálni kell a változás okának feltüntetésével. Az alábbi példa azt mutatja meg, mi indokolhat ilyen változást:
 
@@ -62,7 +63,7 @@ A funkcionális ellenőrzési tesztelés során minden egyes összetevő és kon
 
 ## <a name="use-case-validation-testing"></a>Használatieset-ellenőrzési tesztelés
 
-A használatieset-ellenőrzési tesztelés a használati forgatókönyvek teljességének és működőképességének tesztelésére szolgál. A használatieset-forgatókönyveknek két típusa van: rendszergazdai és végfelhasználói.
+A használatieset-ellenőrzési tesztelés a használati forgatókönyvek teljességének és működőképességének tesztelésére szolgál. Használati esetek két típusa van: Rendszergazdai és végfelhasználói.
 
 ### <a name="it-admin"></a>Rendszergazdai
 

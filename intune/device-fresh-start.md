@@ -14,12 +14,13 @@ ms.assetid: 5aa5cfa3-c483-4099-b40f-578ff8dca425
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1eb1e671cc16196974cb15cdc785ba7d99fa8f46
-ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 781e82e64cda747f602b305fda74fd25e0362d7d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55303412"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846506"
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>Intune-t futtató Windows 10 rendszerű eszközök alaphelyzetbe állítása az Újrakezdéssel
 
@@ -39,5 +40,5 @@ Az **Újratelepítés** eszközművelet eltávolít minden alkalmazást, amely t
  > Ha nem tartja meg a felhasználói adatokat, az eszköz a gyári állapotára fog visszaállni. BYOD-eszközök megszűnik az Azure AD és a mobileszköz-kezelés.
  > Az Azure AD-csatlakoztatott eszközök lesz regisztrálva mobileszköz-felügyelet alá újra engedélyezésekor egy Azure Active Directory felhasználó jelentkezik be az eszközre.
  
-5. Kattintson az **OK**gombra.   
+5. Kattintson az **OK** gombra.   
 6. A művelet állapotának megtekintéséhez lépjen vissza az **Eszközök** szintjére, majd kattintson az **Eszközműveletek** elemre.  

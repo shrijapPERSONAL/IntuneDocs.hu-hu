@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ea127fb72a2e24343185d06e26d883e1183e7c2b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ca17fc7b8c19d9668163814ca1070d215eca66f2
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185559"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834075"
 ---
 # <a name="configure-vpn-settings-on-ios-devices-in-microsoft-intune"></a>VPN-beállítások konfigurálása iOS-eszközökön a Microsoft Intune-ban
 
@@ -29,18 +30,18 @@ A Microsoft Intune számos VPN-beállítást tartalmaz, amelyek telepíthetők a
 A szállítók az alábbi listából válassza ki a VPN-kapcsolat típusa:
 
 - **Check Point Capsule VPN**
-- **Cisco Legacy AnyConnect**: A [Cisco Legacy AnyConnect](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924) alkalmazás 4.0.5x és annál korábbi verzióihoz használható.
-- **Cisco AnyConnect**: A [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690) alkalmazás 4.0.7x és annál újabb verzióihoz használható.
+- **A Cisco Legacy AnyConnect**: Alkalmazható [Cisco Legacy AnyConnect](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924) alkalmazás 4.0.5x és régebbi.
+- **Cisco AnyConnect**: Alkalmazható [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690) alkalmazás 4.0.7x és újabb verziók.
 - **SonicWall Mobile Connect**
-- **F5 Access Legacy**: Az F5 Access alkalmazás 2.1 és annál korábbi verzióihoz használható.
-- **F5 Access**: Az F5 Access alkalmazás 3.0 és annál újabb verzióihoz használható.
-- **Palo Alto Networks GlobalProtect (Legacy)**: A Palo Alto Networks GlobalProtect alkalmazás 4.1 és annál korábbi verzióihoz használható.
-- **Palo Alto Networks GlobalProtect**: A Palo Alto Networks GlobalProtect alkalmazás 5.0 és annál újabb verzióihoz használható.
+- **F5 Eléréséhez örökölt**: F5 hozzáférés alkalmazás 2.1-es verzió érvényes, és a korábbi verziók.
+- **F5 Eléréséhez**: F5 hozzáférés alkalmazás 3.0-s verzió érvényes és újabb verziók.
+- **Rendszert futtató Palo Alto Networks (örökölt) GlobalProtect**: Palo Alto hálózatok GlobalProtect 4.1-es és korábbi verziója alkalmazandó.
+- **Rendszert futtató Palo Alto Networks GlobalProtect**: Alkalmazható Palo Alto hálózatok GlobalProtect 5.0-s vagy újabb verziója.
 - **Pulse Secure**
 - **Cisco (IPsec)**
 - **Citrix VPN**
 - **Citrix SSO**
-- **Zscaler**: Kötelező a Zscaler Private Access (ZPA) integrálása az Azure AD-fiókjával. A lépések részletezését a [Zscaler dokumentációja](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO) tartalmazza. 
+- **Zscaler**: Megköveteli, hogy Zscaler privát hozzáférést (ZPA) integrálása az Azure AD-fiókot. A lépések részletezését a [Zscaler dokumentációja](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO) tartalmazza. 
 - **Egyéni VPN**
 
 > [!NOTE]
@@ -51,24 +52,24 @@ A szállítók az alábbi listából válassza ki a VPN-kapcsolat típusa:
 Az alábbi listában látható beállításokat a kiválasztott VPN-kapcsolat típusa határozza meg.  
 
 - **Kapcsolat neve**: A végfelhasználók akkor látják ezt a nevet, amikor megkeresik a rendelkezésre álló VPN-kapcsolatok listáját az eszközükön.
-- **Egyéni tartománynév** (csak Zscaler): Előre kitölti a Zscaler alkalmazás bejelentkezési mezőit azzal a tartománnyal, amelyhez felhasználója tartozik. Ha a felhasználónév például `Joe@contoso.net`, akkor az alkalmazás megnyílásakor a mezőben statikusan a `contoso.net` tartomány jelenik meg. Ha nem ír be tartománynevet, akkor az Azure Active Directoryban tárolt egyszerű felhasználónév tartomány-része lesz használva.
-- **IP-cím vagy teljes tartománynév**: Annak a VPN-kiszolgálónak az IP-címe vagy teljes tartományneve (FQDN), amelyhez az eszközök csatlakoznak. Például írja be a következőt: `192.168.1.1` vagy `vpn.contoso.com`.
-- **Felhőbeli cégnév** (csak Zscaler): Írja be annak a felhőnek a nevét, amelyben a vállalata ki van építve. A nevet megtalálhatja a Zscalerbe való bejelentkezéshez használt URL-címben.  
-- **Hitelesítési mód**: Válassza ki, hogy miképpen hitelesítik magukat az eszközök a VPN-kiszolgálón. 
-  - **Tanúsítványok**: A **Hitelesítési tanúsítvány** szakaszban válasszon egy meglévő SCEP- vagy PKCS-tanúsítványprofilt a kapcsolat hitelesítéséhez. A [Tanúsítványok konfigurálása](certificates-configure.md) című témakörben találhat útmutatást a tanúsítványprofilokról.
-  - **Felhasználónév és jelszó**: A végfelhasználóknak felhasználónevet és jelszót kell megadniuk, ha szeretnének bejelentkezni a VPN-kiszolgálóra.  
+- **Egyéni tartománynév** (csak Zscaler): Feltöltse a Zscaler app bejelentkezési mezők a tartománnyal, a felhasználók tartoznak. Ha a felhasználónév például `Joe@contoso.net`, akkor az alkalmazás megnyílásakor a mezőben statikusan a `contoso.net` tartomány jelenik meg. Ha nem ír be tartománynevet, akkor az Azure Active Directoryban tárolt egyszerű felhasználónév tartomány-része lesz használva.
+- **IP-cím vagy FQDN**: Az IP-cím vagy a VPN-kiszolgálóban, amelyhez az eszközök csatlakoznak a teljesen minősített tartománynevét (FQDN). Például írja be a következőt: `192.168.1.1` vagy `vpn.contoso.com`.
+- **A szervezet felhő neve** (csak Zscaler): Adja meg a felhő nevét, ahol a szervezet van kiépítve. A nevet megtalálhatja a Zscalerbe való bejelentkezéshez használt URL-címben.  
+- **Hitelesítési módszer**: Válassza ki, hogyan hitelesítik magukat az eszközök a VPN-kiszolgáló. 
+  - **Tanúsítványok**: A **hitelesítési tanúsítvány**válassza egy meglévő SCEP- vagy PKCS-tanúsítványprofilt a kapcsolat hitelesítéséhez. A [Tanúsítványok konfigurálása](certificates-configure.md) című témakörben találhat útmutatást a tanúsítványprofilokról.
+  - **Felhasználónév és jelszó**: A végfelhasználók felhasználónévvel és jelszóval bejelentkezni a VPN-kiszolgálót adjon meg.  
 
     > [!NOTE]
     > Ha a Cisco IPsec VPN-hez felhasználónevet és jelszót használ hitelesítési módszerként, a titkos kulcsot egy egyéni Apple Configurator-profilon keresztül kell továbbítani.
 
-- **Kizárt URL-címek** (csak Zscaler): A Zscaler VPN-hez csatlakozva a felsorolt URL-címek érhetők el a Zscaler-felhőn kívülről. 
+- **Kizárt URL-címek** (csak Zscaler): A Zscaler VPN való csatlakozáskor a Zscaler felhő kívül a felsorolt URL-címek érhetők el. 
 
-- **Bújtatás megosztása**: Az **Engedélyezés** vagy a **Letiltás** beállítással szabályozhatja, hogy az eszközök választhatnak-e a forgalomtól függően a kapcsolatok közül. Egy szállodai vendég például a munkahelyi fájlok elérésére a VPN-kapcsolatot, de egyszerű böngészésre a szálloda normál hálózatát használja.
+- **Vegyes Alagútkezelés**: **Engedélyezése** vagy **letiltása** , hogy az eszközök választhatnak-e a forgalomtól függően használatához. Egy szállodai vendég például a munkahelyi fájlok elérésére a VPN-kapcsolatot, de egyszerű böngészésre a szálloda normál hálózatát használja.
 
-- **VPN-azonosító** (egyéni VPN, Zscaler és a Citrix): a VPN-alkalmazást egy azonosítót használja, és a VPN-szolgáltató által biztosított.
-  - **Kulcs-érték párok megadása vállalata egyéni VPN attribútumainak konfigurálásához**: **Kulcsok** és **Értékek** hozzáadásával vagy importálásával szabhatja testre a VPN-kapcsolatot. Ne feledje, rendszerint ezeket az értékeket is a VPN-szolgáltató biztosítja.
+- **VPN-azonosító** (egyéni VPN, Zscaler és a Citrix): A VPN-alkalmazást használja, és a VPN-szolgáltató megadott azonosítója.
+  - **Adja meg a kulcs-érték párokat a szervezet egyéni VPN attribútumainak**: Hozzáadásával vagy importálásával **kulcsok** és **értékek** szabhatja testre a VPN-kapcsolatot. Ne feledje, rendszerint ezeket az értékeket is a VPN-szolgáltató biztosítja.
 
-- **Hálózati hozzáférés-vezérlés (NAC) engedélyezése** (kizárólag Citrix SSO): Ha **elfogadom**, az eszköz azonosítója a VPN-profil tartalmazza. Ez az azonosító segítségével a VPN-hitelesítés engedélyezése vagy letiltása a hálózati hozzáférést.
+- **Hálózati hozzáférés-vezérlés (NAC) engedélyezése** (kizárólag Citrix SSO): Ha úgy dönt **elfogadom**, az eszköz azonosítója a VPN-profil tartalmazza. Ez az azonosító segítségével a VPN-hitelesítés engedélyezése vagy letiltása a hálózati hozzáférést.
 
   **A Citrix egyszeri bejelentkezés az átjáró használatakor**, ügyeljen arra, hogy:
 
@@ -85,30 +86,30 @@ Az alábbi listában látható beállításokat a kiválasztott VPN-kapcsolat t�
 
 ## <a name="automatic-vpn-settings"></a>Automatikus VPN-beállítások
 
-- **Alkalmazásonkénti VPN**: Engedélyezi az alkalmazásonkénti VPN használatát. Lehetővé teszi a VPN-kapcsolat automatikus aktiválását bizonyos alkalmazások megnyitásakor. Ezenkívül társítja az alkalmazásokat ehhez a VPN-profilhoz. További információért lásd az [alkalmazásonkénti VPN beállítására vonatkozó utasításokat iOS-hez](vpn-setting-configure-per-app.md).
-  - **Szolgáltatótípus**: Csak a Pulse Secure-hoz és az egyéni VPN-hez érhető el.
+- **Alkalmazásonkénti VPN**: Lehetővé teszi az alkalmazásonkénti VPN. Lehetővé teszi a VPN-kapcsolat automatikus aktiválását bizonyos alkalmazások megnyitásakor. Ezenkívül társítja az alkalmazásokat ehhez a VPN-profilhoz. További információért lásd az [alkalmazásonkénti VPN beállítására vonatkozó utasításokat iOS-hez](vpn-setting-configure-per-app.md).
+  - **A szolgáltató típusát**: Csak a Pulse Secure és az egyéni VPN érhető el.
   - Az iOS-es **alkalmazásonkénti VPN**-profilok Pulse Secure-ral vagy egyéni VPN-nel való használatakor választhat az alkalmazásrétegbeli (alkalmazásproxy) és csomagszintű (csomagalagút) alagútkezelés között. A **Szolgáltatótípus** értékét az alkalmazásrétegbeli alagútkezeléshez állítsa az **alkalmazásproxy** lehetőségre, a csomagrétegbeli alagútkezeléshez pedig állítsa a **csomagalagút** lehetőségre. Ha nem biztos a megfelelő értékben, tekintse meg a VPN-szolgáltató dokumentációját.
-  - **A VPN-t aktiváló Safari URL-címek**: Megadhat egy vagy több webhelycímet. Ezeket az URL-címeket az eszköz Safari böngészőjében megnyitva a VPN-kapcsolat automatikusan létrejön.
+  - **A VPN-t a Safari URL-címek**: Adjon hozzá egy vagy több webhely URL-címét. Ezeket az URL-címeket az eszköz Safari böngészőjében megnyitva a VPN-kapcsolat automatikusan létrejön.
 
-- **Igény szerinti VPN**: Ezzel a beállítással feltételes szabályokat állíthat be, melyek a VPN-kapcsolat indítását vezérlik. Létrehozhat például egy olyan feltételt, amelyben a rendszer csak akkor használja a VPN-kapcsolatot, ha az eszköz nem kapcsolódik a vállalati Wi-Fi-hálózathoz. Vagy olyan feltételt is létrehozhat, amelyben ha egy eszköz nem férhet hozzá egy megadott DNS-keresési tartományhoz, akkor a rendszer nem indítja el a VPN-kapcsolatot.
+- **Igény szerinti VPN**: Ha a VPN-kapcsolat indítása szabályozó feltételes szabályok konfigurálása. Létrehozhat például egy olyan feltételt, amelyben a rendszer csak akkor használja a VPN-kapcsolatot, ha az eszköz nem kapcsolódik a vállalati Wi-Fi-hálózathoz. Vagy olyan feltételt is létrehozhat, amelyben ha egy eszköz nem férhet hozzá egy megadott DNS-keresési tartományhoz, akkor a rendszer nem indítja el a VPN-kapcsolatot.
 
-  - **SSID-k vagy DNS-keresési tartományok**: Megadhatja, hogy ez a feltétel vezeték nélküli hálózatok **SSID-it** használja, vagy **DNS-keresési tartományokat**. Válassza a **Hozzáadás** lehetőséget egy vagy több SSID vagy keresési tartomány konfigurálásához.
-  - **Az URL-cím sztringjének vizsgálata**: Nem kötelező. Adjon meg egy URL-címet, amelyet a szabály teszteléshez használhat. Ha az ezzel a profillal rendelkező eszköz átirányítás nélkül hozzáfér ehhez az URL-címhez, akkor a VPN-kapcsolat kezdeményezése megtörtént. És az eszköz csatlakozik a célként megadott URL-címhez. A felhasználó nem látja a teszthez használt URL-célhely sztringjét. Értékként megadhat például egy naplózási webkiszolgálót, amely VPN-kapcsolat létrejötte előtt ellenőrzi az eszköz megfelelőségét. Egy másik lehetőség, hogy az URL-cím ellenőrzi a VPN webhelyhez történő kapcsolódási képességét azelőtt, hogy létrejönne a VPN-kapcsolat az eszköz és a célként megadott URL-cím között.
-  - **Tartományi művelet**: Válasszon a következő lehetőségek közül:
+  - **SSID-k vagy DNS-keresési tartományok**: Válassza ki, hogy a feltétel vezeték nélküli hálózati **SSID-k**, vagy **DNS-keresési tartományok**. Válassza a **Hozzáadás** lehetőséget egy vagy több SSID vagy keresési tartomány konfigurálásához.
+  - **URL-sztringminta**: Választható. Adjon meg egy URL-címet, amelyet a szabály teszteléshez használhat. Ha az ezzel a profillal rendelkező eszköz átirányítás nélkül hozzáfér ehhez az URL-címhez, akkor a VPN-kapcsolat kezdeményezése megtörtént. És az eszköz csatlakozik a célként megadott URL-címhez. A felhasználó nem látja a teszthez használt URL-célhely sztringjét. Értékként megadhat például egy naplózási webkiszolgálót, amely VPN-kapcsolat létrejötte előtt ellenőrzi az eszköz megfelelőségét. Egy másik lehetőség, hogy az URL-cím ellenőrzi a VPN webhelyhez történő kapcsolódási képességét azelőtt, hogy létrejönne a VPN-kapcsolat az eszköz és a célként megadott URL-cím között.
+  - **Tartományi művelet**: Válassza ki a következő lehetőségek közül:
     - Szükség esetén kapcsolódás
     - Soha ne legyen kapcsolódás
-  - **Művelet**: Válasszon a következő lehetőségek közül:
+  - **A művelet**: Válassza ki a következő lehetőségek közül:
     - Kapcsolódás
     - Kapcsolat kiértékelése
-    - Mellőzés
+    - Kihagyás
     - Kapcsolat bontása
 
 ## <a name="proxy-settings"></a>Proxybeállítások
 
 Ha proxyt használ, konfigurálja a következő beállításokat. A proxybeállítások Zscaler VPN-kapcsolatokhoz nem érhetők el.  
 
-- **Automatikus konfigurációs szkript**: A proxykiszolgálót egy konfigurációs fájl segítségével konfigurálja. Adja meg a konfigurációs fájlt tartalmazó **proxykiszolgáló URL-címét** (például: `http://proxy.contoso.com`).
-- **Cím**: Adja meg a proxykiszolgáló IP-címét vagy teljesen minősített állomásnevét.
+- **Automatikus konfigurációs szkript**: Egy fájl segítségével konfigurálhatja a proxykiszolgálót. Adja meg a konfigurációs fájlt tartalmazó **proxykiszolgáló URL-címét** (például: `http://proxy.contoso.com`).
+- **Cím**: Adja meg a proxykiszolgáló teljesen minősített állomásnév IP-címét.
 - **Portszám**: Adja meg a proxykiszolgálóhoz társított portszámot.
 
 ## <a name="next-step"></a>Következő lépés

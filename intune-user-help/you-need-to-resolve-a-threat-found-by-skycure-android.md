@@ -15,12 +15,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: ae001eb4d85a35b587eee4fa04df5f1987b247f7
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9b008130ec089b99ab64fe0dbbef7ae89b753817
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149807"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844190"
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Symantec Endpoint Protection Mobile által észlelt fenyegetés elhárítása
 
@@ -38,7 +39,7 @@ Ez a cikk az SEP Mobile fenyegetési riasztásainak felismerését és a fenyege
 
 1. Ha megkísérel hozzáférni a vállalati e-mailhez vagy webhelyekhez, az alábbi képernyőképen láthatóhoz hasonló üzenetet kap. Koppintson az **eszközfelügyeleti portál** hivatkozásra a [Céges portál webhely](https://portal.manage.microsoft.com/devices) megnyitásához.
 
-    ![Példa-képernyőkép egy Lookout for Work-hibaüzenetről, a Céges portál webhelyre mutató hivatkozással és a kék OK gombbal.](./media/mtd-go-to-device-management-portal-android.png)  
+    ![Példa képernyőkép egy Lookout for Work-hibaüzenetről a Céges portál webhelyre mutató hivatkozással és a kék OK gombbal.](./media/mtd-go-to-device-management-portal-android.png)  
 
 2. Jelölje ki az eszközét.  
 3. Olvassa el az eszköz alatt megjelenő figyelmeztetést. Ez felszólítja, hogy nyissa meg az SEP Mobile-t a vírus vagy biztonsági fenyegetés elhárításához.     

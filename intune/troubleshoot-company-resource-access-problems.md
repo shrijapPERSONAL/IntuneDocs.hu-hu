@@ -15,12 +15,13 @@ ms.reviewer: tscott
 ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: f4ead71e626316b515646d474cc006be7cf2f774
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e600c2db57352eb2348ded9fe55295837223797b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190370"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843085"
 ---
 # <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Munkahelyi erőforrás-hozzáférési problémák megoldása a Microsoft Intune-nal
 
@@ -34,7 +35,7 @@ Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kér
 |---------------|-----------------|--------------|
 |10 (APP_CI_ENFORCEMENT_IN_PROGRESS)|Telepítés folyamatban||
 |20 (APP_CI_ENFORCEMENT_IN_PROGRESS_WAITING_CONTENT)|Tartalomra vár||
-|30 (APP_CI_ENFORCEMENT_ERROR_RETRIEVING_CONTENT)|Tartalom lekérése|Valószínű ok: A 30-as feladatállapot azt jelzi, hogy egy alkalmazás felhasználói letöltése meghiúsult.<br /><br />Ennek valószínű okai a következők lehetnek:<br /><br />Az eszköz internetkapcsolata megszakadt a letöltési folyamat során.<br /><br />Lehet, hogy a regisztráció során az eszköz számára kiadott tanúsítvány lejárt.<br /><br />Kezelés:<br /><br />Indítsa el a Vállalati alkalmazások alkalmazást a Vezérlőpultról az eszközön annak ellenőrzéséhez, hogy az eszköz tanúsítványa nem járt-e le. Ha lejárt, akkor újra regisztrálnia kell az eszközt.<br /><br />Ellenőrizze, hogy az eszköz csatlakozik-e az internethez, és próbálja meg ismét igényelni az alkalmazást.|
+|30 (APP_CI_ENFORCEMENT_ERROR_RETRIEVING_CONTENT)|Tartalom lekérése|Valószínű ok: 30 feladat állapota azt jelzi, hogy az alkalmazás felhasználói letöltése meghiúsult.<br /><br />Ennek valószínű okai a következők lehetnek:<br /><br />Az eszköz internetkapcsolata megszakadt a letöltési folyamat során.<br /><br />Lehet, hogy a regisztráció során az eszköz számára kiadott tanúsítvány lejárt.<br /><br />Kezelés:<br /><br />Indítsa el a Vállalati alkalmazások alkalmazást a Vezérlőpultról az eszközön annak ellenőrzéséhez, hogy az eszköz tanúsítványa nem járt-e le. Ha lejárt, akkor újra regisztrálnia kell az eszközt.<br /><br />Ellenőrizze, hogy az eszköz csatlakozik-e az internethez, és próbálja meg ismét igényelni az alkalmazást.|
 |40 (APP_CI_ENFORCEMENT_IN_PROGRESS_CONTENT_DOWNLOADED)|A tartalom letöltése befejeződött||
 |50 (APP_CI_ENFORCEMENT_IN_PROGRESS_INSTALLING)|Telepítés folyamatban||
 |60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|Telepítési hiba|Az alkalmazás telepítése sikertelen a letöltés után.<br /><br />Az alkalmazás aláírásához használt kódaláírási tanúsítvány nincs jelen az eszközön.<br /><br />Nincs az eszközre telepítve egy keretrendszerbeli függőség, amely szükséges az alkalmazás működéséhez.<br /><br />Ellenőrizze, hogy az alkalmazás aláírásához használt kódaláírási tanúsítvány megtalálható-e az eszközön, és kérjen megerősítést a rendszergazdától, hogy ez a tanúsítvány érvényes az összes regisztrált vállalati Windows RT-eszközre.<br /><br />Ha a telepítési hibát hiányzó keretrendszerbeli függőség okozta, a rendszergazdának újra közzé kell tennie az alkalmazást, a keretrendszert az alkalmazáscsomagba foglalva.<br /><br />A letöltött alkalmazáscsomag nem érvényes csomag. Lehet, hogy sérült, vagy nem kompatibilis az eszközön lévő operációs rendszer verziójával.|
@@ -45,7 +46,7 @@ Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kér
 |110 (APP_CI_ENFORCEMENT_ERROR)|A tartalomkivonat nem egyezik||
 |120 (APP_CI_ENFORCEMENT_ERROR)|Az SLK / közvetlen telepítés nem engedélyezett||
 |130 (APP_CI_ENFORCEMENT_ERROR)|Az MSADP licenc telepítése meghiúsult||
-|Nincs állapot (APP_CI_ENFORCEMENT_UNKNOWN)|nem áll rendelkezésre|Az állapot jelenleg ismeretlen.|
+|Nincs állapot (APP_CI_ENFORCEMENT_UNKNOWN)|n/a|Az állapot jelenleg ismeretlen.|
 
 ## <a name="company-resource-access-common-errors"></a>Vállalati erőforrások elérése (gyakori hibák)
 
@@ -304,72 +305,72 @@ Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kér
 |---------------|--------------------------|-----------------|
 |-2016344008|0x87D10838|(1404): A tanúsítványhoz való hozzáférés megtagadva|
 |-2016344009|0x87D10837|(1403): A tanúsítvány nem található|
-|-2016344010|0x87D10836|DCMO(1402): A művelet meghiúsult|
-|-2016344011|0x87D10835|DCMO(1401): A felhasználó nem fogadta el a műveletet, amikor a program erre rákérdezett|
+|-2016344010|0x87D10836|DCMO(1402): A művelet nem sikerült|
+|-2016344011|0x87D10835|DCMO(1401): Felhasználói úgy döntött, nem fogadta el a műveletet, amikor a rendszer kéri|
 |-2016344012|0x87D10834|DCMO(1400): Ügyfélhiba|
 |-2016344108|0x87D107D4|DCMO(1204): Az eszközképesség le van tiltva, és a felhasználó újra engedélyezheti|
 |-2016344109|0x87D107D3|DCMO(1203): Az eszközképesség le van tiltva, és a felhasználó nem engedélyezheti újra|
-|-2016344110|0x87D107D2|DCMO(1202): Az engedélyezési művelet sikeresen végbement, de az eszközképesség jelenleg le van választva|
-|-2016344111|0xF3FB4D95|DCMO(1201): Az engedélyezési művelet sikeresen végbement, és az eszközképesség jelenleg csatlakoztatva van|
+|-2016344110|0x87D107D2|DCMO(1202): Engedélyezze a művelet sikeresen végbement, de az eszközképesség jelenleg le van választva.|
+|-2016344111|0xF3FB4D95|DCMO(1201): Engedélyezze a művelet sikeresen végbement, és az eszközképesség jelenleg csatlakoztatva van|
 |-2016344112|0x87D107D0|DCMO(1200): A művelet sikeresen végbement|
-|-2016345595|0x87D10205|Syncml(517): Egy atomi parancsra adott válasz túl nagy volt ahhoz, hogy elférjen egyetlen üzenetben.|
-|-2016345596|0x87D10204|Syncml(516): A parancs egy atomi elemen belül volt, és az atomi elem végrehajtása nem sikerült. A parancs visszaállítása sikertelen.|
-|-2016345598|0x87D10202|Syncml(514): A SyncML parancs nem fejeződött be sikeresen, mert a műveletet már a parancs feldolgozása előtt megszakították.|
-|-2016345599|0x87D10201|Syncml(513): A címzett nem támogatja vagy elutasítja a SyncML szinkronizálási protokoll megadott verzióját, amelyet a kérés SyncML-üzenetében használtak.|
+|-2016345595|0x87D10205|Syncml(517): Egy atomi parancsra adott válasz túl nagy volt ahhoz elférjen egyetlen üzenetben.|
+|-2016345596|0x87D10204|Syncml(516): A parancs belül volt az atomi elem és az atomi elem nem sikerült. A parancs visszaállítása sikertelen.|
+|-2016345598|0x87D10202|Syncml(514): A SyncML-parancs nem fejeződött be sikeresen, mert a műveletet már a parancs feldolgozása előtt megszakították.|
+|-2016345599|0x87D10201|Syncml(513): A címzett nem támogatja vagy elutasítja a kérés SyncML-üzenetében használtak, a SyncML szinkronizálási protokoll megadott verzióját.|
 |-2016345600|0x87D10200|Syncml(512): Alkalmazáshiba történt a szinkronizálási munkamenetben.|
 |-2016345601|0x87D101FF|Syncml(511): Súlyos hiba történt a kiszolgálón a kérés feldolgozása közben.|
-|-2016345602|0x87D101FE|Syncml(510): Hiba történt a kérés feldolgozása során. A hiba a címzett adattár hibájára vezethető vissza.|
+|-2016345602|0x87D101FE|Syncml(510): Hiba történt a kérés feldolgozása közben. A hiba a címzett adattár hibájára vezethető vissza.|
 |-2016345603|0x87D101FD|Syncml(509): Jövőbeli használatra fenntartva.|
-|-2016345604|0x87D101FC|Syncml(508): Olyan hiba történt, amely az ügyfél és a kiszolgáló jelenlegi szinkronizálási állapotának frissítését teszi szükségessé.|
-|-2016345605|0x87D101FB|Syncml(507): A hiba miatt minden atomi elemtípuson belüli SyncML-parancs meghiúsul.|
-|-2016345606|0x87D101FA|Syncml(506): Alkalmazáshiba történt a kérés feldolgozása során.|
-|-2016345607|0x87D101F9|Syncml(505): A címzett nem támogatja vagy elutasítja a SyncML DTD megadott verzióját, amelyet a kérés SyncML-üzenetében használtak.|
-|-2016345608|=0x87D101F8|Syncml(504): A címzett, miközben átjáróként vagy proxyként működött, nem kapott időben választ az URI (pl. HTTP, FTP, LDAP) által meghatározott felsőbb rétegbeli címzettől, illetve valamely egyéb címzettől (pl. DNS), amelyet a kérés teljesítéséhez el kellett érnie.|
-|-2016345609|0x87D101F7|Syncml(503): A címzett jelenleg nem tudja kezelni a kérést, mert átmenetileg túl van terhelve vagy karbantartást végeznek rajta.|
-|-2016345610|0x87D101F6|Syncml(502): A címzett, miközben átjáróként vagy proxyként működött, érvénytelen választ kapott a felsőbb rétegbeli címzettől, amelyhez a kérés teljesítésére tett kísérlet során kapcsolódott.|
+|-2016345604|0x87D101FC|Syncml(508): Hiba történt, amelyet az ügyfél és a kiszolgáló jelenlegi szinkronizálási állapotának frissítését teszi szükségessé.|
+|-2016345605|0x87D101FB|Syncml(507): A hiba miatt sikertelen lesz minden SyncML-parancs atomi elemtípuson belüli.|
+|-2016345606|0x87D101FA|Syncml(506): Alkalmazáshiba történt a kérés feldolgozása közben.|
+|-2016345607|0x87D101F9|Syncml(505): A címzett nem támogatja vagy elutasítja a SyncML DTD megadott verzióját használja, a kérés SyncML-üzenetében használtak.|
+|-2016345608|=0x87D101F8|Syncml(504): A címzett, miközben átjáróként vagy proxyként működött, nem kapott időben választ az URI (pl. HTTP, FTP, LDAP), illetve valamely egyéb címzettől (pl. DNS), amelyhez a kérés teljesítéséhez szükséges által meghatározott felsőbb rétegbeli címzettől.|
+|-2016345609|0x87D101F7|Syncml(503): A címzett jelenleg nem tudja kezelni a kérést, mert egy ideiglenes terhelve vagy karbantartást nem.|
+|-2016345610|0x87D101F6|Syncml(502): A címzett, miközben átjáróként vagy proxyként működött, érvénytelen választ kapott a felsőbb rétegbeli címzettől, a kérelem teljesítésére tett kísérlet során.|
 |-2016345611|0x87D101F5|Syncml(501): A címzett nem támogatja a kérés teljesítéséhez szükséges parancsot.|
-|-2016345612|0x87D101F4|Syncml(500): A címzett nem várt állapotot észlelt, amely megakadályozta a kérés teljesítését|
+|-2016345612|0x87D101F4|Syncml(500): A címzett nem várt állapotot, amely megakadályozta a kérés teljesítését észlelt|
 |-2016345684|0x87D101AC|Syncml(428): Az áthelyezés nem sikerült|
-|-2016345685|0x87D101AB|Syncml(427): A szülő nem törölhető, mert gyermekeket tartalmaz.|
+|-2016345685|0x87D101AB|Syncml(427): Szülő nem törölhető, mert gyermekeket tartalmaz.|
 |-2016345686|0x87D101AA|Syncml(426): A részleges elem visszautasítva.|
 |-2016345687|0x87D101A9|Syncml(425): A kért parancs meghiúsult, mert a küldő nem rendelkezik megfelelő hozzáférés-vezérlési engedélyekkel (ACL) a címzetthez.|
-|-2016345688|0x87D101A8|Syncml(424): A darabolt objektum beérkezett, de a fogadott objektum mérete nem egyezik az első darabban deklarált mérettel.|
-|-2016345689|0x87D101A7|Syncml(423): A kért parancs meghiúsult, mert a törlésre kijelölt elemet korábban véglegesen törölték a kiszolgálóról.|
-|-2016345690|0x87D101A6|Syncml(422): A kért parancs meghiúsult a kiszolgálón, mert a LocURI CGI-parancsainak formátuma nem volt megfelelő.|
+|-2016345688|0x87D101A8|Syncml(424): A darabolt objektum beérkezett, de a fogadott objektum mérete nem egyezik meg az első darabban deklarált mérettel.|
+|-2016345689|0x87D101A7|Syncml(423): A kért parancs meghiúsult, mert a "Helyreállíthatóan törölt" elemet korábban "Véglegesen törölték" a kiszolgálón.|
+|-2016345690|0x87D101A6|Syncml(422): A kért parancs meghiúsult a kiszolgálón, mert az a LocURI CGI scripting volt megfelelő.|
 |-2016345691|0x87D101A5|Syncml(421): A kért parancs meghiúsult a kiszolgálón, mert a megadott keresési szintaxis ismeretlen volt.|
 |-2016345692|0x87D101A4|Syncml(420): A címzetten nincs több tárhely a hátralévő szinkronizálási adatok számára.|
-|-2016345693|0x87D101A3|Syncml(419): Az ügyfélkérés ütközést eredményezett, amelyből a kiszolgálói parancs került ki nyertesen.|
+|-2016345693|0x87D101A3|Syncml(419): Az ügyfélkérés ütközést eredményezett, amelyből a kiszolgáló parancsa került ki nyertesen által feloldva.|
 |-2016345694|0x87D101A2|Syncml(418): A kért Put vagy Add parancs meghiúsult, mert a cél már létezik.|
-|-2016345695|0x87D101A1|Syncml(417): A kérés meghiúsult, és a kérés kezdeményezőjének később újra kell próbálkoznia.|
-|-2016345696|0x87D101A0|Syncml(416): A kérés meghiúsult, mert a kérésben megadott bájtméret túl nagy.|
+|-2016345695|0x87D101A1|Syncml(417): A kérés meghiúsult, és a kezdeményező később kell próbálkoznia. a kérelem.|
+|-2016345696|0x87D101A0|Syncml(416): A kérés meghiúsult, mert a megadott a kérésben bájtméret túl nagy.|
 |-2016345697|0x87D1019F|Syncml(415): Nem támogatott adathordozó-típus vagy formátum.|
-|-2016345698|0x87D1019E|Syncml(414): A kért parancs meghiúsult, mert a célként megadott URI túl hosszú, és a címzett nem képes vagy nem hajlandó feldolgozni.|
-|-2016345699|0x87D1019D|Syncml(413): A címzett elutasította a kért parancs végrehajtását, mert a kért elem nagyobb, mint amit a címzett képes vagy hajlandó feldolgozni.|
+|-2016345698|0x87D1019E|Syncml(414): A kért parancs meghiúsult, mert a célként megadott URI túl hosszú, a címzett nem képes vagy hajlandó feldolgozni.|
+|-2016345699|0x87D1019D|Syncml(413): A címzett elutasította a kért parancs végrehajtására, mert a kért elem nagyobb, mint amit a címzett képes vagy hajlandó feldolgozni.|
 |-2016345700|0x87D1019C|Syncml(412): A kért parancs meghiúsult a címzettnél, mert hiányos vagy hibás formátumú volt.|
-|-2016345701|0x87D1019B|Syncml(411): A kért parancshoz meg kell adni a bájtméretet vagy a hosszra vonatkozó információt a Meta elemtípusban.|
+|-2016345701|0x87D1019B|Syncml(411): A kért parancs kell adni a bájtméretet bájt vagy a hosszra információt a Meta elemtípusban.|
 |-2016345702|0x87D1019A|Syncml(410): A kért cél már nem található a címzetten, és nincs ismert továbbító URI.|
-|-2016345703|0x87D10199|Syncml(409): A kérés meghiúsult, mert frissítési ütközés történt az adatok ügyfélen és kiszolgálón tárolt verziói között.|
+|-2016345703|0x87D10199|Syncml(409): A kérés meghiúsult, mert frissítési ütközés az ügyfél és kiszolgáló közötti verziók az adatok.|
 |-2016345704|0x87D10198|Syncml(408): Egy várt üzenet nem érkezett meg a szükséges időszakon belül.|
 |-2016345705|0x87D10197|Syncml(407): A kért parancs meghiúsult, mert a kezdeményezőnek megfelelő hitelesítő adatokat kell megadnia.|
 |-2016345706|0x87D10196|Syncml(406): A kért parancs meghiúsult, mert a kérés egyik választható szolgáltatása nem támogatott.|
 |-2016345707|0x87D10195|Syncml(405): A kért parancs nincs engedélyezve a célhelyen.|
 |-2016345708|0x87D10194|Syncml(404): A kért célhely nem található.|
-|-2016345709|0x87D10193|Syncml(403): A kért parancs meghiúsult, de a címzett képes volt értelmezni.|
+|-2016345709|0x87D10193|Syncml(403): A kért parancs meghiúsult, de a címzett a kért parancs.|
 |-2016345710|0x87D10192|Syncml(402): A kért parancs meghiúsult, mert megfelelő fizetésre van szükség.|
 |-2016345711|0x87D10191|Syncml(401): A kért parancs meghiúsult, mert a kérelmezőnek megfelelő hitelesítő adatokat kell megadnia.|
-|-2016345712|0x87D10190|Syncml(400): A kért parancsot nem lehetett végrehajtani, mert hibás szintaxist tartalmazott.|
-|-2016345807|0x87D10131|Syncml(305): A kért célhelyet a megadott proxy URI használatával kell elérni.|
+|-2016345712|0x87D10190|Syncml(400): A kért parancsot nem lehetett végrehajtani, mert hibás szintaxist.|
+|-2016345807|0x87D10131|Syncml(305): A kért célhelyhez a megadott proxy URI használatával kell elérni.|
 |-2016345808|0x87D10130|Syncml(304):A kért SyncML-parancs végrehajtása nem történt meg a célon.|
-|-2016345809|0x87D1012F|Syncml(303): A kért célhelyhez másik URI tartozik.|
-|-2016345810|0x87D1012E|Syncml(302): A kért célhelyhez ideiglenesen másik URI tartozik.|
+|-2016345809|0x87D1012F|Syncml(303): A kért célhelyhez másik URI tartozik található.|
+|-2016345810|0x87D1012E|Syncml(302): A kért célhelyhez ideiglenesen másik URI át lett helyezve.|
 |-2016345811|0x87D1012D|Syncml(301): A kért célhelyhez új URI tartozik.|
-|-2016345812|0x87D1012C|Syncml(300): A kért célhely több kért alternatíva egyike.|
-|-2016345896|0x87D100D8|Syncml(216): Egy parancs egy atomi elemen belül volt, és az atomi elem végrehajtása nem sikerült. A parancs visszaállítása sikeres.|
-|-2016345897|0x87D100D7|Syncml(215): Egy parancs végrehajtása nem történt meg, mivel a felhasználói beavatkozás során a felhasználó nem fogadta el a lehetőséget.|
+|-2016345812|0x87D1012C|Syncml(300): A kért cél a célhely több kért alternatíva.|
+|-2016345896|0x87D100D8|Syncml(216): A parancs belül volt az atomi elem és az atomi elem nem sikerült. A parancs visszaállítása sikeres.|
+|-2016345897|0x87D100D7|Syncml(215): Egy parancs végrehajtása nem történt, felhasználói beavatkozás során a felhasználó nem fogadta el a lehetőséget.|
 |-2016345898|0x87D100D6|Syncml(214): A művelet megszakadt. A SyncML-parancs sikeresen befejeződött, további parancsok azonban nem lesznek végrehajtva a munkamenetben.|
-|-2016345899|0x87D100D5|Syncml(213): A darabolt elem elfogadva és pufferelve.|
+|-2016345899|0x87D100D5|Syncml(213): Darabolt elem elfogadva és pufferelve.|
 |-2016345900|0x87D100D4|Syncml(212): Hitelesítés elfogadva. További hitelesítés nem szükséges a szinkronizációs munkamenet hátralévő részére. A válaszkód csak olyan kérésekre alkalmazható válaszként, amelyekben a hitelesítő adatok meg lettek adva.|
-|-2016345901|0x87D100D3|Syncml(211): Az elem nem lett törölve. A kért elem nem található. Valószínűleg korábban törölve lett.|
+|-2016345901|0x87D100D3|Syncml(211): Elem nem lett törölve. A kért elem nem található. Valószínűleg korábban törölve lett.|
 |-2016345902|0x87D100D2|Syncml(210): Törlés archiválás nélkül. A válasz azt jelzi, hogy a kért adat sikeresen törölve lett, azonban a törlés előtt nem lett archiválva, mivel a telepítés ezt az OPCIONÁLIS szolgáltatást nem támogatta.|
 |-2016345903|0x87D100D1|Az ütközés duplikálással feloldva. A válasz azt jelzi, hogy a kérés egy frissítési ütközést eredményezett, amelyet a rendszer az ügyfél adatainak a kiszolgáló adatbázisába történő duplikálásával oldott fel. A válasz a duplikált elem cél URI azonosítóját is tartalmazza az Állapot elemben. Továbbá kétirányú szinkronizáció esetén egy Add parancs is elérhető a duplikált adatdefinícióival.|
 |-2016345904|0x87D100D0|Az ütközés az ügyfél parancsának „győzelmével” feloldva. A válasz azt jelzi, hogy frissítési ütközés lépett fel, amelyből az ügyfélparancs került ki nyertesen.|

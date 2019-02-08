@@ -15,12 +15,13 @@ ms.assetid: e6a52506-2d29-41f7-a171-5d684a740dd4
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: e19ce1aa39d6402ccf1de93af493457b0a10d0b8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d6c3190f0bac90ef87fcc411423611251c54338e
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183729"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842065"
 ---
 # <a name="plan-communications"></a>A kommunikáció tervezése
 
@@ -30,19 +31,19 @@ A kommunikációs terv az Intune-migráció kulcseleme. A migrálás egyes fázi
 
 A következő e-mail-kommunikációs terv követését javasoljuk. A mellékelt sablonokat saját kommunikációs tervéhez igazíthatja:
 
--   **1. e-mail\#:** Az előnyök, az elvárások és az ütemezés ismertetése. Használja ki a lehetőséget az Intune által felügyelt eszközökön elérhető új szolgáltatások bemutatására.<br/><br/>
+-   **E-mailek \#1:** Az előnyök, az elvárások és az ütemezés ismertetik. Használja ki a lehetőséget az Intune által felügyelt eszközökön elérhető új szolgáltatások bemutatására.<br/><br/>
 
 
     -   [Az \#1. e-mail-sablon](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35) letöltése
 <br></br>
 
--   **2. e-mail\#:** Annak bejelentése, hogy az Intune-on keresztül hozzáférhető szolgáltatások készen állnak. Szólítsa fel a felhasználókat, hogy most regisztráljanak. Emlékeztesse a felhasználókat a migrálás előnyeire és stratégiai okaira.<br/><br/>
+-   **E-mailek \#2:** Jelentjük be, hogy szolgáltatások az Intune-on keresztül hozzáférhető készen állnak. Szólítsa fel a felhasználókat, hogy most regisztráljanak. Emlékeztesse a felhasználókat a migrálás előnyeire és stratégiai okaira.<br/><br/>
 
 
     -   [A \#2. e-mail-sablon](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5) letöltése
 <br></br>
 
--   **3. e-mail\#:** Ütemterv megadása a felhasználóknak a hozzáférésüket érintő lépések előtt. Emlékeztesse ismét a felhasználókat a migrálás előnyeire és stratégiai okaira. Az e-maileket a fázisok szerint eltoltan kell időzíteni. Például júniusban küldje el az \#1. e-mailt az 1. fázis felhasználóinak, a \#2. e-mailt a 2. fázis felhasználóinak és a \#3. e-mailt a 3. fázis felhasználóinak.<br/><br/>
+-   **E-mailek \#3:** Engedélyezheti a felhasználók egy idővonalon a hozzáférése az érintett előtt. Emlékeztesse ismét a felhasználókat a migrálás előnyeire és stratégiai okaira. Az e-maileket a fázisok szerint eltoltan kell időzíteni. Például júniusban küldje el az \#1. e-mailt az 1. fázis felhasználóinak, a \#2. e-mailt a 2. fázis felhasználóinak és a \#3. e-mailt a 3. fázis felhasználóinak.<br/><br/>
 
     -   [A \#3. e-mail-sablon](https://gallery.technet.microsoft.com/Intune-migration-guide-end-831521b5) letöltése
 

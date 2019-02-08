@@ -16,12 +16,13 @@ ms.reviewer: muhosabe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e8c3c0d511439d6b18c7f04e5a493e2851d7997f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5963cb7de2994feb41c4679e87970aec4f127de5
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179446"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848827"
 ---
 # <a name="how-to-create-a-device-compliance-policy-to-enable-google-play-protect"></a>Eszközmegfelelőségi szabályzat létrehozása a Google Play Protect engedélyezéséhez ‒ útmutató
 
@@ -31,7 +32,7 @@ Az adott beállításokat szükségessé tevő megfelelőségi szabályzatot And
 
 ## <a name="create-a-compliance-policy"></a>Megfelelőségi házirend létrehozása
 
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 2. A **Kezelés** csoportból válassza az **Eszközmegfelelőség** elemet. 
 3. Válassza a **Szabályzatok** majd a **Szabályzat létrehozása** lehetőséget.

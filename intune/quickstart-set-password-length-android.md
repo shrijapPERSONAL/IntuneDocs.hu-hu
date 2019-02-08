@@ -16,14 +16,15 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 87fb7091079086e5c455376cb5c4ae8e10f28ec1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: cccb79ae7337c3b037141cbb7759a856d651f83f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179252"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851015"
 ---
-# <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>Rövid útmutató: Jelszó-megfelelőségi szabályzat létrehozása Android rendszerű eszközökhöz
+# <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>Gyors útmutató: Az Android-eszközök jelszó megfelelőségi szabályzat létrehozása
 
 Ebben a rövid útmutatóban a Microsoft Intune-t használjuk annak beállítására, hogy a rendszer az Android-eszközöket használó munkatársaktól adott hosszúságú jelszót kérjen el, mielőtt engedélyezné az eszközökön található információkhoz való hozzáférést. 
 
@@ -55,7 +56,7 @@ Ebben a rövid útmutatóban a Intune-t használja majd annak beállítására, 
 
 Ha sikeresen létrehozta a szabályzatot, az megjelenik az eszközmegfelelőségi szabályzatok listájában. 
 
-## <a name="clean-up-resources"></a>Erőforrások eltávolítása
+## <a name="clean-up-resources"></a>Az erőforrások eltávolítása
 
 Ha többé nincs szükség a szabályzatra, törölje. Ehhez jelölje ki a megfelelőségi szabályzatot, és kattintson a **Törlés** gombra.
 
@@ -66,4 +67,4 @@ Ebben a rövid útmutatóban az Intune használatával létrehozott egy megfelel
 Kövesse az Intune rövid útmutatóinak sorozatát a következő rövid útmutatóval.
 
 > [!div class="nextstepaction"]
-> [Rövid útmutató: Értesítések küldése a nem megfelelő eszközökre](quickstart-send-notification.md)
+> [Gyors útmutató: Értesítések küldése nem megfelelő eszközök](quickstart-send-notification.md)

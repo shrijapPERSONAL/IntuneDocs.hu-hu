@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 1354c789a6756a6ddf2d9c5d6400ece91c80d57c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: cfc38af8a3ac6093fc9212a902d3ebf6a4731745
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188623"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839005"
 ---
 # <a name="troubleshoot-software-updates-in-microsoft-intune"></a>A Microsoft Intune szoftverfrissítéseinek hibaelhárítása
 
@@ -246,22 +247,22 @@ A következő táblázat a **frissítési ügynök** hibakódjait sorolja fel. H
 |**0x80af0006**|OMC_E_DOWNLOAD_CANCELLED|A letöltést megszakították.|
 
 ## <a name="windows-7-based-computers-with-lots-of-superseded-updates-stop-reporting-to-the-microsoft-intune-console"></a>A nagyszámú felülírt frissítéssel rendelkező Windows 7 rendszerű számítógépek nem küldenek jelentéseket a Microsoft Intune konzolnak
-**Probléma**: Olyan helyzet állhat elő, amelyben a Microsoft Intune-ügyfelek az alábbi jelenségek közül egyet vagy többet tapasztalnak:
+**A probléma**: Egy olyan helyzetet, ahol a Microsoft Intune-ügyfelek észlel, az alábbi jelenségek közül legalább egyet ütközhet:
 - Az ügyfelek váratlanul leállítják a jelentésküldést a Microsoft felügyeleti konzolnak.  
 - Az ügyfeleken magas fokú processzorhasználatot tapasztalható.
 - Az Intune portálon keresztül telepített alkalmazások telepítése lassan megy végbe.
-- A Microsoft Intune Center a következő hibát váltja ki: *Hiba történt a számítógép frissítése közben. Észlelt hiba kódja: 0x800705b4*.
-- Az Intune felügyeleti konzol > Csoportok > Minden eszköz menüpont alatti állapotmezőben a következő látható: *A számítógépen telepített ügynökök legalább egyike hibát jelzett. Lehetséges, hogy a számítógépről rendelkezésre álló információk pontatlanok vagy elavultak*.
+- A Microsoft Intune Center a következő hibát váltja: *Hiba történt a számítógép frissítése közben. Hiba található: Kód 0x800705b4*.
+- Az állapot mező mellett az Intune felügyeleti konzol > csoportok > minden eszköz jeleníti meg: *Ezen a számítógépen telepített ügynökök legalább hibák léptek fel. Lehetséges, hogy a számítógépről rendelkezésre álló információk pontatlanok vagy elavultak*.
 
 Ezt a problémát az okozhatja, ha a felülírt frissítéseket (vagyis azokat a frissítéseket, amelyeket más frissítések már leváltottak) a felhasználó hosszabb időtartamon át nem utasította el. Bizonyos folyamatok (például az alkalmazások telepítése) során a Windows sorban ellenőrzi az összes felülírt frissítést, hogy helyesen leképezhesse a korábbi és új frissítéseket. Amennyiben a felülírt frissítések listája túl hosszúvá válik, az ellenőrzési feladat az elvégzéséhez szükséges magas processzorterhelés és idő következtében magas fokú processzorhasználathoz vezethet. Ez a probléma főként a Windows 7 rendszerű ügyfeleket érinti, mivel ehhez a rendszerhez érhetők el nagy számban felülírt frissítések. A Windows 8 és az újabb operációs rendszerekhez nem tartozik ilyen sok felülírt frissítés, ezért ezeknél nem fordul elő olyan gyakran a probléma.
 
-**Megoldás**:  
+**Feloldási**:  
 1. Jelentkezzen be a [az Azure portal](https://portal.azure.com), és nyissa meg a **a Microsoft Intune**. 
 2. Válassza ki **szoftverfrissítések**.
 3. Utasítsa el a Windows 7 rendszerre vagy az alkalmazásokra (például a Microsoft Office-ra) vonatkozó, az érintett ügyfeleken telepített összes felülírt frissítést.
 4. Indítsa újra az érintett ügyfeleket.
 
-Ha Windows 7 rendszert használ, ezenfelül ellenőrizze, hogy telepítette-e a következő frissítést:[3050265 Windows Update Client for Windows 7: June 2015](https://support.microsoft.com/kb/3050265).
+Ha a Windows 7 rendszert használ, győződjön meg továbbá, hogy rendelkezik-e a következő frissítés telepítve:[3050265 Windows Update Client for Windows 7: 2015 június](https://support.microsoft.com/kb/3050265).
 
 ### <a name="next-steps"></a>További lépések
 Ha ezek az információk nem segítettek, akkor [támogatást kérhet a Microsoft Intune-hoz](get-support.md).

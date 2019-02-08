@@ -16,12 +16,13 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: b2ddf29157255feaa7d336913640a1cf434f921c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 501638724b6f83e2df1d308a5bbf020adf3ef3d2
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185779"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838427"
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Útmutató az Intune üzembe helyezésének megtervezéséhez és implementálásához
 
@@ -35,25 +36,25 @@ Az útmutató szakaszai végigvezetik Önt az Intune üzembe helyezésének telj
 
 -   [1. szakasz: Telepítési célok, célkitűzések és kihívások meghatározása](planning-guide-deployment-goals.md)
 
--   [2. szakasz: Tipikus használatieset-forgatókönyvek](planning-guide-scenarios.md)
+-   [2. szakasz: Használati esetek azonosítása](planning-guide-scenarios.md)
 
--   [3. szakasz: Használatieset-forgatókönyvek követelményeinek meghatározása](planning-guide-requirements.md)
+-   [3. szakasz: Használatieset-követelményeinek meghatározása](planning-guide-requirements.md)
 
 -   [4. szakasz: Bevezetési terv kidolgozása](planning-guide-rollout-plan.md)
 
--   [5. szakasz: Kommunikációs terv kidolgozása](planning-guide-communication-plan.md)
+-   [5. szakasz: Bevezetési kommunikációs terv kidolgozása](planning-guide-communication-plan.md)
 
 -   [6. szakasz: Támogatási terv kidolgozása](planning-guide-support-plan.md)
 
 -   [7. szakasz: Intune-terv létrehozása](planning-guide-design.md)
 
--   [8. szakasz: Intune-implementálás](planning-guide-onboarding.md)
+-   [8. szakasz: Az Intune implementációja](planning-guide-onboarding.md)
 
 -   [9. szakasz: Tesztelés és ellenőrzés](planning-guide-test-validation.md)
 
 Az útmutatóban szerepelnek még további technikai információk és táblasablonok, amelyek segítséget nyújtanak az Intune-környezet megtervezése és kialakítása során.
 
--   [További források: hivatkozások és táblasablonok](planning-guide-resources.md)
+-   [További források: Hivatkozások és táblasablonok](planning-guide-resources.md)
 
 ## <a name="assumptions"></a>Előfeltételek
 

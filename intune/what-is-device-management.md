@@ -15,12 +15,13 @@ ms.assetid: 0649d310-43a7-4b01-85d2-da255d03e1da
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 83ac68e1f6efa9e5b0c1ee0e031d36989b634edd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b4f69673e6cb91e18469922d7b2277bc5b6936d9
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185219"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845465"
 ---
 # <a name="what-is-device-management"></a>Mi az eszközkezelés? 
 
@@ -50,7 +51,7 @@ A **[Gyakori helyzetek](https://docs.microsoft.com/intune/common-scenarios)** ki
 - Vállalati erőforrások elérése személyes eszközökkel
 
 ## <a name="integration-with-secure-and-protect-services"></a>Integráció biztonsági és védelmi szolgáltatásokkal
-Minden eszközkezelési megoldás fő feladata a biztonság és a védelem. Az Intune erőssége a más szolgáltatásokkal való integráció, ennek a feladatnak a szolgálatában. Például:
+Minden eszközkezelési megoldás fő feladata a biztonság és a védelem. Az Intune erőssége a más szolgáltatásokkal való integráció, ennek a feladatnak a szolgálatában. Példa:
 
 - A **Microsoft 365** kulcsszerepet játszik a gyakori informatikai feladatok egyszerűsítésében. A Microsoft 365 felügyeleti központjával felhasználókat hozhat létre, kezelhet csoportokat, és hozzáférhet olyan további szolgáltatásokhoz, mint az Intune, az Azure Active Directory és sok más. A Microsoft 365-ben létrehozhatja például iOS-eszközök csoportját. Az Intune ez után olyan iOS-funkciókkal kapcsolatos szabályzatokat küld le az iOS-eszközök csoportjának, mint az App Store-hozzáférés, az AirDrop használata, biztonsági másolatot készítése az iCloudban, az Apple webes szűrőjének használata és sok egyéb.
 

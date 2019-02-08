@@ -16,12 +16,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ba9d4d779a0f609bf07e4d0d7d9aad83e5d415c5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 76d63e5d574b6e515d438a896618e87ad2b11473
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181530"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55847182"
 ---
 # <a name="data-intune-sends-to-apple"></a>Az Intune által az Apple-nek küldött adatok
 
@@ -42,7 +43,7 @@ A következő táblázat ismerteti azokat az adatokat, amelyeket a Microsoft Int
 |---|---| ---|
 | [APNS](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Token, PushMagic | Ha a kiszolgáló elfogadja az eszközt, az eszköz megadja a leküldéses értesítéses eszközjogkivonatát a kiszolgálónak. A kiszolgáló ezzel a jogkivonattal küld leküldéses értesítéseket az eszköznek. Ez a bejelentkező üzenet is tartalmaz egy PushMagic-sztringet. A kiszolgáló megjegyzi ezt a sztringet, és belefoglalja minden, az eszköznek küldött leküldéses üzenetbe. |
 | [ASM/DEP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Kiszolgálói jogkivonat | Az Apple-szolgáltatást hitelesítő leküldéses értesítéses eszközjogkivonat. |
-| ASM/DEP | kiszolgálónév | Az MDM-kiszolgáló azonosítható neve. |
+| ASM/DEP | server_name | Az MDM-kiszolgáló azonosítható neve. |
 | ASM/DEP | server_uuid | A rendszer által létrehozott kiszolgálóazonosító. |
 | ASM/DEP | admin_id | A jelenleg használt jogkivonatokat létrehozó személy Apple ID azonosítója. |
 | ASM/DEP | org_name | A szervezet neve. |
@@ -60,9 +61,9 @@ A következő táblázat ismerteti azokat az adatokat, amelyeket a Microsoft Int
 | ASM/DEP | os | Az eszköz operációs rendszere: iOS, OSX vagy tvOS. Ez a kulcs a 2. és újabb X-Server-Protocol-verziókban érvényes. |
 | ASM/DEP | device_family | Az eszköz Apple-termékcsaládja: iPad, iPhone, iPod, Mac vagy AppleTV. Ez a kulcs a 2. és újabb X-Server-Protocol-verziókban érvényes. |
 | ASM/DEP | profile_name | Sztring. A profil természetes nyelven olvasható neve. |
-| ASM/DEP | support_phone_number | Nem kötelező. Sztring. A szervezet támogatási telefonszáma. |
-| ASM/DEP | support_email_address | Nem kötelező. Sztring. A szervezet támogatási e-mail-címe. Ez a kulcs a 2. és újabb X-Server-Protocol-verziókban érvényes. |
-| ASM/DEP | Részleg | Nem kötelező. Sztring. A felhasználó által megadott részleg vagy hely neve. |
+| ASM/DEP | support_phone_number | Választható. Sztring. A szervezet támogatási telefonszáma. |
+| ASM/DEP | support_email_address | Választható. Sztring. A szervezet támogatási e-mail-címe. Ez a kulcs a 2. és újabb X-Server-Protocol-verziókban érvényes. |
+| ASM/DEP | Szervezeti egység | Választható. Sztring. A felhasználó által megadott részleg vagy hely neve. |
 | ASM/DEP | eszközök | Az eszközök sorozatszámait tartalmazó sztringek tömbje. (Üres is lehet.) |
 | VPP | Intune UserId guid | Az Intune által létrehozott GUID. |
 | VPP | A felügyelt AppleId egyszerű felhasználóneve | Az az AppleID-azonosító, amelyet a rendszergazda adott meg a VPP-jogkivonat kapcsolatának Apple-lel való konfigurálásakor. |

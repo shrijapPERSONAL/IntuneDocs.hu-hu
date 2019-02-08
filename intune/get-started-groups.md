@@ -16,12 +16,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fcf6f3071e50304216a182a21dd542cace1b6390
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8b7e187bb182db0491e055ce3af3833d82e578de
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186460"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842405"
 ---
 # <a name="create-a-group-to-manage-your-users-and-data-access"></a>Csoport létrehozása a felhasználók és az adathozzáférés kezeléséhez
 
@@ -31,7 +32,7 @@ A Microsoft Intune az Azure Active Directoryt (Azure AD) használja a vállalati
 
 ## <a name="how-do-i-create-a-group"></a>Hogyan hozhatok létre csoportot?
 
-1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Miután megnyitotta a **Microsoft Intune** panelt, válassza a **Csoportok** lehetőséget.
 4. A **Felhasználók és csoportok – Összes csoport** panelen válassza az **Új csoport** parancsot.
@@ -39,7 +40,7 @@ A Microsoft Intune az Azure Active Directoryt (Azure AD) használja a vállalati
 5. Töltse ki a csoporthoz a **Név** és a **Leírás** mezőt.
 6. Adja meg a **Tagság típusa** elemhez a **Hozzárendelt** beállítást. Ne **engedélyezze az Office-funkciókat** a tesztcsoporthoz.
 7. Adja meg a csoport tagjait a **Tagok** lehetőség választásával.
-7. Kattintson a **Létrehozás** gombra.
+7. Kattintson a **Create** (Létrehozás) gombra.
 
 Ha sikeresen létrehozott egy csoportot, annak meg kell jelennie az **Összes csoport** listáján. Ha itt nem jelenik meg, próbáljon létrehozni egy másik csoportot.
 

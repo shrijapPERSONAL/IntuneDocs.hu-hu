@@ -14,12 +14,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2e6d42edaa5cdef9a149f3232e1b150e0847e542
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: aff862170ec6a4eca8db5b4e8b1b5eaa242203b0
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180629"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837474"
 ---
 # <a name="microsoft-intune-windows-81-and-later-device-restriction-settings"></a>A Windows 8.1-es és újabb verzióinak eszközkorlátozásokra vonatkozó beállításai a Microsoft Intune-ban
 
@@ -34,7 +35,7 @@ A cikk bemutatja a Microsoft Intune olyan eszközkorlátozásokra vonatkozó be�
 -   **Tűzfal** – Előírja a Windows tűzfal bekapcsolását.
 -   **Felhasználói fiókok felügyelete** – Kötelezővé teszi a felhasználói fiókok felügyeletének használatát az eszközökön.
 
-## <a name="password"></a>Jelszó
+## <a name="password"></a>Windows 10
 -   **Kötelező jelszó típusa** – Megköveteli a végfelhasználótól, hogy jelszót adjon meg az eszköz eléréséhez.
 -   **Jelszó minimális hossza** – Konfigurálja a jelszó minimális hosszát (karakterszámát).
 -   **Sikertelen bejelentkezések száma, mielőtt törlődne az eszközön lévő összes adat** – Törli az eszközön lévő adatokat a megadott számú sikertelen bejelentkezési kísérlet után.

@@ -15,12 +15,13 @@ ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 37483f0fa33db109510ee537772a7bdead79e4f3
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 874d191d79c22dd7b044df2e5a8e813324e35e11
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203552"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844173"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Segítségnyújtás a céges felhasználóknak a hibaelhárítási portál használatával
 
@@ -82,7 +83,7 @@ Az ügyfélalkalmazások tulajdonságai.
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Name (Név)          | Az alkalmazás neve.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | Operációs rendszer            | Az eszközön telepített operációs rendszer.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Típus          | Mindegyik alkalmazáshoz kiválaszthat egy hozzárendelési típust.  <br> **Elérhető** – A felhasználók a Céges portál alkalmazásban vagy webhelyen telepítik az alkalmazást.  <br> **Nem alkalmazható** – Az alkalmazás nincs telepítve, vagy nem jelenik meg a Céges portálon. <br> **Eltávolítás** – A rendszer eltávolítja az alkalmazást a kiválasztott csoportok eszközeiről.  <br> **Regisztrációval vagy anélkül is elérhető** – Az alkalmazás hozzárendelése olyan felhasználók csoportjaihoz, akik eszközei nincsenek regisztrálva az Intune-ban. |
+| Typo          | Mindegyik alkalmazáshoz kiválaszthat egy hozzárendelési típust.  <br> **Elérhető** – A felhasználók a Céges portál alkalmazásban vagy webhelyen telepítik az alkalmazást.  <br> **Nem alkalmazható** – Az alkalmazás nincs telepítve, vagy nem jelenik meg a Céges portálon. <br> **Eltávolítás** – A rendszer eltávolítja az alkalmazást a kiválasztott csoportok eszközeiről.  <br> **Regisztrációval vagy anélkül is elérhető** – Az alkalmazás hozzárendelése olyan felhasználók csoportjaihoz, akik eszközei nincsenek regisztrálva az Intune-ban. |
 | Utolsó módosítás | Az eszköztípus neve.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
 ### <a name="devices"></a>Eszközök

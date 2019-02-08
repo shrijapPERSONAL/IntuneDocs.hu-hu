@@ -15,12 +15,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 73cd8b4f0cf5bdfa02a301d476df31a01fc9691f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b9202bd19d9c932d167808b602aeccfb8b7ed117
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186120"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834493"
 ---
 # <a name="data-collection-in-intune"></a>Adatgyűjtés az Intune-ban
 
@@ -55,7 +56,7 @@ Az Intune által gyűjtött azonosított adatok többek között az alábbiak le
     - Telefonszám
 - Az auditnapló adatai, többek között az alábbi tevékenységekhez kapcsolódó adatok
     - A számítógépeken futó
-    - Létrehozás
+    - Hozzon létre
     - Frissítés (szerkesztés)
     - Törlés
     - Hozzárendelése
@@ -127,10 +128,10 @@ Az Intune által gyűjtött összesített adatok többek között az alábbiak l
     - A regisztrált eszközök vagy felhasználók száma
     - Azonosított eszközplatformok száma  
     - A telepített eszközök száma
-    - installedDeviceCount: Azoknak az eszközöknek a száma, amelyeken az alkalmazás telepítve van.
-    - notApplicableDeviceCount: Azoknak az eszközöknek a száma, amelyeken az alkalmazás nem telepíthető.
-    - notInstalledDeviceCount: Azoknak az eszközöknek a száma, amelyekre az alkalmazás telepíthető, de nincs telepíve rajtuk.
-    - pendingInstallDeviceCount: Azoknak az eszközöknek a száma, amelyekre az alkalmazás telepíthető, és a telepítés függőben van.
+    - installedDeviceCount: A, amelyre telepítve van az alkalmazás eszközök számát.
+    - notApplicableDeviceCount: Amelynek az alkalmazás jelenleg nem megfelelő eszközök száma.
+    - notInstalledDeviceCount: A, amelynek az alkalmazás akkor alkalmazható, de nem telepített eszközök számát.
+    - pendingInstallDeviceCount: Az eszközök, amelynek az alkalmazás akkor alkalmazható, és a telepítés numberr függőben.
     
 ## <a name="next-steps"></a>További lépések
 

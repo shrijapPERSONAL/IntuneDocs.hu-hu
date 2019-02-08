@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 21257169e069a139ac94dcdecbe6074ab0778aeb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 776b1c6fcba6487a45133f486bf68bab312b86c9
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179558"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848134"
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Technológiai döntések a hozott eszközök Microsoft Enterprise Mobility + Security (EMS) általi felügyeletével kapcsolatban.
 
@@ -77,7 +78,7 @@ Sok cégnek megvannak azonban a saját, specifikus kockázataik.  Az alábbi tá
 | | | |
 | Véletlen adatmegosztás vagy mentés nem biztonságos helyre | Eszközadatok biztonsági mentésének korlátozása | Kivágás/másolás/beillesztés korlátozása|
 | Véletlen adatmegosztás vagy mentés nem biztonságos helyre | Mentés másként funkció korlátozása | Mentés másként funkció korlátozása |
-|Véletlen adatmegosztás vagy mentés nem biztonságos helyre | Nyomtatás letiltása | nem áll rendelkezésre|
+|Véletlen adatmegosztás vagy mentés nem biztonságos helyre | Nyomtatás letiltása | n/a|
 
 ## <a name="next-steps"></a>További lépések
 A fentiek alapján eldöntheti, hogy az eszközfelügyeletre, az alkalmazásfelügyeletre, vagy pedig a kettő kombinációjára összpontosítva engedélyezi a hozott eszközöket a cégében. A kívánt implementációt önállóan meghatározhatja, és biztos lehet abban, hogy bárhogyan is dönt, az Azure AD-ban elérhetők lesznek a megfelelő identitás- és biztonsági szolgáltatások.  

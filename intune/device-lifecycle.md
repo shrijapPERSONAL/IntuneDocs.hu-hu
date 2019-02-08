@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: c0d6dcc4bee31ce0197699a8106a25dbcd71af17
-ms.sourcegitcommit: 580eb4920d18ce09c9431d9d0dfee9d195459c0e
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 25df77266e0ce10329d94f7185a78c944b3771cb
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52887134"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844615"
 ---
 # <a name="overview-of-the-microsoft-intune-mobile-device-management-mdm-lifecycle"></a>A Microsoft Intune mobileszköz-kezelési életciklusának áttekintése
 
@@ -38,7 +39,7 @@ Az eszközök regisztrálása csak az első lépés. Az Intune teljes funkcional
 - [**Vállalati erőforrásokhoz való hozzáférés**](device-profiles.md). Ha engedélyezi a felhasználóknak a munkájukhoz kapcsolódó anyagok elérését a saját, személyes eszközükről, ez több megoldandó feladatot is teremthet. Például hogyan gondoskodik az olyan eszközök megfelelő beállításáról, amelyeknek hozzá kell férniük a vállalati levelezéshez? Hogyan biztosítja a hozzáférést a vállalati hálózathoz VPN-kapcsolaton keresztül anélkül, hogy bonyolult beállításokat kellene elvégezniük a felhasználóknak? Az Intune segítségével úgy csökkentheti ezt a terhet, hogy automatikusan konfigurálja a felügyelt eszközök közös vállalati erőforrásokhoz való hozzáférését.
 - [**Windows rendszerű számítógépek felügyeleti szabályzatai (Intune ügyfélszoftverrel)**](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md). Jóllehet a legszéleskörűbb eszközfelügyeleti lehetőségeket az nyújtja, ha a Windows rendszerű számítógépeket regisztrálja az Intune-ban, az Intune továbbra is támogatja a Windows rendszerű számítógépek felügyeletét az Intune ügyfélszoftverrel. Ha információt szeretne azzal kapcsolatban, milyen feladatokat hajthat végre a számítógépekkel, kezdje itt.
 
-## <a name="protect"></a>Védelem
+## <a name="protect"></a>védelme
 A modern informatikai világban az eszközök jogosulatlan hozzáférés elleni védelme az egyik legfontosabb feladat. Az eszközök életciklusának **Konfigurálás** lépésében található lehetőségek mellett az Intune további olyan funkciókat kínál, amelyek segítenek megvédeni a felügyelt eszközöket az illetéktelen hozzáféréstől és a rosszindulatú támadásoktól:
 - [**Többtényezős hitelesítés**](multi-factor-authentication.md). Ez a megoldás még biztonságosabbá teszi az eszközöket azzal, hogy a felhasználók bejelentkezési folyamatába egy további hitelesítési réteget iktat. Számos eszköz támogatja a többtényezős hitelesítést, azaz előírja egy második hitelesítési szint teljesítését is – például telefonhívást vagy SMS-t – ahhoz, hogy a felhasználók hozzáférést kapjanak.
 - [**Windows Hello for Business beállításai**](windows-hello.md). A Vállalati Windows Hello egy alternatív bejelentkezési módszer, mellyel a felhasználók *mozdulatok* segítségével, például ujjlenyomattal vagy a Windows Hello funkcióval jelentkezhetnek be anélkül, hogy jelszót kellene megadniuk.

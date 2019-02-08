@@ -15,12 +15,13 @@ ms.reviewer: karanda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a7250471e698d32a305755147943311d2150f0b2
-ms.sourcegitcommit: a27a9c4cae47be50807aa3c890f0d5c0c023f04a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 40711576af9b7799211971418a0b2529d12468cd
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52618186"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836387"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Előmegosztott kulccsal ellátott WiFi-profil létrehozása egyéni eszközprofil segítségével – Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -122,7 +123,7 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 ```
 
 ## <a name="eap-based-wi-fi-profile-example"></a>EAP-alapú példa Wi-Fi-profil
-Az alábbi példa egy EAP-alapú Wi-Fi-profil XML-kódját tartalmazza: A példa a megfelelő formátumot mutatja be, valamint részletesebb információkkal is szolgál. Ez azonban csak egy példa, és nem az Ön környezetéhez ajánlott konfiguráció.
+Az alábbi példában megtalálhatja az EAP-alapú Wi-Fi-profilhoz használható XML-kódot: A példa a megfelelő formátumot mutatja be, valamint részletesebb információkkal is szolgál. Ez azonban csak egy példa, és nem az Ön környezetéhez ajánlott konfiguráció.
 
 
 ```
@@ -215,7 +216,7 @@ Az XML-fájlt meglévő Wi-Fi-kapcsolat alapján is létrehozhatja az alábbi l�
 2. Keresse meg az XML-fájlok között a megfelelő nevű fájlt.
 3. Miután megtalálta a megfelelő XML-fájlt, másolja, majd illessze be az XML-kódot az OMA-URI-beállítások oldal **Adat** mezőjébe.
 
-## <a name="best-practices"></a>Gyakorlati tanácsok
+## <a name="best-practices"></a>Ajánlott eljárások
 - A Wi-Fi-profil PSK használatával való üzembe helyezése előtt győződjön meg róla, hogy az eszköz tud közvetlenül kapcsolódni a végponthoz.
 
 - Kulcsok (jelszavak és hozzáférési kódok) cseréjekor számítson üzemszünetre, és az üzembe helyezést ennek figyelembe vételével tervezze meg. A Wi-Fi-profilok leküldését ajánlatos munkaidőn kívülre időzíteni. A felhasználókat is figyelmeztesse a kapcsolat esetleges kimaradására.

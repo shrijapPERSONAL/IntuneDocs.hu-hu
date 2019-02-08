@@ -15,12 +15,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5f8263f06fe33537a74a6d1889b02b89ee6a825f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c458e77e41d67466ad52a4f0b4089d85a9513f5d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183400"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834874"
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Android-felhasználói alkalmazások letöltése
 
@@ -37,8 +38,8 @@ Ez a témakör ismerteti, hogy az androidos végfelhasználók hol és hogyan ju
 
 A végfelhasználóknak az [üzletági alkalmazások](lob-apps-android.md) telepítéséhez engedélyezniük kell az ismeretlen forrásból való telepítést. Ezek a beállítások általában két különböző helyen találhatók:
 
-* **Az Android 7.1.2-es és régebbi verzióiban**: **Settings** (Beállítások) > **Security** (Biztonság) > **Unknown sources** (Ismeretlen források)
-* **Az Android 8.0-s és újabb verzióiban**: **Settings** (Beállítások) > **Apps & notifications** (Alkalmazások és értesítések) > **Special app access** (Speciális alkalmazás-hozzáférés) > **Install unknown apps** (Ismeretlen alkalmazások telepítése) > **Company Portal** (Céges portál) > **Allow from this source** (Engedélyezés ebből a forrásból)
+* **Android 7.1.2-es és régebbi**: **Beállítások** > **biztonsági** > **ismeretlen források**
+* **Android 8.0 és újabb**: **Beállítások** > **alkalmazások és értesítések** > **speciális alkalmazás-hozzáférés** > **ismeretlen alkalmazások telepítése**  >  **Céges portál** > **engedélyezés ebből a forrásból**
 
 Ebben az esetben a Céges portál értesíti a felhasználót, és közvetlenül végigvezeti a megfelelő beállítás megadásán. 
 

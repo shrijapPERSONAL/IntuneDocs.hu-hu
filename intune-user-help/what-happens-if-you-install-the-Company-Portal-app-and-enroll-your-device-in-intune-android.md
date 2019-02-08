@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fa1b3b283fbf4941dd73ed4b5c6525901d41f8e3
-ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7d8af8b01de3b9782f487e29a9f993ceaf32aac6
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47169015"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838155"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>Mi történik a Vállalati portál alkalmazás telepítésekor és az Android-eszköz Intune-beli regisztrálásakor?
 
@@ -72,4 +73,4 @@ Ha regisztrálja az eszközt a Céges portál alkalmazásban, a céges ügyféls
 
 * Az eszközön található adatok titkosításának megkövetelése. Ez a szabályzat hozzájárul az adatok védelméhez az eszköz elvesztésekor és ellopásakor. Emellett az eszközökkel vagy alkalmazásokkal megosztott adatok számára is védelmet nyújt.  
 
-Segítségre van szüksége? Forduljon a cég informatikai támogatási szolgálatához (a kapcsolattartási adatokat a [céges portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980) találja), vagy írjon a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-csapatának</a>.
+Segítség Forduljon a cég informatikai támogatási szolgálatához (a kapcsolattartási adatokat a [céges portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980) találja), vagy írjon a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-csapatának</a>.

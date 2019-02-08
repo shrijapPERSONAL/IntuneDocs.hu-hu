@@ -14,12 +14,13 @@ ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1954f59a008c699c6dcdeb46686d3f37f941908a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9ad3593dfab0326cec4003b794d50d415cf3c536
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180272"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844122"
 ---
 # <a name="see-device-details-in-intune"></a>Eszközadatok megtekintése az Intune-ban
 
@@ -31,7 +32,7 @@ Ez a cikk bemutatja, hogyan tekintheti meg az összes eszközét és azok tulajd
 
 ## <a name="view-the-device-details"></a>Eszköz részletes adatainak megtekintése
 
-1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
 3. Válassza az **Eszközök** > **Minden eszköz** lehetőséget, majd jelölje ki a listában szereplő eszközök egyikét, hogy megnyissa annak részletes adatait:
 
@@ -68,7 +69,7 @@ Az eszközök által használt szolgáltatótól, függően nem minden adata gy�
 
 |Részletek|Leírás|Platform| 
 |--------------|----------------------|----|  
-|Név|Az eszköz neve.|Windows, iOS|
+|Name (Név)|Az eszköz neve.|Windows, iOS|
 |Felügyeleti név|A csak a konzolon használt eszköznév. Ennek a névnek a módosítása nem változtatja meg a nevet az eszközön.|Windows, iOS|
 |UDID|Az eszköz egyedi eszközazonosítója.|Windows, iOS|
 |Intune-eszközazonosító|Az eszközt egyedileg azonosító GUID.|Windows, iOS|
