@@ -17,14 +17,15 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 087f890f84c9bc0ff0c46f129ef84b8a268c738e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 455d3fa3b26ae7b18eb195019bc89100714946b9
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187735"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850777"
 ---
-# <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Oktatóanyag – Windows-eszközök regisztrálása az Intune-ban az AutoPilot használatával
+# <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Oktatóanyag: Windows-eszközök regisztrálása az Intune Autopilot használatával
 A Windows Autopilot leegyszerűsíti az eszközök regisztrálását. A Microsoft Intune és az AutoPilot használatával új eszközöket adhat a végfelhasználóknak anélkül, hogy egyéni operációsrendszer-lemezképek létrehozására, fenntartására és alkalmazására lenne szükség. 
 
 Az oktatóanyag segítségével megtanulhatja a következőket:
@@ -93,8 +94,8 @@ Egy eszközcsoport létrehozása után létre kell hoznia egy Deployment-profilt
 4. Az **Üzembehelyezési mód** beállításnál válassza a **Felhasználó által vezérelt** lehetőséget. Az ilyen profillal rendelkező eszközök az őket regisztráló felhasználóhoz vannak társítva. Az eszköz regisztrálásához felhasználói hitelesítő adatokra van szükség.
 5. A **Csatlakozás az Azure AD-hez mint** mezőben válassza az **Azure AD-hez csatlakoztatott** lehetőséget.
 6. Válassza a **Kezdőélmény (OOBE)** lehetőséget, konfigurálja a következő beállításokat, a többit pedig hagyja változatlanul, majd válassza a **Mentés** lehetőséget:
-    - **Végfelhasználói licencszerződés (EULA)**: **Elrejtés**
-    - **Adatvédelmi beállítások**: **Megjelenítés**
+    - **Végfelhasználói licencszerződés (EULA)**: **Elrejtése**
+    - **Adatvédelmi beállítások**: **Show**
     - **Felhasználói fiók típusa**: **Standard**
 
 6. Válassza a **Létrehozás** lehetőséget a profil létrehozásához. Az AutoPilot üzembehelyezési profil most már hozzárendelhető az eszközökhöz.
