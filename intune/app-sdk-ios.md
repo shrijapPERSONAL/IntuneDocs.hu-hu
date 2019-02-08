@@ -15,12 +15,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: d484c227b33cc364d98ec4843894f447ae2ea8ab
-ms.sourcegitcommit: 02f75d241b3cbb125cb235d16d447f8855b1806d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: eaffed2af38e269000dd951cec536e1f80be705f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657831"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841351"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>A Microsoft Intune App SDK iOS rendszeren – fejlesztői útmutató
 
@@ -218,7 +219,7 @@ Az IntuneMAMSettings szótárban az alábbi támogatott beállításokkal konfig
 
 Egy részükről már volt szó korábbi szakaszokban, más részük pedig nem vonatkozik minden alkalmazásra.
 
-Beállítás  | Típus  | Meghatározás | Kötelező?
+Beállítás  | Typo  | Meghatározás | Kötelező?
 --       |  --   |   --       |  --
 ADALClientId  | Sztring  | Az alkalmazás Azure AD ügyfél-azonosítója. | Kötelező, ha az alkalmazás használja az ADAL-t. |
 ADALAuthority | Sztring | Az alkalmazás használatban lévő Azure AD-szolgáltatója. Használja azt a saját környezetet, ahol az AAD-fiókok konfigurálása megtörtént. | Kötelező, ha az alkalmazás használja az ADAL-t. Ha ez az érték hiányzik, a rendszer egy Intune-beli alapértelmezett értéket használ.|
@@ -302,7 +303,7 @@ Példa:
 
 Ha azt szeretné, hogy az Intune SDK minden hitelesítést az ADAL és a regisztráció használatával kezeljen még az alkalmazás indításának befejeződése előtt, és hogy az alkalmazás mindig kérjen APP-szabályzatot, akkor nem kell használnia a `loginAndEnrollAccount` API-t. Egyszerűen megadhatja a két alábbi beállításhoz a YES értéket az alkalmazás Info.plist fájljának IntuneMAMSettings szótárában.
 
-Beállítás  | Típus  | Meghatározás |
+Beállítás  | Typo  | Meghatározás |
 --       |  --   |   --       |  
 AutoEnrollOnLaunch| Logikai| Megadja, hogy az alkalmazás megpróbáljon-e automatikusan regisztrálni indításkor, ha meglévő felügyelt identitást érzékel, és ha korábban még nem történt regisztráció. Az alapértelmezett érték a Nem. <br><br> Megjegyezés: Ha nem felügyelt identitás található, vagy nem érvényes token az identitáshoz az ADAL gyorsítótárát nem érhető el, az értesítés nélkül fogja a beléptetési kísérlet sikertelen nélkül kéri a hitelesítő adatokat, kivéve, ha az alkalmazás is állította mampolicyrequired értéke Igen. |
 MAMPolicyRequired| Logikai| Azt adja meg, hogy megakadályozza-e a rendszer az alkalmazás elindítását, ha az alkalmazásnak nincs Intune alkalmazásvédelmi szabályzata. Az alapértelmezett érték a Nem. <br><br> Megjegyezés: Nem kell alkalmazásokat benyújtani az App Store a mampolicyrequired beállítása Igen. HA a MAMPolicyRequired értéke IGEN, az AutoEnrollOnLaunch beállítását is IGEN értékre kell állítani. |

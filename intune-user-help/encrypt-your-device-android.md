@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: dfb70327737bcfe9e6bd2ded964a07a00f9d7610
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 115025d60038daea6f43c97cbdc03a20d5b0bf59
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148949"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838172"
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>Androidos eszközök védelme titkosítással
 
@@ -41,7 +42,7 @@ Ha megszünteti a telefonja regisztrációját, a titkosítás megmarad.
 3.  Kövesse a képernyőn megjelenő utasításokat. Előfordulhat, hogy a titkosítás során az eszköz többször újraindul.
 
 ### <a name="what-to-do-if-you-have-issues"></a>Mi a teendő ha problémába ütközik?
-**Probléma:** Már titkosította az eszközt, és a következők egyikét látja:
+**A probléma**: Már titkosította az eszközt, és a következők egyikét látja:
 
 - A titkosítási gomb le van tiltva.
 - Egy üzenet azt jelzi, hogy titkosítania kell az eszközt.

@@ -16,12 +16,13 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b3592ceb2b1a4e7ba32fc0a8b3de53e0f0329d8b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f39e9b5f8ecd49ba84f4e9614e2a63a6cfbfef7a
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179728"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837928"
 ---
 # <a name="set-up-enrollment-of-android-work-profile-devices"></a>Androidos munkahelyi profilos eszközök regisztrálásának beállítása
 
@@ -33,8 +34,8 @@ Az androidos munkahelyi profil felügyelete a következő lépésekben állítha
 
 1. [Az Intune-bérlő csatlakoztatása a Vállalati Android-fiókjához](connect-intune-android-enterprise.md).
 2. Androidos munkahelyi profil regisztrációs beállításainak megadása. Az androidos munkahelyi profilok [csak bizonyos Android-eszközökön támogatottak](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22). Az androidos munkahelyi profilokat támogató eszközök mindegyike támogatja a hagyományos Android-alapú felügyeletet is. Az Intune-ban megadhatja, hogy hogyan történjen az androidos munkahelyi profilokat támogató eszközök felügyelete a [regisztrációs korlátozásokból](enrollment-restrictions-set.md).
-    - **Blokkolás (alapértelmezett)**: Minden Android-eszköz, az androidos munkahelyi profilokat támogatókat is beleértve, hagyományos Android-eszközként lesz regisztrálva.
-    - **Engedélyezés**: Az androidos munkahelyi profilokat támogató eszközök mindegyike androidos munkahelyi profilos eszközként lesz regisztrálva. Az androidos munkahelyi profilokat nem támogató eszközök hagyományos Android-eszközként lesznek regisztrálva.
+    - **Blokkolás (alapértelmezett)**:  Minden Android-eszközök, beleértve az eszközöket, amelyek támogatják az Androidos munkahelyi profilokat, hagyományos Android-eszközként lesz regisztrálhatók.
+    - **Lehetővé teszi**: Androidos munkahelyi profilokat támogató eszközök mindegyike Android munkahelyi profilos eszközök lesz regisztrálva. Az androidos munkahelyi profilokat nem támogató eszközök hagyományos Android-eszközként lesznek regisztrálva.
 3. [A felhasználók tájékoztatása arról, hogy miképpen regisztrálhatják az eszközeiket](/intune-user-help/enroll-your-device-in-intune-android).
 
 

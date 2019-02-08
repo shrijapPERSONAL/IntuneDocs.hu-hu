@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
-ms.openlocfilehash: d9ecfa44e2619e5e123c9e8af169b6a8a95ee466
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9e7269eb6e396557a6bc19daa371a10be7154866
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183893"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844632"
 ---
 # <a name="audit-logs-for-intune-activities"></a>Auditnaplók Intune-tevékenységekhez
 Az auditnaplókban a Microsoft Intune-ban változást előidéző tevékenységek jegyzéke érhető el. A létrehozási, frissítési (szerkesztési), törlési és hozzárendelési műveletek, illetve a távoli feladatok naplózott eseményeket generálnak, melyek megtekinthetők. A legtöbb Intune-beli számítási feladat auditnaplói megtekinthetők. A naplózás alapértelmezés szerint engedélyezve van az összes ügyfél számára, és nem tiltható le. A naplózási események 2017 decemberében, az új funkció megjelenésekor kezdődtek, az ezt megelőző események így nincsenek rögzítve.
@@ -30,7 +31,7 @@ A következő engedélyekkel rendelkező felhasználók tekinthetik meg az audit
 
 ## <a name="audit-logs-for-intune-workloads"></a>Intune-beli számítási feladatok auditnaplói
 Az auditnaplók az egyes Intune-beli számítási feladatok Figyelés csoportjában tekinthetők meg.  
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza ki azt a számítási feladatot, amelynek meg szeretné tekinteni a naplóit, például az **Eszközök** elemet.
 4. A számítási feladat **Figyelés** csoportjában válassza a **Naplók** lehetőséget.

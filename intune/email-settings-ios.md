@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: c54ccf5bba53d5d638f011d3bd0d308adf6cb013
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: fd1f24c7114e21239d19ca2e99fc05d125e675d9
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203365"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845783"
 ---
 # <a name="email-profile-settings-for-ios-devices-in-intune"></a>E-mail-profilbeállítások iOS-eszközökhöz az Intune-ban
 
@@ -51,7 +52,7 @@ Ez a cikk és iOS rendszerű eszközökhöz elérhető összes e-mailek beállí
 - **E-mail-cím attribútuma az aad-ből**: Válassza ki, hogyan generáljon a rendszer az e-mail címet a felhasználókhoz. Az **Egyszerű felhasználónév** (`user1@contoso.com` vagy `user1`) lehetőség kiválasztásával az egyszerű felhasználónevet e-mail-címként használhatja. Az Exchange-kiszolgálóra való bejelentkezéshez válassza az **Elsődleges SMTP-cím** (`user1@contoso.com`) lehetőséget.
 - **Hitelesítési módszer**: Az e-mail-profil által használandó hitelesítési módszernek válassza a **Felhasználónév és jelszó** vagy a **Tanúsítványok** lehetőséget. Az Azure-alapú többtényezős hitelesítés nincs támogatva.
   - Ha a **Tanúsítvány** lehetőséget választotta, válassza ki az ügyfél korábban létrehozott SCEP- vagy PKCS-tanúsítványát, amelyet az Exchange-kapcsolat hitelesítésére kíván használni.
-- **AZ SSL**: **Engedélyezése** használ Secure Sockets Layer (SSL) kommunikáció küldése e-mailt, fogadásakor és az Exchange-kiszolgálóval való kommunikáció során.
+- **SSL**: **Engedélyezése** használ Secure Sockets Layer (SSL) kommunikáció küldése e-mailt, fogadásakor és az Exchange-kiszolgálóval való kommunikáció során.
 - **OAuth**: **Engedélyezése** nyílt engedélyezési (OAuth) kommunikáció használ, e-mailek, fogadásakor és az Exchange kiszolgálóval való kommunikációhoz küldésekor. Ha az OAuth-kiszolgáló tanúsítványalapú hitelesítést használ, válassza a **Tanúsítvány** lehetőséget **hitelesítési módszernek**, és foglalja bele a tanúsítványt a profilba. Ellenkező esetben válassza a **Felhasználónév és jelszó** lehetőséget a **hitelesítési módszerhez**. OAuth használata esetén ügyeljen a következőkre:
 
   - A profil a felhasználóknak való elérhetővé tétele előtt ellenőrizze, hogy a levelezőszolgáltatása támogatja-e az OAuthot. Az Office 365 Exchange Online támogatja az OAuthot. A helyszíni Exchange és egyéb partneri vagy külső megoldások nem feltétlenül támogatják az OAuthot. A helyszíni Exchange konfigurálható modern hitelesítéshez (ehhez tekintse meg a [Hibrid modern hitelesítés bejelentése a helyszíni Exchange-hez](https://blogs.technet.microsoft.com/exchange/2017/12/06/announcing-hybrid-modern-authentication-for-exchange-on-premises/) című blogbejegyzést).

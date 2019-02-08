@@ -14,12 +14,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f5996d44887fbfa15283052e9206d6e441e9a44b
-ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0a17be2e6cb30612fbf8a91f63d3b99ed6c7e19b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55303429"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837432"
 ---
 # <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>iOS-eszközökre vonatkozó Wi-Fi-beállítások hozzáadása a Microsoft Intune-ban
 
@@ -73,11 +74,11 @@ Ez a cikk ezeket a beállításokat ismerteti.
     - **Kiszolgáló megbízhatósága** - **tanúsítvány-kiszolgálók nevei**: **Adjon hozzá** a megbízható hitelesítésszolgáltató (CA) által kiállított tanúsítványban használt egy vagy több köznapi nevet. Ha megadja ezt az információt, elkerülheti azt a dinamikus megbízhatósági ablakot, amely akkor jelenik meg a felhasználók eszközein, amikor ehhez a Wi-Fi-hálózathoz csatlakoznak.
     - **Kiszolgálói érvényesítéshez használandó főtanúsítványok**: Válasszon egy meglévő megbízható főtanúsítvány-profilt. A rendszer ezt a tanúsítványt adja meg a kiszolgálónak, amikor az ügyfél a hálózathoz csatlakozik, és ezzel hitelesíti a kapcsolatot.
 
-      A módosítások mentéséhez válassza az **OK** gombot.
+      Válassza ki **OK** a módosítások mentéséhez.
 
     - **Ügyfél-hitelesítés** - **ügyféltanúsítvány a hitelesítéshez használandó ügyféltanúsítványt (identitástanúsítványt)**: Válassza ki az SCEP- vagy PKCS-ügyfél-profilt, amely az eszköz számára is telepíti. Az eszköz ezt a tanúsítványt adja meg identitásként a kiszolgálónak a kapcsolat hitelesítéséhez.
 
-      A módosítások mentéséhez válassza az **OK** gombot.
+      Válassza ki **OK** a módosítások mentéséhez.
 
   - **EAP-TTLS**: Ezt is adja meg:
 
@@ -95,7 +96,7 @@ Ez a cikk ezeket a beállításokat ismerteti.
 
       - **Tanúsítványok**: Válassza ki az SCEP- vagy PKCS-ügyfél-profilt, amely az eszköz számára is telepíti. Az eszköz ezt a tanúsítványt adja meg identitásként a kiszolgálónak a kapcsolat hitelesítéséhez.
 
-        A módosítások mentéséhez válassza az **OK** gombot.
+        Válassza ki **OK** a módosítások mentéséhez.
 
       - **Identitásadatok védelme (külső identitás)**: Adja meg az EAP-identitásra irányuló kérelemre adott válasz szövegét. Ez a szöveg bármilyen érték lehet, például `anonymous`. A hitelesítés során a rendszer először a névtelen identitást küldi el, majd később egy biztonságos csatornán küldi el a valódi azonosítót.
 
@@ -114,7 +115,7 @@ Ez a cikk ezeket a beállításokat ismerteti.
 
       - **Tanúsítványok**: Válassza ki az SCEP- vagy PKCS-ügyfél-profilt, amely az eszköz számára is telepíti. Az eszköz ezt a tanúsítványt adja meg identitásként a kiszolgálónak a kapcsolat hitelesítéséhez.
 
-        A módosítások mentéséhez válassza az **OK** gombot.
+        Válassza ki **OK** a módosítások mentéséhez.
 
       - **Identitásadatok védelme (külső identitás)**: Adja meg az EAP-identitásra irányuló kérelemre adott válasz szövegét. Ez a szöveg bármilyen érték lehet, például `anonymous`. A hitelesítés során a rendszer először a névtelen identitást küldi el, majd később egy biztonságos csatornán küldi el a valódi azonosítót.
 

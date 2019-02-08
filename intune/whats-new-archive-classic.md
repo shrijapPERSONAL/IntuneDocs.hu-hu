@@ -15,12 +15,13 @@ ROBOTS: noindex,nofollow
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 56d5d9c773a11b3884b4e72b55fab27e7044f1e9
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a5186af2e02363d74f2f046188168efd38eee363
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112901"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843425"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>A klasszikus Intune-portál újdonságai – korábbi hónapok
 
@@ -113,7 +114,7 @@ Egy olyan változást jelentünk most be, amely a következő néhány hónapban
 
 Az [Újdonságok az alkalmazás felhasználói felületén](whats-new-app-ui.md) lapon képernyőképeket láthat a korábbi bejelentkezési módról, a hitelesítő adatokat használó új bejelentkezési élményről, és a másik eszközről történő bejelentkezési folyamatról.
 
-#### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>Készüljön fel a változásra: megváltozik az Intune Partner Portal <!-- 1050016 -->
+#### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>Tervezett módosítás: Az Intune Partner Portal élmény megváltozik <!-- 1050016 -->
 
 A 2017. május közepén esedékes szolgáltatásfrissítés keretében eltávolítjuk az Intune Partner lapot manage.microsoft.com-ról.  
 
@@ -147,11 +148,11 @@ Konfigurálhatja az Intune eszközmegfelelőségi szabályzatai által engedély
 
 Az Androidhoz készült Céges portál alkalmazás új, modern megjelenésű és jobb élményt biztosító felhasználói felületet kap. Fontosabb frissítések:
 
-- Színek: a Céges portál lapfejléceinek színe meghatározható az informatikai részleg által.
-- Alkalmazások: az **Alkalmazások** lapon frissítettük a **Kiemelt alkalmazások** és a **Minden alkalmazás** gombokat.
-- Keresés: az **Alkalmazások** lapon a **Keresés** gomb lebegő műveletgombként jelenik meg.
-- Navigáció az alkalmazások között: a **Minden alkalmazás** gomb lapnézetben jeleníti meg a **Kiemelt alkalmazásokat**, az **Összes alkalmazást** és a **Kategóriákat**, így a navigálás egyszerűbb.
-- Támogatás: a **Saját eszközök** és az **IT-csoport elérhetősége** lapok olvashatósága javult.
+- Színek: Céges portál lapfejléceinek az informatikai RÉSZLEG által.
+- Alkalmazások: Az a **alkalmazások** lapon, a **kiemelt alkalmazások** és **minden alkalmazás** gombok frissülnek.
+- Keresés: Az a **alkalmazások** lapon, a **keresési** gomb lebegő műveletgombként.
+- Navigáció az alkalmazások között: **Minden alkalmazás** nézetben látható a többlapos nézetben **kiemelt**, **összes**, és **kategóriák** , így a Navigálás egyszerűbb.
+- Támogatás: **Saját eszközök** és **IT-csoport elérhetősége** lapok olvashatósága frissülnek.
 
 A változásokkal kapcsolatos további részletekért lásd: [Felhasználói felületi frissítések az Intune végfelhasználói alkalmazásaiban](whats-new-app-ui.md).
 
@@ -228,9 +229,9 @@ Azok a Windows- és Windows Phone-felhasználók, akik megkísérelnek beléptet
 Márciustól kezdve az Androidhoz készült Céges portál alkalmazásban a [material design irányelveinek](https://material.io/guidelines/material-design/introduction.html) követésével gondoskodunk a még modernebb megjelenésről és működésről. A jobb felhasználói élményt többek között az alábbiak alkotják:
 
 * __Színek__: a lapfejlécek színét módosítani lehet az egyéni színpaletta alapján.
-* __Felület__: az Alkalmazások lapon frissítettük a Kiemelt alkalmazások és a Minden alkalmazás gombokat. A Keresés gomb mostantól lebegő műveletgombként jelenik meg.
-* __Navigáció__: a Minden alkalmazás gomb lapnézetben jeleníti meg a kiemelt alkalmazásokat, az összes alkalmazást és a kategóriákat, így a navigálás egyszerűbb.
-* __Szolgáltatás__: a Saját eszközök és az IT-csoport elérhetősége lapok olvashatósága javult.
+* __Felület__: Kiemelt alkalmazások és a minden alkalmazás gomb frissítve lett-e az alkalmazások lapon. A Keresés gomb mostantól lebegő műveletgombként jelenik meg.
+* __Navigációs__: Minden alkalmazás bemutatja a kiemelt alkalmazásokat, többlapos nézetben minden és a kategóriákat, így a Navigálás egyszerűbb.
+* __Szolgáltatás__: Eszközök és IT-csoport elérhetősége lapok olvashatósága javult.
 
 A frissítés előtti és utáni képek a [felhasználói felület frissítéseit tartalmazó lapon](whats-new-app-ui.md) érhetők el.
 

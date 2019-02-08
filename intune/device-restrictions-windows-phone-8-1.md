@@ -14,12 +14,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 28f9891e953bf420e608993cea39ff81b98cb5e0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7702e502b18f41736086b8e130987697076db377
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185168"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848959"
 ---
 # <a name="microsoft-intune-windows-phone-81-device-restriction-settings"></a>A Windows Phone 8.1 eszközkorlátozásokra vonatkozó beállításai a Microsoft Intune-ban
 
@@ -39,7 +40,7 @@ A cikk bemutatja a Microsoft Intune olyan eszközkorlátozásokra vonatkozó be�
 -   **Diagnosztikai adatok beküldése** – Engedélyezése esetén az eszköz diagnosztikai adatokat küld a Microsoftnak.
 -   **Egyéni e-mail fiókok szinkronizálása** – Nem Microsoft e-mail-fiókokhoz való kapcsolódás engedélyezése az eszköz számára.
 
-## <a name="password"></a>Jelszó
+## <a name="password"></a>Windows 10
 
 -   **Jelszó** – Megköveteli a végfelhasználótól, hogy jelszót adjon meg az eszköz eléréséhez.
     -   **Megkövetelt jelszótípus** – Meghatározza a megkövetelt jelszótípust, például hogy a jelszó számokat és betűket, vagy csak számokat tartalmazhat.
@@ -72,7 +73,7 @@ A [Windows Phone Áruház](https://www.microsoft.com/store/apps/windows-phone) l
 
 Nyissa meg az alkalmazás lapját, és másolja az URL-címet a vágólapra. Ezt a címet az engedélyezett és a tiltott alkalmazások listájában egyaránt használhatja URL-címként.
 
-Például: Keressen rá az áruházban a Skype alkalmazásra. Az Ön által használt URL-cím a következő: `http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51`.
+Példa: Keressen rá az áruházban a Skype alkalmazásra. Az Ön által használt URL-cím a következő: `http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51`.
 
 
 

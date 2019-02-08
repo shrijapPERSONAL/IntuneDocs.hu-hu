@@ -16,12 +16,13 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 56c81c04c4ee6ae319cb54f513b80738f2fbe5fb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e8448ec320c953fd22235e6e743306a1f86d6399
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188027"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851304"
 ---
 # <a name="use-policies-to-simplify-windows-pc-management"></a>A Windows rendszerű számítógép kezelésének leegyszerűsítése szabályzatok használatával
 
@@ -46,11 +47,11 @@ A Microsoft Intune Center minden felügyelt számítógépre telepítve van. Az 
 
 |Házirend-beállítás|Részletek|
 |------------------|--------------------|
-|**Név**|A számítógépet felügyelő rendszergazda neve.<br />Maximális hossz: 40 karakter|
+|**Name (Név)**|A számítógépet felügyelő rendszergazda neve.<br />Maximális hossz: 40 karakter|
 |**Telefonszám**|A számítógépet felügyelő rendszergazda telefonszáma.<br />Maximális hossz: 20 karakter|
 |**E-mail cím**|A számítógépet felügyelő rendszergazda e-mail címe.<br />Maximális hossz: 40 karakter|
-|**Webhely neve**|A felhasználói támogatási webhely neve.<br />>Maximális hossz: 40 karakter|
-|**Webhely URL-címe**|A támogatási webhely URL-címe.<br />Maximális hossz: 150 karakter|
+|**Webhely neve**|A felhasználói támogatási webhely neve.<br />> maximális hossz: 40 karakter|
+|**Webhely URL-címe**|A támogatási webhely URL-címe.<br />Maximális hossz: 150 karakternél|
 |**Megjegyzések**|A felhasználóknak megjelenített megjegyzés.<br />Maximális hossz: 120 karakter|
 
 A Windows rendszerű számítógépekre vonatkozóan konfigurált szabályzatokról és beállításokról a következő információforrásokból tájékozódhat:

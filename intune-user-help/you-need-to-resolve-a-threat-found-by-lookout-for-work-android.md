@@ -15,16 +15,17 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 0e8f10bac2c7ffc75f81572da60249842c8f4cc1
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 03463bebfd9279173179dff56ce8df9d80b1707b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148521"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848022"
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>A Lookout for Work által azonosított fenyegetés elhárítása  
 
-A Lookout for Work alkalmazás egy mobilfenyegetés elleni védelmi szolgáltatás, amely lehetséges fenyegetéseket azonosít Android-eszközein. Ezek a fenyegetések a Céges portál alkalmazásnak lesznek jelentve, ahol megoldatlan nem megfelelőségi problémákként jelennek meg. Előfordulhat, hogy amíg ezek a fenyegetések jelen vannak, a következők nem lehetségesek:
+A Lookout for Work alkalmazás egy mobilfenyegetés elleni védelmi szolgáltatás, amely lehetséges fenyegetéseket azonosít Android-eszközein. Ezek a fenyegetések a Céges portál alkalmazásnak lesznek jelentve, ahol megoldatlan nem megfelelőségi problémákként jelennek meg. Amíg a fenyegetések jelen vannak, előfordulhat hogy nem lehet végrehajtani a következőket:
 
 * Hozzáférés a vállalati e-mailekhez
 * Hozzáférés a vállalati Wi-Fi-hez
@@ -32,7 +33,7 @@ A Lookout for Work alkalmazás egy mobilfenyegetés elleni védelmi szolgáltat�
 * Vállalati fájlok szinkronizálása a OneDrive-val
 * Hozzáférés a vállalati alkalmazásokhoz
 
-Ez a cikk a Lookout for Work fenyegetési riasztásainak felismerését, és a fenyegetések elhárításának módját ismerteti. 
+Ez a cikk a Lookout for Work fenyegetési riasztásainak felismerését és a fenyegetések elhárításának módját ismerteti. 
 
 ## <a name="troubleshoot-virus-or-security-threat"></a>Vírus vagy biztonsági fenyegetés elhárítása  
 Ha a Lookout for Work alkalmazás biztonsági vagy vírusfenyegetést észlel, vissza kell nyernie a vállalati erőforrásokhoz való hozzáférését.  
@@ -50,7 +51,7 @@ Ha a Lookout for Work alkalmazás biztonsági vagy vírusfenyegetést észlel, v
 
 A Lookout for Work által fenyegetőnek ítélt alkalmazás telepítésekor az alábbi képernyőképen láthatóhoz hasonló üzenetet kap.  
 
-![Példa képernyőkép a Lookout for Work alkalmazás felületén megjelenő vírusriasztási Lookout-üzenettel. Ezen három gomb látható: „Bezárás”, „További információ” és „Eltávolítás”.](./media/lookout-virus-alert-android.png)  
+![Példa képernyőkép a Lookout for Work alkalmazás felületén megjelenő vírusriasztási Lookout-üzenettel. Három gomb látható: "Bezárás" "További információ" és "Eltávolítás".](./media/lookout-virus-alert-android.png)  
 
 A vállalati e-mailhez és adatokhoz való hozzáférést a kérdéses alkalmazás eltávolításával szerezheti vissza. Amíg az alkalmazás az eszközén van, Ön nem fog hozzáférni a vállalati erőforrásokhoz.    
 

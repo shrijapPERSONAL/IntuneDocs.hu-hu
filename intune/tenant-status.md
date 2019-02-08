@@ -13,12 +13,13 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98b3180bc90c7b54213781ddf8b6668918b22dd3
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f8bdb74c19e6b996bafc9284bfedaf0608fdf8fb
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203795"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834619"
 ---
 # <a name="intune-tenant-status-page"></a>Az Intune bérlői állapota lap
 Egy információs központ, a bérlő állapotának lap segítségével naprakész a fontos a bérlő, licenc rendelkezésre állásáról és használata, összekötő állapotát, és az Intune szolgáltatással kapcsolatos fontos kommunikáció.  
@@ -67,7 +68,7 @@ Információk megtekintéséhez *az Intune szolgáltatás állapota*, a fióknak
 
 A kommunikációs beállítások az Intune szolgáltatás állapotát a Microsoft 365 felügyeleti központban csak beállítása.
 
-## <a name="intune-news"></a>Az Intune-hírek  
+## <a name="intune-news"></a>Intune News  
 Tájékoztató kommunikáció az Intune szolgáltatás csapat megtekintéséhez nyissa meg az Office Üzenetközpontjában nélkül. Kommunikációs üzeneteket, amelyek nemrég történt az Intune szolgáltatásba, vagy az a bérlőhöz tartozó von a változásokat tartalmazza.  
 
 Alapértelmezés szerint a legutóbbi 10 aktív üzenetek jelennek meg. Régebbi üzeneteket megtekintéséhez jelölje ki **lásd a régebbi üzeneteket** megnyitásához a *üzenetközpont* a Microsoft 365 felügyeleti központ portálján.  

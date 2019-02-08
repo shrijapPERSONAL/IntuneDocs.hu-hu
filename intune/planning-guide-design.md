@@ -16,12 +16,13 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: f0159b4d33112e507556ceb53505eedc57ec05f7
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 192e0ac0e67fb519f1dcd2ff9faf0d7748942997
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112986"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834534"
 ---
 # <a name="create-a-design"></a>Terv létrehozása
 
@@ -211,7 +212,7 @@ A saját eszközlistájának kidolgozásához [letöltheti a fenti táblázat sa
 
 Az Intune támogatja a vállalati, illetve a személyes tulajdonban lévő eszközöket is. Azok az eszközök minősülnek vállalati tulajdonúaknak, amelyeket egy eszközregisztráció-kezelő vagy egy készülékregisztrációs program regisztrál. Ilyen lehet például egy, az Apple Készülékregisztrációs programmal regisztrált eszköz, amelyet vállalati tulajdonúként jelölnek meg, és egy olyan eszközcsoportba helyezik, amely célzott vállalati szabályzatokat és alkalmazásokat kap.
 
-A vállalati és a személyes tulajdonban lévő eszközökkel kapcsolatos használati esetekről a [3. szakasz: Használatieset-forgatókönyvek követelményeinek meghatározása](planning-guide-requirements.md) nyújt további tájékoztatást.
+Tekintse meg [3. szakasz: Használatieset-forgatókönyvek követelményeinek meghatározása](planning-guide-requirements.md) vonatkozó további információ a vállalati és a BYOD használati eseteket.
 
 ### <a name="bulk-enrollment"></a>Tömeges regisztrálás
 
@@ -257,10 +258,10 @@ Platformonként legalább egy konfigurációs szabályzatot célszerű létrehoz
 
 | **Szabályzat neve** | **Eszközplatform** | **Beállítások** | **Célcsoport** |   
 |:---:|:---:|:---:|:---:|
-| Vállalati – iOS | iOS | PIN-kód szükséges, Hossz: 6, Felhőbeli biztonsági mentés korlátozása | Vállalati eszközök |                                                           
-| Vállalati – Android | Android | PIN-kód szükséges, Hossz: 6, Felhőbeli biztonsági mentés korlátozása | Vállalati eszközök |                                                           
-| BYOD – iOS  | iOS | PIN-kód szükséges. Hossz: 4 | BYOD-eszközök |
-| BYOD – Android  | Android | PIN-kód szükséges. Hossz: 4 | BYOD-eszközök |
+| Vállalati – iOS | iOS | PIN-kód megadása kötelező, hossza: 6, Felhőbeli biztonsági mentés korlátozása | Vállalati eszközök |                                                           
+| Vállalati – Android | Android | PIN-kód megadása kötelező, hossza: 6, Felhőbeli biztonsági mentés korlátozása | Vállalati eszközök |                                                           
+| BYOD – iOS  | iOS | PIN-kód megadása kötelező, hossza: 4 | BYOD-eszközök |
+| BYOD – Android  | Android | PIN-kód megadása kötelező, hossza: 4 | BYOD-eszközök |
 
 
 A saját konfigurációs szabályzatainak meghatározásához [letöltheti a fenti táblázat sablonját](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).

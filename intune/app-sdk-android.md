@@ -15,12 +15,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: d5d29db61191306e60b0c3ac756620e836b56dd6
-ms.sourcegitcommit: 121e550bf686f38cba1a02fa37f7039358b4a446
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f51d229e745a1e545d0853fa9e710a06cbfe6f8b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53378283"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851423"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>A Microsoft Intune App SDK Androidon – útmutató fejlesztőknek
 
@@ -40,9 +41,9 @@ Az Intune App SDK-ban a következő fájlok találhatók:
 * **Microsoft.Intune.MAM.SDK.Support.v17.jar**: A támogatási könyvtárat az osztályok az Androidos v17 használó alkalmazásokban a MAM engedélyezéséhez szükségesek. 
 * **Microsoft.Intune.MAM.SDK.Support.Text.jar**: Az osztályokat, amelyek az Android-alkalmazásokban a MAM engedélyezéséhez szükségesek támogatja az erőforrástár-osztályok a `android.support.text` csomagot.
 * **Microsoft.Intune.MDM.SDK.DownlevelStubs.jar**: A JAR-fájl tartalmazza a fájl az Android rendszer osztályokat, amelyek csak újabb eszközökön található, de a MAMActivity módszerek hivatkozik. Az újabb eszközök figyelmen kívül hagyják ezeket az osztálycsonkokat. Erre a Jar-fájlra csak akkor van szükség, ha az alkalmazása a MAMActivity osztályból származtatott osztályokon reflexiót végez, és így a legtöbb alkalmazásba nem szükséges belefoglalni. A Jar-fájl használata esetén ügyeljen rá, hogy a fájlban található összes osztályt ki kell zárnia a ProGuard hatóköréből. Mindegyik az „android” gyökércsomag alatt lesz megtalálható
-* **com.microsoft.Intune.mam.build.JAR**: A Gradle-beépülő modul amely [az SDK integrálásával segédeszközök](#build-tooling).
+* **com.microsoft.intune.mam.build.jar**: A Gradle-beépülő modul amely [az SDK integrálásával segédeszközök](#build-tooling).
 * **CHANGELOG.txt**: Minden SDK-verzióban végzett módosítások szolgáltat információt.
-* **THIRDPARTYNOTICES. TXT**:  Attribútumértesítés, amely a külső és/vagy OSS kódnak az alkalmazásba fordítására.
+* **THIRDPARTYNOTICES.TXT**:  Attribútumértesítés, amely a külső és/vagy OSS kódnak az alkalmazásba fordítására.
 
 ## <a name="requirements"></a>Követelmények
 
@@ -834,7 +835,7 @@ mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBeha
 
 ### <a name="important-implementation-notes"></a>Fontos megjegyzések az implementálással kapcsolatban
 
-#### <a name="authentication"></a>Hitelesítés
+#### <a name="authentication"></a>Authentication
 
 * Amikor az alkalmazás meghívja a `registerAccountForMAM()` metódust, kis idővel utána visszahívást kaphat egy másik szálon a `MAMServiceAuthenticationCallback` interfészén. Ideális esetben az alkalmazás már a fiók regisztrálása előtt beszerezte saját jogkivonatát az ADAL-tól, ezzel meggyorsítva a **MAMService-jogkivonat** beszerzését. Ha az alkalmazás a visszahívásból érvényes jogkivonatot ad vissza, a beléptetés folytatódik, és az alkalmazás egy értesítésben kapja meg a végeredményt.
 

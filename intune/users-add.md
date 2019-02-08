@@ -16,12 +16,13 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: 76721710f266ff5f25dca763d7b6cca561050610
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 01f1102c71aa182a63e395c3ee3be21a134ff0b3
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184573"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846315"
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>Felhasználók hozzáadása és rendszergazdai engedély biztosítása az Intune-hoz
 
@@ -59,7 +60,7 @@ Az Intune-előfizetéshez manuálisan is hozzáadhat felhasználókat az [Office
 3. A Felügyeleti központban válassza az **Új felhasználó** elemet.
    ![Képernyőkép az Új felhasználó hozzáadása elemről](media/intune-add-user.png)
 4. Adja meg a következő felhasználói adatokat:
-   - **Név**
+   - **Name (Név)**
    - **Felhasználónév** – Az új név az Azure Active Directory portálon ![Képernyőkép a név és a felhasználónév hozzáadásáról](media/intune-add-user-info.png) Válassza az **OK** gombot a folytatáshoz.
 5. Szükség esetén a következő felhasználói tulajdonságokat is megadhatja:
    - **Profil** – Munkahelyi adatok, többek között a **Beosztás megnevezése** és a **Részleg**

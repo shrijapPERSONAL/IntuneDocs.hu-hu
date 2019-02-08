@@ -14,12 +14,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: de0df4878d2461d2f7c0a022a7e3d305e58aef7f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2de0d4cb00ea6bdeef40a9e6f6e400304a003b00
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187786"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848542"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Partner hitelesítésszolgáltató hozzáadása az Intune-ban SCEP protokollal
 
@@ -69,16 +70,16 @@ Ahhoz, hogy egy külső SCEP-kiszolgáló egyéni kérdésen alapuló ellenőrz�
 
 Ehhez mindenképpen rendelkeznie kell az Azure AD-alkalmazás regisztrálásához szükséges engedélyekkel. A lépéseket a [Szükséges engedélyek](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#required-permissions) című szakasz ismerteti.
 
-**1. lépés: Azure AD-alkalmazás létrehozása**
+**1. lépés: Az Azure AD-alkalmazás létrehozása**
 
-1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Válassza az **Azure Active Directory** > **Alkalmazásregisztráció** > **Új alkalmazás regisztrálása** lehetőséget.
 3. Adjon meg egy nevet és bejelentkezési URL-címet. Az Alkalmazástípus mezőben válassza a **Webalkalmazás / API** lehetőséget.
-4. Válassza a **Létrehozás** lehetőséget.
+4. Kattintson a **Létrehozás** gombra.
 
 Az [Alkalmazások integrálása az Azure Active Directory-val](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) című cikkben néhány útmutatást, köztük az URL-címre és a névre vonatkozó tanácsot talál az alkalmazás létrehozásához.
 
-**2. lépés: Engedélyek kiosztása**
+**2. lépés: Jogosultságok megadása**
 
 Alkalmazása létrehozása után adja meg a Microsoft Intune API-nak a szükséges engedélyeket:
 
@@ -87,7 +88,7 @@ Alkalmazása létrehozása után adja meg a Microsoft Intune API-nak a szükség
 3. A **Szükséges engedélyek** alatt válassza a **SCEP ellenőrző kérdés** > **Kiválasztás** lehetőséget.
 4. A módosítások mentéséhez válassza a **Kész** gombot.
 
-**3. lépés: az alkalmazásazonosító és a hitelesítési kulcs beszerzése**
+**3. lépés: Az Alkalmazásazonosító és hitelesítési kulcs beszerzése**
 
 Ez után szerezze be Azure AD-alkalmazása azonosító- és kulcs-értékeit. A következő értékekre van szükség:
 

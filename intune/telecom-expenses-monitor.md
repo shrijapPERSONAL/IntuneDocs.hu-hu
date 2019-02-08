@@ -16,12 +16,13 @@ ms.reviewer: sumitp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b3ca1b95a6dcf7bdc30b61469fa747894d20fe73
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7514aef9ee94e774ff2e2fca1008966a92a24e0e
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188092"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842014"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Távközlésiköltség-kezelő szolgáltatás beállítása az Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -56,7 +57,7 @@ Az Intune jelenleg a következő távközlésiköltség-kezelő szolgáltatókka
 
 Mielőtt hozzálát, győződjön meg róla, hogy van előfizetése az Intune-ra és a Datalert távközlésiköltség-kezelő szolgáltatásra.
 
-### <a name="step-1-connect-the-datalert-service-to-microsoft-intune"></a>1. lépés: A Datalert szolgáltatás csatlakoztatása a Microsoft Intune-hoz
+### <a name="step-1-connect-the-datalert-service-to-microsoft-intune"></a>1. lépés: A Datalert szolgáltatás csatlakoztatása a Microsoft Intune-bA
 
 1. Jelentkezzen be a Datalert felügyeleti konzolra a rendszergazdai hitelesítő adataival.
 
@@ -88,11 +89,11 @@ Mielőtt hozzálát, győződjön meg róla, hogy van előfizetése az Intune-ra
 
    ![A Datalert sikeres csatlakozást jelző lapja](./media/tem-datalert-mdm-profiles.png)
 
-### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>2. lépés: Annak ellenőrzése, hogy aktív-e az Intune távközlésiköltség-kezelési funkciója
+### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>2. lépés: Ellenőrizze, hogy a távközlésiköltség-kezelési funkciója-e aktív az Intune-ban
 
 A fenti 1. lépés befejeződése után a kapcsolatnak elvben automatikusan engedélyezve kell lennie, és az Azure Portalon az **Aktív** kapcsolati állapotnak kell látszania. Ezek a lépések bemutatják, hogyan ellenőrizheti, **Aktív**-e az állapot.
 
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 
@@ -152,7 +153,7 @@ Hozza létre a Datalert alkalmazást mindegyik platformhoz az Intune-ban, a köv
 
    ![Képernyőkép a Szabályzat hozzáadása panelről](./media/tem-assign-datalert-app-to-device-group.png)
 
-### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>4. lépés: Vállalati telefon-előfizetések felvétele a Datalert konzoljába
+### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>4. lépés: Adja hozzá a Vállalati telefon-előfizetéseket a Datalert konzoljába
 
 Mostanra úgy konfigurálta az Intune és a Datalert szolgáltatást, hogy tudjanak kommunikálni egymással. Most fel kell vennie a vállalati telefon-előfizetéseket a Datalert konzoljába, és meg kell határoznia, hogy milyen küszöbértékek érvényesek a honos hálózaton és a roaming során való használatra, és milyen intézkedés történik a megszegésük esetén. A vállalati telefon-előfizetéseket manuálisan is felveheti a Datalert konzoljába, vagy megvárhatja, hogy az eszköz Intune-regisztrációja után azok automatikusan fel legyenek véve.
 
@@ -180,7 +181,7 @@ Ha letiltja a Datalert szolgáltatást az Azure Portalon:
 
 1. Az Azure Portal **Távközlési költségek kezelése** paneljén válassza a **Letiltás** lehetőséget.
 
-2. Válassza a **Mentés** lehetőséget.
+2. Kattintson a **Mentés** gombra.
 
 ## <a name="viewing-data-usage-and-roaming-reports"></a>Az adathasználati és roamingjelentések megtekintése
 

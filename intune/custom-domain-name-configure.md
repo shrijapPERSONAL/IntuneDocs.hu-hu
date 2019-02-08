@@ -16,12 +16,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: a4227399eb5cf1d2cc2e265215eccb2c05d73ac5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 456281d5b77933ef82ee734add9f8d7eaf18750b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181496"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839457"
 ---
 # <a name="configure-a-custom-domain-name"></a>Állítson be egy egyéni tartománynevet
 
@@ -46,11 +47,11 @@ A kezdeti onmicrosoft.com tartománynév nem nevezhető át és nem távolíthat
 
 2. A navigációs ablakban kattintson a **Beállítás** &gt; **Tartományok** elemre.
 
-3. Kattintson a **Tartomány felvétele** gombra, és írja be az egyéni tartománynevet. Válassza a **Tovább** elemet.
+3. Kattintson a **Tartomány felvétele** gombra, és írja be az egyéni tartománynevet. Kattintson a **Tovább** gombra.
    ![Képernyőkép az Office 365 Felügyeleti központ > Tartományok kiválasztásáról és új tartománynév hozzáadásáról](./media/domain-custom-add.png)
 4. A megnyíló **Tartomány hitelesítése** párbeszédpanelen megtalálhatja a DNS-szolgáltatón létrehozandó TXT-rekord értékeit.
-    - **GoDaddy-felhasználók:** Az Office 365 felügyeleti portálja a GoDaddy bejelentkezési oldalára irányít át. A hitelesítő adatok megadása és a tartományváltást engedélyező megállapodás elfogadása után a TXT-rekord automatikusan létrejön. Alternatív módszerként [a TXT-rekord manuálisan is létrehozható](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a).
-    - **Register.com-felhasználók:** Kövesse a TXT típusú rekord létrehozására vonatkozó [részletes utasításokat](https://support.office.com/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e#BKMK_verify).
+    - **GoDaddy-felhasználók**: Az Office 365 felügyeleti portálja átirányítja a GoDaddy bejelentkezési lapjára. A hitelesítő adatok megadása és a tartományváltást engedélyező megállapodás elfogadása után a TXT-rekord automatikusan létrejön. Alternatív módszerként [a TXT-rekord manuálisan is létrehozható](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a).
+    - **Register.com-felhasználók**: Kövesse a [részletesen](https://support.office.com/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e#BKMK_verify) a TXT-rekord létrehozásához.
 
 Az egyéni tartományok hozzáadásának és hitelesítésének lépései [az Azure Active Directoryban is végrehajthatók](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/).
 
