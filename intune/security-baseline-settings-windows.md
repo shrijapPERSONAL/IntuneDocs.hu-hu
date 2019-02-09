@@ -5,7 +5,7 @@ description: Windows biztonsági Alapterv beállítások suported Intune-nal
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/04/2019
+ms.date: 02/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,17 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86bfda9d7220ea3557bb12a5d6c8ce6ed8cd3932
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 91a8364927667bbc910d86dc3e95f447eb5cf93a
+ms.sourcegitcommit: 77c63ddb51ffd5258f4ea0e68672c2eb011b83e1
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840603"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55905815"
 ---
 # <a name="windows-security-baseline-settings-for-intune"></a>Windows biztonsági Alapterv beállítások az Intune-hoz  
 
 Nézet a [Windows biztonsági Alapterv beállítások](security-baselines.md) , amely a Microsoft Intune által támogatott.  
 
+> [!NOTE]  
+> A Windows biztonsági Alapterv beállítások vannak előzetes verzióban érhető el. Az előzetes verzió, a rendelkezésre álló beállítások, valamint a sorrendet, amelyben ez a tartalom megadja ezeket a beállításokat listája gyártmányától mi érhető el a portálon.  
+>  
+> Amikor alapvető beállítások verziója, ezt a tartalmat a rendszer ekkor frissíti a biztonsági alapkonfiguráció beállítások az Intune által támogatott-az előzetes verzió listájában.  
 
 ## <a name="above-lock"></a>Zárolási felett  
 További információkért lásd: [házirend CSP - AboveLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock) a Windows dokumentációjában.  
@@ -164,11 +168,12 @@ További információkért lásd: [házirend CSP - DeviceGuard](https://docs.mic
   Bekapcsolja a virtualizálás-alapú biztonság (VBS) a következő újraindításkor. A virtualizálás-alapú biztonság a Windows hipervizorral nyújt támogatást biztonsági szolgáltatásokhoz.
   - **Alapértelmezett**: Igen  
 
-- **A DMA biztonságos rendszerindítás engedélyezése**  
-  Hajtsa végre a parancsokat, többek között lehetősége van a biztonságos rendszerindítást és a biztonságos rendszerindítást a DMA beállításait. A legtöbb esetben azt javasoljuk, hogy a biztonságos rendszerindítás választja. Ezt a lehetőséget biztosít a biztonságos rendszerindítás lehető védelmére, egy adott számítógép hardvere támogatja. Bemeneti/kimeneti memória felügyeleti egységek (IOMMUs) rendelkező számítógép DMA protection részesül a biztonságos rendszerindítást. Egy számítógép nélkül IOMMUs egyszerűen lesz engedélyezve a biztonságos rendszerindítás. Ezzel szemben a biztonságos rendszerindítással a DMA, a beállítás lehetővé teszi a biztonságos rendszerindítás –, és .vbs fájlok maga – csak olyan számítógépen, amely támogatja a DMA, azaz IOMMUs rendelkező számítógép. Ezzel a beállítással bármely számítógépre IOMMUs nélkül nem fog tudni VBS vagy HVCI védelmet, bár továbbra is rendelkezik a WDAC engedélyezve van.
+<!-- not yet available 
+- **Enable secure boot with DMA**  
+  Among the commands that follow, you can choose settings for Secure Boot and Secure Boot with DMA. In most situations, we recommend that you choose Secure Boot. This option provides Secure Boot with as much protection as is supported by a given computer’s hardware. A computer with input/output memory management units (IOMMUs) will have Secure Boot with DMA protection. A computer without IOMMUs will simply have Secure Boot enabled. In contrast, with Secure Boot with DMA, the setting will enable Secure Boot—and VBS itself—only on a computer that supports DMA, that is, a computer with IOMMUs. With this setting, any computer without IOMMUs will not have VBS or HVCI protection, although it can still have WDAC enabled.
   
-  - **Alapértelmezett**: Igen  
-  
+  - **Default**: Yes  
+  -->
 - **Indítsa el a rendszer őrfeltétel**  
   - **Alapértelmezett**: Engedélyezve  
 
@@ -181,11 +186,11 @@ További információkért lásd: [házirend CSP - DeviceInstallation](https://d
   
     - **Megfelelő hardveres eszközök eltávolítása**  
       Ez a beállítás nem érhető el, csak ha *hardveres eszköz telepítése által készülékazonosítók* értékre van állítva *hardveres eszköz telepítést*.
-      - **Alapértelmezett**: *Alapértelmezett konfiguráció nélkül*
+      - **Alapértelmezett**: Igen
   
     - **Hardver eszközök azonosítói nem futtatható**  </br>
       Ez a beállítás nem érhető el, csak ha *hardveres eszköz telepítése által készülékazonosítók* értékre van állítva *hardveres eszköz telepítést*.
-      - **Alapértelmezett**: *Alapértelmezett konfiguráció nélkül*  
+      - **Alapértelmezett**: Igen  
   
 - **A telepítő osztályok hardveres eszköz telepítése**  
   A házirend-beállítás lehetővé teszi, hogy az eszköz beállítása osztály globálisan egyedi azonosítóra (GUID, hogy Windows rendszer akadályozza az eszközillesztők) egy listában megadhatja a. A házirend-beállítás élvez bármely más házirend-beállítás lehetővé teszi, hogy a Windows eszköz telepítése. Ha ez a szabályzatbeállítás engedélyezi, Windows van ebben az esetben telepítésekor vagy frissítésekor az eszköz-illesztőprogramokat, amelyek osztályát GUID szerepelnek a listán hoz létre. Ha engedélyezi ezt a beállítást, a távoli asztali kiszolgálón, a házirend-beállítást befolyásolja irányíthassa át a megadott eszközök, a távoli asztali ügyfélhez a távoli asztali kiszolgálónak. Ha letiltja vagy nem konfigurálja ezt a beállítást, telepítheti a Windows és a frissítési eszközök engedélyezett, vagy egyéb házirend-beállítás megakadályozza.
@@ -299,23 +304,23 @@ További információkért lásd: [házirend CSP - fájlkezelő](https://docs.mi
 
 ## <a name="internet-explorer"></a>Internet Explorer  
 További információkért lásd: [házirend CSP - InternetExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer) a Windows dokumentációjában.  
-
-- **A bejövő e-mailek vizsgálata**  
-  Engedélyezi vagy letiltja az e-mailek vizsgálata.
-  - **Alapértelmezett**: Letiltva  
+<!-- not yet available 
+- **Scan incoming mail messages**  
+  Allows or disallows scanning of email.
+  - **Default**: Disabled  
   
-- **Office-alkalmazások indítsa el a gyermek-folyamat típusa**  
-  Office-alkalmazások nem lesz engedélyezett szükséges gyermekelemek létrehozásához a folyamatokat. Ez magában foglalja a Word, Excel, PowerPoint, a OneNote és a hozzáférés. Ez az egy tipikus kártevő szoftverek, különösen a makró-alapú támadásokkal szemben, amelyek az Office-alkalmazások elindításához, vagy letöltheti a rosszindulatú végrehajtható fájlok.
-  - **Alapértelmezett**: Letiltás  
+- **Office apps launch child process type**  
+  Office apps will not be allowed to create child processes. This includes Word, Excel, PowerPoint, OneNote, and Access. This is a typical malware behavior, especially for macro-based attacks that attempt to use Office apps to launch or download malicious executables.
+  - **Default**: Disable  
   
-- **Defender minta küldésének jóváhagyás típusa**  
-  A felhasználó hozzájárul a szint a Windows Defender adatküldéshez. Ha már rendelkezik a szükséges feltételeket, a Windows Defender küldi el őket. Ha nincs (és ha a felhasználó soha nem szeretne feltenni által megadott), a felhasználói felület a felhasználó hozzájárulását (amikor a Defender/AllowCloudProtection engedélyezett) az adatok küldésének kérjen indul el.
-  - **Alapértelmezett**: Letiltás  
+- **Defender sample submission consent type**  
+  Checks for the user consent level in Windows Defender to send data. If the required consent has already been granted, Windows Defender submits them. If not (and if the user has specified never to ask), the UI is launched to ask for user consent (when Defender/AllowCloudProtection is allowed) before sending data.
+  - **Default**: Disable  
   
-- **Aláírás-frissítési időköz (óra)**  
-  Defender aláírás-frissítési időköz (óra)
-  - **Alapértelmezett**: Letiltva  
-  
+- **Signature update interval (in hours)**  
+  Defender signature update interval in hours
+  - **Default**: Disabled  
+ -->
 - **Az Internet Explorer internetes zóna hozzáférést az adatforrásokhoz**  
   Ez a házirend-beállítással kezelheti, hogy az Internet Explorer érhessék el az adatokat a Microsoft XML Parser (MSXML) vagy ActiveX Data Objects (ADO) használatával egy másik biztonsági zónából. Ha ez a szabályzatbeállítás engedélyezi, a felhasználók betölthetnek egy oldal, amely az MSXML vagy ADO használ a zóna egy másik helyről származó adatok eléréséhez a zónában. Kérdés a legördülő mezőben válassza ki, ha a rendszer megkérdezi a felhasználókat, döntse el, hogy egy oldalon kell betölteni a zónában, amely az MSXML vagy ADO használ a zóna egy másik helyről származó adatok eléréséhez. Ha letiltja ezt a beállítást, a felhasználók nem tudják betölteni egy oldal, amely az MSXML vagy ADO használ a zóna egy másik helyről származó adatok eléréséhez a zónában. Ha nem konfigurálja ezt a beállítást, a felhasználók nem tudják betölteni egy oldal, amely az MSXML vagy ADO használ a zóna egy másik helyről származó adatok eléréséhez a zónában.
   - **Alapértelmezett**: Letiltás  
@@ -944,12 +949,12 @@ További információkért lásd: [házirend CSP - RemoteManagement](https://doc
   Ez a házirend-beállítással kezelheti, hogy a Windows Rendszerfelügyeleti (webszolgáltatások WinRM) ügyfél használja a kivonatoló hitelesítés. Ha ez a szabályzatbeállítás engedélyezi, a WinRM-ügyfél nem használja a kivonatoló hitelesítés. Ha letiltja vagy nem konfigurálja ezt a beállítást, a WinRM-ügyfél használja a kivonatoló hitelesítés.
   - **Alapértelmezett**: Engedélyezve
   
-- **Ügyfél-kivonatoló hitelesítés letiltása**  
-  A házirend-beállítás lehetővé teszi, hogy szabályozhatja, hogy a Windows Rendszerfelügyeleti (webszolgáltatások WinRM) szolgáltatás elküldi a hálózaton keresztül nem titkosított üzeneteket fogad. Ha ez a szabályzatbeállítás engedélyezi, a WinRM-ügyfél küld, és nem titkosított üzeneteket fogad a hálózaton keresztül. Ha letiltja vagy nem konfigurálja ezt a beállítást, a WinRM-ügyfél üzeneteket küldő vagy fogadó csak titkosított a hálózaton keresztül.
+- **Nem titkosított forgalmat**  
+  A házirend-beállítás lehetővé teszi, hogy szabályozhatja, hogy a Windows Rendszerfelügyeleti (webszolgáltatások WinRM) szolgáltatás elküldi a hálózaton keresztül nem titkosított üzeneteket fogad. Ha ez a szabályzatbeállítás engedélyezi, a WinRM-ügyfél küld, és nem titkosított üzeneteket fogad a hálózaton keresztül. Ha letiltja vagy nem konfigurálja ezt a beállítást, a WinRM-ügyfél üzeneteket küldő vagy fogadó csak titkosított a hálózaton keresztül.  
   - **Alapértelmezett**: Letiltva
   
-- **Ügyfél-kivonatoló hitelesítés letiltása**  
-  Határidőnapló a házirend-beállítással szabályozhatja, hogy a Windows Rendszerfelügyeleti (webszolgáltatások WinRM) szolgáltatás elküldi a hálózaton keresztül nem titkosított üzeneteket fogad teszi lehetővé. Ha ez a szabályzatbeállítás engedélyezi, a WinRM-ügyfél küld, és nem titkosított üzeneteket fogad a hálózaton keresztül. Ha letiltja vagy nem konfigurálja ezt a beállítást, a WinRM-ügyfél üzeneteket küldő vagy fogadó csak titkosított a hálózaton keresztül.
+- **Titkosítatlan ügyfél forgalmát**  
+  Ez a házirend-beállítással kezelheti, hogy a Windows Rendszerfelügyeleti (webszolgáltatások WinRM) ügyfél küld, és nem titkosított üzeneteket fogad a hálózaton keresztül. Ha ez a szabályzatbeállítás engedélyezi, a WinRM-ügyfél küld, és nem titkosított üzeneteket fogad a hálózaton keresztül. Ha letiltja vagy nem konfigurálja ezt a beállítást, a WinRM-ügyfél üzeneteket küldő vagy fogadó csak titkosított a hálózaton keresztül.
   - **Alapértelmezett**: Letiltva
   
 - **Ügyfél alapszintű hitelesítés**  

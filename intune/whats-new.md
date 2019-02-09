@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ee33525c382b09952a28fad09ee7844e73f2257
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 299e76d55cd5fc61d96a81a49f721bc5c0c69a11
+ms.sourcegitcommit: 77c63ddb51ffd5258f4ea0e68672c2eb011b83e1
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850394"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55905849"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -283,7 +283,7 @@ Az új felületen saját szavaival fejtheti ki problémáját, valamint hibaelh�
 ### <a name="role-based-access-control"></a>Szerepköralapú hozzáférés-vezérlés
 
 #### <a name="scope-tags-for-apps----1081941---"></a>Hatókörcímkék alkalmazásokhoz <!-- 1081941 -->
-Hatókörcímkék korlátozni a szerepköröket és alkalmazásokat hozhat létre. Hatókörcímke adhat hozzá egy alkalmazáshoz, így csak is az adott hatókörcímke hozzárendelt szerepkörrel rendelkező személyek hozzáférhetnek az alkalmazáshoz. Apple Volume Purchase Program (VPP) használatával vásárolt alkalmazások hatókörcímkék nem lehet hozzárendelni.  További információkért lásd: [használja a szűrő házirendek hatókörcímkék](scope-tags.md).
+Hatókörcímkék korlátozni a szerepköröket és alkalmazásokat hozhat létre. Hatókörcímke adhat hozzá egy alkalmazáshoz, így csak is az adott hatókörcímke hozzárendelt szerepkörrel rendelkező személyek hozzáférhetnek az alkalmazáshoz. Jelenleg a felügyelt Google Play vagy az Apple Volume Purchase Program (VPP) használatával megvásárolt alkalmazások Intune-hoz hozzáadott alkalmazások nem lehet hozzárendelni a hatókörcímkék (de támogatása a jövőben fognak érkezni). További információkért lásd: [használja a szűrő házirendek hatókörcímkék](scope-tags.md).
 
 
 
