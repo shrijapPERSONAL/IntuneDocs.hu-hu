@@ -16,17 +16,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2a4e8a6baf1c2e958f4984e0182a28e4c221c419
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 2706a12f9f4844f96d279f753e7cd99f159ca856
+ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55851406"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55986807"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>Az Exchange-összekötő konfigurálása az Intune-ban és az Exchange Online-ban
 A cikk segítségével a Microsoft Intune-t az Exchange Online-hoz vagy az új dedikált Exchange Online szolgáltatáshoz csatlakoztathatja. Annak megállapításához, hogy a dedikált Exchange Online-környezet **új** vagy **örökölt** verzió, lépjen kapcsolatba a fiókkezelővel.
 
 A **szolgáltatások közötti összekötő** használatával az Exchange ActiveSync (EAS) és az Intune által felügyelt eszközöket is egyetlen rendszergazdai konzolról felügyelheti.  Az összekötőben az Exchange Online feltételes hozzáférésének engedélyezése nem szükséges.
+
+A feltételes hozzáférés egy bevezetésének megtervezésekor fontos gyakran mely felhasználók és felhasználói száma fog rendelkezni az új felhasználói felületre. Az Office 365 felügyeleti központ biztosítja ezt, egy Exchange Online e-mailek Alkalmazáshasználati jelentés az adott portál tevékenységre vonatkozó jelentések funkcióját részeként formájában. Ezek a jelentések megismeréséhez a környezetében mobil e-mail-elfogadása előtt, és a feltételes hozzáférés üzembe helyezése után is használható.
 
 ## <a name="service-to-service-connector-requirements"></a>A Service to Service Connector használatára vonatkozó követelmények
 A **Service to Service Connector** csak az Exchange Online-t és a dedikált Exchange Online-t támogatja, és nincsenek a helyszíni infrastruktúrára vonatkozó követelményei. 
