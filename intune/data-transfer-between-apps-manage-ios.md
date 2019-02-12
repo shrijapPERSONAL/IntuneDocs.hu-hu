@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eabe1bdba35c40b07c6c8e17e6a58d17ed14a966
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: f87b40a32c17ecbdfc3fc9c5bf6937d8793b4e05
+ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55843034"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55986841"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>iOS-alkalmazások közti adatátvitel felügyelete a Microsoft Intune-ban
 
@@ -50,11 +50,15 @@ Az egyszerű felhasználónév beállítását **kötelező** megadni olyan eszk
 
 2.  Az alkalmazások és az Intune vagy a külső MDM-megoldás az alábbi, általánosságban ismertetett lépések segítségével felügyelni kívánt e-mail-profil központi telepítése. Ez a tapasztalat is foglalkozik *1. példa*.
 
-3.  Az alkalmazást a következő alkalmazáskonfigurációs beállításokkal telepítse:
+3.  A felügyelt eszközök az alkalmazás a következő alkalmazáskonfigurációs beállításokkal telepítse:
 
       **kulcs** = IntuneMAMUPN, **érték** = <username@company.com>
 
       Példa: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
+      
+       > [!NOTE]
+       > Az alkalmazáskonfigurációs szabályzatot az Intune-ban nem lehet a "Felügyelt eszközök" eszközregisztráció típusa.
+       > Addicionally, az alkalmazásnak kell lennie, vagy telepítve van az Intune céges portálról, ha elérhető vagy leküldött, az eszköz szükség szerint állítsa be. 
 
 4.  Telepítse a regisztrált eszközökre a **Megnyitási engedélyek felügyelete** szabályzatot a az Intune vagy külső MDM-szolgáltató segítségével.
 
