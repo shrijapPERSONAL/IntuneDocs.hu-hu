@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 44e2d29222cfbab3d22ae9746d3cc42d7c959f04
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: ac339ca700d12c11e22f5d127a5f2435a849f0ee
+ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55841589"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55986926"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Felhasználói felületi frissítések az Intune végfelhasználói alkalmazásaiban
 A cikkből megismerheti, mit módosítottunk a végfelhasználók számára látható alkalmazások felhasználói felületén ebben a Microsoft Intune-kiadásban. Ez segítségére lehet a felhasználói kommunikációban és az Ön üzemeltetési környezetének támogatására létrehozott egyéni dokumentáció frissítésében. Annak megértését is megkönnyíti, hogy miképpen háríthatja el jobban a végfelhasználók által tapasztalt hibákat, ha telefonos segítséget igényelnek a Céges portál használatához.
@@ -32,7 +32,7 @@ A cikkből megismerheti, mit módosítottunk a végfelhasználók számára lát
 ## <a name="week-of-november-12-2018"></a>2018. November 12 hete
 
 ### <a name="windows-company-portal-keyboard-shortcuts----2771518---"></a>A Windows rendszerű Céges portál billentyűparancsai <!-- 2771518 -->
-A végfelhasználók mostantól az eszközökre és alkalmazásokra vonatkozó műveleteket a Windows rendszerű céges portál billentyűparancsaival is aktiválhatják.
+A végfelhasználók mostantól átláthatják, a Windows céges portál alkalmazás és eszköz műveleteket aktiválhat [billentyűparancsokkal (megoldásgyorsítók)](https://docs.microsoft.com/intune/company-portal-app#windows-company-portal-keyboard-shortcuts).
 
 ## <a name="week-of-october-22-2018"></a>2018. október 22-i hét
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 722ab086f0a353eff3ed4737fdd2a92f80bf46ce
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 91923f1569c3f74c0e06aad3b92a77b677488072
+ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55833922"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086063"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Alkalmazásadatok és -hozzárendelések figyelése a Microsoft Intune-ban
 
@@ -81,7 +81,7 @@ Az eszközállapot-lista akkor jelenik meg, ha a menü **Figyelés** szakasz **E
 | **Eszköz neve**      | Az eszköz neve az eszközök elnevezését megengedő platformokon. Más platformokon az Intune hoz létre nevet más tulajdonságok alapján. Ez az attribútum nem érhető el semmilyen más eszközön.                                                                       |
 | **Felhasználónév**        | A felhasználó neve.                                                                                                                                                                                                                                      |
 | **Platform**         | Az eszköz operációs rendszere (Windows, iOS, Android és hasonlók.).                                                                                                                                                                                           |
-| **Verzió**          | Az alkalmazás verziószáma. Az üzletági alkalmazások esetében az alkalmazás teljes verziószáma jelenik meg. A teljes verziószám az alkalmazás egy adott verzióját azonosítja. A szám az alábbi formátumban jelenik meg: _Verzió_(_Build_). Például 2.2(2.2.17560800). |
+| **Verzió**          | Az alkalmazás verziószáma. Üzletági (LOB) alkalmazások esetében az alkalmazás teljes verziószáma látható. A teljes verziószám az alkalmazás egy adott verzióját azonosítja. A szám az alábbi formátumban jelenik meg: _Verzió_(_Build_). Például 2.2(2.2.17560800). Store-alkalmazások esetében nincsenek verziók láthatók. |
 | **Állapot**           | Az alkalmazás állapota.                                                                                                                                                                                                                                     |
 | **Állapot részletei**   | Az állapot részletei.                                                                                                                                                                                                                                     |
 | **Legutóbbi bejelentkezés**    | Az eszköz Intune-nal való utolsó szinkronizálásának dátuma.                                                                                                                                                                                                                  |

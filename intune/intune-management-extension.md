@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 578d28a333d064ddcaa413bc882c9f2cdbf60ffc
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 0d0594c9f14b9d18c597de9ca37826a669dde5f3
+ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55835129"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55986875"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>PowerShell-parancsfájlok kezelése az Intune-ban Windows 10-es eszközök esetén
 
@@ -47,7 +47,7 @@ Az Intune felügyeleti bővítmény előfeltételei a következők:
 
 1. Az a [az Azure portal](https://portal.azure.com), jelölje be **minden szolgáltatás** > szűréséhez **Intune** > Válassza ki **a Microsoft Intune**.
 2. Válassza az **Eszközkonfiguráció** > **PowerShell-parancsfájlok** > **Hozzáadás** lehetőséget.
-3. Adja meg a PowerShell-parancsfájl nevét és leírását a **Név** és a **Leírás** mezőben. A **Parancsfájl helye** beállításhoz keresse meg a PowerShell-parancsfájlt. A parancsfájl lehet kisebb, mint 200 KB-os (ASCII) vagy (Unicode) 100 KB méretű.
+3. Adja meg a PowerShell-parancsfájl nevét és leírását a **Név** és a **Leírás** mezőben. A **Parancsfájl helye** beállításhoz keresse meg a PowerShell-parancsfájlt. A parancsfájl nem lehet nagyobb, mint 200 KB-nál.
 4. Válassza a **Konfigurálás** elemet. Ezután adja meg, hogy a parancsfájl a felhasználó hitelesítő adataival fusson-e az eszközön (**Igen**) vagy a rendszerkörnyezetben (**Nem**). Alapértelmezés szerint a parancsfájl a rendszerkörnyezetben fut. Hacsak a parancsfájlt nem a rendszerkörnyezetben kell futtatnia, válassza az **Igen** lehetőséget. 
   ![PowerShell-parancsfájl hozzáadása panel](./media/mgmt-extension-add-script.png)
 5. Adja meg, hogy a parancsfájl megkövetelje-e egy megbízható közzétevő aláírását (**Igen**). Alapértelmezés szerint a parancsfájl aláírása nem kötelező. 

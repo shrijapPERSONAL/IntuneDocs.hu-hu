@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/28/2017
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,29 +16,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8640cf015d03c9d40d7eacbe1a4103d30db63477
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: cfe74086393ab3583c6238e6f252406665a3d17f
+ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840547"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086029"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Mit jelent a Mobile Threat Defense integrációja az Intune-nal?
-
-
-Az Intune Mobile Threat Defense-összekötők segítségével saját megfelelőségi szabályzataihoz és feltételes hozzáférési szabályaihoz olyan információkat használhat fel, amelyek egy Ön által kiválasztott, mobilfenyegetések elleni védelmet biztosító szállítótól származnak. Ez lehetővé teszi, hogy a rendszergazda magán a veszélyeknek kitett mobileszközön egy újabb védelmi réteggel védje a vállalati erőforrásokat, például az Exchange-et vagy a SharePointot.
+Intune Mobile Threat Defense külső szállítótól származó adatok integrálhatók a megfelelőségi szabályzatokról és a feltételes hozzáférési szabályok információforrásként. Ez az információ segítségével védheti a vállalati erőforrásokhoz, mint az Exchange és SharePoint-, blokkolja a hozzáférést a kitett mobileszközön.  
 
 ## <a name="what-problem-does-this-solve"></a>Milyen problémára nyújt ez megoldást?
+Integrálás a Mobile Threat Defense külső szállítótól származó információk segíthetnek a vállalati erőforrások védelme a fenyegetésekkel szemben, amelyek befolyásolják a mobil platformokra.  
 
-A vállalatoknak meg kell védeniük érzékeny adataikat a folyamatosan keletkező különböző veszélyforrásoktól, így a fizikai, az alkalmazás- és a hálózati alapú fenyegetésektől, valamint az operációs rendszer biztonsági réseitől.
-
-A vállalatok hagyományosan a számítógépeiket védik a rosszindulatú támadásoktól, miközben a mobileszközök figyelés és védelem nélkül maradnak. Noha a mobilplatformok operációs rendszerei rendelkeznek olyan beépített védelmi technikákkal, mint az alkalmazások elkülönítése és az ellenőrzött alkalmazásáruházak, e platformok továbbra is sebezhetők az egyre kifinomultabb támadásokkal szemben. Ma már egyre több alkalmazott használ mobileszközöket munkatevékenységekre, így bizalmas adatokhoz is hozzá kell férniük. Az eszközöknek védelemre van szükségük az egyre kifinomultabb támadásokkal szemben.
+Általában vállalatok proaktív a számítógépeiket védik a biztonsági rések és támadásokkal szemben, miközben a mobileszközök gyakran nem figyelt és nem védett. Mobil platformokhoz beépített védelmi technikákkal, mint az alkalmazások elkülönítése és alkalmazásáruházak rendelkezik, ahol az ezeken a platformokon a rendszer továbbra is sebezhetők az egyre kifinomultabb támadásokkal szemben. Több alkalmazott használja az eszközök a munkahelyi és a bizalmas adatok eléréséhez, a Mobile Threat Defense szállítótól információ segíthet a eszközök és az erőforrások védelme az egyre kifinomultabb támadásokkal szemben.  
 
 ## <a name="how-do-the-intune-mobile-threat-defense-connectors-work"></a>Az Intune Mobile Threat Defense-összekötők működése
 
-Az összekötő úgy védi a vállalati erőforrásokat, hogy egy kommunikációs csatornát hoz létre az Intune és egy Ön által választott, mobilfenyegetések elleni védelmet nyújtó szállító között. Az Intune Mobile Threat Defense-partnerek olyan intuitív, egyszerűen üzembe helyezhető alkalmazásokat kínálnak a mobileszközökhöz, amelyek folyamatosan vizsgálják és elemzik a fenyegetéseket, majd az információt jelentés vagy végrehajtás céljából megosztják az Intune-nal. 
+Intune-ban egy Mobile Threat Defense-összekötő használatával hozzon létre egy Intune-ban és a kiválasztott Mobile Threat Defense gyártója által biztosított közötti kommunikációs csatornát. Az Intune Mobile Threat Defense-partnerekkel intuitív, egyszerűen üzembe helyezhető alkalmazások mobileszközökre vonatkozó ajánlat. Ezek az alkalmazások aktívan vizsgálata és elemzése veszélyforrásokkal kapcsolatos megosztani az Intune-nal. Intune-ban használhatja az adatok a jelentés vagy végrehajtás céljából.  
 
-Ha például egy ilyen Mobile Threat Defense-alkalmazás azt jelzi a szállítónak, hogy a hálózat valamely telefonja egy közbeékelődéses támadásnak kitett hálózathoz csatlakozott, akkor ezt az információt megosztja, és megtörténik a kockázat besorolása is (alacsony, közepes vagy magas). Ez összevethető az Ön által az Intune-ban engedélyezett kockázati szintekkel, és eldönthető, hogy a hozzáférés bizonyos erőforrásokhoz fel legyen-e függesztve, amíg az eszköz a veszélynek kitett hálózathoz csatlakoztatva van.
+Példa: Egy csatlakoztatott Mobile Threat Defense-alkalmazás jelentések, a Mobile Threat Defense szállítónak, hogy a hálózaton a telefon jelenleg kapcsolódik egy hálózatot, amely ki van téve a Man ki a középső támadások. Ez az információ kategorizálva egy megfelelő kockázati szint alacsony, közepes vagy magas. A kockázati szint majd összeveti a kockázati szint keretek beállította az Intune-ban. Ez az összehasonlítás alapján a hozzáférést bizonyos erőforrásokhoz, a választott visszavonhatja közben az eszköz biztonsága sérül.
 
 ## <a name="what-data-does-intune-collect-for-mobile-threat-defense"></a>Milyen adatokat gyűjt az Intune a Mobile Threat Defense szolgáltatás számára?
 

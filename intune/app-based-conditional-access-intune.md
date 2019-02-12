@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/31/2017
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4cf9f004a73c88f763cbf48694b8c72de0a12fa2
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 0fa2efe5ca8a4068bad957d96220272abf7664d6
+ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846417"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56085978"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Alkalmazásalapú feltételes hozzáférés az Intune-nal
 
@@ -68,13 +68,13 @@ Ebben a példában a rendszergazda alkalmazásvédelmi szabályzatokkal látta e
 
 3. A közvetítő alkalmazás települ az eszközre.
 
-4. A közvetítő alkalmazás megkezdi az Azure AD regisztrációs folyamatát, amely eszközrekordot hoz létre az Azure AD-ben. Ez nem azonos a mobileszköz-felügyelet (MDM) beléptetési folyamatával, de erre a rekordra is szükség van, hogy a feltételes hozzáférési szabályzatokat be lehessen tartatni az eszközön.
+4. A közvetítő alkalmazás megkezdi az Azure AD regisztrációs folyamatát, amely eszközrekordot hoz létre az Azure ad-ben. Ez nem ugyanaz, mint a mobileszköz-felügyelet (MDM) beléptetési folyamatot, de ez a rekord szükség, hogy a feltételes hozzáférési szabályzatokat be lehessen tartatni az eszközön.
 
-5. A közvetítő alkalmazás ellenőrzi az alkalmazás identitását. A közvetítő alkalmazás a biztonsági rétegnek köszönhetően képes ellenőrizni, hogy az alkalmazás engedélyezett-e a felhasználó számára.
+5. A közvetítő alkalmazás ellenőrzi az alkalmazás identitását. Egy biztonsági réteget van, a közvetítő alkalmazás érvényesíthessük, ha az alkalmazás a felhasználó által engedélyezett való használatra.
 
 6. A közvetítő alkalmazás a felhasználó-hitelesítési folyamat keretében elküldi az alkalmazás ügyfél-azonosítóját az Azure AD-nek, amely ellenőrzi, hogy szerepel-e a szabályzat engedélyezési listáján.
 
-7. Az Azure AD a szabályzat engedélyezési listája alapján engedélyezi a felhasználónak a hitelesítést és az alkalmazás használatát. Ha az alkalmazás nem szerepel a listán, az Azure AD nem engedélyezi az elérését.
+7. Az Azure AD a szabályzat engedélyezési listája alapján engedélyezi a felhasználónak a hitelesítést és az alkalmazás használatát. Ha az alkalmazás nem szerepel a listában, az Azure AD megtagadja a hozzáférést az alkalmazáshoz.
 
 8. Az Outlook alkalmazás az Outlook felhőszolgáltatással kapcsolatba lépve kezdeményezi az Exchange Online-nal való kommunikációt.
 

@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 91627174c21eb6a4e4723bdc874c758aedbb2079
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: f9c6d544d98a900900dea296a5bd72de6036739d
+ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55837628"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55986824"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Windowsos eszközök megfelelőségi szabályzatainak hozzáadása az Intune-ban
 
@@ -191,8 +191,8 @@ Csak Windows 10 és újabb operációs rendszert futtató közösen kezelt eszk�
 
 #### <a name="device-security"></a>Eszközbiztonság
 
-- **A víruskereső**: Ha a beállítása **megkövetelése**, ellenőrizheti a megfelelőségi regisztrált Windows-Security Center, például a Symantec és a Windows Defender víruskereső megoldásokkal. A **Nincs konfigurálva** beállítás esetén az Intune nem ellenőrzi az eszközön telepített vírusvédelmi megoldásokat.
-- **Kémprogram-elhárító**: Ha beállítása **megkövetelése**, ellenőrizheti a megfelelőségi Windows a Security Center, például a Symantec és a Windows Defender regisztrált kémprogram-elhárító megoldásokkal. A **Nincs konfigurálva** beállítás esetén az Intune nem ellenőrzi az eszközön telepített kémprogram-elhárító megoldásokat.
+- **A víruskereső**: Ha beállítása **megkövetelése**, ellenőrizheti a megfelelőségi regisztrált vírusvédelmi megoldások használatával [Windows biztonsági központban](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/), például a Symantec és a Windows Defender. A **Nincs konfigurálva** beállítás esetén az Intune nem ellenőrzi az eszközön telepített vírusvédelmi megoldásokat.
+- **Kémprogram-elhárító**: Ha beállítása **megkövetelése**, ellenőrizheti a megfelelőségi regisztrált kémprogram-elhárító megoldásokkal [Windows biztonsági központban](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/), például a Symantec és a Windows Defender. A **Nincs konfigurálva** beállítás esetén az Intune nem ellenőrzi az eszközön telepített kémprogram-elhárító megoldásokat.
 
 ### <a name="windows-defender-atp"></a>Windows Defender ATP
 
