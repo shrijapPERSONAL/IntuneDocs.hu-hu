@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5458bdb4e6f967082fcbfd165589386dcc23cec1
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 64cd4aa629e980bf69557d6cd2c40f8bee7bd3c6
+ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55835503"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086216"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Az internet-hozzáférés kezelése Microsoft Intune-szabályzattal védett böngésző használatával
 
@@ -151,9 +151,9 @@ A Microsoft Edge vagy az Intune Managed Browser [Azure AD Alkalmazásproxyval]( 
 ### <a name="before-you-start"></a>Előkészületek
 
 - Állítsa be a belső alkalmazásokat az Azure AD alkalmazásproxyban.
-    - Az Alkalmazásproxy konfigurálásáról és az alkalmazások közzétételéről a [telepítési dokumentációban](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#get-started) olvashat. 
+    - Az Alkalmazásproxy konfigurálásáról és az alkalmazások közzétételéről a [telepítési dokumentációban](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy) olvashat. 
 - A Managed Browser alkalmazás 1.2.0-s vagy annál újabb verzióját kell használnia.
-- A Managed Browser és a Microsoft Edge alkalmazások felhasználói rendelkezzenek az alkalmazáshoz rendelt [Intune alkalmazásvédelmi szabályzattal]( app-protection-policy.md).
+- A Managed Browser és a Microsoft Edge alkalmazások felhasználói rendelkezzenek az alkalmazáshoz rendelt [Intune alkalmazásvédelmi szabályzattal](app-protection-policy.md).
 
     > [!NOTE]
     > Az Alkalmazásproxy frissített átirányítási adatainak érvénybe lépése a Managed Browserben és a Microsoft Edge-ben akár 24 órát is igénybe vehet.
