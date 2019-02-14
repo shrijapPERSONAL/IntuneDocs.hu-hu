@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ff89d1776d71dc24ea675de167f3fd22d6bdf04
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 6b0c2bff4051a1adba1a68f38d8f0a9b80b914b4
+ms.sourcegitcommit: 5708ec1d7ae50494be44ed5064f150b636188c84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55838767"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56240061"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Alkalmazások hozzárendelése csoportokhoz a Microsoft Intune-nal
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Miután [hozzáadott egy alkalmazást](apps-add.md) a Microsoft Intune-hoz, azt felhasználókhoz és eszközökhöz rendelheti hozzá. Vegye figyelembe, hogy az alkalmazást attól függetlenül hozzárendelheti az eszközhöz, hogy az eszközt az Intune felügyeli-e. 
+Miután [hozzáadott egy alkalmazást](apps-add.md) a Microsoft Intune-hoz, azt felhasználókhoz és eszközökhöz rendelheti hozzá. Vegye figyelembe, hogy az alkalmazást attól függetlenül hozzárendelheti az eszközhöz, hogy az eszközt az Intune felügyeli-e.
 
 > [!NOTE]
 > Az elérhető üzembe helyezési szándék a nem támogatott eszközcsoportok, csak a felhasználói csoportok támogatottak.
@@ -124,8 +124,19 @@ Néha előfordul, hogy ugyanazt az alkalmazást eltérő szándékkal rendelik h
 > Csak áruházból származó felügyelt iOS-alkalmazások esetén, ha ezeket az alkalmazásokat a Microsoft Intune-ban **kötelezőként** rendeli hozzá, akkor a **Kötelező** és az **Elérhető** szándék automatikusan egyaránt fog vonatkozni rájuk.<br><br>
 > A kötelező hozzárendelési szándékkal célzott (nem iOS VPP) iOS Store-alkalmazások az eszköz bejelentkezésekor kikényszerítetten hozzá lesznek rendelve az eszközhöz, és megjelennek a Céges portál alkalmazásban is.
 
-## <a name="android-enterprise-app-we-app-deployment"></a>Android Enterprise-alkalmazás – hogy az alkalmazás üzembe helyezése
-Android-eszközökhöz a egy nem regisztrált alkalmazás alkalmazásvédelmi szabályzat regisztráció nélkül (alkalmazás-TUDJUK) a telepítési forgatókönyvben most segítségével felügyelt Google Play áruházbeli alkalmazások telepítése és az ÜZLETÁGI alkalmazások a felhasználók számára. Pontosabban a végfelhasználók számára biztosíthat már nem igényel a végfelhasználók számára, hogy lazábbá tehető az eszközeik biztonsági irányelvei, tiltják azáltal, hogy telepítések az ismeretlen forrásból származó alkalmazás katalógus és telepítési élményt. Emellett ebben a telepítési forgatókönyvben egy jobb végfelhasználói élményt biztosít. Alkalmazás hozzárendelése lépéseiért lásd: [rendeli az alkalmazást](apps-deploy.md#assign-an-app).
+## <a name="managed-google-play-app-deployment-to-unmanaged-devices"></a>Felügyelt Google Play alkalmazás üzembe helyezése nem felügyelt eszközökre
+Android-eszközökhöz a egy nem regisztrált alkalmazás alkalmazásvédelmi szabályzat regisztráció nélkül (alkalmazás-TUDJUK) a telepítési forgatókönyvben segítségével felügyelt Google Play áruházbeli alkalmazások és az üzletági (LOB) alkalmazások telepítése a felhasználók számára. Felügyelt Google Play-alkalmazások **elérhető regisztrációval és anélkül** fog megjelenni a felhasználó eszközén a Play Store alkalmazást, és nem a céges portál alkalmazásban. Végfelhasználói fog alkalmazások tallózásához és telepítéséhez telepítve ezen a módon kikapcsolja a Play alkalmazásból. Mivel az alkalmazásokat telepít a felügyelt Google Play áruházból, a végfelhasználónak nem kell alter ismeretlen forrásokból, ami azt jelenti, az eszközök biztonságosabb lesz alkalmazások telepítésének engedélyezése az eszköz beállításai. Az alkalmazás fejlesztőjének egy alkalmazás egy új verziója, amely a felhasználó eszközén települt Play tesz közzé, ha az alkalmazást automatikusan frissíti Play. 
+
+A felügyelt Google Play alkalmazás hozzárendelése nem felügyelt eszközök lépéseket:
+
+1. Az Intune-bérlő csatlakozhat a felügyelt Google Play áruházból. Ha már ezt annak érdekében, hogy az Android Enterprise munkahelyi profilt, dedikált, és teljes körűen felügyelt eszközöket, nem kell ismét megtennie.
+2. Alkalmazások hozzáadása a felügyelt Google Play áruházból az Intune-konzolon.
+3. Felügyelt Google Play-alkalmazások, cél **elérhető regisztrációval és anélkül** a kívánt felhasználói csoporthoz. **Szükséges** és **Eltávolítás** célcsoport-kezelési alkalmazás nem támogatottak a nem regisztrált eszközökön.
+4. Alkalmazásvédelmi szabályzat hozzárendelése a felhasználói csoportot.
+5. Amikor a felhasználó megnyitja a vállalati portál alkalmazást, akkor fogja látni egy üzenet arról, hogy nincsenek alkalmazások a Play Store alkalmazás ezekhez rendelkezésre.  A felhasználó koppintson erre az értesítésre, le kell tölteni a Play alkalmazás közvetlenül a vállalati alkalmazások jelennek meg, vagy azok is keresse meg a Play Store alkalmazás külön-külön.
+6. A végfelhasználó kibontásával, a helyi menüben a Play Store-alkalmazás és a Váltás (ahol megjelenik a személyes alkalmazásokat) személyes Google-fiókjával, és a munkahelyi fiókjával (ahol látják áruházbeli és ÜZLETÁGI alkalmazások azokból) között. A végfelhasználók az alkalmazások telepítése a Play Store alkalmazás koppintva telepítse.
+
+Kiadásakor az alkalmazások szelektív törlése az Intune-konzolon, a munkahelyi fiók automatikusan eltávolítjuk a Play Store-alkalmazás és a felhasználó lesz a pontot többé nem látja munkahelyi alkalmazások a Play Store alkalmazás katalógusban. A munkahelyi fiókot eltávolítják az eszközről, ha a Play Store telepített alkalmazások marad az eszközön telepített, és nem lehet eltávolítani. 
 
 ## <a name="next-steps"></a>További lépések
 
