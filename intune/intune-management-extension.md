@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d0594c9f14b9d18c597de9ca37826a669dde5f3
-ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
+ms.openlocfilehash: 573ca3aa10094e61165d297730d556e2ef559767
+ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55986875"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56302183"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>PowerShell-parancsfájlok kezelése az Intune-ban Windows 10-es eszközök esetén
 
@@ -31,9 +31,9 @@ Az Intune felügyeleti bővítmény használatával töltse fel az Intune-ban Wi
 
 A végfelhasználói számítástechnika a digitális átalakulás korszakát éli. A klasszikus, hagyományos informatika egyetlen eszközplatformra, vállalati tulajdonú eszközökre, az irodából dolgozó felhasználókra és számos kézi, reaktív informatikai folyamatra hagyatkozik. A modern munkahely számos platformon, amelyek a felhasználói és vállalati tulajdonú használ, lehetővé teszi, hogy a felhasználók bárhonnan dolgozhatnak, és automatizált, proaktív informatikai folyamatok biztosít.
 
-Az MDM-szolgáltatások, például a Microsoft Intune, a Windows 10 rendszerű asztali és mobil eszközöket kezelheti. A beépített Windows 10 felügyeleti ügyfél kommunikál az Intune-nal vállalati felügyeleti feladat futtatására. Bizonyos feladatokat, amelyeket érdemes lehet, például a fejlett eszközkonfiguráció, hibaelhárítási és az örökölt Win32-Alkalmazáskezelés, amely jelenleg nem érhető el a Windows 10 mobileszköz-kezelést. Ezen funkciók az Intune-szoftverügyfél futtathatja a Windows 10 rendszerű eszközökön. [Hasonlítsa össze a Windows rendszerű számítógépek felügyeletét, számítógépek vagy mobileszközök](pc-management-comparison.md) egy nagyszerű forrás.
+Az MDM-szolgáltatások, például a Microsoft Intune, a Windows 10 rendszerű asztali és mobil eszközöket kezelheti. A beépített Windows 10 felügyeleti ügyfél kommunikál az Intune-nal vállalati felügyeleti feladat futtatására. Van néhány feladatot, amelyeket érdemes lehet, például a fejlett eszközkonfiguráció és a hibaelhárítás. A Win32-Alkalmazáskezelés, használhatja a [Win32-Alkalmazáskezelés](apps-win32-app-management.md) funkció a Windows 10 rendszerű eszközökön.
 
-Az Intune felügyeleti bővítmény kiegészíti a beépített Windows 10 MDM-funkció. A Windows 10-es eszközökön futtatandó PowerShell-szkripteket hozhat létre. Ha például egy PowerShell-parancsprogram, amely egy elavult Win32-alkalmazást telepít, a parancsfájl feltölti az Intune-hoz, a parancsfájl hozzárendeli egy Azure Active Directory (AD) csoportnak és a parancsfájl futtatása is létrehozhat. Ezt követően megfigyelheti az elejétől a végéig a parancsfájl futtatási állapotát.
+Az Intune felügyeleti bővítmény kiegészíti a beépített Windows 10 MDM-funkció. A Windows 10-es eszközökön futtatandó PowerShell-szkripteket hozhat létre. Például létrehozhat egy PowerShell-parancsprogram, amely speciális eszköz-konfigurációk nem, a parancsfájl feltölti az Intune-hoz, a parancsfájl hozzárendeli egy Azure Active Directory (AD) csoportnak, és futtatja a szkriptet. Ezt követően megfigyelheti az elejétől a végéig a parancsfájl futtatási állapotát.
 
 ## <a name="prerequisites"></a>Előfeltételek
 

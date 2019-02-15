@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 605868af91e734a6bd1457a97e9089d69ba81718
-ms.sourcegitcommit: bc863efcf760ba35421d8566581e8768056485f1
+ms.openlocfilehash: 19994745a232a362d6bba0f09ed3934e492a17ed
+ms.sourcegitcommit: 2f431f122ce3ee6b5d0cdb04a0b748d00f83e295
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227896"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56265672"
 ---
 # <a name="the-early-edition-for-microsoft-intune---february-2019"></a>Az előzetes kiadása, a Microsoft Intune – 2019. február
 
@@ -53,9 +53,6 @@ Nevezze át a regisztrált Windows 10-es eszköz lesz (RS4 vagy újabb). Szeretn
 
 ### <a name="assign-scep-certificates-to-a-userless-macos-device-------2340521-----"></a>SCEP-tanúsítványok felhasználó nélküli macOS-eszközök hozzárendelése    <!-- 2340521   -->
 Láthatja, hogy egyszerű tanúsítványigénylési protokoll (SCEP) tanúsítványok hozzárendelése egy felhasználó nélküli macOS-eszközt, és rendelje hozzá a tanúsítvány Wi-Fi vagy VPN-profilok. Ez kibővíti a meglévő támogatást, már eleve [tanúsítványok hozzárendelése Windows, iOS és Android rendszerű, felhasználó nélküli eszközök](certificates-scep-configure.md#create-a-scep-certificate-profile).
-
-### <a name="find-out-which-devices-support-esim----2432018---"></a>Ismerje meg, hogy mely eszközök támogatják az esim-kártya <!-- 2432018 -->
-Lesz egy új **esim-kártya készlet** mezőt a hardver lap eszközökhöz. Az iktatott megtekintéséhez válassza ki **Intune** > **eszközök** > Válasszon egy eszközt > **hardver**.
 
 ### <a name="intune-conditional-access-ui-update------2432313----"></a>Az Intune feltételes hozzáférés felhasználói felület frissítése   <!-- 2432313  -->
 Fejlesztéseket végzünk az Intune-konzolon a feltételes hozzáférés felhasználói felületén. Ezek a következők:

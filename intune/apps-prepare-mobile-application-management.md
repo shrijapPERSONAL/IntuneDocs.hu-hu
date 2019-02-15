@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 74445c678455dc881f79fed20ed68be6f090fe78
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 63504acb19125a3971ea6ddc996b42ed8917b2d9
+ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834772"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56302166"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Üzletági alkalmazások felkészítése az alkalmazásvédelmi szabályzatok használatára
 
@@ -87,7 +87,6 @@ Ez a táblázat az App SDK-hoz és az alkalmazásburkoló eszközhöz használha
 |Más alkalmazásokból való adatfogadás engedélyezése az alkalmazásnak|X|X|
 |Más alkalmazásokkal végzett kivágás, másolás és beillesztés korlátozása|X|X|
 |Egyszerű PIN-kód szükséges a hozzáféréshez|X|X|
-|Az alkalmazások beépített PIN-kódjának lecserélése Intune PIN-kóddal|X||
 |A PIN-kód alaphelyzetbe állítása előtti kísérletek számának megadása|X|X|
 |Ujjlenyomat használatának engedélyezése PIN-kód helyett|X|X|
 |Arcfelismerés használatának engedélyezése PIN-kód helyett (csak iOS)|X|X|
@@ -98,8 +97,8 @@ Ez a táblázat az App SDK-hoz és az alkalmazásburkoló eszközhöz használha
 |Az offline türelmi időszak megadása|X|X|
 |Képernyőrögzítés letiltása (csak Android esetén)|X|X|
 |Eszközregisztráció nélküli MAM támogatása|X|X|
-|Teljes törlés|X|X|
-|Szelektív törlés <br><br>**Megjegyzés:** IOS-a felügyeleti profil törlésekor az alkalmazás is eltávolítja.|X||
+|Az alkalmazás adatainak teljes törlése|X|X|
+|Többidentitásos munkahelyi ad iskolai adatok szelektív törlését <br><br>**Megjegyzés:** IOS-a felügyeleti profil törlésekor az alkalmazás is eltávolítja.|X||
 |A „Mentés másként” művelet letiltása|X||
 |Célzott alkalmazáskonfiguráció|X||
 |Többszörös identitás támogatása|X||
