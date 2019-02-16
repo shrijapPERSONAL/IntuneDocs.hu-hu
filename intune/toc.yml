@@ -372,7 +372,8 @@ items:
       - name: A helyszíni Exchange-összekötő telepítése
         href: exchange-connector-install.md
       - name: Feltételes hozzáférési szabályzat létrehozása és hozzárendelése
-        href: conditional-access-exchange-create.md
+      - name: Eszközalapú feltételes hozzáférési szabályzat
+        href: create-conditional-access-intune.md
       - name: Feltételes hozzáférési szabályzatok ismételt hozzárendelése az Intune klasszikus portáljáról
         href: conditional-access-intune-reassign.md
       - name: Alkalmazásalapú feltételes hozzáférés
@@ -998,9 +999,9 @@ items:
       href: data-outside-protect.md
     - name: Adatszivárgás megakadályozása nem felügyelt eszközökön
       href: data-leak-prevention.md
-ms.openlocfilehash: 365777adf57d1f36577e2e6f20cce6b193a829f8
-ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
+ms.openlocfilehash: 1183db94d839619e1130261345f6988a627938bb
+ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 02/15/2019
-ms.locfileid: "56302200"
+ms.locfileid: "56307855"

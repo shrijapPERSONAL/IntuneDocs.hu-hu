@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 63504acb19125a3971ea6ddc996b42ed8917b2d9
-ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
+ms.openlocfilehash: 10b2ef5844c2d8889fd1d5c377fcefb8330be9e2
+ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56302166"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325435"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Üzletági alkalmazások felkészítése az alkalmazásvédelmi szabályzatok használatára
 
@@ -98,7 +98,7 @@ Ez a táblázat az App SDK-hoz és az alkalmazásburkoló eszközhöz használha
 |Képernyőrögzítés letiltása (csak Android esetén)|X|X|
 |Eszközregisztráció nélküli MAM támogatása|X|X|
 |Az alkalmazás adatainak teljes törlése|X|X|
-|Többidentitásos munkahelyi ad iskolai adatok szelektív törlését <br><br>**Megjegyzés:** IOS-a felügyeleti profil törlésekor az alkalmazás is eltávolítja.|X||
+|Többidentitásos környezetben a munkahelyi és iskolai adatok szelektív törlése <br><br>**Megjegyzés:** IOS-a felügyeleti profil törlésekor az alkalmazás is eltávolítja.|X||
 |A „Mentés másként” művelet letiltása|X||
 |Célzott alkalmazáskonfiguráció|X||
 |Többszörös identitás támogatása|X||

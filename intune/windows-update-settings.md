@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/12/2019
+ms.date: 02/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fcb0c4e44b427b57b065684fe1e57234bbde054
-ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
+ms.openlocfilehash: 98c3425c58b6039c8a1c3b5750f9473c74a78634
+ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55986956"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325469"
 ---
 # <a name="windows-update-settings-for-intune"></a>Windows Intune-beállításainak frissítése  
 
@@ -48,6 +48,12 @@ Támogatott frissítési csatornákon:
 - A Windows Insider kiadása  
 
 Ha az Insider-csatorna, az Intune automatikusan konfigurálja a Windows update beállítás [Update/ManagePreviewBuilds](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-managepreviewbuilds) , hogy az insider-build működjenek.  
+
+
+> [!IMPORTANT]  
+> Kezdve a Windows verzió 1903, használatát a *féléves csatorna (célzott)* SAC-T kivonták. Ezzel a SAC-T a egyesíti a *féléves csatorna*. Ez a változás, és hogyan érinti a Windows Update for Business kapcsolatos további tudnivalókért tekintse meg a Windows IT Pro Blog bejegyzését [és a használatból való kivonást egyaránt SAC-T a Windows Update](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-and-the-retirement-of-SAC-T/ba-p/339523).
+ 
+
 
 ### <a name="microsoft-product-updates"></a>Microsoft-termékfrissítések  
 

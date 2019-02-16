@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f5afb23fd571b03e4fde97cb7800c399819d4cc8
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 943b5dc8c0fe1c9b55b9c4971be2087353b60428
+ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849843"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56307889"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>A Windows 10 (és újabb) eszközbeállítások engedélyezett vagy korlátozott funkciók az Intune-nal
 
@@ -138,6 +138,10 @@ Ezek a beállítások hozzá egy eszközkonfigurációs profilt az Intune-ban, �
 - **Szabadkézi munkaterület**: Letiltása a felhasználók hozzáférjenek a szabadkézi munkaterülethez. **Nincs konfigurálva** bekapcsolja az ink-munkaterületen, és a felhasználó számára engedélyezett, a zárolási képernyőn.
 - **Automatikus újbóli üzembe helyezés**: Lehetővé teszi, hogy törli az összes felhasználói adatot és beállítást rendszergazdai jogosultságokkal rendelkező felhasználóknak **CTRL + Win + R** , az eszköz zárolási képernyőjén. Ennek hatására automatikusan megtörténik az eszköz újbóli konfigurálása és regisztrálása felügyeletre.
 - **Csatlakozzon a hálózathoz (csak Windows Insider) eszköz telepítése során, hogy a felhasználók**: Válasszon **megkövetelése** , az eszköz csatlakozik a hálózathoz, mielőtt folytatná a hálózat lap korábbi Windows 10-es telepítés során. Amíg ez a funkció előzetes verziójú, a beállítás használatához a Windows Insider 1809-es buildje, vagy annál újabb verzió szükséges.
+- **Közvetlen memória-hozzáférés**: **Blokk** megakadályozza, hogy közvetlen memória-hozzáférés (DMA) az összes gyakran használt adatok moduláris PCI alsóbb rétegbeli port mindaddig, amíg a felhasználó bejelentkezik a Windows. **Engedélyezett** (alapértelmezett) engedélyezi a hozzáférést közvetlen memória-Hozzáférést, akkor is, ha egy felhasználó nem jelentkezett be.
+
+  CSP: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
+
 - **Folyamatait a Feladatkezelőben**: Ez a beállítás meghatározza, hogy e nem rendszergazdák teljes feladat Feladatkezelő használható. **Blokk** általános jogú felhasználók (nem rendszergazda) megakadályozza, hogy egy folyamat vagy feladat az eszköz befejezi a Feladatkezelő használatát. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy a folyamat leállítása, vagy a feladat a Feladatkezelő használatát általános jogú felhasználók.
 
 ## <a name="kiosk-preview---obsolete"></a>Kioszk (Előzetes) – Elavult

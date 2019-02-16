@@ -32,6 +32,9 @@ Az automatikus regisztrálással a felhasználók Windows 10-es eszközeiket reg
       >
       > Vállalati eszközök esetén az MDM-felhasználói hatókör két hatókörnek engedélyezésével élvez elsőbbséget. Az eszközök MDM-regisztrálása beolvasása.
 
+   > [!NOTE]
+   > MAM-felhasználói hatókör állítson be egy felhasználói csoport vagy a gyűjtemény.
+
    ![Az Azure Portal képernyőképe](../media/auto-enroll-scope.png)
 
 5. A következő URL-címekhez használja az alapértelmezett értékeket:
@@ -39,6 +42,6 @@ Az automatikus regisztrálással a felhasználók Windows 10-es eszközeiket reg
     - **MDM-felderítési URL-cím**
     - **MDM megfelelőségi URL-címe**
 
-6. Válassza a **Mentés** lehetőséget.
+6. Kattintson a **Mentés** gombra.
 
 Alapértelmezés szerint a kétfaktoros hitelesítés nincs engedélyezve a szolgáltatáshoz. Ezzel együtt azonban az eszköz regisztrálásához ajánlatos kétfaktoros hitelesítést használni. A kétfaktoros hitelesítés engedélyezéséhez konfigurálnia kell egy kétfaktoros hitelesítési szolgáltatót az Azure AD-ban, a felhasználói fiókokat pedig többtényezős hitelesítéshez kell konfigurálnia. További információt az [Azure Multi-Factor Authentication-kiszolgáló – első lépések](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud) című témakörben talál.

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/28/2019
+ms.date: 02/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85b3aa513781026c5c79cdd41837f9ded945e574
-ms.sourcegitcommit: 2f431f122ce3ee6b5d0cdb04a0b748d00f83e295
+ms.openlocfilehash: 1802da8150c9729a2bed8ff82d39f7946b750e06
+ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56265689"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325503"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Android-eszközök alkalmazásvédelmi szabályzatainak beállításai a Microsoft Intune-ban
 Ez a cikk az alkalmazásvédelmi szabályzatok Android-eszközökre vonatkozó beállításait ismerteti. Az ismertetett szabályzatbeállításokat az Azure Portal **Beállítások** paneljén lehet [konfigurálni](app-protection-policies.md) az alkalmazásvédelmi szabályzatokhoz.
@@ -54,9 +54,6 @@ Házirend-beállítások három kategóriába sorolhatók: adatvédelmi beállí
 | **Szinkronizálási alkalmazás a natív névjegykezelő alkalmazásba** | Válasszon **letiltása** megakadályozza, hogy az alkalmazás a natív névjegykezelő alkalmazásba az eszközre ment adatot. Ha úgy dönt, **engedélyezése**, az alkalmazás adatokat menthet a natív névjegykezelő alkalmazásba, az eszközön. <br><br>Ha szelektív törléssel távolítja el a munkahelyi vagy iskolai adatokat az alkalmazásból, akkor a rendszer eltávolítja a közvetlenül az alkalmazásból a natív névjegykezelő alkalmazásba szinkronizált névjegyeket. A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem törölhetők. Ez jelenleg csak a Microsoft Outlook alkalmazásra érvényes. | **Engedélyezése** |
 | **Cégadatok nyomtatás** | Válasszon **letiltása** , hogy az alkalmazást munkahelyi vagy iskolai adatokat nyomtasson. | **Engedélyezése** |
 |**Webes tartalom megosztása a szabályzat által felügyelt böngészők** | Adja meg, hogyan nyíljanak meg a webes tartalmak (http/https-hivatkozások) a szabályzatok által felügyelt alkalmazásokban. A következő lehetőségek közül választhat:<ul><li>**Szükséges**: Lehetővé teszi a webes tartalom csak szabályzat által felügyelt böngészőben nyíljon meg.</li><li>**Nincs konfigurálva**: Lehetővé teszi a webes hivatkozások bármely alkalmazásban </li></ul><br><br> Ha az Intune-nal kezeli az eszközöket, olvassa el [Az internet-hozzáférés felügyelt böngészőszabályzatokkal való kezelése a Microsoft Intune-ban](app-configuration-managed-browser.md) című témakört.<br><br>**Szabályzattal felügyelt böngészők**<br>Ha több, szabályzattal felügyelt böngészőt helyez üzembe, csak egyet indíthat el.  Indítási sorrend: Intune Managed Browser, majd Microsoft Edge.  Android platformon a végfelhasználói más, http/https-hivatkozásokat támogató, szabályzattal felügyelt böngészőt is választhatnak, ha sem az Intune Managed Browser, sem a Microsoft Edge nincs telepítve.<p>Ha egy szabályzattal felügyelt böngésző kötelező de nincs telepítve, a rendszer az Intune Managed Browser telepítését kéri a végfelhasználóktól.<p>Ha egy szabályzattal felügyelt böngésző kötelező, az Android-alkalmazáshivatkozásokat a **Más alkalmazásokból való adatátvitel engedélyezése az alkalmazásnak** szabályzatbeállítás kezeli.<p>**Intune-beli eszközregisztráció**<br>Ha az Intune-t használja az eszközök kezeléséhez, olvassa el Az internet-hozzáférés felügyelt böngészőszabályzatokkal való kezelése a Microsoft Intune-ban című témakört. <p>**Szabályzattal felügyelt Microsoft Edge**<br>A Microsoft Edge mobilböngésző (iOS és Android eszközök) támogatja az Intune alkalmazásvédelmi szabályzatait. A Microsoft Edge böngészőalkalmazásba a vállalati Azure AD-fiókjukkal bejelentkező felhasználókat az Intune védi. A Microsoft Edge böngésző integrálja a MAM SDK-t, és támogatja annak minden adatvédelmi szabályzatát, a következő tiltások kivételével:<br><ul><li>**Mentés-as**: A Microsoft Edge böngésző nem engedélyezi a felhasználókat a felhőalapú tárolási szolgáltatók (például a OneDrive) közvetlen, alkalmazáson belüli kapcsolatok.</li><li>**Lépjen kapcsolatba a szinkronizálási**: A Microsoft Edge böngésző nem menti a natív partnerlistájukat.</li></ul><br>**Megjegyzés:** *Az APP SDK nem tudja megállapítani, ha egy cél-alkalmazást, egy böngészőben. Android-eszközön más felügyelt alkalmazások, amelyek támogatják a http/https-leképezés használata engedélyezett.* | **Nincs konfigurálva** |
-| **Harmadik féltől származó billentyűzetek** | Válassza ki **letiltása** , hogy a külső billentyűzetek a kezelt alkalmazások használatát. <br><br>Ha ez a beállítás engedélyezve van, a felhasználó egyszeri üzenetet kap a külső szállítótól származó billentyűzetek tiltásáról. Ez az üzenet akkor jelenik meg, amikor a felhasználó először végez billentyűzet használatát igénylő műveletet vállalati adatokkal. Felügyelt alkalmazások használata során csak a standard szintű billentyűzet érhető el, és minden egyéb billentyűzet le van tiltva. Ez a beállítás nem vonatkozik a külső szállítótól származó billentyűzetek nem felügyelt alkalmazásokban való használatára. | **Engedélyezése** |
-
-
 
   ## <a name="data-transfer-exemptions"></a>Adatátviteli kivételek
 
