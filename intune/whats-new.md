@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/04/2019
+ms.date: 02/19/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f6d346d7f060b5e997577b09c3ee8b006843ab7b
-ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
+ms.openlocfilehash: 65370710f409d028871695de22829f64e82bf54e
+ms.sourcegitcommit: 67e4e66e8c05b36c0897fb2955ef68666d22b094
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56302234"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426977"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -31,8 +31,6 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Emellett tá
 
 > [!Note]
 > Egyes funkciók bevezetése több hetet igénybe vehet, így előfordulhat, hogy nem elérhetők a felhasználók számára az első héten.
->
-> A mobileszköz-kezelés (MDM) új hibrid funkciójával kapcsolatos további információért tekintse meg a [hibrid újdonságok oldalát](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
 **RSS-hírcsatorna**: Értesítés küldése, amikor ezen a lapon frissül, másolása és beillesztése a következő URL-címet a hírcsatorna olvasóba szerint: `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+in+microsoft+intune%3F+-+Azure%22&locale=en-us`
 
@@ -46,6 +44,18 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Emellett tá
 ### Role-based access control
 
 -->     
+
+## <a name="week-of-february-19-2019"></a>2019. február 19 hete
+
+#### <a name="macos-users-are-prompted-to-update-their-password----1873216---"></a>macOS-felhasználók a rendszer kéri a jelszó frissítése <!-- 1873216 -->
+
+Az Intune kényszerít a **ChangeAtNextAuth** beállítása macOS-eszközökön. Ez a beállítás hatással van a végfelhasználók és a jelszó házirendek vagy a jelszó eszközkorlátozási profilok rendelkező eszközök. A végfelhasználók a jelszófrissítési egyszer megerősítését. Ez a kérdés történik, amikor egy felhasználó először futtat egy feladatot, amely megköveteli a hitelesítést, például az eszköz bejelentkezik. Felhasználók is frissíteni a jelszavát, ha rendszergazdai jogosultsággal, például az kulcslánc-hozzáférési csinál semmit, amely szükséges lehet kéri. 
+
+Minden olyan új vagy meglévő szabályzat jelszómódosítások a rendszergazda által a végfelhasználók számára, hogy újra frissíteni a jelszavát kéri.
+
+A következőkre vonatkozik:  
+macOS
+
 ## <a name="week-of-february-4-2019"></a>2019. február 4 hét
 
 ### <a name="app-management"></a>Alkalmazáskezelés

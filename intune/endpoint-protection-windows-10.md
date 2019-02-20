@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f87c2fa5fcb7e76fa8d398018e87ec0b15c05e9
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 4ccdb8c40c87bc4f5e778bc1cb7a6966f8a0ad70
+ms.sourcegitcommit: 33bacf9d5db336e73d8c88fa15f6535ae92b4b00
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55843391"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56418518"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>A Windows 10 (és újabb verziók) beállítások az Intune-eszközök védelméhez
 
@@ -215,11 +215,11 @@ A következő Windows 10-kiadásokon támogatott:
   - **A helyreállítási jelszó felhasználói létrehozása**: Beállíthatja, hogy a felhasználók engedélyezett, kötelező vagy nem engedélyezett egy 48 jegyű helyreállítási jelszó létrehozása.  
   - **Helyreállítási kulcs felhasználói létrehozása**: Beállíthatja, hogy a felhasználók engedélyezett, kötelező vagy nem engedélyezett egy 256 bites helyreállítási kulcs létrehozásához.
   - **Helyreállítási beállítások a BitLocker konfigurációs varázslójában**: Állítsa be **blokk** így a felhasználók nem látják, és a helyreállítási beállítások megváltoztatása. **Nincs konfigurálva** (alapértelmezett) értékre állítva a felhasználók láthatják és módosíthatják a helyreállítási beállításokat a BitLocker bekapcsolásakor.
-  - **BitLocker helyreállítási adatainak mentése az AD DS**: Válasszon **engedélyezése** a BitLocker helyreállítási adatok tárolására az Azure Active Directoryban (Azure AD). Amikor **nincs konfigurálva** (alapértelmezett), a helyreállítási információk nem tárolja az Azure ad-ben.
-  - **A BitLocker helyreállítási adatok AD DS**: Konfigurálja a BitLocker helyreállítási információi mely részeit az Azure ad-ben tárolódnak. A választható lehetőségek:
+  - **BitLocker helyreállítási adatainak mentése az Azure Active Directoryhoz**: Válasszon **engedélyezése** a BitLocker helyreállítási adatok tárolására az Azure Active Directoryban (Azure AD). Amikor **nincs konfigurálva** (alapértelmezett), a helyreállítási információk nem tárolja az Azure ad-ben.
+  - **Az Azure Active Directoryban tárolt BitLocker helyreállítási adatok**: Konfigurálja a BitLocker helyreállítási információi mely részeit az Azure ad-ben tárolódnak. A választható lehetőségek:
     - **A helyreállítási jelszavak és a kulcscsomagok biztonsági mentése**
     - **Csak a helyreállítási jelszavak biztonsági mentése**
-  - **Store helyreállítási adatok AD DS-ben a BitLocker engedélyezése előtt**: **Szükséges** ezt a beállítást, hogy a felhasználók ne tudják bekapcsolni a Bitlockert, kivéve, ha a BitLocker helyreállítási információi nem sikerült menteni az Azure ad-ben. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy kapcsolja be a Bitlockert, hogy a felhasználók akkor is, ha a helyreállítási információk nem sikerült tárolja az Azure ad-ben.
+  - **Helyreállítási információk Store az Azure Active Directoryban a BitLocker engedélyezése előtt**: **Szükséges** ezt a beállítást, hogy a felhasználók ne tudják bekapcsolni a Bitlockert, kivéve, ha a BitLocker helyreállítási információi nem sikerült menteni az Azure ad-ben. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy kapcsolja be a Bitlockert, hogy a felhasználók akkor is, ha a helyreállítási információk nem sikerült tárolja az Azure ad-ben.
 
 ### <a name="bitlocker-removable-data-drive-settings"></a>Cserélhető adatmeghajtók BitLocker-beállításai
 

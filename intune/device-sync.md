@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b766f9f92fb5d0e8cedfbebbac7246f48b90a6a2
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: e5f404f3472f7d22530dfa54fd133a8e97b507df
+ms.sourcegitcommit: 67e4e66e8c05b36c0897fb2955ef68666d22b094
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846128"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426909"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Az eszközök szinkronizálása az Intune-nal a legfrissebb szabályzatok és műveletek beolvasásához
 
@@ -46,6 +46,8 @@ A **Szinkronizálás** eszközművelet kikényszeríti a választott eszköz azo
 5. Válassza az **Igen** lehetőséget a megerősítéshez.
 
 A szinkronizálási művelet állapotának megtekintéséhez válassza az **Eszközök** > **Eszközműveletek** lehetőséget.
+
+Standard Intune házirend bejelentkezési frekvenciája annak a [Intune szabályzataival kapcsolatban gyakran felmerülő kérdések](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md##frequently-asked-questions-about-intune-policies).
 
 ## <a name="retryable-error-codes"></a>Újrapróbálható hibakódok
 

@@ -1,7 +1,7 @@
 ---
-title: Az Intune-fiók csatlakoztatása a Vállalati Android-fiókjához
+title: Az Intune-fiók csatlakozhat a felügyelt Google Play-fiókjához.
 titlesuffix: Microsoft Intune
-description: Útmutató Intune-fiók Vállalati Android-fiókhoz való csatlakoztatásához.
+description: Ismerje meg, hogyan csatlakozhat a felügyelt Google Play fiókot az Intune-fiók.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 421d9c56f959fe30d35c0c55ce34017a7a0ba5a6
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 0a886359c9a7d789b06851cde7a5c1857b6fd282
+ms.sourcegitcommit: 67e4e66e8c05b36c0897fb2955ef68666d22b094
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55838258"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56427011"
 ---
-# <a name="connect-your-intune-account-to-your-android-enterprise-account"></a>Az Intune-fiók csatlakoztatása a Vállalati Android-fiókjához
+# <a name="connect-your-intune-account-to-your-managed-google-play-account"></a>Intune-fiókjához csatlakozhat a felügyelt Google Play-fiók
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Támogatásához [Androidos munkahelyi profil](android-work-profile-enroll.md), [teljes körűen felügyelt Android](android-fully-managed-enroll.md), és [Android dedikált eszközök](android-kiosk-enroll.md), az Intune-bérlői fiók kapcsolódnia kell az Android enterprise fiók.  
+Támogatásához [Android Enterprise munkahelyi profil](android-work-profile-enroll.md), [teljes körűen felügyelt Android Enterprise](android-fully-managed-enroll.md), és [Android Enterprise dedikált eszközök](android-kiosk-enroll.md), csatlakoznia kell az Intune-bérlő a fiók a felügyelt Google Play-fiókjába.  
 
 > [!NOTE]
 > A Google- és a Microsoft-tartományok közötti interakció miatt ennél a lépésnél előfordulhat, hogy módosítania kell a böngésző beállításait.  Ügyeljen rá, hogy a „portal.azure.com” és a „play.google.com” tartomány azonos biztonsági zónában legyen található a böngészőben.
@@ -42,7 +42,7 @@ Támogatásához [Androidos munkahelyi profil](android-work-profile-enroll.md), 
    
 4. Válassza a **Google elindítása az azonnali csatlakozáshoz** lehetőséget. Ezzel megnyitja a Felügyelt Google Play webhelyet. A webhely egy új lapon nyílik meg a böngészőben.
   
-5. A Google bejelentkezési oldalán lépjen be az adott bérlő összes Vállalati Android-alapú felügyeleti feladatához társítandó Google-fiókkal. Ezt a Google-fiókot osztják meg a vállalati rendszergazdák az alkalmazások Google Play konzolon való felügyeletéhez és közzétételéhez. Meglévő Google-fiókot is használhat, illetve újat is létrehozhat. A választott fiók nem lehet G Suite-tartományhoz rendelve.
+5. A Google bejelentkezési oldalán, adja meg a Google-fiókkal, amely a bérlő összes Android Enterprise felügyeleti feladatot társítva lesz. Ezt a Google-fiókot osztják meg a vállalati rendszergazdák az alkalmazások Google Play konzolon való felügyeletéhez és közzétételéhez. Meglévő Google-fiókot is használhat, illetve újat is létrehozhat. A választott fiók nem lehet G Suite-tartományhoz rendelve.
     
     > [!Note]
     > Ha a Microsoft Edge böngészőt használja, akkor a Google-fiókjába való bejelentkezéshez kattintson a jobb felső sarokban lévő **Bejelentkezés** lehetőségre.
@@ -51,9 +51,9 @@ Támogatásához [Androidos munkahelyi profil](android-work-profile-enroll.md), 
 
 7. Fogadja el az Android-szerződést, majd válassza a **Jóváhagyás** gombot. Megtörténik a kérelem feldolgozása.
 
-## <a name="disconnect-your-android-enterprise-administrative-account"></a>Vállalati Andoid rendszergazdai fiók leválasztása
+## <a name="disconnect-your-android-enterprise-administrative-account"></a>Az Android vállalati rendszergazdai fiók leválasztása
 
-A Vállalati Android-regisztrációt és -felügyeletet ki is kapcsolhatja. Ehhez először szüntesse meg minden munkahelyi profilos, regisztrált Android-eszköz regisztrációját. Ezután az Intune felügyeleti konzolján a **Leválasztás** lehetőséget választva minden munkahelyi profilos, regisztrált Android-eszköz és kioszkeszköz regisztrációja megszűnik. Ezzel megszűnik a vállalati Android-fiók és az Intune közötti kapcsolat is.
+Az Android vállalati regisztrációjának és felügyeleti kikapcsolhatja. Ehhez először vonja ki minden regisztrált nagyvállalati Android munkahelyi profilos eszközök. Ezután válassza ki **Disconnect** a az Intune felügyeleti konzol használatával távolítsa el az összes regisztrált vállalati Android munkahelyi profilos eszközök és a dedikált eszközök regisztrációját. Ez is eltávolítja a felügyelt Google Play-fiók és az Intune közötti kapcsolatot.
 
 1. Az Intune rendszergazdájaként az [Azure Portalon](https://portal.azure.com) válassza a **Minden szolgáltatás** > **Figyelés + felügyelet** > **Intune** elemet.
 2. Válassza az **Eszközregisztráció** > **Android-regisztráció** > **Felügyelt Google Play** > **Leválasztás** lehetőséget.
@@ -61,4 +61,4 @@ A Vállalati Android-regisztrációt és -felügyeletet ki is kapcsolhatja. Ehhe
 
 ## <a name="next-steps"></a>További lépések
 
-A Vállalati Android-fiókhoz való csatlakozás után [beállíthatja az androidos munkahelyi profilos eszközöket](android-work-profile-enroll.md) és [beállíthatja az androidos kioszkeszközöket](android-kiosk-enroll.md).
+Miután csatlakozott a felügyelt Google Play-fiókba, akkor is [állítsa be a vállalati Android munkahelyi profilos eszközök](android-work-profile-enroll.md) és [dedikált vállalati Android-eszköz beállítása](android-kiosk-enroll.md).
