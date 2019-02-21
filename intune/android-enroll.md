@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 866db22b79f2ca9255f9eccdfdba28dc353836ed
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 89825bd77beba9b8653646e9ec7381e9dfd2d6de
+ms.sourcegitcommit: ad213c5be1e1ad2b768661a467878056e6090999
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846757"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56444157"
 ---
 # <a name="enroll-android-devices"></a>Androidos eszközök regisztrálása
 
@@ -30,10 +30,10 @@ ms.locfileid: "55846757"
 
 Az Intune rendszergazdái az alábbi Android-eszközöket kezelhetik:
 - Android-eszközök, beleértve a Samsung Knox Standard eszközöket is.
-- Vállalati Android-eszköz, például:
-    - **Android munkahelyi profilos eszközök**: Személyes eszközök vállalati adatok elérésére vonatkozó engedélyt kaphatnak. Rendszergazdái kezelhetik a munkahelyi fiókok, alkalmazások és adatok. Személyes adatok az eszközön tárolt munkahelyi adatoktól és a rendszergazdák nem szabályozza a személyes beállításokat és adatokat. 
-    - **Android eszközök dedikált**: Vállalat által birtokolt, egyetlen eszközöket, például a digitális aláírási nyomtatás jegyet, vagy a szoftverleltár-kezelő. A rendszergazdák alkalmazások és webes hivatkozások egy adott körére korlátozzák az eszköz használatát. Ez azt is megakadályozza, hogy a felhasználók más alkalmazásokat adjanak az eszközhöz, vagy más műveleteket hajtsanak végre rajta.
-    - **Az Android a teljes körűen felügyelt eszközök**: Vállalat által birtokolt, egyetlen felhasználói eszközök használt kizárólag a munkahelyi és személyes nem használja. A rendszergazdák a teljes eszköz kezelése és nem érhető el a munkahelyi profilok házirend-vezérlők kényszerítésére. 
+- Android Enterprise-eszközök, többek között:
+    - **Vállalati munkahelyi profilos eszközök Android**: Személyes eszközök vállalati adatok elérésére vonatkozó engedélyt kaphatnak. Rendszergazdái kezelhetik a munkahelyi fiókok, alkalmazások és adatok. Személyes adatok az eszközön tárolt munkahelyi adatoktól és a rendszergazdák nem szabályozza a személyes beállításokat és adatokat. 
+    - **Android Enterprise dedikált eszközök**: Vállalat által birtokolt, egyetlen eszközöket, például a digitális aláírási nyomtatás jegyet, vagy a szoftverleltár-kezelő. A rendszergazdák alkalmazások és webes hivatkozások egy adott körére korlátozzák az eszköz használatát. Ez azt is megakadályozza, hogy a felhasználók más alkalmazásokat adjanak az eszközhöz, vagy más műveleteket hajtsanak végre rajta.
+    - **Android Enterprise teljes körűen felügyelt eszközök**: Vállalat által birtokolt, egyetlen felhasználói eszközök használt kizárólag a munkahelyi és személyes nem használja. A rendszergazdák a teljes eszköz kezelése és nem érhető el a munkahelyi profilok házirend-vezérlők kényszerítésére. 
 
 ## <a name="prerequisite"></a>Előfeltétel
 
@@ -52,13 +52,13 @@ Más felhasználói feladatokkal kapcsolatos további információkért tanulmá
 
 Az androidos eszközök (vagy csak a személyes tulajdonban levők) regisztrálásának letiltásáról a [Típus szerinti korlátozás beállítása](enrollment-restrictions-set.md) című témakörben olvashat.
 
-## <a name="set-up-android-enterprise-enrollment"></a>Vállalati Android-regisztráció beállítása
+## <a name="set-up-android-enterprise-enrollment"></a>Az Android vállalati regisztrációjának beállítása
 
-A vállalati Android Android-eszközökhöz készült funkciók és szolgáltatások együttese, amelyek elkülönítik a személyes alkalmazásokat és adatokat a munkahelyi alkalmazásokat és adatokat tartalmazó munkahelyi profiltól. Vállalati Android-eszköz munkahelyi profilos eszközök, teljes körűen felügyelt eszközök és dedikált eszközök közé tartozik. 
+Android Enterprise tanúsítványigénylési beállításokat, amelyek biztosítható a felhasználók a legtöbb naprakészen tartását és védelmét a funkciók készletét kínálja. Androidos vállalati eszközregisztrációs lehetőségek közé tartozik a munkahelyi profilt, teljes körűen felügyelt, dedikált eszközök.
 
-- [Androidos munkahelyi profil regisztrációk beállítása](android-work-profile-enroll.md)
-- [Android dedikált eszközregisztrációk beállítása](android-kiosk-enroll.md)
-- [Állítsa be az Android a teljes körűen felügyelt regisztrációk](android-fully-managed-enroll.md)
+- [Android Enterprise munkahelyi profil regisztrációk beállítása](android-work-profile-enroll.md)
+- [Dedikált Android Enterprise eszközregisztrációk beállítása](android-kiosk-enroll.md)
+- [Állítsa be a teljes körűen felügyelt Android Enterprise-regisztrációk](android-fully-managed-enroll.md)
 
 ## <a name="end-user-experience-when-enrolling-a-samsung-knox-device"></a>Végfelhasználói élmény Samsung Knox-eszköz regisztrálása során
 
@@ -76,6 +76,6 @@ A Samsung Knox-eszközök regisztrálása során több szempontot figyelembe kel
 
 ## <a name="next-steps"></a>További lépések
 
-- [Androidos munkahelyi profil regisztrációk beállítása](android-work-profile-enroll.md)
-- [Android dedikált eszközregisztrációk beállítása](android-kiosk-enroll.md)
-- [Állítsa be az Android a teljes körűen felügyelt regisztrációk](android-fully-managed-enroll.md)
+- [Android Enterprise munkahelyi profil regisztrációk beállítása](android-work-profile-enroll.md)
+- [Dedikált Android Enterprise eszközregisztrációk beállítása](android-kiosk-enroll.md)
+- [Állítsa be a teljes körűen felügyelt Android Enterprise-regisztrációk](android-fully-managed-enroll.md)

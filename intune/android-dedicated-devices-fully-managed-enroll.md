@@ -1,7 +1,7 @@
 ---
-title: Dedikált Android-eszközök regisztrálása vagy a teljes körűen felügyelt eszközöket az Intune-ban
+title: Teljes körűen felügyelt eszközöket az Intune-ban vagy a dedikált vállalati Android-eszköz regisztrálása
 titlesuffix: Microsoft Intune
-description: Ismerje meg, miként regisztrálhatják az Android enterprise dedikált eszközök vagy fulluy felügyelt eszközöket az Intune-ban.
+description: Ismerje meg, hogy miként regisztrálhatják az Android Enterprise dedikált vagy teljes körűen felügyelt eszközökre az Intune-ban.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2a83676f67866bc81ea81f7bb721dec5825a95c9
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 90af5ed5fab21e7b15c0e6d77b170e49b3047c88
+ms.sourcegitcommit: ad213c5be1e1ad2b768661a467878056e6090999
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55843442"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56444140"
 ---
-# <a name="enroll-your-android-dedicated-devices-or-fully-managed-devices-preview"></a>A dedikált Android-eszközök regisztrálása vagy a teljes körűen felügyelt eszközök (előzetes verzió)
+# <a name="enroll-your-android-enterprise-dedicated-devices-or-fully-managed-devices-preview"></a>A dedikált vállalati Android-eszköz vagy a teljes körűen felügyelt eszközök (előzetes verzió)
 
-Miután beállította a [Android dedikált eszközök](android-kiosk-enroll.md) vagy [teljes körűen felügyelt eszközök](android-fully-managed-enroll.md) az Intune-ban, az eszközöket regisztrálni. Az Android-eszközök regisztrálásának módja az operációs rendszertől függ.
+Miután beállította a [Android Enterprise dedikált eszközök](android-kiosk-enroll.md) vagy [teljes körűen felügyelt eszközök](android-fully-managed-enroll.md) az Intune-ban, az eszközöket regisztrálni. Az Android Enterprise-eszközök regisztrálásának módja attól függ, hogy az operációs rendszer.
 
 | Regisztráció módszere | Android operációs rendszer minimális verziójának dedikált és teljes körűen felügyelt eszközök |
 | ----- | ----- |

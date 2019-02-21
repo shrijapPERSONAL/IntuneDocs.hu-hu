@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 02/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61a2abee2e926605a4d7d35baa53f6259ef77db3
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 02505cc21865308ef9ea4dbbabe95fc65ea87b58
+ms.sourcegitcommit: f1681554ad842c22ad3f82f0e6d44d5966e4aa3d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840246"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56458875"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Önálló Intune - Win32-Alkalmazáskezelés
 
@@ -39,6 +39,9 @@ Az Intune különálló verziója több lehetőséget biztosít a Win32-alkalmaz
 ## <a name="prepare-the-win32-app-content-for-upload"></a>A Win32-alkalmazás tartalmának előkészítése a feltöltéshez
 
 Használja a [Microsoft Win32 tartalom előkészítő eszközt](https://go.microsoft.com/fwlink/?linkid=2065730) előre a Win32-alkalmazások feldolgozásához. Az eszköz konvertálja az alkalmazástelepítési fájlok a *.intunewin* formátumban. Az eszköz az Intune által az alkalmazás telepítési állapotának meghatározásához szükséges attribútumok némelyike is észleli. Miután használta ezt az eszközt az alkalmazástelepítési mappában, létrehozhat egy Win32-alkalmazást az Intune-konzolon.
+
+> [!IMPORTANT]
+> A [Microsoft Win32 tartalom előkészítő eszközt](https://go.microsoft.com/fwlink/?linkid=2065730) zips alkalmazást az összes fájlt és almappát, amikor létrehozza a *.intunewin* fájlt. Ügyeljen arra, a Microsoft Win32 tartalom előkészítő eszköz külön installer-fájlok és mappák, így nem adja meg az eszközt vagy más szükségtelen fájlok és mappák a *.intunewin* fájlt.
 
 Letöltheti a [Microsoft Win32 tartalom előkészítő eszközt](https://go.microsoft.com/fwlink/?linkid=2065730) a Githubról.
 
