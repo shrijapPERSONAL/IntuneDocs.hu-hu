@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: ''
+ms.date: 02/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e24043bb1c41d68de04669ff27cc659624dc56c1
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 6d3a7ea65a560ff317bfe9ff2374c6c9cd2e5f4b
+ms.sourcegitcommit: f1681554ad842c22ad3f82f0e6d44d5966e4aa3d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846825"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56458858"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Eszközök eltávolítása összes adatuk törlésével, az eszköz kivonásával vagy regisztrációja manuális törlésével
 
@@ -82,7 +82,7 @@ Az alábbi táblázatok ismertetik, hogy milyen adatokat távolít el a rendszer
 
 |Adattípus|iOS|
 |-------------|-------|
-|Vállalati alkalmazások és az Intune által telepített egyéb vonatkozó adatok|**Vállalati portálon keresztül telepített alkalmazások:** A felügyeleti profil, az összes alkalmazás adatainak és az alkalmazások rögzített vonatkozó alkalmazások törlődnek. Az alkalmazások tartalmazzák az App Store telepített és később felügyelt vállalati alkalmazások alkalmazások. <br /><br /> **Microsoft-alkalmazások mobilalkalmazás-felügyeletet használó, és megtörtént-e az App Store:** A céges portál által nem kezelt alkalmazások esetében az alkalmazás helyi Storage mobilalkalmazás-felügyeleti (MAM)-titkosítás által védett vállalati alkalmazásadatok törlődnek. Az alkalmazáson kívüli MAM titkosítás által védett adatok titkosítva és használhatatlan állapotban maradnak, de nem törlődnek. Személyes adatokat, és az alkalmazások nem lesznek eltávolítva.|
+|Vállalati alkalmazások és az Intune által telepített egyéb vonatkozó adatok|**Vállalati portálon keresztül telepített alkalmazások:** A felügyeleti profil rögzített alkalmazások esetében minden alkalmazásadat és az alkalmazások törlődnek. Az alkalmazások tartalmazzák az App Store telepített és később felügyelt vállalati alkalmazások alkalmazások. <br /><br /> **Microsoft-alkalmazások mobilalkalmazás-felügyeletet használó, és megtörtént-e az App Store:** A céges portál által nem kezelt alkalmazások esetében az alkalmazás helyi Storage mobilalkalmazás-felügyeleti (MAM)-titkosítás által védett vállalati alkalmazásadatok törlődnek. Az alkalmazáson kívüli MAM titkosítás által védett adatok titkosítva és használhatatlan állapotban maradnak, de nem törlődnek. Személyes adatokat, és az alkalmazások nem lesznek eltávolítva.|
 |Beállítások|Az Intune-szabályzat által konfigurált beállítások érvényüket vesztik. A felhasználók megváltoztathatják a beállításokat.|
 |Wi-Fi és VPN profilbeállításai|Eltávolítva.|
 |Tanúsítvány profilbeállításai|A tanúsítványok törlődnek és visszavonásra kerülnek.|
@@ -130,7 +130,7 @@ Az összes adat törlése csak kioszkeszközökön lehetséges. Androidos kioszk
 
 |Adattípus|Windows 8.1 (MDM) és Windows RT 8.1|Windows RT|Windows Phone 8.1 és Windows Phone 8|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
-|Vállalati alkalmazások és az Intune által telepített egyéb vonatkozó adatok|Az EFS által védett fájloknál a kulcsok visszavonódnak. A felhasználó nem tudja megnyitni a fájlokat.|A vállalati alkalmazásokat a rendszer nem távolítja el.|Törlődnek az eredetileg a Céges portálon keresztül telepített alkalmazások. Törlődnek a vállalati alkalmazásadatok.|Törlődnek az alkalmazások. A közvetlen telepítési kulcsokat a rendszer eltávolítja.<br>A Windows 10 1703-as (alkotói frissítés) és újabb verzióinál a rendszer az Office 365 ProPlus alkalmazásokat nem távolítja el.|
+|Vállalati alkalmazások és az Intune által telepített egyéb vonatkozó adatok|Az EFS által védett fájloknál a kulcsok visszavonódnak. A felhasználó nem tudja megnyitni a fájlokat.|A vállalati alkalmazásokat a rendszer nem távolítja el.|Törlődnek az eredetileg a Céges portálon keresztül telepített alkalmazások. Törlődnek a vállalati alkalmazásadatok.|Törlődnek az alkalmazások. A közvetlen telepítési kulcsokat a rendszer eltávolítja.<br>A Windows 10 1703-as (alkotói frissítés) és újabb verzióinál a rendszer az Office 365 ProPlus alkalmazásokat nem távolítja el. Az Intune felügyeleti bővítmény Win32-alkalmazások nem lesz eltávolítva a nem regisztrált eszközökön telepítve van.|
 |Beállítások|Az Intune-szabályzat által konfigurált beállítások érvényüket vesztik. A felhasználók megváltoztathatják a beállításokat.|Az Intune-szabályzat által konfigurált beállítások érvényüket vesztik. A felhasználók megváltoztathatják a beállításokat.|Az Intune-szabályzat által konfigurált beállítások érvényüket vesztik. A felhasználók megváltoztathatják a beállításokat.|Az Intune-szabályzat által konfigurált beállítások érvényüket vesztik. A felhasználók megváltoztathatják a beállításokat.|
 |Wi-Fi és VPN profilbeállításai|Eltávolítva.|Eltávolítva.|Nem támogatott.|Eltávolítva.|
 |Tanúsítvány profilbeállításai|A tanúsítványok törlődnek és visszavonásra kerülnek.|A tanúsítványok törlődnek és visszavonásra kerülnek.|Nem támogatott.|A tanúsítványok törlődnek és visszavonásra kerülnek.|
