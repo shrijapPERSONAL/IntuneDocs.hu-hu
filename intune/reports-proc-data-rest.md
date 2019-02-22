@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c43b27a07aa5eafc19ce1528bbfe34c1a6dbb1d
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: bb10dfe14dc6da3d58e5ae4279a4d89647691cac
+ms.sourcegitcommit: 8943848d47d5d5d6e44c74d414c34c5e3457862b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839467"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56655357"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Adatok beolvasása az Intune-adattárház API-ból REST-ügyféllel
 
@@ -99,7 +99,7 @@ A végpont is szükséges. Az adattárház-végpont beszerzéséhez szükséges 
 3. Az **Egyéb feladatok** szakaszban válassza az **Intune-adattárház beállítása** lehetőséget.
 4. Másolja be az egyedi hírcsatorna URL-címét a **Külső gyártótól származó jelentéskészítési szolgáltatások használata** szakaszba. Az eredménynek a következőhöz hasonlónak kell lennie: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 
-A végpont formátuma a következőnek felel meg: `https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`.
+A végpont a következő formátumot követi: `https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`
 
 A **dates** entitás megjelenése például a következő: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
 
@@ -164,7 +164,7 @@ Az alábbi minta egy egyszerű REST-ügyfelet tartalmaz. A kód a .Net-kódtár 
 
     ![Progam.cs és a Visual Studio Megoldáskezelőjében](./media/reports-get_rest_data_in.png)
 
-8. Írja felül a Program.cs fájlban található kódot az alábbi kóddal:  
+8. Cserélje le a kódot *Program.cs* a következő kóddal:  
    ```csharp
    namespace IntuneDataWarehouseSamples
    {

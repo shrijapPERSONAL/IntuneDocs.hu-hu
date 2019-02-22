@@ -1,7 +1,7 @@
 ---
 title: Az alkalmazásvédelmi szabályzatok figyelése
 titleSuffix: Microsoft Intune
-description: Az Intune-ban figyelheti a mobilalkalmazás-kezelési szabályzatok megfelelőségi állapotát.
+description: Ez a témakör ismerteti, hogyan figyelheti az Intune-ban mobilalkalmazás-felügyeleti szabályzatok megfelelőségi állapotát.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7efa888344b91c74672563730bbdea6c7424214b
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 0dd0ce79f6bbb381523a92855f38ad6b7f372ac2
+ms.sourcegitcommit: 8943848d47d5d5d6e44c74d414c34c5e3457862b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55835095"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56655323"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Az alkalmazásvédelmi szabályzatok figyelése
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]

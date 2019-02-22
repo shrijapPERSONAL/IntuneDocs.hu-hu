@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2019
+ms.date: 02/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e827862510f24a2f133562c836d6c1b47186c330
-ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
+ms.openlocfilehash: ae8113a603ae4c091005f7c82045708f7e9e3e97
+ms.sourcegitcommit: 8943848d47d5d5d6e44c74d414c34c5e3457862b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086148"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56655391"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Mobilalkalmazás-kezelési hibaelhárítás
 
@@ -78,7 +78,7 @@ Hibaüzenet vagy párbeszédpanel | Ok | Szervizelés |
 **Alkalmazás nem állította be**: Ez az alkalmazás nincs beállítva a használatra. Segítségért forduljon a rendszergazdához. | Hiba történt egy alkalmazásvédelmi szabályzatot az alkalmazás észleléséhez. |Léptessen életbe egy iOS-es alkalmazásvédelmi szabályzatot a felhasználó biztonsági csoportjában, és célozza meg benne ezt az alkalmazást.
 **Üdvözli az Intune Managed Browser**: Ez az alkalmazás akkor működik a legjobban, ha a Microsoft Intune által kezelt. Bármikor böngészheti vele az internetet. Ha az alkalmazást a Microsoft Intune felügyeli, további adatbiztonsági funkciókat is elérhet. | Hiba történt észleléséhez egy alkalmazásvédelmi szabályzatot az Intune Managed Browser alkalmazás. <br><br>A felhasználó ebben az esetben is internetezhet, de az alkalmazást nem az Intune fogja felügyelni. | Léptessen életbe egy iOS-es alkalmazásvédelmi szabályzatot a felhasználó biztonsági csoportjában, és célozza meg benne ezt az Intune Managed Browser alkalmazást.
 **Sikertelen bejelentkezés**: Nem tudjuk beléptetni most. Próbálkozzon újra később. | Nem sikerült regisztrálni a felhasználót a MAM-szolgáltatásban, miután a felhasználó megpróbált munkahelyi vagy iskolai fiókjával bejelentkezni. | Léptessen életbe egy iOS-es alkalmazásvédelmi szabályzatot a felhasználó biztonsági csoportjában, és célozza meg benne ezt az alkalmazást.
-**A fiók nincs beállítva**: A szervezete nem állította be a fiókját a munkahelyi vagy iskolai adatok elérésére. Kérjen segítséget a rendszergazdától. | A felhasználói fiókhoz nem tartozik Intune A Direct-licenc. | Rendeljen Intune-licencet a felhasználó fiókjához az [Office-portálon](http://portal.office.com).
+**A fiók nincs beállítva**: A szervezete nem állította be a fiókját a munkahelyi vagy iskolai adatok elérésére. Kérjen segítséget a rendszergazdától. | A felhasználói fiókhoz nem tartozik Intune A Direct-licenc. | Rendeljen Intune-licencet a felhasználó fiókjához az [Office-portálon](https://portal.office.com).
 **Nem felel meg az eszköz**: Ez az alkalmazás nem használható, mert Ön egy feltört eszközt használ. Segítségért forduljon a rendszergazdához. | Az Intune észlelte, hogy a felhasználó feltört eszközt használ. | Állítsa vissza az eszköz gyári alapbeállításait. Kövesse az Apple támogatói webhelyén található [utasításokat](https://support.apple.com/HT201274).
 **Internetkapcsolat szükséges**: Akkor kapcsolódnia kell az internethez, ellenőrizze, hogy az alkalmazás használhatja. | Az eszközön nincs internetkapcsolat. | Csatlakoztassa az eszközt egy Wi-Fi- vagy adathálózathoz.
 **Ismeretlen hiba történt**: Próbálja meg újraindítani az alkalmazást. Ha nem szűnik meg a probléma, kérjen segítséget a rendszergazdától. | Ismeretlen hiba történt. | Próbálkozzon újra egy kis idő elteltével. Ha a hiba továbbra is fennáll, hozzon létre egy [támogatási jegyet](get-support.md#create-an-online-support-ticket) az Intune-nal.
@@ -97,7 +97,7 @@ Párbeszédpanel/hibaüzenet | Ok | Szervizelés |
 **Sikertelen bejelentkezés**: Próbálja meg újra bejelentkezni. Ha nem szűnik meg a probléma, kérje a rendszergazda segítségét. | Nem sikerült hitelesíteni a fiókot, amellyel a felhasználó megpróbál bejelentkezni. | A felhasználó azzal a munkahelyi vagy iskolai fiókkal jelentkezzen be, amely már regisztrálva van az Intune MAM-szolgáltatásában (ez az első munkahelyi vagy iskolai fiók, amellyel sikeresen bejelentkezett ebbe az alkalmazásba). <br><br> Törölje az alkalmazásadatokat. <br><br> Ellenőrizze, hogy az alkalmazás naprakész verzióját használja-e. <br><br> Ellenőrizze, hogy a Munkahelyi portál alkalmazás naprakész verzióját használja-e.
 **Internetkapcsolat szükséges**: Akkor kapcsolódnia kell az internethez, ellenőrizze, hogy az alkalmazás használhatja. | Az eszközön nincs internetkapcsolat. | Csatlakoztassa az eszközt egy Wi-Fi- vagy adathálózathoz.
 **Nem megfelelő eszköz**: Ez az alkalmazás nem használható, mert Ön egy rootolt eszközt használ. Segítségért forduljon a rendszergazdához. | Az Intune észlelte, hogy a felhasználó feltört eszközt használ. | Állítsa vissza az eszköz gyári alapbeállításait.
-**A fiók nincs beállítva**: A Microsoft Intune-nal felügyelni ezt az alkalmazást, de a fiók nincs beállítva. Segítségért forduljon a rendszergazdához. | A felhasználói fiókhoz nem tartozik Intune A Direct-licenc. | Rendeljen Intune-licencet a felhasználó fiókjához az [Office-portálon](http://portal.office.com).
+**A fiók nincs beállítva**: A Microsoft Intune-nal felügyelni ezt az alkalmazást, de a fiók nincs beállítva. Segítségért forduljon a rendszergazdához. | A felhasználói fiókhoz nem tartozik Intune A Direct-licenc. | Rendeljen Intune-licencet a felhasználó fiókjához az [Office-portálon](https://portal.office.com).
 **Nem sikerült regisztrálni az alkalmazást**: A Microsoft Intune-nal felügyelni ezt az alkalmazást, de nem sikerült regisztrálni az alkalmazást jelenleg. Segítségért forduljon a rendszergazdához. | Nem sikerült automatikusan regisztrálni az alkalmazást a MAM-szolgáltatásban, pedig alkalmazásvédelmi szabályzatra van szükség. | Törölje az alkalmazásadatokat. <br><br> Naplók küldése az Intune a céges portál alkalmazáson keresztül, vagy küldjön egy támogatási jegyet. További információkért lásd: [hogyan kérhet támogatást a Microsoft Intune](get-support.md).
 
 ## <a name="next-steps"></a>További lépések

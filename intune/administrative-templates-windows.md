@@ -15,14 +15,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36076aab02f16937066cb3d47d573f7c74dd6277
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 4edf76b2406f07efa68275763da87340bb34f222
+ms.sourcegitcommit: 613b2064df07cfac0081e8549177e1f2d07cf33c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55833616"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56590070"
 ---
-# <a name="windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>A Windows 10-sablonok konfigurálása csoportházirend-beállítások a Microsoft Intune-ban
+# <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>A csoportházirend-beállítások konfigurálása a Microsoft Intune-ban Windows 10-sablonok használatával
 
 A szervezet-eszközök kezelésekor érdemes hozzon létre egy csoportot, amelyek különféle eszközcsoportokra vonatkoznak. Például hogy több eszköz csoportot. GroupA, a hozzárendelni kívánt beállítások meghatározott készletét. GroupB, a hozzárendelni kívánt beállítások külön készletét. Azt is szeretné egy egyszerű nézet a konfigurálható beállítások.
 
