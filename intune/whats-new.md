@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/19/2019
+ms.date: 02/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 65370710f409d028871695de22829f64e82bf54e
-ms.sourcegitcommit: 67e4e66e8c05b36c0897fb2955ef68666d22b094
+ms.openlocfilehash: f1212f0d2afb1f5201af6c29201564e104b1c26c
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56426977"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742788"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -45,16 +45,147 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Emellett tá
 
 -->     
 
-## <a name="week-of-february-19-2019"></a>2019. február 19 hete
+## <a name="week-of-february-18-2019"></a>2019. február 18 hete
+
+### <a name="app-management"></a>Alkalmazáskezelés
+
+#### <a name="intune-will-leverage-google-play-protect-apis-on-android-devices----2577355-eeready-wnready---"></a>Intune az Android-eszközökön a Google Play védelme API-kat használja <!-- 2577355 eeready wnready -->
+Egyes rendszergazdáknak kihívással szembesülnek, a BYOD fekvő tájolás, a végfelhasználók előfordulhat, hogy végül a telepítés vagy jailbreaking a mobiltelefonon. Ez a viselkedés, amíg nem néha helytelenül – intentioned, annak érdekében, hogy a végfelhasználói eszközökön a szervezet adatainak megvédése beállított számos Intune-házirendek a Mellőzés eredményez. Így az Intune kínál mind a regisztrált és nem regisztrált eszközök rootolásának és függetlenítésének észlelését. Ebben a kiadásban az Intune most már használja a Google Play védelme API-k hozzáadása a nem regisztrált eszközök a meglévő legfelső szintű észlelési ellenőrzése. Google nem osztja meg a legfelső szintű észlelési ellenőrzéseket végez a teljes, miközben várhatóan ezen API-k, felhasználók, akik rendelkezik rootolva eszközeiket a testre szabható az eszközök bármilyen okból újabb operációsrendszer-frissítés részletes a régebbi eszközöket képes észlelni. Ezek a felhasználók majd egytől a vállalati adatokhoz hozzáférő, vagy a házirend-kompatibilis alkalmazások a vállalati fiókokra törlődhetnek. További értékek a rendszergazda már az Intune App Protection panelen található jelentéskészítési frissítéseket – a "Megjelölt felhasználók" a jelentés megmutatja, hogy mely felhasználók észlelése keresztül a Google Play Protect a SafetyNet API vizsgálatot, a "potenciálisan káros alkalmazások" jelentést fog megjelenítése, mely alkalmazások észlelése API-n keresztül a Google ellenőrzése alkalmazások vizsgálatát. Ez a funkció Android rendszeren érhető el.
+
+#### <a name="win32-app-information-available-in-troubleshooting-blade----2617342-eeready-wnready---"></a>A Win32-alkalmazás adatai hibaelhárítás panelen érhető el <!-- 2617342 eeready wnready -->
+Most már gyűjthet hiba naplófájlokat egy Win32-alkalmazás telepítése az Intune App **hibaelhárítás** panelen. Alkalmazás telepítési hibaelhárítással kapcsolatos további információkért lásd: [alkalmazás telepítési problémák elhárítása](troubleshoot-app-install.md) és [hibaelhárítása Win32 alkalmazás problémák](apps-win32-app-management.md#troubleshoot-win32-app-issues).
+
+#### <a name="app-status-details-for-ios-apps----3761235-eeready-wnready---"></a>Az iOS-alkalmazások App-állapot részletei <!-- 3761235 eeready wnready -->
+Új alkalmazás telepítési hiba történt a következőhöz kapcsolódó üzenetek vannak:
+- VPP-alkalmazások a megosztott iPad telepítésekor hiba
+- Hiba, amikor az app Store-ban le van tiltva.
+- Hiba található a VPP-licenc az alkalmazás
+- Nem sikerült telepíteni a rendszer alkalmazások az MDM-szolgáltató
+- Nem sikerült telepíteni a alkalmazások eszköz esetén az elveszett eszköz mód vagy a teljes képernyős módban
+- Nem sikerült telepíteni az alkalmazást, amikor a felhasználó nem jelentkezett be, az App Store
+
+Válassza ki az Intune-ban **ügyfélalkalmazás** > **alkalmazások** > "App name" > **eszköz telepítési állapota**. Új hibaüzenetek lesz elérhető a **állapot részletei** oszlop.
+
+#### <a name="new-app-categories-screen-in-the-company-portal-app-for-windows-10---3834780-wnready---"></a>Új alkalmazás kategóriák képernyő Windows 10-es céges portál alkalmazásban<!-- 3834780 wnready -->
+Egy új képernyőt nevű **Alkalmazáskategóriák** a Windows 10 céges portál alkalmazás tallózása és kiválasztása élményének növelése érdekében jelentősen bővült. A felhasználók mostantól látnak alkalmazásaikat, például a kategóriák szerint rendezve **kiemelt**, **oktatási**, és **termelékenység**. Ez a módosítás megjelenik a céges portál verziókban 10.3.3451.0 és újabb verziók. Az új képernyő megtekintése: [az alkalmazásfelhasználói felület újdonságai](https://docs.microsoft.com/intune/whats-new). A vállalati portál alkalmazások kapcsolatos további információkért lásd: [telepítése és megosztása az eszközön található alkalmazások](/intune-user-help/install-apps-cpapp-windows).  
+
+#### <a name="power-bi-compliance-app----1455231-doc-work-item---"></a>A Power BI megfelelőségi alkalmazás <!-- 1455231 doc-work-item -->
+A Power BI online-hoz az Intune-adattárház elérése a [(adatraktár) az Intune megfelelőségi](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) alkalmazást. A Power BI alkalmazással most már elérheti és megoszthatja az előre létrehozott jelentések beállítások nélkül, és a böngésző elhagyása nélkül. További információkért lásd: [módosítási napló - megfelelőségi a Power BI alkalmazás](reports-changelog.md#power-bi-compliance-app). További Intune Data Warehouse-frissítések, lásd: [hamarosan várható az Intune-adattárház API módosításai](whats-new.md#upcoming-change-to-the-intune-data-warehouse-api).
+
+
+### <a name="device-configuration"></a>Eszközök konfigurálása
+
+#### <a name="powershell-scripts-can-run-in-a-64-bit-host-on-64-bit-devices----1862675-eeready-wnready---"></a>PowerShell-parancsprogramok a 64 bites gazdagépen 64 bites eszközökön futtathatja <!-- 1862675 eeready wnready -->
+Eszközkonfigurációs profil hozzá egy PowerShell-parancsfájlt, ha a parancsfájl mindig futtatják a 32 bites, akár a 64 bites operációs rendszereken. Ezzel a frissítéssel a rendszergazda tudja futtatni a parancsprogramot a 64 bites PowerShell-gazdagépet a 64 bites eszközökön (**eszközkonfiguráció** > **PowerShell-parancsfájlok**  >   **Adjon hozzá** > **konfigurálása** > **64 bites PowerShell-gazdagépet a szkriptet futtathatja**).
+
+A PowerShell használatával további részletekért lásd: [az Intune-ban a PowerShell-parancsfájlok](intune-management-extension.md).
+
+A következőkre vonatkozik: Windows 10 és újabb
 
 #### <a name="macos-users-are-prompted-to-update-their-password----1873216---"></a>macOS-felhasználók a rendszer kéri a jelszó frissítése <!-- 1873216 -->
-
 Az Intune kényszerít a **ChangeAtNextAuth** beállítása macOS-eszközökön. Ez a beállítás hatással van a végfelhasználók és a jelszó házirendek vagy a jelszó eszközkorlátozási profilok rendelkező eszközök. A végfelhasználók a jelszófrissítési egyszer megerősítését. Ez a kérdés történik, amikor egy felhasználó először futtat egy feladatot, amely megköveteli a hitelesítést, például az eszköz bejelentkezik. Felhasználók is frissíteni a jelszavát, ha rendszergazdai jogosultsággal, például az kulcslánc-hozzáférési csinál semmit, amely szükséges lehet kéri. 
 
 Minden olyan új vagy meglévő szabályzat jelszómódosítások a rendszergazda által a végfelhasználók számára, hogy újra frissíteni a jelszavát kéri.
 
 A következőkre vonatkozik:  
 macOS
+
+#### <a name="assign-scep-certificates-to-a-userless-macos-device-------2340521--wnready----"></a>SCEP-tanúsítványok felhasználó nélküli macOS-eszközök hozzárendelése    <!-- 2340521  WNready  -->
+Rendelje hozzá az egyszerű tanúsítványigénylési protokoll (SCEP) tanúsítványok eszközattribútumok MacOS rendszerű eszközökhöz, beleértve a, a felhasználói affinitás nélküli eszközök használatával, és rendelje hozzá a tanúsítványprofil Wi-Fi vagy VPN-profilok. Ez kibővíti a támogatást, már eleve [SCEP-tanúsítványok és a felhasználói affinitás nélküli eszközökhöz hozzárendelni](certificates-scep-configure.md#create-a-scep-certificate-profile) Windows, iOS és Android rendszerű.  Ezt a frissítést hozzáadja a kívánt tanúsítvány típusú *eszköz* a macOS-hez készült SCEP-tanúsítványprofil konfigurálásakor.
+
+#### <a name="intune-conditional-access-ui-update------2432313--wnready---"></a>Az Intune feltételes hozzáférés felhasználói felület frissítése   <!-- 2432313  WNready -->
+A feltételes hozzáférés az Intune-konzolon a felhasználói felület fejlesztéseket végeztünk. Ezek a következők:
+-  Lecseréli az Intune *feltételes hozzáférési* panelről a panel az Azure Active Directoryból. Ez biztosítja a hozzáférést, a beállítások és konfigurációk teljes körét [feltételes hozzáférés] ((ami továbbra is egy Azure AD-technológia), az Intune-konzolról. 
+- Azt már átnevezték a *helyszíni hozzáférés* panel *Exchange-hozzáférés*, és más helyre a *Exchange szolgáltatási összekötője* átnevezve: ezen a panelen a telepítőt.  Ez a változás összesíti a helyét, [konfigurálhatja és figyelheti az Exchange online-hoz és a helyszíni kapcsolatos részleteket](exchange-connector-install.md).  
+
+#### <a name="kiosk-browser-and-microsoft-edge-browser-apps-can-run-on-windows-10-devices-in-kiosk-mode----2935135-eeready-wnready---"></a>A teljes képernyős böngésző és a Microsoft Edge böngésző alkalmazások teljes képernyős módban a Windows 10-eszközökön futtathatja <!-- 2935135 eeready wnready -->
+Egy alkalmazás vagy sok alkalmazás használhatja a teljes képernyős módban a Windows 10-eszközök. Ez a frissítés segítségével a böngészőben megjelenő alkalmazásokba teljes képernyős módban számos módosításait tartalmazza többek között:
+
+- Adja meg a Microsoft Edge böngészőt vagy futtatható alkalmazásokat a teljes képernyős eszközön teljes képernyős böngésző (**eszközkonfiguráció** > **profilok** > **új profil**  >  **Windows 10 és újabb** tartozó platform > **teljes képernyős** profiltípus).
+- Új funkciók és beállítások érhetők el engedélyezése vagy korlátozása (**eszközkonfiguráció** > **profilok** > **új profil**  >  **Windows 10 és újabb** tartozó platform > **eszközkorlátozások** profiltípus), többek között:
+
+  - Microsoft Edge Browser:
+    - A Microsoft Edge-teljes képernyős mód használata
+    - Üresjárati idő után frissítse a böngészőt
+
+ - Kedvencek és keresés:
+    - -Motor keresés engedélyezése
+
+Ezek a beállítások listáját lásd:
+
+- [Windows 10-es és újabb beállításai a teljes képernyős fiókként való futtatásra](kiosk-settings-windows.md)
+- [A Microsoft Edge böngésző eszközkorlátozások](device-restrictions-windows-10.md#microsoft-edge-browser)
+- [Kedvencek és keresési eszközkorlátozások](device-restrictions-windows-10.md##favorites-and-search)
+
+A következőkre vonatkozik: Windows 10 és újabb
+
+#### <a name="new-device-restriction-settings-for-ios-and-macos-devices----3448774-eeready-wnready---"></a>Új eszközkorlátozásokra vonatkozó beállítások az iOS és macOS-eszközök <!-- 3448774 eeready wnready -->
+Bizonyos beállítások és funkciók iOS és macOS rendszerű eszközökön korlátozhatja (**eszközkonfiguráció** > **profilok** > **új profil**  >  **iOS** vagy **macOS** tartozó platform > **eszközkorlátozások** profiltípus). Ezt a frissítést hozzáadja a további funkciók és szabályozhatja, beleértve a beállítás képernyő idő, módosítás, esim-kártya beállításait és mobil terveket, és további információ az iOS-eszközök beállításai. Ezenkívül késlelteti a szoftverfrissítéseket, és blokkolja a tartalom gyorsítótárazása macOS-eszközökön a felhasználó látható-e. 
+
+A funkciók és korlátozhatja a beállítások megtekintéséhez lásd:
+
+- [iOS-eszközök korlátozásaira vonatkozó beállítások](device-restrictions-ios.md)
+- [macOS-eszközök korlátozásaira vonatkozó beállítások](device-restrictions-macos.md)
+
+A következőkre vonatkozik:
+
+- iOS
+- macOS
+
+#### <a name="kiosk-devices-are-now-called-dedicated-devices-on-android-enterprise-devices----3598402-eeready-wnready---"></a>"Kioszkeszközök" most nevezik "Dedikált eszközök" Vállalati Android-eszközökön <!-- 3598402 eeready wnready -->
+Android-terminológia, igazodva **teljes képernyős** módosul, amelyikben **dedikált eszközök** a vállalati Android-eszköz (**eszközkonfiguráció**  >  **Profilok** > **profil létrehozása** > **platform az Android enterprise > ** eszköz tulajdonosa csak > Eszközkorlátozások**  >  **Dedikált eszközök**).
+
+Az elérhető beállítások megtekintéséhez lépjen a [eszközbeállítások engedélyezett vagy korlátozott funkciók](device-restrictions-android-for-work.md#dedicated-device-settings).
+
+A következőkre vonatkozik:  
+Vállalati Android
+
+#### <a name="safari-and-delaying-user-software-update-visibility-ios-settings-are-moving-in-the-intune-ui----3640850-3803313-eeready-wnready---"></a>Safari és Delaying felhasználói szoftverfrissítési beállítások helyez át az Intune felhasználói felületén látható-e iOS frissítése <!-- 3640850, 3803313 eeready wnready -->
+IOS-eszközök esetén a Safari beállításait, és konfigurálhatja a szoftverfrissítéseket. Ebben a frissítésben ezek a beállítások az Intune felhasználói felület különböző részeinek helyez át:
+
+- A Safari beállításait az áthelyezett **Safari** (**eszközkonfiguráció** > **profilok** > **új profil**  >  **iOS** tartozó platform > **eszközkorlátozások** profiltípus) való  **[beépített alkalmazások](device-restrictions-ios.md#built-in-apps)**.
+- A **késlelteti az felhasználói szoftvereket látható-e frissítés az iOS-eszközök felügyelt** beállítás (**szoftverfrissítések** > **Update-szabályzatok iOS rendszerhez**) kerülát **Eszközkorlátozások** > **[általános](device-restrictions-ios.md#general)**.  További információ a hatás szerint is megjelenítheti a meglévő szabályzatokat: [iOS szoftverfrissítések](software-updates-ios.md#configure-the-policy). 
+
+A beállítások listájáért lásd:
+
+- [eszközkorlátozások iOS](device-restrictions-ios.md) 
+- [iOS-szoftverfrissítések](software-updates-ios.md)
+
+Ez a funkció az alábbiakra vonatkozik: 
+
+- iOS
+
+#### <a name="enabling-restrictions-in-the-device-settings-is-renamed-to-screen-time-on-ios-devices----3699164-eeready-wnready---"></a>Korlátozások engedélyezése az eszköz között új képernyő idő az iOS-eszközökön <!-- 3699164 eeready wnready -->
+Konfigurálhatja a **korlátozások engedélyezése az eszköz között** a felügyelt iOS-eszközök (**eszközkonfiguráció** > **profilok**  >  **Új profil** > **iOS** tartozó platform > **eszközkorlátozások** profiltípus > **általános**). Ebben a frissítésben ezzel a beállítással új **(csak felügyelt) képernyő idő**. 
+
+A viselkedés megegyezik. Pontosabban: 
+
+- iOS-es 11.4.1 és korábbi: **Blokk** megakadályozza, hogy a végfelhasználók számára az Eszközbeállítások között a saját korlátozásokkal. 
+- iOS-es 12.0 és újabb verziók: **Blokk** megakadályozza, hogy a végfelhasználók saját beállítás **képernyő idő** az Eszközbeállítások között, beleértve a tartalom & adatvédelmi korlátozások. Frissített iOS 12.0-s eszközök többé nem jelenik meg a korlátozásokat fülre az Eszközbeállítások között. Ezek a beállítások szerepelnek **képernyő idő**. 
+
+A beállítások listájáért lásd: [eszközkorlátozások iOS](device-restrictions-ios.md#general).
+
+A következőkre vonatkozik: 
+- iOS
+
+
+### <a name="device-management"></a>Eszközkezelés
+
+#### <a name="rename-an-enrolled-windows-device----1911112-eeready-wnready--"></a>Egy regisztrált Windows-eszköz átnevezése <!-- 1911112 eeready wnready-->
+Most átnevezheti a regisztrált Windows 10-es eszköz (RS4 vagy újabb). Szeretné elvégezni, válassza ki a **Intune** > **eszközök** > **minden eszköz** > Válasszon egy eszközt > **átnevezése eszköz**.
+
+#### <a name="auto-assign-scope-tags-to-resources-created-by-an-admin-with-that-scope----3173823-eeready-wnready--"></a>Hatókörcímkék automatikus hozzárendelése a hatókörrel rendelkező rendszergazda által létrehozott erőforrások <!-- 3173823 eeready wnready-->
+Amikor a rendszergazda létrehoz egy erőforrást, bármely, a rendszergazda rendelt hatókörcímkék automatikusan rendeli hozzá ezeket az új erőforrásokat.
+
+### <a name="monitor-and-troubleshoot"></a>Monitorozás és hibaelhárítás
+
+#### <a name="failed-enrollment-report-moves-to-the-device-enrollment-blade----3560202-eeready-wnready--"></a>Sikertelen regisztráció jelentés áthelyezi az Eszközregisztráció panel <!-- 3560202 eeready wnready-->
+A **sikertelen regisztrációk** jelentés át lett helyezve a **figyelő** szakaszában a **eszközregisztráció** panelen. Két új oszlopot (regisztrációs módszer és operációsrendszer-verzió) hozzá lett adva.
+
+#### <a name="company-portal-abandonment-report-renamed-to-incomplete-user-enrollments---3815076-eemiss-wnready--"></a>Vállalati portálon való lemondás jelentés hiányos felhasználói regisztrációk neve: <!--3815076 eemiss wnready-->
+A **céges portálon való lemondás** jelentés át lett nevezve a **hiányos felhasználói regisztrációk**.
+
+
 
 ## <a name="week-of-february-4-2019"></a>2019. február 4 hét
 
@@ -894,7 +1025,7 @@ A profil létrehozásához nyissa meg az **Eszközkonfiguráció** > **Profilok*
 A Windows 10 és újabb verziókra vonatkozik.
 
 #### <a name="kiosk---obsolete-is-grayed-out-and-cant-be-changed----2149998---"></a>A Kioszkmód – elavult lehetőség nem használható és nem módosítható <!-- 2149998 -->
-A [Kioszkmód funkció](device-restrictions-windows-10.md#kiosk-preview---obsolete) (**Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** > **Windows 10 vagy újabb** > **Eszközkorlátozások**) elavult. Helyét a [Kioszk beállítások Windows 10 vagy újabb rendszerekhez](kiosk-settings.md) veszi át. A frissítés után a **Kioszkmód – Elavult** funkció már nem lesz kiválasztható, és a felhasználói felület nem módosítható és nem frissíthető. 
+A kioszk (előnézet) funkció (**eszközkonfiguráció** > **profilok** > **profil létrehozása**  >   **Windows 10-es és újabb verziók** > **eszközkorlátozások**) elavult, és a lecserélt [teljes képernyős beállítások Windows 10-es és újabb](kiosk-settings.md). A frissítés után a **Kioszkmód – Elavult** funkció már nem lesz kiválasztható, és a felhasználói felület nem módosítható és nem frissíthető. 
 
 A kioszkmód a [Kioszk beállítások Windows 10 vagy újabb rendszerekhez](kiosk-settings.md) lehetőség használatával engedélyezhető.
 
@@ -1385,6 +1516,13 @@ A frissített megjelenés megtekintésez lépjen [Az alkalmazásfelhasználói f
 Mostantól a helyszíni Exchange-adatokhoz való Outlook Mobile-hozzáférést az Intune App Policy Protection (APP) és a feltételes hozzáférés segítségével védheti. Alkalmazásvédelmi szabályzat hozzáadásához vagy módosításához az Azure Portalon válassza a **Microsoft Intune** > **Ügyfélalkalmazások** > **Alkalmazásvédelmi szabályzatok** lehetőséget. A funkció használata előtt győződjön meg arról, hogy megfelel az [iOS-es és Androidos Outlook követelményeinek](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx).
 
 ## <a name="notices"></a>Értesítések
+
+###  <a name="upcoming-change-to-the-intune-data-warehouse-api"></a>Az Intune-adattárház API közelgő módosítása
+Azt is teszi két változást a 1903 időkeretén:
+- Bétaverzió szűrő elavulása<br>
+    Nem támogatott béta szűrők példányosítása elavulása. Az érintett ügyfelek lett e-mailben elküldött.   
+- vissza a bétaverzió tükröző 1.0-ás módosítások<br>
+    Az 1.0-s verziójú gyűjtemények módosításai mostantól megjelennek a béta.  
 
 ### <a name="upcoming-password-enforcement-change-for-macos-10142-in-intune---1873216--"></a>Közelgő jelszó kényszerítése módosítása az Intune-ban 10.14.2 macOS-hez <!--1873216-->
 A Microsoft megosztott MC145129 július az, hogy az Intune-csomagok újonnan integrálható az Apple megjelent-e a macOS 10.13 verzióit futtató eszközökön és a fenti "Módosítsa jelszavát, tovább Auth" beállítás. Jelenleg tervezzük szeretné visszaállítani ezt a beállítást meg februárban macOS 10.14.2-es és újabb. 

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/10/2018
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71d551ca64f85c3ba6a807fac70e3b0662e1b89a
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: b6d4497c3cf62e6679ce222cf4185f48bdf846b1
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834092"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742227"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Többtényezős hitelesítés megkövetelése az Intune-os eszközregisztrációhoz
 
@@ -50,11 +50,10 @@ Ha meg szeretné követelni a többtényezős hitelesítést a regisztráció so
 >Ne konfiguráljon **eszközalapú hozzáférési szabályokat** a Microsoft Intune-regisztrációhoz.
 
 1. Jelentkezzen be a [Microsoft Azure Portálra](https://portal.azure.com) a hitelesítő adataival.
-2. A portálon lépjen az **[Azure Active Directoryra](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)**.
-3. Az **Azure Active Directory** Biztonság területén válassza a **[Feltételes hozzáférés](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)** lehetőséget.
+2. A portálon lépjen a **Intune** válassza **feltételes hozzáférési**. A feltételes hozzáférés csomópont elérhető *Intune* van ugyanazon a csomóponton, elérhető *Azure ad-ben*.
 4. Válassza az **Új szabályzat** lehetőséget.
 5. Az **Új** szabályzat mezőbe írjon be egy beszédes nevet a szabályzathoz.
-6. A **Hozzárendelések** szakaszban válassza a **Felhasználók és csoportok** lehetőséget.
+6. A **Hozzárendelések** szakaszban válassza a **Felhasználók és csoportok** lehetőséget. 
 7. A **Felhasználók és csoportok** területen válassza a **Felhasználók vagy csoportok kiválasztása** lehetőséget, majd jelölje be a **Felhasználók és csoportok** jelölőnégyzetet. Válassza ki azokat a felhasználókat és csoportokat, amelyek meg fogják kapni ezt a szabályzatot, majd válassza a **Kész** elemet.
 8. A **Hozzárendelések** szakaszban válassza a **Felhőalkalmazások** lehetőséget.
 9. A **Felhőalkalmazások** **Intune** lapján válassza az **Alkalmazások kiválasztása** elemet, majd a **Kijelölés** > **Microsoft Intune-regisztráció** lehetőséget, végül a **Kész** gombot.

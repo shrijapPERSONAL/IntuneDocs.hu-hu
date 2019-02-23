@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 1/29/2019
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50235e4e21e738081dc1b41d8e6a8b6210430064
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: cdc0f02aa09edd05314d0d4a6a2abacc98c94bf2
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55838129"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742737"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>SCEP-tanúsítványok konfigurálása és használata az Intune-nal
 
@@ -364,10 +364,12 @@ A szolgáltatás futásának ellenőrzéséhez nyisson meg egy böngészőt, és
 6. Adja meg a következő beállításokat:
 
    - **Tanúsítvány típusa**: Válasszon **felhasználói** felhasználói tanúsítványok esetében. Válassza az **Eszköz** lehetőséget a felhasználó nélküli eszközökhöz, például kioszkokhoz. **Eszköztanúsítványok** a következő platformokhoz érhetők el:  
+     - Vállalati Android
      - iOS
+     - macOS
      - Windows 8.1 és újabb
      - Windows 10 és újabb
-     - Vállalati Android
+
 
    - **Tulajdonos nevének formátuma**: Válassza ki, hogyan Intune-ban hozza létre automatikusan a tulajdonos nevét a tanúsítványkérelemben. A beállítások eltérőek a **Felhasználói** és az **Eszköz** tanúsítványtípus kiválasztásakor. 
 

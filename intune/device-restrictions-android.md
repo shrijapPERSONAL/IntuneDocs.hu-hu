@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1f386f9f6e8ffdac413fc542b51ab66e7f3d9b8
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: db55df932c066bac41dfbe037991587bef1cbbba
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55836523"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742618"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-lists-in-intune"></a>Android és Samsung Knox Standard-eszközök korlátozási beállítások listák az Intune-ban
 
@@ -165,4 +165,4 @@ A kioszkmód csak a Samsung Knox Standard eszközökre, és csak az Intune-nal f
 
 [Rendelje hozzá a profilt](device-profile-assign.md), és [kövesse nyomon az állapotát](device-profile-monitor.md).
 
-Teljes képernyős profilok is létrehozhat [Android Enterprise](device-restrictions-android-for-work.md#kiosk-settings) és [Windows 10-es](kiosk-settings.md) eszközök.
+Teljes képernyős profilok is létrehozhat [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) és [Windows 10-es](kiosk-settings.md) eszközök.

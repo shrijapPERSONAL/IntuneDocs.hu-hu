@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02505cc21865308ef9ea4dbbabe95fc65ea87b58
-ms.sourcegitcommit: f1681554ad842c22ad3f82f0e6d44d5966e4aa3d
+ms.openlocfilehash: c586f7f4d72db5d193f02dca06aa868c73cbb09e
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56458875"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742499"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Önálló Intune - Win32-Alkalmazáskezelés
 
@@ -255,6 +255,8 @@ Ha szükséges, bemutató végfelhasználói bejelentési értesítések egy alk
 Az ügynöknaplók általában a következő helyen érhetők el az ügyfélgépen: `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. A `CMTrace.exe` segítségével megtekintheti ezeket a naplófájlokat. A *CMTrace.exe* az [SCCM-ügyféleszközök](https://docs.microsoft.com/sccm/core/support/tools) közül tölthető le. 
 
 ![Képernyőkép az ügynököt a naplók az ügyfélszámítógépen](./media/apps-win32-app-10.png)    
+
+Win32-alkalmazások hibaelhárításával kapcsolatos további információkért lásd: [Win32 alkalmazás telepítési hibák elhárítása](troubleshoot-app-install.md#win32-app-installation-troubleshooting).
 
 ### <a name="troubleshooting-areas-to-consider"></a>Néhány megfontolandó hibaelhárítási lépés
 - Ellenőrizze a célcsoportkezelést, és győződjön meg arról, hogy az ügynök telepítve van az eszközön – egy olyan Win32-alkalmazás vagy PowerShell-szkript, amelynek csoport a célzottja, ügynöktelepítési szabályzatot hoz létre a biztonsági csoporthoz.

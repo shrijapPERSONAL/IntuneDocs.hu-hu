@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60364d01f4ba4ca83ff91226f7738ec095e9152e
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: f1243bba6158307797744972bf404735c6b8a68a
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849250"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742669"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS-eszközök automatikus regisztrálása az Apple készülékregisztrációs programjával (DEP)
 
@@ -102,8 +102,13 @@ Az Azure-beli Intune-portálon adja meg az Apple ID azonosítót későbbi felha
 
 ![Képernyőkép – A DEP-token létrehozásához használt Apple ID megadása és a DEP-token megkeresése.](./media/device-enrollment-program-enroll-ios/image03.png)
 
-### <a name="step-4-upload-your-token"></a>4. lépés. Töltse fel a tokent.
-Az **Apple-token** mezőben keresse meg tallózással a tanúsítványfájlt (.pem), és válassza a **Megnyitás**, majd a **Létrehozás** lehetőséget. A leküldéses tanúsítvány lehetővé teszi, hogy az Intune regisztrálja és felügyelje az iOS-eszközöket a szabályzatoknak a regisztrált mobileszközökre való leküldésével. Az Intune automatikusan szinkronizálja az Apple-lel a regisztrációs programfiók adatait.
+### <a name="step-4-upload-your-token-and-choose-scope-tags"></a>4. lépés. Töltse fel a tokent, és válassza ki a hatókörcímkék.
+
+1. Az a **Apple-token** mezőben keresse meg a tanúsítványfájlt (.pem), válassza a **nyílt**.
+2. Ha a alkalmazni kívánt [címkék hatókör](scope-tags.md) a DEP-token, válassza a **hatókör (címkék)**, és válassza ki a kívánt hatókörcímkék. Hatókörcímkék egy jogkivonatot a alkalmazni örökli profilokat, és ezt a jogkivonatot a hozzáadott eszközök.
+3. Válassza a **Létrehozás** lehetőséget.
+
+A leküldéses tanúsítvány lehetővé teszi, hogy az Intune regisztrálja és felügyelje az iOS-eszközöket a szabályzatoknak a regisztrált mobileszközökre való leküldésével. Az Intune automatikusan szinkronizálja az Apple-lel a regisztrációs programfiók adatait.
 
 ## <a name="create-an-apple-enrollment-profile"></a>Apple-regisztrációs profil létrehozása
 

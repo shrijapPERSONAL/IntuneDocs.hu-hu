@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2019
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2706a12f9f4844f96d279f753e7cd99f159ca856
-ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
+ms.openlocfilehash: e825fa5523edd3907db7754138c76754ec9175e4
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55986807"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742091"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>Az Exchange-összekötő konfigurálása az Intune-ban és az Exchange Online-ban
 A cikk segítségével a Microsoft Intune-t az Exchange Online-hoz vagy az új dedikált Exchange Online szolgáltatáshoz csatlakoztathatja. Annak megállapításához, hogy a dedikált Exchange Online-környezet **új** vagy **örökölt** verzió, lépjen kapcsolatba a fiókkezelővel.
@@ -58,17 +58,15 @@ Létre kell hoznia egy Exchange Online-felhasználói fiókot is, amelyet az Int
 
 2. Válassza a bal oldali menü **Minden szolgáltatás** pontját, majd írja be a szűrő szövegmezőbe az **Intune** nevet.
 
-3. A Microsoft Intune-irányítópult megnyitásához válassza az **Intune** lehetőséget. Válassza a **Feltételes hozzáférés** elemet, majd a **Beállítás** terület **Az Exchange szolgáltatási összekötője** lehetőségét.
+3. A Microsoft Intune-irányítópult megnyitásához válassza az **Intune** lehetőséget. Válassza ki **Exchange-hozzáférés**, majd a **telepítő** válassza ki **az Exchange online-összekötő**.
 
-4.  A **Feltételes hozzáférés – Az Exchange szolgáltatási összekötője** lapon válassza a **Service To Service Connector telepítése** lehetőséget. 
-   
-     ![Kép a Service To Service Connector telepítése hivatkozás kijelöléséről](media/exchange_service_connector.png)
+4.  Az a **Exchange-hozzáférés – Exchange online-összekötő** lapon a **Service to Service Connector telepítése**. 
 
 A Service-to-Service Connector konfigurációja és szinkronizálása az Exchange Online- vagy új dedikált Exchange Online-környezettel automatikusan megtörténik.
 
 ## <a name="validate-your-exchange-connection"></a>Az Exchange-kapcsolat ellenőrzése
 
-Az Exchange Service To Service Connector konfigurálása után ellenőrizze az Exchange Connector-kiszolgáló adatait a **Feltételes hozzáférés – Az Exchange szolgáltatási összekötője** lapon.
+Miután sikeresen konfigurálta az Exchange-szolgáltatások közötti összekötő, érvényesíteni az Exchange Connector-kiszolgáló adatait a a **Exchange-hozzáférés – Exchange online-összekötő** lapot.
 
 Itt a **kapcsolódási állapotot** és a legutóbbi sikeres szinkronizálási kísérlet dátumát és időpontját is.
 

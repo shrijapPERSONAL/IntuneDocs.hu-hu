@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b9bd8aaca9aaf6e39c7a120518eeca1cef31511
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 016b59a915058c3f2d0647a72e3ead224a010500
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845091"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742439"
 ---
 # <a name="apply-features-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Az eszközök Microsoft Intune-ban eszközprofilok segítségével funkciók beállításainak alkalmazása
 
@@ -34,7 +34,7 @@ Néhány példa profilok használatára:
 - Engedélyezi, vagy az eszköz bluetooth való hozzáférés letiltása.
 - A vállalati hálózathoz különböző eszközöknek hozzáférést biztosító Wi-Fi vagy VPN-profil létrehozása.
 - Szoftverfrissítések, beleértve a telepítéskor kezelése.
-- Futtassa az Android-eszközökön futtathat egy alkalmazást, vagy számos alkalmazás futtatása egy dedikált teljes képernyős eszköz.
+- Android-eszközön futtató dedikált teljes képernyős eszköz, amely egyetlen alkalmazás, vagy számos alkalmazás futtatásához.
 
 Ez a cikk egy profil létrehozásának lépéseit sorolja fel, és áttekintést nyújt a különböző típusú profilokat hozhat létre. Ezek a profilok segítségével engedélyezése vagy letiltása az eszköz egyes funkcióinak.
 
@@ -164,7 +164,7 @@ Ez a funkció a következőket támogatja:
 
 - Windows 10 és újabb
 
-A kioszkmód eszközkorlátozások számára is elérhető [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#kiosk-settings), és [ios](device-restrictions-ios.md#kiosk-supervised-only).
+A kioszkmód eszközkorlátozások számára is elérhető [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings), és [ios](device-restrictions-ios.md#kiosk-supervised-only).
 
 ## <a name="email"></a>E-mail
 

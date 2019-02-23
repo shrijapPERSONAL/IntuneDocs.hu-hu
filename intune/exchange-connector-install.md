@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2019
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4481645781e21da4f433f5feae1d685efb73d412
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 5910b4962cc871a370d22efa68a01b78e9b34a0a
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55841419"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742363"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Az Intune helyszíni Exchange-összekötőjének telepítése az Azure-beli Microsoft Intune-ban
 
@@ -73,13 +73,11 @@ Létre kell hoznia egy Active Directory-felhasználói fiókot, amelyet a helysz
 
 1. Egy, a helyszíni Exchange-összekötőt támogató Windows Server rendszerben nyissa meg az [Azure Portalt](https://portal.azure.com), és jelentkezzen be egy olyan felhasználói fiókkal, amely rendszergazda a helyszíni Exchange Serveren, és rendelkezik licenccel az Exchange Server használatához.
 
-2. Válassza a bal oldali menü **Minden szolgáltatás** pontját, majd írja be a szűrő szövegmezőbe az **Intune** nevet.
+2. Lépjen a **Intune** > **Exchange-hozzáférés**  
 
-3. Válassza az **Intune** lehetőséget az Intune irányítópult megnyitásához. Itt válassza a **Helyszíni hozzáférés** lehetőséget.
+3. Alatt **telepítő**, válassza a **Exchange ActiveSync helyszíni összekötő**, majd válassza ki **Hozzáadás**.
 
-4. A **Beállítás** területen válassza az **Exchange ActiveSync összekötő** lehetőséget, majd **A helyszíni összekötő letöltése** elemet.
-
-5.  A helyszíni Exchange connector van egy tömörített (.zip) mappa, amely képes megnyitni vagy menteni. A **Fájl letöltése** párbeszédpanelen kattintson a **Mentés** parancsra a tömörített mappa biztonságos helyre való mentéséhez.
+4. Az a **hozzáadása összekötő** lapon jelölje be **a helyszíni összekötő letöltése**. A helyszíni Exchange connector van egy tömörített (.zip) mappa, amely képes megnyitni vagy menteni. A **Fájl letöltése** párbeszédpanelen kattintson a **Mentés** parancsra a tömörített mappa biztonságos helyre való mentéséhez.
 
     > [!IMPORTANT]
     > Ne nevezze és ne helyezze át a helyszíni Exchange-összekötő mappájában levő fájlokat. A mappa tartalmának áthelyezése vagy átnevezése az Exchange-összekötő sikertelen telepítését eredményezi.
@@ -153,8 +151,8 @@ Miután az Exchange-összekötő az Exchange használatával a megadott CAS kapc
 
 Az Exchange-összekötő sikeres konfigurálása után megtekintheti a kapcsolat és a legutóbbi sikeres szinkronizálási kísérlet állapotát. Az Exchange-összekötő kapcsolatainak ellenőrzése:
 
-1. Az Intune irányítópultján válassza a **Helyszíni hozzáférés** lehetőséget.
-2. A **Beállítás** területen válassza az **Exchange ActiveSync összekötők** lehetőséget az egyes Exchange-összekötők csatlakozási állapotának ellenőrzéséhez.
+1. Az Intune irányítópultján válassza **Exchange-hozzáférés**.
+2. A **telepítő**válassza **az Exchange online-összekötő** minden egyes Exchange-összekötő a kapcsolat állapotának ellenőrzése.
 
 Ellenőrizheti a legutóbbi sikeres szinkronizálási kísérlet dátumát és időpontját is.
 
@@ -171,8 +169,8 @@ A helyszíni Exchange connector szoftverből automatikusan szinkronizálja az EA
 
 Kényszerítheti a szinkronizálás futtatását egy összekötőn, ha a **Gyors szinkronizálás** vagy a **Teljes szinkronizálás** lehetőséget választja az Intune-irányítópulton. Ehhez kövesse az alábbi lépéseket:
 
-   1. Az Intune irányítópultján válassza a **Helyszíni hozzáférés** lehetőséget.
-   2. A **Beállítás** területen válassza az **Exchange Active Sync összekötő** lehetőséget.
+   1. Az Intune irányítópultján válassza **Exchange-hozzáférés**.
+   2. A **telepítő**, válassza a **az Exchange online-összekötő**.
    3. Válassza a szinkronizálni kívánt összekötőt, majd válassza a **Gyors szinkronizálás** vagy a **Teljes szinkronizálás** lehetőséget.
 
 ## <a name="next-steps"></a>További lépések

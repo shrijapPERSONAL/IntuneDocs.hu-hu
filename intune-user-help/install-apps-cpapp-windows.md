@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39f19d347cb799a47d07ade4f8458fade68b1b99
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 25f1bb6d2d78f5c4188d81bc8d9be2cc0c7de43e
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834653"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742533"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Alkalmazások telepítése és megosztása az eszközön
 Alkalmazások telepítése az eszközön Windows Céges portál alkalmazásból.
@@ -38,6 +38,7 @@ Alkalmazások telepítése az eszközön Windows Céges portál alkalmazásból.
     * **Kezdőlap**: Válassza ki a szervezet kiemelt alkalmazások listájából.  
     * **Az összes megjelenítése**: Az a **kezdőlap** > **alkalmazások** területén kattintson **az összes megjelenítése** az összes elérhető alkalmazások megtekintéséhez.  
     * **Minden alkalmazás**: Ezen a lapon válassza ki a navigációs panelen megtekintheti az összes rendelkezésre álló alkalmazások, beleértve a telepítve és kiemelt.  
+    * **Alkalmazáskategóriák**: Ezen a lapon válassza a navigációs panelen, típus vagy függvény-alapú alkalmazások kiválasztása. Alkalmazások a rendszer rendezi a kategóriák például **kiemelt**, **oktatási**, és **termelékenység**.  
     * **Alkalmazások keresése**: Egy statikus keresősáv helyezkedik el, az alkalmazás navigációs ablaktáblán.  Az elérhető alkalmazások megtalálásához keressen rá az alkalmazás nevére vagy a közzétevőre.  
     * **Minden alkalmazás**: Megtekintheti, rendezheti és szűrheti az összes rendelkezésre álló alkalmazások. Keresési eredményeket a rendszer automatikusan elrendezi a relevancia alapján.  
 

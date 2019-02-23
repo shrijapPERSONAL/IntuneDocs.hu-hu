@@ -1,11 +1,11 @@
 ---
 title: Android Enterprise eszközbeállítások a Microsoft Intune – Azure |} A Microsoft Docs
-description: Android Enterprise vagy az Android for Work-eszközök korlátozása az eszköz beállításai, többek között másolás és beillesztés, show, értesítések, az Alkalmazásengedélyek, az adatok megosztásához, a jelszó hosszát, a bejelentkezési hibák használata ujjlenyomat a zárolás feloldásához újbóli jelszavak, és a bluetooth engedélyezése a munkahelyi névjegyek megosztása. Eszközök konfigurálása, a teljes képernyős alkalmazás egy vagy több alkalmazás futtatásához.
+description: Android Enterprise vagy az Android for Work-eszközök korlátozása az eszköz beállításai, többek között másolás és beillesztés, show, értesítések, az Alkalmazásengedélyek, az adatok megosztásához, a jelszó hosszát, a bejelentkezési hibák használata ujjlenyomat a zárolás feloldásához újbóli jelszavak, és a bluetooth engedélyezése a munkahelyi névjegyek megosztása. Eszközök konfigurálása egy dedikált eszköz teljes képernyős alkalmazás egy vagy több alkalmazás futtatásához.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 02/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,16 +14,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e79572b6815f2aded8f3145969beac4233e415b
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 0c69d45794b1d40915fbd09bae557916a9daa591
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55844224"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742703"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Android Enterprise eszközbeállítások engedélyezett vagy korlátozott funkciók az Intune-nal
 
-Ez a cikk és az Android Enterprise eszközökön szabályozhatja a különböző beállításokat ismerteti. A mobileszköz-felügyelet (MDM) megoldás részeként használja ezeket a beállításokat engedélyezi vagy letiltja a szolgáltatások, a teljes képernyős módú, a biztonság szabályozásához és a további futtatási alkalmazások.
+Ez a cikk és az Android Enterprise eszközökön szabályozhatja a különböző beállításokat ismerteti. A mobileszköz-felügyelet (MDM) megoldás részeként használja ezeket a beállításokat engedélyezi vagy letiltja a szolgáltatások, a dedikált eszközök, a biztonság szabályozásához és a további futtatási alkalmazások.
 
 ## <a name="before-you-begin"></a>Előkészületek
 
@@ -69,7 +69,7 @@ Ez a cikk és az Android Enterprise eszközökön szabályozhatja a különböz�
   - **Eszköz alapértelmezése**: Az eszköz alapértelmezett beállítást használja.
   - **Automatikus**: Frissítések automatikusan települnek a felhasználói beavatkozás nélkül. Ennek a szabályzatnak a beállításakor minden függőben lévő frissítés azonnal települ.
   - **Elhalasztva**: Frissítések vannak Elhalasztva 30 napig. A 30 nap végén Android kéri a felhasználót, hogy a frissítés telepítéséhez. Az eszközgyártók vagy a szolgáltatók megakadályozhatják (kivételként) a fontos biztonsági frissítések elhalasztását. A kivételként kezelt frissítések rendszerértesítést jelenítenek meg a felhasználó számára az eszközön. 
-  - **Karbantartási időszak**: Az Intune-ban beállított napi karbantartási időszak alatt automatikusan telepíti a frissítéseket. Telepítés megkísérli naponta 30 napig, és meghiúsulhat, ha nincs elegendő terület vagy akkumulátor szintjét. A 30 nap elteltével Android kéri a felhasználót, hogy telepítse. Ez az időszak szolgál a Play-alkalmazások frissítéseinek telepítésére is. Dedikált eszközök, például kioszkok, a beállítást használja, Egyalkalmazásos kioszk előtérben futó alkalmazások frissíthetők.
+  - **Karbantartási időszak**: Az Intune-ban beállított napi karbantartási időszak alatt automatikusan telepíti a frissítéseket. Telepítés megkísérli naponta 30 napig, és meghiúsulhat, ha nincs elegendő terület vagy akkumulátor szintjét. A 30 nap elteltével Android kéri a felhasználót, hogy telepítse. Ez az időszak szolgál a Play-alkalmazások frissítéseinek telepítésére is. Dedikált eszközök, például kioszkok, a beállítást használja, Egyalkalmazásos dedikált előtér eszközalkalmazások frissítheti.
 - **Alkalmazás automatikusan frissül**: Válassza ki, ha az automatikus frissítések telepítve vannak. A választható lehetőségek:
   - **Nincs konfigurálva**
   - **Felhasználói választási lehetőség**
@@ -85,47 +85,48 @@ Ez a cikk és az Android Enterprise eszközökön szabályozhatja a különböz�
 
 - **Alkalmazások fenyegetettségvizsgálata**: **Szükséges** érvényesíti a **alkalmazások ellenőrzése** beállítás engedélyezve van a munkahelyi és személyes profiloknál.
 
-### <a name="kiosk-settings"></a>Kioszkbeállítások
+### <a name="dedicated-device-settings"></a>Dedikált eszközök beállításai
 
-Beállíthatja, hogy egy alkalmazás vagy alkalmazás számos eszközön. Ha egy eszköz kioszk módban van, csak a hozzáadott alkalmazások érhetők el. Ezek a beállítások Android dedikált eszközök a alkalmazni, de nem Android a teljes körűen felügyelt dedikált eszközök.
+Ezek a beállítások használatával az dedikált eszközök kioszk stílusú felhasználói beállítása. Egyetlen alkalmazás-eszközök konfigurálása, vagy számos alkalmazás futtatásához. Ha egy eszköz teljes képernyős mód be van állítva, csak a hozzáadott alkalmazások elérhetők lesznek. Ezek a beállítások dedikált Android Enterprise-eszközökre vonatkoznak. Teljes körűen felügyelt Android Enterprise-eszközöket, nem vonatkoznak.
 
-**Teljes képernyős mód**: Válassza ki, ha az eszköz elindul, egy alkalmazás vagy több alkalmazás.
+**Teljes képernyős mód**: Akkor válassza, ha az eszköz egy alkalmazást futtat, vagy több alkalmazást futtat.
 
-- **Egyalkalmazásos kioszk**: Felhasználók csak érhetik el egy alkalmazást az eszközön. Amikor az eszköz elindul, csak az adott alkalmazás elindul. A felhasználók nem nyithatnak meg új alkalmazásokat, és nem módosíthatják a futó alkalmazást.
+- **Egyetlen alkalmazás**: Felhasználók csak érhetik el egy alkalmazást az eszközön. Amikor az eszköz elindul, csak az adott alkalmazás elindul. A felhasználók nem nyithatnak meg új alkalmazásokat, és nem módosíthatják a futó alkalmazást.
 
   **Lépések**
   1. Válasszon **felügyelt alkalmazás kiválasztása**, és válassza ki a felügyelt Google Play-alkalmazást a listából. 
 
-      Ha nem rendelkezik az összes alkalmazás szerepel a listában, majd [bizonyos Android-alkalmazások hozzáadása](apps-add-android-for-work.md) az eszközön. Ügyeljen arra, hogy [rendelni az alkalmazást a teljes képernyős eszközökhöz létrehozott eszközcsoporthoz](apps-deploy.md).
+      Ha nem rendelkezik az összes alkalmazás szerepel a listában, majd [bizonyos Android-alkalmazások hozzáadása](apps-add-android-for-work.md) az eszközön. Ügyeljen arra, hogy [rendeli az alkalmazást a dedikált eszközök számára létrehozott megfelelő eszközcsoporthoz](apps-deploy.md).
 
   2. Válasszon **OK** > **OK** az alkalmazás hozzáadásához.
 
-- **Többalkalmazásos kioszk**: A felhasználók egy korlátozott számú alkalmazások az eszközön. Amikor az eszköz elindul, csak a hozzáadott alkalmazások indítsa el. Bizonyos webes hivatkozások, amelyek a felhasználó meg tudja nyitni is hozzáadhat. A házirend van érvényben, amikor megjelenik a felhasználók számára az engedélyezett alkalmazások ikonjai a kezdőképernyőn.
+- **Többalkalmazásos**: A felhasználók egy korlátozott számú alkalmazások az eszközön. Amikor az eszköz elindul, csak a hozzáadott alkalmazások indítsa el. Bizonyos webes hivatkozások, amelyek a felhasználó meg tudja nyitni is hozzáadhat. A házirend van érvényben, amikor megjelenik a felhasználók számára az engedélyezett alkalmazások ikonjai a kezdőképernyőn.
 
-  > [FONTOS] Többalkalmazásos kioszk-eszközök esetén a [kezdőlap képernyő felügyelt alkalmazás](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) a Google Play áruházból **kell**:
+  > [!IMPORTANT]
+  > A többalkalmazásos dedikált eszközök, a [kezdőlap képernyő felügyelt alkalmazás](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) a Google Play áruházból **kell**:
   >   - [Egy ügyfélalkalmazás hozzáadott](apps-add-android-for-work.md) az Intune-ban
-  >   - [Az eszköz csoporthoz rendelt](apps-deploy.md) teljes képernyős eszközökhöz létrehozott
+  >   - [Az eszköz csoporthoz rendelt](apps-deploy.md) a dedikált eszközök számára létrehozott
   > 
   > A **kezdőlap képernyő felügyelt** alkalmazás nem található a konfigurációs profil feltétlenül szükséges, de ügyfélalkalmazásként hozzá kell adni. Ha a **kezdőlap képernyő felügyelt** alkalmazás ügyfélalkalmazásként adnak, adja hozzá a configiration profil a minden más alkalmazás ikonok jelennek meg a a a **kezdőlap képernyő felügyelt** alkalmazást. 
 
   - Válasszon **Hozzáadás**, és válassza ki az alkalmazások a listából.
 
-    Ha a **kezdőlap képernyő felügyelt** alkalmazás nem szerepel a listán, majd [adja hozzá a Google Play áruházból](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise). Ügyeljen arra, hogy [rendelni az alkalmazást](apps-deploy.md) a teljes képernyős eszközökhöz létrehozott eszközcsoport számára.
+    Ha a **kezdőlap képernyő felügyelt** alkalmazás nem szerepel a listán, majd [adja hozzá a Google Play áruházból](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise). Ügyeljen arra, hogy [rendelni az alkalmazást](apps-deploy.md) az eszközcsoporthoz a dedikált eszközök számára létrehozott.
 
-    Is hozzáadhat más [Android-alkalmazások](apps-add-android-for-work.md) és [webes alkalmazások](web-app.md) hozta létre a szervezet az eszköz számára. Ügyeljen arra, hogy [rendelni az alkalmazást a teljes képernyős eszközökhöz létrehozott eszközcsoporthoz](apps-deploy.md).
+    Is hozzáadhat más [Android-alkalmazások](apps-add-android-for-work.md) és [webes alkalmazások](web-app.md) hozta létre a szervezet az eszköz számára. Ügyeljen arra, hogy [rendeli az alkalmazást a dedikált eszközök számára létrehozott megfelelő eszközcsoporthoz](apps-deploy.md).
 
-  - **Virtuális kezdőlap gombjának**: Válasszon **engedélyezése** , a kezdőlap gombjának megjelenítése a teljes képernyős eszközön. Kiválasztásakor visszaadja a felhasználó az eszköz kezdőképernyőjére így a felhasználók egyszerűen válthat az alkalmazások között. Néhány Android-eszközön a felhasználók valószínűleg a pöccintsen felfelé a kezdőlap gombjának megjelenítése a képernyőn. **Tiltsa le** egy otthoni gomb nem jelenik meg, így a felhasználók alkalmazások közötti váltás kell használnia a Vissza gombra.
-  - **Hagyja meg a teljes képernyős mód**: Válasszon **engedélyezése** , hogy a rendszergazdák számára, hogy ideiglenesen letilthatja a teljes képernyős mód az eszköz frissítéséhez. Ez a funkció használatához a rendszergazdának a következőket teszi: 
+  - **Virtuális kezdőlap gombjának**: Válasszon **engedélyezése** , a kezdőlap gombjának megjelenítése a dedikált eszközön. Kiválasztásakor visszaadja a felhasználó az eszköz kezdőképernyőjére így a felhasználók egyszerűen válthat az alkalmazások között. Néhány Android-eszközön a felhasználók valószínűleg a pöccintsen felfelé a kezdőlap gombjának megjelenítése a képernyőn. **Tiltsa le** egy otthoni gomb nem jelenik meg, így a felhasználók alkalmazások közötti váltás kell használnia a Vissza gombra.
+  - **Hagyja meg a teljes képernyős mód**: Válasszon **engedélyezése** , hogy a rendszergazdák számára, hogy ideiglenesen letilthatja a teljes képernyős mód az eszköz frissítéséhez. Ezzel a funkcióval a rendszergazda használata: 
   
-    1. Folytassa mindaddig, amíg megjelenik a "Kilépés a teljes képernyős" gombra, válassza ki a Vissza gombra. 
-    2. Válassza ki a gombot, és adja meg a **hagyja meg a teljes képernyős mód kód** PIN-kódot.
+    1. Továbbra is fennáll, addig, amíg megjelenik a "Kilépés a teljes képernyős" gombra, jelölje be a Vissza gombra. 
+    2. A gombot választja, és beírja az **hagyja meg a teljes képernyős mód kód** PIN-kódot.
     3. Amikor végzett a módosításokkal, válassza ki a **kezdőlap képernyő felügyelt** alkalmazást. Ez a lépés az eszköz relocks többalkalmazásos kioszk módba. 
     
     **Tiltsa le** nem lehetővé teheti a teljes képernyős mód felfüggesztése. Ha a rendszergazda továbbra is fennáll, kattintson a Vissza gombra, és a "Kilépés a teljes képernyős" gombot választja, egy üzenet tájékoztatja, hogy egy PIN-kód megadása kötelező.
     
     - **Hagyja meg a teljes képernyős mód kód**: Adjon meg egy 4 – 6 számjegyű numerikus PIN-kód. A rendszergazda ideiglenesen letilthatja a teljes képernyős mód a PIN-kódot használja.
  
-  - **Állítsa be az egyéni URL-cím hátterének**: Adja meg a teljes képernyős eszközön a háttérben futó képernyő testreszabása URL-CÍMÉT.
+  - **Állítsa be az egyéni URL-cím hátterének**: Adja meg a dedikált eszközön a háttérben futó képernyő testreszabása URL-CÍMÉT.
 
 ### <a name="device-password-settings"></a>Eszköz jelszóbeállításai
 
@@ -288,4 +289,4 @@ A jelszó-beállításokat alkalmazni a munkahelyi profilt használó eszközök
 
 [Rendelje hozzá a profilt](device-profile-assign.md), és [kövesse nyomon az állapotát](device-profile-monitor.md).
 
-Teljes képernyős profilok is létrehozhat [Android](device-restrictions-android.md#kiosk) és [Windows 10-es](kiosk-settings.md) eszközök.
+Is létrehozhat dedikált eszköz teljes képernyős profilok [Android](device-restrictions-android.md#kiosk) és [Windows 10-es](kiosk-settings.md) eszközök.

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b4f35dba38dd1b69f770a3a10689ce87eaf3a27
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: fc8bbcdd9e6fa8174ff4b6aa7fb0ae20b14fc184
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840399"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742856"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Feltételes hozzáférési szabályzat létrehozása a helyszíni Exchange-hez és régi Dedikált Exchange Online-hoz
 
@@ -79,52 +79,54 @@ A natív **Posta** alkalmazás a Windows 8.1-es és újabb verzióiban (az Intun
 
 1. Az [Azure Portalon](https://portal.azure.com/) jelentkezzen be az Intune-os hitelesítő adataival.
 
-1. Miután sikeresen bejelentkezett, megjelenik a **Azure irányítópultján**.
+2. Lépjen a **Intune** > **Exchange-hozzáférés**, majd válassza ki **a helyszíni Exchange-hozzáférés**. 
 
-1. Válassza a bal oldali menü **Minden szolgáltatás** pontját, majd írja be a szűrő szövegmezőbe az **Intune** nevet.
+3. Az a **a helyszíni Exchange-hozzáférés** panelen válassza a **Igen** való *engedélyezése a helyszíni Exchange-hozzáférés-vezérlés*.
 
-1. Az **Intune** kiválasztásával megjelenik az **Intune irányítópultja**.
+4. Válassza a bal oldali menü **Minden szolgáltatás** pontját, majd írja be a szűrő szövegmezőbe az **Intune** nevet.
 
-1. Válassza a **Helyszíni hozzáférés** lehetőséget. A **Helyszíni hozzáférés** panelen látható a feltételes hozzáférési szabályzat állapota, és az, hogy mely eszközökre van hatással.
+5. Az **Intune** kiválasztásával megjelenik az **Intune irányítópultja**.
 
-1. Válassza a **Kezelés** terület **Helyszíni Exchange-hozzáférés** elemét.
+6. Válassza a **Helyszíni hozzáférés** lehetőséget. A **Helyszíni hozzáférés** panelen látható a feltételes hozzáférési szabályzat állapota, és az, hogy mely eszközökre van hatással.
 
-1. Engedélyezze a helyszíni Exchange hozzáférés-vezérlését az **Helyszíni Exchange-hozzáférés** panel **Igen** elemét választva.
+7. Válassza a **Kezelés** terület **Helyszíni Exchange-hozzáférés** elemét.
+
+8. Engedélyezze a helyszíni Exchange hozzáférés-vezérlését az **Helyszíni Exchange-hozzáférés** panel **Igen** elemét választva.
 
     > [!NOTE]
     > Ha nem konfigurált Exchange Active Sync helyszíni összekötőt, ez a beállítás nem érhető el.  Először telepítenie és konfigurálnia kell legalább egy összekötőt, és csak azt követően aktiválhatja a feltételes hozzáférést a helyszíni Exchange-hez. További részletek [A helyszíni Intune Exchange Connector telepítése](exchange-connector-install.md) című cikkben olvashatók.
 
-1. A **Hozzárendelés** beállításnál válassza a **Tartalmazott csoportok** lehetőséget.  Használja azt a biztonsági felhasználócsoportot, amelynek feltételes hozzáférést szeretne előírni. Ez a művelet megköveteli a felhasználóktól, hogy regisztrálják az eszközüket az Intune-ban, és megfeleljenek a megfelelőségi profiloknak.
+9. A **Hozzárendelés** beállításnál válassza a **Tartalmazott csoportok** lehetőséget.  Használja azt a biztonsági felhasználócsoportot, amelynek feltételes hozzáférést szeretne előírni. Ez a művelet megköveteli a felhasználóktól, hogy regisztrálják az eszközüket az Intune-ban, és megfeleljenek a megfelelőségi profiloknak.
 
-1. Ha ki szeretne zárni bizonyos felhasználócsoportokat, akkor válassza a **Kizárt csoportok** lehetőséget, majd egy olyan felhasználócsoportot, amelyet mentesíteni szeretne a kötelező eszközregisztráció és a feltételeknek való megfelelés alól.
+10. Ha ki szeretne zárni bizonyos felhasználócsoportokat, akkor válassza a **Kizárt csoportok** lehetőséget, majd egy olyan felhasználócsoportot, amelyet mentesíteni szeretne a kötelező eszközregisztráció és a feltételeknek való megfelelés alól.
 
-1. Válassza a **Beállítások** terület **Felhasználói értesítések** elemét, és módosítsa az alapértelmezett e-mail szövegét. Ezt az üzenetet küldi el a rendszer a felhasználóknak, ha egy a feltételeknek nem megfelelő eszközzel próbálják meg elérni a helyszíni Exchange-et. Az üzenetsablon egy jelölőnyelvet használ.  Amint beírja az üzenetet, azt is követheti, hogy mit fog látni a címzett.
+11. Válassza a **Beállítások** terület **Felhasználói értesítések** elemét, és módosítsa az alapértelmezett e-mail szövegét. Ezt az üzenetet küldi el a rendszer a felhasználóknak, ha egy a feltételeknek nem megfelelő eszközzel próbálják meg elérni a helyszíni Exchange-et. Az üzenetsablon egy jelölőnyelvet használ.  Amint beírja az üzenetet, azt is követheti, hogy mit fog látni a címzett.
     > [!TIP]
     > A jelölőnyelvekről ez a [Wikipedia-cikk](https://en.wikipedia.org/wiki/Markup_language) nyújt tájékoztatást.
 
-1. Az **Exchange ActiveSync speciális hozzáférési beállításai** panelen adja meg a következő két lépésben ismertetett módon az Intune által nem kezelt eszközökre vonatkozó alapértelmezett globális hozzáférési szabályt, illetve a platformszintű szabályokat.
+12. Az **Exchange ActiveSync speciális hozzáférési beállításai** panelen adja meg a következő két lépésben ismertetett módon az Intune által nem kezelt eszközökre vonatkozó alapértelmezett globális hozzáférési szabályt, illetve a platformszintű szabályokat.
 
-1. Választhat, hogy engedélyezi vagy letiltja az Exchange elérését az olyan eszközök számára, amelyekre nem vonatkoznak feltételes hozzáférési vagy egyéb szabályok.
+8. Választhat, hogy engedélyezi vagy letiltja az Exchange elérését az olyan eszközök számára, amelyekre nem vonatkoznak feltételes hozzáférési vagy egyéb szabályok.
 
    - Ha itt a hozzáférés engedélyezését állítja be, azonnal minden eszköz hozzáfér a helyszíni Exchange-hez.  A **Tartalmazott csoportokban** foglalt felhasználók eszközeinek hozzáférését letiltja a rendszer, ha a kiértékelés során nem felelnek meg a megfelelőségi szabályzatoknak, vagy nincsenek regisztrálva az Intune-ban.
    - Ha ezt a beállítást a hozzáférés letiltására állítja be, akkor a rendszer kezdetben azonnal megakadályoz minden eszközt a helyszíni Exchange elérésében.  A **Tartalmazott csoportokban** foglalt eszközök felhasználói viszont hozzáférést kapnak, ha az eszközük regisztrálva van az Intune-ban, és a kiértékeléskor megfelel a feltételeknek. A nem Samsung Knox Standard rendszerű androidos eszközöket mindig letiltja a rendszer, mert az ilyen eszközök nem támogatják ezt a beállítást.
 
-1. Válassza az **Eszközplatform-kivételek** terület **Hozzáadás** gombját a platformok megadásához. Ha a **Nem felügyelt eszközhozzáférés** beállítása a **Letiltva** értékre van állítva, a regisztrált és a feltételeknek megfelelő eszközök akkor is hozzáférést kapnak, ha egy platformkivétel letiltja őket. Mentse a beállításokat az **OK** gombra kattintva.
+13. Válassza az **Eszközplatform-kivételek** terület **Hozzáadás** gombját a platformok megadásához. Ha a **Nem felügyelt eszközhozzáférés** beállítása a **Letiltva** értékre van állítva, a regisztrált és a feltételeknek megfelelő eszközök akkor is hozzáférést kapnak, ha egy platformkivétel letiltja őket. Mentse a beállításokat az **OK** gombra kattintva.
 
-1. Mentse a feltételes hozzáférési szabályzatot a **Helyszíni** panel **Mentés** gombjára kattintva.
+14. Mentse a feltételes hozzáférési szabályzatot a **Helyszíni** panel **Mentés** gombjára kattintva.
 
 ## <a name="create-azure-ad-conditional-access-policies-in-intune"></a>Azure AD feltételes hozzáférési szabályzatok létrehozása az Intune-ban
 
-Az Intune 1704-es kiadásától kezdve a rendszergazdák Azure AD-beli feltételes hozzáférési szabályzatokat hozhatnak létre az Intune Azure Portal webhelyen, így nem szükséges váltani az Azure és az Intune szolgáltatás között.
+Feltételes hozzáférés egy Azure Active Directory (Azure AD) technológia. A feltételes hozzáférés csomópont elérhető *Intune* van ugyanazon a csomóponton, elérhető *Azure ad-ben*.  
 
 > [!IMPORTANT]
 > Ahhoz, hogy Azure AD feltételes hozzáférési szabályzatokat hozhasson létre az Intune Azure Portal webhelyen, Azure AD Premium szintű előfizetésre van szükség.
 
-### <a name="to-create-azure-ad-conditional-access-policy"></a>Azure AD feltételes hozzáférési szabályzat létrehozása
+### <a name="to-create-a-conditional-access-policy"></a>Egy feltételes hozzáférési szabályzat létrehozása
 
-1. Az **Intune irányítópultján** válassza a **Feltételes hozzáférés** lehetőséget.
+1. Az a **Intune irányítópult**válassza **feltételes hozzáférési**.
 
-2. Az új Azure AD-beli feltételes hozzáférési szabályzat létrehozásához a **Szabályzatok** panelen válassza az **Új szabályzat** lehetőséget.
+2. Az a **házirendek** ablaktáblán válassza előbb **új szabályzat** hozhat létre az új Azure AD feltételes hozzáférési szabályzat.
 
 ## <a name="see-also"></a>Lásd még:
 

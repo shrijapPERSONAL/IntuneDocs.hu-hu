@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 02/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03ca9a65d5a62c75c45541b42c9b2aa5c4871a18
-ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
+ms.openlocfilehash: dda25e5c40bcff14b71d65c183c5836cf73bf1ae
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56307787"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742414"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Eszközalapú feltételes hozzáférési szabályzat létrehozása
 
-Az Intune-nal a feltételes hozzáférés az Azure Active Directory fokozva mobileszköz-megfelelőség ad hozzá a hozzáférés-vezérlést. Ha létrehozta az Intune eszközmegfelelőségi szabályzataival, amely meghatározza az eszközök megfelelőségéhez követelményeit, egy eszköz megfelelőségi állapota segítségével engedélyezi vagy letiltja a hozzáférést az alkalmazásokhoz és szolgáltatásokhoz. Ezt megteheti, hogy a beállítást használja a feltételes hozzáférési szabályzat létrehozásával is **megfelelőként megjelölt eszköz megkövetelése**. 
+Az Intune-nal a feltételes hozzáférés az Azure Active Directory fokozva mobileszköz-megfelelőség ad hozzá a hozzáférés-vezérlést. Ha létrehozta az Intune eszközmegfelelőségi szabályzataival, amely meghatározza az eszközök megfelelőségéhez követelményeit, egy eszköz megfelelőségi állapota segítségével engedélyezi vagy letiltja a hozzáférést az alkalmazásokhoz és szolgáltatásokhoz. Ezt megteheti, hogy a beállítást használja a feltételes hozzáférési szabályzat létrehozásával is **megfelelőként megjelölt eszköz megkövetelése**.  
 
-Feltételes hozzáférési szabályzat meghatározza az alkalmazás vagy védeni kívánt szolgáltatások, a feltételeket, amelyek alapján az alkalmazások vagy szolgáltatások érhető el, és a felhasználókat, akiknek a szabályzat vonatkozik. Feltételes hozzáférés egy Azure AD premium-funkció, amely konfigurálható az Azure Active Directoryban, de beállíthatja az Intune-portálon belül e ugyanazon házirendek is. 
+Feltételes hozzáférési szabályzat meghatározza az alkalmazás vagy védeni kívánt szolgáltatások, a feltételeket, amelyek alapján az alkalmazások vagy szolgáltatások érhető el, és a felhasználókat, akiknek a szabályzat vonatkozik. Feltételes hozzáférés egy Azure AD premium-funkció, amely konfigurálható az Azure Active Directoryban, de beállíthatja az Intune-portálon belül e ugyanazon házirendek is. A feltételes hozzáférés csomópont elérhető *Intune* van ugyanazon a csomóponton, elérhető *Azure ad-ben*.  
 
 > [!IMPORTANT]
 > Feltételes hozzáférés beállítása előtt kell eszközöket, hogy megfelelnek-e különleges követelmények alapján kiértékelheti, hogy az Intune eszközmegfelelőségi szabályzatai beállítása. Lásd: [az Intune eszközmegfelelőségi szabályzatai – első lépések](device-compliance-get-started.md).

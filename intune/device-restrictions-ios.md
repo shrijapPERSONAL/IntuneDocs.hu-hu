@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 02/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune; seodec18
@@ -15,48 +15,95 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7f5c09dca64b227daf21c8a492221a5e025cb20
-ms.sourcegitcommit: f1681554ad842c22ad3f82f0e6d44d5966e4aa3d
+ms.openlocfilehash: 90405b61bd21a96e27e9654a496068d06e368b61
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56458926"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742720"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>iOS-es beállítások engedélyezéséhez, vagy korlátozhatja a funkciókat az Intune-nal
+
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Ez a cikk és az iOS-eszközökön vezérelheti a különböző beállításokat ismerteti. A mobileszköz-felügyelet (MDM) megoldás részeként használatával ezek a beállítások lehetővé teszik vagy szolgáltatásokat tilthat le, jelszószabályok beállítása, engedélyezése vagy korlátozása egyedi alkalmazások és más.
 
 Ezek a beállítások hozzá egy eszközkonfigurációs profilt az Intune-ban, és ezután hozzárendelt vagy az IOS-es eszközökre telepített.
 
 ## <a name="before-you-begin"></a>Előkészületek
-[Eszközkonfigurációs profil létrehozása](device-restrictions-configure.md).
+
+[Hozzon létre egy eszközkorlátozási profilt konfigurációs](device-restrictions-configure.md#create-the-profile).
 
 ## <a name="general"></a>Általános
 
-- **Használati adatok megosztása**: Válasszon **blokk** megakadályozza, hogy az eszköz diagnosztikai és használati adatok küldése az Apple-nek. **Nincs konfigurálva** lehetővé teszi, hogy ezeket az adatokat küldeni.
-  - **Diagnosztikai adatok küldésének**: **Blokk** e funkció felhasználó általi a diagnosztikai adatküldési és alkalmazáselemzési beállítások módosításának **diagnosztikai és használati** (eszköz beállításai). Használja ezt a beállítást, az eszköz felügyelt módban (IOS-es 9.3.2+) kell lennie. **Nincs konfigurálva** lehetővé teszi a felhasználó ezen eszköz beállításainak módosítására.
-- **Képernyőfelvétel**: Válasszon **blokk** megakadályozza a képernyőképek és a képernyő rögzíti az eszközön. **Nincs konfigurálva** lehetővé teszi, hogy a felhasználó képként rögzítse a képernyőn látható tartalmat.
-  - **Távoli képernyőfigyelés az osztályterem alkalmazással (csak felügyelt)**: Válasszon **blokk** , hogy az osztályterem alkalmazás képernyőjét távolról az eszközön. Használja ezt a beállítást, az eszköz felügyelt módban (iOS 9.3 és újabb) kell lennie. **Nincs konfigurálva** lehetővé teszi, hogy az Apple osztályterem alkalmazás megtekintése a képernyő.
-  - **Rákérdezés nélküli képernyőfigyelés az osztályterem alkalmazással (csak felügyelt)**: Ha beállítása **engedélyezése**, az oktatók csendes figyelheti a diákoknak szóló tudomása nélkül az osztályterem alkalmazás használatával a diákok iOS-eszközök a képernyő. Tanulói eszközökhöz regisztráltak egy az osztályterem alkalmazás használatával automatikusan engedélyezik a tanfolyam oktatójának, engedélyt. **Nincs konfigurálva** megakadályozza, hogy ez a funkció.
-- **Nem megbízható TLS-tanúsítványok**: Válasszon **blokk** , hogy a nem megbízható Transport Layer Security (TLS) tanúsítványok, az eszközön. **Nincs konfigurálva** lehetővé teszi, hogy a TLS-tanúsítványokkal.
-- **Megbízható nagyvállalati alkalmazás**: Válasszon **blokk** eltávolítása a **megbízható nagyvállalati fejlesztő** gombot a beállítások > Általános > profilok és Eszközfelügyelet az eszközön. **Nincs konfigurálva** lehetővé teszi, hogy a felhasználó dönt, hogy megbízható alkalmazásokat, amelyeket nem az alkalmazásáruházból letöltött.
-- **Fiókmódosítás (csak felügyelt)**: Ha a beállítása **blokk**, a felhasználó nem tudja frissíteni az iOS beállításkezelő alkalmazását az eszközre vonatkozó beállításokat. Például a felhasználó nem lehet új eszközfiókok létrehozása, vagy módosítsa a felhasználónév vagy jelszó. **Nincs konfigurálva** lehetővé teszi a felhasználók a beállítások módosításához.
+- **Használati adatok megosztása**: Válasszon **blokk** megakadályozza, hogy az eszköz diagnosztikai és használati adatok küldése az Apple-nek. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy ezeket az adatokat küldeni.
+  - **Diagnosztika adatok küldésére vonatkozó beállítások módosítása (csak felügyelt)**: **Blokk** e funkció felhasználó általi a diagnosztikai adatküldési és alkalmazáselemzési beállítások módosításának **diagnosztikai és használati** (eszköz beállításai). **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy a felhasználó ezen eszköz beállításainak módosítására.
+
+    Ez a funkció az alábbiakra vonatkozik:  
+    - iOS 9.3.2 és újabb verziók
+
+- **Képernyőfelvétel**: Válasszon **blokk** megakadályozza a képernyőképek és a képernyő rögzíti az eszközön. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy a felhasználó képként rögzítse a képernyőn látható tartalmat.
+  - **Távoli képernyőfigyelés az osztályterem alkalmazással (csak felügyelt)**: Válasszon **blokk** , hogy az osztályterem alkalmazás képernyőjét távolról az eszközön. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy az Apple osztályterem alkalmazás megtekintése a képernyő.
+
+    Ez a funkció az alábbiakra vonatkozik:  
+    - iOS 9.3 és újabb verziók
+
+  - **Rákérdezés nélküli képernyőfigyelés az osztályterem alkalmazással (csak felügyelt)**: Ha beállítása **engedélyezése**, az oktatók csendes figyelheti a diákoknak szóló tudomása nélkül az osztályterem alkalmazás használatával a diákok iOS-eszközök a képernyő. Tanulói eszközökhöz regisztráltak egy az osztályterem alkalmazás használatával automatikusan engedélyezik a tanfolyam oktatójának, engedélyt. **Nincs konfigurálva** (alapértelmezett) megakadályozza, hogy ez a funkció.
+- **Nem megbízható TLS-tanúsítványok**: Válasszon **blokk** , hogy a nem megbízható Transport Layer Security (TLS) tanúsítványok, az eszközön. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy a TLS-tanúsítványokkal.
+- **Megbízható nagyvállalati alkalmazás**: Válasszon **blokk** eltávolítása a **megbízható nagyvállalati fejlesztő** gombot a beállítások > Általános > profilok és Eszközfelügyelet az eszközön. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy a felhasználó dönt, hogy megbízható alkalmazásokat, amelyeket nem az alkalmazásáruházból letöltött.
+- **Fiókmódosítás (csak felügyelt)**: Ha a beállítása **blokk**, a felhasználó nem tudja frissíteni az iOS beállításkezelő alkalmazását az eszközre vonatkozó beállításokat. Például a felhasználó nem lehet új eszközfiókok létrehozása, vagy módosítsa a felhasználónév vagy jelszó. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy a felhasználók a beállítások módosításához.
+
   Ez a funkció is, például a levelezés, névjegyek, naptár, Twitter és egyéb az iOS beállításkezelő alkalmazásából elérhető beállítások vonatkozik. Ez a funkció nem vonatkozik a fiók beállításait, amelyek nem konfigurálhatók, például a Microsoft Outlook alkalmazást az iOS beállításkezelő alkalmazásából származó alkalmazásokat.
-- **Az Eszközbeállítások között (csak felügyelt) korlátozások engedélyezése**: Válasszon **blokk** megakadályozza, hogy a felhasználók korlátozások engedélyezése az eszköz között. **Nincs konfigurálva** lehetővé teszi a felhasználó eszközkorlátozásokat (szülői felügyeletet) mint például az eszköz konfigurálásához.
-- **Az összes tartalom törlése és a beállítás az eszközön (csak felügyelt) használatát**: Válasszon **blokk** így a felhasználók nem használhatják a törlése minden tartalmat és a beállítás az eszközön (csak felügyelt eszköz esetén). **Nincs konfigurálva** ezeket a beállításokat felhasználók számára hozzáférést biztosít.
-- **Eszköz nevének módosítása (csak felügyelt)**: Válasszon **blokk** , az eszköz neve nem lehet módosítani. **Nincs konfigurálva** lehetővé teszi, hogy a felhasználó megváltoztassa az eszköz nevét.
-- **Értesítési beállítások módosítása (csak felügyelt)**: Válasszon **blokk** , az értesítési beállítások nem módosíthatók. **Nincs konfigurálva** lehetővé teszi, hogy a felhasználó megváltoztassa az eszköz értesítési beállításait.
-- **Háttérkép módosítása (csak felügyelt)**: **Blokk** megakadályozza, hogy a háttérkép módosításának. **Nincs konfigurálva** lehetővé teszi, hogy a felhasználó módosíthatja az az eszköz háttérképét.
-- **Vállalati alkalmazások megbízhatósági beállításai módosításának (csak felügyelt)**: **Blokk** e funkció felhasználó általi módosításának a felügyelt eszközökön a vállalati alkalmazások megbízhatósági beállításai. **Nincs konfigurálva** lehetővé teszi, hogy a felhasználót, hogy megbízható alkalmazásokat, amelyeket nem az alkalmazásáruházból letöltött.
-- **Konfigurációs profil módosítása (csak felügyelt)**: **Blokk** megakadályozza, hogy a konfigurációs profil módosítása az eszközön. **Nincs konfigurálva** lehetővé teszi a felhasználó számára a konfigurációs profilok telepítését.
+- **Idő (csak felügyelt) képernyőn**: Válasszon **blokk** megakadályozza, hogy a felhasználók a saját korlátozásokkal (eszközbeállítások) képernyő időben. **Nincs konfigurálva** lehetővé teszi, hogy a felhasználó eszközkorlátozásokat (például a szülői vagy a tartalom és adatvédelmi korlátozások) konfigurálhatja az eszközön.
+
+  Ez a beállítás névre lett átnevezve **korlátozások engedélyezése az eszköz között**. Ez a módosítás hatásai:  
+  
+  - iOS-es 11.4.1 és korábbi: **Blokk** megakadályozza, hogy a végfelhasználók számára az Eszközbeállítások között a saját korlátozásokkal. Ez az azonos; és a végfelhasználók számára nem változtak.
+  - iOS-es 12.0 és újabb verziók: **Blokk** megakadályozza, hogy a végfelhasználók saját beállítás **képernyő idő** az Eszközbeállítások között (Beállítások > Általános > képernyő idő), beleértve a tartalom- és adatvédelmi korlátozások. Frissített iOS 12.0-s eszközök többé nem jelenik meg a korlátozásokat fülre az Eszközbeállítások között (Beállítások > Általános > Eszközfelügyelet > felügyeleti profil > korlátozásai). Ezek a beállítások szerepelnek **képernyő idő**.
+  
+- **Az összes tartalom törlése és a beállítás az eszközön (csak felügyelt) használatát**: Válasszon **blokk** így a felhasználók nem használhatják a törlése minden tartalmat és a beállítás az eszközön (csak felügyelt eszköz esetén). **Nincs konfigurálva** (alapértelmezett) hozzáférést biztosít a felhasználóknak hozzá ezekhez a beállításokhoz.
+- **Eszköz nevének módosítása (csak felügyelt)**: Válasszon **blokk** , az eszköz neve nem lehet módosítani. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy a felhasználó megváltoztassa az eszköz nevét.
+- **Értesítési beállítások módosítása (csak felügyelt)**: Válasszon **blokk** , az értesítési beállítások nem módosíthatók. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy a felhasználó megváltoztassa az eszköz értesítési beállításait.
+- **Háttérkép módosítása (csak felügyelt)**: **Blokk** megakadályozza, hogy a háttérkép módosításának. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy a felhasználó módosíthatja az az eszköz háttérképét.
+- **Vállalati alkalmazások megbízhatósági beállításai módosításának (csak felügyelt)**: **Blokk** e funkció felhasználó általi módosításának a felügyelt eszközökön a vállalati alkalmazások megbízhatósági beállításai. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy a felhasználót, hogy megbízható alkalmazásokat, amelyeket nem az alkalmazásáruházból letöltött.
+- **Konfigurációs profil módosítása (csak felügyelt)**: **Blokk** megakadályozza, hogy a konfigurációs profil módosítása az eszközön. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy a felhasználó számára a konfigurációs profilok telepítését.
 - **Az aktiválási zár (csak felügyelt)**: Válasszon **engedélyezése** az aktiválási zár engedélyezése felügyelt iOS-eszközökön. Az aktiválási zár megnehezíti az elveszett vagy ellopott eszközök újraaktiválását.
-- **Alkalmazás eltávolítása (csak felügyelt) letiltása**: Válasszon **blokk** megakadályozza, hogy a felhasználók alkalmazások eltávolítása. **Nincs konfigurálva** lehetővé teszi a felhasználóknak alkalmazások eltávolítása az eszközről.
-- **Blokkok USB korlátozott módban (csak felügyelt)**: Válasszon **blokk** letiltása USB korlátozott módban a felügyelt eszközökön. USB korlátozott módban blokkolja USB Kellékek származó adatok cseréje a olyan eszköz, amely egy óráig zárolva van. **Nincs konfigurálva** USB korlátozott mód lehetővé teszi.
+- **Alkalmazás eltávolítása (csak felügyelt) letiltása**: Válasszon **blokk** megakadályozza, hogy a felhasználók alkalmazások eltávolítása. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi a felhasználóknak alkalmazások eltávolítása az eszközről.
+- **Blokkok USB korlátozott módban (csak felügyelt)**: Válasszon **blokk** letiltása USB korlátozott módban a felügyelt eszközökön. USB korlátozott módban blokkolja USB Kellékek származó adatok cseréje a olyan eszköz, amely egy óráig zárolva van. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy az USB korlátozott módban.
 - **Az automatikus dátum és idő (csak felügyelt) kényszerítése**: **Szükséges** kényszeríti a felügyelt eszközök számára, hogy a dátum és idő beállítása automatikusan. Az eszköz időzónája szerint frissül, amikor az eszköz mobilhálózati kapcsolattal rendelkezik, vagy engedélyezve van a Wi-Fi, a helyalapú szolgáltatásokat.
-- **Diákok háromnapos helyszíni tanfolyam (csak felügyelt eszköz esetén), hogy kérjen engedélyt igényel**: **Szükséges** tanulók regisztrált egy nem felügyelt, az oktatói kérjen engedélyt az osztályterem alkalmazás használatával, hogy a tanfolyam során kényszeríti. Csak az iOS 11.3 + érhető el. **Nincs konfigurálva** nem kényszeríti a kérjen engedélyt a tanulói.
+- **Diákok háromnapos helyszíni tanfolyam (csak felügyelt eszköz esetén), hogy kérjen engedélyt igényel**: **Szükséges** tanulók regisztrált egy nem felügyelt, az oktatói kérjen engedélyt az osztályterem alkalmazás használatával, hogy a tanfolyam során kényszeríti. **Nincs konfigurálva** (alapértelmezett) nem kényszeríti a tanulói az engedélyért.
+
+  Ez a funkció az alábbiakra vonatkozik:  
+  - iOS 11.3 és újabb verziók
+
+- **Lehetővé teszi az osztályterem alkalmazáshoz zárolása és zárolja az eszközt (csak felügyelt) rákérdezés nélkül**: **Engedélyezése** lehetővé teszi, hogy a tanári alkalmazások vagy zárolhatja az eszközt, az osztályterem alkalmazás használatával a diákok értesítése nélkül. Zárolás alkalmazások azt jelenti, hogy az eszköz csak lehet hozzáférés oktatói adott alkalmazást. **Nincs konfigurálva** (alapértelmezett) megakadályozza, hogy a tanárok zárolják az alkalmazásokhoz és eszközökhöz az osztályterem alkalmazás használatával a diákok értesítése nélkül. 
+
+  Ez a funkció az alábbiakra vonatkozik:  
+  - az iOS 11.0-s és újabb verziók
+
+- **Automatikusan csatlakozik (csak felügyelt) rákérdezés nélkül tanterem**: **Engedélyezése** automatikusan lehetővé teszi a tanulóknak, hogy csatlakozzon egy osztályt, amely az osztályterem alkalmazás szerepel az oktatói rákérdezés nélkül. **Nincs konfigurálva** (alapértelmezett) kér az oktatói, diákoknak szeretne csatlakozni egy osztályt, amely az osztályterem alkalmazás szerepel.
+
+  Ez a funkció az alábbiakra vonatkozik:  
+  - az iOS 11.0-s és újabb verziók
+
 - **Lehetővé teszi a nyilvános kulcsokra épülő infrastruktúra vezeték nélküli frissítések**: **Lehetővé teszi** lehetővé teszi, hogy a felhasználók számára, anélkül, hogy egy számítógép csatlakozna az eszközeik szoftverfrissítéseket fogadni.
-- **Követési korlát ad**: Válasszon **korlát** letiltása az eszköz hirdetési azonosító. **Nincs konfigurálva** tartja azt engedélyezve van.
-- **Blokk VPN létrehozása (csak felügyelt)**: **Blokk** megakadályozza, hogy a felhasználók létrehozása a VPN-konfigurációs beállítások. **Nincs konfigurálva** lehetővé teszi, hogy a felhasználók használhassanak VPN-eket az eszközön.
+- **Követési korlát ad**: Válasszon **korlát** letiltása az eszköz hirdetési azonosító. **Nincs konfigurálva** (alapértelmezett) tartja azt engedélyezve van.
+- **Blokk VPN létrehozása (csak felügyelt)**: **Blokk** megakadályozza, hogy a felhasználók létrehozása a VPN-konfigurációs beállítások. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy a felhasználók használhassanak VPN-eket az eszközön.
+- **Esim-kártya beállításai (csak felügyelt) módosítása**: **Blokk** megakadályozza, hogy a felhasználók eltávolítása, vagy mobilhálózati csomagot ad hozzá az esim-kártya az eszközön. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy a felhasználók a beállítások módosításához.
+
+  Ez a funkció az alábbiakra vonatkozik:  
+  - iOS 12,1 és újabb verziók
+
+- **Késlelteti a szoftverfrissítéseket (csak felügyelt)**: Ha a beállítása **nincs konfigurálva** (alapértelmezett), szoftverfrissítések jelennek meg az eszközön, az Apple által kiadott. Például ha egy IOS-es frissítés lekérdezi elérhető az Apple által egy adott dátumon, majd a frissítési természetes módon megjelenik-e az eszközön a Megjelenés dátumához körül.
+
+  **Engedélyezése** lehetővé teszi, hogy amikor a szoftverfrissítések jelennek meg az eszközökön, a 0 – 90 nappal késleltetés. Ez a beállítás nem szabályozza, amikor a frissítések vannak, vagy nincsenek telepítve. 
+
+  - **Látható-e szoftverfrissítéseket késleltetés**: Adjon meg egy 0-90 nap közötti értéket. Amikor a késleltetés lejár, a felhasználók frissíteni az operációs rendszer legkorábbi verziójára, ha a késleltetés lett elindítva értesítést kaphat.
+
+    Például ha IOS-es 12.a érhető el az **január 1-től**, és **látható-e késleltetni** értékre van állítva **5 nap**, majd iOS 12.a végfelhasználói eszközökön elérhető frissítés nem jelenik meg. Az a **hatodik nap** , hogy a frissítés érhető el, és a végfelhasználók telepíthetik a kiadásban a következő.
+
+    Ez a beállítás a következőkre vonatkozik:  
+    - iOS 11.3 és újabb verziók
 
 ## <a name="configurations-requiring-supervision"></a>Felügyeletet igénylő konfigurációk
 
@@ -94,7 +141,7 @@ Az iOS Supervised (Felügyelt) módja csak a kezdeti eszközbeállítás során,
 - Párosítás Apple Watch órával 
 
 > [!NOTE]
-> Az Apple megerősítette, hogy bizonyos beállítások 2019-ben át fognak kerülni a kizárólag felügyelt módban használhatók közé. Mérlegelje ezt, ha az alábbi beállításokat azelőtt használja, mielőtt a kapcsolódó funkciókat az Apple áthelyezi a kizárólag felügyelt módban használhatók közé:
+> Az Apple megerősítette, hogy bizonyos beállítások áthelyezése a kizárólag felügyelt módban lévő 2019. Javasoljuk, hogy figyelembe véve ez, ha ahelyett, hogy ezek a beállítások Várakozás az Apple áthelyezi a kizárólag felügyelt módban:
 > - Végfelhasználók által végzett alkalmazástelepítés
 > - Alkalmazás eltávolítása
 > - FaceTime
@@ -108,7 +155,7 @@ Az iOS Supervised (Felügyelt) módja csak a kezdeti eszközbeállítás során,
 
 ## <a name="password"></a>Windows 10
 
-- **Jelszó**: Megköveteli a végfelhasználótól, hogy jelszót adjon meg az eszköz eléréséhez. Nincs konfigurálva lehetővé teszi a felhasználóknak az eszköz elérésére anélkül, hogy jelszót írna be.
+- **Jelszó**: **Szükséges** a végfelhasználó számára adjon meg egy jelszót az eszköz elérésére. **Nincs konfigurálva** lehetővé teszi a felhasználóknak az eszköz elérésére anélkül, hogy jelszót írna be.
   - **Egyszerű jelszavak**: Válasszon **blokk** , amelyek összetett jelszót. **Nincs konfigurálva** lehetővé teszi egyszerű jelszavak, mint `0000` és `1234`.
   - **Kötelező jelszótípus**: Válassza ki a jelszó megkövetelése a szervezet. A választható lehetőségek:
     - **Eszköz alapértelmezése**
@@ -122,16 +169,23 @@ Az iOS Supervised (Felügyelt) módja csak a kezdeti eszközbeállítás során,
   - **Jelszó érvényessége (napokban)**: Adja meg a hány nap elteltével kell megváltoztatni az eszköz jelszavát.
   - **Korábbi jelszavak újbóli használatának tiltása**: Adja meg az új jelszót kell lennie egy lehessen.
   - **Ujjlenyomattal történő Zárolásfeloldás**: Válasszon **blokk** az eszközzárolás ujjlenyomattal történő elkerülése érdekében. **Nincs konfigurálva** lehetővé teszi, hogy a felhasználó számára az eszközzárolás ujjlenyomattal történő használatával.
-- **PIN-kód módosítása (csak felügyelt)**: Válasszon **blokk** a PIN-kód módosításának, hozzáadva vagy eltávolítva billentyűkombinációt. PIN-kód korlátozások módosításai figyelmen kívül hagyja a felügyelt eszközökön ez a funkció letiltása után. **Nincs konfigurálva** lehetővé teszi, hogy a PIN-kódok hozzáadni, módosítani vagy eltávolítani.
-  - **Ujjlenyomat módosítása (csak felügyelt)**: **Blokk** megakadályozza a felhasználó módosítja, hozzáadja vagy eltávolítsa a TouchID-ujjlenyomatokat. **Nincs konfigurálva** lehetővé teszi, hogy a felhasználó frissítése a TouchID-ujjlenyomatokat az eszközön.
+- **PIN-kód módosítása (csak felügyelt)**: Válasszon **blokk** a PIN-kód módosításának, hozzáadva vagy eltávolítva billentyűkombinációt. PIN-kód korlátozások módosításai figyelmen kívül hagyja a felügyelt eszközökön ez a funkció letiltása után. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy a PIN-kódok hozzáadni, módosítani vagy eltávolítani.
+
+  - **Ujjlenyomat módosítása (csak felügyelt)**: **Blokk** megakadályozza a felhasználó módosítja, hozzáadja vagy eltávolítsa a TouchID-ujjlenyomatokat. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy a felhasználó frissítése a TouchID-ujjlenyomatokat az eszközön.
+
 - **Blokk jelszó automatikus kitöltés (csak felügyelt)**: Válasszon **blokk** , hogy az automatikus kitöltés jelszavak funkció használatával iOS rendszeren. Választás **blokk** is a következőket:
+
   - Felhasználók sem kapnak felszólítást a mentett jelszó használata a Safari vagy az alkalmazások.
   - Automatikus erős jelszavak le vannak tiltva, és erős jelszavakat nem javasolt a felhasználók számára.
 
-  **Nincs konfigurálva** lehetővé teszi, hogy ezeket a funkciókat.
+  **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy ezeket a funkciókat.
 
-- **(Csak felügyelt) jelszó közelségi-kérések blokkolása**: Válasszon **blokk** , a felhasználó-eszköz nem jelszavakat kérhet közelben lévő eszközökhöz. **Nincs konfigurálva** lehetővé teszi, hogy a jelszó forrásától.
-- **Jelszó megosztása (csak felügyelt) letiltása**: **Blokk** megakadályozza, hogy a jelszavak használatával AirDrop eszközök közötti megosztását. **Nincs konfigurálva** lehetővé teszi a jelszavak megoszthatók.
+- **(Csak felügyelt) jelszó közelségi-kérések blokkolása**: Válasszon **blokk** , a felhasználó-eszköz nem jelszavakat kérhet közelben lévő eszközökhöz. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy a jelszó forrásától.
+- **Jelszó megosztása (csak felügyelt) letiltása**: **Blokk** megakadályozza, hogy a jelszavak használatával AirDrop eszközök közötti megosztását. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy a jelszavak megoszthatók.
+- **Touch ID és a Face ID hitelesítés szükséges a jelszó vagy hitelkártya-információk automatikus kitöltés (csak felügyelt)**: Ha a beállítása **megkövetelése**, felhasználók kell hitelesítenie a Touch ID vagy FaceID használata előtt jelszavak vagy hitelkártyaadatokat automatikusan kitölti a Safari és más alkalmazások is lehetnek. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy a felhasználók számára az Eszközbeállítások között a funkció szabályozza.
+
+  Ez a funkció az alábbiakra vonatkozik:  
+  - az iOS 11.0-s és újabb verziók
 
 <sup>1</sup>konfigurálása során a **legfeljebb ennyi perc inaktivitás képernyőzárolás** és **maximális jelszó kérése ennyi perc után képernyőzár** beállításokat, azok van alkalmazva. Ha például mindkét beállítást az értéket állítja be **5** perc, a képernyő kikapcsolja az öt perc után automatikusan és az eszköz zárolva van után további öt perc alatt. Ha azonban a felhasználó manuálisan kapcsolja ki a képernyőt, azonnal a második beállítás lesz alkalmazva. Ugyanebben a példában Miután a felhasználó kikapcsolta a képernyőt, az eszköz zárolja az öt perc múlva.
 
@@ -186,6 +240,19 @@ Az iOS Supervised (Felügyelt) módja csak a kezdeti eszközbeállítás során,
 - **Spotlight-keresés (csak felügyelt) internetes eredmények visszaadásának**: **Blokk** reflektorfény leállítja az eredményt visszatérésre egy internetes keresés. **Nincs konfigurálva** lehetővé teszi, hogy a Spotlight kereső csatlakozzon az internethez, hogy adja meg a keresési eredmények.
 - **Rendszer-alkalmazások (csak felügyelt) eszközről eltávolításának letiltása**: Választás **blokk** letiltja a rendszer alkalmazások eltávolítása az eszközről. **Nincs konfigurálva** lehetővé teszi a felhasználóknak a rendszer alkalmazások eltávolítása.
 
+#### <a name="safari"></a>Safari
+
+- **A Safari**: **Blokk** a Safari böngésző használata az eszközön. **Nincs konfigurálva** lehetővé teszi a felhasználóknak a Safari böngésző használata.
+- **Automatikus kitöltés**: **Blokk** letiltja az automatikus kitöltés funkciót az eszközön a Safariban. **Nincs konfigurálva** lehetővé teszi, hogy a felhasználók számára a böngésző automatikus kiegészítési funkciója beállításainak módosítását.
+- **A cookie-k**: Válassza ki, hogyan kezelje a cookie-k az eszközön. A választható lehetőségek:
+  - Engedélyezés
+  - Az összes cookie blokkolása
+  - A felkeresett webhelyek cookie-k engedélyezése
+  - A jelenlegi webhely cookie-k engedélyezése
+- **A JavaScript**: **Blokk** Java-parancsfájlok böngészőben megakadályozza, hogy az eszközön. **Nincs konfigurálva** lehetővé teszi a Java-parancsfájlok.
+- **Csalással kapcsolatos figyelmeztetések**: **Szükséges** csalással kapcsolatos figyelmeztetések jelennek meg a böngésző az eszközön. **Nincs konfigurálva** letiltja ezt a funkciót.
+- **Előugró ablakok**: **Blokk** letiltja a böngésző előugróablak-blokkolóját. **Nincs konfigurálva** lehetővé teszi, hogy a előugróablak-blokkolóját.
+
 ## <a name="restricted-apps"></a>Korlátozott alkalmazások
 
 A korlátozott alkalmazások listájában a következő listák valamelyikét konfigurálhatja:
@@ -225,29 +292,38 @@ Alkalmazások hozzáadása az ezek a listák, a következőket teheti:
 
 ## <a name="wireless"></a>Vezeték nélküli
 
-- **Adatroaming**: Válasszon **blokk** a mobilhálózati adatroaming elkerülése érdekében. **Nincs konfigurálva** engedélyezi az adatroaming használatát, ha az eszköz mobilhálózati.
-- **Roamingolás közbeni globális háttérbeli adatbeolvasás**: **Blokk** megakadályozza, hogy a globális, háttérbeli adatbeolvasás funkció használatával a mobilhálózati roaming esetén. **Nincs konfigurálva** lehetővé teszi az eszköz adatlehívást, például az e-mailben mobilhálózati roaming esetén.
-- **Hangtárcsázás**: Válasszon **blokk** megakadályozza, hogy a felhasználók a hangtárcsázás funkciót az eszközön található használatával. **Nincs konfigurálva** lehetővé teszi, hogy a hangtárcsázási az eszközön.
-- **Hangroaming**: Válasszon **blokk** a mobilhálózati hangroaming elkerülése érdekében. **Nincs konfigurálva** engedélyezi a hangroaming használatát, ha az eszköz mobilhálózati.
-- **Alkalmazás mobiladatátvitel-használati beállításai (csak felügyelt) változik**: Válasszon **blokk** való az alkalmazás mobiladatátvitel-használati beállításai módosításának megakadályozása. **Nincs konfigurálva** lehetővé teszi a felhasználó szabályozza, hogy mely alkalmazások bonyolíthassanak le mobilhálózati adatforgalmat.
-- **Személyes elérési pont**: **Blokk** megakadályozza, hogy az eszköz elérési pontként használják. Előfordulhat, hogy egyes hálózatüzemeltető szolgáltatók esetében ez a beállítás nem érvényesül. **Nincs konfigurálva** lehetővé teszi, hogy ez a funkció.
-- **Csatlakozás Wi-Fi hálózatokhoz csak konfigurációs profillal (csak felügyelt)**: **Szükséges** arra kényszeríti az eszköz csak Intune eszközkonfigurációs profilok keresztül beállított Wi-Fi hálózatokhoz. **Nincs konfigurálva** lehetővé teszi az eszköz más Wi-Fi-hálózatokkal.
+- **Adatroaming**: Válasszon **blokk** a mobilhálózati adatroaming elkerülése érdekében. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy ha az eszköz mobilhálózati adatroaming.
+- **Roamingolás közbeni globális háttérbeli adatbeolvasás**: **Blokk** megakadályozza, hogy a globális, háttérbeli adatbeolvasás funkció használatával a mobilhálózati roaming esetén. **Nincs konfigurálva** (alapértelmezett), lehetővé teszi az eszköz adatlehívást, például az e-mailben mobilhálózati roaming esetén.
+- **Hangtárcsázás**: Válasszon **blokk** megakadályozza, hogy a felhasználók a hangtárcsázás funkciót az eszközön található használatával. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy a hangtárcsázási az eszközön.
+- **Hangroaming**: Válasszon **blokk** a mobilhálózati hangroaming elkerülése érdekében. **Nincs konfigurálva** (alapértelmezett) engedélyezi a hangroaming használatát, ha az eszköz mobilhálózati.
+- **Alkalmazás mobiladatátvitel-használati beállításai (csak felügyelt) változik**: Válasszon **blokk** való az alkalmazás mobiladatátvitel-használati beállításai módosításának megakadályozása. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy a felhasználó szabályozza, hogy mely alkalmazások bonyolíthassanak le mobilhálózati adatforgalmat.
+- **Mobilhálózati terv beállításai (csak felügyelt) módosításának**: **Blokk** megakadályozza, hogy a felhasználók bármely beállításának módosítása a mobilhálózati tervben. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy a felhasználók módosításokat.
+
+  Ez a funkció az alábbiakra vonatkozik:  
+  - az iOS 11.0-s és újabb verziók
+
+- **Személyes elérési pont**: **Blokk** megakadályozza, hogy az eszköz elérési pontként használják. Előfordulhat, hogy egyes hálózatüzemeltető szolgáltatók esetében ez a beállítás nem érvényesül. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy ez a funkció.
+- **Csatlakozás Wi-Fi hálózatokhoz csak konfigurációs profillal (csak felügyelt)**: **Szükséges** arra kényszeríti az eszköz csak Intune eszközkonfigurációs profilok keresztül beállított Wi-Fi hálózatokhoz. **Nincs konfigurálva** (alapértelmezett), lehetővé teszi az eszköz más Wi-Fi-hálózatokkal.
 - **Mobilhálózati használati szabályok (csak felügyelt alkalmazások)**: Adja meg az adatok típusok felügyelt alkalmazások által mobilhálózatokon használható. A választható lehetőségek:
   - **Mobiladatok használatának letiltása**: Mobiladatok letiltani **minden kezelt alkalmazások** vagy **adott alkalmazások**.
   - **Mobiladatok használatának letiltása barangolás esetén**: Letiltani mobiladatok barangolás esetén **minden kezelt alkalmazások** vagy **adott alkalmazások**.
 
 ## <a name="connected-devices"></a>Csatlakoztatott eszközök
 
-- **AirDrop (csak felügyelt)**: **Blokk** megakadályozza, hogy az eszközön található AirDrop használatával. **Nincs konfigurálva** lehetővé teszi a közeli eszközökkel az AirDrop funkció használatával.
-- **Apple Watch-párosítás (csak felügyelt)**: **Blokk** megakadályozza, hogy az Apple Watch-párosítás. **Nincs konfigurálva** lehetővé teszi az eszköz egy Apple Watch-párosítás.
+- **AirDrop (csak felügyelt)**: **Blokk** megakadályozza, hogy az eszközön található AirDrop használatával. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi a közeli eszközökkel az AirDrop funkció használatával.
+- **Apple Watch-párosítás (csak felügyelt)**: **Blokk** megakadályozza, hogy az Apple Watch-párosítás. **Nincs konfigurálva** (alapértelmezett), lehetővé teszi az eszköz egy Apple Watch-párosítás.
 - **Párosított Apple Watch órák csuklóérzékelése**: **Szükséges** kényszeríti a párosított Apple Watch csuklóérzékelés használatára. Ha szükséges, az Apple Watch nem jelenít meg értesítéseket, amikor nem viselik. 
-- **Bluetooth módosítása (csak felügyelt)**: **Blokk** leállítja a végfelhasználó megváltoztassa az eszköz Bluetooth-beállításokat. **Nincs konfigurálva** lehetővé teszi, hogy a felhasználó módosíthatja ezeket a beállításokat.
-- **Gazdapárosítás annak szabályozására iOS-eszközök párosítható (csak felügyelt eszköz esetén), hogy**: **Nincs konfigurálva** lehetővé teszi, hogy a gazdapárosítás annak érdekében, hogy a rendszergazda szabályozhatja az iOS-eszközzel párosítható eszközök. **Blokk** megakadályozza, hogy a gazdapárosítási.
-- **Kimenő AirPlay-kérelmekhez párosítási jelszó megkövetelése**: **Szükséges** párosítási jelszót, amikor a felhasználó az airplay segítségével tartalmat kíván streamelni egyéb Apple-eszközökre. **Nincs konfigurálva** a felhasználó az AirPlay segítségével anélkül, hogy jelszót írna be tartalomátvitelre.
-- **(Csak felügyelt) letiltása AirPrint**: Válasszon **blokk** , hogy az AirPrint-funkció használatát az eszközön. **Nincs konfigurálva** lehetővé teszi, hogy a felhasználó AirPrint használja.
-  - **(Csak felügyelt) Keychain AirPrint hitelesítőadat-tárolók letiltása**: **Blokk** megakadályozza, hogy a kulcslánc-tárolók használata felhasználónevet és jelszót az eszközön. **Nincs konfigurálva** lehetővé teszi, hogy az AirPrint-felhasználónév és jelszó tárolja a Keychain alkalmazást.
+- **Bluetooth módosítása (csak felügyelt)**: **Blokk** leállítja a végfelhasználó megváltoztassa az eszköz Bluetooth-beállításokat. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy a felhasználó módosíthatja ezeket a beállításokat.
+- **Gazdapárosítás annak szabályozására iOS-eszközök párosítható (csak felügyelt eszköz esetén), hogy**: **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy gazdapárosítás annak érdekében, hogy a rendszergazda szabályozhatja az iOS-eszközzel párosítható eszközök. **Blokk** megakadályozza, hogy a gazdapárosítási.
+- **Kimenő AirPlay-kérelmekhez párosítási jelszó megkövetelése**: **Szükséges** párosítási jelszót, amikor a felhasználó az airplay segítségével tartalmat kíván streamelni egyéb Apple-eszközökre. **Nincs konfigurálva** (alapértelmezett) a felhasználó az AirPlay segítségével anélkül, hogy jelszót írna be tartalomátvitelre.
+- **(Csak felügyelt) letiltása AirPrint**: Válasszon **blokk** , hogy az AirPrint-funkció használatát az eszközön. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy a felhasználó AirPrint használja.
+  - **(Csak felügyelt) Keychain AirPrint hitelesítőadat-tárolók letiltása**: **Blokk** megakadályozza, hogy a kulcslánc-tárolók használata felhasználónevet és jelszót az eszközön. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy az AirPrint-felhasználónév és jelszó tárolja a Keychain alkalmazást.
   - **Szükséges megbízható TLS-tanúsítvány (csak felügyelt) AirPrint**: **Szükséges** arra kényszeríti az eszközön a megbízható tanúsítványokat használ a nyomtatási kommunikációhoz a TLS.
-  - **AirPrint-nyomtatókra (csak felügyelt) iBeacon észlelésének letiltása**: **Blokk** megakadályozza, hogy a hálózati forgalom adathalászat elleni rosszindulatú AirPrint Bluetooth jeleket. **Nincs konfigurálva** lehetővé teszi a hirdetési AirPrint-nyomtatókra az eszközön.
+  - **AirPrint-nyomtatókra (csak felügyelt) iBeacon észlelésének letiltása**: **Blokk** megakadályozza, hogy a hálózati forgalom adathalászat elleni rosszindulatú AirPrint Bluetooth jeleket. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi a hirdetési AirPrint-nyomtatókra az eszközön.
+- **Letiltja a beállítás mentése új közeli eszközök (csak felügyelt)**: **Blokk** letiltja a rendszer kéri, állíthatja be az új eszközök, amelyek a közelben. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy a felhasználók kapcsolódhatnak egyéb közeli Apple-eszközökre vonatkozó utasításokat.
+
+  Ez a funkció az alábbiakra vonatkozik:  
+  - az iOS 11.0-s és újabb verziók
 
 ## <a name="keyboard-and-dictionary"></a>Billentyűzet és szótár
 
@@ -360,19 +436,6 @@ Az alábbi listában néhány gyakori beépített iOS-alkalmazás csomagazonosí
 | com.apple.Bridge            | Watch        | Apple     |
 | com.apple.weather           | Időjárás      | Apple     |
 
-## <a name="safari"></a>Safari
-
-- **Safari (csak felügyelt)**: **Blokk** a Safari böngésző használata az eszközön. **Nincs konfigurálva** lehetővé teszi a felhasználóknak a Safari böngésző használata.
-- **Automatikus kitöltés**: **Blokk** letiltja az automatikus kitöltés funkciót az eszközön a Safariban. **Nincs konfigurálva** lehetővé teszi, hogy a felhasználók számára a böngésző automatikus kiegészítési funkciója beállításainak módosítását.
-- **A cookie-k**: Válassza ki, hogyan kezelje a cookie-k az eszközön. A választható lehetőségek:
-  - Engedélyezés
-  - Az összes cookie blokkolása
-  - A felkeresett webhelyek cookie-k engedélyezése
-  - A jelenlegi webhely cookie-k engedélyezése
-- **A JavaScript**: **Blokk** Java-parancsfájlok böngészőben megakadályozza, hogy az eszközön. **Nincs konfigurálva** lehetővé teszi a Java-parancsfájlok.
-- **Csalással kapcsolatos figyelmeztetések**: **Szükséges** csalással kapcsolatos figyelmeztetések jelennek meg a böngésző az eszközön. **Nincs konfigurálva** letiltja ezt a funkciót.
-- **Előugró ablakok**: **Blokk** letiltja a böngésző előugróablak-blokkolóját. **Nincs konfigurálva** lehetővé teszi, hogy a előugróablak-blokkolóját.
-
 ## <a name="domains"></a>Tartományok
 
 ### <a name="unmarked-email-domains"></a>Jelöletlen e-mail-tartományok
@@ -389,6 +452,6 @@ A **tartomány URL-címe**, egy vagy több URL-címek hozzáadása a listához. 
 
 ## <a name="next-steps"></a>További lépések
 
-A profil létrejött, de egyelőre nem csinál semmit. Ezután [rendelje hozzá a profilt](device-profile-assign.md) és [állapotát nyomon](device-profile-monitor.md).
+[Rendelje hozzá a profilt](device-profile-assign.md), és [kövesse nyomon az állapotát](device-profile-monitor.md).
 
-Beállíthat eszközkorlátozásokról és a beállítások a [macOS](device-restrictions-macos.md) eszközök.
+Korlátozhatja is eszközök funkcióinak és beállításainak a [macOS](device-restrictions-macos.md) eszközök.

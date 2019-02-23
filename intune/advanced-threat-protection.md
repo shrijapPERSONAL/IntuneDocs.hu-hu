@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 1/29/2019
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: afa2ef4cf1199597f61af99d631243e2d3b51e64
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 4ff07dfa48ab213bc65afc58708f490a80fb5ba8
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845176"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742516"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>A feltételes hozzáférés az Intune-ban a Windows Defender ATP megfelelőségi kényszerítése
 
@@ -126,10 +126,13 @@ A megfelelőségi szabályzat határozza meg egy eszközön a kockázat elfogadh
 4. Belefoglalással vagy kizárással adja meg a szabályzathoz rendelni kívánt Azure AD-csoportokat.
 5. A szabályzatnak a kijelölt csoportokhoz rendeléséhez válassza a **Mentés** lehetőséget. A rendszer ekkor kiértékeli a szabályzat hatókörébe tartozó felhasználói eszközök megfelelőségét.
 
-## <a name="create-an-azure-ad-conditional-access-policy"></a>Azure AD feltételes hozzáférési szabályzat létrehozása
-A feltételes hozzáférési szabályzat akkor tiltja az erőforrásokhoz való hozzáférést, *ha* az eszköz nem megfelelő. Így érhető el, hogy a fenyegetettségi szintet túllépő eszközök ne férjenek hozzá olyan vállalati erőforrásokhoz, mint a SharePoint vagy az Exchange Online.
+## <a name="create-a-conditional-access-policy"></a>Feltételes hozzáférési szabályzat létrehozása
+A feltételes hozzáférési szabályzat akkor tiltja az erőforrásokhoz való hozzáférést, *ha* az eszköz nem megfelelő. Így érhető el, hogy a fenyegetettségi szintet túllépő eszközök ne férjenek hozzá olyan vállalati erőforrásokhoz, mint a SharePoint vagy az Exchange Online.  
 
-1. Az [Azure Portalon](https://portal.azure.com) nyissa meg az **Azure Active Directory** > **Feltételes hozzáférés** > **Új szabályzat** panelt.
+> [!TIP]  
+> Feltételes hozzáférés egy Azure Active Directory (Azure AD) technológia. A feltételes hozzáférés csomópont elérhető *Intune* van ugyanazon a csomóponton, elérhető *Azure ad-ben*.  
+
+1. Az a [az Azure portal](https://portal.azure.com), nyissa meg **Intune** > **feltételes hozzáférési** > **új szabályzat**.
 2. Adjon meg **Nevet** a szabályzathoz és válassza a **Felhasználók és csoportok** lehetőséget. A befoglalási vagy kizárási lehetőségek használatával jelölje ki a szabályzathoz rendelendő csoportokat majd válassza a **Kész** lehetőséget.
 3. Válassza a **Felhőalkalmazások** lehetőséget, és válassza ki a védeni kívánt alkalmazásokat. Az **Alkalmazások kijelölése** alatt választhatja például az **Office 365 SharePoint Online** és az **Office 365 Exchange Online** elemeket.
 

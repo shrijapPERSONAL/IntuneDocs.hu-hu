@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19994745a232a362d6bba0f09ed3934e492a17ed
-ms.sourcegitcommit: 2f431f122ce3ee6b5d0cdb04a0b748d00f83e295
+ms.openlocfilehash: b1ff65e1b48815cd5964aa7498fa6ba54df50e09
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56265672"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742295"
 ---
 # <a name="the-early-edition-for-microsoft-intune---february-2019"></a>Az előzetes kiadása, a Microsoft Intune – 2019. február
 
@@ -43,92 +43,6 @@ A lap tartalmát rendszeresen frissítjük. További hírekért látogasson viss
 ## <a name="intune-in-the-azure-portal"></a>Intune az Azure Portalon
 <!-- 1902 start-->
 
-### <a name="powershell-scripts-can-run-in-a-64-bit-host-on-64-bit-devices----1862675----"></a>PowerShell-parancsprogramok a 64 bites gazdagépen 64 bites eszközökön futtathatja <!-- 1862675  -->
-Eszközkonfigurációs profil hozzá egy PowerShell-parancsfájlt, ha a parancsfájl mindig futtatják a 32 bites, akár a 64 bites operációs rendszereken. Ezzel a frissítéssel a rendszergazda tudja futtatni a parancsprogramot a 64 bites PowerShell-gazdagépet a 64 bites eszközökön (**eszközkonfiguráció** > **PowerShell-parancsfájlok**  >   **Adjon hozzá** > **konfigurálása** > **64 bites PowerShell-gazdagépet a szkriptet futtathatja**).
-A PowerShell használatával további részletekért lásd: [az Intune-ban a PowerShell-parancsfájlok](intune-management-extension.md).
-A következőkre vonatkozik: Windows 10 és újabb
-
-### <a name="rename-an-enrolled-windows-device----1911112----"></a>Egy regisztrált Windows-eszköz átnevezése <!-- 1911112  -->
-Nevezze át a regisztrált Windows 10-es eszköz lesz (RS4 vagy újabb). Szeretné elvégezni, válassza ki a **Intune** > **eszközök** > **minden eszköz** > Válasszon egy eszközt > **átnevezése eszköz**.
-
-### <a name="assign-scep-certificates-to-a-userless-macos-device-------2340521-----"></a>SCEP-tanúsítványok felhasználó nélküli macOS-eszközök hozzárendelése    <!-- 2340521   -->
-Láthatja, hogy egyszerű tanúsítványigénylési protokoll (SCEP) tanúsítványok hozzárendelése egy felhasználó nélküli macOS-eszközt, és rendelje hozzá a tanúsítvány Wi-Fi vagy VPN-profilok. Ez kibővíti a meglévő támogatást, már eleve [tanúsítványok hozzárendelése Windows, iOS és Android rendszerű, felhasználó nélküli eszközök](certificates-scep-configure.md#create-a-scep-certificate-profile).
-
-### <a name="intune-conditional-access-ui-update------2432313----"></a>Az Intune feltételes hozzáférés felhasználói felület frissítése   <!-- 2432313  -->
-Fejlesztéseket végzünk az Intune-konzolon a feltételes hozzáférés felhasználói felületén. Ezek a következők:
-- Cserélje le az Intune *feltételes hozzáférési* panelről a panel az Azure Active Directoryból. Ez biztosítja a hozzáférést a beállítások és konfigurációk teljes körét a feltételes hozzáférés, amely egy Azure AD-technológia marad.
-- Helyezze át a *Exchange szolgáltatási összekötője* jelenleg a telepítőt a *helyszíni hozzáférés* panelen. Azt is vannak átnevezés, az adott panelhez *Exchange-hozzáférés*. Ez a változás egyesíteni fogja, ahol konfigurálhatja és figyelheti az Exchange online és helyszíni kapcsolatos részleteket.
-
-### <a name="intune-will-leverage-google-play-protect-apis-on-android-devices----2577355----"></a>Intune az Android-eszközökön a Google Play védelme API-kat használja <!-- 2577355  -->
-Egyes rendszergazdáknak kihívással szembesülnek, a BYOD fekvő tájolás, a végfelhasználók előfordulhat, hogy végül a telepítés vagy jailbreaking a mobiltelefonon. Ez a viselkedés, amíg nem néha helytelenül – intentioned, annak érdekében, hogy a végfelhasználói eszközökön a szervezet adatainak megvédése beállított számos Intune-házirendek a Mellőzés eredményez. Így az Intune kínál mind a regisztrált és nem regisztrált eszközök rootolásának és függetlenítésének észlelését. Ebben a kiadásban az Intune most már használja a Google Play védelme API-k hozzáadása a nem regisztrált eszközök a meglévő legfelső szintű észlelési ellenőrzése. Google nem osztja meg a legfelső szintű észlelési ellenőrzéseket végez a teljes, miközben várhatóan ezen API-k, felhasználók, akik rendelkezik rootolva eszközeiket a testre szabható az eszközök bármilyen okból újabb operációsrendszer-frissítés részletes a régebbi eszközöket képes észlelni. Ezek a felhasználók majd egytől a vállalati adatokhoz hozzáférő, vagy a házirend-kompatibilis alkalmazások a vállalati fiókokra törlődhetnek. További értékek a rendszergazda már az Intune App Protection panelen található jelentéskészítési frissítéseket – a "Megjelölt felhasználók" a jelentés megmutatja, hogy mely felhasználók észlelése keresztül a Google Play Protect a SafetyNet API vizsgálatot, a "potenciálisan káros alkalmazások" jelentést fog megjelenítése, mely alkalmazások észlelése API-n keresztül a Google ellenőrzése alkalmazások vizsgálatát. Ez a funkció Android rendszeren érhető el. 
-
-### <a name="win32-app-information-available-in-troubleshooting-blade----2617342------"></a>A Win32-alkalmazás adatai hibaelhárítás panelen érhető el <!-- 2617342    -->
-Egy Win32-alkalmazás telepítése sikertelen naplófájlok gyűjteni az Intune-alkalmazás lesz **hibaelhárítás** panelen. Alkalmazás telepítési hibaelhárítással kapcsolatos további információkért lásd: [alkalmazás telepítési problémák elhárítása](troubleshoot-app-install.md).
-
-### <a name="kiosk-browser-and-microsoft-edge-browser-apps-can-run-on-windows-10-devices-in-kiosk-mode----2935135----"></a>A teljes képernyős böngésző és a Microsoft Edge böngésző alkalmazások teljes képernyős módban a Windows 10-eszközökön futtathatja <!-- 2935135  -->
-Egy alkalmazás vagy több alkalmazás használhatja a teljes képernyős módban a Windows 10-es eszközökön. Ez a frissítés segítségével a böngészőben megjelenő alkalmazásokba teljes képernyős módban számos módosításait tartalmazza többek között:
-
-- Adja meg a Microsoft Edge böngészőt vagy futtatható alkalmazásokat a teljes képernyős eszközön teljes képernyős böngésző (**eszközkonfiguráció** > **profilok** > **új profil**  >  **Windows 10 és újabb** tartozó platform > **teljes képernyős** profiltípus).
-- Korlátozása a Microsoft Edge, így azt nem lehet (vagy is) a kioszkmódban futtatni (**eszközkonfiguráció** > **profilok** > **új profil**  >  **Windows 10 és újabb** tartozó platform > **eszközkorlátozások** profiltípus > **a Microsoft Edge böngésző**). Teljes képernyős módban fut, amikor a Microsoft Edge-beállítások a végfelhasználók által módosítható.
-
-A jelenlegi beállítások listájáért lásd:
-
-- [Windows 10-es és újabb beállításai a teljes képernyős fiókként való futtatásra](kiosk-settings-windows.md)
-- [A Microsoft Edge böngésző eszközkorlátozások](device-restrictions-windows-10.md#microsoft-edge-browser)
-
-A következőkre vonatkozik: Windows 10 és újabb
-
-### <a name="auto-assign-scope-tags-to-resources-created-by-an-admin-with-that-scope----3173823----"></a>Hatókörcímkék automatikus hozzárendelése a hatókörrel rendelkező rendszergazda által létrehozott erőforrások <!-- 3173823  -->
-Amikor a rendszergazda létrehoz egy erőforrást, bármely, a rendszergazda rendelt hatókörcímkék automatikusan rendeli hozzá ezeket az új erőforrásokat.
-
-### <a name="new-device-restriction-settings-for-ios-and-macos-devices----3448774---"></a>Új eszközkorlátozásokra vonatkozó beállítások az iOS és macOS-eszközök <!-- 3448774 -->
-Bizonyos beállítások és funkciók iOS és macOS rendszerű eszközökön korlátozhatja (**eszközkonfiguráció** > **profilok** > **új profil**  >  **iOS** vagy **macOS** tartozó platform > **eszközkorlátozások** profiltípus). Ez a frissítés további funkciókat és vezérelheti, például beállítás képernyő idő módosítása esim-kártya beállításait és a mobil tervek késlelteti a szoftverfrissítéseket, blokkolja a tartalom gyorsítótárazása, a felhasználó látható-e, és egyéb beállítások hozzáadása.
-Az aktuálisan elérhető funkcióit és korlátozhatja a beállítások megtekintéséhez lásd:
-- [iOS-eszközök korlátozásaira vonatkozó beállítások](device-restrictions-ios.md)
-- [macOS-eszközök korlátozásaira vonatkozó beállítások](device-restrictions-macos.md)
-
-A következőkre vonatkozik:
-- iOS
-- macOS
-
-### <a name="failed-enrollment-report-moves-to-the-device-enrollment-blade----3560202---"></a>Sikertelen regisztráció jelentés áthelyezi az Eszközregisztráció panel <!-- 3560202 -->
-A **sikertelen regisztrációk** jelentés helyezi át a **figyelő** szakaszában a **eszközregisztráció** panelen. Két új oszlopot (regisztrációs módszer és operációsrendszer-verzió) is bekerülnek.
-
-### <a name="change-kiosk-to-dedicated-devices----3598402----"></a>Módosítsa a "Teljes képernyős" "Dedikált eszközök" <!-- 3598402  -->
-Android-terminológia, igazodva **teljes képernyős** változik **dedikált eszközök** alatt eszközkonfigurációs profilokkal **Android enterprise**  >   **Eszköz tulajdonosa** > **Eszközkorlátozások**.
-
-### <a name="safari-and-delaying-user-software-update-visibility-ios-settings-are-moving-in-the-intune-ui----3640850--3803313----"></a>Safari és Delaying felhasználói szoftverfrissítési beállítások helyez át az Intune felhasználói felületén látható-e iOS frissítése <!-- 3640850, , 3803313  -->
-IOS-eszközök esetén a Safari beállításait, és konfigurálhatja a szoftverfrissítéseket. Ebben a frissítésben ezek a beállítások az Intune felhasználói felület különböző részeinek helyez át:
-
-- A Safari beállításait helyez át a **Safari** (**eszközkonfiguráció** > **profilok** > **új profil**  >  **iOS** tartozó platform > **eszközkorlátozások** profiltípus) való **beépített alkalmazások**. 
-- A **késlelteti az felhasználói szoftvereket látható-e frissítés az iOS-eszközök felügyelt** beállítás (**szoftverfrissítések** > **Update-szabályzatok iOS rendszerhez**) kerülát **Eszközkorlátozások** > **általános**.
-
-A jelenlegi beállítások listájáért lásd: [eszközkorlátozások iOS](device-restrictions-ios.md) és [iOS szoftverfrissítések](software-updates-ios.md).
-
-A következőkre vonatkozik: 
-- iOS
-
-### <a name="enabling-restrictions-in-the-device-settings-is-renamed-to-screen-time-on-ios-devices----3699164----"></a>Korlátozások engedélyezése az eszköz között új képernyő idő az iOS-eszközökön <!-- 3699164  -->
-Konfigurálhatja a **korlátozások engedélyezése az eszköz között** a felügyelt iOS-eszközök (**eszközkonfiguráció** > **profilok**  >  **Új profil** > **iOS** tartozó platform > **eszközkorlátozások** profiltípus > **általános**). Ebben a frissítésben ezzel a beállítással új **(csak felügyelt) képernyő idő**. A viselkedés megegyezik. Pontosabban: 
-
-- iOS-es 11.4.1 és korábbi: **Blokk** megakadályozza, hogy a végfelhasználók számára az Eszközbeállítások között a saját korlátozásokkal. 
-- iOS-es 12.0 és újabb verziók: **Blokk** megakadályozza, hogy a végfelhasználók saját beállítás **képernyő idő** az Eszközbeállítások között, beleértve a tartalom & adatvédelmi korlátozások. Frissített iOS 12.0-s eszközök többé nem jelenik meg a korlátozásokat fülre az Eszközbeállítások között. Ezek a beállítások szerepelnek **képernyő idő**. 
-
-A jelenlegi beállítások listájáért lásd: [eszközkorlátozások iOS](device-restrictions-ios.md).
-
-A következőkre vonatkozik: 
-- iOS
-
-### <a name="app-status-details-for-ios-apps----3761235----"></a>Az iOS-alkalmazások App-állapot részletei <!-- 3761235  -->
-Új alkalmazás telepítési kapcsolatos hibaüzeneteket a következő lesz:
-- VPP-alkalmazások a megosztott iPad telepítésekor hiba
-- Hiba, amikor az app Store-ban le van tiltva.
-- Hiba található a VPP-licenc az alkalmazás
-- Nem sikerült telepíteni a rendszer alkalmazások az MDM-szolgáltató
-- Nem sikerült telepíteni a alkalmazások eszköz esetén az elveszett eszköz mód vagy a teljes képernyős módban
-- Nem sikerült telepíteni az alkalmazást, amikor a felhasználó nem jelentkezett be, az App Store
-
-Válassza ki az Intune-ban **ügyfélalkalmazás** > **alkalmazások** > "App name" > **eszköz telepítési állapota**. Új hibaüzenetek lesz elérhető a **állapot részletei** oszlop.
 
 <!-- 1901 start -->
 

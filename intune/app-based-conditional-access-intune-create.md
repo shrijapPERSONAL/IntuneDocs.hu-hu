@@ -6,8 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/26/2018
-ms.topic: article
+ms.date: 02/22/2019
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2026a446ffef3bd845affe45a7732ef3ab8ec24
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: c4ba4d144338c2cd775a5389f3587c94625b94b4
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842916"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742244"
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>Alkalmazásalapú feltételes hozzáférési szabályzatok beállítása az Intune-ban
 
@@ -33,19 +32,18 @@ Alkalmazásalapú feltételes hozzáférési szabályzatok beállítása a jóv�
 > [!IMPORTANT]
 > Ez a cikk végigvezeti az alkalmazásalapú feltételes hozzáférési szabályzatok hozzáadásának lépésein. Ugyanezeket a lépéseket használhatja, ha alkalmazásokat ad hozzá, például SharePoint Online, Microsoft Teams és Microsoft Exchange Online, a jóváhagyott alkalmazások listájából.
 
-## <a name="create-app-based-conditional-access-policies-in-azure-ad-workload"></a>Alkalmazásalapú feltételes hozzáférési szabályzatok Azure AD-munkafolyamatban való létrehozása
-
-A rendszergazdák alkalmazásalapú feltételes hozzáférési szabályzatokat hozhatnak létre az Azure AD-munkafolyamatból. Ennek a hozzáférésnek köszönhetően nem kell váltania az Azure- és az Intune-munkafolyamatok között.
+## <a name="create-app-based-conditional-access-policies"></a>Alkalmazásalapú feltételes hozzáférési szabályzatok létrehozása
+Feltételes hozzáférés egy Azure Active Directory (Azure AD) technológia. A feltételes hozzáférés csomópont elérhető *Intune* van ugyanazon a csomóponton, elérhető *Azure ad-ben*. Ez azt jelenti, hogy nem kell váltani szabályzatok konfigurálása Intune-ban és az Azure AD között.
 
 > [!IMPORTANT]
-> Ahhoz, hogy Azure AD feltételes hozzáférési szabályzatokat hozhasson létre az Intune Azure Portal webhelyen, Azure AD Premium szintű előfizetésre van szükség.
+> Szüksége lesz egy Azure AD Premium-licencet hozhat létre feltételes hozzáférési szabályzatokat az Intune-portálon.
 
 ### <a name="to-create-an-app-based-conditional-access-policy"></a>Alkalmazásalapú feltételes hozzáférési szabályzat létrehozása
 
 > [!IMPORTANT]
 > Az alkalmazásalapú feltételes hozzáférési szabályzatok használatakor már [Intune-beli alkalmazásvédelmi szabályzatokkal](app-protection-policies.md) kell rendelkeznie az alkalmazásokra vonatkozóan.
 
-1. Az **Intune irányítópultján** válassza a **Feltételes hozzáférés** lehetőséget.
+1. Az a **Intune irányítópult**válassza **feltételes hozzáférési**.
 
 2. Az új alkalmazásalapú feltételes hozzáférési szabályzat létrehozásához a **Szabályzatok** panelen válassza az **Új szabályzat** lehetőséget.
 

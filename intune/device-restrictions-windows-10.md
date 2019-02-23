@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/05/2019
+ms.date: 02/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 943b5dc8c0fe1c9b55b9c4971be2087353b60428
-ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
+ms.openlocfilehash: 5fd0812967e6cce0e1eabe0fb04e597535b972f3
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56307889"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742771"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>A Windows 10 (és újabb) eszközbeállítások engedélyezett vagy korlátozott funkciók az Intune-nal
 
@@ -32,7 +32,7 @@ Ezek a beállítások hozzá egy eszközkonfigurációs profilt az Intune-ban, �
 
 ## <a name="before-you-begin"></a>Előkészületek
 
-[Eszközkonfigurációs profil létrehozása](device-restrictions-configure.md).
+[Eszközkonfigurációs profil létrehozása](device-restrictions-configure.md#create-the-profile).
 
 ## <a name="app-store"></a>Alkalmazásáruház
 
@@ -144,56 +144,6 @@ Ezek a beállítások hozzá egy eszközkonfigurációs profilt az Intune-ban, �
 
 - **Folyamatait a Feladatkezelőben**: Ez a beállítás meghatározza, hogy e nem rendszergazdák teljes feladat Feladatkezelő használható. **Blokk** általános jogú felhasználók (nem rendszergazda) megakadályozza, hogy egy folyamat vagy feladat az eszköz befejezi a Feladatkezelő használatát. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy a folyamat leállítása, vagy a feladat a Feladatkezelő használatát általános jogú felhasználók.
 
-## <a name="kiosk-preview---obsolete"></a>Kioszk (Előzetes) – Elavult
-
-Ezek a beállítások csak olvashatók, és nem módosíthatók. A kioszkmód a [Kioszkbeállítások Windows 10 vagy újabb rendszerekhez](kiosk-settings.md) lehetőség használatával konfigurálható.
-
-A kioszkeszközök jellemzően egyetlen alkalmazást futtatnak, vagy az alkalmazások egy előre meghatározott készletét. A rendszer megakadályozza más funkcióinak és az eszköz hozzáférését.
-
-- **Teljes képernyős mód**: A szabályzat által támogatott teljes képernyős mód típusát jelöli. A lehetőségek a következők:
-
-  - **Nincs konfigurálva** (alapértelmezett): A szabályzat nem teszi lehetővé az eszköz kioszkmódjában.
-  - **Egyalkalmazásos kioszk**: A profil engedélyezi az eszköznek csak egyetlen alkalmazás futtatását. Amikor a felhasználó bejelentkezik, elindul az adott alkalmazás. Ez a mód emellett meggátolja a felhasználót abban, hogy új alkalmazásokat nyisson meg vagy másik futó alkalmazásra váltson.
-  - **Többalkalmazásos kioszk**: A profil engedélyezi az eszköz számos alkalmazás futtatásához. Csak a hozzáadott alkalmazások lesznek elérhetők a felhasználónak. A többalkalmazásos kioszk (vagy fix célú eszköz) előnye az, hogy egy olyan, könnyen érthető környezetet nyújt a felhasználónak, amely csak a szükséges alkalmazások elérését engedélyezi, a többi alkalmazást pedig elrejti a felhasználó elől.
-
-#### <a name="single-app-kiosks"></a>Egyalkalmazásos kioszk
-
-Adja meg a következő beállításokat:
-
-- **Felhasználói fiók**: Adja meg a helyi (eszközön létező) felhasználói fiók, egy AD-tartományi fiók vagy a teljes képernyős alkalmazáshoz társított Azure AD-fiókkal.
-  - Helyi fiók: Adjon meg `devicename\accountname`, `.\accountname`, vagy `accountname`
-  - Tartományi fiók: Adjon meg `domain\accountname`
-  - Azure AD-fiók: Adjon meg `AzureAD\emailaddress`. Ügyeljen rá, hogy „AzureAD”-ként adja meg, mivel ez egy rögzített tartománynév. Ezt követően adja meg az Azure AD e-mail-címét. Például írja be a következőt: `AzureAD\user@contoso.onmicrosoft.com`.
-
-    Nyilvános környezetben működő, automatikus bejelentkezésű kioszkeszköz esetében ajánlott a legalacsonyabb szintű hozzáféréssel rendelkező felhasználótípust (például egyszerű helyi felhasználó fiókot) választania. Ha kioszk módhoz Azure AD-fiókot használ, ügyeljen rá, hogy ezt írja be: `AzureAD\user@yourorganization.com`.
-
-- **Alkalmazás alkalmazásfelhasználói modellben használt azonosítója (AUMID) alkalmazás**: Adja meg a teljes képernyős alkalmazás alkalmazásfelhasználói modellben használt AZONOSÍTÓJÁT. További információkat a [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Telepített alkalmazás alkalmazásfelhasználói modellben használt azonosítójának megkeresése) című témakörben találhat.
-
-#### <a name="multi-app-kiosks"></a>Többalkalmazásos kioszk
-
-A [többalkalmazásos kioszkeszközök](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) olyan kioszkkonfigurációt használnak, amely más beállítások mellett tartalmazza az engedélyezett alkalmazások listáját. 
-
-Hozzon létre egy kioszkkonfigurációt a **Hozzáadás** gomb használatával (vagy válasszon egy meglévőt). Ezután adja meg a következő beállításokat:
-
-- **Kioszkkonfiguráció neve**: Adja meg a konfiguráció azonosítására szolgáló felhasználóbarát nevet.
-
-- **Teljes képernyős alkalmazás**: Adja meg a Start menüben elérhető alkalmazásokat. A felhasználó kizárólag a megadott alkalmazásokat fogja tudni elérni.
-
-  - **Alkalmazás típusa**: Válassza ki a teljes képernyős alkalmazás típusát:
-    - **Win32 App**: Hagyományos asztali alkalmazás. A futtatható fájlnak az eszközön érvényes teljes elérési útja szükséges.
-    - **UWP-alkalmazás**: Egy univerzális Windows-alkalmazás. [Az alkalmazás alkalmazásfelhasználói modellben használt azonosítója (AUMID)](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) szükséges.
-
-  - **Azonosító**: A végrehajtható fájl (Win32-alkalmazás), adja meg a teljes elérési útjával, vagy a [alkalmazás AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP-alkalmazások).
-
-- **Tálca**: Válassza ki a **engedélyezése** (show) a tálcán vagy hagyja **nincs konfigurálva** kioszkeszközön való elrejtéséhez.
-
-- **Start menü elrendezése**: Adjon meg egy XML-fájlt, amely azt ismerteti, hogyan jelenjenek meg az alkalmazások a Start menüben. A [Start menü elrendezésének testreszabása és exportálása](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) című cikkben találhat útmutatást és XML-mintát.
-
-  [Alkalmazások futtatása Windows 10 rendszerű kioszk létrehozása](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file) használatával és XML-fájlok létrehozásáról további információt talál.
-
-- **Hozzárendelt felhasználók**: Adjon hozzá egy vagy több felhasználói fiókok, amelyek használhatják a hozzáadott alkalmazások. A fiókkal való bejelentkezéskor csak a konfigurációban meghatározott alkalmazások érhetők el. Ez lehet egy helyi fiók az eszközön, vagy egy Azure AD-fiók, amely a teljes képernyős alkalmazáshoz van társítva.
-
-    Nyilvános környezetben működő, automatikus bejelentkezésű kioszkeszköz esetében ajánlott a legalacsonyabb szintű hozzáféréssel rendelkező felhasználótípust (például egyszerű helyi felhasználó fiókot) választania. Ha Azure Active Directory- (AD-) fiókot kíván konfigurálni a kioszkmódhoz, használja az `domain\user@tenant.com` formátumot.
 
 ## <a name="locked-screen-experience"></a>Zárolási képernyő felülete
 
@@ -211,6 +161,31 @@ Hozzon létre egy kioszkkonfigurációt a **Hozzáadás** gomb használatával (
 - **RCS (csak mobil)**: Az eszközön a gazdag kommunikációs szolgáltatások küldése/fogadása funkció letiltása.
 
 ## <a name="microsoft-edge-browser"></a>Microsoft Edge böngésző
+
+### <a name="use-microsoft-edge-kiosk-mode"></a>A Microsoft Edge-teljes képernyős mód használata
+
+A rendelkezésre álló beállítások a kiválasztott beállításoktól függően módosítsa. A választható lehetőségek:
+
+- **Nem** (alapértelmezett): Teljes képernyős mód nem futó Microsoft Edge. Módosíthatja, és konfigurálhatja a Microsoft Edge-beállítások érhetők el.
+- **Digitális és interaktív aláírási (Egyalkalmazásos kioszk)**: Megfelelő digitális és interaktív aláírási Edge teljes képernyős mód a szűrők Edge-beállítások csak a Windows 10-es Egyalkalmazásos kioszk használja. Ezzel a beállítással nyisson meg egy URL-cím teljes képernyőn válassza ki, és csak a tartalom megjelenítése az adott webhelyre. [Állítsa be a digitális jelentkezik](https://docs.microsoft.com/windows/configuration/setup-digital-signage) Ez a szolgáltatás további információkkal szolgál.
+- **InPrivate-nyilvános böngészés (Egyalkalmazásos kioszk)**: Az InPrivate-nyilvános böngészés Edge teljes képernyős mód a szűrők Edge-beállítások Windows 10-es Egyalkalmazásos kioszk használja. A Microsoft Edge több lapon verzióját futtatja.
+- **Normál üzemmódban (többalkalmazásos kioszk)**: Edge-beállítások, amelyek alkalmazhatók a normál Edge kioszk mód szűri. A Microsoft Edge teljes-verziója fut az összes böngészési funkció.
+- **Nyilvános tallózása (többalkalmazásos kioszk)**: Edge-beállítások, amelyek alkalmazhatók a nyilvános-böngészést a Windows 10 rendszerű többalkalmazásos kioszk szűri.  A Microsoft Edge InPrivate több lapon verzióját futtatja.
+
+> [!TIP]
+> Ezek a beállítások mire a további információkért lásd: [Microsoft Edge kioszk mód konfigurációs típusok](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
+
+Az eszközkorlátozások profiljának közvetlenül kapcsolódik ahhoz a teljes képernyős profil létrehozásakor használja a [Windows kioszkmód](kiosk-settings-windows.md). Összefoglalásképpen:
+
+1. Hozzon létre a [Windows kioszkmód](kiosk-settings-windows.md) profil az eszköz kioszk módban futtatni. Válassza ki a Microsoft Edge, az alkalmazás és az Edge teljes képernyős üzemmód beállítása a teljes képernyős profilban.
+2. A jelen cikkben ismertetett eszközkorlátozások profiljának létrehozása, és a funkciók és a Microsoft Edge-ben engedélyezett beállításainak konfigurálása. Ügyeljen arra, hogy ugyanolyan Edge teljes képernyős mód típusú, mint a teljes képernyős profilban kijelölt kiválasztása ([Windows kioszkmód](kiosk-settings-windows.md)). 
+
+    [Kioszk mód beállításainak támogatott](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-policies-for-kiosk-mode) egy nagyszerű forrás.
+
+> [!IMPORTANT] 
+> Ügyeljen arra, hogy a Microsoft Edge-profil hozzárendelése ugyanazokkal az eszközökkel, mint a teljes képernyős profil ([Windows kioszkmód](kiosk-settings-windows.md)).
+
+CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
 
 ### <a name="start-experience"></a>Indítsa el a felhasználói élményt
 
@@ -230,6 +205,12 @@ Hozzon létre egy kioszkkonfigurációt a **Hozzáadás** gomb használatával (
 - **A felhasználó megváltoztathatja a kezdőképernyő gombra**: **Lehetővé teszi** lehetővé teszi a felhasználóknak, módosítsa a home gombra. A felhasználó módosításait felülbírálása bármely rendszergazdai beállításait a home gombra. **Nincs konfigurálva** használ az operációs rendszer alapértelmezett viselkedést az eszközön, amelyek blokkolhatják a felhasználók nem módosíthatják, hogy a rendszergazda konfigurált home gombra.
 - **Első futtatás élmény lap megjelenítése**: **Blokk** leállítja a bemutató lap megjelenítését az első alkalommal futtatása a Microsoft Edge. Ez a funkció lehetővé teszi a vállalatok – például regisztrált nulla kibocsátási konfigurációkban blokkolja ezen a lapon. **Nincs konfigurálva** a bevezetés oldalt mutatja.
   - **Először futtassa a felhasználói élményt URL-cím**: Adja meg az oldal URL-cím megjelenítéséhez egy felhasználó első alkalommal futtatja az Microsoft Edge (csak Windows 10 Mobile esetén).
+- **Üresjárati idő után frissítse a böngészőt**: Adja meg az üresjárati perc után a böngésző frissítése, a 0 – 1440 perc. Alapértelmezett érték a `5` perc. Ha a beállítása `0` (nulla), a böngésző nem frissül üresjárat után.
+
+  Ez a beállítás csak akkor érhető el, ha a [nyilvános InPrivate-böngészés (Egyalkalmazásos kioszk)](#use-microsoft-edge-kiosk-mode).
+
+  CSP: [ConfigureKioskResetAfterIdleTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskresetafteridletimeout)
+
 - **Előugró ablakok**: Válasszon **blokk** leállítani az előugró ablakokat a böngészőben. Csak a Windows 10 asztali verzióra vonatkozik. **Nincs konfigurálva** lehetővé teszi, hogy az előugró ablakokat a böngészőben.
 - **Intranetes adatforgalom küldését az Internet Explorer**: **Lehetővé teszi** lehetővé teszi a felhasználóknak az intranetes webhelyek megnyitását az Internet Explorer helyett a Microsoft Edge (csak Windows 10 asztali verzió). **Nincs konfigurálva** lehetővé teszi a felhasználóknak a Microsoft Edge használni.
 - **Vállalati üzemmód webhelylistájának helye**: Adja meg az URL-cím, amely tartalmazza a vállalati üzemmódban megnyíló webhelyek listája. Felhasználók nem módosíthatják ezt a listát. Csak a Windows 10 asztali verzióra vonatkozik.
@@ -261,6 +242,11 @@ Hozzon létre egy kioszkkonfigurációt a **Hozzáadás** gomb használatával (
   - Yahoo
   - Egyéni érték
 - **Keresési javaslatok**: **Nincs konfigurálva** lehetővé teszi, hogy a keresőmotor webhelyeket javasoljon a keresőkifejezések beírása címet a címsorba. **Blokk** megakadályozza, hogy ez a funkció.
+- **-Motor keresés engedélyezése**: **Igen** (alapértelmezett) lehetővé teszi a felhasználóknak új keresőmotorok felvétele vagy módosítása a Microsoft Edge-ben az alapértelmezett keresőmotort. Válasszon **nem** megakadályozza, hogy a felhasználók a keresőmotor testreszabása.
+
+  Ez a beállítás csak akkor érhető el, ha a [normál módba (többalkalmazásos kioszk)](#use-microsoft-edge-kiosk-mode).
+
+  CSP: [AllowSearchEngineCustomization](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsearchenginecustomization)
 
 ### <a name="privacy-and-security"></a>Adatvédelem és biztonság
 

@@ -6,7 +6,7 @@ keywords: Intune-adattárház
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2010
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,18 +17,33 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8e10549e05f814975337831e3eb9821d87a3f43
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: b842838f3090ddb8f7fe4f3598cd30990476eeda
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834007"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742183"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Az Intune-adattárház API módosítási naplója
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Maradjon naprakész az Intune-adattárház frissítéseivel kapcsolatban.
+
+## <a name="1902"></a>1902 
+_Released February 2019_
+
+### <a name="power-bi-compliance-app"></a>A Power BI megfelelőségi alkalmazás 
+
+A Power BI online-hoz az Intune-adattárház elérése a [(adatraktár) az Intune megfelelőségi](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) alkalmazást. A Power BI alkalmazással most már elérheti és megoszthatja az előre létrehozott jelentések beállítások nélkül, és a böngésző elhagyása nélkül. 
+
+> [!NOTE]
+> Nincsenek két további szűrőket is alkalmazhat az Intune megfelelőségi alkalmazást.
+
+#### <a name="add-additional-filters-to-the-intune-compliance-app"></a>További szűrők hozzáadása az Intune megfelelőségi alkalmazáshoz
+1. Nyissa meg a [(adatraktár) az Intune megfelelőségi](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) a webes browers az alkalmazást.
+2. Kattintson a **nem megfelelő eszközök** válassza **nem megfelelő** a a **complianceStatus** szűrőt. 
+3. Kattintson a **ismeretlen eszközök** válassza **még nem érhető el** a a **complianceStatus** szűrőt. 
 
 ## <a name="1812"></a>1812 
 _Kiadás dátuma: 2018. December_

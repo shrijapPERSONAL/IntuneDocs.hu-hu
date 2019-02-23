@@ -25,7 +25,6 @@
 
 ### [Az Android gyakori problémáinak elhárítása](troubleshoot-your-device-android.md)
 #### [Az eszközök megfelelőségének ellenőrzése](check-compliance-on-your-device-android.md)
-#### [Outlook-e-mailek szinkronizálása takarékos üzemmódban](power-saving-mode-android.md)
 #### [A Samsung Knox gyakori problémáinak elhárítása](samsung-knox-errors-android.md)
 #### [Eszköz frissítése az Outlook telepítéséhez](update-device-outlook-android.md)
 

@@ -15,16 +15,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9441f1c69e3d445d6174521ad2c9ef5c7a6db2be
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 2536a5978bc9af99053e4513f4ceea8c0a40e633
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55835537"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742261"
 ---
 # <a name="use-scope-tags-to-filter-policies"></a>Hatókörcímkék használata szabályzatok szűrésére
 
 A hatókörcímkék lehetővé teszik a szabályzatok Ön által létrehozott egyéni címkékkel való szűrését. Hatókörcímkék szerepköröket és alkalmazásokat is alkalmazhat.
+
+Amikor egy rendszergazda az Intune-ban létrehoz egy erőforrást, minden rendszergazdának rendelt hatókörcímkék automatikusan rendeli hozzá az új erőforrás.
 
 Létrehozhat például egy „Műszaki részleg” nevű hatókörcímkét, és hozzárendelheti a műszaki részleggel kapcsolatos konfigurációs profilokhoz. Hozzárendelheti ugyanazt a címkét a „Mérnöki rendszergazdák” szerepkörhöz. Ekkor csak a „Műszaki részleg” címkével rendelkező szabályzatokat fogják látni.
 
