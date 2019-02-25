@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64cd4aa629e980bf69557d6cd2c40f8bee7bd3c6
-ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
+ms.openlocfilehash: 52baa8f92401266dbf3043a334eccbc6ddffc873
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086216"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742635"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Az internet-hozzáférés kezelése Microsoft Intune-szabályzattal védett böngésző használatával
 
@@ -74,9 +74,13 @@ Ha a Microsoft Edge vagy a Managed Browser böngészőt nem az Intune felügyeli
 
 A Managed Browser már egy feltételes hozzáféréshez jóváhagyott ügyfélalkalmazás. Ez azt jelenti, hogy úgy korlátozhatja a mobilböngészők hozzáférését az Azure AD-hez csatlakozó webalkalmazásokhoz, hogy a felhasználók csak a Managed Browsert használhassák, valamint letilthat minden más nem védett böngészőt, például a Safarit vagy a Chrome-ot. Ezt a védelmet Azure-erőforrásokra alkalmazhatja, például az Exchange Online-ra, a SharePoint Online-ra, az Office-portálra, valamint olyan helyszíni webhelyekre, amelyekhez külső felhasználók is hozzáférhetnek [az Azure AD-alkalmazásproxyn](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) keresztül. 
 
-Ha az Azure AD-hez csatlakozó webalkalmazásokat az Intune Managed Browser használatára korlátozza mobilplatformokon, hozzon létre egy AD feltételes hozzáférési szabályzatot, amelyhez jóváhagyott ügyfélalkalmazások szükségesek. 
+Ha az Azure AD-hez csatlakozó webalkalmazásokat az Intune Managed Browser használatára korlátozza mobilplatformokon, hozzon létre egy feltételes hozzáférési szabályzatot, amelyhez jóváhagyott ügyfélalkalmazások szükségesek. 
 
-1. Az Azure Portalon válasza az **Azure Active Directory** > **Vállalati alkalmazások** > **Feltételes hozzáférés** > **Új szabályzat** lehetőséget. 
+> [!TIP]  
+> A feltételes hozzáférés az Azure Active Directory (Azure AD) technológiája. Az *Intune-ból* elérhető feltételes hozzáférési csomópont ugyanaz a csomópont, amelyet az *Azure AD-ből* is el lehet érni.  
+
+
+1. Az Intune-portálon válassza a **Feltételes hozzáférés** > **Új szabályzat** lehetőséget. 
 2. Ezután válassza a panel **Hozzáférés-szabályozási** szakaszában a **Hozzáférés** lehetőséget. 
 3. Kattintson a **Jóváhagyott ügyfélalkalmazás megkövetelése** lehetőségre. 
 4. A **Hozzáférés** panelen kattintson a **Kiválasztás** elemre. Ezt a szabályzatot hozzá kell rendelni azokhoz a felhőalkalmazásokhoz, amelyek esetében azt szeretné, hogy csak az Intune Managed Browser alkalmazásból legyenek elérhetők.
