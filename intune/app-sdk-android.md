@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/13/2018
+ms.date: 02/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f51d229e745a1e545d0853fa9e710a06cbfe6f8b
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 351420cc5c10b78d7423c1827c1448bb1fe8f4b2
+ms.sourcegitcommit: ba7170e499ea0009e9f1c2d77dbec116ec01ba1c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55851423"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56826308"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>A Microsoft Intune App SDK Androidon – útmutató fejlesztőknek
 
@@ -47,8 +47,8 @@ Az Intune App SDK-ban a következő fájlok találhatók:
 
 ## <a name="requirements"></a>Követelmények
 
-Az SDK az Android API 19 (Android 4.4+) és az Android API 28 (Android 8.0) közötti verziókat támogatja.
-
+### <a name="android-versions"></a>Android-verzió
+Az SDK az Android API 19 (Android 4.4 +) Android API 28 (Android 9.0) keresztül támogatja.
 
 ### <a name="company-portal-app"></a>Vállalati portál alkalmazás
 Az androidos Intune App SDK a [Céges portál](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) alkalmazással teszi lehetővé az alkalmazásvédelmi szabályzatok működését. A Céges portál az Intune szolgáltatástól kéri le az alkalmazásvédelmi szabályzatokat. Az alkalmazás az inicializáláskor betölti a Céges portálról a szabályzatot és a betartatásához szükséges kódot.
@@ -60,6 +60,9 @@ Az eszközregisztráció nélküli alkalmazásvédelem esetében a felhasználó
 
 ## <a name="sdk-integration"></a>SDK-integráció
 
+### <a name="sample-app"></a>Mintaalkalmazás
+Példa bemutatja, hogyan integrálható az Intune App SDK-val megfelelően érhető el a [GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Android-App). Ez a példa a [gradle-t hozhat létre a beépülő modul](#gradle-build-plugin).
+
 ### <a name="referencing-intune-app-libraries"></a>Hivatkozás Intune App-kódtárakra
 
 Az Intune App SDK for Android egy szabványos, külső függőségek nélküli androidos függvénytár. A **Microsoft.Intune.MAM.SDK.aar**-ban megvannak mind az alkalmazásvédelmi szabályzatok használatát lehetővé tevő interfészek, mind pedig a Microsoft Intune Céges portál alkalmazással való együttműködéshez szükséges kód.
@@ -70,7 +73,7 @@ Ezenkívül a **Microsoft.Intune.MAM.SDK.Support.XXX.jar** kódtárak tartalmazz
 
 #### <a name="proguard"></a>ProGuard
 
-Ha fordítási lépésként a [ProGuard](http://proguard.sourceforge.net/) (vagy bármely más zsugorítási/rejtjelezési mechanizmus) használt, az SDK olyan további konfigurációs szabályokkal rendelkezik, amelyeket fordításkor bele kell foglalni. Az .aar fájl buildbe való belefoglalásakor a szabályok automatikusan integrálódnak a ProGuard lépésbe, és az összes szükséges osztályfájl megőrződik.
+Ha fordítási lépésként a [ProGuard](http://proguard.sourceforge.net/) (vagy bármely más zsugorítási/rejtjelezési mechanizmus) használt, az SDK olyan további konfigurációs szabályokkal rendelkezik, amelyeket fordításkor bele kell foglalni. Ha például a. A buildek AAR, a szabályok automatikus integrálva vannak a proguard lépés és őrzi meg a szükséges osztály-fájlokat.
 
 Az Azure Active Directory Authentication Libraries (ADAL) szolgáltatásnak saját ProGuard-korlátozásai lehetnek. Ha az Ön alkalmazása az ADAL-lal van integrálva, ezen korlátozások tekintetében az ADAL dokumentációja a mérvadó.
 
@@ -79,7 +82,7 @@ Az Intune App SDK egy androidos függvénytár, amely lehetővé teszi, hogy az 
 
 Ezeknek a cseréknek a manuális végrehajtása fárasztó folyamat lehet. Ehelyett az SDK olyan fordítási eszközöket (a Gradle-buildekhez egy beépülő modult a nem Gradle-buildekhez pedig egy parancssori eszközt) biztosít, amelyek automatikus végrehajtják a cseréket. Ezek az eszközök átalakítják a Java-fordítással létrehozott osztályfájlokat, és nem módosítják az eredeti forráskódot.
 
-Az eszközök csak [közvetlen cserét](#class-and-method-replacements) hajtanak végre. Bonyolultabb SDK-integrációkat, például [Mentés másként szabályzatot](#enable-features-that-require-app-participation), [Többszörös identitást](#multi-identity-optional), [App-WE-regisztrációt](#app-protection-policy-without-device-enrollment), [AndroidManifest-módosításokat](#manifest-replacements) vagy [ADAL-konfigurációt](#configure-azure-active-directory-authentication-library-adal) nem hajtanak végre, ezért ezeket még azelőtt kell elvégezni, mielőtt az alkalmazás teljesen engedélyezve lenne az Intune-ban. Olvassa el figyelmesen a dokumentáció többi részét az alkalmazás szempontjából releváns integrációs pontok megtalálásához.
+Az eszközök végre [cseréjére közvetlen](#class-and-method-replacements) csak. Bonyolultabb SDK-integrációkat, például [Mentés másként szabályzatot](#enable-features-that-require-app-participation), [Többszörös identitást](#multi-identity-optional), [App-WE-regisztrációt](#app-protection-policy-without-device-enrollment), [AndroidManifest-módosításokat](#manifest-replacements) vagy [ADAL-konfigurációt](#configure-azure-active-directory-authentication-library-adal) nem hajtanak végre, ezért ezeket még azelőtt kell elvégezni, mielőtt az alkalmazás teljesen engedélyezve lenne az Intune-ban. Olvassa el figyelmesen a dokumentáció többi részét az alkalmazás szempontjából releváns integrációs pontok megtalálásához.
 
 > [!NOTE]
 > Az eszközöket lehet olyan projekten is futtatni, amelyen manuális cserékkel már végrehajtották a MAM SDK részleges vagy teljes forrásintegrációját. A projektnek továbbra is függőségként kell listáznia a MAM SDK-t.
@@ -134,7 +137,7 @@ dependencies {
 }
 intunemam {
     excludeProjects = [':product:FooLib']
-    includeExternalLibraries = ['bar.jar', "com.contoso.foo:zap-artifact", "com.microsoft.*"]
+    includeExternalLibraries = ['bar.jar', "com.contoso.foo:zap-artifact", "com.microsoft.*", "!com.microsoft.qux*"]
     excludeClasses = ['com.contoso.SplashActivity']
     excludeVariants=['savory']
 }
@@ -147,10 +150,11 @@ Ennek a hatása a következő lesz:
 * A `zap.jar`**nics** újraírva, mert az nem projekt, és azt az `includeExternalLibraries` nem tartalmazza.
 * A `com.contoso.foo:zap-artifact:1.0.0` újra van írva, mert azt az `includeExternalLibraries` tartalmazza.
 * A `com.microsoft.bar:baz:1.0.0` újra van írva, mert azt az `includeExternalLibraries` tartalmazza egy helyettesítő karakteren keresztül (`com.microsoft.*`).
+* `com.microsoft.qux:foo:2.0` nem áll feladatátvitelt annak ellenére, hogy a kulcs megegyezik-e az előző elemmel azonos helyettesítő karaktert, mert ez explicit módon ki van zárva, egy negálás minta használatával.
 
 #### <a name="usage-of-includeexternallibraries"></a>Az IncludeExternalLibraries használata
 
-Mivel a beépülő modul csak projektfüggőségeken működik (amit általában a `project()` függvény biztosít) alapértelmezés szerint a `fileTree(...)` által megadott vagy a maven vagy egyéb csomagforrásból (például „`com.contoso.bar:baz:1.2.0`”) származó minden függőséget meg kell adni az `includeExternalLibraries` tulajdonság számára, ha ezeknek a MAM általi feldolgozása az alábbiakban leírt feltételek alapján szükséges. Helyettesítő karakterek (*) használhatók.
+Mivel a beépülő modul csak projektfüggőségeken működik (amit általában a `project()` függvény biztosít) alapértelmezés szerint a `fileTree(...)` által megadott vagy a maven vagy egyéb csomagforrásból (például „`com.contoso.bar:baz:1.2.0`”) származó minden függőséget meg kell adni az `includeExternalLibraries` tulajdonság számára, ha ezeknek a MAM általi feldolgozása az alábbiakban leírt feltételek alapján szükséges. Helyettesítő karakterek (*) használhatók. Egy elem kiadásától kezdve `!` egy negálás, és használható helyettesítő karakter ellenkező esetben tenné szereplő könyvtárak kizárása.
 
 Ha külső függőségeket ad meg munkadarab-jelöléssel, akkor javasolt kihagyni a verzió-összetevőt az `includeExternalLibraries` értékéből. Ha belefoglalja a verziót, akkor annak pontos verziónak kell lennie. A dinamikus verziómegadások (pl. `1.+`) nem megengedettek.
 
@@ -168,12 +172,20 @@ Ha mindkét kérdésre „igen” a válasz, akkor azt a függvénytárat bele k
 | Belefoglal egy olyan függvénytárat, mint a React Native, amely az `Activity`, az `Application` és a `Fragment` elemekből származtatott osztályokat tartalmaz, de csak statikus segédeket vagy segédprogramosztályokat használ | Nem |
 | Belefoglal egy olyan függvénytárat, amely a `TextView` osztályból származtatott megtekintési osztályokat tartalmaz, és felhasználja ezeket az osztályokat, vagy további származtatást végez belőlük az alkalmazásában | Igen |
 
+#### <a name="reporting"></a>Jelentéskészítés
+A build beépülő modul végrehajtott változtatások HTML formátumú jelentést hozhat létre. Ez a jelentés generációja kérni, adja meg a `report = true` a a `intunemam` konfigurációs letiltása. Ha jönnek létre, a jelentés lesz írva `outputs/logs` hozhat létre a címtárban.
+
+```groovy
+intunemam {
+    report = true
+}
+```
 
 #### <a name="dependencies"></a>Függőségek
 
 A Gradle beépülő modul függőségben van a [Javassist](https://jboss-javassist.github.io/javassist/) eszközkészlettől, amelynek elérhetőnek kell lennie a Gradle számára a függőségfeloldáshoz (a fent leírtaknak megfelelően). A Javassist használata kizárólag a fordítás idején történik a beépülő modul futtatásakor. Az alkalmazáshoz nem lesz hozzáadva Javassist-kód.
 
-> [!NOTE]
+> [!NOTE] 
 > Az Android Gradle beépülő modul 3.0-s vagy újabb verzióját és a Gradle 4.1-es vagy újabb verzióját kell használnia.
 
 ### <a name="command-line-build-tool"></a>Parancssori fordítóeszköz
@@ -186,6 +198,7 @@ A parancssori fordítóeszköz az SDK-letöltés `BuildTool` mappájában talál
 A parancssori eszközt a megadott segítő parancsfájlokkal lehet meghívni, amelyek a `BuildTool\bin` könyvtárban találhatók.
 
 Az eszköz a következő paramétereket várja.
+
 | Paraméter | Leírás |
 | -- | -- |
 | `--input` | A módosításra váró osztályfájlok jar-fájljainak és könyvtárainak pontosvesszővel tagolt listája. Ennek tartalmaznia kell minden olyan jar-fájlt és könyvtárat, amelyet felül szeretne írni. |
@@ -194,6 +207,9 @@ Az eszköz a következő paramétereket várja.
 | `--excludeClasses`| Egy pontosvesszővel tagolt lista, amely tartalmazza azoknak az osztályoknak a nevét, amelyeket ki kell zárni az újraírásból. |
 
 Az összes paramétert meg kell adni, kivéve az `--excludeClasses` paramétert, amely nem kötelező.
+
+> [!NOTE] 
+> Az Unix-rendszerrel pontosvesszővel elválasztva, a parancs az elválasztó. A parancsok felosztása a rendszerhéj elkerülése érdekében ügyeljen arra, hogy az egyes pontosvessző escape "\' vagy a paraméter teljes zabalit do idézőjelek közé.
 
 #### <a name="example-command-line-tool-invocation"></a>Példa a parancssori eszköz meghívására
 
@@ -229,6 +245,8 @@ Az SDK [build-eszközei](#build-tooling) az ebben a szakaszban szereplő összes
 | android.app.ActivityGroup | MAMActivityGroup |
 | android.app.AliasActivity | MAMAliasActivity |
 | android.app.Application | MAMApplication |
+| android.app.Dialog | MAMDialog |
+| android.app.AlertDialog.Builder | MAMAlertDialogBuilder |
 | android.app.DialogFragment | MAMDialogFragment |
 | android.app.ExpandableListActivity | MAMExpandableListActivity |
 | android.app.Fragment | MAMFragment |
@@ -279,7 +297,8 @@ Az SDK [build-eszközei](#build-tooling) az ebben a szakaszban szereplő összes
 
 |Androidos osztály | Intune App SDK-beli helyettesítése |
 |--|--|
-|android.support.v7.app.AppCompatActivity | MAMAppCompatActivity |
+| android.support.v7.app.AlertDialog.Builder | MAMAlertDialogBuilder |
+| android.support.v7.app.AppCompatActivity | MAMAppCompatActivity |
 | android.support.v7.widget.AppCompatAutoCompleteTextView | MAMAppCompatAutoCompleteTextView |
 | android.support.v7.widget.AppCompatCheckedTextView | MAMAppCompatCheckedTextView |
 | android.support.v7.widget.AppCompatEditText | MAMAppCompatEditText |
@@ -300,10 +319,11 @@ Az SDK [build-eszközei](#build-tooling) az ebben a szakaszban szereplő összes
 | android.support.text.emoji.widget.EmojiTextView | MAMEmojiTextView |
 
 ### <a name="renamed-methods"></a>Átnevezett metódusok
-Sok esetben az androidos osztályban rendelkezésre álló metódus végsőként van megjelölve a helyettesítő MAM-osztályban. Ebben az esetben a helyettesítő MAM-osztály egy hasonlóan elnevezett metódust biztosít (a `MAM` utótaggal), amelyet felül kell írni. Így például a `MAMActivity` származtatásakor az `onCreate()` felülírása, illetve a `super.onCreate()` metódus hívása helyett az `Activity` tevékenységnek felül kell írnia az `onMAMCreate()` metódust, és meg kell hívnia a `super.onMAMCreate()` metódust. A Java-fordítónak érvényesítenie kell a végső korlátozásokat az eredeti metódus véletlen felülbírálásának elkerülése érdekében az egyenértékű MAM-metódus helyett.
+Sok esetben az androidos osztályban rendelkezésre álló metódus végsőként van megjelölve a helyettesítő MAM-osztályban. Ebben az esetben a helyettesítő MAM-osztály egy hasonlóan elnevezett metódust biztosít (általában a `MAM` utótaggal), amelyet felül kell írni. Így például a `MAMActivity` származtatásakor az `onCreate()` felülírása, illetve a `super.onCreate()` metódus hívása helyett az `Activity` tevékenységnek felül kell írnia az `onMAMCreate()` metódust, és meg kell hívnia a `super.onMAMCreate()` metódust. A Java-fordítónak érvényesítenie kell a végső korlátozásokat az eredeti metódus véletlen felülbírálásának elkerülése érdekében az egyenértékű MAM-metódus helyett.
 
 ### <a name="mamapplication"></a>MAMApplication
 Ha az alkalmazása létrehozza az `android.app.Application` osztály egy alosztályát, akkor ehelyett **mindenképp** a `com.microsoft.intune.mam.client.app.MAMApplication` osztályból kell alosztályt létrehoznia. Ha az alkalmazása nem hoz létre alosztályt az `android.app.Application` osztályból, akkor **mindenképp** be kell állítania a `"com.microsoft.intune.mam.client.app.MAMApplication"` osztályt az `"android:name"` attribútumként az AndroidManifest.xml fájl `<application>` címkéjénél.
+
 ### <a name="pendingintent"></a>PendingIntent
 A `PendingIntent.get*` helyett például a `MAMPendingIntent.get*` metódust kell használni. Az így létrejövő `PendingIntent` már szintén a megszokott módon használható.
 
@@ -313,8 +333,17 @@ Néhány rendszerszolgáltatási osztály esetében statikus metódushívás sz�
 | Androidos osztály | Intune App SDK-beli helyettesítése |
 |--|--|
 | android.content.ClipboardManager | MAMClipboard |
+| android.content.ContentProviderClient | MAMContentProviderClientManagement |
+| android.content.ContentResolver | MAMContentResolverManagement |
 | android.content.pm.PackageManager | MAMPackageManagement |
 | android.app.DownloadManager | MAMDownloadManagement |
+| android.print.PrintManager | MAMPrintManagement |
+| android.support.v4.print.PrintHelper | MAMPrintHelperManagement |
+| android.view.View | MAMViewManagement |
+| android.view.DragEvent | MAMDragEventManagement |
+
+Egyes osztályaival rendelkezik a legtöbb burkolt be, például a módszereket `ClipboardManager`, `ContentProviderClient`, `ContentResolver`, és `PackageManager` míg más osztályok burkolt be, például csak egy vagy két módszert `DownloadManager`, `PrintManager`, `PrintHelper`, `View`, és `DragEvent`. Tekintse meg a MAM egyenértékű osztályokra a pontos metódus által elérhetővé tett, ha nem használja a BuildPlugin API-k. 
+
 ### <a name="manifest-replacements"></a>Cserék a jegyzékben
 Lehetséges, hogy a fenti osztálycserék egy részét a jegyzékfájlban és a Java-kódban is el kell végezni. Különösen fontos:
 * a jegyzékfájlban szereplő `android.support.v4.content.FileProvider`-hivatkozásokat le kell cserélni erre: `com.microsoft.intune.mam.client.support.v4.content.MAMFileProvider`.
@@ -411,6 +440,20 @@ boolean getIsSaveToLocationAllowed(Uri location);
 boolean getIsSaveToLocationAllowed(SaveLocation service, String username);
 
 /**
+ * Checks whether any activities which could handle the given intent are allowed by policy. Returns false only if all
+ * activities which could otherwise handle the intent are blocked. If there are no activities which could handle the intent
+ * regardless of policy, returns true. If some activities are allowed and others blocked, returns true. Note that it is not
+ * necessary to use this method for policy enforcement. If your app attempts to launch an intent for which there are no
+ * allowed activities, MAM will display a dialog explaining the situation to the user.
+ *
+ * @param intent
+ *         intent to check
+ *
+ * @return whether any activities which could handle this intent are allowed.
+*/
+boolean areIntentActivitiesAllowed(Intent intent);
+
+/**
  * Whether the SDK PIN prompt is enabled for the app.
  *
  * @return True if the PIN is enabled. False otherwise.
@@ -504,8 +547,11 @@ A `service` paramétert a következők egyikének kell lennie `SaveLocation` ér
 
 
 - `SaveLocation.ONEDRIVE_FOR_BUSINESS`
-- `SaveLocation.LOCAL`
 - `SaveLocation.SHAREPOINT`
+- `SaveLocation.LOCAL`
+- `SaveLocation.OTHER`
+
+A `username` az egyszerű felhasználónév/felhasználónév vagy e-mail társítani kell a felhőszolgáltatáshoz való mentésének (*nem* feltétlenül ugyanaz, mint a felhasználó a tulajdonos a dokumentum mentése folyamatban). Használja a NULL értékű, ha az AAD UPN-jét, és a cloud service felhasználónév közötti leképezést nem létezik, vagy a felhasználónév nem ismert.
 
 Korábban ugyanezen **AppPolicy** osztály `getIsSaveToPersonalAllowed()` függvényével lehetett megállapítani, hogy az adott felhasználó szabályzata engedélyezi-e a mentést különféle helyekre. Ez a függvény mostanra **elavult**, és nem szabad használni. Az alábbi kód egyenértékű a `getIsSaveToPersonalAllowed()` függvénnyel:
 
@@ -574,20 +620,35 @@ A következő értesítéseket küldi a program az alkalmazásnak, és némelyik
 
 * **WIPE_USER_DATA**: Ezt az értesítést a `MAMUserNotification` osztály. Az értesítés beérkezésekor az alkalmazásnak a `MAMUserNotification` osztály által átadott „vállalati” identitáshoz társított összes adatot törölnie kell. Az értesítést jelenleg az APP-WE szolgáltatásba való beléptetés megszüntetésekor küldi a program. A regisztrációs folyamat során általában sor kerül a felhasználó elsődleges nevének megadására. Ha regisztrál erre az értesítésre, az alkalmazásnak kell gondoskodnia az összes felhasználói adat törléséről. Ha nem regisztrál, az alapértelmezett szelektív törlési viselkedés érvényesül.
 
-* **WIPE_USER_AUXILIARY_DATA**: Alkalmazások akkor regisztrálhatnak erre az értesítésre, ha szeretnék, hogy az Intune App SDK végrehajtsa az alapértelmezett szelektív törlést, de továbbra is szeretné eltávolítani a bizonyos kiegészítő adatokat is törölni kívánnak. Ez az értesítés nem érhető el egyidentitásos alkalmazásokban; csak többidentitásos alkalmazásokba küldi a rendszer.
+* **WIPE_USER_AUXILIARY_DATA**: Alkalmazások akkor regisztrálhatnak erre az értesítésre, ha szeretnék, hogy az Intune App SDK végrehajtsa az alapértelmezett szelektív törlést, de továbbra is szeretné eltávolítani a bizonyos kiegészítő adatokat is törölni kívánnak. Ezt az értesítést, egyetlen identitás-alkalmazások – nem érhető el, csak el lesz küldve a többszörös identitást használó alkalmazások.
 
-* **REFRESH_POLICY**: Ezt az értesítést a `MAMUserNotification`. Az értesítés fogadásakor a gyorsítótárban található összes Intune-szabályzatot érvényteleníteni és frissíteni kell. Ezt az SDK kezeli, azonban az alkalmazásnak kell kezelnie, ha a szabályzat valamilyen állandó módon van használva.
+* **REFRESH_POLICY**: Ezt az értesítést a `MAMUserNotification`. Az értesítés fogadásakor a gyorsítótárba az alkalmazás által az Intune szabályzat döntések kell érvénytelenítve és frissíteni. Ha az alkalmazás nem tárolja a házirend jósolható, azt nem kell ezt az értesítést regisztráljon.
 
-* **REFRESH_POLICY**: Ezt az értesítést a `MAMUserNotification` és tájékoztatja az alkalmazást, hogy legyen-e készül. Felügyelet nélkül az alkalmazás nem fogja tudni olvasni a titkosított fájlokat, a MAMDataProtectionManagerrel titkosított adatokat, kezelni a titkosított vágólapot, vagy bármilyen más módon részt venni a felügyelt alkalmazások ökoszisztémájában.
+* **REFRESH_APP_CONFIG**: Ezt az értesítést a `MAMUserNotification`. Az értesítés fogadásakor minden gyorsítótárazott alkalmazás konfigurációs adatokat kell érvénytelenítve és frissíteni.
 
+* **REFRESH_POLICY**: Ezt az értesítést a `MAMUserNotification` és tájékoztatja az alkalmazást, hogy legyen-e készül. Felügyelet nélkül az alkalmazás nem fogja tudni olvasni a titkosított fájlokat, a MAMDataProtectionManagerrel titkosított adatokat, kezelni a titkosított vágólapot, vagy bármilyen más módon részt venni a felügyelt alkalmazások ökoszisztémájában. További részleteket alább találja.
+
+* **MAM_ENROLLMENT_RESULT**: Ezt az értesítést egy `MAMEnrollmentNotification` az alkalmazásnak, hogy egy alkalmazás-azt beléptetési kísérlet befejezése és a kísérlet állapota.
+
+* **COMPLIANCE_STATUS**: Ezt az értesítést a `MAMComplianceNotification` az alkalmazásnak a megfelelőség szervizelési kísérletek eredményéről.
 
 > [!NOTE]
 > Az alkalmazások nem regisztrálhatnak egyszerre a `WIPE_USER_DATA` és a `WIPE_USER_AUXILIARY_DATA` értesítésre.
 
+### <a name="managementremoved"></a>REFRESH_POLICY
+
+A `MANAGEMENT_REMOVED` értesítés jelzi, hogy a korábban a házirend által felügyelt felhasználó már nem kell felügyeli az Intune MAM-szabályzatot. Nem igényel felhasználói adatok törlése, és kijelentkezés a felhasználói (a törlési volt szükség, ha egy `WIPE_USER_DATA` értesítés lenne). Számos alkalmazás előfordulhat, hogy nem kell kezelni ezt az értesítést, azonban használó alkalmazásoknak `MAMDataProtectionManager` kell [speciális jegyezze fel ezt az értesítést,](#data-protection).
+
+Ha a MAM meghívja az alkalmazás `MANAGEMENT_REMOVED` fogadó, a következő igaz lesz:
+* MAM már rendelkezik visszafejteni a korábban titkosított fájlok (de nem védett pufferek) az alkalmazáshoz tartozó. A sdcard nyilvános helye, amely nem tartozik az alkalmazás közvetlenül a fájlok (például a dokumentumok vagy a letöltési mappák) visszafejtése nem történik meg.
+* Új fájlok vagy a fogadó metódus (vagy bármely más, a fogadó megkezdése után futó kódot) által létrehozott védett pufferek nem lesznek titkosítva.
+* Az alkalmazás továbbra is hozzáfér, titkosítási kulcs, így műveletek, például a visszafejtési adatok pufferek sikeres lesz.
+
+Az alkalmazás fogadó adja vissza, ha többé nem lesz, hogy hozzáférhessen a titkosítási kulcsokhoz.
 
 ## <a name="configure-azure-active-directory-authentication-library-adal"></a>Az Azure Active Directory Authentication Library (ADAL) konfigurálása (nem kötelező)
 
-Először olvassa el a [GitHub ADAL-függvénytárában](https://github.com/AzureAD/azure-activedirectory-library-for-android) található ADAL-integrációs irányelveket.
+Először olvassa el a [GitHub ADAL-kódtárában](https://github.com/AzureAD/azure-activedirectory-library-for-android) található ADAL-integrációs irányelveket.
 
 Az SDK a hitelesítési és feltételes indítási forgatókönyvekhez az [ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)-ra támaszkodik, amely a [hitelesítéshez](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/) megköveteli, hogy az alkalmazásokat az [Azure Active Directoryval](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) konfigurálják. A konfigurációs értékeket az SDK az AndroidManifest metaadatain keresztül közli.
 
@@ -611,68 +672,68 @@ Az alkalmazás konfigurálásához és a megfelelő hitelesítés engedélyezés
 ### <a name="adal-metadata"></a>ADAL-metaadatok
 
 * **Authority:** a használatban lévő AAD-szolgáltató. Ennek az értéknek a hiánya esetén a nyilvános AAD-környezet lesz használva.
-> [!NOTE]
-> Ne adjon meg értéket a mezőnek, ha az alkalmazása szuverén felhőt használ.
+    > [!NOTE]
+    > Ne adjon meg értéket a mezőnek, ha az alkalmazása szuverén felhőt használ.
 
-* **ClientID:** a használni kívánt AAD ClientID azonosító. Ha regisztrálva van az Azure AD-ben, akkor az alkalmazás saját ClientID-jét kell használni. Ha ez az érték hiányzik, a rendszer egy Intune-beli alapértelmezett értéket használ.
+* **ClientID** van az AAD ClientID azonosító (más néven alkalmazás-azonosító) használható. Ha regisztrálva van az Azure AD-ben, akkor az alkalmazás saját ClientID-jét kell használni. Ha ez az érték hiányzik, a rendszer egy Intune-beli alapértelmezett értéket használ.
 
 * **NonBrokerRedirectURI:** a közvetítő nélküli esetekben használandó AAD átirányítási URI. Ha nincs megadva, a rendszer az alapértelmezett `urn:ietf:wg:oauth:2.0:oob` értéket használja. Ez a legtöbb alkalmazáshoz megfelelő.
 
-* **SkipBroker:** akkor használatos, ha a ClientID nincs a közvetítő átirányítási URI-jának használatára konfigurálva. Az alapértelmezett érték a „false” (hamis).
-    * **Az ADAL-t nem integráló** és **az eszközszintű közvetített hitelesítésben/SSO-ban részt venni nem kívánó** alkalmazások esetében kell „true” (igaz) értékre állítani. Ilyen esetben az egyetlen használatos átirányítási URI a NonBrokerRedirectURI lesz.
+    * A NonBrokerRedirectURI csak akkor használható, ha a SkipBroker értéke "true".
 
-    * Az eszközszintű SSO-közvetítést támogató alkalmazások esetében a „false” értéket kell használni. Ilyenkor az SDK választ közvetítőt a [`com.microsoft.aad.adal.AuthenticationContext.getRedirectUriForBroker()`](https://github.com/AzureAD/azure-activedirectory-library-for-android) eredménye és a NonBrokerRedirectURI közül a közvetítő rendszerbeli elérhetősége alapján. A közvetítő forrása a legtöbbször a Céges portál alkalmazás vagy az Azure Authenticator alkalmazás lesz.
+* **SkipBroker** segítségével felülírhatja az alapértelmezett ADAL SSO részvételi viselkedést. SkipBroker csak akkor szabad megadni az alkalmazásokhoz, melyek adja meg a ClientID **és** nem támogatja a közvetített hitelesítést/eszközszintű SSO. Ebben az esetben kell állítani "true". A legtöbb alkalmazás nem kell beállítani a SkipBroker paramétert.
+
+    * A ClientID **kell** SkipBroker értéket a jegyzékfájlba adható meg.
+
+    * Ha a ClientID meg van adva, az alapértelmezett értéke "false".
+
+    * Ha a SkipBroker értéke "true", a NonBrokerRedirectURI lesz. Integrálja az adal-t (és így kell nincs ClientID) alkalmazásokat is alapértelmezés szerint "true".
 
 ### <a name="common-adal-configurations"></a>Általános ADAL-konfigurációk
 
-A következőkben az alkalmazások ADAL-konfigurációjának gyakori eseteit mutatjuk be. Keresse meg az alkalmazásához illő esetet, és állítsa be az ADAL (fent ismertetett) metaadat-paramétereit a megfelelő értékekre. Az Authority minden esetben megadható az alapértelmezettől eltérő környezetekhez, de általánosságban nincs szükség a megadására.
+A következőkben az alkalmazások ADAL-konfigurációjának gyakori eseteit mutatjuk be. Keresse meg az alkalmazásához illő esetet, és állítsa be az ADAL (fent ismertetett) metaadat-paramétereit a megfelelő értékekre. Minden esetben előfordulhat, hogy adható meg a szolgáltató nem alapértelmezett környezetek jelölését. Ha nincs megadva, az AAD-szolgáltató nyilvános üzemi használható.
 
-1. **Az alkalmazás nem integrálja az ADAL-t:**
+#### <a name="1-app-does-not-integrate-adal"></a>1. Az alkalmazás nem integrálja az ADAL-t
+ADAL-metaadatok **nem kell** szerepel a jegyzékfájlban.
 
-Nem szükséges további jegyzékfájlértékeket konfigurálnia.
+#### <a name="2-app-integrates-adal"></a>2. Az alkalmazás integrálja az ADAL-t
 
-2. **Az alkalmazás integrálja az ADAL-t:**
+|Szükséges ADAL-paraméter| Érték |
+|--|--|
+| ClientID | Az alkalmazás ClientID azonosítója (az Azure AD állítja elő az alkalmazás regisztrálásakor) |
 
-    |Szükséges ADAL-paraméter| Érték |
-    |--|--|
-    | ClientID | Az alkalmazás ClientID azonosítója (az Azure AD állítja elő az alkalmazás regisztrálásakor) |
-    | SkipBroker | False (Hamis) |
+Előfordulhat, hogy adható meg a szolgáltató szükség esetén.
 
-Az Authority és a NonBrokerRedirectURI megadható szükséges esetén.
-
-Az alkalmazás regisztrálása az Azure ad-vel az alábbi lépéseket követve:
-* Az alkalmazások Azure AD-ban való regisztrálásáról [itt](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) találhat információt. 
+Kell regisztrálnia az alkalmazást az Azure ad-vel és az alkalmazás hozzáférést biztosít a app protection szolgáltatás:
+* Az alkalmazások Azure AD-ban való regisztrálásáról [itt](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) találhat információt.
 * Győződjön meg arról, az Android-alkalmazás engedélyt az alkalmazásvédelmi szabályzat (alkalmazás) app Service a lépéseket követi. Útmutatásait a [első lépések az Intune SDK útmutatóját](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration) alatt "az alkalmazás hozzáférést biztosít az Intune app protection szolgáltatás (nem kötelező)". 
 
 Lásd emellett alább a [Feltételes hozzáférés](#conditional-access) követelményeit.
 
-3. **Az alkalmazás integrálja az ADAL-t, de nem támogatja a közvetített hitelesítést/eszközszintű SSO-t:**
 
-    |Szükséges ADAL-paraméter| Érték |
-    |--|--|
-    | ClientID | Az alkalmazás ClientID azonosítója (az Azure AD állítja elő az alkalmazás regisztrálásakor) |
-    | SkipBroker | **True** |
-    
-    Az Authority és a NonBrokerRedirectURI megadható szükséges esetén.
+#### <a name="3-app-integrates-adal-but-does-not-support-brokered-authenticationdevice-wide-sso"></a>3. Az alkalmazás integrálja az adal-t, de nem támogatja a közvetített hitelesítést/eszközszintű SSO
 
+|Szükséges ADAL-paraméter| Érték |
+|--|--|
+| ClientID | Az alkalmazás ClientID azonosítója (az Azure AD állítja elő az alkalmazás regisztrálásakor) |
+| SkipBroker | **True** |
+
+Az Authority és a NonBrokerRedirectURI megadható szükséges esetén.
 
 ### <a name="conditional-access"></a>Feltételes hozzáférés
-A feltételes hozzáférés egy Azure Active Directorybeli [szolgáltatás](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer), mellyel vezérelheti az AAD-erőforrások elérését.  [Az Intune-rendszergazdák definiálhatnak feltételes hozzáférési szabályokat](https://docs.microsoft.com/intune/conditional-access), melyekkel az erőforrások elérését az Intune által felügyelt eszközökre és alkalmazásokra korlátozhatják. Kövesse az alábbi lépéseket annak biztosításához, hogy az alkalmazása el tudja érni a szükséges erőforrásokat. Ha az alkalmazása nem szerez be egyetlen AAD-hozzáférési tokent sem, vagy ha csak feltételes hozzáféréssel nem védhető erőforrásokhoz fér hozzá, akkor kihagyhatja ezeket a lépéseket.
+
+A feltételes hozzáférés egy Azure Active Directorybeli [szolgáltatás](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer), mellyel vezérelheti az AAD-erőforrások elérését. [Az Intune-rendszergazdák definiálhatnak feltételes hozzáférési szabályokat](https://docs.microsoft.com/intune/conditional-access), melyekkel az erőforrások elérését az Intune által felügyelt eszközökre és alkalmazásokra korlátozhatják. Kövesse az alábbi lépéseket annak biztosításához, hogy az alkalmazása el tudja érni a szükséges erőforrásokat. Ha az alkalmazása nem szerez be egyetlen AAD-hozzáférési tokent sem, vagy ha csak feltételes hozzáféréssel nem védhető erőforrásokhoz fér hozzá, akkor kihagyhatja ezeket a lépéseket.
+
 1. Kövesse az [ADAL-integráció irányelveit](https://github.com/AzureAD/azure-activedirectory-library-for-android#how-to-use-this-library). 
    Fordítson különös figyelmet a 11. lépésben ismertetett közvetítőhasználatra.
-
-2. [Regisztrálja alkalmazását az Azure Active Directoryban](https://docs.microsoft.com/azure/active-directory/active-directory-app-registration). Az átirányítási URI-t megtalálhatja a fentebb hivatkozott ADAL-integrációs irányelvekben.
-
+2. [Regisztrálja az alkalmazását az Azure Active Directoryban] (https://docs.microsoft.com/azure/active-directory/active-directory-app-registration). 
+   Az átirányítási URI-t megtalálhatja a fentebb hivatkozott ADAL-integrációs irányelvekben.
 3. Állítsa be a jegyzékfájl metaadat-paramétereit az [Általános ADAL-konfigurációk](#common-adal-configurations) szerint (2. elem, fentebb).
-
 4. Tesztelje a konfiguráció helyességét. Ehhez engedélyezze az [eszközalapú feltételes hozzáférést](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use) az [Azure Portalon](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2), és bizonyosodjon meg a következőkről:
-* Hogy az alkalmazásába való bejelentkezéskor a rendszer kéri a Céges portál telepítését és regisztrálását
-* Hogy a regisztrálás után sikeresen befejeződik az alkalmazásába való bejelentkezés.
-
+    - Hogy az alkalmazásába való bejelentkezéskor a rendszer kéri a Céges portál telepítését és regisztrálását.
+    - Hogy a regisztrálás után sikeresen befejeződik az alkalmazásába való bejelentkezés.
 5. Miután integrálta az alkalmazásába az Intune APP SDK-t, lépjen kapcsolatba velünk a msintuneappsdk@microsoft.com címen, hogy hozzáadjuk az alkalmazását az [alkalmazásalapú feltételes hozzáféréshez](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access) jóváhagyott alkalmazások listájához.
-
 6. Miután az alkalmazását hozzáadtuk a jóváhagyott alkalmazások listájához, ellenőrizze a rendszer működését. Ehhez [konfigurálja az alkalmazásalapú feltételes hozzáférést](https://docs.microsoft.com/intune/app-based-conditional-access-intune-create), és győződjön meg róla, hogy az alkalmazásába való bejelentkezés sikeresen befejeződik.
-
 
 ## <a name="app-protection-policy-without-device-enrollment"></a>Eszközregisztráció nélküli alkalmazásvédelmi szabályzat
 
@@ -701,7 +762,7 @@ Az APP-WE-integráció implementálásához az alkalmazásnak a felhasználói f
 
 2. Felhasználói fiók létrejötte és a felhasználó sikeres ADAL-bejelentkezése után alkalmazásnak _kötelező_ meghívni a `registerAccountForMAM()` metódust.
 
-3. Felhasználói fiók teljes eltávolítása után az alkalmazásnak az `unregisterAccountForMAM()` metódussal kell eltávolítania a fiókot az Intune-felügyeletből.
+3. Felhasználói fiók eltávolítása után az alkalmazásnak az `unregisterAccountForMAM()` metódussal kell eltávolítania a fiókot az Intune-felügyeletből.
 
     > [!NOTE]
     > Ha egy felhasználó átmenetileg kijelentkezik az alkalmazásból, akkor nincs szükség az `unregisterAccountForMAM()` meghívására, mert előfordulhat, hogy ez törlést kezdeményez, és eltávolítja a felhasználó céges adatait.
@@ -718,9 +779,6 @@ MAMEnrollmentManager mgr = MAMComponents.get(MAMEnrollmentManager.class);
 ```
 
 A visszaadott `MAMEnrollmentManager`-példány garantáltan nem null értékű. Az API-metódusok között vannak **hitelesítésre** és **fiókregisztrációra** használatosak.
-
-> [!NOTE]
-> A `MAMEnrollmentManager` bizonyos API-metódusai hamarosan el fognak évülni. Az érthetőség kedvéért az alábbi kódmintában csak a releváns metódusok és eredménykódok szerepelnek.
 
 ```java
 package com.microsoft.intune.mam.policy;
@@ -770,10 +828,21 @@ void updateToken(String upn, String aadId, String resourceId, String token);
 
 2. A kért erőforrás-azonosítóra szóló hozzáférési jogkivonatot az `acquireToken()` metódusnak kell beszereznie az adott felhasználó számára. Ha ez nem sikerül, a metódusnak null értéket kell visszaadnia.
 
+    > [!NOTE]
+    > Győződjön meg arról, hogy az alkalmazás már használja a `resourceId` és `aadId` átadott paraméterek `acquireToken()` úgy, hogy a helyes-e jogkivonat beszerzése van.
+
+    ```
+    class MAMAuthCallback implements MAMServiceAuthenticationCallback {
+        public String acquireToken(String upn, String aadId, String resourceId) {
+        return mAuthContext.acquireTokenSilentSync(resourceId, ClientID, aadId).getAccessToken();
+        }
+    }
+    ```
+
 3. Ha az alkalmazás nem tud jogkivonatot biztosítani, amikor az SDK meghívja az `acquireToken()` metódust – például mert a csendes hitelesítés sikertelen és éppen nem lehet felhasználói felületet megjeleníteni –, később az `updateToken()` metódust meghívva teheti ezt meg. Az `updateToken()` metódusnak az `acquireToken()` korábbi meghívásakor használt UPN-t, AAD-azonosítót és erőforrás-ID kell átadni a végül beszerzett jogkivonattal együtt. Az alkalmazásnak a lehető leghamarabb meg kell hívnia ezt a metódust, miután a megadott visszahívás a null értéket adta.
 
-> [!NOTE]
-> Az SDK rendszeres időközönként megpróbálja az `acquireToken()` meghívásával megszerezni a jogkivonatot, így az `updateToken()` meghívása szigorúan véve nem szükséges, ugyanakkor ajánlott, mert elősegítheti a beléptetések és az alkalmazásvédelmiszabályzat-ellenőrzések mielőbbi befejezését.
+    > [!NOTE]
+    > Az SDK rendszeres időközönként megpróbálja az `acquireToken()` meghívásával megszerezni a jogkivonatot, így az `updateToken()` meghívása szigorúan véve nem szükséges, Azonban erősen ajánlott elősegítheti a beléptetések és időben befejezéséhez alkalmazás alkalmazásvédelmi szabályzat-ellenőrzéshez.
 
 
 ### <a name="account-registration"></a>Fiókregisztráció
@@ -787,17 +856,17 @@ void unregisterAccountForMAM(String upn);
 Result getRegisteredAccountStatus(String upn);
 ```
 
-1. A fiókokat az alkalmazásnak a `registerAccountForMAM()` metódust meghívva kell regisztrálnia a felügyelet alá. A felhasználói fiókot egyszerű felhasználóneve (UPN) és AAD-s felhasználói azonosítója is azonosítja. A beléptetési adatoknak a felhasználó AAD-bérlőjéhez társításához a bérlőazonosító is szükséges. A felhasználó szolgáltatóját (authority) is megadhatja szuverén felhőkben való regisztráláshoz. Erről bővebben a [Regisztrálás szuverén felhőbe](#sovereign-cloud-registration) című szakaszban olvashat.  Az SDK megpróbálhatja az adott felhasználó számára beléptetni az alkalmazást a MAM-szolgáltatásba. Ha a beléptetés sikertelen, akkor rendszeres időközönként újra fog próbálkozni vele, amíg a fiók regisztrációja meg nem szűnik. Az újrapróbálkozások időköze általában 12–24 óra. Az SDK aszinkron módon, értesítések útján közli a beléptetési kísérletek állapotát.
+1. A fiókokat az alkalmazásnak a `registerAccountForMAM()` metódust meghívva kell regisztrálnia a felügyelet alá. A felhasználói fiókot egyszerű felhasználóneve (UPN) és AAD-s felhasználói azonosítója is azonosítja. A beléptetési adatoknak a felhasználó AAD-bérlőjéhez társításához a bérlőazonosító is szükséges. A felhasználó jogosultságának előfordulhat, hogy is meg kell adni a regisztráció engedélyezéséhez szuverén felhők; ellen További információ: [szuverén felhő regisztrációs](#sovereign-cloud-registration).  Az SDK megpróbálhatja az adott felhasználó számára beléptetni az alkalmazást a MAM-szolgáltatásba. Ha a beléptetés sikertelen, akkor rendszeres időközönként újra fog próbálkozni vele, amíg a fiók regisztrációja meg nem szűnik. Az újrapróbálkozások időköze általában 12–24 óra. Az SDK aszinkron módon, értesítések útján közli a beléptetési kísérletek állapotát.
 
-2. Mivel AAD-hitelesítésre van szükség, a felhasználói fiókot a legjobb akkor regisztrálni, amikor már bejelentkezett az alkalmazásba, és az ADAL-hitelesítés is megtörtént.
-    * Az ADAL-hitelesítési hívás az [`AuthenticationResult`](https://github.com/AzureAD/azure-activedirectory-library-for-android) objektum részeként adja vissza a felhasználó AAD-azonosítóját és bérlőazonosítóját. A bérlőazonosító az `AuthenticationResult.getTenantID()` metódusból származik.
+2. AAD-hitelesítés szükség, mert a legjobb akkor regisztrálni, amikor a felhasználói fiók van, miután a felhasználó van bejelentkezve az alkalmazásba, és az ADAL használatával sikeres hitelesítése. A felhasználó AAD-Azonosítóját és Bérlőazonosítóját a rendszer adja vissza az ADAL-hitelesítési hívás során a [ `AuthenticationResult` ](https://github.com/AzureAD/azure-activedirectory-library-for-android) objektum.
+    * A bérlőazonosító az `AuthenticationResult.getTenantID()` metódusból származik.
     * A felhasználóval kapcsolatos adatok egy, az `AuthenticationResult.getUserInfo()` metódusból származó, `UserInfo` típusú alobjektumban találhatók meg, az AAD-beli felhasználót pedig ebből az objektumból lehet lekérni a `UserInfo.getUserId()` metódussal.
 
-3. A fiókok Intune-felügyeleti regisztrációját az alkalmazásnak az `unregisterAccountForMAM()` metódust meghívva kell megszüntetnie. Ha a fiók sikeresen be lett léptetve, és felügyelt fiók lett, az SDK fogja megszüntetni a beléptetését és törölni az adatait. A rendszeres időközönkénti beléptetési próbálkozások abbamaradnak. Az SDK aszinkron módon, értesítések útján közli a beléptetés-megszüntetési kérések állapotát.
+3. A fiókok Intune-felügyeleti regisztrációját az alkalmazásnak az `unregisterAccountForMAM()` metódust meghívva kell megszüntetnie. Ha a fiók sikeresen be lett léptetve, és felügyelt fiók lett, az SDK fogja megszüntetni a beléptetését és törölni az adatait. A rendszeres időközönkénti beléptetési próbálkozások abbamaradnak. Az SDK aszinkron módon, értesítések útján beléptetés-megszüntetési kérések állapotát biztosít.
 
 ### <a name="sovereign-cloud-registration"></a>Regisztrálás szuverén felhőbe
 
-A [szuverén felhőt használó](https://www.microsoft.com/en-us/trustcenter/cloudservices/nationalcloud) alkalmazásoknak **mindenképp** meg kell adniuk az `authority` beállítást a `registerAccountForMAM()` metódushoz.  Ezt úgy szerezheti be, hogy megadja az `instance_aware=true` értéket az ADAL [1.14.0+](https://github.com/AzureAD/azure-activedirectory-library-for-android/releases/tag/v1.14.0) acquireToken metódusának extraQueryParameters paraméterében, majd meghívja a `getAuthority()` metódust az AuthenticationCallback AuthenticationResult példányon.
+A [szuverén felhőt használó](https://www.microsoft.com/trustcenter/cloudservices/nationalcloud) alkalmazásoknak **mindenképp** meg kell adniuk az `authority` beállítást a `registerAccountForMAM()` metódushoz.  Ezt úgy szerezheti be, hogy megadja az `instance_aware=true` értéket az ADAL [1.14.0+](https://github.com/AzureAD/azure-activedirectory-library-for-android/releases/tag/v1.14.0) acquireToken metódusának extraQueryParameters paraméterében, majd meghívja a `getAuthority()` metódust az AuthenticationCallback AuthenticationResult példányon.
 
 ```java
 mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBehavior.FORCE_PROMPT, "instance_aware=true",
@@ -816,18 +885,10 @@ mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBeha
 ```
 
 > [!NOTE]
-> Ne állítsa be az AndroidManifest.xml fájl meta-data címkéjében az authority paramétert.
-<br/>
-
-```xml
-<meta-data
-    android:name="com.microsoft.intune.mam.aad.Authority"
-    android:value="https://AAD authority/" />
-```
+> Nincs beállítva a `com.microsoft.intune.mam.aad.Authority` metaadatok konfigurációelem-AndroidManifest.xml fájlban.
 
 > [!NOTE]
 > Győződjön meg róla, hogy a szolgáltató (authority) megfelelően van beállítva a `MAMServiceAuthenticationCallback::acquireToken()` metódusban.
-
 
 #### <a name="currently-supported-sovereign-clouds"></a>Jelenleg támogatott szuverén felhők
 
@@ -837,13 +898,14 @@ mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBeha
 
 #### <a name="authentication"></a>Authentication
 
-* Amikor az alkalmazás meghívja a `registerAccountForMAM()` metódust, kis idővel utána visszahívást kaphat egy másik szálon a `MAMServiceAuthenticationCallback` interfészén. Ideális esetben az alkalmazás már a fiók regisztrálása előtt beszerezte saját jogkivonatát az ADAL-tól, ezzel meggyorsítva a **MAMService-jogkivonat** beszerzését. Ha az alkalmazás a visszahívásból érvényes jogkivonatot ad vissza, a beléptetés folytatódik, és az alkalmazás egy értesítésben kapja meg a végeredményt.
+* Amikor az alkalmazás meghívja a `registerAccountForMAM()` metódust, kis idővel utána visszahívást kaphat egy másik szálon a `MAMServiceAuthenticationCallback` interfészén. Ideális esetben az alkalmazás meggyorsítva a kért jogkivonatot a fiók regisztrálása előtt beszerezte saját jogkivonatát az adal-t. Az alkalmazás a visszahívásból érvényes jogkivonatot ad vissza, ha a beléptetés folytatódik, és az alkalmazás megkapja az értesítést a végeredményt.
 
-* Ha az alkalmazás nem ad vissza érvényes AAD-jogkivonatot, a beléptetés végeredménye `AUTHENTICATION_NEEDED` lesz. Ha az alkalmazás ezt az eredményt kapja meg értesítésben, akkor a **MAMService-jogkivonat** beszerzésével, valamint az `updateToken()` metódust meghívva az ismételt kezdeményezéssel meggyorsíthatja a beléptetési folyamatot. Ez _nem_ szigorú követelmény, hiszen az SDK szabályos időközönként újrapróbálkozik a beléptetéssel, és a visszahívással próbálja beszerezni a jogkivonatot.
+* Ha az alkalmazás nem ad vissza érvényes AAD-jogkivonatot, a beléptetés végeredménye `AUTHENTICATION_NEEDED` lesz. Az alkalmazás ezt az eredményt értesítést kap, ha a beléptetési folyamat meggyorsítása a felhasználói token beszerzése által, erősen ajánlott, és korábban már kért erőforrás `acquireToken()` és hív-e a `updateToken()` metódus kezdeményezése a regisztrációs folyamatot újra.
 
 * Az alkalmazás regisztrált `MAMServiceAuthenticationCallback` interfésze is meg lesz hívva az alkalmazásvédelmi szabályzatok frissítéseinek rendszeres kereséséhez szükséges jogkivonat beszerzése céljából. Ha az alkalmazás kérésre nem tudja biztosítani a kért jogkivonatot, akkor nem fog értesítést kapni, de meg kell próbálnia jogkivonatot beszerezni, és a legközelebbi alkalmas időpontban meghívni az `updateToken()` metódust a beléptetési folyamat meggyorsítása érdekében. A visszahívás akkor is meg lesz hívva a következő beléptetési kísérletnél, ha nincs jogkivonat.
 
 * A szuverén felhők támogatásához meg kell adnia a szolgáltatót (authority).
+
 #### <a name="registration"></a>Regisztráció
 
 * Az egyszerűség kedvéért a regisztrációs metódusok idempotensek. A `registerAccountForMAM()` például csak akkor regisztrálja a fiókot és próbálja meg beléptetni az alkalmazást, ha a fiók még nincs regisztrálva, az `unregisterAccountForMAM()` pedig csak akkor törli a fiók regisztrációját, ha az az adott időpontban regisztrálva van. Az ismételt hívások hatástalanok lesznek, így ezeket a metódusokat következmény nélkül meg lehet hívni többször is. Ezenkívül levelezést metódusok és értesítéseket az eredmények között nem garantált: Vagyis ha `registerAccountForMAM` nevezzük az identitást, amely már regisztrálva van, az értesítés nem lehet elküldeni újra az identitásukat. Lehetnek olyan értesítések is, amelyek nem kapcsolódnak ezen metódusok meghívásához, mivel az SDK rendszeres időközönként próbálkozik beléptetésekkel a háttérben, az Intune szolgáltatástól érkező törlési kérések pedig kiválthatnak beléptetés-visszavonásokat.
@@ -873,13 +935,13 @@ A fiók az első regisztráció során `PENDING` állapotban kerül be a rendsze
 
 `COMPANY_PORTAL_REQUIRED` eredmény esetén az SDK letiltja az ahhoz az identitáshoz kapcsolódó tevékenységeket, amelynek a beléptetése a kérés tárgya volt. Az SDK ezen tevékenységekre válaszul egy, a Céges portál alkalmazás letöltését kérő üzenetet jelenít meg. Ha ezt a saját alkalmazásában szeretné elkerülni, a tevékenységek implementálhatják a `MAMActivity.onMAMCompanyPortalRequired` metódust.
 
-Ennek meghívása még az előtt történik, hogy az SDK megjelenítené az alapértelmezett letiltó felhasználói felületet. Ha az alkalmazás módosítja a tevékenység identitását, vagy törli a beléptetést megkísérlő felhasználó regisztrációját, az SDK nem fogja letiltani a tevékenységet. Ebben az esetben az alkalmazás feladata a vállalati adatszivárgás megakadályozása. Ne feledje, hogy az aktív identitás megváltoztatására csak a többidentitású alkalmazások (lásd alább) képesek.
+Ennek meghívása még az előtt történik, hogy az SDK megjelenítené az alapértelmezett letiltó felhasználói felületet. Ha az alkalmazás módosítja a tevékenység identitását, vagy törli a beléptetést megkísérlő felhasználó regisztrációját, az SDK nem fogja letiltani a tevékenységet. Ebben az esetben az alkalmazás feladata a vállalati adatszivárgás megakadályozása. Az aktív identitás megváltoztatására csak a többidentitású alkalmazások (lásd alább) képesek.
 
 Ha explicit módon nem örököl `MAMActivity` osztályt (mivel a build-eszköz hajtja végre ezt a módosítást), de továbbra is kezelnie kell ezt az értesítést, akkor ehelyett implementálhatja a `MAMActivityBlockingListener` osztályt.
 
 ### <a name="notifications"></a>Értesítések
 
-Egy új `MAMNotification`-típust vezettünk be, amely a beléptetési kérés befejezéséről tájékoztatja az alkalmazást.  A `MAMEnrollmentNotification` értesítés fogadása a `MAMNotificationReceiver` interfészen keresztül történik, a [Regisztráció az SDK értesítéseire](#register-for-notifications-from-the-sdk) című szakaszban leírtak szerint.
+Ha az alkalmazás regisztrál típusú értesítések **MAM_ENROLLMENT_RESULT**, amely egy `MAMEnrollmentNotification` szeretné küldeni az alkalmazást, amelyet a beléptetési kérés befejezéséről tájékoztatja. A `MAMEnrollmentNotification` értesítés fogadása a `MAMNotificationReceiver` interfészen keresztül történik, a [Regisztráció az SDK értesítéseire](#register-for-notifications-from-the-sdk) című szakaszban leírtak szerint.
 
 ```java
 public interface MAMEnrollmentNotification extends MAMUserNotification {
@@ -889,8 +951,136 @@ public interface MAMEnrollmentNotification extends MAMUserNotification {
 
 A `getEnrollmentResult()` metódus a beléptetési kérés eredményét adja vissza.  Mivel a `MAMEnrollmentNotification` a `MAMUserNotification` kiterjesztése, a beléptetési kérés által érintett felhasználó identitása is elérhető. Az alkalmazásnak ezen értesítések fogadásához a [Regisztráció az SDK értesítéseire](#register-for-notifications-from-the-sdk) című szakaszban leírtaknak megfelelően implementálnia kell a `MAMNotificationReceiver` interfészt.
 
-A regisztrált felhasználói fiók állapota beléptetési értesítés fogadásakor megváltozhat, de bizonyos esetekben ez nem történik meg (ha például az `AUTHORIZATION_NEEDED` értesítés egy konkrétabb eredménykód, mondjuk a `WRONG_USER` után érkezik, akkor a fiók állapota továbbra is a konkrétabb eredményt fogja tükrözni).
+A regisztrált felhasználói fiók állapota beléptetési értesítés érkezik, de nem minden esetben változik, előfordulhat, hogy módosítani. (például, ha `AUTHORIZATION_NEEDED` értesítés érkezik egy konkrétabb eredménykód után például `WRONG_USER`, annál több informatív eredmény lesz továbbra is a fiók állapotát).  Ha a fiók sikeresen regisztrálta, az állapot marad, `ENROLLMENT_SUCCEEDED` mindaddig, amíg a fiók regisztrációját megszüntetik vagy tartalmának végleges törléséig.
 
+A regisztrált felhasználói fiók állapota beléptetési értesítés érkezik, de nem minden esetben változik, előfordulhat, hogy módosítani. (például, ha `AUTHORIZATION_NEEDED` értesítés érkezik egy konkrétabb eredménykód után például `WRONG_USER`, annál több informatív eredmény lesz továbbra is a fiók állapotát).  Ha a fiók sikeresen regisztrálta, az állapot marad, `ENROLLMENT_SUCCEEDED` mindaddig, amíg a fiók regisztrációját megszüntetik vagy tartalmának végleges törléséig.
+
+## <a name="app-ca-with-policy-assurance"></a>A házirend-frissítési garanciát biztosító alkalmazás hitelesítésszolgáltató
+
+### <a name="overview"></a>Áttekintés
+Alkalmazás CA (feltételes hozzáférés) házirend garanciával működő, az erőforrásokhoz való hozzáférés az Intune alkalmazásvédelmi szabályzatokat az alkalmazásra van conditionalized.  Aad-ben ez érvényesíti, azzal, hogy az alkalmazásnak, hogy a rendszer által regisztrált és felügyelt alkalmazás eléréséhez egy alkalmazás Hitelesítésszolgáltatót házirend garanciával működő védett erőforrás-jogkivonat megadása előtt.  Az alkalmazás a token beszerzéséhez az ADAL broker használatához szükséges, és a beállítás megegyezik a fentieknek megfelelően [feltételes hozzáférés](#conditional-access)
+
+### <a name="adal-changes"></a>ADAL módosítások
+Az ADAL-könyvtár tartalmaz egy új hibakód arról értesíti az alkalmazást, amelyet egy token beszerzéséhez a hibát okozta alkalmazásfelügyelet meg nem felelés.  Ha az alkalmazás megkapja az erről a hibakódról, próbálja meg elhárítani a megfelelőségi házirend, és regisztrálja az alkalmazást az SDK-t hívja kell. Kivételt fogja fogadni a `onError()` metódus az adal `AuthenticationCallback`, és a hiba kódja `ADALError.AUTH_FAILED_INTUNE_POLICY_REQUIRED`.  Ebben az esetben a kivétel is konvertálható egy `IntuneAppProtectionPolicyRequiredException`, a további paramétereket az kinyerhetők a használatra a megfelelőség javítása (lásd az alábbi mintakód). Ha a szervizelés sikeresen megtörtént, az alkalmazás újból megkísérelheti a token beszerzéséhez az ADAL használatával.
+
+> [!NOTE]
+> Az új hibakód és egyéb támogatási házirend tudatban alkalmazás hitelesítésszolgáltató 1.15.0 verziójának megkövetelése (vagy nagyobb) az ADAL-könyvtár.
+
+### <a name="mamcompliancemanager"></a>MAMComplianceManager
+
+A `MAMComplianceManager` fogadásakor. a szabályzat által megkövetelt hiba az ADAL illesztője.  Tartalmazza a `remediateCompliance()` metódushoz, amely megpróbálja az alkalmazás megfelelő állapotba kell meghívni. `MAMComplianceManager`-hivatkozást az alábbi módon lehet szerezni:
+
+```java
+MAMComplianceManager mgr = MAMComponents.get(MAMComplianceManager.class);
+
+// make use of mgr
+```
+
+A visszaadott `MAMComplianceManager`-példány garantáltan nem null értékű.
+
+```java
+package com.microsoft.intune.mam.policy;
+
+public interface MAMComplianceManager {
+    void remediateCompliance(String upn, String aadId, String tenantId, String authority, boolean showUX);
+}
+```
+
+A `remediateCompliance()` módszert hívja meg próbál meg az alkalmazást, hogy megfelel a feltételeknek, adja meg a kért jogkivonatot az aad-beli felügyelete alá helyezi.  Az első négy paraméterek a kivételt az ADAL által fogadott kinyerésének `AuthenticationCallback.onError()` metódus (lásd az alábbi mintakód).  A végső paraméter olyan logikai érték, amely azt vezérli, hogy látható-e a felhasználói felület a megfelelőségi kísérlet során.  Ez az egyszerű blokkoló folyamatban stílus felületet alapértelmezés szerint előírt alkalmazások, amelyek nem rendelkeznek a szükséges testre szabott felhasználói felület megjelenítése során ezt a műveletet.  Csak letiltja a megfelelőség szervizelési folyamatban van, és nem jelennek meg a végső eredményt.  Az alkalmazás kell regisztrálni egy értesítést fogadó kezelni a sikeres vagy sikertelen a megfelelőség szervizelési kísérlet (lásd alább).
+
+A `remediateCompliance()` módszerrel teheti meg, a MAM-regisztrációját, a megfelelőségi létrehozó részeként.  Az alkalmazás beléptetési értesítés kaphat, ha regisztrálva van az értesítést fogadó regisztrációs értesítéseket.  Az alkalmazás regisztrált `MAMServiceAuthenticationCallback` fog rendelkezni annak `acquireToken()` metodu volat jogkivonat beszerzéséhez a MAM-regisztrációját. `acquireToken()` neve az alkalmazás már beszerezte saját jogkivonatát, így minden nyilvántartási vagy a fiók létrehozási feladatot, amely az alkalmazás egy sikeres token beszerzése után előfordulhat, hogy rendelkezik még nem tette előtt.  A visszahívás egy token beszerzéséhez ebben az esetben képesnek kell lennie.  Ha nem téríthetők vissza származó jogkivonat `acquireToken()`, a megfelelőség szervizelési kísérlet sikertelen lesz.  Ha felhívja `updateToken()` később a kért erőforrás érvényes token az a megfelelőség szervizelési megpróbálja közvetlenül az adott tokennel.
+
+> [!NOTE]
+> Beavatkozás nélküli token beszerzéséhez továbbra is lehetséges a `acquireToken()` , mert a felhasználó fog rendelkezik már lett interaktív az ügynök telepítése, és regisztrálja az eszközt, mielőtt `ADALError.AUTH_FAILED_INTUNE_POLICY_REQUIRED` hibaüzenet érkezik.  Ennek eredményeképpen a közvetítő kellene egy érvényes frissítési jogkivonat a gyorsítótárban, lehetővé téve a kért jogkivonat sikeres csendes acqisition.
+
+Íme egy példa a szabályzat által megkövetelt hiba azért a `AuthenticationCallback.onError()` módját, valamint hívása a `MAMComplianceManager` kezelni a hibát.
+
+```java
+public void onError(@Nullable Exception exc) {
+    if (exc instanceof AuthenticationException && 
+        ((AuthenticationException) exc).getCode() == ADALError.AUTH_FAILED_INTUNE_POLICY_REQUIRED) {
+
+        final IntuneAppProtectionPolicyRequiredException policyRequiredException = 
+            (IntuneAppProtectionPolicyRequiredException) ex;
+
+        final String upn = policyRequiredException.getAccountUpn();
+        final String aadId = policyRequiredException.getAccountUserId();
+        final String tenantId = policyRequiredException.getTenantId();
+        final String authority = policyRequiredException.getAuthorityURL();
+
+        MAMComplianceManager complianceManager = MAMComponents.get(MAMComplianceManager.class);
+        complianceManager.remediateCompliance(upn, aadId, tenantId, authority, showUX);
+    }
+}
+```
+
+### <a name="status-notifications"></a>Állapotra vonatkozó értesítések
+
+Ha az alkalmazás regisztrál típusú értesítések **COMPLIANCE_STATUS**, amely egy `MAMComplianceNotification` tájékoztatja az alkalmazást a megfelelőség szervizelési kísérlet a végső állapotának küld. A `MAMComplianceNotification` értesítés fogadása a `MAMNotificationReceiver` interfészen keresztül történik, a [Regisztráció az SDK értesítéseire](#register-for-notifications-from-the-sdk) című szakaszban leírtak szerint.
+
+```java
+public interface MAMComplianceNotification extends MAMUserNotification {
+    MAMCAComplianceStatus getComplianceStatus();
+    String getComplianceErrorTitle();
+    String getComplianceErrorMessage();
+}
+```
+
+A `getComplianceStatus()` metódus a megfelelőség szervizelési kísérlet eredményét adja vissza az értéket a `MAMCAComplianceStatus` enum.
+
+|Állapotkód | Magyarázat |
+| -- | -- |
+| ISMERETLEN | A állapota ismeretlen. Ennek oka lehet egy nem várt hiba oka. További információk a céges portál naplói is található. |
+| MEGFELELŐ | Megfelelőség szervizelési sikeres volt, és az alkalmazás most már nem felelnek meg a házirend. Az ADAL token beszerzéséhez újra meg kell próbálni. |
+| NOT_COMPLIANT | Megfelelőség javítása nem sikerült.  Az alkalmazás nem megfelelő, és ADAL token beszerzéséhez kell nem kísérli meg újra a hibajelzést kiváltó körülmény kijavításáig.  További információ a hibáról a MAMComplianceNotification e küldi el. |
+| SERVICE_FAILURE | Hiba történt az Intune szolgáltatástól megfelelőségi adatok beolvasására tett kísérlet során. További információk a céges portál naplói is található. |
+| NETWORK_FAILURE | Az Intune szolgáltatáshoz való kapcsolódás során fellépő hiba történt. Az alkalmazás érdemes megpróbálni a token beszerzéséhez újra, ha a hálózati kapcsolat helyreáll. |
+| CLIENT_ERROR | Megfelelőség javítása nem sikerült az ügyfél kapcsolatos valamilyen okból.  Ha például nem token vagy nem megfelelő felhasználó. További információ a hibáról a MAMComplianceNotification e küldi el. |
+| PENDING | Megfelelőség javítása nem sikerült, mert a állapotválasz kellett még nem érkezett a szolgáltatástól, ha az időkorlát túl lett lépve. Az alkalmazás próbálkozzon újra később a token beszerzéséhez. |
+| COMPANY_PORTAL_REQUIRED | Ahhoz, hogy a megfelelőség szervizelési sikeres végrehajtásához az eszközön a céges portál kell telepíteni.  Ha a céges portál már telepítve van az eszközön, az alkalmazásnak újra kell indítani.  Ebben az esetben egy párbeszédpanel jelenik meg a felhasználót arra kéri, indítsa újra az alkalmazást. |
+
+Ha a megfelelőségi állapot `MAMCAComplianceStatus.COMPLIANT`, az alkalmazás kell indítsa el újra az eredeti token beszerzéséhez (a saját erőforrás). Ha a megfelelőség szervizelési kísérlet sikertelen volt a `getComplianceErrorTitle()` és `getComplianceErrorMessage()` módszerek honosított karakterlánc, amelyet az alkalmazás tudja megjeleníteni a végfelhasználók számára, ha úgy dönt, akkor adja vissza.  A következő többi hibaeseteket többsége nem az alkalmazás által remediable, így az általános esetben lehet érdemes választani, fiók létrehozása vagy a bejelentkezés sikertelen, és engedélyezi a felhasználó számára. Próbálkozzon újra később.  Állandó hiba esetén a MAM-naplók segíthetnek a hiba okának megállapításához.  A végfelhasználó is elküldhetik a naplókban található utasításokat használatával [Itt](https://docs.microsoft.com/intune-user-help/send-logs-to-your-it-admin-by-email-android "e-mailt a cég informatikai támogatási naplók").
+
+Mivel `MAMComplianceNotification` kibővíti `MAMUserNotification`, a felhasználó, akinek a szervizelés végrehajtására történt kísérlet akkor is elérhető.
+
+Íme egy példa egy névtelen osztállyal a MAMNotificationReceiver felület megvalósítása fogadó regisztrálása:
+
+```java
+final MAMNotificationReceiverRegistry notificationRegistry = MAMComponents.get(MAMNotificationReceiverRegistry.class);
+// create a receiver
+final MAMNotificationReceiver receiver = new MAMNotificationReceiver() {
+    public boolean onReceive(MAMNotification notification) {
+        if (notification.getType() == MAMNotificationType.COMPLIANCE_STATUS) {
+            MAMComplianceNotification complianceNotification = (MAMComplianceNotification) notification;
+            
+            // take appropriate action based on complianceNotification.getComplianceStatus()
+            
+            // unregister this receiver if no longer needed
+            notificationRegistry.unregisterReceiver(this, MAMNotificationType.COMPLIANCE_STATUS);
+        }
+        return true;
+    }
+};
+// register the receiver
+notificationRegistry.registerReceiver(receiver, MAMNotificationType.COMPLIANCE_STATUS);
+```
+
+> [!NOTE]
+> Hívása előtt regisztrálni kell az értesítést fogadó `remediateCompliance()` eredményeként az értesítés kihagyott folyamatban van a versenyhelyzet elkerülése érdekében.
+
+### <a name="implementation-notes"></a>Megvalósításhoz fűzött megjegyzések
+
+> [!NOTE]
+> Az alkalmazás `MAMServiceAuthenticationCallback.acquireToken()` metódus át kell adnia *igaz* az új `forceRefresh` jelzőt `acquireTokenSilentSync()` frissítésének kényszerítése a közvetítőtől.  Ez a tokeneket, amelyek hatással lehetnek a MAM-szolgáltatás jogkivonatok ADAL gyorsítótárazási problémája megkerüléséhez. Általában ez hasonlóan néz ki:
+```java
+AuthenticationResult result = acquireTokenSilentSync(resourceId, clientId, userId, /* forceRefresh */ true);
+```
+
+> [!NOTE]
+> Ha szeretne egy egyéni blokkoló felhasználói felület megjelenítése a javítási kísérlet során, akkor kell átadnia *hamis* showUX paraméter `remediateCompliance()`. Győződjön meg arról, hogy a felhasználói felület megjelenítése, és az értesítési figyelő hívása előtt először regisztráljon `remediateCompliance()`.  Ez megakadályozza, hogy ha az értesítés sikerült nem észlelnének. Ha versenyhelyzet `remediateCompliance()` nagyon gyorsan meghiúsul.  Ha például a `onCreate()` vagy `onMAMCreate()` egy tevékenység alosztályát módszer az értesítési figyelő regisztrálja, és ezután hívja meg az ideális hely `remediateCompliance()`.  A paraméterek `remediateCompliance()` , szándék kiegészítő funkciók a UX adható át.  A megfelelőségi állapot értesítés fogadásakor az eredmény megjelenítéséhez, vagy egyszerűen csak az a tevékenység befejezése.
+
+> [!NOTE]
+> `remediateCompliance()` regisztrálja a fiókot és próbálja meg a regisztrációt.  A fő token igényelve, miután hívása `registerAccountForMAM()` már nem szükséges, azonban nem árt, ennek során. Másrészről, ha az alkalmazás nem tudja beszerezni a jogkivonatot és távolítsa el a felhasználói fiókot kívánja, akkor kell meghívnia `unregisterAccountForMAM()` távolítsa el a fiókot, és megakadályozza a háttérben futó beléptetési újrapróbálkozásokhoz.
 
 ## <a name="protecting-backup-data"></a>Biztonságimásolat-adatok védelme
 
@@ -995,6 +1185,7 @@ Az adatok biztonsági mentésével kapcsolatos Android-útmutatóban meg van adv
 
 ### <a name="overview"></a>Áttekintés
 Az Intune App SDK alapértelmezés szerint az alkalmazás egészére alkalmazza a szabályzatot. A többszörös identitás az Intune-alkalmazásvédelem választható funkciója, amelynek engedélyezése esetén a szabályzatok identitásonként alkalmazhatók. Ez a többi alkalmazásvédelmi funkciónál jelentősen nagyobb mértékű közreműködést igényel az alkalmazástól.
+
 > [!NOTE]
 >  Az alkalmazás megfelelő közreműködésének elmulasztása adatszivárgásokat és egyéb biztonsági problémákat okozhat.
 
@@ -1003,9 +1194,10 @@ Ha a felhasználó már beléptette az eszközt vagy az alkalmazást, az SDK reg
 > [!NOTE]
 > Jelenleg eszközönként csak egy Intune által felügyelt identitás támogatott.
 
-Az identitás egyszerűen egy sztringként van definiálva. Az identitásokban **nem számítanak különbözőnek a kis- és a nagybetűk**, és az SDK nem feltétlen olyan kis- és nagybetűkkel adja vissza a tőle kért identitásokat, mint ahogyan az az identitás beállításakor eredetileg meg volt adva.
+Az identitás sztringként van definiálva. Az identitásokban **nem számítanak különbözőnek a kis- és a nagybetűk**, és az SDK nem feltétlen olyan kis- és nagybetűkkel adja vissza a tőle kért identitásokat, mint ahogyan az az identitás beállításakor eredetileg meg volt adva.
 
 Az alkalmazásnak tájékoztatnia *kell* az SDK-t, ha módosítani kívánja az aktív identitást. Egyes esetekben az SDK is értesíti az alkalmazást, ha identitásváltás szükséges. A legtöbb esetben azonban MAM nem ismeri a felhasználói felületen éppen megjelenített, vagy egy adott időben egy szálon használt adatokat, és az alkalmazásra hagyatkozik a helyes identitás beállításához az adatvesztés elkerülése érdekében. A következő szakaszokban néhány, az alkalmazás műveletét igénylő helyzetet tüntetünk fel.
+
 ### <a name="enabling-multi-identity"></a>Több identitás használatának engedélyezése
 
 Alapértelmezés szerint az összes alkalmazás egyszeres identitással rendelkező alkalmazásnak minősül. Az AndroidManifest.xml-ben elhelyezett alábbi metaadatokkal lehet jelezni, hogy egy alkalmazás képes több identitás kezelésére.
@@ -1021,12 +1213,26 @@ Alapértelmezés szerint az összes alkalmazás egyszeres identitással rendelke
 A fejlesztők (csökkenő prioritási sorrendben) a következő szinteken állíthatják be az alkalmazás identitását:
 
   1. Szál szintje
-  2. Környezet (általában tevékenység) szintje
+  2. `Context` (általában `Activity`) szint
   3. Folyamat szintje
 
-A szál szintjén beállított identitás felülírja a környezet szintjén beállított identitást, mely utóbbi felülírja a folyamat szintjén beállított identitást. A környezet szintjén beállított identitás csak a megfelelő társított esetekben használatos. A fájlok I/O műveleteihez például nem tartozik környezet. A leggyakrabban az alkalmazások állítják be az adott tevékenységre vonatkozó környezeti identitást. Az alkalmazásnak nem *kell* megjelenítenie az adatokat egy felügyelt identitás számára, hacsak a tevékenység identitása nem ugyanazon identitásra van beállítva. A folyamatszintű identitás általában csak akkor hasznos, ha az alkalmazás egyszerre csak egy-egy felhasználóval működik az összes szálon. Számos alkalmazásnak nem feltétlenül kell igénybe vennie.
+A szál szintjén beállított identitás felülírja a Context szintjén beállított identitást, és a `Context` szinten beállított identitás felülírja a folyamat szintjén beállított identitást. Szintjén beállított identitást egy `Context` csak a megfelelő társított esetekben használatos. A fájlok I/O műveleteihez például nem tartozik `Context`. Leggyakrabban az alkalmazások állítják a `Context` az identitás- `Activity`. Egy alkalmazás *kell* nem jelennek meg adatok egy felügyelt identitás, kivéve, ha a `Activity` ugyanazon identitásra van beállítva. A folyamatszintű identitás általában csak akkor hasznos, ha az alkalmazás egyszerre csak egy-egy felhasználóval működik az összes szálon. Számos alkalmazásnak nem feltétlenül kell igénybe vennie.
 
-A `MAMPolicyManager` következő metódusaival lehet beállítani az identitást, illetve beolvasni a korábban beállított identitásértékeket.
+Ha az alkalmazás használja a `Application` rendszerszolgáltatások beszerezni, győződjön meg arról, hogy a szálak és a folyamat identitása van beállítva, illetve, hogy a felhasználói felület identitása állította be az alkalmazás helyi `Application` környezetben.
+
+Az esetek kezelése, amikor frissíti a felhasználói felület identitását a `setUIPolicyIdentity` vagy `switchMAMIdentity`, mindkét módszert is át lehet adni egy `IdentitySwitchOption` értékeket.
+
+* `IGNORE_INTENT`: Akkor használja, ha Identitásváltás figyelmen kívül hagyja a célt, az aktuális tevékenység társított kér.
+  Példa:
+
+  1. Az alkalmazás megjelölésű fogad egy felügyelt identitás tartalmazó felügyelt dokumentum, és az alkalmazás megjelenik a dokumentumot.
+  2. A felhasználó a személyes identitásával vált, így az alkalmazás kéri a felhasználói felület identitásváltást. A személyes identitásával a az alkalmazás már nem jeleníti meg a dokumentumot, így `IGNORE_INTENT` az Identitásváltás kérésekor.
+
+  Ha nincs beállítva, az SDK feltételezi, hogy a legújabb leképezés továbbra is használatban van az alkalmazás. Ennek következtében az identitás a leképezés gyökérkönyvtárral beérkező adatokat, és az identitása házirendet kap.
+
+>[!NOTE]
+> Mivel a `CLIPBOARD_SERVICE` használható felhasználói felületi műveletekre, az SDK-t használja a felhasználói felület identitását az előtérben futó tevékenység a `ClipboardManager` műveleteket.
+> A `MAMPolicyManager` következő metódusaival lehet beállítani az identitást, illetve beolvasni a korábban beállított identitásértékeket.
 
 ```java
   public static void setUIPolicyIdentity(final Context context, final String identity, final MAMSetUIIdentityCallback mamSetUIIdentityCallback);
@@ -1074,7 +1280,7 @@ Az identitást beállító összes metódus a `MAMIdentitySwitchResult` objektum
 | CANCELLED | A felhasználó megszakította az identitásváltást. Ez általában úgy történik, hogy megnyomja a Vissza gombot egy PIN-kódot kérő vagy hitelesítési üzenetnél. |
 | FAILED | Az identitásváltás ismeretlen okból nem sikerült.|
 
-Az alkalmazásnak a vállalati adatok megjelenítése vagy használata előtt meg *kell* győződnie az identitásváltás sikerességéről. Jelenleg a folyamat- és a szálidentitás-váltások mindig sikeresek lesznek a több identitást támogató alkalmazások esetén, azonban fenntartjuk a jogot hibafeltételek hozzáadására. A felhasználói felület identitásváltása sikertelen lehet érvénytelen argumentumok esetén, ha az ütközne a szálidentitással, vagy ha a felhasználó a feltételes indítási követelményeit megszakítja (pl. a Vissza gombra kattint a PIN-kód képernyőn).
+Az alkalmazás biztosítania kell, hogy az Identitásváltás sikeres megjelenítése vagy a céges adatok használata előtt. Jelenleg a folyamat- és a szálidentitás-váltások mindig sikeresek lesznek a több identitást támogató alkalmazások esetén, azonban fenntartjuk a jogot hibafeltételek hozzáadására. A felhasználói felület identitásváltása sikertelen lehet érvénytelen argumentumok esetén, ha az ütközne a szálidentitással, vagy ha a felhasználó a feltételes indítási követelményeit megszakítja (pl. a Vissza gombra kattint a PIN-kód képernyőn).
 
 
 Környezet identitás beállítása esetén az eredmény aszinkron módon jelenik meg. Ha a Környezet egy tevékenység, akkor az SDK mindaddig nem tudja, hogy sikeres volt-e az identitásváltás, amíg feltételes indítás történik – itt ugyanis a felhasználónak meg kell adnia a PIN-kódját vagy vállalati hitelesítő adatait. Az alkalmazásnak az elvárások szerint egy `MAMSetUIIdentityCallback` interfészt implementálva kell fogadnia ezt az eredményt, bár ennél a paraméternél a null érték átadása is megengedett.
@@ -1088,7 +1294,7 @@ Környezet identitás beállítása esetén az eredmény aszinkron módon jeleni
 A tevékenységek identitását közvetlenül a `MAMActivity` egy metódusával, a `MAMPolicyManager.setUIPolicyIdentity` meghívása nélkül is beállíthatja. A metódus az alábbi:
 
 ```java
-     public final void switchMAMIdentity(final String newIdentity);
+     public final void switchMAMIdentity(final String newIdentity, final EnumSet<IdentitySwitchOption> options);
 ```
 
 Az `MAMActivity` osztály metódusát felül is lehet bírálni, ha azt szeretné, hogy az alkalmazás értesítést kapjon a tevékenység identitásának módosítására tett kísérletek eredményéről.
@@ -1096,6 +1302,8 @@ Az `MAMActivity` osztály metódusát felül is lehet bírálni, ha azt szeretn�
 ``` java
     public void onSwitchMAMIdentityComplete(final MAMIdentitySwitchResult result);
 ```
+
+Ha nem bírálja felül `onSwitchMAMIdentityComplete` (hívja fel a `super` metódus), a sikertelen Identitásváltás tevékenységet a folyamatban, befejezett tevékenység eredményez. Ha a metódus bírálja felül, akkor ügyelnie kell arra, hogy a céges adatok nem jelenik meg a sikertelen Identitásváltás után.
 
 >[!NOTE]
 > Előfordulhat, hogy az identitásváltás után újból létre kell hozni a tevékenységet. Ebben az esetben a `onSwitchMAMIdentityComplete` visszahívása lesz elküldve a tevékenység új példányának.
@@ -1148,11 +1356,11 @@ Az alkalmazás identitásbeállítási képessége mellett a szálak és a körn
     }
     ```
 
-    Az ```AppIdentitySwitchResult``` értéke vagy SUCCESS, vagy FAILURE.
+    Az ```AppIdentitySwitchResult``` értéke `SUCCESS` vagy `FAILURE`.
 
 Az `onMAMIdentitySwitchRequired` metódus hívandó az összes implicit identitásváltás esetében, kivéve azokat, amelyek a `MAMService.onMAMBind` által visszaadott Binderen keresztül történtek. Az `onMAMIdentitySwitchRequired` alapértelmezett implementációi a következő metódusokat hívják meg azonnal:
 
-* `reportIdentitySwitchResult(FAILURE)` – ha az ok RESUME_CANCELLED.
+* `reportIdentitySwitchResult(FAILURE)` Ha a hiba oka `RESUME_CANCELLED`.
 
 * `reportIdentitySwitchResult(SUCCESS)` – minden más esetben.
 
@@ -1162,25 +1370,29 @@ Az `onMAMIdentitySwitchRequired` metódus hívandó az összes implicit identit�
 
   * Ha egy szolgáltatás a főszálon fut, a `reportIdentitySwitchResult` hívását **kötelező** szinkron módon végrehajtani, ellenkező esetben a felhasználói felület szála leáll.
 
-  * **Tevékenység** létrehozásakor az `onMAMIdentitySwitchRequired` hívása megelőzi az `onMAMCreate` hívását. Ha az alkalmazásnak felhasználói felületet kell megjelenítenie annak megállapításához, hogy engedélyezhető-e az identitásváltás, akkor az adott felhasználói felületet *egy másik* tevékenységgel kell megjeleníteni.
+  * A **`Activity`** létrehozását, `onMAMIdentitySwitchRequired` hívása előtt `onMAMCreate`. Ha az alkalmazásnak felhasználói felületet kell megjelenítenie annak megállapításához, hogy engedélyezhető-e az identitásváltás, akkor az adott felhasználói felületet *egy másik* tevékenységgel kell megjeleníteni.
 
-  * Amikor egy **tevékenységben** az üres identitásra való váltás oka RESUME_CANCELLED, akkor az alkalmazásnak módosítania kell a folytatott tevékenységet, hogy az adatmegjelenítés az adott identitásváltásnak megfelelő legyen.  Ha ez nem lehetséges, az alkalmazásnak el kell utasítania a váltást, és újból kérnie kell a felhasználót a folytatáshoz használt identitás szabályzatának teljesítésére (például a PIN-kód megadását kérő képernyőt megjelenítve).
+  * Az egy **`Activity`**, ha az üres identitásra való váltás kérése történik a, `RESUME_CANCELLED`, az alkalmazásnak módosítania kell a folytatott tevékenységet, hogy az adatmegjelenítés az adott identitásváltásnak.  Ha ez nem lehetséges, az alkalmazásnak el kell utasítania a váltást, és újból kérnie kell a felhasználót a folytatáshoz használt identitás szabályzatának teljesítésére (például a PIN-kód megadását kérő képernyőt megjelenítve).
 
     > [!NOTE]
     > A többszörös identitást támogató alkalmazások mindig fogadják a felügyelt és a nem felügyelt alkalmazásoktól érkező adatokat. Az alkalmazás feladata, hogy felügyelt módon kezelje a felügyelt identitásokból érkező adatokat.
 
   Ha a kért identitás felügyelt (ezt a `MAMPolicyManager.getIsIdentityManaged` metódussal lehet ellenőrizni), de az alkalmazás nem tudja használni a fiókot (például mert a fiókokat, így az e-mail-fiókokat először be kell állítani az alkalmazásban), akkor el kell utasítania az identitásváltást.
+
 #### <a name="build-plugin--tool-considerations"></a>A build beépülő modullal/-eszközzel kapcsolatos szempontok
-Ha nem örököl explicit módon a `MAMActivity`, a `MAMService` vagy a `MAMContentProvider` osztálytól (mert engedélyezi a build-eszközök számára a változtatást), de továbbra is fel kell dolgoznia az identitáskapcsolókat, akkor ehelyett implementálhatja a `MAMActivityIdentityRequirementListener` osztályt (a tevékenységekhez) vagy a `MAMIdentityRequirementListener` osztályt (a szolgáltatásokhoz és a tartalomszolgáltatókhoz). A `MAMActivity.onMAMIdentitySwitchRequired` alapértelmezett viselkedése a `MAMActivity.defaultOnMAMIdentitySwitchRequired(activity, identity,
+Ha Ön nem explicit módon öröklik `MAMActivity`, `MAMService`, vagy `MAMContentProvider` (mivel engedélyezi a build azokat az eszközöket, győződjön meg arról, hogy a módosítás), azonban továbbra is szeretné feldolgozni váltások, előfordulhat, hogy inkább megvalósítása `MAMActivityIdentityRequirementListener` (az egy `Activity`) vagy `MAMIdentityRequirementListener` (az egy `Service` vagy `ContentProviders`).
+A `MAMActivity.onMAMIdentitySwitchRequired` alapértelmezett viselkedése a `MAMActivity.defaultOnMAMIdentitySwitchRequired(activity, identity,
 reason, callback)` statikus metódus meghívásával érhető el.
 
 Ehhez hasonlóan, ha felül kell bírálnia a `MAMActivity.onSwitchMAMIdentityComplete` osztályt, akkor implementálhatja a `MAMActivityIdentitySwitchListener` osztályt anélkül, hogy explicit módon örökölné a `MAMActivity` osztálytól.
 
 ### <a name="preserving-identity-in-async-operations"></a>Identitás megőrzése aszinkron műveleteknél
 Gyakran előfordul a felhasználói felület szálán végrehajtott műveleteknél, hogy más szálaknak adnak át háttérfeladatokat. A többszörös identitást támogató alkalmazásoknak biztosítaniuk kell, hogy ezek a háttérfeladatok a megfelelő identitással fussanak, mely gyakran megegyezik az átadást végző tevékenység identitásával. A MAM SDK a `MAMAsyncTask` és a `MAMIdentityExecutors` osztály biztosításával nyújt segítséget az identitás megőrzéséhez.
+Ezek kell használni, ha az aszinkron művelet sikerült írni a vállalati adatokat egy fájlba, vagy más alkalmazások kommunikál.
+
 #### <a name="mamasynctask"></a>MAMAsyncTask
 
-A `MAMAsyncTask` osztály használatához egyszerűen ebből az osztályból származtassa a saját osztályát az AsyncTask osztály helyett, és cserélje le a `doInBackground` és a `onPreExecute` metódus felülbírálását a `doInBackgroundMAM` és a `onPreExecuteMAM` metódus felülbírálására. A `MAMAsyncTask` konstruktorának paramétereként meg kell adnia a tevékenység kontextusát. Példa:
+Használandó `MAMAsyncTask`, egyszerűen ebből az helyett `AsyncTask` cserélje le a beállítás felülbírálja a `doInBackground` és `onPreExecute` a `doInBackgroundMAM` és `onPreExecuteMAM` jelölik. A `MAMAsyncTask` konstruktorának paramétereként meg kell adnia a tevékenység kontextusát. Példa:
 
 ```java
   AsyncTask<Object, Object, Object> task = new MAMAsyncTask<Object, Object, Object>(thisActivity) {
@@ -1207,85 +1419,92 @@ A `MAMIdentityExecutors` osztály segítségével az `Executor`- és `ExecutorSe
 
 Amikor létrehozza a fájlokat, a rendszer identitást társít hozzájuk a szál és a folyamat identitása alapján. Ez az identitás lesz használva a fájltitkosításhoz és a szelektív törléshez is. Csak azok a fájlok lesznek titkosítva, amelyek identitása felügyelt, és szabályzata előírja a titkosítást. Az SDK alapértelmezett szelektív törlése csak azokat a felügyelt identitáshoz tartozó fájlokat fogja törölni, amelyekre törlést kértek. Az alkalmazás a `MAMFileProtectionManager` osztállyal kérdezheti le vagy módosíthatja a fájlok identitását.
 
-  ```java
-    public final class MAMFileProtectionManager {
+```java
+public final class MAMFileProtectionManager {
 
-        /**
-         * Protect a file. This will synchronously trigger whatever protection is required for the 
-         * file, and will tag the file for future protection changes.
-         *
-         * @param identity
-         *            Identity to set.
-         * @param file
-         *            File to protect.
-         * @throws IOException
-         *             If the file cannot be changed.
-         */
-        public static void protect(final File file, final String identity) throws IOException;
+   /**
+    * Protect a file or directory. This will synchronously trigger whatever protection is required for the file, and will tag the
+    * file for future protection changes. If an identity is set on a directory, it is set recursively on all files and
+    * subdirectories. New files or directories will inherit their parent directory's identity. If MAM is operating in offline mode,
+    * this method will silently do nothing.
+    *
+    * @param identity
+    *       Identity to set.
+    * @param file
+    *       File to protect.
+    *
+    * @throws IOException
+    *       If the file cannot be protected.
+    */
+   public static void protect(final File file, final String identity) throws IOException;
 
-       /**
-         * Protect a file obtained from a content provider. This is intended to be used for
-         * sdcard (whether internal or removable) files accessed through the Storage Access Framework.
-         * It may also be used with descriptors referring to private files owned by this app.
-         * It is not intended to be used for files owned by other apps and such usage will fail. If
-         * creating a new file via a content provider exposed by another MAM-integrated app, the new
-         * file identity will automatically be set correctly if the ContentResolver in use was
-         * obtained via a Context with an identity or if the thread identity is set.
-         *
-         * This will synchronously trigger whatever protection is required for the file, and will tag
-         * the file for future protection changes. If an identity is set on a directory, it is set
-         * recursively on all files and subdirectories. If MAM is operating in offline mode, this
-         * method will silently do nothing.
-         *
-         * @param identity
-         *            Identity to set.
-         * @param file
-         *            File to protect.
-         *
-         * @throws IOException
-         *             If the file cannot be protected.
-         */
-        public static void protect(final ParcelFileDescriptor file, final String identity) throws IOException;
+   /**
+     * Protect a file obtained from a content provider. This is intended to be used for
+     * sdcard (whether internal or removable) files accessed through the Storage Access Framework.
+     * It may also be used with descriptors referring to private files owned by this app.
+     * It is not intended to be used for files owned by other apps and such usage will fail. If
+     * creating a new file via a content provider exposed by another MAM-integrated app, the new
+     * file identity will automatically be set correctly if the ContentResolver in use was
+     * obtained via a Context with an identity or if the thread identity is set.
+     *
+     * This will synchronously trigger whatever protection is required for the file, and will tag
+     * the file for future protection changes. If an identity is set on a directory, it is set
+     * recursively on all files and subdirectories. If MAM is operating in offline mode, this
+     * method will silently do nothing.
+     *
+     * @param identity
+     *            Identity to set.
+     * @param file
+     *            File to protect.
+     *
+     * @throws IOException
+     *             If the file cannot be protected.
+     */
+    public static void protect(final ParcelFileDescriptor file, final String identity) throws IOException;
 
-       /**
-        * Get the protection info on a file.
-        *
-        * @param file
-        *            File or directory to get information on.
-        * @return File protection info, or null if there is no protection info.
-        * @throws IOException
-        *             If the file cannot be read or opened.
-        */
-        public static MAMFileProtectionInfo getProtectionInfo(final File file) throws IOException;
+   /**
+    * Get the protection info on a file.
+    *
+    * @param file
+    *            File or directory to get information on.
+    * @return File protection info, or null if there is no protection info.
+    * @throws IOException
+    *             If the file cannot be read or opened.
+    */
+    public static MAMFileProtectionInfo getProtectionInfo(final File file) throws IOException;
 
-       /**
-        * Get the protection info on a file.
-        *
-        * @param file
-        *            File or directory to get information on.
-        * @return File protection info, or null if there is no protection info.
-        * @throws IOException
-        *             If the file cannot be read or opened.
-        */
-        public static MAMFileProtectionInfo getProtectionInfo(final ParcelFileDescriptor file) throws IOException;
+   /**
+    * Get the protection info on a file.
+    *
+    * @param file
+    *            File or directory to get information on.
+    * @return File protection info, or null if there is no protection info.
+    * @throws IOException
+    *             If the file cannot be read or opened.
+    */
+    public static MAMFileProtectionInfo getProtectionInfo(final ParcelFileDescriptor file) throws IOException;
 
-    }
+}
 
-    public interface MAMFileProtectionInfo {
-        String getIdentity();
-    }
-  ```
+public interface MAMFileProtectionInfo {
+    String getIdentity();
+}
+ ```
+
 #### <a name="app-responsibility"></a>Alkalmazás feladatköre
 A MAM nem következtethet automatikusan kapcsolatra a beolvasott fájlok és egy `Activity` által megjelenített adatok között. Az alkalmazásoknak a vállalati adatok megjelenítése előtt be *kell* állítaniuk a megfelelő felhasználóifelület-identitást. Ez érvényes a fájlokból beolvasott adatokra is. Az alkalmazáson kívüli forrásból (ami lehet egy `ContentProvider` vagy egy nyilvánosan írható hely) származó fájlok esetén az alkalmazásnak meg *kell* kísérelnie a fájl identitásának megállapítását (a `MAMFileProtectionManager.getProtectionInfo` használatával), mielőtt megjelenítené a fájlból beolvasott információt. Ha a `getProtectionInfo` nem null, nem üres identitást jelez, a felhasználói felület identitását azzal egyezőre *kell* beállítani (a `MAMActivity.switchMAMIdentity` vagy a `MAMPolicyManager.setUIPolicyIdentity` használatával). Ha az identitásváltás nem sikerül, a fájl adatait *nem szabad* megjeleníteni.
 
 A folyamat lehet például a következőhöz hasonló:
-  * A felhasználó kiválaszt egy, az alkalmazásban megnyitandó dokumentumot.
+  * Felhasználó kiválasztja az alkalmazásban megnyitandó dokumentumot.
   * A megnyitási folyamat során az adatok a lemezről való beolvasása előtt az alkalmazás ellenőrzi a tartalom megjelenítésére használandó identitást.
     * MAMFileProtectionInfo info = MAMFileProtectionManager.getProtectionInfo(docPath)
     * if(info)   MAMPolicyManager.setUIPolicyIdentity(activity, info.getIdentity(), callback)
     * Az alkalmazás megvárja, amíg a visszahívás egy eredményt jelez.
     * Ha a jelentett eredmény hiba, az alkalmazás nem jeleníti meg a dokumentumot.
-  * Az alkalmazás megnyílik, és az egész fájlt megjeleníti.
+  * Az alkalmazás megnyílik, és rendereli a fájlt.
+  
+#### <a name="single-identity-to-multi-identity-transition"></a>A többszörös identitás váltania egyszeres identitással
+Ha egy alkalmazást, amely korábban kiadott integrált egyszeres identitást Intune-nal később integrálható a többszörös identitás, a korábban telepített alkalmazások tapasztalható átmenet (a felhasználó számára nem látható, ott nem nincs társított UX). Az alkalmazás nincs *szükséges* explicit módon kezelje az átállás semmit. Az átállás továbbra is visszatérhetnek előtt létrehozott összes fájl Írországból induló szolgáltatásnak kezelt (tehát ezek titkosított marad, a titkosítási házirend esetén). Ha szükséges, a frissítés észleléséhez és használata `MAMFileProtectionManager.protect` címkézése meghatározott fájlokat és könyvtárakat az üres identitáshoz (ezzel a művelettel eltávolítja a titkosítást, ha azok titkosítva).
 
 #### <a name="offline-scenarios"></a>Kapcsolat nélküli forgatókönyvek
 
@@ -1305,7 +1524,8 @@ A könyvtárakat is a fájlok védelmére szolgáló `protect` metódussal lehet
 
 A fájlok nem címkézhetők meg több identitáshoz tartozó fájlként. Azok az alkalmazások, amelyeknek egy fájlban kell tárolniuk különböző felhasználók adatait, manuálisan tehetik meg ezt a `MAMDataProtectionManager` által biztosított szolgáltatásokkal. Ez lehetővé teszi az alkalmazás számára az adatok titkosítását és hozzákötését egy adott felhasználóhoz. A titkosított adatok lemezen, fájlban tárolhatók. Az identitáshoz tartozó adatokat lekérdezheti, és az adatokat visszafejtheti.
 
-A `MAMDataProtectionManager` osztályt hasznosító alkalmazásoknak fogadót kell implementálniuk a `MANAGEMENT_REMOVED` értesítéshez. Az értesítés lefutása után az ezen osztállyal védett pufferek nem lesznek olvashatóak, ha a fájltitkosítást a pufferek védett állapotában kapcsolták be. Az alkalmazás úgy tudja megoldani ezt a problémát, ha az értesítés időtartama alatt az összes pufferen meghívja a MAMDataProtectionManager.unprotect metódust. Ne feledje, hogy az értesítés időtartama alatt a protect metódust is biztonságosan meg lehet hívni, ha az identitásadatokat meg szeretnék őrizni – a titkosítás ez idő alatt garantáltan le van tiltva.
+A `MAMDataProtectionManager` osztályt hasznosító alkalmazásoknak fogadót kell implementálniuk a `MANAGEMENT_REMOVED` értesítéshez. Az értesítés lefutása után az ezen osztállyal védett pufferek nem lesznek olvashatóak, ha a fájltitkosítást a pufferek védett állapotában kapcsolták be. Egy alkalmazás meghívásával javítani tudja ezt a helyzetet `MAMDataProtectionManager.unprotect` az összes pufferen az értesítés időtartama alatt. Az értesítés időtartama alatt a protect metódust is biztonságosan meg lehet hívni, ha az identitásadatokat meg szeretnék őrizni – a titkosítás ez idő alatt garantáltan le van tiltva.
+
 
 ```java
 
@@ -1402,24 +1622,32 @@ public final class MAMDataProtectionManager {
 
 ### <a name="content-providers"></a>Tartalomszolgáltatók
 
-Ha az alkalmazás a **ParcelFileDescriptor** elemtől különböző vállalati adatokat szolgáltat egy **ContentProvider** objektumon keresztül, akkor az alkalmazásnak a `MAMContentProvider` osztály `isProvideContentAllowed(String)` metódusát meghívva kell átadnia a tartalomtulajdonos identitás UPN-jét (egyszerű felhasználónevét). Ha ez a függvény hamis értéket ad vissza, akkor a tartalmat *nem szabad* visszaadnia a hívónak. A tartalomszolgáltatón keresztül visszaadott fájlleírók kezelése automatikusan a fájl identitása alapján történik.
+Ha az alkalmazás nem biztosít a vállalati adatokat egy `ParcelFileDescriptor` keresztül egy `ContentProvider`, az alkalmazás metódusát meghívva kell `isProvideContentAllowed(String)` a `MAMContentProvider`, átmenő identitás UPN (egyszerű felhasználónév), a tartalom. Ha ez a függvény hamis értéket ad vissza, akkor a tartalmat *nem szabad* visszaadnia a hívónak. A tartalomszolgáltatón keresztül visszaadott fájlleírók kezelése automatikusan a fájl identitása alapján történik.
+
+Ha Ön nem öröklődnek `MAMContentProvider` explicit módon, és ehelyett lehetővé teszi a build azokat az eszközöket, győződjön meg arról, hogy a módosítás, előfordulhat, hogy egy statikus verziója ugyanezt a módszert hívja: `MAMContentProvider.isProvideContentAllowed(provider, contentIdentity)`.
 
 ### <a name="selective-wipe"></a>Szelektív törlés
 
 Ha egy többidentitású alkalmazás regisztrál a `WIPE_USER_DATA` értesítésekre, akkor az alkalmazás felelőssége, hogy eltávolítsa a törölt felhasználóhoz tartozó összes adatot, ideértve az összes olyan fájlt is, amely meg lett jelölve az adott felhasználói identitáshoz tartozóként. Ha az alkalmazás eltávolítja a felhasználói adatokat egy fájlból, de a fájl többi adatát meg kívánja őrizni, akkor *mindenképp* meg kell változtatnia a fájl identitását (egy személyes felhasználóra vagy egy üres identitásra, a `MAMFileProtectionManager.protect` segítségével). Ha használ titkosítási szabályzatot, akkor a felhasználóhoz tartozó törlendő fájlokat a rendszer nem fejti vissza, és így ezek tartalma elérhetetlen lesz az alkalmazás számára a törlés után.
 
-A `WIPE_USER_DATA` értesítésekre regisztráló alkalmazások nem részesülnek az SDK alapértelmezett szelektív törlési funkciójának előnyeiben. A többidentitásos alkalmazások esetében ez nagyobb jelentőségű tényező lehet, mivel a MAM alapértelmezett szelektív törlése csak a törlendő identitáshoz tartozó fájlokat fogja törölni. Ha a többidentitásos alkalmazás szeretné végrehajtatni a MAM alapértelmezett szelektív törlését, _**és**_ ezenfelül saját törlési műveleteit is végre szeretné hajtani, akkor célszerű feliratkoznia a `WIPE_USER_AUXILIARY_DATA` értesítésekre. Ezt az értesítést az SDK közvetlenül azelőtt küldi el, hogy végrehajtaná a MAM alapértelmezett szelektív törlési műveletét. Egyazon alkamazásnak nem szabad mind a WIPE_USER_DATA, mind a WIPE_USER_AUXILIARY_DATA értesítésre feliratkoznia.
+A `WIPE_USER_DATA` értesítésekre regisztráló alkalmazások nem részesülnek az SDK alapértelmezett szelektív törlési funkciójának előnyeiben. A többidentitásos alkalmazások esetében ez nagyobb jelentőségű tényező lehet, mivel a MAM alapértelmezett szelektív törlése csak a törlendő identitáshoz tartozó fájlokat fogja törölni. Ha a többidentitásos alkalmazás szeretné végrehajtatni a MAM alapértelmezett szelektív törlését, _**és**_ ezenfelül saját törlési műveleteit is végre szeretné hajtani, akkor célszerű feliratkoznia a `WIPE_USER_AUXILIARY_DATA` értesítésekre. Ezt az értesítést az SDK közvetlenül azelőtt küldi el, hogy végrehajtaná a MAM alapértelmezett szelektív törlési műveletét. Az alkalmazások nem regisztrálhatnak mindkét `WIPE_USER_DATA` és `WIPE_USER_AUXILIARY_DATA`.
+
+Az alapértelmezett szelektív törlésének fog zárja be az alkalmazás szabályosan, tevékenységek befejezése és alkalmazás folyamatának leállítása. Ha az alkalmazás felülírja az alapértelmezett seletive törlése, érdemes zárja be az alkalmazást, hogy manuálisan megakadályozza, hogy a felhasználó memórián belüli adathozzáférés után a törlést.
 
 
 ## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>Célzott MAM-konfiguráció engedélyezése Android-alkalmazásokhoz (nem kötelező)
-Az alkalmazásspecifikus kulcs-érték párok az Intune-konzolon konfigurálhatók. A kulcs-érték párokat az Intune nem értelmezi, hanem egyszerűen továbbadja az alkalmazásnak. Azon alkalmazások, amelyek ilyen konfigurációt kívánnak kapni, a `MAMAppConfigManager` és `MAMAppConfig` osztályokat használhatják ehhez. Ha több szabályzat ugyanazon alkalmazást célozza, valószínűleg több ütköző érték érhető el ugyanazon kulcshoz.
+Alkalmazásspecifikus kulcs-érték párokat az Intune-konzolon konfigurálhatók [MAM-TUDJUK](https://docs.microsoft.com/intune/app-configuration-policies-managed-app) és [Androidos munkahelyi profil alkalmazások](https://docs.microsoft.com/intune/app-configuration-policies-use-android).
+A kulcs-érték párokat az Intune nem értelmezi, hanem továbbadja az alkalmazásnak. Azon alkalmazások, amelyek ilyen konfigurációt kívánnak kapni, a `MAMAppConfigManager` és `MAMAppConfig` osztályokat használhatják ehhez. Ha több szabályzat ugyanazon alkalmazást célozza, valószínűleg több ütköző érték érhető el ugyanazon kulcshoz.
+
+> [!NOTE] 
+> Konfigurációk a MAM-n keresztül történő továbbítását beállítása – nem lehet, hogy a delievered `offline`.  Csak az Android Enterprise AppRestrictions kézbesítése egy `MAMUserNotification` az ebben az esetben egy üres identitásra.
 
 ### <a name="example"></a>Példa
 ```java
 MAMAppConfigManager configManager = MAMComponents.get(MAMAppConfigManager.class);
 String identity = "user@contoso.com"
 MAMAppConfig appConfig = configManager.getAppConfig(identity);
-LOGGER.info("App Config Data = " + (appConfig == null ? "null" : appConfig.getFullData()));
+LOGGER.info("App Config Data = " + appConfig.getFullData());
 String valueToUse = null;
 if (appConfig.hasConflict("foo")) {
     List<String> values = appConfig.getAllStringsForKey("foo");
@@ -1434,124 +1662,15 @@ if (appConfig.hasConflict("foo")) {
 LOGGER.info("Found value " + valueToUse);
 ```
 
-### <a name="mamappconfig-reference"></a>MAMAppConfig hivatkozás
-
-```java
-public interface MAMAppConfig {
-    /**
-     * Conflict resolution types for Boolean values.
-     */
-    enum BooleanQueryType {
-        /**
-         * In case of conflict, arbitrarily picks one. This is not guaranteed to return the same value every time.
-         */
-        Any,
-        /**
-         * In case of conflict, returns true if any of the values are true.
-         */
-        Or,
-        /**
-         * In case of conflict, returns false if any of the values are false.
-         */
-        And
-    }
-
-    /**
-     * Conflict resolution types for integer and double values.
-     */
-    enum NumberQueryType {
-        /**
-         * In case of conflict, arbitrarily picks one. This is not guaranteed to return the same value every time.
-         */
-        Any,
-        /**
-         * In case of conflict, returns the minimum Integer.
-         */
-        Min,
-        /**
-         * In case of conflict, returns the maximum Integer.
-         */
-        Max
-    }
-
-    /**
-     * Conflict resolution types for Strings.
-     */
-    enum StringQueryType {
-        /**
-         * In case of conflict, arbitrarily picks one. This is not guaranteed to return the same value every time.
-         */
-        Any,
-        /**
-         * In case of conflict, returns the first result ordered alphabetically.
-         */
-        Min,
-        /**
-         * In case of conflict, returns the last result ordered alphabetically.
-         */
-        Max
-    }
-
-    /**
-     * Retrieve the List of Dictionaries containing all the custom
-     *  config data sent by the MAMService. This will return every
-     * Application Configuration setting available for this user, one
-     *  mapping for each policy applied to the user.
-     */
-    List<Map<String, String>> getFullData();
-
-    /**
-     * Returns true if there is more than one targeted custom config setting for the key provided. 
-     */
-    boolean hasConflict(String key);
-
-    /**
-     * @return a Boolean value for the given key if it can be coerced into a Boolean, or 
-     * null if none exists or it cannot be coerced.
-     */
-    Boolean getBooleanForKey(String key, BooleanQueryType queryType);
-
-    /**
-     * @return a Long value for the given key if it can be coerced into a Long, or null if none exists or it cannot be coerced.
-     */
-    Long getIntegerForKey(String key, NumberQueryType queryType);
-
-    /**
-     * @return a Double value for the given key if it can be coerced into a Double, or null if none exists or it cannot be coerced.
-     */
-    Double getDoubleForKey(String key, NumberQueryType queryType);
-
-    /**
-     * @return a String value for the given key, or null if none exists.
-     */
-    String getStringForKey(String key, StringQueryType queryType);
-
-    /**
-     * Like getBooleanForKey except returns all values if multiple are present.
-     */
-    List<Boolean> getAllBooleansForKey(String key);
-
-    /**
-     * Like getIntegerForKey except returns all values if multiple are present.
-     */
-    List<Long> getAllIntegersForKey(String key);
-
-    /**
-     * Like getDoubleForKey except returns all values if multiple are present.
-     */
-    List<Double> getAllDoublesForKey(String key);
-
-    /**
-     * Like getStringForKey except returns all values if multiple are present.
-     */
-    List<String> getAllStringsForKey(String key);
-}
-```
-
 ### <a name="notification"></a>Értesítés
 Az alkalmazás konfigurációja egy új értesítéstípust ad hozzá:
 * **REFRESH_APP_CONFIG**: Ezt az értesítést a `MAMUserNotification` és tájékoztatja az alkalmazást, hogy új alkalmazáskonfigurációs adatok érhető el.
 
+További információ a Graph API funkcióiról: [Graph API-segédlet](https://developer.microsoft.com/graph/docs/concepts/overview). <br>
+
+A célzott MAM-alkalmazáskonfigurációs szabályzat Android rendszerben való létrehozásáról lásd [A Microsoft Intune alkalmazáskonfigurációs szabályzatainak használata Android rendszerben](https://docs.microsoft.com/intune/app-configuration-policies-use-android) célzott MAM-alkalmazáskonfigurációról szóló szakaszát.
+
+### <a name="further-reading"></a>További információk
 További információ a Graph API funkcióiról: [Graph API-segédlet](https://developer.microsoft.com/graph/docs/concepts/overview). <br>
 
 A célzott MAM-alkalmazáskonfigurációs szabályzat Android rendszerben való létrehozásáról lásd [A Microsoft Intune alkalmazáskonfigurációs szabályzatainak használata Android rendszerben](https://docs.microsoft.com/intune/app-configuration-policies-use-android) célzott MAM-alkalmazáskonfigurációról szóló szakaszát.
@@ -1593,48 +1712,33 @@ Alább felsoroljuk az összes megengedett stílusattribútumot, az általuk szab
 | Alkalmazás emblémája | Az Intune PIN-kódot bekérő képernyőjén megjelenő nagy ikon | logo_image | Rajzolható |
 
 ## <a name="default-enrollment-optional"></a>Alapértelmezés szerinti regisztráció (választható)
-<!-- Requiring user login prompt for an automatic APP-WE service enrollment, requiring Intune app protection policies in order to use your SDK-integrated Android LOB app, and enabling ADAL SSO (optional) -->
 
 Az alábbiakban útmutatást találhat egy APP-WE szolgáltatás automatikus regisztrációjához szükséges, az alkalmazásindításkor megjelenő felhasználói kérés beállításához (ebben a szakaszban erre **alapértelmezett regisztráció** néven hivatkoztunk), valamint ahhoz, hogy hogyan kényszerítheti az Intune alkalmazásvédelmi szabályzatait, hogy csak az Intune által védett felhasználók használhassák a SDK-val integrált Android LOB-alkalmazást. A cikk emellett ismerteti, hogyan engedélyezhető az SSO az SDK-val integrált Android LOB-alkalmazáshoz. Ezt **nem** támogatják azok az áruházbeli alkalmazások, amelyeket nem Intune-felhasználók is használhatnak.
 
 > [!NOTE] 
 > Az **alapértelmezett regisztráció** előnyei közé tartozik egy egyszerűsített módszer az eszközön található alkalmazás az APP-WE szolgáltatástól lekért szabályzatához.
 
-### <a name="general-requirements"></a>Általános követelmények
-* Az [Általános ADAL-konfigurációk #2](https://docs.microsoft.com/intune/app-sdk-android#common-adal-configurations) című cikkben leírt lépések végrehajtásával győződjön meg arról, hogy alkalmazása regisztrálva van az Intune mobilalkalmazás-kezelési szolgáltatásban.
+> [!NOTE] 
+> **Alapértelmezett regisztrációs** szuverén felhő tudatában van.
 
-### <a name="working-with-the-intune-sdk"></a>Az Intune SDK használata
-Ezek az utasítások minden olyan Android- és Xamarin-alkalmazásfejlesztőnek szólnak, akik az alkalmazás által a végfelhasználói eszközökön használandó Intune-alkalmazásvédelmi szabályzatokat szeretnének kérni.
+Az alábbi lépéseket követve az alapértelmezett regisztráció engedélyezéséhez:
 
-1. Konfigurálja az ADAL-t az [Androidos Intune SDK útmutatójában](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal) megadott lépések alapján.
-   > [!NOTE] 
-   > Az alkalmazáshoz tartozó „ügyfél-azonosító” kifejezés megfelel az Azure Portal-alkalmazásazonosítónak. 
-2. Az SSO engedélyezéséhez a 2. „Common ADAL configurationre” van szükség.
-
-3. Az alapértelmezett regisztráció engedélyezéséhez írja az alábbi értéket a jegyzékfájlba:
-   ```xml
+1. Ha az alkalmazás integrálja az adal-t vagy az egyszeri Bejelentkezéssel, engedélyeznie kell a [konfigurálása adal-t](#configure-azure-active-directory-authentication-library-adal) következő [common ADAL konfigurációs](#common-adal-configurations) #2. Ha nem, előfordulhat, hogy kihagyja ezt a lépést.
+   
+2. Az alapértelmezett regisztráció engedélyezéséhez írja az alábbi értéket a jegyzékfájlba:
+   ```xml 
    <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
    ```
    > [!NOTE] 
-   > Ez lehet az alkalmazás egyetlen MAM-WE-integrációja. Ha az alkalmazás többször próbál meg MAMEnrollmentManager API-kat hívni, problémák merülhetnek fel.
+   > Ez lehet az alkalmazás egyetlen MAM-WE-integrációja. Ha bármilyen más próbálkozás történik MAMEnrollmentManager API-k hívására, problémák merülnek fel.
 
-4. A szükséges MAM-szabályzat engedélyezéséhez írja az alábbi értéket a jegyzékfájlba:
-   ```xml
+3. A szükséges MAM-szabályzat engedélyezéséhez írja az alábbi értéket a jegyzékfájlba:
+   ```xml 
    <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
    ```
    > [!NOTE] 
    > Ez kényszeríti a felhasználót, hogy letöltse a Céges portált az eszközre, és a használat előtt elvégezze az alapértelmezett regisztrációt.
-   >
-   > Ez lehet az alkalmazás egyetlen MAM-WE-integrációja. Ha bármilyen más próbálkozás történik MAMEnrollmentManager API-k hívására, problémák merülnek fel.
 
-3. A szükséges MAM-szabályzat engedélyezéséhez írja az alábbi értéket a jegyzékfájlba:
-
-   ```xml
-   <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
-   ```
-
-> [!NOTE] 
-> Ez kényszeríti a felhasználót, hogy letöltse a Céges portált az eszközre, és a használat előtt elvégezze az alapértelmezett regisztrációt.
 
 ## <a name="limitations"></a>Korlátozások
 
@@ -1647,9 +1751,7 @@ A [ProGuard](http://proguard.sourceforge.net/) nélkül futó nagyméretű kódb
 
 ### <a name="policy-enforcement-limitations"></a>Szabályzatbetartatási korlátozások
 
-* **Képernyőfelvétel**: Az SDK nem tud új képernyőfelvétel-érték beállítás a tevékenységeknél, amelyeknél már lefutott az Activity.oncreate kikényszeríteni. Ez olyan időszakot eredményezhet, amikor az alkalmazás a képernyőfelvételek letiltására lett konfigurálva, de továbbra is lehet képernyőfelvételt készíteni.
-
-* **Tartalomfeloldók használata**: Az "átvitel vagy fogadás" Intune-szabályzatot előfordulhat, hogy részben vagy teljesen blokkolhatja eléréséhez a tartalomfeloldóknak a más alkalmazások tartalomszolgáltatójának használatát. Ennek következtében a ContentResolver metódusok null vagy hibaértéket fognak visszaadni (például az `openOutputStream` a `FileNotFoundException` kivételhibát fogja okozni, ha blokkolva van). Az alkalmazás a következő hívással állapíthatja meg, hogy a tartalomfeloldón keresztüli adatírás sikertelenségét házirend okozta (vagy hogy egy házirend ilyen hibát okozna):
+* **Tartalomfeloldók használata**: Az "átvitel vagy fogadás" Intune-szabályzatot előfordulhat, hogy részben vagy teljesen blokkolhatja eléréséhez a tartalomfeloldóknak a más alkalmazások tartalomszolgáltatójának használatát. Ennek következtében `ContentResolver` metódusok null vagy hibaértéket értéket (például `openOutputStream` kivételt fogja kijelezni `FileNotFoundException` Ha blokkolva van). Az alkalmazás a következő hívással állapíthatja meg, hogy a tartalomfeloldón keresztüli adatírás sikertelenségét házirend okozta (vagy hogy egy házirend ilyen hibát okozna):
     ```java
     MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(contentURI);
     ```
@@ -1669,7 +1771,7 @@ A [ProGuard](http://proguard.sourceforge.net/) nélkül futó nagyméretű kódb
 Egyes MAM-alaposztályok (például MAMActivity és MAMDocumentsProvider) olyan metódusokat tartalmaznak (az eredeti Android-alaposztályok alapján), amelyek paraméter- és visszatérési típusai csak bizonyos API-szintek felett érhetők el. Ezen okból kifolyólag nem mindig enumerálható reflexióval az alkalmazás-összetevők összes metódusa. Ez a korlátozás nemcsak a MAM-ra érvényes, hanem akkor is jelentkezne, ha az alkalmazás saját maga implementálná az adott metódusokat az Android-alaposztályokból.
 
 ### <a name="robolectric"></a>Robolectric
-A MAM SDK-funkcionalitás Robolectric keretrendszerrel való tesztelése nem támogatott. A MAM SDK kit Robelectric alatti futtatásával kapcsolatban több probléma is ismert, melyeknek az oka az, hogy a Robelectric nem utánozza pontosan a valódi eszközök és emulátorok működését.
+A MAM SDK-funkcionalitás Robolectric keretrendszerrel való tesztelése nem támogatott. A MAM SDK Robelectric futtatásakor viselkedések Robolectric alatti, nézve, amelyek nem felel meg pontosan a valódi eszközön vagy emulátory systému miatt problémákat is ismertek.
 
 Ha a Roboelectric keretrendszerrel kell tesztelnie az alkalmazását, a javasolt kerülő megoldás az, hogy az alkalmazása logikai kódját áthelyezi egy segédosztályba, és az egységtesztelési apk-t egy olyan alkalmazásosztállyal hozza létre, amely nem öröklődik a MAMApplication osztályból.
 ## <a name="expectations-of-the-sdk-consumer"></a>Az SDK-használók elvárásai

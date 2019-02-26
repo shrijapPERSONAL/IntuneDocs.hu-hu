@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/26/2018
+ms.date: 02/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 512fc924f71ba9a9fdd46ba8f5f5c087de83c2dd
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 6278d19edd6d55f3aa06b30ee9ffee867f784bd7
+ms.sourcegitcommit: ba7170e499ea0009e9f1c2d77dbec116ec01ba1c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840416"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56826172"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Alkalmazáskonfigurációs szabályzatok hozzáadása felügyelt Android-eszközökhöz
 
@@ -44,13 +44,13 @@ Alkalmazáskonfigurációs szabályzatok használata a Microsoft Intune-ban az a
 6. A **Platform** beállításban válassza az **Android** lehetőséget.
 7. Válassza a **Társított alkalmazás** lehetőséget azon alkalmazás kiválasztásához, amelyhez a konfigurációs szabályzatot definiálni szeretné. Válassza ki a listából azokat az androidos munkahelyi profilt használó alkalmazásokat, amelyeket jóváhagyott és szinkronizált az Intune-nal.
 8. Válassza az **Engedélyek** lehetőséget. A konfigurációkat a következőkkel adhatja meg:
-    - [A konfigurációtervező](#Use-the-configuration-designer)
-    - [A JSON-szerkesztő](#Enter-the-JSON-editor)
+    - [A konfigurációtervező](#use-the-configuration-designer)
+    - [A JSON-szerkesztő](#enter-the-json-editor)
 9. Válassza az **OK**, majd a **Hozzáadás** gombot.
 
 ## <a name="use-the-configuration-designer"></a>A konfigurációtervező használata
 
-A konfigurációtervezőt a konfigurációkat támogató Android-alkalmazásokhoz használhatja. A konfiguráció az Intune-ban regisztrált eszközökre fog vonatkozni. A tervezővel konkrét konfigurációs értékeket adhat meg az alkalmazás által közzétett beállításokhoz.
+Használhatja a configuration designer Android-alkalmazások esetén, ha az alkalmazás támogatja a konfigurációs beállításokat úgy lett kialakítva. A konfiguráció az Intune-ban regisztrált eszközökre fog vonatkozni. A tervezővel konkrét konfigurációs értékeket adhat meg az alkalmazás által közzétett beállításokhoz.
 
 Az alkalmazáshoz megadni kívánt konfigurációs beállítások kiválasztásához válassza a **Hozzáadás** lehetőséget.  
 A konfiguráció minden kulcsához és értékéhez állítsa be az alábbiakat:

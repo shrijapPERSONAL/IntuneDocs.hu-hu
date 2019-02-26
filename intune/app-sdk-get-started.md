@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 02/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,31 +16,32 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac9c8ca0b04cbb6f7cf570134a6f4bdce7bf57ed
-ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
+ms.openlocfilehash: 749d76087871fc46dd3e0299ffe43d629868282f
+ms.sourcegitcommit: ba7170e499ea0009e9f1c2d77dbec116ec01ba1c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325452"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56826206"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Bevezetés a Microsoft Intune App SDK használatába
 
-Ez az útmutató segítséget nyújt a mobilalkalmazás gyors engedélyezéséhez a Microsoft Intune-beli mobilalkalmazás-felügyelet használatához. Javasoljuk, hogy először tájékozódjon az Intune App SDK előnyeiről, amelyekről [Az Intune App SDK áttekintése](app-sdk.md) című témakörben olvashat bővebben.
+Ez az útmutató segítséget nyújt az alkalmazásvédelmi szabályzatok Microsoft Intune-nal támogatásához a mobilalkalmazás gyors engedélyezéséhez. Javasoljuk, hogy először tájékozódjon az Intune App SDK előnyeiről, amelyekről [Az Intune App SDK áttekintése](app-sdk.md) című témakörben olvashat bővebben.
 
-Az Intune App SDK hasonló lehetőségeket támogat az Android és az iOS esetében is, és célja, hogy egységes, platformfüggetlen felhasználói élményt teremtsen a rendszergazdáknak. A platformok korlátozásai miatt azonban bizonyos funkciók támogatásában kisebb különbségek vannak.
+Az Intune App SDK hasonló lehetőségeket támogat az Android és az iOS esetében is, és célja, hogy egységes, platformfüggetlen felhasználói élményt teremtsen a rendszergazdáknak. Azonban bizonyos funkciók támogatásában kisebb különbségek vannak platform eltérés és korlátozás miatt.
 
 ## <a name="register-your-store-app-with-microsoft"></a>Áruházbeli alkalmazás regisztrálása a Microsoftnál
 
 ### <a name="if-your-app-is-internal-to-your-organization-and-will-not-be-publicly-available"></a>Ha az alkalmazás a munkahelyén belüli, és nem lesz nyilvánosan elérhető:
 
-*Nem kell* regisztrálnia az alkalmazást. Belső, saját üzleti használatra való alkalmazások esetében a rendszergazda fogja a cégen belül telepíteni az alkalmazást. Az Intune észlelni fogja, hogy az alkalmazást az SDK-val állították össze, és lehetővé teszi a rendszergazda számára, hogy az alkalmazásra vonatkozó alkalmazásvédelmi szabályzatot léptessen érvénybe. Lépjen az [iOS vagy Android rendszerhez készült alkalmazás engedélyezése alkalmazásvédelmi szabályzat használatához](#enable-your-iOS-or-Android-app-for-app-protection-policy) című részre.
+Ön _**nem kell**_ regisztrálnia az alkalmazást. A belső [üzletági (LOB) alkalmazások](apps-add.md#app-types-in-microsoft-intune) , amely úgy írtak szerint, vagy a vállalat a rendszergazda fogja cégen belül telepíteni az alkalmazást. Az Intune észlelni fogja, hogy az alkalmazás az SDK-val állították össze, és lehetővé teszi a rendszergazda alkalmazásvédelmi szabályzatok vonatkoznak rá. Lépjen az [iOS vagy Android rendszerhez készült alkalmazás engedélyezése alkalmazásvédelmi szabályzat használatához](#enable-your-iOS-or-Android-app-for-app-protection-policy) című részre.
 
 ### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>Ha az alkalmazás elérhető lesz nyilvános alkalmazás-áruházban, például az Apple App Store-ban vagy a Google Play áruházban:
 
-Először _**regisztrálnia kell**_ az alkalmazást a Microsoft Intune-nál, és el kell fogadnia a regisztrációs feltételeket. Ezt követően a rendszergazdák alkalmazásvédelmi szabályzatot alkalmazhatnak a kezelt alkalmazásra, amely Intune-alkalmazáspartnerként lesz látható.
+Először _**regisztrálnia kell**_ az alkalmazást a Microsoft Intune-nál, és el kell fogadnia a regisztrációs feltételeket. A rendszergazdák alkalmazásvédelmi szabályzatot alkalmazhatja a felügyelt alkalmazást, amely lesz látható, hogy egy [az Intune által védett alkalmazás partner](apps-supported-intune-apps.md#partner-apps).
 
 Az Intune-rendszergazdák nem alkalmazhatják az alkalmazásvédelmi szabályzatot az alkalmazás mélyhivatkozására, amíg el nem végezte a regisztrációt, és a Microsoft Intune-csapat meg nem erősítette azt. A Microsoft felveszi az alkalmazást a [Microsoft Intune-partnerek lapjára](https://www.microsoft.com/cloud-platform/microsoft-intune-apps). Az alkalmazás ikonja jelzi, hogy az alkalmazás támogatja az Intune alkalmazásvédelmi szabályzatait.
 
+### <a name="the-registration-process"></a>A regisztrációs folyamat
 A regisztrációs folyamat megkezdéséhez, ha még nem működik együtt a Microsoft egy kapcsolattartójával, töltse ki a [Microsoft Intune-alkalmazáspartneri kérdőívet](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR80SNPjnVA1KsGiZ89UxSdVUMEpZNUFEUzdENENOVEdRMjM5UEpWWjJFVi4u).
 
 A kérdőívben megadott e-mail-címek egyikén felvesszük Önnel a kapcsolatot, és elindítjuk a regisztráció folyamatát. Emellett regisztrációs e-mail-címén is felvesszük a kapcsolatot Önnel, ha bármilyen kétségeink lennének.
@@ -94,7 +95,7 @@ A következő fejlesztői útmutatók segítséget nyújtanak az Intune App SDK 
  
  * Az alkalmazást az [Azure ActiveDirectory Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) használatával hozták létre, és engedélyezve van az AAD-brokerrel történő hitelesítéshez.
  
- * Az alkalmazás [AAD-ügyfélazonosítójának](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#optional-configure-a-native-client-application) egyedinek kell lennie az iOS-es és androidos platformokon egyaránt.
+ * Az alkalmazás [AAD-ügyfélazonosítójának](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#configure-a-native-client-application) egyedinek kell lennie az iOS-es és androidos platformokon egyaránt.
  
 ## <a name="configure-telemetry-for-your-app"></a>Telemetria konfigurálása az alkalmazásra vonatkozóan
 

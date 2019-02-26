@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 02/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,17 +17,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71f4ce34abdb0c1b3d7dbc2bbd3f41f618715fb3
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 71a21dcdef046205ad511e70e59d787e950d6734
+ms.sourcegitcommit: ba7170e499ea0009e9f1c2d77dbec116ec01ba1c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55837398"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56826189"
 ---
 # <a name="microsoft-intune-app-sdk-overview"></a>A Microsoft Intune App SDK áttekintése
-Az iOS és az Android platformhoz is elérhető Intune App SDK lehetővé teszi az alkalmazások számára az Intune alkalmazásvédelmi szabályzatainak használatát. Arra törekszik, hogy minimálisra csökkentse az alkalmazásfejlesztő által végzendő kódmódosítás mennyiségét. Az SDK legtöbb funkcióját alkalmazása működésének módosítása nélkül is engedélyezheti. Ha hatékonyabbá szeretné tenni a végfelhasználók és a rendszergazdák munkáját, az API-jainkkal személyre szabhatja alkalmazása működését olyan funkciók tekintetében, amelyek használatához az alkalmazás közreműködése szükséges.
+Az Intune App SDK, iOS és Android rendszeren is elérhető, lehetővé teszi az alkalmazás támogatja az Intune-ban való [alkalmazásvédelmi szabályzatok](app-protection-policy.md). Amikor az alkalmazás alkalmazásvédelmi szabályzatok vonatkoznak rá, Intune által felügyelt használható, és felismeri a Intune-ban felügyelt alkalmazásként. Az SDK nagy hangsúlyt fektet a minimalizálása érdekében a alkalmazásfejlesztő által végzendő kódmódosítás mennyiségét. Az SDK legtöbb funkcióját alkalmazása működésének módosítása nélkül is engedélyezheti. Végfelhasználók és a rendszergazdák munkáját, akkor az SDK API-jainkkal személyre szabhatja alkalmazása működését az alkalmazás részvételét igénylő szolgáltatások támogatásához.
 
-Miután engedélyezte az alkalmazás számára az alkalmazásvédelmi szabályzatok használatát, a rendszergazda érvénybe tudja léptetni ezeket a szabályzatokat az alkalmazásban tárolt céges adatok védelme érdekében.
+Miután engedélyezte az Intune alkalmazásvédelmi szabályzatait támogató alkalmazást, a rendszergazdák is telepítheti a házirendeket, az alkalmazásban tárolt céges adatok védelme érdekében.
 
 ## <a name="app-protection-features"></a>Alkalmazásvédelmi funkciók
 
@@ -51,13 +51,13 @@ A rendszergazdák kényszeríthetik az alkalmazásban lévő webes hivatkozások
 ### <a name="enforce-a-pin-policy"></a>PIN-kód használatára vonatkozó szabályzat alkalmazása
 A rendszergazdák kötelezhetik a végfelhasználót PIN-kód megadására az alkalmazásban lévő céges adatok elérése előtt. Ezzel ellenőrizni lehet, hogy az alkalmazást használó személy ugyanaz-e, mint aki eredetileg bejelentkezett a munkahelyi vagy iskolai fiókkal. Amikor a végfelhasználók beállítják a PIN-kódjukat, az Intune App SDK az Azure Active Directory segítségével összehasonlítja a végfelhasználók hitelesítő adatait a regisztrált Intune-fiókkal.
 
-### <a name="require-users-to-sign-in-with-work-or-school-account-for-app-access"></a>A felhasználók kötelezése munkahelyi vagy iskolai fiókkal való bejelentkezésre az alkalmazás eléréséhez
+### <a name="require-users-to-sign-in-with-a-work-or-school-account-for-app-access"></a>A felhasználók a munkahelyi vagy iskolai fiókkal jelentkezik be az alkalmazás eléréséhez
 A rendszergazdák kötelezhetik a felhasználókat arra, hogy munkahelyi vagy iskolai fiókkal jelentkezzenek be az alkalmazás eléréséhez. Az Intune App SDK az Azure Active Directory segítségével teszi lehetővé az egyszeri bejelentkezést, ami azt jelenti, hogy a hitelesítő adatokat elég egyszer megadni, és a későbbi bejelentkezések során a rendszer ismét azokat használja. A rendszer az Azure Active Directoryval összevont identitáskezelési megoldások hitelesítését is támogatja.
 
 ### <a name="check-device-health-and-compliance"></a>Eszközök állapotának és megfelelőségének ellenőrzése
 A rendszergazdák ellenőrizhetik az eszközök állapotát és az Intune-szabályzatoknak való megfelelőségét, mielőtt a végfelhasználók hozzáférhetnének az alkalmazáshoz. Az iOS rendszeren a szabályzat ellenőrzi, hogy az eszköz jailbreakelt-e. Az Android rendszeren a szabályzat ellenőrzi, hogy az eszköz rootolt-e.
 
-### <a name="multi-identity-support"></a>Többszörös identitás támogatása
+### <a name="support-multi-identity"></a>A többszörös identitás támogatása
 A többszörös identitás támogatása egy olyan szolgáltatása az SDK-nak, amely lehetővé teszi a szabályzatok által felügyelt (vállalati) és a felügyelet nélküli (személyes) fiókok ugyanazon alkalmazásban való egyidejű használatát.
 
 Például sok felhasználó konfigurál vállalati és személyes e-mail-fiókot is az iOS vagy az Android rendszerhez készült Office-mobilalkalmazásokban. Amikor a felhasználó a vállalati fiókjával fér hozzá az adatokhoz, a rendszergazdának biztosnak kell lennie abban, hogy arra alkalmazva lesz az alkalmazásvédelmi szabályzat. Ugyanakkor ha a felhasználó a személyes e-mail fiókjához fér hozzá, az adatoknak a rendszergazda felügyeletén kívül kell esniük. Az Intune App SDK ezt úgy éri el, hogy az alkalmazásvédelmi szabályzatot **kizárólag** az alkalmazásban lévő vállalati identitásra alkalmazza.
@@ -80,4 +80,4 @@ A Citrix MDX-ről további információt [Az MDX Toolkit bemutatása](https://do
 
 ## <a name="next-steps"></a>További lépések
 
-- Ismerje meg [alkalmazásvédelmi szabályzatok](app-protection-policy.md).
+- [A Microsoft Intune App SDK – első lépések](app-sdk-get-started.md).
