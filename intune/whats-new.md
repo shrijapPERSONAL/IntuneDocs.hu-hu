@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbe292aec26e55e6dfbe03e59fd9e91c0689c33a
-ms.sourcegitcommit: ba7170e499ea0009e9f1c2d77dbec116ec01ba1c
+ms.openlocfilehash: ad47171d1d0cd4f5d3ac19fe3dadea90b3be1cc8
+ms.sourcegitcommit: bb80846453850bf17b8c59c25829cf7aa281ca1c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 02/26/2019
-ms.locfileid: "56826274"
+ms.locfileid: "56838347"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -46,6 +46,14 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Emellett tá
 -->     
 
 <!-- ########################## -->
+## <a name="week-of-february-25-2019"></a>2019. február 25 hete
+
+### <a name="intune-powershell-module----951068-wnready---"></a>Intune-ban a PowerShell-modul <!-- 951068 wnready -->
+Már elérhető az Intune-os PowerShell modult, amely lehetővé teszi a Microsoft Graphon keresztül az Intune API támogatását, a [Microsoft PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1902.1.10).
+
+- [Részletes tájékoztatást a modul használata](https://github.com/Microsoft/Intune-PowerShell-SDK/blob/master/README.md)
+- [Ez a modul használatával eltávolítási módjaira](https://github.com/Microsoft/Intune-PowerShell-SDK/blob/master/Samples/README.md)
+
 ## <a name="week-of-february-18-2019"></a>2019. február 18 hete
 
 ### <a name="app-management"></a>Alkalmazáskezelés

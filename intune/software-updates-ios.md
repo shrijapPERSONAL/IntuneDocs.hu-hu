@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d39f4c541fd7ccf5ab2d09fdcf4f871ba3ee639c
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: ecb9a06258c10f2ef00d8940238bc22b539ba21b
+ms.sourcegitcommit: bb80846453850bf17b8c59c25829cf7aa281ca1c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742397"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56838313"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>IOS-szoftverfrissítési szabályzatok hozzáadása az Intune-ban
 
@@ -60,7 +60,9 @@ Az eszköz körülbelül 8 óránként jelentkezik be az Intune-ba. Ha az eszkö
 
 5. Válassza ki **OK** > **létrehozás** a módosítások mentéséhez és a szabályzat létrehozásához.
 
-A szabályzat létrejön, és megjelenik a szabályzatok listájában. 
+A szabályzat létrejön, és megjelenik a szabályzatok listájában.
+
+Az Intune támogatási csapat útmutatásért lásd: [látható-e a felügyelt eszközökön az Intune-ban szoftverfrissítéseket késleltetés](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Delaying-visibility-of-software-updates-in-Intune-for-supervised/ba-p/345753).
 
 > [!NOTE]
 > Az Apple mobileszköz-kezelése nem teszi lehetővé, hogy a készülékek számára kikényszerítse a frissítések adott időpontban történő telepítését.
