@@ -6,7 +6,7 @@ keywords: Intune-adattárház
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 02/25/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: caf4401a2274a74050ec0eb404363cfc15b23e76
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: ffdd62c06090e58bc5f00a8750c7a3a301ac9ed7
+ms.sourcegitcommit: 0f4247914f55349f618f6176a4cdca08503215f5
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55851440"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56955527"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune-adattárház API-végpontja
 
@@ -57,11 +57,13 @@ Az URL-cím a következő elemeket tartalmazza:
 
 ## <a name="api-version-information"></a>Az API-verzióra vonatkozó információk
 
-Az API jelenlegi verziója a következő: `beta`. 
+Most már használható az Intune Adattárház v1.0-ás verziója az  `api-version=v1.0` lekérdezésparaméter megadásával. Az Adattárház gyűjteményeinek frissítései hozzáadó jellegűek, és nem okoznak fennakadást a meglévő forgatókönyvekben.
+
+A bétaverzió használatával kipróbálhatja az adattárház legújabb funkcióit. A bétaverzió használatához URL-címének az  `api-version=beta` lekérdezési paraméterrel kell rendelkeznie. A bétaverzió olyan funkciókat is kínál, amelyek támogatott szolgáltatásként még érhetőek el általánosan. Amikor az Intune új funkciókkal bővíti a szolgáltatást, előfordulhat, hogy a bétaverzió viselkedése és az adategyezmény megváltozik. Frissítések esetén a bétaverziót használó egyéni kódok vagy jelentéskészítő eszközök működésében hibák jelentkezhetnek.
 
 ## <a name="odata-query-options"></a>Az OData-lekérdezés beállításai
 
-A jelenlegi verzió a következő OData-lekérdezésparamétereket támogatja: `$filter, $orderby, $select, $skip,` és `$top`.
+A jelenlegi verzió a következő OData-lekérdezésparamétereket támogatja: `$filter`, `$select`, `$skip,` és `$top`. A `$filter`, csak `DateKey` vagy `RowLastModifiedDateTimeUTC` lehet, hogy támogatja az oszlopok vonatkoznak, és egyéb tulajdonságok hibás kérelem lép működésbe.
 
 ## <a name="datekey-range-filters"></a>DateKey típusú tartományszűrők
 
@@ -73,15 +75,12 @@ A `DateKey` tartományszűrők az adatletöltés korlátozására használhatók
 ## <a name="filter-examples"></a>Példák a szűrőkre
 
 > [!NOTE]
-> A példaszűrők feltételezik, hogy a mai dátum 2018. február 21.
+> A szűrő példákban feltételezzük még ma a 2019/2/21.
 
 |                             Szűrés                             |           A teljesítmény optimalizálása           |                                          Leírás                                          |
 |:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|
 |    `maxhistorydays=7`                                            |    Összes                                      |    Olyan adatokat ad vissza, amelyekben a `DateKey` értéke 20180214 és 20180221 között van.                                     |
 |    `$filter=DateKey eq 20180214`                                 |    Összes                                      |    Olyan adatokat ad vissza, amelyekben a `DateKey` értéke megegyezik a 20180214 értékkel.                                                    |
 |    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    Összes                                      |    Olyan adatokat ad vissza, amelyekben a `DateKey` értéke 20180214 és 20180220 között van.                                     |
-|    `maxhistorydays=7&$filter=Id gt 1`                            |    Részleges, az Id gt 1 nem lesz optimalizálva    |    Olyan adatokat ad vissza, amelyekben a `DateKey` értéke 20180214 és 20180221 között van, és az Id nagyobb, mint egy 1.             |
 |    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    Összes                                      |    Olyan adatokat ad vissza, amelyekben a `DateKey` értéke megegyezik a 20180214 értékkel. A rendszer mellőzi a `maxhistorydays` értékét.                            |
-|    `$filter=DateKey eq 20180214 and Id gt 1`                     |    None                                      |    Nem számít `DateKey` tartományszűrőnek, így nincs teljesítményfokozás.                              |
-|    `$filter=DateKey ne 20180214`                                 |    None                                      |    Nem számít `DateKey` tartományszűrőnek, így nincs teljesítményfokozás.                              |
-|    `maxhistorydays=7&$filter=DateKey eq 20180214 and Id gt 1`    |    None                                      |    Nem számít `DateKey` tartományszűrőnek, így nincs teljesítményfokozás. A rendszer mellőzi a `maxhistorydays` értékét.    |
+|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    Összes                                       |    Vissza az adatokat `RowLastModifiedDateTimeUTC` nagyobb vagy egyenlő `2018-02-21T23:18:51.3277273Z`                             |

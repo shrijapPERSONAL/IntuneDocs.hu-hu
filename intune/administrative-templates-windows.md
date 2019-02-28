@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 02/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4edf76b2406f07efa68275763da87340bb34f222
-ms.sourcegitcommit: 613b2064df07cfac0081e8549177e1f2d07cf33c
+ms.openlocfilehash: f7b78cdc329e3d6f61dea49ddb28429c2f12d0d6
+ms.sourcegitcommit: 95cc5f1e5e955acdff642191c174249465cc98bf
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56590070"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56982232"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>A csoportházirend-beállítások konfigurálása a Microsoft Intune-ban Windows 10-sablonok használatával
 
 A szervezet-eszközök kezelésekor érdemes hozzon létre egy csoportot, amelyek különféle eszközcsoportokra vonatkoznak. Például hogy több eszköz csoportot. GroupA, a hozzárendelni kívánt beállítások meghatározott készletét. GroupB, a hozzárendelni kívánt beállítások külön készletét. Azt is szeretné egy egyszerű nézet a konfigurálható beállítások.
 
-Ez a feladat használatával hajthatja végre **felügyeleti sablonok** Microsoft Intune-ban. A felügyeleti sablonok akár több százszor is, hogy szolgáltatásokat az Internet Explorer, a Microsoft Office-alkalmazásokhoz, a távoli asztal beállításait tartalmazza, eléréséhez a onedrive-ba, használja a képjelszavak vagy jelentkezzen be a PIN-kódot, és több. Ezek a sablonok hasonló (GPO) csoportházirend-beállítások az Active Directory (AD), és [ADMX-biztonsági beállítások](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) használó XML. De a sablonok az Intune-ban, 100 %-os felhőalapú. Egy további egyszerű kínálnak lehetünk lépésig, adja meg a beállításokat, majd keresse meg a beállításokat, és szeretne.
+Ez a feladat használatával hajthatja végre **felügyeleti sablonok** Microsoft Intune-ban. A felügyeleti sablonok akár több százszor is, hogy szolgáltatásokat az Internet Explorer, a Microsoft Office-alkalmazásokhoz, a távoli asztal beállításait tartalmazza, eléréséhez a onedrive-ba, használja a képjelszavak vagy jelentkezzen be a PIN-kódot, és több. Ezek a sablonok hasonló (GPO) csoportházirend-beállítások az Active Directory (AD), és [ADMX-biztonsági beállítások](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) (megnyílik egy másik Docs-webhely) használó XML. De a sablonok az Intune-ban, 100 %-os felhőalapú. Egy további egyszerű kínálnak lehetünk lépésig, adja meg a beállításokat, majd keresse meg a beállításokat, és szeretne.
 
 **Felügyeleti sablonok** beépített Intune-ba, és nem igényel minden testre szabott elem, beleértve az OMA-URI-val. A mobileszköz-felügyelet (MDM) megoldás részeként használja ezeket a sablon beállításokat-nyújtani a Windows 10 rendszerű eszközök kezelése.
 
@@ -75,6 +75,8 @@ Nincsenek elérhető ezeket a sablonokat a beállítások több száz. Hogy kön
   ![Kattintson az elérési útját betűrendes rendezés](./media/administrative-templates-windows/search-copy-settings.png)
 
   Egy másik példában keressen `microsoft word`. A Microsoft Word programban beállíthat beállításokról láthatja. Keresse meg `explorer` az Internet Explorer beállításainak megtekintéséhez is hozzáadhat a sablonhoz.
+
+Ez a szolgáltatás [CSP-k a Windows házirend](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (megnyílik egy másik Docs-webhely). A kriptográfiai szolgáltatók különböző kiadásai Windows, mint például a kezdőlap, Professional, Enterprise és így tovább működni. Tekintse meg, ha egy CSP-hez egy adott kiadásán működik, lépjen a [CSP-k a Windows házirend](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (megnyílik egy másik Docs-webhely).
 
 ## <a name="next-steps"></a>További lépések
 

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cdc0f02aa09edd05314d0d4a6a2abacc98c94bf2
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 542eb8e2ae93144709c8e35f22718d6c520cc58a
+ms.sourcegitcommit: 0f4247914f55349f618f6176a4cdca08503215f5
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742737"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56955612"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>SCEP-tanúsítványok konfigurálása és használata az Intune-nal
 
@@ -363,8 +363,8 @@ A szolgáltatás futásának ellenőrzéséhez nyisson meg egy böngészőt, és
 5. A **Profil típusa** legördülő listában válassza az **SCEP-tanúsítvány** lehetőséget.
 6. Adja meg a következő beállításokat:
 
-   - **Tanúsítvány típusa**: Válasszon **felhasználói** felhasználói tanúsítványok esetében. Válassza az **Eszköz** lehetőséget a felhasználó nélküli eszközökhöz, például kioszkokhoz. **Eszköztanúsítványok** a következő platformokhoz érhetők el:  
-     - Vállalati Android
+   - **Tanúsítvány típusa**: Válasszon **felhasználói** felhasználói tanúsítványok esetében. A **felhasználói** tanúsítványt a tulajdonos és a SAN tanúsítvány felhasználói és eszköz attribútumok tartalmazhat.  Válasszon **eszköz** forgatókönyvek például a felhasználó nélküli eszközök, például kioszkok, vagy a Windows-eszközök esetén a tanúsítvány elhelyezése a helyi számítógép tanúsítványtárolójában. **Eszköz** tanúsítványok tartalmazhat a tulajdonos és a SAN tanúsítvány eszközattribútumokat.  **Eszköztanúsítványok** a következő platformokhoz érhetők el:  
+     - Android Enterprise - munkahelyi profil
      - iOS
      - macOS
      - Windows 8.1 és újabb

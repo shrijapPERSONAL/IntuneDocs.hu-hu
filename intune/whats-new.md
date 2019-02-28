@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 02/27/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad47171d1d0cd4f5d3ac19fe3dadea90b3be1cc8
-ms.sourcegitcommit: bb80846453850bf17b8c59c25829cf7aa281ca1c
+ms.openlocfilehash: 83168acc6653f750b9cf32d91602464b62aebcfe
+ms.sourcegitcommit: 0f4247914f55349f618f6176a4cdca08503215f5
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56838347"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56955629"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -48,11 +48,17 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Emellett tá
 <!-- ########################## -->
 ## <a name="week-of-february-25-2019"></a>2019. február 25 hete
 
-### <a name="intune-powershell-module----951068-wnready---"></a>Intune-ban a PowerShell-modul <!-- 951068 wnready -->
+### <a name="device-configuration"></a>Eszközök konfigurálása
+
+#### <a name="intune-powershell-module----951068----"></a>Intune-ban a PowerShell-modul <!-- 951068  -->
 Már elérhető az Intune-os PowerShell modult, amely lehetővé teszi a Microsoft Graphon keresztül az Intune API támogatását, a [Microsoft PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1902.1.10).
 
 - [Részletes tájékoztatást a modul használata](https://github.com/Microsoft/Intune-PowerShell-SDK/blob/master/README.md)
 - [Ez a modul használatával eltávolítási módjaira](https://github.com/Microsoft/Intune-PowerShell-SDK/blob/master/Samples/README.md)
+
+#### <a name="improved-support-for-delivery-optimization----3183757-------"></a>Kézbesítésoptimalizálás továbbfejlesztett támogatása  <!--3183757     -->
+Kiterjesztettük a támogatást az Intune-ban a kézbesítésoptimalizálás konfigurálása. Most már konfigurálhat egy kibontott listája [kézbesítésoptimalizálás beállítások](delivery-optimization-settings.md) és a cél az eszközök közvetlenül az Intune-konzolon.
+
 
 ## <a name="week-of-february-18-2019"></a>2019. február 18 hete
 
@@ -76,7 +82,7 @@ Most már gyűjthet hiba naplófájlokat egy Win32-alkalmazás telepítése az I
 Válassza ki az Intune-ban **ügyfélalkalmazás** > **alkalmazások** > "App name" > **eszköz telepítési állapota**. Új hibaüzenetek lesz elérhető a **állapot részletei** oszlop.
 
 #### <a name="new-app-categories-screen-in-the-company-portal-app-for-windows-10---3834780----"></a>Új alkalmazás kategóriák képernyő Windows 10-es céges portál alkalmazásban<!-- 3834780  -->
-Egy új képernyőt nevű **Alkalmazáskategóriák** a Windows 10 céges portál alkalmazás tallózása és kiválasztása élményének növelése érdekében jelentősen bővült. A felhasználók mostantól látnak alkalmazásaikat, például a kategóriák szerint rendezve **kiemelt**, **oktatási**, és **termelékenység**. Ez a módosítás megjelenik a céges portál verziókban 10.3.3451.0 és újabb verziók. Az új képernyő megtekintése: [az alkalmazásfelhasználói felület újdonságai](https://docs.microsoft.com/intune/whats-new). A vállalati portál alkalmazások kapcsolatos további információkért lásd: [telepítése és megosztása az eszközön található alkalmazások](/intune-user-help/install-apps-cpapp-windows).  
+Egy új képernyőt nevű **Alkalmazáskategóriák** a Windows 10 céges portál alkalmazás tallózása és kiválasztása élményének növelése érdekében jelentősen bővült. A felhasználók mostantól látnak alkalmazásaikat, például a kategóriák szerint rendezve **kiemelt**, **oktatási**, és **termelékenység**. Ez a módosítás megjelenik a céges portál verziókban 10.3.3451.0 és újabb verziók. Az új képernyő megtekintése: [az alkalmazásfelhasználói felület újdonságai](https://docs.microsoft.com/intune/whats-new-app-ui). A vállalati portál alkalmazások kapcsolatos további információkért lásd: [telepítése és megosztása az eszközön található alkalmazások](/intune-user-help/install-apps-cpapp-windows).  
 
 #### <a name="power-bi-compliance-app----1455231-doc-work-item---"></a>A Power BI megfelelőségi alkalmazás <!-- 1455231 doc-work-item -->
 A Power BI online-hoz az Intune-adattárház elérése a [(adatraktár) az Intune megfelelőségi](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) alkalmazást. A Power BI alkalmazással most már elérheti és megoszthatja az előre létrehozott jelentések beállítások nélkül, és a böngésző elhagyása nélkül. További információkért lásd: [módosítási napló - megfelelőségi a Power BI alkalmazás](reports-changelog.md#power-bi-compliance-app). További Intune Data Warehouse-frissítések, lásd: [hamarosan várható az Intune-adattárház API módosításai](whats-new.md#upcoming-change-to-the-intune-data-warehouse-api).

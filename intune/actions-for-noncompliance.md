@@ -14,19 +14,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c37a5991adf2efdb5bf38b32d8af4c77af295ea0
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: f42ebd42a6bf12fda5fbfb13198302b0943b7960
+ms.sourcegitcommit: 0f4247914f55349f618f6176a4cdca08503215f5
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55844683"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56955544"
 ---
-# <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>Automatizált e-mailek és műveletek hozzáadása a nem megfelelő eszközökhöz – Intune
+# <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Automatizált e-mailek és műveletek nem megfelelő eszközök hozzáadása az Intune-ban
 
-A **Meg nem felelés esetén végrehajtandó műveletek** funkció egy időbe rendezett műveletsort állít össze. A műveletek azokra az eszközökre vonatkoznak, amelyek nem teljesítik a megfelelőségi szabályzat követelményeit. 
+A megfelelőségi szabályzatok és a szabályok nem megfelelő eszközök esetében is hozzáadhat **meg nem felelési műveletek**. Ez a szolgáltatás olyan műveletsorozatot, műveletek, például az e-mailben a végfelhasználó számára, és további konfigurálja.
 
 ## <a name="overview"></a>Áttekintés
-Alapértelmezés szerint az Intune a nem megfelelő eszköz észlelése után azonnal nem megfelelőként jelöli meg azt. Ekkor az Azure Active Directory (AD) [feltételes hozzáférés](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) funkciója letiltja az eszközt. A **Meg nem felelés esetén végrehajtandó műveletek** funkció rugalmas döntésekre is lehetőséget ad, ha egy eszköz nem megfelelő. Például nem kell azonnal letiltani az eszközt, hanem türelmi időszakot is meghatározhat az eszköz megfelelőségének visszaállításáig.
+
+Alapértelmezés szerint az Intune a nem megfelelő eszköz észlelése után azonnal nem megfelelőként jelöli meg azt. Ekkor az Azure Active Directory (AD) [feltételes hozzáférés](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) funkciója letiltja az eszközt. Ha egy eszköz nem megfelelő, **meg nem felelési műveletek** is dönthet arról, hogy mi a teendő rugalmas alkalmazáskezelést nyújt. Például nem kell azonnal letiltani az eszközt, hanem türelmi időszakot is meghatározhat az eszköz megfelelőségének visszaállításáig.
 
 Többféle művelet használható:
 
@@ -73,14 +74,14 @@ Ha e-mailt szeretne küldeni a felhasználóknak, hozzon létre egy értesítés
 
    ![Megfelelőségről szóló értesítési üzenetminta az Intune-ban](./media/actionsfornoncompliance-1.PNG)
 
-4. Ha megadta a szükséges információkat, válassza a **Létrehozás** elemet. Az értesítési üzenet sablonja mostantól használható. Vegye figyelembe, hogy a Céges portál arculatának részeként feltöltött logó lesz használva az e-mail-sablonokban. A Céges portál arculatának kialakításáról a [Vállalati identitási arculat testreszabása](company-portal-app.md#company-identity-branding-customization) című cikk nyújt bővebb tájékoztatást.  
+4. Ha megadta a szükséges információkat, válassza a **Létrehozás** elemet. Az értesítési üzenet sablonja mostantól használható. Az emblémát a céges portál védjegyezése részeként feltöltött használható e-mail-sablonokat. A Céges portál arculatának kialakításáról a [Vállalati identitási arculat testreszabása](company-portal-app.md#company-identity-branding-customization) című cikk nyújt bővebb tájékoztatást.
 
 > [!NOTE]
-> A korábban létrehozott értesítési sablonokat szerkesztheti is.
+> Emellett módosíthatja vagy egy meglévő, korábban létrehozott értesítési sablon frissítését.
 
 ## <a name="add-actions-for-noncompliance"></a>Meg nem felelés esetén végrehajtandó műveletek hozzáadása
 
-Eszközmegfelelőségi szabályzat létrehozásakor az Intune automatikusan létrehoz egy meg nem felelés esetén végrehajtandó műveletet. Ha egy eszköz nem teljesíti a megfelelőségi szabályzat követelményeit, ez a művelet nem megfelelőként jelöli meg az eszközt. Testre szabhatja, hogy az eszköz meddig maradjon nem megfelelőként megjelölve. Ezt a műveletet nem lehet eltávolítani.
+Eszközmegfelelőségi szabályzat létrehozásakor az Intune automatikusan létrehoz egy meg nem felelés esetén végrehajtandó műveletet. Ha egy eszköz nem teljesíti a megfelelőségi szabályzatot, ezzel a művelettel az eszköz nem megfelelőként jelöli meg. Testre szabhatja, hogy az eszköz meddig maradjon nem megfelelőként megjelölve. Ezt a műveletet nem lehet eltávolítani.
 
 További műveletet akkor vehet fel, ha megfelelőségi szabályzatot hoz létre, vagy frissít egy meglévő szabályzatot. 
 
@@ -100,11 +101,12 @@ További műveletet akkor vehet fel, ha megfelelőségi szabályzatot hoz létre
          - Válassza ki a korábban létrehozott **üzenetsablont**
          - Csoportok kiválasztásával adjon meg esetleges **további címzetteket**
     
-    - **A nem megfelelő eszköz távoli zárolása**: Ha az eszköz nem megfelelő, akkor zárolja az eszközt. Ez kényszeríti a felhasználót, hogy az eszköz feloldásához PIN-kódot vagy jelszót adjon meg. 
+    - **A nem megfelelő eszköz távoli zárolása**: Ha az eszköz nem megfelelő, akkor zárolja az eszközt. Ez a művelet kényszeríti a felhasználónak meg kell adnia a PIN-kódot vagy jelszót az eszköz zárolásának feloldásához. 
     
-    - **Ütemezés**: Adja meg a nap (0 és 365 között), a felhasználók eszközein a műveletet nem megfelelő állapot kezdete után. A türelmi időszak után kényszerítheti a feltételes hozzáférési szabályzatot. Ha **0** napot adott meg, a feltételes hozzáférés **azonnal** életbe lép. Például azonnal letilthatja a vállalati erőforrásokhoz való hozzáférést egy eszköz meg nem felelése esetén.
+    - **Ütemezés**: Adja meg a nap (0 és 365 között), a felhasználók eszközein a műveletet nem megfelelő állapot kezdete után. A türelmi időszak után kényszerítheti a feltételes hozzáférési szabályzatot. Ha megad **0** (nulla) számot nap, akkor a feltételes hozzáférés érvénybe **azonnal**. Például azonnal letilthatja a vállalati erőforrásokhoz való hozzáférést egy eszköz meg nem felelése esetén.
 
 5. Ha elkészült, kattintson a **Hozzáadás** > **OK** elemre a módosítások mentéséhez.
 
 ## <a name="next-steps"></a>További lépések
-[Az eszköz megfelelőségi tevékenységének figyelése](device-compliance-monitor.md).
+
+[A szabályzatok figyelése a](compliance-policy-monitor.md).
