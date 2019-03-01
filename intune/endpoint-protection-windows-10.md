@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/23/2019
+ms.date: 02/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ccdb8c40c87bc4f5e778bc1cb7a6966f8a0ad70
-ms.sourcegitcommit: 33bacf9d5db336e73d8c88fa15f6535ae92b4b00
+ms.openlocfilehash: 57360f2ffae038b57e2a8c57fc5eeba9a0fd5d2f
+ms.sourcegitcommit: c89e41e7bd546e4feceae26d82326230a16a713c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56418518"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57017132"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>A Windows 10 (és újabb verziók) beállítások az Intune-eszközök védelméhez
 
@@ -404,7 +404,7 @@ Ezekkel a beállításokkal konfigurálhatja a Windows 10-eszközök helyi bizto
 ### <a name="accounts"></a>Fiókok
 
 - **Új Microsoft-fiókok hozzáadása**: Állítsa be **blokk** megakadályozza, hogy a felhasználók új Microsoft-fiókok hozzáadásának az eszközön. **Nincs konfigurálva** (alapértelmezett) értékre állítva a felhasználók használhatnak Microsoft-fiókokat az eszközön.
-- **Távoli bejelentkezés jelszó nélkül**: **Engedélyezése** lehetővé teszi, hogy a helyi fiókok jelentkezzen be az eszköz billentyűzet üres jelszó mellett. A **Nincs konfigurálva** (alapértelmezett) értékkel az üres jelszóval rendelkező helyi fiókok nem csak a fizikai eszközön jelentkezhetnek be.
+- **Távoli bejelentkezés jelszó nélkül**: **Blokk** lehetővé teszi, hogy csak helyi fiókok jelentkezzen be az eszköz billentyűzet üres jelszó mellett. A **Nincs konfigurálva** (alapértelmezett) értékkel az üres jelszóval rendelkező helyi fiókok nem csak a fizikai eszközön jelentkezhetnek be.
 
 #### <a name="admin"></a>rendszergazda
 
@@ -442,7 +442,7 @@ Ezekkel a beállításokkal konfigurálhatja a Windows 10-eszközök helyi bizto
 #### <a name="display"></a>Megjelenítés
 
 - **Felhasználói adatokat a zárolási képernyőn**: A munkamenet zárolásakor megjelenített felhasználói adatok konfigurálása. Ha nincs konfigurálva, a felhasználó megjelenített neve, a tartomány és a felhasználónév látható.
-  - **Nincs konfigurálva**
+  - **Nincs konfigurálva**  
   - **Felhasználó megjelenített neve, tartomány- és felhasználónév**
   - **Csak a felhasználó megjelenített neve**
   - **Ne jelenjenek meg a felhasználói adatok**
@@ -458,7 +458,7 @@ Ezekkel a beállításokkal konfigurálhatja a Windows 10-eszközök helyi bizto
 - **SAM-fiókok és-megosztások névtelen felsorolása**: **Nincs konfigurálva** (alapértelmezett) azt jelenti, névtelen felhasználók névlistázás tartományi fiókok és hálózati megosztásokra. A SAM-fiókok és -megosztások névtelen számbavételének megakadályozásához állítsa **Letilt** értékre.
 - **Jelszómódosításkor tárolt LAN-kezelő üzenetkivonatát**: Jelenleg a következő jelszómódosításkor dönt, hogy **engedélyezése** a LAN Manager-(LM-) tárolására, az új jelszó a kivonat értékével. **Nincs konfigurálva** (alapértelmezett) érték esetén az üzenetkivonat nem tárolódik.
 - **PKU2U hitelesítési kérelmek**: **Blokk** PKU2U hitelesítési kérelmek, az eszköz online identitások használatára. **Nem konfigurált** (alapértelmezett) érték esetén ezek a kérelmek engedélyezve vannak.
-- **Távoli RPC-kapcsolatok az SAM korlátozása**: **Lehetővé teszi** az alapértelmezett Security Descriptor Definition Language karakterlánc, hogy megtagadja a felhasználók és csoportok távoli hívásokat küldjenek a SAM-nek. **Nem konfigurált** (alapértelmezett) érték esetén a Security Descriptor Definition Language-karakterlánc engedélyezi a felhasználók és csoportok SAM felé intézett távoli hívásait.
+- **Távoli RPC-kapcsolatok az SAM korlátozása**: Állítsa be **engedélyezése** számára megtagadja a felhasználók és csoportok abban, hogy a távoli RPC-hívások, a biztonsági fiókkezelő (SAM), amely tárolja a felhasználói fiókkal és jelszóval. **Lehetővé teszi** is lehetővé teszi, hogy módosítja az alapértelmezett Security Descriptor Definition Language (SDDL) karakterlánc explicit módon engedélyezi vagy megtagadja a felhasználók és csoportok távoli hívásokat ezeket. **Nincs konfigurálva** (alapértelmezett) használja az alapértelmezett biztonsági leíró, és engedélyezheti a felhasználók és csoportok távoli RPC hívásokat küldjenek a SAM-nek.
   - **Biztonsági leíró**
 
 ### <a name="recovery-console-and-shutdown"></a>Helyreállítási konzol és leállítás
@@ -468,8 +468,8 @@ Ezekkel a beállításokkal konfigurálhatja a Windows 10-eszközök helyi bizto
 
 ### <a name="user-account-control"></a>Felhasználói fiókok felügyelete
 
-- **Az UIA integritása biztonságos hely hiányában**: Ha a beállítása **engedélyezése**, biztonságos helyen a fájlrendszerben található alkalmazások futnak, csak a UIAccess integritási szinttel. **Nincs konfigurálva** (alapértelmezett) értékkel az alkalmazások akkor is futtathatók UIAccess integritási szinttel, ha a fájlrendszer nem biztonságos helyein találhatók.
-- **Fájl- és beállításjegyzék-írási hibák felhasználónként különböző helyekre virtualizálása**: Ha a beállítása **letiltása**, az alkalmazás írási hibák átirányítási fájlrendszert és beállításjegyzéket a felhasználó által meghatározott helyekre futási időben. **Nincs konfigurálva** (alapértelmezett) értékkel a védett helyre adatokat író alkalmazások hibába ütköznek.
+- **Az UIA integritása biztonságos hely hiányában**: Ha a beállítása **blokk**, biztonságos helyen a fájlrendszerben található alkalmazások futnak, csak a UIAccess integritási szinttel. **Nincs konfigurálva** (alapértelmezett) értékkel az alkalmazások akkor is futtathatók UIAccess integritási szinttel, ha a fájlrendszer nem biztonságos helyein találhatók.
+- **Fájl- és beállításjegyzék-írási hibák felhasználónként különböző helyekre virtualizálása**: Ha a beállítása **engedélyezve**, az alkalmazásokat, amelyek adatokat író védett helyek sikertelen. Ha a beállítása **nincs konfigurálva** (alapértelmezett), alkalmazás-írási hibák irányítja át a futási időt a fájlrendszer és a beállításjegyzék definiált felhasználói helyét.
 - **Csak az aláírt és érvényesített végrehajtható fájlok jogosultságszintjének emelése**: Állítsa be **engedélyezve** kényszeríteni a nyilvános kulcsokra épülő infrastruktúra tanúsítványlánc érvényességének ellenőrzését egy végrehajtható fájlt, ahhoz, hogy futtatható. **Nincs konfigurálva** (alapértelmezett) értékkel nem kényszeríti a PKI-tanúsítványlánc érvényesítését egy végrehajtható fájlhoz, mielőtt az futhatna.
 
 #### <a name="uia-elevation-prompt-behavior-settings"></a>UIA jogosultságszint-emelési kérés viselkedésének beállításai
@@ -486,13 +486,13 @@ Ezekkel a beállításokkal konfigurálhatja a Windows 10-eszközök helyi bizto
   - **Hitelesítő adatok bekérése a biztonságos asztalon**
   - **Nincs konfigurálva**: Hitelesítő adatok kérése
 - **Jogosultságszint-emelési kérések átirányítása a felhasználó interaktív asztalára**: **Engedélyezése** , nyissa meg az összes jogosultságszint-emelési kérések az interaktív felhasználó asztalán, nem a biztonsági asztal. A rendszer a rendszergazdákra és az általános jogú felhasználókra vonatkozó kérések viselkedését szabályzó házirend-beállításokat alkalmazza. A **Nincs konfigurálva** (alapértelmezett) értékre állítva minden jogosultságszint-emelési kérés a biztonságos asztalra lesz irányítva a rendszergazdákra és szabványos felhasználókra vonatkozó, a kérések viselkedését szabályzó házirend-beállításoktól függetlenül.
-- **Jogosultságszint-emelési kérés alkalmazástelepítések**: Ha a beállítása **blokk**, alkalmazáscsomagok telepítési nem észlelhető, vagy a jogosultságszint-emeléshez kéri. Ha a beállítása **nincs konfigurálva** (alapértelmezett) és a egy alkalmazáscsomagot emelt szintű jogosultságokra van szüksége, a felhasználónak egy rendszergazdai felhasználónevet és jelszót kell megadnia.
-- **UIA jogosultságszint-emelési kérés biztonsági asztal hiányában**: **Engedélyezése** engedélyezi, hogy UIAccess jog emelését, a biztonsági asztal használata nélkül. A **Nincs konfigurálva** (alapértelmezett) értékre állítva a jogosultságszint-emelési kérések egy biztonsági asztalt használnak.
+- **Jogosultságszint-emelési kérés alkalmazástelepítések**: Ha a beállítása **engedélyezve**, alkalmazáscsomagok telepítési nem észlelhető, vagy a jogosultságszint-emeléshez kéri. A **Nincs konfigurálva** (alapértelmezett) értékre állítva a rendszer rendszergazdai felhasználónevet és jelszót kér a felhasználótól, amikor egy alkalmazástelepítési csomag emelt szintű jogosultságot igényel.
+- **UIA jogosultságszint-emelési kérés biztonsági asztal hiányában**: **Engedélyezése** , hogy UIAccess-alkalmazások emelését, a biztonsági asztal használata nélkül. A **Nincs konfigurálva** (alapértelmezett) értékre állítva a jogosultságszint-emelési kérések egy biztonsági asztalt használnak.
 
 #### <a name="admin-approval-mode-settings"></a>A rendszergazdai engedélyezéses mód beállításai
 
 - **Rendszergazdai jóváhagyás mód a beépített rendszergazdához**: **Engedélyezett** lehetővé teszi, hogy a beépített Rendszergazda fiók rendszergazdai engedélyezéses mód használatára. A jogosultságszint-emelést igénylő műveletek felhasználói jóváhagyást kérnek. A **Nincs konfigurálva** (alapértelmezett) érték minden alkalmazást teljes rendszergazdai jogosultságokkal futtat.
-- **Minden rendszergazda futtatása rendszergazdai engedélyezéses módban**: Állítsa be **blokk** letiltani a rendszergazdai engedélyezéses mód és az összes kapcsolódó felhasználói fiókok Felügyeletének házirend-beállításokat. A **Nincs konfigurálva** (alapértelmezett) érték engedélyezi a rendszergazdai engedélyezéses módot.
+- **Minden rendszergazda futtatása rendszergazdai engedélyezéses módban**: Állítsa be **engedélyezve** letiltani a rendszergazdai engedélyezéses mód és az összes kapcsolódó felhasználói fiókok Felügyeletének házirend-beállításokat. A **Nincs konfigurálva** (alapértelmezett) érték engedélyezi a rendszergazdai engedélyezéses módot.
 
 ### <a name="microsoft-network-client"></a>Microsoft hálózati ügyfél
 

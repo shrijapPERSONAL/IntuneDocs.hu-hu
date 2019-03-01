@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/05/2019
+ms.date: 02/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9b44e4fda5e7ff78a41dd952ea9eabcb820cfb3
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 99e44190f2e87d1b859450bc96bf52e1cd1430f1
+ms.sourcegitcommit: c89e41e7bd546e4feceae26d82326230a16a713c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742380"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57017030"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>PowerShell-parancsfájlok használata a Windows 10 rendszerű eszközökön az Intune-ban
 
@@ -84,7 +84,7 @@ Az Intune felügyeleti bővítmény előfeltételei a következők:
 > - Az Intune-ban a PowerShell-parancsfájlok megcélozhatóvá válnak az Azure AD-eszközök biztonsági csoportjainak.
 > - Az Intune-ban a PowerShell-parancsfájlok megcélozhatóvá válnak az Azure AD-felhasználó biztonsági csoportokba.
 
-Az Intune felügyeleti bővítmény-ügyfelet az Intune-nal óránként egyszer ellenőrzi. Miután hozzárendelte a szabályzatot az Azure AD-csoportokhoz, elindul a PowerShell-parancsfájl, és elkészül a futtatási eredmények jelentése.
+Az Intune felügyeleti bővítmény ügyfél óránként egyszer ellenőrzi, és minden új parancsfájlokat vagy-változások az Intune-nal rendszer újraindítása után. Miután hozzárendelte a szabályzatot az Azure AD-csoportokhoz, elindul a PowerShell-parancsfájl, és elkészül a futtatási eredmények jelentése. A szkript végrehajtása után a nem újra végrehajtani, kivéve, ha módosítják a parancsfájl vagy a szabályzat.
 
 ## <a name="monitor-run-status"></a>Futási állapotának figyelése
 

@@ -15,22 +15,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8cd681466b64c72291100d42804c0d349c4fb04f
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: a6da94a0904042c74debbe8827fe58d45cdea3ad
+ms.sourcegitcommit: a78878452491ae207319b8d7ce62ea9edec487b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56743417"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007001"
 ---
 # <a name="rename-a-windows-device-in-intune"></a>Nevezze át a Windows-eszköz Intune-ban
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-A **indítsa újra a** eszközművelet teszi lehetővé az Intune-ban regisztrálva van a vállalat által birtokolt Windows-eszköz átnevezése. Ez módosítja az eszköz nevét, az Intune-ban, valamint az eszközön. 
+A **átnevezése eszköz** művelet lehetővé teszi az Intune-ban regisztrálva van a vállalat által birtokolt Windows-eszköz átnevezése. Ez módosítja az eszköz nevét, az Intune-ban, valamint az eszközön. 
 
 
-## <a name="restart-a-device"></a>Eszköz újraindítása
+## <a name="rename-a-device"></a>Egy eszköz átnevezése
 
 1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Válassza ki **minden szolgáltatás**, szűrjön az **Intune**, és válassza a **a Microsoft Intune**.
