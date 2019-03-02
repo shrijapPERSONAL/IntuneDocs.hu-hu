@@ -7,7 +7,7 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/15/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1edb6b3418fdbf95f93b9f4ae04adddc32427b41
-ms.sourcegitcommit: ad213c5be1e1ad2b768661a467878056e6090999
+ms.openlocfilehash: c9063f3180b79cac50e7d49d15d6ed1bf13eddc6
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56444191"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57232726"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Android-eszközök alkalmazásvédelmi szabályzatainak beállításai a Microsoft Intune-ban
 Ez a cikk az alkalmazásvédelmi szabályzatok Android-eszközökre vonatkozó beállításait ismerteti. Az ismertetett szabályzatbeállításokat az Azure Portal **Beállítások** paneljén lehet [konfigurálni](app-protection-policies.md) az alkalmazásvédelmi szabályzatokhoz.

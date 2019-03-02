@@ -7,7 +7,7 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 12/06/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35492b94e38d482f5ee59385453bac54f434223d
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: e51c13136b5dd79ba9ff395008c6a8cb3e67e9e4
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845329"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57238183"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot-preview"></a>Üzembe helyezése hibrid Azure AD-hez csatlakoztatott eszközökhöz az Intune-nal és a Windows Autopilot (előzetes verzió)
 Hibrid Azure Active Directory (Azure AD) beállításához használhatja az Intune és a Windows Autopilot-hez csatlakoztatott eszközök. Ehhez kövesse a cikkben.

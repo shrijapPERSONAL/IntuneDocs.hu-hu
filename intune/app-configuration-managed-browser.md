@@ -7,7 +7,7 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/22/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52baa8f92401266dbf3043a334eccbc6ddffc873
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
-ms.translationtype: HT
+ms.openlocfilehash: e36105f89221ee5e33a1a6d8afe26b09a08b76b7
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742635"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57238948"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Az internet-hozzáférés kezelése Microsoft Intune-szabályzattal védett böngésző használatával
 
@@ -121,7 +121,7 @@ Az SSO megköveteli az eszközöktől, hogy regisztrálva legyenek a Microsoft A
 >[!IMPORTANT]
 >Az alkalmazáskonfigurációk érvényre jutásához az szükséges, hogy a felhasználó védelemmel ellátott böngészőjét vagy az eszközön lévő alkalmazások egyikét már az [Intune alkalmazásvédelmi szabályzata]( app-protection-policy.md) felügyelje.
 
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3.  A felügyeleti lista **Ügyfélalkalmazások** paneljén válassza az **Alkalmazáskonfigurációs szabályzatok** lehetőséget.
 4.  Az **Alkalmazáskonfiguráció** panelen válassza a **Hozzáadás** lehetőséget.
@@ -163,10 +163,10 @@ A Microsoft Edge vagy az Intune Managed Browser [Azure AD Alkalmazásproxyval]( 
     > Az Alkalmazásproxy frissített átirányítási adatainak érvénybe lépése a Managed Browserben és a Microsoft Edge-ben akár 24 órát is igénybe vehet.
 
 
-#### <a name="step-1-enable-automatic-redirection-to-a-protected-browser-from-outlook"></a>Első lépés: Automatikus átirányítás engedélyezése az Outlookból egy védett böngészőhöz
+#### <a name="step-1-enable-automatic-redirection-to-a-protected-browser-from-outlook"></a>1. lépés: Automatikus átirányítás engedélyezése az Outlookból egy védett böngészőhöz
 Az Outlookot olyan alkalmazásvédelmi szabályzattal kell konfigurálni, amelyben engedélyezett a **Webes tartalom megjelenítésének korlátozása a Managed Browser alkalmazásra** beállítás.
 
-#### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>Második lépés: Alkalmazáskonfigurációs szabályzat hozzárendelése a védett böngészőhöz.
+#### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>2. lépés: Alkalmazáskonfigurációs szabályzat hozzárendelése a védett böngészőhöz.
 Ez az eljárás az Alkalmazásproxy átirányítás használatára konfigurálja a Managed Browser vagy a Microsoft Edge alkalmazást. A Microsoft Edge vagy a Managed Browser alkalmazás konfigurációjának létrehozására vonatkozó eljárással adja meg az alábbi kulcs-érték párt:
 
 | Kulcs                                                             | Érték    |
@@ -203,7 +203,7 @@ A Microsoft Edge vagy a Managed Browser alkalmazás konfigurációjának létreh
 
 |                                Kulcs                                 |                                                                                                                                                                                                                                                         Érték                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | Ennek a konfigurációnak egy könyvjelzőlista az értéke. Minden könyvjelző egy címből és egy URL-címből áll. A címet és az URL-címet a <strong>&#124;</strong> karakter választja el.<br><br>Például:<br> <code>Microsoft Bing&#124;https://www.bing.com</code><br><br>Több könyvjelző megadásakor az egyes párokat a <strong>&#124;&#124;</strong> karakter választja el.<br><br>Például:<br> <code>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com</code> |
+| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | Ennek a konfigurációnak egy könyvjelzőlista az értéke. Minden könyvjelző egy címből és egy URL-címből áll. A címet és az URL-címet a <strong>&#124;</strong> karakter választja el.<br><br>Példa:<br> <code>Microsoft Bing&#124;https://www.bing.com</code><br><br>Több könyvjelző megadásakor az egyes párokat a <strong>&#124;&#124;</strong> karakter választja el.<br><br>Példa:<br> <code>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com</code> |
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-a-protected-browser"></a>Engedélyezett és letiltott URL-címek meghatározása egy védett böngésző számára
 
@@ -271,9 +271,9 @@ Az alábbi táblázat azokat az engedélyezett formátumokat és helyettesítő 
 Mind az Intune Managed Browser, mind a Microsoft Edge szabályzattal felügyelt/védett böngészőnek számít. Jelenleg a meglévő alkalmazásvédelmi szabályzatok szerint a forgatókönyvtől és platformtól függően az Intune felügyelt alkalmazásainak webes hivatkozásai egy meghatározott böngészőben nyílnak meg. 
 
 Androidon: 
-* A Managed Browserben, ha az MB és a Microsoft Edge is megtalálható az eszközön, kivéve, ha a „com.microsoft.intune.useEdge” alkalmazáskonfigurációs beállítás értéke „true” az összes Intune által felügyelt alkalmazásra, amelyre a felügyelt böngésző használata kötelező szabályzat vonatkozik.  
-* A Microsoft Edge-ben, ha csak a Microsoft Edge van az eszközön, és a szabályzat erre vonatkozik.
-* A Managed Browserben, ha csak a Managed Browser van az eszközön, és a szabályzat erre vonatkozik. 
+* Ha a felhasználó rendelkezik mindkét Managed Browser és az eszköz letöltése a Microsoft Edge a felügyelt böngészőben nyílik meg. Annak érdekében, hogy a Microsoft Edge helyett a Managed Browser nyitotta, állítsa be az alkalmazás konfigurációs beállítás "com.microsoft.intune.useEdge" "true" az összes Intune által felügyelt alkalmazások egy házirend által felügyelt böngésző szükséges.  
+* A Microsoft Edge megnyílik, ha csak a Microsoft Edge az eszközön, és a szabályzat vonatkozik.
+* Felügyelt böngésző megnyílik, ha csak a Managed Browser az eszközön, és a szabályzat vonatkozik. 
 
 Az iOS rendszeren, ha az alkalmazásokban integrálva van az Intune SDK for iOS 9.0.9+ verziója: 
 * A Managed Browserben, ha az MB és a Microsoft Edge is megtalálható az eszközön, kivéve, ha a „com.microsoft.intune.useEdge” alkalmazáskonfigurációs beállítás értéke „true” az összes Intune által felügyelt alkalmazásra, amelyre a felügyelt böngésző használata kötelező szabályzat vonatkozik **vagy** a Microsoft Edge-ben, ha az telepítve van, és megkapta a szabályzatot. 

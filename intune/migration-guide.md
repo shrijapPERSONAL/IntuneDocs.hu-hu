@@ -7,7 +7,7 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd42aaddee3051d01e9a3d30690735d7acbfb411
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 5a6af1f03e71755dd387012eb264ae1bb64f6614
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55843731"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57236872"
 ---
 # <a name="intune-migration-guide"></a>Intune migrációs útmutató
 

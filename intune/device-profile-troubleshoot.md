@@ -1,12 +1,12 @@
 ---
 title: Eszközprofilok hibaelhárítása az Azure-beli Microsoft Intune-ban | Microsoft Docs
-description: 'Eszközprofilokkal kapcsolatos gyakori problémák, például: A profilmódosítások nem jutnak érvényre egyes felhasználók vagy eszközök esetén. Mennyi ideig tart egy új szabályzatnak az eszközökre való leküldése? Mely szabályok érvényesülnek több szabályzat esetén? Mi történik egy profil törlésekor vagy eltávolításakor? Mindez és még sok más a Microsoft Intune-ról az Azure Portalon.'
+description: Gyakori kérdések és válaszok a szabályzatok és profilok, beleértve a profilmódosítások nem alkalmazza a felhasználókhoz vagy eszközökhöz, mennyi ideig tart az új házirendeket lehet leküldeni az eszközre, mely beállítások több szabályzatok érvényesek, mi történik, amikor egy profil a törölt vagy eltávolított, és több Microsoft Intune-nal.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 1/10/2019
-ms.topic: article
+ms.date: 02/28/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,27 +16,28 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 528e26ddca1b3327fb0afa2f5cff6f2dbdca1660
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 8c95ed6f865795c2e9638e4975b51bee4678013d
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846485"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57231536"
 ---
-# <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Eszközprofilokkal kapcsolatos gyakori problémák a Microsoft Intune-ban és azok megoldása
+# <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Gyakori kérdések, problémák és megoldások a szabályzatok és profilok a Microsoft Intune-ban
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune-eszközprofilok használatával kapcsolatos gyakori hibák elhárítása.
+Válaszok a gyakori kérdésekre eszközprofilokat és szabályzatokat az Intune-ban való munka során. Ez a bejelentkezési időintervallumok listák is cikkre, biztosít több lefoglalja az ütközések és egyéb.
 
-## <a name="why-doesnt-a-user-get-a-new-profile-when-changing-a-password-or-passphrase-on-an-existing-wi-fi-profile"></a>Miért nem kap a felhasználó új profilt, amikor megváltoztatja a jelszót vagy a hozzáférési kódot egy létező Wi-Fi-profilban? 
+## <a name="why-doesnt-a-user-get-a-new-profile-when-changing-a-password-or-passphrase-on-an-existing-wi-fi-profile"></a>Miért nem kap a felhasználó új profilt, amikor megváltoztatja a jelszót vagy a hozzáférési kódot egy létező Wi-Fi-profilban?
+
 Ön létrehoz egy vállalati Wi-Fi-profilt, hozzárendeli egy csoporthoz, megváltoztatja a jelszót, és menti a profilt. A profil megváltoztatásakor egyes felhasználók esetleg nem kapják meg az új profilt.
 
 A probléma következményei vendég Wi-Fi beállításával mérsékelhetők. A vállalati Wi-Fi kiesése esetén a felhasználók a vendég Wi-Fi-hez kapcsolódhatnak. Gondoskodjon az automatikus csatlakozás beállításáról. A vendég Wi-Fi profilt rendelje hozzá minden felhasználóhoz.
 
 Néhány további javaslat:  
 
-- Mivel a Wi-Fi-hálózat, amelyhez csatlakozik, jelszót vagy hozzáférési kódot használ, gondoskodjon arról, hogy közvetlenül tud kapcsolódni a Wi-Fi-útválasztóhoz. Ezt kipróbálhatja egy iOS-eszközzel.
+- Ha a Wi-Fi-hálózathoz csatlakozik, jelszót vagy hozzáférési kódot használ, győződjön meg arról, hogy közvetlenül tud kapcsolódni a Wi-Fi-útválasztóhoz. Ezt kipróbálhatja egy iOS-eszközzel.
 - A Wi-Fi-végponthoz (Wi-Fi-útválasztóhoz) való sikeres kapcsolódás után jegyezze fel az SSID-t és a használt hitelesítő adatokat (ez a jelszó vagy a hitelesítő kód).
 - Adja meg az SSID-t és a hitelesítő adatokat (jelszót vagy hitelesítő kódot) az Előmegosztott kulcs mezőben. 
 - Alkalmazza egy tesztcsoportra, amelynek csak néhány tagja van, lehetőleg a rendszergazdák közül. 
@@ -45,54 +46,67 @@ Néhány további javaslat:
 - Bővítse ki a kört nagyobb csoportokra és végül mindenkire, aki a szervezetben várhatóan felhasználó lesz. 
 
 ## <a name="how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned"></a>Mennyi időt vesz igénybe, hogy a mobileszközök megkapják a szabályzatot vagy az alkalmazásokat, amelyeket hozzájuk rendeltek?
+
 Szabályzat vagy alkalmazás hozzárendelésekor az Intune azonnal értesíti az eszközt arról, hogy be kell jelentkeznie az Intune szolgáltatásba. Az értesítés általában öt percnél kevesebb időt vesz igénybe.
 
-Ha az eszköz az első értesítés után nem jelentkezik be, hogy beszerezze a szabályzatot, az Intune három további kísérletet tesz. Ha az eszköz kapcsolat nélküli állapotban van (például ki van kapcsolva vagy nem kapcsolódik hálózathoz), előfordulhat, hogy nem kapja meg az értesítéseket. Ebben az esetben az eszköz az Intune szolgáltatásba való következő ütemezett bejelentkezéskor szerzi be a szabályzatot a következő módon:
+Ha egy eszköz nem jelentkezik be, hogy lekérje a házirendet az első értesítés után, az Intune három további kísérletet tesz. Egy kapcsolat nélküli eszköz, például ki van kapcsolva, vagy nem kapcsolódik hálózathoz, előfordulhat, hogy nem kapja meg az értesítéseket. Ebben az esetben az eszköz a következő ütemezett bejelentkezéskor szerzi és az Intune szolgáltatás, amely lekérdezi a szabályzat:
 
-- iOS és MacOS rendszeren: 6 óránként
-- Android:: 8 óránként
-- Windows Phone: 8 óránként
-- Eszközként regisztrált Windows 8.1 és Windows 10-számítógépek: 8 óránként
+| Platform | A frissítés|
+| --- | --- |
+| iOS | 6 óránként |
+| macOS | 6 óránként |
+| Android | 8 óránként |
+| Eszközként regisztrált Windows 10 számítógépek | 8 óránként |
+| Windows Phone | 8 óránként |
+| Windows 8.1 | 8 óránként |
 
-Ha az eszköz nemrég lett regisztrálva, a bejelentkezés gyakoribb lesz, a következőképpen:
+Ha az eszköz nemrég lett regisztrálva, a bejelentkezés gyakrabban fusson:
 
-- iOS és MacOS rendszeren: 15 percenként az hat óra, majd 6 óránként
-- Android:: 15 percen át 3 percenként, majd két órán át 15 percenként, majd 8 óránként
-- Windows Phone: 15 percen át 5 percenként, majd két órán át 15 percenként, majd 8 óránként
-- Eszközként regisztrált Windows-számítógépek: A 30 percesnek, majd 8 óránként percen át 3 percenként
+| Platform | Gyakoriság |
+| --- | --- |
+| iOS | 6 órán át 15 perceként, majd 6 óránként |  
+| Mac OS X | 6 órán át 15 perceként, majd 6 óránként | 
+| Android | 15 percen át 3 percenként, majd 2 órán át 15 percenként, majd 8 óránként | 
+| Windows Phone | 15 percen át 5 percenként, majd 2 órán át 15 percenként, majd 8 óránként | 
+| Eszközként regisztrált Windows-számítógépek | 30 percen át 3 percenként, majd 8 óránként | 
 
-A felhasználók a Céges portál alkalmazás megnyitásával bármikor jelentkezhetnek a szabályzat beszerzéséhez.
+Bármikor a felhasználók nyissa meg a céges portál alkalmazást, és az eszköz szinkronizálása érdekében az profil frissítések azonnali ellenőrzésére.
 
-A felhasználói affinitás nélküli eszközök esetén a regisztráció utáni szinkronizálás gyakorisága néhány órától egy vagy több napig terjedhet. Az Intune különböző időközönként kéréseket küld az eszköznek, hogy jelentkezzen be a szolgáltatásba. Bejelentkeznie azonban magának az eszköznek kell. Az első regisztráció után az eszközregisztráció típusától és az eszközhöz rendelt szabályzatoktól és profiloktól függően változhat, hogy mennyi időbe telik a bejelentkezés elvégzése. Azonban az eszközregisztráció és az összes kezdeti szabályzat alkalmazása után az eszköz általában körülbelül 6 óránként keres új szabályzatokat.
+Felhasználói affinitás nélküli eszközök esetén a utáni szinkronizálás gyakorisága regisztrációs is órától napi egy vagy több. Intune az eszköznek, hogy jelentkezzen be az Intune különböző időközönként kéréseket küld. Ezt azonban magának az eszköznek kell van. Az első regisztráció után az idő, mennyi időbe telik a bejelentkezés befejezéséhez az előre nem látható. Attól is függ az eszköz regisztrálása és a házirendek és a egy eszközhöz hozzárendelt profillal típusát. Miután regisztrálja az eszközt, és az összes kezdeti szabályzat alkalmazása, az eszköz általában keres új szabályzatokat 6-8 óránként.
 
 ## <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>Milyen műveletek hatására küld az Intune azonnal értesítést egy eszközre?
-Az eszközök akkor jelentkeznek be az Intune-ba, amikor értesítést kapnak a bejelentkezésre, vagy a rendszeresen ütemezett alkalmakkor. Ha egy művelet, például a törlés, a zárolás, a jelszó alaphelyzetbe állítása, illetve az alkalmazás-, profil- vagy szabályzat-hozzárendelés egy eszközre vagy felhasználóra vonatkozik, az Intune azonnal értesíti az eszközt arról, hogy be kell jelentkeznie az Intune szolgáltatásba a frissítések fogadásához.
+
+Eszközök Intune-ban jelentkeznek, amikor a bejelentkezésre, vagy az ütemezett bejelentkezéskor során értesítést kapnak. Ha egy eszközre vagy felhasználóra vonatkozik egy művelet, például a zárolás, PIN-kód alaphelyzetbe állítása, alkalmazás-hozzárendelés, profilt és a szabályzat-hozzárendelés, majd az Intune azonnal értesítést küld az eszköznek kell a frissítések fogadásához.
 
 Az egyéb módosítások – például a kapcsolattartási adatok módosítása a céges portálon – nem indítják el az azonnali értesítések küldését az eszközök felé.
 
 ## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-gets-applied"></a>Ha ugyanazon felhasználóhoz vagy eszközhöz több szabályzat is hozzá van rendelve, honnan tudható, hogy mely beállítások lesznek alkalmazva?
-Ha több szabályzatot rendel hozzá ugyanazon felhasználóhoz vagy eszközhöz, akkor az egyes beállítások szintjén dől el, hogy mely beállítások jutnak érvényre:
 
-- A megfelelőségi házirend-beállítások mindig prioritást élveznek a konfigurációs házirend-beállításokkal szemben
+Ha két vagy több szabályzatot rendel hozzá ugyanazon felhasználóhoz vagy eszközhöz, majd a beállítást, amely érvényes történik az egyes beállítások szintjén:
 
-- Ha egy beállítás több megfelelőségi szabályzatban is szerepel, akkor a legszigorúbb megfelelőségi beállítás lesz érvényes.
+- Megfelelőségi házirend-beállítások mindig prioritást élveznek beállítások az eszközkonfigurációs profilban.
 
-- Ha egy konfigurációs szabályzatbeállítás ütközik egy másik konfigurációs szabályzatbeállítással, az ütközés az Azure Portalon is megjelenik. Ebben a helyzetben az ütközést manuálisan kell feloldani.
+- Ha egy másik megfelelőségi szabályzatban egy beállítás a kiértékeli a megfelelőségi szabályzatot, majd a szigorúbb megfelelőségi beállítás lesz érvényes.
+
+- Ha egy konfigurációs szabályzatbeállítás ütközik egy másik konfigurációs szabályzatbeállítással, az ütközés az Intune-ban jelenik meg. Ezeket az ütközéseket manuálisan kell feloldani.
 
 ## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-is-applied-to-the-app"></a>Mi történik, ha ütközés van két alkalmazásvédelmi szabályzat között? Melyik érvényes az alkalmazásra?
-Az ütközési értékek az alkalmazásvédelmi szabályzatok leginkább korlátozó beállításai, a számbeviteli mezők kivételével (ilyen például a PIN-kódmegadási próbálkozások száma az alaphelyzetbe állítás előtt). A számbeviteli mezők értékei megegyeznek a – javasolt beállításokkal a konzolban létrehozható – MAM-szabályzatok értékeivel.
 
-Akkor történik ütközés, ha két profilbeállítás megegyezik. Például előfordulhat, hogy a másolás/beillesztés beállításra két megegyező MAM-házirendet konfigurált. Ebben az esetben a másolás/beillesztés beállítás a legszigorúbb értékre lesz állítva, a többi beállítás pedig a konfiguráltak szerint lesz megadva.
+Ütköző értékek az alkalmazásvédelmi szabályzat legkorlátozóbb beállításai *kivételével* a számbeviteli mezők, például a PIN-kódmegadási próbálkozások alaphelyzetbe állítása előtt. A számbeviteli mezők vannak beállítva azonos értékei létrehozható – MAM-szabályzatoknak a javasolt beállításokkal.
 
-Ha az alkalmazáshoz hozzárendel egy profilt, és az érvénybe lép, majd egy másikat is hozzárendel, akkor az első elsőbbséget élvez és érvényben marad, a második pedig ütközést jelez. Ha egyszerre történik a hozzárendelésük, tehát nincsen korábbi profil, akkor mindkettő ütközést fog jelezni. Minden ütközésnél a legszigorúbb beállítás lesz érvényes.
+Ütközések fordulhat elő, ha két profil beállításai megegyeznek. Például előfordulhat, hogy a másolás/beillesztés beállításra két megegyező MAM-házirendet konfigurált. Ebben az esetben a másolás/beillesztés a legszigorúbb értékre lesz beállítva, a többi beállítás pedig a konfiguráltak szerint lesz alkalmazva.
+
+A szabályzatot az alkalmazáshoz és érvénybe lép. Egy második érvénybe léptetett szabályzat. Ebben a forgatókönyvben az első házirend élvez elsőbbséget, és érvényben marad. A második szabályzatot jeleníti meg az ütközést. Ha mindkettő egyszerre is vonatkozik, ami azt jelenti, hogy nincs első szabályzat, majd mindkettő ütközést jelez. Minden ütközésnél a legszigorúbb beállítás lesz érvényes.
 
 ## <a name="what-happens-when-ios-custom-policies-conflict"></a>Mi történik, ha az egyéni iOS-házirendek ütköznek?
-Az Intune nem értékeli ki a konfigurációs Apple-fájlok vagy az Open Mobile Alliance egységes erőforrás-azonosítóra (OMA-URI) vonatkozó egyéni profilok tartalmát. Csak kézbesítési mechanizmusként funkcionál.
 
-Egyéni profil hozzárendelésekor ellenőrizze, hogy a konfigurált beállítások nem ütköznek-e megfelelőségi, konfigurációs vagy más egyéni szabályzatokkal. Ha egy egyéni profilt és annak beállításai ütköznek, majd a beállítások véletlenszerűen érvényesülnek.
+Az Intune nem értékeli a konfigurációs Apple-fájlok vagy az Open Mobile Alliance egységes erőforrás-azonosítóra (OMA-URI) vonatkozó egyéni szabályzatainak tartalmát. Csak kézbesítési mechanizmusként funkcionál.
+
+Egyéni szabályzat hozzárendelése esetén győződjön meg arról, hogy a konfigurált beállítások nem ütköznek megfelelőségi, konfigurációs vagy más egyéni szabályzatokkal. Ha egyéni szabályzatot és annak beállításai ütköznek, majd a beállítások véletlenszerűen érvényesülnek.
 
 ## <a name="what-happens-when-a-profile-is-deleted-or-no-longer-applicable"></a>Mi történik, ha egy profilt törölnek, vagy az már nem érvényes?
-Amikor töröl egy profilt, vagy eltávolít egy olyan eszközt a csoportból, amely a profilhoz tartozik, akkor a profil és a beállítások a következő listákban leírtaknak megfelelően lesznek eltávolítva az adott eszközről:
+
+Amikor töröl egy profilt, vagy egy eszköz eltávolítása a csoportból, amelyen a profil, a profil és a beállítások törlődnek az eszközről leírtak szerint:
 
 - Wi-Fi, VPN, tanúsítvány és e-mail-profilok: Ezek a profilok az összes támogatott regisztrált eszközről el lesznek távolítva.
 - Minden más profiltípus esetén:  
@@ -133,13 +147,15 @@ Amikor töröl egy profilt, vagy eltávolít egy olyan eszközt a csoportból, a
     - Automatikus szinkronizálás engedélyezése roaming közben
 
 ## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>Módosítottam egy eszközkorlátozási profilt, de a módosítások még nem léptek érvénybe
-A Windows Phone-telefonok nem teszik lehetővé, hogy a beállításukat követően a felhasználó alacsonyabb biztonsági értékeket konfiguráljon az MDM vagy az EAS használatával megadott biztonsági szabályzatokhoz. Ilyen eset például, ha beállítja a **jelszó minimális karakterszámát** 8-ra, majd megpróbálja 4-re csökkenteni. Az eszközhöz már a szigorúbb profil van hozzárendelve.
 
-Ha egy kevésbé biztonságos értékre szeretné módosítani a profilt, alaphelyzetbe kell állítania a biztonsági szabályzatokat. Windows 8.1 rendszerben például pöccintsen jobbról, majd válassza a **Beállítások** > **Vezérlőpult** elemet. Válassza a **Felhasználói fiókok** kisalkalmazást. A bal oldali navigációs menü alján található egy **Biztonsági szabályzatok mellőzése** hivatkozás. Válassza ki ezt, majd a **Szabályzatok alaphelyzetbe állítása** lehetőséget.
+Beállítása után, Windows Phone-eszközök nem engedélyezett biztonsági szabályzatok beállítása, hogy a beállításukat MDM vagy az EAS használatával. Például, ha beállítja egy **legalább hány karakterből álló jelszót** 8-ra. Próbálja meg 4-re csökkenteni. A szigorúbb profil már alkalmazva van az eszközön.
 
-Előfordulhat, hogy az egyéb, például Android, Windows Phone 8.1 vagy újabb, iOS és Windows 10 rendszerű MDM-eszközöket ki kell vonni, majd újból regisztrálni kell a szolgáltatásba egy kevésbé korlátozó profil hozzárendeléséhez.
+Ha módosítani szeretné a profil egy kevésbé biztonságos értékre, alaphelyzetbe kell állítania a biztonsági szabályzatok. Ha például a Windows 8.1, az asztalon, pöccintsen jobbról > Válasszon **beállítások** > **Vezérlőpult**. Válassza a **Felhasználói fiókok** kisalkalmazást. A bal oldali navigációs menü van egy **biztonsági házirendek mellőzése** (irányába alsó) hivatkozásra. Válassza ki ezt, majd a **Szabályzatok alaphelyzetbe állítása** lehetőséget.
+
+Előfordulhat, hogy egyéb MDM-eszközöket, például Android, Windows Phone 8.1 és újabb verziók, iOS és Windows 10-es kell kell vonni, majd az Intune-ba való egy kevésbé korlátozó profil.
 
 ## <a name="some-settings-in-a-windows-10-profile-return-not-applicable"></a>Egyes beállítások Windows 10-profilban adja vissza "Nem alkalmazható"
+
 Egyes beállítások Windows 10 rendszerű eszközökön is állapotúként "Nem alkalmazható". Ha ez történik, beállítását, hogy a verzió vagy az eszközön futó Windows-kiadás nem támogatott. Ez az üzenet a következő okok miatt fordulhat elő:
 
 - A beállítás csak a Windows újabb verziói, és nem a jelenlegi operációs rendszer (OS) az eszközön lévő verziója érhető el.
@@ -148,4 +164,5 @@ Egyes beállítások Windows 10 rendszerű eszközökön is állapotúként "Nem
 A verzió és a Termékváltozat vonatkozó követelményeket a különböző beállításokkal kapcsolatos további információkért tekintse meg a [konfigurációs szolgáltató (CSP) hivatkozás](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).
 
 ## <a name="next-steps"></a>További lépések
+
 További segítségre van szüksége? Ismerje meg, [hogyan kérhet támogatást az Intune-hoz](get-support.md).

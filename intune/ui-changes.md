@@ -7,7 +7,7 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 1/4/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 218c1959649e5dd8c56c52b414aeeec02c6f4a42
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 442eca614f1f9bbdce0b88bb068bfc1dceb69c1c
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55841759"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57234924"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Hová kerültek az Intune-funkciók az Azure-ban?
 Az Intune Azure Portalra való költöztetésekor éltünk a lehetőséggel, és logikusabban rendeztünk el néhány feladatot. Minden ilyen előrelépés azzal jár, hogy meg kell tanulni az új elrendezést. Ez az útmutató azoknak készült, akik jól ismerik a klasszikus Intune-portált, és szeretnék megtudni, hogyan végezhetik el a feladatokat az Azure Portalbeli Intune-ban. Ha a cikk nem tartalmazza az Ön által keresett információt, írja meg a lap alján hozzászólásban, hogy pótolhassuk.

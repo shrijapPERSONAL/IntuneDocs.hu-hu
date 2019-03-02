@@ -6,7 +6,7 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/28/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4f93ab1cd2c662cb97dafd19684b353268087f6
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: a8b72c4adcba44c1292fc77646c5c1c159d8812e
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842575"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57236160"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Napló adatokat küldeni a tárolási, az event hubs, vagy a log analytics az Intune-ban (előzetes verzió)
 
-A Microsoft Intune tartalmazza a beépített naplók, amelyek a környezet információkkal. **Auditnaplók** részletek megjelenítése a különböző események vagy a feladatokat, amelyek az Intune-ban történik. **Műveleti naplók (előzetes verzió)** részletek megjelenítése a felhasználók és eszközök számára, hogy sikeresen (vagy sikertelen) regisztrálásához.
+A Microsoft Intune tartalmazza a beépített naplók, amelyek a környezet információkkal. **Auditnaplók** részletek megjelenítése a különböző események vagy a feladatokat, amelyek az Intune-ban történik. **Műveleti naplók (előzetes verzió)** részletek megjelenítése a felhasználók és eszközök számára, hogy sikeresen (vagy sikertelen) szeretne regisztrálni, valamint a nem megfelelő eszközök részleteiért.
 
 Ezek a naplók az Azure Monitor-szolgáltatások, beleértve a storage-fiókok, az event hubs és a log analytics is lehet küldeni. Pontosabban a következőket teheti:
 
@@ -82,7 +82,7 @@ Attól függően, hol szeretné irányítani a naplózási adatokat szükség az
 
       A storage-fiókot választja, majd is adja meg szeretné megőrizni az adatokat (megőrzés), hogy hány nap. Örökre megőrizni az adatokat, állítsa **megőrzés (nap)** való `0` (nulla).
 
-    - **NAPLÓ** > **OperationalLogs**: (Előzetes verzió) műveleti naplók megjelenítése sikeres vagy sikertelen, a felhasználók és eszközök regisztrálása az Intune-ban. Válassza ezt a beállítást, a beléptetési naplókat küld a tárfiókot, az eseményközpontok felé, vagy a log analytics.
+    - **NAPLÓ** > **OperationalLogs**: Műveleti naplók (előzetes verzió) a sikeres vagy sikertelen, a felhasználók és eszközök regisztrálása az Intune-ban, valamint a nem megfelelő eszközök részleteiért megjelenítése. Válassza ezt a beállítást, a beléptetési naplókat küld a tárfiókot, az eseményközpontok felé, vagy a log analytics.
 
       A storage-fiókot választja, majd is adja meg szeretné megőrizni az adatokat (megőrzés), hogy hány nap. Örökre megőrizni az adatokat, állítsa **megőrzés (nap)** való `0` (nulla).
 

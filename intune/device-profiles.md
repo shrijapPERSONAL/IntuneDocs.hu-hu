@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 02/28/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 016b59a915058c3f2d0647a72e3ead224a010500
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 7f8f19b1672f8bbbc65db9604c113a3b69813cc4
+ms.sourcegitcommit: 7cfe23215eabf30cbaab733a403012a0ba05f599
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742439"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57211397"
 ---
-# <a name="apply-features-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Az eszközök Microsoft Intune-ban eszközprofilok segítségével funkciók beállításainak alkalmazása
+# <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Az eszközök Microsoft Intune-ban eszközprofilok segítségével szolgáltatásainak és beállításainak alkalmazása
+
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 A Microsoft Intune tartalmazza a beállításokat és funkciókat, engedélyezése vagy letiltása a különböző eszközökön, a szervezeten belül. Ezek a beállítások és funkciók "profilok" kerülnek. Különböző eszközök, profilokat hozhat létre különböző platformokon, beleértve az iOS, Android, és a Windows és majd a alkalmazni a profil a szervezetnél található eszközökön az Intune.
 
-Néhány példa profilok használatára:
+A mobileszköz-felügyelet (MDM) megoldás részeként használja ezeket a konfigurációs profilokat különböző feladatok végrehajtásához. Néhány példa profilok használatára:
 
 - Windows 10 rendszerű eszközökön használja az Internet Explorerben, amely blokkolja az ActiveX-vezérlők profilsablon.
 - Az iOS és MacOS rendszerű eszközökön engedélyezése a felhasználók számára a szervezetében használt AirPrint-nyomtatókra.
@@ -93,6 +95,32 @@ Ez a cikk egy profil létrehozásának lépéseit sorolja fel, és áttekintést
 
 5. Amikor végzett, válassza ki a **OK** > **létrehozás** a módosítások mentéséhez.
 
+#### <a name="refresh-cycle-times"></a>Frissítse a ciklusok idejét
+
+Az Intune a következő adatfrissítési ciklusok konfigurációs profilokat a frissítések kereséséhez használja:
+
+| Platform | A frissítés|
+| --- | --- |
+| iOS | 6 óránként |
+| macOS | 6 óránként |
+| Android | 8 óránként |
+| Eszközként regisztrált Windows 10 számítógépek | 8 óránként |
+| Windows Phone | 8 óránként |
+| Windows 8.1 | 8 óránként |
+
+Ha az eszköz nemrég lett regisztrálva, a bejelentkezés gyakrabban fusson:
+
+| Platform | Gyakoriság |
+| --- | --- |
+| iOS | 6 órán át 15 perceként, majd 6 óránként |  
+| Mac OS X | 6 órán át 15 perceként, majd 6 óránként | 
+| Android | 15 percen át 3 percenként, majd 2 órán át 15 percenként, majd 8 óránként | 
+| Windows Phone | 15 percen át 5 percenként, majd 2 órán át 15 percenként, majd 8 óránként | 
+| Eszközként regisztrált Windows-számítógépek | 30 percen át 3 percenként, majd 8 óránként | 
+
+Bármikor a felhasználók nyissa meg a céges portál alkalmazást, és az eszköz szinkronizálása érdekében az profil frissítések azonnali ellenőrzésére.
+
+### 
 A különböző típusaival kapcsolatos további információkért olvassa el a következő szakaszok ebben a cikkben.
 
 ## <a name="administrative-templates-preview"></a>Felügyeleti sablonok (előzetes verzió)
@@ -255,7 +283,7 @@ Ez a funkció a következőket támogatja:
 
 ## <a name="shared-multi-user-device"></a>Többfelhasználós megosztott eszköz
 
-[Windows 10-es](shared-user-device-settings-windows.md) és [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) eszközök kezelése több felhasználóval, más néven megosztott eszközök vagy a megosztott számítógépek beállításokat tartalmaz. Amikor egy felhasználó bejelentkezik az eszközre, az úgy dönt, ha a felhasználó az alvási beállítások módosítása, vagy mentse a fájlt az eszközön. Egy másik példában létrehozhat egy szabályzatot, amely törli az inaktív hitelesítő adatait az ezzel helyet Windows HoloLens-eszközök.
+[Windows 10-es](shared-user-device-settings-windows.md) és [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) eszközök kezelése több felhasználóval, más néven megosztott eszközök vagy a megosztott számítógépek beállításokat tartalmaz. Amikor egy felhasználó bejelentkezik az eszközre, az úgy dönt, ha a felhasználó az alvási beállítások módosítása, vagy mentse a fájlt az eszközön. Egy másik példában létrehozhat olyan profilt, amely törli az inaktív hitelesítő adatait az ezzel helyet Windows HoloLens-eszközök.
 
 Ezek a beállítások megosztott több felhasználó-eszköz lehetővé teszi a rendszergazda szabályozhatja az eszköz funkcióit, és a megosztott eszközök Intune-nal kezelheti.
 
@@ -280,5 +308,5 @@ Ez a funkció a következőket támogatja:
 [A profilok kezelésével](device-profile-monitor.md) ellenőrizheti az eszközök állapotát és a hozzárendelt profilokat. Az ütközéseket okozó beállítások és az ezeket a beállításokat tartalmazó profilok azonosításával egyszerűbben lehet az ütközéseket elhárítani. [Gyakori problémák és megoldásuk](device-profile-troubleshoot.md) a Q & A segítségével dolgozhat a profilokat, többek között, mi történik, ha egy profilt törölnek, milyen okok értesítéseket küldeni az eszközöket, és egyéb biztosít.
 
 ## <a name="next-steps"></a>További lépések
-A kezdéshez válassza ki a platformot:
 
+Válassza ki a platformot, és a kezdéshez.

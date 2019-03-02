@@ -6,8 +6,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/20/2019
-ms.topic: article
+ms.date: 02/28/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c586f7f4d72db5d193f02dca06aa868c73cbb09e
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 6130e6fde9f6ddb8515914da049b5c7512c401a7
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742499"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57232811"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Önálló Intune - Win32-Alkalmazáskezelés
 
@@ -255,6 +255,16 @@ Ha szükséges, bemutató végfelhasználói bejelentési értesítések egy alk
 Az ügynöknaplók általában a következő helyen érhetők el az ügyfélgépen: `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. A `CMTrace.exe` segítségével megtekintheti ezeket a naplófájlokat. A *CMTrace.exe* az [SCCM-ügyféleszközök](https://docs.microsoft.com/sccm/core/support/tools) közül tölthető le. 
 
 ![Képernyőkép az ügynököt a naplók az ügyfélszámítógépen](./media/apps-win32-app-10.png)    
+
+> [!IMPORTANT]
+> Ahhoz, hogy a megfelelő telepítéséhez és futtatásához a LOB-Win32-alkalmazások, a kártevőirtó-beállítások a következő könyvtárait kizárása kell éppen beolvasott:<p>
+> **A X64 ügyfélgépek**:<br>
+> *C:\Program Files (x86)\Microsoft Intune Management Extension\Content*<br>
+> *C:\windows\IMECache*
+>  
+> **A X86 ügyfélgépek**:<br>
+> *C:\Program Files\Microsoft Intune Management Extension\Content*<br>
+> *C:\windows\IMECache*
 
 Win32-alkalmazások hibaelhárításával kapcsolatos további információkért lásd: [Win32 alkalmazás telepítési hibák elhárítása](troubleshoot-app-install.md#win32-app-installation-troubleshooting).
 

@@ -6,7 +6,7 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 02/22/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ff07dfa48ab213bc65afc58708f490a80fb5ba8
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 24286ab4d491bc3c5e6ecc90e881e95c1af2d2fd
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742516"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57233933"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>A feltételes hozzáférés az Intune-ban a Windows Defender ATP megfelelőségi kényszerítése
 
@@ -130,7 +130,7 @@ A megfelelőségi szabályzat határozza meg egy eszközön a kockázat elfogadh
 A feltételes hozzáférési szabályzat akkor tiltja az erőforrásokhoz való hozzáférést, *ha* az eszköz nem megfelelő. Így érhető el, hogy a fenyegetettségi szintet túllépő eszközök ne férjenek hozzá olyan vállalati erőforrásokhoz, mint a SharePoint vagy az Exchange Online.  
 
 > [!TIP]  
-> Feltételes hozzáférés egy Azure Active Directory (Azure AD) technológia. A feltételes hozzáférés csomópont elérhető *Intune* van ugyanazon a csomóponton, elérhető *Azure ad-ben*.  
+> A feltételes hozzáférés az Azure Active Directory (Azure AD) technológiája. Az *Intune-ból* elérhető feltételes hozzáférési csomópont ugyanaz a csomópont, amelyet az *Azure AD-ből* is el lehet érni.  
 
 1. Az a [az Azure portal](https://portal.azure.com), nyissa meg **Intune** > **feltételes hozzáférési** > **új szabályzat**.
 2. Adjon meg **Nevet** a szabályzathoz és válassza a **Felhasználók és csoportok** lehetőséget. A befoglalási vagy kizárási lehetőségek használatával jelölje ki a szabályzathoz rendelendő csoportokat majd válassza a **Kész** lehetőséget.

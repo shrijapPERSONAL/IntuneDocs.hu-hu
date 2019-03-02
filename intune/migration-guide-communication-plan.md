@@ -7,7 +7,7 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d6c3190f0bac90ef87fcc411423611251c54338e
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: a55cce627e02730ab3f217381ab8d6f92ddc3bb1
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842065"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57238130"
 ---
 # <a name="plan-communications"></a>A kommunikáció tervezése
 
@@ -58,6 +58,8 @@ Az Intune további sablonokat nyújt, amelyeket az eszközök regisztrálásána
 -   Az [Intune végfelhasználói regisztrálási sablon rendszergazdák számára](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) testreszabható Word-dokumentum ismerteti az Android, iOS és Mac rendszerű eszközök regisztrálását az Intune-ban.
 
 -   A [FastTrack az EMS útmutatóihoz és e-mail-üzeneteihez](https://gallery.technet.microsoft.com/FastTrack-for-EMS-How-To-f170da4c) a vállalat emblémájával személyre szabható, ezzel is elősegítve az Intune és az EMS szervezeten belüli bevezetését.
+
+-   Megosztás a [céges portál alkalmazás URL-címe](http://go.microsoft.com/fwlink/?LinkID=396941) az Android, iOS és Windows felhasználókkal. Az URL-címet átirányítja a megfelelő vállalati portál alkalmazást az Android, iOS és Windows-eszközök listázása.
 
 ## <a name="next-steps"></a>További lépések
 

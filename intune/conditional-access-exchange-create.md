@@ -7,7 +7,7 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 02/22/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fc8bbcdd9e6fa8174ff4b6aa7fb0ae20b14fc184
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 2bf32bfb885433c670d9a33cd2473ef38d9c12a0
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742856"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57229462"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Feltételes hozzáférési szabályzat létrehozása a helyszíni Exchange-hez és régi Dedikált Exchange Online-hoz
 
@@ -117,7 +117,7 @@ A natív **Posta** alkalmazás a Windows 8.1-es és újabb verzióiban (az Intun
 
 ## <a name="create-azure-ad-conditional-access-policies-in-intune"></a>Azure AD feltételes hozzáférési szabályzatok létrehozása az Intune-ban
 
-Feltételes hozzáférés egy Azure Active Directory (Azure AD) technológia. A feltételes hozzáférés csomópont elérhető *Intune* van ugyanazon a csomóponton, elérhető *Azure ad-ben*.  
+A feltételes hozzáférés az Azure Active Directory (Azure AD) technológiája. Az *Intune-ból* elérhető feltételes hozzáférési csomópont ugyanaz a csomópont, amelyet az *Azure AD-ből* is el lehet érni.  
 
 > [!IMPORTANT]
 > Ahhoz, hogy Azure AD feltételes hozzáférési szabályzatokat hozhasson létre az Intune Azure Portal webhelyen, Azure AD Premium szintű előfizetésre van szükség.

@@ -1,12 +1,12 @@
 ---
 title: Eszközmegfelelőségi szabályzatok az Azure-beli Microsoft Intune-ban | Microsoft Docs
-description: Az eszközmegfelelőségi szabályzatok használatának követelményei, az állapotok és a súlyossági szintek áttekintése, a „Türelmi időszakban” állapot használata, a feltételes hozzáférés használata, a szabályzat nélküli eszközök kezelése, illetve az Azure Portal és a Microsoft Intune-beli klasszikus portál megfelelőségi lehetőségeinek különbségei.
+description: Használja az eszközmegfelelőségi szabályzatok állapotát és a súlyossági szintek, a türelmi időszakban állapot, a feltételes hozzáférési szabályzat és megfelelőség az Azure Portalon a különbségeket nélküli eszközök kezelése használata használatával áttekintése – első lépések és a Microsoft Intune klasszikus portálon
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2019
-ms.topic: article
+ms.date: 02/28/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -15,28 +15,27 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2a3a9838043d4e9b69c6369da87a6f54087f76c
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: c3db2b41b8203b74c0892793a4631dbae691a454
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850002"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57234222"
 ---
-# <a name="get-started-with-device-compliance-policies-in-intune"></a>Az Intune eszközmegfelelőségi szabályzatai – első lépések
+# <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Beállíthat szabályokat az erőforrásokhoz való hozzáférés engedélyezése a munkahelyi Intune-eszközök
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Számos mobileszköz-felügyelet (MDM) megoldás segítségével a szervezeti adatok védelme azzal, hogy a felhasználók és eszközök bizonyos követelmények teljesítéséhez. Az Intune-ban a szolgáltatás neve "megfelelőségi szabályzatok". Megfelelőségi szabályzatok határozzák meg, a szabályokat és beállításokat, amelyeket a felhasználók és eszközök megfelelőségéhez meg kell felelnie. Feltételes hozzáféréssel kombinálva, a rendszergazdák képes blokkolni a felhasználók és eszközök, amelyek nem felelnek meg a szabályokat. Ha például az Intune-rendszergazdák lehet szükség:
+Számos mobileszköz-felügyelet (MDM) megoldás segítségével a szervezeti adatok védelme azzal, hogy a felhasználók és eszközök bizonyos követelmények teljesítéséhez. Az Intune-ban a szolgáltatás neve "megfelelőségi szabályzatok". Megfelelőségi szabályzatok határozzák meg, a szabályokat és beállításokat, amelyeket a felhasználók és eszközök megfelelőségéhez meg kell felelnie. Feltételes hozzáféréssel kombinálva, a rendszergazdák képes blokkolni a felhasználók és eszközök, amelyek nem felelnek meg a szabályokat. 
+
+Ha például az Intune-rendszergazdák lehet szükség:
 
 - A végfelhasználók jelszó segítségével elérni a szervezeti adatokat mobileszközökön
-
 - Az eszköz nincs jailbreakelve vagy rootolással feltört
-
 - Az eszköz egy minimális és maximális operációsrendszer-verzió
-
 - Az eszköz, vagy az alatt a fenyegetettségi szint
 
-Eszközmegfelelőségi szabályzatok az eszközök megfelelőségi állapotának figyelésére is használható.
+Eszközök megfelelőségi állapotának figyelése a szervezet is használhatja ezt a szolgáltatást.
 
 > [!IMPORTANT]
 > Intune az eszköz bejelentkezési ütemezés az összes megfelelőségi értékelést követi az eszközön. [További információ az eszköz bejelentkezési ütemezés](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
@@ -96,14 +95,26 @@ Többet is megtudhat az [Azure AD-regisztrációs folyamatról](https://docs.mic
 
 A megfelelőség ellenőrzésekor az Intune az azonos frissítési ciklus konfigurációs profilokat használja. Általában a idők a következők:
 
-- iOS: 6 óránként
-- macOS: 6 óránként
-- Android:: 8 óránként
-- Eszközként regisztrált Windows 10-es számítógépek: 8 óránként
-- Windows Phone: 8 óránként
-- Windows 8.1: 8 óránként
+| Platform | A frissítés|
+| --- | --- |
+| iOS | 6 óránként |
+| macOS | 6 óránként |
+| Android | 8 óránként |
+| Eszközként regisztrált Windows 10 számítógépek | 8 óránként |
+| Windows Phone | 8 óránként |
+| Windows 8.1 | 8 óránként |
 
-A megfelelőségi ellenőrzés eszközök regisztrálás után azonnal gyakran történik.
+Ha az eszköz nemrég lett regisztrálva, a megfelelőségi ellenőrzést a gyakrabban fusson:
+
+| Platform | Gyakoriság |
+| --- | --- |
+| iOS | 6 órán át 15 perceként, majd 6 óránként |  
+| Mac OS X | 6 órán át 15 perceként, majd 6 óránként | 
+| Android | 15 percen át 3 percenként, majd 2 órán át 15 percenként, majd 8 óránként | 
+| Windows Phone | 15 percen át 5 percenként, majd 2 órán át 15 percenként, majd 8 óránként | 
+| Eszközként regisztrált Windows-számítógépek | 30 percen át 3 percenként, majd 8 óránként | 
+
+Címen bármikor, a felhasználók nyissa meg a céges portál alkalmazást, és az eszköz szinkronizálása érdekében bármikor jelentkezhetnek a szabályzat.
 
 ### <a name="assign-an-ingraceperiod-status"></a>Türelmi időszakban állapot hozzárendelése
 

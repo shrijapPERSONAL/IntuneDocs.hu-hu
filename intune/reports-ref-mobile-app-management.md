@@ -7,7 +7,7 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/20/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19c9df658183757955bad5d02f121fea17be6f18
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: a21194b218cc7df230bf1ef1969b8d4483940d75
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846179"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57238761"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Mobilalkalmazás-felügyelet (MAM) típusú entitások referenciája
 
@@ -133,6 +133,6 @@ A **MamPlatform** entitás azoknak a platformoknak a nevét és típusát sorolj
 |----------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
 |        PlatformKey         |     A platform egyedi azonosítója az adattárházban – helyettes kulcs.      |                           123                           |
 |          Platform          | A platform egyedi azonosítója – a PlatformKey-hez hasonló, de természetes kulcs. |                           123                           |
-|        PlatformName        |                                   A platform neve                                   | Nem érhető el <br>None <br>Windows <br>IOS <br>Android. |
+|        PlatformName        |                                   A platform neve                                   | Nem érhető el <br>Nincsenek <br>Windows <br>IOS <br>Android. |
 | RowLastModifiedDateTimeUTC | A platform adattárházban történt utolsó módosításának dátuma és időpontja (UTC).  |                 2016.11.23. 12:00:00                  |
 
