@@ -28,6 +28,6 @@
 > [!NOTE]
 > Az Intune nem használható a Windows Server operációs rendszer felügyeletére. Otthoni Termékváltozat nem támogatja az összes Intune-funkciók
 
-Enterprise Mobility + Security (EMS) rendelkező ügyfelek is használhatják [Azure Active Directory (Azure AD) a Windows 10-es eszközök regisztrálásához](/intune/windows-enroll.md).
+Enterprise Mobility + Security (EMS) rendelkező ügyfelek is használhatják [Azure Active Directory (Azure AD) a Windows 10-es eszközök regisztrálásához](/intune/windows-enroll).
 
 

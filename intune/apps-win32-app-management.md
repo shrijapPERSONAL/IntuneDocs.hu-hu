@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 03/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6130e6fde9f6ddb8515914da049b5c7512c401a7
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 35116ccf13cf94960f02c3aff6d8c7c66fbe0e48
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232811"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335224"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Önálló Intune - Win32-Alkalmazáskezelés
 
@@ -236,7 +236,7 @@ Ezzel teljesítette a Win32-alkalmazás Intune-hoz történő hozzáadásának l
 
 ## <a name="delivery-optimization"></a>Kézbesítésoptimalizálás
 
-A Windows 10 RS3 és fent az ügyfelek letöltik Intune Win32 alkalmazás tartalma egy kézbesítési optimalizálás összetevő a Windows 10-es ügyfél használatával. Kézbesítésoptimalizálás társ-társ funkciókat biztosít, amelyek alapértelmezés szerint van kapcsolva. Kézbesítésoptimalizálás konfigurálható a csoportházirend és a jövőben az Intune MDM-n keresztül További információkért lásd: [kézbesítés optimalizálása Windows 10-es](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
+A Windows 10 1709-es és újabb ügyfelek letöltik egy kézbesítési optimalizálás összetevő használatával a Windows 10-es ügyfél Intune Win32 alkalmazás tartalma. Kézbesítésoptimalizálás társ-társ funkciókat biztosít, amelyek alapértelmezés szerint van kapcsolva. Kézbesítésoptimalizálás konfigurálható a csoportházirend és az Intune-eszközkonfiguráció keresztül. További információkért lásd: [kézbesítés optimalizálása Windows 10-es](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
 
 ## <a name="install-required-and-available-apps-on-devices"></a>Kötelező és elérhető alkalmazások telepítése az eszközökön
 

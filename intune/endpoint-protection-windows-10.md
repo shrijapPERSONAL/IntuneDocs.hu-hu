@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/28/2018
+ms.date: 03/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2aad4684b1ae0db358a5e0a31a362d610bf109c1
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 4794adda447754b5dc72ff1b320ec69553a8b55a
+ms.sourcegitcommit: e8c32bd6db2560570d1e1733f999ae3b2c026908
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230873"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57305510"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>A Windows 10 (és újabb verziók) beállítások az Intune-eszközök védelméhez
 
@@ -46,7 +46,7 @@ A Microsoft Edge használata közben a Windows Defender alkalmazásőr megvédi 
 
 Az Alkalmazásőr csak a 64 bites Windows 10-eszközöknél érhető el. Ennek a profilnak a használatával telepítve lesz az Alkalmazásőr aktiválásához szükséges Win32-összetevő.
 
-- **Alkalmazásőr**: **Engedélyezése** , kapcsolja be ezt a szolgáltatást, amely nem jóváhagyott helyeket Hyper-V virtualizált böngészési tárolóban nyitja meg. A **Nincs konfigurálva** (alapértelmezett) érték azt jelenti, bármely – jóváhagyott és nem jóváhagyott – webhely megnyitható az eszközön.
+- **Alkalmazásőr**: **Az Edge-hez engedélyezett** , kapcsolja be ezt a szolgáltatást, amely nem megbízható webhelyek egy Hyper-V virtualizált böngészési tárolóban nyitja meg. **Nincs konfigurálva** (alapértelmezett) azt jelenti, hogy minden hely (megbízható és nem megbízható) megnyitja az eszközön.
 - **A vágólap viselkedése**: Válassza ki a helyi számítógép és az Alkalmazásőr virtuális böngészőjében között milyen másolási és beillesztési műveletek engedélyezettek.
 - **Vállalati webhelyeken lévő külső tartalom**: **Blokk** betöltését nem jóváhagyott webhelyekről származó tartalom. A **Nincs konfigurálva** (alapértelmezett) érték azt jelenti, hogy a nem vállalati webhelyek megnyílhatnak az eszközön.
 - **Nyomtatás virtuális böngészőből**: Válasszon **engedélyezése** Igen PDF-, XPS, helyi, és a hálózati nyomtatók a a virtuális böngészőben megjelenő tartalom nyomtatását is. A **Nincs konfigurálva** (alapértelmezett) érték letilt minden nyomtatási funkciót.
@@ -309,7 +309,15 @@ Rosszindulatú alkalmazások és fenyegetések, például zsarolóprogramok elle
 
 ### <a name="network-filtering"></a>Hálózatszűrés
 
-Bármely alkalmazásból letilthatja az alacsony megbízhatóságú IP-címekre vagy tartományokba irányuló kimenő kapcsolatokat.
+- **Hálózatvédelem**: IP-címek vagy tartományok védelmet biztosít a kimenő kapcsolatok bármely alkalmazásból. A célja a végfelhasználók szembeni hozzáféréssel rendelkező alkalmazások folytathatnak, biztonsági rés kiaknázása elleni futtató helyek és az interneten rosszindulatú tartalmat. Azt is megakadályozza, hogy külső böngészők veszélyes helyek csatlakozik.
+
+  A választható lehetőségek:
+
+  - A **Nincs konfigurálva** (alapértelmezett) érték letiltja a funkciót. Felhasználók és alkalmazások nincsenek letiltva veszélyes tartományokhoz csatlakozzon. A rendszergazdák nem láthatják ezt a tevékenységet, a Windows Defender biztonsági központban.
+  - **Engedélyezése** bekapcsolja a hálózatvédelem, és blokkolja-felhasználók és alkalmazások veszélyes tartományokhoz csatlakozzon. A rendszergazdák láthatják ezt a tevékenységet, a Windows Defender biztonsági központban.
+  - **Csak naplózás**: Felhasználók és alkalmazások nincsenek letiltva veszélyes tartományokhoz csatlakozzon. A rendszergazdák láthatják ezt a tevékenységet, a Windows Defender biztonsági központban.
+
+  [Defender/EnableNetworkProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
 
 ### <a name="exploit-protection"></a>Biztonsági rés kiaknázása elleni védelem
 

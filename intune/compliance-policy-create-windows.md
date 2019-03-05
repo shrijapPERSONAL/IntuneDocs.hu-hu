@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 03/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f965ff2287cd3e6fcf3e3f3ae1b577fb33081716
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: d27b4389318a8b4caeb86dec9c2c79efa0ac89f1
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230108"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335037"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Windowsos eszközök megfelelőségi szabályzatainak hozzáadása az Intune-ban
 
@@ -120,7 +120,7 @@ Windows 8.1-es számítógépek esetén például a visszaadott verzió a **3**-
 - **Az eszközön engedélyezni kell a biztonságos rendszerindítás szükséges**: Amikor a biztonságos rendszerindítás engedélyezett, az a rendszert gyárilag megbízható állapotban végzett rendszerindításra kényszeríti. Ezenkívül amikor a biztonságos rendszerindítás engedélyezett, a gép rendszerindításához használt fő összetevőknek a megfelelő titkosított aláírásokra van szükségük, amelyekben az eszközt gyártó szervezet megbízik. Az UEFI belső vezérlőprogram ellenőrzi az aláírást, mielőtt engedélyezi a számítógép elindítását. Ha a fájlok vannak illetéktelenül, amely megszakítja az aláírás feltörésével, a rendszer nem indul.
 
   > [!NOTE]
-  > A **Biztonságos rendszerindítás engedélyezésének megkövetelése az eszközön** beállítás a TPM 1.2- és 2.0-eszközökön támogatott. Azon eszközök esetében, amelyek nem támogatják a TPM 2.0-s vagy újabb verzióit, az Intune-ban a szabályzat állapotánál a **Nem megfelelő** érték jelenik meg. Ez a Windows 10 [eszközállapot-igazolási](https://docs.microsoft.com/windows/security/information-protection/tpm/trusted-platform-module-overview#device-health-attestation) szolgáltatásának egyik korlátozása miatt van.
+  > A **szükséges a biztonságos rendszerindítás engedélyezésének az eszközön** beállítás az egyes TPM 1.2-es és 2.0-s eszközökön támogatott. Azon eszközök esetében, amelyek nem támogatják a TPM 2.0-s vagy újabb verzióit, az Intune-ban a szabályzat állapotánál a **Nem megfelelő** érték jelenik meg. A támogatott verziókról további információkért lásd: [Eszközállapot-igazolás](https://docs.microsoft.com/windows/security/information-protection/tpm/trusted-platform-module-overview#device-health-attestation).
 
 - **Kódintegritás megkövetelése**: Kódintegritási szolgáltatás ellenőrzi a illesztők vagy rendszerfájlok integritását minden alkalommal, amikor azt betölti a memóriába. A kódintegritás észleli, ha az aláíratlan illesztőprogramot vagy rendszerfájlt töltődött be a kernelbe. Azt is észleli, ha egy rendszerfájlt rendszergazdai jogosultságokkal rendelkező felhasználói fiók által futtatott rosszindulatú szoftver módosul.
 

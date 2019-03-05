@@ -18,21 +18,18 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4666779620aa0404c12107a374280c403d66bec3
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 30135c69b95ba9731682af52ad0da3bb9df193e9
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840212"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335071"
 ---
 # <a name="sync-your-windows-device-manually"></a>Windows-eszköz manuális szinkronizálása
 
 Ha nem elég gyors az alkalmazástelepítés, kezdeményezzen manuális eszközszinkronizálást. A manuális szinkronizálással kényszerítheti az eszközt az Intune-hoz való csatlakozásra és a legújabb frissítések és kommunikáció letöltésére. Az eszközszinkronizálás után felgyorsulhat a telepítés.
 
-Az Intune a Céges portál alkalmazásból, az asztali tálcáról vagy a Start menüből, valamint az eszköz Beállítások alkalmazásából támogatja a manuális szinkronizálást. 
-
-A Céges portál alkalmazás csak a Windows 10 alkotói frissítését (1703) vagy újabb verziót futtató eszközökön érhető el. 
-* [Szinkronizálás a Céges portál alkalmazásból](#Sync-from-Company-Portal-app-for-Windows)  
+Az Intune a Céges portál alkalmazásból, az asztali tálcáról vagy a Start menüből, valamint az eszköz Beállítások alkalmazásából támogatja a manuális szinkronizálást. A Céges portál alkalmazás csak a Windows 10 alkotói frissítését (1703) vagy újabb verziót futtató eszközökön érhető el. 
 
 Minden Windows-eszköz szinkronizálható az eszköz Beállítások alkalmazásából, beleértve a következőket:
 
@@ -75,11 +72,11 @@ A Microsoft HoloLenses, Windows 10 asztali verziós, Windows 10 Mobile-os vagy W
 
 3. A Windows 10 több asztali verzióval is rendelkezik. Hasonlítsa össze a képernyőjét a lenti képernyőképekkel, így megtudhatja, melyik útmutatást kell követnie. 
 
-    * Ha a képernyőjén **Hozzáférés munkahelyi vagy iskolai rendszerhez** felirat látható, ugorjon a [Hozzáférés munkahelyi vagy iskolai rendszerhez](#access-work-or-school) szakaszhoz.
+    * Ha a képernyőjén **Hozzáférés munkahelyi vagy iskolai rendszerhez** felirat látható, ugorjon a [Hozzáférés munkahelyi vagy iskolai rendszerhez](#access-work-or-school-steps) szakaszhoz.
 
     ![A Hozzáférés munkahelyi vagy iskolai rendszerhez lehetőség a beállítások alkalmazásban](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-    * Ha a képernyőn a **Munkahelyi hozzáférés** felirat jelenik meg, ugorjon a [Munkahelyi hozzáférés](#work-access) szakaszhoz.  
+    * Ha a képernyőn a **Munkahelyi hozzáférés** felirat jelenik meg, ugorjon a [Munkahelyi hozzáférés](#work-access-steps) szakaszhoz.  
 
     ![Munkahelyi hozzáférés kiválasztása a fiók típusaként](./media/win10pc-sync-3-work-access.png)
 

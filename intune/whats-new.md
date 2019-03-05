@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 83168acc6653f750b9cf32d91602464b62aebcfe
-ms.sourcegitcommit: 0f4247914f55349f618f6176a4cdca08503215f5
+ms.openlocfilehash: 9a6f40ba7ea5e229a4c4d3f25d182d24b2a0a812
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56955629"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335173"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -736,6 +736,9 @@ A Windowsos üzletági alkalmazások fájlnévkiterjesztései közé tartozik m�
 #### <a name="windows-10-app-deployment-using-intune----2309001---"></a>Windows 10-es alkalmazások telepítése az Intune-nal <!-- 2309001 -->
 Az üzleti alkalmazások és a Vállalati Microsoft Áruházbeli alkalmazások meglévő támogatására építve a rendszergazdák a szervezetük legtöbb meglévő alkalmazását az Intune segítségével telepíthetik a végfelhasználók Windows 10 rendszerű eszközeire. A rendszergazdák a Windows 10-es felhasználók számára több különböző formátumban adhatják hozzá, telepíthetik vagy eltávolíthatják az alkalmazásokat, például MSI-k, setup.exe fájlok vagy az MSP használatával. Az Intune a letöltést és a telepítést megelőzően kiértékeli a követelményszabályokat és a Windows 10 Műveletközpontján keresztül értesíti a végfelhasználókat a telepítés állapotáról vagy az újraindítási követelményekről. Ez a funkció gyakorlatilag lehetővé teszi, hogy az ez iránt érdeklődő szervezetek az Intune-ba és a felhőbe helyezzék át e műveleteiket. Ez a funkció jelenleg nyilvános előzetes verzióban érhető el, és várhatóan a következő néhány hónap során jelentős új képességekkel fog bővülni. 
 
+#### <a name="app-protection-policy-app-settings-for-web-data----2662995---"></a>Az Alkalmazásvédelmi szabályzat (APP) beállításai webes adatokhoz <!-- 2662995 -->
+A webes tartalmakra vonatkozó APP szabályzatok beállításait az Android- és iOS-eszközökön is frissítjük, hogy hatékonyabban kezelhetők legyenek a webes http- és https-hivatkozások, valamint az univerzális iOS-hivatkozásokon és Android-alkalmazáshivatkozásokon keresztüli adatátvitel. 
+
 #### <a name="end-user-device-and-app-content-menu----2771453---"></a>Eszközök és alkalmazások végfelhasználói helyi menüje <!-- 2771453 -->
 A végfelhasználók mostantól az eszközök és alkalmazások helyi menüjéből is elvégezhetnek olyan gyakori műveleteket, mint például egy eszköz átnevezése vagy a megfelelőség ellenőrzése. 
 
@@ -833,106 +836,4 @@ A következőkre vonatkozik:
 <!-- ########################## -->
 ## <a name="notices"></a>Értesítések
 
-### <a name="check-your-delay-visibility-of-software-updates-setting-in-intune"></a>Jelölje be a "Szoftverfrissítések késleltetés láthatóságát" beállítást az Intune-ban
-Tudjuk, hogy mi volt a mozgó néhány beállítást a konzolon MC171466 megosztott. A márciusi frissítéssel az Intune-hoz teljes mértékben eltávolítjuk a "Szoftver késleltetés látható-e frissítések" beállítás az IOS-es frissítési szabályzat panelen. Ez nem módosítja a alkalmazni az ütemezett szoftverfrissítések módon, de ez hatással lehet a mennyi ideig késik egy olyan frissítés látható-e a végfelhasználók számára. Szükség lehet a március vége előtt művelet végrehajtása, ha ezt a beállítást használja.
-
-#### <a name="how-does-this-affect-me"></a>Hogyan érint ez engem?
-A február az Intune-szolgáltatásfrissítésbe követően azt láthatja, hogy a beállítás jelenik meg a szoftver frissítése panelen a házirendek frissítéséhez a konzolon és az IOS-es eszközkorlátozási profilokhoz a is. Amikor megjelenik a módosítás megjelenik a konzolon, Íme mi is kell tennie.
-• A meglévő iOS-frissítési szabályzatok: Ha egyéni konfigurálva ez a beállítás az alapértelmezett értékre 30 nap, és a meglévő konfigurációk a késleltetés látható-e beállítás számára, hogy továbbra is március végén alkalmazni, hozzon létre egy új IOS-es eszközkorlátozási profilt kell. Itt a késleltetés láthatósági kell ugyanazokat az értékeket, mint a meglévő iOS-frissítési szabályzat rendelkezik, és ugyanazok a csoportok megcélozni. A március szolgáltatás frissítése után, már nem szerkesztheti ezt a beállítást meglévő iOS-frissítési szabályzatok értékeit, mivel már nem lesz látható, ezen a panelen. Ez a beállítás helyette az új profilok fogja beállítani.
-Késleltetheti számú napig az érték látható-e nem egyezik a mindkét helyen, a konfigurált egyéni beállítást értékek, a beállítás nem fog működni, késleltetés látható-e, és a végfelhasználók látni fogja a frissített saját eszközeiken, amint érhető el. Ez előfordulhat, hogy lehet csak minimális hatással van a legtöbb ügyfél számára, mert a szoftverfrissítési szabályzat panelen a többi beállítás elsőbbséget mindig végrehajtása ezzel a beállítással a konzolon keresztül.
-• A új iOS-frissítési szabályzatok: Ha meg új szabályzatokat hozhat létre a szoftverek frissítések panel az Intune-ban február szolgáltatás frissítése után, látni fogja a szürkén jelenik meg ez a beállítás. Megjelenik egy megjegyzés a konzolon, átirányítjuk az eszköz konfigurációs panelen, ha szeretné késleltetheti a frissítések láthatóságát.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Hogyan készüljek fel a változásra?
-Nem kell semmit, ha nem szeretné, hogy a végfelhasználók számára látható-e szoftverfrissítéseket késleltetés vagy ne használja ezt a beállítást.
-
-Ha késleltetheti a frissítések láthatóságát, indítsa el a beállítás konfigurálásával új profilokban Eszközkorlátozások az eszközkonfiguráció panel > Általános. Ha ez a beállítás egyéni konfigurált meglévő iOS frissítési szabályzatok, hozzon létre egy új egyenértékű eszközkorlátozási profilt a "days" késleltetheti a frissítések a felhasználók számára látható-e ugyanaz az érték, miután a februári frissítés, és előtt a márciusi frissítés bevezetésekor. Előfordulhat, hogy szeretné frissíteni az IT Pro útmutatást, és tájékoztatja a segélyszolgálathoz.
-Tekintse meg a további információt Ez a beállítás konfigurálásával kapcsolatos részletekért tegye közzé kérdéseit támogatási blogon.
- 
-#### <a name="additional-information"></a>További információ
-https://aka.ms/Delay_visibility_setting_iOS
-
-###  <a name="upcoming-change-to-the-intune-data-warehouse-api"></a>Az Intune-adattárház API közelgő módosítása
-Azt is teszi két változást a 1903 időkeretén:
-- Bétaverzió szűrő elavulása<br>
-    Nem támogatott béta szűrők példányosítása elavulása.   
-- vissza a bétaverzió tükröző 1.0-ás módosítások<br>
-    Az 1.0-s verziójú gyűjtemények módosításai mostantól megjelennek a béta.  
-
-
-###<a name="plan-for-change-workflow-changes-for-ios-12-enrollment-in-intune"></a>Tervezett módosítás: A munkafolyamat-módosítások az IOS-eszközök 12 regisztrálása az Intune-ban
-Az Apple bejelentette, hogy néhány módosítás az iOS-eszközök regisztrálása a mobileszköz-felügyeleti (MDM) szolgáltatásra. A módosítás a spring 2019 kiadásban az IOS-es, valamint az összes jövőbeli iOS-kiadások valószínűleg lesz látható.
-
-####<a name="how-does-this-affect-me"></a>Hogyan érint ez engem?
-A végfelhasználók számára az új verzió 12 IOS-eszközeiket tavasszal frissíti, ha tudja, hogy a módosított munkafolyamat és kell Intune-ba való regisztrálást végrehajtani, további lépések végrehajtására. Apple ezeket a változásokat vezet be, amikor a végfelhasználók kell: • megkezdése a regisztrációt a céges portál alkalmazásban, töltse le a felügyeleti profil • lépjen a beállítások > Általános > profilok • válassza ki a megfelelő profilt, és kattintson a regisztráció elvégzését • térjen vissza a céges portál telepítése 
-
-Már regisztrált eszközökre és a frissítési az új IOS-es kiadás nem befolyásolja, ha nem regisztrált, és egy friss regisztráció szükséges.
-Az új kiadás az Apple regisztrációs folyamatának 12,1 vagy korábbi iOS rendszerű eszközökön nem változik.
-
-####<a name="what-can-i-do-to-prepare-for-this-change"></a>Hogyan készüljek fel a változásra?
-Meg kell terveznie a dokumentációját, valamint a végfelhasználói útmutató frissítése. Érdemes azt is, ahhoz, hogy a segélyszolgálat ismeri ezeket a módosításokat. Folyamatosan tájékoztatjuk Önt folyamatosan értesíteni az üzenet központon keresztül, és az Újdonságok oldalát, amikor ez a változás élesíti.
-
-Kattintson ide további információt a képernyőképek és a egy videót a várt regisztrációs folyamatot a támogatási blogbejegyzést.
-
-####<a name="additional-information"></a>További információ
-https://aka.ms/iOS_enrollment_changes
-
-### <a name="plan-for-change-user-experience-update-to-intune-company-portal-app-for-ios"></a>Tervezett módosítás: Felhasználóiélmény-frissítést az iOS-hez készült Intune vállalati portál alkalmazás
-Örömmel megosztására, hogy az Intune hamarosan adunk ki az IOS-es céges portál alkalmazás egy nagyszabású felhasználóiélmény-frissítést. A frissítés egy vizuális átalakulás a kezdőlap ügyfélszolgálatnak a speciális szűrők és az alkalmazások és könyvek gyorsabb hozzáférést.
-
-#### <a name="how-does-this-affect-me"></a>Hogyan érint ez engem?
-A felhasználói élmény frissítése, miközben fenntartja az IOS-es céges portál funkciókat, ügyfélszolgálatnak:
-- Egy natív iOS megjelenését és működését érintő kezdőlapján 
-- A tartalom listáitól és szűrés a tartalomtípus (alkalmazások vagy e-könyvek) és a rendelkezésre állás (Eszközkezelés kötelező vagy elérhető legyen, regisztráció nélkül) például keresés szűrési képességek
-- E-könyvek kereshetővé
-- Keresési előzmények alkalmazásokhoz és e-könyvek Apple TestFlight programjában, ha értesítést kap az Intune frissített IOS-es céges portál alkalmazás az előzetes verzióval kapcsolatos mikor válik elérhetővé. Ha Ön nem Apple TestFlight programjában, nincs késő regisztrálni. Regisztrálása lehetővé teszi, hogy a frissített vállalati portál alkalmazást használja, mielőtt a végfelhasználók számára elérhető. A lehetőség közvetlenül az Intune-csapat a visszajelzést is megkapják.  
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Hogyan készüljek fel a változásra?
-Nem kell semmit sem kell; Ezeket a változásokat egy közelgő iOS CP alkalmazás kiadásban elérhető lesz. 
-
-#### <a name="additional-information"></a>További információ
-[https://aka.ms/cp_update_iOS](https://aka.ms/cp_update_iOS)
-
-
-### <a name="reminder-removal-of-existing-exchange-online-to-intune-connectors"></a>Emlékeztető: Meglévő Exchange Online-t az Intune összekötő eltávolítása
-Tudjuk, hogy azt kellene lennie eltávolítása az Exchange online-hoz az Intune-ban "Service to Service" összekötő funkció a közeljövőben egy frissítést MC165575 megosztott. A február frissítéssel az Intune szolgáltatásba a gombra kattintva új összekötők beállítása fog letiltjuk. Azt tervezi, hogy március 2019 az összes meglévő Exchange Online-t az Intune-összekötő eltávolítása.
- 
-#### <a name="how-does-this-affect-me"></a>Hogyan érint ez engem?
-Ezt az üzenetet azért küldtük Önnek, mert adataik szerint, hogy lehet használni a "Service to Service" összekötő funkció a környezetben. 
-
-A "Service to Service" összekötő az Exchange Active Sync csak az eszközök az Intune felügyeleti támogatja az Exchange online-hoz, és nem támogatja a helyszíni infrastruktúrát. Ezt az összekötőt, akkor jelenik meg a konzolon lehet, hogy szükségesek a feltételes hozzáféréssel (CA), megjelenik a valóságban ez nem szükségesek a hitelesítésszolgáltató. Előfordulhat, hogy már használja ezt az összekötőt a használatelemzés az Exchange Online feltételes hozzáférés alkalmazása előtt. Ezt az információt a Microsoft 365 felügyeleti központ által már biztosított. Itt megtalálhatja használati jelentést kínál, 7, illetve 180 nap közötti, használja az Exchange Online alkalmazást is beleértve írja. További információ: Office 365 jelentéseket a felügyeleti központ – E-mail használat  
-
-Ez az összekötő használatakor a környezetben nem képes figyelésre vagy törölhetik az Exchange Active Sync csak az Intune-ban után összekötők februárban le vannak tiltva. Ez a módosítás során várható fennakadást a végfelhasználók számára van.
- 
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Hogyan készüljek fel a változásra?
-Ha a Service to Service connector beállításához és az Exchange Active Sync csak olyan eszközöket, váltson a más módszerek az eszközök felügyeletét. Az alábbi lehetőségek állnak rendelkezésére: • az eszközök regisztrálása a mobileszköz-felügyeleti (MDM) • használata Intune alkalmazásvédelmi szabályzatok kezelése az eszközök • használata az Exchange szabályozza az itt található dokumentáció
-  
-#### <a name="additional-information"></a>További információ
-https://docs.microsoft.com/intune/exchange-service-connector-configure
- 
-
-
-### <a name="plan-for-change-performance-updates-to-intune-for-education---1750215--"></a>Tervezett módosítás: Az Intune for Education teljesítmény-frissítések <!--1750215-->
-Hozzáadunk néhány frissítést az Intune for Education szolgáltatáshoz a sebesség és a megbízhatóság növeléséhez, amikor beállításokat rendel hozzá a felhasználókhoz vagy az eszközökhöz. A változás részeként november vége felé új csoportokba fogjuk áthelyezni a szabályzatait és beállítás-hozzárendeléseit.
-
-#### <a name="how-does-this-affect-me"></a>Hogyan érint ez engem?
-
-Az Intune for Education-ügyfél, mint két dinamikus Azure Active Directory (Azure AD) csoportokhoz van: "Minden felhasználó" és "Minden eszköz". Ezeknek a frissítéseknek az alkalmazása után a „Minden felhasználó” és „Minden eszköz” Azure AD-csoportok nem lesznek láthatók az Intune for Education-konzolon. Azonban továbbra is meg fognak jelenni az Intune-ban az Azure AD-konzolon, és át lesznek nevezve „Minden felhasználó (elavult, ne használja)” és „Minden eszköz (elavult, ne használja)” névre.
-
-A frissítések bevezetése után már nem kell az Azure AD-csoportokat használnia az alkalmazások és a beállítások hozzárendelésére az Intune-ban. Ehelyett új csoportokba foguk áthelyezni a hozzárendelt beállításokat az Intune for Education-konzolon, amelyeket létre fogunk hozni az Ön számára, és amelyek továbbra is „Minden felhasználó” és „Minden eszköz” néven fognak megjelenni. Ezek a módosítások a háttérben fognak történni, ezért a Intune for Education-konzolon nem fog észlelni semmilyen változást. Nem várható, hogy ez negatív hatású lesz a végfelhasználókra vagy a regisztrált eszközökre. 
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Hogyan készüljek fel a változásra?
-Miközben mi áthelyezzük a hozzárendelt szabályzatokat, nem kell tennie semmit. Ha jelenleg a szabályzatok hozzárendelését az Intune for Education-konzolon végzi, tegye ezt továbbra is.
-
-Ha jelenleg a fent említett Azure AD-csoportokhoz az Azure-beli Intune-ban rendeli hozzá a szabályzatokat, ehelyett inkább az Intune for Education-konzolon rendelje hozzá ezeket a Minden felhasználó és a Minden eszköz csoporthoz. Ha azt látja, hogy elavultként lettek átnevezve az Azure AD-csoportok a konzolon, a továbbiakban ne végezzen hozzárendelést az Azure AD-ben. Ha nem jelenleg használja az átnevezett csoportokat más célra, akkor törölje azokat.
-
-
-### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>Művelet végrehajtása: Frissítse az Android-eszköz korlátozása vagy a megfelelőségi jelszóval szabályzatbeállítások az Intune-ban
-Az Intune-ból eltávolítjuk az eszköz alapértelmezett jelszavaként szolgáló jelszótípust az Android 4.4-es és újabb eszközök esetében. Az Android-platformok és az eszközök alapértelmezett beállításainak eltérései miatt az eszközök ezt a szabályzatot gyakran opcionálisként kezelik. Annak érdekében, hogy ne okozzon zavart, ha egy Android készüléken ez a beállítás van kötelezőként megadva, egy következő kiadásban eltávolítjuk a beállítást a kezelőfelületről. 
-#### <a name="how-does-this-affect-me"></a>Hogyan érint ez engem?
-- Ha az a célja, hogy az eszközökön kötelező legyen megadni valamilyen jelszót, javasoljuk, hogy az „eszköz alapértelmezett jelszavának” használata helyett úgy szerkessze az Android-platformprofilokat, hogy azok egyértelműen leírják a kívánt jelszótípust.
-- Ha azt szeretné, hogy a végfelhasználók szabadon eldönthessék, létre szeretnének-e hozni egy jelszót, válassza a „Nincs konfigurálva” lehetőséget. Ha még mindig az „eszköz alapértelmezett jelszava” beállítás van érvényben, amikor eltávolítjuk ezt a beállítást a felhasználói felületről, akkor a profil következő szerkesztésekor választania kell egy másik értéket.
-Hogyan készüljek fel a változásra?
-Tekintse át a jelszóbeállításokat az Android vállalati eszközkorlátozási és megfelelőségi szabályzataiban. A megfelelőségi szabályzatok a Rendszerbiztonság alatt, az eszközkorlátozási szabályzatok pedig az Eszközjelszó vagy a Munkaprofil alatt találhatók meg. A további információk között talál egy hivatkozást, amelyen keresztül további részleteket és képernyőképeket talál ezekkel a beállításokkal kapcsolatban.
-#### <a name="additional-information"></a>További információ
-https://aka.ms/PasswordSettings 
-
+[!INCLUDE [Intune notices](./includes/intune-notices.md)]

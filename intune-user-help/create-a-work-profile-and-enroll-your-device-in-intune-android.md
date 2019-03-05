@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 683156b968c743c4c82b472c6e566d5762c22c1a
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: eab28cdd4515561ad34a433773e351150a87f626
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55844666"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57334952"
 ---
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Munkahelyi profil létrehozása és eszköz regisztrálása az Intune-ban
 
@@ -33,7 +33,7 @@ A cég informatikai támogatási szolgálata csak a munkahelyi adatokat tartalma
 
 Munkahelyi profil létrehozása:
 
-1.  Az Android Vállalati portál alkalmazás **üdvözlőképernyőjén** koppintson a **Bejelentkezés** elemre, és jelentkezzen be a munkahelyi vagy az iskolai fiókjával. Ha még nem telepítette az ingyenes alkalmazást, akkor töltse le és telepítse azt a [Google Play áruázból](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
+1.  Az Android Vállalati portál alkalmazás **üdvözlőképernyőjén** koppintson a **Bejelentkezés** elemre, és jelentkezzen be a munkahelyi vagy az iskolai fiókjával. Ha még nem telepítette az ingyenes alkalmazást, akkor töltse le és telepítse azt a [Google Play áruázból](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
 
     ![Androidos Vállalati portál alkalmazás üdvözlőképernyője](./media/and-enroll-0-welcome-screen.png)
 

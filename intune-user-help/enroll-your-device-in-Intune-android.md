@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99f595adf9e53a8704db152e5e3725fe067902af
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 188c32a2fd38d3445380a9d1898b90a3bb080ae1
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849447"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335207"
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Android-eszköz regisztrálása az Intune-ban
 
@@ -37,7 +37,7 @@ A regisztráció előtt vagy után a rendszer megkérheti, hogy válasszon ki eg
 
 **Android-eszköz regisztrálása:**
 
-1. Telepítse az Intune Vállalati portál nevű ingyenes alkalmazást a [Google Play áruházból](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
+1. Telepítse az Intune Vállalati portál nevű ingyenes alkalmazást a [Google Play áruházból](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
 
 2. Nyissa meg a Vállalati portál alkalmazást.
 

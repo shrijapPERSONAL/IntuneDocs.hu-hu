@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: acbfafcc26aa924a5a9d0a7712bb56119099af43
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: f84eddaf9fac6dd678c7046664bf1feb9ea8cfc1
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55848219"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335241"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>A vállalat által biztosított macOS-eszköz felügyeleti regisztrálása
 
@@ -64,7 +64,7 @@ Az alábbi lépésekkel regisztrálhatja macOS-eszközét a felügyeleti szolgá
     * A Mac gép beállítása  
 ## <a name="get-the-company-portal-app"></a>A Céges portál alkalmazás beszerzése      
 Töltse le az eszközére a macOS-re készült Intune Céges portál alkalmazást. Ezzel az alkalmazással monitorozhatja, szinkronizálhatja, hozzáadhatja és eltávolíthatja az eszközt a felügyeletből, és további alkalmazásokat is telepíthet. Ezek a lépések azt is bemutatják, hogyan regisztrálhatja eszközét a Céges portálon.  
-1. Nyissa meg a http://portal.manage.microsoft.com/EnrollmentRedirect.aspx lapot macOS-eszközén.
+1. Nyissa meg a https://portal.manage.microsoft.com/EnrollmentRedirect.aspx lapot macOS-eszközén.
 2. Jelentkezzen be a Céges portál webhelyére munkahelyi vagy iskolai fiókjával. 
 3. Kattintson az **Alkalmazás beszerzése** lehetőségre a Céges portál macOS rendszerre készült telepítőjének letöltéséhez.
 4. Amikor a rendszer kéri, nyissa meg a .pkg fájlt, és hajtsa végre a telepítési lépéseket.
