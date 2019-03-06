@@ -10,6 +10,7 @@ ms.date: 02/21/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: aanavath
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ebb97794b69919b149590eebe76e52acdaafde8f
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: fc5c9a202f24dcf88e9a94d9431ac9e0fafa9864
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57228595"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57389943"
 ---
 # <a name="microsoft-intune-app-sdk-overview"></a>A Microsoft Intune App SDK áttekintése
 Az Intune App SDK, iOS és Android rendszeren is elérhető, lehetővé teszi az alkalmazás támogatja az Intune-ban való [alkalmazásvédelmi szabályzatok](app-protection-policy.md). Amikor az alkalmazás alkalmazásvédelmi szabályzatok vonatkoznak rá, Intune által felügyelt használható, és felismeri a Intune-ban felügyelt alkalmazásként. Az SDK nagy hangsúlyt fektet a minimalizálása érdekében a alkalmazásfejlesztő által végzendő kódmódosítás mennyiségét. Az SDK legtöbb funkcióját alkalmazása működésének módosítása nélkül is engedélyezheti. Végfelhasználók és a rendszergazdák munkáját, akkor az SDK API-jainkkal személyre szabhatja alkalmazása működését az alkalmazás részvételét igénylő szolgáltatások támogatásához.

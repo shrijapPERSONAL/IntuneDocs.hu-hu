@@ -10,6 +10,7 @@ ms.date: 02/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: ilwu
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e36105f89221ee5e33a1a6d8afe26b09a08b76b7
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 63d0d04ff670bedaa3de8b183917b34fed35ba7f
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238948"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461039"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Az internet-hozzáférés kezelése Microsoft Intune-szabályzattal védett böngésző használatával
 
@@ -72,7 +73,7 @@ Ha a Microsoft Edge vagy a Managed Browser böngészőt nem az Intune felügyeli
 
 ## <a name="conditional-access-for-protected-browsers"></a>Feltételes hozzáférés védett böngészőkhöz
 
-A Managed Browser már egy feltételes hozzáféréshez jóváhagyott ügyfélalkalmazás. Ez azt jelenti, hogy úgy korlátozhatja a mobilböngészők hozzáférését az Azure AD-hez csatlakozó webalkalmazásokhoz, hogy a felhasználók csak a Managed Browsert használhassák, valamint letilthat minden más nem védett böngészőt, például a Safarit vagy a Chrome-ot. Ezt a védelmet Azure-erőforrásokra alkalmazhatja, például az Exchange Online-ra, a SharePoint Online-ra, az Office-portálra, valamint olyan helyszíni webhelyekre, amelyekhez külső felhasználók is hozzáférhetnek [az Azure AD-alkalmazásproxyn](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) keresztül. 
+A Managed Browser már egy feltételes hozzáféréshez jóváhagyott ügyfélalkalmazás. Ez azt jelenti, hogy úgy korlátozhatja a mobilböngészők hozzáférését az Azure AD-hez csatlakozó webalkalmazásokhoz, hogy a felhasználók csak a Managed Browsert használhassák, valamint letilthat minden más nem védett böngészőt, például a Safarit vagy a Chrome-ot. Ez a védelem is alkalmazható az Azure erőforrásokhoz, mint az Exchange online-hoz és a SharePoint online-hoz, a Microsoft 365 felügyeleti központot és még akkor is, amelyekhez külső felhasználók számára keresztül a helyszíni helyek a [Azure AD-alkalmazásproxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started). 
 
 Ha az Azure AD-hez csatlakozó webalkalmazásokat az Intune Managed Browser használatára korlátozza mobilplatformokon, hozzon létre egy feltételes hozzáférési szabályzatot, amelyhez jóváhagyott ügyfélalkalmazások szükségesek. 
 

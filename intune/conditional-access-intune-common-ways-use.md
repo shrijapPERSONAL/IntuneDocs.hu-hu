@@ -9,18 +9,19 @@ ms.date: 02/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 101864120bb354bc517f93972e15ffc8f35d6541
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 46b2dbf31d5813a646fc2ea1a97f7ba273c3c6e9
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742567"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57394348"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Mik a feltételes hozzáférés használatának szokásos módjai az Intune-ban?
 
@@ -31,7 +32,7 @@ Az Intune-ban kétféle feltételes hozzáférés létezik: eszközalapú és al
 Az alábbi információ segítségével megismerheti az Intune *mobileszköz*-megfelelőségi és a *mobilalkalmazás*-kezelési funkcióit. 
 
 > [!NOTE]
-> A feltételes hozzáférés az Azure Active Directory egyik lehetősége, amelyet a prémium szintű Azure Active Directory-licencek biztosítanak. Az Intune ezt a lehetőséget mobileszköz-megfelelőségi és mobilalkalmazás-felügyeleti megoldások hozzáadásával bővíti tovább. A feltételes hozzáférés csomópont elérhető *Intune* van ugyanazon a csomóponton, elérhető *Azure ad-ben*.  
+> A feltételes hozzáférés az Azure Active Directory egyik lehetősége, amelyet a prémium szintű Azure Active Directory-licencek biztosítanak. Az Intune ezt a lehetőséget mobileszköz-megfelelőségi és mobilalkalmazás-felügyeleti megoldások hozzáadásával bővíti tovább. Az *Intune-ból* elérhető feltételes hozzáférési csomópont ugyanaz a csomópont, amelyet az *Azure AD-ből* is el lehet érni.  
 
 ## <a name="device-based-conditional-access"></a>Eszközalapú feltételes hozzáférés
 

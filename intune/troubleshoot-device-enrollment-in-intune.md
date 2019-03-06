@@ -6,9 +6,10 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 11/09/2018
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ROBOTS: NOINDEX,NOFOLLOW
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2d345ba84eb963600a921c0f77f7a93ed6aa1b0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 32f167def5e96061b0d69665c2c5b81a29d03389
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238676"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461362"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Eszközök regisztrálásával kapcsolatos problémák elhárítása az Intune-ban
 
@@ -100,7 +101,7 @@ Az eszközszámkorlát elérésének elkerüléséhez mindig távolítsa el a m�
 
 1.  Győződjön meg arról, hogy a Mobileszköz-felügyeleti szolgáltató [megfelelően be van állítva](mdm-authority-set.md).
     
-2.  Ellenőrizze, hogy a felhasználói hitelesítő adatokat megfelelően szinkronizálta-e a rendszer az Azure Active Directoryval. Ellenőrizheti, hogy a felhasználó egyszerű felhasználóneve megegyezik-e az Office 365 portálján található Active Directory-adatokkal.
+2.  Ellenőrizze, hogy a felhasználói hitelesítő adatokat megfelelően szinkronizálta-e a rendszer az Azure Active Directoryval. Ellenőrizheti, hogy a felhasználó egyszerű felhasználónév megegyezik-e az Active Directory adataival a Microsoft 365 felügyeleti központban.
     Ha a felhasználónév nem egyezik meg az Active Directory adataival:
 
     1.  Kapcsolja ki a DirSync eszközt a helyi kiszolgálón.
@@ -131,7 +132,7 @@ Az eszközszámkorlát elérésének elkerüléséhez mindig távolítsa el a m�
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>Nem lehet szabályzatot létrehozni vagy eszközöket regisztrálni, ha a vállalat neve speciális karaktereket tartalmaz.
 **Probléma:** Nem lehet szabályzatot létrehozni, vagy -eszközök regisztrálása.
 
-**Megoldás:** Az a [Office 365 felügyeleti központban](https://portal.office.com/), távolítsa el a speciális karaktereket a vállalat nevéből, és mentse a vállalati adatokat.
+**Megoldás:** Az a [Microsoft 365 felügyeleti központban](https://admin.microsoft.com/), távolítsa el a speciális karaktereket a vállalat nevéből, és mentse a vállalati adatokat.
 
 ### <a name="unable-to-sign-in-or-enroll-devices-when-you-have-multiple-verified-domains"></a>Nem lehet bejelentkezni vagy eszközöket regisztrálni több ellenőrzött tartomány esetén
 **Probléma:** A probléma akkor fordulhat elő, amikor a második ellenőrzött tartomány hozzáadása az AD FS. A második tartomány egyszerű felhasználóneves (UPN) utótagjával rendelkező felhasználók nem tudnak bejelentkezni a portálokra vagy nem tudnak eszközöket regisztrálni.

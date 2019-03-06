@@ -10,6 +10,7 @@ ms.date: 04/30/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99b913b23638a507ed9b0a5cb32afff66679a164
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 3457a8314136bac864324dc9baa72ca586bdb7a3
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231910"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57460895"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Mobileszköz-felügyeleti szolgáltató megadása
 
@@ -39,7 +40,7 @@ A lehetséges konfigurációk a következők:
     > [!Important]
     >Az új hibrid MDM-ügyfelek felvételének lehetősége egy hamarosan megjelenő kiadásban meg fog szűnni. További információkért lásd: a [válthatnak a hibrid mobileszköz-kezelés az Intune-bA az Azure-ban](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) blogbejegyzést.
 
-- **Mobileszköz-felügyelet az Office 365 használatával** – Az Office 365 és az Intune felhőalapú megoldásának integrációja. Az Intune-t az Office 365 Felügyeleti központ segítségével konfigurálhatja. Az önálló Intune-nal elérhető funkciók egy részét tartalmazza. MDM-szolgáltató beállítása az Office 365 felügyeleti központjában.
+- **Mobileszköz-felügyelet az Office 365 használatával** – Az Office 365 és az Intune felhőalapú megoldásának integrációja. Az Intune a Microsoft 365 felügyeleti központban konfigurálhatja. Az önálló Intune-nal elérhető funkciók egy részét tartalmazza. Az MDM-szolgáltató beállítása a Microsoft 365 felügyeleti központban.
 
 > [!IMPORTANT]
 > A Configuration Manager 1610-es vagy későbbi verziójában és a Microsoft Intune 1705-ös verziójában anélkül módosíthatja az MDM-szolgáltatót, hogy fel kellene vennie a kapcsolatot a Microsoft ügyfélszolgálatával, vagy hogy el kellene végeznie a már felügyelt eszközök regisztrációjának törlését és a regisztráció újbóli elvégzését. További információkért lásd: [előkészítése az MDM-szolgáltató módosítása a Configuration Manager](mdm-authority-set.md#prepare-to-change-the-mdm-authority-to-configuration-manager).

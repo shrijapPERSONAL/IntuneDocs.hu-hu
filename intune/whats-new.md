@@ -10,6 +10,7 @@ ms.date: 02/27/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
@@ -17,17 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a6f40ba7ea5e229a4c4d3f25d182d24b2a0a812
-ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
+ms.openlocfilehash: e035166200f1112898e4b2fcf2f8618e2f1cc060
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57335173"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461515"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Heti összesítésben olvashat a Microsoft Intune újdonságairól. Emellett tájékozódhat a jövőbeni változtatásokról, a szolgáltatással kapcsolatos [fontos bejelentésekről](#notices) és a [korábbi kiadásokról](whats-new-archive.md) is. 
+Heti összesítésben olvashat a Microsoft Intune újdonságairól. Ugyanitt találhat [jövőbeni változtatásokról](in-development.md), [fontos bejelentésekről](#notices), és információkat [korábbi verziókról](whats-new-archive.md). 
 
 > [!Note]
 > Egyes funkciók bevezetése több hetet igénybe vehet, így előfordulhat, hogy nem elérhetők a felhasználók számára az első héten.
@@ -244,6 +245,8 @@ Az alábbi beállítást az Intune-konzolon megjelenik, de ha konfigurálva, nem
 
 > [!NOTE]
 > Ha az Intune alkalmazásvédelmi szabályzatokat használ a vállalati identitások kezelésére, érdemes lehet nem engedélyezi az **biometrika megkövetelése**. További információkért lásd: **vállalati hitelesítő adatok megkövetelése a hozzáféréshez** a [hozzáférési beállítások iOS](app-protection-policy-settings-ios.md#access-requirements) és [Android-beállításokat](app-protection-policy-settings-android.md#access-requirements).
+
+További információkért lásd: [konfigurációs beállításai a Microsoft Outlook](app-configuration-policies-outlook.md). 
 
 #### <a name="delete-android-enterprise-apps----1352553---"></a>Androidos vállalati alkalmazások törlése <!-- 1352553 -->
 Törölheti a felügyelt Google Play-alkalmazások Microsoft Intune-ból. Felügyelt Google Play alkalmazás törléséhez nyissa meg a Microsoft Intune az Azure Portalon, és válassza a **ügyfélalkalmazás** > **alkalmazások**. Az alkalmazás listában jelölje ki a három pontra (...) jobb oldalán a felügyelt Google Play-alkalmazást, majd válassza ki **törlése** a megjelenő listából. Ha egy felügyelt Google Play-alkalmazást töröl alkalmazásokat az alkalmazáslistából, a felügyelt Google Play alkalmazás automatikusan jóvá nem hagyott.
@@ -552,7 +555,7 @@ Ha előre ellátja a DEP-regisztráció során a céges portál Volume Purchase 
 Az Intune már támogatja a macOS-eszközök az Apple School Manager-fiókok a Készülékregisztrációs programmal.  További információkért lásd: [automatikusan regisztrálni a macOS-eszközök az Apple School Manager vagy a Készülékregisztrációs Program](device-enrollment-program-enroll-macos.md).
 
 ### <a name="new-intune-device-subscription-sku---3312071--"></a>Új Intune eszköz-előfizetés Termékváltozat <!--3312071-->
-A vállalatok számára az eszközkezelés költségeinek csökkentéséhez már elérhető egy új, eszközalapú előfizetési termékváltozat. Ennek az Intune-beli eszköz-termékváltozatnak a licencelése eszközönként történik, havi elszámolással. Az ár a licencprogramtól függően változik. Az Office felügyeleti portálján keresztül közvetlenül, és keresztül elérhető a [nagyvállalati szerződés](https://www.microsoft.com/licensing/licensing-programs/enterprise?activetab=enterprise-tab:primaryr2) (EA), [Microsoft Products and szolgáltatási szerződését](https://www.microsoft.com/licensing/mpsa/default) (MPSA) [nyissa meg a Microsoft-szerződések ](https://partner.microsoft.com/licensing/licensing-agreements), és [Cloud Solution Provider](https://www.microsoftpartnercommunity.com/t5/Partnership-101/What-is-the-Cloud-Solution-Provider-CSP-program/td-p/2453) (CSP).
+A vállalatok számára az eszközkezelés költségeinek csökkentéséhez már elérhető egy új, eszközalapú előfizetési termékváltozat. Ennek az Intune-beli eszköz-termékváltozatnak a licencelése eszközönként történik, havi elszámolással. Az ár a licencprogramtól függően változik. Közvetlenül a Microsoft 365 felügyeleti központban, és keresztül elérhető a [nagyvállalati szerződés](https://www.microsoft.com/licensing/licensing-programs/enterprise?activetab=enterprise-tab:primaryr2) (EA), [Microsoft Products and szolgáltatási szerződését](https://www.microsoft.com/licensing/mpsa/default) (MPSA) [a Microsoft Open Szerződések](https://partner.microsoft.com/licensing/licensing-agreements), és [Cloud Solution Provider](https://www.microsoftpartnercommunity.com/t5/Partnership-101/What-is-the-Cloud-Solution-Provider-CSP-program/td-p/2453) (CSP).
 
 ### <a name="device-management"></a>Eszközkezelés
 

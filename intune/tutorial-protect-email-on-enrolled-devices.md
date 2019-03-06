@@ -10,6 +10,7 @@ ms.date: 09/19/2018
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8a58c9f469f197095bedcb4524ca7588b860ed3
-ms.sourcegitcommit: 7d694e3cd01623513c2b163946e60a99ab9535d2
+ms.openlocfilehash: 4d748cc1b9549dfb29d38388a8279cacd8d471b3
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56891623"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57396641"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Oktatóanyag: A felügyelt eszközökön az Exchange Online e-mailek védelme
 Ismerje meg az eszközmegfelelőségi szabályzatok feltételes hozzáféréssel való használatát annak érdekében, hogy csak az olyan iOS-eszközök férhessenek hozzá az Exchange Online e-mailjeihez, amelyeket az Intune felügyel, és amelyek jóváhagyott e-mail alkalmazást használnak. 

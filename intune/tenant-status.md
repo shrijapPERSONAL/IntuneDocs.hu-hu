@@ -10,16 +10,17 @@ ms.date: 02/23/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04c57870f32d853b48be96a58afaa7b534250e0c
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 0cde1977b0c126f478abae06860110acc2f10444
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57228122"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57460767"
 ---
 # <a name="intune-tenant-status-page"></a>Az Intune bérlői állapota lap
 A bérlő állapotának lap egy információs központ, ahol megtekinthetik az aktuális és fontos részleteket a bérlő kapcsolatban. Licenc rendelkezésre állási és használata, összekötő állapotát és az Intune szolgáltatással kapcsolatos fontos kommunikációs szerepel.  
@@ -60,19 +61,19 @@ Ha több mint egy típustól egy összekötőt, az állapota az összes azonos �
 Amikor kiválaszt egy összekötőt a listából, a portál megjelenít a portálon, amely fontos létrehozásáról és konfigurálásáról az összekötőt.  Például, ha kiválasztja a **VPP lejárati dátuma** összekötőt, a **Program-tokenek mennyiségi licencszerződés keretében vásárolt iOS** lap megnyitásakor, ahol megtekintheti, hogy az összekötő további információt. Ezután hozzon létre egy új konfigurációt vagy szerkesztheti és problémáinak elhárítása egy már meglévőt.  
 
 ## <a name="intune-service-health"></a>Az Intune szolgáltatás állapota  
-Keresse meg a Microsoft 365 üzemállapot-jelző pult vagy az üzenetközpont nélkül megtekintheti az aktív incidensek által érintett, és a tanácsadók adatait, mind a Microsoft 365 felügyeleti központban, található https://portal.office.com. Csak a ahol hatás lett tudomásul vette a bérlő érintő incidensek jelennek meg.  
+Keresse meg a Microsoft 365 üzemállapot-jelző pult vagy az üzenetközpont nélkül megtekintheti az aktív incidensek által érintett, és a tanácsadók adatait, is található a [Microsoft 365 felügyeleti központban](https://admin.microsoft.com). Csak a ahol hatás lett tudomásul vette a bérlő érintő incidensek jelennek meg.  
 
 Amikor kiválaszt egy incidenst, a támogatási kérelem részletek közvetlenül a bérlő állapotának oldalán jelennek meg. Tanácsok és incidensek korábbi megtekintéséhez jelölje ki **korábbi incidensek/tanácsadók**. A Microsoft 365 felügyeleti központ megnyílik, és ezután megtekintheti tanácsok és incidensek az elmúlt 30 nap-bérlője számára.  
 
-Információk megtekintéséhez *az Intune szolgáltatás állapota*, a fióknak rendelkeznie kell a **globális rendszergazdai** vagy **szolgáltatás-rendszergazda** szerepkört az Azure Active Directoryban vagy a Office felügyeleti portálján. Szeretné hozzárendelni ezeket az engedélyeket, jelentkezzen be a [Microsoft 365 felügyeleti központban](https://portal.officeppe.com/AdminPortal/Home#/homepage) globális rendszergazdai jogosultságokkal rendelkező. Válassza ki **felhasználók > aktív felhasználók**, és válassza ki azt a fiókot, amelyhez hozzáférés szükséges. Válassza ki **szerkesztése** szerepkörhöz, válassza ki a *szolgáltatás-rendszergazda* vagy *globális rendszergazdai*, majd **mentése** hozzárendelése a módosításokat a engedélyek.  
+Információk megtekintéséhez *az Intune szolgáltatás állapota*, a fióknak rendelkeznie kell a **globális rendszergazdai** vagy **szolgáltatás-rendszergazda** szerepkört az Azure Active Directoryban vagy a A Microsoft 365 felügyeleti központban. Szeretné hozzárendelni ezeket az engedélyeket, jelentkezzen be a [Microsoft 365 felügyeleti központban](https://admin.microsoft.com) globális rendszergazdai jogosultságokkal rendelkező. Válassza ki **felhasználók > aktív felhasználók**, és válassza ki azt a fiókot, amelyhez hozzáférés szükséges. Válassza ki **szerkesztése** szerepkörhöz, válassza ki a *szolgáltatás-rendszergazda* vagy *globális rendszergazdai*, majd **mentése** hozzárendelése a módosításokat a engedélyek.  
 
 A kommunikációs beállítások az Intune szolgáltatás állapotát a Microsoft 365 felügyeleti központban csak beállítása.
 
 ## <a name="intune-news"></a>Az Intune-hírek  
 Tájékoztató kommunikáció az Intune szolgáltatás csapat megtekintéséhez nyissa meg az Office Üzenetközpontjában nélkül. Kommunikációs üzeneteket, amelyek nemrég történt az Intune szolgáltatásba, vagy az a bérlőhöz tartozó von a változásokat tartalmazza.  
 
-Alapértelmezés szerint a legutóbbi 10 aktív üzenetek jelennek meg. Régebbi üzeneteket megtekintéséhez jelölje ki **lásd a régebbi üzeneteket** megnyitásához a *üzenetközpont* a Microsoft 365 felügyeleti központ portálján.  
+Alapértelmezés szerint a legutóbbi 10 aktív üzenetek jelennek meg. Régebbi üzeneteket megtekintéséhez jelölje ki **lásd a régebbi üzeneteket** megnyitásához a *üzenetközpont* a Microsoft 365 felügyeleti központban.  
 
-Információk az Intune hírek megtekintéséhez, a fióknak rendelkeznie kell a **globális rendszergazdai** vagy **szolgáltatás-rendszergazda** szerepkörhöz az Azure Active Directoryban, vagy a **üzenetközpont olvasó** szerepkör az Office felügyeleti portálon.  Rendelje hozzá ezt az engedélyt, jelentkezzen be a [Microsoft 365 felügyeleti központban](https://portal.officeppe.com/AdminPortal/Home#/homepage) rendszergazdai jogosultságokkal. Válassza ki **felhasználók > aktív felhasználók**, és válassza ki azt a fiókot, amelyhez hozzáférés szükséges. Válassza ki **szerkesztése** a *szerepkörök*, jelölje be *csapatok kommunikáció rendszergazda*, majd **mentése** az engedélyek hozzárendelése a szerkesztése.  
+Információk az Intune hírek megtekintéséhez, a fióknak rendelkeznie kell a **globális rendszergazdai** vagy **szolgáltatás-rendszergazda** szerepkörhöz az Azure Active Directoryban, vagy a **üzenetközpont olvasó** szerepkört a Microsoft 365 felügyeleti központban.  Rendelje hozzá ezt az engedélyt, jelentkezzen be a [Microsoft 365 felügyeleti központban](https://admin.microsoft.com) rendszergazdai jogosultságokkal. Válassza ki **felhasználók > aktív felhasználók**, és válassza ki azt a fiókot, amelyhez hozzáférés szükséges. Válassza ki **szerkesztése** a *szerepkörök*, jelölje be *csapatok kommunikáció rendszergazda*, majd **mentése** az engedélyek hozzárendelése a szerkesztése.  
 
 A kommunikációs beállítások az Intune hírek a Microsoft 365 felügyeleti központban csak beállítása.

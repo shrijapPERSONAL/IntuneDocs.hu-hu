@@ -10,6 +10,7 @@ ms.date: 02/28/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: dougeby
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01f1102c71aa182a63e395c3ee3be21a134ff0b3
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: ca4b48c2c611273cee385fd94486591e8a97d5a0
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846315"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57460921"
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>Felhasználók hozzáadása és rendszergazdai engedély biztosítása az Intune-hoz
 
@@ -31,10 +32,10 @@ ms.locfileid: "55846315"
 A rendszergazdák jogosultak közvetlenül felvenni az új felhasználókat, vagy szinkronizálni a felhasználókat a helyszíni Active Directoryból. Ha felvették a felhasználókat a szolgáltatásba, regisztrálhatják az eszközeiket, és elérhetik a vállalati erőforrásokat. További jogosultságokat is adhat a felhasználóknak, többek között *globális rendszergazdai* és *szolgáltatásadminisztrátori* engedélyeket.
 
 ## <a name="add-users-to-intune"></a>Felhasználók hozzáadása az Intune-hoz
-Az Intune-előfizetéshez manuálisan is hozzáadhat felhasználókat az [Office 365-portálon](https://www.office.com/signin) vagy az [Azure Portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) webhelyen. A rendszergazda módosíthatja a felhasználói fiókokat az Intune-licencek hozzárendeléséhez. A licenceket az Office 365-portálról vagy az Intune Azure-portálról oszthatja ki. Az Office 365-portál használatával kapcsolatos további tudnivalókért lásd: [Felhasználók felvétele egyenként és tömegesen az Office 365-portálra](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
+Az Intune-előfizetéshez manuálisan is hozzáadhat felhasználókat a [Microsoft 365 felügyeleti központban](https://admin.microsoft.com) vagy a [az Azure portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview). A rendszergazda módosíthatja a felhasználói fiókokat az Intune-licencek hozzárendeléséhez. Hozzárendelheti a licenceket a Microsoft 365 felügyeleti központban vagy az Intune Azure Portalon. A Microsoft 365 felügyeleti központja segítségével további információkért lásd: [felhasználók felvétele egyenként és tömegesen az a Microsoft 365 felügyeleti központban](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
-### <a name="add-intune-users-in-the-office-365-admin-center"></a>Intune-felhasználók felvétele az Office 365 Felügyeleti központban
-1. Jelentkezzen be az [Office 365-portálon](https://www.office.com/signin) egy globális rendszergazdai vagy felhasználókezelő rendszergazdai fiókkal.
+### <a name="add-intune-users-in-the-microsoft-365-admin-center"></a>Intune felhasználók hozzáadása a Microsoft 365 felügyeleti központban
+1. Jelentkezzen be a [Microsoft 365 felügyeleti központban](https://admin.microsoft.com) egy globális rendszergazda vagy felhasználó felügyeleti rendszergazdai fiókkal.
 2. Az Office 365 menüjében válassza a **Rendszergazda** elemet.
 3. A Felügyeleti központban válassza a **Felhasználó hozzáadása** elemet.
 
@@ -77,7 +78,7 @@ Az Intune-előfizetéshez manuálisan is hozzáadhat felhasználókat az [Office
 Javasoljuk, hogy a felhasználók Intune-előfizetéshez történő hozzáadása után biztosítson néhány felhasználó számára rendszergazdai engedélyt.  Rendszergazdai jogosultságokat az alábbi lépéseket követve adhat:
 
 ### <a name="give-admin-permissions-in-office-365"></a>Rendszergazdai jogosultságok biztosítása az Office 365-ben
-1. Jelentkezzen be az [Office 365-portálra](https://www.office.com/signin) egy globális rendszergazdai fiókkal.
+1. Jelentkezzen be a [Microsoft 365 felügyeleti központban](https://admin.microsoft.com) egy globális rendszergazdai fiókkal.
 2. Az Office 365 menüjében válassza a **Rendszergazda** elemet.
 3. A Felügyeleti központban válassza az **Aktív felhasználók** lehetőséget, majd válassza ki azt a felhasználót, akinek rendszergazdai jogosultságot szeretne adni.
 
@@ -90,7 +91,7 @@ Javasoljuk, hogy a felhasználók Intune-előfizetéshez történő hozzáadása
 6. Válassza a **Mentés** elemet.
 
 ### <a name="give-admin-permissions-in-the-azure-portal"></a>Rendszergazdai jogosultságok megadása az Azure Portalon
-1. Jelentkezzen be az [Azure Portalra](https://www.office.com/signin) egy globális rendszergazdai fiókkal.
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com) egy globális rendszergazdai fiókkal.
 2. Az Azure Portalon válassza a **Felhasználó** lehetőséget, majd válassza ki azt a felhasználót, akinek rendszergazdai jogosultságot szeretne adni.
 3. Válassza a **Címtárbeli szerepkör** elemet, majd pedig a kívánt jogosultságot.
   ![Képernyőkép a Címtárszerepkörről](./media/add-intune-directory-role.png)
@@ -98,7 +99,7 @@ Javasoljuk, hogy a felhasználók Intune-előfizetéshez történő hozzáadása
 
 ### <a name="types-of-administrators"></a>Rendszergazdatípusok
 
-Rendeljen hozzá egy vagy több rendszergazdai jogosultságot a felhasználókhoz. Ezek az engedélyek definiálják a felügyeleti hatókört a felhasználók és az általuk kezelhető feladatokra vonatkozóan. A Microsoft különböző felhőszolgáltatásai ugyanazokat a rendszergazdai jogosultságokat használják, azonban előfordulhat, hogy egyes szolgáltatások nem támogatnak bizonyos jogosultságokat. Mind az Azure Portalon, mind pedig az Office 365-portálon megtalálható az Intune által nem használt korlátozott rendszergazdai szerepkörök listája. Az Intune-beli rendszergazdai jogosultságok az alábbiak lehetnek:
+Rendeljen hozzá egy vagy több rendszergazdai jogosultságot a felhasználókhoz. Ezek az engedélyek definiálják a felügyeleti hatókört a felhasználók és az általuk kezelhető feladatokra vonatkozóan. A Microsoft különböző felhőszolgáltatásai ugyanazokat a rendszergazdai jogosultságokat használják, azonban előfordulhat, hogy egyes szolgáltatások nem támogatnak bizonyos jogosultságokat. Az Azure portal és a Microsoft 365 felügyeleti központ lista korlátozott rendszergazdai szerepkörök az Intune által nem használt. Az Intune-beli rendszergazdai jogosultságok az alábbiak lehetnek:
 
 - **Globális rendszergazda** – (Office 365 és Intune) Az Intune összes rendszergazdai funkciójához hozzáfér. Alapértelmezés szerint a rendszer az Intune-ba regisztráló felhasználót állítja be globális rendszergazdának. Kizárólag a globális rendszergazdák jogosultak a többi rendszergazdai szerepkör kiosztására. A szervezetben egynél több globális rendszergazda is működhet. Javasoljuk, hogy a kockázat minimalizálása érdekében ne adja meg túl sok személynek ezt a szerepkört.
 - **Jelszókezelő** – (Office 365 és Intune) Átállítja a jelszavakat, kezeli a szolgáltatáskéréseket, illetve figyeli a szolgáltatás állapotát. A jelszókezelők kizárólag a felhasználók jelszavának átállítására jogosultak.
@@ -109,7 +110,7 @@ Rendeljen hozzá egy vagy több rendszergazdai jogosultságot a felhasználókho
 
 A Microsoft Intune-előfizetés létrehozásához használt fiók globális rendszergazdai fiók. A napi felügyeleti feladatok elvégzéséhez nem ajánlott globális rendszergazdai jogosultságokat használni. Noha a rendszergazda licenc nélkül is elérheti az Intune-t az Azure Portalon, bizonyos felügyeleti feladatokat, például az Exchange szolgáltatás összekötőjének beállítását csak Intune-licenc birtokában végezhet el.
 
-Az Office 365-portál eléréséhez a fióknak **Bejelentkezés engedélyezve** beállítással kell rendelkeznie. Az Azure Portalon a **Profil** szakaszban a **Nem** értékre állítsa a **Bejelentkezés blokkolása** beállítást. Ez az állapot nem ugyanaz, mint amikor a fióknak licence van az előfizetéshez. Alapértelmezés szerint az összes felhasználói fiók **Engedélyezett** állapotú. A rendszergazdai engedélyekkel nem rendelkező felhasználók az Office 365-portál segítségével állíthatják vissza az Intune-jelszavukat.
+A Microsoft 365 felügyeleti központ eléréséhez a fióknak rendelkeznie kell egy **bejelentkezés engedélyezve** beállítása. Az Azure Portalon a **Profil** szakaszban a **Nem** értékre állítsa a **Bejelentkezés blokkolása** beállítást. Ez az állapot nem ugyanaz, mint amikor a fióknak licence van az előfizetéshez. Alapértelmezés szerint az összes felhasználói fiók **Engedélyezett** állapotú. Rendszergazdai engedélyekkel nem rendelkező felhasználók a Microsoft 365 felügyeleti központ használatával állítsa vissza az Intune-jelszavát.
 
 ## <a name="sync-active-directory-and-add-users-to-intune"></a>Az Active Directory szinkronizálása és felhasználók hozzáadása az Intune szolgáltatáshoz
 Felhasználói fiókok importálása a helyszíni Active Directoryból a Microsoft Azure Active Directory (Azure AD), amely tartalmazza az Intune-felhasználók címtár-szinkronizálás konfigurálásával. A helyi Active Directory szolgáltatás Azure Active Directory-alapú szolgáltatásokkal való összekapcsolásával jóval egyszerűbbé válik az identitásfelügyelet. Az egyszeri bejelentkezési funkciók konfigurálásával ismerőssé és könnyebbé teheti a felhasználók számára a hitelesítést. Ha egy [Azure AD-bérlőt](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) egyszerre több szolgáltatáshoz is társít, a korábban már szinkronizált felhasználói fiókok is elérhetővé válnak az összes felhőalapú szolgáltatásban.

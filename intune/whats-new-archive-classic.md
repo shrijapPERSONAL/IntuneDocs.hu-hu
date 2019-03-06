@@ -6,9 +6,10 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 06/08/2017
-ms.topic: conceptual
+ms.topic: archived
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a56dcf0bb9c35bb12198537e6fdd1d2f72e3cfbb
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 32bee8ea873c728741deac1ef2adfd57bd9bf612
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238863"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461277"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>A klasszikus Intune-portál újdonságai – korábbi hónapok
 
@@ -120,7 +121,7 @@ A 2017. május közepén esedékes szolgáltatásfrissítés keretében eltávol
 
 Ha Ön partneradminisztrátor, akkor a továbbiakban nem lesz lehetősége az Intune Partner lapon megnézni partnereit és intézkedni a nevükben. Ehelyett a Microsoft két másik partnerportáljának valamelyikére kell majd bejelentkeznie.
 
-A [Microsoft Partnerközpontban](https://partnercenter.microsoft.com/) és a [Microsoft Office 365 Felügyeleti partnerközpontban](https://portal.office.com/) egyaránt bejelentkezhet az Ön által felügyelt ügyfélfiókokba. A továbbiakban partnerként ezeken a webhelyeken felügyelheti ügyfeleit.
+Mindkét a [Microsoft Partner Centeren](https://partnercenter.microsoft.com/) és a [Microsoft 365 felügyeleti központban](https://admin.microsoft.com/) lehetővé teszi, hogy jelentkezzen be a felügyelt ügyfelek fiókjait. A továbbiakban partnerként ezeken a webhelyeken felügyelheti ügyfeleit.
 
 
 #### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Az Apple frissítést tesz kötelezővé a Application Transport Security szolgáltatáshoz <!--748318-->

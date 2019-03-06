@@ -9,6 +9,7 @@ ms.date: 02/24/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab3fa7dc52ac65c5b588f1df921619f4dbe5e26b
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 5ae6e8aec0fb2aa3e563e28f3846eaddea06380c
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229241"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461464"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Bevezetés a Microsoft Intune App SDK használatába
 
@@ -159,9 +160,9 @@ Miután elvégezte az iOS vagy Android alkalmazásnak az Intune App SDK-való in
 
     * Ha független szoftverszállítóként engedélyezi az Intune alkalmazásvédelmi szabályzatának használatához az iOS vagy Android rendszerhez készült áruházbeli alkalmazásait, a regisztráció (az ezt ismertető lépésben leírt módon történő) befejezése után kapni fog egy promóciós kódot. A promóciós kód lehetővé teszi, hogy feliratkozzon a Microsoft Intune próbaverziójának 1 évig meghosszabbított használatára.
 
-    * Az áruházban nem közzéteendő üzleti alkalmazások fejlesztői az adott szervezeten keresztül kaphatnak hozzáférést a Microsoft Intune-hoz. Emellett feliratkozhat a [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) egyhónapos ingyenes próbaidőszakára is.
+    * Az áruházban nem közzéteendő üzleti alkalmazások fejlesztői az adott szervezeten keresztül kaphatnak hozzáférést a Microsoft Intune-hoz. Emellett feliratkozhat a [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) egyhónapos ingyenes próbaidőszakára is.
     
-    * Ha teszteli az alkalmazás egy mobileszközön, egy olyan felhasználói fiókkal, győződjön meg arról, hogy az adott fiók által az Intune-licencet az Office rendszergazdai portál webhelyen Ha egy rendszergazdai fiókkal bejelentkezik, lásd: [hozzárendelése a Microsoft Intune-licencet](https://docs.microsoft.com/en-ca/intune/licenses-assign).
+    * Ha teszteli az alkalmazás egy mobileszközön, egy olyan felhasználói fiókkal, győződjön meg arról, hogy az adott fiók által az Intune-licencet a Microsoft 365 felügyeleti központ webhelyen Ha egy rendszergazdai fiókkal bejelentkezik, lásd: [licenc hozzárendelése a Microsoft Intune-ban ](https://docs.microsoft.com/en-ca/intune/licenses-assign).
 
 * **Az Intune alkalmazásvédelmi szabályzatai**: Tesztelje az alkalmazását az Intune alkalmazásvédelmi szabályzatok, ismernie kell, az elvárt viselkedés mi minden egyes házirend-beállítás. Lásd az [iOS alkalmazásvédelmi szabályzatainak](app-protection-policy-settings-ios.md) és az [Android alkalmazásvédelmi szabályzatainak](app-protection-policy-settings-android.md) ismertetését.
 

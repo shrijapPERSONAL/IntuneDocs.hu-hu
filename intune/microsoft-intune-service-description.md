@@ -9,6 +9,7 @@ ms.date: 05/30/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fcd78efe6862e42296764e4791bf8fed940adde4
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: d43c999cf5dc90d62b9409e3c4565502b773ddf4
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850947"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57460529"
 ---
 # <a name="microsoft-intune-service-description"></a>A Microsoft Intune szolgáltatás leírása
 
@@ -36,7 +37,7 @@ Az Intune szorosan együttműködik az identitáskezelés és a hozzáférés-ve
 Ha szeretne továbbiakat megtudni arról, hogyan kezelheti az eszközöket, alkalmazásokat és védheti a céges adatokat az Intune-nal, olvassa el az [Intune dokumentációját](https://docs.microsoft.com/intune/).
 
 ## <a name="30-day-free-trial"></a>30 napos ingyenes próbaverzió
-Az Intune használatát egy 30 napos ingyenes próbaverzióval kezdheti meg, amely 100 felhasználói licencet tartalmaz. Az ingyenes próbaverzió elindításához [látogasson el az Intune bejelentkezési oldalára](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20). Ha munkahelye vállalati szerződéssel vagy egy egyenértékű mennyiségi licencszerződéssel rendelkezik, az ingyenes próbaverzió beállítását bízza Microsoft-képviselőjére.
+Az Intune használatát egy 30 napos ingyenes próbaverzióval kezdheti meg, amely 100 felhasználói licencet tartalmaz. Az ingyenes próbaverzió elindításához [látogasson el az Intune bejelentkezési oldalára](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20). Ha munkahelye vállalati szerződéssel vagy egy egyenértékű mennyiségi licencszerződéssel rendelkezik, az ingyenes próbaverzió beállítását bízza Microsoft-képviselőjére.
 
 > [!NOTE]
 > Ha munkahelyének van munkahelyi vagy iskolai Microsoft Online Services-fiókja, és előfordulhat, hogy a próbaidőszak leteltével élesben folytatja ennek az Intune-előfizetésnek a használatát, akkor az oldalon válassza a **Bejelentkezés** lehetőséget, és a hitelesítéshez használja a munkahelye globális rendszergazdai fiókját. Ez a művelet gondoskodik arról, hogy az Intune próbaverzió a meglévő munkahelyi vagy iskolai fiókhoz kapcsolódjon.
@@ -58,7 +59,7 @@ Mivel a mobileszköz-kezelési ökoszisztéma az operációs rendszer frissíté
 
 - [Újdonságok a Microsoft Intune-ban](whats-new.md). Ezt a témakört a havi szolgáltatásfrissítésekkel frissítjük, de heti frissítések is előfordulhatnak, ha új alkalmazás (például a Céges Portál alkalmazás) jelenik meg.
 
-- A fontos szolgáltatásfrissítéseket az [Office 365 felügyeleti portál](https://portal.office.com/Admin/Default.aspx) üzenetközpontjában is bejelentjük. Az [Office 365 felügyeleti társalkalmazás](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) telepítésével mobileszközén is fogadhatja az értesítéseket. További tudnivalók az [Office 365 üzenetközpontjában](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates) való munkavégzésről.
+- A fontos szolgáltatásfrissítésekről is bejelentjük a [Microsoft 365 felügyeleti központban](https://admin.microsoft.com/) üzenetközpont. Az [Office 365 felügyeleti társalkalmazás](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) telepítésével mobileszközén is fogadhatja az értesítéseket. További tudnivalók az [Office 365 üzenetközpontjában](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates) való munkavégzésről.
 
     Néhány hasznos tanács:
 
@@ -77,7 +78,7 @@ Mivel a mobileszköz-kezelési ökoszisztéma az operációs rendszer frissíté
     - [Intune-támogatási blog](https://blogs.technet.microsoft.com/intunesupport/)
 
 >[!Note]
->Az [Office 365 felügyeleti portálon](https://portal.office.com/Admin/Default.aspx) az Intune szolgáltatás állapota is figyelemmel követhető. Válassza a bal oldali panel **Szolgáltatás állapota** elemét. A szolgáltatás állapotát ezen kívül az [Office 365 felügyeleti mobilalkalmazás](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) használatával is ellenőrizheti.
+>Az Intune szolgáltatás állapotát nyomon követheti a [Microsoft 365 felügyeleti központban](https://admin.microsoft.com). Válassza a bal oldali panel **Szolgáltatás állapota** elemét. A szolgáltatás állapotát ezen kívül az [Office 365 felügyeleti mobilalkalmazás](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) használatával is ellenőrizheti.
 
 ## <a name="types-of-notices-microsoft-provides-about-the-intune-service"></a>A Microsoft Intune szolgáltatással kapcsolatos értesítések típusai
 

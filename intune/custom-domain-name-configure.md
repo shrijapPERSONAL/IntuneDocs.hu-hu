@@ -10,6 +10,7 @@ ms.date: 02/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: angerobe
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 456281d5b77933ef82ee734add9f8d7eaf18750b
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: ba1759b04d2319b9a9d7fd911a885e297c4f23f6
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839457"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57460818"
 ---
 # <a name="configure-a-custom-domain-name"></a>Állítson be egy egyéni tartománynevet
 
@@ -43,14 +44,14 @@ A kezdeti onmicrosoft.com tartománynév nem nevezhető át és nem távolíthat
 
 ## <a name="to-add-and-verify-your-custom-domain"></a>Egyéni tartomány hozzáadása és hitelesítése
 
-1. Nyissa meg az [Office 365 felügyeleti portálját](https://portal.office.com/Admin/Default.aspx), és jelentkezzen be a rendszergazdai fiókjával.
+1. Lépjen a [Microsoft 365 felügyeleti központban](https://admin.microsoft.com/) , és jelentkezzen be a rendszergazdai fiókjával.
 
 2. A navigációs ablakban kattintson a **Beállítás** &gt; **Tartományok** elemre.
 
 3. Kattintson a **Tartomány felvétele** gombra, és írja be az egyéni tartománynevet. Kattintson a **Tovább** gombra.
-   ![Képernyőkép az Office 365 Felügyeleti központ > Tartományok kiválasztásáról és új tartománynév hozzáadásáról](./media/domain-custom-add.png)
+   ![Képernyőkép a Microsoft 365 felügyeleti központ > tartományok kiválasztásáról és a egy új tartomány neve, hozzáadott](./media/domain-custom-add.png)
 4. A megnyíló **Tartomány hitelesítése** párbeszédpanelen megtalálhatja a DNS-szolgáltatón létrehozandó TXT-rekord értékeit.
-    - **GoDaddy-felhasználók**: Az Office 365 felügyeleti portálja átirányítja a GoDaddy bejelentkezési lapjára. A hitelesítő adatok megadása és a tartományváltást engedélyező megállapodás elfogadása után a TXT-rekord automatikusan létrejön. Alternatív módszerként [a TXT-rekord manuálisan is létrehozható](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a).
+    - **GoDaddy-felhasználók**: A Microsoft 365 felügyeleti központban átirányítja a GoDaddy bejelentkezési oldalára. A hitelesítő adatok megadása és a tartományváltást engedélyező megállapodás elfogadása után a TXT-rekord automatikusan létrejön. Alternatív módszerként [a TXT-rekord manuálisan is létrehozható](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a).
     - **Register.com-felhasználók**: Kövesse a [részletesen](https://support.office.com/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e#BKMK_verify) a TXT-rekord létrehozásához.
 
 Az egyéni tartományok hozzáadásának és hitelesítésének lépései [az Azure Active Directoryban is végrehajthatók](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/).

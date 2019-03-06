@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9444a124b9b8a47633f544205940dadb3df0fd8f
-ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
+ms.openlocfilehash: 55935b2f69f9573d8df5ea5ca32fb4587c652b26
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 03/05/2019
-ms.locfileid: "57335003"
+ms.locfileid: "57389467"
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Úgy tűnik, hogy az androidos eszköze titkosított, de a Céges portál nem így gondolja
 
@@ -63,16 +63,15 @@ Néhány, 7.0-s vagy újabb Android-verzióval működő eszköz az androidos pl
 
 ### <a name="known-devices-that-can-be-updated-to-fix-this-issue"></a>A probléma elhárítása érdekében frissíthető ismert eszközök
 
-A probléma előfordulhat, ha az alábbi eszközök valamelyikével rendelkezik, és még nem frissítette azt a legújabb Android-verzióra. Ezeken az eszközökön a frissítést a **Beállítások** > **Frissítés** területen végezheti el. 
+Ha az eszköz Android legújabb verziójára még nem frissítette, nyissa meg az eszköz **beállítások** alkalmazást, és válassza **frissítés**. Ezek az eszközök például nem megfelelő jelenhet meg amíg nem frissíti:  
 
-- [Huawei Honor 8](https://consumer.huawei.com/us/support/phones/honor-8/)
-- [Huawei P9](https://consumer.huawei.com/en/phones/p9/)
+- Huawei Honor 8
+- Huawei P9
 
 ### <a name="known-devices-that-currently-cannot-be-updated-to-fix-this-issue"></a>A probléma elhárítása érdekében jelenleg nem frissíthető ismert eszközök
+Az alábbi eszközök mindig megjelenik a titkosított, és nem használható a vállalati erőforrások eléréséhez. Vállalati erőforrások eléréséhez másik eszközt kell használnia.  
 
-A probléma az alábbi eszközök nem oldható fel. Szüksége lehet egy másik eszköz használatára a vállalati erőforrások eléréséhez. 
-
-- [Huawei Mate 8](https://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
-- [OPPO eszközök](https://www.oppo.com/en/smartphones)
-- [Vivo eszközök](https://www.vivo.co.in)
-- [Xiaomi Mi okostelefonok](https://xiaomi-mi.com/mi-smartphones/)
+- Huawei Mate 8
+- OPPO eszközök
+- Vivo eszközök
+- Xiaomi Mi okostelefonok

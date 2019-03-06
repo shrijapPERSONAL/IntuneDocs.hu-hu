@@ -10,18 +10,19 @@ ms.date: 03/08/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0b7b149977151fa733bb13d5f60818404466014
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 88f5d7e90adbffea20885aaacc92515807025c2a
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57235990"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461447"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Az Azure AD használata az Intune API-k elérésére a Microsoft Graphban
 
@@ -589,7 +590,7 @@ Ne felejtse el hozzáadni a felhasználót igény szerint a többi szerepkörhö
 
 Ezenkívül:
 
-- A(z) https://portal.office.com segítségével rendeljen hozzá egy Intune-licencet az felhasználói fiókhoz.
+- A(z) https://admin.microsoft.com segítségével rendeljen hozzá egy Intune-licencet az felhasználói fiókhoz.
 
 - Módosítsa úgy az alkalmazás kódját, hogy a sajátja helyett inkább az ügyfél Azure AD-bérlői tartományán hitelesítsen.
 

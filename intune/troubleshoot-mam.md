@@ -7,21 +7,22 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/21/2019
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c94fc26543123f0b3cf6a0f08f8089c48d78778b
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: b4db9845befe7440e615e8deb874971a5b80efdb
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232199"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461175"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Mobilalkalmazás-kezelési hibaelhárítás
 
@@ -37,7 +38,7 @@ Ezek a gyakori problémák az Intune alkalmazásvédelmi szabályzatai segítsé
 | -- | -- | -- |
 | A Skype Vállalati verzióra nem vonatkozó szabályzat | Az Azure Portalon beállított, eszközregisztráció nélküli alkalmazásvédelmi szabályzat nem lép életbe az iOS- és Android-eszközökön futó Skype Vállalati verzió alkalmazásra vonatkozóan. | A Skype Vállalati verziót a modern hitelesítésre kell beállítani.  Kövesse a [Bérlő engedélyezése modern hitelesítéshez](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) című részben található utasításokat a modern hitelesítés beállításához Skype-hoz. |
 | Nem alkalmazott Office-alkalmazás-szabályzat | Az alkalmazásvédelmi szabályzatok egyetlen felhasználónál sem lépnek életbe a [támogatott Office-alkalmazásokra](https://www.microsoft.com/cloud-platform/microsoft-intune-partners) vonatkozóan. | Ellenőrizze, hogy a felhasználók rendelkeznek-e Intune-licenccel, illetve, hogy a használt alkalmazásvédelmi szabályzat megcélozza-e az Office-alkalmazásokat. Az újonnan beállított alkalmazásvédelmi szabályzatok életbe lépéséhez esetenként 8 órának is el kell telnie. |
-| A rendszergazda nem tudja beállítani az alkalmazásvédelmi szabályzatot az Azure Portalon | Az informatikai rendszergazda nem tud alkalmazásvédelmi szabályzatokat konfigurálni az Azure Portalon. | A következő felhasználói szerepkörök rendelkeznek hozzáféréssel az Azure Portalhoz: <ul><li>Globális rendszergazda; ez a szerepkör az [Office-portálon](https://portal.office.com/) állítható be.</li><li>Tulajdonos; ez a szerepkör az [Azure-portálon](https://portal.azure.com/) állítható be.</li><li>Közreműködő; ez a szerepkör az [Azure-portálon](https://portal.azure.com/) állítható be.</li></ul> Tekintse meg [szerepköralapú vezérlés (RBAC) a Microsoft Intune-nal](role-based-access-control.md) a szerepkörök beállításával, segítségért.|
+| A rendszergazda nem tudja beállítani az alkalmazásvédelmi szabályzatot az Azure Portalon | Az informatikai rendszergazda nem tud alkalmazásvédelmi szabályzatokat konfigurálni az Azure Portalon. | A következő felhasználói szerepkörök rendelkeznek hozzáféréssel az Azure Portalhoz: <ul><li>Globális rendszergazda; Ez a beállíthat a [Microsoft 365 felügyeleti központban](https://admin.microsoft.com/)</li><li>Tulajdonos; ez a szerepkör az [Azure-portálon](https://portal.azure.com/) állítható be.</li><li>Közreműködő; ez a szerepkör az [Azure-portálon](https://portal.azure.com/) állítható be.</li></ul> Tekintse meg [szerepköralapú vezérlés (RBAC) a Microsoft Intune-nal](role-based-access-control.md) a szerepkörök beállításával, segítségért.|
 |Az alkalmazásvédelmi szabályzat jelentéseiből hiányzó felhasználói fiókok | A felügyeleti konzol jelentéseiben nem szerepelnek azok a felhasználói fiókok, amelyekre a közelmúltban alkalmazták az alkalmazásvédelmi szabályzatot. | Az alkalmazásvédelmi szabályzattal újonnan megcélzott felhasználók esetében előfordul, hogy 24 órának is el kell telnie, hogy a felhasználó megjelenjen a jelentésekben. |
 | Nem működő szabályzatváltozások | Az alkalmazásvédelmi szabályzatokat érintő változások és frissítések életbe lépéséhez akár 8 órára is szükség lehet. | Ha alkalmazandó, a végfelhasználó jelentkezzen ki az alkalmazásból, majd jelentkezzen be újra, ezzel kényszerítve a szinkronizálást a szolgáltatással. |
 | Az alkalmazásvédelmi szabályzat nem működik a DEP-pel | Az alkalmazásvédelmi szabályzat nem lép érvénybe az Apple DEP-eszközökön. | Győződjön meg róla, hogy használja-e a Felhasználói affinitás funkciót az Apple Eszközregisztrációs programmal (DEP). Felhasználói affinitásra minden olyan alkalmazás esetében szükség van, amely felhasználói hitelesítést igényel DEP alatt. <br><br>Tekintse meg [automatikusan iOS-eszközök regisztrálása az Apple Device Enrollment Program](device-enrollment-program-enroll-ios.md) iOS DEP-regisztrációról bővebben.|
@@ -78,7 +79,7 @@ Hibaüzenet vagy párbeszédpanel | Ok | Szervizelés |
 **Alkalmazás nem állította be**: Ez az alkalmazás nincs beállítva a használatra. Segítségért forduljon a rendszergazdához. | Hiba történt egy alkalmazásvédelmi szabályzatot az alkalmazás észleléséhez. |Léptessen életbe egy iOS-es alkalmazásvédelmi szabályzatot a felhasználó biztonsági csoportjában, és célozza meg benne ezt az alkalmazást.
 **Üdvözli az Intune Managed Browser**: Ez az alkalmazás akkor működik a legjobban, ha a Microsoft Intune által kezelt. Bármikor böngészheti vele az internetet. Ha az alkalmazást a Microsoft Intune felügyeli, további adatbiztonsági funkciókat is elérhet. | Hiba történt észleléséhez egy alkalmazásvédelmi szabályzatot az Intune Managed Browser alkalmazás. <br><br>A felhasználó ebben az esetben is internetezhet, de az alkalmazást nem az Intune fogja felügyelni. | Léptessen életbe egy iOS-es alkalmazásvédelmi szabályzatot a felhasználó biztonsági csoportjában, és célozza meg benne ezt az Intune Managed Browser alkalmazást.
 **Sikertelen bejelentkezés**: Nem tudjuk beléptetni most. Próbálkozzon újra később. | Nem sikerült regisztrálni a felhasználót a MAM-szolgáltatásban, miután a felhasználó megpróbált munkahelyi vagy iskolai fiókjával bejelentkezni. | Léptessen életbe egy iOS-es alkalmazásvédelmi szabályzatot a felhasználó biztonsági csoportjában, és célozza meg benne ezt az alkalmazást.
-**A fiók nincs beállítva**: A szervezete nem állította be a fiókját a munkahelyi vagy iskolai adatok elérésére. Kérjen segítséget a rendszergazdától. | A felhasználói fiókhoz nem tartozik Intune A Direct-licenc. | Rendeljen Intune-licencet a felhasználó fiókjához az [Office-portálon](https://portal.office.com).
+**A fiók nincs beállítva**: A szervezete nem állította be a fiókját a munkahelyi vagy iskolai adatok elérésére. Kérjen segítséget a rendszergazdától. | A felhasználói fiókhoz nem tartozik Intune A Direct-licenc. | Győződjön meg arról, hogy a felhasználói fiók van hozzárendelve az Intune-licencet a [Microsoft 365 felügyeleti központban](https://admin.microsoft.com).
 **Nem felel meg az eszköz**: Ez az alkalmazás nem használható, mert Ön egy feltört eszközt használ. Segítségért forduljon a rendszergazdához. | Az Intune észlelte, hogy a felhasználó feltört eszközt használ. | Állítsa vissza az eszköz gyári alapbeállításait. Kövesse az Apple támogatói webhelyén található [utasításokat](https://support.apple.com/HT201274).
 **Internetkapcsolat szükséges**: Akkor kapcsolódnia kell az internethez, ellenőrizze, hogy az alkalmazás használhatja. | Az eszközön nincs internetkapcsolat. | Csatlakoztassa az eszközt egy Wi-Fi- vagy adathálózathoz.
 **Ismeretlen hiba történt**: Próbálja meg újraindítani az alkalmazást. Ha nem szűnik meg a probléma, kérjen segítséget a rendszergazdától. | Ismeretlen hiba történt. | Próbálkozzon újra egy kis idő elteltével. Ha a hiba továbbra is fennáll, hozzon létre egy [támogatási jegyet](get-support.md#create-an-online-support-ticket) az Intune-nal.
@@ -97,7 +98,7 @@ Párbeszédpanel/hibaüzenet | Ok | Szervizelés |
 **Sikertelen bejelentkezés**: Próbálja meg újra bejelentkezni. Ha nem szűnik meg a probléma, kérje a rendszergazda segítségét. | Nem sikerült hitelesíteni a fiókot, amellyel a felhasználó megpróbál bejelentkezni. | A felhasználó azzal a munkahelyi vagy iskolai fiókkal jelentkezzen be, amely már regisztrálva van az Intune MAM-szolgáltatásában (ez az első munkahelyi vagy iskolai fiók, amellyel sikeresen bejelentkezett ebbe az alkalmazásba). <br><br> Törölje az alkalmazásadatokat. <br><br> Ellenőrizze, hogy az alkalmazás naprakész verzióját használja-e. <br><br> Ellenőrizze, hogy a Munkahelyi portál alkalmazás naprakész verzióját használja-e.
 **Internetkapcsolat szükséges**: Akkor kapcsolódnia kell az internethez, ellenőrizze, hogy az alkalmazás használhatja. | Az eszközön nincs internetkapcsolat. | Csatlakoztassa az eszközt egy Wi-Fi- vagy adathálózathoz.
 **Nem megfelelő eszköz**: Ez az alkalmazás nem használható, mert Ön egy rootolt eszközt használ. Segítségért forduljon a rendszergazdához. | Az Intune észlelte, hogy a felhasználó feltört eszközt használ. | Állítsa vissza az eszköz gyári alapbeállításait.
-**A fiók nincs beállítva**: A Microsoft Intune-nal felügyelni ezt az alkalmazást, de a fiók nincs beállítva. Segítségért forduljon a rendszergazdához. | A felhasználói fiókhoz nem tartozik Intune A Direct-licenc. | Rendeljen Intune-licencet a felhasználó fiókjához az [Office-portálon](https://portal.office.com).
+**A fiók nincs beállítva**: A Microsoft Intune-nal felügyelni ezt az alkalmazást, de a fiók nincs beállítva. Segítségért forduljon a rendszergazdához. | A felhasználói fiókhoz nem tartozik Intune A Direct-licenc. | Győződjön meg arról, hogy a felhasználói fiók van hozzárendelve az Intune-licencet a [Microsoft 365 felügyeleti központban](https://admin.microsoft.com).
 **Nem sikerült regisztrálni az alkalmazást**: A Microsoft Intune-nal felügyelni ezt az alkalmazást, de nem sikerült regisztrálni az alkalmazást jelenleg. Segítségért forduljon a rendszergazdához. | Nem sikerült automatikusan regisztrálni az alkalmazást a MAM-szolgáltatásban, pedig alkalmazásvédelmi szabályzatra van szükség. | Törölje az alkalmazásadatokat. <br><br> Naplók küldése az Intune a céges portál alkalmazáson keresztül, vagy küldjön egy támogatási jegyet. További információkért lásd: [hogyan kérhet támogatást a Microsoft Intune](get-support.md).
 
 ## <a name="next-steps"></a>További lépések

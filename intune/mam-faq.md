@@ -9,6 +9,7 @@ ms.date: 10/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 69cc0d732c9dc850d55acedf4e6dbae0f43f350a
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: cdbe2c34f9e0bfb05324d7030ad27ce664fcfb76
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232054"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461081"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Gyakori kérdések az MAM-ről és az alkalmazásvédelemről
 
@@ -62,7 +63,7 @@ Az [Intune App SDK](/intune/app-sdk) által integrált vagy az [Intune alkalmaz�
 
 - A végfelhasználónak rendelkeznie kell az Azure Active Directory-fiókjához rendelt Microsoft Intune-licenccel. További információ a végfelhasználókhoz rendelt Intune-licencekről: [Intune-licencek kezelése](/intune/licenses-assign).
 
-- A végfelhasználónak egy alkalmazásvédelmi szabályzattal társított biztonsági csoporthoz kell tartoznia. Ugyanezen alkalmazásvédelmi szabályzatnak a használt alkalmazással is társítva kell lennie. Alkalmazásvédelmi csoportokat az [Azure-portálon](https://portal.azure.com) található Intune-konzolban lehet létrehozni és telepíteni. Biztonsági csoportot jelenleg az [Office-portálon](https://portal.office.com) lehet létrehozni.
+- A végfelhasználónak egy alkalmazásvédelmi szabályzattal társított biztonsági csoporthoz kell tartoznia. Ugyanezen alkalmazásvédelmi szabályzatnak a használt alkalmazással is társítva kell lennie. Alkalmazásvédelmi csoportokat az [Azure-portálon](https://portal.azure.com) található Intune-konzolban lehet létrehozni és telepíteni. A jelenleg hozható létre biztonsági csoportokat a [Microsoft 365 felügyeleti központban](https://admin.microsoft.com).
 
 - A végfelhasználónak saját AAD-fiókjával be kell jelentkeznie az alkalmazásba.
 
@@ -77,7 +78,7 @@ Az [Intune App SDK](/intune/app-sdk) által integrált vagy az [Intune alkalmaz�
 
 **Mik a [Word, az Excel és a PowerPoint](https://products.office.com/business/office) alkalmazás használatának további feltételei?**
 
-- A végfelhasználónak rendelkeznie kell az Azure Active Directory-fiókjához rendelt [Office 365 Vállalati vagy Nagyvállalati verzió](https://products.office.com/business/compare-more-office-365-for-business-plans) licencével. Az előfizetésnek tartalmaznia kell a mobileszközökön használt Office-alkalmazásokat, és egy felhőalapú társzolgáltatás-fiókot is tartalmazhat a [OneDrive Vállalati verzióban](https://onedrive.live.com/about/business/). Az Office 365 licenc az [Office-portálon](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc) történő hozzárendeléséhez kövesse [ezeket az utasításokat](https://portal.office.com).
+- A végfelhasználónak rendelkeznie kell az Azure Active Directory-fiókjához rendelt [Office 365 Vállalati vagy Nagyvállalati verzió](https://products.office.com/business/compare-more-office-365-for-business-plans) licencével. Az előfizetésnek tartalmaznia kell a mobileszközökön használt Office-alkalmazásokat, és egy felhőalapú társzolgáltatás-fiókot is tartalmazhat a [OneDrive Vállalati verzióban](https://onedrive.live.com/about/business/). Az Office 365-licencek lehet hozzárendelni a a [Microsoft 365 felügyeleti központban](https://admin.microsoft.com) következő [utasításokat](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
 - A végfelhasználónak egy olyan felügyelt hellyel kell rendelkeznie, amelyet a részletes mentés másként funkcióval konfiguráltak „A Mentés másként művelet letiltása” alkalmazásvédelmi szabályzatbeállítás alatt. Ha például a felügyelt hely a OneDrive, a [OneDrive](https://onedrive.live.com/about/) alkalmazást konfigurálni kell a felhasználó Word, Excel és PowerPoint alkalmazásában.
 

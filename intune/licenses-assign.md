@@ -9,6 +9,7 @@ ms.date: 10/31/2017
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 797ea27103144423d1b43434612999631a4a243d
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 14d5e01577100e0a66cfcf6ce935289a1dc26fab
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834484"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57459900"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Intune-licencek hozzárendelése a felhasználókhoz, hogy regisztrálhassák az eszközöket
 
@@ -29,17 +30,17 @@ ms.locfileid: "55834484"
 
 Akár manuálisan adja hozzá a felhasználókat, akár a helyszíni Active Directoryból szinkronizál, először Intune-licencet kell hozzárendelnie minden felhasználóhoz, hogy a felhasználók regisztrálhassák eszközeiket az Intune-ban. A licencek listáját az [Intune-t tartalmazó licencek](licenses.md) című témakörben találja.
 
-## <a name="assign-an-intune-license-in-the-office-365-admin-center"></a>Intune-licenc hozzárendelése az Office 365 Felügyeleti központban
+## <a name="assign-an-intune-license-in-the-microsoft-365-admin-center"></a>Rendeljen Intune-licencet, a Microsoft 365 felügyeleti központban
 
-Az [Office 365 portál](http://go.microsoft.com/fwlink/p/?LinkId=698854) használatával a felhőalapú felhasználók és licencek manuálisan hozzáadhatók, illetve hozzárendelhetők a felhőalapú felhasználói fiókokhoz és a helyszíni Active Directoryból az Azure AD-be szinkronizált fiókokhoz is.
+Használhatja a [Microsoft 365 felügyeleti központban](http://go.microsoft.com/fwlink/p/?LinkId=698854) manuálisan adja hozzá a felhőalapú felhasználók és licencek hozzárendelése a felhőalapú felhasználói fiókokhoz és a helyszíni Active Directoryból az Azure AD-be szinkronizált fiókokhoz is.
 
-1. Jelentkezzen be az [Office 365 portálon](http://go.microsoft.com/fwlink/p/?LinkId=698854) bérlői rendszergazdai hitelesítő adataival, majd válassza a **Felhasználók** > **Aktív felhasználók** lehetőséget.
+1. Jelentkezzen be a [Microsoft 365 felügyeleti központban](http://go.microsoft.com/fwlink/p/?LinkId=698854) bérlői rendszergazdai hitelesítő adataival, és válassza a **felhasználók** > **aktív felhasználók**.
 
 2. Válassza ki a felhasználói fiókot az Intune felhasználói licencek hozzárendelésére, és válassza a **Terméklicencek** > **Szerkesztés** lehetőséget.
 
 3. Kapcsolja az **Intune** vagy az **Enterprise Mobility + Security** beállítást **Be**, és válassza a **Mentés** lehetőséget.
 
-   ![Képernyőkép az Office 365 portál Terméklicencek szakaszáról.](./media/office-assign-license.png)
+   ![Képernyőkép a Microsoft 365 felügyeleti központban termék szakasz licenceket.](./media/office-assign-license.png)
 
 4. A felhasználói fiókot most már rendelkezik a szolgáltatás használatához és az eszközöknek a felügyelet alá való regisztrálásához szükséges engedélyekkel.
 

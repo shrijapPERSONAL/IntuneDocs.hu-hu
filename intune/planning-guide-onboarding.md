@@ -10,6 +10,7 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c76e253287f823c4352667205487cce839e14178
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 76f1c113562e70bd819b2519a8b78d5824ef715b
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57228935"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57460699"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>A Microsoft Intune-terv megvalósítása
 
@@ -77,7 +78,7 @@ Az Intune üzembe helyezésének használatieset-forgatókönyvei és a követel
 
 ### <a name="task-4-assign-intune-and-office-365-user-licenses"></a>4. feladat: Az Intune és az Office 365 felhasználói licencek hozzárendelése
 
-Az EMS/Intune és az Office 365 bevezetésével érintett minden felhasználónak rendelkeznie kell egy hozzá rendelt licenccel. Az EMS/Intune- és Office 365-licencek hozzárendelését az Office 365 Felügyeleti központ portálján végezheti el.
+Az EMS/Intune és az Office 365 bevezetésével érintett minden felhasználónak rendelkeznie kell egy hozzá rendelt licenccel. Az EMS/Intune és Office 365-licencek, a Microsoft 365 felügyeleti központban rendelhet.
 
 -   További információ: [Intune-licencek hozzárendelése](licenses-assign.md).
 

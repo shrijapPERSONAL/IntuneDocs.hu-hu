@@ -10,6 +10,7 @@ ms.date: 01/06/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.reviewer: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b0ed363acca7fc0021569009b1f672a06101e29f
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 1dea5f0a794e0b947e1f542b796e946de85f7eb4
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834177"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57460377"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Gyors útmutató: A Microsoft Intune ingyenes kipróbálása 
 
@@ -53,7 +54,7 @@ Az Intune kipróbálása 30 napig ingyenes. Ha már rendelkezik munkahelyi vagy 
 
     ![Képernyőkép az Intune-ban próbafiókot új hitelesítő adat folyamat](./media/account-sign-up-site-user-id.png)
 
-    Ha vállalata saját egyéni tartománnyal rendelkezik, amelyet a **.onmicrosoft.com** utótag nélkül szeretne használni, ezt a cikk későbbi részében ismertetett módon megváltoztathatja az Office 365 felügyeleti portálján.
+    Ha a szervezet rendelkezik-e a saját egyéni tartomány nélkül használni kívánt **. onmicrosoft.com**, módosíthatja, hogy a Ez a cikk későbbi része ismerteti a Microsoft 365 felügyeleti központban.
 
 3. A regisztrációs folyamat végén megtekintheti az új fiók adatait.
 
@@ -96,24 +97,24 @@ Az MDM-szolgáltatóról további információért lásd [A mobileszköz-felügy
 
 ## <a name="configure-your-custom-domain-name-optional"></a>Egyéni tartománynév konfigurálása (nem kötelező)
 
-A fentiekben már volt szó arról, hogy ha vállalata saját egyéni tartománnyal rendelkezik, amelyet a **.onmicrosoft.com** utótag nélkül szeretne használni, ezt az Office 365 felügyeleti portálján megváltoztathatja. Megadhatja, ellenőrizheti és konfigurálhatja saját egyéni tartománynevét.  
+Ha a fenti leírtak a szervezet rendelkezik a saját egyéni tartomány nélkül használni kívánt **. onmicrosoft.com**, módosíthatja a Microsoft 365 felügyeleti központban. Megadhatja, ellenőrizheti és konfigurálhatja saját egyéni tartománynevét.  
 
 > [!IMPORTANT]
 > A kezdeti **onmicrosoft.com** tartománynév nem nevezhető át és nem távolítható el. Hozzáadhat, ellenőrizhet vagy eltávolíthat az Intune-nal használt egyéni tartományneveket vállalata egyértelmű identitásának megőrzése érdekében.
 
-1. Nyissa meg az [Office 365 felügyeleti portálját](https://portal.office.com/Admin/Default.aspx), és jelentkezzen be rendszergazdai fiókjával.
+1. Lépjen a [Microsoft 365 felügyeleti központban](https://admin.microsoft.com) , és jelentkezzen be a rendszergazdai fiók használatával.
 
 2. A navigációs panelen kattintson a **Beállítás** > **Tartományok** > **Tartomány hozzáadása** elemre.
 
 3. Gépelje be egyéni tartománynevét. Végül válassza a **Tovább** lehetőséget.
 
-   ![Képernyőkép az Office 365 felügyeleti központ - tartomány hozzáadása](./media/domain-custom-add.png)
+   ![Képernyőkép a Microsoft 365 felügyeleti központ – tartomány hozzáadása](./media/domain-custom-add.png)
 
 4. Ellenőrizze, hogy az imént megadott tartománynak Ön-e a tulajdonosa. 
     
     A **Kód küldése e-mailben** lehetőséget választva e-mailt küld a tartománya regisztrált kapcsolattartójának. Az e-mail beérkezése után másolja ki a kódot, és illessze be az **Írja be az ellenőrzőkódot** címkéjű mezőbe. Ha az ellenőrző kód egyezik, a tartomány hozzá lesz adva a bérlőjéhez. Előfordulhat, hogy a megjelenő e-mail nem ismerős. Egyes regisztráló szervezetek elrejtik a tartomány regisztrálásakor megadott valódi e-mail-címet.
 
-   ![Képernyőkép az Office 365 felügyeleti központ – a tartomány ellenőrzése](./media/domain-custom-verify.png)
+   ![Képernyőkép a Microsoft 365 felügyeleti központ – a tartomány ellenőrzése](./media/domain-custom-verify.png)
 
    > [!NOTE]
    > TXT típusú rekordok ellenőrzésének részletes leírását a [DNS-rekordok létrehozása bármely DNS-szolgáltatón az Office 365-höz](https://support.office.com/article/Create-DNS-records-at-any-DNS-hosting-provider-for-Office-365-7B7B075D-79F9-4E37-8A9E-FB60C1D95166).
@@ -122,7 +123,7 @@ A fentiekben már volt szó arról, hogy ha vállalata saját egyéni tartománn
 
 Két portált használhat:
 - Az Intune-irányítópultot az Azure-on ([portal.azure.com](https://portal.azure.com)), ahol megismerheti [az Intune képességeit](what-is-intune.md). Többnyire az Intune-irányítópulton fog dolgozni.
-- Az Office 365 felügyeleti központját ([portal.office.com](https://portal.office.com)), ahol a felhasználókat adhatja hozzá és kezelheti, ha nem az Azure Active Directoryt használja ezekre a feladatokra. Továbbá fiókjának számlázási- támogatási- és egyéb aspektusait is kezelheti itt.
+- A Microsoft 365 felügyeleti központot ([admin.microsoft.com](https://admin.microsoft.com)) van, ahol hozzá, és kezelni a felhasználókat, ha nem használ Azure Active Directory, amely. Továbbá fiókjának számlázási- támogatási- és egyéb aspektusait is kezelheti itt.
 
 ## <a name="next-steps"></a>További lépések
 

@@ -10,6 +10,7 @@ ms.date: 02/26/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4c401110799202bd0c8aafc62bfda6d8827247be
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: d7b584fe9d56cd02ce8ee066113c033d8b124559
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57234756"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461226"
 ---
 # <a name="get-started-managing-users"></a>A felhasználók kezelésének első lépései
 
@@ -42,9 +43,9 @@ Gondolja végig, hányan dolgoznak a munkahelyén. Mindegyiküknek, aki céges a
 
 ## <a name="assigning-licenses-to-users"></a>Licencek kiosztása a felhasználók számára
 
-Felhasználó létrehozása után az [Office 365-portál](http://go.microsoft.com/fwlink/p/?LinkId=698854) használatával kell Intune licencet rendelnie az új felhasználóhoz. Ha nem oszt ki nekik licencet, akkor nem fogják tudni felügyeletre regisztrálni eszközeiket.
+Miután létrehozott egy felhasználó, szeretné-e használni a [Microsoft 365 felügyeleti központban](http://go.microsoft.com/fwlink/p/?LinkId=698854) , hogy a felhasználó Intune-licenc hozzárendelése. Ha nem oszt ki nekik licencet, akkor nem fogják tudni felügyeletre regisztrálni eszközeiket.
 
-1. Jelentkezzen be a [Office 365-portálra](http://go.microsoft.com/fwlink/p/?LinkId=698854) az Intune-ba való bejelentkezéshez használt hitelesítő adatokkal.
+1. Jelentkezzen be a [Microsoft 365 felügyeleti központban](http://go.microsoft.com/fwlink/p/?LinkId=698854) bejelentkezni az Intune-hoz használt hitelesítő adatokkal együtt.
 2. Válassza a **Felhasználók** > **Aktív felhasználók** menüpontot, majd a korábban létrehozott felhasználót.
 3. Az összes felhasználói információ betöltődésére esetleg várnia kell valamennyi ideig. Ha betöltődött, válassza a **Szerkesztés** lehetőséget a felhasználó **terméklicenceinél**.
 4. Rendeljen **Hely**et a felhasználóhoz, majd állítsa az Intune kapcsolót **be** értékre.

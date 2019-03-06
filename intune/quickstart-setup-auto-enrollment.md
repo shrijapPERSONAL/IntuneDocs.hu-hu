@@ -4,6 +4,7 @@ description: Rövid útmutató – Windows 10-es eszközök automatikus regisztr
 services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 11/05/2018
 ms.author: erikje
@@ -12,12 +13,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bcee828bdef2e3e1032d88306bbb33da1bd9386
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 810adbf06ddcd0aabb5c758f6a71c898116a9cee
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839107"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57394316"
 ---
 # <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>Gyors útmutató: A Windows 10-es eszközök automatikus regisztrációjának beállítása
 

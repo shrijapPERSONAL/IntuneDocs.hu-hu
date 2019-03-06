@@ -9,6 +9,7 @@ ms.date: 03/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01cffe9143034b9f4221cd760f9cb91f1cceebce
-ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
+ms.openlocfilehash: c47f0d55a914714dedaf96f6f7c346b6252e36c6
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57334969"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461328"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Hogyan kérhet támogatást az Intune-hoz
 
@@ -50,7 +51,7 @@ A Súgó és támogatás élmény az Intune-ban érhető el a [Microsoft 365-kez
 ![Az Intune a többi panelen](./media/get-support/intune-blades.png)
 
 
-Az új felületet hasonlít a élmény látható a a [Microsoft 365 felügyeleti központban](https://portal.office.com/AdminPortal/Home), és lecseréli azokat a [előző Súgó és támogatási élményt](#azure-help-+-support-experience). 
+Az új felületet hasonlít a élmény látható a a [Microsoft 365 felügyeleti központban](https://admin.microsoft.com/), és lecseréli azokat a [előző Súgó és támogatási élményt](#azure-help-+-support-experience). 
 
 Súgó és támogatás elérésére használja a következőt:  
 - **Eszköz kezelési irányítópult:**
@@ -117,7 +118,7 @@ A következő információkat ismerteti az Azure Súgó és támogatási szolgá
 
 ### <a name="create-an-online-support-ticket"></a>Online támogatási jegy létrehozása
 
-1. Az Intune rendszergazdai hitelesítő adataival jelentkezzen be az Azure Portalra (<https://portal.azure.com>), majd válassza a **?** lehetőséget ikonra a portál jobb felső sarkában, majd a **Súgó + támogatás** lehetőség kiválasztásával lépjen tovább az [Azure Súgó + támogatás](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) oldalra.
+1. Az Intune rendszergazdai hitelesítő adataival jelentkezzen be az Azure Portalra (<https://portal.azure.com>), majd válassza a **?** lehetőséget ikonra a portál jobb felső sarkában, majd a **Súgó + támogatás** lehetőség kiválasztásával lépjen tovább az [Azure Súgó + támogatás](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) oldalra.
 
    ![A kérdőjel kapcsolat és a Súgó + támogatás hivatkozás kiemelésével képe](./media/azure-get-support.png)
 
@@ -175,12 +176,12 @@ A következő információkat ismerteti az Azure Súgó és támogatási szolgá
 6. Choose **Create** to submit your support request.
 -->
 >[!IMPORTANT]
->Ha számlázással vagy előfizetéssel kapcsolatos kérdése van, új esetet nyithat meg a segítségkéréshez az [Office felügyeleti központján](https://portal.office.com/Support/SupportEntry.aspx) keresztül.
+>Ha számlázással vagy előfizetéssel kérdése van, akkor új esetet nyithat kérhet támogatást a [Microsoft 365 felügyeleti központban](https://admin.microsoft.com/Support/SupportEntry.aspx).
 
 ### <a name="view-support-requests"></a>Támogatási kérelmek megtekintése
 A támogatási kérelmeket az Azure Portalon tekintheti meg. Ehhez tegye a következőket:
 
-1. Az Intune rendszergazdai hitelesítő adataival jelentkezzen be az Azure-ba (<https://portal.azure.com>), majd válassza a **?** lehetőséget ikonra a portál jobb felső sarkában, majd a **Súgó + támogatás** lehetőség kiválasztásával lépjen tovább az [Azure Súgó + támogatás](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) oldalra.
+1. Az Intune rendszergazdai hitelesítő adataival jelentkezzen be az Azure-ba (<https://portal.azure.com>), majd válassza a **?** lehetőséget ikonra a portál jobb felső sarkában, majd a **Súgó + támogatás** lehetőség kiválasztásával lépjen tovább az [Azure Súgó + támogatás](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) oldalra.
 
 2. A **Súgó és támogatás** lapon megtekintheti a **legutóbbi támogatási kérelmek** listáját, és az egyes elemeket kijelölve további információt kaphat róluk.
 

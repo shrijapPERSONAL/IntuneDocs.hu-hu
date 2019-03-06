@@ -9,6 +9,7 @@ ms.date: 02/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: muhosabe
@@ -16,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e6be4bfdb971e96da0224d146705e7c9fd0606ab
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 828cd17c320bd13b1b7fcce6578727015be3a77b
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229581"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57460444"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>Az Exchange-összekötő konfigurálása az Intune-ban és az Exchange Online-ban
 A cikk segítségével a Microsoft Intune-t az Exchange Online-hoz vagy az új dedikált Exchange Online szolgáltatáshoz csatlakoztathatja. Annak megállapításához, hogy a dedikált Exchange Online-környezet **új** vagy **örökölt** verzió, lépjen kapcsolatba a fiókkezelővel.
 
 A **szolgáltatások közötti összekötő** használatával az Exchange ActiveSync (EAS) és az Intune által felügyelt eszközöket is egyetlen rendszergazdai konzolról felügyelheti.  Az összekötőben az Exchange Online feltételes hozzáférésének engedélyezése nem szükséges.
 
-A feltételes hozzáférés egy bevezetésének megtervezésekor fontos gyakran mely felhasználók és felhasználói száma fog rendelkezni az új felhasználói felületre. Az Office 365 felügyeleti központ biztosítja ezt, egy Exchange Online e-mailek Alkalmazáshasználati jelentés az adott portál tevékenységre vonatkozó jelentések funkcióját részeként formájában. Ezek a jelentések megismeréséhez a környezetében mobil e-mail-elfogadása előtt, és a feltételes hozzáférés üzembe helyezése után is használható.
+A feltételes hozzáférés egy bevezetésének megtervezésekor fontos gyakran mely felhasználók és felhasználói száma fog rendelkezni az új felhasználói felületre. A Microsoft 365 felügyeleti központban biztosít Ez egy Exchange Online e-mailek Alkalmazáshasználati jelentés az adott portál tevékenységre vonatkozó jelentések funkcióját részeként formájában. Ezek a jelentések megismeréséhez a környezetében mobil e-mail-elfogadása előtt, és a feltételes hozzáférés üzembe helyezése után is használható.
 
 ## <a name="service-to-service-connector-requirements"></a>A Service to Service Connector használatára vonatkozó követelmények
 A **Service to Service Connector** csak az Exchange Online-t és a dedikált Exchange Online-t támogatja, és nincsenek a helyszíni infrastruktúrára vonatkozó követelményei. 

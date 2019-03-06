@@ -37,7 +37,7 @@ Az új folyamatjelző sávot megnézheti az [Újdonságok az Intune-alkalmazás 
 
 #### <a name="bulk-enroll-windows-10-devices----747607---"></a>Windows 10-es eszközök tömeges regisztrálása <!-- 747607 -->
 
-Mostantól a Windows Configuration Designer (WCD) használatával a Windows 10 alkotói frissítéssel rendelkező nagy számú eszközt csatlakoztathat az Azure Active Directoryhez és az Intune-hoz. Ha Azure AD-bérlőhöz be szeretné kapcsolni a [tömeges MDM-regisztrálást](/intune-classic/deploy-use/bulk-enroll-windows), a Windows Configuration Designerrel hozzon létre olyan kiépítési csomagot, amely csatlakoztatja az eszközöket az Azure AD-bérlőhöz, majd alkalmazza a csomagot a csoportosan regisztrálni és felügyelni kívánt vállalati tulajdonú eszközökre. A csomagok alkalmazását követően az eszközök csatlakoznak az Azure AD-hez, regisztrálnak az Intune-ban, és készen állnak az Azure AD-felhasználók bejelentkezésére.  Az Azure AD-felhasználók általános jogú felhasználók ezeken az eszközökön, akik megkapják majd a kijelölt szabályzatokat és a kötelező alkalmazásokat. Az önkiszolgáló és a Céges portált használó módszer jelenleg nincs támogatva.
+Mostantól a Windows Configuration Designer (WCD) használatával a Windows 10 alkotói frissítéssel rendelkező nagy számú eszközt csatlakoztathat az Azure Active Directoryhez és az Intune-hoz. Ha Azure AD-bérlőhöz be szeretné kapcsolni a [tömeges MDM-regisztrálást](/intune-classic/deploy-use/bulk-enroll-windows), a Windows Configuration Designerrel hozzon létre olyan kiépítési csomagot, amely csatlakoztatja az eszközöket az Azure AD-bérlőhöz, majd alkalmazza a csomagot a csoportosan regisztrálni és felügyelni kívánt vállalati tulajdonú eszközökre. A csomagok alkalmazását követően az eszközök csatlakoznak az Azure AD-hez, regisztrálnak az Intune-ban, és készen állnak az Azure AD-felhasználók bejelentkezésére.  Az Azure AD-felhasználók általános jogú felhasználók ezeken az eszközökön, akik megkapják majd a kijelölt szabályzatokat és a kötelező alkalmazásokat. Az önkiszolgáló és a Céges portált használó módszer jelenleg nincs támogatva.
 
 ### <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Az Intune új, Azure-beli felügyeleti felületének nyilvános előzetes verziója – újdonságok<!--736542-->
 
@@ -73,7 +73,7 @@ A migrálás után töltse fel újból az appx-et PC-s appx-ként, ha újabb PC-
 
 #### <a name="administration-roles-being-replaced-in-azure-portal"></a>Az Azure Portalon felváltott felügyeleti szerepkörök
 
-A klasszikus Intune-portálon (Silverlight) meglévő mobilalkalmazás-kezelési (MAM) felügyeleti szerepköröket (közreműködői, tulajdonosi és csak olvasható) új szerepköralapú felügyeleti vezérlők (RBAC) teljes készlete váltotta fel az Intune Azure Portalon. Amennyiben az Azure Portalra migrált, újból hozzá kell rendelnie a rendszergazdákat ezen új felügyeleti szerepkörökhöz. További információ az RBAC-vel és az új szerepkörökről: [Szerepköralapú hozzáférés-vezérlés a Microsoft Intune-hoz](/intune/role-based-access-control).
+A meglévő mobilalkalmazás-kezelés (MAM) felügyeleti szerepköröket (közreműködői, tulajdonosi és csak olvasható) használja a klasszikus portálon (Silverlight-) váltotta fel új szerepköralapú felügyeleti vezérlők (RBAC) az Azure-beli Intune teljes körű Intune-ban portál. Amennyiben az Azure Portalra migrált, újból hozzá kell rendelnie a rendszergazdákat ezen új felügyeleti szerepkörökhöz. További információ az RBAC-vel és az új szerepkörökről: [Szerepköralapú hozzáférés-vezérlés a Microsoft Intune-hoz](/intune/role-based-access-control).
 
 ### <a name="whats-coming"></a>Mi várható?
 
@@ -83,13 +83,13 @@ Egy olyan változást jelentünk most be, amely a következő néhány hónapban
 
 Az [Újdonságok az alkalmazás felhasználói felületén](/intune/whats-new-app-ui) lapon képernyőképeket láthat a korábbi bejelentkezési módról, a hitelesítő adatokat használó új bejelentkezési élményről, és a másik eszközről történő bejelentkezési folyamatról.
 
-#### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>Készüljön fel a változásra: megváltozik az Intune Partner Portal <!-- 1050016 -->
+#### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>Tervezett módosítás: Az Intune Partner Portal élmény megváltozik <!-- 1050016 -->
 
 A 2017. május közepén esedékes szolgáltatásfrissítés keretében eltávolítjuk az Intune Partner lapot manage.microsoft.com-ról.  
 
 Ha Ön partneradminisztrátor, akkor a továbbiakban nem lesz lehetősége az Intune Partner lapon megnézni partnereit és intézkedni a nevükben. Ehelyett a Microsoft két másik partnerportáljának valamelyikére kell majd bejelentkeznie.
 
-A [Microsoft Partnerközpontban](https://partnercenter.microsoft.com/) és a [Microsoft Office 365 Felügyeleti partnerközpontban](https://portal.office.com/) egyaránt bejelentkezhet az Ön által felügyelt ügyfélfiókokba. A továbbiakban partnerként ezeken a webhelyeken felügyelheti ügyfeleit.
+Mindkét a [Microsoft Partner Centeren](https://partnercenter.microsoft.com/) és a [Microsoft 365 felügyeleti központban](https://admin.microsoft.com/) lehetővé teszi, hogy jelentkezzen be a felügyelt ügyfelek fiókjait. A továbbiakban partnerként ezeken a webhelyeken felügyelheti ügyfeleit.
 
 
 #### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Az Apple frissítést tesz kötelezővé a Application Transport Security szolgáltatáshoz <!--748318-->
@@ -117,11 +117,11 @@ Az Intune eszközmegfelelőségi szabályzatai által engedélyezett, a Skycure 
 
 Az Androidhoz készült Céges portál alkalmazás új, modern megjelenésű és jobb élményt biztosító felhasználói felületet kap. Fontosabb frissítések:
 
-- Színek: a Céges portál lapfejléceinek színe meghatározható az informatikai részleg által.
-- Alkalmazások: az **Alkalmazások** lapon frissítettük a **Kiemelt alkalmazások** és a **Minden alkalmazás** gombokat.
-- Keresés: az **Alkalmazások** lapon a **Keresés** gomb lebegő műveletgombként jelenik meg.
-- Navigáció az alkalmazások között: a **Minden alkalmazás** gomb lapnézetben jeleníti meg a **Kiemelt alkalmazásokat**, az **Összes alkalmazást** és a **Kategóriákat**, így a navigálás egyszerűbb.
-- Támogatás: a **Saját eszközök** és az **IT-csoport elérhetősége** lapok olvashatósága javult.
+- Színek: Céges portál lapfejléceinek az informatikai RÉSZLEG által.
+- Alkalmazások: Az a **alkalmazások** lapon, a **kiemelt alkalmazások** és **minden alkalmazás** gombok frissülnek.
+- Keresés: Az a **alkalmazások** lapon, a **keresési** gomb lebegő műveletgombként.
+- Navigáció az alkalmazások között: **Minden alkalmazás** nézetben látható a többlapos nézetben **kiemelt**, **összes**, és **kategóriák** , így a Navigálás egyszerűbb.
+- Támogatás: **Saját eszközök** és **IT-csoport elérhetősége** lapok olvashatósága frissülnek.
 
 A változásokkal kapcsolatos további részletekért lásd: [Felhasználói felületi frissítések az Intune végfelhasználói alkalmazásaiban](/intune/whats-new-app-ui).
 
@@ -198,9 +198,9 @@ Azok a Windows- és Windows Phone-felhasználók, akik megkísérelnek beléptet
 Márciustól kezdve az Androidhoz készült Céges portál alkalmazásban a [material design irányelveinek](https://material.io/guidelines/material-design/introduction.html) követésével gondoskodunk a még modernebb megjelenésről és működésről. A jobb felhasználói élményt többek között az alábbiak alkotják:
 
 * __Színek__: a lapfejlécek színét módosítani lehet az egyéni színpaletta alapján.
-* __Felület__: az Alkalmazások lapon frissítettük a Kiemelt alkalmazások és a Minden alkalmazás gombokat. A Keresés gomb mostantól lebegő műveletgombként jelenik meg.
-* __Navigáció__: a Minden alkalmazás gomb lapnézetben jeleníti meg a kiemelt alkalmazásokat, az összes alkalmazást és a kategóriákat, így a navigálás egyszerűbb.
-* __Szolgáltatás__: a Saját eszközök és az IT-csoport elérhetősége lapok olvashatósága javult.
+* __Felület__: Kiemelt alkalmazások és a minden alkalmazás gomb frissítve lett-e az alkalmazások lapon. A Keresés gomb mostantól lebegő műveletgombként jelenik meg.
+* __Navigációs__: Minden alkalmazás bemutatja a kiemelt alkalmazásokat, többlapos nézetben minden és a kategóriákat, így a Navigálás egyszerűbb.
+* __Szolgáltatás__: Eszközök és IT-csoport elérhetősége lapok olvashatósága javult.
 
 A frissítés előtti és utáni képek a [felhasználói felület frissítéseit tartalmazó lapon](/intune/whats-new-app-ui) érhetők el.
 

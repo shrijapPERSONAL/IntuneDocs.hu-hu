@@ -9,18 +9,19 @@ ms.date: 02/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bf4d63ed680b589dd6743daa491c5eaddb74352e
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: a0f15eb4aecc1c4c71420df7036a7d143ba298cd
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230992"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57460891"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Eszközök eltávolítása összes adatuk törlésével, az eszköz kivonásával vagy regisztrációja manuális törlésével
 
@@ -166,7 +167,7 @@ Az Intune konfigurálható úgy, hogy automatikusan törölje az inaktívnak, el
 
 Előfordulhat, hogy eszközöket kell törölnie az Azure AD-ből kommunikációs problémák vagy hiányzó eszközök miatt. A **Törlés** művelettel eltávolíthatók az Azure Portalról az olyan eszköz rekordjai, amelyekről tudja, hogy nem érhetők el, és nem valószínű, hogy újra kommunikálni fognak az Azure-ral. A **Törlés** művelet nem távolítja el az eszközt a felügyelet alól.
 
-1.  Jelentkezzen be az [Azure Active Directoryba az Azure Portalon](http://aka.ms/accessaad) a rendszergazdai hitelesítő adataival. Az [Office 365-portálra](https://portal.office.com) is bejelentkezhet. Válassza a menüben a **Felügyeleti központok** > **Azure AD** menüpontot.
+1.  Jelentkezzen be az [Azure Active Directoryba az Azure Portalon](http://aka.ms/accessaad) a rendszergazdai hitelesítő adataival. Akkor is bejelentkezhet a [Microsoft 365 felügyeleti központban](https://admin.microsoft.com). Válassza a menüben a **Felügyeleti központok** > **Azure AD** menüpontot.
 2.  Ha még nem rendelkezik Azure-előfizetéssel, hozzon létre egyet. Ha díjköteles fiókkal rendelkezik, ennek elvégzéséhez nem szükséges hitelkártya vagy díjrendezés (válassza a **Register your free Azure Active Directory** előfizetési hivatkozást).
 3.  Válassza az **Azure Active Directory** lehetőséget, majd válassza ki a vállalatot.
 4.  Válassza a **Felhasználók** fület.

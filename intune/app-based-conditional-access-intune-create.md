@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 02/22/2019
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c4ba4d144338c2cd775a5389f3587c94625b94b4
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: cc73e24da6cd774811eb30d0ca7f551760b9a274
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742244"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57389381"
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>Alkalmazásalapú feltételes hozzáférési szabályzatok beállítása az Intune-ban
 
@@ -33,7 +34,7 @@ Alkalmazásalapú feltételes hozzáférési szabályzatok beállítása a jóv�
 > Ez a cikk végigvezeti az alkalmazásalapú feltételes hozzáférési szabályzatok hozzáadásának lépésein. Ugyanezeket a lépéseket használhatja, ha alkalmazásokat ad hozzá, például SharePoint Online, Microsoft Teams és Microsoft Exchange Online, a jóváhagyott alkalmazások listájából.
 
 ## <a name="create-app-based-conditional-access-policies"></a>Alkalmazásalapú feltételes hozzáférési szabályzatok létrehozása
-Feltételes hozzáférés egy Azure Active Directory (Azure AD) technológia. A feltételes hozzáférés csomópont elérhető *Intune* van ugyanazon a csomóponton, elérhető *Azure ad-ben*. Ez azt jelenti, hogy nem kell váltani szabályzatok konfigurálása Intune-ban és az Azure AD között.
+A feltételes hozzáférés az Azure Active Directory (Azure AD) technológiája. Az *Intune-ból* elérhető feltételes hozzáférési csomópont ugyanaz a csomópont, amelyet az *Azure AD-ből* is el lehet érni. Ez azt jelenti, hogy nem kell váltani szabályzatok konfigurálása Intune-ban és az Azure AD között.
 
 > [!IMPORTANT]
 > Szüksége lesz egy Azure AD Premium-licencet hozhat létre feltételes hozzáférési szabályzatokat az Intune-portálon.
