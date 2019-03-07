@@ -6,7 +6,7 @@ keywords: Intune-adattárház
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 03/05/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6d47d681a1c4dd34a2738839f9561efbe621a5b0
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: 0f64afa1a2b111f168919f9d6669e246ee348461
+ms.sourcegitcommit: a624abbfc3c80c5fba6c47a19cf1a6923c5fd438
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57390558"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57528258"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Mobilalkalmazás-felügyelet (MAM) típusú entitások referenciája
 
@@ -84,12 +84,12 @@ A **MamCheckin** entitás a MAM-alkalmazáspéldány Intune szolgáltatásba tö
 | Tulajdonság | Leírás | Példa |
 |---------|------------|--------|
 | DateKey |A dátumkulcs azt jelzi, hogy az adattárházban mikor lett rögzítve a MAM-alkalmazás bejelentkezése. | 20160703 |
-| ApplicationInstanceKey |A MAM-alkalmazás bejelentkezéséhez társított alkalmazáspéldány kulcsa. |1900.2.5. 12:00:00 |
-| UserKey |A MAM-alkalmazás bejelentkezéséhez társított felhasználó kulcsa. |1900.12.1. 12:00:00 |
-| ApplicationKey |A bejelentkező MAM-alkalmazás kulcsa. |1900.10.1. 12:00:00 |
-| DeviceHealthKey |A MAM-alkalmazás bejelentkezéséhez társított DeviceHealth kulcsa. |1900.2.1. 12:00:00 |
-| PlatformKey |A MAM-alkalmazás bejelentkezéséhez társított eszköz platformját jelöli. |1900.1.1. 12:00:00 |
-| EffectiveAppliedPolicyKey |A bejelentkező MAM-alkalmazáshoz társított érvényben levő hozzárendelt szabályzatot jelöli. Az érvényben levő hozzárendelt szabályzat az adott alkalmazásra és felhasználóra vonatkozó szabályzatok összevonásának eredménye. |1900.2.5. 12:00:00 |
+| ApplicationInstanceKey |A MAM-alkalmazás bejelentkezéséhez társított alkalmazáspéldány kulcsa. | 123 |
+| UserKey |A MAM-alkalmazás bejelentkezéséhez társított felhasználó kulcsa. | 4323 |
+| ApplicationKey |A bejelentkező MAM-alkalmazás kulcsa. |234 |
+| DeviceHealthKey |A MAM-alkalmazás bejelentkezéséhez társított DeviceHealth kulcsa. | 321 |
+| PlatformKey |A MAM-alkalmazás bejelentkezéséhez társított eszköz platformját jelöli. |123 |
+| EffectiveAppliedPolicyKey |A bejelentkező MAM-alkalmazáshoz társított érvényben levő hozzárendelt szabályzatot jelöli. Az érvényben levő hozzárendelt szabályzat az adott alkalmazásra és felhasználóra vonatkozó szabályzatok összevonásának eredménye. | 322 |
 | LastCheckInDate |A MAM-alkalmazás utolsó bejelentkezésének dátuma és időpontja. Az érték lehet null is. |2016.11.23. 12:00:00 |
 
 ## <a name="mamdevicehealth"></a>MamDeviceHealth
@@ -98,8 +98,8 @@ A **MamDeviceHealth** entitás azokat az eszközöket jelöli, amelyekhez mobila
 
 | Tulajdonság | Leírás | Példa |
 |---------|------------|--------|
-| DeviceHealthKey |Az eszköz és a hozzá tartozó eszközállapot egyedi azonosítója az adattárházban – helyettes kulcs. |1900.1.1. 12:00:00 |
-| DeviceHealth |Az eszköz és a hozzá tartozó eszközállapot egyedi azonosítója – hasonló a DeviceHealthKey-hez, de az azonosító természetes kulcs. |1900.1.1. 12:00:00 |
+| DeviceHealthKey |Az eszköz és a hozzá tartozó eszközállapot egyedi azonosítója az adattárházban – helyettes kulcs. |123 |
+| DeviceHealth |Az eszköz és a hozzá tartozó eszközállapot egyedi azonosítója – hasonló a DeviceHealthKey-hez, de az azonosító természetes kulcs. |b66bc706-ffff-7777-0340-032819502773 |
 | DeviceHealthName |Az eszköz állapotát jelöli. <br>Not available – nincs információ az eszközről. <br>Healthy – az eszköz nem jailbreakelt. <br>Unhealthy – az eszköz jailbreakelt. |Not Available Healthy Unhealthy |
 | RowLastModifiedDateTimeUTC |Az adott MAM-eszközállapot adattárházban történt utolsó módosításának dátuma és időpontja (UTC). |2016.11.23. 12:00:00 |
 

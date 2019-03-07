@@ -3,8 +3,8 @@ title: Oktatóanyag – Az Exchange Online e-mailjeinek védelme az Intune álta
 titlesuffix: Microsoft Intune
 description: Ismerje meg, hogyan teheti biztonságossá az Exchange Online-t iOS Intune megfelelőségi szabályzatok és Azure AD feltételes hozzáférés használatával, amelyhez így felügyelt eszközökre és az Outlook alkalmazásra lesz szükség.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 09/19/2018
 ms.topic: tutorial
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d748cc1b9549dfb29d38388a8279cacd8d471b3
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: 6c76a22fec1342481a67029147c757347a06447c
+ms.sourcegitcommit: a624abbfc3c80c5fba6c47a19cf1a6923c5fd438
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57396641"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57528207"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Oktatóanyag: A felügyelt eszközökön az Exchange Online e-mailek védelme
 Ismerje meg az eszközmegfelelőségi szabályzatok feltételes hozzáféréssel való használatát annak érdekében, hogy csak az olyan iOS-eszközök férhessenek hozzá az Exchange Online e-mailjeihez, amelyeket az Intune felügyel, és amelyek jóváhagyott e-mail alkalmazást használnak. 

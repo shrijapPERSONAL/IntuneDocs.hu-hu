@@ -6,7 +6,7 @@ keywords: Intune-adattárház
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 03/05/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 644916ddbea2487c985576524ceaf9cb13b5e0dd
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: 811521792d0e034eb252d8c480a25b52518c1f68
+ms.sourcegitcommit: a624abbfc3c80c5fba6c47a19cf1a6923c5fd438
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57390528"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57528292"
 ---
 # <a name="reference-for-policy-entities"></a>Szabályzat típusú entitások referenciája
 
@@ -60,7 +60,7 @@ A **PolicyType** entitás az eszköz- és alkalmazáskonfigurációs profilok, v
 
 ## <a name="deviceconfiguration"></a>DeviceConfiguration
 
-A **DeviceConfigurationProfileDeviceActivity** entitás a napi sikeres, függő, sikertelen vagy hibás állapotú eszközök számát sorolja fel. A szám az entitáshoz rendelt eszközkonfigurációs profilokat jelöli. Ha például az adott eszköz valamennyi hozzárendelt szabályzata tekintetében sikeres állapotú, akkor az entitás azon a napon eggyel növeli az értéket a sikeres állapotot jelző számlálón. Ha az adott eszköz két hozzárendelt profillal rendelkezik, amelyek közül az egyik sikeres, míg a másik hibás állapotú, akkor az entitás növeli az értéket a sikeres állapotot jelző számlálón, és hibás állapotba helyezi az eszközt. Az entitás azt sorolja fel, hogy hány eszköz van az egyes állapotokban az elmúlt 30 napon belüli adott napon.
+A **DeviceConfigurationProfileDeviceActivity** entitás azt sorolja fel száma **eszközök** sikeres, függő, sikertelen vagy hibás állapotú. A szám az entitáshoz rendelt eszközkonfigurációs profilokat jelöli. Például ha egy **eszköz** van valamennyi hozzárendelt szabályzata a sikeres állapotot, a sikeres számláló be ilyet, az adott napra növekszik. Ha az adott eszköz két hozzárendelt profillal rendelkezik, amelyek közül az egyik sikeres, míg a másik hibás állapotú, akkor az entitás növeli az értéket a sikeres állapotot jelző számlálón, és hibás állapotba helyezi az eszközt. Az entitás azt sorolja fel, hogy hány eszköz van az egyes állapotokban az elmúlt 30 napon belüli adott napon.
 
 | Tulajdonság  | Leírás | Példa |
 |---------|------------|--------|
@@ -70,9 +70,7 @@ A **DeviceConfigurationProfileDeviceActivity** entitás a napi sikeres, függő,
 | Hiba |A hibás állapotú egyedi eszközök száma. |10 |
 | Sikertelen |A sikertelen állapotú egyedi eszközök száma. |2 |
 
-
-
-A **DeviceConfigurationProfileUserActivity** entitás a napi sikeres, függő, sikertelen vagy hibás állapotú felhasználók számát sorolja fel. A szám az entitáshoz rendelt eszközkonfigurációs profilokat jelöli. Ha például az egyik felhasználó valamennyi hozzárendelt szabályzata tekintetében sikeres állapotú, akkor az entitás azon a napon eggyel növeli az értéket a sikeres állapotot jelző számlálón. Ha az adott felhasználó két hozzárendelt profillal rendelkezik, amelyek közül az egyik sikeres, míg a másik hibás állapotú, akkor a felhasználót hibás állapotúnak számítjuk.  A **DeviceConfigurationProfileUserActivity** entitás azt sorolja fel, hogy hány felhasználó van az egyes állapotokban az elmúlt 30 napon belüli adott napon.
+A **DeviceConfigurationProfileUserActivity** entitás azt sorolja fel száma **felhasználók** sikeres, függő, sikertelen vagy hibás állapotú. A szám az entitáshoz rendelt eszközkonfigurációs profilokat jelöli. Például ha egy **felhasználói** van a sikeres állapotot valamennyi hozzárendelt szabályzata, az azt feljebb a sikeres számláló egy, az adott napra. Ha az adott felhasználó két hozzárendelt profillal rendelkezik, amelyek közül az egyik sikeres, míg a másik hibás állapotú, akkor a felhasználót hibás állapotúnak számítjuk.  A **DeviceConfigurationProfileUserActivity** entitás azt sorolja fel, hogy hány felhasználó van az egyes állapotokban az elmúlt 30 napon belüli adott napon.
 
 | Tulajdonság  | Leírás | Példa |
 |---------|------------|--------|

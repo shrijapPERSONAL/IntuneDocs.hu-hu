@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ce63f836c006c44e88f939c29f3d9648acc045e
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: ed33ed58141be9463d9f0ce885eb5ccb9951effb
+ms.sourcegitcommit: a624abbfc3c80c5fba6c47a19cf1a6923c5fd438
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57400364"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57528309"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Windows 10-es és újabb beállításai az Intune-ban a teljes képernyős fiókként való futtatásra
 
@@ -104,7 +104,7 @@ Csak egy alkalmazást futtat az eszközön.
 
 ## <a name="multi-app-kiosks"></a>Többalkalmazásos kioszk
 
-Az ebben az üzemmódban lévő alkalmazások elérhetők a Start menüben. A felhasználó kizárólag ezeket az alkalmazásokat tudja megnyitni.
+Az ebben az üzemmódban lévő alkalmazások elérhetők a Start menüben. A felhasználó kizárólag ezeket az alkalmazásokat tudja megnyitni. Ha egy alkalmazás egy függőség egy másik alkalmazásban, is szerepelnie kell az engedélyezett alkalmazások listájával. Ha például az Internet Explorer 64 bites maga az Internet Explorer 32 bites, engedélyeznie kell a "C:\Program Files\internet explorer\iexplore.exe" és a "C:\Program Files (x86) \Internet". 
 
 - **Válassza ki a teljes képernyős módot**: Válasszon **Többalkalmazásos kioszk**.
 
