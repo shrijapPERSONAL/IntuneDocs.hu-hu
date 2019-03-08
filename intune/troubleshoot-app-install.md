@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 808c5e5c27c7f0ff5c22a0ddc99374da8bfd44bc
-ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
+ms.openlocfilehash: 5a5e000a973932db0bbaa215ea94976219ff905c
+ms.sourcegitcommit: 6da78a3c07e9ad9c72ff532867cde754e9deca00
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57461481"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57577846"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Alkalmazások telepítésével kapcsolatos problémák elhárítása
 
@@ -132,6 +132,7 @@ Az alábbi hibaüzenetek és leírások az Androidos és iOS-es telepítési hib
 | Az MDM-szolgáltató (-2016330858) a rendszer alkalmazások nem lehet telepíteni. | Az iOS operációs rendszer által előre telepített alkalmazások telepítése nem támogatott. |
 | Nem telepíthet alkalmazásokat, ha az eszköz van, elveszett módot (-2016330857). | Az eszköz összes használatát az elveszett üzemmód le van tiltva.   Alkalmazások telepítéséhez elveszett mód letiltása. |
 | Nem telepíthet alkalmazásokat, ha az eszköz teljes képernyős módban (-2016330856) van. | Próbálja meg hozzáadni az eszközt telepíteni alkalmazásokat a kioszk mód konfigurációs szabályzat kizárási csoporthoz. |
+| Az eszköz (-2016330852) nem telepíthető 32 bites alkalmazásokat. | Az eszköz nem támogatja a 32 bites alkalmazások telepítéséhez. Próbálja meg a 64 bites verziója, az alkalmazás üzembe helyezése. |
 | Az App Store (-2016330855) felhasználói be kell jelentkeznie. | A felhasználónak kell bejelentkezni az App Store az alkalmazás telepítése előtt. |
 | Ismeretlen hiba. Kérjük, próbálkozzon újra (-2016330854). | Az alkalmazás telepítése ismeretlen okból nem sikerült.   Próbálkozzon újra később. |
 | Az alkalmazás telepítése nem sikerült. Az Intune megpróbálja újra a következő alkalommal az eszköz szinkronizálások (-2016330853). | Az alkalmazás telepítése egy eszközön hibába ütközött. Az eszköz szinkronizálása érdekében próbálja meg újból telepíteni az alkalmazást. |

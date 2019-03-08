@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ab45a65fb9c52a48472c7efc3b6bdc7cead1f6e
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: 19f0fbf401fee4bad660e946bb135544a29de310
+ms.sourcegitcommit: 9a4c5b6c2ce511edaeace25426a23f180cb71e15
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57390692"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57566505"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS-eszközök automatikus regisztrálása az Apple készülékregisztrációs programjával (DEP)
 
@@ -116,7 +116,7 @@ A leküldéses tanúsítvány lehetővé teszi, hogy az Intune regisztrálja és
 Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt a DEP-eszközökhöz. A regisztrálás során az eszközök csoportjára alkalmazott beállításokat egy készülékregisztrációs profil határozza meg.
 
 > [!NOTE]
-> Eszköz le lesz tiltva, ha nem elegendő egy VPP-token céges portál-licenccel, vagy ha a jogkivonat lejárt. Az Intune megjeleníti egy riasztás whne jogkivonat érvényessége hamarosan lejár vagy licencek kevés.
+> Eszköz le lesz tiltva, ha nem elegendő egy VPP-token céges portál-licenccel, vagy ha a jogkivonat lejárt. Az Intune jelenít meg riasztást, ha a jogkivonat érvényessége hamarosan lejár vagy licencek kevés.
  
 
 1. Az Azure-beli Intune-portálon válassza az **Eszközök beléptetése** > **Apple-regisztráció** > **Készülékregisztrációs programbeli token** elemet.
@@ -151,6 +151,8 @@ Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt
 
 7. Ha a **Céges portál telepítése a VPP-vel** lehetőséghez választ jogkivonatot, lehetősége lesz a Beállítási asszisztens befejeződése után azonnal egyalkalmazásos módban (nevezetesen a Céges portál alkalmazással) zárolni az alkalmazást. Ennek a lehetőségnek a beállításához válassza az **Igen** értéket a **Céges portál futtatása egyalkalmazásos módban a hitelesítésig** beállításhoz. Az eszköz használatához a felhasználónak először hitelesítenie kell magát a Céges portál használatával.
     Ez a funkció csak akkor támogatott iOS 11.3.1-es és újabb verziók.
+
+   ![Egyetlen alkalmazás mód képernyőképe.](./media/device-enrollment-program-enroll-ios/single-app-mode.png)
 
 8. Válassza az **Eszközkezelési beállítások** lehetőséget, és adja meg, hogy felügyelve legyenek-e az adott profilt használó eszközök.
 
