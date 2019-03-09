@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1deb8b71e84ec167db8fb0b9963f4435a40efaf4
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: 7aa1901a1b9159c2e8ab7398b70f5693708f0657
+ms.sourcegitcommit: a59c78c13c4ff68e8a56b69029adfe51704ba570
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57391104"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57682674"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Önálló Intune - Win32-Alkalmazáskezelés
 
@@ -117,7 +117,11 @@ Az üzletági (LOB) alkalmazásokhoz hasonlóan Win32-alkalmazást is hozzáadha
 1.  Az alkalmazás telepítési és eltávolítási parancsának konfigurálásához az **Alkalmazás felvétele** panelen válassza a **Program** elemet.
 2.  Adja meg az alkalmazás telepítéséhez szükséges teljes telepítési parancssort. 
 
-    Ha például az alkalmazás fájlneve a **MyApp123**, adja hozzá a következőt: `msiexec /i “MyApp123.msi”`
+    Például, ha az alkalmazás Fájlnév **MyApp123**, adja hozzá a következő:<br>
+    `msiexec /i “MyApp123.msi”`<p>
+    És, ha az alkalmazás `ApplicationName.exe`, a következő paranccsal lehetséges az alkalmazás nevét, a parancs argruments (kapcsolók) a csomag által támogatott követ. Például:<br>
+    'ApplicationName.exe /quite'<br>
+    A fenti parancsban a `ApplicaitonName.exe` csomag támogatja a `/quite` parancs argrument.<p> Az alkalmazáscsomag által támogatott konkrét agruments Forduljon az alkalmazás szállítójához.
 
 3.  Adja meg az alkalmazás eltávolításához szükséges teljes eltávolítási parancssort az alkalmazás GUID-értékei alapján. 
 

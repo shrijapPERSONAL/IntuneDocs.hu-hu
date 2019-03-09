@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: befc07fe1c5d4c25bc082168045acacd353e4654
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: 0aff39eeb8a825c4161ee92d798dc817d5928995
+ms.sourcegitcommit: a59c78c13c4ff68e8a56b69029adfe51704ba570
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57397252"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57682606"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>A Microsoft Outlook konfigurációs beállításai 
 
@@ -36,5 +36,5 @@ Amikor egy konfigurációs szabályzat felvétele az Intune-ban, beállítások 
 Outlook-fiók beállítása adatait és az iOS és Android-eszközök Microsoft Intune-ban eljárási lépések: [Outlook telepítése iOS és Android-alkalmazás-konfigurációs beállítások](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 
 ## <a name="next-steps"></a>További lépések
-[E-mail-beállítások konfigurálása az Intune-ban](email-settings-configure.md)
 
+- További információkért lásd: [a Microsoft Intune alkalmazáskonfigurációs szabályzatai](app-configuration-policies-overview.md)

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab5fe8ea70e9f0db73a28d7ffa363c42ab7d51c2
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: 50be92847922458a7145e02bcc2125ddadc6976f
+ms.sourcegitcommit: a59c78c13c4ff68e8a56b69029adfe51704ba570
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57394011"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57682640"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>A Microsoft Intune Céges portál alkalmazásának konfigurálása
 
@@ -34,7 +34,7 @@ A felhasználók a Microsoft Intune Céges portálon férhetnek hozzá a vállal
 > [!Tip]        
 > A vállalati portál testreszabása a vállalati portál webhelyére és a vállalati portál alkalmazásaira egyaránt hatással van. Vegye figyelembe, hogy felhasználóknak rendelkezniük kell Intune-licencet a céges portál webhely eléréséhez.
 
-A vállalati portál testreszabásával ismerős és könnyen használható környezetet teremthet felhasználóinak. Ennek végrehajtásához válassza az **Ügyfélalkalmazások** területen a **Beállítás** > **Company Portal Branding** (Céges portál védjegyezése) lehetőséget, majd konfigurálja a szükséges beállításokat.  
+A vállalati portál testreszabásával kapcsolatban, segít adjon meg egy ismerős és könnyen használható környezetet teremthet felhasználóinak. Ehhez az Intune-portálon válassza **ügyfélalkalmazások** > **Branding és testreszabási**, majd konfigurálja a szükséges beállításokat. 
 
 > [!Note]       
 > Az Azure Government használata esetében a végfelhasználó alkalmazásnaplókkal döntheti el, hogy hogyan végzi a megosztást, amikor segítségkérési folyamatot indít el egy probléma kapcsán. Ha azonban nem az Azure Governmentet használja, akkor a Windows 10 Céges portál közvetlenül a Microsoftnak küldi az alkalmazásnaplókat, amikor egy felhasználó segítségkérési folyamatot indít el egy probléma kapcsán. Az alkalmazásnaplók Microsoftnak való elküldésével könnyebben háríthatók el és oldhatók meg a problémák. 

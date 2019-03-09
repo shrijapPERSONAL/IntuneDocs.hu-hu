@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98ae13166d4eb6796d076bfd1dd3bbf71183f480
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: 675409bfbd482ec9935db511e569d8bc174b9a30
+ms.sourcegitcommit: a59c78c13c4ff68e8a56b69029adfe51704ba570
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57390251"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57682657"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Alkalmazásadatok és -hozzárendelések figyelése a Microsoft Intune-ban
 
@@ -51,7 +51,7 @@ Az **Alapadatok** szakasz az alábbi információkat nyújtja az alkalmazásról
 |------------------------|------------------------------------------------------------------|
 | **Publisher**          | Az alkalmazás kiadója.                                            |
 | **Operációs rendszer**   | Az alkalmazás operációs rendszere (Windows, iOS, Android és hasonlók). |
-| **Létrehozás dátuma**             | A jelen változat létrehozásának dátuma és ideje.                         |
+| **Létrehozás dátuma**             | A jelen változat létrehozásának dátuma és ideje. <b>**Megjegyzés:**: A dátumértéket akkor frissül, amikor egy rendszergazda módosítja az alkalmazás metaadatait, például a alkalmazáskategória vagy az alkalmazás leírása.                        |
 | **Kiosztott**           | **Igen** vagy **Nem** attól függően, hogy az alkalmazás ki lett-e osztva.                  |
 
 ### <a name="device-and-user-status-graphs"></a>Eszközök és felhasználók állapotábrái

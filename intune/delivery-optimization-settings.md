@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/27/2019
+ms.date: 03/09/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: kerimh
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b9480e6eab21ace05456bd74e89d495517a8356
-ms.sourcegitcommit: 9a4c5b6c2ce511edaeace25426a23f180cb71e15
+ms.openlocfilehash: e6e90828da8c209b534b830af7fe522b254374bf
+ms.sourcegitcommit: 29d754c2b67aa2d8f4fb68343988c3bb05d5dcec
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57566522"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "57695279"
 ---
 # <a name="delivery-optimization-settings-for-intune"></a>Kézbesítésoptimalizálási beállításait az Intune-hoz
 
@@ -65,6 +65,8 @@ Ezeket a beállításokat kívánja használni az Intune beállítása: [juttath
 |[Feltöltés (%) szükséges minimális töltöttségi szint](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level)      | 1709        | Adja meg egy %-os, a minimális töltöttségi szint, hogy az eszköz az adatok feltöltése a társaknak. Ha a töltöttségi szint csökken a megadott érték, minden aktív feltöltések automatikus szüneteltetése.   <br><br>**Alapértelmezett**:  *Nincs érték van beállítva.*  <br><br>**Ajánlott**:  40%   <br><br>Kriptográfiai Szolgáltató házirend: [DOMinBatteryPercentageAllowedToUpload](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dominbatterypercentageallowedtoupload) <br><br>        |
 |[Gyorsítótár-meghajtón módosítása](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#modify-cache-drive)        | 1607        | Adja meg a meghajtót a kézbesítésoptimalizálás a gyorsítótárat használ. Egy környezeti változót, a gyökérmeghajtó betűjele vagy a teljes elérési utat is használhatja.  <br><br>**Alapértelmezett**: a % SystemDrive % <br><br>Kriptográfiai Szolgáltató házirend:  [DOModifyCacheDrive](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domodifycachedrive) <br><br>        |
 | [A gyorsítótár maximális életkora (napokban)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#max-cache-age)    | 1511         | Adja meg, hogy hogyan hosszú, miután minden egyes fájl sikeresen letölti, hogy a fájl egy eszközön a kézbesítési optimalizálás gyorsítótárban tárolt.   <br><br>Az Intune-nal a gyorsítótár kora napokban konfigurálnia. Megadhat napok száma lesz konvertálva alkalmazható hány másodperc, azaz, hogy hogyan Windows definiálja ezt a beállítást. Például egy Intune-3 nap konfiguráció át 259200 másodperc (3 nap) az eszközön.  <br><br>**Alapértelmezett**:   *Nincs érték van beállítva.*     <br><br>**Ajánlott**: 7   <br><br>Kriptográfiai Szolgáltató házirend: [DOMaxCacheAge](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcacheage)  <br><br>          |
+| A gyorsítótár maximális méretének típusa  | *Részletek megtekintése*    | Válassza ki a minimális szabad lemezterület a kézbesítésoptimalizálás által használt eszköz kezelése. Ha nincs konfigurálva, gyorsítótár mérete alapértelmezés szerint 20 %-a szabad lemezterület szükséges.  <br><ul><li>**Nincs konfigurálva** (alapértelmezett)</li><br><li>**Abszolút** – adja meg a [abszolút gyorsítótár maximális mérete (GB)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#absolute-max-cache-size) a legnagyobb lemezterület egy eszköz használhatja-e a kézbesítésoptimalizálás konfigurálása. Ha 0 (nulla) értékre állítva, a gyorsítótár méretét korlátlan, bár a kézbesítésoptimalizálás törli a gyorsítótárból, ha az eszköz kevés a szabad lemezterület. <br><br>Requires Windows 1607<br><br> Kriptográfiai Szolgáltató házirend: [DOAbsoluteMaxCacheSize](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-doabsolutemaxcachesize) </li><br><li>**Százalékos** – adja meg a [a gyorsítótár maximális mérete (%-ban)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#max-cache-size) a legnagyobb lemezterület egy eszköz használhatja-e a kézbesítésoptimalizálás konfigurálása. A százalékos értéke a szabad lemezterületet, és a kézbesítésoptimalizálás folyamatosan értékeli a rendelkezésre álló lemezterület, és törölni fogja a gyorsítótárban a gyorsítótár maximális mérete a beállított százalékos alatt tartani. <br><br>A Windows 1511-es verzióra van szükség<br><br>Kriptográfiai Szolgáltató házirend: [DOMaxCacheSize](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcachesize)  |
+| [VPN társ-gyorsítótárazás](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#enable-peer-caching-while-the-device-connects-via-vpn)  | 1709  | Válassza ki **engedélyezve** konfigurálása eszköz részt venni a társ gyorsítótárazási VPN, ha a tartományi hálózathoz csatlakozik. Eszközök, amelyek engedélyezve vannak a letöltheti vagy más tartományi hálózati eszközökhöz, VPN vagy a vállalati tartományi hálózaton feltöltése.  <br><br>**Alapértelmezett**: Nincs konfigurálva  <br><br>Kriptográfiai Szolgáltató házirend: [DOAllowVPNPeerCaching](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcacheage)    |
 
 ## <a name="next-steps"></a>További lépések
 
