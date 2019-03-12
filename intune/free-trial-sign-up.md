@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/06/2019
+ms.date: 03/11/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1dea5f0a794e0b947e1f542b796e946de85f7eb4
-ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
+ms.openlocfilehash: 94c83ab0f70a5a40bd745b4db83ef16ac14acd00
+ms.sourcegitcommit: 3abc3bb93a95a81154146325c26c119a784e7487
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57460377"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57756853"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Gyors útmutató: A Microsoft Intune ingyenes kipróbálása 
 
@@ -87,20 +87,20 @@ Az Intune az alábbi lépésekkel állítható be MDM-szolgáltatóként.
 3. Válassza azt a sávot, amely jelzi, hogy nem engedélyezte az eszközkezelést, vagy ha még nem látható a sáv, válassza az **Eszközök beléptetése** lehetőséget. Ha még nem engedélyezte az eszközkezelést meg fog jelenni az **MDM-szolgáltató kiválasztása** panel.
 
     > [!NOTE]
-    > A narancssárga szalagcím csak akkor jelenik meg, ha még nem állított be az MDM-szolgáltatót.
+    > Ha beállította az MDM-szolgáltató, az MDM-szolgáltató érték jelenik meg a **eszközregisztráció** panelen. A narancssárga szalagcím csak akkor jelenik meg, ha még nem állított be az MDM-szolgáltatót. 
 
     ![Az MDM-szolgáltató kiválasztása panel képe](./media/choose-mdm-authority.png) 
 
-4. Az **MDM-szolgáltató kiválasztása** szakaszban állítsa be MDM-szolgáltatóként az **Intune MDM-szolgáltatót**.
+4. Ha az MDM-szolgáltató nincs megadva, a **MDM-szolgáltatóként válassza**, az MDM-szolgáltató beállítása **Intune MDM-szolgáltató**.
 
 Az MDM-szolgáltatóról további információért lásd [A mobileszköz-felügyeleti szolgáltató beállítása](mdm-authority-set.md) szakaszt.
 
 ## <a name="configure-your-custom-domain-name-optional"></a>Egyéni tartománynév konfigurálása (nem kötelező)
 
-Ha a fenti leírtak a szervezet rendelkezik a saját egyéni tartomány nélkül használni kívánt **. onmicrosoft.com**, módosíthatja a Microsoft 365 felügyeleti központban. Megadhatja, ellenőrizheti és konfigurálhatja saját egyéni tartománynevét.  
+Ha a fenti leírtak a szervezet rendelkezik a saját egyéni tartomány nélkül használni kívánt **. onmicrosoft.com**, módosíthatja a Microsoft 365 felügyeleti központban. Adja hozzá, ellenőrizze, és konfigurálja az egyéni tartománynevet, kövesse az alábbi lépéseket.  
 
 > [!IMPORTANT]
-> A kezdeti **onmicrosoft.com** tartománynév nem nevezhető át és nem távolítható el. Hozzáadhat, ellenőrizhet vagy eltávolíthat az Intune-nal használt egyéni tartományneveket vállalata egyértelmű identitásának megőrzése érdekében.
+> Nem nevezhető át, és távolítsa el a *kezdeti* **onmicrosoft.com** része a tartomány nevét. Azonban hozzáadhat, ellenőrizze, vagy távolítsa el *egyéni* tartományneveket vállalata egyértelmű identitásának tartani az Intune-nal használt. További információkért lásd: [egyéni tartománynév beállítása](custom-domain-name-configure.md).
 
 1. Lépjen a [Microsoft 365 felügyeleti központban](https://admin.microsoft.com) , és jelentkezzen be a rendszergazdai fiók használatával.
 
@@ -112,7 +112,7 @@ Ha a fenti leírtak a szervezet rendelkezik a saját egyéni tartomány nélkül
 
 4. Ellenőrizze, hogy az imént megadott tartománynak Ön-e a tulajdonosa. 
     
-    A **Kód küldése e-mailben** lehetőséget választva e-mailt küld a tartománya regisztrált kapcsolattartójának. Az e-mail beérkezése után másolja ki a kódot, és illessze be az **Írja be az ellenőrzőkódot** címkéjű mezőbe. Ha az ellenőrző kód egyezik, a tartomány hozzá lesz adva a bérlőjéhez. Előfordulhat, hogy a megjelenő e-mail nem ismerős. Egyes regisztráló szervezetek elrejtik a tartomány regisztrálásakor megadott valódi e-mail-címet.
+    A **Kód küldése e-mailben** lehetőséget választva e-mailt küld a tartománya regisztrált kapcsolattartójának. Az e-mail beérkezése után másolja ki a kódot, és illessze be az **Írja be az ellenőrzőkódot** címkéjű mezőbe. Ha az ellenőrző kód egyezik, a tartomány hozzá lesz adva a bérlőjéhez. Előfordulhat, hogy a megjelenő e-mail nem ismerős. Néhány regisztráló szervezetek elrejtése a valódi e-mail cím. Emellett az e-mail-cím eltérő lehet majd ha a tartomány regisztrálásának megadott.
 
    ![Képernyőkép a Microsoft 365 felügyeleti központ – a tartomány ellenőrzése](./media/domain-custom-verify.png)
 

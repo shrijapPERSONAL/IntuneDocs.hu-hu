@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42200c474b964e6c6bc9610c3e90689c5811a2ee
-ms.sourcegitcommit: 6da78a3c07e9ad9c72ff532867cde754e9deca00
+ms.openlocfilehash: 9c377a8558b1f318b4ddad735b6368a291e34516
+ms.sourcegitcommit: 3abc3bb93a95a81154146325c26c119a784e7487
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57577829"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57756819"
 ---
 # <a name="in-development-for-microsoft-intune---march-2019"></a>A Microsoft Intune-hoz – március 2019 fejlesztés alatt
 
@@ -35,6 +35,8 @@ Segítség a készültségi és tervezési, ezen a lapon listák Intune felhaszn
 
 > [!Note]
 > Ezek az elemek tükrözik a Microsoft jelenlegi verziójával kapcsolatos elvárások hamarosan egy későbbi kiadásban az Intune funkcióival kapcsolatos. Dátumok és az egyes szolgáltatások változhatnak. Nem minden eleme fejlesztési rendelkeznie a szolgáltatás ezen az oldalon.
+
+**RSS-hírcsatorna**: Értesítés küldése, amikor ezen a lapon frissül, másolása és beillesztése a következő URL-címet a hírcsatorna olvasóba szerint: `https://docs.microsoft.com/api/search/rss?search=%22in+development+-+microsoft+intune%22&locale=en-us`
 
 
 <!--
@@ -82,7 +84,7 @@ IOS-hez készült céges portál fog frissülni, az alkalmazás regisztrációs 
 - Nyissa meg a beállítási alkalmazást a felügyeleti profil telepítésére az eszközükön.
 - Térjen vissza a céges portál alkalmazás regisztráció elvégzését.  
 
-Hogyan készítheti elő a módosítások kapcsolatos további információkért tekintse meg a [Microsoft technikai Közösség bejegyzését] (https://techcommunity.microsoft.com/]. Addig is támogatásához új iOS-regisztrációk vállalati portálon, hogy frissítettük lépéseit [iOS-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/en-us/intune/ios-enroll). Docs-módosítások után az Apple iOS-verziót 12.2 kiadások lesz élő. 
+Hogyan készítheti elő a módosítások kapcsolatos további információkért lásd: a [a Microsoft technikai Közösség post](https://techcommunity.microsoft.com/). Addig is támogatásához új iOS-regisztrációk vállalati portálon, hogy frissítettük lépéseit [iOS-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/en-us/intune/ios-enroll). Docs-módosítások után az Apple iOS-verziót 12.2 kiadások lesz élő. 
 
 ### <a name="support-for-additional-connectors-on-the-tenant-status-page----3617202-------"></a>A bérlő állapotának oldalon további összekötők támogatása <!-- 3617202     -->
 A bérlő állapotának oldal jelenik meg, kiegészítő jellegű összekötő, beleértve az állapotadatait *Windows Defender komplex veszélyforrások elleni védelem* (ATP) és egyéb Mobile Threat Defense-összekötők.
@@ -108,12 +110,10 @@ Adunk hozzá egy új lehetőség a **Auditnaplók** paneljén, amellyel közvetl
 ### <a name="create-and-use-device-configuration-profiles-on-android-zebra-devices-in-intune----3895244----"></a>Létrehozhat és használhat eszközkonfigurációs profilok Android Zebra eszközökön az Intune-ban <!-- 3895244  -->
 Az Intune konfigurálása Android Zebra eszközöket támogatja. Pontosabban, képes lesz: 
 
-- Eszközkonfigurációs profil létrehozása és beállítások alkalmazása az Android Enterprise Zebra eszközöket OEMConfig (**eszközkonfiguráció** > **profilok**  >  **Profil létrehozása** > **Android enterprise** tartozó platform).
 - Eszközkonfigurációs profil létrehozása, és a beállítások StageNow által generált mobilitási bővítmények MX-profilok használatával Android Zebra-eszközökre vonatkoznak (**eszközkonfiguráció** > **profilok**  >  **Profil létrehozása** > **Android** tartozó platform).
 
 A következőkre vonatkozik:  
 - Android
-- Android enterprise
 
 <!-- 1901 start -->
 

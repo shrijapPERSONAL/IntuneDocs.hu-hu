@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: dc86f2c22410236368753acd4dd3b66698037241
+ms.sourcegitcommit: 3c80028fd995675e7664b27d7e4051c9a9d0e669
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57736857"
+---
 
 Ezek a megjegyzések meg fontos információkat, amelyek segítségével előkészítése az Intune jövőbeli változtatásokat és szolgáltatásokat. 
 
@@ -102,7 +110,33 @@ Ha a Service to Service connector beállításához és az Exchange Active Sync 
 
 - A mobileszköz-felügyeleti (MDM) eszközök regisztrálása 
 - Az Intune alkalmazásvédelmi szabályzatok használata az eszközök kezeléséhez 
-- Az Exchange vezérlők használata, ahogyan itt található dokumentáció 
+- Az Exchange vezérlőkkel dokumentációjában leírt módon [Itt](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/clients-and-mobile-in-exchange-online) 
 
 #### <a name="additional-information"></a>További információ  
 https://docs.microsoft.com/intune/exchange-service-connector-configure
+
+
+
+
+### <a name="check-your-delay-visibility-of-software-updates-setting-in-intune"></a>Jelölje be a "Szoftverfrissítések késleltetés láthatóságát" beállítást az Intune-ban 
+
+Tudjuk, hogy mi volt a mozgó néhány beállítást a konzolon MC171466 megosztott. A márciusi frissítéssel az Intune-hoz teljes mértékben eltávolítjuk a "Szoftver késleltetés látható-e frissítések" beállítás az IOS-es frissítési szabályzat panelen. Ez nem módosítja a alkalmazni az ütemezett szoftverfrissítések módon, de ez hatással lehet a mennyi ideig késik egy olyan frissítés látható-e a végfelhasználók számára. Szükség lehet a március vége előtt művelet végrehajtása, ha ezt a beállítást használja. 
+
+#### <a name="how-does-this-affect-me"></a>Hogyan érint ez engem?
+A február az Intune-szolgáltatásfrissítésbe követően azt láthatja, hogy a beállítás jelenik meg a szoftver frissítése panelen a házirendek frissítéséhez a konzolon és az IOS-es eszközkorlátozási profilokhoz a is. Amikor megjelenik a módosítás megjelenik a konzolon, Íme mi is kell tennie.
+
+- A meglévő IOS-frissítési szabályzatok: Ha egyéni konfigurálva ez a beállítás az alapértelmezett értékre 30 nap, és a meglévő konfigurációk a késleltetés látható-e beállítás számára, hogy továbbra is március végén alkalmazni, hozzon létre egy új IOS-es eszközkorlátozási profilt kell. Itt a késleltetés láthatósági kell ugyanazokat az értékeket, mint a meglévő iOS-frissítési szabályzat rendelkezik, és ugyanazok a csoportok megcélozni. A március szolgáltatás frissítése után, már nem szerkesztheti ezt a beállítást meglévő iOS-frissítési szabályzatok értékeit, mivel már nem lesz látható, ezen a panelen. Ez a beállítás helyette az új profilok fogja beállítani.
+  Késleltetheti számú napig az érték látható-e nem egyezik a mindkét helyen, a konfigurált egyéni beállítást értékek, a beállítás nem fog működni, késleltetés látható-e, és a végfelhasználók látni fogja a frissített saját eszközeiken, amint érhető el. Ez előfordulhat, hogy lehet csak minimális hatással van a legtöbb ügyfél számára, mert a szoftverfrissítési szabályzat panelen a többi beállítás elsőbbséget mindig végrehajtása ezzel a beállítással a konzolon keresztül.
+- Az új IOS-frissítési szabályzatok: Ha meg új szabályzatokat hozhat létre a szoftverek frissítések panel az Intune-ban február szolgáltatás frissítése után, látni fogja a szürkén jelenik meg ez a beállítás. Megjelenik egy megjegyzés a konzolon, átirányítjuk az eszköz konfigurációs panelen, ha szeretné késleltetheti a frissítések láthatóságát.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Hogyan készüljek fel a változásra?
+Nem kell semmit, ha nem szeretné, hogy a végfelhasználók számára látható-e szoftverfrissítéseket késleltetés vagy ne használja ezt a beállítást.
+
+Ha késleltetheti a frissítések láthatóságát, indítsa el a beállítás konfigurálásával új profilokban Eszközkorlátozások az eszközkonfiguráció panel > Általános. Ha ez a beállítás egyéni konfigurált meglévő iOS frissítési szabályzatok, hozzon létre egy új egyenértékű eszközkorlátozási profilt a "days" késleltetheti a frissítések a felhasználók számára látható-e ugyanaz az érték, miután a februári frissítés, és előtt a márciusi frissítés bevezetésekor. 
+
+Előfordulhat, hogy szeretné frissíteni az IT Pro útmutatást, és tájékoztatja a segélyszolgálathoz.
+
+Tekintse meg a további információt Ez a beállítás konfigurálásával kapcsolatos részletekért tegye közzé kérdéseit támogatási blogon.
+
+#### <a name="additional-information"></a>További információ 
+[https://aka.ms/Delay_visibility_setting_iOS](https://aka.ms/Delay_visibility_setting_iOS)

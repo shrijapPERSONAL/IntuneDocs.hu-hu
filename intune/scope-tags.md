@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0625968c4f0c30d125be73045a52b58a032b2fd7
-ms.sourcegitcommit: a59c78c13c4ff68e8a56b69029adfe51704ba570
+ms.openlocfilehash: bca2d52bb47a149c6a36bc1b8cbc4d65e50c0f4c
+ms.sourcegitcommit: 3abc3bb93a95a81154146325c26c119a784e7487
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "57682623"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57756802"
 ---
 # <a name="use-rbac-and-scope-tags-for-distributed-it"></a>Rbac-RÓL és a hatókör címkék használata az elosztott IT
 
@@ -40,22 +40,48 @@ Például tegyük fel, hogy egy Seattle területi képviseletenként rendszergaz
 ## <a name="to-create-a-scope-tag"></a>Hatókörcímke létrehozása
 
 1. Válassza ki az Intune-ban **szerepkörök** > **hatókör (címkék)** > **létrehozás**.
+
+    ![Képernyőkép a hatókörcímke létrehozása.](./media/scope-tags/create-scope-tag.png)
+
 2. Adjon meg egy **nevet** és egy **leírást**.
 3. Válassza a **Létrehozás** lehetőséget.
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>Hatókörcímke hozzárendelése egy szerepkörhöz
 
 1. Válassza ki az Intune-ban **szerepkörök** > **minden szerepkör** > Válassza ki a szerepkört > **hozzárendelések** > **hozzárendelése**.
+
+    ![Képernyőkép a hatókör hozzárendelése szerepkörhöz.](./media/scope-tags/assign-scope-to-role.png)
+
 2. Adjon meg egy **hozzárendelés neve** és **leírás**.
-3. Válasszon **tagok (csoportok)** jelölje ki a csoportokat, amelyeket szeretne ehhez a hozzárendeléshez részeként. Ez a csoport felhasználói házirendek és a felhasználók és eszközök a hatókör (csoportok) profilok kezelése engedéllyel rendelkezik majd.
-4. Válasszon **hatókör (csoportok)** , és válassza ki a felhasználókat és csoportokat, amelyekhez ezt a hozzárendelést részeként szeretne. Ez a csoport összes felhasználókra vagy eszközökre azok profilok és szabályzatok az Adminisztrátorok a tagok (csoport) által felügyelt lehet.
-5. Válasszon **hatókör (címkék)** > **Hozzáadás** > Válassza ki a címkék, amelyeket szeretne hozzáadni ehhez a szerepkörhöz. Tagok (csoportok) a felhasználók hozzáférhetnek a házirendek és profilok –, amelyek az ugyanazon hatókörcímke is rendelkezik.
-6. Válassza a **Kiválasztás** > **OK** > **OK** lehetőséget. 
+3. Válasszon **tagok (csoportok)** > **Hozzáadás** > Válassza ki a csoportokat az ehhez a hozzárendeléshez részeként > **válassza**  >   **OK**. Ebben a csoportban mUsers házirendek és a felhasználók és eszközök a hatókör (csoportok) profilok kezelése engedéllyel rendelkezik majd.
+
+    ![Tag kiválasztása csoportok képernyőképe.](./media/scope-tags/select-member-groups.png)
+
+4. Ha azt szeretné, kezelheti a csoportok meghatározott felhasználókra vagy eszközökre, válassza ki a **hatókör (csoportok)** > **kijelölt csoportok** > **belefoglalandó csoportok**> Válassza ki a csoportokat > **kiválasztása** > **OK**. Ez a csoport összes felhasználókra vagy eszközökre azok profilok és szabályzatok az Adminisztrátorok a tagok (csoport) által felügyelt lehet.
+
+    ![Képernyőkép – válassza ki a hatókörcsoportokat.](./media/scope-tags/select-scope-groups.png)
+
+    Választhatja azt is megteheti, **minden eszköz**, **minden felhasználó**, vagy **minden felhasználó és minden eszköz**.
+
+    ![Képernyőkép – válassza ki a hatókörcsoportokat beállításának további lehetőségei.](./media/scope-tags/scope-group-other-options.png)
+    
+5. Válasszon **hatókör (címkék)** > **Hozzáadás** > Válassza ki a címkék hozzáadása ehhez a szerepkörhöz használni kívánt > **válassza** > **OK**. Tagok (csoportok) a felhasználók hozzáférhetnek a házirendek és profilok –, amelyek az ugyanazon hatókörcímke is rendelkezik.
+
+    ![Képernyőfelvétel a hatókörcímkék válassza.](./media/scope-tags/select-scope-tags.png)
+
+6. Válassza az **OK** gombot. 
 
 ## <a name="to-add-a-scope-tag-to-a-configuration-profile"></a>Hatókörcímke hozzáadása egy konfigurációs profilhoz
-1. Válassza ki az Intune-ban **eszközkonfiguráció** > **profilok** > Válasszon egy profilt > **tulajdonságok** > **hatókör (címkék)**   >  **Hozzáadása**.
-2. A **válassza ki a címkék**, válassza ki a címkék, amelyeket szeretne hozzáadni a profil.
-3. Válasszon **kiválasztása** > **OK** > **mentése**.
+1. Válassza ki az Intune-ban **eszközkonfiguráció** > **profilok** > Válasszon egy profilt.
+
+    ![Képernyőkép a profil válassza.](./media/scope-tags/choose-profile.png)
+
+2. Válasszon **tulajdonságok** > **hatókör (címkék)** > **hozzáadása**.
+
+    ![Képernyőfelvétel a hatókör-címkék felvétele.](./media/scope-tags/add-scope-tags.png)
+
+3. A **válassza ki a címkék**, válassza ki a címkék, amelyeket szeretne hozzáadni a profil.
+4. Válasszon **kiválasztása** > **OK** > **mentése**.
 
 ## <a name="scope-tag-details"></a>Címke részleteinek hatókör
 Ha hatókörcímkék dolgozik, ne felejtse el ezeket az adatokat:
@@ -70,7 +96,7 @@ Ha hatókörcímkék dolgozik, ne felejtse el ezeket az adatokat:
     - Alkalmazáskonfigurációs szabályzatok – a felügyelt eszközök
     - PowerShell-parancsprogramok
     - DEP-tokenek
-    - Amikor a rendszergazda létrehoz egy objektumot az Intune-ban, azt a rendszergazdát rendelt összes hatókörcímkék automatikusan rendeli hozzá az új objektumot.
+- Amikor a rendszergazda létrehoz egy objektumot az Intune-ban, azt a rendszergazdát rendelt összes hatókörcímkék automatikusan rendeli hozzá az új objektumot.
 - Intune-os RBAC az Azure Active Directory-szerepkör nem vonatkozik. Így az Intune szolgáltatás-rendszergazdák és a globális Rendszergazdák szerepkör nincs teljes rendszergazdai hozzáféréssel az Intune-hoz, függetlenül attól, milyen hatókörcímkék rendelkeznek.
 - A szerepkör-hozzárendelés hatóköre címkékkel rendelkező rendszergazdák nem hatókörcímkék Intune objektumokat is megtekintheti.
 - Csak a szerepkör-hozzárendelések rendelkező hatókörcímke rendelhet hozzá.

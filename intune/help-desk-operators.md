@@ -17,12 +17,12 @@ ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a566d0630836e8cead8cb369d486374ff4583bfa
-ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
+ms.openlocfilehash: 13010655cef307de442896fbc1aed9c666653b92
+ms.sourcegitcommit: f97e03074509ea9ef4d9007fae2644429a060c1e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57461056"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "57787134"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Segítségnyújtás a céges felhasználóknak a hibaelhárítási portál használatával
 
@@ -70,176 +70,180 @@ A **Hibaelhárítás** panel használatával felhasználói információkat teki
 | 4.   | Felhasználói adatok  | A listából kiválaszthatja a panelen megtekintendő információkat. <br>Az alábbiak közül választhat: <ul><li>Ügyfélalkalmazások<li>Megfelelőségi szabályzatok<li> Konfigurációs szabályzatok<li>Alkalmazásvédelmi szabályzatok <li>Regisztrációs korlátozások</ul>      |
 | 5.   | Csoporttagság  | Megjeleníti azokat csoportokat, amelyeknek a kiválasztott felhasználó jelenleg a tagja.       |
 
-## <a name="client-apps-reference"></a>Ügyfélalkalmazások hivatkozása
+<!-- this section needs to be updated
 
-Azokat az eszközöket futtató alkalmazások,
-- amelyeket az Intune és az Azure Active Directory (AD) felügyel 
-- amelyek az Intune és az Azure Active Directory (AD) által felügyelt felhasználók tulajdonai.
+## Client apps reference
 
-### <a name="properties"></a>Tulajdonságok
+The apps that are running devices
+- managed by Intune and Azure Active Directory (AD) 
+- owned by users managed by Intune and Azure Active Directory (AD).
 
-Az ügyfélalkalmazások tulajdonságai.
+### Properties
 
-| Tulajdonság      | Leírás                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+The properties of client apps.
+
+| Property      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Name (Név)          | Az alkalmazás neve.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| Operációs rendszer            | Az eszközön telepített operációs rendszer.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Typo          | Mindegyik alkalmazáshoz kiválaszthat egy hozzárendelési típust.  <br> **Elérhető** – A felhasználók a Céges portál alkalmazásban vagy webhelyen telepítik az alkalmazást.  <br> **Nem alkalmazható** – Az alkalmazás nincs telepítve, vagy nem jelenik meg a Céges portálon. <br> **Eltávolítás** – A rendszer eltávolítja az alkalmazást a kiválasztott csoportok eszközeiről.  <br> **Regisztrációval vagy anélkül is elérhető** – Az alkalmazás hozzárendelése olyan felhasználók csoportjaihoz, akik eszközei nincsenek regisztrálva az Intune-ban. |
-| Utolsó módosítás | Az eszköztípus neve.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Name          | The name of the application.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| OS            | The operating system installed on the device.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Type          | You can choose an assignment type for each app.  <br> **Available** - Users install the app from the Company Portal app or website.  <br> **Not Applicable** - The app is not installed or shown in the Company Portal. <br> **Uninstall** - The app is uninstalled from devices in the selected groups.  <br> **Available with or without enrollment** - Assign this app to groups of users whose devices are not enrolled with Intune. |
+| Last Modified | The name of the type of device.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
-### <a name="devices"></a>Eszközök
+### Devices
 
-Az Intune által, vagy az Intune vagy az Azure AD által kezelt felhasználók által kezelt eszközök.
+Devices managed by Intune or by users managed by Intune or Azure AD.
 
-| Tulajdonság           | Leírás                                                                                                                         |
+| Property           | Description                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Eszköz neve        | Az eszköztípus neve.                                                                                                     |
-| Felügyeli         | A szabályzat módosítási idejének időbélyege.                                                                                              |
-| Azure AD-összekapcsolási típus | Az egyes felhasználók alkalmazásvédelmi alkalmazásainak állapota. Az alkalmazások lehetséges állapotai: **Bejelentkezett** és **Nem bejelentkezett**. |
-| Tulajdonos          | Az eszköz tulajdonlástípusa (**céges**, **személyes** vagy **ismeretlen**).                                               |
-| Intune-kompatibilis   | Az eszköztípus neve.                                                                                                     |
-| Azure AD-kompatibilis | Az egyes felhasználók alkalmazásvédelmi alkalmazásainak állapota. Az alkalmazások lehetséges állapotai: **Bejelentkezett** és **Nem bejelentkezett**. |
-| Alkalmazástelepítés | Azt jelzi, hogy történt-e sikeres vagy sikertelen alkalmazástelepítés az adott eszközön. |
-| Operációs rendszer                 | Az eszközön telepített operációs rendszer.                                                                                       |
-| Operációs rendszer verziója         | Az eszköz operációs rendszerének verziószáma.                                                                                  |
-| Legutóbbi bejelentkezés      | Az eszköztípus neve.                                                                                                     |
+| Device name        | The name of the type of device.                                                                                                     |
+| Managed by         | The timestamp the policy was modified.                                                                                              |
+| Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Ownership          | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Intune compliant   | The name of the type of device.                                                                                                     |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| App install | Denotes whether an app install failure or success has occurred on the individual device. |
+| OS                 | The operating system installed on the device.                                                                                       |
+| OS version         | The Operating System version number of the device.                                                                                  |
+| Last check-in      | The name of the type of device.                                                                                                     |
 
-### <a name="app-protection-status"></a>Alkalmazásvédelem állapota
+### App protection status
 
-Az alkalmazásvédelmi szabályzat az Enterprise Mobility Solution- (EMS-) technológiával integrált mobilalkalmazásoknál érhető el. Ezek a szabályzatok biztosítják a vállalati adatok alapvető védelmét, amikor azokat különféle, például Office-os mobilalkalmazások töltik le. 
+An app protection policy is available to mobile apps that integrate with Enterprise Mobility Solution (EMS) technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
-| Tulajdonság    | Leírás                                                                           |
+| Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Állapot      | Az eszköz tulajdonlástípusa (**céges**, **személyes** vagy **ismeretlen**). |
-| App neve    | Az alkalmazás neve                                                           |
-| Eszköz neve | Az eszköztípus neve.                                                       |
-| Eszköz típusa | Az eszköztípus neve.                                                       |
-| Házirendek    | Az eszköz tulajdonlástípusa (**céges**, **személyes** vagy **ismeretlen**). |
-| Legutóbbi szinkronizálás   | Időbélyeg, amely az eszköz Intune-nal való szinkronizálásának utolsó idejét mutatja.                   |
+| Status      | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| App name    | The name of the application                                                           |
+| Device name | The name of the type of device.                                                       |
+| Device type | The name of the type of device.                                                       |
+| Policies    | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| Last sync   | The timestamp of the last time the device synchronized with Intune.                   |
 
-## <a name="app-protection-policies-reference"></a>Alkalmazásvédelmi szabályzatok információi
+## App protection policies reference
 
-Az EMS-technológiákkal integrált mobilalkalmazások számára alkalmazásvédelmi szabályzat érhető el. Ezek a szabályzatok biztosítják a vállalati adatok alapvető védelmét, amikor azokat különféle, például Office-os mobilalkalmazások töltik le. 
+An app protection policy is available to mobile apps that integrate with EMS technologies.These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
-### <a name="properties"></a>Tulajdonságok
+### Properties
 
-A táblázat az Intune által kezelt eszközök alkalmazásvédelmi szabályzatainak állapotát mutatja be.
+The table summarizes app protection policies status for devices managed by Intune.
 
-| Tulajdonság    | Leírás                                                                                                                                |
+| Property    | Description                                                                                                                                |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Name (Név)        | Az alkalmazás neve.                                                                                                        |
-| Telepítve    | Az egyes felhasználók alkalmazásvédelmi alkalmazásainak állapota. Az alkalmazások lehetséges állapotai: **Bejelentkezett** és **Nem bejelentkezett**. |
-| Platform    | Az eszköz tulajdonlástípusa (**céges**, **személyes** vagy **ismeretlen**).                                               |
-| Beléptetés  | Az eszköztípus neve.                                                                                                     |
-| Legutóbbi frissítés | A szabályzat módosítási idejének időbélyege.                                                                                              |
+| Name        | The name of the application.                                                                                                        |
+| Deployed    | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Platform    | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Enrollment  | The name of the type of device.                                                                                                     |
+| Last Update | The timestamp the policy was modified.                                                                                              |
 
-### <a name="devices"></a>Eszközök
+### Devices
 
-Az Intune által, vagy az Intune vagy az Azure AD által kezelt felhasználók által kezelt eszközök.
+Devices managed by Intune or by users managed by Intune or Azure AD.
 
-| Tulajdonság           | Szöveg                                                                                                                                |
+| Property           | Text                                                                                                                                |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Eszköz neve        | Az eszköztípus neve.                                                                                                     |
-| Felügyeli         | A szabályzat módosítási idejének időbélyege.                                                                                              |
-| Azure AD-összekapcsolási típus | Az egyes felhasználók alkalmazásvédelmi alkalmazásainak állapota. Az alkalmazások lehetséges állapotai: **Bejelentkezett** és **Nem bejelentkezett**. |
-| Tulajdonos          | Az eszköz tulajdonlástípusa (**céges**, **személyes** vagy **ismeretlen**).                                               |
-| Intune-kompatibilis   | Az eszköztípus neve.                                                                                                     |
-| Azure AD-kompatibilis | Az egyes felhasználók alkalmazásvédelmi alkalmazásainak állapota. Az alkalmazások lehetséges állapotai: **Bejelentkezett** és **Nem bejelentkezett**. |
-| Azure AD-kompatibilis | Az egyes felhasználók alkalmazásvédelmi alkalmazásainak állapota. Az alkalmazások lehetséges állapotai: **Bejelentkezett** és **Nem bejelentkezett**. |
-| Operációs rendszer                 | Az eszközön telepített operációs rendszer.                                                                                       |
-| Operációs rendszer verziója         | Az eszköz operációs rendszerének verziószáma.                                                                                  |
-| Legutóbbi bejelentkezés      | Az eszköztípus neve.                                                                                                     |
+| Device Name        | The name of the type of device.                                                                                                     |
+| Managed By         | The timestamp the policy was modified.                                                                                              |
+| Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Ownership          | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Intune compliant   | The name of the type of device.                                                                                                     |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| OS                 | The operating system installed on the device.                                                                                       |
+| OS version         | The Operating System version number of the device.                                                                                  |
+| Last Check in      | The name of the type of device.                                                                                                     |
 
-## <a name="compliance-policies-reference"></a>Megfelelőségi szabályzatok információi
+## Compliance policies reference
 
-Gondoskodik róla, hogy a vállalati alkalmazások és adatok elérésére használt eszközök megfeleljenek bizonyos szabályoknak, például használjanak PIN-kódot az eszközhöz való hozzáféréshez, illetve titkosítsák az eszközön tárolt adatokat.
+Makes sure that the devices used to access company apps and data, comply with certain rules like using a PIN to access the device, and encryption of data stored on the device.
 
-### <a name="properties"></a>Tulajdonságok
+### Properties
 
-A megfelelőségi szabályzatok tulajdonságai.
+The properties of the compliance policies.
 
-| Tulajdonság      | Leírás                                                                                                                         |
+| Property      | Description                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Hozzárendelés    | Az egyes felhasználók alkalmazásvédelmi alkalmazásainak állapota. Az alkalmazások lehetséges állapotai: **Bejelentkezett** és **Nem bejelentkezett**. |
-| Name (Név)          | Az alkalmazás neve.                                                                                                        |
-| Operációs rendszer            | Az eszközön telepített operációs rendszer.                                                                                       |
-| Szabályzattípus   | Az eszköz tulajdonlástípusa (**céges**, **személyes** és **ismeretlen**).                                               |
-| Utolsó módosítás | Az eszköztípus neve.                                                                                                     |
+| Assignment    | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Name          | The name of the application.                                                                                                        |
+| OS            | The operating system installed on the device.                                                                                       |
+| Policy Type   | The type of device ownership (**Company**, **Personal**, and **Unknown**).                                               |
+| Last Modified | The name of the type of device.                                                                                                     |
 
-### <a name="devices"></a>Eszközök
+### Devices
 
-Az Intune által, vagy az Intune vagy az Azure AD által kezelt felhasználók által kezelt eszközök.
+Devices managed by Intune or by users managed by Intune or Azure AD.
 
-| Tulajdonság           | Leírás                                                                                                                         |
+| Property           | Description                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Eszköz neve        | Az eszköztípus neve.                                                                                                     |
-| Felügyeli         | A szabályzat módosítási idejének időbélyege.                                                                                              |
-| Azure AD-összekapcsolási típus | Az egyes felhasználók alkalmazásvédelmi alkalmazásainak állapota. Az alkalmazások lehetséges állapotai: **Bejelentkezett** és **Nem bejelentkezett**. |
-| Tulajdonos          | Az eszköz tulajdonlástípusa (**céges**, **személyes** és **ismeretlen**).                                               |
-| Intune-kompatibilis   | Az eszköztípus neve.                                                                                                     |
-| Azure AD-kompatibilis | Az egyes felhasználók alkalmazásvédelmi alkalmazásainak állapota. Az alkalmazások lehetséges állapotai: **Bejelentkezett** és **Nem bejelentkezett**. |
-| Operációs rendszer                 | Az eszközön telepített operációs rendszer.                                                                                       |
-| Operációs rendszer verziója         | Az eszköz operációs rendszerének verziószáma.                                                                                  |
-| Legutóbbi bejelentkezés      | Az eszköztípus neve.                                                                                                     |
+| Device name        | The name of the type of device.                                                                                                     |
+| Managed by         | The timestamp the policy was modified.                                                                                              |
+| Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Ownership          | The type of device ownership (**Company**, **Personal**, and **Unknown**).                                               |
+| Intune compliant   | The name of the type of device.                                                                                                     |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| OS                 | The operating system installed on the device.                                                                                       |
+| OS version         | The Operating System version number of the device.                                                                                  |
+| Last check-in      | The name of the type of device.                                                                                                     |
 
-### <a name="app-protection-policies"></a>Alkalmazásvédelmi szabályzatok
+### App protection policies
 
-Az alkalmazásvédelmi szabályzat az EMS-technológiával integrált mobilalkalmazásoknál érhető el. Ezek a szabályzatok biztosítják a vállalati adatok alapvető védelmét, amikor azokat különféle, például Office-os mobilalkalmazások töltik le. 
+An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
-| Tulajdonság    | Leírás                                                                           |
+| Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Állapot      | Az eszköz tulajdonlástípusa (**céges**, **személyes** vagy **ismeretlen**). |
-| App neve    | Az alkalmazás neve                                                           |
-| Eszköz neve | Az eszköztípus neve.                                                       |
-| Eszköz típusa | Az eszköztípus neve.                                                       |
-| Házirendek    | Az eszköz tulajdonlástípusa (**céges**, **személyes** vagy **ismeretlen**). |
-| Legutóbbi szinkronizálás   | Időbélyeg, amely az eszköz Intune-nal való szinkronizálásának utolsó idejét mutatja.                   |
+| Status      | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| App name    | The name of the application                                                           |
+| Device name | The name of the type of device.                                                       |
+| Device type | The name of the type of device.                                                       |
+| Policies    | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| Last sync   | The timestamp of the last time the device synchronized with Intune.                   |
 
-## <a name="configuration-policies-reference"></a>Konfigurációs szabályzatok információi
+## Configuration policies reference
 
-Alkalmazásvédelmi szabályzat szállítóspecifikus konfigurációval rendelkező mobilalkalmazásoknál érhető el. 
+An app configuration policy is available to mobile apps with vendor-specific configuration. 
 
-### <a name="properties"></a>Tulajdonságok
+### Properties
 
-A konfigurációs szabályzatok tulajdonságai.
+The properties of the configuration policies.
 
-| Tulajdonság      | Leírás                                                                                                                         |
+| Property      | Description                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Hozzárendelés    | Az egyes felhasználók alkalmazásvédelmi alkalmazásainak állapota. Az alkalmazások lehetséges állapotai: **Bejelentkezett** és **Nem bejelentkezett**. |
-| Name (Név)          | Az alkalmazás neve.                                                                                                        |
-| Operációs rendszer            | Az eszközön telepített operációs rendszer.                                                                                       |
-| Szabályzattípus   | Az eszköz tulajdonlástípusa (**céges**, **személyes** vagy **ismeretlen**).                                               |
-| Utolsó módosítás | Az eszköztípus neve.                                                                                                     |
+| Assignment    | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Name          | The name of the application.                                                                                                        |
+| OS            | The operating system installed on the device.                                                                                       |
+| Policy Type   | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Last Modified | The name of the type of device.                                                                                                     |
 
-### <a name="devices"></a>Eszközök
+### Devices
 
-Az Intune által, vagy az Intune vagy az Azure AD által kezelt felhasználók által kezelt eszközök.
+Devices managed by Intune or by users managed by Intune or Azure AD.
 
-| Tulajdonság           | Leírás                                                                                                                         |
+| Property           | Description                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Eszköz neve        | Az eszköztípus neve.                                                                                                     |
-| Felügyeli         | A szabályzat módosítási idejének időbélyege.                                                                                              |
-| Azure AD-összekapcsolási típus | Az egyes felhasználók alkalmazásvédelmi alkalmazásainak állapota. Az alkalmazások lehetséges állapotai: **Bejelentkezett** és **Nem bejelentkezett**. |
-| Tulajdonos          | Az eszköz tulajdonlástípusa (**céges**, **személyes** vagy **ismeretlen**).                                               |
-| Intune-kompatibilis   | Az eszköztípus neve.                                                                                                     |
-| Azure AD-kompatibilis | Az egyes felhasználók alkalmazásvédelmi alkalmazásainak állapota. Az alkalmazások lehetséges állapotai: **Bejelentkezett** és **Nem bejelentkezett**. |
-| Operációs rendszer                 | Az eszközön telepített operációs rendszer.                                                                                       |
-| Operációs rendszer verziója         | Az eszköz operációs rendszerének verziószáma.                                                                                  |
-| Legutóbbi bejelentkezés      | Az eszköztípus neve.                                                                                                     |
+| Device name        | The name of the type of device.                                                                                                     |
+| Managed by         | The timestamp the policy was modified.                                                                                              |
+| Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Ownership          | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Intune compliant   | The name of the type of device.                                                                                                     |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| OS                 | The operating system installed on the device.                                                                                       |
+| OS version         | The Operating System version number of the device.                                                                                  |
+| Last check-in      | The name of the type of device.                                                                                                     |
 
 
-### <a name="app-protection-policies"></a>Alkalmazásvédelmi szabályzatok
+### App protection policies
 
-Az alkalmazásvédelmi szabályzat az EMS-technológiával integrált mobilalkalmazásoknál érhető el. Ezek a szabályzatok biztosítják a vállalati adatok alapvető védelmét, amikor azokat különféle, például Office-os mobilalkalmazások töltik le. 
+An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
-| Tulajdonság    | Leírás                                                                           |
+| Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Állapot      | Az eszköz tulajdonlástípusa (**céges**, **személyes** vagy **ismeretlen**). |
-| App neve    | Az alkalmazás neve                                                           |
-| Eszköz neve | Az eszköztípus neve.                                                       |
-| Eszköz típusa | Az eszköztípus neve.                                                       |
-| Házirendek    | Az eszköz tulajdonlástípusa (**céges**, **személyes** vagy **ismeretlen**). |
-| Legutóbbi szinkronizálás   | Időbélyeg, amely az eszköz Intune-nal való szinkronizálásának utolsó idejét mutatja.                   |
+| Status      | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| App name    | The name of the application                                                           |
+| Device name | The name of the type of device.                                                       |
+| Device type | The name of the type of device.                                                       |
+| Policies    | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| Last sync   | The timestamp of the last time the device synchronized with Intune.                   |
+
+-->
 
 ## <a name="enrollment-failure-reference"></a>Regisztrációs hiba hivatkozása
 
