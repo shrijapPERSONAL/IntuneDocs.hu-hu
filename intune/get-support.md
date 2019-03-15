@@ -17,11 +17,11 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c47f0d55a914714dedaf96f6f7c346b6252e36c6
-ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
+ms.openlocfilehash: 350ce5980cb7575a991cdc45702db95f802b4749
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/06/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57461328"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Hogyan kérhet támogatást az Intune-hoz
@@ -51,7 +51,7 @@ A Súgó és támogatás élmény az Intune-ban érhető el a [Microsoft 365-kez
 ![Az Intune a többi panelen](./media/get-support/intune-blades.png)
 
 
-Az új felületet hasonlít a élmény látható a a [Microsoft 365 felügyeleti központban](https://admin.microsoft.com/), és lecseréli azokat a [előző Súgó és támogatási élményt](#azure-help-+-support-experience). 
+Az új felületet hasonló a látható a [Microsoft 365 felügyeleti központban](https://admin.microsoft.com/), és lecseréli azokat az előző súgó, és felület támogatja. 
 
 Súgó és támogatás elérésére használja a következőt:  
 - **Eszköz kezelési irányítópult:**

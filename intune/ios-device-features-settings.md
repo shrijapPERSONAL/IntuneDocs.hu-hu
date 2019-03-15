@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/30/2019
+ms.date: 03/13/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,16 +16,18 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ee0d8660b810f5f568b69babba0b648b0095fa7
-ms.sourcegitcommit: 9a4c5b6c2ce511edaeace25426a23f180cb71e15
+ms.openlocfilehash: 34f0869b46323606d69891c3761bfbc154f3b6a3
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57566624"
 ---
-# <a name="ios-device-feature-settings-in-intune"></a>iOS-es eszközfunkció-beállítások az Intune-ban
+# <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>általános iOS-szolgáltatások használata az Intune-ban iOS-eszközbeállítások
 
 Intune-ban a iOS felhasználók saját eszközeiken másik Apple-szolgáltatások használatához néhány beépített beállításokat tartalmaz. Például a rendszergazdák is vezérelheti, hogyan használja az iOS-felhasználók számára a AirPrint-nyomtatókra, alkalmazások és mappák hozzáadása a dockhoz és a kezdőképernyőn oldalak megjelenítése alkalmazásértesítések, eszköz címke részleteinek megjelenítése a zárolási képernyőn, egyszeri bejelentkezéses hitelesítéshez használja és hitelesítheti a felhasználókat a tanúsítványok.
+
+Ezek a funkciók segítségével szabályozhatja az iOS-eszközök a mobileszköz-felügyelet (MDM) megoldás részeként.
 
 Ez a cikk ezeket a beállításokat, és ismerteti az egyes beállítások funkciója.
 
@@ -39,8 +41,8 @@ Ez a funkció lehetővé teszi, hogy iOS felhasználók számára ismert AirPrin
 
 1. A **beállítások**válassza **AirPrint**. Adja meg a következő tulajdonságokat az AirPrint-kiszolgáló:
 
-    - **IP-cím**: Adja meg a nyomtató IPv4 vagy IPv6-címét. Ha állomásnevek nyomtatók azonosítására használ, a nyomtató billentyűparancsot a terminálon pingelésével beszerezheti az IP-címet. [Az IP-cím és az elérési út](#get-the-ip-address-and-path) (a jelen cikkben) további információt talál.
-    - **Elérési út**: Az elérési út általában `ipp/print` nyomtatók a hálózaton. [Az IP-cím és az elérési út](#get-the-ip-address-and-path) (a jelen cikkben) további információt talál.
+    - **IP-cím**: Adja meg a nyomtató IPv4 vagy IPv6-címét. Ha állomásnevek nyomtatók azonosítására használ, a nyomtató billentyűparancsot a terminálon pingelésével beszerezheti az IP-címet. IP-címének lekéréséhez és elérési útját (a jelen cikkben) további információt talál.
+    - **Elérési út**: Az elérési út általában `ipp/print` nyomtatók a hálózaton. IP-címének lekéréséhez és elérési útját (a jelen cikkben) további információt talál.
     - **Port**: Adja meg az AirPrint-célhely figyelőportja. Ha üresen hagyja ezt a tulajdonságot, az AirPrint az alapértelmezett portot használ. Az iOS 11.0-s vagy újabb érhető el.
     - **TLS**: Válasszon **engedélyezése** AirPrint-kapcsolatok a Transport Layer Security (TLS) biztonságos. Az iOS 11.0-s vagy újabb érhető el.
 
@@ -305,47 +307,52 @@ Szokatlan viselkedés tapasztalható, amikor nincs kép profil hozzá van rendel
 
 Az alábbi listában néhány gyakori beépített iOS-alkalmazás csomagazonosítóját ismertetjük. Ha más alkalmazás csomagazonosítóját szeretné megismerni, lépjen kapcsolatba a szoftver gyártójával.
 
-|||
-|-|-|
-|Alkalmazás neve|Csomagazonosító|
-|Alkalmazásáruház|com.apple.AppStore|
-|Számológép|com.apple.calculator|
-|Naptár|com.apple.mobilecal|
-|Fényképezőgép|com.apple.camera|
-|Óra|com.apple.mobiletimer|
-|Iránytű|com.apple.compass|
-|Névjegyek|com.apple.MobileAddressBook|
-|FaceTime|com.apple.facetime|
-|Barátok keresése|com.apple.mobileme.fmf1|
-|iPhone keresése|com.apple.mobileme.fmip1|
-|Game Center|com.apple.gamecenter|
-|GarageBand|com.apple.mobilegarageband|
-|Állapot|com.apple.Health|
-|iBooks|com.apple.iBooks|
-|iTunes Store|com.apple.MobileStore|
-|iTunes U|com.apple.itunesu|
-|Keynote|com.apple.Keynote|
-|Mail|com.apple.mobilemail|
-|Térképek|com.apple.Maps|
-|Üzenetek|com.apple.MobileSMS|
-|Zene|com.apple.Music|
-|Hírek|com.apple.news|
-|Megjegyzések|com.apple.mobilenotes|
-|Számok|com.apple.Numbers|
-|Pages|com.apple.Pages|
-|Photo Booth|com.apple.Photo-Booth|
-|Fotók|com.apple.mobileslideshow|
-|Podcastok|com.apple.podcasts|
-|Emlékeztetők|com.apple.reminders|
-|Safari|com.apple.mobilesafari|
-|Beállítások|com.apple.Preferences|
-|Részvények|com.apple.stocks|
-|Tippek|com.apple.tips|
-|Videók|com.apple.videos|
-|Hangjegyzetek|com.apple.VoiceMemos|
-|Wallet|com.apple.Passbook|
-|Watch|com.apple.Bridge|
-|Időjárás|com.apple.weather|
+| Csomagazonosító                   | Alkalmazásnév     | Kiadó |
+|-----------------------------|--------------|-----------|
+| com.apple.AppStore          | Alkalmazásáruház    | Apple     |
+| com.apple.calculator        | Számológép   | Apple     |
+| com.apple.mobilecal         | Naptár     | Apple     |
+| com.apple.camera            | Kamera       | Apple     |
+| com.apple.mobiletimer       | Óra        | Apple     |
+| com.apple.compass           | Iránytű      | Apple     |
+| com.apple.MobileAddressBook | Névjegyek     | Apple     |
+| com.apple.facetime          | FaceTime     | Apple     |
+| com.apple.DocumentsApp      | Fájlok        | Apple     |
+| com.apple.mobileme.fmf1     | Barátok keresése | Apple     |
+| com.apple.mobileme.fmip1    | iPhone keresése  | Apple     |
+| com.apple.gamecenter        | Game Center  | Apple     |
+| com.apple.mobilegarageband  | GarageBand   | Apple     |
+| com.apple.Health            | Állapot       | Apple     |
+| com.apple.Home              | Otthoni         | Apple     |
+| com.apple.iBooks            | iBooks       | Apple     |
+| com.apple.iMovie            | iMovie       | Apple     |
+| com.apple.itunesconnect.mobile | iTunes Connectben | Apple |
+| com.apple.MobileStore       | iTunes Store | Apple     |
+| com.apple.itunesu           | iTunes U     | Apple     |
+| com.apple.Keynote           | Keynote      | Apple     |
+| com.apple.mobilemail        | Mail         | Apple     |
+| com.apple.Maps              | Maps         | Apple     |
+| com.apple.MobileSMS         | Üzenetek     | Apple     |
+| com.apple.Music             | Zene        | Apple     |
+| com.apple.news              | Hírek         | Apple     |
+| com.apple.mobilenotes       | Megjegyzések        | Apple     |
+| com.apple.Numbers           | Számok      | Apple     |
+| com.apple.Pages             | Pages        | Apple     |
+| com.apple.Photo-Booth       | Photo Booth  | Apple     |
+| com.apple.mobileslideshow   | Fotók       | Apple     |
+| com.apple.podcasts          | Podcastok     | Apple     |
+| com.apple.reminders         | Emlékeztetők    | Apple     |
+| com.apple.mobilesafari      | Safari       | Apple     |
+| com.apple.Preferences       | Beállítások     | Apple     |
+| com.apple.SiriViewService   | Siri         | Apple     |
+| com.apple.stocks            | Részvények       | Apple     |
+| com.apple.tips              | Tippek         | Apple     |
+| com.apple.TV                | TV           | Apple     |
+| com.apple.videos            | Videók       | Apple     |
+| com.apple.VoiceMemos        | Hangjegyzetek   | Apple     |
+| com.apple.Passbook          | Wallet       | Apple     |
+| com.apple.Bridge            | Watch        | Apple     |
+| com.apple.weather           | Időjárás      | Apple     |
 
 ## <a name="next-steps"></a>További lépések
 

@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/06/2019
+ms.date: 03/13/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a525efb8b05d5dfd9d33e1fa0c603c72ed3084f0
-ms.sourcegitcommit: 9a4c5b6c2ce511edaeace25426a23f180cb71e15
+ms.openlocfilehash: a92d18615f6be7c1e0ce931d443d2ac986db991e
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57566709"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>iOS-es beállítások engedélyezéséhez, vagy korlátozhatja a funkciókat az Intune-nal
@@ -105,54 +105,6 @@ Ezek a beállítások hozzá egy eszközkonfigurációs profilt az Intune-ban, �
 
     Ez a beállítás a következőkre vonatkozik:  
     - iOS 11.3 és újabb verziók
-
-## <a name="configurations-requiring-supervision"></a>Felügyeletet igénylő konfigurációk
-
-Az iOS Supervised (Felügyelt) módja csak a kezdeti eszközbeállítás során, az Apple Készülékregisztrációs programján keresztül vagy az Apple Configuratorral engedélyezhető. A Supervised (Felügyelt) mód engedélyezése után az Intune az alábbi funkciókkal konfigurálhatja az eszközöket:
-
-- App Lock (Egyetlen alkalmazás mód) 
-- Globális HTTP-Proxy 
-- Aktiválási zár megkerülése 
-- Önálló egyetlen alkalmazás mód 
-- Webtartalomszűrő 
-- Háttér és zárolási képernyő beállítása 
-- Felhasználói beavatkozás nélküli alkalmazástelepítés 
-- Mindig bekapcsolt VPN 
-- Kizárólag felügyelt alkalmazások telepítésének engedélyezése 
-- iBookstore 
-- iMessages 
-- Game Center 
-- Airdrop 
-- AirPlay 
-- Párosítás gazdagéppel 
-- Felhőalapú szinkronizálás 
-- Spotlight-keresés 
-- Handoff 
-- Eszköz törlése 
-- Korlátozások felhasználói felülete 
-- Konfigurációs profilok telepítése a felhasználói felület használatával 
-- Hírek 
-- Billentyűparancsok 
-- PIN-kód módosítása 
-- Eszköznév módosítása 
-- Alkalmazások automatikus letöltése 
-- Vállalati alkalmazások megbízhatóságának módosítása 
-- Apple Music 
-- Mail Drop 
-- Párosítás Apple Watch órával 
-
-> [!NOTE]
-> Az Apple megerősítette, hogy bizonyos beállítások áthelyezése a kizárólag felügyelt módban lévő 2019. Javasoljuk, hogy figyelembe véve ez, ha ahelyett, hogy ezek a beállítások Várakozás az Apple áthelyezi a kizárólag felügyelt módban:
-> - Végfelhasználók által végzett alkalmazástelepítés
-> - Alkalmazás eltávolítása
-> - FaceTime
-> - Safari
-> - iTunes
-> - Durva tartalom
-> - iCloud dokumentumok és adatok
-> - Több résztvevős játék
-> - Game Centerbeli barátok hozzáadása
-> - Siri
 
 ## <a name="password"></a>Windows 10
 
@@ -338,7 +290,7 @@ Alkalmazások hozzáadása az ezek a listák, a következőket teheti:
 ## <a name="cloud-and-storage"></a>Felhő és tárolás
 
 - **Icloudba történő biztonsági mentés**: **Nincs konfigurálva** lehetővé teszi a felhasználó biztonsági mentése az eszközre az icloud szolgáltatásba. **Blokk** megakadályozza a felhasználó biztonsági mentése az eszközre az icloud szolgáltatásba.
-- **Dokumentum icloudba szinkronizálásának (csak felügyelt)**: **Nincs konfigurálva** lehetővé teszi, hogy a dokumentumok és kulcsértékek szinkronizálását az iCloud tárhelyére. **Blokk** megakadályozza, hogy a iCloud dokumentumok és adatok szinkronizálását.
+- **Icloud-alapú dokumentum-szinkronizálás letiltása**: **Nincs konfigurálva** lehetővé teszi, hogy a dokumentumok és kulcsértékek szinkronizálását az iCloud tárhelyére. **Blokk** megakadályozza, hogy a iCloud dokumentumok és adatok szinkronizálását.
 - **Fényképadatfolyamok Icloudba történő szinkronizálása**: **Nincs konfigurálva** lehetővé teszi, hogy a felhasználók engedélyezhetik **saját fénykép Stream** az Iclouddal való szinkronizálását, és rendelkezik a fényképek elérhető a felhasználói eszközökön az eszközön. **Blokk** megakadályozza, hogy a fényképadatfolyamok Icloudba történő szinkronizálása.
 - **Biztonsági másolatok titkosításának**: **Szükséges** , eszköz biztonsági titkosítva kell lennie.
 - **iCloud-Fotókönyvtár**: Állítsa be **blokk** fényképek és videók tárolása a felhőben használatával iCloud-fotókönyvtár letiltása. Fényképek az eszközre az iCloud-Fotókönyvtár nincs teljes egészében letöltve az eszközről törlődnek. **Nincs konfigurálva** lehetővé teszi, hogy az iCloud-fotókönyvtár használatával.
@@ -355,15 +307,16 @@ Ezek a beállítások segítségével konfigurálhatja az iOS-eszközöket megad
 
 Alkalmazások hozzáadása a következőket teheti:
 
-- Adja meg a **alkalmazásnév** és **Alkalmazásköteg-azonosító**, és válassza ki **Hozzáadás**. [Csomagazonosító-referencia beépített iOS-alkalmazások](#bundle-id-reference-for-built-in-ios-apps) (a jelen cikkben) tartalmazza az egyes alkalmazások, a hozzájuk tartozó azonosítóik.
+- Adja meg a **alkalmazásnév** és **Alkalmazásköteg-azonosító**, és válassza ki **Hozzáadás**. [Beépített iOS-alkalmazások azonosítók csomagot](#bundle-ids-for-built-in-ios-apps) (a jelen cikkben) tartalmazza az egyes alkalmazások, a hozzájuk tartozó azonosítóik.
 - **Importálás** alkalmazásnevek és azok csomagazonosító listáját tartalmazó CSV-fájl. Másik lehetőségként **exportálása** egy meglévő lista, amely tartalmazza az alkalmazások.
 
 ## <a name="kiosk-supervised-only"></a>Kioszkmód (csak felügyelt)
 
-- **Alkalmazás teljes képernyős módban való futásra**: Válassza ki a kioszk módban futtatni kívánt alkalmazásokhoz. A választható lehetőségek: 
-  - **App Store**: Írja be az URL-cím egy alkalmazás az iTunes App Store-ban
-  - **Felügyelt alkalmazás**: Válasszon egy alkalmazást az Intune-hoz hozzáadott
-  - **Beépített alkalmazás**: Adja meg a [csomagazonosítója](#bundle-id-reference-for-built-in-ios-apps) a beépített alkalmazás
+- **Alkalmazás teljes képernyős módban való futásra**: Válassza ki a kioszk módban futtatni kívánt alkalmazásokhoz. A választható lehetőségek:
+  - **Nincs konfigurálva**: Teljes képernyős beállítások nem lesznek alkalmazva. Az eszköz kioszk módban nem fut.
+  - **App Store**: Adja meg az URL-cím egy alkalmazást az iTunes App Store-ban.
+  - **Felügyelt alkalmazás**: Válasszon egy alkalmazást az Intune-hoz hozzáadott.
+  - **Beépített alkalmazás**: Adja meg a [csomagazonosítója](#bundle-ids-for-built-in-ios-apps) (a jelen cikkben) a beépített alkalmazás.
 
 - **Az assistivetouch**: **Szükséges** a kisegítő érintés kisegítő beállítást kell az eszközön. Ez a funkció segít az képernyőn megjelenő kézmozdulatok, amely lehet nehézségekbe ütközik az. **Nincs konfigurálva** nem futtatni, vagy engedélyezze ezt a funkciót a teljes képernyős módban.
 - **Színek invertálása**: **Szükséges** a Színek invertálása kisegítő beállítást, a megjelenített képernyőt a látásukban felhasználók módosíthatják. **Nincs konfigurálva** nem futtatni, vagy engedélyezze ezt a funkciót a teljes képernyős módban.
@@ -386,7 +339,15 @@ Alkalmazások hozzáadása a következőket teheti:
 > Az iOS-eszközök Kioszk módra való konfigurálása előtt felügyelt módba kell állítania az eszközt az Apple Configurator eszközzel vagy az Apple Device Enrollment Program készülékregisztráció-kezelővel. Útmutató az Apple az Apple Configurator eszközzel jelenik meg.
 > Ha az iOS-alkalmazást, adja meg a profil hozzárendelése után települ, majd az eszköz nem lép kioszk módba az eszköz újraindításáig.
 
-## <a name="bundle-id-reference-for-built-in-ios-apps"></a>Csomagazonosító-referencia beépített iOS-alkalmazásokhoz
+## <a name="domains"></a>Tartományok
+
+- **Jelöletlen e-mail-tartományok** > **E-mail tartomány URL-címe**: Egy vagy több URL-címek hozzáadása a listához. Amikor a végfelhasználók számára a tartományok, adjon meg eltérő tartományban van, egy e-mailt kap, az e-mailben van megjelölve megbízhatóként a IOS-es Mail alkalmazásban.
+
+- **Felügyelt webtartományok** > **webes tartomány URL-címe**; Egy vagy több URL-címek hozzáadása a listához. Ad meg, a tartományokból letöltött dokumentumok azokat a rendszer kezeli. Ez a beállítás csak a Safari böngészővel letöltött dokumentumokra vonatkozik.
+
+- **Jelszavak automatikus kitöltés safariban** > **tartomány URL-címe**: Egy vagy több URL-címek hozzáadása a listához. A felhasználók csak a listában szereplő URL-címekhez tartozó webes jelszavakat menthetnek. Ez a beállítás csak a Safari böngészőre és az iOS 9.3 vagy későbbi verzióit futtató eszközökre vonatkozik felügyelt módban. Ha egyetlen URL-címet sem ad meg, jelszavakat minden webhelyhez lehetséges menteni.
+
+## <a name="bundle-ids-for-built-in-ios-apps"></a>Alkalmazásköteg-azonosítókat beépített iOS-alkalmazások
 
 Az alábbi listában néhány gyakori beépített iOS-alkalmazás csomagazonosítóját ismertetjük. Ha más alkalmazás csomagazonosítóját szeretné megismerni, lépjen kapcsolatba a szoftver gyártójával.
 
@@ -437,19 +398,53 @@ Az alábbi listában néhány gyakori beépített iOS-alkalmazás csomagazonosí
 | com.apple.Bridge            | Watch        | Apple     |
 | com.apple.weather           | Időjárás      | Apple     |
 
-## <a name="domains"></a>Tartományok
+## <a name="settings-that-require-supervised-mode"></a>A felügyelt mód szükséges beállítások
 
-### <a name="unmarked-email-domains"></a>Jelöletlen e-mail-tartományok
+Az iOS Supervised (Felügyelt) módja csak a kezdeti eszközbeállítás során, az Apple Készülékregisztrációs programján keresztül vagy az Apple Configuratorral engedélyezhető. A Supervised (Felügyelt) mód engedélyezése után az Intune az alábbi funkciókkal konfigurálhatja az eszközöket:
 
-A **E-mail tartomány URL-címe**, egy vagy több URL-címek hozzáadása a listához. Amikor a végfelhasználók számára a tartományok, adjon meg eltérő tartományban van, egy e-mailt kap, az e-mailben van megjelölve megbízhatóként a IOS-es Mail alkalmazásban.
+- App Lock (Egyetlen alkalmazás mód) 
+- Globális HTTP-Proxy 
+- Aktiválási zár megkerülése 
+- Önálló egyetlen alkalmazás mód 
+- Webtartalomszűrő 
+- Háttér és zárolási képernyő beállítása 
+- Felhasználói beavatkozás nélküli alkalmazástelepítés 
+- Mindig bekapcsolt VPN 
+- Kizárólag felügyelt alkalmazások telepítésének engedélyezése 
+- iBookstore 
+- iMessages 
+- Game Center 
+- Airdrop 
+- AirPlay 
+- Párosítás gazdagéppel 
+- Felhőalapú szinkronizálás 
+- Spotlight-keresés 
+- Handoff 
+- Eszköz törlése 
+- Korlátozások felhasználói felülete 
+- Konfigurációs profilok telepítése a felhasználói felület használatával 
+- Hírek 
+- Billentyűparancsok 
+- PIN-kód módosítása 
+- Eszköznév módosítása 
+- Alkalmazások automatikus letöltése 
+- Vállalati alkalmazások megbízhatóságának módosítása 
+- Apple Music 
+- Mail Drop 
+- Párosítás Apple Watch órával 
 
-### <a name="managed-web-domains"></a>Felügyelt webtartományok
-
-A **webes tartomány URL-címe**, egy vagy több URL-címek hozzáadása a listához. Ad meg, a tartományokból letöltött dokumentumok azokat a rendszer kezeli. Ez a beállítás csak a Safari böngészővel letöltött dokumentumokra vonatkozik.
-
-### <a name="safari-password-autofill-domains"></a>Jelszavak automatikus kitöltése a Safariban
-
-A **tartomány URL-címe**, egy vagy több URL-címek hozzáadása a listához. A felhasználók csak a listában szereplő URL-címekhez tartozó webes jelszavakat menthetnek. Ez a beállítás csak a Safari böngészőre és az iOS 9.3 vagy későbbi verzióit futtató eszközökre vonatkozik felügyelt módban. Ha egyetlen URL-címet sem ad meg, jelszavakat minden webhelyhez lehetséges menteni.
+> [!NOTE]
+> Az Apple megerősítette, hogy bizonyos beállítások áthelyezése a kizárólag felügyelt módban lévő 2019. Javasoljuk, hogy figyelembe véve ez, ha ahelyett, hogy ezek a beállítások Várakozás az Apple áthelyezi a kizárólag felügyelt módban:
+> - Végfelhasználók által végzett alkalmazástelepítés
+> - Alkalmazás eltávolítása
+> - FaceTime
+> - Safari
+> - iTunes
+> - Durva tartalom
+> - iCloud dokumentumok és adatok
+> - Több résztvevős játék
+> - Game Centerbeli barátok hozzáadása
+> - Siri
 
 ## <a name="next-steps"></a>További lépések
 
