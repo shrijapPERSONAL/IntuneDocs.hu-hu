@@ -14,10 +14,10 @@ ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e3a6cf207c58194030a4e4bab8a02f76cd97b338
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57398613"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>IOS-szoftverfrissítési szabályzatok hozzáadása az Intune-ban
@@ -93,8 +93,8 @@ A meglévő szabályzatokat csoportokhoz, felhasználókhoz vagy eszközökhöz 
 A rendszer ekkor kiértékeli a szabályzat hatókörébe tartozó felhasználók által használt eszközök frissítési megfelelőségét. Ez a szabályzat a felhasználó nélküli eszközöket is támogatja.
 
 ## <a name="monitor-device-installation-failures"></a>Eszközök telepítési hibáinak figyelése
-A <!-- 1352223 -->
-**Szoftverfrissítések** > **iOS-eszközök telepítési hibái** területen láthatja azoknak a felügyelt iOS-eszközöknek a listáját, amelyekre érvényben van egy frissítési szabályzat, de a frissítésük nem járt sikerrel. Minden eszköz mellett látható egy állapotleírás, amelyből kiderül, hogy az adott eszköz miért nem frissült automatikusan. A kifogástalan, naprakész eszközök nem jelennek meg a listában. A naprakész eszközökön telepítve van az a legújabb frissítés, amelyet az eszköz támogatni képes.
+<!-- 1352223 -->
+**Szoftverfrissítések** > **iOS-eszközök telepítési hibái** felügyelt IOS-eszközök egy frissítési szabályzattal, frissítéssel próbálkoztak, és nem sikerült frissíteni a listáját jeleníti meg. Minden eszköz mellett látható egy állapotleírás, amelyből kiderül, hogy az adott eszköz miért nem frissült automatikusan. A kifogástalan, naprakész eszközök nem jelennek meg a listában. A naprakész eszközökön telepítve van az a legújabb frissítés, amelyet az eszköz támogatni képes.
 
 ## <a name="next-steps"></a>További lépések
 

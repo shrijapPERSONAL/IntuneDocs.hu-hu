@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 9c70dbee01c546f73052b8741ce339c7bfe92fc7
-ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/06/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57461141"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Windows-számítógépek számítógépként és mobileszközként való felügyeletének összehasonlítása
@@ -54,4 +54,5 @@ A vállalatok a Microsoft Intune-ban kezelhetik a Windows-számítógépeket mob
 A Windows-számítógépek modern mobileszköz-felügyelettel történő kezelése a következő előnyökkel jár:
 - **Méretezhetőség** – A mobileszköz-felügyelet az Intune-felhőkezeléssel együtt méretezhető. Az Intune szoftverügyfél 7000 számítógépre korlátozódik.
 - **Egyszerűség** – Az operációs rendszerben foglalt modern felügyeleti képességeket használ anélkül, hogy letöltött szoftverügyfélre kellene támaszkodnia
-- **Konzisztencia** – A Windows-számítógépeket ugyanúgy kezelheti, mint az összes többi mobileszközt a cégnél <!-- - **Cloud optimization** - -->
+- **Konzisztencia** – A Windows-számítógépeket ugyanúgy kezelheti, mint az összes többi mobileszközt a cégnél
+<!-- - **Cloud optimization** - -->

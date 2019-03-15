@@ -5,8 +5,8 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2019
-ms.topic: conceptual
+ms.date: 03/05/2019
+ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,11 +16,11 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c0f498dd4a3fc26a909bd9c0adfd9247c588097
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: 8712fc49bce8237e717a1a38e63ec334509e3217
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57400466"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>SCEP-tanúsítványok konfigurálása és használata az Intune-nal
@@ -37,9 +37,9 @@ Ez a cikk bemutatja az infrastruktúra konfigurálását, majd az Egyszerű tan�
 - **NDES-kiszolgáló**: A Windows Server 2012 R2 vagy újabb állítsa be a hálózati eszközök tanúsítványigénylési szolgáltatás (NDES) kiszolgálói szerepkör. Az Intune nem támogatja az NDES használatát olyan kiszolgálón, amelyen az Enterprise CA is fut. Az [Útmutató a hálózati eszközök tanúsítványigénylési szolgáltatásához](http://technet.microsoft.com/library/hh831498.aspx) című cikkből tájékozódhat arról, hogyan kell konfigurálnia a Windows Server 2012 R2 rendszert az NDES futtatására.
 Az NDES-kiszolgálónak egy olyan tartományhoz kell csatlakoznia, amely a vállalati CA-val egy erdőben található. További információ az NDES-kiszolgáló különálló erdőben, elszigetelt hálózaton vagy belső tartományon való telepítéséről: [Házirendmodul használata a Hálózati eszközök tanúsítványigénylési szolgáltatásával](https://technet.microsoft.com/library/dn473016.aspx).
 
-- **A Microsoft Intune tanúsítvány-összekötő**: Töltse le a **tanúsítvány-összekötő** telepítő (**NDESConnectorSetup.exe**) az Intune felügyeleti portálról. Ezt a telepítőt kell futtatnia az NDES-szerepkörrel rendelkező kiszolgálón.  
+- **A Microsoft Intune tanúsítvány-összekötő**: Az Intune-portálon lépjen a **eszközkonfiguráció** > **tanúsítvány-összekötőt** > **Hozzáadás**, és kövesse a *lépések SCEP-összekötő telepítésének*. A portálon a letöltési hivatkozás segítségével indítsa el a tanúsítvány-összekötő telepítő letöltési **NDESConnectorSetup.exe**.  Ezt a telepítőt kell futtatnia az NDES-szerepkörrel rendelkező kiszolgálón.  
 
-  - Az NDES tanúsítvány-összekötő a Federal Information Processing Standard (FIPS) módot is támogatja. A FIPS nem szükséges, de ha engedélyezve van, akkor lehetőség van tanúsítványok kibocsátására és visszavonására.
+Az NDES tanúsítvány-összekötő a Federal Information Processing Standard (FIPS) módot is támogatja. A FIPS nem szükséges, de ha engedélyezve van, akkor lehetőség van tanúsítványok kibocsátására és visszavonására.
 
 - **Webalkalmazás-proxykiszolgáló** (nem kötelező): Használjon olyan kiszolgálót, amelyen Windows Server 2012 R2 vagy újabb, mint a webalkalmazás-proxykiszolgálóként (WAP) kiszolgáló. Ez a konfiguráció:
   - Lehetővé teszi, hogy az eszközök az interneten keresztül fogadjanak tanúsítványokat.
@@ -302,7 +302,7 @@ Ebben a lépésben a következőket fogja elvégezni:
 2. Válassza az **Eszközkonfiguráció** > **Hitelesítésszolgáltató** > **Hozzáadás** lehetőséget.
 3. Töltse le és mentse az összekötő fájlt. Mentse egy olyan helyre, amely elérhető a kiszolgálóról, amelyre az összekötő telepítve lesz.
 
-    ![ConnectorDownload](./media/certificates-download-connector.png)
+    ![ConnectorDownload](/media/certificates-pfx-configure/certificates-download-connector.png)
 
 4. A letöltés befejezése után lépjen arra a kiszolgálóra, amely a Hálózati eszközök tanúsítványigénylési szolgáltatása (NDES) szerepkört üzemelteti. Ha ez megvan:
 

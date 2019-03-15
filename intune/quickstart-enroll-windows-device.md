@@ -17,11 +17,11 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 530cc40fcc08fd527a6330f2931cae22f57a0888
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: 9b9247d07ae947e61528095a4853e5cdbcbc80c0
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57389981"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>Gyors útmutató: Windows 10 rendszerű eszköz regisztrálása
@@ -60,7 +60,7 @@ A Windows 10 asztali verzió regisztrációja előtt erősítse meg a Windows te
 4. Ellenőrizze, hogy a Windows 10-es **verzió** **1607-es vagy újabb-e**.
 
     > [!IMPORTANT]
-    > Az ebben a rövid útmutatóban bemutatott lépések a **1607-es vagy újabb** Windows 10-verzióra vonatkoznak, ha a verzió **1511-es vagy régebbi**, folytassa [ezekkel a lépésekkel](/intune-user-help/enroll-your-w10-device-your-account).
+    > Az ebben a rövid útmutatóban bemutatott lépések a **1607-es vagy újabb** Windows 10-verzióra vonatkoznak, ha a verzió **1511-es vagy régebbi**, folytassa [ezekkel a lépésekkel](/intune-user-help/enroll-windows-10-device.md).  
 
 ## <a name="enroll-windows-10-desktop"></a>A Windows 10 asztali verzió regisztrálása
 

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: fbfff91d2993becc99e2132285bef78d245ff50e
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "35289502"
+---
 ## <a name="enable-windows-10-automatic-enrollment"></a>Windows 10-es eszközök automatikus regisztrációjának engedélyezése
 
 Az automatikus regisztrálással a felhasználók úgy is regisztrálhatják Windows 10-es eszközeiket az Intune-ban, hogy munkahelyi fiókjukat hozzáadják a személyes tulajdonú eszközeiken, vagy ha céges tulajdonban lévő eszközeiket csatlakoztatják az Azure Active Directoryhoz. A háttérben a felhasználó eszköze regisztrálja magát és csatlakozik az Azure Active Directory-hoz. A regisztrációt követően az eszközt az Intune felügyeli.
@@ -9,7 +17,7 @@ Az automatikus regisztrálással a felhasználók úgy is regisztrálhatják Win
 
 ### <a name="configure-automatic-mdm-enrollment"></a>Az automatikus MDM-regisztráció konfigurálása
 
-1. Jelentkezzen be az [Azure felügyeleti portálon](https://portal.azure.com) (https://manage.windowsazure.com)), majd válassza az **Azure Active Directory** elemet.
+1. Jelentkezzen be a [Azure felügyeleti portálján](https://portal.azure.com) (https://manage.windowsazure.com) , és válassza ki **Azure Active Directory**.
 
    ![Az Azure Portal képernyőképe](../media/auto-enroll-azure-main.png)
 
@@ -34,6 +42,6 @@ Az automatikus regisztrálással a felhasználók úgy is regisztrálhatják Win
    - **MDM-felderítési URL-cím**
    - **MDM megfelelőségi URL-címe**
 
-6. Válassza a **Mentés** lehetőséget.
+6. Kattintson a **Mentés** gombra.
 
 Alapértelmezés szerint a kétfaktoros hitelesítés nincs engedélyezve a szolgáltatáshoz. Ezzel együtt azonban az eszköz regisztrálásához ajánlatos kétfaktoros hitelesítést használni. Mielőtt kötelezővé tenné a kétfaktoros hitelesítést a szolgáltatáshoz, konfigurálnia kell egy kétfaktoros hitelesítési szolgáltatót az Azure Active Directoryban, a felhasználói fiókokat pedig többtényezős hitelesítéshez kell konfigurálnia. További információt az [Azure Multi-Factor Authentication-kiszolgáló – első lépések](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud) című témakörben talál.

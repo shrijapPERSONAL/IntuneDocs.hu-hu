@@ -19,10 +19,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3b21a2efc67773f1762e422af5fe8e576b1a97db
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55843459"
 ---
 # <a name="using-your-android-device-with-intune-company-portal"></a>Android-eszköz használata az Intune-beli Céges portállal
@@ -52,5 +52,5 @@ A Céges portál jelenleg az Android 4.4-es és újabb verzióit támogatja. Ez 
 - [Az eszköz regisztrációjának törlése az Intune-ból](unenroll-your-device-from-intune-android.md)
 - [Az eszköz regisztrációjának törlése, ha nem fogadta el a használati feltételeket](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 - [Mi történik, ha törli az eszköz regisztrációját az Intune-ból?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
-- [Mi történik, ha alaphelyzetbe állít egy saját Android-eszközt a Céges portál alkalmazással?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
+- [Mi történik, ha alaphelyzetbe állít egy saját Android-eszközt a Vállalati portál alkalmazással?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
   <!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->

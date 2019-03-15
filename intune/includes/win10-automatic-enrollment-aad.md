@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 04afc9c44bc1c4898950e6f3aff5dac7cb93370f
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "56323478"
+---
 ## <a name="enable-windows-10-automatic-enrollment"></a>Windows 10-es eszközök automatikus regisztrációjának engedélyezése
 
 Az automatikus regisztrálással a felhasználók Windows 10-es eszközeiket regisztrálhatják az Intune-ban. A regisztráláshoz a felhasználónak a személyes tulajdonú eszközén hozzá kell adnia a munkahelyi fiókját, vagy a céges tulajdonban lévő eszközt csatlakoztatnia kell az Azure Active Directoryhoz. A háttérben az eszköz regisztrálja magát, és csatlakozik az Azure Active Directoryhoz. A regisztrációt követően az eszközt az Intune felügyeli.

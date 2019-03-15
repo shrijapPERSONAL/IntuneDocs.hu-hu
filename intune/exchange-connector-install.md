@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 03/13/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73e139b64da214a7246cc300b5e850ea77073929
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: cf169dbae20285b9134766323b41ea9139440d74
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57390405"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Az Intune helyszíni Exchange-összekötőjének telepítése az Azure-beli Microsoft Intune-ban
 
-Helyszíni Exchange Server-környezetben az Intune feltételes hozzáférési funkciójával engedélyezheti vagy letilthatja a helyszíni Exchange-postaládák elérését. Exchange Active Sync helyszíni összekötőkkel csatlakoztathatja az Intune-t az Exchange-szervezetéhez, és beállíthatja az Intune feltételes hozzáférési funkcióját eszközmegfelelőségi szabályzatokkal együtt. Ezután egy eszközt az Exchange-hez csatlakozni próbál, ha az Intune meghatározza, hogy az eszköz Intune-ban regisztrált és megfelelő. Az Intune-ban való regisztráció megállapításához a helyszíni Exchange-összekötő leképezi az Exchange Serverben lévő Exchange Active Sync (EAS) -rekordokat Intune-rekordokká. További információért lásd: [Mik a feltételes hozzáférés használatának szokásos módjai az Intune-ban?](conditional-access-intune-common-ways-use.md)
+Helyszíni Exchange Server-környezetben az Intune feltételes hozzáférési funkciójával engedélyezheti vagy letilthatja a helyszíni Exchange-postaládák elérését. Exchange Active Sync helyszíni összekötőkkel csatlakoztathatja az Intune-t az Exchange-szervezetéhez, és beállíthatja az Intune feltételes hozzáférési funkcióját eszközmegfelelőségi szabályzatokkal együtt. Ezután egy eszközt az Exchange-hez csatlakozni próbál, ha az Intune meghatározza, hogy az eszköz Intune-ban regisztrált és megfelelő. Az Intune-ban való regisztráció megállapításához a helyszíni Exchange-összekötő leképezi az Exchange Serverben lévő Exchange Active Sync (EAS) -rekordokat Intune-rekordokká. További információkért lásd: [Mik azok az Intune-nal feltételes hozzáférés használatának szokásos módjai?](conditional-access-intune-common-ways-use.md)
 
 > [!IMPORTANT]
 > Az Intune mostantól egy előfizetésben több helyszíni Exchange-összekötőt is támogat. Ha a cége egynél több helyszíni Exchange-összekötővel rendelkezik, minden Exchange-szervezet részére külön összekötőt építhet ki.
@@ -39,22 +39,23 @@ Ha engedélyezni szeretne egy kapcsolatot, amely lehetővé teszi, hogy a Micros
 4. Ismételje meg ezeket a lépéseket az összes olyan Exchange-szervezetnél, amelyet csatlakoztatni szeretne az Intune-hoz.
 
 ## <a name="intune-on-premises-exchange-connector-requirements"></a>Az Intune helyszíni Exchange-összekötő követelményei
-A következő táblázat a helyszíni Exchange-összekötő számítógépre vonatkozó követelményeit tartalmazza.
+Szüksége lesz egy fiókra az Intune-licencet az összekötővel csatlakozhat az Exchange-hez használható. A fiók van megadva, az összekötő telepítésekor.  
 
+A következő táblázat a helyszíni Exchange-összekötő számítógépre vonatkozó követelményeit tartalmazza.  
 
-|            Követelmény             |                                                                                                                                                                                                        További információ                                                                                                                                                                                                        |
-|------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|         Operációs rendszerek          |                                                               Az Intune a helyszíni Exchange-összekötőt olyan számítógépen támogatja, amelyen a Windows Server 2008 SP2 64 bites, a Windows Server 2008 R2, a Windows Server 2012, a Windows Server 2012 R2 vagy a Windows Server 2016 rendszer valamelyik kiadása fut.<br /><br />Az összekötő nem támogatott a Server Core telepítéseken.                                                                |
-|         Microsoft Exchange         |                                                                           A helyszíni összekötőhöz a Microsoft Exchange 2010 SP3 vagy újabb verziójára, vagy régi dedikált Exchange Online-ra van szükség. Lépjen kapcsolatba a fiókkezelővel annak megállapításához, hogy a dedikált Exchange Online-környezet <strong>új</strong> vagy <strong>régi</strong> konfigurációval rendelkezik-e.                                                                           |
-| Mobileszköz-kezelő szolgáltató |                                                                                                                              [Mobileszköz-kezelő szolgáltatóként a Microsoft Intune-t állítsa be](mdm-authority-set.md).                                                                                                                               |
-|              Hardver              |                                                                                                                                                     Azon számítógépnek, amelyre az összekötőt telepíteni kívánja, 1,6 GHz-es processzorral, 2 GB memóriával és legalább 10 GB szabad lemezterülettel kell rendelkeznie.                                                                                                                                                      |
-|  Active Directory-szinkronizálás  |                                                                                      Mielőtt az Intune-t az összekötő segítségével csatlakoztathatná az Exchange-kiszolgálóhoz, [állítsa be az Active Directory-szinkronizálást](users-add.md), hogy a helyi felhasználók és biztonsági csoportok szinkronizálva legyenek az Azure Active Directory meglévő példányával.                                                                                      |
-|        További szoftverek         |                                                                                                                                           Az összekötőt futtató számítógépnek a Microsoft .NET-keretrendszer 4.5-ös és a Windows PowerShell 2.0-s verziójának teljes telepítésével kell rendelkeznie.                                                                                                                                           |
-|              Network (Hálózat)               | Az összekötő telepítéséhez használt számítógépnek olyan tartományhoz kell tartoznia, amely megbízhatósági kapcsolatban áll az Exchange Server-t üzemeltető tartománnyal.<br /><br />A számítógépet úgy kell beállítani, hogy a 80-as és a 443-as porton, a tűzfalakon és a proxykiszolgálókon keresztül hozzáférjen az Intune szolgáltatáshoz. Az Intune által használt tartományok a következők: manage.microsoft.com, &#42;manage.microsoft.com és &#42;.manage.microsoft.com. |
+|  Követelmény  |   További információ     |
+|---------------|------------------------|
+|  Operációs rendszerek        | Az Intune a helyszíni Exchange-összekötőt olyan számítógépen támogatja, amelyen a Windows Server 2008 SP2 64 bites, a Windows Server 2008 R2, a Windows Server 2012, a Windows Server 2012 R2 vagy a Windows Server 2016 rendszer valamelyik kiadása fut.<br /><br />Az összekötő nem támogatott a Server Core telepítéseken.  |
+| Microsoft Exchange          | A helyszíni összekötőhöz a Microsoft Exchange 2010 SP3 vagy újabb verziójára, vagy régi dedikált Exchange Online-ra van szükség. Lépjen kapcsolatba a fiókkezelővel annak megállapításához, hogy a dedikált Exchange Online-környezet <strong>új</strong> vagy <strong>régi</strong> konfigurációval rendelkezik-e. |
+| Mobileszköz-kezelő szolgáltató           | [Mobileszköz-kezelő szolgáltatóként a Microsoft Intune-t állítsa be](mdm-authority-set.md). |
+| Hardver              | Azon számítógépnek, amelyre az összekötőt telepíteni kívánja, 1,6 GHz-es processzorral, 2 GB memóriával és legalább 10 GB szabad lemezterülettel kell rendelkeznie. |
+|  Active Directory-szinkronizálás             | Mielőtt az Intune-t az összekötő segítségével csatlakoztathatná az Exchange-kiszolgálóhoz, [állítsa be az Active Directory-szinkronizálást](users-add.md), hogy a helyi felhasználók és biztonsági csoportok szinkronizálva legyenek az Azure Active Directory meglévő példányával. |
+| További szoftverek         | Az összekötőt futtató számítógépnek a Microsoft .NET-keretrendszer 4.5-ös és a Windows PowerShell 2.0-s verziójának teljes telepítésével kell rendelkeznie. |
+| Network (Hálózat)               | Az összekötő telepítéséhez használt számítógépnek olyan tartományhoz kell tartoznia, amely megbízhatósági kapcsolatban áll az Exchange Server-t üzemeltető tartománnyal.<br /><br />A számítógépet úgy kell beállítani, hogy a 80-as és a 443-as porton, a tűzfalakon és a proxykiszolgálókon keresztül hozzáférjen az Intune szolgáltatáshoz. Az Intune által használt tartományok a következők: manage.microsoft.com, &#42;manage.microsoft.com és &#42;.manage.microsoft.com. |
 
 ### <a name="exchange-cmdlet-requirements"></a>Exchange-parancsmagokkal kapcsolatos követelmények
 
-Létre kell hoznia egy Active Directory-felhasználói fiókot, amelyet a helyszíni Exchange-összekötő fog használni. A fióknak engedéllyel kell rendelkeznie az alábbi szükséges Windows PowerShell Exchange-parancsmagok futtatásához:
+Hozzon létre egy Active Directory a helyszíni Exchange-összekötő által használt felhasználói fiók. A fióknak engedéllyel kell rendelkeznie az alábbi szükséges Windows PowerShell Exchange-parancsmagok futtatásához:
 
 
  -   Get-ActiveSyncOrganizationSettings, Set-ActiveSyncOrganizationSettings
@@ -116,9 +117,9 @@ A helyszíni Intune Exchange-összekötő telepítéséhez hajtsa végre az alá
 
        4. Válassza az **OK** gombot.
 
-4. A **Felhasználó (Tartomány\felhasználó)** és **Jelszó** mezőknél adja meg az Exchange-kiszolgálóhoz való csatlakozáshoz szükséges hitelesítő adatokat.
+4. A **Felhasználó (Tartomány\felhasználó)** és **Jelszó** mezőknél adja meg az Exchange-kiszolgálóhoz való csatlakozáshoz szükséges hitelesítő adatokat. A megadott fióknak rendelkeznie kell az Intune használatához szükséges licenc. 
 
-5. Adja meg azokat a hitelesítő adatokat, amelyek szükségesek ahhoz, hogy az értesítéseket egy felhasználó Exchange Server-postaládájába küldhesse a rendszer. Ezt a felhasználót dedikálhatja kizárólag az értékesítésekre. Az értesítésekkel foglalkozó felhasználónak egy Exchange-postaládára van szüksége az értesítések e-mailes küldéséhez. Ezeket az értesítéseket a feltételes hozzáférési szabályzatokon keresztül konfigurálhatja az Intune-ban.  
+5. Adja meg azokat a hitelesítő adatokat, amelyek szükségesek ahhoz, hogy az értesítéseket egy felhasználó Exchange Server-postaládájába küldhesse a rendszer. Ezt a felhasználót dedikálhatja kizárólag az értékesítésekre. Az értesítések felhasználói e-mailes értesítések küldése az Exchange-postaládára van szüksége. Ezeket az értesítéseket a feltételes hozzáférési szabályzatokon keresztül konfigurálhatja az Intune-ban.  
 
        Ensure that the Autodiscover service and Exchange Web Services are configured on the Exchange Client Access Server. For more information, see [Client Access server](https://technet.microsoft.com/library/dd298114.aspx).
 
@@ -159,10 +160,10 @@ Ellenőrizheti a legutóbbi sikeres szinkronizálási kísérlet dátumát és i
 
 ### <a name="system-center-operations-manager-management-pack"></a>A System Center Operations Manager felügyeleti csomag
 
-Az Intune 1710-es kiadásától kezdve használhatja a [az Operations Manager felügyeleti csomag az Exchange- összekötővel](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True). Ez számos megoldást nyújt az Exchange Connector figyelésére, amikor hibaelhárítás szükséges.
+Az Intune 1710-es kiadásától kezdve használhatja a [az Operations Manager felügyeleti csomag az Exchange- összekötővel](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True). A felügyeleti csomag segítségével biztosít az Exchange connector figyelésére, amikor szüksége van a hibák elhárításához.
 
 ## <a name="manually-force-a-quick-sync-or-full-sync"></a>Gyors szinkronizálás vagy teljes szinkronizálás manuális kényszerítése
-A helyszíni Exchange connector szoftverből automatikusan szinkronizálja az EAS és az Intune-eszközrekordoknak rendszeresen. Ha egy eszköz megfelelőségi állapota megváltozik, az automatikus szinkronizálási folyamat rendszeresen frissíti a rekordokat az eszközelérés letiltásához vagy engedélyezéséhez.
+A helyszíni Exchange connector szoftverből automatikusan szinkronizálja az EAS és az Intune-eszközrekordoknak rendszeresen. Ha egy eszköz megfelelőségi állapota megváltozik, az automatikus szinkronizálási folyamat rendszeresen frissíti a rekordokat, hogy az eszközök hozzáférésének letiltott vagy engedélyezett.
 
    - **Gyors szinkronizálás** rendszeresen történik, naponta többször. A gyors szinkronizálás beolvassa azoknak az Intune-licenccel rendelkező és helyszíni feltételes Exchange-hozzáféréshez beállított felhasználóknak az eszközadatait, amelyek megváltoztak az utolsó szinkronizálás óta.
 

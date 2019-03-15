@@ -18,11 +18,11 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c80320e6161db917e84c2946da4eb5704cb29df5
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: 3aefdd20a3a77721852281930a9a2ef83cb088f1
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57390482"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windowsos eszközök regisztrációjának beállítása
@@ -43,8 +43,8 @@ A Windows-eszközök regisztrálásának egyszerűsítését két tényező hat�
 
 ||**Azure AD Premium**|**Egyéb AD**|
 |----------|---------------|---------------|  
-|**Windows 10**|[Automatikus regisztráció](#enable-windows-10-automatic-enrollment) |[Felhasználói regisztráció](#enable-windows-enrollment-without-azure-ad-premium)|
-|**Korábbi Windows-verziók**|[Felhasználói regisztráció](#enable-windows-enrollment-without-azure-ad-premium)|[Felhasználói regisztráció](#enable-windows-enrollment-without-azure-ad-premium)|
+|**Windows 10**|[Automatikus regisztráció](#enable-windows-10-automatic-enrollment) |Felhasználó beléptetése|
+|**Korábbi Windows-verziók**|Felhasználó beléptetése|Felhasználó beléptetése|
 
 Azok a cégek, amelyek használhatják az automatikus regisztrációt, a Windows Configuration Designer alkalmazással is konfigurálhatják az [eszközök csoportos regisztrációját](windows-bulk-enroll.md).
 

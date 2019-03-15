@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/12/2018
+ms.date: 03/11/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,11 +17,11 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b714b48d33aa0a5e3af952195aaf6e01954a831a
-ms.sourcegitcommit: 9a4c5b6c2ce511edaeace25426a23f180cb71e15
+ms.openlocfilehash: 64de72822ad8d2f8d9893e3428208ff1363d33e2
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57566046"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Android-alkalmazások előkészítése alkalmazásvédelmi szabályzatokkal való felügyeletre az Intune alkalmazásburkoló eszközével
@@ -31,7 +31,6 @@ ms.locfileid: "57566046"
 A Microsoft Intune App Wrapping Tool for Android alkalmazásburkoló eszközzel módosíthatja a belső fejlesztésű Android-alkalmazások viselkedését, így az alkalmazások kódjának módosítása nélkül korlátozhatja az alkalmazások funkcióit.
 
 Ez az eszköz egy windowsos parancssori alkalmazás, amely PowerShell-ablakban fut, és „beburkolja” az Android-alkalmazást. Az alkalmazás beburkolását követően az Intune-ban [mobilalkalmazás-kezelési szabályzatok](app-protection-policies.md) konfigurálásával módosíthatja az alkalmazás funkcióit.
-
 
 Az eszköz futtatása előtt olvassa el a következő cikket: [Az alkalmazásburkoló eszköz futtatásához kapcsolódó biztonsági szempontok](#security-considerations-for-running-the-app-wrapping-tool). Az eszköz letöltéséhez keresse fel a [Microsoft Intune App Wrapping Tool for Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android) oldalát a GitHubon.
 
@@ -54,10 +53,12 @@ Az eszköz futtatása előtt olvassa el a következő cikket: [Az alkalmazásbur
 
 - Az Android megköveteli, hogy minden alkalmazáscsomag (.apk) alá legyen írva. Létező tanúsítványok **újbóli használatához** és az aláíró tanúsítványok teljes útmutatójához lásd: [Aláíró tanúsítványok és burkolóalkalmazások újbóli használata](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). A keytool.exe végrehajtható Java-eszközzel létrehozhatja a kimeneti burkolt alkalmazás aláírásához szükséges **új** hitelesítő adatokat. Minden beállított jelszónak biztonságosnak kell lennie, de jegyezze fel őket, mert szükség van rájuk az alkalmazásburkoló eszköz futtatásához.
 
-> [!NOTE]
-> Az Intune alkalmazásburkoló eszköz nem támogatja a Google v2 és hamarosan megjelenő v3 alkalmazás-aláíró sémáit. Miután becsomagolta az .apk fájlt az Intune alkalmazásburkoló eszközzel, javasoljuk, hogy használja a [Google által biztosított Apksigner eszközt]( https://developer.android.com/studio/command-line/apksigner). Ezzel biztosíthatja, hogy miután az alkalmazás eljut a végfelhasználói eszközökre, elindítható legyen az Android szabványoknak megfelelően. 
+    > [!NOTE]
+    > Az Intune alkalmazásburkoló eszköz nem támogatja a Google v2 és hamarosan megjelenő v3 alkalmazás-aláíró sémáit. Miután becsomagolta az .apk fájlt az Intune alkalmazásburkoló eszközzel, javasoljuk, hogy használja a [Google által biztosított Apksigner eszközt]( https://developer.android.com/studio/command-line/apksigner). Ezzel biztosíthatja, hogy miután az alkalmazás eljut a végfelhasználói eszközökre, elindítható legyen az Android szabványoknak megfelelően. 
 
-- (Nem kötelező) Engedélyezze a Multidexet a bemeneti alkalmazásban. Az alkalmazások a burkolás során hozzáadott Intune MAM SDK osztályok miatt néha meghaladják a Dalvik Executable (DEX) méretkorlátját. A DEX-fájlok az Android-alkalmazások fordításának részei. Ebben az esetben az ajánlott eljárás a Multidex engedélyezése az alkalmazáson belül. Egyes cégeknél elképzelhető, hogy ehhez az alkalmazás fordítójával (azaz az alkalmazás-összeállító csapattal) való együttműködés szükséges. 
+- (Nem kötelező) Alkalmazás néha előfordulhat, hogy eléri a Dalvik Executable (DEX) méretkorlátját a burkolás során hozzáadott Intune MAM SDK osztályok miatt. A DEX-fájlok az Android-alkalmazások fordításának részei. Az Intune App Wrapping Tool DEX fájl túlcsordulás automatikusan kezeli az alkalmazások minimális API-val 21-ből vagy magasabb szintű alkalmazásburkoló során (a [v. 1.0.2501.1](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android/releases)). Legalább < 21 szintű API-alkalmazások esetén célszerű lenne, a minimális API-szintet a burkoló használatával növelheti `-UseMinAPILevelForNativeMultiDex` jelzőt. Az ügyfelek nem lehet növelni az alkalmazás minimális API-szintet a következő DEX túlcsordulás kerülő megoldások érhetők el. Egyes cégeknél előfordulhat, hogy fordítójával lefordítja az alkalmazás használatának (ie. az alkalmazás-összeállító csapattal):
+* Használja a ProGuard kiküszöbölése az alkalmazás elsődleges DEX fájlnak fel nem használt osztály hivatkozásokat.
+* V3.1.0 használó ügyfelek számára vagy újabb verzióját az Android Gradle beépülő modul, tiltsa le a [D8 dexer](https://android-developers.googleblog.com/2018/04/android-studio-switching-to-d8-dexer.html).  
 
 ## <a name="install-the-app-wrapping-tool"></a>Az alkalmazásburkoló eszköz telepítése
 
@@ -94,6 +95,7 @@ Jegyezze fel a mappa nevét, ahová az eszközt telepítette. Az alapértelmezet
 |**-KeyAlias**&lt;String&gt;|Az aláíráshoz használt kulcs neve.| |
 |**-KeyPassword**&lt;SecureString&gt;|Az aláíráshoz használt titkos kulcs visszafejtésére szolgáló jelszó.| |
 |**-SigAlg**&lt;SecureString&gt;| (Nem kötelező) Az aláíráshoz használandó aláírási algoritmus neve. Az algoritmusnak kompatibilisnek kell lennie a titkos kulccsal.|Példák: SHA256withRSA, SHA1withRSA|
+|**-UseMinAPILevelForNativeMultiDex**| (Nem kötelező) Ez a jelző használatával növelheti a forrás Android alkalmazás minimális API-szintet pedig 21. Ez a jelző megerősítő, előfordulhat, hogy az alkalmazás telepítéséhez, akik fogja korlátozni fogja kérni. Felhasználók a megerősítési párbeszédpanelen hagyja ki a paraméter hozzáfűzésével "-megerősítése: $false", a PowerShell-parancsot. A jelző csak az alkalmazások burkolása sikerült DEX túlcsordulás hibák miatt sikertelen minimális API-t < 21-ügyfelek által használható. | |
 | **&lt;CommonParameters&gt;** | (Nem kötelező) A parancs támogatja gyakran használt PowerShell-paramétereket, mint például a verbose, a debug stb. |
 
 

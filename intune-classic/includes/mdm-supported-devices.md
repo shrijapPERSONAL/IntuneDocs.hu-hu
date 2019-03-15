@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 472a1e5192b9054c9d89a7d4240750824a3a8b0a
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "36914916"
+---
 
 
 ### <a name="apple"></a>Apple
@@ -20,6 +28,6 @@
 - Google Android 4.0 és újabb verziók (beleértve a Samsung KNOX Standard 4.0-s és újabb verzióit is)*
 - Google Android for Work ([követelmények](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window"))
 
-A következő Samsung Galaxy Ace-modelleket az Intune nem képes Samsung KNOX Standard-eszközként kezelni: SM-G313HU, SM-G313HY, SM-G313M, SM-G313MY és SM-G313U. Ezeket az eszközöket a rendszer szabványos Android-eszközökként kezeli. További tájékoztatást a [Samsung KNOX](https://www.samsungknox.com/en) webhelyén talál.
+* A következő Samsung Galaxy Ace modelleket az Intune által nem kezelhető, Samsung KNOX Standard-eszközökön: SM-G313HU, SM-G313HY, SM-G313M, SM-G313MY és SM-G313U. Ezeket az eszközöket a rendszer szabványos Android-eszközökként kezeli. További tájékoztatást a [Samsung KNOX](https://www.samsungknox.com/en) webhelyén talál.
 
 Az eszközök és a felügyeleti metódusok teljes listája [Az Intune által támogatott eszközök](/intune/supported-devices-browsers#intune-supported-devices) című cikkben található.

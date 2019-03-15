@@ -18,11 +18,11 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9bdb3e5c79b348b323df129c2dec4c02af596215
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 85856e77fc8ebbd4054ef819a9110e0fa258ced3
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55844547"
 ---
 # <a name="using-your-windows-device-with-intune-company-portal"></a>Windows-eszköz használata az Intune Céges portállal
@@ -46,7 +46,7 @@ A Céges portál jelenleg a Windows alábbi verzióit futtató eszközöket tám
 A Céges portál néhány további Windows-verziót is támogat; ilyen például a [Windows 10 Holographic](https://www.microsoft.com/hololens). Ezekre a verziókra azonban ebben a cikkben nem térek ki, mert nagyon speciális célokat szolgálnak.
 
 ## <a name="set-up-your-device-in-the-company-portal"></a>Az eszköz beállítása a Céges portálon
-- [A Windows rendszerű eszközöm felügyelete a Céges portálon](enroll-your-device-in-intune-windows.md)
+- [A Windows rendszerű eszközöm felügyelete a Céges portálon](windows-enrollment-company-portal.md)  
 - [Mit jelent az eszközöm *felügyelet* alá vonása?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 - [Milyen adatokhoz férhet hozzá a munkahelyem az eszközömön?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 - [Az eszközöm titkosítása](encrypt-your-device-windows.md)

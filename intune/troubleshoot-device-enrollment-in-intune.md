@@ -18,11 +18,11 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 32f167def5e96061b0d69665c2c5b81a29d03389
-ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
+ms.openlocfilehash: add5ee699b652aacfa3e3b2bfd089905a881fe11
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/06/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57461362"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Eszközök regisztrálásával kapcsolatos problémák elhárítása az Intune-ban
@@ -226,7 +226,7 @@ Ha a 2. megoldás nem működik, kérje a felhasználókat a következő lépés
 
 **1. megoldás**:
 
-Előfordulhat, hogy a felhasználó [Az eszközhöz hiányzik egy szükséges tanúsítvány](/intune-user-help/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator) című témakörben leírt útmutatás alapján be tudja szerezni a hiányzó tanúsítványt. Ha a hiba továbbra is fennáll, próbálkozzon a 2. megoldással.
+Előfordulhat, hogy a felhasználó [Az eszközhöz hiányzik egy szükséges tanúsítvány](/intune-user-help/your-device-is-missing-a-required-certificate-android) című témakörben leírt útmutatás alapján be tudja szerezni a hiányzó tanúsítványt. Ha a hiba továbbra is fennáll, próbálkozzon a 2. megoldással.
 
 **2. megoldás**:
 

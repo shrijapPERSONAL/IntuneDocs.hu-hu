@@ -17,11 +17,11 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1c0118a45478980e008613bbc12ccce9f2f20c3
-ms.sourcegitcommit: 9a4c5b6c2ce511edaeace25426a23f180cb71e15
+ms.openlocfilehash: 8625eddaa3c6223767c7c93022275b028b4a145b
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57566556"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Az Azure AD használata az Intune API-k elérésére a Microsoft Graphban
@@ -148,13 +148,13 @@ __Felhasználót érintő távoli műveletek végzése Microsoft Intune-eszköz�
 __Microsoft Intune-eszközök olvasása és írás rájuk__ | [DeviceManagementManagedDevices.ReadWrite.All](#mgd-rw)
 __Microsoft Intune-eszközök olvasása__ | [DeviceManagementManagedDevices.Read.All](#mgd-ro)
 __Microsoft Intune RBAC beállításainak olvasása és írása__ | [DeviceManagementRBAC.ReadWrite.All](#rac-rw)
-__Microsoft Intune RBAC beállításainak olvasása__ | [DeviceManagementRBAC.Read.All](#rac=ro)
+__Microsoft Intune RBAC beállításainak olvasása__ | DeviceManagementRBAC.Read.All
 __Microsoft Intune-alkalmazások olvasása és írás rájuk__ | [DeviceManagementApps.ReadWrite.All](#app-rw)
 __Microsoft Intune-alkalmazások olvasása__ | [DeviceManagementApps.Read.All](#app-ro)
-__Microsoft Intune-beli eszközkonfiguráció és szabályzatok olvasása és írása__ | [DeviceManagementConfiguration.ReadWrite.All](#cfg-rw)
+__Microsoft Intune-beli eszközkonfiguráció és szabályzatok olvasása és írása__ | DeviceManagementConfiguration.ReadWrite.All
 __Microsoft Intune-beli eszközkonfiguráció és szabályzatok olvasása__ | [DeviceManagementConfiguration.Read.All](#cfg-ro)
 __Microsoft Intune-konfiguráció olvasása és írása__ | [DeviceManagementServiceConfig.ReadWrite.All](#svc-rw)
-__Microsoft Intune-konfiguráció olvasása__ | [DeviceManagementServiceConfig.Read.All](#svc-ra)
+__Microsoft Intune-konfiguráció olvasása__ | DeviceManagementServiceConfig.Read.All
 
 A táblázat az Azure Portalon látható sorrendben listázza a beállításokat. Az alábbi szakaszokban a hatókörök betűrendes listája és a hozzájuk tartozó leírás olvasható.
 

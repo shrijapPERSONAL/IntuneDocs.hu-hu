@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/27/2019
+ms.date: 03/12/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
-ms.openlocfilehash: 3c10843e0ba0250da6bfce64fbc87b8ecbde7bb1
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: 45d91766b3bbdcdd3528afd80d74a56a94e88a2c
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57399047"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Kézbesítésoptimalizálási beállításait a Microsoft Intune-ban
@@ -58,7 +58,7 @@ A profil jön létre, és megjelenik a listában. Ezután [rendelje hozzá a pro
 
 ## <a name="move-existing-update-rings-to-delivery-optimization"></a>Helyezze át meglévő frissítési körök kézbesítésoptimalizálás
 
-**Kézbesítésoptimalizálás** beállítások csere **szoftverfrissítések – a Windows 10-es frissítési körök**. A meglévő frissítési körök használatával könnyedén módosítható a **kézbesítésoptimalizálás** beállításait. Ehhez tegye a következőket:
+**Kézbesítésoptimalizálás** beállítások csere **szoftverfrissítések – a Windows 10-es frissítési körök**. A meglévő frissítési körök használatával könnyedén módosítható a **kézbesítésoptimalizálás** beállításait. Karbantartása ugyanazokat a beállításokat, amikor kézbesítési optimalizálás profilt hoz létre, használja ugyanazt *kézbesítésoptimalizálásos letöltési mód* majd állítsa be ugyanazokat a beállításokat, akkor már használja. Azonban lehet váltani, konfigurálja újra a kézbesítésoptimalizálási beállításait előnyeit a teljes tartomány hozzáadása a beállításokat, amelyeket a kézbesítésoptimalizálás profilt kezelheti.
 
 1. Kézbesítési optimalizálás konfigurációs profil létrehozása:
 
@@ -69,7 +69,7 @@ A profil jön létre, és megjelenik a listában. Ezután [rendelje hozzá a pro
         - **Description** (Leírás): Adja meg a profil leírását. A beállítás használata nem kötelező, de ajánlott.
         - **Platform**: Válassza ki **Windows 10 és újabb**.
         - **Profil típusa**: Válassza ki **kézbesítésoptimalizálás**.
-        - **Beállítások**: A **kézbesítésoptimalizálásos letöltési mód**, válassza ki a meglévő szoftverek frissítési kör által használt azonos módot. A választható lehetőségek:
+        - **Beállítások**: A **kézbesítésoptimalizálásos letöltési mód**, hacsak nem módosíthatja a beállításokat, az eszközök a alkalmazni szeretné a meglévő szoftverek frissítési kör által használt azonos módot válassza. A választható lehetőségek:
             - **Nincs konfigurálva**
             - **Csak HTTP, nincs társviszony-létesítés**
             - **A HTTP az ugyanazon NAT mögötti társviszony-létesítéssel kombinálva**
@@ -78,7 +78,7 @@ A profil jön létre, és megjelenik a listában. Ezután [rendelje hozzá a pro
             - **Egyszerű letöltési mód társviszony létesítés nélkül**
             - **Megkerülő mód**
     3. Konfigurálja az esetleges egyéb beállításokat, előfordulhat, hogy szeretné kezelni.
-2. Az új profil hozzárendelése eszközök és a felhasználók, a meglévő szoftverek frissítési kört. [A profil hozzárendelése](device-profile-assign.md) felsorolja azokat a lépéseket.
+1. Az új profil hozzárendelése eszközök és a felhasználók, a meglévő szoftverek frissítési kört. [A profil hozzárendelése](device-profile-assign.md) felsorolja azokat a lépéseket.
 
 3. A meglévő szoftverek gyűrű konfigurációjának törlése:
     1. Az Intune-ban nyissa meg **szoftverfrissítések** > Windows 10-es frissítési körök.
