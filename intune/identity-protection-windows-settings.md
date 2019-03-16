@@ -2,10 +2,10 @@
 title: Windows Hello for Business beállításai a Microsoft Intune – Azure |} A Microsoft Docs
 description: Megjelenítheti az összes PIN-kód, biometrikus, és az identity protection profilban hamisításszűrés beállítások használata és konfigurálása Windows Hello for Business a Microsoft Intune-ban Windows 10-eszközök listáját.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 03/14/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 51569b5cb6faac6c265734b46f1efbb8407e0d3c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.reviewer: shpate
+ms.openlocfilehash: 308a730737612f39863160952409ab92670f9153
+ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566216"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "57991058"
 ---
-# <a name="windows-10-and-newer-device-settings-to-enable-windows-hello-for-business-in-intune"></a>A Windows 10 (és újabb) eszközbeállítások engedélyezése Windows Hello for Business az Intune-ban
+# <a name="windows-10-device-settings-to-enable-windows-hello-for-business-in-intune"></a>Windows 10-es eszközbeállítások engedélyezése Windows Hello for Business az Intune-ban
 
-Ez a cikk felsorolja és ismerteti a Windows Hello for Business beállításaival szabályozhatja az Intune-ban Windows 10 rendszerű eszközökön. A mobileszköz-felügyelet (MDM) megoldás részeként használja ezeket a beállításokat, jelentkezzen be a PIN-kód vagy ujjlenyomat használatával és egyéb.
+Ez a cikk felsorolja és ismerteti a Windows Hello for Business beállításaival szabályozhatja az Intune-ban Windows 10 rendszerű eszközökön. Intune-rendszergazdák konfigurálni, és ezek a beállítások hozzárendelése Windows 10-eszközök a mobileszköz-felügyelet (MDM) megoldás részeként. 
 
-Intune-rendszergazdák hozzon létre, és ezek a beállítások hozzárendelése Windows 10-es és újabb rendszerű eszközök.
+Ezeket a beállításokat a további információt talál [konfigurálása Windows Hello for Business szabályzatbeállításai](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings), a vállalati WIndows Hello dokumentációjában.
+
 
 Tudjon meg többet a Windows Hello-profilok az Intune-ban, tekintse meg [identity protection konfigurálása](identity-protection-configure.md).
 
@@ -83,8 +85,7 @@ Tudjon meg többet a Windows Hello-profilok az Intune-ban, tekintse meg [identit
 - **A tanúsítvány a helyi erőforrások**: 
 
   - **Engedélyezése**: Engedélyezi a Vállalati Windows Hello számára, hogy tanúsítványokkal végezzen hitelesítést a helyszíni erőforrásokban.
-  - **Nincs konfigurálva** (alapértelmezett): Megakadályozz, hogy a Vállalati Windows Hello tanúsítványokkal végezzen hitelesítést a helyszíni erőforrásokban.  
-
+  - **Nincs konfigurálva** (alapértelmezett): Megakadályozz, hogy a Vállalati Windows Hello tanúsítványokkal végezzen hitelesítést a helyszíni erőforrásokban. Ehelyett használja az eszközök a alapértelmezett viselkedését *megbízható kulcs a helyszíni hitelesítési*. További információkért lásd: [felhasználói tanúsítvány a helyszíni hitelesítéshez](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings#use-certificate-for-on-premises-authentication) a Windows Hello dokumentációjában.  
 ## <a name="next-steps"></a>További lépések
 
 [Rendelje hozzá a profilt](device-profile-assign.md), és [kövesse nyomon az állapotát](device-profile-monitor.md).

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e2edb7f3f09b29a9916a52bd97fb7cfbba87226d
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 0a7ccc2da5fd99c3c72c8c9beb765f292e896eee
+ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566752"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "57991181"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>A Microsoft Intune App SDK Androidon – útmutató fejlesztőknek
 
@@ -1666,10 +1666,6 @@ LOGGER.info("Found value " + valueToUse);
 ### <a name="notification"></a>Értesítés
 Az alkalmazás konfigurációja egy új értesítéstípust ad hozzá:
 * **REFRESH_APP_CONFIG**: Ezt az értesítést a `MAMUserNotification` és tájékoztatja az alkalmazást, hogy új alkalmazáskonfigurációs adatok érhető el.
-
-További információ a Graph API funkcióiról: [Graph API-segédlet](https://developer.microsoft.com/graph/docs/concepts/overview). <br>
-
-A célzott MAM-alkalmazáskonfigurációs szabályzat Android rendszerben való létrehozásáról lásd [A Microsoft Intune alkalmazáskonfigurációs szabályzatainak használata Android rendszerben](https://docs.microsoft.com/intune/app-configuration-policies-use-android) célzott MAM-alkalmazáskonfigurációról szóló szakaszát.
 
 ### <a name="further-reading"></a>További információk
 További információ a Graph API funkcióiról: [Graph API-segédlet](https://developer.microsoft.com/graph/docs/concepts/overview). <br>

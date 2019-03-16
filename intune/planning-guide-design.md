@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 268f6d7aab273efdc9bd718861b8ea67cd281c97
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 97e815914ad96b7c0db14228c76488a6147c0b46
+ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57393262"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "57991168"
 ---
 # <a name="create-a-design"></a>Terv létrehozása
 
@@ -110,6 +110,10 @@ A saját Intune-tervének kidolgozásához [letöltheti a fenti táblázat sablo
 ## <a name="choose-an-intune-deployment-option"></a>Intune-telepítési lehetőség választása
 
 Az Intune kétféle telepítési lehetőséget kínál, ezek az önálló és a hibrid. Önálló telepítés esetén az Intune szolgáltatás a felhőben fut, hibrid telepítés esetén pedig az Intune integrálva van a System Center Configuration Managerrel. Ez az útmutató elsősorban az önálló telepítésről szól. [Döntse el, melyik lehetőség felel meg az üzleti követelményeknek](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
+
+> [!Important]
+>Új hibrid MDM-ügyfelek bevezetésének elavult. További információkért lásd: a [válthatnak a hibrid mobileszköz-kezelés az Intune-bA az Azure-ban](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) blogbejegyzést.
+
 
 ## <a name="intune-tenant-location"></a>Az Intune-bérlő földrajzi helye
 

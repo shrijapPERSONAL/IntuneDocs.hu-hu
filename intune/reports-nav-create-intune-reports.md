@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b43323d19d79a7ce6bb6e8da9a3eb87c307e968
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: c3112683d44b7c4d4a3e9d1bccc6fb8c06450600
+ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57564890"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "57991042"
 ---
 # <a name="use-the-microsoft-intune-data-warehouse"></a>A Microsoft Intune-adattárház használata
 
@@ -43,7 +43,7 @@ Az adattárház az Azure Portalnál több információt nyújt a mobilkörnyezet
   -  OData-szabványt használó adatmodell
 
 > [!Note]
-> Ha hibrid mobileszköz-kezelést (MDM) használ a System Center Configuration Managerrel és a Microsoft Intune-nal, az adatokat az SCCM-ből kell lekérnie. Az Intune-adattárház csak az Intune-adatokat tartalmazza. Az egyéni jelentésekhez használhatja az SCCM Power BI-irányítópultot. További információ: „[A Power BI-megoldássablon bejelentése a System Center Configuration Managerhez]( https://powerbi.microsoft.com/blog/sccm-solution-template)”, valamint „[Power BI-tartalom a Dynamics 365-höz](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page).”
+> Ha Ön egy közös felügyelt mobil Eszközkezelés (MDM) a System Center Configuration Manager és a Microsoft Intune, kell lekérni az adatokat a Configuration Manager alkalmazásból. Az Intune-adattárház csak az Intune-adatokat tartalmazza. Egy Configuration Manager Power BI-irányítópult az egyéni jelentésekhez használhatja. További információ: „[A Power BI-megoldássablon bejelentése a System Center Configuration Managerhez]( https://powerbi.microsoft.com/blog/sccm-solution-template)”, valamint „[Power BI-tartalom a Dynamics 365-höz](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page).”
 
 > [!Important]  
 > Most már használható az Intune Adattárház v1.0-ás verziója az  `api-version=v1.0` lekérdezésparaméter megadásával. Az Adattárház gyűjteményeinek frissítései hozzáadó jellegűek, és nem okoznak fennakadást a meglévő forgatókönyvekben.<br><br>

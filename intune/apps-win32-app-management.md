@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7aa1901a1b9159c2e8ab7398b70f5693708f0657
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 75137c4a9f58e1b851435cd7319d84a47478b8af
+ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57682674"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "57991171"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Önálló Intune - Win32-Alkalmazáskezelés
 
@@ -33,7 +33,7 @@ Az Intune különálló verziója több lehetőséget biztosít a Win32-alkalmaz
 
 - A Windows 10 1607-es verzió vagy újabb (vállalati, Pro és Education verziók)
 - A Windows 10-ügyfélnek: 
-    - Azure Active Directory- (ADD) vagy hibrid Azure Active Directory-csatlakozással kell rendelkeznie, valamint
+    - az Azure Active Directory (AAD) csatlakoztatott vagy [Azure Active Directory hibrid](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) (nyit meg egy másik Docs-webhely), és
     - regisztrálva kell lennie az Intune-ban (MDM által felügyelt)
 - Windows-alkalmazás mérete 8 GB a alkalmazásonként maximumon
 
@@ -257,7 +257,7 @@ Az alábbi képen tájékoztatja a végfelhasználót, hogy az eszköz alkalmaz�
 Ha szükséges, bemutató végfelhasználói bejelentési értesítések egy alkalmazás-hozzárendelés tilthatja le. Az Intune-ból, válassza ki a **ügyfélalkalmazás** > **alkalmazások** > Válassza ki az alkalmazást > **Assignemnts** > **csoportokhozközétartozik**. 
 
 ## <a name="troubleshoot-win32-app-issues"></a>A Win32-alkalmazások hibáinak elhárítása
-Az ügynöknaplók általában a következő helyen érhetők el az ügyfélgépen: `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. A `CMTrace.exe` segítségével megtekintheti ezeket a naplófájlokat. A *CMTrace.exe* az [SCCM-ügyféleszközök](https://docs.microsoft.com/sccm/core/support/tools) közül tölthető le. 
+Az ügynöknaplók általában a következő helyen érhetők el az ügyfélgépen: `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. A `CMTrace.exe` segítségével megtekintheti ezeket a naplófájlokat. *CMTrace.exe* letölthető [Configuration Manager Client Tools](https://docs.microsoft.com/sccm/core/support/tools). 
 
 ![Képernyőkép az ügynököt a naplók az ügyfélszámítógépen](./media/apps-win32-app-10.png)    
 

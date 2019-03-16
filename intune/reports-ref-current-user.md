@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e6a543e835e67c55be4d62cb0290a096d3a65ee
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 1b2aaab2f66b2a30c354517278ab0e764f1128ee
+ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565774"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "57990965"
 ---
 # <a name="reference-for-current-user-entity"></a>Aktuális felhasználó típusú entitás referenciája
 
-Az **Aktuális felhasználó** kategória az adatmodellbeli felhasználói tulajdonságokat tartalmazza. Az **Aktuális felhasználó** entitásgyűjtemény a jelenleg aktív felhasználókra korlátozódik. Az entitás tartalmazza az Azure Active Directory összes olyan felhasználóját, akikhez licenc van hozzárendelve. Ez lehet Intune-, Hybrid-, vagy Microsoft Office 365-licenc. Az eltávolított felhasználók nem jelennek meg az Aktuális felhasználó gyűjteményben. A felhasználói állapotváltozások előzményeit tartalmazó gyűjteményhez lásd: [Felhasználó típusú entitás referenciája](reports-ref-user.md).
+Az **Aktuális felhasználó** kategória az adatmodellbeli felhasználói tulajdonságokat tartalmazza. Az **Aktuális felhasználó** entitásgyűjtemény a jelenleg aktív felhasználókra korlátozódik. Az entitás tartalmazza az Azure Active Directory összes olyan felhasználóját, akikhez licenc van hozzárendelve. Ez lehet Intune-licencet, közösen kezelt licenc vagy egy Microsoft Office 365-licenc. Az eltávolított felhasználók nem jelennek meg az Aktuális felhasználó gyűjteményben. A felhasználói állapotváltozások előzményeit tartalmazó gyűjteményhez lásd: [Felhasználó típusú entitás referenciája](reports-ref-user.md).
 
 
 ## <a name="current-user"></a>Aktuális felhasználó

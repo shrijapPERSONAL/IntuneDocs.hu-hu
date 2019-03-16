@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3457a8314136bac864324dc9baa72ca586bdb7a3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 41573eb05039dceeef45ba3cf04e890603a90362
+ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460895"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "57991151"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Mobileszköz-felügyeleti szolgáltató megadása
 
@@ -35,10 +35,10 @@ A lehetséges konfigurációk a következők:
 
 - **Önálló Intune** – kizárólag felhőalapú felügyelet használata, amelyet az Azure Portal segítségével konfigurálhat. Az Intune-ban elérhető összes lehetőség a rendelkezésére áll. [MDM-szolgáltató beállítása az Intune-konzolon](#set-mdm-authority-to-intune).
 
-- **Hibrid Intune** – az Intune felhőalapú megoldásainak integrációja a System Center Configuration Manager alkalmazásba. Az Intune-t a Configuration Manager konzolja segítségével konfigurálhatja. [MDM-szolgáltató beállítása a Configuration Managerben](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-intune-subscription). 
+- **Megosztott kezelés Intune** -integrációja az Intune felhőalapú megoldás a System Center Configuration Managerrel Windows 10 rendszerű eszközökhöz. Az Intune-t a Configuration Manager konzolja segítségével konfigurálhatja. [Eszközök automatikus regisztrációjának beállítása az Intune-ban](https://docs.microsoft.com/sccm/comanage/tutorial-co-manage-clients#configure-auto-enrollment-of-devices-to-intune). 
 
     > [!Important]
-    >Az új hibrid MDM-ügyfelek felvételének lehetősége egy hamarosan megjelenő kiadásban meg fog szűnni. További információkért lásd: a [válthatnak a hibrid mobileszköz-kezelés az Intune-bA az Azure-ban](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) blogbejegyzést.
+    >Új hibrid MDM-ügyfelek bevezetésének elavult. További információkért lásd: a [válthatnak a hibrid mobileszköz-kezelés az Intune-bA az Azure-ban](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) blogbejegyzést.
 
 - **Mobileszköz-felügyelet az Office 365 használatával** – Az Office 365 és az Intune felhőalapú megoldásának integrációja. Az Intune a Microsoft 365 felügyeleti központban konfigurálhatja. Az önálló Intune-nal elérhető funkciók egy részét tartalmazza. Az MDM-szolgáltató beállítása a Microsoft 365 felügyeleti központban.
 
