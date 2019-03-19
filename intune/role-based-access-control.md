@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a07c87ca2bfe6729e3af83badb4e87e8cd2a8fb2
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d1c7f7a2ed1d87d23d01b51ff928c906bc32541a
+ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57394835"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58173984"
 ---
-# <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Szerepköralapú hozzáférés-vezérlés (RBAC) a Microsoft Intune-nal
+# <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Szerepköralapú hozzáférés-vezérlés (RBAC) a Microsoft Intune-nal
 
 Az RBAC lehetővé teszi annak szabályozását, hogy a cégen belül ki hajthat végre különböző Intune-feladatokat, és kikre vonatkozhatnak az adott feladatok. A beépített szerepköröket bizonyos gyakori Intune-os helyzetekben használhatja, de saját szerepköröket is létrehozhat. Egy szerepkört a következők határoznak meg:
 
@@ -46,6 +46,7 @@ Az új Azure Portaltól kezdődően az **Azure Active Directory (Azure AD)** ké
 
     > [!IMPORTANT]
     > Az Intune-beli szolgáltatás-rendszergazdai szerepkör nem teszi lehetővé az Azure AD feltételes hozzáférési beállításainak felügyeletét.
+    >
     > Az Intune-szerepkörhöz hozzárendelni, a felhasználó Intune-licenccel kell rendelkeznie.
 
     > [!TIP]

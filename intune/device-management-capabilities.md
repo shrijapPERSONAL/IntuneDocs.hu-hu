@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2796ac00342317454d67a2581c2899d0a88225ea
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 35f45b239567750f9f633e42de7fd4dbd5f090c1
+ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57391164"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58163439"
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>A Microsoft Intune regisztrált eszközök kezelésével kapcsolatos képességei
 
@@ -43,7 +43,7 @@ A felhasználók hozzáférést kapnak a vállalati portálhoz, és ennek segít
 |--------------|-----------|--------------------|
 |Konfigurációs szabályzatok<br><br>Egyéni házirendek| Lehetővé teszi számos beállítás és funkció kezelését a szervezethez tartozó mobileszközökön. Például megkövetelheti jelszó használatát, korlátozhatja a sikertelen bejelentkezési kísérletek számát, megadhatja, hogy a képernyő hány perc után zárolódjon, beállíthatja a jelszó lejárati idejét, és letilthatja a korábban használt jelszavak ismételt használatát. Szabályozhatja továbbá a hardveres és szoftveres funkcióknak (például az eszköz kamerájának és a webböngészőnek) a használatát.<br><br>Egyéni szabályzat használata, amikor a konfigurációs szabályzatok nem tartalmazzák a kívánt beállítást. iOS-eszközök esetén importálhatja az Apple Configurator eszközből exportált beállításokat. Más eszközök esetében az Open Mobile Alliance Uniform Resource Identifier (OMA-URI) beállítások segítségével konfigurálhatja a beállításokat és a szolgáltatásokat az eszközön.|[Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-szabályzatok használatával](device-compliance-get-started.md)|
 |Távoli törlés, távoli zárolás és PIN-kód alaphelyzetbe állítása|Az eszköz elvesztése vagy eltulajdonítása esetén törli a bizalmas adatokat. Távolról zárolhatja például az eszközt, visszaállíthatja a gyári beállításokat vagy törölheti csak a vállalati adatokat.<br><br>Ha a felhasználók nem tudnak hozzáférni egy eszközhöz, alaphelyzetbe állíthatja a PIN-kódokat, zárolhatja az eltűnt vagy ellopott eszközöket, vagy törölhet róluk minden adatot.|Az adatok védelme érdekében [távoli zárolás](device-remote-lock.md) és [PIN-kód alaphelyzetbe állítása](device-passcode-reset.md)|
-|Teljes képernyős mód|Lehetővé teszi a mobileszközök bizonyos funkciói, például a képernyőfelvétel-készítés és a kikapcsolás zárolását. Emellett az eszközt egyetlen meghatározott alkalmazás futtatására korlátozhatja.|[iOS-eszközök konfigurációs házirendjének beállításai a Microsoft Intune-ban](device-restrictions-ios.md)|
+|Teljes képernyős mód|Lehetővé teszi a mobileszközök bizonyos funkciói, például a képernyőfelvétel-készítés és a kikapcsolás zárolását. Emellett az eszközt egyetlen meghatározott alkalmazás futtatására korlátozhatja. |[iOS-eszközök konfigurációs házirendjének beállításai a Microsoft Intune-ban](device-restrictions-ios.md)|
 
 ## <a name="app-management"></a>Alkalmazáskezelés
 

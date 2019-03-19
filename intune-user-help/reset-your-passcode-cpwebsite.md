@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e973e18a79c18af6b201194fc1a6534da5fa38a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: fd05c600553ec23085b03eb560e0e736c9d7a764
+ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55838036"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58163428"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Az eszköz jelszavának alaphelyzetbe állítása a Vállalati portál webhelyén
 
@@ -32,7 +32,7 @@ Ha elveszíti egy eszköz PIN-kódját vagy jelszavát, a [Céges portál webhel
 Vállalat által birtokolt eszköz használata esetén lehet, hogy nem jelenik meg a jelszó alaphelyzetbe állításának lehetősége. Kérje meg a vállalat informatikai támogatási szolgálatát, hogy állítsa alaphelyzetbe a jelszót.
 
    > [!NOTE]
-   > Android 7.0-s és újabb verziók esetén az eszköz jelszava nem állítható alaphelyzetbe. Ha elfelejti a jelszót, az eszközt a gyári beállításokra kell visszaállítani. 
+   > A PIN-kód Android 7.0-s vagy újabb rendszerű eszközök esetén nem állítható alaphelyzetbe. Ha elfelejti a PIN-kódját, a gyári beállításokra kell visszaállítani az eszközt. 
 
 ## <a name="reset-your-passcode"></a>A jelszó alaphelyzetbe állítása
 

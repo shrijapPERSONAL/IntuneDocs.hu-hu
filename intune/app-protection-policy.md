@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 570cdb529221210ff08e52dbf9e2449f8b70c060
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2fc6cba2d1088ddb367d5c47da04118aa9d6fcab
+ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57399907"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58173988"
 ---
 # <a name="what-are-app-protection-policies"></a>Mik azok az alkalmazásvédelmi szabályzatok?
 
@@ -72,6 +72,8 @@ Az Intune app protection házirendek eszközplatform-támogatás igazodik a mobi
 
 A Windows-eszközök jelenleg nem támogatottak. Windows Information Protection, amely hasonló funkciókat biztosító is használhatja. További információk: [Vállalati adatok védelme a Windows információvédelemmel (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
+> [!IMPORTANT]
+> Az Intune munkahelyi portál androidos alkalmazásvédelmi szabályzatokkal fogadására szükséges az eszközön. További információkért lásd: a [Intune vállalati portál hozzáférés alkalmazásokkal kapcsolatos követelmények](end-user-mam-apps-android.md#access-apps).
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>Az alkalmazásvédelmi szabályzatok és az alkalmazásadatok védelme
 

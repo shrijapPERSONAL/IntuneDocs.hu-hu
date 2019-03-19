@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 03/18/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,14 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 828cd17c320bd13b1b7fcce6578727015be3a77b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f35adbe01b0e0a52219480c17aa5779a98f82b3b
+ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460444"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58173980"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>Az Exchange-összekötő konfigurálása az Intune-ban és az Exchange Online-ban
+> [!IMPORTANT]  
+> MC165575 hogy a megosztott, hogy azt kellene lennie eltávolítása az Exchange online-hoz az Intune-ban "Service to Service" összekötő funkció a közeljövőben egy frissítést. Azt tervezi, hogy március 2019 az összes meglévő Exchange Online-t az Intune-összekötő eltávolítása.
+>  
+>  Ez a változás kapcsolatos további információkért lásd: [emlékeztető: Meglévő Exchange Online-t az Intune összekötő eltávolítása](whats-new.md#reminder-removal-of-existing-exchange-online-to-intune-connectors-)
+
 A cikk segítségével a Microsoft Intune-t az Exchange Online-hoz vagy az új dedikált Exchange Online szolgáltatáshoz csatlakoztathatja. Annak megállapításához, hogy a dedikált Exchange Online-környezet **új** vagy **örökölt** verzió, lépjen kapcsolatba a fiókkezelővel.
 
 A **szolgáltatások közötti összekötő** használatával az Exchange ActiveSync (EAS) és az Intune által felügyelt eszközöket is egyetlen rendszergazdai konzolról felügyelheti.  Az összekötőben az Exchange Online feltételes hozzáférésének engedélyezése nem szükséges.
