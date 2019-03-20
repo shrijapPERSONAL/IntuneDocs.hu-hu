@@ -5,38 +5,38 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/13/2019
+ms.date: 03/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
-ms.reviewer: chrisgre
+ms.reviewer: demerson
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf169dbae20285b9134766323b41ea9139440d74
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 1fcfc225d9945ecfd370468e2d48b8d9d448ffac
+ms.sourcegitcommit: b085121bf1fc56b636aefe47caeabd1d4ee96ea1
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57390405"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58221497"
 ---
-# <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Az Intune helyszíni Exchange-összekötőjének telepítése az Azure-beli Microsoft Intune-ban
+# <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Állítsa be az Intune helyszíni Exchange-összekötő a Microsoft Intune-ban
+Ebben a cikkben található információk segítséget telepítse, és figyelje az Exchange Active Sync helyszíni összekötőt az Intune-hoz.  Az Intune helyszíni Exchange connector használata az [engedélyezi vagy letiltja a hozzáférést az Exchange feltételes hozzáférési szabályzatok a helyszíni postaládák](conditional-access-exchange-create.md). 
 
-Helyszíni Exchange Server-környezetben az Intune feltételes hozzáférési funkciójával engedélyezheti vagy letilthatja a helyszíni Exchange-postaládák elérését. Exchange Active Sync helyszíni összekötőkkel csatlakoztathatja az Intune-t az Exchange-szervezetéhez, és beállíthatja az Intune feltételes hozzáférési funkcióját eszközmegfelelőségi szabályzatokkal együtt. Ezután egy eszközt az Exchange-hez csatlakozni próbál, ha az Intune meghatározza, hogy az eszköz Intune-ban regisztrált és megfelelő. Az Intune-ban való regisztráció megállapításához a helyszíni Exchange-összekötő leképezi az Exchange Serverben lévő Exchange Active Sync (EAS) -rekordokat Intune-rekordokká. További információkért lásd: [Mik azok az Intune-nal feltételes hozzáférés használatának szokásos módjai?](conditional-access-intune-common-ways-use.md)
+Ha egy eszközt próbál a helyszíni Exchange-hozzáférést, az Exchange-összekötő az Exchange Active Sync (EAS) rögzíti az Exchange Server eszközök regisztrálása az Intune-nal, és az eszköz megfelelőségét a megfelelőség ellenőrzése az Intune-rekordok képezi le. Attól függően, a feltételes hozzáférési szabályzatokat az eszköz hozzáférése engedélyezett, vagy letiltva. További információkért lásd: [Mik azok az Intune-nal feltételes hozzáférés használatának szokásos módjai?](conditional-access-intune-common-ways-use.md)
 
-> [!IMPORTANT]
-> Az Intune mostantól egy előfizetésben több helyszíni Exchange-összekötőt is támogat. Ha a cége egynél több helyszíni Exchange-összekötővel rendelkezik, minden Exchange-szervezet részére külön összekötőt építhet ki.
+Az Intune támogatja a több helyszíni Exchange-összekötők előfizetésenként telepítése. Ha egynél több helyszíni Exchange-szervezethez, akkor állíthat be egy különálló összekötő minden. Azonban lehet, csak egy összekötőt használatra telepített minden egyes Exchange-szervezet. 
 
-Ha engedélyezni szeretne egy kapcsolatot, amely lehetővé teszi, hogy a Microsoft Intune kommunikáljon a helyszíni Exchange Serverrel, ennek általános lépései a következők:
+Kapcsolatot hoz létre, amely lehetővé teszi a helyszíni Exchange-kiszolgálóval való kommunikációhoz az Intune beállítása az általános lépések a következők:
 
-1.  Töltse le az Intune helyszíni Exchange-összekötőjét az Azure Portalról.
-2.  Telepítse és konfigurálja az Exchange-összekötőt a helyszíni Exchange-szervezet egyik számítógépén.
-3.  Az Exchange-kapcsolat ellenőrzése.
-4. Ismételje meg ezeket a lépéseket az összes olyan Exchange-szervezetnél, amelyet csatlakoztatni szeretne az Intune-hoz.
+1. Töltse le az Intune helyszíni Exchange-összekötő az Intune-portálon.
+2. Telepítse és konfigurálja az Exchange-összekötőt a helyszíni Exchange-szervezet egyik számítógépén.
+3. Az Exchange-kapcsolat ellenőrzése.
+4. Ismételje meg ezeket a lépéseket minden további Exchange-szervezethez, amelyhez csatlakozni az Intune-hoz.
 
 ## <a name="intune-on-premises-exchange-connector-requirements"></a>Az Intune helyszíni Exchange-összekötő követelményei
 Szüksége lesz egy fiókra az Intune-licencet az összekötővel csatlakozhat az Exchange-hez használható. A fiók van megadva, az összekötő telepítésekor.  
@@ -137,17 +137,35 @@ Miután az Exchange-összekötő létrehozta a kapcsolatot, azokat a mobileszkö
 > [!NOTE]
 > Ha telepítette a helyszíni Exchange-összekötőt, de később törli az Exchange-kapcsolatot, akkor el kell távolítania a helyszíni Exchange-összekötőt is arról a számítógépről, amelyre telepítette.
 
-## <a name="install-connectors-for-multiple-exchange-organizations"></a>Összekötők telepítése több Exchange-szervezethez
-Az Intune egy előfizetésben több helyszíni Exchange-összekötőt is támogat. Ha a bérlője több Exchange-szervezettel rendelkezik, minden Exchange-szervezet részére külön összekötőt állíthat be. Töltse le egyszer a .zip mappát, majd az előző szakasz lépéseit követve bontsa ki és futtassa a telepítőprogramot az egyes Exchange-szervezetek egyik kiszolgálóján.
 
-Az alábbi szakaszokban ismertetett magas rendelkezésre állási, figyelési és manuális szinkronizálási szolgáltatásokat a rendszer az Intune-hoz csatlakoztatott összes Exchange-szervezetnél támogatja.
+
+## <a name="install-connectors-for-multiple-exchange-organizations"></a>Összekötők telepítése több Exchange-szervezethez
+Az Intune egy előfizetésben több helyszíni Exchange-összekötőt is támogat. Több Exchange-szervezet egy bérlőt beállíthat egy összekötőt, az egyes Exchange-szervezethez, de csak egy összekötőt bármely egyetlen szervezet számára. 
+
+Ha több Exchange-szervezet csatlakozni összekötők telepít, töltse le a .zip mappát egyszer, és használja fel újra, hogy azonos töltse le az egyes összekötők telepítése. Minden további összekötő kövesse az előző szakasz kibontása és a telepítőprogramot az Exchange-szervezeten belüli kiszolgálón.
+
+A magas rendelkezésre állás figyelése és manuális szinkronizálást a következő szakaszokban ismertetett szolgáltatása támogatott az egyes Exchange-szervezethez, amely összeköti az Intune-hoz.
 
 ## <a name="on-premises-exchange-connector-high-availability-support"></a>Magas rendelkezésre állású helyszíni Exchange Connector támogatása 
-Miután az Exchange-összekötő az Exchange használatával a megadott CAS kapcsolatot hoz létre, az összekötő más CAS kiszolgálókat is képes felderíteni. Ha az elsődleges CAS elérhetetlenné válik, az összekötő átvált egy másik CAS-ra (ha elérhető), amíg az elsődleges CAS elérhetősége helyre nem áll. Ez a funkció alapértelmezés szerint be van kapcsolva. A következő eljárás használatával kapcsolhatja ki ezt a szolgáltatást:
-1. Az Exchange-összekötőt futtató kiszolgálón nyissa meg a %*ProgramData*%\Microsoft\Windows Intune Exchange Connector mappát. 
+A helyszíni Exchange connector azt jelenti, hogy az Exchange ügyfél hozzáférési kiszolgálói (CAS) az összekötő által használt elérhetetlenné kell magas rendelkezésre állású, az összekötő válthat, hogy az Exchange-szervezet egy másik CAS használandó. Maga az Exchange-összekötő nem támogatja a magas rendelkezésre állás. Ha az összekötő nem tud, nincs automatikus feladatátvétel van, és cserélje le ezt az összekötőt úgy [új összekötő telepítéséhez](#reinstall-the-on-premises-exchange-connector). 
+
+A feladatátvétel után az összekötő hoz létre sikeres kapcsolatot a megadott CAS az Exchange el az összekötő további CAS kiszolgálókat is, hogy az Exchange-szervezet deríti fel. További CAS kiszolgálókat is ismerete lehetővé teszi a feladatátvételt egy másik CAS-összekötő, ha ilyen, amíg az elsődleges CAS elérhetősége elérhetővé válik. További CAS kiszolgálókat is a felderítés alapértelmezés szerint engedélyezve van. Kikapcsolhatja a feladatátvételt, az alábbi eljárás segítségével:  
+1. A kiszolgálón, ahol az Exchange connector telepítve van-e, nyissa meg a %*ProgramData*%\Microsoft\Windows Intune Exchange Connectort. 
 2. Nyissa meg egy szövegszerkesztőben az **OnPremisesExchangeConnectorServiceConfiguration.xml** fájlt.
 3. Módosítsa az &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; értéket az &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt; értékre a funkció letiltásához.    
+ 
 
+## <a name="reinstall-the-on-premises-exchange-connector"></a>A helyszíni Exchange connector újratelepítése
+Szüksége lehet az Exchange connector újratelepítése. Egy összekötőt szeretne csatlakozni az egyes Exchange-szervezethez, akkor támogatott, ha a szervezet számára egy második összekötőt telepíti, mert az új összekötő telepítése felülírja az eredeti összekötőket.
+
+1. Lépéssorral [telepítése és konfigurálása az Intune helyszíni Exchange connector](#install-and-configure-the-intune-on-premises-exchange-connector) az új összekötő a telepítés elindításához. 
+2. Amikor a rendszer kéri, válassza ki a **cseréje** az új összekötő telepítéséhez.  
+   ![Cserélje le az összekötő konfigurációs kérése](./media/exchange-connector-install/prompt-to-replace.png)
+
+3. Továbbra is a lépéseket az előző eljárásban alkotnak, és ismét jelentkezzen be az Intune használatával.
+4. Ha az meg fog jelenni a végső képernyő, válassza ki a **Bezárás** a telepítés befejezéséhez.  
+   ![Befejezniük a telepítést](./media/exchange-connector-install/successful-reinstall.png)
+ 
 
 ## <a name="monitor-the-exchange-connector-activity"></a>Az Exchange Connector tevékenységének figyelése
 
