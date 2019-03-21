@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/04/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e6e82e24f051e64d07487d915ac6fd0848727ecf
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: acf14ea6f1b667cb631a424223a40e44a8338edd
+ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566811"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306842"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Windowsos eszközök megfelelőségi szabályzatainak hozzáadása az Intune-ban
 
@@ -125,7 +125,10 @@ Windows 8.1-es számítógépek esetén például a visszaadott verzió a **3**-
 
 - **Kódintegritás megkövetelése**: Kódintegritási szolgáltatás ellenőrzi a illesztők vagy rendszerfájlok integritását minden alkalommal, amikor azt betölti a memóriába. A kódintegritás észleli, ha az aláíratlan illesztőprogramot vagy rendszerfájlt töltődött be a kernelbe. Azt is észleli, ha egy rendszerfájlt rendszergazdai jogosultságokkal rendelkező felhasználói fiók által futtatott rosszindulatú szoftver módosul.
 
-A HAS szolgáltatás működésével kapcsolatban lásd: [Állapotigazolási CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp).
+További források:
+
+- [Állapotigazolási CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) a HAS szolgáltatás működésével kapcsolatos részleteket is tartalmaz.
+- [Támogatási. tipp: Eszközállapot-igazolási beállítások használata az Intune Eszközmegfelelőségi szabályzat részeként ](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Using-Device-Health-Attestation-Settings-as-Part-of/ba-p/282643)
 
 ### <a name="device-properties"></a>Eszköztulajdonságok
 

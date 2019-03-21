@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/04/2019
+ms.date: 03/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c377a8558b1f318b4ddad735b6368a291e34516
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2310f9720c64301a3ea25631e1e8688d88a001e4
+ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57756819"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306821"
 ---
 # <a name="in-development-for-microsoft-intune---march-2019"></a>A Microsoft Intune-hoz – március 2019 fejlesztés alatt
 
@@ -49,12 +49,6 @@ Segítség a készültségi és tervezési, ezen a lapon listák Intune felhaszn
 
 
 <!-- 1903 start-->
-
-### <a name="encryption-report-----2351538---"></a>Titkosítási jelentés  <!-- 2351538 -->
-Egy új titkosítási jelentés használható információhoz az eszközök titkosítási állapotát lesz. Eszközök TPM-verzió, titkosítási készültségi állapot, hibajelentés és még elérhető adatokat tartalmazza.  
-
-### <a name="access-bitlocker-recovery-keys-from-the-intune-portal-----2351547----"></a>A BitLocker helyreállítási kulcsok eléréséhez az Intune-portálon  <!-- 2351547  -->
-Az eszközök, ahol megtekintheti a részleteket az Azure Active Directory (AAD) BitLocker-kulcs azonosítója és a BitLocker helyreállítási kulcsok adunk hozzá egy új belépési pontot.
 
 ### <a name="scope-tags-for-app-configuration-policies---2371891---"></a>Hatókörcímkék az alkalmazáskonfigurációs szabályzatok <!--2371891 -->
 Láthatja, hogy egy hatókörcímkét hozzá alkalmazás-konfigurációs házirend, így csak is az adott hatókörcímke hozzárendelt szerepkörrel rendelkező személyek hozzáférhetnek az alkalmazáskonfigurációs szabályzat. Az alkalmazáskonfigurációs szabályzat csak a megcélzott vagy az azonos hatókörcímke hozzárendelt alkalmazásokhoz vannak rendelve.
@@ -84,7 +78,7 @@ IOS-hez készült céges portál fog frissülni, az alkalmazás regisztrációs 
 - Nyissa meg a beállítási alkalmazást a felügyeleti profil telepítésére az eszközükön.
 - Térjen vissza a céges portál alkalmazás regisztráció elvégzését.  
 
-Hogyan készítheti elő a módosítások kapcsolatos további információkért lásd: a [a Microsoft technikai Közösség post](https://techcommunity.microsoft.com/). Addig is támogatásához új iOS-regisztrációk vállalati portálon, hogy frissítettük lépéseit [iOS-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/en-us/intune/ios-enroll). Docs-módosítások után az Apple iOS-verziót 12.2 kiadások lesz élő. 
+Hogyan készítheti elő a módosítások kapcsolatos további információkért lásd: a [a Microsoft technikai Közösség post](https://aka.ms/CP_changes_iOS12). Addig is támogatásához új iOS-regisztrációk vállalati portálon, hogy frissítettük lépéseit [iOS-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/en-us/intune/ios-enroll). Doc módosítások után az Apple iOS-verziót 12.2 kiadások lesz élő. 
 
 ### <a name="support-for-additional-connectors-on-the-tenant-status-page----3617202-------"></a>A bérlő állapotának oldalon további összekötők támogatása <!-- 3617202     -->
 A bérlő állapotának oldal jelenik meg, kiegészítő jellegű összekötő, beleértve az állapotadatait *Windows Defender komplex veszélyforrások elleni védelem* (ATP) és egyéb Mobile Threat Defense-összekötők.

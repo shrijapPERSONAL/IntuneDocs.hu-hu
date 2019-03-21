@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/27/2019
+ms.date: 03/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab89676ca7a652aa317993286b8c91c0a0ed6910
-ms.sourcegitcommit: b085121bf1fc56b636aefe47caeabd1d4ee96ea1
+ms.openlocfilehash: 7e78aaf026146ae2cf531668464a7f7c644894ce
+ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58221505"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306870"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -47,6 +47,17 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Ugyanitt tal
 -->     
 
 <!-- ########################## -->
+## <a name="week-of-march-18-2019"></a>2019. március 18 hete
+
+#### <a name="encryption-report-for-windows-10-devices-in-public-preview---2351538---"></a>Titkosítási jelentés a Windows 10 rendszerű eszközökhöz (nyilvános előzetes verzió)<!-- 2351538 -->  
+
+Az új [titkosítási jelentésben (előzetes verzió)](encryption-monitor.md#encryption-report) a Windows 10 rendszerű eszközök titkosítási állapotát részleteinek megtekintéséhez. Rendelkezésre álló adatot közé tartozik az eszközök TPM-verzió, titkosítási készültségi állapot, hibajelentés és még.  
+
+#### <a name="access-bitlocker-recovery-keys-from-the-intune-portal-in-public-preview----2351547-----"></a>A BitLocker helyreállítási kulcsok elérését az Intune-portálon (a nyilvános előzetes verzió) <!-- 2351547   -->  
+
+Most már használhatja az Intune [részleteinek megtekintéséhez](encryption-monitor.md#bitlocker-recovery-keys) BitLocker-kulcs azonosítója és a BitLocker helyreállítási kulcsok az Azure Active Directoryból.
+
+
 ## <a name="week-of-february-25-2019"></a>2019. február 25 hete
 
 ### <a name="device-configuration"></a>Eszközök konfigurálása
@@ -347,7 +358,7 @@ Az Intune további eszköz területén, beleértve az alkalmazás regisztráció
 
 #### <a name="administrative-templates-are-in-public-preview-and-moved-to-their-own-configuration-profile----3322847---"></a>Felügyeleti sablonok nyilvános előzetes verzióban érhetők el, és átkerülnek a saját konfigurációs profil <!-- 3322847 -->
 
-Az Intune-ban a felügyeleti sablonok (**eszközkonfiguráció** > **felügyeleti sablonok**) jelenleg privát előzetes verzióban érhető el. Ez a frissítés:
+Az Intune-ban a felügyeleti sablonok (**eszközkonfiguráció** > **felügyeleti sablonok**) jelenleg nyilvános előzetes verzióban érhető el. Ez a frissítés:
 
 - Felügyeleti sablonok tartalmaznak körülbelül 300 beállítások, amelyek felügyelhetők az Intune-ban. Korábban ezek a beállítások csak megtalálható a Helyicsoportházirend-szerkesztő.
 - Felügyeleti sablonok nyilvános előzetes verzióban érhetők el.

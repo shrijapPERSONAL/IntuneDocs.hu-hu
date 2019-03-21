@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8de56c6fc0909ee06fa9dd22e1636694952fc799
-ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
+ms.openlocfilehash: fb49cd97e029e45d7d098ec1898fd0e27efa1132
+ms.sourcegitcommit: 4049a3aed15f2d8d21bb814410875a13f613e4ed
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58175636"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58283232"
 ---
-# <a name="deploying-apps-using-intune-on-the-gcc-high-and-dod-environments"></a>Az Intune-nal a GCC magas és a DOD környezetek alkalmazások üzembe helyezése 
+# <a name="deploying-apps-using-intune-on-the-gcc-high-and-dod-environments"></a>Az Intune-nal a GCC magas és a DoD környezetek alkalmazások üzembe helyezése 
 
-A Microsoft Intune terjesztheti az alkalmazásokat, hogy a dolgozóknak a bérlői rendszergazdák által is használt. A munkaerő számára a céges alkalmazott, az alkalmazások felhasználóinak. Az USA kormányzati közösségi (GCC) Intune-ból telepített alkalmazások számos típusú magas vagy a védelmi Minisztérium (DOD) környezetekben. Ha egy rendszergazda kell feltöltése és terjesztése egy Windows-alkalmazás szánt GCC magas vagy DOD célközönség, cikkszámokkal, harmadik féltől által létrehozott, illetve az offline alkalmazások letöltöttként a [Microsoft Store vállalatoknak](https://businessstore.microsoft.com/store), a rendszergazda választhat osztja el, mint egy [– üzletági alkalmazás](apps-add.md#app-types-in-microsoft-intune).  
+A Microsoft Intune terjesztheti az alkalmazásokat, hogy a dolgozóknak a bérlői rendszergazdák által is használt. A munkaerő számára a céges alkalmazott, az alkalmazások felhasználóinak. Nincsenek számos különböző típusú alkalmazáshoz, az Intune-ból GCC magas vagy a védelmi Minisztérium környezetekben telepíthető. Ha egy rendszergazda kell feltöltése és terjesztése egy Windows-alkalmazás szánt GCC magas vagy DoD célközönség, cikkszámokkal, harmadik féltől által létrehozott, illetve az offline alkalmazások letöltöttként a [Microsoft Store vállalatoknak](https://businessstore.microsoft.com/store), a rendszergazda választhat osztja el, mint egy [– üzletági alkalmazás](apps-add.md#app-types-in-microsoft-intune).  
 
 > [!NOTE]
 > Kereskedelmi környezetek esetén egy Bérlői rendszergazda szinkronizálhatók a Store vállalatoknak az Intune-nal azonban GCC magas és DOD-alapú környezetek esetén ez a szolgáltatás nem érhető el. Ebben a helyzetben a rendszergazdák kell üzembe helyeznie egy alkalmazást fel kell töltenie közvetlenül az Intune-hoz.  

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/11/2019
+ms.date: 03/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 996b5ea3eb3c8d8f3a95bb94fb8a77584143ae8a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2dc1136b5f47c6f695f9822dd1d7bcdbb21a22a0
+ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57395373"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306807"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Mit jelent a Mobile Threat Defense integrációja az Intune-nal?
 Intune Mobile Threat Defense külső szállítótól származó adatok integrálhatók a megfelelőségi szabályzatokról és a feltételes hozzáférési szabályok információforrásként. Ez az információ segítségével védheti a vállalati erőforrásokhoz, mint az Exchange és SharePoint-, blokkolja a hozzáférést a kitett mobileszközön.  
@@ -79,3 +79,5 @@ A vállalati erőforrásokhoz való hozzáférés védelme az eszköz-, a háló
 - [Zimperium](zimperium-mobile-threat-defense-connector.md)
 - [Pradeo](pradeo-mobile-threat-defense-connector.md)
 - [Better Mobile](better-mobile-threat-defense-connector.md)
+- A Sophos (a részleteket hamarosan elérhető)
+- Wandera (a részleteket hamarosan elérhető)
