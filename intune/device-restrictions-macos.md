@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c82224dbf1e67135a99913ed0d1144680955bd10
-ms.sourcegitcommit: 4049a3aed15f2d8d21bb814410875a13f613e4ed
+ms.openlocfilehash: 0a59c40a5f1095e832f84c4b21d553e3c5f11ed7
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58283242"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330419"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>engedélyezi, vagy korlátozhatja a funkciókat az Intune-nal macOS beállításai
 
@@ -46,7 +46,7 @@ Ezek a beállítások hozzá egy eszközkonfigurációs profilt az Intune-ban, �
   Ez a funkció az alábbiakra vonatkozik:  
   - macOS 10.13 és újabb verziók
 
-- **Késlelteti a szoftverfrissítéseket (csak felügyelt)**: Ha a beállítása **nincs konfigurálva** (alapértelmezett), szoftverfrissítések jelennek meg az eszközön, az Apple által kiadott. Például ha egy macOS-frissítést lekérdezi elérhető az Apple által egy adott dátumon, majd a frissítési természetes módon megjelenik-e az eszközön a Megjelenés dátumához körül. Kezdőérték build frissítések engedélyezettek késedelem nélkül.
+- **Késlelteti a szoftverfrissítéseket**: Ha a beállítása **nincs konfigurálva** (alapértelmezett), szoftverfrissítések jelennek meg az eszközön, az Apple által kiadott. Például ha egy macOS-frissítést lekérdezi elérhető az Apple által egy adott dátumon, majd a frissítési természetes módon megjelenik-e az eszközön a Megjelenés dátumához körül. Kezdőérték build frissítések engedélyezettek késedelem nélkül.
 
   **Engedélyezése** lehetővé teszi, hogy amikor a szoftverfrissítések jelennek meg az eszközökön, a 0 – 90 nappal késleltetés. Ez a beállítás nem szabályozza, amikor a frissítések vannak, vagy nincsenek telepítve. 
 

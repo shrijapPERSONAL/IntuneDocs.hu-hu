@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e78aaf026146ae2cf531668464a7f7c644894ce
-ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
+ms.openlocfilehash: ad4ac5a2560cf6c3d06354ca8d4e3190f1bf198b
+ms.sourcegitcommit: b0b1030017e741d92c508130447a8242d9ad7a51
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58306870"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58343016"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -57,6 +57,8 @@ Az új [titkosítási jelentésben (előzetes verzió)](encryption-monitor.md#en
 
 Most már használhatja az Intune [részleteinek megtekintéséhez](encryption-monitor.md#bitlocker-recovery-keys) BitLocker-kulcs azonosítója és a BitLocker helyreállítási kulcsok az Azure Active Directoryból.
 
+### <a name="microsoft-edge-support-for-intune-scenarios-on-ios-and-android-devices----3411007---"></a>A Microsoft Edge támogatása az iOS- és Android-eszközök Intune-forgatókönyvek <!-- 3411007 -->
+A Microsoft Edge támogatni fogják az azonos felügyeleti forgatókönyvek, az Intune Managed Browser továbbfejlesztett végfelhasználói élmény igény szerinti hozzáadásával. A Microsoft Edge vállalati Intune szabályzatai által engedélyezett funkciók kettős-Identity, app protection házirend-integráció, az Azure application proxy-integráció, és felügyelt Kedvencek és a kezdőlap parancsikonok. További információkért lásd: [Microsoft Edge támogatási](app-configuration-managed-browser.md#microsoft-edge-support).
 
 ## <a name="week-of-february-25-2019"></a>2019. február 25 hete
 

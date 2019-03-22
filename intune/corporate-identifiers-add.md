@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 74b19eb267494e231971c84db1ee8a2d270f65ae
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: cd5e3220e54c33fd545e708689403b566088bdd5
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57391192"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330430"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Eszközök azonosítása vállalati tulajdonúként
 
@@ -68,8 +68,9 @@ Ez a .csv- fájl egy szövegszerkesztőben megtekintve így jelenik meg:
 ```
 
 > [!IMPORTANT]
-> Bizonyos androidos eszközök több IMEI-számmal rendelkeznek. Az Intune regisztrált eszközönként csak egy IMEI-számot olvas be. Ha olyan IMEI-számot importál, de nem az Intune által leltározott IMEI, az eszköz akkor minősül helyett a vállalat által birtokolt eszközt. Ha egy eszközhöz több IMEI-számot importál, a leltárban nem szereplő számok **Ismeretlen** regisztrációs állapottal jelennek meg.<br>
->Azt is vegye figyelembe: Androidos sorozatszámok egyediek vagy elérhetőek lesznek a nem garantált. Egyeztessen az eszköz szállítójával arról, hogy a sorozatszám tekinthető-e megbízható eszközazonosítónak.
+> Egyes Android és IOS rendszerű eszközök több IMEI-számmal rendelkeznek. Az Intune regisztrált eszközönként csak egy IMEI-számot olvas be. Ha olyan IMEI-számot importál, de nem az Intune által leltározott IMEI, az eszköz akkor minősül helyett a vállalat által birtokolt eszközt. Ha egy eszközhöz több IMEI-számot importál, a leltárban nem szereplő számok **Ismeretlen** regisztrációs állapottal jelennek meg.<br>
+>Azt is vegye figyelembe: Sorozatszámokat tartalmazó iOS-eszközök azonosítása ajánlott formájában.
+>Androidos sorozatszámok egyediek vagy elérhetőek lesznek a nem garantált. Egyeztessen az eszköz szállítójával arról, hogy a sorozatszám tekinthető-e megbízható eszközazonosítónak.
 >Elképzelhető, hogy az a sorozatszám, amelyet az eszköz az Intune felé jelez, nem egyezik meg az eszköz Android beállítások/Névjegy (Android Settings/About) menüjében megjelenő azonosítóval. Ellenőrizze, hogy az eszköz gyártója milyen típusú sorozatszámot tüntet fel itt.
 >Ha a feltöltendő sorozatszámokból álló fájl pontokat (.) tartalmaz, a feltöltés sikertelen lesz. A pontokat tartalmazó sorozatszámok nem támogatottak.
 

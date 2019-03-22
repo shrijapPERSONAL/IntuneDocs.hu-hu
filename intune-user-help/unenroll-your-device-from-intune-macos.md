@@ -1,11 +1,11 @@
 ---
-title: macOS-eszköz regisztrációjának törlése az Intune-ból | Microsoft Docs
-description: Útmutató a macOS-eszközök Intune-regisztrációjának törléséhez
+title: Az Intune céges portál MacOS rendszerű eszköz regisztrációjának törlése |} A Microsoft Docs
+description: Munkahelyi portál macOS-eszközök regisztrációjának törlését mutatja
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/12/2018
+ms.date: 03/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,22 +18,24 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3518707aa90c3866fbf8b24936db6d781712bdb
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 19cb76df318abe84670c1a7d703e85e3b7e7539a
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55839969"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330398"
 ---
-# <a name="unenroll-your-macos-device-from-intune"></a>macOS-eszköz regisztrációjának törlése az Intune-ból
+# <a name="unenroll-your-macos-device-from-company-portal"></a>Az céges portál MacOS rendszerű eszköz regisztrációjának törlése
 
-Amikor törli a macOS-eszköz Intune-regisztrációját, az többé már nem fér hozzá a céges erőforrásokhoz.
+Törlés a macOS-eszköz Intune-ból, az eszköz már nem hozzáférhet a vállalati erőforrásokhoz.
 
 Kövesse az alábbi lépéseket a macOS-eszköz felügyelet alól való kivonásához:
 
-1.  A Vállalati portál alkalmazás **Eszközök**csoportjában válassza ki azt az eszközt, amelynek a regisztrációját törölni szeretné.
+1.  Jelentkezzen be a munkahelyi portál macOS-hez.
+2.  Lépjen a **eszközök** , és válassza ki az eszközt, amelynek regisztrációját törölni szeretné.
 
-2.  Kattintson az **Eltávolítás** > **Eltávolítás** lehetőségre.
+3.  Válassza ki a három pont menü ikon > **eltávolítása**.
+4.  Megjelenik egy megerősítő üzenet. Válassza ki **eltávolítása** az eszköz regisztrációjának törlése. 
 
 Az eszköz regisztrációjának Intune-ból való törlésekor a következők történnek:
 

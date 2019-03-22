@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d68b5c9bce1f846357330aaff7e93019d8535375
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 704abe5e03410b52d54c7729e1832e527ae4dfb6
+ms.sourcegitcommit: b0b1030017e741d92c508130447a8242d9ad7a51
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397228"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58342979"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>A csoportházirend-beállítások konfigurálása a Microsoft Intune-ban Windows 10-sablonok használatával
 
@@ -32,9 +32,6 @@ Ez a feladat használatával hajthatja végre **felügyeleti sablonok** Microsof
 **Felügyeleti sablonok** beépített Intune-ba, és nem igényel minden testre szabott elem, beleértve az OMA-URI-val. A mobileszköz-felügyelet (MDM) megoldás részeként használja ezeket a sablon beállításokat-nyújtani a Windows 10 rendszerű eszközök kezelése.
 
 Ez a cikk felsorolja azokat a lépéseket a Windows 10-es eszközök sablon létrehozásához, és bemutatja, hogyan szűrheti a rendelkezésre álló beállítások a Microsoft Intune-ban. A sablon létrehozásakor egy eszközkonfigurációs profilt hoz létre. Ezután rendelje hozzá, vagy a szervezetében üzembe helyezi ezt a profilt a Windows 10-eszközökre.
-
-> [!NOTE]
-> Felügyeleti sablonok önálló eszközön támogatást élveznek. Azok jelenleg nem támogatottak a System Center Configuration Manager (SCCM) közösen kezelt eszközök.
 
 ## <a name="create-a-template"></a>Sablon létrehozása
 

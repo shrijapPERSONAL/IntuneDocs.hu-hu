@@ -1,11 +1,11 @@
 ---
-title: Munkahelyi erőforrás-hozzáférési problémák megoldása | Microsoft Docs
-description: A Microsoft Intune hiba- és állapotkódjai segítenek az erőforrás-hozzáférési problémák megoldásában.
+title: Hiba- és állapotkódok beli Microsoft Intune - ban |} A Microsoft Docs
+description: Az MDM által felügyelt eszközök, Microsoft Intune-ban hozzáférhetne a vállalati erőforrásokhoz, hibák, az iOS-eszközökön és OMA válasz hibák, tekintse meg a hibákat, állapotkód:, leírások és megoldások listáját.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/08/2018
+ms.date: 03/20/2019
 ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ebb311eab93abd66f6a23e58737573622b68f3e8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2e4d2b940a0079794c5b17e8d1c1900f630d14cd
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461498"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330478"
 ---
-# <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Munkahelyi erőforrás-hozzáférési problémák megoldása a Microsoft Intune-nal
+# <a name="common-error-codes-and-descriptions-in-microsoft-intune"></a>Gyakori hibakódok és leírások a Microsoft Intune-ban
 
-A témakörben található információkkal háríthatja el a problémákat, amikor egy Microsoft Intune-művelet hibakódot ad vissza.
+Ez a cikk gyakori hibák, állapotkódok, leírása és lehetséges megoldásokat sorolja fel, ha munkahelye erőforrásainak elérése. Ezen információk használatával hozzáférési hibák elhárításához, ha a Microsoft Intune-nal.
 
-Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kérhet támogatást az Intune-hoz](get-support.md) című témakörben talál további részleteket a segítségkéréshez.
+Ha Ön támogatásra van szüksége segítségre, tekintse meg [kérhet támogatást a Microsoft Intune](get-support.md).
 
 ## <a name="status-codes-for-mdm-managed-windows-devices"></a>Az MDM által felügyelt Windows-eszközök állapotkódjai
 
@@ -385,5 +385,6 @@ Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kér
 |-2016345912|0x87D100C8|A SyncML-parancs sikeresen végrehajtva.|
 |-2016346011|0x87D10065|A megadott SyncML-parancs végrehajtása folyamatban van, de még nem fejeződött be.|
 
-### <a name="next-steps"></a>További lépések
-Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](get-support.md) című témakörben leírtak szerint.
+## <a name="next-steps"></a>További lépések
+
+Microsoft Support [kérhet támogatást a Microsoft Intune](get-support.md).

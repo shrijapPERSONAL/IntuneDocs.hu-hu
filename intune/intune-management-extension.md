@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 03/21/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 20bacb9d181778fb2b2f52a19c116e7792f0a481
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: 469327261b8f617be0851b52d389965c5eff9b59
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991130"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330409"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>PowerShell-parancsfájlok használata a Windows 10 rendszerű eszközökön az Intune-ban
 
@@ -44,7 +44,7 @@ Az Intune felügyeleti bővítmény kiegészíti a beépített Windows 10 MDM-fu
 
 Az Intune felügyeleti bővítmény előfeltételei a következők:
 
-- Eszközök csatlakoztatva kell lennie, vagy az Azure-bA regisztrált AD és az Azure ad-ben van beállítva [automatikus regisztráció az Intune-ban](windows-enroll.md#enable-windows-10-automatic-enrollment). Az Intune felügyeleti bővítmény támogatja az Azure AD-hez, a hibrid Azure AD-tartományhoz csatlakoztatott és közösen kezelt regisztrált Windows-eszközök.
+- Eszközök csatlakoztatva kell lennie, vagy regisztrálva az Azure AD és az Azure AD és Intune-ban konfigurált [automatikus igénylés](quickstart-setup-auto-enrollment.md). Az Intune felügyeleti bővítmény támogatja az Azure AD-hez, a hibrid Azure AD-tartományhoz csatlakoztatott és közösen kezelt regisztrált Windows-eszközök.
 - Eszközök a Windows 10-es verzióját kell futtatnia, 1607-es vagy újabb.
 - Az Intune felügyeleti bővítmény-ügynök telepítve van, amikor egy PowerShell-parancsprogram, vagy egy Win32-alkalmazás egy felhasználó vagy eszköz biztonsági csoport üzemel.
 

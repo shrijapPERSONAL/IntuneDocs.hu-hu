@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a92d18615f6be7c1e0ce931d443d2ac986db991e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 44f7c5b897dc1aedfe8ffc23c25ea479eceb35e5
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566709"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330495"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>iOS-es beállítások engedélyezéséhez, vagy korlátozhatja a funkciókat az Intune-nal
 
@@ -43,7 +43,7 @@ Ezek a beállítások hozzá egy eszközkonfigurációs profilt az Intune-ban, �
     Ez a funkció az alábbiakra vonatkozik:  
     - iOS 9.3.2 és újabb verziók
 
-- **Képernyőfelvétel**: Válasszon **blokk** megakadályozza a képernyőképek és a képernyő rögzíti az eszközön. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy a felhasználó képként rögzítse a képernyőn látható tartalmat.
+- **Képernyőfelvétel**: Válasszon **blokk** megakadályozza a képernyőképek és a képernyő rögzíti az eszközön. Az iOS 9.0 és újabb verziók ez is képernyőfelvételek letiltása. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy a felhasználó rögzítse a képernyőn látható tartalmat kép vagy videó.
   - **Távoli képernyőfigyelés az osztályterem alkalmazással (csak felügyelt)**: Válasszon **blokk** , hogy az osztályterem alkalmazás képernyőjét távolról az eszközön. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy az Apple osztályterem alkalmazás megtekintése a képernyő.
 
     Ez a funkció az alábbiakra vonatkozik:  

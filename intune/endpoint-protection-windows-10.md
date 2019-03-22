@@ -2,8 +2,8 @@
 title: Védelmi beállítások Windows 10 rendszerű eszközökhöz a Microsoft Intune – Azure |} A Microsoft Docs
 description: A Microsot Intune-ban, Windows 10-eszközökön az Endpoint Protection-beállítások használatával vagy konfigurálásával engedélyezheti a Windows Defender funkcióit, így az alkalmazásőrt, a tűzfalat, a SmartScreent, a titkosítást és a BitLockert, a biztonsági rés kiaknázása elleni védelmet, az alkalmazásvezérlést, a biztonsági központot és a helyi eszközök biztonságát.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 03/04/2019
 ms.topic: reference
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbbdbbb92c033a99f1c439271c745c1abfbcd562
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4c2df888e146a7f240530e5cbc6628dbce34cb61
+ms.sourcegitcommit: b0b1030017e741d92c508130447a8242d9ad7a51
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566692"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58342997"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>A Windows 10 (és újabb verziók) beállítások az Intune-eszközök védelméhez
 
@@ -87,8 +87,7 @@ Ezek a beállítások minden hálózattípusnál alkalmazhatók.
 
 Ezek a beállítások meghatározott hálózattípusokra vonatkoznak. Ilyen többek között a **Tartományi (munkahelyi) hálózat**, a **Magánhálózat (észlelhető)** és a **Nyilvános (nem észlelhető) hálózat**.
 
-#### <a name="general-settings"></a>Általános beállítások
-
+#### <a name="general-settings"></a>Általános beállítások  
 - **Windows Defender-tűzfal**: Válasszon **engedélyezése** a tűzfal és a speciális biztonsági bekapcsolása. A **Nincs konfigurálva** (alapértelmezett) beállítással a házirendbeállításokból függetlenül minden hálózati forgalom engedélyezve van.
 - **Rejtett üzemmód**: **Blokk** a tűzfal rejtett üzemmódban. A rejtett üzemmód tiltásnak a beállítása az **IPsec-et használó csomagok mentességének** letiltását is lehetővé teszi. A **Nincs konfigurálva** (alapértelmezett) érték rejtett üzemmódban működteti a tűzfalat, ami segít megelőzni az ellenőrzési kérelmekre adott válaszokat.
 - **Védett**: **Blokk** kapcsolja ki ezt a szolgáltatást. A **Nincs konfigurálva** (alapértelmezett) érték engedélyezi a beállítást. Ha a beállítás és a Windows Defender-tűzfal be van kapcsolva, minden bejövő forgalom le van tiltva az egyéb házirend-beállításoktól függetlenül.

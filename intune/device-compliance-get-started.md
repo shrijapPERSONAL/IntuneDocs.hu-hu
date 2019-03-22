@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 03/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6a0cb69612e4cf0181fde957f06f490bede7200e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 28de9e939f63f7cb95c09eb28f3869ffc95ebe43
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57392549"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330434"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Beállíthat szabályokat az erőforrásokhoz való hozzáférés engedélyezése a munkahelyi Intune-eszközök
 
@@ -110,10 +110,11 @@ Ha az eszköz nemrég lett regisztrálva, a megfelelőségi ellenőrzést a gyak
 | Platform | Gyakoriság |
 | --- | --- |
 | iOS | 6 órán át 15 perceként, majd 6 óránként |  
-| Mac OS X | 6 órán át 15 perceként, majd 6 óránként | 
+| macOS | 6 órán át 15 perceként, majd 6 óránként | 
 | Android | 15 percen át 3 percenként, majd 2 órán át 15 percenként, majd 8 óránként | 
+| Eszközként regisztrált Windows 10 számítógépek | 30 percen át 3 percenként, majd 8 óránként | 
 | Windows Phone | 15 percen át 5 percenként, majd 2 órán át 15 percenként, majd 8 óránként | 
-| Eszközként regisztrált Windows-számítógépek | 30 percen át 3 percenként, majd 8 óránként | 
+| Windows 8.1 | 15 percen át 5 percenként, majd 2 órán át 15 percenként, majd 8 óránként | 
 
 Címen bármikor, a felhasználók nyissa meg a céges portál alkalmazást, és az eszköz szinkronizálása érdekében bármikor jelentkezhetnek a szabályzat.
 
