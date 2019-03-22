@@ -12,6 +12,8 @@ items:
     items:
     - name: Az alkalmazásfelhasználói felület újdonságai
       href: whats-new-app-ui.md
+    - name: Fejlesztés alatt álló funkciók
+      href: in-development.md
   expanded: true
 - name: Gyorsútmutatók
   items:
@@ -75,8 +77,6 @@ items:
     href: windows-information-protection-configure.md
   - name: MAM – GYAKORI KÉRDÉSEK
     href: mam-faq.md
-  - name: Szabályzat és profil – gyakori kérdések
-    href: manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md
 - name: Használati útmutatók
   items:
   - name: Telepítési terv kidolgozása
@@ -225,9 +225,7 @@ items:
       items:
       - name: Készülékregisztrációs program vagy Apple School Manager
         href: device-enrollment-program-enroll-macos.md
-    - name: Az Intune-szoftverügyfél telepítése Windows rendszerű számítógépekre
-      href: install-the-windows-pc-client-with-microsoft-intune.md
-    - name: Regisztrációmegszakítási jelentés
+    - name: Hiányos regisztrációs jelenté
       href: enrollment-report-company-portal-abandon.md
     - name: Eszközök regisztrálásával kapcsolatos problémák elhárítása
       href: troubleshoot-device-enrollment-in-intune.md
@@ -258,7 +256,7 @@ items:
       href: device-logout-user.md
     - name: Felhasználó eltávolítása
       href: device-remove-user.md
-    - name: Eszköz törlése
+    - name: macOS-eszköz adatainak törlése
       href: device-erase.md
     - name: Távolról vezérelt mobileszközök
       href: device-profile-android-teamviewer.md
@@ -307,6 +305,7 @@ items:
     - name: Eszközbeállítások és -funkciók korlátozása
       href: device-restrictions-configure.md
     - name: Frissítések kiadása
+      displayName: delivery optimization; updates
       href: delivery-optimization-windows.md
     - name: Kiadások frissítése és az S mód
       href: edition-upgrade-configure-windows-10.md
@@ -363,7 +362,7 @@ items:
         - name: Az Intune által a Google-nek küldött adatok
           href: data-intune-sends-to-google.md
         - name: A Jamf Pro információmegosztása az Intune-nal
-          href: conditional-access-integrate-jamf.md
+          href: data-jamf-sends-to-intune.md
       - name: Személyes adatok megtekintése és javítása
         href: privacy-data-view-correct.md
       - name: Naplózás, exportálás, törlés
@@ -376,6 +375,7 @@ items:
       - name: A helyszíni Exchange-összekötő telepítése
         href: exchange-connector-install.md
       - name: Feltételes hozzáférési szabályzat létrehozása és hozzárendelése
+        href: conditional-access-exchange-create.md
       - name: Eszközalapú feltételes hozzáférési szabályzat
         href: create-conditional-access-intune.md
       - name: Feltételes hozzáférési szabályzatok ismételt hozzárendelése az Intune klasszikus portáljáról
@@ -448,6 +448,8 @@ items:
       href: network-access-control-integrate.md
     - name: Windows Hello
       href: windows-hello.md
+    - name: Mobileszköz titkosításának figyelése
+      href: encryption-monitor.md
     - name: Tanúsítványok
       href: certificates-configure.md
       items:
@@ -532,6 +534,8 @@ items:
         href: apps-inc-exl-assignments.md
       - name: Windows 10-alkalmazások telepítése
         href: apps-windows-10-app-deploy.md
+      - name: Alkalmazások üzembe helyezése kormányzati környezetekben
+        href: apps-deploy-gcc-dod.md
     - name: Alkalmazások figyelése
       href: apps-monitor.md
     - name: Alkalmazások konfigurálása
@@ -616,6 +620,8 @@ items:
       href: data-google-sends-to-intune.md
   - name: Súgó és támogatás
     items:
+    - name: Bérlő állapota
+      href: tenant-status.md
     - name: Hibaelhárítás
       items:
       - name: Segítség a felhasználóknak a problémák elhárításában
@@ -624,6 +630,8 @@ items:
         href: troubleshoot-company-resource-access-problems.md
       - name: Alkalmazások telepítésével kapcsolatos problémák elhárítása
         href: troubleshoot-app-install.md
+      - name: Mobilalkalmazás-kezelési hibaelhárítás
+        href: troubleshoot-mam.md
       - name: Auditnaplók Intune-tevékenységekhez
         href: monitor-audit-logs.md
       - name: Naplók figyelése az Azure Monitorral
@@ -636,14 +644,12 @@ items:
         href: troubleshoot-software-updates-in-microsoft-intune.md
       - name: Az Endpoint Protection hibáinak elhárítása
         href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-      - name: Szabályzatokkal kapcsolatos problémák elhárítása
+      - name: Szabályzatok és profilok problémáinak elhárítása
         href: troubleshoot-policies-in-microsoft-intune.md
       - name: A feltételes hozzáférés hibaelhárítása
         href: troubleshoot-conditional-access.md
       - name: Az Exchange-összekötő hibaelhárítása
         href: troubleshoot-exchange-connector.md
-    - name: Ismert problémák
-      href: known-issues.md
     - name: Támogatás kérése
       href: get-support.md
 - name: Hivatkozás
@@ -660,14 +666,6 @@ items:
           href: device-restrictions-android.md
         - name: E-mail
           href: email-settings-android.md
-        - name: Megbízható tanúsítvány
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP-tanúsítvány
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS importált tanúsítvány
-          href: certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile
-        - name: PKCS-tanúsítvány
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-android.md#android-vpn-settings
         - name: Wi-Fi
@@ -687,16 +685,8 @@ items:
           href: device-restrictions-android-for-work.md
         - name: E-mail
           href: email-settings-android-enterprise.md
-        - name: Megbízható tanúsítvány
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP-tanúsítvány
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS importált tanúsítvány
-          href: certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile
-        - name: PKCS-tanúsítvány
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
-          href: vpn-settings-android.md#android-for-work-vpn-settings
+          href: vpn-settings-android.md#android-enterprise-vpn-settings
         - name: Wi-Fi
           href: wi-fi-settings-android-enterprise.md
         - name: Egyéni
@@ -713,12 +703,6 @@ items:
           href: device-restrictions-ios.md
         - name: E-mail
           href: email-settings-ios.md
-        - name: Megbízható tanúsítvány
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP-tanúsítvány
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS-tanúsítvány
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-ios.md
         - name: Wi-Fi
@@ -737,26 +721,20 @@ items:
           href: device-restrictions-macos.md
         - name: Endpoint Protection
           href: endpoint-protection-macos.md
-        - name: Megbízható tanúsítvány
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP-tanúsítvány
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
           href: vpn-settings-macos.md
         - name: Wi-Fi
           href: wi-fi-settings-macos.md
         - name: Egyéni
           href: custom-settings-macos.md
-    - name: Biztonsági alapkonfigurációk
-      items:
-      - name: A Windows biztonsági alapkonfigurációjának beállításai
-        href: security-baseline-settings-windows.md
     - name: Windows 10 és újabb
       items:
       - name: A megfelelőségi szabályzat beállításai
         href: compliance-policy-create-windows.md#windows-10-and-later-policy-settings
       - name: Konfigurációs profil beállításai
         items:
+        - name: Kézbesítésoptimalizálás beállításai
+          href: delivery-optimization-settings.md
         - name: Eszközkorlátozások
           href: device-restrictions-windows-10.md
         - name: Eszközkorlátozások (Windows 10 Team esetén)
@@ -771,12 +749,6 @@ items:
           href: identity-protection-windows-settings.md
         - name: Kioszkmód
           href: kiosk-settings-windows.md
-        - name: Megbízható tanúsítvány
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP-tanúsítvány
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS-tanúsítvány
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-windows-10.md
         - name: Wi-Fi
@@ -787,6 +759,8 @@ items:
           href: shared-user-device-settings-windows.md
         - name: Egyéni
           href: custom-settings-windows-10.md
+      - name: Biztonsági alapkonfiguráció beállításai
+        href: security-baseline-settings-windows.md
       - name: Windows-frissítési beállítások
         href: windows-update-settings.md
     - name: Windows Holographic for Business
@@ -809,10 +783,6 @@ items:
         items:
         - name: Eszközkorlátozások
           href: device-restrictions-windows-8-1.md
-        - name: Megbízható tanúsítvány
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP-tanúsítvány
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
           href: vpn-settings-windows-8-1.md
         - name: Wi-Fi-importálás
@@ -827,10 +797,6 @@ items:
           href: device-restrictions-windows-phone-8-1.md
         - name: E-mail
           href: email-settings-windows-phone-8-1.md
-        - name: Megbízható tanúsítvány
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP-tanúsítvány
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
           href: vpn-settings-windows-phone-8-1.md
         - name: Egyéni
@@ -854,6 +820,9 @@ items:
         href: app-wrapper-prepare-android.md
       - name: Intune App SDK Android rendszerhez
         href: app-sdk-android.md
+        items:
+        - name: Androidhoz készült Intune App SDK – tesztelési útmutató
+          href: app-sdk-android-testing-guide.md
       - name: Intune App SDK Xamarin-kötések
         href: app-sdk-xamarin.md
     - name: Az Intune-adattárház használata
@@ -912,34 +881,6 @@ items:
       href: graph-apis-used-by-intune-device-configuration-windows.md
 - name: Erőforrások
   items:
-  - name: A Microsoft Intune-dokumentáció útmutatója
-    href: intune-documentation.md
-  - name: Hibaelhárítás
-    items:
-    - name: Segítség a felhasználóknak a problémák elhárításában
-      href: help-desk-operators.md
-    - name: Vállalati erőforrás-hozzáférési problémák elhárítása
-      href: troubleshoot-company-resource-access-problems.md
-    - name: Alkalmazások telepítésével kapcsolatos problémák elhárítása
-      href: troubleshoot-app-install.md
-    - name: Mobilalkalmazás-kezelési hibaelhárítás
-      href: troubleshoot-mam.md
-    - name: Auditnaplók Intune-tevékenységekhez
-      href: monitor-audit-logs.md
-    - name: Alkalmazásvédelmi naplók áttekintése
-      href: app-protection-policy-settings-log.md
-    - name: Az e-mail-profilok hibaelhárítása
-      href: troubleshoot-email-profiles-in-microsoft-intune.md
-    - name: Szoftverfrissítésekkel kapcsolatos hibák elhárítása
-      href: troubleshoot-software-updates-in-microsoft-intune.md
-    - name: Az Endpoint Protection hibáinak elhárítása
-      href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-    - name: Szabályzatokkal kapcsolatos problémák elhárítása
-      href: troubleshoot-policies-in-microsoft-intune.md
-    - name: A feltételes hozzáférés hibaelhárítása
-      href: troubleshoot-conditional-access.md
-    - name: Az Exchange-összekötő hibaelhárítása
-      href: troubleshoot-exchange-connector.md
   - name: Archívum
     items:
     - name: Újdonságok archívuma
@@ -1005,9 +946,9 @@ items:
       href: data-outside-protect.md
     - name: Adatszivárgás megakadályozása nem felügyelt eszközökön
       href: data-leak-prevention.md
-ms.openlocfilehash: 680ae510d7f3387b53ad6ae50c8e4d8ba194f8b9
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 2a7f7b7a1d1c56cf316362ef8dc2693343e64955
+ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742822"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306859"
