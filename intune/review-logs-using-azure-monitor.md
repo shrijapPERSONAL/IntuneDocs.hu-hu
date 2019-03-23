@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2019
+ms.date: 03/18/2019
 ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 412e5527e1a740f9b460ef8e090913a3c3270b5c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: fb33a1207e165323de2e82467c7a0dd5239d9713
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460988"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394853"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Napló adatokat küldeni a tárolási, az event hubs, vagy a log analytics az Intune-ban (előzetes verzió)
 
@@ -34,7 +34,7 @@ Ezek a naplók az Azure Monitor-szolgáltatások, beleértve a storage-fiókok, 
 * Az Intune-naplók integrálása a saját egyéni napló megoldások streamelési őket egy eseményközpontba.
 * Az Intune naplókat küld a Log Analytics látványos vizualizációkkal, figyelés, és a csatlakoztatott adatok riasztás engedélyezése.
 
-Ezek a szolgáltatások részét képezik a **diagnosztikai beállítások** az Intune-ban. 
+Ezek a szolgáltatások részét képezik a **diagnosztikai beállítások** az Intune-ban.
 
 Ez a cikk bemutatja, hogyan használható **diagnosztikai beállítások** napló adatokat küldeni a különböző szolgáltatásokat, példákat és a költségek becslése biztosít és választ ad néhány gyakran felmerülő kérdésre.
 
@@ -95,6 +95,19 @@ Attól függően, hol szeretné irányítani a naplózási adatokat szükség az
     ![Képet, amely az Intune naplókat küld egy Azure storage-fiók](media/diagnostics-settings-example.png)
 
 4. **Mentse** a változtatásokat. A beállítás akkor jelenik meg a listában. Miután létrejött, a beállítások kiválasztásával módosíthatja **beállítás szerkesztése** > **mentése**.
+
+## <a name="use-audit-logs-throughout-intune"></a>Auditnaplók Intune teljes használata
+
+Az auditnaplók Intune-ban, beleértve a regisztráció, megfelelőségi, konfigurációs, eszközök, ügyfélalkalmazások és több más részein is exportálhatja.
+
+Például a naplózási exportálása naplók eszközmegfelelőség használatakor:
+
+1. Az a [az Azure portal](https://portal.azure.com/), jelölje be **minden szolgáltatás** > szűréséhez **Intune** > Válassza ki **Intune**.
+2. Válassza ki **eszközmegfelelőség** > **figyelő** > **Auditnaplók**:
+
+    ![Auditnaplók Intune adatátirányításhoz Azure Monitor-tároló, események hubs vagy analytics kiválasztása](media/audit-logs-under-monitor-in-compliance.png)
+
+3. Válassza ki **adatexportálási beállítások**. Ha nincs engedélyezve, bekapcsolhatja a **diagnosztikai beállítások**. Azt is beállíthatja, hova küldhetők a naplók leírtak szerint [naplókat küld az Azure monitor](#send-logs-to-azure-monitor) (a jelen cikkben).
 
 ## <a name="cost-considerations"></a>Költségekkel kapcsolatos szempontok
 

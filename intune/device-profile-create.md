@@ -1,11 +1,11 @@
 ---
 title: Eszközprofilok létrehozása az Azure-beli Microsoft Intune-ban | Microsoft Docs
-description: A Microsoft Intune-ban eszközprofilokat adhat hozzá és konfigurálhat, így megadhatja a platform típusát és konfigurálhatja a beállításokat az Azure Portalon.
+description: Adjon hozzá vagy eszközkonfigurációs profil konfigurálása a Microsoft Intune-ban. Válassza ki a platform típusát, adja meg a beállításokat, és a egy hatókörcímkét hozzá.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/18/2018
+ms.date: 03/21/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,28 +17,41 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d36f1c36656be6fab8a9566d34b946f80450e97
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 066508ba62d4b0ece3fe5a5e95b709a12832f1a0
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389487"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394916"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Eszközprofil létrehozása a Microsoft Intune-ban
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
+Eszközök profilok hozzáadása és konfigurálása a beállítások lehetővé teszik, és juttathatja el ezeket a beállításokat a szervezetnél található eszközökön. [Az eszközprofilok segítségével eszközök szolgáltatásainak és beállításainak alkalmazása](device-profiles.md) részletesebb leírását – például, hogy miket tehet lépnek.
+
+Ez a cikk:
+
+- Profil létrehozásának lépéseit ismerteti.
+- Bemutatja, hogyan hatókörcímke "szűréséhez" a profil hozzáadásához.
+- A bejelentkezési frissítési ciklusok idejét, amikor eszköz megkapja-e a profilokat, az összes profil együtt sorolja fel.
+
 ## <a name="create-the-profile"></a>A profil létrehozása
 
 1. Az a [az Azure portal](https://portal.azure.com), jelölje be **minden szolgáltatás** > szűréséhez **Intune** > Válassza ki **Intune**.
 
-2. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
+2. Válassza az **Eszközök konfigurálása** lehetőséget. A következő lehetőségek állnak rendelkezésére:
 
-3. Adja meg a következő tulajdonságokat:
+    - **Áttekintés**: Listázza a profilok állapotát, és ez a témakör további részleteket a felhasználókhoz és eszközökhöz rendelt profilokról.
+    - **Kezelése**: Eszközprofilok létrehozása, és töltse fel az egyéni [PowerShell-parancsfájlok](intune-management-extension.md) a profilon belül futtatandó, és eszközöket vehet fel adatforgalmi [esim-kártya](esim-device-configuration.md).
+    - **A figyelő**: Ellenőrizze a profil sikeres vagy sikertelen állapotát, és naplók megtekintése a profilok.
+    - **A telepítő**: SCEP- vagy PFX hitelesítésszolgáltató, vagy engedélyezze a [Távközlésiköltség-kezelőben](telecom-expenses-monitor.md) a profilban.
 
-   - **Név**: Adja meg az új profil leíró nevét.
+3. Válassza ki **profilok** > **profil létrehozása**. Adja meg a következő tulajdonságokat:
+
+   - **Név**: Adjon meg egy leíró nevet a profilhoz.
    - **Description** (Leírás): Adja meg a profil leírását. A beállítás használata nem kötelező, de ajánlott.
-   - **Platform**: Válassza ki a platform típusát:  
+   - **Platform**: Válassza ki a platform az eszközök. A választható lehetőségek:  
 
        - **Android**
        - **Vállalati Android**
@@ -48,29 +61,73 @@ ms.locfileid: "57389487"
        - **Windows 8.1 és újabb**
        - **Windows 10 és újabb**
 
-   - **Profil típusa**: Válassza ki a létrehozni kívánt. A lista a választott platformtól függ.
+   - **Profil típusa**: Válassza ki a létrehozni kívánt beállításokat. A megjelenő listában függ a **platform** választja.
    - **Beállítások**: Az alábbi cikkek ismertetik az egyes profiltípusok beállításait:
 
-       -  [Eszközfunkciók](device-features-configure.md)
-       -  [Eszközkorlátozások](device-restrictions-configure.md)
-       -  [Endpoint Protection](endpoint-protection-configure.md)
-       -  [Identity protection](identity-protection-configure.md)  
-       -  [Kioszkmód](kiosk-settings.md)
-       -  [E-mail](email-settings-configure.md)
-       -  [VPN](vpn-settings-configure.md)
-       -  [Wi-Fi](wi-fi-settings-configure.md)
-       -  Education [Windows 10](education-settings-configure.md) és [iOS](wi-fi-settings-ios.md) rendszerhez
-       -  [Windows 10 kiadásfrissítés](edition-upgrade-configure-windows-10.md)
-       -  [iOS-es frissítési szabályzatok](software-updates-ios.md)
-       -  [Tanúsítványok](certificates-configure.md)
-       -  [Windows Információvédelem](windows-information-protection-configure.md)
-       -  [Egyéni](custom-settings-configure.md)
+       - [Felügyeleti sablonok](administrative-templates-windows.md)
+       - [Egyéni](custom-settings-configure.md)
+       - [Kézbesítésoptimalizálás](delivery-optimization-windows.md)
+       - [Eszközfunkciók](device-features-configure.md)
+       - [Eszközkorlátozások](device-restrictions-configure.md)
+       - [Kiadás frissítési és mód kapcsoló](edition-upgrade-configure-windows-10.md)
+       - [Oktatás](education-settings-configure.md)
+       - [E-mail](email-settings-configure.md)
+       - [Endpoint Protection](endpoint-protection-configure.md)
+       - [Identity protection](identity-protection-configure.md)  
+       - [Kioszkmód](kiosk-settings.md)
+       - [PKCS-tanúsítvány](certficates-pfx-configure.md)
+       - [SCEP-tanúsítvány](certificates-scep-configure.md)
+       - [Megbízható tanúsítvány](certificates-configure.md)
+       - [Frissítési szabályzatok](software-updates-ios.md)
+       - [VPN](vpn-settings-configure.md)
+       - [Wi-Fi](wi-fi-settings-configure.md)
+       - [A Windows Defender ATP](advanced-threat-protection.md)
+       - [Windows Információvédelem](windows-information-protection-configure.md)
 
-     ![A Profil létrehozása képernyőképe](./media/create-device-profile.png)
+     Például, ha kiválasztja **iOS** a platform típusát a profilbeállítások hasonlóan néz ki: ehhez a profilhoz:
 
-4. Ha kész, válassza a **Létrehozás** lehetőséget.
+     ![IOS-profil létrehozása az Intune-ban](./media/create-device-profile.png)
 
-Ekkor létrejön a profil, és megjelenik a listában.
+4. Amikor végzett, válassza ki a **OK** > **létrehozás** a módosítások mentéséhez. A profil létrehozásáról, és látható a listában.
+
+## <a name="scope-tags"></a>Hatókörcímkék
+
+Miután hozzáadta a beállításokat, a profil még egy hatókörcímkét is hozzáadhat. Hatókörcímkék hozzárendelni, és meghatározott csoportokra, például a HR vagy minden Egyesült Államokbeli a Hálózatvezérlő által alkalmazott szabályzatok szűrő.
+
+Hatókörcímkék, és mit tehet kapcsolatos további információkért lásd: [RBAC használata és a hatókörcímkék elosztott informatikai](scope-tags.md).
+
+### <a name="add-a-scope-tag"></a>Hatókörcímke hozzáadása
+
+1. Válassza ki **hatókör (címkék)**.
+2. Válassza ki **Hozzáadás** hatókör új címke létrehozásához. Vagy válasszon ki egy meglévő hatókörcímke a listából.
+3. Válassza ki **OK** a módosítások mentéséhez.
+
+## <a name="refresh-cycle-times"></a>Frissítse a ciklusok idejét
+
+Az Intune a következő adatfrissítési ciklusok konfigurációs profilokat a frissítések kereséséhez használja:
+
+| Platform | A frissítés|
+| --- | --- |
+| iOS | 6 óránként |
+| macOS | 6 óránként |
+| Android | 8 óránként |
+| Eszközként regisztrált Windows 10 számítógépek | 8 óránként |
+| Windows Phone | 8 óránként |
+| Windows 8.1 | 8 óránként |
+
+Ha az eszköz nemrég lett regisztrálva, a bejelentkezés gyakrabban fusson:
+
+| Platform | Gyakoriság |
+| --- | --- |
+| iOS | 6 órán át 15 perceként, majd 6 óránként |  
+| macOS | 6 órán át 15 perceként, majd 6 óránként | 
+| Android | 15 percen át 3 percenként, majd 2 órán át 15 percenként, majd 8 óránként | 
+| Eszközként regisztrált Windows 10 számítógépek | 30 percen át 3 percenként, majd 8 óránként | 
+| Windows Phone | 15 percen át 5 percenként, majd 2 órán át 15 percenként, majd 8 óránként | 
+| Windows 8.1 | 15 percen át 5 percenként, majd 2 órán át 15 percenként, majd 8 óránként | 
+
+Bármikor a felhasználók nyissa meg a céges portál alkalmazást, és az eszköz szinkronizálása érdekében az profil frissítések azonnali ellenőrzésére.
 
 ## <a name="next-steps"></a>További lépések
+
 [Rendelje hozzá a profilt](device-profile-assign.md), és [kövesse nyomon az állapotát](device-profile-monitor.md).

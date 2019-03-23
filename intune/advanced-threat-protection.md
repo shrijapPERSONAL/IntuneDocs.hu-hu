@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9bf69e0c677fe61fc8d2eda12745a407f8f0eefa
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 036f2ca8302f9b3c2d700a04918c4c49a4c6211a
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57398120"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358202"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>A feltételes hozzáférés az Intune-ban a Windows Defender ATP megfelelőségi kényszerítése
 
@@ -110,12 +110,12 @@ A megfelelőségi szabályzat határozza meg egy eszközön a kockázat elfogadh
 2. Válassza az **Eszközmegfelelőség** > **Szabályzatok** > **Szabályzat létrehozása** lehetőséget.
 3. Adjon meg **Nevet** és **Leírást**.
 4. A **Platform** beállításnál válassza a **Windows 10 és újabb** lehetőséget.
-5. A **Windows Defender ATP** beállításainál adja meg **A következő vagy ez alatti számítógép-kockázati pontszám megkövetelése** Ön által választott értékét:
+5. Az a **Windows Defender ATP** beállításainál adja **az eszköz vagy az alatt a gép kockázati pontszám megkövetelése** Ön által választott értékét. Szolgáltatói veszélyforrás-besorolásaiban vannak [határozza meg a Windows Defender ATP](https://review.docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection?branch=atp-server2008#sort-filter-and-group-the-alerts-queue).
 
-  - **Egyértelmű**: Ez a szint a legbiztonságosabb lehetőség. Az eszköz csak akkor fér hozzá a céges erőforrásokhoz, ha semmilyen veszélyforrás nincs rajta. Ha bármilyen veszélyforrás észlelhető, az eszköz nem megfelelőnek minősül.
-  - **Alacsony**: Az eszköz akkor minősül megfelelőnek, ha vonatkozásában kizárólag alacsony szintű veszélyforrások. A közepes vagy magas fenyegetettségi szintű eszközök nem megfelelők.
-  - **Közepes**: Az eszköz nem megfelelőnek, ha az eszközön észlelt fenyegetések alacsony vagy közepes. Magas szintű fenyegetések észlelése esetén az eszköz nem megfelelőnek minősül.
-  - **Magas**: Ez a szint a legkevésbé biztonságos, és minden kockázati szintet. Az ilyen eszközök magas, közepes és alacsony szintű fenyegetettség esetén is megfelelőnek minősülnek.
+   - **Egyértelmű**: Ez a szint a legbiztonságosabb lehetőség. Az eszköz csak akkor fér hozzá a céges erőforrásokhoz, ha semmilyen veszélyforrás nincs rajta. Ha bármilyen veszélyforrás észlelhető, az eszköz nem megfelelőnek minősül. (A Windows Defender ATP-felhasználók az érték *biztonságos*.)
+   - **Alacsony**: Az eszköz akkor minősül megfelelőnek, ha vonatkozásában kizárólag alacsony szintű veszélyforrások. A közepes vagy magas fenyegetettségi szintű eszközök nem megfelelők.
+   - **Közepes**: Az eszköz nem megfelelőnek, ha az eszközön észlelt fenyegetések alacsony vagy közepes. Magas szintű fenyegetések észlelése esetén az eszköz nem megfelelőnek minősül.
+   - **Magas**: Ez a szint a legkevésbé biztonságos, és minden kockázati szintet. Az ilyen eszközök magas, közepes és alacsony szintű fenyegetettség esetén is megfelelőnek minősülnek.
 
 6. Válassza az **OK**, majd a **Létrehozás** lehetőséget a változások mentéséhez (ezzel létrejön a szabályzat).
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/13/2019
+ms.date: 03/11/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78b47decc297c58feadb7cd507a3ff09070d46d4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 0e83e371f5c3d1690cc50c6b250db8a2c3251b48
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565740"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394954"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Windows 10-es és újabb beállításai az Intune-ban a teljes képernyős fiókként való futtatásra
 
@@ -184,6 +184,8 @@ Az ebben az üzemmódban lévő alkalmazások elérhetők a Start menüben. A fe
 - **Használat alternatív Start elrendezésének**: Válasszon **Igen** , adjon meg egy XML-fájlt, amely azt ismerteti, hogyan jelenjenek meg az alkalmazások a start menüben, beleértve az alkalmazások sorrendjét. Használja ezt a beállítást, ha több testreszabási lehetőségre van szüksége a Start menüben. A [Start menü elrendezésének testreszabása és exportálása](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) című cikkben találhat útmutatást és XML-mintát.
 
 - **Windows-tálcán**: Válassza ki a **megjelenítése** vagy **elrejtése** a tálcán. Alapértelmezés szerint a tálca nem jelenik meg. Ikonok, például a Wi-Fi ikon látható, de a beállítások nem módosíthatók a végfelhasználók számára.
+
+- **Engedélyezi a hozzáférést a Letöltések mappába**: Válasszon **Igen** , hogy a felhasználók a Windows Intézőben letöltések mappa elérésére. Alapértelmezés szerint a Letöltések mappába való hozzáférés le van tiltva. Ez a szolgáltatás gyakran egy böngészőből letöltött elemek eléréséhez használt a végfelhasználók számára.
 
 Válassza ki **OK** a módosítások mentéséhez.
 

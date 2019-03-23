@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 03/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad4ac5a2560cf6c3d06354ca8d4e3190f1bf198b
-ms.sourcegitcommit: b0b1030017e741d92c508130447a8242d9ad7a51
+ms.openlocfilehash: f7a35104982998c00e0fc653dc04e23051a46dc5
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 03/22/2019
-ms.locfileid: "58343016"
+ms.locfileid: "58394849"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -49,17 +49,109 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Ugyanitt tal
 <!-- ########################## -->
 ## <a name="week-of-march-18-2019"></a>2019. március 18 hete
 
+### <a name="app-management"></a>Alkalmazáskezelés
+
+#### <a name="deploy-microsoft-visio-and-microsoft-project----3725386----"></a>A Microsoft Visio és a Microsoft-projekt üzembe helyezése <!-- 3725386  -->
+Most már telepítheti a Microsoft Visio Pro for Office 365 és a Microsoft Project Online asztali ügyfél független alkalmazásokat a Microsoft Intune, a Windows 10-eszközökön, ha licencekkel rendelkezik ezekhez az alkalmazásokhoz. Az Intune-ból, válassza ki a **ügyfélalkalmazások** > **alkalmazások** > **Hozzáadás** megjelenítéséhez a **alkalmazás hozzáadása** panelen. Az a **alkalmazás hozzáadása** panelen válassza ki **Windows 10-es** , a **alkalmazástípus**. Ezután válassza ki **alkalmazáscsomag konfigurálása** válassza ki a telepíteni kívánt alkalmazások. Office 365-alkalmazások Windows 10 rendszerű eszközökhöz kapcsolatos további információkért lásd: [hozzárendelése az Office 365-alkalmazások Windows 10-es eszközökhöz a Microsoft Intune-nal](apps-add-office365.md).
+
+#### <a name="microsoft-visio-pro-for-office-365-product-name-change----3593653----"></a>A Microsoft Visio Pro for Office 365-höz a Terméknév módosítása <!-- 3593653  -->
+**A Microsoft Visio Pro for Office 365** néven már ismert **Microsoft Visio Online 2. csomagjának**.  A Microsoft Visio kapcsolatos további információkért lásd: [a Visio Online 2. csomagjának](https://products.office.com/visio/visio-online-plan-2). Office 365-alkalmazások Windows 10 rendszerű eszközökhöz kapcsolatos további információkért lásd: [hozzárendelése az Office 365-alkalmazások Windows 10-es eszközökhöz a Microsoft Intune-nal](apps-add-office365.md).
+
+#### <a name="intune-app-protection-policy-app-character-limit-setting----3291302----"></a>Az Intune app protection szabályzat (alkalmazás) karakteres korlátot beállítása <!-- 3291302  -->
+Intune-rendszergazdák adhatja meg az Intune alkalmazás kivételt **Kivágás, másolás és beillesztés korlátozása más alkalmazásokkal** házirend-beállítást.  Rendszergazdaként adja meg, amely kivágott vagy másolt a kezelt alkalmazások karakterek száma. Ez a beállítás lehetővé teszi a megosztását a megadott számú karaktert bármely alkalmazásba, függetlenül az "Kivágás, másolás és beillesztés korlátozása más alkalmazásokkal" beállítást. Vegye figyelembe, hogy az Androidhoz készült Intune vállalati portál verziója igényel 5.0.4364.0 verzió vagy újabb. További információkért lásd: [iOS adatvédelem](app-protection-policy-settings-ios.md#data-protection), [Android adatvédelem](app-protection-policy-settings-android.md#data-protection), és [ügyfelekre vonatkozó alkalmazásvédelmi naplók áttekintése](app-protection-policy-settings-log.md#app-protection-policy-settings).
+
+#### <a name="office-deployment-tool-odt-xml-for-office-proplus-deployment----3192477-----"></a>Az Office központi telepítési eszköz (ODT) XML for Office ProPlus üzembe helyezéséhez <!-- 3192477   -->
+Ha egy Office Pro Plus-példány létrehozása az Intune felügyeleti konzolon, adja meg az Office központi telepítési eszköz (ODT) XML lehet. Ez lehetővé teszi a testreszabhatóság nagyobb, ha a meglévő Intune felhasználói felület beállításai nem felelnek meg az igényeinek. További információkért lásd: [hozzárendelése az Office 365-alkalmazások Windows 10-es eszközökhöz a Microsoft Intune-nal](https://docs.microsoft.com/intune/apps-add-office365) és [beállítási lehetőségei az Office-telepítő eszköz](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool).
+
+#### <a name="app-icons-will-now-be-displayed-with-an-automatically-generated-background----1429026----"></a>Alkalmazásikonok mostantól automatikusan generált háttérrel jelennek <!-- 1429026  -->
+A Windows céges portál alkalmazást, az ikonok most már megjelenik (amennyiben az érzékelhető) az ikon meghatározó színe alapján automatikusan generált háttérrel. Alkalmazható, ha a háttér felváltja a szürke kontúrt, amely korábban látható alkalmazáscsempén. Felhasználók látni fogják a céges portál 10.3.3451.0 újabb verzióiban ez a változás.
+
+#### <a name="install-available-apps-using-the-company-portal-app-after-windows-bulk-enrollment----2751523-----"></a>A céges portál alkalmazás használata a Windows tömeges beléptetése után rendelkezésre álló alkalmazások telepítése <!-- 2751523   -->
+Az Intune-ban regisztrált Windows-eszközök [Windows csoportos regisztrálás](windows-bulk-enroll.md) (kiépítési csomagok) tudják a vállalati portál alkalmazás segítségével telepítik az elérhető alkalmazásokat. A vállalati portál alkalmazással kapcsolatos további információkért lásd: [adja hozzá manuálisan a Windows 10-es céges portál](store-apps-company-portal-app.md) és [a Microsoft Intune vállalati portál alkalmazás konfigurálása](company-portal-app.md).
+
+#### <a name="the-microsoft-teams-app-can-be-selected-as-part-of-the-office-app-suite----3828932----"></a>A Microsoft Teams alkalmazáshoz is kijelölhető az Office-app suite részeként <!-- 3828932  -->
+A Microsoft Teams-alkalmazást tartalmazza, vagy az Office Pro Plus app suite telepítésének részeként kizárt is. Ez a funkció Office Pro Plus build száma 16.0.11328.20116+ működik. A felhasználónak kell jelentkezzen ki, majd jelentkezzen be az eszközön a telepítés befejezéséhez. Válassza ki az Intune-ban **ügyfélalkalmazás** > **alkalmazások** > **Hozzáadás**. Válassza ki az egyik a **Office 365 csomag** alkalmazástípust, majd válassza ki **alkalmazáscsomag konfigurálása**.
+
+### <a name="device-configuration"></a>Eszközök konfigurálása
+
+#### <a name="operational-logs-also-show-details-on-non-compliant-devices----4063755----"></a>Műveleti naplók is megjelenítése a részletek a nem megfelelő eszközök <!-- 4063755  -->
+Útválasztási Intune az Azure monitor-funkciók jelentkezik, ha a műveleti naplókban is irányíthatja. Ebben a frissítésben a műveleti naplókban is tájékoztatást nyújt a nem megfelelő eszközök. 
+
+Ez a szolgáltatás további információkért lásd: [küldési naplóadatokat, storage, az event hubs vagy az Intune-ban a log analytics](review-logs-using-azure-monitor.md).
+
+#### <a name="create-and-use-device-configuration-profiles-on-android-zebra-devices-in-intune----3895244---"></a>Létrehozhat és használhat eszközkonfigurációs profilok Android Zebra eszközökön az Intune-ban <!-- 3895244 -->
+Ebben a frissítésben az Intune konfigurálása Android Zebra eszközöket támogatja. Pontosabban a következőket teheti: 
+
+- Eszközkonfigurációs profil létrehozása, és a beállítások StageNow által generált mobilitási bővítmények MX-profilok használatával Android Zebra-eszközökre vonatkoznak (**eszközkonfiguráció** > **profilok**  >  **Profil létrehozása** > **Android** tartozó platform).
+
+A következőkre vonatkozik:  
+- Android
+
+#### <a name="route-logs-to-azure-monitor-in-more-intune-workloads----3804627---"></a>További Intune számítási feladatok útvonal-naplók az Azure monitornak <!-- 3804627 -->
+Az Intune-ban, naplózási és műveleti naplók átirányítása a storage-események hubok és log analytics az Azure monitorban (**Intune** > **figyelés** > **diagnosztika beállítások**). Ebben a frissítésben ezeket a naplókat a további Intune számítási, beleértve a megfelelőség, a konfigurációk, az ügyfélalkalmazások és további irányíthatja. 
+
+Az Azure monitornak útválasztási naplók kapcsolatos további információkért lásd: [Teljesítménynapló-adatok küldése a tárolóhoz, az event hubs, vagy a log analytics](review-logs-using-azure-monitor.md).
+
+#### <a name="create-and-use-mobility-extensions-on-android-zebra-devices-in-intune----3305880-----"></a>Létrehozhat és használhat a mobilitási bővítmények Android Zebra-eszközökön az Intune-ban <!-- 3305880   -->
+Ebben a frissítésben az Intune konfigurálása Android Zebra eszközöket támogatja. Pontosabban, hozhat létre eszközkonfigurációs profil, és beállítások StageNow által generált mobilitási bővítmények MX-profilok használatával Android Zebra-eszközökre vonatkoznak (**eszközkonfiguráció**  >   **Profilok** > **profil létrehozása** > **Android** tartozó platform > **MX-profil (csak Zebra)** profil Írja be).
+
+Ez a szolgáltatás további információkért lásd: [használatát és mobilitási bővítmények az Intune-ban Zebra-eszközök felügyeletéhez](android-zebra-mx-overview.md).
+
+A következőkre vonatkozik:  
+- Android
+
+### <a name="device-management"></a>Eszközkezelés
+
 #### <a name="encryption-report-for-windows-10-devices-in-public-preview---2351538---"></a>Titkosítási jelentés a Windows 10 rendszerű eszközökhöz (nyilvános előzetes verzió)<!-- 2351538 -->  
 
-Az új [titkosítási jelentésben (előzetes verzió)](encryption-monitor.md#encryption-report) a Windows 10 rendszerű eszközök titkosítási állapotát részleteinek megtekintéséhez. Rendelkezésre álló adatot közé tartozik az eszközök TPM-verzió, titkosítási készültségi állapot, hibajelentés és még.  
+Az új [titkosítási jelentésben (előzetes verzió)](encryption-monitor.md#encryption-report-&#40;in-public-preview&#41;) a Windows 10 rendszerű eszközök titkosítási állapotát részleteinek megtekintéséhez. Rendelkezésre álló adatot közé tartozik az eszközök TPM-verzió, titkosítási készültségi állapot, hibajelentés és még.  
 
 #### <a name="access-bitlocker-recovery-keys-from-the-intune-portal-in-public-preview----2351547-----"></a>A BitLocker helyreállítási kulcsok elérését az Intune-portálon (a nyilvános előzetes verzió) <!-- 2351547   -->  
 
-Most már használhatja az Intune [részleteinek megtekintéséhez](encryption-monitor.md#bitlocker-recovery-keys) BitLocker-kulcs azonosítója és a BitLocker helyreállítási kulcsok az Azure Active Directoryból.
+Most már használhatja az Intune [részleteinek megtekintéséhez](encryption-monitor.md#bitlocker-recovery-keys-&#40;in-public-preview&#41;) BitLocker-kulcs azonosítója és a BitLocker helyreállítási kulcsok az Azure Active Directoryból.
 
 ### <a name="microsoft-edge-support-for-intune-scenarios-on-ios-and-android-devices----3411007---"></a>A Microsoft Edge támogatása az iOS- és Android-eszközök Intune-forgatókönyvek <!-- 3411007 -->
 A Microsoft Edge támogatni fogják az azonos felügyeleti forgatókönyvek, az Intune Managed Browser továbbfejlesztett végfelhasználói élmény igény szerinti hozzáadásával. A Microsoft Edge vállalati Intune szabályzatai által engedélyezett funkciók kettős-Identity, app protection házirend-integráció, az Azure application proxy-integráció, és felügyelt Kedvencek és a kezdőlap parancsikonok. További információkért lásd: [Microsoft Edge támogatási](app-configuration-managed-browser.md#microsoft-edge-support).
 
+#### <a name="exchange-onlineintune-connector-deprecate-support-for-eas-only-devices---3105122------"></a>Az Exchange Online vagy Intune-összekötő csak az EAS-eszközök támogatását kivezetjük <!--3105122    -->
+Az Intune-konzolon többé nem támogatja a megtekintése, és csak az EAS-eszközök kezelésének csatlakoztatott Exchane online-hoz az Intune-összekötővel. Ehelyett a következő lehetősége van:
+- A mobileszköz-felügyeleti (MDM) eszközök regisztrálása
+- Az Intune alkalmazásvédelmi szabályzatok használata az eszközök kezeléséhez
+- Az Exchange vezérlőkkel leírt módon [ügyfelek és a mobileszköz Exchange Online-ban](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/clients-and-mobile-in-exchange-online)
+
+### <a name="monitor-and-troubleshoot"></a>Monitorozás és hibaelhárítás
+
+#### <a name="support-for-additional-connectors-on-the-tenant-status-page----3617202-------"></a>A bérlő állapotának oldalon további összekötők támogatása <!-- 3617202     -->
+A [bérlői állapotlapon](tenant-status.md) ettől kezdve további összekötők, többek között az állapotadatait *Windows Defender komplex veszélyforrások elleni védelem* (ATP) és egyéb Mobile Threat Defense-összekötők.
+
+### <a name="role-based-access-control"></a>Szerepköralapú hozzáférés-vezérlés
+
+#### <a name="granting-intune-read-only-access-to-some-azure-active-directory-roles----3637917----"></a>Csak bizonyos Azure Active Directory-szerepkör való hozzáférés biztosítása az Intune-ban olvasása <!-- 3637917  -->
+Az Intune olvassa el, csak kapott hozzáférést a következő Azure AD-szerepkörökhöz. Az Azure AD-szerepkörökhöz rendelt engedélyeket váltja fel az Intune szerepköralapú hozzáférés-vezérlés (RBAC) az adott engedélyek.
+
+Olvassa el az Intune-naplózási adatokat csak a hozzáférést:
+
+- Szabályozási ügyintéző
+- Megfelelőségi adatok rendszergazda
+
+Csak olvasásra jogosító hozzáférés Intune-ban tárolt összes:
+
+- Biztonsági rendszergazda
+- Biztonsági operátor
+- Biztonsági olvasó
+- Globális olvasó
+
+További információkért lásd: [szerepköralapú hozzáférés-vezérlés](role-based-access-control.md).
+
+#### <a name="scope-tags-for-ios-app-provisioning-profiles---2934430-----"></a>Hatókörcímkék az iOS-alkalmazáskiépítési profilok <!--2934430   -->
+Így csak is az adott hatókörcímke hozzárendelt szerepkörrel rendelkező személyek hozzáférhetnek az IOS-es alkalmazáskiépítési profil hatókörcímke adhat hozzá egy IOS-es alkalmazáskiépítési profil. További információkért lásd: [RBAC használata és a hatókör-címkéket](scope-tags.md).
+
+#### <a name="scope-tags-for-app-configuration-policies---2371891-----"></a>Hatókörcímkék az alkalmazáskonfigurációs szabályzatok <!--2371891   -->
+Így csak is az adott hatókörcímke hozzárendelt szerepkörrel rendelkező személyek hozzáférhetnek az alkalmazáskonfigurációs szabályzat hatókörcímke adhat hozzá alkalmazás-konfigurációs házirend. Az alkalmazáskonfigurációs szabályzat csak a megcélzott vagy az azonos hatókörcímke hozzárendelt alkalmazásokhoz vannak rendelve. További információkért lásd: [RBAC használata és a hatókör-címkéket](scope-tags.md).
+
+
+<!-- ########################## -->
+>>>>>>> 5e7c086a04b16c159f2ddf9054c8054b4a389872
 ## <a name="week-of-february-25-2019"></a>2019. február 25 hete
 
 ### <a name="device-configuration"></a>Eszközök konfigurálása
@@ -241,25 +333,22 @@ Módosítottuk a címkék beállításainak és az Intune app Protection, hogy k
 
 Az alapértelmezett beállításokat és a beállítások száma nem változik, de ez a változás lehetővé teszi, hogy a felhasználó megértése, keresse meg, és a alkalmazni a beállításokat több egyszerűen kiválasztott alkalmazásvédelmi szabályzatok. További információ: [iOS-beállítások](app-protection-policy-settings-ios.md) és [Android-beállításokat](app-protection-policy-settings-android.md).
 
-#### <a name="additional-settings-for-outlook----3301182----"></a>Az Outlook további beállítások <!-- 3301182  -->
+### <a name="additional-settings-for-outlook----3301182----"></a>Az Outlook további beállítások <!-- 3301182  -->
 Mostantól konfigurálhatja az IOS rendszerhez készült Outlook és az Android, az Intune-nal a következő további beállításokat:
+
 - Csak a munkahelyi vagy iskolai fiókkal az Outlookban az iOS és Android rendszerhez használható engedélyezése
 - Modern hitelesítéssel az Office 365 és a hibrid, modern hitelesítést a helyszíni fiókok telepítése
 - Használat `SAMAccountName` az e-mail profilban, az egyszerű hitelesítés kijelölésekor a felhasználónév mező
-
-A következő beállításokat is továbbra is fokozatosan vezetjük be, és hamarosan közzétesszük a konzolon:
 - Lehetővé teszi az ügyfelek menteni
 - Konfigurálja a külső címzetteknek e-mail tippek
 - Konfigurálása **szűrt levelek**
 - Biometrikai IOS rendszerhez készült Outlook eléréséhez szükséges
-
-Az alábbi beállítást az Intune-konzolon megjelenik, de ha konfigurálva, nem a várt módon fog működni. A probléma hamarosan lesz kijavítva:
 - Külső képek letiltása
 
 > [!NOTE]
 > Ha az Intune alkalmazásvédelmi szabályzatokat használ a vállalati identitások kezelésére, érdemes lehet nem engedélyezi az **biometrika megkövetelése**. További információkért lásd: **vállalati hitelesítő adatok megkövetelése a hozzáféréshez** a [hozzáférési beállítások iOS](app-protection-policy-settings-ios.md#access-requirements) és [Android-beállításokat](app-protection-policy-settings-android.md#access-requirements).
 
-További információkért lásd: [konfigurációs beállításai a Microsoft Outlook](app-configuration-policies-outlook.md). 
+További információkért lásd: [konfigurációs beállításai a Microsoft Outlook](app-configuration-policies-outlook.md).
 
 #### <a name="delete-android-enterprise-apps----1352553---"></a>Androidos vállalati alkalmazások törlése <!-- 1352553 -->
 Törölheti a felügyelt Google Play-alkalmazások Microsoft Intune-ból. Felügyelt Google Play alkalmazás törléséhez nyissa meg a Microsoft Intune az Azure Portalon, és válassza a **ügyfélalkalmazás** > **alkalmazások**. Az alkalmazás listában jelölje ki a három pontra (...) jobb oldalán a felügyelt Google Play-alkalmazást, majd válassza ki **törlése** a megjelenő listából. Ha egy felügyelt Google Play-alkalmazást töröl alkalmazásokat az alkalmazáslistából, a felügyelt Google Play alkalmazás automatikusan jóvá nem hagyott.

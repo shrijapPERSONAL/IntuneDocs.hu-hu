@@ -6,7 +6,7 @@ keywords: Intune-adattárház
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ccd9a14c29db5039ce0173d0c09fd3d2851755f3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4ab0674304f1e74c8bf2ad1aeecd419575484e5f
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566250"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358170"
 ---
 # <a name="reference-for-user-entity"></a>Felhasználó típusú entitás referenciája
 
@@ -40,13 +40,10 @@ A **Felhasználó** entitásgyűjtemény felhasználói adatokat tartalmaz. A re
 | UserKey |A felhasználó egyedi azonosítója az adattárházban – helyettes kulcs. |123 |
 | UserId |A felhasználó egyedi azonosítója – a UserKey-hez hasonló, de természetes kulcs. |b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail |A felhasználó e-mail címe. |John@constoso.com |
-| EGYSZERŰ FELHASZNÁLÓNÉV | A felhasználó egyszerű felhasználóneve. | John@constoso.com |
+| userPrincipalName | A felhasználó egyszerű felhasználóneve. | John@constoso.com |
 | displayName |A felhasználó megjelenítendő neve. |István |
 | IntuneLicensed |Megadja, hogy a felhasználó rendelkezik-e Intune-licenccel. |Igaz/hamis |
 | IsDeleted | Azt jelzi, hogy a felhasználó összes engedélye lejárt-e, és a felhasználót emiatt eltávolították-e az Intune-ból. Egyetlen rekord esetén ez a jelölő nem változik. Ehelyett új rekord jön létre egy új felhasználói állapothoz. |Igaz/hamis |
-| StartDateInclusiveUTC |If IsDeleted = FALSE, az a dátum és időpont (UTC), amikor a felhasználóhoz licencet rendeltek, és megjelent az Intune-ban. If IsDeleted = TRUE, az a dátum és időpont (UTC), amikor a felhasználó licencei lejártak, és eltávolították az Intune-ból. |2016.11.23. 12:00:00 |
-| EndDateExclusiveUTC |If IsDeleted = FALSE, az a dátum és időpont (UTC), amikor a felhasználó licence lejárt, és eltávolították az Intune-ból. A licenc az előző nap folyamán járt le. If IsDeleted = TRUE, az a dátum és időpont (UTC), amikor a felhasználó új licencet kapott, és ismét létrehozták az Intune-ban.  |2016.11.23. 12:00:00 |
-| IsCurrent |Azt jelzi, hogy ez a rekord a felhasználó legfrissebb állapotát mutatja-e. Egyetlen felhasználónak több rekordja is lehet, de a jelenlegi állapotot csak az egyik mutatja.  |Igaz/hamis |
 | RowLastModifiedDateTimeUTC |A rekord adattárházban történt utolsó módosításának dátuma és időpontja (UTC)  |2016.11.23. 12:00:00 |
 
 ## <a name="next-steps"></a>További lépések

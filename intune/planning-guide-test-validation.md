@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 3/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61e7bf62202877b6a20717b0774843d1a859eb47
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 9f63d396f51254f4aec99ac630b812a54ceeb405
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396922"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394940"
 ---
 # <a name="intune-testing-and-validation"></a>Az Intune tesztelése és ellenőrzése
 
@@ -44,7 +44,7 @@ Ha egy adott szerkezeti összetevő nem szerepel legalább egy olyan tesztkrité
 
 -   **Eszközök:** Tesztelési célú eszközöket gyári beállítások visszaállítása vagy tartalmának végleges törléséig.
 
--   **Integrációs összetevők:** Integrálási összetevőket (tanúsítvány-összekötő az Intune szolgáltatások közötti összekötő üzemeltetett Exchange-hez és az Intune helyszíni Exchange-összekötő) kell telepíteni, és szükség esetén konfigurálva.
+-   **Integrációs összetevők:** Integrálási összetevőket (tanúsítvány-összekötőt, és a helyszíni Intune Exchange connector) kell telepíteni, és szükség esetén konfigurálva.
 
 Az előre nem látható problémák elhárításához szerkezetátalakításokra lehet szükség. Minden szerkezeti változást teljes körűen dokumentálni kell a változás okának feltüntetésével. Az alábbi példa azt mutatja meg, mi indokolhat ilyen változást:
 

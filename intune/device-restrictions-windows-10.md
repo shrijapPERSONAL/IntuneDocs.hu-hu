@@ -1,11 +1,11 @@
 ---
 title: Eszközkorlátozási beállítások Windows 10 rendszerhez az Azure-beli Microsoft Intune-ban | Microsoft Docs
-description: Megjelenítheti az összes beállítás és a hozzájuk tartozó leírások létrehozásához eszközkorlátozások Windows 10 és újabb rendszerű eszközök listáját. A konfigurációs profil ezek a beállítások segítségével szabályozhatja a képernyőfelvételt, jelszókövetelmények, a kioszkmód, a tárolóban, a Microsoft Edge böngészőt, a Windows defender-alkalmazások, a felhőbe, a start menüben, és több Microsoft Intune-ban.
+description: Megjelenítheti az összes beállítás és a hozzájuk tartozó leírások létrehozásához eszközkorlátozások Windows 10 és újabb rendszerű eszközök listáját. A konfigurációs profil ezek a beállítások segítségével szabályozhatja a képernyőképeket, jelszókövetelmények, a kioszkmód, a tárolóban, a Microsoft Edge böngésző, a Windows defender-alkalmazások, a felhőbe, a start menüben, és több Microsoft Intune-ban.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/13/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8190365ad2b50dfa7369b8899e8984b6a52f1cba
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7ca34826f3a235fe620b5ac0dcb95d57dabf4c71
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566747"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58395000"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>A Windows 10 (és újabb) eszközbeállítások engedélyezett vagy korlátozott funkciók az Intune-nal
 
@@ -29,7 +29,7 @@ Ez a cikk és ismerteti a különböző beállításokkal szabályozhatja a Wind
 Ezek a beállítások hozzá egy eszközkonfigurációs profilt az Intune-ban, és ezután hozzárendelt vagy a Windows 10-es eszközökre telepített.
 
 > [!Note]
-> Nem minden lehetőség áll rendelkezésre a Windows összes kiadásában
+> Nem minden beállítás a Windows összes verzióján érhetők el. A támogatott kiadások megtekintéséhez tekintse meg a [házirend CSP-k](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) (megnyílik egy másik Microsoft-webhely).
 
 ## <a name="before-you-begin"></a>Előkészületek
 
@@ -59,13 +59,13 @@ Ezek a beállítások hozzá egy eszközkonfigurációs profilt az Intune-ban, �
 - **Bluetooth-észlelhetőség**: Észlelhetővé teszi az eszközt más Bluetooth-kompatibilis eszközök által.
 - **Előzetes bluetooth-párosítás**: Lehetővé teszi meghatározott Bluetooth-eszközök automatikus párosítását párosításuk konfigurálását.
 - **Bluetooth-hirdetés**: Lehetővé teszi az eszközök hirdetéseket fogadjanak Bluetooth-on keresztül.
-- **Csatlakoztatott eszközök szolgáltatás**: Döntse el, hogy a csatlakoztatott eszközök szolgáltatást, amely lehetővé teszi más Bluetooth-eszközök észlelését és lehetővé teszi lehetővé.
-- **NFC**: Lehetővé teszi, hogy a felhasználó engedélyezze és konfigurálja a szolgáltatások közelében mező kommunikáció (NFC) az eszközön.
+- **Csatlakoztatott eszközök szolgáltatás**: Lehetővé teszi a csatlakoztatott eszközök szolgáltatást, amely lehetővé teszi más Bluetooth-eszközök észlelését és engedélyezheti.
+- **NFC**: Lehetővé teszi, hogy a felhasználó engedélyezheti és konfigurálhatja a kis hatótávolságú kommunikáció (NFC) mező az eszközök funkcióit.
 - **Wi-Fi**: Lehetővé teszi, hogy a felhasználó engedélyezze és konfigurálja a Wi-Fi (csak Windows 10 Mobile esetén) az eszközön.
 - **Automatikus csatlakozás Wi-Fi elérési pontokhoz**: Az ingyenes Wi-Fi elérési pontokhoz történő automatikus csatlakozás és a kapcsolódáshoz szükséges használati feltételek automatikus elfogadásának engedélyezése az eszközön.
 - **Manuális Wi-Fi konfigurációs**: Azt szabályozza, a felhasználó konfigurálhat-e saját Wi-Fi kapcsolatokat, vagy lehet, ha csak egy Wi-Fi profil (csak Windows 10 Mobile esetén) által konfigurált kapcsolatokat használhatja azokat.
-- **Wi-Fi-ellenőrzési időköz**: Adja meg, hogy milyen gyakran eszközök Wi-Fi-hálózatok keresése. Adjon meg egy 1 (leggyakoribb) és 500 (legritkább) közötti értéket.
-- **Bluetooth-engedélyezett szolgáltatások**: Adja meg hexadecimális karakterláncok, az engedélyezett Bluetooth-szolgáltatások és a profilok listáját.
+- **Wi-Fi-ellenőrzési időköz**: Adja meg a milyen gyakran eszközök Wi-Fi-hálózatok keresése. Adja meg az érték 1 (leggyakoribb) 500 (legritkább).
+- **Bluetooth-engedélyezett szolgáltatások**: Adja meg hexadecimális karakterláncként, az engedélyezett Bluetooth-szolgáltatások és a profilok listáját.
 
 ## <a name="cloud-and-storage"></a>Felhő és tárolás
 
@@ -116,7 +116,7 @@ Ezek a beállítások hozzá egy eszközkonfigurációs profilt az Intune-ban, �
 - **Képernyőfelvétel (csak mobil)**: Lehetővé teszi, hogy a felhasználó rögzítheti képként a képernyőn.
 - **Másolás és beillesztés (csak mobileszköz)**: Másolás és Beillesztés engedélyezése az eszközön lévő alkalmazások közötti.
 - **Regisztráció manuális törlésének**: Lehetővé teszi a felhasználó számára a munkahelyi fiók manuális törlését az eszközről.
-  - A rendszer nem alkalmazza ezt a szabályzatbeállítást, ha a számítógép az Azure AD-hoz van csatlakoztatva, és engedélyezve van az automatikus regisztráció. 
+  - A házirend-beállítás nem vonatkozik, ha a számítógép az Azure AD-hez és az automatikus igénylés engedélyezve van. 
   - A szabályzatbeállítás a Windows 10 Home rendszerű számítógépekre nem vonatkozik.
 - **Főtanúsítvány manuális telepítése (csak mobil)**: Megakadályozza a felhasználó legfelső szintű tanúsítványok és köztes szolgáltatói tanúsítványok manuális telepítése.
 
@@ -138,13 +138,12 @@ Ezek a beállítások hozzá egy eszközkonfigurációs profilt az Intune-ban, �
 - **SIM kártya hibát jelző párbeszédpanele (csak mobil)**: Hibaüzenet megjelenítésének letiltása az eszközön, ha észlelhető SIM-kártya nem blokkolja.
 - **Szabadkézi munkaterület**: Letiltása a felhasználók hozzáférjenek a szabadkézi munkaterülethez. **Nincs konfigurálva** bekapcsolja az ink-munkaterületen, és a felhasználó számára engedélyezett, a zárolási képernyőn.
 - **Automatikus újbóli üzembe helyezés**: Lehetővé teszi, hogy törli az összes felhasználói adatot és beállítást rendszergazdai jogosultságokkal rendelkező felhasználóknak **CTRL + Win + R** , az eszköz zárolási képernyőjén. Ennek hatására automatikusan megtörténik az eszköz újbóli konfigurálása és regisztrálása felügyeletre.
-- **Csatlakozzon a hálózathoz (csak Windows Insider) eszköz telepítése során, hogy a felhasználók**: Válasszon **megkövetelése** , az eszköz csatlakozik a hálózathoz, mielőtt folytatná a hálózat lap korábbi Windows 10-es telepítés során. Amíg ez a funkció előzetes verziójú, a beállítás használatához a Windows Insider 1809-es buildje, vagy annál újabb verzió szükséges.
+- **Csatlakozzon a hálózathoz (csak Windows Insider) eszköz telepítése során, hogy a felhasználók**: Válasszon **megkövetelése** , az eszköz csatlakozik a hálózathoz, mielőtt folytatná a hálózat lap korábbi Windows 10-es telepítés során. Bár ez a funkció előzetes verzióban érhető el, a Windows insider build 1809 vagy újabb szükséges ezt a beállítást.
 - **Közvetlen memória-hozzáférés**: **Blokk** megakadályozza, hogy közvetlen memória-hozzáférés (DMA) az összes gyakran használt adatok moduláris PCI alsóbb rétegbeli port mindaddig, amíg a felhasználó bejelentkezik a Windows. **Engedélyezett** (alapértelmezett) engedélyezi a hozzáférést közvetlen memória-Hozzáférést, akkor is, ha egy felhasználó nem jelentkezett be.
 
   CSP: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
 
 - **Folyamatait a Feladatkezelőben**: Ez a beállítás meghatározza, hogy e nem rendszergazdák teljes feladat Feladatkezelő használható. **Blokk** általános jogú felhasználók (nem rendszergazda) megakadályozza, hogy egy folyamat vagy feladat az eszköz befejezi a Feladatkezelő használatát. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy a folyamat leállítása, vagy a feladat a Feladatkezelő használatát általános jogú felhasználók.
-
 
 ## <a name="locked-screen-experience"></a>Zárolási képernyő felülete
 
@@ -157,7 +156,7 @@ Ezek a beállítások hozzá egy eszközkonfigurációs profilt az Intune-ban, �
 
 ## <a name="messaging"></a>Üzenetkezelés
 
-- **Üzenetszinkronizálás (csak mobil)**: Tiltsa le az üzenetek mindenhol és a szöveges üzenetek biztonsági mentése és visszaállítása.
+- **Üzenetszinkronizálás (csak mobil)**: Tiltsa le az üzenetek mindenhol és a szöveges üzenet biztonsági mentése és visszaállítása.
 - **MMS (csak mobilon)**: Az eszközön az MMS küldése/fogadása funkció letiltása.
 - **RCS (csak mobil)**: Az eszközön a gazdag kommunikációs szolgáltatások küldése/fogadása funkció letiltása.
 
@@ -168,25 +167,25 @@ Ezek a beállítások hozzá egy eszközkonfigurációs profilt az Intune-ban, �
 A rendelkezésre álló beállítások a kiválasztott beállításoktól függően módosítsa. A választható lehetőségek:
 
 - **Nem** (alapértelmezett): Teljes képernyős mód nem futó Microsoft Edge. Módosíthatja, és konfigurálhatja a Microsoft Edge-beállítások érhetők el.
-- **Digitális és interaktív aláírási (Egyalkalmazásos kioszk)**: Megfelelő digitális és interaktív aláírási Edge teljes képernyős mód a szűrők Edge-beállítások csak a Windows 10-es Egyalkalmazásos kioszk használja. Ezzel a beállítással nyisson meg egy URL-cím teljes képernyőn válassza ki, és csak a tartalom megjelenítése az adott webhelyre. [Állítsa be a digitális jelentkezik](https://docs.microsoft.com/windows/configuration/setup-digital-signage) Ez a szolgáltatás további információkkal szolgál.
-- **InPrivate-nyilvános böngészés (Egyalkalmazásos kioszk)**: Az InPrivate-nyilvános böngészés Edge teljes képernyős mód a szűrők Edge-beállítások Windows 10-es Egyalkalmazásos kioszk használja. A Microsoft Edge több lapon verzióját futtatja.
-- **Normál üzemmódban (többalkalmazásos kioszk)**: Edge-beállítások, amelyek alkalmazhatók a normál Edge kioszk mód szűri. A Microsoft Edge teljes-verziója fut az összes böngészési funkció.
-- **Nyilvános tallózása (többalkalmazásos kioszk)**: Edge-beállítások, amelyek alkalmazhatók a nyilvános-böngészést a Windows 10 rendszerű többalkalmazásos kioszk szűri.  A Microsoft Edge InPrivate több lapon verzióját futtatja.
+- **Digitális és interaktív aláírási (Egyalkalmazásos kioszk)**: Megfelelő digitális és interaktív aláírási a Microsoft Edge teljes képernyős mód a szűrők Microsoft Edge-beállítások csak a Windows 10-es Egyalkalmazásos kioszk használja. Ezzel a beállítással nyisson meg egy URL-cím teljes képernyőn válassza ki, és csak a tartalom megjelenítése az adott webhelyre. [Állítsa be a digitális jelentkezik](https://docs.microsoft.com/windows/configuration/setup-digital-signage) Ez a szolgáltatás további információkkal szolgál.
+- **InPrivate-nyilvános böngészés (Egyalkalmazásos kioszk)**: Az InPrivate-nyilvános böngészés a Microsoft Edge teljes képernyős mód a szűrők Microsoft Edge-beállítások Windows 10-es Egyalkalmazásos kioszk használja. A Microsoft Edge több lapon verzióját futtatja.
+- **Normál üzemmódban (többalkalmazásos kioszk)**: Microsoft Edge-beállítások, amelyek alkalmazhatók a normál Microsoft Edge kioszk mód szűri. A Microsoft Edge teljes-verziója fut az összes böngészési funkció.
+- **Nyilvános tallózása (többalkalmazásos kioszk)**: Microsoft Edge-beállítások, amelyek alkalmazhatók a nyilvános-böngészést a Windows 10 rendszerű többalkalmazásos kioszk szűri.  A Microsoft Edge InPrivate több lapon verzióját futtatja.
 
 > [!TIP]
 > Ezek a beállítások mire a további információkért lásd: [Microsoft Edge kioszk mód konfigurációs típusok](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
 
 Az eszközkorlátozások profiljának közvetlenül kapcsolódik ahhoz a teljes képernyős profil létrehozásakor használja a [Windows kioszkmód](kiosk-settings-windows.md). Összefoglalásképpen:
 
-1. Hozzon létre a [Windows kioszkmód](kiosk-settings-windows.md) profil az eszköz kioszk módban futtatni. Válassza ki a Microsoft Edge, az alkalmazás és az Edge teljes képernyős üzemmód beállítása a teljes képernyős profilban.
-2. A jelen cikkben ismertetett eszközkorlátozások profiljának létrehozása, és a funkciók és a Microsoft Edge-ben engedélyezett beállításainak konfigurálása. Ügyeljen arra, hogy ugyanolyan Edge teljes képernyős mód típusú, mint a teljes képernyős profilban kijelölt kiválasztása ([Windows kioszkmód](kiosk-settings-windows.md)). 
+1. Hozzon létre a [Windows kioszkmód](kiosk-settings-windows.md) profil az eszköz kioszk módban futtatni. Válassza ki a Microsoft Edge, az alkalmazást, és állítsa be a Microsoft Edge teljes képernyős mód a teljes képernyős profilban.
+2. A jelen cikkben ismertetett eszközkorlátozások profiljának létrehozása, és a funkciók és a Microsoft Edge-ben engedélyezett beállításainak konfigurálása. Ügyeljen arra, hogy válassza ki az ugyanazon Microsoft Edge teljes képernyős mód, a teljes képernyős profilban kijelölt ([Windows kioszkmód](kiosk-settings-windows.md)). 
 
     [Kioszk mód beállításainak támogatott](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-policies-for-kiosk-mode) egy nagyszerű forrás.
 
 > [!IMPORTANT] 
 > Ügyeljen arra, hogy a Microsoft Edge-profil hozzárendelése ugyanazokkal az eszközökkel, mint a teljes képernyős profil ([Windows kioszkmód](kiosk-settings-windows.md)).
 
-CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
+[ConfigureKioskMode CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
 
 ### <a name="start-experience"></a>Indítsa el a felhasználói élményt
 
@@ -204,7 +203,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
   - **Egyéni kezdőlap gombot URL-cím**: A kiválasztott lehetőség a **gomb URL-cím otthoni** megnyílik beállítása
   - **Elrejtése kezdőképernyő gombra**: A kezdőlap gombjának elrejtése
 - **A felhasználó megváltoztathatja a kezdőképernyő gombra**: **Lehetővé teszi** lehetővé teszi a felhasználóknak, módosítsa a home gombra. A felhasználó módosításait felülbírálása bármely rendszergazdai beállításait a home gombra. **Nincs konfigurálva** használ az operációs rendszer alapértelmezett viselkedést az eszközön, amelyek blokkolhatják a felhasználók nem módosíthatják, hogy a rendszergazda konfigurált home gombra.
-- **Első futtatás élmény lap megjelenítése**: **Blokk** leállítja a bemutató lap megjelenítését az első alkalommal futtatása a Microsoft Edge. Ez a funkció lehetővé teszi a vállalatok – például regisztrált nulla kibocsátási konfigurációkban blokkolja ezen a lapon. **Nincs konfigurálva** a bevezetés oldalt mutatja.
+- **Első futtatás élmény lap megjelenítése**: **Blokk** leállítja a bemutató lap megjelenítését az első alkalommal futtatása a Microsoft Edge. Ez a funkció lehetővé teszi a vállalatok – például azon szervezetek regisztrált nulla kibocsátási konfigurációkban blokkolja ezen a lapon. **Nincs konfigurálva** a bevezetés oldalt mutatja.
   - **Először futtassa a felhasználói élményt URL-cím**: Adja meg az oldal URL-cím megjelenítéséhez egy felhasználó első alkalommal futtatja az Microsoft Edge (csak Windows 10 Mobile esetén).
 - **Üresjárati idő után frissítse a böngészőt**: Adja meg az üresjárati perc után a böngésző frissítése, a 0 – 1440 perc. Alapértelmezett érték a `5` perc. Ha a beállítása `0` (nulla), a böngésző nem frissül üresjárat után.
 
@@ -300,7 +299,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **Jelszó**: Megköveteli a végfelhasználótól, hogy jelszót adjon meg az eszköz eléréséhez.
   - **Kötelező jelszótípus**: Meghatározza, hogy a jelszót kell numerikus csak, vagy számokat és.
   - **Jelszó minimális hossza**: Csak a Windows 10 Mobile verzióra vonatkozik.
-  - **Bejelentkezési hibák eszköz törlése előtt**: A Windows 10 rendszerű eszközökhöz: Ha a BitLocker engedélyezve van az eszközön, azt van a BitLocker helyreállítási módjába jelentkezzen be a megadott számú sikertelen kísérlet után. Ha az eszköz nincs engedélyezve a BitLocker, ez a beállítás nem vonatkozik. Windows 10 Mobile rendszerű eszközökhöz: Jelentkezzen be, hogy hányszor adja meg, hogy nem sikerül, miután a rendszer törölné az eszközt.
+  - **Bejelentkezési hibák eszköz törlése előtt**: A Windows 10 rendszerű eszközökhöz: Ha a BitLocker engedélyezve van az eszközön, azt van a BitLocker helyreállítási módjába jelentkezzen be a megadott számú sikertelen kísérlet után. Ha az eszköz nincs engedélyezve a BitLocker, ez a beállítás nem vonatkozik. Windows 10 Mobile rendszerű eszközökhöz: Miután a bejelentkezés nem sikerül, hogy hányszor adhatja meg, a rendszer törölné az eszközt.
   - **Ennyi perc inaktivitás képernyőzárolás**: Meghatározza, hogy az eszköznek mennyi ideig kell tétlennek lennie a képernyő zárolása előtt.
   - **Jelszó érvényessége (napokban)**: Meghatározza, hogy mennyi idő elteltével kell módosítani a jelszót.
   - **Korábbi jelszavak újbóli használatának tiltása**: Ez a beállítás az eszköz által megjegyzett korábbi jelszavak számát határozza meg.
@@ -331,7 +330,7 @@ Az egyes alkalmazásokhoz beállíthat az alapértelmezett adatvédelmi beállí
 - **Telefonos**: Adja meg, hogy az alkalmazás hozzáférhet-e a telefonhoz.
 - **Antennákhoz való**: Egyes alkalmazások rádiófrekvenciás (például Bluetooth) az eszköz küldhet és fogadhat adatokat, és ezeket a rádiófrekvenciás kapcsolatokat kapcsolhatja be és ki kell. Megadhatja, hogy az alkalmazás kezelheti-e ezeket az antennákat.
 - **Feladatok**: Adja meg, hogy az alkalmazás hozzáférhet-e a feladatokhoz.
-- **Megbízható eszközök**: Válassza ki, ha az alkalmazás használhat megbízható eszközök már csatlakoztatott hardverre vagy hardver, az eszköz. Például használja televízióra, projektorokat stb, megbízható eszközként.
+- **Megbízható eszközök**: Válassza ki, ha az alkalmazás használhat-e megbízható eszközöket. Megbízható eszközök lesznek a már csatlakoztatott hardver és a hardver, az eszköz. Például használja televízióra, projektorokat stb, megbízható eszközként.
 - **Visszajelzés és diagnosztika**: Határozza meg, hogy az alkalmazás hozzáférhet-e diagnosztikai adatokat.
 - **Szinkronizálás eszközökkel**: Válassza ki, ha az alkalmazás automatikusan megoszthatja és szinkronizálhat-e olyan vezeték nélküli eszközökkel, amelyek nincsenek kifejezetten párosítva az eszköz az adatokat.
 
@@ -352,7 +351,7 @@ Az egyes alkalmazásokhoz beállíthat az alapértelmezett adatvédelmi beállí
 - **Felhasználói tevékenységek közzététele**: **Blokk** megakadályozza, hogy a megosztott élmények és a feladatváltóban nemrég használt erőforrások.
 - **Csak a helyi tevékenységek**: **Blokk** megakadályozza, hogy a megosztott élmények és a legutóbb használt erőforrások a feladatváltóban, csak a helyi tevékenység alapján.
 
-Beállíthatja, hogy az eszközön lévő összes alkalmazás által elérhető információkat. Definiálhat kivételeket alkalmazásonként az **Alkalmazásonkénti adatvédelmi kivételek** segítségével.
+Beállíthatja, hogy az eszközön lévő összes alkalmazás által elérhető információkat. Kivételeket is, meghatározni egy alkalmazásonkénti alapja az **alkalmazásonkénti adatvédelmi kivételek**.
 
 ### <a name="exceptions"></a>Kivételek
 
@@ -371,7 +370,7 @@ Beállíthatja, hogy az eszközön lévő összes alkalmazás által elérhető 
 - **Telefonos**: Adja meg, hogy az alkalmazás hozzáférhet-e a telefonhoz.
 - **Antennákhoz való**: Egyes alkalmazások rádiófrekvenciás (például Bluetooth) az eszköz küldhet és fogadhat adatokat, és ezeket a rádiófrekvenciás kapcsolatokat kapcsolhatja be és ki kell. Megadhatja, hogy az alkalmazás kezelheti-e ezeket az antennákat.
 - **Feladatok**: Adja meg, hogy az alkalmazás hozzáférhet-e a feladatokhoz.
-- **Megbízható eszközök**: Válassza ki, ha az alkalmazás használhat-e megbízható eszközöket. Megbízható eszközök már csatlakoztatott hardverre, vagy a hardver, az az eszköz. Ha például használja televízióra, kivetítőkről, és így tovább megbízható eszközként.
+- **Megbízható eszközök**: Válassza ki, ha az alkalmazás használhat-e megbízható eszközöket. Megbízható eszközök lesznek a már csatlakoztatott hardver és a hardver, az eszköz az. Például használja televízióra, projektorokat stb, megbízható eszközként.
 - **Visszajelzés és diagnosztika**: Válassza ki, ha az alkalmazás hozzáférhet-e diagnosztikai adatokat.
 - **Szinkronizálás eszközökkel** – Megadhatja, hogy az alkalmazás oszthat-e meg és szinkronizálhat-e adatokat automatikusan olyan vezeték nélküli eszközökkel, amelyek nincsenek kifejezetten párosítva az adott PC-vel, táblagéppel vagy telefonnal.
 
@@ -393,7 +392,7 @@ Beállíthatja, hogy az eszközön lévő összes alkalmazás által elérhető 
   - **Csak az intranetes adatok küldése**: A rendszergazda az intranetes adatok előzményei küldése
   - **Csak internetes adatküldés**: Lehetővé teszi a rendszergazdák küldése az internet-adatok előzményei
   - **Intranetes és internetes adatküldés**: A rendszergazda az intranetes és internetes adatok előzményei küldése
-- **Telemetria proxykiszolgálója**: Adja meg a teljesen minősített tartománynevét (FQDN) vagy az összekapcsolt felhasználói élmények és Telemetria kérelmek, a Secure Sockets Layer (SSL)-kapcsolat használatával továbbítsa a proxykiszolgáló IP-címét. a következő formátumban: *kiszolgáló*:*port*. Ha az elnevezett proxy meghibásodik, vagy ha ez a szabályzat engedélyezve van a megadott proxy nem létezik, az összekapcsolt felhasználói élmények és Telemetria-adatokat nem érkezik meg, és a helyi eszközön marad.
+- **Telemetria proxykiszolgálója**: Adja meg a teljesen minősített tartománynevét (FQDN) vagy az összekapcsolt felhasználói élmények és Telemetria kérelmek, a Secure Sockets Layer (SSL)-kapcsolat használatával továbbítsa a proxykiszolgáló IP-címét. a következő formátumban: *kiszolgáló*:*port*. Ha az elnevezett proxy meghibásodik, vagy ha a proxy nem adott meg, ha e szabályzat engedélyezésével, az összekapcsolt felhasználói élmények és Telemetria-adatokat nem érkezik, és a helyi eszközön marad.
 
   Példák a formátumra:
 
@@ -467,24 +466,46 @@ Beállíthatja, hogy az eszközön lévő összes alkalmazás által elérhető 
 - **Minden letöltött fájl vizsgálata**: Meghatározza, hogy a Defender az internetről letöltött összes fájlt megvizsgálja-e.
 - **Microsoft-webböngészőkben betöltött szkriptek vizsgálata**: Engedélyezi a Defender számára az Internet Explorer által használt parancsfájlok vizsgálatát.
 - **Végfelhasználói hozzáférés a Defenderhez**: Azt szabályozza, hogy a Windows Defender kezelőfelülete rejtett legyen-e a végfelhasználók számára. Módosítás esetén a beállítás a felhasználó számítógépének következő újraindításakor lép érvénybe.
-- **Aláírás-frissítési időköz (óra)**: Adja meg, melyik Defender ellenőrzi időközönként keressen új aláírásfájlokat.
+- **Aláírás-frissítési időköz (óra)**: Adja meg az időközt Defender ellenőrzi keressen új aláírásfájlokat.
 - **Fájl- és programtevékenység figyelése**: Engedélyezi a Defender számára az eszközökön zajló a fájl- és programtevékenységet.
-- **Ennyi nap után törlődjenek karanténba zárt kártevők**: A megadott számú napig engedélyezi a Defender számára az ártalmatlanított kártevők további követését a korábban érintett eszközök manuális ellenőrzése céljából. Ha a napok száma **0**, kártevő a karanténban marad, és nem törlődik automatikusan.
-- **CPU-használati korlát ellenőrzés közben**: Lehetővé teszi a vizsgálatok processzorhasználatának korlátozását (**1**-től **100**-ig).
+- **Ennyi nap után törlődjenek karanténba zárt kártevők**: A követés folytatásához az ártalmatlanított kártevő szoftvereket a napok, adja meg, így manuálisan lehessen ellenőrizni a korábban érintett eszközök száma. Ha a napok száma **0**, kártevő a karanténban marad, és nem törlődik automatikusan.
+- **CPU-használati korlát ellenőrzés közben**: Korlátozza a CPU, amelyek vizsgálatok használja, a **1** való **100**.
 - **Archív fájlok ellenőrzése**: Engedélyezi a Defender számára az archív fájlok – például ZIP- vagy CAB-fájlok – vizsgálatát.
 - **A bejövő e-mailek vizsgálata**: Engedélyezi a Defender számára az eszközre érkező e-mailek azonnal vizsgálatát.
 - **Cserélhető adathordozók vizsgálata teljes vizsgálat során**: Engedélyezi a Defender számára a cserélhető meghajtók, például a pendrive-ok vizsgálatát.
 - **Csatlakoztatott hálózati meghajtók vizsgálata teljes vizsgálat során**: Engedélyezi a Defender számára a csatlakoztatott hálózati meghajtókon tárolt fájlok vizsgálatát.
   Ha a meghajtó a fájlok írásvédettek, a Defender nem távolítható el a bennük talált kártevőket.
 - **Hálózati mappákból megnyitott fájlok vizsgálata**: Lehetővé teszi, hogy a Defender számára a megosztott hálózati meghajtókon (például az egy UNC elérési útvonalon megnyitott fájlokat) fájlok vizsgálatát. Ha a meghajtó a fájlok írásvédettek, a Defender nem távolítható el a bennük talált kártevőket.
-- **A felhő védelmi**: Engedélyezi vagy letiltja, hogy a rendszer adatokat küldjön a Microsoft Active Protection Service számára a felügyelt eszközökön észlelt kártevőkről. Ezek az adatok a szolgáltatás további fejlesztésére szolgálnak.
+- **A felhő védelmi**: Engedélyezi vagy letiltja, hogy a rendszer adatokat küldjön a Microsoft Active Protection Service számára a felügyelt eszközökön észlelt kártevőkről. Ezt az információt későbbi javítja a szolgáltatás.
 - **Rákérdezés a mintaküldés előtt**: E vélhetően kártevő fájlokat, előfordulhat, hogy amelyeken további vizsgálat szükséges vezérlők a rendszer automatikusan elküldje a Microsoftnak.
-- **Napi Gyorsvizsgálat időpontja**: Minden nap a választott időben végzett gyorsvizsgálat beütemezését teszi lehetővé.
-- **Rendszervizsgálat típusa**: Rendszervizsgálat ütemezése van futtatott vizsgálata szintjét adja meg.
+- **Napi Gyorsvizsgálat időpontja**: Válassza ki a napi Gyorsvizsgálat futtatása az órát. **Nincs konfigurálva** napi vizsgálat nem fut le. Ha azt szeretné, hogy további testreszabási, konfigurálja a **rendszervizsgálat típusa** beállítás.
+
+  [Defender/ScheduleQuickScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
+- **Rendszervizsgálat típusa**: Ütemezett, beleértve a vizsgálata, és és az idő az ellenőrzési szintjét. A választható lehetőségek:
+  - **Nincs konfigurálva**: Nem ütemezett az eszközön. A végfelhasználók manuálisan futtatható vizsgálatok szükséges vagy állásának saját eszközeiken.
+  - **Tiltsa le**: Letiltja a bármely olyan rendszeren, az eszköz vizsgálatát. Válassza ezt a lehetőséget, ha egy víruskereső partnermegoldást, a eszközöket használ.
+  - **Gyorsvizsgálat**: Úgy tűnik, közös helyen, ahol kártevők lehetnek regisztrálva, például a beállításkulcsok és az ismert indítási Windows-mappák.
+    - **Ütemezett nap**: Válassza ki a vizsgálat futtatása a nap.
+    - **Ütemezett időpont**: Válassza ki a órák futtatni a vizsgálatot.
+  - **Teljes vizsgálat**: Úgy tűnik, közös helyen lévő ahol lehetséges, hogy kártevő regisztrálja, és szintén átvizsgálja a minden fájl és mappa az eszközön.
+    - **Ütemezett nap**: Válassza ki a vizsgálat futtatása a nap.
+    - **Ütemezett időpont**: Válassza ki a órák futtatni a vizsgálatot.
+
+  Ez a beállítás ütközést idézhet elő a **napi Gyorsvizsgálat időpontja** beállítás. Néhány javaslat:
+
+  - Napi Gyorsvizsgálat futtatása, konfigurálja a **napi Gyorsvizsgálat időpontja** beállítás.
+  - Napi gyors vizsgálat és a egy teljes vizsgálat minden héten futtatásához, majd konfigurálja a **napi Gyorsvizsgálat időpontja**, és állítsa be **rendszervizsgálat típusa** , és az idő a teljes vizsgálat.
+  - Ne konfigurálja a **napi Gyorsvizsgálat időpontja** beállítás egyidejűleg a a **rendszervizsgálat típusa** beállítása **Gyorsvizsgálat**. Ezek a beállítások ütközhetnek, és a vizsgálat nem fog futni.
+  - Futtasson egy gyors vizsgálatot minden kedden reggel 6 Órakor, konfigurálja a **rendszervizsgálat típusa** beállítás.
+
+  [Defender/ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
+  [Defender/ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
+  [Defender/ScheduleScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
+
 - **Vélhetően nemkívánatos alkalmazások észlelése**: Válassza a védelem szintjét, amikor a Windows észleli a vélhetően nemkívánatos alkalmazások:
   - **Tiltás**
   - **Naplózási** vélhetően nemkívánatos alkalmazásokkal kapcsolatos további információkért lásd: [észlelése és a blokk vélhetően nemkívánatos alkalmazások](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
-- **Kártevők észlelése műveletek**: Ez a beállítás segítségével válassza ki a műveleteket, amelyeket a Defender milyen fenyegetési szinteken (alacsony, közepes, magas és súlyos) észlel. A választható lehetőségek:
+- **Kártevők észlelése műveletek**: Válassza ki a műveleteket, amelyeket a Defender milyen észlelt fenyegetési szinteken: alacsony, közepes, magas és súlyos. A választható lehetőségek:
   - **Tisztítás**
   - **Karantén**
   - **Eltávolítás**

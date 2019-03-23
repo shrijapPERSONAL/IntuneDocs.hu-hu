@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/20/2019
+ms.date: 03/21/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0f15eb4aecc1c4c71420df7036a7d143ba298cd
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8d5c26c53e5d1a8e8d0e02a227b84d9e5ebea83c
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460891"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358248"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Eszközök eltávolítása összes adatuk törlésével, az eszköz kivonásával vagy regisztrációja manuális törlésével
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-A **Kivonás** vagy az **Összes adat törlése** művelettel eltávolíthatja az eszközt az Intune-ból, ha az eszközre már nincs szükség, azt egy megváltozott célra használják, vagy ha elveszett. A saját tulajdonban lévő, Intune-ban regisztrált eszközeikre a felhasználók is kiadhatnak egy távoli parancsot az Intune céges portálon keresztül.
+A **Kivonás** vagy az **Összes adat törlése** művelettel eltávolíthatja az eszközt az Intune-ból, ha az eszközre már nincs szükség, azt egy megváltozott célra használják, vagy ha elveszett. Felhasználók is kiadhatnak egy távoli parancsot az Intune vállalati portál az Intune-ban regisztrált eszközökre.
 
 > [!NOTE]
 > Mielőtt eltávolítana egy felhasználót az Azure Active Directoryból (Azure AD), adjon ki egy **Kivonás** vagy egy **Összes adat törlése** parancsot az adott felhasználóhoz rendelt összes eszközre. Ha felügyelt eszközzel rendelkező felhasználókat távolít el az Azure AD-ból, akkor az Intune már nem fogja tudni törölni ezeknek az eszközöknek az összes adatát, vagy kivonni az eszközöket.

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2310f9720c64301a3ea25631e1e8688d88a001e4
-ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
+ms.openlocfilehash: 5612ae0ea6c1495fdf12e85bbed80e54bc3f287f
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58306821"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394643"
 ---
 # <a name="in-development-for-microsoft-intune---march-2019"></a>A Microsoft Intune-hoz – március 2019 fejlesztés alatt
 
@@ -56,15 +56,6 @@ Láthatja, hogy egy hatókörcímkét hozzá alkalmazás-konfigurációs házire
 ### <a name="assign-autopilot-profiles-to-the-all-devices-virtual-group---2715522---"></a>Az Autopilot-profilok hozzárendelése az összes virtuális eszközök csoport <!--2715522 -->
 Autopilot-profilokat rendelhet hozzá a Minden eszköz virtuális csoporthoz. Ehhez válassza az **Eszközök beléptetése** > **Windows-regisztráció** > **Telepítési profilok** elemet > válasszon egy profilt > **Hozzárendelések** > a **Hozzárendelés a következőhöz** elemnél válassza a **Minden eszköz** lehetőséget. Az Autopilot-profilokról a [Windows-eszközök regisztrálása a Windows AutoPilot használatával](enrollment-autopilot.md) című cikkben tájékozódhat.
 
-### <a name="install-available-apps-using-the-company-portal-app-after-windows-bulk-enrollment----2751523----"></a>A céges portál alkalmazás használata a Windows tömeges beléptetése után rendelkezésre álló alkalmazások telepítése <!-- 2751523  -->
-Az Intune-ban regisztrált Windows-eszközök [Windows csoportos regisztrálás](windows-bulk-enroll.md) (kiépítési csomagok) tudják a vállalati portál alkalmazás segítségével telepítik az elérhető alkalmazásokat. A vállalati portál alkalmazással kapcsolatos további információkért lásd: [adja hozzá manuálisan a Windows 10-es céges portál](store-apps-company-portal-app.md) és [a Microsoft Intune vállalati portál alkalmazás konfigurálása](company-portal-app.md).
-
-### <a name="scope-tags-for-ios-app-provisioning-profiles---2934430---"></a>Hatókörcímkék az iOS-alkalmazáskiépítési profilok <!--2934430 -->
-Láthatja, hogy egy hatókörcímkét hozzá egy IOS-es alkalmazáskiépítési profil, így csak is az adott hatókörcímke hozzárendelt szerepkörrel rendelkező személyek hozzáférhetnek az IOS-es alkalmazáskiépítési profil. 
-
-### <a name="office-deployment-tool-odt-xml-for-office-proplus-deployment----3192477----"></a>Az Office központi telepítési eszköz (ODT) XML for Office ProPlus üzembe helyezéséhez <!-- 3192477  -->
-Láthatja, hogy az Office központi telepítési eszköz (ODT) XML szolgáltatni Office Pro Plus példányának létrehozása az Intune felügyeleti konzolon. Ez lehetővé teszi a testreszabhatóság nagyobb, ha a meglévő Intune felhasználói felület beállításai nem felelnek meg az igényeinek. 
-
 ###  <a name="block-users-from-scanning-for-windows-updates-------3316758------"></a>A felhasználók a Windows-frissítések keresése    <!-- 3316758    -->
 Adunk hozzá egy új Windows frissítési kör beállítás, amely használható, amely letiltja a felhasználók a Windows-frissítések keresése. Ez a beállítás nem lesz elérhető a portálon, de konfigurálható az Intune Graph API használatával.
 
@@ -79,27 +70,6 @@ IOS-hez készült céges portál fog frissülni, az alkalmazás regisztrációs 
 - Térjen vissza a céges portál alkalmazás regisztráció elvégzését.  
 
 Hogyan készítheti elő a módosítások kapcsolatos további információkért lásd: a [a Microsoft technikai Közösség post](https://aka.ms/CP_changes_iOS12). Addig is támogatásához új iOS-regisztrációk vállalati portálon, hogy frissítettük lépéseit [iOS-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/en-us/intune/ios-enroll). Doc módosítások után az Apple iOS-verziót 12.2 kiadások lesz élő. 
-
-### <a name="support-for-additional-connectors-on-the-tenant-status-page----3617202-------"></a>A bérlő állapotának oldalon további összekötők támogatása <!-- 3617202     -->
-A bérlő állapotának oldal jelenik meg, kiegészítő jellegű összekötő, beleértve az állapotadatait *Windows Defender komplex veszélyforrások elleni védelem* (ATP) és egyéb Mobile Threat Defense-összekötők.
-
-### <a name="granting-intune-read-only-access-to-some-azure-active-directory-roles----3637917---"></a>Csak bizonyos Azure Active Directory-szerepkör való hozzáférés biztosítása az Intune-ban olvasása <!-- 3637917 -->
-Azt fogjuk engedélyező Intune-ban, olvassa el a következő Azure AD-szerepkörök csak a hozzáférést. Az Azure AD-szerepkörökhöz rendelt engedélyeket váltja fel az Intune szerepköralapú hozzáférés-vezérlés (RBAC) az adott engedélyek.
-
-Olvassa el az Intune-naplózási adatokat csak a hozzáférést:
-
-- Szabályozási ügyintéző
-- Megfelelőségi adatok rendszergazda
-
-Csak olvasásra jogosító hozzáférés Intune-ban tárolt összes:
-
-- Biztonsági rendszergazda
-- Biztonsági operátor
-- Biztonsági olvasó
-- Globális olvasó
-
-### <a name="easier-access-to-diagnostic-settings------3804627-----"></a>Könnyebb elérhetőség érdekében a diagnosztikai beállítások   <!-- 3804627   -->
-Adunk hozzá egy új lehetőség a **Auditnaplók** paneljén, amellyel közvetlenül nyissa meg az Intune-konzolon minden napló számítási minden a *diagnosztikai beállítások* lap.
 
 ### <a name="create-and-use-device-configuration-profiles-on-android-zebra-devices-in-intune----3895244----"></a>Létrehozhat és használhat eszközkonfigurációs profilok Android Zebra eszközökön az Intune-ban <!-- 3895244  -->
 Az Intune konfigurálása Android Zebra eszközöket támogatja. Pontosabban, képes lesz: 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cdbe2c34f9e0bfb05324d7030ad27ce664fcfb76
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4592820500cebddcdafc9d9e86caeeb1addc93a3
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461081"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358198"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Gyakori kérdések az MAM-ről és az alkalmazásvédelemről
 
@@ -171,6 +171,27 @@ Az Intune alkalmazásvédelmi hozzáférési szabályzatai adott sorrendben lép
 
 Különböző beállítások esetén először a az alkalmazás verziókövetelménye, majd az androidos operációs rendszer verziókövetelménye és végül az androidos biztonsági javítási verzió követelménye kerül sorra. Ezt követi a beállításokra vonatkozó figyelmeztetések végrehajtása ugyanebben a sorrendben.
 
+**Az Intune alkalmazásvédelmi szabályzatai lehetőséget a rendszergazdák számára szükséges végfelhasználói eszközöket át a Google SafetyNet-igazolás Android-eszközökhöz. Milyen gyakran van egy új SafetyNet-igazolás eredményt a szolgáltatásnak küldött?** <br><br> Az Intune szolgáltatás által meghatározott időközönként egy új Google Play szolgáltatás meghatározása jelentést küld a rendszergazdának. A szolgáltatás hívást kezdeményez milyen gyakran Tranzakciókorlát elérése miatt, így ez az érték belsőleg fenn lesz tartva és nem konfigurálható. Minden rendszergazda számára a Google SafetyNet-igazolás beállítás megnyílik alapján az utolsó jelentett eredmény található az Intune szolgáltatás a feltételes indítási időpontjában művelet konfigurálva. Ha nem szerepel megjeleníthető adat, hozzáférés engedélyezett lesz függően nem más sikertelen feltételes indítás ellenőrzését, és a Google Play szolgáltatást "körbejárási" meghatározásához igazolási eredmények lesz a háttérrendszer kezdődnek, és aszinkron módon kéri a felhasználótól, ha az eszközön nem sikerült. Elavult adatok esetén hozzáférést kell letiltott vagy engedélyezett függően az utolsó jelentett eredmény, és ehhez hasonlóan a Google Play szolgáltatást "körbejárási" igazolási eredmények meghatározásához fog megkezdése és aszinkron módon kéri a felhasználótól, ha az eszközön nem sikerült.
+
+**Az Intune alkalmazásvédelmi szabályzatai lehetőséget a rendszergazdák számára szükséges végfelhasználói eszközöket küldhet a Google ellenőrzése alkalmazások API-val Android-eszközökhöz. Hogyan a felhasználó bekapcsolhatja az alkalmazás-ellenőrzés, hogy azok nincs letiltva a hozzáférés miatt ez?**<br><br> Ehhez útmutatást az eszköz kissé eltérőek lehetnek. Általános folyamata magában foglalja a Google Play Store fog, majd kattintson a **saját alkalmazások és játékok**, majd a legutóbbi alkalmazás vizsgálat eljut a Play Protect menüben eredménye. Győződjön meg, hogy a váltógomb a **biztonsági fenyegetések keresése az eszközön** át lett váltva a.
+
+**Mi nem a Google SafetyNet igazolás API ténylegesen ellenőrizni az Android-eszközökön? Mi a különbség a konfigurálható az alapvető integritás ellenőrzése"és"alapvető integritás ellenőrzés és tanúsított eszközök"?** <br><br>
+Az Intune kihasználja a Google Play védelme SafetyNet API-k hozzáadása a nem regisztrált eszközök a meglévő legfelső szintű észlelési ellenőrzése. Google fejlesztett ki és karbantartani fogad el, ha nem szeretnék a feltört eszközökön futó alkalmazások Android-alkalmazások beállítása az API. Az Android fizetés alkalmazás rendelkezik beépített, például. Google ossza meg nyilvánosan a legfelső szintű észlelési ellenőrzéseket végez a teljes, miközben várhatóan ezen API-k, felhasználók, akik rendelkezik rootolt eszközök észleléséhez. Ezek a felhasználók is majd férhessenek hozzá, vagy a házirend törlése a vállalati fiókokra támogató alkalmazások esetében. "Az alapvető integritás ellenőrzése" bemutatja, ha az eszköz általános sértetlenségét. Feltört eszközök, emulátory systému, virtuális eszközök és eszközöket az illetéktelen módosítása sikertelen alapvető integritás jeleit. "Alapvető integritás ellenőrzés és tanúsított eszközök" bemutatja, hogy az eszköz kompatibilis-e a Google services. Csak a Google által hitelesített módosítás nélküli eszközök továbbíthatja ezt az ellenőrzést. Eszközök, amelyek sikertelen lesz a következők:
+* Alapvető integritás tevő eszközök
+* Egy nem zárolt rendszerbetöltőt rendelkező eszközök
+* A rendszer egyéni rendszerkép vagy ROM-RÓL rendelkező eszközök
+* Eszközök, amelynek a gyártó nem a alkalmazni, vagy adja át, a Google hitelesítő 
+* Az Android Open Source Program forrásfájlok közvetlenül a beépített lemezkép-eszközök
+* Béta/developer preview rendszerkép-eszközök
+
+Lásd: [dokumentációja a Google SafetyNet-igazolás](https://developer.android.com/training/safetynet/attestation) a technikai részletekért.
+
+**Nincsenek a feltételes indítási szakaszban két hasonló ellenőrzés Android-eszközökhöz az Intune alkalmazásvédelmi szabályzat létrehozásakor. E igénylő, a "SafetyNet eszközigazolás" beállítást vagy a "jailbreakelt vagy rootolt eszközök" beállítást?** <br><br>
+A Google Play Protect a SafetyNet API ellenőrzések megköveteli a végfelhasználótól online, hogy az idő, amikor végrehajtja a "körbejárási" igazolási eredmények meghatározásához időtartamának legalább. Ha a felhasználó kapcsolat nélküli üzemmódban, rendszergazda továbbra is várható egy eredményt a kényszeríti ki az "jailbreakelt vagy rootolt eszközök" beállítást. A kapcsolat, ha a felhasználó túl hosszú ideig van offline állapotban, az "Offline türelmi időszak" play és az összes érték kerül eléréséhez működik, vagy iskolai adatok elérésekor, hogy az időzítő értéke, amíg nem érhető el a hálózati hozzáférés le van tiltva. Ne tudják bekapcsolni a két beállítás lehetővé teszi a mobil eszközök kifogástalan állapotú, akkor fontos, ha a végfelhasználók hozzáférési működik, amely gondoskodik a végfelhasználó vagy az iskolai adatok rétegelt megközelítést. 
+
+**Az alkalmazásvédelmi szabályzat beállításait, melyek a Google Play védelme API-kat a Google Play-szolgáltatások működéséhez szükséges. Mi történik, ha a Google Play-szolgáltatások nem engedélyezettek a helyen, ahol a felhasználó lehet?**<br><br>
+Mind a "SafetyNet eszközigazolás" és "Alkalmazások fenyegetettségvizsgálata" beállításokat a Google Play-szolgáltatások megfelelően működnek, határozza meg a Google-verziójának megkövetelése. Mivel ezek a biztonság területén, melyek beállításai, a felhasználó le lesz tiltva vannak kijelölve ezekkel a beállításokkal, és a Google Play-szolgáltatások megfelelő verziója nem megfelelő vagy nem férhetnek hozzá a Google Play-szolgáltatások. 
+
 ## <a name="app-experience-on-ios"></a>Az alkalmazás felhasználói felülete iOS-en
 **Mi történik, ha hozzáadok vagy eltávolítok egy ujjlenyomatot vagy arcot a saját eszközről?**
 Az Intune alkalmazásvédelmi szabályzatai csak az Intune licencelt felhasználójának teszik lehetővé az alkalmazás elérésének szabályozását. Az alkalmazáshoz való hozzáférés szabályozásának egyik módja az Apple Touch ID vagy a Face ID megkövetelése a támogatott eszközökön. Az Intune olyan viselkedést vezet be, ahol az eszköz biometrikus adatbázisának bármilyen változása esetén az Intune PIN-kódot kér a felhasználótól a következő inaktivitási időkorlát elérése esetén. A biometrikus adatok módosításai tartalmazzák az arc vagy ujjlenyomat hozzáadását és eltávolítását. Ha az Intune-felhasználóhoz nincs beállítva PIN-kód, a rendszer felszólítja az Intune PIN-kód beállítására.
@@ -185,20 +206,13 @@ Az Intune alkalmazásvédelmi hozzáférési szabályzatai adott sorrendben lép
 
 Különböző beállítások esetén először a az Intune App SDK verziókövetelménye, majd az alkalmazásverzió követelménye és végül az iOS operációs rendszer verziókövetelménye kerül sorra. Ezt követi a beállításokra vonatkozó figyelmeztetések végrehajtása ugyanebben a sorrendben. Azt javasoljuk, hogy az Intune App SDK verziókövetelményét csak az Intune termékért felelős csoport alapvető letiltási esetekre vonatkozó útmutatása alapján állítsa be.
 
-## <a name="app-protection-policies---policy-refresh"></a>Alkalmazásvédelmi szabályzatok – Szabályzat frissítése
-- Az alkalmazások 30 percenként bejelentkeznek az App Service-be.
-- A 30 perces küszöbérték egy időzítőn alapul.
-    - Ha az alkalmazás a 30. percben aktív, akkor bejelentkezik.
-    - Ha az alkalmazás a 30. percben nem aktív, akkor a következő körben jelentkezik be.
-- Ha egy felhasználóhoz egyetlen szabályzat sincs hozzárendelve, akkor a bejelentkezésre nyolc óránként kerül sor.
-- Ha egyetlen Intune-licenc sincs hozzárendelve, akkor a bejelentkezésre 24 óránként kerül sor.
-
 
 ## <a name="see-also"></a>Lásd még:
 - [Az Intune-terv megvalósítása](planning-guide-onboarding.md)
 - [Az Intune tesztelése és ellenőrzése](planning-guide-test-validation.md)
 - [Az Android mobilalkalmazás-felügyeleti szabályzatának beállításai a Microsoft Intune-ban](app-protection-policy-settings-android.md)
 - [iOS mobilalkalmazás-felügyeleti szabályzat konfigurálása](app-protection-policy-settings-ios.md)
-- [Az alkalmazásvédelmi szabályzatok ellenőrzése](app-protection-policies-validate.md)
+- [App protection házirendek csoportházirend-frissítés](app-protection-policy-delivery.md)
+- [Az alkalmazásvédelmi szabályzatok ellenőrzése](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery)
 - [Alkalmazáskonfigurációs szabályzatok hozzáadása felügyelt alkalmazásokhoz eszközbeléptetés nélkül](app-configuration-policies-managed-app.md)
 - [Microsoft Intune-támogatás kérése](get-support.md)

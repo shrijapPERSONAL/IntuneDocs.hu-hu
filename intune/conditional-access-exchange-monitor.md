@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 03/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,38 +16,30 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21e3d4b27348bc5ed64c192c8d6824af053a833b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8ebca668ba3e02ec6088bb72370d7d5061241627
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397423"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394932"
 ---
-# <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Feltételes hozzáférési megfelelőség figyelése helyszíni Exchange-hez és Exchange Online-hoz az Intune-ban
+# <a name="monitor-conditional-access-compliance-for-exchange-on-premises-in-intune"></a>A helyszíni Exchange-hez az Intune feltételes hozzáférési megfelelőség figyelése
 
-Az Intune 1704-es kiadásától kezdve a rendszergazdák jelentési információkat kapnak az Exchange ActiveSync eszközrekordjaival kapcsolatban, amelyek vagy a helyszíni Exchange-összekötő, vagy az Intune szolgáltatások közötti összekötő (Exchange Online-összekötő) révén az Intune-nal vannak szinkronizálva. A feltételes hozzáférési megfelelőség jelentései összefoglaló információt nyújtanak a különböző szinkronizálási állapotban lévő eszközökről:
+Intune-rendszergazdák tekintheti meg az Exchange ActiveSync eszközrekordjaival keresztül a helyszíni Exchange-összekötő az Intune-nal szinkronizált kapcsolatos jelentéskészítés. A feltételes hozzáférési megfelelőség jelentései összefoglaló információt nyújtanak a különböző szinkronizálási állapotban lévő eszközökről:
 
--   **Engedélyezés**
+- **Engedélyezés**
 
--   **Tiltás**
+- **Tiltás**
 
--   **Karantén**
+- **Karantén**
 
 ## <a name="to-monitor-conditional-access-compliance"></a>Feltételes hozzáférési megfelelőség figyelése
 
-1.  Az [Azure Portalon](https://portal.azure.com/) jelentkezzen be az Intune-os hitelesítő adataival.
+1. Jelentkezzen be a [Intune](https://aka.ms/intuneportal), és nyissa meg **feltételes hozzáférési**, majd válassza a **áttekintése**.
 
-2.  Miután sikeresen bejelentkezett, megjelenik az **Azure irányítópultja**.
+2. A feltételes hozzáférési megfelelőséggel kapcsolatos jelentésének megtekintéséhez a diagramban válassza ki a három lehetőség (**Engedélyezett**, **Letiltva** vagy **Karantén**) egyikét.
 
-3.  Válassza a bal oldali menü **Minden szolgáltatás** pontját, majd írja be a szűrő szövegmezőbe az **Intune** nevet.
-
-4.  Az **Intune** kiválasztásával megjelenik az **Intune irányítópultja**.
-
-5.  Válassza a **Feltételes hozzáférés**, majd az **Áttekintés** lehetőséget.
-
-6.  A feltételes hozzáférési megfelelőséggel kapcsolatos jelentésének megtekintéséhez a diagramban válassza ki a három lehetőség (**Engedélyezett**, **Letiltva** vagy **Karantén**) egyikét.
-
-    ![A Feltételes hozzáférési irányítópult képe](./media/CA-reporting-intune-1.png)
+   ![A Feltételes hozzáférési irányítópult képe](./media/CA-reporting-intune-1.png)
 
 A három terület egyikének kiválasztása után bővebb információt kap az engedélyezett, a tiltott vagy a karanténba helyezett eszközökről.
 
@@ -57,16 +49,16 @@ Az egyes eszközökről további részletes információkat is megjeleníthet. A
 
 Az eszközinformációk panelen további információk jelennek meg:
 
--   **Áttekintés:** Eszköztulajdonságok például tekintheti meg: Operációs rendszer verziója, eszközmodell, tulajdonjogát, sorozatszám, eszköz gyártója, telefonszám, és az utolsó az eszköz bejelentkezésének ideje.
+- **Áttekintés:** Eszköztulajdonságok például tekintheti meg: Operációs rendszer verziója, eszközmodell, tulajdonjogát, sorozatszám, eszköz gyártója, telefonszám, és az utolsó az eszköz bejelentkezésének ideje.
 
--   **Tulajdonságok:** Az eszköz tulajdonosi adatát (személyes vagy vállalati) állíthatja be.
+- **Tulajdonságok:** Az eszköz tulajdonosi adatát (személyes vagy vállalati) állíthatja be.
 
--   **Hardver:** Rendszerház, a hálózati adatok, a hálózati szolgáltatás és a további feltételes hozzáférési szabályzat letiltotta az részletei az áttekintés, és emellett a tárhelyre vonatkozó információkat (teljes terület és szabad terület), a megjelenő adatokat biztosít.
+- **Hardver:** Rendszerház, a hálózati adatok, a hálózati szolgáltatás és a további feltételes hozzáférési szabályzat letiltotta az részletei az áttekintés, és emellett a tárhelyre vonatkozó információkat (teljes terület és szabad terület), a megjelenő adatokat biztosít.
 
--   **Felderített alkalmazások:** Az eszközön telepített összes alkalmazást megmutatja. A telepített alkalmazások listáját .CSV formátumban is exportálhatja.
+- **Felderített alkalmazások:** Az eszközön telepített összes alkalmazást megmutatja. A telepített alkalmazások listáját .CSV formátumban is exportálhatja.
 
--   **Megfelelőség:** Az eszközmegfelelőségi szabályzat részleteit mutatja.
+- **Megfelelőség:** Az eszközmegfelelőségi szabályzat részleteit mutatja.
 
--   **Eszközök konfigurálása:** Azt mutatja, hogy az eszköz konfigurációs adatait.
+- **Eszközök konfigurálása:** Azt mutatja, hogy az eszköz konfigurációs adatait.
 
--   **Exchange-hozzáférés:** Itt további információ az eszköz állapotát a feltételes hozzáférési szabályzatok alkalmazása után.
+- **Exchange-hozzáférés:** Itt további információ az eszköz állapotát a feltételes hozzáférési szabályzatok alkalmazása után.

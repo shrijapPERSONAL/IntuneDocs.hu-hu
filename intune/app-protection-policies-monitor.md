@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cee1cbc05164a418148ecea8d93f6c8c45c73e01
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: 2d8c34f1947a0abaa4cdf0bbcd65dcf31e4c11ff
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991136"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358160"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Az alkalmazásvédelmi szabályzatok figyelése
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -48,7 +48,7 @@ Nincsenek három különböző helyen figyelheti a MAM-szabályzatok megfelelős
 ![Az Intune mobilalkalmazás-kezelés panel Összefoglalás csempéje](./media/app-protection-user-status-summary.png)
 
 - **Hozzárendelt felhasználók**: Egy alkalmazást, amely a munkahelyi környezetben a szabályzathoz társított védett és licencelt, valamint a hozzárendelt felhasználók nem védett és licencelt használó a vállalatnál hozzárendelt felhasználók teljes száma.
-- **Megjelölt felhasználók**: A problémákat tapasztaló felhasználók száma. Értékelni a feltört eszközöket jelentett alatt **megjelölt felhasználók**.
+- **Megjelölt felhasználók**: A problémákat tapasztaló felhasználók száma. Feltört (iOS) és a rootolt (Android) eszközöket jelentett alatt **megjelölt felhasználók**. Itt az, hogy a Google SafetyNet eszköz állapotigazolási ellenőrzés jelölőjét (Ha be van kapcsolva a rendszergazda által) eszközökkel rendelkező felhasználók jelenti. 
 - **Felhasználó állapota (iOS)** és **felhasználói állapot (Android)**: A felhasználók számát, akik már használtak egy alkalmazást, amelyekre érvényes a szabályzat hozzájuk rendelve a munkahelyi környezetben a kapcsolódó platform. Ezt az információt a házirend, valamint a felhasználók száma, akik használ egy alkalmazást, amelyre nem vonatkozik szabályzat nélküli munkahelyi környezetben kezeli a felhasználók számát jeleníti meg. Érdemes megfontolni ezen felhasználók bevonását a szabályzat hatálya alá.
 - **Legnépszerűbb védett iOS-alkalmazások**: A leggyakrabban használt iOS-alkalmazások alapján, ezeket az adatokat a védett, és nem védett iOS-alkalmazások számát jeleníti meg.
 - **Legnépszerűbb védett Androidos alkalmazások**: A leggyakrabban használt Android-alkalmazások alapján, ezeket az adatokat a védett, és nem védett Androidos alkalmazások számát jeleníti meg.
@@ -89,7 +89,7 @@ A felhasználóhoz tartozó jelentések megtekintéséhez kövesse az alábbi l�
 3. Válassza ki a listából a felhasználót. Megjelennek a felhasználó megfelelési állapotára vonatkozó információk.
 
 ### <a name="flagged-users"></a>Megjelölt felhasználók
-A részletes nézetben látható a hibaüzenet, annak az alkalmazásnak a neve, amelynek a használata közben fellépett a hiba, az eszközök érintett operációsrendszer-platformja, valamint egy időbélyeg.
+A részletes nézetben látható a hibaüzenet, annak az alkalmazásnak a neve, amelynek a használata közben fellépett a hiba, az eszközök érintett operációsrendszer-platformja, valamint egy időbélyeg. A Google SafetyNet eszköz állapotigazolási által megjelölt eszközökkel rendelkező felhasználók jelentett itt okát a Google által jelentett módon.
 
 ## <a name="reporting-view"></a>Jelentéskészítés nézet
 

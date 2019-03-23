@@ -6,7 +6,7 @@ keywords: Intune-adattárház
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 03/19/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39052860cefc562700608beda7f42c4146ccdf34
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d47d7a52a212733955d441b463ef66d89f8d9143
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566029"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358187"
 ---
 # <a name="reference-for-application-entities"></a>Alkalmazás-entitások referencia
 
@@ -128,17 +128,5 @@ A **MobileAppInstallState** entitás egy mobilalkalmazás telepítési állapot�
 | AppInstallState | Az alkalmazástelepítési állapot felsorolásértéke. |
 | AppInstallStateName | Az alkalmazástelepítési állapot neve. |
 
-## <a name="mobileappdeviceuserinstallstatus"></a>MobileAppDeviceUserInstallStatus
 
-A **MobileAppDeviceUserInstallStatus** a mobilalkalmazás telepítési állapotát jelöli egy adott eszközre és felhasználóra vonatkozóan.
-
-
-|      Tulajdonság      |                                                         Leírás                                                         |
-|--------------------|-----------------------------------------------------------------------------------------------------------------------------|
-|      DateKey       |                                  Az alkalmazástelepítési állapot rögzítési dátumának kulcsa.                                  |
-|       AppKey       |                             A mobilalkalmazás kulcsa, mely az AppRevision osztály egy példányát azonosítja.                              |
-|     DeviceKey      |                              Egy céleszköz kulcsa, mely a Device osztály egy példányát azonosítja.                               |
-|      UserKey       |                                Egy célfelhasználó kulcsa, mely a User osztály egy példányát azonosítja.                                 |
-| AppInstallStateKey |                     Az alkalmazástelepítési állapot kulcsa, mely a MobileAppInstallState osztály egy példányát azonosítja.                     |
-|     Hibakód      | Az alkalmazástelepítő, a mobilplatform vagy a szolgáltatás által az alkalmazás telepítésével kapcsolatban visszaadott hibakód. |
 

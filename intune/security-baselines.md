@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/01/2019
+ms.date: 03/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94fbd4b4f73dd24f83832af010a6350ae8a0aa25
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5b2a5e2bbd6d06cc4ec0cf71ee815229b01040a8
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57394674"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394820"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Az Intune-ban Windows 10 biztonsági alapterv létrehozása
 
@@ -47,6 +47,10 @@ Miután a profil hozzá van rendelve, a profil monitorozza, és figyelheti az al
 Ez a cikk bemutatja, hogyan biztonsági előírások használatával hozzon létre egy profilt a profil hozzárendelése és figyelése a profil.
 
 [Windows biztonsági előírások](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) egy nagyszerű forrás, amely további információk a funkcióról. [Mobileszköz-kezelés](https://docs.microsoft.com/windows/client-management/mdm/) (MDM) egy nagyszerű forrás MDM és a Windows-eszközökön elvégezhető.
+
+## <a name="prerequisites"></a>Előfeltételek
+Az Intune-ban alapkonfigurációk kezelésére, a fióknak rendelkeznie kell a [házirend- és Profilkezelő](role-based-access-control.md#built-in-roles) beépített szerepkör.
+
 
 ## <a name="co-managed-devices"></a>Közösen kezelt eszközök
 

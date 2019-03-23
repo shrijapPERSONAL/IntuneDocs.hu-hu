@@ -6,28 +6,28 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 03/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
-ms.reviewer: aiwang
+ms.reviewer: craigma
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cca5ab88a839e782f5f4640d1d7b92395014041c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2d8ddb81a488ccf0cc902ccf792463144d1b0116
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57399939"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394925"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365-alkalmazások hozzárendelése Windows 10-es eszközökhöz a Microsoft Intune-nal
 
-Ezzel az alkalmazástípussal könnyedén hozzárendelhet Office 365-alkalmazásokat a Windows 10 rendszerű kezelt eszközökhöz. Emellett telepíthet alkalmazásokat a Microsoft Project Online asztali ügyfeléhez és a Microsoft Visio Pro for Office 365 szolgáltatáshoz is, amennyiben rendelkezik hozzájuk licenccel. A kívánt alkalmazások egyetlen bejegyzésként jelennek meg az Intune-konzol alkalmazáslistájában.
+Ezzel az alkalmazástípussal könnyedén hozzárendelhet Office 365-alkalmazásokat a Windows 10 rendszerű kezelt eszközökhöz. Alkalmazások a Microsoft Project Online asztali ügyfele és a Microsoft Visio Online 2. csomagját, ha a hozzájuk való saját licencekkel is telepítheti. A kívánt alkalmazások egyetlen bejegyzésként jelennek meg az Intune-konzol alkalmazáslistájában.
 
 > [!NOTE]
 > Office 365 ProPlus-licencekkel kell aktiválnia a Microsoft Intune-on keresztül üzembe helyezett Office 365 ProPlus-alkalmazásokat. Jelenleg az Intune nem támogatja az Office 365 Business Edition kiadását.
@@ -55,18 +55,25 @@ Ezzel az alkalmazástípussal könnyedén hozzárendelhet Office 365-alkalmazás
 5. Válassza a **Hozzáadás** lehetőséget.
 6. Az **Alkalmazások hozzáadása** ablaktáblán, az **Alkalmazástípus** listában, az **Office 365 csomag** alatt válassza a **Windows 10** lehetőséget.
 
-Mostantól konfigurálhatja az alkalmazáscsomagot.
+## <a name="select-settings-format"></a>Válassza ki a beállítások formátuma
 
-## <a name="configure-the-app-suite"></a>Az alkalmazáscsomag konfigurálása
+Alkalmazás-beállítás konfigurálásával kiválasztásával módszert választhat egy **beállítások formátuma**. A beállítás formátum lehetőségek a következők:
+- Konfigurációtervező
+- XML-adatok megadása
 
-Válassza ki azokat az Office-alkalmazásokat, melyeket szeretne eszközökhöz hozzárendelni.
+Ha úgy dönt **Configuration designer** a **alkalmazás hozzáadása** panelen két további beállítás lehetőséget kínálnak változik:
+- Alkalmazáscsomag konfigurálása
+- Alkalmazáscsomag beállításai
 
-1. Az **Alkalmazás felvétele** ablaktáblán válassza az **Alkalmazáscsomag konfigurálása** lehetőséget.
-2. Az **Alkalmazáscsomag konfigurálása** ablaktáblán válassza ki a szokásos Office-alkalmazásokat, melyeket szeretne eszközökhöz hozzárendelni.  
-    Emellett telepíthet alkalmazásokat a Microsoft Project Online asztali ügyfeléhez és a Microsoft Visio Pro for Office 365 szolgáltatáshoz, amennyiben rendelkezik hozzájuk licenccel.
-3. Kattintson az **OK** gombra.
+<img alt="Add Office 365 - Configuration designer" src="./media/apps-add-office365/apps-add-office365-02.png" width="700">
 
-## <a name="configure-app-information"></a>Az alkalmazásadatok konfigurálása
+Ha úgy dönt **XML adatok megadása** a **alkalmazás hozzáadása** megjelenített panelről a **XML adatok megadása** lehetőséget. Válassza ezt a megjelenítendő a **konfigurációs fájl** panelen. 
+
+![Adja hozzá az Office 365 konfigurációtervező](./media/apps-add-office365/apps-add-office365-01.png)
+    
+További információ a **XML adatok megadása** talál [XML adatok megadása](apps-add-office365.md#enter-xml-format) alatt.
+
+## <a name="configure-app-suite-information"></a>Alkalmazáscsomag adatai konfigurálása
 
 Ebben a lépésben adhatja meg az alkalmazáscsomag adatait. Ezek alapján azonosíthatja az alkalmazáscsomagot az Intune-ban, és a felhasználók is ezek alapján találhatják meg azt a céges portálon.
 
@@ -85,9 +92,18 @@ Ebben a lépésben adhatja meg az alkalmazáscsomag adatait. Ezek alapján azono
     - **Embléma**: Az Office 365-embléma akkor jelenik meg az alkalmazás a céges portálon böngésző felhasználók számára.
 3. Kattintson az **OK** gombra.
 
-## <a name="configure-app-settings"></a>Alkalmazásbeállítások konfigurálása
+## <a name="configure-app-suite"></a>Alkalmazáscsomag konfigurálása
 
-Ebben a lépésben az alkalmazáscsomag telepítési beállításait konfigurálhatja. A beállítások minden, a csomaghoz hozzáadott alkalmazásra vonatkoznak.
+Ha bejelölte a **Configuration designer** lehetőség a **szabályzatbeállítás** legördülő listából, látni fogja a **alkalmazáscsomag konfigurálása** beállítást a **hozzáadása alkalmazás** panelen. Válassza ki azokat az Office-alkalmazásokat, melyeket szeretne eszközökhöz hozzárendelni.
+
+1. Az **Alkalmazás felvétele** ablaktáblán válassza az **Alkalmazáscsomag konfigurálása** lehetőséget.
+2. Az **Alkalmazáscsomag konfigurálása** ablaktáblán válassza ki a szokásos Office-alkalmazásokat, melyeket szeretne eszközökhöz hozzárendelni.  
+    Emellett telepíthet alkalmazásokat a Microsoft Project Online asztali ügyfele és a Microsoft Visio Online 2. csomagját, ha hozzájuk való saját licencekkel.
+3. Kattintson az **OK** gombra.
+
+## <a name="configure-app-suite-settings"></a>Suite beállításainak konfigurálása
+
+Ha bejelölte a **Configuration designer** lehetőség a **szabályzatbeállítás** legördülő listából, látni fogja a **Alkalmazásbeállítások Suite** beállítást a **alkalmazás hozzáadása**  panelen. Ebben a lépésben az alkalmazáscsomag telepítési beállításait konfigurálhatja. A beállítások minden, a csomaghoz hozzáadott alkalmazásra vonatkoznak.
 
 1. Az **Alkalmazás hozzáadása** ablaktáblán válassza az **Alkalmazáscsomag beállításai** lehetőséget.
 2. Az **Alkalmazáscsomag beállításai** ablaktáblán tegye a következőket:
@@ -111,6 +127,10 @@ Ebben a lépésben az alkalmazáscsomag telepítési beállításait konfigurál
     - **Megosztott aktiválás használata**: Akkor válassza ezt a beállítást, ha több felhasználó ugyanazt a számítógépet. További információ: [Az Office 365 megosztott aktiválásának áttekintése](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
     - **Nyelvek**: Az Office automatikusan települ, a támogatott nyelveket, Windows, a végfelhasználói eszközön telepített egyikében. Ezt a beállítást akkor jelölje be, ha az alkalmazáscsomaghoz további nyelveket szeretne telepíteni. <p></p>
     További nyelveket helyezhet üzembe az Intune által felügyelt Office 365 Pro Plus-alkalmazások számára. Az elérhető nyelvek listája tartalmazza a nyelvi csomag **Típusát** (alap, részleges vagy nyelvi ellenőrzési) is. Az Azure Portalon válassza a **Microsoft Intune** > **Ügyfélalkalmazások** > **Alkalmazások** > **Hozzáadás** lehetőséget. Az **Alkalmazás hozzáadása** panelen, az **Alkalmazástípusok** listáján, válassza az **Office 365 csomag** alatti **Windows 10** lehetőséget. Az **Alkalmazáscsomag beállításai** panelen válassza a **Nyelvek** lehetőséget. További információkért lásd [a nyelvek az Office 365 ProPlusban történő üzembe helyezésének áttekintését](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
+
+## <a name="enter-xml-format"></a>Adja meg az XML-formátuma
+
+Ha bejelölte a **XML adatok megadása** lehetőség a **szabályzatbeállítás** legördülő listából, látni fogja a **adja meg az XML-formátuma** beállítást a **alkalmazáshozzáadása**panelen. További információkért lásd: [beállítási lehetőségei az Office-telepítő eszköz](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool).
 
 ## <a name="finish-up"></a>Befejezés
 

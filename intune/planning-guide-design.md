@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 3/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97e815914ad96b7c0db14228c76488a6147c0b46
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: 3707ee66d11af0550659d8357d84aa0fea534778
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991168"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394691"
 ---
 # <a name="create-a-design"></a>Terv létrehozása
 
@@ -109,7 +109,7 @@ A saját Intune-tervének kidolgozásához [letöltheti a fenti táblázat sablo
 
 ## <a name="choose-an-intune-deployment-option"></a>Intune-telepítési lehetőség választása
 
-Az Intune kétféle telepítési lehetőséget kínál, ezek az önálló és a hibrid. Önálló telepítés esetén az Intune szolgáltatás a felhőben fut, hibrid telepítés esetén pedig az Intune integrálva van a System Center Configuration Managerrel. Ez az útmutató elsősorban az önálló telepítésről szól. [Döntse el, melyik lehetőség felel meg az üzleti követelményeknek](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
+Az Intune kétféle telepítési lehetőséget kínál, ezek az önálló és a hibrid. Önálló telepítés esetén az Intune szolgáltatáshoz, a felhőben futó, hibrid telepítés esetén az Intune-ban a System Center Configuration Managerrel integrálva. Ez az útmutató elsősorban az önálló telepítésről szól. [Döntse el, melyik lehetőség felel meg az üzleti követelményeknek](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
 
 > [!Important]
 >Új hibrid MDM-ügyfelek bevezetésének elavult. További információkért lásd: a [válthatnak a hibrid mobileszköz-kezelés az Intune-bA az Azure-ban](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) blogbejegyzést.
@@ -138,7 +138,7 @@ A külső függőségek olyan szolgáltatások és termékek, amelyek ugyan nem 
 
 -   Nyilvános kulcsú infrastruktúra (PKI)
 
-Vizsgáljuk meg részletesebben ezeket a gyakori külső függőségeket
+Az alábbiakban a gyakoribb külső függőségekre részletesebben tárgyaljuk.
 
 ### <a name="identity"></a>Identitás
 
@@ -404,11 +404,9 @@ Az alábbi példa egy megfelelőségi szabályzat tervezését szemlélteti:
 A saját megfelelőségi szabályzatainak meghatározásához [letöltheti a fenti táblázat sablonját](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 #### <a name="conditional-access-policies"></a>Feltételes hozzáférési szabályzatok
 
-A feltételes hozzáférés csak a megfelelő eszközök számára engedélyezi az e-mailek vagy más vállalati erőforrások elérését. Az Intune a Enterprise Mobility + Security (EMS) csomaggal együttműködve szabályozza a vállalati erőforrások elérését. Önnek kell eldöntenie, hogy van-e szükség feltételes hozzáférésre, és hogy az mit fog védeni. További információk a [feltételes hozzáférésről](conditional-access.md).
+A feltételes hozzáférés csak a megfelelő eszközök számára engedélyezi az e-mailek vagy más vállalati erőforrások elérését. Az Intune a Enterprise Mobility + Security (EMS) csomaggal együttműködve szabályozza a vállalati erőforrások elérését. Döntse el, ha szüksége van-e a feltételes hozzáférést, és mit fog védeni. További információk a [feltételes hozzáférésről](conditional-access.md).
 
-Online elérés esetén döntse el, hogy mely platformokra és felhasználói csoportokra fog vonatkozni feltételes hozzáférési szabályzat. Ezenkívül azt is el kell döntenie, hogy kell-e telepítenie/konfigurálnia az Intune szolgáltatás-összekötőt az Exchange Online-hoz vagy a helyszíni Exchange-hez. További tudnivalók az Intune szolgáltatás-összekötők telepítéséről és konfigurálásáról: <!---these links are correct--->
-
--   [Exchange Online](exchange-service-connector-configure.md)
+Online elérés döntse el, mely platformok és felhasználói csoportokra fog céljaként feltételes hozzáférési szabályzatok. Emellett határozza meg, hogy kell telepíteni vagy konfigurálni az Intune-összekötő a helyszíni Exchange: 
 
 -   [Helyszíni Exchange](exchange-connector-install.md)
 

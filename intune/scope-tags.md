@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bca2d52bb47a149c6a36bc1b8cbc4d65e50c0f4c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2ceba92a48f4ae899b5a645137ec0891a7c16659
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57756802"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394834"
 ---
 # <a name="use-rbac-and-scope-tags-for-distributed-it"></a>Rbac-RÓL és a hatókör címkék használata az elosztott IT
 
@@ -82,6 +82,17 @@ Például tegyük fel, hogy egy Seattle területi képviseletenként rendszergaz
 
 3. A **válassza ki a címkék**, válassza ki a címkék, amelyeket szeretne hozzáadni a profil.
 4. Válasszon **kiválasztása** > **OK** > **mentése**.
+
+## <a name="to-assign-a-scope-tag-to-an-app-configuration-policy"></a>Hatókörcímke hozzárendelése alkalmazás-konfigurációs házirend
+Az eszközök **eszközregisztráció típusa** beállítása **felügyelt eszközök**, válassza ki **ügyfélalkalmazások** > **alkalmazáskonfigurációsszabályzatok** > Válassza ki az alkalmazás-konfigurációs házirend > **tulajdonságok** > **hatókör (címkék)** > Válassza ki a házirendhez hozzárendelni kívánt címkéket.
+
+Az eszközök **eszközregisztráció típusa** beállítása **felügyelt alkalmazások**, válassza a **ügyfélalkalmazások** > **alkalmazáskonfigurációs szabályzatok**> Válassza ki az alkalmazás-konfigurációs házirend > **hatókör (címkék)** > Válassza ki a házirendhez hozzárendelni kívánt címkéket.
+
+
+## <a name="to-assign-a-scope-tag-to-an-ios-app-provisioning-profile"></a>Hatókörcímke hozzárendelése egy IOS-es alkalmazáskiépítési profil
+1. Válassza ki az Intune-ban **ügyfélalkalmazás** > **iOS-alkalmazáskiépítési profilok** > Válasszon egy profilt.
+2. Válasszon **tulajdonságok** > **hatókör (címkék)** > Válassza ki az, hogy a profilhoz hozzárendelni kívánt címkéket.
+3. Válasszon **kiválasztása** > **OK** > **mentése**.
 
 ## <a name="scope-tag-details"></a>Címke részleteinek hatókör
 Ha hatókörcímkék dolgozik, ne felejtse el ezeket az adatokat:

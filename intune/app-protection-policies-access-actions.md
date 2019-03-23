@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 400049bd2637a0e14f5ece4be9d4e40142b0acee
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5b07081ceae3ba07148723490977546fb3edcdd6
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57390390"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358206"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Szelektív adattörlés alkalmazásvédelmi szabályzatok hozzáférési műveleteivel az Intune-ban
 
@@ -84,6 +84,8 @@ Android rendszeren a következő beállításokhoz konfigurálhat műveleteket a
 -  Alkalmazás minimális verziója
 -  Minimális javításverzió
 -  Eszközgyártó(k)
+-  SafetyNet eszközigazolás
+-  Alkalmazások fenyegetettségvizsgálata
 
 Az **Eszközgyártó(k)** beállítás használatához gépelje be az Android-gyártók pontosvesszővel tagolt felsorolását. Az eszköz Android-gyártóját az eszközbeállításokban találja meg.<br>
 Példabemenet: *Gyártó A; B gyártója* 

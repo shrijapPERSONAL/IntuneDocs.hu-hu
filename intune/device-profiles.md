@@ -1,11 +1,11 @@
 ---
 title: Eszközök funkcióinak és a beállítások a Microsoft Intune – Azure |} A Microsoft Docs
-description: A különböző Microsoft Intune-eszközprofilokat, beleértve a áttekintése funkciók, korlátozások, e-mail, Wi-Fi, VPN, oktatás, tanúsítványok, a Windows 10-es, a BitLocker és a Windows defender, a Windows Information Protection, a felügyeleti sablonok, frissítése és egyéni eszközkonfigurációs beállítások az Azure Portalon. Ezek a profilok segítségével kezelheti és az adatok és a vállalati eszközök védelme.
+description: A különböző Microsoft Intune-eszközprofilok áttekintése. Az funkciók, korlátozások, e-mail, Wi-Fi, VPN, oktatás, tanúsítványok, Windows 10-frissítés, BitLocker és a Windows defender, Windows Information Protection, felügyeleti sablonok és egyéni eszközkonfigurációs beállítások adatainak beolvasása az Azure Portalon. Ezek a profilok segítségével kezelheti és az adatok és a vállalati eszközök védelme.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 03/12/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad9b0fb2fc8814f04860793bb1210da17dbe2a65
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: df8cc8c921b685ba7fa0b957685836d059a677e0
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57395329"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394990"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Az eszközök Microsoft Intune-ban eszközprofilok segítségével szolgáltatásainak és beállításainak alkalmazása
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-A Microsoft Intune tartalmazza a beállításokat és funkciókat, engedélyezése vagy letiltása a különböző eszközökön, a szervezeten belül. Ezek a beállítások és funkciók "profilok" kerülnek. Különböző eszközök, profilokat hozhat létre különböző platformokon, beleértve az iOS, Android, és a Windows és majd a alkalmazni a profil a szervezetnél található eszközökön az Intune.
+A Microsoft Intune tartalmazza a beállításokat és funkciókat, engedélyezése vagy letiltása a különböző eszközökön, a szervezeten belül. Ezek a beállítások és funkciók "profilok" kerülnek. A különböző eszközökre és a különböző platformokon, beleértve az iOS, Android és Windows profilokat hozhat létre. Ezután használja az Intune-ban a alkalmazni, vagy "" a profil hozzárendelése az eszközökhöz.
 
 A mobileszköz-felügyelet (MDM) megoldás részeként használja ezeket a konfigurációs profilokat különböző feladatok végrehajtásához. Néhány példa profilok használatára:
 
@@ -36,99 +36,16 @@ A mobileszköz-felügyelet (MDM) megoldás részeként használja ezeket a konfi
 - Az iOS és MacOS rendszerű eszközökön engedélyezése a felhasználók számára a szervezetében használt AirPrint-nyomtatókra.
 - Engedélyezi, vagy az eszköz bluetooth való hozzáférés letiltása.
 - A vállalati hálózathoz különböző eszközöknek hozzáférést biztosító Wi-Fi vagy VPN-profil létrehozása.
-- Szoftverfrissítések, beleértve a telepítéskor kezelése.
+- Kezelheti a szoftverfrissítéseket, beleértve a vannak telepítve.
 - Android-eszközön futtató dedikált teljes képernyős eszköz, amely egyetlen alkalmazás, vagy számos alkalmazás futtatásához.
 
-Ez a cikk egy profil létrehozásának lépéseit sorolja fel, és áttekintést nyújt a különböző típusú profilokat hozhat létre. Ezek a profilok segítségével engedélyezése vagy letiltása az eszköz egyes funkcióinak.
-
-## <a name="create-the-profile"></a>A profil létrehozása
-
-1. Az a [az Azure portal](https://portal.azure.com), jelölje be **minden szolgáltatás** > szűréséhez **Intune** > Válassza ki **Intune**.
-
-2. Válassza az **Eszközök konfigurálása** lehetőséget. A következő lehetőségek állnak rendelkezésére:
-
-    - **Áttekintés**: Listázza a profilok állapotát, és ez a témakör további részleteket a felhasználókhoz és eszközökhöz rendelt profilokról.
-    - **Kezelése**: Eszközprofilok létrehozása, és töltse fel az egyéni [PowerShell-parancsfájlok](intune-management-extension.md) a profilon belül futtatandó, és eszközöket vehet fel adatforgalmi [esim-kártya](esim-device-configuration.md).
-    - **A figyelő**: Ellenőrizze a profil sikeres vagy sikertelen állapotát, és naplók megtekintése a profilok.
-    - **A telepítő**: SCEP- vagy PFX hitelesítésszolgáltató, vagy engedélyezze a [Távközlésiköltség-kezelőben](telecom-expenses-monitor.md) a profilban.
-
-3. Válassza ki **profilok** > **profil létrehozása**. Adja meg a következő tulajdonságokat:
-
-   - **Név**: Adjon meg egy leíró nevet a profilhoz.
-   - **Description** (Leírás): Adja meg a profil leírását. A beállítás használata nem kötelező, de ajánlott.
-   - **Platform**: Válassza ki a platform az eszközök. A választható lehetőségek:  
-
-       - **Android**
-       - **Vállalati Android**
-       - **iOS**
-       - **macOS**
-       - **Windows Phone 8.1**
-       - **Windows 8.1 és újabb**
-       - **Windows 10 és újabb**
-
-   - **Profil típusa**: Válassza ki a létrehozni kívánt beállításokat. A megjelenő listában függ a **platform** választja:
-
-       - [Felügyeleti sablonok](administrative-templates-windows.md)
-       - [Egyéni](custom-settings-configure.md)
-       - [Kézbesítésoptimalizálás](delivery-optimization-windows.md)
-       - [Eszközfunkciók](device-features-configure.md)
-       - [Eszközkorlátozások](device-restrictions-configure.md)
-       - [Kiadás frissítési és mód kapcsoló](edition-upgrade-configure-windows-10.md)
-       - [Oktatás](education-settings-configure.md)
-       - [E-mail](email-settings-configure.md)
-       - [Endpoint Protection](endpoint-protection-configure.md)
-       - [Identity protection](identity-protection-configure.md)  
-       - [Kioszkmód](kiosk-settings.md)
-       - [PKCS-tanúsítvány](certficates-pfx-configure.md)
-       - [SCEP-tanúsítvány](certificates-scep-configure.md)
-       - [Megbízható tanúsítvány](certificates-configure.md)
-       - [Frissítési szabályzatok](software-updates-ios.md)
-       - [VPN](vpn-settings-configure.md)
-       - [Wi-Fi](wi-fi-settings-configure.md)
-       - [A Windows Defender ATP](advanced-threat-protection.md)
-       - [Windows Információvédelem](windows-information-protection-configure.md)
-
-     Például, ha kiválasztja **iOS** a platform típusát a profilbeállítások hasonlóan néz ki: a következő:
-
-     ![IOS-profil létrehozása az Intune-ban](./media/create-device-profile.png)
-
-4. Válassza ki **beállítások**. A beállítások kategória szerint vannak rendszerezve. Válassza ki azt a kategóriát, megjelenítheti az összes, a konfigurálható beállítások listáját.
-
-5. Amikor végzett, válassza ki a **OK** > **létrehozás** a módosítások mentéséhez.
-
-#### <a name="refresh-cycle-times"></a>Frissítse a ciklusok idejét
-
-Az Intune a következő adatfrissítési ciklusok konfigurációs profilokat a frissítések kereséséhez használja:
-
-| Platform | A frissítés|
-| --- | --- |
-| iOS | 6 óránként |
-| macOS | 6 óránként |
-| Android | 8 óránként |
-| Eszközként regisztrált Windows 10 számítógépek | 8 óránként |
-| Windows Phone | 8 óránként |
-| Windows 8.1 | 8 óránként |
-
-Ha az eszköz nemrég lett regisztrálva, a bejelentkezés gyakrabban fusson:
-
-| Platform | Gyakoriság |
-| --- | --- |
-| iOS | 6 órán át 15 perceként, majd 6 óránként |  
-| Mac OS X | 6 órán át 15 perceként, majd 6 óránként | 
-| Android | 15 percen át 3 percenként, majd 2 órán át 15 percenként, majd 8 óránként | 
-| Windows Phone | 15 percen át 5 percenként, majd 2 órán át 15 percenként, majd 8 óránként | 
-| Eszközként regisztrált Windows-számítógépek | 30 percen át 3 percenként, majd 8 óránként | 
-
-Bármikor a felhasználók nyissa meg a céges portál alkalmazást, és az eszköz szinkronizálása érdekében az profil frissítések azonnali ellenőrzésére.
-
-### 
-A különböző típusaival kapcsolatos további információkért olvassa el a következő szakaszok ebben a cikkben.
+Ez a cikk áttekintést nyújt a különböző típusú profilokat hozhat létre. Ezek a profilok segítségével engedélyezése vagy letiltása az eszköz egyes funkcióinak.
 
 ## <a name="administrative-templates-preview"></a>Felügyeleti sablonok (előzetes verzió)
 
-[Felügyeleti sablonok](administrative-templates-windows.md) magában foglalja a több száz, az Internet Explorer, OneDrive, a távoli asztal, Word, Excel, és más Office-alkalmazásokhoz, és még sok más konfigurálható beállítások.
+[Felügyeleti sablonok](administrative-templates-windows.md) több száz, az Internet Explorer, a onedrive vállalati verzió, a távoli asztal, a Word, az Excel és a többi Office-alkalmazásokhoz konfigurálható beállítások közé tartozik.
 
-Ezek a sablonok segítségével a rendszergazdák egy egyszerű és egyszerűsített nézete hasonló csoportházirend beállítások, de 100 %-os felhőalapú. 
+Ezek a sablonok segítségével a rendszergazdák egy egyszerűsített nézete hasonló csoportházirend beállításokat, de 100 %-os felhőalapú.
 
 Ez a funkció a következőket támogatja:
 
@@ -202,6 +119,7 @@ A kioszkmód eszközkorlátozások számára is elérhető [Android](device-rest
 Ez a funkció a következőket támogatja: 
 
 - Android
+- Vállalati Android
 - iOS
 - Windows Phone 8.1
 - Windows 10 és újabb
@@ -215,6 +133,7 @@ A virtuális magánhálózatok (VPN) biztonságos távoli hozzáférést biztos�
 Ez a funkció a következőket támogatja: 
 
 - Android
+- Vállalati Android
 - iOS
 - macOS
 - Windows Phone 8.1
@@ -228,6 +147,7 @@ A [Wi-Fi-beállítások](wi-fi-settings-configure.md) a vezeték nélküli hál�
 Ez a funkció a következőket támogatja: 
 
 - Android
+- Vállalati Android
 - iOS
 - macOS
 - Windows 8.1 (csak importálás)
@@ -264,11 +184,12 @@ Ez a funkció a következőket támogatja:
 
 ## <a name="certificates"></a>Tanúsítványok
 
-[Tanúsítványok](certificates-configure.md) konfigurálja a megbízható SCEP- és PKCS-tanúsítványokat, amelyeket eszközökre hozzárendelését, és Wi-Fi, VPN, e-mail-profilok hitelesítve.
+[Tanúsítványok](certificates-configure.md) konfigurálása megbízható SCEP- és PKCS-tanúsítványokat, amelyeket eszközök vannak hozzárendelve. Ezeket a tanúsítványokat Wi-Fi, VPN, hitelesítést és e-mail-profilok.
 
 Ez a funkció a következőket támogatja: 
 
 - Android
+- Vállalati Android
 - iOS
 - Windows Phone 8.1
 - Windows 8.1
@@ -284,7 +205,7 @@ Ez a funkció a következőket támogatja:
 
 ## <a name="shared-multi-user-device"></a>Többfelhasználós megosztott eszköz
 
-[Windows 10-es](shared-user-device-settings-windows.md) és [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) eszközök kezelése több felhasználóval, más néven megosztott eszközök vagy a megosztott számítógépek beállításokat tartalmaz. Amikor egy felhasználó bejelentkezik az eszközre, az úgy dönt, ha a felhasználó az alvási beállítások módosítása, vagy mentse a fájlt az eszközön. Egy másik példában létrehozhat olyan profilt, amely törli az inaktív hitelesítő adatait az ezzel helyet Windows HoloLens-eszközök.
+[Windows 10-es](shared-user-device-settings-windows.md) és [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) eszközök kezelése több felhasználóval, más néven megosztott eszközök vagy a megosztott számítógépek beállításokat tartalmaz. Amikor egy felhasználó bejelentkezik az eszközre, az úgy dönt, ha a felhasználó az alvási beállítások módosítása, vagy mentse a fájlt az eszközön. Egy másik példa ezzel helyet, létrehozhat egy profilt, amely törli az inaktív hitelesítő adatokat az Windows HoloLens-eszközök.
 
 Ezek a beállítások megosztott több felhasználó-eszköz lehetővé teszi a rendszergazda szabályozhatja az eszköz funkcióit, és a megosztott eszközök Intune-nal kezelheti.
 
@@ -293,20 +214,29 @@ Ez a funkció a következőket támogatja:
 - Windows 10 és újabb
 - Windows Holographic for Business
 
-## <a name="custom-profile"></a>Egyéni profil
+## <a name="zebra-mobility-extensions-mx"></a>Zebra mobilitási Extensions (MX)
 
-[Egyéni beállítások](custom-settings-configure.md) lehetővé teszi, hogy a rendszergazdák nem beépített Intune Eszközbeállítások. Például OMA-URI értékek adhatók meg Android-eszközökön. iOS-eszközökön importálható egy, az Apple Configuratorban létrehozott konfigurációs fájl. 
+[Zebra mobilitási bővítmények MX](android-zebra-mx-overview.md) lehetővé teszi a rendszergazdák használható és felügyelhető Zebra eszközök Intune-ban. A beállításokkal StageNow profilok hozhatók létre, és majd az Intune segítségével hozzárendelni, és ezeket a profilokat az eszközökre telepíteni kívánt Zebra. A [StageNow naplók és a gyakori problémák](android-zebra-mx-logs-troubleshoot.md) egy nagyszerű forrás, amely profilok hibaelhárítása, és megtekintheti a potenciális problémákat, StageNow használatakor.
 
 Ez a funkció a következőket támogatja:
 
 - Android
+
+## <a name="custom-profile"></a>Egyéni profil
+
+[Egyéni beállítások](custom-settings-configure.md) lehetővé teszik a rendszergazdák nem beépített eszközbeállítások hozzárendelése az Intune-hoz. OMA-URI értékek Android-eszközön adhat meg. iOS-eszközökön importálható egy, az Apple Configuratorban létrehozott konfigurációs fájl.
+
+Ez a funkció a következőket támogatja:
+
+- Android
+- Vállalati Android
 - iOS
 - macOS
 - Windows Phone 8.1
 
 ## <a name="manage-and-troubleshoot"></a>Felügyelet és hibaelhárítás
 
-[A profilok kezelésével](device-profile-monitor.md) ellenőrizheti az eszközök állapotát és a hozzárendelt profilokat. Az ütközéseket okozó beállítások és az ezeket a beállításokat tartalmazó profilok azonosításával egyszerűbben lehet az ütközéseket elhárítani. [Gyakori problémák és megoldásuk](device-profile-troubleshoot.md) a Q & A segítségével dolgozhat a profilokat, többek között, mi történik, ha egy profilt törölnek, milyen okok értesítéseket küldeni az eszközöket, és egyéb biztosít.
+[A profilok kezelésével](device-profile-monitor.md) ellenőrizheti az eszközök állapotát és a hozzárendelt profilokat. Tekintse meg a beállításokat, amelyek ütközést, és ezeket a beállításokat tartalmazó profilok ütközések feloldása is segítenek. [Gyakori problémák és megoldásuk](device-profile-troubleshoot.md) segítségével a munkahelyi profilokkal rendelkező rendszergazdák. Leírja, mi történik, ha töröl egy profilt, hogy mi okozza az eszközöket, és egyéb küldendő értesítések.
 
 ## <a name="next-steps"></a>További lépések
 

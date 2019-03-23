@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 63dca685317555553573dbbdae1ae3ba391c1903
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7bda958985234b8d6bbaf1cb5b685eb85ff4b504
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57395414"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358156"
 ---
 # <a name="how-to-create-a-device-compliance-policy-to-enable-google-play-protect"></a>Eszközmegfelelőségi szabályzat létrehozása a Google Play Protect engedélyezéséhez ‒ útmutató
 
@@ -59,8 +59,7 @@ Az adott beállításokat szükségessé tevő megfelelőségi szabályzatot And
  - **SafetyNet eszközigazolás**  
    Adja meg a szükséges SafetyNet eszközigazolás-integritási szintet. A megadható szintek többek között: **Nincs konfigurálva**, **Alapvető integritás ellenőrzése**, és **Alapvető integritás ellenőrzés és tanúsított eszközök**.
 
-
-
+> [! Megjegyzés] az alkalmazásvédelmi szabályzatokat használó alkalmazásokat a Google Play Protect beállítások konfigurálása, lásd: útmutatást [az Intune alkalmazásvédelmi szabályzat beállításai](https://docs.microsoft.com/en-us/intune/app-protection-policy-settings-android#conditional-launch) androidon. 
 
 ## <a name="next-steps"></a>További lépések
 

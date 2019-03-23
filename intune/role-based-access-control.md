@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 03/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d1c7f7a2ed1d87d23d01b51ff928c906bc32541a
-ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
+ms.openlocfilehash: ecc315bfcccc5d3b71107e80720d39e675d42d19
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58173984"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394658"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Szerepköralapú hozzáférés-vezérlés (RBAC) a Microsoft Intune-nal
 
@@ -36,7 +36,21 @@ Az RBAC lehetővé teszi annak szabályozását, hogy a cégen belül ki hajthat
 
 ![Példa az Intune-beli RBAC felépítésére](./media/intune-rbac-1.PNG)
 
-Az új Azure Portaltól kezdődően az **Azure Active Directory (Azure AD)** két, Intune-nal használható címtárbeli szerepkört kínál fel. Ezek a szerepkörök teljes körű engedélyt biztosítanak minden Intune-beli tevékenységhez:
+## <a name="azure-active-directory-roles-with-intune-access"></a>Az Intune hozzáférés az Azure Active Directory-szerepkör
+
+| Az Azure Active Directory-szerepkör | Az összes Intune-beli adatokhoz | Az Intune-naplóadatok |
+| --- | :---: | :---: |
+| Globális rendszergazda | Olvasási/írási | Olvasási/írási |
+| Az Intune szolgáltatás Aministrator | Olvasási/írási | Olvasási/írási |
+| Feltételes hozzáférésű rendszergazda | Nincsenek | Nincsenek |
+| Biztonsági rendszergazda | Csak olvasható | Csak olvasható |
+| Biztonsági operátor | Csak olvasható | Csak olvasható |
+| Biztonsági olvasó | Csak olvasható | Csak olvasható |
+| Globális olvasó | Csak olvasható | Csak olvasható |
+| Szabályozási ügyintéző | Nincsenek | Csak olvasható |
+| Megfelelőségi adatok rendszergazda | Nincsenek | Csak olvasható |
+
+**Az Azure Active Directory (Azure AD)** két az Intune-nal használható címtárbeli szerepkört kínál. Ezek a szerepkörök teljes körű engedélyt biztosítanak minden Intune-beli tevékenységhez:
 
 - **Globális rendszergazda:** Ezzel a szerepkörrel rendelkező felhasználók hozzáférhetnek az Azure AD minden felügyeleti funkciójához, valamint szolgáltatások, amely val összevont, az Azure AD, mint például az Exchange Online, SharePoint Online és Skype vállalati online. Az a személy lesz globális rendszergazda, aki regisztrált az Azure AD-bérlőre. Csak a globális rendszergazdák oszthatnak ki további Azure AD-rendszergazdai szerepköröket. A szervezetnek egynél több globális rendszergazdája is lehet. A globális rendszergazdák bármely felhasználó és az összes többi rendszergazda jelszavát is alaphelyzetbe állíthatják.
 
@@ -64,7 +78,7 @@ Csak a „Teljes körű” engedéllyel rendelkező Intune-beli **szolgáltatás
 Beépített szerepkörök további konfiguráció nélkül csoportokhoz is hozzárendelhet. Nem lehet törölni, vagy szerkesztheti egy beépített szerepkör.
 
 - **Ügyfélszolgálat**: A felhasználók és eszközök távoli feladatokat hajtja végre, és alkalmazásokat és szabályzatokat rendelhet a felhasználókhoz vagy eszközökhöz.
-- **A házirend- és Profilkezelő**: Megfelelőségi szabályzat, a konfigurációs profilokat, az Apple-regisztráció és a cégeseszköz-azonosítók kezeli.
+- **A házirend- és Profilkezelő**: Megfelelőségi szabályzat, konfigurációs profilokat, az Apple regisztrációs, cégeseszköz-azonosítók és biztonsági előírások kezeli.
 - **Csak olvasási operátor**: Nézetek felhasználói, eszköz, regisztráció, konfigurációs és alkalmazással kapcsolatos adatok. Az Intune-hoz nem végezhet módosításokat.
 - **Application Manager**: Kezeli a mobil- és felügyelt alkalmazásokat, olvashatja az eszközadatokat, és megtekintheti az eszközkonfigurációs profilok.
 - **Intune-rendszergazda szerepkör**: Egyéni Intune-szerepkörök kezeli, és hozzáadja a beépített Intune-szerepkörök hozzárendeléseit. A csak az Intune-szerepkör, amely a rendszergazdák engedélyeket rendelhet.
@@ -139,8 +153,12 @@ Ugyanazokat a lépéseket követve [beépített szerepkör hozzárendelése](htt
 
 ## <a name="next-steps"></a>További lépések
 
-[Az Intune Ügyfélszolgálat szerepkörének használata a hibaelhárítási portállal](help-desk-operators.md)
+- [Az Intune Ügyfélszolgálat szerepkörének használata a hibaelhárítási portállal](help-desk-operators.md)
+
+
 
 ## <a name="see-also"></a>Lásd még:
 
-[Szerepkörök hozzárendelése az Azure AD használatával](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)
+- [Szerepkörök hozzárendelése az Azure AD használatával](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)
+- Ismerje meg [szerepköralapú hozzáférés az Intune-ban a Microsoft Graph API támogatása](https://docs.microsoft.com/graph/api/resources/intune-rbac-roledefinition?view=graph-rest-1.0)
+- Első a [PowerShell SDK esetében az Intune Graph API](https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1902.1.10)

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/15/2019
+ms.date: 03/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fcfc225d9945ecfd370468e2d48b8d9d448ffac
-ms.sourcegitcommit: b085121bf1fc56b636aefe47caeabd1d4ee96ea1
+ms.openlocfilehash: deb3e57876dffdc19129a5d845872d90d5833aaf
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58221497"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394699"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Állítsa be az Intune helyszíni Exchange-összekötő a Microsoft Intune-ban
 Ebben a cikkben található információk segítséget telepítse, és figyelje az Exchange Active Sync helyszíni összekötőt az Intune-hoz.  Az Intune helyszíni Exchange connector használata az [engedélyezi vagy letiltja a hozzáférést az Exchange feltételes hozzáférési szabályzatok a helyszíni postaládák](conditional-access-exchange-create.md). 
@@ -169,12 +169,13 @@ Szüksége lehet az Exchange connector újratelepítése. Egy összekötőt szer
 
 ## <a name="monitor-the-exchange-connector-activity"></a>Az Exchange Connector tevékenységének figyelése
 
-Az Exchange-összekötő sikeres konfigurálása után megtekintheti a kapcsolat és a legutóbbi sikeres szinkronizálási kísérlet állapotát. Az Exchange-összekötő kapcsolatainak ellenőrzése:
+Miután sikeresen konfigurálta az Exchange-összekötő, megtekintheti a kapcsolatok és a legutóbbi sikeres szinkronizálási kísérlet állapotát. Az Exchange connector-kapcsolat ellenőrzése:
 
 1. Az Intune irányítópultján válassza **Exchange-hozzáférés**.
-2. A **telepítő**válassza **az Exchange online-összekötő** minden egyes Exchange-összekötő a kapcsolat állapotának ellenőrzése.
+2. Válassza ki **a helyszíni Exchange-hozzáférés** minden egyes Exchange-összekötő a kapcsolat állapotának ellenőrzése.
 
 Ellenőrizheti a legutóbbi sikeres szinkronizálási kísérlet dátumát és időpontját is.
+--> 
 
 ### <a name="system-center-operations-manager-management-pack"></a>A System Center Operations Manager felügyeleti csomag
 
@@ -187,10 +188,11 @@ A helyszíni Exchange connector szoftverből automatikusan szinkronizálja az EA
 
    - **Teljes szinkronizálás** naponta egyszer történik alapértelmezés szerint. A teljes szinkronizálás beolvassa az összes, Intune-licenccel rendelkező és helyszíni feltételes Exchange-hozzáféréshez beállított felhasználó eszközadatait. A teljes szinkronizálás emellett beolvassa az Exchange kiszolgálói adatait is, és biztosítja, hogy az Intune által az Azure Portalon megadott konfiguráció frissüljön az Exchange-kiszolgálón. 
 
+
 Kényszerítheti a szinkronizálás futtatását egy összekötőn, ha a **Gyors szinkronizálás** vagy a **Teljes szinkronizálás** lehetőséget választja az Intune-irányítópulton. Ehhez kövesse az alábbi lépéseket:
 
    1. Az Intune irányítópultján válassza **Exchange-hozzáférés**.
-   2. A **telepítő**, válassza a **az Exchange online-összekötő**.
+   2. Válassza ki **a helyszíni Exchange-hozzáférés**.
    3. Válassza a szinkronizálni kívánt összekötőt, majd válassza a **Gyors szinkronizálás** vagy a **Teljes szinkronizálás** lehetőséget.
 
 ## <a name="next-steps"></a>További lépések

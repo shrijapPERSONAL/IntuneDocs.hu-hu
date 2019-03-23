@@ -6,24 +6,24 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/06/2019
+ms.date: 03/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
-ms.reviewer: andcerat
+ms.reviewer: demerson
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8e73af9ce317ebda09570c2c18df901529e7749
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5355257792dd8fa0e06d1b0fb4071f5e9e52b5a9
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57528326"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394944"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS-es alkalmazásvédelmi szabályzat-beállításai
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -44,7 +44,7 @@ Három szabályzatbeállítási kategória létezik: *Adatáthelyezés*, *a hozz
 | **Szervezeti adatok másolatának mentése** | Válassza ki **blokk** használatának letiltása a *Mentés másként* beállítás ebben az alkalmazásban. Válassza ki **engedélyezése** Ha engedélyezi a használatát szeretné *Mentés másként*. <br><br>**Megjegyzés:** *Ez a beállítás a Microsoft Excel, a OneNote, az Outlook, a PowerPoint és Word támogatott. Külső és üzletági alkalmazások is támogathatják.* <br><br> Ha a beállítása *blokk*, a következő beállítás konfigurálása *engedélyezés felhasználói másolatokat menteni a kijelölt szolgáltatásokba*.   | <br><br> **Engedélyezés**   |
 | <ul><ui> **Lehetővé teszi a felhasználó számára másolja a kijelölt szolgáltatásokba** | A felhasználók csak a kijelölt szolgáltatásokba (OneDrive vállalati verzió, SharePoint és Helyi tárhely) tudnak menteni. Minden más szolgáltatás le van tiltva.| **0 kijelölt**  |
 | **Korlátozhatja a kivágási, közötti másolást és beillesztést más alkalmazásokba** | Itt adhatja meg, hogy mikor használhatók a kivágási, másolási és beillesztési műveletek az alkalmazásban. Választási lehetőségek: <ul><li>**Blokkolt**:  Nem engedélyezi a kivágási, másolási és beillesztési műveletek az alkalmazás és más alkalmazások között.</li><li>**Szabályzattal felügyelt alkalmazások**: Lehetővé teszi a kivágási, másolási és beillesztési műveletek az alkalmazás és más, szabályzattal felügyelt alkalmazások között.</li><li>**Szabályzat által felügyelt beillesztéssel**: Kivágási vagy másolási művelet az alkalmazás és más szabályzat által felügyelt alkalmazások körében. Adatok beillesztésének engedélyezése bármely alkalmazásból ebbe az alkalmazásba.</li><li>**Bármely alkalmazás**: Nem korlátozza a kivágási, másolási és beillesztési vagy onnan ezt az alkalmazást.</ul> | **Bármely alkalmazás**   |
-
+| **Bármely alkalmazás kivágási és másolási karakteres korlátját** | Adja meg, amely kivágott vagy másolt a szervezeti adatok és a fiókok karakterek száma.  Ez a lehetővé teszi, függetlenül attól, hogy a megadott számú karaktert bármely alkalmazás megosztása a **Kivágás, másolás és beillesztés korlátozása más alkalmazásokkal** beállítás.<p>Alapértelmezett érték = 0<p>**Megjegyzés**: Alkalmazásnak az Intune SDK 9.0.14 verzió vagy újabb.  | **0**   |
 
 
 ### <a name="encryption"></a>Encryption

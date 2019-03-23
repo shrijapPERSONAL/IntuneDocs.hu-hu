@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cdf7ea715a13809c860e77412914e3fd2b45a28
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5f2a9f2512f4f6fb12a65d0e7c4982fd351f1770
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400483"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358317"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune adattárház-gyűjtemények
 
@@ -231,7 +231,7 @@ A **device** entitás felsorolja az összes kezelt regisztrált eszközt és azo
 | DeviceEnrollmentType       | Az eszközhöz társított, a regisztráció módját jelző regisztrációtípus kulcsa.                                                                                             |
 | ComplianceStateKey         | Az eszközhöz társított megfelelőségi állapot kulcsa.                                                                                                                             |
 | OSVersion                  | Az eszközön futó operációs rendszer verziószáma.                                                                                                                                                |
-| EasDeviceId                | Az eszköz Exchange ActiveSync-azonosítója.                                                                                                                                                  |
+| EasDeviceId                | Exchange ActiveSync-Azonosítóját az eszköz.                                                                                                                                                  |
 | a sorozatszám               | a sorozatszám                                                                                                                                                                           |
 | UserId                     | Az eszközhöz társított felhasználó egyedi azonosítója.                                                                                                                           |
 | RowLastModifiedDateTimeUTC | Az eszköz adattárházban történő utolsó módosításának dátuma és időpontja (UTC).                                                                                                       |
@@ -281,7 +281,7 @@ A **deviceType** entitás az adattárház más entitásai által hivatkozott esz
 | 12           | ISocConsumer      | iSoc Consumer-eszköz                                |
 | 13           | Unix              | UNIX rendszerű eszköz                                         |
 | 14           | MacMDM            | A beépített MDM-ügynökkel felügyelt Mac OS X-eszköz |
-| 15           | HoloLens          | Holo Lens-eszköz                                    |
+| 15           | HoloLens          | HoloLens eszköz                                       |
 | 16           | SurfaceHub        | Surface Hub-eszköz                                  |
 | 17           | AndroidForWork    | Android Profile Owner használatával felügyelt Android-eszköz  |
 | 18           | AndroidEnterprise | Vállalati Android-eszköz.                          |
@@ -311,7 +311,7 @@ A **deviceEnrollmentType** entitás egy eszköz regisztrálásának módját jel
 | 6                | WindowsBulkUserless                | A Windows 10-es csoportos regisztrálás ICD-n keresztül tanúsítvánnyal.                               |
 | 7                | WindowsAutoEnrollment              | Windows 10-es eszközök automatikus regisztrálás.   (Munkahelyi fiók hozzáadása)                                    |
 | 8                | WindowsBulkAzureDomainJoin         | Windows 10-es tömeges, az Azure AD-csatlakoztatás.                                                           |
-| 9                | WindowsCoManagement                | Windows 10-es megosztott kezelés AutoPilot vagy csoportházirend által aktiválva.                       |
+| 9                | WindowsCoManagement                | Windows 10-es megosztott kezelési AutoPilot vagy a csoportházirend által aktivált.                       |
 | 10               | WindowsAzureADJoinsUsingDeviceAuth | Windows 10-es Azure AD-csatlakoztatás Device Auth használatával.                                            |
 
 ## <a name="enrollmentactivities"></a>enrollmentActivities 
@@ -368,8 +368,8 @@ A **EnrollmentFailureCategory** entitás azt jelzi, hogy miért-eszközök regis
 | BadRequest                      | Ügyfél, amely nem a szolgáltatás által ismert és támogatott kérést küldött.                                        |
 | FeatureNotSupported             | Ezzel a beléptetési által használt vagy több nem támogatottak ehhez a fiókhoz.                                        |
 | EnrollmentRestrictionsEnforced  | Ezzel a beléptetési blokkolja a rendszergazda által konfigurált regisztrációs korlátozások.                                          |
-| ClientDisconnected              | Ügyfél túllépte az időkorlátot, vagy regisztráció enduser megszakította.                                                        |
-| UserAbandonment                 | Regisztráció által enduser félbeszakadt. (Enduser bevezetési elindult, de nem tudta befejezni a időben)  |
+| ClientDisconnected              | Ügyfél túllépte az időkorlátot, vagy regisztráció a végfelhasználó megszakították.                                                        |
+| UserAbandonment                 | Regisztráció a végfelhasználó félbeszakadt. (Végfelhasználói bevezetési elindult, de nem tudta befejezni a időben)  |
 
 ## <a name="enrollmentfailurereasons"></a>enrollmentFailureReasons  
 A **EnrollmentFailureReason** entitás azt jelzi, hogy egy adott hiba kategórián belül az eszköz regisztrációs nem részletesebb okát.  
@@ -398,7 +398,7 @@ A **EnrollmentFailureReason** entitás azt jelzi, hogy egy adott hiba kategóri�
 | EnrollmentCriteriaNotMet         | Ez az eszköz regisztrálása egy konfigurált regisztrációs korlátozási szabály miatt nem sikerült.                                                                                                                          |
 | BulkDeviceNotPreregistered       | Az eszköz nemzetközi mobilkészülék-azonosító (IMEI) vagy sorozatszáma nem található.  Ezen azonosító nélkül eszközök ismerik a személyes tulajdonú eszközök, amelyek jelenleg le vannak tiltva.  |
 | FeatureNotSupported              | A felhasználó próbált hozzáférni egy szolgáltatás, amely még nem lett kiadva minden ügyfél számára, vagy nem kompatibilis az Intune-konfigurációval.                                                            |
-| UserAbandonment                  | Regisztráció által enduser félbeszakadt. (Enduser bevezetési elindult, de nem tudta befejezni a időben)                                                                                           |
+| UserAbandonment                  | Regisztráció a végfelhasználó félbeszakadt. (Végfelhasználói bevezetési elindult, de nem tudta befejezni a időben)                                                                                           |
 | APNSCertificateExpired           | Lejárt Apple MDM push-tanúsítványt az Apple-eszközök nem felügyelhetők.                                                                                                                            |
 
 ## <a name="intunemanagementextensions"></a>intuneManagementExtensions
@@ -448,7 +448,7 @@ A **managementAgentTypes** az eszköz kezelésére szolgáló ügynököket jel�
 | 5                     | EasIntuneClient                   | Az Exchange Active Sync szolgáltatással és Intune PC-ügynökkel kezelt eszköz |
 | 8                     | ConfigManagerClient               | A System Center Configuration Manager-ügynökkel kezelt eszköz     |
 | 10                    | ConfigurationManagerClientMdm     | Az eszköz a Configuration Managerrel és az MDM-mel van felügyelve.                    |
-| 11                    | ConfigurationManagerCLientMdmEas  | Az eszköz a Configuration Managerrel, az MDM-mel és az EAS-szal van felügyelve.               |
+| 11                    | ConfigurationManagerCLientMdmEas  | Az eszköz a Configuration Manager, az MDM és az Exchange Active Sync szolgáltatással kezeli.               |
 | 16                    | Ismeretlen                           | A kezelőügynök típusa ismeretlen                                              |
 | 32                    | Jamf                              | Az eszköz attribútumai a Jamf-ből vannak beolvasva.                               |
 | 64                    | GoogleCloudDevicePolicyController |  Az eszközt a Google CloudDPC kezeli.                                 |
@@ -617,7 +617,7 @@ A **user** entitásgyűjtemény felhasználói adatokat tartalmaz. A rekordok k�
 | UserKey                    | A felhasználó egyedi azonosítója az adattárházban – helyettes kulcs.                                                                                                                                                         | 123                                  |
 | UserId                     | A felhasználó egyedi azonosítója – a UserKey-hez hasonló, de természetes kulcs.                                                                                                                                                    | b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail                  | A felhasználó e-mail címe.                                                                                                                                                                                                     | John@constoso.com                    |
-| EGYSZERŰ FELHASZNÁLÓNÉV                        | A felhasználó egyszerű felhasználóneve.                                                                                                                                                                                               | John@constoso.com                    |
+| userPrincipalName                        | A felhasználó egyszerű felhasználóneve.                                                                                                                                                                                               | John@constoso.com                    |
 | displayName                | A felhasználó megjelenítendő neve.                                                                                                                                                                                                      | István                                 |
 | IntuneLicensed             | Megadja, hogy a felhasználó rendelkezik-e Intune-licenccel.                                                                                                                                                                              | Igaz/hamis                           |
 | IsDeleted                  | Azt jelzi, hogy a felhasználó összes engedélye lejárt-e, és a felhasználót emiatt eltávolították-e az Intune-ból. Egyetlen rekord esetén ez a jelölő nem változik. Ehelyett új rekord jön létre egy új felhasználói állapothoz. | Igaz/hamis                           |
