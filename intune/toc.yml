@@ -262,8 +262,6 @@ items:
       href: device-profile-android-teamviewer.md
     - name: Windows 10-es PIN-kód alaphelyzetbe állítása
       href: device-windows-pin-reset.md
-    - name: Az Exchange szolgáltatási összekötőjének telepítése
-      href: exchange-service-connector-configure.md
     - name: Eszköz szinkronizálása
       href: device-sync.md
     - name: Eszközkészlet vizsgálata
@@ -329,6 +327,11 @@ items:
       href: education-settings-configure.md
     - name: Többfelhasználós megosztott eszközök
       href: shared-user-device-settings.md
+    - name: Mobilbővítmények Zebra-eszközökön
+      href: android-zebra-mx-overview.md
+      items:
+      - name: StageNow-naplók és gyakori problémák
+        href: android-zebra-mx-logs-troubleshoot.md
     - name: Távközlési költségek monitorozása
       href: telecom-expenses-monitor.md
     - name: Egyéni eszközbeállítások
@@ -854,8 +857,6 @@ items:
             href: reports-ref-user-timeline.md
           - name: Alkalmazás-entitások referencia
             href: reports-ref-application.md
-          - name: Aktuális felhasználó típusú entitás referenciája
-            href: reports-ref-current-user.md
           - name: Dátum típusú entitás referenciája
             href: reports-ref-date.md
           - name: Eszközök típusú entitások referenciája
@@ -946,9 +947,9 @@ items:
       href: data-outside-protect.md
     - name: Adatszivárgás megakadályozása nem felügyelt eszközökön
       href: data-leak-prevention.md
-ms.openlocfilehash: 2a7f7b7a1d1c56cf316362ef8dc2693343e64955
-ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
+ms.openlocfilehash: f342d2ce12fb45db49cf06263807ed4a155fba55
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58306859"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394680"
