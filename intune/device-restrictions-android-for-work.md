@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4610f99d9190ddad01ab604195e086e407e7161a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 493a5be89e747c2de1eca3a63907b79228fcdfa2
+ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566318"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58429754"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Android Enterprise eszközbeállítások engedélyezett vagy korlátozott funkciók az Intune-nal
 
@@ -108,7 +108,7 @@ Ezek a beállítások használatával az dedikált eszközök kioszk stílusú f
   >   - [Egy ügyfélalkalmazás hozzáadott](apps-add-android-for-work.md) az Intune-ban
   >   - [Az eszköz csoporthoz rendelt](apps-deploy.md) a dedikált eszközök számára létrehozott
   > 
-  > A **kezdőlap képernyő felügyelt** alkalmazás nem található a konfigurációs profil feltétlenül szükséges, de ügyfélalkalmazásként hozzá kell adni. Ha a **kezdőlap képernyő felügyelt** alkalmazás ügyfélalkalmazásként adnak, adja hozzá a configiration profil a minden más alkalmazás ikonok jelennek meg a a a **kezdőlap képernyő felügyelt** alkalmazást. 
+  > A **kezdőlap képernyő felügyelt** alkalmazás nem található a konfigurációs profil feltétlenül szükséges, de ügyfélalkalmazásként hozzá kell adni. Ha a **kezdőlap képernyő felügyelt** alkalmazás ügyfélalkalmazásként adnak, adja hozzá azokat a konfigurációs profilt minden más alkalmazás ikonok jelennek meg a a **kezdőlap képernyő felügyelt** alkalmazást. 
 
   - Válasszon **Hozzáadás**, és válassza ki az alkalmazások a listából.
 

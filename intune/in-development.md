@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5612ae0ea6c1495fdf12e85bbed80e54bc3f287f
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: a34cf1ec89165821e853b00be1fd8c83717767e2
+ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394643"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58429674"
 ---
 # <a name="in-development-for-microsoft-intune---march-2019"></a>A Microsoft Intune-hoz – március 2019 fejlesztés alatt
 
@@ -57,24 +57,45 @@ Láthatja, hogy egy hatókörcímkét hozzá alkalmazás-konfigurációs házire
 Autopilot-profilokat rendelhet hozzá a Minden eszköz virtuális csoporthoz. Ehhez válassza az **Eszközök beléptetése** > **Windows-regisztráció** > **Telepítési profilok** elemet > válasszon egy profilt > **Hozzárendelések** > a **Hozzárendelés a következőhöz** elemnél válassza a **Minden eszköz** lehetőséget. Az Autopilot-profilokról a [Windows-eszközök regisztrálása a Windows AutoPilot használatával](enrollment-autopilot.md) című cikkben tájékozódhat.
 
 ###  <a name="block-users-from-scanning-for-windows-updates-------3316758------"></a>A felhasználók a Windows-frissítések keresése    <!-- 3316758    -->
-Adunk hozzá egy új Windows frissítési kör beállítás, amely használható, amely letiltja a felhasználók a Windows-frissítések keresése. Ez a beállítás nem lesz elérhető a portálon, de konfigurálható az Intune Graph API használatával.
+Adunk hozzá egy új Windows frissítési kör beállítás, amely segítségével megakadályozhatja a felhasználók Windows-frissítések keresése. Ez a beállítás nem lesz elérhető a portálon, de konfigurálható az Intune Graph API használatával.
 
 ### <a name="windows-update-notifications-----3316782---"></a>Windows-frissítési értesítések  <!-- 3316782 -->
-Azt adja hozzá támogatást a Windows Update kör konfigurációk így konfigurálhatja a Windows Update-értesítések, amelyek megjelennek a felhasználók számára. Ez a beállítás nem lesz elérhető a portálon, de konfigurálható az Intune Graph API használatával.
+Azt adja hozzá támogatást a Windows Update kör konfigurációk úgy is elérheti a felhasználók a Windows Update-értesítések beállítása. Ez a beállítás nem lesz elérhető a portálon, de konfigurálható az Intune Graph API használatával.
 
 ### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635---"></a>Céges portál iOS 12-eszközök felhasználói regisztrációjának módosításai <!--3448635 -->  
-IOS-hez készült céges portál fog frissülni, az alkalmazás regisztrációs képernyők és a mobileszköz-kezelési regisztrációs módosításokat jelent meg az Apple iOS 12.2 igazodva lépéseket. A frissített munkafolyamatot most fogja kérni a felhasználók számára:
+IOS-hez készült céges portál fog frissülni, az alkalmazás regisztrációs képernyők és a lépéseket, amelyek a mobileszköz-kezelési regisztrációs módosításokat jelent meg az Apple iOS 12.2 összhangban vannak. A frissített munkafolyamatot most fogja kérni a felhasználók számára:
 
-- Nyissa meg a céges portál webhelyet (keresztül a Safari esetében), és a felügyeleti profil letöltéséhez a vállalati portál alkalmazásba való visszatérés előtt Safari engedélyezése. 
+- Nyissa meg a céges portál webhelyet (keresztül a Safari esetében), és a felügyeleti profil letöltéséhez a vállalati portál alkalmazásba való visszatérés előtt Safari engedélyezése.
 - Nyissa meg a beállítási alkalmazást a felügyeleti profil telepítésére az eszközükön.
-- Térjen vissza a céges portál alkalmazás regisztráció elvégzését.  
+- Térjen vissza a céges portál alkalmazás regisztráció elvégzését.
 
 Hogyan készítheti elő a módosítások kapcsolatos további információkért lásd: a [a Microsoft technikai Közösség post](https://aka.ms/CP_changes_iOS12). Addig is támogatásához új iOS-regisztrációk vállalati portálon, hogy frissítettük lépéseit [iOS-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/en-us/intune/ios-enroll). Doc módosítások után az Apple iOS-verziót 12.2 kiadások lesz élő. 
+
+### <a name="support-for-additional-connectors-on-the-tenant-status-page----3617202-------"></a>A bérlő állapotának oldalon további összekötők támogatása <!-- 3617202     -->
+A bérlő állapotának oldal jelenik meg, kiegészítő jellegű összekötő, beleértve az állapotadatait *Windows Defender komplex veszélyforrások elleni védelem* (ATP) és egyéb Mobile Threat Defense-összekötők.
+
+### <a name="granting-intune-read-only-access-to-some-azure-active-directory-roles----3637917---"></a>Csak bizonyos Azure Active Directory-szerepkör való hozzáférés biztosítása az Intune-ban olvasása <!-- 3637917 -->
+Azt fogjuk engedélyező Intune-ban, olvassa el a következő Azure AD-szerepkörök csak a hozzáférést. Az Azure AD-szerepkörökhöz rendelt engedélyeket váltja fel az Intune szerepköralapú hozzáférés-vezérlés (RBAC) az adott engedélyek.
+
+Olvassa el az Intune-naplózási adatokat csak a hozzáférést:
+
+- Szabályozási ügyintéző
+- Megfelelőségi adatok rendszergazda
+
+Csak olvasásra jogosító hozzáférés Intune-ban tárolt összes:
+
+- Biztonsági rendszergazda
+- Biztonsági operátor
+- Biztonsági olvasó
+- Globális olvasó
+
+### <a name="easier-access-to-diagnostic-settings------3804627-----"></a>Könnyebb elérhetőség érdekében a diagnosztikai beállítások   <!-- 3804627   -->
+Adunk hozzá egy új lehetőség a **Auditnaplók** minden napló számítási az Intune-konzolon, amellyel közvetlenül nyissa meg a panelen a *diagnosztikai beállítások* lap.
 
 ### <a name="create-and-use-device-configuration-profiles-on-android-zebra-devices-in-intune----3895244----"></a>Létrehozhat és használhat eszközkonfigurációs profilok Android Zebra eszközökön az Intune-ban <!-- 3895244  -->
 Az Intune konfigurálása Android Zebra eszközöket támogatja. Pontosabban, képes lesz: 
 
-- Eszközkonfigurációs profil létrehozása, és a beállítások StageNow által generált mobilitási bővítmények MX-profilok használatával Android Zebra-eszközökre vonatkoznak (**eszközkonfiguráció** > **profilok**  >  **Profil létrehozása** > **Android** tartozó platform).
+- Eszközkonfigurációs profil létrehozása és a beállítások StageNow által generált mobilitási bővítmények MX-profilok használatával Android Zebra-eszközökre vonatkoznak (**eszközkonfiguráció** > **profilok**  >  **Profil létrehozása** > **Android** tartozó platform).
 
 A következőkre vonatkozik:  
 - Android

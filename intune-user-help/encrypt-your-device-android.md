@@ -1,11 +1,11 @@
 ---
-title: Androidos eszközök védelme titkosítással | Microsoft Docs
-description: Androidos eszköz védelme
+title: Az Intune vállalati portál Android-eszköz titkosítása |} A Microsoft Docs
+description: Az Android-eszközökön az eszköztitkosítás bekapcsolását lépések
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 03/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,31 +18,45 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 115025d60038daea6f43c97cbdc03a20d5b0bf59
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 9ad953049b9d2efd6f7a828ee70b5e1cede4ee68
+ms.sourcegitcommit: d0749cbc68df41893742f5187ac378a5ade824f2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55838172"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58406248"
 ---
-# <a name="how-to-protect-your-android-device-using-encryption"></a>Androidos eszközök védelme titkosítással
+# <a name="encrypt-your-android-device"></a>Az Android-eszköz titkosítása
 
-Egy eszköz titkosításakor a rajta lévő információt egy védelmi kódréteg veszi körül, amely megakadályozza, hogy illetéktelenek férjenek hozzá. Az információbiztonság érdekében a munkahelye az androidos eszközök titkosítását követeli meg Öntől, mielőtt hozzáférhetne a vállalati fájlokhoz, e-mailekhez és adatokhoz.
+Az eszköztitkosítás védi a fájlok és mappák a jogosulatlan hozzáférés ellen, ha az eszköz elvesztésekor vagy ellopásakor. Az eszköztitkosítás bekapcsolását követően csak a helyes jelszót vagy PIN-kód lesznek jelentkezhet be az eszközre. 
+
+Iskolai vagy munkahelyi erőforrások eléréséhez, a szervezet szükség lehet az Android-eszköz titkosítását. Alapértelmezés szerint néhány újabb Android-eszközök titkosítottak-a-beépített.  
+
+Ha egy üzenetet kap a vállalati portált, amelyen az eszközt titkosítania kell, végezze el az alábbi lépéseket. 
 
 > [!Note]
-> Bizonyos androidos eszközöket, mint a Vivo és az OPPO gyártású, valamint egyes Huawei gyártású eszközök, nem lehet titkosítani. További információért [kattintson ide](your-device-appears-encrypted-but-cp-says-otherwise-android.md).
+> A Huawei, a Vivo és az OPPO bizonyos Android-eszközökön nem lehet titkosítani. További információért [kattintson ide](your-device-appears-encrypted-but-cp-says-otherwise-android.md).  
 
-Ha megszünteti a telefonja regisztrációját, a titkosítás megmarad.
+1.  Egy eszköz képernyőzár beállítása.  
+    a. Lépjen a **beállítások** > **zárolási képernyő és biztonság** > **képernyő-zárolási típus**.  
+    b. Ezek közül bármelyikre **PIN-kód**, **jelszó**, vagy **minta**.  
+    c. Kövesse a képernyőn megjelenő utasításokat, a képernyőzárat konfigurálásához.  
 
-1.  Győződjön meg arról, hogy a képernyő-zárolási PIN-kód vagy jelszó be van állítva az eszközön.
+2. Lépjen vissza a **zárolási képernyő és biztonság** válassza **biztonságos indításnak**.
+3. Válasszon **PIN-kód megkövetelése amikor az eszköz bekapcsolása** > **OK**.
+4. Adja meg a PIN-kód megerősítése és az eszköz titkosítása.
+5. Nyissa meg a céges portál alkalmazást, válassza ki az eszközt, és koppintson **eszközbeállítások ellenőrzése**.  
 
-2.  A **Settings** (Beállítások) menüben válassza a **Security** (Biztonság)  >  **Encrypt Device** (Eszköz titkosítása) lehetőséget.
-    (Egyes telefonokon a **Storage** (Tárhely)  >  **Storage encryption** (Tárhely titkosítása) vagy a **Storage** (Tárhely)  >  **Lock screen and security**  >  (Zárolási képernyő és biztonság) **Other security settings** (További biztonsági beállítások) menüben található az Encrypt (Titkosítás) beállítás).
+4.4-es és régebbi Android rendszerű eszközök nem feltétlenül a **biztonságos indítás** lehetőséget. Ebben az esetben a következő lépéseket az eszköz titkosítását.
 
-3.  Kövesse a képernyőn megjelenő utasításokat. Előfordulhat, hogy a titkosítás során az eszköz többször újraindul.
+1. Lépjen a **beállítások** > **biztonsági** > **eszköz titkosítása**. Képernyőn címkék Android-eszközök között változhat. Ha nem látja a **eszköz titkosítása** lehetőség választásakor ellenőrizze:
+    * **Tárolási** > **tárolás titkosítása**
+    * **Tárolási** > **zárolási képernyő és biztonság** > **további biztonsági beállítások** 
 
-### <a name="what-to-do-if-you-have-issues"></a>Mi a teendő ha problémába ütközik?
-**A probléma**: Már titkosította az eszközt, és a következők egyikét látja:
+2. Kövesse a képernyőn megjelenő utasításokat. Titkosítás során az eszköz lehetett többször újraindul.
+3. Nyissa meg a céges portál alkalmazást, válassza ki az eszközt, és koppintson **eszközbeállítások ellenőrzése**.  
+
+## <a name="troubleshoot"></a>Hibaelhárítás  
+**A probléma**: Azt, hogy már titkosította az eszközt, és
 
 - A titkosítási gomb le van tiltva.
 - Egy üzenet azt jelzi, hogy titkosítania kell az eszközt.
@@ -50,20 +64,7 @@ Ha megszünteti a telefonja regisztrációját, a titkosítás megmarad.
 
 **Az alábbiakkal próbálkozhat**
 
-- Ellenőrizze, hogy az eszköz fel van-e töltve és csatlakoztatva van-e.
-- Ellenőrizze, hogy beállított-e PIN-kódot vagy jelszót az eszközön.
-- Ha már beállította a PIN-kódot vagy jelszót, próbálkozzon az alábbi lépésekkel, amelyeket a cég informatikai támogatási szolgálata megkövetelhet az eszköz biztonságosabbá tételéhez. A lépésekben szereplő menünevek kissé eltérhetnek az eszközön láthatóaktól, attól függően, hogy milyen Android-eszközt használ.
+- Ellenőrizze, hogy az eszköz fel van-e töltve és csatlakoztatva van-e.  
+- Ellenőrizze, hogy beállított-e PIN-kódot vagy jelszót az eszközön.  
 
-    1. Nyissa meg a **Settings** (Beállítások) > **Lock Screen and Security** (Zárolási képernyő és biztonság) > **Screen lock** (Képernyőzárolás) lapot. Erősítse meg jelenlegi PIN-kódját vagy jelszavát.
-
-    2. A **Choose screen lock** (Képernyőzár kiválasztása) képernyőn válassza ki a használni kívánt képernyőzárat. 
-
-    3. Miután kiválasztotta a képernyőzárat, lépjen vissza a **Lock Screen and Security** (Zárolási képernyő és biztonság) képernyőre, és válassza a **Secure Startup** (Biztonságos indítás) lehetőséget. 
-    
-    4. A **Secure startup** (Biztonságos indítás) képernyőn koppintson a **Require PIN to start device** (PIN-kód kérése az eszköz indításához), majd a **Continue** (Folytatás) elemre.
-
-    5. Adjon meg egy PIN-kódot (a korábban megadott PIN-kódot is beírhatja), és koppintson a **Confirm your PIN** (PIN-kód megerősítése) elemre.
-
-    6. Nyissa meg a Vállalati portál alkalmazást, jelölje ki az eszközét, és koppintson a **Megfelelőség ellenőrzése** elemre.
-
-További segítségre van szüksége? Forduljon a cég informatikai támogatási szolgálatához (a kapcsolattartási adatokat a [céges portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980) találja), vagy írjon a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-csapatának</a>.
+További segítségre van szüksége? Forduljon a cég informatikai támogatási szolgálatához (a kapcsolattartási adatokat a [céges portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980) találja), vagy írjon a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-csapatának</a>.  

@@ -18,15 +18,15 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a812a0ec11c4e577e2ed0c7e4aeb702601ceeaf
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 3e67e9deb77d1f479107c5d3e43cd602ae6eab80
+ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397474"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58429744"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Felhasználói felületi frissítések az Intune végfelhasználói alkalmazásaiban
-A cikkből megismerheti, mit módosítottunk a végfelhasználók számára látható alkalmazások felhasználói felületén ebben a Microsoft Intune-kiadásban. Ez segítségére lehet a felhasználói kommunikációban és az Ön üzemeltetési környezetének támogatására létrehozott egyéni dokumentáció frissítésében. Annak megértését is megkönnyíti, hogy miképpen háríthatja el jobban a végfelhasználók által tapasztalt hibákat, ha telefonos segítséget igényelnek a Céges portál használatához.  
+Ismerje meg, mit módosítottunk a felhasználói felület (UI) a végfelhasználók számára megjelenik ebben a kiadásban a Microsoft Intune-alkalmazások. Ezek a frissítések ismertetése segítségére lehet a felhasználói kommunikáció során, és minden olyan egyéni dokumentáció frissítése hozott létre az üzemelő példányok támogatására. Azt is megismerésében is segítenek jobban hibaelhárítása a felhasználók fennálló problémákat kell hívják meg az ügyfélszolgálattól a céges portál használatához.  
 
 A vállalati portál alkalmazás használatával kapcsolatos további információkért lásd: a [céges portál felhasználói súgó dokumentációját](https://docs.microsoft.com/intune-user-help/).  
 
@@ -34,7 +34,7 @@ A vállalati portál alkalmazás használatával kapcsolatos további informáci
 
 ## <a name="week-of-february-19-2019"></a>2019. február 19 hete  
 ### <a name="new-app-categories-screen-in-the-company-portal-app-for-windows-10---3834780-wnready4review---"></a>Új alkalmazás kategóriák képernyő Windows 10-es céges portál alkalmazásban<!-- 3834780 WNready4Review -->  
-Egy új képernyőt nevű **Alkalmazáskategóriák** a Windows 10 céges portál alkalmazás tallózása és kiválasztása élményének növelése érdekében jelentősen bővült. A felhasználók mostantól látnak alkalmazásaikat, például a kategóriák szerint rendezve **kiemelt**, **oktatási**, és **termelékenység**. Ez a módosítás megjelenik a céges portál verziókban 10.3.3451.0 és újabb verziók. A céges portál alkalmazások első kapcsolatos további információkért lásd: [telepítése és megosztása az eszközön található alkalmazások](/intune-user-help/install-apps-cpapp-windows).  
+Egy új képernyőt nevű **Alkalmazáskategóriák** az a vállalati portál Windows 10-es alkalmazás tallózása és kiválasztása élményének növelése érdekében jelentősen bővült. A felhasználók mostantól látnak alkalmazásaikat, például a kategóriák szerint rendezve **kiemelt**, **oktatási**, és **termelékenység**. Ez a módosítás megjelenik a céges portál verziókban 10.3.3451.0 és újabb verziók. A vállalati portál alkalmazások bevitele kapcsolatos további információkért lásd: [telepítése és oszthat meg alkalmazásokat az eszköz](/intune-user-help/install-apps-cpapp-windows).  
 
 
 ![Képernyőfelvétel a vállalati portál Windows 10-es, kategóriák képernyő.](./media/1902_CP_app_categories.png)   
@@ -55,7 +55,7 @@ A Microsoft Intune rendszergazdájaként Ön olyan egyéni márkaemblémát töl
 ## <a name="week-of-august-27-2018"></a>2018. augusztus 27-i hét  
 
 ### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>Új frissítés a felhasználói felülethez a céges portál webhelyen <!--2000968 -->  
-A felhasználók visszajelzései alapján új funkciókkal egészült ki a Céges portál webhely. Jelentős javulást fog tapasztalni eszközei már meglévő funkciói és használhatósága terén. Új, modern és rugalmas külsőt kaptak a webhely különböző területei, &ndash;köztük az eszközadatok, a visszajelzés, a támogatás és az eszközök áttekintése&ndash;. Az [Intune Céges portál webhelyének dokumentációja](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website) frissítve lett, hogy tükrözze a változásokat.   
+Ügyfeleink visszajelzései alapján hozzáadtunk új funkciókat a céges portál webhelyen. Jelentős javulást fog tapasztalni eszközei már meglévő funkciói és használhatósága terén. Területek a hely, eszköz adatai, visszajelzés és támogatás és eszköz áttekintése, például egy új, modern, rugalmas kialakítás érkezett. Az [Intune Céges portál webhelyének dokumentációja](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website) frissítve lett, hogy tükrözze a változásokat.   
 
 Többek között a következő frissítéseket fogja látni:  
 
@@ -75,13 +75,13 @@ Többek között a következő frissítéseket fogja látni:
 ## <a name="week-of-july-16-2018"></a>2018. július 16-ai hét  
 
 ### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>További szinkronizálási lehetőségek a windowsos Céges portál alkalmazásban   
-A Windowsos Céges portál alkalmazás mostantól lehetővé teszi, hogy a szinkronizálási folyamatot közvetlenül a Windows tálcájáról vagy a Start menüből is elindíthassa. Ez a funkció abban az esetben igazán hasznos, ha csak szinkronizálni szeretné eszközeit, hogy utána hozzáférhessen a vállalati erőforrásokhoz. Az új funkció eléréséhez jobb gombbal kattintson a Céges portál alkalmazás ikonjára a tálcán vagy a Start menüben. A megjelenő menüpontok közül (azaz a gyorslistában) válassza **Az eszköz szinkronizálása** lehetőséget. Megnyílik a Céges portál alkalmazás **Beállítások** lapja, és megkezdődik a szinkronizálás.  
+A Windowsos Céges portál alkalmazás mostantól lehetővé teszi, hogy a szinkronizálási folyamatot közvetlenül a Windows tálcájáról vagy a Start menüből is elindíthassa. Ez a funkció abban az esetben igazán hasznos, ha csak szinkronizálni szeretné eszközeit, hogy utána hozzáférhessen a vállalati erőforrásokhoz. Az új funkció eléréséhez kattintson a jobb gombbal a céges portál ikon rögzített a tálcán vagy **Start** menü. A megjelenő menüpontok közül (azaz a gyorslistában) válassza **Az eszköz szinkronizálása** lehetőséget. Megnyílik a Céges portál alkalmazás **Beállítások** lapja, és megkezdődik a szinkronizálás.  
 
 ![A Windows tálcájának képernyője egy eszköz asztalán. A Céges portál alkalmazás ikonjára kattintva megjelenik egy menü a Rögzítés a tálcán, az Ablak bezárása és az Eszköz szinkronizálása lehetőségekkel.](./media/sync-device-from-start-menu-1807.png)  
 
 ### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>Új böngészési élmény a windowsos Céges portál alkalmazásban  
 
-Ha a windowsos Céges portál alkalmazásban alkalmazásokat böngész vagy keres, mostantól válthat a meglévő **Csempék** nézet és az újonnan hozzáadott **Részletek** nézet között. Az új nézet az alkalmazások adatait jeleníti meg, például a nevet, a kiadót, a kiadás dátumát és a telepítés állapotát.  
+Most a böngészés vagy a Windows-alkalmazások a vállalati portál alkalmazás keresése, választhat-e a meglévő **Csempék** nézet és az új **részletei** megtekintése. Ezen új nézet alkalmazás adatait, például a nevét, kiadóját, közzététel dátumát és telepítési állapotát megjeleníti.  
 
 Az **Alkalmazások** lapon található egy **Telepítve** nézet is, amely a befejezett és a folyamatban lévő telepítések adatait jeleníti meg.  
 

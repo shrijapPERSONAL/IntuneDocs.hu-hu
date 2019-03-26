@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f7a35104982998c00e0fc653dc04e23051a46dc5
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: d73d96d2246c89e014bd75f9b3b48493d3ac11fb
+ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394849"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58429769"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -103,14 +103,12 @@ A következőkre vonatkozik:
 ### <a name="device-management"></a>Eszközkezelés
 
 #### <a name="encryption-report-for-windows-10-devices-in-public-preview---2351538---"></a>Titkosítási jelentés a Windows 10 rendszerű eszközökhöz (nyilvános előzetes verzió)<!-- 2351538 -->  
-
-Az új [titkosítási jelentésben (előzetes verzió)](encryption-monitor.md#encryption-report-&#40;in-public-preview&#41;) a Windows 10 rendszerű eszközök titkosítási állapotát részleteinek megtekintéséhez. Rendelkezésre álló adatot közé tartozik az eszközök TPM-verzió, titkosítási készültségi állapot, hibajelentés és még.  
+Az új [titkosítási jelentésben (előzetes verzió)](encryption-monitor.md) a Windows 10 rendszerű eszközök titkosítási állapotát részleteinek megtekintéséhez. Rendelkezésre álló adatot közé tartozik az eszközök TPM-verzió, titkosítási készültségi állapot, hibajelentés és még.  
 
 #### <a name="access-bitlocker-recovery-keys-from-the-intune-portal-in-public-preview----2351547-----"></a>A BitLocker helyreállítási kulcsok elérését az Intune-portálon (a nyilvános előzetes verzió) <!-- 2351547   -->  
+Most már használhatja az Intune [részleteinek megtekintéséhez](encryption-monitor.md) BitLocker-kulcs azonosítója és a BitLocker helyreállítási kulcsok az Azure Active Directoryból.
 
-Most már használhatja az Intune [részleteinek megtekintéséhez](encryption-monitor.md#bitlocker-recovery-keys-&#40;in-public-preview&#41;) BitLocker-kulcs azonosítója és a BitLocker helyreállítási kulcsok az Azure Active Directoryból.
-
-### <a name="microsoft-edge-support-for-intune-scenarios-on-ios-and-android-devices----3411007---"></a>A Microsoft Edge támogatása az iOS- és Android-eszközök Intune-forgatókönyvek <!-- 3411007 -->
+#### <a name="microsoft-edge-support-for-intune-scenarios-on-ios-and-android-devices----3411007---"></a>A Microsoft Edge támogatása az iOS- és Android-eszközök Intune-forgatókönyvek <!-- 3411007 -->
 A Microsoft Edge támogatni fogják az azonos felügyeleti forgatókönyvek, az Intune Managed Browser továbbfejlesztett végfelhasználói élmény igény szerinti hozzáadásával. A Microsoft Edge vállalati Intune szabályzatai által engedélyezett funkciók kettős-Identity, app protection házirend-integráció, az Azure application proxy-integráció, és felügyelt Kedvencek és a kezdőlap parancsikonok. További információkért lásd: [Microsoft Edge támogatási](app-configuration-managed-browser.md#microsoft-edge-support).
 
 #### <a name="exchange-onlineintune-connector-deprecate-support-for-eas-only-devices---3105122------"></a>Az Exchange Online vagy Intune-összekötő csak az EAS-eszközök támogatását kivezetjük <!--3105122    -->
@@ -149,9 +147,9 @@ További információkért lásd: [szerepköralapú hozzáférés-vezérlés](ro
 #### <a name="scope-tags-for-app-configuration-policies---2371891-----"></a>Hatókörcímkék az alkalmazáskonfigurációs szabályzatok <!--2371891   -->
 Így csak is az adott hatókörcímke hozzárendelt szerepkörrel rendelkező személyek hozzáférhetnek az alkalmazáskonfigurációs szabályzat hatókörcímke adhat hozzá alkalmazás-konfigurációs házirend. Az alkalmazáskonfigurációs szabályzat csak a megcélzott vagy az azonos hatókörcímke hozzárendelt alkalmazásokhoz vannak rendelve. További információkért lásd: [RBAC használata és a hatókör-címkéket](scope-tags.md).
 
+### <a name="microsoft-edge-support-for-intune-scenarios-on-ios-and-android-devices----3411007---"></a>A Microsoft Edge támogatása az iOS- és Android-eszközök Intune-forgatókönyvek <!-- 3411007 -->
+A Microsoft Edge támogatni fogják az azonos felügyeleti forgatókönyvek, az Intune Managed Browser hozzáadásával kapcsolatos fejlesztések a végfelhasználói élményt. A Microsoft Edge vállalati Intune szabályzatai által engedélyezett funkciók kettős-Identity, app protection házirend-integráció, az Azure application proxy-integráció, és felügyelt Kedvencek és a kezdőlap parancsikonok. További információkért lásd: [Microsoft Edge támogatási](app-configuration-managed-browser.md#microsoft-edge-support).
 
-<!-- ########################## -->
->>>>>>> 5e7c086a04b16c159f2ddf9054c8054b4a389872
 ## <a name="week-of-february-25-2019"></a>2019. február 25 hete
 
 ### <a name="device-configuration"></a>Eszközök konfigurálása
