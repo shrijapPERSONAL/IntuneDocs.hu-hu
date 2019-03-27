@@ -6,19 +6,19 @@ author: ErikjeMS
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.topic: quickstart
-ms.date: 09/21/2018
+ms.date: 03/26/2019
 ms.author: erikje
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be3ef61d3bdce2f1ad74a388a2ec50691313a1d1
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6cf4e365f4e68920ea5d24dc3ce2e1bd5eb9f817
+ms.sourcegitcommit: 9af102e1232d9a568a7901783c30ba9905e64d99
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400285"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58477128"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>Gyors útmutató: Egyéni szerepkör létrehozása és hozzárendelése
 
@@ -32,7 +32,7 @@ Ha nem rendelkezik Intune-előfizetéssel, [regisztráljon egy ingyenes próbafi
 
 ## <a name="sign-in-to-intune"></a>Bejelentkezés az Intune-ba
 
-Jelentkezzen be az [Intune-ba](https://aka.ms/intuneportal) globális rendszergazdaként vagy Intune-beli szolgáltatásadminisztrátorként.
+Jelentkezzen be az [Intune-ba](https://aka.ms/intuneportal) globális rendszergazdaként vagy Intune-beli szolgáltatásadminisztrátorként. Ha létrehozott egy Intune próba-előfizetést, az a fiók lesz a globális rendszergazda, amelyikkel azt létrehozta.
 
 ## <a name="create-a-custom-role"></a>Egyéni szerepkör létrehozása
 

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 03/26/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4692e19d657e19efe18a91273ce585eb59c6cb65
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 17638838e049e5940b1b59019be6573b7eb09d64
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57528275"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490659"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Oktatóanyag: Nem felügyelt eszközökön az Exchange Online e-mailek védelme
 
@@ -91,8 +91,8 @@ Most, hogy biztosítsák az összes eszközplatformot két feltételes hozzáfé
 5.  A **Hozzárendelések** alatt válassza a **Feltételek** > **Eszközplatformok** lehetőséget.
      
     1. A **Konfigurálás** alatt válassza az **Igen** lehetőséget.
-    2. Az a **Belefoglalás** lapon jelölje be **minden platformon (beleértve a nem támogatottakat)**. 
-    3. Válassza a **Done** (Kész) lehetőséget.
+    2. Az a **Belefoglalás** lapon jelölje be **bármilyen eszközön**.
+    1. Válassza a **Done** (Kész) lehetőséget.
    
 6.  Az a **feltételek** ablaktáblán válassza **ügyfélalkalmazás**.
      
@@ -136,7 +136,7 @@ A Modern hitelesítési ügyfelek feltételes hozzáférési szabályzat jön l�
 5.  A **Hozzárendelések** alatt válassza a **Feltételek** > **Eszközplatformok** lehetőséget.
      
     1. A **Konfigurálás** alatt válassza az **Igen** lehetőséget.
-    2. A **Belefoglalás** lapon válassza a **Minden platform (a nem támogatottak is)** lehetőséget, majd kattintson a **Kész** gombra. 
+    2. Az a **Belefoglalás** lapon jelölje be **bármilyen eszközön**, majd válassza ki **kész**. 
     3. Ismét válassza a **Kész** gombot.
 
 6.  Az a **feltételek** ablaktáblán válassza **ügyfélalkalmazás**.

@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/13/2019
+ms.date: 03/26/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 44f7c5b897dc1aedfe8ffc23c25ea479eceb35e5
-ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
+ms.openlocfilehash: 5106a4f147828310fc1b4a41ef4065d10bdaeecf
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330495"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490726"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>iOS-es beállítások engedélyezéséhez, vagy korlátozhatja a funkciókat az Intune-nal
 
@@ -158,7 +158,7 @@ Ezek a beállítások hozzá egy eszközkonfigurációs profilt az Intune-ban, �
 - **Alkalmazáson belüli vásárlások**: Válasszon **blokk** alkalmazáson belüli vásárlás az áruházból elkerülése érdekében. **Nincs konfigurálva** lehetővé teszi, hogy a futó alkalmazásokból áruházból történt vásárlások.
 - **Zene, podcast vagy hírek (csak felügyelt) tartalom explicit iTunes**: Válasszon **blokk** explicit iTunes zene, podcast vagy hírek tartalom elkerülése érdekében. **Nincs konfigurálva** lehetővé teszi, hogy a tároló felnőttnek tartalom elérését az eszköz számára.
 - **Az iBook áruházban "erotika" tartalom letöltése**: Válasszon **blokk** meg, hogy a felhasználók leállítja az Ibooks áruházban erotikus van megjelölve, a media letöltését. **Nincs konfigurálva** lehetővé teszi, hogy a felhasználó számára "az erotikus tartalom" kategóriába könyvek letöltésének.
-- **Céges dokumentumok megtekintése a nem felügyelt alkalmazások**: **Blokk** megakadályozza, hogy a nem céges dokumentumok megtekintése a nem felügyelt alkalmazásokban. **Nincs konfigurálva** lehetővé teszi, hogy a vállalati dokumentumok bármely alkalmazásban megtekintését. Például azt szeretné, hogy a felhasználók fájlokat mentsenek a OneDrive alkalmazásból a dropbox alkalmazásba. Ezt a beállítást a konfigurálása **blokk**. Miután az eszköz megkapja a házirendet (például újraindítás után), már nem így mentése folyamatban van.
+- **Céges dokumentumok megtekintése a nem felügyelt alkalmazások**: **Blokk** megakadályozza, hogy a céges dokumentumok megtekintése a nem felügyelt alkalmazásokban. **Nincs konfigurálva** lehetővé teszi, hogy a vállalati dokumentumok bármely alkalmazásban megtekintését. Például azt szeretné, hogy a felhasználók fájlokat mentsenek a OneDrive alkalmazásból a dropbox alkalmazásba. Ezt a beállítást a konfigurálása **blokk**. Miután az eszköz megkapja a házirendet (például újraindítás után), már nem így mentése folyamatban van.
   - **Engedélyezése a felügyelt alkalmazások írni az ügyfelek a nem felügyelt ügyfelek fiókok**: Ha a beállítása **engedélyezése**, felhasználókat adhat hozzá, vagy bármely személy Outlook kapcsolattartási adatait, beleértve az üzleti és vállalati ügyfelek a beépített névjegykezelő alkalmazásba az eszközön való szinkronizálásához. Ha a beállítása **nincs konfigurálva**, felhasználók Outlook-névjegyek a beépített névjegykezelő alkalmazásba az eszközön nem lehet hozzáadni.
   
     Ez a beállítás használatához állítsa a **céges dokumentumok megtekintése a nem felügyelt alkalmazások** beállítást **blokk**.
@@ -255,7 +255,7 @@ Alkalmazások hozzáadása az ezek a listák, a következőket teheti:
   Ez a funkció az alábbiakra vonatkozik:  
   - az iOS 11.0-s és újabb verziók
 
-- **Személyes elérési pont**: **Blokk** megakadályozza, hogy az eszköz elérési pontként használják. Előfordulhat, hogy egyes hálózatüzemeltető szolgáltatók esetében ez a beállítás nem érvényesül. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy ez a funkció.
+- **Személyes elérési pont**: **Blokk** minden eszköz-szinkronizálással, a felhasználók eszközein a személyes elérési pont kikapcsolása. Előfordulhat, hogy egyes hálózatüzemeltető szolgáltatók esetében ez a beállítás nem érvényesül. **Nincs konfigurálva** (alapértelmezett) a felhasználó által beállított alapértelmezett tartja a személyes elérési pont konfigurációját.
 - **Csatlakozás Wi-Fi hálózatokhoz csak konfigurációs profillal (csak felügyelt)**: **Szükséges** arra kényszeríti az eszköz csak Intune eszközkonfigurációs profilok keresztül beállított Wi-Fi hálózatokhoz. **Nincs konfigurálva** (alapértelmezett), lehetővé teszi az eszköz más Wi-Fi-hálózatokkal.
 - **Mobilhálózati használati szabályok (csak felügyelt alkalmazások)**: Adja meg az adatok típusok felügyelt alkalmazások által mobilhálózatokon használható. A választható lehetőségek:
   - **Mobiladatok használatának letiltása**: Mobiladatok letiltani **minden kezelt alkalmazások** vagy **adott alkalmazások**.

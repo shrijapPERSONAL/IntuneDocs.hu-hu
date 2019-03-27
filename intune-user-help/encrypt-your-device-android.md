@@ -18,18 +18,20 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ad953049b9d2efd6f7a828ee70b5e1cede4ee68
-ms.sourcegitcommit: d0749cbc68df41893742f5187ac378a5ade824f2
+ms.openlocfilehash: c9f1e7bbbad243e37f34cb298466adf886be9273
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58406248"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490587"
 ---
-# <a name="encrypt-your-android-device"></a>Az Android-eszköz titkosítása
+# <a name="encrypting-your-android-device"></a>Az Android-eszköz titkosítása
 
 Az eszköztitkosítás védi a fájlok és mappák a jogosulatlan hozzáférés ellen, ha az eszköz elvesztésekor vagy ellopásakor. Az eszköztitkosítás bekapcsolását követően csak a helyes jelszót vagy PIN-kód lesznek jelentkezhet be az eszközre. 
 
 Iskolai vagy munkahelyi erőforrások eléréséhez, a szervezet szükség lehet az Android-eszköz titkosítását. Alapértelmezés szerint néhány újabb Android-eszközök titkosítottak-a-beépített.  
+
+## <a name="turn-on-encryption"></a>Titkosítás bekapcsolása
 
 Ha egy üzenetet kap a vállalati portált, amelyen az eszközt titkosítania kell, végezze el az alábbi lépéseket. 
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d73d96d2246c89e014bd75f9b3b48493d3ac11fb
-ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
+ms.openlocfilehash: 4b1bf13c404fc8a0f4d7ab4bbeaf061a4cb4261d
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58429769"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490716"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -68,6 +68,9 @@ A Windows céges portál alkalmazást, az ikonok most már megjelenik (amennyibe
 
 #### <a name="install-available-apps-using-the-company-portal-app-after-windows-bulk-enrollment----2751523-----"></a>A céges portál alkalmazás használata a Windows tömeges beléptetése után rendelkezésre álló alkalmazások telepítése <!-- 2751523   -->
 Az Intune-ban regisztrált Windows-eszközök [Windows csoportos regisztrálás](windows-bulk-enroll.md) (kiépítési csomagok) tudják a vállalati portál alkalmazás segítségével telepítik az elérhető alkalmazásokat. A vállalati portál alkalmazással kapcsolatos további információkért lásd: [adja hozzá manuálisan a Windows 10-es céges portál](store-apps-company-portal-app.md) és [a Microsoft Intune vállalati portál alkalmazás konfigurálása](company-portal-app.md).
+
+> [!Note]
+> Ez a funkció a központilag még nem teljes mértékben telepített minden ügyfél számára. Ha nem tudja használni a vállalati portálon a tömegesen beléptetett eszközökön, akkor előfordulhat, hogy Várjon, amíg ez a változás vezet be a fiókjába.
 
 #### <a name="the-microsoft-teams-app-can-be-selected-as-part-of-the-office-app-suite----3828932----"></a>A Microsoft Teams alkalmazáshoz is kijelölhető az Office-app suite részeként <!-- 3828932  -->
 A Microsoft Teams-alkalmazást tartalmazza, vagy az Office Pro Plus app suite telepítésének részeként kizárt is. Ez a funkció Office Pro Plus build száma 16.0.11328.20116+ működik. A felhasználónak kell jelentkezzen ki, majd jelentkezzen be az eszközön a telepítés befejezéséhez. Válassza ki az Intune-ban **ügyfélalkalmazás** > **alkalmazások** > **Hozzáadás**. Válassza ki az egyik a **Office 365 csomag** alkalmazástípust, majd válassza ki **alkalmazáscsomag konfigurálása**.

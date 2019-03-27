@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5edc528abf5c3cb58200e2d0511fac3220cfad11
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: 36476820805c00cefafcd9f64dd2f08a014762c0
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58395253"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490541"
 ---
-# <a name="use-stagenow-logs-to-troubleshoot-and-see-potential-issues-on-android-zebra-devices-in-microsoft-intune"></a>StageNow naplók használata a hibaelhárításhoz, és tekintse meg a potenciális problémákat Zebra Androidos eszközökön a Microsoft Intune-ban
+# <a name="troubleshoot-and-see-potential-issues-on-android-zebra-devices-in-microsoft-intune"></a>Tekintse meg a potenciális problémákat Zebra Androidos eszközökön a Microsoft Intune-ban és hibáinak elhárítása
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-A Microsoft Intune, használhatja a [ **Zebra mobilitási bővítmények MX** Android Zebra-eszközök kezeléséhez](android-zebra-mx-overview.md). Zebra eszközök használata esetén profilok létrehozása a StageNow kezelheti a beállításait, és feltölti őket az Intune-ban. Intune-ban a StageNow alkalmazást használ, alkalmazza a beállításokat az eszközökön. A StageNow alkalmazást is létrehoz egy részletes naplófájlt, amellyel hibáinak elhárítása az eszközön.
+A Microsoft Intune, használhatja a [Zebra mobilitási bővítmények MX Android Zebra-eszközök kezeléséhez](android-zebra-mx-overview.md). Zebra eszközök használata esetén profilok létrehozása a StageNow kezelheti a beállításait, és feltölti őket az Intune-ban. Intune-ban a StageNow alkalmazást használ, alkalmazza a beállításokat az eszközökön. A StageNow alkalmazást is létrehoz egy részletes naplófájlt, amellyel hibáinak elhárítása az eszközön.
 
 Ez a funkció az alábbiakra vonatkozik:
 
@@ -36,13 +36,28 @@ Ez a funkció az alábbiakra vonatkozik:
 
 Ha például a profil létrehozásakor StageNow eszköz beállítása. A StageNow profilt hoz létre, amikor az utolsó lépés létrehoz egy fájlt a tesztelni a profilt. A fájlt a StageNow alkalmazást az eszközön felhasznált.
 
-Egy másik példa StageNow hozzon létre egy profilt, és tesztelheti. Az Intune-ban a StageNow profil hozzáadásához, és rendelje hozzá a Zebra eszközök. A hozzárendelt profil állapotának ellenőrzésekor a profil egy magas szintű állapotát jeleníti meg. További adatokra van szüksége.
+Egy másik példa StageNow hozzon létre egy profilt, és tesztelheti. Az Intune-ban a StageNow profil hozzáadásához, és rendelje hozzá a Zebra eszközök. A hozzárendelt profil állapotának ellenőrzésekor a profil egy magas szintű állapotát jeleníti meg.
 
 Mindkét esetben a további részleteket is kérhet a StageNow naplófájlt, amely minden alkalommal, amikor egy StageNow profilt alkalmazza az eszközre mentett.
 
-Ez a cikk bemutatja, hogyan olvashatja be a StageNow naplókat, és megjeleníti az egyes potenciális problémákat, Zebra eszközök.
+Bizonyos problémák nem kapcsolódnak a StageNow profil tartalmát, és nem kerülnek időben a naplókat.
+
+Ez a cikk bemutatja, hogyan olvashatja be a StageNow naplókat, és megjeleníti az egyes más potenciális problémákat, Zebra eszközök, amelyek nem tükrözik a naplókban.
 
 [Használhatja és kezelheti a Zebra eszközök Zebra mobilitási kiterjesztésű](android-zebra-mx-overview.md) funkció további részleteket tartalmaz.
+
+## <a name="get-the-logs"></a>A naplók lekérése
+
+### <a name="use-the-stagenow-app-on-the-device"></a>Az StageNow alkalmazás használatát az eszközön
+Ha egy profil közvetlenül a StageNow használata helyett, a számítógép tesztelése [telepítse a profilt az Intune](android-zebra-mx-overview.md#step-4-create-a-device-management-profile-in-stagenow), a StageNow alkalmazást az eszközön a teszt menti a naplókat. A naplófájl lekéréséhez használja a **(...)**  StageNow alkalmazás lehetőséget az eszközön.
+
+### <a name="get-logs-using-android-debug-bridge"></a>Android hibakeresési híd használata naplók lekérése
+Naplók lekéréséhez a profilt az Intune-ban már üzembe helyezését követően csatlakoztassa az eszközt egy olyan számítógéppel [Android hibakeresési híd (adb)](https://developer.android.com/studio/command-line/adb) (az Android a webhely nyílik meg).
+
+A mentett naplókat az eszközön `/sdcard/Android/data/com.microsoft.windowsintune.companyportal/files`
+
+### <a name="get-logs-from-email"></a>Naplók lekérése az e-mailből
+Szerezhet be naplófájlokat, miután a profil már telepítve van az Intune-nal, a végfelhasználók is e-mailben a naplók használatával egy e-mail alkalmazást az eszközön. A Zebra eszközön nyissa meg a vállalati portál alkalmazást, és [naplók küldése](https://docs.microsoft.com/intune-user-help/send-logs-to-your-it-admin-by-email-android). A naplók küldése funkció segítségével is létrehoz egy PowerLift incidens azonosítója, amelyet hivatkozhat, ha kapcsolatba lépne a Microsoft ügyfélszolgálatával.
 
 ## <a name="read-the-logs"></a>A naplók olvasása
 
@@ -112,9 +127,9 @@ A napló akkor jelez hibát, mert tartalmaz egy `<characteristic-error>` címke.
 </wap-provisioningdoc>
 ```
 
-## <a name="potential-issues-with-zebra-devices"></a>Lehetséges problémák Zebra eszközökkel
+## <a name="other-potential-issues-with-zebra-devices"></a>Más potenciális problémákat Zebra eszközökkel
 
-Ez a szakasz ismerteti a lehetséges problémák Zebra eszközök használata az eszköz-rendszergazdai felmerülhet.
+Ez a szakasz felsorolja a további lehetséges okokat, látni az eszköz-rendszergazdai Zebra eszközök használatakor. Ezeket a problémákat a StageNow naplók nem láthatók.
 
 ### <a name="android-system-webview-is-out-of-date"></a>Android System WebView alkalmazást nem naprakész
 

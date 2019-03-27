@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,24 +18,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e67e9deb77d1f479107c5d3e43cd602ae6eab80
-ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
+ms.openlocfilehash: 1b3d48789773c655ee7c836b211859528d394d56
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58429744"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490703"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Felhasználói felületi frissítések az Intune végfelhasználói alkalmazásaiban
-Ismerje meg, mit módosítottunk a felhasználói felület (UI) a végfelhasználók számára megjelenik ebben a kiadásban a Microsoft Intune-alkalmazások. Ezek a frissítések ismertetése segítségére lehet a felhasználói kommunikáció során, és minden olyan egyéni dokumentáció frissítése hozott létre az üzemelő példányok támogatására. Azt is megismerésében is segítenek jobban hibaelhárítása a felhasználók fennálló problémákat kell hívják meg az ügyfélszolgálattól a céges portál használatához.  
+Ismerje meg a legújabb frissítéseket a Microsoft Intune-alkalmazások. A Microsoft rendszeresen ad hozzá, és javíthatja a az Intune vállalati portál alkalmazás és webhely. Ha az Intune-rendszergazdák vagy személy támogatja, ez a cikk a szükséges információkat:
 
-A vállalati portál alkalmazás használatával kapcsolatos további információkért lásd: a [céges portál felhasználói súgó dokumentációját](https://docs.microsoft.com/intune-user-help/).  
+* Riasztás a tanulók és az alkalmazottak alkalmazás és a beléptetési módosításokat.
+* Frissítse a szervezet dokumentációjában vagy a segélyszolgálat eljárásokat.  
+
+Ha egy alkalmazott vagy a tanulói, mindenképpen tekintse meg a képernyőképek és a hivatkozások a vállalati portál súgó dokumentációját. A vállalati portál alkalmazás használatával kapcsolatos további információkért lásd: a [céges portál felhasználói súgó dokumentációját](https://docs.microsoft.com/intune-user-help/).  
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
 ## <a name="week-of-february-19-2019"></a>2019. február 19 hete  
 ### <a name="new-app-categories-screen-in-the-company-portal-app-for-windows-10---3834780-wnready4review---"></a>Új alkalmazás kategóriák képernyő Windows 10-es céges portál alkalmazásban<!-- 3834780 WNready4Review -->  
-Egy új képernyőt nevű **Alkalmazáskategóriák** az a vállalati portál Windows 10-es alkalmazás tallózása és kiválasztása élményének növelése érdekében jelentősen bővült. A felhasználók mostantól látnak alkalmazásaikat, például a kategóriák szerint rendezve **kiemelt**, **oktatási**, és **termelékenység**. Ez a módosítás megjelenik a céges portál verziókban 10.3.3451.0 és újabb verziók. A vállalati portál alkalmazások bevitele kapcsolatos további információkért lásd: [telepítése és oszthat meg alkalmazásokat az eszköz](/intune-user-help/install-apps-cpapp-windows).  
-
+Egy új képernyőt nevű **Alkalmazáskategóriák** a Windows 10 céges portál alkalmazás tallózása és kiválasztása élményének növelése érdekében jelentősen bővült. A felhasználók mostantól látnak alkalmazásaikat, például a kategóriák szerint rendezve **kiemelt**, **oktatási**, és **termelékenység**. Ez a módosítás megjelenik a céges portál verziókban 10.3.3451.0 és újabb verziók. A vállalati portál alkalmazás telepítésével kapcsolatos további információkért lásd: [telepítése és megosztása az eszközön található alkalmazások](/intune-user-help/install-apps-cpapp-windows).  
 
 ![Képernyőfelvétel a vállalati portál Windows 10-es, kategóriák képernyő.](./media/1902_CP_app_categories.png)   
 
@@ -48,14 +50,12 @@ A végfelhasználók mostantól átláthatják, a Windows céges portál alkalma
 ## <a name="week-of-october-22-2018"></a>2018. október 22-i hét
 
 ### <a name="add-custom-brand-image-for-company-portal-app----1916266---"></a>A vállalati portál alkalmazás márka egyéni rendszerkép hozzáadása <!-- 1916266 -->
-A Microsoft Intune rendszergazdájaként Ön olyan egyéni márkaemblémát tölthet fel, amely háttérképként jelenik majd meg a felhasználónak az iOS Céges portál alkalmazásban található profiloldalán. További információkat a Céges portál alkalmazás konfigurálásáról [a Microsoft Intune Céges portál alkalmazás konfigurálását](company-portal-app.md) ismertető cikkből tudhat meg.
-
-
+A Microsoft Intune rendszergazdájaként Ön olyan egyéni márkaemblémát tölthet fel, amely háttérképként jelenik majd meg a felhasználónak az iOS Céges portál alkalmazásban található profiloldalán. További információkat a Céges portál alkalmazás konfigurálásáról [a Microsoft Intune Céges portál alkalmazás konfigurálását](company-portal-app.md) ismertető cikkből tudhat meg.  
 
 ## <a name="week-of-august-27-2018"></a>2018. augusztus 27-i hét  
 
 ### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>Új frissítés a felhasználói felülethez a céges portál webhelyen <!--2000968 -->  
-Ügyfeleink visszajelzései alapján hozzáadtunk új funkciókat a céges portál webhelyen. Jelentős javulást fog tapasztalni eszközei már meglévő funkciói és használhatósága terén. Területek a hely, eszköz adatai, visszajelzés és támogatás és eszköz áttekintése, például egy új, modern, rugalmas kialakítás érkezett. Az [Intune Céges portál webhelyének dokumentációja](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website) frissítve lett, hogy tükrözze a változásokat.   
+A felhasználók visszajelzései alapján új funkciókkal egészült ki a Céges portál webhely. Jelentős javulást fog tapasztalni eszközei már meglévő funkciói és használhatósága terén. A hely, eszköz adatai, visszajelzés és támogatás és eszköz áttekintése, például adott területeinek most már rendelkezik egy új, modern, rugalmas kialakítás. Az [Intune Céges portál webhelyének dokumentációja](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website) frissítve lett, hogy tükrözze a változásokat.   
 
 Többek között a következő frissítéseket fogja látni:  
 
@@ -493,24 +493,14 @@ Ezek azok a tervezett megoldások, amelyekkel a felhasználói felület frissít
 > [!Note]
 > Vegye figyelembe, hogy az alábbi képek előzetes verziókra vonatkozhatnak, és a bejelentett termék eltérhet az itt bemutatott verzióktól.
 
-### <a name="ui-iwp"></a>Új frissítés a felhasználói felülethez a céges portál webhelyen <!--2000968-->
+### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635-eeready-eestaged--"></a>Céges portál iOS 12-eszközök felhasználói regisztrációjának módosításai <!--3448635 EEready eestaged-->  
 
-Augusztustól új felhasználói élményt vezetünk be a Céges portál webhelyén, melynek része a megújult felhasználói felület, az egyszerűsített műveletek és továbbfejlesztett akadálymentes felület. A felhasználóbarátabb élmény érdekében az ügyfelek által javasolt olyan fejlesztéseket valósítottunk meg, mint az alkalmazások megosztása és a teljesítmény javítása általában.
+A vállalati portál alkalmazás iOS-hez lesz frissítése, a beléptetési képernyők és a lépéseket, amelyek a mobileszköz-kezelési regisztrációs módosításokat jelent meg az Apple iOS 12.2 összhangban vannak. Az új regisztrációs folyamatának kérni fogja a felhasználótól, hogy:  
+* Nyissa meg a céges portál webhelyet (keresztül a Safari esetében), és a felügyeleti profil letöltéséhez a vállalati portál alkalmazásba való visszatérés előtt Safari engedélyezése.  
+* Nyissa meg a beállítási alkalmazást a felügyeleti profil telepítésére az eszközükön.  
+* Térjen vissza a céges portál alkalmazás regisztráció elvégzését.  
 
-Ügyfeleink javaslatai alapján olyan új funkciókat is bevezettünk, amelyek jelentősen megnövelik a jelenlegi funkciók használhatóságát és működését:
-
--   A webhely felhasználói felületének fejlesztései
--   Alkalmazások közvetlen hivatkozásainak megoszthatósága
-- Nagy méretű alkalmazáskatalógusok javított teljesítménye
-
-A változás érvénybe lépéséhez Önnek semmit nem kell tennie. Értesíteni fogjuk Önt, ha elérhetővé válik a megújult Céges portál webhely. Arra azonban szükség lehet, hogy a végfelhasználói dokumentumokat az új képernyőképekkel frissítse. Emellett frissítést igényelhet az iOS-es Céges portál alkalmazás dokumentációja is, mivel az iOS-alkalmazás **Alkalmazások** szakasza a webhelyre támaszkodik.  
-
-### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>A céges portál webhely felhasználói felületének frissítései <!--1313244 part 2-->
-
-__Kiemelt alkalmazások frissítései__ A webhelyhez hozzáadtunk egy új oldalt, ahol a felhasználók a megadott kiemelt alkalmazások között böngészhetnek, és finomhangolásokat végeztünk a honlap Kiemelt szakaszán.
-
-![Az alkalmazásokat jelölő színes csempék. Minden alkalmazás alatt nagy színes négyzet látható, melynek színe megegyezik az alkalmazáslogó elsődleges színével. A „Kiemelt alkalmazások” szakasz a Céges portál alkalmazás felső részében látható.](./media/cp_win10_colorful_tiles_after_1708.png)
-
+ Frissülni fog a regisztráció során, és a képernyőn megjelenő szöveg utasításokat, ez a tapasztalat megfelelően. Hogyan készítheti elő eszközök felhasználói számára a módosítások kapcsolatos további információkért lásd: a [a Microsoft technikai Közösség post](https://aka.ms/CP_changes_iOS12). Addig is támogatásához új iOS-regisztrációk vállalati portálon, hogy frissítettük lépéseit [iOS-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/intune/ios-enroll).   
 
 
 ### <a name="see-also"></a>Lásd még:

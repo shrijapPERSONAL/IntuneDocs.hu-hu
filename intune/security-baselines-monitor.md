@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8e5c8996aecb11666fca13c6e032ccad1a1e0a7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 0bd6e7f37a2e3b10371dead97e849834b39ba06f
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397967"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490573"
 ---
 # <a name="monitor-the-security-baseline-and-profile-in-microsoft-intune"></a>A biztonsági alapkonfiguráció és a Microsoft Intune-ban profil figyelése
 
@@ -50,6 +50,9 @@ Az alapkonfiguráció monitorozásához kap betekintést a Microsoft javaslatok 
     - **Nem felel meg a referenciakonfiguráció**: Legalább egy beállítást az alapkonfiguráció nem felel meg az ajánlott beállításokat.
     - **Nincs megfelelően konfigurálva**: Legalább egy beállítást nincs megfelelően konfigurálva. Ez az állapot azt jelenti, hogy a beállítás az ütközést, hiba vagy függőben van.
     - **Nem alkalmazható**: Legalább egy beállítást nem alkalmazható, és nem alkalmazza.
+    
+> [!NOTE]
+> Ha egy eszköz beállításai több állapota, az eszköz való besorolása esetén az alábbi sorrendben: **Nincs megfelelően konfigurálva**, **nem egyezik meg a referenciakonfiguráció**, **nem alkalmazható**, **egyezések alapkonfiguráció**.
 
 4. Válassza ki a állapotok rendelkező eszközök egyikét. Jelölje be például a **Misconfigured** állapotát.
 

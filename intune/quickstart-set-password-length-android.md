@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62ae0c7b9a00c3e07bb49261ca1a20bd5ef5db15
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 02050dc3cd1047a38e9be78a9e37be0bd313be26
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397243"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490562"
 ---
 # <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>Gyors útmutató: Az Android-eszközök jelszó megfelelőségi szabályzat létrehozása
 
@@ -49,7 +49,8 @@ Ebben a rövid útmutatóban a Intune-t használja majd annak beállítására, 
 3. A **Platform** beállításban válassza az **Android** lehetőséget. 
 4. Kattintson a **Beállítások** > **Rendszerbiztonság** elemre az Android **Rendszerbiztonság** paneljének megjelenítéséhez.
 5. Kattintson a **Kötelező** elemre a **Jelszó szükséges a mobileszközök feloldásához** mellett.
-6. Adja meg a **6** értéket a **Jelszó minimális hossza** mellett. 
+6. Válassza ki **legalább numerikus** melletti **jelszó kötelező típusa**.
+7. Adja meg a **6** értéket a **Jelszó minimális hossza** mellett. 
 
     ![Képernyőkép egy csoport létrehozásáról a Microsoft Intune-ban](media/quickstart-set-password-length-android/quickstart-set-password-length-android-01.png)
 
