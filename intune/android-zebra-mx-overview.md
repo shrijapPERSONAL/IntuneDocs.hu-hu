@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/18/2019
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ffcec5adb5a57309ca2eb47291fa35acf98f6e94
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: aa2734247569245794bce7fe1de68c8b20c6091f
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58395257"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490604"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>Használhatja és kezelheti a Zebra eszközök Zebra mobilitási bővítmények Microsoft Intune-ban
 
@@ -107,6 +107,13 @@ A profil létrehozásakor a StageNow, a legutóbbi lépésben, válasszon **expo
 > Azt javasoljuk, hogy a profil tesztelése előtt eszközökre telepíti központilag azt a szervezetében. Az utolsó lépésben a számítógépen, a StageNow-profilok létrehozása során teszteléséhez használja a **tesztelése** beállítások. Ezt követően lefoglalhatja a StageNow által létrehozott fájlt a StageNow alkalmazást az eszközön. 
 > 
 > A StageNow alkalmazást az eszközön a profil tesztelésekor létrehozott naplók jeleníti meg. [Használat StageNow naplók Zebra az Intune-ban Android rendszerű eszközökön](android-zebra-mx-logs-troubleshoot.md) StageNow naplók segítségével megismerheti a hibák szóló információt tartalmaz.
+
+> [!NOTE]
+> Alkalmazások hivatkozhat, frissítési csomagok vagy más frissítésfájlok StageNow profilját szeretné-e az eszközt, ezeket a frissítéseket. A frissítések beszerzéséhez a eszköz kell csatlakozni a StageNow rendszerbe állítási kiszolgáló a profil alkalmazása esetén. 
+> 
+> Vagy használhatja a beépített funkciók az Intune-ban ezeket a módosításokat, beleértve a beolvasásához: 
+> - Az alkalmazás-felügyeleti funkciót [hozzáadása](apps-add.md), [üzembe helyezése](apps-deploy.md), frissítéséhez és [figyelő](apps-monitor.md) alkalmazások.
+> - Kezelése [rendszer és alkalmazás-frissítések](device-restrictions-android-for-work.md#device-owner-only) Android Enterprise rendszerű eszközökön
 
 Miután a fájl teszteléséhez a következő lépés az telepítse a profilt az eszközök Intune-nal.
 
