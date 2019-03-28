@@ -13,26 +13,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ed34b8bdd91057e64f72c68166c15b89fa80c187
-ms.sourcegitcommit: 9af102e1232d9a568a7901783c30ba9905e64d99
+ms.openlocfilehash: b49595493b5db3e5735e0a4717c27e91f058b8d8
+ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58477094"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58514263"
 ---
-# <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>Gyors útmutató: Hozzon létre egy felhasználót, és a licenc hozzárendelése
+# <a name="quickstart-create-a-user-in-intune-and-assign-them-a-license"></a>Gyors útmutató: Hozzon létre egy felhasználót az Intune-ban, és licenceket rendel hozzájuk
 
-Ezt a rövid útmutatót követve létrehozhat egy felhasználót, majd hozzárendelhet egy licencet. Az Intune használata során mindenkinek, aki hozzá kíván férni a vállalati adatokhoz, rendelkeznie kell felhasználói fiókkal. Később az Intune-rendszergazdák az ilyen felhasználók konfigurálásával szabályozhatják a hozzáférést.
+Ebben a rövid útmutatóban hozzon létre egy felhasználót, és hozzárendelheti őket az Intune-ra. Ha az Intune-ban mindenki, aki szeretné engedélyezni a vállalati adatokhoz való hozzáférést a saját felhasználói fiókot kell rendelkeznie. Intune-rendszergazdák konfigurálhatják a később a felhasználóknak a hozzáférés-vezérlés kezelését.
 
 Ha nem rendelkezik Intune-előfizetéssel, [regisztráljon egy ingyenes próbafiókkal](free-trial-sign-up.md).
 
 ## <a name="sign-in-to-intune"></a>Bejelentkezés az Intune-ba
 
-Jelentkezzen be az [Intune-ba](https://aka.ms/intuneportal) [globális rendszergazdaként vagy Intune-szolgáltatásadminisztrátorként](users-add.md#types-of-administrators). Ha létrehozott egy Intune próba-előfizetést, az a fiók lesz a globális rendszergazda, amelyikkel azt létrehozta.
+Jelentkezzen be a [Intune](https://aka.ms/intuneportal) , egy [globális rendszergazda vagy egy Intune-szolgáltatásadminisztrátor](users-add.md#types-of-administrators). Ha létrehozott egy Intune próba-előfizetést, az a fiók lesz a globális rendszergazda, amelyikkel azt létrehozta.
 
 ## <a name="create-a-user"></a>Felhasználó létrehozása
 
-Az Intune-eszközkezelésbe való regisztráláshoz az illetőnek felhasználói fiókkal kell rendelkeznie.
+Felhasználók regisztrálása az Intune-Eszközfelügyelet felhasználói fiókkal kell rendelkeznie. Új felhasználó létrehozása:
 
 1. Válassza az Intune-ban a **Felhasználók** > **Minden felhasználó** > **Új felhasználó** lehetőséget.
 ![Böngésző](media/quickstart-create-user/create-user.png)
@@ -40,17 +40,19 @@ Az Intune-eszközkezelésbe való regisztráláshoz az illetőnek felhasználói
 3. A **Felhasználónév** mezőben adjon meg egy felhasználóazonosítót, például Dewey@contoso.onmicrosoft.com.
 
     > [!NOTE]
-    > Ha még nem konfigurálta ügyfele tartománynevét, használja az Intune-előfizetés (vagy az [ingyenes próbalehetőség](free-trial-sign-up.md#sign-up-for-a-microsoft-intune-free-trial)) létrehozásához használt, ellenőrzött tartománynevet. 
+    > Ha még nem konfigurálta az ügyfél tartománynevet, használja az Intune-előfizetés létrehozásához használt ellenőrzött tartomány nevét (vagy [az ingyenes próbaidőszak](free-trial-sign-up.md#sign-up-for-a-microsoft-intune-free-trial)). 
 
 4. Válassza a **Jelszó megjelenítése** lehetőséget, és jegyezze fel az automatikusan generált jelszót, hogy be tudjon jelentkezni a teszteszközre.
 5. Válassza a **Létrehozás** lehetőséget.
 
 ## <a name="assign-a-license-to-the-user"></a>Licenc hozzárendelése a felhasználóhoz
 
-Miután létrehozott egy felhasználó, kell használnia a [Microsoft 365 felügyeleti központban](http://go.microsoft.com/fwlink/p/?LinkId=698854) , hogy a felhasználó Intune-licenc hozzárendelése. Ha nem oszt ki neki licencet, akkor nem fogja tudni regisztrálni az eszközét az Intune-ban. 
+Miután létrehozott egy felhasználó, kell használnia a [Microsoft 365 felügyeleti központban](http://go.microsoft.com/fwlink/p/?LinkId=698854) az Intune-licencet rendelhet hozzájuk. Ha a felhasználói licenc nem rendel, fogják nem regisztrálják az eszközüket az Intune-ban. 
+
+Az Intune-licencet hozzárendelni egy felhasználóhoz:
 
 1. Jelentkezzen be a [Microsoft 365 felügyeleti központban](http://go.microsoft.com/fwlink/p/?LinkId=698854) bejelentkezni az Intune-hoz használt hitelesítő adatokkal együtt.
-2. Válassza a **Felhasználók** > **Aktív felhasználók** lehetőséget, majd válassza ki az imént létrehozott felhasználót.
+2. Válasszon **felhasználók** > **aktív felhasználók** > Válassza ki az újonnan létrehozott felhasználót.
 3. Válassza a **Terméklicencek** melletti **Szerkesztés** lehetőséget.
 4. A **Hely** listában válassza ki a felhasználó helyét.
 5. Kattintson az Intune-licenc (vagy a rendelkezésére álló más, az Intune-t magában foglaló licenc) melletti **Be** beállításra. A megjelenített [terméknév](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)** lesz szolgáltatáscsomagként használva az Azure-felügyeletben. 
@@ -67,7 +69,7 @@ Ez a felhasználó többé már nincs szüksége, ha a felhasználó törölheti
 
 ## <a name="next-steps"></a>További lépések
 
-Ezt a rövid útmutatót követve létrehozott egy felhasználót, és hozzárendelt egy licencet. Felhasználók Intune-hoz való hozzáadásáról további információt a [Felhasználók hozzáadása és rendszergazdai engedély biztosítása az Intune-hoz](users-add.md) szakaszban találhat.
+Ebben a rövid útmutatóban létrehozott egy felhasználó, és hozzájuk rendelt Intune-licencet. Felhasználók Intune-hoz való hozzáadásáról további információt a [Felhasználók hozzáadása és rendszergazdai engedély biztosítása az Intune-hoz](users-add.md) szakaszban találhat.
 
 Kövesse az Intune rövid útmutatóinak sorozatát a következő rövid útmutatóval.
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2fc6cba2d1088ddb367d5c47da04118aa9d6fcab
-ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
+ms.openlocfilehash: d6d130892200b5592f42bae8ec5423f4b8f6f8f7
+ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58173988"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58514387"
 ---
 # <a name="what-are-app-protection-policies"></a>Mik azok az alkalmazásvédelmi szabályzatok?
 
@@ -51,7 +51,7 @@ Az alkalmazásvédelmi szabályzatok olyan eszközökön futó alkalmazásokhoz 
 > [!IMPORTANT]
 > Mobilalkalmazás-kezelési házirendeket hozhat létre az Office 365-szolgáltatásokhoz kapcsolódó Office-mobilalkalmazások számára. Emellett a helyszíni Exchange-postafiókok hozzáférését is védheti, az iOS és Android rendszerű Outlookhoz készült Intune alkalmazásvédelmi szabályzatok létrehozásával és a hibrid modern hitelesítés engedélyezésével. A funkció használata előtt győződjön meg arról, hogy megfelel az [iOS-es és Androidos Outlook követelményeinek](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx). Az alkalmazásvédelmi szabályzatok a helyszíni Exchange-hez vagy a SharePoint-szolgáltatásokhoz kapcsolódó egyéb alkalmazások esetében nem támogatottak.
 
-**Az alkalmazásvédelmi szabályzatok fontos előnyei a következők:**
+**Az alkalmazásvédelmi szabályzatok fontos előnyei vannak**:
 
 -   Alkalmazásszinten biztosítja a vállalati adatok védelmét. Mivel a mobilalkalmazás-felügyelet nem igényel eszközkezelést, a felügyelt és a nem felügyelt eszközökön is biztosíthatja a vállalati adatok védelmét. A felügyelet a felhasználói azonosítón alapul, így nincs szükség az eszközkezelőre.
 
@@ -69,8 +69,6 @@ Az MDM-megoldások és alkalmazásvédelmi szabályzatok együttes használata t
 
 ### <a name="supported-platforms-for-app-protection-policies"></a>Az alkalmazásvédelmi szabályzatok által támogatott platformok
 Az Intune app protection házirendek eszközplatform-támogatás igazodik a mobilalkalmazás-platform támogatás az Android és IOS rendszerű eszközökön. További információt az [Office rendszerkövetelményeit](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg) ismertető témakör **mobilalkalmazásokkal** foglalkozó szakaszában talál.
-
-A Windows-eszközök jelenleg nem támogatottak. Windows Information Protection, amely hasonló funkciókat biztosító is használhatja. További információk: [Vállalati adatok védelme a Windows információvédelemmel (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
 > [!IMPORTANT]
 > Az Intune munkahelyi portál androidos alkalmazásvédelmi szabályzatokkal fogadására szükséges az eszközön. További információkért lásd: a [Intune vállalati portál hozzáférés alkalmazásokkal kapcsolatos követelmények](end-user-mam-apps-android.md#access-apps).

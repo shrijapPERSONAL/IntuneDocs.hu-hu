@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/22/2019
+ms.date: 03/27/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b1bf13c404fc8a0f4d7ab4bbeaf061a4cb4261d
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: a61bd060b5c120a73df427688865e2ee976f8f68
+ms.sourcegitcommit: 94f7dc236db5995ffee7cd13c7e02794e561b532
 ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490716"
+ms.locfileid: "58538769"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -77,6 +77,14 @@ A Microsoft Teams-alkalmazást tartalmazza, vagy az Office Pro Plus app suite te
 
 ### <a name="device-configuration"></a>Eszközök konfigurálása
 
+#### <a name="automatically-start-an-app-when-running-multiple-apps-in-kiosk-mode-on-windows-10-and-later-devices----2351390---"></a>Automatikusan elindít egy alkalmazást, amikor több alkalmazás fut a teljes képernyős módban a Windows 10-es és újabb rendszerű eszközök <!-- 2351390 -->
+
+Windows 10-es és újabb rendszerű eszközök, az eszköz kioszk módban futtatni, és sok más alkalmazás futtatása. Ez a frissítés van egy **AutoLaunch** beállítás (**eszközkonfiguráció** > **profilok** > **profillétrehozása**  >  **Windows 10 és újabb** tartozó platform > **teljes képernyős** profiltípus > **többalkalmazásos kioszk**). Ez a beállítás használatával automatikusan elindít egy alkalmazást, ha a felhasználó bejelentkezik az eszközre.
+
+Listáját és leírását, a kioszkmód megtekintéséhez lásd: [Windows 10-es és újabb beállításai az Intune-ban a teljes képernyős fiókként való futtatásra](kiosk-settings-windows.md).
+
+A következőkre vonatkozik: Windows 10 és újabb
+
 #### <a name="operational-logs-also-show-details-on-non-compliant-devices----4063755----"></a>Műveleti naplók is megjelenítése a részletek a nem megfelelő eszközök <!-- 4063755  -->
 Útválasztási Intune az Azure monitor-funkciók jelentkezik, ha a műveleti naplókban is irányíthatja. Ebben a frissítésben a műveleti naplókban is tájékoztatást nyújt a nem megfelelő eszközök. 
 
@@ -87,8 +95,7 @@ Ebben a frissítésben az Intune konfigurálása Android Zebra eszközöket tám
 
 - Eszközkonfigurációs profil létrehozása, és a beállítások StageNow által generált mobilitási bővítmények MX-profilok használatával Android Zebra-eszközökre vonatkoznak (**eszközkonfiguráció** > **profilok**  >  **Profil létrehozása** > **Android** tartozó platform).
 
-A következőkre vonatkozik:  
-- Android
+A következőkre vonatkozik: Android
 
 #### <a name="route-logs-to-azure-monitor-in-more-intune-workloads----3804627---"></a>További Intune számítási feladatok útvonal-naplók az Azure monitornak <!-- 3804627 -->
 Az Intune-ban, naplózási és műveleti naplók átirányítása a storage-események hubok és log analytics az Azure monitorban (**Intune** > **figyelés** > **diagnosztika beállítások**). Ebben a frissítésben ezeket a naplókat a további Intune számítási, beleértve a megfelelőség, a konfigurációk, az ügyfélalkalmazások és további irányíthatja. 
@@ -100,8 +107,7 @@ Ebben a frissítésben az Intune konfigurálása Android Zebra eszközöket tám
 
 Ez a szolgáltatás további információkért lásd: [használatát és mobilitási bővítmények az Intune-ban Zebra-eszközök felügyeletéhez](android-zebra-mx-overview.md).
 
-A következőkre vonatkozik:  
-- Android
+A következőkre vonatkozik: Android
 
 ### <a name="device-management"></a>Eszközkezelés
 

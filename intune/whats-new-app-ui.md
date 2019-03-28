@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b3d48789773c655ee7c836b211859528d394d56
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: dc7d806624ca75f2570f46b1f3e0606a6878dcb3
+ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
 ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490703"
+ms.locfileid: "58514445"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Felhasználói felületi frissítések az Intune végfelhasználói alkalmazásaiban
 Ismerje meg a legújabb frissítéseket a Microsoft Intune-alkalmazások. A Microsoft rendszeresen ad hozzá, és javíthatja a az Intune vállalati portál alkalmazás és webhely. Ha az Intune-rendszergazdák vagy személy támogatja, ez a cikk a szükséges információkat:
@@ -500,7 +500,7 @@ A vállalati portál alkalmazás iOS-hez lesz frissítése, a beléptetési kép
 * Nyissa meg a beállítási alkalmazást a felügyeleti profil telepítésére az eszközükön.  
 * Térjen vissza a céges portál alkalmazás regisztráció elvégzését.  
 
- Frissülni fog a regisztráció során, és a képernyőn megjelenő szöveg utasításokat, ez a tapasztalat megfelelően. Hogyan készítheti elő eszközök felhasználói számára a módosítások kapcsolatos további információkért lásd: a [a Microsoft technikai Közösség post](https://aka.ms/CP_changes_iOS12). Addig is támogatásához új iOS-regisztrációk vállalati portálon, hogy frissítettük lépéseit [iOS-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/intune/ios-enroll).   
+ Frissülni fog a regisztráció során, és a képernyőn megjelenő szöveg utasításokat, ez a tapasztalat megfelelően. Hogyan készítheti elő eszközök felhasználói számára a módosítások kapcsolatos további információkért lásd: a [a Microsoft technikai Közösség post](https://aka.ms/CP_changes_iOS12). Addig is támogatásához új iOS-regisztrációk vállalati portálon, hogy frissítettük lépéseit [iOS-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/en-us/intune-user-help/enroll-your-device-in-intune-ios#enroll-your-ios-device).   
 
 
 ### <a name="see-also"></a>Lásd még:

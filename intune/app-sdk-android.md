@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/20/2019
+ms.date: 03/26/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a7ccc2da5fd99c3c72c8c9beb765f292e896eee
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: 965dcfbb711eac1b38977e023d1975f4dc0e8b81
+ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991181"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58514497"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>A Microsoft Intune App SDK Androidon – útmutató fejlesztőknek
 
@@ -832,7 +832,7 @@ void updateToken(String upn, String aadId, String resourceId, String token);
     > [!NOTE]
     > Győződjön meg arról, hogy az alkalmazás már használja a `resourceId` és `aadId` átadott paraméterek `acquireToken()` úgy, hogy a helyes-e jogkivonat beszerzése van.
 
-    ```
+    ```java
     class MAMAuthCallback implements MAMServiceAuthenticationCallback {
         public String acquireToken(String upn, String aadId, String resourceId) {
         return mAuthContext.acquireTokenSilentSync(resourceId, ClientID, aadId).getAccessToken();
@@ -1633,7 +1633,7 @@ Ha egy többidentitású alkalmazás regisztrál a `WIPE_USER_DATA` értesítés
 
 A `WIPE_USER_DATA` értesítésekre regisztráló alkalmazások nem részesülnek az SDK alapértelmezett szelektív törlési funkciójának előnyeiben. A többidentitásos alkalmazások esetében ez nagyobb jelentőségű tényező lehet, mivel a MAM alapértelmezett szelektív törlése csak a törlendő identitáshoz tartozó fájlokat fogja törölni. Ha a többidentitásos alkalmazás szeretné végrehajtatni a MAM alapértelmezett szelektív törlését, _**és**_ ezenfelül saját törlési műveleteit is végre szeretné hajtani, akkor célszerű feliratkoznia a `WIPE_USER_AUXILIARY_DATA` értesítésekre. Ezt az értesítést az SDK közvetlenül azelőtt küldi el, hogy végrehajtaná a MAM alapértelmezett szelektív törlési műveletét. Az alkalmazások nem regisztrálhatnak mindkét `WIPE_USER_DATA` és `WIPE_USER_AUXILIARY_DATA`.
 
-Az alapértelmezett szelektív törlésének fog zárja be az alkalmazás szabályosan, tevékenységek befejezése és alkalmazás folyamatának leállítása. Ha az alkalmazás felülírja az alapértelmezett seletive törlése, érdemes zárja be az alkalmazást, hogy manuálisan megakadályozza, hogy a felhasználó memórián belüli adathozzáférés után a törlést.
+Az alapértelmezett szelektív törlésének fog zárja be az alkalmazás szabályosan, tevékenységek befejezése és alkalmazás folyamatának leállítása. Ha az alkalmazás felülírja az alapértelmezett szelektív törlést, érdemes zárja be az alkalmazást, hogy manuálisan megakadályozza, hogy a felhasználó memórián belüli adathozzáférés után a törlést.
 
 
 ## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>Célzott MAM-konfiguráció engedélyezése Android-alkalmazásokhoz (nem kötelező)
@@ -1785,7 +1785,7 @@ Az Intune SDK fenntartja az Android API által biztosított szerződést, bár a
 
 ## <a name="telemetry"></a>Telemetria
 
-Az Androidhoz készült Intune App SDK nem szabályozza az alkalmazásából való adatgyűjtést. Az Céges portál alkalmazás alapértelmezés szerint telemetriai adatokat naplóz. Az adatokat az SDK a Microsoft Intune-nak küldi el. A Microsoft szabályzatának megfelelően nem gyűjtünk személyazonosításra alkalmas adatokat (PII).
+Az Androidhoz készült Intune App SDK nem szabályozza az alkalmazásából való adatgyűjtést. A vállalati portál alkalmazás alapértelmezés szerint naplózza a rendszer által létrehozott adatokat. Az adatokat az SDK a Microsoft Intune-nak küldi el. A Microsoft Policy megfelelően nem gyűjtünk a személyes adatokról.
 
 > [!NOTE]
 > Ha a végfelhasználók nem szeretnének ilyen adatokat küldeni, ki kell kapcsolniuk a telemetriát a Céges portál alkalmazás Beállítások menüpontjában. További információt [A használatra vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android) című témakörben találhat. 

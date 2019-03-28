@@ -15,12 +15,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 307e3ce1b1973897a08159bdcf91e0117d58bfe8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: cbd3b13215a58a831a15884bfe451f00a35ba379
+ms.sourcegitcommit: 94f7dc236db5995ffee7cd13c7e02794e561b532
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57392663"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58538761"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Alkalmazásvédelmi szabályzatok és a munka alkalmazásprofilok a vállalati Android-eszköz Intune-ban
 
@@ -51,7 +51,7 @@ Egyéni Android-alkalmazások engedélyezettek az alkalmazás több módon is:
 
     Annak érdekében, az Intune tartalmaz a **App Wrapping Tool** meglévő Android-alkalmazások (APKs) eszközt, és létrehoz egy alkalmazást, amely felismeri az alkalmazás-szabályzatok.
 
-    További információkért lásd: [üzleti alkalmazások alkalmazásvédelmi szabályzatokkal repare](apps-prepare-mobile-application-management.md).
+    További információkért lásd: [– üzletági alkalmazások előkészítése alkalmazásvédelmi szabályzatok](apps-prepare-mobile-application-management.md).
 
 Az alkalmazás engedélyezett alkalmazások listáját, olvassa el [felügyelt alkalmazások széles választékának mobilalkalmazás-védelmi szabályzatok](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
