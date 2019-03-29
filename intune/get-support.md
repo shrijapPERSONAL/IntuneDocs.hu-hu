@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/04/2019
+ms.date: 03/28/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 350ce5980cb7575a991cdc45702db95f802b4749
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: df289d84cb78f5cb08db6ca66a0db9b7443171f5
+ms.sourcegitcommit: e23e78a563928ed2b2cbc588f2aa65678f7bb409
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461328"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58618462"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Hogyan kérhet támogatást az Intune-hoz
 
@@ -30,16 +30,14 @@ ms.locfileid: "57461328"
 
 A Microsoft Intune-hoz a Microsoft globális műszaki, értékesítés előtti, számlázási és előfizetési támogatást nyújt. A támogatás interneten és telefonon is elérhető mind a fizetős, mind a próbaverziós előfizetésekhez. Az online műszaki támogatás angolul és japánul érhető el. Telefonos és online számlázási támogatás más nyelveken érhetők el.
 
+Rendszergazdaként, használhatja a **Súgó és támogatás** egy online támogatási jegy fájlba az Intune-hoz az Azure Portalról. További információ az Azure AD-szerepkörökhöz, és hozzon létre egy támogatási jegyet a szükséges engedélyeket: [rendszergazdai szerepkörök az Azure Active Directoryban](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal). 
+
 >[!IMPORTANT]  
 > Ha olyan külső termékekhez szeretne műszaki támogatást igénybe venni, amelyek együttműködnek az Intune-nal (például a Saaswedo, a Cisco vagy a Lookout), akkor először forduljon ezeknek a termékeknek a szállítójához. Mielőtt megnyitja az Intune-nal kapcsolatos támogatási kérelmet, győződjön meg róla, hogy a másik terméket megfelelően konfigurálta.
 >
 > A Microsoft Intune hibaelhárítási problémáiról további információt az Intune dokumentációjának [hibaelhárítási szakaszában](help-desk-operators.md) találhat.
 
-Rendszergazdaként, használhatja a **Súgó és támogatás** egy online támogatási jegy fájlba az Intune-hoz az Azure Portalról. Támogatási jegy létrehozásához a fiókjához a következő [rendszergazdai szerepköröket kell hozzárendelni az Azure Active Directoryban](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)::
 
-- Intune-rendszergazda
-- Globális rendszergazda
-- Szolgáltatás-rendszergazda  
 
 
 ## <a name="help-and-support-experience"></a>Súgó és támogatás élmény

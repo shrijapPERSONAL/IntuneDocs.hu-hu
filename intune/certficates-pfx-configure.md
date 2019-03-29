@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/12/2018
+ms.date: 03/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3fd8ca136862db4e80ff11d31fc4860d4785ff1
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7e6af5a7d7911d7e8ba12e9fd15ad72ca1e51c74
+ms.sourcegitcommit: e23e78a563928ed2b2cbc588f2aa65678f7bb409
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57390286"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58618470"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>PKCS-tanúsítványok konfigurálása és használata az Intune-nal
 
@@ -76,14 +76,14 @@ PKCS-tanúsítványok használata az Intune-nal, a következő infrastruktúra l
 
 Egy VPN-, Wi-Fi- vagy egyéb erőforrások eszköz hitelesítéséhez, egy eszközt egy legfelső szintű vagy köztes Hitelesítésszolgáltatói tanúsítványra van szüksége. Az alábbi lépések ismertetik a szükséges tanúsítvány beszerzését a vállalati hitelesítésszolgáltatótól.
 
-1. Jelentkezzen be a vállalati hitelesítésszolgáltatóhoz egy rendszergazdai jogosultságokkal rendelkező fiókkal.
-2. Nyisson meg rendszergazdaként egy parancssort.
-3. Exportálja a hitelesítésszolgáltatói főtanúsítványt (.cer) egy olyan helyre, ahol később hozzáférhet.
-4. Ha a varázsló befejeződött, még mielőtt bezárná, kattintson **Launch the Certificate Connector UI**(Certificate Connector felhasználói felületének indítása) lehetőségre.
+**A parancssorból**:  
+1. Jelentkezzen be a legfelső szintű hitelesítésszolgáltató kiszolgáló-rendszergazdai fiók.
+ 
+2. Lépjen a **Start** > **futtatása**, majd adja meg **Cmd** parancssor megnyitása. 
+    
+3. Adja meg **certutil-ca.cert ca_name.cer** nevű fájlként a legfelső szintű tanúsítvány exportálása *ca_name.cer*.
 
-   `certutil -ca.cert certnew.cer`
 
-   További információkárt lásd: [Certutil-feladatok a tanúsítványok kezeléséhez](https://technet.microsoft.com/library/cc772898.aspx#BKMK_ret_sign).
 
 ## <a name="configure-certificate-templates-on-the-ca"></a>Tanúsítványsablonok konfigurálása a hitelesítésszolgáltatón
 

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 01/31/2019
+ms.date: 03/28/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c733dbbf992ae10e14ba711b34e621d3f0fb3da8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: c601af8c2b73ac68ec88f45d3684fcfd41f1c87f
+ms.sourcegitcommit: 1144247aa7f042eb1b99d8fd8dd17b909eae38c5
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57395266"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567588"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>Oktatóanyag: Az útmutató a Microsoft Intune-ban az Azure Portalon
 
@@ -113,7 +113,7 @@ Az Intune segít jobban megérteni az Azure Portalon az alábbi lépésekkel. Mi
 
     Felhasználók hozzáadása az Intune közvetlenül, vagy a felhasználók a helyszíni Active Directoryból szinkronizál. Ha felvették a felhasználókat a szolgáltatásba, regisztrálhatják az eszközeiket, és elérhetik a vállalati erőforrásokat. Meg is adhat a felhasználóknak további engedélyeket az eléréséhez az Intune-ban. További információkért lásd: [felhasználók hozzáadása és rendszergazdai engedély biztosítása az Intune-ban](users-add.md).
 
-9. A [Intune](https://aka.ms/intuneportal)válassza **csoportok** az Azure Active Directory (Azure AD) csoportok az Intune-ban szereplő részleteit jeleníti meg. Intune rendszergazdaként csoport használatával kezelheti az eszközöket és felhasználókat. 
+9. A [Intune](https://aka.ms/intuneportal)válassza **csoportok** az Azure Active Directory (Azure AD) csoportok az Intune-ban szereplő részleteit jeleníti meg. Intune rendszergazdaként csoportok segítségével kezelheti az eszközöket és felhasználókat. 
 
     ![A csoportok panel képernyőképe](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-09.png)
 

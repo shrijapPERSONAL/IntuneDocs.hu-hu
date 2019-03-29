@@ -18,15 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a61bd060b5c120a73df427688865e2ee976f8f68
-ms.sourcegitcommit: 94f7dc236db5995ffee7cd13c7e02794e561b532
+ms.openlocfilehash: c19973190c367c37e96e66eae8d507b4d94639e9
+ms.sourcegitcommit: e23e78a563928ed2b2cbc588f2aa65678f7bb409
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58538769"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58618474"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Heti összesítésben olvashat a Microsoft Intune újdonságairól. Ugyanitt találhat [jövőbeni változtatásokról](in-development.md), [fontos bejelentésekről](#notices), és információkat [korábbi verziókról](whats-new-archive.md). 
 
@@ -121,10 +120,13 @@ Most már használhatja az Intune [részleteinek megtekintéséhez](encryption-m
 A Microsoft Edge támogatni fogják az azonos felügyeleti forgatókönyvek, az Intune Managed Browser továbbfejlesztett végfelhasználói élmény igény szerinti hozzáadásával. A Microsoft Edge vállalati Intune szabályzatai által engedélyezett funkciók kettős-Identity, app protection házirend-integráció, az Azure application proxy-integráció, és felügyelt Kedvencek és a kezdőlap parancsikonok. További információkért lásd: [Microsoft Edge támogatási](app-configuration-managed-browser.md#microsoft-edge-support).
 
 #### <a name="exchange-onlineintune-connector-deprecate-support-for-eas-only-devices---3105122------"></a>Az Exchange Online vagy Intune-összekötő csak az EAS-eszközök támogatását kivezetjük <!--3105122    -->
-Az Intune-konzolon többé nem támogatja a megtekintése, és csak az EAS-eszközök kezelésének csatlakoztatott Exchane online-hoz az Intune-összekötővel. Ehelyett a következő lehetősége van:
+Az Intune-konzolon többé nem támogatja a megtekintése, és csak az EAS-eszközök kezelésének csatlakozik Exchange online-hoz az Intune-összekötővel. Ehelyett a következő lehetősége van:
 - A mobileszköz-felügyeleti (MDM) eszközök regisztrálása
 - Az Intune alkalmazásvédelmi szabályzatok használata az eszközök kezeléséhez
 - Az Exchange vezérlőkkel leírt módon [ügyfelek és a mobileszköz Exchange Online-ban](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/clients-and-mobile-in-exchange-online)
+
+### <a name="search-the-all-devices-page-for-an-exact-device-by-using-name---4254930---"></a>Az összes eszköz lapon-pontos eszköz keresését, [name] <!--4254930 -->
+Most már kereshet egy pontos eszköz nevét. Lépjen a **Intune** > **eszközök** > **minden eszköz** > a keresőmezőbe, az eszköz nevét körülvevő {} keresése egy pontos egyezés. Ha például **{Device12345}**.
 
 ### <a name="monitor-and-troubleshoot"></a>Monitorozás és hibaelhárítás
 
@@ -198,7 +200,7 @@ Válassza ki az Intune-ban **ügyfélalkalmazás** > **alkalmazások** > "App na
 Egy új képernyőt nevű **Alkalmazáskategóriák** a Windows 10 céges portál alkalmazás tallózása és kiválasztása élményének növelése érdekében jelentősen bővült. A felhasználók mostantól látnak alkalmazásaikat, például a kategóriák szerint rendezve **kiemelt**, **oktatási**, és **termelékenység**. Ez a módosítás megjelenik a céges portál verziókban 10.3.3451.0 és újabb verziók. Az új képernyő megtekintése: [az alkalmazásfelhasználói felület újdonságai](https://docs.microsoft.com/intune/whats-new-app-ui). A vállalati portál alkalmazások kapcsolatos további információkért lásd: [telepítése és megosztása az eszközön található alkalmazások](/intune-user-help/install-apps-cpapp-windows).  
 
 #### <a name="power-bi-compliance-app----1455231-doc-work-item---"></a>A Power BI megfelelőségi alkalmazás <!-- 1455231 doc-work-item -->
-A Power BI online-hoz az Intune-adattárház elérése a [(adatraktár) az Intune megfelelőségi](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) alkalmazást. A Power BI alkalmazással most már elérheti és megoszthatja az előre létrehozott jelentések beállítások nélkül, és a böngésző elhagyása nélkül. További információkért lásd: [módosítási napló - megfelelőségi a Power BI alkalmazás](reports-changelog.md#power-bi-compliance-app). További Intune Data Warehouse-frissítések, lásd: [hamarosan várható az Intune-adattárház API módosításai](whats-new.md#upcoming-change-to-the-intune-data-warehouse-api-).
+A Power BI online-hoz az Intune-adattárház elérése a [(adatraktár) az Intune megfelelőségi](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) alkalmazást. A Power BI alkalmazással most már elérheti és megoszthatja az előre létrehozott jelentések beállítások nélkül, és a böngésző elhagyása nélkül. További információkért lásd: [módosítási napló - megfelelőségi a Power BI alkalmazás](reports-changelog.md#power-bi-compliance-app).
 
 
 ### <a name="device-configuration"></a>Eszközök konfigurálása
@@ -303,7 +305,7 @@ A következőkre vonatkozik:
 ### <a name="device-management"></a>Eszközkezelés
 
 #### <a name="rename-an-enrolled-windows-device----1911112----"></a>Egy regisztrált Windows-eszköz átnevezése <!-- 1911112  -->
-Most átnevezheti a regisztrált Windows 10-es eszköz (RS4 vagy újabb). Szeretné elvégezni, válassza ki a **Intune** > **eszközök** > **minden eszköz** > Válasszon egy eszközt > **átnevezése eszköz**.
+Most átnevezheti a regisztrált Windows 10-es eszköz (RS4 vagy újabb). Szeretné elvégezni, válassza ki a **Intune** > **eszközök** > **minden eszköz** > Válasszon egy eszközt > **átnevezése eszköz**. Ez a funkció jelenleg nem támogatja a átnevezési hibrid Azure AD-Windows-eszközök.
 
 #### <a name="auto-assign-scope-tags-to-resources-created-by-an-admin-with-that-scope----3173823----"></a>Hatókörcímkék automatikus hozzárendelése a hatókörrel rendelkező rendszergazda által létrehozott erőforrások <!-- 3173823  -->
 Amikor a rendszergazda létrehoz egy erőforrást, bármely, a rendszergazda rendelt hatókörcímkék automatikusan rendeli hozzá ezeket az új erőforrásokat.
@@ -841,7 +843,7 @@ Mostantól létrehozhat egy Outlook iOS és Android alkalmazáskonfigurációs s
 Az Intune rendszergazdájaként további nyelveket helyezhet üzembe az Intune által felügyelt Office 365 Pro Plus alkalmazások számára. Az elérhető nyelvek listája tartalmazza a nyelvi csomag **Típusát** (alap, részleges vagy nyelvi ellenőrzési) is. Az Azure Portalon válassza a **Microsoft Intune** > **Ügyfélalkalmazások** > **Alkalmazások** > **Hozzáadás** lehetőséget. Az **Alkalmazás hozzáadása** panelen, az **Alkalmazástípusok** listáján, válassza az **Office 365 csomag** alatti **Windows 10** lehetőséget. Az **Alkalmazáscsomag beállításai** panelen válassza a **Nyelvek** lehetőséget.
 
 ####  <a name="windows-line-of-business-lob-apps-file-extensions----1884873---"></a>Windows – üzletági (LOB) alkalmazások fájlkiterjesztések <!-- 1884873 -->
-A Windowsos üzletági alkalmazások fájlnévkiterjesztései közé tartozik már az *.msi*, *.appx*, *.appxbundle*, *.msix* és *.msixbundle* is. Az alkalmazásokat az **Ügyfélalkalmazások** > **Alkalmazások** > **Hozzáadás** lehetőséggel adhatja hozzá a Microsoft Intune-hoz. Megjelenik az **Alkalmazás hozzáadása** panel, ahol kiválaszthatja az **Alkalmazás típusát**. Windowsos üzletági alkalmazásokhoz válassza az **Üzletági alkalmazás** lehetőséget az alkalmazás típusa területen, válassza az **Alkalmazáscsomag-fájl** elemet, majd adjon meg egy megfelelő kiterjesztésű telepítőfájlt.
+Most már tartalmazza a kiterjesztések Windows LOB-alkalmazások *.msi*, *.appx*, *.appxbundle*, *.msix*, és *. msixbundle*. Az alkalmazásokat az **Ügyfélalkalmazások** > **Alkalmazások** > **Hozzáadás** lehetőséggel adhatja hozzá a Microsoft Intune-hoz. Megjelenik az **Alkalmazás hozzáadása** panel, ahol kiválaszthatja az **Alkalmazás típusát**. Windowsos üzletági alkalmazásokhoz válassza az **Üzletági alkalmazás** lehetőséget az alkalmazás típusa területen, válassza az **Alkalmazáscsomag-fájl** elemet, majd adjon meg egy megfelelő kiterjesztésű telepítőfájlt.
 
 #### <a name="windows-10-app-deployment-using-intune----2309001---"></a>Windows 10-es alkalmazás üzembe helyezése az Intune-nal <!-- 2309001 -->
 Az üzleti alkalmazások és a Vállalati Microsoft Áruházbeli alkalmazások meglévő támogatására építve a rendszergazdák a szervezetük legtöbb meglévő alkalmazását az Intune segítségével telepíthetik a végfelhasználók Windows 10 rendszerű eszközeire. A rendszergazdák a Windows 10-es felhasználók számára több különböző formátumban adhatják hozzá, telepíthetik vagy eltávolíthatják az alkalmazásokat, például MSI-k, setup.exe fájlok vagy az MSP használatával. Az Intune a letöltést és a telepítést megelőzően kiértékeli a követelményszabályokat és a Windows 10 Műveletközpontján keresztül értesíti a végfelhasználókat a telepítés állapotáról vagy az újraindítási követelményekről. Ez a funkció gyakorlatilag lehetővé teszi, hogy az ez iránt érdeklődő szervezetek az Intune-ba és a felhőbe helyezzék át e műveleteiket. Ez a funkció jelenleg nyilvános előzetes verzióban érhető el, és várhatóan a következő néhány hónap során jelentős új képességekkel fog bővülni. 
