@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ceba92a48f4ae899b5a645137ec0891a7c16659
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: fb57ea2ef5c99c58968ee25b3a75b2165ece787a
+ms.sourcegitcommit: 0adb41c0640743d5cb726e66ad2427e3ad6faf20
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394834"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58658549"
 ---
-# <a name="use-rbac-and-scope-tags-for-distributed-it"></a>Rbac-RÓL és a hatókör címkék használata az elosztott IT
+# <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Szerepköralapú hozzáférés-vezérlés (RBAC) és a hatókörcímkék használható elosztott IT
 
-Szerepköralapú hozzáférés-vezérlés (RBAC) és a hatókörcímkék segítségével győződjön meg arról, hogy a megfelelő rendszergazdák rendelkeznek-e a megfelelő hozzáférést és látható-e a megfelelő Intune-objektumokhoz. Szerepkörök milyen általi hozzáférés megállapításához, hogy mely objektumok rendszergazdák rendelkeznek. Hatókörcímkék határozza meg, hogy mely objektumok rendszergazdák számára látható.
+Szerepköralapú hozzáférés-vezérléshez és a hatókör címkék segítségével győződjön meg arról, hogy a megfelelő rendszergazdák rendelkeznek-e a megfelelő hozzáférést és látható-e a megfelelő Intune-objektumokhoz. Szerepkörök milyen általi hozzáférés megállapításához, hogy mely objektumok rendszergazdák rendelkeznek. Hatókörcímkék határozza meg, hogy mely objektumok rendszergazdák számára látható.
 
 Például tegyük fel, hogy egy Seattle területi képviseletenként rendszergazdai szerepköre a házirend- és Profilkezelő. Azt szeretné, hogy ez a rendszergazda megtekintheti és kezelheti a csak a profilok és a házirendeket, amelyek csak a Seattle-eszközökre vonatkoznak. Ehhez ugyanúgy:
 
@@ -84,9 +84,13 @@ Például tegyük fel, hogy egy Seattle területi képviseletenként rendszergaz
 4. Válasszon **kiválasztása** > **OK** > **mentése**.
 
 ## <a name="to-assign-a-scope-tag-to-an-app-configuration-policy"></a>Hatókörcímke hozzárendelése alkalmazás-konfigurációs házirend
-Az eszközök **eszközregisztráció típusa** beállítása **felügyelt eszközök**, válassza ki **ügyfélalkalmazások** > **alkalmazáskonfigurációsszabályzatok** > Válassza ki az alkalmazás-konfigurációs házirend > **tulajdonságok** > **hatókör (címkék)** > Válassza ki a házirendhez hozzárendelni kívánt címkéket.
+Az eszközök **eszközregisztráció típusa** beállítása **felügyelt eszközök**:
+1. Válasszon **ügyfélalkalmazás** > **alkalmazáskonfigurációs szabályzatok** > Válassza ki az alkalmazás-konfigurációs házirend.
+2. Válasszon **tulajdonságok** > **hatókör (címkék)** > Válassza ki a házirendhez hozzárendelni kívánt címkéket.
 
-Az eszközök **eszközregisztráció típusa** beállítása **felügyelt alkalmazások**, válassza a **ügyfélalkalmazások** > **alkalmazáskonfigurációs szabályzatok**> Válassza ki az alkalmazás-konfigurációs házirend > **hatókör (címkék)** > Válassza ki a házirendhez hozzárendelni kívánt címkéket.
+Az eszközök **eszközregisztráció típusa** beállítása **felügyelt alkalmazások**:
+1. Válasszon **ügyfélalkalmazás** > **alkalmazáskonfigurációs szabályzatok** > Válassza ki az alkalmazás-konfigurációs házirend.
+2. Válasszon **hatókör (címkék)** > Válassza ki a házirendhez hozzárendelni kívánt címkéket.
 
 
 ## <a name="to-assign-a-scope-tag-to-an-ios-app-provisioning-profile"></a>Hatókörcímke hozzárendelése egy IOS-es alkalmazáskiépítési profil
@@ -107,20 +111,13 @@ Ha hatókörcímkék dolgozik, ne felejtse el ezeket az adatokat:
     - Alkalmazáskonfigurációs szabályzatok – a felügyelt eszközök
     - PowerShell-parancsprogramok
     - DEP-tokenek
+    - iOS-es alkalmazáskiépítési profil
 - Amikor a rendszergazda létrehoz egy objektumot az Intune-ban, azt a rendszergazdát rendelt összes hatókörcímkék automatikusan rendeli hozzá az új objektumot.
 - Intune-os RBAC az Azure Active Directory-szerepkör nem vonatkozik. Így az Intune szolgáltatás-rendszergazdák és a globális Rendszergazdák szerepkör nincs teljes rendszergazdai hozzáféréssel az Intune-hoz, függetlenül attól, milyen hatókörcímkék rendelkeznek.
 - A szerepkör-hozzárendelés hatóköre címkékkel rendelkező rendszergazdák nem hatókörcímkék Intune objektumokat is megtekintheti.
 - Csak a szerepkör-hozzárendelések rendelkező hatókörcímke rendelhet hozzá.
 - Csak olyan célcsoportokat, amelyek szerepelnek a hatókör (csoportok), a szerepkör-hozzárendelés is.
 - Ha a szerepkörhöz rendelt hatókörcímke, minden hatókörcímkék egy Intune-objektum nem törölhető. Legalább egy hatókörcímkét megadása kötelező.
-- Ha egy felhasználó több szerepkör-hozzárendeléseket, azokat a szerepkör-hozzárendeléseket az engedélyek kiterjesztése a különböző objektumokat a következő:
-    - Rendeljen engedélyeket csak az objektumok (például a szabályzatokat vagy alkalmazásokat) az adott szerepkör-hozzárendelési hatókör (csoportok) vonatkoznak. Rendeljen engedélyeket nem vonatkoznak más szerepkör-hozzárendelések objektumokat, ha a többi hozzárendelés kifejezetten megadja számára.
-    - Egyéb engedélyek (például a létrehozás és olvasás), sem a felhasználó-hozzárendelés az azonos típusú (például az összes házirend vagy az összes alkalmazás) összes objektumra vonatkozik.
-    - Engedélyek (például a szabályzatokat vagy alkalmazásokat) a különböző típusú objektumok egymáshoz nem érvényesek. Olvasási engedély egy házirendet, például egy olvasási engedélyt a felhasználó-hozzárendeléseket az alkalmazások nem biztosít.
-
-
-
-
 
 ## <a name="next-steps"></a>További lépések
 

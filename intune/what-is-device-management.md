@@ -4,7 +4,7 @@ description: A Microsoft 365 Nagyvállalati verzió tartalmazza a Microsoft Intu
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 03/29/2018
 ms.topic: conceptual
 audience: ITPro
 ms.prod: microsoft-365-enterprise
@@ -16,16 +16,16 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93e34c3de77dde59b87829617b8cbbd2614f7081
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: ea24101600c7a0e485440f50fc043c14bd840968
+ms.sourcegitcommit: 8e6f4acb592dbe5de63aa7642ee9487288740714
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57231247"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58646488"
 ---
 # <a name="what-is-device-management"></a>Mi az eszközkezelés? 
 
-Minden rendszergazda egyik fő feladata a vállalati erőforrások és adatok biztonságba helyezése és védelme. Ez a feladat az eszközkezelés. A felhasználók számos eszközzel rendelkeznek, amelyeken személyes fájlokat nyitnak és osztanak meg, webhelyeket keresnek fel, alkalmazásokat és játékokat telepítenek. Ezek a felhasználók egyben alkalmazottak és tanulók is, akik olyan munkahelyi és iskolai erőforrásokhoz akarnak hozzáférni eszközeikkel, mint a levelezés és a OneNote. A vállalatok *eszközkezelés* használatával gondoskodhatnak erőforrásaik és adataik biztonságáról és védelméről. 
+Minden rendszergazda egyik fő feladata a vállalati erőforrások és adatok biztonságba helyezése és védelme. Ez a feladat *Eszközkezelés*. A felhasználók számos eszközzel rendelkeznek, amelyeken személyes fájlokat nyitnak és osztanak meg, webhelyeket keresnek fel, alkalmazásokat és játékokat telepítenek. Ezek a felhasználók egyben alkalmazottak és tanulók is, akik olyan munkahelyi és iskolai erőforrásokhoz akarnak hozzáférni eszközeikkel, mint a levelezés és a OneNote. Kezelés lehetővé teszi a szervezetek számára, hogy védelmében, az erőforrások és az adatokat. 
 
 Eszközkezelési szolgáltató igénybe vételével a vállalatok biztosítani tudják, hogy csak az arra felhatalmazott egyének és eszközök férjenek hozzá a szellemi tulajdont képező információkhoz. Ezzel együtt az eszközök felhasználói is nyugodtan férhetnek hozzá telefonjaikon a munkahelyi adatokhoz annak tudatában, hogy eszközük eleget tesz vállalatuk biztonsági követelményeinek. Minden vállalatnál felmerülhet a kérdés: **Mit használhatnánk erőforrásaink védelme érdekében?**
 

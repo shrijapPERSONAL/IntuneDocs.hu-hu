@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 03/29/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d8ddb81a488ccf0cc902ccf792463144d1b0116
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: 4f84bb6573d6bdf3aef3088bc58dec5ed067fe3d
+ms.sourcegitcommit: 0adb41c0640743d5cb726e66ad2427e3ad6faf20
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394925"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58658564"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365-alkalmazások hozzárendelése Windows 10-es eszközökhöz a Microsoft Intune-nal
 
-Ezzel az alkalmazástípussal könnyedén hozzárendelhet Office 365-alkalmazásokat a Windows 10 rendszerű kezelt eszközökhöz. Alkalmazások a Microsoft Project Online asztali ügyfele és a Microsoft Visio Online 2. csomagját, ha a hozzájuk való saját licencekkel is telepítheti. A kívánt alkalmazások egyetlen bejegyzésként jelennek meg az Intune-konzol alkalmazáslistájában.
+Az alkalmazások hozzárendelése, figyelése, konfigurálása és védelme előtt hozzá kell adnia őket az Intune-hoz. Az elérhető egyik [alkalmazástípusok](apps-add.md#app-types-in-microsoft-intune) van Office 365-alkalmazások Windows 10 rendszerű eszközökhöz. Ha ez az alkalmazástípus az Intune-ban, rendelje hozzá, és az Office 365-alkalmazások telepítése Windows 10 rendszerű kezelt eszközökhöz. Rendelje hozzá is, és telepítse a Microsoft Project Online asztali ügyfele és a Microsoft Visio Online 2. csomagját, alkalmazásai, ha a hozzájuk való saját licencekkel. Elérhető Office 365-alkalmazások listájában, az Intune-konzol Azure-ban egyetlen bejegyzésként jelennek meg.
 
 > [!NOTE]
 > Office 365 ProPlus-licencekkel kell aktiválnia a Microsoft Intune-on keresztül üzembe helyezett Office 365 ProPlus-alkalmazásokat. Jelenleg az Intune nem támogatja az Office 365 Business Edition kiadását.
