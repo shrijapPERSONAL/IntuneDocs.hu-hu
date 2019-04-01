@@ -154,6 +154,10 @@ items:
       items:
       - name: Szerepköralapú hozzáférés-vezérlés
         href: role-based-access-control.md
+      - name: Szerepkör hozzárendelése felhasználóhoz
+        href: assign-role.md
+      - name: Egyéni szerepkör létrehozása
+        href: create-custom-role.md
       - name: Hatókörcímkék használata
         href: scope-tags.md
   - name: Eszközök regisztrálása
@@ -284,7 +288,7 @@ items:
       href: compliance-policy-create-windows.md
     - name: Helyalapú megfelelőség
       href: use-network-locations.md
-    - name: Házirend kiértékelése
+    - name: Szabályzat értékelése
       href: policy-evaluate.md
     - name: Meg nem felelés esetén végrehajtandó műveletek
       href: actions-for-noncompliance.md
@@ -945,9 +949,9 @@ items:
       href: data-outside-protect.md
     - name: Adatszivárgás megakadályozása nem felügyelt eszközökön
       href: data-leak-prevention.md
-ms.openlocfilehash: d273d9c300f49a2d78f8b9ed62031497b06a0060
-ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.openlocfilehash: c58e250d7aeb4913554874c8a1e931b2dc356dfd
+ms.sourcegitcommit: 0adb41c0640743d5cb726e66ad2427e3ad6faf20
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58514422"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58658574"
