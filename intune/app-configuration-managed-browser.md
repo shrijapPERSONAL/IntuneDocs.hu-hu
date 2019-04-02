@@ -1,6 +1,6 @@
 ---
 title: Webes hozzáférés felügyelete szabályzat által védett böngészővel
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Szabályzat által védett böngésző használatával korlátozhatja a webböngészést és a webes adatok átvitelét.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cac17395d7615ef038e99dc5c14357d6388ec6ec
-ms.sourcegitcommit: b0b1030017e741d92c508130447a8242d9ad7a51
+ms.openlocfilehash: 03153450e51b7f83f2e426d5a7bdf25e7fb95bbe
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58343012"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799483"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Az internet-hozzáférés kezelése Microsoft Intune-szabályzattal védett böngésző használatával
 
@@ -208,7 +208,7 @@ A Microsoft Edge vagy a Managed Browser alkalmazás konfigurációjának létreh
 
 |                                Kulcs                                |                                                           Érték                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | Adjon meg egy érvényes URL-címet. A helytelen URL-címek biztonsági intézkedésként le vannak tiltva.<br>Például: `<https://www.bing.com>` |
+| <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | Adjon meg egy érvényes URL-címet. A helytelen URL-címek biztonsági intézkedésként le vannak tiltva.<br>Példa: `<https://www.bing.com>` |
 
 ## <a name="how-to-configure-bookmarks-for-a-protected-browser"></a>Védett böngésző könyvjelzőinek konfigurálása
 

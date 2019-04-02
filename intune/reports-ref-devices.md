@@ -1,6 +1,6 @@
 ---
 title: Eszközök – Intune-adattárház
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Az Intune-adattárház API-ban található entitásgyűjtemények eszközkategóriájára vonatkozó referencia-témakör.
 keywords: Intune-adattárház
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 29213400b5baf9705c188bb45b3666b65262d577
-ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
+ms.openlocfilehash: e8af3dffbb4875e588d20eeaef5193122c1f1f49
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58358233"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799683"
 ---
 # <a name="reference-for-devices-entities"></a>Eszközök típusú entitások referenciája
 
@@ -117,7 +117,7 @@ A **EnrollmentFailureCategory** entitás azt jelzi, hogy miért-eszközök regis
 | Nem alkalmazható                  | A regisztráció sikertelen kategória nem alkalmazható.                                                            |
 | Nem érhető el                   | A regisztráció sikertelen kategória nem érhető el.                                                             |
 | Ismeretlen                         | Ismeretlen hiba.                                                                                                |
-| Authentication                  | A hitelesítés sikertelen volt.                                                                                        |
+| Hitelesítés                  | A hitelesítés sikertelen volt.                                                                                        |
 | Engedélyezés                   | Hívás történt hitelesítése, de nem jogosult a regisztrációra.                                                         |
 | AccountValidation               | Nem sikerült érvényesíteni a fiókot a regisztrációhoz. (Blokkolva, fiók regisztrációs nincs engedélyezve)                      |
 | UserValidation                  | Felhasználó nem érvényesíthető. (Felhasználó nem létezik, licenc hiányzik)                                           |
@@ -239,7 +239,7 @@ A **Devices** entitás felsorolja az összes kezelt regisztrált eszközt és az
 | OSMinorVersion | Az operációs rendszer verziószámának alverzió összetevője (főverzió.alverzió.build.változat). |
 | OSBuildNumber | Az operációs rendszer verziószámának build összetevője (főverzió.alverzió.build.változat). |
 | OSRevisionNumber | Az operációs rendszer verziószámának változat összetevője (főverzió.alverzió.build.változat). |
-| a sorozatszám | Az eszköz sorozatszáma, ha elérhető. |
+| Sorozatszám | Az eszköz sorozatszáma, ha elérhető. |
 | RowLastModifiedDateTimeUTC | A rekord utolsó módosításának időpontja. |
 | DeviceAction | Az utoljára kiadott eszközművelet, egyelőre figyelmen kívül hagyható. |
 | Gyártó | Az eszköz gyártója. |

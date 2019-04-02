@@ -1,6 +1,6 @@
 ---
 title: Az Intune előkészítése mobileszköz-kezeléshez
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: A Microsoft Intune-ra migrálás előtt mérje fel az üzleti és technikai követelményeket.
 keywords: ''
 author: dougeby
@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 984461631911703321859c618fc6302832f8b811
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: e527ed11e451ec0ef2f6d2fde42e0c8fd53408f3
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57393472"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799322"
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>1. fázis: A Microsoft Intune előkészítése a mobileszköz-felügyelet (MDM)
 

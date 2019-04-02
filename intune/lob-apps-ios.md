@@ -1,6 +1,6 @@
 ---
 title: IOS-es üzletági alkalmazások hozzáadása a Microsoft Intune-hoz
-titlesuffix: ''
+titleSuffix: ''
 description: Ismerje meg egy IOS-es üzletági (LOB) alkalmazások hozzáadása Microsoft Intune-bA.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 605b756c6af9469ea8582703846ba8407e7af993
-ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.openlocfilehash: d687fee70a5983379d1e4e95a7be6aa454f26f8a
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58514441"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799545"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>IOS-es üzletági alkalmazások hozzáadása a Microsoft Intune-hoz
 

@@ -1,6 +1,6 @@
 ---
 title: A fejlesztés – Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Fejlesztés a Microsoft Intune-funkciók
 keywords: ''
 author: ErikjeMS
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e068e2c9834290b705e8e7bc2f895636415f9ba
-ms.sourcegitcommit: 69aaf89140f82f344404e75a69dc59d8a1585b10
+ms.openlocfilehash: 8807cb090cfb662f2ab273d29baf2715dfcd6426
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58675442"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799128"
 ---
 # <a name="in-development-for-microsoft-intune---april-2019"></a>A Microsoft Intune - április 2019 fejlesztés alatt
 
 Segítség a készültségi és tervezési, ezen a lapon listák Intune felhasználói felület frissíti, és a szolgáltatásokat, fejlesztés alatt állnak, de még nem elérhető. Továbbá:
 
-- Ha várhatóan tovább fogjuk, hogy intézkedjen módosítása előtt kell, tesszük közzé egy ingyenes Office-Üzenetközpontban post.
+- Ha várhatóan tovább fogjuk, hogy intézkedjen módosítása előtt kell, tesszük közzé egy kiegészítő Office-Üzenetközpontban post.
 - Ha egy szolgáltatás vagy előzetes elindul, éles környezetben, vagy általánosan elérhető, a szolgáltatás leírása áthelyezi ezt oldal ki, majd onnan az [Újdonságok oldalát](whats-new.md).
 - Ezen a lapon, és a [Újdonságok oldalát](whats-new.md) rendszeresen frissül. További hírekért látogasson vissza.
 - Tekintse meg a [M365 ütemterv](https://www.microsoft.com/microsoft-365/roadmap?rtc=2&filters=EMS) stratégiai le és ütemterveket.

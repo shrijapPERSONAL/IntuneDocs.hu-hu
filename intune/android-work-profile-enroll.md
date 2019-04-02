@@ -1,6 +1,6 @@
 ---
 title: Regisztrálja vállalati Android munkahelyi profilos eszközök az Intune-ban
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Ismerje meg, hogy miként regisztrálhatják az Android Enterprise munkahelyi profilos eszközök az Intune-ban.
 keywords: ''
 author: ErikjeMS
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 554bf209b71d03a95245d656f19a029af6e67a52
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 66574fe66f90b73d8ebf5835c5b16e93276579e4
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57394962"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799350"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-work-profile-devices"></a>Vállalati Android munkahelyi profilos eszközök regisztrálásának beállítása
 

@@ -1,6 +1,6 @@
 ---
 title: Hiányos felhasználói regisztrációk jelentése az Intune-ban
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Ismerje meg a teljes felhasználói regisztrációk jelentése.
 keywords: ''
 author: ErikjeMS
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0202fba7e31b7be1d325617867be9a43d4f2064a
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: 78d55ef2baf0608d22af53bf0803634700e01eb3
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991139"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798287"
 ---
 # <a name="incomplete-user-enrollments-report"></a>Hiányos felhasználói regisztrációk jelentése
 
@@ -74,7 +74,7 @@ Az alábbi táblázatokban a műveleteknek a listája, felhasználói minősül 
 
 #### <a name="setup-checklist-section"></a>Beállítási ellenőrzőlista szakasz
 
-| Művelet neve | Képernyő vagy folyamat | Platform | Műveletek |
+| Művelet neve | Képernyő vagy folyamat | Platform | Művelet |
 | ---- |---- |---- |---- |
 | EnrollmentWrapUp | A rendszer arra kéri, hogy nyisson meg egy oldalt a Céges portálon. | iOS/Android | **Mégse** |
 | EnrollmentWrapUp | Eszközregisztrációs képernyő, ami addig látható, amíg be nem fejeződik a **vállalati erőforrások betöltése** | iOS/Android | Időtartam > 30 perc |
@@ -84,7 +84,7 @@ Az alábbi táblázatokban a műveleteknek a listája, felhasználói minősül 
 
 #### <a name="platform-screens-section"></a>Platformképernyők szakasz
 
-| Művelet neve | Képernyő vagy folyamat | Platform | Műveletek |
+| Művelet neve | Képernyő vagy folyamat | Platform | Művelet |
 | ---- |---- |---- |---- |
 | iOSProfileLaunch | Rákérdezés a konfigurációs profil megjelenítésére | iOS | **Figyelmen kívül hagyás** |
 | iOSProfileLaunch | Profilképernyő telepítése | iOS | **Mégse** |
@@ -97,14 +97,14 @@ Az alábbi táblázatokban a műveleteknek a listája, felhasználói minősül 
 
 #### <a name="terms-of-use-section"></a>Használati feltételek szakasz
 
-| Művelet neve | Képernyő vagy folyamat | Platform | Műveletek |
+| Művelet neve | Képernyő vagy folyamat | Platform | Művelet |
 | ---- |---- |---- |---- |
 | TermsofUse | Használati feltételek (ha a rendszergazda konfigurálta) | iOS/Android | **Összes elutasítása** |
 | TermsofUse | Használati feltételek megjelenítése az **Összes elfogadása** kiválasztásáig | iOS/Android | Időtartam > 30 perc |
 
 #### <a name="complianceactivation-section"></a>Megfelelőség/aktiválás képernyő
 
-| Művelet neve | Képernyő vagy folyamat | Platform | Műveletek |
+| Művelet neve | Képernyő vagy folyamat | Platform | Művelet |
 | ---- |---- |---- |---- |
 | Megfelelőség | Eszközmegfelelőség (ha a rendszergazda beállította) nem zöldként jelenik meg a regisztráció utáni hozzáférés-beállítás esetén| iOS/Android | **Postpone** |
 | Megfelelőség | Az eszközmegfelelőség nem zöldként jelenik meg, amíg nem frissíti zöldként való megjelenítésre | iOS/Android | Időtartam > 30 perc |

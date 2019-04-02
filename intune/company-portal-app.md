@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2018
+ms.date: 04/01/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50be92847922458a7145e02bcc2125ddadc6976f
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: 33f24a3d7b30973855bb303bb97bf703cd4dc5fa
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991110"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798250"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>A Microsoft Intune Céges portál alkalmazásának konfigurálása
 
@@ -91,7 +91,7 @@ Márkakép feltöltése, amely tükrözi a vállalati márkát. A módosítások
 
 |Mező neve|További információ|
 |---|---|
-|**Márkakép feltöltése**| Ezt a beállítás rendelkezésre áll háttérkép megjelenítéséhez a Céges portál alkalmazás felhasználói profil oldalán.<p>*Megjegyzés*: A kép a különböző platformok módon jelenhetnek meg.<p><ul><li>Kép szélessége ajánlott: Kisebb, mint 1125px, de nem kisebb, mint 640 képpont</li><li>Maximális Képméret: 1.3 MB</li><li>Fájltípus: PNG, JPG vagy JPEG</li></ul>|
+|**Márkakép feltöltése**| Ez a beállítás lehetővé teszi egy márka kép megjelenítéséhez. Az iOS Vállalatiportál-mutatja be a felhasználói profil oldalához háttérképként.<p><ul><li>Kép szélessége ajánlott: Kisebb, mint 1125px, de nem kisebb, mint 640 képpont</li><li>Maximális Képméret: 1.3 MB</li><li>Fájltípus: PNG, JPG vagy JPEG</li></ul>|
 
 A megfelelő márkakép javíthatja a felhasználó Céges portálba vetett bizalmát a cég márkájának hangsúlyozásával. Íme néhány tipp, amelyet érdemes figyelembe venni a kép Céges portálhoz történő beszerzésekor, kiválasztásakor és optimalizálásakor. 
 
@@ -121,7 +121,7 @@ A végfelhasználók a Windows céges portál (megoldásgyorsítók) billentyűp
 
 A következő billentyűparancsok érhetők el a Windows Céges portál alkalmazásban.
 
-| Terület | Leírás | Billentyűparancs |
+| Eszköz / terület | Leírás | Billentyűparancs |
 |:------------------:|:--------------:|:-----------------:|
 | Navigációs menü | Navigáció | Alt+M |
 |  | Otthoni | Alt+H |

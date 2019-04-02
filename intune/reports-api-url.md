@@ -1,6 +1,6 @@
 ---
 title: Intune-adattárház API-végpontja
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: A referencia-témakör ismerteti a Microsoft Intune Data Warehouse API URL-Címének szerkezete. Szűrő példák állnak rendelkezésre.
 keywords: Intune-adattárház
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0e56c2dd4e26c68a82d5cb9d902e4480e1b98c8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 50be11f9ada92670c201fc2540499effa5a7edef
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396480"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798500"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune-adattárház API-végpontja
 
@@ -53,7 +53,7 @@ Az URL-cím a következő elemeket tartalmazza:
 |-------------------|------------|--------------------------------------------------------------------------------------------------------------------|
 | location | msua06 | Az alap URL-cím helye az Azure Portalon található adattárház API paneljén látható. |
 | entitásgyűjtemény | dátumok | Az OData-entitásgyűjtemény neve. Az adatmodellben lévő gyűjteményekről és entitásokról további információt a [Adatmodell](reports-ref-data-model.md) című témakörben talál. |
-| api-verzió | béta | Verzió alatt az elérni kívánt API verzióját értjük. További információt a [Verzió](#API-version-information) című témakörben talál. |
+| api-verzió | béta | Verzió alatt az elérni kívánt API verzióját értjük. További információt a [Verzió](reports-api-url.md#api-version-information) című témakörben talál. |
 | maxhistorydays | 7 | (Nem kötelező) Az előzmények bejegyzéseinek maximális lekérési időtartama (napokban kifejezve). Ez a paraméter bármely gyűjteménnyel használható, de csak olyan gyűjteményeknél lép érvénybe, amelyek tartalmazzák a `dateKey` értéket a kulcstulajdonság részeként. További információk: [DateKey típusú tartományszűrők](reports-api-url.md#datekey-range-filters). |
 
 ## <a name="api-version-information"></a>Az API-verzióra vonatkozó információk

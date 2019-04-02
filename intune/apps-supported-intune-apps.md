@@ -1,6 +1,6 @@
 ---
 title: A Microsoft Intune-ban támogatott alkalmazások
-titlesuffix: ''
+titleSuffix: ''
 description: Ez a témakör a támogatási partner és a Microsoft Intune-ban gyakran használt Microsoft-alkalmazások listáját.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fcf9729ddaa63e976a25e0a6c528a3fe2f3d12d7
-ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.openlocfilehash: 26ee922250fd18b8c48d14a357a931439cc0142c
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58514391"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799674"
 ---
 # <a name="microsoft-intune-protected-apps"></a>A Microsoft Intune által védett alkalmazások  
 

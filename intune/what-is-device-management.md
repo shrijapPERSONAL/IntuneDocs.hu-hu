@@ -1,10 +1,10 @@
 ---
 title: Eszközkezelés a Microsoft 365-ben
-description: A Microsoft 365 Nagyvállalati verzió tartalmazza a Microsoft Intune-t. Az Intune által a vállalata számára kínált mobileszköz-kezelés és mobilalkalmazás-kezelés ismertetése gyakori felhasználási helyzetek leírásával. A Microsoft 365 saját környezetében, az Intune használatával végzett telepítésének ismertetése.
+description: A Microsoft 365 Nagyvállalati verzió tartalmazza a Microsoft Intune-t. Tekintse meg, hogyan nyújt az Intune a mobileszköz-kezelés és a mobilalkalmazás-kezelés a szervezet számára. Olvassa el a gyakori forgatókönyvek és a Microsoft 365 környezetbe telepítése az Intune-nal.
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/29/2018
+ms.date: 03/29/2019
 ms.topic: conceptual
 audience: ITPro
 ms.prod: microsoft-365-enterprise
@@ -16,34 +16,34 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ea24101600c7a0e485440f50fc043c14bd840968
-ms.sourcegitcommit: 8e6f4acb592dbe5de63aa7642ee9487288740714
+ms.openlocfilehash: 15f908a34f0a9315552acfad56cbf560a23fa26d
+ms.sourcegitcommit: e63e3debb5f4d9a757f767913e72e39742137b17
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58646488"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58788445"
 ---
 # <a name="what-is-device-management"></a>Mi az eszközkezelés? 
 
-Minden rendszergazda egyik fő feladata a vállalati erőforrások és adatok biztonságba helyezése és védelme. Ez a feladat *Eszközkezelés*. A felhasználók számos eszközzel rendelkeznek, amelyeken személyes fájlokat nyitnak és osztanak meg, webhelyeket keresnek fel, alkalmazásokat és játékokat telepítenek. Ezek a felhasználók egyben alkalmazottak és tanulók is, akik olyan munkahelyi és iskolai erőforrásokhoz akarnak hozzáférni eszközeikkel, mint a levelezés és a OneNote. Kezelés lehetővé teszi a szervezetek számára, hogy védelmében, az erőforrások és az adatokat. 
+Minden rendszergazda egyik fő feladata a vállalati erőforrások és adatok biztonságba helyezése és védelme. Ez a feladat *Eszközkezelés*. Felhasználók rendelkeznek számos eszközről, ahol fognak és személyes fájlok megosztása, látogasson el a websites, és telepítse az alkalmazásokat és játékokat. Ugyanazokat a felhasználókat is, az alkalmazottak, mind a tanulói. Szeretnének hozzáférni a munkahelyi és iskolai erőforrásokhoz, például az e-mailek és a OneNote eszközeiket használják. Kezelés lehetővé teszi a szervezetek számára, hogy védelmében, az erőforrások és az adatokat. 
 
-Eszközkezelési szolgáltató igénybe vételével a vállalatok biztosítani tudják, hogy csak az arra felhatalmazott egyének és eszközök férjenek hozzá a szellemi tulajdont képező információkhoz. Ezzel együtt az eszközök felhasználói is nyugodtan férhetnek hozzá telefonjaikon a munkahelyi adatokhoz annak tudatában, hogy eszközük eleget tesz vállalatuk biztonsági követelményeinek. Minden vállalatnál felmerülhet a kérdés: **Mit használhatnánk erőforrásaink védelme érdekében?**
+Egy eszköz-felügyeleti szolgáltatót használ, szervezete meggyőződhet arról, hogy csak a jogosult személyek és eszközök eléréséhez szellemi tulajdont képező adatokat. Ehhez hasonlóan eszköz felhasználók is telefont, a munkahelyi adatok elérése könnyű, a úgy is, mivel azokat, hogy az eszközt a szervezeti biztonsági követelmények teljesítéséhez. Minden vállalatnál felmerülhet a kérdés: **Mit használhatnánk erőforrásaink védelme érdekében?**
 
-Ekkor lép be a képbe a [Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune). Az Intune mobileszköz-kezelést (MDM) és mobilalkalmazás-kezelést (MAM) is kínál. Minden MDM- és MAM-megoldás fő feladatai közé tartoznak a következők:
+A válasz [a Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune). Az Intune mobileszköz-kezelést (MDM) és mobilalkalmazás-kezelést (MAM) is kínál. Minden MDM- és MAM-megoldás fő feladatai közé tartoznak a következők:
 
-- Szerteágazó mobil környezet támogatása &mdash; iOS-, Android-, Windows- és macOS-eszközök biztonságos kezelése
-- Annak biztosítása, hogy az eszközök és az alkalmazások megfeleljenek a vállalat biztonsági követelményeinek
-- A vállalati adatok védelmét a vállalati tulajdonban lévő és személyes eszközökön is elősegítő szabályzatok létrehozása
+- A különböző mobil környezet támogatja, és biztonságosan iOS, Android, Windows és MacOS rendszerű eszközök kezelése.
+- Győződjön meg arról, hogy az eszközök és alkalmazások megfeleljenek a szervezet biztonsági követelményeinek.
+- A szervezeti adatok biztonságban vállalati és személyes eszközök olyan házirendeket készíthetnek.
 - Az ezeket a szabályzatokat érvényesítő egyetlen, egységes mobilmegoldás használata, valamint az eszközök, alkalmazások, felhasználók és csoportok kezelésének támogatása.
 
 Az Intune a Microsoft 365 része, és integrálva van az Azure Active Directoryval (Azure AD). Az Azure AD segít szabályozni, hogy ki, mihez fér hozzá.
 
 ## <a name="hello-intune"></a>Hello, Intune!
-Számos vállalat, köztük a Microsoft is az Intune használatával védi a felhasználók által vállalati vagy saját tulajdonban lévő mobileszközökön hozzáférhető, szellemi tulajdont képező adatok védelmére. Az Intune olyan funkciókkal szolgálja az adatokhoz való hozzáférés biztonságát és figyelését, mint az eszköz- és alkalmazáskonfigurációs szabályzatok, szoftverfrissítési szabályzatok és telepítési állapotok (valamint diagramok, táblázatok és jelentések).
+Számos vállalat, köztük a Microsoft is az Intune használatával védi a felhasználók által vállalati vagy saját tulajdonban lévő mobileszközökön hozzáférhető, szellemi tulajdont képező adatok védelmére. Az Intune eszköz- és konfigurációs szabályzatok, a szoftverfrissítési szabályzatok és a telepítési állapotot (diagramok, táblák és jelentések) segítségével biztonságos és az adatelérés figyelésére tartalmaz.
 
 Sokan rendelkeznek több, különböző platformokat használó eszközzel. Egy alkalmazott használhat például Surface Pro-t a munkájához, és egy Androidos mobileszközt magáncélokra. Az is gyakori, hogy az illető ezekről az eszközökről egyaránt használja az olyan vállalati erőforrásokat, amilyen az Outlook és a SharePoint.
 
-Az Intune-nal személyenként több eszköz, és az egyes eszközökön futó több platform, például iOS, macOS, Android és Windows is kezelhető. Az Intune eszközplatformonként különíti el a szabályzatokat és beállításokat, így az egy adott platformhoz tartozó eszközök egyszerűen kezelhetők és megtekinthetők.
+Az Intune-nal személyenként több eszköz, és az egyes eszközökön futó több platform, például iOS, macOS, Android és Windows is kezelhető. Az Intune eszközplatform szerint elválasztja a szabályzatokat és beállításokat. Így egyszerűen, kezelése és az adott platformhoz az eszközök.
 
 A **[Gyakori helyzetek](https://docs.microsoft.com/intune/common-scenarios)** kitűnő forrás, amelyből megtudhatja, hogyan válaszolja meg az Intune a mobileszközökkel végzett munka során gyakran felmerülő kérdéseket. Megtalálhatja a következő helyzetek ismertetését:  
 - Levelezés védelme helyszíni Exchange használatával
@@ -51,26 +51,28 @@ A **[Gyakori helyzetek](https://docs.microsoft.com/intune/common-scenarios)** ki
 - Vállalati erőforrások elérése személyes eszközökkel
 
 ## <a name="integration-with-secure-and-protect-services"></a>Integráció biztonsági és védelmi szolgáltatásokkal
-Minden eszközkezelési megoldás fő feladata a biztonság és a védelem. Az Intune erőssége a más szolgáltatásokkal való integráció, ennek a feladatnak a szolgálatában. Példa:
+Minden eszközkezelési megoldás fő feladata a biztonság és a védelem. Az Intune erőssége a más szolgáltatásokkal való integráció, ennek a feladatnak a szolgálatában. Például:
 
-- A **Microsoft 365** kulcsszerepet játszik a gyakori informatikai feladatok egyszerűsítésében. A Microsoft 365 felügyeleti központjával felhasználókat hozhat létre, kezelhet csoportokat, és hozzáférhet olyan további szolgáltatásokhoz, mint az Intune, az Azure Active Directory és sok más. A Microsoft 365-ben létrehozhatja például iOS-eszközök csoportját. Az Intune ez után olyan iOS-funkciókkal kapcsolatos szabályzatokat küld le az iOS-eszközök csoportjának, mint az App Store-hozzáférés, az AirDrop használata, biztonsági másolatot készítése az iCloudban, az Apple webes szűrőjének használata és sok egyéb.
+- A **Microsoft 365** kulcsszerepet játszik a gyakori informatikai feladatok egyszerűsítésében. A Microsoft 365 felügyeleti központban, felhasználók, csoportok létrehozásához és kezeléséhez. Hogy is elérheti a más szolgáltatások, például az Intune, Azure AD-ben stb. 
+
+  Például hozzon létre egy iOS-eszközök csoportjának a Microsoft 365-ben. Az Intune ez után olyan iOS-funkciókkal kapcsolatos szabályzatokat küld le az iOS-eszközök csoportjának, mint az App Store-hozzáférés, az AirDrop használata, biztonsági másolatot készítése az iCloudban, az Apple webes szűrőjének használata és sok egyéb.
 
 - A **Windows Defender** a Windows 10-es eszközök védelmében közreműködő számos biztonsági funkciót tartalmaz. Az Intune és a Windows Defender együttes használatával megteheti például a következőket: 
 
     - Engedélyezheti a [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10) megoldást, amely gyanús tevékenységeket keres mobileszközökön, fájlokban és alkalmazásokban. 
-    - A [Windows Defender Komplex veszélyforrások elleni védelem (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) használatával segíthet megelőzni a mobileszközökön történő biztonsági incidenseket, és korlátozni az incidensek következményeit azáltal, hogy letiltja a felhasználó hozzáférését a vállalati erőforrásokhoz.
+    - Használat [Windows Defender komplex veszélyforrások elleni védelem (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) a mobileszközök biztonsági problémák megelőzése érdekében. És, korlátozhatják a biztonsági incidensek blokkolja a felhasználó a céges erőforrásokhoz.
 
-- A **Feltételes hozzáférés** az Azure Active Directory funkciója, amely jól integrálható az Intune-nal. [Feltételes hozzáférés](https://docs.microsoft.com/intune/conditional-access) használatával gondoskodhat arról, hogy csak megfelelő eszközöknek engedélyezze a levelezéshez, a SharePointhoz és más alkalmazásokhoz való hozzáférést. 
+- A **Feltételes hozzáférés** az Azure Active Directory funkciója, amely jól integrálható az Intune-nal. Használatával [feltételes hozzáférési](https://docs.microsoft.com/intune/conditional-access), győződjön meg arról, hogy csak megfelelő eszközök férhessenek hozzá az e-mailt, a SharePoint és egyéb alkalmazásokhoz. 
 
 ## <a name="choose-the-device-management-solution-thats-right-for-you"></a>Az Önnek megfelelő eszközkezelési megoldás kiválasztása
 
-Az eszközkezelés több módon is megközelíthető. Először is az eszközök minden jellemzőjét kezelni tudja az Intune összes beépített funkciójával. Ezt nevezzük **mobileszköz-kezelésnek (MDM)**. Ennél a megközelítési módnál a felhasználók „regisztrálják” eszközeiket, és tanúsítványok használatával kommunikálnak az Intune-nal. Az informatikai rendszergazdák sok más lehetőség mellett alkalmazásokat küldhetnek le az eszközökre, megkövetelhetnek egy adott operációs rendszert az eszközökön, és letilthatják a személyes eszközöket. Ha egy eszköz elveszett vagy ellopták, akkor eltávolíthatják az eszközről az összes adatot. 
+Az eszközkezelés több módon is megközelíthető. Először az eszközök Intune-bA beépített funkciót különböző aspektusait is kezelheti. Ezt a módszert nevezik **mobileszköz-felügyelet (MDM)**. Felhasználók "igénylési" eszközeiket, és tanúsítványok használatával kommunikáljon az Intune-ban. Alkalmazások küldése informatikai rendszergazdaként az eszközökön, korlátozza az adott operációs rendszerrel, a személyes eszközök, és egyéb eszközök. Ha egy eszköz elveszett vagy ellopták, akkor eltávolíthatják az eszközről az összes adatot. 
 
-A második megközelítés szerint az eszközökön lévő alkalmazások lesznek kezelve. Ezt nevezzük **mobilalkalmazás-kezelésnek (MAM)**. Ezen a módon a felhasználók saját eszközeikkel férhetnek hozzá a vállalati erőforrásokhoz. Egy alkalmazás, például e-mail vagy a SharePoint megnyitásakor a rendszer további hitelesítést kér a felhasználótól. Ha egy eszköz elveszett vagy ellopták, akkor az eszközről az összes vállalati adat eltávolítható. 
+A második megközelítés szerint az eszközökön lévő alkalmazások lesznek kezelve. Ezt a módszert nevezik **mobilalkalmazás-kezelés (MAM)**. Felhasználók személyes eszközeiket használhatják a céges erőforrások elérésére. Egy alkalmazás, például e-mail vagy a SharePoint megnyitásakor a rendszer további hitelesítést kér a felhasználótól. Ha egy eszköz elveszett vagy ellopták, akkor az eszközről az összes vállalati adat eltávolítható. 
 
 Az [MDM és az MAM](https://docs.microsoft.com/intune/byod-technology-decisions) együtt is használható.
 
-Az Intune beállításakor azt is kiválaszthatja, hogy csak az Azure Portalon, vagy az Intune és a Microsoft 365 együttes használatával kívánja kezelni az eszközöket. A Microsoft [Mobileszköz-kezelés Intune-ba migrálása az Azure Portalon](https://www.microsoft.com/itshowcase/Article/Content/1042/Migrating-mobile-device-management-to-Intune-in-the-Azure-portal) című esettanulmányából megtudhatja, hogyan választott a Microsoft informatikai részlege korszerű eszközkezelési módszert, és milyen tapasztalatokat szerzett. 
+Az Intune beállításakor azt is kiválaszthatja, hogy csak az Azure Portalon, vagy az Intune és a Microsoft 365 együttes használatával kívánja kezelni az eszközöket. [Az Azure Portalon áttelepítése mobileszköz-felügyelet az Intune-bA](https://www.microsoft.com/itshowcase/Article/Content/1042/Migrating-mobile-device-management-to-Intune-in-the-Azure-portal) van a Microsoft IT esettanulmány. Ebben az esetben tanulmányi, megtudhatja, hogyan a Microsoft IT egy modern eszközfelügyeleti módszer választotta, és olvassa el, a tapasztalatok.
 
 ## <a name="simplify-it-tasks-using-the-device-management-dashboard"></a>Informatikai feladatok egyszerűsítése a Eszközkezelés irányítópulttal
 
@@ -94,4 +96,4 @@ Az Eszközkezelés irányítópulton a következőket hajthatja végre:
 - [Hibaelhárítás](https://docs.microsoft.com/intune/help-desk-operators)
 
 ## <a name="next-step"></a>Következő lépés
-Ha készen áll egy MDM- vagy MAM-megoldás bevezetésére, olvassa el az Intune telepítési lépéseinek végrehajtását, az eszközök regisztrálását és az első szabályzatok létrehozását ismertető, [Mobileszköz-kezelés a Microsoft 365-ben](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure) című cikket. 
+Amikor készen áll az MDM és MAM-megoldás használatának első lépései, különböző való beállítása az Intune-ban, az eszközök beléptetéséhez és a szabályzatok létrehozásának első lépéseiről. [A Microsoft 365-höz készült mobileszköz-kezelés](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure) van is egy nagyszerű forrás.

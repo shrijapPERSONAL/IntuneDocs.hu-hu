@@ -1,6 +1,6 @@
 ---
 title: Alkalmazások GCC magas és DOD-alapú környezetek
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Ismerje meg az alkalmazások Microsoft Intune-nal GCC magas és DOD-alapú környezetek használata esetén.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb49cd97e029e45d7d098ec1898fd0e27efa1132
-ms.sourcegitcommit: 4049a3aed15f2d8d21bb814410875a13f613e4ed
+ms.openlocfilehash: 43df4d72cda3830f9793f591eebcb4d2a1ec284f
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58283232"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799354"
 ---
 # <a name="deploying-apps-using-intune-on-the-gcc-high-and-dod-environments"></a>Az Intune-nal a GCC magas és a DoD környezetek alkalmazások üzembe helyezése 
 

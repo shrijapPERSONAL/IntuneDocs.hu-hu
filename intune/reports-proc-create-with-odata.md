@@ -1,6 +1,6 @@
 ---
 title: Jelentés készítése az OData-adatcsatornából a Power BI használatával
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Fatérkép-diagram létrehozása a Power BI Desktop használatával, az Intune-adattárház API-ból származó interaktív szűrővel.
 keywords: Intune-adattárház
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3cd0f8b5337ad562bddd65bc449a35ec0773f5ed
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b9cfb464122018c6e77d5ea1395b699bafa81f33
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565621"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799036"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Jelentés készítése az OData-adatcsatornából a Power BI használatával
 
@@ -57,7 +57,7 @@ Telepítse a Power BI Desktop legújabb verzióját. A Power BI Desktop tölthet
 1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Nyissa meg az **Intune-adattárház** panelt.
-4. Másolja az egyéni URL-címet. Például:`https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
+4. Másolja az egyéni URL-címet. Például: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 5. Nyissa meg a Power BI Desktop alkalmazást.
 6. Válassza az **Adatok betöltése** > **OData-adatcsatorna** lehetőséget.
 7. Illessze be az egyéni URL-címet az **OData-adatcsatorna** ablak URL mezőjébe.

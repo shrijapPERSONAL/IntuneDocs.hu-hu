@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 03/31/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46b2dbf31d5813a646fc2ea1a97f7ba273c3c6e9
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 1538693923a1fcefcfee06022ed4c11d746c3be9
+ms.sourcegitcommit: e63e3debb5f4d9a757f767913e72e39742137b17
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57394348"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58788502"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Mik a feltételes hozzáférés használatának szokásos módjai az Intune-ban?
 
@@ -72,15 +72,15 @@ Ha egy eszköz nem tesz eleget az adott feltételeknek, a rendszer végigvezeti 
 
 Az Intune Exchange Connector lekéri az Exchange-kiszolgálón lévő összes Exchange Active Sync- (EAS-) rekordot, amelyeket az Intune átvesz, és megfeleltet az Intune-eszközrekordoknak. Ezek a rekordok az Intune által regisztrált és felismert eszközöknek felelnek meg. A folyamat engedélyezi vagy tiltja a hozzáférést az e-mailekhez.
 
-Ha az EAS-rekord olyan friss, hogy az Intune még nem ismeri fel, az Intune kiad egy olyan parancsmagot, amely letiltja az e-mailekhez való hozzáférést. Az alábbi ábrán részletesen látható a folyamat:
+Ha az EAS-rekord olyan friss, és az Intune még nem ismeri fel, az Intune kiad egy parancsmag (ejtsd "parancsmagot"), amely letiltja a hozzáférést e-mailekhez. Az alábbi ábrán részletesen látható a folyamat:
 
 ![Folyamatábra: Feltételes hozzáférés helyszíni Exchange esetén](./media/ca-intune-common-ways-1.png)
 
 1.  A felhasználó megkísérel hozzáférni a helyszíni Exchange 2010 SP1-es vagy későbbi verziójában tárolt céges e-mailekhez.
 
-2.  Ha az Intune által nem felügyelt eszközt használ, a rendszer letiltja az eszköz e-mail-hozzáférését. Az Intune letiltási értesítést küld az EAS-ügyfélnek.
+2.  Ha az eszköz az Intune által nem felügyelt, e-mailek elérését blokkolja. Intune-ban a letiltási értesítést küld az EAS-ügyfélhez.
 
-3.  Az EAS megkapja a letiltási értesítést, karanténba helyezi az eszközt, majd karanténüzenetet küld a korrekciós lépésekkel és azon hivatkozásokkal, amelyekkel a felhasználó regisztrálhatja az eszközt.
+3.  Az EAS megkapja a letiltási értesítést, az eszköz karanténba helyezi, majd karanténüzenetet küld a korrekciós lépésekkel és azon hivatkozásokkal, amelyekkel a felhasználók regisztrálhassák eszközeiket.
 
 4.  A munkahelyi csatlakozás létrejöttével megtörténik az első lépés ahhoz, hogy az eszköz az Intune felügyelete alá kerüljön.
 
@@ -92,7 +92,7 @@ Ha az EAS-rekord olyan friss, hogy az Intune még nem ismeri fel, az Intune kiad
 
 8.  Az eszközök Azure AD-beli regisztrációja menti az eszköz állapotadatait.
 
-9.  Ha a felhasználó teljesíti a feltételes hozzáférési szabályzatok feltételeit, az Intune parancsmagot ad ki az Intune Exchange Connectoron keresztül, amely lehetővé teszi a postaláda szinkronizálását.
+9.  Ha a felhasználó megfelel a feltételes hozzáférési szabályzatokat, akkor az Intune kiad egy parancsmag, amely lehetővé teszi a postaláda szinkronizálása az Intune Exchange connector segítségével.
 
 10. Az Exchange-kiszolgáló elküldi az értesítést az EAS-ügyfélhez, hogy a felhasználó hozzáférhessen az e-mailjeihez.
 
@@ -102,10 +102,10 @@ Az Intune kiértékeli és felügyeli az eszköz állapotát.
 
 #### <a name="whats-the-exchange-server-role"></a>Mi az Exchange-kiszolgáló szerepe?
 
-Az Exchange-kiszolgáló biztosítja az API-t és az infrastruktúrát az eszközök karanténba helyezéséhez.
+Exchange-kiszolgáló biztosítja az API-t és az infrastruktúrát az eszközök karanténba helyezni.
 
 > [!IMPORTANT]
-> Ne feledje, hogy az eszközmegfelelőség értékeléséhez az eszköz felhasználójának rendelkeznie kell egy hozzárendelt megfelelőségi profillal. Amennyiben a felhasználóra nem vonatkozik megfelelőségi szabályzat, a rendszer megfelelőként kezeli az eszközt, és egyáltalán nem korlátozza a hozzáférést.
+> Ne feledje, hogy az eszközt használó felhasználónak rendelkeznie kell egy, az eszköz megfelelőségi kiértékelése hozzájuk hozzárendelt megfelelőségi profillal. Amennyiben a felhasználóra nem vonatkozik megfelelőségi szabályzat, a rendszer megfelelőként kezeli az eszközt, és egyáltalán nem korlátozza a hozzáférést.
 
 ### <a name="conditional-access-based-on-network-access-control"></a>Hálózati hozzáférés-vezérlésen alapuló feltételes hozzáférés
 
@@ -137,7 +137,7 @@ Az asztali számítógépeken ken beállítható feltételes hozzáférés a mob
 
 -   **Az Azure AD tartományhoz csatlakoztatott és Intune-felügyelet:** Ebben a forgatókönyvben általában szoftverfejlesztőknek válassza ki a saját eszköz (CYOD), és ahol ezek az eszközök csak ritkán csatlakoznak a vállalati hálózathoz laptophordozásos forgatókönyvekhez. Az eszköz az Azure AD-hoz csatlakozik, és az Intune-ban regisztrálják, ami eltávolít minden, a helyszíni AD-tól és tartományvezérlőktől való függőséget. A céges erőforrások kezelésekor ez lehet a feltételes hozzáférés feltétele.
 
--   **AD tartományhoz csatlakoztatott és a System Center Configuration Managerben:** Kezdődően az aktuális fejlesztési ágban, System Center Configuration Manager feltételes hozzáférési képességeket biztosít, amelyek adott megfelelőségi feltételek egy tartományhoz csatlakoztatott Számítógépről is képes kiértékelni:
+-   **AD tartományhoz csatlakoztatott és a System Center Configuration Managerben:** Kezdődően az aktuális fejlesztési ágban, System Center Configuration Manager feltételes hozzáférési képességeket biztosít, amelyek adott megfelelőségi feltételek mellett egy tartományhoz csatlakoztatott Számítógépről képes kiértékelni:
 
     -   Titkosították-e a számítógépet?
 

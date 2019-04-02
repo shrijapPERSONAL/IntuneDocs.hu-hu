@@ -1,6 +1,6 @@
 ---
 title: macOS beállításai a Microsoft Intune – Azure |} A Microsoft Docs
-titlesuffix: ''
+titleSuffix: ''
 description: Adja hozzá, adja meg, vagy létrehozása beállítások macOS-eszközökre korlátozhatja a funkciókat, beleértve a jelszókövetelmények beállítása, szabályozhatja a zárolási képernyő, használja a beépített alkalmazások, korlátozott vagy jóváhagyott alkalmazások hozzáadása, bluetooth-eszközök kezeléséhez, csatlakoztatása a felhőhöz, a biztonsági mentéshez és a tárolási, teljes képernyős mód engedélyezése, tartományokkal és vezérelheti a felhasználók hogyan használják a Safari böngészővel a Microsoft Intune-ban.
 keywords: ''
 author: MandiOhlinger
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a59c40a5f1095e832f84c4b21d553e3c5f11ed7
-ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
+ms.openlocfilehash: 5feec66e791da4038bd069cdad69a7ba573f27f3
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330419"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798377"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>engedélyezi, vagy korlátozhatja a funkciókat az Intune-nal macOS beállításai
 
@@ -57,7 +57,7 @@ Ezek a beállítások hozzá egy eszközkonfigurációs profilt az Intune-ban, �
     Ez a funkció az alábbiakra vonatkozik:  
     - macOS 10.13.4 és újabb verziók
 
-## <a name="password"></a>Windows 10
+## <a name="password"></a>Jelszó
 
 - **Jelszó**: **Szükséges** a végfelhasználó számára adjon meg egy jelszót az eszköz elérésére. **Nincs konfigurálva** (alapértelmezett) nincs szükség a jelszó, és nem kényszerített korlátozásokat, például az egyszerű jelszavak blokkolása vagy beállítás minimális hosszát.
   - **Kötelező jelszótípus**: Adja meg, hogy a jelszó is csak numerikus lehet, vagy hogy Alfanumerikusnak kell lennie (betűket és számokat tartalmazhat). Ezt a beállítást csak a Mac OS X 10.10.3-as és újabb verziói támogatják.

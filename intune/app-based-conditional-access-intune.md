@@ -1,6 +1,6 @@
 ---
 title: Alkalmazásalapú feltételes hozzáférés az Intune-nal
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Megtudhatja, hogyan működik az Intune alkalmazásalapú feltételes hozzáférése.
 keywords: ''
 author: brenduns
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 00cef3e1eb28ef1fc4a54369182982d958c20e6a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b4c39a1d95a10c96b8f34703f99c4d8414efbbf0
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389163"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798279"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Alkalmazásalapú feltételes hozzáférés az Intune-nal
 

@@ -1,6 +1,6 @@
 ---
 title: Apple MDM Push-tanúsítvány beszerzése az Intune-hoz
-titlesuffix: ''
+titleSuffix: ''
 description: Apple MDM Push-tanúsítvány kezelése az Intune-nal iOS-eszközök beszerzése.
 keywords: ''
 author: ErikjeMS
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 735c92219222703669ca9b96911872608a59aedf
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 51fe7ab05174f614ad4278cd83ede31c6bb9beb2
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57390343"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798613"
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Apple MDM push-tanúsítvány beszerzése
 

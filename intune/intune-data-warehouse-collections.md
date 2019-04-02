@@ -1,6 +1,6 @@
 ---
 title: Intune-adattárházgyűjtemények
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Az Intune adattárház-gyűjteményekkel a Data Warehouse API-val kapcsolatos adatokat lehet megszerezni.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f2a9f2512f4f6fb12a65d0e7c4982fd351f1770
-ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
+ms.openlocfilehash: 982a21214831f14f6f13bf8d484d49769f031fba
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58358317"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799718"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune adattárház-gyűjtemények
 
@@ -47,7 +47,7 @@ Az **AppRevision** entitás listázza az alkalmazások összes verzióját.
 | Méret                       | A bináris mérete bájtokban.                                                          | 120.392.000                          |
 | StartDateInclusiveUTC      | A jelen változat adattárházban történő létrehozásának dátuma és időpontja (UTC).      | 2016. 11. 23. 0:00                      |
 | EndDateExclusiveUTC        | A jelen változat elavulásának dátuma és időpontja (UTC).                        | 2016. 11. 23. 0:00                      |
-| IsCurrent                  | Jelzi, hogy az alkalmazásverzió aktuális-e az adattárházban.         | Igaz/hamis                           |
+| IsCurrent                  | Jelzi, hogy az alkalmazásverzió aktuális-e az adattárházban.         | True/false                           |
 | RowLastModifiedDateTimeUTC | Az alkalmazásverzió legutóbbi módosításának dátuma és időpontja (UTC) az adattárházban. | 2016. 11. 23. 0:00                      |
 
 ## <a name="apptypes"></a>appTypes
@@ -232,7 +232,7 @@ A **device** entitás felsorolja az összes kezelt regisztrált eszközt és azo
 | ComplianceStateKey         | Az eszközhöz társított megfelelőségi állapot kulcsa.                                                                                                                             |
 | OSVersion                  | Az eszközön futó operációs rendszer verziószáma.                                                                                                                                                |
 | EasDeviceId                | Exchange ActiveSync-Azonosítóját az eszköz.                                                                                                                                                  |
-| a sorozatszám               | a sorozatszám                                                                                                                                                                           |
+| Sorozatszám               | Sorozatszám                                                                                                                                                                           |
 | UserId                     | Az eszközhöz társított felhasználó egyedi azonosítója.                                                                                                                           |
 | RowLastModifiedDateTimeUTC | Az eszköz adattárházban történő utolsó módosításának dátuma és időpontja (UTC).                                                                                                       |
 | Gyártó               | Az eszköz gyártója                                                                                                                                                             |
@@ -359,7 +359,7 @@ A **EnrollmentFailureCategory** entitás azt jelzi, hogy miért-eszközök regis
 | Nem alkalmazható                  | A regisztráció sikertelen kategória nem alkalmazható.                                                            |
 | Nem érhető el                   | A regisztráció sikertelen kategória nem érhető el.                                                             |
 | Ismeretlen                         | Ismeretlen hiba.                                                                                                |
-| Authentication                  | A hitelesítés sikertelen volt.                                                                                        |
+| Hitelesítés                  | A hitelesítés sikertelen volt.                                                                                        |
 | Engedélyezés                   | Hívás történt hitelesítése, de nem jogosult a regisztrációra.                                                         |
 | AccountValidation               | Nem sikerült érvényesíteni a fiókot a regisztrációhoz. (Blokkolva, fiók regisztrációs nincs engedélyezve)                      |
 | UserValidation                  | Felhasználó nem érvényesíthető. (Felhasználó nem létezik, licenc hiányzik)                                           |
@@ -521,7 +521,7 @@ A **Szabályzat** entitás eszköz- és alkalmazáskonfigurációs profilokat, v
 | PolicyId                   | A szabályzat egyedi azonosítója az adattárházban.                                                                                                 | b66bc706-ffff-7437-0340-032819502773 |
 | PolicyName                 | A szabályzat neve.                                                                                                                                    | „Windows 10 Baseline”                |
 | PolicyVersion              | A szabályzat verziója. A szabályzat szerkesztésekor vagy módosításakor új verzió jön létre.                                                             | 1, 2, 3                              |
-| IsDeleted                  | Jelzi, hogy frissítve lett-e a szabályzatrekord.  Igaz – a szabályzat új, frissített mezőkkel ellátott rekorddal rendelkezik.  Hamis – a szabályzat legújabb rekordja. | Igaz/hamis                           |
+| IsDeleted                  | Jelzi, hogy frissítve lett-e a szabályzatrekord.  Igaz – a szabályzat új, frissített mezőkkel ellátott rekorddal rendelkezik.  Hamis – a szabályzat legújabb rekordja. | True/false                           |
 | StartDateInclusiveUTC      | A szabályzat adattárházban történt létrehozásának dátuma és időpontja (UTC).                                                                              | 2016. 11. 23. 0:00                      |
 | DeletedDateUTC             | Az IsDeleted paraméter True (Igaz) értékre módosulásának dátuma és időpontja (UTC).                                                                                                   | 2016. 11. 23. 0:00                      |
 | RowLastModifiedDateTimeUTC | A szabályzat adattárházban történt utolsó módosításának dátuma és időpontja (UTC).                                                                        | 2016. 11. 23. 0:00                      |
@@ -599,12 +599,12 @@ A **termsAndConditions** entitás adott feltételek és kikötések (T&C) szabá
 ## <a name="userdeviceassociations"></a>userDeviceAssociations
 A **UserDeviceAssociation** entitás tartalmazza a szervezet felhasználói hozzárendeléseit.
 
-|        Name (Név)        |                                             Leírás                                            |     Példa     |
+|        Név        |                                             Leírás                                            |     Példa     |
 |:------------------:|:--------------------------------------------------------------------------------------------------:|:---------------:|
 | UserKey            | A felhasználó egyedi azonosítója az adattárházban.   (Helyettes kulcs).                            | 123             |
 | DeviceKey          | Az eszköz egyedi azonosítója az adattárházban.                                             | 123             |
 | CreatedDateTimeUTC | A felhasználói eszköztársítás létrehozásának dátuma és időpontja. UTC formátumban.                     | 2016. 11. 23. 0:00 |
-| IsDeleted          | Azt jelzi, hogy a felhasználó megszüntette az eszköz regisztrációját, és a társítás már nem aktuális. | Igaz/hamis      |
+| IsDeleted          | Azt jelzi, hogy a felhasználó megszüntette az eszköz regisztrációját, és a társítás már nem aktuális. | True/false      |
 | EndedDateTimeUTC   | Az IsDeleted paraméter True (Igaz) értékre módosulásának dátuma és időpontja (UTC).                                               | 2017. 06. 23. 00:00  |
 
 ## <a name="users"></a>felhasználók
@@ -620,7 +620,7 @@ A **user** entitásgyűjtemény felhasználói adatokat tartalmaz. A rekordok k�
 | userPrincipalName                        | A felhasználó egyszerű felhasználóneve.                                                                                                                                                                                               | John@constoso.com                    |
 | displayName                | A felhasználó megjelenítendő neve.                                                                                                                                                                                                      | István                                 |
 | IntuneLicensed             | Megadja, hogy a felhasználó rendelkezik-e Intune-licenccel.                                                                                                                                                                              | Igaz/hamis                           |
-| IsDeleted                  | Azt jelzi, hogy a felhasználó összes engedélye lejárt-e, és a felhasználót emiatt eltávolították-e az Intune-ból. Egyetlen rekord esetén ez a jelölő nem változik. Ehelyett új rekord jön létre egy új felhasználói állapothoz. | Igaz/hamis                           |
+| IsDeleted                  | Azt jelzi, hogy a felhasználó összes engedélye lejárt-e, és a felhasználót emiatt eltávolították-e az Intune-ból. Egyetlen rekord esetén ez a jelölő nem változik. Ehelyett új rekord jön létre egy új felhasználói állapothoz. | True/false                           |
 | RowLastModifiedDateTimeUTC | A rekord adattárházban történt utolsó módosításának dátuma és időpontja (UTC)                                                                                                                                                 | 2016. 11. 23. 0:00                      |
 
 ## <a name="usertermsandconditionsacceptances"></a>userTermsAndConditionsAcceptances

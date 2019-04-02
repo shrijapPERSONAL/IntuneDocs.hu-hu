@@ -1,6 +1,6 @@
 ---
 title: Androidos üzletági alkalmazások hozzáadása a Microsoft Intune-hoz
-titlesuffix: ''
+titleSuffix: ''
 description: Ismerje meg egy Android-üzletági (LOB) alkalmazások hozzáadása Microsoft Intune-bA.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b79fda90a891e6601ccad611f55ad5865fdf2df6
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: bec914c801819c631c4a9d5a63f9ece7200a9bc4
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57395654"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799342"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>Androidos üzletági alkalmazások hozzáadása a Microsoft Intune-hoz
 

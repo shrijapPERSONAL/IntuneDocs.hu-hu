@@ -1,6 +1,6 @@
 ---
 title: Felhasználó – Intune-adattárház
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Az Intune-adattárház API-ban található entitásgyűjtemények felhasználó kategóriájára vonatkozó referencia-témakör.
 keywords: Intune-adattárház
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ab0674304f1e74c8bf2ad1aeecd419575484e5f
-ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
+ms.openlocfilehash: 16084e2cd33f6aac9313bb1f8e9fba0467a3ce73
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58358170"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58797857"
 ---
 # <a name="reference-for-user-entity"></a>Felhasználó típusú entitás referenciája
 
@@ -43,7 +43,7 @@ A **Felhasználó** entitásgyűjtemény felhasználói adatokat tartalmaz. A re
 | userPrincipalName | A felhasználó egyszerű felhasználóneve. | John@constoso.com |
 | displayName |A felhasználó megjelenítendő neve. |István |
 | IntuneLicensed |Megadja, hogy a felhasználó rendelkezik-e Intune-licenccel. |Igaz/hamis |
-| IsDeleted | Azt jelzi, hogy a felhasználó összes engedélye lejárt-e, és a felhasználót emiatt eltávolították-e az Intune-ból. Egyetlen rekord esetén ez a jelölő nem változik. Ehelyett új rekord jön létre egy új felhasználói állapothoz. |Igaz/hamis |
+| IsDeleted | Azt jelzi, hogy a felhasználó összes engedélye lejárt-e, és a felhasználót emiatt eltávolították-e az Intune-ból. Egyetlen rekord esetén ez a jelölő nem változik. Ehelyett új rekord jön létre egy új felhasználói állapothoz. |True/false |
 | RowLastModifiedDateTimeUTC |A rekord adattárházban történt utolsó módosításának dátuma és időpontja (UTC)  |2016.11.23. 12:00:00 |
 
 ## <a name="next-steps"></a>További lépések

@@ -1,6 +1,6 @@
 ---
 title: A Vállalati Microsoft Áruházban vásárolt alkalmazások felügyelete
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Útmutató a Vállalati Microsoft Áruházból származó alkalmazások Intune-ba való szinkronizálásához, és ezután azok kiosztásához és nyomon követéséhez.
 keywords: ''
 author: Erikre
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cde2f123c40b9a823270bc89b78c8c01eff75585
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 697d4f0b7bd2b5739847968dccdca2517a5a53fa
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389660"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798434"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>A Vállalati Microsoft Áruházban vásárolt alkalmazások kezelése a Microsoft Intune-nal
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-A [Vállalati Microsoft Áruház](https://www.microsoft.com/business-store) az a hely, ahol alkalmazásokat vásárolhat a szervezete számára egyenként vagy mennyiségi program keretében. Az áruházat a Microsoft Intune-nal összekapcsolva a mennyiségi programban vásárolt alkalmazásokat az Azure Portalról kezelheti. Példa:
+A [Vállalati Microsoft Áruház](https://www.microsoft.com/business-store) az a hely, ahol alkalmazásokat vásárolhat a szervezete számára egyenként vagy mennyiségi program keretében. Az áruházat a Microsoft Intune-nal összekapcsolva a mennyiségi programban vásárolt alkalmazásokat az Azure Portalról kezelheti. Például:
 * Szinkronizálhatja az áruházban vásárolt alkalmazások listáját az Intune-nal.
 * A szinkronizált alkalmazások megjelennek az Intune felügyeleti konzolján; ezen alkalmazásokat a többi alkalmazáshoz hasonlóan oszthatja ki.
 * Az Intune felügyeleti konzolján nyomon követheti a szabad és a használatban lévő licencek számát.

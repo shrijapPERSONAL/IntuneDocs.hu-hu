@@ -1,6 +1,6 @@
 ---
 title: Az Intune-fiók csatlakozhat a felügyelt Google Play-fiókjához.
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Ismerje meg, hogyan csatlakozhat a felügyelt Google Play fiókot az Intune-fiók.
 keywords: ''
 author: ErikjeMS
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b461540de40f7a303c6fc68628ff678302e2f5a9
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 19efd0821deeac0e76c60ee67e6230da554391a0
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57392051"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798430"
 ---
 # <a name="connect-your-intune-account-to-your-managed-google-play-account"></a>Intune-fiókjához csatlakozhat a felügyelt Google Play-fiók
 

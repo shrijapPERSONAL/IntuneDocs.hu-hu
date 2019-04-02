@@ -1,6 +1,6 @@
 ---
 title: Alkalmazáskonfigurációs szabályzatok hozzáadása felügyelt iOS-eszközökhöz
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Ez a témakör azt ismerteti, hogyan lehet alkalmazáskonfigurációs szabályzatokkal konfigurációs adatokat szolgáltatni a futó iOS-alkalmazásoknak.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac095eadbca5702ce3ff73e9e5ce1c77fac71eb3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 9273d547d72fd6cf10d2addc5efff2eba8e18205
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400092"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799462"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Alkalmazáskonfigurációs szabályzatok hozzáadása felügyelt iOS-eszközökhöz
 

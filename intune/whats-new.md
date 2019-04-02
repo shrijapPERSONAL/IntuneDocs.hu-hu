@@ -1,6 +1,6 @@
 ---
 title: Újdonságok a Microsoft Intune-ban – Azure | Microsoft Docs
-titlesuffix: ''
+titleSuffix: ''
 description: Az Azure-beli Intune-portál újdonságai
 keywords: ''
 author: ErikjeMS
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c19973190c367c37e96e66eae8d507b4d94639e9
-ms.sourcegitcommit: e23e78a563928ed2b2cbc588f2aa65678f7bb409
+ms.openlocfilehash: 5fcd355023ceff43cf47c198a84c9c6e2867a08f
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58618474"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799301"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 
@@ -46,6 +46,13 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Ugyanitt tal
 -->     
 
 <!-- ########################## -->
+## <a name="week-of-march-25-2019"></a>2019. március 25 hete
+
+### <a name="monitor-and-troubleshoot"></a>Monitorozás és hibaelhárítás
+
+### <a name="support-for-the-power-bi-compliance-app-from-the-data-warehouse-blade-in-microsoft-intune----4260871---"></a>A Power BI megfelelésével alkalmazást a Microsoft Intune-ban az adattárház panelen támogatása <!-- 4260871 -->
+Korábban a **töltse le a Power BI-fájl** hivatkozásra a **Intune Data Warehouse** panel letöltött egy Intune-adattárház-jelentés (.pbix-fájl). Ez a jelentés a Power BI megfelelésével alkalmazás lett cserélve. A Power BI megfelelésével app speciális betöltésekor vagy a telepítő nem szükséges. Ez közvetlenül a Power BI online portálon nyissa meg, és kifejezetten az Intune-bérlőhöz, a hitelesítő adatok alapján az adatok megjelenítéséhez. Az Intune-ban válassza ki a **beállítása az Intune-adattárház** hivatkozást az Intune panel jobb oldalán. Kattintson a **Power BI alkalmazás első**. További információkért lásd: [kapcsolódás az Adattárházhoz a Power bi-ban a](reports-proc-get-a-link-powerbi.md).
+
 ## <a name="week-of-march-18-2019"></a>2019. március 18 hete
 
 ### <a name="app-management"></a>Alkalmazáskezelés
@@ -88,13 +95,6 @@ A következőkre vonatkozik: Windows 10 és újabb
 Útválasztási Intune az Azure monitor-funkciók jelentkezik, ha a műveleti naplókban is irányíthatja. Ebben a frissítésben a műveleti naplókban is tájékoztatást nyújt a nem megfelelő eszközök. 
 
 Ez a szolgáltatás további információkért lásd: [küldési naplóadatokat, storage, az event hubs vagy az Intune-ban a log analytics](review-logs-using-azure-monitor.md).
-
-#### <a name="create-and-use-device-configuration-profiles-on-android-zebra-devices-in-intune----3895244---"></a>Létrehozhat és használhat eszközkonfigurációs profilok Android Zebra eszközökön az Intune-ban <!-- 3895244 -->
-Ebben a frissítésben az Intune konfigurálása Android Zebra eszközöket támogatja. Pontosabban a következőket teheti: 
-
-- Eszközkonfigurációs profil létrehozása, és a beállítások StageNow által generált mobilitási bővítmények MX-profilok használatával Android Zebra-eszközökre vonatkoznak (**eszközkonfiguráció** > **profilok**  >  **Profil létrehozása** > **Android** tartozó platform).
-
-A következőkre vonatkozik: Android
 
 #### <a name="route-logs-to-azure-monitor-in-more-intune-workloads----3804627---"></a>További Intune számítási feladatok útvonal-naplók az Azure monitornak <!-- 3804627 -->
 Az Intune-ban, naplózási és műveleti naplók átirányítása a storage-események hubok és log analytics az Azure monitorban (**Intune** > **figyelés** > **diagnosztika beállítások**). Ebben a frissítésben ezeket a naplókat a további Intune számítási, beleértve a megfelelőség, a konfigurációk, az ügyfélalkalmazások és további irányíthatja. 
@@ -614,7 +614,7 @@ A következő alkalmazások kezelheti [az Intune alkalmazásvédelmi szabályzat
 - A PowerApps (Android, iOS)
 - A folyamat (Android, iOS)
 
-Használja alkalmazásvédelmi szabályzatok vállalati adat- és adatátviteli ezeket az alkalmazásokat, például a többi Intune-szabályzat által felügyelt alkalmazások védelmére. Megjegyezés: Ha a Flow még nem láthatók a konzolon, hozzáadhat folyamatot, ha hoz létre vagy szerkeszt, és az alkalmazásvédelmi szabályzatok. Ehhez használja a **+ további alkalmazások** lehetőséget, majd adja meg a *Alkalmazásazonosító* a Flow a beviteli mezőben. Android használatra *com.microsoft.flow*, és az iOS használja *com.microsoft.procsimo*.
+Használja alkalmazásvédelmi szabályzatok vállalati adat- és adatátviteli ezeket az alkalmazásokat, például a többi Intune-szabályzat által felügyelt alkalmazások védelmére. Megjegyzés: Ha a Flow még nem láthatók a konzolon, hozzáadhat folyamatot, ha hoz létre vagy szerkeszt, és az alkalmazásvédelmi szabályzatok. Ehhez használja a **+ további alkalmazások** lehetőséget, majd adja meg a *Alkalmazásazonosító* a Flow a beviteli mezőben. Android használatra *com.microsoft.flow*, és az iOS használja *com.microsoft.procsimo*.
 
 
 ### <a name="device-configuration"></a>Eszközök konfigurálása
@@ -874,7 +874,7 @@ A tanúsítványok jelenleg felhasználók részére vannak kiállítva. Ezzel a
 - Az SCEP-profilokban a **Tulajdonos alternatív neve (SAN)** tulajdonság mostantól tábla formátumú, és új változókat is tartalmazhat. A táblában a rendszergazdák megadhatnak attribútumokat, és a hozzájuk tartozó értéket egy egyéni szövegmezőben tölthetik ki. Az SAN a következő attribútumokat támogatja: 
   - DNS
   - E-mail-cím
-  - EGYSZERŰ FELHASZNÁLÓNÉV
+  - UPN
 
   Ezek az új változók statikus szöveggel adhatók meg egy egyéni szövegmezőben. Például a DNS-attribútumok a következő formátumban adhatók meg: `DNS = {{AzureADDeviceId}}.domain.com`.
 

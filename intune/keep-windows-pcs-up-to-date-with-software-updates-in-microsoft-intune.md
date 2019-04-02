@@ -1,6 +1,6 @@
 ---
 title: Szoftverfrissítések windowsos PC-khez
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Az Intune segít naprakészen tartani a felügyelt számítógépeket a legújabb javítások és szoftverfrissítések gyors telepítésének biztosításával.
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 381802de52f63cd4d7c836dbabe25167c0370ee5
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 68f8b814084328fdc5aed954cb71b9ce8dcedc63
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460666"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798951"
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Windows rendszerű számítógépek naprakészen tartása szoftverfrissítésekkel a Microsoft Intune-ban
 
@@ -203,7 +203,7 @@ A **Szűrők** lista használatával könnyebben megtalálhatja a frissítéseke
 
 Amikor kiválaszt egy frissítést a listáról, az alábbi táblázatban szereplő további parancsok is elérhetők, melyekkel kezelheti a frissítéseket:
 
-|Tevékenység|Részletek|
+|Művelet|Részletek|
 |--------|--------------------|
 |**Tulajdonságok megtekintése**|A frissítés részletes adatainak megtekintése, beleértve azon számítógépek darabszámát, melyeken alkalmazható.|
 |**Szerkesztés**|Csak a nem a Microsoft által készített frissítésekhez használható. A frissítések tulajdonságainak szerkesztését teszi lehetővé.|

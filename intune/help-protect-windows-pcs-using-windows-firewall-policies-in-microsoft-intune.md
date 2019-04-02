@@ -1,6 +1,6 @@
 ---
 title: Tűzfalszabályok Windows rendszerű számítógépekhez
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Az Intune-nal számos módon teheti biztonságossá az Intune ügyfélprogrammal kezelt számítógépeket, beleértve a Windows tűzfal beállításainak konfigurálását is.
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee84ca92d247a162653b398fd1332161fb887599
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b5edcfedcd03492d8634549147b70be14ffb742e
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461080"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798875"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>A Windows rendszerű számítógépek védelme Windows tűzfalházirendek használatával a Microsoft Intune-ban
 
@@ -98,7 +98,7 @@ Az egyes beállítások alapértelmezett értéke az **Igen** érték.
 
 Konfigurálhatja azokat a kivételeket, amelyek bizonyos típusú hálózati forgalmat engedélyeznek a tűzfalon keresztül, függetlenül a korábban megadott értékektől. Alapértelmezés szerint a beállítások egyike sincs konfigurálva.
 
-|Beállítás neve|Részletek|
+|A beállítás neve|Részletek|
 |------------------|--------------------|
 |**BranchCache – Tartalombeolvasás**<br>(Windows 7 vagy újabb)|Lehetővé teszi a BranchCache-ügyfelek számára, hogy a HTTP protokollal olvassanak be tartalmakat más BranchCache-ügyfelektől elosztott módban, a központi gyorsítótárból pedig központi gyorsítótár módban. A beállítás HTTP protokollt használ.|
 |**BranchCache – Központi gyorsítótár ügyfele**<br>(Windows 7 vagy újabb)|Lehetővé teszi a BranchCache-ügyfelek számára a központi gyorsítótárak használatát. A beállítás HTTPS protokollt használ.|

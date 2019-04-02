@@ -1,6 +1,6 @@
 ---
 title: A Microsoft Intune újdonságai a korábbi hónapokból – Azure | Microsoft Docs
-titlesuffix: ''
+titleSuffix: ''
 description: Az Intune újdonságai oldalán korábban megjelenő információkat olvashatja
 keywords: ''
 author: ErikjeMS
@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ceefcfbcdf48cf8d450f5a74274bc1beea951cc5
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 334057c093ef3bef75894821749fe75f26c51bd8
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461549"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799802"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>A Microsoft Intune újdonságai – korábbi hónapok
 
@@ -556,7 +556,7 @@ A következőkre vonatkozik: Android munkahelyi profilos eszközök Android oper
 
 Ezzel a frissítéssel a [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard) (**Eszközkonfiguráció** > **Profilok** > **Endpoint protection**) az alábbi beállításokkal bővült: 
 
-- **Windows Defender Credential Guard**: Kapcsolja be a Credential Guard a virtualizálás-alapú biztonság. Ennek a funkciónak a bekapcsolása segít megvédeni a hitelesítő adatokat a következő újraindításkor, ha a **Platformbiztonsági szint a Biztonságos rendszerindítással** és a **Virtualizálás-alapú biztonság** egyaránt be van kapcsolva. A lehetőségek a következők:
+- **Windows Defender Credential Guard**: Kapcsolja be a Credential Guard a virtualizálás-alapú biztonság. Ennek a funkciónak a bekapcsolása segít megvédeni a hitelesítő adatokat a következő újraindításkor, ha a **Platformbiztonsági szint a Biztonságos rendszerindítással** és a **Virtualizálás-alapú biztonság** egyaránt be van kapcsolva. A választható lehetőségek:
   - **Letiltott**: Ha a Credential Guard korábban bekapcsolta az a **engedélyezve zárolás nélkül**"lehetőséget, majd azt kikapcsolja a Credential Guard távolról.
 
   - **Engedélyezve UEFI-zárolással**: Biztosítja, hogy a Credential Guard nem lehet letiltani, egy beállításkulcs megadásával vagy a csoportházirend használatával. Ha ennek a beállításnak a használata után le szeretné tiltani a Credential Guardot, akkor a Csoportházirendet „Letiltva” állapotra kell állítania. Ezt követően távolítsa el a biztonsági funkciót mindegyik számítógépen egy fizikailag jelen lévő felhasználóval. Ezekkel a lépésekkel törölhető az UEFI-ban megőrzött konfiguráció. Amíg megvannak a UEFI-konfigurációk, a Credential Guard engedélyezve marad.

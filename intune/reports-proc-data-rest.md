@@ -1,6 +1,6 @@
 ---
 title: Adatok beolvasása az adattárház API-ból REST-ügyféllel
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Ez a témakör ismerteti, hogyan lehet adatokat lekérni a Microsoft Intune-adattárház egy RESTful API-val.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e57d197cadf2ba6586aa39fdc5dbb9cddba554c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: cf33c512cf433475e2b37028b50e6c758a4ba760
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566573"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799064"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Adatok beolvasása az Intune-adattárház API-ból REST-ügyféllel
 

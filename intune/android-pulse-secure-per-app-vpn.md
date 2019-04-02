@@ -1,6 +1,6 @@
 ---
 title: Egyéni alkalmazásonkénti Androidos VPN-profil
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Megtudhatja, hogyan hozhat létre alkalmazásonkénti VPN-profilt a Microsoft Intune-nal felügyelt Android-eszközökhöz.
 keywords: ''
 author: MandiOhlinger
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 65e6932fa1703f88adbff7f60a803ae5be819681
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 38763d5c16d5cba36220c03e9d74b30a465d752b
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57395436"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799516"
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Alkalmazásonkénti VPN-profil létrehozása androidos eszközökhöz egyéni Microsoft Intune-profillal
 

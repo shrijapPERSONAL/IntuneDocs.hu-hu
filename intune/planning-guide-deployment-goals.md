@@ -1,6 +1,6 @@
 ---
 title: Telepítési célok, célkitűzések és kihívások meghatározása
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Ez a cikk segítséget nyújt a Microsoft Intune csak felhőalapú megvalósításához kapcsolódó telepítési célok, célkitűzések és kihívások meghatározásában.
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9d7f04c9d625e6c263f4feb0eca7c8b6cadaf47
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: cd1fd6198e71dd585d0216c0850c0140f5e71344
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57393298"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798766"
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>Üzembe helyezési célok, célkitűzések és kihívások meghatározása
 

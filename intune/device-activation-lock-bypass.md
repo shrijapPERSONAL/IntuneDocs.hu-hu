@@ -1,6 +1,6 @@
 ---
 title: iOS aktiválási zárának megkerülése az Intune-nal
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Az Intune használata az iOS aktiválási zárjának megkerülésére a zárolt eszközök eléréséhez.
 keywords: ''
 author: ErikjeMS
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cb8967c82758bbf5749a2335f706d1e32e51010e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 406a08788663603340ab4af78217a07e68e66604
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397814"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799557"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Aktiválási zár megkerülése felügyelt iOS-eszközökön az Intune-nal
 
@@ -37,7 +37,7 @@ A Microsoft Intune szolgáltatással kezelhető az iOS aktiválási zára, amely
 
 ## <a name="how-activation-lock-affects-you"></a>Az aktiválási zár hatásai
 
-Az aktiválási zár segít az iOS-eszközök védelmének biztosításában, és növeli a megtalálásuk esélyét azok elvesztésekor vagy ellopásakor, ugyanakkor ez a funkció számos kihívást is jelenthet Ön, mint rendszergazda számára. Példa:
+Az aktiválási zár segít az iOS-eszközök védelmének biztosításában, és növeli a megtalálásuk esélyét azok elvesztésekor vagy ellopásakor, ugyanakkor ez a funkció számos kihívást is jelenthet Ön, mint rendszergazda számára. Például:
 
 - Egy felhasználó beállítja az aktiválási zárat egy eszközön. A felhasználó később elhagyja a céget és visszaszolgáltatja az eszközt. A felhasználó Apple ID azonosítója és jelszava nélkül semmilyen módon nem lehet újraaktiválni az eszközt.
 - Szüksége van egy jelentésre az összes eszközről, amelyen engedélyezve van az aktiválási zár.

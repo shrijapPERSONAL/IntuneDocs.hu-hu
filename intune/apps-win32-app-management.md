@@ -1,6 +1,6 @@
 ---
 title: Win32-alkalmazások hozzáadása a Microsoft Intune-hoz
-titlesuffix: ''
+titleSuffix: ''
 description: Ismerje meg, hogyan adhat hozzá, továbbítására és Win32-alkalmazások Microsoft Intune-nal kezelheti. E témakör áttekintést nyújt a Win32-alkalmazások telepítési és kezelési lehetőségeiről az Intune-ban, valamint a Win32-alkalmazásokkal kapcsolatos hibák elhárításával kapcsolatban.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 51a2f862a53476a825bfb1a61a6f115c883eba18
-ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
+ms.openlocfilehash: d93ad2e838f4980c206c098d8e36e51e138969d1
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58429723"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799048"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Önálló Intune - Win32-Alkalmazáskezelés
 
@@ -63,7 +63,7 @@ Letöltheti a [Microsoft Win32 tartalom előkészítő eszközt](https://go.micr
 |    `IntuneWinAppUtil -h`    |    Ez a parancs megjeleníti az eszköz használatára vonatkozó információkat.    |
 |    `IntuneWinAppUtil -c <setup_folder> -s <source_setup_file> -o <output_folder> <-q>`    |    Ez a parancs létrehozza az `.intunewin` fájlt a megadott forrásmappa és telepítőfájl alapján. Az MSI-telepítőfájlhoz az eszköz lekéri az Intune-hoz szükséges adatokat. Ha a `-q` van megadva, a parancs csendes módban fog futni, és ha a kimeneti fájl már létezik, felül fogja írni. Ha a kimeneti mappa még nem létezik, akkor automatikusan létrejön.    |
 
-Létrehozásakor egy *.intunewin* fájlt minden olyan fájlok, a telepítés mappa almappa hivatkoznia kell. Ezután használja a relatív elérési út egy konkrét fájlt kell hivatkoznia. Példa:
+Létrehozásakor egy *.intunewin* fájlt minden olyan fájlok, a telepítés mappa almappa hivatkoznia kell. Ezután használja a relatív elérési út egy konkrét fájlt kell hivatkoznia. Például:
 
 **Telepítő forrásmappája:** *c:\testapp\v1.0*<br>
 **Licencfájl:** *c:\testapp\v1.0\licenses\license.txt*
@@ -119,13 +119,13 @@ Az üzletági (LOB) alkalmazásokhoz hasonlóan Win32-alkalmazást is hozzáadha
 
     Például, ha az alkalmazás Fájlnév **MyApp123**, adja hozzá a következő:<br>
     `msiexec /p “MyApp123.msp”`<p>
-    És, ha az alkalmazás `ApplicationName.exe`, a következő paranccsal lehetséges az alkalmazás nevét, a parancs argruments (kapcsolók) a csomag által támogatott követ. <br>Példa:<br>
+    És, ha az alkalmazás `ApplicationName.exe`, a következő paranccsal lehetséges az alkalmazás nevét, a parancs argruments (kapcsolók) a csomag által támogatott követ. <br>Például:<br>
     `ApplicationName.exe /quite`<br>
     A fenti parancsban a `ApplicaitonName.exe` csomag támogatja a `/quite` parancs argrument.<p> Az alkalmazáscsomag által támogatott konkrét agruments Forduljon az alkalmazás szállítójához.
 
 3.  Adja meg az alkalmazás eltávolításához szükséges teljes eltávolítási parancssort az alkalmazás GUID-értékei alapján. 
 
-    Például:`msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
+    Például: `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
 
     > [!NOTE]
     > Az adott Win32-alkalmazás telepítését a **Felhasználó** vagy a **Rendszer** környezetben konfigurálhatja. A **Felhasználó** környezet csak az adott felhasználóra vonatkozik. A **Rendszer** környezet az adott, Windows 10-es rendszerű eszköz összes felhasználójára vonatkozik.

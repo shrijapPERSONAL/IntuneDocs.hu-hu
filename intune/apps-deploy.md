@@ -1,6 +1,6 @@
 ---
 title: Alkalmazások hozzárendelése csoportokhoz a Microsoft Intune-ban
-titlesuffix: ''
+titleSuffix: ''
 description: Útmutató az Intune alkalmazás hozzárendelése csoportokhoz a felhasználók vagy eszközök Microsoft Intune-nal.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13c93f2339d47b177ac997c692227a039519bc76
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 1db613f93e50caa377297e3873f6817a39714fe7
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57391945"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799565"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Alkalmazások hozzárendelése csoportokhoz a Microsoft Intune-nal
 
@@ -90,8 +90,8 @@ Néha előfordul, hogy ugyanazt az alkalmazást eltérő szándékkal rendelik h
 | 1. csoport hozzárendelési szándéka | 2. csoport hozzárendelési szándéka | Eredmény |
 |-----------------------------------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |A felhasználó kötelező|A felhasználó elérhető|Kötelező és elérhető|
-|A felhasználó kötelező|A felhasználható nem érhető el|Kötelező|
-|A felhasználó kötelező|Felhasználó eltávolítása|Kötelező|
+|A felhasználó kötelező|A felhasználható nem érhető el|Szükséges|
+|A felhasználó kötelező|Felhasználó eltávolítása|Szükséges|
 |A felhasználó elérhető|A felhasználható nem érhető el|Nem érhető el|
 |A felhasználó elérhető|Felhasználó eltávolítása|Eltávolítás|
 |A felhasználható nem érhető el|Felhasználó eltávolítása|Eltávolítás
@@ -103,7 +103,7 @@ Néha előfordul, hogy ugyanazt az alkalmazást eltérő szándékkal rendelik h
 |A felhasználható nem érhető el|Eszköz eltávolítása|Eltávolítás|
 |Felhasználó eltávolítása|Az eszköz kötelező|Mind a két szándék létezik, az Intune a Kötelezőt oldja fel|
 |Felhasználó eltávolítása|Eszköz eltávolítása|Mind a két szándék létezik, az Intune az Eltávolítást oldja fel|
-|Az eszköz kötelező|Eszköz eltávolítása|Kötelező|
+|Az eszköz kötelező|Eszköz eltávolítása|Szükséges|
 |A felhasználó kötelező és elérhető|A felhasználó elérhető|Kötelező és elérhető|
 |A felhasználó kötelező és elérhető|Felhasználó eltávolítása|Kötelező és elérhető|
 |A felhasználó kötelező és elérhető|A felhasználható nem érhető el|Kötelező és elérhető|
@@ -112,9 +112,9 @@ Néha előfordul, hogy ugyanazt az alkalmazást eltérő szándékkal rendelik h
 |A felhasználó kötelező és elérhető|Eszköz eltávolítása|Mind a két szándék létezik, az Intune a Kötelezőt oldja fel (kötelező és elérhető)
 |A felhasználható nem érhető el|Az eszköz nem érhető el|Nem érhető el|
 |A felhasználó elérhető|Az eszköz nem érhető el|Elérhető|
-|A felhasználó kötelező|Az eszköz nem érhető el|Kötelező|
+|A felhasználó kötelező|Az eszköz nem érhető el|Szükséges|
 |A felhasználó regisztráció nélkül elérhető|A felhasználó kötelező és elérhető|Kötelező és elérhető
-|A felhasználó regisztráció nélkül elérhető|A felhasználó kötelező|Kötelező
+|A felhasználó regisztráció nélkül elérhető|A felhasználó kötelező|Szükséges
 |A felhasználó regisztráció nélkül elérhető|A felhasználható nem érhető el|Nem érhető el
 |A felhasználó regisztráció nélkül elérhető|A felhasználó elérhető|Elérhető|
 |A felhasználó regisztráció nélkül elérhető|Az eszköz kötelező|Kötelező és Regisztráció nélkül elérhető|

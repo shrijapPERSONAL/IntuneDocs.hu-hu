@@ -1,6 +1,6 @@
 ---
 title: Mennyiségi programban vásárolt iOS-es e-könyvek kezelése
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Az iOS-áruházból mennyiségi programban vásárolt könyvek szinkronizálása az Intune-nal, majd használatuk felügyelete és nyomon követése.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc0a42697372e257bfefd07abb0b01b704cf5cc9
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: e1cbceafbe407c32f00175ecea7016be12c04213
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57393617"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798479"
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Mennyiségi vásárlási program keretében vásárolt iOS-es e-könyvek kezelése a Microsoft Intune-nal
 

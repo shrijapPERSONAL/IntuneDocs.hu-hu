@@ -1,6 +1,6 @@
 ---
 title: Mobilalkalmazás-kezelési hibaelhárítás
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Ebben a témakörben a feltételes hozzáférést alkalmazó környezetekre vonatkozó hibaelhárítási információkat olvashat.
 keywords: ''
 author: Erikre
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4db9845befe7440e615e8deb874971a5b80efdb
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: dc7b7f56060ff90cc7b9df6cb8700c163d78e8f5
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461175"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798627"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Mobilalkalmazás-kezelési hibaelhárítás
 
@@ -34,7 +34,7 @@ Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kér
 
 Ezek a gyakori problémák az Intune alkalmazásvédelmi szabályzatai segítségével a rendszergazdák tapasztalhatnak.
 
-| Probléma | Leírás | Megoldás: |
+| Probléma | Leírás | Felbontás |
 | -- | -- | -- |
 | A Skype Vállalati verzióra nem vonatkozó szabályzat | Az Azure Portalon beállított, eszközregisztráció nélküli alkalmazásvédelmi szabályzat nem lép életbe az iOS- és Android-eszközökön futó Skype Vállalati verzió alkalmazásra vonatkozóan. | A Skype Vállalati verziót a modern hitelesítésre kell beállítani.  Kövesse a [Bérlő engedélyezése modern hitelesítéshez](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) című részben található utasításokat a modern hitelesítés beállításához Skype-hoz. |
 | Nem alkalmazott Office-alkalmazás-szabályzat | Az alkalmazásvédelmi szabályzatok egyetlen felhasználónál sem lépnek életbe a [támogatott Office-alkalmazásokra](https://www.microsoft.com/cloud-platform/microsoft-intune-partners) vonatkozóan. | Ellenőrizze, hogy a felhasználók rendelkeznek-e Intune-licenccel, illetve, hogy a használt alkalmazásvédelmi szabályzat megcélozza-e az Office-alkalmazásokat. Az újonnan beállított alkalmazásvédelmi szabályzatok életbe lépéséhez esetenként 8 órának is el kell telnie. |

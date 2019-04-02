@@ -1,6 +1,6 @@
 ---
 title: Samsung Knox mobileszköz beléptetési használata Android-eszközök automatikus regisztrálása
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Útmutató az Android-eszközök a Samsung KME-vel történő regisztrálásához
 keywords: ''
 author: ErikjeMS
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3056c2deac82ebdd96c080884600b54983cc26d3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 3f753b959d7b2c64358abd92f4276a8e7f55c0f6
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57392242"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798904"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Eszközök automatikus regisztrációja a Samsung Knox Mobile Enrollmenttel
 

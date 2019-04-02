@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 04/01/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28f8a589f20cb63ad4f9873942e9ad511d729b37
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 535f66c68b066454ce9706b1dd1d7a4fce5c265c
+ms.sourcegitcommit: e63e3debb5f4d9a757f767913e72e39742137b17
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566454"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58788487"
 ---
 # <a name="windows-10-and-later-settings-to-manage-shared-devices-using-intune"></a>Megosztott eszközök Intune-nal kezelheti a Windows 10-es és újabb beállításai
 
@@ -60,6 +60,9 @@ Ez a funkció az Intune-ban a további információkért lásd: [szabályozhatja
 - **Oktatási házirendek**: Válasszon **engedélyezve** az ajánlott beállítások használatát az eszközöket használ a szigorúbb iskolák részére. Válasszon **letiltott** , az alapértelmezett és ajánlott oktatási házirendek nincsenek használva. **Nincs konfigurálva** (alapértelmezett) elhagyja ezt a beállítást, az Intune által nem felügyelt, és nem leküldéses minden házirendben ezt a beállítást, az eszközön.
 
   Az oktatási házirendek mire a további információkért lásd: [az oktatásban tevékenykedő felhasználók Windows 10-es konfigurációs javaslatokat](https://docs.microsoft.com/education/windows/configure-windows-for-education).
+
+> [!TIP]
+> [Állítsa be egy megosztott vagy Vendég PC](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc) (megnyílik egy másik docs-webhely) egy nagyszerű forrás a Windows 10 szolgáltatást, beleértve a fogalmakat és a csoportházirendeket, a közös módba állítható.
 
 ## <a name="next-steps"></a>További lépések
 

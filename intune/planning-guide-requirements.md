@@ -1,6 +1,6 @@
 ---
 title: Használatieset-forgatókönyvek követelményeinek meghatározása
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Ez a cikk segít az Intune használatieset- valamint alhasználatieset-követelményeinek meghatározásában a Microsoft Intune csak felhőalapú megvalósítása esetében.
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8cecd08b3ecba25471f717764c6de847416617b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6cb081e16767abde4707e7a6c8719b773474fb95
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389058"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799581"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>Használatieset-forgatókönyvek követelményeinek meghatározása
 

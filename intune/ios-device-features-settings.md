@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/13/2019
+ms.date: 04/01/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34f0869b46323606d69891c3761bfbc154f3b6a3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: c2a94be7ebc369005f92809d57c8e55076972df3
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566624"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799265"
 ---
 # <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>általános iOS-szolgáltatások használata az Intune-ban iOS-eszközbeállítások
 
@@ -96,6 +96,9 @@ Használja a **Dock** beállítások legfeljebb 6 elemet vagy mappát ad hozzá 
 
       3. Válassza a **Hozzáadás** lehetőséget. Akár is hozzáadhat **20** dock oldalak az eszközhöz.
       4. Válassza ki **OK** a módosítások mentéséhez.
+
+> [!NOTE]
+> Ikonok Dock beállításokkal hozzáadásakor az ikonok a kezdőlap képernyő és a lapok zárolva van, és nem lehet áthelyezni. Az iOS és az Apple MDM-szabályzatok elvárt lehet.
 
 #### <a name="example"></a>Példa
 

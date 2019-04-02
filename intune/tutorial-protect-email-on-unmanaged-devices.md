@@ -1,6 +1,6 @@
 ---
 title: Oktatóanyag – nem felügyelt eszközökön az Exchange Online e-mailek védelme
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Ismerje meg, az Intune alkalmazásvédelmi szabályzataival és az Azure AD feltételes hozzáférés az Office 365 Exchange Online védelmét.
 keywords: ''
 author: brenduns
@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17638838e049e5940b1b59019be6573b7eb09d64
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: e6224a0dae7c0aa3d80d4e64331a668953220f65
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490659"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798784"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Oktatóanyag: Nem felügyelt eszközökön az Exchange Online e-mailek védelme
 

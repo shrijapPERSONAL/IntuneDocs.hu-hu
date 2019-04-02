@@ -1,6 +1,6 @@
 ---
 title: A Microsoft Intune hálózati követelményei és sávszélességi adatai
-titlesuffix: ''
+titleSuffix: ''
 description: Az Intune hálózati konfigurációja követelményeinek és a sávszélességi adatainak áttekintése.
 keywords: ''
 author: ErikjeMS
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e59726bfbc2a86e5d901d06292c4e4d8ac0a983
-ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.openlocfilehash: 8ba14879cb22d2c8bab1beecb63fe9be8497d91e
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58514483"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798770"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Intune – a hálózati konfiguráció követelményei és sávszélessége
 
@@ -81,7 +81,7 @@ Az Intune-ügyfeleken a BranchCache szolgáltatással is csökkenthető a nagyki
 
 - Windows 7
 - Windows 8.0
-- Windows 8.1
+- Windows 8.1
 - Windows 10
 
 A BranchCache használatához az ügyfélszámítógépen engedélyezni kell a BranchCache-t, majd az **elosztott gyorsítótáras módot** kell beállítani rajta.

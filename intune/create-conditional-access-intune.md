@@ -1,6 +1,6 @@
 ---
 title: Eszközalapú feltételes hozzáférés az Intune beállítása
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Útmutató a Microsoft Intune eszközmegfelelőségi és mobilalkalmazás-kezelési alapján eszközalapú feltételes hozzáférési szabályzat létrehozásához.
 keywords: ''
 author: brenduns
@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b94204d5d1b141218081d01a6daab0ec84d1693
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: aaf9b82bc810dd3a616eb25f39f4b5830b1c3e6f
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57392578"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798837"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Eszközalapú feltételes hozzáférési szabályzat létrehozása
 

@@ -1,6 +1,6 @@
 ---
 title: Intune – bevezetés a tervezésbe
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Ez a cikk az összes Microsoft Intune-tervezési és -implementálási szakasz közös bevezetője. A célok, használati esetek és követelmények meghatározását, bevezetési és kommunikációs tervek, támogatási, tesztelési és érvényesítési tervek létrehozását segítő eszközök.
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e59706c1a6bbf3195f402bf9582baab13d3905d9
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5b8a4a76e59604038ae133701b3378c573e862aa
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57398919"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799573"
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Útmutató az Intune üzembe helyezésének megtervezéséhez és implementálásához
 
