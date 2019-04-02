@@ -1,6 +1,6 @@
 ---
 title: Rövid útmutató – Ügyfélalkalmazás hozzáadása és hozzárendelése
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Ebben a rövid útmutatóban egy ügyfélalkalmazást ad és rendel hozzá a Microsoft Intune használatával.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ff9a504aba599ef6db756a130b11d48c798f08fb
-ms.sourcegitcommit: 9af102e1232d9a568a7901783c30ba9905e64d99
+ms.openlocfilehash: f4a1c81b1b2f54b15397e9e1d7451ee7ed911848
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58477145"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798743"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>Gyors útmutató: Egy ügyfél alkalmazások felvételét és hozzárendelését
 
