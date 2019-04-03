@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ef628623c7f14a703025e80a2ade4283d36c007
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: ba835eb76dae19a13985a6175b4eceee0bae7f12
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799526"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871433"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Gyors útmutató: Értesítések küldése a nem megfelelő eszközökre
 
@@ -40,7 +40,7 @@ Ha nem rendelkezik Intune-előfizetéssel, [regisztráljon egy ingyenes próbafi
 
 ## <a name="sign-in-to-intune"></a>Bejelentkezés az Intune-ba
 
-Jelentkezzen be az [Intune](https://aka.ms/intuneportal) portáljára [globális rendszergazdaként](users-add.md#types-of-administrators) vagy [Intune-szolgáltatásadminisztrátorként](users-add.md#types-of-administrators). 
+Jelentkezzen be az [Intune](https://aka.ms/intuneportal) portáljára [globális rendszergazdaként](users-add.md#types-of-administrators) vagy [Intune-szolgáltatásadminisztrátorként](users-add.md#types-of-administrators). Ha létrehozott egy Intune próba-előfizetést, az a fiók lesz a globális rendszergazda, amelyikkel azt létrehozta.
 
 ## <a name="create-a-notification-message-template"></a>Értesítési üzenetsablon létrehozása
 
@@ -51,7 +51,7 @@ Ha e-mailt szeretne küldeni a felhasználóknak, hozzon létre egy értesítés
 
    - **Név**: *Contoso-rendszergazda*
    - **Tulajdonos**: *Eszközmegfelelőség*
-   - **Üzenet**: *Az eszköz jelenleg nem teljesíti a szervezet megfelelőségi követelményeinek.*
+   - **Üzenet**: *Az eszköz jelenleg nem teljesíti a szervezeti megfelelőségi követelményeknek.*
    - **E-mail fejléce – céges embléma megjelenítése**: Állítsa be **engedélyezve** , a cég emblémájának megjelenítése.
    - **E-mail lábléce – a cég emblémájának**: Állítsa be **engedélyezve** a szervezet nevének megjelenítéséhez.
    - **E-mail lábléce – kapcsolatfelvételi adatok**: Állítsa be **engedélyezve** a szervezet kapcsolattartási adatok megjelenítéséhez.
@@ -83,14 +83,13 @@ A következő lépésekkel létrehozhat egy megfelelőségi szabályzatot Window
 5. A **Jelszó szükséges a mobileszközök feloldásához** elemnél válassza a **Kötelező** lehetőséget. Ez a beállítás határozza meg, hogy a felhasználók csak jelszó beírása után férhessenek-e hozzá a mobileszközeiken lévő információkhoz. 
 6. A **jelszó minimális hosszát** állítsa **6** értékre. Ezzel a beállítással adható meg, hogy legalább hány számjegyből vagy karakterből kell állnia a jelszónak.
 
-    ![Rendszerbiztonsági beállítások új eszközmegfelelőségi szabályzathoz](./media/quickstart-send-notification-02.png) 
+    <img alt="System Security settings for a new compliance policy" src="./media/quickstart-send-notification-02.png" width="600">
 
 7. Kattintson az **OK**, **OK**, majd a **Létrehozás** gombra az eszközmegfelelőségi szabályzat létrehozásához.
-8. Válassza ki az új szabályzat nevét: **Windows 10-es megfelelőségi**.
-9. Válassza a **Tulajdonságok** > **Meg nem felelés esetén végrehajtandó műveletek** > **Hozzáadás**. lehetőséget.
-10. A **Művelet** legördülő menüben ellenőrizze, hogy az **E-mail küldése a végfelhasználóknak** lehetőség van kiválasztva.
-11. Válassza az **Üzenetsablon** > **Contoso rendszergazda** > **Kiválasztás** lehetőséget a korábban létrehozott üzenetsablon kiválasztásához.
-12. A módosítások mentéséhez válassza az **OK** > **OK** > **Mentés** lehetőséget.
+8. Válassza a **Tulajdonságok** > **Meg nem felelés esetén végrehajtandó műveletek** > **Hozzáadás**. lehetőséget.
+9. A **Művelet** legördülő menüben ellenőrizze, hogy az **E-mail küldése a végfelhasználóknak** lehetőség van kiválasztva.
+10. Válassza az **Üzenetsablon** > **Contoso rendszergazda** > **Kiválasztás** lehetőséget a korábban létrehozott üzenetsablon kiválasztásához.
+11. Válassza ki **hozzáadása** > **OK** > **mentése** a módosítások mentéséhez.
 
 ## <a name="assign-the-policy"></a>A szabályzat hozzárendelése
 

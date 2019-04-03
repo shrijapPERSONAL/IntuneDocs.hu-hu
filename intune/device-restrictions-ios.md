@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5106a4f147828310fc1b4a41ef4065d10bdaeecf
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: 0d0623e9d12132ac470813d65510bc2c76379109
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490726"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871471"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>iOS-es beállítások engedélyezéséhez, vagy korlátozhatja a funkciókat az Intune-nal
 
@@ -195,7 +195,7 @@ Ezek a beállítások hozzá egy eszközkonfigurációs profilt az Intune-ban, �
 
 #### <a name="safari"></a>Safari
 
-- **A Safari**: **Blokk** a Safari böngésző használata az eszközön. **Nincs konfigurálva** lehetővé teszi a felhasználóknak a Safari böngésző használata.
+- **Safari (csak felügyelt)**: **Blokk** a Safari böngésző használata az eszközön. **Nincs konfigurálva** lehetővé teszi a felhasználóknak a Safari böngésző használata.
 - **Automatikus kitöltés**: **Blokk** letiltja az automatikus kitöltés funkciót az eszközön a Safariban. **Nincs konfigurálva** lehetővé teszi, hogy a felhasználók számára a böngésző automatikus kiegészítési funkciója beállításainak módosítását.
 - **A cookie-k**: Válassza ki, hogyan kezelje a cookie-k az eszközön. A választható lehetőségek:
   - Engedélyezés
@@ -290,7 +290,7 @@ Alkalmazások hozzáadása az ezek a listák, a következőket teheti:
 ## <a name="cloud-and-storage"></a>Felhő és tárolás
 
 - **Icloudba történő biztonsági mentés**: **Nincs konfigurálva** lehetővé teszi a felhasználó biztonsági mentése az eszközre az icloud szolgáltatásba. **Blokk** megakadályozza a felhasználó biztonsági mentése az eszközre az icloud szolgáltatásba.
-- **Icloud-alapú dokumentum-szinkronizálás letiltása**: **Nincs konfigurálva** lehetővé teszi, hogy a dokumentumok és kulcsértékek szinkronizálását az iCloud tárhelyére. **Blokk** megakadályozza, hogy a iCloud dokumentumok és adatok szinkronizálását.
+- **Icloud-alapú dokumentum-szinkronizálás (csak felügyelt) letiltása**: **Nincs konfigurálva** lehetővé teszi, hogy a dokumentumok és kulcsértékek szinkronizálását az iCloud tárhelyére. **Blokk** megakadályozza, hogy a iCloud dokumentumok és adatok szinkronizálását.
 - **Fényképadatfolyamok Icloudba történő szinkronizálása**: **Nincs konfigurálva** lehetővé teszi, hogy a felhasználók engedélyezhetik **saját fénykép Stream** az Iclouddal való szinkronizálását, és rendelkezik a fényképek elérhető a felhasználói eszközökön az eszközön. **Blokk** megakadályozza, hogy a fényképadatfolyamok Icloudba történő szinkronizálása.
 - **Biztonsági másolatok titkosításának**: **Szükséges** , eszköz biztonsági titkosítva kell lennie.
 - **iCloud-Fotókönyvtár**: Állítsa be **blokk** fényképek és videók tárolása a felhőben használatával iCloud-fotókönyvtár letiltása. Fényképek az eszközre az iCloud-Fotókönyvtár nincs teljes egészében letöltve az eszközről törlődnek. **Nincs konfigurálva** lehetővé teszi, hogy az iCloud-fotókönyvtár használatával.

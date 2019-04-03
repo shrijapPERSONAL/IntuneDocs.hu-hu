@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/27/2019
+ms.date: 04/03/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5fcd355023ceff43cf47c198a84c9c6e2867a08f
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 68d65c43d15034c8ef1a69d4912a3140aca953e6
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799301"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871482"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 
@@ -46,6 +46,12 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Ugyanitt tal
 -->     
 
 <!-- ########################## -->
+## <a name="week-of-march-25-2019"></a>2019. március 25 hete  
+
+### <a name="week-of-april-1-2019"></a>2019. április 1 hét
+Mindkét kiadás frissítéseket a [Intune tanúsítvány-összekötő és a PFX-Tanúsítványösszekötő](certficates-pfx-configure.md#whats-new-for-connectors). Az új kiadásokkal számos ismert problémák megoldása.  
+
+
 ## <a name="week-of-march-25-2019"></a>2019. március 25 hete
 
 ### <a name="monitor-and-troubleshoot"></a>Monitorozás és hibaelhárítás
@@ -614,7 +620,7 @@ A következő alkalmazások kezelheti [az Intune alkalmazásvédelmi szabályzat
 - A PowerApps (Android, iOS)
 - A folyamat (Android, iOS)
 
-Használja alkalmazásvédelmi szabályzatok vállalati adat- és adatátviteli ezeket az alkalmazásokat, például a többi Intune-szabályzat által felügyelt alkalmazások védelmére. Megjegyzés: Ha a Flow még nem láthatók a konzolon, hozzáadhat folyamatot, ha hoz létre vagy szerkeszt, és az alkalmazásvédelmi szabályzatok. Ehhez használja a **+ további alkalmazások** lehetőséget, majd adja meg a *Alkalmazásazonosító* a Flow a beviteli mezőben. Android használatra *com.microsoft.flow*, és az iOS használja *com.microsoft.procsimo*.
+Használja alkalmazásvédelmi szabályzatok vállalati adat- és adatátviteli ezeket az alkalmazásokat, például a többi Intune-szabályzat által felügyelt alkalmazások védelmére. Megjegyezés: Ha a Flow még nem láthatók a konzolon, hozzáadhat folyamatot, ha hoz létre vagy szerkeszt, és az alkalmazásvédelmi szabályzatok. Ehhez használja a **+ további alkalmazások** lehetőséget, majd adja meg a *Alkalmazásazonosító* a Flow a beviteli mezőben. Android használatra *com.microsoft.flow*, és az iOS használja *com.microsoft.procsimo*.
 
 
 ### <a name="device-configuration"></a>Eszközök konfigurálása
@@ -874,7 +880,7 @@ A tanúsítványok jelenleg felhasználók részére vannak kiállítva. Ezzel a
 - Az SCEP-profilokban a **Tulajdonos alternatív neve (SAN)** tulajdonság mostantól tábla formátumú, és új változókat is tartalmazhat. A táblában a rendszergazdák megadhatnak attribútumokat, és a hozzájuk tartozó értéket egy egyéni szövegmezőben tölthetik ki. Az SAN a következő attribútumokat támogatja: 
   - DNS
   - E-mail-cím
-  - UPN
+  - EGYSZERŰ FELHASZNÁLÓNÉV
 
   Ezek az új változók statikus szöveggel adhatók meg egy egyéni szövegmezőben. Például a DNS-attribútumok a következő formátumban adhatók meg: `DNS = {{AzureADDeviceId}}.domain.com`.
 

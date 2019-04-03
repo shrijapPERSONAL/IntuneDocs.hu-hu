@@ -5,7 +5,7 @@ services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 03/27/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b9247d07ae947e61528095a4853e5cdbcbc80c0
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6dfdf61159d899a81e1ef53a1aaa649c98833b0e
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389981"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871416"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>Gyors útmutató: Windows 10 rendszerű eszköz regisztrálása
 
-Ebben a rövid útmutatóban először Intune-felhasználói szerepkörben fog tevékenykedni, és regisztrálja a Windows 10 rendszerű eszközét a Microsoft Intune-ban. Ezt követően visszatér az Intune-hoz, és megerősíti, hogy létrejött az eszköz regisztrációja.
+Ebben a rövid útmutatóban először Intune-felhasználói szerepkörben fog tevékenykedni, és regisztrálja a Windows 10 rendszerű eszközét a Microsoft Intune-ban. Ezután fogja térjen vissza az Intune-hoz, és erősítse meg az eszköz regisztrálva.
 
 A vállalati eszközök Microsoft Intune-beli regisztrálása lehetővé teszi, hogy a Windows 10 rendszerű eszközök hozzáférjenek a szervezet védett adataihoz, beleértve az e-maileket, a fájlokat és az egyéb erőforrásokat. Ez a Windows 10 rendszerű asztali számítógépekre és a Windows 10 Mobile rendszerű eszközökre egyaránt vonatkozik. Az eszközök regisztrálásával biztonságossá tehető ez a hozzáférés Ön és a szervezet számára, és elkülöníthetők a munkahelyi adatok a személyes adatoktól.
 
@@ -72,7 +72,7 @@ A Windows 10 asztali verzió regisztrációja előtt erősítse meg a Windows te
 
     ![Válassza a Hozzáférés munkahelyi vagy iskolai fiókhoz lehetőséget](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-04.png)
 
-3. Jelentkezzen be az Intune-ba munkahelyi vagy iskolai fiókjával, majd válassza a **Tovább** lehetőséget. Ha követte a [felhasználó létrehozása és licenc hozzárendelése] rövid útmutatót, akkor bejelentkezhet a létrehozott felhasználói fiókkal.
+3. Jelentkezzen be az Intune-ba munkahelyi vagy iskolai fiókjával, majd válassza a **Tovább** lehetőséget. Ha követte a [hozzon létre egy felhasználót, és a egy licenc hozzárendelése](quickstart-create-user.md) a rövid útmutatóban bejelentkezhet a felhasználói fiókot, amelyet Ön hozott létre.
 
     > [!NOTE]
     > Ha az „.onmicrosoft.com” címet álltja be, a felhasználói fiókban az **.onmicrosoft.com** a fiók címének része lesz. 

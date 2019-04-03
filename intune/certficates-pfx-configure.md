@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/28/2019
+ms.date: 04/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e6af5a7d7911d7e8ba12e9fd15ad72ca1e51c74
-ms.sourcegitcommit: e23e78a563928ed2b2cbc588f2aa65678f7bb409
+ms.openlocfilehash: b8b05b7f2a0b56321023bc8444528578aeface0b
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58618470"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871406"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>PKCS-tanúsítványok konfigurálása és használata az Intune-nal
 
@@ -35,42 +35,49 @@ A Microsoft Intune PKCS-tanúsítványok használata a szervezetek erőforrások
 
 PKCS-tanúsítványok használata az Intune-nal, a következő infrastruktúra lesz szüksége:
 
-- **Active Directory-tartomány**: A jelen szakaszban felsorolt összes kiszolgálónak csatlakoznia kell az Active Directory-tartományához.
+- **Active Directory-tartomány**:  
+  A jelen szakaszban felsorolt összes kiszolgálónak csatlakoznia kell az Active Directory-tartományához.
 
   Az Active Directory Domain Services (AD DS) konfigurálásával kapcsolatos további információkért lásd: [AD DS tervezése és kialakítása](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/ad-ds-design-and-planning).
 
-- **Hitelesítésszolgáltató**: Egy vállalati hitelesítésszolgáltató (CA).
+- **Hitelesítésszolgáltató**:  
+   Egy vállalati hitelesítésszolgáltató (CA).
 
   A telepítése és konfigurálása az Active Directory tanúsítványszolgáltatások (AD CS) további információért lásd: [Active Directory tanúsítványszolgáltatások részletes útmutatóját](https://technet.microsoft.com/library/cc772393).
 
   > [!WARNING]  
   > Az Intune követelményei szerint az AD CS-t vállalati hitelesítésszolgáltatóval, és nem önálló hitelesítésszolgáltatóval kell futtatni.
 
-- **Egy ügyfél**: Szeretne csatlakozni a vállalati Hitelesítésszolgáltatóból.
+- **Egy ügyfél**:  
+  Szeretne csatlakozni a vállalati Hitelesítésszolgáltatóból.
 
-- **Főtanúsítvány**: Vállalati hitelesítésszolgáltatótól származó főtanúsítvány exportált másolata.
+- **Főtanúsítvány**:  
+  Vállalati hitelesítésszolgáltatótól származó főtanúsítvány exportált másolata.
 
-- **A Microsoft Intune tanúsítvány-összekötő**: Az Intune-portálon lépjen a **eszközkonfiguráció** > **tanúsítvány-összekötőt** > **Hozzáadás**, és kövesse a *lépések Telepítse az összekötőt a PKCS #12*. A portálon a letöltési hivatkozás segítségével indítsa el a tanúsítvány-összekötő telepítő letöltési **NDESConnectorSetup.exe**.  
-- 
+- **Az Intune tanúsítvány-összekötő** (más néven a *NDES tanúsítvány-összekötő*):  
+  Az Intune-portálon lépjen a **eszközkonfiguráció** > **tanúsítvány-összekötőt** > **Hozzáadás**, és kövesse a *lépések Telepítse az összekötőt a PKCS #12*. A portálon a letöltési hivatkozás segítségével indítsa el a tanúsítvány-összekötő telepítő letöltési **NDESConnectorSetup.exe**.  
+
   Ezt az összekötőt PKCS eszköztanúsítvány-kérelmeket a hitelesítés és az S/MIME e-mail aláírási használt dolgozza fel.
 
   Az NDES tanúsítvány-összekötő a Federal Information Processing Standard (FIPS) módot is támogatja. A FIPS nem szükséges, de ha engedélyezve van, akkor lehetőség van tanúsítványok kibocsátására és visszavonására.
 
-- **Importált PFX-tanúsítványok összekötő az Intune-hoz**: Ha e-mailek titkosítása S/MIME használata, akkor az Intune-portálon az összekötő letöltéséhez *importált PFX-tanúsítványok*.  Lépjen a **eszközkonfiguráció** > **tanúsítvány-összekötőt** > **Hozzáadás**, és kövesse a *-összekötő telepítésének lépései Importált PFX-tanúsítványok*. A portálon a letöltési hivatkozás segítségével indítsa el a telepítő letöltési **PfxCertificateConnectorBootstrapper.exe**. 
+- **PFX-Tanúsítványösszekötő a Microsoft Intune-ban**:  
+   Ha e-mailek titkosítása S/MIME használata, akkor az Intune-portálon az összekötő letöltéséhez *importált PFX-tanúsítványok*.  Lépjen a **eszközkonfiguráció** > **tanúsítvány-összekötőt** > **Hozzáadás**, és kövesse a *-összekötő telepítésének lépései Importált PFX-tanúsítványok*. A portálon a letöltési hivatkozás segítségével indítsa el a telepítő letöltési **PfxCertificateConnectorBootstrapper.exe**. 
 
   Ez az összekötő e-mail titkosítási S/MIME egy adott felhasználó az Intune-ba importált PFX-fájlok kéréseket kezeli.  
 
   Ez az összekötő is automatikusan frissíti magát amikor új verzió elérhetővé válnak. A frissítési funkció használatához tegye a következőket:
-  - Az importált PFX-tanúsítványok összekötő telepítse a Microsoft Intune-hoz a kiszolgálón.
+  - Telepítse az importált PFX-Tanúsítványösszekötő a Microsoft Intune-hoz a kiszolgálón.
   - Automatikusan beolvashassa az a fontos frissítések, biztosítása érdekében a tűzfalak, amelyek lehetővé teszik az összekötő kapcsolatba nyílt **autoupdate.msappproxy.net** porton **443-as**.  
 
 
-- **A Windows Server**: A gazdagép Windows Server használhatja:
+- **A Windows Server**:  
+  A gazdagép Windows Server használhatja:
 
   - A Microsoft Intune Certificate Connector – a hitelesítéshez és az S/MIME e-mail aláírási forgatókönyvek
   - PFX-Tanúsítványösszekötő a Microsoft Intune - S/MIME e-mail titkosítási célokra.
 
-  A két összekötő telepítése (*a Microsoft Intune tanúsítvány-összekötő* és *importált PFX-tanúsítványok összekötő*) ugyanazon a kiszolgálón.
+  A két összekötő telepítése (*a Microsoft Intune tanúsítvány-összekötő* és *PFX-Tanúsítványösszekötő*) ugyanazon a kiszolgálón.
 
 ## <a name="export-the-root-certificate-from-the-enterprise-ca"></a>Főtanúsítvány exportálása a vállalati hitelesítésszolgáltatótól
 
@@ -237,6 +244,26 @@ A tanúsítványok Intune-ba importálása után hozzon létre egy **Importált 
 
 4. A profil mentéséhez kattintson az **OK** > **Létrehozás** gombra.
 5. Az új profil egy vagy több eszközhöz történő hozzárendeléséhez lásd: [Microsoft Intune-eszközprofilok hozzárendelése](device-profile-assign.md).
+
+## <a name="whats-new-for-connectors"></a>Új összekötők
+A két tanúsítványprofilt összekötők frissítései rendszeresen jelennek meg. Amikor a frissítés egy összekötőt, itt olvashat itt végrehajtott módosítások. 
+
+A *PFX-tanúsítványok összekötő* [támogatja az automatikus frissítések](#requirements), míg az Intune tanúsítvány-összekötő manuális frissül.
+ 
+### <a name="april-2-2019"></a>2019. április 2.
+- **NDES tanúsítvány-összekötő – 6.1904.1.0 verzió**  
+  Ez a kiadás változásai:  
+  - Javítva lett egy probléma, ha az összekötő regisztrálása az Intune-hoz, az összekötő egy globális rendszergazdai fiókkal való bejelentkezés után meghiúsulhat.  
+  - A tanúsítvány visszavonásának megbízhatósági javítások tartalmazza.  
+  - Teljesítmény javításai növeléséhez, milyen gyorsan PKCS-tanúsítványkérelmek feldolgozása.  
+
+- **PFX-tanúsítványok összekötő – 6.1904.0.401 verzió**
+  > [!NOTE]  
+  > Automatikus frissítés a PFX-összekötő ezen verziója a 2019. április 11. amíg nem érhető el.  
+
+  Ez a kiadás változásai:  
+  - Javítva lett egy probléma, ha az összekötő regisztrálása az Intune-hoz, az összekötő egy globális rendszergazdai fiókkal való bejelentkezés után meghiúsulhat.  
+
 
 ## <a name="next-steps"></a>További lépések
 

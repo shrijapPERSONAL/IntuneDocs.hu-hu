@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf33c512cf433475e2b37028b50e6c758a4ba760
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 5aa85ee044eae5fba9dcb7c380a29dda727c6492
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799064"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871450"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Adatok beolvasása az Intune-adattárház API-ból REST-ügyféllel
 
@@ -98,11 +98,11 @@ A végpont is szükséges. Az adattárház-végpont beszerzéséhez szükséges 
 1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Egyéb feladatok** szakaszban válassza az **Intune-adattárház beállítása** lehetőséget.
-4. Másolja be az egyedi hírcsatorna URL-címét a **Külső gyártótól származó jelentéskészítési szolgáltatások használata** szakaszba. Az eredménynek a következőhöz hasonlónak kell lennie: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
+4. Másolja be az egyedi hírcsatorna URL-címét a **Külső gyártótól származó jelentéskészítési szolgáltatások használata** szakaszba. Az eredménynek a következőhöz hasonlónak kell lennie: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=v1.0`
 
 A végpont a következő formátumot követi: `https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`
 
-A **dates** entitás megjelenése például a következő: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+A **dates** entitás megjelenése például a következő: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 
 További információt az [Intune-adattárház API-végpontja](reports-api-url.md) című témakörben találhat.
 
@@ -116,7 +116,7 @@ Ahhoz, hogy beszerezzen egy új hozzáférési jogkivonatot a Postman számára,
 2.  Nyissa meg a Postmant. Válassza ki a **GET** HTTP-műveletet.
 3.  Illessze be a végpont URL-címét a címbe. Valahogy így kell kinéznie:  
 
-    `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+    `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 4.  Válassza az **Authorization** (Engedélyezés) lapot, és a **Type** (Típus) listában válassza ki az **OAuth 2.0** lehetőséget.
 5.  Válassza az **Get New Access Token** (Új hozzáférési jogkivonat beszerzése) lehetőséget.
 6.  Ellenőrizze, hogy hozzáadta-e már a visszahívási URL-címet (Callback URL) az Azure-beli alkalmazáshoz. A Callback URL (Visszahívási URL-cím) a következő: `https://www.getpostman.com/oauth2/callback`.
@@ -197,7 +197,7 @@ Az alábbi minta egy egyszerű REST-ügyfelet tartalmaz. A kód a .Net-kódtár 
    var emailAddress = "intuneadmin@yourcompany.com";
    var password = "password_of(intuneadmin@yourcompany.com)";
    var applicationId = "<Application ID>";
-   var warehouseUrl = "https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta";
+   var warehouseUrl = "https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=v1.0";
    var collectionName = "dates";
 
    var adalContext = new AuthenticationContext("https://login.windows.net/common/oauth2/token");

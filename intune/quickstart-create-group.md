@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 816a0479f19b5bb65376825f46687bf4b8b07045
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 7cbfe19e4f7aea28c16cae50c9b79336be81c8fa
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798356"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871327"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>Gyors útmutató: Hozzon létre egy csoportot, hogy a felhasználók kezelése
 
@@ -44,17 +44,18 @@ Jelentkezzen be a [Intune-portálon](https://aka.ms/intuneportal) , egy [globál
 
 ## <a name="create-a-group"></a>Csoport létrehozása
 
-Létre fog hozni egy csoportot, amelyet a későbbiekben fog használni ebben a rövid útmutatóban.
+Létre fog hozni egy csoportot, amelyet a későbbiekben fog használni ebben a rövid útmutatóban. Csoport létrehozása:
 
 1. Miután megnyitotta a **Microsoft Intune** panelt, válassza a **Csoportok** > **Új csoport** lehetőséget.
 2. A **Csoporttípus** legördülő listában válassza a **Biztonság** elemet.
-3. A **Név** tulajdonságot állítsa be „Contoso tesztelők” értékre, és adjon meg **Leírást** a csoporthoz.
-4. Adja meg a **Tagság típusa** elemhez a **Hozzárendelt** beállítást. 
-5. Kattintson a **Tagok** lehetőségre, majd válasszon egy vagy több tagot a csoporthoz a meglévő listából.
+3. Az a **csoportnév** mezőben adja meg az új csoport nevét (például **Contoso tesztelőknek**).
+4. Adjon hozzá egy **leírás** a csoporthoz.
+5. Adja meg a **Tagság típusa** elemhez a **Hozzárendelt** beállítást. 
+6. Kattintson a **tagok** , és válassza ki a csoport egy vagy több tagot a listából.
 
     ![Képernyőkép egy csoport létrehozásáról a Microsoft Intune-ban](./media/quickstart-use-groups-01.png)
 
-6. Kattintson a **Kiválasztás** > **Létrehozás** elemre.
+7. Kattintson a **Kiválasztás** > **Létrehozás** elemre.
 
 Miután sikeresen létrehozta a csoportot, az megjelenik az **Összes csoport** listájában. 
 

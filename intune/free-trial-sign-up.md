@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5cc7593818027f8b1c8c3600143e9909662cd922
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 63f9ef266c9a5754d5de57232a8f7bc41a6c5777
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799641"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871395"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Gyors útmutató: A Microsoft Intune ingyenes kipróbálása 
 
@@ -67,7 +67,7 @@ Az Intune kipróbálása 30 napig ingyenes. Ha már rendelkezik munkahelyi vagy 
 
     ![Az Azure Portal bejelentkezési oldalának képe](./media/azure-portal-signin.png)
 
-3. A lap bal oldalán lévő oldalsávon lévő **Minden szolgáltatás** lehetőséggel megtekintheti a Microsoft Intune-t az Azure Portalon.
+3. A Microsoft Intune az Azure Portalon megtekintéséhez jelölje ki **minden szolgáltatás** az oldal bal oldalán lévő oldalsávon.
 4. A szűrőmezőben keressen rá a **Microsoft Intune-ra**, majd jelölje ki azt.
 5. Kattintson a **csillagra**, amivel felveszi az Intune-t a kedvenc szolgáltatásai listájának aljára. Nyissa meg az Intune irányítópultot.
 
@@ -97,7 +97,7 @@ Az MDM-szolgáltatóról további információért lásd [A mobileszköz-felügy
 
 ## <a name="configure-your-custom-domain-name-optional"></a>Egyéni tartománynév konfigurálása (nem kötelező)
 
-Ha a fenti leírtak a szervezet rendelkezik a saját egyéni tartomány nélkül használni kívánt **. onmicrosoft.com**, módosíthatja a Microsoft 365 felügyeleti központban. Adja hozzá, ellenőrizze, és konfigurálja az egyéni tartománynevet, kövesse az alábbi lépéseket.  
+Ha a fenti leírtak a szervezet rendelkezik a saját egyéni tartomány nélkül használni kívánt **. onmicrosoft.com**, módosíthatja a Microsoft 365 felügyeleti központban. Hozzáadhat, győződjön meg arról, és konfigurálja az egyéni tartománynevet, kövesse az alábbi lépéseket.  
 
 > [!IMPORTANT]
 > Nem nevezhető át, és távolítsa el a *kezdeti* **onmicrosoft.com** része a tartomány nevét. Azonban hozzáadhat, ellenőrizze, vagy távolítsa el *egyéni* tartományneveket vállalata egyértelmű identitásának tartani az Intune-nal használt. További információkért lásd: [egyéni tartománynév beállítása](custom-domain-name-configure.md).
@@ -110,7 +110,7 @@ Ha a fenti leírtak a szervezet rendelkezik a saját egyéni tartomány nélkül
 
    ![Képernyőkép a Microsoft 365 felügyeleti központ – tartomány hozzáadása](./media/domain-custom-add.png)
 
-4. Ellenőrizze, hogy az imént megadott tartománynak Ön-e a tulajdonosa. 
+4. Győződjön meg arról, hogy Ön a tulajdonosa a tartománynak, amelyet az előző lépésben megadott. 
     
     A **Kód küldése e-mailben** lehetőséget választva e-mailt küld a tartománya regisztrált kapcsolattartójának. Az e-mail beérkezése után másolja ki a kódot, és illessze be az **Írja be az ellenőrzőkódot** címkéjű mezőbe. Ha az ellenőrző kód egyezik, a tartomány hozzá lesz adva a bérlőjéhez. Előfordulhat, hogy a megjelenő e-mail nem ismerős. Néhány regisztráló szervezetek elrejtése a valódi e-mail cím. Emellett az e-mail-cím eltérő lehet majd ha a tartomány regisztrálásának megadott.
 
@@ -123,7 +123,7 @@ Ha a fenti leírtak a szervezet rendelkezik a saját egyéni tartomány nélkül
 
 Két portált használhat:
 - Az Intune-irányítópultot az Azure-on ([portal.azure.com](https://portal.azure.com)), ahol megismerheti [az Intune képességeit](what-is-intune.md). Többnyire az Intune-irányítópulton fog dolgozni.
-- A Microsoft 365 felügyeleti központot ([admin.microsoft.com](https://admin.microsoft.com)) van, ahol hozzá, és kezelni a felhasználókat, ha nem használ Azure Active Directory, amely. Továbbá fiókjának számlázási- támogatási- és egyéb aspektusait is kezelheti itt.
+- A Microsoft 365 felügyeleti központot ([admin.microsoft.com](https://admin.microsoft.com)) van, ahol hozzá, és kezelni a felhasználókat, ha ez nem használja az Azure Active Directory. Továbbá fiókjának számlázási- támogatási- és egyéb aspektusait is kezelheti itt.
 
 ## <a name="next-steps"></a>További lépések
 

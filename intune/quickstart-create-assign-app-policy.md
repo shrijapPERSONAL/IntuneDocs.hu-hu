@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a883536b1c56948083a7e32bcb56d8d182fddfb5
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 5d7e63542563425606cf1f9a8509a7bf0c09b9a9
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799101"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871361"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Gyors útmutató: Alkalmazásvédelmi szabályzat létrehozása és hozzárendelése
 
@@ -41,7 +41,7 @@ Jelentkezzen be az [Intune-ba](https://aka.ms/intuneportal) [globális rendszerg
 
 ## <a name="create-an-app-protection-policy"></a>Alkalmazásvédelmi szabályzat létrehozása
 
-Alkalmazásvédelmi szabályzat létrehozásához kövesse az alábbi lépéseket:
+A következő lépések segítségével hozzon létre egy alkalmazásvédelmi szabályzatot:
 
 1. Az [Intune-ban](https://aka.ms/intuneportal) válassza az **Ügyfélalkalmazások** > **Alkalmazásvédelmi szabályzatok** > **Szabályzat létrehozása** lehetőséget. 
 2. Adja meg a következő adatokat: 
@@ -72,7 +72,7 @@ Alkalmazásvédelmi szabályzat hozzárendeléséhez kövesse az alábbi lépés
 3.  Válassza a **Hozzárendelések** lehetőséget.
 4.  A **Befoglalás** lapon válassza a **Belefoglalandó csoportok kijelölése** lehetőséget.
 5.  Válassza a **Contoso tesztelők** elemet a belefoglalandó csoportként.
-6.  Kattintson a **Kiválasztás** lehetőségre. 
+6.  Kattintson a **kiválasztása** > **mentése**. 
 
 Ezzel hozzárendelte az alkalmazásvédelmi szabályzatot.
 

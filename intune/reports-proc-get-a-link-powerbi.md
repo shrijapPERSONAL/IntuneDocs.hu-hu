@@ -6,7 +6,7 @@ keywords: Intune-adattárház
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/28/2019
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3bbf9848f8a66f3773772187de2486ffcf3e1cd7
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 259d700d04547a801b0ebc37242dacf536ad61d3
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798156"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871378"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Kapcsolódás az adattárházhoz a Power BI használatával
 
@@ -49,27 +49,26 @@ Az alábbiakban bemutatjuk, hogyan töltheti le a Power BI-fájl, és hogyan has
 
 Telepítse a legújabb verzióját, [Power BI Desktop](https://aka.ms/intune/datawarehouseapi/installpowerbi). További információkért lásd: [Power BI Desktopban](https://powerbi.microsoft.com/desktop)
 
-## <a name="load-the-data-and-reports-using-the-power-bi-compliance-app"></a>Az adatok és a jelentések a Power BI megfelelésével alkalmazással betöltése
+## <a name="load-the-data-and-reports-using-the-power-bi-intune-compliance-data-warehouse-app"></a>Az adatok és a jelentések használata a Power BI az Intune megfelelőségi Data Warehouse alkalmazás betöltése
 
-A Power BI megfelelésével alkalmazás a bérlő és a egy készletét az adattárház adatmodellje alapján előre elkészített jelentéseket információkat tartalmaz. Nyissa meg a jelentést a Power BI Desktopban, és jelentkezzen be az Azure ad-ben. A jelentés betölti az Intune-bérlő adatait.
+A Power BI [alkalmazás Intune-adattárház megfelelőségi](https://aka.ms/intune/datawarehouseapi/getpowerbiapp) a bérlői és az adattárház adatmodellje alapján előre elkészített jelentéseket számos kapcsolatos tudnivalókat tartalmazza.
 
-> [!Important]  
-> A Power BI-jelentések bérlő földrajzi helyétől függően eltérő lehet. Ha több Intune-bérlőt felügyel, mindenképpen használja az adott bérlőbe bejelentkezve az Azure Portalon.  
+1.  Keresse meg a [alkalmazás Intune-adattárház megfelelőségi](https://aka.ms/intune/datawarehouseapi/getpowerbiapp) a telepítés megkezdéséhez.
+2.  Amikor a rendszer kéri, telepítse a Power BI alkalmazás megbízható forrásból származó, kattintson a **telepítése**.
+3.  Kattintson a **Intune megfelelőségi Data Warehouse alkalmazás** csempére.
+4.  Kattintson a **adatok** gombra. 
+    A **csatlakozhat az Intune megfelelőségi Data Warehouse alkalmazás** párbeszédpanel jelenik meg.
+5.  Kattintson a **jelentkezzen be a** gombra.
+6.  Jelentkezzen be egy felhasználói fiókkal, amely hozzáfér ehhez az Intune-adattárház, amely rendelkezik a bérlőhöz tartozó jelentések megtekintéséhez. 
+7.  Kattintson a **jelentések** lapfülre, majd kattintson a **megfelelőségi 1.0-s verziójú** jelentést.
+8.  Lépjen vissza a jelentések később megkönnyíteni a csillag mellett kattintson a **megfelelőségi 1.0-s verziójú** jelentést. Ez a jelentés hozzáadása a Power BI-kedvenceit.
 
-1.  Jelentkezzen be az Azure Portalra, és válassza a **Monitoring + Management (Figyelés és kezelés)** > **Intune** elemet. Az **Intune** elemet erőforrások keresésével is megtalálhatja.  
+Azt is megteheti telepíthetik az alkalmazást az Intune-portálon:
+
+1.  Jelentkezzen be az Azure Portalra, és válassza a **Monitoring + Management (Figyelés és kezelés)** > **Intune** elemet. Erőforrások az Intune-hoz is kereshet.
 2.  Nyissa meg a **beállítása az Intune-adattárház** panelen.
 3.  Válassza ki **Power BI alkalmazás első** eléréséhez, és előre elkészített Power BI-jelentések megosztása a böngészőben a bérlő számára.
-
-> [!NOTE]
-> Ha a Power BI-hoz nem az Azure Active Directory-hez tartozó hitelesítő adatait használta, a Power BI kérni fogja a hitelesítő adatokat. Az adatok megadásához hitelesítő módszerként válassza a **Szervezeti fiók** lehetőséget.
-
-### <a name="add-additional-filters-to-the-intune-compliance-app"></a>További szűrők hozzáadása az Intune megfelelőségi alkalmazáshoz
-
-Ha szeretne további szűrők használata a Power BI-jelentések, használja az alábbi lépéseket:
-
-1. Nyissa meg a [Power BI megfelelésével](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) alkalmazást a böngészőben.
-2. Kattintson a **nem megfelelő eszközök** válassza **nem megfelelő** a a **complianceStatus** szűrőt. 
-3. Kattintson a **ismeretlen eszközök** válassza **még nem érhető el** a a **complianceStatus** szűrőt. 
+4.  Kövesse a lépéseket 2 – 8 fenti.
 
 ## <a name="load-the-data-in-power-bi-using-the-odata-link"></a>Adatok betöltése a Power BI-be az OData-hivatkozás használatával
 
@@ -77,7 +76,7 @@ Ha az ügyfél hitelesítve van az Azure AD-ben, az OData-URL kapcsolódni tud a
 
 1.  Jelentkezzen be az Azure Portalra, és válassza a **Monitoring + Management (Figyelés és kezelés)** > **Intune** elemet. Az **Intune** elemet erőforrások keresésével is megtalálhatja.  
 2.  Nyissa meg a **beállítása az Intune-adattárház** panelen.
-3. A jelentések panelről szerezze be az egyéni hírcsatorna URL-címét, például: `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+3. A jelentések panelről szerezze be az egyéni hírcsatorna URL-címét, például: `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 4. Nyissa meg a **Power BI Desktopot**.
 5. Válassza a **Kezdőlap** > **Adatforrás lekérése** elemet. Válassza az **OData-betöltés** lehetőséget.
 6. Válassza a **Basic** (Egyszerű) lehetőséget.
