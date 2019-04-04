@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 334057c093ef3bef75894821749fe75f26c51bd8
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 87f7ad0f155ba1dac7d72b6a71f3b555ba908c97
+ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799802"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58899112"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>A Microsoft Intune újdonságai – korábbi hónapok
 
@@ -364,7 +364,7 @@ Már hozzáadhatja manuálisan a céges eszközök azonosítóit. Válassza az *
 A Microsoft Edge mobilböngésző mostantól támogatja az Intune-ban meghatározott alkalmazásvédelmi szabályzatokat.
 
 #### <a name="retrieve-the-associated-app-user-model-id-aumid-for-microsoft-store-for-business-apps-in-kiosk-mode----1560077----"></a>A társított alkalmazás alkalmazásfelhasználói modellben használt azonosítója (AUMID) a Microsoft Store for Business-alkalmazások teljes képernyős módban beolvasása <!-- 1560077 ! -->
-Az Intune mostantól lekérheti az alkalmazás alkalmazásfelhasználói modellben használt azonosítóját (AUMID) a Microsoft Store Vállalatoknak alkalmazásaihoz, így hatékonyabb kioszkprofil-konfigurációt nyújt.
+Az Intune mostantól lekérheti az alkalmazás alkalmazásfelhasználói modellben azonosítók (AUMIDs) a Microsoft Store for Business (vállalati Windows) alkalmazások a teljes képernyős profil továbbfejlesztett konfiguráció.
 
 További információ a Microsoft Store Vállalatoknak alkalmazásairól: [A Microsoft Store Vállalatoknak áruházban vásárolt alkalmazások felügyelete](windows-store-for-business.md).
 
@@ -465,7 +465,7 @@ Az iOS- és macOS-eszközök UDID (Unique Device Identifier) azonosítójának m
 A Microsoft Intune MDM által felügyelt eszközökön néha sikertelenek lehetnek az alkalmazástelepítések. Ilyen esetekben nem könnyű megérteni a hiba okát, illetve elhárítani azt. Bevezetjük az alkalmazás-hibaelhárítási funkcióink nyilvános előzetes verzióját. Ennek keretében megjelenik egy új, **Kezelt alkalmazások** nevű csomópont minden egyedülálló eszköz alatt. Ez a Intune MDM-en keresztül szolgáltatott alkalmazások listáját tartalmazza. A csomóponton belül az alkalmazástelepítési állapotokat tekintheti meg. Ha kijelöl egy önálló alkalmazást, megnyithatja annak hibaelhárítási nézetét. A hibaelhárítási nézetben megtekintheti az alkalmazás végpontok közötti életciklusát, például a létrehozási, a módosítási, a célzási dátumot, valamint az alkalmazás egy eszközre való továbbításának dátumát. Továbbá ha az alkalmazás telepítése sikertelen volt, megjelenik egy hibakód, és egy hasznos üzenet a hiba okáról. 
 
 #### <a name="intune-app-protection-policies-and-microsoft-edge----1818968---"></a>Az Intune alkalmazásvédelmi szabályzatok és a Microsoft Edge <!-- 1818968 -->
-A Microsoft Edge mobilböngésző (iOS és Android) mostantól támogatja a Microsoft Intune alkalmazásvédelmi szabályzatait. Az Intune azokat a felhasználókat is védeni fogja, akik iOS- és Android-eszközön jelentkeznek be Azure AD-fiókjukkal az Edge alkalmazásba. iOS-eszközökön a **Require managed browser for web content** (Felügyelt böngésző megkövetelése a webes tartalmakhoz) szabályzat engedélyezi a felhasználóknak a hivatkozások felügyelt Microsoft Edge-ben való megnyitását.
+A Microsoft Edge mobilböngésző (iOS és Android) mostantól támogatja a Microsoft Intune alkalmazásvédelmi szabályzatait. Felhasználók IOS-es és Androidos eszközök, jelentkezzen be a vállalati Azure ad-ben a Microsoft Edge fiók látja el védelemmel az Intune. iOS-eszközökön a **Require managed browser for web content** (Felügyelt böngésző megkövetelése a webes tartalmakhoz) szabályzat engedélyezi a felhasználóknak a hivatkozások felügyelt Microsoft Edge-ben való megnyitását.
 
 <!-- ########################## -->
 ## <a name="may-2018"></a>2018. május
@@ -556,7 +556,7 @@ A következőkre vonatkozik: Android munkahelyi profilos eszközök Android oper
 
 Ezzel a frissítéssel a [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard) (**Eszközkonfiguráció** > **Profilok** > **Endpoint protection**) az alábbi beállításokkal bővült: 
 
-- **Windows Defender Credential Guard**: Kapcsolja be a Credential Guard a virtualizálás-alapú biztonság. Ennek a funkciónak a bekapcsolása segít megvédeni a hitelesítő adatokat a következő újraindításkor, ha a **Platformbiztonsági szint a Biztonságos rendszerindítással** és a **Virtualizálás-alapú biztonság** egyaránt be van kapcsolva. A választható lehetőségek:
+- **Windows Defender Credential Guard**: Kapcsolja be a Credential Guard a virtualizálás-alapú biztonság. Ennek a funkciónak a bekapcsolása segít megvédeni a hitelesítő adatokat a következő újraindításkor, ha a **Platformbiztonsági szint a Biztonságos rendszerindítással** és a **Virtualizálás-alapú biztonság** egyaránt be van kapcsolva. A lehetőségek a következők:
   - **Letiltott**: Ha a Credential Guard korábban bekapcsolta az a **engedélyezve zárolás nélkül**"lehetőséget, majd azt kikapcsolja a Credential Guard távolról.
 
   - **Engedélyezve UEFI-zárolással**: Biztosítja, hogy a Credential Guard nem lehet letiltani, egy beállításkulcs megadásával vagy a csoportházirend használatával. Ha ennek a beállításnak a használata után le szeretné tiltani a Credential Guardot, akkor a Csoportházirendet „Letiltva” állapotra kell állítania. Ezt követően távolítsa el a biztonsági funkciót mindegyik számítógépen egy fizikailag jelen lévő felhasználóval. Ezekkel a lépésekkel törölhető az UEFI-ban megőrzött konfiguráció. Amíg megvannak a UEFI-konfigurációk, a Credential Guard engedélyezve marad.
@@ -703,7 +703,7 @@ Az Android Enterprise (korábbi nevén Android for Work) a befoglaló és kizár
 ### <a name="export-all-devices-into-csv-files-in-ie-microsoft-edge-or-chrome----2258071---"></a>Az összes eszköz exportálása CSV-fájlokba IE, a Microsoft Edge vagy Chrome-ban <!-- 2258071 -->
 Az **Eszközök** > **Minden eszköz** területen **exportálhatja** az eszközöket egy CSV formátumú listába. Az Internet Explorer (IE) 10000 eszköznél kevesebbel rendelkező felhasználói sikeresen exportálhatják a fájljaikat több fájlba. Minden fájl legfeljebb 10000 eszközt tartalmaz.
 
-A Microsoft Edge és a Chrome 30000 eszköznél kevesebbel rendelkező felhasználói sikeresen exportálhatják a fájljaikat több fájlba. Minden fájl legfeljebb 30000 eszközt tartalmaz.
+A Microsoft Edge és a Chrome felhasználók > 30000 sikeresen exportálhatják eszközeiket, több fájlt. Minden fájl legfeljebb 30000 eszközt tartalmaz.
 
 Az [Eszközkezelés](device-management.md) területen további részletek jelennek meg a kezelt eszközökkel végezhető műveletekről.
 
@@ -1264,7 +1264,7 @@ A kívánt szabály minden esetben megmarad. Önnek nem kell semmilyen további 
 Az Android Oreo megjelenésétől kezdve a Google egy új védelmi funkciót vezetett be Google Play Protect néven, amely lehetővé teszi, hogy a felhasználók és a szervezetek biztonságos alkalmazásokat és biztonságos Android-rendszerképeket futtassanak. Az Intune mostantól támogatja a Google Play Protect-funkciókat, például a SafetyNet távoli igazolást. A rendszergazdák olyan megfelelőségi szabályzatokat állíthatnak be, amelyek megkövetelik a Google Play Protect konfigurálását és biztonságos állapotát.
 A **SafetyNet eszközigazolás** beállítás azt követeli meg, hogy az eszköz kapcsolódjon egy Google-szolgáltatáshoz, amely igazolja, hogy az eszköz a biztonságot tekintve kifogástalan állapotban van. Android for Work esetén a rendszergazda megadhat egy olyan konfigurációs profilbeállítást is, amely megköveteli, hogy a telepített alkalmazások állapotát Google Play-szolgáltatások ellenőrizzék. Amennyiben egy eszköz nem felel meg a Google Play Protect követelményeinek, a feltételes hozzáférés meg is akadályozhatja, hogy a felhasználók hozzáférjenek a vállalati erőforrásokhoz.
 
-- Lásd: [Eszközmegfelelőségi szabályzat létrehozása a Google Play Protect engedélyezéséhez ‒ útmutató](https://docs.microsoft.com/intune/compliance-policy-create-google-play-protect).
+- Lásd: [Eszközmegfelelőségi szabályzat létrehozása a Google Play Protect engedélyezéséhez ‒ útmutató](https://docs.microsoft.com/intune/compliance-policy-create-android).
 
 ### <a name="text-protocol-allowed-from-managed-apps----1414050----"></a>Engedélyezett szövegprotokoll a felügyelt alkalmazások <!-- 1414050  -->
 
@@ -1369,7 +1369,7 @@ A Microsoft Planner alkalmazás iOS és Android rendszerű eszközök számára 
 A rendszergazdák mostantól eltávolíthatják az alkalmazásonkénti VPN követelményét az iOS-eszközökről. Az érintett eszközök állapota a következő Intune-bejelentkezés után frissül (ez általában 15 percen belül következik be).  
 
 ### <a name="support-for-system-center-operations-manager-management-pack-for-exchange-connector----885457---"></a>A System Center Operations Manager felügyeleti csomag az Exchange Connector támogatása <!-- 885457 -->
-A System Center Operations Manager (SCOM) mostantól elérhető, az Exchange Connectorhoz készült felügyeleti csomagja segít az Exchange Connector naplófájljainak elemzésében. Ez a funkció számos lehetőséget nyújt a szolgáltatás figyelésére hibaelhárítás esetén.
+A System Center Operations Manager Exchange connectorhoz készült felügyeleti csomag már segíteni fog az Exchange connector naplófájljainak elemzésében. Ez a funkció számos lehetőséget nyújt a szolgáltatás figyelésére hibaelhárítás esetén.
 
 ### <a name="co-management-for-windows-10-devices-----1243445---"></a>Megosztott kezelés Windows 10 rendszerű eszközökhöz  <!-- 1243445 -->
 A közös felügyelet olyan megoldás, amely a hagyományos és a modern felügyelet között teremt átjárhatóságot, és lehetővé teszi a fokozatos áttérést. Közös felügyelet esetén a Windows 10-es eszközöket együttesen felügyeli a Configuration Manager és a Microsoft Intune, és emellett az Azure Active Directoryhoz (AD) és az Azure Active Directoryhoz (Azure AD) is csatlakoztatva vannak.  Ez a konfiguráció lehetővé teszi, hogy idővel át lehessen térni a modern megoldásra, de elegendő időt hagy a vállalatnak, ha pillanatnyilag nincs mód az azonnali áttérésre.  
@@ -1426,7 +1426,7 @@ Az Intune-ban az alkalmazásvezérlési szabályzatok beállíthatók „csak na
 ### <a name="window-defender-exploit-guard-is-a-new-set-of-intrusion-prevention-capabilities-for-windows-10----1063615---"></a>Windows Defender Exploit Guard új behatolásmegelőzési képességeket tartalmazó készlet Windows 10-es készlet <!-- 1063615 -->   
 A Windows Defender Exploit Guard olyan szabályokat tartalmaz, amelyekkel csökkenthető az alkalmazások rosszindulatú kihasználása, megelőzhetőek a makró- és parancsfájl-fenyegetések, automatikusan letilthatók a nem megbízhatónak tekintett IP-címek, és biztosítható az adatok védelme a zsarolóprogramok és az ismeretlen fenyegetések ellen. A Windows Defender Exploit Guard az alábbi összetevőket tartalmazza:
 
-- A **Támadási felület csökkentése (ASR)** a makró-, parancsfájl- és e-mail-fenyegetések megelőzésére szolgáló szabályokat tartalmaz.
+- **Támadási felület csökkentésére szolgáló** szabályokat, amelyek lehetővé teszik, hogy a makró-, parancsfájl és e-mail-fenyegetések biztosít.
 - A **Felügyelt mappahozzáférés** automatikusan letiltja a védett mappák tartalmához való hozzáférést.
 - A **Hálózati szűrő** minden alkalmazás esetében letiltja az alacsony megbízhatóságú IP-címek vagy tartományok felé irányuló kimenő adatforgalmat
 - A **Biztonsági rések elleni védelem** a memóriára, a vezérlésfolyamra és a szabályzatokra vonatkozó korlátozásokat tartalmaz, amelyekkel megvédhetők az alkalmazások a biztonsági résektől.
@@ -1565,8 +1565,8 @@ Azok a céges alkalmazások, amelyek regisztrációval és anélkül is elérhet
 ### <a name="windows-autopilot-deployment-program-support-in-microsoft-intune----747617---"></a>A Windows AutoPilot üzembe helyezési program támogatása a Microsoft Intune-ban  <!-- 747617  -->
 Mostantól használhatja az Intune-nal a Windows AutoPilot üzembe helyezési programot, amellyel lehetővé teheti, hogy a felhasználók az informatikai szolgálat közreműködése nélkül helyezzék üzembe vállalati eszközeiket. A kezdőélményt (OOBE) testre szabhatja, és útmutatást nyújthat a felhasználóknak ahhoz, hogy eszközeiket az Azure AD-hez csatlakoztassák, és azokta az Intune-ban regisztrálják. A Microsoft Intune és a Windows AutoPilot együttes használatával kiküszöbölhető az operációsrendszer-lemezképek üzembe helyezésének, fenntartásának és kezelésének feladatai. További részletekért lásd: [Windows-eszközök regisztrálása a Windows AutoPilot Deployment Program használatával](https://docs.microsoft.com/intune/enrollment-autopilot).
 
-### <a name="quick-start-for-device-enrollment----1425655---"></a>Gyors üzembe helyezési eszközök beléptetése  <!-- 1425655 --> 
-Az **Eszközregisztrálásnál** már elérhető a gyors üzembe helyezési útmutató, amelyben a platformkezeléssel és a regisztrációs folyamat konfigurálásával kapcsolatos információs táblázatot talál. Minden tételhez egy rövid leírás tartozik, valamint hivatkozások olyan forrásokra, amelyek lépésenkénti útmutatót és dokumentációt tartalmaznak, és amelyekkel leegyszerűsíthető a folyamat.
+### <a name="quickstart-for-device-enrollment----1425655---"></a>Gyors útmutató: eszközök regisztrálása  <!-- 1425655 --> 
+A rövid útmutatóban már elérhető a **eszközregisztráció** referenciák táblázata látható részletesen platformok felügyelete és a regisztrációs folyamat konfigurálásával. Minden tételhez egy rövid leírás tartozik, valamint hivatkozások olyan forrásokra, amelyek lépésenkénti útmutatót és dokumentációt tartalmaznak, és amelyekkel leegyszerűsíthető a folyamat.
 
 ### <a name="device-categorization----1427491---"></a>Eszközök kategorizálása <!-- 1427491 -->
 Az **Eszközök > Áttekintés** panelen található regisztrált eszközök platformdiagramja platformok szerint (Android, iOS, macOS, Windows és Windows Mobile) rendezi az eszközöket.  A másféle operációs rendszert futtató eszközök az „Egyéb” kategóriában találhatóak.  Ilyenek lehetnek például a Blackberry, a Nokia és más gyártók eszközei.  
@@ -1883,7 +1883,7 @@ Az Intune már támogatja az iOS-, a macOS- és az Android-sorozatszámok feltö
 ### <a name="new-remote-actions-for-ios-devices----854689---"></a>Új távoli műveletek iOS-eszközök esetén <!-- 854689 -->
 Ebben a kiadásban két új műveletet tettünk elérhetővé az Apple Osztályterem alkalmazást kezelő megosztott iPad-eszközökkel kapcsolatban:
 
--   [Aktuális felhasználó kijelentkeztetése](device-logout-user.md) – Kijelentkezteti a kiválasztott iOS-eszköz aktuális felhasználóját.
+-   [Aktuális felhasználó kijelentkeztetése](device-logout-user.md) -jelentkezteti ki egy iOS-eszköz aktuális felhasználóját.
 -   [Felhasználó eltávolítása](device-remove-user.md) – Eltávolítja a kiválasztott felhasználót egy iOS-eszköz helyi gyorsítótárából.
 
 
@@ -2125,7 +2125,7 @@ Az Apple mennyiségi vásárlásra szolgáló áruházából vásárolt [könyve
 A Samsung Knox Standard rendszerű eszközökön mostantól használható az Intune [többfelhasználós felügyelete](android-enroll.md). Ilyenkor a felhasználók Azure Active Directory-beli hitelesítő adataikkal jelentkezhetnek be és ki az eszközön, de az központi felügyelet alatt marad, akár használatban van, akár nem.  A bejelentkezett végfelhasználó hozzáfér az alkalmazásokhoz, és a rá érvényes szabályzatok is működnek. A felhasználói kijelentkezéskor az összes alkalmazásadat törlődik.
 
 ### <a name="additional-windows-device-restriction-settings----818566---"></a>További Windows-eszközök korlátozásaira vonatkozó beállítások <!-- 818566 -->
-További [windowsos eszközkorlátozási beállításokat](device-restrictions-windows-10.md) tettünk elérhetővé, például bővült az Edge böngésző támogatása, testre szabható az eszközök zárolási képernyője és Start menüje, szabályozható a Windows Reflektorfény háttérképkészlete, illetve a proxybeállítások.
+Támogatása hozzáadtunk további [eszközkorlátozásokra vonatkozó beállításai Windows](device-restrictions-windows-10.md) további Microsoft Edge böngésző támogatása, zárolási képernyő testre szabható az eszközök, start menüje, mint a Windows Spotlight-keresés háttér, beállítása és a proxy beállításai.
 
 ### <a name="multi-user-support-for-windows-10-creators-update----822547---"></a>Több felhasználó támogatása Windows 10 alkotói frissítés <!-- 822547 -->
 A [többfelhasználós felügyelet](windows-enroll.md) támogatását kiterjesztettük a Windows 10 alkotói frissítését futtató, Azure Active Directory-tartományhoz csatlakozó eszközökre. Ez azt jelenti, hogy az eszközre minden egyes, Azure AD-s hitelesítő adataival bejelentkező általános jogú felhasználó a saját felhasználónevéhez rendelt alkalmazásokat és szabályzatokat kapja meg. A felhasználók jelenleg nem használhatják a Céges portált önkiszolgálói forgatókönyvek esetén (például alkalmazások telepítése).
@@ -2142,7 +2142,7 @@ Mostantól olyan [kiadásfrissítési szabályzatok](edition-upgrade-configure-w
 - Windows 10 Professional Education N
 
 ### <a name="bulk-enroll-windows-10-devices----747607---"></a>Tömeges regisztrálása a Windows 10-es eszközök <!-- 747607 -->
-Mostantól a Windows Configuration Designer (WCD) használatával a Windows 10 alkotói frissítéssel rendelkező nagy számú eszközt csatlakoztathat az Azure Active Directoryhez és az Intune-hoz. Ha Azure AD-bérlőhöz be szeretné kapcsolni a [tömeges MDM-regisztrálást](windows-bulk-enroll.md), a Windows Configuration Designerrel hozzon létre olyan kiépítési csomagot, amely csatlakoztatja az eszközöket az Azure AD-bérlőhöz, majd alkalmazza a csomagot a csoportosan regisztrálni és felügyelni kívánt vállalati tulajdonú eszközökre. A csomagok alkalmazását követően az eszközök csatlakoznak az Azure AD-hez, regisztrálnak az Intune-ban, és készen állnak az Azure AD-felhasználók bejelentkezésére.  Az Azure AD-felhasználók általános jogú felhasználók ezeken az eszközökön, akik megkapják majd a kijelölt szabályzatokat és a kötelező alkalmazásokat. Az önkiszolgáló és a Céges portált használó módszer jelenleg nincs támogatva.
+Mostantól a Windows Configuration Designer (WCD) használatával a Windows 10 alkotói frissítéssel rendelkező nagy számú eszközt csatlakoztathat az Azure Active Directoryhez és az Intune-hoz. Ha Azure AD-bérlőhöz be szeretné kapcsolni a [tömeges MDM-regisztrálást](windows-bulk-enroll.md), a Windows Configuration Designerrel hozzon létre olyan kiépítési csomagot, amely csatlakoztatja az eszközöket az Azure AD-bérlőhöz, majd alkalmazza a csomagot a csoportosan regisztrálni és felügyelni kívánt vállalati tulajdonú eszközökre. Az eszközöknek a csomag alkalmazása után csatlakozás az Azure ad-hez, regisztrálnak az Intune-ban, és fog készen álljon az Azure AD-felhasználók jelentkezzen be a.  Az Azure AD-felhasználók általános jogú felhasználók ezeken az eszközökön, akik megkapják majd a kijelölt szabályzatokat és a kötelező alkalmazásokat. Az önkiszolgáló és a Céges portált használó módszer jelenleg nincs támogatva.
 
 ### <a name="new-mam-settings-for-pin-and-managed-storage-locations----581122-736644---"></a>Új MAM-beállítások a PIN-kód és a felügyelt tárolóhelyekhez <!-- 581122, 736644 -->
 Két új alkalmazásbeállítás segíti a mobileszköz-felügyeletet (MAM):

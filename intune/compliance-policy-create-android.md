@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/19/2018
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0dc4fc0a0f16717bd0c21db3a9e7e57daf7867bc
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: 4880026b59c958f8f602713279797f85c8e2d7be
+ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991154"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58899036"
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Android-eszközök eszközmegfelelőségi szabályzatának hozzáadása az Intune-ban
 
-Az Android-eszközökhöz készült megfelelőségi szabályzatok meghatározzák az Android-eszközök megfelelőségéhez szükséges szabályokat és beállításokat. Ezeket a szabályzatokat [feltételes hozzáféréssel](conditional-access.md) használva megakadályozható vagy engedélyezhető a szervezeti erőforrásokhoz való hozzáférés. Emellett lekérhet eszközjelentéseket, és különböző műveleteket hajthat végre meg nem felelés esetén. 
+Az eszközmegfelelőségi szabályzatok használata kiemelten fontos, ha az Intune-t a vállalat erőforrásainak védelmére kívánja használni. Az Intune-ban Android-eszközök megfelelőségéhez, például egy operációs rendszer minimális verziójának meg kell felelnie a szabályokat és beállításokat hozhat létre. Ha egy eszköz nem megfelelő, a [feltételes hozzáférés](conditional-access.md) segítségével blokkolhatja a hozzáférést az adatokhoz és erőforrásokhoz.
 
-A megfelelőségi szabályzatokról és azok előfeltételeiről az [Eszközmegfelelőség – első lépések](device-compliance-get-started.md) című cikk nyújt bővebb tájékoztatást.
+Ez a funkció az alábbiakra vonatkozik:  
+- Android
 
-Ez a témakör felsorolja az Android-eszközök megfelelőségi szabályzatában használható beállításokat.
+Ezen kívül jelentéseket kérhet az eszközökről, elégtelen megfelelőség esetén pedig számos művelet áll rendelkezésére, például e-mailben figyelmeztetést küldhet az adott felhasználónak. A megfelelőségi szabályzatokról és azok előfeltételeiről az [Eszközmegfelelőség – első lépések](device-compliance-get-started.md) című cikk nyújt bővebb tájékoztatást.
+
+Ez a cikk belül használható megfelelőségi szabályzatok Android rendszerű eszközökre vonatkozó beállításokat sorolja fel.
 
 ## <a name="non-compliance-and-conditional-access"></a>Meg nem felelés és feltételes hozzáférés
 
@@ -71,6 +74,9 @@ Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítás
   - **Alacsony**: Az eszköz abban az esetben minősül megfelelőnek Ha kizárólag alacsony szintű fenyegetések állnak fenn. Bármilyen magasabb szintű fenyegetés esetén az eszköz nem megfelelő státuszúnak minősül.
   - **Közepes**: Az eszköz abban az esetben minősül megfelelőnek, ha az eszközön észlelt fenyegetések alacsony vagy közepes szintűek. Magas szintű fenyegetés észlelésekor a rendszer nem megfelelőként értékeli az eszközt.
   - **Magas**: Ez a beállítás a legkevésbé biztonságos, és minden kockázati szintet. Akkor lehet hasznos, ha ezt a megoldást kizárólag jelentéskészítési célokra használja.
+
+### <a name="google-play-protect"></a>Google Play védelme
+
 - **Google Play-szolgáltatások konfigurálva van**: **Szükséges** , hogy a Google Play szolgáltatások alkalmazás telepítve van és engedélyezett. A Google Play-szolgáltatások lehetővé teszik a biztonsági frissítéseket, és számos biztonsági funkció előfeltételei a hitelesített Google-eszközökön. Ha a **Nincs konfigurálva** (alapértelmezett) lehetőséget választja, a rendszer ezt a beállítást nem veszi figyelembe a megfelelőség, vagy meg nem felelőség megállapításához.
 - **Naprakész biztonsági szolgáltató**: **Szükséges** , hogy egy naprakész biztonságszolgáltató képes védeni az eszközöket az ismert biztonsági rések. Ha a **Nincs konfigurálva** (alapértelmezett) lehetőséget választja, a rendszer ezt a beállítást nem veszi figyelembe a megfelelőség, vagy meg nem felelőség megállapításához.
 - **Alkalmazások fenyegetettségvizsgálata**: **Szükséges** , amelyek az Android **alkalmazások ellenőrzése** szolgáltatás engedélyezve van. Ha a **Nincs konfigurálva** (alapértelmezett) lehetőséget választja, a rendszer ezt a beállítást nem veszi figyelembe a megfelelőség, vagy meg nem felelőség megállapításához.
@@ -82,6 +88,9 @@ Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítás
   - **Nincs konfigurálva** (alapértelmezett): A beállítás a nem megfelelőség vagy a meg nem felelés értékeli ki.
   - **Alapvető integritás ellenőrzése**
   - **Alapvető integritás ellenőrzés és tanúsított eszközök**
+
+> [!NOTE]
+> Alkalmazásvédelmi szabályzatokat használó alkalmazásokat a Google Play Protect beállításainak konfigurálásához lásd: [az Intune alkalmazásvédelmi szabályzat beállításai](app-protection-policy-settings-android.md#conditional-launch) androidon.
 
 ## <a name="device-property-settings"></a>Eszköztulajdonság-beállítások
 
@@ -155,7 +164,7 @@ Például, a Helyek funkciót használja, és hozzáad egy helyet egy megfelelő
 
 ## <a name="scope-tags"></a>Hatókörcímkék
 
-A hatókörcímkék nagyszerű módot kínálnak egyes szabályzatok meghatározott csoportokhoz (például az értékesítési, a mérnöki vagy a HR-csoporthoz) való hozzárendeléséhez. A megfelelőségi szabályzatokhoz hatókörcímkéket adhat hozzá. Lásd: [Hatókörcímkék használata szabályzatok szűrésére](scope-tags.md). 
+A hatókörcímkék nagyszerű módot kínálnak egyes szabályzatok meghatározott csoportokhoz (például az értékesítési, a mérnöki vagy a HR-csoporthoz) való hozzárendeléséhez. Hatókörcímkék adhat hozzá megfelelőségi szabályzatokat. Lásd: [Hatókörcímkék használata szabályzatok szűrésére](scope-tags.md). 
 
 ## <a name="assign-user-groups"></a>Felhasználói csoportok hozzárendelése
 
@@ -168,6 +177,7 @@ A szabályzat a létrehozása után csak akkor lép működésbe, ha hozzárende
 Ezzel érvénybe léptette a szabályzatot a felhasználók számára. A rendszer ekkor kiértékeli a szabályzat hatókörébe tartozó felhasználók által használt eszközök megfelelőségét.
 
 ## <a name="next-steps"></a>További lépések
+
 [Automatizált e-mailek és műveletek hozzáadása a nem megfelelő eszközökhöz](actions-for-noncompliance.md)  
 [Intune-eszközmegfelelőségi szabályzatok figyelése](compliance-policy-monitor.md)  
 [Az Android Enterprise megfelelőségi szabályzatainak beállításai](compliance-policy-create-android-for-work.md)

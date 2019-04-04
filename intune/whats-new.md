@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68d65c43d15034c8ef1a69d4912a3140aca953e6
-ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
+ms.openlocfilehash: 3943e8e2590ae5428477c53e53c229e7a9df47c3
+ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58871482"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58899102"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 
@@ -46,11 +46,8 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Ugyanitt tal
 -->     
 
 <!-- ########################## -->
-## <a name="week-of-march-25-2019"></a>2019. március 25 hete  
-
-### <a name="week-of-april-1-2019"></a>2019. április 1 hét
+## <a name="week-of-april-1-2019"></a>2019. április 1 hét
 Mindkét kiadás frissítéseket a [Intune tanúsítvány-összekötő és a PFX-Tanúsítványösszekötő](certficates-pfx-configure.md#whats-new-for-connectors). Az új kiadásokkal számos ismert problémák megoldása.  
-
 
 ## <a name="week-of-march-25-2019"></a>2019. március 25 hete
 

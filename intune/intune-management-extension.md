@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/21/2019
+ms.date: 04/03/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 469327261b8f617be0851b52d389965c5eff9b59
-ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
+ms.openlocfilehash: 66a23b75913f6465064a988bd8f2ba9c2b4c36d6
+ms.sourcegitcommit: 219bbbfb44eba70ac2b751970d8b4b778cd28416
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330409"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "58920253"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>PowerShell-parancsfájlok használata a Windows 10 rendszerű eszközökön az Intune-ban
 
@@ -57,7 +57,7 @@ Az Intune felügyeleti bővítmény előfeltételei a következők:
     - **Description** (Leírás): Adjon meg egy leírást a PowerShell-parancsfájlt. A beállítás használata nem kötelező, de ajánlott. 
     - **Parancsfájl helye**: Keresse meg a PowerShell-parancsfájlt. A szkript kevesebb, mint 200 KB (ASCII) kell lennie.
 4. Válasszon **konfigurálása**, és adja meg a következő tulajdonságokat:
-    - **Futtassa ezt a szkriptet a hitelesítő adatok használatával a bejelentkezett**: Válassza ki **Igen** a parancsfájl futtatásához a felhasználó hitelesítő adataival az eszközön. Válasszon **nem** (alapértelmezett), a parancsfájl futtatásához a rendszerkörnyezetben. Hacsak a parancsfájlt nem a rendszerkörnyezetben kell futtatnia, válassza az **Igen** lehetőséget.
+    - **Futtassa ezt a szkriptet a hitelesítő adatok használatával a bejelentkezett**: Válassza ki **Igen** a parancsfájl futtatásához a felhasználó hitelesítő adataival az eszközön. Válasszon **nem** (alapértelmezett), a parancsfájl futtatásához a rendszerkörnyezetben. A rendszergazdák számos **Igen**. Ha a parancsfájl a rendszerkörnyezetben futtatásához szükséges, válassza a **nem**.
     - **Ellenőrzésének kényszerítése**: Válassza ki **Igen** , ha a parancsfájl megkövetelje-e egy megbízható közzétevő. Válassza ki **nem** (alapértelmezett), ha egy követelmény a parancsfájl aláírása nem áll rendelkezésre. 
     - **Futtassa a szkriptet a PowerShell-gazdagépet 64 bites**: Válassza ki **Igen** , futtassa a parancsfájlt a PowerShell (PS) 64 bites gazdagépen egy 64 bites ügyfél architektúrájának. Válassza ki **nem** (alapértelmezett) a 32 bites PowerShell-gazdagépet a parancsfájlt futtatja.
 

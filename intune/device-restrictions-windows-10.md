@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/03/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ca34826f3a235fe620b5ac0dcb95d57dabf4c71
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: 51c1ee388c6930c328aff23cc6fc6db730097b86
+ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58395000"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58899070"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>A Windows 10 (és újabb) eszközbeállítások engedélyezett vagy korlátozott funkciók az Intune-nal
 
@@ -138,7 +138,10 @@ Ezek a beállítások hozzá egy eszközkonfigurációs profilt az Intune-ban, �
 - **SIM kártya hibát jelző párbeszédpanele (csak mobil)**: Hibaüzenet megjelenítésének letiltása az eszközön, ha észlelhető SIM-kártya nem blokkolja.
 - **Szabadkézi munkaterület**: Letiltása a felhasználók hozzáférjenek a szabadkézi munkaterülethez. **Nincs konfigurálva** bekapcsolja az ink-munkaterületen, és a felhasználó számára engedélyezett, a zárolási képernyőn.
 - **Automatikus újbóli üzembe helyezés**: Lehetővé teszi, hogy törli az összes felhasználói adatot és beállítást rendszergazdai jogosultságokkal rendelkező felhasználóknak **CTRL + Win + R** , az eszköz zárolási képernyőjén. Ennek hatására automatikusan megtörténik az eszköz újbóli konfigurálása és regisztrálása felügyeletre.
-- **Csatlakozzon a hálózathoz (csak Windows Insider) eszköz telepítése során, hogy a felhasználók**: Válasszon **megkövetelése** , az eszköz csatlakozik a hálózathoz, mielőtt folytatná a hálózat lap korábbi Windows 10-es telepítés során. Bár ez a funkció előzetes verzióban érhető el, a Windows insider build 1809 vagy újabb szükséges ezt a beállítást.
+- **Csatlakozzon a hálózathoz (csak Windows Insider) eszköz telepítése során, hogy a felhasználók**: Válasszon **megkövetelése** , az eszköz csatlakozik a hálózathoz, mielőtt a korábbi a hálózat lap a Windows 10-es telepítés során. Bár ez a funkció előzetes verzióban érhető el, a Windows insider build 1809 vagy újabb szükséges ezt a beállítást.
+
+  Ha egy eszköz nem rendelkezik hálózati kapcsolattal a Windows 10-es telepítés során, ez a beállítás nem vonatkozik. A beállítás életbe lép az eszköz törlését vagy alaphelyzetbe állítása a következő alkalommal. Tehát, előfordulhat, hogy nem teljesen új eszközökre vonatkoznak. További Intune konfigurációra, például az eszköz legyen regisztrálva és konfigurációs beállítások az Intune által felügyelt. De miután regisztrált, és házirendeket fogad, majd alaphelyzetbe állíthatja az eszközt a beállítás a következő Windows-telepítés során kényszeríti.
+
 - **Közvetlen memória-hozzáférés**: **Blokk** megakadályozza, hogy közvetlen memória-hozzáférés (DMA) az összes gyakran használt adatok moduláris PCI alsóbb rétegbeli port mindaddig, amíg a felhasználó bejelentkezik a Windows. **Engedélyezett** (alapértelmezett) engedélyezi a hozzáférést közvetlen memória-Hozzáférést, akkor is, ha egy felhasználó nem jelentkezett be.
 
   CSP: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)

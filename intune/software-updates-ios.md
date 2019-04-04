@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/06/2019
+ms.date: 04/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3a6cf207c58194030a4e4bab8a02f76cd97b338
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: de73aa069765ce75068781674ff24d097346cdba
+ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57398613"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58899027"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>IOS-szoftverfrissítési szabályzatok hozzáadása az Intune-ban
 
@@ -41,7 +41,11 @@ Az eszköz körülbelül 8 óránként jelentkezik be az Intune-ba. Ha az eszkö
 
 4. Válassza ki **beállítások > konfigurálása**. Adja meg a következő beállításokat:
 
-    - **Válassza ki a frissítések telepítésének elkerüléséhez alkalommal**: Adja meg egy korlátozott időkeretet, amikor nem kényszerített telepíti a frissítéseket. A korlátozott időtartamon beállításakor adja meg a következő adatokat:
+    - **Válassza ki a frissítések telepítésének elkerüléséhez alkalommal**: Adjon meg egy korlátozott időkeret, amikor nem kényszerített telepíti a frissítéseket. 
+      - Egynapos blokkok nem támogatottak, és nem fognak működni. Például ne konfigurálja a szabályzat egy *kezdési idő* du. 8- és a egy *befejezési idő* , reggel 6 óra.
+      - Egy szabályzatot, amely 12 AM-nél kezdődik és ér véget, Éjfélkor lesz kiértékelve, mint 0 óra és a nem a 24 órát, aminek eredményeképpen nincs korlátozás.
+
+      A korlátozott időtartamon beállításakor adja meg a következő adatokat:
 
       - **Nap**: Válassza ki a nap, hét, ha nincsenek telepítve a frissítések. Ellenőrizze például, hétfőn, szerdán és pénteken ahhoz, hogy ezek a napok való telepítése is.
       - **Időzóna**: Válasszon időzónát.
@@ -58,6 +62,8 @@ Az eszköz körülbelül 8 óránként jelentkezik be az Intune-ba. Ha az eszkö
         - A céloznia ugyanazokat a felhasználókat, mint az eredeti házirenddel.
 
       Ütközés esetén ez a beállítás nem módosítja *, kivéve, ha* a két érték azonosak. Ütközés elkerülése érdekében ügyeljen arra, módosítsa vagy távolítsa el a meglévő szabályzatot erről a helyről a portálon.
+      > [! [Fontos]  
+      > Egy szabályzatot, amely rendelkezik egy *kezdési idő* és *befejezési idő* éjféltől set ki lesz értékelve, mint 0 óra, és nem 24 óra. Ennek eredményeképpen nincs korlátozás.  
 
 5. Válassza ki **OK** > **létrehozás** a módosítások mentéséhez és a szabályzat létrehozásához.
 
@@ -79,7 +85,7 @@ Az Intune támogatási csapat útmutatásért lásd: [látható-e a felügyelt e
     3. Adja meg a feketelistás órák kezdő és záró idejét
 
     > [!NOTE]
-    > Ha a **Kezdési idő** és a **Befejezési idő** egyaránt déli 12 óra, akkor a karbantartási időszak ellenőrzése kikapcsolt állapotban lesz.
+    > Ha a **kezdési idő** és **befejezési idő** mindkét beállítás 12 óra, akkor az Intune nem ellenőrzi a korlátozások mikor telepítse a frissítéseket. Ez azt jelenti, hogy rendelkezik a konfigurációk, mint **válassza ki a frissítések telepítésének elkerüléséhez alkalommal** figyelmen kívül hagy, és a frissítések bármikor telepíthetik.  
 
 ## <a name="assign-the-policy-to-users"></a>A szabályzat hozzárendelése a felhasználókhoz
 

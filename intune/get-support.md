@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/28/2019
+ms.date: 04/03/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: df289d84cb78f5cb08db6ca66a0db9b7443171f5
-ms.sourcegitcommit: e23e78a563928ed2b2cbc588f2aa65678f7bb409
+ms.openlocfilehash: cbcc1d81f4ac52ed78a1addbcaefc7d4f9953362
+ms.sourcegitcommit: 219bbbfb44eba70ac2b751970d8b4b778cd28416
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58618462"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "58920257"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Hogyan kérhet támogatást az Intune-hoz
 
@@ -51,7 +51,7 @@ A Súgó és támogatás élmény az Intune-ban érhető el a [Microsoft 365-kez
 
 Az új felületet hasonló a látható a [Microsoft 365 felügyeleti központban](https://admin.microsoft.com/), és lecseréli azokat az előző súgó, és felület támogatja. 
 
-Súgó és támogatás elérésére használja a következőt:  
+Súgó és támogatás elérésére használja a következő beállításokat:  
 - **Eszköz kezelési irányítópult:**
    - Válassza ki bármelyik elérhető lehetőség **Súgó és támogatás**
    - Válassza ki a **?** a portál jobb felső sarkában található ikonra
@@ -72,7 +72,7 @@ Ebben a nézetben a következő műveleteket végezheti el:
 4. [Olyan támogatási eseteket tekinthet meg](#view-support-cases), amelyeket Ön nyitott korábban ezen új munkafolyam segítségével  
 
 ### <a name="specify-details-about-an-issue"></a>Adott probléma részletezése
-A súgó megnyitásához, és támogatja az új felhasználói felület által támogatott helyről a **segítségre van szüksége?**  oldal nyílik meg. Ezen az oldalon részletesen kifejtheti az adott problémát. Amikor elkezdi beírni a részleteket, a konzol olyan általános témákat dob fel, amelyek az Ön által használt kulcsszavakon alapulnak. Választhat a felkínált lehetőségek közül, vagy befejezheti az Önt érintő probléma kifejtését. Ha az Önt érintő problémát írja be, akkor kérdését a **Támogatás kérése** lehetőséget választva küldheti el. Miután elküldött egy lekérdezést, a konzol, amely segíthet a probléma megoldásához környezetfüggő adatokat adja vissza.
+A súgó megnyitásához, és támogatja az új felhasználói felület által támogatott helyről a **segítségre van szüksége?** lap megnyitásakor. Ezen az oldalon részletesen kifejtheti az adott problémát. Amikor elkezdi beírni a részleteket, a konzol olyan általános témákat dob fel, amelyek az Ön által használt kulcsszavakon alapulnak. Válasszon ki egy ajánlott lehetőség, vagy fejezze be a saját probléma leírása. Ha az Önt érintő problémát írja be, akkor kérdését a **Támogatás kérése** lehetőséget választva küldheti el. Miután elküldött egy lekérdezést, a konzol, amely segíthet a probléma megoldásához környezetfüggő adatokat adja vissza.
 
 A következőkben példákat láthat a beküldhető kérdésekre:
   
@@ -86,7 +86,7 @@ Miután kiválasztotta a felkínált lehetőségek egyikét, vagy elküldte a sa
 ![Találatok megtekintése](./media/get-support/view-results.png)
 
 ### <a name="get-support"></a>Támogatás kérése
-Ha az önsegítő vagy a webalapú útmutatás nem segít a probléma megoldásában, a konzol használatával e-mailes vagy telefonos problémamegoldási kérést nyithat.  
+A önsegítő vagy webes útmutatót a probléma elhárításához nem segít, ha a konzol használatával nyisson meg egy e-mail cím vagy telefonszám támogatási problémát.  
 A **Segítségre szorul?** oldalon válassza ki a használni kívánt lehetőséget.  
 
 - E-mailes kérés esetén adja meg e-mail-címét, és tetszőlegesen csatolmányokat is küldhet levelében. A kérés megnyitásához válassza a **Küldés** elemet.  
@@ -130,7 +130,7 @@ A következő információkat ismerteti az Azure Súgó és támogatási szolgá
    - **Szolgáltatás**: **A Microsoft Intune-ban**
    - **Probléma típusa**: A probléma típusaként válassza a legördülő menüből.
    - **A probléma altípus**: A legördülő menüből válassza ki a probléma altípusa.
-   - **Tulajdonos**: Röviden ismertesse a problémát, amely merülnek fel.
+   - **Tulajdonos**: Röviden ismertesse a problémát, kapcsolatban segítségre van szüksége.
 
    ![Az alapvető beállítások lapján a Súgó + támogatás – új támogatási kérelem lap képe](./media/get-support/help-new-support-case-basics.png)
 
@@ -141,7 +141,7 @@ A következő információkat ismerteti az Azure Súgó és támogatási szolgá
 5. Az a **részletek** fülre, adja meg a részleteket a problémát, a támogatási módszer, a kapcsolattartási adatokat, majd **tovább: Felülvizsgálat + létrehozás**.
 
    ![A részleteket tartalmazó lapot a a Súgó + támogatás – új támogatási kérelem lap képe](./media/get-support/help-new-support-case-details.png)
-6. Tekintse át az adatokat, ellenőrizze, hogy javítsa ki, és válassza a **létrehozás** a támogatási kérést szeretne beküldeni.
+6. Tekintse át az adatokat, győződjön meg arról, hogy helyesen szerepel-e, és válassza a **létrehozás** a támogatási kérést szeretne beküldeni.
 
    ![A felülvizsgálat képe + lap létrehozása az új támogatási kérelem lap](./media/get-support/help-new-support-case-create.png)
 
@@ -184,7 +184,6 @@ A támogatási kérelmeket az Azure Portalon tekintheti meg. Ehhez tegye a köve
 2. A **Súgó és támogatás** lapon megtekintheti a **legutóbbi támogatási kérelmek** listáját, és az egyes elemeket kijelölve további információt kaphat róluk.
 
 ## <a name="additional-resources"></a>További források
-- [Kapcsolatfelvétel a Microsoft Intune telefonos tanácsadással](phone-support-contact.md)
 - [Számlázási és előfizetés-kezelési támogatás](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 - [Mennyiségi licencelés](https://go.microsoft.com/fwlink/p/?LinkID=282015)
 - [A Intune hibáinak elhárítása](help-desk-operators.md)
