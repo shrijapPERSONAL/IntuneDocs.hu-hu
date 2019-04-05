@@ -17,12 +17,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0985f09ad758403e3461ee00f35af949d0d35bc3
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 700bded8930385c5576a198dc0364c64066121e5
+ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798367"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041702"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>A Vállalati portál alkalmazás üzeneteinek ismertetése a végfelhasználókkal
 
@@ -111,6 +111,34 @@ Ha nem adta hozzá a Céges portált az **Engedélyezett alkalmazások** vagy a 
 ### <a name="what-it-means"></a>Mit jelent
 
 Adja hozzá a céges portál a **engedélyezett alkalmazások** vagy **mentesített alkalmazások** a Windows Information Protection (WIP) alkalmazásvédelmi szabályzat listájában. További információ: [A Windows Információvédelem (WIP) alkalmazásvédelmi szabályzatainak létrehozása és bevezetése az Intune használatával](windows-information-protection-policy-create.md).
+
+## <a name="approve-a-ios-company-app-line-of-business-app-on-your-ios-device"></a>Hagyja jóvá az iOS vállalati alkalmazások (üzleti alkalmazás) iOS-eszközön 
+
+### <a name="where-it-appears"></a>Megjelenési helye
+iOS-alkalmazásokat a szervezet által fejlesztett, amelyek nem érhető el az App Store nem talál megbízhatónak a eszköz alapértelmezés szerint. Ha ilyen vállalati portállal alkalmazásokat telepíteni, és indítsa el az alkalmazást, a következő üzenet jelenik meg:
+
+![iOS-alkalmazás üzenet - nem megbízható nagyvállalati fejlesztő](./media/end-user-company-portal-messages/end-user-company-portal-messages-01.png)
+
+### <a name="what-it-means"></a>Mit jelent
+Ez az üzenet azt jelenti, hogy módosítania kell az iOS-eszközbeállítások jóváhagyása és telepítése az iOS-eszközön a vállalat által fejlesztett alkalmazás.
+
+A vállalati portálon az ilyen alkalmazások telepítésekor, és indítsa el az alkalmazást, az alkalmazás jóváhagyása a letöltés után az alábbi lépésekkel:
+
+1. Után (az üzletági alkalmazásokat) telepített munkahelyi alkalmazás elindítása, látni fogja a "Nem megbízható nagyvállalati fejlesztő" üzenet. <br>
+   Nyomja meg **Mégse**.
+2. Navigáljon a **beállítások** > **általános** > **Eszközkezelés**.
+
+   ![iOS-eszköz UI - kezelés](./media/end-user-company-portal-messages/end-user-company-portal-messages-02.png)
+
+3. Válassza ki **felügyeleti profil** > **vállalati alkalmazás**.
+4. Válassza ki a fejlesztői nevét.
+5. Nyomja meg **megbízható _fejlesztő neve_**.
+6. Erősítse meg az alkalmazás kiválasztásával **megbízható** az alkalmazás telepítése az előugró üzenet.
+
+   ![iOS-eszköz UI - megbízhatósági alkalmazás üzenet](./media/end-user-company-portal-messages/end-user-company-portal-messages-03.png)
+
+    Indítsa el, és használhassák a vállalati alkalmazás kell lennie.
+
 
 ### <a name="see-also"></a>Lásd még:
 [Mit kell tudniuk a végfelhasználóknak az Intune használatáról?](end-user-educate.md)

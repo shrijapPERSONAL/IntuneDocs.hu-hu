@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ed2a16e4cc34d68342f8cd5b21daeec46c22ff9d
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 1080ae8a73223ad16445d0d2233434faa818b04b
+ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799553"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041690"
 ---
 # <a name="set-enrollment-restrictions"></a>Regisztrációs korlátozások beállítása
 
@@ -43,10 +43,11 @@ Többek között az alábbi regisztrációs korlátozásokat hozhatja létre:
   - iOS
   - macOS
   - Windows
-- Platform operációsrendszer-verziók iOS, Android, androidos munkahelyi profilos és Windows rendszerű eszközökhöz. (Csak a Windows 10-es verziók használhatók. Hagyja üresen, ha a Windows 8.1 engedélyezett.)
+  - Windows Mobile
+- Platform operációsrendszer-verziója IOS, Android, Android munkahelyi profilt, a Windows és Windows Mobile. (Csak a Windows 10-es verziók használhatók. Hagyja üresen, ha a Windows 8.1 engedélyezett.)
   - Minimális verzió.
   - Maximális verzió.
-- Személyes tulajdonú eszközök korlátozása (csak iOS, Android, androidos munkahelyi profil, macOS vagy Windows esetén).
+- Személyes tulajdonú eszközök korlátozása (iOS, Android, Android munkahelyi profilt, macOS, Windows és Windows Mobile csak).
 
 ## <a name="default-restrictions"></a>Alapértelmezett korlátozások
 
@@ -74,7 +75,7 @@ Az eszköztípuskorlátok beállításait az alábbi lépésekkel módosíthatja
 1. Jelentkezzen be az Azure portálra.
 2. Válassza a **További szolgáltatások** lehetőséget, írja be az **Intune** keresési kifejezést, majd válassza az **Intune** lehetőséget.
 3. Válassza az **Eszközök regisztrálása** > **Regisztrációs korlátozások** lehetőséget.
-4. Az **Eszköztípus-korlátozások** területen válassza ki a beállítani kívánt korlátot, majd válassza a **Tulajdonságok** > **Platformok kijelölése** lehetőséget. Adja meg az **Engedélyezés** vagy a **Blokkolás** beállítást az összes felsorolt platformhoz.
+4. A **eszköztípus-korlátozások**, válassza ki a beállítani kívánt > **tulajdonságok** > **válassza ki a platformok**. Adja meg az **Engedélyezés** vagy a **Blokkolás** beállítást az összes felsorolt platformhoz.
     ![Képernyőkép platform tiltásához vagy blokkolásához](media/enrollment-restrictions-set/platform-allow-block.png)
 5. Válassza az **OK** gombot.
 6. Válassza a **Platformok konfigurálása** lehetőséget.
@@ -99,12 +100,12 @@ Ha letiltja a személyes tulajdonban lévő windowsos eszközök regisztrációj
 Windows vállalati regisztrációnak minősülnek az alábbi módszerek:
  - A felhasználó [készülékregisztráció-kezelői fiókot]( device-enrollment-manager-enroll.md) használ a regisztráláshoz.
 - Az eszközregisztráció a [Windows AutoPilot](enrollment-autopilot.md) használatával történik.
-- Az eszköz a Windows Autopilottal van regisztrálva, de az nem egy csak MDM-regisztrációs lehetőség a Windows-beállításokban.
+- Az eszköz regisztrálva van a Windows Autopilot, de nem egy mobileszköz-kezelési regisztráció egyetlen lehetőség a Windows-beállítások.
 - Az eszköz IMEI-száma szerepel az **Eszközregisztráció** > **[Vállalati eszközazonosítók](corporate-identifiers-add.md)** listán. (Windows Phone 8.1-hez nem támogatott)
 - Az eszközregisztráció [tömeges kiépítési csomagban](windows-bulk-enroll.md) történik.
 - Regisztrálja az eszközt a csoportházirend-objektum, keresztül vagy [megosztott kezelésre az SCCM-ből az automatikus regisztráció](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md).
  
-Az alábbi regisztrációkat cégesként jelzi az Intune, de le lesznek tiltva, mert nem kínálják fel az Intune-rendszergazdának az eszközönkénti szabályozást:
+Az alábbi regisztrációját az Intune a vállalati lesznek megjelölve. De az eszköz vezérlés az Intune-rendszergazda nem kínálnak, mivel azok lesz blokkolva:
  - [Automatikus MDM-regisztráció](windows-enroll.md#enable-windows-10-automatic-enrollment) és [Azure Active Directory-csatlakozás a Windows beállítása során](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*.
 - [Automatikus MDM-regisztráció](windows-enroll.md#enable-windows-10-automatic-enrollment) és [Azure Active Directory-csatlakozás a Windows beállításaiból](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)*.
  
@@ -127,12 +128,12 @@ Az eszközszámkorlátok beállításait az alábbi lépésekkel módosíthatja:
 6. Kattintson a **Mentés** gombra.
 
 
-BYOD regisztrációk során a felhasználóknak megjelenik egy értesítés, értesíti, ha a regisztrált eszközök maximális számát. iOS rendszer esetében ez az alábbi módon jelenik meg:
+BYOD regisztrációk során a felhasználóknak megjelenik egy értesítés, értesíti, ha a regisztrált eszközök maximális számát. Ha például az iOS esetében:
 
 ![Az iOS-eszközön megjelenő limitértesítés](./media/enrollment-restrictions-ios-set-limit-notification.png)
 
 > [!IMPORTANT]
-> Eszközszámkorlát nem vonatkozik a következő Windows-regisztráció típusok:
+> Regisztrált eszközök maximális számának a következő Windows-regisztráció típusokhoz nem érvényesek:
 > - Közösen kezelt regisztrációk
 > - Csoportházirend-objektum regisztrációk
 > - Az Azure Active Directoryhoz csatlakoztatott regisztrációk

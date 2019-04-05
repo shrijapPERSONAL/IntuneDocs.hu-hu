@@ -1,12 +1,12 @@
 ---
 title: Modern hitelesítés nélküli alkalmazások blokkolása az Intune-ban
 titleSuffix: Microsoft Intune
-description: További információ a nem a Microsoft Intune-nal modern authentication (ADAL) használó alkalmazások blokkolása.
+description: Tudnivalók az alkalmazások és modern authentication (ADAL) a Microsoft Intune-nal.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 04/03/2019
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -18,29 +18,29 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f75e0de7f7738c3d2c9ff9963edb9e77f9eacd08
-ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.openlocfilehash: 9ca96f36f8813d80c7ebb07bfb3bd65f8aa0b392
+ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58514433"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041678"
 ---
-# <a name="block-apps-that-do-not-use-modern-authentication-adal"></a>Modern hitelesítés nélküli alkalmazások blokkolása (ADAL)
+# <a name="block-apps-that-dont-use-modern-authentication-adal"></a>Nem modern authentication (ADAL) használó alkalmazások letiltása
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Alkalmazásalapú feltételes hozzáférés az alkalmazásvédelmi szabályzatokkal védett alkalmazások használatával támaszkodjon [modern hitelesítést](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a), azaz az OAuth2 implementációja. A legújabb Office asztali és mobil alkalmazások modern hitelesítést használnak. Előfordulhatnak azonban olyan harmadik féltől származó alkalmazások és régebbi Office-alkalmazások, hogy a felhasználó más hitelesítési módszerek, például alapszintű, vagy űrlap alapú hitelesítéssel.
 
-## <a name="block-apps"></a>Alkalmazások letiltása
+## <a name="block-access-to-apps"></a>Alkalmazások elérésének blokkolása
 
-A nem modern hitelesítést használó alkalmazásokhoz való hozzáférés blokkolása, javasoljuk, hogy az alábbi módszerek:
+Letiltja a nem modern hitelesítést használó alkalmazásokhoz való hozzáférés, használja az Intune alkalmazásvédelmi szabályzatai feltétel hozzáférés megvalósításához. További információkért lásd: [alkalmazásalapú feltételes hozzáférés Intune-nal](app-based-conditional-access-intune.md).
 
-- Állítsa be az ADFS-jogcímszabályokat a nem modern hitelesítési protokollok letiltására. Lépésenkénti útmutatás: 3. forgatókönyv – [Az O365-höz való hozzáférés teljes letiltása a böngészőalapú alkalmazások kivételével](https://technet.microsoft.com/library/dn592182.aspx).
-- A **Exchange és SharePoint Online**, a feltételes hozzáférés használata, és a PowerShell-parancsmag segítségével Set-SPOTenant használata a SharePoint online. Részletes útmutatásért lásd: [A SharePoint Online és az Exchange Online beállítása az Azure Active Directoryhoz való feltételes hozzáféréshez](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication#legacy-authentication-protocols).
+## <a name="additional-information"></a>További információ
 
-
->[!IMPORTANT]
->Alkalmazásalapú feltételes hozzáférés nem használható az Azure Active Directory (Azure AD) tanúsítványalapú hitelesítéssel. A fentiek közül csak az egyik lehet egyszerre konfigurálva.
+Azure AD feltételes hozzáférésével kapcsolatos további információkért lásd a következő témaköröket:
+- [Mi az az Azure Active Directory feltételes hozzáférés?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)
+- [Alkalmazásalapú feltételes hozzáférés működése](app-based-conditional-access-intune.md#how-app-based-conditional-access-works)
+- [Az Azure Active Directory feltételes hozzáférés beállítása a SharePoint Online és Exchange online-hoz](https://docs.microsoft.com/azure/active-directory/conditional-access/conditional-access-for-exo-and-spo)
 
 ## <a name="next-steps"></a>További lépések
 
