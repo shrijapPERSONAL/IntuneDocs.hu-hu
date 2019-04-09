@@ -5,7 +5,7 @@ keywords: sdk, Xamarin, intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/16/2018
+ms.date: 04/08/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd162f6af256c104c04374290a695141cdcc26f6
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d42fab929d6fa3e7fbaed8e9557573ebbaa1f3ad
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566199"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292350"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin Bindings
 
@@ -110,6 +110,8 @@ Az alkalmazás meg kell határoznia egy `Android.App.Application` osztályból s
     public TaskrApp(IntPtr handle, JniHandleOwnership transfer)
         : base(handle, transfer) { }
 ```
+> [!NOTE]
+> A MAM Xamarin-kötések hibát okozhat az alkalmazás, amikor a hibakeresési módban rendszerbe állított. Áthidaló megoldásként a `Debuggable=false` attribútumot hozzá kell adni a `Application` osztály és a `android:debuggable="true"` jelzője el kell távolítani a jegyzékfájl manuálisan adta meg.
 
 #### <a name="enable-features-that-require-app-participationapp-sdk-androidmdenable-features-that-require-app-participation"></a>[Alkalmazás részvételét igénylő szolgáltatások engedélyezése](app-sdk-android.md#enable-features-that-require-app-participation)
 Példa: PIN-kód az alkalmazáshoz szükséges, hogy
@@ -173,4 +175,4 @@ Ez elvárható, hiszen a Remapper Xamarin osztályok az öröklési módosítja,
 > A Remapper újra ír egy függőség használ a Visual Studio IntelliSense automatikus kiegészítését. Ezért szükségessé töltse be újra, és a projekt újraépítéséhez, az IntelliSense helyesen ismeri fel a módosítások a Remapper hozzáadásakor.
 
 ## <a name="support"></a>Támogatás
-Ha vállalata már Intune-ügyfél, akkor a Microsoft támogató szolgálat képviselőjével együttműködve nyisson meg egy támogatási jegyet, és hozzon létre bejelentést [a GitHub hibabejelentő oldalán](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues), mi pedig segítünk, amint tudunk. 
+Ha vállalata már Intune-ügyfél, együttműködve nyisson egy támogatási jegyet, és probléma létrehozása a Microsoft támogató szolgálat képviselőjével [a GitHub hibabejelentő oldalán](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) , mi pedig segítünk, amint tudunk. 

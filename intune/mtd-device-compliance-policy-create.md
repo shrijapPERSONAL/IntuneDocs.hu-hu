@@ -1,5 +1,6 @@
 ---
-title: MTD-eszközmegfelelőségi szabályzat létrehozása a Microsoft Intune-nal |} A Microsoft Intune-ban
+title: MTD-eszközmegfelelőségi szabályzat létrehozása a Microsoft Intune-nal
+titleSuffix: Microsoft Intune
 description: Létrehozhat egy olyan Intune-beli eszközmegfelelőségi szabályzatot, amely az MTD-partner fenyegetettségi szintjeivel határozza meg, hogy egy mobileszköz hozzáférhet-e a céges erőforrásokhoz.
 keywords: ''
 author: brenduns
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab46c55e7655e2c1261c69addf4d6746f12fe303
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: fe3561bd664842e79f50f738307ce6a026464565
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396250"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292262"
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>A Mobile Threat Defense (MTD) eszközmegfelelőségi szabályzatának létrehozása az Intune-nal
 

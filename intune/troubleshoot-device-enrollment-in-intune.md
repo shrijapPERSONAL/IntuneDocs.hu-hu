@@ -1,6 +1,7 @@
 ---
 title: Eszközök regisztrálásával kapcsolatos problémák elhárítása
-description: Javaslatok az eszközök regisztrálásával kapcsolatos problémák megoldásához.
+titleSuffix: Microsoft Intune
+description: Javaslatok az eszközök regisztrálásával kapcsolatos problémát a Microsoft Intune-ban.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,18 +17,18 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
+ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: add5ee699b652aacfa3e3b2bfd089905a881fe11
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 06a8bd8d0a46b7d7eed8efb4cb8b4c2d4e21f77d
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461362"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292439"
 ---
-# <a name="troubleshoot-device-enrollment-in-intune"></a>Eszközök regisztrálásával kapcsolatos problémák elhárítása az Intune-ban
+# <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>A Microsoft Intune-ban eszközök regisztrálásával kapcsolatos problémák elhárítása
 
-Ez a cikk az eszközök regisztrálásával kapcsolatos problémák megoldásához nyújt segítséget. Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kérhet támogatást az Intune-hoz](get-support.md) című témakörben talál további részleteket a segítségkéréshez.
+Ez a cikk ismerteti a javaslatok az [eszközregisztráció](device-enrollment.md) problémákat. Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kérhet támogatást az Intune-hoz](get-support.md) című témakörben talál további részleteket a segítségkéréshez.
 
 
 ## <a name="initial-troubleshooting-steps"></a>Első hibaelhárítási lépések

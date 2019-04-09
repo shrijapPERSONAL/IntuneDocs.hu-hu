@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 189e1fdebeb3856c3e65d51d509b190a63d8372b
-ms.sourcegitcommit: 219bbbfb44eba70ac2b751970d8b4b778cd28416
+ms.openlocfilehash: 9dca4dc0b0b93d8466835ce0518268a548f3174a
+ms.sourcegitcommit: 9daaeba9a960c50efcc951856234fbfec3635737
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "58920261"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59231758"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Intune – a hálózati konfiguráció követelményei és sávszélessége
 
@@ -153,15 +153,13 @@ A következő táblázat az Intune-ügyfél által elért portokat és szolgált
 
 ### <a name="apple-device-network-information"></a>Apple-eszközhálózati információ
 
-|         Állomásnév         |                                        URL (IP-cím/alhálózat)                                        |  Protokoll  |     Port     |                          Eszköz                           |
-|--------------------------|-------------------------------------------------------------------------------------------------------|------------|--------------|-----------------------------------------------------------|
-|      Felügyeleti konzol       |                                  gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |                    Apple iOS és macOS                    |
-|      Felügyeleti konzol       |                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |                    Apple iOS és macOS                    |
-|      Felügyeleti konzol       | Apple iTunesitunes.apple.com, \*.mzstatic.com, \*.phobos.apple.com, \*.phobos.apple.com.edgesuite.net |    HTTP    |      80      |                    Apple iOS és macOS                    |
-|        PI-kiszolgáló         |                gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8)                 |    TCP     |  2195, 2196  |         Apple iOS és macOS esetén felhőalapú üzenetekhez.          |
-|     Eszközszolgáltatások      |                                        gateway.push.apple.com                                         |    TCP     |     2195     |                           Apple                           |
-|     Eszközszolgáltatások      |                                        feedback.push.apple.com                                        |    TCP     |     2196     |                           Apple                           |
-|     Eszközszolgáltatások      |   Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net   |    HTTP    |      80      |                           Apple                           |
-| Eszközök (Internet/Wi-Fi) |                                 #-courier.push.apple.com(17.0.0.0/8)                                  |    TCP     | 5223 és 443 | Csak Apple. &#39;#&#39; véletlenszerű szám 0 és 200 között. |
-| Eszközök (Internet/Wi-Fi) |                           phobos.apple.comocsp.apple.comax.itunes.apple.com                           | HTTP/HTTPS |  80 vagy 443   |                        Csak Apple                         |
 
+|Használt|Hostname (IP address/subnet)|Protokoll|Port|
+|-----|--------|------|-------|
+|Leküldéses értesítések fogadásának via Apple Push Notification Service (APNS) az Intune szolgáltatástól. Az Apple dokumentációjában talál [Itt](https://support.apple.com/en-us/HT203609)|                                    gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |
+|-N keresztül az Apple Push Notification Service (APNS) Intune-hoz küldhető visszajelzés|                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |
+|Beolvasása és a tartalom Apple kiszolgálókról történő megjelenítése|itunes.apple.com<br>\*. itunes.apple.com<br>\*.mzstatic.com<br>\*.phobos.apple.com<br> \*.phobos.itunes-apple.com.akadns.net |    HTTP    |      80      |
+|APNS-kiszolgálókkal való kommunikációhoz|#-courier.push.apple.com (17.0.0.0/8)<br>'#' egy véletlenszerű szám 0-50-re.|    TCP     |  5223 és 443  |
+|Különböző funkcióit, többek között a hozzáférés a webes, iTunes Store-ban, macOS app Store áruházból, icloud-alapú, üzenetkezelés, stb. |phobos.apple.com<br>ocsp.apple.com<br>AX.iTunes.apple.com<br>ax.itunes.apple.com.edgesuite.net| HTTP/HTTPS |  80 vagy 443   |
+
+További információkért tekintse meg az Apple [szoftvertermékek Apple által használt TCP és UDP-portok](https://support.apple.com/en-us/HT202944), [kiszolgálókapcsolatok gazdagép és az iTunes macOS, iOS és az iTunes kapcsolatos háttér-folyamatok](https://support.apple.com/en-us/HT201999), és [Ha a macOS- és iOS-ügyfelek nincsenek rájuk vonatkozó Apple leküldéses értesítéseket](https://support.apple.com/en-us/HT203609).

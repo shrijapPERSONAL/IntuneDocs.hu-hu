@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8712fc49bce8237e717a1a38e63ec334509e3217
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6f1cdacf4b4d26e9db9b4090805f697927a399c5
+ms.sourcegitcommit: 9daaeba9a960c50efcc951856234fbfec3635737
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400466"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59231807"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>SCEP-tanúsítványok konfigurálása és használata az Intune-nal
 
@@ -47,7 +47,7 @@ Az NDES tanúsítvány-összekötő a Federal Information Processing Standard (F
   
 - **Az Azure AD-alkalmazásproxy** (nem kötelező): Az Azure AD-alkalmazásproxy közzététele az NDES-kiszolgálón az Internet helyett egy dedikált webalkalmazás-proxykiszolgálóként (WAP) kiszolgáló is használható. További információért lásd: [Helyszíni alkalmazások biztonságos távoli elérése](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
 
-#### <a name="additional"></a>További
+#### <a name="additional"></a>Továbbiak
 
 - A WAP-ot futtató kiszolgálón [telepíteni kell egy frissítést](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) ahhoz, hogy az támogassa az NDES által használt hosszú URL-eket. Ez a frissítés megtalálható a [2014. decemberi kumulatív frissítésben](http://support.microsoft.com/kb/3013769), illetve önállóan a [KB3011135-as jelű frissítésként](http://support.microsoft.com/kb/3011135).
 - A WAP-kiszolgálónak rendelkeznie kell egy SSL-tanúsítvánnyal, amely a külső ügyfeleknek közzétett nevet egyezteti, valamint meg kell bíznia az NDES-kiszolgálón használt SSL-tanúsítványban. E tanúsítványok segítségével a WAP-kiszolgáló képes megszakítani az ügyfelek SSL-kapcsolatát, illetve új SSL-kapcsolatot létrehozni az NDES-kiszolgálóval.
@@ -225,7 +225,7 @@ Ebben a lépésben a következőket fogja elvégezni:
 3. Az NDES-kiszolgálóra rendkívül hosszú URL-címek (lekérdezések) érkeznek, melyekhez két beállításjegyzékbeli bejegyzést kell felvennie:
 
 
-   |                        Hely                        |      Érték      | Typo  |      Adatok       |
+   |                        Hely                        |      Value      | Typo  |      Adatok       |
    |--------------------------------------------------------|-----------------|-------|-----------------|
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (decimális) |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (decimális) |
@@ -299,12 +299,13 @@ Ebben a lépésben a következőket fogja elvégezni:
 > A Microsoft Intune Tanúsítvány-összekötőt külön Windows-kiszolgálóra **kell** telepíteni. A vállalati hitelesítésszolgáltatóra (CA) nem telepíthető. Emellett ugyanarra a kiszolgálóra **kell** telepíteni, mint amelyikre a Hálózati eszközök tanúsítványigénylési szolgáltatása (NDES) szerepkör is telepítve lett.
 
 1. Az [Azure Portalon](https://portal.azure.com) kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
-2. Válassza az **Eszközkonfiguráció** > **Hitelesítésszolgáltató** > **Hozzáadás** lehetőséget.
-3. Töltse le és mentse az összekötő fájlt. Mentse egy olyan helyre, amely elérhető a kiszolgálóról, amelyre az összekötő telepítve lesz.
+2. Válassza ki **eszközkonfiguráció** > **összekötők minősítési** > **Hozzáadás**.
+3. Töltse le és mentse az összekötőt SCEP-fájl. Mentse egy olyan helyre, amely elérhető a kiszolgálóról, amelyre az összekötő telepítve lesz.
 
-    ![ConnectorDownload](/media/certificates-pfx-configure/certificates-download-connector.png)
+   ![ConnectorDownload](./media/certificates-scep-configure/download-certificates-connector.png)
 
-4. A letöltés befejezése után lépjen arra a kiszolgálóra, amely a Hálózati eszközök tanúsítványigénylési szolgáltatása (NDES) szerepkört üzemelteti. Ha ez megvan:
+
+4. A letöltés befejezése után nyissa meg a hálózati eszközök tanúsítványigénylési szolgáltatás (NDES) futtató kiszolgáló. Ha ez megvan:
 
     1. Győződjön meg róla, hogy telepítve van-e a .NET 4.5-keretrendszer, mivel arra szüksége van az NDES tanúsítvány-összekötőjének. A .NET 4.5-keretrendszer automatikusan részen a Windows Server 2012 R2 és újabb verzióknak.
     2. Futtassa a telepítőprogramot (**NDESConnectorSetup.exe**). A telepítés során az NDES házirendmodulja és a CRP (tanúsítványregisztrációs pont) webszolgáltatás is települ. A CRP webszolgáltatás, melynek neve CertificateRegistrationSvc, alkalmazásként fut az IIS-ben.

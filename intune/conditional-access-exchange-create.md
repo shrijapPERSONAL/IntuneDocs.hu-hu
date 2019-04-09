@@ -1,5 +1,5 @@
 ---
-title: Az Exchange feltételes hozzáférési szabályzat létrehozása |} A Microsoft Intune-ban
+title: Feltételes Exchange-hozzáférési szabályzat létrehozása
 titleSuffix: Microsoft Intune
 description: Feltételes hozzáférési szabályzat konfigurálása a helyszíni Exchange-hez és régi Dedikált Exchange Online-hoz az Intune-nal.
 keywords: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca9531bfd16c68c23af05e3db3aa084b26adb0dc
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: d9b03bf1cf4b19d66ed26e7a21c965d8297e1b84
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798521"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292269"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Feltételes hozzáférési szabályzat létrehozása a helyszíni Exchange-hez és régi Dedikált Exchange Online-hoz
 

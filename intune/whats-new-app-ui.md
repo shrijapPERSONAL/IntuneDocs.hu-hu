@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0dbeed85ea368267ddfcf61bb919729b64dc3dde
-ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
+ms.openlocfilehash: e1c4266ad4ae877eadb29b7f35ef0e955028a4b9
+ms.sourcegitcommit: 9daaeba9a960c50efcc951856234fbfec3635737
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "59041714"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59231853"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Felhasználói felületi frissítések az Intune végfelhasználói alkalmazásaiban
 Ismerje meg a legújabb frissítéseket a Microsoft Intune-alkalmazások. A Microsoft rendszeresen ad hozzá, és javíthatja a az Intune vállalati portál alkalmazás és webhely. Ha az Intune-rendszergazdák vagy személy támogatja, ez a cikk a szükséges információkat:
@@ -35,10 +35,20 @@ Ha egy alkalmazott vagy a tanulói, mindenképpen tekintse meg a képernyőképe
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
-## <a name="week-of-april-1-2019"></a>2019. április 1 hét
-### <a name="user-experience-update-for-the-company-portal-app-for-ios----2536024---"></a>Felhasználóiélmény-frissítést a vállalati portál alkalmazás iOS-hez <!-- 2536024 -->
-IOS-eszközökön a vállalati portál alkalmazás kezdőlapja megváltozott. Ezzel a kezdőlapján fog jobban kövesse iOS felhasználói felületi minták, és jobb észlelhetőség is biztosít az alkalmazásokhoz és e-könyvek.
 
+## <a name="week-of-april-1-2019"></a>2019. április 1 hét  
+
+### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635---"></a>Céges portál iOS 12-eszközök felhasználói regisztrációjának módosításai <!--3448635 -->  
+A vállalati portál iOS beléptetési képernyők és a lépéseket, amelyek a mobileszköz-kezelési regisztrációs módosításokat jelent meg az Apple iOS 12.2 összhangban vannak frissítve lett-e. A frissített munkafolyamatot kéri a felhasználótól:  
+
+* Nyissa meg a céges portál webhelyen, és a felügyeleti profil letöltéséhez a vállalati portál alkalmazásba való visszatérés előtt Safari engedélyezése.  
+* Nyissa meg a beállítási alkalmazást a felügyeleti profil telepítésére az eszközükön.  
+* Térjen vissza a céges portál alkalmazás regisztráció elvégzését.  
+
+Frissített regisztrációs lépéseket és képernyők: [iOS-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios).  
+
+### <a name="user-experience-update-for-the-company-portal-app-for-ios----2536024---"></a>Felhasználóiélmény-frissítést a vállalati portál alkalmazás iOS-hez <!-- 2536024 -->
+IOS-eszközökön a vállalati portál alkalmazás kezdőlapja megváltozott. Ezzel a kezdőlapján fog jobban kövesse iOS felhasználói felületi minták, és jobb észlelhetőség is biztosít az alkalmazásokhoz és e-könyvek.  
 
 ## <a name="week-of-february-19-2019"></a>2019. február 19 hete  
 ### <a name="new-app-categories-screen-in-the-company-portal-app-for-windows-10---3834780-wnready4review---"></a>Új alkalmazás kategóriák képernyő Windows 10-es céges portál alkalmazásban<!-- 3834780 WNready4Review -->  
@@ -496,16 +506,7 @@ A Céges portál webhely februártól kezdve támogatni fogja a felügyelt eszk�
 Ezek azok a tervezett megoldások, amelyekkel a felhasználói felület frissítésén keresztül javulni fog a felhasználói élmény.
 
 > [!Note]
-> Vegye figyelembe, hogy az alábbi képek előzetes verziókra vonatkozhatnak, és a bejelentett termék eltérhet az itt bemutatott verzióktól.
-
-### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635-eeready-eestaged--"></a>Céges portál iOS 12-eszközök felhasználói regisztrációjának módosításai <!--3448635 EEready eestaged-->  
-
-A vállalati portál alkalmazás iOS-hez lesz frissítése, a beléptetési képernyők és a lépéseket, amelyek a mobileszköz-kezelési regisztrációs módosításokat jelent meg az Apple iOS 12.2 összhangban vannak. Az új regisztrációs folyamatának kérni fogja a felhasználótól, hogy:  
-* Nyissa meg a céges portál webhelyet (keresztül a Safari esetében), és a felügyeleti profil letöltéséhez a vállalati portál alkalmazásba való visszatérés előtt Safari engedélyezése.  
-* Nyissa meg a beállítási alkalmazást a felügyeleti profil telepítésére az eszközükön.  
-* Térjen vissza a céges portál alkalmazás regisztráció elvégzését.  
-
- Frissülni fog a regisztráció során, és a képernyőn megjelenő szöveg utasításokat, ez a tapasztalat megfelelően. Hogyan készítheti elő eszközök felhasználói számára a módosítások kapcsolatos további információkért lásd: a [a Microsoft technikai Közösség post](https://aka.ms/CP_changes_iOS12). Addig is támogatásához új iOS-regisztrációk vállalati portálon, hogy frissítettük lépéseit [iOS-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/en-us/intune-user-help/enroll-your-device-in-intune-ios#enroll-your-ios-device).   
+> Az alábbi képek előzetes verziókra vonatkozhatnak, és a bejelentett termék eltérhet az itt bemutatott verzióktól.  
 
 
 ### <a name="see-also"></a>Lásd még:

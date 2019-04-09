@@ -1,5 +1,6 @@
 ---
-title: Állítsa be a Microsoft Intune helyszíni Exchange-összekötő |} A Microsoft Intune-ban
+title: A Microsoft Intune helyszíni Exchange-összekötőjének beállítása
+titleSuffix: Microsoft Intune
 description: A helyszíni Exchange-összekötővel kezelheti az eszközök az Exchange-postaládákhoz való hozzáférését az Intune-regisztráció és az Exchange Active Sync (EAS) alapján.
 keywords: ''
 author: brenduns
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: deb3e57876dffdc19129a5d845872d90d5833aaf
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: 3724f2494dd4e4fe7939a9be87a30e1bc5bfbf27
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394699"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292172"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Állítsa be az Intune helyszíni Exchange-összekötő a Microsoft Intune-ban
 Ebben a cikkben található információk segítséget telepítse, és figyelje az Exchange Active Sync helyszíni összekötőt az Intune-hoz.  Az Intune helyszíni Exchange connector használata az [engedélyezi vagy letiltja a hozzáférést az Exchange feltételes hozzáférési szabályzatok a helyszíni postaládák](conditional-access-exchange-create.md). 

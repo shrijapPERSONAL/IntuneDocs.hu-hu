@@ -1,5 +1,6 @@
 ---
-title: Hozzáadását és hozzárendelését az MTD-alkalmazások Microsoft Intune-bA |} A Microsoft Intune-ban
+title: MTD-alkalmazások hozzáadása és hozzárendelése a Microsoft Intune-hoz
+titleSuffix: Microsoft Intune
 description: Az Intune-nal Mobile Threat Defense-alkalmazásokat, a Microsoft Authenticator alkalmazást és iOS-es konfigurációs szabályzatokat adhat hozzá az Azure Portalon.
 keywords: ''
 author: brenduns
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42a9f3a496a74170f4db4a2f716ddfc0ea51c925
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: a3e9c9c538f9311da4c383b5de24048eb836ab0a
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57390605"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292373"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Mobile Threat Defense- (MTD) alkalmazások felvétele és hozzárendelése az Intune-nal
 

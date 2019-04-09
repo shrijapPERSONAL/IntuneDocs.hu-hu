@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8807cb090cfb662f2ab273d29baf2715dfcd6426
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 327019527ea3c374a3ebeb3c29703dbd744d18dc
+ms.sourcegitcommit: 9daaeba9a960c50efcc951856234fbfec3635737
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799128"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59231768"
 ---
 # <a name="in-development-for-microsoft-intune---april-2019"></a>A Microsoft Intune - április 2019 fejlesztés alatt
 
@@ -71,7 +71,7 @@ Fogja tudni belefoglalása vagy kizárása a felhasználói csoportokat és eszk
 
 [Eszközkonfigurációs profilok hozzárendelése](device-profile-assign.md) tartalmaz további tájékoztatást a profilok hozzárendelése a felhasználói csoportokat és eszközcsoportokat.
 
-A következőkre vonatkozik: Összes platform
+Érintett kiadások: Összes platform
 
 ### <a name="retire-noncompliant-devices----1827291---"></a>Nem megfelelő eszközök kivonása <!-- 1827291 -->
 Adjon hozzá egy új megfelelőségi műveletet egy nem megfelelő eszköz kivonja fogunk. Egy nem megfelelő eszközt, az összes vállalati adat eltávolítása, és is eltávolítja az eszközt az Intune felügyelete alól. Ez a művelet fut, ha eléri a beállított értéke napokban megadva. A minimális érték 30 nap. 
@@ -98,7 +98,7 @@ Az Apple VPP-tokenek hatókörcímkék adhat hozzá lesz. Csak az azonos címké
 ### <a name="use-applicability-rules-when-creating-windows-10-device-configuration-profiles----2549910---"></a>Ha használja a "alkalmazhatósági szabályok" konfigurációs profilok létrehozása a Windows 10 rendszerű eszköz <!-- 2549910 -->
 Windows 10-es eszközkonfigurációs profilok létrehozása (**eszközkonfiguráció** > **profilok** > **profil létrehozása**  >  **Windows 10-es** tartozó platform). Is elérheti, hozzon létre egy **alkalmazhatósági szabály** , a profil csak egy adott kiadását vagy egy adott verzió érvényes. Például hozzon létre egy profilt, amely lehetővé teszi egy BitLocker-beállítások. Miután hozzáadta a profil, használjon egy alkalmazhatósági szabályt, hogy a profil csak Windows 10 Enterprise rendszert futtató eszközökre vonatkozik.
 
-A következőkre vonatkozik: 
+Érintett kiadások: 
 - Windows 10 és újabb
 
 ### <a name="enable-win32-app-dependencies----2617348---"></a>A Win32-alkalmazás függőségei engedélyezése <!-- 2617348 -->
@@ -107,12 +107,12 @@ Nyilvános előzetes verzió - rendszergazdaként, láthatja, hogy más alkalmaz
 ### <a name="new-device-restriction-setting-for-android-enterprise-device-owner-let-users-connect-to-wi-fi-networks-on-android-enterprise-dedicated-devices-running-multi-app-kiosk-mode---3041940---"></a>Új eszköz korlátozási beállítását Android Enterprise, az eszköz tulajdonosa: lehetővé teszik a felhasználók többalkalmazásos kioszk mód futtató dedikált Android Enterprise-eszközök Wi-Fi hálózatokhoz való kapcsolódásának <!--3041940 -->
 A rendszergazdák tudják egy új beállítás, amely lehetővé teszi a felhasználóknak Bluetooth konfigurálása saját dedikált Android Enterprise eszközeiken futó többalkalmazásos kioszk mód bekapcsolására. Az Intune-konzolon ez a beállítás megtekintéséhez válassza ki **Intune** > **eszközkonfiguráció** > **profilok**  >  **Profil létrehozása** > Válasszon **Android Enterprise** tartozó platform > **csak az eszköz tulajdonosa, eszközkorlátozások** profiltípus > **beállításai**   >  **Dedikált eszközök** > Válasszon **többalkalmazásos** származó a **teljes képernyős mód** beállítás legördülő lista. Lehetőség nevű **Wi-Fi konfiguráció** lehetővé teszik a lesz. 
 
-A következőkre vonatkozik: Android Enterprise dedikált futtató többalkalmazásos kioszk mód eszközökön. 
+Érintett kiadások: Android Enterprise dedikált futtató többalkalmazásos kioszk mód eszközökön. 
 
 ### <a name="new-device-restriction-setting-for-android-enterprise-device-owner-let-users-configure-bluetooth-and-pairing-on-android-enterprise-dedicated-devices---3041941---"></a>Új eszköz korlátozási beállítását Android Enterprise, az eszköz tulajdonosa: megadása esetén a felhasználók a Bluetooth és a párosítást a dedikált vállalati Android-eszköz konfigurálása <!--3041941 -->
 A rendszergazdák tudják egy új beállítás, amely lehetővé teszi a felhasználóknak Bluetooth konfigurálása saját dedikált Android Enterprise eszközeiken futó többalkalmazásos kioszk mód bekapcsolására. Az Intune-konzolon ez a beállítás megtekintéséhez válassza ki **Intune** > **eszközkonfiguráció** > **profilok**  >  **Profil létrehozása** > Válasszon **Android Enterprise** tartozó platform > **csak az eszköz tulajdonosa, eszközkorlátozások** profiltípus > **beállításai**   >  **Dedikált eszközök** > Válasszon **többalkalmazásos** származó a **teljes képernyős mód** beállítás legördülő lista. Lehetőség nevű **Bluetooth konfigurációs** lehetővé teszik a lesz. 
 
-A következőkre vonatkozik: Android Enterprise dedikált futtató többalkalmazásos kioszk mód eszközökön. 
+Érintett kiadások: Android Enterprise dedikált futtató többalkalmazásos kioszk mód eszközökön. 
 
 ### <a name="monitor-security-baseline-status-public-preview----3082047---"></a>(Nyilvános előzetes verzió) alapvető biztonsági állapot figyelése <!-- 3082047 --> 
 Ha nyomon, hogy a *Eszközállapot* számára a biztonsági előírások a nézet szervezi állapotát a referenciakonfiguráció kategóriák szerint, például *fent zárolási*, *BitLocker*, és  *Böngésző*. Az összes rendelkezésre álló alapvető kategória jelenik meg. Minden egyes kategóriánál láthatja, hány eszközt nem egyeznek meg az adott alapkonfiguráció kategóriát, helytelenül vannak konfigurálva, vagy nem vonatkoznak.
@@ -127,7 +127,7 @@ Az Intune támogatni fogja a OEMConfig konfigurálása vállalati Android-eszkö
 
 OEM-ek támogatása jelenleg-OEM alapon. Ha azt szeretné, OEMConfig alkalmazás nem érhető el OEMConfig alkalmazások listájában, lépjen kapcsolatba `IntuneOEMConfig@microsoft.com`.
 
-A következőkre vonatkozik: 
+Érintett kiadások: 
 - Android enterprise
 
 ### <a name="new-device-restriction-settings-for-android-enterprise-device-owner----3574254---"></a>Új eszközkorlátozásokra vonatkozó beállítások az Android Enterprise, az eszköz tulajdonosa <!-- 3574254 -->
@@ -137,14 +137,14 @@ A vállalati Android-eszköz engedélyezi vagy korlátozza a funkciókat, jelsz�
 
 Beállítások aktuális listájának megtekintéséhez, keresse fel a [engedélyezi, vagy korlátozhatja a funkciókat Android Enterprise-eszközbeállítások](device-restrictions-android-for-work.md). 
 
-A következőkre vonatkozik: Android Enterprise teljes körűen felügyelt eszközök
+Érintett kiadások: Android Enterprise teljes körűen felügyelt eszközök
 
 ### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---"></a>A Windows 10-es eszközök megfelelőségi szabályzatot a TPM lapkakészlet-ellenőrzés <!-- 3617671 -->
 Számos Windows 10-es és újabb rendszerű eszközök kell a platformmegbízhatósági modul (TPM) chipkészletekkel. Egy új megfelelőségi beállítás ellenőrzi egy TPM-e az eszközön.
 
 [Windows 10-es és újabb megfelelőségi szabályzat beállításai](compliance-policy-create-windows.md#windows-10-and-later-policy-settings) aktuális beállításokat sorolja fel.
 
-A következőkre vonatkozik: 
+Érintett kiadások: 
 - Windows 10 és újabb
 
 ### <a name="configure-your-win32-apps-to-be-installed-on-intune-enrolled-azure-ad-joined-devices----3695227---"></a>Az Intune-ban regisztrált telepítendő Win32-alkalmazások konfigurálása az Azure AD-hez csatlakoztatott eszközök <!-- 3695227 -->
@@ -177,15 +177,6 @@ Adunk hozzá egy új Windows frissítési kör beállítás, amely segítségév
 
 ### <a name="windows-update-notifications----3316782---"></a>Windows-frissítési értesítések <!-- 3316782 -->
 Azt adja hozzá támogatást a Windows Update kör konfigurációk úgy is elérheti a felhasználók a Windows Update-értesítések beállítása. Ez a beállítás nem lesz elérhető a portálon, de konfigurálható az Intune Graph API használatával.
-
-### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635---"></a>Céges portál iOS 12-eszközök felhasználói regisztrációjának módosításai <!--3448635 --> 
-IOS-hez készült céges portál fog frissülni, az alkalmazás regisztrációs képernyők és a lépéseket, amelyek a mobileszköz-kezelési regisztrációs módosításokat jelent meg az Apple iOS 12.2 összhangban vannak. A frissített munkafolyamatot most fogja kérni a felhasználók számára:
-
-- Nyissa meg a céges portál webhelyet (keresztül a Safari esetében), és a felügyeleti profil letöltéséhez a vállalati portál alkalmazásba való visszatérés előtt Safari engedélyezése.
-- Nyissa meg a beállítási alkalmazást a felügyeleti profil telepítésére az eszközükön.
-- Térjen vissza a céges portál alkalmazás regisztráció elvégzését.
-
-Hogyan készítheti elő a módosítások kapcsolatos további információkért lásd: a [a Microsoft technikai Közösség post](https://aka.ms/CP_changes_iOS12). Addig is támogatásához új iOS-regisztrációk vállalati portálon, hogy frissítettük lépéseit [iOS-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/en-us/intune/ios-enroll). Doc módosítások után az Apple iOS-verziót 12.2 kiadások lesz élő. 
 
 ### <a name="easier-access-to-diagnostic-settings----3804627---"></a>Könnyebb elérhetőség érdekében a diagnosztikai beállítások <!-- 3804627 -->
 Adunk hozzá egy új lehetőség a **Auditnaplók** minden napló számítási az Intune-konzolon, amellyel közvetlenül nyissa meg a panelen a *diagnosztikai beállítások* lap.

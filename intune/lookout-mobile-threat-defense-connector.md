@@ -1,5 +1,6 @@
 ---
-title: A lookout MTD-összekötő a Microsoft Intune-nal |} A Microsoft Intune-ban
+title: Lookout MTD-összekötő a Microsoft Intune-nal
+titleSuffix: Microsoft Intune
 description: Megismerheti az Intune a Lookout Mobile Threat Defense-szel való integrálását, amellyel vezérelheti a mobileszközök a vállalati erőforrásokhoz való hozzáférését.
 keywords: ''
 author: brenduns
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 057369869e8c57f251fb4027ef527641c1391ef3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 9cf507ba470013bddf4809b6ad6ad54b4cb52d9d
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400381"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292222"
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Lookout Mobile Threat Defense-összekötő az Intune-nal
 

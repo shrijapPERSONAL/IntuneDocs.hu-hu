@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 51c1ee388c6930c328aff23cc6fc6db730097b86
-ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
+ms.openlocfilehash: 41eca84f49c8bd1827d6dfbc74909ee829dd3554
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58899070"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292466"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>A Windows 10 (és újabb) eszközbeállítások engedélyezett vagy korlátozott funkciók az Intune-nal
 
@@ -138,9 +138,9 @@ Ezek a beállítások hozzá egy eszközkonfigurációs profilt az Intune-ban, �
 - **SIM kártya hibát jelző párbeszédpanele (csak mobil)**: Hibaüzenet megjelenítésének letiltása az eszközön, ha észlelhető SIM-kártya nem blokkolja.
 - **Szabadkézi munkaterület**: Letiltása a felhasználók hozzáférjenek a szabadkézi munkaterülethez. **Nincs konfigurálva** bekapcsolja az ink-munkaterületen, és a felhasználó számára engedélyezett, a zárolási képernyőn.
 - **Automatikus újbóli üzembe helyezés**: Lehetővé teszi, hogy törli az összes felhasználói adatot és beállítást rendszergazdai jogosultságokkal rendelkező felhasználóknak **CTRL + Win + R** , az eszköz zárolási képernyőjén. Ennek hatására automatikusan megtörténik az eszköz újbóli konfigurálása és regisztrálása felügyeletre.
-- **Csatlakozzon a hálózathoz (csak Windows Insider) eszköz telepítése során, hogy a felhasználók**: Válasszon **megkövetelése** , az eszköz csatlakozik a hálózathoz, mielőtt a korábbi a hálózat lap a Windows 10-es telepítés során. Bár ez a funkció előzetes verzióban érhető el, a Windows insider build 1809 vagy újabb szükséges ezt a beállítást.
+- **Szeretne csatlakozni a hálózati eszköz telepítése során a felhasználók**: Válasszon **megkövetelése** , az eszköz csatlakozik a hálózathoz, mielőtt a korábbi a hálózat lap a Windows 10-es telepítés során.
 
-  Ha egy eszköz nem rendelkezik hálózati kapcsolattal a Windows 10-es telepítés során, ez a beállítás nem vonatkozik. A beállítás életbe lép az eszköz törlését vagy alaphelyzetbe állítása a következő alkalommal. Tehát, előfordulhat, hogy nem teljesen új eszközökre vonatkoznak. További Intune konfigurációra, például az eszköz legyen regisztrálva és konfigurációs beállítások az Intune által felügyelt. De miután regisztrált, és házirendeket fogad, majd alaphelyzetbe állíthatja az eszközt a beállítás a következő Windows-telepítés során kényszeríti.
+  A beállítás életbe lép az eszköz törlését vagy alaphelyzetbe állítása a következő alkalommal. További Intune konfigurációra, például az eszköz legyen regisztrálva és konfigurációs beállítások az Intune által felügyelt. De miután regisztrált, és házirendeket fogad, majd alaphelyzetbe állíthatja az eszközt a beállítás a következő Windows-telepítés során kényszeríti.
 
 - **Közvetlen memória-hozzáférés**: **Blokk** megakadályozza, hogy közvetlen memória-hozzáférés (DMA) az összes gyakran használt adatok moduláris PCI alsóbb rétegbeli port mindaddig, amíg a felhasználó bejelentkezik a Windows. **Engedélyezett** (alapértelmezett) engedélyezi a hozzáférést közvetlen memória-Hozzáférést, akkor is, ha egy felhasználó nem jelentkezett be.
 
@@ -271,7 +271,7 @@ Az eszközkorlátozások profiljának közvetlenül kapcsolódik ahhoz a teljes 
 - **Adatgyűjtés élő Csempéhez**: Válasszon **blokk** Windows leállítja az adatgyűjtés a hely rögzítve van élő Csempét a start menüben, a Microsoft Edge-ből. **Nincs konfigurálva** lehetővé teszi, hogy ezt az információt kell gyűjteni.
 - **Felhasználó felülbírálhatja a tanúsítványhibákat**: **Blokk** megakadályozza, hogy a felhasználók hozzáférjenek a webhelyeket, amelyeket az SSL vagy TLS hibásak. **Nincs konfigurálva** lehetővé teszi, hogy a felhasználók hozzáférhessenek az ezeken a webhelyeken.
 
-### <a name="additional"></a>További
+### <a name="additional"></a>Továbbiak
 
 - **A Microsoft Edge böngészőben (csak mobil)**: Válasszon **blokk** , hogy a Microsoft Edge használata az eszközön. Ha letiltja a Microsoft Edge, az egyes beállítások csak asztali vonatkoznak. **Nincs konfigurálva** lehetővé teszi, hogy a Microsoft Edge böngésző az eszközön.
 - **(Csak asztali verzióban) legördülő címsor**: **Blokk** bemutató javaslatok listáját egy legördülő listában, amikor beírja a Microsoft Edge leáll. A funkció lehetővé teszi, hogy minimalizálja a Microsoft Edge és a Microsoft-szolgáltatások közötti hálózati sávszélességet. **Nincs konfigurálva** lehetővé teszi, hogy a Microsoft Edge a javaslatok listájának megtekintéséhez.

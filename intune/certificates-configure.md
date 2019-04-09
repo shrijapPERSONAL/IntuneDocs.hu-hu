@@ -2,27 +2,27 @@
 title: Tanúsítványprofil létrehozása az Azure-beli Microsoft Intune-ban | Microsoft Docs
 description: Az eszközökhöz SCEP- vagy PKCS-tanúsítványkörnyezet konfigurálásával, a nyilvános tanúsítvány exportálásával, a profil az Azure Portalon való létrehozásával, majd a SCEP vagy PKCS a tanúsítványprofilhoz való hozzárendelésével adhat hozzá tanúsítványprofilokat a Microsoft Intune-ban, az Azure Portalon
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 03/31/2019
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
-ms.reviewer: heenamac
+ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 55a4a38f583ab5ac8e8eb9dc23db045c29430bd6
-ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
+ms.openlocfilehash: 569ddd9be0c59cf9a4bd7ba1f8b114183ce46d7d
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "59041706"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292278"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Eszközök tanúsítványprofiljainak konfigurálása a Microsoft Intune-ban
 
@@ -35,36 +35,37 @@ Az Intune-nal hozzárendelheti ezeket a tanúsítványokat a felügyelt eszköz�
 
 Ezen tanúsítványtípusok mindegyikének megvannak a maga előfeltételei és infrastrukturális követelményei.
 
-> [!NOTE]
-> Dedikált Android-eszközök nem támogatják a tanúsítványprofilok.
 
 ## <a name="overview"></a>Áttekintés
 
 1. Ellenőrizze, hogy be van-e állítva a megfelelő tanúsítványinfrastruktúra. [SCEP-tanúsítványokat](certificates-scep-configure.md) és [PKCS-tanúsítványokat](certficates-pfx-configure.md) használhat.
 
-2. Telepítsen egy főtanúsítványt vagy köztes hitelesítésszolgáltatói tanúsítványt minden eszközön, hogy az eszköz felismerje a hitelesítésszolgáltató (CA) érvényességét. Ehhez hozzon létre és rendeljen hozzá egy **megbízható tanúsítványprofilt**. A profil hozzárendelésekor az Intune-nal felügyelt eszközök lekérik és megkapják a főtanúsítványt. Mindegyik platformhoz különálló profilt kell létrehoznia. A megbízható tanúsítványprofilok a következő platformokhoz érhetők el:
+2. Telepítsen egy főtanúsítványt vagy köztes hitelesítésszolgáltatói tanúsítványt minden eszközön, hogy az eszköz felismerje a hitelesítésszolgáltató (CA) érvényességét. A tanúsítvány telepítéséhez, létrehozása és hozzárendelése egy **megbízhatótanúsítvány-profil** adott eszközön. A profil hozzárendelésekor az Intune-nal felügyelt eszközök lekérik és megkapják a főtanúsítványt. Mindegyik platformhoz különálló profilt kell létrehoznia. A megbízható tanúsítványprofilok a következő platformokhoz érhetők el:
 
     - iOS 8.0 és újabb verziók
     - macOS 10.11 és újabb verziók
     - Android 4.0 és újabb verziók
-    - Androidos munkahelyi profil
+    - Vállalati Android  
     - Windows 8.1 és újabb
     - Windows Phone 8.1 és újabb verziók
     - Windows 10 és újabb
 
-3. Hozza létre a VPN-, Wi-Fi- és e-mail-hozzáférés hitelesítésére szolgáló tanúsítványprofilokat. A következő platformú eszközök számára **PKCS-** vagy **SCEP**-tanúsítványprofilt oszthat ki:
+    > [!NOTE]  
+    > A tanúsítványprofilok nem támogatottak, amelyeken *dedikált eszközök az Android Enterprise*.
 
-   - iOS 8.0 és újabb verziók
-   - Android 4.0 és újabb verziók
-   - Androidos munkahelyi profil
-   - Windows 10 (asztali és mobilverzió), illetve újabb
+3. Hozza létre a VPN-, Wi-Fi- és e-mail-hozzáférés hitelesítésére szolgáló tanúsítványprofilokat. A következő típusok közül a különböző platformokhoz érhetők el:  
 
-   A következő platformot futtató eszközök esetében csak **SCEP-tanúsítványprofil** használható:
+   | Platform     |PKCS-tanúsítvány|SCEP-tanúsítvány| PKCS importált tanúsítvány | 
+   |--------------|----------------|----------------|-------------------|
+   | Android                | Igen    | Igen    | Igen    |
+   | Vállalati Android     | Igen    | Igen    | Igen    |
+   | iOS                    | Igen    | Igen    | Igen    |
+   | macOS                  |        | Igen    | Igen    |
+   | Windows Phone 8.1      |        | Igen    | Igen    |
+   | Windows 8.1 és újabb  |        | Igen    |        |
+   | Windows 10 és újabb   | Igen    | Igen    | Igen    |
 
-   - macOS 10.9 és újabb verziók
-   - Windows Phone 8.1 és újabb verziók
-
-Mindegyik eszközplatformhoz külön profilt kell létrehoznia. Létrehozásakor társítsa a profilt a már létrehozott megbízható főtanúsítvány-profilhoz.
+   Mindegyik eszközplatformhoz külön profilt kell létrehoznia. Létrehozásakor társítsa a profilt a már létrehozott megbízható főtanúsítvány-profilhoz.
 
 ### <a name="further-considerations"></a>További szempontok
 
@@ -75,7 +76,7 @@ Mindegyik eszközplatformhoz külön profilt kell létrehoznia. Létrehozásakor
 
 ## <a name="step-1-configure-your-certificate-infrastructure"></a>1. lépés: A tanúsítványinfrastruktúra konfigurálása
 
-Az alábbi témakörök nyújtanak segítséget az egyes tanúsítványprofil-típusok infrastruktúrájának konfigurálásához:
+Segítség az egyes tanúsítványprofil-típusok infrastruktúrájának konfigurálásához az alábbi cikkekben talál:
 
 - [SCEP-tanúsítványok konfigurálása és kezelése az Intune-nal](certificates-scep-configure.md)
 - [PKCS-tanúsítványok konfigurálása és kezelése az Intune-nal](certficates-pfx-configure.md)
@@ -97,7 +98,7 @@ Ahhoz, hogy SCEP- vagy PKCS-tanúsítványprofilt hozhasson létre, először l�
 5. Válassza ki a megbízható tanúsítvány eszközplatformját a **Platform** legördülő listából. A választható lehetőségek:
 
     - **Android**
-    - **Vállalati Android**
+    - **Android Enterprise**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
@@ -105,7 +106,7 @@ Ahhoz, hogy SCEP- vagy PKCS-tanúsítványprofilt hozhasson létre, először l�
     - **Windows 10 és újabb**
 
 6. A **Profil típusa** legördülő listában válassza a **Megbízható tanúsítvány** lehetőséget.
-7. Tallózással keresse meg az 1. feladatban mentett tanúsítványt, majd válassza az **OK** gombot.
+7. Keresse meg a tanúsítvány mentett [2. lépés: A megbízható legfelső szintű hitelesítésszolgáltató tanúsítványának exportálása](#step-2-export-your-trusted-root-ca-certificate), majd **OK**.
 8. Válassza ki – csak a Windows 8.1- és Windows 10-eszközök esetében – a megbízható tanúsítvány céltárolóját a **Céltároló** mezőben, a következő lehetőségek közül:
 
     - **Számítógép tanúsítványtárolója – fő**
@@ -121,7 +122,7 @@ Ekkor létrejön a profil, és megjelenik a listán. Ha csoportokhoz szeretné h
 
 ## <a name="step-4-create-scep-or-pkcs-certificate-profiles"></a>4. lépés: SCEP- vagy PKCS-tanúsítványprofilok létrehozása
 
-Az alábbi témakörök nyújtanak segítséget az egyes tanúsítványprofil-típusok konfigurálásához és eszközökhöz rendeléséhez:
+Tekintse meg a következő cikkek segítséget konfigurálásához és eszközökhöz rendeléséhez az egyes tanúsítványprofil-típusok valamelyikét:
 
 - [SCEP-tanúsítványok konfigurálása és kezelése az Intune-nal](certificates-scep-configure.md)
 - [PKCS-tanúsítványok konfigurálása és kezelése az Intune-nal](certficates-pfx-configure.md)

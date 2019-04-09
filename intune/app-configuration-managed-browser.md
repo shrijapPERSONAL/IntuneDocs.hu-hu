@@ -1,12 +1,12 @@
 ---
-title: Webes hozzáférés felügyelete szabályzat által védett böngészővel
+title: Egy házirend által védett böngészőt vállalati webes hozzáférés felügyelete
 titleSuffix: Microsoft Intune
-description: Szabályzat által védett böngésző használatával korlátozhatja a webböngészést és a webes adatok átvitelét.
+description: Egy házirend által védett böngészőt, Intune által hozzárendelt segítségével kezelheti a vállalati webböngészést és a webes adatok átvitele.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,26 +16,26 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
+ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03153450e51b7f83f2e426d5a7bdf25e7fb95bbe
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 8f32cfbb5e05958ec9d8f303809d3ffa28c3a3ec
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799483"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292389"
 ---
-# <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Az internet-hozzáférés kezelése Microsoft Intune-szabályzattal védett böngésző használatával
+# <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Egy böngészővel a Microsoft Intune a házirend által védett webes hozzáférés felügyelete
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Az Intune-szabályzattal védett (Microsoft Edge vagy Intune Managed Browser) böngésző használatával gondoskodhat róla, hogy a vállalati webhelyek hozzáférésére mindig megfelelő biztonsági előírások vonatkozzanak.  Az Intune-nal konfigurált védett böngészők kihasználják az alábbi megoldások előnyeit:
 
-- Alkalmazásvédelmi szabályzatok.
-- Feltételes hozzáférés.
-- Egyszeri bejelentkezés.
-- Alkalmazáskonfigurációs beállítások.
-- Azure-alkalmazásproxy integrációja.
+- Alkalmazásvédelmi szabályzatokat
+- Feltételes hozzáférés
+- Egyszeri bejelentkezés
+- Alkalmazás-konfigurációs beállítások
+- Az Azure application proxy-integráció
 
 ## <a name="microsoft-edge-support"></a>A Microsoft Edge-támogatás
 
@@ -45,13 +45,6 @@ A Microsoft Edge vállalati forgatókönyvek iOS és Android rendszerű eszköz�
 2. **Az Intune app protection házirend-integráció** - rendszergazdák mostantól alkalmazásvédelmi szabályzatokat a Microsoft Edge, a vezérlő a kivágási, másolási és beillesztési műveleteket, köztük megakadályozza, hogy a képernyőképek rögzítését, célként, és annak biztosítása, hogy a felhasználó által kiválasztott hivatkozások csak nyissa meg más felügyelt az alkalmazások.
 3. **Az Azure Application Proxy-integráció** - rendszergazdák szabályozhatja a hozzáférést az SaaS-alkalmazások és a web apps szolgáltatásban, így biztosítja, hogy csak a böngészőalapú alkalmazások futtatása a biztonságos Microsoft Edge böngészőben, hogy a végfelhasználók számára a vállalati hálózathoz való csatlakozás vagy csatlakozás a a Az Internet. 
 4. **Kedvencek felügyelt és a kezdőlap parancsikonok** – a könnyű hozzáférést, a rendszergazdák beállíthatnak URL-címek a Kedvencek jelenik meg, amikor a végfelhasználók számára a vállalati környezetben vannak. A rendszergazdák beállíthatnak egy kezdőlap parancsikon jelenik meg az elsődleges helyi értékként, amikor a vállalati felhasználó megnyitja a Microsoft Edge-ben új vagy egy új lap.
-
-Az Intune-szabályzat (a Microsoft Edge vagy az Intune Managed Browser) védett böngészőt használ, biztosíthatja a vállalati webhelyek érhetők el a védelmi szolgáltatás helyen. Az Intune-szabályzat által védett böngészők hajtsa végre a következő előnyökkel jár:
-- Alkalmazásvédelmi szabályzatokat
-- Feltételes hozzáférés
-- Egyszeri bejelentkezés
-- Alkalmazás-konfigurációs beállítások
-- Az Azure application proxy-integráció
 
 A Microsoft Intune alkalmazásvédelmi szabályzatokat a Microsoft Edge segítenek a szervezet adatok és erőforrások védelmét. Az Intune által védett Microsoft Edge biztosítja, hogy a vállalati erőforrások védelme nem csak a natív módon telepített alkalmazások belül is a webböngészőn keresztül elérhető.
 
@@ -206,9 +199,9 @@ Ezzel a beállítással adható meg a kezdőlap, amelyet a felhasználók egy v�
 
 A Microsoft Edge vagy a Managed Browser alkalmazás konfigurációjának létrehozására vonatkozó eljárással adja meg az alábbi kulcs-érték párt:
 
-|                                Kulcs                                |                                                           Érték                                                            |
+|                                Kulcs                                |                                                           Value                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | Adjon meg egy érvényes URL-címet. A helytelen URL-címek biztonsági intézkedésként le vannak tiltva.<br>Példa: `<https://www.bing.com>` |
+| <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | Adjon meg egy érvényes URL-címet. A helytelen URL-címek biztonsági intézkedésként le vannak tiltva.<br>Például: `<https://www.bing.com>` |
 
 ## <a name="how-to-configure-bookmarks-for-a-protected-browser"></a>Védett böngésző könyvjelzőinek konfigurálása
 
@@ -228,7 +221,7 @@ A Microsoft Edge vagy a Managed Browser alkalmazás konfigurációjának létreh
 
 A Microsoft Edge vagy a Managed Browser alkalmazás konfigurációjának létrehozására vonatkozó eljárással adja meg az alábbi kulcs-érték párt:
 
-|Kulcs|Érték|
+|Kulcs|Value|
 |-|-|
 |A következő lehetőségek közül választhat:<br><ul><li>Engedélyezett URL-címek megadása (csak ezek az URL-címek engedélyezettek, más webhelyek nem érhetők el):<br> **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br></li><li>Tiltott URL-címek megadása (minden más webhely elérhető lesz):<br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**</li></ul>|A kulcs megfelelő értéke egy URL-címlista. Az engedélyezni vagy letiltani kívánt URL-címeket egyetlen értékként kell megadni, az egyes tételeket függőleges vonal **&#124;** karakterrel elválasztva egymástól.<br><br>Példák:<br><br><code>URL1&#124;URL2&#124;URL3</code><br><code>http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com</code>|
 

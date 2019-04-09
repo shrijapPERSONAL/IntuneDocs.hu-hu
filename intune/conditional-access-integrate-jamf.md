@@ -1,5 +1,6 @@
 ---
-title: A Jamf Pro integrálása a Microsoft Intune-nal a megfelelőség |} A Microsoft Intune-ban
+title: A Jamf Pro integrálása a Microsoft Intune-nal a megfelelőség érdekében
+titleSuffix: Microsoft Intune
 description: A Microsoft Intune megfelelőségi szabályzatait az Azure Active Directory feltételes hozzáférésével használva biztonságossá teheti a Jamf által kezelt eszközöket.
 keywords: ''
 author: brenduns
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 27f8f80aca1a8517864d375f75b6829d325740ce
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 57527d0b1825d0e8d3fefb63d1b960ab3fb5c676
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57399208"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292274"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>A Jamf Pro integrálása az Intune-nal a megfelelőség érdekében
 
-A következőkre vonatkozik: Intune az Azure Portalon
+Érintett kiadások: Intune az Azure Portalon
 
 Ha a szervezet használja [a Jamf Pro](https://www.jamf.com) kezelheti a végfelhasználók Mac számítógépeken, segítségével a Microsoft Intune megfelelőségi szabályzatok az Azure Active Directory feltételes hozzáférés győződjön meg arról, hogy megfelelnek-e a szervezetnél található eszközökön.
 

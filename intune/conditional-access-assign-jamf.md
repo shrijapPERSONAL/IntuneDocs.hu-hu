@@ -1,5 +1,5 @@
 ---
-title: Eszközmegfelelőségi szabályzat Jamf-eszközökhöz |} A Microsoft Intune-ban
+title: Eszközmegfelelési szabályzat Jamf-eszközökhöz
 titleSuffix: Microsoft Intune
 description: A Microsoft Intune megfelelőségi szabályzatait az Azure Active Directory feltételes hozzáférésével használva biztonságossá teheti a Jamf által kezelt eszközöket.
 keywords: ''
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bf465394e7c94cd0bc5219a7f2b0ac8c05695853
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: a2fc212d370e6835428e7b0ae837e3882a38e37e
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798733"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292290"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Jamf Pro által felügyelt Mac számítógépek megfelelőségének kikényszerítése
 
-A következőkre vonatkozik: Intune az Azure Portalon
+Érintett kiadások: Intune az Azure Portalon
 
 Az Azure Active Directory és a Microsoft Intune feltételes hozzáférési szabályzatai biztosítják, hogy a végfelhasználók megfeleljenek a szervezeti követelményeknek. Ezeket a szabályzatokat a [Jamf Pro által felügyelt](conditional-access-integrate-jamf.md) Mac számítógépekre is alkalmazhatja. Ennek megvalósításához az Intune és a Jamf Pro konzolhoz egyaránt hozzáférésre van szüksége.
 
