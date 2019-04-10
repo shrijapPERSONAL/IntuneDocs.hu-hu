@@ -17,21 +17,21 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 43cef2e5a07795bc4c6dc7cf42b2cfa6be04269f
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.openlocfilehash: 1c9028d3b8e69c8f20e264f99bd4bf8fda6c9050
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292258"
+ms.locfileid: "59423521"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>A figyelő a BitLocker és az eszköz titkosítása  
 Az Intune kínál egy központi helyen, azonosíthatja a Windows 10 rendszerű eszközök titkosítási állapotát, és elérhetővé teszi a BitLocker vonatkozó fontos információk az eszközök, az Azure Active Directoryban (Azure AD) formában.  
 
-- A [(nyilvános előzetes verzióban) titkosítása jelentés](encryption-monitor.md#encryption-report-in-public-preview) eszközök titkosítási állapotát és a készültségi részletesen ismerteti. A jelentés-részletek segítségével azonosíthatja a problémákat, amelyek meggátolják a védeni kívánt eszközök sikeres titkosítását.  
-- [A BitLocker részleteinek megtekintése (a nyilvános előzetes verzió)](encryption-monitor.md#bitlocker-recovery-keys-in-public-preview) , például a Kulcsazonosító és a helyreállítási kulcsok az eszközök az Intune-portálon belül.  
+- A [(nyilvános előzetes verzióban) titkosítása jelentés](#encryption-report) eszközök titkosítási állapotát és a készültségi részletesen ismerteti. A jelentés-részletek segítségével azonosíthatja a problémákat, amelyek meggátolják a védeni kívánt eszközök sikeres titkosítását.  
+- [A BitLocker részleteinek megtekintése (a nyilvános előzetes verzió)](#bitlocker-recovery-keys) , például a Kulcsazonosító és a helyreállítási kulcsok az eszközök az Intune-portálon belül.  
 
-## <a name="encryption-report-in-public-preview"></a>Titkosítási jelentés (nyilvános előzetes verzió)
-A titkosítási jelentést (az összeköttetés előzetes verzió) segítségével a Windows 10 rendszerű eszközök titkosítási állapotát részleteinek a megtekintéséhez.  
+## <a name="encryption-report"></a>Titkosítási jelentés
+A titkosítási jelentés (a nyilvános előzetes verzió) segítségével a Windows 10 rendszerű eszközök titkosítási állapotát részleteinek a megtekintéséhez.  
 
 A jelentés megkereséséhez jelentkezzen be a [Intune](https://aka.ms/intuneportal) , majd **eszközkonfiguráció**, majd a *figyelő*, jelölje be **titkosítási jelentésben (előzetes verzió)**.  
 
@@ -85,7 +85,7 @@ Ezen a panelen a következő részleteket biztosítja:
    - A TPM-eszköz nem áll készen a BitLocker.  
    - A hálózat nem érhető el, amelyre szükség a helyreállítási kulcs biztonsági mentése az.  
 
-## <a name="bitlocker-recovery-keys-in-public-preview"></a>A BitLocker helyreállítási kulcsok (nyilvános előzetes verzióban elérhető)
+## <a name="bitlocker-recovery-keys"></a>A BitLocker helyreállítási kulcsok
 A nyilvános előzetes verzió az Intune hozzáférést biztosít az Azure ad-ben panel a BitLocker hogy meg tudja tekinteni a BitLocker-kulcs azonosítók és a helyreállítási kulcsok a Windows 10 rendszerű eszközökhöz az Intune-portálon belül.  Az eszköz érhető el, a kulcsok az Azure AD szétválasztást kell rendelkeznie. 
 1. Jelentkezzen be a [Intune](https://aka.ms/intuneportal), lépjen a **eszközök** , majd a *kezelés*válassza **minden eszköz**.
 2. Jelöljön ki egy eszközt a listából, majd a *figyelő*válassza **helyreállítási kulcsok – előzetes verzió**.  
@@ -100,4 +100,4 @@ Kulcsok nem szerepelnek az Azure AD, ha az Intune megjeleníti *nem BitLocker-ku
 Információk a BitLocker használatával lekérte a [a BitLocker konfigurációs szolgáltató](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) (CSP). A BitLocker CSP támogatott a Windows 10 1703-as és újabb, valamint a Windows 10 Pro 1809 és újabb verziók. 
 
 ## <a name="next-steps"></a>További lépések
-Hozzon létre egy [eszközmegfelelőség](compliance-policy-create-windows.md#windows-10-and-later-policy-settings) házirend konfigurálása a BitLocker és a titkosítás a Windows 10 rendszerű eszközökhöz.
+Hozzon létre egy [eszközmegfelelőség](compliance-policy-create-windows.md) házirend konfigurálása a BitLocker és a titkosítás a Windows 10 rendszerű eszközökhöz.

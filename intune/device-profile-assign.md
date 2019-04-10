@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d77308e010b71ec076f33b669674ce1252937f9
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: 0c950efdd95fd8d856ec677385712a022dead870
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394845"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423854"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Felhasználói és eszközprofilok hozzárendelése a Microsoft Intune-ban
 
@@ -43,6 +43,16 @@ Ez a cikk bemutatja, hogyan szeretne hozzárendelni egy profilt, és a profilok 
 
 5. **Mentse** a változtatásokat.
 
+### <a name="evaluate-how-many-users-are-targeted"></a>Kiértékelheti, hogy hány felhasználóra vonatkozik
+
+A profil hozzárendelésekor is **Evaluate** hány felhasználó érintett. Ez a funkció számítja ki a felhasználók; eszköz nem számítja ki.
+
+1. Válassza ki az Intune-ban **eszközkonfiguráció** > **profilok**.
+2. Profil kiválasztása > **hozzárendelések** > **Evaluate**. Megjelenik egy üzenet, hogy hány felhasználóra vonatkozik ez a profil.
+
+Ha a **Evaluate** gomb szürkén jelenik meg, ellenőrizze, hogy a profil hozzá van rendelve egy vagy több csoportot.
+
+
 ## <a name="use-scope-tags"></a>Hatókörcímkék használata
 
 Amikor hoz létre, vagy frissíteni egy profilt, a profil is hatókörcímkék is hozzáadhat.
@@ -53,7 +63,7 @@ Amikor hoz létre, vagy frissíteni egy profilt, a profil is hatókörcímkék i
 
 Az Intune-beli eszközkonfigurációs profilok lehetővé teszik csoportok kizárását a szabályzat-hozzárendelésből. Például hozzárendelhet egy eszközprofilt a **minden vállalati felhasználó** csoportot, de kizárja a tagokat a **felsővezetők** csoport.
 
-Amikor csoportot zár ki, csak a felhasználók kizárása, vagy csak eszközcsoportokat (nem vegyes csoportokat) kizárni egy hozzárendelésből, az Intune minden olyan felhasználó és eszköz közötti kapcsolat nem tekinti. Felhasználói csoportok belefoglalása és eszközcsoportok egyidejű kizárása minden nem lehet beolvasni a kívánt eredményt. Vegyes csoportok használata esetén, vagy más ütközés esetén a Belefoglalás élvez elsőbbséget kizárás felett.
+Ha kizár csoportokat, csak a felhasználók, vagy csak eszközcsoportot (nem vegyes csoportokat) egy hozzárendelésből, az Intune meg nem felhasználó-eszköz kapcsolatokat. Felhasználói csoportok belefoglalása és eszközcsoportok egyidejű kizárása minden nem lehet beolvasni a kívánt eredményt. Vegyes csoportok használata esetén, vagy más ütközés esetén a Belefoglalás élvez elsőbbséget kizárás felett.
 
 Tegyük fel például, hogy egy eszközprofilt a szervezet valamennyi eszközéhez hozzá kíván rendelni, kivéve a kioszkmódban működő eszközöket. Belefoglalja a **Minden felhasználó** csoportot, de kizárja a **Minden eszköz** csoportot. Ebben az esetben minden felhasználó és az eszközeik megkapja a szabályzatot még akkor is, ha a felhasználó-eszköz szerepel a **minden eszköz** csoport.
 

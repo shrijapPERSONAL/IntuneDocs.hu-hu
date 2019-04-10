@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7993b598a2194cb11fa6f4d17a9c21fb6435c4e9
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7cd9b6718b4406fd18fc0251fbeaf589acd1d0c9
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57391155"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59429210"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot-preview"></a>Üzembe helyezése hibrid Azure AD-hez csatlakoztatott eszközökhöz az Intune-nal és a Windows Autopilot (előzetes verzió)
 Hibrid Azure Active Directory (Azure AD) beállításához használhatja az Intune és a Windows Autopilot-hez csatlakoztatott eszközök. Ehhez kövesse a cikkben.
@@ -212,6 +212,9 @@ Módosítsa az eszköz profilt állapot körülbelül 15 percet vesz igénybe *n
 1. Válassza ki **OK** > **létrehozása**.  
     A profil létrehozásáról és megjelennek a listában.
 1. A profil hozzárendeléséhez kövesse az [Eszközprofil hozzárendelése](device-profile-assign.md#assign-a-device-profile) cikk lépéseit. 
+
+> [!NOTE]
+> Az elnevezési funkciókat a hibrid Azure AD JOIN a Windows Autopilot támogatja a soros % például változókat, és csak az előtagok támogatják a számítógép nevét.
 
 ## <a name="next-steps"></a>További lépések
 

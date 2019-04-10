@@ -1,12 +1,12 @@
 ---
-title: Win32-alkalmazások hozzáadása a Microsoft Intune-hoz
+title: Adjon hozzá és Win32-alkalmazások hozzárendelése a Microsoft Intune
 titleSuffix: ''
-description: Ismerje meg, hogyan adhat hozzá, továbbítására és Win32-alkalmazások Microsoft Intune-nal kezelheti. E témakör áttekintést nyújt a Win32-alkalmazások telepítési és kezelési lehetőségeiről az Intune-ban, valamint a Win32-alkalmazásokkal kapcsolatos hibák elhárításával kapcsolatban.
+description: Ismerje meg, hogyan adhat hozzá, hozzárendelése és Win32-alkalmazások Microsoft Intune-nal kezelheti. E témakör áttekintést nyújt a Win32-alkalmazások telepítési és kezelési lehetőségeiről az Intune-ban, valamint a Win32-alkalmazásokkal kapcsolatos hibák elhárításával kapcsolatban.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/25/2019
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,40 +18,47 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d93ad2e838f4980c206c098d8e36e51e138969d1
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: bd93e5ef7af5f4a4c0cd8d29f4cbcc26fc0515cd
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799048"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59429155"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Önálló Intune - Win32-Alkalmazáskezelés
 
-Az Intune különálló verziója több lehetőséget biztosít a Win32-alkalmazások kezelése terén. Bár a felhőhöz csatlakozó ügyfelek használhatják a Konfigurációkezelőt a Win32-alkalmazások kezeléséhez, a kizárólag Intune-nal rendelkező ügyfelek számára több lehetőség érhető el az üzletági (LOB) Win32-alkalmazások kezeléséhez. E témakör áttekintést nyújt a Win32-alkalmazások Intune-ban elérhető kezelési funkcióiról, valamint a hibaelhárítással kapcsolatos lehetőségekről.
+[Az Intune önálló verziója](mdm-authority-set.md) mostantól lehetővé teszi, hogy nagyobb Win32-alkalmazás felügyeleti képességeket. Bár a felhőhöz csatlakozó ügyfelek használhatják a Konfigurációkezelőt a Win32-alkalmazások kezeléséhez, a kizárólag Intune-nal rendelkező ügyfelek számára több lehetőség érhető el az üzletági (LOB) Win32-alkalmazások kezeléséhez. E témakör áttekintést nyújt a Win32-alkalmazások Intune-ban elérhető kezelési funkcióiról, valamint a hibaelhárítással kapcsolatos lehetőségekről.
+
+> [!NOTE]
+> Az alkalmazás felügyeleti funkció mindkét 32 bites és 64 bites operációs rendszer-architektúra támogatja a Windows-alkalmazások.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
+Win32-Alkalmazáskezelés használatához győződjön meg a következő feltételeknek:
+
 - A Windows 10 1607-es verzió vagy újabb (vállalati, Pro és Education verziók)
 - A Windows 10-ügyfélnek: 
-    - az Azure Active Directory (AAD) csatlakoztatott vagy [Azure Active Directory hibrid](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) (nyit meg egy másik Docs-webhely), és
+    - az Azure Active Directory (AAD) csatlakoztatott vagy [hibrid Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan)
     - regisztrálva kell lennie az Intune-ban (MDM által felügyelt)
 - Windows-alkalmazás mérete 8 GB a alkalmazásonként maximumon
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>A Win32-alkalmazás tartalmának előkészítése a feltöltéshez
 
-Használja a [Microsoft Win32 tartalom előkészítő eszközt](https://go.microsoft.com/fwlink/?linkid=2065730) előre a Win32-alkalmazások feldolgozásához. Az eszköz konvertálja az alkalmazástelepítési fájlok a *.intunewin* formátumban. Az eszköz az Intune által az alkalmazás telepítési állapotának meghatározásához szükséges attribútumok némelyike is észleli. Miután használta ezt az eszközt az alkalmazástelepítési mappában, létrehozhat egy Win32-alkalmazást az Intune-konzolon.
+Használja a [Microsoft Win32 tartalom előkészítő eszközt](https://go.microsoft.com/fwlink/?linkid=2065730) előre a Windows klasszikus (Win32) alkalmazások feldolgozásához. Az eszköz konvertálja az alkalmazástelepítési fájlok a *.intunewin* formátumban. Az eszköz az Intune által az alkalmazás telepítési állapotának meghatározásához szükséges attribútumok némelyike is észleli. Miután ezt az eszközt használja az alkalmazást telepítő mappához, lesz egy Win32-alkalmazás létrehozása az Intune-konzolon.
 
 > [!IMPORTANT]
 > A [Microsoft Win32 tartalom előkészítő eszközt](https://go.microsoft.com/fwlink/?linkid=2065730) zips alkalmazást az összes fájlt és almappát, amikor létrehozza a *.intunewin* fájlt. Ügyeljen arra, a Microsoft Win32 tartalom előkészítő eszköz külön installer-fájlok és mappák, így nem adja meg az eszközt vagy más szükségtelen fájlok és mappák a *.intunewin* fájlt.
 
-Letöltheti a [Microsoft Win32 tartalom előkészítő eszközt](https://go.microsoft.com/fwlink/?linkid=2065730) a Githubról.
+Letöltheti a [Microsoft Win32 tartalom előkészítő eszközt](https://go.microsoft.com/fwlink/?linkid=2065730) a Githubról zip-fájlként. A tömörített fájl tartalmaz egy nevű mappát **Microsoft-Win32-Content-Prep-Tool-master**. A mappa tartalmazza az előkészítő eszköze, a licenc, egy információs fájl és a kibocsátási megjegyzéseket. 
+
+Ha `IntuneWinAppUtil.exe` paraméterek nélkül a parancsablakból, az eszköz végigvezeti Önt a beviteli a szükséges paramétereket lépésről lépésre. Vagy a paraméterek a parancs a következő rendelkezésre álló parancssori paraméterek alapján is hozzáadhat.
 
 ### <a name="available-command-line-parameters"></a>Elérhető parancssori paraméterek 
 
 |    **Parancssori paraméter**    |    **Leírás**    |
 |:------------------------------:|:----------------------------------------------------------:|
 |    `-h`     |    Súgó    |
-|    `-c <setup_folder>`     |    Telepítőmappa az összes telepítőfájllal.    |
+|    `-c <setup_folder>`     |    A mappa összes telepítési fájljai számára. Ebben a mappában lévő összes fájl tömörítése be *.intunewin* fájlt.    |
 |   ` -s <setup_file>`     |    Telepítőfájl (például *setup.exe* vagy *setup.msi*).    |
 |    `-o <output_folder>`     |    Kimeneti mappa a létrehozott *.intunewin* fájl számára.    |
 |    `-q`       |    Csendes mód    |
@@ -61,9 +68,9 @@ Letöltheti a [Microsoft Win32 tartalom előkészítő eszközt](https://go.micr
 |    **Példaparancs**    |    **Leírás**    |
 |:-----------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |    `IntuneWinAppUtil -h`    |    Ez a parancs megjeleníti az eszköz használatára vonatkozó információkat.    |
-|    `IntuneWinAppUtil -c <setup_folder> -s <source_setup_file> -o <output_folder> <-q>`    |    Ez a parancs létrehozza az `.intunewin` fájlt a megadott forrásmappa és telepítőfájl alapján. Az MSI-telepítőfájlhoz az eszköz lekéri az Intune-hoz szükséges adatokat. Ha a `-q` van megadva, a parancs csendes módban fog futni, és ha a kimeneti fájl már létezik, felül fogja írni. Ha a kimeneti mappa még nem létezik, akkor automatikusan létrejön.    |
+|    `IntuneWinAppUtil -c c:\testapp\v1.0 -s c:\testapp\v1.0\setup.exe -o c:\testappoutput\v1.0 -q`    |    Ez a parancs létrehozza az `.intunewin` fájlt a megadott forrásmappa és telepítőfájl alapján. Az MSI-telepítőfájlhoz az eszköz lekéri az Intune-hoz szükséges adatokat. Ha a `-q` van megadva, a parancs csendes módban fog futni, és ha a kimeneti fájl már létezik, felül fogja írni. Ha a kimeneti mappa még nem létezik, akkor automatikusan létrejön.    |
 
-Létrehozásakor egy *.intunewin* fájlt minden olyan fájlok, a telepítés mappa almappa hivatkoznia kell. Ezután használja a relatív elérési út egy konkrét fájlt kell hivatkoznia. Például:
+Létrehozásakor egy *.intunewin* fájlt minden olyan fájlok, a telepítés mappa almappa hivatkoznia kell. Ezután használja a relatív elérési út egy konkrét fájlt kell hivatkoznia. Példa:
 
 **Telepítő forrásmappája:** *c:\testapp\v1.0*<br>
 **Licencfájl:** *c:\testapp\v1.0\licenses\license.txt*
@@ -119,13 +126,13 @@ Az üzletági (LOB) alkalmazásokhoz hasonlóan Win32-alkalmazást is hozzáadha
 
     Például, ha az alkalmazás Fájlnév **MyApp123**, adja hozzá a következő:<br>
     `msiexec /p “MyApp123.msp”`<p>
-    És, ha az alkalmazás `ApplicationName.exe`, a következő paranccsal lehetséges az alkalmazás nevét, a parancs argruments (kapcsolók) a csomag által támogatott követ. <br>Például:<br>
+    És, ha az alkalmazás `ApplicationName.exe`, a következő paranccsal lehetséges az alkalmazás nevét, a parancs argruments (kapcsolók) a csomag által támogatott követ. <br>Példa:<br>
     `ApplicationName.exe /quite`<br>
     A fenti parancsban a `ApplicaitonName.exe` csomag támogatja a `/quite` parancs argrument.<p> Az alkalmazáscsomag által támogatott konkrét agruments Forduljon az alkalmazás szállítójához.
 
 3.  Adja meg az alkalmazás eltávolításához szükséges teljes eltávolítási parancssort az alkalmazás GUID-értékei alapján. 
 
-    Például: `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
+    Például:`msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
 
     > [!NOTE]
     > Az adott Win32-alkalmazás telepítését a **Felhasználó** vagy a **Rendszer** környezetben konfigurálhatja. A **Felhasználó** környezet csak az adott felhasználóra vonatkozik. A **Rendszer** környezet az adott, Windows 10-es rendszerű eszköz összes felhasználójára vonatkozik.
@@ -255,6 +262,9 @@ Az alábbi képen tájékoztatja a végfelhasználót, hogy az eszköz alkalmaz�
 
 ## <a name="toast-notifications-for-win32-apps"></a>Bejelentési értesítések Win32-alkalmazások 
 Ha szükséges, bemutató végfelhasználói bejelentési értesítések egy alkalmazás-hozzárendelés tilthatja le. Az Intune-ból, válassza ki a **ügyfélalkalmazás** > **alkalmazások** > Válassza ki az alkalmazást > **Assignemnts** > **csoportokhozközétartozik**. 
+
+> [!NOTE]
+> Az Intune felügyeleti bővítmény Win32-alkalmazások nem lesz eltávolítva a nem regisztrált eszközökön telepítve van. A rendszergazdák kihasználhatják a hozzárendelés-kizárás nem ajánlja fel a BYOD-eszközök Win32-alkalmazások.
 
 ## <a name="troubleshoot-win32-app-issues"></a>A Win32-alkalmazások hibáinak elhárítása
 Az ügynöknaplók általában a következő helyen érhetők el az ügyfélgépen: `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. A `CMTrace.exe` segítségével megtekintheti ezeket a naplófájlokat. *CMTrace.exe* letölthető [Configuration Manager Client Tools](https://docs.microsoft.com/sccm/core/support/tools). 

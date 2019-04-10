@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/09/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 982a21214831f14f6f13bf8d484d49769f031fba
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 00a0bd4936d1ad8ba8dd52f1839e7d42505db60e
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799718"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59429224"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune adattárház-gyűjtemények
 
@@ -47,7 +47,7 @@ Az **AppRevision** entitás listázza az alkalmazások összes verzióját.
 | Méret                       | A bináris mérete bájtokban.                                                          | 120.392.000                          |
 | StartDateInclusiveUTC      | A jelen változat adattárházban történő létrehozásának dátuma és időpontja (UTC).      | 2016. 11. 23. 0:00                      |
 | EndDateExclusiveUTC        | A jelen változat elavulásának dátuma és időpontja (UTC).                        | 2016. 11. 23. 0:00                      |
-| IsCurrent                  | Jelzi, hogy az alkalmazásverzió aktuális-e az adattárházban.         | True/false                           |
+| IsCurrent                  | Jelzi, hogy az alkalmazásverzió aktuális-e az adattárházban.         | Igaz/hamis                           |
 | RowLastModifiedDateTimeUTC | Az alkalmazásverzió legutóbbi módosításának dátuma és időpontja (UTC) az adattárházban. | 2016. 11. 23. 0:00                      |
 
 ## <a name="apptypes"></a>appTypes
@@ -232,7 +232,7 @@ A **device** entitás felsorolja az összes kezelt regisztrált eszközt és azo
 | ComplianceStateKey         | Az eszközhöz társított megfelelőségi állapot kulcsa.                                                                                                                             |
 | OSVersion                  | Az eszközön futó operációs rendszer verziószáma.                                                                                                                                                |
 | EasDeviceId                | Exchange ActiveSync-Azonosítóját az eszköz.                                                                                                                                                  |
-| Sorozatszám               | Sorozatszám                                                                                                                                                                           |
+| a sorozatszám               | a sorozatszám                                                                                                                                                                           |
 | UserId                     | Az eszközhöz társított felhasználó egyedi azonosítója.                                                                                                                           |
 | RowLastModifiedDateTimeUTC | Az eszköz adattárházban történő utolsó módosításának dátuma és időpontja (UTC).                                                                                                       |
 | Gyártó               | Az eszköz gyártója                                                                                                                                                             |
@@ -359,7 +359,7 @@ A **EnrollmentFailureCategory** entitás azt jelzi, hogy miért-eszközök regis
 | Nem alkalmazható                  | A regisztráció sikertelen kategória nem alkalmazható.                                                            |
 | Nem érhető el                   | A regisztráció sikertelen kategória nem érhető el.                                                             |
 | Ismeretlen                         | Ismeretlen hiba.                                                                                                |
-| Hitelesítés                  | A hitelesítés sikertelen volt.                                                                                        |
+| Authentication                  | A hitelesítés sikertelen.                                                                                        |
 | Engedélyezés                   | Hívás történt hitelesítése, de nem jogosult a regisztrációra.                                                         |
 | AccountValidation               | Nem sikerült érvényesíteni a fiókot a regisztrációhoz. (Blokkolva, fiók regisztrációs nincs engedélyezve)                      |
 | UserValidation                  | Felhasználó nem érvényesíthető. (Felhasználó nem létezik, licenc hiányzik)                                           |
@@ -427,6 +427,85 @@ Az **IntuneManagementExtensionVersion** entitás az **IntuneManagementExtension*
 |:-------------------:|:-------------------------------------------------------------:|:-------:|
 | ExtensionVersionKey | Az IntuneManagementExtension verziójának egyedi azonosítója. | 1       |
 | ExtensionVersion    | A négyjegyű verziószám.                                   | 1.0.2.0 |
+
+## <a name="mamapplications"></a>MamApplications
+
+A **MamApplication** entitás azokat az üzletági alkalmazásokat sorolja fel, amelyek felügyelete a Mobilalkalmazás-felügyelet használatával történik és nincsenek beléptetve a vállalat rendszerébe.
+
+| Tulajdonság | Leírás | Példa |
+|---------|------------|--------|
+| mamApplicationKey |A MAM-alkalmazás egyedi azonosítója. | 432 |
+| mamApplicationName |A MAM-alkalmazás neve. |MAM-alkalmazás példa neve |
+| mamApplicationId |A MAM-alkalmazás alkalmazásazonosítója. | 123 |
+| IsDeleted |Jelzi, hogy frissítve lett-e ez a MAM-alkalmazásrekord. <br>Igaz – a MAM-alkalmazáshoz új, frissített mezőkből álló rekord tartozik a táblában. <br>Hamis – a MAM-alkalmazás legfrissebb rekordja. |Igaz/hamis |
+| StartDateInclusiveUTC |A MAM-alkalmazás adattárházban történő létrehozásának dátuma és időpontja (UTC). |2016.11.23. 12:00:00 |
+| DeletedDateUTC |Az IsDeleted paraméter True (Igaz) értékre módosulásának dátuma és időpontja (UTC). |2016.11.23. 12:00:00 |
+| RowLastModifiedDateTimeUTC |A MAM-alkalmazás adattárházban történő utolsó módosításának dátuma és időpontja (UTC). |2016.11.23. 12:00:00 |
+
+
+## <a name="mamapplicationinstances"></a>MamApplicationInstances
+
+A **MamApplicationInstance** entitás a felügyelt Mobilalkalmazás-felügyeleti (MAM) alkalmazásokat sorolja fel felhasználóként és eszközönként egy példányban. Az entitásban felsorolt összes felhasználó és eszköz védelem alatt áll, vagyis legalább egy MAM-szabályzat hozzájuk van rendelve.
+
+
+|          Tulajdonság          |                                                                                                  Leírás                                                                                                  |               Példa                |
+|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
+|   ApplicationInstanceKey   |                                                               A MAM-alkalmazáspéldány egyedi azonosítója az adattárházban – helyettes kulcs.                                                                |                 123                  |
+|           UserId           |                                                                              A MAM-alkalmazás telepítve van a felhasználó felhasználói azonosítója.                                                                              | b66bc706-ffff-7437-0340-032819502773 |
+|   ApplicationInstanceId    |                                              A MAM-alkalmazáspéldány egyedi azonosítója – hasonló az ApplicationInstanceKey-hez, de az azonosító természetes kulcs.                                              | b66bc706-ffff-7437-0340-032819502773 |
+| mamApplicationId | A Mam-alkalmazás a Mam-alkalmazáspéldány készült alkalmazás azonosítója.   | 2016.11.23. 12:00:00   |
+|     ApplicationVersion     |                                                                                     A MAM-alkalmazás verziószáma.                                                                                      |                  2                   |
+|        CreatedDate         |                                                                 A MAM-alkalmazáspéldány rekordjának létrehozási dátuma. Az érték lehet null is.                                                                 |        2016.11.23. 12:00:00        |
+|          Platform          |                                                                          Az eszköz platformja, amelyen ez a MAM-alkalmazás telepítve van.                                                                           |                  2                   |
+|      PlatformVersion       |                                                                      Az eszköz platformjának verziója, amelyen ez a MAM-alkalmazás telepítve van.                                                                       |                 2.2                  |
+|         SdkVersion         |                                                                            A MAM-SDK verziója, amellyel az adott MAM-alkalmazást becsomagolták.                                                                            |                 3.2                  |
+| mamDeviceId | Eszköz az eszköz azonosítója, amelyekkel MAM-alkalmazáspéldány társítva van.   | 2016.11.23. 12:00:00   |
+| mamDeviceType | Eszköz típusa, amelyekkel MAM-alkalmazáspéldány társított eszköz.   | 2016.11.23. 12:00:00   |
+| mamDeviceName | Eszköz az eszköz nevét, amelyekkel MAM-alkalmazáspéldány társítva van.   | 2016.11.23. 12:00:00   |
+|         IsDeleted          | Jelzi, hogy frissítve lett-e ez a MAM-alkalmazásrekord. <br>Igaz – a MAM-alkalmazáspéldányhoz új, frissített mezőkből álló rekord tartozik a táblában. <br>Hamis – a MAM-alkalmazás legfrissebb rekordja. |              Igaz/hamis              |
+|   StartDateInclusiveUTC    |                                                              A MAM-alkalmazáspéldány adattárházban történő létrehozásának dátuma és időpontja (UTC).                                                               |        2016.11.23. 12:00:00        |
+|       DeletedDateUTC       |                                                                             Az IsDeleted paraméter True (Igaz) értékre módosulásának dátuma és időpontja (UTC).                                                                              |        2016.11.23. 12:00:00        |
+| RowLastModifiedDateTimeUTC |                                                           A MAM-alkalmazáspéldány adattárházban történő utolsó módosításának dátuma és időpontja (UTC).                                                            |        2016.11.23. 12:00:00        |
+
+## <a name="mamcheckins"></a>MamCheckins
+
+A **MamCheckin** entitás a MAM-alkalmazáspéldány Intune szolgáltatásba történő legutóbbi bejelentkezése során begyűjtött adatokat jelöli. 
+
+> [!Note]  
+> Ha az alkalmazáspéldány naponta többször is bejelentkezik, azokat az adattárház egyetlen bejelentkezésként tárolja.
+
+| Tulajdonság | Leírás | Példa |
+|---------|------------|--------|
+| DateKey |A dátumkulcs azt jelzi, hogy az adattárházban mikor lett rögzítve a MAM-alkalmazás bejelentkezése. | 20160703 |
+| ApplicationInstanceKey |A MAM-alkalmazás bejelentkezéséhez társított alkalmazáspéldány kulcsa. | 123 |
+| UserKey |A MAM-alkalmazás bejelentkezéséhez társított felhasználó kulcsa. | 4323 |
+| mamApplicationKey |Alkalmazás kulcs a társított alkalmazást a MAM-alkalmazás ellenőrzése. | 432 |
+| DeviceHealthKey |A MAM-alkalmazás bejelentkezéséhez társított DeviceHealth kulcsa. | 321 |
+| PlatformKey |A MAM-alkalmazás bejelentkezéséhez társított eszköz platformját jelöli. |123 |
+| LastCheckInDate |A MAM-alkalmazás utolsó bejelentkezésének dátuma és időpontja. Az érték lehet null is. |2016.11.23. 12:00:00 |
+
+## <a name="mamdevicehealths"></a>MamDeviceHealths
+
+A **MamDeviceHealth** entitás azokat az eszközöket jelöli, amelyekhez mobilalkalmazás-felügyeleti szabályzatok vannak rendelve, beleértve a jailbreakelt eszközöket is.
+
+| Tulajdonság | Leírás | Példa |
+|---------|------------|--------|
+| DeviceHealthKey |Az eszköz és a hozzá tartozó eszközállapot egyedi azonosítója az adattárházban – helyettes kulcs. |123 |
+| DeviceHealth |Az eszköz és a hozzá tartozó eszközállapot egyedi azonosítója – hasonló a DeviceHealthKey-hez, de az azonosító természetes kulcs. |b66bc706-ffff-7777-0340-032819502773 |
+| DeviceHealthName |Az eszköz állapotát jelöli. <br>Not available – nincs információ az eszközről. <br>Healthy – az eszköz nem jailbreakelt. <br>Unhealthy – az eszköz jailbreakelt. |Not Available Healthy Unhealthy |
+| RowLastModifiedDateTimeUTC |Az adott MAM-eszközállapot adattárházban történt utolsó módosításának dátuma és időpontja (UTC). |2016.11.23. 12:00:00 |
+
+## <a name="mamplatforms"></a>MamPlatforms
+
+A **MamPlatform** entitás azoknak a platformoknak a nevét és típusát sorolja fel, amelyeken telepítettek MAM-alkalmazást.
+
+
+|          Tulajdonság          |                                    Leírás                                    |                         Példa                         |
+|----------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
+|        PlatformKey         |     A platform egyedi azonosítója az adattárházban – helyettes kulcs.      |                           123                           |
+|          Platform          | A platform egyedi azonosítója – a PlatformKey-hez hasonló, de természetes kulcs. |                           123                           |
+|        PlatformName        |                                   A platform neve                                   | Nem érhető el <br>Nincsenek <br>Windows <br>IOS <br>Android. |
+| RowLastModifiedDateTimeUTC | A platform adattárházban történt utolsó módosításának dátuma és időpontja (UTC).  |                 2016.11.23. 12:00:00                  |
 
 ## <a name="managementagenttypes"></a>managementAgentTypes
 A **managementAgentTypes** az eszköz kezelésére szolgáló ügynököket jelöli.
@@ -521,7 +600,7 @@ A **Szabályzat** entitás eszköz- és alkalmazáskonfigurációs profilokat, v
 | PolicyId                   | A szabályzat egyedi azonosítója az adattárházban.                                                                                                 | b66bc706-ffff-7437-0340-032819502773 |
 | PolicyName                 | A szabályzat neve.                                                                                                                                    | „Windows 10 Baseline”                |
 | PolicyVersion              | A szabályzat verziója. A szabályzat szerkesztésekor vagy módosításakor új verzió jön létre.                                                             | 1, 2, 3                              |
-| IsDeleted                  | Jelzi, hogy frissítve lett-e a szabályzatrekord.  Igaz – a szabályzat új, frissített mezőkkel ellátott rekorddal rendelkezik.  Hamis – a szabályzat legújabb rekordja. | True/false                           |
+| IsDeleted                  | Jelzi, hogy frissítve lett-e a szabályzatrekord.  Igaz – a szabályzat új, frissített mezőkkel ellátott rekorddal rendelkezik.  Hamis – a szabályzat legújabb rekordja. | Igaz/hamis                           |
 | StartDateInclusiveUTC      | A szabályzat adattárházban történt létrehozásának dátuma és időpontja (UTC).                                                                              | 2016. 11. 23. 0:00                      |
 | DeletedDateUTC             | Az IsDeleted paraméter True (Igaz) értékre módosulásának dátuma és időpontja (UTC).                                                                                                   | 2016. 11. 23. 0:00                      |
 | RowLastModifiedDateTimeUTC | A szabályzat adattárházban történt utolsó módosításának dátuma és időpontja (UTC).                                                                        | 2016. 11. 23. 0:00                      |
@@ -599,12 +678,12 @@ A **termsAndConditions** entitás adott feltételek és kikötések (T&C) szabá
 ## <a name="userdeviceassociations"></a>userDeviceAssociations
 A **UserDeviceAssociation** entitás tartalmazza a szervezet felhasználói hozzárendeléseit.
 
-|        Név        |                                             Leírás                                            |     Példa     |
+|        Name (Név)        |                                             Leírás                                            |     Példa     |
 |:------------------:|:--------------------------------------------------------------------------------------------------:|:---------------:|
 | UserKey            | A felhasználó egyedi azonosítója az adattárházban.   (Helyettes kulcs).                            | 123             |
 | DeviceKey          | Az eszköz egyedi azonosítója az adattárházban.                                             | 123             |
 | CreatedDateTimeUTC | A felhasználói eszköztársítás létrehozásának dátuma és időpontja. UTC formátumban.                     | 2016. 11. 23. 0:00 |
-| IsDeleted          | Azt jelzi, hogy a felhasználó megszüntette az eszköz regisztrációját, és a társítás már nem aktuális. | True/false      |
+| IsDeleted          | Azt jelzi, hogy a felhasználó megszüntette az eszköz regisztrációját, és a társítás már nem aktuális. | Igaz/hamis      |
 | EndedDateTimeUTC   | Az IsDeleted paraméter True (Igaz) értékre módosulásának dátuma és időpontja (UTC).                                               | 2017. 06. 23. 00:00  |
 
 ## <a name="users"></a>felhasználók
@@ -620,7 +699,7 @@ A **user** entitásgyűjtemény felhasználói adatokat tartalmaz. A rekordok k�
 | userPrincipalName                        | A felhasználó egyszerű felhasználóneve.                                                                                                                                                                                               | John@constoso.com                    |
 | displayName                | A felhasználó megjelenítendő neve.                                                                                                                                                                                                      | István                                 |
 | IntuneLicensed             | Megadja, hogy a felhasználó rendelkezik-e Intune-licenccel.                                                                                                                                                                              | Igaz/hamis                           |
-| IsDeleted                  | Azt jelzi, hogy a felhasználó összes engedélye lejárt-e, és a felhasználót emiatt eltávolították-e az Intune-ból. Egyetlen rekord esetén ez a jelölő nem változik. Ehelyett új rekord jön létre egy új felhasználói állapothoz. | True/false                           |
+| IsDeleted                  | Azt jelzi, hogy a felhasználó összes engedélye lejárt-e, és a felhasználót emiatt eltávolították-e az Intune-ból. Egyetlen rekord esetén ez a jelölő nem változik. Ehelyett új rekord jön létre egy új felhasználói állapothoz. | Igaz/hamis                           |
 | RowLastModifiedDateTimeUTC | A rekord adattárházban történt utolsó módosításának dátuma és időpontja (UTC)                                                                                                                                                 | 2016. 11. 23. 0:00                      |
 
 ## <a name="usertermsandconditionsacceptances"></a>userTermsAndConditionsAcceptances

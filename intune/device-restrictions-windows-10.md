@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/03/2019
+ms.date: 04/08/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 41eca84f49c8bd1827d6dfbc74909ee829dd3554
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.openlocfilehash: 8957c8d8aad2eaa1741b1a625afd4b5a41a8bb51
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292466"
+ms.locfileid: "59423696"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>A Windows 10 (és újabb) eszközbeállítások engedélyezett vagy korlátozott funkciók az Intune-nal
 
@@ -308,6 +308,29 @@ Az eszközkorlátozások profiljának közvetlenül kapcsolódik ahhoz a teljes 
   - **Korábbi jelszavak újbóli használatának tiltása**: Ez a beállítás az eszköz által megjegyzett korábbi jelszavak számát határozza meg.
   - **Jelszó kérése, ha az eszköz visszatér inaktív állapotból (csak mobil)**: Azt adja meg, hogy köteles-e a felhasználó jelszót megadnia az eszköz feloldásához (csak Windows 10 Mobile esetén).
   - **Egyszerű jelszavak**: Lehetővé teszi egyszerű jelszavak, például 1111 vagy 1234 használatának engedélyezése. Ez a beállítás a Windows-képjelszavak használatát is engedélyezi vagy letiltja.
+- **Automatikus titkosítás során AADJ**: **Blokk** automatikus BitLocker eszköztitkosítás megakadályozza, hogy ha az eszköz az első használatra kész, amikor az eszköz Azure AD-hez. **Nincs konfigurálva** (alapértelmezett) használ az operációs rendszer alapértelmezett beállítás, amely előfordulhat, hogy engedélyezze a titkosítást. A több [BitLocker eszköztitkosítás](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption).
+
+  [Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
+
+- **Federal Information Processing Standard (FIPS) házirend**: **Lehetővé teszi** használja a Federal Information Processing Standard (FIPS) szabályzatot, amely az USA kormányzati standard a titkosításhoz, kivonatoláshoz és aláíráshoz. **Nincs konfigurálva** (alapértelmezett) használ az operációs rendszer alapértelmezett beállítás, amely nem érvényes a FIPS használ.
+
+  [Cryptography/AllowFipsAlgorithmPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
+
+- **Windows Hello eszközhitelesítés**: **Lehetővé teszi** felhasználók jelentkezzen be a Windows 10 rendszerű számítógép a Windows Hello társeszközt, például telefon, mentességre sávon, vagy IoT-eszköz használatával. **Nincs konfigurálva** (alapértelmezett) használ az operációs rendszer alapértelmezett, amely megakadályozhatja, hogy a Windows Hello appliances eszközök Windows való hitelesítés közben.
+
+  [Authentication/AllowSecondaryAuthenticationDevice CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowsecondaryauthenticationdevice)
+
+- **Webalkalmazás-bejelentkezési**: Lehetővé teszi a Windows bejelentkezési támogatása nem ADFS (Active Directory összevonási szolgáltatások) összevont szolgáltatók, például a Security Assertion Markup Language (SAML). SAML használ a biztonságos jogkivonatok, amelyek egy egyszeri bejelentkezés (SSO) webböngészők élményt nyújtanak. A választható lehetőségek:
+
+  - **Nincs konfigurálva** (alapértelmezett): Az operációs rendszer alapértelmezett használja az eszközön.
+  - **Engedélyezett**: Bejelentkezés a webes hitelesítőadat-szolgáltató engedélyezve van.
+  - **Letiltott**: A webes hitelesítőadat-szolgáltató le van tiltva, a bejelentkezéshez.
+
+  [Authentication/EnableWebSignIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-enablewebsignin)
+
+- **Az Azure AD-bérlői tartományán előnyben részesített**: Adja meg egy meglévő tartománynevet a szervezet Azure ad-ben. Amikor a felhasználók ebben a tartományban jelentkezzen be, nem kell a tartomány nevét. Például írja be a következőt: `contoso.com`. A felhasználók a `contoso.com` tartomány is jelentkezzen be a felhasználónevet, pl. "abby" helyett "abby@contoso.com".
+
+  [Authentication/PreferredAadTenantDomainName CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
 
 ## <a name="per-app-privacy-exceptions"></a>Alkalmazásonkénti adatvédelmi kivételek
 

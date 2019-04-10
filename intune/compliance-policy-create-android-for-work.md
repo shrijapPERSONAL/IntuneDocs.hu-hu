@@ -1,68 +1,44 @@
 ---
-title: Android Enterprise-eszközmegfelelőségi szabályzat létrehozása a Microsoft Intune-ban – Azure | Microsoft Docs
-description: Android Enterprise és munkahelyi profilos eszközök Microsoft Intune-eszközmegfelelőségi szabályzatának létrehozása vagy konfigurálása. Feltört eszközök választható engedélyezése, az elfogadható fenyegetettségi szint megadása, a Google Play Áruház ellenőrzése, minimális és maximális operációsrendszer-verzió megadása, jelszókövetelmények megválasztása és alkalmazások közvetlen telepítésének engedélyezése.
+title: Android Enterprise megfelelőségi beállításai a Microsoft Intune – Azure |} A Microsoft Docs
+description: Használhatja a Microsoft Intune-ban a vállalati Android-eszköz megfelelőségének beállításakor minden beállítások listájának megtekintéséhez. Jelszószabályok beállítása egy minimális és maximális operációsrendszer-verzió, adott alkalmazásokra korlátozhatja, és burkolóalkalmazások újbóli használata jelszó és egyéb megakadályozása.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/02/2019
+ms.date: 04/04/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
-ms.reviewer: muhosabe
+ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 00c48f49507fe4fde5484d0725b605d90407facd
-ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
+ms.openlocfilehash: 16db0acab84a1095c40e9a92648c75c2581187cd
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58899053"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423560"
 ---
-# <a name="add-a-device-compliance-policy-for-android-enterprise-devices-in-intune"></a>Android Enterprise-eszközök eszközmegfelelőségi szabályzatának hozzáadása az Intune-ban
+# <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Android Enterprise-beállítások eszközök megjelölése a megfelelő vagy nem megfelelő, az Intune-nal
 
-Az eszközmegfelelőségi szabályzatok használata kiemelten fontos, ha az Intune-t a vállalat erőforrásainak védelmére kívánja használni. Az Intune-ban létrehozhat szabályokat és beállításokat, a vállalati Android-eszközök megfelelőségéhez, például a jelszó hossza. Ha egy eszköz nem megfelelő, a [feltételes hozzáférés](conditional-access.md) segítségével blokkolhatja a hozzáférést az adatokhoz és erőforrásokhoz.
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Ez a funkció az alábbiakra vonatkozik:  
+Ez a cikk és konfigurálhat vállalati Android-eszköz Intune-ban a különböző megfelelőségi beállításait ismerteti. A mobileszköz-felügyelet (MDM) megoldás részeként használja ezeket a beállításokat megjelölése nem megfelelőként rootolt (feltört) eszközöket, egy megengedett kockázati szintet, a Google Play Protect, és több.
+
+Ez a funkció az alábbiakra vonatkozik:
+
 - Vállalati Android
 
-Ezen kívül jelentéseket kérhet az eszközökről, elégtelen megfelelőség esetén pedig számos művelet áll rendelkezésére, például e-mailben figyelmeztetést küldhet az adott felhasználónak. A megfelelőségi szabályzatokról és azok előfeltételeiről az [Eszközmegfelelőség – első lépések](device-compliance-get-started.md) című cikk nyújt bővebb tájékoztatást.
+Intune-rendszergazdák a megfelelőségi beállítások segítségével a szervezeti erőforrások védelme érdekében. További információ a megfelelőségi szabályzatok, és milyen talál, [eszközmegfelelőség használatának első lépései](device-compliance-get-started.md).
 
-Ez a cikk az Android Enterprise-t futtató eszközök megfelelőségi szabályzatában használható beállításokat sorolja fel.
+## <a name="before-you-begin"></a>Előkészületek
 
-## <a name="non-compliance-and-conditional-access"></a>Meg nem felelés és feltételes hozzáférés
-
-Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítások kezelése, ha a megfelelőségi szabályzatot feltételes hozzáférési szabályzattal együtt használják.
-
---------------------------
-
-|**házirend-beállítás**| **Android Enterprise-profil** |
-| --- | --- |
-| **PIN-kód vagy jelszó konfigurálása** |  Karanténba helyezve |
-| **Eszköztitkosítás** |  Karanténba helyezve |
-| **Jailbreakelt vagy rootolt eszköz** | Karanténba helyezve (nem beállítás) |
-| **e-mail profil** | Nem alkalmazható |
-| **Operációs rendszer minimális verziója** | Karanténba helyezve |
-| **Operációs rendszer maximális verziója** | Karanténba helyezve |
-| **Windows-állapotigazolás** |Nem alkalmazható |
-
-**Javítva** = Az eszköz operációs rendszere megköveteli a megfelelést. Például a felhasználó köteles lesz PIN-kódot beállítani.
-
-**Karanténba helyezve** = Az eszköz operációs rendszere nem követeli meg a megfelelést. Például az Android-eszközök nem követelik meg a felhasználótól, hogy titkosítsa az eszközt. Ha az eszköz nem megfelelő, a következő műveletekre kerül sor:
-
-  - Ha a felhasználóra feltételes hozzáférési szabályzat vonatkozik, a rendszer letiltja az eszközt.
-  - A vállalati portál értesíti a felhasználót a megfelelőséggel kapcsolatos problémákról.
-
-## <a name="create-a-device-compliance-policy"></a>Eszközmegfelelőségi szabályzat létrehozása
-
-[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-4. A **Platform** beállításban válassza a **Vállalati Android** lehetőséget. 
-5. Válassza a **Beállítások konfigurálása** lehetőséget. Adja meg az **Eszközállapot**, **Eszköztulajdonságok** és **Rendszerbiztonság** beállításait a cikkben leírtak szerint.
+[Megfelelőségi szabályzat létrehozása](create-compliance-policy.md#create-the-policy). A **Platform**válassza **Android Enterprise**.
 
 ## <a name="device-health"></a>Device health
 
@@ -113,7 +89,7 @@ Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítás
 
 - **Titkosítása az eszközön**: Válasszon **megkövetelése** az adattárolás, az eszközök titkosításához. Ha a **Nincs konfigurálva** (alapértelmezett) lehetőséget választja, a rendszer ezt a beállítást nem veszi figyelembe a megfelelőség, vagy meg nem felelőség megállapításához. 
 
-  Ezt a beállítást nem szükséges konfigurálni, mivel az androidos munkahelyi profilokkal rendelkező eszközök kikényszerítik a titkosítást.
+  Nem konfigurálja ezt a beállítást, mert az Android Enterprise-eszközök megkövetelik a titkosítást kell.
 
 ### <a name="device-security"></a>Eszközbiztonság
 
@@ -124,7 +100,7 @@ Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítás
   > [!IMPORTANT]
   > Az alkalmazások közvetlen telepítéséhez engedélyezni kell az **Ismeretlen forrásból származó alkalmazások letiltása** beállítást. Csak akkor szükséges ennek a megfelelőségi szabályzatnak a kényszerítése, ha nem telepít közvetlenül Android-alkalmazásokat az eszközökön.
 
-  Ezt a beállítást nem szükséges konfigurálni, mivel az androidos munkahelyi profilokkal rendelkező eszközök mindig korlátozzák az ismeretlen forrásokból való telepítést.
+  Nem kell konfigurálni ezt a beállítást, mivel a vállalati Android-eszköz mindig korlátozzák az ismeretlen forrásból történő telepítést.
 
 - **Céges portál alkalmazás futtatókörnyezetének integritása**: Válasszon **megkövetelése** , győződjön meg róla a vállalati portál alkalmazás megfelel-e az alábbi követelményeknek:
 
@@ -137,36 +113,14 @@ Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítás
 
 - **USB-hibakeresés letiltása az eszközön**: Válasszon **blokk** megakadályozza, hogy az eszközök az USB-hibakeresés funkció használata. Ha a **Nincs konfigurálva** (alapértelmezett) lehetőséget választja, a rendszer ezt a beállítást nem veszi figyelembe a megfelelőség, vagy meg nem felelőség megállapításához.
 
-  Ezt a beállítást nem szükséges konfigurálni, mivel az androidos munkahelyi profilokkal rendelkező eszközökön már le van tiltva az USB-hibakeresés.
+  Nem konfigurálja ezt a beállítást, mert az USB-hibakeresés már le van tiltva a vállalati Android-eszköz kell.
 
 - **Minimális biztonsági javítási szint**: Válassza ki az eszköz minimális biztonsági javítási szintjének. Az ennél régebbi javítási verzióval rendelkező eszközök nem megfelelőek. Az adatokat a következő formátumban kell megadni: *ÉÉÉÉ-HH-NN*.
 
-Ha elkészült, a változások mentéséhez válassza az **OK** > **OK** lehetőségeket.
-
-## <a name="actions-for-noncompliance"></a>Meg nem felelés esetén végrehajtandó műveletek
-
-Válassza a **Meg nem felelés esetén végrehajtandó műveletek** lehetőséget. Az alapértelmezett művelet azonnal nem megfelelőként jelöli meg az eszközt.
-
-Módosíthatja az eszköz nem megfelelőként való megjelölésének ütemezését, megadhatja például, hogy egy nap elteltével jelölje a rendszer nem megfelelőnek az eszközt. Hozzáadhat egy második műveletet is, amely e-mailt küld a felhasználónak, ha az eszköz nem megfelelő.
-
-A [Műveletek hozzáadása nem megfelelő eszközökhöz](actions-for-noncompliance.md) további információval szolgál, többek között arról, hogyan hozhat létre értesítési e-mailt a felhasználók számára.
-
-## <a name="scope-tags"></a>Hatókörcímkék
-
-A hatókörcímkék nagyszerű módot kínálnak egyes szabályzatok meghatározott csoportokhoz (például az értékesítési, a mérnöki vagy a HR-csoporthoz) való hozzárendeléséhez. Hatókörcímkék adhat hozzá megfelelőségi szabályzatokat. Lásd: [Hatókörcímkék használata szabályzatok szűrésére](scope-tags.md). 
-
-## <a name="assign-user-groups"></a>Felhasználói csoportok hozzárendelése
-
-A szabályzat a létrehozása után csak akkor lép működésbe, ha hozzárendeli egy csoporthoz. A szabályzat hozzárendelése: 
-
-1. Válasszon ki egy konfigurált szabályzatot. A meglévő szabályzatok az **Eszközmegfelelőség** > **Szabályzatok** alatt találhatók.
-2. Válassza ki a szabályzatot, majd válassza a **Hozzárendelések** lehetőséget. Belefoglalhat vagy kizárhat Azure Active Directory (AD) biztonsági csoportokat.
-3. Azure AD-biztonsági csoportjait a **Kijelölt csoportok** lehetőséget választva tekintheti meg. Kiválaszthatja, hogy mely csoportokra vonatkozzon a szabályzat, majd a **Mentés** elemre kattintva alkalmazhatja azt.
-
-Ezzel érvénybe léptette a szabályzatot a felhasználók számára. A rendszer ekkor kiértékeli a szabályzat hatókörébe tartozó felhasználók által használt eszközök megfelelőségét.
+A módosítások mentéséhez válassza az **OK** > **Létrehozás** lehetőséget.
 
 ## <a name="next-steps"></a>További lépések
 
-[Automatizált e-mailek és műveletek hozzáadása a nem megfelelő eszközökhöz](actions-for-noncompliance.md)  
-[Intune-eszközmegfelelőségi szabályzatok figyelése](compliance-policy-monitor.md)  
-[Megfelelőségi szabályzat beállításai Androidhoz](compliance-policy-create-android.md)
+- [Nem megfelelő eszközök műveletek hozzáadása a](actions-for-noncompliance.md) és [használja a szűrő házirendek hatókörcímkék](scope-tags.md).
+- [Az eszközmegfelelőségi szabályzatok figyelése](compliance-policy-monitor.md).
+- Tekintse meg a [megfelelőségi szabályzat beállításai androidhoz](compliance-policy-create-android.md) eszközök.

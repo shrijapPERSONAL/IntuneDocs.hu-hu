@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 327019527ea3c374a3ebeb3c29703dbd744d18dc
-ms.sourcegitcommit: 9daaeba9a960c50efcc951856234fbfec3635737
+ms.openlocfilehash: 2422762fb6717cb4666345599785430a2c35cd1f
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59231768"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423539"
 ---
 # <a name="in-development-for-microsoft-intune---april-2019"></a>A Microsoft Intune - április 2019 fejlesztés alatt
 
@@ -60,9 +60,6 @@ Hamarosan fogja tudni az ügyfeleken a Windows Defender az egyéni tűzfalszabá
 
 ### <a name="require-app-protection-conditional-access----1634317---"></a>Alkalmazások védelme feltételes hozzáférés megkövetelése  <!--1634317 -->
 Fogja tudni használni *megkövetelése alkalmazásvédelmi szabályzatának*, ami megerősíti, hogy a házirend bejelentkezési meg, hogy a felhasználók hozzáférését az adatok védelme a feltételes hozzáférés befejezése előtt a felhasználó alkalmazása vonatkozik. Miközben házirend garancia lelassíthatják az első használata élményt, azt úgy segít védekezni hálózati problémák, a felügyeleti konfigurációs hibák vagy a szándékos erőfeszítéseket támadók alkalmazásvédelmi szabályzatokat. 
-
-### <a name="deployment-of-online-licensed-microsoft-store-for-business-apps----16726660---"></a>Online licenccel rendelkező Microsoft Store az üzleti alkalmazások telepítése <!-- 16726660 -->
-Láthatja, hogy hozzárendeléséhez szükséges online licenccel rendelkező Microsoft Store for Business-alkalmazások az eszköz a környezetben. Központi telepítése a Microsoft Store for Business app így lehetővé teszi az alkalmazásnak, hogy az eszköz összes felhasználójához telepíthetők. Ez a tulajdonság csak a Windows 10 RS4 + asztali eszközökön alkalmazható. Az ügyfélalkalmazások hozzárendelés lapon találhat MSFB Online licencelt alkalmazások telepítésére, az eszköz a környezetben érhető el.
 
 ### <a name="include-and-exclude-mixture-of-user-groups-and-device-groups-when-assigning-policies-and-profiles----1807547---"></a>Belefoglalása vagy kizárása a felhasználói csoportokat és eszközcsoportokat tömbökből való hozzárendelésekor a házirendek és profilok <!-- 1807547 -->
 Való hozzárendelésekor a megfelelőségi szabályzatok, vagy a konfigurációs profilokat, hozzárendelheti azokat a biztonsági csoportok a felhasználók vagy eszközök. Jelenleg közé tartozik, és csak a felhasználói csoportok kizárása *vagy* csak az eszköz csoportok belefoglalása vagy kizárása. Nem belefoglalása és kizárása vegyesen, mint például a felhasználói csoportok belefoglalása *és* eszközök csoport kizárása.
@@ -142,7 +139,7 @@ Beállítások aktuális listájának megtekintéséhez, keresse fel a [engedél
 ### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---"></a>A Windows 10-es eszközök megfelelőségi szabályzatot a TPM lapkakészlet-ellenőrzés <!-- 3617671 -->
 Számos Windows 10-es és újabb rendszerű eszközök kell a platformmegbízhatósági modul (TPM) chipkészletekkel. Egy új megfelelőségi beállítás ellenőrzi egy TPM-e az eszközön.
 
-[Windows 10-es és újabb megfelelőségi szabályzat beállításai](compliance-policy-create-windows.md#windows-10-and-later-policy-settings) aktuális beállításokat sorolja fel.
+[Windows 10-es és újabb megfelelőségi szabályzat beállításai](compliance-policy-create-windows.md) aktuális beállításokat sorolja fel.
 
 Érintett kiadások: 
 - Windows 10 és újabb

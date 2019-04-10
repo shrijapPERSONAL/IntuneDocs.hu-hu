@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 87f7ad0f155ba1dac7d72b6a71f3b555ba908c97
-ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
+ms.openlocfilehash: 8df4a1d7f929301c11f577a9b7e50ef1647dda11
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58899112"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423713"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>A Microsoft Intune újdonságai – korábbi hónapok
 
@@ -316,11 +316,11 @@ A következő új állapotok lettek hozzáadva az **Eszközmegfelelőség** > **
 - Nem alkalmazható Egy olyan kép is megjelenik, amely mutatja a más platformon lévő eszközszámot. Például egy iOS-profil megtekintése esetén a profilhoz rendelt, nem iOS rendszerű eszközök száma is látható lesz az új csempén. Lásd: [Eszközmegfelelési szabályzatok](compliance-policy-monitor.md#view-status-of-device-policies).
 
 #### <a name="device-compliance-supports-3rd-party-anti-virus-solutions----2325484---"></a>Eszközmegfelelőség támogatja a 3. fél víruskereső megoldást <!-- 2325484 -->
-Eszközmegfelelőségi szabályzat létrehozásakor (**eszközmegfelelőség** > **házirendek** > **szabályzat létrehozása**  >  **Platform: Windows 10-es és újabb verziók** > **beállítások** > **rendszerbiztonság**), új **[Eszközbiztonsági](compliance-policy-create-windows.md#windows-10-and-later-policy-settings)** beállítások: 
+Eszközmegfelelőségi szabályzat létrehozásakor (**eszközmegfelelőség** > **házirendek** > **szabályzat létrehozása**  >  **Platform: Windows 10-es és újabb verziók** > **beállítások** > **rendszerbiztonság**), új **[Eszközbiztonsági](compliance-policy-create-windows.md)** beállítások: 
 - **A víruskereső**: Ha a beállítása **megkövetelése**, ellenőrizheti a megfelelőségi regisztrált Windows-Security Center, például a Symantec és a Windows Defender víruskereső megoldásokkal. 
 - **Kémprogram-elhárító**: Ha beállítása **megkövetelése**, ellenőrizheti a megfelelőségi Windows a Security Center, például a Symantec és a Windows Defender regisztrált kémprogram-elhárító megoldásokkal. 
 
-A következőkre vonatkozik: Windows 10 és újabb 
+Érintett kiadások: Windows 10 és újabb 
 
 ### <a name="device-enrollment"></a>Eszközök beléptetése
 
@@ -425,7 +425,7 @@ Az AutoPilot Deployment-profilok AutoPilot-eszközöket tartalmazó Azure AD-cso
 #### <a name="set-compliance-by-device-location----851881----"></a>Eszköz helye set megfelelősége <!-- 851881 ! -->
 Bizonyos esetekben érdemes a vállalati erőforrásokhoz való hozzáférést egy adott helyre korlátozni, amelyet hálózati kapcsolattal ad meg. Hozhat létre mostantól megfelelőségi szabályzatot (**Eszközmegfelelőség** > **Helyek**) az eszköz IP-címe alapján. Ha az eszköz az IP-címtartományon kívülre kerül, akkor nem férhet hozzá a vállalati erőforrásokhoz.
 
-A következőkre vonatkozik: Android 6.0-s és újabb eszközök frissített Céges portál alkalmazással
+Érintett kiadások: Android 6.0-s és újabb eszközök frissített Céges portál alkalmazással
 
 #### <a name="prevent-consumer-apps-and-experiences-on-windows-10-enterprise-rs4-autopilot-devices---1621980---"></a>Fogyasztói alkalmazások és funkciók használatának meggátolása a Windows 10 Enterprise rs4 rendszerű Autopilot-eszközök<!-- 1621980 -->
 Le fogja tudni tiltani a fogyasztói alkalmazások és funkciók telepítését a Windows 10 Enterprise RS4 rendszerű AutoPilot-eszközökön. A szolgáltatás eléréséhez válassza az **Intune** > **Eszközök konfigurálása** > **Profilok** > **Profil létrehozása** > **Platform** = **Windows 10 vagy újabb** > **Profiltípus** = **Eszközkorlátozások** > **Konfigurálás** > **Windows Reflektorfény** > **Fogyasztói funkciók** lehetőséget. 
@@ -550,7 +550,7 @@ Ezzel a frissítéssel új beállítás válik elérhetővé az **Android Enterp
 
 Engedélyezése (konfigurálás nélkül) esetén a munkahelyi hívó részletei megjelennek a személyes profilban. Tiltása esetén a munkahelyi hívó részletei nem jelennek meg a személyes profilban. 
 
-A következőkre vonatkozik: Android munkahelyi profilos eszközök Android operációs rendszer v6.0 és újabb
+Érintett kiadások: Android munkahelyi profilos eszközök Android operációs rendszer v6.0 és újabb
 
 #### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252-----from-1802-and-1804--"></a>Új Windows Defender Credential Guard-beállítások az endpoint protection-beállítások <!--1102252 --><!--from 1802 and 1804-->
 

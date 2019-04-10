@@ -1,11 +1,11 @@
 ---
-title: macOS-eszközmegfelelőségi szabályzat létrehozása a Microsoft Intune-ban – Azure | Microsoft Docs
-description: macOS-eszközök Microsoft Intune eszközmegfelelőségi szabályzatának létrehozása vagy konfigurálása a rendszerintegritás-védelem használatához, az operációs rendszer minimális és maximális verziójának megadásához, jelszókövetelmények kiválasztásához és adattárolók titkosításához.
+title: macOS megfelelőségi beállításai a Microsoft Intune – Azure |} A Microsoft Docs
+description: Tekintse meg a Microsoft Intune-ban a macOS-eszközökre vonatkozó megfelelőségi beállításakor használható beállításokról. Az Apple rendszerintegritás-védelem megkövetelése, jelszókorlátozásoknak, a tűzfal megkövetelése, lehetővé teszi a forgalomirányító és egyéb.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/14/2018
+ms.date: 04/04/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,47 +16,32 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21eca671d40f1ee2f2f9176a272cab5754140a26
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b3224e7400ad56f971488aba53bb073a0d33bb9d
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566607"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423645"
 ---
-# <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>macOS-es eszközök megfelelőségi szabályzatainak hozzáadása az Intune-nal
+# <a name="macos-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>eszközök megjelölése a megfelelő vagy nem megfelelő, az Intune-nal macOS-beállítások
 
-Az Intune macOS-eszközmegfelelőségi szabályzataival megszabhatja a macOS-eszközök megfelelőségéhez kötelezően szükséges szabályokat és beállításokat. Az eszközmegfelelőségi szabályzatokat a feltételes hozzáféréssel használva engedélyezheti vagy letilthatja a hozzáférést a vállalati erőforrásokhoz. Emellett lekérhet eszközjelentéseket, és különböző műveleteket hajthat végre meg nem felelés esetén. Az Intune Azure Portalon minden platformhoz létrehozhat megfelelőségi szabályzatokat. A megfelelőségi szabályzatokról és azok előfeltételeiről az [Eszközmegfelelőség – első lépések](device-compliance-get-started.md) című cikk nyújt bővebb tájékoztatást.
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítások kezelése, ha a megfelelőségi szabályzatot feltételes hozzáférési szabályzattal együtt használják:
+Ez a cikk felsorolja és ismerteti a különböző megfelelőségi beállítások az Intune-ban macOS-eszközökön konfigurálható. A mobileszköz-felügyelet (MDM) megoldás részeként ezek a beállítások használatával állítsa be a minimális vagy maximális operációs rendszer verziója, beállítása jelszavakat lejár és további.
 
----------------------------
+Ez a funkció az alábbiakra vonatkozik:
 
-| Házirend-beállítás | macOS 10.11 és újabb verziók |
-| --- | --- |
-| **PIN-kód vagy jelszó konfigurálása** | Kijavítva |   
-| **Eszköztitkosítás** | Kijavítva (PIN-kód beállításával) |
-| **E-mail profil** | Karanténba helyezve |
-|**Operációs rendszer minimális verziója** | Karanténba helyezve |
-| **Operációs rendszer maximális verziója** | Karanténba helyezve |
+- macOS
 
----------------------------
+Intune-rendszergazdák a megfelelőségi beállítások segítségével a szervezeti erőforrások védelme érdekében. További információ a megfelelőségi szabályzatok, és milyen talál, [eszközmegfelelőség használatának első lépései](device-compliance-get-started.md).
 
-**Javítva** = Az eszköz operációs rendszere megköveteli a megfelelést. Például a felhasználó köteles lesz PIN-kódot beállítani.
+## <a name="before-you-begin"></a>Előkészületek
 
-**Karanténba helyezve** = Az eszköz operációs rendszere nem követeli meg a megfelelést. (Az Android-eszközök például nem követelik meg a felhasználótól az eszköz titkosítását.) Ha az eszköz nem megfelelő, a következő műveletekre kerül sor:
-
-- A rendszer letiltja az eszközt, ha a felhasználóra feltételes hozzáférési szabályzat vonatkozik.
-- A vállalati portál értesíti a felhasználót a megfelelőséggel kapcsolatos problémákról.
-
-## <a name="create-a-device-compliance-policy"></a>Eszközmegfelelőségi szabályzat létrehozása
-
-[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-4. A **Platform** beállításnál adja meg a **macOS** értéket. 
-5. Válassza a **beállítások konfigurálása**, és adja meg a **Eszközállapot**, **eszköztulajdonságok**, és **rendszerbiztonság** ismertetett beállítások Ez a cikk. Ha elkészült, válassza az **OK** majd a **Létrehozás** lehetőséget.
+[Megfelelőségi szabályzat létrehozása](create-compliance-policy.md#create-the-policy). A **Platform** beállításnál adja meg a **macOS** értéket.
 
 ## <a name="device-health"></a>Eszközállapot
 
-- **Rendszerintegritás-védelem megkövetelése**: **Szükséges** szeretné, hogy a macOS-eszközök [rendszerintegritás-védelem](https://support.apple.com/HT204899) engedélyezve van.
+- **Rendszerintegritás-védelem megkövetelése**: **Szükséges** szeretné, hogy a macOS-eszközök [rendszerintegritás-védelem](https://support.apple.com/HT204899) (megnyílik az Apple webhelyén) engedélyezve van. Ha a beállítása **nincs konfigurálva** (alapértelmezett), ez a beállítás nem kerül kiértékelésre, megfelelőségi vagy meg nem felelés.
 
 ## <a name="device-properties"></a>Eszköztulajdonságok
 
@@ -73,7 +58,7 @@ Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítás
 - **Egyszerű jelszavak**: Állítsa be **blokk** így a felhasználók nem egyszerű jelszavakat használhassanak, mint például **1234** vagy **1111**. A **Nincs konfigurálva** beállítással a felhasználók olyan jelszavakat is létrehozhatnak, mint az **1234** vagy az **1111**.
 - **Jelszó minimális hossza**: Adja meg a jelszóban szereplő számjegyek vagy karakterek minimális számát.
 - **Jelszó típusa**: Válassza ki, ha a jelszó csak szükséges **numerikus** karakter, vagy ha számokat és más karaktereket vegyesen kell lennie (**alfanumerikus**).
-- **Jelszavak nem alfanumerikus karaktereinek száma**: Adja meg a speciális karakterek minimális számát (&, #, %,! stb) kell szerepelnie a jelszóban.
+- **Jelszavak nem alfanumerikus karaktereinek száma**: Adja meg például a speciális karakterek minimális számát `&`, `#`, `%`, `!`, és így tovább, a jelszót kell működnie.
 
     Ha nagyobb értékre állítja, a felhasználóknak összetettebb jelszót kell létrehozniuk.
 
@@ -89,13 +74,16 @@ Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítás
 - **Egy eszközön való adattárolás titkosításának**: Válasszon **megkövetelése** az adattárolás, az eszközök titkosításához.
 
 ### <a name="device-security"></a>Eszközbiztonság
+
 A tűzfal a jogosulatlan hálózati hozzáférés ellen védi az eszközöket. A tűzfal használatával a kapcsolatok alkalmazásonként szabályozhatók. 
 
-- **Tűzfal**: **Engedélyezése** eszközök jogosulatlan hozzáférés elleni védelme érdekében. A funkció engedélyezése után kezelni tudja a bejövő internetes kapcsolatokat, és használhatja a rejtett üzemmódot. Ha **Nincs konfigurálva** (alapértelmezés), akkor a tűzfal kikapcsolva marad, a hálózati forgalom pedig engedélyezve lesz (nem lesz letiltva).
-- **A bejövő kapcsolatok**: **Blokk** az összes bejövő hálózati kapcsolatok, kivéve az alapvető internetes szolgáltatások, például a DHCP, Bonjour és az IPSec szükséges. Ez a beállítás letilt minden megosztási szolgáltatást, többek között a képernyőmegosztást, a távelérést, az iTunes-zenemegosztást is. Ha **Nincs konfigurálva** (alapértelmezés), akkor minden bejövő kapcsolat és megosztási szolgáltatás engedélyezve van. 
-- **Rejtett üzemmód**: **Engedélyezése** rejtett üzemmód megakadályozza, hogy az eszköz válaszol a kérelmekre, a rosszindulatú felhasználók teszik lehetővé. Engedélyezése esetén az eszköz továbbra is válaszol az engedélyezett alkalmazásoktól érkező kérelmekre. Ha **Nincs konfigurálva** (alapértelmezés), akkor a rejtett üzemmód ki van kapcsolva.
+- **Tűzfal**: Válassza ki **engedélyezése** eszközök jogosulatlan hozzáférés elleni védelme érdekében. A funkció engedélyezése után kezelni tudja a bejövő internetes kapcsolatokat, és használhatja a rejtett üzemmódot. Ha **Nincs konfigurálva** (alapértelmezés), akkor a tűzfal kikapcsolva marad, a hálózati forgalom pedig engedélyezve lesz (nem lesz letiltva).
+- **A bejövő kapcsolatok**: **Blokk** , kivéve az összes bejövő hálózati kapcsolatok olyan alapvető internet-szolgáltatások, például a DHCP, Bonjour és az IPSec. Ez a beállítás letiltja a megosztási szolgáltatásokat, például az képernyőmegosztást, távelérési, iTunes zene megosztását is. Ha **Nincs konfigurálva** (alapértelmezés), akkor minden bejövő kapcsolat és megosztási szolgáltatás engedélyezve van.
+- **Rejtett üzemmód**: **Engedélyezése** rejtett üzemmód kérelmekre, a rosszindulatú felhasználók teszik lehetővé az eszközök megakadályozása. Engedélyezése esetén az eszköz továbbra is válaszol az engedélyezett alkalmazásoktól érkező kérelmekre. Ha **Nincs konfigurálva** (alapértelmezés), akkor a rejtett üzemmód ki van kapcsolva.
 
 ### <a name="gatekeeper"></a>Forgalomirányító
+
+További információkért lásd: [macOS rendszeren a forgalomirányító](https://support.apple.com/HT202491) (az Apple webhelyén nyílik meg).
 
 **Alkalmazások ezen helyekről való letöltésének engedélyezése**: Lehetővé teszi a támogatott alkalmazások telepítését az eszközök különböző helyekről. Az Ön helybeállításai:
 
@@ -104,19 +92,10 @@ A tűzfal a jogosulatlan hálózati hozzáférés ellen védi az eszközöket. A
 - **Mac App Store és azonosított fejlesztők**: A Mac app store és azonosított fejlesztők alkalmazásokat telepíteni. A macOS ellenőrzi a fejlesztők identitását, és néhány egyéb ellenőrzést is végez az alkalmazás integritásának igazolásához. Ha egy felhasználó azt választja, hogy a forgalomirányító a megadott beállításokon kívüli alkalmazásokat telepítsen, akkor az eszköz nem megfelelőnek fog számítani.
 - **Bárhol**: Alkalmazások telepíthetők a bárhol és bármilyen fejlesztőnek. Ez a beállítás a legkevésbé biztonságos.
 
-Az Apple dokumentációjában elérhető további részletekért olvassa el a [forgalomirányítóról szóló cikket a macOS weblapján](https://support.apple.com/HT202491).
-
-## <a name="assign-user-groups"></a>Felhasználói csoportok hozzárendelése
-
-1. Válasszon ki egy konfigurált szabályzatot. A meglévő szabályzatok az **Eszközmegfelelőség** > **Szabályzatok** alatt találhatók.
-2. Válassza ki a szabályzatot, majd válassza a **Hozzárendelések** lehetőséget. Belefoglalhat vagy kizárhat Azure Active Directory (AD) biztonsági csoportokat.
-3. Azure AD-biztonsági csoportjait a **Kijelölt csoportok** lehetőséget választva tekintheti meg. Kiválaszthatja, hogy mely csoportokra vonatkozzon a szabályzat, majd a **Mentés** elemre kattintva alkalmazhatja azt.
-
-> [!TIP]
-> Az eszközök alapértelmezés szerint nyolc óránként ellenőrzik a megfelelőséget. Az eljárást azonban a felhasználó is kikényszerítheti az Intune Céges portál alkalmazáson keresztül.
-
-Ezzel érvénybe léptette a szabályzatot a felhasználók számára. A rendszer ekkor kiértékeli a szabályzat hatókörébe tartozó felhasználók által használt eszközök megfelelőségét.
+A módosítások mentéséhez válassza az **OK** > **Létrehozás** lehetőséget.
 
 ## <a name="next-steps"></a>További lépések
-[Automatizált e-mailek és műveletek hozzáadása a nem megfelelő eszközökhöz](actions-for-noncompliance.md)  
-[Intune-eszközmegfelelőségi szabályzatok figyelése](compliance-policy-monitor.md)
+
+- [Nem megfelelő eszközök műveletek hozzáadása a](actions-for-noncompliance.md) és [használja a szűrő házirendek hatókörcímkék](scope-tags.md).
+- [Az eszközmegfelelőségi szabályzatok figyelése](compliance-policy-monitor.md).
+- Tekintse meg a [megfelelőségi szabályzat beállításai iOS-es](compliance-policy-create-ios.md) eszközök.
