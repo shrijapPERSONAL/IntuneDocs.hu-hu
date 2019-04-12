@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9dca4dc0b0b93d8466835ce0518268a548f3174a
-ms.sourcegitcommit: 9daaeba9a960c50efcc951856234fbfec3635737
+ms.openlocfilehash: 40f9ada715570de7b5b2f95292b7ed0d238242d2
+ms.sourcegitcommit: 04d29d47b61486b3586a0e0e5e8e48762351f2a3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59231758"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59509708"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Intune – a hálózati konfiguráció követelményei és sávszélessége
 
@@ -68,11 +68,16 @@ Az alábbiakban az Intune-ügyfelek számára tartalmakat gyorsítótárazó pro
 |         Gyorsítótár mérete         |             5 GB-tól 30 GB-ig             | Az érték a hálózatban lévő ügyfélszámítógépek számától és a használt beállításoktól függ. A fájlok túl korai törlésének elkerülése érdekében a gyorsítótár mérete a környezethez igazítható. |
 | Egyedi gyorsítótárfájlok mérete |                950 MB                 |                                                                     Ez a beállítás nem feltétlenül érhető el minden gyorsítótárazási proxykiszolgálón.                                                                     |
 |   Gyorsítótárazandó objektumtípusok    | HTTP<br /><br />HTTPS<br /><br />BITS |                                               Az Intune-csomagok olyan CAB-fájlok, amelyeket a Háttérben futó intelligens átviteli szolgáltatás (BITS) tölt le HTTP protokollal.                                               |
+> [!NOTE]
+> Ha proxykiszolgálót használ a tartalomkérelmek gyorsítótárazásához, a kommunikáció csak titkosított az ügyfél és a proxy közötti és a proxy, az Intune-hoz. A kapcsolat az Intune-hoz az ügyfél nem lesz teljes körű titkosított.
 
 A proxykiszolgálók tartalmak gyorsítótárazására való használatával kapcsolatos további tudnivalókat a proxykiszolgáló-megoldása dokumentációjában találhat.
 
 ### <a name="use-background-intelligent-transfer-service-bits-on-computers"></a>Háttérben futó intelligens átviteli szolgáltatás (BITS) használatát a számítógépeken
 Konfigurált munkaidőben BITS használhatja olyan Windows-számítógépen a hálózati sávszélesség csökkentése érdekében. A BITS-szabályzatot állíthat be a **hálózati sávszélesség** lap az Intune-ügynök házirend.
+
+> [!NOTE]
+> Az MDM-kezelést a Windows a MobileMSI alkalmazástípus csak az operációs rendszer felügyeleti felület bittel letöltéséhez. AppX/MsiX saját a BITS letöltési verem használata, és Win32-alkalmazások az Intune-ügynök használata helyett a BITS kézbesítésoptimalizálás.
 
 A BITS Windows rendszerű számítógépeken való használatáról a TechNet könyvtár a [Háttérben futó intelligens átviteli szolgáltatással foglalkozó témakörében](http://technet.microsoft.com/library/bb968799.aspx) olvashat bővebben.
 
