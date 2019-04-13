@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/15/2018
+ms.date: 04/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35f45b239567750f9f633e42de7fd4dbd5f090c1
-ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
+ms.openlocfilehash: 293fa40b59d0005f60aad45a3fc42d3dd790857d
+ms.sourcegitcommit: acf4c36619fc7a068a751c88343978ce749b668c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58163439"
+ms.lasthandoff: 04/13/2019
+ms.locfileid: "59551692"
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>A Microsoft Intune regisztrált eszközök kezelésével kapcsolatos képességei
 
@@ -31,7 +31,7 @@ A Microsoft Intune segítségével sokféle eszközt kezelhet úgy, hogy *regisz
 
 Ez a cikk biztosít után az eszközök regisztrációjának első a képességek teljes listáját.
 
-Felügyeleti, a leltárt, az alkalmazás telepítését, a létesítést és a használatból való kivonást egyaránt lehet kezelni az Intune-portálon.
+Felügyeleti, a leltárt, az alkalmazás telepítését, a létesítést és a használatból való kivonást egyaránt lehet kezelni az Intune az Azure Portalon.
 
 A felhasználók hozzáférést kapnak a vállalati portálhoz, és ennek segítségével alkalmazásokat telepíthetnek, eszközöket regisztrálhatnak vagy távolíthatnak el, és segítségért az informatikai osztályhoz vagy a segélyszolgálathoz fordulhatnak.
 
