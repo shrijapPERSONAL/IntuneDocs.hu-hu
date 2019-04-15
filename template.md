@@ -14,11 +14,11 @@ ms.service: ''
 ms.technology: ''
 ms.assetid:
 - GET ONE FROM guidgenerator.com
-ms.openlocfilehash: 68090a038cec49009b6bd0ce0515a075f62483b8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
-ms.translationtype: HT
+ms.openlocfilehash: d05559a46cfd2bf9e092378e7cff779022e21792
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "20283569"
 ---
 # <a name="metadata-and-markdown-template"></a>Metaadat- és markdown-sablon
@@ -34,11 +34,11 @@ A teljes metaadatblokk a fentiekben található kötelező és opcionális mező
 
 - A kettőspont (:) és a metaadatelem értéke között szóköznek **kell** lennie.
 - Ha az opcionális metaadatelem nem rendelkezik értékkel, tegye megjegyzésbe az elemet egy # karakterrel (ne hagyja üresen, és ne használja az „na” karakterláncot); ha értéket ad egy korábban megjegyzésbe helyezett elemhez, törölje a # karaktert.
-- Az értékben (például a címben) szereplő kettőspontok megtörik a metaadat-elemzőt. Használja helyettük az &#58; HTML-kódot (például: „cím: Azure Rights Management&#58; az alapok | Azure RMS”).
-- **title**: Ez a cím jelenik meg a keresőmotorok találatai között. A cím végén egy függőleges vonalnak (|) kell szerepelnie, amelyet a szolgáltatás neve követ (lásd fentebb). A címnek nem kell megegyeznie (és valószínűleg jobb is, ha nem egyezik meg) a H1 címsorban lévő címmel. Nagyjából 65 karakter hosszú legyen (beleértve a | SZOLGÁLTATÁS NEVÉT)
-- **author**, **manager**, **reviewer**: Az author mező a szerző **Github-felhasználónevét** tartalmazza, ne pedig az aliasát.  A manager és a reviewer mezőben azonban aliasnak kell szerepelnie. Az ms.reviewer a cikkhez vagy szolgáltatáshoz társított PM nevét adja meg.
-- **ms.assetid**: Ez a CAPS-cikk GUID azonosítója. Új markdown-fájl létrehozásakor a GUID azonosítót a [https://www.guidgenerator.com](https://www.guidgenerator.com) címről szerezheti meg. 
-- **ms.prod**, **ms.service**, **ms.technology**, **ms.devlang**, **ms.topic**, **ms.tgt_pltfrm**: Ezeknek az elemeknek a lehetséges értékei [itt](https://microsoft.sharepoint.com/teams/STBCSI/Insights/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7A321BF1-0611-4184-84DA-A0E964C435FA%7d&file=WEDCS_MasterList_CSIValues.xlsx&action=default) találhatóak.
+- Az értékben (például a címben) szereplő kettőspontok megtörik a metaadat-elemzőt. A helyükre, használja a HTML-kódolás &#58; (például "cím: Az Azure Rights Management&#58; alapvető |} Az Azure RMS-").
+- **Cím**: Ez a cím fog megjelenni a keresőmotorok találatai között. A cím végén egy függőleges vonalnak (|) kell szerepelnie, amelyet a szolgáltatás neve követ (lásd fentebb). A címnek nem kell megegyeznie (és valószínűleg jobb is, ha nem egyezik meg) a H1 címsorban lévő címmel. Nagyjából 65 karakter hosszú legyen (beleértve a | SZOLGÁLTATÁS NEVÉT)
+- **Szerző**, **manager**, **felülvizsgáló**: Az author mező a **Github-felhasználónevét** a szerző, nem pedig az aliasát.  A manager és a reviewer mezőben azonban aliasnak kell szerepelnie. Az ms.reviewer a cikkhez vagy szolgáltatáshoz társított PM nevét adja meg.
+- **ms.assetid**: Ez a Caps-cikk GUID Azonosítóját. Új markdown-fájl létrehozásakor a GUID Azonosítót a get [ https://www.guidgenerator.com ](https://www.guidgenerator.com). 
+- **ms.prod**, **ms.service**, **ms.technology**, **ms.devlang**, **ms.topic**, **ms.tgt_pltfrm**: Ezeknek az elemeknek a lehetséges értékek találhatók [Itt](https://microsoft.sharepoint.com/teams/STBCSI/Insights/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7A321BF1-0611-4184-84DA-A0E964C435FA%7d&file=WEDCS_MasterList_CSIValues.xlsx&action=default).
 
 ## <a name="basic-markdown-and-gfm"></a>Alapvető markdown és GFM
 
@@ -74,11 +74,11 @@ A második szintű címsorok hozzák létre az oldalon belüli tartalomjegyzéke
 
 Az egyazon adattárban lévő markdown-fájlra való hivatkozáshoz használjon [relatív hivatkozásokat](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2). 
 
-- Például: [Mi az az Azure Rights Management?](./understand-explore/what-is-azure-rights-management.md)
+- Példa: [Mi az Azure Rights Management](./understand-explore/what-is-azure-rights-management.md)
 
 Az egyazon markdown-fájlban lévő címsorra való hivatkozáshoz tekintse meg a közzétett cikk forrását, keresse meg a címsor azonosítóját (például `id="blockquote"`), és a # + azonosító kombináció segítségével hozza létre a hivatkozást (például `#blockquote`).
 
-- Például: [Idézetblokkok](#blockquote)
+- Példa: [Idézetblokkok](#blockquote)
 
 Az egyazon adattárban lévő címsorra való hivatkozáshoz használjon relatív hivatkozást és hashtaggel történő hivatkozást.
 
@@ -86,7 +86,7 @@ Az egyazon adattárban lévő címsorra való hivatkozáshoz használjon relatí
 
 Külső fájlra hivatkozáshoz használja hivatkozásként a teljes URL-címet.
 
-- Például: [Github](http://www.github.com)
+- Példa: [Github](http://www.github.com)
 
 Ha a markdown-fájlban egy URL-cím jelenik meg, akkor az egy kattintható hivatkozássá alakul.
 
