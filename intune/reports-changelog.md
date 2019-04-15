@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b4765cf953c2cdc9e972224b4f04c54df7a32af
-ms.sourcegitcommit: 04d29d47b61486b3586a0e0e5e8e48762351f2a3
+ms.openlocfilehash: 30f315f58a905e690a43ab3c44aee783bd0ef8c9
+ms.sourcegitcommit: a2cd14c30949cef17bfc6576513e7660a8015669
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59509718"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59571807"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Az Intune-adattárház API módosítási naplója
 
@@ -48,7 +48,7 @@ A következő táblázat felsorolja a legutóbbi eltávolított gyűjtemények �
 |    currentUser                         |    Eltávolítva    |    Használja a [felhasználók](intune-data-warehouse-collections.md#users) gyűjtemény helyett.                                                                                                                                                                                                                                                                                                      |
 |    mdmDeviceInventoryHistories         |    Eltávolítva    |    Sok tulajdonság redundáns volt, vagy lehet, hogy most már a található a [devicePropertyHistories](intune-data-warehouse-collections.md#devicepropertyhistories) vagy [eszközök](intune-data-warehouse-collections.md#devices) gyűjteményeket. Bármely **mdmDeviceInventoryHistories** már nem érhetők el a következő két gyűjteményekhez még nem szereplő tulajdonságokat. A részleteket alább találja.    |
 
-A következő táblázat felsorolja a régi tulajdonság, korábbi nevén található a **mdmDeviceInventoryHistories** adatgyűjtési és -módosítás/cseréje:
+A következő táblázat felsorolja a régi tulajdonságokat korábban a **mdmDeviceInventoryHistories** adatgyűjtési és -módosítás/váltja fel. Szereplő tulajdonságokat **mdmDeviceInventoryHistories** , de nem szerepel a listán az alábbiakban el lettek távolítva.
 
 |    Régi tulajdonság                |    Módosítás/cseréje                                                           |
 |--------------------------------|---------------------------------------------------------------------------------|

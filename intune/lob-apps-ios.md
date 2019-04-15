@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d687fee70a5983379d1e4e95a7be6aa454f26f8a
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 1bb213230db5a699be913929cc3b68b90a8f019a
+ms.sourcegitcommit: a2cd14c30949cef17bfc6576513e7660a8015669
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799545"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59571756"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>IOS-es üzletági alkalmazások hozzáadása a Microsoft Intune-hoz
 
@@ -33,6 +33,8 @@ A cikkben található információ segítségével iOS rendszerű üzletági alk
 
 >[!NOTE]
 >Az iOS-eszközök felhasználói eltávolíthatnak néhányat a beépített iOS-alkalmazások közül, például a Részvények vagy a Térképek alkalmazást. Az Intune nem használható ezek újratelepítésére. Amennyiben a felhasználó törölte ezeket az alkalmazásokat, manuálisan telepítheti újra őket az App Store áruházból.
+>
+>iOS LOB-alkalmazások maximális mérete 4 GB az egyes alkalmazások rendelkeznek.
 
 ## <a name="step-1-specify-the-software-setup-file"></a>1. lépés: A szoftvertelepítő fájl megadása
 
