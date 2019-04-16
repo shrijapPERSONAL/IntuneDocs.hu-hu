@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/29/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2422762fb6717cb4666345599785430a2c35cd1f
-ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.openlocfilehash: aa38a684a32756d4f2c3be3b750f8e79b66e98f6
+ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59423539"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59587382"
 ---
 # <a name="in-development-for-microsoft-intune---april-2019"></a>A Microsoft Intune - április 2019 fejlesztés alatt
 
@@ -60,15 +60,6 @@ Hamarosan fogja tudni az ügyfeleken a Windows Defender az egyéni tűzfalszabá
 
 ### <a name="require-app-protection-conditional-access----1634317---"></a>Alkalmazások védelme feltételes hozzáférés megkövetelése  <!--1634317 -->
 Fogja tudni használni *megkövetelése alkalmazásvédelmi szabályzatának*, ami megerősíti, hogy a házirend bejelentkezési meg, hogy a felhasználók hozzáférését az adatok védelme a feltételes hozzáférés befejezése előtt a felhasználó alkalmazása vonatkozik. Miközben házirend garancia lelassíthatják az első használata élményt, azt úgy segít védekezni hálózati problémák, a felügyeleti konfigurációs hibák vagy a szándékos erőfeszítéseket támadók alkalmazásvédelmi szabályzatokat. 
-
-### <a name="include-and-exclude-mixture-of-user-groups-and-device-groups-when-assigning-policies-and-profiles----1807547---"></a>Belefoglalása vagy kizárása a felhasználói csoportokat és eszközcsoportokat tömbökből való hozzárendelésekor a házirendek és profilok <!-- 1807547 -->
-Való hozzárendelésekor a megfelelőségi szabályzatok, vagy a konfigurációs profilokat, hozzárendelheti azokat a biztonsági csoportok a felhasználók vagy eszközök. Jelenleg közé tartozik, és csak a felhasználói csoportok kizárása *vagy* csak az eszköz csoportok belefoglalása vagy kizárása. Nem belefoglalása és kizárása vegyesen, mint például a felhasználói csoportok belefoglalása *és* eszközök csoport kizárása.
-
-Fogja tudni belefoglalása vagy kizárása a felhasználói csoportokat és eszközcsoportokat. Megadhatja a felhasználók egy csoportjánál, és zárja ki az eszközök egy csoportját. Például hozzárendelése vagy eszközkonfigurációs profil üzembe helyezése a felhasználók egy csoportjára, de kizárja a személyes eszközök.
-
-[Eszközkonfigurációs profilok hozzárendelése](device-profile-assign.md) tartalmaz további tájékoztatást a profilok hozzárendelése a felhasználói csoportokat és eszközcsoportokat.
-
-Érintett kiadások: Összes platform
 
 ### <a name="retire-noncompliant-devices----1827291---"></a>Nem megfelelő eszközök kivonása <!-- 1827291 -->
 Adjon hozzá egy új megfelelőségi műveletet egy nem megfelelő eszköz kivonja fogunk. Egy nem megfelelő eszközt, az összes vállalati adat eltávolítása, és is eltávolítja az eszközt az Intune felügyelete alól. Ez a művelet fut, ha eléri a beállított értéke napokban megadva. A minimális érték 30 nap. 
