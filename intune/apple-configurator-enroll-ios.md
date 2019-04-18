@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b5398517a13b940a828932113698c15c7eaed67
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: ab4ecfe3f407082d0a51910b35ad8ac8d6724f9c
+ms.sourcegitcommit: 47eb67df69f237121f5197b2ac904a177aab5400
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57392787"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59671883"
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-configurator"></a>Az Apple Configurator eszközzel iOS-eszközök regisztrálásának beállítása
 
@@ -119,6 +119,7 @@ Miután létrehozta a profilt és hozzárendelte a sorozatszámokat, egy URL-cí
 1. A Mac-számítógépen nyissa meg az **Apple Configurator 2** eszközt. A menüsávban válassza az **Apple Configurator 2**, majd a **Beállítások** elemet.
     > [!WARNING]
     > A regisztrációs folyamat során az eszközök visszaállnak a gyári beállításokra. Az ajánlott eljárás szerint állítsa alaphelyzetbe az eszközt, és kapcsolja be. Az eszközön az **üdvözlőképernyőnek** kell látszania az eszköz csatlakoztatásakor.
+    > Ha az eszköz már regisztrálva lett az Apple ID-fiókot, az eszköz törölni kell az Apple icloud a regisztrációs folyamat megkezdése előtt. A kérdés hiba jelenik meg a "Nem sikerült aktiválni a [Device neve]".
 
 2. Válassza a **Beállítások** panelen a **Servers** (Kiszolgálók) elemet, majd az MDM-kiszolgálói varázsló elindításához válassza a „+” szimbólumot. Kattintson a **Tovább** gombra.
 3. Írja be a Beállítási asszisztens segítségével a Microsoft Intune-ban történő iOS-eszközregisztrációhoz megadott MDM-kiszolgáló **állomásnevét vagy URL-címét** (Host name or URL) és **regisztrációs URL-címét** (Enrollment URL) a megfelelő mezőkbe. Az Enrollment URL (Regisztrációs URL-cím) mezőnél az Intune-ból exportált regisztrációs profil URL-címét adja meg. Kattintson a **Tovább** gombra.  

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/12/2018
+ms.date: 04/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9273d547d72fd6cf10d2addc5efff2eba8e18205
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 5bd57d12630d5e2c8b69963f513ef007a9023f9b
+ms.sourcegitcommit: 9e196e4a3b381f0da97ce3c163b18a3012f4aed1
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799462"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59704892"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Alkalmazáskonfigurációs szabályzatok hozzáadása felügyelt iOS-eszközökhöz
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Ha iOS-alkalmazáshoz szeretne egyéni konfigurációs beállításokat megadni, használja az alkalmazáskonfigurációs szabályzatokat a Microsoft Intune-ban. Ezek a konfigurációs beállítások lehetővé teszik az alkalmazás testre szabását a szállító igényei szerint. Ezeket a konfigurációs beállításokat (kulcsokat és értékeket) az alkalmazás szállítójától kell beszerezni. Az alkalmazás konfigurálásához a beállításokat kulcs-érték párokban, vagy a kulcsokat és az értékeket tartalmazó XML-fájlként kell megadni. Ezeket a konfigurációs szabályzatokat nem kell közvetlenül felhasználókhoz vagy eszközökhöz rendelni. Ehelyett a konfigurációs szabályzatot egy alkalmazáshoz kell társítani, majd az alkalmazást hozzárendelni a felhasználókhoz vagy eszközökhöz. A konfigurációs szabályzatbeállítások akkor használatosak, amikor egy alkalmazás keresi azokat (általában az első futtatáskor).
+Ha iOS-alkalmazáshoz szeretne egyéni konfigurációs beállításokat megadni, használja az alkalmazáskonfigurációs szabályzatokat a Microsoft Intune-ban. Ezeket a konfigurációs beállításokat engedélyezése egy alkalmazás testre kell szabni az alkalmazás szállítók irány alapján. Ezeket a konfigurációs beállításokat (kulcsokat és értékeket) az alkalmazás szállítójától kell beszerezni. Az alkalmazás konfigurálásához a beállításokat kulcs-érték párokban, vagy a kulcsokat és az értékeket tartalmazó XML-fájlként kell megadni. Ezeket a konfigurációs szabályzatokat nem kell közvetlenül felhasználókhoz vagy eszközökhöz rendelni. Ehelyett a konfigurációs szabályzatot egy alkalmazáshoz kell társítani, majd az alkalmazást hozzárendelni a felhasználókhoz vagy eszközökhöz. A konfigurációs szabályzatbeállítások akkor használatosak, amikor egy alkalmazás keresi azokat (általában az első futtatáskor).
 
 Miután hozzáadta az alkalmazáskonfigurálási szabályzatot, beállíthatja az alkalmazáskonfigurálási szabályzat hozzárendeléseit. A szabályzat hozzárendeléseinek beállításakor felvehet vagy kizárhat a szabályzat hatálya alá eső felhasználói csoportokat. Amikor felvesz egy vagy több csoportot, kiválaszthat bizonyos csoportokat, vagy választhat beépített csoportokat. Beépített csoportok a következők: **Minden felhasználó**, **Minden eszköz**, és **Minden felhasználó és minden eszköz**. 
 
@@ -56,15 +56,15 @@ Miután kiválasztotta a belefoglalt csoportokat az alkalmazáskonfigurálási s
 5. Adja meg a következő adatokat:
     - **Név** – Az Azure Portalon megjelenítendő profilnév.
     - **Leírás** – Az Azure Portalon megjelenítendő profilleírás.
-    - **Eszközregisztráció típusa** – Válassza a **Felügyelt eszközök** lehetőséget.
+    - **Eszközregisztráció típusa** -válassza **felügyelt eszközök** az Intune-ban regisztrált eszközök esetében.
 6. A **Platform** beállításban válassza az **iOS** lehetőséget.
 7.  Válassza a **Társított alkalmazás** lehetőséget. A **Társított alkalmazás** panelen jelölje ki azt a felügyelt alkalmazást, amelyre a konfigurációt alkalmazni szeretné, majd nyomja meg az **OK** gombot.
 8.  A **Konfigurációs szabályzat hozzáadása** panelen válassza a **Konfigurációs beállítások** lehetőséget.
-9. Válassza a **Konfigurációs beállítások formátuma** lehetőséget. XML-információk hozzáadásához válassza az alábbiak egyikét:
+9. Válassza a **Konfigurációs beállítások formátuma** lehetőséget. Válassza ki a konfigurációs adatok megadása a következő módszerek egyikét:
     - **Konfigurációtervező használata**
     - **XML-adatok megadása**<br><br>
     A konfigurációtervező használatáról a [Konfigurációtervező használatát](#use-configuration-designer) ismertető cikkben talál bővebb információt. Az XML-adatok megadásáról az [XML-adatok megadása](#enter-xml-data) című cikkben talál útmutatást. 
-10. XML-adatainak hozzáadását követően használja az **OK**, majd a **Hozzáadás** gombot a konfigurációs szabályzat hozzáadásához. Ekkor megjelenik a konfigurációs szabályzat áttekintő panelje.
+10. Miután hozzáadta a konfigurációs adatokat, válassza ki a **OK**, és válassza a **Hozzáadás** az alkalmazáskonfigurációs szabályzat felvételéhez. Ekkor megjelenik a konfigurációs szabályzat áttekintő panelje.
 11. Válassza a **Hozzárendelések** lehetőséget a belefoglalási és kizárási beállítások megjelenítéséhez. 
 
     ![Képernyőkép a szabályzat-hozzárendelések Belefoglalás lapjáról](./media/app-config-policy01.png)

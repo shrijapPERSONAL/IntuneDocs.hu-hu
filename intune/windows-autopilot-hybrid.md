@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cd9b6718b4406fd18fc0251fbeaf589acd1d0c9
-ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
+ms.openlocfilehash: 1ab718cd087757211ad4e84cbba39808cf9de7d3
+ms.sourcegitcommit: 47eb67df69f237121f5197b2ac904a177aab5400
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59429210"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59671900"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot-preview"></a>Üzembe helyezése hibrid Azure AD-hez csatlakoztatott eszközökhöz az Intune-nal és a Windows Autopilot (előzetes verzió)
 Hibrid Azure Active Directory (Azure AD) beállításához használhatja az Intune és a Windows Autopilot-hez csatlakoztatott eszközök. Ehhez kövesse a cikkben.
@@ -121,7 +121,7 @@ Az Intune-összekötő az Active Directory telepítve olyan számítógépre, am
 
 ### <a name="configure-web-proxy-settings"></a>Webproxy-beállítások konfigurálása
 
-Ha a webalkalmazás-proxy a hálózati környezetben, győződjön meg arról, hogy az Intune-összekötő az Active Directory megfelelően működik lépésként tekintse át [együttműködnek a meglévő helyszíni proxykiszolgálók](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers).
+Ha a webalkalmazás-proxy a hálózati környezetben, győződjön meg arról, hogy az Intune-összekötő az Active Directory megfelelően működik lépésként tekintse át [együttműködnek a meglévő helyszíni proxykiszolgálók](autopilot-hybrid-connector-proxy.md).
 
 
 ## <a name="create-a-device-group"></a>Eszközcsoport létrehozása

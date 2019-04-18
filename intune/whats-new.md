@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/04/2019
+ms.date: 04/17/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71591e0be428d54af359c51daee96d6a21b43169
-ms.sourcegitcommit: 9daaeba9a960c50efcc951856234fbfec3635737
+ms.openlocfilehash: dc7f4bf02c05bdece8465b1af91bfd4cbd45492b
+ms.sourcegitcommit: 9e196e4a3b381f0da97ce3c163b18a3012f4aed1
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59231811"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59704926"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 
@@ -46,6 +46,13 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Ugyanitt tal
 -->     
 
 <!-- ########################## -->
+
+## <a name="week-of-april-15-2019"></a>2019. április 15 i hét
+
+### <a name="monitor-and-troubleshoot"></a>Monitorozás és hibaelhárítás
+
+#### <a name="intune-data-warehouse-v10-changes-reflecting-back-to-beta----4403765---"></a>Az Intune Data Warehouse 1.0-s verziójú módosításokat vissza a bétaverzió tükröző <!-- 4403765 -->
+Ha az 1.0-s verziójú 1808 rendszerben bevezetett, az API alkalmazást jelentős módokon eltérő számú. A 1903 ezeket a módosításokat megjelennek a bétaverzió API be újra. Ha fontos a bétaverzió API-t használó jelentéseket, erősen ajánlott ezeket a jelentéseket átváltása 1.0-s verziójú parancsban történt használhatatlanná tévő elkerülése érdekében. További információkért lásd: [esetében az Intune-adattárház API módosítási napló](reports-changelog.md#1903-part-2).
 
 ## <a name="week-of-april-1-2019"></a>2019. április 1 hét
 

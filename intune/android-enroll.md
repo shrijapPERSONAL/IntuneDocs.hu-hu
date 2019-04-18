@@ -18,31 +18,33 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 363a7d0ef32aee0c21c6e5cecbd55cc3087f4613
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: b76b461d445bfbec5fe2e8d355cd2a4f228735df
+ms.sourcegitcommit: 47eb67df69f237121f5197b2ac904a177aab5400
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799577"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59671840"
 ---
 # <a name="enroll-android-devices"></a>Androidos eszközök regisztrálása
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Az Intune rendszergazdái az alábbi Android-eszközöket kezelhetik:
-- Android-eszközök, beleértve a Samsung Knox Standard eszközöket is.
+- Android-eszközök, beleértve a Samsung Knox Standard-eszközökön és [Zebra eszközök](android-zebra-mx-overview.md).
 - Android Enterprise-eszközök, többek között:
     - **Vállalati munkahelyi profilos eszközök Android**: Személyes eszközök vállalati adatok elérésére vonatkozó engedélyt kaphatnak. Rendszergazdái kezelhetik a munkahelyi fiókok, alkalmazások és adatok. Személyes adatok az eszközön tárolt munkahelyi adatoktól és a rendszergazdák nem szabályozza a személyes beállításokat és adatokat. 
     - **Android Enterprise dedikált eszközök**: Vállalat által birtokolt, egyetlen eszközöket, például a digitális aláírási nyomtatás jegyet, vagy a szoftverleltár-kezelő. A rendszergazdák alkalmazások és webes hivatkozások egy adott körére korlátozzák az eszköz használatát. Ez azt is megakadályozza, hogy a felhasználók más alkalmazásokat adjanak az eszközhöz, vagy más műveleteket hajtsanak végre rajta.
     - **Android Enterprise teljes körűen felügyelt eszközök**: Vállalat által birtokolt, egyetlen felhasználói eszközök használt kizárólag a munkahelyi és személyes nem használja. A rendszergazdák a teljes eszköz kezelése és nem érhető el a munkahelyi profilok házirend-vezérlők kényszerítésére. 
 
-## <a name="prerequisite"></a>Előfeltétel
+## <a name="prerequisites"></a>Előfeltételek
 
 A mobileszközök kezelésének előkészítéseként a **Microsoft Intune**-t kell beállítani mobileszköz-kezelő (MDM) szolgáltatóként. Erről [Az MDM-szolgáltató beállítása](mdm-authority-set.md) című cikk nyújt útmutatást. Ezt a beállítást csak egyszer, az Intune-nak a mobileszközök kezelésére való kezdeti beállítása során kell megadni.
 
+A Zebra technológiák által előállított eszközök esetében szükség lehet a vállalati portál további engedélyeket adnia függően az adott eszköz. [Mobilitási bővítmények Zebra eszközökön](android-zebra-mx-overview.md) további részleteket is tartalmaz.
+
 ## <a name="set-up-android-enrollment"></a>Az androidos eszközök regisztrálásának beállítása
 
-Alapértelmezés szerint az Intune engedélyezi az Android és a Samsung Knox Standard rendszerű eszközök regisztrálását. Az előfeltételek teljesítését követően a rendszergazdáknak csupán [értesíteniük kell a felhasználókat arról, hogyan kell az eszközeiket regisztrálni](/intune-user-help/enroll-your-device-in-intune-android).
+Alapértelmezés szerint az Intune engedélyezi az Android, Samsung Knox Standard és Zebra eszközök. Az Előfeltételek teljesítése, után a rendszergazdák egyszerűen kell [meg, hogy a felhasználók hogyan regisztrálhatják az eszközeiket](/intune-user-help/enroll-your-device-in-intune-android).
 
 Miután a felhasználó elvégezte a regisztrálást, elkezdheti az eszközeik felügyeletét az Intune-ban, így többek között [megfelelőségi szabályzatokat rendelhet hozzájuk](compliance-policy-create-android.md) vagy [felügyelheti az alkalmazásokat](app-management.md).
 

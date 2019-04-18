@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 666a62e9aa42212bacba0e0222a828d89d780eef
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.openlocfilehash: 98d6bd72ba0a2660282d0c009772ceee8f9f8302
+ms.sourcegitcommit: 47eb67df69f237121f5197b2ac904a177aab5400
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292168"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59671839"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Mik a feltételes hozzáférés használatának szokásos módjai az Intune-ban?
 
@@ -142,7 +142,7 @@ Az asztali számítógépeken ken beállítható feltételes hozzáférés a mob
 
     -   Titkosították-e a számítógépet?
 
-    -   Telepítve van-e rajta kártevő szoftver? Frissítették az eszközt?
+    -   Kártevőirtó telepítve van? Frissítették az eszközt?
 
     -   Jailbreakelték vagy rootolták az eszközt?
 
