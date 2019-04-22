@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/12/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 448008d20919d95369000b1191f773b23f143d00
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.openlocfilehash: 25fd89335d290cef5d100d58fddf7cbd56370393
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292340"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59895693"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS-es alkalmazásvédelmi szabályzat-beállításai
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -59,9 +59,6 @@ Három szabályzatbeállítási kategória létezik: *Adatáthelyezés*, *a hozz
 | **Szinkronizálási alkalmazás a natív névjegykezelő alkalmazásba** |  Válassza ki **letiltása** megakadályozza, hogy az alkalmazás a natív névjegykezelő alkalmazásba az eszközre ment adatot. Ha **engedélyezése**, az alkalmazás adatokat menthet a natív névjegykezelő alkalmazásba, az eszközön. <br><br>Ha szelektív törléssel távolítja el a munkahelyi vagy iskolai adatokat az alkalmazásból, akkor a rendszer eltávolítja a közvetlenül az alkalmazásból a natív névjegykezelő alkalmazásba szinkronizált névjegyeket. A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem törölhetők. Ez jelenleg csak a Microsoft Outlook alkalmazásra érvényes.   | **Engedélyezése**  |
 | **Cégadatok nyomtatás** | Válassza ki **letiltása** , hogy az alkalmazást munkahelyi vagy iskolai adatokat nyomtasson.   | **Engedélyezése**  |
 | **Webes tartalom megosztása a szabályzat által felügyelt böngészők** | Adja meg, hogyan nyíljanak meg a webes tartalmak (http/https-hivatkozások) a szabályzatok által felügyelt alkalmazásokban. A következő lehetőségek közül választhat: <ul><li>**Szabályzat által felügyelt böngészők**: Lehetővé teszi a webes tartalom csak szabályzat által felügyelt böngészőben nyíljon meg.</li><li>**Bármely alkalmazás**: Lehetővé teszi a webes hivatkozások bármely alkalmazásban </li></ul> Ha az Intune-nal kezeli az eszközöket, olvassa el [Az internet-hozzáférés felügyelt böngészőszabályzatokkal való kezelése a Microsoft Intune-ban](app-configuration-managed-browser.md) című témakört.<br><br>**Szabályzattal felügyelt böngészők**<br>Ha több, szabályzattal felügyelt böngészőt helyez üzembe, csak egyet indíthat el.  Indítási sorrend: Intune Managed Browser, majd Microsoft Edge.<p>Ha egy szabályzattal felügyelt böngésző kötelező de nincs telepítve, a rendszer az Intune Managed Browser telepítését kéri a végfelhasználóktól.<p>Ha egy szabályzattal felügyelt böngésző kötelező, az univerzális iOS-hivatkozásokat a **Más alkalmazásokból való adatátvitel engedélyezése az alkalmazásnak** szabályzatbeállítás kezeli. <p>**Intune-beli eszközregisztráció**<br>Ha az Intune-t használja az eszközök kezeléséhez, olvassa el Az internet-hozzáférés felügyelt böngészőszabályzatokkal való kezelése a Microsoft Intune-ban című témakört. <p>**Szabályzattal felügyelt Microsoft Edge**<br>A Microsoft Edge mobilböngésző (iOS és Android eszközök) támogatja az Intune alkalmazásvédelmi szabályzatait. A Microsoft Edge böngészőalkalmazásba a vállalati Azure AD-fiókjukkal bejelentkező felhasználókat az Intune védi. A Microsoft Edge böngésző integrálható az Intune SDK-t, és támogatja az összes kivételével megakadályozza, hogy az adatok alkalmazásvédelmi szabályzatokat:<br><ul><li>**Mentés-as**: A Microsoft Edge böngésző nem engedélyezi a felhasználókat a felhőalapú tárolási szolgáltatók (például a OneDrive) közvetlen, alkalmazáson belüli kapcsolatok.</li><li>**Lépjen kapcsolatba a szinkronizálási**: A Microsoft Edge böngésző nem menti a natív partnerlistájukat.</li></ul><br>**Megjegyzés**:<br>Az Intune SDK nem tudja megállapítani, ha egy cél-alkalmazást, egy böngészőben. iOS-eszközökön nem engedélyezett más felügyelt böngészők használata.    | **Nincs konfigurálva**  |
-| **Harmadik féltől származó billentyűzetek** | Válassza ki **letiltása** , hogy a külső billentyűzetek a kezelt alkalmazások használatát. <br><br>Ha ez a beállítás engedélyezve van, a felhasználó egyszeri üzenetet kap a külső szállítótól származó billentyűzetek tiltásáról. Ez az üzenet akkor jelenik meg, amikor a felhasználó először végez billentyűzet használatát igénylő műveletet vállalati adatokkal. A felügyelt alkalmazások használata során csak a szabványos iOS-billentyűzet érhető el, és minden más billentyűzet-beállítás le van tiltva. Ez a beállítás nem vonatkozik a külső szállítótól származó billentyűzetek nem felügyelt alkalmazásokban való használatára. | **Engedélyezése** |
-
-
 
 > [!NOTE]  
 > Az Apple felügyelt Megnyitás a következőben funkció az iOS-eszközökön vezérelheti az adatvédelmi beállítások egyike. Az Apple-eszközök Megnyitás a következőben funkciójának felügyeletéről az [iOS-alkalmazások közti adatátvitel felügyelete a Microsoft Intune-nal](data-transfer-between-apps-manage-ios.md) című cikkben olvashat.

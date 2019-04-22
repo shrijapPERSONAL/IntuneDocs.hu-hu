@@ -18,11 +18,11 @@ ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e527ed11e451ec0ef2f6d2fde42e0c8fd53408f3
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799322"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59896550"
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>1. fázis: A Microsoft Intune előkészítése a mobileszköz-felügyelet (MDM)
 

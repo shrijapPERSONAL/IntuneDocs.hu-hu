@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb57ea2ef5c99c58968ee25b3a75b2165ece787a
-ms.sourcegitcommit: 0adb41c0640743d5cb726e66ad2427e3ad6faf20
+ms.openlocfilehash: 2eb709ad0d649b2ac32505b395fa91e85ad81b8a
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58658549"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59900230"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Szerepköralapú hozzáférés-vezérlés (RBAC) és a hatókörcímkék használható elosztott IT
 
@@ -98,6 +98,11 @@ Az eszközök **eszközregisztráció típusa** beállítása **felügyelt alkal
 2. Válasszon **tulajdonságok** > **hatókör (címkék)** > Válassza ki az, hogy a profilhoz hozzárendelni kívánt címkéket.
 3. Válasszon **kiválasztása** > **OK** > **mentése**.
 
+## <a name="to-assign-a-scope-tag-to-an-apple-volume-purchase-program-vpp-token"></a>Hatókörcímke hozzárendelése egy Apple Volume Purchase Program (VPP) tokent
+1. Az Intune-ban válassza **ügyfélalkalmazás** > **Apple VPP-tokenek** > Válassza ki a VPP-tokent.
+2. Válassza ki **hatókör (címkék)** > Válassza ki az, hogy a profilhoz hozzárendelni kívánt címkéket. A VPP-alkalmazások és e-könyvek a VPP-token társított öröklik a hozzárendelt címkék.
+3. Válasszon **kiválasztása** > **OK** > **mentése**.
+
 ## <a name="scope-tag-details"></a>Címke részleteinek hatókör
 Ha hatókörcímkék dolgozik, ne felejtse el ezeket az adatokat:
 
@@ -112,6 +117,7 @@ Ha hatókörcímkék dolgozik, ne felejtse el ezeket az adatokat:
     - PowerShell-parancsprogramok
     - DEP-tokenek
     - iOS-es alkalmazáskiépítési profil
+    - Volume Purchase Program (VPP) tokenek
 - Amikor a rendszergazda létrehoz egy objektumot az Intune-ban, azt a rendszergazdát rendelt összes hatókörcímkék automatikusan rendeli hozzá az új objektumot.
 - Intune-os RBAC az Azure Active Directory-szerepkör nem vonatkozik. Így az Intune szolgáltatás-rendszergazdák és a globális Rendszergazdák szerepkör nincs teljes rendszergazdai hozzáféréssel az Intune-hoz, függetlenül attól, milyen hatókörcímkék rendelkeznek.
 - A szerepkör-hozzárendelés hatóköre címkékkel rendelkező rendszergazdák nem hatókörcímkék Intune objektumokat is megtekintheti.

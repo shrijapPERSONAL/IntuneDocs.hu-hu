@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 04/19/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,60 +16,70 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bd6e7f37a2e3b10371dead97e849834b39ba06f
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: dc82653355ae57830684270fc8f7b9f1f3ae2491
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490573"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59899958"
 ---
-# <a name="monitor-the-security-baseline-and-profile-in-microsoft-intune"></a>A biztonsági alapkonfiguráció és a Microsoft Intune-ban profil figyelése
+# <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Biztonsági alapterv, illetve a Microsoft Intune-ban a profilok figyelése  
 
-Nincsenek különböző megfigyelési lehetőségek, amikor biztonsági alapterv használatával. Figyelheti a biztonsági alaptervek profilt, amely a felhasználókra és eszközökre alkalmazható. A tényleges alapkonfiguráció és azokat az eszközöket, amelyek az ajánlott értékek egyeznie (vagy nem egyezik) is figyelheti.
+Intune-ban figyelheti a biztonsági előírások számos lehetőséget kínál. Figyelheti a biztonsági alaptervek profilt, amely a felhasználókra és eszközökre alkalmazható. A tényleges alapkonfiguráció és azokat az eszközöket, amelyek az ajánlott értékek egyeznie (vagy nem egyezik) is figyelheti.
 
 Ez a cikk végigvezeti mindkét megfigyelési lehetőségeket.
 
 [Az Intune-ban biztonsági előírások](security-baselines.md) további részleteket a biztonsági alapterveket szolgáltatás a Microsoft Intune-ban.
 
-## <a name="monitor-the-baseline-and-your-devices"></a>Az alapkonfiguráció és az eszközök figyelése
+## <a name="monitor-the-baseline-and-your-devices"></a>Az alapkonfiguráció és az eszközök figyelése  
 
-Az alapkonfiguráció monitorozásához kap betekintést a Microsoft javaslatok alapján az eszközök biztonsági állapotát.
+Amikor alapkonfigurációt, akkor információkhoz juthat az eszközök a Microsoft javaslatok alapján biztonsági állapotát. Ezek is használható elemzéseket készítsenek az Áttekintés ablaktábláján, a biztonsági alapkonfiguráció az Intune-konzolon tekintheti meg.  Az adatok jelennek meg először az alapterv hozzárendelése után akár 24 órát vesz igénybe. Újabb módosításokat jelennek meg akár hat órát is igénybe vehet.  
 
-> [!NOTE]
-> Miután először az alapterv hozzá van rendelve, a jelentések is a frissítése akár 24 órát igénybe vehet. Ezt követően azok frissítése akár 6 órát vehet.
+Az eredeti és az eszközöket a figyelési adatok megtekintéséhez jelentkezzen be a [Intune-portálon](https://aka.ms/intuneportal). Majd **biztonsági előírások (előzetes verzió)**, jelölje be egy alapterv, és tekintse meg a **áttekintése** ablaktáblán.
 
-1. Az a [az Azure portal](https://portal.azure.com/), jelölje be **minden szolgáltatás** > szűréséhez **Intune** > Válassza ki **Intune**.
-2. Válassza ki **biztonsági előírások (előzetes verzió)** > Válassza ki az alapkonfigurációt.
-3. A **áttekintése**, a diagram mutatja be, hogy hány eszköz érinti az alapkonfiguráció választotta, és a különböző állapotok:
+A **áttekintése** ablaktábla állapotának figyelése kétféle módszert biztosít:
+- **Eszköz megtekintése** – összegzését, hogy hány eszköz van az egyes állapota az alapterv esetében.  
+- **Kategória –** – A nézet jeleníti meg az egyes kategóriák az alaptervet, és tartalmazza az állapot csoportonkénti alapkonfiguráció kategóriákhoz tartozó eszközök hány százalékát. 
 
-    ![Az eszközök állapotának ellenőrzése](./media/security-baselines-monitor/overview.png)
+Egyes eszközök a következő állapotok, mindkét használt egyik képviseli a *eszköz* nézet, és a *kategória* nézetek:  
+- **Egyezések alapkonfiguráció** -az alapkonfiguráció összes beállításai megfelelnek az ajánlott beállításokat.
+- **Nem felel meg a referenciakonfiguráció** -az alapkonfiguráció legalább egy beállítást nem felel meg az ajánlott beállításokat.
+- **Nincs megfelelően konfigurálva** – legalább egy beállítást nincs megfelelően konfigurálva. Ez az állapot azt jelenti, hogy a beállítás az ütközést, hiba vagy függőben van.
+- **Nem alkalmazható** – legalább egy beállítást nem alkalmazható, és nem érvényesek.
 
-    Az alábbi állapotok lehetségesek:
 
-    - **Egyezések alapkonfiguráció**: Az alapkonfiguráció beállításokról felel meg az ajánlott beállításokat.
-    - **Nem felel meg a referenciakonfiguráció**: Legalább egy beállítást az alapkonfiguráció nem felel meg az ajánlott beállításokat.
-    - **Nincs megfelelően konfigurálva**: Legalább egy beállítást nincs megfelelően konfigurálva. Ez az állapot azt jelenti, hogy a beállítás az ütközést, hiba vagy függőben van.
-    - **Nem alkalmazható**: Legalább egy beállítást nem alkalmazható, és nem alkalmazza.
-    
-> [!NOTE]
-> Ha egy eszköz beállításai több állapota, az eszköz való besorolása esetén az alábbi sorrendben: **Nincs megfelelően konfigurálva**, **nem egyezik meg a referenciakonfiguráció**, **nem alkalmazható**, **egyezések alapkonfiguráció**.
+### <a name="device-view"></a>Eszköz megtekintése
+Az áttekintő panel összefoglaló diagram-alapú, hogy hány eszköz van egy adott állapotát az alaptervhez; **Biztonsági alapkonfiguráció állapotát hozzárendelt Windows 10 rendszerű eszközökhöz**.  
 
-4. Válassza ki a állapotok rendelkező eszközök egyikét. Jelölje be például a **Misconfigured** állapotát.
+![Az eszközök állapotának ellenőrzése](./media/security-baselines-monitor/overview.png)
 
-5. Adott állapotú összes eszköz listája látható. Jelöljön ki egy adott eszközt, további információért. 
+Ha egy eszköz különböző kategóriák eltérő állapottal rendelkezik az alaptervet, az eszköz egyetlen állapotát jelképezi. Az állapot, amely az eszköz átveszi a rendszer az alábbi sorrendben: **Nincs megfelelően konfigurálva**, **nem egyezik meg a referenciakonfiguráció**, **nem alkalmazható**, **egyezések alapkonfiguráció**.  
 
-    Válassza ki a következő példában **eszközkonfiguráció** > Válassza ki a profilt a hibás állapotú:
+Például, ha egy eszközhöz tartozik egy beállítás besorolt *helytelenül konfigurált* és besorolva egy vagy több beállítások *nem egyezik meg a referenciakonfiguráció*, az eszköz akkor minősül *konfigurációja*.  
 
-    ![Az eszközök állapotának ellenőrzése](./media/security-baselines-monitor/device-configuration-profile-list.png)
+Kattinthat, áthatoló részletezést, és az eszközök különböző állapotok listájának megtekintéséhez a diagramban. Ezután kiválaszthatja az egyes eszközök a listából az egyes eszközök részletes információinak megtekintéséhez. Példa:
+- Válassza ki **eszközkonfiguráció** > Válassza ki a profilt a hibás állapotú:
 
-    Válassza ki a hibát profilt. A profil, és azok állapotát az összes beállítás listája látható. Most görgethet keresse meg a hibát okozó beállítást:
+  ![Az eszközök állapotának ellenőrzése](./media/security-baselines-monitor/device-configuration-profile-list.png)
 
-    ![A hibát okozó beállítást](./media/security-baselines-monitor/profile-with-error-status.png)
+- Válassza ki a hibát profilt. A profil, és azok állapotát az összes beállítás listája látható. Most görgethet keresse meg a hibát okozó beállítást:
+
+  ![A hibát okozó beállítást](./media/security-baselines-monitor/profile-with-error-status.png)
 
 Ez a jelentéskészítés segítségével tekintse meg a problémát okozó profil beállításait. A házirendek és profilok eszközökre telepített további részleteket is kaphat.
 
 > [!NOTE]
 > Ha egy tulajdonság értéke **nincs konfigurálva** az alaptervet, a rendszer figyelmen kívül hagyja, és nincs korlátozás érvényben vannak. A tulajdonság nem jelenik meg minden olyan jelentési.
+
+### <a name="per-category-view"></a>Egy kategória nézet
+Az Áttekintés ablaktábláján az alaptervhez; kategória diagramot jelenít meg. **Biztonsági alapkonfiguráció állapotát kategória szerint**.  Ez a nézet jeleníti meg az egyes kategóriák az alaptervből, és azonosítja az eszközöket, melyek állapota besorolást az egyes kategóriákhoz aránya. 
+ 
+![Állapot kategória nézete](./media/security-baselines-monitor/monitor-baseline-per-category.png)
+
+Az állapot **egyezések alapkonfiguráció** nem jelennek meg, amíg a 100 %-án jelentés kategóriájára vonatkozó állapota.   
+
+Minden oszlop-kategória nézetében az oszlop tetején fel-le nyíl ikonra kattintva rendezheti.  
+
 
 ## <a name="monitor-the-profile"></a>A profil figyelése
 

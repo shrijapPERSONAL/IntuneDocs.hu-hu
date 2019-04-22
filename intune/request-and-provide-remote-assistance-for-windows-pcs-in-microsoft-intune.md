@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b7004d72328d606f6adc5cd84e79ce4830409059
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798537"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59900927"
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Távsegítség kérése és nyújtása Windows rendszerű számítógépekhez
 
@@ -63,7 +63,7 @@ Ahhoz, hogy a távsegítség funkcióval támogatást biztosíthasson az azt ké
 
 ## <a name="respond-to-a-remote-assistance-request"></a>Válasz távsegítségre vonatkozó kérésre
 
-1. A felhasználók által benyújtott távsegítségkéréseket a **Riasztások** munkaterület **Figyelés** > **Távsegítség** menüjében tekintheti meg. Például:
+1. A felhasználók által benyújtott távsegítségkéréseket a **Riasztások** munkaterület **Figyelés** > **Távsegítség** menüjében tekintheti meg. Példa:
    > ![Távsegítségkérést bemutató képernyőkép](/intune/media/team-viewer.png)
 
 <br>Azokat a kéréseket, amelyekre 4 órán át nem érkezik válasz, a rendszer eltávolítja.

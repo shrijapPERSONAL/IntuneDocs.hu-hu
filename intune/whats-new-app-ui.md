@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1c4266ad4ae877eadb29b7f35ef0e955028a4b9
-ms.sourcegitcommit: 9daaeba9a960c50efcc951856234fbfec3635737
+ms.openlocfilehash: 753c261ea08ce304176f19e1c64389053b055d5f
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59231853"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59898680"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Felhasználói felületi frissítések az Intune végfelhasználói alkalmazásaiban
 Ismerje meg a legújabb frissítéseket a Microsoft Intune-alkalmazások. A Microsoft rendszeresen ad hozzá, és javíthatja a az Intune vállalati portál alkalmazás és webhely. Ha az Intune-rendszergazdák vagy személy támogatja, ez a cikk a szükséges információkat:
@@ -34,6 +34,27 @@ Ismerje meg a legújabb frissítéseket a Microsoft Intune-alkalmazások. A Micr
 Ha egy alkalmazott vagy a tanulói, mindenképpen tekintse meg a képernyőképek és a hivatkozások a vállalati portál súgó dokumentációját. A vállalati portál alkalmazás használatával kapcsolatos további információkért lásd: a [céges portál felhasználói súgó dokumentációját](https://docs.microsoft.com/intune-user-help/).  
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-april-15-2019"></a>2019. április 15 i hét  
+
+### <a name="new-end-user-app-microsoft-intune-app---3903244---"></a>Új felhasználó alkalmazás (a Microsoft Intune-alkalmazás) <!--3903244 -->  
+Van egy új végfelhasználói alkalmazás Android teljes körűen felügyelt eszközök nevű **a Microsoft Intune**. Az új alkalmazás passzív és modern, és biztosítja a vállalati portál alkalmazást, funkcionálisan hasonló, de a teljes körűen felügyelt, vállalati eszközök. További információkért lásd: [a Google Play áruházból a Microsoft Intune app](https://play.google.com/store/apps/details?id=com.microsoft.intune).  
+
+A példában a képernyőkép az eszközadatok képernyőjére lép: 
+
+![Képernyőfelvétel: a Microsoft Intune-alkalmazás, Jane az androidos eszköz részleteit megjelenítő.](./media/1904-intune-app-device-details.png)   
+
+Példaként szolgáló képernyőképen a **hozzáférés beállítása** képernyőjén:  
+
+![Megjelenített telepítő hozzáférés beléptetése képernyőt ábrázoló képernyőfelvétel: a Microsoft Intune alkalmazás.](./media/1904-intune-app-setup-access.png)   
+
+Az alkalmazás menüjében képernyőképet:  
+
+![Képernyőfelvétel: a Microsoft Intune-alkalmazás, az oldalsó menüben megjelenítése.](./media/1904-intune-app-navigation-menu.png)   
+
+A példaként szolgáló képernyőképen a **súgó** képernyőjén:  
+
+![Képernyőfelvétel: a Microsoft Intune-alkalmazás, a súgóképernyő.](./media/1904-intune-app-help.png)   
 
 
 ## <a name="week-of-april-1-2019"></a>2019. április 1 hét  

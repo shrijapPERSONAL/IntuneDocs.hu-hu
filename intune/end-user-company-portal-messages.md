@@ -17,12 +17,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 700bded8930385c5576a198dc0364c64066121e5
-ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
+ms.openlocfilehash: 2168c39c80369e16284078df608bdab5f29858c6
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "59041702"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59894965"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>A Vállalati portál alkalmazás üzeneteinek ismertetése a végfelhasználókkal
 
@@ -57,7 +57,7 @@ Ha a felhasználó engedélyezi a hozzáférést, de később megtagadja azt, az
 Amennyiben a felhasználók később ismét engedélyezni szeretnék a hozzáférést, a **Beállítások** > **Alkalmazások** > **Vállalati portál** > **Engedélyek** > **Telefon** lapon tehetik ezt meg.
 
 ### <a name="how-to-explain-this-to-your-users"></a>A felhasználók tájékoztatásának módja
-További információért ajánlja a felhasználóknak az [Android-eszközök regisztrálása az Intune-ban](/intune-user-help/enroll-your-device-in-intune-android) című témakört.
+További információért ajánlja a felhasználóknak az [Android-eszközök regisztrálása az Intune-ban](/intune-user-help/enroll-device-android-company-portal) című témakört.
 
 ## <a name="allow-company-portal-to-access-your-contacts"></a>Engedélyezi, hogy a Vállalati Portál hozzáférjen a névjegyekhez?
 
@@ -78,7 +78,7 @@ Ha a felhasználó engedélyezi a hozzáférést, de később megtagadja azt, az
 Amennyiben a felhasználók később ismét engedélyezni szeretnék a hozzáférést, a **Beállítások** > **Alkalmazások** > **Vállalati portál** > **Engedélyek** > **Telefon** lapon tehetik ezt meg.
 
 ### <a name="how-to-explain-this-to-your-users"></a>A felhasználók tájékoztatásának módja
-További információért ajánlja a felhasználóknak az [Android-eszközök regisztrálása az Intune-ban](/intune-user-help/enroll-your-device-in-intune-android) című témakört.
+További információért ajánlja a felhasználóknak az [Android-eszközök regisztrálása az Intune-ban](/intune-user-help/enroll-device-android-company-portal) című témakört.  
 
 ## <a name="allow-company-portal-to-access-photos-media-and-files-on-your-device"></a>Allow Company Portal to access photos, media, and files on your device? (Engedélyezi a Munkahelyi portál alkalmazásnak, hogy hozzáférjen az eszközén tárolt fényképekhez, médiatartalmakhoz és fájlokhoz?)
 

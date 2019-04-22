@@ -1,11 +1,11 @@
 ---
-title: Eszközök regisztrálása munkahelyi profillal | Microsoft Docs
-description: Androidos eszközök biztonságának fokozása munkahelyi profilokkal
+title: Androidos munkahelyi profillal rendelkező eszköz regisztrálása |} A Microsoft Docs
+description: Munkahelyi profil létrehozása és eszköz regisztrálása
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/05/2017
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,20 +18,18 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eab28cdd4515561ad34a433773e351150a87f626
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 29928023abc2d6119bb318bbe046e954288ebaa3
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57334952"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59896515"
 ---
-# <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Munkahelyi profil létrehozása és eszköz regisztrálása az Intune-ban
+# <a name="enroll-device-with-android-work-profile"></a>Androidos munkahelyi profillal rendelkező eszköz regisztrálása
 
-Android-eszközének regisztrálásával hozzáférhet a vállalati e-mailjeihez, az alkalmazásaihoz és az egyéb munkahelyi adataihoz. A regisztráció részeként egy munkahelyi profilt állít be, amely elkülöníti az eszközön lévő személyes adatokat a munkahelyi adatoktól.
+Személyes Android-eszközének regisztrálásával hozzáférhet a vállalati e-mailekhez, alkalmazásokhoz és egyéb munkahelyi adataihoz. A beléptetés során az Androidos munkahelyi profilok kell beállítani. Ezt a profilt a munkahelyi adatokat elkülöníti a személyes adatok az eszközön. A cég informatikai támogatási csak a munkahelyi profilt, amely a munkahelyi fájlokat és adatokat áll felügyeli. A cég informatikai támogatási szolgálata az eszközén a személyes adatokat nem tudja kezelni. Többet tudhat meg arról, hogy [mi történik a munkahelyi profil létrehozásakor](what-happens-when-you-create-a-work-profile-android.md). 
 
-A cég informatikai támogatási szolgálata csak a munkahelyi adatokat tartalmazó munkahelyi profilt kezelheti. Az eszközön lévő személyes adatokhoz nem férhet hozzá. Többet tudhat meg arról, hogy [mi történik a munkahelyi profil létrehozásakor](what-happens-when-you-create-a-work-profile-android.md).
-
-Munkahelyi profil létrehozása:
+## <a name="create-work-profile-and-enroll-device"></a>Munkahelyi profil létrehozása és eszköz regisztrálása
 
 1.  Az Android Vállalati portál alkalmazás **üdvözlőképernyőjén** koppintson a **Bejelentkezés** elemre, és jelentkezzen be a munkahelyi vagy az iskolai fiókjával. Ha még nem telepítette az ingyenes alkalmazást, akkor töltse le és telepítse azt a [Google Play áruázból](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
 
@@ -82,5 +80,7 @@ Munkahelyi profil létrehozása:
     Most már beszerezheti a vállalati alkalmazásokat a Play Store for Work áruházból.
 
     ![Play Store for Work alkalmazások lap](./media/andr-afw-tap-work-play-store-icon.png)
+
+## <a name="next-steps"></a>További lépések  
 
 További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

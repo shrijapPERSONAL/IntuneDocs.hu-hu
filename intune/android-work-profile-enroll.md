@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 66574fe66f90b73d8ebf5835c5b16e93276579e4
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 1a86eaece208d1c8ea1737acde74c74ef633eea0
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799350"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59901131"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-work-profile-devices"></a>Vállalati Android munkahelyi profilos eszközök regisztrálásának beállítása
 
@@ -37,7 +37,7 @@ Android Enterprise munkahelyi profilok kezelése beállításához, kövesse az 
 2. Adja meg az Android Enterprise munkahelyi profil regisztrációs beállítások. Vállalati androidos munkahelyi profilok vannak [csak bizonyos Android-eszközökön támogatott](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22). Android Enterprise munkaprofilokat támogató Android hagyományos felügyeleti is támogatja. Intune-ban megadhatja, hogyan kell-e a Android Enterprise munkaprofilokat támogató eszközök felügyelete a [regisztrációs korlátozások](enrollment-restrictions-set.md).
     - **Blokkolás (alapértelmezett)**:  Minden Android-eszközök, beleértve az eszközöket, amelyek támogatják az Android Enterprise munkahelyi profilokat, hagyományos Android-eszközként lesz regisztrálhatók.
     - **Lehetővé teszi**: Munkahelyi profillal regisztrált Android Enterprise-, Android Enterprise támogató eszközök mindegyike munkahelyi profilos eszközök. Minden Android-eszköz, amely nem támogatja az Android Enterprise munkahelyi profilokkal mint egy hagyományos Android-eszköz regisztrálása akkor történik.
-3. [A felhasználók tájékoztatása arról, hogy miképpen regisztrálhatják az eszközeiket](/intune-user-help/enroll-your-device-in-intune-android).
+3. [A felhasználók tájékoztatása arról, hogy miképpen regisztrálhatják az eszközeiket](/intune-user-help/create-a-work-profile-and-enroll-your-device-in-intune-android).  
 
 
 Ha szeretne regisztrálni az Android Enterprise munkahelyi profilt használó eszközök, de ezeknek az eszközöknek már regisztráltak normál Android-eszközként, azokat az eszközöket kell először regisztrációjának törlése és majd újra kell regisztrálni.

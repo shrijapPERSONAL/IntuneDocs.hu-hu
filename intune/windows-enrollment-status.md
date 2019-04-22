@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73808499aa4f70b4a05e5e7984eaf3af6e7654c9
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8d19be73472aed6b6ede1cfdc3d14007c5222c43
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389337"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59896612"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Beléptetési állapotlap beállítása
  
@@ -36,7 +36,9 @@ Az Intune-nal eszköz beállítása során a regisztrálási állapot oldal az e
 
 Beállíthatja a prioritásuk szerinti sorrendben történik, hogy figyelembe vegye az ugyanazon felhasználóhoz vagy eszközhöz ütköző profil-hozzárendeléseket az egyes profilok is.
 
- 
+> [!NOTE]
+> A regisztrálási állapot oldal nem jelenik meg, ha csak az eszköz van egy hozzárendelt csoport. A felhasználónak megjelennek a regisztrálási állapot oldal egy hozzárendelt csoport kell lennie.
+
 ## <a name="turn-on-default-enrollment-status-page-for-all-users"></a>Az alapértelmezett regisztrációs állapotlap bekapcsolása minden felhasználónak
 
 A regisztrációs állapotlap bekapcsolásához kövesse az alábbi lépéseket.

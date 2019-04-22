@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 4e650f8cb713d76c44d3f3399612ee5fd6d02426
-ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59429144"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59894331"
 ---
 # <a name="reference-for-user-entity"></a>Felhasználó típusú entitás referenciája
 

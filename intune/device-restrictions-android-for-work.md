@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/20/2019
+ms.date: 04/10/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 493a5be89e747c2de1eca3a63907b79228fcdfa2
-ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
+ms.openlocfilehash: 528ed184a39f687cf075c9cd779cceee6ad04a47
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58429754"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59898257"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Android Enterprise eszközbeállítások engedélyezett vagy korlátozott funkciók az Intune-nal
 
@@ -65,26 +65,18 @@ Ez a cikk és az Android Enterprise eszközökön szabályozhatja a különböz�
 
   **Nincs konfigurálva** megakadályozza, hogy a felhasználók ne tudják bekapcsolni a a hálózat escape csíkozási funkciót az eszközön.
 
-- **Lehetővé teszi az ismeretlen forrásból történő telepítést**: Válasszon **engedélyezése** így a felhasználók bekapcsolhatja a **ismeretlen források**. Ez a beállítás lehetővé teszi, hogy a telepítéséhez az ismeretlen forrásból származó alkalmazások. **Nincs konfigurálva** megakadályozza, hogy a felhasználók ne tudják bekapcsolni a **ismeretlen források**.
 - **Rendszerfrissítés**: Válasszon egy lehetőséget adja meg, hogyan kezeli az eszköz a vezeték nélküli frissítések:
   - **Eszköz alapértelmezése**: Az eszköz alapértelmezett beállítást használja.
   - **Automatikus**: Frissítések automatikusan települnek a felhasználói beavatkozás nélkül. Ennek a szabályzatnak a beállításakor minden függőben lévő frissítés azonnal települ.
   - **Elhalasztva**: Frissítések vannak Elhalasztva 30 napig. A 30 nap végén Android kéri a felhasználót, hogy a frissítés telepítéséhez. Az eszközgyártók vagy a szolgáltatók megakadályozhatják (kivételként) a fontos biztonsági frissítések elhalasztását. A kivételként kezelt frissítések rendszerértesítést jelenítenek meg a felhasználó számára az eszközön. 
   - **Karbantartási időszak**: Az Intune-ban beállított napi karbantartási időszak alatt automatikusan telepíti a frissítéseket. Telepítés megkísérli naponta 30 napig, és meghiúsulhat, ha nincs elegendő terület vagy akkumulátor szintjét. A 30 nap elteltével Android kéri a felhasználót, hogy telepítse. Ez az időszak szolgál a Play-alkalmazások frissítéseinek telepítésére is. Dedikált eszközök, például kioszkok, a beállítást használja, Egyalkalmazásos dedikált előtér eszközalkalmazások frissítheti.
-- **Alkalmazás automatikusan frissül**: Válassza ki, ha az automatikus frissítések telepítve vannak. A választható lehetőségek:
-  - **Nincs konfigurálva**
-  - **Felhasználói választási lehetőség**
-  - **Soha nem**
-  - **Wi-Fi csak**
-  - **Mindig**
 
 - **A windows értesítési**: Ha a beállítása **letiltása**, ablakban értesítéseket, beleértve a toasts, a bejövő hívások, a kimenő hívások, a teljesítményriasztások és a rendszerhibák nem jelennek meg az eszközön. Ha a beállítása **nincs konfigurálva**, az operációs rendszer alapértelmezett értéket használja, amely lehet értesítéseket jeleníthet meg.
 - **Kihagyás először a mutatók**: Válasszon **engedélyezése** elrejtése, vagy hagyja ki a javaslatok alkalmazások végighaladhat az oktatóanyagok, vagy olvassa el bármilyen bevezető mutatók, az alkalmazás indításakor. Ha a beállítása **nincs konfigurálva**, az operációs rendszer alapértelmezett szolgál, amely lehet ezek a javaslatok megjelenítése, az alkalmazás indításakor.
 
-
 ### <a name="system-security-settings"></a>A rendszer biztonsági beállításai
 
-- **Alkalmazások fenyegetettségvizsgálata**: **Szükséges** érvényesíti a **alkalmazások ellenőrzése** beállítás engedélyezve van a munkahelyi és személyes profiloknál.
+- **Alkalmazások fenyegetettségvizsgálata**: **Szükséges** (alapértelmezett) lehetővé teszi, hogy a Google Play Protect apps beolvasása előtt és után vannak telepítve. Fenyegetést észlel, ha azt figyelmeztetheti a felhasználót, hogy távolítsa el az alkalmazást az eszközről. **Nincs konfigurálva** nem engedélyezi, vagy futtassa a Google Play Protect apps vizsgálata.
 
 ### <a name="dedicated-device-settings"></a>Dedikált eszközök beállításai
 
@@ -122,25 +114,49 @@ Ezek a beállítások használatával az dedikált eszközök kioszk stílusú f
     1. Továbbra is fennáll, addig, amíg megjelenik a "Kilépés a teljes képernyős" gombra, jelölje be a Vissza gombra. 
     2. A gombot választja, és beírja az **hagyja meg a teljes képernyős mód kód** PIN-kódot.
     3. Amikor végzett a módosításokkal, válassza ki a **kezdőlap képernyő felügyelt** alkalmazást. Ez a lépés az eszköz relocks többalkalmazásos kioszk módba. 
-    
+
     **Tiltsa le** nem lehetővé teheti a teljes képernyős mód felfüggesztése. Ha a rendszergazda továbbra is fennáll, kattintson a Vissza gombra, és a "Kilépés a teljes képernyős" gombot választja, egy üzenet tájékoztatja, hogy egy PIN-kód megadása kötelező.
-    
+
     - **Hagyja meg a teljes képernyős mód kód**: Adjon meg egy 4 – 6 számjegyű numerikus PIN-kód. A rendszergazda ideiglenesen letilthatja a teljes képernyős mód a PIN-kódot használja.
- 
+
   - **Állítsa be az egyéni URL-cím hátterének**: Adja meg a dedikált eszközön a háttérben futó képernyő testreszabása URL-CÍMÉT.
+
+  - **Wi-Fi konfiguráció**: Válasszon **engedélyezése** , hogy a végfelhasználók számára, hogy az eszköz csatlakoztatása a különböző Wi-Fi-hálózatok. Emellett a funkció engedélyezése bekapcsolja az eszköz helyét. **Nincs konfigurálva** (alapértelmezett) megakadályozza, hogy a felhasználók a felügyelt kezdőlap képernyő (zárolás feladat mód) a Wi-Fi hálózatokhoz való csatlakozás.
+
+    A több [zárolási feladat mód](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (az Android a webhely nyílik meg).
+
+  - **Bluetooth-konfiguráció**: Válasszon **engedélyezése** Bluetooth engedélyezése az eszközön, és hogy a végfelhasználók pár eszközök Bluetooth-on keresztül. Emellett a funkció engedélyezése bekapcsolja az eszköz helyét. **Nincs konfigurálva** (alapértelmezett) megakadályozza, hogy a felhasználók és -eszközökhöz a felügyelt kezdőlap képernyő (zárolás feladat mód) a párosítást Bluetooth konfigurálása. 
+
+    A több [zárolási feladat mód](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (az Android a webhely nyílik meg).
 
 ### <a name="device-password-settings"></a>Eszköz jelszóbeállításai
 
-- **Keyguard**: Válasszon **letiltása** megakadályozza, hogy a használt Keyguard zárolási képernyő funkció használatát az eszközön. **Nincs konfigurálva** lehetővé teszi a felhasználó Keyguard funkcióinak használatát.
-- **Le van tiltva a keyguard funkciók**: Ha keyguard engedélyezve van az eszközön, válassza ki a fejlesztendő funkciók letiltása. Például, hogy amikor **biztonságos kamera** be van jelölve, a kamera funkció le van tiltva az eszközön. A szolgáltatásokat, nincs ellenőrizve engedélyezve van az eszközön.
+- **Tiltsa le a zárolási képernyőn**: Válasszon **letiltása** megakadályozza, hogy a felhasználók Keyguard zárolási képernyő funkció használatát az eszközön. **Nincs konfigurálva** lehetővé teszi a felhasználó Keyguard funkcióinak használatát.
+- **Le van tiltva a zárolási képernyő Funkciók**: Ha keyguard engedélyezve van az eszközön, válassza ki a fejlesztendő funkciók letiltása. Például, hogy amikor **biztonságos kamera** be van jelölve, a kamera funkció le van tiltva az eszközön. A szolgáltatásokat, nincs ellenőrizve engedélyezve van az eszközön.
+
+  Ezek a funkciók akkor érhetők el a felhasználók számára az eszköz zárolva van. Felhasználók fognak megjelenni, és a rendszer ellenőrzi a szolgáltatások eléréséhez.
+
 - **Kötelező jelszótípus**: Az eszköz kötelező jelszó típusát határozza meg. A választható lehetőségek:
-  - **Legalább számok**
-  - **Komplex numerikus**: Ismétlődő vagy egymást követő számokat, például az "1111" vagy "1234", nem engedélyezett.
-  - **Legalább betűk**
-  - **Legalább alfanumerikus karakterek**
-  - **Legalább alfanumerikus karakterek és szimbólumok**
-- **Jelszó minimális hossza**: Adja meg a felhasználónak meg kell adnia, (4 és 16 karakter között) jelszó minimális hosszát.
-- **Bejelentkezési hibák eszköz törlése előtt**: Adja meg, mielőtt a rendszer törölné az eszközt (között 1 – 11.) a sikertelen bejelentkezések száma.
+  - **Eszköz alapértelmezése**
+  - **Jelszó szükséges, korlátozás nélkül**
+  - **Biometrikus weak**: [Erős vagy egyszerű biometrikus](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (Android a webhely megnyitása)
+  - **Numerikus**: Jelszó csak számokból kell, például `123456789`. Adja meg a **jelszó minimális hossza** a felhasználónak meg kell adnia, 4 és 16 karakter között.
+  - **Komplex numerikus**: Ismétlődő vagy egymást követő számokat, például az "1111" vagy "1234", nem engedélyezett. Adja meg a **jelszó minimális hossza** a felhasználónak meg kell adnia, 4 és 16 karakter között.
+  - **Alfabetikus**: Az ábécé betűit szükség. Számok és szimbólumok nem szükséges. Adja meg a **jelszó minimális hossza** a felhasználónak meg kell adnia, 4 és 16 karakter között.
+  - **Alphanumeric**: Nagybetűk, kisbetűk és numerikus karaktereket tartalmaz. Adja meg a **jelszó minimális hossza** a felhasználónak meg kell adnia, 4 és 16 karakter között.
+  - **Alfanumerikus karakterek és szimbólumok**: Nagybetűk, kisbetűk, számjegyekből, írásjelek és szimbólumokat tartalmaz. Ezt is adja meg:
+
+    - **Jelszó minimális hossza**: Adja meg a jelszóban, 4 és 16 karakter között minimális hosszát.
+    - **Hány karakterből kell állnia**: Adja meg az karakterek a jelszóban, 0 és 16 karakter között.
+    - **Kötelező kisbetűs karakterek**: Itt adhatja meg a jelszóban kisbetűs karakterek, 0 és 16 karakter között.
+    - **Nagybetűs karakterek számát**: Itt adhatja meg a jelszóban nagybetűs karakterek, 0 és 16 karakter között.
+    - **Hány karakterből kell állnia nem a levelek**: Itt adhatja meg, nem-betűket (a szóközön kívül bármilyen az ábécé betűit), a jelszót kell rendelkeznie, 0 és 16 karakter között.
+    - **Numerikus karakterek számát**: A numerikus karakterek számát adja meg (`1`, `2`, `3`, és így tovább) a jelszót kell rendelkeznie, 0 és 16 karakter között.
+    - **Hány szimbólumnak szükséges**: Adja meg, hány szimbólumnak (`&`, `#`, `%`, és így tovább) a jelszót kell rendelkeznie, 0 és 16 karakter között.
+
+- **Hány nap elteltével jelszó lejár**: Adja meg a között eltelt napok számát, 1 – 365, elteltével kell megváltoztatni az eszköz jelszavát. Írja be például a jelszó módosításához 60 nap után `60`. Ha a jelszó lejár, a hozzon létre egy új jelszót a rendszer kéri a felhasználókat.
+- **Hány felhasználó előtt meg kell adni egy jelszót resuse is**: Adja meg a korábban használt jelszavak nem használható fel újra, 1-24 közötti számát. Ezzel a beállítással korlátozhatja, hogy a felhasználó korábban használt jelszavakat hozzon létre.
+- **Bejelentkezési hibák eszköz törlése előtt**: Adja meg a számot, 4 és 11 közötti, mielőtt a rendszer törölné az eszközt a sikertelen bejelentkezéseket között.
 
 ### <a name="power-settings"></a>Energiaellátási beállítások
 
@@ -152,6 +168,17 @@ Ezek a beállítások használatával az dedikált eszközök kioszk stílusú f
 - **Új felhasználók hozzáadása**: Válasszon **blokk** megakadályozza, hogy a felhasználók új felhasználók hozzáadása. Minden felhasználó rendelkezik személyes munkaterülettel az eszközön az egyéni kezdőlap képernyők, fiókok, alkalmazások és beállítások. **Nincs konfigurálva** lehetővé teszi a felhasználóknak más felhasználók felvétele az eszközre.
 - **Felhasználók eltávolítása**: Válasszon **blokk** megakadályozza, hogy a felhasználók felhasználók eltávolítását. **Nincs konfigurálva** lehetővé teszi a felhasználóknak más felhasználók eltávolítása az eszközről.
 - **Módosítások fiók**: Válasszon **blokk** megakadályozza, hogy a felhasználók fiókok módosítása. **Nincs konfigurálva** lehetővé teszi, hogy a felhasználók frissíthetik a felhasználói fiókokat az eszközön.
+
+### <a name="applications"></a>Alkalmazások
+
+- **Lehetővé teszi az ismeretlen forrásból történő telepítést**: Válasszon **engedélyezése** így a felhasználók bekapcsolhatja **ismeretlen források**. Ez a beállítás lehetővé teszi, hogy az ismeretlen forrásokból, például a Google Play Store kívül telepíteni kívánt alkalmazások. **Nincs konfigurálva** megakadályozza, hogy a felhasználók ne tudják bekapcsolni a **ismeretlen források**.
+- **Minden alkalmazás Google Play áruházban való hozzáférés engedélyezése**: Ha a beállítása **engedélyezése**, felhasználók is hozzáférhetnek az összes alkalmazásba a Google Play áruházban. Nem kap hozzáférést a rendszergazda blokkolja az alkalmazások [ügyfélalkalmazás](apps-add-android-for-work.md). **Nincs konfigurálva** arra kényszeríti a felhasználók csak a rendszergazda segítségével érhető el a Google Play áruházbeli alkalmazások, vagy a szükséges alkalmazások férhetnek hozzá [ügyfélalkalmazás](apps-add-android-for-work.md).
+- **Alkalmazás automatikusan frissül**: Válassza ki, ha az automatikus frissítések telepítve vannak. A választható lehetőségek:
+  - **Nincs konfigurálva**
+  - **Felhasználói választási lehetőség**
+  - **Soha nem**
+  - **Wi-Fi csak**
+  - **Mindig**
 
 ### <a name="connectivity"></a>Kapcsolat
 

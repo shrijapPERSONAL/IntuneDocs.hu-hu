@@ -14,11 +14,11 @@ ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: de73aa069765ce75068781674ff24d097346cdba
-ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58899027"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59898392"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>IOS-szoftverfrissítési szabályzatok hozzáadása az Intune-ban
 

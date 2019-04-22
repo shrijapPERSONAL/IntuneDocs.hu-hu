@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d99712cfb972ae346c9254aac54feb5f4173a28
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: 023db9e63f9495d9c96342e33bfac811238c0f39
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991163"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59897887"
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>iOS-eszközök regisztrálásának beállítása az Apple School Manager programban
 
@@ -36,7 +36,7 @@ Az Apple School Manager programba történő regisztráció az Intune és az App
 Az Apple School Manager programba történő regisztráció nem használható együtt az [Apple Készülékregisztrációs programjával](device-enrollment-program-enroll-ios.md) és a [Készülékregisztráció-kezelővel](device-enrollment-manager-enroll.md).
 
 **Előfeltételek**
-- [Apple MDM Push-tanúsítvány](apple-mdm-push-certificate-get.md)
+- [Apple mobileszköz-felügyeleti (MDM) Push-tanúsítvány](apple-mdm-push-certificate-get.md)
 - [MDM-szolgáltató ](mdm-authority-set.md)
 - [Apple MDM Push-tanúsítvány](apple-mdm-push-certificate-get.md)
 - ADFS használata esetén a felhasználói affinitáshoz [WS-Trust 1.3 Username/Mixed végpont](https://technet.microsoft.com/library/adfs2-help-endpoints) szükséges. [További információk](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
@@ -58,7 +58,7 @@ A céges tulajdonú iOS-eszközök regisztrálását csak akkor végezheti el az
 ### <a name="step-2-download-a-token-and-assign-devices"></a>2. lépés Töltsön le egy tokent, és végezze el az eszközök hozzárendelését.
 1. Válassza a **Token létrehozása az Apple School Manager programon keresztül** lehetőséget, és jelentkezzen be az Apple School rendszerbe a céges Apple ID azonosítójával. A későbbiekben ezt az Apple ID-t használhatja az Apple School Manager-token megújításához.
 2.  Az [Apple School Manager portálján](https://school.apple.com) az **MDM-kiszolgálók** szakaszban válassza az **Új MDM-kiszolgáló hozzáadása** elemet (a jobb felső sarokban).
-3.  Adja meg az **MDM-kiszolgálónevet**. A kiszolgálónév Önnek segít a mobileszköz-felügyeleti (MDM-) kiszolgáló azonosításában, nem ez a Microsoft Intune-kiszolgáló URL-címe vagy neve.
+3.  Adja meg az **MDM-kiszolgálónevet**. A kiszolgálónév Önnek segít a mobileszköz-felügyeleti (MDM-) kiszolgáló azonosításában, A neve vagy URL-címét a Microsoft Intune-kiszolgáló nem.
    ![Képernyőfelvétel az Apple School Manager portálról, amelyen a Sorozatszám lehetőség van kijelölve](./media/asm-server-assignment.png)
 
 4.  Az Apple portálján válassza a **Fájl feltöltése...** elemet, keresse meg a .pem-fájlt, és válassza az **MDM-kiszolgáló mentése** elemet (a jobb alsó sarokban).
@@ -84,7 +84,7 @@ Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt
 1. Az [Intune](https://aka.ms/intuneportal) portálon válassza az **Eszközök beléptetése** > **Apple-regisztráció** > **Készülékregisztrációs programbeli token** lehetőséget.
 2. Válasszon egy tokent, és válassza a **Profilok**, majd a **Profil létrehozása** lehetőséget.
 
-3. A **Profil létrehozása** panelen adminisztrációs célból adja meg a profil **Nevét** és **Leírását**. Ezeket a felhasználók nem fogják látni. A **Név** mező felhasználásával dinamikus csoportot hozhat létre az Azure Active Directoryban. Használja a profilnevet az enrollmentProfileName paraméter meghatározásához, hogy ezzel a regisztrációs profillal rendelhesse hozzá az eszközöket. További információk az [Azure Active Directory-alapú dinamikus csoportokról](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
+3. A **Profil létrehozása** panelen adminisztrációs célból adja meg a profil **Nevét** és **Leírását**. A felhasználók nem látják ezeket az adatokat. A **Név** mező felhasználásával dinamikus csoportot hozhat létre az Azure Active Directoryban. Használja a profilnevet az enrollmentProfileName paraméter meghatározásához, hogy ezzel a regisztrációs profillal rendelhesse hozzá az eszközöket. További információk az [Azure Active Directory-alapú dinamikus csoportokról](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
 
     ![A profil neve és leírása.](./media/device-enrollment-program-enroll-ios/image05.png)
 
@@ -93,7 +93,7 @@ Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt
 
     - **Regisztráció felhasználói affinitás nélkül** – Ezt a lehetőséget olyan eszközökhöz válassza, amelyek nincsenek egy adott felhasználóhoz társítva, például közös használatú eszközökhöz. Ezt a lehetőséget olyan eszközökhöz használja, amelyek a helyi felhasználói adatokhoz való hozzáférés nélkül végeznek feladatokat. Egyes alkalmazások, mint például a Céges portál alkalmazás, nem működnek.
 
-5. A **Regisztráció felhasználói affinitással** lehetőség választásakor engedélyezheti a felhasználóknak, hogy az Apple beállítási asszisztens helyett a Céges portál alkalmazással végezzenek hitelesítést.
+5. Ha úgy döntött **felhasználói affinitással való regisztrálást**, a felhasználók számára az Apple beállítási asszisztens helyett a céges portál a hitelesítéshez.
 
     ![Végezzen hitelesítést a Céges portállal.](./media/device-enrollment-program-enroll-ios/authenticatewithcompanyportal.png)
 
@@ -103,9 +103,9 @@ Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt
     >    - A felhasználók figyelmeztetése a jelszó módosítására az első bejelentkezéskor
     >    - A felhasználók figyelmeztetése a lejárt jelszó helyetti új jelszó kérésére a regisztráció során
     >
-    > Ezek az Apple Beállítási asszisztenssel végzett hitelesítéskor nem támogatottak.
+    > Ezek nem támogatottak az Apple beállítási asszisztens való hitelesítéskor.
 
-6. Válassza az **Eszközkezelési beállítások** lehetőséget, és adja meg, hogy felügyelve legyenek-e az adott profilt használó eszközök.
+6. Válasszon **Eszközfelügyeleti beállítások** , és adja meg, ha a jelen profilt használó felügyelt eszközök.
     A **felügyelt** eszközök esetében több felügyeleti lehetőséget érhet el, és az Aktiválási zár funkció alapértelmezés szerint le van tiltva. A felügyelt módú üzemeltetés lehetővé tételéhez a Microsoft a DEP használatát javasolja, különösen olyan szervezeteknél, amelyeknél nagy mennyiségű iOS-eszközt használnak.
 
     A rendszer kétféle módon is tudatja a felhasználókkal, hogy az eszközük felügyelet alatt áll:
@@ -116,17 +116,19 @@ Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt
      > [!NOTE]
      > A felügyelet nélkül regisztrált eszközöket csak az Apple Configurator segítségével tudja átállítani felügyelt eszközzé. Az eszköz ily módon való átállításához csatlakoztatnia kell az iOS-eszközt egy Mac számítógéphez USB-kábellel. Ezzel kapcsolatban az [Apple Configurator dokumentációjában](http://help.apple.com/configurator/mac/2.3) talál további információkat.
 
-7. Adja meg, hogy zárolt regisztrációt kíván-e beállítani a jelen profilt használó eszközökhöz. A **Zárolt regisztráció** letiltja azokat az iOS-beállításokat a **Beállítások** menüből, amelyek segítségével eltávolítható a felügyeleti profil. Az eszköz regisztrálása után ez a beállítás nem módosítható az eszköz összes adatának törlése nélkül. A zárolt regisztrációjú eszközökön a **Felügyelt** felügyeleti módot az *Igen* értékre kell beállítani. 
+7. Válassza ki, ha azt szeretné, ezt a profilt használó eszközök esetében zárolt regisztráció. A **Zárolt regisztráció** letiltja azokat az iOS-beállításokat a **Beállítások** menüből, amelyek segítségével eltávolítható a felügyeleti profil. Az eszköz regisztrálása után ez a beállítás nélkül az eszköz adatainak törlésekor nem módosítható. A zárolt regisztrációjú eszközökön a **Felügyelt** felügyeleti módot az *Igen* értékre kell beállítani. 
 
-8. Ha szeretné engedélyezni, hogy egy felügyelt Apple ID azonosítóval több felhasználó is bejelentkezzen a regisztrált iPadekre, válassza az **Igen** lehetőséget a **Megosztott iPad** beállításnál (ez beállítás **Felhasználói affinitás nélküli regisztrálást** és **Igen** értékre állított **Felügyelt** üzemmódot igényel). A felügyelt Apple ID-k létrehozása az Apple School Manager portálján történik. További információ a [megosztott iPadekről](education-settings-configure-ios-shared.md) és az [Apple megosztott iPadekre vonatkozó követelményeiről](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
+8. Hagyhatja, hogy a több felhasználó használatával írja alá regisztrált Ipadekre való egy felügyelt Apple ID azonosítójával. Ehhez válassza ki a **Igen** alatt **megosztott iPad** (ez utóbbi lehetőség megköveteli **felhasználói affinitás nélküli regisztrálást** és **felügyelt** módbeállítása **Igen**.) A felügyelt Apple ID-k létrehozása az Apple School Manager portálján történik. További információ a [megosztott iPadekről](education-settings-configure-ios-shared.md) és az [Apple megosztott iPadekre vonatkozó követelményeiről](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
 
-9. Adja meg, hogy a jelen profilt használó eszközök végezhetnek-e **Szinkronizálást számítógépekkel**. Ha az **Apple Configurator engedélyezése tanúsítvány szerint** lehetőséget választja, tanúsítványt kell választania az **Apple Configurator-tanúsítványok** területen.
+9. Adja meg, ha szeretné ezt a profilt használó eszközök **szinkronizálást számítógépekkel**. Ha az **Apple Configurator engedélyezése tanúsítvány szerint** lehetőséget választja, tanúsítványt kell választania az **Apple Configurator-tanúsítványok** területen.
 
 10. Ha az **Apple Configurator engedélyezése tanúsítvány szerint** lehetőséget választotta az előző lépésben, válasszon egy importálandó Apple Configurator-tanúsítványt.
 
-11. Válassza az **OK** gombot.
+11. Megadhatja a rendszer automatikusan alkalmazza, amikor regisztrálják eszközök elnevezési formátum. Ehhez válassza ki a **Igen** alatt **eszköz neve sablon alkalmazása**. Ezt követően a a **eszköz neve a sablon** adja meg a jelen profilt használó nevét használni kívánt sablont. Megadhatja, hogy a sablon formátuma, amely tartalmazza az eszköz típusa és sorozatszáma.
 
-12. Kattintson a **Beállítási asszisztens beállításai** elemre, és konfigurálja az alábbi profilbeállításokat: ![A beállítási asszisztens testreszabása.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
+12. Válassza az **OK** gombot.
+
+13. Kattintson a **Beállítási asszisztens beállításai** elemre, és konfigurálja az alábbi profilbeállításokat: ![A beállítási asszisztens testreszabása.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
 
     |                 Beállítás                  |                                                                                               Leírás                                                                                               |
@@ -134,7 +136,7 @@ Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt
     |     <strong>Részleg neve</strong>     |                                                             Akkor jelenik meg, ha a felhasználó az aktiválás során a <strong>Konfiguráció névjegye</strong> elemre koppint.                                                              |
     |    <strong>Részleg telefonszáma</strong>     |                                                          Akkor jelenik meg, ha a felhasználó az aktiválás során a <strong>Segítségre van szüksége?</strong> gombra kattint.                                                          |
     | <strong>Beállítási asszisztens – Beállítások</strong> |                                                     Ezeknek a beállításoknak a megadása nem kötelező, és az iOS <strong>Beállítások</strong> menüjében később is konfigurálhatók.                                                      |
-    |        <strong>PIN-kód</strong>         | PIN-kód kérése aktiváláskor. PIN-kód megadására mindig szükség van, kivéve, ha az eszköz biztonságát, illetve elérésének szabályozását valamilyen más módszer biztosítja (például teljes képernyős mód, amely egyetlen alkalmazás futtatására korlátozza az eszközt). |
+    |        <strong>PIN-kód</strong>         | PIN-kód kérése aktiváláskor. Mindig szükség van PIN-kód nem biztonságos eszközök esetében, kivéve, ha van elérésének szabályozását valamilyen más módszer biztosítja (például teljes képernyős mód, amely egyetlen alkalmazás futtatására korlátozza az eszközt). |
     |    <strong>Helyalapú szolgáltatások</strong>    |                                                                 Ha bekapcsolja ezt a funkciót, a Beállítási asszisztens az aktiválás során kérni fogja ezt a szolgáltatást.                                                                  |
     |         <strong>Visszaállítás</strong>         |                                                                Ha bekapcsolja ezt a funkciót, a Beállítási asszisztens az aktiválás során iCloud-alapú biztonsági mentést fog kérni.                                                                 |
     |   <strong>iCloud és Apple ID</strong>   |                         Ha bekapcsolja ezt a funkciót, a Beállítási asszisztens kéri a felhasználót, hogy jelentkezzen be egy Apple ID azonosítóval, és az Alkalmazások és adatok képernyőn lehetőség lesz majd az eszköz iCloud-alapú biztonsági mentésből való visszaállítására.                         |
@@ -146,9 +148,9 @@ Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt
     |     <strong>Diagnosztikai adatok</strong>     |                                                                 Ha bekapcsolja ezt a funkciót, a Beállítási asszisztens az aktiválás során kérni fogja ezt a szolgáltatást.                                                                 |
 
 
-13. Válassza az **OK** gombot.
+14. Válassza az **OK** gombot.
 
-14. Válassz a **Létrehozás** elemet a profil mentéséhez.
+15. Válassz a **Létrehozás** elemet a profil mentéséhez.
 
 ## <a name="connect-school-data-sync"></a>A School Data Sync csatlakoztatása
 (Nem kötelező) Az Apple School Manager támogatja az osztálynévsorok Microsoft School Data Sync (SDS) használatával történő szinkronizálását az Azure Active Directoryba (AD). Az SDS segítségével csak egy tokent tud szinkronizálni. Ha beállítja egy másik tokenhez a School Data Syncet, az SDS el lesz távolítva a korábbi tokenből. Ekkor egy új kapcsolat veszi át a jelenlegi token szerepét. Az alábbi lépések végrehajtásával használhatja az SDS-t az iskolai adatok szinkronizálására.
@@ -163,10 +165,10 @@ Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt
 
 Miután az Intune engedélyt kapott az Apple School Manager-eszközök felügyeletére, szinkronizálja az Intune-t az Apple szolgáltatással, hogy a felügyelt eszközök megjelenjenek az Intune-ban.
 
-Az [Intune](https://aka.ms/intuneportal) portálon válassza az **Eszközök beléptetése** > **Apple-regisztráció** > **Készülékregisztrációs programbeli token** lehetőséget, válasszon egy tokent a listából, majd válassza az **Eszközök** > **Szinkronizálás** lehetőséget. ![Képernyőkép – A Szinkronizálás hivatkozás választása a Készülékregisztrációs programba felvett eszközök mező kijelölése után.](./media/device-enrollment-program-enroll-ios/image06.png)
+Az [Intune](https://aka.ms/intuneportal) portálon válassza az **Eszközök beléptetése** > **Apple-regisztráció** > **Készülékregisztrációs programbeli token** lehetőséget, válasszon egy tokent a listából, majd válassza az **Eszközök** > **Szinkronizálás** lehetőséget. ![Képernyőkép – a Készülékregisztrációs programba felvett eszközök és a szinkronizálás hivatkozás.](./media/device-enrollment-program-enroll-ios/image06.png)
 
-  Az Apple elfogadható regisztrációs programforgalomra vonatkozó feltételeinek teljesítése céljából az Intune az alábbi korlátozásokat írja elő:
-  - Teljes szinkronizálás legfeljebb hétnaponta futtatható. A teljes szinkronizálás során az Intune minden Intune-hoz rendelt Apple-sorozatszámot frissít. Ha az előző teljes szinkronizálástól számított hét napon belül újabb teljes szinkronizálást kísérel meg, az Intune csak a szolgáltatásban még nem szereplő sorozatszámokat frissíti.
+  Kövesse az Apple elfogadható regisztrációs programforgalomra vonatkozó feltételeinek, az Intune a következő céljából korlátozásokat írja elő:
+  - Teljes szinkronizálás legfeljebb hétnaponta futtatható. A teljes szinkronizálás során az Intune minden Intune-hoz rendelt Apple-sorozatszámot frissít. Egy teljes szinkronizálást kísérel meg az előző teljes szinkronizálástól számított hét napon belül, ha az Intune csak azokat a sorozatszámokat, amely már nem szerepel az Intune frissít.
   - A szinkronizálási kérések elbírálása 15 percet vesz igénybe. Ez idő alatt, vagy amíg a kérelem ellenőrzése nem fejeződött be, a **Szinkronizálás** gomb inaktív.
   - Az Intune 24 óránként szinkronizálja az új vagy eltávolított eszközöket az Apple-lel.
 
@@ -174,7 +176,7 @@ Az [Intune](https://aka.ms/intuneportal) portálon válassza az **Eszközök bel
 >Az Apple School Manager sorozatszámait a **Készülékregisztrációs programba felvett eszközök** panelről is hozzárendelheti a profilokhoz.
 
 ## <a name="assign-a-profile-to-devices"></a>Profil hozzárendelése az eszközökhöz
-Az Intune által felügyelt Apple School Manager-eszközökhöz még a regisztrálás előtt hozzá kell rendelni egy regisztrációs profilt.
+Intune által felügyelt eszközök az Apple School Manager hozzá kell rendelni egy regisztrációs profilt előtt a regisztrálás során.
 
 1. Az [Intune](https://aka.ms/intuneportal) portálon válassza az **Eszközök beléptetése** > **Apple-regisztráció** > **Készülékregisztrációs programbeli token** lehetőséget, majd válasszon egy tokent a listából.
 2. Válassza az **Eszközök** lehetőséget, válasszon eszközöket a listából, majd válassza a **Profil hozzárendelése** elemet.
@@ -182,4 +184,4 @@ Az Intune által felügyelt Apple School Manager-eszközökhöz még a regisztr�
 
 ## <a name="distribute-devices-to-users"></a>Eszközök terjesztése a felhasználóknak
 
-Az eddigiekben engedélyezte az eszközfelügyeletet és a szinkronizálást az Apple és az Intune között, valamint az Apple School-eszközök regisztrálása céljából hozzárendelt egy profilt. Az eszközök ekkor már kioszthatók a felhasználóknak. Az iOS rendszerű Apple School Manager-eszközök bekapcsolásakor a rendszer regisztrálja az eszközöket az Intune-nal való felügyeletre. Ha az eszközt már aktiválták és használatban van, a profil csak akkor alkalmazható, ha az eszközről az összes adat törölve lett.
+Az eddigiekben engedélyezte az eszközfelügyeletet és a szinkronizálást az Apple és az Intune között, valamint az Apple School-eszközök regisztrálása céljából hozzárendelt egy profilt. Az eszközök ekkor már kioszthatók a felhasználóknak. IOS rendszerű Apple School Manager eszköz be van kapcsolva, rendszer regisztrálja az eszközöket a felügyeleti Intune-nal. Profilok nem alkalmazható tartozik aktivált készülék jelenleg használatban, amíg a rendszer törölné az eszközt.

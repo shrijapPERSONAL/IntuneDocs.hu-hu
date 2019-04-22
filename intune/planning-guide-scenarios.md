@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 69a4ee29a6d35623d6269a94a9c1b4fc7a1f956f
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798812"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59894845"
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>Mobileszköz-kezelési használati esetek azonosítása
 
@@ -64,7 +64,7 @@ Határozza meg, hogy az egyes használati esetek tartalmaznak-e alárendelt hasz
 
 ## <a name="organizational-groups-for-your-scenarios"></a>Céges csoportok a használati eseteihez
 
-Ezután azonosítania kell az egyes használati esetekhez és alesetekhez kapcsolódó munkahelyi csoportokat. Például:
+Ezután azonosítania kell az egyes használati esetekhez és alesetekhez kapcsolódó munkahelyi csoportokat. Példa:
 
 | **Használati esetek** | **Használati alesetek** | **Munkahelyi csoportok** |
 |:---:|:---:|:---:|

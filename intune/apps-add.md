@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 58fea39d7461f4ce6b1838b0df78434f6bc53372
-ms.sourcegitcommit: a2cd14c30949cef17bfc6576513e7660a8015669
+ms.openlocfilehash: bd0eb13a0a65116545922ddae05f5959224fc571
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59571790"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59897697"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Alkalmazások hozzáadása a Microsoft Intune-hoz 
 
@@ -51,6 +51,7 @@ A következő táblázatban megtekintheti a konkrét alkalmazástípusokat és a
 | **Alkalmazásspecifikus típus** | **Általános típus** | **Alkalmazásspecifikus eljárások** |
 | --- | --- | --- |
 | Androidos áruházbeli alkalmazások  | Áruházbeli alkalmazás  | Válassza az **Android** lehetőséget az **alkalmazás típusa** területen, majd adja meg a Google Play áruház alkalmazáshoz tartozó URL-címét. |
+| Androidos vállalati alkalmazások  | Áruházbeli alkalmazás  | Válassza ki **Android** , a **alkalmazástípus**, és adja meg az alkalmazás a felügyelt Google Play áruházbeli URL-CÍMÉT. <sup>1</sup> |
 | iOS-es áruházbeli alkalmazások  | Áruházbeli alkalmazás  | Válassza az **iOS** lehetőséget az **alkalmazás típusa** területen, keresse meg az alkalmazást majd jelölje ki az Intune-ban. |
 | Windows Phone 8.1-es áruházbeli alkalmazások  | Áruházbeli alkalmazás  | Válassza a **Windows Phone 8.1** lehetőséget az **alkalmazás típusa** területen, majd adja meg a Microsoft Store alkalmazáshoz tartozó URL-címét. |
 | Microsoft Store-beli alkalmazások  | Áruházbeli alkalmazás  | Válassza a **Windows** lehetőséget az **alkalmazás típusa** területen, majd adja meg a Microsoft Store alkalmazáshoz tartozó URL-címét. |
@@ -65,6 +66,8 @@ A következő táblázatban megtekintheti a konkrét alkalmazástípusokat és a
 | Beépített Android-alkalmazás  | Beépített alkalmazás | Válassza a **Beépített alkalmazás** lehetőséget az **alkalmazás típusa** területen, majd jelöljön ki egy beépített alkalmazást az elérhető alkalmazások listáján.  |
 | Webalkalmazások  | Web app  | Válassza a **Webes hivatkozás** lehetőséget az **alkalmazás típusa** területen, majd adjon meg egy érvényes, a webalkalmazásra mutató URL-címet.  |
 | Windows-alkalmazás (Win32)  | Üzletági (LOB) alkalmazás  | Válassza a **Windows-alkalmazás (Win32)** lehetőséget az **alkalmazás típusa** területen, válassza az **Alkalmazáscsomag-fájl** elemet, majd válasszon egy **.intunewin** kiterjesztésű telepítőfájlt.  |
+
+<sup>1</sup> Android Enterprise és Androidos munkahelyi profilok kapcsolatos további információkért lásd: [a licencelt alkalmazások megértése](apps-add.md#understanding-licensed-apps) alatt.
 
 Az alkalmazásokat az **Ügyfélalkalmazások** > **Alkalmazások** > **Hozzáadás** lehetőséggel adhatja hozzá a Microsoft Intune-hoz. Megjelenik az **Alkalmazás hozzáadása** panel, ahol kiválaszthatja az **alkalmazás típusát**. 
 

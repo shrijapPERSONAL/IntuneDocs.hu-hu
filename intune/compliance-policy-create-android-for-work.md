@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/04/2019
+ms.date: 04/15/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16db0acab84a1095c40e9a92648c75c2581187cd
-ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.openlocfilehash: d7a9a5ff686ce3cff8b60c2bd1c0c5d108d58760
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59423560"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59896887"
 ---
 # <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Android Enterprise-beállítások eszközök megjelölése a megfelelő vagy nem megfelelő, az Intune-nal
 
@@ -36,11 +36,57 @@ Ez a funkció az alábbiakra vonatkozik:
 
 Intune-rendszergazdák a megfelelőségi beállítások segítségével a szervezeti erőforrások védelme érdekében. További információ a megfelelőségi szabályzatok, és milyen talál, [eszközmegfelelőség használatának első lépései](device-compliance-get-started.md).
 
+> [!IMPORTANT]
+> Megfelelőségi szabályzatok dedikált vállalati Android-eszköz is érvényesek. Megfelelőségi szabályzat van rendelve egy dedikált eszközt, ha az eszközt előfordulhat, hogy megjelenítése **nem megfelelő**. Feltételes hozzáférés és a megfelelőség kényszerítése a dedikált eszközök érhető el. Győződjön meg arról, bármely feladatok vagy dedikált eszközök felelnek meg a hozzárendelt szabályzatok lekérése műveletek végrehajtásához.
+
 ## <a name="before-you-begin"></a>Előkészületek
 
 [Megfelelőségi szabályzat létrehozása](create-compliance-policy.md#create-the-policy). A **Platform**válassza **Android Enterprise**.
 
-## <a name="device-health"></a>Device health
+## <a name="device-owner"></a>Az eszköz tulajdonosa
+
+### <a name="device-properties"></a>Eszköztulajdonságok
+
+- **Minimális operációsrendszer-verzió**: Ha egy eszköz nem teljesíti a minimális verziójára vonatkozó követelményt, a nem megfelelő rendszer jelenti. Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A végfelhasználó frissítheti az eszközt, és majd hozzáférni a szervezet erőforrásaihoz.
+- **Maximális operációsrendszer-verzió**: Ha egy eszköz operációsrendszer-verziónál újabb verziójú, mint az a szabály, a szervezeti erőforrásokhoz való hozzáférés le van tiltva. A felhasználónak meg kell adnia, forduljon az IT-rendszergazdához. Egy szabályt, hogy az operációs rendszer verziója megváltozott, amíg az eszköz nem lehet hozzáférni a szervezet erőforrásaihoz.
+
+### <a name="system-security"></a>Rendszerbiztonság
+
+- **A mobileszközök zárolásának feloldásához jelszó szükséges**: **Szükséges** felhasználók csak jelszó beírása után az eszköz eléréséhez. Ha a **Nincs konfigurálva** (alapértelmezett) lehetőséget választja, a rendszer ezt a beállítást nem veszi figyelembe a megfelelőség, vagy meg nem felelőség megállapításához.
+
+  Ez a beállítás az eszköz szintjén alkalmazzák. Ha csak a munkahelyi profil szintjén jelszót kell, használja a konfigurációs szabályzat. Lásd: [Android Enterprise eszköz konfigurációs beállításai](device-restrictions-android-for-work.md).
+
+  - **Kötelező jelszótípus**: Válassza ki, ha a jelszó csak számokat, vagy számokat többféle és más karaktereket tartalmaznia kell. A választható lehetőségek:
+    - **Eszköz alapértelmezése**
+    - **Jelszó szükséges, korlátozás nélkül**
+    - **Biometrikus weak**: [Erős vagy egyszerű biometrikus](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (Android a webhely megnyitása)
+    - **Numerikus**: Jelszó csak számokból kell, például `123456789`. Adja meg a **jelszó minimális hossza** a felhasználónak meg kell adnia, 4 és 16 karakter között.
+    - **Komplex numerikus**: Ismétlődő vagy egymást követő számokat, például az "1111" vagy "1234", nem engedélyezett. Adja meg a **jelszó minimális hossza** a felhasználónak meg kell adnia, 4 és 16 karakter között.
+    - **Alfabetikus**: Az ábécé betűit szükség. Számok és szimbólumok nem szükséges. Adja meg a **jelszó minimális hossza** a felhasználónak meg kell adnia, 4 és 16 karakter között.
+    - **Alphanumeric**: Nagybetűk, kisbetűk és numerikus karaktereket tartalmaz. Adja meg a **jelszó minimális hossza** a felhasználónak meg kell adnia, 4 és 16 karakter között.
+    - **Alfanumerikus karakterek és szimbólumok**: Nagybetűk, kisbetűk, számjegyekből, írásjelek és szimbólumokat tartalmaz. Ezt is adja meg:
+
+      - **Jelszó minimális hossza**: Adja meg a jelszóban, 4 és 16 karakter között minimális hosszát.
+      - **Hány karakterből kell állnia**: Adja meg az karakterek a jelszóban, 0 és 16 karakter között.
+      - **Kötelező kisbetűs karakterek**: Itt adhatja meg a jelszóban kisbetűs karakterek, 0 és 16 karakter között.
+      - **Nagybetűs karakterek számát**: Itt adhatja meg a jelszóban nagybetűs karakterek, 0 és 16 karakter között.
+      - **Hány karakterből kell állnia nem a levelek**: Itt adhatja meg, nem-betűket (a szóközön kívül bármilyen az ábécé betűit), a jelszót kell rendelkeznie, 0 és 16 karakter között.
+      - **Numerikus karakterek számát**: A numerikus karakterek számát adja meg (`1`, `2`, `3`, és így tovább) a jelszót kell rendelkeznie, 0 és 16 karakter között.
+      - **Hány szimbólumnak szükséges**: Adja meg, hány szimbólumnak (`&`, `#`, `%`, és így tovább) a jelszót kell rendelkeznie, 0 és 16 karakter között.
+
+- **Ennyi perc inaktivitás után kell jelszót**: Adja meg az üresjárati idő után a felhasználónak újra meg kell adnia a jelszavát. Ha a **Nincs konfigurálva** (alapértelmezett) lehetőséget választja, a rendszer ezt a beállítást nem veszi figyelembe a megfelelőség, vagy meg nem felelőség megállapításához.
+- **Hány nap elteltével jelszó lejár**: Adja meg a között eltelt napok számát, 1 – 365, elteltével kell megváltoztatni az eszköz jelszavát. Írja be például a jelszó módosításához 60 nap után `60`. Ha a jelszó lejár, a hozzon létre egy új jelszót a rendszer kéri a felhasználókat.
+- **Hány jelszó szükséges felhasználói jelszót újra felhasználhatja**: Adja meg a korábban használt jelszavak nem használható fel újra, 1-24 közötti számát. Ezzel a beállítással korlátozhatja, hogy a felhasználó korábban használt jelszavakat hozzon létre.
+
+- **Titkosítása az eszközön**: Válasszon **megkövetelése** az adattárolás, az eszközök titkosításához. Ha a **Nincs konfigurálva** (alapértelmezett) lehetőséget választja, a rendszer ezt a beállítást nem veszi figyelembe a megfelelőség, vagy meg nem felelőség megállapításához.
+
+  Nem konfigurálja ezt a beállítást, mert az Android Enterprise-eszközök megkövetelik a titkosítást kell.
+
+A módosítások mentéséhez válassza az **OK** > **Létrehozás** lehetőséget.
+
+## <a name="work-profile"></a>Munkahelyi profil
+
+### <a name="device-health"></a>Device health
 
 - **Feltört eszközök**: Válasszon **blokk** az rootolt (jailbreakelt) eszközök nem megfelelőként való megjelöléséhez. Ha a **Nincs konfigurálva** (alapértelmezett) lehetőséget választja, a rendszer ezt a beállítást nem veszi figyelembe a megfelelőség, vagy meg nem felelőség megállapításához.
 - **Az eszköz vagy az eszköz fenyegetettségi szintje alatt megkövetelése**: Ez a beállítás használatával igénybe vehet a kockázatelemzést Lookout MTP-megoldásból a megfelelőség feltétele. Ha a **Nincs konfigurálva** (alapértelmezett) lehetőséget választja, a rendszer ezt a beállítást nem veszi figyelembe a megfelelőség, vagy meg nem felelőség megállapításához. A beállítás használatához válassza ki a megengedett kockázati szintet:
@@ -49,7 +95,7 @@ Intune-rendszergazdák a megfelelőségi beállítások segítségével a szerve
   - **Közepes**: Az eszköz abban az esetben minősül megfelelőnek, ha az eszköz fennálló fenyegetések alacsony vagy közepes szintűek. Magas szintű fenyegetés észlelésekor a rendszer nem megfelelőként értékeli az eszközt.
   - **Magas**: Ez a lehetőség akkor a legkevésbé biztonságos, minden fenyegetettségi szintet megengedő. Akkor lehet hasznos, ha ezt a megoldást kizárólag jelentéskészítési célokra használja.
 
-### <a name="google-play-protect"></a>Google Play védelme
+#### <a name="google-play-protect"></a>A Google Play védelme
 
 - **Google Play-szolgáltatások konfigurálva van**: **Szükséges** , hogy a Google Play szolgáltatások alkalmazás telepítve van és engedélyezett. A Google Play-szolgáltatások lehetővé teszik a biztonsági frissítéseket, és számos biztonsági funkció előfeltételei a hitelesített Google-eszközökön. Ha a **Nincs konfigurálva** (alapértelmezett) lehetőséget választja, a rendszer ezt a beállítást nem veszi figyelembe a megfelelőség, vagy meg nem felelőség megállapításához.
 - **Naprakész biztonsági szolgáltató**: **Szükséges** , hogy egy naprakész biztonságszolgáltató képes védeni az eszközöket az ismert biztonsági rések. Ha a **Nincs konfigurálva** (alapértelmezett) lehetőséget választja, a rendszer ezt a beállítást nem veszi figyelembe a megfelelőség, vagy meg nem felelőség megállapításához.
@@ -61,41 +107,38 @@ Intune-rendszergazdák a megfelelőségi beállítások segítségével a szerve
 > [!NOTE]
 > A vállalati Android-eszköz **alkalmazások fenyegetettségvizsgálata** eszközkonfigurációs szabályzat van. Egy konfigurációs szabályzatot használja, a rendszergazdák a beállítás engedélyezésével az eszközön. Lásd: [Eszközkorlátozásokra vonatkozó beállítások Android Enterprise esetén](device-restrictions-android-for-work.md)
 
-## <a name="device-properties-settings"></a>Eszköztulajdonságok beállításai
+### <a name="device-properties"></a>Eszköztulajdonságok
 
-- **Minimális operációsrendszer-verzió**: Ha egy eszköz nem teljesíti a minimális verziójára vonatkozó követelményt, hogy nem megfelelőként. Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A végfelhasználó frissítheti az eszközt, ezután pedig hozzáfér a vállalati erőforrásokhoz.
-- **Maximális operációsrendszer-verzió**: Ha egy eszköz operációsrendszer-verziónál újabb verziójú, mint az a szabály, a vállalati erőforrásokhoz való hozzáférés le van tiltva. A felhasználónak ekkor az informatikai rendszergazdához kell fordulnia. Az eszköz csak akkor használható a vállalati erőforrások elérésére, ha a szabályt úgy módosítják, hogy engedélyezze az eszköz operációs rendszerének verzióját is.
+- **Minimális operációsrendszer-verzió**: Ha egy eszköz nem teljesíti a minimális verziójára vonatkozó követelményt, a nem megfelelő rendszer jelenti. Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A végfelhasználó frissítheti az eszközt, és majd hozzáférni a szervezet erőforrásaihoz.
+- **Maximális operációsrendszer-verzió**: Ha egy eszköz operációsrendszer-verziónál újabb verziójú, mint az a szabály, a szervezeti erőforrásokhoz való hozzáférés le van tiltva. A felhasználónak meg kell adnia, forduljon az IT-rendszergazdához. Egy szabályt, hogy az operációs rendszer verziója megváltozott, amíg az eszköz nem lehet hozzáférni a szervezet erőforrásaihoz.
 
-## <a name="system-security-settings"></a>A rendszer biztonsági beállításai
-
-### <a name="password"></a>Windows 10
+### <a name="system-security"></a>Rendszerbiztonság
 
 - **A mobileszközök zárolásának feloldásához jelszó szükséges**: **Szükséges** felhasználók csak jelszó beírása után az eszköz eléréséhez. Ha a **Nincs konfigurálva** (alapértelmezett) lehetőséget választja, a rendszer ezt a beállítást nem veszi figyelembe a megfelelőség, vagy meg nem felelőség megállapításához. Ez a beállítás az eszköz szintjén alkalmazzák. Ha csak a munkahelyi profil szintjén jelszót kell, használja a konfigurációs szabályzat. Lásd: [Android Enterprise eszköz konfigurációs beállításai](device-restrictions-android-for-work.md).
-- **Jelszó minimális hossza**: Adja meg a számjegyek vagy karakterek rendelkeznie kell a jelszó minimális számát.
 - **Kötelező jelszótípus**: Válassza ki, ha a jelszó csak számokat, vagy számokat többféle és más karaktereket tartalmaznia kell. A választható lehetőségek:
   - **Eszköz alapértelmezése**
   - **Alacsony biztonságú biometrikus**
-  - **Legalább számok** (alapértelmezett)
-  - **Komplex numerikus**
-  - **Legalább betűk**
-  - **Legalább alfanumerikus karakterek**
-  - **Legalább alfanumerikus karakterek és szimbólumok**
+  - **Legalább számok** (alapértelmezett): Adja meg a **jelszó minimális hossza** a felhasználónak meg kell adnia, 4 és 16 karakter között.
+  - **Komplex numerikus**: Adja meg a **jelszó minimális hossza** a felhasználónak meg kell adnia, 4 és 16 karakter között.
+  - **Legalább betűk**: Adja meg a **jelszó minimális hossza** a felhasználónak meg kell adnia, 4 és 16 karakter között.
+  - **Legalább alfanumerikus karakterek**: Adja meg a **jelszó minimális hossza** a felhasználónak meg kell adnia, 4 és 16 karakter között.
+  - **Legalább alfanumerikus karakterek és szimbólumok**: Adja meg a **jelszó minimális hossza** a felhasználónak meg kell adnia, 4 és 16 karakter között.
 
 - **Ennyi perc inaktivitás után kell jelszót**: Adja meg az üresjárati idő után a felhasználónak újra meg kell adnia a jelszavát. Ha a **Nincs konfigurálva** (alapértelmezett) lehetőséget választja, a rendszer ezt a beállítást nem veszi figyelembe a megfelelőség, vagy meg nem felelőség megállapításához.
-- **Jelszó érvényessége (napokban)**: Válassza ki a hány nap elteltével a jelszó lejár, és létre kell hoznia egy újat.
+- **Hány nap elteltével jelszó lejár**: Válassza ki a hány nap elteltével a jelszó lejár, és a felhasználó egy új jelszót kell létrehozni.
 - **Hány korábbi jelszót újból**: Adja meg a korábban használt jelszavak nem használható fel újra. Ezzel a beállítással korlátozhatja, hogy a felhasználó korábban használt jelszavakat hozzon létre.
 
-### <a name="encryption"></a>Encryption
+#### <a name="encryption"></a>Encryption
 
 - **Titkosítása az eszközön**: Válasszon **megkövetelése** az adattárolás, az eszközök titkosításához. Ha a **Nincs konfigurálva** (alapértelmezett) lehetőséget választja, a rendszer ezt a beállítást nem veszi figyelembe a megfelelőség, vagy meg nem felelőség megállapításához. 
 
   Nem konfigurálja ezt a beállítást, mert az Android Enterprise-eszközök megkövetelik a titkosítást kell.
 
-### <a name="device-security"></a>Eszközbiztonság
+#### <a name="device-security"></a>Eszközbiztonság
 
-- **Ismeretlen forrásból származó alkalmazások letiltása**: Válassza ki a **blokk** "Biztonság > Ismeretlen források" eszközök engedélyezve van a forrásból (Android 4.0 – Android 7.x rendszeren támogatott; nem támogatott Android 8.0 és újabb verziók). Ha a **Nincs konfigurálva** (alapértelmezett) lehetőséget választja, a rendszer ezt a beállítást nem veszi figyelembe a megfelelőség, vagy meg nem felelőség megállapításához.
+- **Ismeretlen forrásból származó alkalmazások letiltása**: Válassza ki a **letiltása** eszközök **biztonsági** > **ismeretlen források** források engedélyezve (támogatottak Android 4.0 – Android 7.x.; nem támogatott Android 8.0 és később). Ha a **Nincs konfigurálva** (alapértelmezett) lehetőséget választja, a rendszer ezt a beállítást nem veszi figyelembe a megfelelőség, vagy meg nem felelőség megállapításához.
 
-  Alkalmazások közvetlen telepítéséhez az ismeretlen forrásokat engedélyezni kell. Ha nem telepít közvetlenül Android-alkalmazásokat, akkor a megfelelőségi szabályzat engedélyezéséhez adja meg a **Letiltás** beállítást ehhez a funkcióhoz. 
+  Alkalmazások közvetlen telepítéséhez az ismeretlen forrásokat engedélyezni kell. Ha nem telepít közvetlenül Android-alkalmazásokat, akkor a megfelelőségi szabályzat engedélyezéséhez adja meg a **Letiltás** beállítást ehhez a funkcióhoz.
 
   > [!IMPORTANT]
   > Az alkalmazások közvetlen telepítéséhez engedélyezni kell az **Ismeretlen forrásból származó alkalmazások letiltása** beállítást. Csak akkor szükséges ennek a megfelelőségi szabályzatnak a kényszerítése, ha nem telepít közvetlenül Android-alkalmazásokat az eszközökön.

@@ -18,11 +18,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: df5b20be667159689aaaee9a790c0a4c5b5864fd
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798398"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59900859"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Segítségnyújtás a céges felhasználóknak a hibaelhárítási portál használatával
 
@@ -62,7 +62,7 @@ A **Hibaelhárítás** panel használatával felhasználói információkat teki
 
 ![](/intune/media/troubleshooting-dash.png)
 
-| Eszköz / terület | Név | Leírás |
+| Terület | Name (Név) | Leírás |
 | ---  | ---  | ---         |
 | 1.   | Fiók állapota  | Az aktuális Intune-bérlő állapotát jeleníti meg, amely lehet **Aktív** vagy **Inaktív**.       |
 | 2.   | Felhasználó kiválasztása  | Az aktuálisan kiválasztott felhasználó neve. Új felhasználó kiválasztásához kattintson a **Felhasználó váltása** lehetőségre.       |
@@ -260,7 +260,7 @@ A Regisztrációs hibák táblázat a sikertelen regisztrációs kísérleteket 
 
 Egy hibasort kijelölve további adatokat jeleníthet meg.
 
-| Szakasz | Leírás |
+| Section | Leírás |
 |-------------|----------|
 | Hiba részletei | A hiba részletes leírása. |
 | Lehetséges megoldások | Javasolt lépések a hiba megoldásához. Bizonyos hibákat nem lehet javítani. |

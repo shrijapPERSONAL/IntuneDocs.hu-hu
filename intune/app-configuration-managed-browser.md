@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8f32cfbb5e05958ec9d8f303809d3ffa28c3a3ec
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292389"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59898991"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Egy böngészővel a Microsoft Intune a házirend által védett webes hozzáférés felügyelete
 

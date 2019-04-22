@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: da57b14f8196251ee8c77de3ffcd48f5b586a12f
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799089"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59900043"
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>Az Intune Tanúsítvány-összekötő beállítása a Symantec PKI Manager webszolgáltatáshoz
 
@@ -140,7 +140,7 @@ Az alábbi lépéseket követve szerezze be a regisztrációszolgáltató (RA) t
 
     h. Válassza a **Személyes tanúsítványtároló** lehetőséget, majd kattintson a **Tovább** gombra.
 
-    i. Kattintson a **Befejezés** gombra. Ekkor a rendszer importálja az RA-tanúsítványt a helyi számítógép személyes tanúsítványtárolójába a titkos kulccsal együtt.  
+    i. Kattintson a **Befejezés**gombra. Ekkor a rendszer importálja az RA-tanúsítványt a helyi számítógép személyes tanúsítványtárolójába a titkos kulccsal együtt.  
 
 6. A titkos kulcsú tanúsítvány exportálása és importálása:
 
@@ -284,7 +284,7 @@ A tanúsítványprofil objektumazonosítója egy a Symantec hitelesítésszolgá
    > [!IMPORTANT]
    > Ahhoz, hogy az Intune Tanúsítvány-összekötő használatával a Symantec hitelesítésszolgáltatótól származó PKCS-tanúsítványokat adhasson ki, a PKCS-tanúsítványprofil következő paramétereinél az alábbi táblázatban megadott, illetve a képernyőfelvételen látható értékeket kell beállítani. 
 
-    |PKCS-tanúsítvány paraméterei | Érték | Leírás |
+    |PKCS-tanúsítvány paraméterei | Value | Leírás |
     | --- | --- | --- |
     | Hitelesítésszolgáltató | pki-ws.symauth.com | Ez az érték a Symantec CA alapszolgáltatásának FQDN neve, záró perjelek nélkül.  Ha nem biztos abban, hogy ez a Symantec CA-előfizetéséhez tartozó alapszolgáltatás FQDN neve, érdeklődjön a Symantec ügyfélszolgálatánál. <br><br> Ha az FQDN helytelen, az Intune Tanúsítvány-összekötő nem tudja kiállítani a Symantec hitelesítésszolgáltatótól származó PKCS-tanúsítványokat.| 
     | Hitelesítésszolgáltató neve | Symantec | Ennek az értéknek a **Symantec** sztringnek kell lennie. <br><br> Ha itt bármilyen más érték szerepel, az Intune Tanúsítvány-összekötő nem fogja tudni kiállítani a Symantec hitelesítésszolgáltatótól származó PKCS-tanúsítványokat.|
@@ -302,7 +302,7 @@ Az előző lépések végrehajtását követően az Intune Tanúsítvány-össze
 |Attribútum | Az Intune által támogatott formátumok | Symantec felhőalapú hitelesítésszolgáltató által támogatott formátumok | Eredmény |
 | --- | --- | --- | --- |
 | Tulajdonos neve |Az Intune az alábbi három formátumban támogatja a tulajdonos nevének megadását: <br><br> 1. Köznapi név <br> 2. Köznapi név e-mail-címmel együtt <br> 3. Köznapi név mint e-mail-cím <br><br> Például: <br><br> `CN = IWUser0 <br><br> E = IWUser0@samplendes.onmicrosoft.com` | Symantec hitelesítésszolgáltató további attribútumokat is támogat.  Ha további attribútumokat szeretne kiválasztani, akkor azokhoz rögzített értéket kell definiálni a Symantec tanúsítványprofil sablonjában.| A tulajdonos neveként a PKCS-tanúsítványkérelmekben található köznapi nevet vagy e-mail-címet használjuk. <br><br> Ha a kiválasztott attribútumok értékei nem egyeznek az Intune tanúsítványprofilban és a Symantec tanúsítványprofil sablonjában, akkor a Symantec hitelesítésszolgáltató által kiállított tanúsítvány nem lesz elérhető.|
-| Tulajdonos alternatív neve (SAN) | Az Intune a következő SAN-mezőértékeket támogatja: <br><br> AltNameTypeEmail <br><br> AltNameTypeUpn <br><br> AltNameTypeOtherName (kódolt érték) | A Symantec felhőalapú hitelesítésszolgáltató is támogatja ezeket a paramétereket. Ha további attribútumokat szeretne kiválasztani, akkor azokhoz rögzített értéket kell definiálni a Symantec tanúsítványprofil sablonjában. <br><br> AltNameTypeEmail: Ez a típus nem található az SAN, ha az AltNameTypeUpn értékét használja.  Ha az AltNameTypeUpn sem található az SAN-ben, a program a tulajdonosnév értékét használja, hogyha az e-mail-cím formátumú.  Ha az érték továbbra sem található, az Intune Tanúsítvány-összekötő nem tud kiállítani tanúsítványt. <br><br> Pl.: `RFC822 Name=IWUser0@ndesvenkatb.onmicrosoft.com`  <br><br> AltNameTypeUpn: Ez a típus nem található az SAN, ha az AltNameTypeEmail értékét használja. Ha az AltNameTypeEmail sem található a SAN-ben, a program a tulajdonosnév értékét használja, hogyha az e-mail-cím formátumú.  Ha az érték továbbra sem található, az Intune Tanúsítvány-összekötő nem tud kiállítani tanúsítványt.  <br><br> Pl.: `Other Name: Principal Name=IWUser0@ndesvenkatb.onmicrosoft.com` <br><br> AltNameTypeOtherName: Ez a típus nem található az SAN, ha az Intune tanúsítvány-összekötő nem tudja kiállítani tanúsítványt. <br><br> Pl.: `Other Name: DS Object Guid=04 12 b8 ba 65 41 f2 d4 07 41 a9 f7 47 08 f3 e4 28 5c ef 2c` <br><br>  **Fontos megjegyzés:** Ez a mező értékét a Symantec hitelesítésszolgáltató csak kódolt formátumban (hexadecimális értékként) támogatja. Ezért a mezőben megadott értéket az Intune Tanúsítvány-összekötő Base 64 kódolású értékké alakítja, mielőtt elküldi a tanúsítványkérelmet. **Az Intune Tanúsítvány-összekötő nem ellenőrzi, hogy az érték már kódolva van-e.** | Egyik sem |
+| Tulajdonos alternatív neve (SAN) | Az Intune a következő SAN-mezőértékeket támogatja: <br><br> AltNameTypeEmail <br><br> AltNameTypeUpn <br><br> AltNameTypeOtherName (kódolt érték) | A Symantec felhőalapú hitelesítésszolgáltató is támogatja ezeket a paramétereket. Ha további attribútumokat szeretne kiválasztani, akkor azokhoz rögzített értéket kell definiálni a Symantec tanúsítványprofil sablonjában. <br><br> AltNameTypeEmail: Ez a típus nem található az SAN, ha az AltNameTypeUpn értékét használja.  Ha az AltNameTypeUpn sem található az SAN-ben, a program a tulajdonosnév értékét használja, hogyha az e-mail-cím formátumú.  Ha az érték továbbra sem található, az Intune Tanúsítvány-összekötő nem tud kiállítani tanúsítványt. <br><br> Pl.: `RFC822 Name=IWUser0@ndesvenkatb.onmicrosoft.com`  <br><br> AltNameTypeUpn: Ez a típus nem található az SAN, ha az AltNameTypeEmail értékét használja. Ha az AltNameTypeEmail sem található a SAN-ben, a program a tulajdonosnév értékét használja, hogyha az e-mail-cím formátumú.  Ha az érték továbbra sem található, az Intune Tanúsítvány-összekötő nem tud kiállítani tanúsítványt.  <br><br> Pl.: `Other Name: Principal Name=IWUser0@ndesvenkatb.onmicrosoft.com` <br><br> AltNameTypeOtherName: Ez a típus nem található az SAN, ha az Intune tanúsítvány-összekötő nem tudja kiállítani tanúsítványt. <br><br> Pl.: `Other Name: DS Object Guid=04 12 b8 ba 65 41 f2 d4 07 41 a9 f7 47 08 f3 e4 28 5c ef 2c` <br><br>  **Fontos megjegyzés:** Ez a mező értékét a Symantec hitelesítésszolgáltató csak kódolt formátumban (hexadecimális értékként) támogatja. Ezért a mezőben megadott értéket az Intune Tanúsítvány-összekötő Base 64 kódolású értékké alakítja, mielőtt elküldi a tanúsítványkérelmet. **Az Intune Tanúsítvány-összekötő nem ellenőrzi, hogy az érték már kódolva van-e.** | None |
 
 ## <a name="troubleshooting"></a>Hibaelhárítás
 

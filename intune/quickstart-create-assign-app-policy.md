@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5d7e63542563425606cf1f9a8509a7bf0c09b9a9
-ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58871361"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59899737"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Gyors útmutató: Alkalmazásvédelmi szabályzat létrehozása és hozzárendelése
 

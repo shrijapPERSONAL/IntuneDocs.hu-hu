@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f67ead436ff830f11ea1a2b7b14d243be58171c9
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: ae1685e2d252103591ebbe775aab32f2de017594
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400449"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59900757"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>A Készülékregisztrációs Program vagy az Apple School Manager macOS-eszközök automatikus regisztrálása
 
@@ -151,8 +151,10 @@ Most, hogy telepítette a jogkivonatot, létrehozhat egy regisztrációs profilt
     | <strong>Diagnosztikai adatok</strong> | Megjeleníti a **Diagnosztika** képernyőt. Ezen a képernyőn a felhasználó diagnosztikai adatokat küldhet az Apple-nek. |
     | <strong>FileVault</strong> | Lehetőséget nyújt a felhasználónak a FileVault-titkosítás beállítására. |
     | <strong>iCloud-diagnosztika</strong> | Lehetőséget nyújt a felhasználónak arra, hogy iCloud diagnosztikai adatokat küldhessen az Apple-nek. |
+    | <strong>iCloud Storage</strong> | Lehetővé teheti a felhasználó icloud-alapú tárolók használatához. |    
+    | <strong>Megjeleníti a képviselő hangvételét</strong> | Lehetővé teheti a felhasználó, kapcsolja be a megjelenítendő képviselő hangvételét. |
+    | <strong>Megjelenés</strong> | A Megjelenés képernyő jelenik meg a felhasználónak. |
     | <strong>Regisztráció</strong>| Kötelezi a felhasználót az eszköz regisztrálására. |
-    
    
 
 10. Válassza az **OK** gombot.

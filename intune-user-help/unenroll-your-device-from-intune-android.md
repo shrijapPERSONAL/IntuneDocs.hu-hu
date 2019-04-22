@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/04/2019
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fafd9c92a51c8ef258d151a3c19c271fdc45f4c2
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7d4030762e625e24fb0c72724473162a4ad98183
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55835860"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59900094"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>Android-eszköz regisztrációjának törlése  
 
@@ -33,6 +33,9 @@ Regisztrált Android-eszköz eltávolítása a szervezet által felügyelt eszk�
 * Az eszköz nem fog megjelenni a Céges portálon.
 * Nem telepíthet alkalmazásokat a Céges portálról.
 * Az eszközön annak regisztrálásakor módosult beállítások (például a kamera letiltása vagy meghatározott hosszúságú jelszó megkövetelése) hatályukat vesztik.  
+
+> [!NOTE]
+> Nem regisztrációját, és nem a vállalat által birtokolt eszközök eltávolítása a Microsoft Intune app. Az eszköz regisztrálva lett a kezdeti Eszközbeállítás során, és regisztrálva kell lenniük a szervezet erőforrásaihoz.  
 
 1. A Céges portálon koppintson a jobb felső sarokban található három függőleges pontra. Megnyílik a műveletmenü.
 

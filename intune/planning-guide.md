@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5b8a4a76e59604038ae133701b3378c573e862aa
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799573"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59897153"
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Útmutató az Intune üzembe helyezésének megtervezéséhez és implementálásához
 

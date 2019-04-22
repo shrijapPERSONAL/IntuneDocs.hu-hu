@@ -17,11 +17,11 @@ search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c2a94be7ebc369005f92809d57c8e55076972df3
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799265"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59900689"
 ---
 # <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>általános iOS-szolgáltatások használata az Intune-ban iOS-eszközbeállítások
 

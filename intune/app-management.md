@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/03/2019
+ms.date: 04/12/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34807edabf99a107c259fdfae5e43db18084fb67
-ms.sourcegitcommit: 219bbbfb44eba70ac2b751970d8b4b778cd28416
+ms.openlocfilehash: 8cc09f0c700316474e9b59a3bc619ee0874bd16f
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "58920249"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59900842"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>A Microsoft Intune-alkalmazásfelügyelet ismertetése
 
@@ -41,26 +41,28 @@ Az Intune számos szolgáltatással segít a szükséges alkalmazások üzembe h
 
 ## <a name="app-management-capabilities-by-platform"></a>Alkalmazás-felügyeleti szolgáltatások platform szerint
 
-|  | Android | iOS | macOS | Windows 10 | Windows Phone 8.1 |
+|  | Android/Android Enterprise | iOS | macOS | Windows 10 | Windows Phone 8.1 |
 |-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
 | Alkalmazások hozzáadása és hozzárendelése eszközökhöz és felhasználókhoz | Igen | Igen | Igen | Igen | Igen |
 | Alkalmazások hozzárendelése az Intune-ban nem regisztrált eszközökhöz | Igen | Igen | Nem | Nem | Nem |
 | Az alkalmazások indítási viselkedését vezérlő alkalmazáskonfigurációs szabályzatok használata | Igen | Igen | Nem | Nem | Nem |
 | Mobilalkalmazás-kiépítési szabályzatok használata a lejárt alkalmazások megújítására | Nem | Igen | Nem | Nem | Nem |
-| Az alkalmazásokban található vállalati adatok védelme alkalmazásvédelmi szabályzatokkal | Igen | Igen | Nem | Nem1 | Nem |
+| Az alkalmazásokban található vállalati adatok védelme alkalmazásvédelmi szabályzatokkal | Igen | Igen | Nem | Nem <sup>1</sup> | Nem |
 | Csak a vállalati adatok eltávolítása egy telepített alkalmazásból (alkalmazások szelektív törlése) | Igen | Igen | Nem | Igen | Igen |
 | Az alkalmazás-hozzárendelések monitorozása | Igen | Igen | Igen | Igen | Igen |
 | Egy alkalmazás-áruházból mennyiségi licencszerződés keretében vásárolt alkalmazások hozzárendelése és nyomon követése | Nem | Nem | Nem | Igen | Nem |
-| Az alkalmazások kötelező telepítése az eszközökön (kötelező)2 | Igen | Igen | Igen | Igen | Igen |
-| Opcionális telepítés az eszközökön a Céges portálról (elérhető telepítés) | Igen | Igen | Igen | Igen | Igen |
-| Alkalmazás telepítési hivatkozása az interneten (webes hivatkozás) | Igen | Igen | Igen | Igen | Igen |
+| Kötelező telepítése eszközökön (kötelező) alkalmazások <sup>2</sup> | Igen | Igen | Igen | Igen | Igen |
+| Opcionális telepítés az eszközökön a Céges portálról (elérhető telepítés) | Igen <sup>3</sup> | Igen | Igen | Igen | Igen |
+| Alkalmazás telepítési hivatkozása az interneten (webes hivatkozás) | Igen <sup>4</sup> | Igen | Igen | Igen | Igen |
 | Belső fejlesztésű (üzletági) alkalmazások | Igen | Igen | Igen | Igen | Nem |
 | Áruházbeli alkalmazások | Igen | Igen | Nem | Igen | Igen |
 | Alkalmazások frissítése | Igen | Igen | Nem | Igen | Igen |
 
-<sup>1</sup> Vagye fontolóra a [Windows Információvédelem](windows-information-protection-configure.md) használatát a Windows 10 rendszerű eszközökön futó alkalmazások védelmére.
+<sup>1</sup> Vagye fontolóra a [Windows Információvédelem](windows-information-protection-configure.md) használatát a Windows 10 rendszerű eszközökön futó alkalmazások védelmére.<br>
+<sup>2</sup> Csak az Intune által kezelt eszközökre vonatkozik.<br>
+<sup>3</sup> az Intune a vállalati Android-eszköz támogatja a felügyelt Google Play áruházban elérhető alkalmazások.<br>
+<sup>4</sup> az Intune nem biztosít egy helyi telepítése egy alkalmazáshoz a szokásos vállalati Android-eszköz webes hivatkozásként. Azonban webes hivatkozás támogatja-e a [többalkalmazásos dedikált, vállalati Android-eszköz](device-restrictions-android-for-work.md#dedicated-device-settings). 
 
-<sup>2</sup> Csak az Intune által kezelt eszközökre vonatkozik.
 
 ## <a name="get-started"></a>Bevezetés
 

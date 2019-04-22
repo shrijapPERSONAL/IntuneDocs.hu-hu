@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 06/27/2017
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,20 +18,20 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 08eb5c3d2f306fef6f867fbe9f3976cb7a5aea80
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 9a43b574c4bf0daf90e30690f95f6f497b441bc1
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55837850"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59898071"
 ---
 # <a name="install-the-company-portal-app-for-android"></a>A Céges portál alkalmazás telepítése Androidhoz
 
-A Céges portál alkalmazás hozzáférést biztosít a munkahelyi és az iskolai alkalmazásokhoz, valamint a levelezéshez és az internetkapcsolatokhoz. Ez az alkalmazás az ön eszköze biztonságának garantálásával munkahelye információinak is védelmet nyújt − például naprakészen tarja a vállalati alkalmazásait vagy gondoskodik róla, hogy az eszköze egy bizonyos idő elteltével lezárja magát. A Céges portál alkalmazás úgy képes erre, hogy segítségére van az [eszközének Microsoft Intune-ban történő regisztrálásában](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md).
+A Céges portál alkalmazás hozzáférést biztosít a munkahelyi és az iskolai alkalmazásokhoz, valamint a levelezéshez és az internetkapcsolatokhoz. Ez az alkalmazás az ön eszköze biztonságának garantálásával munkahelye információinak is védelmet nyújt − például naprakészen tarja a vállalati alkalmazásait vagy gondoskodik róla, hogy az eszköze egy bizonyos idő elteltével lezárja magát. A céges portál és a kezelés része szolgáltatásaival kapcsolatos további tudnivalókért lásd: [miért érdemes regisztrálni az Androidos eszköz](why-enroll-android-device.md).  
 
 1.  Kattintson a **Home** (Kezdőképernyő) > **Play Store** (Play Áruház) elemre.
 
-2.  A **Search** (Keresés) mezőbe írja be az **intune company portal** (intune céges portál) kifejezést.
+2.  Az a **keresési** mezőbe írja be **Intune vállalati portál**.  
 
 3.  Koppintson az **Intune Céges portál** elemre.
 
@@ -45,6 +45,6 @@ A Céges portál alkalmazás hozzáférést biztosít a munkahelyi és az iskola
 
     ![android-accept-company-portal-terms](./media/and-cpinstall-3-cp-accept.png)
 
-Miután letöltötte a Céges portál alkalmazást, a munkahelyi információkhoz való teljes hozzáférés érdekében minden bizonnyal [regisztrálni szeretné eszközét Intune-ban](enroll-your-device-in-Intune-android.md). További lehetőség: [Bejelentkezés más eszköz használatával](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device).
+Miután letöltötte a céges portál alkalmazást, valószínűleg érdemes [-eszköz regisztrálása az Intune-ban](enroll-device-android-company-portal.md) való teljes hozzáférés a munkahelyi információkhoz. További lehetőség: [Bejelentkezés más eszköz használatával](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device).  
 
 További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

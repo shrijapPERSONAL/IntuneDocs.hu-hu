@@ -17,11 +17,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5feec66e791da4038bd069cdad69a7ba573f27f3
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798377"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59897051"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>engedélyezi, vagy korlátozhatja a funkciókat az Intune-nal macOS beállításai
 
@@ -57,7 +57,7 @@ Ezek a beállítások hozzá egy eszközkonfigurációs profilt az Intune-ban, �
     Ez a funkció az alábbiakra vonatkozik:  
     - macOS 10.13.4 és újabb verziók
 
-## <a name="password"></a>Jelszó
+## <a name="password"></a>Windows 10
 
 - **Jelszó**: **Szükséges** a végfelhasználó számára adjon meg egy jelszót az eszköz elérésére. **Nincs konfigurálva** (alapértelmezett) nincs szükség a jelszó, és nem kényszerített korlátozásokat, például az egyszerű jelszavak blokkolása vagy beállítás minimális hosszát.
   - **Kötelező jelszótípus**: Adja meg, hogy a jelszó is csak numerikus lehet, vagy hogy Alfanumerikusnak kell lennie (betűket és számokat tartalmazhat). Ezt a beállítást csak a Mac OS X 10.10.3-as és újabb verziói támogatják.

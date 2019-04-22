@@ -1,11 +1,11 @@
 ---
-title: A cég informatikai támogatási szolgálatának segítése az eszközproblémák megoldásában részletes naplózással | Microsoft Docs
+title: Naplózási beállítások konfigurálása az Intune-alkalmazások |} A Microsoft Docs
 description: A cég informatikai támogatási szolgálatának segítése az eszközproblémák megoldásában részletes naplózással
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/23/2017
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,21 +14,38 @@ ms.assetid: 2a9183a6-b40d-4132-a1ce-61ce0f1c23aa
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: arnab
+ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3b0eb38b92ff5c18d58cf6ebe6f31e4b8a320dd9
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: 75b4b4ce88eb11e817175bc7d7a22a25c04d88b8
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991026"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59900400"
 ---
-# <a name="help-your-company-support-fix-device-issues-with-verbose-logging"></a>A cég informatikai támogatási szolgálatának segítése az eszközproblémák megoldásában részletes naplózással
+# <a name="configure-logging-settings"></a>Naplózási beállítások konfigurálása
 
-Miután regisztrálta androidos eszközét az Intune-ban, a *Részletes naplózás* beállítással megadhatja, hogy a Vállalati portál alkalmazás és az Intune által kezelt alkalmazások részletes naplókban rögzítsék az eszközön zajló műveleteket. Ezekkel a naplókkal a cég informatikai támogatási szolgálata meg tudja oldani a céges portál vagy az Intune által kezelt alkalmazások használatakor fellépő esetleges problémákat. A Részletes naplózás beállítás alapértelmezés szerint engedélyezve van az eszközön, a cég informatikai támogatási szolgálatának elküldött naplókban pedig szerepel a felhasználó e-mail-címe.
+Ahhoz, hogy a vállalati portál alkalmazást, a Microsoft Intune app és az Intune által felügyelt alkalmazások rekord app-műveletek naplózási beállításainak konfigurálásához. Ha egy probléma az alkalmazásban minden eddiginél merül fel, és jelentést készít, a támogatási csapat áttekinti az ezeket a naplókat a további részletekért. 
 
-A részletes naplózás be- vagy kikapcsolásához jelentkezzen be a Vállalati portál alkalmazásba a munkahelyi vagy az iskolai fiókjával, koppintson a **Beállítások** elemre, és kapcsolja be vagy ki a **Részletes naplózás** beállítást.
+> [!NOTE]
+> A támogatási csapat az elküldött naplók tartalmazni fogják az e-mail-címét.  
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).
+## <a name="configure-company-portal-logging"></a>Céges portál-naplózás beállítása
+Részletes naplózás minden, a végrehajtandó művelet rögzíti a céges portál alkalmazásban. Ez az eszköz alapértelmezés szerint engedélyezve van. Kapcsolja be a részletes naplózás a vállalati portálon:  
+
+1. Bejelentkezés a Vállalati portál alkalmazásba.
+2. Koppintson a **beállítások**.
+3. A **részletes naplózás**, a Váltás a tükrözés **ki**.
+
+## <a name="configure-microsoft-intune-app-logging"></a>A Microsoft Intune alkalmazás-naplózás beállítása
+A Microsoft Intune app a napló részletességi szint is beállíthatja. A szint az alapértelmezett **fontos**. Részletes naplózás beállításához:  
+
+1. Nyissa meg a Microsoft Intune-alkalmazást.  
+2. Koppintson a **beállítások**.  
+3. Alatt **szintű részletes jelentkezzen**válassza **részletes** rögzített részletek szintjének növelése, vagy válasszon **ki** naplózási kikapcsolása.  
+
+## <a name="next-steps"></a>További lépések  
+
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).  

@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 92262a9d1f07b8756ced8788feee586ffa30088a
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798801"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59900451"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Windows-számítógépes szoftverek licencszerződéseinek kezelése a Microsoft Intune-ban
 
@@ -182,7 +182,7 @@ A szoftverlicenc-szerződéseket licenccsoportokhoz lehet hozzáadni. A licenccs
 
 |                            |                                                                                                                                                                                                                                                                                                                                                                          |
 |----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|            Művelet            |                                                                                                                                                                                 Részletek                                                                                                                                                                                  |
+|            Tevékenység            |                                                                                                                                                                                 Részletek                                                                                                                                                                                  |
 |   Licenccsoport létrehozása   |                                                            A <strong>Licencek</strong> munkaterület <strong>Áttekintés</strong> lapján válassza a <strong>Feladatok</strong> menü <strong>Licenccsoport létrehozása</strong> parancsát. <strong>Megjegyzés:</strong> Összesen legfeljebb 500 licenccsoportot hozhat létre.                                                             |
 |   Licenccsoport átnevezése   |                                                                                                      Válasszon egy licenccsoportot a <strong>Licencek</strong> munkaterületen, majd válassza a <strong>Feladatok</strong> menü <strong>Licenccsoport szerkesztése</strong> elemét.                                                                                                       |
 |   Licenccsoport törlése   |                                 Válasszon egy licenccsoportot a <strong>Licencek</strong> munkaterületen, majd válassza a <strong>Feladatok</strong> menü <strong>Licenccsoport törlése</strong> parancsát. <strong>Tipp:</strong> A törölt csoportban lévő összes licenc helyezik át a <strong>hozzá nem rendelt szerződések</strong> licenccsoporthoz.                                 |

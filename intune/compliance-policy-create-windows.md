@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/04/2019
+ms.date: 04/09/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d956526d483a74ca5929180a48ea2dcd8b3eab7
-ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.openlocfilehash: 102c440e378549205877787b0bba126abd613fd3
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59423628"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59895246"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Windows 10-es és újabb beállításai eszközök megjelölése a megfelelő vagy nem megfelelő, az Intune-nal
 
@@ -127,6 +127,10 @@ Csak Windows 10 és újabb operációs rendszert futtató közösen kezelt eszk�
 
 ### <a name="device-security"></a>Eszközbiztonság
 
+- **Platformmegbízhatósági modul (TPM)**: Ha a beállítása **megkövetelése**, az Intune ellenőrzi az verzióját, a megfelelőség. Az eszköz nem megfelelőnek, ha a TPM-lapka verzió nagyobb, mint 0 (nulla). Az eszköz nem megfelelőnek, ha nincs TPM-verzió az eszközön. Amikor **nincs konfigurálva**, az Intune nem ellenőrzi az eszköz TPM-lapka verzió esetében.
+
+  [DeviceStatus CSP - DeviceStatus/TPM/SpecificationVersion csomópont](https://docs.microsoft.com/windows/client-management/mdm/devicestatus-csp)
+  
 - **A víruskereső**: Ha beállítása **megkövetelése**, ellenőrizheti a megfelelőségi regisztrált vírusvédelmi megoldások használatával [Windows biztonsági központban](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/), például a Symantec és a Windows Defender. A **Nincs konfigurálva** beállítás esetén az Intune nem ellenőrzi az eszközön telepített vírusvédelmi megoldásokat.
 - **Kémprogram-elhárító**: Ha beállítása **megkövetelése**, ellenőrizheti a megfelelőségi regisztrált kémprogram-elhárító megoldásokkal [Windows biztonsági központban](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/), például a Symantec és a Windows Defender. A **Nincs konfigurálva** beállítás esetén az Intune nem ellenőrzi az eszközön telepített kémprogram-elhárító megoldásokat.
 

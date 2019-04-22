@@ -17,11 +17,11 @@ ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 15f908a34f0a9315552acfad56cbf560a23fa26d
-ms.sourcegitcommit: e63e3debb5f4d9a757f767913e72e39742137b17
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58788445"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59896065"
 ---
 # <a name="what-is-device-management"></a>Mi az eszközkezelés? 
 
@@ -51,7 +51,7 @@ A **[Gyakori helyzetek](https://docs.microsoft.com/intune/common-scenarios)** ki
 - Vállalati erőforrások elérése személyes eszközökkel
 
 ## <a name="integration-with-secure-and-protect-services"></a>Integráció biztonsági és védelmi szolgáltatásokkal
-Minden eszközkezelési megoldás fő feladata a biztonság és a védelem. Az Intune erőssége a más szolgáltatásokkal való integráció, ennek a feladatnak a szolgálatában. Például:
+Minden eszközkezelési megoldás fő feladata a biztonság és a védelem. Az Intune erőssége a más szolgáltatásokkal való integráció, ennek a feladatnak a szolgálatában. Példa:
 
 - A **Microsoft 365** kulcsszerepet játszik a gyakori informatikai feladatok egyszerűsítésében. A Microsoft 365 felügyeleti központban, felhasználók, csoportok létrehozásához és kezeléséhez. Hogy is elérheti a más szolgáltatások, például az Intune, Azure AD-ben stb. 
 

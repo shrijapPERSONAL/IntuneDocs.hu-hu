@@ -17,11 +17,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6f1cdacf4b4d26e9db9b4090805f697927a399c5
-ms.sourcegitcommit: 9daaeba9a960c50efcc951856234fbfec3635737
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59231807"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59899975"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>SCEP-tanúsítványok konfigurálása és használata az Intune-nal
 
@@ -64,7 +64,7 @@ Az NDES-kiszolgálót egy fordított proxyn keresztül, például az [Azure AD-a
 
 ### <a name="certificates-and-templates"></a>Tanúsítványok és sablonok  
 
-|Objektum|Részletek|
+|Object|Részletek|
 |----------|-----------|
 |**Tanúsítványsablon**|Ez a sablon a vállalati hitelesítésszolgáltatón konfigurálható.|
 |**Ügyfél-hitelesítési tanúsítvány**|A vállalati vagy nyilvános hitelesítésszolgáltatótól lekért tanúsítvány, melyet az NDES-kiszolgálóra kell telepítenie.|
@@ -225,7 +225,7 @@ Ebben a lépésben a következőket fogja elvégezni:
 3. Az NDES-kiszolgálóra rendkívül hosszú URL-címek (lekérdezések) érkeznek, melyekhez két beállításjegyzékbeli bejegyzést kell felvennie:
 
 
-   |                        Hely                        |      Value      | Typo  |      Adatok       |
+   |                        Location egység                        |      Value      | Typo  |      Adatok       |
    |--------------------------------------------------------|-----------------|-------|-----------------|
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (decimális) |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (decimális) |

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4dc68071886b8f2a0852feb69bf78c2c265f046d
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.openlocfilehash: 4e099470140672a45948391cb0cf7c243f6fb84d
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292502"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59894609"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Az eszközök Microsoft Intune-ban eszközprofilok segítségével szolgáltatásainak és beállításainak alkalmazása
 
@@ -221,7 +221,15 @@ Ez a funkció a következőket támogatja:
 
 Ez a funkció a következőket támogatja:
 
-- Android
+- Android (mobilitási bővítmények)
+
+## <a name="oemconfig"></a>OEMConfig
+
+[OEMConfig](android-oem-configuration-overview.md) egy szabvány, amely lehetővé teszi a számítógépgyártók (az eredeti berendezésgyártók) és a EMMs (enterprise mobility management) hozhat létre, és egységes módon támogatják az OEM-specifikus szolgáltatását vállalati Android-eszköz. Az OEM OEMConfig, létrehoz egy sémát, amely meghatározza az OEM-specifikus felügyeleti funkciókat, és beágyazza a Google Play feltöltött egy alkalmazásban. Intune az alkalmazás olvassa be a séma lehetővé teszi, hogy a beállítások konfigurálása a sémában az Intune-rendszergazdák.
+
+Ez a funkció a következőket támogatja:
+
+- Android Enterprise (OEMConfig)
 
 ## <a name="custom-profile"></a>Egyéni profil
 

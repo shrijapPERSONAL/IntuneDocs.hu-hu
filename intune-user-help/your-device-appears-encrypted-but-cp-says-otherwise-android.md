@@ -1,11 +1,11 @@
 ---
 title: Úgy tűnik, hogy az androidos eszköze titkosított | Microsoft Docs
-description: ''
+description: Oldja meg a titkosítási állapot és a Microsoft Intune céges portál alkalmazásban
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,60 +18,55 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 55935b2f69f9573d8df5ea5ca32fb4587c652b26
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f8c35400f37ab4ddee275cf23f7a50f280322e3b
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389467"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59898672"
 ---
-# <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Úgy tűnik, hogy az androidos eszköze titkosított, de a Céges portál nem így gondolja
+# <a name="device-encrypted-but-apps-say-otherwise"></a>Az eszköz titkosított, de alkalmazásokat tegyük fel, ellenkező esetben
 
-Az eszköz titkosításakor egy, csak Ön által ismert titkos kulcs használatával kódolja a rajta lévő információt. Ez megakadályozza, hogy jogosulatlan személyek férhessenek hozzájuk. Számos szervezet megköveteli a felhasználóitól Android-eszközeik titkosítását a vállalati fájlok, e-mailek vagy adatok eléréséhez.
+Ha a vállalati portál vagy a Microsoft Intune app tegyük fel, hogy az eszköz nincs titkosítva, de biztos benne, hogy éppen, próbálja meg a jelen cikkben ismertetett lépések.  
 
-## <a name="common-issues"></a>Gyakori problémák
+## <a name="add-a-startup-pin"></a>Indítási PIN-kód hozzáadása
 
-Az Android új verziói, különösen is a 7.0 és későbbi verziók indítási PIN-kód használatát követelik meg annak érdekében, hogy az eszköz teljes mértékben titkosított legyen. A különféle eszközgyártók az indítási PIN-kódra különféle leírásokat adnak meg, és különféle helyeken kérhetik azt. A legtöbbször ezt a beállítást „Biztonságos indításnak” hívják. 
+Egyes Android-eszközök indítási PIN-kód létrehozását teszik kötelezővé az eszköz biztonsága érdekében. Az eszköz helyét, ez a beállítás lesz **beállítások** alkalmazást. A nevének és helyének beállítás eltérőek lehetnek. Például a Samsung Galaxy S7, a beállítás a neve **biztonságos indításnak**. Az engedélyezéshez és a egy PIN-kód létrehozása, **beállítások** > **zárolási képernyő és biztonság** > **biztonságos indításnak**.  
 
-## <a name="solutions"></a>Megoldások
+## <a name="encrypt-the-entire-device"></a>Titkosítsa a teljes eszközt
 
-### <a name="add-a-startup-pin"></a>Indítási PIN-kód hozzáadása
+Ez a szakasz csak a vállalati portál alkalmazás vonatkozik. Egyes eszközök esetében választható a teljes eszköz titkosítása vagy csak a használatban lévő tárterület titkosítása. Válassza ki a lehetőséget a teljes eszköz titkosítását. Ha azt választotta, hogy csak a használatban lévő tárterület titkosítása:
 
-Egyes Android-eszközök indítási PIN-kód létrehozását teszik kötelezővé az eszköz biztonsága érdekében. Az Android rendszer különféle verziói érhetőek el számos különféle gyártótól. Lehetséges, hogy ezt a problémát megoldhatja, ha a megkeresi ezt a beállítási lehetőséget a beállításokat végző alkalmazásban. A Samsung Galaxy S7 eszközökön például a biztonságos indítást a **Beállítások** > **Képernyőzár és biztonság** > **Biztonságos indítás** területen engedélyezheti.  
+1. [Eltávolítja az eszközt a vállalati portálról](unenroll-your-device-from-intune-android.md).
+2. A használatban lévő tárterület visszafejteni.  
+3. Eszköz teljes titkosítása.  
+4. Regisztrálja újra az eszközt.  
 
-### <a name="encrypt-the-entire-device"></a>Titkosítsa a teljes eszközt
+## <a name="downgrade-your-version-of-android"></a>Az Android alacsonyabb verzióra való visszaléptetése
 
-Egyes eszközök esetében választható a teljes eszköz titkosítása vagy csak a használatban lévő tárterület titkosítása. A „csak a használatban lévő tárterület titkosítása” lehetőség helyett válassza a teljes eszköz titkosítását. Ha már megtörtént a csak a használatban lévő tárterület titkosítása:
-
-1. [Távolítsa el ezt az eszközt a Céges portálról](unenroll-your-device-from-intune-android.md)
-2. Fejtse vissza a használatban lévő tárterületet
-3. Titkosítsa a teljes eszközt
-4. Regisztrálja újra az eszközt
-
-### <a name="downgrade-your-version-of-android"></a>Az Android alacsonyabb verzióra való visszaléptetése
-
-Ha az eszköz felkínálja az Android egy alacsonyabb, 6.0-s vagy újabb verziójára való visszalépés lehetőségét, használja azt. Amennyiben egy alacsonyabb verzióra való visszalépést kell megkísérelni az eszközön, az adatvesztési kockázattal jár. Ellenkező esetben javasoljuk, hogy a probléma megoldásához lépjen kapcsolatba a cég informatikai támogató szolgálatával. A cég informatikai támogató szolgálatának kapcsolattartási adatait a [Céges portál webhelyen](https://go.microsoft.com/fwlink/?linkid=2010980) a kapcsolattartási adatoknál találja.
+Ez a szakasz csak a vállalati portál alkalmazás vonatkozik. Ha az eszköz felkínálja a lehetőséget, alacsonyabb szolgáltatásszintre váltásához az Android 6.0-s és újabb verziók, használja azt. Ha alacsonyabb szolgáltatásszintre váltásához az eszköz megpróbálja, nincs adatvesztés kockázatát. Ellenkező esetben javasoljuk, hogy a probléma megoldásához lépjen kapcsolatba a cég informatikai támogató szolgálatával. A cég informatikai támogatási szolgálatának kapcsolattartási adatait szerezni a [céges portál webhelyen](https://go.microsoft.com/fwlink/?linkid=2010980).  
 
 ## <a name="specific-manufacturer-issues"></a>Gyártóspecifikus problémák
 
-Néhány, 7.0-s vagy újabb Android-verzióval működő eszköz az androidos platformra vonatkozó bizonyos szabványokkal inkonzisztens módon titkosítja az adatokat. Ezek az eszközök akkor is titkosítottnak tűnhetnek, ha vadonatújak. Az Intune felismeri, hogy ezen eszközök titkosítási módszerei veszélynek teszik ki az eszközadatokat. A kockázatot elsősorban az eszközhöz való fizikai hozzáféréssel rendelkező rosszindulatú felhasználók jelentik.
+Néhány Android-eszközök a 7.0-s és újabb titkosítja az adatokat, hogy egyes Android-platformtól szabványok nem konzisztens. Ezek az eszközök akkor is titkosítottnak tűnhetnek, ha vadonatújak. Az Intune felismeri, hogy ezen eszközök titkosítási módszerei veszélynek teszik ki az eszközadatokat. A kockázatot elsősorban az eszközhöz való fizikai hozzáféréssel rendelkező rosszindulatú felhasználók jelentik.
 
 > [!Note]
 > A Microsoft együttműködik a gyártókkal a tesztelés közben feltárt vagy a felhasználók által jelzett problémák elhárítása érdekében. Ezt a cikket folyamatosan frissítjük, ha új információk állnak rendelkezésünkre. 
 
-## <a name="known-devices"></a>Ismert eszközök
+## <a name="update-known-devices"></a>Ismert eszközök frissítése   
 
-### <a name="known-devices-that-can-be-updated-to-fix-this-issue"></a>A probléma elhárítása érdekében frissíthető ismert eszközök
-
-Ha az eszköz Android legújabb verziójára még nem frissítette, nyissa meg az eszköz **beállítások** alkalmazást, és válassza **frissítés**. Ezek az eszközök például nem megfelelő jelenhet meg amíg nem frissíti:  
+Ha az eszköz Android legújabb verziójára még nem frissítette, nyissa meg az eszköz **beállítások** alkalmazást, és válassza **frissítés**. Ezek az eszközök nem jelenhet megfelelő, amíg nem frissíti őket.  
 
 - Huawei Honor 8
 - Huawei P9
 
-### <a name="known-devices-that-currently-cannot-be-updated-to-fix-this-issue"></a>A probléma elhárítása érdekében jelenleg nem frissíthető ismert eszközök
+## <a name="known-devices-that-always-appear-encrypted"></a>Mindig megjelennek a titkosított ismert eszközök  
 Az alábbi eszközök mindig megjelenik a titkosított, és nem használható a vállalati erőforrások eléréséhez. Vállalati erőforrások eléréséhez másik eszközt kell használnia.  
 
 - Huawei Mate 8
 - OPPO eszközök
 - Vivo eszközök
-- Xiaomi Mi okostelefonok
+- Xiaomi Mi okostelefonok  
+
+## <a name="next-steps"></a>További lépések   
+További segítségre van szüksége? Forduljon a cég informatikai támogatási szolgálatához (a kapcsolattartási adatokat a [céges portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980) találja), vagy írjon a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-csapatának</a>.  

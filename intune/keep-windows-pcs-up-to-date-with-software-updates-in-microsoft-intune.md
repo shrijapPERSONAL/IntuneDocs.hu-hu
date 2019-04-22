@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 68f8b814084328fdc5aed954cb71b9ce8dcedc63
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798951"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59894756"
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Windows rendszerű számítógépek naprakészen tartása szoftverfrissítésekkel a Microsoft Intune-ban
 
@@ -203,7 +203,7 @@ A **Szűrők** lista használatával könnyebben megtalálhatja a frissítéseke
 
 Amikor kiválaszt egy frissítést a listáról, az alábbi táblázatban szereplő további parancsok is elérhetők, melyekkel kezelheti a frissítéseket:
 
-|Művelet|Részletek|
+|Tevékenység|Részletek|
 |--------|--------------------|
 |**Tulajdonságok megtekintése**|A frissítés részletes adatainak megtekintése, beleértve azon számítógépek darabszámát, melyeken alkalmazható.|
 |**Szerkesztés**|Csak a nem a Microsoft által készített frissítésekhez használható. A frissítések tulajdonságainak szerkesztését teszi lehetővé.|

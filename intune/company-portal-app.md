@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 33f24a3d7b30973855bb303bb97bf703cd4dc5fa
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798250"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59895408"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>A Microsoft Intune Céges portál alkalmazásának konfigurálása
 
@@ -121,7 +121,7 @@ A végfelhasználók a Windows céges portál (megoldásgyorsítók) billentyűp
 
 A következő billentyűparancsok érhetők el a Windows Céges portál alkalmazásban.
 
-| Eszköz / terület | Leírás | Billentyűparancs |
+| Terület | Leírás | Billentyűparancs |
 |:------------------:|:--------------:|:-----------------:|
 | Navigációs menü | Navigáció | Alt+M |
 |  | Otthoni | Alt+H |

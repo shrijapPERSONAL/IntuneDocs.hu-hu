@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,17 +18,21 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9354c6019821a3d320c9bc50589ce420e969581
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: dc47b7af50093af356c0f2da1a765160ee567d0a
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55847454"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59896694"
 ---
 # <a name="turn-off-microsoft-usage-data-collection"></a>A használatra vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása
 
-A Microsoft automatikusan gyűjt bizonyos adatokat a termékeiről és szolgáltatásairól. Ezt annak érdekében tesszük, hogy javítsuk a termékeink, többek között a Céges portál, megbízhatóságát és teljesítményét. Annak ellenére, hogy ezek az adatok anonimok, előfordulhat, hogy néhány felhasználó nem járul hozzá ezek gyűjtéséhez. A cég informatikai támogatási szolgálata nem tudja befolyásolni ezeknek az adatoknak a gyűjtését, és az adatgyűjtésre vonatkozó felhasználói beállítást sem tudja módosítani.
+A Microsoft automatikusan gyűjt bizonyos adatokat, termékekről és szolgáltatásokról. Az adatok megbízhatóságának és teljesítményének alkalmazás, például a céges portál és a Microsoft Intune segítségével. Annak ellenére, hogy ezek az adatok anonimok, előfordulhat, hogy néhány felhasználó nem járul hozzá ezek gyűjtéséhez. A szervezete nem rendelkezik az adatoknak a gyűjtését felett, és nem módosíthatják a választását beállítás.   
 
-Ha szeretné kikapcsolni ezeknek az adatoknak a gyűjtését az Android-eszközén, nyissa meg a Céges portál alkalmazás **Használati adatok** beállítását.
+Tiltsa le az adatgyűjtést az Android-eszközön:  
+
+1. Nyissa meg a céges portál vagy a Microsoft Intune-alkalmazást.
+2. Válassza ki **beállítások**.
+3. A használati adatok beállítása, a Tükrözés a kapcsolót a kikapcsolt állásba. 
 
 További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).
