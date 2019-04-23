@@ -19,11 +19,11 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 627cabb14def14494ca258fbc9ac7ebf736b10da
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55834381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61504468"
 ---
 # <a name="rename-device-from-the-company-portal-app-for-windows"></a>Eszköz átnevezése a Windows Céges portál alkalmazásból
 Ha átnevez egy eszközt, azt könnyebben felismerik más eszközök. A Windows Céges portál alkalmazással a következő típusú csatlakoztatott eszközöket nevezhet át:  

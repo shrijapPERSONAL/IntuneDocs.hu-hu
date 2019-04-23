@@ -19,10 +19,10 @@ ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 98e2229194287ff644e9503fa21c9536cbff4734
 ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 04/23/2019
-ms.locfileid: "60164039"
+ms.locfileid: "61507307"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Szerepköralapú hozzáférés-vezérlés (RBAC) a Microsoft Intune-nal
 
@@ -59,12 +59,12 @@ Saját szerepköröket is létrehozhat egyéni engedélyekkel. Egyéni szerepkö
 | --- | :---: | :---: |
 | Globális rendszergazda | Olvasási/írási | Olvasási/írási |
 | Intune szolgáltatás rendszergazdája | Olvasási/írási | Olvasási/írási |
-| Feltételes hozzáférésű rendszergazda | None | Nincsenek |
+| Feltételes hozzáférésű rendszergazda | Nincsenek | Nincsenek |
 | Biztonsági rendszergazda | Csak olvasható | Csak olvasható |
 | Biztonsági operátor | Csak olvasható | Csak olvasható |
 | Biztonsági olvasó | Csak olvasható | Csak olvasható |
-| Szabályozási ügyintéző | None | Csak olvasható |
-| Megfelelőségi adatok rendszergazda | Nincsenek | Csak olvasható |
+| Szabályozási ügyintéző | Nincsenek | Csak olvasható |
+| Megfelelőségi adatok rendszergazda | None | Csak olvasható |
 
 > [!TIP]
 > Intune-ban három olyan Azure AD-bővítmény látható: **Felhasználók**, **csoportok**, és **feltételes hozzáférési**, amely Azure AD RBAC segítségével szabályozhat. A **Felhasználóifiók-adminisztrátori** szerepkör csak az Azure AD-felhasználói vagy -csoporttevékenységek végrehajtására jogosít fel, és nem biztosít teljes körű engedélyt az összes Intune-beli tevékenységhez. További információkért lásd: [az Azure AD RBAC](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).

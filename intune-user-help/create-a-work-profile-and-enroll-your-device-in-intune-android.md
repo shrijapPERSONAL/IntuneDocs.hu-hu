@@ -19,11 +19,11 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 29928023abc2d6119bb318bbe046e954288ebaa3
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59896515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61497754"
 ---
 # <a name="enroll-device-with-android-work-profile"></a>Androidos munkahelyi profillal rendelkező eszköz regisztrálása
 
