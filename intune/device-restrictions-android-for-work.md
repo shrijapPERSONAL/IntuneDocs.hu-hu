@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 528ed184a39f687cf075c9cd779cceee6ad04a47
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: MT
+ms.openlocfilehash: 4840ccac35f37e956c363a1f6103da623ef27782
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59898257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60164158"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Android Enterprise eszközbeállítások engedélyezett vagy korlátozott funkciók az Intune-nal
 
@@ -120,7 +120,16 @@ Ezek a beállítások használatával az dedikált eszközök kioszk stílusú f
     - **Hagyja meg a teljes képernyős mód kód**: Adjon meg egy 4 – 6 számjegyű numerikus PIN-kód. A rendszergazda ideiglenesen letilthatja a teljes képernyős mód a PIN-kódot használja.
 
   - **Állítsa be az egyéni URL-cím hátterének**: Adja meg a dedikált eszközön a háttérben futó képernyő testreszabása URL-CÍMÉT.
-
+    
+    > [!NOTE]
+    > A legtöbb esetben javasoljuk, hogy a képekkel, legalább a következő méret:
+    >
+    > - Telefonszám: 1080x1920 px
+    > - Tábla: 1920x1080 px
+    >    
+    > A legjobb élményt és éles részletei javasolt, hogy minden eszköz lemezképen eszközök hozhatók létre a megjelenítési előírásainak.
+    >
+    > Rendelkezik képpontos magasabb sűrűség és megjelenítheti a 4K egyenértékű 2K/definíció lemezképek modern jeleníti meg.
   - **Wi-Fi konfiguráció**: Válasszon **engedélyezése** , hogy a végfelhasználók számára, hogy az eszköz csatlakoztatása a különböző Wi-Fi-hálózatok. Emellett a funkció engedélyezése bekapcsolja az eszköz helyét. **Nincs konfigurálva** (alapértelmezett) megakadályozza, hogy a felhasználók a felügyelt kezdőlap képernyő (zárolás feladat mód) a Wi-Fi hálózatokhoz való csatlakozás.
 
     A több [zárolási feladat mód](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (az Android a webhely nyílik meg).

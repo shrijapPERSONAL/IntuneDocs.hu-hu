@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02e2e76af49887242be1625adf4641ebb324e7b7
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: MT
+ms.openlocfilehash: e642573311d1452a970dce798dabdc705e4a44f7
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59899550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60164073"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Automatizált e-mailek és műveletek nem megfelelő eszközök hozzáadása az Intune-ban
 
@@ -39,15 +39,6 @@ Többféle művelet használható:
 - **A nem megfelelő eszköz távoli zárolása**: A szabályzatoknak nem megfelelő eszközök esetén a távoli zárolás adhat ki. A felhasználótól az eszköz PIN-kódot vagy jelszót fog kérni az eszköz feloldásához. További információ a [Távoli zárolás](device-remote-lock.md) funkcióról. 
 
 - **Eszköz megjelölése nem megfelelőként**: Ütemezés létrehozása (a napok száma) után az eszköz akkor nem megfelelőként megjelölve. A műveletet konfigurálhatja azonnali kezdettel, de meghatározhat egy türelmi időszakot is a megfelelőséghez.
-
-- **A nem megfelelő eszközök kivonása**: Ez a művelet eltávolítja az összes vállalati adat ki az eszközt, és eltávolítja az eszközt az Intune-felügyelet. Az eszköz véletlen törlés megelőzése érdekében ez a művelet egy 30 napos minimális ütemezés támogatja. A következő platformokat támogatja ezt a műveletet:
-   - Android
-   - iOS
-   - macOS
-   - Windows 10 mobil verzió
-   - Windows Phone 8.1 és újabb verziók  
-
-  Tudjon meg többet [eszközök kivonásáról](devices-wipe.md#retire).
 
 Ez a cikk a következőkhöz nyújt útmutatást:
 
@@ -116,7 +107,7 @@ További műveletet akkor vehet fel, ha megfelelőségi szabályzatot hoz létre
     - **A nem megfelelő eszközök kivonása**: Amikor az eszköz nem megfelelő, távolítsa el az összes vállalati adat ki az eszközt, és távolítsa el az eszközt az Intune felügyelete. Az eszköz véletlen törlés megelőzése érdekében ez a művelet támogatja minimális ütemezés **30** nap.  
 
     
-5. Konfigurálja a **ütemezés**: Adja meg a nap (0 és 365 között), a felhasználók eszközein a műveletet nem megfelelő állapot kezdete után. (*Kivonja a nem megfelelő eszközt* minimum 30 napig támogatja.) A türelmi időszak után kényszerítheti a feltételes hozzáférési szabályzatot. Ha megad **0** (nulla) számot nap, akkor a feltételes hozzáférés érvénybe **azonnal**. Például azonnal letilthatja a vállalati erőforrásokhoz való hozzáférést egy eszköz meg nem felelése esetén.
+5. Konfigurálja a **ütemezés**: Adja meg a nap (0 és 365 között), a felhasználók eszközein a műveletet nem megfelelő állapot kezdete után. A türelmi időszak után kényszerítheti a feltételes hozzáférési szabályzatot. Ha megad **0** (nulla) számot nap, akkor a feltételes hozzáférés érvénybe **azonnal**. Például azonnal letilthatja a vállalati erőforrásokhoz való hozzáférést egy eszköz meg nem felelése esetén.
 
 6. Ha elkészült, kattintson a **Hozzáadás** > **OK** elemre a módosítások mentéséhez.
 

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/23/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1c9028d3b8e69c8f20e264f99bd4bf8fda6c9050
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: MT
+ms.openlocfilehash: a18c579853b162024aaa93d5dad2bfd854d8c0d2
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59900774"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60164056"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>A figyelő a BitLocker és az eszköz titkosítása  
 Az Intune kínál egy központi helyen, azonosíthatja a Windows 10 rendszerű eszközök titkosítási állapotát, és elérhetővé teszi a BitLocker vonatkozó fontos információk az eszközök, az Azure Active Directoryban (Azure AD) formában.  
@@ -42,7 +42,16 @@ A titkosítási jelentésben jelennek meg, hogy egy eszköz kell futtatnia Windo
 A jelentés megjeleníti a **eszköznév** a Windows 10-eszközök és a magas szintű részleteit, köztük:  
 - **Operációsrendszer-verzió** – a Windows verzió.  
 - **TPM-verzió** – a platformmegbízhatósági modul (TPM) nehézségekbe ütközhet az eszközön lévő verziója.  
-- **Titkosítási készültségi** – eszközök készen áll-e BitLocker-titkosítást támogató értékelését. Egy eszköz rendelkezhet egy titkosítási állapotát *titkosított* annak ellenére, hogy a titkosítás készültségi *nem áll készen*, mert nem rendelkezik TPM.  
+- **Titkosítási készültségi** – eszközök készen áll-e BitLocker-titkosítást támogató értékelését. Eszközök ellenőrizhető, mint:
+  - **Kész**: Az eszköz mobileszköz-kezelési szabályzatot, amely szükséges az eszköz TPM rendelkezik, és megfelel az alábbi Windows 10-es verziója és a Termékváltozat követelmények használatával titkosíthatók:
+    - 1703-as vagy újabb verziójára, a Business, Enterprise, Education
+    - 1809 vagy újabb verziójára, Pro  
+  
+    További információkért lásd: a [BitLocker konfigurációszolgáltató (CSP)](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) a Windows dokumentációjában.  
+
+  - **Nem áll készen**: Az eszköz nem rendelkezik teljes körű titkosítási lehetőségeket, de továbbra is támogatja a titkosítást. Például az eszköz titkosítva manuálisan egy felhasználó vagy csoportházirenddel, amely lehetővé teszi a TMP nélküli titkosított értékre lehet beállítani.
+  - **Nem alkalmazható**: Nem szerepel elegendő információt az eszköz besorolása.  
+
 - **Titkosítás állapota** – az operációs rendszer meghajtójának titkosítva van-e.  
 
 
@@ -51,11 +60,11 @@ Amikor kijelöl egy eszközt, az Intune megjeleníti a **titkosítási Eszközá
 
 Ezen a panelen a következő részleteket biztosítja:  
 - **Eszköz neve** – az eszköz megjelenített neve.  
-- **Titkosítási készültségi** – egy eszközök készen áll-e BitLocker-titkosítást támogató értékelését. Egy eszköz rendelkezhet egy titkosítási állapotát *titkosított* annak ellenére, hogy a titkosítás készültségi *nem áll készen*, mert nem rendelkezik TPM.  
+- **Titkosítási készültségi** – egy eszközök készen áll-e BitLocker-titkosítást támogató értékelését. Egy eszköz rendelkezhet egy titkosítási állapotát *titkosított* annak ellenére, hogy a titkosítás készültségi *nem áll készen*, mert nem rendelkezik TPM. (Lásd a titkosítási készültségi az azt megelőző további részleteket a következő szakaszban.)
 - **Titkosítás állapota** - e az operációs rendszer meghajtójának titkosítva van.  
 - **Profilok** – listáját a *eszközkonfiguráció* profilok, amelyek erre az eszközre érvényesek, és a következő típust és a beállítások tartalmazzák:  
-    - Profil típusa = *az Endpoint protection*  
-    - Beállítások > Windows-titkosítás > eszközök titkosítása = *szükséges*  
+  - Profil típusa = *az Endpoint protection*  
+  - Beállítások > Windows-titkosítás > eszközök titkosítása = *szükséges*  
 
   Ez a lista lehet megkereséséhez tekintse át az egyes szabályzatok kell a profil állapotának összegzése kapcsolatos problémát jeleznek.  
 

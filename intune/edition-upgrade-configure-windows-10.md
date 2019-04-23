@@ -1,11 +1,11 @@
 ---
 title: Frissítés vagy S mód használata a Windows 10-eszközök – Microsoft Intune – Azure |} A Microsoft Docs
-description: Egy másik kiadásra a Windows 10-eszközök frissítése a Microsoft Intune használatával, vagy S mód engedélyezéséhez. Eszközkonfigurációs profil rendszergazdái frissítése a Windows 10 Professional, Windows 10 Enterprise, és engedélyezéséhez, vagy váltson S módból. A támogatott frissítési útvonalakat Windows 10 Pro, N kiadás, Education, Cloud, Enterprise, Core, Holographic és Mobile talál.
+description: Egy másik kiadásra a Windows 10-eszközök frissítése a Microsoft Intune használatával, vagy váltson S mód. A rendszergazdák eszközkonfigurációs profil használatával frissítse a Windows 10 Professional, Windows 10 Enterprise, és váltson S módból. A támogatott frissítési útvonalakat Windows 10 Pro, N kiadás, Education, Cloud, Enterprise, Core, Holographic és Mobile talál.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 04/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b206cfca048416b1e859e9230f037e1158d46ec
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
-ms.translationtype: MT
+ms.openlocfilehash: 2f4195a2c622b68feb21a15faf23d4cca3f95b48
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60164124"
 ---
-# <a name="upgrade-windows-10-editions-or-enable-s-mode-on-devices-using-microsoft-intune"></a>A Windows 10-kiadás frissítése vagy S mód eszközökön a Microsoft Intune-nal engedélyezése
+# <a name="upgrade-windows-10-editions-or-switch-out-of-s-mode-on-devices-using-microsoft-intune"></a>A Windows 10-kiadás frissítése, vagy váltson ki S mód eszközökön a Microsoft Intune-nal
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-A mobileszköz-felügyelet (MDM) megoldás részeként, előfordulhat, hogy frissíteni szeretné a Windows 10 rendszerű eszközök. Ha például szeretné a Windows 10 Professional-eszközök frissítése a Windows 10 Enterprise. Vagy S mobile engedélyezi, így az eszközök csak futtassa a Microsoft Store-alkalmazások.
+A mobileszköz-felügyelet (MDM) megoldás részeként, előfordulhat, hogy frissíteni szeretné a Windows 10 rendszerű eszközök. Ha például szeretné a Windows 10 Professional-eszközök frissítése a Windows 10 Enterprise. Másik lehetőségként azt szeretné, hogy az eszköz S módból váltani.
 
-[A Windows 10 S módot](https://support.microsoft.com/help/4456067/windows-10-switch-out-of-s-mode) biztonságra és teljesítményre terveztük. Ha az eszközei csak a Microsoft Store áruházból származó alkalmazásokat futtatnak, az S móddal biztonságban tarthatja az eszközeit. Ha az eszközök, amelyek nem érhetők el a Microsoft Store-alkalmazásokat használ, akkor váltson S módból. Az S módból való váltás nem vonható vissza. Ha vált az S módból, nem válthat vissza később.
+[A Windows 10 S mód](https://support.microsoft.com/help/4456067/windows-10-switch-out-of-s-mode) (megnyílik egy másik Microsoft-webhely) lett tervezve, biztonságot és teljesítményt. Az Intune segítségével S módból váltani. Az S módból való váltás nem vonható vissza. Ha vált az S módból, nem válthat vissza később.
+
+Ismerkedjen meg néhány [gyakran ismételt kérdések](https://support.microsoft.com/help/4020089/windows-10-in-s-mode-faq) S módjával kapcsolatban.
 
 Ez a funkció az alábbiakra vonatkozik:
 
@@ -38,7 +40,7 @@ Ez a funkció az alábbiakra vonatkozik:
 - A Windows 10-es 1809 vagy újabb S mód
 - Windows Holographic for Business
 
-Ezek a funkciók érhetők el az Intune-ban, és a rendszergazda által konfigurálható. Az Intune használja a "profilok" hozhat létre, és ezeket a beállításokat a szervezet igényeinek megfelelően. Után ezeket a funkciókat ad hozzá egy profilt, amit leküldéses, vagy telepítse a profilt a Windows 10-eszközökre a szervezetben. A profil központi telepítése, az Intune automatikusan az eszközöket, vagy S mód lehetővé teszi.
+Ezek a funkciók érhetők el az Intune-ban, és a rendszergazda által konfigurálható. Az Intune használja a "profilok" hozhat létre, és ezeket a beállításokat a szervezet igényeinek megfelelően. Után ezeket a funkciókat ad hozzá egy profilt, amit leküldéses, vagy telepítse a profilt a Windows 10-eszközökre a szervezetben. A profil központi telepítése, az Intune automatikusan frissíti az eszközök vagy kapcsolók S módból.
 
 Ez a cikk a támogatott frissítési útvonalakat sorolja fel, és bemutatja, hogyan hozhat létre az eszközkonfigurációs profilban. Emellett megtekintheti az összes elérhető frissítés és S mód beállításainak [Windows 10-es](edition-upgrade-windows-settings.md).
 

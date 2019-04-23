@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/18/2019
+ms.date: 04/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c8f359be8878d42204a86e6ff8db7d75304b3bb
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: MT
+ms.openlocfilehash: e3064a73cd9c56275363cce8c99190c4f5c98192
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59901080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60164192"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 
@@ -47,6 +47,26 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Ugyanitt tal
 
 <!-- ########################## -->
 
+## <a name="week-of-april-22-2019"></a>2019 április 22 hete
+
+### <a name="use-compliance-manager-to-create-assessments-for-microsoft-intune---4404750---"></a>Értékelések a Microsoft Intune-hoz létre megfelelőségi Manager használatával<!-- 4404750 -->
+
+[Megfelelőségi Manager](https://servicetrust.microsoft.com/ComplianceManager) (megnyílik egy másik Microsoft-webhely) van egy munkafolyamat-alapú kockázati frissítésfelmérő eszközt a Microsoft Szolgáltatásmegbízhatósági portált. Ezáltal nyomon követésére, hozzárendelése és ellenőrzése a kapcsolódó Microsoft-szolgáltatások a szervezet a jogszabályoknak való megfelelőség tevékenységek. Az Office 365, Azure, Dynamics, szolgáltatások és az Intune hozhat létre a saját megfelelőségi vizsgálata. Az Intune két értékelésekkel rendelkezik érhető el – FFIEC és az általános adatvédelmi rendelet.
+
+Összpontosítsa figyelmét részletes vezérlők - vezérlőkkel Microsoft által felügyelt és a szervezet által felügyelt Compliance Manager segítségével. Végezze el az értékeléseket, és ezután exportálhatja, és nyomtassa ki az értékelések.
+
+[Szövetségi pénzügyi intézmények vizsgálat Tanács (FFIEC)](https://www.microsoft.com/trustcenter/compliance/FFIEC) (megnyílik egy másik Microsoft-webhely) megfelelőségi egy olyan online banki FFIEC által kiadott szabványainak. Érdemes a leginkább kért értékelését pénzügyi intézmények, amely az Intune-nal. Hogyan segíti az Intune FFIEC kiberbiztonsági irányelvek kapcsolódó nyilvános felhőalapú számítási feladatokhoz megfelelő értelmezi azt. Az Intune FFIEC értékelése a második FFIEC Compliance Manager assessment.
+
+A következő példában láthatja a bontás FFIEC vezérlők. A Microsoft 64 vezérlők ismerteti. Ön felelős a fennmaradó 12 szabályozza.
+
+![Tekintse meg a minta az Intune-értékelés FFIEC, beleértve a felhasználói műveletek és a Microsoft-műveletek](./media/intune-ffiec-assessment-status.png)
+
+[Általános adatvédelmi rendelet (GDPR)](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-overview) (megnyílik egy másik Microsoft-webhely) egy Európai Unión (EU) törvény, amely segít megvédeni a jogosultságokat az egyének és adataikat. Általános adatvédelmi rendelet a leginkább kért assessment érdekében, hogy megfeleljenek adatvédelmi szabályzat. 
+
+A következő példában láthatja az általános adatvédelmi rendelet vezérlők bontásához. A Microsoft 49 vezérlők ismerteti. Ön felelős a fennmaradó 66 szabályozza.
+
+![Tekintse meg a minta az Intune-értékelés GDPR, beleértve a felhasználói műveletek és a Microsoft-műveletek](./media/intune-assessment-status.png)
+
 ## <a name="week-of-april-15-2019"></a>2019. április 15 i hét
 
 ### <a name="app-management"></a>Alkalmazáskezelés
@@ -58,7 +78,7 @@ Az Intune alkalmazásvédelmi szabályzatai (alkalmazás) Android-eszközökön 
 Mint a rendszergazda megkövetelheti, hogy más alkalmazások telepíti a függőségeket a Win32-alkalmazás telepítése előtt. Pontosabban, az eszközön telepíteni kell a függő alkalmazás(ok) a Win32-alkalmazás telepítése előtt. Válassza ki az Intune-ban **ügyfélalkalmazások** > **alkalmazások** > **Hozzáadás** megjelenítéséhez a **alkalmazás hozzáadása** panelen. Válassza ki **Windows-alkalmazás (Win32)** , a **alkalmazástípus**. Miután hozzáadta az alkalmazást, kijelölheti **függőségek** és a függő alkalmazásokat, a Win32-alkalmazás telepítése előtt telepíteni kell. További információkért lásd: [önálló Intune - Win32-Alkalmazáskezelés](apps-win32-app-management.md).
 
 #### <a name="app-version-installation-information-for-microsoft-store-for-business-apps----3537391-----"></a>Alkalmazás verziója telepítéséhez szükséges információkat a Microsoft Store üzleti alkalmazások <!-- 3537391   -->
-Alkalmazás telepítési jelentések tartalmaz az üzleti alkalmazások Microsoft Store-alkalmazás verziója információkat. Válassza ki az Intune-ban **ügyfélalkalmazás** > **alkalmazások**. Válassza ki a **Microsoft Store for Business app** , majd **eszköz telepítési állapota** alatt a **figyelő** szakaszban.
+Alkalmazás telepítési jelentések az üzleti alkalmazások Microsoft Store-alkalmazás verziója adatai tartalmazzák. Válassza ki az Intune-ban **ügyfélalkalmazás** > **alkalmazások**. Válassza ki a **Microsoft Store for Business app** , majd **eszköz telepítési állapota** alatt a **figyelő** szakaszban.
 
 #### <a name="additions-to-win32-apps-requirement-rules----3676883-----"></a>A Win32-alkalmazások követelményszabályok bővítése <!-- 3676883   -->
 Követelmény szabályai alapján a PowerShell parancsfájlok, a beállításjegyzék-értékek és a fájl rendszer-információkat is létrehozhat. Válassza ki az Intune-ban **ügyfélalkalmazás** > **alkalmazások** > **Hozzáadás**. Válassza ki **Windows-alkalmazás (Win32)** , a **alkalmazástípus** a a **alkalmazás hozzáadása** panelen.  Válassza ki **követelmények** > **Hozzáadás** konfigurálása további követelmény-szabályokkal. Ezt követően válassza **Fájltípus**, **beállításjegyzék**, vagy **parancsfájl** , a **követelmény típusa**. További információkért lásd: [Win32-Alkalmazáskezelés](apps-win32-app-management.md).
@@ -115,12 +135,9 @@ Ez a frissítés magában foglalja az új jelszó-beállításokat, lehetővé t
 
 Érintett kiadások: Android Enterprise teljes körűen felügyelt eszközök
 
-#### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671----"></a>A Windows 10-es eszközök megfelelőségi szabályzatot a TPM lapkakészlet-ellenőrzés <!-- 3617671  -->
-Számos Windows 10-es és újabb rendszerű eszközök kell a platformmegbízhatósági modul (TPM) chipkészletekkel. A frissítés egy új megfelelőségi beállítás, amely ellenőrzi a TPM lapka az eszközön lévő verziója tartalmazza. 
+#### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---"></a>A Windows 10-es eszközök megfelelőségi szabályzatot a TPM lapkakészlet-ellenőrzés <!-- 3617671 -->
 
-[Windows 10-es és újabb megfelelőségi szabályzat beállításai](compliance-policy-create-windows.md#device-security) ismerteti ezt a beállítást.
-
-Érintett kiadások: Windows 10 és újabb
+Ez a funkció késik, és szerepelnie kell egy későbbi kiadásban.
 
 #### <a name="updated-ui-changes-for-microsoft-edge-browser-on-windows-10-and-later-devices----3775833-----"></a>A Windows 10 és újabb rendszerű eszközökön a Microsoft Edge böngésző frissített felhasználói Felületet módosítása <!-- 3775833   -->
 Eszközkonfigurációs profil létrehozásakor engedélyezése vagy korlátozása a Microsoft Edge-funkciók a Windows 10-es és újabb rendszerű eszközök (**eszközkonfiguráció** > **profilok**  >  **Profil létrehozása** > **Windows 10 és újabb** platformon > **eszközkorlátozások** profiltípus >  **A Microsoft Edge böngésző**). Ez a frissítés a Microsoft Edge-beállítások: a kifejezőbb és megérteni. 
@@ -163,7 +180,7 @@ Frissítettük az alapértelmezett időtúllépési üzenet a regisztrációs á
 ### <a name="device-management"></a>Eszközkezelés
 
 #### <a name="retire-noncompliant-devices-----1827291-----"></a>Nem megfelelő eszközök kivonása  <!-- 1827291   -->
-Az eszközmegfelelőségi szabályzatok részeként a meg nem felelés esetén egy új műveletet tettünk elérhetővé: [Nem megfelelő eszközök kivonása](actions-for-noncompliance.md#add-actions-for-noncompliance). Ez a művelet használatával automatikusan is törli az eszköz az Intune felügyelete alól, miközben a vállalati adatok nem megfelelő eszközről törlése.
+Ez a funkció késleltetését, és a egy későbbi kiadásban fog érkezni.
 
 
 ### <a name="monitor-and-troubleshoot"></a>Monitorozás és hibaelhárítás
@@ -308,7 +325,6 @@ Csak olvasásra jogosító hozzáférés Intune-ban tárolt összes:
 - Biztonsági rendszergazda
 - Biztonsági operátor
 - Biztonsági olvasó
-- Globális olvasó
 
 További információkért lásd: [szerepköralapú hozzáférés-vezérlés](role-based-access-control.md).
 
