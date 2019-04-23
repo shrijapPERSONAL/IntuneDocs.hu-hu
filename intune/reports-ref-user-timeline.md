@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: cfa1df8053301b92c04d92f8c48d2c6c34e30129
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59900145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61507613"
 ---
 # <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>A felhasználói élettartam reprezentációja a Microsoft Intune-adattárházban
 

@@ -19,11 +19,11 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: f9c25166ed9b004cc4e43e777008e33e88983912
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55843493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61501799"
 ---
 # <a name="using-your-ios-device-with-intune-company-portal"></a>iOS-eszköz használata az Intune Céges portállal
 A cikk az iOS-hez készült Céges portálra vonatkozó feladatokat és információkat sorolja fel. Ezek ismerete segítheti az iOS-eszköz hibaelhárítását és felügyeletét. Kattintson a hivatkozások bármelyikére, ha további részleteket, lépéseket és képernyőképeket kíván megtekinteni.

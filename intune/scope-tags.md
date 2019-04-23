@@ -16,11 +16,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2eb709ad0d649b2ac32505b395fa91e85ad81b8a
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59900230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61507778"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Szerepköralapú hozzáférés-vezérlés (RBAC) és a hatókörcímkék használható elosztott IT
 

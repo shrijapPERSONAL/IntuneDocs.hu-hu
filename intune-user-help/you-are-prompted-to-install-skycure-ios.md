@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6daeaaac7fb554e2c29f6ac150eaff8308d670b0
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55850556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61504944"
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-ios-device"></a>A Symantec Endpoint Protection Mobile alkalmazás telepítése iOS-eszközön
 

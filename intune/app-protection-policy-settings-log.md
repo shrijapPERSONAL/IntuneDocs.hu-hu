@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d593ee1389cfa183c5daaefdeae3ea7f6c44a8a8
-ms.sourcegitcommit: 47eb67df69f237121f5197b2ac904a177aab5400
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59671866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61505879"
 ---
 # <a name="review-client-app-protection-logs"></a>Ügyfelekre vonatkozó alkalmazásvédelmi naplók áttekintése
 

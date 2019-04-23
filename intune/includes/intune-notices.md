@@ -8,11 +8,11 @@ ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
 ms.openlocfilehash: 073115d33f9a4f22fe3706ef15860c2a8d8a68ee
-ms.sourcegitcommit: 69aaf89140f82f344404e75a69dc59d8a1585b10
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58675493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513667"
 ---
 Ezek a megjegyzések meg fontos információkat, amelyek segítségével előkészítése az Intune jövőbeli változtatásokat és szolgáltatásokat. 
 

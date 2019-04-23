@@ -16,11 +16,11 @@ search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 55d14a242644a8c3115936acf6a5d35933c4e11c
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59900213"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61505726"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>A Windows 10 (és újabb) eszközbeállítások engedélyezett vagy korlátozott funkciók az Intune-nal
 

@@ -18,11 +18,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 66a23b75913f6465064a988bd8f2ba9c2b4c36d6
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59899754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61514139"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>PowerShell-parancsfájlok használata a Windows 10 rendszerű eszközökön az Intune-ban
 

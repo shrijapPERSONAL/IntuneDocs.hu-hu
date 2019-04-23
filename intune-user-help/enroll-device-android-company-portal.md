@@ -19,11 +19,11 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3e9120110b1840d1f5075549737722328ef2551f
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59901821"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61498379"
 ---
 # <a name="enroll-your-device-with-company-portal"></a>Regisztrálja az eszközét a vállalati portál  
 Személyes vagy vállalati tulajdonú Android-eszköz regisztrálása a vállalati e-mailekhez, alkalmazásokhoz és adatokhoz való biztonságos eléréséhez. Vállalati portál Android-eszközön támogatja, beleértve a Samsung Knox-, Android 4.4-es vagy újabb rendszerű.  

@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7cbfe19e4f7aea28c16cae50c9b79336be81c8fa
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59894365"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61511397"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>Gyors útmutató: Hozzon létre egy csoportot, hogy a felhasználók kezelése
 

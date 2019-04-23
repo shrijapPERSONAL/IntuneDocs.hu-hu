@@ -19,11 +19,11 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 872fda55e47d517fdc67584c0621975dd065af11
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55840567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61503913"
 ---
 # <a name="your-android-device-is-rooted-so-you-cant-connect"></a>Az androidos eszközt rootolták, ezért a felhasználó nem tud csatlakozni
 

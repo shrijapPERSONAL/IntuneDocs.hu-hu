@@ -18,11 +18,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d2431695f89c9cdf339a0192e27f8140ec042435
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61515330"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Helyek (hálózati kerítés) használata az Intune-ban
 
@@ -30,7 +30,7 @@ Letilthatja a vállalati hálózathoz való hozzáférést, ha az eszköz elhagy
 
 Létrehozhat egy hálózati helyen alapuló megfelelőségi szabályzatot, amelyet másként hálózati kerítésnek is hívnak. A szabályzat biztosítja, hogy az eszköznek munkahelyi hálózathoz kelljen csatlakoznia a megfelelőséghez. Ez a szabályzat használható feltételes hozzáférési szabályzatokkal, hogy az eszközök *csak* munkahelyi erőforrásokat érjenek el, amikor az eszköz a munkahelyi hálózathoz csatlakozik. Ha az eszköz nem csatlakozik a munkahelyi hálózathoz, akkor nem megfelelő lesz, és nem fog tudni hozzáférni a munkahelyi erőforrásokhoz.
 
-Vegye figyelembe az alábbi forgatókönyvet:
+Gondolkodjon el az alábbi megoldáson:
 
 A gyártási létesítményben néhány alkalmazott Android-eszközöket használ. Az alkalmazott kiviszi az Android-eszközt a létesítményből vagy üzemből. Az illetéktelen hozzáférés megakadályozásáért a következőket teheti:
 

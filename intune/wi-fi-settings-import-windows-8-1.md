@@ -16,17 +16,17 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3452eb832f31377ddc9c55c5008405cb2235569b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57564839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61515007"
 ---
 # <a name="import-wi-fi-settings-for-windows-devices-in-intune"></a>Windows-eszközök Wi-Fi-beállításainak importálása az Intune-ba
 
 A Windows rendszert futtató eszközökre importálhatja az előzőleg fájlba exportált Wi-Fi konfigurációs profilt. **Windows 10 és újabb rendszerű eszközökhöz közvetlenül az Intune-ban is [létrehozhat Wi-Fi-profilt](wi-fi-settings-windows.md)**.
 
-A következőkre vonatkozik:  
+Érintett kiadások:  
 - Windows 8.1 és újabb
 - Windows 10 és újabb
 - A Windows 10 asztali vagy mobilverziója

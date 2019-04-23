@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.openlocfilehash: a18c579853b162024aaa93d5dad2bfd854d8c0d2
 ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 04/23/2019
-ms.locfileid: "60164056"
+ms.locfileid: "61512933"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>A figyelő a BitLocker és az eszköz titkosítása  
 Az Intune kínál egy központi helyen, azonosíthatja a Windows 10 rendszerű eszközök titkosítási állapotát, és elérhetővé teszi a BitLocker vonatkozó fontos információk az eszközök, az Azure Active Directoryban (Azure AD) formában.  

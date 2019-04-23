@@ -16,11 +16,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c2c3a33b996a68263550fc05d3af853c263c930a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512918"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>macOS végpontvédelem-beállítások az Intune-ban
 
@@ -35,7 +35,7 @@ A cikk a macOS rendszerű eszközökhöz konfigurálható, végpontvédelemre vo
 
 - **Felhasználó felülbírálhatja a forgalomirányítót**: Megakadályozza, hogy a felhasználók felülbírálják a forgalomirányító beállítást, és megakadályozza, hogy a felhasználók kattintással telepíthet egy alkalmazást. Ha engedélyezve van, akkor a felhasználók bármilyen alkalmazást telepíteni tudnak, ha a Ctrl billentyűt lenyomva rákattintanak.
 
-## <a name="firewall"></a>Firewall
+## <a name="firewall"></a>Tűzfal
 
 A tűzfalat inkább a kapcsolatok alkalmazásonkénti, nem pedig portonkénti korlátozására használja. Az alkalmazásonkénti beállítások használatával könnyebben kihasználhatók a tűzfal védelmének előnyei. Segít annak megelőzésében is, hogy nem kívánt alkalmazások átvegyék a megbízható alkalmazások számára nyitott portok irányítását.
 

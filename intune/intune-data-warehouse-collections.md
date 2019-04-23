@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 00a0bd4936d1ad8ba8dd52f1839e7d42505db60e
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59900740"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508264"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune adattárház-gyűjtemények
 
@@ -577,7 +577,7 @@ Mobilalkalmazás telepítési állapotot jelöli egy adott céleszköztípushoz,
 | DeviceTypeKey      | A mobilalkalmazáshoz társított eszköztípus kulcsa.                                                              |
 | AppInstallStateKey | Az alkalmazástelepítési állapot kulcsa, mely a MobileAppInstallState osztály egy példányát azonosítja.                                         |
 | Hibakód          | Az alkalmazástelepítő, a mobilplatform vagy a szolgáltatás által az alkalmazás telepítésével kapcsolatban visszaadott hibakód. |
-| Darabszám              | Összesített szám.                                                                                                                  |
+| Count              | Összesített szám.                                                                                                                  |
 
 ## <a name="ownertypes"></a>ownerTypes
 Az **ownerType** entitás jelzi, hogy az eszköz tulajdonosa a vállalat, magánszemély vagy ismeretlen.
@@ -666,8 +666,8 @@ A **termsAndConditions** entitás adott feltételek és kikötések (T&C) szabá
 |    termsAndConditionsKey    |    Egy, a „userTermsAndConditionsAcceptances” gyűjteményben lévő egyik tételhez tartozó kulcs    |    123    |
 |    termsAndCondidionsId    |    Ennek a termsAndConditions-bejegyzésnek az azonosítója    |    276edcb7-7440-4339-b6c5-8b6fc556fee6    |
 |    termsAndConditionsVersion    |    A feltételek és kikötések bejegyzés verziója    |    1    |
-|    név    |    A feltételek és kikötések bejegyzés neve.        |    Az Intune használati feltételei     |
-|    leírás    |    A feltételek és kikötések leírása.     |         |
+|    name    |    A feltételek és kikötések bejegyzés neve.        |    Az Intune használati feltételei     |
+|    description    |    A feltételek és kikötések leírása.     |         |
 |    title    |    A feltételek és kikötések címe.     |    Eszközkezelési vállalati szabályzat        |
 |    summaryOfTerms    |    A felhasználók számára készült feltételek összefoglalása.     |    Elfogadom a használati feltételeket.    |
 |    termsAndConditionsBodyText    |    A feltételek és kikötések szövegtörzse.       |    *Eszköztitkosítás* 6 számjegyű PIN-kód megkövetelése    |
