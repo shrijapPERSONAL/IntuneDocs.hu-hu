@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd93e5ef7af5f4a4c0cd8d29f4cbcc26fc0515cd
-ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
-ms.translationtype: MT
+ms.openlocfilehash: f05d3d19e1cce0c290a9af363ca1541881d7820f
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59429155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60164141"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Önálló Intune - Win32-Alkalmazáskezelés
 
@@ -38,9 +38,10 @@ Win32-Alkalmazáskezelés használatához győződjön meg a következő feltét
 
 - A Windows 10 1607-es verzió vagy újabb (vállalati, Pro és Education verziók)
 - A Windows 10-ügyfélnek: 
-    - az Azure Active Directory (AAD) csatlakoztatott vagy [hibrid Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan)
-    - regisztrálva kell lennie az Intune-ban (MDM által felügyelt)
-- Windows-alkalmazás mérete 8 GB a alkalmazásonként maximumon
+    - Eszközök az Azure AD-csatlakoztatott legyen, és automatikusan regisztrálva. Az Intune felügyeleti bővítmény támogatja az Azure AD-hez, a hibrid tartományhoz, a csoport házirend beléptetett eszközök támogatottak. 
+    > [!NOTE]
+    > A csoportházirend regisztrált forgatókönyv – a végfelhasználók használnak a helyi felhasználói fiók AAD-be való csatlakozás a Windows 10-es eszköz. A felhasználó jelentkezzen be az eszközt, az AAD felhasználói fiók használatával kell, és regisztrálása az Intune-ban. Az Intune telepíti az Intune felügyeleti bővítmény az eszközön, ha egy PowerShell-parancsprogram, vagy egy Win32-alkalmazás a felhasználó vagy eszköz számára vonatkozik.
+- Windows-alkalmazások mérete az egyes alkalmazások maximumon 8 GB.
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>A Win32-alkalmazás tartalmának előkészítése a feltöltéshez
 
@@ -51,7 +52,13 @@ Használja a [Microsoft Win32 tartalom előkészítő eszközt](https://go.micro
 
 Letöltheti a [Microsoft Win32 tartalom előkészítő eszközt](https://go.microsoft.com/fwlink/?linkid=2065730) a Githubról zip-fájlként. A tömörített fájl tartalmaz egy nevű mappát **Microsoft-Win32-Content-Prep-Tool-master**. A mappa tartalmazza az előkészítő eszköze, a licenc, egy információs fájl és a kibocsátási megjegyzéseket. 
 
-Ha `IntuneWinAppUtil.exe` paraméterek nélkül a parancsablakból, az eszköz végigvezeti Önt a beviteli a szükséges paramétereket lépésről lépésre. Vagy a paraméterek a parancs a következő rendelkezésre álló parancssori paraméterek alapján is hozzáadhat.
+### <a name="process-flow-to-create-intunewin-file"></a>Folyamat .intunewin fájl létrehozása
+
+   ![Folyamat .intunewin fájl létrehozása](./media/prepare-win32-app.svg)
+
+### <a name="run-the-microsoft-win32-content-prep-tool"></a>A Microsoft Win32 tartalom előkészítő eszköz futtatása
+
+Ha `IntuneWinAppUtil.exe` paraméterek nélkül a parancsablakból, az eszköz végigvezeti Önt a beviteli a szükséges paramétereket lépésről lépésre. Vagy a paramétereket adhat hozzá a parancs a következő rendelkezésre álló parancssori paraméterek alapján.
 
 ### <a name="available-command-line-parameters"></a>Elérhető parancssori paraméterek 
 
@@ -70,7 +77,7 @@ Ha `IntuneWinAppUtil.exe` paraméterek nélkül a parancsablakból, az eszköz v
 |    `IntuneWinAppUtil -h`    |    Ez a parancs megjeleníti az eszköz használatára vonatkozó információkat.    |
 |    `IntuneWinAppUtil -c c:\testapp\v1.0 -s c:\testapp\v1.0\setup.exe -o c:\testappoutput\v1.0 -q`    |    Ez a parancs létrehozza az `.intunewin` fájlt a megadott forrásmappa és telepítőfájl alapján. Az MSI-telepítőfájlhoz az eszköz lekéri az Intune-hoz szükséges adatokat. Ha a `-q` van megadva, a parancs csendes módban fog futni, és ha a kimeneti fájl már létezik, felül fogja írni. Ha a kimeneti mappa még nem létezik, akkor automatikusan létrejön.    |
 
-Létrehozásakor egy *.intunewin* fájlt minden olyan fájlok, a telepítés mappa almappa hivatkoznia kell. Ezután használja a relatív elérési út egy konkrét fájlt kell hivatkoznia. Példa:
+Létrehozásakor egy *.intunewin* fájlt minden olyan fájlok, a telepítési mappa egy almappájába hivatkoznia kell. Ezután használja a relatív elérési út egy konkrét fájlt kell hivatkoznia. Példa:
 
 **Telepítő forrásmappája:** *c:\testapp\v1.0*<br>
 **Licencfájl:** *c:\testapp\v1.0\licenses\license.txt*
@@ -79,7 +86,15 @@ Tekintse meg a *license.txt* fájl relatív elérési út használatával *licen
 
 ## <a name="create-assign-and-monitor-a-win32-app"></a>Win32-alkalmazás létrehozása, hozzárendelése és monitorozása
 
-Az üzletági (LOB) alkalmazásokhoz hasonlóan Win32-alkalmazást is hozzáadhat a Microsoft Intune-hoz. Az ilyen alkalmazásokat általában házon belül írják, vagy egy külső féltől származnak. Az alábbi lépések útmutatást nyújtanak a Windows-alkalmazások Intune-hoz való hozzáadásához.
+Az üzletági (LOB) alkalmazásokhoz hasonlóan Win32-alkalmazást is hozzáadhat a Microsoft Intune-hoz. Az ilyen alkalmazásokat általában házon belül írják, vagy egy külső féltől származnak. 
+
+### <a name="process-flow-to-add-a-win32-app-to-intune"></a>A folyamat egy Win32-alkalmazás hozzáadása az Intune-hoz
+
+   ![A folyamat egy Win32-alkalmazás hozzáadása az Intune-hoz](./media/add-win32-app.svg)
+
+### <a name="add-a-win32-app-to-intune"></a>A Win32-alkalmazás hozzáadása az Intune-hoz
+
+Az alábbi lépések útmutatást nyújtanak a Windows-alkalmazások Intune-hoz való hozzáadásához.
 
 ### <a name="step-1-specify-the-software-setup-file"></a>1. lépés: A szoftvertelepítő fájl megadása
 
@@ -126,9 +141,9 @@ Az üzletági (LOB) alkalmazásokhoz hasonlóan Win32-alkalmazást is hozzáadha
 
     Például, ha az alkalmazás Fájlnév **MyApp123**, adja hozzá a következő:<br>
     `msiexec /p “MyApp123.msp”`<p>
-    És, ha az alkalmazás `ApplicationName.exe`, a következő paranccsal lehetséges az alkalmazás nevét, a parancs argruments (kapcsolók) a csomag által támogatott követ. <br>Példa:<br>
+    És, ha az alkalmazás `ApplicationName.exe`, a következő paranccsal lehetséges az alkalmazás nevét, majd a csomag által támogatott parancssori argumentumok (kapcsolók). <br>Példa:<br>
     `ApplicationName.exe /quite`<br>
-    A fenti parancsban a `ApplicaitonName.exe` csomag támogatja a `/quite` parancs argrument.<p> Az alkalmazáscsomag által támogatott konkrét agruments Forduljon az alkalmazás szállítójához.
+    A fenti parancsban a `ApplicaitonName.exe` csomag támogatja a `/quite` parancssori argumentum.<p> A megadott argumentumok az alkalmazáscsomag által támogatott az alkalmazás gyártójától.
 
 3.  Adja meg az alkalmazás eltávolításához szükséges teljes eltávolítási parancssort az alkalmazás GUID-értékei alapján. 
 
@@ -144,14 +159,32 @@ Az üzletági (LOB) alkalmazásokhoz hasonlóan Win32-alkalmazást is hozzáadha
 ### <a name="step-5-configure-app-requirements"></a>5. lépés: Alkalmazáskövetelmények konfigurálása
 
 1.  Az alkalmazás telepítéséhez szükséges rendszerkövetelmények beállításához az **Alkalmazás felvétele** panelen válassza a **Követelmények** elemet.
-2.  A **Követelmények** panelen konfigurálja az alábbi információkat. Lehetséges, hogy ezen a panelen néhány érték automatikusan ki lesz töltve.
+2.  Az a **adjon hozzá egy olyan követelményszabályt** panelen konfigurálja az alábbi adatokat. Lehetséges, hogy ezen a panelen néhány érték automatikusan ki lesz töltve.
     - **Operációs rendszer-architektúra**: Válassza ki a architektúrák telepítenie kell az alkalmazást.
     - **Az operációs rendszer minimális**: Válassza ki az operációs rendszer minimálisan szükséges az alkalmazás telepítéséhez.
     - **Szükséges lemezterület (MB)**: Opcionálisan adja hozzá a szabad lemezterület a rendszermeghajtón az alkalmazás telepítéséhez szükséges.
     - **Memória (MB)**: Opcionálisan adja hozzá a fizikai memória (RAM), az alkalmazás telepítéséhez szükséges.
     - **Logikai processzorok szükséges minimális száma**: Opcionálisan adja hozzá az alkalmazás telepítéséhez szükséges logikai processzorok minimális száma.
     - **Minimális CPU-sebesség szükséges (MHz)**: Opcionálisan adja hozzá az alkalmazás telepítéséhez szükséges minimális CPU-sebesség.
-3.  Amikor végzett, válassza az **OK** gombot.
+
+3. Kattintson a **hozzáadása** megjelenítéséhez a **adjon hozzá egy olyan követelményszabályt** panelen, és további követelményszabályokat. Válassza ki a **követelmény típusa** , válassza ki a szabályt, amely segítségével határozza meg, hogyan érvényesítési követelmény. Követelmény szabályai fájl rendszer-információkat, a beállításjegyzék-értékek vagy a PowerShell-parancsfájlok alapulhat. 
+    - **Fájl**: Ha úgy dönt **fájl** , a **követelmény típusa**, a követelményszabály észlelnie kell egy fájlhoz vagy mappához, dátuma, verziója vagy mérete. 
+        - **Elérési út** – Az észlelendő fájlt vagy mappát tartalmazó mappa teljes elérési útja.
+        - **Fájl vagy mappa** – Az észlelendő fájl vagy mappa.
+        - **Vlastnost** – válassza ki a szabály az alkalmazás meglétének ellenőrzése.
+        - **32 bites alkalmazással társítva 64 bites ügyfeleken** – Ha 64 bites ügyfeleken a „path” környezeti változókat 32 bites környezetben szeretné kibontani, válassza az **Igen** lehetőséget. A **Nem** (ez az alapértelmezett beállítás) kiválasztásakor a rendszer minden „path” változót 64 bites környezetben bontja ki a 64 bites ügyfeleken. A 32 bites ügyfelek mindig a 32 bites környezetet használják.
+    - **Beállításjegyzék**: Ha úgy dönt **beállításjegyzék** , a **követelmény típusa**, a követelményszabály észlelnie kell egy beállításjegyzékbeli beállítás értékét, karakterlánc, egész szám vagy verzió alapján.
+        - **Kulcs elérési útja** – Az észlelendő értéket tartalmazó beállításjegyzék-bejegyzés teljes elérési útja.
+        - **Érték neve** – Az észlelendő beállításazonosító neve. Ha ez az érték üres, akkor az észlelés a kulcs alapján történik. A rendszer egy kulcs (alapértelmezett) értékét használja észlelési értékként, ha az észlelési módszer nem a fájl vagy a mappa meglétén alapul.
+        - **Beállításjegyzék kulcsfontosságú követelmény az** – válassza ki a beállításjegyzékbeli kulcs összehasonlító határozza meg, hogyan történjen a szabály érvényesítése.
+        - **32 bites alkalmazással társítva 64 bites ügyfeleken** – Ha a 32 bites beállításjegyzékben szeretne keresni a 64 bites ügyfeleken, válassza az **Igen** lehetőséget. A **Nem** (ez az alapértelmezett beállítás) kiválasztásakor a rendszer a 64 bites ügyfeleken a 64 bites beállításjegyzékben fog keresni. A 32 bites ügyfeleknél a keresés mindig a 32 bites beállításjegyzéket érinti.
+    - **parancsfájl**: Válasszon **parancsfájl** , a **követelmény típusa**, amikor egy olyan követelményszabályt, a fájl, a beállításjegyzék vagy az Intune-konzolon elérhető más módon nem hozható létre.
+        - **Parancsfájl** – a PowerShell-parancsprogram-alapú követelményi szabálynak, ha létezik kódja: 0, hogy észlelni fogja az STDOUT részletesebben. Ha például észlelni tudjuk STDOUT egész szám, amelynek értéke 1.
+        - **32 bites folyamatként futtassa parancsprogramot 64 bites ügyfeleken** – ki **Igen** egy 32 bites folyamatban a parancsfájl futtatásához 64 bites ügyfeleken. Válassza ki **nem** (alapértelmezett), a parancsfájl futtatásához 64 bites folyamatként 64 bites ügyfeleken. 32 bites ügyfelek 32 bites folyamatként futtassa a szkriptet.
+        - **Futtassa ezt a szkriptet a hitelesítő adatok használatával a bejelentkezett**: Válassza ki **Igen** a parancsfájl futtatásához az eszköz hitelesítő adatainak ** az aláírt használatával.
+        - **Szkriptaláírás ellenőrzésének kényszerítése** – Az **Igen** lehetőség kiválasztásával ellenőrizheti, hogy a szkriptet egy megbízható gyártó írta-e alá, így a szkript figyelmeztetések és felszólítások megjelenítése nélkül fog futni. A szkript letiltás nélkül fog futni. A **Nem** (ez az alapértelmezett beállítás) kiválasztásakor a szkript végfelhasználói megerősítéssel, az aláírás ellenőrzése nélkül fut.
+        - **Válassza ki a kimeneti adatok típusát**: Válassza ki az követelmény szabály egyezést meghatározása során használt.
+4.  Amikor végzett, válassza az **OK** gombot.
 
 ### <a name="step-6-configure-app-detection-rules"></a>6. lépés: Alkalmazás észlelési szabályok konfigurálása
 
@@ -244,7 +277,34 @@ Az üzletági (LOB) alkalmazásokhoz hasonlóan Win32-alkalmazást is hozzáadha
 7.  A **Csoport hozzáadása** panelen kattintson az **OK** gombra.
 8.  Az alkalmazás **Hozzárendelések** ablaktábláján kattintson a **Mentés** gombra.
 
-Ezzel teljesítette a Win32-alkalmazás Intune-hoz történő hozzáadásának lépéseit. Az alkalmazás-hozzárendeléssel és monitorozással kapcsolatos további információ: [Alkalmazások hozzárendelése csoportokhoz a Microsoft Intune-nal](https://docs.microsoft.com/intune/apps-deploy) és [Alkalmazásadatok és -hozzárendelések figyelése a Microsoft Intune-ban](https://docs.microsoft.com/intune/apps-monitor).
+Ezen a ponton végrehajtotta egy Win32-alkalmazás hozzáadása az Intune-hoz. Az alkalmazás-hozzárendeléssel és monitorozással kapcsolatos további információ: [Alkalmazások hozzárendelése csoportokhoz a Microsoft Intune-nal](https://docs.microsoft.com/intune/apps-deploy) és [Alkalmazásadatok és -hozzárendelések figyelése a Microsoft Intune-ban](https://docs.microsoft.com/intune/apps-monitor).
+
+## <a name="app-dependencies"></a>Alkalmazás függőségei
+
+Alkalmazás függőségei olyan alkalmazások, amelyek a Win32-alkalmazás telepítése előtt telepíteni kell. Megkövetelheti, hogy más alkalmazások telepíti a függőségeket. Pontosabban, az eszközön telepíteni kell a függő alkalmazás(ok) a Win32-alkalmazás telepítése előtt. Legfeljebb 100 függőségeket, beleértve a függőségeket bármely része van függőségeit, valamint az alkalmazás programkódját. A Win32-alkalmazás függőségei is hozzáadhat, csak a Win32-alkalmazás hozzáadása és az Intune-bA feltöltött után. A Win32-alkalmazás hozzáadása után látni fogja a **függőségek** lehetőséget a panelen, a Win32-alkalmazás. 
+
+Ha egy alkalmazás függőség hozzáadása, kereshet az alkalmazás nevének és közzétevő alapján. Ezenkívül a hozzáadott függőségek az alkalmazás nevének és közzétevő alapján rendezheti. Korábban hozzáadott alkalmazás függőségei nem lehet kiválasztani a hozzáadva függőségi listáját. 
+
+Lehetősége van-e minden függő alkalmazás automatikus telepítése. Alapértelmezés szerint a **automatikusan telepíteni** beállítás **Igen** az egyes függőségek. Automatikusan telepít egy függő alkalmazást, akkor is, ha a felhasználó vagy eszköz, nem vonatkozik a függő alkalmazást az Intune telepíti az alkalmazást az eszköz megfelel a függőséget a Win32-alkalmazás telepítése előtt. Fontos megjegyezni, hogy egy függőségi lehet rekurzív alárendelt függőségeket, és minden egyes alárendelt függőségi lesz telepítve, a fő függőség telepítése előtt. Emellett a függőségek telepítése hajtsa végre egy telepítési sorrendben egy adott függőségi szintjén.
+
+Az alkalmazás függ, a Win32-alkalmazás hozzáadásához használja az alábbi lépéseket:
+
+1. Válassza ki az Intune-ban **ügyfélalkalmazás** > **alkalmazások** hozzá ügyfélalkalmazások listájának megtekintése. 
+2. Válasszon egy hozzáadott **Windows-alkalmazás (Win32)** alkalmazást. 
+3. Válassza ki **függőségek** hozzáadása a függő alkalmazás(ok), a Win32-alkalmazás telepítése előtt telepíteni kell. 
+4. Kattintson a **Hozzáadás** hozzáadása az alkalmazás függ.
+5. Miután hozzáadta a függő alkalmazás(ok), kattintson a **kiválasztása**.
+6. Döntse el, hogy automatikusan telepítse a függő alkalmazást kiválasztásával **Igen** vagy **nem** alatt **automatikusan telepíteni**.
+7. Kattintson a **Save** (Mentés) gombra.
+
+A felhasználó jelzi, hogy folyamatban van-e a függő alkalmazások Windows bejelentési értesítések jelennek meg letöltötte és telepítette a Win32-alkalmazás telepítési folyamat részeként. Emellett ha egy függő alkalmazás nincs telepítve, a végfelhasználó gyakran egyikét fogja találni a következő értesítéseket:
+- 1 vagy több függő alkalmazások nem sikerült telepíteni
+- nem teljesített alkalmazáskövetelmények 1 vagy több függő
+- 1 vagy több függő alkalmazást egy eszköz-újraindítás függőben van
+
+Ha nem **automatikusan telepíteni** függőség, a Win32-alkalmazás telepítése nem kísérelte meg. Ezenkívül alkalmazásjelentések jelennek meg, hogy a függőséget megjelölt volt `failed` is adja meg a hiba okát. A függőség telepítése sikertelen kattintva megtekintheti a Win 32 alkalmazásban megadott hiba (vagy figyelmeztetés) [telepítés részletei](troubleshoot-app-install.md#win32-app-installation-troubleshooting). 
+
+Minden egyes függőségi felelnie a Intune Win32 alkalmazás újrapróbálkozási algoritmussal (3-szor telepítése 5 perc várakozás után próbálja meg) és a globális újraértékelésének ütemezését. Is függőségei alkalmazandók, csak a Win32-alkalmazás telepítése az eszközön időpontjában. Függőségek, amelyek nem alkalmazhatók a Win32-alkalmazás eltávolítása. Függőség törléséhez meg kell kattintson a három pontra (három ponttal jelölt) a bal oldalon, a függő alkalmazás a függőségi lista a sor végén található. 
 
 ## <a name="delivery-optimization"></a>Kézbesítésoptimalizálás
 
@@ -261,7 +321,7 @@ Az alábbi képen tájékoztatja a végfelhasználót, hogy az eszköz alkalmaz�
 ![Képernyőkép, amely az alkalmazás változásokra kerül sor a felhasználó értesítése](./media/apps-win32-app-09.png)    
 
 ## <a name="toast-notifications-for-win32-apps"></a>Bejelentési értesítések Win32-alkalmazások 
-Ha szükséges, bemutató végfelhasználói bejelentési értesítések egy alkalmazás-hozzárendelés tilthatja le. Az Intune-ból, válassza ki a **ügyfélalkalmazás** > **alkalmazások** > Válassza ki az alkalmazást > **Assignemnts** > **csoportokhozközétartozik**. 
+Ha szükséges, bemutató végfelhasználói bejelentési értesítések egy alkalmazás-hozzárendelés tilthatja le. Az Intune-ból, válassza ki a **ügyfélalkalmazás** > **alkalmazások** > Válassza ki az alkalmazást > **hozzárendelések** > **csoportokhozközétartozik**. 
 
 > [!NOTE]
 > Az Intune felügyeleti bővítmény Win32-alkalmazások nem lesz eltávolítva a nem regisztrált eszközökön telepítve van. A rendszergazdák kihasználhatják a hozzárendelés-kizárás nem ajánlja fel a BYOD-eszközök Win32-alkalmazások.
