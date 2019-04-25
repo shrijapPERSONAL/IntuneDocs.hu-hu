@@ -8,10 +8,12 @@
 
 ## [Bejelentkezés a céges portálra](sign-in-to-the-company-portal.md)
 
-## [Android-eszköz használata](using-your-android-device-with-intune.md)
-### [Mi történik, ha Android-eszközt regisztrál?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-### [Az eszköz regisztrálása](enroll-your-device-in-Intune-android.md)
-#### [Eszköz regisztrálása az Android for Workben](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+## Android-eszköz használata
+### [Miért kell regisztrálni az Android-eszközt](why-enroll-android-device.md)
+### Saját eszköz regisztrálása
+#### [Android-eszköz regisztrálása](enroll-device-android-company-portal.md)  
+#### [Regisztrálás androidos munkahelyi profillal](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+#### [Regisztrálás Microsoft Intune-alkalmazással](enroll-device-android-microsoft-intune-app.md)
 ### [Felügyelt alkalmazások használata az eszközön](use-managed-apps-on-your-device-android.md)
 ### [Az eszköz titkosítása](encrypt-your-device-android.md)
 ### [PIN-kód vagy jelszó beállítása](set-your-pin-or-password-android.md)
@@ -23,16 +25,15 @@
 #### [Az eszköz regisztrációjának törlése](unenroll-your-device-from-intune-android.md)
 #### [Az eszköz regisztrációjának törlése, ha nem fogadta el a használati feltételeket](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 
-### [Az Android gyakori problémáinak elhárítása](troubleshoot-your-device-android.md)
+### Az Android gyakori problémáinak elhárítása
 #### [Az eszközök megfelelőségének ellenőrzése](check-compliance-on-your-device-android.md)
 #### [A Samsung Knox gyakori problémáinak elhárítása](samsung-knox-errors-android.md)
 #### [Eszköz frissítése az Outlook telepítéséhez](update-device-outlook-android.md)
 
-#### Problémák megoldása naplók segítségével
+#### Naplózás
 ##### [A részletes naplózás bekapcsolása](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-##### [Naplók elküldése e-mailben](send-logs-to-your-it-admin-by-email-android.md)
+##### [Feltöltési és e-mail-naplók](send-logs-to-your-it-admin-by-email-android.md)
 ##### [Naplók elküldése USB-kábelen](send-logs-to-your-it-admin-using-cable-android.md)
-##### [Regisztrációs hibák beküldése](send-enrollment-errors-to-your-it-admin-android.md)
 ##### [Hibák elküldése a Microsoftnak](send-logs-to-microsoft-android.md)
 
 ### Operációs rendszerekkel kapcsolatos kérdések

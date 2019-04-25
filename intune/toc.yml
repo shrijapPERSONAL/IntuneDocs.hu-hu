@@ -329,6 +329,8 @@
           items:
             - name: StageNow-naplók és gyakori problémák
               href: android-zebra-mx-logs-troubleshoot.md
+        - name: OEMConfig Android Enterprise-on
+          href: android-oem-configuration-overview.md
         - name: Távközlési költségek monitorozása
           href: telecom-expenses-monitor.md
         - name: Egyéni eszközbeállítások
