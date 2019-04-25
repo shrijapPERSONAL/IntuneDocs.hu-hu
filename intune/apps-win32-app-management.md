@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f05d3d19e1cce0c290a9af363ca1541881d7820f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
-ms.translationtype: HT
+ms.openlocfilehash: 8c2cac99ba45ccd91629e6db32d91735d90d706e
+ms.sourcegitcommit: 6d6f43d69462f7f8fadc421c4ba566dc6ec20c36
+ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 04/23/2019
-ms.locfileid: "60164141"
+ms.locfileid: "62426153"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Önálló Intune - Win32-Alkalmazáskezelés
 
@@ -282,6 +282,9 @@ Ezen a ponton végrehajtotta egy Win32-alkalmazás hozzáadása az Intune-hoz. A
 ## <a name="app-dependencies"></a>Alkalmazás függőségei
 
 Alkalmazás függőségei olyan alkalmazások, amelyek a Win32-alkalmazás telepítése előtt telepíteni kell. Megkövetelheti, hogy más alkalmazások telepíti a függőségeket. Pontosabban, az eszközön telepíteni kell a függő alkalmazás(ok) a Win32-alkalmazás telepítése előtt. Legfeljebb 100 függőségeket, beleértve a függőségeket bármely része van függőségeit, valamint az alkalmazás programkódját. A Win32-alkalmazás függőségei is hozzáadhat, csak a Win32-alkalmazás hozzáadása és az Intune-bA feltöltött után. A Win32-alkalmazás hozzáadása után látni fogja a **függőségek** lehetőséget a panelen, a Win32-alkalmazás. 
+
+> [!NOTE]
+> Alkalmazás-függőséget működéséhez lesz elérhető, csak azt követően az Intune felügyeleti ügynök frissítve lett 1904 verziót (1.18.120.0 nagyobb), amely egy vagy két további hét után 1904, hogy frissítse a szolgáltatást is igénybe vehet.
 
 Ha egy alkalmazás függőség hozzáadása, kereshet az alkalmazás nevének és közzétevő alapján. Ezenkívül a hozzáadott függőségek az alkalmazás nevének és közzétevő alapján rendezheti. Korábban hozzáadott alkalmazás függőségei nem lehet kiválasztani a hozzáadva függőségi listáját. 
 

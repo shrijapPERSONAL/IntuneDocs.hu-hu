@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/09/2019
+ms.date: 04/23/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8997cb8f3e36367de06d6e5aa1c7c6971ee905a4
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 8858848d12ca3f5839741fc15d87e1cd66e9fad0
+ms.sourcegitcommit: bc1bdd63725e62253fcb2daecc41df128bd320f7
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61506015"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "63452838"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>macOS eszközfunkció-beállítások az Intune-ban
 
@@ -51,6 +51,21 @@ Ezek a beállítások hozzá egy eszközkonfigurációs profilt az Intune-ban, �
 - **Importálás** (nem kötelező): Emellett **importálás** egy vesszővel tagolt fájlt (.csv), amely tartalmazza az AirPrint-nyomtatókra listáját. Miután hozzáadta az AirPrint-nyomtatókra az Intune-ban, azt is megtehetjük, **exportálása** ebben a listában.
 
 Válassza ki **OK** a beállítások mentéséhez.
+
+### <a name="get-the-ip-address-and-path"></a>Az IP-cím és az elérési út
+
+Az IP-címét a nyomtatót, az erőforrás elérési útja és a portot kell AirPrinter-kiszolgálók hozzáadásához. A következő lépések bemutatják, hogyan beolvasni ezeket az információkat.
+
+1. Az azonos helyi hálózatra (alhálózatra), az AirPrint-nyomtatókra csatlakoztatott Mac számítógépen nyissa meg a **terminálon** (a **/Applications/Utilities**).
+2. A Terminálszolgáltatások alkalmazásban írjon be `ippfind`, és válassza ki, adja meg.
+
+    Megjegyzés: a nyomtató-információkat. Például előfordulhat, hogy vissza valami hasonló `ipp://myprinter.local.:631/ipp/port1`. Az első része a nyomtató neve. A második (`ipp/port1`) az erőforrás elérési útja.
+
+3. A Terminalba írja be a `ping myprinter.local`, és válassza ki, adja meg.
+
+   Megjegyzés: az IP-címet. Például előfordulhat, hogy vissza valami hasonló `PING myprinter.local (10.50.25.21)`.
+
+4. IP-cím és az erőforrás elérési útja értéket használja. Ebben a példában az IP-cím van `10.50.25.21`, és az erőforrás-elérési út `/ipp/port1`.
 
 ## <a name="login-window"></a>Bejelentkezési ablak
 
@@ -90,22 +105,7 @@ Után a felhasználók bejelentkeznek az eszközök, hatással a következő be�
 
 Válassza ki **OK** a beállítások mentéséhez.
 
-## <a name="get-the-ip-address-and-path"></a>Az IP-cím és az elérési út
-
-Az IP-címét a nyomtatót, az erőforrás elérési útja és a portot kell AirPrinter-kiszolgálók hozzáadásához. A következő lépések bemutatják, hogyan beolvasni ezeket az információkat.
-
-1. Az azonos helyi hálózatra (alhálózatra), az AirPrint-nyomtatókra csatlakoztatott Mac számítógépen nyissa meg a **terminálon** (a **/Applications/Utilities**).
-2. A Terminálszolgáltatások alkalmazásban írjon be `ippfind`, és válassza ki, adja meg.
-
-    Megjegyzés: a nyomtató-információkat. Például előfordulhat, hogy vissza valami hasonló `ipp://myprinter.local.:631/ipp/port1`. Az első része a nyomtató neve. A második (`ipp/port1`) az erőforrás elérési útja.
-
-3. A Terminalba írja be a `ping myprinter.local`, és válassza ki, adja meg.
-
-   Megjegyzés: az IP-címet. Például előfordulhat, hogy vissza valami hasonló `PING myprinter.local (10.50.25.21)`.
-
-4. IP-cím és az erőforrás elérési útja értéket használja. Ebben a példában az IP-cím van `10.50.25.21`, és az erőforrás-elérési út `/ipp/port1`.
-
 ## <a name="next-steps"></a>További lépések
 
 - A megadott beállítások megjelenítéséhez [iOS](ios-device-features-settings.md) eszközök.
-- [Ez a profil hozzárendelése](device-profile-assign.md) a csoportokhoz és [állapotát nyomon](device-profile-monitor.md).
+- [Ez a profil hozzárendelése](device-profile-assign.md) a csoportokhoz, és [állapotát nyomon](device-profile-monitor.md).
