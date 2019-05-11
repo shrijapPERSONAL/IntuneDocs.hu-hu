@@ -6,24 +6,24 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 04/30/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
-ms.reviewer: heenamac
+ms.reviewer: davidra
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab9fef5a577783ebbdd512de6d00ab98483e754c
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 92216550ee53c220beb3dc325be02c28b5eeb0c5
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61513351"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135211"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>A Mobile Threat Defense-összekötő engedélyezése az Intune-ban
 
@@ -67,7 +67,7 @@ A cég igényei alapján eldöntheti, hogy az MTD mely kapcsolós beállításai
 - **Ennyi nap múlva partner nem válaszol**: Ennyi nap inaktivitás után tekinti úgy a partner a kapcsolat megszakadása miatt nem válaszol az Intune. Az Intune nem veszi figyelembe a nem válaszoló MTD-partnerek megfelelőségi állapotát.
 
 > [!IMPORTANT] 
-> Az MTD-alkalmazásokat még az eszközmegfelelési és a feltételes hozzáférési szabályzatok létrehozása előtt fel kell vennie és hozzá kell rendelnie. Ez biztosítja, hogy az MTD-alkalmazás még az e-mailekhez és az egyéb céges erőforrásokhoz való hozzáférés előtt telepítésre kész és elérhető legyen a végfelhasználók számára.
+> Ha lehetséges, javasoljuk, hogy adja hozzá, és rendelje hozzá az MTD-alkalmazások az eszköz megfelelőségét és a feltételes hozzáférési szabályok létrehozása előtt. Ez segít biztosítja, hogy az MTD alkalmazást kész és elérhető legyen a végfelhasználók számára, mielőtt hozzáférhetnének a levelezéshez és más vállalati erőforrásokhoz való telepítéséhez.
 
 > [!TIP]
 > A Mobile Threat Defense panelen látható a **Kapcsolat állapota** és a **Legutóbb szinkronizálva**, mely utóbbi az Intune és az MTD-partner közötti szinkronizálásra vonatkozik.

@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b2a5e2bbd6d06cc4ec0cf71ee815229b01040a8
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 70638228875f1fb063a2ea22dc424c00f3940a30
+ms.sourcegitcommit: ef4bc7318449129af3dc8c0154e54a264b7bf4e5
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61490687"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65197628"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Az Intune-ban Windows 10 biztonsági alapterv létrehozása
 
@@ -61,7 +61,7 @@ Közösen kezelt eszközök használata esetén kell váltania a **eszközkonfig
 ## <a name="create-the-profile"></a>A profil létrehozása
 
 1. Az a [az Azure portal](https://portal.azure.com/), jelölje be **minden szolgáltatás** > szűréséhez **Intune** > Válassza ki **Intune**.
-2. Válassza ki **biztonsági előírások (előzetes verzió)**. Az elérhető alapkonfigurációk listáját érhető el. További alaptervek hozzáadásakor, akkor azokat itt jelenik meg:
+2. Válassza ki **eszközbiztonsági** > **biztonsági előírások (előzetes verzió)**. Az elérhető alapkonfigurációk listáját érhető el. További alaptervek hozzáadásakor, akkor azokat itt jelenik meg:
 
     ![Az Intune-ban jelenleg elérhető biztonsági alapkonfigurációit listáját lásd:](./media/security-baselines/available-baselines.png)
 

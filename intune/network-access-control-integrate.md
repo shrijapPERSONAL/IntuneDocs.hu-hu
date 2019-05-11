@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 04/25/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48228d0baea204fd94175750075c04771116a74d
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: cbef2059f42a209a63e4ba3f1e83aec410237d02
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61513793"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135133"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Hálózati hozzáférés-vezérlés (NAC) integrálása az Intune-nal
 
@@ -63,27 +63,39 @@ A követező listában megtalálhatja annak áttekintését, hogyan működik az
 9. Sikeresen létrejön a kapcsolat, amelyen keresztül az eszköz hozzáfér a vállalati erőforrásokhoz.
 
 ## <a name="use-nac-for-vpn-on-your-ios-devices"></a>NAC. használja az IOS-es eszközök VPN-hez  
-A Cisco Legacy AnyConnect, F5 hozzáférés örökölt és a Citrix VPN NAC anélkül, hogy a NAC engedélyezéséhez a VPN-profil használata támogatott.
 
-NAC Citrix egyszeri bejelentkezéshez is támogatott. NAC engedélyezése a Citrix egyszeri bejelentkezéshez iOS-hez:
-- A Citrix átjáróval 12.0.59 vagy újabb verziója.  
-- Felhasználók kell Citrix SSO 1.1.6 vagy újabb verziója szükséges.
-- [A NetScaler integrálása az Intune-nal a NAC](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) a Citrix termékdokumentációját leírtak szerint.
-- Alapszintű VPN-beállítások konfigurációjában a **engedélyezése hálózati hozzáférést vezérlő (NAC)**, jelölje be a jelölőnégyzetet a **elfogadom**.
+- NAC érhető el a következő VPN-eket a VPN-profil a NAC engedélyezése nélkül:
 
-Citrix SSO iOS-hez való használatakor a VPN-kapcsolat le van választva biztonsági okokból 24 óránként. Azonnal is újra létrehozza a VPN-t.
+  - A Cisco Legacy AnyConnect NAC
+  - F5 Access Legacy
+  - Citrix VPN
 
+- NAC Citrix egyszeri Bejelentkezéssel és F5 hozzáférést is érhető el. A NAC Citrix SSO engedélyezése:
 
-**Hálózati hozzáférés-vezérlés jelenleg nem támogatott a következő VPN-ügyfelek iOS rendszeren**:
--   Cisco AnyConnect
--   F5 Access
+  - A Citrix átjáróval 12.0.59 vagy újabb verziója.  
+  - Felhasználók kell Citrix SSO 1.1.6 vagy újabb verziója szükséges.
+  - [A NetScaler integrálása az Intune-nal a NAC](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) a Citrix termékdokumentációját leírtak szerint.
+  - Válassza ki a VPN-profil **alapvető beállítások** > **engedélyezése hálózati hozzáférést vezérlő (NAC)** > Válasszon **elfogadom**.
 
-Ezen újabb ügyfelek számára a NAC-megoldás felszabadítása partnereinkkel együttműködve dolgozunk. Ha kész megoldásokkal tudunk szolgálni, további részletekkel frissítjük majd ezt a cikket. 
+  A VPN-kapcsolat le van választva biztonsági okokból 24 óránként. Azonnal is újra létrehozza a VPN-t.
 
+- A NAC F5 hozzáférés engedélyezése:
+
+  - Use F5 BIG-IP 13.1.1.5. BIG-IP-14 nem támogatott.
+  - BIG-IP integrálása az Intune-nal a NAC. A [áttekintése: APM konfigurálása az eszköz állapotát ellenőrzi a végpont felügyeleti rendszerekkel](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) F5 Útmutató lépéseit sorolja fel.
+  - Válassza ki a VPN-profil **alapvető beállítások** > **engedélyezése hálózati hozzáférést vezérlő (NAC)** > Válasszon **elfogadom**.
+
+  A VPN-kapcsolat le van választva biztonsági okokból 24 óránként. Azonnal is újra létrehozza a VPN-t.
+
+- Hálózati hozzáférés-vezérlés a következő VPN-ügyfél IOS-eszközökön nem támogatott:
+  - Cisco AnyConnect
+
+Ezen újabb ügyfelek számára a NAC-megoldás felszabadítása partnereinkkel együttműködve dolgozunk. Amikor készen áll a megoldásokat, ez a cikk további információkat tartalmazó frissül.
 
 ## <a name="next-steps"></a>További lépések
 
 - [A Cisco ISE integrálása az Intune-nal](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
 - [A Citrix NetScaler integrálása az Intune-nal](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)
+- [F5 BIG-IP-hozzáférési házirend Manager integrálása az Intune-nal](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-13-0-0/6.html)
 - [A HP Aruba ClearPass integrálása az Intune-nal](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=31271)
 - [Squadra Security Removable Media Manager integrálása az Intune-nal](http://www.squadratechnologies.com/StaticContent/ProductDownload/secRMM/9.9.0.0/secRMMIntuneAccessControlSetupGuide.pdf)

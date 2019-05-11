@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 4/24/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d089d0e9724a1ce150fa7e8697c80734fb0d7e9c
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.openlocfilehash: 68f5fad9d05787b6e79792d594480547ce10cf81
+ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59894297"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64764909"
 ---
 # <a name="what-is-device-enrollment"></a>Mi az eszközregisztrálás?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -67,11 +67,19 @@ Alapértelmezés szerint platformtól függetlenül minden eszköz regisztráci�
 
 ## <a name="android-enrollment-methods"></a>Android-eszközök regisztrálási módszerei
 
-| **Módszer** |  **Alaphelyzetbe állítás szükséges** |    **Felhasználói affinitás**   |   **Zárolás** | **Részletek**|
+| **Személyes** | **Eszközök regisztrálási módszerei** | **Alaphelyzetbe állítás szükséges** | **Felhasználói affinitás** | **Zárolás** | **Részletek**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#bring-your-own-device)** | Nem|   Igen |   Nem | [További információ](./android-enroll.md)|
-|**[DEM](#device-enrollment-manager)**| Nem |Nem |Nem  |[További információ](./device-enrollment-manager-enroll.md)|
-|**Androidos munkahelyi profilok**| Nem | Igen | Nem| [További információ](./android-work-profile-enroll.md) |
+|**Android-eszköz felügyelet**|**Felhasználó által kezdeményezett a vállalati portálon keresztül** | Nem | Igen | Nem | [További információ](https://docs.microsoft.com/intune-user-help/enroll-device-android-company-portal)|
+|**Android Enterprise munkahelyi profil**|**Felhasználó által kezdeményezett a vállalati portálon keresztül**| Nem | Igen | Nem | [További információ](./android-work-profile-enroll.md)|
+
+
+| **Vállalati** | **Eszközök regisztrálási módszerei** | **Alaphelyzetbe állítás szükséges** | **Felhasználói affinitás** | **Zárolás** | **Részletek**|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|**Android-eszköz felügyelet**|**[Készülékregisztráció-kezelő](#device-enrollment-manager) vállalati portálon keresztül kezdeményezett**| Nem | Nem | Nem |[További információ](./device-enrollment-manager-enroll.md)|
+|**Android-eszköz felügyelet**|**(Előre bejelentett IMEI vagy SN) Felhasználó által kezdeményezett a vállalati portálon keresztül**| Nem | Igen | Nem | [További információ](./corporate-identifiers-add.md)|
+|**Android-eszköz rendszergazdai Zebra mobilitási bővítményekkel**|**Felhasználó vagy [készülékregisztráció-kezelő](#device-enrollment-manager) vállalati portálon keresztül kezdeményezett**| Nem | Igen, ha a felhasználó által kezdeményezett, nem if [készülékregisztráció-kezelő](#device-enrollment-manager) kezdeményezett | Nem | [További információ](./android-zebra-mx-overview.md)|
+|**Dedikált Android Enterprise**|**NFC, a jogkivonatot, QR-kódot, Zero Touch**| Igen | Nem | Konfigurálható csoportházirend használatával | [További információ](./android-kiosk-enroll.md)|
+|**Android Enterprise teljes körűen felügyelt (előzetes verzió)**|**NFC, a jogkivonatot, QR-kódot, Zero Touch**| Igen | Igen | Konfigurálható csoportházirend használatával | [További információ](./android-dedicated-devices-fully-managed-enroll.md)|
 
 
 ## <a name="bring-your-own-device"></a>Saját eszközök használata (Bring Your Own Device)

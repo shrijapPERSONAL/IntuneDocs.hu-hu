@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/19/2019
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e642573311d1452a970dce798dabdc705e4a44f7
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 751d89ef023bea07d3c8bdb69904605d88c9e0b6
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61504204"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135224"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Automatizált e-mailek és műveletek nem megfelelő eszközök hozzáadása az Intune-ban
 
@@ -103,9 +103,6 @@ További műveletet akkor vehet fel, ha megfelelőségi szabályzatot hoz létre
          - Csoportok kiválasztásával adjon meg esetleges **további címzetteket**
     
     - **A nem megfelelő eszköz távoli zárolása**: Ha az eszköz nem megfelelő, akkor zárolja az eszközt. Ez a művelet kényszeríti a felhasználónak meg kell adnia a PIN-kódot vagy jelszót az eszköz zárolásának feloldásához. 
-
-    - **A nem megfelelő eszközök kivonása**: Amikor az eszköz nem megfelelő, távolítsa el az összes vállalati adat ki az eszközt, és távolítsa el az eszközt az Intune felügyelete. Az eszköz véletlen törlés megelőzése érdekében ez a művelet támogatja minimális ütemezés **30** nap.  
-
     
 5. Konfigurálja a **ütemezés**: Adja meg a nap (0 és 365 között), a felhasználók eszközein a műveletet nem megfelelő állapot kezdete után. A türelmi időszak után kényszerítheti a feltételes hozzáférési szabályzatot. Ha megad **0** (nulla) számot nap, akkor a feltételes hozzáférés érvénybe **azonnal**. Például azonnal letilthatja a vállalati erőforrásokhoz való hozzáférést egy eszköz meg nem felelése esetén.
 

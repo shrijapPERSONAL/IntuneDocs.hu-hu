@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/22/2019
+ms.date: 04/25/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6dff7e28daff503570350950b60ae974cd048c5c
-ms.sourcegitcommit: 6d6f43d69462f7f8fadc421c4ba566dc6ec20c36
-ms.translationtype: HT
+ms.openlocfilehash: 401bc833b2b864983ec301972950ffbd04fe2229
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62426230"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135193"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 
@@ -46,6 +46,25 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Ugyanitt tal
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-may-6-2019"></a>2019. május 6 hete 
+
+### <a name="device-configuration"></a>Eszközök konfigurálása
+
+#### <a name="network-access-control-nac-support-for-f5-access-for-ios-devices----4500808---"></a>Hálózati hozzáférés-vezérlés (NAC) támogatása iOS-eszközökhöz készült F5 hozzáférés <!-- 4500808 -->
+
+F5 BIG-IP 13, amely lehetővé teszi a NAC-funkciók F5 hozzáférés az Intune-ban iOS-en frissítést adott ki. Ez a funkció használatához:
+
+- BIG-IP Update 13.1.1.5 való frissítéséhez. BIG-IP-14 nem támogatott.
+- BIG-IP integrálása az Intune-nal a NAC. Lépések [áttekintése: APM konfigurálása az eszköz állapotát ellenőrzi a végpont felügyeleti rendszerekkel](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89).
+- Ellenőrizze a **engedélyezése hálózati hozzáférést vezérlő (NAC)** beállítása az Intune-ban a VPN-profil.
+
+A rendelkezésre álló beállítás megtekintéséhez, keresse fel a [konfigurálása VPN-beállítások iOS-eszközökön](vpn-settings-ios.md).
+
+A következőre vonatkozik: iOS
+
+#### <a name="updated-pfx-certificate-connector-for-microsoft-intune----doc-vso-1521237----"></a>Frissített PFX-Tanúsítványösszekötő a Microsoft Intune-ban <!-- doc-vso 1521237  -->  
+Kibocsátottunk egy frissítést a [PFX-Tanúsítványösszekötő a Microsoft Intune](certficates-pfx-configure.md#whats-new-for-connectors) , csökken a lekérdezési időköz 5 perccel 30 másodperc.
 
 ## <a name="week-of-april-22-2019"></a>2019 április 22 hete
 
@@ -75,7 +94,7 @@ A következő példában láthatja az általános adatvédelmi rendelet vezérl�
 Az Intune alkalmazásvédelmi szabályzatai (alkalmazás) Android-eszközökön az OpenSSL titkosítási tárba, amely érvényes a FIPS 140-2 szabványnak megfelelő használja. További információkért lásd: a [titkosítási](app-protection-policy-settings-android.md#encryption) szakaszában [Androidos alkalmazásvédelmi szabályzat beállításai a Microsoft Intune-ban](app-protection-policy-settings-android.md).
 
 #### <a name="enable-win32-app-dependencies----2617348----"></a>A Win32-alkalmazás függőségei engedélyezése <!-- 2617348  -->
-Mint a rendszergazda megkövetelheti, hogy más alkalmazások telepíti a függőségeket a Win32-alkalmazás telepítése előtt. Pontosabban, az eszközön telepíteni kell a függő alkalmazás(ok) a Win32-alkalmazás telepítése előtt. Válassza ki az Intune-ban **ügyfélalkalmazások** > **alkalmazások** > **Hozzáadás** megjelenítéséhez a **alkalmazás hozzáadása** panelen. Válassza ki **Windows-alkalmazás (Win32)** , a **alkalmazástípus**. Miután hozzáadta az alkalmazást, kijelölheti **függőségek** és a függő alkalmazásokat, a Win32-alkalmazás telepítése előtt telepíteni kell. További információkért lásd: [önálló Intune - Win32-Alkalmazáskezelés](apps-win32-app-management.md). Ez a funkció érhető el, csak azt követően az Intune felügyeleti ügynök frissítve lett 1904 verziót (1.18.120.0 nagyobb), amely egy vagy két további hét után 1904, hogy frissítse a szolgáltatást is igénybe vehet.
+Mint a rendszergazda megkövetelheti, hogy más alkalmazások telepíti a függőségeket a Win32-alkalmazás telepítése előtt. Pontosabban, az eszközön telepíteni kell a függő alkalmazás(ok) a Win32-alkalmazás telepítése előtt. Válassza ki az Intune-ban **ügyfélalkalmazások** > **alkalmazások** > **Hozzáadás** megjelenítéséhez a **alkalmazás hozzáadása** panelen. Válassza ki **Windows-alkalmazás (Win32)** , a **alkalmazástípus**. Miután hozzáadta az alkalmazást, kijelölheti **függőségek** és a függő alkalmazásokat, a Win32-alkalmazás telepítése előtt telepíteni kell. További információkért lásd: [önálló Intune - Win32-Alkalmazáskezelés](apps-win32-app-management.md). 
 
 #### <a name="app-version-installation-information-for-microsoft-store-for-business-apps----3537391-----"></a>Alkalmazás verziója telepítéséhez szükséges információkat a Microsoft Store üzleti alkalmazások <!-- 3537391   -->
 Alkalmazás telepítési jelentések az üzleti alkalmazások Microsoft Store-alkalmazás verziója adatai tartalmazzák. Válassza ki az Intune-ban **ügyfélalkalmazás** > **alkalmazások**. Válassza ki a **Microsoft Store for Business app** , majd **eszköz telepítési állapota** alatt a **figyelő** szakaszban.
@@ -91,6 +110,9 @@ Az eszköz áttekintése lapon jelennek meg az elsődleges felhasználója, a fe
 
 #### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices----4105925----"></a>Jelentéskészítés a vállalati Android munkahelyi profilos eszközök további felügyelt Google Play alkalmazás <!-- 4105925  -->
 A telepített vállalati Android munkahelyi profilos eszközök felügyelt Google Play alkalmazások megtekintheti az alkalmazást az eszközön telepített adott verziószáma. Ez csak a szükséges alkalmazások vonatkozik. A rendelkezésre álló alkalmazások ugyanazokat a funkciókat az egy későbbi kiadásban engedélyezve lesz. 
+
+#### <a name="ios-third-party-keyboards----4111843-idready-eeready---"></a>iOS harmadik féltől származó billentyűzetek <!-- 4111843 idready eeready -->
+Az Intune app protection szabályzat (alkalmazás) támogatása a **harmadik féltől származó billentyűzetek** beállítása iOS-iOS platform módosítása miatt már nem támogatott. Nem tudnak konfigurálja ezt a beállítást az Intune felügyeleti konzolon, és nem kényszeríti az Intune App SDK az ügyfélen.
 
 ### <a name="device-configuration"></a>Eszközök konfigurálása
 
@@ -108,7 +130,7 @@ Az összes, a konfigurálható beállítások megtekintéséhez, keresse fel a [
 
 
 #### <a name="configure-bluetooth-and-pairing-on-android-enterprise-device-owner-dedicated-devices-running-in-multi-app-kiosk-mode----3041941----"></a>A Bluetooth és az Android Enterprise, az eszköz tulajdonosa párosítás többalkalmazásos kioszk módban futó dedikált eszközök konfigurálása <!-- 3041941  -->
-Beállítások az Android Enterprise, az eszköz tulajdonosa többalkalmazásos kioszk módban dedikált eszközként futtatásakor engedélyezheti. Ebben a frissítésben engedélyezi a Bluetooth engedélyezése végfelhasználók számára, és párosítsa az eszközöket a Bluetooth-on keresztül (**Intune** > **eszközkonfiguráció** > **profilok**  >  **Profil létrehozása** > **Android Enterprise** tartozó platform > **csak az eszköz tulajdonosa, eszközkorlátozások** profil típus > **dedikált eszközök** > **teljes képernyős mód**: **Multi-App** > **Bluetooth konfigurációs**). 
+Beállítások az Android Enterprise, az eszköz tulajdonosa többalkalmazásos kioszk módban dedikált eszközként futtatásakor engedélyezheti. Ez a frissítés lehetővé teszi a végfelhasználók számára, hogy a Bluetooth engedélyezése, és párosítsa az eszközöket a Bluetooth-on keresztül (**Intune** > **eszközkonfiguráció** > **profilok**  >  **Profil létrehozása** > **Android Enterprise** tartozó platform > **csak az eszköz tulajdonosa, eszközkorlátozások** profil típus > **dedikált eszközök** > **teljes képernyős mód**: **Multi-App** > **Bluetooth konfigurációs**). 
 
 Az összes, a konfigurálható beállítások megtekintéséhez, keresse fel a [engedélyezi, vagy korlátozhatja a funkciókat Android Enterprise-eszközbeállítások](device-restrictions-android-for-work.md).
 
@@ -124,7 +146,7 @@ Ez a funkció kapcsolatos további információkért lépjen a [használata és 
 Érintett kiadások: Android enterprise
 
 #### <a name="windows-update-notifications-----3316758-3316782----"></a>Windows-frissítési értesítések  <!-- 3316758, 3316782  -->
-Két hozzáadtunk *a felhasználói élmény beállításainak* beállítások a Windows Update csörögni konfigurációk, amelyek az Intune-konzolról kezelheti. Mostantól:
+Két hozzáadtunk *a felhasználói élmény beállításainak* a Windows Update csörögni konfigurációk, amelyek az Intune-konzolról kezelheti. Mostantól:
 - Letiltása vagy engedélyezése a felhasználóknak [-Windows-frissítéseket keresni](windows-update-settings.md#block-user-from-scanning-for-windows-updates).
 - Kezelheti a [Windows-frissítési értesítés szintjét](windows-update-settings.md#windows-update-notification-level) , hogy a felhasználók láthatják.
 
@@ -207,7 +229,7 @@ Hatókörcímkék adhat hozzá az Apple VPP-tokent. Csak az azonos címkéjű ha
 ### <a name="device-configuration"></a>Eszközök konfigurálása
 
 #### <a name="updated-certificate-connectors-----icm-113304612---"></a>Frissített tanúsítvány-összekötőt  <!-- ICM 113304612 -->
-Mindkét kiadás frissítéseket a [Intune tanúsítvány-összekötő és a PFX-Tanúsítványösszekötő](certficates-pfx-configure.md#whats-new-for-connectors). Az új kiadásokkal számos ismert problémák megoldása.  
+Mindkét kiadás frissítéseket a [Intune tanúsítvány-összekötő és a PFX-Tanúsítványösszekötő a Microsoft Intune](certficates-pfx-configure.md#whats-new-for-connectors). Az új kiadásokkal számos ismert problémák megoldása.  
 
 ### <a name="app-management"></a>Alkalmazáskezelés
 
@@ -376,7 +398,7 @@ Válassza ki az Intune-ban **ügyfélalkalmazás** > **alkalmazások** > "App na
 Egy új képernyőt nevű **Alkalmazáskategóriák** a Windows 10 céges portál alkalmazás tallózása és kiválasztása élményének növelése érdekében jelentősen bővült. A felhasználók mostantól látnak alkalmazásaikat, például a kategóriák szerint rendezve **kiemelt**, **oktatási**, és **termelékenység**. Ez a módosítás megjelenik a céges portál verziókban 10.3.3451.0 és újabb verziók. Az új képernyő megtekintése: [az alkalmazásfelhasználói felület újdonságai](https://docs.microsoft.com/intune/whats-new-app-ui). A vállalati portál alkalmazások kapcsolatos további információkért lásd: [telepítése és megosztása az eszközön található alkalmazások](/intune-user-help/install-apps-cpapp-windows).  
 
 #### <a name="power-bi-compliance-app----1455231-doc-work-item---"></a>A Power BI megfelelőségi alkalmazás <!-- 1455231 doc-work-item -->
-A Power BI online-hoz az Intune-adattárház elérése a [(adatraktár) az Intune megfelelőségi](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) alkalmazást. A Power BI alkalmazással most már elérheti és megoszthatja az előre létrehozott jelentések beállítások nélkül, és a böngésző elhagyása nélkül. További információkért lásd: [módosítási napló - megfelelőségi a Power BI alkalmazás](reports-changelog.md#power-bi-compliance-app).
+A Power BI online-hoz az Intune-adattárház elérése a [(adatraktár) az Intune megfelelőségi](https://aka.ms/intune/datawarehouseapi/getpowerbiapp) alkalmazást. A Power BI alkalmazással most már elérheti és megoszthatja az előre létrehozott jelentések beállítások nélkül, és a böngésző elhagyása nélkül. További információkért lásd: [módosítási napló - megfelelőségi a Power BI alkalmazás](reports-changelog.md#power-bi-compliance-app).
 
 
 ### <a name="device-configuration"></a>Eszközök konfigurálása

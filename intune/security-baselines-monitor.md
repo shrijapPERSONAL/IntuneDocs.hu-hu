@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc82653355ae57830684270fc8f7b9f1f3ae2491
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: a013698e56b342953e52296270e7571a257db860
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61507053"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135092"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Biztonsági alapterv, illetve a Microsoft Intune-ban a profilok figyelése  
 
@@ -35,7 +35,7 @@ Ez a cikk végigvezeti mindkét megfigyelési lehetőségeket.
 
 Amikor alapkonfigurációt, akkor információkhoz juthat az eszközök a Microsoft javaslatok alapján biztonsági állapotát. Ezek is használható elemzéseket készítsenek az Áttekintés ablaktábláján, a biztonsági alapkonfiguráció az Intune-konzolon tekintheti meg.  Az adatok jelennek meg először az alapterv hozzárendelése után akár 24 órát vesz igénybe. Újabb módosításokat jelennek meg akár hat órát is igénybe vehet.  
 
-Az eredeti és az eszközöket a figyelési adatok megtekintéséhez jelentkezzen be a [Intune-portálon](https://aka.ms/intuneportal). Majd **biztonsági előírások (előzetes verzió)**, jelölje be egy alapterv, és tekintse meg a **áttekintése** ablaktáblán.
+Az eredeti és az eszközöket a figyelési adatok megtekintéséhez jelentkezzen be a [Intune-portálon](https://go.microsoft.com/fwlink/?linkid=2090973). Majd **eszközbiztonsági** > **biztonsági előírások (előzetes verzió)**, jelölje be egy alapterv, és tekintse meg a **áttekintése** ablaktáblán.
 
 A **áttekintése** ablaktábla állapotának figyelése kétféle módszert biztosít:
 - **Eszköz megtekintése** – összegzését, hogy hány eszköz van az egyes állapota az alapterv esetében.  

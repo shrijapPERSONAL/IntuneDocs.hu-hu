@@ -17,12 +17,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a18c579853b162024aaa93d5dad2bfd854d8c0d2
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 52b92483ddafadf460911caaa472825a0bc0a20f
+ms.sourcegitcommit: b4483c8476a209de83102e8993d8074dbb323493
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61512933"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65527222"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>A figyelő a BitLocker és az eszköz titkosítása  
 Az Intune kínál egy központi helyen, azonosíthatja a Windows 10 rendszerű eszközök titkosítási állapotát, és elérhetővé teszi a BitLocker vonatkozó fontos információk az eszközök, az Azure Active Directoryban (Azure AD) formában.  
@@ -60,7 +60,7 @@ Amikor kijelöl egy eszközt, az Intune megjeleníti a **titkosítási Eszközá
 
 Ezen a panelen a következő részleteket biztosítja:  
 - **Eszköz neve** – az eszköz megjelenített neve.  
-- **Titkosítási készültségi** – egy eszközök készen áll-e BitLocker-titkosítást támogató értékelését. Egy eszköz rendelkezhet egy titkosítási állapotát *titkosított* annak ellenére, hogy a titkosítás készültségi *nem áll készen*, mert nem rendelkezik TPM. (Lásd a titkosítási készültségi az azt megelőző további részleteket a következő szakaszban.)
+- **Titkosítási készültségi** – egy eszközök készen áll-e BitLocker-titkosítást támogató értékelését. Egy eszköz rendelkezhet egy titkosítási állapotát *titkosított* annak ellenére, hogy a titkosítás készültségi *nem áll készen*, mert nem rendelkezik TPM. (Lásd a titkosítási készültségi további részleteket az előző szakaszban.)
 - **Titkosítás állapota** - e az operációs rendszer meghajtójának titkosítva van.  
 - **Profilok** – listáját a *eszközkonfiguráció* profilok, amelyek erre az eszközre érvényesek, és a következő típust és a beállítások tartalmazzák:  
   - Profil típusa = *az Endpoint protection*  

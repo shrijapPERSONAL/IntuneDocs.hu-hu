@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/03/2019
+ms.date: 05/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8b05b7f2a0b56321023bc8444528578aeface0b
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 491610fcefa1b20159ebfe487c9e2d95a6f5e7c6
+ms.sourcegitcommit: 586114e1beee31aa8553f69c0ba4d731afcb45e8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61508585"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65402062"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>PKCS-tanúsítványok konfigurálása és használata az Intune-nal
 
@@ -189,7 +189,7 @@ Egy VPN-, Wi-Fi- vagy egyéb erőforrások eszköz hitelesítéséhez, egy eszk�
 3. Nyissa meg a **Beállítások** lapot, és adja meg a korábban exportált hitelesítésszolgáltatói főtanúsítvány .cer fájlját.
 
    > [!NOTE]
-   > A **3. lépésben** választott platformtól függően lehetősége lehet **Céltárolót** választani a tanúsítvány számára.
+   > A kiválasztott platformtól függően **2. lépés**, előfordulhat, hogy, vagy előfordulhat, hogy rendelkezik egy lehetőséget, kiválaszthatja a **céltár** a tanúsítványt.
 
    ![Profil létrehozása és töltsön fel egy megbízható tanúsítványt](media/certificates-pfx-configure/certificates-pfx-configure-profile-fill.png) 
 
@@ -248,16 +248,21 @@ A tanúsítványok Intune-ba importálása után hozzon létre egy **Importált 
 ## <a name="whats-new-for-connectors"></a>Új összekötők
 A két tanúsítványprofilt összekötők frissítései rendszeresen jelennek meg. Amikor a frissítés egy összekötőt, itt olvashat itt végrehajtott módosítások. 
 
-A *PFX-tanúsítványok összekötő* [támogatja az automatikus frissítések](#requirements), míg az Intune tanúsítvány-összekötő manuális frissül.
+A *PFX tanúsítvány-összekötő a Microsoft Intune* [támogatja az automatikus frissítések](#requirements), míg a *Intune tanúsítvány-összekötő* manuálisan frissíteni.
+
+### <a name="may-6-2019"></a>2019. május 6.
+- **A Microsoft Intune - verzió 6.1905.0.402 PFX-tanúsítványok összekötő**  
+  Ez a kiadás változásai:  
+  - A lekérdezési időköz az összekötő 30 másodperc, 5 perccel csökken.
  
 ### <a name="april-2-2019"></a>2019. április 2.
-- **NDES tanúsítvány-összekötő – 6.1904.1.0 verzió**  
+- **Az Intune tanúsítvány-összekötő – 6.1904.1.0 verzió**  
   Ez a kiadás változásai:  
   - Javítva lett egy probléma, ha az összekötő regisztrálása az Intune-hoz, az összekötő egy globális rendszergazdai fiókkal való bejelentkezés után meghiúsulhat.  
   - A tanúsítvány visszavonásának megbízhatósági javítások tartalmazza.  
   - Teljesítmény javításai növeléséhez, milyen gyorsan PKCS-tanúsítványkérelmek feldolgozása.  
 
-- **PFX-tanúsítványok összekötő – 6.1904.0.401 verzió**
+- **A Microsoft Intune - verzió 6.1904.0.401 PFX-tanúsítványok összekötő**
   > [!NOTE]  
   > Automatikus frissítés a PFX-összekötő ezen verziója a 2019. április 11. amíg nem érhető el.  
 

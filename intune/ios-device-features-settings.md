@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/01/2019
+ms.date: 04/23/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c2a94be7ebc369005f92809d57c8e55076972df3
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 1bcd3a5d0b9f7abc1aa2e0b4d96c30c956b6b4c7
+ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61509960"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64764897"
 ---
 # <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>általános iOS-szolgáltatások használata az Intune-ban iOS-eszközbeállítások
 
@@ -35,22 +35,18 @@ Ez a cikk ezeket a beállításokat, és ismerteti az egyes beállítások funkc
 
 [Hozzon létre egy IOS-es eszközkonfigurációs profil](device-features-configure.md#create-a-device-profile).
 
-## <a name="airprint-settings"></a>AirPrint-beállítások
+## <a name="airprint"></a>AirPrint
 
-Ez a funkció lehetővé teszi, hogy iOS felhasználók számára ismert AirPrint-nyomtatókra történő nyomtatás.
+- **IP-cím**: Adja meg a nyomtató IPv4 vagy IPv6-címét. Ha állomásnevek nyomtatók azonosítására használ, a nyomtató billentyűparancsot a terminálon pingelésével beszerezheti az IP-címet. IP-címének lekéréséhez és elérési útját (a jelen cikkben) további információt talál.
+- **Elérési út**: Az elérési út általában `ipp/print` nyomtatók a hálózaton. IP-címének lekéréséhez és elérési útját (a jelen cikkben) további információt talál.
+- **Port**: Adja meg az AirPrint-célhely figyelőportja. Ha üresen hagyja ezt a tulajdonságot, az AirPrint az alapértelmezett portot használ. Az iOS 11.0-s vagy újabb érhető el.
+- **TLS**: Válasszon **engedélyezése** AirPrint-kapcsolatok a Transport Layer Security (TLS) biztonságos. Az iOS 11.0-s vagy újabb érhető el.
 
-1. A **beállítások**válassza **AirPrint**. Adja meg a következő tulajdonságokat az AirPrint-kiszolgáló:
+**Adjon hozzá** az AirPrint-kiszolgáló hozzáadása a listához. Számos AirPrint-kiszolgálókat is hozzáadhat. Emellett **importálás** ezeket az információkat egy vesszővel tagolt fájlt (.csv). Miután létrehozta a listában, akkor is **exportálása** az AirPrint-kiszolgálók listáját.
 
-    - **IP-cím**: Adja meg a nyomtató IPv4 vagy IPv6-címét. Ha állomásnevek nyomtatók azonosítására használ, a nyomtató billentyűparancsot a terminálon pingelésével beszerezheti az IP-címet. IP-címének lekéréséhez és elérési útját (a jelen cikkben) további információt talál.
-    - **Elérési út**: Az elérési út általában `ipp/print` nyomtatók a hálózaton. IP-címének lekéréséhez és elérési útját (a jelen cikkben) további információt talál.
-    - **Port**: Adja meg az AirPrint-célhely figyelőportja. Ha üresen hagyja ezt a tulajdonságot, az AirPrint az alapértelmezett portot használ. Az iOS 11.0-s vagy újabb érhető el.
-    - **TLS**: Válasszon **engedélyezése** AirPrint-kapcsolatok a Transport Layer Security (TLS) biztonságos. Az iOS 11.0-s vagy újabb érhető el.
+Válassza ki **OK** mentheti a listát.
 
-2. Válassza a **Hozzáadás** lehetőséget. Az AirPrint-kiszolgáló hozzáadásakor a listához. Számos AirPrint-kiszolgálókat is hozzáadhat.
-
-    Emellett **importálás** ezeket az információkat egy vesszővel tagolt fájlt (.csv). Miután létrehozta a listában, akkor is **exportálása** az AirPrint-kiszolgálók listáját.
-
-3. Amikor végzett, válassza ki a **OK** mentheti a listát.
+### <a name="get-server-ip-address-resource-path-and-port"></a>Kiszolgáló IP-címét, az erőforrás elérési útja és a port
 
 Az IP-címét a nyomtatót, az erőforrás elérési útja és a portot kell AirPrinter-kiszolgálók hozzáadásához. A következő lépések bemutatják, hogyan beolvasni ezeket az információkat.
 
@@ -73,29 +69,32 @@ Ezek a beállítások konfigurálása az alkalmazások és mappák elrendezésé
 
 Használja a **Dock** beállítások legfeljebb 6 elemet vagy mappát ad hozzá az iOS-képernyőn elhelyezkedő dockhoz. Számos eszköz támogatja a kevesebb elemet. Például az iPhone-eszközök csak négy elem elhelyezését támogatják. Ebben az esetben csak az első négy elem hozzáadásakor látható az eszközön.
 
-1. A **beállítások**válassza **kezdőképernyő-elrendezés (csak felügyelt)** > **Dock** > **Hozzáadás**. Akár is hozzáadhat **hat** (alkalmazások és mappák kombinált) elem a dock esetében.
-2. A **típus**, felvehet egy **alkalmazás** vagy egy **mappa**.
+Akár is hozzáadhat **hat** (alkalmazások és mappák kombinált) elem a dock esetében.
 
-    - **Alkalmazás felvétele**: Válassza ezt a lehetőséget, hogy alkalmazásokat adhasson a képernyőn elhelyezkedő dockhoz. Enter:
+- **Adjon hozzá**: Alkalmazások és mappák hozzáadása a dockhoz az eszközön.
+- **Típus**: Adjon hozzá egy **alkalmazás** vagy egy **mappa**:
 
+  - **Alkalmazás**: Válassza ezt a lehetőséget, hogy alkalmazásokat adhasson a képernyőn elhelyezkedő dockhoz. Enter:
+
+    - **Alkalmazásnév**: Adja meg az alkalmazás nevét. Ezt a nevet használja, hogy az Azure Portalon. Ez *nem* jelenik meg az iOS-eszközön.
+    - **Alkalmazásköteg-azonosító**: Adja meg az alkalmazás Csomagazonosítóját. Lásd: [Alkalmazásköteg-azonosítókat beépített iOS-alkalmazások](bundle-ids-built-in-ios-apps.md) vonatkozó példákat.
+
+    Válassza ki **OK** a módosítások mentéséhez.
+
+  - **Mappa**: Válassza ezt a beállítást, a mappa hozzáadása a képernyőn elhelyezkedő dockhoz.
+
+    Egy lap egy mappában hozzáadott alkalmazások balról vannak elrendezve, jobb oldalon, és ugyanabban a sorrendben, mint a listában. További alkalmazások, mint a lapon elfér is hozzáadhat, ha az alkalmazások áthelyezik egy másik lapot.
+
+    - **Mappa neve**: Adja meg a mappa neve. Ez a név jelenik meg a felhasználók eszközén.
+    - **Lapok listája**: **Adjon hozzá** oldal, és adja meg a következő tulajdonságokat:
+
+      - **Lap neve**: Adjon meg egy nevet a laphoz. Ezt a nevet használja, hogy az Azure Portalon. Ez *nem* jelenik meg az iOS-eszközön.
       - **Alkalmazásnév**: Adja meg az alkalmazás nevét. Ezt a nevet használja, hogy az Azure Portalon. Ez *nem* jelenik meg az iOS-eszközön.
-      - **Alkalmazásköteg-azonosító**: Adja meg az alkalmazás Csomagazonosítóját. Lásd: [Alkalmazásköteg-azonosítókat beépített iOS-alkalmazások](#bundle-ids-for-built-in-ios-apps) (a jelen cikkben) vonatkozó példákat.
+      - **Alkalmazásköteg-azonosító**: Adja meg az alkalmazás Csomagazonosítóját. Lásd: [Alkalmazásköteg-azonosítókat beépített iOS-alkalmazások](bundle-ids-built-in-ios-apps.md) vonatkozó példákat.
 
-      Válassza ki **OK** a módosítások mentéséhez.
+      Akár is hozzáadhat **20** dock oldalak az eszközhöz.
 
-    - **Mappa hozzáadása a**: Válassza ezt a beállítást, a mappa hozzáadása a képernyőn elhelyezkedő dockhoz. 
-
-      Egy lap egy mappában hozzáadott alkalmazások balról vannak elrendezve, jobb oldalon, és ugyanabban a sorrendben, mint a listában. További alkalmazások, mint a lapon elfér is hozzáadhat, ha az alkalmazások áthelyezik egy másik lapot.
-
-      1. Adjon meg egy **mappanevet**. Ez a név jelenik meg a felhasználók eszközén.
-      2. Válasszon **Hozzáadás**, és adja meg a következő tulajdonságokat:
-
-          - **Lap neve**: Adjon meg egy nevet a laphoz. Ezt a nevet használja, hogy az Azure Portalon. Ez *nem* jelenik meg az iOS-eszközön.
-          - **Alkalmazásnév**: Adja meg az alkalmazás nevét. Ezt a nevet használja, hogy az Azure Portalon. Ez *nem* jelenik meg az iOS-eszközön.
-          - **Alkalmazásköteg-azonosító**: Adja meg az alkalmazás Csomagazonosítóját. Lásd: [Alkalmazásköteg-azonosítókat beépített iOS-alkalmazások](#bundle-ids-for-built-in-ios-apps) (a jelen cikkben) vonatkozó példákat.
-
-      3. Válassza a **Hozzáadás** lehetőséget. Akár is hozzáadhat **20** dock oldalak az eszközhöz.
-      4. Válassza ki **OK** a módosítások mentéséhez.
+    Válassza ki **OK** a módosítások mentéséhez.
 
 > [!NOTE]
 > Ikonok Dock beállításokkal hozzáadásakor az ikonok a kezdőlap képernyő és a lapok zárolva van, és nem lehet áthelyezni. Az iOS és az Apple MDM-szabályzatok elvárt lehet.
@@ -117,33 +116,37 @@ Adja hozzá a kezdőképernyőn látható kívánt lapokat és az egyes lapokon 
 > [!TIP]
 > Bármely kezdőlap kezdőképernyő és a lapok látható elemek átrendezéséhez húzza át, és el kell dobni ezeket.
 
-1. A **beállítások**válassza **kezdőképernyő-elrendezés (csak felügyelt)** > **Oldalak** > **Hozzáadás**. Akár is hozzáadhat **40** oldalak az eszközön.
-2. Adjon meg egy **lap neve**. Ezt a nevet használja, hogy az Azure Portalon, és *nem* jelenik meg az iOS-eszközön. 
+Akár is hozzáadhat **40** oldalak az eszközön.
 
-    Válassza a **Hozzáadás** lehetőséget. Akár is hozzáadhat **60** elemek (alkalmazások és mappa együttes) az eszközön.
+- **Lapok listája**: **Adjon hozzá** oldal, és adja meg a következő tulajdonságokat:
 
-3. A **típus**, felvehet egy **alkalmazás** vagy egy **mappa**.
+  - **Lap neve**: Adjon meg egy nevet a laphoz. Ezt a nevet használja, hogy az Azure Portalon, és *nem* jelenik meg az iOS-eszközön.
 
-    - **Alkalmazás felvétele**: Ezt a lehetőséget az alkalmazások hozzáadása egy laphoz a képernyőn. Enter:
+  Akár is hozzáadhat **60** elemek (alkalmazások és mappa együttes) az eszközön.
 
-      - **Alkalmazásnév**: Adja meg az alkalmazás nevét. Ezt a nevet használja, hogy az Azure Portalon. Ez *nem* jelenik meg az iOS-eszközön.
-      - **Alkalmazásköteg-azonosító**: Adja meg az alkalmazás Csomagazonosítóját. Lásd: [Alkalmazásköteg-azonosítókat beépített iOS-alkalmazások](#bundle-ids-for-built-in-ios-apps) (a jelen cikkben) vonatkozó példákat.
+  - **Adjon hozzá**: Alkalmazások és mappák ad hozzá egy oldal, az eszközön.
+
+    - **Típus**: Adjon hozzá egy **alkalmazás** vagy egy **mappa**:
+
+      - **Alkalmazás**: Ezt a lehetőséget az alkalmazások hozzáadása egy laphoz a képernyőn. Ezt is adja meg:
+
+        - **Alkalmazásnév**: Adja meg az alkalmazás nevét. Ezt a nevet használja, hogy az Azure Portalon. Ez *nem* jelenik meg az iOS-eszközön.
+        - **Alkalmazásköteg-azonosító**: Adja meg az alkalmazás Csomagazonosítóját. Lásd: [Alkalmazásköteg-azonosítókat beépített iOS-alkalmazások](bundle-ids-built-in-ios-apps.md) vonatkozó példákat.
 
       Válassza ki **OK** a módosítások mentéséhez.
 
-    - **Mappa hozzáadása a**: Válassza ezt a beállítást, a mappa hozzáadása a képernyőn elhelyezkedő dockhoz. 
+      - **Mappa**: Válassza ezt a beállítást, a mappa hozzáadása a képernyőn elhelyezkedő dockhoz.
 
-      Egy lap egy mappában hozzáadott alkalmazások balról vannak elrendezve, jobb oldalon, és ugyanabban a sorrendben, mint a listában. További alkalmazások, mint a lapon elfér is hozzáadhat, ha az alkalmazások áthelyezik egy másik lapot.
+        Egy lap egy mappában hozzáadott alkalmazások balról vannak elrendezve, jobb oldalon, és ugyanabban a sorrendben, mint a listában. További alkalmazások, mint a lapon elfér is hozzáadhat, ha az alkalmazások áthelyezik egy másik lapot.
 
-      1. Adjon meg egy **mappanevet**. Ez a név jelenik meg a felhasználók eszközén.
-      2. Válasszon **Hozzáadás**, és adja meg a következő tulajdonságokat:
+        - **Mappa neve**: Adja meg a mappa nevét. Ez a név jelenik meg a felhasználók számára az eszközön.
+        - **Adjon hozzá**: Oldalak hozzáadása a mappát. Emellett adja meg a következő tulajdonságokkal:
 
           - **Lap neve**: Adjon meg egy nevet a laphoz. Ezt a nevet használja, hogy az Azure Portalon. Ez *nem* jelenik meg az iOS-eszközön.
           - **Alkalmazásnév**: Adja meg az alkalmazás nevét. Ezt a nevet használja, hogy az Azure Portalon. Ez *nem* jelenik meg az iOS-eszközön.
-          - **Alkalmazásköteg-azonosító**: Adja meg az alkalmazás Csomagazonosítóját. Lásd: [Alkalmazásköteg-azonosítókat beépített iOS-alkalmazások](#bundle-ids-for-built-in-ios-apps) (a jelen cikkben) vonatkozó példákat.
+          - **Alkalmazásköteg-azonosító**: Adja meg az alkalmazás Csomagazonosítóját. Lásd: [Alkalmazásköteg-azonosítókat beépített iOS-alkalmazások](bundle-ids-built-in-ios-apps.md) vonatkozó példákat.
 
-      3. Válassza a **Hozzáadás** lehetőséget.
-      4. Válassza ki **OK** a módosítások mentéséhez.
+      Válassza ki **OK** a módosítások mentéséhez.
 
 #### <a name="example"></a>Példa
 
@@ -159,50 +162,43 @@ A szabályzatot egy iPhone-eszközhöz társítja, az oldal jelenik meg az aláb
 
 Válassza ki az iOS-eszközök értesítések küldése hogyan telepített alkalmazások. Ezek a beállítások az iOS 9.3-at vagy újabb verziót futtató felügyelt eszközökön vannak támogatva.
 
-1. A **beállítások**válassza **Alkalmazásértesítések (csak felügyelt)** > **Hozzáadás**:
+- **Adjon hozzá**: Az alkalmazások értesítések hozzáadása:
 
     ![Alkalmazásértesítés hozzáadása iOS-profilt az Intune-ban](./media/ios-macos-app-notifications.png)
 
-2. Adja meg a következő tulajdonságokat:
+  - **Alkalmazás Csomagazonosítója**: Adja meg a **Alkalmazásköteg-azonosító** a hozzáadni kívánt alkalmazás. Lásd: [Alkalmazásköteg-azonosítókat beépített iOS-alkalmazások](bundle-ids-built-in-ios-apps.md) vonatkozó példákat.
+  - **Alkalmazásnév**: Adja meg a hozzáadni kívánt alkalmazás nevét. Ezt a nevet használja, hogy az Azure Portalon. Ez *nem* látható az eszközön.
+  - **Közzétevő**: Adja meg az alkalmazás kiadójának nevét adja hozzá. Ezt a nevet használja, hogy az Azure Portalon. Ez *nem* látható az eszközön.
+  - **Értesítések**: **Engedélyezése** vagy **letiltása** az alkalmazás értesítéseket küldjön az eszközre.
+    - **Megjelenítés az értesítési központban**: **Engedélyezése** lehetővé teszi az alkalmazás értesítéseket jeleníthet meg az értesítési központban. **Tiltsa le** megakadályozza, hogy az alkalmazás értesítések megjelenítése az értesítési központban.
+    - **Megjelenítés a zárolási képernyőn**: Válassza ki **engedélyezése** megtekintéséhez jelenhetnek meg az eszköz zárolási képernyőjén. **Tiltsa le** megakadályozza, hogy az alkalmazás értesítések megjelenítése a zárolási képernyőn.
+    - **Riasztás típusa**: Ha az eszköz zárolásának származó, válassza ki, hogyan az értesítés jelenik meg. A választható lehetőségek:
+      - **Nincs**: Nincs értesítés jelenik meg.
+      - **Banner**: Egy szalagcím rövid időre az értesítés mellett látható.
+      - **Modális**: Az értesítés jelenik meg, és a felhasználó manuálisan kell bezárnia, az eszköz használatához a folytatás előtt.
+    - **Jelvény az alkalmazásikonon**: Válassza ki **engedélyezése** egy jelvény hozzá az alkalmazás ikonjára. A jelvény azt jelenti, hogy az alkalmazás értesítést küld.
+    - **A hangok**: Válassza ki **engedélyezése** , ha értesítés érkezik.
 
-    - **Alkalmazás Csomagazonosítója**: Adja meg a **Alkalmazásköteg-azonosító** a hozzáadni kívánt alkalmazás. Lásd: [Alkalmazásköteg-azonosítókat beépített iOS-alkalmazások](#bundle-ids-for-built-in-ios-apps) (a jelen cikkben) vonatkozó példákat.
-    - **Alkalmazásnév**: Adja meg a hozzáadni kívánt alkalmazás nevét. Ezt a nevet használja, hogy az Azure Portalon. Ez *nem* látható az eszközön.
-    - **Közzétevő**: Adja meg az alkalmazás kiadójának nevét adja hozzá. Ezt a nevet használja, hogy az Azure Portalon. Ez *nem* látható az eszközön.
-    - **Értesítések**: **Engedélyezése** vagy **letiltása** az alkalmazás értesítéseket küldjön az eszközre.
-       - **Megjelenítés az értesítési központban**: **Engedélyezése** lehetővé teszi az alkalmazás értesítéseket jeleníthet meg az értesítési központban. **Tiltsa le** megakadályozza, hogy az alkalmazás értesítések megjelenítése az értesítési központban.
-       - **Megjelenítés a zárolási képernyőn**: Válassza ki **engedélyezése** megtekintéséhez jelenhetnek meg az eszköz zárolási képernyőjén. **Tiltsa le** megakadályozza, hogy az alkalmazás értesítések megjelenítése a zárolási képernyőn.
-       - **Riasztás típusa**: Ha az eszköz zárolásának származó, válassza ki, hogyan az értesítés jelenik meg. A választható lehetőségek:
-         - **Nincs**: Nincs értesítés jelenik meg.
-         - **Banner**: Egy szalagcím rövid időre az értesítés mellett látható.
-         - **Modális**: Az értesítés jelenik meg, és a felhasználó manuálisan kell bezárnia, az eszköz használatához a folytatás előtt.
-       - **Jelvény az alkalmazásikonon**: Válassza ki **engedélyezése** egy jelvény hozzá az alkalmazás ikonjára. A jelvény azt jelenti, hogy az alkalmazás értesítést küld.
-       - **A hangok**: Válassza ki **engedélyezése** , ha értesítés érkezik.
-
-3. Válassza ki **OK** a módosítások mentéséhez. Folytassa a kívánt alkalmazásokat. Amikor végzett, válassza ki a **OK**.
+Válassza ki **OK** a módosítások mentéséhez.
 
 ## <a name="lock-screen-message-settings"></a>Zárolási képernyőjén üzenetek beállításai
 
 Ezek a beállítások használatával egy egyéni üzenetet vagy szöveg megjelenítése a bejelentkezési ablakban és a zárolási képernyőn. Például megadhat egy "Ha megtalálja, térjen vissza..." üzenetet és eszközcímkeadatokat. 
 
-Ez a funkció támogatja a rendszert futtató felügyelt eszközök:
+Ez a funkció támogatja az iOS 9.3 és újabb rendszert futtató felügyelt eszközökön.
 
-- iOS 9.3 és újabb verziók
+- **Eszközcímke-információ**: Adja meg az eszköz az eszközcímke adatait. Például írja be a következőt: `Owned by Contoso Corp` vagy `Serial Number: {{serialnumber}}`.
 
-1. A **beállítások**válassza **(csak felügyelt) üzenet a zárolási képernyőn**.
-2. Adja meg a következő beállításokat:
+  A beírt szöveg jelenik meg a bejelentkezési ablakban és a zárolási képernyő, az eszközön.
 
-    - **Eszközcímke-információ**: Adja meg az eszköz az eszközcímke adatait. Például írja be a következőt: `Owned by Contoso Corp` vagy `Serial Number: {{serialnumber}}`. 
+- **Lábjegyzet a zárolási képernyőn**: Ha az eszköz elveszett vagy ellopták, adjon meg egy, melyek segíthetnek az eszközt. Megadhatja a kívánt szöveget. Például: `If found, call Contoso at ...`.
 
-      A beírt szöveg jelenik meg a bejelentkezési ablakban és a zárolási képernyő, az eszközön.
+  Eszközök tokenjeit is használható eszközre vonatkozó információk hozzáadása a mezőkhöz. Írja be például a sorozatszám megjeleníthető `Serial Number: {{serialnumber}}`. A zárolási képernyőn a szöveg látható hasonló `Serial Number 123456789ABC`. Változók megadásakor ügyeljen arra, hogy kapcsos zárójeleket `{{ }}`. [Alkalmazás-konfigurációs jogkivonatokról](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) használható változók listáját tartalmazza. Is `deviceName` vagy bármely más eszközspecifikus érték.
 
-    - **Lábjegyzet a zárolási képernyőn**: Ha az eszköz elveszett vagy ellopták, adjon meg egy, melyek segíthetnek az eszközt. Megadhatja a kívánt szöveget. Például: `If found, call Contoso at ...`.
+  > [!NOTE]
+  > Változók nem érvényesíti a felhasználói felületen. Ennek eredményeképpen jelenhet meg helytelen adatbevitel a mentett profilokat. Ha például meg `{{Devicename}}` helyett `{{devicename}}`, akkor a szövegkonstanst látható az eszköz egyedi neve helyett.
 
-    Eszközök tokenjeit is használható eszközre vonatkozó információk hozzáadása a mezőkhöz. Írja be például a sorozatszám megjeleníthető `Serial Number: {{serialnumber}}`. A zárolási képernyőn a szöveg látható hasonló `Serial Number 123456789ABC`. Változók megadásakor ügyeljen arra, hogy kapcsos zárójeleket `{{ }}`. [Alkalmazás-konfigurációs jogkivonatokról](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) használható változók listáját tartalmazza. Is `deviceName` vagy bármely más eszközspecifikus érték.
-
-    > [!NOTE]
-    > Változók nem érvényesíti a felhasználói felületen. Ennek eredményeképpen jelenhet meg helytelen adatbevitel a mentett profilokat. Ha például meg `{{Devicename}}` helyett `{{devicename}}`, akkor a szövegkonstanst látható az eszköz egyedi neve helyett.
-
-3. Amikor végzett, válassza ki a **OK** a módosítások mentéséhez.
+Válassza ki **OK** a módosítások mentéséhez.
 
 ## <a name="single-sign-on-settings"></a>Egyszeri bejelentkezés beállításai
 
@@ -213,82 +209,77 @@ Egyszeri bejelentkezés használatára, hogy rendelkezik-e:
 - Egy alkalmazást, amely a felhasználói hitelesítő adatok tárolójából az egyszeri bejelentkezés az eszközön a keresett vannak kódolva.
 - Az iOS-eszközön való egyszeri bejelentkezéshez konfigurált Intune.
 
-1. A **beállítások**válassza **egyszeri bejelentkezési**:
+![Egyszeri bejelentkezés panel](./media/sso-blade.png)
 
-   ![Egyszeri bejelentkezés panel](./media/sso-blade.png)
+- **Felhasználónév attribútum az aad-ből**: Intune az Azure ad-ben ez az attribútum az egyes felhasználók keres. Intune az eszközön telepített XML létrehozása előtt majd tölti fel a megfelelő mezőben (például egyszerű felhasználónév). A választható lehetőségek:
 
-2. Adja meg a következő beállításokat:
+  - **Egyszerű felhasználónév**: Az UPN-jét a rendszer elemzi a következő módon:
 
-    - **Felhasználónév attribútum az aad-ből**: Intune az Azure ad-ben ez az attribútum az egyes felhasználók keres. Intune az eszközön telepített XML létrehozása előtt majd tölti fel a megfelelő mezőben (például egyszerű felhasználónév). A választható lehetőségek:
+    ![Felhasználónév attribútum](media/User-name-attribute.png)
 
-      - **Egyszerű felhasználónév**: Az UPN-jét a rendszer elemzi a következő módon:
+    Szükség esetén felülírhatja a tartományt is, ha beírja a kívánt tartománynevet a **Tartomány** szövegmezőbe.
 
-        ![Felhasználónév attribútum](media/User-name-attribute.png)
+    Például a Contoso számos régióban, például Európában, Ázsiában és Észak-Amerika rendelkezik. A Contoso biztosítani szeretné az egyszeri bejelentkezés használatára ázsiai felhasználóknak, és az alkalmazás igényel az egyszerű felhasználónév az a `username@asia.contoso.com` formátumban. Ha bejelöli **egyszerű felhasználónév**, az Azure Active Directory, amely átveszi a tartomány minden felhasználó számára a rendszer `contoso.com`. Ezért az ázsiai felhasználóknak kattintson **egyszerű felhasználónév**, és adja meg `asia.contoso.com`. A végfelhasználó UPN válik `username@asia.contoso.com`, hanem `username@contoso.com`.
 
-        Szükség esetén felülírhatja a tartományt is, ha beírja a kívánt tartománynevet a **Tartomány** szövegmezőbe.
+  - **Intune-Eszközazonosítót**: Az Intune automatikusan kiválasztja az Intune-eszközazonosító.
 
-        Például a Contoso számos régióban, például Európában, Ázsiában és Észak-Amerika rendelkezik. A Contoso biztosítani szeretné az egyszeri bejelentkezés használatára ázsiai felhasználóknak, és az alkalmazás igényel az egyszerű felhasználónév az a `username@asia.contoso.com` formátumban. Ha bejelöli **egyszerű felhasználónév**, az Azure Active Directory, amely átveszi a tartomány minden felhasználó számára a rendszer `contoso.com`. Ezért az ázsiai felhasználóknak kattintson **egyszerű felhasználónév**, és adja meg `asia.contoso.com`. A végfelhasználó UPN válik `username@asia.contoso.com`, hanem `username@contoso.com`.
+    Az alkalmazásoknak alapértelmezés szerint csak az eszközazonosítóra van szükségük. De ha az alkalmazás használ, a tartomány és az eszköz azonosítója, akkor a tartomány szövegmezőben megadhatja a tartományt.
 
-      - **Intune-Eszközazonosítót**: Az Intune automatikusan kiválasztja az Intune-eszközazonosító.
+    > [!NOTE]
+    > Alapértelmezett esetben hagyja a tartományt üresen, ha eszközazonosítót használ.
 
-        Az alkalmazásoknak alapértelmezés szerint csak az eszközazonosítóra van szükségük. De ha az alkalmazás használ, a tartomány és az eszköz azonosítója, akkor a tartomány szövegmezőben megadhatja a tartományt.
+  - **Az Azure AD-Eszközazonosító**
 
-        > [!NOTE]
-        > Alapértelmezett esetben hagyja a tartományt üresen, ha eszközazonosítót használ.
+- **A kezdőtartomány**: Adja meg az URL-címet a tartomány részét. Például írja be a következőt: `contoso.com`.
+- **Az egyszeri bejelentkezést használó URL-cím-előtagok**: **Adjon hozzá** bármely URL-címek a szervezet, amely egyszeri bejelentkezéses felhasználóhitelesítést igényel.
 
-      - **Az Azure AD-Eszközazonosító**
+  Ha egy felhasználó csatlakozik ezen webhelyekhez, az iOS-eszköz az egyszeri bejelentkezés hitelesítő adatait használja, és a felhasználónak nem kell hitelesítő adatokat megadnia. Ha a multi-factor authentication szolgáltatás engedélyezve van, felhasználók szükségesek adja meg a második hitelesítésre.
 
-    - **A kezdőtartomány**: Adja meg az URL-címet a tartomány részét. Például írja be a következőt: `contoso.com`.
-    - **Az egyszeri bejelentkezést használó URL-cím-előtagok**: **Adjon hozzá** bármely URL-címek a szervezet, amely egyszeri bejelentkezéses felhasználóhitelesítést igényel.
+  > [!NOTE]
+  > Ezeknek az URL-címeknek érvényes formátumú teljes tartományneveknek kell lenniük. Apple következő igényel a `http://<yourURL.domain>` formátumban.
 
-        Ha egy felhasználó csatlakozik ezen webhelyekhez, az iOS-eszköz az egyszeri bejelentkezés hitelesítő adatait használja, és a felhasználónak nem kell hitelesítő adatokat megadnia. Ha a multi-factor authentication szolgáltatás engedélyezve van, felhasználók szükségesek adja meg a második hitelesítésre.
+  Az URL-egyeztetési mintáknak `http://` vagy `https://` előtaggal kell kezdődniük. Egy egyszerű megkülönböztető egyeztetés fut, ezért a `http://www.contoso.com/` nem egyezik a URL-előtagot `http://www.contoso.com:80/`. IOS 10.0-s vagy újabb, egy helyettesítő karakter \* adja meg az összes egyező érték is használható. Ha például `http://*.contoso.com/` megegyezik, egyaránt `http://store.contoso.com/` és `http://www.contoso.com`.
 
-        > [!NOTE]
-        > Ezeknek az URL-címeknek érvényes formátumú teljes tartományneveknek kell lenniük. Apple következő igényel a `http://<yourURL.domain>` formátumban.
+  A `http://.com` és `https://.com` minták felel meg az összes HTTP és HTTPS URL-címek, jelölik.
 
-        Az URL-egyeztetési mintáknak `http://` vagy `https://` előtaggal kell kezdődniük. Egy egyszerű megkülönböztető egyeztetés fut, ezért a `http://www.contoso.com/` nem egyezik a URL-előtagot `http://www.contoso.com:80/`. IOS 10.0-s vagy újabb, egy helyettesítő karakter \* adja meg az összes egyező érték is használható. Ha például `http://*.contoso.com/` megegyezik, egyaránt `http://store.contoso.com/` és `http://www.contoso.com`.
+- **Az egyszeri bejelentkezést használó alkalmazások**: **Adjon hozzá** használó végfelhasználók számára az eszközökön telepített alkalmazások egyszeri bejelentkezés.
 
-        A `http://.com` és `https://.com` minták felel meg az összes HTTP és HTTPS URL-címek, jelölik.
+  A `AppIdentifierMatches` tömb kell tartalmaznia, amelyek illeszkednek az alkalmazásköteg-azonosítókat. Ezek a karakterláncok lehetnek pontos egyezések, mint például `com.contoso.myapp`, vagy adja meg az előtag-egyeztetést a csomag azonosítója használatával a \* helyettesítő karaktert. A helyettesítő karakter után egy pont karakter (.) kell megjelennie, és csak egyszer szerepelhet, a karakterlánc végén például `com.contoso.*`. A helyettesítő karakter használatakor az összes olyan alkalmazás hozzáférést kap a fiókhoz, amelynek a kötegazonosítója a megadott előtaggal kezdődik.
 
-    - **Az egyszeri bejelentkezést használó alkalmazások**: **Adjon hozzá** használó végfelhasználók számára az eszközökön telepített alkalmazások egyszeri bejelentkezés.
+  Az **Alkalmazásnév** elemnél megadhat egy felhasználóbarát nevet, amely alapján könnyebben felismeri a kötegazonosítót.
 
-        A `AppIdentifierMatches` tömb kell tartalmaznia, amelyek illeszkednek az alkalmazásköteg-azonosítókat. Ezek a karakterláncok lehetnek pontos egyezések, mint például `com.contoso.myapp`, vagy adja meg az előtag-egyeztetést a csomag azonosítója használatával a \* helyettesítő karaktert. A helyettesítő karakter után egy pont karakter (.) kell megjelennie, és csak egyszer szerepelhet, a karakterlánc végén például `com.contoso.*`. A helyettesítő karakter használatakor az összes olyan alkalmazás hozzáférést kap a fiókhoz, amelynek a kötegazonosítója a megadott előtaggal kezdődik.
+- **Hitelesítőadat-megújítási tanúsítvány**: Ha tanúsítványokat használ a hitelesítéshez (nem pedig jelszavakkal), válassza ki a meglévő SCEP- vagy PFX-tanúsítvány hitelesítési tanúsítványként. Ez a tanúsítvány általában ugyanazt a tanúsítványt, amelyet más profilokhoz, például a VPN-, Wi-Fi vagy e-mailt a felhasználónak.
 
-        Az **Alkalmazásnév** elemnél megadhat egy felhasználóbarát nevet, amely alapján könnyebben felismeri a kötegazonosítót.
-
-    - **Hitelesítőadat-megújítási tanúsítvány**: Ha tanúsítványokat használ a hitelesítéshez (nem pedig jelszavakkal), válassza ki a meglévő SCEP- vagy PFX-tanúsítvány hitelesítési tanúsítványként. Ez a tanúsítvány általában ugyanazt a tanúsítványt, amelyet más profilokhoz, például a VPN-, Wi-Fi vagy e-mailt a felhasználónak.
-
-3. Amikor végzett, válassza ki a **OK** a módosítások mentéséhez.
+Válassza ki **OK** a módosítások mentéséhez.
 
 ## <a name="web-content-filter-settings"></a>Webtartalomszűrő-beállításai
 
 Ezek a beállítások hozzáféréseket a böngésző URL-CÍMÉT az iOS-eszközökön.
 
-1. A **beállítások**válassza **webes tartalomszűrés (csak felügyelt)**.
-2. Válassza ki a **szűrőtípust**. A választható lehetőségek:
+- **Szűrő típusa**: Válassza ki, hogy a webhelyeket. A választható lehetőségek:
 
-    - **URL-címek konfigurálása**: Használja az Apple beépített átengedni felnőtt kifejezéseket, például TRÁGÁR és nyíltan nyelv. Ez a funkció minden lap értékeli ki, mert be töltve, és azonosítja és letiltja a nem megfelelő tartalmat. URL-címek, amelyek nem szeretné, hogy be van jelölve, a szűrő által is hozzáadhat. Másik lehetőségként letiltása adott URL-címek, z Apple webszűrőjének beállításaitól függetlenül.
+  - **URL-címek konfigurálása**: Használja az Apple beépített átengedni felnőtt kifejezéseket, például TRÁGÁR és nyíltan nyelv. Ez a funkció minden lap értékeli ki, mert be töltve, és azonosítja és letiltja a nem megfelelő tartalmat. URL-címek, amelyek nem szeretné, hogy be van jelölve, a szűrő által is hozzáadhat. Másik lehetőségként letiltása adott URL-címek, z Apple webszűrőjének beállításaitól függetlenül.
 
-      - **Engedélyezett URL-címek**: **Adjon hozzá** az engedélyezni kívánt URL-címeket. Az URL-címek az Apple átengedni kihagyása.
+    - **Engedélyezett URL-címek**: **Adjon hozzá** az engedélyezni kívánt URL-címeket. Az URL-címek az Apple átengedni kihagyása.
 
-        > [!NOTE]
+      > [!NOTE]
         > Az URL-címeket, akkor adja meg az Apple átengedni evauluated nem kívánt URL-címek. Az URL-címek nem engedélyezett webhelyek listája. Hozzon létre egy engedélyezett webhelyek listájában, állítsa be a **szűrőtípus** való **csak meghatározott webhelyek**.
 
-        Válassza ki **OK** a módosítások mentéséhez.
+      Válassza ki **OK** a módosítások mentéséhez.
 
-      - **Blokkolt URL-címek**: **Adjon hozzá** az URL-címeket meg szeretné szüntetni történő megnyitását, az Apple webszűrőjének beállításaitól függetlenül.
-
-        Válassza ki **OK** a módosítások mentéséhez.
-
-    - **Csak meghatározott webhelyek** (az a Safari webböngésző csak): Ezen URL-ek a Safari könyvjelzői közé kerülnek. A felhasználó **csak** ezeket a webhelyeket látogathatják meg más webhelyek nem lehet megnyitni. Akkor célszerű ezt a lehetőséget választani, ha a felhasználók által elérhető URL-ek listája pontosan ismert.
-
-      - **URL-CÍM**: Adja meg az engedélyezni kívánt webhely URL-CÍMÉT. Például írja be a következőt: `https://www.contoso.com`.
-      - **Lássa el könyvjelzővel elérési út**: Adja meg a könyvjelző tárolási helyét. Például írja be a következőt: `/Contoso/Business Apps`. Ha nem adja meg az elérési utat, a könyvjelző az eszköz alapértelmezett könyvjelzőmappájába kerül.
-      - **Cím**: Adja meg egy leíró címet a könyvjelzőnek.
-
-      Ha nem ad meg semmilyen URL, akkor a végfelhasználók az alábbiakat kivéve webhelyekhez férnek hozzá `microsoft.com`, `microsoft.net`, és `apple.com`. Az URL-címek az Intune által automatikusan engedélyezve van.
+    - **Blokkolt URL-címek**: **Adjon hozzá** az URL-címeket meg szeretné szüntetni történő megnyitását, az Apple webszűrőjének beállításaitól függetlenül.
 
       Válassza ki **OK** a módosítások mentéséhez.
+
+  - **Csak meghatározott webhelyek** (az a Safari webböngésző csak): Ezen URL-ek a Safari könyvjelzői közé kerülnek. A felhasználó **csak** ezeket a webhelyeket látogathatják meg más webhelyek nem lehet megnyitni. Akkor célszerű ezt a lehetőséget választani, ha a felhasználók által elérhető URL-ek listája pontosan ismert.
+
+    - **URL-CÍM**: Adja meg az engedélyezni kívánt webhely URL-CÍMÉT. Például írja be a következőt: `https://www.contoso.com`.
+    - **Lássa el könyvjelzővel elérési út**: Adja meg a könyvjelző tárolási helyét. Például írja be a következőt: `/Contoso/Business Apps`. Ha nem adja meg az elérési utat, a könyvjelző az eszköz alapértelmezett könyvjelzőmappájába kerül.
+    - **Cím**: Adja meg egy leíró címet a könyvjelzőnek.
+
+    Ha nem ad meg semmilyen URL, akkor a végfelhasználók az alábbiakat kivéve webhelyekhez férnek hozzá `microsoft.com`, `microsoft.net`, és `apple.com`. Az URL-címek az Intune által automatikusan engedélyezve van.
+
+    Válassza ki **OK** a módosítások mentéséhez.
 
 ## <a name="wallpaper-settings"></a>Háttérkép beállításai
 
@@ -305,57 +296,6 @@ Szokatlan viselkedés tapasztalható, amikor nincs kép profil hozzá van rendel
 
 > [!TIP]
 > A zárolási képernyőn látható kép-profil létrehozása a zárolási képernyő és a kezdőképernyő különböző képek megjelenítéséhez. Hozzon létre egy másik profilt a kezdőképernyő lemezképpel. Az iOS-felhasználói vagy eszközcsoportok mindkét profil hozzárendelésére.
-
-## <a name="bundle-ids-for-built-in-ios-apps"></a>Alkalmazásköteg-azonosítókat beépített iOS-alkalmazások
-
-Az alábbi listában néhány gyakori beépített iOS-alkalmazás csomagazonosítóját ismertetjük. Ha más alkalmazás csomagazonosítóját szeretné megismerni, lépjen kapcsolatba a szoftver gyártójával.
-
-| Csomagazonosító                   | Alkalmazásnév     | Kiadó |
-|-----------------------------|--------------|-----------|
-| com.apple.AppStore          | Alkalmazásáruház    | Apple     |
-| com.apple.calculator        | Számológép   | Apple     |
-| com.apple.mobilecal         | Naptár     | Apple     |
-| com.apple.camera            | Kamera       | Apple     |
-| com.apple.mobiletimer       | Óra        | Apple     |
-| com.apple.compass           | Iránytű      | Apple     |
-| com.apple.MobileAddressBook | Névjegyek     | Apple     |
-| com.apple.facetime          | FaceTime     | Apple     |
-| com.apple.DocumentsApp      | Fájlok        | Apple     |
-| com.apple.mobileme.fmf1     | Barátok keresése | Apple     |
-| com.apple.mobileme.fmip1    | iPhone keresése  | Apple     |
-| com.apple.gamecenter        | Game Center  | Apple     |
-| com.apple.mobilegarageband  | GarageBand   | Apple     |
-| com.apple.Health            | Állapot       | Apple     |
-| com.apple.Home              | Otthoni         | Apple     |
-| com.apple.iBooks            | iBooks       | Apple     |
-| com.apple.iMovie            | iMovie       | Apple     |
-| com.apple.itunesconnect.mobile | iTunes Connectben | Apple |
-| com.apple.MobileStore       | iTunes Store | Apple     |
-| com.apple.itunesu           | iTunes U     | Apple     |
-| com.apple.Keynote           | Keynote      | Apple     |
-| com.apple.mobilemail        | Mail         | Apple     |
-| com.apple.Maps              | Maps         | Apple     |
-| com.apple.MobileSMS         | Üzenetek     | Apple     |
-| com.apple.Music             | Zene        | Apple     |
-| com.apple.news              | Hírek         | Apple     |
-| com.apple.mobilenotes       | Megjegyzések        | Apple     |
-| com.apple.Numbers           | Számok      | Apple     |
-| com.apple.Pages             | Pages        | Apple     |
-| com.apple.Photo-Booth       | Photo Booth  | Apple     |
-| com.apple.mobileslideshow   | Fotók       | Apple     |
-| com.apple.podcasts          | Podcastok     | Apple     |
-| com.apple.reminders         | Emlékeztetők    | Apple     |
-| com.apple.mobilesafari      | Safari       | Apple     |
-| com.apple.Preferences       | Beállítások     | Apple     |
-| com.apple.SiriViewService   | Siri         | Apple     |
-| com.apple.stocks            | Részvények       | Apple     |
-| com.apple.tips              | Tippek         | Apple     |
-| com.apple.TV                | TV           | Apple     |
-| com.apple.videos            | Videók       | Apple     |
-| com.apple.VoiceMemos        | Hangjegyzetek   | Apple     |
-| com.apple.Passbook          | Wallet       | Apple     |
-| com.apple.Bridge            | Watch        | Apple     |
-| com.apple.weather           | Időjárás      | Apple     |
 
 ## <a name="next-steps"></a>További lépések
 

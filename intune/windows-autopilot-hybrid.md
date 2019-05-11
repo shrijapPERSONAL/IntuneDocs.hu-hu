@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ab718cd087757211ad4e84cbba39808cf9de7d3
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 2dd523b1c624de9fbdb12cc4f90cafa5c4395250
+ms.sourcegitcommit: b4483c8476a209de83102e8993d8074dbb323493
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61515510"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65527195"
 ---
-# <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot-preview"></a>Üzembe helyezése hibrid Azure AD-hez csatlakoztatott eszközökhöz az Intune-nal és a Windows Autopilot (előzetes verzió)
+# <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Üzembe helyezése hibrid Azure AD-hez csatlakoztatott eszközök Intune-nal és a Windows Autopilot használatával
 Hibrid Azure Active Directory (Azure AD) beállításához használhatja az Intune és a Windows Autopilot-hez csatlakoztatott eszközök. Ehhez kövesse a cikkben.
 
 ## <a name="prerequisites"></a>Előfeltételek
@@ -35,7 +35,7 @@ Sikerült beállítani a [hibrid Azure AD-hez csatlakoztatott eszközök](https:
 A regisztrálni kívánt eszközöknek a következő feltételeknek kell megfelelniük:
 - Windows 10-es operációs rendszert kell futtatniuk, amelyen telepítve van a [2018 októberi frissítés](https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/).
 - Rendelkezniük kell internet-hozzáféréssel.
-- Hozzáféréssel kell rendelkezniük az Active Directoryhoz (a VPN-kapcsolat nem támogatott).
+- Hozzáférhet az Active Directory (VPN-kapcsolat jelenleg nem támogatott).
 - A beépített élmény (OOBE) mennek keresztül.
 - Tudni pingelni a tartományvezérlő a tartomány, amelyhez csatlakozni kíván.
 

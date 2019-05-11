@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c2cac99ba45ccd91629e6db32d91735d90d706e
-ms.sourcegitcommit: 6d6f43d69462f7f8fadc421c4ba566dc6ec20c36
+ms.openlocfilehash: 24e783bc4586709d0cde6a2ebd19c2b5ca30ab6b
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62426153"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135121"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Önálló Intune - Win32-Alkalmazáskezelés
 
@@ -142,8 +142,8 @@ Az alábbi lépések útmutatást nyújtanak a Windows-alkalmazások Intune-hoz 
     Például, ha az alkalmazás Fájlnév **MyApp123**, adja hozzá a következő:<br>
     `msiexec /p “MyApp123.msp”`<p>
     És, ha az alkalmazás `ApplicationName.exe`, a következő paranccsal lehetséges az alkalmazás nevét, majd a csomag által támogatott parancssori argumentumok (kapcsolók). <br>Példa:<br>
-    `ApplicationName.exe /quite`<br>
-    A fenti parancsban a `ApplicaitonName.exe` csomag támogatja a `/quite` parancssori argumentum.<p> A megadott argumentumok az alkalmazáscsomag által támogatott az alkalmazás gyártójától.
+    `ApplicationName.exe /quiet`<br>
+    A fenti parancsban a `ApplicationName.exe` csomag támogatja a `/quiet` parancssori argumentum.<p> A megadott argumentumok az alkalmazáscsomag által támogatott az alkalmazás gyártójától.
 
 3.  Adja meg az alkalmazás eltávolításához szükséges teljes eltávolítási parancssort az alkalmazás GUID-értékei alapján. 
 
@@ -282,9 +282,6 @@ Ezen a ponton végrehajtotta egy Win32-alkalmazás hozzáadása az Intune-hoz. A
 ## <a name="app-dependencies"></a>Alkalmazás függőségei
 
 Alkalmazás függőségei olyan alkalmazások, amelyek a Win32-alkalmazás telepítése előtt telepíteni kell. Megkövetelheti, hogy más alkalmazások telepíti a függőségeket. Pontosabban, az eszközön telepíteni kell a függő alkalmazás(ok) a Win32-alkalmazás telepítése előtt. Legfeljebb 100 függőségeket, beleértve a függőségeket bármely része van függőségeit, valamint az alkalmazás programkódját. A Win32-alkalmazás függőségei is hozzáadhat, csak a Win32-alkalmazás hozzáadása és az Intune-bA feltöltött után. A Win32-alkalmazás hozzáadása után látni fogja a **függőségek** lehetőséget a panelen, a Win32-alkalmazás. 
-
-> [!NOTE]
-> Alkalmazás-függőséget működéséhez lesz elérhető, csak azt követően az Intune felügyeleti ügynök frissítve lett 1904 verziót (1.18.120.0 nagyobb), amely egy vagy két további hét után 1904, hogy frissítse a szolgáltatást is igénybe vehet.
 
 Ha egy alkalmazás függőség hozzáadása, kereshet az alkalmazás nevének és közzétevő alapján. Ezenkívül a hozzáadott függőségek az alkalmazás nevének és közzétevő alapján rendezheti. Korábban hozzáadott alkalmazás függőségei nem lehet kiválasztani a hozzáadva függőségi listáját. 
 
