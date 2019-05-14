@@ -397,36 +397,6 @@
             - name: Mobile Threat Defense
               href: mobile-threat-defense.md
               items:
-                - name: A Lookout beállítása
-                  href: lookout-mobile-threat-defense-connector.md
-                  items:
-                    - name: A Lookout és az Intune közötti integráció
-                      href: lookout-mtd-connector-integration.md
-                - name: A Symantec beállítása
-                  href: skycure-mobile-threat-defense-connector.md
-                  items:
-                    - name: A Symantec és az Intune közötti integráció
-                      href: skycure-mtd-connector-integration.md
-                - name: A Check Point beállítása
-                  href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
-                  items:
-                    - name: A Check Point integrációja az Intune-nal
-                      href: checkpoint-sandblast-mobile-mtd-connector-integration.md
-                - name: A Zimperium beállítása
-                  href: zimperium-mobile-threat-defense-connector.md
-                  items:
-                    - name: A Zimperium és az Intune integrációja
-                      href: zimperium-mtd-connector-integration.md
-                - name: A Pradeo beállítása
-                  href: pradeo-mobile-threat-defense-connector.md
-                  items:
-                    - name: A Pradeo és az Intune közötti integráció
-                      href: pradeo-mtd-connector-integration.md
-                - name: A Better Mobile beállítása
-                  href: better-mobile-threat-defense-connector.md
-                  items:
-                    - name: A Better Mobile és az Intune közötti integráció
-                      href: better-mobile-mtd-connector-integration.md
                 - name: Az Intune beállítása az MTD-hez
                   items:
                     - name: MTD-alkalmazások hozzáadása
@@ -435,6 +405,43 @@
                       href: mtd-device-compliance-policy-create.md
                     - name: MTD engedélyezése az Intune-ban
                       href: mtd-connector-enable.md
+                - name: MTD-alkalmazások
+                  items:
+                    - name: A Lookout beállítása
+                      href: lookout-mobile-threat-defense-connector.md
+                      items:
+                        - name: A Lookout és az Intune közötti integráció
+                          href: lookout-mtd-connector-integration.md
+                    - name: A Symantec beállítása
+                      href: skycure-mobile-threat-defense-connector.md
+                      items:
+                        - name: A Symantec és az Intune közötti integráció
+                          href: skycure-mtd-connector-integration.md
+                    - name: A Check Point beállítása
+                      href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
+                      items:
+                        - name: A Check Point integrációja az Intune-nal
+                          href: checkpoint-sandblast-mobile-mtd-connector-integration.md
+                    - name: A Zimperium beállítása
+                      href: zimperium-mobile-threat-defense-connector.md
+                      items:
+                        - name: A Zimperium és az Intune integrációja
+                          href: zimperium-mtd-connector-integration.md
+                    - name: A Pradeo beállítása
+                      href: pradeo-mobile-threat-defense-connector.md
+                      items:
+                        - name: A Pradeo és az Intune közötti integráció
+                          href: pradeo-mtd-connector-integration.md
+                    - name: A Better Mobile beállítása
+                      href: better-mobile-threat-defense-connector.md
+                      items:
+                        - name: A Better Mobile és az Intune közötti integráció
+                          href: better-mobile-mtd-connector-integration.md
+                    - name: A Sophos Mobile beállítása
+                      href: sophos-mtd-connector.md
+                      items:
+                        - name: A Sophos Mobile és az Intune integrációja
+                          href: sophos-mtd-connector-integration.md
             - name: Windows Defender ATP
               href: advanced-threat-protection.md
             - name: Biztonsági alapkonfigurációk
@@ -709,6 +716,8 @@
                   href: wi-fi-settings-ios.md
                 - name: Egyéni
                   href: custom-settings-ios.md
+                - name: Kötegazonosítók beépített alkalmazásokhoz
+                  href: bundle-ids-built-in-ios-apps.md
         - name: macOS
           items:
             - name: A megfelelőségi szabályzat beállításai
