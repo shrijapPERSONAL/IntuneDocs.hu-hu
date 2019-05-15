@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b6355724a0c518cba59f70167adbcf4208fa18a
-ms.sourcegitcommit: ef4bc7318449129af3dc8c0154e54a264b7bf4e5
+ms.openlocfilehash: 6545724294eefc83789f56f851549c0b5fee7f22
+ms.sourcegitcommit: 01117021dfaebb5507aa146b7369447c3d5a403d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65197612"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65626433"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows-eszközök regisztrálása az Intune-ban a Windows Autopilot használatával  
 A Windows Autopilot egyszerűbbé teszi az eszközök regisztrálását az Intune-ban. A testre szabott operációsrendszer-lemezképek létrehozása és karbantartása sok időt vesz igénybe. Gyakran ezeknek az egyéni operációsrendszer-lemezképeknek az új eszközökre való alkalmazásával is időt kell töltenie, hogy felkészítse az eszközöket a használatra, mielőtt a végfelhasználóknak adná azokat. A Microsoft Intune és az AutoPilot révén új eszközöket adhat hozzá a végfelhasználók számára anélkül, hogy egyéni operációsrendszer-lemezképek létrehozására, kezelésére és az eszközökre való alkalmazására lenne szükség. Az AutoPilot-eszközök Intune-nal való felügyelete során a regisztráció után szabályzatokat, profilokat, alkalmazásokat és sok mást is kezelni tud. A megoldás előnyeinek, használati eseteinek és előfeltételeinek áttekintéséről lásd [a Windows AutoPilot áttekintését](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -151,15 +151,17 @@ Előfeltételek: Az Azure Active Directory vállalati portál lett konfigurálva
 
 ## <a name="delete-autopilot-devices"></a>AutoPilot-eszközök törlése
 
-A nem regisztrált Windows AutoPilot-eszközök törölhetők.
+Windows Autopilot-eszközök Intune-ban nem regisztrált törölheti:
 
-1. Ha az eszközök regisztrálva vannak az Intune-ban, akkor először [törölnie kell azokat az Azure Active Directory portálról](devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).
+- Törölje az eszközök a Windows Autopilot **eszközregisztráció** > **Windows regisztrációs** > **eszközök**. Válassza ki a törölni, majd kattintson a kívánt eszközöket **törlése**. Windows Autopilot-eszköz törlése eltarthat néhány percig.
 
-2. Az [Azure Portalbeli Intune-ban](https://aka.ms/intuneportal) válassza az **Eszközök regisztrálása** > **Windows-regisztráció** > **Eszközök** lehetőséget.
+Teljesen eltávolításának bérlőjéből megköveteli, hogy az Intune-eszközök, az Azure Active Directory eszköz és a Windows Autopilot-eszköz rekordjai törléséhez. Ezt mind megteheti az Intune-ból:
 
-3. A **Windows AutoPilot-eszközök** területen jelölje ki a törölni kívánt eszközöket, majd válassza a **Törlés** elemet.
+1. Ha az eszközök Intune-ban regisztrált, előbb futtatnia kell [törölheti őket az Intune-ban minden Eszközök panelen](devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).
 
-4. Hagyja jóvá a törlést az **Igen** választásával. A törlés eltarthat néhány percig.
+2. Az eszközök törlése az Azure Active Directory okoseszközökért **eszközök** > **az Azure AD-eszközök**.
+
+3. Törölje az eszközök a Windows Autopilot **eszközregisztráció** > **Windows regisztrációs** > **eszközök**. Válassza ki a törölni, majd kattintson a kívánt eszközöket **törlése**. Windows Autopilot-eszköz törlése eltarthat néhány percig.
 
 ## <a name="using-autopilot-in-other-portals"></a>Az AutoPilot használata más portálokon
 Ha nem kíván a mobileszközök felügyeletével foglalkozni, más portálokon is használhatja az AutoPilotot. Más portálok is használhatók, de javasoljuk, hogy az Intune-t csak AutoPilottal végzett üzembe helyezések felügyeletéhez használja. Az Intune más portálokkal való használatakor az Intune nem tudja végrehajtani a következőket:  

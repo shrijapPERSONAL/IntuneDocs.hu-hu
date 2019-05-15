@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2dd523b1c624de9fbdb12cc4f90cafa5c4395250
-ms.sourcegitcommit: b4483c8476a209de83102e8993d8074dbb323493
+ms.openlocfilehash: be0598d09f10403892fa6a82e109ecc90015ccf9
+ms.sourcegitcommit: 47d8ca144ea4e8b8817e95ac4b8c6bd8591fcc06
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65527195"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65619445"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Üzembe helyezése hibrid Azure AD-hez csatlakoztatott eszközök Intune-nal és a Windows Autopilot használatával
 Hibrid Azure Active Directory (Azure AD) beállításához használhatja az Intune és a Windows Autopilot-hez csatlakoztatott eszközök. Ehhez kövesse a cikkben.
@@ -211,7 +211,14 @@ Módosítsa az eszköz profilt állapot körülbelül 15 percet vesz igénybe *n
 1. Válassza ki **beállítások**, és adja meg egy **számítógépnév előtagja**, **tartománynév**, (nem kötelező), és **szervezeti egység** a[DN formátum](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name). 
 1. Válassza ki **OK** > **létrehozása**.  
     A profil létrehozásáról és megjelennek a listában.
-1. A profil hozzárendeléséhez kövesse az [Eszközprofil hozzárendelése](device-profile-assign.md#assign-a-device-profile) cikk lépéseit. 
+1. A profil hozzárendelése esetén kövesse a [eszközprofil hozzárendelése](device-profile-assign.md#assign-a-device-profile) , és rendelje hozzá a profilt ugyanabba a csoportba ebben a lépésben használt [eszközcsoport létrehozása](windows-autopilot-hybrid.md#create-a-device-group)
+   - Több tartományhoz való csatlakozás profilok központi telepítése
+   
+     a. Hozzon létre egy dinamikus csoportot, amely tartalmazza az összes az Autopilot-eszközök az egy adott Autopilot deployment-profilt, adja meg (device.enrollmentProfileName - eq "Autopilot-profil neve"). 
+     
+     b. "Az Autopilot-profil neve" cserélje le a megjelenítendő név alatt létrejön a profil [létrehozása és hozzárendelése az Autopilot deployment-profil](windows-autopilot-hybrid.md#create-and-assign-an-autopilot-deployment-profile). 
+     
+     c. Több Autopilot deployment-profil létrehozása, és rendelje hozzá a profil a dinamikus csoportban megadott eszközön.
 
 > [!NOTE]
 > Az elnevezési funkciókat a hibrid Azure AD JOIN a Windows Autopilot támogatja a soros % például változókat, és csak az előtagok támogatják a számítógép nevét.
