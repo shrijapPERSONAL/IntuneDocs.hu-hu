@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/24/2019
+ms.date: 04/29/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6389bc9790fce45604887bc2d73b3d5d8c35c45
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 6f2729918a164989714f88564ef0f42f7f319f16
+ms.sourcegitcommit: d21cf21dee15b11b8206bf92cc602b082e9846a5
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505998"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65709047"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Bevezetés a Microsoft Intune App SDK használatába
 
@@ -164,7 +164,7 @@ Miután elvégezte az iOS vagy Android alkalmazásnak az Intune App SDK-való in
     
     * Ha teszteli az alkalmazás egy mobileszközön, egy olyan felhasználói fiókkal, győződjön meg arról, hogy az adott fiók által az Intune-licencet a Microsoft 365 felügyeleti központ webhelyen Ha egy rendszergazdai fiókkal bejelentkezik, lásd: [licenc hozzárendelése a Microsoft Intune-ban ](https://docs.microsoft.com/en-ca/intune/licenses-assign).
 
-* **Az Intune alkalmazásvédelmi szabályzatai**: Tesztelje az alkalmazását az Intune alkalmazásvédelmi szabályzatok, ismernie kell, az elvárt viselkedés mi minden egyes házirend-beállítás. Lásd az [iOS alkalmazásvédelmi szabályzatainak](app-protection-policy-settings-ios.md) és az [Android alkalmazásvédelmi szabályzatainak](app-protection-policy-settings-android.md) ismertetését.
+* **Az Intune alkalmazásvédelmi szabályzatai**: Tesztelje az alkalmazását az Intune alkalmazásvédelmi szabályzatok, ismernie kell, az elvárt viselkedés mi minden egyes házirend-beállítás. Lásd az [iOS alkalmazásvédelmi szabályzatainak](app-protection-policy-settings-ios.md) és az [Android alkalmazásvédelmi szabályzatainak](app-protection-policy-settings-android.md) ismertetését. Ha az alkalmazás integrálva van az Intune SDK-t, de nem szerepel az Azure Portalon célzott alkalmazásként még, is cél szabályzat kiválasztásával a "+ további alkalmazásokat" beállítás, és az alkalmazásköteg-azonosító (iOS) vagy csomagnév (Android) a szövegmezőbe.
 
 * **Hibaelhárítás**: Ha problémákat tapasztal az alkalmazás telepítési felhasználói élmény manuális tesztelésekor közben, lásd: [alkalmazás telepítési problémák elhárítása](troubleshoot-app-install.md). 
 
