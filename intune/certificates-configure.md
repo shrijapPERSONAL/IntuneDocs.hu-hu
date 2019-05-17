@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 569ddd9be0c59cf9a4bd7ba1f8b114183ce46d7d
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 40d8b3d14411827642661b01929d17e83a5198ad
+ms.sourcegitcommit: 4980c094faaca452f8ec8ddded04f47b3229ff38
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61508271"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65765354"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Eszközök tanúsítványprofiljainak konfigurálása a Microsoft Intune-ban
 
@@ -133,3 +133,9 @@ Miután létrehozott egy megbízható hitelesítésszolgáltatói tanúsítvány
 [Eszközprofilok hozzárendelése](device-profile-assign.md)  
 [S/MIME használata e-mailek aláírásához és titkosításához](certificates-s-mime-encryption-sign.md)  
 [Külső hitelesítésszolgáltató használata](certificate-authority-add-scep-overview.md)
+
+## <a name="see-also"></a>Lásd még:
+
+[A Microsoft Intune tanúsítványprofiljai segítségével használható hibaelhárítási NDES-konfiguráció](https://support.microsoft.com/help/4459540)
+
+[Hibaelhárítási SCEP tanúsítványprofilok azon központi telepítését a Microsoft Intune-ban](https://support.microsoft.com/help/4457481)

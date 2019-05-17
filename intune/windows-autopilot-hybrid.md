@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be0598d09f10403892fa6a82e109ecc90015ccf9
-ms.sourcegitcommit: 47d8ca144ea4e8b8817e95ac4b8c6bd8591fcc06
+ms.openlocfilehash: 7ac370ffe297cb62af6ed55cfd5c4c41cf8452d3
+ms.sourcegitcommit: dfcf80a91792715404dc021c8684866c8b0a27e1
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65619445"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65816291"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Üzembe helyezése hibrid Azure AD-hez csatlakoztatott eszközök Intune-nal és a Windows Autopilot használatával
 Hibrid Azure Active Directory (Azure AD) beállításához használhatja az Intune és a Windows Autopilot-hez csatlakoztatott eszközök. Ehhez kövesse a cikkben.
@@ -119,6 +119,9 @@ Az Intune-összekötő az Active Directory telepítve olyan számítógépre, am
 > [!NOTE]
 > Az összekötő való bejelentkezés után is igénybe vehet pár perc alatt megjelennek az [Intune](https://aka.ms/intuneportal). Csak akkor, ha az Intune szolgáltatásba való sikeres kommunikációjának jelenik meg.
 
+### <a name="turn-off-ie-enhanced-security-configuration"></a>Kapcsolja ki az Internet Explorer fokozott biztonsági beállításai
+Alapértelmezés szerint a Windows Server rendelkezik-e kapcsolva az Internet Explorer fokozott biztonsági beállításai. Ha nem tud bejelentkezni az Intune-összekötő az Active Directory majd kikapcsolása Internet Explorer – fokozott biztonsági beállítások a rendszergazda számára. [Hogyan kapcsolhatja ki az Internet Explorer fokozott biztonsági beállításai](https://blogs.technet.microsoft.com/chenley/2011/03/10/how-to-turn-off-internet-explorer-enhanced-security-configuration)
+
 ### <a name="configure-web-proxy-settings"></a>Webproxy-beállítások konfigurálása
 
 Ha a webalkalmazás-proxy a hálózati környezetben, győződjön meg arról, hogy az Intune-összekötő az Active Directory megfelelően működik lépésként tekintse át [együttműködnek a meglévő helyszíni proxykiszolgálók](autopilot-hybrid-connector-proxy.md).
@@ -194,7 +197,7 @@ Módosítsa az eszköz profilt állapot körülbelül 15 percet vesz igénybe *n
 
 ## <a name="optional-turn-on-the-enrollment-status-page"></a>(Nem kötelező) A regisztrálási állapot oldal bekapcsolása
 
-1. A [Intune](https://aka.ms/intuneportal)válassza **eszközregisztráció** > **Windows regisztrációs** > **regisztrálási állapot oldal (előzetes verzió)**.
+1. A [Intune](https://aka.ms/intuneportal)válassza **eszközregisztráció** > **Windows regisztrációs** > **regisztrálási állapot oldal**.
 1. Az a **regisztrálási állapot oldal** ablaktáblán válassza előbb **alapértelmezett** > **beállítások**.
 1. Az a **alkalmazás és a profil telepítés állapotának megjelenítése** jelölje ki **Igen**.
 1. Igény szerint konfigurálja a többi beállítást.

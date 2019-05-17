@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f1cdacf4b4d26e9db9b4090805f697927a399c5
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 96a0da69cdb77ae36ce2456186593f5c334c870c
+ms.sourcegitcommit: 4980c094faaca452f8ec8ddded04f47b3229ff38
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61510124"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65765403"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>SCEP-tanúsítványok konfigurálása és használata az Intune-nal
 
@@ -225,7 +225,7 @@ Ebben a lépésben a következőket fogja elvégezni:
 3. Az NDES-kiszolgálóra rendkívül hosszú URL-címek (lekérdezések) érkeznek, melyekhez két beállításjegyzékbeli bejegyzést kell felvennie:
 
 
-   |                        Location egység                        |      Value      | Typo  |      Adatok       |
+   |                        Location egység                        |      Érték      | Typo  |      Adatok       |
    |--------------------------------------------------------|-----------------|-------|-----------------|
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (decimális) |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (decimális) |
@@ -567,4 +567,6 @@ A 6.1806.x.x verziótól kezdődően az Intune Connector Service naplózza az es
 
 - [PKCS-tanúsítványok használata](certficates-pfx-configure.md), vagy [kiállítani a Symantec PKI manager webes szolgáltatás PKCS-tanúsítványok](certificates-symantec-configure.md)
 - [Adja hozzá a 3. fél hitelesítésszolgáltató SCEP használata az Intune-nal](certificate-authority-add-scep-overview.md)
-- További segítségért használja a [hibaelhárítási SCEP tanúsítványprofilok azon központi telepítését a Microsoft Intune-ban](https://support.microsoft.com/help/4457481/troubleshooting-scep-certificate-profile-deployment-in-intune) útmutató.
+- További segítségért használja a következő útmutatókat:
+  - [Hibaelhárítási SCEP tanúsítványprofilok azon központi telepítését a Microsoft Intune-ban](https://support.microsoft.com/help/4457481)
+  - [A Microsoft Intune tanúsítványprofiljai segítségével használható hibaelhárítási NDES-konfiguráció](https://support.microsoft.com/help/4459540)

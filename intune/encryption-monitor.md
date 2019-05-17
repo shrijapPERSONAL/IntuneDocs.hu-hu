@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/23/2019
+ms.date: 05/17/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,23 +17,23 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 52b92483ddafadf460911caaa472825a0bc0a20f
-ms.sourcegitcommit: b4483c8476a209de83102e8993d8074dbb323493
+ms.openlocfilehash: 72121aa48e7b5d46e25aac28ad386832b6b4ea72
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65527222"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65733086"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>A figyelő a BitLocker és az eszköz titkosítása  
 Az Intune kínál egy központi helyen, azonosíthatja a Windows 10 rendszerű eszközök titkosítási állapotát, és elérhetővé teszi a BitLocker vonatkozó fontos információk az eszközök, az Azure Active Directoryban (Azure AD) formában.  
 
-- A [(nyilvános előzetes verzióban) titkosítása jelentés](#encryption-report) eszközök titkosítási állapotát és a készültségi részletesen ismerteti. A jelentés-részletek segítségével azonosíthatja a problémákat, amelyek meggátolják a védeni kívánt eszközök sikeres titkosítását.  
-- [A BitLocker részleteinek megtekintése (a nyilvános előzetes verzió)](#bitlocker-recovery-keys) , például a Kulcsazonosító és a helyreállítási kulcsok az eszközök az Intune-portálon belül.  
+- A [titkosítási jelentés](#encryption-report) eszközök titkosítási állapotát és a készültségi részletesen ismerteti. A jelentés-részletek segítségével azonosíthatja a problémákat, amelyek meggátolják a védeni kívánt eszközök sikeres titkosítását.  
+- [A BitLocker a részletek megtekintéséhez](#bitlocker-recovery-keys) , például a Kulcsazonosító és a helyreállítási kulcsok az eszközök az Intune-portálon belül.  
 
 ## <a name="encryption-report"></a>Titkosítási jelentés
-A titkosítási jelentés (a nyilvános előzetes verzió) segítségével a Windows 10 rendszerű eszközök titkosítási állapotát részleteinek a megtekintéséhez.  
+A titkosítás a jelentés segítségével a Windows 10 rendszerű eszközök titkosítási állapotát részleteinek a megtekintéséhez.  
 
-A jelentés megkereséséhez jelentkezzen be a [Intune](https://aka.ms/intuneportal) , majd **eszközkonfiguráció**, majd a *figyelő*, jelölje be **titkosítási jelentésben (előzetes verzió)**.  
+A jelentés megkereséséhez jelentkezzen be a [Intune](https://aka.ms/intuneportal) , majd **eszközkonfiguráció**, majd a *figyelő*, jelölje be **titkosítási jelentés**.  
 
 ### <a name="prerequisites"></a>Előfeltételek:
 A titkosítási jelentésben jelennek meg, hogy egy eszköz kell futtatnia Windows verzió, 1607-es vagy újabb.  
@@ -90,14 +90,14 @@ Ezen a panelen a következő részleteket biztosítja:
    - A titkosítási módszer a rögzített meghajtó nem felel meg a BitLocker-házirendet.  
    - Meghajtók titkosítását, a BitLocker csoportházirend vagy a felhasználó, hogy jelentkezzen be rendszergazdaként van szükség, vagy ha az eszköz az Azure ad-hez csatlakozik, akkor a AllowStandardUserEncryption szabályzatot 1 értékre kell állítani.  
    - Nincs konfigurálva a Windows helyreállítási környezet (WinRE).  
-   - A TPM nem érhető el a Bitlockert, vagy mert nem található, ezt nem tette lehetővé a beállításjegyzékben vagy az operációs rendszer egy cserélhető meghajtón.  
+   - A TPM nem érhető el a Bitlockert, vagy mert nem található, ezt nem tette lehetővé a beállításjegyzékben vagy az operációs rendszer cserélhető meghajtón.  
    - A TPM-eszköz nem áll készen a BitLocker.  
    - A hálózat nem érhető el, amelyre szükség a helyreállítási kulcs biztonsági mentése az.  
 
 ## <a name="bitlocker-recovery-keys"></a>A BitLocker helyreállítási kulcsok
-A nyilvános előzetes verzió az Intune hozzáférést biztosít az Azure ad-ben panel a BitLocker hogy meg tudja tekinteni a BitLocker-kulcs azonosítók és a helyreállítási kulcsok a Windows 10 rendszerű eszközökhöz az Intune-portálon belül.  Az eszköz érhető el, a kulcsok az Azure AD szétválasztást kell rendelkeznie. 
+Az Intune hozzáférést biztosít az Azure ad-ben panel a BitLocker hogy meg tudja tekinteni a BitLocker-kulcs azonosítók és a helyreállítási kulcsok a Windows 10 rendszerű eszközökhöz az Intune-portálon belül.  Az eszköz érhető el, a kulcsok az Azure AD szétválasztást kell rendelkeznie. 
 1. Jelentkezzen be a [Intune](https://aka.ms/intuneportal), lépjen a **eszközök** , majd a *kezelés*válassza **minden eszköz**.
-2. Jelöljön ki egy eszközt a listából, majd a *figyelő*válassza **helyreállítási kulcsok – előzetes verzió**.  
+2. Jelöljön ki egy eszközt a listából, majd a *figyelő*válassza **helyreállítási kulcsok**.  
   
 Kulcsok az Azure ad-ben érhetők el, amikor érhető el a következő információkat:
 - BitLocker-kulcs azonosítója

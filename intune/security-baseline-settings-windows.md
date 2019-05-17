@@ -1,7 +1,7 @@
 ---
-title: Windows biztonsági alapterveket beállítások az Intune-hoz
+title: Az Intune biztonsági alapterveket beállítások Windows 10 rendszerhez
 titleSuffix: Microsoft Intune
-description: Windows Intune által támogatott biztonsági alapterv beállításai
+description: Az Intune biztonsági alapterv beállításainak kezelése Windows 10-es
 author: brenduns
 ms.author: brenduns
 manager: dougeby
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 67938f8697002f94f275f953510d1b0f4864a3fa
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 1d9d095db4d10630555e5696610535bb828f0b5f
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61507154"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65733059"
 ---
 # <a name="windows-security-baseline-settings-for-intune"></a>Windows biztonsági Alapterv beállítások az Intune-hoz  
 
@@ -424,7 +424,7 @@ További információkért lásd: [házirend CSP - InternetExplorer](https://doc
   **Alapértelmezett**: Letiltva 
   
 - **Az Internet Explorer fokozott védett módban folyamatok letiltása**  
-  A házirend-beállítás meghatározza, hogy a Internet Explorer 11 Ha 64 bites folyamatokat (a nagyobb biztonság), vagy 32 bites folyamatok (a nagyobb kompatibilitás) használjon a fokozottan védett üzemmódban futó Windows 64 bites verziói. Fontos: Egyes ActiveX-vezérlők és eszköztárak előfordulhat, hogy nem érhető el 64 bites folyamatokat használatakor. Ha ez a szabályzatbeállítás engedélyezi, akkor amikor fokozottan védett üzemmód a Windows 64 bites verzióin futó Internet Explorer 11 64 bites fül folyamatai fogja használni. Ha letiltja ezt a beállítást, az Internet Explorer 11 32 bites fül folyamatai készítésére használ a fokozottan védett üzemmód Windows 64 bites verzióiban. Ha nem konfigurálja ezt a beállítást, a felhasználók bekapcsolják ezt a szolgáltatást, és ki az Internet Explorer beállításainak használatával. Ez a funkció alapértelmezés szerint ki van kapcsolva.
+  A házirend-beállítás meghatározza, hogy a Internet Explorer 11 Ha 64 bites folyamatokat (a nagyobb biztonság), vagy 32 bites folyamatok (a nagyobb kompatibilitás) használjon a fokozottan védett üzemmódban futó Windows 64 bites verziói. Fontos! Egyes ActiveX-vezérlők és eszköztárak előfordulhat, hogy nem érhető el 64 bites folyamatokat használatakor. Ha ez a szabályzatbeállítás engedélyezi, akkor amikor fokozottan védett üzemmód a Windows 64 bites verzióin futó Internet Explorer 11 64 bites fül folyamatai fogja használni. Ha letiltja ezt a beállítást, az Internet Explorer 11 32 bites fül folyamatai készítésére használ a fokozottan védett üzemmód Windows 64 bites verzióiban. Ha nem konfigurálja ezt a beállítást, a felhasználók bekapcsolják ezt a szolgáltatást, és ki az Internet Explorer beállításainak használatával. Ez a funkció alapértelmezés szerint ki van kapcsolva.
   
   **Alapértelmezett**: Enabled 
   
@@ -1366,7 +1366,7 @@ További információkért lásd: [házirend CSP - Defender](https://docs.micros
   **Alapértelmezett**: Igen
   
 - **Viselkedésfigyelés engedélyezése**  
-  Engedélyezi vagy tiltja a funkciót a Windows Defender Viselkedésfigyelés engedélyezése. Beágyazott Windows 10, érzékelőktől gyűjtése és az operációs rendszer viselkedési jelek feldolgozni és érzékelő elküldi azokat a Windows Defender ATP, elkülönített, privát felhő példányát.
+  Engedélyezi vagy tiltja a funkciót a Windows Defender Viselkedésfigyelés engedélyezése. Beágyazott Windows 10, érzékelőktől gyűjtése és az operációs rendszer viselkedési jelek feldolgozásához és az érzékelő adatokat küld a Microsoft Defender ATP, elkülönített, privát felhő példányát.
   
   **Alapértelmezett**: Igen
 

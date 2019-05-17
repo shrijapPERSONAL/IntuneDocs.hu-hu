@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 05/14/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24e783bc4586709d0cde6a2ebd19c2b5ca30ab6b
-ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
+ms.openlocfilehash: 23a211d48a38cdffb909ceaf611a9939b5ac82f0
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135121"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65733191"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Önálló Intune - Win32-Alkalmazáskezelés
 
@@ -153,6 +153,8 @@ Az alábbi lépések útmutatást nyújtanak a Windows-alkalmazások Intune-hoz 
     > Az adott Win32-alkalmazás telepítését a **Felhasználó** vagy a **Rendszer** környezetben konfigurálhatja. A **Felhasználó** környezet csak az adott felhasználóra vonatkozik. A **Rendszer** környezet az adott, Windows 10-es rendszerű eszköz összes felhasználójára vonatkozik.
     >
     > A végfelhasználóknak nem kell bejelentkezniük az eszközön a Win32-alkalmazások telepítéséhez.
+    > 
+    > A Win32 alkalmazás telepítésének és eltávolításának fog hajtható végre rendszergazdai jogosultság (alapértelmezés szerint) Ha az alkalmazás felhasználói környezetben telepítésre van beállítva, és a végfelhasználó számára az eszköz rendszergazdai jogosultságokkal rendelkezik.
 
 4.  Amikor végzett, válassza az **OK** gombot.
 

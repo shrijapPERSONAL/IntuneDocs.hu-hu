@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36aa9ad733e2ae5e0f4a292b073fbebd5f5f5f8f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: c2d137945325d8ec11801aec225fd0e89196ed05
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511539"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65732991"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Oktatóanyag: Windows-eszközök regisztrálása az Intune Autopilot használatával
 A Windows Autopilot leegyszerűsíti az eszközök regisztrálását. A Microsoft Intune és az AutoPilot használatával új eszközöket adhat a végfelhasználóknak anélkül, hogy egyéni operációsrendszer-lemezképek létrehozására, fenntartására és alkalmazására lenne szükség. 
@@ -90,31 +90,28 @@ Ezután létrehoz egy eszközcsoportot, és belehelyezi az előbb betöltött Au
 Egy eszközcsoport létrehozása után létre kell hoznia egy Deployment-profilt az AutoPilot-eszközök konfigurálásához.
 
 1. Az [Azure Portalbeli Intune-ban](https://aka.ms/intuneportal) válassza az **Eszközök regisztrálása** > **Windows-regisztráció** > **Telepítési profilok** > **Profil létrehozása** elemet.
-2. A **Név** mezőbe írja be az *AutoPilot-profil* nevet. A **Leírás** mezőbe írja be az *AutoPilot-eszközök tesztprofilja* leírást.
-3. Állítsa a **Minden megcélzott eszköz átalakítása az Autopilotra** beállítást **Igen** értékre. Ez a beállítás biztosítja, hogy a listában lévő összes eszköz regisztrálva legyen az Autopilot üzembehelyezési szolgáltatásban. Hagyjon 48 órát a regisztráció feldolgozására.
-4. Az **Üzembehelyezési mód** beállításnál válassza a **Felhasználó által vezérelt** lehetőséget. Az ilyen profillal rendelkező eszközök az őket regisztráló felhasználóhoz vannak társítva. Az eszköz regisztrálásához felhasználói hitelesítő adatokra van szükség.
-5. A **Csatlakozás az Azure AD-hez mint** mezőben válassza az **Azure AD-hez csatlakoztatott** lehetőséget.
-6. Válassza a **Kezdőélmény (OOBE)** lehetőséget, konfigurálja a következő beállításokat, a többit pedig hagyja változatlanul, majd válassza a **Mentés** lehetőséget:
+2. Az a **alapjai** oldal, tor **neve**, adja meg *Autopilot-profil*. A **Leírás** mezőbe írja be az *AutoPilot-eszközök tesztprofilja* leírást.
+3. Állítsa a **Minden megcélzott eszköz átalakítása az Autopilotra** beállítást **Igen** értékre. Ez a beállítás biztosítja, hogy a listában lévő összes eszköz regisztrálva legyen az Autopilot üzembehelyezési szolgáltatásban. A regisztráció feldolgozása 48 órát is igénybe vehet.
+4. Kattintson a **Tovább** gombra.
+5. Az a **Out-of-box élmény (OOBE)** lapon a **üzembe helyezési mód**, válassza a **felhasználó-központú**. Az ilyen profillal rendelkező eszközök az őket regisztráló felhasználóhoz vannak társítva. Az eszköz regisztrálásához felhasználói hitelesítő adatokra van szükség.
+6. A **Csatlakozás az Azure AD-hez mint** mezőben válassza az **Azure AD-hez csatlakoztatott** lehetőséget.
+7. Konfigurálja a következő beállításokat, és hagyja, mások az alapértelmezett értékre:
     - **Végfelhasználói licencszerződés (EULA)**: **Elrejtése**
     - **Adatvédelmi beállítások**: **Show**
     - **Felhasználói fiók típusa**: **Standard**
-
-6. Válassza a **Létrehozás** lehetőséget a profil létrehozásához. Az AutoPilot üzembehelyezési profil most már hozzárendelhető az eszközökhöz.
-
-## <a name="assign-an-autopilot-deployment-profile-to-a-device-group"></a>AutoPilot üzembehelyezési profil hozzárendelése egy eszközcsoporthoz
-
-Most, hogy létrejött az üzembehelyezési profil, hozzárendelheti az eszközcsoporthoz.
-1. Az [Azure Portalbeli Intune-ban](https://aka.ms/intuneportal) válassza az **Eszközök regisztrálása** > **Windows-regisztráció** > **Telepítési profilok** elemet, majd válasszon egy profilt.
-2. A megadott profil paneljén válassza a **Hozzárendelések** elemet. 
-3. Válassza a **Csoportok kijelölése** lehetőséget, majd a **Csoportok kijelölése** panelen válassza az **AutoPilot-csoport** lehetőséget, majd válassza a **Kiválasztás** elemet.
+8. Kattintson a **Tovább** gombra.
+9. Az a **hozzárendelések** lapon a **kijelölt csoportok** a **hozzárendelése**.
+10. Válasszon **válassza ki a befoglalandó csoportokat**, válassza a **Autopilot csoport**.
+11. Kattintson a **Tovább** gombra.
+12. Az a **felülvizsgálat + létrehozás** lapon a **létrehozás** a profil létrehozásához.
 
 ## <a name="distribute-devices-to-users"></a>Eszközök terjesztése a felhasználóknak
 
 A Windows rendszerű eszközök ekkor már kioszthatók a felhasználóknak. Az AutoPilot rendszer az első bejelentkezéskor automatikusan regisztrálja és konfigurálja az eszközöket. 
 
-## <a name="clean-up-resources"></a>Erőforrások eltávolítása
+## <a name="clean-up-resources"></a>Az erőforrások eltávolítása
 
-Ha nem kívánja többé használni az AutoPilot-eszközöket, törölheti őket.
+Ha az Autopilot-eszközök használata már nem szeretné, törölheti őket.
 
 1. Ha az eszközök regisztrálva vannak az Intune-ban, akkor először [törölnie kell azokat az Azure Active Directory portálról](devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).
 

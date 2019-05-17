@@ -1,11 +1,11 @@
 ---
 title: Biztonsági alapterveket használja a Microsoft Intune – Azure |} A Microsoft Docs
-description: Adja hozzá, vagy a felhasználó és a Microsoft Intune-nal a mobileszköz-felügyelet eszközökön lévő adatok védelme érdekében ajánlott biztonsági beállítások konfigurálása. Engedélyezze a bitlockert, a Windows Defender komplex veszélyforrások elleni védelem konfigurálása, szabályozhatja az Internet Explorer, SmartScreen használata, helyi biztonsági házirendek beállítása, jelszó kérése, internetes tölt le, és további letiltása.
+description: Adja hozzá, vagy a felhasználó és a Microsoft Intune-nal a mobileszköz-felügyelet eszközökön lévő adatok védelme érdekében ajánlott biztonsági beállítások konfigurálása. Engedélyezheti a Bitlockert, Microsoft Defender komplex veszélyforrások elleni védelem konfigurálása, szabályozhatja az Internet Explorer, SmartScreen használata, a helyi biztonsági házirendek beállítása, jelszó kérése, internetes tölt le, és további letiltása.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/22/2019
+ms.date: 05/17/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70638228875f1fb063a2ea22dc424c00f3940a30
-ms.sourcegitcommit: ef4bc7318449129af3dc8c0154e54a264b7bf4e5
+ms.openlocfilehash: 9dd289535ba4276b1bca21044d362172517b07e0
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65197628"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65732518"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Az Intune-ban Windows 10 biztonsági alapterv létrehozása
 
@@ -44,9 +44,19 @@ Biztonsági alapterveket az Intune-ban hozzon létre egy "konfigurációs profil
 
 Miután a profil hozzá van rendelve, a profil monitorozza, és figyelheti az alaptervhez. Láthatja például, mely eszközök egyezik az alaptervhez, vagy nem egyezik az alaptervhez.
 
-Ez a cikk bemutatja, hogyan biztonsági előírások használatával hozzon létre egy profilt a profil hozzárendelése és figyelése a profil.
+Ez a cikk segítséget nyújt a biztonsági előírások használatával hozzon létre egy profilt a profil hozzárendelése és figyelése a profil.
 
 [Windows biztonsági előírások](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) egy nagyszerű forrás, amely további információk a funkcióról. [Mobileszköz-kezelés](https://docs.microsoft.com/windows/client-management/mdm/) (MDM) egy nagyszerű forrás MDM és a Windows-eszközökön elvégezhető.
+
+## <a name="available-security-baselines"></a>Biztonsági alapterveket  
+
+A következő biztonsági alapterveket az Intune-nal való használatra érhetők el.
+- **Előzetes verzió: Mobileszköz-kezelési biztonsági alaptervet a 2018. október**  
+  [A beállítások megtekintése](security-baseline-settings-windows.md)
+
+- **ELŐZETES VERZIÓ: A Windows Defender ATP-alapkonfiguráció**  
+  [A beállítások megtekintése](security-baseline-settings-defender-atp.md)
+
 
 ## <a name="prerequisites"></a>Előfeltételek
 Az Intune-ban alapkonfigurációk kezelésére, a fióknak rendelkeznie kell a [házirend- és Profilkezelő](role-based-access-control.md#built-in-roles) beépített szerepkör.
@@ -60,51 +70,36 @@ Közösen kezelt eszközök használata esetén kell váltania a **eszközkonfig
 
 ## <a name="create-the-profile"></a>A profil létrehozása
 
-1. Az a [az Azure portal](https://portal.azure.com/), jelölje be **minden szolgáltatás** > szűréséhez **Intune** > Válassza ki **Intune**.
-2. Válassza ki **eszközbiztonsági** > **biztonsági előírások (előzetes verzió)**. Az elérhető alapkonfigurációk listáját érhető el. További alaptervek hozzáadásakor, akkor azokat itt jelenik meg:
+1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=20909) majd **eszközbiztonsági** > **biztonsági előírások (előzetes verzió)**. Az elérhető alapkonfigurációk listáját érhető el. 
 
-    ![Az Intune-ban jelenleg elérhető biztonsági alapkonfigurációit listáját lásd:](./media/security-baselines/available-baselines.png)
+    ![Válassza ki egy biztonsági alaptervet konfigurálása](./media/security-baselines/available-baselines.png)
 
-3. Válassza ki a használni kívánt referenciakonfiguráció > **profil létrehozása**.
-4. A **alapjai**, adja meg a következő tulajdonságokat:
 
-    - **Név**: Adja meg a biztonsági alapterveket profil nevét. Például írja be a következőt: `pilot Windows 10 MDM baseline - Oct 2018`.
+2. Válassza ki szeretné használni, és válassza ki az alapkonfigurációt **profil létrehozása**.  
+
+3. Az a **alapjai** lapra, adja meg a következő tulajdonságokat:
+
+    - **Név**: Adja meg a biztonsági alapterveket profil nevét. Adja meg például *Defender ATP-ben a standard szintű profil*
     - **Description** (Leírás): Adja meg, amely azt ismerteti, Mire jó ez a alapvető szöveget. A leírás megadása nem adhatja meg a kívánt szöveget. Nem kötelező, de határozottan ajánlott.
 
-5. Bontsa ki a **beállítások**. A listában lásd: Ez a alapvető biztonsági, és mi az automatikus beállítása a beállításokat. A beállításokat és azok értékeit használata ajánlott, és az Ön által módosítható.
+4. Válassza ki a **konfigurációs** fülre kattintva megtekintheti a rendelkezésre álló csoportok, **beállítások** az adott alapterv. Válasszon ki egy csoportot, bontsa ki azt, és megtekintheti az egyes beállításairól tartalmaz. A beállítások a biztonsági alapkonfiguráció alapértelmezett konfigurációi rendelkezik. Konfigurálja újra az alapértelmezett beállításokat az üzleti igényeinek.  
 
-    ![Bontsa ki a beállítások az Intune-ban az alapvető biztonsági beállításokról](./media/security-baselines/sample-list-of-settings.png)
+    ![Bontsa ki az adott csoport beállításainak megtekintéséhez](./media/security-baselines/sample-list-of-settings.png)
 
-    Bontsa ki az egyes beállításai ellenőrizze azok értékeit. Bontsa ki például **a Windows Defender**. Tekintse át a beállításokat, és mi van-e állítva:
+5. Válassza ki a **hozzárendelések** fülre az alapterv hozzárendelése a csoportokhoz. Az alapkonfiguráció hozzárendelése egy meglévő csoportot, vagy hozzon létre egy új csoportot a szokásos folyamat használatával az Intune-konzolon a konfigurálás befejezéséhez.  
 
-    ![Milyen része a Windows Defender automatikus beállítása az Intune-ban](./media/security-baselines/expand-windows-defender.png)
+   ![Profil hozzárendelése](./media/security-baselines/assignments.png)
+  
+6. Amikor készen áll az alapkonfiguráció telepítése, válassza ki a **tekintse át + létrehozása** fülre, és ellenőrizze a részleteket az alapterv esetében. Ezután válassza ki **profil mentése** mentéséhez, majd telepítse a profilt. 
 
-6. **Hozzon létre** a profilt. 
-7. Válassza ki **profilok**. A profil létrehozásáról, és látható a listában. De azt nem csinál semmit még. Ezután rendelje hozzá a profilt.
+   ![Tekintse át az alaptervhez](./media/security-baselines/review.png) 
 
-## <a name="assign-the-profile"></a>A profil hozzárendelése
+   Amint menti, a profil át lett helyezve eszközök során, hogy jelentkezzen be az Intune-ban. Tehát akkor fordulhat elő, azonnal.
 
-A profil létrehozását követően készen áll a felhasználók, eszközök és csoportok kell hozzárendelni. Kiosztás után a a profil és a beállítások érvényesek a felhasználók, eszközök és Ön által választott csoportokhoz.
+   > [!TIP]  
+   > A profil első hozzárendelése csoportok nélkül mentheti. A profil csoportokat szeretne hozzáadni egy későbbi időpontban szerkesztheti. 
 
-1. Válassza ki az Intune-ban **biztonsági előírások** > Válassza ki az alapkonfigurációt > **profilok**.
-2. Válassza ki a profilt > **hozzárendelések**.
-
-    ![Válassza ki a biztonsági alapkonfiguráció profilt az Intune-ban, és kattintson a profil-hozzárendelések](./media/security-baselines/assignments.png)
-
-3. Az a **Belefoglalás** lapon vegye fel a csoportokat, felhasználók vagy eszközök a szabályzatot alkalmazni szeretné.
-
-    > [!TIP]
-    > Figyelje meg, hogy is **kizárása** csoportok. Ha a alkalmazni a szabályzatot **minden felhasználó**, fontolja meg a rendszergazdai csoportok kizárása. Abban az esetben, ha hiba történik, Ön és a rendszergazdák nem szeretne kizárva.
-
-4. **Mentse** a változtatásokat.
-
-Amint menti, a profil át lett helyezve eszközök során, hogy jelentkezzen be az Intune-ban. Tehát akkor fordulhat elő, azonnal.
-
-## <a name="available-security-baselines"></a>Biztonsági alapterveket  
-
-A következő biztonsági előírások az Intune-nal való használatra kilistázása.
-- **Előzetes verzió: Mobileszköz-kezelési biztonsági alapterv**
-  - Verzió: [2018. október](security-baseline-settings-windows.md)
+7. Miután létrehozta a profilt, szerkesztheti a **eszközbiztonsági** > **biztonsági előírások**, válassza ki az alapkonfigurációt, konfigurált, és válassza ki **profilok**.  Válassza ki a profilt, majd **tulajdonságok** beállítások szerkesztése, és válassza ki a **hozzárendelések** szerkesztése a csoportokat, amelyeket ez a alapvető fogad. 
 
 ## <a name="q--a"></a>Kérdések és válaszok
 

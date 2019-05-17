@@ -1,11 +1,11 @@
 ---
-title: Külső hitelesítésszolgáltató igénybe vétele az SCEP használatával az Azure-beli Microsoft Intune-ban | Microsoft Docs
+title: Külső hitelesítésszolgáltatók (CA) használata SCEP-beli Microsoft Intune - ban |} A Microsoft Docs
 description: A Microsoft Intune-ban hozzáadhat egy szállítót vagy külső hitelesítésszolgáltatót (CA), amely tanúsítványokat ad ki mobileszközökre az SCEP protokoll használatával. Ebben az áttekintő cikkben egy Azure Active Directory (Azure AD) alkalmazás ad engedélyeket a Microsoft Intune-nak tanúsítványok hitelesítésére. Ezután az SCEP-kiszolgáló beállítása következik a tanúsítványok kiadásához, az alkalmazás azonosítója, a hitelesítési kulcs és az AAD-alkalmazás bérlőazonosítója alapján.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 07/26/2018
+ms.date: 05/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d042a160d016343c6e8374dff8f74560b9806014
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 5e87b7397d994b089a30fedd9ccedc0107bf0cef
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61508483"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65732498"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Partner hitelesítésszolgáltató hozzáadása az Intune-ban SCEP protokollal
 
@@ -69,47 +69,40 @@ Külső hitelesítésszolgáltatók Intune-nal való integrálása előtt győz�
 
 Ahhoz, hogy egy külső SCEP-kiszolgáló egyéni kérdésen alapuló ellenőrzést végezhessen az Intune-nal, készítsen egy alkalmazást az Azure AD-ban. Ez az alkalmazás delegált jogosultságokat ad az Intune-nak az SCEP-kérelmek ellenőrzéséhez.
 
-Ehhez mindenképpen rendelkeznie kell az Azure AD-alkalmazás regisztrálásához szükséges engedélyekkel. A lépéseket a [Szükséges engedélyek](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#required-permissions) című szakasz ismerteti.
+Ehhez mindenképpen rendelkeznie kell az Azure AD-alkalmazás regisztrálásához szükséges engedélyekkel. Lásd: [szükséges engedélyek](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#required-permissions), az Azure AD dokumentációjában.
 
-**1. lépés: Az Azure AD-alkalmazás létrehozása**
+#### <a name="create-an-application-in-azure-active-directory"></a>Alkalmazás létrehozása az Azure Active Directoryban  
 
-1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
-2. Válassza az **Azure Active Directory** > **Alkalmazásregisztráció** > **Új alkalmazás regisztrálása** lehetőséget.
-3. Adjon meg egy nevet és bejelentkezési URL-címet. Az Alkalmazástípus mezőben válassza a **Webalkalmazás / API** lehetőséget.
-4. Kattintson a **Létrehozás** gombra.
+1. Az a [az Azure portal](https://portal.azure.com), lépjen a **Azure Active Directory** > **Alkalmazásregisztrációk**, majd válassza ki **új regisztrációs**.  
 
-Az [Alkalmazások integrálása az Azure Active Directory-val](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) című cikkben néhány útmutatást, köztük az URL-címre és a névre vonatkozó tanácsot talál az alkalmazás létrehozásához.
+2. Az a **alkalmazás regisztrálása** csoportjában adja meg a következő adatokat:  
+   - Az a **neve** területén adjon meg egy kifejező alkalmazásnevet.  
+   - Az a **támogatott fióktípusok** szakaszban jelölje be **bármely szervezeti directory fiókok**.  
+   - A **átirányítási URI-t**, hagyja meg az alapértelmezett Web, és adja meg a bejelentkezési URL-címet a külső SCEP-kiszolgáló.  
 
-**2. lépés: Jogosultságok megadása**
+3. Válassza ki **regisztrálása** hozhat létre az alkalmazást, és az új alkalmazáshoz – Áttekintés lap megnyitásához.  
 
-Alkalmazása létrehozása után adja meg a Microsoft Intune API-nak a szükséges engedélyeket:
+4. Az alkalmazás **áttekintése** lapon, másolja a **Alkalmazásazonosítót (ügyfél)** értékét, és jegyezze fel későbbi használat céljából. Ezt az értéket később még szüksége lesz.  
 
-1. Azure AD-alkalmazásában nyissa meg a **Beállítások** > **Szükséges engedélyek** menüpontot.  
-2. Válassza a **Hozzáadás** > **API kijelölése** lehetőséget, válassza ki a **Microsoft Intune API-t** > **Kiválasztás**.
-3. A **Szükséges engedélyek** alatt válassza a **SCEP ellenőrző kérdés** > **Kiválasztás** lehetőséget.
-4. A módosítások mentéséhez válassza a **Kész** gombot.
+5. A navigációs ablaktáblán az alkalmazás Ugrás **tanúsítványok és titkos kulcsok** alatt **kezelése**. Válassza ki a **új titkos ügyfélkulcsot** gombra. Adjon meg egy értéket a leírás, az egyik lehetőséget sem **lejárat**, majd válassza **Hozzáadás** létrehozni egy *érték* a titkos. 
+   > [!IMPORTANT]  
+   > Mielőtt kilép az oldalról, másolja az értéket a titkos, és jegyezze fel a harmadik fél hitelesítésszolgáltató megvalósításra későbbi használatra. Ez az érték nem jelenik meg újból. Mindenképpen olvassa el a harmadik fél hitelesítésszolgáltató hogyan szeretnének az alkalmazás Azonosítóját, a hitelesítési kulcsot és a konfigurált bérlő azonosítója a útmutatást.  
 
-**3. lépés: Az Alkalmazásazonosító és hitelesítési kulcs beszerzése**
+6. Rekord a **Bérlőazonosító**. A Bérlőazonosító a tartomány szöveg után a @ karakter a fiókjában. Például, ha a fiókja *admin@name.onmicrosoft.com*, akkor a bérlő Azonosítóját **name.onmicrosoft.com**.  
 
-Ez után szerezze be Azure AD-alkalmazása azonosító- és kulcs-értékeit. A következő értékekre van szükség:
+7. Lépjen a navigációs ablaktáblán az alkalmazás **API-engedélyek** alatt **kezelés**, majd válassza ki **adjon hozzá egy engedélyt**.  
 
-- Alkalmazásazonosító
-- Hitelesítési kulcs
-- Bérlőazonosító
+8. Az a **kérelem API-engedélyek** lapon jelölje be **Intune**, majd válassza ki **Alkalmazásengedélyek**. Jelölje be a **scep_challenge_provider** (SCEP leellenőrizni).  
 
-**Az alkalmazásazonosító és a hitelesítési kulcs beszerzéséhez**:
+   Válassza ki **engedélyek hozzáadása** a konfiguráció mentéséhez.  
 
-1. Az Azure AD-ben jelölje ki új alkalmazását (**Alkalmazásregisztrációk**).
-2. Másolja ki az **Alkalmazás azonosítóját**, és tárolja az alkalmazás kódjában.
-3. Ez után generáljon hitelesítési kulcsot. Azure AD-alkalmazásában nyissa meg a **Beállítások** > **Kulcsok** menüt.
-4. A **Jelszavak** alatt adjon meg egy leírást, és válassza ki a kulcs élettartamát. **Mentse** a változtatásokat. Másolja ki és mentse a megjelenő értéket.
+9. Továbbra is a **API-engedélyek** lapon, és válassza ki **adja meg a Microsoft a rendszergazdai jóváhagyás**, majd válassza ki **Igen**.  
+   
+   Az Azure ad-ben az alkalmazás regisztrációs folyamat befejeződött.
 
-    > [!IMPORTANT]
-    > A kulcsot azonnal ki kell másolnia és mentenie, mert többé nem lesz látható. Ennek a kulcsnak az értékére szükség van a külső hitelesítésszolgáltató implementációjánál. Mindenképpen tekintse át az ő útmutatójukat az alkalmazásazonosító, a hitelesítési kulcs és a bérlőazonosító általuk kívánt konfigurálásáról.
 
-A **bérlőazonosító** a fiók nevében lévő @ jel utáni szöveg. Ha a fiók neve például `admin@name.onmicrosoft.com`, akkor a bérlőazonosító **name.onmicrosoft.com**.
 
-Az [Alkalmazásazonosító és hitelesítési kulcs beszerzése](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#get-application-id-and-authentication-key) című szakasz felsorolja az értékek beszerzésének lépéseit, és további részleteket tartalmaz az Azure AD-alkalmazásokról.
+
 
 ### <a name="configure-and-deploy-a-scep-certificate-profile"></a>SCEP-tanúsítványprofil konfigurálása és telepítése
 Rendszergazdaként hozzon létre egy felhasználóknak vagy eszközöknek szánt SCEP-tanúsítványprofilt. Ezt követően végezze el a profil hozzárendelését.
@@ -128,6 +121,9 @@ Az alábbi külső hitelesítésszolgáltatók támogatják az Intune-t:
 - [Entrust Datacard](http://www.entrustdatacard.com/resource-center/documents/documentation)
 - [EJBCA GitHub nyílt forráskódú verzió](https://github.com/agerbergt/intune-ejbca-connector)
 - [EverTrust](https://evertrust.fr/en/products/)
+- [GlobalSign](https://downloads.globalsign.com/acton/attachment/2674/f-6903f60b-9111-432d-b283-77823cc65500/1/-/-/-/-/globalsign-aeg-microsoft-intune-integration-guide.pdf)
+- [IDnomic](https://www.idnomic.com/)
+- [Sectigo](https://sectigo.com/products)
 
 Ha Ön a terméke Intune-nal való integrálása iránt érdeklődő külső hitelesítésszolgáltatót képvisel, tekintse át az API-val kapcsolatos útmutatót:
 
