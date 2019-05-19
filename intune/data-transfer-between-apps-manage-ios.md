@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bb109f8c837fe8848ad8cb19c930de765ed381d1
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: dffdf67597ccb7a1719b2b769a79a6a5f365198c
+ms.sourcegitcommit: 5fec35341d83b16023a92fc4b2b3e9237fc6c9ab
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61509512"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65853902"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>iOS-alkalmazások közti adatátvitel felügyelete a Microsoft Intune-ban
 
@@ -77,9 +77,10 @@ Az egyszerű felhasználónév beállítását **kötelező** megadni olyan eszk
 
    |Külső MDM-szolgáltató| Konfigurációs kulcs | Érték típusa | Konfigurációs érték|
    | ------- | ---- | ---- | ---- |
-   |Microsoft Intune| IntuneMAMUPN | Sztring | {{UserPrincipalName}}|
-   |VMware AirWatch| IntuneMAMUPN | Karakterlánc | {UserPrincipalName}|
-   |MobileIron | IntuneMAMUPN | Karakterlánc | ${userUPN} **vagy** ${userEmailAddress} |
+   |Microsoft Intune| IntuneMAMUPN | Karakterlánc | {{UserPrincipalName}}|
+   |VMware AirWatch| IntuneMAMUPN | Sztring | {UserPrincipalName}|
+   |MobileIron | IntuneMAMUPN | Sztring | ${userUPN} **vagy** ${userEmailAddress} |
+   |A Citrix végpont kezelése | IntuneMAMUPN | Karakterlánc | ${user.userprincipalname} |
    |ManageEngine Mobile Device Manager | IntuneMAMUPN | Sztring | %upn% |
 
 

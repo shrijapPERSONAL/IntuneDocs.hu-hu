@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 23a211d48a38cdffb909ceaf611a9939b5ac82f0
-ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
+ms.openlocfilehash: 07922ff771f8dea2e19a94cd965fb7779f20f131
+ms.sourcegitcommit: 5fec35341d83b16023a92fc4b2b3e9237fc6c9ab
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65733191"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65853955"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Önálló Intune - Win32-Alkalmazáskezelés
 
@@ -245,7 +245,7 @@ Az alábbi lépések útmutatást nyújtanak a Windows-alkalmazások Intune-hoz 
             Intune-ügynök ellenőrzi az eredményeket a parancsfájlból. Beolvassa a szkript által a standard kimeneti (STDOUT) streambe írt értékeket, a standard hibastreamet (STDERR) és a kilépési kódot. Ha a szkript egyik értéke nem nulla, akkor a szkript futtatása meghiúsul, és az alkalmazásészlelési állapot nem települ. Ha a kilépési kód nulla, és az STDOUT elemben vannak adatok, akkor az alkalmazásészlelési állapot Telepítve lesz. 
 
             > [!NOTE]
-            > Ha a szkript értéke 0, a végrehajtása sikeres volt. A második kimeneti csatorna alkalmazás észlelését jelzi – az STDOUT-adatok azt jelzik, hogy az alkalmazás megtalálható az ügyfélen. Most nem egy adott sztringet keresünk az STDOUT-ból.
+            > A Microsoft javasolja, hogy a parancsfájl UTF-8 kódolást. Ha a szkript értéke 0, a végrehajtása sikeres volt. A második kimeneti csatorna alkalmazás észlelését jelzi – az STDOUT-adatok azt jelzik, hogy az alkalmazás megtalálható az ügyfélen. Most nem egy adott sztringet keresünk az STDOUT-ból.
 
         4.  Miután hozzáadta a szabály(ok)at, válassza ki a **Hozzáadás** > **OK** lehetőséget.
 
