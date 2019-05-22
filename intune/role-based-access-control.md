@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98e2229194287ff644e9503fa21c9536cbff4734
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 895b358760775b1021e545b271acb7ced7fa7b1d
+ms.sourcegitcommit: ac3fe7504e58c74495a560a68eae2b784a4f7d46
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61507307"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65942090"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Szerepköralapú hozzáférés-vezérlés (RBAC) a Microsoft Intune-nal
 
@@ -42,7 +42,7 @@ Egy szerepkör megtekintéséhez válassza ki **Intune** > **szerepkörök** > *
 -   **Hozzárendelések**: Listáját [szerepkör-hozzárendelések]( assign-role.md) meghatározása, hogy mely felhasználók férhetnek hozzá mely felhasználókra vagy eszközökre. A szerepkör lehet több hozzárendeléseket, és egy felhasználó több hozzárendelések is lehet.
 
 ### <a name="built-in-roles"></a>Beépített szerepkörök
-Beépített szerepkörök további konfiguráció nélkül csoportokhoz is hozzárendelhet. Nem lehet törölni, vagy szerkesztheti a név, leírás, típus vagy egy beépített szerepkör engedélyei. Az engedélyek minden beépített szerepkör teljes listáját lásd az [Intune RBAC-táblázat] ((https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
+Beépített szerepkörök további konfiguráció nélkül csoportokhoz is hozzárendelhet. Nem lehet törölni, vagy szerkesztheti a név, leírás, típus vagy egy beépített szerepkör engedélyei. Az engedélyek minden beépített szerepkör teljes listáját lásd: a [Intune RBAC-táblázat](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
 
 - **Ügyfélszolgálat**: A felhasználók és eszközök távoli feladatokat hajtja végre, és alkalmazásokat és szabályzatokat rendelhet a felhasználókhoz vagy eszközökhöz.
 - **A házirend- és Profilkezelő**: Megfelelőségi szabályzat, konfigurációs profilokat, az Apple regisztrációs, cégeseszköz-azonosítók és biztonsági előírások kezeli.
@@ -59,12 +59,12 @@ Saját szerepköröket is létrehozhat egyéni engedélyekkel. Egyéni szerepkö
 | --- | :---: | :---: |
 | Globális rendszergazda | Olvasási/írási | Olvasási/írási |
 | Intune szolgáltatás rendszergazdája | Olvasási/írási | Olvasási/írási |
-| Feltételes hozzáférésű rendszergazda | Nincsenek | Nincsenek |
+| Feltételes hozzáférésű rendszergazda | None | None |
 | Biztonsági rendszergazda | Csak olvasható | Csak olvasható |
 | Biztonsági operátor | Csak olvasható | Csak olvasható |
 | Biztonsági olvasó | Csak olvasható | Csak olvasható |
 | Szabályozási ügyintéző | Nincsenek | Csak olvasható |
-| Megfelelőségi adatok rendszergazda | None | Csak olvasható |
+| Megfelelőségi adatok rendszergazda | Nincsenek | Csak olvasható |
 
 > [!TIP]
 > Intune-ban három olyan Azure AD-bővítmény látható: **Felhasználók**, **csoportok**, és **feltételes hozzáférési**, amely Azure AD RBAC segítségével szabályozhat. A **Felhasználóifiók-adminisztrátori** szerepkör csak az Azure AD-felhasználói vagy -csoporttevékenységek végrehajtására jogosít fel, és nem biztosít teljes körű engedélyt az összes Intune-beli tevékenységhez. További információkért lásd: [az Azure AD RBAC](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).

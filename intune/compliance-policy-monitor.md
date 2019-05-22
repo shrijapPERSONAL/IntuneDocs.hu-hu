@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 05/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 654d5b86a8a2df8eaddc8ea626b55390d2d32920
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: b5da0e5f14d3b87827d42d48341fa7080d73c567
+ms.sourcegitcommit: ac3fe7504e58c74495a560a68eae2b784a4f7d46
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61509070"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65942049"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune-eszközmegfelelőségi szabályzatok figyelése
 
@@ -75,7 +75,9 @@ A különböző eszközmegfelelőségi szabályzatállapotok leírása:
 
   - Eszközök, amelyek nincsenek hozzárendelve megfelelőségi szabályzat, és nem rendelkezik egy eseményindító a megfelelőség ellenőrzése
   - Eszközök, amelyek jelentkeztek be, mert a megfelelőségi szabályzat utolsó frissítés
-  - Nem specifikus felhasználóhoz társított eszközök
+  - Az eszköz nincs hozzárendelve egy adott felhasználó kapcsán, mint például:
+    - iOS-eszközök az Apple eszköz beléptetési Program (DEP) keresztül vásárolt, amelyekhez nincs felhasználói affinitás
+    - Androidos teljes képernyős vagy dedikált vállalati Android-eszköz
   - Egy eszközregisztráció-kezelői (DEM-) fiók-ban regisztrált eszközök
 
 - **Nem megfelelő:** Az eszköz nem sikerült a alkalmazni egy vagy több eszközmegfelelőségi szabályzat beállításai. Lehetséges, hogy a felhasználó nem a szabályzatoknak megfelelően járt el.
