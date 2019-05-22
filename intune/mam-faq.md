@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 05/21/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21d773b0ab2227f59f1ee0b2091d39b7c9799721
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 31b5697d9673866d378cc526a3735138d6a120b3
+ms.sourcegitcommit: 6de06b475f16893710dc34027096138aa697e482
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61506814"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65992901"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Gyakori kérdések az MAM-ről és az alkalmazásvédelemről
 
@@ -51,6 +51,13 @@ Az alkalmazásvédelmi szabályzatok olyan szabályok, amelyek biztosítják, ho
 
 **Milyen példák vannak az alkalmazásvédelmi szabályzatok használatára?**<br></br>
 Az alkalmazásvédelmi szabályzat egyes beállításairól részletes információt [Az Android mobilalkalmazás-felügyeleti szabályzatának beállításai a Microsoft Intune-ban ](app-protection-policy-settings-android.md) és az [iOS mobilalkalmazás-felügyeleti szabályzat konfigurálása ](app-protection-policy-settings-ios.md) című cikkekben talál.
+
+**Az MDM és MAM is alkalmazni szabályzatokat az ugyanahhoz a felhasználóhoz egy időben, a különböző eszközökön lehetséges? Például ha a felhasználó tudta hozzáférhet a munkahelyi erőforrásokhoz a saját MAM-kompatibilis gép, de is származnak, és a egy az Intune MDM által felügyelt eszköz. Vannak-e minden olyan korlátozást, hogy ezt az elképzelést?**<br></br>
+A MAM-szabályzatot a felhasználó alkalmazza az állapot beállítása nélkül, ha a felhasználó megkapja a MAM-szabályzatot, a BYOD-eszköz és az Intune által kezelt eszköz is. A felügyelt állapota alapján MAM-szabályzatok is alkalmazhatók. Így amikor létrehoz egy alkalmazásvédelmi szabályzatot, cél, minden alkalmazástípusra mellett kiválasztott nem. Ezután tegye a következők egyikét:
+- Intune által felügyelt eszközökre kevésbé szigorú MAM-szabályzatok alkalmazása, és a egy szigorúbb MAM-szabályzat nem MDM által regisztrált eszközökre vonatkoznak.
+- Csak a nem regisztrált eszközökön a MAM-szabályzat vonatkozik.
+
+További információkért lásd: [alkalmazásvédelmi szabályzatok figyelése](app-protection-policies-monitor.md).
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>Az alkalmazásvédelmi szabályzatokkal felügyelhető alkalmazások
 

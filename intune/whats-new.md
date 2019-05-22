@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bb689fd77d79e34abe0e4418ceea40e53373fd83
-ms.sourcegitcommit: dfcf80a91792715404dc021c8684866c8b0a27e1
+ms.openlocfilehash: cf40c3b8f31e042a501e1502097f147d48fc328d
+ms.sourcegitcommit: bc5e4dff18f5f9b79077a888f8a58dcc490708c0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65816276"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65975826"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 
@@ -121,9 +121,6 @@ A **alkalmazásáruház elérésére szolgáló jelszó** beállítás új neve 
 Az elérhető beállítások megtekintéséhez lépjen a [App Store, dokumentumok megtekintése, játékok IOS-eszközök beállításai](device-restrictions-ios.md#app-store-doc-viewing-gaming).
 
 A következőre vonatkozik: iOS
-
-#### <a name="advanced-settings-for-windows-defender-firewall-------1311949---"></a>Speciális beállítások a Windows Defender-tűzfal   <!--  1311949 -->
-Az Intune segítségével felügyelheti [eszközkonfigurációs profil részeként egyéni tűzfal-szabályok](endpoint-protection-configure.md#add-custom-firewall-rules-for-windows-10-devices) az endpoint protection, Windows 10 rendszeren. Bejövő és kimenő viselkedés, alkalmazások hálózati címek és portok a szabályok határozzák meg.
 
 ####  <a name="microsoft-defender-advanced-threat-protection--baseline--preview------3754134---"></a>A Microsoft Defender komplex veszélyforrások elleni védelem baseline (előzetes verzió)  <!--  3754134 -->
 Hozzáadtunk egy biztonsági alaptervet előzetes a [Microsoft Defender komplex veszélyforrások elleni védelem](security-baseline-settings-defender-atp.md) beállításait.  

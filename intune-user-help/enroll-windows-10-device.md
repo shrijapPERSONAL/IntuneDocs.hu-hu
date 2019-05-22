@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/11/2019
+ms.date: 05/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4eb5dbb150559de7ad30a598fb78a4fa78033c42
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 162044fdfbe9df6dd6461bcdf919dc798ad3c4a1
+ms.sourcegitcommit: 6de06b475f16893710dc34027096138aa697e482
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61497907"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65992922"
 ---
 # <a name="enroll-windows-10-devices-with-intune-company-portal"></a>A Windows 10-eszközök regisztrálása az Intune vállalati portál
 
@@ -90,11 +90,14 @@ Ezeket a lépéseket ismertetjük a Windows 10-es, 1511-es és korábbi verziój
 
     ![Jelentkezzen be](./media/W10-enroll-4-sign-in.png)  
 
-Még mindig nem fér hozzá a munkahelyi vagy iskolai e-mailjeihez, fájljaihoz vagy egyéb adataihoz? Ismerje meg, hogyan [fiókkal kapcsolatos problémák elhárítása](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account).   
+Még mindig nem fér hozzá a munkahelyi vagy iskolai e-mailjeihez, fájljaihoz vagy egyéb adataihoz? Ismerje meg, hogyan [fiókkal kapcsolatos problémák elhárítása](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account) regisztráció során.  
+
+## <a name="it-administrator-support"></a>Informatikai rendszergazdai támogatás   
+
+Ha egy informatikai rendszergazdája, és futtassa problémák eszközök regisztrálásakor, [eszközregisztrációs problémák hibaelhárítása a Windows Microsoft Intune-ban](https://support.microsoft.com/help/4469913). Ez a cikk felsorolja a gyakori hibák, azok okok, és lépéseket a problémák megoldásához. 
 
 ## <a name="next-steps"></a>További lépések  
-
-Segítségre van szüksége, forduljon a cég informatikai támogatási. Annak a szervezet informatikai információkat a [céges portál webhelyen](https://go.microsoft.com/fwlink/?linkid=2010980). Jelentkezzen be munkahelyi vagy iskolai fiókját a helyhez.  
+Ha a vállalati portál vagy a regisztráció segítségre van szüksége, lépjen kapcsolatba a szervezet informatikai támogatási csoportjának. Talál meg kapcsolattartási adatait a [céges portál webhelyen](https://go.microsoft.com/fwlink/?linkid=2010980). Jelentkezzen be munkahelyi vagy iskolai fiókját a helyhez.  
 
  
 
