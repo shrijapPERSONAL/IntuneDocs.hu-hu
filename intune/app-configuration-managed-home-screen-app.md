@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 05/16/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d28ac5f7964fa7b2ddb5ec9be1878ccdd3dadbd
-ms.sourcegitcommit: 5fec35341d83b16023a92fc4b2b3e9237fc6c9ab
+ms.openlocfilehash: a9a61b89f07bfacf1dc41be1412f79509e1e147d
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65853942"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66049943"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Konfigurálja a Microsoft által felügyelt Android Enterprise kezdőképernyő-alkalmazás
 
@@ -85,9 +84,9 @@ A következő táblázat felsorolja a kezdőlap képernyő felügyelt rendelkez�
 | Ahhoz, hogy a képernyőkímélő tétlenség ideje | egész szám | 30 | Az eszköz nem aktív a képernyőkímélő aktiválása előtt másodpercek számát. Ha az értéke 0, az eszköz soha nem kerül a képernyőkímélő módba. |
 | Media észleli a képernyőkímélő megjelenítése előtt | bool | IGAZ | Válassza ki, hogy az eszköz képernyőjén meg kell jelennie a képernyőkímélő ha hang és videó lejátszása az eszközön. Ha igaz értékű, az eszköz nem játszható le a hang/kép, függetlenül az érték a **inactive_time_to_show_scree_saver**. Ha értéke HAMIS, eszköz képernyőjén jeleníti meg megfelelően állítsa be értéket a képernyőkímélő **inactive_time_to_show_screen_saver**.   |
 | Engedélyezze a virtuális kezdőlapjának gombja | bool | HAMIS | Kapcsolja be ezt a beállítást `True` , hogy a végfelhasználó, aki rendelkezik hozzáféréssel, amely visszaadja az aktuális feladathoz vannak a felügyelt kezdőlapjára a felhasználó otthoni felügyelt kezdőképernyő gombra.  |
-| Virtuális otthoni gomb típusa | sztring | swipe_up | Használat **swipe_up** a kezdőlap gombja hozzáférés és a egy pöccintsen felfelé kézmozdulat. Használat **lebegőpontos** fix kiszolgálású, állandó otthoni gombra, a végfelhasználók által a képernyőn áthelyezhető eléréséhez. |
+| Virtuális otthoni gomb típusa | Karakterlánc | swipe_up | Használat **swipe_up** a kezdőlap gombja hozzáférés és a egy pöccintsen felfelé kézmozdulat. Használat **lebegőpontos** fix kiszolgálású, állandó otthoni gombra, a végfelhasználók által a képernyőn áthelyezhető eléréséhez. |
 | Akkumulátor és jel erőssége mutató sáv | bool | Igaz  | Ez a beállítás bekapcsolásával `True` az akkumulátor és jel erőssége jelző sáv mutatja. |
-| Kilépés zárolási feladat módjának jelszava | sztring |   | Adjon meg egy 4 – 6 számjegyű kód használatával ideiglenesen dobja el a hibaelhárítási zárolása-tevékenységhez módból. |
+| Kilépés zárolási feladat módjának jelszava | Karakterlánc |   | Adjon meg egy 4 – 6 számjegyű kód használatával ideiglenesen dobja el a hibaelhárítási zárolása-tevékenységhez módból. |
 | Wi-Fi-beállítás megjelenítése | bool | HAMIS | Ez a beállítás bekapcsolásával `True` lehetővé teszi, hogy a végfelhasználó kapcsolhatja be és ki a Wi-Fi, vagy másik Wi-Fi hálózathoz való csatlakozáshoz.  |
 | Bluetooth-beállítás megjelenítése | bool | HAMIS | Ez a beállítás bekapcsolásával `True` felhasználó-vagy bekapcsolása a Bluetooth és csatlakozni más Bluetooth-kompatibilis eszközök segítségével.   |
 

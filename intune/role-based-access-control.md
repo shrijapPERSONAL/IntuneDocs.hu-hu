@@ -7,7 +7,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 03/22/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 895b358760775b1021e545b271acb7ced7fa7b1d
-ms.sourcegitcommit: ac3fe7504e58c74495a560a68eae2b784a4f7d46
+ms.openlocfilehash: 7419a316018ed5c883f89a51090a852680cd9e38
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65942090"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040663"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Szerepköralapú hozzáférés-vezérlés (RBAC) a Microsoft Intune-nal
 
@@ -59,12 +58,12 @@ Saját szerepköröket is létrehozhat egyéni engedélyekkel. Egyéni szerepkö
 | --- | :---: | :---: |
 | Globális rendszergazda | Olvasási/írási | Olvasási/írási |
 | Intune szolgáltatás rendszergazdája | Olvasási/írási | Olvasási/írási |
-| Feltételes hozzáférésű rendszergazda | None | None |
+| Feltételes hozzáférésű rendszergazda | Nincsenek | Nincsenek |
 | Biztonsági rendszergazda | Csak olvasható | Csak olvasható |
 | Biztonsági operátor | Csak olvasható | Csak olvasható |
 | Biztonsági olvasó | Csak olvasható | Csak olvasható |
 | Szabályozási ügyintéző | Nincsenek | Csak olvasható |
-| Megfelelőségi adatok rendszergazda | Nincsenek | Csak olvasható |
+| Megfelelőségi adatok rendszergazda | None | Csak olvasható |
 
 > [!TIP]
 > Intune-ban három olyan Azure AD-bővítmény látható: **Felhasználók**, **csoportok**, és **feltételes hozzáférési**, amely Azure AD RBAC segítségével szabályozhat. A **Felhasználóifiók-adminisztrátori** szerepkör csak az Azure AD-felhasználói vagy -csoporttevékenységek végrehajtására jogosít fel, és nem biztosít teljes körű engedélyt az összes Intune-beli tevékenységhez. További információkért lásd: [az Azure AD RBAC](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).

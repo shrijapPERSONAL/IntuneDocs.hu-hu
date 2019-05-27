@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cf384bfcc0782226e363a6527ea47c4140f7faa
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 7e68e404a91927192f1006626d1b865acd5eb589
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61499726"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66197047"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>A vállalati eszköz, a Microsoft Intune alkalmazás regisztrálása
 
@@ -35,8 +35,6 @@ Négy módon regisztrálásához. A szervezet kell lehetővé teszik, hogy melyi
 * Jogkivonat  
 * QR-kódot   
 * Google Zero Touch  
-
-Regisztráció előtt győződjön meg arról, tisztában lehetőséget akkor kell használni, hogy a megfelelő lépéseket követnie.  
 
 ## <a name="enroll-device"></a>Eszköz regisztrálása 
 Hajtsa végre ezeket a lépéseket, és regisztrálja az eszközt.  

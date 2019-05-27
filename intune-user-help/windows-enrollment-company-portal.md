@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/12/2019
+ms.date: 05/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a637b6eed162243d2be81ac08fbcc055e1fd5816
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: d9f29e2d737dfd7bef709f239d6c8506c3bb746c
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505199"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66196882"
 ---
 # <a name="windows-device-enrollment-in-intune-company-portal"></a>Windows-eszközök regisztrálása az Intune vállalati portál  
 
@@ -78,6 +78,9 @@ Regisztráció lépései a Windows 10-es eszközök különböző verziói eset�
 A céges portál webhelyen keresztül más támogatott Windows-eszközök regisztrálása használja a következő cikkeket:   
 * [Windows 8.1. vagy Windows RT 8.1-eszköz](enroll-your-W81-or-rt81-windows.md)  
 * [Windows Phone 8.1 rendszerű eszköz](enroll-your-wp81-windows.md)    
+
+## <a name="it-administrator-support"></a>Informatikai rendszergazdai támogatás  
+Ha egy informatikai rendszergazdája, és futtassa problémák eszközök regisztrálásakor, [eszközregisztrációs problémák hibaelhárítása a Windows Microsoft Intune-ban](https://support.microsoft.com/help/4469913). Ez a cikk felsorolja a gyakori hibák, azok okok, és lépéseket a problémák megoldásához.  
 
 ## <a name="next-steps"></a>További lépések  
 Most, hogy megismerte a támogatott eszközök és a Windows 10-es verzió számát, folytassa az ajánlott regisztrációs cikk.  

@@ -7,7 +7,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 05/21/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 31b5697d9673866d378cc526a3735138d6a120b3
-ms.sourcegitcommit: 6de06b475f16893710dc34027096138aa697e482
+ms.openlocfilehash: 1fb3b02cd9d9b978f1de5e98634d647c4c81cde0
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65992901"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041653"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Gyakori kérdések az MAM-ről és az alkalmazásvédelemről
 
@@ -220,6 +219,6 @@ Különböző beállítások esetén először a az Intune App SDK verziókövet
 - [Az Android mobilalkalmazás-felügyeleti szabályzatának beállításai a Microsoft Intune-ban](app-protection-policy-settings-android.md)
 - [iOS mobilalkalmazás-felügyeleti szabályzat konfigurálása](app-protection-policy-settings-ios.md)
 - [App protection házirendek csoportházirend-frissítés](app-protection-policy-delivery.md)
-- [Az alkalmazásvédelmi szabályzatok ellenőrzése](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery)
+- [Az alkalmazásvédelmi szabályzatok ellenőrzése](app-protection-policy-delivery.md)
 - [Alkalmazáskonfigurációs szabályzatok hozzáadása felügyelt alkalmazásokhoz eszközbeléptetés nélkül](app-configuration-policies-managed-app.md)
 - [Microsoft Intune-támogatás kérése](get-support.md)

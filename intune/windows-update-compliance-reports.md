@@ -7,7 +7,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 02/12/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3af9fbfa5bb1a9c6ebd9ebd0f20a55677c48b755
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: a2b236d01cb5ffcf5a26e71ac0a9b65bb586dcb1
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61509976"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66039673"
 ---
 # <a name="intune-compliance-reports-for-updates"></a>Frissítések az Intune megfelelőségi jelentések
 A Windows 10-eszközökre telepíti központilag a Windows update Intune használatakor a frissítési megfelelőség szempontjából, az Intune-ban vagy egy ingyenes megoldási részleteinek megtekintése nevű *Update Compliance*, amelynek része a Microsoft Operations Management Suite (OMS).
@@ -56,7 +55,7 @@ Az **OMA-URI beállítások hozzáadása vagy módosítása** alatt például a 
 - **Beállítás neve**: Windows Analytics kereskedelmi azonosító
 - **Beállítás leírása**: Kereskedelmi azonosító a Windows Analytics-megoldások konfigurálása
 - **OMA-URI** (megkülönbözteti a kis-és nagybetűket): *./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID*
-- **Adattípus**: Sztring
+- **Adattípus**: Karakterlánc
 - **Érték**: \<Használja az OMS-munkaterület Windows-Telemetria lapján látható GUID >
  
 > [!NOTE]  

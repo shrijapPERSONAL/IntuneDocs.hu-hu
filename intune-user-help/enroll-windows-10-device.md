@@ -18,20 +18,20 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 162044fdfbe9df6dd6461bcdf919dc798ad3c4a1
-ms.sourcegitcommit: 6de06b475f16893710dc34027096138aa697e482
+ms.openlocfilehash: cbb6c3b771ae768fe45bea1eecb21f7083003010
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65992922"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66196847"
 ---
 # <a name="enroll-windows-10-devices-with-intune-company-portal"></a>A Windows 10-eszközök regisztrálása az Intune vállalati portál
 
 A szervezet felügyeleti csoportban a Windows 10 rendszerű eszköz regisztrálása a Intune vállalati portál használatával. Ez a cikk bemutatja, hogyan regisztrálhat eszközöket a Windows 10 1607-es és újabb verziók, és a Windows 10 1511-es és korábbi. Mielőtt elkezdené, győződjön meg arról, hogy [ellenőrizze a verziót az eszközén](windows-enrollment-company-portal.md#find-windows-10-version-number) , hogy a megfelelő lépéseket követnie.  
 
 Windows 10 asztali, telefonos és táblagépes különböző eszköztípusok között támogatott. A regisztráció lépései megegyeznek az bármelyik eszközt használja. A képernyő azonban némileg eltérően jelenik meg ebben a cikkben a lemezképek alapján is meg.  
-
-> [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment/player]  
+</br>
+> [!VIDEO https://www.youtube.com/embed/TKQxEckBHiE?rel=0]
 
 ## <a name="enroll-windows-10-version-1607-and-later-device"></a>A Windows 10 1607-es verzió és az újabb eszközök regisztrálása 
 Ezeket a lépéseket ismertetjük a Windows 10-es, 1607-es és újabb verzióját futtató eszközök regisztrálásához.  

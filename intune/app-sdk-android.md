@@ -7,7 +7,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 03/26/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 965dcfbb711eac1b38977e023d1975f4dc0e8b81
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 5808a4b81fcc66d37e78c50cb5bcd2ae7bbe44e2
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505845"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66049605"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>A Microsoft Intune App SDK Androidon – útmutató fejlesztőknek
 
@@ -699,7 +698,7 @@ ADAL-metaadatok **nem kell** szerepel a jegyzékfájlban.
 
 #### <a name="2-app-integrates-adal"></a>2. Az alkalmazás integrálja az ADAL-t
 
-|Szükséges ADAL-paraméter| Érték |
+|Szükséges ADAL-paraméter| Value |
 |--|--|
 | ClientID | Az alkalmazás ClientID azonosítója (az Azure AD állítja elő az alkalmazás regisztrálásakor) |
 
@@ -714,7 +713,7 @@ Lásd emellett alább a [Feltételes hozzáférés](#conditional-access) követe
 
 #### <a name="3-app-integrates-adal-but-does-not-support-brokered-authenticationdevice-wide-sso"></a>3. Az alkalmazás integrálja az adal-t, de nem támogatja a közvetített hitelesítést/eszközszintű SSO
 
-|Szükséges ADAL-paraméter| Érték |
+|Szükséges ADAL-paraméter| Value |
 |--|--|
 | ClientID | Az alkalmazás ClientID azonosítója (az Azure AD állítja elő az alkalmazás regisztrálásakor) |
 | SkipBroker | **True** |

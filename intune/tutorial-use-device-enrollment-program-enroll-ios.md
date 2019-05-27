@@ -8,19 +8,18 @@ ms.author: erikje
 manager: dougeby
 ms.date: 04/30/2019
 ms.topic: tutorial
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e006ce1be5a19d0557ef0a5d6046afea2c13986
-ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
-ms.translationtype: MT
+ms.openlocfilehash: f1f2d584e3e19726ee79671437d2d6e5c729879d
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135186"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040310"
 ---
 # <a name="tutorial-use-apples-corpoate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>Oktatóanyag: Az Intune-ban iOS-eszközök regisztrálása az Apple üzleti Manager (ABM) az Apple Corpoate Eszközregisztráció funkciók használata
 Az Eszközregisztrációs szolgáltatás az Apple üzleti Managerben egyszerűbbé teszi az eszközök regisztrálását. Az Intune is támogatja a régebbi az Apple Készülékregisztrációs Program (DEP), portál, de javasoljuk, hogy kezdhet tiszta lappal Apple üzleti vezető. A Microsoft Intune és a vállalati Apple-eszközök regisztrálása az eszközök automatikusan biztonságosan lesz regisztrálva az első alkalommal a felhasználó bekapcsolja az eszközt. Ezért el olyan eszközöket, számos felhasználó számára anélkül, hogy minden egyes eszköz beállításához külön-külön kellene. 

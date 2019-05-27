@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 10/5/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2615c058c5de04842e8d607b717a290663b1a9b1
-ms.sourcegitcommit: bc5e4dff18f5f9b79077a888f8a58dcc490708c0
+ms.openlocfilehash: 7aeda02cae01e989041ec41b54186d62988f592d
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65983401"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66047896"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows-eszközök regisztrálása az Intune-ban a Windows Autopilot használatával  
 A Windows Autopilot egyszerűbbé teszi az eszközök regisztrálását az Intune-ban. A testre szabott operációsrendszer-lemezképek létrehozása és karbantartása sok időt vesz igénybe. Gyakran ezeknek az egyéni operációsrendszer-lemezképeknek az új eszközökre való alkalmazásával is időt kell töltenie, hogy felkészítse az eszközöket a használatra, mielőtt a végfelhasználóknak adná azokat. A Microsoft Intune és az AutoPilot révén új eszközöket adhat hozzá a végfelhasználók számára anélkül, hogy egyéni operációsrendszer-lemezképek létrehozására, kezelésére és az eszközökre való alkalmazására lenne szükség. Az AutoPilot-eszközök Intune-nal való felügyelete során a regisztráció után szabályzatokat, profilokat, alkalmazásokat és sok mást is kezelni tud. A megoldás előnyeinek, használati eseteinek és előfeltételeinek áttekintéséről lásd [a Windows AutoPilot áttekintését](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -48,7 +47,8 @@ A Windows AutoPilot-eszközök felvételéhez importálhat egy CSV-fájlt az ada
 
     ![A Windows AutoPilot-eszközök képernyőképe](media/enrollment-autopilot/autopilot-import-device.png)
 
-2. A **Windows AutoPilot-eszközök hozzáadása** alatt keresse meg a hozzáadni kívánt eszközöket felsoroló CSV-fájlt. A fájl szerepelnie kell a sorozatszámokat, Windows Termékazonosítói, hardver-kivonatok és az eszközök opcionális csoport címkék.
+2. A **Windows AutoPilot-eszközök hozzáadása** alatt keresse meg a hozzáadni kívánt eszközöket felsoroló CSV-fájlt. A CSV-fájl szerepelnie kell a sorozatszámokat, nem kötelező Windows termékazonosítók, hardver-kivonatok és opcionális csoport címkék az eszközök. Legfeljebb 500 sor lehet a listában. Használja a fejlécet és a sor formátuma alább látható: `Device Serial Number,Windows Product ID,Hardware Hash,GroupTag`
+    `<serialNumber>,<optionalProductID>,<hardwareHash>,<optionalGroupTag>`
 
     ![A Windows AutoPilot-eszközök hozzáadásának képernyőképe](media/enrollment-autopilot/autopilot-import-device2.png)
 

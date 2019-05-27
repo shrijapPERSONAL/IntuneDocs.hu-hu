@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/05/2019
+ms.date: 05/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: tisilv
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d0c7ac239a67a51ba7165771206883f3c46f5f55
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: bef0eb545f5f0ca0f85365a08e6bc5d726d6979e
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61498141"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66196858"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>A céges erőforrásokhoz iOS-eszközzel történő hozzáférés beállítása  
 
@@ -31,7 +31,9 @@ Regisztrálja iOS-eszközét az Intune Céges portál alkalmazással, hogy bizto
 
 Miután az eszköz regisztrálva van, akkor *felügyelt*. A szervezet rendelhet a szabályzatokat és alkalmazásokat az eszközre egy mobileszköz-felügyelet (MDM) szolgáltató, például az Intune segítségével.  
 
-A munkahelyi vagy iskolai adatokat az eszközről való hozzáférés fenntartása kell egyeznie a kívánt beállításokat a szervezet az eszköz konfigurálása. Ez a cikk ismerteti a vállalati portál használatával a regisztrálás eszközt, és a szervezet követelmények karbantartása. 
+A munkahelyi vagy iskolai adatokat az eszközről való hozzáférés fenntartása kell egyeznie a kívánt beállításokat a szervezet az eszköz konfigurálása. Ez a cikk ismerteti a vállalati portál használatával a regisztrálás eszközt, és a szervezet követelmények karbantartása.  
+</br>
+> [!VIDEO https://www.youtube.com/embed/mJyv6YcHi7c?rel=0]
 
 > [!NOTE]
 > Ha a vállalati e-maileket a Mail alkalmazással próbálta elérni, és kapott egy felszólítást, hogy helyezze felügyelet alá az eszközét, akkor a megfelelő helyen jár. Ahhoz, hogy iOS-eszközén is hozzá tudjon férni a céges e-mailekhez és más erőforrásokhoz, kövesse az alábbi útmutatót.  
@@ -39,7 +41,7 @@ A munkahelyi vagy iskolai adatokat az eszközről való hozzáférés fenntartá
 ## <a name="what-to-expect-from-the-company-portal-app"></a>Ami a Céges portál alkalmazástól elvárható  
 
 ### <a name="security"></a>Biztonság  
-Első beállítása során az alkalmazás megköveteli, hogy hitelesítse magát vállalatánál. Ez után tájékoztatja az összes eszközbeállításról, amelyeket frissítenie kell. A vállalatok gyakran megadják például a jelszavak minimális vagy maximális karakterszámát, és ezt Önnek be kell tartania.     
+Első beállítása során az alkalmazás megköveteli, hogy hitelesítse magát vállalatánál. Ez után tájékoztatja az összes eszközbeállításról, amelyeket frissítenie kell. A vállalatok gyakran megadják például a jelszavak minimális vagy maximális karakterszámát, és ezt Önnek be kell tartania.
 
 ### <a name="protection"></a>Protection  
 Eszköze regisztrálása után a Céges portál alkalmazás folyamatosan gondoskodik az eszköz védelméről. Ha például nem megbízható forrásból telepít valamit, az alkalmazás riasztást küld Önnek, és olykor meg is vonja a vállalati adatokhoz való hozzáférést. Az ilyen típusú szabályzat gyakori a szervezetekben, és milyen gyakran van szükség, hogy távolítsa el a nem megbízható alkalmazás, mielőtt újra hozzáférést kaphatnak.  
@@ -118,6 +120,9 @@ Felfüggesztés regisztráció során több percig, előfordulhat, hogy az alkal
 
 > [!Note]
 > Ha a szervezet figyeli a hang- és korlátozások, vagy a vállalat által birtokolt eszközt biztosít, lehetséges, hogy néhány további lépésre. Ha az kéri, hogy telepítse a **Datalert** alkalmazás, lásd: [regisztrálja az eszközt a távközlésiköltség-kezelőben](enroll-your-device-with-telecom-expense-management-ios.md). Ha a szervezet Apple Device Enrollment Program része, ismerje meg, [a vállalat által birtokolt eszközök regisztrálási módjának](enroll-your-device-dep-ios.md).  
+
+## <a name="it-administrator-support"></a>Informatikai rendszergazdai támogatás  
+Ha egy informatikai rendszergazdája, és futtassa problémák eszközök regisztrálásakor, [iOS-eszközregisztrációs problémák a Microsoft Intune hibaelhárítási](https://support.microsoft.com/en-us/help/4039809). Ez a cikk felsorolja a gyakori hibák, azok okok, és lépéseket a problémák megoldásához.  
 
 ## <a name="next-steps"></a>További lépések  
 Munkahelyi és iskolai segítségével alkalmazásokat kereshet. Ismerje meg, [hogyan az alkalmazások rendelkezésre álljanak](use-managed-apps-on-your-device-ios.md) Önnek a céges portálon keresztül.  

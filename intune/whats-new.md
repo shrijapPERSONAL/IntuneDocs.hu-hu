@@ -6,9 +6,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/16/2019
+ms.date: 05/21/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf40c3b8f31e042a501e1502097f147d48fc328d
-ms.sourcegitcommit: bc5e4dff18f5f9b79077a888f8a58dcc490708c0
-ms.translationtype: MT
+ms.openlocfilehash: 0aa6f0e65c8f31a86dba6fd4a31384f61f4002be
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65975826"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044239"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 
@@ -45,8 +44,22 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Ugyanitt tal
 
 -->  
 
+<!-- ########################## -->
+
+## <a name="week-of-may-20-2019"></a>2019. május 20 hete 
+
+#### <a name="autopilot-device-orderid-attribute-name-changed-to-group-tag----4659453---"></a>Az autopilot eszköz OrderID attribútum neve módosult csoporthoz címke <!-- 4659453 -->
+
+Intuitívabb, ellenőrizze, hogy a **OrderID** értékre változott az Autopilot-eszközök attribútumnév **csoporthoz címke**. Autopilot-eszközadatok a feltöltendő CSV-k használatakor, az oszlop fejlécére, nem OrderID csoporthoz címke kell használnia. Ellenkező esetben a feltöltés sikertelen lesz. OrderID hamarosan régebbi ügyfelek vagy parancsprogramok rendszerbe. Azonban a csoporthoz címke lesz a jövőben a standard.
 
 <!-- ########################## -->
+
+## <a name="week-of-may-20-2019"></a>2019. május 20 hete 
+
+### <a name="app-management"></a>Alkalmazáskezelés
+
+#### <a name="windows-company-portal-app----3316993---"></a>Windowsos Munkahelyi portál alkalmazás <!-- 3316993 -->
+A Windows céges portál alkalmazás már egy új lap feliratú **eszközök**. A **eszközök** lapon megjelenik a végfelhasználók számára az összes regisztrált eszközökön. Felhasználók jelenik meg ez a változás a vállalati portálon 10.3.4291.0 verzióját használják, és később. A vállalati portál konfigurálásával kapcsolatos további információkért lásd: [a Microsoft Intune vállalati portál alkalmazás konfigurálása](company-portal-app.md).
 
 ## <a name="week-of-may-13-2019"></a>2019. május 13 hete 
 
@@ -64,7 +77,7 @@ A beállítási asszisztenssel keresztül egy Apple vállalati tulajdonú eszkö
 
 Ha a felhasználók a vállalati portál alkalmazást az App store áruházból telepítik, és próbálja meg, ezek eszközöket regisztrálni, akkor egy hibaüzenetet fog kapni. Ezek az eszközök csak akkor használja a vállalati portálon, ha azt a leküldött, automatikusan, az Intune-regisztráció során is várhatók. Regisztrációs profilok az Intune-ban az Azure Portalon is frissülnek, így megadhatja, hogy miképpen hitelesítik eszközök, és ha kapnak a vállalati portál alkalmazást. Ha azt szeretné, hogy a DEP-eszközök felhasználói szeretné, hogy a vállalati portálon, szüksége lesz a beállítások megadása egy regisztrációs profilt. 
 
-Emellett a **az eszköz azonosítására** képernyőn, az IOS-es céges portál eltávolítása folyamatban van. Ezért rendszergazdák, akik számára szeretne feltételes hozzáférésének engedélyezésére vagy a vállalati alkalmazások telepítése a DEP-regisztrációs profilt kell frissíteni. Ez a követelmény csak akkor érvényes, ha a DEP-regisztráció a beállítási Asszisztenssel van hitelesítve. Ebben az esetben kell küldenie az eszközön a céges portálon. Ehhez válassza ki a **Intune** > **eszközregisztráció** > **Apple-regisztráció** > **Készülékregisztrációs program jogkivonatok** > Válasszon egy tokent > **profilok** > Válasszon egy profilt > **tulajdonságok** > beállítása **céges portál telepítése** való **Igaz**.
+Emellett a **az eszköz azonosítására** képernyőn, az IOS-es céges portál eltávolítása folyamatban van. Ezért rendszergazdák, akik számára szeretne feltételes hozzáférésének engedélyezésére vagy a vállalati alkalmazások telepítése a DEP-regisztrációs profilt kell frissíteni. Ez a követelmény csak akkor érvényes, ha a DEP-regisztráció a beállítási Asszisztenssel van hitelesítve. Ebben az esetben kell küldenie az eszközön a céges portálon. Ehhez válassza ki a **Intune** > **eszközregisztráció** > **Apple-regisztráció** > **Készülékregisztrációs program jogkivonatok** > Válasszon egy tokent > **profilok** > Válasszon egy profilt > **tulajdonságok** > beállítása **céges portál telepítése** való **Igen**.
 
 A már regisztrált DEP-eszközökön a vállalati portál telepítéséhez kell Intune-ban lépjen > ügyfélalkalmazások, és küldje le az alkalmazás-konfigurációs házirendek segítségével felügyelt alkalmazásként. 
 

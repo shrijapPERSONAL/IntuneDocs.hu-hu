@@ -473,8 +473,8 @@
               href: certificates-s-mime-encryption-sign.md
             - name: Külső hitelesítésszolgáltató használata SCEP-pel
               href: certificate-authority-add-scep-overview.md
-            - name: Symantec PKI Manager webszolgáltatás
-              href: certificates-symantec-configure.md
+            - name: A DigiCert PKI használata
+              href: certificates-digicert-configure.md
             - name: SCEP- vagy PKCS-tanúsítványok eltávolítása
               href: remove-certificates.md
         - name: eSIM mobilprofilok

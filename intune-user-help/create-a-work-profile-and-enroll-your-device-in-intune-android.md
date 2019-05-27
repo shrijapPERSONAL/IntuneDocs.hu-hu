@@ -18,16 +18,18 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 29928023abc2d6119bb318bbe046e954288ebaa3
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 6fb5911f8a706f38e3e880c32113d203369ed870
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61497754"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66196935"
 ---
 # <a name="enroll-device-with-android-work-profile"></a>Androidos munkahelyi profillal rendelkező eszköz regisztrálása
 
-Személyes Android-eszközének regisztrálásával hozzáférhet a vállalati e-mailekhez, alkalmazásokhoz és egyéb munkahelyi adataihoz. A beléptetés során az Androidos munkahelyi profilok kell beállítani. Ezt a profilt a munkahelyi adatokat elkülöníti a személyes adatok az eszközön. A cég informatikai támogatási csak a munkahelyi profilt, amely a munkahelyi fájlokat és adatokat áll felügyeli. A cég informatikai támogatási szolgálata az eszközén a személyes adatokat nem tudja kezelni. Többet tudhat meg arról, hogy [mi történik a munkahelyi profil létrehozásakor](what-happens-when-you-create-a-work-profile-android.md). 
+Személyes Android-eszközének regisztrálásával hozzáférhet a vállalati e-mailekhez, alkalmazásokhoz és egyéb munkahelyi adataihoz. A beléptetés során az Androidos munkahelyi profilok kell beállítani. Ezt a profilt a munkahelyi adatokat elkülöníti a személyes adatok az eszközön. A cég informatikai támogatási csak a munkahelyi profilt, amely a munkahelyi fájlokat és adatokat áll felügyeli. A cég informatikai támogatási szolgálata az eszközén a személyes adatokat nem tudja kezelni. Többet tudhat meg arról, hogy [mi történik a munkahelyi profil létrehozásakor](what-happens-when-you-create-a-work-profile-android.md).  
+</br>
+> [!VIDEO https://www.youtube.com/embed/9Dl8HsGk4tI?rel=0]
 
 ## <a name="create-work-profile-and-enroll-device"></a>Munkahelyi profil létrehozása és eszköz regisztrálása
 

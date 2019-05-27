@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 10/19/2018
 ms.topic: tutorial
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -19,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c2d137945325d8ec11801aec225fd0e89196ed05
-ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
+ms.openlocfilehash: 2ee353e5e6c39c3b402c0b4f039bb02efcfa4532
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65732991"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044527"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Oktatóanyag: Windows-eszközök regisztrálása az Intune Autopilot használatával
 A Windows Autopilot leegyszerűsíti az eszközök regisztrálását. A Microsoft Intune és az AutoPilot használatával új eszközöket adhat a végfelhasználóknak anélkül, hogy egyéni operációsrendszer-lemezképek létrehozására, fenntartására és alkalmazására lenne szükség. 
@@ -51,11 +50,11 @@ Az AutoPilot előnyeinek, használati eseteinek és előfeltételeinek áttekint
 
 A Windows Autopilot beállításának első lépéseként hozzá kell adnia az Intune-hoz a Windows rendszerű eszközöket. Csak létre kell hoznia egy CSV-fájlt, és importálnia kell az Intune-ba.
 
-1. Egy szövegszerkesztőben hozza létre a Windows rendszerű eszközöket azonosító, vesszővel elválasztott értékeket (CSV) tartalmazó listát. Használja az alábbi formátumot:
+1. Egy szövegszerkesztőben hozza létre a Windows rendszerű eszközöket azonosító, vesszővel elválasztott értékeket (CSV) tartalmazó listát. Használja a következő formátumot:
     
-    *sorozatszám*, *windows-termékazonosító*, *hardverkivonat*, *választható-rendelésazonosító*
+    *serial-number*, *windows-product-id*, *hardware-hash*, *optional-Group-Tag*
     
-    Az első három elem megadása kötelező, de a rendelés azonosítója választható.
+    Az első három elem megadása kötelező, de a csoporthoz címke (korábbi nevén "order ID") nem kötelező.
 
 2. Mentse a CSV-fájlt.
 
