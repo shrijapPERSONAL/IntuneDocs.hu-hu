@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0aa6f0e65c8f31a86dba6fd4a31384f61f4002be
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
-ms.translationtype: HT
+ms.openlocfilehash: 044ced57d9dd2e3e4b86548540090de35b88a6b0
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044239"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66197079"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 
@@ -48,18 +48,16 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Ugyanitt tal
 
 ## <a name="week-of-may-20-2019"></a>2019. május 20 hete 
 
-#### <a name="autopilot-device-orderid-attribute-name-changed-to-group-tag----4659453---"></a>Az autopilot eszköz OrderID attribútum neve módosult csoporthoz címke <!-- 4659453 -->
-
-Intuitívabb, ellenőrizze, hogy a **OrderID** értékre változott az Autopilot-eszközök attribútumnév **csoporthoz címke**. Autopilot-eszközadatok a feltöltendő CSV-k használatakor, az oszlop fejlécére, nem OrderID csoporthoz címke kell használnia. Ellenkező esetben a feltöltés sikertelen lesz. OrderID hamarosan régebbi ügyfelek vagy parancsprogramok rendszerbe. Azonban a csoporthoz címke lesz a jövőben a standard.
-
-<!-- ########################## -->
-
-## <a name="week-of-may-20-2019"></a>2019. május 20 hete 
-
 ### <a name="app-management"></a>Alkalmazáskezelés
 
 #### <a name="windows-company-portal-app----3316993---"></a>Windowsos Munkahelyi portál alkalmazás <!-- 3316993 -->
 A Windows céges portál alkalmazás már egy új lap feliratú **eszközök**. A **eszközök** lapon megjelenik a végfelhasználók számára az összes regisztrált eszközökön. Felhasználók jelenik meg ez a változás a vállalati portálon 10.3.4291.0 verzióját használják, és később. A vállalati portál konfigurálásával kapcsolatos további információkért lásd: [a Microsoft Intune vállalati portál alkalmazás konfigurálása](company-portal-app.md).
+
+### <a name="device-enrollment"></a>Eszközök beléptetése
+
+#### <a name="autopilot-device-orderid-attribute-name-changed-to-group-tag----4659453---"></a>Az autopilot eszköz OrderID attribútum neve módosult csoporthoz címke <!-- 4659453 -->
+
+Intuitívabb, ellenőrizze, hogy a **OrderID** értékre változott az Autopilot-eszközök attribútumnév **csoporthoz címke**. Autopilot-eszközadatok a feltöltendő CSV-k használatakor, az oszlop fejlécére, nem OrderID csoporthoz címke kell használnia. Ellenkező esetben a feltöltés sikertelen lesz. OrderID régebbi ügyfelek vagy parancsprogramok rendszerbe lesz. Azonban a csoporthoz címke lesz a jövőben a standard.
 
 ## <a name="week-of-may-13-2019"></a>2019. május 13 hete 
 
@@ -445,7 +443,7 @@ Az Intune-konzolon többé nem támogatja a megtekintése, és csak az EAS-eszk�
 - Az Exchange vezérlőkkel leírt módon [ügyfelek és a mobileszköz Exchange Online-ban](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/clients-and-mobile-in-exchange-online)
 
 ### <a name="search-the-all-devices-page-for-an-exact-device-by-using-name---4254930---"></a>Az összes eszköz lapon-pontos eszköz keresését, [name] <!--4254930 -->
-Most már kereshet egy pontos eszköz nevét. Lépjen a **Intune** > **eszközök** > **minden eszköz** > a keresőmezőbe, az eszköz nevét körülvevő {} keresése egy pontos egyezés. Ha például **{Device12345}**.
+Most már kereshet egy pontos eszköz nevét. Lépjen a **Intune** > **eszközök** > **minden eszköz** > a keresőmezőbe, az eszköz nevét körülvevő {} keresése egy pontos egyezés. Ha például **{Device12345}** .
 
 ### <a name="monitor-and-troubleshoot"></a>Monitorozás és hibaelhárítás
 

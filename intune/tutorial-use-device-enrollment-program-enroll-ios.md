@@ -14,14 +14,14 @@ ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f1f2d584e3e19726ee79671437d2d6e5c729879d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
-ms.translationtype: HT
+ms.openlocfilehash: faceee883194dbbdcec83f282806035ffc0432d1
+ms.sourcegitcommit: 0f771585d3556c0af14500428d5c4c13c89b9b05
+ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040310"
+ms.locfileid: "66174177"
 ---
-# <a name="tutorial-use-apples-corpoate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>Oktatóanyag: Az Intune-ban iOS-eszközök regisztrálása az Apple üzleti Manager (ABM) az Apple Corpoate Eszközregisztráció funkciók használata
+# <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>Oktatóanyag: Az Intune-ban iOS-eszközök regisztrálása az Apple üzleti Manager (ABM) az Apple munkahelyi eszközök regisztrációja funkciók használata
 Az Eszközregisztrációs szolgáltatás az Apple üzleti Managerben egyszerűbbé teszi az eszközök regisztrálását. Az Intune is támogatja a régebbi az Apple Készülékregisztrációs Program (DEP), portál, de javasoljuk, hogy kezdhet tiszta lappal Apple üzleti vezető. A Microsoft Intune és a vállalati Apple-eszközök regisztrálása az eszközök automatikusan biztonságosan lesz regisztrálva az első alkalommal a felhasználó bekapcsolja az eszközt. Ezért el olyan eszközöket, számos felhasználó számára anélkül, hogy minden egyes eszköz beállításához külön-külön kellene. 
 
 Az oktatóanyag segítségével megtanulhatja a következőket:
@@ -91,7 +91,7 @@ Most, hogy telepítette a jogkivonatot, létrehozhat egy regisztrációs profilt
 
 6. Ha úgy döntött, hogy regisztráció felhasználói affinitással, állapítsa meg, ha szeretné, hogy végezzen hitelesítést a céges portál vagy az Apple beállítási asszisztens. Ha szeretné használni a multi-factor Authentication engedélyezése esetén az első bejelentkezéskor jelszómódosítást vagy felhasználóktól, hogy lejárt jelszavukat visszaállítása a regisztráció során, válassza a **Igen** alatt **hitelesítéshez Céges portál az Apple beállítási asszisztens helyett**. Ha kényelmes Apple által megadott használatával az Apple beállítási asszisztens segítségével alapszintű HTTP-hitelesítést, válassza a **nem**.
 
-7. Ha úgy döntött, hogy regisztrálja a felhasználói affinitás és a céges portálon való hitelesítéssel, határozza meg, ha szeretné-e telepíteni a vállalati portált az Apple Volume Purchase Program (VPP). A vállalati portál telepít a VPP-tokent, ha a felhasználó nem kell a vállalati portál letöltése az app store-ból a regisztráció során egy Apple ID Azonosítóját és jelszavát adja meg. Válasszon **Token használata:** alatt **céges portál telepítése a VPP-** jelölje be a VPP-tokent, amely elérhető a céges portál ingyenes licenccel rendelkezik. Ha nem szeretné telepíteni a vállalati portált, válassza a VPP használatával **ne használjon VPP** alatt **céges portál telepítése a VPP-**. 
+7. Ha úgy döntött, hogy regisztrálja a felhasználói affinitás és a céges portálon való hitelesítéssel, határozza meg, ha szeretné-e telepíteni a vállalati portált az Apple Volume Purchase Program (VPP). A vállalati portál telepít a VPP-tokent, ha a felhasználó nem kell a vállalati portál letöltése az app store-ból a regisztráció során egy Apple ID Azonosítóját és jelszavát adja meg. Válasszon **Token használata:** alatt **céges portál telepítése a VPP-** jelölje be a VPP-tokent, amely elérhető a céges portál ingyenes licenccel rendelkezik. Ha nem szeretné telepíteni a vállalati portált, válassza a VPP használatával **ne használjon VPP** alatt **céges portál telepítése a VPP-** . 
 
 8. Ha úgy döntött, hogy regisztráció felhasználói affinitással, hitelesítés, a céges portál és a VPP, a vállalati portál telepítése döntse el, ha szeretné-e a céges portált hitelesítési egyetlen alkalmazás módban futtatott. Ez a beállítás lehetővé teszi annak érdekében, hogy a felhasználó nem rendelkezik más alkalmazásokhoz való hozzáférés, amíg befejezését követően a vállalati regisztrációra. Ha ezt a folyamatot, amíg a felhasználó korlátozni szeretné a regisztráció befejezését, válassza a **Igen** alatt **egyetlen alkalmazás módba, amíg a hitelesítést a céges portál futtassa**. 
 
