@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7aeda02cae01e989041ec41b54186d62988f592d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 03d5d4b9cb69e2d95706357280e324c58656a866
+ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047896"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66264132"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows-eszközök regisztrálása az Intune-ban a Windows Autopilot használatával  
 A Windows Autopilot egyszerűbbé teszi az eszközök regisztrálását az Intune-ban. A testre szabott operációsrendszer-lemezképek létrehozása és karbantartása sok időt vesz igénybe. Gyakran ezeknek az egyéni operációsrendszer-lemezképeknek az új eszközökre való alkalmazásával is időt kell töltenie, hogy felkészítse az eszközöket a használatra, mielőtt a végfelhasználóknak adná azokat. A Microsoft Intune és az AutoPilot révén új eszközöket adhat hozzá a végfelhasználók számára anélkül, hogy egyéni operációsrendszer-lemezképek létrehozására, kezelésére és az eszközökre való alkalmazására lenne szükség. Az AutoPilot-eszközök Intune-nal való felügyelete során a regisztráció után szabályzatokat, profilokat, alkalmazásokat és sok mást is kezelni tud. A megoldás előnyeinek, használati eseteinek és előfeltételeinek áttekintéséről lásd [a Windows AutoPilot áttekintését](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -94,6 +94,9 @@ Az Autopilot-üzembehelyezési profilokkal Autopilot-eszközeit konfigurálhatja
 7. Adja meg az alábbi lehetőségeket:
     - **Végfelhasználói licencszerződés (EULA)**: (Windows 10 1709-es vagy újabb verzió) Válassza ki, hogy szeretné-e a végfelhasználói licencszerződés megjelenjen a felhasználók számára.
     - **Adatvédelmi beállítások**: Válassza ki, hogy szeretné-e az adatvédelmi beállítások megjelenjenek a felhasználók számára.
+    >[!IMPORTANT]
+    >Az Autopilot központi telepítése a Windows 10-es verziójú 1903 eszközök és újabb verziók esetén a diagnosztikai adatok alapértelmezett értéke automatikusan teljes. További információkért lásd: [Windows diagnosztikai adatok](https://docs.microsoft.com/en-us/windows/privacy/windows-diagnostic-data) <br>
+    
     - **Fiókbeállítások módosítása elrejtése (Windows 10-es, 1809 vagy újabb verzió szükséges)**: Válasszon **elrejtése** fiók beállításainak módosítása nem fognak megjelenni a vállalati bejelentkezési és a tartomány hiba lapokon elkerülése érdekében. Ez a beállítás megköveteli, hogy [az Azure Active Directoryban konfigurálva legyen a Vállalati védjegyezés](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
     - **Felhasználói fiók típusa**: Válassza ki a felhasználói fiók típusa (**rendszergazda** vagy **Standard** felhasználó).
     - **Lehetővé teszi a Kezdőélmény körültekintő**: Válasszon **Igen** körültekintő támogatás engedélyezéséhez.

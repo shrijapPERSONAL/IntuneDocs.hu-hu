@@ -14,12 +14,12 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
-ms.openlocfilehash: d927c886bbb3f82c18d5873a86fc427d00d96337
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4190d84fda46e4be3cdc4c4f7bfe4ac8a1852ebc
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042640"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373954"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Kézbesítésoptimalizálási beállításait a Microsoft Intune-ban
 
@@ -36,7 +36,7 @@ Kézbesítésoptimalizálás a Windows 10-es kapcsolatos további információk�
 > **Szoftverfrissítések – a Windows 10-es frissítési körök** helyébe a **kézbesítésoptimalizálás** beállításait. A meglévő frissítési körök használatával módosítható a **kézbesítésoptimalizálás** beállításait. [Helyezze át meglévő frissítési körök kézbesítésoptimalizálás](#move-existing-update-rings-to-delivery-optimization) (a jelen cikkben) 
 ## <a name="create-the-profile"></a>A profil létrehozása
 
-1. Az a [az Azure portal](https://portal.azure.com), jelölje be **minden szolgáltatás** > szűréséhez **Intune** > Válassza ki **Intune**.
+1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
 2. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
 

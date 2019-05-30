@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02a5a7bd3625b5e95ddb304df7cf64461cca9c10
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: cf6febf0ead541e1346cc095bb14437083dd5d64
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049125"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373743"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>PKCS-tanúsítványok konfigurálása és használata az Intune-nal
 
@@ -160,7 +160,7 @@ Egy VPN-, Wi-Fi- vagy egyéb erőforrások eszköz hitelesítéséhez, egy eszk�
 
 ### <a name="pfx-certificate-connector-for-microsoft-intune"></a>A Microsoft Intune-hoz készült PFX tanúsítvány-összekötő
 
-1. Az [Azure Portalon](https://portal.azure.com) kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
+1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Válassza ki **eszközkonfiguráció** > **összekötők minősítési** > **hozzáadása**
 3. Töltse le és mentse a Microsoft Intune-hoz készült PFX tanúsítvány-összekötőt. Mentse egy olyan helyre, amely elérhető a kiszolgálóról, amelyre az összekötő telepítve lesz.
 4. A letöltés befejezése után jelentkezzen be a kiszolgálóra. Ha ez megvan:
@@ -207,9 +207,9 @@ Egy VPN-, Wi-Fi- vagy egyéb erőforrások eszköz hitelesítéséhez, egy eszk�
 
 3. Nyissa meg a **Beállítások** lapot, és adja meg a következő tulajdonságokat:
 
-    - **Megújítási küszöb (%)**: Ajánlott érték 20 %.
+    - **Megújítási küszöb (%)** : Ajánlott érték 20 %.
     - **Tanúsítvány érvényességi időtartama**: Ha nem módosította a tanúsítványsablont, ez a beállítás egy év lehet beállítani.
-    - **Kulcstároló-szolgáltató (KSP)**: Windows válassza ki a kulcsok tárolására az eszközön.
+    - **Kulcstároló-szolgáltató (KSP)** : Windows válassza ki a kulcsok tárolására az eszközön.
     - **Hitelesítésszolgáltató**: Megjeleníti a vállalati hitelesítésszolgáltató belső teljes tartománynév (FQDN).
     - **Hitelesítésszolgáltató neve**: A vállalati hitelesítésszolgáltató, például "Contoso Certification Authority" nevét jeleníti meg.
     - **Tanúsítványsablon neve**: A korábban létrehozott sablon neve. Emlékeztető: a **Sablon neve** alapértelmezés szerint ugyanaz, mint a **Sablon megjelenítendő neve**, *szóköz nélkül*.
@@ -239,7 +239,7 @@ A tanúsítványok Intune-ba importálása után hozzon létre egy **Importált 
 
     - **Felhasználási célja**: Ehhez a profilhoz importált tanúsítványok rendeltetési célját. Előfordulhat, hogy egy rendszergazda más célra (például hitelesítésre, S/MIME-aláírásra vagy S/MIME-titkosításra) szánt tanúsítványokat importált. A tanúsítványprofilban kijelölt felhasználási cél alapján lesznek párosítva a megfelelő importált tanúsítványok.
     - **Tanúsítvány érvényességi időtartama**: Ha nem módosította a tanúsítványsablont, ez a beállítás egy év lehet beállítani.
-    - **Kulcstároló-szolgáltató (KSP)**: Windows válassza ki a kulcsok tárolására az eszközön.
+    - **Kulcstároló-szolgáltató (KSP)** : Windows válassza ki a kulcsok tárolására az eszközön.
 
 4. A profil mentéséhez kattintson az **OK** > **Létrehozás** gombra.
 5. Az új profil egy vagy több eszközhöz történő hozzárendeléséhez lásd: [Microsoft Intune-eszközprofilok hozzárendelése](device-profile-assign.md).

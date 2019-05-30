@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0965d08dc2981fbd35bcb5aa3c2652726a96ccd5
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9309b110d37795f840e10f22b71b06507aea4c62
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050091"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373725"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>A csoportházirend-beállítások konfigurálása a Microsoft Intune-ban Windows 10-sablonok használatával
 
@@ -34,14 +34,14 @@ Ez a cikk felsorolja azokat a lépéseket a Windows 10-es eszközök sablon lét
 
 ## <a name="create-a-template"></a>Sablon létrehozása
 
-1. Az a [az Azure portal](https://portal.azure.com), jelölje be **minden szolgáltatás** > szűréséhez **Intune** > Válassza ki **Intune**.
+1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
 3. Adja meg a következő tulajdonságokat:
 
     - **Név**: Adja meg a profil nevét.
     - **Description** (Leírás): Adja meg a profil leírását. A beállítás használata nem kötelező, de ajánlott.
     - **Platform**: Válassza ki **Windows 10 és újabb**.
-    - **Profil típusa**: Válassza ki **felügyeleti sablonok (előzetes verzió)**.
+    - **Profil típusa**: Válassza ki **felügyeleti sablonok (előzetes verzió)** .
 
 4. Kattintson a **Létrehozás** gombra. Jelölje ki az új ablakban **beállítások**. Minden beállítás szerepel a listán, és használhatja a, mielőtt és melletti nyíl további beállításokhoz:
 

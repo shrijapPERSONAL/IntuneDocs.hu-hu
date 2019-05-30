@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0f8e9e7fec0bea759d408f3ca3d94aa46748bf8
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9085cff7e305f7081a3048637c80df43e22d2ee9
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044602"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66374119"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Házirendek és profilok hibaelhárítása és az Intune-ban
 
@@ -32,7 +32,7 @@ Ez a cikk néhány gyakori hibaelhárítási eljárásokat, és ismerteti a prob
 
 ## <a name="use-built-in-troubleshooting"></a>Használja a beépített hibáinak elhárítása
 
-1. Az a [az Azure portal](https://portal.azure.com), jelölje be **minden szolgáltatás** > szűréséhez **Intune** > Válassza ki **Intune**.
+1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Válassza ki **hibaelhárítása**:
 
     ![Az Intune-ban nyissa meg a Súgó és támogatás, és válassza ki a hibaelhárítás](./media/help-and-support-troubleshoot.png)
@@ -98,7 +98,7 @@ Ez a cikk néhány gyakori hibaelhárítási eljárásokat, és ismerteti a prob
 
 ## <a name="youre-unsure-if-a-profile-is-correctly-applied"></a>Nem tudja biztosan, ha a profil megfelelően van-e érvényben
 
-1. Az a [az Azure portal](https://portal.azure.com), jelölje be **minden szolgáltatás** > szűréséhez **Intune** > Válassza ki **Intune**.
+1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Válassza ki **eszközök** > **minden eszköz** > Válassza ki az eszközt > **eszközkonfiguráció**. 
 
     Minden eszköz a profilok listája. Minden profil egy **állapot**. Az állapot vonatkozik, az összes hardver és az operációs rendszer korlátozásokat és követelményeket, ideértve a hozzárendelt profilok együttese. Lehetséges állapotok a következők:

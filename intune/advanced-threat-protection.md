@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a53ae7f43f135f7316b665672dc410812ef14d08
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: abbd226f2b812e1062d56a1d66b3e10bc9d68036
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050139"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66374084"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>A feltételes hozzáférés az Intune-ban a Windows Defender ATP megfelelőségi kényszerítése
 
@@ -83,7 +83,7 @@ Miután egyszer védelem alá vont egy eszközt egy konfigurációs csomaggal, n
 
 ### <a name="create-the-configuration-profile"></a>A konfigurációs profil létrehozása
 
-1. Az [Azure Portalon](https://portal.azure.com) kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
+1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
 3. Adjon meg **Nevet** és **Leírást**.
 4. A **Platform** beállításnál válassza a **Windows 10 és újabb** lehetőséget.
@@ -105,11 +105,11 @@ Miután egyszer védelem alá vont egy eszközt egy konfigurációs csomaggal, n
 ## <a name="create-the-compliance-policy"></a>A megfelelőségi szabályzat létrehozása
 A megfelelőségi szabályzat határozza meg egy eszközön a kockázat elfogadható szintjét.
 
-1. Az [Azure Portalon](https://portal.azure.com) kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
+1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Válassza az **Eszközmegfelelőség** > **Szabályzatok** > **Szabályzat létrehozása** lehetőséget.
 3. Adjon meg **Nevet** és **Leírást**.
 4. A **Platform** beállításnál válassza a **Windows 10 és újabb** lehetőséget.
-5. Az a **Windows Defender ATP** beállításainál adja **az eszköz vagy az alatt a gép kockázati pontszám megkövetelése** Ön által választott értékét. Szolgáltatói veszélyforrás-besorolásaiban vannak [határozza meg a Windows Defender ATP](https://review.docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection?branch=atp-server2008#sort-filter-and-group-the-alerts-queue).
+5. Az a **Windows Defender ATP** beállításainál adja **az eszköz vagy az alatt a gép kockázati pontszám megkövetelése** Ön által választott értékét. Szolgáltatói veszélyforrás-besorolásaiban vannak [határozza meg a Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection).
 
    - **Egyértelmű**: Ez a szint a legbiztonságosabb lehetőség. Az eszköz csak akkor fér hozzá a céges erőforrásokhoz, ha semmilyen veszélyforrás nincs rajta. Ha bármilyen veszélyforrás észlelhető, az eszköz nem megfelelőnek minősül. (A Windows Defender ATP-felhasználók az érték *biztonságos*.)
    - **Alacsony**: Az eszköz akkor minősül megfelelőnek, ha vonatkozásában kizárólag alacsony szintű veszélyforrások. A közepes vagy magas fenyegetettségi szintű eszközök nem megfelelők.
@@ -120,7 +120,7 @@ A megfelelőségi szabályzat határozza meg egy eszközön a kockázat elfogadh
 
 ## <a name="assign-the-policy"></a>A szabályzat hozzárendelése
 
-1. Az [Azure Portalon](https://portal.azure.com) kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
+1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Válassza az **Eszközmegfelelőség** > **Szabályzatok** lehetőséget, majd válassza ki Windows Defender ATP-megfelelőségi szabályzatát.
 3. Válassza a **Hozzárendelések** lehetőséget.
 4. Belefoglalással vagy kizárással adja meg a szabályzathoz rendelni kívánt Azure AD-csoportokat.
@@ -153,7 +153,7 @@ Hasznos forrás a [Mi az a feltételes hozzáférés?](conditional-access.md) c�
 ## <a name="monitor-device-compliance"></a>Az eszközmegfelelőség figyelése
 Most a Windows Defender ATP megfelelőségi szabályzattal rendelkező eszközök állapotának figyelése következik.
 
-1. Az [Azure Portalon](https://portal.azure.com) kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
+1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Válassza az **Eszközmegfelelőség** > **Megfelelés a szabályzatoknak** lehetőséget.
 3. Keresse meg a listában a Windows Defender ATP-szabályzatot, és tekintse meg a megfelelő és nem megfelelő eszközöket.
 

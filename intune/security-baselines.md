@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 05/29/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: feb2bda30547779680a001b3c598b54d236f70ed
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 0e4d5c23d598641256c196cd7217797f87f99d1c
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045106"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66374129"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Az Intune-ban Windows 10 biztonsági alapterv létrehozása
 
@@ -54,7 +54,8 @@ A következő biztonsági alapterveket az Intune-nal való használatra érhető
   [A beállítások megtekintése](security-baseline-settings-windows.md)
 
 - **ELŐZETES VERZIÓ: A Windows Defender ATP-alapkonfiguráció**  
-  [A beállítások megtekintése](security-baseline-settings-defender-atp.md)
+  [A beállítások megtekintése](security-baseline-settings-defender-atp.md)  
+  *(Ez a alapvető érhető el, ha a környezet megfelel-e használatára vonatkozó Előfeltételek [Microsoft Defender komplex veszélyforrások elleni védelem](advanced-threat-protection.md#prerequisites))* .
 
 
 ## <a name="prerequisites"></a>Előfeltételek
@@ -69,11 +70,12 @@ Közösen kezelt eszközök használata esetén kell váltania a **eszközkonfig
 
 ## <a name="create-the-profile"></a>A profil létrehozása
 
-1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=20909) majd **eszközbiztonsági** > **biztonsági előírások (előzetes verzió)**. Az elérhető alapkonfigurációk listáját érhető el. 
+1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=20909) majd **eszközbiztonsági** > **biztonsági előírások (előzetes verzió)** . Az elérhető alapkonfigurációk listáját érhető el. 
 
     ![Válassza ki egy biztonsági alaptervet konfigurálása](./media/security-baselines/available-baselines.png)
 
-
+   >[!TIP]  
+   > Ha a környezet megfelel-e használatára vonatkozó Előfeltételek érhető el a Windows Defender ATP-alapkonfiguráció [Microsoft Defender komplex veszélyforrások elleni védelem](advanced-threat-protection.md#prerequisites).
 2. Válassza ki szeretné használni, és válassza ki az alapkonfigurációt **profil létrehozása**.  
 
 3. Az a **alapjai** lapra, adja meg a következő tulajdonságokat:

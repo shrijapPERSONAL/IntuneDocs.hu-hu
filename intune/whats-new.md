@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 044ced57d9dd2e3e4b86548540090de35b88a6b0
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
-ms.translationtype: MT
+ms.openlocfilehash: 25a3acda374266a0fbd16feabde7787204555ea2
+ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66197079"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66264170"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 
@@ -57,7 +57,7 @@ A Windows céges portál alkalmazás már egy új lap feliratú **eszközök**. 
 
 #### <a name="autopilot-device-orderid-attribute-name-changed-to-group-tag----4659453---"></a>Az autopilot eszköz OrderID attribútum neve módosult csoporthoz címke <!-- 4659453 -->
 
-Intuitívabb, ellenőrizze, hogy a **OrderID** értékre változott az Autopilot-eszközök attribútumnév **csoporthoz címke**. Autopilot-eszközadatok a feltöltendő CSV-k használatakor, az oszlop fejlécére, nem OrderID csoporthoz címke kell használnia. Ellenkező esetben a feltöltés sikertelen lesz. OrderID régebbi ügyfelek vagy parancsprogramok rendszerbe lesz. Azonban a csoporthoz címke lesz a jövőben a standard.
+Intuitívabb, ellenőrizze, hogy a **OrderID** értékre változott az Autopilot-eszközök attribútumnév **csoporthoz címke**. Autopilot-eszközadatok a feltöltendő CSV-k használatakor, az oszlop fejlécére, nem OrderID csoporthoz címke kell használnia.  
 
 ## <a name="week-of-may-13-2019"></a>2019. május 13 hete 
 
@@ -592,8 +592,8 @@ Vállalati Android
 #### <a name="safari-and-delaying-user-software-update-visibility-ios-settings-are-moving-in-the-intune-ui----3640850-3803313-----"></a>Safari és Delaying felhasználói szoftverfrissítési beállítások helyez át az Intune felhasználói felületén látható-e iOS frissítése <!-- 3640850, 3803313   -->
 IOS-eszközök esetén a Safari beállításait, és konfigurálhatja a szoftverfrissítéseket. Ebben a frissítésben ezek a beállítások az Intune felhasználói felület különböző részeinek helyez át:
 
-- A Safari beállításait az áthelyezett **Safari** (**eszközkonfiguráció** > **profilok** > **új profil**  >  **iOS** tartozó platform > **eszközkorlátozások** profiltípus) való  **[beépített alkalmazások](device-restrictions-ios.md#built-in-apps)**.
-- A **késlelteti az felhasználói szoftvereket látható-e frissítés az iOS-eszközök felügyelt** beállítás (**szoftverfrissítések** > **Update-szabályzatok iOS rendszerhez**) kerülát **Eszközkorlátozások** > **[általános](device-restrictions-ios.md#general)**.  További információ a hatás szerint is megjelenítheti a meglévő szabályzatokat: [iOS szoftverfrissítések](software-updates-ios.md#configure-the-policy). 
+- A Safari beállításait az áthelyezett **Safari** (**eszközkonfiguráció** > **profilok** > **új profil**  >  **iOS** tartozó platform > **eszközkorlátozások** profiltípus) való  **[beépített alkalmazások](device-restrictions-ios.md#built-in-apps)** .
+- A **késlelteti az felhasználói szoftvereket látható-e frissítés az iOS-eszközök felügyelt** beállítás (**szoftverfrissítések** > **Update-szabályzatok iOS rendszerhez**) kerülát **Eszközkorlátozások** >  **[általános](device-restrictions-ios.md#general)** .  További információ a hatás szerint is megjelenítheti a meglévő szabályzatokat: [iOS szoftverfrissítések](software-updates-ios.md#configure-the-policy). 
 
 A beállítások listájáért lásd:
 

@@ -1,7 +1,7 @@
 ---
 title: Egyéni beállítások hozzáadása iOS-eszközökhöz a Microsoft Intune-ban – Azure | Microsoft Docs
 titleSuffix: ''
-description: Exportálhat iOS-beállításokat az Apple Configuratorből vagy az Apple Profile Managerből, majd a Microsoft Intune-ba importálhatja őket. Ezek egyéni beállításokat és funkciókat hozhatnak létre, használhatnak és vezérelhetnek iOS-eszközökön. Ez az egyéni profil ezután hozzárendelhető vagy kiosztható a szervezet iOS-eszközei számára kiindulási alap vagy szabvány létrehozása érdekében.
+description: Exportálhat iOS-beállításokat az Apple Configuratorből vagy az Apple Profile Managerből, majd a Microsoft Intune-ba importálhatja őket. Ezek a beállítások létrehozását, használatát és egyéni beállításainak és funkcióinak az iOS-eszközökön. Ez az egyéni profil ezután hozzárendelhető vagy kiosztható a szervezet iOS-eszközei számára kiindulási alap vagy szabvány létrehozása érdekében.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d6bfd832d9225221bcc6aaefe091a3cebf57a54c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9637cc36d6ee901b5da0ffbe44180cd7dbdaffee
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048621"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373991"
 ---
 # <a name="use-custom-settings-for-ios-devices-in-microsoft-intune"></a>Egyéni beállítások használata iOS-eszközökhöz a Microsoft Intune-ban
 
@@ -51,7 +51,7 @@ Ebből a cikkből megtudhatja, hogyan hozhat létre egyéni profilt az iOS-eszk�
 
 ## <a name="create-the-profile"></a>A profil létrehozása
 
-1. Az [Azure Portalon](https://portal.azure.com) kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
+1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
 3. Adja meg a következő beállításokat:
 

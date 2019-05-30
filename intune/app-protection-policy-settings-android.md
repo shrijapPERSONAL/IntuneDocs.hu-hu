@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/14/2019
+ms.date: 05/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,16 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4d6331083256ab5c658519854459cdb07056466
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a9f421a54319878c4f985ecc08252d4e03a00919
+ms.sourcegitcommit: 95572ed540e90471963833c0bbf71478477b1813
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049705"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66269995"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Android-eszközök alkalmazásvédelmi szabályzatainak beállításai a Microsoft Intune-ban
 Ez a cikk az alkalmazásvédelmi szabályzatok Android-eszközökre vonatkozó beállításait ismerteti. Az ismertetett szabályzatbeállításokat az Azure Portal **Beállítások** paneljén lehet [konfigurálni](app-protection-policies.md) az alkalmazásvédelmi szabályzatokhoz.
 Házirend-beállítások három kategóriába sorolhatók: adatvédelmi beállítások, a hozzáférési követelmények és a feltételes indítási. Ebben a cikkben a *szabályzattal felügyelt alkalmazások* kifejezés olyan alkalmazásokra utal, amelyekhez alkalmazásvédelmi szabályzatot állítottak be.
+
+> [!IMPORTANT]
+> Az Intune céges portál fogadásához az alkalmazásvédelmi szabályzatok Androidos eszközökre vonatkozó szükséges az eszközön. További információkért lásd: a [Intune vállalati portál hozzáférés alkalmazásokkal kapcsolatos követelmények](end-user-mam-apps-android.md).
 
 ##  <a name="data-protection"></a>Adatvédelem 
 ### <a name="data-transfer"></a>Adatátvitel

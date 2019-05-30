@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf07f942feeab0a73c01625f90c04ec3b989c1c2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5a5c9dea847ace51c7d6f06cfa43c44beead18f8
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044840"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373419"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>IOS-szoftverfrissítési szabályzatok hozzáadása az Intune-ban
 
@@ -31,7 +31,7 @@ Az eszköz körülbelül 8 óránként jelentkezik be az Intune-ba. Ha az eszkö
 
 ## <a name="configure-the-policy"></a>A szabályzat konfigurálása
 
-1. Az a [az Azure portal](https://portal.azure.com), jelölje be **minden szolgáltatás** > szűréséhez **Intune** > Válassza ki **Intune**.
+1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Válassza a **Szoftverfrissítések** > **iOS-frissítési szabályzatok** > **Létrehozás** lehetőséget.
 3. Adja meg a következő beállításokat:
 
@@ -51,7 +51,7 @@ Az eszköz körülbelül 8 óránként jelentkezik be az Intune-ba. Ha az eszkö
       - **Kezdési idő**: Válassza ki a korlátozott időkeret kezdési idejét. Adja meg például 05-kor, így a frissítések nincsenek telepítve, 05-kor kezdődik.
       - **Befejezési idő**: Válassza ki a korlátozott időkeret befejezési időpontja. Adja meg például 1 AM, így a frissítések telepíthetők, hogy 1 Órakor indítása.
 
-    - **Látható-e a szoftverfrissítések a végfelhasználók számára nem változik az ütemezett frissítések késleltetése (nap)**: 
+    - **Látható-e a szoftverfrissítések a végfelhasználók számára nem változik az ütemezett frissítések késleltetése (nap)** : 
 
       **Ez a beállítás át [Eszközkorlátozások](device-restrictions-ios.md#general). Ezen a helyen, a portálon eltávolítjuk**. Egy rövid ideig a meglévő szabályzatok itt módosítható. Miután körülbelül egy hónap, ezzel a beállítással a meglévő szabályzatok törlődik.
 
