@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c590f81b846fe3671d5ccddede28a4a4bd799ba
-ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
-ms.translationtype: HT
+ms.openlocfilehash: f17bdf21db61616f88cef4d257fbcd28d941dae8
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66264157"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373472"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>PowerShell-parancsfájlok használata a Windows 10 rendszerű eszközökön az Intune-ban
 
@@ -65,7 +65,7 @@ Az Intune felügyeleti bővítmény előfeltételei a következők. Amint ezek t
 
 ## <a name="create-a-script-policy"></a>A parancsfájlhoz tartozó szabályzat létrehozása 
 
-1. Az a [az Azure portal](https://portal.azure.com), jelölje be **minden szolgáltatás** > szűréséhez **Intune** > Válassza ki **Intune**.
+1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Válassza az **Eszközkonfiguráció** > **PowerShell-parancsfájlok** > **Hozzáadás** lehetőséget.
 3. Adja meg a következő tulajdonságokat:
     - **Név**: Adjon meg egy nevet a PowerShell-parancsfájlt. 
