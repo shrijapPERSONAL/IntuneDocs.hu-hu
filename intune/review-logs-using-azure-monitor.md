@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 803d556150d60d0a3d60ec03c029d65f0f935f67
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 8d13cb9fed28bb759007f1be1cb6df6139c19d3b
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045296"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412698"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Napló adatokat küldeni a tárolási, az event hubs, vagy a log analytics az Intune-ban (előzetes verzió)
 
@@ -53,7 +53,7 @@ Attól függően, hol szeretné irányítani a naplózási adatokat szükség az
 
 ## <a name="send-logs-to-azure-monitor"></a>Naplók elküldése az Azure monitor
 
-1. Az a [az Azure portal](https://portal.azure.com/), jelölje be **minden szolgáltatás** > szűréséhez **Intune** > Válassza ki **Intune**.
+1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. A **figyelés**válassza **diagnosztikai beállítások**. Az első megnyitásakor, kapcsolja be:
 
     ![Kapcsolja be a diagnosztikai beállítások az Intune-ban az Azure Monitor naplók küldése](media/diagnostics-settings-turn-on.png)
@@ -101,7 +101,7 @@ Az auditnaplók Intune-ban, beleértve a regisztráció, megfelelőségi, konfig
 
 Például a naplózási exportálása naplók eszközmegfelelőség használatakor:
 
-1. Az a [az Azure portal](https://portal.azure.com/), jelölje be **minden szolgáltatás** > szűréséhez **Intune** > Válassza ki **Intune**.
+1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Válassza ki **eszközmegfelelőség** > **figyelő** > **Auditnaplók**:
 
     ![Auditnaplók Intune adatátirányításhoz Azure Monitor-tároló, események hubs vagy analytics kiválasztása](media/audit-logs-under-monitor-in-compliance.png)

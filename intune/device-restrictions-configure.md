@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8554f0addf7364150c3f225e8cba1a7d751f8a7d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4cae90723c7ff92a8042f068fb49c1709506c7ff
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048101"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412432"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Ezközkorlátozásokra vonatkozó beállítások konfigurálása a Microsoft Intune-ban
 
@@ -35,7 +35,7 @@ A cikk az eszközkorlátozási profilok alapjait ismerteti, és további cikkeke
 
 ## <a name="create-the-profile"></a>A profil létrehozása
 
-1. A, a [az Azure portal](https://portal.azure.com), jelölje be **minden szolgáltatás** > szűréséhez **Intune** > Válassza ki **Intune**.
+1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
 3. Adja meg az eszközkorlátozási profil nevét és leírását a **Név** és a **Leírás** mezőben.
 4. A **Platform** legördülő listából válassza ki azt az eszközplatformot, amelyre egyéni beállításokat szeretne alkalmazni. Jelenleg az alábbi platformok egyikét választhatja ki az eszközkorlátozási beállításokhoz:
@@ -48,7 +48,7 @@ A cikk az eszközkorlátozási profilok alapjait ismerteti, és további cikkeke
     - **Windows 8.1 és újabb**
     - **Windows 10 és újabb**
 
-5. A **Profil típusa** legördülő listában válassza az **Eszközkorlátozások** lehetőséget. Eszköz létrehozásához korlátozások Windows 10 Team eszközök, például a Surface hubon és a profilt, majd válassza **eszközkorlátozások (Windows 10 Team)**.
+5. A **Profil típusa** legördülő listában válassza az **Eszközkorlátozások** lehetőséget. Eszköz létrehozásához korlátozások Windows 10 Team eszközök, például a Surface hubon és a profilt, majd válassza **eszközkorlátozások (Windows 10 Team)** .
 6. A kiválasztott platformtól függően a konfigurálható beállítások eltérőek. Válassza ki a platformot a részletes beállításokat:
 
     - [Android-beállítások](device-restrictions-android.md)

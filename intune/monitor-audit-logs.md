@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9d01b1f745450785209bf289be5b6e36ac65cc2d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5d39b62762d623c150ac6198bd2d6215b4410663
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046306"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412288"
 ---
 # <a name="use-audit-logs-to-track-and-monitor-events-in-microsoft-intune"></a>Auditnaplók használatát nyomon követése és figyelése a Microsoft Intune-ban események
 
@@ -39,7 +39,7 @@ A következő engedélyekkel rendelkező felhasználók tekinthetik meg az audit
 
 A monitorozási csoport minden Intune-tevékenységprofilban az auditnaplók tekinthetők át:
 
-1. Az a [az Azure portal](https://portal.azure.com/), jelölje be **minden szolgáltatás** > szűréséhez **Intune** > Válassza ki **Intune**.
+1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Válassza ki azt a munkaterhelést, amelyet el szeretne tekinteni az auditnaplóit. Válassza ki például **eszközök**.
 3. A **figyelés**, válassza a **Auditnaplók**.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 05/29/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9085cff7e305f7081a3048637c80df43e22d2ee9
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 1bed0fda1c19df181dacb36c832a2a4c94e61aff
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66374119"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402667"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Házirendek és profilok hibaelhárítása és az Intune-ban
 
@@ -32,13 +32,12 @@ Ez a cikk néhány gyakori hibaelhárítási eljárásokat, és ismerteti a prob
 
 ## <a name="use-built-in-troubleshooting"></a>Használja a beépített hibáinak elhárítása
 
-1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Válassza ki **hibaelhárítása**:
+1. A [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)válassza **hibaelhárítás**:
 
     ![Az Intune-ban nyissa meg a Súgó és támogatás, és válassza ki a hibaelhárítás](./media/help-and-support-troubleshoot.png)
 
-3. Válasszon **felhasználó kiválasztása** > Válassza ki a felhasználót, hogy a probléma > **kiválasztása**.
-4. Ellenőrizze, hogy **Intune-licencet** és **fiók állapota** is zöld ellenőrzések megjelenítése:
+2. Válasszon **felhasználó kiválasztása** > Válassza ki a felhasználót, hogy a probléma > **kiválasztása**.
+3. Ellenőrizze, hogy **Intune-licencet** és **fiók állapota** is zöld ellenőrzések megjelenítése:
 
     ![Az Intune-ban válassza ki a felhasználót, és ellenőrizze a fiók állapota és az Intune-licencet az állapot zöld ellenőrzések jelek megjelenítése](./media/account-status-intune-license-show-green.png)
 
@@ -47,7 +46,7 @@ Ez a cikk néhány gyakori hibaelhárítási eljárásokat, és ismerteti a prob
     - [Licencek hozzárendelése, így a felhasználók regisztrálhatják eszközeiket](licenses-assign.md)
     - [Felhasználók hozzáadása az Intune-hoz](users-add.md)
 
-5. A **eszközök**, keresse meg az eszközt, hogy a probléma. Tekintse át a különböző oszlopból:
+4. A **eszközök**, keresse meg az eszközt, hogy a probléma. Tekintse át a különböző oszlopból:
 
     - **Felügyelt**: Egy eszköz megfelelőségi vagy konfigurációs szabályzatokkal fogadására, ezt a tulajdonságot kell megjelennie **MDM** vagy **EAS-/ MDM**.
 
@@ -164,4 +163,6 @@ A probléma megoldásához állítsa a helyi rendszeridő legközelebb az intern
 
 ## <a name="next-steps"></a>További lépések
 
-Ha segítségre van szüksége bizonyos, [kérhet támogatást a Microsoft Intune](get-support.md).
+[Gyakori problémák és megoldásuk e-mail-profilokkal](troubleshoot-email-profiles-in-microsoft-intune.md)
+
+Első [segítséget a Microsoft támogatási](get-support.md), vagy használja a [közösségi fórumokat is talál](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune).

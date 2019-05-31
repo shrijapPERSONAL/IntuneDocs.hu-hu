@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45df3e3b217e25c9e61fd51d7f458f33c7c0481d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 0d2e52ed64bfee2da8eafbc228abe61f109b3c27
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045525"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412450"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Jelentés készítése az OData-adatcsatornából a Power BI használatával
 
@@ -53,14 +53,13 @@ Telepítse a Power BI Desktop legújabb verzióját. A Power BI Desktop tölthet
 > [!Note]  
 > Az Intune-beli **Jelentések** eléréséhez hozzáférési engedélyre van szükség. További információt az [Engedélyezés](reports-api-url.md) témakörben talál.
 
-1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
-2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. Nyissa meg az **Intune-adattárház** panelt.
+1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+3. Nyissa meg a **Intune Data Warehouse** panel alatt Data Warehouse mutató hivatkozás **más feladatok** jobb oldalán található a **a Microsoft Intune - áttekintés** panelen.
 4. Másolja az egyéni URL-címet. Például:`https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
-5. Nyissa meg a Power BI Desktop alkalmazást.
-6. Válassza az **Adatok betöltése** > **OData-adatcsatorna** lehetőséget.
-7. Illessze be az egyéni URL-címet az **OData-adatcsatorna** ablak URL mezőjébe.
-8. Válassza az **Alapszintű** lehetőséget.
+1. Nyissa meg a Power BI Desktop alkalmazást.
+2. Válassza az **Adatok betöltése** > **OData-adatcsatorna** lehetőséget.
+3. Illessze be az egyéni URL-címet az **OData-adatcsatorna** ablak URL mezőjébe.
+4. Válassza az **Alapszintű** lehetőséget.
 
     ![OData-csatornáról az Intune Data warehouse-hoz a bérlő számára](media/reports-create-01-odatafeed.png)
 
