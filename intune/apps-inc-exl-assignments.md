@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eb55951390c3fe19651087e16c3185018cfd9dab
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c8353cf2f0c24c3a894fa219df9fc9a8272e17af
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049302"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454072"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Alkalmazás-hozzárendelések belefoglalása vagy kizárása a Microsoft Intune-ban
 
@@ -44,9 +44,8 @@ Az Intune nem veszi számításba a felhasználók és eszközök közötti tár
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>Csoportok belefoglalása és kizárása alkalmazások hozzárendelésénél 
 Ha csoportokhoz szeretne alkalmazást hozzárendelni a belefoglalás és kizárás használatával, tegye a következőket:
-1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
-2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. Az **Intune** menüben válassza az **Ügyfélalkalmazások** lehetőséget.
+1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+3. Az **Intune** ablaktáblán válassza az **Ügyfélalkalmazások** lehetőséget.
 4. Az **Ügyfélalkalmazások** panelen válassza az **Alkalmazások** lehetőséget. Megjelenik a hozzáadott alkalmazások listája.
 5. Válassza ki a hozzárendelni kívánt alkalmazást. Megjelennek az alkalmazás adatai egy irányítópulton. 
 6. A menü **Kezelés** szakaszában válassza a **Hozzárendelések** elemet. 
@@ -76,7 +75,7 @@ Ha csoportokhoz szeretne alkalmazást hozzárendelni a belefoglalás és kizár�
 
 Csoport-hozzárendelések esetén a már hozzárendelt csoportok nem módosíthatók. Ha jelenleg nem elérhető csoportot szeretne kiválasztani, akkor először távolítsa el az alkalmazást az alkalmazás hozzárendelési listájából. 
 
-A hozzárendelések szerkesztéséhez az alkalmazás **Hozzárendelések** listájában válassza ki azt a sort, amely a módosítandó hozzárendelést tartalmazza. Ezen kívül úgy is eltávolíthat hozzárendelést, ha a sor végén található három pontra (**…**) kattint, majd az **Eltávolítás** lehetőséget választja. A **Hozzárendelések** lista megjelenítésének módosításához **Hozzárendelési típus** vagy **Belefoglalt/Kizárt** állapot szerint csoportosíthat.
+A hozzárendelések szerkesztéséhez az alkalmazás **Hozzárendelések** listájában válassza ki azt a sort, amely a módosítandó hozzárendelést tartalmazza. Ezen kívül úgy is eltávolíthat hozzárendelést, ha a sor végén található három pontra ( **…** ) kattint, majd az **Eltávolítás** lehetőséget választja. A **Hozzárendelések** lista megjelenítésének módosításához **Hozzárendelési típus** vagy **Belefoglalt/Kizárt** állapot szerint csoportosíthat.
 
 ![Alkalmazás-hozzárendelések az Intune-ban – befejezés](./media/apps-inc-exl-05.png)
 

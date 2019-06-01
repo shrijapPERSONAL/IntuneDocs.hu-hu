@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/30/2019
+ms.date: 05/31/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d6e010a6f7d9a975c93b24ad7248534ff548359d
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.openlocfilehash: 0b1544266ff0f03341bd08e0dd8dc3c27eea1252
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412163"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454147"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 
@@ -234,7 +234,7 @@ A Win32-alkalmazások Intune-ban regisztrált telepítendő rendelhet az Azure A
 Az eszköz áttekintése lapon jelennek meg az elsődleges felhasználója, a felhasználói eszköz affinitási felhasználói (UDA) is nevezik. Az eszköz elsődleges felhasználója megtekintéséhez válassza ki **Intune** > **eszközök** > **minden eszköz** > Válasszon egy eszközt. Az elsődleges felhasználó tetején fog megjelenni a **áttekintése** lapot.
 
 #### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices----4105925----"></a>Jelentéskészítés a vállalati Android munkahelyi profilos eszközök további felügyelt Google Play alkalmazás <!-- 4105925  -->
-A telepített vállalati Android munkahelyi profilos eszközök felügyelt Google Play alkalmazások megtekintheti az alkalmazást az eszközön telepített adott verziószáma. Ez csak a szükséges alkalmazások vonatkozik. A rendelkezésre álló alkalmazások ugyanazokat a funkciókat az egy későbbi kiadásban engedélyezve lesz. 
+A telepített vállalati Android munkahelyi profilos eszközök felügyelt Google Play alkalmazások megtekintheti az alkalmazást az eszközön telepített adott verziószáma. Ez csak a szükséges alkalmazások vonatkozik.  
 
 #### <a name="ios-third-party-keyboards----4111843-----"></a>iOS harmadik féltől származó billentyűzetek <!-- 4111843   -->
 Az Intune app protection szabályzat (alkalmazás) támogatása a **harmadik féltől származó billentyűzetek** beállítása iOS-iOS platform módosítása miatt már nem támogatott. Nem tudnak konfigurálja ezt a beállítást az Intune felügyeleti konzolon, és nem kényszeríti az Intune App SDK az ügyfélen.
@@ -284,7 +284,7 @@ Ez a frissítés magában foglalja az új jelszó-beállításokat, lehetővé t
 
 #### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---"></a>A Windows 10-es eszközök megfelelőségi szabályzatot a TPM lapkakészlet-ellenőrzés <!-- 3617671 -->
 
-Ez a funkció késik, és szerepelnie kell egy későbbi kiadásban.
+Ez a funkció késik, és később elérhető tervezett.
 
 #### <a name="updated-ui-changes-for-microsoft-edge-browser-on-windows-10-and-later-devices----3775833-----"></a>A Windows 10 és újabb rendszerű eszközökön a Microsoft Edge böngésző frissített felhasználói Felületet módosítása <!-- 3775833   -->
 Eszközkonfigurációs profil létrehozásakor engedélyezése vagy korlátozása a Microsoft Edge-funkciók a Windows 10-es és újabb rendszerű eszközök (**eszközkonfiguráció** > **profilok**  >  **Profil létrehozása** > **Windows 10 és újabb** platformon > **eszközkorlátozások** profiltípus >  **A Microsoft Edge böngésző**). Ez a frissítés a Microsoft Edge-beállítások: a kifejezőbb és megérteni. 
@@ -327,7 +327,7 @@ Frissítettük az alapértelmezett időtúllépési üzenet a regisztrációs á
 ### <a name="device-management"></a>Eszközkezelés
 
 #### <a name="retire-noncompliant-devices-----1827291-----"></a>Nem megfelelő eszközök kivonása  <!-- 1827291   -->
-Ez a funkció késleltetését, és a egy későbbi kiadásban fog érkezni.
+Ez a funkció késleltetését és tervezik a bevezetését későbbi verziókban.
 
 
 ### <a name="monitor-and-troubleshoot"></a>Monitorozás és hibaelhárítás
@@ -885,7 +885,7 @@ Az új felületen saját szavaival fejtheti ki problémáját, valamint hibaelh�
 ### <a name="role-based-access-control"></a>Szerepköralapú hozzáférés-vezérlés
 
 #### <a name="scope-tags-for-apps----1081941---"></a>Hatókörcímkék alkalmazásokhoz <!-- 1081941 -->
-Hatókörcímkék korlátozni a szerepköröket és alkalmazásokat hozhat létre. Hatókörcímke adhat hozzá egy alkalmazáshoz, így csak is az adott hatókörcímke hozzárendelt szerepkörrel rendelkező személyek hozzáférhetnek az alkalmazáshoz. Jelenleg a felügyelt Google Play vagy az Apple Volume Purchase Program (VPP) használatával megvásárolt alkalmazások Intune-hoz hozzáadott alkalmazások nem lehet hozzárendelni a hatókörcímkék (de támogatása a jövőben fognak érkezni). További információkért lásd: [használja a szűrő házirendek hatókörcímkék](scope-tags.md).
+Hatókörcímkék korlátozni a szerepköröket és alkalmazásokat hozhat létre. Hatókörcímke adhat hozzá egy alkalmazáshoz, így csak is az adott hatókörcímke hozzárendelt szerepkörrel rendelkező személyek hozzáférhetnek az alkalmazáshoz. Jelenleg a felügyelt Google Play vagy az Apple Volume Purchase Program (VPP) használatával megvásárolt alkalmazások Intune-hoz hozzáadott alkalmazások hatókörcímkék (a jövőben tervezett) nem rendelhető. További információkért lásd: [használja a szűrő házirendek hatókörcímkék](scope-tags.md).
 
 <!-- ########################## -->
 ## <a name="week-of-december-10-2018"></a>2018. December 10. hét
@@ -915,7 +915,7 @@ Az Intune most már a macOS 10.12 vagy újabb verziója szükséges. MacOS előz
 Bármilyen alkalmazást a vállalat által birtokolt felügyelt iOS-eszközök távolíthatja el. Ha az **Eltávolítás** hozzárendelési típussal megcélozza a felhasználó- vagy eszközcsoportokat, akkor bármilyen alkalmazást el tud távolítani. Személyes és nem felügyelt iOS-eszközök esetében a továbbiakban csak az Intune használatával telepített alkalmazásokat tudja majd eltávolítani.
 
 #### <a name="downloading-intune-win32-app-content----2617320---"></a>Az Intune Win32 alkalmazás tartalmának letöltése <!-- 2617320 -->
-A Windows 10 RS3 és fent az ügyfelek letöltik Intune Win32 alkalmazás tartalmának kézbesítésoptimalizálás összetevőt a Windows 10-es ügyfél használ. Kézbesítésoptimalizálás társ-társ funkciókat biztosít, amelyek alapértelmezés szerint van kapcsolva. Kézbesítésoptimalizálás konfigurálható a csoportházirend és a jövőben az Intune MDM-n keresztül További információkért lásd: [kézbesítés optimalizálása Windows 10-es](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
+A Windows 10 RS3 és fent az ügyfelek letöltik Intune Win32 alkalmazás tartalmának kézbesítésoptimalizálás összetevőt a Windows 10-es ügyfél használ. Kézbesítésoptimalizálás társ-társ funkciókat biztosít, amelyek alapértelmezés szerint van kapcsolva. Jelenleg a kézbesítésoptimalizálás a csoportházirend által konfigurálható. További információkért lásd: [kézbesítés optimalizálása Windows 10-es](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
 
 #### <a name="end-user-device-and-app-content-menu----2771453---"></a>Felhasználói eszközök és alkalmazások tartalom menü <!-- 2771453 -->
 A végfelhasználók most már használhatja helyi menü eszközön, és az alkalmazások indításához a gyakori műveletekhez, például egy eszköz átnevezése vagy a megfelelőség ellenőrzése.

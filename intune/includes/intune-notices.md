@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: c4a17abdb518daba30fbdf339090f7e24c8c26d5
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 1073a38da8a5b2467b1ff8c97b32b93f92e34e4c
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412154"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454117"
 ---
 Ezek a megjegyzések meg fontos információkat, amelyek segítségével előkészítése az Intune jövőbeli változtatásokat és szolgáltatásokat. 
 
@@ -27,3 +27,16 @@ Kérje meg a végfelhasználók számára az Android-eszközök, amelyek még ne
 
 #### <a name="additional-information"></a>További információ
 https://firebase.google.com/docs/cloud-messaging/
+
+
+### <a name="new-fullscreen-experience-coming-to-intune---4593669--"></a>Az Intune-bA érkező új nA celou obrazovku – felhasználói élmény <!--4593669-->
+Bevezetjük frissített létrehozásához és szerkesztéséhez a felhasználói felületi élmény az Intune-bA az Azure Portalon. Az új felületet egy varázsló stílus formátumban, egy panelen sűrített leegyszerűsíti a meglévő munkafolyamatokba. Ez a frissítés azonnal mindenre "panel bővítéseket", vagy minden létrehozási, és a folyamatok, amelyek megkövetelik a részletes panel Journey részleteinek szerkesztése. A létrehozás munkafolyamatok hozzárendelések tartalmazza (kivéve az alkalmazás-hozzárendelés) is frissülni fog.
+
+#### <a name="how-does-this-affect-me"></a>Hogyan érint ez engem?
+A teljes képernyős élmény fog történni az Intune-hoz is portal.azure.com és devicemanagement.microsoft.com a következő néhány hónapban. Ez a frissítés felhasználói felületén nem érinti a meglévő szabályzatokat és a profilok, de egy kis mértékben módosított munkafolyamatot láthatja. Új szabályzatokat hozhat létre, ha például Ön lesz állíthat be néhány hozzárendelés helyett ezzel a házirend létrehozása után ez a folyamat részeként. Tekintse meg a következő blogbejegyzést: további információk a képernyőképek, az új felület fog kinézni a konzolon.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Hogyan készüljek fel a változásra?
+Nem kell semmit sem, de az is, fontolja meg az IT pro útmutatást frissítése, ha szükséges. Dokumentációnkat frissítjük, ahogy ez a tapasztalat bevezeti a különböző paneleket az Intune-ban az Azure Portalon.
+
+#### <a name="additional-information"></a>További információ 
+https://aka.ms/intune_fullscreen

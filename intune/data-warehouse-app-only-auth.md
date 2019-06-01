@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/09/2019
+ms.date: 05/31/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4edf6e1e2b0ed57ec221e445bc171895fb9e0072
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b9d3cd7dfb28d26451da95861fe9a3011c2556b1
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042676"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454034"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Alkalmazásalapú hitelesítés az Intune-adattárházban
 
@@ -88,14 +88,15 @@ Ebben a szakaszban az alkalmazás engedélyeit fogja megadni.
 
 Hozzon létre a Visual Studióban egy .NET-keretrendszerre épülő, C# nyelvű „Console App (.NET Framework)” típusú projektet.
 
-1.  Válassza a **File (Fájl)** > **New (Új)** > **Project (Projekt)** lehetőséget a **New Project** (Új projekt) párbeszédpanel megjelenítéséhez.
+1.  Válassza a **File (Fájl)**  > **New (Új)**  > **Project (Projekt)** lehetőséget a **New Project** (Új projekt) párbeszédpanel megjelenítéséhez.
 2.  A bal oldali listában válassza a **Visual C#** lehetőséget a .NET-keretrendszerre épülő összes projekttípus megjelenítéséhez.
 3.  Válassza a **Console App (.NET Framework)** lehetőséget, adja meg az alkalmazás nevét, majd kattintson az **OK** gombra az alkalmazás létrehozásához.
 4.  A **Solution Explorer** (Megoldáskezelő) panelen válassza a **Program.cs** fájlt a kód megjelenítéséhez.
-5.  Válassza a helyi menüben az **Add (Hozzáadás)** > **New item (Új elem)** lehetőséget. Ekkor megjelenik az **Add New Item** (Új elem hozzáadása) párbeszédpanel.
-6.  Válassza a bal oldali listában a **Visual C#** > **Code** (Kód) lehetőséget.
-7.  Válassza a **Class** (Osztály) lehetőséget, módosítsa az osztály nevét az *IntuneDataWarehouseClass.cs* névre, és kattintson az **Add** (Hozzáadás) gombra.
-8.  Adja hozzá az alábbi kódot a <code>Main</code> metódushoz:
+5.  A Megoldáskezelőben, fel kell vennie egy hivatkozást a szerelvény `System.Configuration`.
+6.  Válassza a helyi menüben az **Add (Hozzáadás)**  > **New item (Új elem)** lehetőséget. Ekkor megjelenik az **Add New Item** (Új elem hozzáadása) párbeszédpanel.
+7.  Válassza a bal oldali listában a **Visual C#** > **Code** (Kód) lehetőséget.
+8.  Válassza a **Class** (Osztály) lehetőséget, módosítsa az osztály nevét az *IntuneDataWarehouseClass.cs* névre, és kattintson az **Add** (Hozzáadás) gombra.
+9.  Adja hozzá az alábbi kódot a <code>Main</code> metódushoz:
 
     ``` csharp
          var applicationId = ConfigurationManager.AppSettings["appId"].ToString();
@@ -110,7 +111,7 @@ Hozzon létre a Visual Studióban egy .NET-keretrendszerre épülő, C# nyelvű 
                  new SecureClientSecret(applicationSecret))).Result;
     ``` 
 
-9. Adjon hozzá további névtereket úgy, hogy beszúrja az alábbi kódot a fájl tetejére:
+10. Adjon hozzá további névtereket úgy, hogy beszúrja az alábbi kódot a fájl tetejére:
 
     ``` csharp
      using System.Security;
@@ -118,7 +119,7 @@ Hozzon létre a Visual Studióban egy .NET-keretrendszerre épülő, C# nyelvű 
      using System.Configuration;
     ``` 
 
-10. A <code>Main</code> metódus alá szúrja be az alábbi, alkalmazáskulcs feldolgozását és átalakítását végző privát metódust:
+11. A <code>Main</code> metódus alá szúrja be az alábbi, alkalmazáskulcs feldolgozását és átalakítását végző privát metódust:
 
     ``` csharp
     private static SecureString ConvertToSecureStr(string appkey)
@@ -136,10 +137,10 @@ Hozzon létre a Visual Studióban egy .NET-keretrendszerre épülő, C# nyelvű 
     }
     ```
 
-11. Kattintson a jobb gombbal a **Solution Explorer** (Megoldáskezelő) panelen a **References** (Hivatkozások) elemre, majd válassza a **Manage NuGet Packages** (NuGet-csomagok kezelése) lehetőséget.
-12. Keressen rá a *Microsoft.IdentityModel.Clients.ActiveDirectory* csomagra, és telepítse a vonatkozó Microsoft NuGet-csomagot.
-13. Válassza a **Solution Explorer** (Megoldáskezelő) panelen az *App.config* fájlt annak megnyitásához.
-14. Adja hozzá az <code>appSettings</code> szakaszt, hogy az XML-kód az alábbihoz hasonlóan nézzen ki:
+12. Kattintson a jobb gombbal a **Solution Explorer** (Megoldáskezelő) panelen a **References** (Hivatkozások) elemre, majd válassza a **Manage NuGet Packages** (NuGet-csomagok kezelése) lehetőséget.
+13. Keressen rá a *Microsoft.IdentityModel.Clients.ActiveDirectory* csomagra, és telepítse a vonatkozó Microsoft NuGet-csomagot.
+14. Válassza a **Solution Explorer** (Megoldáskezelő) panelen az *App.config* fájlt annak megnyitásához.
+15. Adja hozzá az <code>appSettings</code> szakaszt, hogy az XML-kód az alábbihoz hasonlóan nézzen ki:
 
     ``` xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -155,8 +156,8 @@ Hozzon létre a Visual Studióban egy .NET-keretrendszerre épülő, C# nyelvű 
     </configuration>
     ``` 
 
-15. Frissítse az <code>appId</code>, az <code>appKey</code> és a <code>tenantDomain</code> elem értékét a saját alkalmazása egyedi értékeinek megfelelően.
-16. Hozza létre az alkalmazást a Build lehetőséggel.
+16. Frissítse az <code>appId</code>, az <code>appKey</code> és a <code>tenantDomain</code> elem értékét a saját alkalmazása egyedi értékeinek megfelelően.
+17. Hozza létre az alkalmazást a Build lehetőséggel.
 
     >[!NOTE] 
     > További implementációs kódot az [Intune-Data-Warehouse kódpéldában](https://github.com/Microsoft/Intune-Data-Warehouse/tree/master/Samples/CSharp ) találhat.

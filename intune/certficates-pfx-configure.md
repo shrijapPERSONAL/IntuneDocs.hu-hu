@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf6febf0ead541e1346cc095bb14437083dd5d64
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 13858b257c1adbc8ce3147710d450c4a09ec9dc2
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373743"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454056"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>PKCS-tanúsítványok konfigurálása és használata az Intune-nal
 
@@ -136,7 +136,7 @@ Egy VPN-, Wi-Fi- vagy egyéb erőforrások eszköz hitelesítéséhez, egy eszk�
 > [!IMPORTANT]  
 > A Microsoft Intune tanúsítvány-összekötő nem lehet telepíteni a a kiállító hitelesítésszolgáltató (CA), és ehelyett telepítenie kell egy különálló Windows-kiszolgálón.  
 
-1. Az a [az Azure portal](https://portal.azure.com), jelölje be **minden szolgáltatás**, szűrjön az **Intune** > válassza **Intune**.
+1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Válassza ki **eszközkonfiguráció** > **összekötők minősítési** > **Hozzáadás**.
 3. Töltse le és mentse az összekötő fájlt olyan helyre fogjuk, ha az összekötő telepítéséhez a kiszolgálón érhető el.
 
