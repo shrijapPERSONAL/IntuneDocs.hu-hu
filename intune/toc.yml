@@ -652,14 +652,14 @@
               href: review-logs-using-azure-monitor.md
             - name: Alkalmazásvédelmi naplók áttekintése
               href: app-protection-policy-settings-log.md
-            - name: Az e-mail-profilok hibaelhárítása
+            - name: Szabályzatok és profilok problémáinak elhárítása
+              href: troubleshoot-policies-in-microsoft-intune.md
+            - name: E-mail profilokkal kapcsolatos problémák és megoldásaik
               href: troubleshoot-email-profiles-in-microsoft-intune.md
             - name: Szoftverfrissítésekkel kapcsolatos hibák elhárítása
               href: troubleshoot-software-updates-in-microsoft-intune.md
-            - name: Az Endpoint Protection hibáinak elhárítása
+            - name: Az Endpoint Protection gyakori problémái
               href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-            - name: Szabályzatok és profilok problémáinak elhárítása
-              href: troubleshoot-policies-in-microsoft-intune.md
             - name: A feltételes hozzáférés hibaelhárítása
               href: troubleshoot-conditional-access.md
             - name: Az Exchange-összekötő hibaelhárítása
@@ -825,6 +825,10 @@
                   href: vpn-settings-windows-phone-8-1.md
                 - name: Egyéni
                   href: custom-settings-windows-phone-8-1.md
+    - name: Hibakódok és leírások
+      items:
+        - name: Szoftverfrissítések hibái
+          href: software-update-agent-error-codes.md
     - name: Fejlesztői útmutatás
       items:
         - name: Külső hitelesítésszolgáltató hozzáadása API-val
