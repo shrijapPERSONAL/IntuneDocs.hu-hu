@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b1544266ff0f03341bd08e0dd8dc3c27eea1252
-ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
+ms.openlocfilehash: 72b96714e8740fe4077583cfa5d9f148c2ee0908
+ms.sourcegitcommit: f41b22f65286a64a8002e2cbe80debfdd6692278
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66454147"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66469587"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 
@@ -160,6 +160,14 @@ Nem kell IMEI-számokat tartalmaz szóközöket keresés **minden eszköz**.
 
 #### <a name="deleting-a-device-in-the-apple-portal-will-be-reflected-in-the-intune-portal---2489996---"></a>Törölhetne egy eszközt az Apple portálján megjelennek az Intune-portálon <!--2489996 -->
 Ha egy eszközt az Apple Device Enrollment Program vagy az Apple üzleti Manager portálok törölnek, az eszköz automatikusan törölve lesz, az Intune-ból a következő szinkronizáláskor.
+
+### <a name="the-enrollment-status-page-now-tracks-win32-apps----2714451---"></a>A regisztrálási állapot oldal most nyomon követi a Win32-alkalmazások <!-- 2714451 -->
+Ez csak 1903 verziójú Windows 10 rendszerű eszközök és fent vonatkozik. További információkért lásd: [beállítása egy regisztrálási állapot oldal](windows-enrollment-status.md).
+
+### <a name="device-management"></a>Eszközkezelés
+
+#### <a name="reset-and-wipe-devices-in-bulk-by-using-the-graph-api----3295288---"></a>Alaphelyzetbe állítása és törölni az eszközök tömeges a Graph API-val <!-- 3295288 -->
+Mostantól alaphelyzetbe állítása és a Graph API használatával egyszerre legfeljebb 100 törölhetik.
 
 
 ### <a name="monitor-and-troubleshoot"></a>Monitorozás és hibaelhárítás
