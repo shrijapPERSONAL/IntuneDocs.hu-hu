@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/29/2019
+ms.date: 06/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35f4007d03ca66ada5721de1ffe20dd87bfe4527
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b5672963c6737d51e720a8b1597dd90318f33a05
+ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043796"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66506872"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Bevezetés a Microsoft Intune App SDK használatába
 
@@ -81,11 +81,11 @@ Ha Xamarin-alkalmazásról van szó, használja a következő SDK-változatot:
 
 A következő fejlesztői útmutatók segítséget nyújtanak az Intune App SDK integrálásához az alkalmazásába:
 
-* **[Intune App SDK – Fejlesztői útmutató iOS](app-sdk-ios.md)**: Ez a dokumentum részletesen ismerteti a natív iOS-alkalmazásnak az Intune App SDK-val való engedélyezésének.
+* **[Intune App SDK – Fejlesztői útmutató iOS](app-sdk-ios.md)** : Ez a dokumentum részletesen ismerteti a natív iOS-alkalmazásnak az Intune App SDK-val való engedélyezésének.
 
-* **[Intune App SDK Androidon – útmutató fejlesztőknek](app-sdk-android.md)**: Ez a dokumentum részletesen ismerteti a natív Androidos alkalmazásnak az Intune App SDK-val való engedélyezésének.
+* **[Intune App SDK Androidon – útmutató fejlesztőknek](app-sdk-android.md)** : Ez a dokumentum részletesen ismerteti a natív Androidos alkalmazásnak az Intune App SDK-val való engedélyezésének.
 
-* **[Útmutató az Intune App SDK Xamarin Bindings](app-sdk-xamarin.md)**: Ez a dokumentum segít iOS és Android-alkalmazások Xamarin használatával az Intune alkalmazásvédelmi szabályzatokat hozhat létre.
+* **[Útmutató az Intune App SDK Xamarin Bindings](app-sdk-xamarin.md)** : Ez a dokumentum segít iOS és Android-alkalmazások Xamarin használatával az Intune alkalmazásvédelmi szabályzatokat hozhat létre.
 
 
 
@@ -173,16 +173,13 @@ Ha az alkalmazás a saját egyéni Azure Active Directory (AAD) beállításokat
 
 Miután regisztrálta az alkalmazást egy Azure-bérlő belül, és alatt látható **minden alkalmazás**, meg kell adni az alkalmazás hozzáférjen az Intune app protection szolgáltatáshoz (korábbi nevén MAM-szolgáltatásban). Az Azure Portalon:
 
-1.  Nyissa meg az **Azure Active Directory** panelt.
-2.  Válassza az alkalmazás **Alkalmazásregisztráció** beállítását.
-3.  Az **API-hozzáférés** fejléc alatti **Beállítások** között válassza a **Szükséges engedély** lehetőséget. 
-4.  Kattintson a **+ Hozzáadás** lehetőségre.
-5.  Kattintson az **API kiválasztása** lehetőségre. 
-6.  A keresőmezőbe írja be a **Microsoft Mobile Application Management** (Microsoft mobilalkalmazás-kezelés) kifejezést.
-7.  Jelölje aki az API-k listájának **Microsoft Mobile Application Management** elemét, és kattintson a kiválasztás lehetőségre.
-8.  Válassza a **Felhasználó alkalmazásfelügyeleti adatainak olvasása és írása** lehetőséget.
-9.  Kattintson a **Done** (Kész) gombra.
-10. Kattintson az **Engedélyek megadása**, majd az **Igen** elemre. 
+1.  Nyissa meg a **Azure Active Directory** panelen.
+2.  A **alkalmazásregisztrációk**, nyissa meg a listában állítsa be az alkalmazáshoz.
+3.  Kattintson a **+ adjon hozzá egy engedélyt**.
+4.  Kattintson a **API-k saját szervezete**. 
+5.  A keresőmezőbe írja be a **Microsoft Mobile Application Management** (Microsoft mobilalkalmazás-kezelés) kifejezést.
+6.  A **delegált engedélyek**, jelölje be a **DeviceManagementManagedApps.ReadWrite: A felhasználó alkalmazás-felügyeleti adatok olvasását és írását*** jelölőnégyzetet.
+7. Kattintson a **engedélyek hozzáadása**.
 
 ### <a name="badge-your-app-optional"></a>Az alkalmazás megjelölése jelvénnyel (nem kötelező)
 
