@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/21/2019
+ms.date: 06/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,19 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fb3b02cd9d9b978f1de5e98634d647c4c81cde0
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9884f1c5d794b527aeaf8fb522d9118d59468b3b
+ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041653"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66506881"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Gyakori kérdések az MAM-ről és az alkalmazásvédelemről
 
 Ez a cikk az Intune mobilalkalmazás-kezeléssel (MAM) és az Intune alkalmazásvédelemmel kapcsolatos gyakori kérdésekre adott válaszokat ismerteti.
 
 ## <a name="mam-basics"></a>Az MAM alapjai
-
 
 **Mi az MAM?**<br></br>
 Az [Intune mobilalkalmazás-kezelés](/intune/app-lifecycle) olyan Intune-beli felügyeleti összetevők csoportja, amelyek lehetővé teszik mobilalkalmazások közzétételét és leküldését a felhasználók részére, valamint azok konfigurálását, védelmét, figyelését és frissítését.
@@ -72,6 +71,13 @@ Az [Intune App SDK](/intune/app-sdk) által integrált vagy az [Intune alkalmaz�
 - A végfelhasználónak egy alkalmazásvédelmi szabályzattal társított biztonsági csoporthoz kell tartoznia. Ugyanezen alkalmazásvédelmi szabályzatnak a használt alkalmazással is társítva kell lennie. Alkalmazásvédelmi csoportokat az [Azure-portálon](https://portal.azure.com) található Intune-konzolban lehet létrehozni és telepíteni. A jelenleg hozható létre biztonsági csoportokat a [Microsoft 365 felügyeleti központban](https://admin.microsoft.com).
 
 - A végfelhasználónak saját AAD-fiókjával be kell jelentkeznie az alkalmazásba.
+
+**Mi történik, ha szeretnék engedélyezheti egy alkalmazás az Intune App Protection, de nem használ egy támogatott app-fejlesztési platform?** 
+
+Az Intune SDK fejlesztési csapata aktívan teszteli, és fenntartja a Xamarin, a Xamarin.Forms és a Cordova platformokon a natív Android-, IOS-es (Obj-C, Swift) létrehozott alkalmazások támogatása. Egyes ügyfeleink éltek meg az Intune SDK-integráció más platformokon, például a React Native és NativeScript sikeres, bár nem biztosítunk konkrét útmutatást és beépülő modulok használatával a támogatott platformok csakis alkalmazásfejlesztők számára.
+
+**Az Intune APP SDK támogatja a Microsoft Authentication Libraryt (MSAL), vagy a közösségi fiókokat?**<br></br>
+Az Intune APP SDK fejlett ADAL-funkciókat használ az SDK saját és külső verzióihoz is. Az MSAL így nem működik jól együtt számos alapvető forgatókönyvvel, például az Intune App Protection szolgáltatásban való hitelesítéssel és a feltételes indítással. Tekintettel arra, hogy a Microsoft identitás-csapat általános útmutatást, hogy váltson át a Microsoft Office-alkalmazások összes MSAL, az Intune SDK végül azt támogatásához szükséges, de nem tervezik még ma.
 
 **Mik az [Outlook mobilalkalmazás](https://products.office.com/outlook) használatának további feltételei?**
 
@@ -117,7 +123,7 @@ A személyes azonosítószám (PIN-kód) egy olyan kód, amellyel ellenőrizni l
 
 - **Milyen gyakran kell a felhasználónak megadnia az Intune PIN-kódját?**<br></br> A rendszergazda az Intune felügyeleti konzolján beállíthatja az Intune alkalmazásvédelmi szabályzatának „Hozzáférési követelmények újbóli ellenőrzése ennyi idő után (perc)” beállítását. Ez a beállítás azt határozza meg, hogy mennyi idő után ellenőrzi a rendszer a hozzáférési követelményeket az eszközön, és jelenik meg újból az alkalmazás PIN-kódot bekérő képernyője. Ugyanakkor a PIN-kóddal kapcsolatos alábbi fontos információk is befolyásolják, hogy a rendszer milyen gyakran kér felhasználói bevitelt: 
 
-    - **A PIN-kód megosztott használhatóság javítása érdekében az ugyanattól:** Az iOS-PIN-kódot egy alkalmazás között meg van osztva az összes alkalmazás **ugyanazon alkalmazáskiadótól származnak,**. Androidon minden alkalmazás egyetlen közös alkalmazásszintű PIN-kódot használ.
+    - **A PIN-kód megosztott használhatóság javítása érdekében az ugyanattól:** Az iOS-PIN-kódot egy alkalmazás között meg van osztva az összes alkalmazás **ugyanazon alkalmazáskiadótól származnak,** . Androidon minden alkalmazás egyetlen közös alkalmazásszintű PIN-kódot használ.
     - **Az "A hozzáférési követelmények újbóli ellenőrzésének után (perc)" viselkedés eszköz újraindítása után:** Egy "PIN-kód számlálója" tétlen percek száma, amelyek meghatározzák, mikor jelenjenek meg az Intune az alkalmazás következő számát követi nyomon. iOS rendszeren a PIN-kód-számlálót nem érinti az eszköz-újraindítás. Az eszközök újraindítása így nincs hatással arra, hogy a felhasználó hány percig inaktív egy Intune-os PIN-kód-szabályzattal ellátott iOS-alkalmazásban. Android rendszeren a PIN-kód-számláló újraindul az eszköz újraindításakor. Ennek köszönhetően az Intune-os PIN-kód-szabályzattal ellátott Android-alkalmazások **az eszköz újra indítása után** valószínűleg kérni fogják az alkalmazás PIN-kódját „A hozzáférési követelmények ismételt ellenőrzése ennyi idő után (perc)” beállítás értékének függetlenül.  
     - **A PIN-kód társított időzítőt gördülő jellege:** Követően egy PIN-kódot is meg kell adni egy alkalmazás (az a alkalmazás) eléréséhez, és az alkalmazás kikerül az előtérből (fő bement fókuszának) az eszközön, a PIN-kód számlálója alaphelyzetbe a PIN-kód beolvasása. Egy olyan alkalmazás (B alkalmazás) sem fogja bekérni a PIN-kódot a felhasználótól, amely szintén ezt a PIN-kódot használja, mivel a számláló alaphelyzetbe állt. Az adatkérés akkor jelenik meg újra, amikor a rendszer ismét eléri a „Hozzáférési követelmények újbóli ellenőrzése ennyi idő után (perc)” beállítás értékét.
 
@@ -164,8 +170,7 @@ Az Intune alkalmazásvédelem megköveteli a felhasználói identitás konziszte
 **Létezik biztonságos módja a webes hivatkozások megnyitásának a felügyelt alkalmazásokból?**<br></br>
 Igen! A rendszergazda életbe léptethet és beállíthat egy alkalmazásvédelmi szabályzatot az [Intune Managed Browser alkalmazáshoz](app-configuration-managed-browser.md), amely egy, a Microsoft Intune által fejlesztett, az Intune használatával egyszerűen felügyelhető webböngésző. A rendszergazda előírhatja, hogy az Intune által kezelt alkalmazásokban található összes webhivatkozást csak a Managed Browser alkalmazással lehessen megnyitni.
 
-**Az Intune APP SDK támogatja a Microsoft Authentication Libraryt (MSAL), vagy a közösségi fiókokat?**
-Az Intune APP SDK fejlett ADAL-funkciókat használ az SDK saját és külső verzióihoz is. Az MSAL így nem működik jól együtt számos alapvető forgatókönyvvel, például az Intune App Protection szolgáltatásban való hitelesítéssel és a feltételes indítással. Jelenleg nem tervezzük ennek támogatását.
+
 
 ## <a name="app-experience-on-android"></a>Az alkalmazás felhasználói felülete Androidon
 
@@ -199,13 +204,13 @@ A Google Play Protect a SafetyNet API ellenőrzések megköveteli a végfelhaszn
 Mind a "SafetyNet eszközigazolás" és "Alkalmazások fenyegetettségvizsgálata" beállításokat a Google Play-szolgáltatások megfelelően működnek, határozza meg a Google-verziójának megkövetelése. Mivel ezek a biztonság területén, melyek beállításai, a felhasználó le lesz tiltva vannak kijelölve ezekkel a beállításokkal, és a Google Play-szolgáltatások megfelelő verziója nem megfelelő vagy nem férhetnek hozzá a Google Play-szolgáltatások. 
 
 ## <a name="app-experience-on-ios"></a>Az alkalmazás felhasználói felülete iOS-en
-**Mi történik, ha hozzáadok vagy eltávolítok egy ujjlenyomatot vagy arcot a saját eszközről?**
+**Mi történik, ha hozzáadok vagy eltávolítok egy ujjlenyomatot vagy arcot a saját eszközről?**<br></br>
 Az Intune alkalmazásvédelmi szabályzatai csak az Intune licencelt felhasználójának teszik lehetővé az alkalmazás elérésének szabályozását. Az alkalmazáshoz való hozzáférés szabályozásának egyik módja az Apple Touch ID vagy a Face ID megkövetelése a támogatott eszközökön. Az Intune olyan viselkedést vezet be, ahol az eszköz biometrikus adatbázisának bármilyen változása esetén az Intune PIN-kódot kér a felhasználótól a következő inaktivitási időkorlát elérése esetén. A biometrikus adatok módosításai tartalmazzák az arc vagy ujjlenyomat hozzáadását és eltávolítását. Ha az Intune-felhasználóhoz nincs beállítva PIN-kód, a rendszer felszólítja az Intune PIN-kód beállítására.
  
 Ennek célja az alkalmazáson belüli céges adatok védelmének biztosítása az alkalmazás szintjén. Ez a funkció csak az iOS-ben érhető el, és a működéséhez szükséges az alkalmazások integrálása az Intune APP SDK for iOS 9.0.1-es vagy újabb verziójával. Az SDK-integráció szükséges a viselkedés kényszeríthetőségéhez a megcélzott alkalmazásoknál. Ez az integráció fokozatosan történik, és az egyes alkalmazáscsapatoktól függ. Néhány alkalmazás, amely ezek között szerepelhet: WXP, Outlook, Managed Browser és Yammer. 
   
 **Az iOS megosztási bővítménnyel megnyithatom a munkahelyi vagy az iskolai adatokat a nem felügyelt alkalmazásokban, még akkor is, ha az adatátviteli szabályzat beállítása „csak felügyelt alkalmazások” vagy „nincs alkalmazás”. Nem jár ez adatszivárgással?**<br></br>
-Az Intune alkalmazásvédelmi szabályzata nem tudja kezelni az iOS megosztási bővítményt az eszköz felügyelete nélkül. Ezért az _**Intune titkosítja a „céges” adatokat, mielőtt az alkalmazáson kívül megosztaná**_. Ezt úgy ellenőrizheti, hogy megpróbálja megnyitni a „céges” fájlt a felügyelt alkalmazáson kívül. A fájlnak titkosítottnak kell lennie, így a felügyelt alkalmazáson kívül mással nem nyitható meg.
+Az Intune alkalmazásvédelmi szabályzata nem tudja kezelni az iOS megosztási bővítményt az eszköz felügyelete nélkül. Ezért az _**Intune titkosítja a „céges” adatokat, mielőtt az alkalmazáson kívül megosztaná**_ . Ezt úgy ellenőrizheti, hogy megpróbálja megnyitni a „céges” fájlt a felügyelt alkalmazáson kívül. A fájlnak titkosítottnak kell lennie, így a felügyelt alkalmazáson kívül mással nem nyitható meg.
 
 **Hogyan működnek az egyazon alkalmazás- és felhasználói csoportokra konfigurált többes Intune alkalmazásvédelmi hozzáférési beállítások az iOS-eszközökön?**<br></br>
 Az Intune alkalmazásvédelmi hozzáférési szabályzatai adott sorrendben lépnek érvénybe a végfelhasználói eszközökön, amikor azok a vállalati környezetből megkísérelnek hozzáférni az alkalmazásokhoz. A törlésnek általában elsőbbsége van, ezt követi a letiltás és a bezárható figyelmeztetés. Például az iOS-verzió frissítésére figyelmeztető minimálisan előírt iOS operációsrendszer-beállítás, ha érvényesíthető az adott felhasználóra/alkalmazásra, csak akkor kerül alkalmazásra, ha már életbe lépett a felhasználó hozzáférését letiltó minimálisan előírt iOS operációsrendszer-beállítás. Így tehát ha az informatikai rendszergazda a minimális iOS operációs rendszert 11.0.0.0-ra, a (csak figyelmeztetési) minimális iOS operációs rendszert 11.1.0.0-ra állította be, az alkalmazás elérését megkísérlő eszköz pedig az iOS 10-et használja, a végfelhasználó a minimális iOS operációsrendszer-verzióra vonatkozó szigorúbb beállítás alapján le lesz tiltva, és nem férhet hozzá az alkalmazáshoz.
