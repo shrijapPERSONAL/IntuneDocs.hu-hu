@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ed95507d8a7486bc1c1cca2c2a067658239eed8
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5124796166f27823b7a13b0f3dd239446f778850
+ms.sourcegitcommit: 337b554f9becc40cdea2f5f47a4a129ac491f64c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043542"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66713860"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Partner hitelesítésszolgáltató hozzáadása az Intune-ban SCEP protokollal
 
@@ -87,7 +87,7 @@ Ehhez mindenképpen rendelkeznie kell az Azure AD-alkalmazás regisztrálásáho
    > [!IMPORTANT]  
    > Mielőtt kilép az oldalról, másolja az értéket a titkos, és jegyezze fel a harmadik fél hitelesítésszolgáltató megvalósításra későbbi használatra. Ez az érték nem jelenik meg újból. Mindenképpen olvassa el a harmadik fél hitelesítésszolgáltató hogyan szeretnének az alkalmazás Azonosítóját, a hitelesítési kulcsot és a konfigurált bérlő azonosítója a útmutatást.  
 
-6. Rekord a **Bérlőazonosító**. A Bérlőazonosító a tartomány szöveg után a @ karakter a fiókjában. Például, ha a fiókja *admin@name.onmicrosoft.com*, akkor a bérlő Azonosítóját **name.onmicrosoft.com**.  
+6. Rekord a **Bérlőazonosító**. A Bérlőazonosító a tartomány szöveg után a @ karakter a fiókjában. Például, ha a fiókja *admin@name.onmicrosoft.com* , akkor a bérlő Azonosítóját **name.onmicrosoft.com**.  
 
 7. Lépjen a navigációs ablaktáblán az alkalmazás **API-engedélyek** alatt **kezelés**, majd válassza ki **adjon hozzá egy engedélyt**.  
 
@@ -123,6 +123,7 @@ Az alábbi külső hitelesítésszolgáltatók támogatják az Intune-t:
 - [GlobalSign](https://downloads.globalsign.com/acton/attachment/2674/f-6903f60b-9111-432d-b283-77823cc65500/1/-/-/-/-/globalsign-aeg-microsoft-intune-integration-guide.pdf)
 - [IDnomic](https://www.idnomic.com/)
 - [Sectigo](https://sectigo.com/products)
+- [DigiCert](https://knowledge.digicert.com/tutorials/microsoft-intune.html)
 
 Ha Ön a terméke Intune-nal való integrálása iránt érdeklődő külső hitelesítésszolgáltatót képvisel, tekintse át az API-val kapcsolatos útmutatót:
 
