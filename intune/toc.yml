@@ -135,6 +135,10 @@
           items:
             - name: Hálózati konfiguráció
               href: network-bandwidth-use.md
+            - name: Intune-végpontok
+              href: intune-endpoints.md
+            - name: Intune US Government-végpontok
+              href: intune-us-government-endpoints.md
         - name: Bejelentkezés az Intune-ba
           href: account-sign-up.md
         - name: Tartományok beállítása
