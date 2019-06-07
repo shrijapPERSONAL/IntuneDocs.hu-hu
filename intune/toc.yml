@@ -576,10 +576,12 @@
                   href: windows-store-for-business.md
                 - name: iOS-es e-könyvek
                   href: vpp-ebooks-ios.md
-            - name: A Céges portál alkalmazás konfigurálása
+            - name: A Céges portál konfigurálása
               href: company-portal-app.md
             - name: A Managed Browser konfigurálása
               href: app-configuration-managed-browser.md
+            - name: A Microsoft Edge konfigurálása
+              href: manage-microsoft-edge.md
             - name: Az Outlook konfigurálása
               href: app-configuration-policies-outlook.md
         - name: Alkalmazások védelme
