@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/05/2019
+ms.date: 06/06/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee0f7ce806b1ed2a17b59add467b1b0af2a40578
-ms.sourcegitcommit: 023b1293b47314b77eb80997bbd8aa679db90880
+ms.openlocfilehash: e170fe0c1b461bad140b89ac01a2ad817e2082e5
+ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66448112"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744329"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>SCEP-tanúsítványok konfigurálása és használata az Intune-nal
 
@@ -115,7 +115,8 @@ Ebben a lépésben a következőket fogja elvégezni:
    - A **Biztonság** területen adja hozzá az NDES szolgáltatásfiókot, és adjon meg hozzá **Regisztrálás** engedélyt a sablonhoz. Az SCEP-profilokat létrehozó Intune-rendszergazdáknak **olvasási** jogokkal kell rendelkezniük, hogy az SCEP-profilok létrehozása során megnyithassák a sablont.
 
      > [!NOTE]
-     > A tanúsítványok visszavonásához az NDES szolgáltatásfiók a *Tanúsítványok kiállítása és kezelése* nevű jogosultságot igényli a tanúsítványprofilok által használt összes tanúsítványprofilhoz.
+     > Tanúsítványok visszavonásához az NDES szolgáltatásfiókot kell *tanúsítványok kiállítása és kezelése* jogok a hitelesítésszolgáltatón. Ez az engedély delegálása, nyissa meg a hitelesítésszolgáltató felügyeleti konzolt, és kattintson a jobb gombbal a hitelesítésszolgáltató nevére. Ezután a biztonság lapon adja hozzá, vagy válassza ki a fiókot, és ezután jelölje be a **tanúsítványok kiállítása és kezelése**.
+
 
 3. Ellenőrizze az **Érvényesség időtartama** beállítást a sablon **Általános** lapján. Alapértelmezés szerint az Intune a sablonban konfigurált értéket használja. A hitelesítésszolgáltató konfigurálásával azonban engedélyezheti, hogy a kérelmező ettől eltérő értéket adjon meg, amelyet aztán az Intune-rendszergazdai konzolról állíthat be. Ha később mindig ezt az értéket akarja használni a sablonban, akkor hagyja ki e lépés további részeit.
 
@@ -299,15 +300,15 @@ Ebben a lépésben a következőket fogja elvégezni:
 
 1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Válassza ki **eszközkonfiguráció** > **összekötők minősítési** > **Hozzáadás**.
-3. Töltse le és mentse az összekötőt SCEP-fájl. Mentse egy olyan helyre, amely elérhető a kiszolgálóról, amelyre az összekötő telepítve lesz.
+3. Töltse le és mentse az összekötőt SCEP-fájl. Mentse egy olyan helyre a fogjuk, ha az összekötő telepítéséhez az NDES-kiszolgálón.
 
    ![ConnectorDownload](./media/certificates-scep-configure/download-certificates-connector.png)
 
 
-4. A letöltés befejezése után nyissa meg a hálózati eszközök tanúsítványigénylési szolgáltatás (NDES) futtató kiszolgáló. Ha ez megvan:
+4. A letöltés befejezése után nyissa meg az NDES-kiszolgálón, amelyen a hálózati eszközök tanúsítványigénylési szolgáltatás (NDES). Ha ez megvan:
 
     1. Győződjön meg róla, hogy telepítve van-e a .NET 4.5-keretrendszer, mivel arra szüksége van az NDES tanúsítvány-összekötőjének. A .NET 4.5-keretrendszer automatikusan részen a Windows Server 2012 R2 és újabb verzióknak.
-    2. Futtassa a telepítőprogramot (**NDESConnectorSetup.exe**). A telepítés során az NDES házirendmodulja és a CRP (tanúsítványregisztrációs pont) webszolgáltatás is települ. A CRP webszolgáltatás, melynek neve CertificateRegistrationSvc, alkalmazásként fut az IIS-ben.
+    2. A kiszolgáló rendszergazdai jogosultságokkal rendelkező fiók használatára a telepítő futtatásához (**NDESConnectorSetup.exe**). A telepítés során az NDES házirendmodulja és a CRP (tanúsítványregisztrációs pont) webszolgáltatás is települ. A CRP webszolgáltatás, melynek neve CertificateRegistrationSvc, alkalmazásként fut az IIS-ben.
 
     > [!NOTE]
     > Ha önálló Intune-hoz telepíti az NDES-t, akkor a CRP szolgáltatás automatikusan települ a tanúsítvány-összekötővel együtt. Az Intune szolgáltatásnak a Configuration Managerrel való használatakor a tanúsítványregisztrációs pontot különálló helyrendszerszerepkörként telepíti.
@@ -335,7 +336,7 @@ Ebben a lépésben a következőket fogja elvégezni:
 
     Ha munkahelye proxykiszolgálót használ, és a proxy használata szükséges ahhoz, hogy az NDES-kiszolgáló hozzáférjen az internethez, válassza a **Proxykiszolgáló használata** lehetőséget. Ezután a csatlakozáshoz adja meg a proxykiszolgáló nevét, portját és a fiókhoz tartozó hitelesítő adatokat.
 
-    Váltson a **Speciális** lapra, majd adja meg egy olyan fiók hitelesítő adatait, amely rendelkezik **Tanúsítványok kiállítása és kezelése** engedéllyel a vállalati hitelesítésszolgáltatónál. Válassza az **Alkalmaz** gombot a módosítások alkalmazásához.
+    Váltson a **Speciális** lapra, majd adja meg egy olyan fiók hitelesítő adatait, amely rendelkezik **Tanúsítványok kiállítása és kezelése** engedéllyel a vállalati hitelesítésszolgáltatónál. Válassza az **Alkalmaz** gombot a módosítások alkalmazásához. Ha ez az engedély delegálta az NDES szolgáltatásfiókot, ha [a hitelesítésszolgáltató konfigurálásával](#configure-the-certification-authority), adja meg a használt fiókot. 
 
     Bezárhatja a tanúsítvány-összekötő felhasználói felületét.
 

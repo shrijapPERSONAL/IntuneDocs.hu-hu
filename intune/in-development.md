@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ae43aa6820f5a858f4dd92153ad4b931af77dc6
-ms.sourcegitcommit: b8021474846b655954c2796c71bdbe2a8d22b421
+ms.openlocfilehash: bc5ea7076e77e5071724168fab58fa78f59601c4
+ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66500787"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744301"
 ---
 # <a name="in-development-for-microsoft-intune---june-2019"></a>A Microsoft Intune-hoz – június 2019 fejlesztés alatt
 
@@ -99,7 +99,7 @@ A jelenlegi beállítások megtekintéséhez lépjen a [Windows 10 (és újabb) 
 Érintett kiadások: Windows 10 és újabb
 
 #### <a name="deploy-multiple-zebra-mobility-extensions-device-profiles-to-a-device-same-user-group-or-same-devices-group----4089955---"></a>Több Zebra mobilitási bővítmények eszköz profilok központi telepítése egy eszközön, ugyanazon felhasználói csoporthoz vagy ugyanazon csoporthoz. <!-- 4089955 -->
-Az Intune-ban eszközkonfigurációs profil Zebra mobilitási extensions (MZ) segítségével testre szabhatja a beállításokat, vagy nem beépített beállítások hozzáadása az Intune-hoz. Jelenleg egy profilt telepíthet egyetlen eszközt. Egy jövőbeli frissítéssel is elérheti a több profilok központi telepítése:
+Az Intune-ban eszközkonfigurációs profil Zebra mobilitási extensions (MX) segítségével testre szabhatja a beállításokat, vagy nem beépített beállítások hozzáadása az Intune-hoz. Jelenleg egy profilt telepíthet egyetlen eszközt. Egy jövőbeli frissítéssel is elérheti a több profilok központi telepítése:
 
 - Az ugyanazon felhasználói csoporthoz
 - Az ugyanazon csoporthoz.

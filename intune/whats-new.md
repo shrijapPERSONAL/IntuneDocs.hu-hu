@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 72b96714e8740fe4077583cfa5d9f148c2ee0908
-ms.sourcegitcommit: f41b22f65286a64a8002e2cbe80debfdd6692278
+ms.openlocfilehash: 7c14568a0581220cf5941984645bd0b9044e00c1
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66469587"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749940"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 
@@ -106,8 +106,11 @@ Rendszergazdák akkor láthatnak, ezeket az automatikusan hozzáadódik az Intun
 
 ### <a name="device-configuration"></a>Eszközök konfigurálása
 
+#### <a name="updated-pfx-certificate-connector-for-microsoft-intune-----1533038---"></a>Frissített PFX-Tanúsítványösszekötő a Microsoft Intune-ban  <!-- 1533038 -->
+Kibocsátottunk egy frissítést a [PFX-Tanúsítványösszekötő a Microsoft Intune](certficates-pfx-configure.md#whats-new-for-connectors) , címek, ahol továbbra is meglévő PFX-tanúsítványok újrafeldolgozása, egy probléma, amely hatására az új kérelmek feldolgozásának leállítása-összekötő.
+
 ####  <a name="intune-security-tasks-for-defender-atp-in-public-preview--------3208597---"></a>Intune-ban biztonsági műveletek a Defender ATP-ben (a nyilvános előzetes verzió)     <!-- 3208597 -->
-Nyilvános előzetes verzióban elérhető az Intune segítségével biztonsági feladatok kezelése a Microsoft Defender komplex veszélyforrások elleni védelem (ATP). Ez az integráció az ATP, és hozzáadja a kockázatalapú megközelítés felderíteni, rangsorolására és végponti biztonsági réseket és a konfigurációs hibák, javíthatja a felderítést, hogy a megoldás közötti idő csökkentése mellett.
+Nyilvános előzetes verzióban elérhető az Intune használatával kezelhetik [biztonsági tevékenységek a Microsoft Defender komplex veszélyforrások elleni védelem (ATP)](atp-manage-vulnerabilities.md). Ez az integráció az ATP, és hozzáadja a kockázatalapú megközelítés felderíteni, rangsorolására és végponti biztonsági réseket és a konfigurációs hibák, javíthatja a felderítést, hogy a megoldás közötti idő csökkentése mellett.
 
 #### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---idstaged--"></a>A Windows 10-es eszközök megfelelőségi szabályzatot a TPM lapkakészlet-ellenőrzés <!-- 3617671   idstaged-->
 Számos Windows 10-es és újabb rendszerű eszközök kell a platformmegbízhatósági modul (TPM) chipkészletekkel. A frissítés egy új megfelelőségi beállítás, amely ellenőrzi a TPM lapka az eszközön lévő verziója tartalmazza. 
@@ -116,7 +119,7 @@ Számos Windows 10-es és újabb rendszerű eszközök kell a platformmegbízhat
 
 Érintett kiadások: Windows 10 és újabb
 
-#### <a name="prevent-end-users-from-modifying-their-personal-hotspot-and-disable-siri-server-logging-on-ios-devices----4097904-----"></a>Megakadályozza, hogy a végfelhasználók számára a személyes elérési pont módosítása és Siri kiszolgáló bejelentkezés IOS-es eszközök letiltása <!-- 4097904   --> 
+#### <a name="prevent-end-users-from-modifying-their-personal-hotspot-and-disable-siri-server-logging-on-ios-devices----4097904-----"></a>Megakadályozza, hogy a végfelhasználók számára a személyes elérési pont módosítása és Siri kiszolgáló bejelentkezés IOS-es eszközök letiltása <!-- 4097904   -->  
 Létrehozhat egy eszközkorlátozási profilt az iOS-eszközön (**eszközkonfiguráció** > **profilok** > **profil létrehozása**  >  **iOS** tartozó platform > **eszközkorlátozások** profiltípus). A frissítés konfigurálható új beállításokat tartalmazza:
 
 - **Beépített alkalmazások**: Siri parancsok kiszolgálóoldali naplózása

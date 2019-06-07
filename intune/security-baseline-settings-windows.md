@@ -16,19 +16,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 92aa438e436c4612ede29564f61c3fc529f789c0
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 82fa4fc7f9e60dff3c08adf3281351cbfa8eb743
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045050"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749930"
 ---
 # <a name="windows-security-baseline-settings-for-intune"></a>Windows biztonsági Alapterv beállítások az Intune-hoz  
 
-Nézet a [Windows biztonsági Alapterv beállítások](security-baselines.md) , amely a Microsoft Intune által támogatott.  
+Nézet a [Windows biztonsági Alapterv beállítások](security-baselines.md) , amely a Microsoft Intune által támogatott. A Windows-alapkonfiguráció alapértelmezett képviselő Windows ajánlott konfigurációját, és nem egyeznek meg a referenciakonfiguráció alapértelmezett értékeket a többi biztonsági előírások.  
 
 > [!NOTE]  
-> A Windows biztonsági Alapterv beállítások vannak előzetes verzióban érhető el. Az előzetes verzió, a rendelkezésre álló beállítások, valamint a sorrendet, amelyben ez a tartalom megadja ezeket a beállításokat listája gyártmányától mi érhető el a portálon.  
+> A Windows biztonsági alapterv beállítás **előzetes**. Az előzetes verzió, a rendelkezésre álló beállítások, valamint a sorrendet, amelyben ez a tartalom megadja ezeket a beállításokat listája gyártmányától mi érhető el a portálon.  
 >  
 > Amikor alapvető beállítások verziója, ezt a tartalmat a rendszer ekkor frissíti a biztonsági alapkonfiguráció beállítások az Intune által támogatott-az előzetes verzió listájában.  
 
@@ -1085,7 +1085,7 @@ További információkért lásd: [házirend CSP - LocalPoliciesSecurityOptions]
   **Alapértelmezett**: Igen
 
 - **Fájl- és beállításjegyzék-írási hibák száma a felhasználó tartózkodási helye virtualizálása**  
-  Ez a házirend-beállítással megadható, hogy az alkalmazás-írási hibák a rendszer átirányítja megadott beállításjegyzékbeli és fájlrendszerbeli helyekre. Ezzel a szabályzatbeállítással csökkenti az alkalmazásokat, amelyek a Futtatás rendszergazdaként, és a futásidejű alkalmazások adatainak írása *% ProgramFiles %*, *% Windir %*, *%Windir%\system32*, vagy *HKLM\Software*.
+  Ez a házirend-beállítással megadható, hogy az alkalmazás-írási hibák a rendszer átirányítja megadott beállításjegyzékbeli és fájlrendszerbeli helyekre. Ezzel a szabályzatbeállítással csökkenti az alkalmazásokat, amelyek a Futtatás rendszergazdaként, és a futásidejű alkalmazások adatainak írása *% ProgramFiles %* , *% Windir %* , *%Windir%\system32*, vagy *HKLM\Software*.
   
   **Alapértelmezett**: Igen
 
@@ -1159,7 +1159,7 @@ További információkért lásd: [házirend CSP - RemoteDesktopServices](https:
   **Alapértelmezett**: Enabled
   
 - **Meghajtó blokkátirányítás**  
-  A házirend-beállítás megadja, hogy a leképezés egy távoli asztali szolgáltatások munkamenet (meghajtón átirányítást) ügyfélmeghajtók elkerülése érdekében. Alapértelmezés szerint egy távoli asztali munkamenetgazda-kiszolgálóhoz kapcsolódáskor automatikusan ügyfélmeghajtók képezi le. Csatlakoztatott meghajtók munkamenet ebben a mappafában levő a fájlkezelő vagy a számítógép a következő formátumban jelenik meg  *\<meghajtóbetűjel >* a  *\<számítógép_neve >*. A házirend-beállítás használatával bírálja felül ezt a viselkedést. Ha ez a szabályzatbeállítás engedélyezi, átirányítása a távoli asztali szolgáltatások munkamenetei nem engedélyezett, és a vágólapra másolás-átirányítási fájlt a Windows Server 2003, Windows 8 és Windows XP rendszert futtató számítógépeken nem engedélyezett. Ha letiltja ezt a beállítást, az ügyfél meghajtón átirányítást mindig engedélyezve van. Vágólapra másolás-átirányítási fájlt is, ha átirányítása a vágólap engedélyezett mindig engedélyezett. Ha nem konfigurálja ezt a beállítást, ügyfél meghajtón átirányítást és vágólapra másolás-átirányítási fájlt nem meg a csoportházirend szintjén.
+  A házirend-beállítás megadja, hogy a leképezés egy távoli asztali szolgáltatások munkamenet (meghajtón átirányítást) ügyfélmeghajtók elkerülése érdekében. Alapértelmezés szerint egy távoli asztali munkamenetgazda-kiszolgálóhoz kapcsolódáskor automatikusan ügyfélmeghajtók képezi le. Csatlakoztatott meghajtók munkamenet ebben a mappafában levő a fájlkezelő vagy a számítógép a következő formátumban jelenik meg  *\<meghajtóbetűjel >* a  *\<számítógép_neve >* . A házirend-beállítás használatával bírálja felül ezt a viselkedést. Ha ez a szabályzatbeállítás engedélyezi, átirányítása a távoli asztali szolgáltatások munkamenetei nem engedélyezett, és a vágólapra másolás-átirányítási fájlt a Windows Server 2003, Windows 8 és Windows XP rendszert futtató számítógépeken nem engedélyezett. Ha letiltja ezt a beállítást, az ügyfél meghajtón átirányítást mindig engedélyezve van. Vágólapra másolás-átirányítási fájlt is, ha átirányítása a vágólap engedélyezett mindig engedélyezett. Ha nem konfigurálja ezt a beállítást, ügyfél meghajtón átirányítást és vágólapra másolás-átirányítási fájlt nem meg a csoportházirend szintjén.
   
   **Alapértelmezett**: Enabled
   

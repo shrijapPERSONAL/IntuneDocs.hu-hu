@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 1073a38da8a5b2467b1ff8c97b32b93f92e34e4c
-ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
+ms.openlocfilehash: fab8f2be48a30f6ad058b3eeb6874a44ff04e6ac
+ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66454117"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744322"
 ---
 Ezek a megjegyzések meg fontos információkat, amelyek segítségével előkészítése az Intune jövőbeli változtatásokat és szolgáltatásokat. 
 
@@ -40,3 +40,35 @@ Nem kell semmit sem, de az is, fontolja meg az IT pro útmutatást frissítése,
 
 #### <a name="additional-information"></a>További információ 
 https://aka.ms/intune_fullscreen
+
+### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665342--"></a>Tervezett módosítás: Az Intune támogatja az iOS 11 vagy újabb szeptembertől áthelyezése <!-- 4665342-->
+Szeptembertől iOS az Apple kell megjelenteti 13 várhatóan. Az Intune-regisztrációt, a céges portál és a Managed Browser támogatja az iOS 11 vagy újabb, az IOS-es 13 kiadás után rövid idővel áthelyezi.
+
+#### <a name="how-does-this-affect-me"></a>Hogyan érint ez engem?
+Feltéve, hogy az Office 365 mobilalkalmazások iOS 11.0-s és újabb rendszeren támogatott, ez hatással lehet a nem Ön; már valószínűleg már telepítette az operációs rendszer vagy eszköz. Azonban az alábbi eszközök egyikét sem, vagy úgy dönt, hogy regisztrálják az alább felsorolt eszközöket, ha tudja, hogy az alábbi eszközök nem támogatják az operációs rendszer iOS 10-nél nagyobb. Ezek az eszközök kell frissíteni, hogy egy eszköz, amely támogatja az iOS 11 vagy újabb verziója:
+
+- iPhone 5
+- iPhone 5c
+- iPad (4. generáció)
+
+Július kezdődően az MDM-ben regisztrált eszközökön az iOS 10-es és a vállalati portál rendszer felkéri, hogy az operációs rendszer vagy eszköz frissítése. Alkalmazás alkalmazásvédelmi szabályzatokat (alkalmazás) használatakor a "Megkövetelése (csak figyelmeztetési) minimális iOS operációs rendszer" hozzáférési beállítás is beállíthat.
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Hogyan készüljek fel a változásra?
+Ellenőrizze az Intune, tekintse meg a felhasználók vagy eszközök milyen hatással lehet a jelentéskészítés. Lépjen a **eszközök** > **minden eszköz** operációs rendszer alatt. Meghatározásához, hogy a vállalatnál ki van-e az iOS 10-es eszközök további oszlopokat is hozzáadhat. A kérés, hogy a végfelhasználók számára az eszközök frissítése egy operációs rendszer támogatott verziója szeptember előtt.
+
+### <a name="plan-for-change-support-for-version-811-and-higher-of-intune-app-sdk-for-ios----3586942--"></a>Tervezett módosítás: 8.1.1-es verzió támogatása és az iOS-hez készült Intune App SDK újabb <!-- 3586942-->
+Szeptember 2019 az Intune fogja át támogatásához az iOS-alkalmazások az Intune App SDK-val 8.1.1-es és újabb verzióit. Kisebb, mint 8.1.1-es SDK-verziókra létrehozott alkalmazások többé nem lesz támogatott. Ez a változás lépnek életbe várhatóan származnak, körül. szeptember 13 iOS az Apple kiadásával és szintén bejelentettük a MC181399.
+
+#### <a name="how-does-this-affect-me"></a>Hogyan érint ez engem?
+Az Intune App SDK-val vagy az App Wrapping-integrációnak köszönhetően a vállalati adatok védelme is a jóvá nem hagyott alkalmazások és adatok titkosítása felhasználókat. Az Intune App SDK IOS rendszerhez készült fogja használni 256 bites titkosítási kulcsok alapértelmezés szerint, ha a titkosítás engedélyezve van az Intune App Protection házirendek (alkalmazás). A módosítás után bármely SDK korábbi verziók 8.1.1-es, amely 128 bites titkosítási kulcsok használatához az iOS-alkalmazások többé nem lesz képes alkalmazások 8.1.1-es SDK-val integrált vagy 256 bites kulcsokkal megoszthatják az adatokat. Minden iOS-alkalmazás-SDK verziója 8.1.1-es rendelkeznie kell, vagy magasabb, hogy védett adatok megosztásához.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Hogyan készüljek fel a változásra?
+Ellenőrizze a Microsoft, külső és az üzletági (LOB) alkalmazások. Győződjön meg arról, hogy az alkalmazások védelme az Intune APP SDK 8.1.1-es verziót használ, vagy később.
+
+- A LOB-alkalmazások: Szükség lehet való ismételt közzétételéhez az alkalmazások integrálva van az SDK-verzió 8.1.1-es vagy újabb verziója. Azt javasoljuk, hogy az SDK legújabb verzióját. A témakörben találhat további információt az útmutató az ÜZLETÁGI alkalmazások előkészítése alkalmazásvédelmi szabályzatokkal, lásd: [– üzletági alkalmazások előkészítése alkalmazásvédelmi szabályzatok](../apps-prepare-mobile-application-management.md).
+- A Microsoft és külső alkalmazások: Győződjön meg arról, hogy ezek az alkalmazások legújabb verzióját a felhasználók számára telepít.
+
+Ha van ilyen, a módosítás tartalmazza az SDK támogatást, is frissítenie kell a dokumentációban vagy a fejlesztői útmutató.
+
+#### <a name="additional-information"></a>További információ
+https://docs.microsoft.com/intune/apps-prepare-mobile-application-management

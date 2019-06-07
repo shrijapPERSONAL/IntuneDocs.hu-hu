@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6feae4d7caeeefbf9638e5018ba7b653a260f5c
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: a58095612d6e76d4a1cb633e69260267dcfd9999
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373497"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749909"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune-hoz készült Microsoft Defender komplex veszélyforrások elleni védelem alapbeállítások
 
-Tekintse meg a Microsoft Intune által támogatott Microsoft Defender komplex veszélyforrások elleni védelem (korábbi nevén a Windows Defender komplex veszélyforrások elleni védelem) alapértelmezett beállításait. Ebben a cikkben az alapértelmezett értékeket jelölik az alapértelmezett alapkonfigurációjának az Intune-hoz. Ezeket az alapértelmezett értékeket jelölik az ajánlott konfiguráció az Intune-hoz, és előfordulhat, hogy nem egyezik a Windows alapértelmezett értékeket.
+Tekintse meg a Microsoft Intune által támogatott Microsoft Defender komplex veszélyforrások elleni védelem (korábbi nevén a Windows Defender komplex veszélyforrások elleni védelem) alapértelmezett beállításait. A komplex veszélyforrások elleni védelem (ATP) alapterv alapértelmezett értékeket jelölik az ATP ajánlott konfigurációját, és nem egyeznek meg a referenciakonfiguráció más biztonsági előírások alapértelmezett értéket.  
 
   Ha a környezet megfelel-e használatára vonatkozó Előfeltételek érhető el a Microsoft Defender komplex veszélyforrások elleni védelem alapkonfiguráció [Microsoft Defender komplex veszélyforrások elleni védelem](advanced-threat-protection.md#prerequisites)).
 
@@ -33,7 +33,7 @@ Tekintse meg a Microsoft Intune által támogatott Microsoft Defender komplex ve
 
 
 > [!NOTE]  
-> A WDATP alapkonfiguráció beállítás **előzetes**. Az előzetes verzió, a listában a rendelkezésre álló beállítások, valamint a sorrendet, amelyben ez a tartalom megadja ezeket a beállításokat, előfordulhat, hogy egyeznek meg a portálon. 
+> Az ATP alapkonfiguráció beállítás **előzetes**. Az előzetes verzió, a listában a rendelkezésre álló beállítások, valamint a sorrendet, amelyben ez a tartalom megadja ezeket a beállításokat, előfordulhat, hogy egyeznek meg a portálon.  
 >
 > Az alapbeállítások előzetes esnek, ez a tartalom frissülni fognak, hogy a biztonsági alapkonfiguráció beállítások az Intune által támogatott aktuális listáját.
 
