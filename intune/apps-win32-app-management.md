@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/14/2019
+ms.date: 06/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b3a566fd5c040e1c0007c10b1b57a64788a2323
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d8c4813d94a269ed6b8f944585814b54f36fef8c
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043823"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804701"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Önálló Intune - Win32-Alkalmazáskezelés
 
@@ -97,8 +97,7 @@ Az alábbi lépések útmutatást nyújtanak a Windows-alkalmazások Intune-hoz 
 
 ### <a name="step-1-specify-the-software-setup-file"></a>1. lépés: A szoftvertelepítő fájl megadása
 
-1.  Jelentkezzen be az [Azure Portalra](https://portal.azure.com/).
-2.  Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
+1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3.  Az **Intune** panelen válassza az **Ügyfélalkalmazások** > **Alkalmazások** > **Hozzáadás** elemet.
 4.  Az a **Hozzáadás** alkalmazás panelen válassza **Windows-alkalmazás (Win32)** a megadott legördülő listából.
 
@@ -163,10 +162,10 @@ Az alábbi lépések útmutatást nyújtanak a Windows-alkalmazások Intune-hoz 
 2.  Az a **adjon hozzá egy olyan követelményszabályt** panelen konfigurálja az alábbi adatokat. Lehetséges, hogy ezen a panelen néhány érték automatikusan ki lesz töltve.
     - **Operációs rendszer-architektúra**: Válassza ki a architektúrák telepítenie kell az alkalmazást.
     - **Az operációs rendszer minimális**: Válassza ki az operációs rendszer minimálisan szükséges az alkalmazás telepítéséhez.
-    - **Szükséges lemezterület (MB)**: Opcionálisan adja hozzá a szabad lemezterület a rendszermeghajtón az alkalmazás telepítéséhez szükséges.
-    - **Memória (MB)**: Opcionálisan adja hozzá a fizikai memória (RAM), az alkalmazás telepítéséhez szükséges.
+    - **Szükséges lemezterület (MB)** : Opcionálisan adja hozzá a szabad lemezterület a rendszermeghajtón az alkalmazás telepítéséhez szükséges.
+    - **Memória (MB)** : Opcionálisan adja hozzá a fizikai memória (RAM), az alkalmazás telepítéséhez szükséges.
     - **Logikai processzorok szükséges minimális száma**: Opcionálisan adja hozzá az alkalmazás telepítéséhez szükséges logikai processzorok minimális száma.
-    - **Minimális CPU-sebesség szükséges (MHz)**: Opcionálisan adja hozzá az alkalmazás telepítéséhez szükséges minimális CPU-sebesség.
+    - **Minimális CPU-sebesség szükséges (MHz)** : Opcionálisan adja hozzá az alkalmazás telepítéséhez szükséges minimális CPU-sebesség.
 
 3. Kattintson a **hozzáadása** megjelenítéséhez a **adjon hozzá egy olyan követelményszabályt** panelen, és további követelményszabályokat. Válassza ki a **követelmény típusa** , válassza ki a szabályt, amely segítségével határozza meg, hogyan érvényesítési követelmény. Követelmény szabályai fájl rendszer-információkat, a beállításjegyzék-értékek vagy a PowerShell-parancsfájlok alapulhat. 
     - **Fájl**: Ha úgy dönt **fájl** , a **követelmény típusa**, a követelményszabály észlelnie kell egy fájlhoz vagy mappához, dátuma, verziója vagy mérete. 
@@ -342,12 +341,50 @@ Az ügynöknaplók általában a következő helyen érhetők el az ügyfélgép
 > *C:\Program Files\Microsoft Intune Management Extension\Content*<br>
 > *C:\windows\IMECache*
 
-Win32-alkalmazások hibaelhárításával kapcsolatos további információkért lásd: [Win32 alkalmazás telepítési hibák elhárítása](troubleshoot-app-install.md#win32-app-installation-troubleshooting).
+### <a name="detecting-the-win32-app-file-version-using-powershell"></a>Annak ellenőrzése, PowerShell-lel Win32-alkalmazás fájl verziója
 
-### <a name="troubleshooting-areas-to-consider"></a>Néhány megfontolandó hibaelhárítási lépés
+Ha nehézséget jelent a Win32-alkalmazás fájlverziót észlelése, vegye figyelembe a használatával, vagy módosítsa a következő PowerShell-parancsot:
+
+``` PowerShell
+
+$FileVersion = [System.Diagnostics.FileVersionInfo]::GetVersionInfo("<path to binary file>").FileVersion
+#The below line trims the spaces before and after the version name
+$FileVersion = $FileVersion.Trim();
+if ("<file version of successfully detected file>" -eq $FileVersion)
+{
+#Write the version to STDOUT by default
+$FileVersion
+exit 0
+}
+else
+{
+#Exit with non-zero failure code
+exit 1
+}
+
+```
+A PowerShell a fenti parancsban cserélje le a `<path to binary file>` a Win32-alkalmazás fájl elérési útját karakterlánc. Egy példa az elérési útra a következőhöz hasonló lesz:<br>
+`C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE\ssms.exe`
+
+Továbbá cserélje le a `<file version of successfully detected file>` karakterlánc, amely észlelni kell a fájl verziója. Egy példa fájlt verzió-karakterláncnak a következő lesz a következőhöz hasonló:<br>
+`2019.0150.18118.00 ((SSMS_Rel).190420-0019)`
+
+Ha szeretné megszerezni a, a Win32-alkalmazás, használhatja a következő PowerShell-parancsot:
+
+``` PowerShell
+
+[System.Diagnostics.FileVersionInfo]::GetVersionInfo("<path to binary file>").FileVersion
+
+```
+
+Cserélje le a fenti PowerShell-parancs `<path to binary file>` a fájl elérési útjára.
+
+### <a name="additional-troubleshooting-areas-to-consider"></a>További hibaelhárítási területeket megfontolandó szempontok
 - Ellenőrizze a célcsoportkezelést, és győződjön meg arról, hogy az ügynök telepítve van az eszközön – egy olyan Win32-alkalmazás vagy PowerShell-szkript, amelynek csoport a célzottja, ügynöktelepítési szabályzatot hoz létre a biztonsági csoporthoz.
 - Ellenőrizze az operációs rendszer verzióját – 1607-es vagy annál újabb Windows 10-re van szükség.  
 - Ellenőrizze a Windows 10 termékváltozatát – a Windows 10 S és az S módban futó Windows-verziók nem támogatják az MSI-telepítést.
+
+Win32-alkalmazások hibaelhárításával kapcsolatos további információkért lásd: [Win32 alkalmazás telepítési hibák elhárítása](troubleshoot-app-install.md#win32-app-installation-troubleshooting).
 
 ## <a name="next-steps"></a>További lépések
 

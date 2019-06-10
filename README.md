@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: fc2e17c605af2c9cec021724852bcf1b48012ba8
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 76e6e3186ae0e8bf1d05698d28539994d33486e8
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61490127"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804425"
 ---
 ## <a name="microsoft-open-source-code-of-conduct"></a>A Microsoft nyílt forráskódra vonatkozó viselkedési szabályzata
 
@@ -23,7 +23,7 @@ Hogy **szeretné és a hozzájárulások ösztönzése** az közösségi (felhas
 * **A böngészőjében**: Két lehetőség érhető el: 
 
     **1. lehetőség: Közvetlenül a dics.Microsoft szerkesztése**  
-    1. Nyissa meg a témakör, például [ https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune ](https://docs.microsoft.com/ntune/troubleshoot-policies-in-microsoft-intune). 
+    1. Nyissa meg a témakör, például [ https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune ](https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune). 
     2. Válassza ki **szerkesztése** (jobb felső). A markdown-fájlban szerepel a GitHub-adattárban.
     3. Kattintson a ceruza ikonra. Ha a ceruza ikon fölé viszi, látni fogja a **szerkessze a fájlt** elemleírást. 
     4. Hajtsa végre a módosításokat, majd **véglegesítési** a módosításokat. 

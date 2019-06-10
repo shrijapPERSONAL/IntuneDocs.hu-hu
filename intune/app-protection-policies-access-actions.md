@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 490c7312f510651cafc6ade516e5f7dca8131b3a
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: cd323fce7f7bdbf17697c82935a9d2d5f47bb7ee
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043959"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804682"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Szelektív adattörlés alkalmazásvédelmi szabályzatok hozzáférési műveleteivel az Intune-ban
 
@@ -32,9 +32,7 @@ Ezekkel a beállításokkal egyértelműen megadható az összes vállalati adat
 
 ## <a name="create-an-app-protection-policy-using-access-actions"></a>Hozzáférési műveleteket használó alkalmazásvédelmi szabályzat létrehozása
 
-1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
-2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget.  
-    Az Intune a **Figyelés + felügyelet** szakaszban található.
+1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Az **Intune** panelen válassza az **Ügyfélalkalmazások** > **Alkalmazásvédelmi szabályzatok** lehetőséget.
 4. Kattintson a **Szabályzat hozzáadása** lehetőségre (a meglévő szabályzatok is módosíthatók). 
 5. Kattintson a **Kötelező beállítások konfigurálása** lehetőségre a szabályzathoz konfigurálható beállítások listájának megjelenítéséhez. 

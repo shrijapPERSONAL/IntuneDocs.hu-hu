@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7419a316018ed5c883f89a51090a852680cd9e38
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4c4b9f1d1dd0072555d8438940969b7abd0a9fff
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040663"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804485"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Szerepköralapú hozzáférés-vezérlés (RBAC) a Microsoft Intune-nal
 
@@ -30,6 +30,8 @@ Szerepköralapú hozzáférés-vezérlés (RBAC) segítségével kezelhetők ki 
 A szerepkörök létrehozásához, szerkesztéséhez vagy hozzárendeléséhez a fióknak rendelkeznie kell a következő jogosultságok egyikével az Azure AD-ben:
 - **Globális rendszergazda**
 - **Intune-Szolgáltatásadminisztrátor** (más néven **Intune-rendszergazda**)
+
+Tanácsokat és javaslatokat kapcsolatos Intune-os RBAC Ez a videósorozat a öt, példák és útmutatók bemutatására megtekinthet: [1](https://www.youtube.com/watch?v=5deXLMLcnKY), [2](https://www.youtube.com/watch?v=38dnMBLuxbQ), [3](https://www.youtube.com/watch?v=6vqg9cAkMbY), [4](https://www.youtube.com/watch?v=5yOLajFFMHE), [5](https://www.youtube.com/watch?v=P5DDvsSF4Wk).
 
 ## <a name="roles"></a>Szerepkörök
 A szerepkör határozza meg, az adott szerepkörhöz rendelt felhasználók számára biztosított engedélyeket.
@@ -62,8 +64,8 @@ Saját szerepköröket is létrehozhat egyéni engedélyekkel. Egyéni szerepkö
 | Biztonsági rendszergazda | Csak olvasható | Csak olvasható |
 | Biztonsági operátor | Csak olvasható | Csak olvasható |
 | Biztonsági olvasó | Csak olvasható | Csak olvasható |
-| Szabályozási ügyintéző | Nincsenek | Csak olvasható |
-| Megfelelőségi adatok rendszergazda | None | Csak olvasható |
+| Szabályozási ügyintéző | None | Csak olvasható |
+| Megfelelőségi adatok rendszergazda | Nincsenek | Csak olvasható |
 
 > [!TIP]
 > Intune-ban három olyan Azure AD-bővítmény látható: **Felhasználók**, **csoportok**, és **feltételes hozzáférési**, amely Azure AD RBAC segítségével szabályozhat. A **Felhasználóifiók-adminisztrátori** szerepkör csak az Azure AD-felhasználói vagy -csoporttevékenységek végrehajtására jogosít fel, és nem biztosít teljes körű engedélyt az összes Intune-beli tevékenységhez. További információkért lásd: [az Azure AD RBAC](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
@@ -84,8 +86,8 @@ Szerepkör-hozzárendelés megtekintéséhez válassza ki **Intune** > **szerepk
 
 -   **Tulajdonságok**: A neve, leírása, szerepkör, a tagok, hatókörök és címkék a hozzárendelés.
 -   **A tagok**: A listán szereplő csoportok minden felhasználó rendelkezik a hatókör (csoportok) szereplő felhasználók és eszközök kezelésére jogosult.
--   **Hatókör (csoportok)**: Összes felhasználók és eszközök a megadott csoportokban szereplő felhasználók tagok által kezelhetők.
--   **[Hatókör (címkék)](scope-tags.md)**: A tagok felhasználója láthatja az erőforrásokat, amelyek az ugyanazon hatókörcímkék.
+-   **Hatókör (csoportok)** : Összes felhasználók és eszközök a megadott csoportokban szereplő felhasználók tagok által kezelhetők.
+-   **[Hatókör (címkék)](scope-tags.md)** : A tagok felhasználója láthatja az erőforrásokat, amelyek az ugyanazon hatókörcímkék.
 
 ### <a name="multiple-role-assignments"></a>Több szerepkör-hozzárendelések
 Ha egy felhasználó több szerepkör-hozzárendeléseket, azokat a szerepkör-hozzárendeléseket az engedélyek kiterjesztése a különböző objektumokat a következő:
