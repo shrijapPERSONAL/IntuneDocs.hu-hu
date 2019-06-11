@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4d4efd34bbc83f29e8dc8ca03419b70bc7083cd
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 30fee770e4af561cac62241e65b673d2f608c918
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804646"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819714"
 ---
 # <a name="network-endpoints-for-microsoft-intune"></a>A Microsoft Intune hálózati végpont
 
@@ -32,8 +32,8 @@ Csak felhőalapú szolgáltatás az Intune a helyszíni infrastruktúrát, péld
 
 Tűzfalak és proxykiszolgálók mögött található eszközök felügyeletére, engedélyeznie kell a kommunikációt az Intune-hoz.
 
-- A proxykiszolgálónak támogatnia kell mind a **HTTP (80)** , mind a **HTTPS (443)** protokollt, mert az Intune-ügyfelek mindkét protokollt használják
-- Bizonyos tevékenységek (például a szoftverfrissítések letöltése), az Intune hitelesített proxykiszolgálói hozzáférést igényel a manage.microsoft.com
+- A proxykiszolgáló támogatnia kell mind **HTTP (80)** és **HTTPS (443)** , mert az Intune-ügyfelek mindkét protokollt használják. Windows Information Protection 444-es portot használja.
+- Bizonyos tevékenységek (például a szoftverfrissítések letöltése a klasszikus pc agenthez készült), az Intune hitelesített proxykiszolgálói hozzáférést igényel a manage.microsoft.com
 
 Proxykiszolgáló beállításai az egyes ügyfélszámítógépeken módosíthatja. A csoportházirend-beállítások segítségével módosíthatja az összes, egy adott proxykiszolgáló mögött található ügyfélszámítógépek beállításait.
 
@@ -108,6 +108,9 @@ Ha az Intune-ban való üzembe helyezése a Powershell-szkriptekkel vagy Win32-a
 | AMSUC0501 | prodmsuc05data | https://prodmsuc05data.azureedge.net |
 | AMSUA0701 | pemsua07rcdata | https://pemsua07data.azureedge.net |
 
+### <a name="windows-push-notification-services-wns"></a>Windows leküldéses értesítéseket kezelő szolgáltatásai (WNS)
+Mobileszköz-felügyeleti (MDM) segítségével felügyelt Windows Intune által felügyelt eszközöket, az eszköz más azonnali tevékenységek, a Windows leküldéses értesítési szolgáltatása (WNS) használatát igénylik. További információ: [vállalati tűzfalon keresztül lehetővé teszi a Windows értesítési forgalom](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config).    
+
 ### <a name="delivery-optimization-port-requirements"></a>Kézbesítési optimalizálás port követelményei
 
 #### <a name="port-requirements"></a>Port követelményei
@@ -130,10 +133,8 @@ Kézbesítésoptimalizálás metaadatok:
 
 |Használt|Hostname (IP address/subnet)|Protocol|Port|
 |-----|--------|------|-------|
-|Leküldéses értesítések fogadásának via Apple Push Notification Service (APNS) az Intune szolgáltatástól. Az Apple dokumentációjában talál [Itt](https://support.apple.com/en-us/HT203609)|                                    gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |
-|-N keresztül az Apple Push Notification Service (APNS) Intune-hoz küldhető visszajelzés|                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |
 |Beolvasása és a tartalom Apple kiszolgálókról történő megjelenítése|itunes.apple.com<br>\*. itunes.apple.com<br>\*.mzstatic.com<br>\*.phobos.apple.com<br> \*.phobos.itunes-apple.com.akadns.net |    HTTP    |      80      |
-|APNS-kiszolgálókkal való kommunikációhoz|#-courier.push.apple.com (17.0.0.0/8)<br>'#' egy véletlenszerű szám 0-50-re.|    TCP     |  5223 és 443  |
+|APNS-kiszolgálókkal való kommunikációhoz|#-courier.push.apple.com<br>'#' egy véletlenszerű szám 0-50-re.|    TCP     |  5223 és 443  |
 |Különféle funkciók biztosításához, beleértve a webes elérése, iTunes Store áruházból, macOS-alkalmazás-áruházban, icloud-alapú, üzenetkezelés, stb. |phobos.apple.com<br>ocsp.apple.com<br>AX.iTunes.apple.com<br>ax.itunes.apple.com.edgesuite.net| HTTP/HTTPS |  80 vagy 443   |
 
 További információkért tekintse meg az Apple [szoftvertermékek Apple által használt TCP és UDP-portok](https://support.apple.com/en-us/HT202944), [kiszolgálókapcsolatok gazdagép és az iTunes macOS, iOS és az iTunes kapcsolatos háttér-folyamatok](https://support.apple.com/en-us/HT201999), és [Ha a macOS- és iOS-ügyfelek nincsenek rájuk vonatkozó Apple leküldéses értesítéseket](https://support.apple.com/en-us/HT203609).

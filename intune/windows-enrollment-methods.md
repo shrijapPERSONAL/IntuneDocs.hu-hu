@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: c3f5f3b39efd33e8dbd3dd84f9a5f2abaf347216
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 55e758c8a7eddc1a5500464754448d26680ec772
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046707"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819575"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Az Intune Windows-eszközök regisztrálási módszerei
 
@@ -49,8 +49,8 @@ A rendszergazdák az alábbi módszerek a Regisztrálás, amelyek nem igényelne
 
 - [Hibrid Azure AD Join](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy) lehetővé teszi, hogy a rendszergazdák beállíthatják az Active Directory csoportházirend segítségével, amelyek hibrid Azure AD-hez csatlakoztatott eszközök automatikus regisztrálása. 
 - [Megosztott kezelés a Configuration Manager](https://docs.microsoft.com/sccm/comanage/overview) lehetővé teszi, hogy a rendszergazdák a meglévő Configuration Manager által felügyelt eszközök regisztrálása az Intune-nal az Intune-ban és a Configuration Manager kettős előnyeit. 
-- [Eszközregisztráció-kezelő](device-enrollment-manager-enroll.md) (DEM-) egy olyan speciális szolgáltatásfiók. DEM-fiókokat, amelyek lehetővé teszik több vállalati tulajdonú eszköz regisztrációjára és felügyeletére jogosult felhasználók engedélyekkel rendelkezik. Az ilyen típusú eszközök például POS- vagy segédprogram-alkalmazásokhoz megfelelőek, de nem alkalmasak olyan felhasználók számára, akik hozzá szeretnének férni a levelezésükhöz vagy a vállalati erőforrásokhoz. Ez a módszer is, például a feltételes hozzáférési funkciók használatának engedélyezése nem. 
-- [Csoportos regisztráció](windows-bulk-enroll.md) lehetővé teszi, hogy egy jogosult felhasználó nagyszámú új vállalati tulajdonú eszközök csatlakoztatása az Azure Active Directory és az Intune-ban. A kiépítési csomagot hoz létre a Windows Configuration Designer (WCD) alkalmazással. Ezután USB-vel adathordozók a kezdeti Windows Kezdőélmény alatt, vagy ha a meglévő Windows-számítógép esetén a kiépítési csomagot az eszközök automatikus regisztrálása az Intune-ba való telepítését. 
+- [Eszközregisztráció-kezelő](device-enrollment-manager-enroll.md) (DEM-) egy olyan speciális szolgáltatásfiók. DEM-fiókokat, amelyek lehetővé teszik több vállalati tulajdonú eszköz regisztrációjára és felügyeletére jogosult felhasználók engedélyekkel rendelkezik. Az ilyen típusú eszközök például POS- vagy segédprogram-alkalmazásokhoz megfelelőek, de nem alkalmasak olyan felhasználók számára, akik hozzá szeretnének férni a levelezésükhöz vagy a vállalati erőforrásokhoz. Ez a módszer nem a szolgáltatások, például a feltételes hozzáférés használatának engedélyezése. 
+- [Csoportos regisztráció](windows-bulk-enroll.md) lehetővé teszi, hogy egy jogosult felhasználó nagyszámú új vállalati tulajdonú eszközök csatlakoztatása az Azure Active Directory és az Intune-ban. A kiépítési csomagot hoz létre a Windows Configuration Designer (WCD) alkalmazással. Ezután USB-vel adathordozók a kezdeti Windows Kezdőélmény alatt, vagy ha a meglévő Windows-számítógép esetén a kiépítési csomagot az eszközök automatikus regisztrálása az Intune-ba való telepítését. Ez a módszer nem a feltételes hozzáférés használatának engedélyezése. 
 
 ## <a name="next-steps"></a>További lépések
 

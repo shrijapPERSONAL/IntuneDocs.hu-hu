@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 25f1bb6d2d78f5c4188d81bc8d9be2cc0c7de43e
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 19e1ec5cda5a69320820899b1cb1c5d665fd9f16
+ms.sourcegitcommit: 2f32f6d2129bc10cc4a02115732e995edceb37d6
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61495121"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66828949"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Alkalmazások telepítése és megosztása az eszközön
 Alkalmazások telepítése az eszközön Windows Céges portál alkalmazásból.
@@ -70,6 +70,10 @@ Megosztás után a címzett kapni fog egy hivatkozást és egy üzenetet, hogy t
 A szervezet választja ki a megfelelő és alkalmazások hasznos az Ön számára a munkahelyi vagy iskolai rendszerhez. Ezeket az alkalmazásokat csak azok a céges portálon megtalálhatja.  
 
 Alkalmazások is elérhető lesz az eszköz típusa alapján. Például ha használja a vállalati portál alkalmazást Windows, hozzáférhet a Windows-alkalmazás, de nem az iOS-alkalmazások.  
+
+## <a name="required-apps"></a>Required apps  
+
+A szervezet előfordulhat, hogy egyes alkalmazások közvetlenül az eszköz üzembe helyezése, és jelölje meg őket, mint **szükséges**. Ezek az alkalmazások automatikusan telepíti az Ön számára beavatkozás nélkül.
 
 ## <a name="request-an-app-for-work-or-school"></a>A kérelem egy alkalmazást a munkahelyi vagy iskolai fiók  
 Ha szükséges, de nem látható a vállalati portál alkalmazás, kérelem. Keresse meg a kapcsolattartási adatait a **segélyszolgálat** a céges portál alkalmazásban, a Súgó és támogatás az oldalon. Ugyanazokat az adatokat a látni fogja a [céges portál webhelyen](https://go.microsoft.com/fwlink/?linkid=2010980).    

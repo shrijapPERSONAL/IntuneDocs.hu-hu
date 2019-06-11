@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9edfa2ec7a408f512d4cb0b99a468db0b29f5868
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f1b1197671b54cb5374bd79b6acbeb8137c0135c
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044208"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819888"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices-preview"></a>Az Intune beállítása az Android Enterprise beléptetési teljes körűen felügyelt eszközök (előzetes verzió)
 
@@ -55,8 +55,11 @@ Eszköz gyártója/OEM korlátozva van, ha a fenti követelmények teljesülnek-
 
 ### <a name="enable-corporate-owned-user-devices"></a>Vállalati tulajdonban lévő felhasználói eszköz engedélyezése
 
-1. Nyissa meg a [Intune-portálon](https://portal.azure.com) válassza **eszközregisztráció** > **Android-eszközök regisztrálási** > **vállalat által birtokolt, teljes mértékben felügyelt felhasználói eszközök (előzetes verzió)**.
+1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) válassza **eszközregisztráció** > **Android-eszközök regisztrálási** > **vállalat által birtokolt, teljes körűen felügyelt a felhasználói eszközök (előzetes verzió)** .
 2. A **felhasználói a vállalat által birtokolt eszközök beléptetésének engedélyezése**, válassza a **Igen**.
+
+[!NOTE]
+Ha egy Azure AD feltételes hozzáférési szabályzatot, amely használja a *megfelelőként megjelölt eszköz megkövetelése* vezérlőelemet, és alkalmazza a **Felhőszolgáltatásokkal alkalmazások**, **Android** és **Böngészők** -ki kell zárnia a **a Microsoft Intune** felhőalkalmazás a szabályzat. Ennek az oka az Android-beállítás folyamatok egy Chrome-lap használatával hitelesítheti a felhasználókat a regisztrálási során. További információkért lásd: [Azure AD feltételes hozzáférés dokumentációjának](https://docs.microsoft.com/azure/active-directory/conditional-access/).
 
 Ha ez a beállítás értéke **Igen**, is tartalmaz az alkalmazásregisztrációs adatblokkot (egy véletlenszerű karakterlánc) és a egy QR-kódot az Intune-bérlőhöz. Ez egyetlen regisztrációs jogkivonat érvényes, a felhasználók számára, és nem jár le. Attól függően, az Android operációs rendszer és az eszköz verziója, használhatja a jogkivonattal vagy QR-kódot a teljes képernyős eszköz regisztrálását.
 

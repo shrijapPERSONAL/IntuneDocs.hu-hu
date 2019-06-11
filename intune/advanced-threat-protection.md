@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d13d4094239cd36f736bb5cb19af7a11d29e727
-ms.sourcegitcommit: 337b554f9becc40cdea2f5f47a4a129ac491f64c
+ms.openlocfilehash: 78c34345804f600aa62ff5e25ef27a23591e0f5c
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66719568"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819869"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>A feltételes hozzáférés az Intune-ban a Windows Defender ATP megfelelőségi kényszerítése
 
@@ -131,7 +131,7 @@ A feltételes hozzáférési szabályzat akkor tiltja az erőforrásokhoz való 
 > [!TIP]  
 > A feltételes hozzáférés az Azure Active Directory (Azure AD) technológiája. Az *Intune-ból* elérhető feltételes hozzáférési csomópont ugyanaz a csomópont, amelyet az *Azure AD-ből* is el lehet érni.  
 
-1. Az a [az Azure portal](https://portal.azure.com), nyissa meg **Intune** > **feltételes hozzáférési** > **új szabályzat**.
+1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) válassza **feltételes hozzáférési** > **új szabályzat**.
 2. Adjon meg **Nevet** a szabályzathoz és válassza a **Felhasználók és csoportok** lehetőséget. A befoglalási vagy kizárási lehetőségek használatával jelölje ki a szabályzathoz rendelendő csoportokat majd válassza a **Kész** lehetőséget.
 3. Válassza a **Felhőalkalmazások** lehetőséget, és válassza ki a védeni kívánt alkalmazásokat. Az **Alkalmazások kijelölése** alatt választhatja például az **Office 365 SharePoint Online** és az **Office 365 Exchange Online** elemeket.
 

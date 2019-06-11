@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 72a9156ce9b7b1b43acf9b39d9186a52dd6c3e8d
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: b799fd65a08646b46bf7fcce67bf4a09dc0413a6
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373708"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819907"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Automatizált e-mailek és műveletek nem megfelelő eszközök hozzáadása az Intune-ban
 
@@ -85,7 +85,7 @@ Eszközmegfelelőségi szabályzat létrehozásakor az Intune automatikusan lét
 
 További műveletet akkor vehet fel, ha megfelelőségi szabályzatot hoz létre, vagy frissít egy meglévő szabályzatot. 
 
-1. Az [Azure Portalon](https://portal.azure.com) nyissa meg a **Microsoft Intune** > **Eszközmegfelelőség** lapját.
+1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) válassza **eszközmegfelelőség**.
 2. Kattintson a **Szabályzatok** elemre, válassza ki az egyik szabályzatot, majd kattintson a **Tulajdonságok** elemre. 
 
     Még nincs szabályzata? Létrehozhat egy új szabályzatot [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md), vagy más platformokon.

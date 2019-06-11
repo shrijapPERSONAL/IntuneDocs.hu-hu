@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7998eb82b27a7e70d5a77374950e544fd603f6d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1929b811a5a5320bc0ceefcef4f05ed2443ac070
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046299"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819645"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>A Mobile Threat Defense-összekötő engedélyezése az Intune-ban
 
@@ -33,11 +33,7 @@ A Mobile Threat Defense (MTD) beállítása során konfigurált egy, az MTD-part
 
 ## <a name="to-enable-the-mtd-connector"></a>Az MTD-összekötő engedélyezése
 
-1. Az [Azure Portalon](https://portal.azure.com) jelentkezzen be az Intune-os hitelesítő adataival. Miután sikeresen bejelentkezett, megjelenik az **Azure irányítópultja**.
-
-2. Az **Azure-irányítópulton** válassza a bal oldali menü **Minden szolgáltatás** pontját, majd írja be a szűrő szövegmezőbe az **Intune** nevet.
-
-3. Ha az **Intune** elemre kattint, megnyílik az **Intune irányítópultja**.
+1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
 4. Az **Intune-irányítópulton** válassza az **Eszközmegfelelőség**, majd a **Beállítás** szakaszban a **Mobile Threat Defense** elemet.
 

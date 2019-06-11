@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc5ea7076e77e5071724168fab58fa78f59601c4
-ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
+ms.openlocfilehash: 4e9a640a343efd4ad786d7697439531de3cd4ed3
+ms.sourcegitcommit: 2f32f6d2129bc10cc4a02115732e995edceb37d6
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744301"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66828964"
 ---
 # <a name="in-development-for-microsoft-intune---june-2019"></a>A Microsoft Intune-hoz – június 2019 fejlesztés alatt
 
@@ -50,9 +50,6 @@ Segítség a készültségi és tervezési, ezen a lapon listák Intune felhaszn
 
 #### <a name="device-users-can-view-all-managed-apps-theyve-installed-or-tried-to-install----2352913---"></a>Eszköz felhasználók megtekinthetik a már telepített vagy telepíteni próbált minden felügyelt alkalmazás <!-- 2352913 -->
 A Windows céges portál felsorolja az összes felügyelt alkalmazások (kötelező és elérhető), amely a felhasználó eszközén telepítve vannak. Felhasználók tudják próbált nézet és a függőben lévő alkalmazások telepítésére, és azok aktuális állapotát. Ha a szervezet nem, hogy az alkalmazások, kötelező vagy elérhető legyen, a felhasználók látják egy üzenet tájékoztatja, hogy nem vállalati alkalmazások telepítve vannak-e. Felhasználók is elérhetik a rendezését vagy szűrését alkalmazások telepítési állapot szerint.
-
-#### <a name="available-google-play-app-reporting-for-android-work-profiles----3041956---"></a>Az Androidos munkahelyi profil reporting elérhető Google Play alkalmazás <!-- 3041956 -->
-Az Android munkahelyi profilos eszközök elérhető alkalmazástelepítések fogja megtekintheti az alkalmazás telepítési állapotát, valamint a felügyelt Google Play-alkalmazások telepített verzióját. További információkért lásd: [alkalmazásvédelmi szabályzatok figyelése](app-protection-policies-monitor.md), [kezelése Android munkahelyi profilos eszközök az Intune-nal](android-enterprise-overview.md) és [alkalmazástípus felügyelt Google Play](apps-add-android-for-work.md#managed-google-play-app-type).
 
 #### <a name="configure-which-browser-is-allowed-to-link-to-organization-data----3145939---"></a>Konfigurálhatja a böngésző összekapcsolása a szervezeti adatok használata engedélyezett. <!-- 3145939 -->
 Az Intune App Protection házirendek (alkalmazás) Android és IOS rendszerű eszközökön lehetővé teszi, hogy a szervezeti webhivatkozások átvitele adott túl az Intune Managed Browser vagy a Microsoft Edge böngésző.  Alkalmazással kapcsolatos további információkért lásd: [Mik azok az alkalmazásvédelmi szabályzatok?](app-protection-policy.md).
