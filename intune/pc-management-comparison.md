@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 47c5892541359263383621307d269936f01fa2c6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 8733de6f7a452f9d06667f948dd047822dc16835
+ms.sourcegitcommit: 1ba785f6e51517b63588a292ab5c45b9d9144b72
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041535"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66840979"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Windows-számítógépek számítógépként és mobileszközként való felügyeletének összehasonlítása
 
@@ -43,7 +43,7 @@ A vállalatok a Microsoft Intune-ban kezelhetik a Windows-számítógépeket mob
 |**Leltár**|Elérhető <br>[Hardver- és szoftverleltár megtekintése Windows rendszerű számítógépeken](view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md)|Elérhető <br>[Alkalmazás-hozzárendelések figyelése](apps-monitor.md)<br>[Mi az eszközkezelés?](device-management.md)|
 |**Windows tűzfalszabályzat**|Elérhető <br>[A Windows rendszerű számítógépek védelme Windows tűzfalházirendek használatával](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) |Elérhető <br>[Windows Defender-tűzfal](endpoint-protection-windows-10.md#windows-defender-firewall)|
 |**Kártevők elleni védelem**|Endpoint Protection<br>[Windows rendszerű számítógépek biztonságossá tétele az Endpoint Protection szolgáltatással](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)|Windows Defender<br>[A Windows Defender engedélyezése](advanced-threat-protection.md)|
-|**Távsegítség** |TeamViewer<br>[Távsegítség kérése és nyújtása Windows rendszerű számítógépekhez](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md)|TeamViewer<br> [A TeamViewer használata Intune-eszközök távoli felügyeletéhez](device-profile-android-teamviewer.md) |
+|**Távsegítség** |TeamViewer<br>[Távsegítség kérése és nyújtása Windows rendszerű számítógépekhez](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md)|TeamViewer<br> [A TeamViewer használata Intune-eszközök távoli felügyeletéhez](teamviewer-support.md) |
 |**Alkalmazástelepítés** | Nem érhető el a Vállalati Microsoft Áruházhoz,<br>.exe, .appx, és csak a több fájlból álló .msi<br>[Az Intune szoftverügyfelet futtató Windows rendszerű számítógépes alkalmazások hozzáadása](add-apps-for-windows-pcs-in-microsoft-intune.md)|Elérhető a Microsoft Áruház alkalmazásaihoz és az üzletági alkalmazásokhoz<br>[Windows áruházbeli alkalmazások hozzáadása](store-apps-windows.md)<br>[Windowsos üzletági (LOB) alkalmazások hozzáadása](lob-apps-windows.md)|
 |**Alkalmazásvédelem**|Nem érhető el|Elérhető <br>[Mik azok az alkalmazásvédelmi szabályzatok?](app-protection-policy.md)|
 |**Az Eszközállapot-igazolás**|Nem érhető el|Elérhető|
