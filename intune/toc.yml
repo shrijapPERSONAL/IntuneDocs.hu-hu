@@ -270,7 +270,7 @@
         - name: macOS-eszköz adatainak törlése
           href: device-erase.md
         - name: Távolról vezérelt mobileszközök
-          href: device-profile-android-teamviewer.md
+          href: teamviewer-support.md
         - name: Windows 10-es PIN-kód alaphelyzetbe állítása
           href: device-windows-pin-reset.md
         - name: Eszköz szinkronizálása
