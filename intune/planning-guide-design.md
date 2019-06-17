@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 812a2e91b28908dcd3893ec77e9923362c8a9173
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c279e21abf47d6ec067f3c75b36ecc7b58681e7e
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046143"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044397"
 ---
 # <a name="create-a-design"></a>Terv létrehozása
 
@@ -389,7 +389,7 @@ Az alkalmazásvédelmi szabályzatok azt definiálják, hogyan kezelheti egy alk
 A saját alkalmazásvédelmi szabályzatainak meghatározásához [letöltheti a fenti táblázat sablonját](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 #### <a name="compliance-policies"></a>Megfelelőségi szabályzatok
 
-A megfelelőségi szabályzatok határozzák meg, hogy egy adott eszköz megfelel-e bizonyos követelményeknek. Az Intune megfelelőségi szabályzatokkal határozza meg, hogy az eszközök megfelelőnek minősülnek-e, vagy sem. Ezt követően a megfelelőségi állapot alapján lehet korlátozni vagy engedélyezni a vállalati erőforrások elérését. Ha feltételes hozzáférés szükséges, érdemes [eszközmegfelelőségi szabályzatot](device-compliance.md) terveznie.
+A megfelelőségi szabályzatok határozzák meg, hogy egy adott eszköz megfelel-e bizonyos követelményeknek. Az Intune megfelelőségi szabályzatokkal határozza meg, hogy az eszközök megfelelőnek minősülnek-e, vagy sem. Ezt követően a megfelelőségi állapot alapján lehet korlátozni vagy engedélyezni a vállalati erőforrások elérését. Ha a feltételes hozzáférés szükség, azt javasoljuk, hogy tervezzen egy [eszközmegfelelőségi szabályzat](device-compliance.md).
 
 A követelmények és a használati esetek alapján döntse el, hogy hány eszközmegfelelőségi szabályzatra van szüksége, és hogy ezek mely felhasználói csoportokra fognak vonatkozni. Ezenkívül azt is el kell döntenie, hogy mennyi ideig lehet egy eszköz offline állapotban, mielőtt nem megfelelőnek minősülne.
 
@@ -403,20 +403,20 @@ Az alábbi példa egy megfelelőségi szabályzat tervezését szemlélteti:
 A saját megfelelőségi szabályzatainak meghatározásához [letöltheti a fenti táblázat sablonját](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 #### <a name="conditional-access-policies"></a>Feltételes hozzáférési szabályzatok
 
-A feltételes hozzáférés csak a megfelelő eszközök számára engedélyezi az e-mailek vagy más vállalati erőforrások elérését. Az Intune a Enterprise Mobility + Security (EMS) csomaggal együttműködve szabályozza a vállalati erőforrások elérését. Döntse el, ha szüksége van-e a feltételes hozzáférést, és mit fog védeni. További információk a [feltételes hozzáférésről](conditional-access.md).
+Feltételes hozzáférés segítségével csak megfelelő eszközök férhessenek hozzá és az egyéb munkahelyi erőforrásokhoz. Az Intune a Enterprise Mobility + Security (EMS) csomaggal együttműködve szabályozza a vállalati erőforrások elérését. Döntse el, ha szüksége van-e a feltételes hozzáférést, és mit fog védeni. További tudnivalók [a feltételes hozzáférésről](conditional-access.md)
 
 Online elérés döntse el, mely platformok és felhasználói csoportokra fog céljaként feltételes hozzáférési szabályzatok. Emellett határozza meg, hogy kell telepíteni vagy konfigurálni az Intune-összekötő a helyszíni Exchange: 
 
 -   [Helyszíni Exchange](exchange-connector-install.md)
 
-Az alábbi példa a feltételes hozzáférési szabályzatok dokumentálását szemlélteti:
+A következő példa bemutatja, hogyan dokumentum feltételes hozzáférési szabályzatok:
 
 | **Szolgáltatás** | **Modern hitelesítési platformok** | **Egyszerű hitelesítés** | **Használati esetek** |   
 |:---:|:---:|:---:|:---:|
 | Exchange Online | iOS, Android | A nem megfelelő eszközök letiltása az Intune által támogatott platformokon | Vállalati, BYOD |
 | SharePoint Online | iOS, Android |  | Vállalati, BYOD |
 
-A saját feltételes hozzáférési szabályzatainak meghatározásához [letöltheti a fenti táblázat sablonját](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
+Is [letöltheti a fenti táblázat sablonját](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) a feltételes hozzáférési szabályzatainak meghatározásához.
 
 ## <a name="next-steps"></a>További lépések
 

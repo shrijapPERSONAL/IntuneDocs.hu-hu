@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 9a18bceb6b42f06464baf31a4cdd4dea21d19675
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 984b78b271d130618ec0994f76e966f1dc338706
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61500287"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044716"
 ---
 ## <a name="april-2017"></a>2017. április
 
@@ -26,7 +26,7 @@ Az androidos Céges portál alkalmazás frissítésének köszönhetően bejelen
 
 #### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>Letiltja az alkalmazások hozzáférését a SharePoint online-hoz <!-- 679339 -->
 
-Most már lehetséges a [SharePoint Online-on](/intune-classic/deploy-use/mam-ca-for-sharepoint-online) keresztül létrehozni olyan alkalmazásalapú feltételes hozzáférési szabályzatokat olyan alkalmazások letiltásához, amelyekre nem vonatkozik alkalmazásvédelmi szabályzat. Az alkalmazásalapú feltételes hozzáférési forgatókönyv esetében az Azure Portal használatával meghatározhatja, hogy mely alkalmazásoknak legyen hozzáférése a SharePoint Online-hoz.
+Most már létrehozhat egy alkalmazásalapú feltételes hozzáférési szabályzat blokkolja az alkalmazások, amelyekre vonatkozóan nincs engedélyezve az alkalmazásvédelmi szabályzatok érvényesek rájuk, nem férhet hozzá a [SharePoint online-hoz](/intune-classic/deploy-use/mam-ca-for-sharepoint-online). Az alkalmazásalapú feltételes hozzáférési forgatókönyv esetében megadhatja a SharePoint online-hoz az Azure portal használatával férnek hozzá a kívánt alkalmazásokat.
 
 #### <a name="single-sign-in-support-from-the-company-portal-for-ios-to-outlook-for-ios---834012--"></a>Egyetlen bejelentkezési támogatása az iOS-es céges portálon az iOS Outlook <!--834012-->
 Az iOS-es Céges portál alkalmazásba bejelentkezett felhasználóknak már nem kell ugyanazon az eszközön, ugyanazzal a fiókkal bejelentkezniük az Outlook alkalmazásba is. Az Outlook indításakor kiválaszthatják a fiókjukat, és automatikusan bejelentkezhetnek. Ezt a funkciót igyekszünk további Microsoft-alkalmazásokba is beépíteni.
@@ -112,14 +112,14 @@ Az új ATS-követelményeket érvényesítő Apple TestFlight alkalmazásban el�
 
 #### <a name="support-for-skycure"></a>A Skycure támogatása
 
-A Microsoft Intune-nal mostantól már integrálható, Skycure nevű, veszélyforrások elleni mobileszköz-védelmi megoldás kockázatfelmérése alapján feltételes hozzáféréssel korlátozható a vállalati erőforrások mobil elérése. A kockázatfelmérés a Skycure által az eszközökről gyűjtött telemetriai adatokon alapul, például:
+Most már mobileszköz az adathozzáférés szabályozása, Skycure nevű, a Microsoft Intune-nal integrálható mobil veszélyforrások elleni védelmi megoldás kockázatfelmérése alapján feltételes hozzáféréssel a vállalati erőforrások is. A kockázatfelmérés a Skycure által az eszközökről gyűjtött telemetriai adatokon alapul, például:
 
 - Fizikai védelem
 - Hálózatvédelem
 - Alkalmazásvédelem
 - Biztonsági rések elleni védelem
 
-Az Intune eszközmegfelelőségi szabályzatai által engedélyezett, a Skycure által jelentett kockázatértékelés alapján EMS feltételes hozzáférési szabályzatok konfigurálhatók az Intune-ban. Ezen szabályzatok használatával engedélyezheti vagy letilthatja a nem megfelelő eszközök hozzáférését a vállalati erőforrásokhoz az észlelt fenyegetések alapján. További információ: [Skycure Mobile Threat Defense-összekötő](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector).
+Konfigurálhatja az Intune eszközmegfelelőségi szabályzatai által engedélyezett a Skycure-kockázatfelmérés alapján EMS feltételes hozzáférési szabályzatokat. Ezen szabályzatok használatával engedélyezheti vagy letilthatja a nem megfelelő eszközök hozzáférését a vállalati erőforrásokhoz az észlelt fenyegetések alapján. További információ: [Skycure Mobile Threat Defense-összekötő](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector).
 
 #### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Új felhasználói élmény a vállalati portál alkalmazást androidhoz <!--621622-->
 

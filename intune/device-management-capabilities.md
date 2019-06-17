@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 415005ee58367a189986e9d7bd0ef693f14bc5c9
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2c2c50909b701ee5418ea69d73e67518de1c5bce
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048373"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045736"
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>A Microsoft Intune regisztrált eszközök kezelésével kapcsolatos képességei
 
@@ -65,7 +65,7 @@ A felhasználók hozzáférést kapnak a vállalati portálhoz, és ennek segít
 |Wi-Fi profilok|Vezeték nélküli hálózati beállításokat léptethet érvénybe a felhasználók számára. E beállítások érvénybe léptetésével csökkentheti a vállalati hálózat eléréséhez szükséges felhasználói beavatkozást.|[Wi-Fi-kapcsolatok a Microsoft Intune-ban](wi-fi-settings-configure.md)|
 |E-mail profilok|Hoz létre, és e-mail-beállításokat telepít eszközöket úgy, hogy a felhasználók férhetnek hozzá vállalati levelezésükhöz saját eszközeik semmit sem kell beállítaniuk eszközeiken.|[Vállalati levelezéshez való hozzáférés konfigurálása e-mail profilokkal a Microsoft Intune-ban](email-settings-configure.md)|
 |VPN-profilok|VPN-beállításokat léptethet érvénybe a szervezethez tartozó felhasználók és eszközök számára. A beállítások központi telepítésével csökkentheti a vállalati hálózatban lévő erőforrások eléréséhez szükséges felhasználói beavatkozást.|[VPN-kapcsolatok a Microsoft Intune-ban](device-profiles.md#vpn)|
-|Feltételes hozzáférési házirendek|A Microsoft Exchange-levelezéshez és a SharePoint Online-hoz való hozzáférés felügyelete a nem az Intune által felügyelt eszközökön.|[Az e-mailek és a SharePoint elérésének korlátozása a Microsoft Intune használatával](app-based-conditional-access-intune.md)|
+|Feltételes hozzáférési szabályzatok|A Microsoft Exchange-levelezéshez és a SharePoint Online-hoz való hozzáférés felügyelete a nem az Intune által felügyelt eszközökön.|[Az e-mailek és a SharePoint elérésének korlátozása a Microsoft Intune használatával](app-based-conditional-access-intune.md)|
 
 ## <a name="next-steps"></a>További lépések
 

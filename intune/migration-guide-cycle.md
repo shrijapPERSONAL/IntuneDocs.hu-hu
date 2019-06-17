@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b6a38544016172da0267eb0a47948029786b786
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 87e5ac06e93027b577d42b27e7d15b9b18e11020
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046398"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046364"
 ---
 # <a name="typical-migration-cycle"></a>A szokásos migrációs ciklus
 
@@ -31,8 +31,8 @@ Az itt található példa a célcsoportok ütemezésének módját szemlélteti:
 
   | **A migrálás megcélzott csoportjai** | **1. időszak** | **2. időszak** | **3. időszak** | **4. időszak** | **...**
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| Korlátozott próbaüzemi IT-részleg (50 felhasználó) | Terv bejelentése | Utasítás a regisztrálásra | Határidő megadása | Feltételes hozzáférés kényszerítése |  |                                                        
-| Bővített próbaüzemi IT-részleg (200 felhasználó) |  | Terv bejelentése | Utasítás a regisztrálásra | Határidő megadása | Feltételes hozzáférés kényszerítése |
+| Korlátozott próbaüzemi IT-részleg (50 felhasználó) | Terv bejelentése | Utasítás a regisztrálásra | Határidő megadása | Feltételes hozzáférés kényszerítésére |  |                                                        
+| Bővített próbaüzemi IT-részleg (200 felhasználó) |  | Terv bejelentése | Utasítás a regisztrálásra | Határidő megadása | Feltételes hozzáférés kényszerítésére |
 | 1. migrációs fázis – hozzáértő felhasználókkal (2000) |  |  | Terv bejelentése | Utasítás a regisztrálásra | Határidő megadása |
 | 2. migrációs fázis – kelet-USA |  |  |  | Terv bejelentése | Utasítás a regisztrálásra |
 | Összes régió |  |  |  |  | Terv bejelentése |
@@ -57,7 +57,7 @@ Kövesse nyomon, hogy hány felhasználó regisztrálta eszközeit az egyes fáz
 
 -   Értékelje a kommunikációs terv hatékonyságát.
 
--   Becsülje fel a feltételes hozzáférés kényszerítésének hatását.
+-   Becsülje meg a feltételes hozzáférés kényszerítésének hatását.
 
 
 ## <a name="post-migration"></a>Áttelepítés után

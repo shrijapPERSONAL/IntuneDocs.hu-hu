@@ -1,7 +1,7 @@
 ---
 title: Eszközmegfelelési szabályzat Jamf-eszközökhöz
 titleSuffix: Microsoft Intune
-description: A Microsoft Intune megfelelőségi szabályzatait az Azure Active Directory feltételes hozzáférésével használva biztonságossá teheti a Jamf által kezelt eszközöket.
+description: Az Azure Active Directory feltételes hozzáférés a Microsoft Intune megfelelőségi szabályzatok használatával segítheti a biztonságos Jamf által felügyelt eszközökön.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 55ea6a1126ca3516854c002c5643ba667b8f306e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: bc4fdaea99a0e8fb247ac6a70b853497927cdc04
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048804"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045213"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Jamf Pro által felügyelt Mac számítógépek megfelelőségének kikényszerítése
 
 Érintett kiadások: Intune az Azure Portalon
 
-Az Azure Active Directory és a Microsoft Intune feltételes hozzáférési szabályzatai biztosítják, hogy a végfelhasználók megfeleljenek a szervezeti követelményeknek. Ezeket a szabályzatokat a [Jamf Pro által felügyelt](conditional-access-integrate-jamf.md) Mac számítógépekre is alkalmazhatja. Ennek megvalósításához az Intune és a Jamf Pro konzolhoz egyaránt hozzáférésre van szüksége.
+Használhatja az Azure Active Directory és a Microsoft Intune feltételes hozzáférési szabályzatai biztosítják, hogy a végfelhasználók megfeleljenek a szervezeti követelményeknek. Ezeket a szabályzatokat a [Jamf Pro által felügyelt](conditional-access-integrate-jamf.md) Mac számítógépekre is alkalmazhatja. Ennek megvalósításához az Intune és a Jamf Pro konzolhoz egyaránt hozzáférésre van szüksége.
 
 ## <a name="set-up-device-compliance-policies-in-intune"></a>Eszközmegfelelőségi szabályzatok beállítása az Intune-ban
 
@@ -79,4 +79,4 @@ A Jamf által felügyelt eszközöknek az Intune-konzolról történő eltávol�
 ## <a name="next-steps"></a>További lépések
 
 - [Feltételes hozzáférés az Azure Active Directoryban](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
-- [Ismerkedés a feltételes hozzáféréssel Azure Active Directoryban](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal-get-started)
+- [Az Azure Active Directory feltételes hozzáférés használatának első lépései](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal-get-started)

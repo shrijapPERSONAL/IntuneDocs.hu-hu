@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e347d72a8eec93f9936f3c488cada5667ecf51f8
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 6bf1aa096d5ebd89130eb5fabe936a02183599c5
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050569"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044636"
 ---
 # <a name="configure-app-protection-policies-optional"></a>Alkalmazásvédelmi szabályzatok konfigurálása (nem kötelező)
 
@@ -47,7 +47,7 @@ Ebben az időszakban a szervezet jobban ki van téve az eszközlopás és a vál
 
 Az Intune a migráció során is képes vállalati adatvédelmi intézkedésekre, így a céges adatok az eszközszintű felügyelet hiányában sem maradnak teljesen védtelenek.
 
-Amikor pedig a régebbi MDM-szolgáltatóban letiltja a feltételes hozzáférést, a felhasználók az Intune-ba való belépésig is tudnak dolgozni.
+Ahogy a régi MDM-szolgáltatóban letiltja a feltételes hozzáférést, felhasználók továbbra is lehetnek belépésig Intune-ba való.
 
 ## <a name="task-list-for-app-protection-policies"></a>Feladatlista az alkalmazásvédelmi szabályzatokhoz
 

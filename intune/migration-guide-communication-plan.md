@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 06/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 864e43bf644bf4e4f959c6ad826d9d5bade617a5
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 73cdd0f802ce3b52a566bbdddd7cf5cca2e2bef2
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804669"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044601"
 ---
 # <a name="plan-communications"></a>A kommunikáció tervezése 
 A kommunikációs terv kulcseleme az Intune-migráció. A következő eszközök és sablonok segítséget nyújt a felhasználók képzése biztosítják. Az Intune bevezetési Kit e-mail-sablonok, egy Intune-regisztrációs útmutató és a végfelhasználói beléptetési Oktatóvideók mutató hivatkozásokat tartalmaz.  
@@ -33,7 +33,7 @@ A következő e-mail-kommunikációs terv követését javasoljuk. A mellékelt 
 - **E-mail-#1**: Az előnyök, az elvárások és az ütemezés ismertetik. Használja ki a lehetőséget az Intune által felügyelt eszközökön elérhető új szolgáltatások bemutatására. 
 
 - **E-mail-#2**: Jelentjük be, hogy szolgáltatások az Intune-on keresztül hozzáférhető készen állnak. Szólítsa fel a felhasználókat, hogy most regisztráljanak.  Engedélyezheti a felhasználók egy idővonalon a hozzáférése az érintett előtt. Emlékeztesse a felhasználókat a migrálás előnyeire és stratégiai okaira.
-Adott időszak elteltével megkezdheti a megfelelőség kényszerítését a feltételes hozzáférési házirendek betartatásával, és feltételként használhatja azokat a vállalati adatok eléréséhez [A végfelhasználói bevezetés ösztönzése feltételes hozzáféréssel](migration-guide-drive-adoption.md) részben leírtak szerint.
+Adott időszak elteltével megkezdheti a megfelelőség kényszerítését a feltételes hozzáférési házirendek betartatásával és feltételként használhatja azokat a vállalati adatok eléréséhez a [Drive end-user adoption a feltételes hozzáférés](migration-guide-drive-adoption.md).
 
 ## <a name="intune-enrollment-guide"></a>Útmutató az Intune-regisztráció 
 A PDF-mellékletet biztosítható, hogy a felhasználók számára, mint-van, vagy testreszabhatja a Word verzióját, például a belső erőforrásokhoz, és a kapcsolattartási adatokat.

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 06/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2950ddf4b130222e23fd9ea23f7c9e5793f8638a
-ms.sourcegitcommit: 229816afef86a9767eaca816d644c77ec4babed5
+ms.openlocfilehash: 357d1619fdf051d07ea47c84a79b2aebd1523460
+ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66354225"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67041123"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>A Windows 10 (és újabb) eszközbeállítások engedélyezett vagy korlátozott funkciók az Intune-nal
 
@@ -430,9 +430,9 @@ Ezeket a beállításokat használja a [DeviceLock házirend CSP](https://docs.m
     > [!IMPORTANT]
     > A Windows asztalon megváltozik a jelszóra vonatkozó követelmény, amikor a felhasználó érintett a amikor legközelebb bejelentkeznek a módon, amely rendelkezik az eszköz visszatér az üresjárat aktív. Olyan jelszavakkal, amelyek megfelelnek a követelmény továbbra is kéri módosítsák jelszavukat.
     
-  - **Bejelentkezési hibák eszköz törlése előtt**: Adja meg a megengedett, mielőtt a rendszer törölné az eszközt, 1 – 11-től hitelesítési hibák számát. `0` eszköz törlési funkcióit (nulla) letiltható.
+  - **Bejelentkezési hibák eszköz törlése előtt**: Adja meg a megengedett, mielőtt törölné az eszközt is lehet, legfeljebb 11 hitelesítési hibák számát. A megadott érvényes számot kiadásától függ. [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) támogatott értékeit sorolja fel. `0` eszköz törlési funkcióit (nulla) letiltható.
 
-    Ez a beállítás a kiadástól függően különböző hatással van. Konkrét részletekért lásd: a [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts).
+    Ez a beállítás is az operációs rendszer kiadásától függően különböző hatással van. Ez a beállítás a konkrét részletekért lásd: a [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts).
 
   - **Ennyi perc inaktivitás képernyőzárolás**: Adja meg, mennyi ideig eszközt kell inaktívnak lennie a képernyő zárolása előtt.
   - **Jelszó érvényessége (napokban)** : Ha a kell módosítani a jelszót, 1 – 365 nap mennyi ideig adja meg. Adja meg például `90` a 90 nap után lejár. ezt a jelszót.

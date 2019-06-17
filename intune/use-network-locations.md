@@ -16,18 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ddc58aed6e7a1efaecd8b7e7cf51a39e43d14e58
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5491e0d2dfb1aa1989fc202203d9a895823b0b73
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044329"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043898"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Helyek (hálózati kerítés) használata az Intune-ban
 
 Letilthatja a vállalati hálózathoz való hozzáférést, ha az eszköz elhagy egy bizonyos helyet. Az Intune-ban a **Helyek** funkció biztosítja ezt a szolgáltatást. 
 
-Létrehozhat egy hálózati helyen alapuló megfelelőségi szabályzatot, amelyet másként hálózati kerítésnek is hívnak. A szabályzat biztosítja, hogy az eszköznek munkahelyi hálózathoz kelljen csatlakoznia a megfelelőséghez. Ez a szabályzat használható feltételes hozzáférési szabályzatokkal, hogy az eszközök *csak* munkahelyi erőforrásokat érjenek el, amikor az eszköz a munkahelyi hálózathoz csatlakozik. Ha az eszköz nem csatlakozik a munkahelyi hálózathoz, akkor nem megfelelő lesz, és nem fog tudni hozzáférni a munkahelyi erőforrásokhoz.
+Létrehozhat egy hálózati helyen alapuló megfelelőségi szabályzatot, amelyet másként hálózati kerítésnek is hívnak. A szabályzat biztosítja, hogy az eszköznek munkahelyi hálózathoz kelljen csatlakoznia a megfelelőséghez. Ez a szabályzat a feltételes hozzáférési szabályzatokkal használható, így az eszközök munkahelyi erőforrásokhoz való hozzáférés *csak* amikor az eszköz a munkahelyi hálózathoz csatlakozik. Ha az eszköz nem csatlakozik a munkahelyi hálózathoz, akkor nem megfelelő lesz, és nem fog tudni hozzáférni a munkahelyi erőforrásokhoz.
 
 Gondolkodjon el az alábbi megoldáson:
 

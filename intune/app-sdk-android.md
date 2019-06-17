@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5808a4b81fcc66d37e78c50cb5bcd2ae7bbe44e2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c929965b79d9ee35fcc1094b4ad18cff6d73d80d
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049605"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045528"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>A Microsoft Intune App SDK Androidon – útmutató fejlesztőknek
 
@@ -67,7 +67,7 @@ Példa bemutatja, hogyan integrálható az Intune App SDK-val megfelelően érhe
 
 Az Intune App SDK for Android egy szabványos, külső függőségek nélküli androidos függvénytár. A **Microsoft.Intune.MAM.SDK.aar**-ban megvannak mind az alkalmazásvédelmi szabályzatok használatát lehetővé tevő interfészek, mind pedig a Microsoft Intune Céges portál alkalmazással való együttműködéshez szükséges kód.
 
-A **Microsoft.Intune.MAM.SDK.aar**-t androidos függvénytár-hivatkozásként kell megadni. Ehhez nyissa meg az alkalmazásprojektet az Android Studióban, válassza a **File > New > New module** (Fájl > Új > Új modul), majd az **Import .JAR/.AAR Package** (.JAR-/.AAR-csomag importálása) elemet. Ezután jelölje ki a Microsoft.Intune.MAM.SDK.aar nevű androidos archívumcsomagot az .AAR-modul létrehozásához. Kattintson a jobb gombbal az alkalmazáskódot tartalmazó modulra vagy modulokra, válassza a **Module Settings (Modul beállításai)** > **Dependencies (Függőségek)** > **+ ikon** > **Module dependency (Modulfüggőség)** lehetőséget, adja meg a most létrehozott MAM SDK AAR-modult, és végül kattintson az **OK** gombra. Ezzel biztosíthatja, hogy a modul a MAM SDK-val forduljon le a projekt buildelésekor.
+A **Microsoft.Intune.MAM.SDK.aar**-t androidos függvénytár-hivatkozásként kell megadni. Ehhez nyissa meg az alkalmazásprojektet az Android Studióban, válassza a **File > New > New module** (Fájl > Új > Új modul), majd az **Import .JAR/.AAR Package** (.JAR-/.AAR-csomag importálása) elemet. Ezután jelölje ki a Microsoft.Intune.MAM.SDK.aar nevű androidos archívumcsomagot az .AAR-modul létrehozásához. Kattintson a jobb gombbal az alkalmazáskódot tartalmazó modulra vagy modulokra, válassza a **Module Settings (Modul beállításai)**  > **Dependencies (Függőségek)**  >  **+ ikon** > **Module dependency (Modulfüggőség)** lehetőséget, adja meg a most létrehozott MAM SDK AAR-modult, és végül kattintson az **OK** gombra. Ezzel biztosíthatja, hogy a modul a MAM SDK-val forduljon le a projekt buildelésekor.
 
 Ezenkívül a **Microsoft.Intune.MAM.SDK.Support.XXX.jar** kódtárak tartalmazzák a megfelelő `android.support.XXX` kódtárak Intune-változatait. Ezek nem kerültek bele a Microsoft.Intune.MAM.SDK.aar-ba, arra az esetre, ha egy alkalmazásnak nem kell függenie a támogatási kódtáraktól.
 
@@ -713,7 +713,7 @@ Lásd emellett alább a [Feltételes hozzáférés](#conditional-access) követe
 
 #### <a name="3-app-integrates-adal-but-does-not-support-brokered-authenticationdevice-wide-sso"></a>3. Az alkalmazás integrálja az adal-t, de nem támogatja a közvetített hitelesítést/eszközszintű SSO
 
-|Szükséges ADAL-paraméter| Value |
+|Szükséges ADAL-paraméter| Érték |
 |--|--|
 | ClientID | Az alkalmazás ClientID azonosítója (az Azure AD állítja elő az alkalmazás regisztrálásakor) |
 | SkipBroker | **True** |
@@ -732,7 +732,7 @@ A feltételes hozzáférés egy Azure Active Directorybeli [szolgáltatás](http
 4. Tesztelje a konfiguráció helyességét. Ehhez engedélyezze az [eszközalapú feltételes hozzáférést](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use) az [Azure Portalon](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2), és bizonyosodjon meg a következőkről:
     - Hogy az alkalmazásába való bejelentkezéskor a rendszer kéri a Céges portál telepítését és regisztrálását.
     - Hogy a regisztrálás után sikeresen befejeződik az alkalmazásába való bejelentkezés.
-5. Miután integrálta az alkalmazásába az Intune APP SDK-t, lépjen kapcsolatba velünk a msintuneappsdk@microsoft.com címen, hogy hozzáadjuk az alkalmazását az [alkalmazásalapú feltételes hozzáféréshez](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access) jóváhagyott alkalmazások listájához.
+5. Forduljon az alkalmazás az Intune APP SDK-integráció leszállítását követően msintuneappsdk@microsoft.com jóváhagyott alkalmazások listájára hozzáadandó [alkalmazásalapú feltételes hozzáférés](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access)
 6. Miután az alkalmazását hozzáadtuk a jóváhagyott alkalmazások listájához, ellenőrizze a rendszer működését. Ehhez [konfigurálja az alkalmazásalapú feltételes hozzáférést](https://docs.microsoft.com/intune/app-based-conditional-access-intune-create), és győződjön meg róla, hogy az alkalmazásába való bejelentkezés sikeresen befejeződik.
 
 ## <a name="app-protection-policy-without-device-enrollment"></a>Eszközregisztráció nélküli alkalmazásvédelmi szabályzat
@@ -1372,7 +1372,7 @@ Az `onMAMIdentitySwitchRequired` metódus hívandó az összes implicit identit�
 
   * A **`Activity`** létrehozását, `onMAMIdentitySwitchRequired` hívása előtt `onMAMCreate`. Ha az alkalmazásnak felhasználói felületet kell megjelenítenie annak megállapításához, hogy engedélyezhető-e az identitásváltás, akkor az adott felhasználói felületet *egy másik* tevékenységgel kell megjeleníteni.
 
-  * Az egy **`Activity`**, ha az üres identitásra való váltás kérése történik a, `RESUME_CANCELLED`, az alkalmazásnak módosítania kell a folytatott tevékenységet, hogy az adatmegjelenítés az adott identitásváltásnak.  Ha ez nem lehetséges, az alkalmazásnak el kell utasítania a váltást, és újból kérnie kell a felhasználót a folytatáshoz használt identitás szabályzatának teljesítésére (például a PIN-kód megadását kérő képernyőt megjelenítve).
+  * Az egy **`Activity`** , ha az üres identitásra való váltás kérése történik a, `RESUME_CANCELLED`, az alkalmazásnak módosítania kell a folytatott tevékenységet, hogy az adatmegjelenítés az adott identitásváltásnak.  Ha ez nem lehetséges, az alkalmazásnak el kell utasítania a váltást, és újból kérnie kell a felhasználót a folytatáshoz használt identitás szabályzatának teljesítésére (például a PIN-kód megadását kérő képernyőt megjelenítve).
 
     > [!NOTE]
     > A többszörös identitást támogató alkalmazások mindig fogadják a felügyelt és a nem felügyelt alkalmazásoktól érkező adatokat. Az alkalmazás feladata, hogy felügyelt módon kezelje a felügyelt identitásokból érkező adatokat.

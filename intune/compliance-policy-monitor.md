@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fc97e9884fbcd23c599c917c181e29cdbc3708ee
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 7ce117f21c1ad78c2c977466398ce6d30989cc6a
+ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66374024"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67041296"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune-eszközmegfelelőségi szabályzatok figyelése
 
@@ -60,7 +60,7 @@ A jelentések részletes vizsgálata során láthatja az adott eszközre vonatko
 A diagram megmutatja az összes Intune-ban regisztrált eszköz megfelelőségi állapotát. Az eszköz megfelelőségi állapotai két külön adatbázis tartják: Az Intune és az Azure Active Directoryban. 
 
 > [!IMPORTANT]
-> Intune az eszköz bejelentkezési ütemezés az összes megfelelőségi értékelést követi az eszközön. [További információ az eszköz bejelentkezési ütemezés](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
+> Intune az eszköz bejelentkezési ütemezés az összes megfelelőségi értékelést követi az eszközön. [További információ az eszköz bejelentkezési ütemezés](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).
 
 A különböző eszközmegfelelőségi szabályzatállapotok leírása:
 

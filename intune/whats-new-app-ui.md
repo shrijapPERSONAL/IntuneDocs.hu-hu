@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9955330d9f20c13b9239f900b77828d582d12bff
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 0ee16e40eea4d217cd78c3a026731656bfa4ca53
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046428"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045638"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Felhasználói felületi frissítések az Intune végfelhasználói alkalmazásaiban
 Ismerje meg a legújabb frissítéseket a Microsoft Intune-alkalmazások. A Microsoft rendszeresen ad hozzá, és javíthatja a az Intune vállalati portál alkalmazás és webhely. Ha az Intune-rendszergazdák vagy személy támogatja, ez a cikk a szükséges információkat:
@@ -34,7 +34,7 @@ Ha egy alkalmazott vagy a tanulói, mindenképpen tekintse meg a képernyőképe
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
-## <a name="week-of-april-15-2019"></a>2019. április 15 i hét  
+## <a name="week-of-april-15-2019"></a>2019\. április 15 i hét  
 
 ### <a name="new-end-user-app-microsoft-intune-app---3903244---"></a>Új felhasználó alkalmazás (a Microsoft Intune-alkalmazás) <!--3903244 -->  
 Van egy új végfelhasználói alkalmazás Android teljes körűen felügyelt eszközök nevű **a Microsoft Intune**. Az új alkalmazás passzív és modern, és biztosítja a vállalati portál alkalmazást, funkcionálisan hasonló, de a teljes körűen felügyelt, vállalati eszközök. További információkért lásd: [a Google Play áruházból a Microsoft Intune app](https://play.google.com/store/apps/details?id=com.microsoft.intune).  
@@ -56,7 +56,7 @@ A példaként szolgáló képernyőképen a **súgó** képernyőjén:
 ![Képernyőfelvétel: a Microsoft Intune-alkalmazás, a súgóképernyő.](./media/1904-intune-app-help.png)   
 
 
-## <a name="week-of-april-1-2019"></a>2019. április 1 hét  
+## <a name="week-of-april-1-2019"></a>2019\. április 1 hét  
 
 ### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635---"></a>Céges portál iOS 12-eszközök felhasználói regisztrációjának módosításai <!--3448635 -->  
 A vállalati portál iOS beléptetési képernyők és a lépéseket, amelyek a mobileszköz-kezelési regisztrációs módosításokat jelent meg az Apple iOS 12.2 összhangban vannak frissítve lett-e. A frissített munkafolyamatot kéri a felhasználótól:  
@@ -70,24 +70,24 @@ Frissített regisztrációs lépéseket és képernyők: [iOS-eszköz regisztrá
 ### <a name="user-experience-update-for-the-company-portal-app-for-ios----2536024---"></a>Felhasználóiélmény-frissítést a vállalati portál alkalmazás iOS-hez <!-- 2536024 -->
 IOS-eszközökön a vállalati portál alkalmazás kezdőlapja megváltozott. Ezzel a kezdőlapján fog jobban kövesse iOS felhasználói felületi minták, és jobb észlelhetőség is biztosít az alkalmazásokhoz és e-könyvek.  
 
-## <a name="week-of-february-19-2019"></a>2019. február 19 hete  
+## <a name="week-of-february-19-2019"></a>2019\. február 19 hete  
 ### <a name="new-app-categories-screen-in-the-company-portal-app-for-windows-10---3834780-wnready4review---"></a>Új alkalmazás kategóriák képernyő Windows 10-es céges portál alkalmazásban<!-- 3834780 WNready4Review -->  
 Egy új képernyőt nevű **Alkalmazáskategóriák** a Windows 10 céges portál alkalmazás tallózása és kiválasztása élményének növelése érdekében jelentősen bővült. A felhasználók mostantól látnak alkalmazásaikat, például a kategóriák szerint rendezve **kiemelt**, **oktatási**, és **termelékenység**. Ez a módosítás megjelenik a céges portál verziókban 10.3.3451.0 és újabb verziók. A vállalati portál alkalmazás telepítésével kapcsolatos további információkért lásd: [telepítése és megosztása az eszközön található alkalmazások](/intune-user-help/install-apps-cpapp-windows).  
 
 ![Képernyőfelvétel a vállalati portál Windows 10-es, kategóriák képernyő.](./media/1902_CP_app_categories.png)   
 
 
-## <a name="week-of-november-12-2018"></a>2018. November 12 hete
+## <a name="week-of-november-12-2018"></a>2018\. November 12 hete
 
 ### <a name="windows-company-portal-keyboard-shortcuts----2771518---"></a>A Windows Céges portálon használható billentyűparancsok <!-- 2771518 -->
 A végfelhasználók mostantól átláthatják, a Windows céges portál alkalmazás és eszköz műveleteket aktiválhat [billentyűparancsokkal (megoldásgyorsítók)](https://docs.microsoft.com/intune/company-portal-app#windows-company-portal-keyboard-shortcuts).
 
-## <a name="week-of-october-22-2018"></a>2018. október 22-i hét
+## <a name="week-of-october-22-2018"></a>2018\. október 22-i hét
 
 ### <a name="add-custom-brand-image-for-company-portal-app----1916266---"></a>A vállalati portál alkalmazás márka egyéni rendszerkép hozzáadása <!-- 1916266 -->
 A Microsoft Intune rendszergazdájaként Ön olyan egyéni márkaemblémát tölthet fel, amely háttérképként jelenik majd meg a felhasználónak az iOS Céges portál alkalmazásban található profiloldalán. További információkat a Céges portál alkalmazás konfigurálásáról [a Microsoft Intune Céges portál alkalmazás konfigurálását](company-portal-app.md) ismertető cikkből tudhat meg.  
 
-## <a name="week-of-august-27-2018"></a>2018. augusztus 27-i hét  
+## <a name="week-of-august-27-2018"></a>2018\. augusztus 27-i hét  
 
 ### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>Új frissítés a felhasználói felülethez a céges portál webhelyen <!--2000968 -->  
 A felhasználók visszajelzései alapján új funkciókkal egészült ki a Céges portál webhely. Jelentős javulást fog tapasztalni eszközei már meglévő funkciói és használhatósága terén. A hely, eszköz adatai, visszajelzés és támogatás és eszköz áttekintése, például adott területeinek most már rendelkezik egy új, modern, rugalmas kialakítás. Az [Intune Céges portál webhelyének dokumentációja](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website) frissítve lett, hogy tükrözze a változásokat.   
@@ -107,7 +107,7 @@ Többek között a következő frissítéseket fogja látni:
 |![A frissített eszköz oldalán az eszköz pontosan az eszközadatok fölé van igazítva, és nem a teljes lista fölött ugrik fel.](./media/iwp-device-after-1803.png)|![Az eszközoldal előző verziója.](./media/iwp-device-before-1803.png)|
 |![A frissített alkalmazástelepítési oldalon az alkalmazás pontosan a leírás és a különböző telepítési adatok, így a közzététel dátuma, a verzió és az alkalmazástípus fölött jelenik meg.](./media/iwp-app-install-after-1803.png)|![A telepítésoldal előző verziója.](./media/iwp-app-install-before-1803.png)|  
 
-## <a name="week-of-july-16-2018"></a>2018. július 16-ai hét  
+## <a name="week-of-july-16-2018"></a>2018\. július 16-ai hét  
 
 ### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>További szinkronizálási lehetőségek a windowsos Céges portál alkalmazásban   
 A Windowsos Céges portál alkalmazás mostantól lehetővé teszi, hogy a szinkronizálási folyamatot közvetlenül a Windows tálcájáról vagy a Start menüből is elindíthassa. Ez a funkció abban az esetben igazán hasznos, ha csak szinkronizálni szeretné eszközeit, hogy utána hozzáférhessen a vállalati erőforrásokhoz. Az új funkció eléréséhez kattintson a jobb gombbal a céges portál ikon rögzített a tálcán vagy **Start** menü. A megjelenő menüpontok közül (azaz a gyorslistában) válassza **Az eszköz szinkronizálása** lehetőséget. Megnyílik a Céges portál alkalmazás **Beállítások** lapja, és megkezdődik a szinkronizálás.  
@@ -128,14 +128,14 @@ A példaként használt képernyőképen látható a Részletek nézet:
 
 ![A windowsos Intune Céges portál képernyőképe, amelyen láthatók a telepített alkalmazások a Részletek nézetben.](/intune/media/details-installed-view-cpapp-1807.png) 
 
-## <a name="week-of-april-23-2018"></a>2018. április 23-i hét
+## <a name="week-of-april-23-2018"></a>2018\. április 23-i hét
 ### <a name="updated-navigation-view-in-the-company-portal-app-for-windows-10----1195010---"></a>Frissített navigációs megtekintése a céges portál alkalmazásban a Windows 10-es <!-- 1195010 -->
 A Windows 10-es Intune Céges portál alkalmazást frissítettük a [Fluent Design System navigációs nézetével](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics). Az alkalmazás oldalán egy statikus, függőleges lista jelenik meg a legfelső szintű oldalakkal. A gyors megtekintéshez és az oldalak közötti váltáshoz kattintson bármelyik hivatkozásra. Egy frissítéssorozattal adaptív, kényelmesebb és ismerősebb Intune-élményt szeretnénk létrehozni. Ez a sorozat első frissítése. 
 
 ![Képernyőkép a Céges portál irányítópultról a Fluent Design navigációs nézetével](./media/1804_WindowsCP_Fluent_01.png)
 
 
-## <a name="week-of-april-2-2018"></a>2018. április 2-i hét
+## <a name="week-of-april-2-2018"></a>2018\. április 2-i hét
 
 ### <a name="user-experience-update-for-the-company-portal-app-for-ios----1412866---"></a>Felhasználóiélmény-frissítést a vállalati portál alkalmazás iOS-hez <!-- 1412866 -->
 Nagyszabású felhasználóiélmény-frissítést adtunk ki az iOS-es Céges portál alkalmazáshoz. A frissítéshez teljes vizuális átalakulás is tartozik, amely modernebb megjelenést és élményt biztosít. Az alkalmazás működését változatlanul hagytuk, használhatóságát és kezelhetőségét azonban fejlesztettük.  
@@ -160,7 +160,7 @@ Fejlesztettük a Windows 10-hez készült Céges portál nyelvét, hogy közért
 |![01](./media/windows_enroll_before_1803.png)|![01](./media/windows_enroll_after_1803.png)|
 |![02](./media/windows_view_policy_issues_before_1803.png)|![02](./media/windows_view_policy_issues_after_1803.png)
 
-## <a name="week-of-march-12-2018"></a>2018. március 12-i hét
+## <a name="week-of-march-12-2018"></a>2018\. március 12-i hét
 
 ### <a name="company-portal-for-android-visual-updates----976944---"></a>Frissített vezérlők az Androidhoz készült vállalati portál alkalmazást <!-- 976944 -->
 
@@ -177,7 +177,7 @@ Az Android [Material Design](https://material.io/) irányelveihez igazodva friss
 |![07](./media/androidCP_Setup01_before_1803.png)|![07](./media/androidCP_Setup01_after_1803.png)|
 
 
-## <a name="week-of-november-27-2017"></a>2017. november 27-i hét
+## <a name="week-of-november-27-2017"></a>2017\. november 27-i hét
 
 ### <a name="new-device-categories-step-in-guided-setup-for-the-company-portal-app-for-windows-10----1335292---"></a>"Új eszközkategóriák" lépés a céges portál alkalmazás interaktív telepítőjében a Windows 10-es <!-- 1335292 -->
 
@@ -185,7 +185,7 @@ Ha engedélyezte az [eszközcsoport-leképezést](device-group-mapping.md), a Wi
 
 ![Eszközcsoport-leképezési kategória](./media/w10_cp_category_device_setup_after_1711.png)
 
-## <a name="week-of-november-13-2017"></a>2017. november 13-i hét
+## <a name="week-of-november-13-2017"></a>2017\. november 13-i hét
 
 ### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>Eszközbeállítási a céges portál 2.9.0-s verzió nyelven írt IOS-munkafolyamat <!-- 1417174 -->
 
@@ -205,7 +205,7 @@ Továbbfejlesztettük az iOS rendszerre készült Céges portál alkalmazás esz
 |![07](./media/ios_cp_enroll_07_before_1711.png)|![07](./media/ios_cp_enroll_07_after_1711.png)|
 
 
-## <a name="week-of-november-6-2017"></a>2017. November 6-i hét
+## <a name="week-of-november-6-2017"></a>2017\. November 6-i hét
 
 ### <a name="updates-to-the-company-portal-app-for-windows-10---1299474--"></a>A Windows 10-es céges portál alkalmazás frissítése <!--1299474-->
 Frissítettük a Windows 10-es Céges portál alkalmazás beállítások oldalát, hogy egységesebbek legyenek a beállítások és a beállításoknál elvégezhető felhasználói műveletek. Az elrendezését is átalakítottuk, hogy jobban igazodjon a többi Windows-alkalmazáséhoz.
@@ -220,7 +220,7 @@ A Céges portál alkalmazások mostantól alkalmazáskategóriák és nevek köz
 
 A relevancia megállapításának finomításán még dolgozunk, ezért várjuk a tapasztalatokkal kapcsolatos visszajelzéseket, melyek a Céges portál weboldalának alján található „Visszajelzés” hivatkozást használva küldhetők el.
 
-## <a name="week-of-october-16-2017"></a>2017. október 16-i hét
+## <a name="week-of-october-16-2017"></a>2017\. október 16-i hét
 
 ### <a name="search-improvements-to-the-company-portal-website----1331697---"></a>A céges portál webhely keresési fejlesztései <!-- 1331697 -->
 Továbbfejlesztjük az alkalmazáskeresési lehetőségeket, első lépésben a [Céges portál weboldalról](https://portal.manage.microsoft.com) elérhetőket. A keresések a Név és a Leírás mezőben megadott információkon túl az alkalmazáskategóriák megadásával finomíthatók. Az eredményeket alapértelmezés szerint relevancia alapján állítja sorrendbe a rendszer. 
@@ -234,7 +234,7 @@ A relevancia megállapításának finomításán még dolgozunk, ezért várjuk 
 Ebben a kiadásban elhárítottunk egy ismert problémát azzal kapcsolatban, ahogyan az iOS-es Céges portál ikonokat jelenít meg az alkalmazás címében. A 120x120 pixeles vagy nagyobb méretű feltöltött ikonok most már teljes méretben jelennek meg az alkalmazás címében a [Céges portál webhelyén](https://portal.manage.microsoft.com) és az iOS-es Céges portál alkalmazás oldalain.
 
 
-## <a name="week-of-october-2-2017"></a>2017. október 2-i hét
+## <a name="week-of-october-2-2017"></a>2017\. október 2-i hét
 
 ### <a name="improvements-to-device-setup-workflow-in-company-portal----1490692---"></a>Céges portál eszközbeállítási munkafolyamatát fejlesztései <!-- 1490692 -->
 Továbbfejlesztettük az androidos Céges portál alkalmazás eszközbeállítási munkafolyamatát. Nyelvezete felhasználóbarátabb, vállalatra szabottabb. Képernyőit – ahol lehetett – összevontuk. 
@@ -257,13 +257,13 @@ A további lépéseket javítottuk az androidos munkahelyi profilos eszközökö
 |![08](./media/android_work_cp_enroll_05_before_1710.png)| *Az előző lépéssel összevonva* |
 
 
-Frissítettük a feltételes hozzáférés e-mailes aktiválási képernyőjét.
+Frissítettük a feltételes hozzáférés e-mail aktiválási képernyőjét.
 
 |Előtte|Utána|
 |---|---|
 |![06](./media/android_conditional_access_email_before_1710.png)|![06](./media/android_conditional_access_email_after_1710.png)
 
-## <a name="week-of-september-11-2017"></a>2017. szeptember 11-i hét
+## <a name="week-of-september-11-2017"></a>2017\. szeptember 11-i hét
 
 ### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Egyszerűbb érthető megfogalmazása drasztikusnak a vállalati portál alkalmazás androidhoz <!-- 1396349 -->  
 
@@ -278,11 +278,11 @@ Egyszerűsítettük az Androidhoz készült Céges portál alkalmazás regisztr�
 |![05](./media/android_cp_enroll_05_before_1709.png)|![05](./media/android_cp_enroll_05_post_1709.png)|
 
 
-## <a name="august-2017"></a>2017. augusztus
+## <a name="august-2017"></a>2017\. augusztus
 
 ### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11 Mail alkalmazás támogatni fogja az OAuth <!-- 1196951 -->
 
-Az Intune-nal használt feltételes hozzáférés biztonságosabb hitelesítést tesz lehetővé iOS-eszközökön az OAuth használatával. Ennek a lehetőségnek a kihasználása érdekében az iOS-es Céges portál alkalmazásban egy új fajta folyamatot vezetünk be, amely lehetővé teszi a biztonságosabb hitelesítést. Ha a végfelhasználó a Mail alkalmazásban megpróbál bejelentkezni egy új Exchange-fiókba, a rendszer egy rákérdezést jelenít meg a webes nézethez. Az Intune-ban való regisztráláskor a rendszer egy kérdést jelenít meg, amelynél a felhasználó engedélyezheti, hogy a natív Mail alkalmazás hozzáférjen a tanúsítványhoz. A legtöbb végfelhasználó nem kap többé karanténba helyezett e-maileket. A már meglévő postafiókok továbbra is az alapszintű hitelesítési protokollt használják majd, és ilyen esetben a felhasználók továbbra is kaphatnak karanténba helyezett e-maileket. A végfelhasználói bejelentkezési folyamat hasonló az Office-mobilalkalmazásoknál tapasztalhatóhoz.
+Feltételes hozzáférés Intune-nal az iOS-eszközökön az OAuth biztonságosabb hitelesítést tesz lehetővé. Ennek a lehetőségnek a kihasználása érdekében az iOS-es Céges portál alkalmazásban egy új fajta folyamatot vezetünk be, amely lehetővé teszi a biztonságosabb hitelesítést. Ha a végfelhasználó a Mail alkalmazásban megpróbál bejelentkezni egy új Exchange-fiókba, a rendszer egy rákérdezést jelenít meg a webes nézethez. Az Intune-ban való regisztráláskor a rendszer egy kérdést jelenít meg, amelynél a felhasználó engedélyezheti, hogy a natív Mail alkalmazás hozzáférjen a tanúsítványhoz. A legtöbb végfelhasználó nem kap többé karanténba helyezett e-maileket. A már meglévő postafiókok továbbra is az alapszintű hitelesítési protokollt használják majd, és ilyen esetben a felhasználók továbbra is kaphatnak karanténba helyezett e-maileket. A végfelhasználói bejelentkezési folyamat hasonló az Office-mobilalkalmazásoknál tapasztalhatóhoz.
 
 ![A fiók típusának kiválasztása a natív Mail alkalmazásban.](./media/ios-11-ca-email-after-1708-01.png)
 
@@ -319,7 +319,7 @@ A Windows 10-hez készült Céges portál alkalmazásban a __Kategória__ címke
 
 ![A windowsos Céges portál alkalmazás Eszköz adatai képernyője, amelyen a Kategóriák mező immár tulajdonságként jelenik meg, nem pedig közvetlenül a képernyő címe alatt szerepel.](./media/cp_win10_category_tag_move_after_1708.png)
 
-## <a name="july-2017"></a>2017. július
+## <a name="july-2017"></a>2017\. július
 
 ### <a name="apps-details-pages-will-display-new-information-for-android-devices---1287476--"></a>Alkalmazások részletei lapon új eszközinformációk Android-eszközökhöz <!--1287476-->
 
@@ -373,7 +373,7 @@ A Céges portál alkalmazás megkezdi a bejelentkezést.
 
 ![A hitelesítési folyamat végeztével a Céges portál alkalmazás bejelentkezik, amit egy betöltést jelző sáv jelez.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
-## <a name="june-2017"></a>2017. június
+## <a name="june-2017"></a>2017\. június
 
 ### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies"></a>Az Androidhoz készült Céges portál alkalmazás mostantól új felhasználói felületet nyújt az alkalmazásvédelmi szabályzatokhoz
 A felhasználók visszajelzései alapján úgy módosítottuk az Androidhoz készült Céges portál alkalmazást, hogy egy **Céges tartalom elérése** gombot is hozzáadtunk. Ez mentesíti a végfelhasználót attól, hogy az egész regisztrációs folyamaton végig kelljen mennie, ha csak olyan alkalmazásokat kíván elérni, amelyek az Intune mobilalkalmazás-felügyelet egyik funkcióját, az alkalmazásvédelmi szabályzatokat támogatják.
@@ -436,7 +436,7 @@ Ha a felhasználók iOS-eszközükön munkahelyi vagy iskolai fiókkal már jele
 
 ![A fiókválasztó képe, amelyen „Robin Swanson” tesztfelhasználó két e-mail-címe közül választhat ki egyet. A két cím alatt egy újabb gomb is megjelenik, amely lehetővé teszi, hogy a felhasználó másik fiókkal is bejelentkezhessen.](./media/cp_ios_multi-account-selector-after-1705.png)
 
-## <a name="april-2017"></a>2017. április
+## <a name="april-2017"></a>2017\. április
 
 ### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>A Managed Browser és a vállalati portál új ikonok <!--918433, 918431-->
 
@@ -488,7 +488,7 @@ __Előtte__ ![ Kép a betöltési képernyő előző verziójáról, amelyen az 
 
 __Utána__ ![Kép a betöltési képernyő frissített verziójáról, amelyen mostantól a telepítés folyamatjelző sávja is látható.](./media/cp_win10_install_status_after_1704.png)
 
-## <a name="february-2017"></a>2017. február
+## <a name="february-2017"></a>2017\. február
 
 ### <a name="new-user-experience-for-the-company-portal-app-for-android---621622-announced-1702--"></a>Új felhasználói élmény a vállalati portál alkalmazást androidhoz <!--621622, announced 1702-->
 Márciustól kezdve az Androidhoz készült Céges portál alkalmazásban a [material design irányelveinek](https://material.io/guidelines/material-design/introduction.html) követésével gondoskodunk a még modernebb megjelenésről és működésről. A jobb felhasználói élményt többek között az alábbiak alkotják:
@@ -515,7 +515,7 @@ Márciustól kezdve az Androidhoz készült Céges portál alkalmazásban a [mat
 </body>
 </html>
 
-## <a name="january-2017"></a>2017. január
+## <a name="january-2017"></a>2017\. január
 
 ### <a name="modernizing-the-company-portal-website---753980-announced-1701--"></a>A céges portál webhelyen történő korszerűsítéséről <!--753980, announced 1701-->
 A Céges portál webhely februártól kezdve támogatni fogja a felügyelt eszközökkel nem rendelkező felhasználóknak szánt alkalmazásokat. A webhely egy új kontrasztos színsémát, dinamikus ábrákat és egy, a segélyszolgálat kapcsolattartási adatait és a meglévő felügyelt eszközökre vonatkozó adatokat tartalmazó „hamburger” menüt ![A hamburger menü kis képe, amely mostantól a Céges portál webhely bal felső sarkában található](./media/CP_hamburger_menu.png) fog használni, igazodva más Microsoft-termékekhez és -szolgáltatásokhoz. A kezdőlapot át fogjuk rendezni, felhívva a figyelmet a felhasználók számára elérhető alkalmazásokra a kiemelt és a legutóbb frissített alkalmazásokat mutató körhintanézetekkel.

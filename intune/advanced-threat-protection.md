@@ -1,6 +1,6 @@
 ---
 title: A Windows Defender ATP használata a Microsoft Intune-ban – Azure | Microsoft Docs
-description: Ismerkedjen meg a Windows Defender Komplex kártevők elleni védelem (ATP) engedélyezésének módjával egy teljes forgatókönyvön keresztül, amely érinti az ATP bekapcsolását az Intune-ban és a Windows Defender biztonsági központban (ATP portál), eszközök ATP-konfigurációs profilokkal történő bevonását, Intune eszközmegfelelőségi szabályzat létrehozását, Azure AD feltételes hozzáférési szabályzat létrehozását és az eszközmegfelelőség figyelését.
+description: 'Lásd: how to engedélyezése a Windows Defender komplex veszélyforrások elleni védelem (ATP) egy teljes körű forgatókönyvben, beleértve az ATP konfigurációs profil eszközök az Intune és a Windows Defender biztonsági központban (ATP portál), az ATP bekapcsolását, hozzon létre egy Intune-eszközön megfelelőségi szabályzat, hozzon létre egy Azure AD feltételes hozzáférési szabályzatot, és eszközmegfelelőség figyelése.'
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -15,14 +15,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78c34345804f600aa62ff5e25ef27a23591e0f5c
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: 186ba1a8813e84b89a23c8aabb3a4ef0bd392da4
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819869"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045925"
 ---
-# <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>A feltételes hozzáférés az Intune-ban a Windows Defender ATP megfelelőségi kényszerítése
+# <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Kényszerítse a megfelelőséget, a Windows Defender ATP-ben a feltételes hozzáférés az Intune-ban
 
 A Windows Defender Komplex veszélyforrások elleni védelem (ATP) és a Microsoft Intune együttesen segít megelőzni a biztonsági incidenseket és mérsékelni a vállalaton belüli incidensek következményeit.
 
@@ -40,7 +40,7 @@ Ez a cikk a következőkhöz nyújt útmutatást:
 
 - Az Intune engedélyezése az ATP-ben és az ATP engedélyezése az Intune-ban. Ezek a feladatok szolgáltatások közötti kapcsolatot hoznak létre az Intune és a Windows Defender ATP között. Ez a kapcsolat teszi lehetővé, hogy a Windows Defender ATP kiírhassa az Intune-eszközökre vonatkozó kockázatokat.
 - A megfelelőségi szabályzat létrehozása az Intune-ban.
-- Feltételes hozzáférés engedélyezése az Azure Active Directory-ban (AD) az eszközökön azok fenyegetési szintje alapján.
+- Az Azure Active Directory (AD) feltételes hozzáférés engedélyezése eszközökön azok fenyegetési szintje alapján.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
@@ -126,7 +126,7 @@ A megfelelőségi szabályzat határozza meg egy eszközön a kockázat elfogadh
 5. A szabályzatnak a kijelölt csoportokhoz rendeléséhez válassza a **Mentés** lehetőséget. A rendszer ekkor kiértékeli a szabályzat hatókörébe tartozó felhasználói eszközök megfelelőségét.
 
 ## <a name="create-a-conditional-access-policy"></a>Feltételes hozzáférési szabályzat létrehozása
-A feltételes hozzáférési szabályzat akkor tiltja az erőforrásokhoz való hozzáférést, *ha* az eszköz nem megfelelő. Így érhető el, hogy a fenyegetettségi szintet túllépő eszközök ne férjenek hozzá olyan vállalati erőforrásokhoz, mint a SharePoint vagy az Exchange Online.  
+A feltételes hozzáférési szabályzat akkor tiltja elérhető erőforrások *Ha* az eszköz nem megfelelő. Így érhető el, hogy a fenyegetettségi szintet túllépő eszközök ne férjenek hozzá olyan vállalati erőforrásokhoz, mint a SharePoint vagy az Exchange Online.  
 
 > [!TIP]  
 > A feltételes hozzáférés az Azure Active Directory (Azure AD) technológiája. Az *Intune-ból* elérhető feltételes hozzáférési csomópont ugyanaz a csomópont, amelyet az *Azure AD-ből* is el lehet érni.  
@@ -141,13 +141,13 @@ A feltételes hozzáférési szabályzat akkor tiltja az erőforrásokhoz való 
 
     A módosítások mentéséhez válassza a **Kész** gombot.
 
-5. Az eszközmegfelelőségen alapuló feltételes hozzáférés az **Engedélyezés** választásával érvényesíthető. Választhatja például a **Hozzáférés engedélyezése** > **Eszköz megfelelőként való megjelölésének megkövetelése** lehetőséget.
+5. Válassza ki **Grant** eszköz megfelelőségén alapuló feltételes hozzáférés a alkalmazni. Választhatja például a **Hozzáférés engedélyezése** > **Eszköz megfelelőként való megjelölésének megkövetelése** lehetőséget.
 
     A módosítások mentéséhez válassza az **Választ** gombot.
 
 6. A módosítások mentéséhez válassza a **Szabályzat engedélyezése** majd a **Létrehozás** lehetőséget.
 
-Hasznos forrás a [Mi az a feltételes hozzáférés?](conditional-access.md) című cikk.
+[Mi a feltételes hozzáférés? ](conditional-access.md) akkor a leghasznosabb.
 
 ## <a name="monitor-device-compliance"></a>Az eszközmegfelelőség figyelése
 Most a Windows Defender ATP megfelelőségi szabályzattal rendelkező eszközök állapotának figyelése következik.
@@ -157,7 +157,7 @@ Most a Windows Defender ATP megfelelőségi szabályzattal rendelkező eszközö
 3. Keresse meg a listában a Windows Defender ATP-szabályzatot, és tekintse meg a megfelelő és nem megfelelő eszközöket.
 
 ## <a name="more-good-stuff"></a>További hasznos források
-[Windows Defender ATP – feltételes hozzáférés](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection)  
+[A Windows Defender ATP – feltételes hozzáférés](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection)  
 [Windows Defender ATP – Kockázati irányítópult](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/dashboard-windows-defender-advanced-threat-protection)  
 [Eszközmegfelelőségi szabályzatok – első lépések](device-compliance-get-started.md)  
-[Feltételes hozzáférés az Azure AD-ben](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
+[Az Azure AD feltételes hozzáférés](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)

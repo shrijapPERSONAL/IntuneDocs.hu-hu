@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 808b594e4ac47845272be2978da2463727f9807c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f04879e88cb85eaacdb75f5645a486e3539cb13a
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040769"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044078"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile-összekötő
 
-A Microsoft Intune-nal integrálható, Symantec Endpoint Protection Mobile (SEP Mobile) nevű, veszélyforrások elleni mobileszköz-védelmi megoldás kockázatfelmérése alapján feltételes hozzáféréssel korlátozható a vállalati erőforrások mobil elérése. A kockázatfelmérés a SEP Mobile által az eszközökről gyűjtött telemetriai adatokon alapul, például:
+Szabályozhatja, hogy a Symantec Endpoint Protection Mobile (a SEP Mobile), a Microsoft Intune-nal integrálható mobil veszélyforrások elleni védelmi megoldás kockázatfelmérése alapján feltételes hozzáféréssel a vállalati erőforrások mobil elérése. A kockázatfelmérés a SEP Mobile által az eszközökről gyűjtött telemetriai adatokon alapul, például:
 
 -   Fizikai védelem
 
@@ -36,7 +36,7 @@ A Microsoft Intune-nal integrálható, Symantec Endpoint Protection Mobile (SEP 
 
 -   Biztonsági rések elleni védelem
 
-Az Intune eszközmegfelelési szabályzataival engedélyezheti a SEP Mobile-kockázatfelmérést, majd az észlelt fenyegetések alapján a feltételes hozzáférési szabályzatokkal engedélyezheti vagy tilthatja le a nem megfelelő eszközök hozzáférését a vállalati erőforrásokhoz.
+Engedélyezze a SEP Mobile-kockázatfelmérés Intune eszközmegfelelőségi szabályzatai által, és ezután a feltételes hozzáférési szabályzatok használatával engedélyezheti vagy letilthatja a nem megfelelő eszközök hozzáférését a vállalati erőforrásokhoz, észlelt fenyegetések alapján.
 
 ## <a name="how-do-intune-and-sep-mobile-help-protect-your-company-resources"></a>Hogyan segíti az Intune és a SEP Mobile a vállalati erőforrások védelmét?
 

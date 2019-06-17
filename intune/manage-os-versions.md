@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8e717895e039e46ba7877476f67f29c1ce83b767
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b490d5ff083d344a1b39d27a2298503bdfa1f130
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041675"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044917"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Operációsrendszer-verziók kezelése az Intune-nal
 A korszerű mobil- és asztali platformokon gyors ütemben követik egymást az operációs rendszerek főbb részeit érintő frissítések, javítások és új kiadások. A Windows platform frissítéseinek és javításainak bevezetése teljes mértékben kezelhető központilag. Más platformok, például az iOS és a Android esetében azonban a végfelhasználóknak is részt kell vennie a folyamatban.  A Microsoft Intune-nal könnyedén kialakíthatja a különböző platformokon futó operációsrendszer-verziók felügyeleti rendszerét.
@@ -46,14 +46,14 @@ Ha a fentiekkel kapcsolatban további információkra van szüksége, olvassa á
 Az Intune MDM eszközmegfelelőségi szabályzatai a következő feladatok végrehajtásához biztosítanak eszközöket: 
 - Megfelelőségi szabályok meghatározása
 - Megfelelőségi állapot megtekintése jelentéskészítéssel
-- Megfelelőség hiányának kezelése az eszköz karanténba helyezésével és feltételes hozzáférés kikötésével
+- Eszköz karanténba helyezésével és feltételes hozzáférési megfelelőség hiányának kezelése
 
 Hasonlóan ahhoz, ahogy a regisztrációs korlátozásoknál, a megfelelőségi szabályok között is megadható a legalacsonyabb és legmagasabb támogatott operációsrendszer-verzió. Az szabályzatokhoz ezenkívül határidők is definiálhatók, türelmi időt biztosítva a felhasználóknak arra, hogy gondoskodjanak eszközük megfelelőségéről. Az eszközmegfelelőségi szabályzatok segítenek elérni azt, hogy a végfelhasználók eszközei megfeleljenek a szervezeti szabályozásoknak.
 
 ![Eszközmegfelelőség – műveletek nem megfelelő eszközök észlelése esetén](./media/os-version-actions-noncompliance.png) 
 
 ### <a name="in-practice"></a>A gyakorlatban
-Az eszközmegfelelési szabályzatok ugyanazokban az esetekben használhatók jól, mint a regisztrációs korlátozások. Ezek a szabályzatok segítenek elérni azt, hogy a szervezet felhasználói az operációs rendszerek aktuálisan érvényesített verzióit használják. Feltételes hozzáférés definiálásával megadható például, hogy ha egy adott végfelhasználói eszköz nem felel meg a szabályozásoknak, arról az eszközről ne lehessen elérni a szervezeti erőforrásokat, amíg felhasználója nem gondoskodik az operációs rendszer szervezeten belül támogatott verziójának telepítéséről. A felhasználókat a rendszer értesíti a megfelelőség hiányáról és arról, hogy milyen lépéseket kell tenniük annak érdekében, hogy ismét hozzáférjenek az erőforrásokhoz.   
+Az eszközmegfelelési szabályzatok ugyanazokban az esetekben használhatók jól, mint a regisztrációs korlátozások. Ezek a szabályzatok segítenek elérni azt, hogy a szervezet felhasználói az operációs rendszerek aktuálisan érvényesített verzióit használják. Végfelhasználói eszközök megfelelőségi definiálásával, amikor vállalati erőforrásokhoz való hozzáférés blokkolva lesz feltételes hozzáférést addig, amíg a végfelhasználók a támogatott operációs rendszer tartományba, a szervezet számára. A felhasználókat a rendszer értesíti a megfelelőség hiányáról és arról, hogy milyen lépéseket kell tenniük annak érdekében, hogy ismét hozzáférjenek az erőforrásokhoz.   
 
 Ha a fentiekkel kapcsolatban további információkra van szüksége, olvassa át az [Eszközmegfelelőségi szabályzatok – első lépések](https://docs.microsoft.com/intune/device-compliance-get-started) című témát.
  
@@ -81,7 +81,7 @@ Az ebben a cikkben bemutatott Intune-funkciók segítséget nyújtanak ahhoz, ho
   - A nem megfelelő felhasználók azonosításához kérheti egy megfelelőségi jelentés készítését a rendszertől. 
 - **3a. lépés:**: Használja az Intune alkalmazásvédelmi szabályzatokat felhasználók blokkolása, ha az alkalmazás megnyílik, vagy folytatódik, ha az eszköz nem fut az operációs rendszer v2-es.
 - **3/b. lépés**: Az eszközmegfelelőségi szabályzatoknál adja meg, hogy az eszközök megfelelőségéhez legalább az operációs rendszer v2-es verziója szükséges.
-  - Ezeknek a szabályzatoknak a meghatározása esetén az eszközöket frissíteni kell ahhoz, hogy továbbra is el lehessen róluk érni a szervezeti adatokat. A védett szolgáltatások használatát a rendszer letiltja, ha az eszközök nem felelnek meg a megadott feltételeknek. Az alkalmazásvédelmi szabályzatokkal védett alkalmazások használatát a rendszer megnyitásukkor vagy akkor tiltja le, amikor azok megpróbálják elérni a szervezeti adatokat.
+  - Ezeknek a szabályzatoknak a meghatározása esetén az eszközöket frissíteni kell ahhoz, hogy továbbra is el lehessen róluk érni a szervezeti adatokat. Védett szolgáltatások le vannak tiltva, az eszköz a feltételes hozzáférés használatakor. Az alkalmazásvédelmi szabályzatokkal védett alkalmazások használatát a rendszer megnyitásukkor vagy akkor tiltja le, amikor azok megpróbálják elérni a szervezeti adatokat.
 
 ## <a name="next-steps"></a>További lépések
 A szervezeten belül használt operációsrendszer-verziók felügyeletével kapcsolatban az alábbi témáknál talál további információkat: 

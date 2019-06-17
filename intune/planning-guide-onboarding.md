@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e21eb6169acf8ae69ace94fd54007eaa4f7f90f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5ed13994576f67c7b740a2ea895db9d1a0f42289
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046752"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044356"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>A Microsoft Intune-terv megvalósítása
 
@@ -42,7 +42,7 @@ Az önálló Intune-ra vonatkozó követelmények az alábbiak:
 
 -   Azure AD Connect (címtár-szinkronizáláshoz)
 
--   Exchange-hez készült Intune On-Premises Connector (feltételes hozzáférésű helyszíni Exchange-hez, ha szükséges)
+-   Az Intune helyszíni összekötő az Exchange-hez (a feltételes hozzáférés a helyszíni Exchange-, ha szükséges)
 
 -   Intune Certificate Connector (SCEP-tanúsítvány telepítéséhez, ha szükséges)
 
@@ -125,9 +125,9 @@ Az Intune támogatja a megfelelőségi szabályzatok használatát. A megfelelő
 
 ### <a name="task-12-enable-conditional-access-policies"></a>12. feladat: Feltételes hozzáférési szabályzat engedélyezése
 
-Az Intune támogatja a feltételes hozzáférési folyamatot a helyszíni Exchange, az Exchange Online, a SharePoint Online, a Skype Vállalati online verzió és a Dynamics CRM Online esetén. A feltételes hozzáférési szabályzatokat szükség szerint engedélyezze, figyelembe véve az Intune üzembe helyezésének használatieset-forgatókönyveit és a követelményeket.
+Az Intune támogatja a feltételes hozzáférést az Exchange online-hoz, a helyszíni Exchange, SharePoint online-hoz, a Skype vállalati Online verzió és a Dynamics CRM Online. Engedélyezze és konfigurálja a feltételes hozzáférés megfelelő módon az Intune üzembe helyezési használati esetek és követelményeik alapján.
 
--   További információk a [feltételes hozzáférésről](conditional-access.md).
+-   További tudnivalók [a feltételes hozzáférésről](conditional-access.md)
 
 ### <a name="task-13-enroll-devices"></a>13. feladat: Eszközök regisztrálása
 

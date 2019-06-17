@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b799fd65a08646b46bf7fcce67bf4a09dc0413a6
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: bf808a9a7f5a801997f37bd2ecf4c13e3823c332
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819907"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044800"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Automatizált e-mailek és műveletek nem megfelelő eszközök hozzáadása az Intune-ban
 
@@ -27,7 +27,7 @@ A megfelelőségi szabályzatok és a szabályok nem megfelelő eszközök eset�
 
 ## <a name="overview"></a>Áttekintés
 
-Alapértelmezés szerint az Intune a nem megfelelő eszköz észlelése után azonnal nem megfelelőként jelöli meg azt. Ekkor az Azure Active Directory (AD) [feltételes hozzáférés](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) funkciója letiltja az eszközt. Ha egy eszköz nem megfelelő, **nem felelés esetén végrehajtandó műveletet** is dönthet arról, hogy mi a teendő rugalmas alkalmazáskezelést nyújt. Például nem kell azonnal letiltani az eszközt, hanem türelmi időszakot is meghatározhat az eszköz megfelelőségének visszaállításáig.
+Alapértelmezés szerint az Intune a nem megfelelő eszköz észlelése után azonnal nem megfelelőként jelöli meg azt. Az Azure Active Directory (AD) [feltételes hozzáférési](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) majd letiltja az eszközt. Ha egy eszköz nem megfelelő, **nem felelés esetén végrehajtandó műveletet** is dönthet arról, hogy mi a teendő rugalmas alkalmazáskezelést nyújt. Például nem kell azonnal letiltani az eszközt, hanem türelmi időszakot is meghatározhat az eszköz megfelelőségének visszaállításáig.
 
 Többféle művelet használható:
 
@@ -55,7 +55,7 @@ Ez a cikk a következőkhöz nyújt útmutatást:
   - [macOS](compliance-policy-create-mac-os.md)
   - [Windows](compliance-policy-create-windows.md)
 
-- Ha az eszközmegfelelőségi szabályzatot az eszközök céges erőforrásokhoz való hozzáférésének letiltásához használja, az Azure AD feltételes hozzáférést is be kell állítania. További útmutatást a [Feltételes hozzáférés az Azure Active Directoryban](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) és [A feltételes hozzáférés használatának szokásos módjai az Intune-ban](conditional-access-intune-common-ways-use.md) című témakörökben találhat.
+- Az eszközmegfelelőségi szabályzatok használata az eszközök céges erőforrásokhoz, amikor az Azure AD feltételes hozzáférési be kell állítania. Lásd: [feltételes hozzáférés az Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) vagy [az Intune-nal feltételes hozzáférés használatának szokásos módjai](conditional-access-intune-common-ways-use.md) útmutatást.
 
 ## <a name="create-a-notification-message-template"></a>Értesítési üzenetsablon létrehozása
 
@@ -103,7 +103,7 @@ További műveletet akkor vehet fel, ha megfelelőségi szabályzatot hoz létre
     
     - **A nem megfelelő eszköz távoli zárolása**: Ha az eszköz nem megfelelő, akkor zárolja az eszközt. Ez a művelet kényszeríti a felhasználónak meg kell adnia a PIN-kódot vagy jelszót az eszköz zárolásának feloldásához. 
     
-5. Konfigurálja a **ütemezés**: Adja meg a nap (0 és 365 között), a felhasználók eszközein a műveletet nem megfelelő állapot kezdete után. A türelmi időszak után kényszerítheti a feltételes hozzáférési szabályzatot. Ha megad **0** (nulla) számot nap, akkor a feltételes hozzáférés érvénybe **azonnal**. Például azonnal letilthatja a vállalati erőforrásokhoz való hozzáférést egy eszköz meg nem felelése esetén.
+5. Konfigurálja a **ütemezés**: Adja meg a nap (0 és 365 között), a felhasználók eszközein a műveletet nem megfelelő állapot kezdete után. A türelmi időszak után kényszerítheti a feltételes hozzáférési szabályzat. Ha megad **0** (nulla) számot nap, akkor a feltételes hozzáférés érvénybe **azonnal**. Például azonnal letilthatja a vállalati erőforrásokhoz való hozzáférést egy eszköz meg nem felelése esetén.
 
 6. Ha elkészült, kattintson a **Hozzáadás** > **OK** elemre a módosítások mentéséhez.
 

@@ -1,7 +1,7 @@
 ---
 title: A Jamf Pro integrálása a Microsoft Intune-nal a megfelelőség érdekében
 titleSuffix: Microsoft Intune
-description: A Microsoft Intune megfelelőségi szabályzatait az Azure Active Directory feltételes hozzáférésével használva biztonságossá teheti a Jamf által kezelt eszközöket.
+description: Az Azure Active Directory feltételes hozzáférés a Microsoft Intune megfelelőségi szabályzatok használatával segítheti a biztonságos Jamf által felügyelt eszközökön.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,22 +17,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 940ef3e6df95629dad03d6c1d4e60343e4273473
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7b5d3754c7dd3ead9236e223fd568e58e96fe9a1
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048843"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045152"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>A Jamf Pro integrálása az Intune-nal a megfelelőség érdekében
 
 Érintett kiadások: Intune az Azure Portalon
 
-Ha a szervezet használja [a Jamf Pro](https://www.jamf.com) kezelheti a végfelhasználók Mac számítógépeken, segítségével a Microsoft Intune megfelelőségi szabályzatok az Azure Active Directory feltételes hozzáférés győződjön meg arról, hogy megfelelnek-e a szervezetnél található eszközökön.
+Ha a szervezet használja [a Jamf Pro](https://www.jamf.com) kezelheti a végfelhasználók Mac számítógépeken, használhatja a Microsoft Intune megfelelőségi szabályzatok az Azure Active Directory feltételes hozzáférés, győződjön meg arról, hogy megfelelnek-e a szervezetben lévő eszközök.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-A Jamf Pro használatával történő feltételes hozzáférés konfigurálásához a következőkre van szüksége:
+Feltételes hozzáférés konfigurálása a Jamf Pro a következőkre lesz szüksége:
 
 - A Jamf Pro 10.1.0-ás vagy későbbi verziója
 - [macOS-hez készült Céges portál alkalmazás](https://aka.ms/macoscompanyportal)

@@ -4,10 +4,10 @@ description: A Microsoft 365 Nagyvállalati verzió tartalmazza a Microsoft Intu
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/29/2019
+ms.date: 06/12/2019
 ms.topic: conceptual
 audience: ITPro
-ms.service: ''
+ms.service: microsoft-intune
 ms.technology: ''
 ms.custom: intune
 ms.assetid: 0649d310-43a7-4b01-85d2-da255d03e1da
@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 452cb8e4163b82d699347a33fd8dfda9c792b6fc
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d5614f0657175658c1a8442d650e16c8550c1ac1
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050276"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043835"
 ---
 # <a name="what-is-device-management"></a>Mi az eszközkezelés? 
 
@@ -61,7 +61,7 @@ Minden eszközkezelési megoldás fő feladata a biztonság és a védelem. Az I
     - Engedélyezheti a [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10) megoldást, amely gyanús tevékenységeket keres mobileszközökön, fájlokban és alkalmazásokban. 
     - Használat [Windows Defender komplex veszélyforrások elleni védelem (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) a mobileszközök biztonsági problémák megelőzése érdekében. És, korlátozhatják a biztonsági incidensek blokkolja a felhasználó a céges erőforrásokhoz.
 
-- A **Feltételes hozzáférés** az Azure Active Directory funkciója, amely jól integrálható az Intune-nal. Használatával [feltételes hozzáférési](https://docs.microsoft.com/intune/conditional-access), győződjön meg arról, hogy csak megfelelő eszközök férhessenek hozzá az e-mailt, a SharePoint és egyéb alkalmazásokhoz. 
+- **Feltételes hozzáférés** Azure Active Directory egy funkciója, és jól integrálható az Intune-ban. Használatával [feltételes hozzáférési](https://docs.microsoft.com/intune/conditional-access), győződjön meg arról, hogy csak megfelelő eszközök férhessenek hozzá az e-mailt, a SharePoint és egyéb alkalmazásokhoz. 
 
 ## <a name="choose-the-device-management-solution-thats-right-for-you"></a>Az Önnek megfelelő eszközkezelési megoldás kiválasztása
 

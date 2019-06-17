@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d200c8d56dbbe60dd331081537154951f5e5591d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 3d1215d463c89dfa3e740099f7582d61359a4669
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041554"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044552"
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>A Mobile Threat Defense (MTD) eszközmegfelelőségi szabályzatának létrehozása az Intune-nal
 
@@ -66,7 +66,7 @@ Az MTD-eszközmegfelelési szabályzat előfeltételei:
 8.  Kattintson kétszer az **OK** elemre, majd válassza a **Létrehozás** lehetőséget.
 
 > [!IMPORTANT]
-> Ha az Office 365 vagy más szolgáltatások számára feltételes hozzáférési szabályzatokat hoz létre, a rendszer a megfelelőségi értékelés alapján letiltja a nem megfelelő eszközök hozzáférését a céges erőforrásokhoz, amíg az eszközön a fenyegetés el nem hárul.
+> Office 365 vagy más szolgáltatások számára feltételes hozzáférési szabályzatokat hoz létre, ha az eszköz megfelelőségi értékelésnek, és nem megfelelő eszközök hozzáférése a vállalati erőforrások eléréséhez az eszközön a fenyegetés megszüntetéséig.
 
 ## <a name="to-assign-an-mtd-device-compliance-policy"></a>MTD-eszközmegfelelési szabályzat hozzárendelése
 

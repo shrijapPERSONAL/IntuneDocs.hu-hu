@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5d114067402147237c0afbb4d8a3656d8bd2e77
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: ba12b8c8561d02a9bcf7bc7286bcbaa096d2b2ee
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049236"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045310"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Check Point SandBlast Mobile Threat Defense-összekötő az Intune-nal
 
-A Microsoft Intune-nal integrálható, Skycure nevű, veszélyforrások elleni mobileszköz-védelmi megoldás kockázatfelmérése alapján feltételes hozzáféréssel korlátozható a vállalati erőforrások mobil elérése. A kockázatfelmérés a Check Point SandBlast Mobile alkalmazást futtató eszközökről gyűjtött telemetriai adatokon alapul.
+Szabályozhatja, hogy a Check Point SandBlast Mobile, a Microsoft Intune-nal integrálható mobil veszélyforrások elleni védelmi megoldás kockázatfelmérése alapján feltételes hozzáféréssel a vállalati erőforrások mobil elérése. A kockázatfelmérés a Check Point SandBlast Mobile alkalmazást futtató eszközökről gyűjtött telemetriai adatokon alapul.
 
-Feltételes hozzáférési szabályzatokat konfigurálhat az Intune eszközmegfelelőségi szabályzataira épülő Check Point SandBlast Mobile-kockázatfelmérés alapján, és ezek révén az észlelt fenyegetések alapján engedélyezheti vagy tilthatja le a nem megfelelő eszközök hozzáférését a vállalati erőforrásokhoz.
+Engedélyezve van az Intune eszközmegfelelőségi szabályzatai által, amely segítségével engedélyezése vagy letiltása nem megfelelő eszközök hozzáférését a vállalati erőforrások észlelt Check Point SandBlast Mobile-kockázatfelmérés alapján történő feltételes hozzáférési szabályzatok konfigurálhatók az fenyegetések.
 
 ## <a name="how-do-intune-and-check-point-sandblast-mobile-help-protect-your-company-resources"></a>Hogyan segíti az Intune és a Check Point SandBlast Mobile a vállalati erőforrások védelmét?
 

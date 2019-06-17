@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eeb70727a187a769e56a9cfd517ecd7b583ba1c1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f13b78e05b9f0b94d98677004c7059f1acaa80f9
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042472"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045720"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-lists-in-intune"></a>Android és Samsung Knox Standard-eszközök korlátozási beállítások listák az Intune-ban
 
@@ -49,7 +49,7 @@ A cikk bemutatja a Microsoft Intune összes olyan eszközkorlátozásokra vonatk
 - **Jelszó**: **Szükséges** a végfelhasználó számára adjon meg egy jelszót az eszköz elérésére. **Nincs konfigurálva** lehetővé teszi a felhasználóknak az eszköz elérésére anélkül, hogy jelszót írna be.
 
     > [!NOTE]
-    > A Samsung Knox-eszközök automatikusan megkövetelnek egy 4 számjegyű PIN-kódot az MDM-regisztráció során. A natív Androidos eszközök automatikusan megkövetelhetnek egy PIN-kódot a feltételes hozzáférésnek való megfeleléshez.
+    > A Samsung Knox-eszközök automatikusan megkövetelnek egy 4 számjegyű PIN-kódot az MDM-regisztráció során. Natív Android-eszközök automatikusan szükség lehet a feltételes hozzáférés megfelelő PIN-kódot.
 
 - **Jelszó minimális hossza**: Adja meg a felhasználónak meg kell adnia, (4 és 16 karakter között) jelszó minimális hosszát.
 - **Ennyi perc inaktivitás képernyőzárolás**: Adja meg legfeljebb ennyi perc inaktivitás engedélyezett az eszközön a képernyőzárolás. Az eszközön a végfelhasználó nem adhat meg a profilban konfigurált időnél nagyobb értéket. A végfelhasználó kisebb értéket azonban megadhat. Ha például a profilban 15 perc van megadva, a végfelhasználó beállíthat 5 percet. 30 perces értéket azonban már nem adhat meg. 

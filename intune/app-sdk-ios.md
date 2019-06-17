@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 51ad3b2db3a45c06c0019b6f57ac4147112807fa
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5d229972c238756598694d2e3463f22290924ccc
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049823"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045485"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>A Microsoft Intune App SDK iOS rendszeren – fejlesztői útmutató
 
@@ -166,7 +166,7 @@ Az ADAL használata során az alkalmazáshoz tartozó jogkivonatok biztonsága �
 
 Ha az alkalmazás már ADAL-t használ felhasználók hitelesítésére, akkor a meglévő regisztrációs értékeket kell használnia, és felül kell bírálnia az Intune App SDK alapértékeit. Ez biztosítja azt, hogy a felhasználóknak ne kelljen kétszer hitelesíteniük magukat (egyszer az Intune App SDK felé, egyszer pedig az alkalmazás felé).
 
-Javasolt az alkalmazást a főágban az [ADAL legújabb verziójához](https://github.com/AzureAD/azure-activedirectory-library-for-objc/releases) kapcsolni. Az Intune App SDK jelenleg az ADAL broker ágát használja a feltételes hozzáférést igénylő alkalmazások támogatásához. (Tehát olyan alkalmazásokhoz, amelyek ebből következően függenek a Microsoft Authenticator alkalmazástól.) Az SDK ugyanakkor továbbra is kompatibilis az ADAL fő (master) ágával is. Az alkalmazásának megfelelő ágat használja.
+Javasolt az alkalmazást a főágban az [ADAL legújabb verziójához](https://github.com/AzureAD/azure-activedirectory-library-for-objc/releases) kapcsolni. Az Intune App SDK jelenleg az ADAL broker ágát használja feltételes hozzáférést igénylő alkalmazások támogatásához. (Tehát olyan alkalmazásokhoz, amelyek ebből következően függenek a Microsoft Authenticator alkalmazástól.) Az SDK ugyanakkor továbbra is kompatibilis az ADAL fő (master) ágával is. Az alkalmazásának megfelelő ágat használja.
 
 ### <a name="link-to-adal-binaries"></a>Hivatkozás az ADAL bináris fájljaira
 
@@ -224,7 +224,7 @@ Beállítás  | Typo  | Meghatározás | Kötelező?
 ADALClientId  | Sztring  | Az alkalmazás Azure AD ügyfél-azonosítója. | Kötelező, ha az alkalmazás használja az ADAL-t. |
 ADALAuthority | Sztring | Az alkalmazás használatban lévő Azure AD-szolgáltatója. Használja azt a saját környezetet, ahol az AAD-fiókok konfigurálása megtörtént. | Kötelező, ha az alkalmazás használja az ADAL-t. Ha ez az érték hiányzik, a rendszer egy Intune-beli alapértelmezett értéket használ.|
 ADALRedirectUri  | Sztring  | Az alkalmazás Azure AD átirányítási URI-ja. | Az ADALRedirectUri vagy az ADALRedirectScheme kötelező, ha az alkalmazás használja az ADAL-t.  |
-ADALRedirectScheme  | Karakterlánc  | Az alkalmazás Azure AD átirányítási sémája. Használható az ADALRedirectUri helyett, ha az alkalmazás átirányítási URI-ja `scheme://bundle_id` formátumú. | Az ADALRedirectUri vagy az ADALRedirectScheme kötelező, ha az alkalmazás használja az ADAL-t. |
+ADALRedirectScheme  | Sztring  | Az alkalmazás Azure AD átirányítási sémája. Használható az ADALRedirectUri helyett, ha az alkalmazás átirányítási URI-ja `scheme://bundle_id` formátumú. | Az ADALRedirectUri vagy az ADALRedirectScheme kötelező, ha az alkalmazás használja az ADAL-t. |
 ADALLogOverrideDisabled | Logikai  | Megadásával az SDK átirányítja az összes ADAL-naplófájlt (beleértve az esetleges ADAL-hívásokat az alkalmazásból) a saját naplófájljába. Az alapértelmezett érték a Nem. Állítsa be a YES értéket, ha az alkalmazás visszahívja a saját ADAL-naplóját. | Választható. |
 ADALCacheKeychainGroupOverride | Sztring  | Az ADAL-gyorsítótárhoz a „com.microsoft.adalcache” helyett használandó kulcslánccsoportot adja meg. Vegye figyelembe, hogy ez nem tartalmazza az app-id előtagot. Ezt az előtagot futás közben fogja megkapni a sztring. | Választható. |
 AppGroupIdentifiers | Sztringtömb  | Az alkalmazáscsoportok tömbje az alkalmazás jogosultságainak com.apple.security.application-groups szakaszában. | Szükséges, ha az alkalmazás alkalmazáscsoportokat használ. |
@@ -235,7 +235,7 @@ MainStoryboardFile <br> MainStoryboardFile~ipad  | Sztring  | Ennek a beállít�
 MAMPolicyRequired| Logikai| Azt adja meg, hogy megakadályozza-e a rendszer az alkalmazás elindítását, ha az alkalmazásnak nincs Intune APP-szabályzata. Az alapértelmezett érték a Nem. <br><br> Megjegyezés: Nem kell alkalmazásokat benyújtani az App Store a mampolicyrequired beállítása Igen. | Választható. Az alapértelmezett érték a nem.|
 MAMPolicyWarnAbsent | Logikai| Azt adja meg, hogy figyelmeztesse-e az alkalmazás a felhasználót indítás közben, ha az alkalmazásnak nincs Intune APP-szabályzata. <br><br> Megjegyezés: Felhasználók továbbra is engedélyezett lesz a figyelmeztetés bezárása után szabályzat nélkül az alkalmazás használatához. | Választható. Az alapértelmezett érték a nem. |
 MultiIdentity | Logikai| Azt adja meg, hogy az alkalmazás képes-e kezelni a többszörös identitást. | Választható. Az alapértelmezett érték a nem. |
-SplashIconFile <br> SplashIconFile ~ ipad | Karakterlánc  | Az Intune-kezdőképet (indítóképernyőt) tartalmazó ikonfájlt határozza meg. | Választható. |
+SplashIconFile <br> SplashIconFile ~ ipad | Sztring  | Az Intune-kezdőképet (indítóképernyőt) tartalmazó ikonfájlt határozza meg. | Választható. |
 SplashDuration | Szám | Az Intune-kezdőképernyő megjelenésének minimális időtartama (másodpercben) az alkalmazás indításakor. Az alapértelmezett érték 1.5. | Választható. |
 BackgroundColor| Sztring| A kezdő- és a PIN-kód bevitelére szolgáló képernyő háttérszínét adja meg. Hexadecimális RGB-sztringet fogad el „#XXXXXX” alakban, amelyben az X-ek helyén számjegy (0–9), illetve és A és F közötti nagybetű állhat. A kettőskereszt jel kihagyható.   | Választható. Alapértelmezése a világosszürke szín. |
 ForegroundColor| Karakterlánc| A kezdőképernyő és a PIN-kód bevitelére szolgáló képernyő előtérszínét, például a szöveg színét határozza meg. Hexadecimális RGB-sztringet fogad el „#XXXXXX” alakban, amelyben az X-ek helyén számjegy (0–9), illetve és A és F közötti nagybetű állhat. A kettőskereszt jel kihagyható.  | Választható. Alapértelmezett értéke a fekete. |

@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1dec78e0b1e323e99b6e70f71db982256aa98d18
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: cdedbfc611d44b4d6acb01e5e05bf3e73ed7fbda
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041230"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044198"
 ---
 # <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>Gyors útmutató: Az Android-eszközök jelszó megfelelőségi szabályzat létrehozása
 
 Ebben a rövid útmutatóban a Microsoft Intune-t használjuk annak beállítására, hogy a rendszer az Android-eszközöket használó munkatársaktól adott hosszúságú jelszót kérjen el, mielőtt engedélyezné az eszközökön található információkhoz való hozzáférést. 
 
-Az Intune-eszközmegfelelőségi szabályzatokkal megszabhatja az eszközök megfelelőségéhez kötelezően szükséges szabályokat és beállításokat. Ezeket a megfelelőségi szabályzatokat feltételes hozzáféréssel használva megakadályozható vagy engedélyezhető a vállalati erőforrásokhoz való hozzáférés. Emellett lekérhet eszközjelentéseket, és különböző műveleteket hajthat végre meg nem felelés esetén.
+Az Intune-eszközmegfelelőségi szabályzatokkal megszabhatja az eszközök megfelelőségéhez kötelezően szükséges szabályokat és beállításokat. Segítségével megfelelőségi szabályzatok a feltételes hozzáférés a vállalati erőforrásokhoz való hozzáférés engedélyezése vagy letiltása. Emellett lekérhet eszközjelentéseket, és különböző műveleteket hajthat végre meg nem felelés esetén.
 
 > [!IMPORTANT]
 > Az alkalmazottak tartalmainak védelme érdekében a jelszóbeállítások mellett egyéb rendszerbiztonsági beállításokat használatát is érdemes fontolóra venni. További információkért tekintse meg a [rendszerbiztonsági beállításokat](compliance-policy-create-android-for-work.md) ismertető cikket.

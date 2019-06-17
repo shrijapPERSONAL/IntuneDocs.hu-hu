@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b05e9e5b3933e9fbd8ca3f1f03ffd93d2522893e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c0dc8d7cca42898db92412e2cec41252a9a9a4d4
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046841"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046107"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Zimperium Mobile Threat Defense-összekötő az Intune-nal
 
-A Microsoft Intune-nal integrálható, Zimperium által irányított, veszélyforrások elleni mobileszköz-védelmi (MTD) megoldás kockázatfelmérése alapján feltételes hozzáféréssel korlátozható a vállalati erőforrások mobil elérése. A kockázatfelmérés a Zimperium alkalmazást futtató eszközökről gyűjtött telemetriai adatokon alapul.
+Szabályozhatja, hogy a Zimperium által irányított, a Microsoft Intune-nal integrálható a Mobile Threat Defense (MTD) megoldás kockázatfelmérése alapján feltételes hozzáféréssel a vállalati erőforrások mobil elérése. A kockázatfelmérés a Zimperium alkalmazást futtató eszközökről gyűjtött telemetriai adatokon alapul.
 
 Konfigurálhatja az Intune eszközmegfelelőségi szabályzatai által engedélyezett zimperium által jelentett kockázatértékelés alapján feltételes hozzáférési szabályzatokat. Kockázatok felmérése a szabályzat engedélyezheti vagy letilthatja a nem megfelelő eszközök hozzáférését a vállalati erőforrásokhoz az észlelt fenyegetések alapján.
 

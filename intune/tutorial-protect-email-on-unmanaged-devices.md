@@ -1,7 +1,7 @@
 ---
 title: Oktatóanyag – nem felügyelt eszközökön az Exchange Online e-mailek védelme
 titleSuffix: Microsoft Intune
-description: Ismerje meg, az Intune alkalmazásvédelmi szabályzataival és az Azure AD feltételes hozzáférés az Office 365 Exchange Online védelmét.
+description: Ismerje meg, az Intune alkalmazásvédelmi szabályzataival és Azure AD feltételes hozzáférés az Office 365 Exchange Online biztonságossá tételéhez.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fc1f877f9b457c6abafef7f1e66e8b04bba2c8e0
-ms.sourcegitcommit: 2f32f6d2129bc10cc4a02115732e995edceb37d6
+ms.openlocfilehash: 624cc72ad9539659e1ce2c8b70f6a6698d5e7ba2
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66829116"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046283"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Oktatóanyag: Nem felügyelt eszközökön az Exchange Online e-mailek védelme
 
@@ -29,7 +29,7 @@ Ismerje meg az alkalmazásvédelmi szabályzatok használata a feltételes hozz�
 
 > [!div class="checklist"]
 > * Hozzon létre az Outlook alkalmazás az Intune alkalmazásvédelmi szabályzat. Fogja korlátozzák, hogy a felhasználó milyen alkalmazásadatok mindenre megakadályozzák, hogy a "Mentés másként" és korlátozása kivágási, másolási és beillesztési műveleteket. 
-> * Hozzon létre az Azure Active Directory (Azure AD) feltételes hozzáférési szabályzatokat, amelyek lehetővé teszik a csak az Outlook alkalmazás az Exchange online-ban a vállalati e-mailek elérését. Többtényezős hitelesítés (MFA) is a Modern hitelesítési ügyfelek, például az Outlook iOS-hez és az Android lesz szükséges.
+> * Hozzon létre az Azure Active Directory (Azure AD) feltételes hozzáférési szabályzatai csak az Outlook alkalmazás vállalati e-mailek elérését az Exchange Online. Többtényezős hitelesítés (MFA) is a Modern hitelesítési ügyfelek, például az Outlook iOS-hez és az Android lesz szükséges.
 
 ## <a name="prerequisites"></a>Előfeltételek
   - Az oktatóanyag végrehajtásához szüksége lesz egy tesztelési bérlőre a következő előfizetésekkel:
@@ -87,7 +87,7 @@ Most, hogy biztosítsák az összes eszközplatformot két feltételes hozzáfé
 
 ### <a name="create-an-mfa-policy-for-modern-authentication-clients"></a>Az MFA-szabályzat létrehozása a Modern hitelesítési ügyfelek  
 
-1. Az Intune-ban válassza a **Feltételes hozzáférés** > **Szabályzatok** > **Új szabályzat** elemet.  
+1. Válassza ki az Intune-ban **feltételes hozzáférési** > **házirendek** > **új szabályzat**.  
 
 2. A **neve**, adja meg **házirend tesztelése a modern hitelesítési ügyfelek**.  
 
@@ -132,7 +132,7 @@ Most, hogy biztosítsák az összes eszközplatformot két feltételes hozzáfé
 A Modern hitelesítési ügyfelek feltételes hozzáférési szabályzat jön létre. Most már létrehozhat egy szabályzatot Exchange ActiveSync-ügyfelek.
 
 ### <a name="create-a-policy-for-exchange-active-sync-clients"></a>Hozzon létre egy házirendet az Exchange Active Sync-ügyfelek  
-1. Az Intune-ban válassza a **Feltételes hozzáférés** > **Szabályzatok** > **Új szabályzat** elemet.  
+1. Válassza ki az Intune-ban **feltételes hozzáférési** > **házirendek** > **új szabályzat**.  
 2. A **neve**, adja meg **Tesztszabályzat EAS-ügyfelek**.  
 3. A **Hozzárendelések** alatt válassza a **Felhasználók és csoportok** lehetőséget.  
 4. A *Belefoglalás* lapon válassza a **Minden felhasználó** lehetőséget, majd a **Kész** elemet.  
@@ -189,4 +189,4 @@ Ha már nincs szükség a tesztszabályzatokra, eltávolíthatja őket.
 5. Az a **házirendnév** listájához, válassza ki a helyi menüt ( **...** ) a tesztszabályzattal, és válassza ki az egyes **törlése**. Válassza az **Igen** lehetőséget a megerősítéshez.  
 
  ## <a name="next-steps"></a>További lépések  
-Ebben az oktatóanyagban alkalmazásvédelmi szabályzatok korlátozni, mi a felhasználó visszaállíthatja-e az Outlook alkalmazással létrehozott alkalmazást, és az Outlook alkalmazás megkövetelése és a többtényezős hitelesítés megkövetelése a Modern hitelesítési ügyfelek feltételes hozzáférési szabályzatok létrehozott. Feltételes hozzáférés az Intune használatát más alkalmazások és szolgáltatások védelmét kapcsolatos további információkért lásd: [feltételes hozzáférés beállítása](conditional-access.md).
+Ebben az oktatóanyagban létrehozott alkalmazásvédelmi szabályzatok korlátozni, mi a felhasználó visszaállíthatja-e az Outlook alkalmazással, és az Outlook alkalmazás megkövetelése és a többtényezős hitelesítés megkövetelése a Modern hitelesítési ügyfelek feltételes hozzáférési szabályzatok létrehozott. Feltételes hozzáférés az Intune használatát más alkalmazások és szolgáltatások védelmét kapcsolatos további információkért lásd: [feltételes hozzáférés beállítása](conditional-access.md).

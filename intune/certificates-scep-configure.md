@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/06/2019
+ms.date: 06/13/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e170fe0c1b461bad140b89ac01a2ad817e2082e5
-ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
+ms.openlocfilehash: bd48e7c83af0a786e1b34f91c05e95a5d47f3d45
+ms.sourcegitcommit: 268f495de486718b99d9c1b60d4576030cafd17b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744329"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67141822"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>SCEP-tanúsítványok konfigurálása és használata az Intune-nal
 
@@ -68,7 +68,7 @@ Az NDES-kiszolgálót egy fordított proxyn keresztül, például az [Azure AD-a
 |**Tanúsítványsablon**|Ez a sablon a vállalati hitelesítésszolgáltatón konfigurálható.|
 |**Ügyfél-hitelesítési tanúsítvány**|A vállalati vagy nyilvános hitelesítésszolgáltatótól lekért tanúsítvány, melyet az NDES-kiszolgálóra kell telepítenie.|
 |**Kiszolgálói hitelesítési tanúsítvány**|A vállalati vagy nyilvános hitelesítésszolgáltatótól lekért tanúsítvány. Ezt az SSL-tanúsítványt az NDES-kiszolgálón futó IIS-be kell telepítenie, majd kötést kell létrehoznia. Ha a tanúsítványban be van állítva az ügyfél- és kiszolgálóhitelesítési kulcshasználat (**Kibővített kulcshasználat**), akkor használhatja ugyanazon tanúsítványt.|
-|**Megbízható legfelső szintű hitelesítésszolgáltató tanúsítványa**|Exportálja ezeket a tanúsítványokat **.cer** kiterjesztésű fájlként a legfelső szintű hitelesítésszolgáltatóról vagy azokról az eszközökről, amelyek megbízhatónak tartják a legfelső szintű hitelesítésszolgáltatót. Ezután rendelje hozzá a felhasználók, eszközök vagy mindkét használatával a megbízható Hitelesítésszolgáltatói tanúsítványprofillal.<br /><b>Megjegyzés:<b />ha SCEP-tanúsítványprofil hozzá van rendelve, ügyeljen arra, hogy a hivatkozott az SCEP-tanúsítványprofil ugyanazon felhasználó vagy eszköz csoporthoz megbízható főtanúsítvány-profil hozzárendelése.<br /><br />Operációsrendszer-platformonként egy darab megbízható legfelső szintű hitelesítésszolgáltatói tanúsítványt használjon, és társítsa azt az egyes létrehozott megbízható főtanúsítvány-profilokkal.<br /><br />Szükség esetén további megbízható legfelső szintű hitelesítésszolgáltatói tanúsítványokat is használhat. Ezzel például bizalmi kapcsolatot alakíthat ki egy hitelesítésszolgáltatónak, mely aláírja a kiszolgálói hitelesítési tanúsítványokat a szervezet Wi-Fi hozzáférési pontjai számára.|
+|**Megbízható legfelső szintű hitelesítésszolgáltató tanúsítványa**|Exportálja ezeket a tanúsítványokat **.cer** kiterjesztésű fájlként a legfelső szintű hitelesítésszolgáltatóról vagy azokról az eszközökről, amelyek megbízhatónak tartják a legfelső szintű hitelesítésszolgáltatót. Ezután rendelje hozzá a felhasználók, eszközök vagy mindkét használatával a megbízható Hitelesítésszolgáltatói tanúsítványprofillal.<br /> **Megjegyzés:<br />ha SCEP-tanúsítványprofil hozzá van rendelve, ügyeljen arra, hogy rendelje hozzá a *megbízható főtanúsítvány-profil* hivatkozik az SCEP-tanúsítványprofil ugyanazon felhasználó vagy eszköz csoporthoz.  Ez a profil létrehozásához lásd: [hozzon létre egy megbízható tanúsítványprofilt](certficates-pfx-configure.md#create-a-trusted-certificate-profile), amely a cikk a PKCS-tanúsítványprofilok szerződését.** <br/><br />Operációsrendszer-platformonként egy megbízható legfelső szintű Hitelesítésszolgáltatói tanúsítványt használjon, és társíthatja azt minden egyes létrehozott megbízható főtanúsítvány-profilt. <br /><br />Szükség esetén további megbízható legfelső szintű hitelesítésszolgáltatói tanúsítványokat is használhat. Ezzel például bizalmi kapcsolatot alakíthat ki egy hitelesítésszolgáltatónak, mely aláírja a kiszolgálói hitelesítési tanúsítványokat a szervezet Wi-Fi hozzáférési pontjai számára.|
 
 ### <a name="accounts"></a>Fiókok
 
@@ -79,11 +79,11 @@ Az NDES-kiszolgálót egy fordított proxyn keresztül, például az [Azure AD-a
 ## <a name="configure-your-infrastructure"></a>Az infrastruktúra konfigurálása
 A tanúsítványprofilok konfigurálása előtt kövesse a következő lépéseket. Ezekhez szükség van a Windows Server 2012 R2 vagy újabb verzió és az Active Directory tanúsítványszolgáltatások (ADCS) ismeretére:
 
-#### <a name="step-1---create-an-ndes-service-account"></a>1. lépés – NDES szolgáltatásfiók létrehozása
+#### <a name="step-1---create-an-ndes-service-account"></a>1\. lépés – NDES szolgáltatásfiók létrehozása
 
 Hozzon létre egy tartományfelhasználói fiókot, melyet NDES szolgáltatásfiókként fog használni. Ezt a fiókot kell megadnia a sablonok vállalati hitelesítésszolgáltatónál való konfigurálásakor, még mielőtt telepítené és konfigurálná az NDES-t. Gondoskodjon arról, hogy a felhasználó rendelkezzen az alapértelmezett jogokkal, valamint a következő jogokkal: **Helyi bejelentkezés engedélyezése**, **Bejelentkezés szolgáltatásként** és **Bejelentkezés kötegfájlfolyamatként**. Egyes szervezeteknél olyan korlátozási szabályzatok lehetnek érvényben, amelyek letiltják ezeket a jogokat.
 
-#### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>2. lépés – Tanúsítványsablonok konfigurálása a hitelesítésszolgáltatónál
+#### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>2\. lépés – Tanúsítványsablonok konfigurálása a hitelesítésszolgáltatónál
 Ebben a lépésben a következőket fogja elvégezni:
 
 - Tanúsítványsablon konfigurálása az NDES számára
@@ -150,7 +150,7 @@ Konfigurálja a hitelesítésszolgáltatót úgy, hogy engedélyezze a kérelmez
 
 3. Ellenőrizze a **Tanúsítványsablonok** mappában, hogy a sablon közzététele sikerült-e.
 
-#### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>3. lépés – Előfeltételek konfigurálása az NDES-kiszolgálón
+#### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>3\. lépés – Előfeltételek konfigurálása az NDES-kiszolgálón
 Ebben a lépésben a következőket fogja elvégezni:
 
 - Az NDES hozzáadása egy Windows Server-kiszolgálóhoz, és az IIS konfigurálása az NDES támogatására
@@ -190,7 +190,7 @@ Ebben a lépésben a következőket fogja elvégezni:
 
     `setspn –s http/Server01.contoso.com contoso\NDESService`
 
-#### <a name="step-4---configure-ndes-for-use-with-intune"></a>4. lépés – Az NDES Intune-nal való használatának konfigurálása
+#### <a name="step-4---configure-ndes-for-use-with-intune"></a>4\. lépés – Az NDES Intune-nal való használatának konfigurálása
 Ebben a lépésben a következőket fogja elvégezni:
 
 - Az NDES konfigurálása a vállalati hitelesítésszolgáltatóval való használatra
@@ -287,7 +287,7 @@ Ebben a lépésben a következőket fogja elvégezni:
 
 4. Indítsa újra az NDES-kiszolgálót. A kiszolgáló mostantól készen áll az tanúsítvány-összekötő támogatására.
 
-#### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>5. lépés – Az Intune Certificate Connector engedélyezése, telepítése és konfigurálása
+#### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>5\. lépés – Az Intune Certificate Connector engedélyezése, telepítése és konfigurálása
 Ebben a lépésben a következőket fogja elvégezni:
 
 - Az NDES támogatásának engedélyezése az Intune-ban.
@@ -487,7 +487,7 @@ A szolgáltatás futásának ellenőrzéséhez nyisson meg egy böngészőt, és
      - **Digitális aláírás**: Engedélyezi a kulcscserét, ha a kulcs védelmét digitális aláírás segíti
    - **Kulcsméret (bit)** : Válassza ki, hány bitet tartalmazzon a kulcs
    - **Kivonatoló algoritmus** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): Jelölje ki a tanúsítvánnyal használni kívánt kivonatoló algoritmust a rendelkezésre álló típusok közül. Válassza a kapcsolódó eszközöknél használható legerősebb biztonsági szintet.
-   - **Legfelső szintű tanúsítvány**: Elemre olyan legfelső szintű Hitelesítésszolgáltatói tanúsítványprofil választásához korábban konfigurált és hozzárendelt a felhasználói és/vagy eszköz. Ennek a hitelesítésszolgáltatói tanúsítványnak a legfelső szintű tanúsítványnak kell lennie az adott tanúsítványprofilban konfigurált tanúsítványt kiállító hitelesítésszolgáltatónál. Győződjön meg arról, ugyanabba a csoportba hozzárendelve az SCEP-tanúsítványprofilt a megbízható főtanúsítvány-profil hozzárendelése.
+   - **Legfelső szintű tanúsítvány**: Válasszon egy [megbízható főtanúsítvány-profil](certficates-pfx-configure.md#create-a-trusted-certificate-profile) , hogy előzőleg létre, és a felhasználói és/vagy az eszközhöz rendelt. Ennek a hitelesítésszolgáltatói tanúsítványnak a legfelső szintű tanúsítványnak kell lennie az adott tanúsítványprofilban konfigurált tanúsítványt kiállító hitelesítésszolgáltatónál. Győződjön meg arról, ugyanabba a csoportba hozzárendelve az SCEP-tanúsítványprofilt a megbízható főtanúsítvány-profil hozzárendelése.
    - **Kibővített kulcshasználat**: **Adjon hozzá** értékeket a tanúsítvány felhasználási célja. A legtöbb esetben a tanúsítványnál szükséges az **Ügyfél-hitelesítés**, hogy a felhasználó vagy az eszköz hitelesíthető legyen egy kiszolgálóval. Szükség szerint azonban tetszőleges más kulcshasználatot is felvehet.
    - **Regisztrációs beállítások**
      - **Megújítási küszöb (%)** : Adja meg, hogy a tanúsítvány eszköz idejénél igényelje a tanúsítvány élettartamának hány százalékos hátralévő.
@@ -552,7 +552,7 @@ A 6.1806.x.x verziótól kezdődően az Intune Connector Service naplózza az es
 | -------------   | -------------   | -------------      |
 | 0x00000000 | Siker  | Siker |
 | 0x00000400 | PKCS_Issue_CA_Unavailable  | A hitelesítésszolgáltató érvénytelen vagy elérhetetlen. Győződjön meg róla, hogy a hitelesítésszolgáltató elérhető, és hogy a kiszolgálója tud kommunikálni vele. |
-| 0x00000401 | Symantec_ClientAuthCertNotFound  | A Symantec Client Auth tanúsítvány nem található meg a helyi tanúsítványtárban. További információért lásd: [A Symantec regisztrációszolgáltató tanúsítvány telepítése](https://docs.microsoft.com/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate).  |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | A Symantec Client Auth tanúsítvány nem található meg a helyi tanúsítványtárban. Tekintse meg a cikket [Intune tanúsítvány-összekötő beállítása a DigiCert PKI Platform](https://docs.microsoft.com/intune/certificates-digicert-configure#troubleshooting) további információt.  |
 | 0x00000402 | RevokeCert_AccessDenied  | A megadott fióknak nincs engedélye hitelesítésszolgáltatói tanúsítvány visszavonására. A kibocsátó hitelesítésszolgáltató nevét megtalálhatja a Hitelesítésszolgáltató neve mezőben.  |
 | 0x00000403 | CertThumbprint_NotFound  | Nem található a bemenetnek megfelelő tanúsítvány. Regisztrálja a tanúsítvány-összekötőt, és próbálkozzon ismét. |
 | 0x00000404 | Certificate_NotFound  | Nem található a megadott bemenetnek megfelelő tanúsítvány. Regisztrálja ismét a tanúsítvány-összekötőt, és próbálkozzon újra. |

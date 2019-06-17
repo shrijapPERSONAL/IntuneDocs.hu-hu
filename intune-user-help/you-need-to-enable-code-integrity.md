@@ -18,12 +18,12 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d258fcb7f338e4177c31a5c77b92b5941b7db212
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 0a10fc54fa3aa535e6dcfd2c06124fdc5b87c6a4
+ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61504927"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67041274"
 ---
 # <a name="enable-code-integrity"></a>Kódintegritás engedélyezése
 
@@ -34,7 +34,7 @@ A számítógép nem megfelelő, mert kódintegritás le van tiltva, ha, fordulj
 Ha speciális eszköz-felhasználóként azonosítsa magát, és próbálja meg a lépéseket, a saját, lásd: [a biztonságos rendszerindítás ismételt engedélyezése](https://docs.microsoft.com/windows-hardware/manufacture/desktop/disabling-secure-boot#re-enable-secure-boot).
 
 ## <a name="additional-resources-for-it-administrators"></a>A rendszergazdák további erőforrások  
-Ha Ön egy Intune-rendszergazda és a további tudnivalók a megfelelőségi állapotát az Intune eszközbeállítások szeretné, tekintse meg [Windows 10-es eszközök megfelelőségi szabályzatainak hozzáadása az Intune-ban](https://docs.microsoft.com/intune/compliance-policy-create-windows#windows-10-and-later-policy-settings). A megfelelőségi végezhető műveleteket az Intune-ban részletes tekintse meg, lásd: a [HealthAttestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#a-href-idtake-policy-actionastep-8-take-appropriate-policy-action-based-on-evaluation-results).  
+Ha Ön egy Intune-rendszergazda és a további tudnivalók a megfelelőségi állapotát az Intune eszközbeállítások szeretné, tekintse meg [Windows 10-es eszközök megfelelőségi szabályzatainak hozzáadása az Intune-ban](https://docs.microsoft.com/intune/compliance-policy-create-windows). A megfelelőségi végezhető műveleteket az Intune-ban részletes tekintse meg, lásd: a [HealthAttestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#a-href-idtake-policy-actionastep-8-take-appropriate-policy-action-based-on-evaluation-results).  
 
 ## <a name="next-steps"></a>További lépések  
 További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

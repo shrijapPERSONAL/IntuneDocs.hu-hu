@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e236548002f2779377e7ac57443077d48869e1f9
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 57684a1f5ef94b12c8f0e52a36d8432583391b8a
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047696"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045680"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Állítsa be az Intune helyszíni Exchange-összekötő a Microsoft Intune-ban
 Ebben a cikkben található információk segítséget telepítse, és figyelje az Exchange Active Sync helyszíni összekötőt az Intune-hoz.  Az Intune helyszíni Exchange connector használata az [engedélyezi vagy letiltja a hozzáférést az Exchange feltételes hozzáférési szabályzatok a helyszíni postaládák](conditional-access-exchange-create.md). 
@@ -184,9 +184,9 @@ Az Intune 1710-es kiadásától kezdve használhatja a [az Operations Manager fe
 ## <a name="manually-force-a-quick-sync-or-full-sync"></a>Gyors szinkronizálás vagy teljes szinkronizálás manuális kényszerítése
 A helyszíni Exchange connector szoftverből automatikusan szinkronizálja az EAS és az Intune-eszközrekordoknak rendszeresen. Ha egy eszköz megfelelőségi állapota megváltozik, az automatikus szinkronizálási folyamat rendszeresen frissíti a rekordokat, hogy az eszközök hozzáférésének letiltott vagy engedélyezett.
 
-   - **Gyors szinkronizálás** rendszeresen történik, naponta többször. A gyors szinkronizálás beolvassa azoknak az Intune-licenccel rendelkező és helyszíni feltételes Exchange-hozzáféréshez beállított felhasználóknak az eszközadatait, amelyek megváltoztak az utolsó szinkronizálás óta.
+   - **Gyors szinkronizálás** rendszeresen történik, naponta többször. Gyors szinkronizálási eszköz adatait kérdezi le az Intune-licenccel rendelkező és a helyszíni Exchange feltételes hozzáférési megcélzott felhasználók, amelyek a legutóbbi szinkronizálás óta.
 
-   - **Teljes szinkronizálás** naponta egyszer történik alapértelmezés szerint. A teljes szinkronizálás beolvassa az összes, Intune-licenccel rendelkező és helyszíni feltételes Exchange-hozzáféréshez beállított felhasználó eszközadatait. A teljes szinkronizálás emellett beolvassa az Exchange kiszolgálói adatait is, és biztosítja, hogy az Intune által az Azure Portalon megadott konfiguráció frissüljön az Exchange-kiszolgálón. 
+   - **Teljes szinkronizálás** naponta egyszer történik alapértelmezés szerint. A teljes szinkronizálás az összes eszköz adatait kérdezi le az Intune-licenccel rendelkező és a helyszíni Exchange feltételes hozzáférési megcélzott felhasználók. A teljes szinkronizálás emellett beolvassa az Exchange kiszolgálói adatait is, és biztosítja, hogy az Intune által az Azure Portalon megadott konfiguráció frissüljön az Exchange-kiszolgálón. 
 
 
 Kényszerítheti a szinkronizálás futtatását egy összekötőn, ha a **Gyors szinkronizálás** vagy a **Teljes szinkronizálás** lehetőséget választja az Intune-irányítópulton. Ehhez kövesse az alábbi lépéseket:
@@ -196,4 +196,4 @@ Kényszerítheti a szinkronizálás futtatását egy összekötőn, ha a **Gyors
    3. Válassza a szinkronizálni kívánt összekötőt, majd válassza a **Gyors szinkronizálás** vagy a **Teljes szinkronizálás** lehetőséget.
 
 ## <a name="next-steps"></a>További lépések
-[Feltételes hozzáférési szabályzat létrehozása helyszíni Exchange-hez](conditional-access-exchange-create.md)
+[A helyszíni Exchange feltételes hozzáférési szabályzat létrehozása](conditional-access-exchange-create.md)

@@ -17,25 +17,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d1153254f5e803bc0e1f933b8bdc022f241abcc
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: bb175d2133cf2a7bc5b064c13afb7e252147c729
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045847"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044251"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Gyors útmutató: Értesítések küldése a nem megfelelő eszközökre
 
 Ebben a rövid útmutatóban a e-mailes értesítéseket küldhet az alkalmazottai nem megfelelő eszközeire a Microsoft Intune-nal.
 
-Alapértelmezés szerint az Intune a nem megfelelő eszköz észlelése után azonnal nem megfelelőként jelöli meg azt. Ekkor az Azure Active Directory (AAD) [feltételes hozzáférés](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) funkciója letiltja az eszközt. Az Intune meg nem felelés esetén végrehajtandó műveleteivel rugalmas döntésekre is lehetőséget ad, ha egy eszköz nem megfelelő. Például türelmi időszakot adhat az ügyfeleknek a megfelelőséghez mielőtt letiltaná az eszközöket.
+Alapértelmezés szerint az Intune a nem megfelelő eszköz észlelése után azonnal nem megfelelőként jelöli meg azt. Az Azure Active Directory (AAD) [feltételes hozzáférési](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) majd letiltja az eszközt. Az Intune meg nem felelés esetén végrehajtandó műveleteivel rugalmas döntésekre is lehetőséget ad, ha egy eszköz nem megfelelő. Például türelmi időszakot adhat az ügyfeleknek a megfelelőséghez mielőtt letiltaná az eszközöket.
 
 A nem megfelelőség esetén e-mailt küldet az adott végfelhasználóknak. Az értesítő e-mailt testreszabhatja, mielőtt elküldené a végfelhasználónak. Így pontosan megadhatja az e-mail címzettjeit és tárgyát, az üzenet szövegét, a céges emblémát és a kapcsolattartási adatokat. Az Intune a nem megfelelő eszköz adatait is szerepelteti az értesítésben.
 
 Ha nem rendelkezik Intune-előfizetéssel, [regisztráljon egy ingyenes próbafiókkal](free-trial-sign-up.md).
 
 ## <a name="prerequisites"></a>Előfeltételek
-- Ha az eszközmegfelelőségi szabályzatot az eszközök céges erőforrásokhoz való hozzáférésének letiltásához használja, az AAD feltételes hozzáférést is be kell állítania. Ha elvégezte az [Eszközmegfelelőségi szabályzat létrehozása](quickstart-set-password-length-android.md) című útmutatót, az Azure Active Directoryt használja. További információt az AAD-ről a [Feltételes hozzáférés az Azure Active Directoryban](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) és [A feltételes hozzáférés használatának szokásos módjai az Intune-ban](conditional-access-intune-common-ways-use.md) című témakörökben találhat.
+- Az eszközmegfelelőségi szabályzatok használata az eszközök céges erőforrásokhoz, ha a feltételes hozzáférés aad-ben be kell állítania. Ha elvégezte az [Eszközmegfelelőségi szabályzat létrehozása](quickstart-set-password-length-android.md) című útmutatót, az Azure Active Directoryt használja. Aad-ben kapcsolatos további információkért lásd: [feltételes hozzáférés az Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) és [az Intune-nal feltételes hozzáférés használatának szokásos módjai](conditional-access-intune-common-ways-use.md).
 
 ## <a name="sign-in-to-intune"></a>Bejelentkezés az Intune-ba
 

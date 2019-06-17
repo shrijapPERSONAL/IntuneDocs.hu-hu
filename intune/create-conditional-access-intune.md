@@ -1,7 +1,7 @@
 ---
 title: Eszközalapú feltételes hozzáférés az Intune beállítása
 titleSuffix: Microsoft Intune
-description: Útmutató a Microsoft Intune eszközmegfelelőségi és mobilalkalmazás-kezelési alapján eszközalapú feltételes hozzáférési szabályzat létrehozásához.
+description: Ismerje meg, hogyan hozhat létre a Microsoft Intune eszközmegfelelőségi és mobilalkalmazás-kezelési alapján eszközalapú feltételes hozzáférési szabályzat.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cb081dd52999f203420e8a1f0b4f9c52a313f75
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 06dcc730406af3ae2d715cbe7f0795253e2629f0
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043275"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045098"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Eszközalapú feltételes hozzáférési szabályzat létrehozása
 
@@ -95,6 +95,6 @@ Feltételes hozzáférési szabályzat meghatározza az alkalmazás vagy védeni
 12. Kattintson a **Létrehozás** gombra.
 
 ## <a name="see-also"></a>Lásd még:
-[Alkalmazásalapú feltételes hozzáférés az Intune-nal](app-based-conditional-access-intune.md)
+[alkalmazásalapú feltételes hozzáférés Intune-nal](app-based-conditional-access-intune.md)
 
-[Az Intune feltételes hozzáférés hibaelhárítása](https://support.microsoft.com/help/4456106)
+[Intune-beli feltételes hozzáférés hibaelhárítása](https://support.microsoft.com/help/4456106)

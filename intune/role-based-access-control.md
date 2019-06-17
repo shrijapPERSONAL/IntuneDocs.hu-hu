@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4c4b9f1d1dd0072555d8438940969b7abd0a9fff
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: ee0e6ad7e46abe8da4c1b03e836eb9ba2f5991d0
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804485"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044162"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Szerepköralapú hozzáférés-vezérlés (RBAC) a Microsoft Intune-nal
 
@@ -60,11 +60,11 @@ Saját szerepköröket is létrehozhat egyéni engedélyekkel. Egyéni szerepkö
 | --- | :---: | :---: |
 | Globális rendszergazda | Olvasási/írási | Olvasási/írási |
 | Intune szolgáltatás rendszergazdája | Olvasási/írási | Olvasási/írási |
-| Feltételes hozzáférésű rendszergazda | Nincsenek | Nincsenek |
+| Feltételes hozzáférésű rendszergazda | None | Nincsenek |
 | Biztonsági rendszergazda | Csak olvasható | Csak olvasható |
 | Biztonsági operátor | Csak olvasható | Csak olvasható |
 | Biztonsági olvasó | Csak olvasható | Csak olvasható |
-| Szabályozási ügyintéző | None | Csak olvasható |
+| Szabályozási ügyintéző | Nincsenek | Csak olvasható |
 | Megfelelőségi adatok rendszergazda | Nincsenek | Csak olvasható |
 
 > [!TIP]
@@ -86,8 +86,8 @@ Szerepkör-hozzárendelés megtekintéséhez válassza ki **Intune** > **szerepk
 
 -   **Tulajdonságok**: A neve, leírása, szerepkör, a tagok, hatókörök és címkék a hozzárendelés.
 -   **A tagok**: A listán szereplő csoportok minden felhasználó rendelkezik a hatókör (csoportok) szereplő felhasználók és eszközök kezelésére jogosult.
--   **Hatókör (csoportok)** : Összes felhasználók és eszközök a megadott csoportokban szereplő felhasználók tagok által kezelhetők.
--   **[Hatókör (címkék)](scope-tags.md)** : A tagok felhasználója láthatja az erőforrásokat, amelyek az ugyanazon hatókörcímkék.
+-   **Hatókör (csoportok)**: Összes felhasználók és eszközök a megadott csoportokban szereplő felhasználók tagok által kezelhetők.
+-   **[Hatókör (címkék)](scope-tags.md)**: A tagok felhasználója láthatja az erőforrásokat, amelyek az ugyanazon hatókörcímkék.
 
 ### <a name="multiple-role-assignments"></a>Több szerepkör-hozzárendelések
 Ha egy felhasználó több szerepkör-hozzárendeléseket, azokat a szerepkör-hozzárendeléseket az engedélyek kiterjesztése a különböző objektumokat a következő:

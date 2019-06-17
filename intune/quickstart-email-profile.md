@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bbf04d771a9c1fd43cfe695dd2d27b9cfe1a0528
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: bbd8d81dfab46a1e752084aab75fbcf0d8104187
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050301"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044278"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>Gyors útmutató: Egy IOS e-mail profil létrehozása
 
-Ez a rövid útmutató bemutatja, hogyan hozhat létre e-mail-eszközprofilt iOS-eszközökhöz. Ez a profil meghatározza az iOS-eszközön a beépített e-mail-alkalmazás céges levelező rendszerhez való csatlakozásához szükséges beállításokat. Az e-mail-eszközprofilok segítenek standard beállítások megadásban a különféle eszközökön, valamint saját kötelező beállítások nélkül is lehetővé teszik a végfelhasználók számára, hogy az eszközükön hozzáférjenek a céges postafiókjukhoz. A levelező rendszer további védelméhez használhat e-mail-profilt, annak meghatározásához, hogy az eszközök kompatibilisek-e, majd beállíthat feltételes hozzáférést, amellyel csak a kompatibilis eszközök számára engedélyezi az e-mailek elérését. Az e-mail-profilokra vonatkozó részleteket megtekintheti [Az e-mail-beállítások konfigurálása a Microsoft Intune-ban](email-settings-configure.md) című szakaszban.
+Ez a rövid útmutató bemutatja, hogyan hozhat létre e-mail-eszközprofilt iOS-eszközökhöz. Ez a profil meghatározza az iOS-eszközön a beépített e-mail-alkalmazás céges levelező rendszerhez való csatlakozásához szükséges beállításokat. Az e-mail-eszközprofilok segítenek standard beállítások megadásban a különféle eszközökön, valamint saját kötelező beállítások nélkül is lehetővé teszik a végfelhasználók számára, hogy az eszközükön hozzáférjenek a céges postafiókjukhoz. A további védelme érdekében az e-maileket, használhatja egy e-mail-profilt, határozza meg, ha az eszközök nem felelnek meg, és a feltételes hozzáférést állíthat be, hogy csak az előírásoknak megfelelő eszközök hozzáférését a e-mailt. Az e-mail-profilokra vonatkozó részleteket megtekintheti [Az e-mail-beállítások konfigurálása a Microsoft Intune-ban](email-settings-configure.md) című szakaszban.
 
 Ha nem rendelkezik Intune-előfizetéssel, [regisztráljon egy ingyenes próbafiókkal](free-trial-sign-up.md).
 
@@ -71,7 +71,7 @@ Ha nem kívánja használni a létrehozott profilt további oktatóanyagokhoz va
 
 ## <a name="next-steps"></a>További lépések
 
-Ezt a rövid útmutató követve létrehozott egy e-mail-profilt az iOS-eszközökhöz. Most használhatja ezt a profilt annak megállapítására, hogy egy iOS-eszköz kompatibilis-e, ehhez létre kell hozni egy megfelelőségi profilt, amely nem megfelelőként jelöl meg minden iOS-eszközt, amely nem egyezik a profillal. A további védelem érdekében létrehozhat egy feltételes hozzáférési szabályzatot, amely letiltja a nem megfelelő iOS-eszközöket, hogy ne férhessenek hozzá a e-mailekhez. További információk az eszközmegfelelőségi szabályzatokról: [Az Intune eszközmegfelelőségi szabályzatai – első lépések](device-compliance-get-started.md).
+Ezt a rövid útmutató követve létrehozott egy e-mail-profilt az iOS-eszközökhöz. Most használhatja ezt a profilt annak megállapítására, hogy egy iOS-eszköz kompatibilis-e, ehhez létre kell hozni egy megfelelőségi profilt, amely nem megfelelőként jelöl meg minden iOS-eszközt, amely nem egyezik a profillal. A további védelem létrehozhat egy feltételes hozzáférési szabályzatot, amely letiltja a nem megfelelő iOS-eszközök nem férhetnek hozzá a e-mailt. További információk az eszközmegfelelőségi szabályzatokról: [Az Intune eszközmegfelelőségi szabályzatai – első lépések](device-compliance-get-started.md).
 
 > [!div class="nextstepaction"]
 > [Oktatóanyag: A felügyelt eszközökön az Exchange Online e-mailek védelme](tutorial-protect-email-on-enrolled-devices.md)

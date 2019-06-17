@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e861348e3ba8e3caef92eac04899d48cc790262a
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: bc2173e2972e422ac629331110d3b86b787765da
+ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61498611"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67040949"
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>A Céges portál alkalmazás telepítése, majd bejelentkezés a portálra
 
@@ -37,6 +37,6 @@ A Céges portál alkalmazás iOS rendszerű eszközére történő telepítésé
 
 3.  Nyissa meg a Vállalati portál alkalmazást, és írja be a munkahelyi vagy az iskolai e-mail címét és jelszavát, majd koppintson a **Bejelentkezés** elemre.
 
-    Ha első alkalommal jelentkezik be a vállalati portálra, és a munkahelye vagy az iskolája Intune-t használ, az alkalmazás kérni fogja, hogy regisztrálja az eszközt az Intune-ban. A regisztrációhoz kövesse az [iOS-eszköz regisztrálása az Intune-ban](enroll-your-device-in-intune-ios.md) című cikkben található lépéseket. További lehetőség: [Bejelentkezés más eszköz használatával](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device).
+    Ha első alkalommal jelentkezik be a vállalati portálra, és a munkahelye vagy az iskolája Intune-t használ, az alkalmazás kérni fogja, hogy regisztrálja az eszközt az Intune-ban. A regisztrációhoz kövesse az [iOS-eszköz regisztrálása az Intune-ban](enroll-your-device-in-intune-ios.md) című cikkben található lépéseket. További lehetőség: [Bejelentkezés más eszköz használatával](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#sign-in-from-another-device).
 
 További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

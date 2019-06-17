@@ -1,6 +1,6 @@
 ---
 title: Hálózati hozzáférés-vezérlés integrálása a Microsoft Intune-nal – Azure | Microsoft Docs
-description: A hálózati hozzáférés-vezérlési (NAC) megoldások az Intune-beli eszközök regisztrációját és megfelelőségét ellenőrzik. A NAC bizonyos működési módokat tartalmaz, és feltételes hozzáféréssel működik. Tekintse meg az előkészítés lépéseit, valamint a partneri megoldásokat.
+description: A hálózati hozzáférés-vezérlési (NAC) megoldások az Intune-beli eszközök regisztrációját és megfelelőségét ellenőrzik. A NAC bizonyos viselkedéseinek tartalmazza, és a feltételes hozzáféréssel működik. Tekintse meg az előkészítés lépéseit, valamint a partneri megoldásokat.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9663691053d8ecd204ad899805153d0bfb25e6f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 400de55e26076a8d612ac31388d5c5daec68d4a0
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041569"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044536"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Hálózati hozzáférés-vezérlés (NAC) integrálása az Intune-nal
 
@@ -43,7 +43,7 @@ Azon eszközök esetében, melyek erőforrásokhoz való hozzáférése le van t
 
 ## <a name="nac-and-conditional-access"></a>NAC és feltételes hozzáférés
 
-A NAC feltételes hozzáférés használatával hoz hozzáférés-vezérlési döntéseket. További információ: [A feltételes hozzáférés használatának szokásos módjai az Intune-ban](conditional-access-intune-common-ways-use.md).
+A NAC feltételes hozzáférés használatával hoz hozzáférés-vezérlési döntéseket. További információkért lásd: [az Intune-nal feltételes hozzáférés használatának szokásos módjai](conditional-access-intune-common-ways-use.md).
 
 ## <a name="how-the-nac-integration-works"></a>Az integrált hálózati hozzáférés-vezérlés működése
 

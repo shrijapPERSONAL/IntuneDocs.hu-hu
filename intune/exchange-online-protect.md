@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30c0e5af6d7ff0467383294c071d0ffdb96c5dc1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9d3e74244315b7345a632a9ecd2bf631a134e5ab
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041834"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045019"
 ---
 # <a name="protect-office-365-exchange-online-without-requiring-device-management"></a>Az Office 365 Exchange Online védelmének biztosítása eszközkezelés megkövetelése nélkül
 
@@ -32,11 +32,11 @@ Ha az eszközkezelő rendszer kiépítése mellett dönt, erre van lehetősége.
 
 ## <a name="action-plan"></a>Műveletterv
 
-1. [További információ a feltételes hozzáférésről](conditional-access.md). 
-2. [További információ az alkalmazásalapú feltételes hozzáférésről](app-based-conditional-access-intune.md).
-3. [Alkalmazásalapú feltételes hozzáférési szabályzatok beállítása az Exchange Online-hoz](app-based-conditional-access-intune-create.md).
+1. [További információ a feltételes hozzáférés](conditional-access.md). 
+2. [További információ az alkalmazásalapú feltételes hozzáférési](app-based-conditional-access-intune.md).
+3. [Alkalmazásalapú feltételes hozzáférési szabályzatok beállítása az Exchange online-hoz](app-based-conditional-access-intune-create.md).
 4. [Letilthatja a nem felügyelhető alkalmazásokat](app-modern-authentication-block.md), különösen azokat, amelyek nem használják az Azure Active Directory Authentication Libraryt (ADAL).
-5. (Nem kötelező) [Alkalmazásalapú feltételes hozzáférési szabályzatok beállítása a SharePoint Online-hoz](app-based-conditional-access-intune-create.md). Ezekkel a szabályzatokkal letiltható a céges adatokhoz való hozzáférés azokból az alkalmazásokból, amelyek felügyelete és védelme nem biztosítható. A szabályzatok emellett korlátozzák a SharePoint mobile alkalmazáson keresztüli hozzáférést is. 
+5. (Nem kötelező) [Alkalmazásalapú feltételes hozzáférési szabályzatok beállítása a SharePoint online-hoz](app-based-conditional-access-intune-create.md). Ezekkel a szabályzatokkal letiltható a céges adatokhoz való hozzáférés azokból az alkalmazásokból, amelyek felügyelete és védelme nem biztosítható. A szabályzatok emellett korlátozzák a SharePoint mobile alkalmazáson keresztüli hozzáférést is. 
 
 ## <a name="what-to-tell-employees-and-students"></a>Miről kell tájékoztatni az alkalmazottakat és a tanulókat?
 
@@ -45,9 +45,9 @@ Ha az eszközkezelő rendszer kiépítése mellett dönt, erre van lehetősége.
 
 ## <a name="next-steps"></a>További lépések
 
-Alkalmazásalapú feltételes hozzáférést használt a céges adatok biztonságának növeléséhez. A következő lépések részeként további információhoz juthat azokról az egyéb módszerekről, melyekkel növelhető a céges adatok védelme, beleértve a következőket: 
+Alkalmazásalapú feltételes hozzáférési használt vállalati adatok biztonságának növeléséhez. A következő lépések részeként további információhoz juthat azokról az egyéb módszerekről, melyekkel növelhető a céges adatok védelme, beleértve a következőket: 
 
-* [Az eszközmegfelelőségen, eszközkockázaton, helyen, valamint az Active Directoryban és az Azure Active Directoryban lévő felhasználói attribútumokon alapuló feltételes hozzáférés](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) beállítása.  
+* Beállítása [eszközmegfelelőség, eszközkockázaton, helyen és az Active Directory és az Azure Active Directory felhasználói attribútumok alapján feltételes hozzáférési](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).  
 * Az alkalmazásvédelmi szabályzatok beállításával biztosíthatja a céges adatok szándékos vagy véletlen adatszivárgással szembeni védelmét. 
 * Az Azure Information Protection használatával biztosíthatja a hálózaton kívüli céges adatok védelmét. 
 

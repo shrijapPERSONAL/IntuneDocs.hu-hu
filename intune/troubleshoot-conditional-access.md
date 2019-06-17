@@ -1,7 +1,7 @@
 ---
 title: A feltételes hozzáférés hibaelhárítása
 titleSuffix: Microsoft Intune
-description: A teendők abban az esetben, ha a felhasználók nem tudnak hozzáférni az erőforrásokhoz az Intune feltételes hozzáférésével.
+description: Mi a teendő, ha a felhasználók nem tudnak hozzáférni az erőforrásokhoz az Intune feltételes hozzáférésével.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,20 +17,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a5aeae0d4256232d01c7e6171b10159a130b513
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f286ec4928ad4bb026c95d10562d9b339b2ca5f3
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044678"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043917"
 ---
 # <a name="troubleshoot-conditional-access"></a>A feltételes hozzáférés hibaelhárítása
 
-Az Intune és a feltételes hozzáférés használatával szabályozhatja az Office 365-szolgáltatások, például az Exchange Online, a SharePoint Online, a Skype Vállalati online verzió, a helyszíni Exchange és más szolgáltatások elérését. Ez a funkció lehetővé teszi, hogy a vállalati erőforrásokhoz csak olyan eszközök férhessenek hozzá, amelyeket az Intune-ban regisztrált, és megfelelnek az Ön által az Intune rendszergazdai konzolján vagy az Azure Active Directoryban beállított feltétles hozzáférési szabályoknak. Ez a cikk azt ismerteti, mi a teendő, ha a felhasználók nem tudják elérni a feltételes hozzáférési szabályokkal védett erőforrásokat, vagy ha a felhasználók hozzáférhetnek a védett erőforrásokhoz, de ezt le kellene tiltani.
+Hozzáférés az Office 365-szolgáltatásokhoz, például az Exchange Online, SharePoint online-hoz, a Skype vállalati Online védelme is, a helyszínen és egyéb szolgáltatások Exchange Intune és a feltételes hozzáférés használatával. Ez a funkció lehetővé teszi, hogy ellenőrizze, hogy a vállalati erőforrásokhoz való hozzáférést az Intune-ban regisztrált eszközökre korlátozva, és megfeleljenek a feltételes hozzáférési szabályokat állíthat be az Intune felügyeleti konzol vagy az Azure Active Directory. Ez a cikk azt ismerteti, mi a teendő, ha a felhasználók nem tudnak hozzáférni az erőforrásokhoz a feltételes hozzáférés védett, vagy ha a felhasználók hozzáférhetnek a védett erőforrásokhoz, de le kell tiltani.
 
-## <a name="requirements-for-conditional-access"></a>A feltételes hozzáférés követelményei
+## <a name="requirements-for-conditional-access"></a>Feltételes hozzáférés követelményeinek
 
-Az alábbi követelményeknek kell teljesülniük, hogy a feltételes hozzáférés működjön:
+Az alábbi követelményeknek kell teljesülniük a feltételes hozzáférés működjön:
 
 - Az eszközt regisztrálni kell az Intune-ban, és annak kell felügyelnie.
 - A felhasználónak és az eszköznek is meg kell felelnie az Intune-ban hozzájuk rendelt megfelelőségi szabályzatoknak.
@@ -54,7 +54,7 @@ Az egyes eszközökre vonatkozó feltételek megtekinthetők az Azure Portalon, 
 - Előfordulhat, hogy bizonyos androidos eszközök titkosítottnak tűnnek, de a Céges portál alkalmazás nem titkosítottként ismeri fel és nem megfelelőként jelöli meg azokat. Ebben a forgatókönyvben a felhasználó számára a Céges portál alkalmazás értesítést jelenít meg, kérve egy indítási PIN-kód beállítását az eszközhöz. Koppintson az értesítésre, és a meglévő PIN-kód vagy a jelszó ellenőrzése után válassza a **Require PIN to start device** (PIN-kód kérése az eszköz indításához) beállítást a **Secure start-up** (Biztonságos indítás) képernyőn, majd koppintson a Céges portál alkalmazásban a **Megfelelőség ellenőrzése** gombra az eszköznél. Az eszközt ettől kezdve titkosítottként kell, hogy észlelje a program. 
   > [!NOTE]
   > Egyes eszközgyártók alapértelmezett PIN-kód használatával titkosítják eszközeiket a felhasználó által megadott PIN-kód helyett. Az Intune az alapértelmezett PIN-kóddal titkosított eszközöket nem tekinti biztonságosnak, és ezeket nem megfelelőként jelöli meg, amíg a felhasználó létre nem hoz egy új, nem alapértelmezett PIN-kódot.
-- A rendszer a regisztrált és megfelelő Android-eszközöket is letilthatja, és kaphatnak karanténba helyezésről szóló értesítést, amikor először próbálják elérni a vállalati erőforrásokat. Ha ez történik, győződjön meg róla, hogy a Céges portál alkalmazás nem fut, majd a kiértékelés aktiválásához kattintson a karantén-e-mailben a **Kezdés most** hivatkozásra. Ezt csak akkor kell elvégezni, amikor először engedélyezi a feltételes hozzáférést.
+- A rendszer a regisztrált és megfelelő Android-eszközöket is letilthatja, és kaphatnak karanténba helyezésről szóló értesítést, amikor először próbálják elérni a vállalati erőforrásokat. Ha ez történik, győződjön meg róla, hogy a Céges portál alkalmazás nem fut, majd a kiértékelés aktiválásához kattintson a karantén-e-mailben a **Kezdés most** hivatkozásra. Ez csak kell elvégezni, amikor először engedélyezve a feltételes hozzáférés.
 
 ## <a name="devices-are-blocked-and-no-quarantine-email-is-received"></a>Az eszközök le vannak tiltva, és nem érkezett karanténba helyezési e-mail
 
@@ -64,10 +64,10 @@ Az egyes eszközökre vonatkozó feltételek megtekinthetők az Azure Portalon, 
 
 ## <a name="devices-are-noncompliant-but-users-are-not-blocked"></a>Az eszközök nem megfelelőek, de a felhasználók nincsenek letiltva
 
-- Windows rendszerű számítógépeknél a feltételes hozzáférés csak a natív e-mail-alkalmazást, a modern hitelesítéssel rendelkező Office 2013-at és az Office 2016-ot tiltja le. Az Outlook korábbi verzióinak vagy az összes levelezőalkalmazásnak Windows rendszerű számítógépeken való letiltásához AAD-eszközregisztráció és az Active Directory összevonási szolgáltatások (AD FS) konfigurációja szükséges, amint az a [Set up SharePoint Online and Exchange Online for Azure Active Directory conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication) (A SharePoint Online és az Exchange Online beállítása az Azure Active Directoryban feltételes hozzáféréshez) című cikkben szerepel. 
+- Windows rendszerű számítógépekhez a feltételes hozzáférés csak letiltja a a natív e-mail alkalmazás, Office 2013 Modern hitelesítés vagy az Office 2016. Az Outlook vagy a Windows rendszerű számítógépek összes levelezőalkalmazásait blokkoló korábbi verzióiban szükség AAD Eszközregisztráció és az Active Directory összevonási szolgáltatások (AD FS) konfigurációk megfelelően [az Azure Active Directory beállítása a SharePoint Online és Exchange online-hoz Feltételes hozzáférés](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication). 
 - Ha egy kiválasztott eszköz összes adatát törli vagy kivonja azt az Intune felügyelete alól, a kivonást követően még több órán keresztül rendelkezhet hozzáféréssel. Ennek az az oka, hogy az Exchange hat órán át gyorsítótárazza a hozzáférési jogosultságokat. Ebben az esetben érdemes más adatvédelmi megoldást keresnie a kivont eszközökre.
-- A Surface Hub-eszközök támogatják a feltételes hozzáférést, azonban a megfelelő értékeléshez a megfelelőségi szabályzatot eszközcsoportokra kell alkalmazni (nem felhasználói csoportokra).
-- Ellenőrizze a megfelelőségi szabályzatok és a feltételes hozzáférési szabályzatok hozzárendeléseit. Ha a felhasználó nem olyan csoportba tartozik, amelyhez hozzá vannak rendelve a szabályzatok, vagy ha kizárt csoportban van, akkor a felhasználó nem lesz letiltva. A rendszer csak a hozzárendelt csoportban lévő felhasználók eszközeinek megfelelőségét ellenőrzi.
+- Surface Hub-eszközök támogatják a feltételes hozzáférést; a megfelelőségi szabályzat azonban eszközcsoportokra (nem a felhasználói csoportok) megfelelő tesztelési kell telepítenie.
+- A megfelelőségi szabályzatokról és a feltételes hozzáférési szabályzatok hozzárendeléseinek ellenőrzése. Ha a felhasználó nem olyan csoportba tartozik, amelyhez hozzá vannak rendelve a szabályzatok, vagy ha kizárt csoportban van, akkor a felhasználó nem lesz letiltva. A rendszer csak a hozzárendelt csoportban lévő felhasználók eszközeinek megfelelőségét ellenőrzi.
 
 ## <a name="noncompliant-device-is-not-blocked"></a>A nem megfelelő eszköz nincs letiltva
 

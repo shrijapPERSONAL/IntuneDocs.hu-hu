@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 987e3171c4e5c5ba3f15097837e2c018ddc7a4b6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: aa6dfef745157ae96736f8405fd5cafc33d4335f
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049191"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045289"
 ---
 # <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>A Microsoft Defender ATP által azonosított biztonsági rések az Intune-nal  
 
@@ -67,7 +67,7 @@ Példa-munkafolyamat:
 **Az ATP Intune konfigurációk**:  
 - Szolgáltatások közötti kapcsolat konfigurálása a Microsoft Defender ATP.  
 - Profil típusú eszközmegfelelőségi szabályzat üzembe helyezése **Microsoft Defender ATP-ben (Windows 10 asztali verzió)** az ATP értékelte kockázati majd rendelkező eszközöket.
-  Állítsa be az Intune a ATP kapcsolatos információkért lásd: [kényszerítse a megfelelőséget a Microsoft Defender ATP feltételes hozzáférés az Intune-ban](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).  
+  Állítsa be az Intune a ATP kapcsolatos információkért lásd: [kényszerítse a megfelelőséget a Microsoft Defender ATP-ben a feltételes hozzáférés az Intune-ban](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).  
 
 ## <a name="work-with-security-tasks"></a>Biztonsági tevékenységek használata  
 

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/31/2019
+ms.date: 06/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c14568a0581220cf5941984645bd0b9044e00c1
-ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.openlocfilehash: 860d990e07fb2424adf0672e416c608b1251ae3c
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66749940"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046196"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 
@@ -46,6 +46,17 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Ugyanitt tal
 
 <!-- ########################## -->
 
+## <a name="week-of-june-10-2019"></a>2019\. június 10 hete 
+
+### <a name="app-management"></a>Alkalmazáskezelés
+
+#### <a name="new-sample-apps-showing-intune-sdk-integration-available-on-github----2653471---"></a>Új, a Githubon érhető el az Intune SDK-integráció bemutató mintaalkalmazások <!-- 2653471 -->
+A GitHub-fiók msintuneappsdk hozzá van adva az új mintaalkalmazások iOS (Swift), Android, a Xamarin.iOS, a Xamarin Forms eszközkészlethez és a Xamarin.Android-hez. Ezeket az alkalmazásokat úgy van kialakítva, hogy a meglévő dokumentációnk kiegészítik, és adja meg az Intune APP SDK integrálása saját mobilalkalmazások hogyan technológiáink miként. Ha az Intune SDK-val további útmutatást igénylő alkalmazás fejlesztője, tekintse meg a következő csatolt minták:
+- [Chatr](https://github.com/msintuneappsdk/Chatr-Sample-Intune-iOS-App) – A natív iOS (Swift) a közvetített hitelesítés az Azure Active Directory Authentication Library (ADAL) használó alkalmazás az azonnali üzenetküldéshez.
+- [Taskr](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Android-App) – A natív Androidos teendőlista-alkalmazás, amely a közvetített hitelesítés adal-t használja.
+- [Taskr](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps) – A Xamarin.Android teendőlista-alkalmazás, amely az ADAL-t használja közvetített hitelesítés, a tárházban is rendelkezik a Xamarin.Forms-alkalmazást.
+- [Xamarin.iOS-mintaalkalmazás](https://github.com/msintuneappsdk/sample-intune-xamarin-ios) -lecsupaszított Xamarin.iOS mintaalkalmazást.
+
 ## <a name="week-of-may-27-2019"></a>Hét 2019. május 27. 
 
 ### <a name="app-management"></a>Alkalmazáskezelés
@@ -53,7 +64,7 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Ugyanitt tal
 #### <a name="reporting-for-potentially-harmful-apps-on-android-devices----4223162---"></a>Jelentéskészítés a vélhetően kárt okozó alkalmazások Android-eszközökön <!-- 4223162 -->
 Az Intune mostantól biztosít potenciálisan káros alkalmazásokkal kapcsolatos további jelentési adatokat az Android-eszközökön. 
 
-## <a name="week-of-may-20-2019"></a>2019. május 20 hete 
+## <a name="week-of-may-20-2019"></a>2019\. május 20 hete 
 
 ### <a name="app-management"></a>Alkalmazáskezelés
 
@@ -66,7 +77,7 @@ A Windows céges portál alkalmazás már egy új lap feliratú **eszközök**. 
 
 Intuitívabb, ellenőrizze, hogy a **OrderID** értékre változott az Autopilot-eszközök attribútumnév **csoporthoz címke**. Autopilot-eszközadatok a feltöltendő CSV-k használatakor, az oszlop fejlécére, nem OrderID csoporthoz címke kell használnia.  
 
-## <a name="week-of-may-13-2019"></a>2019. május 13 hete 
+## <a name="week-of-may-13-2019"></a>2019\. május 13 hete 
 
 ### <a name="app-management"></a>Alkalmazáskezelés
 
@@ -183,7 +194,7 @@ A [jelentés a BitLocker és az eszköz titkosítása](encryption-monitor.md) m�
 #### <a name="outlook-signature-and-biometric-settings-for--ios-and-android-devices----4050557---"></a>Outlook-aláírás és a biometriai beállítások az iOS és Android-eszközök <!-- 4050557 -->
 Mostantól megadhatja, hogy engedélyezve van-e az alapértelmezett aláírást az Outlook iOS és Android rendszerű eszközökön. Emellett kiválaszthatja, hogy a felhasználók az IOS Outlook biometrikus beállításának módosításához.
 
-## <a name="week-of-may-6-2019"></a>2019. május 6 hete 
+## <a name="week-of-may-6-2019"></a>2019\. május 6 hete 
 
 ### <a name="device-configuration"></a>Eszközök konfigurálása
 
@@ -192,7 +203,7 @@ Mostantól megadhatja, hogy engedélyezve van-e az alapértelmezett aláírást 
 F5 BIG-IP 13, amely lehetővé teszi a NAC-funkciók F5 hozzáférés az Intune-ban iOS-en frissítést adott ki. Ez a funkció használatához:
 
 - BIG-IP Update 13.1.1.5 való frissítéséhez. BIG-IP-14 nem támogatott.
-- BIG-IP integrálása az Intune-nal a NAC. Lépések [áttekintése: APM konfigurálása az eszköz állapotát ellenőrzi a végpont felügyeleti rendszerekkel](https://support.f5.com/kb/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89).
+- BIG-IP integrálása az Intune-nal a NAC. Lépések [áttekintése: APM konfigurálása az eszköz állapotát ellenőrzi a végpont felügyeleti rendszerekkel](https://techdocs.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html).
 - Ellenőrizze a **engedélyezése hálózati hozzáférést vezérlő (NAC)** beállítása az Intune-ban a VPN-profil.
 
 A rendelkezésre álló beállítás megtekintéséhez, keresse fel a [konfigurálása VPN-beállítások iOS-eszközökön](vpn-settings-ios.md).
@@ -222,7 +233,7 @@ A következő példában láthatja az általános adatvédelmi rendelet vezérl�
 
 ![Tekintse meg a minta az Intune-értékelés GDPR, beleértve a felhasználói műveletek és a Microsoft-műveletek](./media/intune-assessment-status.png)
 
-## <a name="week-of-april-15-2019"></a>2019. április 15 i hét
+## <a name="week-of-april-15-2019"></a>2019\. április 15 i hét
 
 ### <a name="app-management"></a>Alkalmazáskezelés
 
@@ -360,7 +371,7 @@ Hatókörcímkék adhat hozzá az Apple VPP-tokent. Csak az azonos címkéjű ha
 
 
 
-## <a name="week-of-april-1-2019"></a>2019. április 1 hét
+## <a name="week-of-april-1-2019"></a>2019\. április 1 hét
 
 ### <a name="device-configuration"></a>Eszközök konfigurálása
 
@@ -381,14 +392,14 @@ A vállalati portál iOS beléptetési képernyők és a lépéseket, amelyek a 
 
 Frissített regisztrációs lépéseket és képernyők: [iOS-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios).  
 
-## <a name="week-of-march-25-2019"></a>2019. március 25 hete
+## <a name="week-of-march-25-2019"></a>2019\. március 25 hete
 
 ### <a name="monitor-and-troubleshoot"></a>Monitorozás és hibaelhárítás
 
 ### <a name="support-for-the-power-bi-compliance-app-from-the-data-warehouse-blade-in-microsoft-intune----4260871---"></a>A Power BI megfelelésével alkalmazást a Microsoft Intune-ban az adattárház panelen támogatása <!-- 4260871 -->
 Korábban a **töltse le a Power BI-fájl** hivatkozásra a **Intune Data Warehouse** panel letöltött egy Intune-adattárház-jelentés (.pbix-fájl). Ez a jelentés a Power BI megfelelésével alkalmazás lett cserélve. A Power BI megfelelésével app speciális betöltésekor vagy a telepítő nem szükséges. Ez közvetlenül a Power BI online portálon nyissa meg, és kifejezetten az Intune-bérlőhöz, a hitelesítő adatok alapján az adatok megjelenítéséhez. Az Intune-ban válassza ki a **beállítása az Intune-adattárház** hivatkozást az Intune panel jobb oldalán. Kattintson a **Power BI alkalmazás első**. További információkért lásd: [kapcsolódás az Adattárházhoz a Power bi-ban a](reports-proc-get-a-link-powerbi.md).
 
-## <a name="week-of-march-18-2019"></a>2019. március 18 hete
+## <a name="week-of-march-18-2019"></a>2019\. március 18 hete
 
 ### <a name="app-management"></a>Alkalmazáskezelés
 
@@ -495,7 +506,7 @@ További információkért lásd: [szerepköralapú hozzáférés-vezérlés](ro
 ### <a name="microsoft-edge-support-for-intune-scenarios-on-ios-and-android-devices----3411007---"></a>A Microsoft Edge támogatása az iOS- és Android-eszközök Intune-forgatókönyvek <!-- 3411007 -->
 A Microsoft Edge támogatni fogják az azonos felügyeleti forgatókönyvek, az Intune Managed Browser hozzáadásával kapcsolatos fejlesztések a végfelhasználói élményt. A Microsoft Edge vállalati Intune szabályzatai által engedélyezett funkciók kettős-Identity, app protection házirend-integráció, az Azure application proxy-integráció, és felügyelt Kedvencek és a kezdőlap parancsikonok. További információkért lásd: [Microsoft Edge támogatási](app-configuration-managed-browser.md#microsoft-edge-support).
 
-## <a name="week-of-february-25-2019"></a>2019. február 25 hete
+## <a name="week-of-february-25-2019"></a>2019\. február 25 hete
 
 ### <a name="device-configuration"></a>Eszközök konfigurálása
 
@@ -509,7 +520,7 @@ Már elérhető az Intune-os PowerShell modult, amely lehetővé teszi a Microso
 Kiterjesztettük a támogatást az Intune-ban a kézbesítésoptimalizálás konfigurálása. Most már konfigurálhat egy kibontott listája [kézbesítésoptimalizálás beállítások](delivery-optimization-settings.md) és a cél az eszközök közvetlenül az Intune-konzolon.
 
 
-## <a name="week-of-february-18-2019"></a>2019. február 18 hete
+## <a name="week-of-february-18-2019"></a>2019\. február 18 hete
 
 ### <a name="app-management"></a>Alkalmazáskezelés
 
@@ -561,7 +572,7 @@ Rendelje hozzá az egyszerű tanúsítványigénylési protokoll (SCEP) tanúsí
 - macOS
 
 #### <a name="intune-conditional-access-ui-update------2432313-----"></a>Az Intune feltételes hozzáférés felhasználói felület frissítése   <!-- 2432313   -->
-A feltételes hozzáférés az Intune-konzolon a felhasználói felület fejlesztéseket végeztünk. Ezek a következők:
+Fejlesztéseket végeztünk a felhasználói felületen való feltételes hozzáférés az Intune-konzolon. Ezek a következők:
 -  Lecseréli az Intune *feltételes hozzáférési* panelről a panel az Azure Active Directoryból. Ez biztosítja a hozzáférést, a beállítások és konfigurációk teljes körét [feltételes hozzáférési](conditional-access.md) (ami továbbra is egy Azure AD-technológia), az Intune-konzolról. 
 - Azt már átnevezték a *helyszíni hozzáférés* panel *Exchange-hozzáférés*, és más helyre a *Exchange szolgáltatási összekötője* átnevezve: ezen a panelen a telepítőt.  Ez a változás összesíti a helyét, [konfigurálhatja és figyelheti az Exchange online-hoz és a helyszíni kapcsolatos részleteket](exchange-connector-install.md).  
 
@@ -654,7 +665,7 @@ A **céges portálon való lemondás** jelentés át lett nevezve a **hiányos f
 
 
 <!-- ########################## -->
-## <a name="week-of-february-4-2019"></a>2019. február 4 hét
+## <a name="week-of-february-4-2019"></a>2019\. február 4 hét
 
 ### <a name="app-management"></a>Alkalmazáskezelés
 
@@ -662,7 +673,7 @@ A **céges portálon való lemondás** jelentés át lett nevezve a **hiányos f
 Az Intune-ban macOS céges portálra sötét mód mostantól támogatja a macOS-hez. Ha engedélyezi a sötét üzemmód 10.14 + macOS-eszközön, a vállalati portál lehetőség a megjelenését, amely mutatja, hogy a üzemmód színeket.
 
 <!-- ########################## -->
-## <a name="week-of-january-21-2019"></a>2019. január 21 hete
+## <a name="week-of-january-21-2019"></a>2019\. január 21 hete
 
 ### <a name="app-management"></a>Alkalmazáskezelés
 
@@ -770,13 +781,13 @@ Hozzon létre egy új profilt, vagy szerkessze a profil, ha a kiválasztott kiha
 Android-eszközökhöz a egy nem regisztrált alkalmazás alkalmazásvédelmi szabályzat regisztráció nélkül (alkalmazás-TUDJUK) a telepítési forgatókönyvben, így a felügyelt Google Play áruházbeli alkalmazások telepítése és az ÜZLETÁGI alkalmazások a felhasználók számára való használata. Pontosabban a végfelhasználók számára biztosíthat már nem igényel a végfelhasználók számára, hogy lazábbá tehető az eszközeik biztonsági irányelvei, tiltják azáltal, hogy telepítések az ismeretlen forrásból származó alkalmazás katalógus és telepítési élményt. Emellett ebben a telepítési forgatókönyvben egy jobb végfelhasználói élményt biztosít.
 
 <!-- ########################## -->
-## <a name="week-of-january-14-2019"></a>2019. január 14 hete
+## <a name="week-of-january-14-2019"></a>2019\. január 14 hete
 
 ### <a name="preview-of-support-for-android-corporate-owned-fully-managed-devices----1574342----"></a>A vállalat által birtokolt, teljes körűen felügyelt Android-eszközök támogatása előzetes verzió <!-- 1574342  -->
 Az Intune mostantól támogatja a teljes körűen felügyelt Android-eszközök a vállalat által birtokolt "eszköz tulajdonosa" forgatókönyv, ahol eszközök szorosan által felügyelt IT és a rendszer az egyes felhasználókkal kapcsolódó. Ez lehetővé teszi a rendszergazdák számára a teljes eszköz kezelése, egy kiterjesztett tartomány nem érhető el a munkahelyi profilok házirend-vezérlők kényszerítésére, és korlátozza a felhasználók, alkalmazások telepítése csak a felügyelt Google Play áruházból. További információkért lásd: [beállítása az Intune-ban Android-regisztrációs teljes körűen felügyelt eszközök](android-fully-managed-enroll.md) és [a dedikált eszközök és a teljes körűen felügyelt eszközök regisztrálásához](android-dedicated-devices-fully-managed-enroll.md).  Ne feledje, hogy ez a funkció előzetes verzióban érhető el. Az Intune bizonyos funkciók, például a tanúsítványok, megfelelőségi és feltételes hozzáférés, nem érhetők el jelenleg az Android a teljes körűen felügyelt felhasználói eszközök.
 
 <!-- ########################## -->
-## <a name="week-of-january-7-2019"></a>2019. január 7 hete
+## <a name="week-of-january-7-2019"></a>2019\. január 7 hete
 
 ### <a name="app-management"></a>Alkalmazáskezelés
 
@@ -899,7 +910,7 @@ Az új felületen saját szavaival fejtheti ki problémáját, valamint hibaelh�
 Hatókörcímkék korlátozni a szerepköröket és alkalmazásokat hozhat létre. Hatókörcímke adhat hozzá egy alkalmazáshoz, így csak is az adott hatókörcímke hozzárendelt szerepkörrel rendelkező személyek hozzáférhetnek az alkalmazáshoz. Jelenleg a felügyelt Google Play vagy az Apple Volume Purchase Program (VPP) használatával megvásárolt alkalmazások Intune-hoz hozzáadott alkalmazások hatókörcímkék (a jövőben tervezett) nem rendelhető. További információkért lásd: [használja a szűrő házirendek hatókörcímkék](scope-tags.md).
 
 <!-- ########################## -->
-## <a name="week-of-december-10-2018"></a>2018. December 10. hét
+## <a name="week-of-december-10-2018"></a>2018\. December 10. hét
 
 ### <a name="app-management"></a>Alkalmazáskezelés
 
@@ -917,7 +928,7 @@ A folytatáshoz frissítéseknek a fogadása a vállalati portál és más Offic
 Az Intune most már a macOS 10.12 vagy újabb verziója szükséges. MacOS előzetes verziókat használó eszközök regisztrálása az Intune-ban a vállalati portál nem használható. Szeretne kapni a Távsegítség és az új funkciók, a felhasználók kell frissítheti az eszközt a macOS 10.12 vagy újabb verzió és a vállalati portál frissítése a legújabb verzióra.
 
 <!-- ########################## -->
-## <a name="week-of-november-26-2018"></a>2018. November 26 hete
+## <a name="week-of-november-26-2018"></a>2018\. November 26 hete
 
 ### <a name="app-management"></a>Alkalmazáskezelés
 
@@ -1011,7 +1022,7 @@ Az új beállítás segítségével a felhasználók az eszközön lévő többf
 A teljes képernyős beállítások megtekintéséhez lásd: [eszközkorlátozások Android Enterprise](device-restrictions-android-for-work.md).
 
 <!-- ########################## -->
-## <a name="week-of-november-12-2018"></a>2018. November 12 hete
+## <a name="week-of-november-12-2018"></a>2018\. November 12 hete
 
 ### <a name="network-access-control-nac-support-for-citrix-sso-for-ios----3259404---"></a>Hálózati hozzáférés-vezérlés (NAC) iOS-es Citrix egyszeri bejelentkezés támogatása <!-- 3259404 -->
 
@@ -1020,7 +1031,7 @@ A Citrix Citrix-átjáróra, hogy a hálózati hozzáférés-vezérlés (NAC) a 
 [VPN-beállítások konfigurálása az iOS-eszközökön](vpn-settings-ios.md#base-vpn-settings) további információt nyújt az NAC, beleértve néhány további követelményeket is. 
 
 <!-- ########################## -->
-## <a name="week-of-november-5-2018"></a>2018. november 5-i hét
+## <a name="week-of-november-5-2018"></a>2018\. november 5-i hét
 
 ### <a name="support-for-ios-12-oauth-in-ios-email-profiles---2155106---"></a>Támogatja az iOS 12 OAuth iOS e-mail-profilok <!--2155106 -->
 
@@ -1033,7 +1044,7 @@ Az Autopilot segítségével mostantól hibrid, Azure Active Directory-hoz csatl
 Ez a funkció néhány napon belül kerül bevezetésre a felhasználók között. Előfordulhat tehát, hogy Ön nem tudja követni ezeket a lépéseket addig, amíg a fiókjában is meg nem jelenik ez az újítás.
 
 <!-- ########################## -->
-## <a name="week-of-october-29-2018"></a>2018. október 29-i hét
+## <a name="week-of-october-29-2018"></a>2018\. október 29-i hét
 
 ### <a name="app-management"></a>Alkalmazáskezelés
 
@@ -1109,7 +1120,7 @@ A Samsung Knox Mobile Enrollment esetében az Intune mostantól támogatja az es
 - Konfigurálhat egy újraindítás kapcsolatos figyelmeztető üzenet újraindul, a munkaidőn kívül történik, amely támogatja a BYOD-forgatókönyvekhez.
 
 #### <a name="group-windows-autopilot-enrolled-devices-by-correlator-id----2075110---"></a>Csoportban a Windows Autopilot-ban regisztrált eszközök korrelátor azonosító alapján <!-- 2075110 -->
-Az Intune mostantól támogatja a Windows rendszerű eszközök korrelátorazonosító alapján történő csoportosítását, ha regisztrációjuk az [Autopilot for existing devices](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) (Autopilot meglévő eszközökön) című cikkben leírtak szerint, a Configuration Manager használatával történt. A korrelátorazonosító az AutoPilot konfigurációs fájljának egyik paramétere. Az Intune az [Azure AD-eszközök enrollmentProfileName attribútumát](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) automatikusan az ezzel megegyező „OfflineAutopilotprofile-<correlator ID>” attribútumra állítja be. Így tetszőleges dinamikus Azure AD-csoportok hozhatók létre korrelátorazonosító alapján az offline Autopilot-regisztrációk enrollmentprofileName attribútuma használatával. További információt a [Windows Autopilot for existing devices](enrollment-autopilot.md#windows-autopilot-for-existing-devices) (Windows Autopilot meglévő eszközökön) című cikkben talál.
+Az Intune mostantól támogatja a Windows rendszerű eszközök korrelátorazonosító alapján történő csoportosítását, ha regisztrációjuk az [Autopilot for existing devices](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) (Autopilot meglévő eszközökön) című cikkben leírtak szerint, a Configuration Manager használatával történt. A korrelátorazonosító az AutoPilot konfigurációs fájljának egyik paramétere. Az Intune az [Azure AD-eszközök enrollmentProfileName attribútumát](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices) automatikusan az ezzel megegyező „OfflineAutopilotprofile-<correlator ID>” attribútumra állítja be. Így tetszőleges dinamikus Azure AD-csoportok hozhatók létre korrelátorazonosító alapján az offline Autopilot-regisztrációk enrollmentprofileName attribútuma használatával. További információt a [Windows Autopilot for existing devices](enrollment-autopilot.md#windows-autopilot-for-existing-devices) (Windows Autopilot meglévő eszközökön) című cikkben talál.
 
 #### <a name="intune-app-protection-policies----2984657---"></a>Az Intune alkalmazásvédelmi szabályzatai <!-- 2984657 -->
 Az Intune alkalmazásvédelemre vonatkozó szabályzatának segítségével többféle adatvédelmi beállítást konfigurálhat az Intune védelemben részesített alkalmazásaira, például a Microsoft Outlookra és a Microsoft Wordre vonatkozóan. E beállítások megjelenését és működését az [iOS](app-protection-policy-settings-ios.md) és az [Android](app-protection-policy-settings-android.md) esetében is módosítottuk, így könnyebben találhatja meg az egyes beállításokat. A szabályzatra vonatkozó beállítások három kategóriába tartoznak:
@@ -1148,7 +1159,7 @@ A [GitHub]( https://aka.ms/intunepowershell) felületén mostantól új PowerShe
 
 
 <!-- ########################## -->
-## <a name="week-of-october-15-2018"></a>2018. október 15-i hét
+## <a name="week-of-october-15-2018"></a>2018\. október 15-i hét
 
 ### <a name="pin-prompt-when-you-change-fingerprints-or-face-id-on-an-ios-device-----2637704----"></a>PIN-kód kérése az ujjlenyomatok módosításakor vagy face ID iOS-eszközön  <!-- 2637704  -->
 A felhasználókat mostantól PIN-kód megadására kéri a rendszer azt követően, hogy biometrikus módosításokat hajtanak végre iOS-eszközükön. Ebbe beletartoznak a regisztrált ujjlenyomat- és face ID-azonosítást érintő módosítások is. A kérés időzítése attól függ, hogy a *hozzáférés újraellenőrzésére vonatkozó követelmények* konfigurációja hány perc után lépi túl az időt.  Ha nincs beállítva PIN-kód, a rendszer új beállítására kéri a felhasználót. 
@@ -1157,14 +1168,14 @@ Ez a funkció csak az iOS-ben érhető el, és a működéséhez szükséges az 
 
 
 <!-- ########################## -->
-## <a name="week-of-october-1-2018"></a>2018. október 1-i hét
+## <a name="week-of-october-1-2018"></a>2018\. október 1-i hét
 
 ### <a name="app-management"></a>Alkalmazáskezelés
 
 #### <a name="access-to-key-profile-properties-using-the-company-portal-app----772203---"></a>Hozzáférési kulcs profil tulajdonságainak a vállalati portál alkalmazás használatával <!-- 772203 -->
 A végfelhasználók mostantól a Céges portál alkalmazással hozzáférhetnek a legfontosabb fióktulajdonságokhoz és -műveletekhez, például a jelszó-visszaállításhoz. 
 
-#### <a name="3rd-party-keyboards-can-be-blocked-by-app-settings-on-ios----1248481---"></a>3. fél billentyűzetek blokkolhatja iOS APP beállításai <!-- 1248481 -->
+#### <a name="3rd-party-keyboards-can-be-blocked-by-app-settings-on-ios----1248481---"></a>3\. fél billentyűzetek blokkolhatja iOS APP beállításai <!-- 1248481 -->
 Az Intune-rendszergazdák az iOS-es eszközökön letilthatják a harmadik féltől származó billentyűzeteket, ha azok a szabályzat által védett alkalmazásokon hozzáférnek a céges adatokhoz. Ha az alkalmazásvédelmi szabályzat (APP) a harmadik félhez tartozó billentyűzetek letiltására van beállítva, az eszköz használója üzenetet kap, amikor először fér hozzá ilyen billentyűzettel a céges adatokhoz. A natív billentyűzeten kívül minden más lehetőség le van tiltva, és a felhasználók nem láthatják ezeket. A felhasználók csak egyszer látják az üzenetet. 
 
 #### <a name="user-account-access-of-intune-apps-on-managed-android-and-ios-devices----1248496---"></a>Felhasználóifiók-hozzáférés felügyelt Android és IOS rendszerű eszközökön az Intune-alkalmazások <!-- 1248496 -->

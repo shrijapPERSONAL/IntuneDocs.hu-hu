@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1929b811a5a5320bc0ceefcef4f05ed2443ac070
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: a0a0a686d41f0f9bc7869b1b9379be7f6037c3b5
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819645"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046348"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>A Mobile Threat Defense-összekötő engedélyezése az Intune-ban
 
@@ -62,7 +62,7 @@ A cég igényei alapján eldöntheti, hogy az MTD mely kapcsolós beállításai
 - **Ennyi nap múlva partner nem válaszol**: Ennyi nap inaktivitás után tekinti úgy a partner a kapcsolat megszakadása miatt nem válaszol az Intune. Az Intune nem veszi figyelembe a nem válaszoló MTD-partnerek megfelelőségi állapotát.
 
 > [!IMPORTANT] 
-> Ha lehetséges, javasoljuk, hogy adja hozzá, és rendelje hozzá az MTD-alkalmazások az eszköz megfelelőségét és a feltételes hozzáférési szabályok létrehozása előtt. Ez segít biztosítja, hogy az MTD alkalmazást kész és elérhető legyen a végfelhasználók számára, mielőtt hozzáférhetnének a levelezéshez és más vállalati erőforrásokhoz való telepítéséhez.
+> Ha lehetséges, javasoljuk, hogy adja hozzá, és az MTD-alkalmazások hozzárendelése az eszközmegfelelőségi és feltételes hozzáférési szabályzat szabályok létrehozása előtt. Ez segít biztosítja, hogy az MTD alkalmazást kész és elérhető legyen a végfelhasználók számára, mielőtt hozzáférhetnének a levelezéshez és más vállalati erőforrásokhoz való telepítéséhez.
 
 > [!TIP]
 > A Mobile Threat Defense panelen látható a **Kapcsolat állapota** és a **Legutóbb szinkronizálva**, mely utóbbi az Intune és az MTD-partner közötti szinkronizálásra vonatkozik.

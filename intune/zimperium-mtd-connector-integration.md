@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ddd08baa99ebf7d6e7701d8345e42a72f0dbd57
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: db7f008e67c0523a373da24dd0a04f3556d9dd4c
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046567"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031374"
 ---
 # <a name="integrate-zimperium-with-intune"></a>A Zimperium integrálása az Intune-nal
 
@@ -31,7 +31,7 @@ A Zimperium mobilfenyegetések elleni megoldás Intune-beli integrálásához k�
 ## <a name="before-you-begin"></a>Előkészületek
 
 > [!NOTE]
-> A következő lépéseket kell elvégezni a [Zimperium MTD-konzolon](https://sso.zimperium.com/signon/aad/).
+> A következő lépéseket kell elvégezni a [Zimperium MTD-konzolon](https://www.zimperium.com/platform).
 
 Mielőtt elkezdené a Zimperium integrálását az Intune-nal, ellenőrizze, hogy rendelkezik-e az alábbi előfizetéssel és hitelesítő adatokkal:
 
@@ -66,7 +66,7 @@ Jóváhagyás és Azure Active Directory-alkalmazásokkal kapcsolatos további i
 
 ## <a name="to-set-up-zimperium-integration"></a>A Zimperium-integráció beállítása
 
-1.  Nyissa meg a [Zimperium MTD konzolt](https://sso.zimperium.com/signon/aad/), és jelentkezzen be a hitelesítő adataival. A Zimperium-integráció telepítési folyamat végrehajtásához egy Azure Active Directory-felhasználó, aki rendelkezik a globális rendszergazdai szerepkörrel kell bejelentkeznie. Egyszeri beállítás művelet használja a globális rendszergazdai jogosultságokkal a Zimperium-alkalmazások kommunikálni az Intune-ban a szervezet engedélyt adni. 
+1.  Nyissa meg a [Zimperium MTD konzolt](https://www.zimperium.com/platform), és jelentkezzen be a hitelesítő adataival. A Zimperium-integráció telepítési folyamat végrehajtásához egy Azure Active Directory-felhasználó, aki rendelkezik a globális rendszergazdai szerepkörrel kell bejelentkeznie. Egyszeri beállítás művelet használja a globális rendszergazdai jogosultságokkal a Zimperium-alkalmazások kommunikálni az Intune-ban a szervezet engedélyt adni. 
 
 2.  Válassza a bal oldali menü **Felügyelet** pontját.
 

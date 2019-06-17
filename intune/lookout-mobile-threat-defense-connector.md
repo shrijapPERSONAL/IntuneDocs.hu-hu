@@ -6,55 +6,58 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/09/2017
+ms.date: 06/11/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3a730a5d-2a90-42b0-aa28-aadfc7a18788
-ms.reviewer: heenamac
+ms.reviewer: davera
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: da8ccc65b2091e96d7ef089994c3d34bbaf9b557
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 3566d144abad563ead64c124e128c221e725a25c
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041736"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045700"
 ---
-# <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Lookout Mobile Threat Defense-összekötő az Intune-nal
+# <a name="lookout-mobile-endpoint-security-connector-with-intune"></a>Lookout Mobile Endpoint Security-összekötő az Intune-nal
 
 A Microsoft Intune-nal integrálható, Lookout nevű, veszélyforrások elleni mobileszköz-védelmi megoldás kockázatfelmérése alapján korlátozható a vállalati erőforrások mobil elérése. A kockázatfelmérés a Lookout által az eszközökről gyűjtött telemetriai adatokon alapul, például:
 - Az operációs rendszer biztonsági rései
 - Telepített kártékony alkalmazások
 - Kártékony hálózati profilok
 
-Az Intune megfelelőségi szabályzatai által engedélyezett, a Lookout által jelentett kockázatértékelés alapján feltételes hozzáférési szabályzatok konfigurálhatók az Intune-ban. A beállítások lehetővé teszik a nem megfelelő eszközök engedélyezését vagy letiltását az észlelt fenyegetések alapján.
+Konfigurálhatja az Intune eszközmegfelelőségi szabályzatai által engedélyezett a Lookout által jelentett kockázatértékelés alapján feltételes hozzáférési szabályzatokat. A beállítások lehetővé teszik a nem megfelelő eszközök engedélyezését vagy letiltását az észlelt fenyegetések alapján.
 
-## <a name="how-do-intune-and-lookout-mobile-threat-defense-help-protect-company-resources"></a>Hogyan segít az Intune és a Lookout Mobile Threat Defense a céges erőforrások védelmében?
+## <a name="how-do-intune-and-lookout-mobile-endpoint-security-help-protect-company-resources"></a>Hogyan Intune és a Lookout Mobile Endpoint Securityhez segíti a vállalati erőforrások védelmét?
 A Lookout mobilalkalmazása, a **Lookout for Work** telepítve van és fut a mobileszközökön. Az alkalmazás rögzíti a fájlrendszer, a hálózati protokollkészlet, valamint az eszközök és az alkalmazások telemetriai adatait, ha elérhetők, és továbbítja őket a Lookout veszélyforrások elleni eszközvédelmi felhőszolgáltatásnak, amely kiszámítja az eszköz kockázatát a mobil veszélyforrások tekintetében. A Lookout konzolon igény szerint módosítható a fenyegetések kockázatiszint-besorolása.  
 
 Az Intune megfelelőségi szabályzata tartalmaz egy szabályt a Lookout Mobile Threat Defense-hez, amely a Lookout kockázatértékelésén alapul. Ha ez a szabály engedélyezve van, az Intune az engedélyezett szabályzat alapján értékeli az eszköz megfelelőségét.
 
-Amennyiben az eszköz nem megfelelőnek minősül, akkor letiltható a hozzáférése az olyan erőforrásokhoz, mint az Exchange Online és a SharePoint Online. A letiltott eszközök felhasználói értesítést kapnak arról, hogyan lehet a problémát elhárítani az újbóli hozzáféréshez. Az útmutatót a Lookout for Work alkalmazás szolgáltatja.
+Ha az eszköz nem megfelelőnek minősül, erőforrásokhoz való hozzáférést, mint az Exchange Online és SharePoint online-hoz is letiltott. A letiltott eszközök felhasználói kapnak lépéseket a probléma megoldásához és a hozzáférés visszaszerzéséhez. Az útmutatót a Lookout for Work alkalmazás szolgáltatja.
 
-## <a name="supported-platforms"></a>Támogatott platformok
+## <a name="supported-platforms"></a>Támogatott platformok  
 A Lookout az alábbi Intune-ban regisztrált platformokat támogatja:
-* **Android 4.1 és újabb verziók**
-* **iOS 8 és újabb verziók** Ha további információt szeretne a támogatott platformokról és nyelvekről, látogassa meg a [Lookout webhelyét](https://personal.support.lookout.com/hc/articles/114094140253).
+* **Android 4.1 és újabb verziók**  
+* **iOS 8 és újabb verziók**  
+
+További információ a támogatott platformokról és nyelvekről, látogassa meg a [Lookout webhelyét](https://personal.support.lookout.com/hc/articles/114094140253).  
 
 ## <a name="prerequisites"></a>Előfeltételek
-* Microsoft Intune-előfizetés
-* Azure Active Directory
 * Vállalati előfizetés a Lookout Mobile EndPoint Securityhez  
+* Microsoft Intune-előfizetés
+* Prémium szintű Azure Active Directory
+* Nagyvállalati mobilitás és a Security (EMS) E3 vagy E5 rendelkező felhasználókhoz rendelt licenceket.  
 
 További információ: [Lookout Mobile Endpoint Security](https://www.lookout.com/products/mobile-endpoint-security)
 
 ## <a name="sample-scenarios"></a>Mintaforgatókönyvek
 
-Alább a Lookout Mobile Threat Defense Intune-nal való használatának gyakori eseteit soroljuk fel.
+Az Intune-nal Mobile Endpoint Securityhez használatakor az alábbiakban gyakori helyzetek.
 
 ### <a name="control-access-based-on-threats-from-malicious-apps"></a>Hozzáférés vezérlése rosszindulatú alkalmazások jelentette fenyegetés alapján
 Ha az eszközön rosszindulatú alkalmazásokat, például kártevőket észlel a rendszer, a probléma megoldásáig az eszközön letilthatók az alábbiak:
@@ -96,6 +99,6 @@ Ha az eszközön rosszindulatú alkalmazásokat, például kártevőket észlel 
 ## <a name="next-steps"></a>További lépések
 A legfontosabb lépések a megoldás megvalósítása érdekében:
 1.  [A Lookout-integráció beállítása](lookout-mtd-connector-integration.md)
-2.  [A Lookout Mobile Threat Defense engedélyezése az Intune-ban](mtd-connector-enable.md)
+2.  [Az Intune-ban Mobile Endpoint Securityhez engedélyezése](mtd-connector-enable.md)
 3.  [A Lookout for Work felvétele és hozzárendelése](mtd-apps-ios-app-configuration-policy-add-assign.md)
 4.  [A Lookout eszközmegfelelőségi szabályzatának konfigurálása](mtd-device-compliance-policy-create.md)

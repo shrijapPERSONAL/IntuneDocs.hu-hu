@@ -1,7 +1,7 @@
 ---
-title: A végfelhasználói bevezetés ösztönzése feltételes hozzáféréssel
+title: A végfelhasználói ösztönzése feltételes hozzáféréssel
 titleSuffix: Microsoft Intune
-description: Megtudhatja, hogyan ösztönözheti a Microsoft Intune-regisztrációt a feltételes hozzáféréssel.
+description: Ismerje meg, hogyan ösztönözhető a regisztráció a Microsoft Intune feltételes hozzáférés használatával.
 keywords: ''
 author: dougeby
 ms.author: dougeby
@@ -16,26 +16,26 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a37d6dac24049a10b5abaed41a44c0c391b095e6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2bedaf279d65ee1ed7f8dda4e8d866fb848bade7
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050475"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044588"
 ---
-# <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>A végfelhasználói bevezetés ösztönzése feltételes hozzáféréssel a Microsoft Intune-ban
+# <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>A végfelhasználói ösztönzése feltételes hozzáféréssel Microsoft Intune-ban
 
-Az Intune feltételes hozzáférési funkcióival – például a levelezés letiltásával a nem regisztrált eszközökön – ösztönözhető a regisztráció és a megfelelőség biztosítása, de ez nem feltétele a sikeres migrációnak. ezt inkább az áttérési célértékek és a biztonsági követelmények alapján lehet megítélni.
+Például a levelezés, a nem regisztrált eszközök az Intune-nal feltételes hozzáférési funkcióival segítséget, meghajtó eszközök regisztrációját és megfelelőségét, de ezek nem szükségesek a sikeres áttelepítéshez. ezt inkább az áttérési célértékek és a biztonsági követelmények alapján lehet megítélni.
 
 ## <a name="migration-campaign-with-conditional-access"></a>Migrációs kampány feltételes hozzáféréssel
 
-Egy jellemző példán keresztül mutatjuk be, hogyan segítheti elő a feltételes hozzáférés a migrációs kampányt:
+Íme egy jellemző példán kerülésről egy migrációs kampány feltételes hozzáféréssel:
 
-1.  Állítson be feltételes hozzáférési szabályokat minden felhasználóra, de konkrétan zárja ki azokat a felhasználókat, akiknek át kell állniuk a régi MDM-szolgáltatóról. Létrehozhat egy Azure AD-beli felhasználói csoportot is a feltételes hozzáférésből kizárt felhasználóknak,
+1.  Feltételes hozzáférési szabályok kényszeríti ki az összes felhasználó számára, de konkrétan zárja ki azokat a felhasználókat, akik át kell állniuk a régi MDM-szolgáltató beállítása. Létrehozhat egy Azure AD felhasználói csoport az összes feltételes hozzáférésből kizárt felhasználóknak.
 
-2.  amelyből majd eltávolítja a migrációt végrehajtókat.
+2.  Felhasználók telepítheti át, a feltételes hozzáférés kizárási csoportból távolítsa el őket.
 
-3.  A migráció befejeztével az összes feltételes hozzáférési szabályzatot úgy konfigurálja, hogy alapértelmezés szerint tiltsák a hozzáférést, kivéve ha az Intune engedélyezi azt.
+3.  Áttelepítés befejezése után állítsa be az összes feltételes hozzáférési szabályzatok alapértelmezés szerint blokkolása, kivéve, ha az Intune lehetővé teszi a hozzáférést.
 
 ### <a name="advantages"></a>Előnyök
 
@@ -47,30 +47,30 @@ Egy jellemző példán keresztül mutatjuk be, hogyan segítheti elő a feltéte
 
 ### <a name="disadvantages"></a>Hátrányok
 
--   Előfordulhat, hogy a korábbi megoldás felhasználói nem felügyelt eszközökről hozzáférnek az erőforrásokhoz, amíg számukra nincs engedélyezve a feltételes hozzáférés.
+-   Az előző megoldás felhasználóinak előfordulhat hozzáférnek az erőforrásokhoz, nem felügyelt eszközök amíg feltételes hozzáférés engedélyezve van azok számára.
 
 
-Ez csak egy megközelítés a sok közül: választhat egyszerűbb megoldást is, amely minden feltételes hozzáférést letilt, amíg az összes felhasználó végre nem hajtotta a regisztrációt, vagy szigorúbbat, amely az első pillanattól kezdve teljes megfelelőséget követel meg a hozzáféréshez.
+Ez csak egy megközelítés a sok közül: Választhat egy egyszerűbb folyamat, amely minden feltételes hozzáférést letilt, amíg késleltet minden fázist utasítást kapott regisztrálása után, vagy a feltételes hozzáférés érvénybe lépteti a pillanattól kezdve, és teljes megfelelőséget követel meg minden hozzáférés szigorúbb folyamat.
 
--   További információk a [feltételes hozzáférésről](conditional-access.md).
+-   További tudnivalók [a feltételes hozzáférésről](conditional-access.md)
 
-## <a name="task-list-for-conditional-access"></a>Feladatlista a feltételes hozzáféréshez
+## <a name="task-list-for-conditional-access"></a>Feladatlista a feltételes hozzáférés
 
 ### <a name="task-1-decide-how-you-are-going-to-implement-conditional-access"></a>1. feladat: Annak eldöntése, hogyan kívánja a feltételes hozzáférés alkalmazása
 
-[A feltételes hozzáférés szokásos használati módjai](conditional-access-intune-common-ways-use.md).
+[Feltételes hozzáférés használatának szokásos módjai](conditional-access-intune-common-ways-use.md).
 
 ### <a name="task-2-set-up-intune-conditional-access"></a>2. feladat: Az Intune feltételes hozzáférés beállítása
 
 Válasszon egyet az alábbi lehetőségek közül:
 
--   [Feltételes hozzáférés konfigurálása az Azure Active Directoryban](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
+-   [Az Azure Active Directory feltételes hozzáférés konfigurálása](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
 
 -   [A helyszíni Exchange-összekötő telepítése az Intune-nal](exchange-connector-install.md)
 
--   [Alkalmazásalapú feltételes hozzáférési szabályzatok beállítása az Exchange Online-hoz](app-based-conditional-access-intune-create.md)
+-   [Alkalmazásalapú feltételes hozzáférési szabályzatok beállítása az Exchange online-hoz](app-based-conditional-access-intune-create.md)
 
--   [Alkalmazásalapú feltételes hozzáférési szabályzatok beállítása a SharePoint Online-hoz](app-based-conditional-access-intune-create.md)
+-   [Alkalmazásalapú feltételes hozzáférési szabályzatok beállítása a SharePoint online-hoz](app-based-conditional-access-intune-create.md)
 
 -   [Modern hitelesítés nélküli alkalmazások blokkolása (ADAL)](app-modern-authentication-block.md)
 

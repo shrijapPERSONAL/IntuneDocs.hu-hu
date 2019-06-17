@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba3f6fc48a68122f0a192adc8e2140bb7a603b31
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 3400169aab9598624216fcbc9ef7694e1d5441cc
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043467"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045783"
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Technológiai döntések a hozott eszközök Microsoft Enterprise Mobility + Security (EMS) általi felügyeletével kapcsolatban.
 
@@ -32,7 +32,7 @@ A jelen témakörben a hozott eszközök céges levelezés elérésére való be
 * Exchange Online-ban tárolt e-mail-fiókok
 
 ## <a name="common-reasons-to-manage-the-device-mdm"></a>Gyakori érvek a teljes eszköz felügyelete mellett (MDM)
-Könnyedén hozzásegítheti a felhasználókat az eszközük beléptetésére, ha bevezet egy [feltételes hozzáférési](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) szabályzatot az Exchange Online-ban. Az alábbi okokból lehet szükség a személyes eszközök felügyeletére:
+Könnyedén hozzásegítheti a felhasználókat eszközeik regisztrálásához eszköz felügyeletre való üzembe helyezésével egy [feltételes hozzáférési](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) szabályzat Exchange Online-on. Az alábbi okokból lehet szükség a személyes eszközök felügyeletére:
 
 **WiFi/VPN** – Ha a felhasználóknak a produktív munkához céges csatlakozási profilra van szükségük, könnyedén konfigurálhatja ezt.
 
@@ -41,7 +41,7 @@ Könnyedén hozzásegítheti a felhasználókat az eszközük beléptetésére, 
 **Megfelelőség** – Egyes cégeknek meg kell felelniük bizonyos jogszabályoknak vagy más előírásoknak, melyek specifikus MDM-vezérlést igényelnek. Előfordulhat például, hogy az MDM segítségével titkosítania kell a teljes eszközt, vagy jelentést kell készítenie az eszközön megtalálható összes alkalmazásról.
 
 ## <a name="common-reasons-to-only-manage-the-apps-mam"></a>Gyakori érvek csak az alkalmazások felügyelete mellett (MAM)
-Az MDM nélküli MAM rendkívül népszerű a hozott eszközt támogató cégek körében. Ha bevezet egy feltételes hozzáférési szabályzatot az Exchange Online-ban, arra ösztönözheti a felhasználókat, hogy az e-maileket a MAM-védelmet is támogató Outlook Mobile alkalmazással érjék el. Az alábbi okokból lehet szükség arra, hogy csak az alkalmazásokat felügyelje a személyes eszközökön:
+Az MDM nélküli MAM rendkívül népszerű a hozott eszközt támogató cégek körében. A feltételes hozzáférési szabályzat Exchange Online-on üzembe helyezésével ösztönözheti a felhasználókat, e-mailek elérését az Outlook Mobile alkalmazással (mely támogatja a MAM-védelem). Az alábbi okokból lehet szükség arra, hogy csak az alkalmazásokat felügyelje a személyes eszközökön:
 
 **Felhasználói élmény** – Az MDM-regisztráció számos (platform által kényszerített) figyelmeztető üzenet megjelenésével jár, melyek hatására a felhasználók gyakran úgy döntenek, hogy inkább nem szeretnének hozzáférni a levelezésükhöz a személyes eszközükön. A MAM sokkal kevésbé ijesztő a felhasználóknak, hiszen csak egy előugró üzenet jelenik meg egyszer, mely tudatja velük, hogy a MAM-védelem aktív.
 
@@ -52,7 +52,7 @@ Az MDM nélküli MAM rendkívül népszerű a hozott eszközt támogató cégek 
 Tudjon meg többet az [eszközfelügyelet és az alkalmazásfelügyelet életciklusairól](introduction-device-app-lifecycles.md).
 
 ## <a name="mdm-vs-mam-capability-comparison"></a>Az MDM és a MAM képességeinek összehasonlítása
-Ahogy már említettük, feltételes hozzáféréssel ösztönözheti a felhasználókat arra, hogy regisztrálják az eszközöket, vagy hogy egy felügyelt alkalmazást használjanak, például az Outlook Mobile-t. Számos más feltételt is alkalmazhat mindkét esetben, például:
+Mint már említettük, feltételes hozzáféréssel ösztönözheti a a felhasználót, hogy regisztrálják eszközüket, vagy egy felügyelt alkalmazást, például az Outlook Mobile használja. Számos más feltételt is alkalmazhat mindkét esetben, például:
 
 * Melyik felhasználó kísérli meg a hozzáférést
 * Megbízható-e a tartózkodási hely vagy sem

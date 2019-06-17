@@ -14,18 +14,18 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 72835ce45860eb6b10ac7967693cc50b9ceaa96f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 3fccf3425222814f9493fe525033f67c734012c5
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043574"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045871"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>Better Mobile Threat Defense-összekötő az Intune-hoz
 
-A vállalati erőforrások mobil elérése kockázatfelmérésen alapuló feltételes hozzáféréssel korlátozható. A kockázatfelmérést a Better Mobile végzi, amely egy, a Microsoft Intune-nal integrálható, veszélyforrások elleni mobileszköz-védelmi (MTD) megoldás. A kockázatfelmérés a Better Mobile alkalmazást futtató eszközökről gyűjtött telemetriai adatokon alapul.
+Szabályozhatja, hogy a nagyobb mobil-, a Mobile Threat Defense (MTD) megoldás, amely a Microsoft Intune-nal integrálható kockázatfelmérése alapján feltételes hozzáféréssel a vállalati erőforrások mobil elérése. A kockázatfelmérés a Better Mobile alkalmazást futtató eszközökről gyűjtött telemetriai adatokon alapul.
 
-Feltételes hozzáférési szabályzatokat konfigurálhat az Intune eszközmegfelelőségi szabályzataira épülő Better Mobile-kockázatfelmérések alapján, és az észlelt fenyegetések figyelembe vételével engedélyezheti vagy tilthatja le a nem megfelelő eszközök hozzáférését a vállalati erőforrásokhoz.
+Konfigurálhatja a feltételes hozzáférési szabályzatok engedélyezve az Intune eszközmegfelelőségi szabályzatai, amelyek segítségével engedélyezheti vagy letilthatja a nem megfelelő eszközök hozzáférését a vállalati erőforrásokhoz az észlelt fenyegetések alapján jobb Mobile-kockázatfelmérés alapján.
 
 ## <a name="how-do-intune-and-better-mobile-help-protect-your-company-resources"></a>Hogyan segíti az Intune és a Better Mobile a vállalati erőforrások védelmét?
 

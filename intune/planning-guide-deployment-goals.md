@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 298f8bc4fb9932eea228414745111fe569888849
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b29e59924ec4bf08336cbd1ea9aa588fd8612233
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041478"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044412"
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>Üzembe helyezési célok, célkitűzések és kihívások meghatározása
 
@@ -66,7 +66,7 @@ Az üzembe helyezés feladatai olyan műveletek, amelyekkel az adott munkahely e
 
 -   **Biztosítson az Exchange-hez és a SharePoint Online-hoz biztonságos hozzáférést**
 
-    -   **Végrehajtás:** Alkalmazza a feltételes hozzáférés az Exchange és SharePoint online-hoz.
+    -   **Végrehajtás:** Alkalmazza a feltételes hozzáférés az Exchange és SharePoint Online.
 
 -   **Ne engedje, hogy a céges adatok a mobileszköz nem céges szolgáltatásain kerüljenek tárolásra vagy továbbításra**
 

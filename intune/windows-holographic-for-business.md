@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a10fa6983b8e8c34a1844c647d952ca8cbf0730c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1c1400b3786965ab962de01207f24b53aa3a47b1
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050175"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045984"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Kezelheti, és használható különböző eszközfelügyeleti funkcióival a Windows holographic operációs rendszert és a HoloLens-eszközök Intune-nal
 
@@ -54,7 +54,7 @@ A Céges portál alkalmazással a következő műveleteket is futtathatja:
 ## <a name="compliance-policy"></a>Megfelelőségi szabályzat
 **[Eszközmegfelelőségi szabályzat létrehozása](compliance-policy-create-windows.md)**
 
-A megfelelőségi szabályzatok olyan szabályok és beállítások, amelyeknek az eszközöknek eleget kell tenniük, hogy megfelelőnek minősüljenek. Ezeket a szabályzatokat feltételes hozzáféréssel használva megakadályozhatja, hogy nem megfelelő eszközök hozzáférjenek a vállalati erőforrásokhoz. Az Intune-ban létrehozhat a Windows Holographic for Business rendszerű eszközök hozzáférését engedélyező vagy tiltó megfelelőségi szabályzatokat is. Létrehozhat például olyan szabályzatot, amely megköveteli a Bitlocker engedélyezését.
+A megfelelőségi szabályzatok olyan szabályok és beállítások, amelyeknek az eszközöknek eleget kell tenniük, hogy megfelelőnek minősüljenek. Használja ezeket a szabályzatokat a feltételes hozzáférés nem megfelelő eszközök vállalati erőforrásokhoz való hozzáférésének blokkolása. Az Intune-ban létrehozhat a Windows Holographic for Business rendszerű eszközök hozzáférését engedélyező vagy tiltó megfelelőségi szabályzatokat is. Létrehozhat például olyan szabályzatot, amely megköveteli a Bitlocker engedélyezését.
 
 Lásd még: **[Első lépések a megfelelőségi szabályzatokkal](device-compliance-get-started.md)**.
 
@@ -91,7 +91,7 @@ Windows Holographic for Business rendszert futtató eszközök használata eset�
 
 - **[Szinkronizálás az eszközök beolvashatják a legfrissebb szabályzatokat és műveleteket](device-sync.md)**: A **szinkronizálási** művelet kényszeríti az eszköz azonnali bejelentkezését az Intune-ban. Bejelentkezéskor az eszköz azonnal fogadja az hozzárendelt összes függőben lévő műveletet vagy szabályzatot. Ez a funkció segíthet ellenőrizni a vonatkozó szabályzatokat és elhárítani a hibákat anélkül, hogy ki kellene várni a következő ütemezett bejelentkezést.
 
-**[A Microsoft Intune-eszközfelügyelet ismertetése](device-management.md)**  című cikkből további részleteket is megtudhat az Azure Portal használatával történő eszközkezelésről. 
+**[A Microsoft Intune-eszközfelügyelet ismertetése](device-management.md) ** című cikkből további részleteket is megtudhat az Azure Portal használatával történő eszközkezelésről. 
 
 ## <a name="device-categories-and-groups"></a>Eszközkategóriák és csoportok
 **[Eszközök csoportokba sorolása](device-group-mapping.md)**

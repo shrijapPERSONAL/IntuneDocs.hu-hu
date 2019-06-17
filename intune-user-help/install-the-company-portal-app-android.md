@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a43b574c4bf0daf90e30690f95f6f497b441bc1
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: f2bcae8e48fd9c6558d77aced73d12b15e54b2f7
+ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61498878"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67040942"
 ---
 # <a name="install-the-company-portal-app-for-android"></a>A Céges portál alkalmazás telepítése Androidhoz
 
@@ -45,6 +45,6 @@ A Céges portál alkalmazás hozzáférést biztosít a munkahelyi és az iskola
 
     ![android-accept-company-portal-terms](./media/and-cpinstall-3-cp-accept.png)
 
-Miután letöltötte a céges portál alkalmazást, valószínűleg érdemes [-eszköz regisztrálása az Intune-ban](enroll-device-android-company-portal.md) való teljes hozzáférés a munkahelyi információkhoz. További lehetőség: [Bejelentkezés más eszköz használatával](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device).  
+Miután letöltötte a céges portál alkalmazást, valószínűleg érdemes [-eszköz regisztrálása az Intune-ban](enroll-device-android-company-portal.md) való teljes hozzáférés a munkahelyi információkhoz. További lehetőség: [Bejelentkezés más eszköz használatával](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#sign-in-from-another-device).  
 
 További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).

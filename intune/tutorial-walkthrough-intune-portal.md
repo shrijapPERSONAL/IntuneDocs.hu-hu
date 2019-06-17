@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c84cd0ec61ea08956bbebd040167991c6285d073
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e3c305cc579fedb9090faaf6c7270fcc546e36eb
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044987"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044328"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>Oktatóanyag: Az útmutató a Microsoft Intune-ban az Azure Portalon
 
@@ -104,7 +104,7 @@ Az Intune segít jobban megérteni az Azure Portalon az alábbi lépésekkel. Mi
 
     ![A feltételes hozzáférési panel képernyőképe](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-07.png)
 
-    A feltétles hozzáférés azokat a módszereket jelenti, amelyekkel vezérelheti az e-mail-fiókjához és a céges erőforrásaihoz való eszköz- és alkalmazás-hozzáférést. További tudnivalók: eszközalapú és alkalmazásalapú feltételes hozzáférés, és keresse meg a gyakori forgatókönyvek a feltételes hozzáférés használata az Intune-nal: [Mi a feltételes hozzáférés?](conditional-access.md)
+    Feltételes hozzáférés hivatkozik módokon szabályozhatja az eszközök és alkalmazások, amelyek használata engedélyezett az e-mailek és a vállalati erőforrások eléréséhez. További tudnivalók: eszközalapú és alkalmazásalapú feltételes hozzáférés, és keresse meg a gyakori forgatókönyvek a feltételes hozzáférés használata az Intune-nal: [Mi a feltételes hozzáférés?](conditional-access.md)
 
 8. A [Intune](https://aka.ms/intuneportal)válassza **felhasználók** a felhasználók az Intune-ban szereplő részleteit jeleníti meg. Ezek a felhasználók a cég munkatársának kell lennie. 
  

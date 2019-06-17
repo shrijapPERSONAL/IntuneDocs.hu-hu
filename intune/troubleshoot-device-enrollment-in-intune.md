@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6175fca13f1883338b7f5858538728132183b8db
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
-ms.translationtype: MT
+ms.openlocfilehash: 9c33f13a7768b86895b89732f1f595d2ede39b41
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040600"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031580"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>A Microsoft Intune-ban eszközök regisztrálásával kapcsolatos problémák elhárítása
 
@@ -143,7 +143,7 @@ Az eszközszámkorlát elérésének elkerüléséhez mindig távolítsa el a m�
 - ha több felső szintű tartomány tartozik a szervezet egyszerű felhasználóneveinek utótagjaihoz (például @contoso.com vagy @fabrikam.com).
 
 
-Az [AD FS 2.0 összegzése](http://support.microsoft.com/kb/2607496) a <strong>SupportMultipleDomain</strong> kapcsolóval együtt használható, hogy az AD FS-kiszolgáló támogassa az ilyen helyzetet anélkül, hogy további AD FS 2.0 kiszolgálókra lenne szükség. További információt [ebben a blogban](https://blogs.technet.microsoft.uucom/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) talál.
+Az [AD FS 2.0 összegzése](http://support.microsoft.com/kb/2607496) a <strong>SupportMultipleDomain</strong> kapcsolóval együtt használható, hogy az AD FS-kiszolgáló támogassa az ilyen helyzetet anélkül, hogy további AD FS 2.0 kiszolgálókra lenne szükség. További információt [ebben a blogban](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) talál.
 
 
 ## <a name="android-issues"></a>Android-problémák
