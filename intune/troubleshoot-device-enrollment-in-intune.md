@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c33f13a7768b86895b89732f1f595d2ede39b41
-ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
-ms.translationtype: HT
+ms.openlocfilehash: 063a288c99f3f773b63bd6fe0040e200a754c888
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67031580"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046297"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>A Microsoft Intune-ban eszközök regisztrálásával kapcsolatos problémák elhárítása
 
@@ -163,7 +163,7 @@ A következő táblázat azon hibákat tartalmazza, melyeket Android-eszközök 
 
 - Nem kaphatják meg a szabályzatot, az alkalmazásokat és a távoli parancsokat az Intune szolgáltatástól.
 - A felügyeleti konzolon **Nem megfelelő** felügyeleti állapotúnak látszanak.
-- A feltételes hozzáférési szabályzattal védett felhasználók elveszíthetik a vállalati erőforrásokhoz való hozzáférésüket.
+- Feltételes hozzáférési szabályzatok által védett felhasználók elveszítheti a vállalati erőforrásokhoz való hozzáférését.
 
 Az egyes Samsung-eszközökre előtelepített Samsung Smart Manager szoftver inaktiválhatja az Intune Céges portált és összetevőit. Ha a Céges portál inaktív állapotú, nem futhat a háttérben, ezért nem tud kapcsolatot létesíteni az Intune szolgáltatással.
 
@@ -280,7 +280,7 @@ A következő táblázat azon hibákat tartalmazza, melyeket iOS-eszközök az I
 
 - Nem kaphatják meg a szabályzatot, az alkalmazásokat és a távoli parancsokat az Intune szolgáltatástól.
 - A felügyeleti konzolon **Nem megfelelő** felügyeleti állapotúnak látszanak.
-- A feltételes hozzáférési szabályzattal védett felhasználók elveszíthetik a vállalati erőforrásokhoz való hozzáférésüket.
+- Feltételes hozzáférési szabályzatok által védett felhasználók elveszítheti a vállalati erőforrásokhoz való hozzáférését.
 
 **Megoldás:** A vállalati erőforrásokhoz való hozzáférési jogosultságukat segítségével a végfelhasználók számára az alábbi megoldások megosztásával.
 
