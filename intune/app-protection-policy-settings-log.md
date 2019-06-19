@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96cb9869db746942615221c5ab112ea5afd8de9c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 8dca73de4491ab4f4822d42d589ef4e3bbbc50f1
+ms.sourcegitcommit: 569cd2d655d33db4fc5c5fb1f8f74a6bfdd78738
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049674"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67157037"
 ---
 # <a name="review-client-app-protection-logs"></a>Ügyfelekre vonatkozó alkalmazásvédelmi naplók áttekintése
 
@@ -30,7 +30,7 @@ Ismerje meg az alkalmazásvédelmi naplók áttekinthető beállításait. Napl�
 
 A folyamat engedélyezéséhez és a naplók összegyűjtése platformonként:
 - **Android-eszközök** -használatát a *céges portál*. Lásd: [e-mailt a cég informatikai támogatási naplók](/intune-user-help/send-logs-to-your-it-admin-by-email-android).
-- **iOS-es deices** – használja a Managed Browser vagy *Microsoft Edge* naplók gyűjtését. További információkért lásd: az Intune támogatási csapatának blogja [új Intune diagnosztikai konzol napló elküldése az Intune Managed Browser](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-New-Intune-Diagnostic-Console-for-Log-Submission-in/ba-p/280021). 
+- **iOS-eszközök** – használja a Managed Browser vagy *Microsoft Edge* naplók gyűjtését. További információkért lásd: az Intune támogatási csapatának blogja [új Intune diagnosztikai konzol napló elküldése az Intune Managed Browser](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-New-Intune-Diagnostic-Console-for-Log-Submission-in/ba-p/280021). 
 - **Windows 10-eszközök** -használat *MDMDiag* és az eseménynaplókat. Látható, [MDM diagnosztizálhatja a hibákat a Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) a Windows ügyfél-felügyeleti tartalmat, és a blogon [hibaelhárítása a Windows 10-es Intune házirendjének hibáit](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures)
 
 

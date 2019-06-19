@@ -17,19 +17,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 860d990e07fb2424adf0672e416c608b1251ae3c
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: d70b090d137dee4076bebdc70b8a6cfaea8c7977
+ms.sourcegitcommit: 627996c928853777954c959f70be05bf52f9bb5f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046196"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67161664"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 
-Heti összesítésben olvashat a Microsoft Intune újdonságairól. Ugyanitt találhat [jövőbeni változtatásokról](in-development.md), [fontos bejelentésekről](#notices), és információkat [korábbi verziókról](whats-new-archive.md). 
+Heti összesítésben olvashat a Microsoft Intune újdonságairól. Is [fontos bejelentésekről](#notices), [korábbi verziókról](whats-new-archive.md), és információkat [hogyan jelennek meg az Intune szolgáltatásfrissítéseinek](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728). 
 
 > [!Note]
+> Minden egyes [havi frissítésében](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728) bevezetés legfeljebb három napig is eltarthat, és a következő sorrendben:
+> - Day 1: Ázsia Csendes-óceáni (APAC)
+> - 2\. napon: Európa, Közel-Kelet, Afrika (EMEA-régióban)
+> - 3\. napon: Észak-Amerika
+> 
 > Egyes funkciók bevezetése több hetet igénybe vehet, így előfordulhat, hogy nem elérhetők a felhasználók számára az első héten.
+>
+> Ellenőrizze a [fejlesztési oldalon](in-development.md) a kiadás a közeljövőben megjelenő funkciókról listáját.
 
 **RSS-hírcsatorna**: Értesítés küldése, amikor ezen a lapon frissül, másolása és beillesztése a következő URL-címet a hírcsatorna olvasóba szerint: `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+in+microsoft+intune%3F+-+Azure%22&locale=en-us`
 
