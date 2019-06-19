@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 06/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aef2db158e0572c1eec056a1d6e33b4b97aea77a
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9d6366034af09acdbecdc0cb0e670f6d57766b35
+ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047023"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67197528"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-run-as-a-kiosk-in-intune"></a>Windows Holographic for Business, az Intune-ban a teljes képernyős futtató eszköz beállításai
 
@@ -59,17 +59,17 @@ Az ebben az üzemmódban lévő alkalmazások elérhetők a Start menüben. A fe
 
   - **Automatikus bejelentkezés**: Nem támogatott a Windows Holographic for Business.
   - **A helyi felhasználói fiókok**: **Adjon hozzá** a helyi (eszközön létező) felhasználói fiók. A megadott fiókkal történik a bejelentkezés a kioszkba.
-  - **Azure AD-felhasználó vagy csoport (Windows 10 1803-es és újabb verziók)**: Felhasználói hitelesítő adatokkal jelentkezzen be az eszköz szükséges. Válassza a **Hozzáadás** lehetőséget Azure AD-felhasználók vagy -csoportok kiválasztására a listából. Több felhasználót és csoportot is kiválaszthat. A módosítások mentéséhez válassza az **Választ** gombot.
+  - **Azure AD-felhasználó vagy csoport (Windows 10 1803-es és újabb verziók)** : Felhasználói hitelesítő adatokkal jelentkezzen be az eszköz szükséges. Válassza a **Hozzáadás** lehetőséget Azure AD-felhasználók vagy -csoportok kiválasztására a listából. Több felhasználót és csoportot is kiválaszthat. A módosítások mentéséhez válassza az **Választ** gombot.
   - **HoloLens-látogató**: A látogatói egy a Vendég fiók felhasználói hitelesítő adatokat vagy hitelesítést nem igénylő leírtak szerint [megosztott PC mód fogalmak](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
 
 - **Alkalmazások**: Adja hozzá az alkalmazások futtatását a teljes képernyős eszközön. Ne feledje, hogy több alkalmazást is hozzáadhat.
 
-  - **Adja hozzá a Store apps**: Válasszon ki egy meglévő alkalmazást segítségével hozzáadott [ügyfélalkalmazás](apps-add.md). Ha nem találhatók alkalmazások a listában, akkor beszerezheti az alkalmazásokat, és [hozzáadhatja őket az Intune-hoz](store-apps-windows.md).
+  - **Adja hozzá a Store apps**: Válasszon ki egy meglévő alkalmazást hozzáadásakor, vagy az Intune-t üzembe helyezett [ügyfélalkalmazás](apps-add.md), többek között az ÜZLETÁGI alkalmazások. Ha nem rendelkezik a felsorolt alkalmazások, az Intune támogatja a számos [alkalmazástípusok](apps-add.md) , amikor [hozzáadása az Intune](store-apps-windows.md).
   - **Win32-alkalmazás hozzáadása**: Nem támogatott a Windows Holographic for Business.
   - **Hozzáadása AUMID alapján**: Ez a beállítás használatával Beérkezett üzenetek Windows-alkalmazások hozzáadása. Adja meg a következő tulajdonságokat: 
 
     - **Alkalmazásnév**: Kötelező. Adjon nevet az alkalmazásnak.
-    - **Alkalmazás alkalmazásfelhasználói modellben használt azonosítója (AUMID)**: Kötelező. Adja meg a Windows-alkalmazás alkalmazásfelhasználói modellben használt azonosítóját. Az azonosító a [Telepített alkalmazás alkalmazásfelhasználói modellben használt azonosítójának megkeresése](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) című témakörben leírtak alapján kereshető meg.
+    - **Alkalmazás alkalmazásfelhasználói modellben használt azonosítója (AUMID)** : Kötelező. Adja meg a Windows-alkalmazás alkalmazásfelhasználói modellben használt azonosítóját. Az azonosító a [Telepített alkalmazás alkalmazásfelhasználói modellben használt azonosítójának megkeresése](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) című témakörben leírtak alapján kereshető meg.
     - **Csempe méretének**: Kötelező. Válassza a Kicsi, Közepes, Széles és Nagy alkalmazáscsempe-méretek egyikét.
 
 - **Teljes képernyős böngésző beállításait**: Nem támogatott a Windows Holographic for Business.

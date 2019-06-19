@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a58095612d6e76d4a1cb633e69260267dcfd9999
-ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.openlocfilehash: 837442f93bbac2c5eb19b3c433c91f91aa38a17e
+ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66749909"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67197546"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune-hoz készült Microsoft Defender komplex veszélyforrások elleni védelem alapbeállítások
 
@@ -83,7 +83,7 @@ További információkért lásd: [házirend CSP - SmartScreen](https://docs.mic
 
   **Alapértelmezett**: Igen
 
-## <a name="attach-surface-reduction"></a>Felület csökkentésére szolgáló csatolása  
+## <a name="attack-surface-reduction"></a>Támadási felület csökkentése  
 
 - **Office-alkalmazások indítsa el a gyermek-folyamat típusa**  
   [Támadási felület csökkentésére szolgáló szabály](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – Ha beállítása *blokk*, Office-alkalmazások szükséges gyermekelemek létrehozásához a folyamatok nem engedélyezett. Office alkalmazások közé tartoznak a Word, Excel, PowerPoint, a OneNote és a hozzáférés. Egy alárendelt folyamat létrehozása egy tipikus kártevő működés, különösen a makró-alapú támadásokkal szemben, amelyek az Office-alkalmazások elindításához, vagy letöltheti a rosszindulatú végrehajtható fájlok.  

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/12/2019
+ms.date: 06/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 357d1619fdf051d07ea47c84a79b2aebd1523460
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.openlocfilehash: 9af61c89b90a7f31654cd43a3cfc457b27e9700f
+ms.sourcegitcommit: 86aa5fefcba1e71841696b1a5e3ca5bffb1a9528
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67041123"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67234970"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>A Windows 10 (és újabb) eszközbeállítások engedélyezett vagy korlátozott funkciók az Intune-nal
 
@@ -133,7 +133,7 @@ Ezeket a beállításokat használja a [EnterpriseCloudPrint házirend CSP](http
 - **Nyomtató hozzáférés szolgáltató URL-címe**: Adja meg a hitelesítési végpont URL-címe, az OAuth-jogkivonatok beolvasásához. Például írja be a következőt: `https://azuretenant.contoso.com/adfs`.
 - **Azure-beli natív ügyfélalkalmazás GUID**: Adja meg a szolgáltatótól OAuth-jogkivonatok kérhető ügyfélalkalmazás GUID-ja. Például írja be a következőt: `E1CF1107-FF90-4228-93BF-26052DD2C714`.
 - **Nyomtatási szolgáltatás erőforrás-URI**: Adja meg a nyomtatási szolgáltatás az Azure Portal webhelyen konfigurált OAuth erőforrás URI azonosítója. Például írja be a következőt: `http://MicrosoftEnterpriseCloudPrint/CloudPrint`.
-- **Lekérdezendő nyomtatók maximális száma**: Adja meg a lekérdezni kívánt nyomtatók maximális száma. Az alapértelmezett érték: `20`.
+- **Lekérdezendő nyomtatók maximális száma**: Adja meg a lekérdezni kívánt nyomtatók maximális száma. Az alapértelmezett érték `20`.
 - **Nyomtatófelderítési szolgáltatás erőforrás URI**: Adja meg az OAuth-erőforrás URI-nyomtató discovery szolgáltatás beállítása az Azure Portalon. Például írja be a következőt: `http://MopriaDiscoveryService/CloudPrint`.
 
 > [!TIP]
@@ -420,7 +420,8 @@ Válassza ki **OK** a módosítások mentéséhez.
 
 Ezeket a beállításokat használja a [DeviceLock házirend CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock), amely felsorolja a támogatott Windows-kiadások.
 
-- **Jelszó**: **Szükséges** a végfelhasználó számára adjon meg egy jelszót az eszköz elérésére. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy az eszköz jelszó nélkül.
+- **Jelszó**: **Szükséges** a végfelhasználó számára adjon meg egy jelszót az eszköz elérésére. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy az eszköz jelszó nélkül. Csak a helyi fiókok vonatkozik. Tartományi fiók jelszavak továbbra is az Active Directory (AD) és az Azure AD által konfigurált.
+
   - **Kötelező jelszótípus**: Válassza ki a jelszót. A választható lehetőségek:
     - **Nincs konfigurálva**: Jelszó számokat és betűket tartalmazhat.
     - **Numerikus**: Jelszó csak számnak kell lennie.

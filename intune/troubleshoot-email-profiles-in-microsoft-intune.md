@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 06/17/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,20 +17,29 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0fe37deb63457fef869df0f7263970a4e53cb29
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 2246e3f6faa853f620327558a7faf4dc9d6a6e85
+ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402707"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67197513"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Gyakori problémák és megoldásuk e-mail-profilokkal a Microsoft Intune-ban
 
 Tekintse át az e-mail profil gyakori problémákat, és hogyan elhárításuk és megoldásuk.
 
+## <a name="what-you-need-to-know"></a>Amit még tudnia kell
+
+- E-mail profil van telepítve, a felhasználó, aki regisztrálta az eszközt. Az e-mail-profil konfigurálásához az Intune az Azure Active Directory (AD) tulajdonságokat használja az e-mail profilban, a felhasználó regisztráció során. [E-mail-beállításokat adhat hozzá az eszközökhöz](email-settings-configure.md) jól lehet.
+- Az áttelepítés után a Configuration Manager – hibrid Intune önálló verziója, az e-mail profilt a Configuration Manager – hibrid marad az eszközön 7 napon. Ez az elvárt működés. Ha az e-mail-profil eltávolítása hamarabb van szüksége, forduljon a [Intune támogatási](get-support.md).
+- Android Enterprise a Gmail vagy a kilenc használatához a felügyelt Google Play Store for üzembe helyezéséhez. [Felügyelt Google Play-alkalmazások hozzáadása](apps-add-android-for-work.md) felsorolja azokat a lépéseket.
+- IOS-hez készült Microsoft Outlook és az Android nem támogatja az e-mail-profilok. Ehelyett az alkalmazás-konfigurációs házirend telepíteni. További információkért lásd: [Outlook konfigurációs beállítás](app-configuration-policies-outlook.md).
+- Megcélzott eszközcsoportokat (nem a felhasználói csoportok), az e-mail-profilok nem lehet kézbesíteni az eszköz. Ha az eszköz elsődleges felhasználóval rendelkezik, majd eszköz célzó működnie kell. Ha az e-mail-profil tartalmazza a felhasználói tanúsítványok, mindenképpen felhasználói célcsoportok számára.
+- Felhasználók, a jelszavát adja meg az e-mail-profil ismételten kérheti. Ebben az esetben ellenőrizze az e-mail profil által hivatkozott összes tanúsítvány. Ha a tanúsítványok nem rendel hozzá felhasználókhoz, majd Intune újrapróbálkozik az e-mail-profil központi telepítése.
+
 ## <a name="device-already-has-an-email-profile-installed"></a>Az eszköz már rendelkezik telepített e-mail profillal
 
-Ha a felhasználók e-mail-profil létrehozása előtt az Intune-ban, az Intune e-mail profil előfordulhat, hogy nem várt módon működik:
+Ha a felhasználók az Intune vagy Office 365 Mobileszköz regisztrálása előtt hozzon létre egy e-mail-profilt, az Intune által telepített e-mail profil előfordulhat, hogy nem várt módon működik:
 
 - **iOS**: Intune az állomásnév és az e-mail-cím alapján egy meglévő, duplikált e-mail profilt észlel. A felhasználó által létrehozott e-mail-profil megakadályozza az Intune által létrehozott profil telepítését. Mivel az iOS-felhasználók általában létre egy e-mail-profilt a regisztráció Ez a gyakran okoz problémát. A vállalati portál alkalmazást, hogy a felhasználó nem megfelelő, és előfordulhat, hogy kérni a felhasználót, hogy az e-mail-profil eltávolítása az államokhoz.
 
@@ -50,19 +59,16 @@ Ellenőrizze a Samsung KNOX EAS-profil és a forrásszabályzat konfigurációj�
 
 ## <a name="unable-to-send-images-from--email-account"></a>Nem sikerül képeket küldeni az e-mail fiókból
 
-Az Intune-ra vonatkozik a klasszikus Azure portálon.
-
 Automatikusan konfigurált e-mail fiókkal rendelkező felhasználók számára a képek nem tud küldeni az eszközeikről. Ez akkor fordulhat elő, ha **engedélyezése harmadik féltől származó alkalmazásokból küldendő e-mail** nincs engedélyezve.
 
 ### <a name="intune-solution"></a>Intune-megoldás
 
-1. Válassza ki a Microsoft Intune felügyeleti konzol megnyitása **házirend** számítási feladatok > **konfigurációs szabályzat**.
+1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. Válassza ki **eszközkonfiguráció** > **profilok**.
+3. Válassza ki az e-mail-profil > **tulajdonságok** > **beállítások**.
+4. Állítsa be a **engedélyezése harmadik féltől származó alkalmazásokból küldendő e-mail** beállítást **engedélyezése**.
 
-2. Válassza ki a kívánt e-mail-profilt, majd válassza a **Szerkesztés** lehetőséget.
-
-3. Válassza ki a **Harmadik felek alkalmazásaiból is engedélyezett az e-mailek küldése** beállítást.
-
-### <a name="configuration-manager-integrated-with-intune-solution"></a>Intune-megoldással integrált Configuration Manager
+### <a name="configuration-manager-hybrid"></a>Configuration Manager – hibrid
 
 1. Nyissa meg a Configuration Manager-konzol > **eszközök és megfelelőség**.
 
