@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/28/2019
+ms.date: 06/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f17bdf21db61616f88cef4d257fbcd28d941dae8
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 967398516cdc2f727aa517fed3c8cf65810a38a1
+ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373472"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251227"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>PowerShell-parancsfájlok használata a Windows 10 rendszerű eszközökön az Intune-ban
 
@@ -45,7 +45,7 @@ Az Intune felügyeleti bővítmény előfeltételei a következők. Amint ezek t
 
 - Az eszközök a Windows 10-es verzió fut, 1607-es vagy újabb. Ha az eszköz regisztrálva van a használatával [automatikus igénylés tömeges](windows-bulk-enroll.md), eszközöket kell futtatni a Windows 10-es verzió, 1703-as vagy újabb. Az Intune felügyeleti bővítmény módban nem támogatott a Windows 10 S, mivel S mód nem engedélyezi áruházon belüli alkalmazások futtatásához. 
   
-- Tartományhoz csatlakozó eszközök az Azure Active Directory (AD), beleértve:
+- Tartományhoz csatlakozó eszközök az Azure Active Directory (AD), beleértve:  
   
   - Hibrid Azure AD-hez csatlakoztatott: Eszközök az Azure Active Directory (AD) tartományhoz, és csatlakoztatva a helyszíni Active Directory (AD). Lásd: [a hibrid Azure Active Directory join implementáció megtervezésébe](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) útmutatást.
 
@@ -55,13 +55,16 @@ Az Intune felügyeleti bővítmény előfeltételei a következők. Amint ezek t
   
   - Manuálisan regisztrált eszközök az Intune-ban, amely a következő esetekben:
   
-    - Felhasználó jelentkezik be az eszközt a helyi felhasználói fiók használatával, és ezután manuálisan csatlakoztatja az eszközt az Azure AD (és automatikus regisztráció az Intune-bA engedélyezve van az Azure ad-ben).
+    - [Automatikus regisztráció az Intune-bA](quickstart-setup-auto-enrollment.md) engedélyezve van az Azure ad-ben. A végfelhasználó számára az eszköz helyi felhasználói fiókkal jelentkezik be, manuálisan csatlakoztatja az eszközt az Azure AD- és majd bejelentkezik az eszközre, az Azure AD-fiókjával.
     
-    Vagy
+    VAGY  
     
     - Felhasználó jelentkezik be az eszközt az Azure AD-fiókjával, és ezután regisztrálja az Intune-ban.
 
   - Közösen kezelt eszközök, amelyek a Configuration Manager és az Intune-ban. Lásd: [Mi a megosztott kezelés](https://docs.microsoft.com/sccm/comanage/overview) útmutatást.
+
+> [!TIP]
+> Lehet, hogy eszközök [csatlakoztatott](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) az Azure ad-hez. Eszközök, amelyek csak [regisztrált](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network) az Azure ad-ben nem kap a parancsfájlokat.
 
 ## <a name="create-a-script-policy"></a>A parancsfájlhoz tartozó szabályzat létrehozása 
 
@@ -87,7 +90,7 @@ Az Intune felügyeleti bővítmény előfeltételei a következők. Amint ezek t
 5. Válassza ki **OK** > **létrehozás** a parancsfájl mentéséhez.
 
 > [!NOTE]
-> A PowerShell-szkript fut a rendszergazdai jogosultság (alapértelmezés szerint) Ha a parancsfájl felhasználói környezet van beállítva, és a végfelhasználó számára az eszköz rendszergazdai jogosultságokkal rendelkezik.
+> Parancsprogramok vannak beállítva, hogy a felhasználói környezetet, és a felhasználó rendelkezik rendszergazdai jogosultságokkal, alapértelmezés szerint, ha a PowerShell-parancsfájlt a rendszergazdai jogosultsággal alatt fut.
 
 ## <a name="assign-the-policy"></a>A szabályzat hozzárendelése
 
@@ -156,6 +159,7 @@ Ha az eszköz automatikus regisztrált megtekintéséhez a következőket teheti
     > [!TIP]
     > A **a Microsoft Intune felügyeleti bővítmény** egy szolgáltatás, amely futtatja az eszközön, ugyanúgy, mint bármely más szolgáltatást a szolgáltatások alkalmazást (services.msc) szerepel. Miután egy eszköz újraindult, ezt a szolgáltatást előfordulhat, hogy is indítsa újra, és ellenőrizze minden hozzárendelt a PowerShell-parancsfájlok és az Intune szolgáltatás. Ha a **a Microsoft Intune felügyeleti bővítmény** szolgáltatás a Manual értékre van állítva, akkor előfordulhat, hogy indítsa újra a szolgáltatás, az eszköz újraindítása után.
 
+- Lehet, hogy eszközök [az Azure AD-csatlakoztatott](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network). Csak a munkahelyi vagy szervezeti csatlakoztatott eszközök ([regisztrált](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network) az Azure AD) a parancsfájlok nem kap.
 - Az Intune felügyeleti bővítmény ügyfél ellenőrzi a módosításokat a parancsfájl vagy a szabályzat az Intune-ban óránként egyszer.
 - Győződjön meg róla, az Intune felügyeleti bővítmény letöltődik minden olyan `%ProgramFiles(x86)%\Microsoft Intune Management Extension`.
 - Parancsfájlok S módban a Surface Hubokban vagy a Windows 10-es nem futnak.

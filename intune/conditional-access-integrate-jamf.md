@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b5d3754c7dd3ead9236e223fd568e58e96fe9a1
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: d25012790322491a9038f0bcf9349434d5a45b8d
+ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045152"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251086"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>A Jamf Pro integrálása az Intune-nal a megfelelőség érdekében
 
@@ -80,7 +80,7 @@ Az Intune csatlakoztatása a Jamf Pro meg:
 
 ## <a name="enable-intune-to-integrate-with-jamf-pro"></a>Az Intune engedélyezése a Jamf Pro-val történő integrációra
 
-1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=20909), és nyissa meg **a Microsoft Intune** > **Eszközmegfelelőség** > **Partnereszköz kezelése**.
+1. Jelentkezzen be a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), és nyissa meg **a Microsoft Intune** > **Eszközmegfelelőség** > **Partnereszköz kezelése**.
 
 2. Engedélyezze a megfelelőségi összekötőt jamf illessze be az előző eljárás során mentett az Alkalmazásazonosítót a **Jamf Azure Active Directory Alkalmazásazonosító** mező.
 

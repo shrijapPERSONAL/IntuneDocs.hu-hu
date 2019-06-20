@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/10/2019
+ms.date: 06/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c44f18d19172498f17f2a3f78ea47bad1d0f3fa7
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: fc91fc685c28beff38dc395dd83b60e99343af57
+ms.sourcegitcommit: 2545ffb75b8d9290718d3a67acdcbea2f279090f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048112"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67263686"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Android Enterprise eszközbeállítások engedélyezett vagy korlátozott funkciók az Intune-nal
 
@@ -56,7 +56,7 @@ Ez a cikk és az Android Enterprise eszközökön szabályozhatja a különböz�
 - **Az NFC segítségével adatokat fényt**: Válasszon **blokk** , hogy a kis hatótávolságú kommunikációs (NFC) technológia használatával távolsági adatokat az alkalmazásokból. **Nincs konfigurálva** lehetővé teszi, hogy az NFC segítségével végzett eszközök között adatokat megosztani.
 - **Hibakeresési funkciók**: Válasszon **engedélyezése** , hogy a felhasználók hibakeresési funkciók használata az eszközön. **Nincs konfigurálva** megakadályozza, hogy a felhasználók a hibakeresési funkciók használata az eszközön.
 - **Mikrofon beállítása**: Válasszon **blokk** , hogy a felhasználók a mikrofon visszahangosításának és a mikrofon hangereje. **Nincs konfigurálva** lehetővé teszi a felhasználó használhatja, és állítsa be a mikrofon az eszközön.
-- **Gyári visszaállítás elleni védelem e-mail-címei**: Válasszon **Google-fiók e-mail-címek**. Adja meg, amely oldhatja fel az eszköz tartalma törlődik, miután eszközadminisztrátorok e-mail címét. Ügyeljen arra, hogy az e-mail-címeket egymástól pontosvesszővel, mint például `admin1@gmail.com;admin2@gmail.com`. Ha egy e-mailt nem adott meg, bárki is az eszköz feloldásához, a gyári beállítások visszaállítása után.
+- **Gyári visszaállítás elleni védelem e-mail-címei**: Válasszon **Google-fiók e-mail-címek**. Adja meg, amely oldhatja fel az eszköz tartalma törlődik, miután eszközadminisztrátorok e-mail címét. Ügyeljen arra, hogy az e-mail-címeket egymástól pontosvesszővel, mint például `admin1@gmail.com;admin2@gmail.com`. Ha egy e-mailt nem adott meg, bárki is az eszköz feloldásához, a gyári beállítások visszaállítása után. E-mailek csak akkor alkalmazható, ha az nem felhasználói gyári beállítások visszaállítása futtatta, például a futó a gyári beállításokat a helyreállítási menü segítségével.
 - **Hálózati vészkijárat**: Válasszon **engedélyezése** , hogy a felhasználók a hálózat escape csíkozási funkció bekapcsolása. Ha a hálózati kapcsolat az eszköz nem végzett, majd a vészkijárat kéri ideiglenesen csatlakozzon egy hálózathoz, és frissítenie kell az szabályzat. A szabályzat alkalmazása után a rendszer elfelejti az átmeneti hálózatot, és az eszköz folytatja a rendszerindítást. Ez a funkció eszköz csatlakozik a hálózathoz, ha:
   - Nincs megfelelő hálózati a legutóbbi házirendben.
   - Az eszköz zárolási feladat üzemmódban alkalmazás indul.
@@ -100,6 +100,8 @@ Ezek a beállítások használatával az dedikált eszközök kioszk stílusú f
   >   - [Az eszköz csoporthoz rendelt](apps-deploy.md) a dedikált eszközök számára létrehozott
   > 
   > A **kezdőlap képernyő felügyelt** alkalmazás nem található a konfigurációs profil feltétlenül szükséges, de ügyfélalkalmazásként hozzá kell adni. Ha a **kezdőlap képernyő felügyelt** alkalmazás ügyfélalkalmazásként adnak, adja hozzá azokat a konfigurációs profilt minden más alkalmazás ikonok jelennek meg a a **kezdőlap képernyő felügyelt** alkalmazást. 
+  >
+  > Többalkalmazásos kioszk mód kezdőlap képernyőt felügyelt használatakor előfordulhat, hogy a tárcsázó/telefonos alkalmazások nem működnek megfelelően. 
 
   - Válasszon **Hozzáadás**, és válassza ki az alkalmazások a listából.
 
@@ -253,7 +255,7 @@ Ezek a beállítások használatával az dedikált eszközök kioszk stílusú f
 - **Jelszó minimális hossza**: Rendelkeznie kell a felhasználó jelszava, karakterek minimális számát adja meg a **4**-**16**.
 - **Profil zárolása legfeljebb ennyi perc inaktivitás után a munkahelyi**: Válassza ki az idő a munkahelyi profil zárolása előtt. A felhasználónak ezután meg kell adnia a hitelesítő adatait a hozzáférés visszanyeréséhez.
 - **Bejelentkezési hibák eszköz törlése előtt**: Adja meg, hogy hányszor helytelen jelszót megadni, mielőtt a munkahelyi profilt a rendszer törölné az eszközről.
-- **Jelszó érvényessége (napokban)**: Adja meg, hány nap elteltével kell megváltoztatni a végfelhasználó jelszavát (a **1**-**255**).
+- **Jelszó érvényessége (napokban)** : Adja meg, hány nap elteltével kell megváltoztatni a végfelhasználó jelszavát (a **1**-**255**).
 - **Kötelező jelszótípus**: Válassza ki, hogy az eszközön beállítandó jelszó típusát. A következő lehetőségek közül választhat:
   - **Eszköz alapértelmezése**
   - **Alacsony biztonságú biometrikus**
@@ -274,7 +276,7 @@ A jelszó-beállításokat alkalmazni a munkahelyi profilt használó eszközök
 - **Jelszó minimális hossza**: Rendelkeznie kell a felhasználó jelszava, karakterek minimális számát adja meg a **4**-**14**.
 - **Ennyi perc inaktivitás képernyőzárolás**: Válassza ki, hogy mennyi idő elteltével automatikusan zárolja magát az eszközök
 - **Bejelentkezési hibák eszköz törlése előtt**: Adja meg, hogy hányszor helytelen jelszót megadni, mielőtt az összes adat végleg törlődne az eszközről
-- **Jelszó érvényessége (napokban)**: Adja meg, hány nap elteltével kell megváltoztatni a végfelhasználó jelszavát (a **1**-**255**)
+- **Jelszó érvényessége (napokban)** : Adja meg, hány nap elteltével kell megváltoztatni a végfelhasználó jelszavát (a **1**-**255**)
 - **Kötelező jelszótípus**: Válassza ki, hogy az eszközön beállítandó jelszó típusát. A következő lehetőségek közül választhat:
   - **Eszköz alapértelmezése**
   - **Alacsony biztonságú biometrikus**
