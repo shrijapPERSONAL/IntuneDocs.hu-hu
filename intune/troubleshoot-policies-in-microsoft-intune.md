@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 06/20/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,18 +17,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1bed0fda1c19df181dacb36c832a2a4c94e61aff
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 9314617640d0bfd7f3a7b0cd0ba572e99ede53f9
+ms.sourcegitcommit: cd451ac487c7ace18ac9722a28b9facfba41f6d3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402667"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67298403"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Házirendek és profilok hibaelhárítása és az Intune-ban
 
 A Microsoft Intune hibaelhárítási szolgáltatásai néhány beépített. Ezek a funkciók használatával hibaelhárításához a megfelelőségi szabályzatokról és konfigurációs profilokat a környezetben.
 
 Ez a cikk néhány gyakori hibaelhárítási eljárásokat, és ismerteti a problémák léphetnek fel.
+
+## <a name="check-tenant-status"></a>A bérlő állapotának ellenőrzése
+Ellenőrizze a [Bérlőállapot](tenant-status.md) , majd erősítse meg az előfizetés nem aktív. Aktív incidens által érintett és tanácsok, amely hatással lehet a házirend vagy -profil központi telepítés részleteit is megtekintheti.
 
 ## <a name="use-built-in-troubleshooting"></a>Használja a beépített hibáinak elhárítása
 
@@ -113,6 +116,13 @@ Ez a cikk néhány gyakori hibaelhárítási eljárásokat, és ismerteti a prob
 > [!NOTE]
 > Ha két különböző korlátozási szintű szabályzat vonatkozik egy eszközre vagy felhasználóra, akkor a gyakorlatban a szigorúbb szabályzat lesz érvényes.
 
+## <a name="policy-troubleshooting-resources"></a>Csoportházirend hibaelhárítási erőforrások
+
+- [IOS vagy Android-házirendek nem kezeli az eszközöket hibaelhárítási](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (megnyílik egy másik Microsoft-hely)
+- [A Windows 10-es Intune hibáinak elhárítása](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (megnyílik egy blog)
+- [CSP egyéni beállítások Windows 10-es hibaelhárítása](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune) (megnyílik egy másik Microsoft-hely)
+- [A Windows 10-es csoportházirend és az Intune mobileszköz-kezelési házirend](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (megnyílik egy másik Microsoft-hely)
+
 ## <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>Riasztás: Az Exchange hozzáférési szabályok mentése sikertelen volt
 
 **A probléma**: A riasztás **a hozzáférési szabályok mentése az Exchange-hez nem sikerült** a felügyeleti konzolon.
@@ -125,11 +135,13 @@ Szabályzatok létrehozása a helyszíni Exchange-szabályzat munkaterületen (f
 
 Windows Phone-eszközök nem teszik lehetővé a biztonsági szabályzatok beállítása az MDM-en vagy az EAS használatával, hogy a beállításukat követően őket. Például, ha beállítja egy **legalább hány karakterből álló jelszót** 8, és próbálja meg a 4-re csökkenteni. A szigorúbb szabályzat az eszközre érvényes.
 
+Ha Ön a házirendet (állítsa le az üzembe helyezés) hozzárendelésének megszüntetése Windows 10-eszközök nem távolíthatja el biztonsági szabályzatokat. Szükség lehet a hozzárendelt szabályzat hagyja, és módosítsa a biztonsági beállításokat az alapértelmezett értékekre.
+
 Az eszköz platformjától függően meg szeretné változtatni a szabályzatot egy kevésbé biztonságos értékre, ha, előfordulhat, hogy alaphelyzetbe kell állítania a biztonsági szabályzatokat.
 
-A Windowsban például jobbról befelé pöccintve nyissa meg az asztalon a **Gombok** sávot. Válasszon **beállítások** > **vezérlőpultot** > **felhasználói fiókok**. A bal oldalon válassza a **Biztonsági szabályzatok alaphelyzetbe állítása** hivatkozást, majd válassza a **Szabályzatok alaphelyzetbe állítása** lehetőséget.
+Ha például a Windows 8.1, az asztalon, pöccintsen jobbról, nyissa meg a **gombok** sáv. Válasszon **beállítások** > **vezérlőpultot** > **felhasználói fiókok**. A bal oldalon válassza a **Biztonsági szabályzatok alaphelyzetbe állítása** hivatkozást, majd válassza a **Szabályzatok alaphelyzetbe állítása** lehetőséget.
 
-Más mobileszköz-kezelési eszközök, például Android, iOS és Windows Phone 8.1-es, szükség lehet kevésbé korlátozó szabályzat alkalmazásához vonni, majd.
+Más platformokon, például Android, iOS és Windows Phone 8.1-es, szükség lehet kevésbé korlátozó szabályzat alkalmazásához vonni, majd.
 
 [Eszközök regisztrálásával kapcsolatos problémák elhárítása](troubleshoot-device-enrollment-in-intune.md) jól lehet.
 
@@ -160,6 +172,7 @@ Az Intune szoftveres ügyfele, a hibák házirend által felügyelt Windows rend
 Ez akkor fordulhat elő, ha a helyi rendszeren lévő idő legalább öt perccel eltér a szinkronizált értéktől. Ha a helyi számítógépen lévő idő nincs szinkronban, a biztonságos tranzakciók sikertelen, mert az időbélyegek érvénytelenek.
 
 A probléma megoldásához állítsa a helyi rendszeridő legközelebb az internetes időhöz. Vagy állítsa be az idő a tartományvezérlőkön a hálózaton.
+
 
 ## <a name="next-steps"></a>További lépések
 

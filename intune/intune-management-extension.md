@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/19/2019
+ms.date: 06/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 967398516cdc2f727aa517fed3c8cf65810a38a1
-ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
+ms.openlocfilehash: 90b3e858a06a6f3a34de6ec8102e1a6c458369a2
+ms.sourcegitcommit: cd451ac487c7ace18ac9722a28b9facfba41f6d3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67251227"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67298419"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>PowerShell-parancsfájlok használata a Windows 10 rendszerű eszközökön az Intune-ban
 
@@ -61,8 +61,12 @@ Az Intune felügyeleti bővítmény előfeltételei a következők. Amint ezek t
     
     - Felhasználó jelentkezik be az eszközt az Azure AD-fiókjával, és ezután regisztrálja az Intune-ban.
 
-  - Közösen kezelt eszközök, amelyek a Configuration Manager és az Intune-ban. Lásd: [Mi a megosztott kezelés](https://docs.microsoft.com/sccm/comanage/overview) útmutatást.
-
+  - Közösen kezelt eszközök, amelyek a Configuration Manager és az Intune-ban. Győződjön meg a **ügyfélalkalmazás** munkaterhelés értékre van állítva **az Intune-próbaüzem** vagy **Intune**. Tekintse meg a következő útmutatást: 
+  
+    - [Mi a megosztott kezelés](https://docs.microsoft.com/sccm/comanage/overview) 
+    - [Ügyfél apps munkafolyamat](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
+    - [Configuration Manager számításai az Intune-hoz](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)
+  
 > [!TIP]
 > Lehet, hogy eszközök [csatlakoztatott](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) az Azure ad-hez. Eszközök, amelyek csak [regisztrált](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network) az Azure ad-ben nem kap a parancsfájlokat.
 
