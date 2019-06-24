@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 43dc353da9aee9e2cdf7797f39746666a72d6880
-ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
+ms.openlocfilehash: bccfc952202ed9db5bdc5f68bbbba57c61b37b13
+ms.sourcegitcommit: b3a1c5b0b24f0e52cf318defe10f3d27a2770009
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67251195"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67316934"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>A figyelő a BitLocker és az eszköz titkosítása  
 Az Intune kínál egy központi helyen, azonosíthatja a Windows 10 rendszerű eszközök titkosítási állapotát, és elérhetővé teszi a BitLocker vonatkozó fontos információk az eszközök, az Azure Active Directoryban (Azure AD) formában.  
@@ -51,7 +51,7 @@ A jelentés megjeleníti a **eszköznév** a Windows 10-eszközök és a magas s
   - **Nem áll készen**: Az eszköz nem rendelkezik teljes körű titkosítási lehetőségeket, de továbbra is támogatja a titkosítást. Például az eszköz titkosítva manuálisan egy felhasználó vagy csoportházirenddel, amely lehetővé teszi a TMP nélküli titkosított értékre lehet beállítani.
   - **Nem alkalmazható**: Nem szerepel elegendő információt az eszköz besorolása.  
 
-- **Titkosítás állapota** – az operációs rendszer meghajtójának titkosítva van-e.  
+- **Titkosítás állapota** – az operációs rendszer meghajtójának titkosítva van-e. 
 
 
 ### <a name="device-encryption-status"></a>Eszközállapot-titkosítás
@@ -60,7 +60,7 @@ Amikor kijelöl egy eszközt, az Intune megjeleníti a **titkosítási Eszközá
 Ezen a panelen a következő részleteket biztosítja:  
 - **Eszköz neve** – az eszköz megjelenített neve.  
 - **Titkosítási készültségi** – egy eszközök készen áll-e BitLocker-titkosítást támogató értékelését. Egy eszköz rendelkezhet egy titkosítási állapotát *titkosított* annak ellenére, hogy a titkosítás készültségi *nem áll készen*, mert nem rendelkezik TPM. (Lásd a titkosítási készültségi további részleteket az előző szakaszban.)
-- **Titkosítás állapota** - e az operációs rendszer meghajtójának titkosítva van.  
+- **Titkosítás állapota** - e az operációs rendszer meghajtójának titkosítva van. Az Intune-jelentések eszközök titkosítási állapot- és állapota megváltozott a kezdéshez akár 24 órát is igénybe vehet.  
 - **Profilok** – listáját a *eszközkonfiguráció* profilok, amelyek erre az eszközre érvényesek, és a következő típust és a beállítások tartalmazzák:  
   - Profil típusa = *az Endpoint protection*  
   - Beállítások > Windows-titkosítás > eszközök titkosítása = *szükséges*  
