@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 06/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,18 +15,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a5918dc0574033020689b267418fb6283cd686db
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 97d656db3e828ef3377b927395a283fe995bb8a4
+ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373895"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389287"
 ---
 # <a name="use-custom-settings-for-windows-phone-81-devices-in-intune"></a>Egyéni beállítások használata Windows Phone 8.1 rendszerű eszközökhöz az Intune-ban
 
 A Microsoft Intune-nal egyéni beállításokat adhat hozzá vagy hozhat létre a Windows Phone 8.1 rendszerű eszközökhöz „egyéni profilok” használatával. Az egyéni profilok az Intune részét képezik. Akkor hasznosak, ha olyan eszközbeállításokat és funkciókat szeretne használni, amelyek nem érhetők el beépítetten az Intune-ban.
 
-A Windows Phone 8.1 egyéni profiljai az Open Mobile Alliance Uniform Resource Identifier (OMA-URI) beállításokat használják a különböző funkciók konfigurálásához. Ezekkel a beállításokkal általában a mobileszközgyártók vezérlik az eszközök funkcióit.
+A Windows Phone 8.1 egyéni profiljai az Open Mobile Alliance Uniform Resource Identifier (OMA-URI) beállításokat használják a különböző funkciók konfigurálásához. Ezekkel a beállításokkal általában a mobileszközgyártók vezérlik az eszközök funkcióit. [Windows Phone 8.1 MDM-protokoll dokumentációját](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-phone/dn499787(v=technet.10)) beállításokat sorolja fel.
 
 Ebből a cikkből megtudhatja, hogyan hozhat létre egyéni profilt Windows Phone 8.1 rendszerű eszközökhöz. 
 
@@ -62,6 +62,16 @@ Ebből a cikkből megtudhatja, hogyan hozhat létre egyéni profilt Windows Phon
 
 5. Válassza ki **OK** a módosítások mentéséhez. Szükség szerint adjon hozzá további beállításokat.
 6. Ha elkészült, az Intune-profil létrehozásához kattintson az **OK** > **Létrehozás** lehetőségre. Ha a profil elkészült, megjelenik az **Eszközkonfiguráció – Profilok** listában.
+
+## <a name="example"></a>Példa
+
+A következő példában Windows 8.1 Phone-telefonok esetén ebben az esetben mobilhálózaton módosítása, amikor a szolgáltató lefedettség területen kívül az utazási.
+
+- **Név**: Mobilhálózati Adatroaming engedélyezése
+- **Description** (Leírás): Engedélyezheti vagy letilthatja a mobilhálózati adatroaming
+- **OMA-URI** (megkülönbözteti a kis-és nagybetűket): ./Vendor/MSFT/PolicyManager/My/Connectivity/AllowCellularDataRoaming
+- **Adattípus**: Egész szám
+- **Érték**: 0
 
 ## <a name="next-steps"></a>További lépések
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: 55e758c8a7eddc1a5500464754448d26680ec772
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: eda0d77fc5cdb11fa4bc5b21f48ceb7616ecfb15
+ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819575"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389261"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Az Intune Windows-eszközök regisztrálási módszerei
 
@@ -51,6 +51,7 @@ A rendszergazdák az alábbi módszerek a Regisztrálás, amelyek nem igényelne
 - [Megosztott kezelés a Configuration Manager](https://docs.microsoft.com/sccm/comanage/overview) lehetővé teszi, hogy a rendszergazdák a meglévő Configuration Manager által felügyelt eszközök regisztrálása az Intune-nal az Intune-ban és a Configuration Manager kettős előnyeit. 
 - [Eszközregisztráció-kezelő](device-enrollment-manager-enroll.md) (DEM-) egy olyan speciális szolgáltatásfiók. DEM-fiókokat, amelyek lehetővé teszik több vállalati tulajdonú eszköz regisztrációjára és felügyeletére jogosult felhasználók engedélyekkel rendelkezik. Az ilyen típusú eszközök például POS- vagy segédprogram-alkalmazásokhoz megfelelőek, de nem alkalmasak olyan felhasználók számára, akik hozzá szeretnének férni a levelezésükhöz vagy a vállalati erőforrásokhoz. Ez a módszer nem a szolgáltatások, például a feltételes hozzáférés használatának engedélyezése. 
 - [Csoportos regisztráció](windows-bulk-enroll.md) lehetővé teszi, hogy egy jogosult felhasználó nagyszámú új vállalati tulajdonú eszközök csatlakoztatása az Azure Active Directory és az Intune-ban. A kiépítési csomagot hoz létre a Windows Configuration Designer (WCD) alkalmazással. Ezután USB-vel adathordozók a kezdeti Windows Kezdőélmény alatt, vagy ha a meglévő Windows-számítógép esetén a kiépítési csomagot az eszközök automatikus regisztrálása az Intune-ba való telepítését. Ez a módszer nem a feltételes hozzáférés használatának engedélyezése. 
+- [Windows IoT Core-eszközök regisztrálásához](https://docs.microsoft.com/en-us/windows/iot-core/manage-your-device/intunedeviceenrollment) történik a Windows IoT Core Irányítópult segítségével az eszköz előkészítése, és a Windows Configuration Designer segítségével hozzon létre olyan kiépítési csomagot. Ezt követően SD-kártyán lévő adathordozó használatával történő kezdeti rendszerbetöltés során, a kiépítési csomagot, az eszközök automatikus regisztrálása az Intune-bA telepíti.
 
 ## <a name="next-steps"></a>További lépések
 

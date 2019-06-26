@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62555e9b5a868b93dda08a8c784221eff570bb89
-ms.sourcegitcommit: 2545ffb75b8d9290718d3a67acdcbea2f279090f
+ms.openlocfilehash: 756fafc02a6d64b1495a838ab8eee4130ee77361
+ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67263736"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389338"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 
@@ -53,7 +53,7 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Is [fontos b
 
 <!-- ########################## -->
 
-## <a name="week-of-june-10-2019"></a>2019. június 10 hete 
+## <a name="week-of-june-17-2019"></a>2019 június 17 hete   
 
 ### <a name="app-management"></a>Alkalmazáskezelés
 
@@ -63,8 +63,11 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Is [fontos b
 * Megtekintheti és kezelheti az eszközöket regisztrálnak az Intune vállalati portál vagy a Microsoft Intune alkalmazáson keresztül.    
 * Támogatás igényléséhez lépjen kapcsolatba a szervezet.    
 * A visszajelzés küldése a Microsoftnak.    
-* Megtekintheti a használati feltételeket, ha a szervezet által beállított.    
+* Megtekintheti a használati feltételeket, ha a szervezet által beállított.  
 
+## <a name="week-of-june-10-2019"></a>2019. június 10 hete 
+
+### <a name="app-management"></a>Alkalmazáskezelés  
 
 #### <a name="new-sample-apps-showing-intune-sdk-integration-available-on-github----2653471---"></a>Új, a Githubon érhető el az Intune SDK-integráció bemutató mintaalkalmazások <!-- 2653471 -->
 A GitHub-fiók msintuneappsdk hozzá van adva az új mintaalkalmazások iOS (Swift), Android, a Xamarin.iOS, a Xamarin Forms eszközkészlethez és a Xamarin.Android-hez. Ezeket az alkalmazásokat úgy van kialakítva, hogy a meglévő dokumentációnk kiegészítik, és adja meg az Intune APP SDK integrálása saját mobilalkalmazások hogyan technológiáink miként. Ha az Intune SDK-val további útmutatást igénylő alkalmazás fejlesztője, tekintse meg a következő csatolt minták:
