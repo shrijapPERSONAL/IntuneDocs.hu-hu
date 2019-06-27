@@ -18,12 +18,12 @@ ms.reviewer: tisilv
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bef0eb545f5f0ca0f85365a08e6bc5d726d6979e
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: 4c8dfdea552d035c036828bfd2e6695cc5e4cb7b
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196858"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67402735"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>A céges erőforrásokhoz iOS-eszközzel történő hozzáférés beállítása  
 
@@ -59,15 +59,15 @@ Felfüggesztés regisztráció során több percig, előfordulhat, hogy az alkal
 
 1. Nyissa meg a vállalati portálon, és jelentkezzen be munkahelyi vagy iskolai fiókjával. 
 
-    ![Példa Képernyőkép a céges portál alkalmazást, jelentkezzen be.](./media/ios-01-cp-enroll-1903.PNG)  
+    ![Példa Képernyőkép a céges portál alkalmazást, jelentkezzen be.](./media/ios-01-cp-enroll-1904.PNG)  
 
 2. Amikor a rendszer kéri a vállalati portál értesítések fogadása, koppintson **engedélyezése.** Céges portál értesítéseket riasztást küldjön, ha például az eszköz beállításait frissíteni kell kell használja. 
 
-    ![Példa Képernyőkép a céges portál kezdőlapjára, "Értesítések" parancssort.](./media/ios-04-cp-enroll-1903.PNG)  
+    ![Példa Képernyőkép a céges portál kezdőlapjára, "Értesítések" parancssort.](./media/ios-02-cp-enroll-1904.PNG)  
 
 3. Az a **hozzáférés beállítása** képernyőn válassza ki **megkezdéséhez.**  
 
-     ![Példa képernyőfelvétel a vállalati portált, "Hozzáférés beállítása" képernyő.](./media/ios-05-cp-enroll-1903.PNG)  
+     ![Példa képernyőfelvétel a vállalati portált, "Hozzáférés beállítása" képernyő.](./media/ios-03-cp-enroll-1904.PNG)  
 
 4. Olvassa végig az eszközadatokat a szervezet láthat és mit nem listája. Koppintson a **Folytatás**.  
 
@@ -87,7 +87,7 @@ Felfüggesztés regisztráció során több percig, előfordulhat, hogy az alkal
 
 7. iOS-es 12.2 és később egyetlen: Amikor a rendszer kéri, nyissa meg a vállalati portálon, koppintson **nyissa meg a**. A **felügyeleti profil telepítése** képernyő a profil telepítésének lépéseit sorolja fel.
 
-    ![Példa Képernyőkép a céges portál, a felügyeleti profil telepítése képernyőn.](./media/ios-1904-settings-icon.PNG)  
+    ![Példa Képernyőkép a céges portál, a felügyeleti profil telepítése képernyőn.](./media/ios-07-cp-enroll-1904.PNG)  
 
 8. Nyissa meg a gépház alkalmazás, és koppintson **profil letöltött**.  
 
@@ -99,24 +99,24 @@ Felfüggesztés regisztráció során több percig, előfordulhat, hogy az alkal
     
 10. Adja meg az eszköz jelszavát. Koppintson a **telepítése**.    
 
-    ![A beállítások alkalmazás, a profil telepítése képernyőn a kurzorral a példaként szolgáló képernyőképen a ** telepítés ** gombra.](./media/ios-1904-password-install.PNG)  
+    ![A beállítások alkalmazás, a profil telepítése képernyőn a kurzorral a példaként szolgáló képernyőképen a ** telepítés ** gombra.](./media/ios-10-cp-enroll-1904.PNG)  
 
 
 11. A következő képernyőn az eszközfelügyeleti szabványos rendszer figyelmeztetést. Koppintson a telepítés folytatásához **telepítése**. Ha a Távfelügyelet megbízhatóságának beállítása kéri, koppintson **megbízhatósági**.  
 
-    ![Gépház alkalmazás, a standard szintű rendszer figyelmeztetési képernyő a legfelső szintű tanúsítvány és a mobileszköz-kezelés képernyőképet.](./media/ios-15-cp-enroll-1903.PNG)  
+    ![Gépház alkalmazás, a standard szintű rendszer figyelmeztetési képernyő a legfelső szintű tanúsítvány és a mobileszköz-kezelés képernyőképet.](./media/ios-11-cp-enroll-1904.PNG)  
 
 12. Koppintson a telepítés befejezése után **kész**. Győződjön meg arról, hogy a profil telepítése, keresse fel a **profilok és Eszközfelügyelet** beállításait. Megtekintheti a profil alatt felsorolt **mobileszköz-kezelés**.   
 
-    ![Példa Képernyőkép a beállítások alkalmazást, profilok és Eszközfelügyelet beállításait, a felügyeleti profil megjelenítése.](./media/ios-00-cp-enroll-1903.PNG)  
+    ![Példa Képernyőkép a beállítások alkalmazást, profilok és Eszközfelügyelet beállításait, a felügyeleti profil megjelenítése.](./media/ios-12-cp-enroll-1904.PNG)  
 
 13. Térjen vissza a céges portál alkalmazás. Céges portál elkezdi szinkronizálása, és konfigurálja az eszközt. Céges portál kérheti, hogy további eszközbeállítások frissítése. Ha azt, koppintson **Folytatás**.  
 
-    ![Vállalati portált, "Hozzáférés beállítása" képernyő, és a követelmény beállítás melletti sárga háromszög képernyőképet.](./media/ios-12-cp-enroll-1903.PNG)  
+    ![Vállalati portált, "Hozzáférés beállítása" képernyő, és a követelmény beállítás melletti sárga háromszög képernyőképet.](./media/ios-13-cp-enroll-1904.PNG)  
 
 14. Tudni fogja, hogy a telepítés befejeződött, ha a listában szereplő összes zöld körön megjelenítése. Koppintson a **Kész** gombra.   
     
-    ![Példaként szolgáló képernyőképen a vállalati portál "készen vagyunk!" az összes zöld körök megjelenítő képernyő.](./media/ios-13-cp-enroll-1903.PNG)  
+    ![Példaként szolgáló képernyőképen a vállalati portál "készen vagyunk!" az összes zöld körök megjelenítő képernyő.](./media/ios-14-cp-enroll-1904.PNG)  
 
 > [!Note]
 > Ha a szervezet figyeli a hang- és korlátozások, vagy a vállalat által birtokolt eszközt biztosít, lehetséges, hogy néhány további lépésre. Ha az kéri, hogy telepítse a **Datalert** alkalmazás, lásd: [regisztrálja az eszközt a távközlésiköltség-kezelőben](enroll-your-device-with-telecom-expense-management-ios.md). Ha a szervezet Apple Device Enrollment Program része, ismerje meg, [a vállalat által birtokolt eszközök regisztrálási módjának](enroll-your-device-dep-ios.md).  

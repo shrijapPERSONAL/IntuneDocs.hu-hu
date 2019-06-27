@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5d229972c238756598694d2e3463f22290924ccc
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 345437b728df50cded2dcbd230cb360eef98a33e
+ms.sourcegitcommit: 6bba9f2ef4d1ec699f5713a4da4f960e7317f1cd
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045485"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67407149"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>A Microsoft Intune App SDK iOS rendszeren – fejlesztői útmutató
 
@@ -40,19 +40,31 @@ Az iOS-hez készült Microsoft Intune App SDK lehetővé teszi, hogy Intune alka
 
 * Töltse le az iOS-re készült Intune App SDK fájljait a [GitHubról](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios).
 
-## <a name="whats-in-the-sdk"></a>Az SDK tartalma
+## <a name="whats-in-the-sdk-repository"></a>Mi az az SDK-tárházban
 
-Az iOS-hoz készült Intune App SDK magában foglalja a statikus könyvtárat, az erőforrásfájlokat, az API-fejléceket, a hibakeresési beállításokat tartalmazó plist-fájlt és a konfiguráló eszközt. Az ügyfélalkalmazások tartalmazhatják az erőforrásfájlokat, és általában statikus módon csatolhatók a könyvtárakhoz a szabályzatok érvénybe léptetéséhez. A speciális Intune APP-funkciók használata API-k segítségével kényszeríthető ki.
+A következő fájlok a Swift-kód nem tartalmazhat, vagy az Xcode-10.2 előtti verziót ügyfélbeállításai alkalmazások és bővítmények: 
 
-Ez az útmutató az iOS-hez készült Intune App SDK következő összetevőit ismerteti:
+* **IntuneMAM.framework**: Az Intune App SDK keretrendszere. Javasoljuk, hogy ezt a keretrendszert az alkalmazás/bővítmények engedélyezéséhez az Intune-ügyfél Alkalmazáskezelés társítja. Néhány fejlesztő azonban előfordulhat, hogy inkább a statikus kódtárat (lásd alább) által nyújtott.
 
-* **libIntuneMAM.a**: Az Intune App SDK statikus erőforrástára. Ha az alkalmazás nem használ bővítményeket, akkor csatolja ezt a kódtárat a projekthez, hogy az alkalmazás felügyelhető legyen az Intune ügyfélalkalmazás-kezeléssel.
+* **libIntuneMAM.a**: Az Intune App SDK statikus erőforrástára. A fejlesztők dönthet a statikus kódtár helyett a keretrendszer mutató hivatkozást. Mivel statikus kódtárak beágyazott directlty be az alkalmazás/bővítmény bináris build időpontjában, vannak bizonyos launch-időt arra, hogy a statikus kódtár használatával. Viszont hogy integrálja azokat az alkalmazásba, bonyolultabb folyamattá. Ha az alkalmazás tartalmaz minden olyan bővítmények, létrehozhatja, ha az alkalmazást a statikus könyvtárat, és bővítmények eredményezi egy nagyobb alkalmazás csomagjának mérete, mint a statikus könyvtárat beágyaz minden alkalmazás és bővítmény bináris. Ha a keretrendszert használja, alkalmazások és bővítmények megoszthatja ugyanazt az Intune SDK bináris, alkalmazás kisebb méretet eredményez.
 
-* **IntuneMAM.framework**: Az Intune App SDK keretrendszere. Csatolja ezt a keretrendszert a projekthez, hogy az alkalmazás felügyelhető legyen az Intune ügyfélalkalmazás-kezelés segítségével. Akkor használja ezt a keretrendszert a statikus erőforrástár helyett, ha az alkalmazás bővítményeket használ. Ez esetben a projekt nem hoz létre több példányt a statikus erőforrástárból.
+* **IntuneMAMResources.bundle**: Egy erőforrás-csomagot, amely olyan erőforrásokat tartalmaz, az SDK támaszkodik. Az erőforrás bundle csak az alkalmazásokhoz, amelyek a statikus kódtárat (libIntuneMAM.a) integrálása megadása kötelező.
 
-* **IntuneMAMResources.bundle**: Egy erőforrás-csomagot, amely rendelkezik, amelyek az SDK támaszkodik.
 
-* **A fejlécek**: Az Intune App SDK API-kat tesz elérhetővé. Ha API-t használ, meg kell adnia az API-t tartalmazó fejlécfájlt. Az alábbi fejlécfájlok tartalmazzák azokat az API-kat, adattípusokat és protokollokat, melyek az Intune APP SDK-val elérhetővé válnak a fejlesztők számára:
+A következő fájlok érvényesek, amelyek tartalmazzák a Swift-kód, és az Xcode 10.2 + ügyfélbeállításai alkalmazások és bővítmények: 
+
+* **IntuneMAMSwift.framework**: Az Intune App SDK Swift-keretrendszer. Ezt a keretrendszert az API-k, amelyek az alkalmazás meghívja a fejléceket minden tartalmazza. Ezt a keretrendszert az alkalmazás/bővítmények engedélyezéséhez az Intune-ügyfél Alkalmazáskezelés társítani. 
+
+* **IntuneMAMSwiftStub.framework**: Az Intune App SDK Swift helyettes keretrendszer. Ez a IntuneMAMSwift.framework, amely alkalmazások és bővítmények kell kapcsolni az előírt függőség.
+
+
+Minden alkalmazás és bővítmény a következő fájlok érvényesek:
+
+* **IntuneMAMConfigurator**: Állítsa be az alkalmazás vagy a bővítmény info.plist fájljában a minimálisan szükséges módosításokat, az Intune-felügyelethez használt eszköz. Az alkalmazás vagy a bővítmény működésére, attól függően szükség lehet további manuális módosításokat az info.plist fájl.
+
+* **A fejlécek**: A nyilvános Intune App SDK API-kat tesz elérhetővé. Ezeket a fejléceket is belül a IntuneMAM/IntuneMAMSwift keretrendszerekkel, így a fejlesztőknek szól, akik felhasználása a keretrendszereket egyikét nem kell manuálisan a fejlécek hozzáadása a projekthez. Válassza ki a statikus kódtárral (libIntuneMAM.a) mutató hivatkozást a fejlesztők kell manuálisan tartalmazza ezeket a fejléceket a projektben. 
+
+Az alábbi fejlécfájlok tartalmazzák azokat az API-kat, adattípusokat és protokollokat, melyek az Intune APP SDK-val elérhetővé válnak a fejlesztők számára:
 
     * IntuneMAMAppConfig.h
     * IntuneMAMAppConfigManager.h
@@ -82,16 +94,18 @@ Az iOS-hoz készült Intune App SDK révén minimális kódmódosítással adhat
 
 Az Intune App SKD engedélyezéséhez kövesse az alábbi lépéseket:
 
-1. **(Ajánlott) 1. lehetőség**: Hivatkozás `IntuneMAM.framework` a projekthez. Húzza az `IntuneMAM.framework` keretrendszert a projekthez használni kívánt elemek **Embedded Binaries** (Beágyazott bináris fájlok) listájába.
+1. **1 - keretrendszer (ajánlott) beállítást**: Ha az Xcode 10.2 + használja, és a/bővítményt tartalmaz a Swift-kód hivatkozás `IntuneMAMSwift.framework` és `IntuneMAMSwiftStub.framework` a cél: Húzza `IntuneMAMSwift.framework` és `IntuneMAMSwiftStub.framework` , a **beágyazott bináris fájlok** a projekt listájába.
+
+Ellenkező esetben hivatkozás `IntuneMAM.framework` a cél: Húzza az `IntuneMAM.framework` keretrendszert a projekthez használni kívánt elemek **Embedded Binaries** (Beágyazott bináris fájlok) listájába.
 
    > [!NOTE]
    > Ha a keretrendszert használja, manuálisan kell eltávolítania a szimulátorarchitektúrákat az univerzális keretrendszerből, mielőtt beküldi az alkalmazást az App Store-ba. További információért lásd [Az alkalmazás beküldése az App Store-ba](#submit-your-app-to-the-app-store) című témakört.
 
-   **2. lehetőség**: Csatolás a `libIntuneMAM.a` könyvtár. Húzza a `libIntuneMAM.a` könyvtárat a projekthez használni kívánt elemek **Linked Frameworks and Libraries** (Csatolt keretrendszerek és könyvtárak) listájába.
+   **2. lehetőség – statikus kódtárat**: Ez a beállítás csak érhető el, hogy mely Swift-kód nem tartalmaz, vagy az Xcode készült alkalmazások és bővítmények < 10.2. Csatolás a `libIntuneMAM.a` könyvtár. Húzza a `libIntuneMAM.a` könyvtárat a projekthez használni kívánt elemek **Linked Frameworks and Libraries** (Csatolt keretrendszerek és könyvtárak) listájába.
 
-    ![Intune App SDK (iOS) – csatolt keretrendszerek és könyvtárak](./media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
+    ![Intune App SDK iOS: linked frameworks and libraries](./media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
-    Írja be a `-force_load {PATH_TO_LIB}/libIntuneMAM.a` utasítást a következő helyek egyikére, kicserélve a `{PATH_TO_LIB}` sort az Intune App SDK elérési útjával:
+    Add `-force_load {PATH_TO_LIB}/libIntuneMAM.a` to either of the following, replacing `{PATH_TO_LIB}` with the Intune App SDK location:
    * a projekt `OTHER_LDFLAGS` buildkonfigurációs beállítása
    * az Xcode kezelőfelület **Other Linker Flags** (Más csatoló jelzők) területe
 
@@ -101,8 +115,21 @@ Az Intune App SKD engedélyezéséhez kövesse az alábbi lépéseket:
      Húzza az `IntuneMAMResources.bundle` erőforrás-csomagot a **Copy Bundle Resources** (Erőforrás-csomagok másolása) alatti **Build Phases** (Összeállítási fázisok) elemre a projektbe való felvételhez.
 
      ![Intune App SDK (iOS) – erőforráscsomagok másolása](./media/intune-app-sdk-ios-copy-bundle-resources.png)
+     
+2. Swift, hívja meg az Intune API-k valamelyikét kell, ha az alkalmazás/bővítmény importálnia kell a szükséges az Intune SDK fejlécek az Objective-C áthidalási fejléc-n keresztül. Ha az alkalmazás/bővítmény már nem tartalmaz egy Objective-C áthidalási fejlécet, megadhat egy keresztül a `SWIFT_OBJC_BRIDGING_HEADER` buildkonfigurációs beállításába vagy az Xcode Kezelőfelület **Objective-C Bridging fejléc** mező. A áthidalási fejléc következőhöz hasonlóan kell kinéznie:
 
-2. Vegye fel a következő iOS-keretrendszereket a projektbe:  
+   ```objc
+      #import <IntuneMAMSwift/IntuneMAM.h>
+   ```
+   
+   Ez elérhetővé teszi az Intune SDK teljes API-k minden Swift forrásfájlok során az alkalmazás/bővítmény. 
+   
+    > [!NOTE]
+    > * Dönthet úgy csak híd adott Intune SDK-t a fejlécek Swift ahelyett, hogy a mindenre kiterjedő IntuneMAM.h
+    > * Attól függően, melyik keretrendszer/statikus tár már integrált a fejléc-fájl elérési útja eltérő lehet.
+    > * Az Intune SDK API-k használatával egy modul importálási utasítást Swift elérhetővé tétele (például: IntuneMAMSwift importálása) jelenleg nem támogatott. Az Objective-C áthidalási fejléc használata az ajánlott eljárás.
+    
+3. Vegye fel a következő iOS-keretrendszereket a projektbe:  
     * MessageUI.framework  
     * Security.framework  
     * MobileCoreServices.framework  
@@ -115,7 +142,7 @@ Az Intune App SKD engedélyezéséhez kövesse az alábbi lépéseket:
     * QuartzCore.framework  
     * WebKit.framework
 
-3. Engedélyezze a kulcsláncmegosztást (ha még nincs engedélyezve) a projekthez használni kívánt elemeken a **Capabilities** (Képességek) lehetőségre kattintva, majd kapcsolja be a **Keychain Sharing** (Kulcsláncmegosztás) kapcsolót. A következő lépéshez szükséges a kulcsláncmegosztás.
+4. Engedélyezze a kulcsláncmegosztást (ha még nincs engedélyezve) a projekthez használni kívánt elemeken a **Capabilities** (Képességek) lehetőségre kattintva, majd kapcsolja be a **Keychain Sharing** (Kulcsláncmegosztás) kapcsolót. A következő lépéshez szükséges a kulcsláncmegosztás.
 
    > [!NOTE]
    > A telepítési profil esetében elengedhetetlen az új kulcsláncmegosztási értékek támogatása. A kulcslánc-hozzáférési csoportoknak támogatniuk kell a helyettesítő karaktert. Ezt a .mobileprovision fájl szövegszerkesztőben való megnyitásával ellenőrizheti, rákeresve a **keychain-access-groups** kifejezésre. Itt meggyőződhet arról, hogy használ-e helyettesítő karaktert. Példa:
@@ -126,7 +153,7 @@ Az Intune App SKD engedélyezéséhez kövesse az alábbi lépéseket:
    >  </array>
    >  ```
 
-4. Miután engedélyezte a kulcsláncmegosztást, az alábbi lépésekkel hozhat létre egy különálló hozzáférési csoportot, amelyben az Intune App SDK adatait tárolhatja. A kulcslánc-hozzáférési csoportokat a kezelőfelületet vagy a jogosultságokat tartalmazó fájl használatával hozhatja létre. Ha a kezelőfelületet használja a kulcslánc-hozzáférési csoport létrehozására, kövesse az alábbi lépéseket:
+5. Miután engedélyezte a kulcsláncmegosztást, az alábbi lépésekkel hozhat létre egy különálló hozzáférési csoportot, amelyben az Intune App SDK adatait tárolhatja. A kulcslánc-hozzáférési csoportokat a kezelőfelületet vagy a jogosultságokat tartalmazó fájl használatával hozhatja létre. Ha a kezelőfelületet használja a kulcslánc-hozzáférési csoport létrehozására, kövesse az alábbi lépéseket:
 
     1. Ha a mobilalkalmazás nem rendelkezik minden olyan kulcslánc hozzáférési definiált csoportot, az alkalmazás hozzáadásához csomagazonosítót, a **első** csoport.
     
@@ -144,11 +171,11 @@ Az Intune App SKD engedélyezéséhez kövesse az alábbi lépéseket:
         > [!NOTE]
         > A jogosultságokat tartalmazó fájl egy XML-fájl, amely minden mobilalkalmazásnál egyedi. és speciális engedélyek és képességek meghatározására szolgál az iOS-alkalmazásban. Ha az alkalmazása eddig nem rendelkezett jogosultságokat tartalmazó fájllal, a kulcsláncmegosztás engedélyezésekor (3. lépés) az Xcode generál egyet. Győződjön meg, hogy az alkalmazás Csomagazonosítóját az első bejegyzést a listában.
 
-5. Az alkalmazáshoz tartozó Info.plist fájl `LSApplicationQueriesSchemes` tömbjében tüntessen fel minden protokollt, amelyet az alkalmazás átad az `UIApplication canOpenURL` számára. Ne felejtse el menteni a módosításokat, mielőtt folytatná a következő lépéssel.
+6. Az alkalmazáshoz tartozó Info.plist fájl `LSApplicationQueriesSchemes` tömbjében tüntessen fel minden protokollt, amelyet az alkalmazás átad az `UIApplication canOpenURL` számára. Ne felejtse el menteni a módosításokat, mielőtt folytatná a következő lépéssel.
 
-6. Ha az alkalmazás még nem használ FaceID-t, győződjön meg róla, hogy az [NSFaceIDUsageDescription Info.plist kulcs](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW75) az alapértelmezett üzenettel van konfigurálva. Ez kötelező, mivel az iOS így tudata a felhasználóval, hogy az alkalmazás hogyan használja a FaceID-t. A FaceID egy Intune App Protection szabályzatbeállítással alkalmazás-hozzáférési módként használható, ha ezt a rendszergazda konfigurálta.
+7. Ha az alkalmazás még nem használ FaceID-t, győződjön meg róla, hogy az [NSFaceIDUsageDescription Info.plist kulcs](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW75) az alapértelmezett üzenettel van konfigurálva. Ez kötelező, mivel az iOS így tudata a felhasználóval, hogy az alkalmazás hogyan használja a FaceID-t. A FaceID egy Intune App Protection szabályzatbeállítással alkalmazás-hozzáférési módként használható, ha ezt a rendszergazda konfigurálta.
 
-7. Fejezze be az alkalmazás Info.plist fájljának konfigurálását az [SDK adattárában](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios) található IntuneMAMConfigurator eszközzel. Az eszköz három paraméterrel rendelkezik:
+8. Fejezze be az alkalmazás Info.plist fájljának konfigurálását az [SDK adattárában](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios) található IntuneMAMConfigurator eszközzel. Az eszköz három paraméterrel rendelkezik:
 
    |Tulajdonság|Használat|
    |---------------|--------------------------------|
@@ -219,30 +246,30 @@ Az IntuneMAMSettings szótárban az alábbi támogatott beállításokkal konfig
 
 Egy részükről már volt szó korábbi szakaszokban, más részük pedig nem vonatkozik minden alkalmazásra.
 
-Beállítás  | Typo  | Meghatározás | Kötelező?
+Beállítás  | Type  | Meghatározás | Kötelező?
 --       |  --   |   --       |  --
 ADALClientId  | Sztring  | Az alkalmazás Azure AD ügyfél-azonosítója. | Kötelező, ha az alkalmazás használja az ADAL-t. |
-ADALAuthority | Sztring | Az alkalmazás használatban lévő Azure AD-szolgáltatója. Használja azt a saját környezetet, ahol az AAD-fiókok konfigurálása megtörtént. | Kötelező, ha az alkalmazás használja az ADAL-t. Ha ez az érték hiányzik, a rendszer egy Intune-beli alapértelmezett értéket használ.|
-ADALRedirectUri  | Sztring  | Az alkalmazás Azure AD átirányítási URI-ja. | Az ADALRedirectUri vagy az ADALRedirectScheme kötelező, ha az alkalmazás használja az ADAL-t.  |
-ADALRedirectScheme  | Sztring  | Az alkalmazás Azure AD átirányítási sémája. Használható az ADALRedirectUri helyett, ha az alkalmazás átirányítási URI-ja `scheme://bundle_id` formátumú. | Az ADALRedirectUri vagy az ADALRedirectScheme kötelező, ha az alkalmazás használja az ADAL-t. |
+ADALAuthority | Karakterlánc | Az alkalmazás használatban lévő Azure AD-szolgáltatója. Használja azt a saját környezetet, ahol az AAD-fiókok konfigurálása megtörtént. | Kötelező, ha az alkalmazás használja az ADAL-t. Ha ez az érték hiányzik, a rendszer egy Intune-beli alapértelmezett értéket használ.|
+ADALRedirectUri  | Karakterlánc  | Az alkalmazás Azure AD átirányítási URI-ja. | Az ADALRedirectUri vagy az ADALRedirectScheme kötelező, ha az alkalmazás használja az ADAL-t.  |
+ADALRedirectScheme  | Karakterlánc  | Az alkalmazás Azure AD átirányítási sémája. Használható az ADALRedirectUri helyett, ha az alkalmazás átirányítási URI-ja `scheme://bundle_id` formátumú. | Az ADALRedirectUri vagy az ADALRedirectScheme kötelező, ha az alkalmazás használja az ADAL-t. |
 ADALLogOverrideDisabled | Logikai  | Megadásával az SDK átirányítja az összes ADAL-naplófájlt (beleértve az esetleges ADAL-hívásokat az alkalmazásból) a saját naplófájljába. Az alapértelmezett érték a Nem. Állítsa be a YES értéket, ha az alkalmazás visszahívja a saját ADAL-naplóját. | Választható. |
 ADALCacheKeychainGroupOverride | Sztring  | Az ADAL-gyorsítótárhoz a „com.microsoft.adalcache” helyett használandó kulcslánccsoportot adja meg. Vegye figyelembe, hogy ez nem tartalmazza az app-id előtagot. Ezt az előtagot futás közben fogja megkapni a sztring. | Választható. |
 AppGroupIdentifiers | Sztringtömb  | Az alkalmazáscsoportok tömbje az alkalmazás jogosultságainak com.apple.security.application-groups szakaszában. | Szükséges, ha az alkalmazás alkalmazáscsoportokat használ. |
-ContainingAppBundleId | Sztring | Megadja a bővítményt tartalmazó alkalmazás csomagazonosítóját. | IOS-bővítményekhez szükséges. |
+ContainingAppBundleId | Karakterlánc | Megadja a bővítményt tartalmazó alkalmazás csomagazonosítóját. | IOS-bővítményekhez szükséges. |
 DebugSettingsEnabled| Logikai | Ha YES értékű, használhatók a Settings csomagban található tesztszabályzatok. Az alkalmazásokat *tilos* úgy szállítani, hogy engedélyezve van bennük ez a beállítás. | Választható. Az alapértelmezett érték a nem.|
-MainNibFile <br> MainNibFile~ipad  | Sztring  | Ennek a beállításnak tartalmaznia kell az alkalmazás fő Nib-fájljának nevét.  | Kötelező, ha az alkalmazás a MainNibFile-t az Info.plist fájlban definiálja. |
-MainStoryboardFile <br> MainStoryboardFile~ipad  | Sztring  | Ennek a beállításnak tartalmaznia kell az alkalmazás fő storyboard-fájljának nevét. | Kötelező, ha az alkalmazás a UIMainStoryboardFile-t az Info.plist fájlban definiálja. |
+MainNibFile <br> MainNibFile~ipad  | Karakterlánc  | Ennek a beállításnak tartalmaznia kell az alkalmazás fő Nib-fájljának nevét.  | Kötelező, ha az alkalmazás a MainNibFile-t az Info.plist fájlban definiálja. |
+MainStoryboardFile <br> MainStoryboardFile~ipad  | Karakterlánc  | Ennek a beállításnak tartalmaznia kell az alkalmazás fő storyboard-fájljának nevét. | Kötelező, ha az alkalmazás a UIMainStoryboardFile-t az Info.plist fájlban definiálja. |
 MAMPolicyRequired| Logikai| Azt adja meg, hogy megakadályozza-e a rendszer az alkalmazás elindítását, ha az alkalmazásnak nincs Intune APP-szabályzata. Az alapértelmezett érték a Nem. <br><br> Megjegyezés: Nem kell alkalmazásokat benyújtani az App Store a mampolicyrequired beállítása Igen. | Választható. Az alapértelmezett érték a nem.|
 MAMPolicyWarnAbsent | Logikai| Azt adja meg, hogy figyelmeztesse-e az alkalmazás a felhasználót indítás közben, ha az alkalmazásnak nincs Intune APP-szabályzata. <br><br> Megjegyezés: Felhasználók továbbra is engedélyezett lesz a figyelmeztetés bezárása után szabályzat nélkül az alkalmazás használatához. | Választható. Az alapértelmezett érték a nem. |
 MultiIdentity | Logikai| Azt adja meg, hogy az alkalmazás képes-e kezelni a többszörös identitást. | Választható. Az alapértelmezett érték a nem. |
 SplashIconFile <br> SplashIconFile ~ ipad | Sztring  | Az Intune-kezdőképet (indítóképernyőt) tartalmazó ikonfájlt határozza meg. | Választható. |
 SplashDuration | Szám | Az Intune-kezdőképernyő megjelenésének minimális időtartama (másodpercben) az alkalmazás indításakor. Az alapértelmezett érték 1.5. | Választható. |
 BackgroundColor| Sztring| A kezdő- és a PIN-kód bevitelére szolgáló képernyő háttérszínét adja meg. Hexadecimális RGB-sztringet fogad el „#XXXXXX” alakban, amelyben az X-ek helyén számjegy (0–9), illetve és A és F közötti nagybetű állhat. A kettőskereszt jel kihagyható.   | Választható. Alapértelmezése a világosszürke szín. |
-ForegroundColor| Karakterlánc| A kezdőképernyő és a PIN-kód bevitelére szolgáló képernyő előtérszínét, például a szöveg színét határozza meg. Hexadecimális RGB-sztringet fogad el „#XXXXXX” alakban, amelyben az X-ek helyén számjegy (0–9), illetve és A és F közötti nagybetű állhat. A kettőskereszt jel kihagyható.  | Választható. Alapértelmezett értéke a fekete. |
+ForegroundColor| Sztring| A kezdőképernyő és a PIN-kód bevitelére szolgáló képernyő előtérszínét, például a szöveg színét határozza meg. Hexadecimális RGB-sztringet fogad el „#XXXXXX” alakban, amelyben az X-ek helyén számjegy (0–9), illetve és A és F közötti nagybetű állhat. A kettőskereszt jel kihagyható.  | Választható. Alapértelmezett értéke a fekete. |
 AccentColor | Sztring| A PIN-kód megadására szolgáló képernyő kiemelőszínét (például a gombszöveg színét és a mezők kijelölésének színét) határozza meg. Hexadecimális RGB-sztringet fogad el „#XXXXXX” alakban, amelyben az X-ek helyén számjegy (0–9), illetve és A és F közötti nagybetű állhat. A kettőskereszt jel kihagyható.| Választható. Alapértéke a rendszer kék színe. |
 MAMTelemetryDisabled| Logikai| Az határozható meg vele, hogy az SDK ne küldjön telemetriai adatokat a háttérrendszerének.| Választható. Az alapértelmezett érték a nem. |
 MAMTelemetryUsePPE | Logikai | Itt adhatja meg, hogy a MAM SDK-t küldjön-e adatokat a PPE telemetriai háttérrendszernek. Akkor használja ezt a beállítást, ha teszteli az alkalmazásokat az Intune szabályzatával. Megakadályozhatja vele, hogy a teszt telemetriai adatai keveredjenek az ügyfelek adataival. | Választható. Az alapértelmezett érték a nem. |
-MaxFileProtectionLevel | Karakterlánc | Választható. Itt engedélyezheti az alkalmazásnak az által támogatott maximális `NSFileProtectionType` szintnek a meghatározását. Ez az érték felülbírálja a szolgáltatás által küldött szabályzatot, ha a szint magasabb, mint amit az alkalmazás támogatni képes. A lehetséges értékek: `NSFileProtectionComplete`, `NSFileProtectionCompleteUnlessOpen`, `NSFileProtectionCompleteUntilFirstUserAuthentication`, `NSFileProtectionNone`.|
+MaxFileProtectionLevel | Sztring | Választható. Itt engedélyezheti az alkalmazásnak az által támogatott maximális `NSFileProtectionType` szintnek a meghatározását. Ez az érték felülbírálja a szolgáltatás által küldött szabályzatot, ha a szint magasabb, mint amit az alkalmazás támogatni képes. A lehetséges értékek: `NSFileProtectionComplete`, `NSFileProtectionCompleteUnlessOpen`, `NSFileProtectionCompleteUntilFirstUserAuthentication`, `NSFileProtectionNone`.|
 OpenInActionExtension | Logikai | A beállítása YES a műveleti bővítményekben való megnyitáshoz. További információért lásd az Adatok megosztása az UIActivityViewController használatával szakaszt. |
 WebViewHandledURLSchemes | Sztringek tömbje | Az alkalmazás WebView-ja által kezelt URL-sémát határozza meg. | Kötelező, ha az alkalmazás olyan WebView-t használ, amely az URL-címeket hivatkozásokkal és/vagy javascripttel kezeli. |
 
@@ -303,7 +330,7 @@ Példa:
 
 Ha azt szeretné, hogy az Intune SDK minden hitelesítést az ADAL és a regisztráció használatával kezeljen még az alkalmazás indításának befejeződése előtt, és hogy az alkalmazás mindig kérjen APP-szabályzatot, akkor nem kell használnia a `loginAndEnrollAccount` API-t. Egyszerűen megadhatja a két alábbi beállításhoz a YES értéket az alkalmazás Info.plist fájljának IntuneMAMSettings szótárában.
 
-Beállítás  | Typo  | Meghatározás |
+Beállítás  | Type  | Meghatározás |
 --       |  --   |   --       |  
 AutoEnrollOnLaunch| Logikai| Megadja, hogy az alkalmazás megpróbáljon-e automatikusan regisztrálni indításkor, ha meglévő felügyelt identitást érzékel, és ha korábban még nem történt regisztráció. Az alapértelmezett érték a Nem. <br><br> Megjegyezés: Ha nem felügyelt identitás található, vagy nem érvényes token az identitáshoz az ADAL gyorsítótárát nem érhető el, az értesítés nélkül fogja a beléptetési kísérlet sikertelen nélkül kéri a hitelesítő adatokat, kivéve, ha az alkalmazás is állította mampolicyrequired értéke Igen. |
 MAMPolicyRequired| Logikai| Azt adja meg, hogy megakadályozza-e a rendszer az alkalmazás elindítását, ha az alkalmazásnak nincs Intune alkalmazásvédelmi szabályzata. Az alapértelmezett érték a Nem. <br><br> Megjegyezés: Nem kell alkalmazásokat benyújtani az App Store a mampolicyrequired beállítása Igen. HA a MAMPolicyRequired értéke IGEN, az AutoEnrollOnLaunch beállítását is IGEN értékre kell állítani. |

@@ -17,16 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d6c7de15c3839548e8edf5056579eab1c0c0751a
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 59432baf0e8120cc7280b3486c4c25388a4248b4
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045257"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403762"
 ---
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>Csoportházirend-objektumok (GPO) és Microsoft Intune-szabályzatütközések feloldása
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
+
+> [!NOTE]
+> A jelen témakörben ismertetett információk csak azokra a PC-ként felügyelt Windows-számítógépekre vonatkoznak, amelyeket az Intune szoftverügyfél segítségével felügyel.
 
 Az Intune szabályzatai megkönnyítik a Windows-számítógépek beállításainak kezelését. Például szabályzat segítségével felügyelheti a Windows tűzfal beállításait a számítógépeken. Az Intune számos beállítása hasonló a Windows csoportházirend-beállításaihoz. Esetenként azonban előfordulhat, hogy a két módszer ütközik egymással.
 

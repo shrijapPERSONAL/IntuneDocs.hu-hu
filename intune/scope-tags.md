@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57a14e1e3c4caea570667096fec71cecf2d88ddf
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: ba1d7669e80fd91398f41c57ca2d27ce78a06041
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045189"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403792"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Szerepköralapú hozzáférés-vezérlés (RBAC) és a hatókörcímkék használható elosztott IT
 
@@ -38,12 +38,14 @@ Például tegyük fel, hogy egy Seattle területi képviseletenként rendszergaz
 
 ## <a name="to-create-a-scope-tag"></a>Hatókörcímke létrehozása
 
-1. Válassza ki az Intune-ban **szerepkörök** > **hatókör (címkék)** > **létrehozás**.
+1. Válassza ki az Intune-ban **szerepkörök** > **hatókör (címkék)**  > **létrehozás**.
 
     ![Képernyőkép a hatókörcímke létrehozása.](./media/scope-tags/create-scope-tag.png)
 
-2. Adjon meg egy **nevet** és egy **leírást**.
-3. Válassza a **Létrehozás** lehetőséget.
+3. Ha azt szeretné, hogy adott csoportok összes eszközt, válassza a **hatókörcímke hozzárendelése a kiválasztott csoportokban lévő összes eszköz**.
+    1. Az a **válassza ki a befoglalandó csoportokat** lappján válassza ezt a hatókör címkét hozzárendelni kívánt eszközöket tartalmazó csoportok.
+    2. Válassza a **Kiválasztás** lehetőséget
+4. Válassza a **Létrehozás** lehetőséget.
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>Hatókörcímke hozzárendelése egy szerepkörhöz
 
@@ -52,11 +54,11 @@ Például tegyük fel, hogy egy Seattle területi képviseletenként rendszergaz
     ![Képernyőkép a hatókör hozzárendelése szerepkörhöz.](./media/scope-tags/assign-scope-to-role.png)
 
 2. Adjon meg egy **hozzárendelés neve** és **leírás**.
-3. Válasszon **tagok (csoportok)** > **Hozzáadás** > Válassza ki a csoportokat az ehhez a hozzárendeléshez részeként > **válassza**  >   **OK**. Ebben a csoportban mUsers házirendek és a felhasználók és eszközök a hatókör (csoportok) profilok kezelése engedéllyel rendelkezik majd.
+3. Válasszon **tagok (csoportok)**  > **Hozzáadás** > Válassza ki a csoportokat az ehhez a hozzárendeléshez részeként > **válassza**  >   **OK**. Ebben a csoportban mUsers házirendek és a felhasználók és eszközök a hatókör (csoportok) profilok kezelése engedéllyel rendelkezik majd.
 
     ![Tag kiválasztása csoportok képernyőképe.](./media/scope-tags/select-member-groups.png)
 
-4. Ha azt szeretné, kezelheti a csoportok meghatározott felhasználókra vagy eszközökre, válassza ki a **hatókör (csoportok)** > **kijelölt csoportok** > **belefoglalandó csoportok**> Válassza ki a csoportokat > **kiválasztása** > **OK**. Ez a csoport összes felhasználókra vagy eszközökre azok profilok és szabályzatok az Adminisztrátorok a tagok (csoport) által felügyelt lehet.
+4. Ha azt szeretné, kezelheti a csoportok meghatározott felhasználókra vagy eszközökre, válassza ki a **hatókör (csoportok)**  > **kijelölt csoportok** > **belefoglalandó csoportok**> Válassza ki a csoportokat > **kiválasztása** > **OK**. Ez a csoport összes felhasználókra vagy eszközökre azok profilok és szabályzatok az Adminisztrátorok a tagok (csoport) által felügyelt lehet.
 
     ![Képernyőkép – válassza ki a hatókörcsoportokat.](./media/scope-tags/select-scope-groups.png)
 
@@ -64,7 +66,7 @@ Például tegyük fel, hogy egy Seattle területi képviseletenként rendszergaz
 
     ![Képernyőkép – válassza ki a hatókörcsoportokat beállításának további lehetőségei.](./media/scope-tags/scope-group-other-options.png)
     
-5. Válasszon **hatókör (címkék)** > **Hozzáadás** > Válassza ki a címkék hozzáadása ehhez a szerepkörhöz használni kívánt > **válassza** > **OK**. Tagok (csoportok) a felhasználók hozzáférhetnek a házirendek és profilok –, amelyek az ugyanazon hatókörcímke is rendelkezik.
+5. Válasszon **hatókör (címkék)**  > **Hozzáadás** > Válassza ki a címkék hozzáadása ehhez a szerepkörhöz használni kívánt > **válassza** > **OK**. Tagok (csoportok) a felhasználók hozzáférhetnek a házirendek és profilok –, amelyek az ugyanazon hatókörcímke is rendelkezik.
 
     ![Képernyőfelvétel a hatókörcímkék válassza.](./media/scope-tags/select-scope-tags.png)
 
@@ -75,7 +77,7 @@ Például tegyük fel, hogy egy Seattle területi képviseletenként rendszergaz
 
     ![Képernyőkép a profil válassza.](./media/scope-tags/choose-profile.png)
 
-2. Válasszon **tulajdonságok** > **hatókör (címkék)** > **hozzáadása**.
+2. Válasszon **tulajdonságok** > **hatókör (címkék)**  > **hozzáadása**.
 
     ![Képernyőfelvétel a hatókör-címkék felvétele.](./media/scope-tags/add-scope-tags.png)
 

@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9af61c89b90a7f31654cd43a3cfc457b27e9700f
-ms.sourcegitcommit: 86aa5fefcba1e71841696b1a5e3ca5bffb1a9528
+ms.openlocfilehash: 30e869cbb0311e1855dd4dc09978505ad539970e
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67234970"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403094"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>A Windows 10 (és újabb) eszközbeállítások engedélyezett vagy korlátozott funkciók az Intune-nal
 
@@ -57,7 +57,16 @@ Ezeket a beállításokat használja a [ApplicationManagement házirend CSP](htt
 - **Alkalmazásadatok telepítése a rendszerköteten**: **Blokk** leállítja az alkalmazások adatokat tároljanak az eszköz a rendszerköteten. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy az adatok tárolásához a lemezen rendszerköteten alkalmazásokat.
 - **Alkalmazások telepítése a rendszermeghajtón**: **Blokk** letiltja az alkalmazások telepítése a rendszermeghajtón az eszközön. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy az alkalmazások telepítése a rendszermeghajtón.
 - **Játékvideó-rögzítő** (csak asztali verzió): **Blokk** letiltja a Windows-játék rögzítése és közvetítése. **Nincs konfigurálva** (alapértelmezett) lehetővé teszi, hogy rögzítése és közvetítése játékokat.
-- **Csak áruházból származó alkalmazások**: **Szükséges** arra kényszeríti a végfelhasználók számára, hogy csak a Windows App Store a telepítik az alkalmazásokat. **Nincs konfigurálva** lehetővé teszi, hogy a végfelhasználók számára, hogy a Windows App Store intézményeknek portálon kívülről származó alkalmazások telepítése.
+- **Csak áruházból származó alkalmazások**: Ez a beállítás határozza meg a felhasználói élmény, amikor a felhasználók telepítik az alkalmazásokat a Microsoft Store intézményeknek portálon kívülről származó. A választható lehetőségek:
+
+  - **Nincs konfigurálva** (alapértelmezett): Lehetővé teszi a végfelhasználók számára, hogy a Microsoft Store, beleértve a más házirend-beállítások meghatározott alkalmazások intézményeknek portálon kívülről származó alkalmazások telepítése.  
+  - **Bárhol**: Alkalmazás javaslatok kikapcsolja, és lehetővé teszi a felhasználók bárhonnan, az alkalmazások telepítéséhez.  
+  - **Csak Store**: Csak telepíteni alkalmazásokat a Microsoft Store kényszeríti a végfelhasználók számára.
+  - **Javaslatok**: Ha egy alkalmazás telepítése, amely elérhető a Microsoft Store webes, felhasználók javasolja, hogy töltse le a tároló üzenet jelenik meg.  
+  - **Igény szerint Store**: A Microsoft Store intézményeknek portálon kívülről származó alkalmazások telepítésekor figyelmezteti a felhasználókat.
+
+  [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
+
 - **Kényszerített újraindítás alkalmazások frissítési hiba esetén**: Amikor egy alkalmazás használatban van, akkor nem frissíthetők. Ez a beállítás segítségével kényszerítheti az alkalmazás újraindítása. **Nincs konfigurálva** (alapértelmezett) nem kényszerített újraindítása az alkalmazásokat. **Szükséges** lehetővé teszi a rendszergazdák indítja újra egy adott dátumot és időpontot, vagy ismétlődő ütemezés szerint. Ha a beállítása **megkövetelése**, is megadhatja:
 
   - **Indítsa el a dátum/idő**: Válasszon egy adott dátumot és időpontot, az alkalmazások újraindításához.
@@ -133,7 +142,7 @@ Ezeket a beállításokat használja a [EnterpriseCloudPrint házirend CSP](http
 - **Nyomtató hozzáférés szolgáltató URL-címe**: Adja meg a hitelesítési végpont URL-címe, az OAuth-jogkivonatok beolvasásához. Például írja be a következőt: `https://azuretenant.contoso.com/adfs`.
 - **Azure-beli natív ügyfélalkalmazás GUID**: Adja meg a szolgáltatótól OAuth-jogkivonatok kérhető ügyfélalkalmazás GUID-ja. Például írja be a következőt: `E1CF1107-FF90-4228-93BF-26052DD2C714`.
 - **Nyomtatási szolgáltatás erőforrás-URI**: Adja meg a nyomtatási szolgáltatás az Azure Portal webhelyen konfigurált OAuth erőforrás URI azonosítója. Például írja be a következőt: `http://MicrosoftEnterpriseCloudPrint/CloudPrint`.
-- **Lekérdezendő nyomtatók maximális száma**: Adja meg a lekérdezni kívánt nyomtatók maximális száma. Az alapértelmezett érték `20`.
+- **Lekérdezendő nyomtatók maximális száma**: Adja meg a lekérdezni kívánt nyomtatók maximális száma. Az alapértelmezett érték: `20`.
 - **Nyomtatófelderítési szolgáltatás erőforrás URI**: Adja meg az OAuth-erőforrás URI-nyomtató discovery szolgáltatás beállítása az Azure Portalon. Például írja be a következőt: `http://MopriaDiscoveryService/CloudPrint`.
 
 > [!TIP]
@@ -603,7 +612,7 @@ Ezeket a beállításokat használja a [keresni a házirend CSP](https://docs.mi
 
 Válassza ki **OK** a módosítások mentéséhez.
 
-## <a name="start"></a>Indítás
+## <a name="start"></a>Start
 
 Ezeket a beállításokat használja a [indítsa el a szabályzat CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start), amely felsorolja a támogatott Windows-kiadások.  
 

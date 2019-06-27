@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 5/21/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,18 +16,16 @@ ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 064d11f1992d63df9dacbedb8d53e849425e9b1f
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.openlocfilehash: 996380a4938ca73bbf5f71c82e99814f772001a4
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59898139"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403448"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windowsos eszközök csoportos regisztrálása
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-A rendszergazda nagy számú új windowsos eszközt csatlakoztathat az Azure Active Directoryhoz és az Intune-hoz. Ha az Azure AD-bérlőhöz csoportosan szeretne eszközöket regisztrálni, először a Windows Configuration Designer (WCD) alkalmazással létre kell hoznia egy kiépítési csomagot. Ha a kiépítési csomagokat céges tulajdonban lévő eszközökre alkalmazza, az eszközök az Azure AD-bérlőhöz lesznek csatlakoztatva, és regisztrálódnak az Intune-felügyeletben. A csomag alkalmazása után az Azure AD-felhasználók bejelentkezhetnek az eszközökre.
+A rendszergazda nagy számú új windowsos eszközt csatlakoztathat az Azure Active Directoryhoz és az Intune-hoz. Ha az Azure AD-bérlőhöz csoportosan szeretne eszközöket regisztrálni, először a Windows Configuration Designer (WCD) alkalmazással létre kell hoznia egy kiépítési csomagot. Ha a kiépítési csomagokat céges tulajdonban lévő eszközökre alkalmazza, az eszközök az Azure AD-bérlőhöz lesznek csatlakoztatva, és regisztrálódnak az Intune-felügyeletben. A csomag alkalmazása után készen áll a jelentkezzen be az Azure AD-felhasználók számára.
 
 Az Azure AD-felhasználók általános jogú felhasználók ezeken az eszközökön, és megkapják a hozzájuk rendelt Intune-szabályzatokat és a kötelező alkalmazásokat. Az Intune-ban Windows csoportos regisztrálással beléptetett Windows-eszközök a vállalati portál alkalmazás segítségével telepítik az elérhető alkalmazásokat. 
 
@@ -51,6 +48,7 @@ Az Azure AD-felhasználók általános jogú felhasználók ezeken az eszközök
    - **Description** (Leírás) – A projekt leírása (nem kötelező) ![Képernyőkép a név, a projektmappa és a leírás megadásáról a Windows Configuration Designerben](media/bulk-enroll-name.png)
 
 4. Adjon meg egyedi neveket az eszközök számára. Névben szerepelhet sorozatszám (% soros %) vagy egy véletlenszerű karakter. Megadhat továbbá termékkulcsot arra az esetre, ha másik Windows-kiadásra vált, konfigurálhatja az eszközt közös használatra, és eltávolíthatja az előre telepített szoftvereket.
+   
    ![Képernyőkép a név és a termékkulcs megadásáról a Windows Configuration Designerben](media/bulk-enroll-device.png)
 
 5. Lehetőség van arra is, hogy beállítsa, mely Wi-Fi-hálózathoz csatlakozzanak az eszközök az első indításkor.  Ha nincsenek konfigurálva a hálózati eszközök, az eszköz első indításakor vezetékes hálózati kapcsolatra lesz szükség.
@@ -92,12 +90,9 @@ A kiépítés alapvetően új windowsos eszközök esetében használható. Kié
 - Ha egy kiépítési csomaggal olyan Active Directory-tartományhoz vagy Azure Active Directory-bérlőhöz próbál csatlakozni, amely nem hoz létre helyi fiókot, akkor az eszköz elérhetetlenné válhat, ha a tartományhoz való csatlakozás hálózati hiba miatt meghiúsul.
 - A kiépítési csomag által futtatott parancsfájlok rendszerkörnyezetben futnak. A parancsfájlok tetszőleges módosításokat képesek végrehajtani az eszköz fájlrendszerében és konfigurációiban. Egy rosszindulatú vagy hibás szkript azt eredményezheti, hogy az eszközt csak a rendszerkép alaphelyzetbe állításával vagy az összes adat törlésével lehet helyreállítani.
 
-### <a name="problems-with-bulk-enrollment-and-company-portal"></a>A csoportos regisztrációval és a Céges portállal kapcsolatos problémák
-Ha egy felhasználó egy korábban már csoportosan regisztrált eszközt próbál a Céges portál segítségével regisztrálni, a rendszer figyelmezteti, hogy az eszközzel további műveleteket (beállítást vagy regisztrációt) kell végrehajtania. Az eszköz regisztrálva van, de a regisztrációt a Céges portál alkalmazás vagy webhely nem ismeri fel.
-
 ### <a name="bulk-enrollment-with-wi-fi"></a>Csoportos regisztrálás Wi-Fivel 
 
 A csoportosan regisztrált eszközök nem tudnak használni felhasználókat célzó tanúsítványokat Wi-Fi-n keresztüli üzembe helyezéssel. Az ilyen kapcsolatok kezeléséhez [eszközszintű tanúsítványokat](certificates-configure.md) kell használni. 
 
 ### <a name="conditional-access"></a>Feltételes hozzáférés
-A feltételes hozzáférés nem érhető el a csoportos regisztrálással beléptetett Windows-eszközök számára.
+Feltételes hozzáférés nem érhető el csoportos regisztrálással beléptetett Windows-eszközökhöz.

@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 06/26/2019
 ms.topic: archived
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,30 +17,33 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e24e72951d473c2e7e49d5ae62b39df18635c16
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2c1717be830d88ed0a7d1b660b7910c8192c93c5
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040275"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403551"
 ---
 # <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>Hardver- és szoftverleltár megtekintése Windows rendszerű számítógépeken
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
-Az Intune részletes információkat gyűjt az Intune szoftverügyféllel felügyelt számítógépek hardveréről és szoftveréről. Az alábbi eljárásokban lévő információkból megtudhatja:
+> [!NOTE]
+> A jelen témakörben ismertetett információk csak azokra a PC-ként felügyelt Windows-számítógépekre vonatkoznak, amelyeket az Intune szoftverügyfél segítségével felügyel. Ha meg szeretné tekinteni Hardverleltár a Windows rendszerű számítógépek mobileszközként, lásd: [megtekintheti az eszközei adatait az Intune-ban](device-inventory.md).
+
+Az Intune részletes információkat gyűjt a hardver- és asztali számítógépeken az Intune-szoftverügyfél használatával felügyelt PC-ként. Az alábbi eljárásokban lévő információkból megtudhatja:
 
 -   Hogyan hozhat létre olyan jelentést, amely az Ön által kezelt számítógépek hardvertulajdonságaival kapcsolatos információkat tartalmaz.
 
 -   Hogyan hozhat létre olyan jelentést, amely az egyes számítógépekre telepített szoftverek listáját tartalmazza.
 
--   Hogyan frissítheti a számítógépleltárat, hogy a jelentésben szereplő adatok naprakészek legyenek.
+-   Hogyan frissítheti a leltárt, hogy a jelentésben szereplő adatok naprakészek legyenek.
 
 ## <a name="to-display-information-about-pcs-you-manage"></a>Az Ön által kezelt számítógépekkel kapcsolatos információk megjelenítése
 
 1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) válassza a **Jelentések** &gt; **Számítógépleltár-jelentések** lehetőséget.
 
-2.  Az **Új jelentés létrehozása** lapon fogadja el az alapértelmezett értékeket, vagy állítsa be őket a jelentés által visszaadott eredmények szűrésére. Kiválaszthatja például, hogy csak a Windows 8.1-et futtató számítógépek jelenjenek meg a jelentésben.
+2.  Az **Új jelentés létrehozása** lapon fogadja el az alapértelmezett értékeket, vagy állítsa be őket a jelentés által visszaadott eredmények szűrésére. Kiválaszthatja például, hogy csak a Windows 8.1 rendszerű számítógépek megjelennek-e a jelentést.
 
 3.  A **Jelentés megtekintése** elemet választva megnyithatja a **Számítógépleltár-jelentést** egy új ablakban.
 

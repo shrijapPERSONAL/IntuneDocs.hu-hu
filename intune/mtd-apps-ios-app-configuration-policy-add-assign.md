@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/14/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78d6b8faf5c5c3ef41f3eb5007d550c869491f60
-ms.sourcegitcommit: 268f495de486718b99d9c1b60d4576030cafd17b
+ms.openlocfilehash: c6065fda71688909dd7fcbc6ef1909e3d3ab36b8
+ms.sourcegitcommit: 6bba9f2ef4d1ec699f5713a4da4f960e7317f1cd
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67141806"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67407120"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Mobile Threat Defense- (MTD) alkalmazások felvétele és hozzárendelése az Intune-nal  
 
@@ -56,6 +56,7 @@ Válassza ki az MTD-szolgáltatójának megfelelő szakaszt:
 - [Pradeo](#configure-pradeo-apps)
 - [Better Mobile](#configure-better-mobile-apps)
 - [A Sophos Mobile](#configure-sophos-apps)
+- [Wandera](#configure-wandera-apps)
 
 ### <a name="configure-lookout-for-work-apps"></a>Lookout for Work-alkalmazások konfigurálása  
 - **Android**  
@@ -129,6 +130,14 @@ Válassza ki az MTD-szolgáltatójának megfelelő szakaszt:
 - **iOS**
   - Lásd a következő útmutatót: [iOS Store-alkalmazás felvétele a Microsoft Intune-ba](store-apps-ios.md). Ezzel [ActiveShield alkalmazás áruházbeli URL-címe](https://itunes.apple.com/us/app/sophos-mobile-security/id1086924662?mt=8) a **11. lépés** számára a **Alkalmazásáruház URL-címe**.
 
+### <a name="configure-wandera-apps"></a>Wandera alkalmazások konfigurálása  
+ 
+- **Android**
+  - Lásd a következő útmutatót: [Android Áruházbeli alkalmazás felvétele a Microsoft Intune-ba](store-apps-android.md). Ezzel [Wandera Mobile alkalmazás áruházbeli URL-címe](https://play.google.com/store/apps/details?id=com.wandera.android) a **7. lépés**. A **operációs rendszer minimális**válassza **Android 5.0-s**.
+
+- **iOS**
+  - Lásd a következő útmutatót: [iOS Store-alkalmazás felvétele a Microsoft Intune-ba](https://docs.microsoft.com/intune/store-apps-ios). Ezzel [Wandera Mobile alkalmazás áruházbeli URL-címe](https://itunes.apple.com/app/wandera/id605469330) a **11. lépés** számára a **Alkalmazásáruház URL-címe**.
+
 ## <a name="configure-your-mtd-apps-with-an-ios-app-configuration-policy"></a>MTD-alkalmazások konfigurálása egy iOS-es alkalmazáskonfigurációs szabályzattal  
 
 ### <a name="lookout-for-work-app-configuration-policy"></a>Konfigurációs szabályzat az Lookout for Workhöz  
@@ -196,6 +205,27 @@ Pradeo nem támogatja az alkalmazás-konfigurációs házirend IOS-eszközökön
 
 ### <a name="sophos-mobile-app-configuration-policy"></a>A Sophos mobilalkalmazás-konfigurációs házirend  
 Hozzon létre az IOS-es alkalmazáskonfigurációs szabályzat leírtak szerint a [használata iOS-alkalmazáskonfigurációs szabályzat](app-configuration-policies-use-ios.md) cikk.
+
+### <a name="wandera-app-configuration-policy"></a>Wandera alkalmazáskonfigurációs szabályzat  
+Lásd a következő útmutatót: [a Microsoft Intune alkalmazáskonfigurációs szabályzatának használata iOS-es](app-configuration-policies-use-ios.md) a Wandera IOS-es konfigurációs szabályzat hozzáadásához.
+- A **8. lépés**, használja a kapcsolót **XML adatok megadása**. Jelentkezzen be a MÉRLEGELI Wandera portálra, és keresse meg a **beállítások** > **EMM Integration** > **App-leküldés**. Válassza ki **Intune**, majd az alábbi tartalmat másolja és illessze be a konfigurációs szabályzat törzsébe.  
+
+  ```
+  <dict><key>secretKey</key>
+  <string>SeeRADAR</string>
+  <key>apiKey</key>
+  <string> SeeRADAR </string>
+  <key>customerId</key>
+  <string> SeeRADAR </string>
+  <key>email</key>
+  <string>{{mail}}</string>
+  <key>firstName</key>
+  <string>{{username}}</string>
+  <key>lastName</key>
+  <string></string>
+  <key>activationType</key>
+  <string>PROVISION_THEN_AWP</string></dict>  
+  ```
 
 ## <a name="assign-apps-to-groups"></a>Alkalmazások hozzárendelése csoportokhoz  
 - Ez a lépés minden MTD-partnerre vonatkozik. Lásd a következő útmutatót: [Alkalmazások csoportokhoz rendelése az Intune-nal](apps-deploy.md).

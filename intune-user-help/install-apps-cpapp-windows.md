@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19e1ec5cda5a69320820899b1cb1c5d665fd9f16
-ms.sourcegitcommit: 2f32f6d2129bc10cc4a02115732e995edceb37d6
+ms.openlocfilehash: 468eabc9acc8f0f65125f81a0f7f67eede361755
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66828949"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67402641"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Alkalmazások telepítése és megosztása az eszközön
 Alkalmazások telepítése az eszközön Windows Céges portál alkalmazásból.
@@ -37,10 +37,9 @@ Alkalmazások telepítése az eszközön Windows Céges portál alkalmazásból.
 
     * **Kezdőlap**: Válassza ki a szervezet kiemelt alkalmazások listájából.  
     * **Az összes megjelenítése**: Az a **kezdőlap** > **alkalmazások** területén kattintson **az összes megjelenítése** az összes elérhető alkalmazások megtekintéséhez.  
-    * **Minden alkalmazás**: Ezen a lapon válassza ki a navigációs panelen megtekintheti az összes rendelkezésre álló alkalmazások, beleértve a telepítve és kiemelt.  
+    * **Minden alkalmazás**: Ezen a lapon válassza ki a navigációs panelen megtekintheti az összes rendelkezésre álló alkalmazások, beleértve a telepítve és kiemelt. Megtekintheti, rendezheti és szűrheti az alkalmazásokat. Keresési eredményeket a rendszer automatikusan elrendezi a relevancia alapján.  
     * **Alkalmazáskategóriák**: Ezen a lapon válassza a navigációs panelen, típus vagy függvény-alapú alkalmazások kiválasztása. Alkalmazások a rendszer rendezi a kategóriák például **kiemelt**, **oktatási**, és **termelékenység**.  
     * **Alkalmazások keresése**: Egy statikus keresősáv helyezkedik el, az alkalmazás navigációs ablaktáblán.  Az elérhető alkalmazások megtalálásához keressen rá az alkalmazás nevére vagy a közzétevőre.  
-    * **Minden alkalmazás**: Megtekintheti, rendezheti és szűrheti az összes rendelkezésre álló alkalmazások. Keresési eredményeket a rendszer automatikusan elrendezi a relevancia alapján.  
 
 3. Jelöljön ki egy alkalmazást.   
 4. Az alkalmazás részleteit megjelenítő lapon kattintson a **Telepítés** lehetőségre. A telepítés után a **Telepítve** állapot fog megjelenni.  
@@ -51,7 +50,7 @@ Alkalmazások telepítése az eszközön Windows Céges portál alkalmazásból.
 
  A cég méretétől függően az Office több verziója is rendelkezésre állhat letöltésre a Céges portálon. További információ a Windows-eszközök számára elérhető Office-csomagról: [Az Office 365 telepítése Windows-eszközön](./install-office-windows.md).
 
-## <a name="share-apps-with-others"></a>Alkalmazások megosztása másokkal  
+## <a name="share-apps"></a>Alkalmazások megosztása  
 Alkalmazások megosztása és ajánlása a munkahelyi vagy iskolai partnerei számára. Az alábbi lépések leírják, hogyan lehet hivatkozást megosztani közvetlenül a Céges portálról.
 
 1. A Céges portálon kattintson a jobb gombbal bármelyik alkalmazásra, vagy tartsa rajta az ujját a [helyi menü](https://docs.microsoft.com//windows/uwp/design/controls-and-patterns/menus) megnyitásához.  
@@ -65,15 +64,14 @@ Alkalmazások megosztása és ajánlása a munkahelyi vagy iskolai partnerei sz�
 
 Megosztás után a címzett kapni fog egy hivatkozást és egy üzenetet, hogy tekintse meg az alkalmazás részleteit. A hivatkozás megnyitja a Céges portál **Alkalmazás részletei** lapját. 
 
-## <a name="available-apps"></a>Nem kötelező alkalmazások  
+## <a name="available-and-required-apps"></a>Szükséges és elérhető alkalmazások
+Alkalmazások a szervezete által Önhöz rendelt és kerülhetnek a céges portál vagy **elérhető** vagy **szükséges**. 
 
-A szervezet választja ki a megfelelő és alkalmazások hasznos az Ön számára a munkahelyi vagy iskolai rendszerhez. Ezeket az alkalmazásokat csak azok a céges portálon megtalálhatja.  
+* Elérhető alkalmazások: Ezeket az alkalmazásokat a szervezet által ki van jelölve, és megfelelő, és hasznos munkahelyi vagy iskolai fiók. A választható telepítse, és a csak alkalmazások telepítése a céges portálon megtalálhatja. 
 
-Alkalmazások is elérhető lesz az eszköz típusa alapján. Például ha használja a vállalati portál alkalmazást Windows, hozzáférhet a Windows-alkalmazás, de nem az iOS-alkalmazások.  
+* Kötelező alkalmazások: Ezeket az alkalmazásokat munkahelyi és iskolai szükségesek, és közvetlenül az eszközre vannak telepítve. Ezek az alkalmazások automatikusan települnek, beavatkozás nélkül. 
 
-## <a name="required-apps"></a>Required apps  
-
-A szervezet előfordulhat, hogy egyes alkalmazások közvetlenül az eszköz üzembe helyezése, és jelölje meg őket, mint **szükséges**. Ezek az alkalmazások automatikusan telepíti az Ön számára beavatkozás nélkül.
+Alkalmazások is elérhető lesz az eszköz típusa alapján. Például ha használja a vállalati portál alkalmazást Windows, hozzáférhet a Windows-alkalmazás, de nem az iOS-alkalmazások.
 
 ## <a name="request-an-app-for-work-or-school"></a>A kérelem egy alkalmazást a munkahelyi vagy iskolai fiók  
 Ha szükséges, de nem látható a vállalati portál alkalmazás, kérelem. Keresse meg a kapcsolattartási adatait a **segélyszolgálat** a céges portál alkalmazásban, a Súgó és támogatás az oldalon. Ugyanazokat az adatokat a látni fogja a [céges portál webhelyen](https://go.microsoft.com/fwlink/?linkid=2010980).    

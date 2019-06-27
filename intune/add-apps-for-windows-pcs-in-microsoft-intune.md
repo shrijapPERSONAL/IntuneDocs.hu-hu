@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86cbea29233d792006bce68fcd2a36fb1a7ec0a6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 3e24bd79fbceba1834d02af8512e5dd52676d471
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050202"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403308"
 ---
 # <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>Az Intune szoftverügyfelet futtató Windows rendszerű számítógépes alkalmazások hozzáadása
 
@@ -77,7 +77,7 @@ Az alábbiakban ismertetett eljárással konfigurálhatja az alkalmazás tulajdo
 5. Az **Észlelési szabályok** lapon állíthatja be azokat a szabályokat, amelyek alapján a rendszer észleli, hogy a konfigurálni kívánt alkalmazás már telepítve van-e a számítógépen. Ha az alapértelmezett észlelési szabályokat alkalmazza, a rendszer automatikusan felülírja az alkalmazás valamennyi korábban telepített verzióját. Ez a beállítás a Windows Installer szolgáltatáshoz tartozik (csak .exe fájlok).
 
    A következő szabályokat állíthatja be:
-   - **A fájl létezik**. Adja meg az észlelni kívánt fájl elérési útját. A kereséshez a következő helyeket adhatja meg: **%ProgramFiles%** (ami a **Program Files**\&lt;elérési út&gt; és a **Program Files (x86)**\&lt;elérési út&gt; mappában keres) vagy **%SystemDrive%** (ami a számítógép gyökérmeghajtója, általában a C: meghajtó).
+   - **A fájl létezik**. Adja meg az észlelni kívánt fájl elérési útját. A kereséshez a következő helyeket adhatja meg: **%ProgramFiles%** (ami a **Program Files**\&lt;elérési út&gt; és a **Program Files (x86)** \&lt;elérési út&gt; mappában keres) vagy **%SystemDrive%** (ami a számítógép gyökérmeghajtója, általában a C: meghajtó).
    - **Az MSI-termékkód létezik**. Válassza a **Tallózás** elemet az észlelni kívánt Windows Installer-fájl (.msi) kiválasztásához.
    - <strong>A beállításkulcs létezik</strong>. Adjon meg egy beállításkulcsot, amely a következővel kezdődik: <strong>HKEY_LOCAL_MACHINE\</strong>. A keresés a beállításjegyzék 32 bites és 64 bites elérési útjaira egyaránt kiterjed. Ha a megadott kulcs megtalálható az egyik helyen, az észlelési szabály teljesül.
 
@@ -103,4 +103,4 @@ Az alkalmazás megjelenik az **Alkalmazások** munkaterület **Alkalmazások** c
 
 Ha létrehozta az alkalmazást, a következő lépés a telepítés. További tudnivalók: [Alkalmazások hozzárendelése csoportokhoz a Microsoft Intune-nal](apps-deploy.md).
 
-Ha szeretne további információt szeretne tippeket és trükköket szoftvereket telepíthet a Windows rendszerű számítógépekre, tekintse meg a következő blogbejegyzésben: [támogatási tipp: Ajánlott eljárások a Windows rendszerű gépek Intune szoftverterjesztés](https://blogs.technet.microsoft.com/intunesupport/2016/06/13/support-tip-best-practices-for-intune-software-distribution-to-pcs/).
+Ha szeretne további információt szeretne tippeket és trükköket szoftvereket telepíthet a Windows rendszerű számítógépekre, tekintse meg a következő blogbejegyzésben: [támogatási tipp: Ajánlott eljárások a Windows rendszerű gépek Intune szoftverterjesztés](https://support.microsoft.com/en-US/help/2583929).
