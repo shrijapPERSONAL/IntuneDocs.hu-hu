@@ -33,11 +33,11 @@ A Windows Holographic rendszerű eszközök Intune-nal való használatához hoz
 
 Az Azure Active Directory (AD) segítségével könnyedén kezelheti és vezérelheti a Windows Holographic for Business rendszerű eszközeit. Az Intune és az Azure AD használatával: 
 
-- **[Eszközök csatlakoztatása az Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)**: Az Azure Active Directory (AD), a munka a Windows 10-es eszközök kiosztását, beleértve a Windows Holographic for Business rendszerű eszközök is hozzáadhat. Ez a funkció lehetővé teszi, hogy az Azure AD vezérelje az eszközt. Ez segít biztosítani, hogy a felhasználói olyan eszközökről érjék el a vállalati erőforrásokat, amelyek megfelelnek a vállalat biztonsági és megfelelőségi szabványainak.
+- **[Eszközök csatlakoztatása az Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)** : Az Azure Active Directory (AD), a munka a Windows 10-es eszközök kiosztását, beleértve a Windows Holographic for Business rendszerű eszközök is hozzáadhat. Ez a funkció lehetővé teszi, hogy az Azure AD vezérelje az eszközt. Ez segít biztosítani, hogy a felhasználói olyan eszközökről érjék el a vállalati erőforrásokat, amelyek megfelelnek a vállalat biztonsági és megfelelőségi szabványainak.
 
   [Az Eszközfelügyelet az Azure ad-ben](https://docs.microsoft.com/azure/active-directory/devices/overview) további részleteket.
 
-- **[Windows-eszközök csoportos regisztrálása](windows-bulk-enroll.md)**: Nagyszámú új Windows-eszköz csatlakoztatása az Azure Active Directory (AD) és az Intune-nal. Ezt a szolgáltatást csoportos regisztrációnak hívják, és kiépítési csomagokat használ. Ezek a csomagok összekötik a Windows Holographic for Business rendszerű eszközöket az Azure AD-bérlővel, és regisztrálják őket az Intune-ban.
+- **[Windows-eszközök csoportos regisztrálása](windows-bulk-enroll.md)** : Nagyszámú új Windows-eszköz csatlakoztatása az Azure Active Directory (AD) és az Intune-nal. Ezt a szolgáltatást csoportos regisztrációnak hívják, és kiépítési csomagokat használ. Ezek a csomagok összekötik a Windows Holographic for Business rendszerű eszközöket az Azure AD-bérlővel, és regisztrálják őket az Intune-ban.
 
 ## <a name="company-portal"></a>Céges portál
 **[A Céges portál alkalmazás konfigurálása](company-portal-app.md)**
@@ -56,7 +56,7 @@ A Céges portál alkalmazással a következő műveleteket is futtathatja:
 
 A megfelelőségi szabályzatok olyan szabályok és beállítások, amelyeknek az eszközöknek eleget kell tenniük, hogy megfelelőnek minősüljenek. Használja ezeket a szabályzatokat a feltételes hozzáférés nem megfelelő eszközök vállalati erőforrásokhoz való hozzáférésének blokkolása. Az Intune-ban létrehozhat a Windows Holographic for Business rendszerű eszközök hozzáférését engedélyező vagy tiltó megfelelőségi szabályzatokat is. Létrehozhat például olyan szabályzatot, amely megköveteli a Bitlocker engedélyezését.
 
-Lásd még: **[Első lépések a megfelelőségi szabályzatokkal](device-compliance-get-started.md)**.
+Lásd még: **[Első lépések a megfelelőségi szabályzatokkal](device-compliance-get-started.md)** .
 
 ## <a name="deploy-and-manage-apps"></a>Alkalmazások központi telepítése és kezelése
 **[Alkalmazások hozzáadása az Intune-hoz](apps-add.md)**
@@ -85,13 +85,13 @@ Az Intune rendelkezik néhány olyan beépített funkcióval, amelyek használat
 
 Windows Holographic for Business rendszert futtató eszközök használata esetén a következő műveletek végezhetők: 
 
-- **[Törlési](devices-wipe.md#wipe)**: A **törlési** művelet eltávolítja az eszközt az Intune-ban, és visszaállítja az eszközt vissza a gyári alapértelmezett beállításokra. Ezt a műveletet akkor érdemes használni, mielőtt az eszközt egy új felhasználónak adják, vagy ha az eszköz elveszett, vagy ellopták.
+- **[Törlési](devices-wipe.md#wipe)** : A **törlési** művelet eltávolítja az eszközt az Intune-ban, és visszaállítja az eszközt vissza a gyári alapértelmezett beállításokra. Ezt a műveletet akkor érdemes használni, mielőtt az eszközt egy új felhasználónak adják, vagy ha az eszköz elveszett, vagy ellopták.
 
-- **[Kivonás](devices-wipe.md#retire)**: A **kivonás** művelet megszünteti az eszköz Intune-ból. Az Intune által hozzárendelt felügyelt alkalmazások adait, beállításokat és e-mail-profilokat is eltávolítja. A felhasználó személyes adatai az eszközön maradnak.
+- **[Kivonás](devices-wipe.md#retire)** : A **kivonás** művelet megszünteti az eszköz Intune-ból. Az Intune által hozzárendelt felügyelt alkalmazások adait, beállításokat és e-mail-profilokat is eltávolítja. A felhasználó személyes adatai az eszközön maradnak.
 
-- **[Szinkronizálás az eszközök beolvashatják a legfrissebb szabályzatokat és műveleteket](device-sync.md)**: A **szinkronizálási** művelet kényszeríti az eszköz azonnali bejelentkezését az Intune-ban. Bejelentkezéskor az eszköz azonnal fogadja az hozzárendelt összes függőben lévő műveletet vagy szabályzatot. Ez a funkció segíthet ellenőrizni a vonatkozó szabályzatokat és elhárítani a hibákat anélkül, hogy ki kellene várni a következő ütemezett bejelentkezést.
+- **[Szinkronizálás az eszközök beolvashatják a legfrissebb szabályzatokat és műveleteket](device-sync.md)** : A **szinkronizálási** művelet kényszeríti az eszköz azonnali bejelentkezését az Intune-ban. Bejelentkezéskor az eszköz azonnal fogadja az hozzárendelt összes függőben lévő műveletet vagy szabályzatot. Ez a funkció segíthet ellenőrizni a vonatkozó szabályzatokat és elhárítani a hibákat anélkül, hogy ki kellene várni a következő ütemezett bejelentkezést.
 
-**[A Microsoft Intune-eszközfelügyelet ismertetése](device-management.md) ** című cikkből további részleteket is megtudhat az Azure Portal használatával történő eszközkezelésről. 
+**[A Microsoft Intune-eszközfelügyelet ismertetése](device-management.md)** című cikkből további részleteket is megtudhat az Azure Portal használatával történő eszközkezelésről. 
 
 ## <a name="device-categories-and-groups"></a>Eszközkategóriák és csoportok
 **[Eszközök csoportokba sorolása](device-group-mapping.md)**
