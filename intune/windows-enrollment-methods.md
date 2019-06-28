@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/02/2019
+ms.date: 06/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: eda0d77fc5cdb11fa4bc5b21f48ceb7616ecfb15
-ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
+ms.openlocfilehash: 91df913c6daa5cad5f004cff7e448e8a34d63925
+ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389261"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67416878"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Az Intune Windows-eszközök regisztrálási módszerei
 
@@ -41,7 +41,7 @@ Felhasználók maguk is regisztrálhatják Windows eszköz ezen módszerek egyik
 Ha egy rendszergazda által konfigurált automatikus regisztráció (az Azure AD premium előfizetéssel rendelkező érhető el), a felhasználó csak egyszer adja meg a hitelesítő adataikat fel. Ellenkező esetben rendelkeznek keresztül MDM-regisztráció csak külön regisztrálhatnak, és írja be újra a hitelesítő adataikat.  
 - **MDM-regisztráció csak** lehetővé teszi, hogy a felhasználók regisztrálhatják egy meglévő munkacsoporthoz tartozik, az Active Directory vagy az Azure Active Directoryhoz csatlakoztatott PC-s Intune-bA. A felhasználók beléptethetik a beállítások a meglévő Windows-számítógépen. Ez a módszer nem ajánlott, mert az Azure Active Directoryba, nem regisztrálja az eszközt. Megakadályozza a szolgáltatások, például a feltételes hozzáférés használatának is.
 - [Az Azure Active Directory (Azure AD) való csatlakozás](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) – csatlakoztatja az eszközt az Azure Active Directoryval, és lehetővé teszi a felhasználók bejelentkezni a Windows Azure AD-beli hitelesítő. Automatikus regisztráció engedélyezése esetén az eszköz automatikusan regisztrálva van az Intune-ban. Automatikus regisztráció előnye a felhasználó egyetlen lépésből álló folyamat. Ellenkező esetben rendelkeznek keresztül MDM-regisztráció csak külön regisztrálhatnak, és írja be újra a hitelesítő adataikat. A felhasználók regisztrálhatnak ilyen módon kezdeti Windows Kezdőélmény alatt, vagy a beállítások. Az eszköz vállalati tulajdonban lévő eszközt az Intune-ban van megjelölve.
-- [Az autopilot](enrollment-autopilot.md) – automatizálja az Azure AD-csatlakozás, és regisztrálja azt a új vállalati tulajdonú eszközöket az Intune-ban. Ez a módszer out-of-box leegyszerűsíti, és szükségtelenné teszi a alkalmazni egyéni operációsrendszer-lemezképek az eszközökön. Amikor a segítségével a rendszergazdák az Intune Autopilot-eszközök felügyeletére, felügyelheti az házirendek, profilok, alkalmazások és több regisztrált.  Autopilot deployment két típusa van: [Önkiszolgáló-üzemmód telepítése](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) (a kioszkok, digitális aláírási vagy közös használatú) és [felhasználói Driven módban](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) (hagyományos számára). 
+- [Az autopilot](enrollment-autopilot.md) – automatizálja az Azure AD-csatlakozás, és regisztrálja azt a új vállalati tulajdonú eszközöket az Intune-ban. Ez a módszer out-of-box leegyszerűsíti, és szükségtelenné teszi a alkalmazni egyéni operációsrendszer-lemezképek az eszközökön. Amikor a segítségével a rendszergazdák az Intune Autopilot-eszközök felügyeletére, felügyelheti az házirendek, profilok, alkalmazások és több regisztrált.  Autopilot deployment négy típusa van: [Önkiszolgáló-üzemmód telepítése](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) (a kioszkok, digitális aláírási vagy közös használatú), [felhasználói Driven módban](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) (hagyományos felhasználók számára), [fehér kesztyűtartó] (https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/white-glove) partnerek vagy az informatikai munkatársak kiépítés előtti alkalmazásához Windows 10 rendszerű tehát lehetővé teszi, hogy az informatikai konfigurációja teljes, üzleti használatra kész és [Autopilot meglévő eszközökön] (https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/existing-devices) lehetővé teszi, hogy könnyedén üzembe a meglévő eszközök a Windows 10 legújabb verzióját.
 
 ## <a name="administrator-based-enrollment-in-intune"></a>Rendszergazda-alapú regisztráció az Intune-ban
 

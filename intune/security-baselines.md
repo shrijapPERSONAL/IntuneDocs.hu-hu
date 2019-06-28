@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a1a48f132d199ad7b1b3e112915acd8f073cf21
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 93e470175829008b72b5b8991188f3c92e38a567
+ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403735"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67416845"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Biztonsági alapterveket segítségével a konfigurálása a Windows 10-eszközök Intune-ban
 
@@ -67,8 +67,8 @@ Alapvető biztonsági profilok támogatása egy [a verzió megváltoztatása](#c
 A következő biztonsági alapterv példányok érhetők el az Intune-nal való használatra. A hivatkozások használatával megtekintheti a beállításokat minden egyes referenciakonfigurációnál legfrissebb példánya esetében. 
 
 - **Mobileszköz-kezelési biztonsági alapterv**
-  - [Mobileszköz-kezelési biztonsági alaptervet Spring 2019 (19 órával 1)](security-baseline-settings-windows.md)
-  - Előzetes verzió: Mobileszköz-kezelési biztonsági alaptervet a 2018. október
+  - [Mobileszköz-kezelési biztonsági alaptervet Spring 2019 (19 órával 1)](security-baseline-settings-mdm.md)
+  - [Előzetes verzió: Mobileszköz-kezelési biztonsági alaptervet a 2018. október](security-baseline-settings-mdm-archive.md)
 
 - **A Windows Defender ATP-alapkonfiguráció**  
   *(Ez a alapvető használatához a környezetnek használatára vonatkozó Előfeltételek kell megfelelnie [Microsoft Defender komplex veszélyforrások elleni védelem](advanced-threat-protection.md#prerequisites))* .
@@ -199,7 +199,7 @@ Szigorúan véve, nem. A Microsoft biztonsági csapat olvas, szervezetek, péld�
 
 ## <a name="next-steps"></a>További lépések
 - A beállítások megtekintéséhez a legújabb verziói az elérhető alapkonfigurációk:  
-  - [Mobileszköz-kezelési biztonsági alapterv](security-baseline-settings-windows.md)  
+  - [Mobileszköz-kezelési biztonsági alapterv](security-baseline-settings-mdm.md)  
   - [A Windows Defender ATP-alapkonfiguráció](security-baseline-settings-defender-atp.md)  
 
 - Ellenőrizze az állapotát és a figyelő a [alapkonfiguráció és a profil](security-baselines-monitor.md).

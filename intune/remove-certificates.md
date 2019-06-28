@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/08/2019
+ms.date: 06/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,24 +16,31 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: lacranda
-ms.openlocfilehash: 99f51662894cac04e6ebcd821806b433dbf3117e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: de2f201e6a7d0181847db5d212625c9eed9ea698
+ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041239"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67413772"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>SCEP- vagy PKCS-tanúsítványok eltávolítása a Microsoft Intune-ban
 
-A Microsoft Intune egyszerű tanúsítványigénylési protokoll (SCEP) és a nyilvános kulcs titkosítási szabványok (PKCS) tanúsítványokat is hozzáadhat az eszközökre. Ezek a tanúsítványok az eszköz [tartalmának törlése](devices-wipe.md#wipe) vagy az eszköz [kivonása](devices-wipe.md#retire) során is el is távolíthatók. 
+A Microsoft Intune a egyszerű tanúsítványigénylési protokoll (SCEP) és a nyilvános kulcs titkosítási szabványok (PKCS) tanúsítványprofilok használatával adhat hozzá az eszközökhöz tanúsítványokat. 
 
-Vannak olyan forgatókönyvek, amelyek során a rendszer automatikusan eltávolítja a tanúsítványokat, és olyanok is, amelyekben a tanúsítványok az eszközön maradnak. Ez a cikk néhány gyakori forgatókönyvet és azok PKCS- és SCEP-tanúsítványokra gyakorolt hatását mutatja be.
+Ezek a tanúsítványok is lehetnek távolítja el, [törlési](devices-wipe.md#wipe) vagy [kivonása](devices-wipe.md#retire) az eszközön. Is találhatók forgatókönyvek, ahol tanúsítványok lesznek automatikusan eltávolítva, és a forgatókönyvek, ahol a tanúsítványok az eszközön maradnak. Ez a cikk néhány gyakori forgatókönyvet és azok PKCS- és SCEP-tanúsítványokra gyakorolt hatását mutatja be.
 
 > [!NOTE]
 > Távolítsa el, és a egy felhasználóhoz, aki folyamatban van, a tanúsítványok visszavonásához távolítva a helyszíni Active Directory vagy az Azure Active Directory (Azure AD), kövesse az alábbi lépéseket, sorrendben:
 >
 > 1. A felhasználó-eszköz kivonása vagy törlése.
 > 2. Eltávolítja a felhasználót a helyszíni Active Directory vagy az Azure ad-ben.
+
+## <a name="manually-deleted-certificates"></a>Manuálisan törölt tanúsítványok  
+
+A tanúsítvány manuális törlését olyan forgatókönyvekben, amelyek több platformon és kiépítette az SCEP vagy PKCS-tanúsítványprofilok tanúsítványok vonatkozik. Például egy felhasználó előfordulhat, hogy tanúsítvány törlése egy eszközről, ha az eszköz egészen a tanúsítási szabályzat által megcélzott.  
+
+Ebben a forgatókönyvben a tanúsítvány törlését követően a következő alkalommal, amikor az eszköz bejelentkezik az Intune-ban megtalálható nem kompatibilisek, mert hiányzik a várt tanúsítvány. Ezután az Intune kiad egy új tanúsítványt az eszköz visszaállítása a megfelelőséghez. Nincsenek további művelet nem szükséges, állítsa vissza a tanúsítványt.  
+
 
 ## <a name="windows-devices"></a>Windows-eszközök
 

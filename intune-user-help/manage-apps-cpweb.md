@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 06/24/2019
+ms.date: 06/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e6f24f2b7741beff4075b0b130441720265fa0ce
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 9c7b91e63a559c45cbbcbd7056a7f5e259e07481
+ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403997"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67416857"
 ---
 # <a name="manage-apps-from-the-company-portal-website"></a>Alkalmazások kezelése a vállalati portál webhelyről 
 Látogasson el a [céges portál webhely](https://portal.manage.microsoft.com) megtekintheti és kezelheti az alkalmazásokat a szervezet. 
@@ -65,7 +65,7 @@ Ezen a lapon minden alkalmazás a következő információkat tartalmazza:
 * Hozzárendelés típusa: Hogyan az alkalmazás van hozzárendelve, és elérhetővé tett. Elérhető és a kötelező alkalmazásokat, további részletekért tekintse meg. A szervezet vagy elérhetővé teheti egy alkalmazás telepítésére, saját maga, vagy igényelnek, és egy alkalmazás automatikus telepítése az eszközön.  
 * Kiadó: A fejlesztői vagy a vállalati, amelyek az alkalmazás neve. A közzétevő általában, a szoftver gyártójához vagy a szervezet.  
 * Közzététel dátuma: A dátum, amely az alkalmazás történt tölthető le. Közzététel dátuma valószínűleg egy alkalmazás kezdeti kiadás vagy az alkalmazás legújabb frissítése.
-* Állapot: A jelenlegi telepítés állapota az alkalmazást az eszközön. Alkalmazások jeleníti meg telepíteni, mint telepítve, és telepítése nem sikerült.  
+* Állapot: A jelenlegi telepítés állapota az alkalmazást az eszközön. Alkalmazások jeleníti meg telepíteni, mint telepítve, és telepítése nem sikerült. Kötelező alkalmazások a legfrissebb állapot megjelenítéséhez akár 10 percet is igénybe vehet.  
 
 ### <a name="search-and-refine"></a>Keresés pedig finomíthatja a konfigurációt  
 

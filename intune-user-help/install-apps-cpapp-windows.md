@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/28/2019
+ms.date: 06/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 468eabc9acc8f0f65125f81a0f7f67eede361755
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: f9cb8168075badda65b3cd02f8ae059119769c7c
+ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67402641"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67413902"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Alkalmazások telepítése és megosztása az eszközön
 Alkalmazások telepítése az eszközön Windows Céges portál alkalmazásból.
@@ -48,7 +48,10 @@ Alkalmazások telepítése az eszközön Windows Céges portál alkalmazásból.
     
     ![A Windows 10-es Céges portál alkalmazás alkalmazásadatok lapja a Telepítve állapottal az alkalmazás telepítése után. A Telepítés gomb felirata Újratelepítés lesz.](./media/RS1_AppDetailsPage_Installed_01.png)    
 
- A cég méretétől függően az Office több verziója is rendelkezésre állhat letöltésre a Céges portálon. További információ a Windows-eszközök számára elérhető Office-csomagról: [Az Office 365 telepítése Windows-eszközön](./install-office-windows.md).
+> [!IMPORTANT]
+> Ha kötelező alkalmazást nem tudja telepíteni, és a szervezet lehetővé teszi, hogy manuálisan telepíti, válassza ki a **újra**. Frissített állapota akár tíz percet igénybe vehet. Ha **újra** újra ebben az előadásban idő és a hiba, amelynek tagjai nem bánják. Továbbra is a frissített állapotot tíz percet várnia.   
+
+A cég méretétől függően az Office több verziója is rendelkezésre állhat letöltésre a Céges portálon. További információ a Windows-eszközök számára elérhető Office-csomagról: [Az Office 365 telepítése Windows-eszközön](./install-office-windows.md).
 
 ## <a name="share-apps"></a>Alkalmazások megosztása  
 Alkalmazások megosztása és ajánlása a munkahelyi vagy iskolai partnerei számára. Az alábbi lépések leírják, hogyan lehet hivatkozást megosztani közvetlenül a Céges portálról.
@@ -78,5 +81,20 @@ Ha szükséges, de nem látható a vállalati portál alkalmazás, kérelem. Ker
 
   ![A vállalati portál alkalmazás Windows 10-es, Súgó és támogatás weblapot, kiemelve a segélyszolgálat adatait. ](./media/1812_UCP_Help_Support_helpdesk.png)  
 
+## <a name="view-installed-apps"></a>Telepített alkalmazások  
+Az eszközön telepített összes alkalmazások listájának megtekintéséhez. A **telepített alkalmazások** lap felsorolja azokat az alkalmazásokat a következő információkat:
+
+* Név: Az alkalmazás neve. Rendelkezésre álló alkalmazások tartalmaz egy hivatkozást a **alkalmazás részleteinek** lapot.
+* Hozzárendelés típusa: Hogyan az alkalmazás van hozzárendelve, és elérhetővé tett. 
+* Kiadó: A fejlesztői vagy a vállalati, amelyek az alkalmazás neve. A közzétevő általában, a szoftver gyártójához vagy a szervezet.  
+* Közzététel dátuma: A dátum, amely az alkalmazás történt tölthető le. Közzététel dátuma valószínűleg egy alkalmazás kezdeti kiadás vagy az alkalmazás legújabb frissítése.
+* Állapot: A jelenlegi telepítés állapota az alkalmazást az eszközön. Alkalmazások jeleníti meg telepíteni, mint telepítve, és telepítése nem sikerült. Kötelező alkalmazások a legfrissebb állapot megjelenítéséhez akár 10 percet is igénybe vehet. Tekintse meg az eljárás alatt [telepítik az alkalmazásokat](#install-apps) egy szükséges alkalmazás telepítésével kapcsolatos fontos részleteket. 
+
+Ez a lap eléréséhez nyissa meg a navigációs menü, és válassza **telepített alkalmazások**. 
+
+  ![Példa a képernyőkép a céges portál alkalmazást a Windows 10, a telepített alkalmazások lapon. ](./media/installed-apps-cp-1906.png)  
+
+
+Használat **rendezés** név szerint az alkalmazások hozzárendelés-típus, kiadó, átrendezheti, vagy időrendi sorrendben a közzététel dátuma. Használat **szűrés** korlátozhatja az alkalmazások telepítési állapota szerint megjelenik.  Ha az alkalmazás nem érhető el, egy üzenet, hogy megtörtént-e a vállalati alkalmazás nem láthatja.  
 
 További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://go.microsoft.com/fwlink/?linkid=2010980).  
