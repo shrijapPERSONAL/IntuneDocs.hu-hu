@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/12/2019
+ms.date: 06/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dfc8d782f2d7acee0e935790378d5bedd89a1ac0
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 8c2dab0855bd0f6344584e7bbd80ce17f829fa84
+ms.sourcegitcommit: 46f4d3d160e18aeab9de7477eedc8351fbb78c85
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403568"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "67468734"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 
@@ -45,6 +45,7 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Is [fontos b
 ### Device configuration
 ### Device enrollment
 ### Device management
+### Device security
 ### Intune apps
 ### Monitor and troubleshoot
 ### Role-based access control
@@ -53,7 +54,129 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Is [fontos b
 
 <!-- ########################## -->
 
-## <a name="week-of-june-17-2019"></a>2019 június 17 hete   
+## <a name="week-of-june-24-2019"></a>2019 június 24 hete 
+
+### <a name="app-management"></a>Alkalmazáskezelés
+
+#### <a name="configure-which-browser-is-allowed-to-link-to-organization-data----3145939---"></a>Konfigurálhatja a böngésző összekapcsolása a szervezeti adatok használata engedélyezett. <!-- 3145939 -->
+Az Intune App Protection házirendek (alkalmazás) Android és IOS rendszerű eszközökön mostantól lehetővé teszik szervezeti webhivatkozások átvitele adott túl az Intune Managed Browser vagy a Microsoft Edge böngészőben.  Alkalmazással kapcsolatos további információkért lásd: [Mik azok az alkalmazásvédelmi szabályzatok?](app-protection-policy.md).
+
+#### <a name="all-apps-page-identifies-onlineoffline-microsoft-store-for-business-apps--4089647---"></a>Minden alkalmazás lapján azonosítja az online vagy offline Microsoft Store az üzleti alkalmazások<!--4089647 -->
+A **minden alkalmazás** lap mostantól tartalmazza a Microsoft Store azonosításához online vagy kapcsolat nélküli alkalmazásokat (MSFB) üzleti alkalmazások címkézését. Minden egyes MSFB alkalmazás most már tartalmaz egy utótagot a **Online** vagy **Offline**. Az alkalmazás részleteit megjelenítő oldalon is tartalmaz **licenctípus** és **támogatja az eszköz környezet telepítése** információkat (csak offline licencelt alkalmazások esetén).
+
+#### <a name="company-portal-app-on-shared-devices---4393553---"></a>A megosztott eszközökön a vállalati portál alkalmazás <!--4393553 -->
+Felhasználók most már elérheti a megosztott eszközökön a vállalati portál alkalmazást. Végfelhasználók számára megjelenik egy **megosztott** címkét az csempére. Ez vonatkozik a vállalati portál alkalmazás verziója 10.3.45609.0 és újabb verziók.
+
+#### <a name="view-all-installed-apps-from-new-company-portal-web-page----4224326---"></a>Új céges portál weboldalról összes telepített alkalmazás megtekintése <!-- 4224326 -->
+A vállalati portál webhelye a új **telepített alkalmazások** lap felsorolja az összes felügyelt alkalmazások (kötelező és elérhető), a felhasználói eszközök vannak telepítve. Hozzárendelés-típus mellett a felhasználók megtekinthetik az alkalmazás közzétevője, közzététel dátuma és aktuális állapotát. Ha még nem készített alkalmazások kötelező vagy elérhető legyen a felhasználók számára, azok megjelenik egy üzenet tájékoztatja, hogy nem a vállalati alkalmazások telepítve vannak. Az új lap látható a weben, lépjen a [céges portál webhelyen](https://portal.manage.microsoft.com) kattintson **telepített alkalmazások**.  
+
+#### <a name="new-view-lets-app-users-see-all-managed-apps-installed-on-device----2352913---"></a>Új nézet lehetővé teszi, hogy az alkalmazás felhasználóinak tekintse meg az eszközön telepített összes felügyelt alkalmazások <!-- 2352913 -->  
+A Windows céges portál alkalmazás mostantól minden felügyelt alkalmazás (kötelező és elérhető), amely a felhasználói eszközökön telepített sorolja fel. Felhasználók megkísérelt és a függőben lévő alkalmazások telepítésére, és azok aktuális állapotát is megtekintheti. Ha még nem készített alkalmazások kötelező vagy elérhető legyen a felhasználók számára, azok megjelenik egy üzenet tájékoztatja, hogy nem a vállalati alkalmazások telepítve vannak. Az új nézet megtekintéséhez nyissa meg a céges portál navigációs panelen, és válassza **alkalmazások** > **telepített alkalmazások**.    
+
+### <a name="device-configuration"></a>Eszközök konfigurálása
+
+#### <a name="configure-settings-for-kernel-extensions-on-macos-devices----2043024---"></a>Kernel-bővítmények beállítások konfigurálása a macOS-eszközökön <!-- 2043024 -->
+MacOS-eszközökön, létrehozhat egy eszközkonfigurációs profilt (**eszközkonfiguráció** > **profilok** > **profil létrehozása** > Válasszon **macOS** tartozó platform). A frissítés tartalmaz egy új csoportot, amelyek segítségével konfigurálhatja, és a kernel-bővítmények használata az eszközökön. Adja hozzá az egyes bővítményekről, vagy az összes bővítmény engedélyezése egy adott partner vagy a fejlesztői.
+
+Ez a funkció kapcsolatos további információkért lásd: [kernel-bővítmények – áttekintés](kernel-extensions-overview-macos.md) és [kernel bővítmény beállítások](kernel-extensions-settings-macos.md).
+
+A következőkre vonatkozik: macOS 10.13.2 és újabb verziók
+
+#### <a name="apps-from-the-store-only-setting-for-windows-10-devices-includes-more-configuration-options----2697002---"></a>Csak beállítás a Windows 10-eszközök áruházból származó alkalmazások további konfigurációs lehetőségeket tartalmazza <!-- 2697002 -->
+Amikor létrehoz egy Windows-eszközök eszközkorlátozási profilt, használhatja a **csak áruházból származó alkalmazások** beállítást, így a felhasználók csak telepítik az alkalmazásokat a Windows App Store a (**eszközkonfiguráció**  >  **Profilok** > **profil létrehozása** > **Windows 10 és újabb** tartozó platform > **eszköz korlátozások** profiltípus). Ebben a frissítésben Ez a beállítás ki van bontva, több lehetőség támogatásához. 
+
+Az új beállítások megtekintéséhez, keresse fel a [Windows 10 (és újabb) eszközbeállítások engedélyezett vagy korlátozott funkciók](device-restrictions-windows-10.md#app-store).
+
+Érintett kiadások: Windows 10 és újabb
+
+#### <a name="deploy-multiple-zebra-mobility-extensions-device-profiles-to-a-device-same-user-group-or-same-devices-group----4089955---"></a>Több Zebra mobilitási bővítmények eszköz profilok központi telepítése egy eszközön, ugyanazon felhasználói csoporthoz vagy ugyanazon csoporthoz. <!-- 4089955 -->
+Az Intune-ban Zebra mobilitási extensions (MX) használhatja a profilt a beállításokat, amelyek nem az Intune-bA beépített Zebra eszközökhöz. Jelenleg egy profilt telepíthet egyetlen eszközt. Ez a frissítés több profilt is telepítheti:
+- Az ugyanazon felhasználói csoporthoz
+- Az ugyanazon csoporthoz.
+- Egy adott eszköz
+
+[Használhatja és kezelheti a Zebra eszközök Microsoft Intune-ban Zebra mobilitási kiterjesztésű](android-zebra-mx-overview.md) bemutatja, hogyan MX használata az Intune-ban.
+
+Érintett kiadások: Android
+
+#### <a name="some-kiosk-settings-on-ios-devices-are-set-using-block-replacing-allow----4404075----"></a>Egyes teljes képernyős beállítások iOS-eszközökön "Letiltás", és cserélje le a "Engedélyezése" állítsa be <!-- 4404075  -->
+Amikor egy eszközkorlátozási profilt hoz létre az iOS-eszközökön (**eszközkonfiguráció** > **profilok** > **profil létrehozása**  >  **iOS** tartozó platform > **eszközkorlátozások** profiltípus > **teljes képernyős**), beállíthatja a **automatikus zárolás**, **Hangjelzéskapcsoló**, **képernyő elforgatása**, **képernyőalvás gombja**, és **hangerőgombok**. 
+
+Ez a frissítés az értékek a következők **blokk** (letiltja a szolgáltatást), és **nincs konfigurálva** (lehetővé teszi, hogy a szolgáltatás). A beállítások megtekintéséhez lépjen a [IOS-es beállítások engedélyezett vagy korlátozott funkciók](device-restrictions-ios.md#kiosk-supervised-only). 
+
+A következőre vonatkozik: iOS
+
+#### <a name="use-face-id-for-password-authentication-on-ios-devices----4490704---"></a>Face ID használata az iOS-eszközök jelszó-hitelesítés <!-- 4490704 -->
+Amikor létrehoz egy iOS-eszközök eszközkorlátozási profilt, ujjlenyomattal jelszó is használhat. Ebben a frissítésben a ujjlenyomat jelszó-beállításokat is arcfelismerés engedélyezése (**eszközkonfiguráció** > **profilok** > **profillétrehozása**  >  **iOS** tartozó platform > **eszközkorlátozások** profiltípus > **jelszó**). Ennek eredményeképpen módosult a következő beállításokat:
+
+- **Ujjlenyomattal történő Zárolásfeloldás** mostantól **Touch ID és a Face ID feloldásához**.
+- **Ujjlenyomat módosítása (csak felügyelt)** mostantól **Touch ID és a Face ID módosítása (csak felügyelt)** .
+
+Face ID az iOS 11.0-s és újabb verziói. A beállítások megtekintéséhez lépjen a [engedélyezett vagy korlátozott funkciók az Intune-nal IOS-es beállítások](device-restrictions-ios.md#password).
+
+A következőre vonatkozik: iOS
+
+#### <a name="restricting-gaming-and-app-store-features-on-ios-devices-is-now-dependent-on-ratings-region----4593948---"></a>Korlátozása, játék- és az app store funkciókat az iOS-eszközökön már minősítési régiótól függ <!-- 4593948 -->
+Az iOS-eszközökön engedélyezheti vagy korlátozhatja a játékok, az app Store áruházból és dokumentumok megtekintése kapcsolódó funkciókat (**eszközkonfiguráció** > **profilok**  >   **Profil létrehozása** > **iOS** tartozó platform > **eszközkorlátozások** profiltípus > **App Store, dokumentumok megtekintése, játékok**). Azt is beállíthatja a minősítési régiótól, például az Egyesült Államokban. 
+
+Ebben a frissítésben a **alkalmazások** funkció átkerül a gyermeke lehet **minősítési régiótól**, és függ **minősítési régiótól**. A beállítások megtekintéséhez lépjen a [engedélyezett vagy korlátozott funkciók az Intune-nal IOS-es beállítások](device-restrictions-ios.md#app-store-doc-viewing-gaming).
+
+A következőre vonatkozik: iOS
+
+### <a name="device-enrollment"></a>Eszközök beléptetése
+
+#### <a name="windows-autopilot-reset-removes-the-devices-primary-user----4156123---"></a>Windows Autopilot visszaállítása eltávolítja az eszköz elsődleges felhasználója <!-- 4156123 -->
+Az Autopilot alaphelyzetbe egy eszközön használata esetén az eszköz elsődleges felhasználója távolítja el. A következő felhasználónak, aki bejelentkezik a visszaállítás után az elsődleges felhasználó lesz beállítva.
+
+#### <a name="windows-autopilot-supoprt-for-hybrid-azure-ad-join----4809146--"></a>Hibrid Azure AD JOIN a Windows Autopilot supoprt <!-- 4809146-->
+Windows Autopilot meglévő eszközök mostantól támogatja a hibrid Azure AD Join (felül a meglévő Azure AD Join támogatja). A Windows 10-es verzió 1809 és újabb rendszerű vonatkozik. További információkért lásd: [ Windows Autopilot-eszközökön meglévő](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices).
+
+
+
+### <a name="device-management"></a>Eszközkezelés
+
+#### <a name="see-the-security-patch-level-for-android-devices----4461911---"></a>A biztonsági javítási szint Android-eszközök esetén lásd: <!-- 4461911 -->
+Most már megtekintheti a biztonsági javítási szint Android-eszközökhöz. Ehhez válassza ki a **Intune** > **eszközök** > **minden eszköz** > Válasszon egy eszközt > **hardver**.
+A javítási szint szerepel-e a **operációs rendszer** szakaszban.
+
+#### <a name="assign-scope-tags-to-all-managed-devices-in-a-security-group----3173810---"></a>Hatókörcímkék hozzárendelése egy biztonsági csoportot az összes felügyelt eszköz <!-- 3173810 -->
+Most már hozzárendelheti hatókörcímkék egy biztonsági csoportot, és a biztonsági csoportban található összes eszköz is ezeket hatókörcímkék társítva lesz. A megadott csoportokban szereplő összes eszközre is lesz hozzárendelve a hatókörcímkét. A hatókörcímkék állítsa ezzel a funkcióval, azzal felülírja a hatókörcímkék beállítása a jelenlegi eszköz hatókör címkék flow-val. További információkért lásd: [RBAC használata és a hatókörcímkék elosztott informatikai](scope-tags.md). (Egy jövőbeli frissítéssel, a jelenlegi folyamat hatókörcímkék hozzárendelése eszközökhöz lesz csak olvasható.)
+
+### <a name="device-security"></a>Eszközbiztonság
+
+#### <a name="use-keyword-search-with-security-baselines----wnready---"></a>Biztonsági alapterveket kulcsszavas keresés használata <!-- WNready -->
+Amikor hoz létre vagy szerkeszt [alapvető biztonsági profilok](security-baselines.md#create-the-profile), kulcsszavakat is megadhat az új *keresési* sávon a beállítások, amelyek tartalmazzák a keresési feltételeknek, a rendelkezésre álló csoportok szűréséhez. 
+
+#### <a name="the-security-baselines-feature-is-now-generally-available-----3785395---"></a>A biztonsági előírások szolgáltatás már általánosan elérhető  <!-- 3785395 -->
+A **biztonsági előírások** funkció előzetes kívül esik, és már általánosan elérhető (GA).  Ez azt jelenti, hogy az funkciók készen áll a használatra éles környezetben. Azonban az egyes alapterv-sablonokat is marad, hogy előzetes verzióban érhető el értékeli ki és nyilvánosan általánosan elérhető a saját feltételek szerint.
+
+#### <a name="the-mdm-security-baseline-template-is-now-generally-available------3794072-4217151--3534649---"></a>A mobileszköz-kezelési biztonsági alapterv sablon már általánosan elérhető   <!-- 3794072, 4217151,  3534649 -->
+A mobileszköz-kezelési biztonsági alapterv sablon verziója át lett helyezve, és már általánosan elérhető (GA). A végleges verzió sablon azonosítottak **Spring 2019 frissítés (19 órával 1) a mobileszköz-kezelési biztonsági alapterv**.  Ez az új sablont, és nem az előzetes verzióra való frissítést.  Új sablonként lesz szüksége, tekintse át a [beállításokat tartalmaz](security-baseline-settings-windows.md), majd hozzon létre új profilokat az eszköz a sablon üzembe helyezéséhez. Egyéb biztonsági alapterv sablonok is marad, előzetes verzióban érhető el. Elérhető alapkonfigurációk listáját lásd: [elérhető biztonsági előírások](security-baselines.md#available-security-baselines).  
+
+Mellett egy új sablont, a *Spring 2019 frissítés (19 órával 1) a mobileszköz-kezelési biztonsági alapterv* nemrég jelentettük be a fejlesztési a témakör két beállítások szerepelnek, sablon:  
+- Above Lock: Hangvezérelt alkalmazások zárolt képernyőn aktiválása  
+- DeviceGuard: A virtualizálás-alapú biztonság (VBS) használata az eszközök a következő újraindításkor.  
+
+A *Spring 2019 frissítés (19 órával 1) a mobileszköz-kezelési biztonsági alapterv* számos új beállítás hozzáadása, eltávolítása mások és a egy beállítás alapértelmezett értékét felülvizsgálatát a is tartalmaz. A módosítások előzetes verzióról a végleges verzió részletes listájáért lásd: **változások az új sablon**.
+
+#### <a name="security-baseline-versioning-----3194322---"></a>Biztonsági alapkonfiguráció-verziókezelés  <!-- 3194322 -->
+Az Intune-ban biztonsági előírások versioning támogatja. Ez a támogatás a kiadott összes biztonsági alapkonfiguráció új verzióit, frissítheti a meglévő biztonsági alapterv profilok használata a újabb alapkonfigurációt hozza létre újra, és üzembe helyezése egy új alaptervet előzmények nélkül. Ezenkívül az Intune-konzolon megtekintheti például rendelkezik, amelyek használják az alaptervhez, számát, a másik alapverziók a profilokat használja, az egyes profilok száma minden egyes referenciakonfigurációnál kapcsolatos információkat és a egy adott legújabb kiadása alapvető biztonsági volt.  További információkért lásd: **biztonsági előírások**.
+
+#### <a name="the-use-security-keys-for-sign-in-setting-has-moved-----4501151---"></a>A használata biztonsági kulcsok bejelentkezési beállítás át lett helyezve.  <!-- 4501151 -->
+Az identity Protection nevű konfigurációs beállításával **biztonsági kulcsok használata a bejelentkezéshez** már nem található meg az alárendelt beállítását *konfigurálása Windows Hello for Business*. Azt már egy legfelső szintű beállítás, amely mindig elérhető, akkor is, ha nem engedélyezi a vállalati Windows hello használata. További információ: [Identity protection](identity-protection-windows-settings.md).
+
+### <a name="role-based-access-control"></a>Szerepköralapú hozzáférés-vezérlés
+
+#### <a name="new-permissions-for-assigned-group-admins------4504437-----"></a>Hozzárendelt csoportok rendszergazdái új engedélyeket   <!-- 4504437   -->
+Az Intune iskolai rendszergazdai szerepkör most már rendelkezik létrehozása, olvasása, frissítése és törlése (CRUD) engedélyek felügyelt alkalmazásokhoz. Ezt a frissítést azt jelenti, hogy ha az Intune for Education-csoport rendszergazdaként, Ön mostantól létrehozhat, megtekintése, frissítése, és törölje az iOS MDM Push-tanúsítvány, iOS MDM server jogkivonatok és az iOS VPP-jogkivonatok [rendelkezik meglévő engedélyeit ](https://docs.microsoft.com/intune-education/group-admin-delegate#group-admin-permissions). Ezen műveletek egyikét használ, lépjen a **bérlői beállítások** > **iOS-eszközök kezelése**.  
+
+#### <a name="applications-can-use-the-graph-api-to-call-read-operations-without-user-credentials----4655885---"></a>Alkalmazások a Graph API használatával hívja meg az olvasási műveletek a felhasználói hitelesítő adatok nélkül <!-- 4655885 -->
+Alkalmazások hívhatják Intune Graph API olvasási műveleteket az alkalmazás identitás felhasználói hitelesítő adatok nélkül. Az Intune-hoz a Microsoft Graph API elérésével kapcsolatos további információkért lásd: [az Intune használata a Microsoft Graph](https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-1.0).
+
+#### <a name="apply-scope-tags-to-microsoft-store-for-business-apps----4392555---"></a>Hatókörcímkék vonatkozik a Microsoft Store az üzleti alkalmazások <!-- 4392555 -->
+Hatókörcímkék a Microsoft Store az üzleti alkalmazások most már érvényesek. Hatókörcímkék kapcsolatos további információkért lásd: [használata szerepköralapú hozzáférés-vezérlés (RBAC) és a hatókörcímkék elosztott informatikai](scope-tags.md).
+
+## <a name="week-of-june-17-2019"></a>2019 június 17 hete 
 
 ### <a name="app-management"></a>Alkalmazáskezelés
 
@@ -63,11 +186,11 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Is [fontos b
 * Megtekintheti és kezelheti az eszközöket regisztrálnak az Intune vállalati portál vagy a Microsoft Intune alkalmazáson keresztül.    
 * Támogatás igényléséhez lépjen kapcsolatba a szervezet.    
 * A visszajelzés küldése a Microsoftnak.    
-* Megtekintheti a használati feltételeket, ha a szervezet által beállított.  
+* Megtekintheti a használati feltételeket, ha a szervezet által beállított.    
 
 ## <a name="week-of-june-10-2019"></a>2019. június 10 hete 
 
-### <a name="app-management"></a>Alkalmazáskezelés  
+### <a name="app-management"></a>Alkalmazáskezelés
 
 #### <a name="new-sample-apps-showing-intune-sdk-integration-available-on-github----2653471---"></a>Új, a Githubon érhető el az Intune SDK-integráció bemutató mintaalkalmazások <!-- 2653471 -->
 A GitHub-fiók msintuneappsdk hozzá van adva az új mintaalkalmazások iOS (Swift), Android, a Xamarin.iOS, a Xamarin Forms eszközkészlethez és a Xamarin.Android-hez. Ezeket az alkalmazásokat úgy van kialakítva, hogy a meglévő dokumentációnk kiegészítik, és adja meg az Intune APP SDK integrálása saját mobilalkalmazások hogyan technológiáink miként. Ha az Intune SDK-val további útmutatást igénylő alkalmazás fejlesztője, tekintse meg a következő csatolt minták:

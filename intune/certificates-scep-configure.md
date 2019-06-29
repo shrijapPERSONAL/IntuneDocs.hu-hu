@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/24/2019
+ms.date: 06/28/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e8e7e6c244e14e880dddb7ae76ab0c08ef5088a
-ms.sourcegitcommit: edf0f4e791138dcf589dec8b633edc6eda55ef8c
+ms.openlocfilehash: ba7bb3a12e0e634df44bb832f8f35aa166095415
+ms.sourcegitcommit: 34ff5ebe6efaa5b3a2a1db274de0a07c14944a6b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67344092"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67463896"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>SCEP-tanúsítványok konfigurálása és használata az Intune-nal
 
@@ -225,7 +225,7 @@ Ebben a lépésben a következőket fogja elvégezni:
 3. Az NDES-kiszolgálóra rendkívül hosszú URL-címek (lekérdezések) érkeznek, melyekhez két beállításjegyzékbeli bejegyzést kell felvennie:
 
 
-   |                        Location egység                        |      Value      | Type  |      Adatok       |
+   |                        Location                        |      Value      | Type  |      Data       |
    |--------------------------------------------------------|-----------------|-------|-----------------|
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (decimális) |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (decimális) |
@@ -507,7 +507,8 @@ Mielőtt csoportokhoz rendeli a tanúsítványprofilokat, vegye figyelembe a kö
 - Jóllehet az egyes profilokat külön-külön rendeli hozzá, a legfelső szintű hitelesítésszolgáltató és az SCEP- vagy PKCS-profil hozzárendelésére is szükség van. Ellenkező esetben az SCEP- vagy PKCS-tanúsítványszabályzat hibát fog jelezni.
 
     > [!NOTE]
-    > Ha több erőforrásprofilt helyez üzembe egyazon tanúsítványprofil használatával, akkor iOS rendszer esetén több példányt is látni fog a tanúsítványból a felügyeleti profilban.
+    > Az iOS-eszközökön, ha SCEP-tanúsítványprofil profilhoz társítva egy további, például egy Wi-Fi vagy VPN-profilt, az eszköz megkaphatná a tanúsítvány minden további profilokhoz. Az eredmény az iOS-eszköz az SCEP-tanúsítvány kérelem által kínált több tanúsítványt kellene.  
+
 - Ha használhat megosztott kezelés Intune-ban és a Configuration Manager, a Configuration Manager s[et a számítási feladatok csúszka](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads) a *erőforrás-hozzáférési házirend* való **Intune** vagy  **Az Intune próbacsapat**. Ez a beállítás lehetővé teszi, hogy a Windows 10-ügyfelek, a tanúsítvány igénylése a folyamat elindításához.  
 
 Az profilok hozzárendeléséről az [Eszközprofilok hozzárendelése](device-profile-assign.md) című cikk nyújt tájékoztatást.
