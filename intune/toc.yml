@@ -269,6 +269,8 @@
           href: device-logout-user.md
         - name: Felhasználó eltávolítása
           href: device-remove-user.md
+        - name: Elsődleges felhasználó megkeresése
+          href: find-primary-user.md
         - name: macOS-eszköz adatainak törlése
           href: device-erase.md
         - name: Távolról vezérelt mobileszközök
