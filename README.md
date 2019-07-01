@@ -56,3 +56,5 @@ Ebben a kódtárban minden cikk GitHub-stílusú Markdown-jelöléseket használ
 
 * [A markdown alapjai](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 * [Nyomtatható markdown-puska](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+
+...
